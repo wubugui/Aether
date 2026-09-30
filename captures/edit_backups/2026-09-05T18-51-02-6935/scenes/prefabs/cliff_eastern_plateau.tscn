@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/asset_instance.gd" id="1_kk347"]
+[ext_resource type="Material" path="res://materials/cliff.tres" id="2_t8syc"]
+[ext_resource type="PackedScene" path="res://assets/models/cliff_eastern_plateau.glb" id="3_kxhjk"]
+[ext_resource type="Shape3D" path="res://assets/collision/cliff_eastern_plateau.res" id="4_nwaq2"]
+
+[node name="cliff_eastern_plateau" type="Node3D"]
+script = ExtResource("1_kk347")
+asset_kind = "cliff_eastern_plateau"
+surface_material = ExtResource("2_t8syc")
+
+[node name="Model" parent="." instance=ExtResource("3_kxhjk")]
+
+[node name="Collision" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision"]
+shape = ExtResource("4_nwaq2")

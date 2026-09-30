@@ -1,0 +1,22 @@
+{
+  "functional_checks_passed": true,
+  "checks": 38,
+  "raw_screenshots": 12,
+  "scene_sha256": "9a52fce69ad88c4545b0993a587a896b8ada1e8b7b5e2351273b76a028f8d151",
+  "single_world": true,
+  "full_log_clean": false,
+  "log_issues": [
+    "ERROR: Texture with GL ID of 21: leaked 349524 bytes.",
+    "ERROR: Texture with GL ID of 22: leaked 349524 bytes."
+  ],
+  "shared_critical_sources_changed": [],
+  "visual_acceptance": "not_passed",
+  "goal_complete": false,
+  "writer_identity": "unresolved; no evidence proving another user session",
+  "limits": [
+    "Only five reference views plus limited side/back and 240-frame flight tested.",
+    "Mesh/collision equality is not physical impact or accessibility validation.",
+    "No complete inter-region flight route or all weather/reference acceptance.",
+    "gpu-g is invalid due to incomplete snapshot; it is retained only as failed validation-process evidence."
+  ]
+}

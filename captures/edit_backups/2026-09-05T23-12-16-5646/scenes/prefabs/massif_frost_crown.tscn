@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/asset_instance.gd" id="1_mjwi6"]
+[ext_resource type="Material" path="res://materials/cliff.tres" id="2_pd3sr"]
+[ext_resource type="PackedScene" path="res://assets/models/massif_frost_crown.glb" id="3_7dfo0"]
+[ext_resource type="Shape3D" path="res://assets/collision/massif_frost_crown.res" id="4_ogxrd"]
+
+[node name="massif_frost_crown" type="Node3D"]
+script = ExtResource("1_mjwi6")
+asset_kind = "massif_frost_crown"
+surface_material = ExtResource("2_pd3sr")
+
+[node name="Model" parent="." instance=ExtResource("3_7dfo0")]
+
+[node name="Collision" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision"]
+shape = ExtResource("4_ogxrd")

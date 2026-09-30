@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/asset_instance.gd" id="1_y0k0a"]
+[ext_resource type="Material" path="res://materials/cliff.tres" id="2_a7l6j"]
+[ext_resource type="PackedScene" path="res://assets/models/cliff_central_wall.glb" id="3_t4kyr"]
+[ext_resource type="Shape3D" path="res://assets/collision/cliff_central_wall.res" id="4_ths3l"]
+
+[node name="cliff_central_wall" type="Node3D"]
+script = ExtResource("1_y0k0a")
+asset_kind = "cliff_central_wall"
+surface_material = ExtResource("2_a7l6j")
+
+[node name="Model" parent="." instance=ExtResource("3_t4kyr")]
+
+[node name="Collision" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision"]
+shape = ExtResource("4_ths3l")

@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/asset_instance.gd" id="1_blax8"]
+[ext_resource type="Material" path="res://materials/cliff.tres" id="2_r87gb"]
+[ext_resource type="PackedScene" path="res://assets/models/cliff_crown.glb" id="3_2i0ll"]
+[ext_resource type="Shape3D" path="res://assets/collision/cliff_crown.res" id="4_iw6xm"]
+
+[node name="cliff_crown" type="Node3D"]
+script = ExtResource("1_blax8")
+asset_kind = "cliff_crown"
+surface_material = ExtResource("2_r87gb")
+
+[node name="Model" parent="." instance=ExtResource("3_2i0ll")]
+
+[node name="Collision" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision"]
+shape = ExtResource("4_iw6xm")

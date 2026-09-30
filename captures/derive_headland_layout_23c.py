@@ -1,0 +1,17 @@
+from pathlib import Path
+root=Path(__file__).resolve().parents[1]
+source=(root/'blender/layout_headland_23b.py').read_text(encoding='utf-8').replace('23b','23c')
+source=source.replace("'position':[-2222,10.,-1856]","'position':[-2213,8.5,-1856]")
+source=source.replace("'position':[-2229,16.,-1761]","'position':[-2229,14.5,-1761]").replace("'position':[-2217,12.,-1875]","'position':[-2217,10.5,-1875]")
+target=root/'blender/layout_headland_23c.py';assert not target.exists();target.write_text(source,encoding='utf-8')
+source=(root/'captures/survey_headland_vertices_23b.gd').read_text(encoding='utf-8')
+source=source.replace('var layout_path:="";','var reuse_path:="";var layout_path:="";')
+source=source.replace('\t\tif arg.begins_with("--layout=")','\t\tif arg.begins_with("--reuse="):reuse_path=arg.trim_prefix("--reuse=")\n\t\tif arg.begins_with("--layout=")')
+source=source.replace('\tvar samples:Array=[]','\tvar reused:Dictionary=JSON.parse_string(FileAccess.get_file_as_string(reuse_path));assert(reused.world_sha256==reference.world_sha256)\n\tvar lookup:Dictionary={}\n\tfor sample in reused.samples:lookup[JSON.stringify([sample.position[0],sample.position[2]])]=sample\n\tvar reuse_count:=0;var samples:Array=[]')
+source=source.replace('\t\tvar at:Array=layout.vertices[index]','\t\tvar at:Array=layout.vertices[index]\n\t\tvar key:=JSON.stringify([at[0],at[2]])\n\t\tif lookup.has(key):\n\t\t\tvar copy:Dictionary=lookup[key].duplicate(true);copy["reused_from_index"]=copy.index;copy.index=index;samples.append(copy);reuse_count+=1;continue')
+source=source.replace('"samples":samples,"scope":','"samples":samples,"reused_samples":reuse_count,"new_ground_queries":samples.size()-reuse_count,"reuse_from_run":reused.run_id,"reuse_sha256":FileAccess.get_sha256(reuse_path),"scope":')
+target=root/'captures/survey_headland_vertices_23c.gd';assert not target.exists();target.write_text(source,encoding='utf-8')
+source=(root/'tools/survey_headland_vertices_23b.py').read_text(encoding='utf-8').replace('23b','23c')
+source=source.replace("root/'reviews/reference-view-1342-progress-22g.json']","root/'reviews/reference-view-1342-progress-22g.json',root/'captures/validation_runs/headland-vertices-23b-20260908T114829Z-7a10446678fb4e16ba7809839478ec44/survey/vertex-survey.json']")
+source=source.replace("'--layout='+str(frozen/'layout.json')","'--reuse='+str(frozen/'vertex-survey.json'),'--layout='+str(frozen/'layout.json')")
+target=root/'tools/survey_headland_vertices_23c.py';assert not target.exists();target.write_text(source,encoding='utf-8')

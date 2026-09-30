@@ -1,0 +1,18 @@
+{
+  "scope": "After the successful frozen 10l source run; new failed producer reports are archived before exit/log validation. No accepted historical run modified.",
+  "utc": "2026-09-05T23:19:01.776398+00:00",
+  "targeted_tests": {
+    "passed": true,
+    "count": 4
+  },
+  "source_sha256": {
+    "tools/validation_manifest.py": "5d898605e9d7c8223ec989ff9d53de4806414ae4a7f64fd4471807170dba72a8",
+    "tools/test_failed_report_archive.py": "fb528b64772f3769c25547e849ba9a0f0f55e7a3b0f65632b3e4f716364e8c0f"
+  },
+  "existing_manifest_regression_tests": {
+    "passed": true,
+    "count": 20,
+    "elapsed_seconds": 39.802
+  },
+  "changed_game_assets": false
+}

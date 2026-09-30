@@ -1,0 +1,58 @@
+{
+	"checks": [
+		{
+			"name": "Create disposable copy without editing authored world",
+			"passed": true
+		},
+		{
+			"name": "Actual editor scene tree exposes 208 terrain instances",
+			"passed": true
+		},
+		{
+			"name": "Local scene tree selection and Inspector show the house instance",
+			"passed": true
+		},
+		{
+			"name": "Scatter actions are real Inspector buttons",
+			"passed": true
+		},
+		{
+			"name": "Inspector Apply button edits the selected instance through UndoRedo",
+			"passed": true
+		},
+		{
+			"name": "Extract prefab action is exposed in Inspector",
+			"passed": true
+		},
+		{
+			"name": "Inspector Extract button creates an independently editable prefab and removes its scattered copy",
+			"passed": true
+		},
+		{
+			"name": "Actual editor Save Scene succeeds",
+			"passed": true
+		},
+		{
+			"name": "Godot editor reimports the independent Blender cottage model",
+			"passed": true
+		},
+		{
+			"name": "House transform survives editor save, GLB reimport and scene reload",
+			"passed": true
+		},
+		{
+			"name": "Inspector scatter edits survive editor save and reload",
+			"passed": true
+		},
+		{
+			"name": "Extracted prefab survives save and reload",
+			"passed": true
+		},
+		{
+			"name": "Editor QA and model reimport leave the authored world untouched",
+			"passed": true
+		}
+	],
+	"passed": true,
+	"world_sha256": "5cb800a34b34cd2ec9652e857b2eba29a33ceff0bd2bc9f54f047850165d0053"
+}

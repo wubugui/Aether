@@ -1,0 +1,90 @@
+{
+	"assets": [
+		{
+			"contact_edges": 110,
+			"examples": [],
+			"exposed_samples": 0,
+			"maximum_above_terrain_metres": -0.975120544433594,
+			"minimum_above_terrain_metres": -6.19789886474609,
+			"misses": 0,
+			"name": "cliff_crown",
+			"passed": true,
+			"samples": 951
+		},
+		{
+			"contact_edges": 64,
+			"examples": [],
+			"exposed_samples": 0,
+			"maximum_above_terrain_metres": -0.84675407409668,
+			"minimum_above_terrain_metres": -2.88351821899414,
+			"misses": 0,
+			"name": "cliff_western_slab",
+			"passed": true,
+			"samples": 536
+		},
+		{
+			"contact_edges": 72,
+			"examples": [],
+			"exposed_samples": 0,
+			"maximum_above_terrain_metres": -1.10212898254395,
+			"minimum_above_terrain_metres": -7.70047950744629,
+			"misses": 0,
+			"name": "cliff_front_columns",
+			"passed": true,
+			"samples": 610
+		},
+		{
+			"contact_edges": 71,
+			"examples": [],
+			"exposed_samples": 0,
+			"maximum_above_terrain_metres": -0.944477081298828,
+			"minimum_above_terrain_metres": -2.59233093261719,
+			"misses": 0,
+			"name": "cliff_central_wall",
+			"passed": true,
+			"samples": 576
+		},
+		{
+			"contact_edges": 77,
+			"examples": [],
+			"exposed_samples": 0,
+			"maximum_above_terrain_metres": -0.142444610595703,
+			"minimum_above_terrain_metres": -5.4188289642334,
+			"misses": 0,
+			"name": "cliff_shadow_buttress",
+			"passed": true,
+			"samples": 658
+		},
+		{
+			"contact_edges": 163,
+			"examples": [],
+			"exposed_samples": 0,
+			"maximum_above_terrain_metres": -1.06365776062012,
+			"minimum_above_terrain_metres": -1.78548049926758,
+			"misses": 0,
+			"name": "cliff_eastern_plateau",
+			"passed": true,
+			"samples": 1141
+		}
+	],
+	"passed": true,
+	"provenance": {
+		"engine": "4.5.1-stable (official)",
+		"packaged": false,
+		"run_id": "17e-native-integration-20260908T060301Z-07dc7a9c264c45aab408ab67177a7dfd",
+		"sha256": {
+			"res://assets/cliff_kit.json": "3f0601c2e382dba987ed2b5ffbbb0bae8e854761057a04a22757a55455cee663",
+			"res://assets/mountain_kit.json": "8b5b6fbe3f86a6b849d9fd6a2b87bf0fefe6dd1323f91f35cae97ba300196940",
+			"res://assets/road_kit.json": "1f0047e0203113b801558edd7413b2df362f412083754b099648f49bd8728a3a",
+			"res://scenes/prefabs/Airship.tscn": "e66caa9dc604786bfd03f25b27835fd454ec26942ec72b73e3bbfe599e032329",
+			"res://scenes/world/World.tscn": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+			"res://scripts/game.gd": "aa292916e6878fd46fb4a2ff12dd54611dca402e66ffa4042a864a853aa67467",
+			"res://scripts/hud.gd": "f9992f6569cd9ee0731542afa1db645d260e1e1cf01bf85a250f656324de7654",
+			"res://scripts/world_math.gd": "a7553c54d06d4e63b4fbe221b04b0f158e36f25b000b483f4555944fdd14b297"
+		},
+		"utc": "2026-09-08T06:06:14"
+	},
+	"samples": 4472,
+	"scope": "Six current native colliders: final floor-to-roof rim edges sampled at <=0.5 m in world XZ against actual terrain/ocean physics, excluding all cliff and mountain bodies. This checks rim seating, not all internal overlaps or flight paths.",
+	"world_sha256": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8"
+}

@@ -1,0 +1,34 @@
+.. function:: delaunay_2d_cdt(vert_coords, edges, faces, output_type, epsilon, need_ids=True)
+
+   Computes the Constrained Delaunay Triangulation of a set of vertices,
+   with edges and faces that must appear in the triangulation.
+   Some triangles may be eaten away, or combined with other triangles,
+   according to output type.
+   The returned verts may be in a different order from input verts, may be moved
+   slightly, and may be merged with other nearby verts.
+   The three returned orig lists give, for each of verts, edges, and faces, the list of
+   input element indices corresponding to the positionally same output element.
+   For edges, the orig indices start with the input edges and then continue
+   with the edges implied by each of the faces (n of them for an n-gon).
+   If the need_ids argument is supplied, and False, then the code skips the preparation
+   of the orig arrays, which may save some time.
+
+   :arg vert_coords: Vertex coordinates (2d)
+   :type vert_coords: Sequence[:class:`mathutils.Vector`]
+   :arg edges: Edges, as pairs of indices in ``vert_coords``
+   :type edges: Sequence[Sequence[int, int]]
+   :arg faces: Faces, each sublist is a face, as indices in `vert_coords` (CCW oriented)
+   :type faces: Sequence[Sequence[int]]
+   :arg output_type: What output looks like. 0 => triangles with convex hull. 1 => triangles inside constraints. 2 => the input constraints, intersected. 3 => like 2 but detect holes and omit them from output. 4 => like 2 but with extra edges to make valid BMesh faces. 5 => like 4 but detect holes and omit them from output.
+   :type output_type: int
+   :arg epsilon: For nearness tests; should not be zero
+   :type epsilon: float
+   :arg need_ids: are the orig output arrays needed?
+   :type need_args: bool
+   :return: Output tuple, (vert_coords, edges, faces, orig_verts, orig_edges, orig_faces)
+   :rtype: tuple[list[:class:`mathutils.Vector`], list[tuple[int, int]], list[list[int]], list[list[int]], list[list[int]], list[list[int]]]
+
+
+Blender 4.5.0 (hash 8cb6b388974a built 2025-07-15 01:36:24)
+
+Blender quit

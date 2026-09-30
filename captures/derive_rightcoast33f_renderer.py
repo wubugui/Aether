@@ -1,0 +1,11 @@
+from pathlib import Path
+R=Path(__file__).resolve().parents[1];s=(R/'tools/render_rightcoast_33d.py').read_text(encoding='utf-8').replace('33d','33f')
+s=s.replace("parent=read_json(root/'captures/rightcoast_study_33b/native-check.json');require(parent['glb_sha256']==check['immediate_source_glb_sha256'] and parent['immediate_source_glb_sha256']==grading['glb_sha256'],'Actual26b to33b to33f identity mismatch')", "parent=read_json(root/'captures/rightcoast_study_33d/native-check.json');grand=read_json(root/'captures/rightcoast_study_33b/native-check.json');require(parent['glb_sha256']==check['immediate_source_glb_sha256'] and parent['immediate_source_glb_sha256']==grand['glb_sha256'] and grand['immediate_source_glb_sha256']==grading['glb_sha256'],'Actual26b to33b to33d to33f identity mismatch')")
+s=s.replace("parent_revision_native_check_sha256=sha256(root/'captures/rightcoast_study_33b/native-check.json')", "parent_revision_native_check_sha256=sha256(root/'captures/rightcoast_study_33d/native-check.json'),grandparent_revision_native_check_sha256=sha256(root/'captures/rightcoast_study_33b/native-check.json')")
+s=s.replace("shutil.copy2(root/'captures/rightcoast_study_33b/native-check.json',frozen/'rightcoast-parent-native-check.json')", "shutil.copy2(root/'captures/rightcoast_study_33d/native-check.json',frozen/'rightcoast-parent-native-check.json');shutil.copy2(root/'captures/rightcoast_study_33b/native-check.json',frozen/'rightcoast-grandparent-native-check.json')")
+needle='\\tassert(parent.glb_sha256==revision.immediate_source_glb_sha256 and parent.immediate_source_glb_sha256==grading.glb_sha256)'
+assert needle in s
+s=s.replace(needle,'''\\tassert(revision.grandparent_revision_native_check_sha256==FileAccess.get_sha256(folder.path_join("rightcoast-grandparent-native-check.json")))
+\\tvar grand:Dictionary=JSON.parse_string(FileAccess.get_file_as_string(folder.path_join("rightcoast-grandparent-native-check.json")))
+\\tassert(parent.glb_sha256==revision.immediate_source_glb_sha256 and parent.immediate_source_glb_sha256==grand.glb_sha256 and grand.immediate_source_glb_sha256==grading.glb_sha256)''')
+p=R/'tools/render_rightcoast_33f.py';assert not p.exists();p.write_text(s,encoding='utf-8');print('33f renderer ready')

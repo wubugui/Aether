@@ -1,0 +1,12 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/asset_instance.gd" id="1_gfsog"]
+[ext_resource type="Material" path="res://materials/cloud.tres" id="2_1kch3"]
+[ext_resource type="PackedScene" path="res://assets/models/cloud_primary.glb" id="3_wvsn2"]
+
+[node name="cloud_primary" type="Node3D"]
+script = ExtResource("1_gfsog")
+asset_kind = "cloud_primary"
+surface_material = ExtResource("2_1kch3")
+
+[node name="Model" parent="." instance=ExtResource("3_wvsn2")]

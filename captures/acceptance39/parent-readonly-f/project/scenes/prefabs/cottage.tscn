@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/asset_instance.gd" id="1_7w7kx"]
+[ext_resource type="Material" path="res://materials/world.tres" id="2_1qgs8"]
+[ext_resource type="PackedScene" path="res://assets/models/cottage.glb" id="3_dhf81"]
+[ext_resource type="Shape3D" path="res://assets/collision/cottage.res" id="4_avr4s"]
+
+[node name="cottage" type="Node3D"]
+script = ExtResource("1_7w7kx")
+asset_kind = "cottage"
+surface_material = ExtResource("2_1qgs8")
+
+[node name="Model" parent="." instance=ExtResource("3_dhf81")]
+
+[node name="Collision" type="StaticBody3D" parent="."]
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision"]
+shape = ExtResource("4_avr4s")

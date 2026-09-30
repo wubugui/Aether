@@ -1,0 +1,168 @@
+{
+  "captures": [],
+  "checks": [
+    {
+      "evidence": null,
+      "name": "Native game script active",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "Normal boot starts in daylight",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "Existing 208 authored terrain tiles retained",
+      "passed": true
+    },
+    {
+      "evidence": 54927,
+      "name": "Authored scatter retained",
+      "passed": true
+    },
+    {
+      "evidence": 228,
+      "name": "Native cabin collision CabinA",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "Cabin mesh and collision equality CabinA",
+      "passed": true
+    },
+    {
+      "evidence": 269,
+      "name": "Native cabin collision CabinB",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "Cabin mesh and collision equality CabinB",
+      "passed": true
+    },
+    {
+      "evidence": {
+        "cloud_tiles": 25,
+        "islands": 9
+      },
+      "name": "Persistent same-world high-altitude assets",
+      "passed": true
+    },
+    {
+      "evidence": {
+        "bindings": {
+          "scene_fill": 382,
+          "scene_haze": 382,
+          "scene_sun_direction": 382,
+          "storm_strength": 370,
+          "study_fill": 5,
+          "study_haze": 5,
+          "study_night": 8
+        },
+        "fog_density": 0.00028000000747852,
+        "materials": 383,
+        "night": 0.0,
+        "reference": "1343",
+        "scope": "Live shared environment; storm/rain/snow/rainbow implementation still pending.",
+        "sun_direction": [
+          -0.481737375259399,
+          0.822968006134033,
+          0.301085889339447
+        ]
+      },
+      "name": "Live material environment bindings",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "Airship authoritative material survives ready and receives environment",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "Airship fill changes in moonlight",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "Streamed terrain uses candidate environment material",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "Newly streamed terrain inherits current night state",
+      "passed": true
+    },
+    {
+      "evidence": 3,
+      "name": "Streamed vegetation/clouds use environment materials",
+      "passed": true
+    },
+    {
+      "evidence": 63,
+      "name": "Authored harbor and village night lamps restored",
+      "passed": true
+    },
+    {
+      "evidence": 0.850000023841858,
+      "name": "Daylight energy restored after night",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "Public observation navigation 1342",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "Public observation navigation 1274",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "Public observation navigation 1278",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "Public observation navigation 1216",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "F2 leaves observation",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "Observation restores safe hover from flight",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "Observation restores safe hover from high-speed",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "Observation restores safe hover from docked",
+      "passed": true
+    },
+    {
+      "evidence": {
+        "distance_m": 92.9868545532227,
+        "finish": "(3512.211, 1232.175, 3378.634)",
+        "start": "(3550.0, 1200.0, 3300.0)"
+      },
+      "name": "Physical flight in native high-altitude region",
+      "passed": true
+    }
+  ],
+  "display_driver": "Windows",
+  "passed": true,
+  "renderer": "NVIDIA GeForce GTX 970",
+  "scope": "Live boot, native high-altitude assembly, environment switching, observation exit and 240 physical flight frames. Visual fidelity and full 21-view acceptance remain pending.",
+  "source_game": "res://scenes/candidate39/Game39.tscn",
+  "source_sha256": "9a52fce69ad88c4545b0993a587a896b8ada1e8b7b5e2351273b76a028f8d151"
+}

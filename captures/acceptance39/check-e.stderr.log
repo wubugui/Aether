@@ -1,0 +1,24 @@
+ERROR: Error opening file 'E:/FeiTing/captures/acceptance39/check-e/boot-day.png'.
+   at: load_image (core/io/image_loader.cpp:89)
+   GDScript backtrace (most recent call first):
+       [0] run (res://tools/verify_candidate39.gd:99)
+       [1] frames (res://tools/verify_candidate39.gd:16)
+ERROR: Failed to load image. Error 7
+   at: load_from_file (core/io/image.cpp:2548)
+   GDScript backtrace (most recent call first):
+       [0] run (res://tools/verify_candidate39.gd:99)
+       [1] frames (res://tools/verify_candidate39.gd:16)
+ERROR: Error opening file 'E:/FeiTing/captures/acceptance39/check-e/same-camera-day-restored.png'.
+   at: load_image (core/io/image_loader.cpp:89)
+   GDScript backtrace (most recent call first):
+       [0] run (res://tools/verify_candidate39.gd:100)
+       [1] frames (res://tools/verify_candidate39.gd:16)
+ERROR: Failed to load image. Error 7
+   at: load_from_file (core/io/image.cpp:2548)
+   GDScript backtrace (most recent call first):
+       [0] run (res://tools/verify_candidate39.gd:100)
+       [1] frames (res://tools/verify_candidate39.gd:16)
+ERROR: Texture with GL ID of 21: leaked 349524 bytes.
+   at: ~Utilities (drivers/gles3/storage/utilities.cpp:77)
+ERROR: Texture with GL ID of 22: leaked 349524 bytes.
+   at: ~Utilities (drivers/gles3/storage/utilities.cpp:77)

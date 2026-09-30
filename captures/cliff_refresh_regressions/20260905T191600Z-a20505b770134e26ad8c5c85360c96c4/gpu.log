@@ -1,0 +1,49 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 581.29 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 4070 SUPER
+
+PASS real GPU backend Windows
+PASS all canonical, renamed/reparented prefab and asset_kind-only instances discovered 3
+PASS old derived collider still supports planted instance 0 
+PASS old derived collider still supports planted instance 1 
+PASS old derived collider still supports planted instance 2 
+PASS geometry refresh covers all three edited instances 
+PASS shrunken-model sample is in old footprint only 0 
+PASS actual new physics exposes lower ground at former cliff foot 0 
+PASS shrunken-model sample is in old footprint only 1 
+PASS actual new physics exposes lower ground at former cliff foot 1 
+PASS shrunken-model sample is in old footprint only 2 
+PASS actual new physics exposes lower ground at former cliff foot 2 
+PASS negative control: new bounds alone misses all old-footprint trees 
+PASS negative control: canonical node-only lookup misses both edited copies 
+PASS old/new union reseats all three trees without deleting them { "moved": 3, "removed": 0 }
+PASS correct ground height and preserved horizontal placement 0 (-24.5, 2.0, 10.5)
+PASS scatter scale/rotation preserved 0 
+PASS scatter color/custom data preserved 0 
+PASS correct ground height and preserved horizontal placement 1 (67.40923, 2.0, 1.258661)
+PASS scatter scale/rotation preserved 1 
+PASS scatter color/custom data preserved 1 
+PASS correct ground height and preserved horizontal placement 2 (-54.47994, 2.0, 55.89259)
+PASS scatter scale/rotation preserved 2 
+PASS scatter color/custom data preserved 2 
+PASS correct ground height and preserved horizontal placement 3 (170.0, 17.0, 170.0)
+PASS scatter scale/rotation preserved 3 
+PASS scatter color/custom data preserved 3 
+PASS shared unrelated MultiMesh remains unchanged 
+PASS native instance transform and authored fields preserved Cliffs/cliff_fixture 
+PASS material/collider overrides preserved Cliffs/cliff_fixture 
+PASS native instance transform and authored fields preserved UserDistrict/RenamedOutcrop 
+PASS material/collider overrides preserved UserDistrict/RenamedOutcrop 
+PASS native instance transform and authored fields preserved UnpackedNativeCopy 
+PASS material/collider overrides preserved UnpackedNativeCopy 
+PASS saved and reloaded GPU MultiMesh placement 0 
+PASS saved and reloaded GPU MultiMesh placement 1 
+PASS saved and reloaded GPU MultiMesh placement 2 
+PASS saved and reloaded GPU MultiMesh placement 3 
+PASS per-instance edited fields survive final save/reload Cliffs/cliff_fixture 
+PASS per-instance edited fields survive final save/reload UserDistrict/RenamedOutcrop 
+PASS per-instance edited fields survive final save/reload UnpackedNativeCopy 
+PASS second refresh is idempotent after save/reload 
+PASS origin compensation respects full rotated/scaled hierarchy Cliffs/cliff_fixture 
+PASS origin compensation respects full rotated/scaled hierarchy UserDistrict/RenamedOutcrop 
+PASS origin compensation respects full rotated/scaled hierarchy UnpackedNativeCopy 
+PASS fixture prefab and derived collision backed up before refresh 

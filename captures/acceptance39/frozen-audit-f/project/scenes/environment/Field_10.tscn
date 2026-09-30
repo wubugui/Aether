@@ -1,0 +1,12 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/asset_instance.gd" id="1_hc00s"]
+[ext_resource type="Material" path="res://materials/world.tres" id="2_qna1d"]
+[ext_resource type="PackedScene" path="res://assets/land_details/Field_10.glb" id="3_0tabu"]
+
+[node name="Field_10" type="Node3D"]
+script = ExtResource("1_hc00s")
+asset_kind = "Field_10"
+surface_material = ExtResource("2_qna1d")
+
+[node name="Model" parent="." instance=ExtResource("3_0tabu")]
