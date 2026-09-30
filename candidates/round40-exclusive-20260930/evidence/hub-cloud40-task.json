@@ -1,0 +1,38 @@
+{
+  "base_url": "http://denghong01:8765",
+  "idempotency_key": "feiting-cloud40-a6c229f69bd44c7c916c7702eb0a6db4",
+  "body": {
+    "backend": "blender",
+    "name": "FeiTing40 three shared native cloud mass variants",
+    "priority": 50,
+    "params": {
+      "version": "4.5.13",
+      "project_file": "f444e8a3-2355-435a-8659-82b8c41ffe93",
+      "script": "main.py",
+      "device": "cpu",
+      "threads": 4,
+      "ram_mb": 4096,
+      "timeout_seconds": 600
+    }
+  },
+  "upload": {
+    "id": "f444e8a3-2355-435a-8659-82b8c41ffe93",
+    "name": "cloud40-input.zip",
+    "mime": "application/zip",
+    "size": 2036,
+    "sha256": "a62544bb23a1a36e455e1b38411ecc3741cadc5290966ac83f00013d6daceb9e",
+    "created": 1790783040.4690726,
+    "origin": "uploaded",
+    "producer_task_id": null,
+    "producer_backend": null,
+    "origin_basis": "registration",
+    "url": "/v1/files/f444e8a3-2355-435a-8659-82b8c41ffe93/content"
+  },
+  "submit_response": {
+    "batch_id": "b6fa17cc-379c-481a-8c61-8fde8065edc8",
+    "task_ids": [
+      "c2bec2d1-a927-40e2-9611-184cc6620ebe"
+    ],
+    "task_id": "c2bec2d1-a927-40e2-9611-184cc6620ebe"
+  }
+}

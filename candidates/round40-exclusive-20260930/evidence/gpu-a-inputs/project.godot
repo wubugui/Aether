@@ -1,0 +1,48 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Aether — Skyfarer"
+config/description="An open-world 3D airship game: fly, explore mountain ranges, navigate ports and dock for supplies."
+run/main_scene="res://scenes/candidate40/Game40.tscn"
+config/features=PackedStringArray("4.5", "GL Compatibility")
+
+[display]
+
+window/size/viewport_width=1672
+window/size/viewport_height=941
+window/size/window_width_override=1672
+window/size/window_height_override=941
+window/stretch/mode="canvas_items"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/skyfarer_tools/plugin.cfg")
+
+[layer_names]
+
+3d_physics/layer_1="World solid"
+3d_physics/layer_2="Airship"
+3d_physics/layer_3="Ground probe"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+anti_aliasing/quality/msaa_3d=2
+environment/defaults/default_clear_color=Color(0.47, 0.68, 0.83, 1)
+
+[shader_globals]
+
+world_time={
+"type": "float",
+"value": 0.0
+}

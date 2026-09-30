@@ -1,0 +1,103 @@
+{
+  "candidate_root": "E:\\FeiTing\\candidates\\round40-exclusive-20260930\\project",
+  "baseline_sha256": "9a52fce69ad88c4545b0993a587a896b8ada1e8b7b5e2351273b76a028f8d151",
+  "scene_sha256": "abd72ef3ed84e458f83fe8f9356d1253afc2f1c5cdec4f19a229c610ddbffd17",
+  "run": "gpu-d-resume1629",
+  "checks_passed": 58,
+  "check_count": 58,
+  "failed_checks": [],
+  "raw_screenshots": 15,
+  "runtime_passed": true,
+  "full_log_clean": true,
+  "log_issues": [],
+  "visual_acceptance": "not_passed",
+  "goal_complete": false,
+  "input_files": [
+    {
+      "path": "scripts/game40.gd",
+      "bytes": 2862,
+      "sha256": "6ce414e60a601fac25d3d79d1ce356ec8bc01b575b0f8061b586da0d08820084"
+    },
+    {
+      "path": "scripts/environment40.gd",
+      "bytes": 6386,
+      "sha256": "398ef2cf063fb4d67e14d9aa58ccb255f74acb1337f51cbca79223dacaa5c811"
+    },
+    {
+      "path": "scripts/airship_body.gd",
+      "bytes": 562,
+      "sha256": "0302984a58b11c6e5c3306a05154df1f9efcf7f34995edbe3772066c284572e8"
+    },
+    {
+      "path": "assets/reference_views40.json",
+      "bytes": 63971,
+      "sha256": "20be24111d9e70dbc57caad7ad6fcdb8e56f22f4982ce73465dcbcbc9ef575ea"
+    },
+    {
+      "path": "tools/build_round40.gd",
+      "bytes": 6552,
+      "sha256": "d13213ffff2a173f4e0a5fb18c1ab094e6b739fc37869be60610acf1ab68a72e"
+    },
+    {
+      "path": "tools/verify_cloud40.gd",
+      "bytes": 16992,
+      "sha256": "03de91bc001b7aebc0fb06bc7a6ada6eb2667f35c955c8ca00f103d7086730eb"
+    },
+    {
+      "path": "tools/build_cloud40.gd",
+      "bytes": 2730,
+      "sha256": "ea975314e9848767e30e53905fd372a78920ab543fe762d47558898fe409f34a"
+    },
+    {
+      "path": "project.godot",
+      "bytes": 1255,
+      "sha256": "a1fe077b1d3aa2faf19995b4bb48f09f66da0451a9de55acad95d3a5e60590e1"
+    },
+    {
+      "path": "source-assets\\hub-cabins40-b\\blender-cabin-repair.json",
+      "bytes": 593,
+      "sha256": "b28eeb72f4b78cb5d4c74056970860334d6b020b6818f7375bc218a4d21d8475"
+    },
+    {
+      "path": "source-assets\\hub-cabins40-b\\cabins40.blend",
+      "bytes": 3866722,
+      "sha256": "6086befc8d3dc5015ca662dcd0b301f8d784dfd9ccb6ed2adf540cff8a140685"
+    },
+    {
+      "path": "source-assets\\hub-cabins40-b\\cabin_a.glb",
+      "bytes": 408392,
+      "sha256": "07eb2f388065b60947af7d7c6426896319bb38af7014ecf8c3c71784cfe8a6ee"
+    },
+    {
+      "path": "source-assets\\hub-cabins40-b\\cabin_b.glb",
+      "bytes": 463848,
+      "sha256": "241ab856b3ca0e72aa2c5b477b4bba21a00669888226470511a18073ce04ef04"
+    },
+    {
+      "path": "source-assets\\hub-cloud40\\cloud_model40.json",
+      "bytes": 584,
+      "sha256": "43b7ec14c0c0288bf3f984f312fae5782afba77110b6f63b4a30a23e83521cd7"
+    },
+    {
+      "path": "source-assets\\hub-cloud40\\cloud_sea40.blend",
+      "bytes": 1017430,
+      "sha256": "baedfed7ed3d6a5dde5058b6b60fad768c8825ded600a09eb1d1d9dfe0911f2c"
+    },
+    {
+      "path": "source-assets\\hub-cloud40\\cloud_sea_40_0.glb",
+      "bytes": 249992,
+      "sha256": "bd6716d11c13699b7707e2dcb00cd4438697af0f398434d2050fc0f37c63c420"
+    },
+    {
+      "path": "source-assets\\hub-cloud40\\cloud_sea_40_1.glb",
+      "bytes": 249996,
+      "sha256": "0e37e5f653e3e68cb4b16864ca06af039b0b94bd079ed63753c7192e6d7939b6"
+    },
+    {
+      "path": "source-assets\\hub-cloud40\\cloud_sea_40_2.glb",
+      "bytes": 250008,
+      "sha256": "0ee3a0b7b0273f014df409c357595d2f994bccfafef77b784520a1da53ebb31e"
+    }
+  ],
+  "scope": "Same native world with 25 shared modeled cloud placements, actual side/back cloud views and retained cabin/player blocking checks. Limited shared true lighting, retained native cabin lining, four camera clearance checks, original player swept collision against two cabin solids (initial contact roof lining) and one floating island. Not complete accessibility/routes/weather/visual acceptance."
+}

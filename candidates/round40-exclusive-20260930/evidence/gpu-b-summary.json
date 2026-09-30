@@ -1,0 +1,82 @@
+{
+  "candidate_root": "E:\\FeiTing\\candidates\\round40-exclusive-20260930\\project",
+  "baseline_sha256": "9a52fce69ad88c4545b0993a587a896b8ada1e8b7b5e2351273b76a028f8d151",
+  "scene_sha256": "8126f53977f371693ef5c6cd994bf8435e2b4f8ea350288994ba3b4cc7374bdc",
+  "run": "gpu-b",
+  "checks_passed": 53,
+  "check_count": 54,
+  "failed_checks": [
+    {
+      "evidence": "/root/Skyfarer/SkyRegion39/CabinA/cabin_a_winbar_v/Solid",
+      "name": "Cabin genuine window aperture remains open CabinA",
+      "passed": false
+    }
+  ],
+  "raw_screenshots": 13,
+  "runtime_passed": false,
+  "full_log_clean": false,
+  "log_issues": [
+    "ERROR: Texture with GL ID of 21: leaked 349524 bytes.",
+    "ERROR: Texture with GL ID of 22: leaked 349524 bytes."
+  ],
+  "visual_acceptance": "not_passed",
+  "goal_complete": false,
+  "input_files": [
+    {
+      "path": "scripts/game40.gd",
+      "bytes": 2862,
+      "sha256": "6ce414e60a601fac25d3d79d1ce356ec8bc01b575b0f8061b586da0d08820084"
+    },
+    {
+      "path": "scripts/environment40.gd",
+      "bytes": 5890,
+      "sha256": "b399d90736ccdaee7b8dd616579dec5919d09f972c620d13763c18d8ea2e4b88"
+    },
+    {
+      "path": "scripts/airship_body.gd",
+      "bytes": 562,
+      "sha256": "0302984a58b11c6e5c3306a05154df1f9efcf7f34995edbe3772066c284572e8"
+    },
+    {
+      "path": "assets/reference_views40.json",
+      "bytes": 63971,
+      "sha256": "20be24111d9e70dbc57caad7ad6fcdb8e56f22f4982ce73465dcbcbc9ef575ea"
+    },
+    {
+      "path": "tools/build_round40.gd",
+      "bytes": 6552,
+      "sha256": "d13213ffff2a173f4e0a5fb18c1ab094e6b739fc37869be60610acf1ab68a72e"
+    },
+    {
+      "path": "tools/verify_round40.gd",
+      "bytes": 15451,
+      "sha256": "de76bedd4cb95e3905dc1436f5bee63f491ee283802067c0eaff69d822d1b1ae"
+    },
+    {
+      "path": "project.godot",
+      "bytes": 1255,
+      "sha256": "a1fe077b1d3aa2faf19995b4bb48f09f66da0451a9de55acad95d3a5e60590e1"
+    },
+    {
+      "path": "source-assets\\hub-cabins40-b\\blender-cabin-repair.json",
+      "bytes": 593,
+      "sha256": "b28eeb72f4b78cb5d4c74056970860334d6b020b6818f7375bc218a4d21d8475"
+    },
+    {
+      "path": "source-assets\\hub-cabins40-b\\cabins40.blend",
+      "bytes": 3866722,
+      "sha256": "6086befc8d3dc5015ca662dcd0b301f8d784dfd9ccb6ed2adf540cff8a140685"
+    },
+    {
+      "path": "source-assets\\hub-cabins40-b\\cabin_a.glb",
+      "bytes": 408392,
+      "sha256": "07eb2f388065b60947af7d7c6426896319bb38af7014ecf8c3c71784cfe8a6ee"
+    },
+    {
+      "path": "source-assets\\hub-cabins40-b\\cabin_b.glb",
+      "bytes": 463848,
+      "sha256": "241ab856b3ca0e72aa2c5b477b4bba21a00669888226470511a18073ce04ef04"
+    }
+  ],
+  "scope": "Limited shared true lighting, retained native cabin lining, four camera clearance checks, original player swept collision against two cabin solids (initial contact roof lining) and one floating island. Not complete accessibility/routes/weather/visual acceptance."
+}

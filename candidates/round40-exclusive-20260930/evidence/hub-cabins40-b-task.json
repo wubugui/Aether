@@ -1,0 +1,38 @@
+{
+  "base_url": "http://denghong01:8765",
+  "idempotency_key": "feiting-round40-cabins-a33797a8344645038919b5da1870a8db",
+  "body": {
+    "backend": "blender",
+    "name": "FeiTing40 retained cabins real wall/floor/window lining repair",
+    "priority": 50,
+    "params": {
+      "version": "4.5.13",
+      "project_file": "d00a8ee1-c7c4-4a8c-9220-532780097877",
+      "script": "main.py",
+      "device": "cpu",
+      "threads": 4,
+      "ram_mb": 4096,
+      "timeout_seconds": 600
+    }
+  },
+  "upload": {
+    "id": "d00a8ee1-c7c4-4a8c-9220-532780097877",
+    "name": "cabins40-input-b.zip",
+    "mime": "application/zip",
+    "size": 363869,
+    "sha256": "f02220454438fd8ee80401c5dd4432f2d370acd2347ba79bca2fbcf2ecc8c0ba",
+    "created": 1790781690.5509503,
+    "origin": "uploaded",
+    "producer_task_id": null,
+    "producer_backend": null,
+    "origin_basis": "registration",
+    "url": "/v1/files/d00a8ee1-c7c4-4a8c-9220-532780097877/content"
+  },
+  "submit_response": {
+    "batch_id": "f16d3319-1354-4f1b-a0c5-9d3e24cd92ef",
+    "task_ids": [
+      "ebe5e42f-dc2a-427f-8ebc-a08590422916"
+    ],
+    "task_id": "ebe5e42f-dc2a-427f-8ebc-a08590422916"
+  }
+}

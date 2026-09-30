@@ -1,0 +1,38 @@
+{
+  "base_url": "http://denghong01:8765",
+  "idempotency_key": "feiting-upper43-09a4cd1802994098a3f3bbe30da80707",
+  "body": {
+    "backend": "blender",
+    "name": "FeiTing43 independent upper cumulus native assets",
+    "priority": 50,
+    "params": {
+      "version": "4.5.13",
+      "project_file": "50a04681-4b9d-47c6-aa00-53ccb2819b15",
+      "script": "main.py",
+      "device": "cpu",
+      "threads": 4,
+      "ram_mb": 4096,
+      "timeout_seconds": 600
+    }
+  },
+  "upload": {
+    "id": "50a04681-4b9d-47c6-aa00-53ccb2819b15",
+    "name": "upper43-input.zip",
+    "mime": "application/zip",
+    "size": 1449,
+    "sha256": "5520c4397f0c80760fb72b222e65e5db44f2dc22b4496360a8f5b0be282a3040",
+    "created": 1790791171.0292728,
+    "origin": "uploaded",
+    "producer_task_id": null,
+    "producer_backend": null,
+    "origin_basis": "registration",
+    "url": "/v1/files/50a04681-4b9d-47c6-aa00-53ccb2819b15/content"
+  },
+  "submit_response": {
+    "batch_id": "93724d34-9772-47f9-83b6-da5ba6892632",
+    "task_ids": [
+      "1d100870-6de3-4d29-9a1e-2fcc5790db83"
+    ],
+    "task_id": "1d100870-6de3-4d29-9a1e-2fcc5790db83"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "scene_sha256": "4ea49a9f43cf10843cf4eb8c350ae060404b8461350b8e64f229a8b23a4e34f0",
+  "checks_passed": 105,
+  "check_count": 105,
+  "raw_images": 36,
+  "all_20_reference_navigation": true,
+  "full_log_clean": true,
+  "log_issues": [],
+  "runtime_passed": true,
+  "visual_acceptance": "not_passed",
+  "goal_complete": false,
+  "inputs": [
+    {
+      "path": "scripts/game42b.gd",
+      "sha256": "1f8d6d6a6a049072dc93a190dd14d17b722c69712a9281a49f0f971c7f7acbca"
+    },
+    {
+      "path": "scripts/environment42b.gd",
+      "sha256": "2b6e738b02b92a9d86186633e2b41f6117d638583583e870e57eab40ddba8a29"
+    },
+    {
+      "path": "scripts/weather42b.gd",
+      "sha256": "bd77ecf713b1324e7ff8ec14174a65e07ee01e58b83d464b195ae16fefa63d5d"
+    },
+    {
+      "path": "scripts/airship_body.gd",
+      "sha256": "0302984a58b11c6e5c3306a05154df1f9efcf7f34995edbe3772066c284572e8"
+    },
+    {
+      "path": "assets/reference_views42.json",
+      "sha256": "99058d383de8c53b12862dc9c49ef0ba36d25b2739ec6eba13f477a5963587e0"
+    },
+    {
+      "path": "tools/build_weather42b.gd",
+      "sha256": "e4301c5c400456ce2845c24c8549bb42dc76dfb2e913d7f78e8bc968951c671f"
+    },
+    {
+      "path": "tools/verify_weather42b.gd",
+      "sha256": "1a201d9ec1e6ef4e784b925ef24a49d3a1d3123613c4a0315864d253338df423"
+    },
+    {
+      "path": "project.godot",
+      "sha256": "1eefc9e1dc35dfd2ceca6450f6c21e6969e8be2ad031ea33bb121f9c80ef1af6"
+    }
+  ],
+  "failures": [
+    "Near rain appears as excessive coarse streaks; must fade near viewing eye and reduce native particle scale.",
+    "Snow1276 view occluded by real geometry; diagnose true ground and camera clearance.",
+    "Upper clouds retain heavy base and repeated arranged silhouettes.",
+    "Terrain, mountain silhouettes, islands, ports, fine interior props and reflection fidelity still require full reference work."
+  ]
+}

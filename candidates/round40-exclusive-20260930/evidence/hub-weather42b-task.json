@@ -1,0 +1,38 @@
+{
+  "base_url": "http://denghong01:8765",
+  "idempotency_key": "feiting-weather42b-7f8dc5b115534abab29aa1418b3acc7e",
+  "body": {
+    "backend": "blender",
+    "name": "FeiTing42b native spatial weather primitives",
+    "priority": 50,
+    "params": {
+      "version": "4.5.13",
+      "project_file": "4285b0a3-fd8e-418d-960b-536e1d71ba47",
+      "script": "main.py",
+      "device": "cpu",
+      "threads": 4,
+      "ram_mb": 4096,
+      "timeout_seconds": 600
+    }
+  },
+  "upload": {
+    "id": "4285b0a3-fd8e-418d-960b-536e1d71ba47",
+    "name": "weather42b-input.zip",
+    "mime": "application/zip",
+    "size": 1736,
+    "sha256": "fde2ad796355a80a8e096f9a949fbbc74460438e0ad0dd7114ff3a79f0d61f1d",
+    "created": 1790789008.1745093,
+    "origin": "uploaded",
+    "producer_task_id": null,
+    "producer_backend": null,
+    "origin_basis": "registration",
+    "url": "/v1/files/4285b0a3-fd8e-418d-960b-536e1d71ba47/content"
+  },
+  "submit_response": {
+    "batch_id": "51187402-a73b-421d-b40f-cbb1e5242872",
+    "task_ids": [
+      "667100d9-fba2-42e8-88d6-ee9cde06450d"
+    ],
+    "task_id": "667100d9-fba2-42e8-88d6-ee9cde06450d"
+  }
+}

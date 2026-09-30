@@ -1,0 +1,38 @@
+{
+  "base_url": "http://denghong01:8765",
+  "idempotency_key": "feiting-cloud41-3732c042b88f4c90a8a3d1c8fa6ac726",
+  "body": {
+    "backend": "blender",
+    "name": "FeiTing41 irregular shared clouds and distant banks",
+    "priority": 50,
+    "params": {
+      "version": "4.5.13",
+      "project_file": "0ea767cc-813f-4851-a2f9-7f9fa90e0a4d",
+      "script": "main.py",
+      "device": "cpu",
+      "threads": 4,
+      "ram_mb": 4096,
+      "timeout_seconds": 600
+    }
+  },
+  "upload": {
+    "id": "0ea767cc-813f-4851-a2f9-7f9fa90e0a4d",
+    "name": "cloud41-input.zip",
+    "mime": "application/zip",
+    "size": 1941,
+    "sha256": "4bbc2d0f773ba6ff3601baeaeb3476b2796d898e608013d9fcea2fd10ea2605d",
+    "created": 1790786262.0809343,
+    "origin": "uploaded",
+    "producer_task_id": null,
+    "producer_backend": null,
+    "origin_basis": "registration",
+    "url": "/v1/files/0ea767cc-813f-4851-a2f9-7f9fa90e0a4d/content"
+  },
+  "submit_response": {
+    "batch_id": "1498b0d0-ad6d-49f1-ae6f-166f39b44d31",
+    "task_ids": [
+      "53c3ff9c-413c-4b58-9e49-51a352be1b08"
+    ],
+    "task_id": "53c3ff9c-413c-4b58-9e49-51a352be1b08"
+  }
+}
