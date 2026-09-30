@@ -2,6 +2,8 @@
 
 2026-09-30 23:13 UTC. Developer self-review, not independent acceptance. Source: full-reference-survey-20260930T225223Z-Tc88Sk. All 61 actual frames were inspected through five front/reference paired sheets, five side/back sheets and the full-resolution original boot/reference pair. The sheets are navigation aids; original PNGs are retained. This is broad composition/geometry/weather review, not a fine-detail approval. Engine: official Godot4.5.1 Compatibility, Mesa llvmpipe software renderer. 169 limited runtime checks passed, exit0, only known VSync warning. No hardware GPU or physical-flight acceptance.
 
+The survey holds weather at0.35s. Existing lightning only flashes during cycle0–0.10s and0.18–0.24s; this survey intentionally captures between flashes. Therefore absence of lightning in these stills is NOT evidence that lightning never operates. The rain/snow, moving storm and lightning cycle still need separately timed motion/flash review; previous operational tests remain valid.
+
 Every row remains FAILED visually. Side/back are rotations in the same world, not flights. The UI/characters are excluded from new restoration scope. The visible airborne vehicle is retained for existing observation, not counted as new character work.
 
 | Reference | Front discrepancy | Side discrepancy | Back discrepancy |
