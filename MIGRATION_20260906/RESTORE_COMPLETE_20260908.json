@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "workspace": "E:\\FeiTing",
+  "source_directory": "E:\\Aether_Migration_20260906",
+  "archive_root_removed": "test6/",
+  "original_files": 220703,
+  "extracted_files_including_controls": 220705,
+  "sidecar_checks_passed": 16,
+  "archive_sha256": "4eb32fa5ac3d744ff96459d8e9f2ceaa31cc35314c793909650df730ef3a8179",
+  "full_pre_import_byte_check": "MIGRATION_20260906/RESTORE_BYTE_VERIFY_20260908.json",
+  "supplied_powershell_verifier": {
+    "verified_files": 220703,
+    "console_result": "PASS: 220703 files match the original byte-for-byte SHA256 manifest.",
+    "script": "MIGRATION_20260906/Verify_Extracted.ps1",
+    "exit_code": 0
+  },
+  "history_check": "MIGRATION_20260906/restored_history_20260908/RESTORE_HISTORY_VERIFY.json",
+  "python": {
+    "passed": true,
+    "dependencies": [
+      "numpy",
+      "scipy",
+      "cv2",
+      "PIL",
+      "shapely"
+    ],
+    "version": "3.10.1"
+  },
+  "godot_source_run": "captures/validation_runs/restore-20260908-20260908T014334Z-65c6290b091c4a99806b7cf3b9c2db9b",
+  "source_game_checks_passed": 36,
+  "actual_gpu": "NVIDIA GeForce GTX 970",
+  "visual_goal_complete": false,
+  "note": "Full parallel verification completed before first Godot import. Supplied PowerShell verification also completed successfully. Later Godot cache/runtime reports and the Python launcher fix are continuation changes; the current workspace is no longer a frozen byte-identical snapshot."
+}

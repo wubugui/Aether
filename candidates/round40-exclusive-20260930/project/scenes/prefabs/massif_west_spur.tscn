@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/asset_instance.gd" id="1_5vhtg"]
+[ext_resource type="Material" path="res://materials/cliff.tres" id="2_8eii4"]
+[ext_resource type="PackedScene" path="res://assets/models/massif_west_spur.glb" id="3_mwsis"]
+[ext_resource type="Shape3D" path="res://assets/collision/massif_west_spur.res" id="4_jnckt"]
+
+[node name="massif_west_spur" type="Node3D"]
+script = ExtResource("1_5vhtg")
+asset_kind = "massif_west_spur"
+surface_material = ExtResource("2_8eii4")
+
+[node name="Model" parent="." instance=ExtResource("3_mwsis")]
+
+[node name="Collision" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision"]
+shape = ExtResource("4_jnckt")

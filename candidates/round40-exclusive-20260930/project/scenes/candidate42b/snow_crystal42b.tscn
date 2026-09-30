@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=4]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ijcju"]
+resource_name = "Snow white"
+cull_mode = 2
+albedo_color = Color(0.9546871, 0.9731482, 1, 1)
+roughness = 0.4
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_1dewf"]
+resource_name = "snow_crystal42b_snow_crystal"
+_surfaces = [{
+"aabb": AABB(-0.10733099, -0.12, -0.1020768, 0.21466199, 0.24, 0.2041536),
+"format": 34896613383,
+"index_count": 60,
+"index_data": PackedByteArray("AAAKAAUABwAbAAIAAwAPAA0ABAAXABAAAQAZABQACQA2AB0ACwAeAAYAEQAmAA4AGAArABIAGgAtABUACAAgADQADAAkACIAEwAsACcAFgAxACkAHAA1AC8AHwA3ADIAIwA5ACEAKgA7ACUAMAA6ACgAMwA4AC4A"),
+"material": SubResource("StandardMaterial3D_ijcju"),
+"name": "Snow white",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 60,
+"vertex_data": PackedByteArray("/38AAP9/k+P/fwAA/3/09f9/AAD/f7f5/38AAP9/WvD/fwAA/39q5oznwUYaz5PjjOfBRhrP0M2M58FGGs+3+YznwUYaz/30jOfBRhrP5v9yWMFG//+T43JYwUb//9DNcljBRv//x7VyWMFG//9a8HJYwUb//4WnAADBRv9/WvAAAMFG/39q5gAAwUb/f4WnAADBRv9/NdkAAMFG/390wXJYwUYAAPT1cljBRgAAwP5yWMFGAABh+nJYwUYAAGrmcljBRgAANdmM58FG5DD09YznwUbkMMD+jOfBRuQwt/mM58FG5DAt9IznwUbkMOb/jKc9uf//0M2Mpz25//+A/oynPbn///30jKc9uf//+9uMpz25///HtXIYPbkaz/vbchg9uRrPx7VyGD25Gs+A4XIYPbkaz4Wnchg9uRrPdMFyGD255DDn+XIYPbnkMGH6chg9ueQwgOFyGD255DA12XIYPbnkMHTBjKc9uQAAwP6Mpz25AABk8YynPbkAAC30jKc9uQAA5/mMpz25AABh+v//Pbn/f4D+//89uf9/ZPH//z25/3/99P//Pbn/fy30//89uf9/5v//f////3+A/v9/////f2Tx/3////9/+9v/f////3/n+f9/////f4Dh53jtVGk8y97zm7VRmNL28ABQN/7neO1UiIgxa/ObtVG6qmiD4rnXdOd47VSIiDFrf32YnZjS9vDsY8XUmNL28ABQN/7sY8XUG2uQ79F/eutpPMve98DVTwdQFsIAUDf+G2uQ72k8y973wNVP85u1Ue/Q3Hjiudd0iIgxa5SY3aW6qmiDs4stqn99mJ2ziy2qf32YneJ488DsY8XU0X966wi/FRsHUBbC4njzwBtrkO/Rf3rr98DVTwND9Q/v0Nx4CL8VGwdQFsKUmN2lA0P1D7qqaIPv0Nx44rnXdJSY3aUDQ/UPs4stqgi/FRviePPA")
+}]
+blend_shape_mode = 0
+
+[node name="snow_crystal42b" type="Node3D"]
+
+[node name="snow_crystal" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_1dewf")
+skeleton = NodePath("")

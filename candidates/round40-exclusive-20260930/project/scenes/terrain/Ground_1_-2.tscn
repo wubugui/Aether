@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/asset_instance.gd" id="1_ekubl"]
+[ext_resource type="Material" path="res://materials/terrain.tres" id="2_txmao"]
+[ext_resource type="PackedScene" path="res://assets/terrain/Ground_1_-2.glb" id="3_oqynh"]
+[ext_resource type="Shape3D" path="res://assets/collision/Ground_1_-2.res" id="4_vs0gc"]
+
+[node name="Ground_1_-2" type="Node3D"]
+script = ExtResource("1_ekubl")
+asset_kind = "Ground_1_-2"
+surface_material = ExtResource("2_txmao")
+
+[node name="Model" parent="." instance=ExtResource("3_oqynh")]
+
+[node name="Collision" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision"]
+shape = ExtResource("4_vs0gc")

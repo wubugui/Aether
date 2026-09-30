@@ -1,0 +1,23 @@
+{
+  "baseline_game40b_sha256": "8126f53977f371693ef5c6cd994bf8435e2b4f8ea350288994ba3b4cc7374bdc",
+  "candidate_sha256": "abd72ef3ed84e458f83fe8f9356d1253afc2f1c5cdec4f19a229c610ddbffd17",
+  "cloud_instances": 25,
+  "native_cloud_sources": [
+    {
+      "mesh_parts": 20,
+      "source_sha256": "bd6716d11c13699b7707e2dcb00cd4438697af0f398434d2050fc0f37c63c420",
+      "variant": 0
+    },
+    {
+      "mesh_parts": 20,
+      "source_sha256": "0e37e5f653e3e68cb4b16864ca06af039b0b94bd079ed63753c7192e6d7939b6",
+      "variant": 1
+    },
+    {
+      "mesh_parts": 20,
+      "source_sha256": "0ee3a0b7b0273f014df409c357595d2f994bccfafef77b784520a1da53ebb31e",
+      "variant": 2
+    }
+  ],
+  "scope": "Replace shared native cloud resources; same positions, terrain, cabins and islands. Persist shared environment, no world regeneration or camera-specific scenery."
+}

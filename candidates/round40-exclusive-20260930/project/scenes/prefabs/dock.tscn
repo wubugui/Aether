@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/asset_instance.gd" id="1_0lct3"]
+[ext_resource type="Material" path="res://materials/world.tres" id="2_myyji"]
+[ext_resource type="PackedScene" path="res://assets/models/dock.glb" id="3_ukjg8"]
+[ext_resource type="Shape3D" path="res://assets/collision/dock.res" id="4_n64a7"]
+
+[node name="dock" type="Node3D"]
+script = ExtResource("1_0lct3")
+asset_kind = "dock"
+surface_material = ExtResource("2_myyji")
+
+[node name="Model" parent="." instance=ExtResource("3_ukjg8")]
+
+[node name="Collision" type="StaticBody3D" parent="."]
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision"]
+shape = ExtResource("4_n64a7")
