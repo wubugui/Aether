@@ -1,0 +1,8 @@
+WARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.
+     at: set_use_vsync (platform/linuxbsd/x11/gl_manager_x11.cpp:364)
+ERROR: World or non-diffuse material property changed
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] require (res://tools/build_cloud_material45.gd:32)
+       [1] build (res://tools/build_cloud_material45.gd:170)
+       [2] settle (res://tools/build_cloud_material45.gd:122)
