@@ -1,0 +1,31 @@
+{
+ "base_url": "http://denghong01:8765",
+ "idempotency_key": "feiting-lookdev-38-k-fc08480a505e41288d5a5277f4ab9ddf",
+ "body": {
+  "backend": "blender",
+  "name": "feiting lookdev 38 k",
+  "priority": 50,
+  "params": {
+   "version": "4.5.13",
+   "project_file": "250be1e5-36ea-444e-a551-c0f9948e566f",
+   "script": "main.py",
+   "args": [
+    "1135",
+    "1275"
+   ],
+   "device": "gpu",
+   "gpu_policy": "auto",
+   "threads": 4,
+   "ram_mb": 8192,
+   "vram_mb": 3000,
+   "timeout_seconds": 1800
+  }
+ },
+ "submit_response": {
+  "batch_id": "ea91a52f-0151-46d9-bf2d-2c98929da735",
+  "task_ids": [
+   "d32ad0cf-bd97-4ee5-9b39-c5013214b91b"
+  ],
+  "task_id": "d32ad0cf-bd97-4ee5-9b39-c5013214b91b"
+ }
+}
