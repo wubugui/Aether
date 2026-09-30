@@ -1,0 +1,341 @@
+{
+  "schema_version": 1,
+  "run_id": "lighthouse-19a-20260908T064640Z-0c75ff6bc76845788c86f67e6f327ade",
+  "round": "lighthouse-19a",
+  "started_utc": "2026-09-08T06:46:40.490513+00:00",
+  "workspace": "E:\\FeiTing",
+  "run_directory": "E:\\FeiTing\\captures\\validation_runs\\lighthouse-19a-20260908T064640Z-0c75ff6bc76845788c86f67e6f327ade",
+  "status": "passed",
+  "passed": true,
+  "export_windows_requested": false,
+  "capture_views_requested": true,
+  "expected_counts": {},
+  "stages": [
+    {
+      "name": "capture-front",
+      "run_id": "lighthouse-19a-20260908T064640Z-0c75ff6bc76845788c86f67e6f327ade",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\lighthouse-19a-20260908T064640Z-0c75ff6bc76845788c86f67e6f327ade\\study-inputs\\preview.gd",
+        "--",
+        "--view=front",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\lighthouse-19a-20260908T064640Z-0c75ff6bc76845788c86f67e6f327ade\\images\\front.png",
+        "--study-dir=E:\\FeiTing\\captures\\validation_runs\\lighthouse-19a-20260908T064640Z-0c75ff6bc76845788c86f67e6f327ade\\study-inputs",
+        "--validation-run=lighthouse-19a-20260908T064640Z-0c75ff6bc76845788c86f67e6f327ade"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788850013335170800,
+      "started_utc": "2026-09-08T06:46:53.335170+00:00",
+      "input_manifest_sha256": "23ebfd24a93beebf710032456e25a3b44ae84c61b74f3f180babe6aca6979fd3",
+      "exit_code": 0,
+      "finished_ns": 1788850018459627200,
+      "image": "images/front.png",
+      "finished_utc": "2026-09-08T06:47:04.577316+00:00"
+    },
+    {
+      "name": "capture-back",
+      "run_id": "lighthouse-19a-20260908T064640Z-0c75ff6bc76845788c86f67e6f327ade",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\lighthouse-19a-20260908T064640Z-0c75ff6bc76845788c86f67e6f327ade\\study-inputs\\preview.gd",
+        "--",
+        "--view=back",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\lighthouse-19a-20260908T064640Z-0c75ff6bc76845788c86f67e6f327ade\\images\\back.png",
+        "--study-dir=E:\\FeiTing\\captures\\validation_runs\\lighthouse-19a-20260908T064640Z-0c75ff6bc76845788c86f67e6f327ade\\study-inputs",
+        "--validation-run=lighthouse-19a-20260908T064640Z-0c75ff6bc76845788c86f67e6f327ade"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788850030573103800,
+      "started_utc": "2026-09-08T06:47:10.573103+00:00",
+      "input_manifest_sha256": "23ebfd24a93beebf710032456e25a3b44ae84c61b74f3f180babe6aca6979fd3",
+      "exit_code": 0,
+      "finished_ns": 1788850035575221300,
+      "image": "images/back.png",
+      "finished_utc": "2026-09-08T06:47:21.592877+00:00"
+    },
+    {
+      "name": "capture-gallery",
+      "run_id": "lighthouse-19a-20260908T064640Z-0c75ff6bc76845788c86f67e6f327ade",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\lighthouse-19a-20260908T064640Z-0c75ff6bc76845788c86f67e6f327ade\\study-inputs\\preview.gd",
+        "--",
+        "--view=gallery",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\lighthouse-19a-20260908T064640Z-0c75ff6bc76845788c86f67e6f327ade\\images\\gallery.png",
+        "--study-dir=E:\\FeiTing\\captures\\validation_runs\\lighthouse-19a-20260908T064640Z-0c75ff6bc76845788c86f67e6f327ade\\study-inputs",
+        "--validation-run=lighthouse-19a-20260908T064640Z-0c75ff6bc76845788c86f67e6f327ade"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788850047564376300,
+      "started_utc": "2026-09-08T06:47:27.564376+00:00",
+      "input_manifest_sha256": "23ebfd24a93beebf710032456e25a3b44ae84c61b74f3f180babe6aca6979fd3",
+      "exit_code": 0,
+      "finished_ns": 1788850052501563000,
+      "image": "images/gallery.png",
+      "finished_utc": "2026-09-08T06:47:38.530757+00:00"
+    },
+    {
+      "name": "capture-context",
+      "run_id": "lighthouse-19a-20260908T064640Z-0c75ff6bc76845788c86f67e6f327ade",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\lighthouse-19a-20260908T064640Z-0c75ff6bc76845788c86f67e6f327ade\\study-inputs\\preview.gd",
+        "--",
+        "--view=context",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\lighthouse-19a-20260908T064640Z-0c75ff6bc76845788c86f67e6f327ade\\images\\context.png",
+        "--study-dir=E:\\FeiTing\\captures\\validation_runs\\lighthouse-19a-20260908T064640Z-0c75ff6bc76845788c86f67e6f327ade\\study-inputs",
+        "--validation-run=lighthouse-19a-20260908T064640Z-0c75ff6bc76845788c86f67e6f327ade"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788850064535638400,
+      "started_utc": "2026-09-08T06:47:44.535638+00:00",
+      "input_manifest_sha256": "23ebfd24a93beebf710032456e25a3b44ae84c61b74f3f180babe6aca6979fd3",
+      "exit_code": 0,
+      "finished_ns": 1788850069643327500,
+      "image": "images/context.png",
+      "finished_utc": "2026-09-08T06:47:55.821097+00:00"
+    }
+  ],
+  "artifacts": {
+    "study-inputs/lighthouse.blend": {
+      "sha256": "f7d1dd7341ea7e0d0165a9c5da56dd74a0cee789ab1537e72de1734cafa1aa4c",
+      "bytes": 1825907,
+      "mtime_ns": 1788849837046412400
+    },
+    "study-inputs/lighthouse.glb": {
+      "sha256": "bd9f125de12735b92b66035ac31c4bcfa8f499124adca975b3fe5e31b55fa2a9",
+      "bytes": 329564,
+      "mtime_ns": 1788849837551581000
+    },
+    "study-inputs/builder.py": {
+      "sha256": "e60ddb6bec34f0f85b5b41ca040f1aed11f5c69b6ec913a369c037afbb9609b7",
+      "bytes": 6964,
+      "mtime_ns": 1788849833467687500
+    },
+    "study-inputs/model-report.json": {
+      "sha256": "d32369c3f87e768c1c9a969e02800fdbb5f819d2a55ab27464cfa34520a86082",
+      "bytes": 557,
+      "mtime_ns": 1788849837552731000
+    },
+    "study-inputs/preview.gd": {
+      "sha256": "f6086fe90e3949c4141115fd664f69573e05e326237e759a278ddfc58a750df0",
+      "bytes": 2019,
+      "mtime_ns": 1788850000052662400
+    },
+    "scoped-driver.py": {
+      "sha256": "2bf23e5f307099d14d560b553c8449248898f8d3f7aed3ab9947237b76900bf8",
+      "bytes": 2751,
+      "mtime_ns": 1788849930003643000
+    },
+    "reference-inputs/1125.png": {
+      "sha256": "aeda03c290ee0d0cb5e7ce3c2ed0e841256f02d2165b2b4cc6cebb0dd2e2a9c3",
+      "bytes": 1571331,
+      "mtime_ns": 1788847342201226800
+    },
+    "reference-inputs/1126.png": {
+      "sha256": "3051f512881fecf3d2b8dacadbac3ed10473f9094d28870526ae3cd4db9e4353",
+      "bytes": 1554270,
+      "mtime_ns": 1788847337990769400
+    },
+    "reference-inputs/1128.png": {
+      "sha256": "cb5cfc510b2ce477bca1358f60e424b4f2bd33b06583b8d8b6970b6e671b8654",
+      "bytes": 1625434,
+      "mtime_ns": 1788847339735226600
+    },
+    "reference-inputs/1129.png": {
+      "sha256": "9f0295c8da3fe2a3a9d5c055495c62bf501d318759fecc7a33b40c99bdc79993",
+      "bytes": 1691599,
+      "mtime_ns": 1788847338931389200
+    },
+    "reference-inputs/1131.png": {
+      "sha256": "af70f337ea000c7ba5e2e4c121ca4fbdb60bd2e816ee1acaee35f1ddabd2e152",
+      "bytes": 1770046,
+      "mtime_ns": 1788847343495314300
+    },
+    "reference-inputs/1135.png": {
+      "sha256": "25968bf1203323213d4fc0b2f473c7014cf3532377c89ff9545eb5029322ef59",
+      "bytes": 1850035,
+      "mtime_ns": 1788847334556827300
+    },
+    "reference-inputs/1216.png": {
+      "sha256": "f705cb5de0664e9189bdc66b8ed116fc6db5f6ec1f541606df2b399dbde3aa4f",
+      "bytes": 1721327,
+      "mtime_ns": 1788847337516453600
+    },
+    "reference-inputs/1217.png": {
+      "sha256": "27161cfc249f6a9e02a51ae7cc5d0c9b973be1452f9b2ecfb1ebee630655d73a",
+      "bytes": 1820130,
+      "mtime_ns": 1788847337261791000
+    },
+    "reference-inputs/1218.png": {
+      "sha256": "774d8f62f8fa48a93ed15650c3bc21971b08b55262dea9421de36f3368f556b6",
+      "bytes": 1727736,
+      "mtime_ns": 1788847341152794900
+    },
+    "reference-inputs/1220.png": {
+      "sha256": "930cec916eb4d138a41894bc3fdaf3da953fcf3c1729ae2cc14a12eb041addec",
+      "bytes": 1908776,
+      "mtime_ns": 1788847336234492800
+    },
+    "reference-inputs/1274.png": {
+      "sha256": "96dc0be392528c5f215338b18977bc730a65fa9bc7a2d75b4c588af1d65dea01",
+      "bytes": 1623164,
+      "mtime_ns": 1788847343081942200
+    },
+    "reference-inputs/1275.png": {
+      "sha256": "b188c07b3fd1f42e23d17796e83231daed7279c02e57c0b2da3983be94aaa88d",
+      "bytes": 1707985,
+      "mtime_ns": 1788847339293306600
+    },
+    "reference-inputs/1276.png": {
+      "sha256": "6569c0feaca863ad246a5ad879480ab08f9f0a427811a4f6c3123de20be319e6",
+      "bytes": 1859619,
+      "mtime_ns": 1788847340186058800
+    },
+    "reference-inputs/1278.png": {
+      "sha256": "2c7fa0b6a9330abcdcdcefa42c5b757fc53728c8646904d8d9c5f6eb4035fdfe",
+      "bytes": 1908167,
+      "mtime_ns": 1788847342667513700
+    },
+    "reference-inputs/1332.png": {
+      "sha256": "eb1d652e01949468f8002e9aa76561e4c1a4e65238efe7e2242b9e14993ca7a2",
+      "bytes": 1412032,
+      "mtime_ns": 1788847341470164900
+    },
+    "reference-inputs/1341.png": {
+      "sha256": "f6020fad26ece1c0021e61f8ea1afae320460a48468f3da6bc6004d4aa7293ef",
+      "bytes": 1694150,
+      "mtime_ns": 1788847341861180500
+    },
+    "reference-inputs/1342.png": {
+      "sha256": "7acc98104013d9122eb551846b2d7fc1f7549bce8b2e3199eae8f5385a3ea238",
+      "bytes": 1646137,
+      "mtime_ns": 1788847336194355400
+    },
+    "reference-inputs/1343.png": {
+      "sha256": "1c0f001d6b204f12115bf31acf954f2dae768d146eaa469ec55a1cbf8508afb6",
+      "bytes": 1839923,
+      "mtime_ns": 1788847334554816900
+    },
+    "reference-inputs/1344.png": {
+      "sha256": "1da067d3b0b98fc36be31e0591fb291f163f4b4fd397f87b98844c2ba5a76e69",
+      "bytes": 1960447,
+      "mtime_ns": 1788847338522422900
+    },
+    "reference-inputs/1347.png": {
+      "sha256": "4de8987c9ad067afad843803d6e1d5c0de6aed0ae64a3b4af04e13ee90e56942",
+      "bytes": 2350195,
+      "mtime_ns": 1788847340719714400
+    },
+    "inputs.json": {
+      "sha256": "23ebfd24a93beebf710032456e25a3b44ae84c61b74f3f180babe6aca6979fd3",
+      "bytes": 731853,
+      "mtime_ns": 1788850007115781700
+    },
+    "images/front.png": {
+      "sha256": "f518d58aecb094f7391c73ff71a56b5d827fbaee4e1c1df6bca4fe0ab0721bb8",
+      "bytes": 305785,
+      "mtime_ns": 1788850018107157400
+    },
+    "capture-front.log": {
+      "sha256": "8ccf3c9113c3bee6a4b511aec91c2258aa4a19cc1596a4e10a6c37e6230d0d33",
+      "bytes": 365,
+      "mtime_ns": 1788850018107157400
+    },
+    "capture-front-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788850013336678400
+    },
+    "stages/capture-front.json": {
+      "sha256": "3531ccf07af0d6c30699086c6c889ced7f9151586541c11d3ebd681458ee07e4",
+      "bytes": 1194,
+      "mtime_ns": 1788850024579389500
+    },
+    "images/back.png": {
+      "sha256": "5e2c1d215b117fa71f2d32abe98d566f1dbb182ec55d204bb87d289566d66b5c",
+      "bytes": 393178,
+      "mtime_ns": 1788850035240706200
+    },
+    "capture-back.log": {
+      "sha256": "5a3e5fc15cec3ccd7f2c0c76aa695869eeab67722ef5c250d89779851f2861dd",
+      "bytes": 364,
+      "mtime_ns": 1788850035240706200
+    },
+    "capture-back-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788850030574811700
+    },
+    "stages/capture-back.json": {
+      "sha256": "d34bb66accd6ffb479f21b9213eec304e98528f247972c0cc8c74ea0ff0069b1",
+      "bytes": 1190,
+      "mtime_ns": 1788850041595394100
+    },
+    "images/gallery.png": {
+      "sha256": "2d32fc77458a2ab055d7cc5b2cb6e45131ac1a1e1fc710ba25200738f6175219",
+      "bytes": 312079,
+      "mtime_ns": 1788850052171895500
+    },
+    "capture-gallery.log": {
+      "sha256": "914dc314b7c051795a3bf424b9ff4f5d3a0d1355d22d45952c1f1473df6d1faf",
+      "bytes": 367,
+      "mtime_ns": 1788850052171895500
+    },
+    "capture-gallery-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788850047565376000
+    },
+    "stages/capture-gallery.json": {
+      "sha256": "03abeb6fbeb63710a978bba50d07375d783cb894d1ff1fe68673417339e36bcb",
+      "bytes": 1202,
+      "mtime_ns": 1788850058531786900
+    },
+    "images/context.png": {
+      "sha256": "20a0c139ae5543d057606a83178f799f4b27234d3f987f6cb17a8cbe5a0ec1f2",
+      "bytes": 409949,
+      "mtime_ns": 1788850069265535900
+    },
+    "capture-context.log": {
+      "sha256": "090c99b2549c03dd4b8b15dc230ec3dffcfe9b4765530b96a0940bddabf299fd",
+      "bytes": 367,
+      "mtime_ns": 1788850069265535900
+    },
+    "capture-context-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788850064536639900
+    },
+    "stages/capture-context.json": {
+      "sha256": "6c6900f1cab7ef206d5925598587cd8053b9908eb1270d2db9fb58ef5c1580d6",
+      "bytes": 1202,
+      "mtime_ns": 1788850075823523300
+    }
+  },
+  "visual_acceptance_proven": false,
+  "scope": "Blender lighthouse architecture at existing harbor world placement; four GPU views. No weather, full reference, production integration or gameplay acceptance.",
+  "production_modified": false,
+  "input_count": 3499,
+  "completed_utc": "2026-09-08T06:48:01.945949+00:00"
+}

@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "run_id": "crownreach37c-20260909T034026Z-7c438c3cd6cd4a1b91e20b5a38d86321",
+  "round": "crownreach37c",
+  "started_utc": "2026-09-09T03:40:26.036061+00:00",
+  "workspace": "E:\\FeiTing",
+  "run_directory": "E:\\FeiTing\\captures\\validation_runs\\crownreach37c-20260909T034026Z-7c438c3cd6cd4a1b91e20b5a38d86321",
+  "status": "passed",
+  "passed": true,
+  "export_windows_requested": false,
+  "capture_views_requested": true,
+  "expected_counts": {
+    "game-test": 36,
+    "packaged-game": 37,
+    "cliffs-contact": 21,
+    "mountains-contact": 33,
+    "road-surfaces": 40642,
+    "tour-test": 7,
+    "stream-test": 4,
+    "cliff-tour-test": 6,
+    "geology": 18
+  },
+  "stages": [
+    {
+      "name": "castle-native-gpu",
+      "run_id": "crownreach37c-20260909T034026Z-7c438c3cd6cd4a1b91e20b5a38d86321",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--audio-driver",
+        "Dummy",
+        "--script",
+        "E:\\FeiTing\\tools\\render_crownreach37c.gd",
+        "--quit-after",
+        "800",
+        "--",
+        "--output-dir=E:\\FeiTing\\captures\\validation_runs\\crownreach37c-20260909T034026Z-7c438c3cd6cd4a1b91e20b5a38d86321\\images"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788925226131896100,
+      "started_utc": "2026-09-09T03:40:26.131896+00:00",
+      "input_manifest_sha256": null,
+      "exit_code": 0,
+      "finished_ns": 1788925249405967400,
+      "image": "images/castle-front.png",
+      "finished_utc": "2026-09-09T03:40:49.548565+00:00"
+    }
+  ],
+  "artifacts": {
+    "render_crownreach37c.py": {
+      "sha256": "2fc70554f64577680933105e69112111e3b5175244c5b0cd56ebeeacc6abc86c",
+      "bytes": 1390,
+      "mtime_ns": 1788925224169785100
+    },
+    "render_crownreach37c.gd": {
+      "sha256": "00601953169ce953a36b638c8c465e2d3635eda704bc190f818a461fa9883002",
+      "bytes": 9338,
+      "mtime_ns": 1788925224168786300
+    },
+    "castle.blend": {
+      "sha256": "be942249bb8563fd2cc46fe691cbb0296e5abc00ffd64af07dd902dff1ce0502",
+      "bytes": 5468291,
+      "mtime_ns": 1788925220887102600
+    },
+    "castle.glb": {
+      "sha256": "caa3cdf5e23e6dccf27cdf0ed2979cadd9e02d67ff9ffd625d539e68100e1bc0",
+      "bytes": 2685316,
+      "mtime_ns": 1788925222044340600
+    },
+    "model-report.json": {
+      "sha256": "9066d58bce46d1dfec1fcdccc6c07deb391e2b6f056a5b192fae6d86294afe2f",
+      "bytes": 8453,
+      "mtime_ns": 1788925222111442500
+    },
+    "builder.py": {
+      "sha256": "e926c828b5d05093eb5b89eaac655fb6d22c1806a6f0baf4fead7d8150f8ce4f",
+      "bytes": 1779,
+      "mtime_ns": 1788925222111442500
+    },
+    "1343.png": {
+      "sha256": "1c0f001d6b204f12115bf31acf954f2dae768d146eaa469ec55a1cbf8508afb6",
+      "bytes": 1839923,
+      "mtime_ns": 1788847334554816900
+    },
+    "images/castle-front.png": {
+      "sha256": "db312e75cf5630bfb16125c6676e229ef1bf10eb1586c926ef3d1090331dd14e",
+      "bytes": 565089,
+      "mtime_ns": 1788925243594692800
+    },
+    "images/gate-low.png": {
+      "sha256": "bbade426e29cb3b7298e904343e97f49cc34fadeb70bcf0369bebefad08f7848",
+      "bytes": 189623,
+      "mtime_ns": 1788925243931848000
+    },
+    "images/flight-end.png": {
+      "sha256": "5c87a1a385d7030ec826b94f21efea9285d64fe44d96c665d6b66abb4c5633c0",
+      "bytes": 723670,
+      "mtime_ns": 1788925249033446500
+    },
+    "images/castle37c.json": {
+      "sha256": "69f017b5aaa79ed72d6c62f789412dfd5007e336b17c3dee06358033f6343bcb",
+      "bytes": 65361,
+      "mtime_ns": 1788925249039956400
+    },
+    "images/castle37c.tscn": {
+      "sha256": "fdbaa8ea3794e022a7fcd7ec3d3801d4459a5bf306ff19ba530f84f43e1f0e98",
+      "bytes": 4067234,
+      "mtime_ns": 1788925228418725900
+    },
+    "images/World37c.tscn": {
+      "sha256": "a4ae7ac6beb17b7e4c239abe9b8fd1f1f79923e990b1ead8df00975fc0ca1c03",
+      "bytes": 897048,
+      "mtime_ns": 1788925234829564100
+    },
+    "images/Game37c.tscn": {
+      "sha256": "c7f14c336c94f4b353aba015cffba3f4781bbac2fd4e51a08d92ace306006d82",
+      "bytes": 44645803,
+      "mtime_ns": 1788925238855483400
+    },
+    "castle-native-gpu.log": {
+      "sha256": "4aa8b2a1b992c5dca82bd3a0ac959c437e5afb1b9f73c3af10fa82358efcc226",
+      "bytes": 283,
+      "mtime_ns": 1788925242419557300
+    },
+    "castle-native-gpu-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788925226133903000
+    },
+    "stages/castle-native-gpu.json": {
+      "sha256": "f1717c53581ad9ff4734d4fa40d4a6623d6d955d48492b10335298ce43a9b05f",
+      "bytes": 867,
+      "mtime_ns": 1788925249552036000
+    }
+  },
+  "visual_acceptance_proven": false,
+  "completed_utc": "2026-09-09T03:40:49.559038+00:00"
+}

@@ -1,0 +1,1166 @@
+{
+  "schema_version": 1,
+  "run_id": "lantern-lighting-28a-20260908T155358Z-3417ba65aa8a47ad8c3d4faa1969df63",
+  "round": "lantern-lighting-28a",
+  "started_utc": "2026-09-08T15:53:58.535661+00:00",
+  "workspace": "E:\\FeiTing",
+  "run_directory": "E:\\FeiTing\\captures\\validation_runs\\lantern-lighting-28a-20260908T155358Z-3417ba65aa8a47ad8c3d4faa1969df63",
+  "status": "passed",
+  "passed": true,
+  "export_windows_requested": false,
+  "capture_views_requested": true,
+  "expected_counts": {},
+  "stages": [
+    {
+      "name": "night-reference",
+      "run_id": "lantern-lighting-28a-20260908T155358Z-3417ba65aa8a47ad8c3d4faa1969df63",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--audio-driver",
+        "Dummy",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\lantern-lighting-28a-20260908T155358Z-3417ba65aa8a47ad8c3d4faa1969df63\\study-inputs\\preview.gd",
+        "--quit-after",
+        "1200",
+        "--",
+        "--label=20l",
+        "--study-dir=E:\\FeiTing\\captures\\validation_runs\\lantern-lighting-28a-20260908T155358Z-3417ba65aa8a47ad8c3d4faa1969df63\\study-inputs",
+        "--view=reference-coast-near",
+        "--environment=night",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\lantern-lighting-28a-20260908T155358Z-3417ba65aa8a47ad8c3d4faa1969df63\\images\\night-reference.png",
+        "--validation-run=lantern-lighting-28a-20260908T155358Z-3417ba65aa8a47ad8c3d4faa1969df63",
+        "--study-time=0"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788882859694071900,
+      "started_utc": "2026-09-08T15:54:19.694071+00:00",
+      "input_manifest_sha256": "b95a70685090a83edabc1368b0b65945de4e605cdee380f13cd0e45ca58e8f42",
+      "exit_code": 0,
+      "finished_ns": 1788882872717165000,
+      "image": "images/night-reference.png",
+      "finished_utc": "2026-09-08T15:54:39.374054+00:00"
+    },
+    {
+      "name": "night-beam-side",
+      "run_id": "lantern-lighting-28a-20260908T155358Z-3417ba65aa8a47ad8c3d4faa1969df63",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--audio-driver",
+        "Dummy",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\lantern-lighting-28a-20260908T155358Z-3417ba65aa8a47ad8c3d4faa1969df63\\study-inputs\\preview.gd",
+        "--quit-after",
+        "1200",
+        "--",
+        "--label=20l",
+        "--study-dir=E:\\FeiTing\\captures\\validation_runs\\lantern-lighting-28a-20260908T155358Z-3417ba65aa8a47ad8c3d4faa1969df63\\study-inputs",
+        "--view=beam-side",
+        "--environment=night",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\lantern-lighting-28a-20260908T155358Z-3417ba65aa8a47ad8c3d4faa1969df63\\images\\night-beam-side.png",
+        "--validation-run=lantern-lighting-28a-20260908T155358Z-3417ba65aa8a47ad8c3d4faa1969df63",
+        "--study-time=0"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788882886368459400,
+      "started_utc": "2026-09-08T15:54:46.368459+00:00",
+      "input_manifest_sha256": "b95a70685090a83edabc1368b0b65945de4e605cdee380f13cd0e45ca58e8f42",
+      "exit_code": 0,
+      "finished_ns": 1788882894515879300,
+      "image": "images/night-beam-side.png",
+      "finished_utc": "2026-09-08T15:55:01.280055+00:00"
+    },
+    {
+      "name": "night-lamp-close",
+      "run_id": "lantern-lighting-28a-20260908T155358Z-3417ba65aa8a47ad8c3d4faa1969df63",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--audio-driver",
+        "Dummy",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\lantern-lighting-28a-20260908T155358Z-3417ba65aa8a47ad8c3d4faa1969df63\\study-inputs\\preview.gd",
+        "--quit-after",
+        "1200",
+        "--",
+        "--label=20l",
+        "--study-dir=E:\\FeiTing\\captures\\validation_runs\\lantern-lighting-28a-20260908T155358Z-3417ba65aa8a47ad8c3d4faa1969df63\\study-inputs",
+        "--view=lamp-close",
+        "--environment=night",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\lantern-lighting-28a-20260908T155358Z-3417ba65aa8a47ad8c3d4faa1969df63\\images\\night-lamp-close.png",
+        "--validation-run=lantern-lighting-28a-20260908T155358Z-3417ba65aa8a47ad8c3d4faa1969df63",
+        "--study-time=0"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788882908351684200,
+      "started_utc": "2026-09-08T15:55:08.351684+00:00",
+      "input_manifest_sha256": "b95a70685090a83edabc1368b0b65945de4e605cdee380f13cd0e45ca58e8f42",
+      "exit_code": 0,
+      "finished_ns": 1788882917233450400,
+      "image": "images/night-lamp-close.png",
+      "finished_utc": "2026-09-08T15:55:27.210591+00:00"
+    },
+    {
+      "name": "night-reverse",
+      "run_id": "lantern-lighting-28a-20260908T155358Z-3417ba65aa8a47ad8c3d4faa1969df63",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--audio-driver",
+        "Dummy",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\lantern-lighting-28a-20260908T155358Z-3417ba65aa8a47ad8c3d4faa1969df63\\study-inputs\\preview.gd",
+        "--quit-after",
+        "1200",
+        "--",
+        "--label=20l",
+        "--study-dir=E:\\FeiTing\\captures\\validation_runs\\lantern-lighting-28a-20260908T155358Z-3417ba65aa8a47ad8c3d4faa1969df63\\study-inputs",
+        "--view=island-back",
+        "--environment=night",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\lantern-lighting-28a-20260908T155358Z-3417ba65aa8a47ad8c3d4faa1969df63\\images\\night-reverse.png",
+        "--validation-run=lantern-lighting-28a-20260908T155358Z-3417ba65aa8a47ad8c3d4faa1969df63",
+        "--study-time=0"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788882935976911800,
+      "started_utc": "2026-09-08T15:55:35.976911+00:00",
+      "input_manifest_sha256": "b95a70685090a83edabc1368b0b65945de4e605cdee380f13cd0e45ca58e8f42",
+      "exit_code": 0,
+      "finished_ns": 1788882944557863800,
+      "image": "images/night-reverse.png",
+      "finished_utc": "2026-09-08T15:55:51.942063+00:00"
+    },
+    {
+      "name": "day-reference",
+      "run_id": "lantern-lighting-28a-20260908T155358Z-3417ba65aa8a47ad8c3d4faa1969df63",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--audio-driver",
+        "Dummy",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\lantern-lighting-28a-20260908T155358Z-3417ba65aa8a47ad8c3d4faa1969df63\\study-inputs\\preview.gd",
+        "--quit-after",
+        "1200",
+        "--",
+        "--label=20l",
+        "--study-dir=E:\\FeiTing\\captures\\validation_runs\\lantern-lighting-28a-20260908T155358Z-3417ba65aa8a47ad8c3d4faa1969df63\\study-inputs",
+        "--view=reference-coast-near",
+        "--environment=day",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\lantern-lighting-28a-20260908T155358Z-3417ba65aa8a47ad8c3d4faa1969df63\\images\\day-reference.png",
+        "--validation-run=lantern-lighting-28a-20260908T155358Z-3417ba65aa8a47ad8c3d4faa1969df63",
+        "--study-time=0"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788882959589332500,
+      "started_utc": "2026-09-08T15:55:59.589332+00:00",
+      "input_manifest_sha256": "b95a70685090a83edabc1368b0b65945de4e605cdee380f13cd0e45ca58e8f42",
+      "exit_code": 0,
+      "finished_ns": 1788882970548746200,
+      "image": "images/day-reference.png",
+      "finished_utc": "2026-09-08T15:56:21.773519+00:00"
+    }
+  ],
+  "artifacts": {
+    "study-inputs/1135.png": {
+      "sha256": "25968bf1203323213d4fc0b2f473c7014cf3532377c89ff9545eb5029322ef59",
+      "bytes": 1850035,
+      "mtime_ns": 1788847334556827300
+    },
+    "study-inputs/1342.png": {
+      "sha256": "7acc98104013d9122eb551846b2d7fc1f7549bce8b2e3199eae8f5385a3ea238",
+      "bytes": 1646137,
+      "mtime_ns": 1788847336194355400
+    },
+    "study-inputs/builder.py": {
+      "sha256": "3b02eac21bba13baaae83b80e710d46e36a6774427b0a531056cdd1f49b2034b",
+      "bytes": 22540,
+      "mtime_ns": 1788861872806371700
+    },
+    "study-inputs/coast_environment_21c.gd": {
+      "sha256": "3d8caf4c5812580cc11f815860b883b9ae085881357dadf4324bdd7818dc0744",
+      "bytes": 7539,
+      "mtime_ns": 1788862934318952400
+    },
+    "study-inputs/coast_environment_27f.gd": {
+      "sha256": "7a1ac95033eb2bad868f4aa700d2e208dbb2be504a52ab603ff27990650c6143",
+      "bytes": 7877,
+      "mtime_ns": 1788881124577874500
+    },
+    "study-inputs/environment-sources-runtime.log": {
+      "sha256": "7c3a529a31ea09012a1f3ec33b1432490a5cba0b39bcf38f0f016d814d483585",
+      "bytes": 153,
+      "mtime_ns": 1788862931892518200
+    },
+    "study-inputs/harbor-survey.json": {
+      "sha256": "b52744d8b82d8fd54dd15db5214d53a1a00e84148cfccaf5418b498a163c8e01",
+      "bytes": 409972,
+      "mtime_ns": 1788863841947016600
+    },
+    "study-inputs/harbor_assembly_22g.gd": {
+      "sha256": "af020d1bfaa3fd361d8f3f0cbe3a36b6966e87bcf3952ab09546d4d09fd15fe6",
+      "bytes": 8086,
+      "mtime_ns": 1788866411571445500
+    },
+    "study-inputs/harbor_path_runtime_22g.gd": {
+      "sha256": "70e8b9703de67e107dc7a3aada9ad0a8ad4ea07b0868138a0d3527610fe8fcc2",
+      "bytes": 8115,
+      "mtime_ns": 1788866411571445500
+    },
+    "study-inputs/headland_runtime_23g.gd": {
+      "sha256": "fdaddfdac6f5ee4f6f8e495040552c4929216b4438e7782c9a9f155bddc74052",
+      "bytes": 6819,
+      "mtime_ns": 1788869821478305800
+    },
+    "study-inputs/inspect_environment_sources.gd": {
+      "sha256": "b013d7df4e28df7df2c5fd7e90ef252bd43fe8aefe36e43a03b44d251882c957",
+      "bytes": 280,
+      "mtime_ns": 1788862797786677300
+    },
+    "study-inputs/island_a.blend": {
+      "sha256": "6b19a42b34fb670f46ed7887ad6d7ee33f4b4f456f88cdb71aa5158683ce0bd2",
+      "bytes": 1105609,
+      "mtime_ns": 1788861874896240600
+    },
+    "study-inputs/island_a.glb": {
+      "sha256": "d6055b3dcf2d108ca0e3341dc237fbf9ac9ec45a483e40aa81e4cc991315f215",
+      "bytes": 577672,
+      "mtime_ns": 1788861875170601000
+    },
+    "study-inputs/island_b.blend": {
+      "sha256": "4d076990c63d61ed6930332802d729dfa3b4b37467fe5800fd6f5054ad8b4649",
+      "bytes": 904528,
+      "mtime_ns": 1788861875696268400
+    },
+    "study-inputs/island_b.glb": {
+      "sha256": "5ad2cfd67c65f23b583ff06421a9230ca81c3150cadfcda1d7c2965a293134b2",
+      "bytes": 353952,
+      "mtime_ns": 1788861875743198900
+    },
+    "study-inputs/island_c.blend": {
+      "sha256": "7cba8e83ebde59a83a6c887a26b05c395c21743103e9e1f1ec721d57c2c1e5f7",
+      "bytes": 806189,
+      "mtime_ns": 1788861875983292700
+    },
+    "study-inputs/island_c.glb": {
+      "sha256": "126f6de07e9236fe1f7d06b3cd3585d3683b0c7156a5bc702797abafbd45875d",
+      "bytes": 230576,
+      "mtime_ns": 1788861876008045300
+    },
+    "study-inputs/keeper_house.blend": {
+      "sha256": "ded477b6ed619aa9ca11da4ce7fe190938c27a86ff31237922fad161f2177759",
+      "bytes": 2474838,
+      "mtime_ns": 1788859346901051300
+    },
+    "study-inputs/keeper_house.glb": {
+      "sha256": "8f70f7ba4d6c94d23b310b73f6fee9d171f6efb32d255be2574254e639b6176b",
+      "bytes": 307084,
+      "mtime_ns": 1788859347431110400
+    },
+    "study-inputs/lantern_lighting_28a.gd": {
+      "sha256": "209c798a109ee8d2593e214579fd7a863b0b32ae3a196cea0ea4a310d960b8a1",
+      "bytes": 6126,
+      "mtime_ns": 1788882703663088700
+    },
+    "study-inputs/model-report.json": {
+      "sha256": "aa0e13d4d9c5a7f40dc9a22b4364a3fd4fae45d7105ab2b47035fac74d010245",
+      "bytes": 28303,
+      "mtime_ns": 1788861876035964500
+    },
+    "study-inputs/preview.gd": {
+      "sha256": "0f0801fffc506786401c785ca777eacd21dd27d33ad62b4069b510552ff4ce3e",
+      "bytes": 13852,
+      "mtime_ns": 1788882838871526700
+    },
+    "study-inputs/reef_low.blend": {
+      "sha256": "66c5392aa718ba8520f31a4c6ba08098e425034bae83c010b5e437db739948e9",
+      "bytes": 551018,
+      "mtime_ns": 1788858579418959700
+    },
+    "study-inputs/reef_low.glb": {
+      "sha256": "42de4128c2c51d3f22b9bd4423b23b3c15f509e623abcdac9702e4c1f1a06a87",
+      "bytes": 6280,
+      "mtime_ns": 1788858579426976800
+    },
+    "study-inputs/reef_ridge.blend": {
+      "sha256": "9b7060b1946358d58b53ffd9d089338d3f9d8796caaeb73cb32b84819326b082",
+      "bytes": 551236,
+      "mtime_ns": 1788858579458111400
+    },
+    "study-inputs/reef_ridge.glb": {
+      "sha256": "4427c7705c9ce848cfa62735d46347d931c1c3e52d693b189d0cded9fe89be87",
+      "bytes": 7296,
+      "mtime_ns": 1788858579467920700
+    },
+    "study-inputs/reef_spire.blend": {
+      "sha256": "a384d4f84c982eff4a05974aa48d595e975ed21c0d9899c6fe5faf5d1eecae2a",
+      "bytes": 551372,
+      "mtime_ns": 1788858579437489600
+    },
+    "study-inputs/reef_spire.glb": {
+      "sha256": "c93eb72c79a84893651692223830be491c015e2827d36fa5bbf7e6c3311fb95e",
+      "bytes": 7620,
+      "mtime_ns": 1788858579447545700
+    },
+    "study-inputs/render_coast_environment_27f.py": {
+      "sha256": "9634f71508d48567b43c7ef76317cd3b0f01ad5d802d1d31078fdd2295aba550",
+      "bytes": 5660,
+      "mtime_ns": 1788881124579288100
+    },
+    "study-inputs/render_harbor_assembly_22g.py": {
+      "sha256": "a4274e4828004ca9251636b3f7044eb7fe028a7c0cc8f643a1bfaf67140fcf3a",
+      "bytes": 10548,
+      "mtime_ns": 1788866411571445500
+    },
+    "study-inputs/render_headland_23g.py": {
+      "sha256": "48e59df4fdec047e797e5a6c8bfff962b0bf5f530d0cb7f4aae585af4b3f2565",
+      "bytes": 4697,
+      "mtime_ns": 1788869873577007700
+    },
+    "study-inputs/render_lantern_lighting_28a.py": {
+      "sha256": "3007b1a1fcec1cda264df04e34381a02a6d5aa724981418b4ddb4ad68f18011d",
+      "bytes": 5108,
+      "mtime_ns": 1788882821637404100
+    },
+    "study-inputs/render_village_paving_26b.py": {
+      "sha256": "f2f8e78e69dee4392b896af4de8a4ad8563ce48bc20c38dde26fbbd5b7f42ef3",
+      "bytes": 6402,
+      "mtime_ns": 1788877942222555100
+    },
+    "study-inputs/round-20l-coast-native-check.json": {
+      "sha256": "20802ff0320447547980bb7d95fef6865ba99c3d8f287533db654e41c6df2353",
+      "bytes": 67927,
+      "mtime_ns": 1788861907141812200
+    },
+    "study-inputs/round-20l-path-independent-audit.json": {
+      "sha256": "73faccd2270e318967be8838b5b0fe391763e829e8868c5f0af7b524a92b9d1a",
+      "bytes": 19950,
+      "mtime_ns": 1788862147224636800
+    },
+    "study-inputs/round-22a-port-site-independent-audit.json": {
+      "sha256": "4c7da0d3df6542f157ee88166c5a4be7053fbfc855d8b0a80d6178b1eb5cbb30",
+      "bytes": 40509,
+      "mtime_ns": 1788863499752714200
+    },
+    "study-inputs/round-23g-headland-native-check.json": {
+      "sha256": "b26118c236f9bbc14538acf8cd4ba7ba530d2024f6bf9feec19f8458cf5756d1",
+      "bytes": 269478,
+      "mtime_ns": 1788869854721002300
+    },
+    "study-inputs/round-23g-shore-source-comparison.json": {
+      "sha256": "4538118075089193ee8704afea84b196b47e298b78a6073a86c95c1467d31ed2",
+      "bytes": 60708,
+      "mtime_ns": 1788869854011956000
+    },
+    "study-inputs/round-26b-root-evidence.json": {
+      "sha256": "4d94653824aac05edfc0a90126b1ee885a7f2a573c13670f2efb3ec0a49b134e",
+      "bytes": 5760,
+      "mtime_ns": 1788878621299724000
+    },
+    "study-inputs/round-26b-village-grading-native-check.json": {
+      "sha256": "1f58b618aa55601620d78d2ca90b83d88830cedbb5f7e7a9dcb5f78dc74f38b4",
+      "bytes": 3012,
+      "mtime_ns": 1788877985819396900
+    },
+    "study-inputs/round-26b-village-paving-native-check.json": {
+      "sha256": "aac4c97c4ad5e467e58605722c169f41c2465fdf892a384d54dd5f7fef23d1de",
+      "bytes": 453141,
+      "mtime_ns": 1788877909818209300
+    },
+    "study-inputs/village_paving_runtime_26b.gd": {
+      "sha256": "20019101314f8baf978ae4f256cf827774ccd5c5a4645de1cd74024aaba632f3",
+      "bytes": 5250,
+      "mtime_ns": 1788877942223560100
+    },
+    "study-inputs/environment/ambient-mode-derivation.py": {
+      "sha256": "982ddd576454c97526eed350b28f2ed0f1229e1080c06f0cb47b6be8306455ab",
+      "bytes": 3420,
+      "mtime_ns": 1788862932032381800
+    },
+    "study-inputs/environment/builder.py": {
+      "sha256": "f78b4aae92ee030d7c559db58abb6a1b3edb03c4d6bfd4232e2d27ba979cba20",
+      "bytes": 4971,
+      "mtime_ns": 1788862076567438000
+    },
+    "study-inputs/environment/cliff_surface.gdshader": {
+      "sha256": "0e89013b39c7e19889423fe852789b708ebc04e6d22037a1149aa9ea924b435e",
+      "bytes": 870,
+      "mtime_ns": 1788862078397531100
+    },
+    "study-inputs/environment/cloud_surface.gdshader": {
+      "sha256": "3f8f503aa34f452fac0b32c41f3b6b6c552ecdd60ea789d07304bdcd38434e74",
+      "bytes": 735,
+      "mtime_ns": 1788862493819493100
+    },
+    "study-inputs/environment/derivation.py": {
+      "sha256": "2a7b1c358e0073ad8e76c81dacf61f83ea63cb1e521e20dcd8aef4cfb6ac3203",
+      "bytes": 4776,
+      "mtime_ns": 1788862492016106800
+    },
+    "study-inputs/environment/moon.gdshader": {
+      "sha256": "6ea8050f93cf21f44cb14c8ab3ed5674b309dd382854ba2ff709bb006b50a146",
+      "bytes": 136,
+      "mtime_ns": 1788862493820504000
+    },
+    "study-inputs/environment/open_sky.gdshader": {
+      "sha256": "b514467ebb754a42057c23475b245b51045ed74804cb4faa7598138dd40e80cb",
+      "bytes": 1279,
+      "mtime_ns": 1788862493818481900
+    },
+    "study-inputs/environment/open_water.gdshader": {
+      "sha256": "258c03b94e3a03b60fb18b16b02a8ef5675bc63a8103556875a95135162cb1b5",
+      "bytes": 2775,
+      "mtime_ns": 1788862493819493100
+    },
+    "study-inputs/environment/ship_surface.gdshader": {
+      "sha256": "30fdf4b4aed5a527a3d933ab7f209c93e7f56378c545b1b7f3d3825bbf78910b",
+      "bytes": 654,
+      "mtime_ns": 1788862078397531100
+    },
+    "study-inputs/environment/source-identities.json": {
+      "sha256": "80c2e174d485c01660d6a8e80db221d692f90162314433fe6c33b9d4541b3156",
+      "bytes": 737,
+      "mtime_ns": 1788862078400042600
+    },
+    "study-inputs/environment/terrain_native.gdshader": {
+      "sha256": "7d448bdfa8e99e93b1240d4293699749099fca6b91410dcbf8d4520045bfeacb",
+      "bytes": 2557,
+      "mtime_ns": 1788862078397531100
+    },
+    "study-inputs/environment/wood_surface.gdshader": {
+      "sha256": "19e4e59af57270e4ce9c82806aa7fae1fad6e392df3ac3f20fd1965a21e96410",
+      "bytes": 669,
+      "mtime_ns": 1788862078398543000
+    },
+    "study-inputs/environment/world_surface.gdshader": {
+      "sha256": "816001f4e1ef080f652ee748ce6590b6a7386d468b4f61c16f6af0ba9a7fe061",
+      "bytes": 1436,
+      "mtime_ns": 1788862078396528600
+    },
+    "study-inputs/environment/sky-assets/builder.py": {
+      "sha256": "effe79578bc51a3ddd65cf6014e837694c6a5614fffae7d56696c199e5927c06",
+      "bytes": 4417,
+      "mtime_ns": 1788862492015524800
+    },
+    "study-inputs/environment/sky-assets/cloud_bank_0.blend": {
+      "sha256": "139edd1c2410f8799f985b21cda2e6dad2b00c7d678beba3b7a4196a5a40e649",
+      "bytes": 672507,
+      "mtime_ns": 1788862494535680900
+    },
+    "study-inputs/environment/sky-assets/cloud_bank_0.glb": {
+      "sha256": "8ae708509d272df7a3073a9058f60105b2a2060cc43dff521478beb43164fcab",
+      "bytes": 10000,
+      "mtime_ns": 1788862494548758000
+    },
+    "study-inputs/environment/sky-assets/cloud_bank_1.blend": {
+      "sha256": "9efa571f6fb01c4a809044f3dca2db02e8e1dc1eb76b9931d562ccdee12410ea",
+      "bytes": 801153,
+      "mtime_ns": 1788862494564517700
+    },
+    "study-inputs/environment/sky-assets/cloud_bank_1.glb": {
+      "sha256": "de490c90fda848c5ce80b0ce49cb5045f994a7847fbc39505aa8a487672c9378",
+      "bytes": 16524,
+      "mtime_ns": 1788862494581256800
+    },
+    "study-inputs/environment/sky-assets/cloud_bank_2.blend": {
+      "sha256": "4bdc71069a84266b796150d48ad62f9ad7b47b78ca5873766ca7537b9251e4c6",
+      "bytes": 887942,
+      "mtime_ns": 1788862494597513700
+    },
+    "study-inputs/environment/sky-assets/cloud_bank_2.glb": {
+      "sha256": "21fd696e93fbac1f7c6d7effbfad151a95faf6feecc83e461474388b51bcede3",
+      "bytes": 13264,
+      "mtime_ns": 1788862494611626400
+    },
+    "study-inputs/environment/sky-assets/model-report.json": {
+      "sha256": "eb2a158ad0d8488db0199c18d7926d93237dc31d32ee277a31a802aab88b1ec7",
+      "bytes": 3386,
+      "mtime_ns": 1788862494624391600
+    },
+    "study-inputs/environment/sky-assets/moon.blend": {
+      "sha256": "786fed316ba6a981445e21bd2a270b8bc8f30b65fb4ae8706e64224e63df012d",
+      "bytes": 614007,
+      "mtime_ns": 1788862494330217700
+    },
+    "study-inputs/environment/sky-assets/moon.glb": {
+      "sha256": "d4f87e9dfe4dbec9f0a91cbad9356eb53b7d51c9b6970e069924cea10ce46cee",
+      "bytes": 37256,
+      "mtime_ns": 1788862494521726600
+    },
+    "study-inputs/environment/sky-assets/round-21b-sky-native-check.json": {
+      "sha256": "5b46458b20c080318143ff33b5289e89a8199070a2730ecc71751688af2ec8a8",
+      "bytes": 7171,
+      "mtime_ns": 1788862544117421000
+    },
+    "study-inputs/harbor-kit/builder.py": {
+      "sha256": "8a5833aa8cb950c3a6938c4401242105c95683bad40f148700f66527ed60be68",
+      "bytes": 10134,
+      "mtime_ns": 1788864549000900000
+    },
+    "study-inputs/harbor-kit/harbor_cargo.blend": {
+      "sha256": "4be4f4230de927e06118a478c56f9dcd6bcf75f6de30825f30b9b13007028dfd",
+      "bytes": 1230877,
+      "mtime_ns": 1788863677144948500
+    },
+    "study-inputs/harbor-kit/harbor_cargo.glb": {
+      "sha256": "7f87982601852a99f24e0cd65c642fe3e24428c9addc8a6538190f7f4441cd37",
+      "bytes": 114036,
+      "mtime_ns": 1788863677186209000
+    },
+    "study-inputs/harbor-kit/harbor_lantern.blend": {
+      "sha256": "0a579e3a59b3f4259c9e3845f6c78f321fab10a912c05ddab0e06074e3fa6aef",
+      "bytes": 745328,
+      "mtime_ns": 1788863677070524100
+    },
+    "study-inputs/harbor-kit/harbor_lantern.glb": {
+      "sha256": "445f64442b9d381c0a58e562d34da8a71b8b5458055a2d40bc40eaf5823a01ef",
+      "bytes": 18240,
+      "mtime_ns": 1788863677095730200
+    },
+    "study-inputs/harbor-kit/model-report.json": {
+      "sha256": "a841e51ac7a435647a83777fbc3c984734f2ab36c28e2aabf52c055f4ebe68f8",
+      "bytes": 34449,
+      "mtime_ns": 1788864549935848500
+    },
+    "study-inputs/harbor-kit/moored_fishing_boat.blend": {
+      "sha256": "af0dcfe303426875f797100ccce89983153f88cf182c621ee44a7540f8906298",
+      "bytes": 1000005,
+      "mtime_ns": 1788863677226117300
+    },
+    "study-inputs/harbor-kit/moored_fishing_boat.glb": {
+      "sha256": "70e6053983dad7c0f35cbc1c23d90890c52be63cff175d4dbd55b3d75cbad665",
+      "bytes": 51324,
+      "mtime_ns": 1788863677261660300
+    },
+    "study-inputs/harbor-kit/pier_landing.blend": {
+      "sha256": "88bcff98a713d55b81709bc313123a5f5cf59abac7e749a823a8cbadcee3cc38",
+      "bytes": 1069400,
+      "mtime_ns": 1788864549866791500
+    },
+    "study-inputs/harbor-kit/pier_landing.glb": {
+      "sha256": "48be48b49d730a708effe0e691fd5e71d74b403f847399a09896fffe0e37cb01",
+      "bytes": 94012,
+      "mtime_ns": 1788864549910765100
+    },
+    "study-inputs/harbor-kit/repair_awning.blend": {
+      "sha256": "db9743bbf09a1b0a6821eb7c8dae1873bf7ee6b86b190ac66a7e8485d5b4eb01",
+      "bytes": 949180,
+      "mtime_ns": 1788863677013009700
+    },
+    "study-inputs/harbor-kit/repair_awning.glb": {
+      "sha256": "53abafea771d800420cd79a37d643ddd5b518a0f2b821e6b3ebdebb8af78ff63",
+      "bytes": 106592,
+      "mtime_ns": 1788863677049200900
+    },
+    "study-inputs/harbor-kit/round-22b-harbor-native-check.json": {
+      "sha256": "ba0ac632db7217219d294e5f93a2e947dbfa577c686c67441d10247c0a787347",
+      "bytes": 242159,
+      "mtime_ns": 1788864899009066700
+    },
+    "study-inputs/harbor-kit/timber_pier.blend": {
+      "sha256": "e95e60fb6b8f2d2b24d0dcecd09d6b245ec62cc1f57a373a8ec05929d77900cb",
+      "bytes": 1604792,
+      "mtime_ns": 1788864549579282900
+    },
+    "study-inputs/harbor-kit/timber_pier.glb": {
+      "sha256": "382d7e97da20c4b58112b19980cc0dd5c05bc7b6e503b09046cf1312ed2e52a4",
+      "bytes": 193344,
+      "mtime_ns": 1788864549808984700
+    },
+    "study-inputs/headland/builder.py": {
+      "sha256": "0d101beeecf548e01af828d682aacb43b6f45c5b47d887bd19a205de2ff724a3",
+      "bytes": 20729,
+      "mtime_ns": 1788869821467007800
+    },
+    "study-inputs/headland/fisher_cottage.blend": {
+      "sha256": "6390a3266013073345732386567154d4810e60195dee20a34afa1d6ac4d6096b",
+      "bytes": 2205978,
+      "mtime_ns": 1788869823541461700
+    },
+    "study-inputs/headland/fisher_cottage.glb": {
+      "sha256": "280ebd357262e6dbc216270c81b2045ff14a60b759067b5d0675b436d15a0ee8",
+      "bytes": 202792,
+      "mtime_ns": 1788869823640976200
+    },
+    "study-inputs/headland/layout.json": {
+      "sha256": "1f8c1766af8247e45809fdcfc7397a79d1a3cfae0b9313745b1bd626964c33bf",
+      "bytes": 246601,
+      "mtime_ns": 1788868246389511100
+    },
+    "study-inputs/headland/mainland_headland.blend": {
+      "sha256": "bb2586b949f09904a9c54f12fdf9118c12f3578a3ce3911f8fb48853b3eb8d43",
+      "bytes": 1460747,
+      "mtime_ns": 1788877941056593400
+    },
+    "study-inputs/headland/mainland_headland.glb": {
+      "sha256": "939e49d3de6fb557a5655cba166e46635ac2cebb356beef5e4cee2a41afc3a63",
+      "bytes": 1008532,
+      "mtime_ns": 1788877941246297500
+    },
+    "study-inputs/headland/model-report.json": {
+      "sha256": "16592b862e3a2baab59b71aa9856cd5ff4b6beca170ea6851023b3f9045190b4",
+      "bytes": 41888,
+      "mtime_ns": 1788878001739556400
+    },
+    "study-inputs/headland/quay_workshop.blend": {
+      "sha256": "0bab9cd3af24c8068ff367485e61c739bfc4dd7b1c0485ed7f5d5e9344c0528c",
+      "bytes": 2139913,
+      "mtime_ns": 1788869823768143000
+    },
+    "study-inputs/headland/quay_workshop.glb": {
+      "sha256": "e4c33b94c6151ffd15b314d01a5aa4f70293095da477d26c796a35d71590996c",
+      "bytes": 191168,
+      "mtime_ns": 1788869823863977800
+    },
+    "study-inputs/headland/rock-buttresses.json": {
+      "sha256": "31f1918408f67fa2ec2a9fde41ac6200da7f38cc71a34cb189750d16e82ef217",
+      "bytes": 1735,
+      "mtime_ns": 1788869823233630100
+    },
+    "study-inputs/headland/terrain-design.json": {
+      "sha256": "f2e323db4a2394c3bbc851c741c4678c56008e50616091d9738e10f7f08bc5c5",
+      "bytes": 58584,
+      "mtime_ns": 1788869823436949300
+    },
+    "study-inputs/headland/vertex-survey.json": {
+      "sha256": "a5e18c37318e9ae0d923fc2541453a8a038b9ec7863a39894aa8923c2d9779d0",
+      "bytes": 450859,
+      "mtime_ns": 1788868648049998600
+    },
+    "study-inputs/headland/original-23g/mainland_headland.blend": {
+      "sha256": "99a195945cd6a0e203a89ed89ce45bc17050a2d98d5dfd3435762f19833d6633",
+      "bytes": 904766,
+      "mtime_ns": 1788869823248277600
+    },
+    "study-inputs/headland/original-23g/mainland_headland.glb": {
+      "sha256": "cd423ca005c39720455921af8d5990839ed05831f153d1524a5095fe8a227b82",
+      "bytes": 278308,
+      "mtime_ns": 1788869823419065000
+    },
+    "study-inputs/headland/original-23g/model-report.json": {
+      "sha256": "ae8a50ce428b960e7f02733fc545fdea762ed20120ba4e28d0199a2709362d55",
+      "bytes": 42391,
+      "mtime_ns": 1788869823895421900
+    },
+    "study-inputs/lantern-optics/builder.py": {
+      "sha256": "f614be11874fc516069d4119418809f54219f88d3554c9e41dcd0780269b1765",
+      "bytes": 2683,
+      "mtime_ns": 1788882602942706400
+    },
+    "study-inputs/lantern-optics/lantern_beam.blend": {
+      "sha256": "6e88a280f53b8ce045f1b99e6f7137d99b5a5db6f9cbd0b12cf02349ab35740f",
+      "bytes": 435866,
+      "mtime_ns": 1788882605375435200
+    },
+    "study-inputs/lantern-optics/lantern_beam.glb": {
+      "sha256": "531ee0776df2d105538fb334da907a647999affe6bf32e0c082e999e682997fb",
+      "bytes": 12004,
+      "mtime_ns": 1788882605647411100
+    },
+    "study-inputs/lantern-optics/lantern_halo.blend": {
+      "sha256": "7fe0a79558ca64dacf0754dcc64143cad1a3baa58e1d655105f8e3674c818a84",
+      "bytes": 449656,
+      "mtime_ns": 1788882605660772400
+    },
+    "study-inputs/lantern-optics/lantern_halo.glb": {
+      "sha256": "f08774f209d3f61b0b7b31e3626923751581d48dc62c8143e4d1af51d7e632df",
+      "bytes": 33692,
+      "mtime_ns": 1788882605668353300
+    },
+    "study-inputs/lantern-optics/lantern_volume.gdshader": {
+      "sha256": "d088314972e90397930622a41a96e54c9318c27d64d24617fda9424dc7406875",
+      "bytes": 2910,
+      "mtime_ns": 1788882821636102200
+    },
+    "study-inputs/lantern-optics/model-report.json": {
+      "sha256": "95529f40dc46c4551421c2da97471adcdb5708c4b2f20d11a8555ec8cff15da8",
+      "bytes": 1161,
+      "mtime_ns": 1788882605676104400
+    },
+    "study-inputs/lantern-optics/round-28a-lantern-native-check.json": {
+      "sha256": "4a35c73e761705f88b990a91e163f365b3742da1d586493fe4342f3e15fe77f8",
+      "bytes": 1517,
+      "mtime_ns": 1788882822043354300
+    },
+    "study-inputs/new-environment27f/ambient-mode-derivation.py": {
+      "sha256": "982ddd576454c97526eed350b28f2ed0f1229e1080c06f0cb47b6be8306455ab",
+      "bytes": 3420,
+      "mtime_ns": 1788862932032381800
+    },
+    "study-inputs/new-environment27f/builder.py": {
+      "sha256": "f78b4aae92ee030d7c559db58abb6a1b3edb03c4d6bfd4232e2d27ba979cba20",
+      "bytes": 4971,
+      "mtime_ns": 1788862076567438000
+    },
+    "study-inputs/new-environment27f/change-report-27a.json": {
+      "sha256": "761f3f842ee11a56407303871c12e55ccba922ddd6f82688eeaa571153c4ec7e",
+      "bytes": 585,
+      "mtime_ns": 1788878924461983700
+    },
+    "study-inputs/new-environment27f/change-report-27b.json": {
+      "sha256": "8fcd27fcc17e687ba55858813f324fabb05a3dfdda21a504de54e6665df94021",
+      "bytes": 370,
+      "mtime_ns": 1788879376571801000
+    },
+    "study-inputs/new-environment27f/change-report-27c.json": {
+      "sha256": "140c9bfe88e1479af2b90ec73771f3750f975f9dec6897f1922d6ae41ddf100f",
+      "bytes": 387,
+      "mtime_ns": 1788880102342871700
+    },
+    "study-inputs/new-environment27f/change-report-27d.json": {
+      "sha256": "45d7dee4dd652ef05a642093b9373394ba0cd4571cdcf65dce25231b87c4bba9",
+      "bytes": 411,
+      "mtime_ns": 1788880564487024200
+    },
+    "study-inputs/new-environment27f/change-report-27e.json": {
+      "sha256": "8994bc49dfeed9d039e53621691b4ee7c80baa4671cd32046e70ff406f62d465",
+      "bytes": 516,
+      "mtime_ns": 1788880939754911200
+    },
+    "study-inputs/new-environment27f/change-report-27f.json": {
+      "sha256": "d46fecca7b849bb6abf25259af479dea3f22fde2896ac6cf474af0ee43055d2a",
+      "bytes": 489,
+      "mtime_ns": 1788881124588042300
+    },
+    "study-inputs/new-environment27f/cliff_surface.gdshader": {
+      "sha256": "0e89013b39c7e19889423fe852789b708ebc04e6d22037a1149aa9ea924b435e",
+      "bytes": 870,
+      "mtime_ns": 1788862078397531100
+    },
+    "study-inputs/new-environment27f/cloud-layout-27c.json": {
+      "sha256": "e759c0f41e7b205607e9d6d1100f7a87197dfe46e019ec2c0d76c571c25c54fc",
+      "bytes": 2610,
+      "mtime_ns": 1788880102336660700
+    },
+    "study-inputs/new-environment27f/cloud_surface.gdshader": {
+      "sha256": "fa9f0fb46a3319016e718c3d9679b70dbc3a24ac810eefc71c567036754a5e6f",
+      "bytes": 1275,
+      "mtime_ns": 1788878924445508600
+    },
+    "study-inputs/new-environment27f/derivation.py": {
+      "sha256": "2a7b1c358e0073ad8e76c81dacf61f83ea63cb1e521e20dcd8aef4cfb6ac3203",
+      "bytes": 4776,
+      "mtime_ns": 1788862492016106800
+    },
+    "study-inputs/new-environment27f/moon.gdshader": {
+      "sha256": "6ea8050f93cf21f44cb14c8ab3ed5674b309dd382854ba2ff709bb006b50a146",
+      "bytes": 136,
+      "mtime_ns": 1788862493820504000
+    },
+    "study-inputs/new-environment27f/open_sky.gdshader": {
+      "sha256": "b514467ebb754a42057c23475b245b51045ed74804cb4faa7598138dd40e80cb",
+      "bytes": 1279,
+      "mtime_ns": 1788862493818481900
+    },
+    "study-inputs/new-environment27f/open_water.gdshader": {
+      "sha256": "cb2528a352d1c17c966e9a5a48b8c96d54e2a87b73776277ed8f7add3987cdfa",
+      "bytes": 5570,
+      "mtime_ns": 1788881124577874500
+    },
+    "study-inputs/new-environment27f/prepare-27a.py": {
+      "sha256": "ce2ea0f1a7245a77a7cf65fb9d073c33a742c3983f594521613ab4a0e0c52cb1",
+      "bytes": 4519,
+      "mtime_ns": 1788878920556562500
+    },
+    "study-inputs/new-environment27f/prepare-27b.py": {
+      "sha256": "7bf536124b28c1f0b9e55e936cb57b6574a8e5ff110c81e69b997fbaeacc42c5",
+      "bytes": 2579,
+      "mtime_ns": 1788879372944652200
+    },
+    "study-inputs/new-environment27f/prepare-27c.py": {
+      "sha256": "637edcd2fde052b511e8af3be2c8f06703d34804ec69c92d68304616b0f3e984",
+      "bytes": 5494,
+      "mtime_ns": 1788880098605048000
+    },
+    "study-inputs/new-environment27f/prepare-27d.py": {
+      "sha256": "f3f70f932e743b9c58dca6440b3e3b3d61b07937c8691ea5301f6b8789928845",
+      "bytes": 3217,
+      "mtime_ns": 1788880561804697000
+    },
+    "study-inputs/new-environment27f/prepare-27e.py": {
+      "sha256": "a65951edd351ccc914028a6fa120dede7cb81a389765d9c685376032f790198d",
+      "bytes": 4474,
+      "mtime_ns": 1788880937447305800
+    },
+    "study-inputs/new-environment27f/prepare-27f.py": {
+      "sha256": "040a1bfab2b7ba8640908d7db13bd9e068c69096da4bf95b9f433825bb2d7332",
+      "bytes": 1633,
+      "mtime_ns": 1788881122431634800
+    },
+    "study-inputs/new-environment27f/ship_surface.gdshader": {
+      "sha256": "30fdf4b4aed5a527a3d933ab7f209c93e7f56378c545b1b7f3d3825bbf78910b",
+      "bytes": 654,
+      "mtime_ns": 1788862078397531100
+    },
+    "study-inputs/new-environment27f/source-identities.json": {
+      "sha256": "80c2e174d485c01660d6a8e80db221d692f90162314433fe6c33b9d4541b3156",
+      "bytes": 737,
+      "mtime_ns": 1788862078400042600
+    },
+    "study-inputs/new-environment27f/terrain_native.gdshader": {
+      "sha256": "7d448bdfa8e99e93b1240d4293699749099fca6b91410dcbf8d4520045bfeacb",
+      "bytes": 2557,
+      "mtime_ns": 1788862078397531100
+    },
+    "study-inputs/new-environment27f/wood_surface.gdshader": {
+      "sha256": "19e4e59af57270e4ce9c82806aa7fae1fad6e392df3ac3f20fd1965a21e96410",
+      "bytes": 669,
+      "mtime_ns": 1788862078398543000
+    },
+    "study-inputs/new-environment27f/world_surface.gdshader": {
+      "sha256": "816001f4e1ef080f652ee748ce6590b6a7386d468b4f61c16f6af0ba9a7fe061",
+      "bytes": 1436,
+      "mtime_ns": 1788862078396528600
+    },
+    "study-inputs/new-environment27f/sky-assets/builder.py": {
+      "sha256": "1f40f234c3529edc5111ffabfd244e10d01ad5fd9ac3beade7902228fdb4a66e",
+      "bytes": 4654,
+      "mtime_ns": 1788880564460398600
+    },
+    "study-inputs/new-environment27f/sky-assets/cloud_bank_0.blend": {
+      "sha256": "122a6d6a1f8bf88cae45897e6cf3855c29589bcfb088bdc42a4feb0bcbebef8b",
+      "bytes": 534797,
+      "mtime_ns": 1788880568036939400
+    },
+    "study-inputs/new-environment27f/sky-assets/cloud_bank_0.glb": {
+      "sha256": "84c31dd08572f16cbff0f0e855c508a41c8b5d298201b9efea4bd2f3fc5056c1",
+      "bytes": 49848,
+      "mtime_ns": 1788880568284198400
+    },
+    "study-inputs/new-environment27f/sky-assets/cloud_bank_1.blend": {
+      "sha256": "76020424b891aa2aa34597b6b89251821fd3891f1c3f7b28874994c959affc56",
+      "bytes": 680127,
+      "mtime_ns": 1788880568304821200
+    },
+    "study-inputs/new-environment27f/sky-assets/cloud_bank_1.glb": {
+      "sha256": "ff9d105504c21646adf40cc2ce88664f8bc7ac637c5c16d9816921a20062ed86",
+      "bytes": 82924,
+      "mtime_ns": 1788880568332050900
+    },
+    "study-inputs/new-environment27f/sky-assets/cloud_bank_2.blend": {
+      "sha256": "516bff64649e238de58426a97762c7ad953a44d74b41d3a0bd0c16aad64b96ee",
+      "bytes": 758574,
+      "mtime_ns": 1788880568354330700
+    },
+    "study-inputs/new-environment27f/sky-assets/cloud_bank_2.glb": {
+      "sha256": "111f1ed6efb4b1f217bcd39f6e1a2d30f88a6bcddec40328356f2009a69e6a5d",
+      "bytes": 66384,
+      "mtime_ns": 1788880568381202000
+    },
+    "study-inputs/new-environment27f/sky-assets/model-report.json": {
+      "sha256": "64c90ee7971abd541359d8189f8699ecf52d6bedcc63175ad30595369ce81e9b",
+      "bytes": 3672,
+      "mtime_ns": 1788880568399754300
+    },
+    "study-inputs/new-environment27f/sky-assets/moon.blend": {
+      "sha256": "786fed316ba6a981445e21bd2a270b8bc8f30b65fb4ae8706e64224e63df012d",
+      "bytes": 614007,
+      "mtime_ns": 1788862494330217700
+    },
+    "study-inputs/new-environment27f/sky-assets/moon.glb": {
+      "sha256": "d4f87e9dfe4dbec9f0a91cbad9356eb53b7d51c9b6970e069924cea10ce46cee",
+      "bytes": 37256,
+      "mtime_ns": 1788862494521726600
+    },
+    "study-inputs/new-environment27f/sky-assets/round-27d-sky-native-check.json": {
+      "sha256": "2fb230a809289abc14407b6d6734b9e09b68ce0b971d7c12e8e8c90ce60cb56e",
+      "bytes": 7356,
+      "mtime_ns": 1788880625249662000
+    },
+    "study-inputs/stone-approaches/builder.py": {
+      "sha256": "8f70d74a35f5e3494a2de6ebb3ac0ad6e7d004355c7cce8838b69b534d5f124f",
+      "bytes": 13373,
+      "mtime_ns": 1788866139909818700
+    },
+    "study-inputs/stone-approaches/ground-survey.json": {
+      "sha256": "92f5f9bbcc829c2eb1979d2acb6170b38bd5f97df7b74235cb434886a66355b7",
+      "bytes": 963744,
+      "mtime_ns": 1788865608367479600
+    },
+    "study-inputs/stone-approaches/harbor_stair_0.blend": {
+      "sha256": "6a1bcc8048bd0b9d2ffb6f1790d85243ef72d40a2994a7e31c039e3e80d9713f",
+      "bytes": 7322977,
+      "mtime_ns": 1788866141482518000
+    },
+    "study-inputs/stone-approaches/harbor_stair_0.glb": {
+      "sha256": "8efbb0c07175b349f0affb81d350245ee7ee0654f93e7a2221c1f7fae1a90016",
+      "bytes": 1078600,
+      "mtime_ns": 1788866143206984800
+    },
+    "study-inputs/stone-approaches/harbor_stair_1.blend": {
+      "sha256": "e250c922b2095911d872e267c6013c6d83d94b80f0e28ea6f9c254a623026b0d",
+      "bytes": 4677193,
+      "mtime_ns": 1788866143865419200
+    },
+    "study-inputs/stone-approaches/harbor_stair_1.glb": {
+      "sha256": "5dbe9b183e96db54db3330ce7d72c4dd07174546c069dea2be7bee3410ad12eb",
+      "bytes": 647180,
+      "mtime_ns": 1788866144610847800
+    },
+    "study-inputs/stone-approaches/harbor_stair_2.blend": {
+      "sha256": "3fab37d5f7e90585efad1de1c8f956bb2fa1c531adaa3f1133c00e9517aa2d42",
+      "bytes": 4644529,
+      "mtime_ns": 1788866145126379300
+    },
+    "study-inputs/stone-approaches/harbor_stair_2.glb": {
+      "sha256": "16a2df9aefa3ca8dd6416f1f93b53022ce084434fec1ec210170211c286b8da8",
+      "bytes": 630700,
+      "mtime_ns": 1788866146059351200
+    },
+    "study-inputs/stone-approaches/harbor_stair_3.blend": {
+      "sha256": "c71ec048aa2cab1177d859e15953cf1ced265e62a3323570c9a2b5655a66a565",
+      "bytes": 4742521,
+      "mtime_ns": 1788866146601982300
+    },
+    "study-inputs/stone-approaches/harbor_stair_3.glb": {
+      "sha256": "be706ca159fb3be9acad6d9456fe3e822e5e0de10e7887aecf013a6015e7063b",
+      "bytes": 669088,
+      "mtime_ns": 1788866147773399500
+    },
+    "study-inputs/stone-approaches/model-report.json": {
+      "sha256": "124cc891dc6e69540417c9b1f7dee08b9e22da0fa8ab3bd9d08960abf06f39a2",
+      "bytes": 3823322,
+      "mtime_ns": 1788866148162658400
+    },
+    "study-inputs/stone-approaches/path_0-profile-precheck.json": {
+      "sha256": "5b58ffbdcf7c8ccfec3dd2901454521a6d9a38f7c380c750be120d201845b4f5",
+      "bytes": 14173,
+      "mtime_ns": 1788866140731841900
+    },
+    "study-inputs/stone-approaches/path_1-profile-precheck.json": {
+      "sha256": "7700fa26122c6bf403845444c14808025491ef3e13cb4d45db3ca0c3bd4eb8ae",
+      "bytes": 8529,
+      "mtime_ns": 1788866143364940300
+    },
+    "study-inputs/stone-approaches/path_2-profile-precheck.json": {
+      "sha256": "6ebd5482d81997b44960ca24a6cfa5051d08eb0d793ff6e62bf586a591ebc817",
+      "bytes": 8444,
+      "mtime_ns": 1788866144689900500
+    },
+    "study-inputs/stone-approaches/path_3-profile-precheck.json": {
+      "sha256": "5f0d2bb936604d4ebada208c6199f854a9dc0077fc00aa72fc6386a5bba5dffa",
+      "bytes": 8691,
+      "mtime_ns": 1788866146163195200
+    },
+    "study-inputs/stone-approaches/round-22f-harbor-paths-native-check.json": {
+      "sha256": "766dd17680ed5901c9f6755ea37689a8242b088e889e22d3309f375f25f77cbc",
+      "bytes": 1666436,
+      "mtime_ns": 1788866191308635000
+    },
+    "study-inputs/village-grading/build-report.json": {
+      "sha256": "01503f3a46378f325011b48fd2a79504f1612325362a5e3f187fede05596f43e",
+      "bytes": 926044,
+      "mtime_ns": 1788877941335882800
+    },
+    "study-inputs/village-grading/builder.py": {
+      "sha256": "48a42aa57b7b1fd2985d28890d198566489ce07f58b2c27c6519ae979fa50a51",
+      "bytes": 9701,
+      "mtime_ns": 1788877880720218200
+    },
+    "study-inputs/village-grading/grading-design.json": {
+      "sha256": "018c6a208ed041ecc17eb52cc64aa5079047b8bd3da0b88df2db1151a18c2a4e",
+      "bytes": 1814519,
+      "mtime_ns": 1788877913827166400
+    },
+    "study-inputs/village-grading/mainland_headland.blend": {
+      "sha256": "bb2586b949f09904a9c54f12fdf9118c12f3578a3ce3911f8fb48853b3eb8d43",
+      "bytes": 1460747,
+      "mtime_ns": 1788877941056593400
+    },
+    "study-inputs/village-grading/mainland_headland.glb": {
+      "sha256": "939e49d3de6fb557a5655cba166e46635ac2cebb356beef5e4cee2a41afc3a63",
+      "bytes": 1008532,
+      "mtime_ns": 1788877941246297500
+    },
+    "study-inputs/village-paving/builder.py": {
+      "sha256": "9a394150e83c886a4b9366394ff5fe2dd9ab52677d74b0af2b74c68e1e73e84b",
+      "bytes": 7356,
+      "mtime_ns": 1788877823008524600
+    },
+    "study-inputs/village-paving/model-report.json": {
+      "sha256": "2602064aeb715c163f370f0031b07e45795fd9a34a7b9f48d26cac07cb24a98d",
+      "bytes": 73903,
+      "mtime_ns": 1788877826341322300
+    },
+    "study-inputs/village-paving/paving-design.json": {
+      "sha256": "bcaa15aedc2b4604c13226880797465ee14312a4b200351e972528106c3f6d9b",
+      "bytes": 4998500,
+      "mtime_ns": 1788877798114544300
+    },
+    "study-inputs/village-paving/prepare-design.py": {
+      "sha256": "db36c4876902c206b8717f3ffc1f43eb26e843f44747fe1a427f6a39b850276f",
+      "bytes": 15842,
+      "mtime_ns": 1788877787693028500
+    },
+    "study-inputs/village-paving/village_bay.blend": {
+      "sha256": "e37f4bf4463254aabb824e50d13ef4fc2dd78add05cda43554ad7040e2d69f95",
+      "bytes": 3938365,
+      "mtime_ns": 1788877826087150900
+    },
+    "study-inputs/village-paving/village_bay.glb": {
+      "sha256": "c83dae90fbced18f3a5c57be491cb049e4b3df05103ed44fb8d5a9c59fb87e20",
+      "bytes": 1182184,
+      "mtime_ns": 1788877826277765700
+    },
+    "study-inputs/village-paving/village_foreground.blend": {
+      "sha256": "2d6ae6c804f1b99b963ba023d1401e7f7911503186df00bd7c010a6d2c3eba9e",
+      "bytes": 4230074,
+      "mtime_ns": 1788877825488705900
+    },
+    "study-inputs/village-paving/village_foreground.glb": {
+      "sha256": "9aa5c9aef0f5800bba67b03197b17a4198f596f639b2296ea37c98cd598298eb",
+      "bytes": 1522548,
+      "mtime_ns": 1788877825828356700
+    },
+    "inputs.json": {
+      "sha256": "b95a70685090a83edabc1368b0b65945de4e605cdee380f13cd0e45ca58e8f42",
+      "bytes": 732023,
+      "mtime_ns": 1788882848883479700
+    },
+    "images/night-reference.png": {
+      "sha256": "8f7518bb220262e8f505f7eda461540190802ac8c9e0a8ee885886dde232fe07",
+      "bytes": 562815,
+      "mtime_ns": 1788882872138517800
+    },
+    "images/night-reference.png.json": {
+      "sha256": "edfa59c0c28db2acc53160a267112831c765fd59aae3b96869a5879ca53e5090",
+      "bytes": 780504,
+      "mtime_ns": 1788882872166842900
+    },
+    "night-reference.log": {
+      "sha256": "cd59e165becc22b707e70f9d6d33d70c6a374bf328c4c8ae2ad824f9ade48d1f",
+      "bytes": 357,
+      "mtime_ns": 1788882872166842900
+    },
+    "night-reference-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788882859703953500
+    },
+    "stages/night-reference.json": {
+      "sha256": "ca614dc86c59bb83d202f4120e81187734ab957fa20f80c86bd77cd32c1a4a33",
+      "bytes": 1403,
+      "mtime_ns": 1788882879376577000
+    },
+    "images/night-beam-side.png": {
+      "sha256": "f964564e32e80ba267f0d5f894622be0520f616043591fa7da5931f9b64ec972",
+      "bytes": 518191,
+      "mtime_ns": 1788882894037583600
+    },
+    "images/night-beam-side.png.json": {
+      "sha256": "f6b08bcd3e390cb20d0fd499731397ce89c3700baa791cffabe24e0bec58f54c",
+      "bytes": 780500,
+      "mtime_ns": 1788882894064427000
+    },
+    "night-beam-side.log": {
+      "sha256": "b0e1871247e5acdefc01bf05123ba32adcd9e3895b677f7f6c1228a6668c534c",
+      "bytes": 346,
+      "mtime_ns": 1788882894064427000
+    },
+    "night-beam-side-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788882886370501200
+    },
+    "stages/night-beam-side.json": {
+      "sha256": "ed87c7cf8c12022ae80afbde2b60f6fdecdcee54069043388d3e2832ef734267",
+      "bytes": 1392,
+      "mtime_ns": 1788882901282572600
+    },
+    "images/night-lamp-close.png": {
+      "sha256": "004273ae4b83a7c8a18dd2a22dbf407c416828eef4b7c009dff070840f246c45",
+      "bytes": 482098,
+      "mtime_ns": 1788882916672251500
+    },
+    "images/night-lamp-close.png.json": {
+      "sha256": "f77185c2630529b4601062d82088cd5669edb36413dfba7d41ef9321e5c29727",
+      "bytes": 780505,
+      "mtime_ns": 1788882916724645600
+    },
+    "night-lamp-close.log": {
+      "sha256": "ea0187ec96942b6daae5e42c0ac17100ead2e63eb9569140af193d6014235b1f",
+      "bytes": 347,
+      "mtime_ns": 1788882916724645600
+    },
+    "night-lamp-close-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788882908353748400
+    },
+    "stages/night-lamp-close.json": {
+      "sha256": "b7c2ac1c559a7c47de6fd6aef352f691785c601ce470978319364b87cb148cd9",
+      "bytes": 1396,
+      "mtime_ns": 1788882927212706400
+    },
+    "images/night-reverse.png": {
+      "sha256": "319d7633dadaeeeea766456fe81dbb77bfc1f85e6a5e3e09c13e3c10bdd03cd8",
+      "bytes": 478508,
+      "mtime_ns": 1788882944051399400
+    },
+    "images/night-reverse.png.json": {
+      "sha256": "4c101a95e6c71a5f9d728f7124cf48f5bdf67229ca09372552d9847f76671f58",
+      "bytes": 780494,
+      "mtime_ns": 1788882944079197000
+    },
+    "night-reverse.log": {
+      "sha256": "d2fd15e4149a7bb43865093bf21031bbaf5b4fa7fd1d6e0cfc72d58a3b4f1f6d",
+      "bytes": 348,
+      "mtime_ns": 1788882944079197000
+    },
+    "night-reverse-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788882935979266600
+    },
+    "stages/night-reverse.json": {
+      "sha256": "34be4a1dbae44f100e9ed103527ed3caabb83111f3d4b61d529baf445562f350",
+      "bytes": 1388,
+      "mtime_ns": 1788882951944227000
+    },
+    "images/day-reference.png": {
+      "sha256": "1b54ce4ad4ee9cc6382f983fdc40795cf788e6e102d372463f5613ffa2771a59",
+      "bytes": 613249,
+      "mtime_ns": 1788882969903881200
+    },
+    "images/day-reference.png.json": {
+      "sha256": "6b93e4379a2eae296c32eaa074fe6a421e6c3df4c022ffc1a0632f16549c24cf",
+      "bytes": 209129,
+      "mtime_ns": 1788882969919994700
+    },
+    "day-reference.log": {
+      "sha256": "94f61f1fcc653f0923ea32d70f6193becebcb48016c86fef0af6f962631d0a6e",
+      "bytes": 357,
+      "mtime_ns": 1788882969921005500
+    },
+    "day-reference-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788882959601129400
+    },
+    "stages/day-reference.json": {
+      "sha256": "69a8b180d60132ffbd29870c2a75804c69b2df4766f6234964cdcde6745a24a5",
+      "bytes": 1395,
+      "mtime_ns": 1788882981992368400
+    }
+  },
+  "visual_acceptance_proven": false,
+  "scope": "Four new fixed spatial lighthouse beams, editable Blender control volumes, warmer lamp glass/core, native spotlight/omni receivers and sampled static light-space occlusion. Existing27f sky/water and26b geometry retained. No production, rotating-beam, warm-water-reflection or full-reference acceptance.",
+  "basis_run": "coast-environment-27f-20260908T152526Z-f1543e06af9f4533a1689edaf5dc0add",
+  "completed_utc": "2026-09-08T15:56:38.372523+00:00"
+}

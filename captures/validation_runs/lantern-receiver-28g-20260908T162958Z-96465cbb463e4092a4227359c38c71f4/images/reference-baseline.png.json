@@ -1,0 +1,61 @@
+{
+  "beam_states": [
+    {
+      "energy": 0.65,
+      "mesh": "/root/Skyfarer/LanternCoastStudy/OpticalBeam_Lighthouse_island_a/Lantern beam closed world volume 560m"
+    },
+    {
+      "energy": 0.65,
+      "mesh": "/root/Skyfarer/LanternCoastStudy/OpticalBeam_Lighthouse_island_b/Lantern beam closed world volume 560m"
+    },
+    {
+      "energy": 0.65,
+      "mesh": "/root/Skyfarer/LanternCoastStudy/OpticalBeam_Lighthouse_island_c/Lantern beam closed world volume 560m"
+    },
+    {
+      "energy": 0.65,
+      "mesh": "/root/Skyfarer/LanternCoastStudy/OpticalBeam_Lighthouse_island_d/Lantern beam closed world volume 560m"
+    }
+  ],
+  "camera": {
+    "fov": 70.0,
+    "position": [
+      -2278.0,
+      60.0,
+      -1632.0
+    ],
+    "rotation": [
+      -0.00509163970127702,
+      0.60683274269104,
+      0.0
+    ]
+  },
+  "camera_name": "reference",
+  "core_nodes": [
+    {
+      "bounds_contains_light_origin": true,
+      "cast_shadow": 1,
+      "mesh": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_a/Model/Opaque_Lamp core"
+    },
+    {
+      "bounds_contains_light_origin": true,
+      "cast_shadow": 1,
+      "mesh": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_b/Model/Opaque_Lamp core"
+    },
+    {
+      "bounds_contains_light_origin": true,
+      "cast_shadow": 1,
+      "mesh": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_c/Model/Opaque_Lamp core"
+    },
+    {
+      "bounds_contains_light_origin": true,
+      "cast_shadow": 1,
+      "mesh": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_d/Model/Opaque_Lamp core"
+    }
+  ],
+  "image": "E:\\FeiTing\\captures\\validation_runs\\lantern-receiver-28g-20260908T162958Z-96465cbb463e4092a4227359c38c71f4\\images/reference-baseline.png",
+  "run_id": "lantern-receiver-28g-20260908T162958Z-96465cbb463e4092a4227359c38c71f4",
+  "scope": "Single loaded actual world. Baseline28f; core-transmits changes only four luminous-core shadow casters; beam-boost additionally doubles unshaded beam energy .65 to1.3. Native lights, opaque frame/roof, transparent glass and density geometry stay unchanged.",
+  "variant": "baseline",
+  "world_sha256": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8"
+}

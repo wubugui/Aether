@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "run_id": "highcoast-reopen36d-20260909T020325Z-29dcab33c8924d80a887207b5aaa08e6",
+  "round": "highcoast-reopen36d",
+  "started_utc": "2026-09-09T02:03:25.777454+00:00",
+  "workspace": "E:\\FeiTing",
+  "run_directory": "E:\\FeiTing\\captures\\validation_runs\\highcoast-reopen36d-20260909T020325Z-29dcab33c8924d80a887207b5aaa08e6",
+  "status": "failed",
+  "passed": false,
+  "export_windows_requested": false,
+  "capture_views_requested": true,
+  "expected_counts": {
+    "game-test": 36,
+    "packaged-game": 37,
+    "cliffs-contact": 21,
+    "mountains-contact": 33,
+    "road-surfaces": 40642,
+    "tour-test": 7,
+    "stream-test": 4,
+    "cliff-tour-test": 6,
+    "geology": 18
+  },
+  "stages": [
+    {
+      "name": "native-candidate-reopen",
+      "run_id": "highcoast-reopen36d-20260909T020325Z-29dcab33c8924d80a887207b5aaa08e6",
+      "status": "failed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--audio-driver",
+        "Dummy",
+        "--script",
+        "E:\\FeiTing\\tools\\check_highcoast_candidate_36c.gd",
+        "--quit-after",
+        "1600",
+        "--",
+        "--output-dir=E:\\FeiTing\\captures\\validation_runs\\highcoast-reopen36d-20260909T020325Z-29dcab33c8924d80a887207b5aaa08e6\\images"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": false,
+      "started_ns": 1788919406147634900,
+      "started_utc": "2026-09-09T02:03:26.147634+00:00",
+      "input_manifest_sha256": null,
+      "exit_code": 3221225477,
+      "finished_ns": 1788919444845482900,
+      "error": "Process exited with code 3221225477",
+      "finished_utc": "2026-09-09T02:04:04.845482+00:00"
+    }
+  ],
+  "artifacts": {
+    "candidate_game_36c.gd": {
+      "sha256": "5be53344d0d60c6e3aee385f9c9cf408255a6b600c1878fc669da74bd4187cb0",
+      "bytes": 738,
+      "mtime_ns": 1788918570167660800
+    },
+    "Game36c.tscn": {
+      "sha256": "5ab6fd082db36a080632042237888da4b8d81e12b2aa2edc7fe8d71e60316bf0",
+      "bytes": 44673130,
+      "mtime_ns": 1788919186735380800
+    },
+    "repair-report.json": {
+      "sha256": "30131f1ddf55af7421bc690b9ecd008adf9f755d85b25af4e6e2a3eacafb5d47",
+      "bytes": 7362,
+      "mtime_ns": 1788919187073823500
+    },
+    "repair.py": {
+      "sha256": "e24141c8657c839ab45c9e6b93051590e455e84e77bbbd29983ded2eec18ef1e",
+      "bytes": 2441,
+      "mtime_ns": 1788919182688224000
+    },
+    "World36c.tscn": {
+      "sha256": "8a192480995f43b7922b3cd0adf046b3c66dc638f4edeee7a499f40e0d1b4827",
+      "bytes": 907120,
+      "mtime_ns": 1788919185284561400
+    },
+    "check.gd": {
+      "sha256": "5a7da09e8d9a1a2fd3cdf2614bd6ff0aa6747162fbeca9aa71ee52fa0a108767",
+      "bytes": 4943,
+      "mtime_ns": 1788919303509131600
+    },
+    "driver.py": {
+      "sha256": "a78b45ed89217816d0b4599143c465b9fad31bf9cd03009f97410858b4a5c85e",
+      "bytes": 1747,
+      "mtime_ns": 1788919403099368800
+    },
+    "native-candidate-reopen.log": {
+      "sha256": "c6be6191d25f27331aaa0a1c9087085f6c24935c58218d8460e7b57458a5b08f",
+      "bytes": 171,
+      "mtime_ns": 1788919408625341400
+    },
+    "native-candidate-reopen-error.log": {
+      "sha256": "80e677956c713f21817b05c9c9ddfa44ca0783f6a32551d62f47b1db6fc796d7",
+      "bytes": 464612,
+      "mtime_ns": 1788919440734571800
+    },
+    "stages/native-candidate-reopen.json": {
+      "sha256": "416052e252691a232029eda45804225415ec9fa6943c07585e7dee7a0179f399",
+      "bytes": 917,
+      "mtime_ns": 1788919444873869600
+    }
+  },
+  "visual_acceptance_proven": false,
+  "scope": "Resource-path repair and fresh native candidate World/Game + bounded physical flight; no geometry regeneration or repeat36b12view suite.",
+  "error": "Process exited with code 3221225477",
+  "completed_utc": "2026-09-09T02:04:04.906744+00:00"
+}

@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "run_id": "highcoast-reopen36g-20260909T023100Z-805ece112b8a42bcb3639d99f9e39ad6",
+  "round": "highcoast-reopen36g",
+  "started_utc": "2026-09-09T02:31:00.473098+00:00",
+  "workspace": "E:\\FeiTing",
+  "run_directory": "E:\\FeiTing\\captures\\validation_runs\\highcoast-reopen36g-20260909T023100Z-805ece112b8a42bcb3639d99f9e39ad6",
+  "status": "passed",
+  "passed": true,
+  "export_windows_requested": false,
+  "capture_views_requested": true,
+  "expected_counts": {
+    "game-test": 36,
+    "packaged-game": 37,
+    "cliffs-contact": 21,
+    "mountains-contact": 33,
+    "road-surfaces": 40642,
+    "tour-test": 7,
+    "stream-test": 4,
+    "cliff-tour-test": 6,
+    "geology": 18
+  },
+  "stages": [
+    {
+      "name": "native-candidate-reopen",
+      "run_id": "highcoast-reopen36g-20260909T023100Z-805ece112b8a42bcb3639d99f9e39ad6",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--audio-driver",
+        "Dummy",
+        "--script",
+        "E:\\FeiTing\\tools\\check_highcoast_candidate_36g.gd",
+        "--quit-after",
+        "1600",
+        "--",
+        "--output-dir=E:\\FeiTing\\captures\\validation_runs\\highcoast-reopen36g-20260909T023100Z-805ece112b8a42bcb3639d99f9e39ad6\\images"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788921060722344200,
+      "started_utc": "2026-09-09T02:31:00.722344+00:00",
+      "input_manifest_sha256": null,
+      "exit_code": 0,
+      "finished_ns": 1788921075350490200,
+      "image": "images/candidate-flight.png",
+      "finished_utc": "2026-09-09T02:31:15.381981+00:00"
+    }
+  ],
+  "artifacts": {
+    "candidate_game_36c.gd": {
+      "sha256": "5be53344d0d60c6e3aee385f9c9cf408255a6b600c1878fc669da74bd4187cb0",
+      "bytes": 738,
+      "mtime_ns": 1788918570167660800
+    },
+    "Game36c.tscn": {
+      "sha256": "5ab6fd082db36a080632042237888da4b8d81e12b2aa2edc7fe8d71e60316bf0",
+      "bytes": 44673130,
+      "mtime_ns": 1788919186735380800
+    },
+    "repair-report.json": {
+      "sha256": "30131f1ddf55af7421bc690b9ecd008adf9f755d85b25af4e6e2a3eacafb5d47",
+      "bytes": 7362,
+      "mtime_ns": 1788919187073823500
+    },
+    "repair.py": {
+      "sha256": "e24141c8657c839ab45c9e6b93051590e455e84e77bbbd29983ded2eec18ef1e",
+      "bytes": 2441,
+      "mtime_ns": 1788919182688224000
+    },
+    "scatter-intake36f-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788920580908325900
+    },
+    "scatter-intake36f.json": {
+      "sha256": "9dd235201a3ecaff34a9f85f452d3b5be5a752536299f781f0c29d76e987f38d",
+      "bytes": 1138,
+      "mtime_ns": 1788920583951672300
+    },
+    "scatter-intake36f.log": {
+      "sha256": "e9da71a6788825559f1cc39b8a70cad973255c8de29a628017394f048758912c",
+      "bytes": 1215,
+      "mtime_ns": 1788920583951672300
+    },
+    "World36c.tscn": {
+      "sha256": "8a192480995f43b7922b3cd0adf046b3c66dc638f4edeee7a499f40e0d1b4827",
+      "bytes": 907120,
+      "mtime_ns": 1788919185284561400
+    },
+    "check.gd": {
+      "sha256": "341acb29bd43ff86e13cc256faaddec42a55a8d790aebf28dccc3c49f238c6dd",
+      "bytes": 5482,
+      "mtime_ns": 1788921057393807500
+    },
+    "driver.py": {
+      "sha256": "cf93e8695f9953a92958ea514bbc36df484d7353884b43b2a446eb8fc1508f0e",
+      "bytes": 1779,
+      "mtime_ns": 1788921057396142800
+    },
+    "images/candidate-flight.png": {
+      "sha256": "4c92ed67012757f6c86c63242bd41559e729f614afd35b8b8d549d3558fb4aa0",
+      "bytes": 777828,
+      "mtime_ns": 1788921075014813000
+    },
+    "images/candidate-start.png": {
+      "sha256": "e1c24aefb8b8d2ed75c8bb68f8cc06f9e18d87cf0be5cd597a573ed0bee0a88a",
+      "bytes": 706626,
+      "mtime_ns": 1788921070922239000
+    },
+    "images/candidate-reopen.json": {
+      "sha256": "c132cdb4fc760ea9ad97d592ebd6a30a2d92d63b12c2590ce7ad832fc7c48822",
+      "bytes": 5247,
+      "mtime_ns": 1788921075015817600
+    },
+    "native-candidate-reopen.log": {
+      "sha256": "e0099162f27c7da57fba6997fe14a10e3c426b6f3e429af13c9ac602bc8709a8",
+      "bytes": 328,
+      "mtime_ns": 1788921075015817600
+    },
+    "native-candidate-reopen-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788921060723341600
+    },
+    "stages/native-candidate-reopen.json": {
+      "sha256": "7632388565cc4a7cbe7409a48956b862844fd7dd09f75a59a5815bc9ffcb574c",
+      "bytes": 899,
+      "mtime_ns": 1788921075384101300
+    }
+  },
+  "visual_acceptance_proven": false,
+  "scope": "Resource-path repair and fresh native candidate World/Game + bounded physical flight; no geometry regeneration or repeat36b12view suite.",
+  "completed_utc": "2026-09-09T02:31:15.393371+00:00"
+}

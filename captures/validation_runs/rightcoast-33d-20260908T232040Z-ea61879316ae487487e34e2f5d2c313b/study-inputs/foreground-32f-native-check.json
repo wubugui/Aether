@@ -1,0 +1,448 @@
+{
+  "scope": "32f local A terrain reconstruction with compact authored grass crest, joined inhabited upland, staggered outward rock sections and broad low rock shoulders. Fixed32b house/tower sites and same-world camera retained. All geometry is designed, not known original reference geography. No full world regeneration or visual acceptance.32c stopped before save/export because CDT also retained exterior faces from crossing grading constraints;32f explicitly retains only triangles inside the authored crest boundary.32f turns the left keeper house gable toward the unchanged camera and rebuilds its real pad/entrance routes, lowers the right house site1.5m, and reduces the tallest left pine. Tower pad extent is derived from the complete actual lowest asset triangle union after32d left a real small stair-footprint strip below the flat plateau.32f corrects the exterior multiple-pad interpolation: inverse-distance weights tend continuously to each complete flat pad height at its boundary, rather than jumping from a conflicting averaged exterior target to the hard inner value. No pad, house, tree, coast, or rock design change.",
+  "source_basis_sha256": "2714e9a66d52b766c0d574e8cbf175ab3a5481c8903dc40277428771aeb24a1d",
+  "native": [
+    {
+      "name": "island_a grass and exposed rock terrain",
+      "vertices": 1128,
+      "faces": 2252,
+      "volume_m3": 469.52996808550216,
+      "nonmanifold_edges": 0,
+      "tiny_faces": 0
+    },
+    {
+      "name": "island_a faulted bedrock",
+      "vertices": 644,
+      "faces": 1284,
+      "volume_m3": 139676.2930169541,
+      "nonmanifold_edges": 0,
+      "tiny_faces": 0
+    },
+    {
+      "name": "island_a cliff outcrop 00",
+      "vertices": 32,
+      "faces": 60,
+      "volume_m3": 2561.9473456190863,
+      "nonmanifold_edges": 0,
+      "tiny_faces": 0
+    },
+    {
+      "name": "island_a cliff outcrop 01",
+      "vertices": 32,
+      "faces": 60,
+      "volume_m3": 1869.010745768935,
+      "nonmanifold_edges": 0,
+      "tiny_faces": 0
+    },
+    {
+      "name": "island_a cliff outcrop 02",
+      "vertices": 32,
+      "faces": 60,
+      "volume_m3": 1146.4056772838817,
+      "nonmanifold_edges": 0,
+      "tiny_faces": 0
+    },
+    {
+      "name": "island_a low shore ledge 00",
+      "vertices": 32,
+      "faces": 60,
+      "volume_m3": 489.1327972169251,
+      "nonmanifold_edges": 0,
+      "tiny_faces": 0
+    },
+    {
+      "name": "island_a low shore ledge 01",
+      "vertices": 32,
+      "faces": 60,
+      "volume_m3": 412.7057942892934,
+      "nonmanifold_edges": 0,
+      "tiny_faces": 0
+    },
+    {
+      "name": "island_a low shore ledge 02",
+      "vertices": 32,
+      "faces": 60,
+      "volume_m3": 427.99118847893357,
+      "nonmanifold_edges": 0,
+      "tiny_faces": 0
+    },
+    {
+      "name": "island_a low shore ledge 03",
+      "vertices": 32,
+      "faces": 60,
+      "volume_m3": 439.85430014739615,
+      "nonmanifold_edges": 0,
+      "tiny_faces": 0
+    },
+    {
+      "name": "island_a low shore ledge 04",
+      "vertices": 32,
+      "faces": 60,
+      "volume_m3": 586.9593230118741,
+      "nonmanifold_edges": 0,
+      "tiny_faces": 0
+    },
+    {
+      "name": "island_a terrain fitted keeper paths",
+      "vertices": 316,
+      "faces": 628,
+      "volume_m3": 19.281279171364776,
+      "nonmanifold_edges": 0,
+      "tiny_faces": 0
+    }
+  ],
+  "defects": [],
+  "sites": [
+    {
+      "id": "left_house",
+      "samples": [
+        {
+          "xy": [
+            -16.85,
+            -1.4000000000000008
+          ],
+          "z": 28.0,
+          "error": 0.0
+        },
+        {
+          "xy": [
+            -23.0,
+            -1.4000000000000004
+          ],
+          "z": 28.0,
+          "error": 0.0
+        },
+        {
+          "xy": [
+            -29.15,
+            -1.4
+          ],
+          "z": 28.0,
+          "error": 0.0
+        },
+        {
+          "xy": [
+            -16.85,
+            2.9999999999999996
+          ],
+          "z": 28.0,
+          "error": 0.0
+        },
+        {
+          "xy": [
+            -23.0,
+            3.0
+          ],
+          "z": 28.0,
+          "error": 0.0
+        },
+        {
+          "xy": [
+            -29.15,
+            3.0000000000000004
+          ],
+          "z": 28.0,
+          "error": 0.0
+        },
+        {
+          "xy": [
+            -16.85,
+            7.4
+          ],
+          "z": 28.0,
+          "error": 0.0
+        },
+        {
+          "xy": [
+            -23.0,
+            7.4
+          ],
+          "z": 28.0,
+          "error": 0.0
+        },
+        {
+          "xy": [
+            -29.15,
+            7.4
+          ],
+          "z": 28.0,
+          "error": 0.0
+        }
+      ],
+      "max_error": 0.0
+    },
+    {
+      "id": "right_house",
+      "samples": [
+        {
+          "xy": [
+            -12.549352198267036,
+            14.327378190338653
+          ],
+          "z": 27.00000762939453,
+          "error": 7.62939453125e-06
+        },
+        {
+          "xy": [
+            -11.75733009615696,
+            19.567864903399677
+          ],
+          "z": 27.0,
+          "error": 0.0
+        },
+        {
+          "xy": [
+            -10.965307994046883,
+            24.8083516164607
+          ],
+          "z": 27.0,
+          "error": 0.0
+        },
+        {
+          "xy": [
+            -8.792022102110076,
+            13.759513286938976
+          ],
+          "z": 27.0,
+          "error": 0.0
+        },
+        {
+          "xy": [
+            -8.0,
+            19.0
+          ],
+          "z": 27.0,
+          "error": 0.0
+        },
+        {
+          "xy": [
+            -7.207977897889924,
+            24.240486713061024
+          ],
+          "z": 27.00000762939453,
+          "error": 7.62939453125e-06
+        },
+        {
+          "xy": [
+            -5.034692005953116,
+            13.191648383539299
+          ],
+          "z": 27.0,
+          "error": 0.0
+        },
+        {
+          "xy": [
+            -4.24266990384304,
+            18.432135096600323
+          ],
+          "z": 27.0,
+          "error": 0.0
+        },
+        {
+          "xy": [
+            -3.450647801732964,
+            23.672621809661347
+          ],
+          "z": 27.0,
+          "error": 0.0
+        }
+      ],
+      "max_error": 7.62939453125e-06
+    },
+    {
+      "id": "tower",
+      "samples": [
+        {
+          "xy": [
+            -6.970366885039415,
+            -0.2774347306987117
+          ],
+          "z": 30.062103271484375,
+          "error": -2.4868995751603507e-14
+        },
+        {
+          "xy": [
+            -8.232127077237482,
+            4.664018620025576
+          ],
+          "z": 30.062103271484375,
+          "error": -2.4868995751603507e-14
+        },
+        {
+          "xy": [
+            -9.493887269435549,
+            9.605471970749864
+          ],
+          "z": 30.062103271484375,
+          "error": -2.4868995751603507e-14
+        },
+        {
+          "xy": [
+            -1.7382398078019332,
+            1.058546649275712
+          ],
+          "z": 30.062103271484375,
+          "error": -2.4868995751603507e-14
+        },
+        {
+          "xy": [
+            -3.0,
+            6.0
+          ],
+          "z": 30.062110900878906,
+          "error": 7.629394506381004e-06
+        },
+        {
+          "xy": [
+            -4.261760192198067,
+            10.941453350724288
+          ],
+          "z": 30.062103271484375,
+          "error": -2.4868995751603507e-14
+        },
+        {
+          "xy": [
+            3.4938872694355485,
+            2.394528029250136
+          ],
+          "z": 30.062103271484375,
+          "error": -2.4868995751603507e-14
+        },
+        {
+          "xy": [
+            2.2321270772374815,
+            7.335981379974424
+          ],
+          "z": 30.062095642089844,
+          "error": -7.629394556118996e-06
+        },
+        {
+          "xy": [
+            0.9703668850394147,
+            12.277434730698712
+          ],
+          "z": 30.062103271484375,
+          "error": -2.4868995751603507e-14
+        }
+      ],
+      "max_error": 7.629394556118996e-06
+    }
+  ],
+  "tree_axis_check": [
+    {
+      "xy": [
+        -42,
+        -1
+      ],
+      "scale": 1.1,
+      "height": 28.228599548339844,
+      "normal": [
+        0.0,
+        -0.0,
+        1.0
+      ],
+      "face": 101
+    },
+    {
+      "xy": [
+        -35,
+        0
+      ],
+      "scale": 1.2,
+      "height": 28.45233917236328,
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "face": 140
+    },
+    {
+      "xy": [
+        -45,
+        10
+      ],
+      "scale": 0.85,
+      "height": 28.073471069335938,
+      "normal": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "face": 48
+    },
+    {
+      "xy": [
+        -36,
+        12
+      ],
+      "scale": 1.05,
+      "height": 28.360549926757812,
+      "normal": [
+        0.0,
+        -0.0,
+        1.0
+      ],
+      "face": 145
+    },
+    {
+      "xy": [
+        -49,
+        -4
+      ],
+      "scale": 0.65,
+      "height": 27.565765380859375,
+      "normal": [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "face": 41
+    },
+    {
+      "xy": [
+        4,
+        22
+      ],
+      "scale": 0.65,
+      "height": 27.295852661132812,
+      "normal": [
+        0.0,
+        -0.0,
+        1.0
+      ],
+      "face": 448
+    },
+    {
+      "xy": [
+        10,
+        29
+      ],
+      "scale": 0.45,
+      "height": 24.683639526367188,
+      "normal": [
+        0.0,
+        -0.0,
+        1.0
+      ],
+      "face": 502
+    },
+    {
+      "xy": [
+        14,
+        36
+      ],
+      "scale": 0.35,
+      "height": 21.767440795898438,
+      "normal": [
+        0.0,
+        -0.0,
+        1.0
+      ],
+      "face": 485
+    }
+  ],
+  "passed": true,
+  "source_sha256": "807a9038abd1a59012f32710f9a855320b1e8605d01b42e40247237322b392b1",
+  "glb_sha256": "3b3e4ad1fd66bc6a5def30ff3d577522ae851e337d0e9ba27cce594f57a7ee0d"
+}

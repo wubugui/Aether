@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "run_id": "foreground-16d-20260908T044954Z-1577d1ffdda64be881de773769a52a8c",
+  "round": "foreground-16d",
+  "started_utc": "2026-09-08T04:49:54.314067+00:00",
+  "workspace": "E:\\FeiTing",
+  "run_directory": "E:\\FeiTing\\captures\\validation_runs\\foreground-16d-20260908T044954Z-1577d1ffdda64be881de773769a52a8c",
+  "status": "passed",
+  "passed": true,
+  "export_windows_requested": false,
+  "capture_views_requested": true,
+  "expected_counts": {},
+  "stages": [
+    {
+      "name": "capture-opening",
+      "run_id": "foreground-16d-20260908T044954Z-1577d1ffdda64be881de773769a52a8c",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\foreground-16d-20260908T044954Z-1577d1ffdda64be881de773769a52a8c\\study-inputs\\preview.gd",
+        "--",
+        "--capture",
+        "--view=opening",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\foreground-16d-20260908T044954Z-1577d1ffdda64be881de773769a52a8c\\images\\opening.png",
+        "--study-dir=E:\\FeiTing\\captures\\validation_runs\\foreground-16d-20260908T044954Z-1577d1ffdda64be881de773769a52a8c\\study-inputs",
+        "--validation-run=foreground-16d-20260908T044954Z-1577d1ffdda64be881de773769a52a8c"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788843009131781100,
+      "started_utc": "2026-09-08T04:50:09.131781+00:00",
+      "input_manifest_sha256": "de04bf246dbdea768ca8a63e00d6099d3cd78c0a26d08d75554fc6a050242ab4",
+      "exit_code": 0,
+      "finished_ns": 1788843015582409300,
+      "image": "images/opening.png",
+      "finished_utc": "2026-09-08T04:50:23.168322+00:00"
+    },
+    {
+      "name": "capture-cliff-side",
+      "run_id": "foreground-16d-20260908T044954Z-1577d1ffdda64be881de773769a52a8c",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\foreground-16d-20260908T044954Z-1577d1ffdda64be881de773769a52a8c\\study-inputs\\preview.gd",
+        "--",
+        "--capture",
+        "--view=cliff-side",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\foreground-16d-20260908T044954Z-1577d1ffdda64be881de773769a52a8c\\images\\cliff-side.png",
+        "--study-dir=E:\\FeiTing\\captures\\validation_runs\\foreground-16d-20260908T044954Z-1577d1ffdda64be881de773769a52a8c\\study-inputs",
+        "--validation-run=foreground-16d-20260908T044954Z-1577d1ffdda64be881de773769a52a8c"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788843030694075500,
+      "started_utc": "2026-09-08T04:50:30.694075+00:00",
+      "input_manifest_sha256": "de04bf246dbdea768ca8a63e00d6099d3cd78c0a26d08d75554fc6a050242ab4",
+      "exit_code": 0,
+      "finished_ns": 1788843037113353100,
+      "image": "images/cliff-side.png",
+      "finished_utc": "2026-09-08T04:50:45.028286+00:00"
+    },
+    {
+      "name": "capture-cliff-back",
+      "run_id": "foreground-16d-20260908T044954Z-1577d1ffdda64be881de773769a52a8c",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\foreground-16d-20260908T044954Z-1577d1ffdda64be881de773769a52a8c\\study-inputs\\preview.gd",
+        "--",
+        "--capture",
+        "--view=cliff-back",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\foreground-16d-20260908T044954Z-1577d1ffdda64be881de773769a52a8c\\images\\cliff-back.png",
+        "--study-dir=E:\\FeiTing\\captures\\validation_runs\\foreground-16d-20260908T044954Z-1577d1ffdda64be881de773769a52a8c\\study-inputs",
+        "--validation-run=foreground-16d-20260908T044954Z-1577d1ffdda64be881de773769a52a8c"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788843052467856000,
+      "started_utc": "2026-09-08T04:50:52.467856+00:00",
+      "input_manifest_sha256": "de04bf246dbdea768ca8a63e00d6099d3cd78c0a26d08d75554fc6a050242ab4",
+      "exit_code": 0,
+      "finished_ns": 1788843058811557300,
+      "image": "images/cliff-back.png",
+      "finished_utc": "2026-09-08T04:51:07.059142+00:00"
+    }
+  ],
+  "artifacts": {
+    "study-inputs/cliff_crown.glb": {
+      "sha256": "dbe75f6a815a679e91b86943461e8c6c3e721d44584687636d7ca3953ba9ac1f",
+      "bytes": 42564,
+      "mtime_ns": 1788842983494879700
+    },
+    "study-inputs/cliff_crown.blend": {
+      "sha256": "0acd8051aa28d8536b7e16194085745c0c1538f891b1fc275d3e547f4e915f8d",
+      "bytes": 509519,
+      "mtime_ns": 1788842983496973400
+    },
+    "study-inputs/cliff_front_columns.glb": {
+      "sha256": "d715848077b118660b9864bad144b089ce70158aa058803d44534dbb77afca75",
+      "bytes": 25716,
+      "mtime_ns": 1788842983541936400
+    },
+    "study-inputs/cliff_front_columns.blend": {
+      "sha256": "f12e5adac73b26d584dda54adad6007fa82e0a37758a87704acb975397fc58db",
+      "bytes": 477263,
+      "mtime_ns": 1788842983543448300
+    },
+    "study-inputs/cliff_central_wall.glb": {
+      "sha256": "4a514bc9e398498e98d93df865241105cd431201b4749ca497c1edb9c5cf89a1",
+      "bytes": 25964,
+      "mtime_ns": 1788842983589530400
+    },
+    "study-inputs/cliff_central_wall.blend": {
+      "sha256": "9c40c727a7d786654b32996b5d7579bb7b688668d9d25988550172b25281aaa9",
+      "bytes": 478807,
+      "mtime_ns": 1788842983590542900
+    },
+    "study-inputs/manifest.json": {
+      "sha256": "aca54b8137d929e980b7a30ed5064b47268ede081b4b39bb7cd9347b176896f5",
+      "bytes": 22165,
+      "mtime_ns": 1788842983607149500
+    },
+    "study-inputs/preview.gd": {
+      "sha256": "fe379467a27c623f6ed0300288dd6ae947b435cd826af7b6f99ef3c9569a7f04",
+      "bytes": 1781,
+      "mtime_ns": 1788831488781251200
+    },
+    "scoped-driver.py": {
+      "sha256": "6b316d0ef097726e6806a55081ae6b29dc595aba91121a636aacf3cf7ef7dd44",
+      "bytes": 3720,
+      "mtime_ns": 1788842980465818600
+    },
+    "study-inputs/sculpt_foreground_16.py": {
+      "sha256": "206c02fc6fb5231a57db8e4077676b56514702038f552c23095d809714772f11",
+      "bytes": 12472,
+      "mtime_ns": 1788842980464812400
+    },
+    "inputs.json": {
+      "sha256": "de04bf246dbdea768ca8a63e00d6099d3cd78c0a26d08d75554fc6a050242ab4",
+      "bytes": 731255,
+      "mtime_ns": 1788843001681937600
+    },
+    "images/opening.png": {
+      "sha256": "ba6824a5dfe5159d779d9625770c4b95a4f761e539f9352258d443bdb4167a50",
+      "bytes": 746418,
+      "mtime_ns": 1788843015141844400
+    },
+    "capture-opening.log": {
+      "sha256": "00f2972ff94cbe4e339d6b78aff27bd6f898dd8543a41d230a5320ce78dbd19d",
+      "bytes": 709,
+      "mtime_ns": 1788843015144063700
+    },
+    "capture-opening-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788843009132890900
+    },
+    "stages/capture-opening.json": {
+      "sha256": "7bb81432e6295ae50d83e045d47db9c816d13085ce606444382bf08bb5fb2d6f",
+      "bytes": 1220,
+      "mtime_ns": 1788843023170320700
+    },
+    "images/cliff-side.png": {
+      "sha256": "d4d86607912040b09fa237aad547d9e2f44fef0104cda24eac52ebd8b02aed6e",
+      "bytes": 895107,
+      "mtime_ns": 1788843036707593000
+    },
+    "capture-cliff-side.log": {
+      "sha256": "d0f77f6b86ee9acaa73ee8cd02428cbf57ae50cd6a63e6756c80bb1c911ab09a",
+      "bytes": 704,
+      "mtime_ns": 1788843036708607700
+    },
+    "capture-cliff-side-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788843030694578200
+    },
+    "stages/capture-cliff-side.json": {
+      "sha256": "35cd3d3b1a46367a23ea354875e8c2ecf90b5d66b538f082d1b6a10c2f80b836",
+      "bytes": 1232,
+      "mtime_ns": 1788843045031284200
+    },
+    "images/cliff-back.png": {
+      "sha256": "280084db4c5924a581c8fe2f2c867554ed3740a7a3fed490d22b0b424339263c",
+      "bytes": 849035,
+      "mtime_ns": 1788843058436627200
+    },
+    "capture-cliff-back.log": {
+      "sha256": "1596a0d81e00c75f82c6438ace59773d0bcc6c6d31da36b08807a2fb2be1ce9b",
+      "bytes": 714,
+      "mtime_ns": 1788843058438623800
+    },
+    "capture-cliff-back-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788843052468854300
+    },
+    "stages/capture-cliff-back.json": {
+      "sha256": "d27bffc49b2e61f147b9fa33d0401f76f1947579709954ee74e011a8cd4755c3",
+      "bytes": 1232,
+      "mtime_ns": 1788843067062745000
+    }
+  },
+  "visual_acceptance_proven": false,
+  "scope": "Temporary native World assembly of three independent Blender cliff candidates and their derived triangle colliders. Three raw GPU views; no production integration, gameplay acceptance or release.",
+  "production_modified": false,
+  "input_count": 3496,
+  "completed_utc": "2026-09-08T04:51:15.758379+00:00"
+}

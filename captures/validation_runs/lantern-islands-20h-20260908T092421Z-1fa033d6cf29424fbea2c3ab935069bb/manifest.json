@@ -1,0 +1,361 @@
+{
+  "schema_version": 1,
+  "run_id": "lantern-islands-20h-20260908T092421Z-1fa033d6cf29424fbea2c3ab935069bb",
+  "round": "lantern-islands-20h",
+  "started_utc": "2026-09-08T09:24:21.098625+00:00",
+  "workspace": "E:\\FeiTing",
+  "run_directory": "E:\\FeiTing\\captures\\validation_runs\\lantern-islands-20h-20260908T092421Z-1fa033d6cf29424fbea2c3ab935069bb",
+  "status": "passed",
+  "passed": true,
+  "export_windows_requested": false,
+  "capture_views_requested": true,
+  "expected_counts": {},
+  "stages": [
+    {
+      "name": "capture-house-front",
+      "run_id": "lantern-islands-20h-20260908T092421Z-1fa033d6cf29424fbea2c3ab935069bb",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\lantern-islands-20h-20260908T092421Z-1fa033d6cf29424fbea2c3ab935069bb\\study-inputs\\preview_lantern_islands_20.gd",
+        "--quit-after",
+        "900",
+        "--",
+        "--label=20h",
+        "--study-dir=E:\\FeiTing\\captures\\validation_runs\\lantern-islands-20h-20260908T092421Z-1fa033d6cf29424fbea2c3ab935069bb\\study-inputs",
+        "--view=house-front",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\lantern-islands-20h-20260908T092421Z-1fa033d6cf29424fbea2c3ab935069bb\\images\\house-front.png",
+        "--validation-run=lantern-islands-20h-20260908T092421Z-1fa033d6cf29424fbea2c3ab935069bb"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788859477115881500,
+      "started_utc": "2026-09-08T09:24:37.115881+00:00",
+      "input_manifest_sha256": "f32484aed94d9b2ecce9fbc947035d8bbd8a7dcd512d06a916fa9611f6b67b81",
+      "exit_code": 0,
+      "finished_ns": 1788859484219031600,
+      "image": "images/house-front.png",
+      "finished_utc": "2026-09-08T09:24:55.441351+00:00"
+    },
+    {
+      "name": "capture-house-back",
+      "run_id": "lantern-islands-20h-20260908T092421Z-1fa033d6cf29424fbea2c3ab935069bb",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\lantern-islands-20h-20260908T092421Z-1fa033d6cf29424fbea2c3ab935069bb\\study-inputs\\preview_lantern_islands_20.gd",
+        "--quit-after",
+        "900",
+        "--",
+        "--label=20h",
+        "--study-dir=E:\\FeiTing\\captures\\validation_runs\\lantern-islands-20h-20260908T092421Z-1fa033d6cf29424fbea2c3ab935069bb\\study-inputs",
+        "--view=house-back",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\lantern-islands-20h-20260908T092421Z-1fa033d6cf29424fbea2c3ab935069bb\\images\\house-back.png",
+        "--validation-run=lantern-islands-20h-20260908T092421Z-1fa033d6cf29424fbea2c3ab935069bb"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788859504820059400,
+      "started_utc": "2026-09-08T09:25:04.820059+00:00",
+      "input_manifest_sha256": "f32484aed94d9b2ecce9fbc947035d8bbd8a7dcd512d06a916fa9611f6b67b81",
+      "exit_code": 0,
+      "finished_ns": 1788859511527588100,
+      "image": "images/house-back.png",
+      "finished_utc": "2026-09-08T09:25:19.972116+00:00"
+    },
+    {
+      "name": "capture-archipelago",
+      "run_id": "lantern-islands-20h-20260908T092421Z-1fa033d6cf29424fbea2c3ab935069bb",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\lantern-islands-20h-20260908T092421Z-1fa033d6cf29424fbea2c3ab935069bb\\study-inputs\\preview_lantern_islands_20.gd",
+        "--quit-after",
+        "900",
+        "--",
+        "--label=20h",
+        "--study-dir=E:\\FeiTing\\captures\\validation_runs\\lantern-islands-20h-20260908T092421Z-1fa033d6cf29424fbea2c3ab935069bb\\study-inputs",
+        "--view=archipelago",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\lantern-islands-20h-20260908T092421Z-1fa033d6cf29424fbea2c3ab935069bb\\images\\archipelago.png",
+        "--validation-run=lantern-islands-20h-20260908T092421Z-1fa033d6cf29424fbea2c3ab935069bb"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788859528767878000,
+      "started_utc": "2026-09-08T09:25:28.767878+00:00",
+      "input_manifest_sha256": "f32484aed94d9b2ecce9fbc947035d8bbd8a7dcd512d06a916fa9611f6b67b81",
+      "exit_code": 0,
+      "finished_ns": 1788859536368403100,
+      "image": "images/archipelago.png",
+      "finished_utc": "2026-09-08T09:25:45.945349+00:00"
+    },
+    {
+      "name": "capture-c-site",
+      "run_id": "lantern-islands-20h-20260908T092421Z-1fa033d6cf29424fbea2c3ab935069bb",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\lantern-islands-20h-20260908T092421Z-1fa033d6cf29424fbea2c3ab935069bb\\study-inputs\\preview_lantern_islands_20.gd",
+        "--quit-after",
+        "900",
+        "--",
+        "--label=20h",
+        "--study-dir=E:\\FeiTing\\captures\\validation_runs\\lantern-islands-20h-20260908T092421Z-1fa033d6cf29424fbea2c3ab935069bb\\study-inputs",
+        "--view=c-site",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\lantern-islands-20h-20260908T092421Z-1fa033d6cf29424fbea2c3ab935069bb\\images\\c-site.png",
+        "--validation-run=lantern-islands-20h-20260908T092421Z-1fa033d6cf29424fbea2c3ab935069bb"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788859554971144300,
+      "started_utc": "2026-09-08T09:25:54.971144+00:00",
+      "input_manifest_sha256": "f32484aed94d9b2ecce9fbc947035d8bbd8a7dcd512d06a916fa9611f6b67b81",
+      "exit_code": 0,
+      "finished_ns": 1788859562768123600,
+      "image": "images/c-site.png",
+      "finished_utc": "2026-09-08T09:26:10.877155+00:00"
+    }
+  ],
+  "artifacts": {
+    "study-inputs/builder.py": {
+      "sha256": "0e60b3785c3311898dfd33a8e4b17a3d050ae50282708bee224d71e3236caabc",
+      "bytes": 21039,
+      "mtime_ns": 1788859346006912100
+    },
+    "study-inputs/island_a.blend": {
+      "sha256": "9ab3efc7aa59bcc9b50ea07b7d4efb42a50439c37af515eb9d0562e8c5582cb8",
+      "bytes": 687554,
+      "mtime_ns": 1788858579102934900
+    },
+    "study-inputs/island_a.glb": {
+      "sha256": "7757b432087340f734a609ef8d96083fee8bf9c66d2b89eb09551ed337f33b4f",
+      "bytes": 146472,
+      "mtime_ns": 1788858579309473400
+    },
+    "study-inputs/island_b.blend": {
+      "sha256": "9f0bee3f85005380253c42ecc8e9e6af9e0ef25f4a8ecfbd89608ad824fb2a5c",
+      "bytes": 649364,
+      "mtime_ns": 1788858579337395900
+    },
+    "study-inputs/island_b.glb": {
+      "sha256": "42be2050c03862bef6e09b13666bd3150fb4d25301aeacba5dd64d4b813147ba",
+      "bytes": 105744,
+      "mtime_ns": 1788858579358815800
+    },
+    "study-inputs/island_c.blend": {
+      "sha256": "0f08c0d1e065806f62fe632c78a07120fca01e9bc2e261671a25457795419069",
+      "bytes": 643926,
+      "mtime_ns": 1788859013788915300
+    },
+    "study-inputs/island_c.glb": {
+      "sha256": "b6e744db6824dd81c8ec996a68b8287f2cadebdf7fd72bc7a9fb705a760a7161",
+      "bytes": 97580,
+      "mtime_ns": 1788859013976470600
+    },
+    "study-inputs/keeper_house.blend": {
+      "sha256": "ded477b6ed619aa9ca11da4ce7fe190938c27a86ff31237922fad161f2177759",
+      "bytes": 2474838,
+      "mtime_ns": 1788859346901051300
+    },
+    "study-inputs/keeper_house.glb": {
+      "sha256": "8f70f7ba4d6c94d23b310b73f6fee9d171f6efb32d255be2574254e639b6176b",
+      "bytes": 307084,
+      "mtime_ns": 1788859347431110400
+    },
+    "study-inputs/model-report.json": {
+      "sha256": "35ebedc57afa66e0d6a9d9114d9712d7f93eb80e96af53633b270fc8bff3e1e9",
+      "bytes": 28110,
+      "mtime_ns": 1788859347484111600
+    },
+    "study-inputs/reef_low.blend": {
+      "sha256": "66c5392aa718ba8520f31a4c6ba08098e425034bae83c010b5e437db739948e9",
+      "bytes": 551018,
+      "mtime_ns": 1788858579418959700
+    },
+    "study-inputs/reef_low.glb": {
+      "sha256": "42de4128c2c51d3f22b9bd4423b23b3c15f509e623abcdac9702e4c1f1a06a87",
+      "bytes": 6280,
+      "mtime_ns": 1788858579426976800
+    },
+    "study-inputs/reef_ridge.blend": {
+      "sha256": "9b7060b1946358d58b53ffd9d089338d3f9d8796caaeb73cb32b84819326b082",
+      "bytes": 551236,
+      "mtime_ns": 1788858579458111400
+    },
+    "study-inputs/reef_ridge.glb": {
+      "sha256": "4427c7705c9ce848cfa62735d46347d931c1c3e52d693b189d0cded9fe89be87",
+      "bytes": 7296,
+      "mtime_ns": 1788858579467920700
+    },
+    "study-inputs/reef_spire.blend": {
+      "sha256": "a384d4f84c982eff4a05974aa48d595e975ed21c0d9899c6fe5faf5d1eecae2a",
+      "bytes": 551372,
+      "mtime_ns": 1788858579437489600
+    },
+    "study-inputs/reef_spire.glb": {
+      "sha256": "c93eb72c79a84893651692223830be491c015e2827d36fa5bbf7e6c3311fb95e",
+      "bytes": 7620,
+      "mtime_ns": 1788858579447545700
+    },
+    "study-inputs/round-20h-coast-native-check.json": {
+      "sha256": "3a0d8dd44f335ff166794083be57cf801898a2d3cb0172b306f1e188ac613208",
+      "bytes": 67358,
+      "mtime_ns": 1788859401825499500
+    },
+    "study-inputs/render_lantern_islands_study.py": {
+      "sha256": "a63365e575c418a2b0ecdf05ad436dd81d9bd166862c093944cf62f1c56936ad",
+      "bytes": 4541,
+      "mtime_ns": 1788859458124004400
+    },
+    "study-inputs/preview_lantern_islands_20.gd": {
+      "sha256": "9f3284536617fac001b03de2de46ca6350db06ed8d2bc29f0e8e45934d6e7881",
+      "bytes": 8982,
+      "mtime_ns": 1788859458125020700
+    },
+    "study-inputs/1126.png": {
+      "sha256": "3051f512881fecf3d2b8dacadbac3ed10473f9094d28870526ae3cd4db9e4353",
+      "bytes": 1554270,
+      "mtime_ns": 1788847337990769400
+    },
+    "study-inputs/1342.png": {
+      "sha256": "7acc98104013d9122eb551846b2d7fc1f7549bce8b2e3199eae8f5385a3ea238",
+      "bytes": 1646137,
+      "mtime_ns": 1788847336194355400
+    },
+    "study-inputs/1218.png": {
+      "sha256": "774d8f62f8fa48a93ed15650c3bc21971b08b55262dea9421de36f3368f556b6",
+      "bytes": 1727736,
+      "mtime_ns": 1788847341152794900
+    },
+    "study-inputs/round-20h-roof-laps.json": {
+      "sha256": "50487e928f816040d503b5199e299000dc9d72752f2e02ca2e350923532ed55f",
+      "bytes": 5512,
+      "mtime_ns": 1788859402054560000
+    },
+    "study-inputs/check_keeper_roof_laps.py": {
+      "sha256": "c7ffe6a9c18d209d4927293487d8a9d29fe8cbbb50013877c2630669c0856938",
+      "bytes": 2585,
+      "mtime_ns": 1788859399154792300
+    },
+    "inputs.json": {
+      "sha256": "f32484aed94d9b2ecce9fbc947035d8bbd8a7dcd512d06a916fa9611f6b67b81",
+      "bytes": 732075,
+      "mtime_ns": 1788859468330362800
+    },
+    "images/house-front.png": {
+      "sha256": "e3b07934302e181950bc595df45f5b787a21123441db901d3b8a0e9af46374a9",
+      "bytes": 242464,
+      "mtime_ns": 1788859483758983600
+    },
+    "images/house-front.png.json": {
+      "sha256": "90f5c50ca0c9f9efe9e8dc3a68695570c5b77bc3b44ab065426030f5fce03aa6",
+      "bytes": 31978,
+      "mtime_ns": 1788859483768493800
+    },
+    "capture-house-front.log": {
+      "sha256": "269f6f22779554c7751bb3cb4c8a8f3b98f15af509e6c56fca750719de724cb9",
+      "bytes": 348,
+      "mtime_ns": 1788859483768493800
+    },
+    "capture-house-front-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788859477121377800
+    },
+    "stages/capture-house-front.json": {
+      "sha256": "406fba233e93144c58a92596c3ee4b2e77586989905e76810ebbce1554e575c2",
+      "bytes": 1315,
+      "mtime_ns": 1788859495444343000
+    },
+    "images/house-back.png": {
+      "sha256": "f431095bd4d85bad32763ef282e86ce012cbb33777e2eb5f1ecd8507153071fe",
+      "bytes": 307261,
+      "mtime_ns": 1788859511115547000
+    },
+    "images/house-back.png.json": {
+      "sha256": "773434c04757bef44d6ada7ee9299fddfa00af2b1b08f9ffee07575ad204fb89",
+      "bytes": 31978,
+      "mtime_ns": 1788859511122092800
+    },
+    "capture-house-back.log": {
+      "sha256": "75dd55433edd516336181cb0fe029f9c57a1fe70bd055519de3132de38d04c18",
+      "bytes": 347,
+      "mtime_ns": 1788859511122092800
+    },
+    "capture-house-back-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788859504822564600
+    },
+    "stages/capture-house-back.json": {
+      "sha256": "4b91b4e2c616ea4500790007eb75fdc90ef9fcfe4bfec651857713f9f69a815d",
+      "bytes": 1311,
+      "mtime_ns": 1788859519975107400
+    },
+    "images/archipelago.png": {
+      "sha256": "b165c4307d4a850615b0b734dc2b018310407bb02b24522f63a3fc188cfba6f9",
+      "bytes": 338853,
+      "mtime_ns": 1788859535896940700
+    },
+    "images/archipelago.png.json": {
+      "sha256": "60aa47bae210004d7fa258d98835d8b02c2621640df31620a59c8f5fe9654e16",
+      "bytes": 31968,
+      "mtime_ns": 1788859535904381700
+    },
+    "capture-archipelago.log": {
+      "sha256": "5623a6bd4b5fd4583e4314387d473a2b47cda8e0c248ae2ae9e2edeebda5fc7c",
+      "bytes": 348,
+      "mtime_ns": 1788859535904381700
+    },
+    "capture-archipelago-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788859528768875100
+    },
+    "stages/capture-archipelago.json": {
+      "sha256": "60b18a2e23207b55f15774e02254ff1590844aa180aff0da2daf25fbdac558b9",
+      "bytes": 1315,
+      "mtime_ns": 1788859545948759900
+    },
+    "images/c-site.png": {
+      "sha256": "02080c7356c4b8bce0cb0df30b78362298bb87b732161b212ecefff32317b303",
+      "bytes": 352686,
+      "mtime_ns": 1788859562305975000
+    },
+    "images/c-site.png.json": {
+      "sha256": "84278eac65eab653c503b42991896acdfb70bfba0e973ec21ac345c0ae550155",
+      "bytes": 31975,
+      "mtime_ns": 1788859562315005600
+    },
+    "capture-c-site.log": {
+      "sha256": "d9c839d03a677083f0a10903f5e33fb2576ce9fc9ca45ae9472cdddcf008a368",
+      "bytes": 343,
+      "mtime_ns": 1788859562316512400
+    },
+    "capture-c-site-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788859554973138500
+    },
+    "stages/capture-c-site.json": {
+      "sha256": "a494e81a6e8b393a75a3727d5caea059ed681a953577df262cab68bfc402f1df",
+      "bytes": 1295,
+      "mtime_ns": 1788859570880613400
+    }
+  },
+  "visual_acceptance_proven": false,
+  "scope": "Keeper roof lap repair only, with all six 20g landforms byte-identical. Four actual GPU views: house front/back, island-chain context and C building site. Temporary assembly; no full scene acceptance.",
+  "completed_utc": "2026-09-08T09:26:19.090057+00:00"
+}

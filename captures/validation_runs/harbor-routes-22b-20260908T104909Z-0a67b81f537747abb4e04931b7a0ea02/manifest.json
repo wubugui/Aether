@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "run_id": "harbor-routes-22b-20260908T104909Z-0a67b81f537747abb4e04931b7a0ea02",
+  "round": "harbor-routes-22b",
+  "started_utc": "2026-09-08T10:49:09.368944+00:00",
+  "workspace": "E:\\FeiTing",
+  "run_directory": "E:\\FeiTing\\captures\\validation_runs\\harbor-routes-22b-20260908T104909Z-0a67b81f537747abb4e04931b7a0ea02",
+  "status": "passed",
+  "passed": true,
+  "export_windows_requested": false,
+  "capture_views_requested": true,
+  "expected_counts": {},
+  "stages": [
+    {
+      "name": "native-route-transects",
+      "run_id": "harbor-routes-22b-20260908T104909Z-0a67b81f537747abb4e04931b7a0ea02",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\harbor-routes-22b-20260908T104909Z-0a67b81f537747abb4e04931b7a0ea02\\survey-inputs\\survey_harbor_routes_22b.gd",
+        "--quit-after",
+        "900",
+        "--",
+        "--survey=E:\\FeiTing\\captures\\validation_runs\\harbor-routes-22b-20260908T104909Z-0a67b81f537747abb4e04931b7a0ea02\\survey-inputs\\sites.json",
+        "--output-dir=E:\\FeiTing\\captures\\validation_runs\\harbor-routes-22b-20260908T104909Z-0a67b81f537747abb4e04931b7a0ea02\\survey",
+        "--validation-run=harbor-routes-22b-20260908T104909Z-0a67b81f537747abb4e04931b7a0ea02"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788864561483180800,
+      "started_utc": "2026-09-08T10:49:21.483180+00:00",
+      "input_manifest_sha256": "637eb24977202bf4ea57524c155f66a93468dad85c42594f802794a831be0893",
+      "exit_code": 0,
+      "finished_ns": 1788864565648338700,
+      "finished_utc": "2026-09-08T10:49:31.425375+00:00"
+    }
+  ],
+  "artifacts": {
+    "survey-inputs/survey_harbor_routes_22b.py": {
+      "sha256": "8adec53c37e5375de51ee8a3a8f4ed528bc5a3b1b7e0f155318c0f4dd70fd249",
+      "bytes": 2303,
+      "mtime_ns": 1788864547146716400
+    },
+    "survey-inputs/survey_harbor_routes_22b.gd": {
+      "sha256": "e4f749638a32ec7baa1df0806b41f868200233442ef3743cf9f33c5a8d866608",
+      "bytes": 4001,
+      "mtime_ns": 1788864547145707100
+    },
+    "survey-inputs/sites.json": {
+      "sha256": "b52744d8b82d8fd54dd15db5214d53a1a00e84148cfccaf5418b498a163c8e01",
+      "bytes": 409972,
+      "mtime_ns": 1788863841947016600
+    },
+    "inputs.json": {
+      "sha256": "637eb24977202bf4ea57524c155f66a93468dad85c42594f802794a831be0893",
+      "bytes": 732020,
+      "mtime_ns": 1788864555437036900
+    },
+    "survey/routes.json": {
+      "sha256": "5efa7f9fdef67a95ec3d01403cfc030004430bc7a918b9aeb450916058496889",
+      "bytes": 560865,
+      "mtime_ns": 1788864565465024100
+    },
+    "survey/routes-before.png": {
+      "sha256": "137cf2c524854222063f94e20b6d54d4eb2cc4dde990f4a85dd9277c95be3463",
+      "bytes": 377930,
+      "mtime_ns": 1788864565449830000
+    },
+    "native-route-transects.log": {
+      "sha256": "67d628b5b1f54b47744d3461e08023e2d9bf4e2117051ef86a6ae51034d0ed4c",
+      "bytes": 213,
+      "mtime_ns": 1788864565465024100
+    },
+    "native-route-transects-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788864561484184000
+    },
+    "stages/native-route-transects.json": {
+      "sha256": "661120bf711c514d00f7f0d76d2a06c7d481b9d0eb4f3d40ad689465a3acbd4b",
+      "bytes": 1219,
+      "mtime_ns": 1788864571426376600
+    }
+  },
+  "visual_acceptance_proven": false,
+  "scope": "Read-only actual terrain for4 native pier aprons and4 proposed port-house routes.",
+  "completed_utc": "2026-09-08T10:49:37.474883+00:00"
+}

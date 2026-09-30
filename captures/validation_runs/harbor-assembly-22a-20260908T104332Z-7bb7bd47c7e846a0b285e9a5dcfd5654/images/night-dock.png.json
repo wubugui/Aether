@@ -1,0 +1,5029 @@
+{
+  "camera": {
+    "fov": 62.0,
+    "position": [
+      -2416.533203125,
+      11.0,
+      -2230.54516601563
+    ],
+    "rotation": [
+      -0.311577826738358,
+      -0.280111461877823,
+      0.0
+    ]
+  },
+  "environment_study": {
+    "ambient_color": [
+      0.360000014305115,
+      0.46000000834465,
+      0.699999988079071
+    ],
+    "ambient_energy": 1.0,
+    "ambient_source": 2,
+    "directional_light_energy": 0.850000023841858,
+    "emissive_material_variants": 7,
+    "fog_density": 0.000380000012228265,
+    "local_light_records": [
+      {
+        "energy": 2.0,
+        "node": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_a/NativeLanternLight",
+        "position": [
+          -2353.0,
+          49.6621017456055,
+          -1656.0
+        ],
+        "range_m": 13.0
+      },
+      {
+        "energy": 2.0,
+        "node": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_b/NativeLanternLight",
+        "position": [
+          -2700.0,
+          41.2455062866211,
+          -2202.0
+        ],
+        "range_m": 13.0
+      },
+      {
+        "energy": 2.0,
+        "node": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_c/NativeLanternLight",
+        "position": [
+          -3049.0,
+          37.5855178833008,
+          -2651.0
+        ],
+        "range_m": 13.0
+      },
+      {
+        "energy": 2.0,
+        "node": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_d/NativeLanternLight",
+        "position": [
+          -2339.67016601563,
+          37.5854721069336,
+          -1811.37524414063
+        ],
+        "range_m": 13.0
+      }
+    ],
+    "material_bindings": [
+      {
+        "candidate_shader": "terrain_native.gdshader",
+        "original_material": "res://materials/terrain.tres",
+        "original_shader": "res://scripts/terrain_native.gdshader"
+      },
+      {
+        "candidate_shader": "world_surface.gdshader",
+        "original_material": "res://materials/world.tres",
+        "original_shader": "res://scripts/world_surface.gdshader"
+      },
+      {
+        "candidate_shader": "cloud_surface.gdshader",
+        "original_material": "res://materials/cloud.tres",
+        "original_shader": "res://scripts/cloud_surface.gdshader"
+      },
+      {
+        "candidate_shader": "open_water.gdshader",
+        "original_material": "res://scenes/environment/Ocean.tscn::ShaderMaterial_sqy22",
+        "original_shader": "res://scripts/open_water.gdshader"
+      },
+      {
+        "candidate_shader": "cliff_surface.gdshader",
+        "original_material": "res://materials/cliff.tres",
+        "original_shader": "res://scripts/cliff_surface.gdshader"
+      },
+      {
+        "candidate_shader": "ship_surface.gdshader",
+        "original_material": "res://materials/ship.tres",
+        "original_shader": "res://scripts/ship_surface.gdshader"
+      },
+      {
+        "candidate_shader": "ship_surface.gdshader",
+        "original_material": "res://materials/flag.tres",
+        "original_shader": "res://scripts/ship_surface.gdshader"
+      }
+    ],
+    "moon_direction": [
+      -0.183916792273521,
+      0.379828155040741,
+      -0.906589865684509
+    ],
+    "native_sky_assets": [
+      {
+        "asset": "cloud_bank_0",
+        "position": [
+          -3250.0,
+          450.0,
+          -2900.0
+        ],
+        "scale": 2.1
+      },
+      {
+        "asset": "cloud_bank_1",
+        "position": [
+          -2500.0,
+          340.0,
+          -3550.0
+        ],
+        "scale": 2.0
+      },
+      {
+        "asset": "cloud_bank_2",
+        "position": [
+          -1700.0,
+          520.0,
+          -3200.0
+        ],
+        "scale": 2.7
+      },
+      {
+        "asset": "cloud_bank_2",
+        "position": [
+          -3850.0,
+          430.0,
+          -4550.0
+        ],
+        "scale": 2.4
+      },
+      {
+        "asset": "cloud_bank_1",
+        "position": [
+          -1250.0,
+          630.0,
+          -5050.0
+        ],
+        "scale": 3.1
+      },
+      {
+        "asset": "cloud_bank_0",
+        "position": [
+          -2500.0,
+          500.0,
+          -6350.0
+        ],
+        "scale": 3.2
+      },
+      {
+        "asset": "cloud_bank_0",
+        "position": [
+          -1950.0,
+          250.0,
+          -2650.0
+        ],
+        "scale": 1.3
+      },
+      {
+        "asset": "moon",
+        "position": [
+          -3933.2509765625,
+          3478.45336914063,
+          -9791.30859375
+        ],
+        "radius_m": 330.0,
+        "scope": "Fixed world position near9000m; angular direction matches reference-camera moon light, finite-distance approximation during flight."
+      }
+    ],
+    "night": true,
+    "scope": "Temporary actual shader, scene light and sky changes; no fullscreen tint. Streaming transitions and other weather states remain unimplemented.",
+    "unmapped_shader_paths": []
+  },
+  "footing_samples": [
+    {
+      "building": "Lighthouse_island_a",
+      "samples": [
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.09930419921875,
+          "position": [
+            -2357.88354492188,
+            29.5621032714844,
+            -1658.89685058594
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.030670166015625,
+          "position": [
+            -2356.89013671875,
+            29.5621032714844,
+            -1655.00671386719
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.5,
+          "position": [
+            -2355.89697265625,
+            29.5621032714844,
+            -1651.11645507813
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.0828857421875,
+          "position": [
+            -2353.99340820313,
+            29.5621032714844,
+            -1659.89013671875
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.5,
+          "position": [
+            -2353.0,
+            29.5621032714844,
+            -1656.0
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.472061157226563,
+          "position": [
+            -2352.00659179688,
+            29.5621032714844,
+            -1652.10986328125
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.5,
+          "position": [
+            -2350.10302734375,
+            29.5621032714844,
+            -1660.88354492188
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.5,
+          "position": [
+            -2349.10986328125,
+            29.5621032714844,
+            -1656.99328613281
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.469863891601563,
+          "position": [
+            -2348.11645507813,
+            29.5621032714844,
+            -1653.10314941406
+          ]
+        }
+      ],
+      "scope": "Bounding footprint 3x3 samples, not an all-surface contact proof."
+    },
+    {
+      "building": "Lighthouse_island_b",
+      "samples": [
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_b_2/island_b_Coast short olive grass/island_b_Coast short olive grass_col",
+          "gap_m": -0.605270385742188,
+          "position": [
+            -2703.50537109375,
+            21.1455078125,
+            -2206.466796875
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_b_2/island_b_Coast short olive grass/island_b_Coast short olive grass_col",
+          "gap_m": -0.495758056640625,
+          "position": [
+            -2703.98608398438,
+            21.1455078125,
+            -2202.48071289063
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_b_2/island_b_Coast short olive grass/island_b_Coast short olive grass_col",
+          "gap_m": -0.4842529296875,
+          "position": [
+            -2704.466796875,
+            21.1455078125,
+            -2198.49462890625
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_b_2/island_b_Coast short olive grass/island_b_Coast short olive grass_col",
+          "gap_m": -0.5640869140625,
+          "position": [
+            -2699.51928710938,
+            21.1455078125,
+            -2205.98608398438
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_b_2/island_b_Coast short olive grass/island_b_Coast short olive grass_col",
+          "gap_m": -0.5,
+          "position": [
+            -2700.0,
+            21.1455078125,
+            -2202.0
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_b_2/island_b_Coast short olive grass/island_b_Coast short olive grass_col",
+          "gap_m": -0.488418579101563,
+          "position": [
+            -2700.48071289063,
+            21.1455078125,
+            -2198.01391601563
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_b_2/island_b_Coast short olive grass/island_b_Coast short olive grass_col",
+          "gap_m": -0.499984741210938,
+          "position": [
+            -2695.533203125,
+            21.1455078125,
+            -2205.50537109375
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_b_2/island_b_Coast short olive grass/island_b_Coast short olive grass_col",
+          "gap_m": -0.5,
+          "position": [
+            -2696.01391601563,
+            21.1455078125,
+            -2201.51928710938
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_b_2/island_b_Coast short olive grass/island_b_Coast short olive grass_col",
+          "gap_m": -0.436203002929688,
+          "position": [
+            -2696.49462890625,
+            21.1455078125,
+            -2197.533203125
+          ]
+        }
+      ],
+      "scope": "Bounding footprint 3x3 samples, not an all-surface contact proof."
+    },
+    {
+      "building": "Lighthouse_island_c",
+      "samples": [
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.500823974609375,
+          "position": [
+            -3053.39575195313,
+            17.4855194091797,
+            -2654.59399414063
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.499984741210938,
+          "position": [
+            -3052.99487304688,
+            17.4855194091797,
+            -2650.59912109375
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.5,
+          "position": [
+            -3052.59399414063,
+            17.4855194091797,
+            -2646.60424804688
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.499984741210938,
+          "position": [
+            -3049.40087890625,
+            17.4855194091797,
+            -2654.99487304688
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.5,
+          "position": [
+            -3049.0,
+            17.4855194091797,
+            -2651.0
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.499984741210938,
+          "position": [
+            -3048.59912109375,
+            17.4855194091797,
+            -2647.00512695313
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.450393676757813,
+          "position": [
+            -3045.40600585938,
+            17.4855194091797,
+            -2655.39575195313
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.499984741210938,
+          "position": [
+            -3045.00512695313,
+            17.4855194091797,
+            -2651.40087890625
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.433273315429688,
+          "position": [
+            -3044.60424804688,
+            17.4855194091797,
+            -2647.40600585938
+          ]
+        }
+      ],
+      "scope": "Bounding footprint 3x3 samples, not an all-surface contact proof."
+    },
+    {
+      "building": "Lighthouse_island_d",
+      "samples": [
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.500869750976563,
+          "position": [
+            -2345.29638671875,
+            17.4854736328125,
+            -1812.14172363281
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.500030517578125,
+          "position": [
+            -2342.86645507813,
+            17.4854736328125,
+            -1808.94543457031
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.500045776367188,
+          "position": [
+            -2340.4365234375,
+            17.4854736328125,
+            -1805.74914550781
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.500030517578125,
+          "position": [
+            -2342.10009765625,
+            17.4854736328125,
+            -1814.57153320313
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.5,
+          "position": [
+            -2339.67016601563,
+            17.4854736328125,
+            -1811.37524414063
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.500030517578125,
+          "position": [
+            -2337.240234375,
+            17.4854736328125,
+            -1808.17895507813
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.450393676757813,
+          "position": [
+            -2338.90380859375,
+            17.4854736328125,
+            -1817.00134277344
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.500030517578125,
+          "position": [
+            -2336.47387695313,
+            17.4854736328125,
+            -1813.80505371094
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.43328857421875,
+          "position": [
+            -2334.0439453125,
+            17.4854736328125,
+            -1810.60876464844
+          ]
+        }
+      ],
+      "scope": "Bounding footprint 3x3 samples, not an all-surface contact proof."
+    },
+    {
+      "building": "keeper_house_21",
+      "samples": [
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.440977096557617,
+          "position": [
+            -2346.89916992188,
+            15.993989944458,
+            -1794.21081542969
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.463224411010742,
+          "position": [
+            -2345.42700195313,
+            15.993989944458,
+            -1790.72924804688
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.401090621948242,
+          "position": [
+            -2343.955078125,
+            15.993989944458,
+            -1787.24768066406
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.454923629760742,
+          "position": [
+            -2344.38452148438,
+            15.993989944458,
+            -1795.27392578125
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.454999923706055,
+          "position": [
+            -2342.91259765625,
+            15.993989944458,
+            -1791.79235839844
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.455076217651367,
+          "position": [
+            -2341.44067382813,
+            15.993989944458,
+            -1788.31079101563
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.45509147644043,
+          "position": [
+            -2341.8701171875,
+            15.993989944458,
+            -1796.33703613281
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.455121994018555,
+          "position": [
+            -2340.39819335938,
+            15.993989944458,
+            -1792.85546875
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.45979118347168,
+          "position": [
+            -2338.92602539063,
+            15.993989944458,
+            -1789.37390136719
+          ]
+        }
+      ],
+      "scope": "Bounding footprint 3x3 samples, not an all-surface contact proof."
+    },
+    {
+      "building": "keeper_house_22",
+      "samples": [
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.633596420288086,
+          "position": [
+            -2375.89990234375,
+            21.6585025787354,
+            -1653.40002441406
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.577245712280273,
+          "position": [
+            -2375.89990234375,
+            21.6585025787354,
+            -1648.0
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.632711410522461,
+          "position": [
+            -2375.89990234375,
+            21.6585025787354,
+            -1642.59997558594
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.649999618530273,
+          "position": [
+            -2372.0,
+            21.6585025787354,
+            -1653.40002441406
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.649999618530273,
+          "position": [
+            -2372.0,
+            21.6585025787354,
+            -1648.0
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.650014877319336,
+          "position": [
+            -2372.0,
+            21.6585025787354,
+            -1642.59997558594
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.649999618530273,
+          "position": [
+            -2368.10009765625,
+            21.6585025787354,
+            -1653.40002441406
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.650396347045898,
+          "position": [
+            -2368.10009765625,
+            21.6585025787354,
+            -1648.0
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.692007064819336,
+          "position": [
+            -2368.10009765625,
+            21.6585025787354,
+            -1642.59997558594
+          ]
+        }
+      ],
+      "scope": "Bounding footprint 3x3 samples, not an all-surface contact proof."
+    },
+    {
+      "building": "keeper_house_23",
+      "samples": [
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.552530288696289,
+          "position": [
+            -2333.591796875,
+            26.9612789154053,
+            -1649.03381347656
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.624383926391602,
+          "position": [
+            -2334.27783203125,
+            26.9612789154053,
+            -1644.49536132813
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.552408218383789,
+          "position": [
+            -2334.96362304688,
+            26.9612789154053,
+            -1639.95690917969
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.552515029907227,
+          "position": [
+            -2330.31396484375,
+            26.9612789154053,
+            -1648.53845214844
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.552499771118164,
+          "position": [
+            -2331.0,
+            26.9612789154053,
+            -1644.0
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.552530288696289,
+          "position": [
+            -2331.68603515625,
+            26.9612789154053,
+            -1639.46154785156
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.552499771118164,
+          "position": [
+            -2327.03637695313,
+            26.9612789154053,
+            -1648.04309082031
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.552499771118164,
+          "position": [
+            -2327.72216796875,
+            26.9612789154053,
+            -1643.50463867188
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.552515029907227,
+          "position": [
+            -2328.408203125,
+            26.9612789154053,
+            -1638.96618652344
+          ]
+        }
+      ],
+      "scope": "Bounding footprint 3x3 samples, not an all-surface contact proof."
+    },
+    {
+      "building": "keeper_house_24",
+      "samples": [
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_b_2/island_b_Coast short olive grass/island_b_Coast short olive grass_col",
+          "gap_m": -0.465740203857422,
+          "position": [
+            -2718.45532226563,
+            16.7464027404785,
+            -2201.05688476563
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_b_2/island_b_Coast short olive grass/island_b_Coast short olive grass_col",
+          "gap_m": -0.458812713623047,
+          "position": [
+            -2718.11010742188,
+            16.7464027404785,
+            -2196.75073242188
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_b_2/island_b_Coast short olive grass/island_b_Coast short olive grass_col",
+          "gap_m": -0.436412811279297,
+          "position": [
+            -2717.76489257813,
+            16.7464027404785,
+            -2192.44458007813
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_b_2/island_b_Coast short olive grass/island_b_Coast short olive grass_col",
+          "gap_m": -0.520000457763672,
+          "position": [
+            -2715.34521484375,
+            16.7464027404785,
+            -2201.30615234375
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_b_2/island_b_Coast short olive grass/island_b_Coast short olive grass_col",
+          "gap_m": -0.520000457763672,
+          "position": [
+            -2715.0,
+            16.7464027404785,
+            -2197.0
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_b_2/island_b_Coast short olive grass/island_b_Coast short olive grass_col",
+          "gap_m": -0.520000457763672,
+          "position": [
+            -2714.65478515625,
+            16.7464027404785,
+            -2192.69384765625
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_b_2/island_b_Coast short olive grass/island_b_Coast short olive grass_col",
+          "gap_m": -0.825740814208984,
+          "position": [
+            -2712.23510742188,
+            16.7464027404785,
+            -2201.55541992188
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_b_2/island_b_Coast short olive grass/island_b_Coast short olive grass_col",
+          "gap_m": -0.697261810302734,
+          "position": [
+            -2711.88989257813,
+            16.7464027404785,
+            -2197.24926757813
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_b_2/island_b_Coast short olive grass/island_b_Coast short olive grass_col",
+          "gap_m": -0.530956268310547,
+          "position": [
+            -2711.54467773438,
+            16.7464027404785,
+            -2192.94311523438
+          ]
+        }
+      ],
+      "scope": "Bounding footprint 3x3 samples, not an all-surface contact proof."
+    },
+    {
+      "building": "keeper_house_25",
+      "samples": [
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.440977096557617,
+          "position": [
+            -3064.13452148438,
+            15.993989944458,
+            -2640.1455078125
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.463224411010742,
+          "position": [
+            -3064.69946289063,
+            15.993989944458,
+            -2636.40795898438
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.401090621948242,
+          "position": [
+            -3065.26416015625,
+            15.993989944458,
+            -2632.67041015625
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.454923629760742,
+          "position": [
+            -3061.43505859375,
+            15.993989944458,
+            -2639.73754882813
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.454999923706055,
+          "position": [
+            -3062.0,
+            15.993989944458,
+            -2636.0
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.455076217651367,
+          "position": [
+            -3062.56494140625,
+            15.993989944458,
+            -2632.26245117188
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.45509147644043,
+          "position": [
+            -3058.73583984375,
+            15.993989944458,
+            -2639.32958984375
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.455121994018555,
+          "position": [
+            -3059.30053710938,
+            15.993989944458,
+            -2635.59204101563
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.45979118347168,
+          "position": [
+            -3059.86547851563,
+            15.993989944458,
+            -2631.8544921875
+          ]
+        }
+      ],
+      "scope": "Bounding footprint 3x3 samples, not an all-surface contact proof."
+    }
+  ],
+  "harbor_study": {
+    "assets": [
+      {
+        "asset": "keeper_house",
+        "node": "Harbor_keeper_house_0",
+        "position": [
+          -2185.14013671875,
+          20.2431755065918,
+          -2080.0
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_lantern",
+        "node": "Harbor_harbor_lantern_1",
+        "position": [
+          -2187.53247070313,
+          20.2828063964844,
+          -2072.61572265625
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "keeper_house",
+        "node": "Harbor_keeper_house_2",
+        "position": [
+          -2206.09716796875,
+          19.0994071960449,
+          -2110.0
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_lantern",
+        "node": "Harbor_harbor_lantern_3",
+        "position": [
+          -2208.48950195313,
+          19.1225280761719,
+          -2102.61572265625
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "keeper_house",
+        "node": "Harbor_keeper_house_4",
+        "position": [
+          -2303.71435546875,
+          20.2055168151855,
+          -2230.0
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_lantern",
+        "node": "Harbor_harbor_lantern_5",
+        "position": [
+          -2306.10668945313,
+          19.9263000488281,
+          -2222.61572265625
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "keeper_house",
+        "node": "Harbor_keeper_house_6",
+        "position": [
+          -2349.71533203125,
+          15.0199089050293,
+          -2300.0
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_lantern",
+        "node": "Harbor_harbor_lantern_7",
+        "position": [
+          -2352.10766601563,
+          14.999755859375,
+          -2292.61572265625
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "keeper_house",
+        "node": "Harbor_keeper_house_8",
+        "position": [
+          -2329.71533203125,
+          15.0199089050293,
+          -2300.0
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_lantern",
+        "node": "Harbor_harbor_lantern_9",
+        "position": [
+          -2332.10766601563,
+          14.999755859375,
+          -2292.61572265625
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "keeper_house",
+        "node": "Harbor_keeper_house_10",
+        "position": [
+          -2372.71337890625,
+          15.0199394226074,
+          -2335.0
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_lantern",
+        "node": "Harbor_harbor_lantern_11",
+        "position": [
+          -2375.10571289063,
+          14.9024047851563,
+          -2327.61572265625
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "keeper_house",
+        "node": "Harbor_keeper_house_12",
+        "position": [
+          -2352.71337890625,
+          15.0199394226074,
+          -2335.0
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_lantern",
+        "node": "Harbor_harbor_lantern_13",
+        "position": [
+          -2355.10571289063,
+          14.9999389648438,
+          -2327.61572265625
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "keeper_house",
+        "node": "Harbor_keeper_house_14",
+        "position": [
+          -2441.71728515625,
+          15.3935050964355,
+          -2440.0
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_lantern",
+        "node": "Harbor_harbor_lantern_15",
+        "position": [
+          -2444.10961914063,
+          15.0969543457031,
+          -2432.61572265625
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "keeper_house",
+        "node": "Harbor_keeper_house_16",
+        "position": [
+          -2421.71728515625,
+          15.3364677429199,
+          -2440.0
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_lantern",
+        "node": "Harbor_harbor_lantern_17",
+        "position": [
+          -2424.10961914063,
+          15.3325500488281,
+          -2432.61572265625
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "keeper_house",
+        "node": "Harbor_keeper_house_18",
+        "position": [
+          -2461.43408203125,
+          15.0863761901855,
+          -2470.0
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_lantern",
+        "node": "Harbor_harbor_lantern_19",
+        "position": [
+          -2463.82641601563,
+          14.8053588867188,
+          -2462.61572265625
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "keeper_house",
+        "node": "Harbor_keeper_house_20",
+        "position": [
+          -2441.43408203125,
+          15.1409111022949,
+          -2470.0
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_lantern",
+        "node": "Harbor_harbor_lantern_21",
+        "position": [
+          -2443.82641601563,
+          15.1287841796875,
+          -2462.61572265625
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "keeper_house",
+        "node": "Harbor_keeper_house_22",
+        "position": [
+          -2481.14111328125,
+          15.0199089050293,
+          -2500.0
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_lantern",
+        "node": "Harbor_harbor_lantern_23",
+        "position": [
+          -2483.53344726563,
+          14.9054565429688,
+          -2492.61572265625
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "keeper_house",
+        "node": "Harbor_keeper_house_24",
+        "position": [
+          -2461.14111328125,
+          15.064769744873,
+          -2500.0
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_lantern",
+        "node": "Harbor_harbor_lantern_25",
+        "position": [
+          -2463.53344726563,
+          14.9998779296875,
+          -2492.61572265625
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "keeper_house",
+        "node": "Harbor_keeper_house_26",
+        "position": [
+          -2500.85302734375,
+          15.0199089050293,
+          -2530.0
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_lantern",
+        "node": "Harbor_harbor_lantern_27",
+        "position": [
+          -2503.24536132813,
+          14.9999084472656,
+          -2522.61572265625
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "keeper_house",
+        "node": "Harbor_keeper_house_28",
+        "position": [
+          -2480.85302734375,
+          15.0199394226074,
+          -2530.0
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_lantern",
+        "node": "Harbor_harbor_lantern_29",
+        "position": [
+          -2483.24536132813,
+          14.9999084472656,
+          -2522.61572265625
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "keeper_house",
+        "node": "Harbor_keeper_house_30",
+        "position": [
+          -2540.28662109375,
+          15.0199394226074,
+          -2590.0
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_lantern",
+        "node": "Harbor_harbor_lantern_31",
+        "position": [
+          -2542.67895507813,
+          14.7605895996094,
+          -2582.61572265625
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "keeper_house",
+        "node": "Harbor_keeper_house_32",
+        "position": [
+          -2520.28662109375,
+          15.0199394226074,
+          -2590.0
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_lantern",
+        "node": "Harbor_harbor_lantern_33",
+        "position": [
+          -2522.67895507813,
+          14.9999084472656,
+          -2582.61572265625
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "keeper_house",
+        "node": "Harbor_keeper_house_34",
+        "position": [
+          -2566.57568359375,
+          15.0198783874512,
+          -2630.0
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_lantern",
+        "node": "Harbor_harbor_lantern_35",
+        "position": [
+          -2568.96801757813,
+          14.9319763183594,
+          -2622.61572265625
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "keeper_house",
+        "node": "Harbor_keeper_house_36",
+        "position": [
+          -2546.57568359375,
+          15.0199089050293,
+          -2630.0
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_lantern",
+        "node": "Harbor_harbor_lantern_37",
+        "position": [
+          -2548.96801757813,
+          14.9998779296875,
+          -2622.61572265625
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "keeper_house",
+        "node": "Harbor_keeper_house_38",
+        "position": [
+          -2592.86474609375,
+          15.0199089050293,
+          -2670.0
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_lantern",
+        "node": "Harbor_harbor_lantern_39",
+        "position": [
+          -2595.25708007813,
+          14.9999084472656,
+          -2662.61572265625
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "keeper_house",
+        "node": "Harbor_keeper_house_40",
+        "position": [
+          -2572.86474609375,
+          15.0199089050293,
+          -2670.0
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_lantern",
+        "node": "Harbor_harbor_lantern_41",
+        "position": [
+          -2575.25708007813,
+          14.9999084472656,
+          -2662.61572265625
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "keeper_house",
+        "node": "Harbor_keeper_house_42",
+        "position": [
+          -2619.14404296875,
+          15.0199089050293,
+          -2710.0
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_lantern",
+        "node": "Harbor_harbor_lantern_43",
+        "position": [
+          -2621.53637695313,
+          14.7059020996094,
+          -2702.61572265625
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "keeper_house",
+        "node": "Harbor_keeper_house_44",
+        "position": [
+          -2599.14404296875,
+          15.0199699401855,
+          -2710.0
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_lantern",
+        "node": "Harbor_harbor_lantern_45",
+        "position": [
+          -2601.53637695313,
+          14.9999694824219,
+          -2702.61572265625
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "timber_pier",
+        "node": "Harbor_timber_pier_46",
+        "position": [
+          -2298.66821289063,
+          0.0,
+          -2105.54370117188
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "pier_landing",
+        "node": "Harbor_pier_landing_47",
+        "position": [
+          -2307.8037109375,
+          0.0,
+          -2099.41650390625
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "repair_awning",
+        "node": "Harbor_repair_awning_48",
+        "position": [
+          -2308.72290039063,
+          2.34999990463257,
+          -2100.78686523438
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_cargo",
+        "node": "Harbor_harbor_cargo_49",
+        "position": [
+          -2306.06323242188,
+          2.34999990463257,
+          -2096.91137695313
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_lantern",
+        "node": "Harbor_harbor_lantern_50",
+        "position": [
+          -2312.609375,
+          2.34999990463257,
+          -2102.09350585938
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_lantern",
+        "node": "Harbor_harbor_lantern_51",
+        "position": [
+          -2307.15063476563,
+          2.34999990463257,
+          -2093.95458984375
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_lantern",
+        "node": "Harbor_harbor_lantern_52",
+        "position": [
+          -2295.93408203125,
+          2.34999990463257,
+          -2109.7255859375
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_lantern",
+        "node": "Harbor_harbor_lantern_53",
+        "position": [
+          -2293.76171875,
+          2.34999990463257,
+          -2106.48657226563
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "moored_fishing_boat",
+        "node": "Harbor_moored_fishing_boat_54",
+        "position": [
+          -2296.828125,
+          0.0199999995529652,
+          -2102.08203125
+        ],
+        "yaw": -0.9
+      },
+      {
+        "asset": "timber_pier",
+        "node": "Harbor_timber_pier_55",
+        "position": [
+          -2400.53051757813,
+          0.0,
+          -2260.54370117188
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "pier_landing",
+        "node": "Harbor_pier_landing_56",
+        "position": [
+          -2409.666015625,
+          0.0,
+          -2254.41650390625
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "repair_awning",
+        "node": "Harbor_repair_awning_57",
+        "position": [
+          -2410.58520507813,
+          2.34999990463257,
+          -2255.78686523438
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_cargo",
+        "node": "Harbor_harbor_cargo_58",
+        "position": [
+          -2407.92553710938,
+          2.34999990463257,
+          -2251.91137695313
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_lantern",
+        "node": "Harbor_harbor_lantern_59",
+        "position": [
+          -2414.4716796875,
+          2.34999990463257,
+          -2257.09350585938
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_lantern",
+        "node": "Harbor_harbor_lantern_60",
+        "position": [
+          -2409.01293945313,
+          2.34999990463257,
+          -2248.95458984375
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_lantern",
+        "node": "Harbor_harbor_lantern_61",
+        "position": [
+          -2397.79638671875,
+          2.34999990463257,
+          -2264.7255859375
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_lantern",
+        "node": "Harbor_harbor_lantern_62",
+        "position": [
+          -2395.6240234375,
+          2.34999990463257,
+          -2261.48657226563
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "moored_fishing_boat",
+        "node": "Harbor_moored_fishing_boat_63",
+        "position": [
+          -2398.6904296875,
+          0.0199999995529652,
+          -2257.08203125
+        ],
+        "yaw": -0.9
+      },
+      {
+        "asset": "timber_pier",
+        "node": "Harbor_timber_pier_64",
+        "position": [
+          -2554.95874023438,
+          0.0,
+          -2495.54370117188
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "pier_landing",
+        "node": "Harbor_pier_landing_65",
+        "position": [
+          -2564.09423828125,
+          0.0,
+          -2489.41650390625
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "repair_awning",
+        "node": "Harbor_repair_awning_66",
+        "position": [
+          -2565.01342773438,
+          2.34999990463257,
+          -2490.78686523438
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_cargo",
+        "node": "Harbor_harbor_cargo_67",
+        "position": [
+          -2562.35375976563,
+          2.34999990463257,
+          -2486.91137695313
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_lantern",
+        "node": "Harbor_harbor_lantern_68",
+        "position": [
+          -2568.89990234375,
+          2.34999990463257,
+          -2492.09350585938
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_lantern",
+        "node": "Harbor_harbor_lantern_69",
+        "position": [
+          -2563.44116210938,
+          2.34999990463257,
+          -2483.95458984375
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_lantern",
+        "node": "Harbor_harbor_lantern_70",
+        "position": [
+          -2552.224609375,
+          2.34999990463257,
+          -2499.7255859375
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_lantern",
+        "node": "Harbor_harbor_lantern_71",
+        "position": [
+          -2550.05224609375,
+          2.34999990463257,
+          -2496.48657226563
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "moored_fishing_boat",
+        "node": "Harbor_moored_fishing_boat_72",
+        "position": [
+          -2553.11865234375,
+          0.0199999995529652,
+          -2492.08203125
+        ],
+        "yaw": -0.9
+      },
+      {
+        "asset": "timber_pier",
+        "node": "Harbor_timber_pier_73",
+        "position": [
+          -2666.68237304688,
+          0.0,
+          -2665.54370117188
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "pier_landing",
+        "node": "Harbor_pier_landing_74",
+        "position": [
+          -2675.81787109375,
+          0.0,
+          -2659.41650390625
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "repair_awning",
+        "node": "Harbor_repair_awning_75",
+        "position": [
+          -2676.73706054688,
+          2.34999990463257,
+          -2660.78686523438
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_cargo",
+        "node": "Harbor_harbor_cargo_76",
+        "position": [
+          -2674.07739257813,
+          2.34999990463257,
+          -2656.91137695313
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_lantern",
+        "node": "Harbor_harbor_lantern_77",
+        "position": [
+          -2680.62353515625,
+          2.34999990463257,
+          -2662.09350585938
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_lantern",
+        "node": "Harbor_harbor_lantern_78",
+        "position": [
+          -2675.16479492188,
+          2.34999990463257,
+          -2653.95458984375
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_lantern",
+        "node": "Harbor_harbor_lantern_79",
+        "position": [
+          -2663.9482421875,
+          2.34999990463257,
+          -2669.7255859375
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "harbor_lantern",
+        "node": "Harbor_harbor_lantern_80",
+        "position": [
+          -2661.77587890625,
+          2.34999990463257,
+          -2666.48657226563
+        ],
+        "yaw": -0.98
+      },
+      {
+        "asset": "moored_fishing_boat",
+        "node": "Harbor_moored_fishing_boat_81",
+        "position": [
+          -2664.84228515625,
+          0.0199999995529652,
+          -2662.08203125
+        ],
+        "yaw": -0.9
+      }
+    ],
+    "house_footings": [
+      {
+        "node": "Harbor_keeper_house_0",
+        "samples": [
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+            "gap_m": -0.236139297485352,
+            "position": [
+              -2182.82788085938,
+              19.5931758880615,
+              -2086.24682617188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+            "gap_m": -0.386407852172852,
+            "position": [
+              -2187.3125,
+              19.5931758880615,
+              -2083.23901367188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+            "gap_m": -0.493524551391602,
+            "position": [
+              -2191.79711914063,
+              19.5931758880615,
+              -2080.23095703125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+            "gap_m": -0.332635879516602,
+            "position": [
+              -2180.65551757813,
+              19.5931758880615,
+              -2083.0078125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+            "gap_m": -0.446405410766602,
+            "position": [
+              -2185.14013671875,
+              19.5931758880615,
+              -2080.0
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+            "gap_m": -0.472742080688477,
+            "position": [
+              -2189.62475585938,
+              19.5931758880615,
+              -2076.9921875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+            "gap_m": -0.399316787719727,
+            "position": [
+              -2178.48315429688,
+              19.5931758880615,
+              -2079.76904296875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+            "gap_m": -0.482873916625977,
+            "position": [
+              -2182.9677734375,
+              19.5931758880615,
+              -2076.76098632813
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2187.45239257813,
+              19.5931758880615,
+              -2073.75317382813
+            ]
+          }
+        ]
+      },
+      {
+        "node": "Harbor_keeper_house_2",
+        "samples": [
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+            "gap_m": -0.238275527954102,
+            "position": [
+              -2203.78491210938,
+              18.4494075775146,
+              -2116.24682617188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+            "gap_m": -0.298730850219727,
+            "position": [
+              -2208.26953125,
+              18.4494075775146,
+              -2113.23901367188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+            "gap_m": -0.389642715454102,
+            "position": [
+              -2212.75415039063,
+              18.4494075775146,
+              -2110.23095703125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+            "gap_m": -0.372034072875977,
+            "position": [
+              -2201.61254882813,
+              18.4494075775146,
+              -2113.0078125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+            "gap_m": -0.432489395141602,
+            "position": [
+              -2206.09716796875,
+              18.4494075775146,
+              -2110.0
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+            "gap_m": -0.492944717407227,
+            "position": [
+              -2210.58178710938,
+              18.4494075775146,
+              -2106.9921875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+            "gap_m": -0.505792617797852,
+            "position": [
+              -2199.44018554688,
+              18.4494075775146,
+              -2109.76904296875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+            "gap_m": -0.566247940063477,
+            "position": [
+              -2203.9248046875,
+              18.4494075775146,
+              -2106.76098632813
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2208.40942382813,
+              18.4494075775146,
+              -2103.75317382813
+            ]
+          }
+        ]
+      },
+      {
+        "node": "Harbor_keeper_house_4",
+        "samples": [
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+            "gap_m": -0.209070205688477,
+            "position": [
+              -2301.40209960938,
+              19.5555171966553,
+              -2236.24682617188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision",
+            "gap_m": -0.498498916625977,
+            "position": [
+              -2305.88671875,
+              19.5555171966553,
+              -2233.23901367188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision",
+            "gap_m": -0.400537490844727,
+            "position": [
+              -2310.37133789063,
+              19.5555171966553,
+              -2230.23095703125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+            "gap_m": -0.226739883422852,
+            "position": [
+              -2299.22973632813,
+              19.5555171966553,
+              -2233.0078125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2303.71435546875,
+              19.5555171966553,
+              -2230.0
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision",
+            "gap_m": -0.343530654907227,
+            "position": [
+              -2308.19897460938,
+              19.5555171966553,
+              -2226.9921875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+            "gap_m": -0.216608047485352,
+            "position": [
+              -2297.05737304688,
+              19.5555171966553,
+              -2229.76904296875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+            "gap_m": -0.502557754516602,
+            "position": [
+              -2301.5419921875,
+              19.5555171966553,
+              -2226.76098632813
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision",
+            "gap_m": -0.398462295532227,
+            "position": [
+              -2306.02661132813,
+              19.5555171966553,
+              -2223.75317382813
+            ]
+          }
+        ]
+      },
+      {
+        "node": "Harbor_keeper_house_6",
+        "samples": [
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2347.40307617188,
+              14.369909286499,
+              -2306.24682617188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision",
+            "gap_m": -0.629846572875977,
+            "position": [
+              -2351.8876953125,
+              14.369909286499,
+              -2303.23901367188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision",
+            "gap_m": -0.497705459594727,
+            "position": [
+              -2356.37231445313,
+              14.369909286499,
+              -2300.23095703125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision",
+            "gap_m": -0.629877090454102,
+            "position": [
+              -2345.23071289063,
+              14.369909286499,
+              -2303.0078125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision",
+            "gap_m": -0.629846572875977,
+            "position": [
+              -2349.71533203125,
+              14.369909286499,
+              -2300.0
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision",
+            "gap_m": -0.566156387329102,
+            "position": [
+              -2354.19995117188,
+              14.369909286499,
+              -2296.9921875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision",
+            "gap_m": -0.629877090454102,
+            "position": [
+              -2343.05834960938,
+              14.369909286499,
+              -2299.76904296875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision",
+            "gap_m": -0.629846572875977,
+            "position": [
+              -2347.54296875,
+              14.369909286499,
+              -2296.76098632813
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision",
+            "gap_m": -0.629846572875977,
+            "position": [
+              -2352.02758789063,
+              14.369909286499,
+              -2293.75317382813
+            ]
+          }
+        ]
+      },
+      {
+        "node": "Harbor_keeper_house_8",
+        "samples": [
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2327.40307617188,
+              14.369909286499,
+              -2306.24682617188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision",
+            "gap_m": -0.629877090454102,
+            "position": [
+              -2331.8876953125,
+              14.369909286499,
+              -2303.23901367188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision",
+            "gap_m": -0.629877090454102,
+            "position": [
+              -2336.37231445313,
+              14.369909286499,
+              -2300.23095703125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision",
+            "gap_m": -0.629877090454102,
+            "position": [
+              -2325.23071289063,
+              14.369909286499,
+              -2303.0078125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision",
+            "gap_m": -0.629877090454102,
+            "position": [
+              -2329.71533203125,
+              14.369909286499,
+              -2300.0
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision",
+            "gap_m": -0.629877090454102,
+            "position": [
+              -2334.19995117188,
+              14.369909286499,
+              -2296.9921875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision",
+            "gap_m": -0.629877090454102,
+            "position": [
+              -2323.05834960938,
+              14.369909286499,
+              -2299.76904296875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision",
+            "gap_m": -0.629877090454102,
+            "position": [
+              -2327.54296875,
+              14.369909286499,
+              -2296.76098632813
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision",
+            "gap_m": -0.629846572875977,
+            "position": [
+              -2332.02758789063,
+              14.369909286499,
+              -2293.75317382813
+            ]
+          }
+        ]
+      },
+      {
+        "node": "Harbor_keeper_house_10",
+        "samples": [
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2370.40112304688,
+              14.3699398040771,
+              -2341.24682617188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2374.8857421875,
+              14.3699398040771,
+              -2338.23901367188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2379.37036132813,
+              14.3699398040771,
+              -2335.23095703125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2368.22875976563,
+              14.3699398040771,
+              -2338.0078125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2372.71337890625,
+              14.3699398040771,
+              -2335.0
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.607446670532227,
+            "position": [
+              -2377.19799804688,
+              14.3699398040771,
+              -2331.9921875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2366.05639648438,
+              14.3699398040771,
+              -2334.76904296875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2370.541015625,
+              14.3699398040771,
+              -2331.76098632813
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.563928604125977,
+            "position": [
+              -2375.02563476563,
+              14.3699398040771,
+              -2328.75317382813
+            ]
+          }
+        ]
+      },
+      {
+        "node": "Harbor_keeper_house_12",
+        "samples": [
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629968643188477,
+            "position": [
+              -2350.40112304688,
+              14.3699398040771,
+              -2341.24682617188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2354.8857421875,
+              14.3699398040771,
+              -2338.23901367188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2359.37036132813,
+              14.3699398040771,
+              -2335.23095703125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629968643188477,
+            "position": [
+              -2348.22875976563,
+              14.3699398040771,
+              -2338.0078125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2352.71337890625,
+              14.3699398040771,
+              -2335.0
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2357.19799804688,
+              14.3699398040771,
+              -2331.9921875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629968643188477,
+            "position": [
+              -2346.05639648438,
+              14.3699398040771,
+              -2334.76904296875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2350.541015625,
+              14.3699398040771,
+              -2331.76098632813
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2355.02563476563,
+              14.3699398040771,
+              -2328.75317382813
+            ]
+          }
+        ]
+      },
+      {
+        "node": "Harbor_keeper_house_14",
+        "samples": [
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.495782852172852,
+            "position": [
+              -2439.40502929688,
+              14.7435054779053,
+              -2446.24682617188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.554620742797852,
+            "position": [
+              -2443.8896484375,
+              14.7435054779053,
+              -2443.23901367188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.334131240844727,
+            "position": [
+              -2448.37426757813,
+              14.7435054779053,
+              -2440.23095703125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.533472061157227,
+            "position": [
+              -2437.23266601563,
+              14.7435054779053,
+              -2443.0078125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.592279434204102,
+            "position": [
+              -2441.71728515625,
+              14.7435054779053,
+              -2440.0
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.362512588500977,
+            "position": [
+              -2446.20190429688,
+              14.7435054779053,
+              -2436.9921875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.571191787719727,
+            "position": [
+              -2435.06030273438,
+              14.7435054779053,
+              -2439.76904296875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2439.544921875,
+              14.7435054779053,
+              -2436.76098632813
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.390924453735352,
+            "position": [
+              -2444.02954101563,
+              14.7435054779053,
+              -2433.75317382813
+            ]
+          }
+        ]
+      },
+      {
+        "node": "Harbor_keeper_house_16",
+        "samples": [
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.407739639282227,
+            "position": [
+              -2419.40502929688,
+              14.6864681243896,
+              -2446.24682617188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.502344131469727,
+            "position": [
+              -2423.8896484375,
+              14.6864681243896,
+              -2443.23901367188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.596887588500977,
+            "position": [
+              -2428.37426757813,
+              14.6864681243896,
+              -2440.23095703125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.424280166625977,
+            "position": [
+              -2417.23266601563,
+              14.6864681243896,
+              -2443.0078125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.518854141235352,
+            "position": [
+              -2421.71728515625,
+              14.6864681243896,
+              -2440.0
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.613458633422852,
+            "position": [
+              -2426.20190429688,
+              14.6864681243896,
+              -2436.9921875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.440851211547852,
+            "position": [
+              -2415.06030273438,
+              14.6864681243896,
+              -2439.76904296875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.535394668579102,
+            "position": [
+              -2419.544921875,
+              14.6864681243896,
+              -2436.76098632813
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2424.02954101563,
+              14.6864681243896,
+              -2433.75317382813
+            ]
+          }
+        ]
+      },
+      {
+        "node": "Harbor_keeper_house_18",
+        "samples": [
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.563501358032227,
+            "position": [
+              -2459.12182617188,
+              14.4363765716553,
+              -2476.24682617188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.563501358032227,
+            "position": [
+              -2463.6064453125,
+              14.4363765716553,
+              -2473.23901367188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.295892715454102,
+            "position": [
+              -2468.09106445313,
+              14.4363765716553,
+              -2470.23095703125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.591913223266602,
+            "position": [
+              -2456.94946289063,
+              14.4363765716553,
+              -2473.0078125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.596063613891602,
+            "position": [
+              -2461.43408203125,
+              14.4363765716553,
+              -2470.0
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.396905899047852,
+            "position": [
+              -2465.91870117188,
+              14.4363765716553,
+              -2466.9921875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.625879287719727,
+            "position": [
+              -2454.77709960938,
+              14.4363765716553,
+              -2469.76904296875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2459.26171875,
+              14.4363765716553,
+              -2466.76098632813
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.420892715454102,
+            "position": [
+              -2463.74633789063,
+              14.4363765716553,
+              -2463.75317382813
+            ]
+          }
+        ]
+      },
+      {
+        "node": "Harbor_keeper_house_20",
+        "samples": [
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.511957168579102,
+            "position": [
+              -2439.12182617188,
+              14.4909114837646,
+              -2476.24682617188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.568841934204102,
+            "position": [
+              -2443.6064453125,
+              14.4909114837646,
+              -2473.23901367188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.596033096313477,
+            "position": [
+              -2448.09106445313,
+              14.4909114837646,
+              -2470.23095703125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.514093399047852,
+            "position": [
+              -2436.94946289063,
+              14.4909114837646,
+              -2473.0078125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.571008682250977,
+            "position": [
+              -2441.43408203125,
+              14.4909114837646,
+              -2470.0
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.627893447875977,
+            "position": [
+              -2445.91870117188,
+              14.4909114837646,
+              -2466.9921875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.516199111938477,
+            "position": [
+              -2434.77709960938,
+              14.4909114837646,
+              -2469.76904296875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.573083877563477,
+            "position": [
+              -2439.26171875,
+              14.4909114837646,
+              -2466.76098632813
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2443.74633789063,
+              14.4909114837646,
+              -2463.75317382813
+            ]
+          }
+        ]
+      },
+      {
+        "node": "Harbor_keeper_house_22",
+        "samples": [
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2478.82885742188,
+              14.369909286499,
+              -2506.24682617188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2483.3134765625,
+              14.369909286499,
+              -2503.23901367188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2487.79809570313,
+              14.369909286499,
+              -2500.23095703125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2476.65649414063,
+              14.369909286499,
+              -2503.0078125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2481.14111328125,
+              14.369909286499,
+              -2500.0
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2485.62573242188,
+              14.369909286499,
+              -2496.9921875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2474.48413085938,
+              14.369909286499,
+              -2499.76904296875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2478.96875,
+              14.369909286499,
+              -2496.76098632813
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.628625869750977,
+            "position": [
+              -2483.45336914063,
+              14.369909286499,
+              -2493.75317382813
+            ]
+          }
+        ]
+      },
+      {
+        "node": "Harbor_keeper_house_24",
+        "samples": [
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2458.82885742188,
+              14.4147701263428,
+              -2506.24682617188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.585107803344727,
+            "position": [
+              -2463.3134765625,
+              14.4147701263428,
+              -2503.23901367188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.585138320922852,
+            "position": [
+              -2467.79809570313,
+              14.4147701263428,
+              -2500.23095703125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.601800918579102,
+            "position": [
+              -2456.65649414063,
+              14.4147701263428,
+              -2503.0078125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.585107803344727,
+            "position": [
+              -2461.14111328125,
+              14.4147701263428,
+              -2500.0
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.585138320922852,
+            "position": [
+              -2465.62573242188,
+              14.4147701263428,
+              -2496.9921875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.585168838500977,
+            "position": [
+              -2454.48413085938,
+              14.4147701263428,
+              -2499.76904296875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.585107803344727,
+            "position": [
+              -2458.96875,
+              14.4147701263428,
+              -2496.76098632813
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.585107803344727,
+            "position": [
+              -2463.45336914063,
+              14.4147701263428,
+              -2493.75317382813
+            ]
+          }
+        ]
+      },
+      {
+        "node": "Harbor_keeper_house_26",
+        "samples": [
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2498.54077148438,
+              14.369909286499,
+              -2536.24682617188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2503.025390625,
+              14.369909286499,
+              -2533.23901367188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2507.51000976563,
+              14.369909286499,
+              -2530.23095703125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2496.36840820313,
+              14.369909286499,
+              -2533.0078125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2500.85302734375,
+              14.369909286499,
+              -2530.0
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2505.33764648438,
+              14.369909286499,
+              -2526.9921875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2494.19604492188,
+              14.369909286499,
+              -2529.76904296875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2498.6806640625,
+              14.369909286499,
+              -2526.76098632813
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2503.16528320313,
+              14.369909286499,
+              -2523.75317382813
+            ]
+          }
+        ]
+      },
+      {
+        "node": "Harbor_keeper_house_28",
+        "samples": [
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629968643188477,
+            "position": [
+              -2478.54077148438,
+              14.3699398040771,
+              -2536.24682617188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2483.025390625,
+              14.3699398040771,
+              -2533.23901367188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629968643188477,
+            "position": [
+              -2487.51000976563,
+              14.3699398040771,
+              -2530.23095703125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629968643188477,
+            "position": [
+              -2476.36840820313,
+              14.3699398040771,
+              -2533.0078125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629968643188477,
+            "position": [
+              -2480.85302734375,
+              14.3699398040771,
+              -2530.0
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629968643188477,
+            "position": [
+              -2485.33764648438,
+              14.3699398040771,
+              -2526.9921875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629968643188477,
+            "position": [
+              -2474.19604492188,
+              14.3699398040771,
+              -2529.76904296875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629968643188477,
+            "position": [
+              -2478.6806640625,
+              14.3699398040771,
+              -2526.76098632813
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629968643188477,
+            "position": [
+              -2483.16528320313,
+              14.3699398040771,
+              -2523.75317382813
+            ]
+          }
+        ]
+      },
+      {
+        "node": "Harbor_keeper_house_30",
+        "samples": [
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2537.97436523438,
+              14.3699398040771,
+              -2596.24682617188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.623376846313477,
+            "position": [
+              -2542.458984375,
+              14.3699398040771,
+              -2593.23901367188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.605615615844727,
+            "position": [
+              -2546.94360351563,
+              14.3699398040771,
+              -2590.23095703125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2535.80200195313,
+              14.3699398040771,
+              -2593.0078125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629846572875977,
+            "position": [
+              -2540.28662109375,
+              14.3699398040771,
+              -2590.0
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.612085342407227,
+            "position": [
+              -2544.77124023438,
+              14.3699398040771,
+              -2586.9921875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2533.62963867188,
+              14.3699398040771,
+              -2589.76904296875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2538.1142578125,
+              14.3699398040771,
+              -2586.76098632813
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.524438858032227,
+            "position": [
+              -2542.59887695313,
+              14.3699398040771,
+              -2583.75317382813
+            ]
+          }
+        ]
+      },
+      {
+        "node": "Harbor_keeper_house_32",
+        "samples": [
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629968643188477,
+            "position": [
+              -2517.97436523438,
+              14.3699398040771,
+              -2596.24682617188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2522.458984375,
+              14.3699398040771,
+              -2593.23901367188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2526.94360351563,
+              14.3699398040771,
+              -2590.23095703125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629968643188477,
+            "position": [
+              -2515.80200195313,
+              14.3699398040771,
+              -2593.0078125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2520.28662109375,
+              14.3699398040771,
+              -2590.0
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2524.77124023438,
+              14.3699398040771,
+              -2586.9921875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629968643188477,
+            "position": [
+              -2513.62963867188,
+              14.3699398040771,
+              -2589.76904296875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2518.1142578125,
+              14.3699398040771,
+              -2586.76098632813
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629968643188477,
+            "position": [
+              -2522.59887695313,
+              14.3699398040771,
+              -2583.75317382813
+            ]
+          }
+        ]
+      },
+      {
+        "node": "Harbor_keeper_house_34",
+        "samples": [
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2564.26342773438,
+              14.3698787689209,
+              -2636.24682617188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.623651504516602,
+            "position": [
+              -2568.748046875,
+              14.3698787689209,
+              -2633.23901367188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.482355117797852,
+            "position": [
+              -2573.23266601563,
+              14.3698787689209,
+              -2630.23095703125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2562.09106445313,
+              14.3698787689209,
+              -2633.0078125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.615533828735352,
+            "position": [
+              -2566.57568359375,
+              14.3698787689209,
+              -2630.0
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.577142715454102,
+            "position": [
+              -2571.06030273438,
+              14.3698787689209,
+              -2626.9921875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2559.91870117188,
+              14.3698787689209,
+              -2629.76904296875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.607385635375977,
+            "position": [
+              -2564.4033203125,
+              14.3698787689209,
+              -2626.76098632813
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.568964004516602,
+            "position": [
+              -2568.88793945313,
+              14.3698787689209,
+              -2623.75317382813
+            ]
+          }
+        ]
+      },
+      {
+        "node": "Harbor_keeper_house_36",
+        "samples": [
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2544.26342773438,
+              14.369909286499,
+              -2636.24682617188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629968643188477,
+            "position": [
+              -2548.748046875,
+              14.369909286499,
+              -2633.23901367188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629968643188477,
+            "position": [
+              -2553.23266601563,
+              14.369909286499,
+              -2630.23095703125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2542.09106445313,
+              14.369909286499,
+              -2633.0078125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629968643188477,
+            "position": [
+              -2546.57568359375,
+              14.369909286499,
+              -2630.0
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629968643188477,
+            "position": [
+              -2551.06030273438,
+              14.369909286499,
+              -2626.9921875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2539.91870117188,
+              14.369909286499,
+              -2629.76904296875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2544.4033203125,
+              14.369909286499,
+              -2626.76098632813
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629968643188477,
+            "position": [
+              -2548.88793945313,
+              14.369909286499,
+              -2623.75317382813
+            ]
+          }
+        ]
+      },
+      {
+        "node": "Harbor_keeper_house_38",
+        "samples": [
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629968643188477,
+            "position": [
+              -2590.55249023438,
+              14.369909286499,
+              -2676.24682617188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629968643188477,
+            "position": [
+              -2595.037109375,
+              14.369909286499,
+              -2673.23901367188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629968643188477,
+            "position": [
+              -2599.52172851563,
+              14.369909286499,
+              -2670.23095703125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2588.38012695313,
+              14.369909286499,
+              -2673.0078125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2592.86474609375,
+              14.369909286499,
+              -2670.0
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629968643188477,
+            "position": [
+              -2597.34936523438,
+              14.369909286499,
+              -2666.9921875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2586.20776367188,
+              14.369909286499,
+              -2669.76904296875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2590.6923828125,
+              14.369909286499,
+              -2666.76098632813
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2595.17700195313,
+              14.369909286499,
+              -2663.75317382813
+            ]
+          }
+        ]
+      },
+      {
+        "node": "Harbor_keeper_house_40",
+        "samples": [
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2570.55249023438,
+              14.369909286499,
+              -2676.24682617188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2575.037109375,
+              14.369909286499,
+              -2673.23901367188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2579.52172851563,
+              14.369909286499,
+              -2670.23095703125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2568.38012695313,
+              14.369909286499,
+              -2673.0078125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2572.86474609375,
+              14.369909286499,
+              -2670.0
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2577.34936523438,
+              14.369909286499,
+              -2666.9921875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2566.20776367188,
+              14.369909286499,
+              -2669.76904296875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2570.6923828125,
+              14.369909286499,
+              -2666.76098632813
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2575.17700195313,
+              14.369909286499,
+              -2663.75317382813
+            ]
+          }
+        ]
+      },
+      {
+        "node": "Harbor_keeper_house_42",
+        "samples": [
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2616.83178710938,
+              14.369909286499,
+              -2716.24682617188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.536676406860352,
+            "position": [
+              -2621.31640625,
+              14.369909286499,
+              -2713.23901367188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.415918350219727,
+            "position": [
+              -2625.80102539063,
+              14.369909286499,
+              -2710.23095703125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.628625869750977,
+            "position": [
+              -2614.65942382813,
+              14.369909286499,
+              -2713.0078125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.507867813110352,
+            "position": [
+              -2619.14404296875,
+              14.369909286499,
+              -2710.0
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.387109756469727,
+            "position": [
+              -2623.62866210938,
+              14.369909286499,
+              -2706.9921875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.599817276000977,
+            "position": [
+              -2612.48706054688,
+              14.369909286499,
+              -2709.76904296875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.479059219360352,
+            "position": [
+              -2616.9716796875,
+              14.369909286499,
+              -2706.76098632813
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.358301162719727,
+            "position": [
+              -2621.45629882813,
+              14.369909286499,
+              -2703.75317382813
+            ]
+          }
+        ]
+      },
+      {
+        "node": "Harbor_keeper_house_44",
+        "samples": [
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629938125610352,
+            "position": [
+              -2596.83178710938,
+              14.3699703216553,
+              -2716.24682617188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629938125610352,
+            "position": [
+              -2601.31640625,
+              14.3699703216553,
+              -2713.23901367188
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629938125610352,
+            "position": [
+              -2605.80102539063,
+              14.3699703216553,
+              -2710.23095703125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629938125610352,
+            "position": [
+              -2594.65942382813,
+              14.3699703216553,
+              -2713.0078125
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629938125610352,
+            "position": [
+              -2599.14404296875,
+              14.3699703216553,
+              -2710.0
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629938125610352,
+            "position": [
+              -2603.62866210938,
+              14.3699703216553,
+              -2706.9921875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629938125610352,
+            "position": [
+              -2592.48706054688,
+              14.3699703216553,
+              -2709.76904296875
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629938125610352,
+            "position": [
+              -2596.9716796875,
+              14.3699703216553,
+              -2706.76098632813
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "gap_m": -0.629999160766602,
+            "position": [
+              -2601.45629882813,
+              14.3699703216553,
+              -2703.75317382813
+            ]
+          }
+        ]
+      }
+    ],
+    "lights": [
+      {
+        "energy": 1.79999995231628,
+        "node": "/root/Skyfarer/SurveyedHarborStudy22a/Harbor_harbor_lantern_1/HarborWarmLight",
+        "parent": "Harbor_harbor_lantern_1",
+        "position": [
+          -2187.064453125,
+          22.722806930542,
+          -2071.91821289063
+        ],
+        "range_m": 11.0,
+        "role": "house lane"
+      },
+      {
+        "energy": 1.79999995231628,
+        "node": "/root/Skyfarer/SurveyedHarborStudy22a/Harbor_harbor_lantern_3/HarborWarmLight",
+        "parent": "Harbor_harbor_lantern_3",
+        "position": [
+          -2208.021484375,
+          21.5625286102295,
+          -2101.91821289063
+        ],
+        "range_m": 11.0,
+        "role": "house lane"
+      },
+      {
+        "energy": 1.79999995231628,
+        "node": "/root/Skyfarer/SurveyedHarborStudy22a/Harbor_harbor_lantern_5/HarborWarmLight",
+        "parent": "Harbor_harbor_lantern_5",
+        "position": [
+          -2305.638671875,
+          22.3663005828857,
+          -2221.91821289063
+        ],
+        "range_m": 11.0,
+        "role": "house lane"
+      },
+      {
+        "energy": 1.79999995231628,
+        "node": "/root/Skyfarer/SurveyedHarborStudy22a/Harbor_harbor_lantern_7/HarborWarmLight",
+        "parent": "Harbor_harbor_lantern_7",
+        "position": [
+          -2351.6396484375,
+          17.4397563934326,
+          -2291.91821289063
+        ],
+        "range_m": 11.0,
+        "role": "house lane"
+      },
+      {
+        "energy": 1.79999995231628,
+        "node": "/root/Skyfarer/SurveyedHarborStudy22a/Harbor_harbor_lantern_9/HarborWarmLight",
+        "parent": "Harbor_harbor_lantern_9",
+        "position": [
+          -2331.6396484375,
+          17.4397563934326,
+          -2291.91821289063
+        ],
+        "range_m": 11.0,
+        "role": "house lane"
+      },
+      {
+        "energy": 1.79999995231628,
+        "node": "/root/Skyfarer/SurveyedHarborStudy22a/Harbor_harbor_lantern_11/HarborWarmLight",
+        "parent": "Harbor_harbor_lantern_11",
+        "position": [
+          -2374.6376953125,
+          17.3424053192139,
+          -2326.91821289063
+        ],
+        "range_m": 11.0,
+        "role": "house lane"
+      },
+      {
+        "energy": 1.79999995231628,
+        "node": "/root/Skyfarer/SurveyedHarborStudy22a/Harbor_harbor_lantern_13/HarborWarmLight",
+        "parent": "Harbor_harbor_lantern_13",
+        "position": [
+          -2354.6376953125,
+          17.4399394989014,
+          -2326.91821289063
+        ],
+        "range_m": 11.0,
+        "role": "house lane"
+      },
+      {
+        "energy": 1.79999995231628,
+        "node": "/root/Skyfarer/SurveyedHarborStudy22a/Harbor_harbor_lantern_15/HarborWarmLight",
+        "parent": "Harbor_harbor_lantern_15",
+        "position": [
+          -2443.6416015625,
+          17.5369548797607,
+          -2431.91821289063
+        ],
+        "range_m": 11.0,
+        "role": "house lane"
+      },
+      {
+        "energy": 1.79999995231628,
+        "node": "/root/Skyfarer/SurveyedHarborStudy22a/Harbor_harbor_lantern_17/HarborWarmLight",
+        "parent": "Harbor_harbor_lantern_17",
+        "position": [
+          -2423.6416015625,
+          17.7725505828857,
+          -2431.91821289063
+        ],
+        "range_m": 11.0,
+        "role": "house lane"
+      },
+      {
+        "energy": 1.79999995231628,
+        "node": "/root/Skyfarer/SurveyedHarborStudy22a/Harbor_harbor_lantern_19/HarborWarmLight",
+        "parent": "Harbor_harbor_lantern_19",
+        "position": [
+          -2463.3583984375,
+          17.2453594207764,
+          -2461.91821289063
+        ],
+        "range_m": 11.0,
+        "role": "house lane"
+      },
+      {
+        "energy": 1.79999995231628,
+        "node": "/root/Skyfarer/SurveyedHarborStudy22a/Harbor_harbor_lantern_21/HarborWarmLight",
+        "parent": "Harbor_harbor_lantern_21",
+        "position": [
+          -2443.3583984375,
+          17.5687847137451,
+          -2461.91821289063
+        ],
+        "range_m": 11.0,
+        "role": "house lane"
+      },
+      {
+        "energy": 1.79999995231628,
+        "node": "/root/Skyfarer/SurveyedHarborStudy22a/Harbor_harbor_lantern_23/HarborWarmLight",
+        "parent": "Harbor_harbor_lantern_23",
+        "position": [
+          -2483.0654296875,
+          17.3454570770264,
+          -2491.91821289063
+        ],
+        "range_m": 11.0,
+        "role": "house lane"
+      },
+      {
+        "energy": 1.79999995231628,
+        "node": "/root/Skyfarer/SurveyedHarborStudy22a/Harbor_harbor_lantern_25/HarborWarmLight",
+        "parent": "Harbor_harbor_lantern_25",
+        "position": [
+          -2463.0654296875,
+          17.4398784637451,
+          -2491.91821289063
+        ],
+        "range_m": 11.0,
+        "role": "house lane"
+      },
+      {
+        "energy": 1.79999995231628,
+        "node": "/root/Skyfarer/SurveyedHarborStudy22a/Harbor_harbor_lantern_27/HarborWarmLight",
+        "parent": "Harbor_harbor_lantern_27",
+        "position": [
+          -2502.77734375,
+          17.4399089813232,
+          -2521.91821289063
+        ],
+        "range_m": 11.0,
+        "role": "house lane"
+      },
+      {
+        "energy": 1.79999995231628,
+        "node": "/root/Skyfarer/SurveyedHarborStudy22a/Harbor_harbor_lantern_29/HarborWarmLight",
+        "parent": "Harbor_harbor_lantern_29",
+        "position": [
+          -2482.77734375,
+          17.4399089813232,
+          -2521.91821289063
+        ],
+        "range_m": 11.0,
+        "role": "house lane"
+      },
+      {
+        "energy": 1.79999995231628,
+        "node": "/root/Skyfarer/SurveyedHarborStudy22a/Harbor_harbor_lantern_31/HarborWarmLight",
+        "parent": "Harbor_harbor_lantern_31",
+        "position": [
+          -2542.2109375,
+          17.200590133667,
+          -2581.91821289063
+        ],
+        "range_m": 11.0,
+        "role": "house lane"
+      },
+      {
+        "energy": 1.79999995231628,
+        "node": "/root/Skyfarer/SurveyedHarborStudy22a/Harbor_harbor_lantern_33/HarborWarmLight",
+        "parent": "Harbor_harbor_lantern_33",
+        "position": [
+          -2522.2109375,
+          17.4399089813232,
+          -2581.91821289063
+        ],
+        "range_m": 11.0,
+        "role": "house lane"
+      },
+      {
+        "energy": 1.79999995231628,
+        "node": "/root/Skyfarer/SurveyedHarborStudy22a/Harbor_harbor_lantern_35/HarborWarmLight",
+        "parent": "Harbor_harbor_lantern_35",
+        "position": [
+          -2568.5,
+          17.371976852417,
+          -2621.91821289063
+        ],
+        "range_m": 11.0,
+        "role": "house lane"
+      },
+      {
+        "energy": 1.79999995231628,
+        "node": "/root/Skyfarer/SurveyedHarborStudy22a/Harbor_harbor_lantern_37/HarborWarmLight",
+        "parent": "Harbor_harbor_lantern_37",
+        "position": [
+          -2548.5,
+          17.4398784637451,
+          -2621.91821289063
+        ],
+        "range_m": 11.0,
+        "role": "house lane"
+      },
+      {
+        "energy": 1.79999995231628,
+        "node": "/root/Skyfarer/SurveyedHarborStudy22a/Harbor_harbor_lantern_39/HarborWarmLight",
+        "parent": "Harbor_harbor_lantern_39",
+        "position": [
+          -2594.7890625,
+          17.4399089813232,
+          -2661.91821289063
+        ],
+        "range_m": 11.0,
+        "role": "house lane"
+      },
+      {
+        "energy": 1.79999995231628,
+        "node": "/root/Skyfarer/SurveyedHarborStudy22a/Harbor_harbor_lantern_41/HarborWarmLight",
+        "parent": "Harbor_harbor_lantern_41",
+        "position": [
+          -2574.7890625,
+          17.4399089813232,
+          -2661.91821289063
+        ],
+        "range_m": 11.0,
+        "role": "house lane"
+      },
+      {
+        "energy": 1.79999995231628,
+        "node": "/root/Skyfarer/SurveyedHarborStudy22a/Harbor_harbor_lantern_43/HarborWarmLight",
+        "parent": "Harbor_harbor_lantern_43",
+        "position": [
+          -2621.068359375,
+          17.145902633667,
+          -2701.91821289063
+        ],
+        "range_m": 11.0,
+        "role": "house lane"
+      },
+      {
+        "energy": 1.79999995231628,
+        "node": "/root/Skyfarer/SurveyedHarborStudy22a/Harbor_harbor_lantern_45/HarborWarmLight",
+        "parent": "Harbor_harbor_lantern_45",
+        "position": [
+          -2601.068359375,
+          17.4399700164795,
+          -2701.91821289063
+        ],
+        "range_m": 11.0,
+        "role": "house lane"
+      },
+      {
+        "energy": 1.79999995231628,
+        "node": "/root/Skyfarer/SurveyedHarborStudy22a/Harbor_harbor_lantern_50/HarborWarmLight",
+        "parent": "Harbor_harbor_lantern_50",
+        "position": [
+          -2312.14135742188,
+          4.78999996185303,
+          -2101.39599609375
+        ],
+        "range_m": 11.0,
+        "role": "dock deck"
+      },
+      {
+        "energy": 1.79999995231628,
+        "node": "/root/Skyfarer/SurveyedHarborStudy22a/Harbor_harbor_lantern_51/HarborWarmLight",
+        "parent": "Harbor_harbor_lantern_51",
+        "position": [
+          -2306.6826171875,
+          4.78999996185303,
+          -2093.25708007813
+        ],
+        "range_m": 11.0,
+        "role": "dock deck"
+      },
+      {
+        "energy": 1.79999995231628,
+        "node": "/root/Skyfarer/SurveyedHarborStudy22a/Harbor_harbor_lantern_52/HarborWarmLight",
+        "parent": "Harbor_harbor_lantern_52",
+        "position": [
+          -2295.46606445313,
+          4.78999996185303,
+          -2109.02807617188
+        ],
+        "range_m": 11.0,
+        "role": "dock deck"
+      },
+      {
+        "energy": 1.79999995231628,
+        "node": "/root/Skyfarer/SurveyedHarborStudy22a/Harbor_harbor_lantern_53/HarborWarmLight",
+        "parent": "Harbor_harbor_lantern_53",
+        "position": [
+          -2293.29370117188,
+          4.78999996185303,
+          -2105.7890625
+        ],
+        "range_m": 11.0,
+        "role": "dock deck"
+      },
+      {
+        "energy": 1.79999995231628,
+        "node": "/root/Skyfarer/SurveyedHarborStudy22a/Harbor_harbor_lantern_59/HarborWarmLight",
+        "parent": "Harbor_harbor_lantern_59",
+        "position": [
+          -2414.00366210938,
+          4.78999996185303,
+          -2256.39599609375
+        ],
+        "range_m": 11.0,
+        "role": "dock deck"
+      },
+      {
+        "energy": 1.79999995231628,
+        "node": "/root/Skyfarer/SurveyedHarborStudy22a/Harbor_harbor_lantern_60/HarborWarmLight",
+        "parent": "Harbor_harbor_lantern_60",
+        "position": [
+          -2408.544921875,
+          4.78999996185303,
+          -2248.25708007813
+        ],
+        "range_m": 11.0,
+        "role": "dock deck"
+      },
+      {
+        "energy": 1.79999995231628,
+        "node": "/root/Skyfarer/SurveyedHarborStudy22a/Harbor_harbor_lantern_61/HarborWarmLight",
+        "parent": "Harbor_harbor_lantern_61",
+        "position": [
+          -2397.32836914063,
+          4.78999996185303,
+          -2264.02807617188
+        ],
+        "range_m": 11.0,
+        "role": "dock deck"
+      },
+      {
+        "energy": 1.79999995231628,
+        "node": "/root/Skyfarer/SurveyedHarborStudy22a/Harbor_harbor_lantern_62/HarborWarmLight",
+        "parent": "Harbor_harbor_lantern_62",
+        "position": [
+          -2395.15600585938,
+          4.78999996185303,
+          -2260.7890625
+        ],
+        "range_m": 11.0,
+        "role": "dock deck"
+      },
+      {
+        "energy": 1.79999995231628,
+        "node": "/root/Skyfarer/SurveyedHarborStudy22a/Harbor_harbor_lantern_68/HarborWarmLight",
+        "parent": "Harbor_harbor_lantern_68",
+        "position": [
+          -2568.43188476563,
+          4.78999996185303,
+          -2491.39599609375
+        ],
+        "range_m": 11.0,
+        "role": "dock deck"
+      },
+      {
+        "energy": 1.79999995231628,
+        "node": "/root/Skyfarer/SurveyedHarborStudy22a/Harbor_harbor_lantern_69/HarborWarmLight",
+        "parent": "Harbor_harbor_lantern_69",
+        "position": [
+          -2562.97314453125,
+          4.78999996185303,
+          -2483.25708007813
+        ],
+        "range_m": 11.0,
+        "role": "dock deck"
+      },
+      {
+        "energy": 1.79999995231628,
+        "node": "/root/Skyfarer/SurveyedHarborStudy22a/Harbor_harbor_lantern_70/HarborWarmLight",
+        "parent": "Harbor_harbor_lantern_70",
+        "position": [
+          -2551.75659179688,
+          4.78999996185303,
+          -2499.02807617188
+        ],
+        "range_m": 11.0,
+        "role": "dock deck"
+      },
+      {
+        "energy": 1.79999995231628,
+        "node": "/root/Skyfarer/SurveyedHarborStudy22a/Harbor_harbor_lantern_71/HarborWarmLight",
+        "parent": "Harbor_harbor_lantern_71",
+        "position": [
+          -2549.58422851563,
+          4.78999996185303,
+          -2495.7890625
+        ],
+        "range_m": 11.0,
+        "role": "dock deck"
+      },
+      {
+        "energy": 1.79999995231628,
+        "node": "/root/Skyfarer/SurveyedHarborStudy22a/Harbor_harbor_lantern_77/HarborWarmLight",
+        "parent": "Harbor_harbor_lantern_77",
+        "position": [
+          -2680.15551757813,
+          4.78999996185303,
+          -2661.39599609375
+        ],
+        "range_m": 11.0,
+        "role": "dock deck"
+      },
+      {
+        "energy": 1.79999995231628,
+        "node": "/root/Skyfarer/SurveyedHarborStudy22a/Harbor_harbor_lantern_78/HarborWarmLight",
+        "parent": "Harbor_harbor_lantern_78",
+        "position": [
+          -2674.69677734375,
+          4.78999996185303,
+          -2653.25708007813
+        ],
+        "range_m": 11.0,
+        "role": "dock deck"
+      },
+      {
+        "energy": 1.79999995231628,
+        "node": "/root/Skyfarer/SurveyedHarborStudy22a/Harbor_harbor_lantern_79/HarborWarmLight",
+        "parent": "Harbor_harbor_lantern_79",
+        "position": [
+          -2663.48022460938,
+          4.78999996185303,
+          -2669.02807617188
+        ],
+        "range_m": 11.0,
+        "role": "dock deck"
+      },
+      {
+        "energy": 1.79999995231628,
+        "node": "/root/Skyfarer/SurveyedHarborStudy22a/Harbor_harbor_lantern_80/HarborWarmLight",
+        "parent": "Harbor_harbor_lantern_80",
+        "position": [
+          -2661.30786132813,
+          4.78999996185303,
+          -2665.7890625
+        ],
+        "range_m": 11.0,
+        "role": "dock deck"
+      }
+    ],
+    "night": true,
+    "pier_entries": [
+      {
+        "entry": [
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+            "deck_gap_m": 0.206842041015625,
+            "position": [
+              -2293.24951171875,
+              2.14315795898438,
+              -2111.8271484375
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+            "deck_gap_m": 0.199884033203125,
+            "position": [
+              -2292.02416992188,
+              2.15011596679688,
+              -2110.0
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+            "deck_gap_m": 0.19320068359375,
+            "position": [
+              -2290.798828125,
+              2.15679931640625,
+              -2108.1728515625
+            ]
+          }
+        ],
+        "node": "Harbor_timber_pier_46",
+        "scope": "Entry deck gap only; land routes and seabed anchoring not yet completed."
+      },
+      {
+        "entry": [
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision",
+            "deck_gap_m": 0.207421875,
+            "position": [
+              -2395.11181640625,
+              2.142578125,
+              -2266.8271484375
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision",
+            "deck_gap_m": 0.19979248046875,
+            "position": [
+              -2393.88647460938,
+              2.15020751953125,
+              -2265.0
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision",
+            "deck_gap_m": 0.192529296875,
+            "position": [
+              -2392.6611328125,
+              2.157470703125,
+              -2263.1728515625
+            ]
+          }
+        ],
+        "node": "Harbor_timber_pier_55",
+        "scope": "Entry deck gap only; land routes and seabed anchoring not yet completed."
+      },
+      {
+        "entry": [
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "deck_gap_m": 0.20772705078125,
+            "position": [
+              -2549.5400390625,
+              2.14227294921875,
+              -2501.8271484375
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "deck_gap_m": 0.20015869140625,
+            "position": [
+              -2548.31469726563,
+              2.14984130859375,
+              -2500.0
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "deck_gap_m": 0.19259033203125,
+            "position": [
+              -2547.08935546875,
+              2.15740966796875,
+              -2498.1728515625
+            ]
+          }
+        ],
+        "node": "Harbor_timber_pier_64",
+        "scope": "Entry deck gap only; land routes and seabed anchoring not yet completed."
+      },
+      {
+        "entry": [
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "deck_gap_m": 0.2068115234375,
+            "position": [
+              -2661.263671875,
+              2.1431884765625,
+              -2671.8271484375
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "deck_gap_m": 0.199884033203125,
+            "position": [
+              -2660.03833007813,
+              2.15011596679688,
+              -2670.0
+            ]
+          },
+          {
+            "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+            "deck_gap_m": 0.19320068359375,
+            "position": [
+              -2658.81298828125,
+              2.15679931640625,
+              -2668.1728515625
+            ]
+          }
+        ],
+        "node": "Harbor_timber_pier_73",
+        "scope": "Entry deck gap only; land routes and seabed anchoring not yet completed."
+      }
+    ],
+    "scope": "Temporary23 surveyed houses and4 detailed docks with scene boats in existing continuous World. Bounding foundation samples, not full contact/route/boat physics proof.",
+    "source_survey_run": "harbor-sites-22a-20260908T103705Z-af34540b52054103be479e592bea4f7d",
+    "vegetation_adjustments": []
+  },
+  "lighthouse_sha256": "79b5fd32ec06a3c3cf0fc948e31333c9d374fb018437f2fa630293e266382eb1",
+  "placements": [
+    {
+      "instance": "island_d",
+      "kind": "island_c",
+      "position": [
+        -2340.0,
+        0,
+        -1810.0
+      ],
+      "yaw": 0.55
+    },
+    {
+      "kind": "island_a",
+      "position": [
+        -2350.0,
+        0,
+        -1650.0
+      ]
+    },
+    {
+      "kind": "island_b",
+      "position": [
+        -2700.0,
+        0,
+        -2200.0
+      ]
+    },
+    {
+      "kind": "island_c",
+      "position": [
+        -3050.0,
+        0,
+        -2650.0
+      ]
+    },
+    {
+      "kind": "reef_ridge",
+      "position": [
+        -2470,
+        0,
+        -1560
+      ],
+      "scale": 1.0,
+      "yaw": 0.3
+    },
+    {
+      "kind": "reef_low",
+      "position": [
+        -2380,
+        0,
+        -1490
+      ],
+      "scale": 0.8,
+      "yaw": 0.8
+    },
+    {
+      "kind": "reef_spire",
+      "position": [
+        -2230,
+        0,
+        -1730
+      ],
+      "scale": 0.8,
+      "yaw": -0.3
+    },
+    {
+      "kind": "reef_ridge",
+      "position": [
+        -2500,
+        0,
+        -1740
+      ],
+      "scale": 1.1,
+      "yaw": -0.5
+    },
+    {
+      "kind": "reef_low",
+      "position": [
+        -2510,
+        0,
+        -1870
+      ],
+      "scale": 0.65,
+      "yaw": 0.5
+    },
+    {
+      "kind": "reef_spire",
+      "position": [
+        -2530,
+        0,
+        -1970
+      ],
+      "scale": 1.0,
+      "yaw": 0.2
+    },
+    {
+      "kind": "reef_ridge",
+      "position": [
+        -2740,
+        0,
+        -1940
+      ],
+      "scale": 1.0,
+      "yaw": -0.8
+    },
+    {
+      "kind": "reef_low",
+      "position": [
+        -2470,
+        0,
+        -2080
+      ],
+      "scale": 1.3,
+      "yaw": 0.4
+    },
+    {
+      "kind": "reef_ridge",
+      "position": [
+        -2780,
+        0,
+        -2390
+      ],
+      "scale": 0.7,
+      "yaw": 0.2
+    },
+    {
+      "kind": "reef_low",
+      "position": [
+        -2870,
+        0,
+        -2410
+      ],
+      "scale": 1.1,
+      "yaw": 0.7
+    },
+    {
+      "kind": "reef_spire",
+      "position": [
+        -3010,
+        0,
+        -2400
+      ],
+      "scale": 1.0,
+      "yaw": -0.2
+    },
+    {
+      "kind": "reef_low",
+      "position": [
+        -2930,
+        0,
+        -2590
+      ],
+      "scale": 0.8,
+      "yaw": 0.8
+    },
+    {
+      "kind": "reef_ridge",
+      "position": [
+        -3180,
+        0,
+        -2740
+      ],
+      "scale": 1.3,
+      "yaw": -0.3
+    },
+    {
+      "island": "island_a",
+      "kind": "lighthouse",
+      "position": [
+        -2353.0,
+        30.0621032714844,
+        -1656.0
+      ],
+      "scale": 1.0,
+      "support": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+      "yaw": 0.25
+    },
+    {
+      "island": "island_b",
+      "kind": "lighthouse",
+      "position": [
+        -2700.0,
+        21.6455078125,
+        -2202.0
+      ],
+      "scale": 1.0,
+      "support": "/root/Skyfarer/LanternCoastStudy/island_b_2/island_b_Coast short olive grass/island_b_Coast short olive grass_col",
+      "yaw": -0.12
+    },
+    {
+      "island": "island_c",
+      "kind": "lighthouse",
+      "position": [
+        -3049.0,
+        17.9855194091797,
+        -2651.0
+      ],
+      "scale": 1.0,
+      "support": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+      "yaw": 0.1
+    },
+    {
+      "island": "island_d",
+      "kind": "lighthouse",
+      "position": [
+        -2339.67016601563,
+        17.9854736328125,
+        -1811.37524414063
+      ],
+      "scale": 1.0,
+      "support": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+      "yaw": 0.650000011920929
+    },
+    {
+      "island": "island_d",
+      "kind": "keeper_house",
+      "position": [
+        -2342.91259765625,
+        16.4489898681641,
+        -1791.79235839844
+      ],
+      "scale": 0.7,
+      "support": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+      "yaw": 0.400000011920929
+    },
+    {
+      "island": "island_a",
+      "kind": "keeper_house",
+      "position": [
+        -2372.0,
+        22.3085021972656,
+        -1648.0
+      ],
+      "scale": 1.0,
+      "support": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+      "yaw": 0.0
+    },
+    {
+      "island": "island_a",
+      "kind": "keeper_house",
+      "position": [
+        -2331.0,
+        27.5137786865234,
+        -1644.0
+      ],
+      "scale": 0.85,
+      "support": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+      "yaw": -0.15
+    },
+    {
+      "island": "island_b",
+      "kind": "keeper_house",
+      "position": [
+        -2715.0,
+        17.2664031982422,
+        -2197.0
+      ],
+      "scale": 0.8,
+      "support": "/root/Skyfarer/LanternCoastStudy/island_b_2/island_b_Coast short olive grass/island_b_Coast short olive grass_col",
+      "yaw": 0.08
+    },
+    {
+      "island": "island_c",
+      "kind": "keeper_house",
+      "position": [
+        -3062.0,
+        16.4489898681641,
+        -2636.0
+      ],
+      "scale": 0.7,
+      "support": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+      "yaw": -0.15
+    },
+    {
+      "island": "island_d",
+      "kind": "existing_native_pine",
+      "position": [
+        -2357.27124023438,
+        14.8345642089844,
+        -1804.68933105469
+      ],
+      "scale": 0.72
+    },
+    {
+      "island": "island_d",
+      "kind": "existing_native_pine",
+      "position": [
+        -2358.09594726563,
+        14.3443908691406,
+        -1801.25134277344
+      ],
+      "scale": 0.9
+    },
+    {
+      "island": "island_d",
+      "kind": "existing_native_pine",
+      "position": [
+        -2353.97021484375,
+        15.0794677734375,
+        -1800.26184082031
+      ],
+      "scale": 0.55
+    },
+    {
+      "island": "island_d",
+      "kind": "existing_native_pine",
+      "position": [
+        -2349.55541992188,
+        15.8573303222656,
+        -1795.9306640625
+      ],
+      "scale": 0.8
+    },
+    {
+      "island": "island_d",
+      "kind": "existing_native_pine",
+      "position": [
+        -2334.90014648438,
+        12.3171539306641,
+        -1823.68359375
+      ],
+      "scale": 0.7
+    },
+    {
+      "island": "island_d",
+      "kind": "existing_native_pine",
+      "position": [
+        -2330.87084960938,
+        11.3142395019531,
+        -1823.80798339844
+      ],
+      "scale": 0.6
+    },
+    {
+      "island": "island_d",
+      "kind": "existing_native_pine",
+      "position": [
+        -2322.06909179688,
+        10.664306640625,
+        -1818.06103515625
+      ],
+      "scale": 0.8
+    },
+    {
+      "island": "island_d",
+      "kind": "existing_native_pine",
+      "position": [
+        -2319.22216796875,
+        9.84933471679688,
+        -1816.28759765625
+      ],
+      "scale": 0.55
+    },
+    {
+      "island": "island_a",
+      "kind": "existing_native_pine",
+      "position": [
+        -2385.0,
+        17.1958312988281,
+        -1659.0
+      ],
+      "scale": 0.72
+    },
+    {
+      "island": "island_a",
+      "kind": "existing_native_pine",
+      "position": [
+        -2390.0,
+        16.1161346435547,
+        -1654.0
+      ],
+      "scale": 0.9
+    },
+    {
+      "island": "island_a",
+      "kind": "existing_native_pine",
+      "position": [
+        -2384.0,
+        18.3921051025391,
+        -1648.0
+      ],
+      "scale": 0.55
+    },
+    {
+      "island": "island_a",
+      "kind": "existing_native_pine",
+      "position": [
+        -2381.0,
+        20.039306640625,
+        -1636.0
+      ],
+      "scale": 0.8
+    },
+    {
+      "island": "island_a",
+      "kind": "existing_native_pine",
+      "position": [
+        -2376.0,
+        20.3504180908203,
+        -1630.0
+      ],
+      "scale": 0.65
+    },
+    {
+      "island": "island_a",
+      "kind": "existing_native_pine",
+      "position": [
+        -2334.0,
+        25.5252075195313,
+        -1671.0
+      ],
+      "scale": 0.95
+    },
+    {
+      "island": "island_a",
+      "kind": "existing_native_pine",
+      "position": [
+        -2327.0,
+        25.2899627685547,
+        -1668.0
+      ],
+      "scale": 0.7
+    },
+    {
+      "island": "island_a",
+      "kind": "existing_native_pine",
+      "position": [
+        -2320.0,
+        25.2262878417969,
+        -1664.0
+      ],
+      "scale": 0.6
+    },
+    {
+      "island": "island_a",
+      "kind": "existing_native_pine",
+      "position": [
+        -2332.0,
+        26.4448394775391,
+        -1628.0
+      ],
+      "scale": 0.7
+    },
+    {
+      "island": "island_b",
+      "kind": "existing_native_pine",
+      "position": [
+        -2728.0,
+        15.2503204345703,
+        -2202.80004882813
+      ],
+      "scale": 0.9
+    },
+    {
+      "island": "island_b",
+      "kind": "existing_native_pine",
+      "position": [
+        -2723.80004882813,
+        15.8567962646484,
+        -2198.60009765625
+      ],
+      "scale": 0.55
+    },
+    {
+      "island": "island_b",
+      "kind": "existing_native_pine",
+      "position": [
+        -2721.69995117188,
+        15.1346893310547,
+        -2190.19995117188
+      ],
+      "scale": 0.8
+    },
+    {
+      "island": "island_b",
+      "kind": "existing_native_pine",
+      "position": [
+        -2718.19995117188,
+        14.9466552734375,
+        -2186.0
+      ],
+      "scale": 0.65
+    },
+    {
+      "island": "island_b",
+      "kind": "existing_native_pine",
+      "position": [
+        -2688.80004882813,
+        24.1520538330078,
+        -2214.69995117188
+      ],
+      "scale": 0.95
+    },
+    {
+      "island": "island_b",
+      "kind": "existing_native_pine",
+      "position": [
+        -2683.89990234375,
+        22.9152526855469,
+        -2212.60009765625
+      ],
+      "scale": 0.7
+    },
+    {
+      "island": "island_b",
+      "kind": "existing_native_pine",
+      "position": [
+        -2679.0,
+        20.3429565429688,
+        -2209.80004882813
+      ],
+      "scale": 0.6
+    },
+    {
+      "island": "island_b",
+      "kind": "existing_native_pine",
+      "position": [
+        -2672.69995117188,
+        15.102294921875,
+        -2196.5
+      ],
+      "scale": 0.8
+    },
+    {
+      "island": "island_b",
+      "kind": "existing_native_pine",
+      "position": [
+        -2670.60009765625,
+        14.6051635742188,
+        -2192.30004882813
+      ],
+      "scale": 0.55
+    },
+    {
+      "island": "island_b",
+      "kind": "existing_native_pine",
+      "position": [
+        -2687.39990234375,
+        14.7218017578125,
+        -2184.60009765625
+      ],
+      "scale": 0.7
+    },
+    {
+      "island": "island_c",
+      "kind": "existing_native_pine",
+      "position": [
+        -3067.5,
+        14.8345336914063,
+        -2654.5
+      ],
+      "scale": 0.72
+    },
+    {
+      "island": "island_c",
+      "kind": "existing_native_pine",
+      "position": [
+        -3070.0,
+        14.3444061279297,
+        -2652.0
+      ],
+      "scale": 0.9
+    },
+    {
+      "island": "island_c",
+      "kind": "existing_native_pine",
+      "position": [
+        -3067.0,
+        15.0794525146484,
+        -2649.0
+      ],
+      "scale": 0.55
+    },
+    {
+      "island": "island_c",
+      "kind": "existing_native_pine",
+      "position": [
+        -3065.5,
+        15.8574066162109,
+        -2643.0
+      ],
+      "scale": 0.8
+    },
+    {
+      "island": "island_c",
+      "kind": "existing_native_pine",
+      "position": [
+        -3038.5,
+        12.3172454833984,
+        -2659.0
+      ],
+      "scale": 0.7
+    },
+    {
+      "island": "island_c",
+      "kind": "existing_native_pine",
+      "position": [
+        -3035.0,
+        11.3143310546875,
+        -2657.0
+      ],
+      "scale": 0.6
+    },
+    {
+      "island": "island_c",
+      "kind": "existing_native_pine",
+      "position": [
+        -3030.5,
+        10.664306640625,
+        -2647.5
+      ],
+      "scale": 0.8
+    },
+    {
+      "island": "island_c",
+      "kind": "existing_native_pine",
+      "position": [
+        -3029.0,
+        9.84942626953125,
+        -2644.5
+      ],
+      "scale": 0.55
+    }
+  ],
+  "production_modified": false,
+  "region_mesh_nodes": 196,
+  "run_id": "harbor-assembly-22a-20260908T104332Z-7bb7bd47c7e846a0b285e9a5dcfd5654",
+  "scope": "Actual temporary 3D geometry in existing world; lighting mode recorded in environment_study, no full reference acceptance.",
+  "site_checks": [
+    {
+      "original_collider": "/root/Skyfarer/World/Ocean/SeaCollision",
+      "position": [
+        -2340.0,
+        0.0,
+        -1810.0
+      ],
+      "scope": "Original center sea surface before candidate assembly; proposed geography, not original-map reconstruction proof.",
+      "site": "island_d"
+    }
+  ],
+  "view": "dock-front",
+  "world_sha256": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8"
+}

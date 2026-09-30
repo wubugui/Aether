@@ -1,0 +1,52 @@
+{
+  "scope": "Actual GLB node-transformed bounds and material alpha only; not collision or visual acceptance.",
+  "passed": true,
+  "results": [
+    {
+      "label": "19h",
+      "checks": {
+        "height_max_matches": true,
+        "footing_bottom_matches": true
+      },
+      "passed": true,
+      "glb_sha256": "79b5fd32ec06a3c3cf0fc948e31333c9d374fb018437f2fa630293e266382eb1",
+      "mesh_nodes": 24,
+      "bounds_godot_m": [
+        [
+          -4.015000343322754,
+          -0.5,
+          -4.015000343322754
+        ],
+        [
+          5.240102767944336,
+          24.499998092651367,
+          4.015000343322754
+        ]
+      ],
+      "height_m": 24.999998092651367,
+      "max_width_m": 9.25510311126709,
+      "glazing": [
+        {
+          "name": "Clear slightly amber lantern glass",
+          "alpha_mode": "BLEND",
+          "base_color": [
+            0.25,
+            0.20000000298023224,
+            0.11999999731779099,
+            0.27000001072883606
+          ]
+        },
+        {
+          "name": "Clear optical lens glass",
+          "alpha_mode": "BLEND",
+          "base_color": [
+            0.25,
+            0.20000000298023224,
+            0.11999999731779099,
+            0.10000000149011612
+          ]
+        }
+      ]
+    }
+  ]
+}
