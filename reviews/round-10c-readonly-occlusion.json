@@ -1,0 +1,511 @@
+{
+  "scope": "Read-only nearest geometric intersections of normalized fixed-opening camera rays with seven placed cliff GLBs and two replacement terrain GLBs; not a GPU depth or physics test. No other scene assets included.",
+  "assets_sha256": {
+    "captures/cliff_sections_10c_crown.glb": "5c5bed811ec82300dbf12434fe424ccffcd33ba8ad38c1e7f506e8f7d70a2839",
+    "captures/cliff_sections_10c_western_slab.glb": "36e6a69ff92945515aa98cc466ad7ad957497c39964285dac655c62b630d8440",
+    "captures/cliff_sections_10c_prototype.glb": "2ab09cb46f4feed4c725275029849b20fdc7af31530cf85a792c1f035c429e59",
+    "assets/models/cliff_eastern_plateau.glb": "8b656e6e8d73a6fe9ac9d0f4e26780523f041b77b74a5d31cbffbe7911b2e495",
+    "captures/cliff_sections_10c_shadow_buttress.glb": "dbb777207985fbd3422d989d88a128b381a75b815eb5270e34d57e3a093a60ec",
+    "captures/cliff_sections_10c_central_wall.glb": "fcf11cb2c05654d41d8e70056d4ae46651be54badac23d8005ceb8f503591448",
+    "assets/models/cliff_western_mesa.glb": "f7fd53b49e054fdf17752acbd5d5e8f84081cf798cdaf579cbd1680c19088d79",
+    "captures/round-10c-Ground_0_0.glb": "ce8a3f339a59551b5d9ba5b00780ba17625d8c57d3a5da1de91973d380e68dcc",
+    "captures/round-10c-Ground_0_-1.glb": "5215aa35d70f951b5afd6b2175074e38b9bc6432f15fa3e0cef962897a2885c8"
+  },
+  "camera": {
+    "position": [
+      0.0,
+      145.0,
+      250.0
+    ],
+    "vertical_fov": 50,
+    "pitch_degrees": -3.5,
+    "image_size": [
+      1672,
+      941
+    ]
+  },
+  "samples": [
+    {
+      "pixel": [
+        1000,
+        900
+      ],
+      "hits": [
+        {
+          "asset": "Ground_0_0",
+          "triangle": 8233,
+          "distance_metres": 250.1097799911908,
+          "world_position": [
+            36.99328992532436,
+            34.40443349966475,
+            28.74218834533167
+          ]
+        },
+        {
+          "asset": "cliff_shadow_buttress",
+          "triangle": 44,
+          "distance_metres": 257.7261894610268,
+          "world_position": [
+            38.11981941856351,
+            31.03654792539932,
+            22.004386680713964
+          ]
+        }
+      ]
+    },
+    {
+      "pixel": [
+        970,
+        925
+      ],
+      "hits": [
+        {
+          "asset": "Ground_0_0",
+          "triangle": 8233,
+          "distance_metres": 244.97146543367234,
+          "world_position": [
+            29.448061061763557,
+            31.76788411349952,
+            34.77379688269903
+          ]
+        },
+        {
+          "asset": "cliff_shadow_buttress",
+          "triangle": 43,
+          "distance_metres": 251.5477221208114,
+          "world_position": [
+            30.238593984191354,
+            28.728169026767844,
+            28.996051482874407
+          ]
+        }
+      ]
+    },
+    {
+      "pixel": [
+        1040,
+        880
+      ],
+      "hits": [
+        {
+          "asset": "Ground_0_0",
+          "triangle": 8295,
+          "distance_metres": 258.2800174710563,
+          "world_position": [
+            47.55909263882924,
+            35.34980833697476,
+            21.038135051965014
+          ]
+        },
+        {
+          "asset": "cliff_shadow_buttress",
+          "triangle": 3,
+          "distance_metres": 264.12284084814274,
+          "world_position": [
+            48.634976793492164,
+            32.869296257783304,
+            15.858548376702345
+          ]
+        }
+      ]
+    },
+    {
+      "pixel": [
+        1100,
+        865
+      ],
+      "hits": [
+        {
+          "asset": "cliff_shadow_buttress",
+          "triangle": 22,
+          "distance_metres": 266.2595415282515,
+          "world_position": [
+            63.03848321551692,
+            36.26779170939565,
+            15.271220407530166
+          ]
+        },
+        {
+          "asset": "Ground_0_0",
+          "triangle": 554,
+          "distance_metres": 273.08372914991554,
+          "world_position": [
+            64.65414902181503,
+            33.48100335381588,
+            9.255160953100102
+          ]
+        }
+      ]
+    },
+    {
+      "pixel": [
+        1140,
+        845
+      ],
+      "hits": [
+        {
+          "asset": "cliff_shadow_buttress",
+          "triangle": 23,
+          "distance_metres": 277.86771013255617,
+          "world_position": [
+            75.53186593634385,
+            36.820757423748546,
+            5.454190307597003
+          ]
+        },
+        {
+          "asset": "Ground_0_-1",
+          "triangle": 1767,
+          "distance_metres": 287.33178895636587,
+          "world_position": [
+            78.10445536240552,
+            33.13620955615622,
+            -2.874956025588631
+          ]
+        },
+        {
+          "asset": "cliff_western_slab",
+          "triangle": 214,
+          "distance_metres": 305.3332250422192,
+          "world_position": [
+            82.99772653972117,
+            26.127904344573977,
+            -18.717659595359294
+          ]
+        }
+      ]
+    },
+    {
+      "pixel": [
+        1100,
+        810
+      ],
+      "hits": [
+        {
+          "asset": "cliff_shadow_buttress",
+          "triangle": 3,
+          "distance_metres": 271.9668976319129,
+          "world_position": [
+            65.46118983624395,
+            45.701286147457765,
+            5.417516040126941
+          ]
+        },
+        {
+          "asset": "Ground_0_-1",
+          "triangle": 1177,
+          "distance_metres": 292.0510688461749,
+          "world_position": [
+            70.29535809719101,
+            38.36828941978375,
+            -12.644375045265122
+          ]
+        }
+      ]
+    },
+    {
+      "pixel": [
+        1160,
+        800
+      ],
+      "hits": [
+        {
+          "asset": "cliff_front_columns",
+          "triangle": 41,
+          "distance_metres": 298.51260393238556,
+          "world_position": [
+            87.15080767312051,
+            39.96638109527082,
+            -15.485310946184313
+          ]
+        },
+        {
+          "asset": "cliff_western_slab",
+          "triangle": 41,
+          "distance_metres": 299.29766347216366,
+          "world_position": [
+            87.38000594502546,
+            39.69015274366241,
+            -16.183511870646726
+          ]
+        },
+        {
+          "asset": "Ground_0_-1",
+          "triangle": 14245,
+          "distance_metres": 303.31051912223364,
+          "world_position": [
+            88.55155986392953,
+            38.278203145833686,
+            -19.752387073927196
+          ]
+        }
+      ]
+    },
+    {
+      "pixel": [
+        1200,
+        740
+      ],
+      "hits": [
+        {
+          "asset": "cliff_western_slab",
+          "triangle": 3,
+          "distance_metres": 305.5639470621223,
+          "world_position": [
+            100.56731906795221,
+            53.66201871179797,
+            -23.702234652668153
+          ]
+        },
+        {
+          "asset": "cliff_front_columns",
+          "triangle": 1,
+          "distance_metres": 313.2485813564695,
+          "world_position": [
+            103.09648874399069,
+            51.36495785061901,
+            -30.585578054511814
+          ]
+        },
+        {
+          "asset": "Ground_0_-1",
+          "triangle": 2496,
+          "distance_metres": 344.1792854871889,
+          "world_position": [
+            113.27641350677065,
+            42.119272610965396,
+            -58.2910810150338
+          ]
+        }
+      ]
+    },
+    {
+      "pixel": [
+        1220,
+        760
+      ],
+      "hits": [
+        {
+          "asset": "cliff_front_columns",
+          "triangle": 19,
+          "distance_metres": 302.7200478581068,
+          "world_position": [
+            104.00019536045679,
+            50.05718681420906,
+            -17.972477998337183
+          ]
+        },
+        {
+          "asset": "cliff_western_slab",
+          "triangle": 19,
+          "distance_metres": 305.3317127303962,
+          "world_position": [
+            104.8974390641888,
+            49.23808410915832,
+            -20.284364219551833
+          ]
+        },
+        {
+          "asset": "Ground_0_-1",
+          "triangle": 14035,
+          "distance_metres": 324.8367907876289,
+          "world_position": [
+            111.5984552103807,
+            43.12065979165777,
+            -37.55056161060668
+          ]
+        }
+      ]
+    },
+    {
+      "pixel": [
+        1250,
+        740
+      ],
+      "hits": [
+        {
+          "asset": "cliff_western_slab",
+          "triangle": 4,
+          "distance_metres": 308.1087654819776,
+          "world_position": [
+            113.54278972022041,
+            54.33176970861271,
+            -21.695267322060772
+          ]
+        },
+        {
+          "asset": "cliff_front_columns",
+          "triangle": 2,
+          "distance_metres": 314.7091144396603,
+          "world_position": [
+            115.97511920169399,
+            52.38946223039949,
+            -27.51556124220042
+          ]
+        },
+        {
+          "asset": "Ground_0_-1",
+          "triangle": 1991,
+          "distance_metres": 334.85591558009196,
+          "world_position": [
+            123.39952337872131,
+            46.46079349363714,
+            -45.28133467928933
+          ]
+        }
+      ]
+    },
+    {
+      "pixel": [
+        1280,
+        750
+      ],
+      "hits": [
+        {
+          "asset": "cliff_central_wall",
+          "triangle": 51,
+          "distance_metres": 302.3812255172061,
+          "world_position": [
+            118.05519873167862,
+            54.44419825079652,
+            -13.243276015305355
+          ]
+        },
+        {
+          "asset": "cliff_crown",
+          "triangle": 94,
+          "distance_metres": 308.8661394863852,
+          "world_position": [
+            120.58702856363924,
+            52.50212468869235,
+            -18.888831538814543
+          ]
+        },
+        {
+          "asset": "cliff_western_slab",
+          "triangle": 7,
+          "distance_metres": 310.02359413304174,
+          "world_position": [
+            121.03892017198967,
+            52.155495253160936,
+            -19.896473969338615
+          ]
+        }
+      ]
+    },
+    {
+      "pixel": [
+        1320,
+        740
+      ],
+      "hits": [
+        {
+          "asset": "cliff_crown",
+          "triangle": 1,
+          "distance_metres": 301.8882480400092,
+          "world_position": [
+            126.93814186113819,
+            58.295289054491704,
+            -9.818235590505708
+          ]
+        },
+        {
+          "asset": "cliff_central_wall",
+          "triangle": 3,
+          "distance_metres": 305.2206949321494,
+          "world_position": [
+            128.33937102154968,
+            57.33818374681515,
+            -12.686285199380109
+          ]
+        },
+        {
+          "asset": "Ground_0_-1",
+          "triangle": 2354,
+          "distance_metres": 322.8672170589264,
+          "world_position": [
+            135.75939066003414,
+            52.269961945769936,
+            -27.873654277358924
+          ]
+        }
+      ]
+    },
+    {
+      "pixel": [
+        1350,
+        730
+      ],
+      "hits": [
+        {
+          "asset": "cliff_central_wall",
+          "triangle": 2,
+          "distance_metres": 310.7658832957177,
+          "world_position": [
+            137.49731770409792,
+            59.23447596010162,
+            -15.168242312135817
+          ]
+        },
+        {
+          "asset": "cliff_crown",
+          "triangle": 27,
+          "distance_metres": 316.3418335018545,
+          "world_position": [
+            139.9643780804323,
+            57.695618842395945,
+            -19.926051952309024
+          ]
+        },
+        {
+          "asset": "Ground_0_-1",
+          "triangle": 14478,
+          "distance_metres": 331.4720077433489,
+          "world_position": [
+            146.65867268104486,
+            53.519976043788205,
+            -32.836226219011394
+          ]
+        }
+      ]
+    },
+    {
+      "pixel": [
+        1400,
+        710
+      ],
+      "hits": [
+        {
+          "asset": "cliff_crown",
+          "triangle": 7,
+          "distance_metres": 329.96175037033805,
+          "world_position": [
+            157.64724919207538,
+            60.963204200085414,
+            -27.416507225710006
+          ]
+        },
+        {
+          "asset": "Ground_0_-1",
+          "triangle": 3187,
+          "distance_metres": 387.8209144020009,
+          "world_position": [
+            185.29087164197216,
+            46.22725754134291,
+            -76.06180377492558
+          ]
+        },
+        {
+          "asset": "cliff_eastern_plateau",
+          "triangle": 112,
+          "distance_metres": 394.08607447101764,
+          "world_position": [
+            188.28420420103387,
+            44.63160599451116,
+            -81.32925923485652
+          ]
+        }
+      ]
+    }
+  ]
+}

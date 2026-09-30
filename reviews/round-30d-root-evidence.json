@@ -1,0 +1,122 @@
+{
+  "run_id": "lantern-island-30d-20260908T183203Z-dfad421d9cb14734824e8942e33ac04c",
+  "manifest_sha256": "40f1333a7bce8e1390c1771e790186b0497c68567850520982b1835af6663cc3",
+  "terminal_passed": true,
+  "binding_count": 196,
+  "all_bound_hashes_match": true,
+  "incremental_runtime_report": "reviews/round-30d-runtime-incremental.json",
+  "root_views": [
+    {
+      "name": "night-reference",
+      "path": "captures\\validation_runs\\lantern-island-30d-20260908T183203Z-dfad421d9cb14734824e8942e33ac04c\\images\\night-reference.png",
+      "png_sha256": "58af7325d7f2799e2415e3cac7ec5fb50f029923905741f747b342c4a324ea97",
+      "sidecar_sha256": "66a09d2aa01251495ce897a5c3c1052f8e4b3be0869083b8b6fa47936b911fbc",
+      "root_directly_viewed": true,
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -2278.0,
+          60.0,
+          -1632.0
+        ],
+        "rotation": [
+          -0.00509163970127702,
+          0.60683274269104,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "day-reference",
+      "path": "captures\\validation_runs\\lantern-island-30d-20260908T183203Z-dfad421d9cb14734824e8942e33ac04c\\images\\day-reference.png",
+      "png_sha256": "9b5842aa36869f3a13c3bfefeb402af9c585bef270f018f2a8adfb091978f0d3",
+      "sidecar_sha256": "511e590705fe833ac7554e9b4e17bebe95bcc5bf26dbe017a86b0c781911f580",
+      "root_directly_viewed": true,
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -2278.0,
+          60.0,
+          -1632.0
+        ],
+        "rotation": [
+          -0.00509163970127702,
+          0.60683274269104,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "day-d-front",
+      "path": "captures\\validation_runs\\lantern-island-30d-20260908T183203Z-dfad421d9cb14734824e8942e33ac04c\\images\\day-d-front.png",
+      "png_sha256": "05188e17937edf2e33d62ff94851d71c883b6e30c2622a075617336887f3a51c",
+      "sidecar_sha256": "abd0f8261ecddc2820ec2b41a5383c7741ca606a1abc872d4cfc2147546f9492",
+      "root_directly_viewed": true,
+      "camera": {
+        "fov": 55.0,
+        "position": [
+          -2335.39868164063,
+          40.0,
+          -1900.23461914063
+        ],
+        "rotation": [
+          -0.304300278425217,
+          2.74837756156921,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "day-d-back",
+      "path": "captures\\validation_runs\\lantern-island-30d-20260908T183203Z-dfad421d9cb14734824e8942e33ac04c\\images\\day-d-back.png",
+      "png_sha256": "ee6746f695a94f5022c06d116c625191731a478a4580cc69b771f1a38e22453e",
+      "sidecar_sha256": "dee0a00488c072bb4f52363d25ebc26bfc56ec916e4807a23e05b54e8a6dd9d0",
+      "root_directly_viewed": true,
+      "camera": {
+        "fov": 55.0,
+        "position": [
+          -2401.97412109375,
+          35.0,
+          -1721.29968261719
+        ],
+        "rotation": [
+          -0.255971014499664,
+          -0.319175213575363,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "day-c-front",
+      "path": "captures\\validation_runs\\lantern-island-30d-20260908T183203Z-dfad421d9cb14734824e8942e33ac04c\\images\\day-c-front.png",
+      "png_sha256": "2c531dcb85d56faf431fb6b6df70d410d9ca66aff2dc4d85bb71ff60a248da76",
+      "sidecar_sha256": "2c89373fbff8882b263e493ef8916fcae70b2552a99dfa32e120912f2e58076c",
+      "root_directly_viewed": true,
+      "camera": {
+        "fov": 55.0,
+        "position": [
+          -2985.0,
+          40.0,
+          -2580.0
+        ],
+        "rotation": [
+          -0.304300338029861,
+          0.748378038406372,
+          0.0
+        ]
+      }
+    }
+  ],
+  "independent_review": "reviews\\round-30d-island-independent-review.md",
+  "independent_review_sha256": "c6ff9ec28c3aca857d59125d8fdd50a8638df67a5e55ae971eb1d9a3d5e413e4",
+  "independent_geometry": "reviews/round-30d-independent-geometry.json",
+  "visible_slope_localization": "reviews/round-30d-visible-slope-localization.json",
+  "visual_accepted": false,
+  "production_installed": false,
+  "full_goal_status": "active",
+  "root_findings": [
+    "Three real cutbacks expose retained shoulders and add short recesses in reference/back views; locally useful, some cut edges still too straight.",
+    "Day-c-front broad main grey slope remains; actual camera is Blender(65,-70,40). Six selected unobstructed pixel rays hit southern-to-eastern main terrain, not the three targeted west/north rock shoulders.",
+    "Choose next authored cuts from actual visible source faces and exact occupied boundaries; preserve compact island/native-building scale and collar-free exterior."
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "round": "32d",
+  "scope": "Bounded independent actual five-image visual comparison and source/image identity; geometry values read from separate existing geometry audit, not rerun",
+  "decision": "retain_major_foreground_composition_progress_fix_known_footprint_and_small_composition_items_before_next_stage; not_complete_art_or_install_acceptance",
+  "run_status": "passed",
+  "run_passed": true,
+  "engine_stages": [
+    {
+      "name": "night-views",
+      "passed": true,
+      "exit_code": 0
+    },
+    {
+      "name": "day-views",
+      "passed": true,
+      "exit_code": 0
+    }
+  ],
+  "images": [
+    {
+      "view": "night-reference",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\foreground-island-32d-20260908T223053Z-7b50ece5f52041238e7bb2fc49dd4936\\images\\night-reference.png",
+      "sha256": "96d2b7c03bcaa3a9d439536eeea273d3a7bfc3bf9fb4439d587cc4279a2d7307",
+      "actually_viewed": true,
+      "manifest_matches": true,
+      "sidecar_sha256": "e03e21d0f088ca53ef4d187eb2b77787b1a7d94f35601e282bf5a6eeb93a055a",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "glb_sha256": "2819f1badd0abe95ffff428045c4550e0eedc18e76a1dff7f0db87c87e1bf9bd",
+      "production_modified": false
+    },
+    {
+      "view": "day-reference",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\foreground-island-32d-20260908T223053Z-7b50ece5f52041238e7bb2fc49dd4936\\images\\day-reference.png",
+      "sha256": "e037230e2c67d592823d0c907b226dc3f091d8de8a7620e61fb57fbab5d360db",
+      "actually_viewed": true,
+      "manifest_matches": true,
+      "sidecar_sha256": "2369783476ae57a7a35a12c135b315174bf1e094449575d8481fb4a11d2aeceb",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "glb_sha256": "2819f1badd0abe95ffff428045c4550e0eedc18e76a1dff7f0db87c87e1bf9bd",
+      "production_modified": false
+    },
+    {
+      "view": "day-a-front",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\foreground-island-32d-20260908T223053Z-7b50ece5f52041238e7bb2fc49dd4936\\images\\day-a-front.png",
+      "sha256": "cce2413af8dbffca0f64d50337968cc1379b49f33e8797d5b51353874ad1643e",
+      "actually_viewed": true,
+      "manifest_matches": true,
+      "sidecar_sha256": "0c0a6138260df23bf73c71c8b38de25b9126cafd9407b145b4daf4633bd6295e",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "glb_sha256": "2819f1badd0abe95ffff428045c4550e0eedc18e76a1dff7f0db87c87e1bf9bd",
+      "production_modified": false
+    },
+    {
+      "view": "day-a-back",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\foreground-island-32d-20260908T223053Z-7b50ece5f52041238e7bb2fc49dd4936\\images\\day-a-back.png",
+      "sha256": "73bfca9ec3c52de2dbddc8a368e40f8c9ef513cdafc0347bea2508032f05e265",
+      "actually_viewed": true,
+      "manifest_matches": true,
+      "sidecar_sha256": "aac50f595c54d1e80102eb93429515715c0818824d42db34effa7882d676a5b3",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "glb_sha256": "2819f1badd0abe95ffff428045c4550e0eedc18e76a1dff7f0db87c87e1bf9bd",
+      "production_modified": false
+    },
+    {
+      "view": "day-a-approach",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\foreground-island-32d-20260908T223053Z-7b50ece5f52041238e7bb2fc49dd4936\\images\\day-a-approach.png",
+      "sha256": "904a21f781e2e796795bb7c227a3593797682f8fd24d47b2112d87d8cbc374cc",
+      "actually_viewed": true,
+      "manifest_matches": true,
+      "sidecar_sha256": "25069db3f0e74dcd9e142a57fa0e37c5337240b5e1f3cad008b58b1dcbe4aacf",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "glb_sha256": "2819f1badd0abe95ffff428045c4550e0eedc18e76a1dff7f0db87c87e1bf9bd",
+      "production_modified": false
+    }
+  ],
+  "source_identity": [
+    {
+      "file": "island_a.glb",
+      "candidate_sha256": "2819f1badd0abe95ffff428045c4550e0eedc18e76a1dff7f0db87c87e1bf9bd",
+      "frozen_sha256": "2819f1badd0abe95ffff428045c4550e0eedc18e76a1dff7f0db87c87e1bf9bd",
+      "same": true,
+      "manifest_matches": true
+    },
+    {
+      "file": "island_a.blend",
+      "candidate_sha256": "5e553c3e8ccc6c84cb5cdb3b6e9a10a45d196c00fbf84a45034f632d9cec1d1d",
+      "frozen_sha256": "5e553c3e8ccc6c84cb5cdb3b6e9a10a45d196c00fbf84a45034f632d9cec1d1d",
+      "same": true,
+      "manifest_matches": true
+    }
+  ],
+  "comparisons": [
+    {
+      "path": "E:\\FeiTing\\ref\\1342.png",
+      "sha256": "7acc98104013d9122eb551846b2d7fc1f7549bce8b2e3199eae8f5385a3ea238",
+      "actually_viewed": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\foreground-island-32b-20260908T221322Z-f2197374e6824751bce30284dabdfb95\\images\\night-reference.png",
+      "sha256": "d3c4dd54fd38c0f8bc60a37b69fb58b23bfef642e9d728ca3a288434a09cc4fa",
+      "actually_viewed": true
+    }
+  ],
+  "site_counts": [
+    {
+      "view": "night-reference",
+      "trees_expected": 8,
+      "trees_actual": 8,
+      "unaffected_position_delta_m": 0
+    },
+    {
+      "view": "day-reference",
+      "trees_expected": 8,
+      "trees_actual": 8,
+      "unaffected_position_delta_m": 0
+    },
+    {
+      "view": "day-a-front",
+      "trees_expected": 8,
+      "trees_actual": 8,
+      "unaffected_position_delta_m": 0
+    },
+    {
+      "view": "day-a-back",
+      "trees_expected": 8,
+      "trees_actual": 8,
+      "unaffected_position_delta_m": 0
+    },
+    {
+      "view": "day-a-approach",
+      "trees_expected": 8,
+      "trees_actual": 8,
+      "unaffected_position_delta_m": 0
+    }
+  ],
+  "separate_geometry_evidence_read": {
+    "path": "E:\\FeiTing\\reviews\\round-32d-foreground-independent-geometry.json",
+    "sha256": "277cd8a8840d162b1d79ec148200abdb700aaa1e0006fe3b3bab9ec07addcd2a",
+    "recalculated_by_this_review": false,
+    "tower_bottom_outside_design_pad_m2": 0.02775928495615089,
+    "tower_bottom_footprint_nonplanar_area_m2": 0.014411437,
+    "tower_bottom_terrain_height_error_min_max_m": [
+      -0.059633516466952585,
+      -2.1316282072803006e-14
+    ],
+    "description": "设计pad外0.027759m²；受影响整个相交片0.014907206m²，其中误差超过1mm区域0.014411437m²、最大低5.963cm。不能把设计pad外面积等同于悬空面积。塔底本在pad以下0.5m，非平也不是实证悬空。",
+    "tower_affected_whole_clipped_triangle_area_m2": 0.014907206,
+    "area_clarification_source": "Parent supplied refined final geometric clipping result; corrected before review freeze; no new geometry rerun by visual reviewer"
+  },
+  "visual_findings": [
+    {
+      "feature": "grass_rock_boundary",
+      "decision": "retain",
+      "evidence": "主图约x0–730/y790–941由大片草坡变成窄活动层加可见宽岩前面；32b右前尖楔消失。仍较平齐的大顶沿与广阔整岩面。"
+    },
+    {
+      "feature": "houses",
+      "decision": "local_adjustment",
+      "evidence": "两屋仍完整入画，但近似平行长墙；参考左屋更明显山墙，右屋稍低紧凑。"
+    },
+    {
+      "feature": "trees",
+      "decision": "retain_group_reduce_tallest",
+      "evidence": "左侧群落实际可见，8/8；最高树尖约y560，比参考约y607高，接近灯室。右侧递减群可保留。"
+    },
+    {
+      "feature": "cliff_mass",
+      "decision": "unfinished_art_record",
+      "evidence": "day-a-front/approach完整厚岩成立；两个突岩像独立凸按钮，主体坡面过大均匀，参考的错位肩/裂隙未做到。未从图像推断漂浮或零厚度。"
+    }
+  ],
+  "proposed_parent_changes_assessment": {
+    "left_house_yaw_pi_over_2": "方向合理，以实际主图显露山墙为准；yaw正负及精确值不是参考可直接证明，联动真实pad/入口。",
+    "right_house_lower_1_5m": "方向合理，形成较低右肩；具体1.5m为设计试值，保留可见立面和真实短路高差。",
+    "tallest_tree_scale_1_6_to_1_2": "合理试值；保持左侧群树层次，勿整体缩掉全部树。",
+    "tower_footprint_fix": "先修真实阶梯底投影及相邻地面，不能用9点passed覆盖已发现非平小区。",
+    "move_to_other_scene_priorities": "上述局部修正证据通过后支持冻结阶段进展并转右岸/水光；保留A岩壁造型待细化，不需隐藏背坡任意精细化。"
+  },
+  "full_goal_complete": false,
+  "production_modified_by_reviewer": false
+}

@@ -1,0 +1,177 @@
+{
+  "round": "31i",
+  "scope": "Actual31h to31i shared-edge shelf creation and5control changes; no old same-topology normal inversion and no31g deletion-count reuse.",
+  "files": {
+    "captures\\lantern_island_study_31i\\island_c.glb": "59f6797c28594b591333c29b32ffaebbc333ad459a6e9184003264f13239a267",
+    "captures\\lantern_island_study_31i\\geometry-evidence.json": "9dec05210c242d17a355d27c925eb42ca48fc63db4ec3954226010de8551064e",
+    "captures\\lantern_island_study_31i\\reform-plan.json": "e4beb3b9f9c569c3a85eda7489dc541c3d33c0139419fd4adc6ff9ed2f2621c3",
+    "captures\\lantern_island_study_31h\\island_c.glb": "a79a56f02614dc20bddaed2df6c224d8fcc3e50a5cb7eac6dde7056e04e4161a"
+  },
+  "native_objects": 19,
+  "actual_main_triangles": 2228,
+  "closed_oppositely_paired_edges": true,
+  "connected_components_vertices": [
+    1116
+  ],
+  "minimum_actual_triangle_area_m2": 1.4351405588411331e-06,
+  "actual_volume_m3": 21619.521949978895,
+  "path_and17rocks_source_exact_actual_triangles_present": [
+    "island_c terrain fitted keeper paths",
+    "West broken shoulder",
+    "Southwest leaning crag",
+    "South broad low spur",
+    "East high fracture",
+    "Northeast sloping shoulder",
+    "North broken ridge",
+    "Northwest split buttress",
+    "West rooted toe",
+    "Southwest wash ledge",
+    "South low reef",
+    "East submerged root",
+    "Northeast low cluster",
+    "North tidal end",
+    "Northwest rooted slab",
+    "West waterline satellite",
+    "South low satellite",
+    "East tidal satellite"
+  ],
+  "actual_path_glb_counter_exact": true,
+  "required_supports": [
+    {
+      "region": "road_footprint",
+      "expected_support_projection_area_m2": 25.572388056364687,
+      "same_linear_height_coverage_m2": 25.57238805636466,
+      "unpreserved_area_m2": 0.0,
+      "higher_than_old_by_over_0_1mm_area_m2": 0.0,
+      "all_intersecting_up_surface_height_delta_min_max_m": [
+        0.0,
+        0.0
+      ],
+      "pass": true
+    },
+    {
+      "region": "padded_sites",
+      "expected_support_projection_area_m2": 123.97999999993661,
+      "same_linear_height_coverage_m2": 123.97999999993662,
+      "unpreserved_area_m2": 0.0,
+      "higher_than_old_by_over_0_1mm_area_m2": 0.0,
+      "all_intersecting_up_surface_height_delta_min_max_m": [
+        0.0,
+        0.0
+      ],
+      "pass": true
+    }
+  ],
+  "actual_moved_vertices_present_in_GLB": [
+    {
+      "source_index": 1105,
+      "before": [
+        -1.0,
+        12.0,
+        6.099999904632568
+      ],
+      "after": [
+        0.6,
+        13.2,
+        6.4
+      ],
+      "displacement_m": 2.0223748557625183
+    },
+    {
+      "source_index": 1106,
+      "before": [
+        -9.0,
+        17.0,
+        2.799999952316284
+      ],
+      "after": [
+        -10.5,
+        18,
+        3.5
+      ],
+      "displacement_m": 1.933907977841036
+    },
+    {
+      "source_index": 1107,
+      "before": [
+        2.0,
+        20.0,
+        1.399999976158142
+      ],
+      "after": [
+        3.2,
+        20,
+        1.7
+      ],
+      "displacement_m": 1.2369316934677983
+    },
+    {
+      "source_index": 1108,
+      "before": [
+        -14.0,
+        10.0,
+        5.400000095367432
+      ],
+      "after": [
+        -14,
+        10,
+        6.2
+      ],
+      "displacement_m": 0.7999999046325685
+    },
+    {
+      "source_index": 1111,
+      "before": [
+        -4.0,
+        24.0,
+        0.6499999761581421
+      ],
+      "after": [
+        -4.5,
+        23,
+        2.0
+      ],
+      "displacement_m": 1.752854832658146
+    }
+  ],
+  "actual_new_split_vertices_present_in_GLB": 4,
+  "base_geometry_and_support_pass": true,
+  "local_triangle_intersection_check_pending": false,
+  "actual_tree_upper_envelope_pending": false,
+  "shoulder_shared_edge_check_pending": false,
+  "pass": true,
+  "full_reference_accepted": false,
+  "limits": [
+    "Actual14tree upper-envelope and shelf shared-edge/width/crease supplements completed. Runtime instance grounding separately checked by root.",
+    "No same-topology normal-cosine assertion after edge splits and BEAUTY triangulation.",
+    "Native shape names/counts do not establish visual short-shoulder success."
+  ],
+  "local_triangle_intersections": {
+    "scope": "Actual finite GLB main-shell triangle intersection check for every pair whose AABBs overlap and at least one triangle differs from31h. Includes all original unchanged triangles as possible partners. No analytic mapping-injectivity argument.",
+    "changed_or_new_triangulation_triangles": 60,
+    "statistics": {
+      "aabb_candidate_pairs": 1053,
+      "noncoplanar_contact_pairs": 836,
+      "coplanar_contact_pairs": 2,
+      "shared_feature_only_pairs": 838
+    },
+    "intersection_candidates_outside_legal_shared_features": [],
+    "local_self_intersection_pass": true,
+    "tolerances": {
+      "aabb_margin_m": 1e-07,
+      "plane_m": 1e-06,
+      "shared_coordinate_m": 1e-05,
+      "allowed_shared_feature_band_m": 0.0001
+    },
+    "limits": [
+      "Local changed-region versus entire main-shell sweep only; unchanged/unchanged baseline pairs excluded.",
+      "Legal shared vertices/edges ignored only inside0.1mm band; smaller defects are outside stated resolution.",
+      "17 independent rocks deliberately intersect main shell as separate objects; their authored contact is not a shell self-intersection.",
+      "Numerical triangle test is bounded-resolution evidence, not exact-predicate proof or complete walking test."
+    ]
+  },
+  "old_tree_disk_surface_preserved": null,
+  "actual_tree_base_support": true,
+  "actual_tree_base_report": "reviews/round-31i-actual-tree-support.json",
+  "shoulder_band_report": "reviews/round-31i-shoulder-band-check.json"
+}

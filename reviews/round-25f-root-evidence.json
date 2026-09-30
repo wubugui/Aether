@@ -1,0 +1,134 @@
+{
+  "run_id": "village-paving-25f-20260908T142029Z-3a929b3fadd3459883fbdc78e6dae14e",
+  "run_terminal_passed": true,
+  "manifest_sha256": "9a2cce7ac2e6414b70b98023239fcf8a0bdbe1ddd80bb070134ff01d052ef136",
+  "binding_count": 146,
+  "all_artifact_sha256_verified": true,
+  "views": [
+    {
+      "name": "day-foreground",
+      "image": "captures\\validation_runs\\village-paving-25f-20260908T142029Z-3a929b3fadd3459883fbdc78e6dae14e\\images\\day-foreground.png",
+      "image_sha256": "1b8aa508137dd165e50961c0ab06e2b80abc731ce465e947d46c98db9e034f34",
+      "sidecar_sha256": "11cff201a2cd81b34b3402f257455c0d47a852c57f1a86d743307783690b87e9",
+      "samples": 6639,
+      "minimum_actual_world_ground_clearance_m": 0.0598297119140625,
+      "maximum_paving_top_error_m": 0.000332641601563211,
+      "door_interfaces": 9,
+      "camera": {
+        "fov": 62.0,
+        "position": [
+          -2272.0,
+          36.0,
+          -1723.0
+        ],
+        "rotation": [
+          -0.588207840919495,
+          -0.766532480716705,
+          0.0
+        ]
+      },
+      "root_directly_viewed": true
+    },
+    {
+      "name": "day-bay",
+      "image": "captures\\validation_runs\\village-paving-25f-20260908T142029Z-3a929b3fadd3459883fbdc78e6dae14e\\images\\day-bay.png",
+      "image_sha256": "f8226a9691e941139e29b73380dcb6361ef96f004dc192ec733b66fed66ad7ba",
+      "sidecar_sha256": "a2acff055c98cd7dbb4e5e6185f57c1faba9319e7bd76e73355f185134221135",
+      "samples": 6639,
+      "minimum_actual_world_ground_clearance_m": 0.0598297119140625,
+      "maximum_paving_top_error_m": 0.000332641601563211,
+      "door_interfaces": 9,
+      "camera": {
+        "fov": 62.0,
+        "position": [
+          -2270.0,
+          32.0,
+          -1851.0
+        ],
+        "rotation": [
+          -0.490470767021179,
+          -1.00748002529144,
+          0.0
+        ]
+      },
+      "root_directly_viewed": true
+    },
+    {
+      "name": "door-junction",
+      "image": "captures\\validation_runs\\village-paving-25f-20260908T142029Z-3a929b3fadd3459883fbdc78e6dae14e\\images\\door-junction.png",
+      "image_sha256": "24d395c80b2326aa4feb683889a26fa423b28e171b6bdf10a0fceeaccd4bb974",
+      "sidecar_sha256": "59eb596f7892f1cd398de089fca1405ba29be2e9577e720e3a68d1f9c0f6f5c0",
+      "samples": 6639,
+      "minimum_actual_world_ground_clearance_m": 0.0598297119140625,
+      "maximum_paving_top_error_m": 0.000332641601563211,
+      "door_interfaces": 9,
+      "camera": {
+        "fov": 58.0,
+        "position": [
+          -2263.0,
+          15.0,
+          -1744.0
+        ],
+        "rotation": [
+          -0.309008598327637,
+          -1.07144963741302,
+          0.0
+        ]
+      },
+      "root_directly_viewed": true
+    },
+    {
+      "name": "upper-street",
+      "image": "captures\\validation_runs\\village-paving-25f-20260908T142029Z-3a929b3fadd3459883fbdc78e6dae14e\\images\\upper-street.png",
+      "image_sha256": "f1aad01f53d1042b875f80d20ac3ed7d481ef4d3ecb4a5834e9d8b0bf8af736c",
+      "sidecar_sha256": "beb3d0e6f6909cba620b88fbcae28ffd75a16217fce4dcbad441b17a0491fcd2",
+      "samples": 6639,
+      "minimum_actual_world_ground_clearance_m": 0.0598297119140625,
+      "maximum_paving_top_error_m": 0.000332641601563211,
+      "door_interfaces": 9,
+      "camera": {
+        "fov": 62.0,
+        "position": [
+          -2221.0,
+          31.0,
+          -1744.0
+        ],
+        "rotation": [
+          -0.93294882774353,
+          1.34399747848511,
+          0.0
+        ]
+      },
+      "root_directly_viewed": true
+    },
+    {
+      "name": "night-reference",
+      "image": "captures\\validation_runs\\village-paving-25f-20260908T142029Z-3a929b3fadd3459883fbdc78e6dae14e\\images\\night-reference.png",
+      "image_sha256": "81aa142d7d8a5780902b588dc13e24c74262fe839f0e028578f9c5039807cef3",
+      "sidecar_sha256": "d0f75f453225e439101296e846821db8273ebc7b67e93c71bf63291cc916b7a1",
+      "samples": 6639,
+      "minimum_actual_world_ground_clearance_m": 0.0598297119140625,
+      "maximum_paving_top_error_m": 0.000332641601563211,
+      "door_interfaces": 9,
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -2278.0,
+          60.0,
+          -1632.0
+        ],
+        "rotation": [
+          -0.00509163970127702,
+          0.60683274269104,
+          0.0
+        ]
+      },
+      "root_directly_viewed": true
+    }
+  ],
+  "native_gate": "reviews/round-25f-village-grading-native-check.json",
+  "independent_review": "reviews/round-25f-village-earthworks-independent-review.md",
+  "root_visual_conclusion": "25c large exposed spikes and long black radial crease removed; support retaining this local fill repair. Roads still have scalloped repeated stair fronts; green fill has smaller triangular facets. Full1342/20-reference art remains unaccepted.",
+  "export_limit": "Independent review finds extremely thin exported triangles whose gradients exceed solver limits; no claim that every actual exported face exactly obeys design bounds.",
+  "production_installed": false
+}

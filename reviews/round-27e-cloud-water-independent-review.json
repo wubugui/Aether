@@ -1,0 +1,20 @@
+{
+  "round": "27e",
+  "reviewer": "independent_cloud_water_27_final_review",
+  "run_id": "coast-environment-27e-20260908T152222Z-bded23dbcd5c4849967297a6ad1a8f20",
+  "reference_directly_viewed": "ref/1342.png",
+  "directly_viewed_images": ["night-reference.png", "night-reverse.png", "day-reference.png", "night-reference-later.png"],
+  "evidence_read": ["reviews/round-27e-root-evidence.json"],
+  "technical_evidence_reported_pass": true,
+  "independent_technical_recomputation": false,
+  "local_improvements": ["Water highlights are more horizontal and less checker-like than 27d", "Day water has less blocky noise"],
+  "visual_blockers": ["Foreground highlight triangles remain oversized and mechanically aligned", "Bright reflection clumps and regular bands lack the reference's irregular broken wavelets", "Cloud layering and ball-like distant lumps remain unresolved"],
+  "moon_visible_in_reference_night_pngs": true,
+  "t0_t18_water_pattern_visibly_different": true,
+  "smooth_animation_proven": false,
+  "visual_acceptance": false,
+  "verdict": "reject",
+  "production_installed": false,
+  "full_goal_status": "active",
+  "scope": "Environment only; characters excluded. Direct saved PNG review, no engine launch or geometry revalidation."
+}

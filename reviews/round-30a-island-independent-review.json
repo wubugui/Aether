@@ -1,0 +1,57 @@
+{
+  "round": "30a",
+  "run_id": "lantern-island-30a-20260908T180129Z-961944bd320b46a4bb5f15256ceb5c8f",
+  "observed_manifest_status": "passed",
+  "visual_verdict": "retain_proportion_baseline_continue_geometry_rework",
+  "full_reference_accepted": false,
+  "all_reference_goal_complete": false,
+  "images": [
+    {
+      "view": "night-reference",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-30a-20260908T180129Z-961944bd320b46a4bb5f15256ceb5c8f\\images\\night-reference.png",
+      "sha256": "2a709638aeb7143ca5193542cf037c24b0003dbbe06183ed1cb68377da4cd755"
+    },
+    {
+      "view": "day-reference",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-30a-20260908T180129Z-961944bd320b46a4bb5f15256ceb5c8f\\images\\day-reference.png",
+      "sha256": "dbdd9b6b234c6c26e65a664f935a6da6fa397302bbcf090905ac7e25c264254b"
+    },
+    {
+      "view": "day-d-front",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-30a-20260908T180129Z-961944bd320b46a4bb5f15256ceb5c8f\\images\\day-d-front.png",
+      "sha256": "0b9d99754d4f0a9a5f50b852639edcf6555f57817711f15a6a24f1c3562a8279"
+    },
+    {
+      "view": "day-d-back",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-30a-20260908T180129Z-961944bd320b46a4bb5f15256ceb5c8f\\images\\day-d-back.png",
+      "sha256": "25be34b58d36f03a83bd584b923eaf344622cb228c4260829e3dce774917c191"
+    },
+    {
+      "view": "day-c-front",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-30a-20260908T180129Z-961944bd320b46a4bb5f15256ceb5c8f\\images\\day-c-front.png",
+      "sha256": "8f01627cd3d99fe8a4c4334c114a9ea65f799f21ad5629c91a90e8c689918f7e"
+    }
+  ],
+  "geometry_evidence": "reviews/round-30a-independent-geometry.json",
+  "detailed_review": "reviews/round-30a-island-independent-review.md",
+  "local_improvements": [
+    "Landmass/building proportion substantially closer than29e",
+    "Keeper house now right of tower in fixed reference view",
+    "Actual front/back geometry maintained without29c long wedges"
+  ],
+  "remaining_failures": [
+    "Slightly narrow landmass and left-shifted composition",
+    "Continuous coastal bands and broad grey slopes",
+    "Detached polygonal crag forms and weak compact interlocking rock roots"
+  ],
+  "scope_limits": [
+    "No new Blender/GPU run or native geometry recheck",
+    "Original building world transforms checked separately by root",
+    "No full flight/weather/whole-reference acceptance"
+  ]
+}

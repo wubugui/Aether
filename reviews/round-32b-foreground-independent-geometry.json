@@ -1,0 +1,1219 @@
+{
+  "round": "32b",
+  "scope": "Independent actual saved native reopen plus exported11mesh topology, full triangle-clipped3design pads and actual frozen building bottom footprints, cap underside/core top interface over pads.",
+  "files": {
+    "captures\\foreground_island_study_32b\\island_a.blend": "2714e9a66d52b766c0d574e8cbf175ab3a5481c8903dc40277428771aeb24a1d",
+    "captures\\foreground_island_study_32b\\island_a.glb": "5a7abd745f84ac7b33b2d82cb5e98ef883eb22104d2f890596ee2fe7a94c34c0",
+    "captures\\foreground_island_study_32b\\design-plan.json": "ab61879732125e8c6718dde8eb46a4854b9603f387fac13564f8325f1bb0be87",
+    "captures\\foreground_island_study_32b\\native-check.json": "adef1789c060826391c05f74d0854aa685e26b5edebad3ba083e2cfe399aade2",
+    "reviews\\round-32b-reopened-source.json": "de42c4b600297ea9172228d9a0dd21f2734f563125d1e283a554cd4ce0810027",
+    "captures\\validation_runs\\lantern-island-31i-20260908T214100Z-02d75d5cf747426d88e00816dda55bd0\\study-inputs\\keeper_house.glb": "8f70f7ba4d6c94d23b310b73f6fee9d171f6efb32d255be2574254e639b6176b",
+    "assets\\models\\lighthouse.glb": "79b5fd32ec06a3c3cf0fc948e31333c9d374fb018437f2fa630293e266382eb1"
+  },
+  "source_reopen_report": "reviews/round-32b-reopened-source.json",
+  "actual_source_reopened_and_unchanged": true,
+  "native_closed_positive_pass": true,
+  "actual_GLB_mesh_checks": [
+    {
+      "object": "island_a grass and exposed rock terrain",
+      "actual_GLB_triangles": 11956,
+      "exact_coordinate_manifold_edges": true,
+      "opposite_directed_edges": true,
+      "signed_volume_m3": 3467.327549960513,
+      "minimum_triangle_area_m2": 1.9511088133368402e-07,
+      "components_vertices": [
+        5980
+      ],
+      "native_loop_triangle_counter_exact": true,
+      "pass": true
+    },
+    {
+      "object": "island_a faulted bedrock",
+      "actual_GLB_triangles": 7632,
+      "exact_coordinate_manifold_edges": true,
+      "opposite_directed_edges": true,
+      "signed_volume_m3": 167304.2484575531,
+      "minimum_triangle_area_m2": 3.307967015820288e-09,
+      "components_vertices": [
+        3818
+      ],
+      "native_loop_triangle_counter_exact": true,
+      "pass": true
+    },
+    {
+      "object": "island_a cliff outcrop 00",
+      "actual_GLB_triangles": 60,
+      "exact_coordinate_manifold_edges": true,
+      "opposite_directed_edges": true,
+      "signed_volume_m3": 826.6757961619456,
+      "minimum_triangle_area_m2": 1.3446653026764104,
+      "components_vertices": [
+        32
+      ],
+      "native_loop_triangle_counter_exact": true,
+      "pass": true
+    },
+    {
+      "object": "island_a cliff outcrop 01",
+      "actual_GLB_triangles": 78,
+      "exact_coordinate_manifold_edges": true,
+      "opposite_directed_edges": true,
+      "signed_volume_m3": 2642.627335146026,
+      "minimum_triangle_area_m2": 0.03870998540661957,
+      "components_vertices": [
+        41
+      ],
+      "native_loop_triangle_counter_exact": true,
+      "pass": true
+    },
+    {
+      "object": "island_a cliff outcrop 02",
+      "actual_GLB_triangles": 72,
+      "exact_coordinate_manifold_edges": true,
+      "opposite_directed_edges": true,
+      "signed_volume_m3": 1521.2154316179387,
+      "minimum_triangle_area_m2": 0.46632084190663936,
+      "components_vertices": [
+        38
+      ],
+      "native_loop_triangle_counter_exact": true,
+      "pass": true
+    },
+    {
+      "object": "island_a low shore ledge 00",
+      "actual_GLB_triangles": 60,
+      "exact_coordinate_manifold_edges": true,
+      "opposite_directed_edges": true,
+      "signed_volume_m3": 249.86019749540287,
+      "minimum_triangle_area_m2": 0.32955497045216897,
+      "components_vertices": [
+        32
+      ],
+      "native_loop_triangle_counter_exact": true,
+      "pass": true
+    },
+    {
+      "object": "island_a low shore ledge 01",
+      "actual_GLB_triangles": 60,
+      "exact_coordinate_manifold_edges": true,
+      "opposite_directed_edges": true,
+      "signed_volume_m3": 414.3381381617785,
+      "minimum_triangle_area_m2": 0.5539059315705086,
+      "components_vertices": [
+        32
+      ],
+      "native_loop_triangle_counter_exact": true,
+      "pass": true
+    },
+    {
+      "object": "island_a low shore ledge 02",
+      "actual_GLB_triangles": 76,
+      "exact_coordinate_manifold_edges": true,
+      "opposite_directed_edges": true,
+      "signed_volume_m3": 156.95275683894909,
+      "minimum_triangle_area_m2": 0.010675782849188678,
+      "components_vertices": [
+        40
+      ],
+      "native_loop_triangle_counter_exact": true,
+      "pass": true
+    },
+    {
+      "object": "island_a low shore ledge 03",
+      "actual_GLB_triangles": 82,
+      "exact_coordinate_manifold_edges": true,
+      "opposite_directed_edges": true,
+      "signed_volume_m3": 278.1590264230357,
+      "minimum_triangle_area_m2": 0.0072559699116341286,
+      "components_vertices": [
+        43
+      ],
+      "native_loop_triangle_counter_exact": true,
+      "pass": true
+    },
+    {
+      "object": "island_a low shore ledge 04",
+      "actual_GLB_triangles": 72,
+      "exact_coordinate_manifold_edges": true,
+      "opposite_directed_edges": true,
+      "signed_volume_m3": 578.098013394947,
+      "minimum_triangle_area_m2": 0.006453340365274751,
+      "components_vertices": [
+        38
+      ],
+      "native_loop_triangle_counter_exact": true,
+      "pass": true
+    },
+    {
+      "object": "island_a terrain fitted keeper paths",
+      "actual_GLB_triangles": 3796,
+      "exact_coordinate_manifold_edges": true,
+      "opposite_directed_edges": true,
+      "signed_volume_m3": 54.51991646720338,
+      "minimum_triangle_area_m2": 3.1348701502091614e-06,
+      "components_vertices": [
+        1900
+      ],
+      "native_loop_triangle_counter_exact": true,
+      "pass": true
+    }
+  ],
+  "building_assets": {
+    "house": {
+      "path": "captures\\validation_runs\\lantern-island-31i-20260908T214100Z-02d75d5cf747426d88e00816dda55bd0\\study-inputs\\keeper_house.glb",
+      "sha256": "8f70f7ba4d6c94d23b310b73f6fee9d171f6efb32d255be2574254e639b6176b",
+      "native_bottom_z_m": -0.6499999761581421,
+      "native_bottom_vertex_hull_xy": [
+        [
+          -3.9000000953674316,
+          -5.400000095367432
+        ],
+        [
+          -3.9000000953674316,
+          5.400000095367432
+        ],
+        [
+          3.9000000953674316,
+          5.400000095367432
+        ],
+        [
+          3.9000000953674316,
+          -5.400000095367432
+        ],
+        [
+          -3.9000000953674316,
+          -5.400000095367432
+        ]
+      ],
+      "actual_bottom_triangle_union_geojson": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.9000000953674316,
+              5.400000095367432
+            ],
+            [
+              3.9000000953674316,
+              5.400000095367432
+            ],
+            [
+              3.9000000953674316,
+              -5.400000095367432
+            ],
+            [
+              -3.9000000953674316,
+              -5.400000095367432
+            ],
+            [
+              -3.9000000953674316,
+              5.400000095367432
+            ]
+          ]
+        ]
+      },
+      "native_bottom_area_m2": 84.2400035476685,
+      "vertex_hull_area_m2": 84.2400035476685
+    },
+    "tower": {
+      "path": "assets\\models\\lighthouse.glb",
+      "sha256": "79b5fd32ec06a3c3cf0fc948e31333c9d374fb018437f2fa630293e266382eb1",
+      "native_bottom_z_m": -0.5,
+      "native_bottom_vertex_hull_xy": [
+        [
+          0.0,
+          -4.015000343322754
+        ],
+        [
+          -2.839033842086792,
+          -2.839033842086792
+        ],
+        [
+          -4.015000343322754,
+          -0.0
+        ],
+        [
+          -2.839033842086792,
+          2.839033842086792
+        ],
+        [
+          0.0,
+          4.015000343322754
+        ],
+        [
+          4.51606559753418,
+          2.8945584297180176
+        ],
+        [
+          5.240102767944336,
+          1.1465785503387451
+        ],
+        [
+          2.839033842086792,
+          -2.839033842086792
+        ],
+        [
+          0.0,
+          -4.015000343322754
+        ]
+      ],
+      "actual_bottom_triangle_union_geojson": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -4.015000343322754,
+              -0.0
+            ],
+            [
+              -2.839033842086792,
+              2.839033842086792
+            ],
+            [
+              0.0,
+              4.015000343322754
+            ],
+            [
+              2.839033842086792,
+              2.839033842086792
+            ],
+            [
+              3.0649984519404923,
+              2.293507099773687
+            ],
+            [
+              3.428659258193405,
+              2.444140295387287
+            ],
+            [
+              3.428659200668335,
+              2.4441404342651367
+            ],
+            [
+              3.9063046302185445,
+              2.6419874840461084
+            ],
+            [
+              3.9063045978546143,
+              2.6419875621795654
+            ],
+            [
+              4.51606559753418,
+              2.8945584297180176
+            ],
+            [
+              5.240102767944336,
+              1.1465785503387451
+            ],
+            [
+              4.762456847580388,
+              0.9487312958816094
+            ],
+            [
+              4.762456893920898,
+              0.9487311840057373
+            ],
+            [
+              4.284810990677063,
+              0.750883828612357
+            ],
+            [
+              4.284811019897461,
+              0.7508837580680847
+            ],
+            [
+              3.7890356535359837,
+              0.5455269352885761
+            ],
+            [
+              4.015000343322754,
+              -0.0
+            ],
+            [
+              2.839033842086792,
+              -2.839033842086792
+            ],
+            [
+              0.0,
+              -4.015000343322754
+            ],
+            [
+              -2.839033842086792,
+              -2.839033842086792
+            ],
+            [
+              -4.015000343322754,
+              -0.0
+            ]
+          ],
+          [
+            [
+              4.762456808553921,
+              0.9487312797163305
+            ],
+            [
+              4.762456808553921,
+              0.9487312797163304
+            ],
+            [
+              4.762456893920898,
+              0.9487311840057373
+            ],
+            [
+              4.762456808553921,
+              0.9487312797163305
+            ]
+          ],
+          [
+            [
+              4.12400890254433,
+              1.6645376642117777
+            ],
+            [
+              3.7176483016207937,
+              2.120135544337184
+            ],
+            [
+              3.7176483016207937,
+              2.1201355443371837
+            ],
+            [
+              4.12400890254433,
+              1.6645376642117777
+            ]
+          ]
+        ]
+      },
+      "native_bottom_area_m2": 48.56650751082385,
+      "vertex_hull_area_m2": 51.62368913635024
+    }
+  },
+  "sites": [
+    {
+      "site": "left_house",
+      "design": {
+        "id": "left_house",
+        "xy": [
+          -23,
+          3
+        ],
+        "half": [
+          4.4,
+          6.15
+        ],
+        "yaw": 0.0,
+        "height": 28.0,
+        "scale": 1.0
+      },
+      "design_pad_polygon_xy": [
+        [
+          -27.4,
+          -3.1500000000000004
+        ],
+        [
+          -18.6,
+          -3.1500000000000004
+        ],
+        [
+          -18.6,
+          9.15
+        ],
+        [
+          -27.4,
+          9.15
+        ],
+        [
+          -27.4,
+          -3.1500000000000004
+        ]
+      ],
+      "actual_asset_bottom_footprint_geojson": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -26.90000009536743,
+              8.400000095367432
+            ],
+            [
+              -19.09999990463257,
+              8.400000095367432
+            ],
+            [
+              -19.09999990463257,
+              -2.4000000953674316
+            ],
+            [
+              -26.90000009536743,
+              -2.4000000953674316
+            ],
+            [
+              -26.90000009536743,
+              8.400000095367432
+            ]
+          ]
+        ]
+      },
+      "actual_asset_base_outside_pad_area_m2": 0.0,
+      "full_design_pad_surface": {
+        "footprint_area_m2": 108.23999999999997,
+        "covered_area_m2": 108.23999999999418,
+        "uncovered_area_m2": 5.780655187842469e-12,
+        "not_planar_within1mm_area_m2": 5.780655187842469e-12,
+        "height_error_min_max_m": [
+          -1.0218293944319612e-05,
+          1.1444091796875e-05
+        ],
+        "bad_clipped_triangles": [],
+        "pass": true
+      },
+      "actual_building_bottom_footprint_surface": {
+        "footprint_area_m2": 84.2400035476685,
+        "covered_area_m2": 84.2400035476685,
+        "uncovered_area_m2": 0.0,
+        "not_planar_within1mm_area_m2": 0.0,
+        "height_error_min_max_m": [
+          -7.720220711604497e-06,
+          7.439721894542117e-06
+        ],
+        "bad_clipped_triangles": [],
+        "pass": true
+      },
+      "full_design_pad_cap_core_interface": {
+        "footprint_area_m2": 108.23999999999997,
+        "cap_bottom_uncovered_area_m2": 5.780655187842469e-12,
+        "interface_unmatched_within1mm_area_m2": 5.780655187842469e-12,
+        "cap_bottom_minus_core_top_min_max_m": [
+          -5.64943728601985e-15,
+          2.8632282227571534e-15
+        ],
+        "mismatch_pairs": [],
+        "pass": true
+      },
+      "actual_asset_footprint_cap_core_interface": {
+        "footprint_area_m2": 84.2400035476685,
+        "cap_bottom_uncovered_area_m2": 0.0,
+        "interface_unmatched_within1mm_area_m2": 0.0,
+        "cap_bottom_minus_core_top_min_max_m": [
+          -1.6534895246296551e-15,
+          6.453342931706732e-16
+        ],
+        "mismatch_pairs": [],
+        "pass": true
+      },
+      "actual_asset_bottom_world_z_if_instance_origin_on_pad_m": 27.350000023841858
+    },
+    {
+      "site": "right_house",
+      "design": {
+        "id": "right_house",
+        "xy": [
+          -8,
+          19
+        ],
+        "half": [
+          3.8,
+          5.3
+        ],
+        "yaw": -0.15,
+        "height": 28.5,
+        "scale": 0.85
+      },
+      "design_pad_polygon_xy": [
+        [
+          -12.549352198267037,
+          14.327378190338653
+        ],
+        [
+          -5.034692005953115,
+          13.191648383539299
+        ],
+        [
+          -3.4506478017329636,
+          23.672621809661347
+        ],
+        [
+          -10.965307994046885,
+          24.8083516164607
+        ],
+        [
+          -12.549352198267037,
+          14.327378190338653
+        ]
+      ],
+      "actual_asset_bottom_footprint_geojson": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -10.591855163342434,
+              24.033846749142292
+            ],
+            [
+              -4.036302756322324,
+              23.043071906614728
+            ],
+            [
+              -5.408144836657567,
+              13.966153250857708
+            ],
+            [
+              -11.963697243677675,
+              14.956928093385274
+            ],
+            [
+              -10.591855163342434,
+              24.033846749142292
+            ]
+          ]
+        ]
+      },
+      "actual_asset_base_outside_pad_area_m2": 0.0,
+      "full_design_pad_surface": {
+        "footprint_area_m2": 80.56000000000002,
+        "covered_area_m2": 80.55999999999992,
+        "uncovered_area_m2": 9.997033410093035e-14,
+        "not_planar_within1mm_area_m2": 9.997033410093035e-14,
+        "height_error_min_max_m": [
+          -7.629394069397222e-06,
+          1.1444519085301863e-05
+        ],
+        "bad_clipped_triangles": [],
+        "pass": true
+      },
+      "actual_building_bottom_footprint_surface": {
+        "footprint_area_m2": 60.86340256319049,
+        "covered_area_m2": 60.86340256319049,
+        "uncovered_area_m2": 0.0,
+        "not_planar_within1mm_area_m2": 0.0,
+        "height_error_min_max_m": [
+          -7.209282887998825e-06,
+          9.804759510956274e-06
+        ],
+        "bad_clipped_triangles": [],
+        "pass": true
+      },
+      "full_design_pad_cap_core_interface": {
+        "footprint_area_m2": 80.56000000000002,
+        "cap_bottom_uncovered_area_m2": 9.997033410093035e-14,
+        "interface_unmatched_within1mm_area_m2": 9.997033434984708e-14,
+        "cap_bottom_minus_core_top_min_max_m": [
+          -4.312398829142694e-07,
+          1.5395460038221595e-11
+        ],
+        "mismatch_pairs": [],
+        "pass": true
+      },
+      "actual_asset_footprint_cap_core_interface": {
+        "footprint_area_m2": 60.86340256319049,
+        "cap_bottom_uncovered_area_m2": 0.0,
+        "interface_unmatched_within1mm_area_m2": 0.0,
+        "cap_bottom_minus_core_top_min_max_m": [
+          -3.321643832873935e-16,
+          6.6235808217950956e-12
+        ],
+        "mismatch_pairs": [],
+        "pass": true
+      },
+      "actual_asset_bottom_world_z_if_instance_origin_on_pad_m": 27.94750002026558
+    },
+    {
+      "site": "tower",
+      "design": {
+        "id": "tower",
+        "xy": [
+          -3,
+          6
+        ],
+        "half": [
+          4.25,
+          4.25
+        ],
+        "yaw": 0.25,
+        "height": 30.0621032714844,
+        "scale": 1.0
+      },
+      "design_pad_polygon_xy": [
+        [
+          -6.066410965438518,
+          0.8306553808980377
+        ],
+        [
+          2.169344619101963,
+          2.933589034561482
+        ],
+        [
+          0.06641096543851788,
+          11.169344619101963
+        ],
+        [
+          -8.169344619101963,
+          9.066410965438518
+        ],
+        [
+          -6.066410965438518,
+          0.8306553808980377
+        ]
+      ],
+      "actual_asset_bottom_footprint_geojson": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -6.89018370581792,
+              5.006673018653681
+            ],
+            [
+              -6.453163368244642,
+              8.048386942264937
+            ],
+            [
+              -3.993326981346318,
+              9.89018370581792
+            ],
+            [
+              -0.9516130577350626,
+              9.453163368244642
+            ],
+            [
+              -0.5977076644533286,
+              8.98050027037134
+            ],
+            [
+              -0.28261944097553915,
+              9.21642176801599
+            ],
+            [
+              -0.2826195310712243,
+              9.216421888344534
+            ],
+            [
+              0.13122891535065184,
+              9.526289722866672
+            ],
+            [
+              0.13122886466231076,
+              9.526289790564185
+            ],
+            [
+              0.6595468389051793,
+              9.921866127004144
+            ],
+            [
+              1.7935325899514822,
+              8.407356371580207
+            ],
+            [
+              1.3796837186117727,
+              8.097488217315531
+            ],
+            [
+              1.3796837911902022,
+              8.097488120382433
+            ],
+            [
+              0.9658349614104087,
+              7.787619872554959
+            ],
+            [
+              0.9658350071753472,
+              7.787619811432981
+            ],
+            [
+              0.5362781873451459,
+              7.4659902464201915
+            ],
+            [
+              0.8901837058179196,
+              6.993326981346319
+            ],
+            [
+              0.4531633682446423,
+              3.9516130577350626
+            ],
+            [
+              -2.006673018653682,
+              2.1098162941820804
+            ],
+            [
+              -5.048386942264937,
+              2.5468366317553577
+            ],
+            [
+              -6.89018370581792,
+              5.006673018653681
+            ]
+          ],
+          [
+            [
+              1.3796836847978975,
+              8.097488191997488
+            ],
+            [
+              1.3796836847978975,
+              8.097488191997488
+            ],
+            [
+              1.3796837911902022,
+              8.097488120382433
+            ],
+            [
+              1.3796836847978975,
+              8.097488191997488
+            ]
+          ],
+          [
+            [
+              0.5839902444662153,
+              8.633087349750381
+            ],
+            [
+              0.07754569116660592,
+              8.973986573555393
+            ],
+            [
+              0.07754569116660637,
+              8.973986573555393
+            ],
+            [
+              0.5839902444662153,
+              8.633087349750381
+            ]
+          ]
+        ]
+      },
+      "actual_asset_base_outside_pad_area_m2": 1.2862446941078975,
+      "full_design_pad_surface": {
+        "footprint_area_m2": 72.25000000000001,
+        "covered_area_m2": 72.24999999999959,
+        "uncovered_area_m2": 4.538803141732249e-13,
+        "not_planar_within1mm_area_m2": 4.538803141732249e-13,
+        "height_error_min_max_m": [
+          -1.144409182529671e-05,
+          1.3351438294506579e-05
+        ],
+        "bad_clipped_triangles": [],
+        "pass": true
+      },
+      "actual_building_bottom_footprint_surface": {
+        "footprint_area_m2": 48.56650751082385,
+        "covered_area_m2": 48.56650751082383,
+        "uncovered_area_m2": 0.0,
+        "not_planar_within1mm_area_m2": 0.0,
+        "height_error_min_max_m": [
+          -9.536743188931496e-06,
+          8.240192014952186e-05
+        ],
+        "bad_clipped_triangles": [],
+        "pass": true
+      },
+      "full_design_pad_cap_core_interface": {
+        "footprint_area_m2": 72.25000000000001,
+        "cap_bottom_uncovered_area_m2": 4.538803141732249e-13,
+        "interface_unmatched_within1mm_area_m2": 4.5388031459829797e-13,
+        "cap_bottom_minus_core_top_min_max_m": [
+          -5.565641527269168e-15,
+          8.555271197696849e-13
+        ],
+        "mismatch_pairs": [],
+        "pass": true
+      },
+      "actual_asset_footprint_cap_core_interface": {
+        "footprint_area_m2": 48.56650751082385,
+        "cap_bottom_uncovered_area_m2": 0.0,
+        "interface_unmatched_within1mm_area_m2": 6.865166338290543e-15,
+        "cap_bottom_minus_core_top_min_max_m": [
+          -5.565644471497086e-15,
+          5.372861294869642e-12
+        ],
+        "mismatch_pairs": [],
+        "pass": true
+      },
+      "actual_asset_bottom_world_z_if_instance_origin_on_pad_m": 29.5621032714844
+    }
+  ],
+  "planned_tree_actual_source_rays": [
+    {
+      "xy": [
+        -38,
+        7
+      ],
+      "scale": 0.95,
+      "all_object_hits": [
+        {
+          "object": "island_a grass and exposed rock terrain",
+          "z": 16.192047119140625,
+          "normal": [
+            -0.36896100640296936,
+            0.06204807013273239,
+            0.9273714423179626
+          ],
+          "triangle": 4285
+        },
+        {
+          "object": "island_a faulted bedrock",
+          "z": 15.542037963867188,
+          "normal": [
+            -0.36896079778671265,
+            0.062048155814409256,
+            0.9273715615272522
+          ],
+          "triangle": 2315
+        }
+      ],
+      "highest": {
+        "object": "island_a grass and exposed rock terrain",
+        "z": 16.192047119140625,
+        "normal": [
+          -0.36896100640296936,
+          0.06204807013273239,
+          0.9273714423179626
+        ],
+        "triangle": 4285
+      },
+      "highest_is_footpath": false,
+      "highest_slope_deg": 21.971290799498995
+    },
+    {
+      "xy": [
+        -32,
+        11
+      ],
+      "scale": 1.05,
+      "all_object_hits": [
+        {
+          "object": "island_a grass and exposed rock terrain",
+          "z": 17.887367248535156,
+          "normal": [
+            -0.30026885867118835,
+            0.09803353250026703,
+            0.9488034844398499
+          ],
+          "triangle": 5719
+        },
+        {
+          "object": "island_a faulted bedrock",
+          "z": 17.23736572265625,
+          "normal": [
+            -0.30026885867118835,
+            0.09803301095962524,
+            0.9488034844398499
+          ],
+          "triangle": 3262
+        }
+      ],
+      "highest": {
+        "object": "island_a grass and exposed rock terrain",
+        "z": 17.887367248535156,
+        "normal": [
+          -0.30026885867118835,
+          0.09803353250026703,
+          0.9488034844398499
+        ],
+        "triangle": 5719
+      },
+      "highest_is_footpath": false,
+      "highest_slope_deg": 18.413160403246227
+    },
+    {
+      "xy": [
+        -29,
+        16
+      ],
+      "scale": 0.8,
+      "all_object_hits": [
+        {
+          "object": "island_a grass and exposed rock terrain",
+          "z": 18.325050354003906,
+          "normal": [
+            -0.3005806803703308,
+            0.08688736706972122,
+            0.9497904181480408
+          ],
+          "triangle": 6338
+        },
+        {
+          "object": "island_a faulted bedrock",
+          "z": 17.675048828125,
+          "normal": [
+            -0.3005806803703308,
+            0.08688736706972122,
+            0.9497904181480408
+          ],
+          "triangle": 3695
+        }
+      ],
+      "highest": {
+        "object": "island_a grass and exposed rock terrain",
+        "z": 18.325050354003906,
+        "normal": [
+          -0.3005806803703308,
+          0.08688736706972122,
+          0.9497904181480408
+        ],
+        "triangle": 6338
+      },
+      "highest_is_footpath": false,
+      "highest_slope_deg": 18.23329003129292
+    },
+    {
+      "xy": [
+        -38,
+        19
+      ],
+      "scale": 0.65,
+      "all_object_hits": [
+        {
+          "object": "island_a grass and exposed rock terrain",
+          "z": 15.106224060058594,
+          "normal": [
+            -0.35641568899154663,
+            0.04968463256955147,
+            0.9330054521560669
+          ],
+          "triangle": 6352
+        },
+        {
+          "object": "island_a faulted bedrock",
+          "z": 14.456230163574219,
+          "normal": [
+            -0.35641568899154663,
+            0.04968463256955147,
+            0.9330054521560669
+          ],
+          "triangle": 3701
+        }
+      ],
+      "highest": {
+        "object": "island_a grass and exposed rock terrain",
+        "z": 15.106224060058594,
+        "normal": [
+          -0.35641568899154663,
+          0.04968463256955147,
+          0.9330054521560669
+        ],
+        "triangle": 6352
+      },
+      "highest_is_footpath": false,
+      "highest_slope_deg": 21.0917354822168
+    },
+    {
+      "xy": [
+        -30,
+        -3
+      ],
+      "scale": 0.65,
+      "all_object_hits": [
+        {
+          "object": "island_a grass and exposed rock terrain",
+          "z": 22.309303283691406,
+          "normal": [
+            -0.9365251064300537,
+            -0.03433091938495636,
+            0.34891563653945923
+          ],
+          "triangle": 9111
+        },
+        {
+          "object": "island_a faulted bedrock",
+          "z": 21.6593017578125,
+          "normal": [
+            -0.9365251064300537,
+            -0.034330666065216064,
+            0.34891563653945923
+          ],
+          "triangle": 5539
+        }
+      ],
+      "highest": {
+        "object": "island_a grass and exposed rock terrain",
+        "z": 22.309303283691406,
+        "normal": [
+          -0.9365251064300537,
+          -0.03433091938495636,
+          0.34891563653945923
+        ],
+        "triangle": 9111
+      },
+      "highest_is_footpath": false,
+      "highest_slope_deg": 69.57899505718352
+    },
+    {
+      "xy": [
+        4,
+        22
+      ],
+      "scale": 0.7,
+      "all_object_hits": [
+        {
+          "object": "island_a grass and exposed rock terrain",
+          "z": 26.657135009765625,
+          "normal": [
+            0.08382213115692139,
+            0.3326733112335205,
+            0.9393095374107361
+          ],
+          "triangle": 7293
+        },
+        {
+          "object": "island_a faulted bedrock",
+          "z": 26.00713348388672,
+          "normal": [
+            0.08382213115692139,
+            0.3326733112335205,
+            0.9393095374107361
+          ],
+          "triangle": 4400
+        }
+      ],
+      "highest": {
+        "object": "island_a grass and exposed rock terrain",
+        "z": 26.657135009765625,
+        "normal": [
+          0.08382213115692139,
+          0.3326733112335205,
+          0.9393095374107361
+        ],
+        "triangle": 7293
+      },
+      "highest_is_footpath": false,
+      "highest_slope_deg": 20.06407633215004
+    },
+    {
+      "xy": [
+        10,
+        29
+      ],
+      "scale": 0.48,
+      "all_object_hits": [
+        {
+          "object": "island_a grass and exposed rock terrain",
+          "z": 23.114486694335938,
+          "normal": [
+            0.0813024491071701,
+            0.20715615153312683,
+            0.9749237298965454
+          ],
+          "triangle": 6646
+        },
+        {
+          "object": "island_a faulted bedrock",
+          "z": 22.464492797851562,
+          "normal": [
+            0.08130243420600891,
+            0.20715650916099548,
+            0.9749236106872559
+          ],
+          "triangle": 3927
+        }
+      ],
+      "highest": {
+        "object": "island_a grass and exposed rock terrain",
+        "z": 23.114486694335938,
+        "normal": [
+          0.0813024491071701,
+          0.20715615153312683,
+          0.9749237298965454
+        ],
+        "triangle": 6646
+      },
+      "highest_is_footpath": false,
+      "highest_slope_deg": 12.85821968809763
+    },
+    {
+      "xy": [
+        16,
+        36
+      ],
+      "scale": 0.38,
+      "all_object_hits": [
+        {
+          "object": "island_a grass and exposed rock terrain",
+          "z": 22.431884765625,
+          "normal": [
+            -0.294220894575119,
+            0.6037901639938354,
+            0.7408586144447327
+          ],
+          "triangle": 1892
+        },
+        {
+          "object": "island_a faulted bedrock",
+          "z": 21.781875610351562,
+          "normal": [
+            -0.2942201495170593,
+            0.6037903428077698,
+            0.7408587336540222
+          ],
+          "triangle": 2085
+        },
+        {
+          "object": "island_a cliff outcrop 02",
+          "z": -2.1939773559570312,
+          "normal": [
+            0.9934160113334656,
+            0.020168133080005646,
+            0.11277329921722412
+          ],
+          "triangle": 4
+        }
+      ],
+      "highest": {
+        "object": "island_a grass and exposed rock terrain",
+        "z": 22.431884765625,
+        "normal": [
+          -0.294220894575119,
+          0.6037901639938354,
+          0.7408586144447327
+        ],
+        "triangle": 1892
+      },
+      "highest_is_footpath": false,
+      "highest_slope_deg": 42.19539220655163
+    }
+  ],
+  "pass": true,
+  "full_reference_accepted": false,
+  "limits": [
+    "Footprints are exact unions of actual asset lowest-Z horizontal triangles after full glTF scene-node transforms; no roof eaves or convex-hull gap fill. Uniform instance scale and Blender yaw from32bdesign; actual runtime placement pending.",
+    "Triangle clipping covers entire pad/base area, not only9sample points.",
+    "Cap/core interface tolerance1mm; all measured extrema retained, no whole-island self-intersection or seam check outside3pads.",
+    "Native/GLB topology closure and positive volume do not prove all3D self-intersections absent.",
+    "8tree checks are axes only, not full trunk base support; steep locations remain flagged for root.",
+    "No GPU/fullworld/flight/visual acceptance."
+  ],
+  "all_actual_building_footprints_continuously_supported_and_flat": true,
+  "all_design_pads_contain_complete_asset_bottoms": false,
+  "tower_footprint_clarification": "Tower lowest base includes transformed stair geometry. Exact lowest horizontal triangle union48.5665075m2 extends1.2862447m2 beyond design square; that real extension is fully supported and flat within0.082402mm. Initial conservative vertex convex hull crossed empty regions and yielded1.136mm error; this is superseded by actual bottom-triangle union, not an actual tower-footprint failure. Design-pad containment is diagnostic, not required when actual footprint terrain and interface coverage both pass.",
+  "steep_tree_axis_followup": [
+    {
+      "xy": [
+        -30,
+        -3
+      ],
+      "height_m": 22.309303283691406,
+      "normal": [
+        -0.9365251064300537,
+        -0.03433091938495636,
+        0.34891563653945923
+      ],
+      "slope_deg": 69.57899505718352,
+      "scope": "Actual axis terrain slope only. Not a generic authored-tree rejection threshold or proof of tree base contact."
+    },
+    {
+      "xy": [
+        16,
+        36
+      ],
+      "height_m": 22.431884765625,
+      "normal": [
+        -0.294220894575119,
+        0.6037901639938354,
+        0.7408586144447327
+      ],
+      "slope_deg": 42.19539220655163,
+      "scope": "Actual axis terrain slope only. Not a generic authored-tree rejection threshold or proof of tree base contact."
+    }
+  ],
+  "actual_runtime_tree_placement_and_full_base_support_pending": true
+}

@@ -1,0 +1,230 @@
+{
+  "round": "34b",
+  "decision": "visual_rework_required_do_not_promote",
+  "scope": "Five real GPU images plus bounded shader/manifest binding; no rerender",
+  "run_status": "passed",
+  "run_passed": true,
+  "images": [
+    {
+      "view": "night-reference",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\water-34b-20260908T234145Z-bcb3451587f949d8b6faa363cf23622d\\images\\night-reference.png",
+      "sha256": "37ef5dc62a5f9faea352bdfe28e0336d3172b85a42d545eb1a58ecbbed6f62fe",
+      "actually_viewed": true,
+      "manifest_matches": true,
+      "sidecar_sha256": "2674014e203d01e618ed200bd8d5e81f9af3f7cbda5a5949987a80149a9d9539",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "water_shader_sha256": "2f1c09d17eaa641d665a34c5d95c00675d0fcf07c15278a163f028dad06e1781",
+      "shader_matches": true,
+      "production_modified": false
+    },
+    {
+      "view": "day-reference",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\water-34b-20260908T234145Z-bcb3451587f949d8b6faa363cf23622d\\images\\day-reference.png",
+      "sha256": "1a82f76f363c97da5ec8104ae02685db40421b0f8fa6b48ac87f74533c9b8969",
+      "actually_viewed": true,
+      "manifest_matches": true,
+      "sidecar_sha256": "6f2915532672064beb0c80f27bd7f5831cdd70296b82d02fb9f89772a347a55d",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "water_shader_sha256": "2f1c09d17eaa641d665a34c5d95c00675d0fcf07c15278a163f028dad06e1781",
+      "shader_matches": true,
+      "production_modified": false
+    },
+    {
+      "view": "night-time18",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\water-34b-20260908T234145Z-bcb3451587f949d8b6faa363cf23622d\\images\\night-time18.png",
+      "sha256": "0bf1778eb887a5f2d87adaa247fb2dbb35b2ccab7e4b2bdb096cf3e8509c2f83",
+      "actually_viewed": true,
+      "manifest_matches": true,
+      "sidecar_sha256": "e19d3074cb10fec6475b9e4a006ef7b62d3155ea5df643fae2d408c89d95f74c",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "water_shader_sha256": "2f1c09d17eaa641d665a34c5d95c00675d0fcf07c15278a163f028dad06e1781",
+      "shader_matches": true,
+      "production_modified": false
+    },
+    {
+      "view": "night-water-near",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\water-34b-20260908T234145Z-bcb3451587f949d8b6faa363cf23622d\\images\\night-water-near.png",
+      "sha256": "9fee0877dce4083495bacccdd0697bb953494060917da2b374d06ec64023407d",
+      "actually_viewed": true,
+      "manifest_matches": true,
+      "sidecar_sha256": "688c6bdfba182fa85921baabddedf61afd7373fa26dad65bc526ac7dd164745c",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "water_shader_sha256": "2f1c09d17eaa641d665a34c5d95c00675d0fcf07c15278a163f028dad06e1781",
+      "shader_matches": true,
+      "production_modified": false
+    },
+    {
+      "view": "night-water-shift",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\water-34b-20260908T234145Z-bcb3451587f949d8b6faa363cf23622d\\images\\night-water-shift.png",
+      "sha256": "f8ca3920fa932a548469460edc1ca43a4ff642bcfa28bcb3ff2a307a71877b77",
+      "actually_viewed": true,
+      "manifest_matches": true,
+      "sidecar_sha256": "a0b0fa1c26f6086c26ab1c90e4e466b80d9d4f90a14643bee65bd6993475f1d7",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "water_shader_sha256": "2f1c09d17eaa641d665a34c5d95c00675d0fcf07c15278a163f028dad06e1781",
+      "shader_matches": true,
+      "production_modified": false
+    }
+  ],
+  "frozen_files": [
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\water-34b-20260908T234145Z-bcb3451587f949d8b6faa363cf23622d\\study-inputs\\new-environment27f\\open_water.gdshader",
+      "sha256": "2f1c09d17eaa641d665a34c5d95c00675d0fcf07c15278a163f028dad06e1781",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\water-34b-20260908T234145Z-bcb3451587f949d8b6faa363cf23622d\\study-inputs\\water34b-builder.py",
+      "sha256": "832c69475764ff0ba3d0727c0ec2f4320b4399780336028088354cae8d31476c",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\water-34b-20260908T234145Z-bcb3451587f949d8b6faa363cf23622d\\study-inputs\\water34b-design-plan.json",
+      "sha256": "138521a7c132e43f33e31598e04890e50a42e90acf5eccb5253afdb8140f5e4c",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\water-34b-20260908T234145Z-bcb3451587f949d8b6faa363cf23622d\\study-inputs\\render_water_34b.py",
+      "sha256": "602967cdae7681ad26774fdfd3a2308ae5f30f99e2ce11f1f79119c92f637bf1",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\water-34b-20260908T234145Z-bcb3451587f949d8b6faa363cf23622d\\actual-water-revision.json",
+      "sha256": "aed70aeda55292517e5b8a60089e905f35b6a18066a48ecfc57f0c4621709371",
+      "manifest_matches": true
+    }
+  ],
+  "runtime": {
+    "run_id": "water-34b-20260908T234145Z-bcb3451587f949d8b6faa363cf23622d",
+    "views": [
+      {
+        "view": "night-reference",
+        "camera": {
+          "fov": 70.0,
+          "position": [
+            -2278.0,
+            60.0,
+            -1632.0
+          ],
+          "rotation": [
+            -0.00509163970127702,
+            0.60683274269104,
+            0.0
+          ]
+        },
+        "time": 0.0,
+        "water_shader_sha256": "2f1c09d17eaa641d665a34c5d95c00675d0fcf07c15278a163f028dad06e1781",
+        "world_and_coast_unchanged": true
+      },
+      {
+        "view": "night-water-near",
+        "camera": {
+          "fov": 70.0,
+          "position": [
+            -2330.0,
+            8.0,
+            -1740.0
+          ],
+          "rotation": [
+            -0.0185673981904984,
+            0.380506366491318,
+            0.0
+          ]
+        },
+        "time": 0.0,
+        "water_shader_sha256": "2f1c09d17eaa641d665a34c5d95c00675d0fcf07c15278a163f028dad06e1781",
+        "world_and_coast_unchanged": true
+      },
+      {
+        "view": "night-water-shift",
+        "camera": {
+          "fov": 70.0,
+          "position": [
+            -2363.0,
+            40.0,
+            -1662.0
+          ],
+          "rotation": [
+            -0.00509163970127702,
+            0.60683274269104,
+            0.0
+          ]
+        },
+        "time": 0.0,
+        "water_shader_sha256": "2f1c09d17eaa641d665a34c5d95c00675d0fcf07c15278a163f028dad06e1781",
+        "world_and_coast_unchanged": true
+      },
+      {
+        "view": "night-time18",
+        "camera": {
+          "fov": 70.0,
+          "position": [
+            -2278.0,
+            60.0,
+            -1632.0
+          ],
+          "rotation": [
+            -0.00509163970127702,
+            0.60683274269104,
+            0.0
+          ]
+        },
+        "time": 18.0,
+        "water_shader_sha256": "2f1c09d17eaa641d665a34c5d95c00675d0fcf07c15278a163f028dad06e1781",
+        "world_and_coast_unchanged": true
+      },
+      {
+        "view": "day-reference",
+        "camera": {
+          "fov": 70.0,
+          "position": [
+            -2278.0,
+            60.0,
+            -1632.0
+          ],
+          "rotation": [
+            -0.00509163970127702,
+            0.60683274269104,
+            0.0
+          ]
+        },
+        "time": 0.0,
+        "water_shader_sha256": "2f1c09d17eaa641d665a34c5d95c00675d0fcf07c15278a163f028dad06e1781",
+        "world_and_coast_unchanged": true
+      }
+    ],
+    "scope": "RealGPU water-only main/near/translated/time18/night/day. No local light or scene reflections implemented. Land33f runtime inherited, not repeated.",
+    "passed": true
+  },
+  "shader_findings": {
+    "cell_m": [
+      5.5,
+      2.8
+    ],
+    "moon_radius": "atan(330/9000)",
+    "reflection": "world-space reflected ray angular disk test; view-direction derivatives antialias rim",
+    "mesh_displacement": false
+  },
+  "visual_findings": {
+    "retained": "34a soft light blobs removed; distant glints extend farther",
+    "rejected": [
+      "Very sparse nearly white cutout fragments on very dark water",
+      "Insufficient blue intermediate reflection field and wave readability",
+      "Main near glints show sharp triangular silhouettes",
+      "Near camera has almost no visible moon glints; not itself physical-error proof",
+      "Day distant water shows strong fine near-horizontal grain"
+    ]
+  },
+  "next_changes": [
+    "Preserve directional disk response but add coherent blue intermediate water/sky reflection levels",
+    "Tune reflection density and facet scale using main distant/mid/near ranges, not brightness alone",
+    "Avoid hard white versus dark two-level output; maintain actual angular relation",
+    "Evaluate low camera without demanding same highlight position or strength as main camera"
+  ],
+  "full_reference_accepted": false,
+  "production_modified_by_reviewer": false
+}

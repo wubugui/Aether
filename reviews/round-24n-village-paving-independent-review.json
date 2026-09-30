@@ -1,0 +1,319 @@
+{
+  "scope": "Independent actual 24m GLB caps vs actual 24l GLB terrain for 24n composition. Cap triangles unioned by exact exported height and foundation/paver kind; full polygon/terrain-triangle intersections and linear height extrema. Not GPU or full visual/walking acceptance.",
+  "terrain_glb_sha256": "4ecf94499e8ce7d8ba5b3270038bb545fc3b1ba2167c4c7261d9c1129b1b5da9",
+  "groups": [
+    {
+      "name": "foreground",
+      "glb_sha256": "280d621ff2bf7a5b5328b33656d1514c2b3400d6f29f1815353a2a40e4c7c5cd",
+      "glb_hash_matches_saved_model_report": true,
+      "blend_hash_matches_saved_model_report": true,
+      "foundation_dictionaries_identical_to24j": true,
+      "actual_cap_triangle_counts": {
+        "foundation": 3085,
+        "paver": 4092
+      },
+      "terrain_intersections": 10367,
+      "worst_terrain_cap_clearance": {
+        "terrain_above_cap_m": -0.04799851231656582,
+        "world_xz": [
+          -2250.236936392974,
+          -1752.8026005411402
+        ],
+        "kind": "foundation",
+        "cap_y": 11.238,
+        "terrain_y": 11.190001487683434,
+        "intersection_area_m2": 0.012421855109915983
+      },
+      "cross_layer_overlaps": [
+        {
+          "lower_y": 9.75,
+          "upper_y": 9.9,
+          "area_m2": 7.695035822950094e-07,
+          "area_after_3mm_inward_buffer_m2": 0.0,
+          "bounds_local_xz": [
+            -84.20099639892578,
+            81.15699768066406,
+            -83.447998046875,
+            82.8499984741211
+          ]
+        },
+        {
+          "lower_y": 9.9,
+          "upper_y": 10.05,
+          "area_m2": 0.00031874136766418815,
+          "area_after_3mm_inward_buffer_m2": 0.0,
+          "bounds_local_xz": [
+            -83.072998046875,
+            81.23699951171875,
+            -82.23699951171875,
+            82.8499984741211
+          ]
+        },
+        {
+          "lower_y": 10.05,
+          "upper_y": 10.2,
+          "area_m2": 1.5704968318772886e-06,
+          "area_after_3mm_inward_buffer_m2": 0.0,
+          "bounds_local_xz": [
+            -81.76799774169922,
+            81.2750015258789,
+            -80.81099700927734,
+            82.78299713134766
+          ]
+        },
+        {
+          "lower_y": 11.55,
+          "upper_y": 11.7,
+          "area_m2": 0.000277482282881523,
+          "area_after_3mm_inward_buffer_m2": 0.0,
+          "bounds_local_xz": [
+            -72.78199768066406,
+            74.02999877929688,
+            -68.58300018310547,
+            86.63700103759766
+          ]
+        },
+        {
+          "lower_y": 13.2,
+          "upper_y": 13.35,
+          "area_m2": 4.951158499316797e-05,
+          "area_after_3mm_inward_buffer_m2": 0.0,
+          "bounds_local_xz": [
+            -65.84700012207031,
+            72.47599792480469,
+            -61.87200164794922,
+            92.47000122070312
+          ]
+        },
+        {
+          "lower_y": 13.5,
+          "upper_y": 13.65,
+          "area_m2": 1.4164570331563384e-05,
+          "area_after_3mm_inward_buffer_m2": 0.0,
+          "bounds_local_xz": [
+            -64.1760025024414,
+            72.26399993896484,
+            -60.667999267578125,
+            93.38800048828125
+          ]
+        },
+        {
+          "lower_y": 13.65,
+          "upper_y": 13.8,
+          "area_m2": 1.965502291594617e-06,
+          "area_after_3mm_inward_buffer_m2": 0.0,
+          "bounds_local_xz": [
+            -63.2140007019043,
+            72.14700317382812,
+            -59.58700180053711,
+            93.49400329589844
+          ]
+        }
+      ],
+      "maximum_cross_layer_area_m2": 0.00031874136766418815,
+      "maximum_cross_layer_overlap_remaining_after3mm_erosion_m2": 0.0,
+      "historic": [
+        {
+          "world_xz": [
+            -2257.72192382813,
+            -1750.06359863281
+          ],
+          "actual_cap_levels": [
+            {
+              "kind": "foundation",
+              "y": 10.488
+            },
+            {
+              "kind": "paver",
+              "y": 10.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "bay",
+      "glb_sha256": "81e478d20591579c3a97c7986aa9e008be1be57f9062a4dd8ecd75cea0c4b264",
+      "glb_hash_matches_saved_model_report": true,
+      "blend_hash_matches_saved_model_report": true,
+      "foundation_dictionaries_identical_to24j": true,
+      "actual_cap_triangle_counts": {
+        "foundation": 1939,
+        "paver": 2967
+      },
+      "terrain_intersections": 6585,
+      "worst_terrain_cap_clearance": {
+        "terrain_above_cap_m": -0.04797391087207714,
+        "world_xz": [
+          -2231.6627091628857,
+          -1879.541779153669
+        ],
+        "kind": "foundation",
+        "cap_y": 8.688,
+        "terrain_y": 8.640026089127923,
+        "intersection_area_m2": 0.06901362668262315
+      },
+      "cross_layer_overlaps": [
+        {
+          "lower_y": 8.1,
+          "upper_y": 8.25,
+          "area_m2": 5.0271239203357175e-05,
+          "area_after_3mm_inward_buffer_m2": 0.0,
+          "bounds_local_xz": [
+            -58.40599822998047,
+            -51.42399978637695,
+            -53.39400100708008,
+            -43.61600112915039
+          ]
+        },
+        {
+          "lower_y": 8.4,
+          "upper_y": 8.55,
+          "area_m2": 3.854822458959194e-06,
+          "area_after_3mm_inward_buffer_m2": 0.0,
+          "bounds_local_xz": [
+            -58.5890007019043,
+            -54.847999572753906,
+            -39.83000183105469,
+            -30.829999923706055
+          ]
+        },
+        {
+          "lower_y": 8.55,
+          "upper_y": 8.7,
+          "area_m2": 5.9898944342269816e-05,
+          "area_after_3mm_inward_buffer_m2": 0.0,
+          "bounds_local_xz": [
+            -58.60300064086914,
+            -56.69599914550781,
+            -38.2400016784668,
+            -24.961000442504883
+          ]
+        }
+      ],
+      "maximum_cross_layer_area_m2": 5.9898944342269816e-05,
+      "maximum_cross_layer_overlap_remaining_after3mm_erosion_m2": 0.0,
+      "historic": [
+        {
+          "world_xz": [
+            -2224.3179219903564,
+            -1872.8434267137125
+          ],
+          "actual_cap_levels": []
+        }
+      ]
+    }
+  ],
+  "status": "PASS bounded corrected-cap/terrain/overlap geometry and five-view regression; retain correction, overall art NOT ACCEPTED, do not install into production",
+  "reopened_native_gate": {
+    "passed": true,
+    "assets": [
+      {
+        "name": "foreground",
+        "glb_identity_matches": true,
+        "blend_identity_matches": true,
+        "parts": 802
+      },
+      {
+        "name": "bay",
+        "glb_identity_matches": true,
+        "blend_identity_matches": true,
+        "parts": 684
+      }
+    ]
+  },
+  "gpu_run": {
+    "run_id": "village-paving-24n-20260908T134759Z-20136a8631014096bbd9713ea68c5da7",
+    "status": "passed",
+    "passed": true,
+    "images": [
+      {
+        "name": "day-bay.png",
+        "sha256": "8708abd3850430d96a641d0a5c9501955a738f1ad2878f1ba40b4d140771053d",
+        "run_id": "village-paving-24n-20260908T134759Z-20136a8631014096bbd9713ea68c5da7",
+        "paving_passed": true,
+        "failure_count": 0,
+        "door_interface_count": 9,
+        "foundation_sample_count": 145,
+        "paver_collision_sample_count": 6639,
+        "omitted_tiny_cap_triangles": 420
+      },
+      {
+        "name": "day-foreground.png",
+        "sha256": "6b229768d540e6a87e09e7110e7ec2969e1b5cb04e6c6eeb77e50a6a11eba5c4",
+        "run_id": "village-paving-24n-20260908T134759Z-20136a8631014096bbd9713ea68c5da7",
+        "paving_passed": true,
+        "failure_count": 0,
+        "door_interface_count": 9,
+        "foundation_sample_count": 145,
+        "paver_collision_sample_count": 6639,
+        "omitted_tiny_cap_triangles": 420
+      },
+      {
+        "name": "door-junction.png",
+        "sha256": "ab837d409fa547eb944f3a112c58efac925525a99fbfd4c5f2e2b66920ce2e25",
+        "run_id": "village-paving-24n-20260908T134759Z-20136a8631014096bbd9713ea68c5da7",
+        "paving_passed": true,
+        "failure_count": 0,
+        "door_interface_count": 9,
+        "foundation_sample_count": 145,
+        "paver_collision_sample_count": 6639,
+        "omitted_tiny_cap_triangles": 420
+      },
+      {
+        "name": "night-reference.png",
+        "sha256": "5032805a32e9fc75763efdadc0ca8e39e263b769704501f3a46fc9f02369f266",
+        "run_id": "village-paving-24n-20260908T134759Z-20136a8631014096bbd9713ea68c5da7",
+        "paving_passed": true,
+        "failure_count": 0,
+        "door_interface_count": 9,
+        "foundation_sample_count": 145,
+        "paver_collision_sample_count": 6639,
+        "omitted_tiny_cap_triangles": 420
+      },
+      {
+        "name": "upper-street.png",
+        "sha256": "c28502967279afbe690ed0e0d08cbb302c648c3dc7bec3cd72912a5fa202b130",
+        "run_id": "village-paving-24n-20260908T134759Z-20136a8631014096bbd9713ea68c5da7",
+        "paving_passed": true,
+        "failure_count": 0,
+        "door_interface_count": 9,
+        "foundation_sample_count": 145,
+        "paver_collision_sample_count": 6639,
+        "omitted_tiny_cap_triangles": 420
+      }
+    ],
+    "frozen_asset_identities": [
+      {
+        "path": "study-inputs\\village-grading\\mainland_headland.glb",
+        "matches_independently_audited_glb": true
+      },
+      {
+        "path": "study-inputs\\village-paving\\village_bay.glb",
+        "matches_independently_audited_glb": true
+      },
+      {
+        "path": "study-inputs\\village-paving\\village_foreground.glb",
+        "matches_independently_audited_glb": true
+      }
+    ]
+  },
+  "visual_review": {
+    "viewed_images": [
+      "day-foreground.png",
+      "day-bay.png",
+      "door-junction.png",
+      "upper-street.png",
+      "night-reference.png"
+    ],
+    "conclusion": "No recurrence of the rejected overlapping tile blocks or terrain penetration is visible in these five views. House paths and shared courts read as connected.",
+    "remaining_art_limitations": [
+      "Door-junction and upper-street views show high smooth uniform roadbed side walls, giving the path a raised ribbon/platform appearance.",
+      "Repeated scalloped/zigzag step edges remain conspicuous in close view.",
+      "Night reference is a distant composition view; it cannot independently establish detailed tread or doorway quality.",
+      "Broad flat gray rock faces remain dominant.",
+      "Bright regular water reflections remain visually conspicuous."
+    ],
+    "not_full_art_acceptance": true
+  }
+}

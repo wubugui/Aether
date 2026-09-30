@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/asset_instance.gd" id="1_x4bnl"]
+[ext_resource type="Material" path="res://materials/world.tres" id="2_oq1di"]
+[ext_resource type="PackedScene" path="res://assets/models/poplar.glb" id="3_i6s8t"]
+[ext_resource type="Shape3D" path="res://assets/collision/poplar.res" id="4_3wces"]
+
+[node name="poplar" type="Node3D"]
+script = ExtResource("1_x4bnl")
+asset_kind = "poplar"
+surface_material = ExtResource("2_oq1di")
+
+[node name="Model" parent="." instance=ExtResource("3_i6s8t")]
+
+[node name="Collision" type="StaticBody3D" parent="."]
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.5, 0)
+shape = ExtResource("4_3wces")

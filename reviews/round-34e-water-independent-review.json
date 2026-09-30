@@ -1,0 +1,1734 @@
+{
+  "round": "34e",
+  "decision": "visual_rework_required_no_promotion; expanded_real_emitter_registry_can_be_retained_as_research",
+  "run_status": "passed",
+  "run_passed": true,
+  "scope": "Five actually viewed GPU images plus bounded source/report identity and old13-source comparison; no rerender",
+  "images": [
+    {
+      "view": "night-reference",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\water-34e-20260909T000818Z-086f9efe84964e12b961d88e6587cb3b\\images\\night-reference.png",
+      "sha256": "318d0bc05b7014682f76adc717eb6f73ba03fe102c436499d695f19ed877b5d7",
+      "actually_viewed": true,
+      "manifest_matches": true,
+      "sidecar_sha256": "233049495c4a7e03dae9268d2a7ec4622f6f9c9f993e3406d925aa4893ca2312",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "water_shader_sha256": "ade1458591deb73058d9bbca6fb0d4632f0ace0a37010fdafed1ee9b86704795",
+      "shader_matches": true,
+      "emitter_reflection": {
+        "count": 67,
+        "night": true,
+        "rays": 137216,
+        "report_sha256": "2e823ef4bbf5b363fe82c6a5bd753217ff94989d288ea9bad5505ee50abdb672",
+        "scope": "Actual67 native emission surfaces approximated by their world AABB half axes and angular roughness; material emission read after lighting setup.64x32 static downward hemisphere radial collision map per emitter,450m finite extent; outside extent emits no reflected contribution. Original coarse tower colliders replaced for reflection queries by actual opaque mesh faces, not entire tower shadow removal. Nearest map sampling is approximate for thin/edge occluders. All54 existing harbor lamps plus9village lamps and4tower cores; window/other scene emission not included. Roughness broadened with explicit radiance gain18; no physical radiometric calibration.",
+        "water_material_bindings": 1
+      },
+      "emitter_report_matches": true,
+      "production_modified": false
+    },
+    {
+      "view": "night-water-near",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\water-34e-20260909T000818Z-086f9efe84964e12b961d88e6587cb3b\\images\\night-water-near.png",
+      "sha256": "cd823c678b589958e36e18aab06460ed6dfd2c092f0d7faf5da5d401483a9fb9",
+      "actually_viewed": true,
+      "manifest_matches": true,
+      "sidecar_sha256": "c174506658e338504d1b3a7e33f17397006859ec32460c714be390f30f825f9a",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "water_shader_sha256": "ade1458591deb73058d9bbca6fb0d4632f0ace0a37010fdafed1ee9b86704795",
+      "shader_matches": true,
+      "emitter_reflection": {
+        "count": 67,
+        "night": true,
+        "rays": 137216,
+        "report_sha256": "2e823ef4bbf5b363fe82c6a5bd753217ff94989d288ea9bad5505ee50abdb672",
+        "scope": "Actual67 native emission surfaces approximated by their world AABB half axes and angular roughness; material emission read after lighting setup.64x32 static downward hemisphere radial collision map per emitter,450m finite extent; outside extent emits no reflected contribution. Original coarse tower colliders replaced for reflection queries by actual opaque mesh faces, not entire tower shadow removal. Nearest map sampling is approximate for thin/edge occluders. All54 existing harbor lamps plus9village lamps and4tower cores; window/other scene emission not included. Roughness broadened with explicit radiance gain18; no physical radiometric calibration.",
+        "water_material_bindings": 1
+      },
+      "emitter_report_matches": true,
+      "production_modified": false
+    },
+    {
+      "view": "night-water-shift",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\water-34e-20260909T000818Z-086f9efe84964e12b961d88e6587cb3b\\images\\night-water-shift.png",
+      "sha256": "fc51e9a7691b5b0c6f75ba367fe77691105b3d3be0a7c162a16a97392eb45ef8",
+      "actually_viewed": true,
+      "manifest_matches": true,
+      "sidecar_sha256": "b3eb7b269d67259f8dac9b72f0610c08824be349211b2762e5f58c1398f9dd77",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "water_shader_sha256": "ade1458591deb73058d9bbca6fb0d4632f0ace0a37010fdafed1ee9b86704795",
+      "shader_matches": true,
+      "emitter_reflection": {
+        "count": 67,
+        "night": true,
+        "rays": 137216,
+        "report_sha256": "2e823ef4bbf5b363fe82c6a5bd753217ff94989d288ea9bad5505ee50abdb672",
+        "scope": "Actual67 native emission surfaces approximated by their world AABB half axes and angular roughness; material emission read after lighting setup.64x32 static downward hemisphere radial collision map per emitter,450m finite extent; outside extent emits no reflected contribution. Original coarse tower colliders replaced for reflection queries by actual opaque mesh faces, not entire tower shadow removal. Nearest map sampling is approximate for thin/edge occluders. All54 existing harbor lamps plus9village lamps and4tower cores; window/other scene emission not included. Roughness broadened with explicit radiance gain18; no physical radiometric calibration.",
+        "water_material_bindings": 1
+      },
+      "emitter_report_matches": true,
+      "production_modified": false
+    },
+    {
+      "view": "night-time18",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\water-34e-20260909T000818Z-086f9efe84964e12b961d88e6587cb3b\\images\\night-time18.png",
+      "sha256": "4f84163f40c2c010153c80c81e0e57087b077cf5a979e66cba2157733727d33f",
+      "actually_viewed": true,
+      "manifest_matches": true,
+      "sidecar_sha256": "c77c1d97980b27dd7820b68150788641dff28d509191d0aeddbbdc3c94f6ca52",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "water_shader_sha256": "ade1458591deb73058d9bbca6fb0d4632f0ace0a37010fdafed1ee9b86704795",
+      "shader_matches": true,
+      "emitter_reflection": {
+        "count": 67,
+        "night": true,
+        "rays": 137216,
+        "report_sha256": "2e823ef4bbf5b363fe82c6a5bd753217ff94989d288ea9bad5505ee50abdb672",
+        "scope": "Actual67 native emission surfaces approximated by their world AABB half axes and angular roughness; material emission read after lighting setup.64x32 static downward hemisphere radial collision map per emitter,450m finite extent; outside extent emits no reflected contribution. Original coarse tower colliders replaced for reflection queries by actual opaque mesh faces, not entire tower shadow removal. Nearest map sampling is approximate for thin/edge occluders. All54 existing harbor lamps plus9village lamps and4tower cores; window/other scene emission not included. Roughness broadened with explicit radiance gain18; no physical radiometric calibration.",
+        "water_material_bindings": 1
+      },
+      "emitter_report_matches": true,
+      "production_modified": false
+    },
+    {
+      "view": "day-reference",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\water-34e-20260909T000818Z-086f9efe84964e12b961d88e6587cb3b\\images\\day-reference.png",
+      "sha256": "c433c199d57d8caed590f3103ba29ece78e9fac0132e10489d27f418152d4d2f",
+      "actually_viewed": true,
+      "manifest_matches": true,
+      "sidecar_sha256": "56910532679d04c773f1941ff3737ed08bfe927eba042c476d79f53a9eca7f60",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "water_shader_sha256": "ade1458591deb73058d9bbca6fb0d4632f0ace0a37010fdafed1ee9b86704795",
+      "shader_matches": true,
+      "emitter_reflection": {
+        "emitters": [],
+        "night": false,
+        "scope": "No emissive-source reflection in daylight."
+      },
+      "emitter_report_matches": null,
+      "production_modified": false
+    }
+  ],
+  "frozen_files": [
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\water-34e-20260909T000818Z-086f9efe84964e12b961d88e6587cb3b\\study-inputs\\new-environment27f\\open_water.gdshader",
+      "sha256": "ade1458591deb73058d9bbca6fb0d4632f0ace0a37010fdafed1ee9b86704795",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\water-34e-20260909T000818Z-086f9efe84964e12b961d88e6587cb3b\\study-inputs\\water_emitter_reflections_34e.gd",
+      "sha256": "2b04aea48e51e690f33fb88374119eb4c721a014d7c2685a237d48a040feb307",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\water-34e-20260909T000818Z-086f9efe84964e12b961d88e6587cb3b\\study-inputs\\water34e-builder.py",
+      "sha256": "97ac61b118afae07c1379ada456ccb73b9a40b5233c88679c2805b2ceca8e423",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\water-34e-20260909T000818Z-086f9efe84964e12b961d88e6587cb3b\\study-inputs\\water34e-design-plan.json",
+      "sha256": "939dc8e81e90c3902139376b319531a77501f61faf19b647e1d023fed2f616d1",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\water-34e-20260909T000818Z-086f9efe84964e12b961d88e6587cb3b\\study-inputs\\render_water_34e.py",
+      "sha256": "cb5cbb972dd1a4898913e3260fbd0a29376dcfdfad11e356b74e89770532b8fd",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\water-34e-20260909T000818Z-086f9efe84964e12b961d88e6587cb3b\\actual-water-revision.json",
+      "sha256": "a8a6c1344d646e1b83d646dc549170393e1bc4f85d65392f59603055120153a8",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\water-34e-20260909T000818Z-086f9efe84964e12b961d88e6587cb3b\\images\\actual-emitter-reflection.json",
+      "sha256": "2e823ef4bbf5b363fe82c6a5bd753217ff94989d288ea9bad5505ee50abdb672",
+      "manifest_matches": true
+    }
+  ],
+  "emitter_evidence": {
+    "map_rows_per_emitter": 32,
+    "map_width": 64,
+    "max_distance_m": 450.0,
+    "rays": 137216,
+    "scope": "Actual67 native emission surfaces approximated by their world AABB half axes and angular roughness; material emission read after lighting setup.64x32 static downward hemisphere radial collision map per emitter,450m finite extent; outside extent emits no reflected contribution. Original coarse tower colliders replaced for reflection queries by actual opaque mesh faces, not entire tower shadow removal. Nearest map sampling is approximate for thin/edge occluders. All54 existing harbor lamps plus9village lamps and4tower cores; window/other scene emission not included. Roughness broadened with explicit radiance gain18; no physical radiometric calibration.",
+    "water_material_bindings": 1,
+    "count": 67,
+    "types": {
+      "NativeLanternLight": 4,
+      "VillageWarmLight": 9,
+      "HarborWarmLight": 54
+    },
+    "samples_per_emitter": {
+      "2048": 67
+    },
+    "roughness_counts": {
+      "0.024": 4,
+      "0.006": 63
+    },
+    "artistic_gain": 18,
+    "old13_source_parameter_differences": [],
+    "emitters": [
+      {
+        "index": 0,
+        "light_node": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_a/NativeLanternLight",
+        "emitter_center": [
+          -2353.0,
+          49.6620864868164,
+          -1656.0
+        ],
+        "emitter_half_axes": [
+          0.290771484375,
+          0.690000534057617,
+          0.2906494140625
+        ],
+        "emission_color": [
+          1.0,
+          0.579999983310699,
+          0.159999996423721
+        ],
+        "emission_multiplier": 6.0,
+        "angular_roughness": 0.0240000002086163,
+        "omni_energy": 4.0,
+        "omni_range": 28.0
+      },
+      {
+        "index": 1,
+        "light_node": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_b/NativeLanternLight",
+        "emitter_center": [
+          -2700.0,
+          41.2455062866211,
+          -2202.0
+        ],
+        "emitter_half_axes": [
+          0.2978515625,
+          0.690000534057617,
+          0.2978515625
+        ],
+        "emission_color": [
+          1.0,
+          0.579999983310699,
+          0.159999996423721
+        ],
+        "emission_multiplier": 6.0,
+        "angular_roughness": 0.0240000002086163,
+        "omni_energy": 4.0,
+        "omni_range": 28.0
+      },
+      {
+        "index": 2,
+        "light_node": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_c/NativeLanternLight",
+        "emitter_center": [
+          -3048.5,
+          31.2906131744385,
+          -2649.19995117188
+        ],
+        "emitter_half_axes": [
+          0.298583984375,
+          0.690000534057617,
+          0.298583984375
+        ],
+        "emission_color": [
+          1.0,
+          0.579999983310699,
+          0.159999996423721
+        ],
+        "emission_multiplier": 6.0,
+        "angular_roughness": 0.0240000002086163,
+        "omni_energy": 4.0,
+        "omni_range": 28.0
+      },
+      {
+        "index": 3,
+        "light_node": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_d/NativeLanternLight",
+        "emitter_center": [
+          -2371.89672851563,
+          31.2906131744385,
+          -1813.69677734375
+        ],
+        "emitter_half_axes": [
+          0.300048828125,
+          0.690000534057617,
+          0.29998779296875
+        ],
+        "emission_color": [
+          1.0,
+          0.579999983310699,
+          0.159999996423721
+        ],
+        "emission_multiplier": 6.0,
+        "angular_roughness": 0.0240000002086163,
+        "omni_energy": 4.0,
+        "omni_range": 28.0
+      },
+      {
+        "index": 4,
+        "light_node": "/root/Skyfarer/MainlandVillage23g/fisher_cottage_1/VillageLantern/VillageWarmLight",
+        "emitter_center": [
+          -2266.12158203125,
+          11.4399995803833,
+          -1753.48034667969
+        ],
+        "emitter_half_axes": [
+          0.0543212890625,
+          0.130000114440918,
+          0.0543212890625
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 5,
+        "light_node": "/root/Skyfarer/MainlandVillage23g/fisher_cottage_5/VillageLantern/VillageWarmLight",
+        "emitter_center": [
+          -2232.14111328125,
+          17.939998626709,
+          -1738.73693847656
+        ],
+        "emitter_half_axes": [
+          0.0546875,
+          0.130000114440918,
+          0.0538330078125
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 6,
+        "light_node": "/root/Skyfarer/MainlandVillage23g/fisher_cottage_6/VillageLantern/VillageWarmLight",
+        "emitter_center": [
+          -2246.04614257813,
+          8.9399995803833,
+          -1872.01708984375
+        ],
+        "emitter_half_axes": [
+          0.054443359375,
+          0.130000114440918,
+          0.05419921875
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 7,
+        "light_node": "/root/Skyfarer/MainlandVillage23g/keeper_house_3/VillageLantern/VillageWarmLight",
+        "emitter_center": [
+          -2251.99609375,
+          14.9399995803833,
+          -1762.29248046875
+        ],
+        "emitter_half_axes": [
+          0.0545654296875,
+          0.130000114440918,
+          0.05401611328125
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 8,
+        "light_node": "/root/Skyfarer/MainlandVillage23g/keeper_house_4/VillageLantern/VillageWarmLight",
+        "emitter_center": [
+          -2235.97436523438,
+          16.939998626709,
+          -1762.02709960938
+        ],
+        "emitter_half_axes": [
+          0.053955078125,
+          0.130000114440918,
+          0.0545654296875
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 9,
+        "light_node": "/root/Skyfarer/MainlandVillage23g/keeper_house_7/VillageLantern/VillageWarmLight",
+        "emitter_center": [
+          -2236.50390625,
+          10.9399995803833,
+          -1887.72058105469
+        ],
+        "emitter_half_axes": [
+          0.0540771484375,
+          0.130000114440918,
+          0.0545654296875
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 10,
+        "light_node": "/root/Skyfarer/MainlandVillage23g/keeper_house_8/VillageLantern/VillageWarmLight",
+        "emitter_center": [
+          -2223.90380859375,
+          12.9399995803833,
+          -1873.57312011719
+        ],
+        "emitter_half_axes": [
+          0.0543212890625,
+          0.130000114440918,
+          0.0543212890625
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 11,
+        "light_node": "/root/Skyfarer/MainlandVillage23g/quay_workshop_2/VillageLantern/VillageWarmLight",
+        "emitter_center": [
+          -2249.95458984375,
+          13.2399997711182,
+          -1749.25061035156
+        ],
+        "emitter_half_axes": [
+          0.054443359375,
+          0.12999963760376,
+          0.05419921875
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 12,
+        "light_node": "/root/Skyfarer/MainlandVillage23g/quay_workshop_9/VillageLantern/VillageWarmLight",
+        "emitter_center": [
+          -2217.95458984375,
+          10.9399995803833,
+          -1858.25061035156
+        ],
+        "emitter_half_axes": [
+          0.054443359375,
+          0.130000114440918,
+          0.05419921875
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 13,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_1/HarborWarmLight",
+        "emitter_center": [
+          -2187.064453125,
+          22.7228050231934,
+          -2071.91796875
+        ],
+        "emitter_half_axes": [
+          0.0528564453125,
+          0.130000114440918,
+          0.0550537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 14,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_11/HarborWarmLight",
+        "emitter_center": [
+          -2374.6376953125,
+          17.3424034118652,
+          -2326.91796875
+        ],
+        "emitter_half_axes": [
+          0.0528564453125,
+          0.130000114440918,
+          0.0550537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 15,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_13/HarborWarmLight",
+        "emitter_center": [
+          -2354.6376953125,
+          17.4399375915527,
+          -2326.91796875
+        ],
+        "emitter_half_axes": [
+          0.0528564453125,
+          0.130000114440918,
+          0.0550537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 16,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_15/HarborWarmLight",
+        "emitter_center": [
+          -2443.6416015625,
+          17.5369529724121,
+          -2431.91796875
+        ],
+        "emitter_half_axes": [
+          0.0528564453125,
+          0.130000114440918,
+          0.0550537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 17,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_17/HarborWarmLight",
+        "emitter_center": [
+          -2423.6416015625,
+          17.7725486755371,
+          -2431.91796875
+        ],
+        "emitter_half_axes": [
+          0.0528564453125,
+          0.130000114440918,
+          0.0550537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 18,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_19/HarborWarmLight",
+        "emitter_center": [
+          -2463.3583984375,
+          17.2453575134277,
+          -2461.91796875
+        ],
+        "emitter_half_axes": [
+          0.0528564453125,
+          0.130000114440918,
+          0.0550537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 19,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_21/HarborWarmLight",
+        "emitter_center": [
+          -2443.3583984375,
+          17.5687828063965,
+          -2461.91796875
+        ],
+        "emitter_half_axes": [
+          0.0528564453125,
+          0.130000114440918,
+          0.0550537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 20,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_23/HarborWarmLight",
+        "emitter_center": [
+          -2483.0654296875,
+          17.3454551696777,
+          -2491.91796875
+        ],
+        "emitter_half_axes": [
+          0.0528564453125,
+          0.130000114440918,
+          0.0550537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 21,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_25/HarborWarmLight",
+        "emitter_center": [
+          -2463.0654296875,
+          17.4398765563965,
+          -2491.91796875
+        ],
+        "emitter_half_axes": [
+          0.0528564453125,
+          0.130000114440918,
+          0.0550537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 22,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_27/HarborWarmLight",
+        "emitter_center": [
+          -2502.77734375,
+          17.4399070739746,
+          -2521.91796875
+        ],
+        "emitter_half_axes": [
+          0.0528564453125,
+          0.130000114440918,
+          0.0550537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 23,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_29/HarborWarmLight",
+        "emitter_center": [
+          -2482.77734375,
+          17.4399070739746,
+          -2521.91796875
+        ],
+        "emitter_half_axes": [
+          0.0528564453125,
+          0.130000114440918,
+          0.0550537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 24,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_3/HarborWarmLight",
+        "emitter_center": [
+          -2208.021484375,
+          21.5625267028809,
+          -2101.91796875
+        ],
+        "emitter_half_axes": [
+          0.0528564453125,
+          0.130000114440918,
+          0.0550537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 25,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_31/HarborWarmLight",
+        "emitter_center": [
+          -2542.2109375,
+          17.2005882263184,
+          -2581.91796875
+        ],
+        "emitter_half_axes": [
+          0.0528564453125,
+          0.130000114440918,
+          0.0550537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 26,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_33/HarborWarmLight",
+        "emitter_center": [
+          -2522.2109375,
+          17.4399070739746,
+          -2581.91796875
+        ],
+        "emitter_half_axes": [
+          0.0528564453125,
+          0.130000114440918,
+          0.0550537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 27,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_35/HarborWarmLight",
+        "emitter_center": [
+          -2568.5,
+          17.3719749450684,
+          -2621.91796875
+        ],
+        "emitter_half_axes": [
+          0.0528564453125,
+          0.130000114440918,
+          0.0550537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 28,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_37/HarborWarmLight",
+        "emitter_center": [
+          -2548.5,
+          17.4398765563965,
+          -2621.91796875
+        ],
+        "emitter_half_axes": [
+          0.0528564453125,
+          0.130000114440918,
+          0.0550537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 29,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_39/HarborWarmLight",
+        "emitter_center": [
+          -2594.7890625,
+          17.4399070739746,
+          -2661.91796875
+        ],
+        "emitter_half_axes": [
+          0.0528564453125,
+          0.130000114440918,
+          0.0550537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 30,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_41/HarborWarmLight",
+        "emitter_center": [
+          -2574.7890625,
+          17.4399070739746,
+          -2661.91796875
+        ],
+        "emitter_half_axes": [
+          0.0528564453125,
+          0.130000114440918,
+          0.0550537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 31,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_43/HarborWarmLight",
+        "emitter_center": [
+          -2621.068359375,
+          17.1459007263184,
+          -2701.91796875
+        ],
+        "emitter_half_axes": [
+          0.0528564453125,
+          0.130000114440918,
+          0.0550537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 32,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_45/HarborWarmLight",
+        "emitter_center": [
+          -2601.068359375,
+          17.4399681091309,
+          -2701.91796875
+        ],
+        "emitter_half_axes": [
+          0.0528564453125,
+          0.130000114440918,
+          0.0550537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 33,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_5/HarborWarmLight",
+        "emitter_center": [
+          -2305.638671875,
+          22.3662986755371,
+          -2221.91796875
+        ],
+        "emitter_half_axes": [
+          0.0528564453125,
+          0.130000114440918,
+          0.0550537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 34,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_50/HarborWarmLight",
+        "emitter_center": [
+          -2312.1416015625,
+          4.78999996185303,
+          -2101.39599609375
+        ],
+        "emitter_half_axes": [
+          0.0528564453125,
+          0.130000114440918,
+          0.0550537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 35,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_51/HarborWarmLight",
+        "emitter_center": [
+          -2306.6826171875,
+          4.78999996185303,
+          -2093.2568359375
+        ],
+        "emitter_half_axes": [
+          0.0528564453125,
+          0.130000114440918,
+          0.0550537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 36,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_52/HarborWarmLight",
+        "emitter_center": [
+          -2295.46630859375,
+          4.78999996185303,
+          -2109.02783203125
+        ],
+        "emitter_half_axes": [
+          0.0528564453125,
+          0.130000114440918,
+          0.0550537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 37,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_53/HarborWarmLight",
+        "emitter_center": [
+          -2293.2939453125,
+          4.78999996185303,
+          -2105.7890625
+        ],
+        "emitter_half_axes": [
+          0.0528564453125,
+          0.130000114440918,
+          0.0550537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 38,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_59/HarborWarmLight",
+        "emitter_center": [
+          -2414.00390625,
+          4.78999996185303,
+          -2256.39599609375
+        ],
+        "emitter_half_axes": [
+          0.0528564453125,
+          0.130000114440918,
+          0.0550537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 39,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_60/HarborWarmLight",
+        "emitter_center": [
+          -2408.544921875,
+          4.78999996185303,
+          -2248.2568359375
+        ],
+        "emitter_half_axes": [
+          0.0528564453125,
+          0.130000114440918,
+          0.0550537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 40,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_61/HarborWarmLight",
+        "emitter_center": [
+          -2397.32861328125,
+          4.78999996185303,
+          -2264.02783203125
+        ],
+        "emitter_half_axes": [
+          0.0528564453125,
+          0.130000114440918,
+          0.0550537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 41,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_62/HarborWarmLight",
+        "emitter_center": [
+          -2395.15625,
+          4.78999996185303,
+          -2260.7890625
+        ],
+        "emitter_half_axes": [
+          0.0528564453125,
+          0.130000114440918,
+          0.0550537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 42,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_68/HarborWarmLight",
+        "emitter_center": [
+          -2568.43212890625,
+          4.78999996185303,
+          -2491.39599609375
+        ],
+        "emitter_half_axes": [
+          0.0528564453125,
+          0.130000114440918,
+          0.0550537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 43,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_69/HarborWarmLight",
+        "emitter_center": [
+          -2562.97314453125,
+          4.78999996185303,
+          -2483.2568359375
+        ],
+        "emitter_half_axes": [
+          0.0528564453125,
+          0.130000114440918,
+          0.0550537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 44,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_7/HarborWarmLight",
+        "emitter_center": [
+          -2351.6396484375,
+          17.439754486084,
+          -2291.91796875
+        ],
+        "emitter_half_axes": [
+          0.0528564453125,
+          0.130000114440918,
+          0.0550537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 45,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_70/HarborWarmLight",
+        "emitter_center": [
+          -2551.7568359375,
+          4.78999996185303,
+          -2499.02783203125
+        ],
+        "emitter_half_axes": [
+          0.0528564453125,
+          0.130000114440918,
+          0.0550537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 46,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_71/HarborWarmLight",
+        "emitter_center": [
+          -2549.58447265625,
+          4.78999996185303,
+          -2495.7890625
+        ],
+        "emitter_half_axes": [
+          0.0528564453125,
+          0.130000114440918,
+          0.0550537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 47,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_77/HarborWarmLight",
+        "emitter_center": [
+          -2680.15576171875,
+          4.78999996185303,
+          -2661.39599609375
+        ],
+        "emitter_half_axes": [
+          0.0528564453125,
+          0.130000114440918,
+          0.0550537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 48,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_78/HarborWarmLight",
+        "emitter_center": [
+          -2674.69677734375,
+          4.78999996185303,
+          -2653.2568359375
+        ],
+        "emitter_half_axes": [
+          0.0528564453125,
+          0.130000114440918,
+          0.0550537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 49,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_79/HarborWarmLight",
+        "emitter_center": [
+          -2663.48046875,
+          4.78999996185303,
+          -2669.02783203125
+        ],
+        "emitter_half_axes": [
+          0.0528564453125,
+          0.130000114440918,
+          0.0550537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 50,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_80/HarborWarmLight",
+        "emitter_center": [
+          -2661.30810546875,
+          4.78999996185303,
+          -2665.7890625
+        ],
+        "emitter_half_axes": [
+          0.0528564453125,
+          0.130000114440918,
+          0.0550537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 51,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_82/HarborWarmLight",
+        "emitter_center": [
+          -2281.900390625,
+          7.2559175491333,
+          -2111.44970703125
+        ],
+        "emitter_half_axes": [
+          0.0531005859375,
+          0.129999876022339,
+          0.0548095703125
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 52,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_83/HarborWarmLight",
+        "emitter_center": [
+          -2270.267578125,
+          10.5892000198364,
+          -2110.63818359375
+        ],
+        "emitter_half_axes": [
+          0.0543212890625,
+          0.130000114440918,
+          0.0543212890625
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 53,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_84/HarborWarmLight",
+        "emitter_center": [
+          -2258.619140625,
+          14.7015047073364,
+          -2108.38793945313
+        ],
+        "emitter_half_axes": [
+          0.0546875,
+          0.130000114440918,
+          0.0537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 54,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_85/HarborWarmLight",
+        "emitter_center": [
+          -2246.96508789063,
+          18.5549583435059,
+          -2105.73876953125
+        ],
+        "emitter_half_axes": [
+          0.0546875,
+          0.130000114440918,
+          0.0537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 55,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_86/HarborWarmLight",
+        "emitter_center": [
+          -2235.171875,
+          20.0327110290527,
+          -2103.3623046875
+        ],
+        "emitter_half_axes": [
+          0.054443359375,
+          0.130000114440918,
+          0.05419921875
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 56,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_87/HarborWarmLight",
+        "emitter_center": [
+          -2223.05224609375,
+          21.0881309509277,
+          -2102.22314453125
+        ],
+        "emitter_half_axes": [
+          0.0523681640625,
+          0.130000114440918,
+          0.0550537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 57,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_88/HarborWarmLight",
+        "emitter_center": [
+          -2384.69775390625,
+          7.8054780960083,
+          -2270.36108398438
+        ],
+        "emitter_half_axes": [
+          0.05322265625,
+          0.129999876022339,
+          0.054931640625
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 58,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_89/HarborWarmLight",
+        "emitter_center": [
+          -2375.55004882813,
+          11.3347444534302,
+          -2278.01245117188
+        ],
+        "emitter_half_axes": [
+          0.053466796875,
+          0.130000114440918,
+          0.054931640625
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 59,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_9/HarborWarmLight",
+        "emitter_center": [
+          -2331.6396484375,
+          17.439754486084,
+          -2291.91796875
+        ],
+        "emitter_half_axes": [
+          0.0528564453125,
+          0.130000114440918,
+          0.0550537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 60,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_90/HarborWarmLight",
+        "emitter_center": [
+          -2366.4580078125,
+          15.1577730178833,
+          -2285.68603515625
+        ],
+        "emitter_half_axes": [
+          0.0533447265625,
+          0.130000114440918,
+          0.0548095703125
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 61,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_91/HarborWarmLight",
+        "emitter_center": [
+          -2538.70556640625,
+          7.74303913116455,
+          -2504.52294921875
+        ],
+        "emitter_half_axes": [
+          0.0533447265625,
+          0.129999876022339,
+          0.0548095703125
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 62,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_92/HarborWarmLight",
+        "emitter_center": [
+          -2528.56103515625,
+          11.3228120803833,
+          -2510.8056640625
+        ],
+        "emitter_half_axes": [
+          0.053466796875,
+          0.130000114440918,
+          0.0548095703125
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 63,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_93/HarborWarmLight",
+        "emitter_center": [
+          -2518.3984375,
+          14.4650545120239,
+          -2517.08032226563
+        ],
+        "emitter_half_axes": [
+          0.053466796875,
+          0.130000114440918,
+          0.054931640625
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 64,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_94/HarborWarmLight",
+        "emitter_center": [
+          -2651.27685546875,
+          7.89748859405518,
+          -2676.18115234375
+        ],
+        "emitter_half_axes": [
+          0.054443359375,
+          0.129999876022339,
+          0.0540771484375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 65,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_95/HarborWarmLight",
+        "emitter_center": [
+          -2643.20849609375,
+          11.7550935745239,
+          -2685.07397460938
+        ],
+        "emitter_half_axes": [
+          0.0548095703125,
+          0.130000114440918,
+          0.0537109375
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 66,
+        "light_node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_96/HarborWarmLight",
+        "emitter_center": [
+          -2635.283203125,
+          15.9352693557739,
+          -2694.01123046875
+        ],
+        "emitter_half_axes": [
+          0.0548095703125,
+          0.130000114440918,
+          0.0538330078125
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.00600000005215406,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      }
+    ]
+  },
+  "visual_findings": {
+    "main": "Slightly more warm small patches around(890,777)/(920,800), still detached from readable reflection chains",
+    "translated": "Two obvious broad soft orange patches aroundx1210..1275,y786..853; enlarged isolated facets, not stronger continuity",
+    "time18": "A few short warm pieces nearx910..930,y724..780; large dark gaps remain",
+    "near": "Very faint solitary warm patch aroundx690,y680; no obvious chain, not alone proof of wrong reflection",
+    "day": "No obvious warm change"
+  },
+  "limits": [
+    "Gain18 and roughness are explicit artistic parameters, not calibrated radiometry",
+    "Finite static nearest map64x32 and450m remains approximate",
+    "No window or full-scene reflection coverage",
+    "World-space reflection cannot alone establish visual acceptance"
+  ],
+  "full_reference_accepted": false,
+  "production_modified_by_reviewer": false
+}

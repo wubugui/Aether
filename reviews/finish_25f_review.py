@@ -1,0 +1,13 @@
+from pathlib import Path
+import json,hashlib
+R=Path(r'E:\FeiTing');p=R/'reviews/round-25f-village-earthworks-independent-review.json';d=json.loads(p.read_text());sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();gate=json.loads((R/'reviews/round-25f-village-grading-native-check.json').read_text());d['reopened_native_gate']={'passed':gate['passed'],'glb_matches':gate['glb_sha256']==d['identity']['new_glb_sha256'],'blend_matches':gate['source_sha256']==sha(R/'captures/village_grading_study_25f/mainland_headland.blend')}
+run=R/'captures/validation_runs/village-paving-25f-20260908T142029Z-3a929b3fadd3459883fbdc78e6dae14e';m=json.loads((run/'manifest.json').read_text());d['gpu_run']={'run_id':m['run_id'],'status':m['status'],'passed':m['passed'],'images':[],'frozen_glb_identities':[]}
+for image in sorted((run/'images').glob('*.png')):
+    s=json.loads(image.with_suffix('.png.json').read_text());v=s['village_paving_study'];d['gpu_run']['images'].append({'name':image.name,'sha256':sha(image),'paving_passed':v['passed'],'failure_count':len(v['failures']),'run_matches':s['run_id']==m['run_id']})
+for a in (run/'study-inputs').rglob('*.glb'):
+    expected=next((x['paving_sha256'] for x in d['paving'] if a.stem=='village_'+x['group']),None)
+    if a.parent.name=='village-grading':expected=d['identity']['new_glb_sha256']
+    if expected:d['gpu_run']['frozen_glb_identities'].append({'path':str(a.relative_to(run)),'matches_independent_geometry_audit':sha(a)==expected})
+d['visual_review']={'directly_viewed':['day-foreground.png','day-bay.png','door-junction.png','upper-street.png','night-reference.png'],'improvement':'The 25c long dark radial creases and large spike-like slope faces no longer appear at the reviewed viewpoints. Raised wall bulk remains reduced.','remaining':'Door-junction and roadside grassy fill show fine irregular triangular patchwork; no clear regular checkerboard was observed. Large original rock faces, repeated stair contours and overall reference-art issues remain outside final acceptance.','microface_visibility':'Exported steep microfaces still exist. Their exact individual visibility is not established by these overview/medium-distance images; no assertion that all microfaces were eliminated.','full_reference_acceptance':False}
+d['status']='PASS bounded removal of25c large exposed slope failures, cap clearance, body foundation and shoreline checks, plus targeted five-view regression. Retain geometric improvement; do not claim strict exported-face gradient compliance or final reference-art acceptance.'
+p.write_text(json.dumps(d,indent=2),encoding='utf-8');print(json.dumps({'native':d['reopened_native_gate'],'gpu_status':d['gpu_run']['status'],'frozen':d['gpu_run']['frozen_glb_identities']},indent=2))

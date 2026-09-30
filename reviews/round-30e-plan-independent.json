@@ -1,0 +1,248 @@
+{
+  "round": "30e_plan",
+  "scope": "Bounded independent cutter projection/protection and six actual visible target hit checks. No whole30d geometry/GPU rerun; no final cutter mesh assumed.",
+  "files": {
+    "captures\\island-30e-faceted-cut-plan.json": "2b739ed9baa5a9577737073f221397d3eee5631595ac6844088776ba8e1245ac",
+    "reviews\\round-30d-visible-slope-independent.json": "9b6258bf5ba0560dd0613a7d0e07cf91b4babc502b2162d17872344e12658f37",
+    "captures\\lantern_island_study_30d\\geometry-evidence.json": "209e8d6b360d91dfcfad9e7d954f704cc5f5b91dd4c767713290dbc6cd75bd9a"
+  },
+  "actual_plan_nominal_margin_m": 0.4,
+  "simplification_m": 0.005,
+  "components": [
+    {
+      "component": "Southern broken lip 0",
+      "independent_area_m2": 140.5,
+      "minimum_protection_distance_m": 0.8334178340670249,
+      "minimum_margin_at_least_0_35m": true,
+      "protection": {
+        "road": {
+          "minimum_distance_m": 0.8334178340670249,
+          "intersection_area_m2": 0.0
+        },
+        "pads": {
+          "minimum_distance_m": 1.425613165131388,
+          "intersection_area_m2": 0.0
+        },
+        "actual_CD_tree_axis_2m_disks": {
+          "minimum_distance_m": 14.50508133797116,
+          "intersection_area_m2": 0.0
+        }
+      },
+      "cdt_point_count": 65,
+      "cdt_edge_count": 76
+    },
+    {
+      "component": "Southeast staggered recess 0",
+      "independent_area_m2": 192.0,
+      "minimum_protection_distance_m": 3.1989020300942577,
+      "minimum_margin_at_least_0_35m": true,
+      "protection": {
+        "road": {
+          "minimum_distance_m": 3.1989020300942577,
+          "intersection_area_m2": 0.0
+        },
+        "pads": {
+          "minimum_distance_m": 4.378013959610211,
+          "intersection_area_m2": 0.0
+        },
+        "actual_CD_tree_axis_2m_disks": {
+          "minimum_distance_m": 3.9040433475520433,
+          "intersection_area_m2": 0.0
+        }
+      },
+      "cdt_point_count": 56,
+      "cdt_edge_count": 56
+    },
+    {
+      "component": "Eastern split shoulder 0",
+      "independent_area_m2": 191.3691839034841,
+      "minimum_protection_distance_m": 0.3977060444418982,
+      "minimum_margin_at_least_0_35m": true,
+      "protection": {
+        "road": {
+          "minimum_distance_m": 3.3776851053174033,
+          "intersection_area_m2": 0.0
+        },
+        "pads": {
+          "minimum_distance_m": 3.937901888240197,
+          "intersection_area_m2": 0.0
+        },
+        "actual_CD_tree_axis_2m_disks": {
+          "minimum_distance_m": 0.3977060444418982,
+          "intersection_area_m2": 0.0
+        }
+      },
+      "cdt_point_count": 150,
+      "cdt_edge_count": 141
+    }
+  ],
+  "six_visible_targets": [
+    {
+      "pixel": [
+        620,
+        548
+      ],
+      "source_face": 488,
+      "hit_xyz": [
+        -8.40268045512721,
+        -22.849759835229733,
+        5.228295393372385
+      ],
+      "point_covered_by_cut_projection": true,
+      "point_distance_to_cut_projection_m": 0.0,
+      "source_face_projection_area_m2": 5.701829362241824,
+      "source_face_cut_projection_area_m2": 5.701829362241824,
+      "point_distance_to_required_protection_m": 8.490904607679209,
+      "candidate_components": [
+        {
+          "component": "Southern broken lip 0",
+          "distance_to_component_boundary_m": 1.998260234598439,
+          "ground_z_m": 5.228295393372385,
+          "nominal_floor_plane_z_m": 0.9892631759074133,
+          "nominal_ground_minus_floor_m": 4.239032217464971,
+          "blend_width_m": 1.8,
+          "limitation": "Unblended floor-plane depth only. Native CDT bottom heights and resulting cut depth not yet available."
+        }
+      ]
+    },
+    {
+      "pixel": [
+        700,
+        550
+      ],
+      "source_face": 308,
+      "hit_xyz": [
+        -2.2022517020657375,
+        -17.609635469750906,
+        5.168115246216722
+      ],
+      "point_covered_by_cut_projection": true,
+      "point_distance_to_cut_projection_m": 0.0,
+      "source_face_projection_area_m2": 0.6356895791600436,
+      "source_face_cut_projection_area_m2": 0.6356895791600436,
+      "point_distance_to_required_protection_m": 3.8042827437623585,
+      "candidate_components": [
+        {
+          "component": "Southern broken lip 0",
+          "distance_to_component_boundary_m": 2.283537019543469,
+          "ground_z_m": 5.168115246216722,
+          "nominal_floor_plane_z_m": 2.2905222187258083,
+          "nominal_ground_minus_floor_m": 2.8775930274909136,
+          "blend_width_m": 1.8,
+          "limitation": "Unblended floor-plane depth only. Native CDT bottom heights and resulting cut depth not yet available."
+        }
+      ]
+    },
+    {
+      "pixel": [
+        770,
+        552
+      ],
+      "source_face": 978,
+      "hit_xyz": [
+        4.532523203799933,
+        -14.299116844883912,
+        5.850216052793947
+      ],
+      "point_covered_by_cut_projection": true,
+      "point_distance_to_cut_projection_m": 0.0,
+      "source_face_projection_area_m2": 2.473103969768772,
+      "source_face_cut_projection_area_m2": 1.9044128066827697,
+      "point_distance_to_required_protection_m": 5.195665268628264,
+      "candidate_components": [
+        {
+          "component": "Southeast staggered recess 0",
+          "distance_to_component_boundary_m": 1.5588073981870894,
+          "ground_z_m": 5.850216052793947,
+          "nominal_floor_plane_z_m": 2.9620397077396046,
+          "nominal_ground_minus_floor_m": 2.888176345054342,
+          "blend_width_m": 2.1,
+          "limitation": "Unblended floor-plane depth only. Native CDT bottom heights and resulting cut depth not yet available."
+        }
+      ]
+    },
+    {
+      "pixel": [
+        825,
+        570
+      ],
+      "source_face": 897,
+      "hit_xyz": [
+        9.7694224328081,
+        -12.00553936418725,
+        4.766233120714368
+      ],
+      "point_covered_by_cut_projection": true,
+      "point_distance_to_cut_projection_m": 0.0,
+      "source_face_projection_area_m2": 5.701828613001453,
+      "source_face_cut_projection_area_m2": 5.701828613001453,
+      "point_distance_to_required_protection_m": 7.282166437386859,
+      "candidate_components": [
+        {
+          "component": "Southeast staggered recess 0",
+          "distance_to_component_boundary_m": 3.6857807448151143,
+          "ground_z_m": 4.766233120714368,
+          "nominal_floor_plane_z_m": 3.5056114095497612,
+          "nominal_ground_minus_floor_m": 1.2606217111646068,
+          "blend_width_m": 2.1,
+          "limitation": "Unblended floor-plane depth only. Native CDT bottom heights and resulting cut depth not yet available."
+        }
+      ]
+    },
+    {
+      "pixel": [
+        900,
+        548
+      ],
+      "source_face": 877,
+      "hit_xyz": [
+        14.147895588078221,
+        -6.029880281978336,
+        6.470663971243852
+      ],
+      "point_covered_by_cut_projection": false,
+      "point_distance_to_cut_projection_m": 0.11070306848287469,
+      "source_face_projection_area_m2": 5.701825384174299,
+      "source_face_cut_projection_area_m2": 3.9085248928946696,
+      "point_distance_to_required_protection_m": 0.28927034799334955,
+      "candidate_components": []
+    },
+    {
+      "pixel": [
+        970,
+        548
+      ],
+      "source_face": 1487,
+      "hit_xyz": [
+        17.60043907418696,
+        0.8834506482421745,
+        5.352697758792061
+      ],
+      "point_covered_by_cut_projection": true,
+      "point_distance_to_cut_projection_m": 0.0,
+      "source_face_projection_area_m2": 2.3227404740611632,
+      "source_face_cut_projection_area_m2": 0.7309372419514268,
+      "point_distance_to_required_protection_m": 2.4606207835920424,
+      "candidate_components": [
+        {
+          "component": "Eastern split shoulder 0",
+          "distance_to_component_boundary_m": 2.0606207822949867,
+          "ground_z_m": 5.352697758792061,
+          "nominal_floor_plane_z_m": 2.790366112970113,
+          "nominal_ground_minus_floor_m": 2.5623316458219483,
+          "blend_width_m": 1.6,
+          "limitation": "Unblended floor-plane depth only. Native CDT bottom heights and resulting cut depth not yet available."
+        }
+      ]
+    }
+  ],
+  "projection_protection_pass": true,
+  "actual_bottom_mesh_verified": false,
+  "actual_asset_support_verified": false,
+  "limits": [
+    "Nominal floor depth at a target is not the actual native blended cutter-floor height.",
+    "Plan projection coverage is neither actual removed volume nor visual success.",
+    "Face877 point is close to tree protection; leaving it intact can be intentional if other visible face area is safely cut.",
+    "Final Boolean output must preserve support and closed shell without old top-index assumptions."
+  ]
+}

@@ -1,0 +1,635 @@
+{
+  "scope": "Bounded independent five-image and export/source verification; no GPU or production writes. Geometry delta assertions executed in prior read-only Python call; output serialization corrected here.",
+  "run": "E:\\FeiTing\\captures\\validation_runs\\lighthouse-19g-20260908T075734Z-b268458c16d946e39ecdd123ed563286",
+  "status": "passed",
+  "artifacts": {
+    "study-inputs/lighthouse.blend": "3f1940b1d64a4c41f19ae512438282348bc8f1a2628a01d4303409f145f71ba3",
+    "study-inputs/lighthouse.glb": "99385bf603062962bd707fa85b7137deef8bb3febfa36ebbd0c3d00acb8a59da",
+    "study-inputs/builder.py": "c00d0e80161dc617d89913b9535242e790d6db403bf95eb51d79e8fc5533bed7",
+    "study-inputs/model-report.json": "5b8491b069afcd25f58e4c539a977bf75acd7c69d536d424ff5a696eff6388c2",
+    "study-inputs/round-19g-source-face-check.json": "770f295b5420c6168e8e674103316ac218e4f4cbf783158b1d39989725aa8c40",
+    "study-inputs/round-19g-step-solid-check.json": "b6803bed5daa5cb43d112b94b1f624394a66ded2956c9a6abd81efbd7a95e17b",
+    "study-inputs/round-19g-export-inspection.json": "74c96928d306890a24109903ad161c4df773f233b29579357d0a23960e508bbe",
+    "study-inputs/round-19g-footing-probe.json": "253ccb44134e1b02fd607587f5f31fea34179dc13c57165fbb936052ef824432",
+    "study-inputs/preview.gd": "b3fa9322ced9677d11fe8f6551ba62b45338bfea58360647f962ddd7cafc3ac8",
+    "scoped-driver.py": "696855e5efd36e7a44d197b5f8d7a690077ea7a3091dae96129e0055e6d493ca",
+    "reference-inputs/1125.png": "aeda03c290ee0d0cb5e7ce3c2ed0e841256f02d2165b2b4cc6cebb0dd2e2a9c3",
+    "reference-inputs/1126.png": "3051f512881fecf3d2b8dacadbac3ed10473f9094d28870526ae3cd4db9e4353",
+    "reference-inputs/1128.png": "cb5cfc510b2ce477bca1358f60e424b4f2bd33b06583b8d8b6970b6e671b8654",
+    "reference-inputs/1129.png": "9f0295c8da3fe2a3a9d5c055495c62bf501d318759fecc7a33b40c99bdc79993",
+    "reference-inputs/1131.png": "af70f337ea000c7ba5e2e4c121ca4fbdb60bd2e816ee1acaee35f1ddabd2e152",
+    "reference-inputs/1135.png": "25968bf1203323213d4fc0b2f473c7014cf3532377c89ff9545eb5029322ef59",
+    "reference-inputs/1216.png": "f705cb5de0664e9189bdc66b8ed116fc6db5f6ec1f541606df2b399dbde3aa4f",
+    "reference-inputs/1217.png": "27161cfc249f6a9e02a51ae7cc5d0c9b973be1452f9b2ecfb1ebee630655d73a",
+    "reference-inputs/1218.png": "774d8f62f8fa48a93ed15650c3bc21971b08b55262dea9421de36f3368f556b6",
+    "reference-inputs/1220.png": "930cec916eb4d138a41894bc3fdaf3da953fcf3c1729ae2cc14a12eb041addec",
+    "reference-inputs/1274.png": "96dc0be392528c5f215338b18977bc730a65fa9bc7a2d75b4c588af1d65dea01",
+    "reference-inputs/1275.png": "b188c07b3fd1f42e23d17796e83231daed7279c02e57c0b2da3983be94aaa88d",
+    "reference-inputs/1276.png": "6569c0feaca863ad246a5ad879480ab08f9f0a427811a4f6c3123de20be319e6",
+    "reference-inputs/1278.png": "2c7fa0b6a9330abcdcdcefa42c5b757fc53728c8646904d8d9c5f6eb4035fdfe",
+    "reference-inputs/1332.png": "eb1d652e01949468f8002e9aa76561e4c1a4e65238efe7e2242b9e14993ca7a2",
+    "reference-inputs/1341.png": "f6020fad26ece1c0021e61f8ea1afae320460a48468f3da6bc6004d4aa7293ef",
+    "reference-inputs/1342.png": "7acc98104013d9122eb551846b2d7fc1f7549bce8b2e3199eae8f5385a3ea238",
+    "reference-inputs/1343.png": "1c0f001d6b204f12115bf31acf954f2dae768d146eaa469ec55a1cbf8508afb6",
+    "reference-inputs/1344.png": "1da067d3b0b98fc36be31e0591fb291f163f4b4fd397f87b98844c2ba5a76e69",
+    "reference-inputs/1347.png": "4de8987c9ad067afad843803d6e1d5c0de6aed0ae64a3b4af04e13ee90e56942",
+    "inputs.json": "439be27229fea7688be483c522d1ed1580444ad6ab2833f19ed107f9cfb8907c",
+    "images/front.png": "0b4c2a70c076e2b2b68c7b8eea4fc140bb33d5d3283c90a0c3d88b7cc4dd412b",
+    "capture-front.log": "8ab596b88f5f3b7c63a668c0cc1671dfd7b7ca4f920b1e7cf8b4ff810f10091e",
+    "capture-front-error.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stages/capture-front.json": "99e3420e9334adf82f1d849c06ae6c17aec0d0aa89f0ce765764a0e074bbebca",
+    "images/back.png": "a17f0585882a01a353b6f12990be9b0c875388030ce7167e6b5a490712587fdd",
+    "capture-back.log": "339ee518c38a099c4d091f8a8c8f69e6c3d80be018bbb0b662888ea758348316",
+    "capture-back-error.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stages/capture-back.json": "9bd6a12cb204d6286857194db2a351b7b73562ee9c21071dd6151904fe6ff207",
+    "images/gallery.png": "fa23fbd8942abf6a7fedf939d98028063a68b6ebca9ac57e95a1bc749c3aa1a6",
+    "capture-gallery.log": "082838735724cc328cab7a4a299bf390f30a60eeb3d7ba9186d541f851573b79",
+    "capture-gallery-error.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stages/capture-gallery.json": "53f1847b147d15cc5d9f57aeee7d9f02e6e3e289682d452d9731031f9cdb311b",
+    "images/context.png": "3ab13fe01b9244e19843636ccad86cf2401a8b4e6b0ef878fd9dc6584775629b",
+    "capture-context.log": "14b2d09db692e61ec68aed8c11530cd51ac913ffcb08d51f803dd0cc2e2f1296",
+    "capture-context-error.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stages/capture-context.json": "27fdbfb5626aaf440157b7888bfdb5ab70f166a0188ca3af96f264d355177e8a",
+    "images/door.png": "059a3bb3596eaa18b52e706e68e4a2ab285ad7cb9022aa3a243b339fed74fc3d",
+    "capture-door.log": "5da01592497ee26b79c0b030d517d0c9e0d7bc3f0e6f384da910e640700284e6",
+    "capture-door-error.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stages/capture-door.json": "899df286fb48a0c04fef7f124b83685c2965f9874ddab66727d89052945fd5b4"
+  },
+  "reports": {
+    "source-face-check": {
+      "sha256": "770f295b5420c6168e8e674103316ac218e4f4cbf783158b1d39989725aa8c40",
+      "data": {
+        "scope": "Native zero-area polygon inspection only; not complete topology or visual acceptance.",
+        "passed": true,
+        "source_sha256": "3f1940b1d64a4c41f19ae512438282348bc8f1a2628a01d4303409f145f71ba3",
+        "issues": []
+      }
+    },
+    "step-solid-check": {
+      "sha256": "b6803bed5daa5cb43d112b94b1f624394a66ded2956c9a6abd81efbd7a95e17b",
+      "data": {
+        "scope": "Native stair closed-edge, signed volume and upward top-face inspection only.",
+        "source_sha256": "3f1940b1d64a4c41f19ae512438282348bc8f1a2628a01d4303409f145f71ba3",
+        "passed": true,
+        "steps": [
+          {
+            "name": "Entry stone step 0",
+            "volume_m3": 0.9240535569433852,
+            "manifold": true,
+            "top_normals_blender": [
+              [
+                -0.0,
+                -0.0,
+                1.0
+              ]
+            ],
+            "passed": true
+          },
+          {
+            "name": "Entry stone step 1",
+            "volume_m3": 1.2237458845960667,
+            "manifold": true,
+            "top_normals_blender": [
+              [
+                -0.0,
+                -0.0,
+                1.0
+              ]
+            ],
+            "passed": true
+          },
+          {
+            "name": "Entry stone step 2",
+            "volume_m3": 1.518805594287994,
+            "manifold": true,
+            "top_normals_blender": [
+              [
+                -0.0,
+                -0.0,
+                1.0
+              ]
+            ],
+            "passed": true
+          }
+        ]
+      }
+    },
+    "export-inspection": {
+      "sha256": "74c96928d306890a24109903ad161c4df773f233b29579357d0a23960e508bbe",
+      "data": {
+        "scope": "Actual GLB node-transformed bounds and material alpha only; not collision or visual acceptance.",
+        "passed": true,
+        "results": [
+          {
+            "label": "19g",
+            "checks": {
+              "height_max_matches": true,
+              "footing_bottom_matches": true
+            },
+            "passed": true,
+            "glb_sha256": "99385bf603062962bd707fa85b7137deef8bb3febfa36ebbd0c3d00acb8a59da",
+            "mesh_nodes": 24,
+            "bounds_godot_m": [
+              [
+                -4.015000343322754,
+                -0.5,
+                -4.015000343322754
+              ],
+              [
+                5.240102767944336,
+                24.499998092651367,
+                4.015000343322754
+              ]
+            ],
+            "height_m": 24.999998092651367,
+            "max_width_m": 9.25510311126709,
+            "glazing": [
+              {
+                "name": "Clear slightly amber lantern glass",
+                "alpha_mode": "BLEND",
+                "base_color": [
+                  0.25,
+                  0.20000000298023224,
+                  0.11999999731779099,
+                  0.27000001072883606
+                ]
+              },
+              {
+                "name": "Clear optical lens glass",
+                "alpha_mode": "BLEND",
+                "base_color": [
+                  0.25,
+                  0.20000000298023224,
+                  0.11999999731779099,
+                  0.10000000149011612
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "footing-probe": {
+      "sha256": "253ccb44134e1b02fd607587f5f31fea34179dc13c57165fbb936052ef824432",
+      "data": {
+        "candidate_sha256": "99385bf603062962bd707fa85b7137deef8bb3febfa36ebbd0c3d00acb8a59da",
+        "footing_bottom_m": -0.5,
+        "instances": [
+          {
+            "instance": "lighthouse_57152",
+            "origin": [
+              162.0,
+              15.7729997634888,
+              410.0
+            ],
+            "samples": [
+              {
+                "gap_m": -0.603922843933105,
+                "local": [
+                  -9.99999974737875e-05,
+                  -0.5,
+                  -4.0149998664856
+                ],
+                "terrain_y": 15.8769226074219
+              },
+              {
+                "gap_m": -0.756327629089355,
+                "local": [
+                  2.83899998664856,
+                  -0.5,
+                  -2.8390998840332
+                ],
+                "terrain_y": 16.0293273925781
+              },
+              {
+                "gap_m": -0.758097648620605,
+                "local": [
+                  4.0149998664856,
+                  -0.5,
+                  -9.99999974737875e-05
+                ],
+                "terrain_y": 16.0310974121094
+              },
+              {
+                "gap_m": -0.60816478729248,
+                "local": [
+                  2.83899998664856,
+                  -0.5,
+                  2.83899998664856
+                ],
+                "terrain_y": 15.8811645507813
+              },
+              {
+                "gap_m": -0.394389152526855,
+                "local": [
+                  -9.99999974737875e-05,
+                  -0.5,
+                  4.0149998664856
+                ],
+                "terrain_y": 15.6673889160156
+              },
+              {
+                "gap_m": -0.241862297058105,
+                "local": [
+                  -2.8390998840332,
+                  -0.5,
+                  2.83899998664856
+                ],
+                "terrain_y": 15.5148620605469
+              },
+              {
+                "gap_m": -0.239909172058105,
+                "local": [
+                  -4.0149998664856,
+                  -0.5,
+                  -9.99999974737875e-05
+                ],
+                "terrain_y": 15.5129089355469
+              },
+              {
+                "gap_m": -0.390116691589355,
+                "local": [
+                  -2.8390998840332,
+                  -0.5,
+                  -2.8390998840332
+                ],
+                "terrain_y": 15.6631164550781
+              },
+              {
+                "gap_m": -0.82105541229248,
+                "local": [
+                  4.63030004501343,
+                  -0.5,
+                  -0.893999993801117
+                ],
+                "terrain_y": 16.0940551757813
+              },
+              {
+                "gap_m": -0.82001781463623,
+                "local": [
+                  3.90619993209839,
+                  -0.5,
+                  -2.64209985733032
+                ],
+                "terrain_y": 16.093017578125
+              },
+              {
+                "gap_m": -0.865946769714355,
+                "local": [
+                  4.51599979400635,
+                  -0.5,
+                  -2.89459991455078
+                ],
+                "terrain_y": 16.1389465332031
+              },
+              {
+                "gap_m": -0.86701488494873,
+                "local": [
+                  5.24009990692139,
+                  -0.5,
+                  -1.1467000246048
+                ],
+                "terrain_y": 16.1400146484375
+              },
+              {
+                "gap_m": -0.78516674041748,
+                "local": [
+                  4.15269994735718,
+                  -0.5,
+                  -0.696299970149994
+                ],
+                "terrain_y": 16.0581665039063
+              },
+              {
+                "gap_m": -0.784098625183105,
+                "local": [
+                  3.42859983444214,
+                  -0.5,
+                  -2.44420003890991
+                ],
+                "terrain_y": 16.0570983886719
+              },
+              {
+                "gap_m": -0.82996654510498,
+                "local": [
+                  4.03830003738403,
+                  -0.5,
+                  -2.69679999351501
+                ],
+                "terrain_y": 16.1029663085938
+              },
+              {
+                "gap_m": -0.83106517791748,
+                "local": [
+                  4.76230001449585,
+                  -0.5,
+                  -0.948799967765808
+                ],
+                "terrain_y": 16.1040649414063
+              },
+              {
+                "gap_m": -0.749186515808105,
+                "local": [
+                  3.67489981651306,
+                  -0.5,
+                  -0.498399972915649
+                ],
+                "terrain_y": 16.0221862792969
+              },
+              {
+                "gap_m": -0.74811840057373,
+                "local": [
+                  2.95099997520447,
+                  -0.5,
+                  -2.24639987945557
+                ],
+                "terrain_y": 16.0211181640625
+              },
+              {
+                "gap_m": -0.79401683807373,
+                "local": [
+                  3.56069993972778,
+                  -0.5,
+                  -2.49889993667603
+                ],
+                "terrain_y": 16.0670166015625
+              },
+              {
+                "gap_m": -0.79511547088623,
+                "local": [
+                  4.2846999168396,
+                  -0.5,
+                  -0.750899970531464
+                ],
+                "terrain_y": 16.068115234375
+              }
+            ]
+          },
+          {
+            "instance": "lighthouse_57220",
+            "origin": [
+              -1120.0,
+              24.3579998016357,
+              -1980.0
+            ],
+            "samples": [
+              {
+                "gap_m": -0.317201614379883,
+                "local": [
+                  -9.99999974737875e-05,
+                  -0.5,
+                  -4.0149998664856
+                ],
+                "terrain_y": 24.1752014160156
+              },
+              {
+                "gap_m": -0.448640823364258,
+                "local": [
+                  2.83899998664856,
+                  -0.5,
+                  -2.8390998840332
+                ],
+                "terrain_y": 24.306640625
+              },
+              {
+                "gap_m": -0.604280471801758,
+                "local": [
+                  4.0149998664856,
+                  -0.5,
+                  -9.99999974737875e-05
+                ],
+                "terrain_y": 24.4622802734375
+              },
+              {
+                "gap_m": -0.706819534301758,
+                "local": [
+                  2.83899998664856,
+                  -0.5,
+                  2.83899998664856
+                ],
+                "terrain_y": 24.5648193359375
+              },
+              {
+                "gap_m": -0.682405471801758,
+                "local": [
+                  -9.99999974737875e-05,
+                  -0.5,
+                  4.0149998664856
+                ],
+                "terrain_y": 24.5404052734375
+              },
+              {
+                "gap_m": -0.550935745239258,
+                "local": [
+                  -2.8390998840332,
+                  -0.5,
+                  2.83899998664856
+                ],
+                "terrain_y": 24.408935546875
+              },
+              {
+                "gap_m": -0.389558792114258,
+                "local": [
+                  -4.0149998664856,
+                  -0.5,
+                  -9.99999974737875e-05
+                ],
+                "terrain_y": 24.24755859375
+              },
+              {
+                "gap_m": -0.292726516723633,
+                "local": [
+                  -2.8390998840332,
+                  -0.5,
+                  -2.8390998840332
+                ],
+                "terrain_y": 24.1507263183594
+              },
+              {
+                "gap_m": -0.572084426879883,
+                "local": [
+                  4.63030004501343,
+                  -0.5,
+                  -0.893999993801117
+                ],
+                "terrain_y": 24.4300842285156
+              },
+              {
+                "gap_m": -0.481843948364258,
+                "local": [
+                  3.90619993209839,
+                  -0.5,
+                  -2.64209985733032
+                ],
+                "terrain_y": 24.33984375
+              },
+              {
+                "gap_m": -0.478944778442383,
+                "local": [
+                  4.51599979400635,
+                  -0.5,
+                  -2.89459991455078
+                ],
+                "terrain_y": 24.3369445800781
+              },
+              {
+                "gap_m": -0.569154739379883,
+                "local": [
+                  5.24009990692139,
+                  -0.5,
+                  -1.1467000246048
+                ],
+                "terrain_y": 24.4271545410156
+              },
+              {
+                "gap_m": -0.574403762817383,
+                "local": [
+                  4.15269994735718,
+                  -0.5,
+                  -0.696299970149994
+                ],
+                "terrain_y": 24.4324035644531
+              },
+              {
+                "gap_m": -0.482789993286133,
+                "local": [
+                  3.42859983444214,
+                  -0.5,
+                  -2.44420003890991
+                ],
+                "terrain_y": 24.3407897949219
+              },
+              {
+                "gap_m": -0.481203079223633,
+                "local": [
+                  4.03830003738403,
+                  -0.5,
+                  -2.69679999351501
+                ],
+                "terrain_y": 24.3392028808594
+              },
+              {
+                "gap_m": -0.571504592895508,
+                "local": [
+                  4.76230001449585,
+                  -0.5,
+                  -0.948799967765808
+                ],
+                "terrain_y": 24.4295043945313
+              },
+              {
+                "gap_m": -0.576723098754883,
+                "local": [
+                  3.67489981651306,
+                  -0.5,
+                  -0.498399972915649
+                ],
+                "terrain_y": 24.4347229003906
+              },
+              {
+                "gap_m": -0.478639602661133,
+                "local": [
+                  2.95099997520447,
+                  -0.5,
+                  -2.24639987945557
+                ],
+                "terrain_y": 24.3366394042969
+              },
+              {
+                "gap_m": -0.483461380004883,
+                "local": [
+                  3.56069993972778,
+                  -0.5,
+                  -2.49889993667603
+                ],
+                "terrain_y": 24.3414611816406
+              },
+              {
+                "gap_m": -0.573732376098633,
+                "local": [
+                  4.2846999168396,
+                  -0.5,
+                  -0.750899970531464
+                ],
+                "terrain_y": 24.4317321777344
+              }
+            ]
+          }
+        ],
+        "label": "19g",
+        "scope": "GPU physics terrain-mask-4 rays below actual candidate foundation/step base vertices at both existing native placements; no resource writes. Does not assert that every step top is above the sloping terrain.",
+        "world_sha256": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8"
+      }
+    }
+  },
+  "actual_export_delta": {
+    "method": "Decode each GLB POSITION accessor and apply recursive node transforms. Round unique position sets to 1e-6m and compare 19f versus19g. Assertions completed before a JSON numpy-int serialization error; no validation assertion failed.",
+    "mesh_nodes": 24,
+    "bounds": [
+      [
+        -4.015000343322754,
+        -0.5,
+        -4.015000343322754
+      ],
+      [
+        5.240102767944336,
+        24.499998092651367,
+        4.015000343322754
+      ]
+    ],
+    "positions_match_19f_except_bottom_y_0_to_minus_half": true,
+    "all_positive_height_positions_unchanged": true,
+    "materials_identical_to_19f": true
+  },
+  "production_lighthouse_preserved": {
+    "res://assets/collision/lighthouse.res": {
+      "current_frozen_same_as_19f": true,
+      "sha256": "aeb020dac75fb3290edda1941b73b440335340d7711c33b69c97b7732ce60e31"
+    },
+    "res://assets/meshes/lighthouse.res": {
+      "current_frozen_same_as_19f": true,
+      "sha256": "fd63abf04d59e164ad6767b2b4d1286550f36082a3c04cceae712c86e8607343"
+    },
+    "res://assets/models/lighthouse.glb": {
+      "current_frozen_same_as_19f": true,
+      "sha256": "27bf2f45f6993ab31d5b690c84bee4875b78be9e7c1b014c424308ddde3d0b38"
+    },
+    "res://assets/models/lighthouse.glb.import": {
+      "current_frozen_same_as_19f": true,
+      "sha256": "db8dd92db5fb885f6121822151a60a4bec5088b71a045b0b2f03fbf7e4d406c2"
+    },
+    "res://scenes/prefabs/lighthouse.tscn": {
+      "current_frozen_same_as_19f": true,
+      "sha256": "845d30d6f0f40527b8c4c434a7bbd22603b100fc0b838c89de7872ee1b1ad1c6"
+    }
+  },
+  "footing_summary": [
+    {
+      "instance": "lighthouse_57152",
+      "count": 20,
+      "bottom_gap_minmax": [
+        -0.86701488494873,
+        -0.239909172058105
+      ],
+      "lowest_tread_gap_derived_at_same_xz": [
+        -0.12701488494873003,
+        -0.08001781463623003
+      ],
+      "derivation": "Actual bottom ray gap + .5m extension + .24m unchanged first tread; not new GPU rays."
+    },
+    {
+      "instance": "lighthouse_57220",
+      "count": 20,
+      "bottom_gap_minmax": [
+        -0.706819534301758,
+        -0.292726516723633
+      ],
+      "lowest_tread_gap_derived_at_same_xz": [
+        0.16791557312011696,
+        0.261055221557617
+      ],
+      "derivation": "Actual bottom ray gap + .5m extension + .24m unchanged first tread; not new GPU rays."
+    }
+  ],
+  "capture_stages_passed": 5
+}

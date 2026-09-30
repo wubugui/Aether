@@ -1,0 +1,1465 @@
+{
+  "scope": "34d bounded independent saved-source/GLB/existing-ray-record audit; no new scene queries or GPU.",
+  "checks": {
+    "emitter_count": true,
+    "rays": true,
+    "one_unique_water_material": true,
+    "aabb_centers_and_axes_within_1mm": true,
+    "actual_emission_matches": true,
+    "four_actual_opaque_tower_sets_and_triangle_counts": true,
+    "excluded_exact_sea_and_four_original_towers": true,
+    "no_hit_is_450m": true,
+    "radial_distances_consistent_1mm": true,
+    "radial_direction_consistent_0_05deg": true,
+    "shader_lookup_matches_generator": true,
+    "no_excluded_colliders_in_hits": true,
+    "flat_wave_and_grid_inherited": true,
+    "out_of_range_hard_zero_present": true,
+    "views_complete_identity": true,
+    "selected_binding_identity": true,
+    "run_terminal_passed": true,
+    "twelve_opaque_source_hit_samples_within_2mm": true
+  },
+  "bounded_technical_checks_passed": true,
+  "run_status": "passed",
+  "shader_sha256": "eea715127b8535f2749705643e2ec4f77032a1fed06cac2c21c6cfa3c97703ac",
+  "adapter_sha256": "d0201d04a2572c82b6f2275574e84b4c2eec9f493c0799ccbb76d7ef646dd641",
+  "emitter_geometry": [
+    {
+      "index": 0,
+      "node": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_a/NativeLanternLight",
+      "center_max_error_m": 1.9073486257070726e-06,
+      "half_axes_max_error_m": 9.774631143955048e-05,
+      "actual_half_axes": [
+        0.290771484375,
+        0.690000534057617,
+        0.2906494140625
+      ],
+      "multiplier_correct": true,
+      "color_max_error": 1.6689300941230556e-08,
+      "color_note": "Village glTF linear emissiveFactor converted to Godot Color sRGB representation; raw stored value comparison, not full render-output photometry."
+    },
+    {
+      "index": 1,
+      "node": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_b/NativeLanternLight",
+      "center_max_error_m": 1.9073486257070726e-06,
+      "half_axes_max_error_m": 8.959908427641494e-06,
+      "actual_half_axes": [
+        0.2978515625,
+        0.690000534057617,
+        0.2978515625
+      ],
+      "multiplier_correct": true,
+      "color_max_error": 1.6689300941230556e-08,
+      "color_note": "Village glTF linear emissiveFactor converted to Godot Color sRGB representation; raw stored value comparison, not full render-output photometry."
+    },
+    {
+      "index": 2,
+      "node": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_c/NativeLanternLight",
+      "center_max_error_m": 2.4868995751603507e-14,
+      "half_axes_max_error_m": 8.272293007394182e-05,
+      "actual_half_axes": [
+        0.298583984375,
+        0.690000534057617,
+        0.298583984375
+      ],
+      "multiplier_correct": true,
+      "color_max_error": 1.6689300941230556e-08,
+      "color_note": "Village glTF linear emissiveFactor converted to Godot Color sRGB representation; raw stored value comparison, not full render-output photometry."
+    },
+    {
+      "index": 3,
+      "node": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_d/NativeLanternLight",
+      "center_max_error_m": 0.00012207030999888957,
+      "half_axes_max_error_m": 5.354136055757408e-05,
+      "actual_half_axes": [
+        0.300048828125,
+        0.690000534057617,
+        0.29998779296875
+      ],
+      "multiplier_correct": true,
+      "color_max_error": 1.6689300941230556e-08,
+      "color_note": "Village glTF linear emissiveFactor converted to Godot Color sRGB representation; raw stored value comparison, not full render-output photometry."
+    },
+    {
+      "index": 4,
+      "node": "/root/Skyfarer/MainlandVillage23g/fisher_cottage_1/VillageLantern/VillageWarmLight",
+      "center_max_error_m": 9.791872616915498e-05,
+      "half_axes_max_error_m": 5.373300382416346e-06,
+      "actual_half_axes": [
+        0.0543212890625,
+        0.130000114440918,
+        0.0543212890625
+      ],
+      "multiplier_correct": true,
+      "color_max_error": 4.221076987942496e-08,
+      "color_note": "Village glTF linear emissiveFactor converted to Godot Color sRGB representation; raw stored value comparison, not full render-output photometry."
+    },
+    {
+      "index": 5,
+      "node": "/root/Skyfarer/MainlandVillage23g/fisher_cottage_5/VillageLantern/VillageWarmLight",
+      "center_max_error_m": 6.273281633184524e-05,
+      "half_axes_max_error_m": 1.3086348872093367e-05,
+      "actual_half_axes": [
+        0.0546875,
+        0.130000114440918,
+        0.0538330078125
+      ],
+      "multiplier_correct": true,
+      "color_max_error": 4.221076987942496e-08,
+      "color_note": "Village glTF linear emissiveFactor converted to Godot Color sRGB representation; raw stored value comparison, not full render-output photometry."
+    },
+    {
+      "index": 6,
+      "node": "/root/Skyfarer/MainlandVillage23g/fisher_cottage_6/VillageLantern/VillageWarmLight",
+      "center_max_error_m": 0.00015501100142500945,
+      "half_axes_max_error_m": 7.5970317539031385e-06,
+      "actual_half_axes": [
+        0.054443359375,
+        0.130000114440918,
+        0.05419921875
+      ],
+      "multiplier_correct": true,
+      "color_max_error": 4.221076987942496e-08,
+      "color_note": "Village glTF linear emissiveFactor converted to Godot Color sRGB representation; raw stored value comparison, not full render-output photometry."
+    },
+    {
+      "index": 7,
+      "node": "/root/Skyfarer/MainlandVillage23g/keeper_house_3/VillageLantern/VillageWarmLight",
+      "center_max_error_m": 0.00011668588626889687,
+      "half_axes_max_error_m": 3.180046860506991e-05,
+      "actual_half_axes": [
+        0.0545654296875,
+        0.130000114440918,
+        0.05401611328125
+      ],
+      "multiplier_correct": true,
+      "color_max_error": 4.221076987942496e-08,
+      "color_note": "Village glTF linear emissiveFactor converted to Godot Color sRGB representation; raw stored value comparison, not full render-output photometry."
+    },
+    {
+      "index": 8,
+      "node": "/root/Skyfarer/MainlandVillage23g/keeper_house_4/VillageLantern/VillageWarmLight",
+      "center_max_error_m": 0.00021825526800967054,
+      "half_axes_max_error_m": 3.376233485141711e-05,
+      "actual_half_axes": [
+        0.053955078125,
+        0.130000114440918,
+        0.0545654296875
+      ],
+      "multiplier_correct": true,
+      "color_max_error": 4.221076987942496e-08,
+      "color_note": "Village glTF linear emissiveFactor converted to Godot Color sRGB representation; raw stored value comparison, not full render-output photometry."
+    },
+    {
+      "index": 9,
+      "node": "/root/Skyfarer/MainlandVillage23g/keeper_house_7/VillageLantern/VillageWarmLight",
+      "center_max_error_m": 0.00023629785209777765,
+      "half_axes_max_error_m": 2.388757354765403e-05,
+      "actual_half_axes": [
+        0.0540771484375,
+        0.130000114440918,
+        0.0545654296875
+      ],
+      "multiplier_correct": true,
+      "color_max_error": 4.221076987942496e-08,
+      "color_note": "Village glTF linear emissiveFactor converted to Godot Color sRGB representation; raw stored value comparison, not full render-output photometry."
+    },
+    {
+      "index": 10,
+      "node": "/root/Skyfarer/MainlandVillage23g/keeper_house_8/VillageLantern/VillageWarmLight",
+      "center_max_error_m": 9.023889742820757e-05,
+      "half_axes_max_error_m": 5.373300382416346e-06,
+      "actual_half_axes": [
+        0.0543212890625,
+        0.130000114440918,
+        0.0543212890625
+      ],
+      "multiplier_correct": true,
+      "color_max_error": 4.221076987942496e-08,
+      "color_note": "Village glTF linear emissiveFactor converted to Godot Color sRGB representation; raw stored value comparison, not full render-output photometry."
+    },
+    {
+      "index": 11,
+      "node": "/root/Skyfarer/MainlandVillage23g/quay_workshop_2/VillageLantern/VillageWarmLight",
+      "center_max_error_m": 3.3397865081497e-05,
+      "half_axes_max_error_m": 7.597031981276814e-06,
+      "actual_half_axes": [
+        0.054443359375,
+        0.12999963760376,
+        0.05419921875
+      ],
+      "multiplier_correct": true,
+      "color_max_error": 4.221076987942496e-08,
+      "color_note": "Village glTF linear emissiveFactor converted to Godot Color sRGB representation; raw stored value comparison, not full render-output photometry."
+    },
+    {
+      "index": 12,
+      "node": "/root/Skyfarer/MainlandVillage23g/quay_workshop_9/VillageLantern/VillageWarmLight",
+      "center_max_error_m": 3.3397865081497e-05,
+      "half_axes_max_error_m": 7.597031981276814e-06,
+      "actual_half_axes": [
+        0.054443359375,
+        0.130000114440918,
+        0.05419921875
+      ],
+      "multiplier_correct": true,
+      "color_max_error": 4.221076987942496e-08,
+      "color_note": "Village glTF linear emissiveFactor converted to Godot Color sRGB representation; raw stored value comparison, not full render-output photometry."
+    }
+  ],
+  "opaque_tower_source_verification": [
+    {
+      "tower": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_a",
+      "body": "/root/Skyfarer/ActualOpaqueReflectionCasters34d/Lighthouse_island_aOpaqueReflectionCaster",
+      "actual_triangles": 3628,
+      "independent_glb_expected_triangles": 3628,
+      "surface_set_matches": true,
+      "surfaces": 10
+    },
+    {
+      "tower": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_b",
+      "body": "/root/Skyfarer/ActualOpaqueReflectionCasters34d/Lighthouse_island_bOpaqueReflectionCaster",
+      "actual_triangles": 3628,
+      "independent_glb_expected_triangles": 3628,
+      "surface_set_matches": true,
+      "surfaces": 10
+    },
+    {
+      "tower": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_c",
+      "body": "/root/Skyfarer/ActualOpaqueReflectionCasters34d/Lighthouse_island_cOpaqueReflectionCaster",
+      "actual_triangles": 3628,
+      "independent_glb_expected_triangles": 3628,
+      "surface_set_matches": true,
+      "surfaces": 10
+    },
+    {
+      "tower": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_d",
+      "body": "/root/Skyfarer/ActualOpaqueReflectionCasters34d/Lighthouse_island_dOpaqueReflectionCaster",
+      "actual_triangles": 3628,
+      "independent_glb_expected_triangles": 3628,
+      "surface_set_matches": true,
+      "surfaces": 10
+    }
+  ],
+  "existing_radial_records": [
+    {
+      "index": 0,
+      "ray_count": 2048,
+      "hits": 1864,
+      "no_hit_sentinel_count": 184,
+      "bad_no_hit_sentinel": 0,
+      "max_reported_distance_error_m": 2.731926758769987e-05,
+      "max_reported_hit_direction_error_degrees": 0.010586403652758192,
+      "generator_to_shader_texel_mismatch": 0,
+      "distance_minmax_m": [
+        0.649643778800964,
+        450.0
+      ],
+      "collider_counts": {
+        "/root/Skyfarer/ActualOpaqueReflectionCasters34d/Lighthouse_island_aOpaqueReflectionCaster": 1128,
+        "/root/Skyfarer/MainlandVillage23g/mainland_headland_0/Mainland headland continuous bedrock and grass terraces/Mainland headland continuous bedrock and grass terraces_col": 95,
+        "/root/Skyfarer/MainlandVillage23g/HeadlandPine_21/Collision": 1,
+        "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision": 158,
+        "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision": 278,
+        "/root/Skyfarer/LanternCoastStudy/reef_spire_9/reef_spire_Coast blue grey bedrock/reef_spire_Coast blue grey bedrock_col": 1,
+        "/root/Skyfarer/World/Terrain/Ground_-3_-2/Collision": 49,
+        "/root/Skyfarer/World/Terrain/Ground_-4_-2/Collision": 83,
+        "/root/Skyfarer/MainlandVillage23g/HeadlandPine_2/Collision": 1,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_4/keeper_house_Keeper lime plaster/keeper_house_Keeper lime plaster_col": 1,
+        "/root/Skyfarer/LanternCoastStudy/reef_spire_6/reef_spire_Coast blue grey bedrock/reef_spire_Coast blue grey bedrock_col": 1,
+        "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col": 7,
+        "/root/Skyfarer/LanternCoastStudy/keeper_house_21/keeper_house_Keeper weathered oak/keeper_house_Keeper weathered oak_col": 1,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_foreground/village_foreground_Village worn limestone 0/village_foreground_Village worn limestone 0_col": 1,
+        "/root/Skyfarer/MainlandVillage23g/HeadlandPine_1/Collision": 1,
+        "/root/Skyfarer/LanternCoastStudy/reef_ridge_4/reef_ridge_Coast blue grey bedrock/reef_ridge_Coast blue grey bedrock_col": 7,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_1/fisher_cottage_Keeper lime plaster/fisher_cottage_Keeper lime plaster_col": 1,
+        "/root/Skyfarer/MainlandVillage23g/quay_workshop_2/quay_workshop_Keeper sandstone foundations/quay_workshop_Keeper sandstone foundations_col": 1,
+        "/root/Skyfarer/LanternCoastStudy/reef_low_5/reef_low_Coast blue grey bedrock/reef_low_Coast blue grey bedrock_col": 2,
+        "/root/Skyfarer/LanternCoastStudy/IslandPine_34/Collision": 7,
+        "/root/Skyfarer/LanternCoastStudy/IslandPine_36/Collision": 7,
+        "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast blue grey bedrock/island_c_Coast blue grey bedrock_col": 3,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_1/fisher_cottage_Keeper sandstone foundations/fisher_cottage_Keeper sandstone foundations_col": 1,
+        "/root/Skyfarer/LanternCoastStudy/IslandPine_35/Collision": 3,
+        "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a grass and exposed rock terrain/island_a grass and exposed rock terrain_col": 21,
+        "/root/Skyfarer/LanternCoastStudy/keeper_house_22/keeper_house_Keeper terracotta tile/keeper_house_Keeper terracotta tile_col": 3,
+        "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a faulted bedrock/island_a faulted bedrock_col": 1,
+        "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a terrain fitted keeper paths/island_a terrain fitted keeper paths_col": 1
+      },
+      "examples": [
+        {
+          "collider": "/root/Skyfarer/ActualOpaqueReflectionCasters34d/Lighthouse_island_aOpaqueReflectionCaster",
+          "distance_m": 1.82080388069153,
+          "position": [
+            -2354.5615234375,
+            49.6336364746094,
+            -1656.93603515625
+          ],
+          "x": 5,
+          "y": 0
+        },
+        {
+          "collider": "/root/Skyfarer/ActualOpaqueReflectionCasters34d/Lighthouse_island_aOpaqueReflectionCaster",
+          "distance_m": 0.649939894676209,
+          "position": [
+            -2353.15795898438,
+            49.6519317626953,
+            -1656.63037109375
+          ],
+          "x": 13,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "ray_count": 2048,
+      "hits": 1861,
+      "no_hit_sentinel_count": 187,
+      "bad_no_hit_sentinel": 0,
+      "max_reported_distance_error_m": 2.9646880989275814e-05,
+      "max_reported_hit_direction_error_degrees": 0.01279520113895079,
+      "generator_to_shader_texel_mismatch": 0,
+      "distance_minmax_m": [
+        0.658583343029022,
+        450.0
+      ],
+      "collider_counts": {
+        "/root/Skyfarer/ActualOpaqueReflectionCasters34d/Lighthouse_island_bOpaqueReflectionCaster": 1072,
+        "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_keeper_house_32/keeper_house_Keeper terracotta tile/keeper_house_Keeper terracotta tile_col": 1,
+        "/root/Skyfarer/World/Terrain/Ground_-3_-4/Collision": 1,
+        "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision": 5,
+        "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision": 155,
+        "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision": 544,
+        "/root/Skyfarer/LanternCoastStudy/reef_low_8/reef_low_Coast blue grey bedrock/reef_low_Coast blue grey bedrock_col": 1,
+        "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_timber_pier_64/timber_pier_Harbor oak plank 1/timber_pier_Harbor oak plank 1_col": 1,
+        "/root/Skyfarer/LanternCoastStudy/reef_low_13/reef_low_Coast blue grey bedrock/reef_low_Coast blue grey bedrock_col": 1,
+        "/root/Skyfarer/LanternCoastStudy/reef_ridge_12/reef_ridge_Coast blue grey bedrock/reef_ridge_Coast blue grey bedrock_col": 4,
+        "/root/Skyfarer/LanternCoastStudy/reef_low_11/reef_low_Coast blue grey bedrock/reef_low_Coast blue grey bedrock_col": 2,
+        "/root/Skyfarer/LanternCoastStudy/reef_ridge_10/reef_ridge_Coast blue grey bedrock/reef_ridge_Coast blue grey bedrock_col": 1,
+        "/root/Skyfarer/LanternCoastStudy/IslandPine_45/Collision": 19,
+        "/root/Skyfarer/LanternCoastStudy/island_b_2/island_b_Coast short olive grass/island_b_Coast short olive grass_col": 40,
+        "/root/Skyfarer/LanternCoastStudy/IslandPine_46/Collision": 3,
+        "/root/Skyfarer/LanternCoastStudy/IslandPine_41/Collision": 2,
+        "/root/Skyfarer/LanternCoastStudy/IslandPine_47/Collision": 2,
+        "/root/Skyfarer/LanternCoastStudy/IslandPine_48/Collision": 1,
+        "/root/Skyfarer/LanternCoastStudy/island_b_2/island_b_Coast blue grey bedrock/island_b_Coast blue grey bedrock_col": 5,
+        "/root/Skyfarer/LanternCoastStudy/IslandPine_49/Collision": 1
+      },
+      "examples": [
+        {
+          "collider": "/root/Skyfarer/ActualOpaqueReflectionCasters34d/Lighthouse_island_bOpaqueReflectionCaster",
+          "distance_m": 0.663521409034729,
+          "position": [
+            -2700.65625,
+            41.2351379394531,
+            -2202.09741210938
+          ],
+          "x": 1,
+          "y": 0
+        },
+        {
+          "collider": "/root/Skyfarer/ActualOpaqueReflectionCasters34d/Lighthouse_island_bOpaqueReflectionCaster",
+          "distance_m": 1.8494713306427,
+          "position": [
+            -2701.1015625,
+            41.2166061401367,
+            -2203.4853515625
+          ],
+          "x": 9,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "ray_count": 2048,
+      "hits": 1888,
+      "no_hit_sentinel_count": 160,
+      "bad_no_hit_sentinel": 0,
+      "max_reported_distance_error_m": 2.724787941588147e-05,
+      "max_reported_hit_direction_error_degrees": 0.012795201110466304,
+      "generator_to_shader_texel_mismatch": 0,
+      "distance_minmax_m": [
+        0.706097424030304,
+        450.0
+      ],
+      "collider_counts": {
+        "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision": 527,
+        "/root/Skyfarer/LanternCoastStudy/reef_spire_14/reef_spire_Coast blue grey bedrock/reef_spire_Coast blue grey bedrock_col": 4,
+        "/root/Skyfarer/World/Terrain/Ground_-4_-5/Collision": 1,
+        "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_timber_pier_73/timber_pier_Harbor oak plank 0/timber_pier_Harbor oak plank 0_col": 1,
+        "/root/Skyfarer/LanternCoastStudy/reef_ridge_12/reef_ridge_Coast blue grey bedrock/reef_ridge_Coast blue grey bedrock_col": 1,
+        "/root/Skyfarer/World/Terrain/Ground_-5_-4/Collision": 372,
+        "/root/Skyfarer/LanternCoastStudy/reef_ridge_16/reef_ridge_Coast blue grey bedrock/reef_ridge_Coast blue grey bedrock_col": 11,
+        "/root/Skyfarer/LanternCoastStudy/reef_low_13/reef_low_Coast blue grey bedrock/reef_low_Coast blue grey bedrock_col": 1,
+        "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision": 3,
+        "/root/Skyfarer/World/Terrain/Ground_-5_-3/Collision": 2,
+        "/root/Skyfarer/LanternCoastStudy/reef_low_15/reef_low_Coast blue grey bedrock/reef_low_Coast blue grey bedrock_col": 5,
+        "/root/Skyfarer/ActualOpaqueReflectionCasters34d/Lighthouse_island_cOpaqueReflectionCaster": 960
+      },
+      "examples": [
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+          "distance_m": 425.427551269531,
+          "position": [
+            -2866.80615234375,
+            11.348690032959,
+            -3033.35913085938
+          ],
+          "x": 20,
+          "y": 1
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+          "distance_m": 407.505981445313,
+          "position": [
+            -2839.23022460938,
+            12.1887722015381,
+            -2998.34521484375
+          ],
+          "x": 21,
+          "y": 1
+        },
+        {
+          "collider": "/root/Skyfarer/ActualOpaqueReflectionCasters34d/Lighthouse_island_cOpaqueReflectionCaster",
+          "distance_m": 2.96386218070984,
+          "position": [
+            -3051.29638671875,
+            30.3180866241455,
+            -2649.33740234375
+          ],
+          "x": 0,
+          "y": 10
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "ray_count": 2048,
+      "hits": 1950,
+      "no_hit_sentinel_count": 98,
+      "bad_no_hit_sentinel": 0,
+      "max_reported_distance_error_m": 2.2359910076374945e-05,
+      "max_reported_hit_direction_error_degrees": 0.009759996004675094,
+      "generator_to_shader_texel_mismatch": 0,
+      "distance_minmax_m": [
+        0.651070713996887,
+        450.0
+      ],
+      "collider_counts": {
+        "/root/Skyfarer/ActualOpaqueReflectionCasters34d/Lighthouse_island_dOpaqueReflectionCaster": 1128,
+        "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_keeper_house_4/keeper_house_Keeper terracotta tile/keeper_house_Keeper terracotta tile_col": 1,
+        "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision": 108,
+        "/root/Skyfarer/MainlandVillage23g/mainland_headland_0/Mainland headland continuous bedrock and grass terraces/Mainland headland continuous bedrock and grass terraces_col": 120,
+        "/root/Skyfarer/MainlandVillage23g/HeadlandPine_22/Collision": 1,
+        "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a grass and exposed rock terrain/island_a grass and exposed rock terrain_col": 10,
+        "/root/Skyfarer/LanternCoastStudy/IslandPine_35/Collision": 1,
+        "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision": 503,
+        "/root/Skyfarer/MainlandVillage23g/HeadlandPine_24/Collision": 1,
+        "/root/Skyfarer/LanternCoastStudy/reef_ridge_10/reef_ridge_Coast blue grey bedrock/reef_ridge_Coast blue grey bedrock_col": 1,
+        "/root/Skyfarer/MainlandVillage23g/HeadlandPine_13/Collision": 1,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_4/keeper_house_Keeper terracotta tile/keeper_house_Keeper terracotta tile_col": 1,
+        "/root/Skyfarer/LanternCoastStudy/reef_spire_6/reef_spire_Coast blue grey bedrock/reef_spire_Coast blue grey bedrock_col": 1,
+        "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a faulted bedrock/island_a faulted bedrock_col": 41,
+        "/root/Skyfarer/LanternCoastStudy/reef_ridge_4/reef_ridge_Coast blue grey bedrock/reef_ridge_Coast blue grey bedrock_col": 3,
+        "/root/Skyfarer/LanternCoastStudy/reef_spire_9/reef_spire_Coast blue grey bedrock/reef_spire_Coast blue grey bedrock_col": 4,
+        "/root/Skyfarer/LanternCoastStudy/reef_low_11/reef_low_Coast blue grey bedrock/reef_low_Coast blue grey bedrock_col": 1,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_7/keeper_house_Keeper terracotta tile/keeper_house_Keeper terracotta tile_col": 1,
+        "/root/Skyfarer/MainlandVillage23g/quay_workshop_9/quay_workshop_Keeper terracotta tile/quay_workshop_Keeper terracotta tile_col": 1,
+        "/root/Skyfarer/MainlandVillage23g/HeadlandPine_14/Collision": 1,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_3/keeper_house_Keeper terracotta tile/keeper_house_Keeper terracotta tile_col": 1,
+        "/root/Skyfarer/World/Terrain/Ground_-3_-2/Collision": 3,
+        "/root/Skyfarer/World/Terrain/Ground_-4_-2/Collision": 2,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_7/keeper_house_Keeper sandstone foundations/keeper_house_Keeper sandstone foundations_col": 1,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_bay/village_bay_Village worn limestone 1/village_bay_Village worn limestone 1_col": 1,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_3/keeper_house_Keeper sandstone foundations/keeper_house_Keeper sandstone foundations_col": 1,
+        "/root/Skyfarer/LanternCoastStudy/reef_ridge_7/reef_ridge_Coast blue grey bedrock/reef_ridge_Coast blue grey bedrock_col": 9,
+        "/root/Skyfarer/LanternCoastStudy/reef_low_8/reef_low_Coast blue grey bedrock/reef_low_Coast blue grey bedrock_col": 3
+      },
+      "examples": [
+        {
+          "collider": "/root/Skyfarer/ActualOpaqueReflectionCasters34d/Lighthouse_island_dOpaqueReflectionCaster",
+          "distance_m": 1.81811416149139,
+          "position": [
+            -2373.66015625,
+            31.26220703125,
+            -1814.13842773438
+          ],
+          "x": 2,
+          "y": 0
+        },
+        {
+          "collider": "/root/Skyfarer/ActualOpaqueReflectionCasters34d/Lighthouse_island_dOpaqueReflectionCaster",
+          "distance_m": 0.651070773601532,
+          "position": [
+            -2372.2314453125,
+            31.2804393768311,
+            -1814.25512695313
+          ],
+          "x": 10,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "ray_count": 2048,
+      "hits": 2027,
+      "no_hit_sentinel_count": 21,
+      "bad_no_hit_sentinel": 0,
+      "max_reported_distance_error_m": 2.058414179373358e-05,
+      "max_reported_hit_direction_error_degrees": 0.029874406584695846,
+      "generator_to_shader_texel_mismatch": 0,
+      "distance_minmax_m": [
+        0.675547301769257,
+        450.0
+      ],
+      "collider_counts": {
+        "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col": 14,
+        "/root/Skyfarer/LanternCoastStudy/reef_low_11/reef_low_Coast blue grey bedrock/reef_low_Coast blue grey bedrock_col": 2,
+        "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision": 214,
+        "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision": 143,
+        "/root/Skyfarer/MainlandVillage23g/mainland_headland_0/Mainland headland continuous bedrock and grass terraces/Mainland headland continuous bedrock and grass terraces_col": 660,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_1/fisher_cottage_Keeper sandstone foundations/fisher_cottage_Keeper sandstone foundations_col": 182,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_1/fisher_cottage_Keeper weathered oak/fisher_cottage_Keeper weathered oak_col": 404,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_1/fisher_cottage_Keeper window glass/fisher_cottage_Keeper window glass_col": 166,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_1/fisher_cottage_Keeper lime plaster/fisher_cottage_Keeper lime plaster_col": 75,
+        "/root/Skyfarer/MainlandVillage23g/HeadlandPine_0/Collision": 1,
+        "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a cliff outcrop 01/island_a cliff outcrop 01_col": 1,
+        "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a faulted bedrock/island_a faulted bedrock_col": 34,
+        "/root/Skyfarer/LanternCoastStudy/reef_ridge_7/reef_ridge_Coast blue grey bedrock/reef_ridge_Coast blue grey bedrock_col": 2,
+        "/root/Skyfarer/World/Terrain/Ground_-3_-2/Collision": 3,
+        "/root/Skyfarer/World/Terrain/Ground_-4_-2/Collision": 8,
+        "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast blue grey bedrock/island_c_Coast blue grey bedrock_col": 7,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_1/fisher_cottage_Keeper dark forged bronze/fisher_cottage_Keeper dark forged bronze_col": 4,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_foreground/village_foreground_Village worn limestone 1/village_foreground_Village worn limestone 1_col": 33,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_foreground/village_foreground_Village worn limestone 0/village_foreground_Village worn limestone 0_col": 14,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_foreground/village_foreground_Village worn limestone 3/village_foreground_Village worn limestone 3_col": 30,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_foreground/village_foreground_Village buried rubble masonry/village_foreground_Village buried rubble masonry_col": 4,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_foreground/village_foreground_Village worn limestone 2/village_foreground_Village worn limestone 2_col": 26
+      },
+      "examples": [
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "distance_m": 110.567070007324,
+          "position": [
+            -2366.06079101563,
+            9.71238803863525,
+            -1800.74816894531
+          ],
+          "x": 4,
+          "y": 0
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "distance_m": 102.46280670166,
+          "position": [
+            -2353.99609375,
+            9.83901786804199,
+            -1806.150390625
+          ],
+          "x": 5,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "ray_count": 2048,
+      "hits": 2021,
+      "no_hit_sentinel_count": 27,
+      "bad_no_hit_sentinel": 0,
+      "max_reported_distance_error_m": 1.8279134565091226e-05,
+      "max_reported_hit_direction_error_degrees": 0.012200730189706667,
+      "generator_to_shader_texel_mismatch": 0,
+      "distance_minmax_m": [
+        0.67191743850708,
+        450.0
+      ],
+      "collider_counts": {
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_3/keeper_house_Keeper lime plaster/keeper_house_Keeper lime plaster_col": 11,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_3/keeper_house_Keeper terracotta tile/keeper_house_Keeper terracotta tile_col": 3,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_4/keeper_house_Keeper terracotta tile/keeper_house_Keeper terracotta tile_col": 1,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_4/keeper_house_Keeper lime plaster/keeper_house_Keeper lime plaster_col": 12,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_5/fisher_cottage_Keeper sandstone foundations/fisher_cottage_Keeper sandstone foundations_col": 177,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_5/fisher_cottage_Keeper weathered oak/fisher_cottage_Keeper weathered oak_col": 456,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_5/fisher_cottage_Keeper window glass/fisher_cottage_Keeper window glass_col": 165,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_5/fisher_cottage_Keeper lime plaster/fisher_cottage_Keeper lime plaster_col": 57,
+        "/root/Skyfarer/MainlandVillage23g/mainland_headland_0/Mainland headland continuous bedrock and grass terraces/Mainland headland continuous bedrock and grass terraces_col": 734,
+        "/root/Skyfarer/LanternCoastStudy/reef_spire_6/reef_spire_Coast blue grey bedrock/reef_spire_Coast blue grey bedrock_col": 56,
+        "/root/Skyfarer/MainlandVillage23g/HeadlandPine_1/Collision": 13,
+        "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a cliff outcrop 01/island_a cliff outcrop 01_col": 2,
+        "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a faulted bedrock/island_a faulted bedrock_col": 23,
+        "/root/Skyfarer/LanternCoastStudy/reef_ridge_7/reef_ridge_Coast blue grey bedrock/reef_ridge_Coast blue grey bedrock_col": 3,
+        "/root/Skyfarer/LanternCoastStudy/IslandPine_28/Collision": 1,
+        "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast weathered stone footpath/island_c_Coast weathered stone footpath_col": 1,
+        "/root/Skyfarer/LanternCoastStudy/reef_spire_9/reef_spire_Coast blue grey bedrock/reef_spire_Coast blue grey bedrock_col": 1,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_3/keeper_house_Keeper weathered oak/keeper_house_Keeper weathered oak_col": 9,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_4/keeper_house_Keeper weathered oak/keeper_house_Keeper weathered oak_col": 1,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_4/keeper_house_Keeper window glass/keeper_house_Keeper window glass_col": 2,
+        "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a cliff outcrop 02/island_a cliff outcrop 02_col": 1,
+        "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision": 67,
+        "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col": 3,
+        "/root/Skyfarer/World/Terrain/Ground_-4_-2/Collision": 3,
+        "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast blue grey bedrock/island_c_Coast blue grey bedrock_col": 2,
+        "/root/Skyfarer/MainlandVillage23g/quay_workshop_2/quay_workshop_Keeper terracotta tile/quay_workshop_Keeper terracotta tile_col": 24,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_3/keeper_house_Keeper window glass/keeper_house_Keeper window glass_col": 1,
+        "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision": 4,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_4/keeper_house_Keeper sandstone foundations/keeper_house_Keeper sandstone foundations_col": 4,
+        "/root/Skyfarer/MainlandVillage23g/HeadlandPine_0/Collision": 8,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_3/keeper_house_Keeper sandstone foundations/keeper_house_Keeper sandstone foundations_col": 2,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_5/fisher_cottage_Keeper dark forged bronze/fisher_cottage_Keeper dark forged bronze_col": 5,
+        "/root/Skyfarer/MainlandVillage23g/quay_workshop_2/quay_workshop_Keeper lime plaster/quay_workshop_Keeper lime plaster_col": 43,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_foreground/village_foreground_Village worn limestone 1/village_foreground_Village worn limestone 1_col": 27,
+        "/root/Skyfarer/MainlandVillage23g/quay_workshop_2/quay_workshop_Keeper weathered oak/quay_workshop_Keeper weathered oak_col": 7,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_foreground/village_foreground_Village worn limestone 0/village_foreground_Village worn limestone 0_col": 22,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_foreground/village_foreground_Village buried rubble masonry/village_foreground_Village buried rubble masonry_col": 5,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_foreground/village_foreground_Village worn limestone 3/village_foreground_Village worn limestone 3_col": 27,
+        "/root/Skyfarer/MainlandVillage23g/quay_workshop_2/quay_workshop_Keeper sandstone foundations/quay_workshop_Keeper sandstone foundations_col": 8,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_foreground/village_foreground_Village worn limestone 2/village_foreground_Village worn limestone 2_col": 30
+      },
+      "examples": [
+        {
+          "collider": "/root/Skyfarer/MainlandVillage23g/keeper_house_3/keeper_house_Keeper lime plaster/keeper_house_Keeper lime plaster_col",
+          "distance_m": 29.0779418945313,
+          "position": [
+            -2249.46069335938,
+            17.4856586456299,
+            -1762.08972167969
+          ],
+          "x": 9,
+          "y": 0
+        },
+        {
+          "collider": "/root/Skyfarer/MainlandVillage23g/keeper_house_3/keeper_house_Keeper terracotta tile/keeper_house_Keeper terracotta tile_col",
+          "distance_m": 27.0006141662598,
+          "position": [
+            -2246.0205078125,
+            17.5181159973145,
+            -1761.89331054688
+          ],
+          "x": 10,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "ray_count": 2048,
+      "hits": 2031,
+      "no_hit_sentinel_count": 17,
+      "bad_no_hit_sentinel": 0,
+      "max_reported_distance_error_m": 2.858533542848818e-05,
+      "max_reported_hit_direction_error_degrees": 0.013180613353240797,
+      "generator_to_shader_texel_mismatch": 0,
+      "distance_minmax_m": [
+        0.674971878528595,
+        450.0
+      ],
+      "collider_counts": {
+        "/root/Skyfarer/LanternCoastStudy/reef_spire_9/reef_spire_Coast blue grey bedrock/reef_spire_Coast blue grey bedrock_col": 2,
+        "/root/Skyfarer/LanternCoastStudy/reef_low_11/reef_low_Coast blue grey bedrock/reef_low_Coast blue grey bedrock_col": 2,
+        "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision": 134,
+        "/root/Skyfarer/MainlandVillage23g/mainland_headland_0/Mainland headland continuous bedrock and grass terraces/Mainland headland continuous bedrock and grass terraces_col": 530,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_6/fisher_cottage_Keeper sandstone foundations/fisher_cottage_Keeper sandstone foundations_col": 179,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_6/fisher_cottage_Keeper weathered oak/fisher_cottage_Keeper weathered oak_col": 400,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_6/fisher_cottage_Keeper window glass/fisher_cottage_Keeper window glass_col": 185,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_6/fisher_cottage_Keeper lime plaster/fisher_cottage_Keeper lime plaster_col": 76,
+        "/root/Skyfarer/LanternCoastStudy/reef_low_5/reef_low_Coast blue grey bedrock/reef_low_Coast blue grey bedrock_col": 1,
+        "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a faulted bedrock/island_a faulted bedrock_col": 6,
+        "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col": 12,
+        "/root/Skyfarer/World/Terrain/Ground_-4_-2/Collision": 1,
+        "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision": 154,
+        "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast blue grey bedrock/island_c_Coast blue grey bedrock_col": 3,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_6/fisher_cottage_Keeper dark forged bronze/fisher_cottage_Keeper dark forged bronze_col": 5,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_bay/village_bay_Village worn limestone 0/village_bay_Village worn limestone 0_col": 93,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_bay/village_bay_Village worn limestone 3/village_bay_Village worn limestone 3_col": 88,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_bay/village_bay_Village worn limestone 1/village_bay_Village worn limestone 1_col": 81,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_bay/village_bay_Village worn limestone 2/village_bay_Village worn limestone 2_col": 61,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_bay/village_bay_Village buried rubble masonry/village_bay_Village buried rubble masonry_col": 18
+      },
+      "examples": [
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/reef_spire_9/reef_spire_Coast blue grey bedrock/reef_spire_Coast blue grey bedrock_col",
+          "distance_m": 291.423187255859,
+          "position": [
+            -2520.400390625,
+            4.38651371002197,
+            -1970.18273925781
+          ],
+          "x": 3,
+          "y": 0
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/reef_low_11/reef_low_Coast blue grey bedrock/reef_low_Coast blue grey bedrock_col",
+          "distance_m": 297.696350097656,
+          "position": [
+            -2466.59790039063,
+            4.28849267959595,
+            -2071.9130859375
+          ],
+          "x": 7,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "ray_count": 2048,
+      "hits": 2007,
+      "no_hit_sentinel_count": 41,
+      "bad_no_hit_sentinel": 0,
+      "max_reported_distance_error_m": 1.946331565250148e-05,
+      "max_reported_hit_direction_error_degrees": 0.020940461886327342,
+      "generator_to_shader_texel_mismatch": 0,
+      "distance_minmax_m": [
+        0.517295300960541,
+        450.0
+      ],
+      "collider_counts": {
+        "/root/Skyfarer/LanternCoastStudy/keeper_house_21/keeper_house_Keeper warm recessed corner stone/keeper_house_Keeper warm recessed corner stone_col": 1,
+        "/root/Skyfarer/LanternCoastStudy/reef_spire_9/reef_spire_Coast blue grey bedrock/reef_spire_Coast blue grey bedrock_col": 2,
+        "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision": 138,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_3/keeper_house_Keeper warm recessed corner stone/keeper_house_Keeper warm recessed corner stone_col": 11,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_3/keeper_house_Keeper lime plaster/keeper_house_Keeper lime plaster_col": 141,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_3/keeper_house_Keeper weathered oak/keeper_house_Keeper weathered oak_col": 293,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_3/keeper_house_Keeper window glass/keeper_house_Keeper window glass_col": 77,
+        "/root/Skyfarer/MainlandVillage23g/mainland_headland_0/Mainland headland continuous bedrock and grass terraces/Mainland headland continuous bedrock and grass terraces_col": 814,
+        "/root/Skyfarer/MainlandVillage23g/quay_workshop_2/quay_workshop_Keeper terracotta tile/quay_workshop_Keeper terracotta tile_col": 5,
+        "/root/Skyfarer/MainlandVillage23g/HeadlandPine_0/Collision": 5,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_1/fisher_cottage_Keeper sandstone foundations/fisher_cottage_Keeper sandstone foundations_col": 23,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_1/fisher_cottage_Fisher muted russet shingles/fisher_cottage_Fisher muted russet shingles_col": 21,
+        "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a faulted bedrock/island_a faulted bedrock_col": 5,
+        "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col": 13,
+        "/root/Skyfarer/LanternCoastStudy/reef_low_11/reef_low_Coast blue grey bedrock/reef_low_Coast blue grey bedrock_col": 1,
+        "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision": 40,
+        "/root/Skyfarer/MainlandVillage23g/quay_workshop_2/quay_workshop_Keeper weathered oak/quay_workshop_Keeper weathered oak_col": 17,
+        "/root/Skyfarer/LanternCoastStudy/reef_low_5/reef_low_Coast blue grey bedrock/reef_low_Coast blue grey bedrock_col": 1,
+        "/root/Skyfarer/LanternCoastStudy/reef_ridge_7/reef_ridge_Coast blue grey bedrock/reef_ridge_Coast blue grey bedrock_col": 4,
+        "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast blue grey bedrock/island_c_Coast blue grey bedrock_col": 6,
+        "/root/Skyfarer/MainlandVillage23g/quay_workshop_2/quay_workshop_Keeper lime plaster/quay_workshop_Keeper lime plaster_col": 20,
+        "/root/Skyfarer/World/Terrain/Ground_-3_-2/Collision": 2,
+        "/root/Skyfarer/World/Terrain/Ground_-4_-2/Collision": 4,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_1/fisher_cottage_Keeper lime plaster/fisher_cottage_Keeper lime plaster_col": 52,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_foreground/village_foreground_Village worn limestone 2/village_foreground_Village worn limestone 2_col": 54,
+        "/root/Skyfarer/MainlandVillage23g/quay_workshop_2/quay_workshop_Keeper sandstone foundations/quay_workshop_Keeper sandstone foundations_col": 5,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_foreground/village_foreground_Village worn limestone 0/village_foreground_Village worn limestone 0_col": 36,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_1/fisher_cottage_Keeper weathered oak/fisher_cottage_Keeper weathered oak_col": 12,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_foreground/village_foreground_Village worn limestone 1/village_foreground_Village worn limestone 1_col": 49,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_foreground/village_foreground_Village worn limestone 3/village_foreground_Village worn limestone 3_col": 38,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_foreground/village_foreground_Village buried rubble masonry/village_foreground_Village buried rubble masonry_col": 9,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_1/fisher_cottage_Keeper window glass/fisher_cottage_Keeper window glass_col": 5,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_3/keeper_house_Keeper sandstone foundations/keeper_house_Keeper sandstone foundations_col": 101,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_3/keeper_house_Keeper dark forged bronze/keeper_house_Keeper dark forged bronze_col": 2
+      },
+      "examples": [
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/keeper_house_21/keeper_house_Keeper warm recessed corner stone/keeper_house_Keeper warm recessed corner stone_col",
+          "distance_m": 115.446746826172,
+          "position": [
+            -2356.34594726563,
+            13.1361484527588,
+            -1811.64636230469
+          ],
+          "x": 4,
+          "y": 0
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/reef_spire_9/reef_spire_Coast blue grey bedrock/reef_spire_Coast blue grey bedrock_col",
+          "distance_m": 339.566802978516,
+          "position": [
+            -2524.70532226563,
+            9.63426780700684,
+            -1964.54760742188
+          ],
+          "x": 6,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "ray_count": 2048,
+      "hits": 2029,
+      "no_hit_sentinel_count": 19,
+      "bad_no_hit_sentinel": 0,
+      "max_reported_distance_error_m": 1.6426760282683972e-05,
+      "max_reported_hit_direction_error_degrees": 0.02984773614406096,
+      "generator_to_shader_texel_mismatch": 0,
+      "distance_minmax_m": [
+        0.52010703086853,
+        450.0
+      ],
+      "collider_counts": {
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_3/keeper_house_Keeper terracotta tile/keeper_house_Keeper terracotta tile_col": 12,
+        "/root/Skyfarer/MainlandVillage23g/HeadlandPine_3/Collision": 10,
+        "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision": 9,
+        "/root/Skyfarer/MainlandVillage23g/mainland_headland_0/Mainland headland continuous bedrock and grass terraces/Mainland headland continuous bedrock and grass terraces_col": 910,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_7/keeper_house_Keeper terracotta tile/keeper_house_Keeper terracotta tile_col": 1,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_8/keeper_house_Keeper terracotta tile/keeper_house_Keeper terracotta tile_col": 1,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_4/keeper_house_Keeper warm recessed corner stone/keeper_house_Keeper warm recessed corner stone_col": 22,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_4/keeper_house_Keeper lime plaster/keeper_house_Keeper lime plaster_col": 122,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_4/keeper_house_Keeper weathered oak/keeper_house_Keeper weathered oak_col": 281,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_4/keeper_house_Keeper window glass/keeper_house_Keeper window glass_col": 77,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_5/fisher_cottage_Keeper lime plaster/fisher_cottage_Keeper lime plaster_col": 1,
+        "/root/Skyfarer/LanternCoastStudy/reef_spire_6/reef_spire_Coast blue grey bedrock/reef_spire_Coast blue grey bedrock_col": 4,
+        "/root/Skyfarer/MainlandVillage23g/HeadlandPine_1/Collision": 2,
+        "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a faulted bedrock/island_a faulted bedrock_col": 20,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_3/keeper_house_Keeper weathered oak/keeper_house_Keeper weathered oak_col": 29,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_6/fisher_cottage_Fisher muted russet shingles/fisher_cottage_Fisher muted russet shingles_col": 1,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_7/keeper_house_Keeper lime plaster/keeper_house_Keeper lime plaster_col": 1,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_8/keeper_house_Keeper warm recessed corner stone/keeper_house_Keeper warm recessed corner stone_col": 1,
+        "/root/Skyfarer/MainlandVillage23g/quay_workshop_9/quay_workshop_Keeper terracotta tile/quay_workshop_Keeper terracotta tile_col": 1,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_5/fisher_cottage_Keeper weathered oak/fisher_cottage_Keeper weathered oak_col": 2,
+        "/root/Skyfarer/MainlandVillage23g/quay_workshop_2/quay_workshop_Keeper terracotta tile/quay_workshop_Keeper terracotta tile_col": 18,
+        "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a cliff outcrop 02/island_a cliff outcrop 02_col": 1,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_3/keeper_house_Keeper lime plaster/keeper_house_Keeper lime plaster_col": 127,
+        "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision": 16,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_6/fisher_cottage_Keeper lime plaster/fisher_cottage_Keeper lime plaster_col": 1,
+        "/root/Skyfarer/MainlandVillage23g/quay_workshop_9/quay_workshop_Keeper sandstone foundations/quay_workshop_Keeper sandstone foundations_col": 1,
+        "/root/Skyfarer/World/Terrain/Ground_-4_-2/Collision": 1,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_1/fisher_cottage_Keeper sandstone foundations/fisher_cottage_Keeper sandstone foundations_col": 2,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_foreground/village_foreground_Village worn limestone 1/village_foreground_Village worn limestone 1_col": 41,
+        "/root/Skyfarer/MainlandVillage23g/quay_workshop_2/quay_workshop_Keeper lime plaster/quay_workshop_Keeper lime plaster_col": 30,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_3/keeper_house_Keeper warm recessed corner stone/keeper_house_Keeper warm recessed corner stone_col": 7,
+        "/root/Skyfarer/MainlandVillage23g/quay_workshop_2/quay_workshop_Keeper weathered oak/quay_workshop_Keeper weathered oak_col": 7,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_1/fisher_cottage_Fisher muted russet shingles/fisher_cottage_Fisher muted russet shingles_col": 1,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_1/fisher_cottage_Keeper lime plaster/fisher_cottage_Keeper lime plaster_col": 5,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_foreground/village_foreground_Village buried rubble masonry/village_foreground_Village buried rubble masonry_col": 2,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_1/fisher_cottage_Keeper weathered oak/fisher_cottage_Keeper weathered oak_col": 1,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_1/fisher_cottage_Keeper window glass/fisher_cottage_Keeper window glass_col": 3,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_3/keeper_house_Keeper window glass/keeper_house_Keeper window glass_col": 8,
+        "/root/Skyfarer/MainlandVillage23g/quay_workshop_2/quay_workshop_Keeper window glass/quay_workshop_Keeper window glass_col": 2,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_foreground/village_foreground_Village worn limestone 2/village_foreground_Village worn limestone 2_col": 36,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_foreground/village_foreground_Village worn limestone 3/village_foreground_Village worn limestone 3_col": 32,
+        "/root/Skyfarer/MainlandVillage23g/quay_workshop_2/quay_workshop_Keeper sandstone foundations/quay_workshop_Keeper sandstone foundations_col": 7,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_3/keeper_house_Keeper sandstone foundations/keeper_house_Keeper sandstone foundations_col": 23,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_foreground/village_foreground_Village worn limestone 0/village_foreground_Village worn limestone 0_col": 34,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_4/keeper_house_Keeper dark forged bronze/keeper_house_Keeper dark forged bronze_col": 3,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_4/keeper_house_Keeper sandstone foundations/keeper_house_Keeper sandstone foundations_col": 113
+      },
+      "examples": [
+        {
+          "collider": "/root/Skyfarer/MainlandVillage23g/keeper_house_3/keeper_house_Keeper terracotta tile/keeper_house_Keeper terracotta tile_col",
+          "distance_m": 8.19275379180908,
+          "position": [
+            -2244.15625,
+            16.8119850158691,
+            -1762.42907714844
+          ],
+          "x": 0,
+          "y": 0
+        },
+        {
+          "collider": "/root/Skyfarer/MainlandVillage23g/keeper_house_3/keeper_house_Keeper terracotta tile/keeper_house_Keeper terracotta tile_col",
+          "distance_m": 7.61262273788452,
+          "position": [
+            -2243.50366210938,
+            16.8210506439209,
+            -1763.14404296875
+          ],
+          "x": 1,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "ray_count": 2048,
+      "hits": 2030,
+      "no_hit_sentinel_count": 18,
+      "bad_no_hit_sentinel": 0,
+      "max_reported_distance_error_m": 2.3117006719530764e-05,
+      "max_reported_hit_direction_error_degrees": 0.008184866393829673,
+      "generator_to_shader_texel_mismatch": 0,
+      "distance_minmax_m": [
+        0.510239839553833,
+        450.0
+      ],
+      "collider_counts": {
+        "/root/Skyfarer/LanternCoastStudy/reef_spire_9/reef_spire_Coast blue grey bedrock/reef_spire_Coast blue grey bedrock_col": 2,
+        "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision": 122,
+        "/root/Skyfarer/MainlandVillage23g/mainland_headland_0/Mainland headland continuous bedrock and grass terraces/Mainland headland continuous bedrock and grass terraces_col": 1027,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_7/keeper_house_Keeper warm recessed corner stone/keeper_house_Keeper warm recessed corner stone_col": 22,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_7/keeper_house_Keeper lime plaster/keeper_house_Keeper lime plaster_col": 156,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_7/keeper_house_Keeper weathered oak/keeper_house_Keeper weathered oak_col": 306,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_7/keeper_house_Keeper window glass/keeper_house_Keeper window glass_col": 63,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_6/fisher_cottage_Fisher muted russet shingles/fisher_cottage_Fisher muted russet shingles_col": 9,
+        "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a faulted bedrock/island_a faulted bedrock_col": 3,
+        "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col": 9,
+        "/root/Skyfarer/LanternCoastStudy/reef_low_11/reef_low_Coast blue grey bedrock/reef_low_Coast blue grey bedrock_col": 2,
+        "/root/Skyfarer/LanternCoastStudy/reef_low_8/reef_low_Coast blue grey bedrock/reef_low_Coast blue grey bedrock_col": 1,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_6/fisher_cottage_Keeper weathered oak/fisher_cottage_Keeper weathered oak_col": 11,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_6/fisher_cottage_Keeper lime plaster/fisher_cottage_Keeper lime plaster_col": 16,
+        "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast blue grey bedrock/island_c_Coast blue grey bedrock_col": 4,
+        "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision": 16,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_bay/village_bay_Village worn limestone 1/village_bay_Village worn limestone 1_col": 38,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_bay/village_bay_Village worn limestone 0/village_bay_Village worn limestone 0_col": 37,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_6/fisher_cottage_Keeper sandstone foundations/fisher_cottage_Keeper sandstone foundations_col": 1,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_bay/village_bay_Village worn limestone 3/village_bay_Village worn limestone 3_col": 41,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_bay/village_bay_Village worn limestone 2/village_bay_Village worn limestone 2_col": 33,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_7/keeper_house_Keeper sandstone foundations/keeper_house_Keeper sandstone foundations_col": 106,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_7/keeper_house_Keeper dark forged bronze/keeper_house_Keeper dark forged bronze_col": 3,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_bay/village_bay_Village buried rubble masonry/village_bay_Village buried rubble masonry_col": 2
+      },
+      "examples": [
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/reef_spire_9/reef_spire_Coast blue grey bedrock/reef_spire_Coast blue grey bedrock_col",
+          "distance_m": 308.055908203125,
+          "position": [
+            -2535.29125976563,
+            6.12662839889526,
+            -1962.56298828125
+          ],
+          "x": 2,
+          "y": 0
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision",
+          "distance_m": 364.942260742188,
+          "position": [
+            -2359.43432617188,
+            5.23777866363525,
+            -2231.28784179688
+          ],
+          "x": 12,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "ray_count": 2048,
+      "hits": 2035,
+      "no_hit_sentinel_count": 13,
+      "bad_no_hit_sentinel": 0,
+      "max_reported_distance_error_m": 1.7727847307469347e-05,
+      "max_reported_hit_direction_error_degrees": 0.004639597516639062,
+      "generator_to_shader_texel_mismatch": 0,
+      "distance_minmax_m": [
+        0.50813090801239,
+        450.0
+      ],
+      "collider_counts": {
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_7/keeper_house_Keeper weathered oak/keeper_house_Keeper weathered oak_col": 22,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_7/keeper_house_Keeper terracotta tile/keeper_house_Keeper terracotta tile_col": 6,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_7/keeper_house_Keeper lime plaster/keeper_house_Keeper lime plaster_col": 76,
+        "/root/Skyfarer/MainlandVillage23g/mainland_headland_0/Mainland headland continuous bedrock and grass terraces/Mainland headland continuous bedrock and grass terraces_col": 737,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_8/keeper_house_Keeper warm recessed corner stone/keeper_house_Keeper warm recessed corner stone_col": 24,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_8/keeper_house_Keeper lime plaster/keeper_house_Keeper lime plaster_col": 140,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_8/keeper_house_Keeper weathered oak/keeper_house_Keeper weathered oak_col": 321,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_8/keeper_house_Keeper window glass/keeper_house_Keeper window glass_col": 63,
+        "/root/Skyfarer/MainlandVillage23g/quay_workshop_9/quay_workshop_Keeper terracotta tile/quay_workshop_Keeper terracotta tile_col": 5,
+        "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a faulted bedrock/island_a faulted bedrock_col": 8,
+        "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col": 6,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_6/fisher_cottage_Keeper sandstone foundations/fisher_cottage_Keeper sandstone foundations_col": 21,
+        "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision": 63,
+        "/root/Skyfarer/LanternCoastStudy/reef_spire_9/reef_spire_Coast blue grey bedrock/reef_spire_Coast blue grey bedrock_col": 1,
+        "/root/Skyfarer/World/Terrain/Ground_-4_-2/Collision": 1,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_6/fisher_cottage_Fisher muted russet shingles/fisher_cottage_Fisher muted russet shingles_col": 2,
+        "/root/Skyfarer/MainlandVillage23g/quay_workshop_9/quay_workshop_Keeper lime plaster/quay_workshop_Keeper lime plaster_col": 7,
+        "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast blue grey bedrock/island_c_Coast blue grey bedrock_col": 4,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_6/fisher_cottage_Keeper lime plaster/fisher_cottage_Keeper lime plaster_col": 24,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_7/keeper_house_Keeper warm recessed corner stone/keeper_house_Keeper warm recessed corner stone_col": 7,
+        "/root/Skyfarer/MainlandVillage23g/quay_workshop_9/quay_workshop_Keeper weathered oak/quay_workshop_Keeper weathered oak_col": 4,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_7/keeper_house_Keeper window glass/keeper_house_Keeper window glass_col": 7,
+        "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision": 49,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_6/fisher_cottage_Keeper weathered oak/fisher_cottage_Keeper weathered oak_col": 2,
+        "/root/Skyfarer/MainlandVillage23g/quay_workshop_9/quay_workshop_Keeper sandstone foundations/quay_workshop_Keeper sandstone foundations_col": 2,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_7/keeper_house_Keeper sandstone foundations/keeper_house_Keeper sandstone foundations_col": 21,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_bay/village_bay_Village worn limestone 3/village_bay_Village worn limestone 3_col": 84,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_bay/village_bay_Village worn limestone 2/village_bay_Village worn limestone 2_col": 67,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_bay/village_bay_Village worn limestone 0/village_bay_Village worn limestone 0_col": 73,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_6/fisher_cottage_Keeper window glass/fisher_cottage_Keeper window glass_col": 4,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_bay/village_bay_Village buried rubble masonry/village_bay_Village buried rubble masonry_col": 17,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_bay/village_bay_Village worn limestone 1/village_bay_Village worn limestone 1_col": 59,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_8/keeper_house_Keeper dark forged bronze/keeper_house_Keeper dark forged bronze_col": 3,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_8/keeper_house_Keeper sandstone foundations/keeper_house_Keeper sandstone foundations_col": 105
+      },
+      "examples": [
+        {
+          "collider": "/root/Skyfarer/MainlandVillage23g/keeper_house_7/keeper_house_Keeper weathered oak/keeper_house_Keeper weathered oak_col",
+          "distance_m": 13.3340950012207,
+          "position": [
+            -2234.61254882813,
+            12.7316551208496,
+            -1881.51525878906
+          ],
+          "x": 6,
+          "y": 0
+        },
+        {
+          "collider": "/root/Skyfarer/MainlandVillage23g/keeper_house_7/keeper_house_Keeper weathered oak/keeper_house_Keeper weathered oak_col",
+          "distance_m": 11.3883771896362,
+          "position": [
+            -2232.34106445313,
+            12.7620582580566,
+            -1881.22009277344
+          ],
+          "x": 7,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "ray_count": 2048,
+      "hits": 2020,
+      "no_hit_sentinel_count": 28,
+      "bad_no_hit_sentinel": 0,
+      "max_reported_distance_error_m": 1.7376839821281465e-05,
+      "max_reported_hit_direction_error_degrees": 0.012376343203529927,
+      "generator_to_shader_texel_mismatch": 0,
+      "distance_minmax_m": [
+        1.00046157836914,
+        450.0
+      ],
+      "collider_counts": {
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_1/fisher_cottage_Fisher muted russet shingles/fisher_cottage_Fisher muted russet shingles_col": 17,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_1/fisher_cottage_Keeper lime plaster/fisher_cottage_Keeper lime plaster_col": 44,
+        "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision": 66,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_3/keeper_house_Keeper lime plaster/keeper_house_Keeper lime plaster_col": 4,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_3/keeper_house_Keeper weathered oak/keeper_house_Keeper weathered oak_col": 3,
+        "/root/Skyfarer/MainlandVillage23g/mainland_headland_0/Mainland headland continuous bedrock and grass terraces/Mainland headland continuous bedrock and grass terraces_col": 606,
+        "/root/Skyfarer/MainlandVillage23g/quay_workshop_2/quay_workshop_Keeper sandstone foundations/quay_workshop_Keeper sandstone foundations_col": 161,
+        "/root/Skyfarer/MainlandVillage23g/quay_workshop_2/quay_workshop_Keeper lime plaster/quay_workshop_Keeper lime plaster_col": 132,
+        "/root/Skyfarer/MainlandVillage23g/quay_workshop_2/quay_workshop_Keeper weathered oak/quay_workshop_Keeper weathered oak_col": 367,
+        "/root/Skyfarer/MainlandVillage23g/HeadlandPine_0/Collision": 5,
+        "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a cliff outcrop 01/island_a cliff outcrop 01_col": 1,
+        "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a cliff outcrop 02/island_a cliff outcrop 02_col": 1,
+        "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a faulted bedrock/island_a faulted bedrock_col": 28,
+        "/root/Skyfarer/LanternCoastStudy/reef_ridge_7/reef_ridge_Coast blue grey bedrock/reef_ridge_Coast blue grey bedrock_col": 3,
+        "/root/Skyfarer/LanternCoastStudy/reef_low_11/reef_low_Coast blue grey bedrock/reef_low_Coast blue grey bedrock_col": 2,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_foreground/village_foreground_Village worn limestone 1/village_foreground_Village worn limestone 1_col": 127,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_foreground/village_foreground_Village worn limestone 3/village_foreground_Village worn limestone 3_col": 134,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_3/keeper_house_Keeper sandstone foundations/keeper_house_Keeper sandstone foundations_col": 3,
+        "/root/Skyfarer/LanternCoastStudy/reef_low_5/reef_low_Coast blue grey bedrock/reef_low_Coast blue grey bedrock_col": 1,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_1/fisher_cottage_Keeper weathered oak/fisher_cottage_Keeper weathered oak_col": 13,
+        "/root/Skyfarer/World/Terrain/Ground_-3_-2/Collision": 1,
+        "/root/Skyfarer/World/Terrain/Ground_-4_-2/Collision": 5,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_foreground/village_foreground_Village worn limestone 2/village_foreground_Village worn limestone 2_col": 130,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_foreground/village_foreground_Village worn limestone 0/village_foreground_Village worn limestone 0_col": 118,
+        "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision": 19,
+        "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a low shore ledge 03/island_a low shore ledge 03_col": 1,
+        "/root/Skyfarer/MainlandVillage23g/quay_workshop_2/quay_workshop_Keeper dark forged bronze/quay_workshop_Keeper dark forged bronze_col": 4,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_1/fisher_cottage_Keeper window glass/fisher_cottage_Keeper window glass_col": 4,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_1/fisher_cottage_Keeper sandstone foundations/fisher_cottage_Keeper sandstone foundations_col": 9,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_foreground/village_foreground_Village buried rubble masonry/village_foreground_Village buried rubble masonry_col": 11
+      },
+      "examples": [
+        {
+          "collider": "/root/Skyfarer/MainlandVillage23g/fisher_cottage_1/fisher_cottage_Fisher muted russet shingles/fisher_cottage_Fisher muted russet shingles_col",
+          "distance_m": 12.1908149719238,
+          "position": [
+            -2262.01196289063,
+            13.0495185852051,
+            -1751.03930664063
+          ],
+          "x": 1,
+          "y": 0
+        },
+        {
+          "collider": "/root/Skyfarer/MainlandVillage23g/fisher_cottage_1/fisher_cottage_Fisher muted russet shingles/fisher_cottage_Fisher muted russet shingles_col",
+          "distance_m": 10.8033628463745,
+          "position": [
+            -2260.43286132813,
+            13.0711984634399,
+            -1751.87548828125
+          ],
+          "x": 2,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "ray_count": 2048,
+      "hits": 2038,
+      "no_hit_sentinel_count": 10,
+      "bad_no_hit_sentinel": 0,
+      "max_reported_distance_error_m": 2.1950403890969028e-05,
+      "max_reported_hit_direction_error_degrees": 0.010977399114154034,
+      "generator_to_shader_texel_mismatch": 0,
+      "distance_minmax_m": [
+        1.00042593479156,
+        450.0
+      ],
+      "collider_counts": {
+        "/root/Skyfarer/LanternCoastStudy/reef_spire_9/reef_spire_Coast blue grey bedrock/reef_spire_Coast blue grey bedrock_col": 1,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_6/fisher_cottage_Fisher muted russet shingles/fisher_cottage_Fisher muted russet shingles_col": 1,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_6/fisher_cottage_Keeper weathered oak/fisher_cottage_Keeper weathered oak_col": 4,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_6/fisher_cottage_Keeper lime plaster/fisher_cottage_Keeper lime plaster_col": 14,
+        "/root/Skyfarer/LanternCoastStudy/reef_low_11/reef_low_Coast blue grey bedrock/reef_low_Coast blue grey bedrock_col": 2,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_7/keeper_house_Keeper warm recessed corner stone/keeper_house_Keeper warm recessed corner stone_col": 1,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_7/keeper_house_Keeper lime plaster/keeper_house_Keeper lime plaster_col": 3,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_7/keeper_house_Keeper weathered oak/keeper_house_Keeper weathered oak_col": 1,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_8/keeper_house_Keeper sandstone foundations/keeper_house_Keeper sandstone foundations_col": 8,
+        "/root/Skyfarer/MainlandVillage23g/mainland_headland_0/Mainland headland continuous bedrock and grass terraces/Mainland headland continuous bedrock and grass terraces_col": 829,
+        "/root/Skyfarer/MainlandVillage23g/quay_workshop_9/quay_workshop_Keeper sandstone foundations/quay_workshop_Keeper sandstone foundations_col": 162,
+        "/root/Skyfarer/MainlandVillage23g/quay_workshop_9/quay_workshop_Keeper lime plaster/quay_workshop_Keeper lime plaster_col": 132,
+        "/root/Skyfarer/MainlandVillage23g/quay_workshop_9/quay_workshop_Keeper weathered oak/quay_workshop_Keeper weathered oak_col": 367,
+        "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a faulted bedrock/island_a faulted bedrock_col": 6,
+        "/root/Skyfarer/LanternCoastStudy/reef_ridge_7/reef_ridge_Coast blue grey bedrock/reef_ridge_Coast blue grey bedrock_col": 1,
+        "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col": 10,
+        "/root/Skyfarer/LanternCoastStudy/reef_low_8/reef_low_Coast blue grey bedrock/reef_low_Coast blue grey bedrock_col": 1,
+        "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision": 53,
+        "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast blue grey bedrock/island_c_Coast blue grey bedrock_col": 3,
+        "/root/Skyfarer/MainlandVillage23g/keeper_house_7/keeper_house_Keeper sandstone foundations/keeper_house_Keeper sandstone foundations_col": 1,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_6/fisher_cottage_Keeper window glass/fisher_cottage_Keeper window glass_col": 1,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_bay/village_bay_Village worn limestone 3/village_bay_Village worn limestone 3_col": 84,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_bay/village_bay_Village worn limestone 1/village_bay_Village worn limestone 1_col": 75,
+        "/root/Skyfarer/MainlandVillage23g/fisher_cottage_6/fisher_cottage_Keeper sandstone foundations/fisher_cottage_Keeper sandstone foundations_col": 2,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_bay/village_bay_Village worn limestone 2/village_bay_Village worn limestone 2_col": 91,
+        "/root/Skyfarer/MainlandVillage23g/quay_workshop_9/quay_workshop_Keeper dark forged bronze/quay_workshop_Keeper dark forged bronze_col": 4,
+        "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision": 89,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_bay/village_bay_Village worn limestone 0/village_bay_Village worn limestone 0_col": 87,
+        "/root/Skyfarer/SharedVillageStreets26b/Street_bay/village_bay_Village buried rubble masonry/village_bay_Village buried rubble masonry_col": 5
+      },
+      "examples": [
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/reef_spire_9/reef_spire_Coast blue grey bedrock/reef_spire_Coast blue grey bedrock_col",
+          "distance_m": 323.315856933594,
+          "position": [
+            -2522.33349609375,
+            5.8881893157959,
+            -1967.15930175781
+          ],
+          "x": 3,
+          "y": 0
+        },
+        {
+          "collider": "/root/Skyfarer/MainlandVillage23g/fisher_cottage_6/fisher_cottage_Fisher muted russet shingles/fisher_cottage_Fisher muted russet shingles_col",
+          "distance_m": 24.8799457550049,
+          "position": [
+            -2240.44311523438,
+            10.5512523651123,
+            -1868.88671875
+          ],
+          "x": 4,
+          "y": 0
+        }
+      ]
+    }
+  ],
+  "material_deduplication": {
+    "actual_count": 1,
+    "instance_ids": [
+      -9223371557361930752
+    ],
+    "fixes_34c_repeated_cache_value_count": true
+  },
+  "sampling": {
+    "map": [
+      64,
+      32
+    ],
+    "rays": 26624,
+    "hemisphere": "Uniform azimuth and down=-direction.y (cosine of zenith), not uniform elevation angles.",
+    "generator": "az=((x+.5)/64-.5)*TAU, down=(y+.5)/32, dir=(cos(az)*sqrt(1-down²),-down,sin(az)*sqrt(1-down²))",
+    "shader_inverse": "outgoing=-direction_to_emitter; u=fract(atan(outgoing.z,outgoing.x)/TAU+.5), v=-outgoing.y, nearest texel center in 13-row-block atlas.",
+    "far_m": 450,
+    "out_of_range": "distance>=450 returns zero; inside uses actual radial depth plus0.25m bias.",
+    "coverage_limit": "Nearest angular cell is an approximation; no new physics raycasts here. Self-/thin-occluder visibility at arbitrary unsampled water points is not proven."
+  },
+  "emission_model_limits": [
+    "WorldAABB projection uses dot(abs(basis),half_axes), the support extent of a box, not exact luminous mesh silhouette. Yaw is reflected in measured world AABB but object-oriented shape is not retained.",
+    "Gaussian angular lobe with energy-spread ratio and gain6 is authored reflection approximation; not exact BRDF or calibrated emitted radiance.",
+    "Registered Godot material Color values are copied into vec4 uniforms. Raw source agreement does not independently validate renderer color-space/radiance conversion.",
+    "Opaque mesh caster lists/counts match actual GLB selection; runtime report does not serialize final collision face coordinates, so exact engine collider triangle identity is not proven solely by counts.",
+    "Only13 selected emitting surfaces, not every harbor lantern/window, scene reflection or moving occluder coverage.",
+    "Temporary caster bodies use reflection layer1<<20 and collision_mask0, but query layer membership is not a security boundary: any unrelated query mask containing that bit could see them. No gameplay query behavior was tested."
+  ],
+  "runtime": {
+    "run_id": "water-34d-20260909T000325Z-9d52dcd583c84d04a34254a8eab8e9e3",
+    "completed_utc": "2026-09-09T00:05:32.630350+00:00",
+    "views": [
+      {
+        "view": "night-reference",
+        "checks": {
+          "run_id": true,
+          "shader_sha": true,
+          "camera_unchanged": true,
+          "time": true,
+          "world_sha": true,
+          "coast_sha": true,
+          "placements": true,
+          "named_trees": true,
+          "emitter_report_sha": true,
+          "counts": true,
+          "one_moon_material_id_matches_emitter_material": true
+        }
+      },
+      {
+        "view": "night-water-near",
+        "checks": {
+          "run_id": true,
+          "shader_sha": true,
+          "camera_unchanged": true,
+          "time": true,
+          "world_sha": true,
+          "coast_sha": true,
+          "placements": true,
+          "named_trees": true,
+          "emitter_report_sha": true,
+          "counts": true,
+          "one_moon_material_id_matches_emitter_material": true
+        }
+      },
+      {
+        "view": "night-water-shift",
+        "checks": {
+          "run_id": true,
+          "shader_sha": true,
+          "camera_unchanged": true,
+          "time": true,
+          "world_sha": true,
+          "coast_sha": true,
+          "placements": true,
+          "named_trees": true,
+          "emitter_report_sha": true,
+          "counts": true,
+          "one_moon_material_id_matches_emitter_material": true
+        }
+      },
+      {
+        "view": "night-time18",
+        "checks": {
+          "run_id": true,
+          "shader_sha": true,
+          "camera_unchanged": true,
+          "time": true,
+          "world_sha": true,
+          "coast_sha": true,
+          "placements": true,
+          "named_trees": true,
+          "emitter_report_sha": true,
+          "counts": true,
+          "one_moon_material_id_matches_emitter_material": true
+        }
+      },
+      {
+        "view": "day-reference",
+        "checks": {
+          "run_id": true,
+          "shader_sha": true,
+          "camera_unchanged": true,
+          "time": true,
+          "world_sha": true,
+          "coast_sha": true,
+          "placements": true,
+          "named_trees": true
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "path": "images/night-reference.png",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/night-reference.png.json",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/night-water-near.png",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/night-water-near.png.json",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/night-water-shift.png",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/night-water-shift.png.json",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/night-time18.png",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/night-time18.png.json",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/day-reference.png",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/day-reference.png.json",
+        "matches_manifest": true
+      },
+      {
+        "path": "study-inputs\\new-environment27f\\open_water.gdshader",
+        "same_as_native": true,
+        "matches_manifest": true
+      },
+      {
+        "path": "study-inputs\\coast_environment_27f.gd",
+        "same_as_native": true,
+        "matches_manifest": true
+      },
+      {
+        "path": "study-inputs\\water_emitter_reflections_34d.gd",
+        "same_as_native": true,
+        "matches_manifest": true
+      }
+    ]
+  },
+  "full_reference_accepted": false,
+  "all_reference_goal_complete": false,
+  "bounded_opaque_source_hit_samples": {
+    "scope": "Twelve existing caster-hit directions against actual opaque source GLB transformed by recorded tower pose; not full world ray visibility.",
+    "samples": [
+      {
+        "emitter_index": 0,
+        "pixel": [
+          5,
+          0
+        ],
+        "actual_collider": "/root/Skyfarer/ActualOpaqueReflectionCasters34d/Lighthouse_island_aOpaqueReflectionCaster",
+        "actual_distance_m": 1.82080388069153,
+        "independent_glb_opaque_triangles": 3628,
+        "independent_nearest_distance_m": 1.8207721831726569,
+        "absolute_error_m": 3.1697518873219366e-05
+      },
+      {
+        "emitter_index": 0,
+        "pixel": [
+          12,
+          23
+        ],
+        "actual_collider": "/root/Skyfarer/ActualOpaqueReflectionCasters34d/Lighthouse_island_aOpaqueReflectionCaster",
+        "actual_distance_m": 1.86589372158051,
+        "independent_glb_opaque_triangles": 3628,
+        "independent_nearest_distance_m": 1.8655304604388394,
+        "absolute_error_m": 0.0003632611416706233
+      },
+      {
+        "emitter_index": 0,
+        "pixel": [
+          63,
+          31
+        ],
+        "actual_collider": "/root/Skyfarer/ActualOpaqueReflectionCasters34d/Lighthouse_island_aOpaqueReflectionCaster",
+        "actual_distance_m": 0.706123471260071,
+        "independent_glb_opaque_triangles": 3628,
+        "independent_nearest_distance_m": 0.706029498387904,
+        "absolute_error_m": 9.397287216705852e-05
+      },
+      {
+        "emitter_index": 1,
+        "pixel": [
+          1,
+          0
+        ],
+        "actual_collider": "/root/Skyfarer/ActualOpaqueReflectionCasters34d/Lighthouse_island_bOpaqueReflectionCaster",
+        "actual_distance_m": 0.663521409034729,
+        "independent_glb_opaque_triangles": 3628,
+        "independent_nearest_distance_m": 0.6635470502819827,
+        "absolute_error_m": 2.5641247253682664e-05
+      },
+      {
+        "emitter_index": 1,
+        "pixel": [
+          40,
+          23
+        ],
+        "actual_collider": "/root/Skyfarer/ActualOpaqueReflectionCasters34d/Lighthouse_island_bOpaqueReflectionCaster",
+        "actual_distance_m": 1.86598360538483,
+        "independent_glb_opaque_triangles": 3628,
+        "independent_nearest_distance_m": 1.8655304604388392,
+        "absolute_error_m": 0.00045314494599080213
+      },
+      {
+        "emitter_index": 1,
+        "pixel": [
+          63,
+          31
+        ],
+        "actual_collider": "/root/Skyfarer/ActualOpaqueReflectionCasters34d/Lighthouse_island_bOpaqueReflectionCaster",
+        "actual_distance_m": 0.706123471260071,
+        "independent_glb_opaque_triangles": 3628,
+        "independent_nearest_distance_m": 0.7060294983879041,
+        "absolute_error_m": 9.39728721669475e-05
+      },
+      {
+        "emitter_index": 2,
+        "pixel": [
+          0,
+          10
+        ],
+        "actual_collider": "/root/Skyfarer/ActualOpaqueReflectionCasters34d/Lighthouse_island_cOpaqueReflectionCaster",
+        "actual_distance_m": 2.96386218070984,
+        "independent_glb_opaque_triangles": 3628,
+        "independent_nearest_distance_m": 2.963868969215039,
+        "absolute_error_m": 6.788505198862538e-06
+      },
+      {
+        "emitter_index": 2,
+        "pixel": [
+          32,
+          24
+        ],
+        "actual_collider": "/root/Skyfarer/ActualOpaqueReflectionCasters34d/Lighthouse_island_cOpaqueReflectionCaster",
+        "actual_distance_m": 1.78972804546356,
+        "independent_glb_opaque_triangles": 3628,
+        "independent_nearest_distance_m": 1.7893888512435898,
+        "absolute_error_m": 0.00033919421997019583
+      },
+      {
+        "emitter_index": 2,
+        "pixel": [
+          63,
+          31
+        ],
+        "actual_collider": "/root/Skyfarer/ActualOpaqueReflectionCasters34d/Lighthouse_island_cOpaqueReflectionCaster",
+        "actual_distance_m": 0.706123471260071,
+        "independent_glb_opaque_triangles": 3628,
+        "independent_nearest_distance_m": 0.7060314360118795,
+        "absolute_error_m": 9.203524819156872e-05
+      },
+      {
+        "emitter_index": 3,
+        "pixel": [
+          2,
+          0
+        ],
+        "actual_collider": "/root/Skyfarer/ActualOpaqueReflectionCasters34d/Lighthouse_island_dOpaqueReflectionCaster",
+        "actual_distance_m": 1.81811416149139,
+        "independent_glb_opaque_triangles": 3628,
+        "independent_nearest_distance_m": 1.8181767663271555,
+        "absolute_error_m": 6.260483576547848e-05
+      },
+      {
+        "emitter_index": 3,
+        "pixel": [
+          12,
+          23
+        ],
+        "actual_collider": "/root/Skyfarer/ActualOpaqueReflectionCasters34d/Lighthouse_island_dOpaqueReflectionCaster",
+        "actual_distance_m": 1.86597454547882,
+        "independent_glb_opaque_triangles": 3628,
+        "independent_nearest_distance_m": 1.8655330576794877,
+        "absolute_error_m": 0.0004414877993321742
+      },
+      {
+        "emitter_index": 3,
+        "pixel": [
+          63,
+          31
+        ],
+        "actual_collider": "/root/Skyfarer/ActualOpaqueReflectionCasters34d/Lighthouse_island_dOpaqueReflectionCaster",
+        "actual_distance_m": 0.706123471260071,
+        "independent_glb_opaque_triangles": 3628,
+        "independent_nearest_distance_m": 0.7060314360118796,
+        "absolute_error_m": 9.20352481914577e-05
+      }
+    ],
+    "all_within_2mm": true
+  }
+}

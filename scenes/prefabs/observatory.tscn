@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/asset_instance.gd" id="1_qlajo"]
+[ext_resource type="Material" path="res://materials/world.tres" id="2_rkcxs"]
+[ext_resource type="PackedScene" path="res://assets/models/observatory.glb" id="3_gxm6q"]
+[ext_resource type="Shape3D" path="res://assets/collision/observatory.res" id="4_gl1w7"]
+
+[node name="observatory" type="Node3D"]
+script = ExtResource("1_qlajo")
+asset_kind = "observatory"
+surface_material = ExtResource("2_rkcxs")
+
+[node name="Model" parent="." instance=ExtResource("3_gxm6q")]
+
+[node name="Collision" type="StaticBody3D" parent="."]
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision"]
+shape = ExtResource("4_gl1w7")

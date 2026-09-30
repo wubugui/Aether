@@ -1,0 +1,220 @@
+{
+  "round": "32f",
+  "scope": "Final bounded foreground A visual delta from32e, five actual GPU images; no engine or geometry recomputation",
+  "decision": "retain_stage_candidate_and_proceed_to33_right_coast; A art and full world remain unaccepted",
+  "run_status": "passed",
+  "run_passed": true,
+  "engine_stages": [
+    {
+      "name": "night-views",
+      "passed": true,
+      "exit_code": 0
+    },
+    {
+      "name": "day-views",
+      "passed": true,
+      "exit_code": 0
+    }
+  ],
+  "images": [
+    {
+      "view": "night-reference",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\foreground-island-32f-20260908T224143Z-7598ab628ffa40f0a4f20816ba9f05e2\\images\\night-reference.png",
+      "sha256": "b251c6b49e2997601277a440fb18b9b0a01ae780e88b9362bccb3ad7986cc538",
+      "actually_viewed": true,
+      "manifest_matches": true,
+      "sidecar_sha256": "c2eb2e4e1f8c61768512a431f15ed407b07b3e4272d8a71435b3f780c310daac",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "a_glb_sha256": "3b3e4ad1fd66bc6a5def30ff3d577522ae851e337d0e9ba27cce594f57a7ee0d",
+      "production_modified": false,
+      "image_difference_from_32e": {
+        "pixels_changed": 4475,
+        "max_channel_delta": 89,
+        "bbox_inclusive": [
+          34,
+          504,
+          1668,
+          923
+        ],
+        "meaning": "Raw pixel difference, not visual quality score or proof every difference comes from pad change"
+      }
+    },
+    {
+      "view": "day-reference",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\foreground-island-32f-20260908T224143Z-7598ab628ffa40f0a4f20816ba9f05e2\\images\\day-reference.png",
+      "sha256": "6eeebc3734e1281d4e03d2d58f4e3d54fe1be32265af36d0c3120327d0b29156",
+      "actually_viewed": true,
+      "manifest_matches": true,
+      "sidecar_sha256": "d526b690036a21a20a3adf7de528148c43b797cc872e5a31a6dc6a72beeebfd2",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "a_glb_sha256": "3b3e4ad1fd66bc6a5def30ff3d577522ae851e337d0e9ba27cce594f57a7ee0d",
+      "production_modified": false,
+      "image_difference_from_32e": {
+        "pixels_changed": 3680,
+        "max_channel_delta": 71,
+        "bbox_inclusive": [
+          98,
+          572,
+          721,
+          923
+        ],
+        "meaning": "Raw pixel difference, not visual quality score or proof every difference comes from pad change"
+      }
+    },
+    {
+      "view": "day-a-front",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\foreground-island-32f-20260908T224143Z-7598ab628ffa40f0a4f20816ba9f05e2\\images\\day-a-front.png",
+      "sha256": "27697b2ae96529471ef8630fce3450a61e0afece27b0d96c64c52cb972eadd5f",
+      "actually_viewed": true,
+      "manifest_matches": true,
+      "sidecar_sha256": "ae9f326e4568c81b663d6ea7777a2c56db8eff62600db6f6dbd2feede41ff5b7",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "a_glb_sha256": "3b3e4ad1fd66bc6a5def30ff3d577522ae851e337d0e9ba27cce594f57a7ee0d",
+      "production_modified": false,
+      "image_difference_from_32e": {
+        "pixels_changed": 785,
+        "max_channel_delta": 36,
+        "bbox_inclusive": [
+          742,
+          378,
+          1126,
+          606
+        ],
+        "meaning": "Raw pixel difference, not visual quality score or proof every difference comes from pad change"
+      }
+    },
+    {
+      "view": "day-a-back",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\foreground-island-32f-20260908T224143Z-7598ab628ffa40f0a4f20816ba9f05e2\\images\\day-a-back.png",
+      "sha256": "7750bc4e04d3ab3f1cce4f1d252e902c89774f77d716412243d7b451b8edb3c0",
+      "actually_viewed": true,
+      "manifest_matches": true,
+      "sidecar_sha256": "8385b1d6634cdcf68df7ec05be7e691279db8c852bddf0ffc6c7807f2a1166ba",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "a_glb_sha256": "3b3e4ad1fd66bc6a5def30ff3d577522ae851e337d0e9ba27cce594f57a7ee0d",
+      "production_modified": false,
+      "image_difference_from_32e": {
+        "pixels_changed": 1584,
+        "max_channel_delta": 51,
+        "bbox_inclusive": [
+          589,
+          136,
+          962,
+          446
+        ],
+        "meaning": "Raw pixel difference, not visual quality score or proof every difference comes from pad change"
+      }
+    },
+    {
+      "view": "day-a-approach",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\foreground-island-32f-20260908T224143Z-7598ab628ffa40f0a4f20816ba9f05e2\\images\\day-a-approach.png",
+      "sha256": "20c905613b309fbb4e246413e39233e1073f4672f8cdbf6b3d41dd5c0337e808",
+      "actually_viewed": true,
+      "manifest_matches": true,
+      "sidecar_sha256": "445eaed21c81856992a9801ff62e670218c7c33f375f82295ea3f7042ad2fc10",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "a_glb_sha256": "3b3e4ad1fd66bc6a5def30ff3d577522ae851e337d0e9ba27cce594f57a7ee0d",
+      "production_modified": false,
+      "image_difference_from_32e": {
+        "pixels_changed": 1135,
+        "max_channel_delta": 52,
+        "bbox_inclusive": [
+          536,
+          316,
+          1664,
+          859
+        ],
+        "meaning": "Raw pixel difference, not visual quality score or proof every difference comes from pad change"
+      }
+    }
+  ],
+  "source_identity": [
+    {
+      "file": "island_a.glb",
+      "candidate_sha256": "3b3e4ad1fd66bc6a5def30ff3d577522ae851e337d0e9ba27cce594f57a7ee0d",
+      "frozen_sha256": "3b3e4ad1fd66bc6a5def30ff3d577522ae851e337d0e9ba27cce594f57a7ee0d",
+      "same": true,
+      "manifest_matches": true
+    },
+    {
+      "file": "island_a.blend",
+      "candidate_sha256": "807a9038abd1a59012f32710f9a855320b1e8605d01b42e40247237322b392b1",
+      "frozen_sha256": "807a9038abd1a59012f32710f9a855320b1e8605d01b42e40247237322b392b1",
+      "same": true,
+      "manifest_matches": true
+    }
+  ],
+  "actual_site_evidence": {
+    "sha256": "a3032d581ab33cdb7195af9751531c7f6b9fec4f1d55a44ff1a656c903f5e2b3",
+    "counts": [
+      {
+        "view": "night-reference",
+        "expected_trees": 8,
+        "actual_trees": 8,
+        "unaffected_position_delta_m": 0
+      },
+      {
+        "view": "day-reference",
+        "expected_trees": 8,
+        "actual_trees": 8,
+        "unaffected_position_delta_m": 0
+      },
+      {
+        "view": "day-a-front",
+        "expected_trees": 8,
+        "actual_trees": 8,
+        "unaffected_position_delta_m": 0
+      },
+      {
+        "view": "day-a-back",
+        "expected_trees": 8,
+        "actual_trees": 8,
+        "unaffected_position_delta_m": 0
+      },
+      {
+        "view": "day-a-approach",
+        "expected_trees": 8,
+        "actual_trees": 8,
+        "unaffected_position_delta_m": 0
+      }
+    ]
+  },
+  "separate_geometry_audit_read": {
+    "path": "E:\\FeiTing\\reviews\\round-32f-foreground-independent-geometry.json",
+    "sha256": "cfd4329f9dea2aeec68ab97901093663d8bc08518c7f8a2edbd33f4253d855e0",
+    "pass": true,
+    "actual_source_reopened_and_unchanged": true,
+    "sites": [
+      {
+        "id": "left_house",
+        "actual_bottom_surface_pass": true,
+        "actual_bottom_outside_pad_m2": 0.0
+      },
+      {
+        "id": "right_house",
+        "actual_bottom_surface_pass": true,
+        "actual_bottom_outside_pad_m2": 0.0
+      },
+      {
+        "id": "tower",
+        "actual_bottom_surface_pass": true,
+        "actual_bottom_outside_pad_m2": 0.0
+      }
+    ],
+    "recomputed_by_this_reviewer": false
+  },
+  "visual_findings": [
+    "两屋入画、左屋山墙、低右肩、左树群与塔的主次关系保持，主机位未见构图退步。",
+    "窄草活动层与厚岩前面保持，旧尖立楔未回来。",
+    "day-a-back塔脚两屋间仍有灰绿折面和局部尖折感；全图尺度下32e→32f变化有限，不能说全部沟坡美术消失。",
+    "A宽大连续坡壁与按钮状凸岩持续未达到参考的错位岩肩体量；这是保留待细化项，不以隐藏背面任意精度阻止转入33。"
+  ],
+  "continuity_diagnosis_provenance": "Parent reports32e function0.1mm outside pad jump0.765553m and actual source face89.15deg; this visual review did not rerun that function diagnosis. Distinct from direct image conclusions.",
+  "full_reference_accepted": false,
+  "production_modified_by_reviewer": false
+}

@@ -1,0 +1,525 @@
+{
+  "schema_version": 1,
+  "reviewer": "independent fidelity_reviewer",
+  "run_id": "highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019",
+  "scope": "36a ten actual images, reference1125/1341, bounded frozen identity and flight evidence; no engine, Blender, geometry rebuild or production modification",
+  "manifest_sha256": "52c9f1328fd33bcaa60cabf5dd3c2d0621d3753a674d03e0419c0bcc80c82c4a",
+  "run_status": "passed",
+  "run_passed": true,
+  "stage_exit_codes": [
+    0
+  ],
+  "visual_accepted": false,
+  "production_install_supported": false,
+  "decision": "retain real high-coast and estuary as modeling draft; rework before local visual acceptance",
+  "images": [
+    {
+      "view": "storm-high",
+      "image": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\images\\storm-high.png",
+      "sha256": "73be2eb3ad48f1d2ea9a1ece37e14181c4859316fe2a3652713026f9ddc619cb",
+      "sidecar_sha256": "5d812e441e5747b7a8e9d6ce79fa47e8ba92af2d5849b11b633917e38959377a",
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -3000.0,
+          520.0,
+          -1250.0
+        ],
+        "rotation": [
+          -0.130871549248695,
+          -0.826470971107483,
+          0.0
+        ]
+      },
+      "directly_viewed": true,
+      "finding": "近海左侧已有两重抬升山体，较平岸有明确体量进展；右侧仍大面积平原，海岸沿纵深的层次未形成。旧云顶板与褐色云块仍在，属于继承问题。",
+      "manifest_image_match": true,
+      "manifest_sidecar_match": true,
+      "run_id_match": true,
+      "production_modified_recorded": false
+    },
+    {
+      "view": "storm-coast-low",
+      "image": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\images\\storm-coast-low.png",
+      "sha256": "44640e0806da6deb5d3ba55e3c7ebf7a89b55bbe220e794c6694af05af1428e4",
+      "sidecar_sha256": "4b480fb7e71210aaac8f2fc69cbb60ba7f958910c4ab0a580d425d0a73d200c7",
+      "camera": {
+        "fov": 60.0,
+        "position": [
+          -2830.0,
+          170.0,
+          -1550.0
+        ],
+        "rotation": [
+          -0.00844998378306627,
+          -0.95349383354187,
+          0.0
+        ]
+      },
+      "directly_viewed": true,
+      "finding": "左侧山体已贴近海岸，向右接低港岸；近山主要是大块绿黑斜面，缺低岩岬、崖肩、林坡与后山分层。当前横向看向陆内也限制参考沿岸构图。",
+      "manifest_image_match": true,
+      "manifest_sidecar_match": true,
+      "run_id_match": true,
+      "production_modified_recorded": false
+    },
+    {
+      "view": "estuary-high",
+      "image": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\images\\estuary-high.png",
+      "sha256": "e42420ce8ff4b79c59af8535deff2a23eb4b3f12677232e3db6bbf0034c9ce13",
+      "sidecar_sha256": "0653ba496bd436f0f9fc44d279c83d85607e675f259838fc42590bddbc885400",
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -3100.0,
+          250.0,
+          -2780.0
+        ],
+        "rotation": [
+          -0.181618064641953,
+          -1.07898712158203,
+          0.0
+        ]
+      },
+      "directly_viewed": true,
+      "finding": "曲折水道确实分开两侧山体，前中后有空间；左侧大暗壁与右侧大三角坡过于连续，缺宽窄变化的河岸台地、河口低地与次级岩肩。",
+      "manifest_image_match": true,
+      "manifest_sidecar_match": true,
+      "run_id_match": true,
+      "production_modified_recorded": false
+    },
+    {
+      "view": "river-mouth",
+      "image": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\images\\river-mouth.png",
+      "sha256": "6fdac617b1e562cf074254bd2a8320139b5b8c10bab8b928289a93b7755c6a30",
+      "sidecar_sha256": "df2a1515b87986dd2ddebbb9d747054486e571adae44644375f03d4c2967e760",
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -3120.0,
+          18.0,
+          -3190.0
+        ],
+        "rotation": [
+          -0.0162945743650198,
+          -1.63194453716278,
+          0.0
+        ]
+      },
+      "directly_viewed": true,
+      "finding": "低视角可读实际入口和向内水道，未被整块地形封住画面；两边像高而整齐的峡谷墙，暗色遮蔽岩面结构，口门缺低滩和侧湾层次。不能仅凭图推断水文连通全部通过。",
+      "manifest_image_match": true,
+      "manifest_sidecar_match": true,
+      "run_id_match": true,
+      "production_modified_recorded": false
+    },
+    {
+      "view": "shore-low",
+      "image": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\images\\shore-low.png",
+      "sha256": "8b14e6da36c3d04edd75823806f7758eba496162c725a5a6a7ef0c793cdff2a2",
+      "sidecar_sha256": "a790a64b81310f5b6cdbcb86c87e75493eb2ed678626de1b89d0714c0f7c9277",
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -3190.0,
+          85.0,
+          -3040.0
+        ],
+        "rotation": [
+          0.0,
+          -0.853254973888397,
+          0.0
+        ]
+      },
+      "directly_viewed": true,
+      "finding": "海口到山间水道形成弯曲空间；均匀大坡直抵水面，草面覆盖和坡脚变化不足。",
+      "manifest_image_match": true,
+      "manifest_sidecar_match": true,
+      "run_id_match": true,
+      "production_modified_recorded": false
+    },
+    {
+      "view": "south-seam",
+      "image": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\images\\south-seam.png",
+      "sha256": "cb8504c6763458f600d8c5523308fd700977bea92f56e39aa79e1f22e811481d",
+      "sidecar_sha256": "96659224bd54e2e8333da52ae2bf14020cad1f32be6bbe400be7b46c5424fdc1",
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -1810.0,
+          350.0,
+          -2150.0
+        ],
+        "rotation": [
+          -0.338582217693329,
+          0.391405135393143,
+          0.0
+        ]
+      },
+      "directly_viewed": true,
+      "finding": "可见真实陆侧连续体量，未见显眼开裂；长三角坡、尖脊与绿色大面依然突出。此图不等于接缝几何验收，也不要求无参考背面达到虚构精度。",
+      "manifest_image_match": true,
+      "manifest_sidecar_match": true,
+      "run_id_match": true,
+      "production_modified_recorded": false
+    },
+    {
+      "view": "highcoast-back",
+      "image": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\images\\highcoast-back.png",
+      "sha256": "a7aaf3b92634eb44d5cfa29a054009914767b0fc15099888fa61c6ed6eb806aa",
+      "sidecar_sha256": "786f31e1f096f65d5ea50774cc8cc43fffb16cc88605e6a704b057d06a280178",
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -1260.0,
+          520.0,
+          -3930.0
+        ],
+        "rotation": [
+          -0.237466678023338,
+          2.05438423156738,
+          0.0
+        ]
+      },
+      "directly_viewed": true,
+      "finding": "逆向确认山体不是主机位薄片，夹水通道成立；两大山块仍接近巨大锥形/楔形，局部褐色面与细小树石尺度反差过大。仅作为体量诊断。",
+      "manifest_image_match": true,
+      "manifest_sidecar_match": true,
+      "run_id_match": true,
+      "production_modified_recorded": false
+    },
+    {
+      "view": "flight-start",
+      "image": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\images\\flight-start.png",
+      "sha256": "026f0b0732fff93b4fcf26dc58627e0b84ef70b396d07eac930eae2681d3a6ad",
+      "sidecar_sha256": "a3f846322eda18de0dd989aac5c84e7130fa39044274a62e05cccc0290d5cc1a",
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -3100.0,
+          50.0,
+          -3190.0
+        ],
+        "rotation": [
+          -0.141385555267334,
+          -1.48529100418091,
+          0.0
+        ]
+      },
+      "directly_viewed": true,
+      "finding": "低空进入水道，暗岸仍留有可读前向空间。",
+      "manifest_image_match": true,
+      "manifest_sidecar_match": true,
+      "run_id_match": true,
+      "production_modified_recorded": false
+    },
+    {
+      "view": "flight-middle",
+      "image": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\images\\flight-middle.png",
+      "sha256": "a3f7dbb217f90ea3d0137b9adc1fe8a021e9b2e815565b7ee028fe2a10833b70",
+      "sidecar_sha256": "b7170d76a12d24fcd7fcfb5ac59999e918b9ce03b72b79dddf505904f124c138",
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -2400.0,
+          50.0,
+          -3250.0
+        ],
+        "rotation": [
+          -0.141385555267334,
+          -1.48529100418091,
+          0.0
+        ]
+      },
+      "directly_viewed": true,
+      "finding": "连续水道与岸边针叶树最清楚，局部真实河岸进展可保留；两侧巨大褐色岩壁仍缺分级，不能把开阔通道当作岸体造型接受。",
+      "manifest_image_match": true,
+      "manifest_sidecar_match": true,
+      "run_id_match": true,
+      "production_modified_recorded": false
+    },
+    {
+      "view": "flight-end",
+      "image": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\images\\flight-end.png",
+      "sha256": "70cfb2724e49fa58048ab35fa1af7ff0327f4646b1f571e3a972f2d8b6052600",
+      "sidecar_sha256": "1b3ac5e4accedd4d344bbde1ae613adb3f36bb1f418293b663beb1b61f488059",
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -1700.0,
+          109.555313110352,
+          -3310.0
+        ],
+        "rotation": [
+          -0.141385555267334,
+          -1.48529100418091,
+          0.0
+        ]
+      },
+      "directly_viewed": true,
+      "finding": "几乎全屏为棕绿山面，仅左上小角见天空，终点视野打回。脚下净空不等于前向空间；截图不能证明相机已穿入实体。",
+      "manifest_image_match": true,
+      "manifest_sidecar_match": true,
+      "run_id_match": true,
+      "production_modified_recorded": false
+    }
+  ],
+  "references": [
+    {
+      "path": "E:\\FeiTing\\ref\\1125.png",
+      "sha256": "aeda03c290ee0d0cb5e7ce3c2ed0e841256f02d2165b2b4cc6cebb0dd2e2a9c3",
+      "directly_viewed": true
+    },
+    {
+      "path": "E:\\FeiTing\\ref\\1341.png",
+      "sha256": "f6020fad26ece1c0021e61f8ea1afae320460a48468f3da6bc6004d4aa7293ef",
+      "directly_viewed": true
+    }
+  ],
+  "bounded_bindings": [
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\images\\flight-traverse.json",
+      "sha256": "6d2fc5e4995dfacc8f3397a8a0a24bf6254cea03ebbd3c88158f765fc1d93cc1",
+      "manifest_match": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\images\\highcoast-runtime.json",
+      "sha256": "1a0d6e6a6016c2e0fcae8f3e4c8a21af60fc346c069d3922689883becc787571",
+      "manifest_match": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\actual-highcoast-revision.json",
+      "sha256": "aa477634b86d14bc3fa6fc24dabdb5244ab4f5109ff8e60773f9f0bcaffbd7a8",
+      "manifest_match": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\study-inputs\\highcoast36a\\highcoast_runtime_36a.gd",
+      "sha256": "3551a3d372b4286d827ea7a239cd1d0708189a17baa500ff2ae87412903bb6bf",
+      "manifest_match": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\study-inputs\\highcoast36a\\render_highcoast_36a.py",
+      "sha256": "8e1eb7d00a1ea20279d96534dd1efb8b14cc070ce88c3cb1a1016e886d7b2135",
+      "manifest_match": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\study-inputs\\highcoast36a\\builder.py",
+      "sha256": "f56743b1b2de3af7678ef992658d8c693e6b4cd86fa5806dbacc5324bc1b8d38",
+      "manifest_match": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\study-inputs\\highcoast36a\\model-report.json",
+      "sha256": "04fd7731c4459ea999ad9b0b765f5539b1da5caf290f127d7435098709994adb",
+      "manifest_match": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\highcoast-world-views.log",
+      "sha256": "bdecf51050b05e9a210c063bff9c6a56bffbb594bb29872635d028d9953b928f",
+      "manifest_match": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\highcoast-world-views-error.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "manifest_match": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\study-inputs\\highcoast36a\\Ground_-2_-3.blend",
+      "sha256": "d4a7e02fce52c5b4d84006d823f9e1bea1b4182b085e15672f03bda45284df58",
+      "manifest_match": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\study-inputs\\highcoast36a\\Ground_-2_-4.blend",
+      "sha256": "e1eec062d3121e9e87f7ada166a7d5d466bf8134761437f75adbfb24739c1127",
+      "manifest_match": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\study-inputs\\highcoast36a\\Ground_-2_-5.blend",
+      "sha256": "bc5e78c923fd06a48eff33bc72cfcec1272d38e5508408db3390396382cfa152",
+      "manifest_match": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\study-inputs\\highcoast36a\\Ground_-2_-6.blend",
+      "sha256": "aa547848faa4e542b810c61f74f9a106dd2b61723dc0a9c987da96f4cb40c18c",
+      "manifest_match": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\study-inputs\\highcoast36a\\Ground_-3_-3.blend",
+      "sha256": "4db411fa367af2fad447ea39028bd734528bf5cf96687fdf11918b726ee94bcf",
+      "manifest_match": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\study-inputs\\highcoast36a\\Ground_-3_-4.blend",
+      "sha256": "0f3c866f8ad4ebdf2e2e368060ec81bf25dba8d8a49273835e1afd06a62490c5",
+      "manifest_match": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\study-inputs\\highcoast36a\\Ground_-3_-5.blend",
+      "sha256": "a79c71d1cb009f62676b62d3c99606e17c867d3254036650a5dcdb24ff3ecf69",
+      "manifest_match": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\study-inputs\\highcoast36a\\Ground_-3_-6.blend",
+      "sha256": "3674bb8214cd021f3af3d9fec010f3bc257443aa8fcaff13afb9782efe5fcfa0",
+      "manifest_match": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\study-inputs\\highcoast36a\\Ground_-4_-3.blend",
+      "sha256": "396149e4897e47c5f8e22e139d20a353d156ea2ecb907dd76b4d55186f4a6ca3",
+      "manifest_match": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\study-inputs\\highcoast36a\\Ground_-4_-4.blend",
+      "sha256": "3a82be4c59d3a6b982072460cbbf338edfc3b3a12c086c1e8e07effd6545b382",
+      "manifest_match": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\study-inputs\\highcoast36a\\Ground_-4_-5.blend",
+      "sha256": "1ce4e85f1f54f52569535563aaf22811d12b749906bb588062be40ceda29c3c2",
+      "manifest_match": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\study-inputs\\highcoast36a\\Ground_-4_-6.blend",
+      "sha256": "751a4f0f051b290f33fd08477ab4c719af9d65d018351302a94f07b347c5b80c",
+      "manifest_match": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\study-inputs\\highcoast36a\\Ground_-5_-5.blend",
+      "sha256": "36b28f6b765d8dfd1c1cdf808c7617e7c14d7ed06b0a518ef7d6fd5f971c4adb",
+      "manifest_match": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\study-inputs\\highcoast36a\\Ground_-5_-6.blend",
+      "sha256": "1985257a07f744818e05afbb344e476a5ac0f8185e72e85359367e625fce51a0",
+      "manifest_match": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\study-inputs\\highcoast36a\\Ground_-2_-3.glb",
+      "sha256": "8ac17a61bc33adfc61ba0a500804a66ec4788dc5c7cf52372695de9922fa7298",
+      "manifest_match": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\study-inputs\\highcoast36a\\Ground_-2_-4.glb",
+      "sha256": "3da8eb9aa34422a22c88448886ac568a84a883f2a765dd5e866fd25873deced8",
+      "manifest_match": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\study-inputs\\highcoast36a\\Ground_-2_-5.glb",
+      "sha256": "1ffcd82d03e3e7015c5dc090ce508a444ee632476fe01e5211f0211e75387a2f",
+      "manifest_match": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\study-inputs\\highcoast36a\\Ground_-2_-6.glb",
+      "sha256": "9c603a0d1a70cf89446d1c0ea5460b32937fcb830d04cf9ee4c1c6eef37278ff",
+      "manifest_match": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\study-inputs\\highcoast36a\\Ground_-3_-3.glb",
+      "sha256": "8a096ced9bb4ad7774f53f0d0e610793b13684f1f900b6a179589b08aa243c40",
+      "manifest_match": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\study-inputs\\highcoast36a\\Ground_-3_-4.glb",
+      "sha256": "f560a697ce408b85b4c6d6b016135dfee4cd2d4e3a859960fc79d21d81c4ea35",
+      "manifest_match": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\study-inputs\\highcoast36a\\Ground_-3_-5.glb",
+      "sha256": "3b495ec32bca538a5eeef4706324632fa257e5f817dd671e335d70318c4212d2",
+      "manifest_match": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\study-inputs\\highcoast36a\\Ground_-3_-6.glb",
+      "sha256": "3622fc0ecc239fb7d4c9708669548d97c2f1cff7c6a213c93547b9a6c565f21a",
+      "manifest_match": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\study-inputs\\highcoast36a\\Ground_-4_-3.glb",
+      "sha256": "4af1ddbd48b07a5e7aafa6c39dce96f430237f476248d56ed98beb017c7fde6d",
+      "manifest_match": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\study-inputs\\highcoast36a\\Ground_-4_-4.glb",
+      "sha256": "026380ad34b97a17914d7efe0db3e366325939aade1fef84fb6737e63d673dd5",
+      "manifest_match": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\study-inputs\\highcoast36a\\Ground_-4_-5.glb",
+      "sha256": "595d749120686cfce2352c739442e3fbf401be4e699d95a6e6d5889ea73e7de9",
+      "manifest_match": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\study-inputs\\highcoast36a\\Ground_-4_-6.glb",
+      "sha256": "21c062f2e40e900975b42a7de177bd3c95b82ea8fac1d723195b0b1acaaa6d81",
+      "manifest_match": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\study-inputs\\highcoast36a\\Ground_-5_-5.glb",
+      "sha256": "d97e887fa69a46bc2dfa68cd17e9f8421a19fb7b691de2f0042b51d041ca4cd4",
+      "manifest_match": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019\\study-inputs\\highcoast36a\\Ground_-5_-6.glb",
+      "sha256": "eafc00d0a986ae65b90d147087afca20bd1bf52f05473ede8a88a4ad9fa269ec",
+      "manifest_match": true
+    }
+  ],
+  "all_checked_bindings_match": true,
+  "flight": {
+    "scope": "65 actual rendered camera positions, two process frames per step, new mesh height+50m. Not gameplay control testing.",
+    "samples": 65,
+    "clearance_min": 49.9999961853027,
+    "clearance_max": 50.0000016689301,
+    "last_sample": {
+      "actual_mesh_height": 59.5553131103516,
+      "clearance": 50.0,
+      "position": [
+        -1700.0,
+        109.555313110352,
+        -3310.0
+      ],
+      "step": 64
+    },
+    "endpoint_visibility": "rejected; terrain fills nearly whole actual frame",
+    "limits": "Vertical mesh-height offset only; no gameplay control or forward camera-volume clearance proven."
+  },
+  "runtime_report_read": {
+    "run_id": "highcoast-36a-20260909T011148Z-9fccf1ba029c4825a86a43677bd1c019",
+    "tile_count": 14,
+    "scatter_changes": 2276,
+    "axis_support_max_error_m": 1.52587890625e-05,
+    "flight_samples": 65,
+    "views": [
+      "storm-high",
+      "storm-coast-low",
+      "estuary-high",
+      "shore-low",
+      "highcoast-back",
+      "south-seam",
+      "river-mouth",
+      "flight-start",
+      "flight-middle",
+      "flight-end"
+    ],
+    "passed": true,
+    "visual_accepted": false,
+    "scope": "Native models/collision/saved scatter resources plus same-world camera evidence; not production installed or full reference accepted."
+  },
+  "camera_direction": {
+    "reference_fact": "Sea left, layered coastal promontories and mountains right, receding along coast. No absolute compass/world coordinates inferable.",
+    "current_storm_high_forward_xz": [
+      0.7355451248868963,
+      -0.6774757333330251
+    ],
+    "current_storm_coast_low_forward_xz": [
+      0.8154428399186471,
+      -0.5788376066094978
+    ],
+    "recommendation": "Add documented alongshore camera emphasizing negative Z, possibly negative X according to actual shoreline; retain two original views. Northwest is a project design label, not reference fact."
+  },
+  "next_priorities": [
+    "Correct flight-end forward visibility through a continuous route and look direction grounded in valley geometry; retain failed endpoint evidence.",
+    "Add alongshore reference-oriented comparison and refine real high/low coast sections, river terraces and offset secondary ridges; do not solve with camera alone.",
+    "Differentiate rock faces, grassy shoulders and pine groups at the true landform scale; inherited cloud/water/weather remain open tasks."
+  ],
+  "full_goal_complete": false
+}

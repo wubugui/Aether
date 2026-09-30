@@ -1,0 +1,114 @@
+{
+  "scope": "Actual GLB node-transformed bounds and material alpha only; not collision or visual acceptance.",
+  "passed": false,
+  "results": [
+    {
+      "label": "19a",
+      "checks": {
+        "height_max_matches": true,
+        "no_geometry_below_origin": true
+      },
+      "passed": true,
+      "glb_sha256": "bd9f125de12735b92b66035ac31c4bcfa8f499124adca975b3fe5e31b55fa2a9",
+      "mesh_nodes": 201,
+      "bounds_godot_m": [
+        [
+          -3.6500000953674316,
+          0.0,
+          -3.6500000953674316
+        ],
+        [
+          3.6500000953674316,
+          28.09999942779541,
+          3.6500000953674316
+        ]
+      ],
+      "height_m": 28.09999942779541,
+      "max_width_m": 7.300000190734863,
+      "glazing": [
+        {
+          "name": "Warm lantern glazing",
+          "alpha_mode": "OPAQUE",
+          "base_color": [
+            0.6800000071525574,
+            0.41999998688697815,
+            0.14000000059604645,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "label": "19b",
+      "checks": {
+        "height_max_matches": true,
+        "no_geometry_below_origin": true
+      },
+      "passed": true,
+      "glb_sha256": "2d7662949f99366ac07272647c6adb5c2967a9d480165b7d02f4c7cea969e79f",
+      "mesh_nodes": 216,
+      "bounds_godot_m": [
+        [
+          -3.6500000953674316,
+          0.0,
+          -3.6500000953674316
+        ],
+        [
+          3.6500000953674316,
+          28.09999942779541,
+          3.6500000953674316
+        ]
+      ],
+      "height_m": 28.09999942779541,
+      "max_width_m": 7.300000190734863,
+      "glazing": [
+        {
+          "name": "Clear slightly amber lantern glass",
+          "alpha_mode": "BLEND",
+          "base_color": [
+            0.25,
+            0.20000000298023224,
+            0.11999999731779099,
+            0.1599999964237213
+          ]
+        }
+      ]
+    },
+    {
+      "label": "19c",
+      "checks": {
+        "height_max_matches": true,
+        "no_geometry_below_origin": false
+      },
+      "passed": false,
+      "glb_sha256": "f90725d670b9b8ca594120a6feaa06af236fa980c1966821c606fad71f4c29c3",
+      "mesh_nodes": 218,
+      "bounds_godot_m": [
+        [
+          -4.015000343322754,
+          -0.1499999761581421,
+          -4.015000343322754
+        ],
+        [
+          4.015000343322754,
+          24.499998092651367,
+          4.015000343322754
+        ]
+      ],
+      "height_m": 24.64999806880951,
+      "max_width_m": 8.030000686645508,
+      "glazing": [
+        {
+          "name": "Clear slightly amber lantern glass",
+          "alpha_mode": "BLEND",
+          "base_color": [
+            0.25,
+            0.20000000298023224,
+            0.11999999731779099,
+            0.1599999964237213
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,353 @@
+{
+  "scope": "34b incremental source and terminal runtime review; no repeated grid sampling, engine, Blender or land support checks.",
+  "shader_sha256": "2f1c09d17eaa641d665a34c5d95c00675d0fcf07c15278a163f028dad06e1781",
+  "source_parent_sha256": "99c9e77391dbec7755820f345acf9bb2290c0f7db335420e08ee031893cedc8f",
+  "checks": {
+    "source_parent_sha": true,
+    "source_shader_sha": true,
+    "frozen_shader_identity": true,
+    "entire_shader_explained_by_stated_delta": true,
+    "depth_color_foam_unchanged": true,
+    "vertex_function_unchanged": true,
+    "runtime_terminal_passed": true,
+    "all_stage_exit_zero": true,
+    "runtime_records_consistent": true,
+    "selected_bindings_match": true
+  },
+  "incremental_identity_checks_passed": true,
+  "delta": {
+    "cell_m": [
+      5.5,
+      2.8
+    ],
+    "jitter_fraction": 0.45,
+    "max_grid_offset_m": [
+      1.2375,
+      0.63
+    ],
+    "height_amplitudes": [
+      2.4,
+      1.35,
+      0.15
+    ],
+    "frequencies": [
+      [
+        0.045,
+        0.085
+      ],
+      [
+        0.09,
+        0.2
+      ],
+      [
+        0.17,
+        0.45
+      ]
+    ],
+    "analytic_height_bound_m": [
+      -1.95,
+      1.95
+    ],
+    "height_geometry_displaced": false,
+    "broken_wave_range": [
+      0.7,
+      1.0
+    ],
+    "triangle_twice_area_lower_bound_exact_arithmetic_m2": 1.5400000000000003,
+    "shared_field": "Integer vertex IDs and neighbor/parity logic unchanged; shared C0 height, discontinuous facet normals. 34a sample counts do not apply to the changed 34b field; no grid sample rerun."
+  },
+  "moon_reflection": {
+    "finite_sphere_reflection_correct": false,
+    "implementation": "Fixed moon_direction, separation=acos(clamp(dot(reflected_ray,moon_direction),-1,1)); radius=atan(330/9000).",
+    "fixed_radius_degrees": 2.099904517645174,
+    "true_sphere_radius_at_reference_distance_degrees": 2.101316278795741,
+    "actual_runtime_moon_record": {
+      "asset": "moon",
+      "position": [
+        -3933.2509765625,
+        3478.45336914063,
+        -9791.30859375
+      ],
+      "radius_m": 330.0,
+      "scope": "Fixed world position near9000m; angular direction matches reference-camera moon light, finite-distance approximation during flight."
+    },
+    "analytic_comparison_points": [
+      {
+        "analytic_test_point_godot": [
+          -2278,
+          0,
+          -1632
+        ],
+        "distance_to_recorded_center_m": 9022.960177499372,
+        "direction_error_degrees": 0.352449242322316,
+        "true_sphere_angular_radius_degrees": 2.0959667976775194
+      },
+      {
+        "analytic_test_point_godot": [
+          -2400,
+          0,
+          -1900
+        ],
+        "distance_to_recorded_center_m": 8759.180767640788,
+        "direction_error_degrees": 1.1600428481706493,
+        "true_sphere_angular_radius_degrees": 2.159115500617146
+      },
+      {
+        "analytic_test_point_godot": [
+          -3000,
+          0,
+          -2400
+        ],
+        "distance_to_recorded_center_m": 8222.045849700868,
+        "direction_error_degrees": 4.755612251802029,
+        "true_sphere_angular_radius_degrees": 2.300241039778047
+      }
+    ],
+    "point_scope": "Analytic diagnostic points at Y=0, not screenshot ray hits or measured sea surface samples.",
+    "required_model": "Use center-world_point direction and asin(radius/distance) for each actual surface point outside sphere; account for material-normal-only flat water separately.",
+    "source_comment_overstates": "Comment says reflect actual finite sphere, but no world moon center/distance enters this shader."
+  },
+  "disk_filter": {
+    "pixel_angle_floor_rad": 0.00015,
+    "formula": ".65*(length(dFdx(view_direction))+length(dFdy(view_direction))) with positive floor",
+    "numerical": "acos argument clamped; positive angular width gives ordered smoothstep edges and bounded 0..1 reflected mask for finite rays.",
+    "limit": "View-ray derivatives filter disk rim within one facet but omit normal jumps and multi-facet pixel coverage. No temporal anti-aliasing or flicker guarantee."
+  },
+  "inherited_limits": [
+    "Flat geometry/collision/silhouette, unchanged screen-space depth method.",
+    "Analytic sky color only; no actual cloud/shore/object reflection or local-light specular reflection. Local diffuse lighting still exists.",
+    "Old sinusoidal NORMAL assignment remains overwritten by final facet NORMAL."
+  ],
+  "runtime": {
+    "run_id": "water-34b-20260908T234145Z-bcb3451587f949d8b6faa363cf23622d",
+    "status": "passed",
+    "completed_utc": "2026-09-08T23:43:06.264847+00:00",
+    "stages": [
+      {
+        "name": "night-views",
+        "exit_code": 0
+      },
+      {
+        "name": "day-views",
+        "exit_code": 0
+      }
+    ],
+    "error_log_bytes": {
+      "night-views-error.log": 0,
+      "day-views-error.log": 0
+    },
+    "views": [
+      {
+        "view": "night-reference",
+        "camera": {
+          "fov": 70.0,
+          "position": [
+            -2278.0,
+            60.0,
+            -1632.0
+          ],
+          "rotation": [
+            -0.00509163970127702,
+            0.60683274269104,
+            0.0
+          ]
+        },
+        "time": 0.0,
+        "checks": {
+          "run_id": true,
+          "shader_sha": true,
+          "same_camera_as_34a": true,
+          "actual_time": true,
+          "world_sha": true,
+          "coast_sha": true,
+          "placements": true,
+          "named_trees": true
+        }
+      },
+      {
+        "view": "night-water-near",
+        "camera": {
+          "fov": 70.0,
+          "position": [
+            -2330.0,
+            8.0,
+            -1740.0
+          ],
+          "rotation": [
+            -0.0185673981904984,
+            0.380506366491318,
+            0.0
+          ]
+        },
+        "time": 0.0,
+        "checks": {
+          "run_id": true,
+          "shader_sha": true,
+          "same_camera_as_34a": true,
+          "actual_time": true,
+          "world_sha": true,
+          "coast_sha": true,
+          "placements": true,
+          "named_trees": true
+        }
+      },
+      {
+        "view": "night-water-shift",
+        "camera": {
+          "fov": 70.0,
+          "position": [
+            -2363.0,
+            40.0,
+            -1662.0
+          ],
+          "rotation": [
+            -0.00509163970127702,
+            0.60683274269104,
+            0.0
+          ]
+        },
+        "time": 0.0,
+        "checks": {
+          "run_id": true,
+          "shader_sha": true,
+          "same_camera_as_34a": true,
+          "actual_time": true,
+          "world_sha": true,
+          "coast_sha": true,
+          "placements": true,
+          "named_trees": true
+        }
+      },
+      {
+        "view": "night-time18",
+        "camera": {
+          "fov": 70.0,
+          "position": [
+            -2278.0,
+            60.0,
+            -1632.0
+          ],
+          "rotation": [
+            -0.00509163970127702,
+            0.60683274269104,
+            0.0
+          ]
+        },
+        "time": 18.0,
+        "checks": {
+          "run_id": true,
+          "shader_sha": true,
+          "same_camera_as_34a": true,
+          "actual_time": true,
+          "world_sha": true,
+          "coast_sha": true,
+          "placements": true,
+          "named_trees": true
+        }
+      },
+      {
+        "view": "day-reference",
+        "camera": {
+          "fov": 70.0,
+          "position": [
+            -2278.0,
+            60.0,
+            -1632.0
+          ],
+          "rotation": [
+            -0.00509163970127702,
+            0.60683274269104,
+            0.0
+          ]
+        },
+        "time": 0.0,
+        "checks": {
+          "run_id": true,
+          "shader_sha": true,
+          "same_camera_as_34a": true,
+          "actual_time": true,
+          "world_sha": true,
+          "coast_sha": true,
+          "placements": true,
+          "named_trees": true
+        }
+      }
+    ],
+    "selected_bindings": [
+      {
+        "path": "images/night-reference.png",
+        "sha256": "37ef5dc62a5f9faea352bdfe28e0336d3172b85a42d545eb1a58ecbbed6f62fe",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/night-reference.png.json",
+        "sha256": "2674014e203d01e618ed200bd8d5e81f9af3f7cbda5a5949987a80149a9d9539",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/night-water-near.png",
+        "sha256": "9fee0877dce4083495bacccdd0697bb953494060917da2b374d06ec64023407d",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/night-water-near.png.json",
+        "sha256": "688c6bdfba182fa85921baabddedf61afd7373fa26dad65bc526ac7dd164745c",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/night-water-shift.png",
+        "sha256": "f8ca3920fa932a548469460edc1ca43a4ff642bcfa28bcb3ff2a307a71877b77",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/night-water-shift.png.json",
+        "sha256": "a0b0fa1c26f6086c26ab1c90e4e466b80d9d4f90a14643bee65bd6993475f1d7",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/night-time18.png",
+        "sha256": "0bf1778eb887a5f2d87adaa247fb2dbb35b2ccab7e4b2bdb096cf3e8509c2f83",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/night-time18.png.json",
+        "sha256": "e19d3074cb10fec6475b9e4a006ef7b62d3155ea5df643fae2d408c89d95f74c",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/day-reference.png",
+        "sha256": "1a82f76f363c97da5ec8104ae02685db40421b0f8fa6b48ac87f74533c9b8969",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/day-reference.png.json",
+        "sha256": "6f2915532672064beb0c80f27bd7f5831cdd70296b82d02fb9f89772a347a55d",
+        "matches_manifest": true
+      },
+      {
+        "path": "study-inputs/new-environment27f/open_water.gdshader",
+        "sha256": "2f1c09d17eaa641d665a34c5d95c00675d0fcf07c15278a163f028dad06e1781",
+        "matches_manifest": true
+      },
+      {
+        "path": "study-inputs/water34b-builder.py",
+        "sha256": "832c69475764ff0ba3d0727c0ec2f4320b4399780336028088354cae8d31476c",
+        "matches_manifest": true
+      },
+      {
+        "path": "study-inputs/water34b-design-plan.json",
+        "sha256": "138521a7c132e43f33e31598e04890e50a42e90acf5eccb5253afdb8140f5e4c",
+        "matches_manifest": true
+      },
+      {
+        "path": "study-inputs/render_water_34b.py",
+        "sha256": "602967cdae7681ad26774fdfd3a2308ae5f30f99e2ce11f1f79119c92f637bf1",
+        "matches_manifest": true
+      }
+    ],
+    "land_support": "Inherited33f, not rescanned."
+  },
+  "art_assessed_by_this_report": false,
+  "full_reference_accepted": false,
+  "all_reference_goal_complete": false
+}

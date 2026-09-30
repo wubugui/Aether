@@ -1,0 +1,1418 @@
+{
+  "scope": "Actual local GLB entry edges transformed by frozen 23g house poses; 1.5m outward positions are design suggestions not ground-verified paths",
+  "assets": {
+    "fisher_cottage": {
+      "entry_step_top_triangles": 2,
+      "step_actual_bounds": [
+        [
+          -0.8500000238418579,
+          0.18000000715255737,
+          3.799999952316284
+        ],
+        [
+          0.8500000238418579,
+          0.18000000715255737,
+          4.949999809265137
+        ]
+      ],
+      "local_connection": [
+        0,
+        0.18000000715255737,
+        4.949999809265137
+      ],
+      "step_halfwidth": 0.85,
+      "foundation_half": [
+        3.05,
+        4.1
+      ],
+      "posts": [
+        [
+          -1.13,
+          5.08,
+          0.08
+        ],
+        [
+          1.13,
+          5.08,
+          0.08
+        ]
+      ],
+      "column_inner_clear_width": 2.0999999999999996,
+      "actual_post_corner_max_error_m": 1.668248718978629e-07,
+      "actual_foundation_corner_max_error_m": 1.0925711819888524e-07
+    },
+    "quay_workshop": {
+      "entry_step_top_triangles": 2,
+      "step_actual_bounds": [
+        [
+          -1.5,
+          0.18000000715255737,
+          3.0999999046325684
+        ],
+        [
+          1.5,
+          0.18000000715255737,
+          4.25
+        ]
+      ],
+      "local_connection": [
+        0,
+        0.18000000715255737,
+        4.25
+      ],
+      "step_halfwidth": 1.5,
+      "foundation_half": [
+        4.4,
+        3.4
+      ],
+      "posts": [
+        [
+          -1.505,
+          4.38,
+          0.08
+        ],
+        [
+          1.505,
+          4.38,
+          0.08
+        ]
+      ],
+      "column_inner_clear_width": 2.8499999999999996,
+      "actual_post_corner_max_error_m": 2.023048729360296e-07,
+      "actual_foundation_corner_max_error_m": 1.369610461930817e-07
+    },
+    "keeper_house": {
+      "entry_step_top_triangles": 2,
+      "step_actual_bounds": [
+        [
+          -1.0,
+          0.18000000715255737,
+          5.300000190734863
+        ],
+        [
+          1.0,
+          0.18000000715255737,
+          6.400000095367432
+        ]
+      ],
+      "local_connection": [
+        0,
+        0.18000000715255737,
+        6.400000095367432
+      ],
+      "step_halfwidth": 1.0,
+      "foundation_half": [
+        3.9,
+        5.4
+      ],
+      "posts": [
+        [
+          -1.3,
+          6.55,
+          0.085
+        ],
+        [
+          1.3,
+          6.55,
+          0.085
+        ]
+      ],
+      "column_inner_clear_width": 2.43,
+      "actual_post_corner_max_error_m": 2.6239045152682564e-07,
+      "actual_foundation_corner_max_error_m": 1.369610461930817e-07
+    }
+  },
+  "entries": [
+    {
+      "name": "fore_fisher",
+      "asset": "fisher_cottage",
+      "entry_world": [
+        -2265.41147626232,
+        9.180000007152557,
+        -1751.75469928546
+      ],
+      "forward": [
+        -0.8912073600614354,
+        0,
+        0.4535961214255773
+      ],
+      "approach_1_5m": [
+        -2266.748287302412,
+        9.180000007152557,
+        -1751.0743051033216
+      ],
+      "step_edge_endpoints": [
+        [
+          -2265.797032965532,
+          9.180000007152557,
+          -1752.5122255415122
+        ],
+        [
+          -2265.025919559108,
+          9.180000007152557,
+          -1750.9971730294078
+        ]
+      ],
+      "foundation_xz": [
+        [
+          -2258.729517994096,
+          -1758.5779265460324
+        ],
+        [
+          -2255.9625816534003,
+          -1753.1415616496574
+        ],
+        [
+          -2263.270482005904,
+          -1749.4220734539676
+        ],
+        [
+          -2266.0374183465997,
+          -1754.8584383503426
+        ]
+      ],
+      "post_world_centers": [
+        [
+          -2266.0398970063234,
+          9.0,
+          -1752.7027960200276
+        ],
+        [
+          -2265.0147697719012,
+          9.0,
+          -1750.6886673862887
+        ]
+      ],
+      "post_halfwidth": 0.08
+    },
+    {
+      "name": "fore_workshop",
+      "asset": "quay_workshop",
+      "entry_world": [
+        -2249.188161352451,
+        10.980000007152558,
+        -1746.2776396426739
+      ],
+      "forward": [
+        -0.9854497299884601,
+        0,
+        0.16996714290024104
+      ],
+      "approach_1_5m": [
+        -2250.6663359474337,
+        10.980000007152558,
+        -1746.0226889283235
+      ],
+      "step_edge_endpoints": [
+        [
+          -2249.4431120668014,
+          10.980000007152558,
+          -1747.7558142376565
+        ],
+        [
+          -2248.9332106381007,
+          10.980000007152558,
+          -1744.7994650476912
+        ]
+      ],
+      "foundation_xz": [
+        [
+          -2242.3973263468,
+          -1751.91386709781
+        ],
+        [
+          -2240.9016154892784,
+          -1743.2419094739116
+        ],
+        [
+          -2247.6026736532,
+          -1742.08613290219
+        ],
+        [
+          -2249.0983845107216,
+          -1750.7580905260884
+        ]
+      ],
+      "post_world_centers": [
+        [
+          -2249.5720703674147,
+          10.8,
+          -1747.7386457577295
+        ],
+        [
+          -2249.0604692672846,
+          10.8,
+          -1744.7724420704644
+        ]
+      ],
+      "post_halfwidth": 0.08
+    },
+    {
+      "name": "fore_keeper",
+      "asset": "keeper_house",
+      "entry_world": [
+        -2250.3624881291553,
+        12.680000007152557,
+        -1761.3171911694283
+      ],
+      "forward": [
+        -0.6816387600233341,
+        0,
+        0.7316888688738209
+      ],
+      "approach_1_5m": [
+        -2251.3849462691906,
+        12.680000007152557,
+        -1760.2196578661176
+      ],
+      "step_edge_endpoints": [
+        [
+          -2251.094176998029,
+          12.680000007152557,
+          -1761.9988299294516
+        ],
+        [
+          -2249.6307992602815,
+          12.680000007152557,
+          -1760.635552409405
+        ]
+      ],
+      "foundation_xz": [
+        [
+          -2245.172737284482,
+          -1772.6095110560095
+        ],
+        [
+          -2239.4655641072663,
+          -1767.2927287278276
+        ],
+        [
+          -2246.827262715518,
+          -1759.3904889439905
+        ],
+        [
+          -2252.5344358927337,
+          -1764.7072712721724
+        ]
+      ],
+      "post_world_centers": [
+        [
+          -2251.415929407689,
+          12.5,
+          -1762.0935682969068
+        ],
+        [
+          -2249.5135383486167,
+          12.5,
+          -1760.3213075208462
+        ]
+      ],
+      "post_halfwidth": 0.085
+    },
+    {
+      "name": "fore_upper",
+      "asset": "keeper_house",
+      "entry_world": [
+        -2235.3533632373133,
+        14.680000007152557,
+        -1760.228782264557
+      ],
+      "forward": [
+        -0.9927129910375885,
+        0,
+        0.12050276936736662
+      ],
+      "approach_1_5m": [
+        -2236.8424327238695,
+        14.680000007152557,
+        -1760.0480281105058
+      ],
+      "step_edge_endpoints": [
+        [
+          -2235.4738660066805,
+          14.680000007152557,
+          -1761.2214952555944
+        ],
+        [
+          -2235.232860467946,
+          14.680000007152557,
+          -1759.2360692735194
+        ]
+      ],
+      "foundation_xz": [
+        [
+          -2224.1093106489297,
+          -1765.5222956196303
+        ],
+        [
+          -2223.1693890478646,
+          -1757.779134289537
+        ],
+        [
+          -2233.8906893510703,
+          -1756.4777043803697
+        ],
+        [
+          -2234.8306109521354,
+          -1764.220865710463
+        ]
+      ],
+      "post_world_centers": [
+        [
+          -2235.658923691474,
+          14.5,
+          -1761.5012337489927
+        ],
+        [
+          -2235.345616491119,
+          14.5,
+          -1758.9201799722948
+        ]
+      ],
+      "post_halfwidth": 0.085
+    },
+    {
+      "name": "fore_back_cottage",
+      "asset": "fisher_cottage",
+      "entry_world": [
+        -2231.518181330194,
+        15.680000007152557,
+        -1736.9779872455363
+      ],
+      "forward": [
+        -0.912763940260521,
+        0,
+        0.4084874408841574
+      ],
+      "approach_1_5m": [
+        -2232.8873272405845,
+        15.680000007152557,
+        -1736.36525608421
+      ],
+      "step_edge_endpoints": [
+        [
+          -2231.865395654945,
+          15.680000007152557,
+          -1737.7538365947578
+        ],
+        [
+          -2231.1709670054424,
+          15.680000007152557,
+          -1736.2021378963148
+        ]
+      ],
+      "foundation_xz": [
+        [
+          -2224.5035545396286,
+          -1743.4587285254197
+        ],
+        [
+          -2222.011781150235,
+          -1737.8908684898306
+        ],
+        [
+          -2229.4964454603714,
+          -1734.5412714745803
+        ],
+        [
+          -2231.988218849765,
+          -1740.1091315101694
+        ]
+      ],
+      "post_world_centers": [
+        [
+          -2232.0984316247227,
+          15.5,
+          -1737.9563070528027
+        ],
+        [
+          -2231.1752500083244,
+          15.5,
+          -1735.8934605478141
+        ]
+      ],
+      "post_halfwidth": 0.08
+    },
+    {
+      "name": "bay_fisher",
+      "asset": "fisher_cottage",
+      "entry_world": [
+        -2245.8779759754834,
+        6.680000007152557,
+        -1870.1586626750625
+      ],
+      "forward": [
+        -0.9854497299884601,
+        0,
+        0.16996714290024104
+      ],
+      "approach_1_5m": [
+        -2247.356150570466,
+        6.680000007152557,
+        -1869.9037119607121
+      ],
+      "step_edge_endpoints": [
+        [
+          -2246.0224480469487,
+          6.680000007152557,
+          -1870.9962949455528
+        ],
+        [
+          -2245.733503904018,
+          6.680000007152557,
+          -1869.3210304045722
+        ]
+      ],
+      "foundation_xz": [
+        [
+          -2237.4780558928933,
+          -1874.7024869623558
+        ],
+        [
+          -2236.4412563212018,
+          -1868.691243609426
+        ],
+        [
+          -2244.5219441071067,
+          -1867.2975130376442
+        ],
+        [
+          -2245.5587436787982,
+          -1873.308756390574
+        ]
+      ],
+      "post_world_centers": [
+        [
+          -2246.198147499819,
+          6.5,
+          -1871.2501251089539
+        ],
+        [
+          -2245.814021756864,
+          6.5,
+          -1869.0230087191799
+        ]
+      ],
+      "post_halfwidth": 0.08
+    },
+    {
+      "name": "bay_keeper",
+      "asset": "keeper_house",
+      "entry_world": [
+        -2236.346654881468,
+        8.680000007152557,
+        -1885.8246047757789
+      ],
+      "forward": [
+        -0.9916648104524686,
+        0,
+        -0.12884449429552464
+      ],
+      "approach_1_5m": [
+        -2237.834152097147,
+        8.680000007152557,
+        -1886.0178715172221
+      ],
+      "step_edge_endpoints": [
+        [
+          -2236.2178103871724,
+          8.680000007152557,
+          -1886.8162695862313
+        ],
+        [
+          -2236.475499375764,
+          8.680000007152557,
+          -1884.8329399653264
+        ]
+      ],
+      "foundation_xz": [
+        [
+          -2224.142516495804,
+          -1888.1717324915687
+        ],
+        [
+          -2225.147503551309,
+          -1880.4367469700394
+        ],
+        [
+          -2235.857483504196,
+          -1881.8282675084313
+        ],
+        [
+          -2234.852496448691,
+          -1889.5632530299606
+        ]
+      ],
+      "post_world_centers": [
+        [
+          -2236.3279066658797,
+          8.5,
+          -1887.133095691224
+        ],
+        [
+          -2236.6629023510477,
+          8.5,
+          -1884.5547671840475
+        ]
+      ],
+      "post_halfwidth": 0.085
+    },
+    {
+      "name": "bay_upper",
+      "asset": "keeper_house",
+      "entry_world": [
+        -2222.7037271893855,
+        10.680000007152557,
+        -1872.096984779618
+      ],
+      "forward": [
+        -0.8912073600614354,
+        0,
+        0.4535961214255773
+      ],
+      "approach_1_5m": [
+        -2224.0405382294775,
+        10.680000007152557,
+        -1871.4165905974796
+      ],
+      "step_edge_endpoints": [
+        [
+          -2223.157323310811,
+          10.680000007152557,
+          -1872.9881921396793
+        ],
+        [
+          -2222.25013106796,
+          10.680000007152557,
+          -1871.2057774195566
+        ]
+      ],
+      "foundation_xz": [
+        [
+          -2213.956505129228,
+          -1880.9251277599378
+        ],
+        [
+          -2210.4184553821083,
+          -1873.9737103514585
+        ],
+        [
+          -2220.043494870772,
+          -1869.0748722400622
+        ],
+        [
+          -2223.5815446178917,
+          -1876.0262896485415
+        ]
+      ],
+      "post_world_centers": [
+        [
+          -2223.4270831662557,
+          10.5,
+          -1873.1875149727423
+        ],
+        [
+          -2222.247733250549,
+          10.5,
+          -1870.8703758365825
+        ]
+      ],
+      "post_halfwidth": 0.085
+    },
+    {
+      "name": "bay_workshop",
+      "asset": "quay_workshop",
+      "entry_world": [
+        -2217.188161352451,
+        8.680000007152557,
+        -1855.2776396426739
+      ],
+      "forward": [
+        -0.9854497299884601,
+        0,
+        0.16996714290024104
+      ],
+      "approach_1_5m": [
+        -2218.6663359474337,
+        8.680000007152557,
+        -1855.0226889283235
+      ],
+      "step_edge_endpoints": [
+        [
+          -2217.4431120668014,
+          8.680000007152557,
+          -1856.7558142376565
+        ],
+        [
+          -2216.9332106381007,
+          8.680000007152557,
+          -1853.7994650476912
+        ]
+      ],
+      "foundation_xz": [
+        [
+          -2210.3973263468,
+          -1860.91386709781
+        ],
+        [
+          -2208.9016154892784,
+          -1852.2419094739116
+        ],
+        [
+          -2215.6026736532,
+          -1851.08613290219
+        ],
+        [
+          -2217.0983845107216,
+          -1859.7580905260884
+        ]
+      ],
+      "post_world_centers": [
+        [
+          -2217.5720703674147,
+          8.5,
+          -1856.7386457577295
+        ],
+        [
+          -2217.0604692672846,
+          8.5,
+          -1853.7724420704644
+        ]
+      ],
+      "post_halfwidth": 0.08
+    }
+  ],
+  "pines": [
+    {
+      "ground_collider": "/root/Skyfarer/MainlandVillage23g/mainland_headland_0/mainland_headland_Coast blue grey bedrock/mainland_headland_Coast blue grey bedrock_col",
+      "node": "HeadlandPine_0",
+      "position": [
+        -2251.0,
+        9.99594116210938,
+        -1730.0
+      ],
+      "scale": 0.52
+    },
+    {
+      "ground_collider": "/root/Skyfarer/MainlandVillage23g/mainland_headland_0/mainland_headland_Coast blue grey bedrock/mainland_headland_Coast blue grey bedrock_col",
+      "node": "HeadlandPine_1",
+      "position": [
+        -2239.0,
+        14.0072631835938,
+        -1725.0
+      ],
+      "scale": 0.63
+    },
+    {
+      "ground_collider": "/root/Skyfarer/MainlandVillage23g/mainland_headland_0/mainland_headland_Coast blue grey bedrock/mainland_headland_Coast blue grey bedrock_col",
+      "node": "HeadlandPine_2",
+      "position": [
+        -2225.0,
+        17.96728515625,
+        -1715.0
+      ],
+      "scale": 0.7
+    },
+    {
+      "ground_collider": "/root/Skyfarer/MainlandVillage23g/mainland_headland_0/mainland_headland_Coast blue grey bedrock/mainland_headland_Coast blue grey bedrock_col",
+      "node": "HeadlandPine_3",
+      "position": [
+        -2240.0,
+        11.739501953125,
+        -1778.0
+      ],
+      "scale": 0.54
+    },
+    {
+      "ground_collider": "/root/Skyfarer/MainlandVillage23g/mainland_headland_0/mainland_headland_Coast blue grey bedrock/mainland_headland_Coast blue grey bedrock_col",
+      "node": "HeadlandPine_4",
+      "position": [
+        -2222.0,
+        13.7500305175781,
+        -1788.0
+      ],
+      "scale": 0.72
+    },
+    {
+      "ground_collider": "/root/Skyfarer/MainlandVillage23g/mainland_headland_0/mainland_headland_Coast blue grey bedrock/mainland_headland_Coast blue grey bedrock_col",
+      "node": "HeadlandPine_5",
+      "position": [
+        -2210.0,
+        25.1946411132813,
+        -1777.0
+      ],
+      "scale": 0.83
+    },
+    {
+      "ground_collider": "/root/Skyfarer/MainlandVillage23g/mainland_headland_0/mainland_headland_Coast blue grey bedrock/mainland_headland_Coast blue grey bedrock_col",
+      "node": "HeadlandPine_6",
+      "position": [
+        -2200.0,
+        32.1184997558594,
+        -1760.0
+      ],
+      "scale": 0.9
+    },
+    {
+      "ground_collider": "/root/Skyfarer/MainlandVillage23g/mainland_headland_0/mainland_headland_Coast blue grey bedrock/mainland_headland_Coast blue grey bedrock_col",
+      "node": "HeadlandPine_7",
+      "position": [
+        -2207.0,
+        24.3854370117188,
+        -1728.0
+      ],
+      "scale": 0.7
+    },
+    {
+      "ground_collider": "/root/Skyfarer/MainlandVillage23g/mainland_headland_0/mainland_headland_Coast blue grey bedrock/mainland_headland_Coast blue grey bedrock_col",
+      "node": "HeadlandPine_8",
+      "position": [
+        -2188.0,
+        28.7099304199219,
+        -1743.0
+      ],
+      "scale": 0.9
+    },
+    {
+      "ground_collider": "/root/Skyfarer/MainlandVillage23g/mainland_headland_0/mainland_headland_Coast blue grey bedrock/mainland_headland_Coast blue grey bedrock_col",
+      "node": "HeadlandPine_9",
+      "position": [
+        -2165.0,
+        32.0260314941406,
+        -1750.0
+      ],
+      "scale": 0.75
+    },
+    {
+      "ground_collider": "/root/Skyfarer/MainlandVillage23g/mainland_headland_0/mainland_headland_Coast blue grey bedrock/mainland_headland_Coast blue grey bedrock_col",
+      "node": "HeadlandPine_10",
+      "position": [
+        -2188.0,
+        32.0217895507813,
+        -1800.0
+      ],
+      "scale": 0.8
+    },
+    {
+      "ground_collider": "/root/Skyfarer/MainlandVillage23g/mainland_headland_0/mainland_headland_Coast blue grey bedrock/mainland_headland_Coast blue grey bedrock_col",
+      "node": "HeadlandPine_11",
+      "position": [
+        -2175.0,
+        21.97607421875,
+        -1813.0
+      ],
+      "scale": 0.67
+    },
+    {
+      "ground_collider": "/root/Skyfarer/MainlandVillage23g/mainland_headland_0/mainland_headland_Coast blue grey bedrock/mainland_headland_Coast blue grey bedrock_col",
+      "node": "HeadlandPine_12",
+      "position": [
+        -2200.0,
+        11.1349182128906,
+        -1818.0
+      ],
+      "scale": 0.6
+    },
+    {
+      "ground_collider": "/root/Skyfarer/MainlandVillage23g/mainland_headland_0/mainland_headland_Coast blue grey bedrock/mainland_headland_Coast blue grey bedrock_col",
+      "node": "HeadlandPine_13",
+      "position": [
+        -2214.0,
+        11.6256103515625,
+        -1805.0
+      ],
+      "scale": 0.64
+    },
+    {
+      "ground_collider": "/root/Skyfarer/MainlandVillage23g/mainland_headland_0/mainland_headland_Coast blue grey bedrock/mainland_headland_Coast blue grey bedrock_col",
+      "node": "HeadlandPine_14",
+      "position": [
+        -2196.0,
+        8.89328002929688,
+        -1839.0
+      ],
+      "scale": 0.7
+    },
+    {
+      "ground_collider": "/root/Skyfarer/MainlandVillage23g/mainland_headland_0/mainland_headland_Coast blue grey bedrock/mainland_headland_Coast blue grey bedrock_col",
+      "node": "HeadlandPine_15",
+      "position": [
+        -2190.0,
+        18.5218505859375,
+        -1855.0
+      ],
+      "scale": 0.95
+    },
+    {
+      "ground_collider": "/root/Skyfarer/MainlandVillage23g/mainland_headland_0/mainland_headland_Coast blue grey bedrock/mainland_headland_Coast blue grey bedrock_col",
+      "node": "HeadlandPine_16",
+      "position": [
+        -2200.0,
+        22.656005859375,
+        -1880.0
+      ],
+      "scale": 0.73
+    },
+    {
+      "ground_collider": "/root/Skyfarer/MainlandVillage23g/mainland_headland_0/mainland_headland_Coast blue grey bedrock/mainland_headland_Coast blue grey bedrock_col",
+      "node": "HeadlandPine_17",
+      "position": [
+        -2210.0,
+        21.41650390625,
+        -1900.0
+      ],
+      "scale": 0.76
+    },
+    {
+      "ground_collider": "/root/Skyfarer/MainlandVillage23g/mainland_headland_0/mainland_headland_Coast blue grey bedrock/mainland_headland_Coast blue grey bedrock_col",
+      "node": "HeadlandPine_18",
+      "position": [
+        -2223.0,
+        13.5138854980469,
+        -1907.0
+      ],
+      "scale": 0.52
+    },
+    {
+      "ground_collider": "/root/Skyfarer/MainlandVillage23g/mainland_headland_0/mainland_headland_Coast blue grey bedrock/mainland_headland_Coast blue grey bedrock_col",
+      "node": "HeadlandPine_19",
+      "position": [
+        -2185.0,
+        28.5544128417969,
+        -1910.0
+      ],
+      "scale": 0.85
+    },
+    {
+      "ground_collider": "/root/Skyfarer/MainlandVillage23g/mainland_headland_0/mainland_headland_Coast blue grey bedrock/mainland_headland_Coast blue grey bedrock_col",
+      "node": "HeadlandPine_20",
+      "position": [
+        -2160.0,
+        27.7868957519531,
+        -1897.0
+      ],
+      "scale": 0.9
+    },
+    {
+      "ground_collider": "/root/Skyfarer/MainlandVillage23g/mainland_headland_0/mainland_headland_Coast blue grey bedrock/mainland_headland_Coast blue grey bedrock_col",
+      "node": "HeadlandPine_21",
+      "position": [
+        -2170.0,
+        22.8196716308594,
+        -1860.0
+      ],
+      "scale": 0.75
+    },
+    {
+      "ground_collider": "/root/Skyfarer/MainlandVillage23g/mainland_headland_0/mainland_headland_Coast blue grey bedrock/mainland_headland_Coast blue grey bedrock_col",
+      "node": "HeadlandPine_22",
+      "position": [
+        -2215.0,
+        14.17626953125,
+        -1930.0
+      ],
+      "scale": 0.73
+    },
+    {
+      "ground_collider": "/root/Skyfarer/MainlandVillage23g/mainland_headland_0/mainland_headland_Coast blue grey bedrock/mainland_headland_Coast blue grey bedrock_col",
+      "node": "HeadlandPine_23",
+      "position": [
+        -2200.0,
+        21.7393798828125,
+        -1950.0
+      ],
+      "scale": 0.95
+    },
+    {
+      "ground_collider": "/root/Skyfarer/MainlandVillage23g/mainland_headland_0/mainland_headland_Coast blue grey bedrock/mainland_headland_Coast blue grey bedrock_col",
+      "node": "HeadlandPine_24",
+      "position": [
+        -2225.0,
+        13.6594543457031,
+        -1977.0
+      ],
+      "scale": 0.62
+    },
+    {
+      "ground_collider": "/root/Skyfarer/MainlandVillage23g/mainland_headland_0/mainland_headland_Coast blue grey bedrock/mainland_headland_Coast blue grey bedrock_col",
+      "node": "HeadlandPine_25",
+      "position": [
+        -2235.0,
+        13.9954528808594,
+        -2010.0
+      ],
+      "scale": 0.69
+    },
+    {
+      "ground_collider": "/root/Skyfarer/MainlandVillage23g/mainland_headland_0/mainland_headland_Coast blue grey bedrock/mainland_headland_Coast blue grey bedrock_col",
+      "node": "HeadlandPine_26",
+      "position": [
+        -2215.0,
+        17.2593383789063,
+        -2005.0
+      ],
+      "scale": 0.85
+    },
+    {
+      "ground_collider": "/root/Skyfarer/MainlandVillage23g/mainland_headland_0/mainland_headland_Coast blue grey bedrock/mainland_headland_Coast blue grey bedrock_col",
+      "node": "HeadlandPine_27",
+      "position": [
+        -2160.0,
+        30.4000244140625,
+        -1730.0
+      ],
+      "scale": 0.8
+    }
+  ],
+  "proposed_routes": [
+    {
+      "from": "fore_fisher",
+      "to": "fore_workshop",
+      "proposal_xz": [
+        [
+          -2265.41147626232,
+          -1751.75469928546
+        ],
+        [
+          -2266.748287302412,
+          -1751.0743051033216
+        ],
+        [
+          -2264,
+          -1747
+        ],
+        [
+          -2256,
+          -1746
+        ],
+        [
+          -2250.6663359474337,
+          -1746.0226889283235
+        ],
+        [
+          -2249.188161352451,
+          -1746.2776396426739
+        ]
+      ],
+      "horizontal_length_m": 21.310544829144924,
+      "end_height_difference_m": 1.8000000000000007,
+      "foundation_intersections_at_1_5m_width": [],
+      "pines_within_3m": [],
+      "minimum_planar_full_canopy_margin_m": 13.243124530011162,
+      "one_metre_native_grid_nodes_in_proposed_strip": 31,
+      "steepest_native_grid_samples": [
+        {
+          "position": [
+            -2267,
+            8.56822204589844,
+            -1751
+          ],
+          "slope": 28.074140650658364
+        },
+        {
+          "position": [
+            -2266,
+            8.8017578125,
+            -1750
+          ],
+          "slope": 28.074140650658364
+        },
+        {
+          "position": [
+            -2266,
+            8.55989074707031,
+            -1749
+          ],
+          "slope": 28.074140650658364
+        }
+      ]
+    },
+    {
+      "from": "fore_workshop",
+      "to": "fore_keeper",
+      "proposal_xz": [
+        [
+          -2249.188161352451,
+          -1746.2776396426739
+        ],
+        [
+          -2250.6663359474337,
+          -1746.0226889283235
+        ],
+        [
+          -2253,
+          -1753
+        ],
+        [
+          -2251.3849462691906,
+          -1760.2196578661176
+        ],
+        [
+          -2250.3624881291553,
+          -1761.3171911694283
+        ]
+      ],
+      "horizontal_length_m": 17.755329946687056,
+      "end_height_difference_m": 1.6999999999999993,
+      "foundation_intersections_at_1_5m_width": [],
+      "pines_within_3m": [],
+      "minimum_planar_full_canopy_margin_m": 13.248162675902474,
+      "one_metre_native_grid_nodes_in_proposed_strip": 28,
+      "steepest_native_grid_samples": [
+        {
+          "position": [
+            -2252,
+            10.6740112304688,
+            -1756
+          ],
+          "slope": 37.50441115315429
+        },
+        {
+          "position": [
+            -2253,
+            9.65425109863281,
+            -1754
+          ],
+          "slope": 31.470439275496805
+        },
+        {
+          "position": [
+            -2253,
+            9.67501831054688,
+            -1753
+          ],
+          "slope": 31.470439275496805
+        }
+      ]
+    },
+    {
+      "from": "fore_keeper",
+      "to": "fore_upper",
+      "proposal_xz": [
+        [
+          -2250.3624881291553,
+          -1761.3171911694283
+        ],
+        [
+          -2251.3849462691906,
+          -1760.2196578661176
+        ],
+        [
+          -2251,
+          -1756
+        ],
+        [
+          -2238,
+          -1755.5
+        ],
+        [
+          -2236.8424327238695,
+          -1760.0480281105058
+        ],
+        [
+          -2235.3533632373133,
+          -1760.228782264557
+        ]
+      ],
+      "horizontal_length_m": 24.939821094920006,
+      "end_height_difference_m": 2.0,
+      "foundation_intersections_at_1_5m_width": [],
+      "pines_within_3m": [],
+      "minimum_planar_full_canopy_margin_m": 15.371548473906095,
+      "one_metre_native_grid_nodes_in_proposed_strip": 37,
+      "steepest_native_grid_samples": [
+        {
+          "position": [
+            -2242,
+            12.1868286132813,
+            -1755
+          ],
+          "slope": 40.06082708523835
+        },
+        {
+          "position": [
+            -2241,
+            12.4716033935547,
+            -1755
+          ],
+          "slope": 40.06082708523835
+        },
+        {
+          "position": [
+            -2240,
+            12.7563934326172,
+            -1755
+          ],
+          "slope": 40.06082708523835
+        }
+      ]
+    },
+    {
+      "from": "fore_upper",
+      "to": "fore_back_cottage",
+      "proposal_xz": [
+        [
+          -2235.3533632373133,
+          -1760.228782264557
+        ],
+        [
+          -2236.8424327238695,
+          -1760.0480281105058
+        ],
+        [
+          -2237,
+          -1750
+        ],
+        [
+          -2235,
+          -1744
+        ],
+        [
+          -2235,
+          -1736
+        ],
+        [
+          -2232.8873272405845,
+          -1736.36525608421
+        ],
+        [
+          -2231.518181330194,
+          -1736.9779872455363
+        ]
+      ],
+      "horizontal_length_m": 29.517833298129442,
+      "end_height_difference_m": 1.0,
+      "foundation_intersections_at_1_5m_width": [],
+      "pines_within_3m": [],
+      "minimum_planar_full_canopy_margin_m": 8.49769983212438,
+      "one_metre_native_grid_nodes_in_proposed_strip": 37,
+      "steepest_native_grid_samples": [
+        {
+          "position": [
+            -2237,
+            12.4524230957031,
+            -1754
+          ],
+          "slope": 49.27531819199607
+        },
+        {
+          "position": [
+            -2235,
+            14.469970703125,
+            -1741
+          ],
+          "slope": 47.07534747696245
+        },
+        {
+          "position": [
+            -2233,
+            15.1385345458984,
+            -1737
+          ],
+          "slope": 42.56932944412808
+        }
+      ]
+    },
+    {
+      "from": "bay_fisher",
+      "to": "bay_keeper",
+      "proposal_xz": [
+        [
+          -2245.8779759754834,
+          -1870.1586626750625
+        ],
+        [
+          -2247.356150570466,
+          -1869.9037119607121
+        ],
+        [
+          -2247,
+          -1877
+        ],
+        [
+          -2240,
+          -1882
+        ],
+        [
+          -2237.834152097147,
+          -1886.0178715172221
+        ],
+        [
+          -2236.346654881468,
+          -1885.8246047757789
+        ]
+      ],
+      "horizontal_length_m": 23.271993321762714,
+      "end_height_difference_m": 2.0,
+      "foundation_intersections_at_1_5m_width": [],
+      "pines_within_3m": [],
+      "minimum_planar_full_canopy_margin_m": 22.252592405682307,
+      "one_metre_native_grid_nodes_in_proposed_strip": 33,
+      "steepest_native_grid_samples": [
+        {
+          "position": [
+            -2242,
+            7.59698486328125,
+            -1881
+          ],
+          "slope": 23.148713505060208
+        },
+        {
+          "position": [
+            -2241,
+            7.76310729980469,
+            -1881
+          ],
+          "slope": 23.148713505060208
+        },
+        {
+          "position": [
+            -2248,
+            6.20771789550781,
+            -1872
+          ],
+          "slope": 19.444944287627845
+        }
+      ]
+    },
+    {
+      "from": "bay_keeper",
+      "to": "bay_upper",
+      "proposal_xz": [
+        [
+          -2236.346654881468,
+          -1885.8246047757789
+        ],
+        [
+          -2237.834152097147,
+          -1886.0178715172221
+        ],
+        [
+          -2238,
+          -1879
+        ],
+        [
+          -2230,
+          -1877
+        ],
+        [
+          -2224.0405382294775,
+          -1871.4165905974796
+        ],
+        [
+          -2222.7037271893855,
+          -1872.096984779618
+        ]
+      ],
+      "horizontal_length_m": 26.432414999269053,
+      "end_height_difference_m": 2.0,
+      "foundation_intersections_at_1_5m_width": [],
+      "pines_within_3m": [],
+      "minimum_planar_full_canopy_margin_m": 20.44290169457797,
+      "one_metre_native_grid_nodes_in_proposed_strip": 39,
+      "steepest_native_grid_samples": [
+        {
+          "position": [
+            -2231,
+            8.68119812011719,
+            -1878
+          ],
+          "slope": 25.11705674354516
+        },
+        {
+          "position": [
+            -2231,
+            8.49334716796875,
+            -1877
+          ],
+          "slope": 25.11705674354516
+        },
+        {
+          "position": [
+            -2230,
+            8.92286682128906,
+            -1877
+          ],
+          "slope": 25.11705674354516
+        }
+      ]
+    },
+    {
+      "from": "bay_upper",
+      "to": "bay_workshop",
+      "proposal_xz": [
+        [
+          -2222.7037271893855,
+          -1872.096984779618
+        ],
+        [
+          -2224.0405382294775,
+          -1871.4165905974796
+        ],
+        [
+          -2225,
+          -1867
+        ],
+        [
+          -2220,
+          -1862
+        ],
+        [
+          -2218.6663359474337,
+          -1855.0226889283235
+        ],
+        [
+          -2217.188161352451,
+          -1855.2776396426739
+        ]
+      ],
+      "horizontal_length_m": 21.694301840356058,
+      "end_height_difference_m": -2.0,
+      "foundation_intersections_at_1_5m_width": [],
+      "pines_within_3m": [],
+      "minimum_planar_full_canopy_margin_m": 20.44290169457797,
+      "one_metre_native_grid_nodes_in_proposed_strip": 37,
+      "steepest_native_grid_samples": [
+        {
+          "position": [
+            -2225,
+            9.35227966308594,
+            -1869
+          ],
+          "slope": 29.752292001277564
+        },
+        {
+          "position": [
+            -2224,
+            9.826416015625,
+            -1869
+          ],
+          "slope": 29.752292001277564
+        },
+        {
+          "position": [
+            -2225,
+            9.03303527832031,
+            -1868
+          ],
+          "slope": 29.752292001277564
+        }
+      ]
+    }
+  ],
+  "route_scope": "Tentative design centerlines only; 1.5m buffered footprint checked against existing foundation polygons, not terrain envelopes, stair construction, all eaves, or access acceptance.",
+  "pine_actual_glb_radius": {
+    "all_heights": 3.900000124754358,
+    "vertices_at_or_below_local_y_2m": 3.900000124754358
+  },
+  "survey_scope": "Read existing 1m collision-grid nodes falling in proposed 1.5m strips; these are actual discrete queries, not continuous route/width proof. Route points remain suggestions.",
+  "evidence_sha256": {
+    "E:\\FeiTing\\captures\\headland_study_23g\\layout.json": "1f8c1766af8247e45809fdcfc7397a79d1a3cfae0b9313745b1bd626964c33bf",
+    "E:\\FeiTing\\captures\\headland_study_23g\\fisher_cottage.glb": "280ebd357262e6dbc216270c81b2045ff14a60b759067b5d0675b436d15a0ee8",
+    "E:\\FeiTing\\captures\\headland_study_23g\\quay_workshop.glb": "e4c33b94c6151ffd15b314d01a5aa4f70293095da477d26c796a35d71590996c",
+    "E:\\FeiTing\\captures\\validation_runs\\headland-assembly-23g-20260908T121755Z-4ca247af11bb4af2a7bba06fe2383718\\study-inputs\\keeper_house.glb": "8f70f7ba4d6c94d23b310b73f6fee9d171f6efb32d255be2574254e639b6176b",
+    "E:\\FeiTing\\captures\\validation_runs\\headland-assembly-23g-20260908T121755Z-4ca247af11bb4af2a7bba06fe2383718\\images\\day-front.png.json": "55a705c9f2cf1fe3ff8e89179fe40a1645d005cc54955dafaf1be838ac14a6f2",
+    "E:\\FeiTing\\assets\\models\\pine.glb": "0ad509bac0e10a1aadc140caf9d92fe383c09a43d39b584b2181eec7463c0342",
+    "E:\\FeiTing\\captures\\validation_runs\\village-grid-24a-20260908T122557Z-901d701fb6c6490989941a6f2e047718\\survey\\grid.json": "b805c78811c1dd79c584f48e5e2954526c51b0f0bb73365530b8041d4b832e37"
+  }
+}

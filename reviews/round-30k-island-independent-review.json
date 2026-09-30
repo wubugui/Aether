@@ -1,0 +1,556 @@
+{
+  "round": "30k",
+  "run_id": "lantern-island-30k-r1-20260908T193210Z-09e7ff871c9941519a561b4fede063ee",
+  "visual_verdict": "retain_sparse_broad_face_direction_and_lower_tree_group_continue_convex_block_and_rear_cleft_rework",
+  "full_reference_accepted": false,
+  "all_reference_goal_complete": false,
+  "reference": {
+    "path": "ref/1342.png",
+    "directly_viewed_this_review": true,
+    "sha256": "7acc98104013d9122eb551846b2d7fc1f7549bce8b2e3199eae8f5385a3ea238"
+  },
+  "images": [
+    {
+      "view": "night-reference",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-30k-r1-20260908T193210Z-09e7ff871c9941519a561b4fede063ee\\images\\night-reference.png",
+      "sha256": "66ccf6d2f4ca1e33ad3217042e4908b5988ee558256b7fbae7bf9859a4bf1062",
+      "judgment": "Corrected tree group is lower on the east shoulder and the compact tower/house composition remains. The central island reads more simply than30h, but its upper mound and limited short convex block layering still differ from1342. Night scale alone is insufficient for acceptance."
+    },
+    {
+      "view": "day-reference",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-30k-r1-20260908T193210Z-09e7ff871c9941519a561b4fede063ee\\images\\day-reference.png",
+      "sha256": "ce943eabe3cf7896ecddb521973a76d01de2b1fccb49ffce3596d57c1a018632",
+      "judgment": "Fewer broad surfaces replace the fluted front, preserving building proportions and house-right composition. However the island still reads as a regular upper mass above a small number of peripheral fragments; short staggered convex shoulders are not yet clearly expressed."
+    },
+    {
+      "view": "day-d-front",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-30k-r1-20260908T193210Z-09e7ff871c9941519a561b4fede063ee\\images\\day-d-front.png",
+      "sha256": "03d87a67773b2383ad5efd3329dbc688347d0daee21dd520e385f4cba27d9277",
+      "judgment": "Dense vertical fan recesses are removed. There are now fewer large concave/slope faces and the two relocated trees occupy a lower east ledge. The left main face is too large and plate-like; central straight cuts and pointed notches remain. This is a valid direction, not complete shape acceptance."
+    },
+    {
+      "view": "day-d-back",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-30k-r1-20260908T193210Z-09e7ff871c9941519a561b4fede063ee\\images\\day-d-back.png",
+      "sha256": "628f47d684d79c3a019775562afc50f9f312251b8136c1787fb203dc5993029c",
+      "judgment": "Old broad rear lobes and long narrow central cleft remain. Tree relocation is visible from the reverse side without an obvious floating whole tree, but this does not prove complete trunk-base contact. The south/east change did not fix the rear cleft."
+    },
+    {
+      "view": "day-c-front",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-30k-r1-20260908T193210Z-09e7ff871c9941519a561b4fede063ee\\images\\day-c-front.png",
+      "sha256": "5883653f07ba3c6c96d3d246a227bffb0bd5caa22cdd2798e73fb772647682a0",
+      "judgment": "Most direct improvement over30h: no repeated line of narrow vertical fan facets. The left/front surface around x530-770,y495-590 is instead an oversized continuous inclined slab; a straight seam and narrow pointed cut remain near its inner/right side. The lower tree group adds vertical layering, but wider concave planes alone do not create the reference short broad convex block structure."
+    }
+  ],
+  "compared_to": [
+    "30h and30d actual original views",
+    "ref/1342.png"
+  ],
+  "geometry_evidence": "reviews/round-30k-independent-geometry.json",
+  "local_visual_success": [
+    "30h dense repeated fluted facets removed.",
+    "South/east visible slope actually changes to fewer broader planes.",
+    "Two east trees visibly move to lower supported shoulders; preserved native scales and7trees per C/D confirmed in actual sidecars."
+  ],
+  "remaining": [
+    "Left/front oversized smooth sloping slab.",
+    "Central narrow notch/straight cut and insufficient short convex rock shoulders.",
+    "Long narrow rear cleft and broad rear lobes unchanged.",
+    "Upper platform/landmass still looks too orderly relative to1342."
+  ],
+  "next_actions": [
+    "Use the existing actual camera/source localization to select the oversized left slope and its central seam; add a short convex shoulder relationship by retaining/rebuilding a finite-width main-rock block between staggered cuts.",
+    "Break the large slab into two or three unequal connected broad planes with a visible convex knee and unequal contour heights, not a larger set of concave bowls.",
+    "Shorten or offset the straight internal seam so it does not run as a deep narrow incision from upper platform toward shore; identify its actual source region before editing.",
+    "Retain the improved lower tree grouping and sparse face organization while checking real support for any affected trees.",
+    "Handle the rear deep cleft as a separate targeted edit after front convex hierarchy is readable."
+  ],
+  "actual_tree_sidecar_readback": {
+    "method": "Read existing actual five image sidecars, no new runtime.14C/D trees per view,7each;20 relocated-tree records across5views validated by localXY, scale and collider ancestry.",
+    "relocated_records": [
+      {
+        "view": "night-reference",
+        "island": "island_d",
+        "actual_local_blender_xy": [
+          16.999957007847758,
+          -1.5000912476625352
+        ],
+        "actual_world_position": [
+          -2377.71044921875,
+          3.309814453125,
+          -1828.08227539063
+        ],
+        "scale": 0.8,
+        "normal": [
+          -0.348536163568497,
+          0.931615710258484,
+          -0.10302808880806
+        ],
+        "normal_slope_deg": 21.311908207969076,
+        "island_root": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant",
+        "ground_collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+        "actual_collider_is_descendant_of_recorded_root": true
+      },
+      {
+        "view": "night-reference",
+        "island": "island_d",
+        "actual_local_blender_xy": [
+          17.59993786752608,
+          -5.000091765616359
+        ],
+        "actual_world_position": [
+          -2374.77758789063,
+          3.49771118164063,
+          -1830.08435058594
+        ],
+        "scale": 0.55,
+        "normal": [
+          -0.0693069323897362,
+          0.997033178806305,
+          -0.0334874764084816
+        ],
+        "normal_slope_deg": 4.414593788784072,
+        "island_root": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant",
+        "ground_collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+        "actual_collider_is_descendant_of_recorded_root": true
+      },
+      {
+        "view": "night-reference",
+        "island": "island_c",
+        "actual_local_blender_xy": [
+          17.0,
+          -1.5
+        ],
+        "actual_world_position": [
+          -3033.0,
+          3.30975341796875,
+          -2648.5
+        ],
+        "scale": 0.8,
+        "normal": [
+          0.238725379109383,
+          0.931615710258484,
+          -0.274048209190369
+        ],
+        "normal_slope_deg": 21.311908207969076,
+        "island_root": "/root/Skyfarer/LanternCoastStudy/island_c_3",
+        "ground_collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+        "actual_collider_is_descendant_of_recorded_root": true
+      },
+      {
+        "view": "night-reference",
+        "island": "island_c",
+        "actual_local_blender_xy": [
+          17.60009765625,
+          -5.0
+        ],
+        "actual_world_position": [
+          -3032.39990234375,
+          3.4976806640625,
+          -2645.0
+        ],
+        "scale": 0.55,
+        "normal": [
+          0.0592919290065765,
+          0.997033178806305,
+          -0.0490848980844021
+        ],
+        "normal_slope_deg": 4.414593788784072,
+        "island_root": "/root/Skyfarer/LanternCoastStudy/island_c_3",
+        "ground_collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+        "actual_collider_is_descendant_of_recorded_root": true
+      },
+      {
+        "view": "day-reference",
+        "island": "island_d",
+        "actual_local_blender_xy": [
+          16.999957007847758,
+          -1.5000912476625352
+        ],
+        "actual_world_position": [
+          -2377.71044921875,
+          3.309814453125,
+          -1828.08227539063
+        ],
+        "scale": 0.8,
+        "normal": [
+          -0.348536163568497,
+          0.931615710258484,
+          -0.10302808880806
+        ],
+        "normal_slope_deg": 21.311908207969076,
+        "island_root": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant",
+        "ground_collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+        "actual_collider_is_descendant_of_recorded_root": true
+      },
+      {
+        "view": "day-reference",
+        "island": "island_d",
+        "actual_local_blender_xy": [
+          17.59993786752608,
+          -5.000091765616359
+        ],
+        "actual_world_position": [
+          -2374.77758789063,
+          3.49771118164063,
+          -1830.08435058594
+        ],
+        "scale": 0.55,
+        "normal": [
+          -0.0693069323897362,
+          0.997033178806305,
+          -0.0334874764084816
+        ],
+        "normal_slope_deg": 4.414593788784072,
+        "island_root": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant",
+        "ground_collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+        "actual_collider_is_descendant_of_recorded_root": true
+      },
+      {
+        "view": "day-reference",
+        "island": "island_c",
+        "actual_local_blender_xy": [
+          17.0,
+          -1.5
+        ],
+        "actual_world_position": [
+          -3033.0,
+          3.30975341796875,
+          -2648.5
+        ],
+        "scale": 0.8,
+        "normal": [
+          0.238725379109383,
+          0.931615710258484,
+          -0.274048209190369
+        ],
+        "normal_slope_deg": 21.311908207969076,
+        "island_root": "/root/Skyfarer/LanternCoastStudy/island_c_3",
+        "ground_collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+        "actual_collider_is_descendant_of_recorded_root": true
+      },
+      {
+        "view": "day-reference",
+        "island": "island_c",
+        "actual_local_blender_xy": [
+          17.60009765625,
+          -5.0
+        ],
+        "actual_world_position": [
+          -3032.39990234375,
+          3.4976806640625,
+          -2645.0
+        ],
+        "scale": 0.55,
+        "normal": [
+          0.0592919290065765,
+          0.997033178806305,
+          -0.0490848980844021
+        ],
+        "normal_slope_deg": 4.414593788784072,
+        "island_root": "/root/Skyfarer/LanternCoastStudy/island_c_3",
+        "ground_collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+        "actual_collider_is_descendant_of_recorded_root": true
+      },
+      {
+        "view": "day-d-front",
+        "island": "island_d",
+        "actual_local_blender_xy": [
+          16.999957007847758,
+          -1.5000912476625352
+        ],
+        "actual_world_position": [
+          -2377.71044921875,
+          3.309814453125,
+          -1828.08227539063
+        ],
+        "scale": 0.8,
+        "normal": [
+          -0.348536163568497,
+          0.931615710258484,
+          -0.10302808880806
+        ],
+        "normal_slope_deg": 21.311908207969076,
+        "island_root": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant",
+        "ground_collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+        "actual_collider_is_descendant_of_recorded_root": true
+      },
+      {
+        "view": "day-d-front",
+        "island": "island_d",
+        "actual_local_blender_xy": [
+          17.59993786752608,
+          -5.000091765616359
+        ],
+        "actual_world_position": [
+          -2374.77758789063,
+          3.49771118164063,
+          -1830.08435058594
+        ],
+        "scale": 0.55,
+        "normal": [
+          -0.0693069323897362,
+          0.997033178806305,
+          -0.0334874764084816
+        ],
+        "normal_slope_deg": 4.414593788784072,
+        "island_root": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant",
+        "ground_collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+        "actual_collider_is_descendant_of_recorded_root": true
+      },
+      {
+        "view": "day-d-front",
+        "island": "island_c",
+        "actual_local_blender_xy": [
+          17.0,
+          -1.5
+        ],
+        "actual_world_position": [
+          -3033.0,
+          3.30975341796875,
+          -2648.5
+        ],
+        "scale": 0.8,
+        "normal": [
+          0.238725379109383,
+          0.931615710258484,
+          -0.274048209190369
+        ],
+        "normal_slope_deg": 21.311908207969076,
+        "island_root": "/root/Skyfarer/LanternCoastStudy/island_c_3",
+        "ground_collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+        "actual_collider_is_descendant_of_recorded_root": true
+      },
+      {
+        "view": "day-d-front",
+        "island": "island_c",
+        "actual_local_blender_xy": [
+          17.60009765625,
+          -5.0
+        ],
+        "actual_world_position": [
+          -3032.39990234375,
+          3.4976806640625,
+          -2645.0
+        ],
+        "scale": 0.55,
+        "normal": [
+          0.0592919290065765,
+          0.997033178806305,
+          -0.0490848980844021
+        ],
+        "normal_slope_deg": 4.414593788784072,
+        "island_root": "/root/Skyfarer/LanternCoastStudy/island_c_3",
+        "ground_collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+        "actual_collider_is_descendant_of_recorded_root": true
+      },
+      {
+        "view": "day-d-back",
+        "island": "island_d",
+        "actual_local_blender_xy": [
+          16.999957007847758,
+          -1.5000912476625352
+        ],
+        "actual_world_position": [
+          -2377.71044921875,
+          3.309814453125,
+          -1828.08227539063
+        ],
+        "scale": 0.8,
+        "normal": [
+          -0.348536163568497,
+          0.931615710258484,
+          -0.10302808880806
+        ],
+        "normal_slope_deg": 21.311908207969076,
+        "island_root": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant",
+        "ground_collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+        "actual_collider_is_descendant_of_recorded_root": true
+      },
+      {
+        "view": "day-d-back",
+        "island": "island_d",
+        "actual_local_blender_xy": [
+          17.59993786752608,
+          -5.000091765616359
+        ],
+        "actual_world_position": [
+          -2374.77758789063,
+          3.49771118164063,
+          -1830.08435058594
+        ],
+        "scale": 0.55,
+        "normal": [
+          -0.0693069323897362,
+          0.997033178806305,
+          -0.0334874764084816
+        ],
+        "normal_slope_deg": 4.414593788784072,
+        "island_root": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant",
+        "ground_collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+        "actual_collider_is_descendant_of_recorded_root": true
+      },
+      {
+        "view": "day-d-back",
+        "island": "island_c",
+        "actual_local_blender_xy": [
+          17.0,
+          -1.5
+        ],
+        "actual_world_position": [
+          -3033.0,
+          3.30975341796875,
+          -2648.5
+        ],
+        "scale": 0.8,
+        "normal": [
+          0.238725379109383,
+          0.931615710258484,
+          -0.274048209190369
+        ],
+        "normal_slope_deg": 21.311908207969076,
+        "island_root": "/root/Skyfarer/LanternCoastStudy/island_c_3",
+        "ground_collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+        "actual_collider_is_descendant_of_recorded_root": true
+      },
+      {
+        "view": "day-d-back",
+        "island": "island_c",
+        "actual_local_blender_xy": [
+          17.60009765625,
+          -5.0
+        ],
+        "actual_world_position": [
+          -3032.39990234375,
+          3.4976806640625,
+          -2645.0
+        ],
+        "scale": 0.55,
+        "normal": [
+          0.0592919290065765,
+          0.997033178806305,
+          -0.0490848980844021
+        ],
+        "normal_slope_deg": 4.414593788784072,
+        "island_root": "/root/Skyfarer/LanternCoastStudy/island_c_3",
+        "ground_collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+        "actual_collider_is_descendant_of_recorded_root": true
+      },
+      {
+        "view": "day-c-front",
+        "island": "island_d",
+        "actual_local_blender_xy": [
+          16.999957007847758,
+          -1.5000912476625352
+        ],
+        "actual_world_position": [
+          -2377.71044921875,
+          3.309814453125,
+          -1828.08227539063
+        ],
+        "scale": 0.8,
+        "normal": [
+          -0.348536163568497,
+          0.931615710258484,
+          -0.10302808880806
+        ],
+        "normal_slope_deg": 21.311908207969076,
+        "island_root": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant",
+        "ground_collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+        "actual_collider_is_descendant_of_recorded_root": true
+      },
+      {
+        "view": "day-c-front",
+        "island": "island_d",
+        "actual_local_blender_xy": [
+          17.59993786752608,
+          -5.000091765616359
+        ],
+        "actual_world_position": [
+          -2374.77758789063,
+          3.49771118164063,
+          -1830.08435058594
+        ],
+        "scale": 0.55,
+        "normal": [
+          -0.0693069323897362,
+          0.997033178806305,
+          -0.0334874764084816
+        ],
+        "normal_slope_deg": 4.414593788784072,
+        "island_root": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant",
+        "ground_collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+        "actual_collider_is_descendant_of_recorded_root": true
+      },
+      {
+        "view": "day-c-front",
+        "island": "island_c",
+        "actual_local_blender_xy": [
+          17.0,
+          -1.5
+        ],
+        "actual_world_position": [
+          -3033.0,
+          3.30975341796875,
+          -2648.5
+        ],
+        "scale": 0.8,
+        "normal": [
+          0.238725379109383,
+          0.931615710258484,
+          -0.274048209190369
+        ],
+        "normal_slope_deg": 21.311908207969076,
+        "island_root": "/root/Skyfarer/LanternCoastStudy/island_c_3",
+        "ground_collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+        "actual_collider_is_descendant_of_recorded_root": true
+      },
+      {
+        "view": "day-c-front",
+        "island": "island_c",
+        "actual_local_blender_xy": [
+          17.60009765625,
+          -5.0
+        ],
+        "actual_world_position": [
+          -3032.39990234375,
+          3.4976806640625,
+          -2645.0
+        ],
+        "scale": 0.55,
+        "normal": [
+          0.0592919290065765,
+          0.997033178806305,
+          -0.0490848980844021
+        ],
+        "normal_slope_deg": 4.414593788784072,
+        "island_root": "/root/Skyfarer/LanternCoastStudy/island_c_3",
+        "ground_collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+        "actual_collider_is_descendant_of_recorded_root": true
+      }
+    ],
+    "full_trunk_base_contact_claimed": false
+  },
+  "runtime_audit_attribution": {
+    "owner": "root",
+    "path": "reviews\\round-30k-runtime-incremental.json",
+    "sha256": "f15709460c3ac4aef7637cb426b0cb3c9c582ce659bfec90395ad82f08334e8b",
+    "reported_passed": true,
+    "same_run": true
+  },
+  "first_run_failure": {
+    "run_id": "lantern-island-30k-20260908T192949Z-41ba6a989146416bad656363cee4a501",
+    "attribution": "Root reported checker falsely required logical island_d substring in actual collision path; D asset instance root is IslandD_CVariant. R1 actual sidecars record island_root and ancestry.",
+    "native_geometry_changed_for_retry": false,
+    "failed_run_retained": true
+  },
+  "limits": [
+    "Geometry continuity and sidecar ground hits do not prove entire flat trunk base touches a sloping surface.",
+    "Manual image rectangle is a visual locator, not segmentation.",
+    "No reviewer GPU/Blender launched. Fullreference remains false."
+  ]
+}

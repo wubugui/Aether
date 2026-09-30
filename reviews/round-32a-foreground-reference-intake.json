@@ -1,0 +1,158 @@
+{
+  "scope": "32a foreground A manual visual intake only",
+  "status": "composition_revision_required_not_final_acceptance",
+  "image_size": [
+    1672,
+    941
+  ],
+  "box_convention": "[xmin,ymin,xmax,ymax], top-left origin, manually estimated visual extents; approximate 10–25 px uncertainty at dark/overlapped boundaries; not segmentation or exact target constraints",
+  "evidence": [
+    {
+      "path": "E:\\FeiTing\\ref\\1342.png",
+      "sha256": "7acc98104013d9122eb551846b2d7fc1f7549bce8b2e3199eae8f5385a3ea238",
+      "actually_viewed": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\lantern-island-31i-20260908T214100Z-02d75d5cf747426d88e00816dda55bd0\\images\\night-reference.png",
+      "sha256": "1e2d1c4ba73410db9406c5ea7cd6dec9e2a09bfd9f5baaf6d23a196383e15189",
+      "actually_viewed": true
+    }
+  ],
+  "visible_relations": [
+    {
+      "feature": "塔整体，含帽与基脚",
+      "reference_box": [
+        228,
+        515,
+        363,
+        809
+      ],
+      "candidate_box": [
+        274,
+        532,
+        389,
+        811
+      ],
+      "relationship": "塔是主竖向锚；当前塔顶纵向已近似，中心约向右30像素。优先协调塔脚平台和两屋，不据此要求整塔缩放。"
+    },
+    {
+      "feature": "左侧可读房屋",
+      "reference_box": [
+        140,
+        661,
+        247,
+        787
+      ],
+      "candidate_box": [
+        45,
+        744,
+        247,
+        903
+      ],
+      "relationship": "参考屋顶与上墙完整，靠塔左下且被树适度遮挡；当前屋更左、更低，横向体量更长。"
+    },
+    {
+      "feature": "参考塔右屋／当前底边裁断屋",
+      "reference_box": [
+        335,
+        699,
+        445,
+        781
+      ],
+      "candidate_box": [
+        95,
+        871,
+        335,
+        941
+      ],
+      "relationship": "两个框不是已证实的同一实例对应。参考在塔右可读完整屋顶和暖墙；当前第二屋只剩底边屋顶片，未构成该关系。"
+    },
+    {
+      "feature": "左侧树群",
+      "reference_box": [
+        0,
+        607,
+        202,
+        801
+      ],
+      "candidate_box": [
+        164,
+        730,
+        276,
+        796
+      ],
+      "relationship": "参考有不同高度、相互遮挡的侧向群落；当前塔左后只有弱小树组。"
+    },
+    {
+      "feature": "右侧近屋树／当前孤立前树",
+      "reference_box": [
+        432,
+        705,
+        508,
+        798
+      ],
+      "candidate_box": [
+        550,
+        694,
+        652,
+        941
+      ],
+      "relationship": "参考树作为屋侧肩部配景；当前大树独立占住下部中心，尺度与遮挡关系明显不同。"
+    },
+    {
+      "feature": "前景草肩与岩体过渡，总范围非分割框",
+      "reference_box": [
+        0,
+        746,
+        887,
+        941
+      ],
+      "candidate_box": [
+        0,
+        747,
+        1140,
+        941
+      ],
+      "relationship": "参考约y792以下有占幅明显的厚岩面，草肩窄且破碎；当前下部主要为连续朝上草面，零散灰片不能形成同等可见崖厚。"
+    }
+  ],
+  "current_spatial_anchors_parent_supplied_not_reference_geography": {
+    "camera": [
+      -2278,
+      60,
+      -1632
+    ],
+    "yaw": 0.606832743,
+    "fov": 70,
+    "island_a_origin": [
+      -2350,
+      0,
+      -1650
+    ],
+    "tower": [
+      -2353,
+      30.0621,
+      -1656
+    ],
+    "houses": [
+      [
+        -2372,
+        22.3085,
+        -1648
+      ],
+      [
+        -2331,
+        27.5138,
+        -1644
+      ]
+    ],
+    "source_blend": "E:/FeiTing/captures/lantern_islands_study_20l/island_a.blend",
+    "house_image_to_instance_correspondence": "not independently projected in this intake"
+  },
+  "next_modeling_directions": [
+    "围绕现有塔收拢两屋，第二屋形成塔右完整屋顶和上墙；真实重建受影响支承、门阶、短路。",
+    "收回朝相机过宽顶面，做出主图可见的厚岩崖和错落小草肩；不能靠材质改灰或无厚度图板。",
+    "调整前景树群为屋侧成组、近远高低分层，降低孤立大树对下部画面的占据。"
+  ],
+  "validation_boundary": "先看同一固定相机主图的建筑可读性、岩草比例及遮挡，再检查真实支承与可绕飞体量；侧背检查只用于结构连续性。未运行引擎、未核验本轮源几何，不据单张参考推断精确原地图。角色、飞艇、HUD不计；未审C/D背坡或其余参考。"
+}

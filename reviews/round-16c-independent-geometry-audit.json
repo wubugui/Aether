@@ -1,0 +1,621 @@
+{
+  "scope": "Actual 16c exported GLB geometry checks; independent images reviewed separately. No production writes, no Blender/Godot launched.",
+  "artifacts": {
+    "study-inputs/cliff_crown.glb": {
+      "sha256": "cbc55e5a407fb36117b1d425c84996cb64c44ce86f27ac83595b8b957b751425",
+      "matches_run_manifest": true
+    },
+    "study-inputs/cliff_front_columns.glb": {
+      "sha256": "d715848077b118660b9864bad144b089ce70158aa058803d44534dbb77afca75",
+      "matches_run_manifest": true
+    },
+    "study-inputs/cliff_central_wall.glb": {
+      "sha256": "4a514bc9e398498e98d93df865241105cd431201b4749ca497c1edb9c5cf89a1",
+      "matches_run_manifest": true
+    },
+    "images/opening.png": {
+      "sha256": "d419ce6b25ab029ae7486188f28b5ea749a87915a703c9a3eec3e270e9ebb6a8",
+      "matches_run_manifest": true
+    },
+    "images/cliff-side.png": {
+      "sha256": "119862585568196211597272abb349c0721db0424631693c1ff3a22876396225",
+      "matches_run_manifest": true
+    },
+    "images/cliff-back.png": {
+      "sha256": "1ef35c290891f65d407105369aa96f07b11d55b8c71542417c385790c8f83e00",
+      "matches_run_manifest": true
+    }
+  },
+  "assets": {
+    "cliff_crown": {
+      "source_glb_sha256": "7e9e0ba27d8c2c62f05ad0a9e42bd12de37f7139e3fd1269fae9bf66ff34308c",
+      "candidate_glb_sha256": "cbc55e5a407fb36117b1d425c84996cb64c44ce86f27ac83595b8b957b751425",
+      "candidate_geometry": {
+        "welded_exact_positions": 292,
+        "triangles": 580,
+        "edges": 870,
+        "euler": 2,
+        "edge_incidence_not_2": 0,
+        "paired_edge_same_orientation": 0,
+        "degenerate_area_lt_1e_8": 0,
+        "min_triangle_area_m2": 1.5838463206055167,
+        "signed_volume_m3": 523146.935735967
+      },
+      "rim_count": 110,
+      "floor_count": 142,
+      "rim_exactly_same_as_production": true,
+      "floor_exactly_same_as_production": true,
+      "original_positions_missing_after_declared_moves": [],
+      "added_positions": [
+        [
+          -35.016876220703125,
+          63.20000076293945,
+          9.830649375915527
+        ],
+        [
+          -28.118478775024414,
+          66.5,
+          19.597217559814453
+        ],
+        [
+          -11.064666748046875,
+          67.0,
+          5.2072038650512695
+        ],
+        [
+          1.0591306686401367,
+          66.5,
+          -1.7492098808288574
+        ],
+        [
+          10.480743408203125,
+          65.0,
+          -4.613335609436035
+        ],
+        [
+          20.766895294189453,
+          63.279998779296875,
+          -10.432029724121094
+        ],
+        [
+          27.453022003173828,
+          57.959999084472656,
+          -8.868913650512695
+        ],
+        [
+          49.38984680175781,
+          53.6805419921875,
+          -27.365257263183594
+        ]
+      ],
+      "candidate_intersections": {
+        "nonadjacent_triangle_crossings": [
+          [
+            102,
+            105
+          ]
+        ],
+        "nonadjacent_coplanar_overlap_projected_m2": [],
+        "include_shared_vertex_pairs": true,
+        "scope": "AABB broad phase and segment/triangle crossings, plus coplanar area. Field names retained for schema stability; include_shared_vertex_pairs states pair coverage. Not an exact arithmetic proof against self-intersection, and not inter-asset intersection."
+      },
+      "shelf_profiles": [
+        {
+          "column": 0,
+          "new_point_glb_xyz": [
+            -35.016876220703125,
+            63.20000076293945,
+            9.830649375915527
+          ],
+          "below_linearly_interpolated_y_m": 0.08999958038329936,
+          "lower_width_xz_m": 7.498590425014575,
+          "lower_rise_m": 2.0,
+          "lower_profile_slope_degrees": 14.934098568049212,
+          "upper_profile_slope_degrees": 16.35106948946082,
+          "peak_ridge_same_as_production": true
+        },
+        {
+          "column": 1,
+          "new_point_glb_xyz": [
+            -28.118478775024414,
+            66.5,
+            19.597217559814453
+          ],
+          "below_linearly_interpolated_y_m": 6.049999999999997,
+          "lower_width_xz_m": 21.22220302262202,
+          "lower_rise_m": 2.0,
+          "lower_profile_slope_degrees": 5.383706518796309,
+          "upper_profile_slope_degrees": 46.246978374721046,
+          "peak_ridge_same_as_production": true
+        },
+        {
+          "column": 2,
+          "new_point_glb_xyz": [
+            -11.064666748046875,
+            67.0,
+            5.2072038650512695
+          ],
+          "below_linearly_interpolated_y_m": 7.75,
+          "lower_width_xz_m": 32.84973555886533,
+          "lower_rise_m": 2.0,
+          "lower_profile_slope_degrees": 3.4840549785458172,
+          "upper_profile_slope_degrees": 45.13074282336012,
+          "peak_ridge_same_as_production": true
+        },
+        {
+          "column": 3,
+          "new_point_glb_xyz": [
+            1.0591306686401367,
+            66.5,
+            -1.7492098808288574
+          ],
+          "below_linearly_interpolated_y_m": 10.950000000000003,
+          "lower_width_xz_m": 26.739189346214143,
+          "lower_rise_m": 2.0,
+          "lower_profile_slope_degrees": 4.277563419914903,
+          "upper_profile_slope_degrees": 58.77913602144751,
+          "peak_ridge_same_as_production": true
+        },
+        {
+          "column": 4,
+          "new_point_glb_xyz": [
+            10.480743408203125,
+            65.0,
+            -4.613335609436035
+          ],
+          "below_linearly_interpolated_y_m": 9.879999999999995,
+          "lower_width_xz_m": 13.18030058619714,
+          "lower_rise_m": 2.0,
+          "lower_profile_slope_degrees": 8.628331558205533,
+          "upper_profile_slope_degrees": 67.00529888424835,
+          "peak_ridge_same_as_production": true
+        },
+        {
+          "column": 5,
+          "new_point_glb_xyz": [
+            20.766895294189453,
+            63.279998779296875,
+            -10.432029724121094
+          ],
+          "below_linearly_interpolated_y_m": 7.697600708007812,
+          "lower_width_xz_m": 8.575299937187582,
+          "lower_rise_m": 2.0,
+          "lower_profile_slope_degrees": 13.128298291937005,
+          "upper_profile_slope_degrees": 67.12733162157488,
+          "peak_ridge_same_as_production": true
+        },
+        {
+          "column": 6,
+          "new_point_glb_xyz": [
+            27.453022003173828,
+            57.959999084472656,
+            -8.868913650512695
+          ],
+          "below_linearly_interpolated_y_m": 3.460800476074219,
+          "lower_width_xz_m": 8.799417657509501,
+          "lower_rise_m": 1.5,
+          "lower_profile_slope_degrees": 9.673983514585473,
+          "upper_profile_slope_degrees": 44.707408591199744,
+          "peak_ridge_same_as_production": true
+        },
+        {
+          "column": 7,
+          "new_point_glb_xyz": [
+            49.38984680175781,
+            53.6805419921875,
+            -27.365257263183594
+          ],
+          "below_linearly_interpolated_y_m": 1.3937561035156278,
+          "lower_width_xz_m": 3.8725311859553067,
+          "lower_rise_m": 1.0,
+          "lower_profile_slope_degrees": 14.479131542800868,
+          "upper_profile_slope_degrees": 42.38380473747812,
+          "peak_ridge_same_as_production": true
+        }
+      ],
+      "actual_strip_triangles": {
+        "lower_grass": [
+          {
+            "candidate_face": 15,
+            "normal_y": 0.7700814030893903,
+            "slope_degrees_from_horizontal": 39.63880065831947,
+            "area_m2": 64.47536937547159,
+            "color_linear": [
+              0.3349476754665375,
+              0.36223602294921875,
+              0.1430102437734604
+            ]
+          },
+          {
+            "candidate_face": 17,
+            "normal_y": 0.8003360348602796,
+            "slope_degrees_from_horizontal": 36.83779668864631,
+            "area_m2": 40.66458996057554,
+            "color_linear": [
+              0.34962204098701477,
+              0.37815213203430176,
+              0.14903384447097778
+            ]
+          },
+          {
+            "candidate_face": 19,
+            "normal_y": 0.7654561864803964,
+            "slope_degrees_from_horizontal": 40.05240652880547,
+            "area_m2": 42.27808163153163,
+            "color_linear": [
+              0.3403204381465912,
+              0.3680633008480072,
+              0.14521633088588715
+            ]
+          },
+          {
+            "candidate_face": 21,
+            "normal_y": 0.8726178975504839,
+            "slope_degrees_from_horizontal": 29.235703924556432,
+            "area_m2": 85.24284176082521,
+            "color_linear": [
+              0.3503137528896332,
+              0.378902405500412,
+              0.1493176370859146
+            ]
+          },
+          {
+            "candidate_face": 23,
+            "normal_y": 0.9669670859692642,
+            "slope_degrees_from_horizontal": 14.767734690511862,
+            "area_m2": 108.66200621759691,
+            "color_linear": [
+              0.36741307377815247,
+              0.39745011925697327,
+              0.15632940828800201
+            ]
+          },
+          {
+            "candidate_face": 25,
+            "normal_y": 0.993001500741335,
+            "slope_degrees_from_horizontal": 6.782560876687247,
+            "area_m2": 68.31344993052444,
+            "color_linear": [
+              0.3783404529094696,
+              0.4093038737773895,
+              0.16080661118030548
+            ]
+          },
+          {
+            "candidate_face": 27,
+            "normal_y": 0.9068413771322268,
+            "slope_degrees_from_horizontal": 24.927561174971764,
+            "area_m2": 46.86751733564744,
+            "color_linear": [
+              0.39107242226600647,
+              0.42311587929725647,
+              0.1660197526216507
+            ]
+          },
+          {
+            "candidate_face": 565,
+            "normal_y": 0.7669008921374484,
+            "slope_degrees_from_horizontal": 39.923598480185476,
+            "area_m2": 34.27893287961256,
+            "color_linear": [
+              0.33464673161506653,
+              0.3619096279144287,
+              0.14288665354251862
+            ]
+          },
+          {
+            "candidate_face": 567,
+            "normal_y": 0.7578744574031452,
+            "slope_degrees_from_horizontal": 40.72282862606192,
+            "area_m2": 38.60694949406223,
+            "color_linear": [
+              0.33301880955696106,
+              0.3601440489292145,
+              0.14221805334091187
+            ]
+          },
+          {
+            "candidate_face": 569,
+            "normal_y": 0.7490402881357644,
+            "slope_degrees_from_horizontal": 41.49268705857465,
+            "area_m2": 28.331857017678228,
+            "color_linear": [
+              0.34153732657432556,
+              0.36938318610191345,
+              0.14571590721607208
+            ]
+          },
+          {
+            "candidate_face": 571,
+            "normal_y": 0.898840809048182,
+            "slope_degrees_from_horizontal": 25.993887368621976,
+            "area_m2": 42.778721664722724,
+            "color_linear": [
+              0.3615453243255615,
+              0.3910852372646332,
+              0.15392407774925232
+            ]
+          },
+          {
+            "candidate_face": 573,
+            "normal_y": 0.9714905156505007,
+            "slope_degrees_from_horizontal": 13.714170349653685,
+            "area_m2": 85.16110460591946,
+            "color_linear": [
+              0.36925992369651794,
+              0.3994534909725189,
+              0.15708628296852112
+            ]
+          },
+          {
+            "candidate_face": 575,
+            "normal_y": 0.9886242835706254,
+            "slope_degrees_from_horizontal": 8.650467349245279,
+            "area_m2": 96.70000992604919,
+            "color_linear": [
+              0.37315213680267334,
+              0.4036756455898285,
+              0.15868118405342102
+            ]
+          },
+          {
+            "candidate_face": 577,
+            "normal_y": 0.9125256825217869,
+            "slope_degrees_from_horizontal": 24.143250619428272,
+            "area_m2": 130.68804773726833,
+            "color_linear": [
+              0.38142332434654236,
+              0.41264817118644714,
+              0.16206923127174377
+            ]
+          }
+        ],
+        "upper_rock": [
+          {
+            "candidate_face": 14,
+            "normal_y": 0.31840906485788095,
+            "slope_degrees_from_horizontal": 71.43326087499362,
+            "area_m2": 138.82105964423343,
+            "color_linear": [
+              0.33870863914489746,
+              0.3171253800392151,
+              0.2928837835788727
+            ]
+          },
+          {
+            "candidate_face": 16,
+            "normal_y": 0.19764713946625043,
+            "slope_degrees_from_horizontal": 78.60059623159073,
+            "area_m2": 81.45665713966778,
+            "color_linear": [
+              0.3529581129550934,
+              0.32963627576828003,
+              0.3022482991218567
+            ]
+          },
+          {
+            "candidate_face": 18,
+            "normal_y": 0.15963755083660322,
+            "slope_degrees_from_horizontal": 80.81414099063534,
+            "area_m2": 101.21347684544592,
+            "color_linear": [
+              0.33511319756507874,
+              0.31396570801734924,
+              0.29051241278648376
+            ]
+          },
+          {
+            "candidate_face": 20,
+            "normal_y": 0.3362949537068656,
+            "slope_degrees_from_horizontal": 70.34869734084795,
+            "area_m2": 86.96229231703545,
+            "color_linear": [
+              0.3907393515110016,
+              0.3627239763736725,
+              0.3268350660800934
+            ]
+          },
+          {
+            "candidate_face": 22,
+            "normal_y": 0.3826034907664143,
+            "slope_degrees_from_horizontal": 67.50495760970693,
+            "area_m2": 85.89413542688577,
+            "color_linear": [
+              0.3764442205429077,
+              0.3502183258533478,
+              0.31757161021232605
+            ]
+          },
+          {
+            "candidate_face": 24,
+            "normal_y": 0.20205988493568397,
+            "slope_degrees_from_horizontal": 78.34255859362356,
+            "area_m2": 105.9544672609471,
+            "color_linear": [
+              0.3237769901752472,
+              0.3039952218532562,
+              0.2830120623111725
+            ]
+          },
+          {
+            "candidate_face": 26,
+            "normal_y": 0.8988085514936908,
+            "slope_degrees_from_horizontal": 25.998104084571395,
+            "area_m2": 38.6888750122712,
+            "color_linear": [
+              0.5383602380752563,
+              0.49107757210731506,
+              0.42022767663002014
+            ]
+          },
+          {
+            "candidate_face": 564,
+            "normal_y": 0.38712932728637284,
+            "slope_degrees_from_horizontal": 67.22400472561564,
+            "area_m2": 77.8503230737446,
+            "color_linear": [
+              0.3461826741695404,
+              0.3236897587776184,
+              0.297802209854126
+            ]
+          },
+          {
+            "candidate_face": 566,
+            "normal_y": 0.5687423575402568,
+            "slope_degrees_from_horizontal": 55.33742699593431,
+            "area_m2": 47.488130653520166,
+            "color_linear": [
+              0.4356991946697235,
+              0.4019579589366913,
+              0.3556878864765167
+            ]
+          },
+          {
+            "candidate_face": 568,
+            "normal_y": 0.16216655078630918,
+            "slope_degrees_from_horizontal": 80.6673269936641,
+            "area_m2": 92.46868312605015,
+            "color_linear": [
+              0.3345383107662201,
+              0.3134603500366211,
+              0.29013291001319885
+            ]
+          },
+          {
+            "candidate_face": 570,
+            "normal_y": 0.29892416145946576,
+            "slope_degrees_from_horizontal": 72.60700276885377,
+            "area_m2": 71.62451332423977,
+            "color_linear": [
+              0.4145623743534088,
+              0.3835306465625763,
+              0.3421742618083954
+            ]
+          },
+          {
+            "candidate_face": 572,
+            "normal_y": 0.3295628753702042,
+            "slope_degrees_from_horizontal": 70.75775403852019,
+            "area_m2": 85.89930096714262,
+            "color_linear": [
+              0.3874679505825043,
+              0.35986343026161194,
+              0.3247191905975342
+            ]
+          },
+          {
+            "candidate_face": 574,
+            "normal_y": 0.2346733501269578,
+            "slope_degrees_from_horizontal": 76.42763132927865,
+            "area_m2": 124.9066934117264,
+            "color_linear": [
+              0.3268772065639496,
+              0.3067231774330139,
+              0.2850668728351593
+            ]
+          },
+          {
+            "candidate_face": 576,
+            "normal_y": 0.5688582913917903,
+            "slope_degrees_from_horizontal": 55.3293507441591,
+            "area_m2": 92.60184815988667,
+            "color_linear": [
+              0.5225691199302673,
+              0.47740626335144043,
+              0.41040611267089844
+            ]
+          }
+        ]
+      },
+      "production_native_sha256": "e050afbd6dc366130775cba31490c227fa20aac8709b9dccf4ce3a3608880328",
+      "production_native_matches_original_snapshot": true,
+      "production_glb_matches_original_snapshot": true,
+      "intersection_102_105_diagnosis": {
+        "shared_vertex_count": 1,
+        "reported_hit_distance_to_shared_endpoint_m": 2.3586176634801608e-07,
+        "segment_t": 0.9999999889947612,
+        "triangle_barycentric_u_v": [
+          -0.0,
+          -2.751309719722428e-09
+        ],
+        "interpretation": "Numerical endpoint-tolerance contact at a shared vertex; this hit is not evidence of finite-area/length penetration. Kept in raw audit, not silently removed."
+      }
+    },
+    "cliff_front_columns": {
+      "source_glb_sha256": "bbec473e81cc3ee826d85f1af4433c7b43d038fe75cdf825f287f6b4c0597dbe",
+      "candidate_glb_sha256": "d715848077b118660b9864bad144b089ce70158aa058803d44534dbb77afca75",
+      "candidate_geometry": {
+        "welded_exact_positions": 176,
+        "triangles": 348,
+        "edges": 522,
+        "euler": 2,
+        "edge_incidence_not_2": 0,
+        "paired_edge_same_orientation": 0,
+        "degenerate_area_lt_1e_8": 0,
+        "min_triangle_area_m2": 1.8519024278671168,
+        "signed_volume_m3": 185031.1891789975
+      },
+      "rim_count": 72,
+      "floor_count": 88,
+      "rim_exactly_same_as_production": true,
+      "floor_exactly_same_as_production": true,
+      "original_positions_missing_after_declared_moves": [],
+      "added_positions": [],
+      "candidate_intersections": {
+        "nonadjacent_triangle_crossings": [
+          [
+            67,
+            68
+          ],
+          [
+            67,
+            164
+          ]
+        ],
+        "nonadjacent_coplanar_overlap_projected_m2": [],
+        "include_shared_vertex_pairs": true,
+        "scope": "AABB broad phase and segment/triangle crossings, plus coplanar area. Field names retained for schema stability; include_shared_vertex_pairs states pair coverage. Not an exact arithmetic proof against self-intersection, and not inter-asset intersection."
+      },
+      "production_native_sha256": "324ce0446252e46a7130323df20b75c6a657ca576b680068c7d87dc753bc1c09",
+      "production_native_matches_original_snapshot": true,
+      "production_glb_matches_original_snapshot": true
+    },
+    "cliff_central_wall": {
+      "source_glb_sha256": "39ca18f1c5b4a4f263b29d9fa02d60d94f293c121c0f4fc1bb709b0a7fc29af8",
+      "candidate_glb_sha256": "4a514bc9e398498e98d93df865241105cd431201b4749ca497c1edb9c5cf89a1",
+      "candidate_geometry": {
+        "welded_exact_positions": 182,
+        "triangles": 360,
+        "edges": 540,
+        "euler": 2,
+        "edge_incidence_not_2": 0,
+        "paired_edge_same_orientation": 0,
+        "degenerate_area_lt_1e_8": 0,
+        "min_triangle_area_m2": 2.6329887397500897,
+        "signed_volume_m3": 168871.41812516993
+      },
+      "rim_count": 71,
+      "floor_count": 91,
+      "rim_exactly_same_as_production": true,
+      "floor_exactly_same_as_production": true,
+      "original_positions_missing_after_declared_moves": [],
+      "added_positions": [],
+      "candidate_intersections": {
+        "nonadjacent_triangle_crossings": [
+          [
+            37,
+            83
+          ]
+        ],
+        "nonadjacent_coplanar_overlap_projected_m2": [],
+        "include_shared_vertex_pairs": true,
+        "scope": "AABB broad phase and segment/triangle crossings, plus coplanar area. Field names retained for schema stability; include_shared_vertex_pairs states pair coverage. Not an exact arithmetic proof against self-intersection, and not inter-asset intersection."
+      },
+      "production_native_sha256": "c9698453b5c736c281dc2d330e4059bf5f8e7d6678d085fbe7c0584f3f329cfc",
+      "production_native_matches_original_snapshot": true,
+      "production_glb_matches_original_snapshot": true
+    }
+  },
+  "run_final_status": "passed",
+  "run_completed_utc": "2026-09-08T04:46:05.966357+00:00"
+}

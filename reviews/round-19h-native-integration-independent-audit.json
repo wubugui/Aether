@@ -1,0 +1,906 @@
+{
+  "scope": "Independent read-only bounded native integration audit. All eight raw images viewed. Parent ran GPU/native checks; this reviewer reads and binds evidence, not a repeated engine run.",
+  "final_run": "E:\\FeiTing\\captures\\validation_runs\\19h-native-lighthouse-final-20260908T082434Z-482422f7fede4b64b58f197a71159771",
+  "status": "passed",
+  "manifest_sha256": "30d3809aeafbbaa00323f51ff684e9353657e55a369b5187fe4c9b25de6a4fd1",
+  "artifact_count": 80,
+  "artifact_sha256": {
+    "installed-evidence/preparation-inputs.json": "6c3caa104e600639e3294b8ca56f50c2388347676e13bf76709f81b02604c565",
+    "installed-evidence/source-backup/assets/models/lighthouse.glb": "27bf2f45f6993ab31d5b690c84bee4875b78be9e7c1b014c424308ddde3d0b38",
+    "installed-evidence/source-backup/assets/collision/lighthouse.res": "aeb020dac75fb3290edda1941b73b440335340d7711c33b69c97b7732ce60e31",
+    "installed-evidence/source-backup/assets/meshes/lighthouse.res": "fd63abf04d59e164ad6767b2b4d1286550f36082a3c04cceae712c86e8607343",
+    "installed-evidence/source-backup/scenes/prefabs/lighthouse.tscn": "845d30d6f0f40527b8c4c434a7bbd22603b100fc0b838c89de7872ee1b1ad1c6",
+    "installed-evidence/source-backup/assets/asset_catalog.json": "c08bd608b2bca025e66fbb82056b5efb9ff88d77d87d70e01c11d24179c81ee5",
+    "installed-evidence/source-backup/assets/settlement_kit.json": "9ab007ca7e7d8b91e21588157360bb23bc8c3c6c8417537a80ddb6f43417c7f6",
+    "installed-evidence/preparation/integrate_lighthouse_19h.py": "baf1d7964a429261b0ca20d6dcae575683f71d0db162ea02e750a7fbaa40fc7e",
+    "installed-evidence/preparation/round-19h-lighthouse-independent-review.md": "f4d54b625ea6a1bf299e23b66ca56ef4df972a1ad16d8b34b42a3c6c902ac2da",
+    "installed-evidence/preparation/round-19h-lighthouse-independent-audit.json": "99f4da0e09ce57559cd8d055184b5b73d443e90d9295fd25adfaaae9ad0f3468",
+    "installed-evidence/preparation/lighthouse.blend": "10540b562966c58df68f6bd7e5030cb0b5e991d0aceb292a318c88215876f000",
+    "installed-evidence/preparation/lighthouse.glb": "79b5fd32ec06a3c3cf0fc948e31333c9d374fb018437f2fa630293e266382eb1",
+    "installed-evidence/preparation/builder.py": "9772fa9587300c411c45ddcfe16be562505b2f3ea0915d82b46b0b9971ada34f",
+    "installed-evidence/preparation/model-report.json": "5b8491b069afcd25f58e4c539a977bf75acd7c69d536d424ff5a696eff6388c2",
+    "installed-evidence/preparation/native_lighthouse_19.gd": "84edc6d44ec0f7e61699fbf2e8cbd2422335917935138cba46300cf612f45581",
+    "installed-evidence/preparation/capture_native_lighthouse_19.gd": "bf2e29ae5cb45c70689c3ad5a6f8afc6490e148c7b4e1e241e3f3191b9c9a6c5",
+    "installed-evidence/resume-current-inputs.json": "f48ee3f6481b3ab55b81eb6914ac95412b9a9f1a8a6c2508e41cf792e626654a",
+    "installed-evidence/failed-predecessor/manifest.json": "aa60c2c7ac68149915e140d1c1bfc34cdad7a32e1610fe6b005b40aa1fab84cb",
+    "installed-evidence/failed-predecessor/import.log": "15ac0c6cf12481218600cc59c7980816a1c35248465b2502045072ff9bdf7ede",
+    "installed-evidence/failed-predecessor/import-error.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "installed-evidence/failed-predecessor/derived-install.log": "b3ab5cf1f026374172b3533d2a1f50920a5f676d40a0fd7b06c9705e7aa81170",
+    "installed-evidence/failed-predecessor/derived-install-error.log": "b33c7f4352afed1b41074e08c4b03b8d674efe74508605cf6069bd3c41df7e1b",
+    "installed-evidence/reports/derived-install.json": "2c6bdff87eb26511b879fac87cb9fcaf582873eebea224e1755b3b5556e28c69",
+    "installed-evidence/derived-install.log": "ba91dac6f4b51bc84101c65be833c3e7fcb6816050d93f666258193000755832",
+    "installed-evidence/derived-install-error.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "installed-evidence/stages/derived-install.json": "983ecd0284b9762e6c8faa6ca8ab3aa740da3fd2988703d1fe0d4e004aca4412",
+    "installed-evidence/preparation-changes.json": "f059ffb072bf94d299ff89307c1a0ceb7e9487a369a6cba5da0e251032286c61",
+    "installed-evidence/inputs.json": "a34ae9b0a36463520f3a3593d54f3a3eb532c3a5abaddef0d51450ea67d6dcd5",
+    "installed-evidence/native-check.log": "b3ab5cf1f026374172b3533d2a1f50920a5f676d40a0fd7b06c9705e7aa81170",
+    "installed-evidence/native-check-error.log": "1f88c68f214daefe6a2b8376ebc33305b034d3d08bd093c4b88baa4311d1a839",
+    "installed-evidence/stages/native-check.json": "19f950bc42880d6662641a25a3fede739967808efc3b982fb57f50614305e747",
+    "installed-evidence/manifest.json": "ced0d6af21179a57d7aa75eda37e55a53cd898a727df8fb12c4fc86dc36eae3d",
+    "validation-scripts/validate_native_lighthouse_19h.py": "36807b482986e3ea1d2a9b172d8a681b30879d3d1757ee5c207c63a0c2cc081c",
+    "validation-scripts/native_lighthouse_19.gd": "1d229c110706b3a3616508d865fbd2dc3fc859756c2529687ef4fb857a604dd8",
+    "validation-scripts/capture_native_lighthouse_19.gd": "bf2e29ae5cb45c70689c3ad5a6f8afc6490e148c7b4e1e241e3f3191b9c9a6c5",
+    "validation-scripts/inspect_native_lighthouse_materials_19.gd": "481e5c3e1b297776f4b4c6287119e64c0a31b0f52d0a02b27e2714e3889a15ef",
+    "validation-scripts/lighthouse-19h-native-material-diagnostic.stdout.log": "833315d00d4b19344a6a18a23622fbd461897340e36015ef8522753c7e7958c2",
+    "validation-scripts/lighthouse-19h-native-material-diagnostic.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "inputs.json": "7f0f318b560371bfbe87f9a7a7416f543996e92b2eec49588224ebb0568e8882",
+    "reports/native-check.json": "9c988b80dcf39491225464c3a2a81dac7dde81832573b0b18ead51b4a4830204",
+    "native-check.log": "f301f70cb6c359e5a7ace7a7afed941b4c38cf3daaa59b256bbd8a01473d297f",
+    "native-check-error.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stages/native-check.json": "f2ea9f88593406aed24f04a1fff33f7c715a02b0e186fcc32a7becdfc67b566b",
+    "images/harbor-front.png": "08bdb436bce48421bae390a8ec8fea4c83210070ad7bec2325528fcea2a59d4b",
+    "capture-harbor-front.log": "caf30f4559fb3fea9e05195a5667073044f4ec9d302f79b66e276e9e70730ef8",
+    "capture-harbor-front-error.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stages/capture-harbor-front.json": "3dc6f9258884db282aa777459ae82eba54901f4c1b7344b970d6df919106c60b",
+    "images/harbor-back.png": "0b483f3825a78619e782699d4c135774696aff2808cfbbe45e775893583a9dab",
+    "capture-harbor-back.log": "b3c574186754834d02c43b3ad93bae1c3f10d71f23db552f5d7a8efff3c5952e",
+    "capture-harbor-back-error.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stages/capture-harbor-back.json": "c79806d4c9b1d1dda3a85e6acc42966756dae658a559711c3543c3b401678537",
+    "images/harbor-gallery.png": "ddd083b02f6a727a98e6a6062df6e4a1c20a74a0ffa934a1ed0fb7777cbc19c8",
+    "capture-harbor-gallery.log": "a8e7e34c42efd57aa6ad56951876e8ce2d379594bbb22299b68789b982b0c59c",
+    "capture-harbor-gallery-error.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stages/capture-harbor-gallery.json": "3f72d58d71207f96d78d1d781eae9bb9c4a6cdc89fdd22857e165aad090e9ff8",
+    "images/harbor-context.png": "efd6ddca2c0bfb25d5803ea2a3bd6a623fcb4071007796b143ff2bdc6b5f716c",
+    "capture-harbor-context.log": "573d2b077d3ae5eaabc747906b834e84fc47dc0f6da115858b8cad3478ba42d2",
+    "capture-harbor-context-error.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stages/capture-harbor-context.json": "0ef000209b54db1a10332667af6b4fdcee808cbeadf44a59173cf4aee3f2f99b",
+    "images/harbor-door.png": "20d9bf4716dcca01e2a674f29f8156a11d7fceac53e1adcdea7bdbbd400d23fc",
+    "capture-harbor-door.log": "816452d6d7d5fca11854991ab5416290c721eaefb524cd7b1250c49ee3722373",
+    "capture-harbor-door-error.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stages/capture-harbor-door.json": "60aa64668810b4654401facb836c94fd6ad96217b93bd4aadda8264394327ce9",
+    "images/remote-front.png": "46f598b889be1e2a132f164c1d621203ee1bf923a643d0e23f8c5c69ef29876b",
+    "capture-remote-front.log": "f80140917914f052524656086ee6f7a11b94d2183f7963f804bf8292632d478c",
+    "capture-remote-front-error.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stages/capture-remote-front.json": "f19fbc1fac1f0f1af3e9fc6f1bb4c1419cbad4c129e4557e3a4b0eeeea03a7af",
+    "images/remote-door.png": "41130602031f05cc5f7eed0de21ecf3bf5488ea0971af676e4549ebef159c32a",
+    "capture-remote-door.log": "6946b80e321c8b5964cd73446aa26a62990d91b62aa3ed6227428ed8c7b60b2e",
+    "capture-remote-door-error.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stages/capture-remote-door.json": "d6fbd844be12943e62a07392f8521bfa793ffa3ca381e018ad20fbbe49bba8e9",
+    "images/opening.png": "1111aacb9a276cc249aa5f78664f4b22c3122dedd2337817f028af6b08b776f0",
+    "capture-opening.log": "9af1f29ab760c6b65e1d4fc5fa225e4bd416c44d85ef4a6b4bb9a1f0cb90c064",
+    "capture-opening-error.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stages/capture-opening.json": "f63dcf3c1bdcffb0855179d3e525b01e09d91ec07d3c1eb13f75f75b8412bf9e",
+    "previous-reports/game-test.json": "9da10bf5547ee56e8080fd3b8b1c7bd6f90d802e4cc1a8f6074b61b834bd5b5d",
+    "reports/game-test.json": "87bfa562e9c0790c20a50704ad9fb02b8fe0beb6d9a6482a09221425b7a05f44",
+    "game-test.log": "da79e68be9449103424c5e32408825492f27a4486089dcde7f64d825963756a3",
+    "game-test-error.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stages/game-test.json": "cb20c176ff027ca04ab8af8be2e5477d54621c0e4c3d3ecf6d849c09e4a4024f"
+  },
+  "failed_predecessors": [
+    {
+      "run_id": "19h-native-lighthouse-repair-20260908T082039Z-7c31371c56954044b4576030f27feea3",
+      "status": "failed",
+      "stages": [
+        [
+          "derived-install",
+          "passed"
+        ],
+        [
+          "native-check",
+          "failed"
+        ]
+      ],
+      "error": "Engine/script error in E:\\FeiTing\\captures\\validation_runs\\19h-native-lighthouse-repair-20260908T082039Z-7c31371c56954044b4576030f27feea3\\native-check-error.log: SCRIPT ERROR",
+      "manifest_sha256": "ced0d6af21179a57d7aa75eda37e55a53cd898a727df8fb12c4fc86dc36eae3d"
+    },
+    {
+      "run_id": "19h-native-lighthouse-20260908T081741Z-013b2ef8a2624aa0ad6d56d22e4e0fbe",
+      "status": "failed",
+      "stages": [
+        [
+          "import",
+          "passed"
+        ],
+        [
+          "derived-install",
+          "failed"
+        ]
+      ],
+      "error": "Engine/script error in E:\\FeiTing\\captures\\validation_runs\\19h-native-lighthouse-20260908T081741Z-013b2ef8a2624aa0ad6d56d22e4e0fbe\\derived-install-error.log: ERROR:",
+      "manifest_sha256": "aa60c2c7ac68149915e140d1c1bfc34cdad7a32e1610fe6b005b40aa1fab84cb"
+    }
+  ],
+  "final_run_installs_or_imports": false,
+  "production_change_scope_excludes_godot_cache": {
+    "res://assets/asset_catalog.json": {
+      "before": {
+        "sha256": "c08bd608b2bca025e66fbb82056b5efb9ff88d77d87d70e01c11d24179c81ee5",
+        "bytes": 9814,
+        "mtime_ns": 1788847402429658900
+      },
+      "after": {
+        "sha256": "00ef2ddbcf3262d9c5ea2170e9ef21b63335fabdb29d544fd7027a8a14ee9a25",
+        "bytes": 11290,
+        "mtime_ns": 1788855467748565100
+      }
+    },
+    "res://assets/collision/lighthouse.res": {
+      "before": {
+        "sha256": "aeb020dac75fb3290edda1941b73b440335340d7711c33b69c97b7732ce60e31",
+        "bytes": 35283,
+        "mtime_ns": 1788601312000000000
+      },
+      "after": {
+        "sha256": "39be6f360d1c008437a108d15ad2fbf3e94dc7693fa1fcc18eb4457386538c5f",
+        "bytes": 143931,
+        "mtime_ns": 1788855650438996800
+      }
+    },
+    "res://assets/meshes/lighthouse.res": {
+      "before": {
+        "sha256": "fd63abf04d59e164ad6767b2b4d1286550f36082a3c04cceae712c86e8607343",
+        "bytes": 56097,
+        "mtime_ns": 1788601312000000000
+      },
+      "after": {
+        "sha256": "13d15f2f85e8d02b33e1011bbb3bbc2b11fafa3cf985d49dc79edc60843d1fd2",
+        "bytes": 235809,
+        "mtime_ns": 1788855650447994100
+      }
+    },
+    "res://assets/models/lighthouse.glb": {
+      "before": {
+        "sha256": "27bf2f45f6993ab31d5b690c84bee4875b78be9e7c1b014c424308ddde3d0b38",
+        "bytes": 86636,
+        "mtime_ns": 1788599996000000000
+      },
+      "after": {
+        "sha256": "79b5fd32ec06a3c3cf0fc948e31333c9d374fb018437f2fa630293e266382eb1",
+        "bytes": 270348,
+        "mtime_ns": 1788854928905515200
+      }
+    },
+    "res://assets/settlement_kit.json": {
+      "before": {
+        "sha256": "9ab007ca7e7d8b91e21588157360bb23bc8c3c6c8417537a80ddb6f43417c7f6",
+        "bytes": 209,
+        "mtime_ns": 1788621014000000000
+      },
+      "after": {
+        "sha256": "6843275e2f8d7ba8caa6cee2ff10afe1fd3175a132d2f2395580fe2ce73e987e",
+        "bytes": 494,
+        "mtime_ns": 1788855467749586400
+      }
+    },
+    "res://blender/settlement_kit/lighthouse.blend": {
+      "before": null,
+      "after": {
+        "sha256": "10540b562966c58df68f6bd7e5030cb0b5e991d0aceb292a318c88215876f000",
+        "bytes": 2023615,
+        "mtime_ns": 1788854928568499900
+      }
+    },
+    "res://scenes/prefabs/lighthouse.tscn": {
+      "before": {
+        "sha256": "845d30d6f0f40527b8c4c434a7bbd22603b100fc0b838c89de7872ee1b1ad1c6",
+        "bytes": 744,
+        "mtime_ns": 1788601312000000000
+      },
+      "after": {
+        "sha256": "9a15399badeeac12c23cc411800309e21bf8d5e55b0c6d25f20ef7a08e8ecbfa",
+        "bytes": 624,
+        "mtime_ns": 1788855467746977800
+      }
+    }
+  },
+  "installed_inputs_same_as_repair": true,
+  "native_check": {
+    "collision_triangles": 3988,
+    "collision_vertex_error_max_m": 0.0,
+    "combined_surfaces": 24,
+    "combined_vertex_error_max_m": 0.0,
+    "instances": [
+      {
+        "collision_contacts": [
+          {
+            "angle": 0.392699081698724,
+            "height": 5.0,
+            "hit": [
+              164.667709350586,
+              20.7729988098145,
+              411.105010986328
+            ]
+          },
+          {
+            "angle": 1.17809724509617,
+            "height": 5.0,
+            "hit": [
+              163.105102539063,
+              20.7729988098145,
+              412.66796875
+            ]
+          },
+          {
+            "angle": 1.96349540849362,
+            "height": 5.0,
+            "hit": [
+              160.894897460938,
+              20.7729988098145,
+              412.66796875
+            ]
+          },
+          {
+            "angle": 2.74889357189107,
+            "height": 5.0,
+            "hit": [
+              159.332015991211,
+              20.7729988098145,
+              411.105102539063
+            ]
+          },
+          {
+            "angle": 3.53429173528852,
+            "height": 5.0,
+            "hit": [
+              159.33219909668,
+              20.7729988098145,
+              408.894958496094
+            ]
+          },
+          {
+            "angle": 4.31968989868597,
+            "height": 5.0,
+            "hit": [
+              160.894897460938,
+              20.7729988098145,
+              407.33203125
+            ]
+          },
+          {
+            "angle": 5.10508806208341,
+            "height": 5.0,
+            "hit": [
+              163.105102539063,
+              20.7729988098145,
+              407.33203125
+            ]
+          },
+          {
+            "angle": 5.89048622548086,
+            "height": 5.0,
+            "hit": [
+              164.667892456055,
+              20.7729988098145,
+              408.894927978516
+            ]
+          },
+          {
+            "angle": 0.392699081698724,
+            "height": 12.0,
+            "hit": [
+              164.119430541992,
+              27.7729988098145,
+              410.877899169922
+            ]
+          },
+          {
+            "angle": 1.17809724509617,
+            "height": 12.0,
+            "hit": [
+              162.877502441406,
+              27.7729988098145,
+              412.118469238281
+            ]
+          },
+          {
+            "angle": 1.96349540849362,
+            "height": 12.0,
+            "hit": [
+              161.122055053711,
+              27.7729988098145,
+              412.119537353516
+            ]
+          },
+          {
+            "angle": 2.74889357189107,
+            "height": 12.0,
+            "hit": [
+              159.880477905273,
+              27.7729988098145,
+              410.8779296875
+            ]
+          },
+          {
+            "angle": 3.53429173528852,
+            "height": 12.0,
+            "hit": [
+              159.880462646484,
+              27.7729988098145,
+              409.1220703125
+            ]
+          },
+          {
+            "angle": 4.31968989868597,
+            "height": 12.0,
+            "hit": [
+              161.122497558594,
+              27.7729988098145,
+              407.881530761719
+            ]
+          },
+          {
+            "angle": 5.10508806208341,
+            "height": 12.0,
+            "hit": [
+              162.877944946289,
+              27.7729988098145,
+              407.880462646484
+            ]
+          },
+          {
+            "angle": 5.89048622548086,
+            "height": 12.0,
+            "hit": [
+              164.119445800781,
+              27.7729988098145,
+              409.122100830078
+            ]
+          }
+        ],
+        "instance": "lighthouse_57152",
+        "materials": [
+          {
+            "alpha": 1.0,
+            "material": "Weathered sandstone edges",
+            "node": "Opaque_Weathered sandstone edges",
+            "transparency_enum": 0
+          },
+          {
+            "alpha": 1.0,
+            "material": "Limestone 1",
+            "node": "Opaque_Limestone 1",
+            "transparency_enum": 0
+          },
+          {
+            "alpha": 1.0,
+            "material": "Limestone 0",
+            "node": "Opaque_Limestone 0",
+            "transparency_enum": 0
+          },
+          {
+            "alpha": 1.0,
+            "material": "Oak door boards",
+            "node": "Opaque_Oak door boards",
+            "transparency_enum": 0
+          },
+          {
+            "alpha": 1.0,
+            "material": "Dark forged bronze",
+            "node": "Opaque_Dark forged bronze",
+            "transparency_enum": 0
+          },
+          {
+            "alpha": 1.0,
+            "material": "Limestone 2",
+            "node": "Opaque_Limestone 2",
+            "transparency_enum": 0
+          },
+          {
+            "alpha": 1.0,
+            "material": "Limestone 3",
+            "node": "Opaque_Limestone 3",
+            "transparency_enum": 0
+          },
+          {
+            "alpha": 1.0,
+            "material": "Unlit window recess",
+            "node": "Opaque_Unlit window recess",
+            "transparency_enum": 0
+          },
+          {
+            "alpha": 0.270000010728836,
+            "material": "Clear slightly amber lantern glass",
+            "node": "Lantern glazed panel 0",
+            "transparency_enum": 4
+          },
+          {
+            "alpha": 0.270000010728836,
+            "material": "Clear slightly amber lantern glass",
+            "node": "Lantern glazed panel 1",
+            "transparency_enum": 4
+          },
+          {
+            "alpha": 0.270000010728836,
+            "material": "Clear slightly amber lantern glass",
+            "node": "Lantern glazed panel 2",
+            "transparency_enum": 4
+          },
+          {
+            "alpha": 0.270000010728836,
+            "material": "Clear slightly amber lantern glass",
+            "node": "Lantern glazed panel 3",
+            "transparency_enum": 4
+          },
+          {
+            "alpha": 0.270000010728836,
+            "material": "Clear slightly amber lantern glass",
+            "node": "Lantern glazed panel 4",
+            "transparency_enum": 4
+          },
+          {
+            "alpha": 0.270000010728836,
+            "material": "Clear slightly amber lantern glass",
+            "node": "Lantern glazed panel 5",
+            "transparency_enum": 4
+          },
+          {
+            "alpha": 0.270000010728836,
+            "material": "Clear slightly amber lantern glass",
+            "node": "Lantern glazed panel 6",
+            "transparency_enum": 4
+          },
+          {
+            "alpha": 0.270000010728836,
+            "material": "Clear slightly amber lantern glass",
+            "node": "Lantern glazed panel 7",
+            "transparency_enum": 4
+          },
+          {
+            "alpha": 1.0,
+            "material": "Lamp core",
+            "node": "Opaque_Lamp core",
+            "transparency_enum": 0
+          },
+          {
+            "alpha": 0.100000001490116,
+            "material": "Clear optical lens glass",
+            "node": "Fresnel lens tier 00",
+            "transparency_enum": 4
+          },
+          {
+            "alpha": 0.100000001490116,
+            "material": "Clear optical lens glass",
+            "node": "Fresnel lens tier 01",
+            "transparency_enum": 4
+          },
+          {
+            "alpha": 0.100000001490116,
+            "material": "Clear optical lens glass",
+            "node": "Fresnel lens tier 02",
+            "transparency_enum": 4
+          },
+          {
+            "alpha": 0.100000001490116,
+            "material": "Clear optical lens glass",
+            "node": "Fresnel lens tier 03",
+            "transparency_enum": 4
+          },
+          {
+            "alpha": 0.100000001490116,
+            "material": "Clear optical lens glass",
+            "node": "Fresnel lens tier 04",
+            "transparency_enum": 4
+          },
+          {
+            "alpha": 1.0,
+            "material": "Oxidised terracotta roof",
+            "node": "Opaque_Oxidised terracotta roof",
+            "transparency_enum": 0
+          },
+          {
+            "alpha": 1.0,
+            "material": "Deep weathered gallery corbel stone",
+            "node": "Opaque_Deep weathered gallery corbel stone",
+            "transparency_enum": 0
+          }
+        ],
+        "mesh_nodes": 24,
+        "position": [
+          162.0,
+          15.7729997634888,
+          410.0
+        ],
+        "transparent_surfaces": 13
+      },
+      {
+        "collision_contacts": [
+          {
+            "angle": 0.392699081698724,
+            "height": 5.0,
+            "hit": [
+              -1117.33227539063,
+              29.3579998016357,
+              -1978.89501953125
+            ]
+          },
+          {
+            "angle": 1.17809724509617,
+            "height": 5.0,
+            "hit": [
+              -1118.89489746094,
+              29.3579998016357,
+              -1977.33203125
+            ]
+          },
+          {
+            "angle": 1.96349540849362,
+            "height": 5.0,
+            "hit": [
+              -1121.10510253906,
+              29.3579998016357,
+              -1977.33203125
+            ]
+          },
+          {
+            "angle": 2.74889357189107,
+            "height": 5.0,
+            "hit": [
+              -1122.66796875,
+              29.3579998016357,
+              -1978.89489746094
+            ]
+          },
+          {
+            "angle": 3.53429173528852,
+            "height": 5.0,
+            "hit": [
+              -1122.66784667969,
+              29.3579998016357,
+              -1981.10498046875
+            ]
+          },
+          {
+            "angle": 4.31968989868597,
+            "height": 5.0,
+            "hit": [
+              -1121.10510253906,
+              29.3579998016357,
+              -1982.66796875
+            ]
+          },
+          {
+            "angle": 5.10508806208341,
+            "height": 5.0,
+            "hit": [
+              -1118.89489746094,
+              29.3579998016357,
+              -1982.66796875
+            ]
+          },
+          {
+            "angle": 5.89048622548086,
+            "height": 5.0,
+            "hit": [
+              -1117.33215332031,
+              29.3579998016357,
+              -1981.10510253906
+            ]
+          },
+          {
+            "angle": 0.392699081698724,
+            "height": 12.0,
+            "hit": [
+              -1117.88061523438,
+              36.3580017089844,
+              -1979.1220703125
+            ]
+          },
+          {
+            "angle": 1.17809724509617,
+            "height": 12.0,
+            "hit": [
+              -1119.12255859375,
+              36.3580017089844,
+              -1977.88146972656
+            ]
+          },
+          {
+            "angle": 1.96349540849362,
+            "height": 12.0,
+            "hit": [
+              -1120.8779296875,
+              36.3580017089844,
+              -1977.88049316406
+            ]
+          },
+          {
+            "angle": 2.74889357189107,
+            "height": 12.0,
+            "hit": [
+              -1122.11950683594,
+              36.3580017089844,
+              -1979.1220703125
+            ]
+          },
+          {
+            "angle": 3.53429173528852,
+            "height": 12.0,
+            "hit": [
+              -1122.11950683594,
+              36.3580017089844,
+              -1980.8779296875
+            ]
+          },
+          {
+            "angle": 4.31968989868597,
+            "height": 12.0,
+            "hit": [
+              -1120.87744140625,
+              36.3580017089844,
+              -1982.11853027344
+            ]
+          },
+          {
+            "angle": 5.10508806208341,
+            "height": 12.0,
+            "hit": [
+              -1119.1220703125,
+              36.3580017089844,
+              -1982.11950683594
+            ]
+          },
+          {
+            "angle": 5.89048622548086,
+            "height": 12.0,
+            "hit": [
+              -1117.88061523438,
+              36.3580017089844,
+              -1980.8779296875
+            ]
+          }
+        ],
+        "instance": "lighthouse_57220",
+        "materials": [
+          {
+            "alpha": 1.0,
+            "material": "Weathered sandstone edges",
+            "node": "Opaque_Weathered sandstone edges",
+            "transparency_enum": 0
+          },
+          {
+            "alpha": 1.0,
+            "material": "Limestone 1",
+            "node": "Opaque_Limestone 1",
+            "transparency_enum": 0
+          },
+          {
+            "alpha": 1.0,
+            "material": "Limestone 0",
+            "node": "Opaque_Limestone 0",
+            "transparency_enum": 0
+          },
+          {
+            "alpha": 1.0,
+            "material": "Oak door boards",
+            "node": "Opaque_Oak door boards",
+            "transparency_enum": 0
+          },
+          {
+            "alpha": 1.0,
+            "material": "Dark forged bronze",
+            "node": "Opaque_Dark forged bronze",
+            "transparency_enum": 0
+          },
+          {
+            "alpha": 1.0,
+            "material": "Limestone 2",
+            "node": "Opaque_Limestone 2",
+            "transparency_enum": 0
+          },
+          {
+            "alpha": 1.0,
+            "material": "Limestone 3",
+            "node": "Opaque_Limestone 3",
+            "transparency_enum": 0
+          },
+          {
+            "alpha": 1.0,
+            "material": "Unlit window recess",
+            "node": "Opaque_Unlit window recess",
+            "transparency_enum": 0
+          },
+          {
+            "alpha": 0.270000010728836,
+            "material": "Clear slightly amber lantern glass",
+            "node": "Lantern glazed panel 0",
+            "transparency_enum": 4
+          },
+          {
+            "alpha": 0.270000010728836,
+            "material": "Clear slightly amber lantern glass",
+            "node": "Lantern glazed panel 1",
+            "transparency_enum": 4
+          },
+          {
+            "alpha": 0.270000010728836,
+            "material": "Clear slightly amber lantern glass",
+            "node": "Lantern glazed panel 2",
+            "transparency_enum": 4
+          },
+          {
+            "alpha": 0.270000010728836,
+            "material": "Clear slightly amber lantern glass",
+            "node": "Lantern glazed panel 3",
+            "transparency_enum": 4
+          },
+          {
+            "alpha": 0.270000010728836,
+            "material": "Clear slightly amber lantern glass",
+            "node": "Lantern glazed panel 4",
+            "transparency_enum": 4
+          },
+          {
+            "alpha": 0.270000010728836,
+            "material": "Clear slightly amber lantern glass",
+            "node": "Lantern glazed panel 5",
+            "transparency_enum": 4
+          },
+          {
+            "alpha": 0.270000010728836,
+            "material": "Clear slightly amber lantern glass",
+            "node": "Lantern glazed panel 6",
+            "transparency_enum": 4
+          },
+          {
+            "alpha": 0.270000010728836,
+            "material": "Clear slightly amber lantern glass",
+            "node": "Lantern glazed panel 7",
+            "transparency_enum": 4
+          },
+          {
+            "alpha": 1.0,
+            "material": "Lamp core",
+            "node": "Opaque_Lamp core",
+            "transparency_enum": 0
+          },
+          {
+            "alpha": 0.100000001490116,
+            "material": "Clear optical lens glass",
+            "node": "Fresnel lens tier 00",
+            "transparency_enum": 4
+          },
+          {
+            "alpha": 0.100000001490116,
+            "material": "Clear optical lens glass",
+            "node": "Fresnel lens tier 01",
+            "transparency_enum": 4
+          },
+          {
+            "alpha": 0.100000001490116,
+            "material": "Clear optical lens glass",
+            "node": "Fresnel lens tier 02",
+            "transparency_enum": 4
+          },
+          {
+            "alpha": 0.100000001490116,
+            "material": "Clear optical lens glass",
+            "node": "Fresnel lens tier 03",
+            "transparency_enum": 4
+          },
+          {
+            "alpha": 0.100000001490116,
+            "material": "Clear optical lens glass",
+            "node": "Fresnel lens tier 04",
+            "transparency_enum": 4
+          },
+          {
+            "alpha": 1.0,
+            "material": "Oxidised terracotta roof",
+            "node": "Opaque_Oxidised terracotta roof",
+            "transparency_enum": 0
+          },
+          {
+            "alpha": 1.0,
+            "material": "Deep weathered gallery corbel stone",
+            "node": "Opaque_Deep weathered gallery corbel stone",
+            "transparency_enum": 0
+          }
+        ],
+        "mesh_nodes": 24,
+        "position": [
+          -1120.0,
+          24.3579998016357,
+          -1980.0
+        ],
+        "transparent_surfaces": 13
+      }
+    ],
+    "mode": "check",
+    "model_sha256": "79b5fd32ec06a3c3cf0fc948e31333c9d374fb018437f2fa630293e266382eb1",
+    "passed": true,
+    "run_id": "19h-native-lighthouse-final-20260908T082434Z-482422f7fede4b64b58f197a71159771",
+    "scope": "Reopened native prefab/material ownership, whole-model derived mesh/collision identity and 32 local wall contact rays on two unchanged placements. Not complete flight or visual acceptance.",
+    "world_sha256": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8"
+  },
+  "game_check_count": 36,
+  "game_provenance": {
+    "engine": "4.5.1-stable (official)",
+    "packaged": false,
+    "run_id": "19h-native-lighthouse-final-20260908T082434Z-482422f7fede4b64b58f197a71159771",
+    "sha256": {
+      "res://assets/cliff_kit.json": "3f0601c2e382dba987ed2b5ffbbb0bae8e854761057a04a22757a55455cee663",
+      "res://assets/mountain_kit.json": "8b5b6fbe3f86a6b849d9fd6a2b87bf0fefe6dd1323f91f35cae97ba300196940",
+      "res://assets/road_kit.json": "1f0047e0203113b801558edd7413b2df362f412083754b099648f49bd8728a3a",
+      "res://scenes/prefabs/Airship.tscn": "e66caa9dc604786bfd03f25b27835fd454ec26942ec72b73e3bbfe599e032329",
+      "res://scenes/world/World.tscn": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+      "res://scripts/game.gd": "aa292916e6878fd46fb4a2ff12dd54611dca402e66ffa4042a864a853aa67467",
+      "res://scripts/hud.gd": "f9992f6569cd9ee0731542afa1db645d260e1e1cf01bf85a250f656324de7654",
+      "res://scripts/world_math.gd": "a7553c54d06d4e63b4fbe221b04b0f158e36f25b000b483f4555944fdd14b297"
+    },
+    "utc": "2026-09-08T08:27:31"
+  },
+  "candidate_harbor_image_comparisons": {
+    "front": {
+      "different_pixels": 1148,
+      "max_channel_delta": 47,
+      "bbox": [
+        771,
+        248,
+        1636,
+        868
+      ],
+      "byte_equal": false
+    },
+    "back": {
+      "different_pixels": 727,
+      "max_channel_delta": 33,
+      "bbox": [
+        161,
+        18,
+        1082,
+        730
+      ],
+      "byte_equal": false
+    },
+    "gallery": {
+      "different_pixels": 880,
+      "max_channel_delta": 51,
+      "bbox": [
+        674,
+        356,
+        1488,
+        940
+      ],
+      "byte_equal": false
+    },
+    "context": {
+      "different_pixels": 351,
+      "max_channel_delta": 64,
+      "bbox": [
+        810,
+        0,
+        1107,
+        601
+      ],
+      "byte_equal": false
+    },
+    "door": {
+      "different_pixels": 507,
+      "max_channel_delta": 33,
+      "bbox": [
+        8,
+        0,
+        1115,
+        665
+      ],
+      "byte_equal": false
+    }
+  },
+  "selected_preserved_current_sha256": {
+    "scenes/world/World.tscn": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+    "assets/scatter/Grounded_rock_0_-1.res": "bb1b91de0e9e389d1d6d2295059ad14d4fa3bbb21e0b2307751facc683309e1a",
+    "materials/terrain.tres": "ce8b942348284cfa848761f1ec11833bc0f8757c8dc801c71d45f66d67084770",
+    "scripts/terrain_native.gdshader": "f98fc817bb6c217870144daff7d53a0ecb1da96e29e6b2315a24301aea858384"
+  },
+  "visual_decision": "Retain native shared lighthouse architecture. Remote first riser and site transitions remain unfinished; no walkability, night/island/weather or 20-reference completion claim."
+}

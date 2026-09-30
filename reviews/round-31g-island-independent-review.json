@@ -1,0 +1,127 @@
+{
+  "round": "31g",
+  "run_id": "lantern-island-31g-20260908T212230Z-081a9564b1f84eafb0afb166713c6b17",
+  "visual_verdict": "retain_actual_cross_seam_retopology_but_reject_monolithic_green_rear_slope_correct_materials_then_assess_authored_short_shoulders",
+  "candidate_retained_for_iteration": true,
+  "visual_complete": false,
+  "full_reference_accepted": false,
+  "all_reference_goal_complete": false,
+  "reference": {
+    "path": "ref\\1342.png",
+    "sha256": "7acc98104013d9122eb551846b2d7fc1f7549bce8b2e3199eae8f5385a3ea238",
+    "directly_viewed": true
+  },
+  "comparison_images": [
+    {
+      "path": "captures\\validation_runs\\lantern-island-31f-20260908T204147Z-c8f8aed2cd5f43a7be28d18f0f9ba891\\images\\day-d-back.png",
+      "sha256": "8c42e894ff6cf092e23f2bb7c1ab8b9322d987247d40be17678e0d5128a521f8",
+      "directly_viewed": true
+    }
+  ],
+  "images": [
+    {
+      "view": "night-reference",
+      "path": "captures\\validation_runs\\lantern-island-31g-20260908T212230Z-081a9564b1f84eafb0afb166713c6b17\\images\\night-reference.png",
+      "sha256": "723c76f23414ab1ec4c3c0f179c3b418ee08b1cd0689262d37498835f36199ab",
+      "directly_viewed": true,
+      "judgment": "中央岛比例与守塔屋在右保持。新后坡在全景左侧形成较连续暗绿区，前侧岩面仍密集，夜图不能用暗色遮蔽替代近图形体判断。"
+    },
+    {
+      "view": "day-reference",
+      "path": "captures\\validation_runs\\lantern-island-31g-20260908T212230Z-081a9564b1f84eafb0afb166713c6b17\\images\\day-reference.png",
+      "sha256": "9102ae71dda7bb466529a0802c8816ffce02f35dc5c7ed88c92efa05f46accc3",
+      "directly_viewed": true,
+      "judgment": "新后坡的草绿色大片在中央岛左侧已能辨认，岛体内部原来的岩坡层次变少。建筑尺度与全景构图维持，但新增绿色罩坡不符合参考中以短宽岩体为主的岛身。"
+    },
+    {
+      "view": "day-d-front",
+      "path": "captures\\validation_runs\\lantern-island-31g-20260908T212230Z-081a9564b1f84eafb0afb166713c6b17\\images\\day-d-front.png",
+      "sha256": "660f9ed93116b8026fe3c0a22972c90d913435f00af702e0cfed87ca321d6945",
+      "directly_viewed": true,
+      "judgment": "主要正面维持31f：上部大灰坡、两块相对孤立的凸石、局部直暗接缝仍在。背部真实重拓扑没有解决正面，不能连带提高这一面验收状态。"
+    },
+    {
+      "view": "day-d-back",
+      "path": "captures\\validation_runs\\lantern-island-31g-20260908T212230Z-081a9564b1f84eafb0afb166713c6b17\\images\\day-d-back.png",
+      "sha256": "ae410d322c0e0ab839fec8a66ac72df2d44c9c992b61c33bda69c0982151442b",
+      "directly_viewed": true,
+      "judgment": "对照31f有明确改变：塔脚向海口的中央亮窄条和长暗缝已不再连续出现，旧槽不再主导背面。但新区域读成从塔脚铺向海边的一大片绿色罩坡，缺少短宽错高的岩肩转折，仍有大板面感；低根轮廓更内收，几块保留旧岩的视觉分离感增大。没有30h那种密集细折扇。绿色覆盖与材质错误有关，不能据此断言换回岩色后形体必然合格。"
+    },
+    {
+      "view": "day-c-front",
+      "path": "captures\\validation_runs\\lantern-island-31g-20260908T212230Z-081a9564b1f84eafb0afb166713c6b17\\images\\day-c-front.png",
+      "sha256": "4f0d3c4650fcd070070a46acd6a4ac8847ae0c10bc5526a1ac044965eac780a6",
+      "directly_viewed": true,
+      "judgment": "旧前肩仍像附在主坡上的两个独立凸石，邻接大斜板和尖暗缝保持。新后坡只在边缘有限露出，本图不支持宣称正面已达到参考。"
+    }
+  ],
+  "retained_changes": [
+    "Central narrow strip and long rear seam visible in31f no longer dominate31g back.",
+    "Cross-seam continuous main shell replaces the former filler-like strip."
+  ],
+  "remaining": [
+    "large continuous green rear slab or draped-slope reading",
+    "insufficient visible short staggered shoulder breaks",
+    "low root inset and increased visual separation from several old rocks",
+    "unchanged front isolated boulders and broad planes"
+  ],
+  "material_defect": {
+    "actual_native_last84_replacement_face_material_indices": [
+      0
+    ],
+    "builder_source": {
+      "path": "captures\\lantern_island_study_31g\\builder.py",
+      "sha256": "ecdfff15242650c612b33acd63e92553debadf326003e8f4b57afb8775c9e256"
+    },
+    "actual_native_geometry": {
+      "path": "captures\\lantern_island_study_31g\\geometry-evidence.json",
+      "sha256": "7a71cefbf4da08b4b52ccd5e7b9d976cadd129c5022b209cf8f3954bd55daaea"
+    },
+    "image_confirmation": "Entire replacement rear slope reads green in day-d-back and day-reference.",
+    "material_fix_is_not_geometry_acceptance": true
+  },
+  "next_actions": [
+    "保留真实删除旧纵向内部边链并跨缝重接的方向，不恢复31f中央窄条。",
+    "先纠正84新面全部material_index=0的问题：根据实际面位置和坡面结构恢复岩体、湿岩根和有限草顶的材质分配。当前绿罩坡不能作为稳定形体评价底稿，但纠正颜色也不等于形体完成。",
+    "在恢复正确材质后，继续检查并组织中层短宽凸肩与下层钝根：使中层一侧抬出短的斜向承重面，另一侧在不同高度转折，折线在局部宽度内结束。不要只是把整个大绿板改灰，也不要再沿塔脚到海口做贯通窄槽。",
+    "低根与保留旧岩的可见关系需按实际镜头和局部截面复核。本图低根内收后旧岩更独立；若需要更宽承接，优先改主壳局部端部与肩根，不能统一把17岩外移或用相交面积冒充可见融合。",
+    "前部两孤立凸石及其后方大灰坡保留为独立待改项，不以背槽去除替代正面完成。"
+  ],
+  "geometry": {
+    "report": {
+      "path": "reviews\\round-31g-independent-geometry.json",
+      "sha256": "1e942e50840162d4c4273671429945e902e36e6f64b5517a22fcc966ea0eebb3"
+    },
+    "passed": true,
+    "actual_triangles": 2220,
+    "actual_vertices": 1112,
+    "removed_cut_faces": 448,
+    "removed_old_internal_edges": 637,
+    "boundary_edges_retained": 70,
+    "new_replacement_triangles": 84,
+    "changed_or_new_triangles_vs31f": 324,
+    "actual_local_AABB_pairs": 3322,
+    "illegal_intersections_found_at_stated_tolerance": 0,
+    "actual14trunk_footprints_continuously_supported": true
+  },
+  "root_runtime_report_read": {
+    "report": {
+      "path": "reviews\\round-31g-runtime-incremental.json",
+      "sha256": "679c0deb0bea7f93c814f95182c96b03ea6bd004e5d60fead857391967f1d300"
+    },
+    "passed": true,
+    "bindings": 201,
+    "placements_per_view": 59,
+    "maximum_position_delta_m": 0.0002288818359996725,
+    "maximum_footing_delta_m": 0.0001068115234379996
+  },
+  "limits": [
+    "Allfive original31g PNGs directly viewed; no Blender/GPU or geometry suite rerun during this visual review.",
+    "Native topology validity does not imply art acceptance.",
+    "Green material defect is directly corroborated by84 actual material indices; flat appearance cannot be attributed solely to material without a corrected same-geometry view.",
+    "Visual separation from old rocks is not a measured whole-contact loss or floating-object assertion.",
+    "Actual flat trunk base continuous support does not prove everywhere flat-bottom contact.",
+    "Historical dense-fan rejected candidate was30h; upcoming31h is a separate31g material revision.",
+    "No fullwalking or20reference goal completion."
+  ]
+}

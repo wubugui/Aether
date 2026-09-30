@@ -1,0 +1,15 @@
+# 24j independent increment review
+
+**Paving increment passes the bounded review. Graded headland is blocked before asset save.**
+
+Comparing complete 24i and 24j solid dictionaries in order proves that **1,519 of 1,521 solids are unchanged**. Only bay solids 289 and 348 change `vertices_xz`, `boundary_edges`, `cap_triangles`, and `area_m2`; their heights, bottoms, material, identity, and kinds are unchanged. Their cap boundary vertices now all have degree two. Group metadata changes only in `grading_bands`, regenerated from the cleaned foundation caps; this terrain-input update is outside the unchanged-solid claim.
+
+Both actual saved BLEND hashes and both actual exported GLB hashes match `round-24j-village-paving-native-check.json`, whose reopened native gate passes with 808 foreground and 713 bay objects. The bundled `paving-design.json` exactly hashes to the current 24j design. Independently decoding the actual bay GLB and welding exported duplicate positions for local edge counting shows **two incident triangles per vertical edge within 9 mm of the old pinch**. The former four-face foundation and paver edges are no longer present as four-face edges. This reviewer did not rerun Blender or GPU.
+
+The exact cap geometry delta is disjoint from every previously audited center/±0.6 m route; minimum separation is **0.065117 m**. It is also disjoint from every entry apron, minimum separation **2.322851 m**. Consequently the 24i 27-profile and 27-entry-point findings remain applicable without repeating the entire profile run. This does not establish full-width walking or visual acceptance.
+
+The actual cap-derived area changes differ slightly from repair metadata. Foundation adds **0.0000654444 m²**, paver adds **0.0000309444 m²**, and each removes **0.0000054444 m²**. Final cap reconstruction includes thin changes along existing contour segments: foundation delta bounds XZ [-2219.139, -1859.013, -2219.101, -1858.143]. Thus the result should not be described as geometrically confined to only a 4 mm diamond. The change remains limited to the two identified solids and does not intersect the audited routes or entrance aprons.
+
+**Headland blocker:** actual `captures/village_grading_study_24j/build-report.json` has `passed=false`. Its core `Mainland headland continuous bedrock and grass terraces` reports `zero area`; all 11 rock-shoulder rows have no listed issues. At review time the directory contains report/design/builder only, with no saved BLEND or exported GLB. The builder asserts the failed condition before save, so original shoreline, house-foundation protection, and full paving-cap terrain clearance cannot yet be independently accepted against actual output. The failure was reported promptly and no GPU review was started.
+
+See the adjacent JSON for asset SHA-256 identities, exact changed keys, geometric deltas, and local GLB edge evidence. `audit_24j_incremental.py` is the reproducible independent read-only audit. No production or generated assets were modified by this reviewer.

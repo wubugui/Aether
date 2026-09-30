@@ -1,0 +1,46 @@
+{
+  "reference": "ref/1342.png",
+  "reference_sha256": "7acc98104013d9122eb551846b2d7fc1f7549bce8b2e3199eae8f5385a3ea238",
+  "status": "in_progress_not_accepted",
+  "scope": "Only foreground A32b candidate in full continuous world. All20 references plus original opening remain incomplete; production unchanged.",
+  "camera": {
+    "fov": 70.0,
+    "position": [
+      -2278.0,
+      60.0,
+      -1632.0
+    ],
+    "rotation": [
+      -0.00509163970127702,
+      0.60683274269104,
+      0.0
+    ]
+  },
+  "world_sha256": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+  "run_id": "foreground-island-32b-20260908T221322Z-f2197374e6824751bce30284dabdfb95",
+  "run_terminal_status": "failed",
+  "engine_stages_passed": true,
+  "reference_image": {
+    "name": "night-reference",
+    "path": "captures\\validation_runs\\foreground-island-32b-20260908T221322Z-f2197374e6824751bce30284dabdfb95\\images\\night-reference.png",
+    "png_sha256": "d3c4dd54fd38c0f8bc60a37b69fb58b23bfef642e9d728ca3a288434a09cc4fa",
+    "sidecar_sha256": "ce789dc93b213c03829fcd651bedf5341e44177e4494b101121144dbdde56814",
+    "root_directly_viewed": true,
+    "camera": {
+      "fov": 70.0,
+      "position": [
+        -2278.0,
+        60.0,
+        -1632.0
+      ],
+      "rotation": [
+        -0.00509163970127702,
+        0.60683274269104,
+        0.0
+      ]
+    }
+  },
+  "root_evidence": "reviews/round-32b-root-evidence.json",
+  "independent_review": "reviews/round-32b-foreground-independent-review.md",
+  "next_design": "reviews/round-32c-foreground-design-brief.md"
+}

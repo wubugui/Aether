@@ -1,0 +1,23 @@
+{
+  "round": "28a",
+  "reviewer": "independent_cloud_water_27_final_review",
+  "run_id": "lantern-lighting-28a-20260908T155358Z-3417ba65aa8a47ad8c3d4faa1969df63",
+  "run_terminal_passed_reported": true,
+  "reference_directly_viewed": "ref/1342.png",
+  "directly_viewed_images": ["night-reference.png", "night-beam-side.png", "night-lamp-close.png", "night-reverse.png", "day-reference.png"],
+  "static_sources_read": ["captures/lantern_lighting_28a.gd", "captures/lantern_volume_28a.gdshader", "reviews/round-28a-lantern-native-check.json"],
+  "implementation_observed": ["32 step volume integration", "Camera scene depth clipping", "33x33 static collision depth samples per light excluding its own tower", "Fixed world beam directions", "Receiver SpotLight3D and OmniLight3D", "New optics disabled in daylight"],
+  "native_check_reported_pass": true,
+  "local_improvements": ["Warmer brighter lamp core and amber glazing", "Optical rings and lamp housing readable in close view"],
+  "visual_blockers": ["Spatial beams insufficiently readable in reference and side saved views", "Warm light remains concentrated within small lamp rooms instead of establishing the reference's warm focal hierarchy", "Cloud/water and overall environment fidelity remain below reference"],
+  "moon_visible_in_reference_png": true,
+  "beam_absence_claimed": false,
+  "limited_original_png_verification": "reviews/round-28a-independent-beam-observation.json",
+  "beam_failure_cause_established": false,
+  "unproven_or_out_of_scope": ["Rotating beams", "Warm local water reflections", "Full weather", "Thin-object or dynamic occlusion accuracy", "All-angle volume rendering correctness"],
+  "visual_acceptance": false,
+  "verdict": "reject",
+  "production_installed": false,
+  "full_goal_status": "active",
+  "scope": "Environment only; characters excluded. Direct saved PNG review plus bounded original-PNG crop verification and source reading. No engine/GPU restart or geometry/road revalidation."
+}

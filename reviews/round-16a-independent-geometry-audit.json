@@ -1,0 +1,864 @@
+{
+  "scope": "Independent actual source GLB versus 16a GLB; no Blender or Godot launched, no production writes. Visual acceptance pending screenshots.",
+  "assets": {
+    "cliff_crown": {
+      "source_glb_sha256": "7e9e0ba27d8c2c62f05ad0a9e42bd12de37f7139e3fd1269fae9bf66ff34308c",
+      "candidate_glb_sha256": "e5e7282dbafe00111962c6e6d3c6e0e04c40c487740aea9bc098bbd5a5fb140e",
+      "source_geometry": {
+        "welded_exact_positions": 284,
+        "triangles": 564,
+        "edges": 846,
+        "euler": 2,
+        "edge_incidence_not_2": 0,
+        "paired_edge_same_orientation": 0,
+        "degenerate_area_lt_1e_8": 0,
+        "min_triangle_area_m2": 1.5838463206055167,
+        "signed_volume_m3": 513833.25016414345
+      },
+      "candidate_geometry": {
+        "welded_exact_positions": 284,
+        "triangles": 564,
+        "edges": 846,
+        "euler": 2,
+        "edge_incidence_not_2": 0,
+        "paired_edge_same_orientation": 0,
+        "degenerate_area_lt_1e_8": 0,
+        "min_triangle_area_m2": 1.5838463206055167,
+        "signed_volume_m3": 517680.39084394515
+      },
+      "entire_rim_exact_equal": true,
+      "entire_floor_exact_equal": true,
+      "rim_count": 110,
+      "floor_count": 142,
+      "all_positions_accounted_for_by_controls": true,
+      "triangle_connectivity_same_after_control_mapping": true,
+      "moved_controls": [
+        {
+          "native_control_index": 8,
+          "source_match_m": 0.0,
+          "candidate_match_m": 0.0,
+          "actual_displacement_m": 4.859678123090606,
+          "glb_before_xyz": [
+            -35.720863342285156,
+            62.04573059082031,
+            12.88064956665039
+          ],
+          "glb_after_xyz": [
+            -39.44704055786133,
+            61.19011688232422,
+            15.88064956665039
+          ]
+        },
+        {
+          "native_control_index": 9,
+          "source_match_m": 0.0,
+          "candidate_match_m": 0.0,
+          "actual_displacement_m": 12.67916513401061,
+          "glb_before_xyz": [
+            -30.969303131103516,
+            68.97100067138672,
+            22.397216796875
+          ],
+          "glb_after_xyz": [
+            -38.70488357543945,
+            64.5075912475586,
+            31.397216796875
+          ]
+        },
+        {
+          "native_control_index": 10,
+          "source_match_m": 0.0,
+          "candidate_match_m": 0.0,
+          "actual_displacement_m": 14.429718214016841,
+          "glb_before_xyz": [
+            -16.216135025024414,
+            64.28333282470703,
+            9.20720386505127
+          ],
+          "glb_after_xyz": [
+            -24.19675064086914,
+            65.00894927978516,
+            21.207204818725586
+          ]
+        },
+        {
+          "native_control_index": 11,
+          "source_match_m": 0.0,
+          "candidate_match_m": 0.0,
+          "actual_displacement_m": 10.336819541970307,
+          "glb_before_xyz": [
+            -6.17156457901001,
+            64.9032974243164,
+            8.450790405273438
+          ],
+          "glb_after_xyz": [
+            -10.539819717407227,
+            57.70828628540039,
+            14.450790405273438
+          ]
+        },
+        {
+          "native_control_index": 12,
+          "source_match_m": 0.0,
+          "candidate_match_m": 0.0,
+          "actual_displacement_m": 9.903373505603794,
+          "glb_before_xyz": [
+            6.711328506469727,
+            65.33695220947266,
+            -2.053335428237915
+          ],
+          "glb_after_xyz": [
+            2.5936200618743896,
+            61.19916534423828,
+            5.946664810180664
+          ]
+        },
+        {
+          "native_control_index": 13,
+          "source_match_m": 0.0,
+          "candidate_match_m": 0.0,
+          "actual_displacement_m": 5.443416883007814,
+          "glb_before_xyz": [
+            17.127458572387695,
+            64.71310424804688,
+            -7.472029685974121
+          ],
+          "glb_after_xyz": [
+            15.757487297058105,
+            61.284698486328125,
+            -3.472029685974121
+          ]
+        },
+        {
+          "native_control_index": 14,
+          "source_match_m": 0.0,
+          "candidate_match_m": 0.0,
+          "actual_displacement_m": 4.143501902623856,
+          "glb_before_xyz": [
+            24.861034393310547,
+            58.90077209472656,
+            -4.068913459777832
+          ],
+          "glb_after_xyz": [
+            23.37997055053711,
+            56.45637893676758,
+            -1.068913459777832
+          ]
+        },
+        {
+          "native_control_index": 17,
+          "source_match_m": 0.0,
+          "candidate_match_m": 0.0,
+          "actual_displacement_m": 4.242964953355438,
+          "glb_before_xyz": [
+            -22.56121063232422,
+            76.0,
+            12.397216796875
+          ],
+          "glb_after_xyz": [
+            -21.995824813842773,
+            72.30093383789062,
+            10.397216796875
+          ]
+        },
+        {
+          "native_control_index": 18,
+          "source_match_m": 0.0,
+          "candidate_match_m": 0.0,
+          "actual_displacement_m": 4.206951178816846,
+          "glb_before_xyz": [
+            -4.827633380889893,
+            78.0,
+            -3.7927961349487305
+          ],
+          "glb_after_xyz": [
+            -4.300602436065674,
+            75.09815979003906,
+            -6.7927961349487305
+          ]
+        },
+        {
+          "native_control_index": 20,
+          "source_match_m": 0.0,
+          "candidate_match_m": 0.0,
+          "actual_displacement_m": 5.0083020509999825,
+          "glb_before_xyz": [
+            14.543806076049805,
+            81.0,
+            -10.053335189819336
+          ],
+          "glb_after_xyz": [
+            16.46320343017578,
+            76.82878875732422,
+            -12.053335189819336
+          ]
+        },
+        {
+          "native_control_index": 21,
+          "source_match_m": 0.0,
+          "candidate_match_m": 0.0,
+          "actual_displacement_m": 6.6120879673580975,
+          "glb_before_xyz": [
+            24.39439582824707,
+            78.0,
+            -15.472029685974121
+          ],
+          "glb_after_xyz": [
+            26.725221633911133,
+            72.5882568359375,
+            -18.472028732299805
+          ]
+        }
+      ],
+      "normal_dot_negative_faces": [],
+      "max_face_normal_rotation_degrees": 45.42838842510252,
+      "source_intersections": {
+        "nonadjacent_triangle_crossings": [],
+        "nonadjacent_coplanar_overlap_projected_m2": [],
+        "include_shared_vertex_pairs": true,
+        "scope": "AABB broad phase and segment/triangle crossings, plus coplanar area. Field names retained for schema stability; include_shared_vertex_pairs states pair coverage. Not an exact arithmetic proof against self-intersection, and not inter-asset intersection."
+      },
+      "candidate_intersections": {
+        "nonadjacent_triangle_crossings": [],
+        "nonadjacent_coplanar_overlap_projected_m2": [],
+        "include_shared_vertex_pairs": true,
+        "scope": "AABB broad phase and segment/triangle crossings, plus coplanar area. Field names retained for schema stability; include_shared_vertex_pairs states pair coverage. Not an exact arithmetic proof against self-intersection, and not inter-asset intersection."
+      },
+      "new_nonadjacent_crossings": [],
+      "new_grass_strip_triangles": [
+        {
+          "face": 14,
+          "strip": 0,
+          "native_vertices": [
+            8,
+            9,
+            16
+          ],
+          "normal_y": 0.8037839270348306,
+          "slope_degrees_from_horizontal": 36.507024680959,
+          "old_slope_degrees": 47.02876402456007,
+          "area_m2": 82.82531440526508,
+          "linear_vertex_color": [
+            0.3492914140224457,
+            0.3997304141521454,
+            0.14227522909641266
+          ]
+        },
+        {
+          "face": 15,
+          "strip": 0,
+          "native_vertices": [
+            9,
+            17,
+            16
+          ],
+          "normal_y": 0.8197273156928785,
+          "slope_degrees_from_horizontal": 34.94249368223677,
+          "old_slope_degrees": 47.552828201306205,
+          "area_m2": 176.58333999082453,
+          "linear_vertex_color": [
+            0.34987103939056396,
+            0.4003969132900238,
+            0.14250189065933228
+          ]
+        },
+        {
+          "face": 16,
+          "strip": 1,
+          "native_vertices": [
+            9,
+            10,
+            18
+          ],
+          "normal_y": 0.7809534015803439,
+          "slope_degrees_from_horizontal": 38.65204897578256,
+          "old_slope_degrees": 83.26372527426757,
+          "area_m2": 130.28033879245788,
+          "linear_vertex_color": [
+            0.31820210814476013,
+            0.36398541927337646,
+            0.13010388612747192
+          ]
+        },
+        {
+          "face": 17,
+          "strip": 1,
+          "native_vertices": [
+            9,
+            18,
+            17
+          ],
+          "normal_y": 0.5809892830184032,
+          "slope_degrees_from_horizontal": 54.479846342997334,
+          "old_slope_degrees": 73.91602947798825,
+          "area_m2": 72.60954393559533,
+          "linear_vertex_color": [
+            0.29335537552833557,
+            0.33542510867118835,
+            0.12035594135522842
+          ]
+        },
+        {
+          "face": 18,
+          "strip": 2,
+          "native_vertices": [
+            10,
+            11,
+            18
+          ],
+          "normal_y": 0.5336597748067348,
+          "slope_degrees_from_horizontal": 57.74693378039356,
+          "old_slope_degrees": 46.988335260399566,
+          "area_m2": 232.32728798782446,
+          "linear_vertex_color": [
+            0.28481465578079224,
+            0.3256095051765442,
+            0.11700057983398438
+          ]
+        },
+        {
+          "face": 19,
+          "strip": 2,
+          "native_vertices": [
+            11,
+            19,
+            18
+          ],
+          "normal_y": 0.7700062848583943,
+          "slope_degrees_from_horizontal": 39.64554676886547,
+          "old_slope_degrees": 48.02124137926292,
+          "area_m2": 135.00457799839032,
+          "linear_vertex_color": [
+            0.35809412598609924,
+            0.40985307097435,
+            0.14571674168109894
+          ]
+        },
+        {
+          "face": 26,
+          "strip": 6,
+          "native_vertices": [
+            14,
+            15,
+            22
+          ],
+          "normal_y": 0.4489625053864117,
+          "slope_degrees_from_horizontal": 63.32286116279872,
+          "old_slope_degrees": 62.77460368406376,
+          "area_m2": 212.67538842271037,
+          "linear_vertex_color": [
+            0.27477890253067017,
+            0.31407690048217773,
+            0.11305461078882217
+          ]
+        },
+        {
+          "face": 27,
+          "strip": 6,
+          "native_vertices": [
+            15,
+            23,
+            22
+          ],
+          "normal_y": 0.4852104179014097,
+          "slope_degrees_from_horizontal": 60.97374066462912,
+          "old_slope_degrees": 60.97374066462912,
+          "area_m2": 112.93365405732862,
+          "linear_vertex_color": [
+            0.27614688873291016,
+            0.3156488537788391,
+            0.1135927066206932
+          ]
+        }
+      ],
+      "front_to_ridge_cross_section": [
+        {
+          "column": 0,
+          "horizontal_width_xz_m": 13.63380254179493,
+          "rise_m": 3.8098831176757812,
+          "slope_degrees": 15.612697037922416,
+          "prior_horizontal_width_xz_m": 9.096009471870921
+        },
+        {
+          "column": 1,
+          "horizontal_width_xz_m": 26.836405211922308,
+          "rise_m": 7.793342590332031,
+          "slope_degrees": 16.193396622131985,
+          "prior_horizontal_width_xz_m": 13.065068674447474
+        },
+        {
+          "column": 2,
+          "horizontal_width_xz_m": 34.34904317143735,
+          "rise_m": 10.089210510253906,
+          "slope_degrees": 16.368890330156184,
+          "prior_horizontal_width_xz_m": 17.28288082752568
+        },
+        {
+          "column": 3,
+          "horizontal_width_xz_m": 29.316202071210984,
+          "rise_m": 24.29171371459961,
+          "slope_degrees": 39.64550328306942,
+          "prior_horizontal_width_xz_m": 21.8960355713375
+        },
+        {
+          "column": 4,
+          "horizontal_width_xz_m": 22.723673620483606,
+          "rise_m": 15.629623413085938,
+          "slope_degrees": 34.52067373725885,
+          "prior_horizontal_width_xz_m": 11.195878753509161
+        },
+        {
+          "column": 5,
+          "horizontal_width_xz_m": 18.582011943639372,
+          "rise_m": 11.303558349609375,
+          "slope_degrees": 31.312420424652867,
+          "prior_horizontal_width_xz_m": 10.807792424015044
+        },
+        {
+          "column": 6,
+          "horizontal_width_xz_m": 16.921956263546424,
+          "rise_m": 9.543621063232422,
+          "slope_degrees": 29.42206768665773,
+          "prior_horizontal_width_xz_m": 13.577349836966114
+        },
+        {
+          "column": 7,
+          "horizontal_width_xz_m": 8.605627385109443,
+          "rise_m": 5.3194580078125,
+          "slope_degrees": 31.72175134598074,
+          "prior_horizontal_width_xz_m": 8.605627385109443
+        }
+      ]
+    },
+    "cliff_front_columns": {
+      "source_glb_sha256": "bbec473e81cc3ee826d85f1af4433c7b43d038fe75cdf825f287f6b4c0597dbe",
+      "candidate_glb_sha256": "d715848077b118660b9864bad144b089ce70158aa058803d44534dbb77afca75",
+      "source_geometry": {
+        "welded_exact_positions": 176,
+        "triangles": 348,
+        "edges": 522,
+        "euler": 2,
+        "edge_incidence_not_2": 0,
+        "paired_edge_same_orientation": 0,
+        "degenerate_area_lt_1e_8": 0,
+        "min_triangle_area_m2": 1.8519024278671168,
+        "signed_volume_m3": 186615.70274684424
+      },
+      "candidate_geometry": {
+        "welded_exact_positions": 176,
+        "triangles": 348,
+        "edges": 522,
+        "euler": 2,
+        "edge_incidence_not_2": 0,
+        "paired_edge_same_orientation": 0,
+        "degenerate_area_lt_1e_8": 0,
+        "min_triangle_area_m2": 1.8519024278671168,
+        "signed_volume_m3": 185031.1891789975
+      },
+      "entire_rim_exact_equal": true,
+      "entire_floor_exact_equal": true,
+      "rim_count": 72,
+      "floor_count": 88,
+      "all_positions_accounted_for_by_controls": true,
+      "triangle_connectivity_same_after_control_mapping": true,
+      "moved_controls": [
+        {
+          "native_control_index": 4,
+          "source_match_m": 0.0,
+          "candidate_match_m": 0.0,
+          "actual_displacement_m": 1.218962800241954,
+          "glb_before_xyz": [
+            -22.564817428588867,
+            36.68685531616211,
+            4.062736511230469
+          ],
+          "glb_after_xyz": [
+            -22.358091354370117,
+            35.48554992675781,
+            4.062736511230469
+          ]
+        },
+        {
+          "native_control_index": 5,
+          "source_match_m": 0.0,
+          "candidate_match_m": 0.0,
+          "actual_displacement_m": 5.725457211873068,
+          "glb_before_xyz": [
+            -5.140570163726807,
+            37.36845779418945,
+            4.388655185699463
+          ],
+          "glb_after_xyz": [
+            -9.991097450256348,
+            36.8652229309082,
+            7.388655185699463
+          ]
+        },
+        {
+          "native_control_index": 6,
+          "source_match_m": 0.0,
+          "candidate_match_m": 0.0,
+          "actual_displacement_m": 7.812227359298867,
+          "glb_before_xyz": [
+            6.198331832885742,
+            37.81035232543945,
+            9.141437530517578
+          ],
+          "glb_after_xyz": [
+            5.526896953582764,
+            30.62842559814453,
+            6.141437530517578
+          ]
+        },
+        {
+          "native_control_index": 7,
+          "source_match_m": 0.0,
+          "candidate_match_m": 0.0,
+          "actual_displacement_m": 2.10092038216754,
+          "glb_before_xyz": [
+            20.484468460083008,
+            36.45779037475586,
+            3.3396453857421875
+          ],
+          "glb_after_xyz": [
+            20.61162567138672,
+            34.360721588134766,
+            3.3396453857421875
+          ]
+        },
+        {
+          "native_control_index": 9,
+          "source_match_m": 0.0,
+          "candidate_match_m": 0.0,
+          "actual_displacement_m": 4.6097691232342175,
+          "glb_before_xyz": [
+            -4.587518215179443,
+            52.0,
+            -0.6756181716918945
+          ],
+          "glb_after_xyz": [
+            -8.271743774414062,
+            50.08259201049805,
+            1.3243818283081055
+          ]
+        },
+        {
+          "native_control_index": 10,
+          "source_match_m": 0.0,
+          "candidate_match_m": 0.0,
+          "actual_displacement_m": 2.1557393522213713,
+          "glb_before_xyz": [
+            8.366182327270508,
+            52.0,
+            0.12164534628391266
+          ],
+          "glb_after_xyz": [
+            7.6121826171875,
+            52.2805290222168,
+            -1.8783546686172485
+          ]
+        },
+        {
+          "native_control_index": 13,
+          "source_match_m": 0.0,
+          "candidate_match_m": 0.0,
+          "actual_displacement_m": 4.14743602407494,
+          "glb_before_xyz": [
+            -4.587518215179443,
+            55.0,
+            -26.67561912536621
+          ],
+          "glb_after_xyz": [
+            -4.382692813873291,
+            51.37242889404297,
+            -24.67561912536621
+          ]
+        },
+        {
+          "native_control_index": 14,
+          "source_match_m": 0.0,
+          "candidate_match_m": 0.0,
+          "actual_displacement_m": 3.3066572269358163,
+          "glb_before_xyz": [
+            8.366182327270508,
+            53.0,
+            -23.878355026245117
+          ],
+          "glb_after_xyz": [
+            11.342455863952637,
+            54.03719711303711,
+            -22.878355026245117
+          ]
+        }
+      ],
+      "normal_dot_negative_faces": [],
+      "max_face_normal_rotation_degrees": 53.27281948516981,
+      "source_intersections": {
+        "nonadjacent_triangle_crossings": [
+          [
+            67,
+            68
+          ],
+          [
+            67,
+            164
+          ]
+        ],
+        "nonadjacent_coplanar_overlap_projected_m2": [],
+        "include_shared_vertex_pairs": true,
+        "scope": "AABB broad phase and segment/triangle crossings, plus coplanar area. Field names retained for schema stability; include_shared_vertex_pairs states pair coverage. Not an exact arithmetic proof against self-intersection, and not inter-asset intersection."
+      },
+      "candidate_intersections": {
+        "nonadjacent_triangle_crossings": [
+          [
+            67,
+            68
+          ],
+          [
+            67,
+            164
+          ]
+        ],
+        "nonadjacent_coplanar_overlap_projected_m2": [],
+        "include_shared_vertex_pairs": true,
+        "scope": "AABB broad phase and segment/triangle crossings, plus coplanar area. Field names retained for schema stability; include_shared_vertex_pairs states pair coverage. Not an exact arithmetic proof against self-intersection, and not inter-asset intersection."
+      },
+      "new_nonadjacent_crossings": []
+    },
+    "cliff_central_wall": {
+      "source_glb_sha256": "39ca18f1c5b4a4f263b29d9fa02d60d94f293c121c0f4fc1bb709b0a7fc29af8",
+      "candidate_glb_sha256": "cd1a64d55c76a0352c5898a76c2b9874e7c0b610ca93a90afafc36fb8e4cbdea",
+      "source_geometry": {
+        "welded_exact_positions": 182,
+        "triangles": 360,
+        "edges": 540,
+        "euler": 2,
+        "edge_incidence_not_2": 0,
+        "paired_edge_same_orientation": 0,
+        "degenerate_area_lt_1e_8": 0,
+        "min_triangle_area_m2": 2.6329887397500897,
+        "signed_volume_m3": 171210.86089112962
+      },
+      "candidate_geometry": {
+        "welded_exact_positions": 182,
+        "triangles": 360,
+        "edges": 540,
+        "euler": 2,
+        "edge_incidence_not_2": 0,
+        "paired_edge_same_orientation": 0,
+        "degenerate_area_lt_1e_8": 0,
+        "min_triangle_area_m2": 2.6329887397500897,
+        "signed_volume_m3": 166541.14955071837
+      },
+      "entire_rim_exact_equal": true,
+      "entire_floor_exact_equal": true,
+      "rim_count": 71,
+      "floor_count": 91,
+      "all_positions_accounted_for_by_controls": true,
+      "triangle_connectivity_same_after_control_mapping": true,
+      "moved_controls": [
+        {
+          "native_control_index": 6,
+          "source_match_m": 0.0,
+          "candidate_match_m": 0.0,
+          "actual_displacement_m": 3.833894985321649,
+          "glb_before_xyz": [
+            -13.18780517578125,
+            34.83209991455078,
+            5.43319845199585
+          ],
+          "glb_after_xyz": [
+            -13.35000228881836,
+            31.565229415893555,
+            3.4331984519958496
+          ]
+        },
+        {
+          "native_control_index": 7,
+          "source_match_m": 0.0,
+          "candidate_match_m": 0.0,
+          "actual_displacement_m": 10.11323021906731,
+          "glb_before_xyz": [
+            -0.24026428163051605,
+            30.111642837524414,
+            3.1736395359039307
+          ],
+          "glb_after_xyz": [
+            -1.0612306594848633,
+            22.85881996154785,
+            -3.8263604640960693
+          ]
+        },
+        {
+          "native_control_index": 8,
+          "source_match_m": 0.0,
+          "candidate_match_m": 0.0,
+          "actual_displacement_m": 4.904849584150512,
+          "glb_before_xyz": [
+            6.468701362609863,
+            29.714616775512695,
+            9.30659294128418
+          ],
+          "glb_after_xyz": [
+            2.7564785480499268,
+            32.220001220703125,
+            11.30659294128418
+          ]
+        },
+        {
+          "native_control_index": 10,
+          "source_match_m": 0.0,
+          "candidate_match_m": 0.0,
+          "actual_displacement_m": 4.387713188671626,
+          "glb_before_xyz": [
+            -22.64472770690918,
+            53.0,
+            0.7797908782958984
+          ],
+          "glb_after_xyz": [
+            -22.07319450378418,
+            48.76616287231445,
+            -0.22020912170410156
+          ]
+        },
+        {
+          "native_control_index": 11,
+          "source_match_m": 0.0,
+          "candidate_match_m": 0.0,
+          "actual_displacement_m": 6.898899681020013,
+          "glb_before_xyz": [
+            -13.18780517578125,
+            55.0,
+            -1.1268017292022705
+          ],
+          "glb_after_xyz": [
+            -11.212409973144531,
+            50.6765022277832,
+            -6.126801490783691
+          ]
+        },
+        {
+          "native_control_index": 12,
+          "source_match_m": 0.0,
+          "candidate_match_m": 0.0,
+          "actual_displacement_m": 14.52091893384944,
+          "glb_before_xyz": [
+            -0.24026428163051605,
+            54.0,
+            -3.236360549926758
+          ],
+          "glb_after_xyz": [
+            -0.06566764414310455,
+            41.88279724121094,
+            -11.236360549926758
+          ]
+        },
+        {
+          "native_control_index": 13,
+          "source_match_m": 0.0,
+          "candidate_match_m": 0.0,
+          "actual_displacement_m": 3.7328458179232737,
+          "glb_before_xyz": [
+            6.468701362609863,
+            49.0,
+            -0.6734070181846619
+          ],
+          "glb_after_xyz": [
+            3.5297634601593018,
+            50.138763427734375,
+            1.3265929222106934
+          ]
+        },
+        {
+          "native_control_index": 15,
+          "source_match_m": 0.0,
+          "candidate_match_m": 0.0,
+          "actual_displacement_m": 3.2902870500288373,
+          "glb_before_xyz": [
+            -19.857030868530273,
+            57.0,
+            -6.390267372131348
+          ],
+          "glb_after_xyz": [
+            -18.528858184814453,
+            57.2488899230957,
+            -9.390267372131348
+          ]
+        },
+        {
+          "native_control_index": 16,
+          "source_match_m": 0.0,
+          "candidate_match_m": 0.0,
+          "actual_displacement_m": 3.02572077716107,
+          "glb_before_xyz": [
+            -8.88710880279541,
+            61.0,
+            -8.126801490783691
+          ],
+          "glb_after_xyz": [
+            -8.892480850219727,
+            61.393646240234375,
+            -11.126801490783691
+          ]
+        },
+        {
+          "native_control_index": 17,
+          "source_match_m": 0.0,
+          "candidate_match_m": 0.0,
+          "actual_displacement_m": 11.990220671978085,
+          "glb_before_xyz": [
+            3.413727283477783,
+            64.0,
+            -10.236360549926758
+          ],
+          "glb_after_xyz": [
+            4.996943473815918,
+            55.21030044555664,
+            -18.236360549926758
+          ]
+        },
+        {
+          "native_control_index": 18,
+          "source_match_m": 0.0,
+          "candidate_match_m": 0.0,
+          "actual_displacement_m": 5.246632742950219,
+          "glb_before_xyz": [
+            10.178084373474121,
+            57.0,
+            -7.673407077789307
+          ],
+          "glb_after_xyz": [
+            11.808843612670898,
+            61.5681266784668,
+            -9.673406600952148
+          ]
+        }
+      ],
+      "normal_dot_negative_faces": [],
+      "max_face_normal_rotation_degrees": 82.11390715016367,
+      "source_intersections": {
+        "nonadjacent_triangle_crossings": [
+          [
+            37,
+            83
+          ]
+        ],
+        "nonadjacent_coplanar_overlap_projected_m2": [],
+        "include_shared_vertex_pairs": true,
+        "scope": "AABB broad phase and segment/triangle crossings, plus coplanar area. Field names retained for schema stability; include_shared_vertex_pairs states pair coverage. Not an exact arithmetic proof against self-intersection, and not inter-asset intersection."
+      },
+      "candidate_intersections": {
+        "nonadjacent_triangle_crossings": [
+          [
+            37,
+            83
+          ]
+        ],
+        "nonadjacent_coplanar_overlap_projected_m2": [],
+        "include_shared_vertex_pairs": true,
+        "scope": "AABB broad phase and segment/triangle crossings, plus coplanar area. Field names retained for schema stability; include_shared_vertex_pairs states pair coverage. Not an exact arithmetic proof against self-intersection, and not inter-asset intersection."
+      },
+      "new_nonadjacent_crossings": []
+    }
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "run_id": "coast-environment-27d-20260908T151758Z-b4454b3270604da4830004650d16e7dc",
+  "run_terminal_passed": true,
+  "manifest_sha256": "ef798d9336fe41d3fbdf2f6a8df77267d43d6f0cfe644fc0e810efdf8bf6cabd",
+  "binding_count": 182,
+  "all_artifact_sha256_verified": true,
+  "views": [
+    {
+      "name": "night-reference",
+      "image": "captures\\validation_runs\\coast-environment-27d-20260908T151758Z-b4454b3270604da4830004650d16e7dc\\images\\night-reference.png",
+      "image_sha256": "f851f2605164e9578cd3ae2c511c78fb96f0eb4e094c9bcb1c49258560377342",
+      "sidecar_sha256": "09e5d1983ce8e5ccf4fc20365cde3861b2f39c455fca3307a04cbacd11304071",
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -2278.0,
+          60.0,
+          -1632.0
+        ],
+        "rotation": [
+          -0.00509163970127702,
+          0.60683274269104,
+          0.0
+        ]
+      },
+      "reported_world_time": 0,
+      "native_sky_asset_count": 8,
+      "root_directly_viewed": true
+    },
+    {
+      "name": "night-reverse",
+      "image": "captures\\validation_runs\\coast-environment-27d-20260908T151758Z-b4454b3270604da4830004650d16e7dc\\images\\night-reverse.png",
+      "image_sha256": "e9aa88299e23903331cc31b2a9a4a51e7cfeada26ff1167dc08abbcf2338478f",
+      "sidecar_sha256": "7f2823b72358a4235659f843d4b386ec232ff71aedf4e8eba857735abb233d3d",
+      "camera": {
+        "fov": 60.0,
+        "position": [
+          -2485.0,
+          80.0,
+          -1810.0
+        ],
+        "rotation": [
+          -0.305406630039215,
+          -2.44073820114136,
+          0.0
+        ]
+      },
+      "reported_world_time": 0,
+      "native_sky_asset_count": 8,
+      "root_directly_viewed": true
+    },
+    {
+      "name": "day-reference",
+      "image": "captures\\validation_runs\\coast-environment-27d-20260908T151758Z-b4454b3270604da4830004650d16e7dc\\images\\day-reference.png",
+      "image_sha256": "7625085f1be739450dda3b6817b83e1b5a1b8fe443cca9ffd36deb5b154d6860",
+      "sidecar_sha256": "414cbabfeb611df3220004c3b27e58b07ab77c9afdc2414cb7f96d98ec9018c1",
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -2278.0,
+          60.0,
+          -1632.0
+        ],
+        "rotation": [
+          -0.00509163970127702,
+          0.60683274269104,
+          0.0
+        ]
+      },
+      "reported_world_time": 0,
+      "native_sky_asset_count": 7,
+      "root_directly_viewed": true
+    },
+    {
+      "name": "night-reference-later",
+      "image": "captures\\validation_runs\\coast-environment-27d-20260908T151758Z-b4454b3270604da4830004650d16e7dc\\images\\night-reference-later.png",
+      "image_sha256": "2d02beb0b6440e1050209a467cc3e1606a248990a8fc3bce383c429d2ace3cc0",
+      "sidecar_sha256": "431d2fddf42c5b7d36a824e28efceed1946cebc63ab1d124b33d5bff9ec47c4d",
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -2278.0,
+          60.0,
+          -1632.0
+        ],
+        "rotation": [
+          -0.00509163970127702,
+          0.60683274269104,
+          0.0
+        ]
+      },
+      "reported_world_time": 18,
+      "native_sky_asset_count": 8,
+      "root_directly_viewed": true
+    },
+    {
+      "name": "day-cloud-back",
+      "image": "captures\\validation_runs\\coast-environment-27d-20260908T151758Z-b4454b3270604da4830004650d16e7dc\\images\\day-cloud-back.png",
+      "image_sha256": "b7ef5298ccc0aa5b6b4f93348f58d000b18f8af39d089f24e3573b2d33bfd28c",
+      "sidecar_sha256": "1519bcd203acd81b7102ec0d1a8d0fd2eab6b919c8ab23e41be64f83b768adea",
+      "camera": {
+        "fov": 65.0,
+        "position": [
+          -4354.3828125,
+          650.0,
+          -4383.2177734375
+        ],
+        "rotation": [
+          0.152586862444878,
+          -2.5269296169281,
+          0.0
+        ]
+      },
+      "reported_world_time": 0,
+      "native_sky_asset_count": 7,
+      "root_directly_viewed": true
+    }
+  ],
+  "time_sample_comparison": {
+    "open_water_patch": {
+      "pixel_rectangle": [
+        1120,
+        760,
+        1220,
+        890
+      ],
+      "changed_pixels": 12998,
+      "total_pixels": 13000,
+      "mean_absolute_channel_difference_255": 77.29538461538462,
+      "max_absolute_channel_difference_255": 236
+    },
+    "upper_sky_control": {
+      "pixel_rectangle": [
+        10,
+        10,
+        600,
+        100
+      ],
+      "changed_pixels": 0,
+      "total_pixels": 53100,
+      "mean_absolute_channel_difference_255": 0.0,
+      "max_absolute_channel_difference_255": 0
+    }
+  },
+  "scope": "Actual GPU samples and frozen artifact identities only. Time-separated stills establish a changing sampled water pattern, not smooth animation quality or full weather. Prior26b geometry not resampled. Root direct-view field is written only after every listed actual image was inspected.",
+  "visual_acceptance": false,
+  "production_installed": false,
+  "full_goal_status": "active"
+}

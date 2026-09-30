@@ -1,0 +1,369 @@
+{
+  "scope": "Four current30k pixels: independent inverse projection and nearest actualGLB ray hit plus current protection distance. No full geometry/GPU rerun.",
+  "files": {
+    "reviews\\round-30k-visible-slope-localization.json": "fc0c09ca388d3a051af74bba237b4f62be08742b9dc685a786c5e509a1efd43c",
+    "captures\\validation_runs\\lantern-island-30k-r1-20260908T193210Z-09e7ff871c9941519a561b4fede063ee\\images\\day-c-front.png": "5883653f07ba3c6c96d3d246a227bffb0bd5caa22cdd2798e73fb772647682a0",
+    "captures\\validation_runs\\lantern-island-30k-r1-20260908T193210Z-09e7ff871c9941519a561b4fede063ee\\images\\day-c-front.png.json": "aef3770b67e5a8f51357505fb2ac76ff956336b1f88f8dc78659d6359a7a49af",
+    "captures\\lantern_island_study_30k\\island_c.glb": "4fbf048a8ffc32294400b49a5806e88b1a8f4cff5b908531a2435cdbc907ea9f",
+    "captures\\lantern_island_study_30k\\geometry-evidence.json": "c21beea37c96ffa8b97f47fa2e36580c5f16d9c77fed5df0cb3fb60eadbf61b8"
+  },
+  "projection": "Actual sidecar zero-roll camera axes and vertical FOV; pixel centers +0.5 convention. Independently solve triangle edges/ray with 3x3 linear systems.",
+  "actual_C_D_tree_local_axes": [
+    [
+      -12.599975846270462,
+      3.2399484710195248
+    ],
+    [
+      -14.399973973877115,
+      1.440010834970904
+    ],
+    [
+      -12.240006291305,
+      -0.7199526786979487
+    ],
+    [
+      8.28002022024867,
+      6.479933000983532
+    ],
+    [
+      10.79995105818415,
+      5.039916351430799
+    ],
+    [
+      16.999957007847758,
+      -1.5000912476625352
+    ],
+    [
+      17.59993786752608,
+      -5.000091765616359
+    ],
+    [
+      -12.60009765625,
+      3.239990234380002
+    ],
+    [
+      -14.39990234375,
+      1.43994140625
+    ],
+    [
+      -12.239990234380002,
+      -0.7199707031199978
+    ],
+    [
+      8.280029296869998,
+      6.47998046875
+    ],
+    [
+      10.800048828119998,
+      5.0400390625
+    ],
+    [
+      17.0,
+      -1.5
+    ],
+    [
+      17.60009765625,
+      -5.0
+    ]
+  ],
+  "samples": [
+    {
+      "pixel": [
+        620,
+        540
+      ],
+      "independent_reprojected_pixel": [
+        620.0,
+        539.9999999999999
+      ],
+      "pixel_error": 1.1368683772161603e-13,
+      "independent_nearest_actual_glb_hit": [
+        -11.79019431553273,
+        -20.59926855706248,
+        4.507260038903745
+      ],
+      "hit_difference_m": 3.256115871121665e-14,
+      "source_name": "island_c grass and exposed rock terrain",
+      "source_face": 1850,
+      "source_vertex_indices": [
+        86,
+        75,
+        73
+      ],
+      "nearest_triangle_barycentric": [
+        0.25868190274986935,
+        0.15061097149313127,
+        0.5907071257569994
+      ],
+      "face_projected_area_m2": 8.79555344581604,
+      "protection_relations": {
+        "actual_path": {
+          "point_horizontal_distance_m": 7.405290937526176,
+          "face_horizontal_distance_m": 2.631010505626554,
+          "face_projected_intersection_area_m2": 0.0,
+          "face_intersects_including_touch": false
+        },
+        "expanded_pads": {
+          "point_horizontal_distance_m": 6.771907665707537,
+          "face_horizontal_distance_m": 3.1429495077254903,
+          "face_projected_intersection_area_m2": 0.0,
+          "face_intersects_including_touch": false
+        },
+        "actual_CD_tree_axis_2m_disks": {
+          "point_horizontal_distance_m": 17.88495479777915,
+          "face_horizontal_distance_m": 16.15275829045526,
+          "face_projected_intersection_area_m2": 0.0,
+          "face_intersects_including_touch": false
+        }
+      },
+      "face_free_projection_area_m2": 8.79555344581604,
+      "face_free_projection": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -14.000782012939453,
+              -21.998435974121094
+            ],
+            [
+              -14.782608985900879,
+              -20.434782028198242
+            ],
+            [
+              -5.0,
+              -17.5
+            ],
+            [
+              -14.000782012939453,
+              -21.998435974121094
+            ]
+          ]
+        ]
+      },
+      "projection_note": "Projected triangle area can be zero for a vertical face; it is not a measure of visible image area or the whole broad slope."
+    },
+    {
+      "pixel": [
+        695,
+        525
+      ],
+      "independent_reprojected_pixel": [
+        695.0,
+        525.0
+      ],
+      "pixel_error": 0.0,
+      "independent_nearest_actual_glb_hit": [
+        -4.57687691136087,
+        -16.24478671146197,
+        6.84883168116685
+      ],
+      "hit_difference_m": 1.5888218580782548e-14,
+      "source_name": "island_c grass and exposed rock terrain",
+      "source_face": 1827,
+      "source_vertex_indices": [
+        154,
+        142,
+        86
+      ],
+      "nearest_triangle_barycentric": [
+        0.30689471097996457,
+        0.14934631106794413,
+        0.5437589779520913
+      ],
+      "face_projected_area_m2": 0.6619046043135768,
+      "protection_relations": {
+        "actual_path": {
+          "point_horizontal_distance_m": 1.4160570438652533,
+          "face_horizontal_distance_m": 0.2936473617156452,
+          "face_projected_intersection_area_m2": 0.0,
+          "face_intersects_including_touch": false
+        },
+        "expanded_pads": {
+          "point_horizontal_distance_m": 2.3441370766893685,
+          "face_horizontal_distance_m": 1.8155085591950708,
+          "face_projected_intersection_area_m2": 0.0,
+          "face_intersects_including_touch": false
+        },
+        "actual_CD_tree_axis_2m_disks": {
+          "point_horizontal_distance_m": 15.31427732494413,
+          "face_horizontal_distance_m": 14.178012033094056,
+          "face_projected_intersection_area_m2": 0.0,
+          "face_intersects_including_touch": false
+        }
+      },
+      "face_free_projection_area_m2": 0.6619046043135768,
+      "face_free_projection": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -5.0,
+              -17.5
+            ],
+            [
+              -4.446094989776611,
+              -14.896646499633789
+            ],
+            [
+              -3.89082670211792,
+              -14.67684268951416
+            ],
+            [
+              -5.0,
+              -17.5
+            ]
+          ]
+        ]
+      },
+      "projection_note": "Projected triangle area can be zero for a vertical face; it is not a measure of visible image area or the whole broad slope."
+    },
+    {
+      "pixel": [
+        755,
+        550
+      ],
+      "independent_reprojected_pixel": [
+        754.9999999999999,
+        550.0
+      ],
+      "pixel_error": 1.1368683772161603e-13,
+      "independent_nearest_actual_glb_hit": [
+        1.9994436167716287,
+        -13.994436168711246,
+        5.255010991367392
+      ],
+      "hit_difference_m": 0.0,
+      "source_name": "island_c grass and exposed rock terrain",
+      "source_face": 1898,
+      "source_vertex_indices": [
+        420,
+        406,
+        513
+      ],
+      "nearest_triangle_barycentric": [
+        0.13775991675830382,
+        0.85806720878024,
+        0.004172874461456163
+      ],
+      "face_projected_area_m2": 0.0,
+      "protection_relations": {
+        "actual_path": {
+          "point_horizontal_distance_m": 3.2784490181464716,
+          "face_horizontal_distance_m": 2.155583596310944,
+          "face_projected_intersection_area_m2": 0.0,
+          "face_intersects_including_touch": false
+        },
+        "expanded_pads": {
+          "point_horizontal_distance_m": 8.054940164334347,
+          "face_horizontal_distance_m": 7.543988664499788,
+          "face_projected_intersection_area_m2": 0.0,
+          "face_intersects_including_touch": false
+        },
+        "actual_CD_tree_axis_2m_disks": {
+          "point_horizontal_distance_m": 16.008760203305442,
+          "face_horizontal_distance_m": 15.50336022167114,
+          "face_projected_intersection_area_m2": 0.0,
+          "face_intersects_including_touch": false
+        }
+      },
+      "face_free_projection_area_m2": 0.0,
+      "face_free_projection": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.0,
+            -14.0
+          ],
+          [
+            1.8666666746139526,
+            -12.666666984558105
+          ]
+        ]
+      },
+      "projection_note": "Projected triangle area can be zero for a vertical face; it is not a measure of visible image area or the whole broad slope."
+    },
+    {
+      "pixel": [
+        810,
+        545
+      ],
+      "independent_reprojected_pixel": [
+        810.0000000000001,
+        545.0000000000001
+      ],
+      "pixel_error": 1.6077746776921858e-13,
+      "independent_nearest_actual_glb_hit": [
+        6.559599331692432,
+        -10.775230782111684,
+        6.096881437776162
+      ],
+      "hit_difference_m": 2.5618982671915014e-14,
+      "source_name": "island_c grass and exposed rock terrain",
+      "source_face": 1875,
+      "source_vertex_indices": [
+        406,
+        421,
+        547
+      ],
+      "nearest_triangle_barycentric": [
+        0.08753510679165627,
+        0.5750090231421288,
+        0.33745587006621497
+      ],
+      "face_projected_area_m2": 13.178888440132141,
+      "protection_relations": {
+        "actual_path": {
+          "point_horizontal_distance_m": 4.14113845549329,
+          "face_horizontal_distance_m": 1.173548322252907,
+          "face_projected_intersection_area_m2": 0.0,
+          "face_intersects_including_touch": false
+        },
+        "expanded_pads": {
+          "point_horizontal_distance_m": 6.1305132659575845,
+          "face_horizontal_distance_m": 4.620050863432942,
+          "face_projected_intersection_area_m2": 0.0,
+          "face_intersects_including_touch": false
+        },
+        "actual_CD_tree_axis_2m_disks": {
+          "point_horizontal_distance_m": 10.459681716757212,
+          "face_horizontal_distance_m": 8.48657766503619,
+          "face_projected_intersection_area_m2": 0.0,
+          "face_intersects_including_touch": false
+        }
+      },
+      "face_free_projection_area_m2": 13.178888440132141,
+      "face_free_projection": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              3.5840179920196533,
+              -9.55573844909668
+            ],
+            [
+              9.0,
+              -11.0
+            ],
+            [
+              2.0,
+              -14.0
+            ],
+            [
+              3.5840179920196533,
+              -9.55573844909668
+            ]
+          ]
+        ]
+      },
+      "projection_note": "Projected triangle area can be zero for a vertical face; it is not a measure of visible image area or the whole broad slope."
+    }
+  ],
+  "pass": true,
+  "limits": [
+    "Distances are horizontal XY distances, not full3D clearance.",
+    "Zero intersection area can still mean boundary contact; intersects_including_touch is recorded separately.",
+    "Unprotected sample points do not authorize whole-triangle/shared-vertex changes; use the face protection intersection and cut boundary.",
+    "Nearest-hit check includes actual island GLB only; not all scene buildings/trees. Pixels were directly viewed as unobstructed grey rock.",
+    "Root connected near-coplanar subsets and individual triangle areas must not be treated as all visible sloping slab area."
+  ]
+}

@@ -1,0 +1,3959 @@
+{
+  "run": "E:\\FeiTing\\captures\\validation_runs\\16g-native-integration-20260908T051154Z-276e28776e864ea7bdffae2d9da929d5",
+  "run_status": "passed",
+  "run_manifest_sha256": "7561ad2fecacd4727b0b948f9f6246474a3188806155f855b34a77503915e224",
+  "completed_utc": "2026-09-08T05:17:54.143250+00:00",
+  "scope": "Read-only identity, frozen-diff, bound reports and screenshot parity audit; no rendering, engine launch or production writes. Full visual goal remains incomplete.",
+  "artifacts": {
+    "source-backup/assets/cliff_kit.json": {
+      "sha256": "cd649aeb26b3cecbf1b110fcfc68248711e3d1ec90889d538fc89ff0170af495",
+      "matches_manifest": true
+    },
+    "source-backup/assets/models/cliff_crown.glb": {
+      "sha256": "7e9e0ba27d8c2c62f05ad0a9e42bd12de37f7139e3fd1269fae9bf66ff34308c",
+      "matches_manifest": true
+    },
+    "source-backup/blender/cliff_kit/cliff_crown.blend": {
+      "sha256": "e050afbd6dc366130775cba31490c227fa20aac8709b9dccf4ce3a3608880328",
+      "matches_manifest": true
+    },
+    "source-backup/assets/models/cliff_front_columns.glb": {
+      "sha256": "bbec473e81cc3ee826d85f1af4433c7b43d038fe75cdf825f287f6b4c0597dbe",
+      "matches_manifest": true
+    },
+    "source-backup/blender/cliff_kit/cliff_front_columns.blend": {
+      "sha256": "324ce0446252e46a7130323df20b75c6a657ca576b680068c7d87dc753bc1c09",
+      "matches_manifest": true
+    },
+    "source-backup/assets/models/cliff_central_wall.glb": {
+      "sha256": "39ca18f1c5b4a4f263b29d9fa02d60d94f293c121c0f4fc1bb709b0a7fc29af8",
+      "matches_manifest": true
+    },
+    "source-backup/blender/cliff_kit/cliff_central_wall.blend": {
+      "sha256": "c9698453b5c736c281dc2d330e4059bf5f8e7d6678d085fbe7c0584f3f329cfc",
+      "matches_manifest": true
+    },
+    "preparation/integrate_foreground_16g.py": {
+      "sha256": "d9a4cc3dfed30a6440d07055721eecc9510618510d65289e3f2afba5561d8edb",
+      "matches_manifest": true
+    },
+    "preparation/round-16g-independent-review.md": {
+      "sha256": "6ce74f34263823ad25a935d5ed5b38c0512b4252dd02962363bcc2b305a7764e",
+      "matches_manifest": true
+    },
+    "preparation/round-16g-projected-surface-gate.json": {
+      "sha256": "ff84637f33348d5f949ebb4f432691211a31ec2a27343d6ed092e9d004c4f849",
+      "matches_manifest": true
+    },
+    "preparation/manifest.json": {
+      "sha256": "2984a194ffb0c70f9ef5a32c9badb3d6bb86be5e7ebfe17113d217dcacc6fa9a",
+      "matches_manifest": true
+    },
+    "preparation-inputs.json": {
+      "sha256": "37372a7054296b5ddc28c1cf9272212265faf4c3f455edd8a2e2a6bb5be27b33",
+      "matches_manifest": true
+    },
+    "import.log": {
+      "sha256": "bee3d14c67fcf3a5f7a2bedeae30b03edb96ddb4f5405c57590ba5c77ef5c742",
+      "matches_manifest": true
+    },
+    "import-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches_manifest": true
+    },
+    "stages/import.json": {
+      "sha256": "bd1c32e5f40b2a2b17f09a92378165eba3ac5a9c084831b32daeb1b02ee6c050",
+      "matches_manifest": true
+    },
+    "refresh-selected-cliffs.log": {
+      "sha256": "fb75c83469709313d964408317a94f1373e0ae424cb782cf9d4d27f330041218",
+      "matches_manifest": true
+    },
+    "refresh-selected-cliffs-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches_manifest": true
+    },
+    "stages/refresh-selected-cliffs.json": {
+      "sha256": "1f6af1cf192f40b2c3399edcbf7e73fcec8ecabb144b7930e2c1a933b7cd2101",
+      "matches_manifest": true
+    },
+    "preparation-changes.json": {
+      "sha256": "7c77671313d49bf2b85c6a8678bd1b2a83ca0777ea41b72623b859c67df298aa",
+      "matches_manifest": true
+    },
+    "inputs.json": {
+      "sha256": "79b14f33af85cb308d81ab14cf6c051d605b3b813ae3b36aba948472cfcbd8bc",
+      "matches_manifest": true
+    },
+    "images/opening.png": {
+      "sha256": "6edc5aa9ac325e3b1304ba2626126eab16461907e8b568500957bf6edcf83b66",
+      "matches_manifest": true
+    },
+    "capture-opening.log": {
+      "sha256": "41ace770b0e3ba564dab4a09e3ffb622c9d3acbd95ccba2e92ccfdfc5d0cba0f",
+      "matches_manifest": true
+    },
+    "capture-opening-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches_manifest": true
+    },
+    "stages/capture-opening.json": {
+      "sha256": "0a011655b5f5d5b261e35ced18c4732214cdf3a7e7429f3086e3a8d9d8318c10",
+      "matches_manifest": true
+    },
+    "images/cliff-side.png": {
+      "sha256": "8345ceb1e214aa13236745c18b681fe340efab195ecd786341712ad8c2c460c2",
+      "matches_manifest": true
+    },
+    "capture-cliff-side.log": {
+      "sha256": "26d3880a3713644ae69935c8574c91f33e5139591dcbe59eb25cdcb6094b56b2",
+      "matches_manifest": true
+    },
+    "capture-cliff-side-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches_manifest": true
+    },
+    "stages/capture-cliff-side.json": {
+      "sha256": "e96e1e8fac689e348f25748acfd5bdc97538b0f483cd09829e91e676b83e650b",
+      "matches_manifest": true
+    },
+    "images/cliff-back.png": {
+      "sha256": "37a966fbaf8589e44ff015be4ec2180fa151509a1beeab4cbc559fd6ba5ef398",
+      "matches_manifest": true
+    },
+    "capture-cliff-back.log": {
+      "sha256": "98a4aa09b2bc159cbdf7d8951850b98ed0f44c87b8fb58a940f79d6e8cef7e0b",
+      "matches_manifest": true
+    },
+    "capture-cliff-back-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches_manifest": true
+    },
+    "stages/capture-cliff-back.json": {
+      "sha256": "4de83c332750ad9888459bd80d854641f94407412167413d437103ad386da092",
+      "matches_manifest": true
+    },
+    "images/reverse.png": {
+      "sha256": "e1493c65c65865f9ef2b023a0d7b7b3926a38a3add9f5ace7a3d21df0fdc0b4b",
+      "matches_manifest": true
+    },
+    "capture-reverse.log": {
+      "sha256": "b6627d7b14d50b82dfda6af9f5f8fe02b25306282b4ce5e58fb8da95109eaa49",
+      "matches_manifest": true
+    },
+    "capture-reverse-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches_manifest": true
+    },
+    "stages/capture-reverse.json": {
+      "sha256": "35ba3b96d540fa158ee3149a0f8b36692e4cf7b673f0096b04bab584796473b3",
+      "matches_manifest": true
+    },
+    "previous-reports/game-test.json": {
+      "sha256": "8f158260ebea19e132c3f1a17dff9057e867751a81a5f738faf2ff5c20e337b5",
+      "matches_manifest": true
+    },
+    "reports/game-test.json": {
+      "sha256": "7063049cfd9b85948b00c452bd3b79bd4a7041dd5875fa77aa09f84fb5775f3a",
+      "matches_manifest": true
+    },
+    "game-test.log": {
+      "sha256": "07c1159258ec3afa0c9ed5d5a256fcfcf61c9e76ec1be4eb5ae43b68eb4b96f5",
+      "matches_manifest": true
+    },
+    "game-test-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches_manifest": true
+    },
+    "stages/game-test.json": {
+      "sha256": "ab9fe27653d0f5e5dd40fd9b012f1c27439d4315936c1935f0fc218c31d29c78",
+      "matches_manifest": true
+    },
+    "previous-reports/cliff-tour-test.json": {
+      "sha256": "dff7348fed5f88d4323c9b7bbe0b04cf99bfb29c878187dcd4730ced98c3d5f1",
+      "matches_manifest": true
+    },
+    "reports/cliff-tour-test.json": {
+      "sha256": "491c760f3f60049913d31569e15c587ab7df5e32cfe2ff0704649bd13bb3ddcf",
+      "matches_manifest": true
+    },
+    "cliff-tour-test.log": {
+      "sha256": "1bb69088516b976eb570b6cec56d9fb78d316a0d8c43075a9913f1f7aaaad8b0",
+      "matches_manifest": true
+    },
+    "cliff-tour-test-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches_manifest": true
+    },
+    "stages/cliff-tour-test.json": {
+      "sha256": "04a0ad775c9d90523bfbf20c963db02c401ce00cc000f14b64ba7b99a9033922",
+      "matches_manifest": true
+    },
+    "previous-reports/cliffs-contact.json": {
+      "sha256": "fcf7310b85ad3994f36110b61c5beed6119e462b4fb255635b3c2a25179dfe5b",
+      "matches_manifest": true
+    },
+    "reports/cliffs-contact.json": {
+      "sha256": "e302cdbd792c255ab08519b83fbd94819a52aa8798fc14f49cd0141b15a4efaf",
+      "matches_manifest": true
+    },
+    "cliffs-contact.log": {
+      "sha256": "259a793a930d79e27589e1dc9817e46211709732ad9e48e316a83323fdff6d55",
+      "matches_manifest": true
+    },
+    "cliffs-contact-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches_manifest": true
+    },
+    "stages/cliffs-contact.json": {
+      "sha256": "292c05ef7533e60a8f6bb96c378ff957df0d4a4280ff297913bc89354bb82689",
+      "matches_manifest": true
+    },
+    "previous-reports/cliff-ground-rims.json": {
+      "sha256": "56de709973aaed884fe00e3e06e97e8ac0098c162c08bc7ca1d3c2c856220baa",
+      "matches_manifest": true
+    },
+    "reports/cliff-ground-rims.json": {
+      "sha256": "75ca9d0fa1573af0249522dae1ed00375df0e2f25c0941d7fd63eb4b4fa99d47",
+      "matches_manifest": true
+    },
+    "cliff-ground-rims.log": {
+      "sha256": "86ee73f4106e8cb321b17a3d790b24dff06d3691a7555e0d3429f904b3a7507a",
+      "matches_manifest": true
+    },
+    "cliff-ground-rims-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches_manifest": true
+    },
+    "stages/cliff-ground-rims.json": {
+      "sha256": "64cb67d82a7332dfcf6dbcb3033c1130ed5bdb7e680233995d7f3ee1cb61e605",
+      "matches_manifest": true
+    },
+    "previous-reports/road-surfaces.json": {
+      "sha256": "68dcb50ab61f33743c676095a8bc507c04686cd91e48b08c1d5de88505e8aff8",
+      "matches_manifest": true
+    },
+    "reports/road-surfaces.json": {
+      "sha256": "c8d427779d749166b7846fde86caea2827ca2aadd0c02bccd8f6ecf797cef50f",
+      "matches_manifest": true
+    },
+    "road-surfaces.log": {
+      "sha256": "b400c15d98e6a101deaf85deac7b56e77aaf7396bcb910fbb42a495dc02a4f72",
+      "matches_manifest": true
+    },
+    "road-surfaces-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches_manifest": true
+    },
+    "stages/road-surfaces.json": {
+      "sha256": "da87bfb212104650218e43c53c3ec6081c9f95142582553ca3e2193b06760647",
+      "matches_manifest": true
+    },
+    "previous-reports/geology.json": {
+      "sha256": "4e5b707b3a1745576b13b23a52d93ba73e6dbf6e559aa20b005eefd9324d9366",
+      "matches_manifest": true
+    },
+    "reports/geology.json": {
+      "sha256": "b3a62c1620b2c53735b8e865f4c98447b9c1e1204b7df10a257ee31c0aff1cf8",
+      "matches_manifest": true
+    },
+    "geology.log": {
+      "sha256": "b148de892d5e36086eb6f8631a9171fd7522110cbbacf0df52fc759d69ddc8d2",
+      "matches_manifest": true
+    },
+    "geology-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches_manifest": true
+    },
+    "stages/geology.json": {
+      "sha256": "7f2be26a95c492d5c803e2feeb87b79a85ebb6f1fd3acce81dfc6e689abcc6a8",
+      "matches_manifest": true
+    }
+  },
+  "assets": {
+    "cliff_crown": {
+      ".glb": {
+        "production_sha256": "ca61243d3016e3e0c194f20afd072070bb02fb0bf4a83c62dc33983827ca8a62",
+        "matches_reviewed_candidate": true,
+        "backup_matches_original": true
+      },
+      ".blend": {
+        "production_sha256": "24feb106e33a7fdb0d93dcf91f2279047fe57e2cedc12a23e7c432b0c288a331",
+        "matches_reviewed_candidate": true,
+        "backup_matches_original": true
+      },
+      "meshes_sha256": "4ee501d9ef7ca633aa769df6e92863a7baaeb712b8ef5ded0a9e2fcf2c6ab181",
+      "collision_sha256": "74a197c69ea62337065f5d73c7680fcc0ad708d5e2a0d37cdd0ba58348faa9a7",
+      "prefab_unchanged_and_references_current_model_collider": true,
+      "kit_counts_match_candidate": true
+    },
+    "cliff_front_columns": {
+      ".glb": {
+        "production_sha256": "667a5fcc083a828b2b9d6e516920be3952f8fb6e41427523a377a9f5f0b58e3f",
+        "matches_reviewed_candidate": true,
+        "backup_matches_original": true
+      },
+      ".blend": {
+        "production_sha256": "37312a29ef9e568b0748021567126dabdc605edb057f34dba6d971326a167a38",
+        "matches_reviewed_candidate": true,
+        "backup_matches_original": true
+      },
+      "meshes_sha256": "38e52274310ceae4fcf29092d67844b8dff271e744a43e1cd63baa65b0ad1e5c",
+      "collision_sha256": "71ce9e23c8813f0aa6025b6cdf42d75713b30770bd98032ea544a58dfbb1dcc5",
+      "prefab_unchanged_and_references_current_model_collider": true,
+      "kit_counts_match_candidate": true
+    },
+    "cliff_central_wall": {
+      ".glb": {
+        "production_sha256": "1830179834bf8beb1a8792f670551b99edfdba4f95b0e8748a207e19acfc30f3",
+        "matches_reviewed_candidate": true,
+        "backup_matches_original": true
+      },
+      ".blend": {
+        "production_sha256": "a2a0a1d4764208ba36470988da9786d108ca5699e8f472610ece2ba6c79ea4aa",
+        "matches_reviewed_candidate": true,
+        "backup_matches_original": true
+      },
+      "meshes_sha256": "53718f34e1993127cb9ea0c4f4caf8feb2c1ab346f0440f2c06e001a7c8d3609",
+      "collision_sha256": "bf0e3320eb41b1e016d19913e944343175a27d4914ee36d0198edb666630dd13",
+      "prefab_unchanged_and_references_current_model_collider": true,
+      "kit_counts_match_candidate": true
+    }
+  },
+  "stages": [
+    {
+      "name": "import",
+      "run_id": "16g-native-integration-20260908T051154Z-276e28776e864ea7bdffae2d9da929d5",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--headless",
+        "--editor",
+        "--path",
+        "E:\\FeiTing",
+        "--import",
+        "--quit"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788844324903698800,
+      "started_utc": "2026-09-08T05:12:04.903698+00:00",
+      "input_manifest_sha256": null,
+      "exit_code": 0,
+      "finished_ns": 1788844339245435600,
+      "finished_utc": "2026-09-08T05:12:19.255860+00:00"
+    },
+    {
+      "name": "refresh-selected-cliffs",
+      "run_id": "16g-native-integration-20260908T051154Z-276e28776e864ea7bdffae2d9da929d5",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "tools/install_cliff_kit.gd",
+        "--",
+        "--asset=cliff_central_wall",
+        "--asset=cliff_crown",
+        "--asset=cliff_front_columns"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788844339267700800,
+      "started_utc": "2026-09-08T05:12:19.267700+00:00",
+      "input_manifest_sha256": null,
+      "exit_code": 0,
+      "finished_ns": 1788844351793280700,
+      "finished_utc": "2026-09-08T05:12:31.803557+00:00"
+    },
+    {
+      "name": "capture-opening",
+      "run_id": "16g-native-integration-20260908T051154Z-276e28776e864ea7bdffae2d9da929d5",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--",
+        "--capture",
+        "--view=opening",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\16g-native-integration-20260908T051154Z-276e28776e864ea7bdffae2d9da929d5\\images\\opening.png",
+        "--validation-run=16g-native-integration-20260908T051154Z-276e28776e864ea7bdffae2d9da929d5"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788844376615975300,
+      "started_utc": "2026-09-08T05:12:56.615975+00:00",
+      "input_manifest_sha256": "79b14f33af85cb308d81ab14cf6c051d605b3b813ae3b36aba948472cfcbd8bc",
+      "exit_code": 0,
+      "finished_ns": 1788844386161710700,
+      "image": "images/opening.png",
+      "finished_utc": "2026-09-08T05:13:16.525773+00:00"
+    },
+    {
+      "name": "capture-cliff-side",
+      "run_id": "16g-native-integration-20260908T051154Z-276e28776e864ea7bdffae2d9da929d5",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--",
+        "--capture",
+        "--view=cliff-side",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\16g-native-integration-20260908T051154Z-276e28776e864ea7bdffae2d9da929d5\\images\\cliff-side.png",
+        "--validation-run=16g-native-integration-20260908T051154Z-276e28776e864ea7bdffae2d9da929d5"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788844408317783200,
+      "started_utc": "2026-09-08T05:13:28.317783+00:00",
+      "input_manifest_sha256": "79b14f33af85cb308d81ab14cf6c051d605b3b813ae3b36aba948472cfcbd8bc",
+      "exit_code": 0,
+      "finished_ns": 1788844419235171800,
+      "image": "images/cliff-side.png",
+      "finished_utc": "2026-09-08T05:13:51.708358+00:00"
+    },
+    {
+      "name": "capture-cliff-back",
+      "run_id": "16g-native-integration-20260908T051154Z-276e28776e864ea7bdffae2d9da929d5",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--",
+        "--capture",
+        "--view=cliff-back",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\16g-native-integration-20260908T051154Z-276e28776e864ea7bdffae2d9da929d5\\images\\cliff-back.png",
+        "--validation-run=16g-native-integration-20260908T051154Z-276e28776e864ea7bdffae2d9da929d5"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788844442977483000,
+      "started_utc": "2026-09-08T05:14:02.977483+00:00",
+      "input_manifest_sha256": "79b14f33af85cb308d81ab14cf6c051d605b3b813ae3b36aba948472cfcbd8bc",
+      "exit_code": 0,
+      "finished_ns": 1788844451286975000,
+      "image": "images/cliff-back.png",
+      "finished_utc": "2026-09-08T05:14:20.898817+00:00"
+    },
+    {
+      "name": "capture-reverse",
+      "run_id": "16g-native-integration-20260908T051154Z-276e28776e864ea7bdffae2d9da929d5",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--",
+        "--capture",
+        "--view=reverse",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\16g-native-integration-20260908T051154Z-276e28776e864ea7bdffae2d9da929d5\\images\\reverse.png",
+        "--validation-run=16g-native-integration-20260908T051154Z-276e28776e864ea7bdffae2d9da929d5"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788844469304335900,
+      "started_utc": "2026-09-08T05:14:29.304335+00:00",
+      "input_manifest_sha256": "79b14f33af85cb308d81ab14cf6c051d605b3b813ae3b36aba948472cfcbd8bc",
+      "exit_code": 0,
+      "finished_ns": 1788844475165691200,
+      "image": "images/reverse.png",
+      "finished_utc": "2026-09-08T05:14:42.104526+00:00"
+    },
+    {
+      "name": "game-test",
+      "run_id": "16g-native-integration-20260908T051154Z-276e28776e864ea7bdffae2d9da929d5",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--",
+        "--game-test",
+        "--validation-run=16g-native-integration-20260908T051154Z-276e28776e864ea7bdffae2d9da929d5"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788844491572380300,
+      "started_utc": "2026-09-08T05:14:51.572380+00:00",
+      "input_manifest_sha256": "79b14f33af85cb308d81ab14cf6c051d605b3b813ae3b36aba948472cfcbd8bc",
+      "exit_code": 0,
+      "finished_ns": 1788844506444663800,
+      "report": "reports/game-test.json",
+      "report_contract_passed": true,
+      "finished_utc": "2026-09-08T05:15:18.117957+00:00"
+    },
+    {
+      "name": "cliff-tour-test",
+      "run_id": "16g-native-integration-20260908T051154Z-276e28776e864ea7bdffae2d9da929d5",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--",
+        "--cliff-tour-test",
+        "--validation-run=16g-native-integration-20260908T051154Z-276e28776e864ea7bdffae2d9da929d5"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788844530820986300,
+      "started_utc": "2026-09-08T05:15:30.820986+00:00",
+      "input_manifest_sha256": "79b14f33af85cb308d81ab14cf6c051d605b3b813ae3b36aba948472cfcbd8bc",
+      "exit_code": 0,
+      "finished_ns": 1788844549665507500,
+      "report": "reports/cliff-tour-test.json",
+      "report_contract_passed": true,
+      "finished_utc": "2026-09-08T05:16:08.279415+00:00"
+    },
+    {
+      "name": "cliffs-contact",
+      "run_id": "16g-native-integration-20260908T051154Z-276e28776e864ea7bdffae2d9da929d5",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "tools/verify_cliff_flight.gd",
+        "--",
+        "--validation-run=16g-native-integration-20260908T051154Z-276e28776e864ea7bdffae2d9da929d5"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788844578807549600,
+      "started_utc": "2026-09-08T05:16:18.807549+00:00",
+      "input_manifest_sha256": "79b14f33af85cb308d81ab14cf6c051d605b3b813ae3b36aba948472cfcbd8bc",
+      "exit_code": 0,
+      "finished_ns": 1788844583276619700,
+      "report": "reports/cliffs-contact.json",
+      "report_contract_passed": true,
+      "finished_utc": "2026-09-08T05:16:32.705773+00:00"
+    },
+    {
+      "name": "cliff-ground-rims",
+      "run_id": "16g-native-integration-20260908T051154Z-276e28776e864ea7bdffae2d9da929d5",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "tools/verify_cliff_ground_rims.gd",
+        "--",
+        "--validation-run=16g-native-integration-20260908T051154Z-276e28776e864ea7bdffae2d9da929d5"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788844602342281600,
+      "started_utc": "2026-09-08T05:16:42.342281+00:00",
+      "input_manifest_sha256": "79b14f33af85cb308d81ab14cf6c051d605b3b813ae3b36aba948472cfcbd8bc",
+      "exit_code": 0,
+      "finished_ns": 1788844608446992400,
+      "report": "reports/cliff-ground-rims.json",
+      "report_contract_passed": true,
+      "finished_utc": "2026-09-08T05:16:57.739026+00:00"
+    },
+    {
+      "name": "road-surfaces",
+      "run_id": "16g-native-integration-20260908T051154Z-276e28776e864ea7bdffae2d9da929d5",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "tools/verify_road_surfaces.gd",
+        "--",
+        "--validation-run=16g-native-integration-20260908T051154Z-276e28776e864ea7bdffae2d9da929d5"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788844627340558000,
+      "started_utc": "2026-09-08T05:17:07.340558+00:00",
+      "input_manifest_sha256": "79b14f33af85cb308d81ab14cf6c051d605b3b813ae3b36aba948472cfcbd8bc",
+      "exit_code": 0,
+      "finished_ns": 1788844633810425300,
+      "report": "reports/road-surfaces.json",
+      "report_contract_passed": true,
+      "finished_utc": "2026-09-08T05:17:23.938081+00:00"
+    },
+    {
+      "name": "geology",
+      "run_id": "16g-native-integration-20260908T051154Z-276e28776e864ea7bdffae2d9da929d5",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\MIGRATION_20260906\\external\\python\\Python310\\python.exe",
+        "tools/verify_geology_assets.py"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788844653566356400,
+      "started_utc": "2026-09-08T05:17:33.566356+00:00",
+      "input_manifest_sha256": "79b14f33af85cb308d81ab14cf6c051d605b3b813ae3b36aba948472cfcbd8bc",
+      "exit_code": 0,
+      "finished_ns": 1788844654050835100,
+      "report": "reports/geology.json",
+      "report_contract_passed": true,
+      "provenance": {
+        "run_id": "16g-native-integration-20260908T051154Z-276e28776e864ea7bdffae2d9da929d5",
+        "method": "fresh report plus every asset SHA256 and frozen inputs",
+        "report_mtime_ns": 1788844654020433700
+      },
+      "finished_utc": "2026-09-08T05:17:44.211301+00:00"
+    }
+  ],
+  "production_changes": [
+    "res://assets/asset_catalog.json",
+    "res://assets/cliff_kit.json",
+    "res://assets/collision/cliff_central_wall.res",
+    "res://assets/collision/cliff_crown.res",
+    "res://assets/collision/cliff_front_columns.res",
+    "res://assets/meshes/cliff_central_wall.res",
+    "res://assets/meshes/cliff_crown.res",
+    "res://assets/meshes/cliff_front_columns.res",
+    "res://assets/models/cliff_central_wall.glb",
+    "res://assets/models/cliff_crown.glb",
+    "res://assets/models/cliff_front_columns.glb",
+    "res://blender/cliff_kit/cliff_central_wall.blend",
+    "res://blender/cliff_kit/cliff_crown.blend",
+    "res://blender/cliff_kit/cliff_front_columns.blend"
+  ],
+  "production_input_scope_count": 2964,
+  "preserved_groups": {
+    "res://scenes/world/": {
+      "count": 1,
+      "frozen_and_current_sha_unchanged": true
+    },
+    "res://scenes/terrain/": {
+      "count": 208,
+      "frozen_and_current_sha_unchanged": true
+    },
+    "res://assets/scatter/": {
+      "count": 1546,
+      "frozen_and_current_sha_unchanged": true
+    }
+  },
+  "image_parity": {
+    "opening": {
+      "sha256": "6edc5aa9ac325e3b1304ba2626126eab16461907e8b568500957bf6edcf83b66",
+      "candidate_sha256": "6edc5aa9ac325e3b1304ba2626126eab16461907e8b568500957bf6edcf83b66",
+      "byte_identical_to_candidate": true,
+      "changed_pixels": 0,
+      "maximum_channel_difference": 0,
+      "bbox_inclusive": null,
+      "changed_pixels_y_ge_300": 0
+    },
+    "cliff-side": {
+      "sha256": "8345ceb1e214aa13236745c18b681fe340efab195ecd786341712ad8c2c460c2",
+      "candidate_sha256": "8345ceb1e214aa13236745c18b681fe340efab195ecd786341712ad8c2c460c2",
+      "byte_identical_to_candidate": true,
+      "changed_pixels": 0,
+      "maximum_channel_difference": 0,
+      "bbox_inclusive": null,
+      "changed_pixels_y_ge_300": 0
+    },
+    "cliff-back": {
+      "sha256": "37a966fbaf8589e44ff015be4ec2180fa151509a1beeab4cbc559fd6ba5ef398",
+      "candidate_sha256": "d769647b9fd229a76f5a3f623b33e08e1a943cccc10981b995d08e2e3fda2493",
+      "byte_identical_to_candidate": false,
+      "changed_pixels": 1549,
+      "maximum_channel_difference": 15,
+      "bbox_inclusive": [
+        208,
+        93,
+        616,
+        227
+      ],
+      "changed_pixels_y_ge_300": 0
+    },
+    "reverse": {
+      "sha256": "e1493c65c65865f9ef2b023a0d7b7b3926a38a3add9f5ace7a3d21df0fdc0b4b",
+      "candidate_comparison": "Candidate 16g had no reverse screenshot; inspected natively without claiming equality."
+    }
+  },
+  "surface_gate": {
+    "cliff_crown": {
+      "sha256": "ca61243d3016e3e0c194f20afd072070bb02fb0bf4a83c62dc33983827ca8a62",
+      "current_and_frozen_and_gate_match": true
+    },
+    "cliff_western_slab": {
+      "sha256": "47112e869a56cf3424f4b85ee047a51711fdfa1fa46bb5c06ea83ebc12e80612",
+      "current_and_frozen_and_gate_match": true
+    },
+    "cliff_front_columns": {
+      "sha256": "667a5fcc083a828b2b9d6e516920be3952f8fb6e41427523a377a9f5f0b58e3f",
+      "current_and_frozen_and_gate_match": true
+    },
+    "cliff_shadow_buttress": {
+      "sha256": "6ba023af32cb07980cee5f58a2faccffea17747117c084938b655da5fa742517",
+      "current_and_frozen_and_gate_match": true
+    },
+    "cliff_central_wall": {
+      "sha256": "1830179834bf8beb1a8792f670551b99edfdba4f95b0e8748a207e19acfc30f3",
+      "current_and_frozen_and_gate_match": true
+    }
+  },
+  "bound_report_data": {
+    "reports/cliff-ground-rims.json": {
+      "assets": [
+        {
+          "contact_edges": 110,
+          "examples": [],
+          "exposed_samples": 0,
+          "maximum_above_terrain_metres": -0.975120544433594,
+          "minimum_above_terrain_metres": -6.19789886474609,
+          "misses": 0,
+          "name": "cliff_crown",
+          "passed": true,
+          "samples": 951
+        },
+        {
+          "contact_edges": 64,
+          "examples": [],
+          "exposed_samples": 0,
+          "maximum_above_terrain_metres": -0.84675407409668,
+          "minimum_above_terrain_metres": -2.8830451965332,
+          "misses": 0,
+          "name": "cliff_western_slab",
+          "passed": true,
+          "samples": 536
+        },
+        {
+          "contact_edges": 72,
+          "examples": [],
+          "exposed_samples": 0,
+          "maximum_above_terrain_metres": -1.10212898254395,
+          "minimum_above_terrain_metres": -7.70047950744629,
+          "misses": 0,
+          "name": "cliff_front_columns",
+          "passed": true,
+          "samples": 610
+        },
+        {
+          "contact_edges": 71,
+          "examples": [],
+          "exposed_samples": 0,
+          "maximum_above_terrain_metres": -0.944477081298828,
+          "minimum_above_terrain_metres": -2.59233093261719,
+          "misses": 0,
+          "name": "cliff_central_wall",
+          "passed": true,
+          "samples": 576
+        },
+        {
+          "contact_edges": 77,
+          "examples": [],
+          "exposed_samples": 0,
+          "maximum_above_terrain_metres": -0.142444610595703,
+          "minimum_above_terrain_metres": -5.4188289642334,
+          "misses": 0,
+          "name": "cliff_shadow_buttress",
+          "passed": true,
+          "samples": 658
+        },
+        {
+          "contact_edges": 163,
+          "examples": [],
+          "exposed_samples": 0,
+          "maximum_above_terrain_metres": -1.06365776062012,
+          "minimum_above_terrain_metres": -1.78548049926758,
+          "misses": 0,
+          "name": "cliff_eastern_plateau",
+          "passed": true,
+          "samples": 1141
+        }
+      ],
+      "passed": true,
+      "provenance": {
+        "engine": "4.5.1-stable (official)",
+        "packaged": false,
+        "run_id": "16g-native-integration-20260908T051154Z-276e28776e864ea7bdffae2d9da929d5",
+        "sha256": {
+          "res://assets/cliff_kit.json": "75e6b82f24e1dad23c7e3576cebdb6b85f789fa3b328660cfa563918b7bb0cb9",
+          "res://assets/mountain_kit.json": "8b5b6fbe3f86a6b849d9fd6a2b87bf0fefe6dd1323f91f35cae97ba300196940",
+          "res://assets/road_kit.json": "1f0047e0203113b801558edd7413b2df362f412083754b099648f49bd8728a3a",
+          "res://scenes/prefabs/Airship.tscn": "e66caa9dc604786bfd03f25b27835fd454ec26942ec72b73e3bbfe599e032329",
+          "res://scenes/world/World.tscn": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+          "res://scripts/game.gd": "aa292916e6878fd46fb4a2ff12dd54611dca402e66ffa4042a864a853aa67467",
+          "res://scripts/hud.gd": "f9992f6569cd9ee0731542afa1db645d260e1e1cf01bf85a250f656324de7654",
+          "res://scripts/world_math.gd": "a7553c54d06d4e63b4fbe221b04b0f158e36f25b000b483f4555944fdd14b297"
+        },
+        "utc": "2026-09-08T05:16:48"
+      },
+      "samples": 4472,
+      "scope": "Six current native colliders: final floor-to-roof rim edges sampled at <=0.5 m in world XZ against actual terrain/ocean physics, excluding all cliff and mountain bodies. This checks rim seating, not all internal overlaps or flight paths.",
+      "world_sha256": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8"
+    },
+    "reports/cliff-tour-test.json": {
+      "camera_obstruction_samples": 0,
+      "distance_metres": 1141.19952914119,
+      "health": 1.0,
+      "method": "Continuous physical flight from normal spawn around all sides of the assembled cliff group. No waypoint teleportation. Same input/controller/camera as manual play, clock 4x.",
+      "minimum_clearance_metres": 63.1248893737793,
+      "passed": true,
+      "provenance": {
+        "engine": "4.5.1-stable (official)",
+        "packaged": false,
+        "run_id": "16g-native-integration-20260908T051154Z-276e28776e864ea7bdffae2d9da929d5",
+        "sha256": {
+          "res://assets/cliff_kit.json": "75e6b82f24e1dad23c7e3576cebdb6b85f789fa3b328660cfa563918b7bb0cb9",
+          "res://assets/mountain_kit.json": "8b5b6fbe3f86a6b849d9fd6a2b87bf0fefe6dd1323f91f35cae97ba300196940",
+          "res://assets/road_kit.json": "1f0047e0203113b801558edd7413b2df362f412083754b099648f49bd8728a3a",
+          "res://scenes/prefabs/Airship.tscn": "e66caa9dc604786bfd03f25b27835fd454ec26942ec72b73e3bbfe599e032329",
+          "res://scenes/world/World.tscn": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+          "res://scripts/game.gd": "aa292916e6878fd46fb4a2ff12dd54611dca402e66ffa4042a864a853aa67467",
+          "res://scripts/hud.gd": "f9992f6569cd9ee0731542afa1db645d260e1e1cf01bf85a250f656324de7654",
+          "res://scripts/world_math.gd": "a7553c54d06d4e63b4fbe221b04b0f158e36f25b000b483f4555944fdd14b297"
+        },
+        "utc": "2026-09-08T05:15:49"
+      },
+      "samples": [
+        {
+          "camera_clear": true,
+          "clearance": 103.295864105225,
+          "position": [
+            -5.89723968505859,
+            132.640029907227,
+            184.100341796875
+          ],
+          "speed": 5.82227325439453,
+          "time": 0.6,
+          "waypoint": 0
+        },
+        {
+          "camera_clear": true,
+          "clearance": 93.9958648681641,
+          "position": [
+            -9.88651561737061,
+            122.933380126953,
+            183.598876953125
+          ],
+          "speed": 10.6863956451416,
+          "time": 1.01326533333333,
+          "waypoint": 0
+        },
+        {
+          "camera_clear": true,
+          "clearance": 88.5742797851563,
+          "position": [
+            -12.2036876678467,
+            117.0400390625,
+            182.983642578125
+          ],
+          "speed": 12.6291618347168,
+          "time": 1.21679733333333,
+          "waypoint": 0
+        },
+        {
+          "camera_clear": true,
+          "clearance": 83.9617538452148,
+          "position": [
+            -14.8021230697632,
+            111.493362426758,
+            182.032073974609
+          ],
+          "speed": 14.428297996521,
+          "time": 1.44457511111111,
+          "waypoint": 0
+        },
+        {
+          "camera_clear": true,
+          "clearance": 79.5343914031982,
+          "position": [
+            -18.5621356964111,
+            105.715591430664,
+            180.149963378906
+          ],
+          "speed": 16.5448551177979,
+          "time": 1.68730158730159,
+          "waypoint": 0
+        },
+        {
+          "camera_clear": true,
+          "clearance": 77.4617156982422,
+          "position": [
+            -21.4815578460693,
+            102.595588684082,
+            178.237640380859
+          ],
+          "speed": 17.8881282806396,
+          "time": 1.91587301587302,
+          "waypoint": 0
+        },
+        {
+          "camera_clear": true,
+          "clearance": 76.6414203643799,
+          "position": [
+            -25.3202266693115,
+            100.053367614746,
+            175.009033203125
+          ],
+          "speed": 19.3362350463867,
+          "time": 2.14444444444444,
+          "waypoint": 0
+        },
+        {
+          "camera_clear": true,
+          "clearance": 77.4586219787598,
+          "position": [
+            -28.0397300720215,
+            99.3600387573242,
+            172.102096557617
+          ],
+          "speed": 20.1765079498291,
+          "time": 2.39921333333333,
+          "waypoint": 0
+        },
+        {
+          "camera_clear": true,
+          "clearance": 79.9612064361572,
+          "position": [
+            -31.3031806945801,
+            100.053367614746,
+            167.648712158203
+          ],
+          "speed": 21.0064907073975,
+          "time": 2.64587466666667,
+          "waypoint": 0
+        },
+        {
+          "camera_clear": true,
+          "clearance": 83.6517505645752,
+          "position": [
+            -34.0177536010742,
+            102.339912414551,
+            162.642578125
+          ],
+          "speed": 21.5578708648682,
+          "time": 2.87975688888889,
+          "waypoint": 0
+        },
+        {
+          "camera_clear": true,
+          "clearance": 84.8984527587891,
+          "position": [
+            -35.6272163391113,
+            103.574974060059,
+            158.604675292969
+          ],
+          "speed": 21.8216876983643,
+          "time": 3.11745466666666,
+          "waypoint": 0
+        },
+        {
+          "camera_clear": true,
+          "clearance": 85.5021362304688,
+          "position": [
+            -37.1442680358887,
+            104.333236694336,
+            152.954605102539
+          ],
+          "speed": 22.0115146636963,
+          "time": 3.34959688888889,
+          "waypoint": 0
+        },
+        {
+          "camera_clear": true,
+          "clearance": 85.5544109344482,
+          "position": [
+            -37.9012603759766,
+            104.669296264648,
+            147.128509521484
+          ],
+          "speed": 22.0510730743408,
+          "time": 3.601476,
+          "waypoint": 0
+        },
+        {
+          "camera_clear": true,
+          "clearance": 85.4997940063477,
+          "position": [
+            -37.9576377868652,
+            104.794311523438,
+            142.726119995117
+          ],
+          "speed": 22.0002994537354,
+          "time": 3.86111111111111,
+          "waypoint": 0
+        },
+        {
+          "camera_clear": true,
+          "clearance": 85.2018966674805,
+          "position": [
+            -37.3523712158203,
+            104.897979736328,
+            136.918975830078
+          ],
+          "speed": 21.8444290161133,
+          "time": 4.12113333333333,
+          "waypoint": 0
+        },
+        {
+          "camera_clear": true,
+          "clearance": 84.7681655883789,
+          "position": [
+            -35.9868049621582,
+            104.949401855469,
+            131.29084777832
+          ],
+          "speed": 21.6695079803467,
+          "time": 4.36639866666666,
+          "waypoint": 0
+        },
+        {
+          "camera_clear": true,
+          "clearance": 84.4154491424561,
+          "position": [
+            -33.8877639770508,
+            104.974914550781,
+            125.932464599609
+          ],
+          "speed": 21.5641613006592,
+          "time": 4.62750977777777,
+          "waypoint": 0
+        },
+        {
+          "camera_clear": true,
+          "clearance": 84.3340358734131,
+          "position": [
+            -31.0856189727783,
+            104.987548828125,
+            120.91569519043
+          ],
+          "speed": 21.5811958312988,
+          "time": 4.89417644444444,
+          "waypoint": 0
+        },
+        {
+          "camera_clear": true,
+          "clearance": 84.3630905151367,
+          "position": [
+            -27.6128921508789,
+            104.993835449219,
+            116.300819396973
+          ],
+          "speed": 21.7485847473145,
+          "time": 5.15587333333333,
+          "waypoint": 0
+        },
+        {
+          "camera_clear": true,
+          "clearance": 84.5110473632813,
+          "position": [
+            -23.5042991638184,
+            104.996948242188,
+            112.14086151123
+          ],
+          "speed": 22.0758228302002,
+          "time": 5.40897244444444,
+          "waypoint": 0
+        },
+        {
+          "camera_clear": true,
+          "clearance": 85.0835800170898,
+          "position": [
+            -18.7974529266357,
+            104.998474121094,
+            108.484275817871
+          ],
+          "speed": 22.5579013824463,
+          "time": 5.66806399999999,
+          "waypoint": 0
+        },
+        {
+          "camera_clear": true,
+          "clearance": 85.8237228393555,
+          "position": [
+            -13.5338802337646,
+            104.999237060547,
+            105.376609802246
+          ],
+          "speed": 23.1783828735352,
+          "time": 5.93473066666666,
+          "waypoint": 0
+        },
+        {
+          "camera_clear": true,
+          "clearance": 86.3991928100586,
+          "position": [
+            -9.24872970581055,
+            104.999534606934,
+            103.432395935059
+          ],
+          "speed": 23.7197418212891,
+          "time": 6.17984266666666,
+          "waypoint": 0
+        },
+        {
+          "camera_clear": true,
+          "clearance": 87.0699787139893,
+          "position": [
+            -3.1273410320282,
+            104.999778747559,
+            101.389350891113
+          ],
+          "speed": 24.5173645019531,
+          "time": 6.4242871111111,
+          "waypoint": 0
+        },
+        {
+          "camera_clear": true,
+          "clearance": 87.6732025146484,
+          "position": [
+            1.73666667938232,
+            104.999870300293,
+            100.291481018066
+          ],
+          "speed": 25.1511573791504,
+          "time": 6.65525199999999,
+          "waypoint": 0
+        },
+        {
+          "camera_clear": true,
+          "clearance": 88.1602325439453,
+          "position": [
+            8.53003215789795,
+            104.999931335449,
+            99.4383392333984
+          ],
+          "speed": 26.0077247619629,
+          "time": 6.87321022222222,
+          "waypoint": 0
+        },
+        {
+          "camera_clear": true,
+          "clearance": 88.5466537475586,
+          "position": [
+            13.8111734390259,
+            104.999954223633,
+            99.2764053344727
+          ],
+          "speed": 26.6289100646973,
+          "time": 7.08143199999999,
+          "waypoint": 0
+        },
+        {
+          "camera_clear": true,
+          "clearance": 89.0102386474609,
+          "position": [
+            21.0222225189209,
+            104.999984741211,
+            99.7227630615234
+          ],
+          "speed": 27.3743381500244,
+          "time": 7.34809866666666,
+          "waypoint": 0
+        },
+        {
+          "camera_clear": true,
+          "clearance": 89.3598556518555,
+          "position": [
+            26.5953636169434,
+            104.999984741211,
+            100.295692443848
+          ],
+          "speed": 28.1533679962158,
+          "time": 7.59612266666666,
+          "waypoint": 1
+        },
+        {
+          "camera_clear": true,
+          "clearance": 90.0658864974976,
+          "position": [
+            34.0895729064941,
+            104.999984741211,
+            100.398307800293
+          ],
+          "speed": 28.0889225006104,
+          "time": 7.84133333333332,
+          "waypoint": 1
+        },
+        {
+          "camera_clear": true,
+          "clearance": 90.7044906616211,
+          "position": [
+            41.5264511108398,
+            104.999984741211,
+            99.7217636108398
+          ],
+          "speed": 27.9637908935547,
+          "time": 8.09107866666666,
+          "waypoint": 1
+        },
+        {
+          "camera_clear": true,
+          "clearance": 91.1102666854858,
+          "position": [
+            47.0081596374512,
+            104.999984741211,
+            98.7105484008789
+          ],
+          "speed": 27.8304824829102,
+          "time": 8.32659466666666,
+          "waypoint": 1
+        },
+        {
+          "camera_clear": true,
+          "clearance": 91.691291809082,
+          "position": [
+            54.112979888916,
+            104.999984741211,
+            96.7096328735352
+          ],
+          "speed": 27.6008453369141,
+          "time": 8.56643199999999,
+          "waypoint": 1
+        },
+        {
+          "camera_clear": true,
+          "clearance": 92.2374649047852,
+          "position": [
+            60.9004020690918,
+            104.999984741211,
+            93.9948425292969
+          ],
+          "speed": 27.3130111694336,
+          "time": 8.81087644444444,
+          "waypoint": 1
+        },
+        {
+          "camera_clear": true,
+          "clearance": 92.8364515304565,
+          "position": [
+            67.2832107543945,
+            104.999984741211,
+            90.6117477416992
+          ],
+          "speed": 26.9684963226318,
+          "time": 9.07198755555555,
+          "waypoint": 1
+        },
+        {
+          "camera_clear": true,
+          "clearance": 93.7900390625,
+          "position": [
+            73.1802825927734,
+            104.999984741211,
+            86.6167678833008
+          ],
+          "speed": 26.5691680908203,
+          "time": 9.33865422222222,
+          "waypoint": 1
+        },
+        {
+          "camera_clear": true,
+          "clearance": 94.8167114257813,
+          "position": [
+            78.5179672241211,
+            104.999984741211,
+            82.0764389038086
+          ],
+          "speed": 26.1172657012939,
+          "time": 9.60532088888888,
+          "waypoint": 1
+        },
+        {
+          "camera_clear": true,
+          "clearance": 95.6100454330444,
+          "position": [
+            82.1147155761719,
+            104.999984741211,
+            78.3585510253906
+          ],
+          "speed": 25.7454090118408,
+          "time": 9.85428933333333,
+          "waypoint": 1
+        },
+        {
+          "camera_clear": true,
+          "clearance": 96.5997838973999,
+          "position": [
+            86.3231201171875,
+            104.999984741211,
+            73.0511093139648
+          ],
+          "speed": 25.2081127166748,
+          "time": 10.1042893333333,
+          "waypoint": 1
+        },
+        {
+          "camera_clear": true,
+          "clearance": 97.5641865730286,
+          "position": [
+            89.8208999633789,
+            104.999984741211,
+            67.4183883666992
+          ],
+          "speed": 24.6843929290771,
+          "time": 10.3487337777778,
+          "waypoint": 1
+        },
+        {
+          "camera_clear": true,
+          "clearance": 98.2529454231262,
+          "position": [
+            91.9609222412109,
+            104.999984741211,
+            63.0215148925781
+          ],
+          "speed": 24.3512744903564,
+          "time": 10.5937315555556,
+          "waypoint": 1
+        },
+        {
+          "camera_clear": true,
+          "clearance": 98.3239288330078,
+          "position": [
+            94.1557693481445,
+            104.999984741211,
+            56.9730834960938
+          ],
+          "speed": 24.0370483398438,
+          "time": 10.8431711111111,
+          "waypoint": 1
+        },
+        {
+          "camera_clear": true,
+          "clearance": 95.8879737854004,
+          "position": [
+            95.5870590209961,
+            104.999984741211,
+            50.7557830810547
+          ],
+          "speed": 23.9038200378418,
+          "time": 11.0931711111111,
+          "waypoint": 1
+        },
+        {
+          "camera_clear": true,
+          "clearance": 93.8404865264893,
+          "position": [
+            96.1544342041016,
+            104.999984741211,
+            46.0073356628418
+          ],
+          "speed": 23.939338684082,
+          "time": 11.3152266666667,
+          "waypoint": 1
+        },
+        {
+          "camera_clear": true,
+          "clearance": 91.3997240066528,
+          "position": [
+            96.2317047119141,
+            104.999984741211,
+            39.5924263000488
+          ],
+          "speed": 24.1775588989258,
+          "time": 11.5652266666667,
+          "waypoint": 1
+        },
+        {
+          "camera_clear": true,
+          "clearance": 89.3146667480469,
+          "position": [
+            95.5293655395508,
+            104.999984741211,
+            33.115478515625
+          ],
+          "speed": 24.6303558349609,
+          "time": 11.8152266666667,
+          "waypoint": 1
+        },
+        {
+          "camera_clear": true,
+          "clearance": 88.0018157958984,
+          "position": [
+            94.4896850585938,
+            104.999984741211,
+            28.2388305664063
+          ],
+          "speed": 25.1040744781494,
+          "time": 12.0228266666667,
+          "waypoint": 1
+        },
+        {
+          "camera_clear": true,
+          "clearance": 86.8941421508789,
+          "position": [
+            93.0100555419922,
+            104.999984741211,
+            23.3631267547607
+          ],
+          "speed": 25.6830940246582,
+          "time": 12.2631386666667,
+          "waypoint": 1
+        },
+        {
+          "camera_clear": true,
+          "clearance": 87.5059852600098,
+          "position": [
+            90.3535766601563,
+            104.999984741211,
+            16.8927745819092
+          ],
+          "speed": 26.591775894165,
+          "time": 12.4989523636364,
+          "waypoint": 1
+        },
+        {
+          "camera_clear": true,
+          "clearance": 81.7898559570313,
+          "position": [
+            86.9192123413086,
+            104.999984741211,
+            10.5017518997192
+          ],
+          "speed": 27.6000308990479,
+          "time": 12.7454545454546,
+          "waypoint": 1
+        },
+        {
+          "camera_clear": true,
+          "clearance": 74.2141265869141,
+          "position": [
+            83.8684844970703,
+            104.999984741211,
+            5.79787015914917
+          ],
+          "speed": 28.15993309021,
+          "time": 12.989393939394,
+          "waypoint": 1
+        },
+        {
+          "camera_clear": true,
+          "clearance": 68.3892517089844,
+          "position": [
+            79.6436614990234,
+            104.999984741211,
+            -0.410192847251892
+          ],
+          "speed": 28.15993309021,
+          "time": 13.209952,
+          "waypoint": 1
+        },
+        {
+          "camera_clear": true,
+          "clearance": 66.8387985229492,
+          "position": [
+            76.4358825683594,
+            104.999984741211,
+            -5.03938007354736
+          ],
+          "speed": 28.1599311828613,
+          "time": 13.4666666666667,
+          "waypoint": 1
+        },
+        {
+          "camera_clear": true,
+          "clearance": 64.7302017211914,
+          "position": [
+            72.1218414306641,
+            104.999984741211,
+            -11.1858167648315
+          ],
+          "speed": 28.1599311828613,
+          "time": 13.6850506666667,
+          "waypoint": 1
+        },
+        {
+          "camera_clear": true,
+          "clearance": 63.1248893737793,
+          "position": [
+            68.864990234375,
+            104.999984741211,
+            -15.7806062698364
+          ],
+          "speed": 28.1599311828613,
+          "time": 13.9105666666667,
+          "waypoint": 1
+        },
+        {
+          "camera_clear": true,
+          "clearance": 65.9797515869141,
+          "position": [
+            64.502082824707,
+            104.999984741211,
+            -21.8924655914307
+          ],
+          "speed": 28.1599311828613,
+          "time": 14.1564093333333,
+          "waypoint": 1
+        },
+        {
+          "camera_clear": true,
+          "clearance": 68.5609664916992,
+          "position": [
+            61.2180061340332,
+            104.999984741211,
+            -26.4678440093994
+          ],
+          "speed": 28.15993309021,
+          "time": 14.3683586666667,
+          "waypoint": 1
+        },
+        {
+          "camera_clear": true,
+          "clearance": 70.5740814208984,
+          "position": [
+            57.9264030456543,
+            104.999984741211,
+            -31.0378150939941
+          ],
+          "speed": 28.15993309021,
+          "time": 14.5720543703704,
+          "waypoint": 1
+        },
+        {
+          "camera_clear": true,
+          "clearance": 72.7019424438477,
+          "position": [
+            54.6288032531738,
+            104.999984741211,
+            -35.6034622192383
+          ],
+          "speed": 28.15993309021,
+          "time": 14.7757580740741,
+          "waypoint": 1
+        },
+        {
+          "camera_clear": true,
+          "clearance": 74.6749649047852,
+          "position": [
+            50.2246055603027,
+            104.999984741211,
+            -41.6856346130371
+          ],
+          "speed": 28.15993309021,
+          "time": 15.0257580740741,
+          "waypoint": 1
+        },
+        {
+          "camera_clear": true,
+          "clearance": 76.5028457641602,
+          "position": [
+            45.8137550354004,
+            104.999984741211,
+            -47.7629852294922
+          ],
+          "speed": 28.1599349975586,
+          "time": 15.2721306666667,
+          "waypoint": 1
+        },
+        {
+          "camera_clear": true,
+          "clearance": 77.891529083252,
+          "position": [
+            42.5022811889648,
+            104.999984741211,
+            -52.3185768127441
+          ],
+          "speed": 28.15993309021,
+          "time": 15.4776862222222,
+          "waypoint": 1
+        },
+        {
+          "camera_clear": true,
+          "clearance": 79.1985092163086,
+          "position": [
+            39.1885643005371,
+            104.999984741211,
+            -56.8725395202637
+          ],
+          "speed": 28.1599311828613,
+          "time": 15.6888888888889,
+          "waypoint": 1
+        },
+        {
+          "camera_clear": true,
+          "clearance": 80.2791213989258,
+          "position": [
+            35.8729591369629,
+            104.999984741211,
+            -61.4251251220703
+          ],
+          "speed": 28.15993309021,
+          "time": 15.8962962962963,
+          "waypoint": 1
+        },
+        {
+          "camera_clear": true,
+          "clearance": 82.1763496398926,
+          "position": [
+            32.8009605407715,
+            105.693321228027,
+            -66.1396408081055
+          ],
+          "speed": 28.1287403106689,
+          "time": 16.0981481481482,
+          "waypoint": 2
+        },
+        {
+          "camera_clear": true,
+          "clearance": 84.8795394897461,
+          "position": [
+            30.1118946075439,
+            107.426666259766,
+            -71.0702819824219
+          ],
+          "speed": 28.0632934570313,
+          "time": 16.323244,
+          "waypoint": 2
+        },
+        {
+          "camera_clear": true,
+          "clearance": 90.2027816772461,
+          "position": [
+            27.1537284851074,
+            111.355560302734,
+            -77.9167785644531
+          ],
+          "speed": 27.9230728149414,
+          "time": 16.5531694545455,
+          "waypoint": 2
+        },
+        {
+          "camera_clear": true,
+          "clearance": 94.3546829223633,
+          "position": [
+            25.424259185791,
+            114.623168945313,
+            -83.2057571411133
+          ],
+          "speed": 27.7785816192627,
+          "time": 16.7753916767677,
+          "waypoint": 2
+        },
+        {
+          "camera_clear": true,
+          "clearance": 97.645881652832,
+          "position": [
+            24.1256771087646,
+            117.197425842285,
+            -88.5823822021484
+          ],
+          "speed": 27.600830078125,
+          "time": 16.9976138989899,
+          "waypoint": 2
+        },
+        {
+          "camera_clear": true,
+          "clearance": 100.077964782715,
+          "position": [
+            23.0748996734619,
+            119.084815979004,
+            -95.8166809082031
+          ],
+          "speed": 27.3129959106445,
+          "time": 17.2198361212122,
+          "waypoint": 2
+        },
+        {
+          "camera_clear": true,
+          "clearance": 100.564315795898,
+          "position": [
+            22.7996463775635,
+            119.559715270996,
+            -101.23770904541
+          ],
+          "speed": 27.0598258972168,
+          "time": 17.4420583434344,
+          "waypoint": 2
+        },
+        {
+          "camera_clear": true,
+          "clearance": 100.619113922119,
+          "position": [
+            22.9612159729004,
+            119.726135253906,
+            -106.608489990234
+          ],
+          "speed": 26.7755355834961,
+          "time": 17.6642805656566,
+          "waypoint": 2
+        },
+        {
+          "camera_clear": true,
+          "clearance": 101.015968322754,
+          "position": [
+            23.8439064025879,
+            119.864166259766,
+            -113.620094299316
+          ],
+          "speed": 26.3496131896973,
+          "time": 17.8715426666667,
+          "waypoint": 2
+        },
+        {
+          "camera_clear": true,
+          "clearance": 100.953062057495,
+          "position": [
+            24.9916667938232,
+            119.915504455566,
+            -118.714309692383
+          ],
+          "speed": 25.99635887146,
+          "time": 18.0897244848485,
+          "waypoint": 2
+        },
+        {
+          "camera_clear": true,
+          "clearance": 100.765546798706,
+          "position": [
+            26.5393180847168,
+            119.94743347168,
+            -123.62557220459
+          ],
+          "speed": 25.6316471099854,
+          "time": 18.3093842424243,
+          "waypoint": 2
+        },
+        {
+          "camera_clear": true,
+          "clearance": 100.622085571289,
+          "position": [
+            28.4710178375244,
+            119.967300415039,
+            -128.322463989258
+          ],
+          "speed": 25.2876033782959,
+          "time": 18.5295862626263,
+          "waypoint": 2
+        },
+        {
+          "camera_clear": true,
+          "clearance": 100.103668212891,
+          "position": [
+            31.61789894104,
+            119.983779907227,
+            -134.208511352539
+          ],
+          "speed": 24.9081058502197,
+          "time": 18.7497882828283,
+          "waypoint": 2
+        },
+        {
+          "camera_clear": true,
+          "clearance": 99.2972183227539,
+          "position": [
+            34.3876991271973,
+            119.98991394043,
+            -138.313919067383
+          ],
+          "speed": 24.7090969085693,
+          "time": 18.9720105050506,
+          "waypoint": 2
+        },
+        {
+          "camera_clear": true,
+          "clearance": 98.3291854858398,
+          "position": [
+            37.4938087463379,
+            119.99373626709,
+            -142.135726928711
+          ],
+          "speed": 24.6033763885498,
+          "time": 19.1942327272728,
+          "waypoint": 2
+        },
+        {
+          "camera_clear": true,
+          "clearance": 97.8457679748535,
+          "position": [
+            42.1363868713379,
+            119.996879577637,
+            -146.765441894531
+          ],
+          "speed": 24.6215839385986,
+          "time": 19.4154448484849,
+          "waypoint": 2
+        },
+        {
+          "camera_clear": true,
+          "clearance": 97.7353954315186,
+          "position": [
+            45.9776077270508,
+            119.998069763184,
+            -149.871200561523
+          ],
+          "speed": 24.7599105834961,
+          "time": 19.6303030303031,
+          "waypoint": 2
+        },
+        {
+          "camera_clear": true,
+          "clearance": 97.5871200561523,
+          "position": [
+            50.1128234863281,
+            119.998802185059,
+            -152.649673461914
+          ],
+          "speed": 25.0070781707764,
+          "time": 19.8484848484849,
+          "waypoint": 2
+        },
+        {
+          "camera_clear": true,
+          "clearance": 97.4702224731445,
+          "position": [
+            54.5290794372559,
+            119.99925994873,
+            -155.089645385742
+          ],
+          "speed": 25.3590030670166,
+          "time": 20.0666666666667,
+          "waypoint": 2
+        },
+        {
+          "camera_clear": true,
+          "clearance": 97.3772125244141,
+          "position": [
+            60.8306884765625,
+            119.999626159668,
+            -157.79753112793
+          ],
+          "speed": 25.9764709472656,
+          "time": 20.2848484848486,
+          "waypoint": 2
+        },
+        {
+          "camera_clear": true,
+          "clearance": 97.3599128723145,
+          "position": [
+            65.8468322753906,
+            119.99976348877,
+            -159.40495300293
+          ],
+          "speed": 26.5347194671631,
+          "time": 20.5030303030304,
+          "waypoint": 2
+        },
+        {
+          "camera_clear": true,
+          "clearance": 97.2822723388672,
+          "position": [
+            71.0918807983398,
+            119.999855041504,
+            -160.636703491211
+          ],
+          "speed": 27.1548938751221,
+          "time": 20.7252525252526,
+          "waypoint": 2
+        },
+        {
+          "camera_clear": true,
+          "clearance": 97.2952423095703,
+          "position": [
+            78.3998565673828,
+            119.99991607666,
+            -161.671691894531
+          ],
+          "speed": 28.0011520385742,
+          "time": 20.9474747474748,
+          "waypoint": 2
+        },
+        {
+          "camera_clear": true,
+          "clearance": 97.2847957611084,
+          "position": [
+            84.0154876708984,
+            119.999938964844,
+            -162.100112915039
+          ],
+          "speed": 28.1599197387695,
+          "time": 21.1696969696971,
+          "waypoint": 2
+        },
+        {
+          "camera_clear": true,
+          "clearance": 96.3815612792969,
+          "position": [
+            91.5096206665039,
+            119.999969482422,
+            -162.576553344727
+          ],
+          "speed": 28.1599178314209,
+          "time": 21.4148000000001,
+          "waypoint": 2
+        },
+        {
+          "camera_clear": true,
+          "clearance": 95.8191623687744,
+          "position": [
+            97.1335067749023,
+            119.999992370605,
+            -162.878265380859
+          ],
+          "speed": 28.1599159240723,
+          "time": 21.6481333333334,
+          "waypoint": 2
+        },
+        {
+          "camera_clear": true,
+          "clearance": 95.0138969421387,
+          "position": [
+            104.634742736816,
+            119.999992370605,
+            -163.225936889648
+          ],
+          "speed": 28.1599140167236,
+          "time": 21.8767047619049,
+          "waypoint": 2
+        },
+        {
+          "camera_clear": true,
+          "clearance": 94.4222927093506,
+          "position": [
+            110.262092590332,
+            119.999992370605,
+            -163.454177856445
+          ],
+          "speed": 28.1599159240723,
+          "time": 22.104761904762,
+          "waypoint": 2
+        },
+        {
+          "camera_clear": true,
+          "clearance": 93.5174942016602,
+          "position": [
+            117.766479492188,
+            119.999992370605,
+            -163.725936889648
+          ],
+          "speed": 28.1599159240723,
+          "time": 22.3380952380953,
+          "waypoint": 2
+        },
+        {
+          "camera_clear": true,
+          "clearance": 92.9671058654785,
+          "position": [
+            123.395462036133,
+            119.999992370605,
+            -163.909957885742
+          ],
+          "speed": 28.1599140167236,
+          "time": 22.5702380952382,
+          "waypoint": 2
+        },
+        {
+          "camera_clear": true,
+          "clearance": 93.1118927001953,
+          "position": [
+            129.024856567383,
+            119.999992370605,
+            -164.080657958984
+          ],
+          "speed": 28.1599140167236,
+          "time": 22.799761904762,
+          "waypoint": 2
+        },
+        {
+          "camera_clear": true,
+          "clearance": 92.3315734863281,
+          "position": [
+            136.531219482422,
+            119.999992370605,
+            -164.290908813477
+          ],
+          "speed": 28.159912109375,
+          "time": 23.0283333333334,
+          "waypoint": 2
+        },
+        {
+          "camera_clear": true,
+          "clearance": 91.2880401611328,
+          "position": [
+            142.156524658203,
+            119.999992370605,
+            -164.15007019043
+          ],
+          "speed": 28.1287212371826,
+          "time": 23.2395506666668,
+          "waypoint": 3
+        },
+        {
+          "camera_clear": true,
+          "clearance": 89.5908813476563,
+          "position": [
+            149.589248657227,
+            119.999992370605,
+            -163.281845092773
+          ],
+          "speed": 28.0338745117188,
+          "time": 23.4666666666668,
+          "waypoint": 3
+        },
+        {
+          "camera_clear": true,
+          "clearance": 88.1971588134766,
+          "position": [
+            155.062408447266,
+            119.999992370605,
+            -162.127822875977
+          ],
+          "speed": 27.9431762695313,
+          "time": 23.704761904762,
+          "waypoint": 3
+        },
+        {
+          "camera_clear": true,
+          "clearance": 86.1104431152344,
+          "position": [
+            162.162811279297,
+            119.999992370605,
+            -159.93408203125
+          ],
+          "speed": 27.8476181030273,
+          "time": 23.9333333333334,
+          "waypoint": 3
+        },
+        {
+          "camera_clear": true,
+          "clearance": 85.2135620117188,
+          "position": [
+            167.305374145508,
+            119.999992370605,
+            -157.809265136719
+          ],
+          "speed": 27.8233337402344,
+          "time": 24.1570403809525,
+          "waypoint": 3
+        },
+        {
+          "camera_clear": true,
+          "clearance": 84.0896987915039,
+          "position": [
+            172.266723632813,
+            119.999992370605,
+            -155.283584594727
+          ],
+          "speed": 27.8586864471436,
+          "time": 24.3904761904763,
+          "waypoint": 3
+        },
+        {
+          "camera_clear": true,
+          "clearance": 83.394645690918,
+          "position": [
+            178.564971923828,
+            119.999992370605,
+            -151.309585571289
+          ],
+          "speed": 27.9977588653564,
+          "time": 24.6011826666668,
+          "waypoint": 3
+        },
+        {
+          "camera_clear": true,
+          "clearance": 82.8528671264648,
+          "position": [
+            183.022598266602,
+            119.999992370605,
+            -147.890319824219
+          ],
+          "speed": 28.1453590393066,
+          "time": 24.8177253333334,
+          "waypoint": 3
+        },
+        {
+          "camera_clear": true,
+          "clearance": 82.6780166625977,
+          "position": [
+            187.328598022461,
+            119.999992370605,
+            -144.260360717773
+          ],
+          "speed": 28.1598968505859,
+          "time": 25.0417266666668,
+          "waypoint": 3
+        },
+        {
+          "camera_clear": true,
+          "clearance": 82.6573867797852,
+          "position": [
+            191.570419311523,
+            119.999992370605,
+            -140.555541992188
+          ],
+          "speed": 28.1598949432373,
+          "time": 25.2545454545456,
+          "waypoint": 3
+        },
+        {
+          "camera_clear": true,
+          "clearance": 82.5572471618652,
+          "position": [
+            197.148666381836,
+            119.999992370605,
+            -135.528472900391
+          ],
+          "speed": 28.1598930358887,
+          "time": 25.4727272727274,
+          "waypoint": 3
+        },
+        {
+          "camera_clear": true,
+          "clearance": 82.4385414123535,
+          "position": [
+            201.287445068359,
+            119.999992370605,
+            -131.708862304688
+          ],
+          "speed": 28.15989112854,
+          "time": 25.6969696969698,
+          "waypoint": 3
+        },
+        {
+          "camera_clear": true,
+          "clearance": 82.2962188720703,
+          "position": [
+            205.398345947266,
+            119.999992370605,
+            -127.859245300293
+          ],
+          "speed": 28.1598930358887,
+          "time": 25.9044546666668,
+          "waypoint": 3
+        },
+        {
+          "camera_clear": true,
+          "clearance": 81.9621887207031,
+          "position": [
+            209.487442016602,
+            119.999992370605,
+            -123.986465454102
+          ],
+          "speed": 28.1598892211914,
+          "time": 26.1200000000001,
+          "waypoint": 3
+        },
+        {
+          "camera_clear": true,
+          "clearance": 79.5923538208008,
+          "position": [
+            214.913314819336,
+            119.999992370605,
+            -118.795188903809
+          ],
+          "speed": 28.1598892211914,
+          "time": 26.3333333333334,
+          "waypoint": 3
+        },
+        {
+          "camera_clear": true,
+          "clearance": 81.1549911499023,
+          "position": [
+            218.96745300293,
+            119.999992370605,
+            -114.885841369629
+          ],
+          "speed": 28.1598873138428,
+          "time": 26.549090909091,
+          "waypoint": 3
+        },
+        {
+          "camera_clear": true,
+          "clearance": 81.335823059082,
+          "position": [
+            223.012069702148,
+            119.999992370605,
+            -110.966613769531
+          ],
+          "speed": 28.1598892211914,
+          "time": 26.7652747878789,
+          "waypoint": 3
+        },
+        {
+          "camera_clear": true,
+          "clearance": 78.1187515258789,
+          "position": [
+            227.049118041992,
+            119.999992370605,
+            -107.039619445801
+          ],
+          "speed": 28.1598854064941,
+          "time": 26.9878787878789,
+          "waypoint": 3
+        },
+        {
+          "camera_clear": true,
+          "clearance": 71.5356597900391,
+          "position": [
+            232.422653198242,
+            119.999992370605,
+            -101.794174194336
+          ],
+          "speed": 28.1598834991455,
+          "time": 27.2060606060607,
+          "waypoint": 3
+        },
+        {
+          "camera_clear": true,
+          "clearance": 68.1949462890625,
+          "position": [
+            236.447387695313,
+            119.999992370605,
+            -97.8545379638672
+          ],
+          "speed": 28.1598854064941,
+          "time": 27.4449334545456,
+          "waypoint": 3
+        },
+        {
+          "camera_clear": true,
+          "clearance": 71.6720428466797,
+          "position": [
+            240.468627929688,
+            119.999992370605,
+            -93.9113388061523
+          ],
+          "speed": 28.1598834991455,
+          "time": 27.6545454545456,
+          "waypoint": 3
+        },
+        {
+          "camera_clear": true,
+          "clearance": 80.8144378662109,
+          "position": [
+            244.487060546875,
+            119.999992370605,
+            -89.9652557373047
+          ],
+          "speed": 28.1598854064941,
+          "time": 27.8666666666668,
+          "waypoint": 3
+        },
+        {
+          "camera_clear": true,
+          "clearance": 82.7082443237305,
+          "position": [
+            249.841400146484,
+            119.999992370605,
+            -84.7002105712891
+          ],
+          "speed": 28.1598834991455,
+          "time": 28.0800000000001,
+          "waypoint": 3
+        },
+        {
+          "camera_clear": true,
+          "clearance": 85.2643432617188,
+          "position": [
+            253.85498046875,
+            119.999992370605,
+            -80.7492218017578
+          ],
+          "speed": 28.1598854064941,
+          "time": 28.2881266666668,
+          "waypoint": 3
+        },
+        {
+          "camera_clear": true,
+          "clearance": 87.5156860351563,
+          "position": [
+            257.867095947266,
+            119.999992370605,
+            -76.796745300293
+          ],
+          "speed": 28.1598854064941,
+          "time": 28.5209746666668,
+          "waypoint": 3
+        },
+        {
+          "camera_clear": true,
+          "clearance": 89.0864944458008,
+          "position": [
+            261.877960205078,
+            119.999992370605,
+            -72.8429946899414
+          ],
+          "speed": 28.1598873138428,
+          "time": 28.7249760000001,
+          "waypoint": 3
+        },
+        {
+          "camera_clear": true,
+          "clearance": 88.8378219604492,
+          "position": [
+            266.864166259766,
+            118.844444274902,
+            -67.241569519043
+          ],
+          "speed": 28.1106777191162,
+          "time": 28.9648760000001,
+          "waypoint": 4
+        },
+        {
+          "camera_clear": true,
+          "clearance": 87.0223426818848,
+          "position": [
+            270.197357177734,
+            116.764450073242,
+            -62.7277488708496
+          ],
+          "speed": 28.0338478088379,
+          "time": 29.1804053333335,
+          "waypoint": 4
+        },
+        {
+          "camera_clear": true,
+          "clearance": 84.0469970703125,
+          "position": [
+            273.156066894531,
+            113.64444732666,
+            -57.9834976196289
+          ],
+          "speed": 27.9230289459229,
+          "time": 29.3993952323234,
+          "waypoint": 4
+        },
+        {
+          "camera_clear": true,
+          "clearance": 78.1962280273438,
+          "position": [
+            276.485137939453,
+            107.866676330566,
+            -51.3604431152344
+          ],
+          "speed": 27.7364654541016,
+          "time": 29.6216174545456,
+          "waypoint": 4
+        },
+        {
+          "camera_clear": true,
+          "clearance": 74.3377361297607,
+          "position": [
+            278.501586914063,
+            103.706680297852,
+            -46.2129707336426
+          ],
+          "speed": 27.6073360443115,
+          "time": 29.8657000000001,
+          "waypoint": 4
+        },
+        {
+          "camera_clear": true,
+          "clearance": 70.9572296142578,
+          "position": [
+            280.532958984375,
+            99.7777862548828,
+            -39.1594047546387
+          ],
+          "speed": 27.5076007843018,
+          "time": 30.0875960000001,
+          "waypoint": 4
+        },
+        {
+          "camera_clear": true,
+          "clearance": 69.213752746582,
+          "position": [
+            281.800659179688,
+            97.6977996826172,
+            -31.9377937316895
+          ],
+          "speed": 27.5225715637207,
+          "time": 30.3542626666668,
+          "waypoint": 4
+        },
+        {
+          "camera_clear": true,
+          "clearance": 68.9338073730469,
+          "position": [
+            282.244689941406,
+            97.3511352539063,
+            -26.4400978088379
+          ],
+          "speed": 27.624231338501,
+          "time": 30.562296888889,
+          "waypoint": 4
+        },
+        {
+          "camera_clear": true,
+          "clearance": 69.804817199707,
+          "position": [
+            282.156341552734,
+            98.3653106689453,
+            -19.0372924804688
+          ],
+          "speed": 27.8788166046143,
+          "time": 30.8289635555557,
+          "waypoint": 4
+        },
+        {
+          "camera_clear": true,
+          "clearance": 70.1700477600098,
+          "position": [
+            281.577545166016,
+            98.9954528808594,
+            -13.4598655700684
+          ],
+          "speed": 28.1259651184082,
+          "time": 31.0306866666668,
+          "waypoint": 4
+        },
+        {
+          "camera_clear": true,
+          "clearance": 70.2245941162109,
+          "position": [
+            280.742523193359,
+            99.3751678466797,
+            -7.8901834487915
+          ],
+          "speed": 28.1598777770996,
+          "time": 31.2315080000001,
+          "waypoint": 4
+        },
+        {
+          "camera_clear": true,
+          "clearance": 70.1244583129883,
+          "position": [
+            279.835479736328,
+            99.6113510131836,
+            -2.33175897598267
+          ],
+          "speed": 28.1598739624023,
+          "time": 31.4418783703705,
+          "waypoint": 4
+        },
+        {
+          "camera_clear": true,
+          "clearance": 70.3990173339844,
+          "position": [
+            278.873352050781,
+            99.7582702636719,
+            3.21740245819092
+          ],
+          "speed": 28.1598720550537,
+          "time": 31.6492857777779,
+          "waypoint": 4
+        },
+        {
+          "camera_clear": true,
+          "clearance": 71.6305828094482,
+          "position": [
+            277.868957519531,
+            99.8496398925781,
+            8.7590799331665
+          ],
+          "speed": 28.1598682403564,
+          "time": 31.8566931851853,
+          "waypoint": 4
+        },
+        {
+          "camera_clear": true,
+          "clearance": 72.8050422668457,
+          "position": [
+            276.832122802734,
+            99.9064712524414,
+            14.2947845458984
+          ],
+          "speed": 28.1598663330078,
+          "time": 32.0641005925927,
+          "waypoint": 4
+        },
+        {
+          "camera_clear": true,
+          "clearance": 74.3415756225586,
+          "position": [
+            275.411346435547,
+            99.9536209106445,
+            21.6684417724609
+          ],
+          "speed": 28.1598644256592,
+          "time": 32.2753040000001,
+          "waypoint": 4
+        },
+        {
+          "camera_clear": true,
+          "clearance": 77.1613521575928,
+          "position": [
+            274.323913574219,
+            99.9711532592773,
+            27.1944370269775
+          ],
+          "speed": 28.1598625183105,
+          "time": 32.5125840000001,
+          "waypoint": 4
+        },
+        {
+          "camera_clear": true,
+          "clearance": 78.2108211517334,
+          "position": [
+            273.223114013672,
+            99.982048034668,
+            32.7177810668945
+          ],
+          "speed": 28.1598625183105,
+          "time": 32.7321551111112,
+          "waypoint": 4
+        },
+        {
+          "camera_clear": true,
+          "clearance": 79.6066360473633,
+          "position": [
+            271.739410400391,
+            99.991081237793,
+            40.079044342041
+          ],
+          "speed": 28.1598625183105,
+          "time": 32.9543773333335,
+          "waypoint": 4
+        },
+        {
+          "camera_clear": true,
+          "clearance": 80.6374053955078,
+          "position": [
+            270.617492675781,
+            99.9944458007813,
+            45.5981369018555
+          ],
+          "speed": 28.1598625183105,
+          "time": 33.1797741587303,
+          "waypoint": 4
+        },
+        {
+          "camera_clear": true,
+          "clearance": 82.0496978759766,
+          "position": [
+            269.112884521484,
+            99.9972534179688,
+            52.9551544189453
+          ],
+          "speed": 28.1598625183105,
+          "time": 33.4019963809525,
+          "waypoint": 4
+        },
+        {
+          "camera_clear": true,
+          "clearance": 83.0977249145508,
+          "position": [
+            267.979339599609,
+            99.9982833862305,
+            58.4718818664551
+          ],
+          "speed": 28.1598644256592,
+          "time": 33.6297830476192,
+          "waypoint": 4
+        },
+        {
+          "camera_clear": true,
+          "clearance": 84.1007680892944,
+          "position": [
+            266.842651367188,
+            99.9989242553711,
+            63.9879531860352
+          ],
+          "speed": 28.1598625183105,
+          "time": 33.8583544761906,
+          "waypoint": 4
+        },
+        {
+          "camera_clear": true,
+          "clearance": 85.4148426055908,
+          "position": [
+            265.323211669922,
+            99.9994735717773,
+            71.341911315918
+          ],
+          "speed": 28.1598663330078,
+          "time": 34.0821640000001,
+          "waypoint": 4
+        },
+        {
+          "camera_clear": true,
+          "clearance": 86.3984670639038,
+          "position": [
+            264.181365966797,
+            99.9996795654297,
+            76.8569107055664
+          ],
+          "speed": 28.1598682403564,
+          "time": 34.3043862222224,
+          "waypoint": 4
+        },
+        {
+          "camera_clear": true,
+          "clearance": 86.5838928222656,
+          "position": [
+            263.038055419922,
+            99.9997940063477,
+            82.3716125488281
+          ],
+          "speed": 28.1598701477051,
+          "time": 34.5245626666668,
+          "waypoint": 4
+        },
+        {
+          "camera_clear": true,
+          "clearance": 86.86842918396,
+          "position": [
+            261.511810302734,
+            99.999885559082,
+            89.7241821289063
+          ],
+          "speed": 28.1598701477051,
+          "time": 34.7373017777779,
+          "waypoint": 4
+        },
+        {
+          "camera_clear": true,
+          "clearance": 87.1095275878906,
+          "position": [
+            260.366027832031,
+            99.9999313354492,
+            95.2383880615234
+          ],
+          "speed": 28.1598739624023,
+          "time": 34.9666666666668,
+          "waypoint": 4
+        },
+        {
+          "camera_clear": true,
+          "clearance": 86.8145484924316,
+          "position": [
+            258.837280273438,
+            99.9999618530273,
+            102.590438842773
+          ],
+          "speed": 28.1598739624023,
+          "time": 35.2000000000002,
+          "waypoint": 4
+        },
+        {
+          "camera_clear": true,
+          "clearance": 86.5752944946289,
+          "position": [
+            257.690032958984,
+            99.9999847412109,
+            108.10432434082
+          ],
+          "speed": 28.1598777770996,
+          "time": 35.4285714285716,
+          "waypoint": 4
+        },
+        {
+          "camera_clear": true,
+          "clearance": 86.3205089569092,
+          "position": [
+            256.542297363281,
+            99.9999847412109,
+            113.618110656738
+          ],
+          "speed": 28.1598777770996,
+          "time": 35.657142857143,
+          "waypoint": 4
+        },
+        {
+          "camera_clear": true,
+          "clearance": 87.2267532348633,
+          "position": [
+            254.539352416992,
+            101.155548095703,
+            120.844871520996
+          ],
+          "speed": 28.1106662750244,
+          "time": 35.8832248888891,
+          "waypoint": 5
+        },
+        {
+          "camera_clear": true,
+          "clearance": 89.1793212890625,
+          "position": [
+            252.553970336914,
+            103.235557556152,
+            126.093002319336
+          ],
+          "speed": 28.0338325500488,
+          "time": 36.1070344126986,
+          "waypoint": 5
+        },
+        {
+          "camera_clear": true,
+          "clearance": 91.649640083313,
+          "position": [
+            250.171905517578,
+            105.792510986328,
+            131.151412963867
+          ],
+          "speed": 27.9230155944824,
+          "time": 36.3292566349208,
+          "waypoint": 5
+        },
+        {
+          "camera_clear": true,
+          "clearance": 93.9795141220093,
+          "position": [
+            246.413055419922,
+            108.21076965332,
+            137.538223266602
+          ],
+          "speed": 27.7229442596436,
+          "time": 36.5477626666668,
+          "waypoint": 5
+        },
+        {
+          "camera_clear": true,
+          "clearance": 94.8752126693726,
+          "position": [
+            243.187240600586,
+            109.149833679199,
+            142.015869140625
+          ],
+          "speed": 27.534215927124,
+          "time": 36.7823946666668,
+          "waypoint": 5
+        },
+        {
+          "camera_clear": true,
+          "clearance": 95.1915731430054,
+          "position": [
+            239.642700195313,
+            109.473968505859,
+            146.190612792969
+          ],
+          "speed": 27.3129386901855,
+          "time": 36.9859906666668,
+          "waypoint": 5
+        },
+        {
+          "camera_clear": true,
+          "clearance": 95.5149688720703,
+          "position": [
+            234.469009399414,
+            109.739074707031,
+            151.239776611328
+          ],
+          "speed": 27.0073986053467,
+          "time": 37.2240955151517,
+          "waypoint": 5
+        },
+        {
+          "camera_clear": true,
+          "clearance": 95.4642248153687,
+          "position": [
+            228.838394165039,
+            109.870574951172,
+            155.654602050781
+          ],
+          "speed": 26.7558345794678,
+          "time": 37.4666666666668,
+          "waypoint": 5
+        },
+        {
+          "camera_clear": true,
+          "clearance": 95.3312606811523,
+          "position": [
+            224.345962524414,
+            109.919486999512,
+            158.52897644043
+          ],
+          "speed": 26.6400566101074,
+          "time": 37.7090909090911,
+          "waypoint": 5
+        },
+        {
+          "camera_clear": true,
+          "clearance": 95.2019882202148,
+          "position": [
+            218.03092956543,
+            109.960075378418,
+            161.759353637695
+          ],
+          "speed": 26.6144275665283,
+          "time": 37.9590909090911,
+          "waypoint": 5
+        },
+        {
+          "camera_clear": true,
+          "clearance": 95.123291015625,
+          "position": [
+            213.072540283203,
+            109.975158691406,
+            163.719451904297
+          ],
+          "speed": 26.701488494873,
+          "time": 38.1683000000001,
+          "waypoint": 5
+        },
+        {
+          "camera_clear": true,
+          "clearance": 94.8084287643433,
+          "position": [
+            207.941055297852,
+            109.98454284668,
+            165.275054931641
+          ],
+          "speed": 26.8853893280029,
+          "time": 38.3891600000001,
+          "waypoint": 5
+        },
+        {
+          "camera_clear": true,
+          "clearance": 94.5039291381836,
+          "position": [
+            200.856979370117,
+            109.992324829102,
+            166.709121704102
+          ],
+          "speed": 27.2733631134033,
+          "time": 38.6082280000001,
+          "waypoint": 5
+        },
+        {
+          "camera_clear": true,
+          "clearance": 94.5000076293945,
+          "position": [
+            195.384963989258,
+            109.995231628418,
+            167.296691894531
+          ],
+          "speed": 27.6559391021729,
+          "time": 38.826409818182,
+          "waypoint": 5
+        },
+        {
+          "camera_clear": true,
+          "clearance": 94.6011962890625,
+          "position": [
+            189.800872802734,
+            109.997039794922,
+            167.458923339844
+          ],
+          "speed": 28.0786800384521,
+          "time": 39.0442267878789,
+          "waypoint": 5
+        },
+        {
+          "camera_clear": true,
+          "clearance": 94.704400062561,
+          "position": [
+            184.169891357422,
+            109.998161315918,
+            167.354904174805
+          ],
+          "speed": 28.1598587036133,
+          "time": 39.2611964848486,
+          "waypoint": 5
+        },
+        {
+          "camera_clear": true,
+          "clearance": 94.8472595214844,
+          "position": [
+            176.664184570313,
+            109.999076843262,
+            167.124664306641
+          ],
+          "speed": 28.1598567962646,
+          "time": 39.4773521212123,
+          "waypoint": 5
+        },
+        {
+          "camera_clear": true,
+          "clearance": 94.9753112792969,
+          "position": [
+            171.036712646484,
+            109.999420166016,
+            166.89958190918
+          ],
+          "speed": 28.1598567962646,
+          "time": 39.6906854545456,
+          "waypoint": 5
+        },
+        {
+          "camera_clear": true,
+          "clearance": 95.0871200561523,
+          "position": [
+            165.410629272461,
+            109.999649047852,
+            166.642211914063
+          ],
+          "speed": 28.159854888916,
+          "time": 39.9040187878789,
+          "waypoint": 5
+        },
+        {
+          "camera_clear": true,
+          "clearance": 95.3106279373169,
+          "position": [
+            159.785751342773,
+            109.999786376953,
+            166.359710693359
+          ],
+          "speed": 28.1598510742188,
+          "time": 40.1173521212123,
+          "waypoint": 5
+        },
+        {
+          "camera_clear": true,
+          "clearance": 94.9650268554688,
+          "position": [
+            154.161895751953,
+            109.999877929688,
+            166.057571411133
+          ],
+          "speed": 28.1598510742188,
+          "time": 40.3306854545456,
+          "waypoint": 5
+        },
+        {
+          "camera_clear": true,
+          "clearance": 94.5848159790039,
+          "position": [
+            146.66471862793,
+            109.999938964844,
+            165.631057739258
+          ],
+          "speed": 28.1598472595215,
+          "time": 40.5477856969699,
+          "waypoint": 5
+        },
+        {
+          "camera_clear": true,
+          "clearance": 94.6099166870117,
+          "position": [
+            141.04264831543,
+            109.999961853027,
+            165.297378540039
+          ],
+          "speed": 28.1598453521729,
+          "time": 40.7659675151517,
+          "waypoint": 5
+        },
+        {
+          "camera_clear": true,
+          "clearance": 94.9119262695313,
+          "position": [
+            135.421096801758,
+            109.999984741211,
+            164.955001831055
+          ],
+          "speed": 28.1598453521729,
+          "time": 40.9841493333335,
+          "waypoint": 5
+        },
+        {
+          "camera_clear": true,
+          "clearance": 95.4456701278687,
+          "position": [
+            127.926368713379,
+            109.999984741211,
+            164.487869262695
+          ],
+          "speed": 28.1598453521729,
+          "time": 41.2000000000002,
+          "waypoint": 5
+        },
+        {
+          "camera_clear": true,
+          "clearance": 95.9036102294922,
+          "position": [
+            122.305702209473,
+            109.999984741211,
+            164.13117980957
+          ],
+          "speed": 28.1598415374756,
+          "time": 41.418181818182,
+          "waypoint": 5
+        },
+        {
+          "camera_clear": true,
+          "clearance": 96.2928466796875,
+          "position": [
+            116.68529510498,
+            109.999984741211,
+            163.770416259766
+          ],
+          "speed": 28.1598377227783,
+          "time": 41.6536840000002,
+          "waypoint": 5
+        },
+        {
+          "camera_clear": true,
+          "clearance": 96.6616821289063,
+          "position": [
+            109.191749572754,
+            109.999984741211,
+            163.284271240234
+          ],
+          "speed": 28.1598377227783,
+          "time": 41.8766224646466,
+          "waypoint": 5
+        },
+        {
+          "camera_clear": true,
+          "clearance": 96.5671911239624,
+          "position": [
+            103.571800231934,
+            109.999984741211,
+            162.916519165039
+          ],
+          "speed": 28.1598377227783,
+          "time": 42.1059155555557,
+          "waypoint": 5
+        },
+        {
+          "camera_clear": true,
+          "clearance": 95.6419296264648,
+          "position": [
+            97.9519958496094,
+            109.999984741211,
+            162.546630859375
+          ],
+          "speed": 28.1598320007324,
+          "time": 42.3328996825399,
+          "waypoint": 5
+        },
+        {
+          "camera_clear": true,
+          "clearance": 94.3752412796021,
+          "position": [
+            90.459098815918,
+            109.999984741211,
+            162.050659179688
+          ],
+          "speed": 28.1598320007324,
+          "time": 42.5614711111113,
+          "waypoint": 5
+        }
+      ],
+      "shield": 1.0,
+      "waypoints_reached": 6,
+      "world_sha256": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8"
+    },
+    "reports/cliffs-contact.json": {
+      "checks": [
+        {
+          "approach": "(0.0, 0.0, -1.0)",
+          "finish": "(117.3264, 178.7069, -222.2454)",
+          "name": "cliff_crown",
+          "passed": true,
+          "start": "(101.7187, 178.7069, -255.6329)",
+          "travel": 36.85546875
+        },
+        {
+          "approach": "(1.0, 0.0, 0.0)",
+          "finish": "(154.1342, 160.3898, -215.6508)",
+          "name": "cliff_crown",
+          "passed": true,
+          "start": "(192.0526, 160.3898, -224.0968)",
+          "travel": 38.8476448059082
+        },
+        {
+          "approach": "(0.0, 1.0, 0.0)",
+          "finish": "(78.14283, 223.8138, -125.8341)",
+          "name": "cliff_crown",
+          "passed": true,
+          "start": "(78.78709, 264.537, -122.8176)",
+          "travel": 40.83984375
+        },
+        {
+          "approach": "(0.0, 0.0, -1.0)",
+          "finish": "(54.81806, 215.2621, -122.5816)",
+          "name": "cliff_western_slab",
+          "passed": true,
+          "start": "(31.98315, 241.7121, -140.302)",
+          "travel": 39.1796875
+        },
+        {
+          "approach": "(1.0, 0.0, 0.0)",
+          "finish": "(110.6562, 179.5802, -131.1176)",
+          "name": "cliff_western_slab",
+          "passed": true,
+          "start": "(149.0769, 179.5802, -136.8614)",
+          "travel": 38.84765625
+        },
+        {
+          "approach": "(0.0, 1.0, 0.0)",
+          "finish": "(72.80423, 205.377, -172.1547)",
+          "name": "cliff_western_slab",
+          "passed": true,
+          "start": "(68.05548, 243.6349, -176.9422)",
+          "travel": 38.8476600646973
+        },
+        {
+          "approach": "(0.0, 0.0, -1.0)",
+          "finish": "(64.45905, 162.012, -202.5564)",
+          "name": "cliff_front_columns",
+          "passed": true,
+          "start": "(69.88017, 162.012, -243.7047)",
+          "travel": 41.5039100646973
+        },
+        {
+          "approach": "(1.0, 0.0, 0.0)",
+          "finish": "(103.1195, 181.6092, -142.7884)",
+          "name": "cliff_front_columns",
+          "passed": true,
+          "start": "(140.8848, 181.6092, -151.8945)",
+          "travel": 38.8476638793945
+        },
+        {
+          "approach": "(0.0, 1.0, 0.0)",
+          "finish": "(80.71911, 216.582, -128.0817)",
+          "name": "cliff_front_columns",
+          "passed": true,
+          "start": "(76.57901, 256.698, -124.2804)",
+          "travel": 40.5078086853027
+        },
+        {
+          "approach": "(0.0, 0.0, -1.0)",
+          "finish": "(43.98146, 162.202, -210.0886)",
+          "name": "cliff_eastern_plateau",
+          "passed": true,
+          "start": "(28.69278, 162.202, -247.9587)",
+          "travel": 40.83984375
+        },
+        {
+          "approach": "(1.0, 0.0, 0.0)",
+          "finish": "(133.4533, 160.3608, -147.1794)",
+          "name": "cliff_eastern_plateau",
+          "passed": true,
+          "start": "(168.6564, 160.3608, -164.3781)",
+          "travel": 39.1796913146973
+        },
+        {
+          "approach": "(0.0, 1.0, 0.0)",
+          "finish": "(57.7511, 185.0965, -49.50763)",
+          "name": "cliff_eastern_plateau",
+          "passed": true,
+          "start": "(59.34266, 225.8584, -47.55161)",
+          "travel": 40.8398399353027
+        },
+        {
+          "approach": "(0.0, 0.0, -1.0)",
+          "finish": "(76.57361, 161.3549, -192.2332)",
+          "name": "cliff_shadow_buttress",
+          "passed": true,
+          "start": "(90.95499, 161.3549, -230.8116)",
+          "travel": 41.171875
+        },
+        {
+          "approach": "(1.0, 0.0, 0.0)",
+          "finish": "(96.29262, 163.1241, -162.4488)",
+          "name": "cliff_shadow_buttress",
+          "passed": true,
+          "start": "(132.2315, 163.1241, -177.1978)",
+          "travel": 38.84765625
+        },
+        {
+          "approach": "(0.0, 1.0, 0.0)",
+          "finish": "(102.4708, 185.875, -118.4605)",
+          "name": "cliff_shadow_buttress",
+          "passed": true,
+          "start": "(96.15529, 218.8083, -118.8042)",
+          "travel": 33.5351524353027
+        },
+        {
+          "approach": "(0.0, 0.0, -1.0)",
+          "finish": "(49.28434, 162.6027, -121.4603)",
+          "name": "cliff_central_wall",
+          "passed": true,
+          "start": "(14.19685, 162.6027, -133.7802)",
+          "travel": 37.1875076293945
+        },
+        {
+          "approach": "(1.0, 0.0, 0.0)",
+          "finish": "(103.4876, 168.4531, -142.2618)",
+          "name": "cliff_central_wall",
+          "passed": true,
+          "start": "(141.2049, 168.4531, -151.5647)",
+          "travel": 38.8476600646973
+        },
+        {
+          "approach": "(0.0, 1.0, 0.0)",
+          "finish": "(63.35409, 208.0939, -172.3755)",
+          "name": "cliff_central_wall",
+          "passed": true,
+          "start": "(59.80194, 248.3452, -175.2211)",
+          "travel": 40.5078125
+        },
+        {
+          "approach": "(0.0, 0.0, -1.0)",
+          "finish": "(57.12231, 198.5471, -173.0813)",
+          "name": "cliff_western_mesa",
+          "passed": true,
+          "start": "(45.2673, 200.4984, -212.8082)",
+          "travel": 41.50390625
+        },
+        {
+          "approach": "(1.0, 0.0, 0.0)",
+          "finish": "(118.3112, 200.3129, -125.5053)",
+          "name": "cliff_western_mesa",
+          "passed": true,
+          "start": "(153.5079, 204.9007, -143.6069)",
+          "travel": 39.84375
+        },
+        {
+          "approach": "(0.0, 1.0, 0.0)",
+          "finish": "(103.7635, 217.4696, -101.0367)",
+          "name": "cliff_western_mesa",
+          "passed": true,
+          "start": "(104.457, 258.3, -100.4991)",
+          "travel": 40.8398399353027
+        }
+      ],
+      "passed": true,
+      "provenance": {
+        "engine": "4.5.1-stable (official)",
+        "packaged": false,
+        "run_id": "16g-native-integration-20260908T051154Z-276e28776e864ea7bdffae2d9da929d5",
+        "sha256": {
+          "res://assets/cliff_kit.json": "75e6b82f24e1dad23c7e3576cebdb6b85f789fa3b328660cfa563918b7bb0cb9",
+          "res://assets/mountain_kit.json": "8b5b6fbe3f86a6b849d9fd6a2b87bf0fefe6dd1323f91f35cae97ba300196940",
+          "res://assets/road_kit.json": "1f0047e0203113b801558edd7413b2df362f412083754b099648f49bd8728a3a",
+          "res://scenes/prefabs/Airship.tscn": "e66caa9dc604786bfd03f25b27835fd454ec26942ec72b73e3bbfe599e032329",
+          "res://scenes/world/World.tscn": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+          "res://scripts/game.gd": "aa292916e6878fd46fb4a2ff12dd54611dca402e66ffa4042a864a853aa67467",
+          "res://scripts/hud.gd": "f9992f6569cd9ee0731542afa1db645d260e1e1cf01bf85a250f656324de7654",
+          "res://scripts/world_math.gd": "a7553c54d06d4e63b4fbe221b04b0f158e36f25b000b483f4555944fdd14b297"
+        },
+        "utc": "2026-09-08T05:16:23"
+      },
+      "scope": "Actual airship compound CharacterBody3D against each independent cliff prefab at a translated and rotated test pose. Front, side and descent use move_and_collide.",
+      "ship_prefab_sha256": "e66caa9dc604786bfd03f25b27835fd454ec26942ec72b73e3bbfe599e032329",
+      "world_sha256": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8"
+    },
+    "reports/game-test.json": {
+      "checks": [
+        {
+          "details": null,
+          "name": "flight HUD initializes with live instruments and navigation font",
+          "passed": true
+        },
+        {
+          "details": null,
+          "name": "208 complete world-space Blender terrain chunks",
+          "passed": true
+        },
+        {
+          "details": null,
+          "name": "39 independent native environment prefabs, including the western mesa",
+          "passed": true
+        },
+        {
+          "details": 208,
+          "name": "terrain has active physics colliders",
+          "passed": true
+        },
+        {
+          "details": null,
+          "name": "airship collider generated from actual balloon geometry",
+          "passed": true
+        },
+        {
+          "details": {
+            "actual": 51.546142578125,
+            "expected": 51.5465087890625
+          },
+          "name": "actual mesh / collision / height agreement at (240.0, -96.0)",
+          "passed": true
+        },
+        {
+          "details": {
+            "actual": 195.650634765625,
+            "expected": 195.650512695313
+          },
+          "name": "actual mesh / collision / height agreement at (1060.0, -2940.0)",
+          "passed": true
+        },
+        {
+          "details": {
+            "actual": 69.7646484375,
+            "expected": 69.7647705078125
+          },
+          "name": "actual mesh / collision / height agreement at (1450.0, -3270.0)",
+          "passed": true
+        },
+        {
+          "details": {
+            "actual": 559.990600585938,
+            "expected": 559.995422363281
+          },
+          "name": "actual mesh / collision / height agreement at (2670.0, 1200.0)",
+          "passed": true
+        },
+        {
+          "details": {
+            "actual": 19.10791015625,
+            "expected": 19.10791015625
+          },
+          "name": "actual mesh / collision / height agreement at (-1650.0, 2870.0)",
+          "passed": true
+        },
+        {
+          "details": {
+            "actual": 0.0,
+            "expected": 0.0
+          },
+          "name": "actual mesh / collision / height agreement at (768.1, -900.0)",
+          "passed": true
+        },
+        {
+          "details": {
+            "actual": 0.0,
+            "expected": 0.0
+          },
+          "name": "actual mesh / collision / height agreement at (767.9, -900.0)",
+          "passed": true
+        },
+        {
+          "details": {
+            "actual": 22.705322265625,
+            "expected": 22.7052001953125
+          },
+          "name": "actual mesh / collision / height agreement at (5375.9, 1650.0)",
+          "passed": true
+        },
+        {
+          "details": {
+            "actual": 22.7109375,
+            "expected": 22.7109375
+          },
+          "name": "actual mesh / collision / height agreement at (5376.1, 1650.0)",
+          "passed": true
+        },
+        {
+          "details": null,
+          "name": "smoothed camera corrects actual assembled cliff obstruction at orbit 3.14159265358979",
+          "passed": true
+        },
+        {
+          "details": null,
+          "name": "smoothed camera corrects actual assembled cliff obstruction at orbit 2.04203522483337",
+          "passed": true
+        },
+        {
+          "details": null,
+          "name": "smoothed camera corrects actual assembled cliff obstruction at orbit 4.24115008234622",
+          "passed": true
+        },
+        {
+          "details": 11.0464477539063,
+          "name": "physical W throttle input accelerates the body",
+          "passed": true
+        },
+        {
+          "details": [
+            150.905014038086,
+            -0.682
+          ],
+          "name": "E ascent and D steering work",
+          "passed": true
+        },
+        {
+          "details": 15.2710647583008,
+          "name": "actual world-space flight displacement",
+          "passed": true
+        },
+        {
+          "details": null,
+          "name": "forward velocity follows the modeled ship nose",
+          "passed": true
+        },
+        {
+          "details": 0.0,
+          "name": "Space brakes to a stable hover",
+          "passed": true
+        },
+        {
+          "details": 3.85061264038086,
+          "name": "sea collision prevents descending through the world",
+          "passed": true
+        },
+        {
+          "details": 0.895,
+          "name": "impact produces damage feedback",
+          "passed": true
+        },
+        {
+          "details": null,
+          "name": "cannot refill fuel away from a dock",
+          "passed": true
+        },
+        {
+          "details": null,
+          "name": "dock rejects an unsafe approach speed",
+          "passed": true
+        },
+        {
+          "details": null,
+          "name": "low-speed docking succeeds",
+          "passed": true
+        },
+        {
+          "details": null,
+          "name": "dock repairs, refuels and records exploration progress",
+          "passed": true
+        },
+        {
+          "details": null,
+          "name": "dock platform is a physical modeled surface",
+          "passed": true
+        },
+        {
+          "details": null,
+          "name": "3D flight ring grants progress and disappears",
+          "passed": true
+        },
+        {
+          "details": 55,
+          "name": "terrain continues outside the initial region",
+          "passed": true
+        },
+        {
+          "details": null,
+          "name": "streamed terrain has matching collision",
+          "passed": true
+        },
+        {
+          "details": null,
+          "name": "streamed terrain uses the same outward normals and front-face winding as imported Blender terrain",
+          "passed": true
+        },
+        {
+          "details": null,
+          "name": "camera can orbit to the opposite side of the ship",
+          "passed": true
+        },
+        {
+          "details": null,
+          "name": "rescue resets position and motion",
+          "passed": true
+        },
+        {
+          "details": null,
+          "name": "save and restore persist flight state using an isolated test file",
+          "passed": true
+        }
+      ],
+      "core_chunks": 208,
+      "model_placements": 56208,
+      "passed": true,
+      "provenance": {
+        "engine": "4.5.1-stable (official)",
+        "packaged": false,
+        "run_id": "16g-native-integration-20260908T051154Z-276e28776e864ea7bdffae2d9da929d5",
+        "sha256": {
+          "res://assets/cliff_kit.json": "75e6b82f24e1dad23c7e3576cebdb6b85f789fa3b328660cfa563918b7bb0cb9",
+          "res://assets/mountain_kit.json": "8b5b6fbe3f86a6b849d9fd6a2b87bf0fefe6dd1323f91f35cae97ba300196940",
+          "res://assets/road_kit.json": "1f0047e0203113b801558edd7413b2df362f412083754b099648f49bd8728a3a",
+          "res://scenes/prefabs/Airship.tscn": "e66caa9dc604786bfd03f25b27835fd454ec26942ec72b73e3bbfe599e032329",
+          "res://scenes/world/World.tscn": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+          "res://scripts/game.gd": "aa292916e6878fd46fb4a2ff12dd54611dca402e66ffa4042a864a853aa67467",
+          "res://scripts/hud.gd": "f9992f6569cd9ee0731542afa1db645d260e1e1cf01bf85a250f656324de7654",
+          "res://scripts/world_math.gd": "a7553c54d06d4e63b4fbe221b04b0f158e36f25b000b483f4555944fdd14b297"
+        },
+        "utc": "2026-09-08T05:15:05"
+      }
+    },
+    "reports/geology.json": {
+      "passed": true,
+      "assets": [
+        {
+          "name": "cliff_crown",
+          "passed": true,
+          "triangles": 580,
+          "nonmanifold_or_open_edges": 0,
+          "degenerate_faces": 0,
+          "volume_relative_error": 0.0,
+          "bounds": [
+            [
+              -41.69176483154297,
+              -15.0,
+              -99.54920959472656
+            ],
+            [
+              92.6550064086914,
+              78.56510925292969,
+              24.397216796875
+            ]
+          ],
+          "images": 0,
+          "glb_sha256": "ca61243d3016e3e0c194f20afd072070bb02fb0bf4a83c62dc33983827ca8a62"
+        },
+        {
+          "name": "cliff_western_slab",
+          "passed": true,
+          "triangles": 312,
+          "nonmanifold_or_open_edges": 0,
+          "degenerate_faces": 0,
+          "volume_relative_error": 3.4613656792636124e-16,
+          "bounds": [
+            [
+              -28.996257781982422,
+              -15.0,
+              -73.324951171875
+            ],
+            [
+              26.60703468322754,
+              65.0,
+              6.647782802581787
+            ]
+          ],
+          "images": 0,
+          "glb_sha256": "47112e869a56cf3424f4b85ee047a51711fdfa1fa46bb5c06ea83ebc12e80612"
+        },
+        {
+          "name": "cliff_front_columns",
+          "passed": true,
+          "triangles": 348,
+          "nonmanifold_or_open_edges": 0,
+          "degenerate_faces": 0,
+          "volume_relative_error": 1.5804805630713422e-16,
+          "bounds": [
+            [
+              -28.535717010498047,
+              -15.0,
+              -85.67562103271484
+            ],
+            [
+              26.455368041992188,
+              54.03719711303711,
+              11.879907608032227
+            ]
+          ],
+          "images": 0,
+          "glb_sha256": "667a5fcc083a828b2b9d6e516920be3952f8fb6e41427523a377a9f5f0b58e3f"
+        },
+        {
+          "name": "cliff_eastern_plateau",
+          "passed": true,
+          "triangles": 1156,
+          "nonmanifold_or_open_edges": 0,
+          "degenerate_faces": 0,
+          "volume_relative_error": 4.456891674026997e-16,
+          "bounds": [
+            [
+              -70.13300323486328,
+              -15.0,
+              -96.2699966430664
+            ],
+            [
+              59.97100067138672,
+              62.0,
+              74.50700378417969
+            ]
+          ],
+          "images": 0,
+          "glb_sha256": "8348bd370539c17d683dd1e08031bb6824374dc82b06ea662d0b7534209816ab"
+        },
+        {
+          "name": "cliff_shadow_buttress",
+          "passed": true,
+          "triangles": 364,
+          "nonmanifold_or_open_edges": 0,
+          "degenerate_faces": 0,
+          "volume_relative_error": 0.0,
+          "bounds": [
+            [
+              -36.36012649536133,
+              -15.0,
+              -74.76143646240234
+            ],
+            [
+              26.802696228027344,
+              48.0,
+              30.23856544494629
+            ]
+          ],
+          "images": 0,
+          "glb_sha256": "6ba023af32cb07980cee5f58a2faccffea17747117c084938b655da5fa742517"
+        },
+        {
+          "name": "cliff_central_wall",
+          "passed": true,
+          "triangles": 370,
+          "nonmanifold_or_open_edges": 0,
+          "degenerate_faces": 0,
+          "volume_relative_error": 1.7760754402169885e-16,
+          "bounds": [
+            [
+              -28.61562728881836,
+              -15.0,
+              -83.23635864257812
+            ],
+            [
+              22.781049728393555,
+              53.904212951660156,
+              13.326593399047852
+            ]
+          ],
+          "images": 0,
+          "glb_sha256": "1830179834bf8beb1a8792f670551b99edfdba4f95b0e8748a207e19acfc30f3"
+        },
+        {
+          "name": "cliff_western_mesa",
+          "passed": true,
+          "triangles": 448,
+          "nonmanifold_or_open_edges": 0,
+          "degenerate_faces": 0,
+          "volume_relative_error": 4.007785158297101e-16,
+          "bounds": [
+            [
+              -73.12046813964844,
+              -12.0,
+              -79.67247772216797
+            ],
+            [
+              69.58207702636719,
+              57.0,
+              41.78166580200195
+            ]
+          ],
+          "images": 0,
+          "glb_sha256": "f7fd53b49e054fdf17752acbd5d5e8f84081cf798cdaf579cbd1680c19088d79"
+        },
+        {
+          "name": "massif_frost_crown",
+          "passed": true,
+          "triangles": 394,
+          "nonmanifold_or_open_edges": 0,
+          "degenerate_faces": 0,
+          "volume_relative_error": 6.088559510503242e-16,
+          "bounds": [
+            [
+              -503.02655029296875,
+              -12.0,
+              -476.5952453613281
+            ],
+            [
+              471.568359375,
+              459.6551208496094,
+              503.2955627441406
+            ]
+          ],
+          "images": 0,
+          "glb_sha256": "50b86c66508a25379ac90fb3bcbe236a8c30119a1b46899d9bb3a63ee000077c"
+        },
+        {
+          "name": "massif_west_summit",
+          "passed": true,
+          "triangles": 392,
+          "nonmanifold_or_open_edges": 0,
+          "degenerate_faces": 0,
+          "volume_relative_error": 0.0,
+          "bounds": [
+            [
+              -416.15643310546875,
+              -12.0,
+              -416.1644592285156
+            ],
+            [
+              401.6515197753906,
+              390.2984313964844,
+              403.146484375
+            ]
+          ],
+          "images": 0,
+          "glb_sha256": "b9a460a8332a3ee1ddf84c976befd87158900e19b45eaeb5001b841be6e1f35f"
+        },
+        {
+          "name": "massif_needle_ridge",
+          "passed": true,
+          "triangles": 378,
+          "nonmanifold_or_open_edges": 0,
+          "degenerate_faces": 0,
+          "volume_relative_error": 4.991394572470474e-16,
+          "bounds": [
+            [
+              -286.0478515625,
+              -12.0,
+              -363.9236755371094
+            ],
+            [
+              271.7262268066406,
+              269.8807373046875,
+              334.7903747558594
+            ]
+          ],
+          "images": 0,
+          "glb_sha256": "51f27e9e26b0e95021b115344ceb00a13afa04c19f2bb7fc2ea50799a7da89e7"
+        },
+        {
+          "name": "massif_east_summit",
+          "passed": true,
+          "triangles": 378,
+          "nonmanifold_or_open_edges": 0,
+          "degenerate_faces": 0,
+          "volume_relative_error": 7.314337472478646e-16,
+          "bounds": [
+            [
+              -304.6449890136719,
+              -12.0,
+              -388.82708740234375
+            ],
+            [
+              284.88714599609375,
+              299.9814758300781,
+              377.6602478027344
+            ]
+          ],
+          "images": 0,
+          "glb_sha256": "7210c31fb36bedcb6078c56db1f2cd27419eaf19b91cb9c339def2de2cf56d05"
+        },
+        {
+          "name": "massif_east_spur",
+          "passed": true,
+          "triangles": 366,
+          "nonmanifold_or_open_edges": 0,
+          "degenerate_faces": 0,
+          "volume_relative_error": 1.6452262781208188e-16,
+          "bounds": [
+            [
+              -343.7786865234375,
+              -12.0,
+              -407.60296630859375
+            ],
+            [
+              330.9895324707031,
+              172.3566131591797,
+              409.19403076171875
+            ]
+          ],
+          "images": 0,
+          "glb_sha256": "66e9a1747209a69d8249c6d4e3c052b1ffe5911ad75ce8d75dad2ba41a1e2425"
+        },
+        {
+          "name": "massif_west_spur",
+          "passed": true,
+          "triangles": 340,
+          "nonmanifold_or_open_edges": 0,
+          "degenerate_faces": 0,
+          "volume_relative_error": 5.0739451195834e-16,
+          "bounds": [
+            [
+              -305.88525390625,
+              -12.0,
+              -343.88201904296875
+            ],
+            [
+              291.8747253417969,
+              152.85169982910156,
+              355.9322814941406
+            ]
+          ],
+          "images": 0,
+          "glb_sha256": "a4a1bb5915cdcb67dc547605f377ea7c2462469c7713f662f090fa5e0d48ae77"
+        },
+        {
+          "name": "massif_cirque_wall",
+          "passed": true,
+          "triangles": 334,
+          "nonmanifold_or_open_edges": 0,
+          "degenerate_faces": 0,
+          "volume_relative_error": 1.7797187835965357e-16,
+          "bounds": [
+            [
+              -234.8751983642578,
+              -12.0,
+              -316.8099060058594
+            ],
+            [
+              219.39353942871094,
+              136.55426025390625,
+              334.3918762207031
+            ]
+          ],
+          "images": 0,
+          "glb_sha256": "5e4cf230d83c20e5e1cd50489e86945d5528364675a0959e796446e6d2d59ba0"
+        },
+        {
+          "name": "massif_east_foothill",
+          "passed": true,
+          "triangles": 146,
+          "nonmanifold_or_open_edges": 0,
+          "degenerate_faces": 0,
+          "volume_relative_error": 1.6042587424199492e-16,
+          "bounds": [
+            [
+              -324.18756103515625,
+              -12.0,
+              -344.1913757324219
+            ],
+            [
+              308.44586181640625,
+              83.43436431884766,
+              343.52679443359375
+            ]
+          ],
+          "images": 0,
+          "glb_sha256": "fc5ef47fc5a01bc8e18ae7668bfd2b458c47ec89852098697af7616d1571bb00"
+        },
+        {
+          "name": "massif_blue_buttress",
+          "passed": true,
+          "triangles": 144,
+          "nonmanifold_or_open_edges": 0,
+          "degenerate_faces": 0,
+          "volume_relative_error": 0.0,
+          "bounds": [
+            [
+              -141.17672729492188,
+              -12.0,
+              -224.7300262451172
+            ],
+            [
+              135.27511596679688,
+              84.82675170898438,
+              207.55252075195312
+            ]
+          ],
+          "images": 0,
+          "glb_sha256": "b64bb534fabc3180bb2aa01ce1b1647b84cfd7e9a8bf3c9e88fa2d0841f1a70f"
+        },
+        {
+          "name": "massif_valley_guard",
+          "passed": true,
+          "triangles": 144,
+          "nonmanifold_or_open_edges": 0,
+          "degenerate_faces": 0,
+          "volume_relative_error": 2.5750814134765147e-16,
+          "bounds": [
+            [
+              -248.98231506347656,
+              -12.0,
+              -303.99700927734375
+            ],
+            [
+              232.6263885498047,
+              84.79813385009766,
+              288.0857238769531
+            ]
+          ],
+          "images": 0,
+          "glb_sha256": "032935ec351f2d15188006b121d73a9ccb8d8eb589c93a759ed0ce97ae7bfedb"
+        },
+        {
+          "name": "massif_west_foothill",
+          "passed": true,
+          "triangles": 144,
+          "nonmanifold_or_open_edges": 0,
+          "degenerate_faces": 0,
+          "volume_relative_error": 1.7015859615607444e-16,
+          "bounds": [
+            [
+              -199.35279846191406,
+              -12.0,
+              -276.5261535644531
+            ],
+            [
+              188.6602325439453,
+              83.32828521728516,
+              275.6411437988281
+            ]
+          ],
+          "images": 0,
+          "glb_sha256": "3925da39c1a6b28c33ece50ed23a54fdce5cca8b02a8121e99d7db03659bf50e"
+        }
+      ],
+      "scope": "Independent exported-GLB manifold, degenerate triangle, native source, image absence and enclosed-volume validation. Visual acceptance is separate."
+    },
+    "reports/road-surfaces.json": {
+      "passed": true,
+      "provenance": {
+        "engine": "4.5.1-stable (official)",
+        "packaged": false,
+        "run_id": "16g-native-integration-20260908T051154Z-276e28776e864ea7bdffae2d9da929d5",
+        "sha256": {
+          "res://assets/cliff_kit.json": "75e6b82f24e1dad23c7e3576cebdb6b85f789fa3b328660cfa563918b7bb0cb9",
+          "res://assets/mountain_kit.json": "8b5b6fbe3f86a6b849d9fd6a2b87bf0fefe6dd1323f91f35cae97ba300196940",
+          "res://assets/road_kit.json": "1f0047e0203113b801558edd7413b2df362f412083754b099648f49bd8728a3a",
+          "res://scenes/prefabs/Airship.tscn": "e66caa9dc604786bfd03f25b27835fd454ec26942ec72b73e3bbfe599e032329",
+          "res://scenes/world/World.tscn": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+          "res://scripts/game.gd": "aa292916e6878fd46fb4a2ff12dd54611dca402e66ffa4042a864a853aa67467",
+          "res://scripts/hud.gd": "f9992f6569cd9ee0731542afa1db645d260e1e1cf01bf85a250f656324de7654",
+          "res://scripts/world_math.gd": "a7553c54d06d4e63b4fbe221b04b0f158e36f25b000b483f4555944fdd14b297"
+        },
+        "utc": "2026-09-08T05:17:13"
+      },
+      "roads": [
+        {
+          "examples": [],
+          "failed_samples": 0,
+          "glb_sha256": "4e98e354c249f3fee71bce693ce69a64ae1c7aaad144784ea528a255effaf14b",
+          "maximum_height_error_metres": 0.0144973754882813,
+          "name": "Trail_Crownreach",
+          "passed": true,
+          "sample_count": 16044
+        },
+        {
+          "examples": [],
+          "failed_samples": 0,
+          "glb_sha256": "d720be489737357b4ab78051574e1d4d5debda4701fba051f2c4624e09ccd6a9",
+          "maximum_height_error_metres": 0.00407257080078124,
+          "name": "Trail_Amberfield",
+          "passed": true,
+          "sample_count": 22596
+        },
+        {
+          "examples": [],
+          "failed_samples": 0,
+          "glb_sha256": "84e5b20e3cf62bbd6a5c6ec518febee1fe906bb9f73d20534d1539bf274d196d",
+          "maximum_height_error_metres": 0.00256309509277344,
+          "name": "Trail_HillHamlet",
+          "passed": true,
+          "sample_count": 2002
+        }
+      ],
+      "samples": 40642,
+      "scope": "Seven interior/edge samples per actual imported road triangle versus full assembled terrain, cliff and massif physics. Expected road clearance 0.10 m; tolerance 0.08 m.",
+      "world_sha256": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+      "world_unchanged": true
+    }
+  },
+  "refresh_log": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\nOpenGL API 3.3.0 NVIDIA 560.81 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce GTX 970\n\nCLIFF KIT INSTALLED 3 independent complete prefabs across 3 instances; terrain updated 0; foliage reseated 0 in 0 groups; removed from new water 0; backup res://captures/edit_backups/2026-09-08T13-12-21-2551\n",
+  "catalog_semantic_changes": {
+    "cliff_kit": {
+      "cliff_crown": [
+        "volume_m3",
+        "vertices",
+        "authoring_revision",
+        "faces",
+        "authoring_evidence",
+        "modeling_method"
+      ],
+      "cliff_front_columns": [
+        "volume_m3",
+        "authoring_revision",
+        "authoring_evidence",
+        "modeling_method"
+      ],
+      "cliff_central_wall": [
+        "volume_m3",
+        "vertices",
+        "authoring_revision",
+        "faces",
+        "authoring_evidence",
+        "modeling_method"
+      ]
+    },
+    "asset_catalog": {
+      "cliff_crown": [
+        "volume_m3",
+        "vertices",
+        "authoring_revision",
+        "faces",
+        "authoring_evidence",
+        "modeling_method"
+      ],
+      "cliff_front_columns": [
+        "volume_m3",
+        "authoring_revision",
+        "authoring_evidence",
+        "modeling_method"
+      ],
+      "cliff_central_wall": [
+        "volume_m3",
+        "vertices",
+        "authoring_revision",
+        "faces",
+        "authoring_evidence",
+        "modeling_method"
+      ]
+    }
+  }
+}

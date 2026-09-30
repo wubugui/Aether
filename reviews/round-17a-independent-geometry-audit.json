@@ -1,0 +1,585 @@
+{
+  "scope": "Actual 17a exported GLB geometry checks; independent images reviewed separately. No production writes, no Blender/Godot launched.",
+  "artifacts": {
+    "study-inputs/cliff_western_slab.glb": {
+      "sha256": "55669169bf3d5fcf4acabff3a1b59539fc226dcfd37a06a6611a277b405aa83b",
+      "matches_run_manifest": true
+    },
+    "study-inputs/cliff_front_columns.glb": {
+      "sha256": "97fd17be096e81d7aa7826941ecb371e3e6dde09ded34d8349798589aa9c2047",
+      "matches_run_manifest": true
+    },
+    "images/opening.png": {
+      "sha256": "fdfbfe883689066a143083915af85db99b4f9591600303e9faef98c72d3bc080",
+      "matches_run_manifest": true
+    },
+    "images/cliff-side.png": {
+      "sha256": "e43a29fb300a92e8167d851a7b10431f6504555eefd5229d40d2683a7d951561",
+      "matches_run_manifest": true
+    },
+    "images/cliff-back.png": {
+      "sha256": "c62fb3ce150f03aa3ccc5dcdfe337eb3f5c41dbbf1f6b3bfdc07c2d3e46a45af",
+      "matches_run_manifest": true
+    }
+  },
+  "assets": {
+    "cliff_western_slab": {
+      "source_glb_sha256": "47112e869a56cf3424f4b85ee047a51711fdfa1fa46bb5c06ea83ebc12e80612",
+      "candidate_glb_sha256": "55669169bf3d5fcf4acabff3a1b59539fc226dcfd37a06a6611a277b405aa83b",
+      "candidate_geometry": {
+        "welded_exact_positions": 158,
+        "triangles": 312,
+        "edges": 468,
+        "euler": 2,
+        "edge_incidence_not_2": 0,
+        "paired_edge_same_orientation": 0,
+        "degenerate_area_lt_1e_8": 0,
+        "min_triangle_area_m2": 3.0091287411332814,
+        "signed_volume_m3": 167150.431457516
+      },
+      "rim_count": 64,
+      "floor_count": 79,
+      "rim_exactly_same_as_production": true,
+      "floor_exactly_same_as_production": true,
+      "original_positions_missing_after_declared_moves": [],
+      "added_positions": [],
+      "candidate_intersections": {
+        "nonadjacent_triangle_crossings": [
+          [
+            29,
+            68
+          ]
+        ],
+        "nonadjacent_coplanar_overlap_projected_m2": [],
+        "include_shared_vertex_pairs": true,
+        "scope": "AABB broad phase and segment/triangle crossings, plus coplanar area. Field names retained for schema stability; include_shared_vertex_pairs states pair coverage. Not an exact arithmetic proof against self-intersection, and not inter-asset intersection."
+      },
+      "same_triangle_connectivity": true,
+      "geometry_positions_exact_equal_source": false,
+      "changed_color_triangle_count": 92,
+      "production_blend_sha256": "492769aa3cd07ab13e004ab84a32f11761c592f484904dfa331d5a81105e03d2",
+      "grass_triangles": {
+        "front_to_ridge": [
+          {
+            "source_face": 8,
+            "candidate_face": 8,
+            "slope_degrees": 56.3190149966671,
+            "prior_slope_degrees": 56.3190149966671,
+            "normal": [
+              -0.0007495464312485927,
+              0.55456829270647,
+              0.8321378773405154
+            ],
+            "vertices_glb_xyz": [
+              [
+                -22.04152488708496,
+                44.0,
+                4.147782802581787
+              ],
+              [
+                -10.22287368774414,
+                50.0,
+                0.15980049967765808
+              ],
+              [
+                -24.32628059387207,
+                53.0,
+                -1.8522170782089233
+              ]
+            ],
+            "area_m2": 72.14933865199728
+          },
+          {
+            "source_face": 9,
+            "candidate_face": 9,
+            "slope_degrees": 12.72004484830244,
+            "prior_slope_degrees": 43.65853287285699,
+            "normal": [
+              0.19215643719354486,
+              0.9754575713606025,
+              0.10751013961649535
+            ],
+            "vertices_glb_xyz": [
+              [
+                -10.22287368774414,
+                50.0,
+                0.15980049967765808
+              ],
+              [
+                -9.044618606567383,
+                51.31090545654297,
+                -13.84019947052002
+              ],
+              [
+                -24.32628059387207,
+                53.0,
+                -1.8522170782089233
+              ]
+            ],
+            "area_m2": 102.42288955803832
+          },
+          {
+            "source_face": 10,
+            "candidate_face": 10,
+            "slope_degrees": 28.215493120487608,
+            "prior_slope_degrees": 60.937733939837365,
+            "normal": [
+              -0.039038822877568796,
+              0.8811756393012922,
+              0.47117455683673404
+            ],
+            "vertices_glb_xyz": [
+              [
+                -10.22287368774414,
+                50.0,
+                0.15980049967765808
+              ],
+              [
+                -0.7278518676757812,
+                50.0,
+                0.9465035796165466
+              ],
+              [
+                8.644147872924805,
+                62.32400894165039,
+                -21.324954986572266
+              ]
+            ],
+            "area_m2": 124.17556520590661
+          },
+          {
+            "source_face": 11,
+            "candidate_face": 11,
+            "slope_degrees": 31.216767281157626,
+            "prior_slope_degrees": 54.43512973516966,
+            "normal": [
+              -0.5169855835398969,
+              0.8552126259034162,
+              0.036568714870717625
+            ],
+            "vertices_glb_xyz": [
+              [
+                -10.22287368774414,
+                50.0,
+                0.15980049967765808
+              ],
+              [
+                8.644147872924805,
+                62.32400894165039,
+                -21.324954986572266
+              ],
+              [
+                -9.044618606567383,
+                51.31090545654297,
+                -13.84019947052002
+              ]
+            ],
+            "area_m2": 139.6283051336415
+          },
+          {
+            "source_face": 12,
+            "candidate_face": 12,
+            "slope_degrees": 27.285787356994692,
+            "prior_slope_degrees": 61.01349630521885,
+            "normal": [
+              -0.2389386084522108,
+              0.888730976737638,
+              0.39123598042343327
+            ],
+            "vertices_glb_xyz": [
+              [
+                -0.7278518676757812,
+                50.0,
+                0.9465035796165466
+              ],
+              [
+                8.305014610290527,
+                52.0,
+                1.9199278354644775
+              ],
+              [
+                8.644147872924805,
+                62.32400894165039,
+                -21.324954986572266
+              ]
+            ],
+            "area_m2": 118.31366795788286
+          },
+          {
+            "source_face": 13,
+            "candidate_face": 13,
+            "slope_degrees": 34.58552549076579,
+            "prior_slope_degrees": 50.083735979806924,
+            "normal": [
+              0.4288288367963292,
+              0.8232797954071922,
+              0.3719088694911681
+            ],
+            "vertices_glb_xyz": [
+              [
+                8.305014610290527,
+                52.0,
+                1.9199278354644775
+              ],
+              [
+                19.160058975219727,
+                53.57368850708008,
+                -14.080072402954102
+              ],
+              [
+                8.644147872924805,
+                62.32400894165039,
+                -21.324954986572266
+              ]
+            ],
+            "area_m2": 149.94786911153952
+          },
+          {
+            "source_face": 14,
+            "candidate_face": 14,
+            "slope_degrees": 53.187908149157536,
+            "prior_slope_degrees": 53.187908149157536,
+            "normal": [
+              0.45115445989362357,
+              0.5991925736127032,
+              0.6613833329057197
+            ],
+            "vertices_glb_xyz": [
+              [
+                8.305014610290527,
+                52.0,
+                1.9199278354644775
+              ],
+              [
+                19.781837463378906,
+                43.0,
+                2.244873046875
+              ],
+              [
+                21.937057495117188,
+                48.0,
+                -3.755126953125
+              ]
+            ],
+            "area_m2": 58.04583418647441
+          },
+          {
+            "source_face": 15,
+            "candidate_face": 15,
+            "slope_degrees": 31.94998508538752,
+            "prior_slope_degrees": 60.597657289355126,
+            "normal": [
+              0.39539086608239443,
+              0.8485103527315815,
+              0.3517047686994608
+            ],
+            "vertices_glb_xyz": [
+              [
+                8.305014610290527,
+                52.0,
+                1.9199278354644775
+              ],
+              [
+                21.937057495117188,
+                48.0,
+                -3.755126953125
+              ],
+              [
+                19.160058975219727,
+                53.57368850708008,
+                -14.080072402954102
+              ]
+            ],
+            "area_m2": 92.22616872025756
+          }
+        ],
+        "ridge_to_shoulder": [
+          {
+            "source_face": 16,
+            "candidate_face": 16,
+            "slope_degrees": 46.80546071017328,
+            "prior_slope_degrees": 47.53876730416544,
+            "normal": [
+              -0.4016340466131485,
+              0.6844776267355885,
+              -0.6084245812749216
+            ],
+            "vertices_glb_xyz": [
+              [
+                -24.32628059387207,
+                53.0,
+                -1.8522170782089233
+              ],
+              [
+                -9.044618606567383,
+                51.31090545654297,
+                -13.84019947052002
+              ],
+              [
+                -24.32628059387207,
+                45.0,
+                -10.852216720581055
+              ]
+            ],
+            "area_m2": 100.46709128867063
+          },
+          {
+            "source_face": 17,
+            "candidate_face": 17,
+            "slope_degrees": 34.26237090118149,
+            "prior_slope_degrees": 44.49613061314302,
+            "normal": [
+              -0.41557072175395393,
+              0.8264682129848008,
+              -0.3798042497742856
+            ],
+            "vertices_glb_xyz": [
+              [
+                -9.044618606567383,
+                51.31090545654297,
+                -13.84019947052002
+              ],
+              [
+                -14.030187606811523,
+                41.451210021972656,
+                -29.840200424194336
+              ],
+              [
+                -24.32628059387207,
+                45.0,
+                -10.852216720581055
+              ]
+            ],
+            "area_m2": 156.9348926349658
+          },
+          {
+            "source_face": 18,
+            "candidate_face": 18,
+            "slope_degrees": 39.38068144668331,
+            "prior_slope_degrees": 39.286022173573535,
+            "normal": [
+              -0.5850843566971408,
+              0.7729475431555426,
+              -0.2454147328057211
+            ],
+            "vertices_glb_xyz": [
+              [
+                -9.044618606567383,
+                51.31090545654297,
+                -13.84019947052002
+              ],
+              [
+                8.644147872924805,
+                62.32400894165039,
+                -21.324954986572266
+              ],
+              [
+                0.3953729569911957,
+                51.0,
+                -37.324954986572266
+              ]
+            ],
+            "area_m2": 223.0166395361744
+          },
+          {
+            "source_face": 19,
+            "candidate_face": 19,
+            "slope_degrees": 42.48285119909897,
+            "prior_slope_degrees": 48.97438936021968,
+            "normal": [
+              -0.6232049557376647,
+              0.737479509985517,
+              -0.2602682375848748
+            ],
+            "vertices_glb_xyz": [
+              [
+                -9.044618606567383,
+                51.31090545654297,
+                -13.84019947052002
+              ],
+              [
+                0.3953729569911957,
+                51.0,
+                -37.324954986572266
+              ],
+              [
+                -14.030187606811523,
+                41.451210021972656,
+                -29.840200424194336
+              ]
+            ],
+            "area_m2": 181.7845373792304
+          },
+          {
+            "source_face": 20,
+            "candidate_face": 20,
+            "slope_degrees": 69.68519457300819,
+            "prior_slope_degrees": 41.63582980597367,
+            "normal": [
+              0.7105476546693957,
+              0.3471779937224108,
+              -0.6120371484793244
+            ],
+            "vertices_glb_xyz": [
+              [
+                8.644147872924805,
+                62.32400894165039,
+                -21.324954986572266
+              ],
+              [
+                19.160058975219727,
+                53.57368850708008,
+                -14.080072402954102
+              ],
+              [
+                0.3953729569911957,
+                51.0,
+                -37.324954986572266
+              ]
+            ],
+            "area_m2": 156.25007038728327
+          },
+          {
+            "source_face": 21,
+            "candidate_face": 21,
+            "slope_degrees": 68.68282616676524,
+            "prior_slope_degrees": 52.37977059329883,
+            "normal": [
+              0.7047867736416221,
+              0.36353047921894205,
+              -0.6091971720048273
+            ],
+            "vertices_glb_xyz": [
+              [
+                19.160058975219727,
+                53.57368850708008,
+                -14.080072402954102
+              ],
+              [
+                11.648426055908203,
+                43.0,
+                -29.0800724029541
+              ],
+              [
+                0.3953729569911957,
+                51.0,
+                -37.324954986572266
+              ]
+            ],
+            "area_m2": 146.97978733776344
+          },
+          {
+            "source_face": 22,
+            "candidate_face": 22,
+            "slope_degrees": 76.69234975808924,
+            "prior_slope_degrees": 49.01504904962334,
+            "normal": [
+              0.9637454693482013,
+              0.2301796758388275,
+              -0.13495179562179777
+            ],
+            "vertices_glb_xyz": [
+              [
+                19.160058975219727,
+                53.57368850708008,
+                -14.080072402954102
+              ],
+              [
+                21.937057495117188,
+                48.0,
+                -3.755126953125
+              ],
+              [
+                21.937057495117188,
+                43.309688568115234,
+                -11.755126953125
+              ]
+            ],
+            "area_m2": 48.25792737395153
+          },
+          {
+            "source_face": 23,
+            "candidate_face": 23,
+            "slope_degrees": 83.36222451780645,
+            "prior_slope_degrees": 48.97332199272319,
+            "normal": [
+              0.8531403390807295,
+              0.1155920626265036,
+              -0.5087141013289963
+            ],
+            "vertices_glb_xyz": [
+              [
+                19.160058975219727,
+                53.57368850708008,
+                -14.080072402954102
+              ],
+              [
+                21.937057495117188,
+                43.309688568115234,
+                -11.755126953125
+              ],
+              [
+                11.648426055908203,
+                43.0,
+                -29.0800724029541
+              ]
+            ],
+            "area_m2": 104.63885007436265
+          }
+        ]
+      },
+      "source_intersection_check": {
+        "crossings": [
+          [
+            29,
+            68
+          ]
+        ],
+        "coplanar": [],
+        "matches_candidate_alerts": true,
+        "note": "Same shared-rim face pair and unchanged points; not a new alert and not an exact self-intersection proof."
+      }
+    },
+    "cliff_front_columns": {
+      "source_glb_sha256": "667a5fcc083a828b2b9d6e516920be3952f8fb6e41427523a377a9f5f0b58e3f",
+      "candidate_glb_sha256": "97fd17be096e81d7aa7826941ecb371e3e6dde09ded34d8349798589aa9c2047",
+      "candidate_geometry": {
+        "welded_exact_positions": 176,
+        "triangles": 348,
+        "edges": 522,
+        "euler": 2,
+        "edge_incidence_not_2": 0,
+        "paired_edge_same_orientation": 0,
+        "degenerate_area_lt_1e_8": 0,
+        "min_triangle_area_m2": 1.8519024278671168,
+        "signed_volume_m3": 184145.45004069098
+      },
+      "rim_count": 72,
+      "floor_count": 88,
+      "rim_exactly_same_as_production": true,
+      "floor_exactly_same_as_production": true,
+      "original_positions_missing_after_declared_moves": [],
+      "added_positions": [],
+      "candidate_intersections": {
+        "nonadjacent_triangle_crossings": [
+          [
+            67,
+            68
+          ],
+          [
+            67,
+            164
+          ]
+        ],
+        "nonadjacent_coplanar_overlap_projected_m2": [],
+        "include_shared_vertex_pairs": true,
+        "scope": "AABB broad phase and segment/triangle crossings, plus coplanar area. Field names retained for schema stability; include_shared_vertex_pairs states pair coverage. Not an exact arithmetic proof against self-intersection, and not inter-asset intersection."
+      },
+      "same_triangle_connectivity": true,
+      "geometry_positions_exact_equal_source": true,
+      "changed_color_triangle_count": 58,
+      "production_blend_sha256": "37312a29ef9e568b0748021567126dabdc605edb057f34dba6d971326a167a38"
+    }
+  },
+  "run_status": "passed"
+}

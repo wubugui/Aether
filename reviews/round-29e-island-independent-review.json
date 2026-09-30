@@ -1,0 +1,112 @@
+{
+  "round": "29e",
+  "run_id": "lantern-island-29e-20260908T173424Z-b8920ba894e247bd9057f06b160a3ce1",
+  "visual_verdict": "rework_required",
+  "full_reference_accepted": false,
+  "all_reference_goal_complete": false,
+  "images": [
+    {
+      "view": "night-reference",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-29e-20260908T173424Z-b8920ba894e247bd9057f06b160a3ce1\\images\\night-reference.png",
+      "sha256": "78b47066a6fb1ad8a976e1b9254ae8595a77c77e396a0abe5f76a158b9a91220"
+    },
+    {
+      "view": "day-reference",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-29e-20260908T173424Z-b8920ba894e247bd9057f06b160a3ce1\\images\\day-reference.png",
+      "sha256": "8746e2c7c239138c70dc109ef415fe979bec5a453922e5f964f65ed30d7acc15"
+    },
+    {
+      "view": "day-d-front",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-29e-20260908T173424Z-b8920ba894e247bd9057f06b160a3ce1\\images\\day-d-front.png",
+      "sha256": "8953416d95b13d3865ecdfe6f65a48a439a508c7ce4d2f8df72fc9c24cdeca66"
+    },
+    {
+      "view": "day-d-back",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-29e-20260908T173424Z-b8920ba894e247bd9057f06b160a3ce1\\images\\day-d-back.png",
+      "sha256": "6737c02613f5e0e889cd3374685c28816784bc8a56648e2a73879060046c4c5c"
+    },
+    {
+      "view": "day-c-front",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-29e-20260908T173424Z-b8920ba894e247bd9057f06b160a3ce1\\images\\day-c-front.png",
+      "sha256": "94942922289f8cef2e47923551af7bbadc268cfc794830a555a8af651d7475eb"
+    }
+  ],
+  "geometry_evidence": "reviews/round-29e-independent-geometry.json",
+  "detailed_review": "reviews/round-29e-island-independent-review.md",
+  "local_improvements": [
+    "Upper wall locally interrupted by genuine terrain changes",
+    "Path refitted to new actual surface",
+    "Projected side folds removed"
+  ],
+  "remaining_failures": [
+    "Landmass too tall and wide relative to tower in reference projection",
+    "Broad dark island face and grey skirt",
+    "Continuous coastal bands"
+  ],
+  "next_action": "Prioritize landmass/building proportion and recorded projection; preserve native building scale and re-seat actual fixtures. Then refine offset compact fractures.",
+  "measurement_scope": "Manual independent pixel intervals on nearest-neighbor original-image crops; not calibrated3D dimensions or automatic segmentation.",
+  "manual_pixel_intervals": {
+    "coordinate_system": "Original PNG pixels; manual ranges",
+    "reference": {
+      "source": "ref/1342.png",
+      "crop": "reviews/round-29e-reference-island-measurement-crop.png",
+      "crop_rectangle": [
+        790,
+        510,
+        1110,
+        730
+      ],
+      "nearest_scale": 3,
+      "roof_tip_y": [
+        546,
+        550
+      ],
+      "tower_body_foot_y": [
+        623,
+        627
+      ],
+      "near_dry_rock_water_contact_y": [
+        701,
+        708
+      ],
+      "island_x": [
+        835,
+        1100
+      ]
+    },
+    "actual": {
+      "source": "captures/validation_runs/lantern-island-29e-20260908T173424Z-b8920ba894e247bd9057f06b160a3ce1/images/night-reference.png",
+      "crop": "reviews/round-29e-actual-island-measurement-crop.png",
+      "crop_rectangle": [
+        820,
+        500,
+        1245,
+        785
+      ],
+      "nearest_scale": 2,
+      "roof_tip_y": [
+        535,
+        539
+      ],
+      "tower_body_foot_y": [
+        622,
+        628
+      ],
+      "near_dry_rock_water_contact_y": [
+        750,
+        760
+      ],
+      "island_x": [
+        837,
+        1230
+      ]
+    },
+    "limits": "Not automatic segmentation or exact3D reconstruction; waterline depth, camera and geography affect projected ratios."
+  },
+  "composition_issue": "Reference central keeper house lies right of lighthouse;29e lies left. Correct D orientation/layout as well as landmass proportion."
+}

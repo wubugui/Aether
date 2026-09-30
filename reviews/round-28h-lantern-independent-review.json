@@ -1,0 +1,138 @@
+{
+  "run": "lantern-lighting-28h-20260908T163354Z-e69c09f62fc547389d39adbbd0011225",
+  "local_acceptance": true,
+  "local_acceptance_scope": "Retain visible world-space lantern beam implementation, improved finite-interval sampling/distance profile and energy1.3 with original core shadow casters ON. This accepts a useful local study basis, not finished reference fidelity or production integration.",
+  "full_reference_acceptance": false,
+  "full_world_acceptance": false,
+  "directly_viewed_originals": [
+    {
+      "view": "reference",
+      "png_sha256": "89591de0ede569ee82b49723208a693d95e612c0c920bf5b032656092260885a",
+      "sidecar_sha256": "5d67656ba9a105f486ea07b55ba4f078ba63d5405bf27c41327ae1e4f469652b",
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -2278.0,
+          60.0,
+          -1632.0
+        ],
+        "rotation": [
+          -0.00509163970127702,
+          0.60683274269104,
+          0.0
+        ]
+      },
+      "actual_core_shadow_enums": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "actual_beam_energies": [
+        1.3,
+        1.3,
+        1.3,
+        1.3
+      ],
+      "world_sha256": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+      "versus28g_boost": {
+        "changed_pixels": 1014,
+        "max_channel_difference": 89,
+        "pixels_max_difference_gt10": 242
+      }
+    },
+    {
+      "view": "lamp-close",
+      "png_sha256": "a283b02b79c7c10cabdfa46d10ea7877354290c68daa83f2a5b7b82272223122",
+      "sidecar_sha256": "f269310b12f507dbb43be6767331ec7698bc1892081da507abbfd8b4f13f951e",
+      "camera": {
+        "fov": 45.0,
+        "position": [
+          -2344.0,
+          53.0621032714844,
+          -1643.0
+        ],
+        "rotation": [
+          -0.211809575557709,
+          0.605544626712799,
+          0.0
+        ]
+      },
+      "actual_core_shadow_enums": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "actual_beam_energies": [
+        1.3,
+        1.3,
+        1.3,
+        1.3
+      ],
+      "world_sha256": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+      "versus28g_boost": {
+        "changed_pixels": 450,
+        "max_channel_difference": 54,
+        "pixels_max_difference_gt10": 85
+      }
+    },
+    {
+      "view": "beam-side",
+      "png_sha256": "b0ad1a2ac49c7e07e453b43ae1a5cc691761867633b51528d5a05e25ddf1a95c",
+      "sidecar_sha256": "f2a08e0d990c60a5418e55798c7b65de9e8048c702599488ef7ffb039f2927c6",
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -1893.0,
+          174.662109375,
+          -1826.0
+        ],
+        "rotation": [
+          -0.348858118057251,
+          1.42478406429291,
+          0.0
+        ]
+      },
+      "actual_core_shadow_enums": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "actual_beam_energies": [
+        1.3,
+        1.3,
+        1.3,
+        1.3
+      ],
+      "world_sha256": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+      "versus28g_boost": {
+        "changed_pixels": 640,
+        "max_channel_difference": 91,
+        "pixels_max_difference_gt10": 143
+      }
+    }
+  ],
+  "unchanged_basis_artifacts": [
+    {
+      "file": "lantern_volume.gdshader",
+      "sha256": "a954c96a675333b5b31dc2f006cc7b06eed95a8a822c33b5a3880ba1b8cf4f92"
+    },
+    {
+      "file": "lantern_beam.glb",
+      "sha256": "531ee0776df2d105538fb334da907a647999affe6bf32e0c082e999e682997fb"
+    },
+    {
+      "file": "lantern_halo.glb",
+      "sha256": "f08774f209d3f61b0b7b31e3626923751581d48dc62c8143e4d1af51d7e632df"
+    }
+  ],
+  "findings": [
+    "All three actual originals retain the readable fixed world-space beams without28e detached far orange pools.",
+    "Close lamp retains warm core/glass and opaque roof/frame silhouette in front of distant haze.",
+    "Original core casters are ON as intended; unsupported core-OFF receiver repair is not retained.",
+    "Lamp focal brightness and native nearby receiver illumination remain weaker than original1342; whole scene has substantial water/cloud/rock/settlement gaps.",
+    "No claim of full dynamic weather, beam rotation, continuous flight, warm water reflection or all-angle/thin-object shadow acceptance."
+  ]
+}

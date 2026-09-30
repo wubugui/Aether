@@ -1,0 +1,116 @@
+{
+  "round": "31a",
+  "run_id": "lantern-island-31a-20260908T194852Z-ac4f6f47286b4774afd18b8206e9f9ca",
+  "visual_verdict": "reject_two_capped_polygonal_shoulders_replace_from30k",
+  "full_reference_accepted": false,
+  "all_reference_goal_complete": false,
+  "reference": {
+    "path": "ref\\1342.png",
+    "sha256": "7acc98104013d9122eb551846b2d7fc1f7549bce8b2e3199eae8f5385a3ea238",
+    "directly_viewed_this_review": true
+  },
+  "comparison": {
+    "path": "captures\\validation_runs\\lantern-island-30k-r1-20260908T193210Z-09e7ff871c9941519a561b4fede063ee\\images\\day-c-front.png",
+    "sha256": "5883653f07ba3c6c96d3d246a227bffb0bd5caa22cdd2798e73fb772647682a0",
+    "directly_viewed_this_review": true
+  },
+  "images": [
+    {
+      "view": "night-reference",
+      "path": "captures\\validation_runs\\lantern-island-31a-20260908T194852Z-ac4f6f47286b4774afd18b8206e9f9ca\\images\\night-reference.png",
+      "sha256": "fee740656292ee0bf7939f6e6d5e4bbcdc00314eb1dd7dc08b724e5ebdee4aa0",
+      "size_px": [
+        1672,
+        941
+      ],
+      "directly_viewed": true,
+      "judgment": "建筑原生比例和守塔屋位于右侧的固定构图仍保留。中景岛前沿的灰色块面变得更分段，但夜景尺度掩盖了两新增肩的规则外轮廓，不能据此接受。参考1342的中央岛是交错斜向岩根承接上台，本版仍是较整齐上台配外围块体。"
+    },
+    {
+      "view": "day-reference",
+      "path": "captures\\validation_runs\\lantern-island-31a-20260908T194852Z-ac4f6f47286b4774afd18b8206e9f9ca\\images\\day-reference.png",
+      "sha256": "e5d212a39c3db20638789b81ec3648cc8b6c4f61b4b29f582da041a66b4182ba",
+      "size_px": [
+        1672,
+        941
+      ],
+      "directly_viewed": true,
+      "judgment": "两处前肩在全景中增加了凸起层次，岛体没有恢复为旧高圆台；但中景仍读成规则上台和灰色裙坡。远景只证明形态有变化，无法消除近景暴露的圆帽和柱侧面问题。"
+    },
+    {
+      "view": "day-d-front",
+      "path": "captures\\validation_runs\\lantern-island-31a-20260908T194852Z-ac4f6f47286b4774afd18b8206e9f9ca\\images\\day-d-front.png",
+      "sha256": "206afd3b541a07a7b9c9373f349572da28a019170429ad405dc460a91acd53b6",
+      "size_px": [
+        1672,
+        941
+      ],
+      "directly_viewed": true,
+      "judgment": "新增两肩明确可见，覆盖了部分原连续大斜板。然而两者都有闭合多边形帽面、近直立侧壁及相似收边，读成两颗平顶多边柱或按钮。它们在几何上并入主壳，视觉上却仍像放在坡面上的独立制品。后接上坡的直缝与上台宽灰坡仍在。"
+    },
+    {
+      "view": "day-d-back",
+      "path": "captures\\validation_runs\\lantern-island-31a-20260908T194852Z-ac4f6f47286b4774afd18b8206e9f9ca\\images\\day-d-back.png",
+      "sha256": "d76c013113ca052b2ff6b04b0f156f701c2f90cbd1c61af7f3003a5815a5d9de",
+      "size_px": [
+        1672,
+        941
+      ],
+      "directly_viewed": true,
+      "judgment": "新增肩在这一侧没有解决原有后侧问题。塔基以下宽整灰坡和直窄深槽仍明显，槽两侧像直切开的大片岩体；边缘细碎低岩也没有形成参考中的错位承重关系。本视角不能因前面添加实体而标记改善。"
+    },
+    {
+      "view": "day-c-front",
+      "path": "captures\\validation_runs\\lantern-island-31a-20260908T194852Z-ac4f6f47286b4774afd18b8206e9f9ca\\images\\day-c-front.png",
+      "sha256": "657e8c1d7a4dd2fdb803c950622f32e33d9ffd38282f03a08857f61015cc62de",
+      "size_px": [
+        1672,
+        941
+      ],
+      "directly_viewed": true,
+      "judgment": "与本次直接重新查看的30k同视角相比，左前大斜板被一个宽帽柱打断，中间增加了一个稍小帽柱，确实不是被主岛完全吞没。但约x580–670/y505–578和x720–800/y530–610两处重复的多边帽与竖壁是主要失败。原斜板残部、上台陡坡及中央狭长切缝仍存在；局部遮挡没有形成从上台斜压向海的自然短宽岩肩。"
+    }
+  ],
+  "actual_improvement": "两肩真实外露并遮断部分原连续大斜板，新增体积不是完全嵌入无贡献；但形态本身失败。",
+  "remaining": [
+    "重复平顶多边柱/按钮轮廓",
+    "近竖直同XY侧壁和均匀收帽",
+    "两肩与上台的视觉接续生硬",
+    "上台宽灰坡及中央直窄切缝",
+    "后侧旧长深槽"
+  ],
+  "next_actions": [
+    "从30k原壳替换两新增肩，不继承31a柱体。保留两处短宽凸面打断大坡的定位方向。",
+    "不要再次使用同XY竖向环加统一内缩帽：顶面改为少量方向明确、非水平的宽斜面，两处方向和高程错开；侧面倾斜且宽根进入旧坡。",
+    "后端应接入旧主坡并逐段露出，前端短厚偏转，避免一个完整封闭圆帽轮廓在所有前视角都可辨认，也避免重新拉成长楔或尖脊。",
+    "验证真实上包络仍保持道路、pad和当前树轴支承，同时在近图检查宽根和原坡相接的视觉关系。正体积交集或新外露面积都不能替代该检查。",
+    "后侧直窄深槽作为独立剩余项保留，不能用正面替换宣称全岛完成；全场照明、云、海岸和其他参考仍不在本轮完成范围。"
+  ],
+  "geometry_evidence": {
+    "path": "reviews/round-31a-independent-geometry.json",
+    "passed": true,
+    "main_triangles": 2150,
+    "added_union_volume_m3": 281.6495697799837,
+    "aggregate_solid_overlap_m3": 381.0210775042118,
+    "geometric_upward_exterior_areas_m2": [
+      83.37427209377823,
+      44.908239308060914
+    ],
+    "section_correction": "Exact z4/z6 zero reconstruction superseded by nonvertex levels2.137/4.137/6.137. Original zeros retained as failed reconstruction, not actual empty section. No support rerun."
+  },
+  "root_runtime_report_read": {
+    "path": "reviews/round-31a-runtime-incremental.json",
+    "passed": true,
+    "binding_count": 199,
+    "placements_each_view": 59,
+    "maximum_position_delta_m": 0.00016784667968972045,
+    "maximum_footing_delta_m": 0.0
+  },
+  "limits": [
+    "直接查看参考和五张原图；未启动GPU或Blender。",
+    "像素范围为人工定位区间，不是精确分割或可见面积测量。",
+    "几何外露面积不是屏幕可见面积，也不是整块原大斜板的面积。",
+    "运行审计由root完成，本次读取报告，不伪称独立复跑。",
+    "31a已失败的形态与截面纠正证据保留。"
+  ]
+}

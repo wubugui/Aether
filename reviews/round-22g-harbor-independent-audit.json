@@ -1,0 +1,1522 @@
+{
+  "scope": "Seven actual GPU images and frozen binding; runtime rays independently read, not run by reviewer; bounded geometry review reused. No production install or full reference acceptance.",
+  "run": "E:\\FeiTing\\captures\\validation_runs\\harbor-assembly-22g-20260908T112011Z-00f0a7b4c813446e842b280476463e21",
+  "status": "passed",
+  "artifact_count": 120,
+  "mismatches": [],
+  "manifest_sha256": "ed0edcbf494bdbfe9f247d8df2e0b5eb076e52af2dee7f5f5dcad3d38f7a017c",
+  "views": {
+    "dock-repair": {
+      "image_sha256": "2ad463ee129d160d9ac50d852674509bf620e50d3daa470f924c3bd3fd074e15",
+      "stage_status": "passed",
+      "exit_code": 0,
+      "same_run_id": true,
+      "inputs_sha_matches": true,
+      "audio_dummy": true,
+      "camera_view_alias": "dock-front",
+      "runtime_paths_passed": true,
+      "runtime_path_errors": [],
+      "paths": [
+        {
+          "asset": "harbor_stair_0",
+          "top_probes": 621,
+          "base_probes": 621,
+          "max_top_error_m": 0.000322265625005258,
+          "base_ground_gap_range_m": [
+            -1.06360244750977,
+            -0.251365661621094
+          ],
+          "top_ground_clearance_min_m": 0.05419921875,
+          "all_soil_native_terrain": true,
+          "probe_pair_order_matches": true
+        },
+        {
+          "asset": "harbor_stair_1",
+          "top_probes": 378,
+          "base_probes": 378,
+          "max_top_error_m": 0.00026123046872506,
+          "base_ground_gap_range_m": [
+            -0.323459625244141,
+            -0.239315032958984
+          ],
+          "top_ground_clearance_min_m": 0.059326171875,
+          "all_soil_native_terrain": true,
+          "probe_pair_order_matches": true
+        },
+        {
+          "asset": "harbor_stair_2",
+          "top_probes": 375,
+          "base_probes": 375,
+          "max_top_error_m": 0.000261230468755258,
+          "base_ground_gap_range_m": [
+            -0.374473571777344,
+            -0.237396240234375
+          ],
+          "top_ground_clearance_min_m": 0.04486083984379974,
+          "all_soil_native_terrain": true,
+          "probe_pair_order_matches": true
+        },
+        {
+          "asset": "harbor_stair_3",
+          "top_probes": 384,
+          "base_probes": 384,
+          "max_top_error_m": 0.000268554687500089,
+          "base_ground_gap_range_m": [
+            -0.458297729492188,
+            -0.242874145507813
+          ],
+          "top_ground_clearance_min_m": 0.04974365234370026,
+          "all_soil_native_terrain": true,
+          "probe_pair_order_matches": true
+        }
+      ],
+      "boats": [
+        {
+          "node": "Harbor_moored_fishing_boat_54",
+          "vertex_count": 138,
+          "modes": {
+            "previous_22a": {
+              "count": 138,
+              "missing": 0,
+              "negative": 48,
+              "clearance_range_m": [
+                -0.989466547966003,
+                3.65138429403305
+              ],
+              "all_native_terrain": true
+            },
+            "candidate_22g": {
+              "count": 138,
+              "missing": 0,
+              "negative": 0,
+              "clearance_range_m": [
+                0.577183842658997,
+                5.50163453817368
+              ],
+              "all_native_terrain": true
+            }
+          }
+        },
+        {
+          "node": "Harbor_moored_fishing_boat_63",
+          "vertex_count": 138,
+          "modes": {
+            "previous_22a": {
+              "count": 138,
+              "missing": 0,
+              "negative": 49,
+              "clearance_range_m": [
+                -0.988947749137878,
+                3.65489381551743
+              ],
+              "all_native_terrain": true
+            },
+            "candidate_22g": {
+              "count": 138,
+              "missing": 0,
+              "negative": 0,
+              "clearance_range_m": [
+                0.575657963752747,
+                4.59276002645493
+              ],
+              "all_native_terrain": true
+            }
+          }
+        },
+        {
+          "node": "Harbor_moored_fishing_boat_72",
+          "vertex_count": 138,
+          "modes": {
+            "previous_22a": {
+              "count": 138,
+              "missing": 0,
+              "negative": 49,
+              "clearance_range_m": [
+                -0.988673090934753,
+                3.65587037801743
+              ],
+              "all_native_terrain": true
+            },
+            "candidate_22g": {
+              "count": 138,
+              "missing": 0,
+              "negative": 0,
+              "clearance_range_m": [
+                0.576085209846497,
+                4.69706910848618
+              ],
+              "all_native_terrain": true
+            }
+          }
+        },
+        {
+          "node": "Harbor_moored_fishing_boat_81",
+          "vertex_count": 138,
+          "modes": {
+            "previous_22a": {
+              "count": 138,
+              "missing": 0,
+              "negative": 48,
+              "clearance_range_m": [
+                -0.987055659294128,
+                3.6635302901268
+              ],
+              "all_native_terrain": true
+            },
+            "candidate_22g": {
+              "count": 138,
+              "missing": 0,
+              "negative": 0,
+              "clearance_range_m": [
+                0.583653569221497,
+                4.53126710653305
+              ],
+              "all_native_terrain": true
+            }
+          }
+        }
+      ],
+      "light_count": 54,
+      "light_roles": {
+        "house lane": 23,
+        "dock deck": 16,
+        "stone approach": 15
+      },
+      "light_energies": [
+        0.0
+      ],
+      "light_core_position_max_error_m": 0.00016045245366643507,
+      "house_vegetation_adjustments": [],
+      "path_vegetation_adjustments": [
+        {
+          "node": "/root/Skyfarer/World/Vegetation/oak_-4_-4",
+          "removed_from_temporary_copy": [
+            {
+              "index": 9,
+              "position": [
+                -2512.6201171875,
+                14.345947265625,
+                -2523.57397460938
+              ]
+            }
+          ]
+        },
+        {
+          "node": "/root/Skyfarer/World/Vegetation/rock_-4_-4",
+          "removed_from_temporary_copy": [
+            {
+              "index": 5,
+              "position": [
+                -2657.11694335938,
+                3.71630859375,
+                -2674.6630859375
+              ]
+            }
+          ]
+        }
+      ],
+      "production_modified": false,
+      "world_sha256": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+      "lighthouse_sha256": "79b5fd32ec06a3c3cf0fc948e31333c9d374fb018437f2fa630293e266382eb1"
+    },
+    "night-path": {
+      "image_sha256": "07604b053341dadc12977b9d9c7e3eb75c787d18a4363557bc73f96541f803d9",
+      "stage_status": "passed",
+      "exit_code": 0,
+      "same_run_id": true,
+      "inputs_sha_matches": true,
+      "audio_dummy": true,
+      "camera_view_alias": "paths-overview",
+      "runtime_paths_passed": true,
+      "runtime_path_errors": [],
+      "paths": [
+        {
+          "asset": "harbor_stair_0",
+          "top_probes": 621,
+          "base_probes": 621,
+          "max_top_error_m": 0.000322265625005258,
+          "base_ground_gap_range_m": [
+            -1.06360244750977,
+            -0.251365661621094
+          ],
+          "top_ground_clearance_min_m": 0.05419921875,
+          "all_soil_native_terrain": true,
+          "probe_pair_order_matches": true
+        },
+        {
+          "asset": "harbor_stair_1",
+          "top_probes": 378,
+          "base_probes": 378,
+          "max_top_error_m": 0.00026123046872506,
+          "base_ground_gap_range_m": [
+            -0.323459625244141,
+            -0.239315032958984
+          ],
+          "top_ground_clearance_min_m": 0.059326171875,
+          "all_soil_native_terrain": true,
+          "probe_pair_order_matches": true
+        },
+        {
+          "asset": "harbor_stair_2",
+          "top_probes": 375,
+          "base_probes": 375,
+          "max_top_error_m": 0.000261230468755258,
+          "base_ground_gap_range_m": [
+            -0.374473571777344,
+            -0.237396240234375
+          ],
+          "top_ground_clearance_min_m": 0.04486083984379974,
+          "all_soil_native_terrain": true,
+          "probe_pair_order_matches": true
+        },
+        {
+          "asset": "harbor_stair_3",
+          "top_probes": 384,
+          "base_probes": 384,
+          "max_top_error_m": 0.000268554687500089,
+          "base_ground_gap_range_m": [
+            -0.458297729492188,
+            -0.242874145507813
+          ],
+          "top_ground_clearance_min_m": 0.04974365234370026,
+          "all_soil_native_terrain": true,
+          "probe_pair_order_matches": true
+        }
+      ],
+      "boats": [
+        {
+          "node": "Harbor_moored_fishing_boat_54",
+          "vertex_count": 138,
+          "modes": {
+            "previous_22a": {
+              "count": 138,
+              "missing": 0,
+              "negative": 48,
+              "clearance_range_m": [
+                -0.989466547966003,
+                3.65138429403305
+              ],
+              "all_native_terrain": true
+            },
+            "candidate_22g": {
+              "count": 138,
+              "missing": 0,
+              "negative": 0,
+              "clearance_range_m": [
+                0.577183842658997,
+                5.50163453817368
+              ],
+              "all_native_terrain": true
+            }
+          }
+        },
+        {
+          "node": "Harbor_moored_fishing_boat_63",
+          "vertex_count": 138,
+          "modes": {
+            "previous_22a": {
+              "count": 138,
+              "missing": 0,
+              "negative": 49,
+              "clearance_range_m": [
+                -0.988947749137878,
+                3.65489381551743
+              ],
+              "all_native_terrain": true
+            },
+            "candidate_22g": {
+              "count": 138,
+              "missing": 0,
+              "negative": 0,
+              "clearance_range_m": [
+                0.575657963752747,
+                4.59276002645493
+              ],
+              "all_native_terrain": true
+            }
+          }
+        },
+        {
+          "node": "Harbor_moored_fishing_boat_72",
+          "vertex_count": 138,
+          "modes": {
+            "previous_22a": {
+              "count": 138,
+              "missing": 0,
+              "negative": 49,
+              "clearance_range_m": [
+                -0.988673090934753,
+                3.65587037801743
+              ],
+              "all_native_terrain": true
+            },
+            "candidate_22g": {
+              "count": 138,
+              "missing": 0,
+              "negative": 0,
+              "clearance_range_m": [
+                0.576085209846497,
+                4.69706910848618
+              ],
+              "all_native_terrain": true
+            }
+          }
+        },
+        {
+          "node": "Harbor_moored_fishing_boat_81",
+          "vertex_count": 138,
+          "modes": {
+            "previous_22a": {
+              "count": 138,
+              "missing": 0,
+              "negative": 48,
+              "clearance_range_m": [
+                -0.987055659294128,
+                3.6635302901268
+              ],
+              "all_native_terrain": true
+            },
+            "candidate_22g": {
+              "count": 138,
+              "missing": 0,
+              "negative": 0,
+              "clearance_range_m": [
+                0.583653569221497,
+                4.53126710653305
+              ],
+              "all_native_terrain": true
+            }
+          }
+        }
+      ],
+      "light_count": 54,
+      "light_roles": {
+        "house lane": 23,
+        "dock deck": 16,
+        "stone approach": 15
+      },
+      "light_energies": [
+        1.79999995231628
+      ],
+      "light_core_position_max_error_m": 0.00016045245366643507,
+      "house_vegetation_adjustments": [],
+      "path_vegetation_adjustments": [
+        {
+          "node": "/root/Skyfarer/World/Vegetation/oak_-4_-4",
+          "removed_from_temporary_copy": [
+            {
+              "index": 9,
+              "position": [
+                -2512.6201171875,
+                14.345947265625,
+                -2523.57397460938
+              ]
+            }
+          ]
+        },
+        {
+          "node": "/root/Skyfarer/World/Vegetation/rock_-4_-4",
+          "removed_from_temporary_copy": [
+            {
+              "index": 5,
+              "position": [
+                -2657.11694335938,
+                3.71630859375,
+                -2674.6630859375
+              ]
+            }
+          ]
+        }
+      ],
+      "production_modified": false,
+      "world_sha256": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+      "lighthouse_sha256": "79b5fd32ec06a3c3cf0fc948e31333c9d374fb018437f2fa630293e266382eb1"
+    },
+    "night-reference": {
+      "image_sha256": "73e2cdb40336176d2d824926bed9e47cd527a7144d3570e894668377abc2ed10",
+      "stage_status": "passed",
+      "exit_code": 0,
+      "same_run_id": true,
+      "inputs_sha_matches": true,
+      "audio_dummy": true,
+      "camera_view_alias": "reference-coast-near",
+      "runtime_paths_passed": true,
+      "runtime_path_errors": [],
+      "paths": [
+        {
+          "asset": "harbor_stair_0",
+          "top_probes": 621,
+          "base_probes": 621,
+          "max_top_error_m": 0.000322265625005258,
+          "base_ground_gap_range_m": [
+            -1.06360244750977,
+            -0.251365661621094
+          ],
+          "top_ground_clearance_min_m": 0.05419921875,
+          "all_soil_native_terrain": true,
+          "probe_pair_order_matches": true
+        },
+        {
+          "asset": "harbor_stair_1",
+          "top_probes": 378,
+          "base_probes": 378,
+          "max_top_error_m": 0.00026123046872506,
+          "base_ground_gap_range_m": [
+            -0.323459625244141,
+            -0.239315032958984
+          ],
+          "top_ground_clearance_min_m": 0.059326171875,
+          "all_soil_native_terrain": true,
+          "probe_pair_order_matches": true
+        },
+        {
+          "asset": "harbor_stair_2",
+          "top_probes": 375,
+          "base_probes": 375,
+          "max_top_error_m": 0.000261230468755258,
+          "base_ground_gap_range_m": [
+            -0.374473571777344,
+            -0.237396240234375
+          ],
+          "top_ground_clearance_min_m": 0.04486083984379974,
+          "all_soil_native_terrain": true,
+          "probe_pair_order_matches": true
+        },
+        {
+          "asset": "harbor_stair_3",
+          "top_probes": 384,
+          "base_probes": 384,
+          "max_top_error_m": 0.000268554687500089,
+          "base_ground_gap_range_m": [
+            -0.458297729492188,
+            -0.242874145507813
+          ],
+          "top_ground_clearance_min_m": 0.04974365234370026,
+          "all_soil_native_terrain": true,
+          "probe_pair_order_matches": true
+        }
+      ],
+      "boats": [
+        {
+          "node": "Harbor_moored_fishing_boat_54",
+          "vertex_count": 138,
+          "modes": {
+            "previous_22a": {
+              "count": 138,
+              "missing": 0,
+              "negative": 48,
+              "clearance_range_m": [
+                -0.989466547966003,
+                3.65138429403305
+              ],
+              "all_native_terrain": true
+            },
+            "candidate_22g": {
+              "count": 138,
+              "missing": 0,
+              "negative": 0,
+              "clearance_range_m": [
+                0.577183842658997,
+                5.50163453817368
+              ],
+              "all_native_terrain": true
+            }
+          }
+        },
+        {
+          "node": "Harbor_moored_fishing_boat_63",
+          "vertex_count": 138,
+          "modes": {
+            "previous_22a": {
+              "count": 138,
+              "missing": 0,
+              "negative": 49,
+              "clearance_range_m": [
+                -0.988947749137878,
+                3.65489381551743
+              ],
+              "all_native_terrain": true
+            },
+            "candidate_22g": {
+              "count": 138,
+              "missing": 0,
+              "negative": 0,
+              "clearance_range_m": [
+                0.575657963752747,
+                4.59276002645493
+              ],
+              "all_native_terrain": true
+            }
+          }
+        },
+        {
+          "node": "Harbor_moored_fishing_boat_72",
+          "vertex_count": 138,
+          "modes": {
+            "previous_22a": {
+              "count": 138,
+              "missing": 0,
+              "negative": 49,
+              "clearance_range_m": [
+                -0.988673090934753,
+                3.65587037801743
+              ],
+              "all_native_terrain": true
+            },
+            "candidate_22g": {
+              "count": 138,
+              "missing": 0,
+              "negative": 0,
+              "clearance_range_m": [
+                0.576085209846497,
+                4.69706910848618
+              ],
+              "all_native_terrain": true
+            }
+          }
+        },
+        {
+          "node": "Harbor_moored_fishing_boat_81",
+          "vertex_count": 138,
+          "modes": {
+            "previous_22a": {
+              "count": 138,
+              "missing": 0,
+              "negative": 48,
+              "clearance_range_m": [
+                -0.987055659294128,
+                3.6635302901268
+              ],
+              "all_native_terrain": true
+            },
+            "candidate_22g": {
+              "count": 138,
+              "missing": 0,
+              "negative": 0,
+              "clearance_range_m": [
+                0.583653569221497,
+                4.53126710653305
+              ],
+              "all_native_terrain": true
+            }
+          }
+        }
+      ],
+      "light_count": 54,
+      "light_roles": {
+        "house lane": 23,
+        "dock deck": 16,
+        "stone approach": 15
+      },
+      "light_energies": [
+        1.79999995231628
+      ],
+      "light_core_position_max_error_m": 0.00016045245366643507,
+      "house_vegetation_adjustments": [],
+      "path_vegetation_adjustments": [
+        {
+          "node": "/root/Skyfarer/World/Vegetation/oak_-4_-4",
+          "removed_from_temporary_copy": [
+            {
+              "index": 9,
+              "position": [
+                -2512.6201171875,
+                14.345947265625,
+                -2523.57397460938
+              ]
+            }
+          ]
+        },
+        {
+          "node": "/root/Skyfarer/World/Vegetation/rock_-4_-4",
+          "removed_from_temporary_copy": [
+            {
+              "index": 5,
+              "position": [
+                -2657.11694335938,
+                3.71630859375,
+                -2674.6630859375
+              ]
+            }
+          ]
+        }
+      ],
+      "production_modified": false,
+      "world_sha256": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+      "lighthouse_sha256": "79b5fd32ec06a3c3cf0fc948e31333c9d374fb018437f2fa630293e266382eb1"
+    },
+    "path-approach": {
+      "image_sha256": "e5760f229a4a63390a3c03988a1451727ee3868fe85da4c639347b36a61ff0bd",
+      "stage_status": "passed",
+      "exit_code": 0,
+      "same_run_id": true,
+      "inputs_sha_matches": true,
+      "audio_dummy": true,
+      "camera_view_alias": "path-approach",
+      "runtime_paths_passed": true,
+      "runtime_path_errors": [],
+      "paths": [
+        {
+          "asset": "harbor_stair_0",
+          "top_probes": 621,
+          "base_probes": 621,
+          "max_top_error_m": 0.000322265625005258,
+          "base_ground_gap_range_m": [
+            -1.06360244750977,
+            -0.251365661621094
+          ],
+          "top_ground_clearance_min_m": 0.05419921875,
+          "all_soil_native_terrain": true,
+          "probe_pair_order_matches": true
+        },
+        {
+          "asset": "harbor_stair_1",
+          "top_probes": 378,
+          "base_probes": 378,
+          "max_top_error_m": 0.00026123046872506,
+          "base_ground_gap_range_m": [
+            -0.323459625244141,
+            -0.239315032958984
+          ],
+          "top_ground_clearance_min_m": 0.059326171875,
+          "all_soil_native_terrain": true,
+          "probe_pair_order_matches": true
+        },
+        {
+          "asset": "harbor_stair_2",
+          "top_probes": 375,
+          "base_probes": 375,
+          "max_top_error_m": 0.000261230468755258,
+          "base_ground_gap_range_m": [
+            -0.374473571777344,
+            -0.237396240234375
+          ],
+          "top_ground_clearance_min_m": 0.04486083984379974,
+          "all_soil_native_terrain": true,
+          "probe_pair_order_matches": true
+        },
+        {
+          "asset": "harbor_stair_3",
+          "top_probes": 384,
+          "base_probes": 384,
+          "max_top_error_m": 0.000268554687500089,
+          "base_ground_gap_range_m": [
+            -0.458297729492188,
+            -0.242874145507813
+          ],
+          "top_ground_clearance_min_m": 0.04974365234370026,
+          "all_soil_native_terrain": true,
+          "probe_pair_order_matches": true
+        }
+      ],
+      "boats": [
+        {
+          "node": "Harbor_moored_fishing_boat_54",
+          "vertex_count": 138,
+          "modes": {
+            "previous_22a": {
+              "count": 138,
+              "missing": 0,
+              "negative": 48,
+              "clearance_range_m": [
+                -0.989466547966003,
+                3.65138429403305
+              ],
+              "all_native_terrain": true
+            },
+            "candidate_22g": {
+              "count": 138,
+              "missing": 0,
+              "negative": 0,
+              "clearance_range_m": [
+                0.577183842658997,
+                5.50163453817368
+              ],
+              "all_native_terrain": true
+            }
+          }
+        },
+        {
+          "node": "Harbor_moored_fishing_boat_63",
+          "vertex_count": 138,
+          "modes": {
+            "previous_22a": {
+              "count": 138,
+              "missing": 0,
+              "negative": 49,
+              "clearance_range_m": [
+                -0.988947749137878,
+                3.65489381551743
+              ],
+              "all_native_terrain": true
+            },
+            "candidate_22g": {
+              "count": 138,
+              "missing": 0,
+              "negative": 0,
+              "clearance_range_m": [
+                0.575657963752747,
+                4.59276002645493
+              ],
+              "all_native_terrain": true
+            }
+          }
+        },
+        {
+          "node": "Harbor_moored_fishing_boat_72",
+          "vertex_count": 138,
+          "modes": {
+            "previous_22a": {
+              "count": 138,
+              "missing": 0,
+              "negative": 49,
+              "clearance_range_m": [
+                -0.988673090934753,
+                3.65587037801743
+              ],
+              "all_native_terrain": true
+            },
+            "candidate_22g": {
+              "count": 138,
+              "missing": 0,
+              "negative": 0,
+              "clearance_range_m": [
+                0.576085209846497,
+                4.69706910848618
+              ],
+              "all_native_terrain": true
+            }
+          }
+        },
+        {
+          "node": "Harbor_moored_fishing_boat_81",
+          "vertex_count": 138,
+          "modes": {
+            "previous_22a": {
+              "count": 138,
+              "missing": 0,
+              "negative": 48,
+              "clearance_range_m": [
+                -0.987055659294128,
+                3.6635302901268
+              ],
+              "all_native_terrain": true
+            },
+            "candidate_22g": {
+              "count": 138,
+              "missing": 0,
+              "negative": 0,
+              "clearance_range_m": [
+                0.583653569221497,
+                4.53126710653305
+              ],
+              "all_native_terrain": true
+            }
+          }
+        }
+      ],
+      "light_count": 54,
+      "light_roles": {
+        "house lane": 23,
+        "dock deck": 16,
+        "stone approach": 15
+      },
+      "light_energies": [
+        0.0
+      ],
+      "light_core_position_max_error_m": 0.00016045245366643507,
+      "house_vegetation_adjustments": [],
+      "path_vegetation_adjustments": [
+        {
+          "node": "/root/Skyfarer/World/Vegetation/oak_-4_-4",
+          "removed_from_temporary_copy": [
+            {
+              "index": 9,
+              "position": [
+                -2512.6201171875,
+                14.345947265625,
+                -2523.57397460938
+              ]
+            }
+          ]
+        },
+        {
+          "node": "/root/Skyfarer/World/Vegetation/rock_-4_-4",
+          "removed_from_temporary_copy": [
+            {
+              "index": 5,
+              "position": [
+                -2657.11694335938,
+                3.71630859375,
+                -2674.6630859375
+              ]
+            }
+          ]
+        }
+      ],
+      "production_modified": false,
+      "world_sha256": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+      "lighthouse_sha256": "79b5fd32ec06a3c3cf0fc948e31333c9d374fb018437f2fa630293e266382eb1"
+    },
+    "path-door": {
+      "image_sha256": "7580669876c8c72fb33a745421d6a77ae569a22d11f89e1942b4100871916412",
+      "stage_status": "passed",
+      "exit_code": 0,
+      "same_run_id": true,
+      "inputs_sha_matches": true,
+      "audio_dummy": true,
+      "camera_view_alias": "path-door",
+      "runtime_paths_passed": true,
+      "runtime_path_errors": [],
+      "paths": [
+        {
+          "asset": "harbor_stair_0",
+          "top_probes": 621,
+          "base_probes": 621,
+          "max_top_error_m": 0.000322265625005258,
+          "base_ground_gap_range_m": [
+            -1.06360244750977,
+            -0.251365661621094
+          ],
+          "top_ground_clearance_min_m": 0.05419921875,
+          "all_soil_native_terrain": true,
+          "probe_pair_order_matches": true
+        },
+        {
+          "asset": "harbor_stair_1",
+          "top_probes": 378,
+          "base_probes": 378,
+          "max_top_error_m": 0.00026123046872506,
+          "base_ground_gap_range_m": [
+            -0.323459625244141,
+            -0.239315032958984
+          ],
+          "top_ground_clearance_min_m": 0.059326171875,
+          "all_soil_native_terrain": true,
+          "probe_pair_order_matches": true
+        },
+        {
+          "asset": "harbor_stair_2",
+          "top_probes": 375,
+          "base_probes": 375,
+          "max_top_error_m": 0.000261230468755258,
+          "base_ground_gap_range_m": [
+            -0.374473571777344,
+            -0.237396240234375
+          ],
+          "top_ground_clearance_min_m": 0.04486083984379974,
+          "all_soil_native_terrain": true,
+          "probe_pair_order_matches": true
+        },
+        {
+          "asset": "harbor_stair_3",
+          "top_probes": 384,
+          "base_probes": 384,
+          "max_top_error_m": 0.000268554687500089,
+          "base_ground_gap_range_m": [
+            -0.458297729492188,
+            -0.242874145507813
+          ],
+          "top_ground_clearance_min_m": 0.04974365234370026,
+          "all_soil_native_terrain": true,
+          "probe_pair_order_matches": true
+        }
+      ],
+      "boats": [
+        {
+          "node": "Harbor_moored_fishing_boat_54",
+          "vertex_count": 138,
+          "modes": {
+            "previous_22a": {
+              "count": 138,
+              "missing": 0,
+              "negative": 48,
+              "clearance_range_m": [
+                -0.989466547966003,
+                3.65138429403305
+              ],
+              "all_native_terrain": true
+            },
+            "candidate_22g": {
+              "count": 138,
+              "missing": 0,
+              "negative": 0,
+              "clearance_range_m": [
+                0.577183842658997,
+                5.50163453817368
+              ],
+              "all_native_terrain": true
+            }
+          }
+        },
+        {
+          "node": "Harbor_moored_fishing_boat_63",
+          "vertex_count": 138,
+          "modes": {
+            "previous_22a": {
+              "count": 138,
+              "missing": 0,
+              "negative": 49,
+              "clearance_range_m": [
+                -0.988947749137878,
+                3.65489381551743
+              ],
+              "all_native_terrain": true
+            },
+            "candidate_22g": {
+              "count": 138,
+              "missing": 0,
+              "negative": 0,
+              "clearance_range_m": [
+                0.575657963752747,
+                4.59276002645493
+              ],
+              "all_native_terrain": true
+            }
+          }
+        },
+        {
+          "node": "Harbor_moored_fishing_boat_72",
+          "vertex_count": 138,
+          "modes": {
+            "previous_22a": {
+              "count": 138,
+              "missing": 0,
+              "negative": 49,
+              "clearance_range_m": [
+                -0.988673090934753,
+                3.65587037801743
+              ],
+              "all_native_terrain": true
+            },
+            "candidate_22g": {
+              "count": 138,
+              "missing": 0,
+              "negative": 0,
+              "clearance_range_m": [
+                0.576085209846497,
+                4.69706910848618
+              ],
+              "all_native_terrain": true
+            }
+          }
+        },
+        {
+          "node": "Harbor_moored_fishing_boat_81",
+          "vertex_count": 138,
+          "modes": {
+            "previous_22a": {
+              "count": 138,
+              "missing": 0,
+              "negative": 48,
+              "clearance_range_m": [
+                -0.987055659294128,
+                3.6635302901268
+              ],
+              "all_native_terrain": true
+            },
+            "candidate_22g": {
+              "count": 138,
+              "missing": 0,
+              "negative": 0,
+              "clearance_range_m": [
+                0.583653569221497,
+                4.53126710653305
+              ],
+              "all_native_terrain": true
+            }
+          }
+        }
+      ],
+      "light_count": 54,
+      "light_roles": {
+        "house lane": 23,
+        "dock deck": 16,
+        "stone approach": 15
+      },
+      "light_energies": [
+        0.0
+      ],
+      "light_core_position_max_error_m": 0.00016045245366643507,
+      "house_vegetation_adjustments": [],
+      "path_vegetation_adjustments": [
+        {
+          "node": "/root/Skyfarer/World/Vegetation/oak_-4_-4",
+          "removed_from_temporary_copy": [
+            {
+              "index": 9,
+              "position": [
+                -2512.6201171875,
+                14.345947265625,
+                -2523.57397460938
+              ]
+            }
+          ]
+        },
+        {
+          "node": "/root/Skyfarer/World/Vegetation/rock_-4_-4",
+          "removed_from_temporary_copy": [
+            {
+              "index": 5,
+              "position": [
+                -2657.11694335938,
+                3.71630859375,
+                -2674.6630859375
+              ]
+            }
+          ]
+        }
+      ],
+      "production_modified": false,
+      "world_sha256": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+      "lighthouse_sha256": "79b5fd32ec06a3c3cf0fc948e31333c9d374fb018437f2fa630293e266382eb1"
+    },
+    "path0-curve": {
+      "image_sha256": "8fc569e15a301052277200f1bae0bb8b4f62eabfa3a0f02f36b1261a4d41a601",
+      "stage_status": "passed",
+      "exit_code": 0,
+      "same_run_id": true,
+      "inputs_sha_matches": true,
+      "audio_dummy": true,
+      "camera_view_alias": "path0-curve",
+      "runtime_paths_passed": true,
+      "runtime_path_errors": [],
+      "paths": [
+        {
+          "asset": "harbor_stair_0",
+          "top_probes": 621,
+          "base_probes": 621,
+          "max_top_error_m": 0.000322265625005258,
+          "base_ground_gap_range_m": [
+            -1.06360244750977,
+            -0.251365661621094
+          ],
+          "top_ground_clearance_min_m": 0.05419921875,
+          "all_soil_native_terrain": true,
+          "probe_pair_order_matches": true
+        },
+        {
+          "asset": "harbor_stair_1",
+          "top_probes": 378,
+          "base_probes": 378,
+          "max_top_error_m": 0.00026123046872506,
+          "base_ground_gap_range_m": [
+            -0.323459625244141,
+            -0.239315032958984
+          ],
+          "top_ground_clearance_min_m": 0.059326171875,
+          "all_soil_native_terrain": true,
+          "probe_pair_order_matches": true
+        },
+        {
+          "asset": "harbor_stair_2",
+          "top_probes": 375,
+          "base_probes": 375,
+          "max_top_error_m": 0.000261230468755258,
+          "base_ground_gap_range_m": [
+            -0.374473571777344,
+            -0.237396240234375
+          ],
+          "top_ground_clearance_min_m": 0.04486083984379974,
+          "all_soil_native_terrain": true,
+          "probe_pair_order_matches": true
+        },
+        {
+          "asset": "harbor_stair_3",
+          "top_probes": 384,
+          "base_probes": 384,
+          "max_top_error_m": 0.000268554687500089,
+          "base_ground_gap_range_m": [
+            -0.458297729492188,
+            -0.242874145507813
+          ],
+          "top_ground_clearance_min_m": 0.04974365234370026,
+          "all_soil_native_terrain": true,
+          "probe_pair_order_matches": true
+        }
+      ],
+      "boats": [
+        {
+          "node": "Harbor_moored_fishing_boat_54",
+          "vertex_count": 138,
+          "modes": {
+            "previous_22a": {
+              "count": 138,
+              "missing": 0,
+              "negative": 48,
+              "clearance_range_m": [
+                -0.989466547966003,
+                3.65138429403305
+              ],
+              "all_native_terrain": true
+            },
+            "candidate_22g": {
+              "count": 138,
+              "missing": 0,
+              "negative": 0,
+              "clearance_range_m": [
+                0.577183842658997,
+                5.50163453817368
+              ],
+              "all_native_terrain": true
+            }
+          }
+        },
+        {
+          "node": "Harbor_moored_fishing_boat_63",
+          "vertex_count": 138,
+          "modes": {
+            "previous_22a": {
+              "count": 138,
+              "missing": 0,
+              "negative": 49,
+              "clearance_range_m": [
+                -0.988947749137878,
+                3.65489381551743
+              ],
+              "all_native_terrain": true
+            },
+            "candidate_22g": {
+              "count": 138,
+              "missing": 0,
+              "negative": 0,
+              "clearance_range_m": [
+                0.575657963752747,
+                4.59276002645493
+              ],
+              "all_native_terrain": true
+            }
+          }
+        },
+        {
+          "node": "Harbor_moored_fishing_boat_72",
+          "vertex_count": 138,
+          "modes": {
+            "previous_22a": {
+              "count": 138,
+              "missing": 0,
+              "negative": 49,
+              "clearance_range_m": [
+                -0.988673090934753,
+                3.65587037801743
+              ],
+              "all_native_terrain": true
+            },
+            "candidate_22g": {
+              "count": 138,
+              "missing": 0,
+              "negative": 0,
+              "clearance_range_m": [
+                0.576085209846497,
+                4.69706910848618
+              ],
+              "all_native_terrain": true
+            }
+          }
+        },
+        {
+          "node": "Harbor_moored_fishing_boat_81",
+          "vertex_count": 138,
+          "modes": {
+            "previous_22a": {
+              "count": 138,
+              "missing": 0,
+              "negative": 48,
+              "clearance_range_m": [
+                -0.987055659294128,
+                3.6635302901268
+              ],
+              "all_native_terrain": true
+            },
+            "candidate_22g": {
+              "count": 138,
+              "missing": 0,
+              "negative": 0,
+              "clearance_range_m": [
+                0.583653569221497,
+                4.53126710653305
+              ],
+              "all_native_terrain": true
+            }
+          }
+        }
+      ],
+      "light_count": 54,
+      "light_roles": {
+        "house lane": 23,
+        "dock deck": 16,
+        "stone approach": 15
+      },
+      "light_energies": [
+        0.0
+      ],
+      "light_core_position_max_error_m": 0.00016045245366643507,
+      "house_vegetation_adjustments": [],
+      "path_vegetation_adjustments": [
+        {
+          "node": "/root/Skyfarer/World/Vegetation/oak_-4_-4",
+          "removed_from_temporary_copy": [
+            {
+              "index": 9,
+              "position": [
+                -2512.6201171875,
+                14.345947265625,
+                -2523.57397460938
+              ]
+            }
+          ]
+        },
+        {
+          "node": "/root/Skyfarer/World/Vegetation/rock_-4_-4",
+          "removed_from_temporary_copy": [
+            {
+              "index": 5,
+              "position": [
+                -2657.11694335938,
+                3.71630859375,
+                -2674.6630859375
+              ]
+            }
+          ]
+        }
+      ],
+      "production_modified": false,
+      "world_sha256": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+      "lighthouse_sha256": "79b5fd32ec06a3c3cf0fc948e31333c9d374fb018437f2fa630293e266382eb1"
+    },
+    "paths-overview": {
+      "image_sha256": "f8dbb330be46f4173e2cce576f91c96738638c70dee691dea21682767f62ff53",
+      "stage_status": "passed",
+      "exit_code": 0,
+      "same_run_id": true,
+      "inputs_sha_matches": true,
+      "audio_dummy": true,
+      "camera_view_alias": "paths-overview",
+      "runtime_paths_passed": true,
+      "runtime_path_errors": [],
+      "paths": [
+        {
+          "asset": "harbor_stair_0",
+          "top_probes": 621,
+          "base_probes": 621,
+          "max_top_error_m": 0.000322265625005258,
+          "base_ground_gap_range_m": [
+            -1.06360244750977,
+            -0.251365661621094
+          ],
+          "top_ground_clearance_min_m": 0.05419921875,
+          "all_soil_native_terrain": true,
+          "probe_pair_order_matches": true
+        },
+        {
+          "asset": "harbor_stair_1",
+          "top_probes": 378,
+          "base_probes": 378,
+          "max_top_error_m": 0.00026123046872506,
+          "base_ground_gap_range_m": [
+            -0.323459625244141,
+            -0.239315032958984
+          ],
+          "top_ground_clearance_min_m": 0.059326171875,
+          "all_soil_native_terrain": true,
+          "probe_pair_order_matches": true
+        },
+        {
+          "asset": "harbor_stair_2",
+          "top_probes": 375,
+          "base_probes": 375,
+          "max_top_error_m": 0.000261230468755258,
+          "base_ground_gap_range_m": [
+            -0.374473571777344,
+            -0.237396240234375
+          ],
+          "top_ground_clearance_min_m": 0.04486083984379974,
+          "all_soil_native_terrain": true,
+          "probe_pair_order_matches": true
+        },
+        {
+          "asset": "harbor_stair_3",
+          "top_probes": 384,
+          "base_probes": 384,
+          "max_top_error_m": 0.000268554687500089,
+          "base_ground_gap_range_m": [
+            -0.458297729492188,
+            -0.242874145507813
+          ],
+          "top_ground_clearance_min_m": 0.04974365234370026,
+          "all_soil_native_terrain": true,
+          "probe_pair_order_matches": true
+        }
+      ],
+      "boats": [
+        {
+          "node": "Harbor_moored_fishing_boat_54",
+          "vertex_count": 138,
+          "modes": {
+            "previous_22a": {
+              "count": 138,
+              "missing": 0,
+              "negative": 48,
+              "clearance_range_m": [
+                -0.989466547966003,
+                3.65138429403305
+              ],
+              "all_native_terrain": true
+            },
+            "candidate_22g": {
+              "count": 138,
+              "missing": 0,
+              "negative": 0,
+              "clearance_range_m": [
+                0.577183842658997,
+                5.50163453817368
+              ],
+              "all_native_terrain": true
+            }
+          }
+        },
+        {
+          "node": "Harbor_moored_fishing_boat_63",
+          "vertex_count": 138,
+          "modes": {
+            "previous_22a": {
+              "count": 138,
+              "missing": 0,
+              "negative": 49,
+              "clearance_range_m": [
+                -0.988947749137878,
+                3.65489381551743
+              ],
+              "all_native_terrain": true
+            },
+            "candidate_22g": {
+              "count": 138,
+              "missing": 0,
+              "negative": 0,
+              "clearance_range_m": [
+                0.575657963752747,
+                4.59276002645493
+              ],
+              "all_native_terrain": true
+            }
+          }
+        },
+        {
+          "node": "Harbor_moored_fishing_boat_72",
+          "vertex_count": 138,
+          "modes": {
+            "previous_22a": {
+              "count": 138,
+              "missing": 0,
+              "negative": 49,
+              "clearance_range_m": [
+                -0.988673090934753,
+                3.65587037801743
+              ],
+              "all_native_terrain": true
+            },
+            "candidate_22g": {
+              "count": 138,
+              "missing": 0,
+              "negative": 0,
+              "clearance_range_m": [
+                0.576085209846497,
+                4.69706910848618
+              ],
+              "all_native_terrain": true
+            }
+          }
+        },
+        {
+          "node": "Harbor_moored_fishing_boat_81",
+          "vertex_count": 138,
+          "modes": {
+            "previous_22a": {
+              "count": 138,
+              "missing": 0,
+              "negative": 48,
+              "clearance_range_m": [
+                -0.987055659294128,
+                3.6635302901268
+              ],
+              "all_native_terrain": true
+            },
+            "candidate_22g": {
+              "count": 138,
+              "missing": 0,
+              "negative": 0,
+              "clearance_range_m": [
+                0.583653569221497,
+                4.53126710653305
+              ],
+              "all_native_terrain": true
+            }
+          }
+        }
+      ],
+      "light_count": 54,
+      "light_roles": {
+        "house lane": 23,
+        "dock deck": 16,
+        "stone approach": 15
+      },
+      "light_energies": [
+        0.0
+      ],
+      "light_core_position_max_error_m": 0.00016045245366643507,
+      "house_vegetation_adjustments": [],
+      "path_vegetation_adjustments": [
+        {
+          "node": "/root/Skyfarer/World/Vegetation/oak_-4_-4",
+          "removed_from_temporary_copy": [
+            {
+              "index": 9,
+              "position": [
+                -2512.6201171875,
+                14.345947265625,
+                -2523.57397460938
+              ]
+            }
+          ]
+        },
+        {
+          "node": "/root/Skyfarer/World/Vegetation/rock_-4_-4",
+          "removed_from_temporary_copy": [
+            {
+              "index": 5,
+              "position": [
+                -2657.11694335938,
+                3.71630859375,
+                -2674.6630859375
+              ]
+            }
+          ]
+        }
+      ],
+      "production_modified": false,
+      "world_sha256": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+      "lighthouse_sha256": "79b5fd32ec06a3c3cf0fc948e31333c9d374fb018437f2fa630293e266382eb1"
+    }
+  },
+  "frozen_paths_match_22f": {
+    "harbor_stair_0.blend": true,
+    "harbor_stair_0.glb": true,
+    "harbor_stair_1.blend": true,
+    "harbor_stair_1.glb": true,
+    "harbor_stair_2.blend": true,
+    "harbor_stair_2.glb": true,
+    "harbor_stair_3.blend": true,
+    "harbor_stair_3.glb": true
+  },
+  "previous_failed_run": {
+    "run": "E:\\FeiTing\\captures\\validation_runs\\harbor-assembly-22f-20260908T111709Z-e545b9625bb042049b0ad4d1c3e868fd",
+    "status": "failed",
+    "manifest_sha256": "75f23a3c4d8b903c65f0bce7f22a270c72451aae36f175e99d391a8d1890ecc8",
+    "error_log_sha256": {
+      "path-approach-error.log": "1fe53f08fac8c06bfce5c53f01128b667fbc9be5eaf4d9eb8d9250d7efb776ba"
+    }
+  },
+  "boat_to_landing_geometry": "reviews/round-22g-boat-landing-independent-distance.json",
+  "path_geometry_review": "reviews/round-22f-path-independent-geometry-review.md",
+  "visual_decision": "Retain actual dock-to-door stone connection and night lamp chain as local progress; full harbor/reference and production installation not accepted."
+}

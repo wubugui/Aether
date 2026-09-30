@@ -1,0 +1,120 @@
+{
+  "run_id": "lantern-island-30c-20260908T181715Z-31c81298860748f3ac9257c092e5f4b5",
+  "manifest_sha256": "7678b76f7fe7210cd13de42ff6a1364226685231f39b0a14ef544f9bb878ec7c",
+  "terminal_passed": true,
+  "binding_count": 196,
+  "all_bound_hashes_match": true,
+  "incremental_runtime_report": "reviews/round-30c-runtime-incremental.json",
+  "root_views": [
+    {
+      "name": "night-reference",
+      "path": "captures\\validation_runs\\lantern-island-30c-20260908T181715Z-31c81298860748f3ac9257c092e5f4b5\\images\\night-reference.png",
+      "png_sha256": "a445a9a2f0ada9e3ceb182acb37fe982ecf5253e6601e6c94aa0f08c2a88d6af",
+      "sidecar_sha256": "bddb33fc3aa2aea05a826e739726a5b55c467ba7b26c79795e2310e1a15f4ae1",
+      "root_directly_viewed": true,
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -2278.0,
+          60.0,
+          -1632.0
+        ],
+        "rotation": [
+          -0.00509163970127702,
+          0.60683274269104,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "day-reference",
+      "path": "captures\\validation_runs\\lantern-island-30c-20260908T181715Z-31c81298860748f3ac9257c092e5f4b5\\images\\day-reference.png",
+      "png_sha256": "4517144323210fac15a39768e2e2d44806d18f161b82fe7e3b9b80f304ba289f",
+      "sidecar_sha256": "45104548361d1dcedafcef1b1bfb4f56e99e04738b91d4440cdae8e9abdb65e5",
+      "root_directly_viewed": true,
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -2278.0,
+          60.0,
+          -1632.0
+        ],
+        "rotation": [
+          -0.00509163970127702,
+          0.60683274269104,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "day-d-front",
+      "path": "captures\\validation_runs\\lantern-island-30c-20260908T181715Z-31c81298860748f3ac9257c092e5f4b5\\images\\day-d-front.png",
+      "png_sha256": "f8d4c53958c36ae8015cc217bff31a9fa640f71a4e7295e0dceca50fdea3896f",
+      "sidecar_sha256": "115389f8897c477a777828582ce394cae4c7d53a33a78f7004f114094487b38d",
+      "root_directly_viewed": true,
+      "camera": {
+        "fov": 55.0,
+        "position": [
+          -2335.39868164063,
+          40.0,
+          -1900.23461914063
+        ],
+        "rotation": [
+          -0.304300278425217,
+          2.74837756156921,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "day-d-back",
+      "path": "captures\\validation_runs\\lantern-island-30c-20260908T181715Z-31c81298860748f3ac9257c092e5f4b5\\images\\day-d-back.png",
+      "png_sha256": "cec970a6a43193161be14115438816b4915f60061f72c5b9805036163d823163",
+      "sidecar_sha256": "eafd00636c76c2a402900c0abb00a05ad0b145353ab90f7e224205a5bf8a9175",
+      "root_directly_viewed": true,
+      "camera": {
+        "fov": 55.0,
+        "position": [
+          -2401.97412109375,
+          35.0,
+          -1721.29968261719
+        ],
+        "rotation": [
+          -0.255971014499664,
+          -0.319175213575363,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "day-c-front",
+      "path": "captures\\validation_runs\\lantern-island-30c-20260908T181715Z-31c81298860748f3ac9257c092e5f4b5\\images\\day-c-front.png",
+      "png_sha256": "424afaaf112402a0f318eb219e021762106c1580958170729ee7445443fec4ae",
+      "sidecar_sha256": "f8e66ada0f8096d4f709d77a2b9237eb0ed36d0adc6f78ddea628aac4fea0e60",
+      "root_directly_viewed": true,
+      "camera": {
+        "fov": 55.0,
+        "position": [
+          -2985.0,
+          40.0,
+          -2580.0
+        ],
+        "rotation": [
+          -0.304300338029861,
+          0.748378038406372,
+          0.0
+        ]
+      }
+    }
+  ],
+  "independent_review": "reviews\\round-30c-island-independent-review.md",
+  "independent_review_sha256": "fe164fb5a2dde93051bedd6627d5aa9d7c67ef7a8965c3380b6f50191b36eca2",
+  "independent_geometry": "reviews\\round-30c-independent-geometry.json",
+  "visual_accepted": false,
+  "production_installed": false,
+  "full_goal_status": "active",
+  "root_findings": [
+    "30c welds actual terrain and rock exterior, deleting collar and internal caps; directly viewed five images confirm narrow band removed.",
+    "Broad upper slopes, insufficient exposed short interlocking rock shoulders, overly uniform waterline and full lighting/environment/reference differences remain."
+  ]
+}

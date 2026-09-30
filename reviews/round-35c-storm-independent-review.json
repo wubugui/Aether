@@ -1,0 +1,512 @@
+{
+  "round": "35c",
+  "decision": "retain_rain_wrap_and_runtime_nonrecurrence_increment; overall_visual_rework_required",
+  "scope": "Eight actual images, changed runtime/shader evidence and cloud identity only; no repeat whole35a audit",
+  "run_status": "passed",
+  "run_passed": true,
+  "stage_exit_codes": [
+    0
+  ],
+  "error_log_empty": true,
+  "images": [
+    {
+      "view": "storm-high",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35c-20260909T004220Z-c4392024b9a4475faaff26f81d9cbcab\\images\\storm-high.png",
+      "sha256": "abff68c0fd195ab2b50df66107c99f6743135980b465b76db76b61fcd58375ef",
+      "actually_viewed": true,
+      "manifest_matches": true,
+      "sidecar_sha256": "d216dc9d49596f758b8cbab28e878d4acefd5e444754f2c3e23b78103d885e91",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "runtime_matches": true,
+      "water_matches": true,
+      "sample": {
+        "camera_weather": 1.0,
+        "flash": 0.0,
+        "lightning_native_lights": 3,
+        "lightning_segments": 60,
+        "material_bindings": 386,
+        "rain_center": [
+          -3000.0,
+          520.0,
+          -1300.0
+        ],
+        "scope": "Discrete sampled observation positions in the same world; not a continuous flight replay.",
+        "time": 0.0,
+        "weather_probes": [
+          {
+            "position": [
+              -3500,
+              0,
+              -3500
+            ],
+            "storm": 1.0
+          },
+          {
+            "position": [
+              -2350,
+              0,
+              -3500
+            ],
+            "storm": 0.5
+          },
+          {
+            "position": [
+              -1200,
+              0,
+              -3500
+            ],
+            "storm": 0.0
+          }
+        ]
+      },
+      "production_modified": false
+    },
+    {
+      "view": "storm-coast-low",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35c-20260909T004220Z-c4392024b9a4475faaff26f81d9cbcab\\images\\storm-coast-low.png",
+      "sha256": "b2a4a5664e91bbb2e9cd63ce0551d8aa4905651e452d10cd2b29e25271c00d9f",
+      "actually_viewed": true,
+      "manifest_matches": true,
+      "sidecar_sha256": "4a97251f332640c48b28e3d713809cef436cc8e4445f5e8514119e53de85cd85",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "runtime_matches": true,
+      "water_matches": true,
+      "sample": {
+        "camera_weather": 1.0,
+        "flash": 0.0,
+        "lightning_native_lights": 3,
+        "lightning_segments": 60,
+        "material_bindings": 386,
+        "rain_center": [
+          -2900.0,
+          170.0,
+          -1600.0
+        ],
+        "scope": "Discrete sampled observation positions in the same world; not a continuous flight replay.",
+        "time": 0.0,
+        "weather_probes": [
+          {
+            "position": [
+              -3500,
+              0,
+              -3500
+            ],
+            "storm": 1.0
+          },
+          {
+            "position": [
+              -2350,
+              0,
+              -3500
+            ],
+            "storm": 0.5
+          },
+          {
+            "position": [
+              -1200,
+              0,
+              -3500
+            ],
+            "storm": 0.0
+          }
+        ]
+      },
+      "production_modified": false
+    },
+    {
+      "view": "storm-inside",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35c-20260909T004220Z-c4392024b9a4475faaff26f81d9cbcab\\images\\storm-inside.png",
+      "sha256": "fcbe4b00f29e6996629dc43f9aecf15d9699ccf177e7cb1e8a3e4335eee1c3c8",
+      "actually_viewed": true,
+      "manifest_matches": true,
+      "sidecar_sha256": "6216d5ab11426b3cef085d7a40aeedf8bd0b77cbc7486a4ece705515bd738885",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "runtime_matches": true,
+      "water_matches": true,
+      "sample": {
+        "camera_weather": 1.0,
+        "flash": 0.0,
+        "lightning_native_lights": 3,
+        "lightning_segments": 60,
+        "material_bindings": 386,
+        "rain_center": [
+          -3700.0,
+          330.0,
+          -2500.0
+        ],
+        "scope": "Discrete sampled observation positions in the same world; not a continuous flight replay.",
+        "time": 0.0,
+        "weather_probes": [
+          {
+            "position": [
+              -3500,
+              0,
+              -3500
+            ],
+            "storm": 1.0
+          },
+          {
+            "position": [
+              -2350,
+              0,
+              -3500
+            ],
+            "storm": 0.5
+          },
+          {
+            "position": [
+              -1200,
+              0,
+              -3500
+            ],
+            "storm": 0.0
+          }
+        ]
+      },
+      "production_modified": false
+    },
+    {
+      "view": "storm-edge",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35c-20260909T004220Z-c4392024b9a4475faaff26f81d9cbcab\\images\\storm-edge.png",
+      "sha256": "483bc71a6cb9844693723382afa49ff78f8daa0969321a955df9329fcc5a567e",
+      "actually_viewed": true,
+      "manifest_matches": true,
+      "sidecar_sha256": "521bda6a4b35018abf6c90203d2dffe66600d6f2b1457287eba633c6e4ce49f9",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "runtime_matches": true,
+      "water_matches": true,
+      "sample": {
+        "camera_weather": 0.658578857700478,
+        "flash": 0.0,
+        "lightning_native_lights": 3,
+        "lightning_segments": 60,
+        "material_bindings": 386,
+        "rain_center": [
+          -2400.0,
+          330.0,
+          -2500.0
+        ],
+        "scope": "Discrete sampled observation positions in the same world; not a continuous flight replay.",
+        "time": 0.0,
+        "weather_probes": [
+          {
+            "position": [
+              -3500,
+              0,
+              -3500
+            ],
+            "storm": 1.0
+          },
+          {
+            "position": [
+              -2350,
+              0,
+              -3500
+            ],
+            "storm": 0.5
+          },
+          {
+            "position": [
+              -1200,
+              0,
+              -3500
+            ],
+            "storm": 0.0
+          }
+        ]
+      },
+      "production_modified": false
+    },
+    {
+      "view": "storm-clear",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35c-20260909T004220Z-c4392024b9a4475faaff26f81d9cbcab\\images\\storm-clear.png",
+      "sha256": "56bccb583086d67eaab55b312cebaddb995bdf9193543f37d9ccd3cc22577313",
+      "actually_viewed": true,
+      "manifest_matches": true,
+      "sidecar_sha256": "9d325df279a76369eee7a296b1edd3367fd4509d4921d5888867f4f8b598b389",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "runtime_matches": true,
+      "water_matches": true,
+      "sample": {
+        "camera_weather": 0.0,
+        "flash": 0.0,
+        "lightning_native_lights": 3,
+        "lightning_segments": 60,
+        "material_bindings": 386,
+        "rain_center": [
+          -1600.0,
+          330.0,
+          -2500.0
+        ],
+        "scope": "Discrete sampled observation positions in the same world; not a continuous flight replay.",
+        "time": 0.0,
+        "weather_probes": [
+          {
+            "position": [
+              -3500,
+              0,
+              -3500
+            ],
+            "storm": 1.0
+          },
+          {
+            "position": [
+              -2350,
+              0,
+              -3500
+            ],
+            "storm": 0.5
+          },
+          {
+            "position": [
+              -1200,
+              0,
+              -3500
+            ],
+            "storm": 0.0
+          }
+        ]
+      },
+      "production_modified": false
+    },
+    {
+      "view": "storm-flash",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35c-20260909T004220Z-c4392024b9a4475faaff26f81d9cbcab\\images\\storm-flash.png",
+      "sha256": "c9bab703b859e74813637bd6183f545b59f5f9ebb307d70d05ac21c88065d807",
+      "actually_viewed": true,
+      "manifest_matches": true,
+      "sidecar_sha256": "5c9910b692b2b4d4a4435c69eea1da273f80b4bf1a07bb7629b003a48d292896",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "runtime_matches": true,
+      "water_matches": true,
+      "sample": {
+        "camera_weather": 1.0,
+        "flash": 1.0,
+        "lightning_native_lights": 3,
+        "lightning_segments": 60,
+        "material_bindings": 386,
+        "rain_center": [
+          -3000.0,
+          520.0,
+          -1300.0
+        ],
+        "scope": "Discrete sampled observation positions in the same world; not a continuous flight replay.",
+        "time": 2.04,
+        "weather_probes": [
+          {
+            "position": [
+              -3500,
+              0,
+              -3500
+            ],
+            "storm": 1.0
+          },
+          {
+            "position": [
+              -2350,
+              0,
+              -3500
+            ],
+            "storm": 0.5
+          },
+          {
+            "position": [
+              -1200,
+              0,
+              -3500
+            ],
+            "storm": 0.0
+          }
+        ]
+      },
+      "production_modified": false
+    },
+    {
+      "view": "storm-cloud-back",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35c-20260909T004220Z-c4392024b9a4475faaff26f81d9cbcab\\images\\storm-cloud-back.png",
+      "sha256": "7eba6164a1097dda3cfe47c06486ac656cfe217fba70309d2256cfc6c7f674d5",
+      "actually_viewed": true,
+      "manifest_matches": true,
+      "sidecar_sha256": "87a29e71df5b7ab84930830a19db1549e6924602f77af56594dae752cc8c2caf",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "runtime_matches": true,
+      "water_matches": true,
+      "sample": {
+        "camera_weather": 1.0,
+        "flash": 0.0,
+        "lightning_native_lights": 3,
+        "lightning_segments": 60,
+        "material_bindings": 386,
+        "rain_center": [
+          -6900.0,
+          2000.0,
+          -3300.0
+        ],
+        "scope": "Discrete sampled observation positions in the same world; not a continuous flight replay.",
+        "time": 0.0,
+        "weather_probes": [
+          {
+            "position": [
+              -3500,
+              0,
+              -3500
+            ],
+            "storm": 1.0
+          },
+          {
+            "position": [
+              -2350,
+              0,
+              -3500
+            ],
+            "storm": 0.5
+          },
+          {
+            "position": [
+              -1200,
+              0,
+              -3500
+            ],
+            "storm": 0.0
+          }
+        ]
+      },
+      "production_modified": false
+    },
+    {
+      "view": "storm-inside-flash",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35c-20260909T004220Z-c4392024b9a4475faaff26f81d9cbcab\\images\\storm-inside-flash.png",
+      "sha256": "8d08e48242f8e8055f2bb188bf603b2bd45c44e5499eb6e8d890296ac8e567a3",
+      "actually_viewed": true,
+      "manifest_matches": true,
+      "sidecar_sha256": "de2b5e6b7c5b0af3724e45b7d2450dcd7636120f6538f383515ec9561ed85134",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "runtime_matches": true,
+      "water_matches": true,
+      "sample": {
+        "camera_weather": 1.0,
+        "flash": 1.0,
+        "lightning_native_lights": 3,
+        "lightning_segments": 60,
+        "material_bindings": 386,
+        "rain_center": [
+          -3700.0,
+          330.0,
+          -2500.0
+        ],
+        "scope": "Discrete sampled observation positions in the same world; not a continuous flight replay.",
+        "time": 2.04,
+        "weather_probes": [
+          {
+            "position": [
+              -3500,
+              0,
+              -3500
+            ],
+            "storm": 1.0
+          },
+          {
+            "position": [
+              -2350,
+              0,
+              -3500
+            ],
+            "storm": 0.5
+          },
+          {
+            "position": [
+              -1200,
+              0,
+              -3500
+            ],
+            "storm": 0.0
+          }
+        ]
+      },
+      "production_modified": false
+    }
+  ],
+  "changed_evidence": [
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35c-20260909T004220Z-c4392024b9a4475faaff26f81d9cbcab\\study-inputs\\storm35c\\storm_front_35c.gd",
+      "sha256": "27289529fb375309d058fccd4bfaf235fbd256f377caa394b0110206a30ec9bb",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35c-20260909T004220Z-c4392024b9a4475faaff26f81d9cbcab\\study-inputs\\storm35c\\storm_rain.gdshader",
+      "sha256": "885c05d35a619e3ea4a7f11d01008c5dc2ca39416cd608ad63fe6ea5990834d5",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35c-20260909T004220Z-c4392024b9a4475faaff26f81d9cbcab\\study-inputs\\storm35c\\storm_common.gdshaderinc",
+      "sha256": "bef92ef4c25c1d03b6538056b7d51a1687da53241ef057ec915137ee745b0b50",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35c-20260909T004220Z-c4392024b9a4475faaff26f81d9cbcab\\study-inputs\\storm35c\\open_water.gdshader",
+      "sha256": "ddfb5b553429ba3ecf80d878d9370aa53f6942f3f1c42d1656aa13d93cb6e23c",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35c-20260909T004220Z-c4392024b9a4475faaff26f81d9cbcab\\storm-world-views-error.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35c-20260909T004220Z-c4392024b9a4475faaff26f81d9cbcab\\actual-storm-revision.json",
+      "sha256": "a25b2d502cf33556aa453ebbd6f49796a6810dea7a444d16a956f53c8b23ae48",
+      "manifest_matches": true
+    }
+  ],
+  "cloud_identity": [
+    {
+      "name": "storm_front_shelf.glb",
+      "sha256": "b63b563f05e02cfab96a0eae91889a98d057f5f24a922bee69475ca9fb2445af",
+      "same_as_35b": true
+    },
+    {
+      "name": "storm_rain_scud.glb",
+      "sha256": "37055695db516d4c295b0b0e0b0a4dfb256f1b8f5592d0a284dc82209846a205",
+      "same_as_35b": true
+    },
+    {
+      "name": "storm_rear_anvil.glb",
+      "sha256": "525d376b07c33a02cc891d8a135ae0bda5a5ab9e6e8f26eca24d3854b0f42094",
+      "same_as_35b": true
+    }
+  ],
+  "source_findings": {
+    "rain_wrap": "MODEL_MATRIX instance origin determines one shared900m translation; same offset added to all vertices",
+    "flash_field_y": 230,
+    "materials_retained_in_game_metadata": true,
+    "null_material_root_cause_isolated": false
+  },
+  "observations": {
+    "rain": "Long screen-spanning stretches reduced to discrete short streaks; some near-camera long projections remain",
+    "weather": "Clear side no visible rain, edge reduces, inside retains rain and cool field",
+    "inside_flash": "Three lightning lines and violet cloud/land illumination readable",
+    "unchanged_rejections": [
+      "Large planar cloud ceiling",
+      "Repeated folded cloud edges",
+      "Original brown rock-like clouds",
+      "Dark sea with sparse foam",
+      "Flat coast and remote peaks unlike reference high coast/inlets"
+    ]
+  },
+  "next_priority": "actual_near_coastal_high_ridges_and_estuary_landforms; keep_cloud_art_explicitly_unaccepted",
+  "limits": [
+    "No continuous-flight/rain-animation sweep",
+    "Error absence in this run is not isolated lifecycle-root-cause proof",
+    "Geometry and cloud art not accepted by runtime pass"
+  ],
+  "production_modified_by_reviewer": false,
+  "full_reference_accepted": false
+}

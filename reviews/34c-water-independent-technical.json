@@ -1,0 +1,450 @@
+{
+  "scope": "34c source, actual moon bindings and five terminal view records; no GPU/Blender, grid or land scan.",
+  "checks": {
+    "source_parent_sha": true,
+    "source_shader_sha": true,
+    "adapter_source_sha": true,
+    "adapter_sha": true,
+    "frozen_shader_and_adapter_same_native": true,
+    "complete_shared_facet_and_height_code_unchanged": true,
+    "shore_depth_color_foam_unchanged": true,
+    "old_dead_normal_assignment_removed": true,
+    "binding_uses_actual_global_position": true,
+    "per_point_direction_implemented": true,
+    "per_point_asin_radius_implemented": true,
+    "finite_clamp_inactive_on_current_ocean": true,
+    "runtime_terminal_passed": true,
+    "all_stage_exit_zero": true,
+    "runtime_identity_and_binding_records_pass": true,
+    "sixteen_selected_bindings_match": true
+  },
+  "bounded_technical_checks_passed": true,
+  "shader_sha256": "444d9e9072ccaa127321716baf683f6c64db1f64000a7611f270a644eb9eede5",
+  "adapter_sha256": "9633ea86ccbdaf3b6b78b6aaf6304c8e1597be972b372d72654fbff021027c0a",
+  "finite_sphere_fix": {
+    "old_34b_fixed_direction_radius_replaced": true,
+    "actual_center": [
+      -3933.2509765625,
+      3478.45336914063,
+      -9791.30859375
+    ],
+    "radius_m": 330.0,
+    "radius_source": "Authored330m radius bound by adapter, not derived from mesh bounds in this review.",
+    "per_surface_point_outside_sphere_correct": true,
+    "clamp_limit": "max(distance,radius+1) makes to_moon/moon_distance non-unit inside331m. Current Y=0 sea is at least3478.453m vertically below center, so guard is inactive.",
+    "not_proven": "Reflections of moon faceted surface shading, cloud occultation, solid world visibility, or physical BRDF integration."
+  },
+  "binding_evidence": {
+    "records_each_night": 2,
+    "distinct_material_instances_proven": false,
+    "source_material_records_each_night": 1,
+    "actual_source_material": "res://scenes/environment/Ocean.tscn::ShaderMaterial_sqy22",
+    "cache_alias_mechanism": "configure adapts material_override then get_active_material(surface). adapted(new candidate) caches that same candidate under its own ID after prior old-ID -> candidate entry. material_cache.values() can contain same object twice; repeated identical binding rows are not proof of two distinct materials.",
+    "missing_fields": [
+      "material_instance_id",
+      "receiver_node_path"
+    ],
+    "recommended_next_logging": "Deduplicate by material.get_instance_id(); record associated actual receiver paths and bound center/radius. Do not rerun GPU solely to strengthen this count."
+  },
+  "rough_blue_layer": {
+    "rough_width_radians": 0.045,
+    "rough_width_degrees": 2.5783100780887045,
+    "model": "exp(-max(separation-angular_radius,0)^2/(2*width^2)) times radius²/(radius²+width²), plus0.62 silver disk term.",
+    "numerical": "Width fixed positive, peak denominator positive for finite positive-radius scene, acos/asin inputs clamped; no new singularity in current ocean domain.",
+    "limits": "Authored angular shoulder and approximate peak compensation, not normalized physical microfacet convolution or measured moon radiance. No new derivative handling of facet boundary jumps."
+  },
+  "sky": {
+    "night_vertical_gradient_matches_actual_open_sky_formula": true,
+    "halo_coefficients_match": true,
+    "halo_direction_exact_match": false,
+    "halo_difference": "Water uses local finite-moon separation; open_sky uses fixed moon_direction. Stars are not copied; daytime sky gradient still differs.",
+    "actual_scene_reflection": false,
+    "scope": "Analytic gradient and analytic halo, not a sampled rendered sky/cubemap, clouds, island or building reflection."
+  },
+  "actual_ocean_source_correction": {
+    "path": "scenes/environment/Ocean.tscn",
+    "size_m": [
+      100000,
+      100000
+    ],
+    "collision_child": "SeaCollision",
+    "collision_layer": 5,
+    "context": "Runtime material record identifies this actual saved Ocean scene. scripts/open_world.gd make_ocean() is older unused creation code; its Sea level collision name must not be used for actual exclusion."
+  },
+  "runtime": {
+    "run_id": "water-34c-20260908T235317Z-847760e1994442d085ed8c6e530e5ce9",
+    "status": "passed",
+    "completed_utc": "2026-09-08T23:54:10.902274+00:00",
+    "stages": [
+      {
+        "name": "night-views",
+        "exit_code": 0
+      },
+      {
+        "name": "day-views",
+        "exit_code": 0
+      }
+    ],
+    "error_log_bytes": {
+      "night-views-error.log": 0,
+      "day-views-error.log": 0
+    },
+    "views": [
+      {
+        "view": "night-reference",
+        "camera": {
+          "fov": 70.0,
+          "position": [
+            -2278.0,
+            60.0,
+            -1632.0
+          ],
+          "rotation": [
+            -0.00509163970127702,
+            0.60683274269104,
+            0.0
+          ]
+        },
+        "time": 0.0,
+        "checks": {
+          "same_run": true,
+          "source_shader": true,
+          "same_camera_as_34b": true,
+          "time": true,
+          "world_sha": true,
+          "coast_sha": true,
+          "placements": true,
+          "named_trees": true,
+          "binding_record_count": true,
+          "night_bound_center_radius_equal_actual_moon_record": true
+        },
+        "actual_water_binding_records": [
+          {
+            "center": [
+              -3933.2509765625,
+              3478.45336914063,
+              -9791.30859375
+            ],
+            "moon_node": "/root/Skyfarer/NativeCoastalSky27f/moon",
+            "radius_m": 330.0,
+            "scope": "Actual world sphere bound to each water material; per-water-point incident ray in shader."
+          },
+          {
+            "center": [
+              -3933.2509765625,
+              3478.45336914063,
+              -9791.30859375
+            ],
+            "moon_node": "/root/Skyfarer/NativeCoastalSky27f/moon",
+            "radius_m": 330.0,
+            "scope": "Actual world sphere bound to each water material; per-water-point incident ray in shader."
+          }
+        ],
+        "water_source_material_records": [
+          {
+            "candidate_shader": "open_water.gdshader",
+            "original_material": "res://scenes/environment/Ocean.tscn::ShaderMaterial_sqy22",
+            "original_shader": "res://scripts/open_water.gdshader"
+          }
+        ]
+      },
+      {
+        "view": "night-water-near",
+        "camera": {
+          "fov": 70.0,
+          "position": [
+            -2330.0,
+            8.0,
+            -1740.0
+          ],
+          "rotation": [
+            -0.0185673981904984,
+            0.380506366491318,
+            0.0
+          ]
+        },
+        "time": 0.0,
+        "checks": {
+          "same_run": true,
+          "source_shader": true,
+          "same_camera_as_34b": true,
+          "time": true,
+          "world_sha": true,
+          "coast_sha": true,
+          "placements": true,
+          "named_trees": true,
+          "binding_record_count": true,
+          "night_bound_center_radius_equal_actual_moon_record": true
+        },
+        "actual_water_binding_records": [
+          {
+            "center": [
+              -3933.2509765625,
+              3478.45336914063,
+              -9791.30859375
+            ],
+            "moon_node": "/root/Skyfarer/NativeCoastalSky27f/moon",
+            "radius_m": 330.0,
+            "scope": "Actual world sphere bound to each water material; per-water-point incident ray in shader."
+          },
+          {
+            "center": [
+              -3933.2509765625,
+              3478.45336914063,
+              -9791.30859375
+            ],
+            "moon_node": "/root/Skyfarer/NativeCoastalSky27f/moon",
+            "radius_m": 330.0,
+            "scope": "Actual world sphere bound to each water material; per-water-point incident ray in shader."
+          }
+        ],
+        "water_source_material_records": [
+          {
+            "candidate_shader": "open_water.gdshader",
+            "original_material": "res://scenes/environment/Ocean.tscn::ShaderMaterial_sqy22",
+            "original_shader": "res://scripts/open_water.gdshader"
+          }
+        ]
+      },
+      {
+        "view": "night-water-shift",
+        "camera": {
+          "fov": 70.0,
+          "position": [
+            -2363.0,
+            40.0,
+            -1662.0
+          ],
+          "rotation": [
+            -0.00509163970127702,
+            0.60683274269104,
+            0.0
+          ]
+        },
+        "time": 0.0,
+        "checks": {
+          "same_run": true,
+          "source_shader": true,
+          "same_camera_as_34b": true,
+          "time": true,
+          "world_sha": true,
+          "coast_sha": true,
+          "placements": true,
+          "named_trees": true,
+          "binding_record_count": true,
+          "night_bound_center_radius_equal_actual_moon_record": true
+        },
+        "actual_water_binding_records": [
+          {
+            "center": [
+              -3933.2509765625,
+              3478.45336914063,
+              -9791.30859375
+            ],
+            "moon_node": "/root/Skyfarer/NativeCoastalSky27f/moon",
+            "radius_m": 330.0,
+            "scope": "Actual world sphere bound to each water material; per-water-point incident ray in shader."
+          },
+          {
+            "center": [
+              -3933.2509765625,
+              3478.45336914063,
+              -9791.30859375
+            ],
+            "moon_node": "/root/Skyfarer/NativeCoastalSky27f/moon",
+            "radius_m": 330.0,
+            "scope": "Actual world sphere bound to each water material; per-water-point incident ray in shader."
+          }
+        ],
+        "water_source_material_records": [
+          {
+            "candidate_shader": "open_water.gdshader",
+            "original_material": "res://scenes/environment/Ocean.tscn::ShaderMaterial_sqy22",
+            "original_shader": "res://scripts/open_water.gdshader"
+          }
+        ]
+      },
+      {
+        "view": "night-time18",
+        "camera": {
+          "fov": 70.0,
+          "position": [
+            -2278.0,
+            60.0,
+            -1632.0
+          ],
+          "rotation": [
+            -0.00509163970127702,
+            0.60683274269104,
+            0.0
+          ]
+        },
+        "time": 18.0,
+        "checks": {
+          "same_run": true,
+          "source_shader": true,
+          "same_camera_as_34b": true,
+          "time": true,
+          "world_sha": true,
+          "coast_sha": true,
+          "placements": true,
+          "named_trees": true,
+          "binding_record_count": true,
+          "night_bound_center_radius_equal_actual_moon_record": true
+        },
+        "actual_water_binding_records": [
+          {
+            "center": [
+              -3933.2509765625,
+              3478.45336914063,
+              -9791.30859375
+            ],
+            "moon_node": "/root/Skyfarer/NativeCoastalSky27f/moon",
+            "radius_m": 330.0,
+            "scope": "Actual world sphere bound to each water material; per-water-point incident ray in shader."
+          },
+          {
+            "center": [
+              -3933.2509765625,
+              3478.45336914063,
+              -9791.30859375
+            ],
+            "moon_node": "/root/Skyfarer/NativeCoastalSky27f/moon",
+            "radius_m": 330.0,
+            "scope": "Actual world sphere bound to each water material; per-water-point incident ray in shader."
+          }
+        ],
+        "water_source_material_records": [
+          {
+            "candidate_shader": "open_water.gdshader",
+            "original_material": "res://scenes/environment/Ocean.tscn::ShaderMaterial_sqy22",
+            "original_shader": "res://scripts/open_water.gdshader"
+          }
+        ]
+      },
+      {
+        "view": "day-reference",
+        "camera": {
+          "fov": 70.0,
+          "position": [
+            -2278.0,
+            60.0,
+            -1632.0
+          ],
+          "rotation": [
+            -0.00509163970127702,
+            0.60683274269104,
+            0.0
+          ]
+        },
+        "time": 0.0,
+        "checks": {
+          "same_run": true,
+          "source_shader": true,
+          "same_camera_as_34b": true,
+          "time": true,
+          "world_sha": true,
+          "coast_sha": true,
+          "placements": true,
+          "named_trees": true,
+          "binding_record_count": true,
+          "night_bound_center_radius_equal_actual_moon_record": true
+        },
+        "actual_water_binding_records": [],
+        "water_source_material_records": [
+          {
+            "candidate_shader": "open_water.gdshader",
+            "original_material": "res://scenes/environment/Ocean.tscn::ShaderMaterial_sqy22",
+            "original_shader": "res://scripts/open_water.gdshader"
+          }
+        ]
+      }
+    ],
+    "selected_bindings": [
+      {
+        "path": "images/night-reference.png",
+        "sha256": "4a3ce474b6237def46f6a13482cd844275c8242c140658bdfb3a68bd56fe55d6",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/night-reference.png.json",
+        "sha256": "9d4df7898fa377385af048da39877b82e4d81c3971b96616caedd0fc8cbb9f61",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/night-water-near.png",
+        "sha256": "3ff83c03ac96979ecf29bcb6887eb8f6f4ebe99e447fb34ff4d46f8d11e79e40",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/night-water-near.png.json",
+        "sha256": "a5eaf6a17bfba6615ad7f25944767f35faff4f31eac8ad193398db8a8e67a83a",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/night-water-shift.png",
+        "sha256": "583750034c18e23abcb150032046b99ac60b9ff87fe42b92429a4a771ed6ebb0",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/night-water-shift.png.json",
+        "sha256": "0f82e07184ba140c0ffcbcac0ef1eebd40f2ccb77184f65efda922f91d4071bf",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/night-time18.png",
+        "sha256": "f0911737a0037a98f36e729a017143c4df07e0c377f3d6e7911a8f342dc46108",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/night-time18.png.json",
+        "sha256": "9fcdcbf2c298a4b57ef1c49c39efc01f307141bbab09f347cb07fd67773701df",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/day-reference.png",
+        "sha256": "0d75eb77dec5d189e4ee6fc0f7f4accd853f2df876bba91b464599284013d151",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/day-reference.png.json",
+        "sha256": "8b0bf20af23619ac076674a569e239be63145956048205997f9452d2f905cc7d",
+        "matches_manifest": true
+      },
+      {
+        "path": "study-inputs/new-environment27f/open_water.gdshader",
+        "sha256": "444d9e9072ccaa127321716baf683f6c64db1f64000a7611f270a644eb9eede5",
+        "matches_manifest": true
+      },
+      {
+        "path": "study-inputs/coast_environment_27f.gd",
+        "sha256": "9633ea86ccbdaf3b6b78b6aaf6304c8e1597be972b372d72654fbff021027c0a",
+        "matches_manifest": true
+      },
+      {
+        "path": "study-inputs/water34c-builder.py",
+        "sha256": "a9abf30081144582acd17615392def7e8b1c74dfafcc2f3ad7661760f3ce4dff",
+        "matches_manifest": true
+      },
+      {
+        "path": "study-inputs/water34c-design-plan.json",
+        "sha256": "d34ec88924f7bf75e7db413f551a2bdf539be29b66277b52b54e40a481a4f2fd",
+        "matches_manifest": true
+      },
+      {
+        "path": "study-inputs/render_water_34c.py",
+        "sha256": "db1fe95ff0143d06dc73157f0dbbe0b6ea9be60461efc312af53fe989d3b670c",
+        "matches_manifest": true
+      },
+      {
+        "path": "study-inputs/new-environment27f/open_sky.gdshader",
+        "sha256": "b514467ebb754a42057c23475b245b51045ed74804cb4faa7598138dd40e80cb",
+        "matches_manifest": true
+      }
+    ],
+    "land_support": "33f inherited; only unchanged actual records compared."
+  },
+  "art_assessed": false,
+  "full_reference_accepted": false,
+  "all_reference_goal_complete": false
+}

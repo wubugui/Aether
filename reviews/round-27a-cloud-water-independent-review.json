@@ -1,0 +1,157 @@
+{
+  "round": "27a",
+  "reviewer": "independent village_floor_review",
+  "verdict": "reject_cloud_water_art_candidate_keep_limited_findings",
+  "scope": "Actual three GPU stills against ref/1342.png and26b night; frozen asset identity and shader mechanism. No repeated road/foundation/terrain collision audit. No production modification.",
+  "gpu_manifest": {
+    "path": "E:\\FeiTing\\captures\\validation_runs\\coast-environment-27a-20260908T145044Z-a01744c1b93444ce9c8d80e533918f2d\\manifest.json",
+    "status": "passed",
+    "stages": [
+      {
+        "name": "night-reference",
+        "status": "passed",
+        "exit_code": 0
+      },
+      {
+        "name": "night-reverse",
+        "status": "passed",
+        "exit_code": 0
+      },
+      {
+        "name": "day-reference",
+        "status": "passed",
+        "exit_code": 0
+      }
+    ]
+  },
+  "native_gate_passed": true,
+  "asset_identity": [
+    {
+      "name": "cloud_bank_0.blend",
+      "sha256": "9bfb56968ac03769b33ec6bb0753bd7bdd7fe321ae5633e13307135b36ebe816",
+      "frozen_matches": true
+    },
+    {
+      "name": "cloud_bank_0.glb",
+      "sha256": "b9dab4f97f60b9effe3d1a464725352675aeaf390cc11248ced3332d77a6259f",
+      "frozen_matches": true
+    },
+    {
+      "name": "cloud_bank_1.blend",
+      "sha256": "dcd055bded874a2d53cf0ec9fa9de5226532d04647e0b5e34c79588eaabc072d",
+      "frozen_matches": true
+    },
+    {
+      "name": "cloud_bank_1.glb",
+      "sha256": "45ce8263aab061dccfc7aaf76cc546e96cbc2d4049ace86e55643b453139a535",
+      "frozen_matches": true
+    },
+    {
+      "name": "cloud_bank_2.blend",
+      "sha256": "40e214e743eaed4da42777f061f5170c2ee33576a42d76317cc4701885ad8d6d",
+      "frozen_matches": true
+    },
+    {
+      "name": "cloud_bank_2.glb",
+      "sha256": "4a7355d097fe25dc5f032b7828d71f8e5c8e921e3a76da269dd9c6bd7f7e89d9",
+      "frozen_matches": true
+    },
+    {
+      "name": "moon.blend",
+      "sha256": "786fed316ba6a981445e21bd2a270b8bc8f30b65fb4ae8706e64224e63df012d",
+      "frozen_matches": true,
+      "matches_21b_bytes": true
+    },
+    {
+      "name": "moon.glb",
+      "sha256": "d4f87e9dfe4dbec9f0a91cbad9356eb53b7d51c9b6970e069924cea10ce46cee",
+      "frozen_matches": true,
+      "matches_21b_bytes": true
+    }
+  ],
+  "shader_identity": [
+    {
+      "name": "cloud_surface.gdshader",
+      "sha256": "fa9f0fb46a3319016e718c3d9679b70dbc3a24ac810eefc71c567036754a5e6f",
+      "frozen_matches": true
+    },
+    {
+      "name": "open_water.gdshader",
+      "sha256": "adb91547101f1aa1b164867007f700adf565bbf293cf4a9d22fb75f17e603e20",
+      "frozen_matches": true
+    }
+  ],
+  "same_world_hash": true,
+  "same_cloud_world_placements": true,
+  "images": {
+    "night-reference": {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\coast-environment-27a-20260908T145044Z-a01744c1b93444ce9c8d80e533918f2d\\images\\night-reference.png",
+      "sha256": "1d9bd19f3cf982059dce19a9a4d94e796f18abf7dd8fa4d8f309042374b8b6f4",
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -2278.0,
+          60.0,
+          -1632.0
+        ],
+        "rotation": [
+          -0.00509163970127702,
+          0.60683274269104,
+          0.0
+        ]
+      },
+      "world_sha256": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+      "observations": "相对26b蓝色受光增强；云仍有山石般硬顶和薄平板底。旧粗菱格减弱，但月光反射变成密集、较连续的横向细亮纹，近处有扫描线感。未达到1342中较粗、破碎、宽度变化明显的亮片。"
+    },
+    "night-reverse": {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\coast-environment-27a-20260908T145044Z-a01744c1b93444ce9c8d80e533918f2d\\images\\night-reverse.png",
+      "sha256": "c76462eabe2386d019072d5361408bca9c0d60c31f572c4185fb4e5ac6cd058a",
+      "camera": {
+        "fov": 60.0,
+        "position": [
+          -2485.0,
+          80.0,
+          -1810.0
+        ],
+        "rotation": [
+          -0.305406630039215,
+          -2.44073820114136,
+          0.0
+        ]
+      },
+      "world_sha256": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+      "observations": "岸岛遮挡和视角变化正确；离开朝月观察方向后亮反射带消失，符合世界空间反射关系。水面此时近乎平滑暗蓝。左上近云底部厚硬折面、重复圆团及右上分离圆球影响自然层次；不将所有这些形状归因于新增7个云实例，原World云仍参与材质替换。"
+    },
+    "day-reference": {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\coast-environment-27a-20260908T145044Z-a01744c1b93444ce9c8d80e533918f2d\\images\\day-reference.png",
+      "sha256": "dee760b057730fa07280fef60484693df0ccf935a0fcf6012a85a23162bcfa03",
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -2278.0,
+          60.0,
+          -1632.0
+        ],
+        "rotation": [
+          -0.00509163970127702,
+          0.60683274269104,
+          0.0
+        ]
+      },
+      "world_sha256": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+      "observations": "云体较亮，但白色山丘式硬块和灰蓝平底仍明显，形体变化不足；海面除近岸青色带外几乎无可读波形。"
+    }
+  },
+  "mechanism_limits": [
+    "Cloud shader is unshaded surface normal lighting plus distance haze, not volumetric density scattering.",
+    "Water uses world-coordinate noise, finite-difference surface normals and camera-dependent reflection; screenshot depth is used for shore depth, not an image backdrop.",
+    "27a still contains sinusoidal height/base-color terms; visual periodicity is not eliminated merely by adding noise.",
+    "Three stills support view-dependent world relationships but do not establish motion quality or unrestricted flight behavior."
+  ],
+  "overall_accepted": false,
+  "remaining": [
+    "Cloud underside/shape still resembles stone slabs.",
+    "Water replaces coarse grid with thin-band repetition; away from highlight water is too flat.",
+    "Lighthouse beams are absent and full scene reference fidelity remains unaccepted."
+  ]
+}

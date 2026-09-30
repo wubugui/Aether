@@ -1,0 +1,1301 @@
+{
+  "scope": "Independent actual25f GLB vs actual23g GLB and actual24m paving caps. Plane extrema over polygon intersections, not only point sampling. No GPU/full-art acceptance.",
+  "identity": {
+    "old_glb_sha256": "cd423ca005c39720455921af8d5990839ed05831f153d1524a5095fe8a227b82",
+    "new_glb_sha256": "63d49f7ebca3454757961fdaeb4ed363f3d107a48768cefe9595f2d9dcbc824d",
+    "build_passed": true,
+    "glb_matches_build_report": true,
+    "blend_matches_build_report": true
+  },
+  "paving": [
+    {
+      "group": "foreground",
+      "paving_sha256": "280d621ff2bf7a5b5328b33656d1514c2b3400d6f29f1815353a2a40e4c7c5cd",
+      "cap_triangles": 7177,
+      "terrain_intersections": 13210,
+      "worst": {
+        "terrain_above_cap_m": -0.047966278964493014,
+        "world_xz": [
+          -2251.615000480826,
+          -1748.8170039597924
+        ],
+        "kind": "foundation",
+        "cap_y": 10.938,
+        "terrain_y": 10.890033721035508,
+        "intersection_area_m2": 0.02661925156423771
+      }
+    },
+    {
+      "group": "bay",
+      "paving_sha256": "81e478d20591579c3a97c7986aa9e008be1be57f9062a4dd8ecd75cea0c4b264",
+      "cap_triangles": 4906,
+      "terrain_intersections": 9354,
+      "worst": {
+        "terrain_above_cap_m": -0.04795884406243722,
+        "world_xz": [
+          -2228.983018891839,
+          -1868.7810154129063
+        ],
+        "kind": "foundation",
+        "cap_y": 9.138,
+        "terrain_y": 9.090041155937563,
+        "intersection_area_m2": 0.001715120865153848
+      }
+    }
+  ],
+  "core_layer_selection": {
+    "method": "Largest coordinate-connected actual mesh triangle component; avoids buried rock top layers in old/new core height comparison.",
+    "old_core_triangles": 5540,
+    "new_core_triangles": 23112
+  },
+  "foundations": [
+    {
+      "house": "fore_fisher",
+      "asset_glb_sha256": "280ebd357262e6dbc216270c81b2045ff14a60b759067b5d0675b436d15a0ee8",
+      "actual_base_projection_area_m2": 51.46499793291086,
+      "intersection_cells": 57,
+      "worst": {
+        "height_change_m": 0.12007426375311425,
+        "world_xz": [
+          -2265.027358396974,
+          -1751.0
+        ],
+        "intersection_area_m2": 9.884337666475143e-06
+      },
+      "main_body_excluding_forward_doorstep_worst": {
+        "height_change_m": 1.6788131522124452e-15,
+        "world_xz": [
+          -2260.5,
+          -1755.0
+        ],
+        "intersection_area_m2": 0.7926046836505858
+      }
+    },
+    {
+      "house": "fore_workshop",
+      "asset_glb_sha256": "e4c33b94c6151ffd15b314d01a5aa4f70293095da477d26c796a35d71590996c",
+      "actual_base_projection_area_m2": 62.39000268936164,
+      "intersection_cells": 106,
+      "worst": {
+        "height_change_m": 0.37522621534520084,
+        "world_xz": [
+          -2248.9059982299805,
+          -1744.8041585547458
+        ],
+        "intersection_area_m2": 0.00033467464008998186
+      },
+      "main_body_excluding_forward_doorstep_worst": {
+        "height_change_m": 2.766272147656834e-06,
+        "world_xz": [
+          -2241.027698654033,
+          -1743.972925562733
+        ],
+        "intersection_area_m2": 2.8037211299292153e-06
+      }
+    },
+    {
+      "house": "fore_keeper",
+      "asset_glb_sha256": "8f70f7ba4d6c94d23b310b73f6fee9d171f6efb32d255be2574254e639b6176b",
+      "actual_base_projection_area_m2": 86.24000354766854,
+      "intersection_cells": 82,
+      "worst": {
+        "height_change_m": 0.1336278915405309,
+        "world_xz": [
+          -2250.895248413086,
+          -1761.979507446289
+        ],
+        "intersection_area_m2": 0.0005338635628871851
+      },
+      "main_body_excluding_forward_doorstep_worst": {
+        "height_change_m": 2.305152809502426e-05,
+        "world_xz": [
+          -2245.172737289255,
+          -1772.609511190795
+        ],
+        "intersection_area_m2": 19.765485711943576
+      }
+    },
+    {
+      "house": "fore_upper",
+      "asset_glb_sha256": "8f70f7ba4d6c94d23b310b73f6fee9d171f6efb32d255be2574254e639b6176b",
+      "actual_base_projection_area_m2": 86.24000354766856,
+      "intersection_cells": 47,
+      "worst": {
+        "height_change_m": 0.12007710626457246,
+        "world_xz": [
+          -2235.446979291243,
+          -1761.0
+        ],
+        "intersection_area_m2": 0.016223929516272727
+      },
+      "main_body_excluding_forward_doorstep_worst": {
+        "height_change_m": 2.980023350468977e-06,
+        "world_xz": [
+          -2223.1693889416997,
+          -1757.7791342063567
+        ],
+        "intersection_area_m2": 20.04922471952704
+      }
+    },
+    {
+      "house": "fore_back_cottage",
+      "asset_glb_sha256": "280ebd357262e6dbc216270c81b2045ff14a60b759067b5d0675b436d15a0ee8",
+      "actual_base_projection_area_m2": 51.46499793291092,
+      "intersection_cells": 62,
+      "worst": {
+        "height_change_m": 0.1253711491497711,
+        "world_xz": [
+          -2231.109586210339,
+          -1736.2296074960254
+        ],
+        "intersection_area_m2": 9.755633243503387e-07
+      },
+      "main_body_excluding_forward_doorstep_worst": {
+        "height_change_m": 5.308243537263297e-07,
+        "world_xz": [
+          -2222.0117812567614,
+          -1737.890868494398
+        ],
+        "intersection_area_m2": 5.507208616592548
+      }
+    },
+    {
+      "house": "bay_fisher",
+      "asset_glb_sha256": "280ebd357262e6dbc216270c81b2045ff14a60b759067b5d0675b436d15a0ee8",
+      "actual_base_projection_area_m2": 51.46499793291094,
+      "intersection_cells": 75,
+      "worst": {
+        "height_change_m": 0.12016010284424539,
+        "world_xz": [
+          -2245.9413528442383,
+          -1871.0063018798828
+        ],
+        "intersection_area_m2": 5.277979653328657e-08
+      },
+      "main_body_excluding_forward_doorstep_worst": {
+        "height_change_m": -1.2457348468032238e-15,
+        "world_xz": [
+          -2241.0,
+          -1871.0
+        ],
+        "intersection_area_m2": 3.3830380733291103
+      }
+    },
+    {
+      "house": "bay_keeper",
+      "asset_glb_sha256": "8f70f7ba4d6c94d23b310b73f6fee9d171f6efb32d255be2574254e639b6176b",
+      "actual_base_projection_area_m2": 86.2400035476685,
+      "intersection_cells": 62,
+      "worst": {
+        "height_change_m": 0.12016296386718928,
+        "world_xz": [
+          -2236.456169128418,
+          -1884.981689453125
+        ],
+        "intersection_area_m2": 0.08103782751028651
+      },
+      "main_body_excluding_forward_doorstep_worst": {
+        "height_change_m": 1.1131418198098166e-07,
+        "world_xz": [
+          -2225.1475034690243,
+          -1880.4367468631795
+        ],
+        "intersection_area_m2": 0.04772582716357961
+      }
+    },
+    {
+      "house": "bay_upper",
+      "asset_glb_sha256": "8f70f7ba4d6c94d23b310b73f6fee9d171f6efb32d255be2574254e639b6176b",
+      "actual_base_projection_area_m2": 86.24000354766854,
+      "intersection_cells": 61,
+      "worst": {
+        "height_change_m": 0.12000433131574884,
+        "world_xz": [
+          -2222.3181784502444,
+          -1871.3394741710508
+        ],
+        "intersection_area_m2": 0.052301749834188366
+      },
+      "main_body_excluding_forward_doorstep_worst": {
+        "height_change_m": 2.979617022492666e-06,
+        "world_xz": [
+          -2213.956505087494,
+          -1880.9251278881882
+        ],
+        "intersection_area_m2": 20.028507521251612
+      }
+    },
+    {
+      "house": "bay_workshop",
+      "asset_glb_sha256": "e4c33b94c6151ffd15b314d01a5aa4f70293095da477d26c796a35d71590996c",
+      "actual_base_projection_area_m2": 62.390002689361594,
+      "intersection_cells": 51,
+      "worst": {
+        "height_change_m": 0.1202001489161777,
+        "world_xz": [
+          -2217.3127517017533,
+          -1856.0
+        ],
+        "intersection_area_m2": 0.018025544291106272
+      },
+      "main_body_excluding_forward_doorstep_worst": {
+        "height_change_m": 1.918111231430026e-06,
+        "world_xz": [
+          -2208.901615379089,
+          -1852.2419093961412
+        ],
+        "intersection_area_m2": 6.971524136463501
+      }
+    }
+  ],
+  "preserved_lower_side": {
+    "original_triangles": 2937,
+    "missing_exact_geometry_and_material": 0
+  },
+  "original_border": {
+    "component_vertex_counts": [
+      134
+    ],
+    "core_vertex_count": 134,
+    "core_missing_exact_coordinates": 0
+  },
+  "changed_surface_slope_scan": {
+    "minimum_projected_triangle_area_m2": 0.01,
+    "minimum_projected_edge_m": 0.05,
+    "changed_threshold_m": 0.01,
+    "eligible_changed_triangles": 8393,
+    "steepest": [
+      {
+        "slope_ratio": 1.898640521415738,
+        "slope_degrees": 62.224553531050546,
+        "original_max_slope_ratio": 1.8668638745767687,
+        "max_height_change_m": 0.036638252494704204,
+        "projected_area_m2": 0.021007954386732308,
+        "world_xz_centroid": [
+          -2219.631130218506,
+          -1850.4994564056396
+        ],
+        "minimum_projected_edge_m": 0.05821653156205544
+      },
+      {
+        "slope_ratio": 1.8962471413074233,
+        "slope_degrees": 62.194744428344364,
+        "original_max_slope_ratio": 1.8668638745767687,
+        "max_height_change_m": 0.13873093198061426,
+        "projected_area_m2": 0.29330473020309,
+        "world_xz_centroid": [
+          -2219.3820864359536,
+          -1852.4900964101155
+        ],
+        "minimum_projected_edge_m": 0.6328528622475572
+      },
+      {
+        "slope_ratio": 1.8962468607127652,
+        "slope_degrees": 62.19474093013836,
+        "original_max_slope_ratio": 1.8668638745767687,
+        "max_height_change_m": 0.11430202206868123,
+        "projected_area_m2": 0.18811102770996513,
+        "world_xz_centroid": [
+          -2219.266660054525,
+          -1852.1567630767822
+        ],
+        "minimum_projected_edge_m": 0.4702892303466797
+      },
+      {
+        "slope_ratio": 1.8962417399740292,
+        "slope_degrees": 62.19467708915489,
+        "original_max_slope_ratio": 1.8668638745767687,
+        "max_height_change_m": 0.09078351798353834,
+        "projected_area_m2": 0.3999900817871094,
+        "world_xz_centroid": [
+          -2219.499983469645,
+          -1851.6666666666667
+        ],
+        "minimum_projected_edge_m": 0.7999801635742188
+      },
+      {
+        "slope_ratio": 1.8962404926762586,
+        "slope_degrees": 62.19466153887402,
+        "original_max_slope_ratio": 1.8668638745767687,
+        "max_height_change_m": 0.0907835179835319,
+        "projected_area_m2": 0.34998512268066406,
+        "world_xz_centroid": [
+          -2219.2333234151206,
+          -1851.3333333333333
+        ],
+        "minimum_projected_edge_m": 0.6999702453613281
+      },
+      {
+        "slope_ratio": 1.896239958921344,
+        "slope_degrees": 62.19465488445266,
+        "original_max_slope_ratio": 1.8668638745767687,
+        "max_height_change_m": 0.13873012132750462,
+        "projected_area_m2": 0.27685546875,
+        "world_xz_centroid": [
+          -2219.682083129883,
+          -1852.6666666666667
+        ],
+        "minimum_projected_edge_m": 0.5537109375
+      },
+      {
+        "slope_ratio": 1.8962397236607753,
+        "slope_degrees": 62.19465195141464,
+        "original_max_slope_ratio": 1.8668638745767687,
+        "max_height_change_m": 0.1848578453064027,
+        "projected_area_m2": 0.27685546875,
+        "world_xz_centroid": [
+          -2219.7487564086914,
+          -1853.3333333333333
+        ],
+        "minimum_projected_edge_m": 0.5537109375
+      },
+      {
+        "slope_ratio": 1.8959996142607394,
+        "slope_degrees": 62.191658165222364,
+        "original_max_slope_ratio": 1.8668638745767687,
+        "max_height_change_m": 0.04078363629344772,
+        "projected_area_m2": 0.26453286065225257,
+        "world_xz_centroid": [
+          -2219.422669728597,
+          -1850.7480532328289
+        ],
+        "minimum_projected_edge_m": 0.6999702453613281
+      },
+      {
+        "slope_ratio": 1.8959713851957731,
+        "slope_degrees": 62.191306154252295,
+        "original_max_slope_ratio": 1.8668638745767687,
+        "max_height_change_m": 0.04078363629344661,
+        "projected_area_m2": 0.18205675514764152,
+        "world_xz_centroid": [
+          -2219.231216430664,
+          -1850.4786732991536
+        ],
+        "minimum_projected_edge_m": 0.445509027850376
+      },
+      {
+        "slope_ratio": 1.8937756706808495,
+        "slope_degrees": 62.16390087245376,
+        "original_max_slope_ratio": 1.8668638745767687,
+        "max_height_change_m": 0.040783636293454606,
+        "projected_area_m2": 0.048638300482707564,
+        "world_xz_centroid": [
+          -2219.0439999898276,
+          -1850.4587732950847
+        ],
+        "minimum_projected_edge_m": 0.11945020267219324
+      }
+    ]
+  },
+  "status": "PASS bounded removal of25c large exposed slope failures, cap clearance, body foundation and shoreline checks, plus targeted five-view regression. Retain geometric improvement; do not claim strict exported-face gradient compliance or final reference-art acceptance.",
+  "old25c_counterexample_zones": [
+    {
+      "old_centroid_world_xz": [
+        -2254.2708333333335,
+        -1747.7352625528972
+      ],
+      "old25c_slope_degrees": 88.01579866660796,
+      "current_max_slope_degrees": 48.377268439416945,
+      "intersecting_faces": 14,
+      "worst": {
+        "slope_degrees": 48.377268439416945,
+        "overlap_area_m2": 0.006195173104060814,
+        "actual_triangle_world_xyz": [
+          [
+            -2253.2114791870117,
+            10.739980697631836,
+            -1748.8068084716797
+          ],
+          [
+            -2254.0,
+            10.740493774414062,
+            -1748.0130767822266
+          ],
+          [
+            -2253.6010208129883,
+            10.752702713012695,
+            -1748.3989791870117
+          ]
+        ]
+      }
+    },
+    {
+      "old_centroid_world_xz": [
+        -2236.0404014587402,
+        -1875.8143208821614
+      ],
+      "old25c_slope_degrees": 87.81569963208858,
+      "current_max_slope_degrees": 46.114170210816,
+      "intersecting_faces": 3,
+      "worst": {
+        "slope_degrees": 46.114170210816,
+        "overlap_area_m2": 3.713903424795717e-06,
+        "actual_triangle_world_xyz": [
+          [
+            -2236.156219482422,
+            6.5530219078063965,
+            -1875.8820610046387
+          ],
+          [
+            -2235.808765411377,
+            6.502340316772461,
+            -1875.6067237854004
+          ],
+          [
+            -2235.808868408203,
+            6.502374172210693,
+            -1875.6068267822266
+          ]
+        ]
+      }
+    },
+    {
+      "old_centroid_world_xz": [
+        -2236.2867062886558,
+        -1876.0113728841145
+      ],
+      "old25c_slope_degrees": 87.64237810880564,
+      "current_max_slope_degrees": 42.350388823190386,
+      "intersecting_faces": 4,
+      "worst": {
+        "slope_degrees": 42.350388823190386,
+        "overlap_area_m2": 0.004538652318158183,
+        "actual_triangle_world_xyz": [
+          [
+            -2236.547679901123,
+            6.975105285644531,
+            -1876.1978797912598
+          ],
+          [
+            -2236.3024101257324,
+            6.6882195472717285,
+            -1876.0
+          ],
+          [
+            -2236.4590225219727,
+            6.95082426071167,
+            -1876.2569847106934
+          ]
+        ]
+      }
+    },
+    {
+      "old_centroid_world_xz": [
+        -2246.714860280355,
+        -1751.5855153401692
+      ],
+      "old25c_slope_degrees": 86.52239664119789,
+      "current_max_slope_degrees": 41.998289646861245,
+      "intersecting_faces": 70,
+      "worst": {
+        "slope_degrees": 41.998289646861245,
+        "overlap_area_m2": 9.378379311610432e-08,
+        "actual_triangle_world_xyz": [
+          [
+            -2250.0,
+            11.19255256652832,
+            -1751.0
+          ],
+          [
+            -2250.0,
+            11.199344635009766,
+            -1751.0084915161133
+          ],
+          [
+            -2250.04923248291,
+            11.172203063964844,
+            -1751.0
+          ]
+        ]
+      }
+    }
+  ],
+  "actual_gradient_limit_review": {
+    "scope": "Actual exported core triangles with >=1mm height change. Original gradient reconstructed at same actual XZ vertices. Limit per component max(.8, abs(original)+.05); records expose precision/collapse effects rather than trusting pre-export LP report.",
+    "changed_triangle_count": 16060,
+    "worst_all": [
+      {
+        "component_limit_excess": 95.20624962907937,
+        "actual_slope_degrees": 89.57787445481642,
+        "prior_slope_degrees": 13.745607298055686,
+        "actual_gradient_components": [
+          95.94374962884059,
+          -96.00624962907936
+        ],
+        "old_gradient_components": [
+          -0.039941847801732586,
+          -0.24133424327993105
+        ],
+        "limit_components": [
+          0.8,
+          0.8
+        ],
+        "projected_area_m2": 3.7834979593753815e-09,
+        "shortest_projected_edge_m": 0.00028052942368851066,
+        "max_height_change_m": 0.7577581395191704,
+        "world_xz_centroid": [
+          -2219.9385210673013,
+          -1862.1405754089355
+        ],
+        "actual_world_xyz": [
+          [
+            -2219.9187774658203,
+            8.34000015258789,
+            -1862.1208190917969
+          ],
+          [
+            -2219.977809906006,
+            8.347352027893066,
+            -1862.179889678955
+          ],
+          [
+            -2219.918975830078,
+            8.340012550354004,
+            -1862.1210174560547
+          ]
+        ],
+        "height_range_m": 0.007351875305175781,
+        "longest_projected_edge_m": 0.08351145586968917,
+        "centroid_inside_paving_footprint": true
+      },
+      {
+        "component_limit_excess": 93.75681987724322,
+        "actual_slope_degrees": 89.40086870975048,
+        "prior_slope_degrees": 9.747593513322203,
+        "actual_gradient_components": [
+          -14.272727529049968,
+          -94.55681987724321
+        ],
+        "old_gradient_components": [
+          -0.003906366631876702,
+          -0.17174376586772516
+        ],
+        "limit_components": [
+          0.8,
+          0.8
+        ],
+        "projected_area_m2": 3.2014213502407074e-10,
+        "shortest_projected_edge_m": 0.00040893839365409534,
+        "max_height_change_m": 0.7587796387139711,
+        "world_xz_centroid": [
+          -2241.791997273763,
+          -1757.8222935994465
+        ],
+        "actual_world_xyz": [
+          [
+            -2241.788398742676,
+            13.288125038146973,
+            -1757.8228378295898
+          ],
+          [
+            -2241.7939987182617,
+            13.287975311279297,
+            -1757.8219909667969
+          ],
+          [
+            -2241.7935943603516,
+            13.287975311279297,
+            -1757.8220520019531
+          ]
+        ],
+        "height_range_m": 0.00014972686767578125,
+        "longest_projected_edge_m": 0.0056636475131500615,
+        "centroid_inside_paving_footprint": false
+      },
+      {
+        "component_limit_excess": 46.032192730214156,
+        "actual_slope_degrees": 88.86971958192206,
+        "prior_slope_degrees": 22.78135083181267,
+        "actual_gradient_components": [
+          -19.38356203734466,
+          46.83219273021415
+        ],
+        "old_gradient_components": [
+          0.2888324519898595,
+          -0.3048895234823947
+        ],
+        "limit_components": [
+          0.8,
+          0.8
+        ],
+        "projected_area_m2": 1.0622898116707802e-09,
+        "shortest_projected_edge_m": 0.001275872249491013,
+        "max_height_change_m": 0.9171338390189234,
+        "world_xz_centroid": [
+          -2238.749621073405,
+          -1737.727180480957
+        ],
+        "actual_world_xyz": [
+          [
+            -2238.7540016174316,
+            14.33981704711914,
+            -1737.7289962768555
+          ],
+          [
+            -2238.748020172119,
+            14.339998245239258,
+            -1737.7265167236328
+          ],
+          [
+            -2238.746841430664,
+            14.340017318725586,
+            -1737.7260284423828
+          ]
+        ],
+        "height_range_m": 0.0002002716064453125,
+        "longest_projected_edge_m": 0.007750891303823559,
+        "centroid_inside_paving_footprint": false
+      },
+      {
+        "component_limit_excess": 24.42033917226698,
+        "actual_slope_degrees": 88.31822828848954,
+        "prior_slope_degrees": 20.546104126888455,
+        "actual_gradient_components": [
+          -25.220339172266982,
+          -22.889830680198337
+        ],
+        "old_gradient_components": [
+          0.3743976156876821,
+          0.017408223635893304
+        ],
+        "limit_components": [
+          0.8,
+          0.8
+        ],
+        "projected_area_m2": 1.7171259969472885e-09,
+        "shortest_projected_edge_m": 0.00043212287165851735,
+        "max_height_change_m": 0.3970923375547706,
+        "world_xz_centroid": [
+          -2238.949003855387,
+          -1756.901964823405
+        ],
+        "actual_world_xyz": [
+          [
+            -2238.951229095459,
+            13.739996910095215,
+            -1756.899513244629
+          ],
+          [
+            -2238.9480361938477,
+            13.739977836608887,
+            -1756.9030303955078
+          ],
+          [
+            -2238.9477462768555,
+            13.74000072479248,
+            -1756.9033508300781
+          ]
+        ],
+        "height_range_m": 2.288818359375e-05,
+        "longest_projected_edge_m": 0.005182382415940569,
+        "centroid_inside_paving_footprint": false
+      },
+      {
+        "component_limit_excess": 14.314814689520647,
+        "actual_slope_degrees": 86.25708933130197,
+        "prior_slope_degrees": 9.747593641298126,
+        "actual_gradient_components": [
+          2.281481462327098,
+          15.114814689520648
+        ],
+        "old_gradient_components": [
+          -0.00390636697683565,
+          -0.17174376815999118
+        ],
+        "limit_components": [
+          0.8,
+          0.8
+        ],
+        "projected_area_m2": 2.35741026699543e-08,
+        "shortest_projected_edge_m": 0.00040893839365409534,
+        "max_height_change_m": 0.7618565387159553,
+        "world_xz_centroid": [
+          -2241.8138580322266,
+          -1757.8189544677734
+        ],
+        "actual_world_xyz": [
+          [
+            -2241.8539810180664,
+            13.289737701416016,
+            -1757.8128204345703
+          ],
+          [
+            -2241.7935943603516,
+            13.287975311279297,
+            -1757.8220520019531
+          ],
+          [
+            -2241.7939987182617,
+            13.287975311279297,
+            -1757.8219909667969
+          ]
+        ],
+        "height_range_m": 0.00176239013671875,
+        "longest_projected_edge_m": 0.06108821708245466,
+        "centroid_inside_paving_footprint": false
+      },
+      {
+        "component_limit_excess": 13.876384074133341,
+        "actual_slope_degrees": 87.16920452226796,
+        "prior_slope_degrees": 25.106073257564788,
+        "actual_gradient_components": [
+          14.676384074133342,
+          -13.914082683777782
+        ],
+        "old_gradient_components": [
+          0.42933095030506363,
+          -0.18768772659967647
+        ],
+        "limit_components": [
+          0.8,
+          0.8
+        ],
+        "projected_area_m2": 2.8390786610543728e-08,
+        "shortest_projected_edge_m": 0.00025900642695263605,
+        "max_height_change_m": 0.16554188683132232,
+        "world_xz_centroid": [
+          -2229.4743779500327,
+          -1877.6008071899414
+        ],
+        "actual_world_xyz": [
+          [
+            -2229.5130157470703,
+            9.089975357055664,
+            -1877.640983581543
+          ],
+          [
+            -2229.512836456299,
+            9.090005874633789,
+            -1877.640796661377
+          ],
+          [
+            -2229.3972816467285,
+            9.114081382751465,
+            -1877.5206413269043
+          ]
+        ],
+        "height_range_m": 0.02410602569580078,
+        "longest_projected_edge_m": 0.16696299061002726,
+        "centroid_inside_paving_footprint": false
+      },
+      {
+        "component_limit_excess": 10.73623185245325,
+        "actual_slope_degrees": 85.09656975872102,
+        "prior_slope_degrees": 14.668322279687775,
+        "actual_gradient_components": [
+          1.6687047056194217,
+          11.53623185245325
+        ],
+        "old_gradient_components": [
+          0.09608724391274959,
+          -0.24348002953806852
+        ],
+        "limit_components": [
+          0.8,
+          0.8
+        ],
+        "projected_area_m2": 3.213062882423401e-08,
+        "shortest_projected_edge_m": 0.0006786731325227688,
+        "max_height_change_m": 0.8697555821402041,
+        "world_xz_centroid": [
+          -2261.1752166748047,
+          -1747.2149276733398
+        ],
+        "actual_world_xyz": [
+          [
+            -2261.1609954833984,
+            9.990026473999023,
+            -1747.2169647216797
+          ],
+          [
+            -2261.1819915771484,
+            9.989667892456055,
+            -1747.2139587402344
+          ],
+          [
+            -2261.182662963867,
+            9.989691734313965,
+            -1747.2138595581055
+          ]
+        ],
+        "height_range_m": 0.00035858154296875,
+        "longest_projected_edge_m": 0.02188884991693985,
+        "centroid_inside_paving_footprint": true
+      },
+      {
+        "component_limit_excess": 10.526731109740023,
+        "actual_slope_degrees": 86.28435794365289,
+        "prior_slope_degrees": 17.433038446875575,
+        "actual_gradient_components": [
+          -10.431681649854067,
+          11.326731109740024
+        ],
+        "old_gradient_components": [
+          0.30944540615072696,
+          -0.05337199653850466
+        ],
+        "limit_components": [
+          0.8,
+          0.8
+        ],
+        "projected_area_m2": 1.438718754798174e-06,
+        "shortest_projected_edge_m": 0.00018614002836236346,
+        "max_height_change_m": 0.4923713753060479,
+        "world_xz_centroid": [
+          -2234.704865773519,
+          -1874.5028254191081
+        ],
+        "actual_world_xyz": [
+          [
+            -2234.2020416259766,
+            7.403399467468262,
+            -1874.0
+          ],
+          [
+            -2234.956211090088,
+            6.728337287902832,
+            -1874.7541732788086
+          ],
+          [
+            -2234.956344604492,
+            6.7282609939575195,
+            -1874.7543029785156
+          ]
+        ],
+        "height_range_m": 0.6751384735107422,
+        "longest_projected_edge_m": 1.0667455023552181,
+        "centroid_inside_paving_footprint": true
+      }
+    ],
+    "worst_area_at_least_1e4_m2": [
+      {
+        "component_limit_excess": 0.026390140770484516,
+        "actual_slope_degrees": 45.793194649022816,
+        "prior_slope_degrees": 20.546103918046022,
+        "actual_gradient_components": [
+          -0.6115751499672256,
+          -0.8263901407704846
+        ],
+        "old_gradient_components": [
+          0.3743976116946884,
+          0.017408220011519503
+        ],
+        "limit_components": [
+          0.8,
+          0.8
+        ],
+        "projected_area_m2": 0.00017823558300733566,
+        "shortest_projected_edge_m": 0.38402578858422304,
+        "max_height_change_m": 0.8397871576526015,
+        "world_xz_centroid": [
+          -2239.656280517578,
+          -1758.6636555989583
+        ],
+        "actual_world_xyz": [
+          [
+            -2240.0,
+            13.766037940979004,
+            -1758.2779693603516
+          ],
+          [
+            -2239.6119995117188,
+            13.888249397277832,
+            -1758.7129974365234
+          ],
+          [
+            -2239.3568420410156,
+            13.969377517700195,
+            -1759.0
+          ]
+        ],
+        "height_range_m": 0.2033395767211914,
+        "longest_projected_edge_m": 0.9669438477988672,
+        "centroid_inside_paving_footprint": true
+      },
+      {
+        "component_limit_excess": 0.021293016342608717,
+        "actual_slope_degrees": 44.20315389517919,
+        "prior_slope_degrees": 15.012128179603728,
+        "actual_gradient_components": [
+          -0.5209219820022564,
+          -0.8212930163426088
+        ],
+        "old_gradient_components": [
+          0.2642740527227993,
+          -0.045581079022843016
+        ],
+        "limit_components": [
+          0.8,
+          0.8
+        ],
+        "projected_area_m2": 0.00023518974194303155,
+        "shortest_projected_edge_m": 0.0005563183738444257,
+        "max_height_change_m": 0.4871665571634516,
+        "world_xz_centroid": [
+          -2252.504783630371,
+          -1749.3126983642578
+        ],
+        "actual_world_xyz": [
+          [
+            -2252.2573623657227,
+            10.714364051818848,
+            -1749.4594421386719
+          ],
+          [
+            -2253.0,
+            10.739999771118164,
+            -1749.0196228027344
+          ],
+          [
+            -2252.2569885253906,
+            10.713830947875977,
+            -1749.4590301513672
+          ]
+        ],
+        "height_range_m": 0.0261688232421875,
+        "longest_projected_edge_m": 0.8632177416119967,
+        "centroid_inside_paving_footprint": true
+      },
+      {
+        "component_limit_excess": 0.011593565091262303,
+        "actual_slope_degrees": 40.335771677461565,
+        "prior_slope_degrees": 25.133634662836645,
+        "actual_gradient_components": [
+          -0.24969412158279078,
+          -0.8115935650912623
+        ],
+        "old_gradient_components": [
+          -0.07974004965673095,
+          -0.4623240268297955
+        ],
+        "limit_components": [
+          0.8,
+          0.8
+        ],
+        "projected_area_m2": 0.00011011044261977077,
+        "shortest_projected_edge_m": 0.0017637272506080767,
+        "max_height_change_m": 0.39934417207230766,
+        "world_xz_centroid": [
+          -2249.614585876465,
+          -1751.1068115234375
+        ],
+        "actual_world_xyz": [
+          [
+            -2249.420997619629,
+            11.174492835998535,
+            -1751.156005859375
+          ],
+          [
+            -2249.4227600097656,
+            11.174877166748047,
+            -1751.1559371948242
+          ],
+          [
+            -2250.0,
+            11.199344635009766,
+            -1751.0084915161133
+          ]
+        ],
+        "height_range_m": 0.02485179901123047,
+        "longest_projected_edge_m": 0.5974983162681958,
+        "centroid_inside_paving_footprint": false
+      },
+      {
+        "component_limit_excess": 0.008094039942740383,
+        "actual_slope_degrees": 38.942134243494976,
+        "prior_slope_degrees": 12.893766158002444,
+        "actual_gradient_components": [
+          -0.005561509016190137,
+          -0.8080940399427404
+        ],
+        "old_gradient_components": [
+          0.2224277953099431,
+          0.05411508512828857
+        ],
+        "limit_components": [
+          0.8,
+          0.8
+        ],
+        "projected_area_m2": 0.00019263627473264933,
+        "shortest_projected_edge_m": 0.0026398697321771175,
+        "max_height_change_m": 0.5790476449684157,
+        "world_xz_centroid": [
+          -2233.687545776367,
+          -1735.1000086466472
+        ],
+        "actual_world_xyz": [
+          [
+            -2234.0,
+            15.271230697631836,
+            -1735.0
+          ],
+          [
+            -2233.529998779297,
+            15.389850616455078,
+            -1735.1500244140625
+          ],
+          [
+            -2233.5326385498047,
+            15.389846801757812,
+            -1735.150001525879
+          ]
+        ],
+        "height_range_m": 0.11861991882324219,
+        "longest_projected_edge_m": 0.49336444164250837,
+        "centroid_inside_paving_footprint": false
+      },
+      {
+        "component_limit_excess": 0.00781788747589407,
+        "actual_slope_degrees": 42.15168321899943,
+        "prior_slope_degrees": 3.210239787713123,
+        "actual_gradient_components": [
+          0.4084530774616631,
+          0.8078178874758941
+        ],
+        "old_gradient_components": [
+          0.02544126560971372,
+          0.049986008686316113
+        ],
+        "limit_components": [
+          0.8,
+          0.8
+        ],
+        "projected_area_m2": 0.00011270237155258656,
+        "shortest_projected_edge_m": 0.0014978699175527898,
+        "max_height_change_m": 1.0893034355744522,
+        "world_xz_centroid": [
+          -2259.4850463867188,
+          -1749.5215682983398
+        ],
+        "actual_world_xyz": [
+          [
+            -2259.247001647949,
+            10.147913932800293,
+            -1749.6169967651367
+          ],
+          [
+            -2259.9626083374023,
+            10.08711051940918,
+            -1749.330436706543
+          ],
+          [
+            -2259.2455291748047,
+            10.148293495178223,
+            -1749.6172714233398
+          ]
+        ],
+        "height_range_m": 0.06118297576904297,
+        "longest_projected_edge_m": 0.7723190274696716,
+        "centroid_inside_paving_footprint": false
+      },
+      {
+        "component_limit_excess": 0.007612795835738595,
+        "actual_slope_degrees": 40.24900027917699,
+        "prior_slope_degrees": 12.893766157988376,
+        "actual_gradient_components": [
+          0.8076127958357386,
+          0.25372998987664064
+        ],
+        "old_gradient_components": [
+          0.22242779530980367,
+          0.05411508512776864
+        ],
+        "limit_components": [
+          0.8,
+          0.8
+        ],
+        "projected_area_m2": 0.0003828617336694151,
+        "shortest_projected_edge_m": 0.003922861140659444,
+        "max_height_change_m": 0.4896957560031616,
+        "world_xz_centroid": [
+          -2232.9532788594565,
+          -1735.146031697591
+        ],
+        "actual_world_xyz": [
+          [
+            -2233.0,
+            15.427085876464844,
+            -1735.0
+          ],
+          [
+            -2232.9280166625977,
+            15.429519653320312,
+            -1735.2195281982422
+          ],
+          [
+            -2232.9318199157715,
+            15.426692008972168,
+            -1735.2185668945312
+          ]
+        ],
+        "height_range_m": 0.0028276443481445312,
+        "longest_projected_edge_m": 0.23102863607579222,
+        "centroid_inside_paving_footprint": false
+      },
+      {
+        "component_limit_excess": 0.006056573399592424,
+        "actual_slope_degrees": 38.98848123781477,
+        "prior_slope_degrees": 5.585298501263907e-12,
+        "actual_gradient_components": [
+          0.8060565733995925,
+          0.07405450457887948
+        ],
+        "old_gradient_components": [
+          -9.747881295301718e-14,
+          -7.693001552444072e-16
+        ],
+        "limit_components": [
+          0.8,
+          0.8
+        ],
+        "projected_area_m2": 0.001600906194653362,
+        "shortest_projected_edge_m": 0.01987135672587422,
+        "max_height_change_m": 0.1631317138671875,
+        "world_xz_centroid": [
+          -2249.0015309651694,
+          -1745.5386327107747
+        ],
+        "actual_world_xyz": [
+          [
+            -2249.0,
+            10.911178588867188,
+            -1746.0
+          ],
+          [
+            -2249.0045776367188,
+            10.958022117614746,
+            -1745.3176193237305
+          ],
+          [
+            -2249.000015258789,
+            10.96313190460205,
+            -1745.2982788085938
+          ]
+        ],
+        "height_range_m": 0.05195331573486328,
+        "longest_projected_edge_m": 0.7017211915721496,
+        "centroid_inside_paving_footprint": false
+      },
+      {
+        "component_limit_excess": 0.005638973103018419,
+        "actual_slope_degrees": 47.75416004718021,
+        "prior_slope_degrees": 8.922003987741938,
+        "actual_gradient_components": [
+          -0.8056389731030185,
+          -0.7505407896469198
+        ],
+        "old_gradient_components": [
+          -0.02668301114370309,
+          -0.15470506966510197
+        ],
+        "limit_components": [
+          0.8,
+          0.8
+        ],
+        "projected_area_m2": 0.0012118811646359973,
+        "shortest_projected_edge_m": 0.012158706498545528,
+        "max_height_change_m": 0.7792903441752772,
+        "world_xz_centroid": [
+          -2242.003983815511,
+          -1877.8640543619792
+        ],
+        "actual_world_xyz": [
+          [
+            -2242.0,
+            7.8158979415893555,
+            -1878.0
+          ],
+          [
+            -2242.011951446533,
+            7.671638488769531,
+            -1877.79496383667
+          ],
+          [
+            -2242.0,
+            7.663687705993652,
+            -1877.7971992492676
+          ]
+        ],
+        "height_range_m": 0.15221023559570312,
+        "longest_projected_edge_m": 0.20538418962362825,
+        "centroid_inside_paving_footprint": false
+      }
+    ],
+    "max_current_angle_where_original_under45deg": 89.57787445481642,
+    "microtriangles_over70deg_with_original_under60deg": 29
+  },
+  "reopened_native_gate": {
+    "passed": true,
+    "glb_matches": true,
+    "blend_matches": true
+  },
+  "gpu_run": {
+    "run_id": "village-paving-25f-20260908T142029Z-3a929b3fadd3459883fbdc78e6dae14e",
+    "status": "passed",
+    "passed": true,
+    "images": [
+      {
+        "name": "day-bay.png",
+        "sha256": "f8226a9691e941139e29b73380dcb6361ef96f004dc192ec733b66fed66ad7ba",
+        "paving_passed": true,
+        "failure_count": 0,
+        "run_matches": true
+      },
+      {
+        "name": "day-foreground.png",
+        "sha256": "1b8aa508137dd165e50961c0ab06e2b80abc731ce465e947d46c98db9e034f34",
+        "paving_passed": true,
+        "failure_count": 0,
+        "run_matches": true
+      },
+      {
+        "name": "door-junction.png",
+        "sha256": "24d395c80b2326aa4feb683889a26fa423b28e171b6bdf10a0fceeaccd4bb974",
+        "paving_passed": true,
+        "failure_count": 0,
+        "run_matches": true
+      },
+      {
+        "name": "night-reference.png",
+        "sha256": "81aa142d7d8a5780902b588dc13e24c74262fe839f0e028578f9c5039807cef3",
+        "paving_passed": true,
+        "failure_count": 0,
+        "run_matches": true
+      },
+      {
+        "name": "upper-street.png",
+        "sha256": "f1aad01f53d1042b875f80d20ac3ed7d481ef4d3ecb4a5834e9d8b0bf8af736c",
+        "paving_passed": true,
+        "failure_count": 0,
+        "run_matches": true
+      }
+    ],
+    "frozen_glb_identities": [
+      {
+        "path": "study-inputs\\village-grading\\mainland_headland.glb",
+        "matches_independent_geometry_audit": true
+      },
+      {
+        "path": "study-inputs\\village-paving\\village_bay.glb",
+        "matches_independent_geometry_audit": true
+      },
+      {
+        "path": "study-inputs\\village-paving\\village_foreground.glb",
+        "matches_independent_geometry_audit": true
+      }
+    ]
+  },
+  "visual_review": {
+    "directly_viewed": [
+      "day-foreground.png",
+      "day-bay.png",
+      "door-junction.png",
+      "upper-street.png",
+      "night-reference.png"
+    ],
+    "improvement": "The 25c long dark radial creases and large spike-like slope faces no longer appear at the reviewed viewpoints. Raised wall bulk remains reduced.",
+    "remaining": "Door-junction and roadside grassy fill show fine irregular triangular patchwork; no clear regular checkerboard was observed. Large original rock faces, repeated stair contours and overall reference-art issues remain outside final acceptance.",
+    "microface_visibility": "Exported steep microfaces still exist. Their exact individual visibility is not established by these overview/medium-distance images; no assertion that all microfaces were eliminated.",
+    "full_reference_acceptance": false
+  }
+}

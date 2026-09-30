@@ -1,0 +1,80 @@
+{
+  "run": "lantern-diagnostic-28c-20260908T160251Z-c743ec0d33cd491f939180c70c5dd7bf",
+  "layers": [
+    {
+      "file": "captures\\validation_runs\\lantern-diagnostic-28c-20260908T160251Z-c743ec0d33cd491f939180c70c5dd7bf\\images\\night-reference-debug-1.png",
+      "different_pixels": 690,
+      "rgb_sha256": "3eb7c45ae36ef5718447a5665108459e4366eeaabcbc935cf5aca112d039bd35",
+      "max_abs_difference": 97,
+      "absolute_difference_sum": 6227,
+      "bbox": [
+        5,
+        501,
+        1669,
+        940
+      ]
+    },
+    {
+      "file": "captures\\validation_runs\\lantern-diagnostic-28c-20260908T160251Z-c743ec0d33cd491f939180c70c5dd7bf\\images\\night-reference-debug-2.png",
+      "different_pixels": 653,
+      "rgb_sha256": "b657ce76ce701c047c10e55607186cbb38a16404d564288893dc55b27cfd5b9e",
+      "max_abs_difference": 112,
+      "absolute_difference_sum": 6912,
+      "bbox": [
+        0,
+        501,
+        1666,
+        939
+      ]
+    },
+    {
+      "file": "captures\\validation_runs\\lantern-diagnostic-28c-20260908T160251Z-c743ec0d33cd491f939180c70c5dd7bf\\images\\night-reference-debug-3.png",
+      "different_pixels": 381,
+      "rgb_sha256": "9717c086fd978a593251dd9db9f376a92e49779e73dfcecfea9b690e47076da7",
+      "max_abs_difference": 59,
+      "absolute_difference_sum": 3851,
+      "bbox": [
+        5,
+        505,
+        1578,
+        940
+      ]
+    },
+    {
+      "file": "captures\\validation_runs\\lantern-diagnostic-28c-20260908T160251Z-c743ec0d33cd491f939180c70c5dd7bf\\images\\night-reference-debug-4.png",
+      "different_pixels": 448,
+      "rgb_sha256": "4972f93a9dec2a05f0a4f631e3d298ef67a1effb9e98cdebf6f52aebc497988d",
+      "max_abs_difference": 59,
+      "absolute_difference_sum": 3954,
+      "bbox": [
+        0,
+        528,
+        1666,
+        940
+      ]
+    }
+  ],
+  "28d": {
+    "run": "lantern-diagnostic-28d-20260908T161054Z-dc3055c6b50e4023ac0899b86acd1cd3",
+    "comparisons": [
+      {
+        "debug_mode": 1,
+        "different_pixels": 732,
+        "max_abs_difference": 68,
+        "absolute_difference_sum": 5766,
+        "pixels_abs_difference_gt_10": 151,
+        "rgb_sha256": "ef33d3fd7e565d4349649bd8683408c84470d22eedb898e4d40332322de5acf2"
+      },
+      {
+        "debug_mode": 5,
+        "different_pixels": 195880,
+        "max_abs_difference": 251,
+        "absolute_difference_sum": 22542255,
+        "pixels_abs_difference_gt_10": 195623,
+        "rgb_sha256": "611152ec12585aadc64139017d46d081f07d75052f8d644bb24d811f86293d70"
+      }
+    ]
+  },
+  "cause": "Godot 4.5.1-stable GLES3 scene.glsl lines2134-2144 selects ALBEDO only under MODE_UNSHADED. Existing beam shader ALBEDO zero and EMISSION color contributes black additive RGB. Debug5 ALBEDO-only renders broad orange cone volumes and halos.",
+  "official_renderer_source": "https://raw.githubusercontent.com/godotengine/godot/4.5.1-stable/drivers/gles3/shaders/scene.glsl"
+}

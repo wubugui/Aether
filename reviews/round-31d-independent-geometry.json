@@ -1,0 +1,198 @@
+{
+  "round": "31d",
+  "scope": "Actual31d GLB/native union versus30k. Required road/pad/current14tree support, path17rocks, connected shell, three native operand intersection and exposed exterior only. No GPU/Blender rerun.",
+  "files": {
+    "captures\\lantern_island_study_31d\\island_c.glb": "df1e51b0edc047f898c37b64a9733952a6fb607b591f90e6f95da154f994fe4a",
+    "captures\\lantern_island_study_31d\\geometry-evidence.json": "675a15662c3723d5075231e04d4dc3306747723bdd6d7c2dc00f97e1b9d09861",
+    "captures\\lantern_island_study_31d\\shoulder_operands.blend": "1c8b6bbdc667206d5ca1a3f94ecaa895e1bd64ce23de7cfd0a7b1ec4a939d501",
+    "captures\\lantern_island_study_30k\\island_c.glb": "4fbf048a8ffc32294400b49a5806e88b1a8f4cff5b908531a2435cdbc907ea9f",
+    "reviews\\round-30k-current-tree-axes.json": "aee357b4db1bfc6acf605dc84cca5bb8050d9fd4f3de1ffbb86c397d7ae9c726"
+  },
+  "native_scene_objects": 19,
+  "actual_main_triangles": 2184,
+  "actual_main_closed_oppositely_paired_edges": true,
+  "actual_main_connected_components_by_welded_position": [
+    1094
+  ],
+  "actual_min_triangle_area_m2": 1.4351405588411331e-06,
+  "old_main_volume_m3": 21218.726685557802,
+  "new_main_volume_m3": 21637.79751855356,
+  "added_union_volume_m3": 419.0708329957597,
+  "operand_XY_domains_disjoint": true,
+  "aggregate_actual_intersection_volume_with_old_main_m3": 773.3493278609631,
+  "intersection_volume_method": "For disjoint operand projections, sum operand convex volumes minus actual main-union volume gain. Individual sampled section intersections also shown.",
+  "path_and17rocks_source_exact_actual_triangles_present": [
+    "island_c terrain fitted keeper paths",
+    "West broken shoulder",
+    "Southwest leaning crag",
+    "South broad low spur",
+    "East high fracture",
+    "Northeast sloping shoulder",
+    "North broken ridge",
+    "Northwest split buttress",
+    "West rooted toe",
+    "Southwest wash ledge",
+    "South low reef",
+    "East submerged root",
+    "Northeast low cluster",
+    "North tidal end",
+    "Northwest rooted slab",
+    "West waterline satellite",
+    "South low satellite",
+    "East tidal satellite"
+  ],
+  "actual_path_counter_exact": true,
+  "required_supports": [
+    {
+      "region": "road_footprint",
+      "expected_support_projection_area_m2": 25.572388056364687,
+      "same_linear_height_coverage_m2": 25.57238805636466,
+      "unpreserved_area_m2": 0.0,
+      "higher_than_old_by_over_0_1mm_area_m2": 0.0,
+      "all_intersecting_up_surface_height_delta_min_max_m": [
+        0.0,
+        0.0
+      ],
+      "pass": true
+    },
+    {
+      "region": "padded_sites",
+      "expected_support_projection_area_m2": 123.97999999993655,
+      "same_linear_height_coverage_m2": 123.97999999993657,
+      "unpreserved_area_m2": 0.0,
+      "higher_than_old_by_over_0_1mm_area_m2": 0.0,
+      "all_intersecting_up_surface_height_delta_min_max_m": [
+        0.0,
+        0.0
+      ],
+      "pass": true
+    },
+    {
+      "region": "current_CD_tree_axis_2m_disks",
+      "expected_support_projection_area_m2": 80.43352357734811,
+      "same_linear_height_coverage_m2": 80.43352357734815,
+      "unpreserved_area_m2": 0.0,
+      "higher_than_old_by_over_0_1mm_area_m2": 0.0,
+      "all_intersecting_up_surface_height_delta_min_max_m": [
+        0.0,
+        0.0
+      ],
+      "pass": true
+    }
+  ],
+  "additions": [
+    {
+      "name": "South short transverse shoulder",
+      "native_operand_vertices": 15,
+      "native_operand_faces": 26,
+      "convex_operand_volume_m3": 372.32335964043835,
+      "old_main_real_section_intersections": [
+        {
+          "z_m": 2.137,
+          "operand_section_area_m2": 69.861697899907,
+          "old_main_section_area_m2": 1440.9174597748654,
+          "overlap_area_m2": 69.861697899907
+        },
+        {
+          "z_m": 4.137,
+          "operand_section_area_m2": 53.375246963952506,
+          "old_main_section_area_m2": 1020.3469246953822,
+          "overlap_area_m2": 28.629354661049554
+        },
+        {
+          "z_m": 6.137,
+          "operand_section_area_m2": 32.791613783466005,
+          "old_main_section_area_m2": 782.060682237553,
+          "overlap_area_m2": 7.45667349032593
+        }
+      ],
+      "actual_union_exterior_on_operand_planes_triangles": 56,
+      "actual_union_exterior_on_operand_planes_3d_area_m2": 115.04647528017448,
+      "actual_upward_operand_exterior_3d_area_m2": 115.04647528017448,
+      "actual_upward_operand_exterior_projection_area_m2": 54.93325586425999,
+      "exterior_area_scope": "Actual new GLB exterior triangles on native convex operand supporting planes within0.1mm. Geometric exposed surface, not screen visibility or all broad-slab area."
+    },
+    {
+      "name": "Southeast cross turned blunt shoulder",
+      "native_operand_vertices": 14,
+      "native_operand_faces": 24,
+      "convex_operand_volume_m3": 274.94064433179307,
+      "old_main_real_section_intersections": [
+        {
+          "z_m": 2.137,
+          "operand_section_area_m2": 62.24925545401952,
+          "old_main_section_area_m2": 1440.9174597748654,
+          "overlap_area_m2": 49.92863642824979
+        },
+        {
+          "z_m": 4.137,
+          "operand_section_area_m2": 44.0123208974425,
+          "old_main_section_area_m2": 1020.3469246953822,
+          "overlap_area_m2": 28.62975347599421
+        },
+        {
+          "z_m": 6.137,
+          "operand_section_area_m2": 18.5562971104275,
+          "old_main_section_area_m2": 782.060682237553,
+          "overlap_area_m2": 11.019201103830182
+        }
+      ],
+      "actual_union_exterior_on_operand_planes_triangles": 60,
+      "actual_union_exterior_on_operand_planes_3d_area_m2": 79.83179376278704,
+      "actual_upward_operand_exterior_3d_area_m2": 75.45716161090144,
+      "actual_upward_operand_exterior_projection_area_m2": 41.94482243573222,
+      "exterior_area_scope": "Actual new GLB exterior triangles on native convex operand supporting planes within0.1mm. Geometric exposed surface, not screen visibility or all broad-slab area."
+    },
+    {
+      "name": "North cross cleft thick diagonal shoulder",
+      "native_operand_vertices": 16,
+      "native_operand_faces": 28,
+      "convex_operand_volume_m3": 545.1561568844915,
+      "old_main_real_section_intersections": [
+        {
+          "z_m": 2.137,
+          "operand_section_area_m2": 63.9205035594375,
+          "old_main_section_area_m2": 1440.9174597748654,
+          "overlap_area_m2": 37.843614936768354
+        },
+        {
+          "z_m": 4.137,
+          "operand_section_area_m2": 48.700986021129,
+          "old_main_section_area_m2": 1020.3469246953822,
+          "overlap_area_m2": 27.0668836228803
+        },
+        {
+          "z_m": 6.137,
+          "operand_section_area_m2": 22.9363577344335,
+          "old_main_section_area_m2": 782.060682237553,
+          "overlap_area_m2": 11.09457664388259
+        }
+      ],
+      "actual_union_exterior_on_operand_planes_triangles": 50,
+      "actual_union_exterior_on_operand_planes_3d_area_m2": 143.9286853833253,
+      "actual_upward_operand_exterior_3d_area_m2": 110.66597903158886,
+      "actual_upward_operand_exterior_projection_area_m2": 37.49796388979996,
+      "exterior_area_scope": "Actual new GLB exterior triangles on native convex operand supporting planes within0.1mm. Geometric exposed surface, not screen visibility or all broad-slab area."
+    }
+  ],
+  "pass": true,
+  "full_reference_accepted": false,
+  "limits": [
+    "Native operand scene existence/hash is recorded; Blender re-open by root is separate.",
+    "Positive solid overlap and exposed geometric area are not visual acceptance.",
+    "No exhaustive triangle-level self-intersection or whole walking claim.",
+    "Individual/coplanar subset areas do not estimate all visible slab area."
+  ],
+  "base_geometry_and_support_pass": true,
+  "back_cleft_bilateral_connection_pass": true,
+  "first_two_native_operands_exactly_preserved_from31c": true,
+  "verdict": "Base shell/support valid. Bilateral target closure result is bounded to the declared local diagonal and Y crosscuts; remaining outer/high cuts are recorded and no whole-crevice closure or visual acceptance is claimed.",
+  "bounded_back_cleft_both_banks_check": {
+    "local_Y_crosscuts_report": "reviews/round-31d-back-cleft-local-crosscheck.json",
+    "diagonal_crosscut_report": "reviews/round-31d-back-cleft-diagonal-check.json",
+    "target_diagonal_bilateral_pass": true,
+    "positive_Y_crosscuts": 5,
+    "sampled_Y_crosscuts": 9,
+    "scope": "Same actual local Y and diagonal cuts as31c. Positive local bilateral penetration is distinguished from residual gaps on outer/high cuts. No whole crevice segmentation."
+  }
+}

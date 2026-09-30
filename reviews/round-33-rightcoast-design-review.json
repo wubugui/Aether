@@ -1,0 +1,440 @@
+{
+  "round": 33,
+  "scope": "Bounded right-coast visual design brief from three original images and existing source-only ray localization; no geometry edits or GPU",
+  "status": "design_direction_only_not_implemented_or_accepted",
+  "images": [
+    {
+      "path": "E:\\FeiTing\\ref\\1342.png",
+      "sha256": "7acc98104013d9122eb551846b2d7fc1f7549bce8b2e3199eae8f5385a3ea238",
+      "actually_viewed": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\foreground-island-32f-20260908T224143Z-7598ab628ffa40f0a4f20816ba9f05e2\\images\\day-reference.png",
+      "sha256": "6eeebc3734e1281d4e03d2d58f4e3d54fe1be32265af36d0c3120327d0b29156",
+      "actually_viewed": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\foreground-island-32f-20260908T224143Z-7598ab628ffa40f0a4f20816ba9f05e2\\images\\night-reference.png",
+      "sha256": "b251c6b49e2997601277a440fb18b9b0a01ae780e88b9362bccb3ad7986cc538",
+      "actually_viewed": true
+    }
+  ],
+  "inputs": [
+    {
+      "path": "E:\\FeiTing\\reviews\\round-33-rightcoast-intake.md",
+      "sha256": "c7dbd3bbbc54566261dab5ed996f00675ca787041d0569326a121427711d9c3d"
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\rightcoast33-main-view-localization.json",
+      "sha256": "1bd468ab4a6bfc88a3f115ee7ef91e1f9d51412caed0f18f371f87c0465c471d"
+    }
+  ],
+  "localization_image_sha_matches": true,
+  "camera": {
+    "fov": 70.0,
+    "position": [
+      -2278.0,
+      60.0,
+      -1632.0
+    ],
+    "rotation": [
+      -0.00509163970127702,
+      0.60683274269104,
+      0.0
+    ]
+  },
+  "source_origin": [
+    -2180,
+    0,
+    -1830
+  ],
+  "source_basis_from_intake": {
+    "path": "E:/FeiTing/captures/village_grading_study_26b/mainland_headland.blend",
+    "sha256_from_localization": "bb2586b949f09904a9c54f12fdf9118c12f3578a3ce3911f8fb48853b3eb8d43",
+    "parts": 12,
+    "existing_houses": 9,
+    "existing_paving_parts": 922,
+    "source_not_reopened_by_reviewer": true
+  },
+  "priorities": [
+    {
+      "order": 1,
+      "subject": "近岬屋群下方的宽灰台",
+      "current_approx_pixel_region": [
+        1250,
+        750,
+        1672,
+        941
+      ],
+      "reference_relation": "近前岬是低而破碎的岩脚、较窄活动地坪和右上抬升岩肩，屋群嵌入其间；不是整片灰色停机坪。",
+      "initial_existing_source_anchors": [
+        {
+          "pixel": [
+            1305,
+            815
+          ],
+          "hit": {
+            "object": "Broad tidal buttress 1",
+            "triangle": 6,
+            "triangle_xyz": [
+              [
+                -102.53845977783203,
+                -68.57864379882812,
+                1.7999999523162842
+              ],
+              [
+                -94.38239288330078,
+                -72.7130126953125,
+                5.800000190734863
+              ],
+              [
+                -99.99751281738281,
+                -61.26090621948242,
+                3.799999952316284
+              ]
+            ],
+            "location_blender": [
+              -97.50914509262769,
+              -67.67674595381027,
+              4.568861513619915
+            ],
+            "location_world": [
+              -2277.5091450926275,
+              4.568861513619915,
+              -1762.3232540461897
+            ],
+            "normal_blender": [
+              -0.47021879404720357,
+              -0.07701362326139838,
+              0.8791832502709231
+            ],
+            "distance_m": 141.62274745825277
+          }
+        },
+        {
+          "pixel": [
+            1342,
+            856
+          ],
+          "hit": {
+            "object": "Mainland headland continuous bedrock and grass terraces",
+            "triangle": 5753,
+            "triangle_xyz": [
+              [
+                -91.72737121582031,
+                -80.27008819580078,
+                6.014854907989502
+              ],
+              [
+                -91.76345825195312,
+                -80.0,
+                6.063040256500244
+              ],
+              [
+                -94.0,
+                -80.0,
+                5.0
+              ]
+            ],
+            "location_blender": [
+              -93.27744616105286,
+              -80.06788520484817,
+              5.327011425313444
+            ],
+            "location_world": [
+              -2273.277446161053,
+              5.327011425313444,
+              -1749.9321147951518
+            ],
+            "normal_blender": [
+              -0.4193883157337265,
+              -0.21345283572375615,
+              0.882355556194619
+            ],
+            "distance_m": 130.0746781449273
+          }
+        },
+        {
+          "pixel": [
+            1465,
+            755
+          ],
+          "hit": {
+            "object": "Mainland headland continuous bedrock and grass terraces",
+            "triangle": 9740,
+            "triangle_xyz": [
+              [
+                -71.5,
+                -39.0,
+                9.376397132873535
+              ],
+              [
+                -68.0,
+                -31.333251953125,
+                7.666666507720947
+              ],
+              [
+                -75.0,
+                -37.0,
+                9.0
+              ]
+            ],
+            "location_blender": [
+              -74.15289553778533,
+              -36.55621224525723,
+              8.890865682967082
+            ],
+            "location_world": [
+              -2254.1528955377853,
+              8.890865682967082,
+              -1793.4437877547427
+            ],
+            "normal_blender": [
+              0.015418010695433146,
+              0.21092322735839925,
+              0.9773810296434612
+            ],
+            "distance_m": 171.01147507248373
+          }
+        }
+      ],
+      "design_action": "在保留屋基/共享院地/连接路的完整占用轮廓后，收窄水侧无功能灰台，把外缘做成前后错落的低岩脚和短陡肩；轮廓凹凸来自主壳真实退让，不继续堆等距独立岩块。",
+      "keep_visible": "暖窗与入口可读，地坪与海之间看得到实体岩脚；不得把新岩肩抬到遮住全排下半屋。"
+    },
+    {
+      "order": 2,
+      "subject": "两组屋之间的低湾与中景岬角",
+      "current_approx_pixel_region": [
+        1350,
+        620,
+        1672,
+        790
+      ],
+      "reference_approx_pixel_region": [
+        1360,
+        575,
+        1672,
+        810
+      ],
+      "reference_relation": "水线在两岬间向陆内弯，湾底有低作业岸和短工作面，岩肩向两侧升高；房屋和小路顺着内侧坡脚组织。",
+      "initial_existing_source_anchors": [
+        {
+          "pixel": [
+            1520,
+            628
+          ],
+          "hit": {
+            "object": "Mainland headland continuous bedrock and grass terraces",
+            "triangle": 8757,
+            "triangle_xyz": [
+              [
+                -49.0,
+                78.0,
+                11.018918991088867
+              ],
+              [
+                -40.0,
+                78.0,
+                14.779232025146484
+              ],
+              [
+                -45.666748046875,
+                85.333251953125,
+                11.0
+              ]
+            ],
+            "location_blender": [
+              -44.39653599570028,
+              83.66544403094491,
+              11.851750500200907
+            ],
+            "location_world": [
+              -2224.3965359957,
+              11.851750500200907,
+              -1913.6654440309449
+            ],
+            "normal_blender": [
+              -0.3795754995144344,
+              0.1748758068331514,
+              0.9084827419124823
+            ],
+            "distance_m": 290.7352879240917
+          }
+        }
+      ],
+      "design_action": "保留现有两组街巷连接的陆侧连续性，在朝海侧建立真正凹口与一处低湾地面，再让相邻岬角遮叠湾的一部分；不能全沿岸统一降高或把湾口封成凸石围栏。",
+      "keep_visible": "固定主机位保留可读水面负形、湾底低岸及两侧高差；点状源命中不能证明低湾全区未占路。"
+    },
+    {
+      "order": 3,
+      "subject": "屋后岩肩到后山的三层深度",
+      "current_approx_pixel_region": [
+        1330,
+        460,
+        1672,
+        640
+      ],
+      "reference_approx_pixel_region": [
+        1220,
+        380,
+        1672,
+        650
+      ],
+      "reference_relation": "中近岩肩在屋后向画面右上升高，后面有更远、更柔的山脊，最远暗峰与海天分开；松树以疏密不同的群落沿肩部点缀。",
+      "initial_existing_source_anchors": [
+        {
+          "pixel": [
+            1375,
+            585
+          ],
+          "hit": {
+            "object": "Mainland headland continuous bedrock and grass terraces",
+            "triangle": 6672,
+            "triangle_xyz": [
+              [
+                -71.5,
+                159.0,
+                7.227501392364502
+              ],
+              [
+                -67.0,
+                168.0,
+                10.099664688110352
+              ],
+              [
+                -76.0,
+                168.0,
+                9.580374717712402
+              ]
+            ],
+            "location_blender": [
+              -72.47313797160072,
+              167.9185778865542,
+              9.760235530608469
+            ],
+            "location_world": [
+              -2252.473137971601,
+              9.760235530608469,
+              -1997.9185778865542
+            ],
+            "normal_blender": [
+              -0.05532666809273861,
+              -0.2783453209062788,
+              0.9588862508803309
+            ],
+            "distance_m": 370.23244085503245
+          }
+        },
+        {
+          "pixel": [
+            1490,
+            596
+          ],
+          "hit": {
+            "object": "Mainland headland continuous bedrock and grass terraces",
+            "triangle": 6027,
+            "triangle_xyz": [
+              [
+                -35.5,
+                141.0,
+                23.7778263092041
+              ],
+              [
+                -44.5,
+                141.0,
+                11.221813201904297
+              ],
+              [
+                -40.0,
+                132.0,
+                8.51109504699707
+              ]
+            ],
+            "location_blender": [
+              -41.721008566655414,
+              138.91169004112066,
+              13.013125372531356
+            ],
+            "location_world": [
+              -2221.721008566655,
+              13.013125372531356,
+              -1968.9116900411207
+            ],
+            "normal_blender": [
+              -0.7025057465111478,
+              -0.5029168660151311,
+              0.5035477157095775
+            ],
+            "distance_m": 344.7964300139665
+          }
+        },
+        {
+          "pixel": [
+            1550,
+            568
+          ],
+          "hit": {
+            "object": "Mainland headland continuous bedrock and grass terraces",
+            "triangle": 4553,
+            "triangle_xyz": [
+              [
+                -26.5,
+                123.0,
+                26.39940643310547
+              ],
+              [
+                -31.0,
+                132.0,
+                29.150522232055664
+              ],
+              [
+                -35.5,
+                123.0,
+                20.003557205200195
+              ]
+            ],
+            "location_blender": [
+              -29.320892038096105,
+              125.36920264369144,
+              25.960793334196076
+            ],
+            "location_world": [
+              -2209.320892038096,
+              25.960793334196076,
+              -1955.3692026436916
+            ],
+            "normal_blender": [
+              -0.5099606424409341,
+              -0.474335207533435,
+              0.717597557169367
+            ],
+            "distance_m": 332.3298492150486
+          }
+        },
+        {
+          "pixel": [
+            1650,
+            554
+          ],
+          "hit": null
+        }
+      ],
+      "design_action": "先在当前主壳已有约10/13/26m命中区建立宽基座的错落岩肩与短鞍部，保留屋后通行/视线；远山需另查原大陆真实归属和衔接，不能从屋后拔出一道近处高墙充作所有远峰。",
+      "keep_visible": "低湾仍低，屋顶轮廓仍清楚，岩肩不成为等高锯齿或横贯全宽山墙。"
+    }
+  ],
+  "localization_limits": [
+    "命中仅针对26b岸体源，未包括屋顶、树、铺地、原World遮挡；仅是源面定位，非最终GPU可见性/施工净空证明。",
+    "1650,554未命中当前岸体不等于该处是海，也不等于可以直接填地；可能为其他World资产或不在此网格范围。",
+    "上述像素区为目视约数，暗部边界约有20–40px解释余地，范围不是精确参考原地图坐标。",
+    "建议邻域与空间关系为设计推断；列出的hit位置和三角来自已读取父代理定位结果，本审查未重复射线。"
+  ],
+  "work_boundary": "第一稿优先保留九屋与922铺地及其实际支承邻域，修改相邻非占用岩壳/岩肩。若保留全部外围平面阻止合理岬湾，则记录具体冲突后局部联动屋路，避免绕保护区留下高台柱、极窄残片或连续沟。边界/过渡需真实厚度，不做贴图或遮挡图板。",
+  "next_image_checks": [
+    "同一固定日夜主机位观察灰台是否变成岩脚与短草肩、湾底水面负形是否可读、屋后是否有近肩/远脊深度。",
+    "夜景看暖屋与暗岩分区，日景验证真实形体；不靠统一压暗掩盖大面。",
+    "必要邻近视角只检查真实三维支承/连通/尖片，不为不相关背面新增匹配相机。"
+  ],
+  "full_goal_complete": false,
+  "production_modified": false
+}

@@ -1,0 +1,113 @@
+{
+  "run": "lantern-lighting-28e-20260908T161327Z-30f38fcb128c469db1a26b76deef33dd",
+  "scope": "Independent review of actual five saved GPU views after ALBEDO repair; not full world acceptance",
+  "images": [
+    {
+      "view": "night-reference",
+      "image_sha256": "b376abe2f73f3c824ae7e5ce07b13f3954888d963a2a0bf758dcabe8a7775df5",
+      "sidecar_sha256": "5a073198b10fc6fa8b9d3db30208da532e54e3a53c7569eda13d805d51f578ca",
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -2278.0,
+          60.0,
+          -1632.0
+        ],
+        "rotation": [
+          -0.00509163970127702,
+          0.60683274269104,
+          0.0
+        ]
+      },
+      "beams": 4,
+      "world_sha256": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8"
+    },
+    {
+      "view": "night-beam-side",
+      "image_sha256": "f9dd4ac8c6c2503d5f6da046be29ff9e01d38d7860cf3889934626846c0b9064",
+      "sidecar_sha256": "6a8f43cd05d3cbc3a2fe9a6861098c538e465c3cde4c3197d2993b074fc53956",
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -1893.0,
+          174.662109375,
+          -1826.0
+        ],
+        "rotation": [
+          -0.348858118057251,
+          1.42478406429291,
+          0.0
+        ]
+      },
+      "beams": 4,
+      "world_sha256": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8"
+    },
+    {
+      "view": "night-lamp-close",
+      "image_sha256": "9ca641bc6b16d6a5a2db6dd029b80c6bf2f46a7270a68f486531b37e1273260f",
+      "sidecar_sha256": "d906163a62bf569525a549646b701f5c8f760f5a212e94a8037ffbd5d8f86075",
+      "camera": {
+        "fov": 45.0,
+        "position": [
+          -2344.0,
+          53.0621032714844,
+          -1643.0
+        ],
+        "rotation": [
+          -0.211809575557709,
+          0.605544626712799,
+          0.0
+        ]
+      },
+      "beams": 4,
+      "world_sha256": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8"
+    },
+    {
+      "view": "night-reverse",
+      "image_sha256": "125de0273eb5cfd8acf92a20648e2408e3e84f133db7143d2d89aaa05a4e28c4",
+      "sidecar_sha256": "c6673b7f3e872dc29505a4335c1b0ff25fc488b18b2c7f7924dbf7284c339a03",
+      "camera": {
+        "fov": 60.0,
+        "position": [
+          -2485.0,
+          80.0,
+          -1810.0
+        ],
+        "rotation": [
+          -0.305406630039215,
+          -2.44073820114136,
+          0.0
+        ]
+      },
+      "beams": 4,
+      "world_sha256": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8"
+    },
+    {
+      "view": "day-reference",
+      "image_sha256": "b18797540336bdef73fc9cc856be853bda867b8f9faebc8a2197edda71b9e9fa",
+      "sidecar_sha256": "b81f9f8834115f2f4b8ad9b33b62f5894238636423adc3b2847ad01fa859ca35",
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -2278.0,
+          60.0,
+          -1632.0
+        ],
+        "rotation": [
+          -0.00509163970127702,
+          0.60683274269104,
+          0.0
+        ]
+      },
+      "beams": 0,
+      "world_sha256": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8"
+    }
+  ],
+  "verdict": "Rendering fix verified; visual rework required",
+  "findings": [
+    "28e shader now uses nonzero ALBEDO with unshaded Compatibility; actual reference and side views show spatial beams.",
+    "Distance density currently makes broad far sections brighter than source sections. Cone geometry widening without matching illumination falloff explains the observed distant haze bands.",
+    "Near-source contrast, beam color and shape, full camera occlusion and light-space shadows need further visual evidence; raw ray counts do not accept them.",
+    "Whole reference1342 retains substantial cloud, water, coast rock silhouette and settlement-density gaps."
+  ]
+}

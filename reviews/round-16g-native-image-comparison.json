@@ -1,0 +1,37 @@
+{
+  "scope": "Unmodified raw GPU screenshot comparison. Not a reference-fidelity or complete visual acceptance test.",
+  "views": [
+    {
+      "view": "opening",
+      "candidate_sha256": "6edc5aa9ac325e3b1304ba2626126eab16461907e8b568500957bf6edcf83b66",
+      "native_sha256": "6edc5aa9ac325e3b1304ba2626126eab16461907e8b568500957bf6edcf83b66",
+      "changed_pixels": 0,
+      "mean_absolute_channel_difference": 0.0,
+      "max_channel_difference": 0,
+      "difference_bounds_xyxy": null
+    },
+    {
+      "view": "cliff-side",
+      "candidate_sha256": "8345ceb1e214aa13236745c18b681fe340efab195ecd786341712ad8c2c460c2",
+      "native_sha256": "8345ceb1e214aa13236745c18b681fe340efab195ecd786341712ad8c2c460c2",
+      "changed_pixels": 0,
+      "mean_absolute_channel_difference": 0.0,
+      "max_channel_difference": 0,
+      "difference_bounds_xyxy": null
+    },
+    {
+      "view": "cliff-back",
+      "candidate_sha256": "d769647b9fd229a76f5a3f623b33e08e1a943cccc10981b995d08e2e3fda2493",
+      "native_sha256": "37a966fbaf8589e44ff015be4ec2180fa151509a1beeab4cbc559fd6ba5ef398",
+      "changed_pixels": 1549,
+      "mean_absolute_channel_difference": 0.00601073377095526,
+      "max_channel_difference": 15,
+      "difference_bounds_xyxy": [
+        208,
+        93,
+        616,
+        227
+      ]
+    }
+  ]
+}

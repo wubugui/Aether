@@ -1,0 +1,281 @@
+{
+  "round": "27c",
+  "reviewer": "independent village_floor_review",
+  "verdict": "reject_cloud_candidate_retain_limited_water_improvement",
+  "scope": "Direct four GPU stills including t0/t18 and original ref1342; frozen identities/world layout/shader mechanism. No unchanged26b geometry re-audit, no production mutation.",
+  "gpu_status": "passed",
+  "gpu_stages": [
+    {
+      "name": "night-reference",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "name": "night-reverse",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "name": "day-reference",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "name": "night-reference-later",
+      "status": "passed",
+      "exit_code": 0
+    }
+  ],
+  "native_gate_passed": true,
+  "asset_identity": [
+    {
+      "name": "cloud_bank_0.blend",
+      "sha256": "ae366f34243689f297118b78529ce45318399acf69d25092a31288b28b020ba0",
+      "matches_frozen": true
+    },
+    {
+      "name": "cloud_bank_0.glb",
+      "sha256": "5840890cc78409f00637c8930952256e043d930e6d57a46534cf879a7284d659",
+      "matches_frozen": true
+    },
+    {
+      "name": "cloud_bank_1.blend",
+      "sha256": "f4b218d74c16666b3efd8db668fa56604d026fb1df8792ad1ffdc6074af08a13",
+      "matches_frozen": true
+    },
+    {
+      "name": "cloud_bank_1.glb",
+      "sha256": "7061a4a4d52a7ac5267898680489f45e4fc5475901f285accb22ad3a4736afa5",
+      "matches_frozen": true
+    },
+    {
+      "name": "cloud_bank_2.blend",
+      "sha256": "dd19446fa7532949caa90ae2746c2594055669329aa199de8fdfd502df4996f9",
+      "matches_frozen": true
+    },
+    {
+      "name": "cloud_bank_2.glb",
+      "sha256": "087bf42c90837fa2f30366e4d82499252f83d48ed255f3ee433ec847da1ee52f",
+      "matches_frozen": true
+    },
+    {
+      "name": "moon.blend",
+      "sha256": "786fed316ba6a981445e21bd2a270b8bc8f30b65fb4ae8706e64224e63df012d",
+      "matches_frozen": true,
+      "matches_21b_bytes": true
+    },
+    {
+      "name": "moon.glb",
+      "sha256": "d4f87e9dfe4dbec9f0a91cbad9356eb53b7d51c9b6970e069924cea10ce46cee",
+      "matches_frozen": true,
+      "matches_21b_bytes": true
+    }
+  ],
+  "same_world_hash": true,
+  "same_cloud_placements": true,
+  "layout_identity": {
+    "frozen_matches_source": true,
+    "design_count": 7,
+    "runtime_count": 7,
+    "source_scope": "Artist-designed world placement using fixed1342 camera for composition, not evidence of original-game exact geography. Runtime objects are fixed world volumes; reverse camera verifies independent position.",
+    "runtime_errors": [
+      {
+        "asset": "cloud_bank_2",
+        "asset_match": true,
+        "position_max_error_m": 0.0001329874603470671,
+        "scale_max_error": 9.536742950899679e-08
+      },
+      {
+        "asset": "cloud_bank_1",
+        "asset_match": true,
+        "position_max_error_m": 0.00011352985529811122,
+        "scale_max_error": 4.7683719639479705e-08
+      },
+      {
+        "asset": "cloud_bank_1",
+        "asset_match": true,
+        "position_max_error_m": 0.0001505823502157,
+        "scale_max_error": 9.536743039717521e-08
+      },
+      {
+        "asset": "cloud_bank_1",
+        "asset_match": true,
+        "position_max_error_m": 6.850813588243909e-05,
+        "scale_max_error": 9.536742950899679e-08
+      },
+      {
+        "asset": "cloud_bank_2",
+        "asset_match": true,
+        "position_max_error_m": 7.139110039133811e-05,
+        "scale_max_error": 4.7683719639479705e-08
+      },
+      {
+        "asset": "cloud_bank_1",
+        "asset_match": true,
+        "position_max_error_m": 9.34515674089198e-05,
+        "scale_max_error": 1.7166137933344316e-07
+      },
+      {
+        "asset": "cloud_bank_2",
+        "asset_match": true,
+        "position_max_error_m": 8.592026006226661e-05,
+        "scale_max_error": 1.90734859906172e-07
+      }
+    ]
+  },
+  "shader_identity": [
+    {
+      "name": "cloud_surface.gdshader",
+      "sha256": "fa9f0fb46a3319016e718c3d9679b70dbc3a24ac810eefc71c567036754a5e6f",
+      "matches_frozen": true
+    },
+    {
+      "name": "open_water.gdshader",
+      "sha256": "b14a4ba6c00b10dffa4544b817a45d70eff9a7f3d86851d5114c3bec249f5a7f",
+      "matches_frozen": true
+    }
+  ],
+  "images": {
+    "night-reference": {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\coast-environment-27c-20260908T151320Z-766da6d8e2214d7f9879e2c4b050ad09\\images\\night-reference.png",
+      "sha256": "b70364d2162b58835da34ece4bcf113c35904ebdeeb658a16f3cb521df8bbb4e",
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -2278.0,
+          60.0,
+          -1632.0
+        ],
+        "rotation": [
+          -0.00509163970127702,
+          0.60683274269104,
+          0.0
+        ]
+      },
+      "sampled_world_time": 0.0,
+      "observation": "相对27b，近景冰面大块明显减少，水光更细碎；但亮带仍由密集细横纹组成，近处偏白，片宽/节奏变化不足。云布局填充更接近参考的大致层次，但中央和右侧主云形成尖金字塔山峰及平硬薄底，比27b更明显读作悬浮山脊，打回云形。"
+    },
+    "night-reverse": {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\coast-environment-27c-20260908T151320Z-766da6d8e2214d7f9879e2c4b050ad09\\images\\night-reverse.png",
+      "sha256": "18b7c75ae3447595971eb4f708023dddd81cb2e8ef7fb8a7d8ab096d1eba5de6",
+      "camera": {
+        "fov": 60.0,
+        "position": [
+          -2485.0,
+          80.0,
+          -1810.0
+        ],
+        "rotation": [
+          -0.305406630039215,
+          -2.44073820114136,
+          0.0
+        ]
+      },
+      "sampled_world_time": 0.0,
+      "observation": "原岸岛的遮挡关系保持，月光亮带不再固定在屏幕。反向水面已有轻微波纹和天空反射，比27b空平面改善，但读感很弱。该机位主要看到原World圆团云，不足以直接验收新云的反面细节。"
+    },
+    "day-reference": {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\coast-environment-27c-20260908T151320Z-766da6d8e2214d7f9879e2c4b050ad09\\images\\day-reference.png",
+      "sha256": "47715f0ce81c1cbdf342417412289c42cf22a3fc944158b3652da67e4a107097",
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -2278.0,
+          60.0,
+          -1632.0
+        ],
+        "rotation": [
+          -0.00509163970127702,
+          0.60683274269104,
+          0.0
+        ]
+      },
+      "sampled_world_time": 0.0,
+      "observation": "白天海面已出现清楚的细波纹及远距天空反射，消除了27b几乎纯平蓝的显著问题。尖云在白天更像冰山/金字塔群，长薄底和统一斜面不合1342的丰富块状云体。"
+    },
+    "night-reference-later": {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\coast-environment-27c-20260908T151320Z-766da6d8e2214d7f9879e2c4b050ad09\\images\\night-reference-later.png",
+      "sha256": "1905fefac2bcd2d2a36dea253dc20443525a32859967a781f6c21c17945e5851",
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -2278.0,
+          60.0,
+          -1632.0
+        ],
+        "rotation": [
+          -0.00509163970127702,
+          0.60683274269104,
+          0.0
+        ]
+      },
+      "sampled_world_time": 18.0,
+      "observation": "同相机18秒图中近处亮片位置/分布明显变化，中央云轻微横移；岸岛/月球位置维持。实际输出不是静止水光，但两个时刻不足以证明中间动画平顺、无跳变或足够自然。"
+    }
+  },
+  "temporal_comparison": {
+    "same_camera": true,
+    "roi_pixel_statistics": [
+      {
+        "roi": "near_water",
+        "box_xyxy": [
+          1060,
+          755,
+          1190,
+          840
+        ],
+        "mean_absolute_rgb_change_8bit": 74.89713423831071,
+        "fraction_pixels_max_channel_change_gt_2": 0.9784615384615385
+      },
+      {
+        "roi": "static_tower_wall",
+        "box_xyxy": [
+          301,
+          620,
+          324,
+          710
+        ],
+        "mean_absolute_rgb_change_8bit": 0.0,
+        "fraction_pixels_max_channel_change_gt_2": 0.0
+      },
+      {
+        "roi": "central_cloud",
+        "box_xyxy": [
+          639,
+          158,
+          969,
+          288
+        ],
+        "mean_absolute_rgb_change_8bit": 1.935835275835276,
+        "fraction_pixels_max_channel_change_gt_2": 0.08592074592074592
+      },
+      {
+        "roi": "moon",
+        "box_xyxy": [
+          1090,
+          130,
+          1165,
+          202
+        ],
+        "mean_absolute_rgb_change_8bit": 0.0,
+        "fraction_pixels_max_channel_change_gt_2": 0.0
+      }
+    ],
+    "scope": "Statistics are pixel measurements only, not aesthetic or motion-smoothness scores."
+  },
+  "water_mechanism": "3.2x1.15m jittered Voronoi normal sampling,28percent continuous slope mixture, world-space wave field, view-dependent moon reflection and a sky-color gradient.72percent facet slope remains discontinuous at site boundaries. No displaced wave mesh, no reflection of actual cloud geometry.",
+  "limits": [
+    "Authored layout uses fixed reference-camera composition but runtime7clouds remain world objects; no camera-following placement in adapter.",
+    "Reverse camera confirms world layout/render relationships but predominantly shows oldWorld cloud forms; new cloud backside not fully inspected.",
+    "Cloud surface lighting/haze is not volumetric density scattering.",
+    "Two time samples demonstrate actual change only, not temporal smoothness or unrestricted flight acceptance.",
+    "Base ripple and foam retain sinusoidal terms; periodicity is not mathematically eliminated."
+  ],
+  "overall_accepted": false,
+  "production_modified_by_reviewer": false,
+  "remaining": [
+    "Sharp mountain-like cloud peaks and thin hard bases are a visual regression.",
+    "Water needs broader variation in glint scale/rhythm; thin dense bands persist.",
+    "Lighthouse beams and overall coast/reference fidelity remain unaccepted."
+  ]
+}

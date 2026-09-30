@@ -1,0 +1,46 @@
+{
+  "scope": "Original unmodified PNG crops and limited same-camera pixel comparison only. Region names are viewing areas, not exact projected volume boundaries. No inference of absent shader or engine failure.",
+  "comparison_baseline": "E:\\FeiTing\\captures\\validation_runs\\coast-moon-readiness-27h-20260908T153333Z-8b7579b40e2d437a8b1142c3bfdb7403\\images\\night-reference.png",
+  "rows": [
+    {
+      "name": "lamp",
+      "rectangle": [
+        275,
+        520,
+        375,
+        625
+      ],
+      "pixels": 10500,
+      "changed_pixels": 2082,
+      "max_channel_difference": 146,
+      "warm_pixels_r_gt_g_gt_b": 1044
+    },
+    {
+      "name": "near_beam_water",
+      "rectangle": [
+        360,
+        510,
+        940,
+        680
+      ],
+      "pixels": 98600,
+      "changed_pixels": 822,
+      "max_channel_difference": 9,
+      "warm_pixels_r_gt_g_gt_b": 0
+    },
+    {
+      "name": "middle_lamp_and_water",
+      "rectangle": [
+        950,
+        500,
+        1150,
+        680
+      ],
+      "pixels": 36000,
+      "changed_pixels": 1085,
+      "max_channel_difference": 136,
+      "warm_pixels_r_gt_g_gt_b": 112
+    }
+  ],
+  "png_sha256": "8f7518bb220262e8f505f7eda461540190802ac8c9e0a8ee885886dde232fe07"
+}

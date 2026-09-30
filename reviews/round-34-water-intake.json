@@ -1,0 +1,35 @@
+{
+  "scope": "Read-only34 water/light source intake while33 geometry reviews run. No34 shader/model/runtime edit yet; latest accepted-stage coast must be resolved from33 final records.",
+  "bindings": {
+    "captures\\validation_runs\\rightcoast-33d-20260908T232040Z-ea61879316ae487487e34e2f5d2c313b\\study-inputs\\new-environment27f\\open_water.gdshader": "cb2528a352d1c17c966e9a5a48b8c96d54e2a87b73776277ed8f7add3987cdfa",
+    "captures\\validation_runs\\rightcoast-33d-20260908T232040Z-ea61879316ae487487e34e2f5d2c313b\\study-inputs\\coast_environment_27f.gd": "7a1ac95033eb2bad868f4aa700d2e208dbb2be504a52ab603ff27990650c6143",
+    "captures\\validation_runs\\rightcoast-33d-20260908T232040Z-ea61879316ae487487e34e2f5d2c313b\\study-inputs\\lantern_lighting_28h.gd": "7a3a233e1dd4b9a41d597ad5a83c7e5bcd67d34b78950f122a6aca54d10a96a7",
+    "captures\\validation_runs\\rightcoast-33d-20260908T232040Z-ea61879316ae487487e34e2f5d2c313b\\study-inputs\\harbor_assembly_22g.gd": "af020d1bfaa3fd361d8f3f0cbe3a36b6966e87bcf3952ab09546d4d09fd15fe6",
+    "captures\\validation_runs\\rightcoast-33d-20260908T232040Z-ea61879316ae487487e34e2f5d2c313b\\study-inputs\\headland_runtime_23g.gd": "3aa1767564eacb90d59c0113e6b2c500b489e8aafd70fa370e06799dceb580ad"
+  },
+  "water_observed_current_code": {
+    "surface_geometry": "Existing sea geometry stays flat; sea_facet_normal changes material normals only.",
+    "facet_cell_m": [
+      3.2,
+      1.1
+    ],
+    "jitter_fraction": 0.32,
+    "reflection": "Actual world point/view direction/moon direction reflected about a world-space planar facet normal, then exponent220.",
+    "night_reflection_rgb": [
+      0.98,
+      1.28,
+      2.05
+    ],
+    "roughness": 0.38,
+    "day_emission_albedo_factor": 0.82,
+    "shore_depth": "OpenGLCompatibility depth reconstruction; actual underlying geometry drives foam/shallow color.",
+    "reflection_limits": "Sky reflection currently analytic color gradient, no actual cloud/island/house scene reflections. Moon highlight is a lobe, local lantern/house reflection not implemented in this shader."
+  },
+  "visual_priorities": [
+    "Current night main view has dense thin horizontal bright comb lines; reference has larger irregular bright facets, varied gaps, richer blue water and many warm harbor reflections.",
+    "Preserve actual world-space view/light-dependent reflection and real depth shoreline; no reference-image overlay or camera-facing water cards.",
+    "Evaluate broad facet/swell scale, rough reflection lobe and screen-footprint filtering from the actual main/low-water/moving observer views.",
+    "Keep source clouds, coast/island geometry and positions fixed during initial water iteration so visual cause is attributable."
+  ],
+  "next_action": "After33 stage checkpoint, build actual world sea material/surface revision and same-version main/near-water/shifted-view capture; later add warm local-light reflection with actual scene light inputs. All20references+opening goal remainsactive."
+}

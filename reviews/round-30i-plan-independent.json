@@ -1,0 +1,762 @@
+{
+  "round": "30i_plan",
+  "source_plan_sha256": "7e698857443e568e1076a91b29d2d50035f2856fad2b82243e67eef9c6c6d63b",
+  "scope": "Exact linear height clipping of24 planned bottom triangles against actual30d support triangles. Plan only, not finalBoolean/GPU acceptance.",
+  "components": [
+    {
+      "component": "South broad oblique saddle",
+      "nine_vertices_eight_upward_triangles": true,
+      "protection_linear_height_intersections": {
+        "actual_road": {
+          "support_footprint_overlap_m2": 0.8787426228470223,
+          "actual_predicted_support_cut_projection_m2": 0.0,
+          "max_predicted_cut_depth_m": 0.0,
+          "old_ground_minus_bottom_min_max_over_entire_overlap_m": [
+            -2.3280070498550636,
+            -1.3059126269432788
+          ],
+          "cut_patches": []
+        },
+        "expanded_pads": {
+          "support_footprint_overlap_m2": 1.4345999343563364e-05,
+          "actual_predicted_support_cut_projection_m2": 0.0,
+          "max_predicted_cut_depth_m": 0.0,
+          "old_ground_minus_bottom_min_max_over_entire_overlap_m": [
+            -2.107337210082701,
+            -2.102382511383695
+          ],
+          "cut_patches": []
+        },
+        "all_actual_CD_tree_axis_2m_disks": {
+          "support_footprint_overlap_m2": 0.0,
+          "actual_predicted_support_cut_projection_m2": 0.0,
+          "max_predicted_cut_depth_m": 0.0,
+          "old_ground_minus_bottom_min_max_over_entire_overlap_m": null,
+          "cut_patches": []
+        }
+      }
+    },
+    {
+      "component": "Southeast staggered apron",
+      "nine_vertices_eight_upward_triangles": true,
+      "protection_linear_height_intersections": {
+        "actual_road": {
+          "support_footprint_overlap_m2": 5.1099879277023845,
+          "actual_predicted_support_cut_projection_m2": 0.5328187160437902,
+          "max_predicted_cut_depth_m": 0.5226384019206787,
+          "old_ground_minus_bottom_min_max_over_entire_overlap_m": [
+            -2.505523550461225,
+            0.5226384019206787
+          ],
+          "cut_patches": [
+            {
+              "source30d_face": 343,
+              "cutter_bottom_face": 1,
+              "cut_projection_area_m2": 0.019948838670237508,
+              "cut_depth_min_max_m": [
+                0.24146937834382065,
+                0.5226384019206787
+              ],
+              "cut_projection": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      -0.3507145047187805,
+                      -11.640998840332031
+                    ],
+                    [
+                      -0.46800830505930063,
+                      -11.723941864584896
+                    ],
+                    [
+                      -0.5121429221154177,
+                      -11.414999545192076
+                    ],
+                    [
+                      -0.3507145047187805,
+                      -11.640998840332031
+                    ]
+                  ]
+                ]
+              }
+            },
+            {
+              "source30d_face": 365,
+              "cutter_bottom_face": 1,
+              "cut_projection_area_m2": 0.04994232008480741,
+              "cut_depth_min_max_m": [
+                0.1429149526886917,
+                0.4935350650832788
+              ],
+              "cut_projection": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      -0.5121429221154177,
+                      -11.414999545192076
+                    ],
+                    [
+                      -0.5275985895030039,
+                      -11.306809873478972
+                    ],
+                    [
+                      -0.16365087032318115,
+                      -11.508719444274902
+                    ],
+                    [
+                      -0.3507145047187805,
+                      -11.640998840332031
+                    ],
+                    [
+                      -0.5121429221154177,
+                      -11.414999545192076
+                    ]
+                  ]
+                ]
+              }
+            },
+            {
+              "source30d_face": 426,
+              "cutter_bottom_face": 1,
+              "cut_projection_area_m2": 0.12605354993973036,
+              "cut_depth_min_max_m": [
+                9.999999999621423e-05,
+                0.4467072520937254
+              ],
+              "cut_projection": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      -0.030969120189376618,
+                      -10.934117483848322
+                    ],
+                    [
+                      0.06659852055996901,
+                      -10.893238104002865
+                    ],
+                    [
+                      0.28142252564430237,
+                      -11.193991661071777
+                    ],
+                    [
+                      -0.16365087032318115,
+                      -11.508719444274902
+                    ],
+                    [
+                      -0.030969120189376618,
+                      -10.934117483848322
+                    ]
+                  ]
+                ]
+              }
+            },
+            {
+              "source30d_face": 366,
+              "cutter_bottom_face": 1,
+              "cut_projection_area_m2": 0.15810624843933968,
+              "cut_depth_min_max_m": [
+                0.000100000000079703,
+                0.44670725209372364
+              ],
+              "cut_projection": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      -0.4064368700863791,
+                      -11.0903121199436
+                    ],
+                    [
+                      -0.03096912018940199,
+                      -10.934117483848432
+                    ],
+                    [
+                      -0.16365087032318115,
+                      -11.508719444274902
+                    ],
+                    [
+                      -0.5275985895030039,
+                      -11.306809873478972
+                    ],
+                    [
+                      -0.5444444407051864,
+                      -11.188888915063695
+                    ],
+                    [
+                      -0.4064368700863791,
+                      -11.0903121199436
+                    ]
+                  ]
+                ]
+              }
+            },
+            {
+              "source30d_face": 427,
+              "cutter_bottom_face": 1,
+              "cut_projection_area_m2": 0.01812788658347618,
+              "cut_depth_min_max_m": [
+                0.00010000000001753051,
+                0.33634952108065264
+              ],
+              "cut_projection": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      0.0665985205599836,
+                      -10.893238104002885
+                    ],
+                    [
+                      0.0860541707797829,
+                      -10.886054129347412
+                    ],
+                    [
+                      0.342438668012619,
+                      -11.142437934875488
+                    ],
+                    [
+                      0.28142252564430237,
+                      -11.193991661071777
+                    ],
+                    [
+                      0.0665985205599836,
+                      -10.893238104002885
+                    ]
+                  ]
+                ]
+              }
+            },
+            {
+              "source30d_face": 367,
+              "cutter_bottom_face": 1,
+              "cut_projection_area_m2": 0.0028842045686042496,
+              "cut_depth_min_max_m": [
+                0.00010000000001575415,
+                0.03549592447283523
+              ],
+              "cut_projection": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      -0.5444444407051864,
+                      -11.188888915063695
+                    ],
+                    [
+                      -0.5498626707738458,
+                      -11.15096130458308
+                    ],
+                    [
+                      -0.40643687008612517,
+                      -11.09031211994342
+                    ],
+                    [
+                      -0.5444444407051864,
+                      -11.188888915063695
+                    ]
+                  ]
+                ]
+              }
+            },
+            {
+              "source30d_face": 379,
+              "cutter_bottom_face": 1,
+              "cut_projection_area_m2": 0.00013661673921205875,
+              "cut_depth_min_max_m": [
+                0.310672704662597,
+                0.33634952108065264
+              ],
+              "cut_projection": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      0.28142252564430237,
+                      -11.193991661071777
+                    ],
+                    [
+                      0.342438668012619,
+                      -11.142437934875488
+                    ],
+                    [
+                      0.31392794847488403,
+                      -11.171005249023438
+                    ],
+                    [
+                      0.28142252564430237,
+                      -11.193991661071777
+                    ]
+                  ]
+                ]
+              }
+            },
+            {
+              "source30d_face": 428,
+              "cutter_bottom_face": 1,
+              "cut_projection_area_m2": 0.04982524861094152,
+              "cut_depth_min_max_m": [
+                0.0001000000001578627,
+                0.3106727046625952
+              ],
+              "cut_projection": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      0.08605417077989898,
+                      -10.886054129347528
+                    ],
+                    [
+                      0.1556488551536112,
+                      -10.857399791591819
+                    ],
+                    [
+                      0.5001294016838074,
+                      -10.98443603515625
+                    ],
+                    [
+                      0.342438668012619,
+                      -11.142437934875488
+                    ],
+                    [
+                      0.08605417077989898,
+                      -10.886054129347528
+                    ]
+                  ]
+                ]
+              }
+            },
+            {
+              "source30d_face": 429,
+              "cutter_bottom_face": 1,
+              "cut_projection_area_m2": 0.04834558120904825,
+              "cut_depth_min_max_m": [
+                9.999999993048903e-05,
+                0.23080776816322945
+              ],
+              "cut_projection": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      0.5001294016838074,
+                      -10.98443603515625
+                    ],
+                    [
+                      0.15564885515326776,
+                      -10.857399791591693
+                    ],
+                    [
+                      0.5152702031196833,
+                      -10.70933274461173
+                    ],
+                    [
+                      0.5001294016838074,
+                      -10.98443603515625
+                    ]
+                  ]
+                ]
+              }
+            },
+            {
+              "source30d_face": 388,
+              "cutter_bottom_face": 1,
+              "cut_projection_area_m2": 0.05707431441248473,
+              "cut_depth_min_max_m": [
+                0.00010000000005838672,
+                0.23080776816322768
+              ],
+              "cut_projection": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      0.5152702031196748,
+                      -10.709332744611885
+                    ],
+                    [
+                      0.850448077291001,
+                      -10.5704477435083
+                    ],
+                    [
+                      0.8819052577018738,
+                      -10.60190486907959
+                    ],
+                    [
+                      0.5001294016838074,
+                      -10.98443603515625
+                    ],
+                    [
+                      0.5152702031196748,
+                      -10.709332744611885
+                    ]
+                  ]
+                ]
+              }
+            },
+            {
+              "source30d_face": 389,
+              "cutter_bottom_face": 1,
+              "cut_projection_area_m2": 0.0023739067859084775,
+              "cut_depth_min_max_m": [
+                0.00010000000008325571,
+                0.03828256754648329
+              ],
+              "cut_projection": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      0.8504480772910226,
+                      -10.570447743508321
+                    ],
+                    [
+                      0.9572956045666842,
+                      -10.52636567794441
+                    ],
+                    [
+                      0.8819052577018738,
+                      -10.60190486907959
+                    ],
+                    [
+                      0.8504480772910226,
+                      -10.570447743508321
+                    ]
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        "expanded_pads": {
+          "support_footprint_overlap_m2": 0.0,
+          "actual_predicted_support_cut_projection_m2": 0.0,
+          "max_predicted_cut_depth_m": 0.0,
+          "old_ground_minus_bottom_min_max_over_entire_overlap_m": null,
+          "cut_patches": []
+        },
+        "all_actual_CD_tree_axis_2m_disks": {
+          "support_footprint_overlap_m2": 2.923964069423195,
+          "actual_predicted_support_cut_projection_m2": 0.0,
+          "max_predicted_cut_depth_m": 0.0,
+          "old_ground_minus_bottom_min_max_over_entire_overlap_m": [
+            -8.302356756366791,
+            -6.519124306380404
+          ],
+          "cut_patches": []
+        }
+      }
+    },
+    {
+      "component": "East broad turning shoulder",
+      "nine_vertices_eight_upward_triangles": true,
+      "protection_linear_height_intersections": {
+        "actual_road": {
+          "support_footprint_overlap_m2": 0.0,
+          "actual_predicted_support_cut_projection_m2": 0.0,
+          "max_predicted_cut_depth_m": 0.0,
+          "old_ground_minus_bottom_min_max_over_entire_overlap_m": null,
+          "cut_patches": []
+        },
+        "expanded_pads": {
+          "support_footprint_overlap_m2": 0.0,
+          "actual_predicted_support_cut_projection_m2": 0.0,
+          "max_predicted_cut_depth_m": 0.0,
+          "old_ground_minus_bottom_min_max_over_entire_overlap_m": null,
+          "cut_patches": []
+        },
+        "all_actual_CD_tree_axis_2m_disks": {
+          "support_footprint_overlap_m2": 36.63616165195051,
+          "actual_predicted_support_cut_projection_m2": 0.0,
+          "max_predicted_cut_depth_m": 0.0,
+          "old_ground_minus_bottom_min_max_over_entire_overlap_m": [
+            -5.385685868747249,
+            -0.9625716785630498
+          ],
+          "cut_patches": []
+        }
+      }
+    }
+  ],
+  "tree_axes_and_disks": [
+    {
+      "local_C_blender_xy": [
+        -12.60009765625,
+        3.239990234380002
+      ],
+      "instance_scale": 0.72,
+      "old_axis_ground_z_m": 9.642292037071929,
+      "predicted_axis_ground_z_m": 9.642292037071929,
+      "axis_height_drop_m": 0.0,
+      "disk_cut_area_m2": 0.0,
+      "max_disk_cut_depth_m": 0.0,
+      "component_floor_at_axis": [
+        {
+          "component": "South broad oblique saddle",
+          "bottom_z_m": null
+        },
+        {
+          "component": "Southeast staggered apron",
+          "bottom_z_m": null
+        },
+        {
+          "component": "East broad turning shoulder",
+          "bottom_z_m": null
+        }
+      ],
+      "axis_requires_refit": false,
+      "old_2m_disk_no_longer_preserved": false
+    },
+    {
+      "local_C_blender_xy": [
+        -14.39990234375,
+        1.43994140625
+      ],
+      "instance_scale": 0.9,
+      "old_axis_ground_z_m": 9.323889487093604,
+      "predicted_axis_ground_z_m": 9.323889487093604,
+      "axis_height_drop_m": 0.0,
+      "disk_cut_area_m2": 0.0,
+      "max_disk_cut_depth_m": 0.0,
+      "component_floor_at_axis": [
+        {
+          "component": "South broad oblique saddle",
+          "bottom_z_m": null
+        },
+        {
+          "component": "Southeast staggered apron",
+          "bottom_z_m": null
+        },
+        {
+          "component": "East broad turning shoulder",
+          "bottom_z_m": null
+        }
+      ],
+      "axis_requires_refit": false,
+      "old_2m_disk_no_longer_preserved": false
+    },
+    {
+      "local_C_blender_xy": [
+        -12.239990234380002,
+        -0.7199707031199978
+      ],
+      "instance_scale": 0.55,
+      "old_axis_ground_z_m": 9.8197484929763,
+      "predicted_axis_ground_z_m": 9.8197484929763,
+      "axis_height_drop_m": 0.0,
+      "disk_cut_area_m2": 0.0,
+      "max_disk_cut_depth_m": 0.0,
+      "component_floor_at_axis": [
+        {
+          "component": "South broad oblique saddle",
+          "bottom_z_m": null
+        },
+        {
+          "component": "Southeast staggered apron",
+          "bottom_z_m": null
+        },
+        {
+          "component": "East broad turning shoulder",
+          "bottom_z_m": null
+        }
+      ],
+      "axis_requires_refit": false,
+      "old_2m_disk_no_longer_preserved": false
+    },
+    {
+      "local_C_blender_xy": [
+        8.280029296869998,
+        6.47998046875
+      ],
+      "instance_scale": 0.7,
+      "old_axis_ground_z_m": 8.110815607295534,
+      "predicted_axis_ground_z_m": 8.110815607295534,
+      "axis_height_drop_m": 0.0,
+      "disk_cut_area_m2": 0.0,
+      "max_disk_cut_depth_m": 0.0,
+      "component_floor_at_axis": [
+        {
+          "component": "South broad oblique saddle",
+          "bottom_z_m": null
+        },
+        {
+          "component": "Southeast staggered apron",
+          "bottom_z_m": null
+        },
+        {
+          "component": "East broad turning shoulder",
+          "bottom_z_m": 13.353822365790133
+        }
+      ],
+      "axis_requires_refit": false,
+      "old_2m_disk_no_longer_preserved": false
+    },
+    {
+      "local_C_blender_xy": [
+        10.800048828119998,
+        5.0400390625
+      ],
+      "instance_scale": 0.6,
+      "old_axis_ground_z_m": 7.354497305195162,
+      "predicted_axis_ground_z_m": 7.354497305195162,
+      "axis_height_drop_m": 0.0,
+      "disk_cut_area_m2": 0.0,
+      "max_disk_cut_depth_m": 0.0,
+      "component_floor_at_axis": [
+        {
+          "component": "South broad oblique saddle",
+          "bottom_z_m": null
+        },
+        {
+          "component": "Southeast staggered apron",
+          "bottom_z_m": null
+        },
+        {
+          "component": "East broad turning shoulder",
+          "bottom_z_m": 11.31571219308345
+        }
+      ],
+      "axis_requires_refit": false,
+      "old_2m_disk_no_longer_preserved": false
+    },
+    {
+      "local_C_blender_xy": [
+        14.0400390625,
+        -1.8000488281199978
+      ],
+      "instance_scale": 0.8,
+      "old_axis_ground_z_m": 6.932031735931003,
+      "predicted_axis_ground_z_m": 6.932031735931003,
+      "axis_height_drop_m": 0.0,
+      "disk_cut_area_m2": 0.0,
+      "max_disk_cut_depth_m": 0.0,
+      "component_floor_at_axis": [
+        {
+          "component": "South broad oblique saddle",
+          "bottom_z_m": null
+        },
+        {
+          "component": "Southeast staggered apron",
+          "bottom_z_m": null
+        },
+        {
+          "component": "East broad turning shoulder",
+          "bottom_z_m": 9.639960394965556
+        }
+      ],
+      "axis_requires_refit": false,
+      "old_2m_disk_no_longer_preserved": false
+    },
+    {
+      "local_C_blender_xy": [
+        15.1201171875,
+        -3.9599609375
+      ],
+      "instance_scale": 0.55,
+      "old_axis_ground_z_m": 6.402333493873438,
+      "predicted_axis_ground_z_m": 6.402333493873438,
+      "axis_height_drop_m": 0.0,
+      "disk_cut_area_m2": 0.0,
+      "max_disk_cut_depth_m": 0.0,
+      "component_floor_at_axis": [
+        {
+          "component": "South broad oblique saddle",
+          "bottom_z_m": null
+        },
+        {
+          "component": "Southeast staggered apron",
+          "bottom_z_m": null
+        },
+        {
+          "component": "East broad turning shoulder",
+          "bottom_z_m": 8.499891493055555
+        }
+      ],
+      "axis_requires_refit": false,
+      "old_2m_disk_no_longer_preserved": false
+    }
+  ],
+  "six_visible_target_predicted_depths": [
+    {
+      "pixel30d": [
+        620,
+        548
+      ],
+      "xy": [
+        -8.40268045512721,
+        -22.849759835229733
+      ],
+      "old_ground_z_m": 5.2282953933723775,
+      "predicted_cut_depth_m": 1.62911100791868
+    },
+    {
+      "pixel30d": [
+        700,
+        550
+      ],
+      "xy": [
+        -2.2022517020657375,
+        -17.609635469750906
+      ],
+      "old_ground_z_m": 5.168115246216708,
+      "predicted_cut_depth_m": 0.0
+    },
+    {
+      "pixel30d": [
+        770,
+        552
+      ],
+      "xy": [
+        4.532523203799933,
+        -14.299116844883912
+      ],
+      "old_ground_z_m": 5.8502160527939395,
+      "predicted_cut_depth_m": 0.0
+    },
+    {
+      "pixel30d": [
+        825,
+        570
+      ],
+      "xy": [
+        9.7694224328081,
+        -12.00553936418725
+      ],
+      "old_ground_z_m": 4.766233120714361,
+      "predicted_cut_depth_m": 0.0
+    },
+    {
+      "pixel30d": [
+        900,
+        548
+      ],
+      "xy": [
+        14.147895588078221,
+        -6.029880281978336
+      ],
+      "old_ground_z_m": 6.470663971243843,
+      "predicted_cut_depth_m": 0.0
+    },
+    {
+      "pixel30d": [
+        970,
+        548
+      ],
+      "xy": [
+        17.60043907418696,
+        0.8834506482421745
+      ],
+      "old_ground_z_m": 5.352697758792004,
+      "predicted_cut_depth_m": 0.0
+    }
+  ],
+  "road_pad_true_cut_free": false,
+  "limits": [
+    "Trees are allowed to refit/relocate; changed old2m disks are reported rather than automatic user-constraint failure.",
+    "C exact axes used for per-tree localization, union masks also include actualD roundoff positions.",
+    "FutureBoolean output can differ numerically; actual GLB support and depths must be checked before GPU."
+  ]
+}

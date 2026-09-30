@@ -1,0 +1,146 @@
+{
+  "round": "31f",
+  "run_id": "lantern-island-31f-20260908T204147Z-c8f8aed2cd5f43a7be28d18f0f9ba891",
+  "visual_verdict": "retain_actual_high_flank_and_mouth_reform_but_retopologize_central_longitudinal_strip_with_adjacent_faces",
+  "candidate_retained_for_iteration": true,
+  "visual_complete": false,
+  "full_reference_accepted": false,
+  "all_reference_goal_complete": false,
+  "reference": {
+    "path": "ref\\1342.png",
+    "sha256": "7acc98104013d9122eb551846b2d7fc1f7549bce8b2e3199eae8f5385a3ea238",
+    "directly_viewed": true
+  },
+  "comparison_images": [
+    {
+      "path": "captures\\validation_runs\\lantern-island-31e-20260908T203322Z-c8a7a40b1ae5442c8aeba5858633afbd\\images\\day-d-back.png",
+      "sha256": "f2c150f8044f1474c96cd4d2026b13363510f6ee60ab9a8a069e23397d7aa4d3",
+      "directly_viewed": true
+    }
+  ],
+  "images": [
+    {
+      "view": "night-reference",
+      "path": "captures\\validation_runs\\lantern-island-31f-20260908T204147Z-c8f8aed2cd5f43a7be28d18f0f9ba891\\images\\night-reference.png",
+      "sha256": "9ec7c252884daea930ee3028efc714a4b6737b8a4d86f8d29e60fccc371d0d3c",
+      "directly_viewed": true,
+      "judgment": "中央岛比例和右侧守塔屋维持，夜间全景仍读作一组较大的灰岩面。背面局部变化在此视角不足以判定；不能把灯光遮蔽下的轮廓当成近面造型完成。"
+    },
+    {
+      "view": "day-reference",
+      "path": "captures\\validation_runs\\lantern-island-31f-20260908T204147Z-c8f8aed2cd5f43a7be28d18f0f9ba891\\images\\day-reference.png",
+      "sha256": "286a2254d112797f4f89564ecfa47195c95fed37b12ad38b12b1099622fa0c69",
+      "directly_viewed": true,
+      "judgment": "原生建筑与岛体相对比例维持。中央岛前沿有不同大小的岩块，但主坡与短宽岩根的连续关系仍弱，不能仅凭全景紧凑感接受。"
+    },
+    {
+      "view": "day-d-front",
+      "path": "captures\\validation_runs\\lantern-island-31f-20260908T204147Z-c8f8aed2cd5f43a7be28d18f0f9ba891\\images\\day-d-front.png",
+      "sha256": "ee286b508f271596a17dc04fbe936616b4cadd05c8dcac41f0379fad77c13e36",
+      "directly_viewed": true,
+      "judgment": "与前稿相同的两前肩仍像附在大坡上的独立凸石；上部大片灰面、较直的暗接缝和下部板状台面保持。背部雕刻没有解决这一面。"
+    },
+    {
+      "view": "day-d-back",
+      "path": "captures\\validation_runs\\lantern-island-31f-20260908T204147Z-c8f8aed2cd5f43a7be28d18f0f9ba891\\images\\day-d-back.png",
+      "sha256": "8c42e894ff6cf092e23f2bb7c1ab8b9322d987247d40be17678e0d5128a521f8",
+      "directly_viewed": true,
+      "judgment": "直接对照31e：塔左下方原坡凹折更明显，中层亮面下端和海口确实偏转，直向海口有所减弱。这些是可以保留的主壳变化。但塔脚向下的中央亮窄条仍可一眼连续追踪，旁边暗缝贯入海口，左右两块大坡继续夹住它；尚未成为短宽交错的承重岩肩。"
+    },
+    {
+      "view": "day-c-front",
+      "path": "captures\\validation_runs\\lantern-island-31f-20260908T204147Z-c8f8aed2cd5f43a7be28d18f0f9ba891\\images\\day-c-front.png",
+      "sha256": "be50f933e309fc4c0017af644b7f75df43012ab5de42602f93a3437b6fb8b2a4",
+      "directly_viewed": true,
+      "judgment": "两前肩短而孤立，后缘仍缺少与上坡共同构成的大面，附近锐暗缝仍明显。没有出现31h密集折扇，但参考要求的短宽岩根组织依然未达成。"
+    }
+  ],
+  "retained_changes": [
+    "High original rear flank has a stronger visible concave break.",
+    "Middle lower end and seaward mouth visibly turn compared with31e."
+  ],
+  "remaining": [
+    "continuous central narrow bright strip",
+    "dark side seam extending into the seaward mouth",
+    "large flanking grey faces",
+    "front isolated convex stones"
+  ],
+  "next_actions": [
+    "保留31f原高坡和海口实际参与变形的方向；保留其真实支承，不因自定2m树盘外围变化退回旧稿。",
+    "下一稿应先改背面中央窄条及两侧夹壁的局部面组织：选择覆盖窄条、左右相邻原坡的一个连续面区，删除或重接在该区内贯穿上下的纵向边链，用少量跨过旧接缝的斜向宽面重新组织，而非继续对同一条带施加球形位移。新顶点和边界必须从实际GLB/原生源确认。",
+    "中层做一个偏向一侧的短宽斜肩，另一侧在不同高度形成短断面；让旧暗缝在中层宽面内终止，另一个断口向侧边错开。不能让两条平行接缝继续从塔脚直达水边，也不要形成整齐的一条水平环阶。",
+    "低根保留本版海口偏转，并把中央窄根与一侧原坡连接成钝宽的海侧端面；局部切口只能短距离延续，不能仍是从中层到底的狭长深口。这需要连同相邻旧面重接，不再新增填槽凸包。",
+    "保护真实道路、建筑基础与实际树干支承区域；边界外可在面内切分重接。2m树盘和旧水线不是用户永久硬约束。若后续必须改变实际树干支承，显式重新落地并核验，不能仅靠旧盘冻结锁死宽面。",
+    "前面两孤立凸石仍单独待改，应把肩后缘与主坡一起组织为宽接续，不用再加一批小石遮盖。"
+  ],
+  "geometry": {
+    "report": {
+      "path": "reviews\\round-31f-independent-geometry.json",
+      "sha256": "45a1b6f7b762809038d3069f2982dc1aa370c5a62a4186d9bb210ee6ac8caddc"
+    },
+    "passed": true,
+    "triangles": 2342,
+    "vertices": 1173,
+    "moved_vertices": 72,
+    "moved_triangles": 192,
+    "minimum_changed_normal_cosine": 0.5577746903882042,
+    "normal_reversals": 0,
+    "local_intersection_report": {
+      "path": "reviews\\round-31f-local-intersections.json",
+      "sha256": "fdd69f610fefb96cd772dcc59d3f41c8377f7397c9bc4c775545c74682271779"
+    },
+    "AABB_pairs_tested": 2071,
+    "illegal_intersections_found_at_stated_tolerance": 0
+  },
+  "tree_support": {
+    "report": {
+      "path": "reviews\\round-31f-actual-tree-support.json",
+      "sha256": "d05e4dd093c3995e90474176d0beccfac0be46c9d249474ad5910b337c1e5c78"
+    },
+    "old_tree_disk_surface_preserved": false,
+    "actual_tree_base_support": true,
+    "changed_old_disk_area_m2": 2.835297221203243,
+    "maximum_old_disk_lowering_m": 0.0404610397654,
+    "affected_instances": "C and D local approximately(8.28,6.48), scale0.7",
+    "actual_frozen_pine_bottom_circumradius_m": 0.43000000715,
+    "affected_real_base_area_each_m2": 0.235388308166846,
+    "all14_actual_base_regions_continuously_covered_and_unchanged": true,
+    "whole_flat_bottom_contact_claimed": false
+  },
+  "anchor_and_rock_contact": {
+    "report": {
+      "path": "reviews\\round-31f-anchor-rock-contact.json",
+      "sha256": "2d311ff493fd3911af6bea19c54532b00e0864da856aa7541f623ea1efb98053"
+    },
+    "anchor997_displacement_m": 2.278705865,
+    "anchor409_displacement_m": 1.791647148,
+    "anchor388_displacement_m": 2.307054609,
+    "sampled_rock_names": [
+      "North broken ridge",
+      "Northwest split buttress",
+      "North tidal end"
+    ],
+    "sampled_overlap_positive": true,
+    "whole_contact_or_visible_integration_proven": false
+  },
+  "root_runtime_report_read": {
+    "report": {
+      "path": "reviews\\round-31f-runtime-incremental.json",
+      "sha256": "9c01cddf5088cc6229fe01da87c186d8f9677221fae19cfdac3a04b1dfbee77e"
+    },
+    "passed": true,
+    "bindings": 200,
+    "positions_per_view": 59,
+    "maximum_position_delta_m": 0.00013732910155983546,
+    "maximum_footing_delta_m": 3.0517578125e-05
+  },
+  "limits": [
+    "No Blender/GPU/support/intersection rerun during this visual review.",
+    "Local finite-triangle sweep excludes unchanged/unchanged baseline pairs and uses0.1mm legal-shared-feature tolerance.",
+    "Historical operands are provenance, not the final31f hull/exterior.",
+    "Native tree-base continuous support does not mean a flat tree bottom touches sloped ground everywhere.",
+    "Positive sampled rock-section overlap may include buried rock and does not establish complete contact or visible artistic integration.",
+    "Reference1342 supplies style/form comparison, not an unseen rear-side reconstruction or exact3D measurement.",
+    "No full walking, whole-world or20reference completion claim."
+  ]
+}

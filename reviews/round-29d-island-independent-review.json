@@ -1,0 +1,53 @@
+{
+  "round": "29d",
+  "run_id": "lantern-island-29d-20260908T172214Z-8332ad44c9854fcca4d10e061507dda4",
+  "observed_manifest_status": "passed",
+  "visual_verdict": "rework_required",
+  "full_reference_accepted": false,
+  "all_reference_goal_complete": false,
+  "images": [
+    {
+      "view": "night-reference",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-29d-20260908T172214Z-8332ad44c9854fcca4d10e061507dda4\\images\\night-reference.png",
+      "sha256": "c5b3e126bb8a028badb979cbebbc30e24c27c322cf845d72158bcce6a1c2c142"
+    },
+    {
+      "view": "day-reference",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-29d-20260908T172214Z-8332ad44c9854fcca4d10e061507dda4\\images\\day-reference.png",
+      "sha256": "980f9be763fa3ec5c4518a480645b4d9b9abe3da99249b4ac53e9dbf5fbb8816"
+    },
+    {
+      "view": "day-d-front",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-29d-20260908T172214Z-8332ad44c9854fcca4d10e061507dda4\\images\\day-d-front.png",
+      "sha256": "b19083cd6e5c50032e004d4443044fa1844ceb8922dfc0a90ccef69dae684133"
+    },
+    {
+      "view": "day-d-back",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-29d-20260908T172214Z-8332ad44c9854fcca4d10e061507dda4\\images\\day-d-back.png",
+      "sha256": "4279a21ce5e2fc5c3279de69433a92aff5f130b63a619754dd26d1cee9721760"
+    },
+    {
+      "view": "day-c-front",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-29d-20260908T172214Z-8332ad44c9854fcca4d10e061507dda4\\images\\day-c-front.png",
+      "sha256": "774986d018c763617d9951ccc7baad4e340c66374620581717343d9ea73a1252"
+    }
+  ],
+  "geometry_evidence": "reviews/round-29d-independent-geometry.json",
+  "fixed_vertex_evidence": "reviews/round-29d-independent-fixed-vertices.json",
+  "detailed_review": "reviews/round-29d-island-independent-review.md",
+  "local_improvements": [
+    "29c overlay wedges removed",
+    "Connected terrain and core genuinely reshaped"
+  ],
+  "remaining_failures": [
+    "Broad upper shield wall still dominates",
+    "Smooth lower skirt rather than offset fractured blocks",
+    "Continuous waterline bands"
+  ],
+  "projection_fold_scope": "Three projected quad crossings; edge heights differ, not proof of3D self-intersections. Current views do not individually resolve them."
+}

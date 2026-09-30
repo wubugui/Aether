@@ -1,0 +1,152 @@
+{
+  "run": "lantern-lighting-28f-20260908T162319Z-487bb5915c3e40169b6ec7339610e55e",
+  "verdict": "Retain local numerical and density-profile improvement; reference visual acceptance rejected",
+  "scope": "Independent direct review of five original28f GPU images against28e and original1342; no rendering launched or implementation modified",
+  "images": [
+    {
+      "view": "night-reference",
+      "image_sha256": "320f8bc32817ef8681cc8dd4034aa9e264fd52c2b1f4f97b9d1f46f59c62d59d",
+      "sidecar_sha256": "13e6248db8f95f722142fba327aebcbdddbe621cf61ae7da0767980b1bdd7c84",
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -2278.0,
+          60.0,
+          -1632.0
+        ],
+        "rotation": [
+          -0.00509163970127702,
+          0.60683274269104,
+          0.0
+        ]
+      },
+      "actual_beams": 4,
+      "world_sha256": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+      "prior28e_difference": {
+        "changed_pixels": 182215,
+        "max_abs_channel_difference": 140,
+        "identical_png_bytes": false
+      }
+    },
+    {
+      "view": "night-beam-side",
+      "image_sha256": "393d9c616accc9733bdd1af1d05a7d4d6aea2c75492d01f3e2d9cda7f6e05d26",
+      "sidecar_sha256": "16603d884f1118c1e2b850828a4b4a5cbca29ccf1c2acb05cbab8b0bc4c05040",
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -1893.0,
+          174.662109375,
+          -1826.0
+        ],
+        "rotation": [
+          -0.348858118057251,
+          1.42478406429291,
+          0.0
+        ]
+      },
+      "actual_beams": 4,
+      "world_sha256": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+      "prior28e_difference": {
+        "changed_pixels": 133978,
+        "max_abs_channel_difference": 96,
+        "identical_png_bytes": false
+      }
+    },
+    {
+      "view": "night-lamp-close",
+      "image_sha256": "11fb2e61400b6b460f380776db9e20593ef0d6990750c45d030b4035fa2b838e",
+      "sidecar_sha256": "135dc32afa09b49b0d531f0e857082d30aca30c528d7f43a62f36dabeaccf66a",
+      "camera": {
+        "fov": 45.0,
+        "position": [
+          -2344.0,
+          53.0621032714844,
+          -1643.0
+        ],
+        "rotation": [
+          -0.211809575557709,
+          0.605544626712799,
+          0.0
+        ]
+      },
+      "actual_beams": 4,
+      "world_sha256": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+      "prior28e_difference": {
+        "changed_pixels": 263586,
+        "max_abs_channel_difference": 133,
+        "identical_png_bytes": false
+      }
+    },
+    {
+      "view": "night-reverse",
+      "image_sha256": "12b5719ab60ca1b41680251631ab93e5d723ceea46917a5e1bbef8c811106d77",
+      "sidecar_sha256": "f6014da859498a17b00962ac8de32183ef1f340be8973f3cc97bc077324cd72b",
+      "camera": {
+        "fov": 60.0,
+        "position": [
+          -2485.0,
+          80.0,
+          -1810.0
+        ],
+        "rotation": [
+          -0.305406630039215,
+          -2.44073820114136,
+          0.0
+        ]
+      },
+      "actual_beams": 4,
+      "world_sha256": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+      "prior28e_difference": {
+        "changed_pixels": 70188,
+        "max_abs_channel_difference": 44,
+        "identical_png_bytes": false
+      }
+    },
+    {
+      "view": "day-reference",
+      "image_sha256": "78e12e75c029f1529975cbe044fefac76dc487ddffa29966588754758bd8d2ef",
+      "sidecar_sha256": "c8c4017a1bf0ae9e0173e18d8d8b39e6ea34f2f019a237744aca12cff73babe2",
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -2278.0,
+          60.0,
+          -1632.0
+        ],
+        "rotation": [
+          -0.00509163970127702,
+          0.60683274269104,
+          0.0
+        ]
+      },
+      "actual_beams": 0,
+      "world_sha256": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+      "prior28e_difference": {
+        "changed_pixels": 5,
+        "max_abs_channel_difference": 1,
+        "identical_png_bytes": false
+      }
+    }
+  ],
+  "verified_local_improvements": [
+    "ALBEDO output repair remains effective.",
+    "Broad far-end orange pools from28e are much reduced in actual reference, side and close views.",
+    "Beams remain associated with world-space lighthouse directions and continuous near-source wedges are more legible than28e in side/reference views.",
+    "Night warm core/halo remains; day has zero beam instances and no added volume field."
+  ],
+  "rejected_or_unproven": [
+    "Reference1342 beam is stronger and grows from a much brighter warm lamp;28f remains too faint against the dark water.",
+    "Native receiver lighting self-shadow hypothesis is unproven until controlled28g comparison.",
+    "No full dynamic weather/rotation/flight or complete camera/light-space occlusion acceptance.",
+    "Cloud, water, rock/island shapes and village density remain materially unlike1342; full world goal remains active."
+  ],
+  "core_shadow_hypothesis": {
+    "source_center_y_m": 19.6,
+    "source_radius_m": 0.3,
+    "source_height_m": 1.38,
+    "native_light_origin_inside_authored_core": true,
+    "native_receiver_effect": "Plausible; not proven by enclosure alone",
+    "direct_volume_effect": "Core cast_shadow flag does not directly drive unshaded beam shader or its separate CPU collision map; own tower is excluded from that map"
+  }
+}

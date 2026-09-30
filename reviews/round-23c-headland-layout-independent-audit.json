@@ -1,0 +1,324 @@
+{
+  "scope": "23c changed pad containment and neighbor/shore planar distances only; no engine/no 3D terrain or walking acceptance.",
+  "layout_sha256": "1f8c1766af8247e45809fdcfc7397a79d1a3cfae0b9313745b1bd626964c33bf",
+  "outline_unchanged": true,
+  "changes": [
+    {
+      "name": "fore_upper",
+      "before": {
+        "name": "fore_upper",
+        "position": [
+          -2229,
+          16.0,
+          -1761
+        ],
+        "yaw": -1.45,
+        "asset": "keeper_house",
+        "pad_half_size": [
+          4.4,
+          7.5
+        ]
+      },
+      "after": {
+        "name": "fore_upper",
+        "position": [
+          -2229,
+          14.5,
+          -1761
+        ],
+        "yaw": -1.45,
+        "asset": "keeper_house",
+        "pad_half_size": [
+          4.4,
+          7.5
+        ]
+      }
+    },
+    {
+      "name": "bay_upper",
+      "before": {
+        "name": "bay_upper",
+        "position": [
+          -2217,
+          12.0,
+          -1875
+        ],
+        "yaw": -1.1,
+        "asset": "keeper_house",
+        "pad_half_size": [
+          4.4,
+          7.5
+        ]
+      },
+      "after": {
+        "name": "bay_upper",
+        "position": [
+          -2217,
+          10.5,
+          -1875
+        ],
+        "yaw": -1.1,
+        "asset": "keeper_house",
+        "pad_half_size": [
+          4.4,
+          7.5
+        ]
+      }
+    },
+    {
+      "name": "bay_workshop",
+      "before": {
+        "name": "bay_workshop",
+        "position": [
+          -2222,
+          10.0,
+          -1856
+        ],
+        "yaw": -1.4,
+        "asset": "quay_workshop",
+        "pad_half_size": [
+          4.8,
+          5.5
+        ]
+      },
+      "after": {
+        "name": "bay_workshop",
+        "position": [
+          -2213,
+          8.5,
+          -1856
+        ],
+        "yaw": -1.4,
+        "asset": "quay_workshop",
+        "pad_half_size": [
+          4.8,
+          5.5
+        ]
+      }
+    }
+  ],
+  "changed_pad_checks": [
+    {
+      "name": "bay_workshop",
+      "outside_area_m2": 0.0,
+      "distance_to_outline_m": 3.408409637922533,
+      "pad_point_xz": [
+        -2217.6041312290154,
+        -1850.335022010104
+      ],
+      "shore_point_xz": [
+        -2218.750503446128,
+        -1847.1251798021885
+      ],
+      "shore_design_y": 3.0,
+      "pad_minus_shore_design_y": 5.5,
+      "shortest_to_shore_direct_slope_deg": 58.21305597546688,
+      "pairs": [
+        {
+          "other": "bay_upper",
+          "distance_m": 8.254117424665758,
+          "overlap_m2": 0.0,
+          "design_height_difference_m": 2.0,
+          "shortest_gap_direct_slope_deg": 13.620450543398269
+        },
+        {
+          "other": "bay_fisher",
+          "distance_m": 17.58238313411461,
+          "overlap_m2": 0.0,
+          "design_height_difference_m": 2.0,
+          "shortest_gap_direct_slope_deg": 6.489514096421018
+        },
+        {
+          "other": "bay_keeper",
+          "distance_m": 20.252800351881675,
+          "overlap_m2": 0.0,
+          "design_height_difference_m": 0.0,
+          "shortest_gap_direct_slope_deg": 0.0
+        },
+        {
+          "other": "fore_keeper",
+          "distance_m": 80.34519639220107,
+          "overlap_m2": 0.0,
+          "design_height_difference_m": 4.0,
+          "shortest_gap_direct_slope_deg": 2.8501274634645353
+        },
+        {
+          "other": "fore_upper",
+          "distance_m": 84.18264516454762,
+          "overlap_m2": 0.0,
+          "design_height_difference_m": 6.0,
+          "shortest_gap_direct_slope_deg": 4.07678242526781
+        },
+        {
+          "other": "fore_fisher",
+          "distance_m": 98.77620558194128,
+          "overlap_m2": 0.0,
+          "design_height_difference_m": 0.5,
+          "shortest_gap_direct_slope_deg": 0.2900257699400581
+        },
+        {
+          "other": "fore_workshop",
+          "distance_m": 100.29407160491284,
+          "overlap_m2": 0.0,
+          "design_height_difference_m": 2.3000000000000007,
+          "shortest_gap_direct_slope_deg": 1.3137087453714225
+        },
+        {
+          "other": "fore_back_cottage",
+          "distance_m": 105.73657903456079,
+          "overlap_m2": 0.0,
+          "design_height_difference_m": 7.0,
+          "shortest_gap_direct_slope_deg": 3.787582946544343
+        }
+      ]
+    },
+    {
+      "name": "fore_upper",
+      "outside_area_m2": 0.0,
+      "distance_to_outline_m": 32.395332668676915,
+      "pad_point_xz": [
+        -2236.9755596179984,
+        -1764.46416639031
+      ],
+      "shore_point_xz": [
+        -2261.266806390118,
+        -1785.897619424533
+      ],
+      "shore_design_y": 7.746638721976431,
+      "pad_minus_shore_design_y": 6.753361278023569,
+      "shortest_to_shore_direct_slope_deg": 11.775634566262926,
+      "pairs": [
+        {
+          "other": "fore_keeper",
+          "distance_m": 3.249966292637203,
+          "overlap_m2": 0.0,
+          "design_height_difference_m": 2.0,
+          "shortest_gap_direct_slope_deg": 31.60776748973805
+        },
+        {
+          "other": "fore_workshop",
+          "distance_m": 5.42778647850367,
+          "overlap_m2": 0.0,
+          "design_height_difference_m": 3.6999999999999993,
+          "shortest_gap_direct_slope_deg": 34.28137471769357
+        },
+        {
+          "other": "fore_back_cottage",
+          "distance_m": 12.450143936951351,
+          "overlap_m2": 0.0,
+          "design_height_difference_m": 1.0,
+          "shortest_gap_direct_slope_deg": 4.5921591471189
+        },
+        {
+          "other": "fore_fisher",
+          "distance_m": 18.31672402863287,
+          "overlap_m2": 0.0,
+          "design_height_difference_m": 5.5,
+          "shortest_gap_direct_slope_deg": 16.713542669313256
+        },
+        {
+          "other": "bay_workshop",
+          "distance_m": 84.18264516454762,
+          "overlap_m2": 0.0,
+          "design_height_difference_m": 6.0,
+          "shortest_gap_direct_slope_deg": 4.07678242526781
+        },
+        {
+          "other": "bay_upper",
+          "distance_m": 101.4057844594096,
+          "overlap_m2": 0.0,
+          "design_height_difference_m": 4.0,
+          "shortest_gap_direct_slope_deg": 2.258888529875827
+        },
+        {
+          "other": "bay_fisher",
+          "distance_m": 102.30414669740455,
+          "overlap_m2": 0.0,
+          "design_height_difference_m": 8.0,
+          "shortest_gap_direct_slope_deg": 4.471327576407884
+        },
+        {
+          "other": "bay_keeper",
+          "distance_m": 113.40344406867476,
+          "overlap_m2": 0.0,
+          "design_height_difference_m": 6.0,
+          "shortest_gap_direct_slope_deg": 3.028606767846181
+        }
+      ]
+    },
+    {
+      "name": "bay_upper",
+      "outside_area_m2": 0.0,
+      "distance_to_outline_m": 18.366178522404404,
+      "pad_point_xz": [
+        -2221.6882322661886,
+        -1867.676716705038
+      ],
+      "shore_point_xz": [
+        -2227.865446577039,
+        -1850.3805166346567
+      ],
+      "shore_design_y": 3.0,
+      "pad_minus_shore_design_y": 7.5,
+      "shortest_to_shore_direct_slope_deg": 22.21310636046402,
+      "pairs": [
+        {
+          "other": "bay_keeper",
+          "distance_m": 2.5425279230815536,
+          "overlap_m2": 0.0,
+          "design_height_difference_m": 2.0,
+          "shortest_gap_direct_slope_deg": 38.18925196284716
+        },
+        {
+          "other": "bay_workshop",
+          "distance_m": 8.254117424665758,
+          "overlap_m2": 0.0,
+          "design_height_difference_m": 2.0,
+          "shortest_gap_direct_slope_deg": 13.620450543398269
+        },
+        {
+          "other": "bay_fisher",
+          "distance_m": 9.965349513572013,
+          "overlap_m2": 0.0,
+          "design_height_difference_m": 4.0,
+          "shortest_gap_direct_slope_deg": 21.870074101376698
+        },
+        {
+          "other": "fore_keeper",
+          "distance_m": 95.84859754529272,
+          "overlap_m2": 0.0,
+          "design_height_difference_m": 2.0,
+          "shortest_gap_direct_slope_deg": 1.1953741134173168
+        },
+        {
+          "other": "fore_upper",
+          "distance_m": 101.4057844594096,
+          "overlap_m2": 0.0,
+          "design_height_difference_m": 4.0,
+          "shortest_gap_direct_slope_deg": 2.258888529875827
+        },
+        {
+          "other": "fore_fisher",
+          "distance_m": 113.51077355360965,
+          "overlap_m2": 0.0,
+          "design_height_difference_m": 1.5,
+          "shortest_gap_direct_slope_deg": 0.7570970088854063
+        },
+        {
+          "other": "fore_workshop",
+          "distance_m": 116.52328396451784,
+          "overlap_m2": 0.0,
+          "design_height_difference_m": 0.3000000000000007,
+          "shortest_gap_direct_slope_deg": 0.14751297157608
+        },
+        {
+          "other": "fore_back_cottage",
+          "distance_m": 122.94322368116387,
+          "overlap_m2": 0.0,
+          "design_height_difference_m": 5.0,
+          "shortest_gap_direct_slope_deg": 2.328888912207081
+        }
+      ]
+    }
+  ]
+}

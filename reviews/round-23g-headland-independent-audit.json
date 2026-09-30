@@ -1,0 +1,1009 @@
+{
+  "scope": "Actual GLB increment and full planar pad clipping, reuse unchanged 23e rock/house evidence; no engine rerun",
+  "run": "E:\\FeiTing\\captures\\validation_runs\\headland-assembly-23g-20260908T121755Z-4ca247af11bb4af2a7bba06fe2383718",
+  "manifest_passed": true,
+  "completed_utc": "2026-09-08T12:19:39.738182+00:00",
+  "stage_count": 5,
+  "bindings": 126,
+  "binding_failures": [],
+  "assets": [
+    {
+      "name": "mainland_headland",
+      "source_sha": "99a195945cd6a0e203a89ed89ce45bc17050a2d98d5dfd3435762f19833d6633",
+      "glb_sha": "cd423ca005c39720455921af8d5990839ed05831f153d1524a5095fe8a227b82",
+      "source_gate_match": true,
+      "glb_gate_match": true
+    },
+    {
+      "name": "fisher_cottage",
+      "source_sha": "6390a3266013073345732386567154d4810e60195dee20a34afa1d6ac4d6096b",
+      "glb_sha": "280ebd357262e6dbc216270c81b2045ff14a60b759067b5d0675b436d15a0ee8",
+      "source_gate_match": true,
+      "glb_gate_match": true
+    },
+    {
+      "name": "quay_workshop",
+      "source_sha": "0bab9cd3af24c8068ff367485e61c739bfc4dd7b1c0485ed7f5d5e9344c0528c",
+      "glb_sha": "e4c33b94c6151ffd15b314d01a5aa4f70293095da477d26c796a35d71590996c",
+      "source_gate_match": true,
+      "glb_gate_match": true
+    }
+  ],
+  "views": [
+    {
+      "name": "night-reference",
+      "sha": "4fce26cefe648f8d3c21d8c2a935d98605dda81fb60d227fc20a90f8de90f713",
+      "same_run": true,
+      "production_modified": false,
+      "footing_count": 81,
+      "gap_range": [
+        -0.649938583374023,
+        -0.649359226226807
+      ]
+    },
+    {
+      "name": "day-front",
+      "sha": "3904623ed83007e0bcfd37e0c5015aebecd82c396a0ff04b27ad9fbd45ab603a",
+      "same_run": true,
+      "production_modified": false,
+      "footing_count": 81,
+      "gap_range": [
+        -0.649938583374023,
+        -0.649359226226807
+      ]
+    },
+    {
+      "name": "day-bay",
+      "sha": "f087835d8090f58d99f92de95e55504887aa072ca49c8d19ecf9c8dc1e7b3649",
+      "same_run": true,
+      "production_modified": false,
+      "footing_count": 81,
+      "gap_range": [
+        -0.649938583374023,
+        -0.649359226226807
+      ]
+    },
+    {
+      "name": "day-back",
+      "sha": "005828dce342872f1cad5b121e062fbf60289a6c6ae8e8d5a4dc7ed1fa1b29d0",
+      "same_run": true,
+      "production_modified": false,
+      "footing_count": 81,
+      "gap_range": [
+        -0.649938583374023,
+        -0.649359226226807
+      ]
+    },
+    {
+      "name": "day-seam",
+      "sha": "e70c440e9027d3e25a556e7b763e94de31e64b7d255884e9b81ec7ca959dcf96",
+      "same_run": true,
+      "production_modified": false,
+      "footing_count": 81,
+      "gap_range": [
+        -0.649938583374023,
+        -0.649359226226807
+      ]
+    }
+  ],
+  "actual_top_control_error_m": 1.8742103833346846e-06,
+  "top_connectivity_matches": true,
+  "shore": [
+    {
+      "index": 0,
+      "xz": [
+        -2070.0,
+        -1648.0
+      ],
+      "actual_y": -0.20000000298023224,
+      "seam_distance": 0.0,
+      "expected_nontransition_y": 8.0,
+      "enforced": false,
+      "error_if_enforced": null
+    },
+    {
+      "index": 1,
+      "xz": [
+        -2080.0,
+        -1650.4000244140625
+      ],
+      "actual_y": 3.3413150310516357,
+      "seam_distance": 10.2839738033552,
+      "expected_nontransition_y": 8.8,
+      "enforced": false,
+      "error_if_enforced": null
+    },
+    {
+      "index": 2,
+      "xz": [
+        -2090.0,
+        -1652.800048828125
+      ],
+      "actual_y": 9.056097984313965,
+      "seam_distance": 20.5679476067104,
+      "expected_nontransition_y": 9.600000000000001,
+      "enforced": false,
+      "error_if_enforced": null
+    },
+    {
+      "index": 3,
+      "xz": [
+        -2100.0,
+        -1655.199951171875
+      ],
+      "actual_y": 10.399999618530273,
+      "seam_distance": 30.851892922110697,
+      "expected_nontransition_y": 10.399999999999999,
+      "enforced": true,
+      "error_if_enforced": 3.8146972514141453e-07
+    },
+    {
+      "index": 4,
+      "xz": [
+        -2110.0,
+        -1657.5999755859375
+      ],
+      "actual_y": 11.199999809265137,
+      "seam_distance": 41.13586672540881,
+      "expected_nontransition_y": 11.200000000000001,
+      "enforced": true,
+      "error_if_enforced": 1.907348643470641e-07
+    },
+    {
+      "index": 5,
+      "xz": [
+        -2120.0,
+        -1660.0
+      ],
+      "actual_y": 12.0,
+      "seam_distance": 51.419840528729765,
+      "expected_nontransition_y": 12.0,
+      "enforced": true,
+      "error_if_enforced": 0.0
+    },
+    {
+      "index": 6,
+      "xz": [
+        -2130.0,
+        -1663.333251953125
+      ],
+      "actual_y": 13.0,
+      "seam_distance": 61.928253773685654,
+      "expected_nontransition_y": 13.0,
+      "enforced": true,
+      "error_if_enforced": 0.0
+    },
+    {
+      "index": 7,
+      "xz": [
+        -2140.0,
+        -1666.666748046875
+      ],
+      "actual_y": 14.0,
+      "seam_distance": 72.44616955122963,
+      "expected_nontransition_y": 14.0,
+      "enforced": true,
+      "error_if_enforced": 0.0
+    },
+    {
+      "index": 8,
+      "xz": [
+        -2150.0,
+        -1670.0
+      ],
+      "actual_y": 15.0,
+      "seam_distance": 82.96987405076617,
+      "expected_nontransition_y": 15.0,
+      "enforced": true,
+      "error_if_enforced": 0.0
+    },
+    {
+      "index": 9,
+      "xz": [
+        -2160.0,
+        -1673.333251953125
+      ],
+      "actual_y": 16.0,
+      "seam_distance": 93.49745266327052,
+      "expected_nontransition_y": 16.0,
+      "enforced": true,
+      "error_if_enforced": 0.0
+    },
+    {
+      "index": 10,
+      "xz": [
+        -2170.0,
+        -1676.666748046875
+      ],
+      "actual_y": 17.0,
+      "seam_distance": 104.02779649489366,
+      "expected_nontransition_y": 17.0,
+      "enforced": true,
+      "error_if_enforced": 0.0
+    },
+    {
+      "index": 11,
+      "xz": [
+        -2180.0,
+        -1680.0
+      ],
+      "actual_y": 18.0,
+      "seam_distance": 114.56002793295748,
+      "expected_nontransition_y": 18.0,
+      "enforced": true,
+      "error_if_enforced": 0.0
+    },
+    {
+      "index": 12,
+      "xz": [
+        -2189.166748046875,
+        -1684.666748046875
+      ],
+      "actual_y": 17.66666603088379,
+      "seam_distance": 124.68024804434903,
+      "expected_nontransition_y": 17.666666666666668,
+      "enforced": true,
+      "error_if_enforced": 6.357828787884046e-07
+    },
+    {
+      "index": 13,
+      "xz": [
+        -2198.333251953125,
+        -1689.333251953125
+      ],
+      "actual_y": 17.33333396911621,
+      "seam_distance": 134.82529908694724,
+      "expected_nontransition_y": 17.333333333333336,
+      "enforced": true,
+      "error_if_enforced": 6.357828752356909e-07
+    },
+    {
+      "index": 14,
+      "xz": [
+        -2207.5,
+        -1694.0
+      ],
+      "actual_y": 17.0,
+      "seam_distance": 144.99051693128072,
+      "expected_nontransition_y": 17.0,
+      "enforced": true,
+      "error_if_enforced": 0.0
+    },
+    {
+      "index": 15,
+      "xz": [
+        -2216.66650390625,
+        -1698.666748046875
+      ],
+      "actual_y": 16.66666603088379,
+      "seam_distance": 155.17146234320137,
+      "expected_nontransition_y": 16.666666666666668,
+      "enforced": true,
+      "error_if_enforced": 6.357828787884046e-07
+    },
+    {
+      "index": 16,
+      "xz": [
+        -2225.83349609375,
+        -1703.333251953125
+      ],
+      "actual_y": 16.33333396911621,
+      "seam_distance": 165.36579838802461,
+      "expected_nontransition_y": 16.333333333333332,
+      "enforced": true,
+      "error_if_enforced": 6.357828787884046e-07
+    },
+    {
+      "index": 17,
+      "xz": [
+        -2235.0,
+        -1708.0
+      ],
+      "actual_y": 16.0,
+      "seam_distance": 175.57049866079439,
+      "expected_nontransition_y": 16.0,
+      "enforced": true,
+      "error_if_enforced": 0.0
+    },
+    {
+      "index": 18,
+      "xz": [
+        -2243.333251953125,
+        -1714.0
+      ],
+      "actual_y": 13.0,
+      "seam_distance": 185.47349199453143,
+      "expected_nontransition_y": 13.0,
+      "enforced": true,
+      "error_if_enforced": 0.0
+    },
+    {
+      "index": 19,
+      "xz": [
+        -2251.666748046875,
+        -1720.0
+      ],
+      "actual_y": 10.0,
+      "seam_distance": 195.4144501973351,
+      "expected_nontransition_y": 10.0,
+      "enforced": true,
+      "error_if_enforced": 0.0
+    },
+    {
+      "index": 20,
+      "xz": [
+        -2260.0,
+        -1726.0
+      ],
+      "actual_y": 7.0,
+      "seam_distance": 205.38743875904387,
+      "expected_nontransition_y": 7.0,
+      "enforced": true,
+      "error_if_enforced": 0.0
+    },
+    {
+      "index": 21,
+      "xz": [
+        -2264.666748046875,
+        -1734.0
+      ],
+      "actual_y": 6.333333492279053,
+      "seam_distance": 212.81715813144746,
+      "expected_nontransition_y": 6.333333333333334,
+      "enforced": true,
+      "error_if_enforced": 1.5894571880892272e-07
+    },
+    {
+      "index": 22,
+      "xz": [
+        -2269.333251953125,
+        -1742.0
+      ],
+      "actual_y": 5.666666507720947,
+      "seam_distance": 220.38544719243149,
+      "expected_nontransition_y": 5.666666666666666,
+      "enforced": true,
+      "error_if_enforced": 1.5894571880892272e-07
+    },
+    {
+      "index": 23,
+      "xz": [
+        -2274.0,
+        -1750.0
+      ],
+      "actual_y": 5.0,
+      "seam_distance": 228.07893370497854,
+      "expected_nontransition_y": 5.0,
+      "enforced": true,
+      "error_if_enforced": 0.0
+    },
+    {
+      "index": 24,
+      "xz": [
+        -2272.66650390625,
+        -1758.666748046875
+      ],
+      "actual_y": 5.333333492279053,
+      "seam_distance": 230.9130592427647,
+      "expected_nontransition_y": 5.333333333333334,
+      "enforced": true,
+      "error_if_enforced": 1.5894571880892272e-07
+    },
+    {
+      "index": 25,
+      "xz": [
+        -2271.333251953125,
+        -1767.333251953125
+      ],
+      "actual_y": 5.666666507720947,
+      "seam_distance": 234.04167014386246,
+      "expected_nontransition_y": 5.666666666666667,
+      "enforced": true,
+      "error_if_enforced": 1.5894571969710114e-07
+    },
+    {
+      "index": 26,
+      "xz": [
+        -2270.0,
+        -1776.0
+      ],
+      "actual_y": 6.0,
+      "seam_distance": 237.45315327449327,
+      "expected_nontransition_y": 6.0,
+      "enforced": true,
+      "error_if_enforced": 0.0
+    },
+    {
+      "index": 27,
+      "xz": [
+        -2262.5,
+        -1784.5
+      ],
+      "actual_y": 7.5,
+      "seam_distance": 235.98410963452602,
+      "expected_nontransition_y": 7.5,
+      "enforced": true,
+      "error_if_enforced": 0.0
+    },
+    {
+      "index": 28,
+      "xz": [
+        -2255.0,
+        -1793.0
+      ],
+      "actual_y": 9.0,
+      "seam_distance": 235.05318547086316,
+      "expected_nontransition_y": 9.0,
+      "enforced": true,
+      "error_if_enforced": 0.0
+    },
+    {
+      "index": 29,
+      "xz": [
+        -2248.0,
+        -1798.666748046875
+      ],
+      "actual_y": 7.666666507720947,
+      "seam_distance": 233.20477903983982,
+      "expected_nontransition_y": 7.666666666666668,
+      "enforced": true,
+      "error_if_enforced": 1.5894572058527956e-07
+    },
+    {
+      "index": 30,
+      "xz": [
+        -2241.0,
+        -1804.3333740234375
+      ],
+      "actual_y": 6.333333492279053,
+      "seam_distance": 231.69187261005078,
+      "expected_nontransition_y": 6.333333333333334,
+      "enforced": true,
+      "error_if_enforced": 1.5894571880892272e-07
+    },
+    {
+      "index": 31,
+      "xz": [
+        -2234.0,
+        -1810.0
+      ],
+      "actual_y": 5.0,
+      "seam_distance": 230.52114870440846,
+      "expected_nontransition_y": 5.0,
+      "enforced": true,
+      "error_if_enforced": 0.0
+    },
+    {
+      "index": 32,
+      "xz": [
+        -2224.333251953125,
+        -1815.0
+      ],
+      "actual_y": 4.166666507720947,
+      "seam_distance": 227.08027090826388,
+      "expected_nontransition_y": 4.166666666666667,
+      "enforced": true,
+      "error_if_enforced": 1.5894571969710114e-07
+    },
+    {
+      "index": 33,
+      "xz": [
+        -2214.66650390625,
+        -1820.0
+      ],
+      "actual_y": 3.3333332538604736,
+      "seam_distance": 223.66669601696304,
+      "expected_nontransition_y": 3.3333333333333335,
+      "enforced": true,
+      "error_if_enforced": 7.947285984855057e-08
+    },
+    {
+      "index": 34,
+      "xz": [
+        -2205.0,
+        -1825.0
+      ],
+      "actual_y": 2.5,
+      "seam_distance": 215.0,
+      "expected_nontransition_y": 2.5,
+      "enforced": true,
+      "error_if_enforced": 0.0
+    },
+    {
+      "index": 35,
+      "xz": [
+        -2207.5,
+        -1834.5
+      ],
+      "actual_y": 2.75,
+      "seam_distance": 210.9182306013399,
+      "expected_nontransition_y": 2.75,
+      "enforced": true,
+      "error_if_enforced": 0.0
+    },
+    {
+      "index": 36,
+      "xz": [
+        -2210.0,
+        -1844.0
+      ],
+      "actual_y": 3.0,
+      "seam_distance": 201.0994778710278,
+      "expected_nontransition_y": 3.0,
+      "enforced": true,
+      "error_if_enforced": 0.0
+    },
+    {
+      "index": 37,
+      "xz": [
+        -2219.333251953125,
+        -1847.333251953125
+      ],
+      "actual_y": 3.0,
+      "seam_distance": 195.94027845034128,
+      "expected_nontransition_y": 3.0,
+      "enforced": true,
+      "error_if_enforced": 0.0
+    },
+    {
+      "index": 38,
+      "xz": [
+        -2228.66650390625,
+        -1850.6666259765625
+      ],
+      "actual_y": 3.0,
+      "seam_distance": 191.155903742517,
+      "expected_nontransition_y": 3.0,
+      "enforced": true,
+      "error_if_enforced": 0.0
+    },
+    {
+      "index": 39,
+      "xz": [
+        -2238.0,
+        -1854.0
+      ],
+      "actual_y": 3.0,
+      "seam_distance": 186.77526602845464,
+      "expected_nontransition_y": 3.0,
+      "enforced": true,
+      "error_if_enforced": 0.0
+    },
+    {
+      "index": 40,
+      "xz": [
+        -2246.0,
+        -1862.0
+      ],
+      "actual_y": 3.5,
+      "seam_distance": 178.22738285684386,
+      "expected_nontransition_y": 3.5,
+      "enforced": true,
+      "error_if_enforced": 0.0
+    },
+    {
+      "index": 41,
+      "xz": [
+        -2254.0,
+        -1870.0
+      ],
+      "actual_y": 4.0,
+      "seam_distance": 170.00294115102832,
+      "expected_nontransition_y": 4.0,
+      "enforced": true,
+      "error_if_enforced": 0.0
+    },
+    {
+      "index": 42,
+      "xz": [
+        -2255.5,
+        -1880.0
+      ],
+      "actual_y": 4.5,
+      "seam_distance": 160.00078124809266,
+      "expected_nontransition_y": 4.5,
+      "enforced": true,
+      "error_if_enforced": 0.0
+    },
+    {
+      "index": 43,
+      "xz": [
+        -2257.0,
+        -1890.0
+      ],
+      "actual_y": 5.0,
+      "seam_distance": 150.0133327407934,
+      "expected_nontransition_y": 5.0,
+      "enforced": true,
+      "error_if_enforced": 0.0
+    },
+    {
+      "index": 44,
+      "xz": [
+        -2249.0,
+        -1898.0
+      ],
+      "actual_y": 7.0,
+      "seam_distance": 142.12670403551894,
+      "expected_nontransition_y": 7.0,
+      "enforced": true,
+      "error_if_enforced": 0.0
+    },
+    {
+      "index": 45,
+      "xz": [
+        -2241.0,
+        -1906.0
+      ],
+      "actual_y": 9.0,
+      "seam_distance": 134.72935834479432,
+      "expected_nontransition_y": 9.0,
+      "enforced": true,
+      "error_if_enforced": 0.0
+    },
+    {
+      "index": 46,
+      "xz": [
+        -2233.333251953125,
+        -1910.666748046875
+      ],
+      "actual_y": 10.0,
+      "seam_distance": 131.13557119140967,
+      "expected_nontransition_y": 10.0,
+      "enforced": true,
+      "error_if_enforced": 0.0
+    },
+    {
+      "index": 47,
+      "xz": [
+        -2225.666748046875,
+        -1915.333251953125
+      ],
+      "actual_y": 11.0,
+      "seam_distance": 128.07122135252916,
+      "expected_nontransition_y": 11.0,
+      "enforced": true,
+      "error_if_enforced": 0.0
+    },
+    {
+      "index": 48,
+      "xz": [
+        -2218.0,
+        -1920.0
+      ],
+      "actual_y": 12.0,
+      "seam_distance": 125.57467897629681,
+      "expected_nontransition_y": 12.0,
+      "enforced": true,
+      "error_if_enforced": 0.0
+    },
+    {
+      "index": 49,
+      "xz": [
+        -2223.0,
+        -1930.0
+      ],
+      "actual_y": 9.0,
+      "seam_distance": 114.56002793295748,
+      "expected_nontransition_y": 9.0,
+      "enforced": true,
+      "error_if_enforced": 0.0
+    },
+    {
+      "index": 50,
+      "xz": [
+        -2228.0,
+        -1940.0
+      ],
+      "actual_y": 6.0,
+      "seam_distance": 103.58088626768937,
+      "expected_nontransition_y": 6.0,
+      "enforced": true,
+      "error_if_enforced": 0.0
+    },
+    {
+      "index": 51,
+      "xz": [
+        -2226.5,
+        -1950.0
+      ],
+      "actual_y": 4.5,
+      "seam_distance": 94.40471386535738,
+      "expected_nontransition_y": 4.5,
+      "enforced": true,
+      "error_if_enforced": 0.0
+    },
+    {
+      "index": 52,
+      "xz": [
+        -2225.0,
+        -1960.0
+      ],
+      "actual_y": 3.0,
+      "seam_distance": 85.44003745317531,
+      "expected_nontransition_y": 3.0,
+      "enforced": true,
+      "error_if_enforced": 0.0
+    },
+    {
+      "index": 53,
+      "xz": [
+        -2232.666748046875,
+        -1966.666748046875
+      ],
+      "actual_y": 3.6666667461395264,
+      "seam_distance": 76.65859367887121,
+      "expected_nontransition_y": 3.6666666666666665,
+      "enforced": true,
+      "error_if_enforced": 7.947285984855057e-08
+    },
+    {
+      "index": 54,
+      "xz": [
+        -2240.33349609375,
+        -1973.333251953125
+      ],
+      "actual_y": 4.333333492279053,
+      "seam_distance": 68.26098176833936,
+      "expected_nontransition_y": 4.333333333333333,
+      "enforced": true,
+      "error_if_enforced": 1.5894571969710114e-07
+    },
+    {
+      "index": 55,
+      "xz": [
+        -2248.0,
+        -1980.0
+      ],
+      "actual_y": 5.0,
+      "seam_distance": 60.40695324215582,
+      "expected_nontransition_y": 5.0,
+      "enforced": true,
+      "error_if_enforced": 0.0
+    },
+    {
+      "index": 56,
+      "xz": [
+        -2253.666748046875,
+        -1986.6666259765625
+      ],
+      "actual_y": 6.666666507720947,
+      "seam_distance": 53.35003604023515,
+      "expected_nontransition_y": 6.666666666666667,
+      "enforced": true,
+      "error_if_enforced": 1.5894571969710114e-07
+    },
+    {
+      "index": 57,
+      "xz": [
+        -2259.333251953125,
+        -1993.333251953125
+      ],
+      "actual_y": 8.333333015441895,
+      "seam_distance": 46.867498821248965,
+      "expected_nontransition_y": 8.333333333333332,
+      "enforced": true,
+      "error_if_enforced": 3.1789143761784544e-07
+    },
+    {
+      "index": 58,
+      "xz": [
+        -2265.0,
+        -2000.0
+      ],
+      "actual_y": 10.0,
+      "seam_distance": 41.23105625617661,
+      "expected_nontransition_y": 10.0,
+      "enforced": true,
+      "error_if_enforced": 0.0
+    },
+    {
+      "index": 59,
+      "xz": [
+        -2260.0,
+        -2010.0
+      ],
+      "actual_y": 12.0,
+      "seam_distance": 30.4138126514911,
+      "expected_nontransition_y": 12.0,
+      "enforced": true,
+      "error_if_enforced": 0.0
+    },
+    {
+      "index": 60,
+      "xz": [
+        -2255.0,
+        -2020.0
+      ],
+      "actual_y": 12.948147773742676,
+      "seam_distance": 20.0,
+      "expected_nontransition_y": 14.0,
+      "enforced": false,
+      "error_if_enforced": null
+    },
+    {
+      "index": 61,
+      "xz": [
+        -2255.0,
+        -2030.0
+      ],
+      "actual_y": 3.636805534362793,
+      "seam_distance": 10.0,
+      "expected_nontransition_y": 10.0,
+      "enforced": false,
+      "error_if_enforced": null
+    },
+    {
+      "index": 62,
+      "xz": [
+        -2255.0,
+        -2040.0
+      ],
+      "actual_y": -0.20000000298023224,
+      "seam_distance": 0.0,
+      "expected_nontransition_y": 6.0,
+      "enforced": false,
+      "error_if_enforced": null
+    }
+  ],
+  "nontransition_shore_count": 57,
+  "nontransition_max_error_m": 6.357828787884046e-07,
+  "pads": [
+    {
+      "name": "fore_fisher",
+      "pad_area_m2": 86.14000000000281,
+      "covered_area_m2": 86.14000000000199,
+      "maximum_height_error_m": 5.304688102114596e-07
+    },
+    {
+      "name": "fore_workshop",
+      "pad_area_m2": 105.59999999999745,
+      "covered_area_m2": 105.59999999999164,
+      "maximum_height_error_m": 1.6183577820072514e-06
+    },
+    {
+      "name": "fore_keeper",
+      "pad_area_m2": 131.9999999999981,
+      "covered_area_m2": 131.99999999998244,
+      "maximum_height_error_m": 7.632634719811904e-07
+    },
+    {
+      "name": "fore_upper",
+      "pad_area_m2": 132.00000000000085,
+      "covered_area_m2": 131.999999999969,
+      "maximum_height_error_m": 1.6624687759758672e-06
+    },
+    {
+      "name": "fore_back_cottage",
+      "pad_area_m2": 86.1400000000026,
+      "covered_area_m2": 86.13999999997627,
+      "maximum_height_error_m": 1.0381436368334107e-06
+    },
+    {
+      "name": "bay_fisher",
+      "pad_area_m2": 86.13999999999798,
+      "covered_area_m2": 86.13999999999557,
+      "maximum_height_error_m": 7.191564463937539e-07
+    },
+    {
+      "name": "bay_keeper",
+      "pad_area_m2": 132.00000000000034,
+      "covered_area_m2": 131.9999999999371,
+      "maximum_height_error_m": 8.756778697716072e-06
+    },
+    {
+      "name": "bay_upper",
+      "pad_area_m2": 132.00000000000063,
+      "covered_area_m2": 131.99999999998732,
+      "maximum_height_error_m": 1.1164324860146735e-06
+    },
+    {
+      "name": "bay_workshop",
+      "pad_area_m2": 105.59999999999745,
+      "covered_area_m2": 105.59999999999654,
+      "maximum_height_error_m": 5.615181635221234e-07
+    }
+  ],
+  "eleven_rock_geometry_exactly_same": true,
+  "house_comparison": [
+    {
+      "name": "fisher_cottage",
+      "glb_sha_same": true,
+      "source_sha_same": false,
+      "actual_geometry_equal": true
+    },
+    {
+      "name": "quay_workshop",
+      "glb_sha_same": true,
+      "source_sha_same": false,
+      "actual_geometry_equal": true
+    }
+  ],
+  "full_art_accepted": false,
+  "local_shore_fix_retain": true,
+  "production_install_accepted": false,
+  "changed_top_control_count_above_0_1mm": 137,
+  "changed_triangle_count": 387,
+  "steepest_changed_triangles": [
+    {
+      "triangle": 265,
+      "before_slope": 45.23426865144164,
+      "after_slope": 67.02072983645455,
+      "center": [
+        -2215.5,
+        20.479814529418945,
+        -1965.0
+      ]
+    },
+    {
+      "triangle": 266,
+      "before_slope": 44.91709443707179,
+      "after_slope": 66.47379178266104,
+      "center": [
+        -2215.5,
+        19.22172482808431,
+        -1959.0
+      ]
+    },
+    {
+      "triangle": 239,
+      "before_slope": 15.360177918329144,
+      "after_slope": 61.823929322182565,
+      "center": [
+        -2218.9791272481284,
+        6.436018943786621,
+        -1850.5560913085938
+      ]
+    },
+    {
+      "triangle": 495,
+      "before_slope": 36.84120821866373,
+      "after_slope": 60.344687903185516,
+      "center": [
+        -2220.0,
+        11.060093720753988,
+        -1956.0
+      ]
+    },
+    {
+      "triangle": 492,
+      "before_slope": 42.30045951459596,
+      "after_slope": 59.76500613220937,
+      "center": [
+        -2220.0,
+        14.503578186035156,
+        -1968.0
+      ]
+    },
+    {
+      "triangle": 496,
+      "before_slope": 37.18330213066087,
+      "after_slope": 59.60604124178559,
+      "center": [
+        -2220.0,
+        12.476497491200766,
+        -1950.0
+      ]
+    },
+    {
+      "triangle": 286,
+      "before_slope": 12.753284257334398,
+      "after_slope": 58.212704925192924,
+      "center": [
+        -2215.645793914795,
+        4.833333333333333,
+        -1847.2227579752605
+      ]
+    },
+    {
+      "triangle": 348,
+      "before_slope": 58.08325313251607,
+      "after_slope": 57.63743388708172,
+      "center": [
+        -2202.0,
+        21.832685470581055,
+        -1884.0
+      ]
+    }
+  ]
+}

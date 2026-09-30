@@ -1,0 +1,92 @@
+{
+  "scope": "Actual GLB geometry plus current source/gate SHA identity. Independent triangle-plane intersection maxima, not GPU/visual/full walk acceptance.",
+  "source_identity": {
+    "old_glb_sha256": "cd423ca005c39720455921af8d5990839ed05831f153d1524a5095fe8a227b82",
+    "new_glb_sha256": "4ecf94499e8ce7d8ba5b3270038bb545fc3b1ba2167c4c7261d9c1129b1b5da9",
+    "glb_matches_native_gate": true,
+    "blend_matches_native_gate": true
+  },
+  "paving": [
+    {
+      "group": "foreground",
+      "actual_glb_sha256": "4c257e60da50b3036904e677338a9cbe122a43946bee3ac469e471ef1816990a",
+      "top_cap_triangles_checked": 7233,
+      "terrain_cap_overlaps": 29272,
+      "worst": {
+        "terrain_above_cap_m": -0.04799842839322643,
+        "world_xz": [
+          -2250.236936392974,
+          -1752.8026005411402
+        ],
+        "cap_y": 11.23799991607666,
+        "terrain_y": 11.190001487683434,
+        "cap_material": "Village buried rubble masonry",
+        "terrain_material": "Coast short olive grass",
+        "intersection_area_m2": 0.0002914179625533954
+      },
+      "overlap_area_with_extreme_penetration_over_1mm_m2": 0.0
+    },
+    {
+      "group": "bay",
+      "actual_glb_sha256": "890650b1943a475cfefb695a663f5ed49ceb229ef501a12cd6cbeaee3e6dcebd",
+      "top_cap_triangles_checked": 5009,
+      "terrain_cap_overlaps": 22890,
+      "worst": {
+        "terrain_above_cap_m": 0.7500031034479271,
+        "world_xz": [
+          -2224.3179219903564,
+          -1872.8434267137125
+        ],
+        "cap_y": 9.75,
+        "terrain_y": 10.500003103447927,
+        "cap_material": "Village worn limestone 0",
+        "terrain_material": "Coast short olive grass",
+        "intersection_area_m2": 0.012565913329247063
+      },
+      "overlap_area_with_extreme_penetration_over_1mm_m2": 7.92783062080123
+    }
+  ],
+  "original_nonupward_faces": {
+    "count": 2937,
+    "missing_exact_geometry_material_triangles": 0
+  },
+  "upper_border": {
+    "vertex_count": 189,
+    "missing_exact_vertices": 0,
+    "connected_component_vertex_counts": [
+      134,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "core_border_vertex_count": 134,
+    "core_missing_exact_vertices": 0
+  },
+  "status": "REJECT combined 24l terrain plus 24j paving: actual bay cap penetrated 0.75m; actual foreground stacked caps match runtime failure. Further foundation-region audit intentionally deferred after sufficient rejecting counterexamples.",
+  "bay_counterexample_covering_design_solids": [
+    {
+      "name": "bay worn stair paver 9.750 -3401 -2783 component 0",
+      "top_y": 9.75,
+      "kind": "paver"
+    },
+    {
+      "name": "bay worn stair paver 9.900 -3401 -2783 component 0",
+      "top_y": 9.9,
+      "kind": "paver"
+    },
+    {
+      "name": "bay worn stair paver 10.050 -3401 -2783 component 0",
+      "top_y": 10.05,
+      "kind": "paver"
+    }
+  ],
+  "foundation_region_audit": "Not completed: actual house assets identified, but rejecting cap counterexamples found before comparing nine foundation regions."
+}

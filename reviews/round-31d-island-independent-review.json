@@ -1,0 +1,99 @@
+{
+  "round": "31d",
+  "run_id": "lantern-island-31d-20260908T201625Z-7575af2955e449b1a68d49f13e66c31a",
+  "visual_verdict": "reject_overall_rework_adjacent_native_slope_faces_and_seams_instead_of_enlarging_single_filler",
+  "visual_complete": false,
+  "full_reference_accepted": false,
+  "all_reference_goal_complete": false,
+  "reference": {
+    "path": "ref\\1342.png",
+    "sha256": "7acc98104013d9122eb551846b2d7fc1f7549bce8b2e3199eae8f5385a3ea238",
+    "directly_viewed_in_current_continuing_review": true
+  },
+  "comparison_images": [
+    {
+      "path": "captures\\validation_runs\\lantern-island-31c-20260908T201128Z-28759710080745f9bea8113b6cf38f92\\images\\day-d-back.png",
+      "sha256": "efa15a7872d0c91aacc4bf7da56c1a796042314823f9f6eee4d6d84e50980f21"
+    },
+    {
+      "path": "captures\\validation_runs\\lantern-island-31c-20260908T201128Z-28759710080745f9bea8113b6cf38f92\\images\\day-c-front.png",
+      "sha256": "fe17d27fd740903dcf4f0247df3533ee342d92c2d1d0765cf2e4256baa71bd34"
+    }
+  ],
+  "comparisons_directly_viewed_in_current_continuing_review": true,
+  "images": [
+    {
+      "view": "night-reference",
+      "path": "captures\\validation_runs\\lantern-island-31d-20260908T201625Z-7575af2955e449b1a68d49f13e66c31a\\images\\night-reference.png",
+      "sha256": "14608ee27621c3384725323c12fa117f0c84d1045196f634bc332965a94a703f",
+      "directly_viewed": true,
+      "judgment": "紧凑岛体、原生建筑比例和右侧守塔屋构图保留。本轮背槽修改在固定夜间全景中不可充分判断，不能因远图连贯就接受整个岛。相对1342，岛身仍缺自然错位的宽短岩根层次。"
+    },
+    {
+      "view": "day-reference",
+      "path": "captures\\validation_runs\\lantern-island-31d-20260908T201625Z-7575af2955e449b1a68d49f13e66c31a\\images\\day-reference.png",
+      "sha256": "8eb27ff5ea0675e15c4094967bcc19c75d86268599b3bf9da77359693d62b073",
+      "directly_viewed": true,
+      "judgment": "全景延续上一稿的体量与布置，前部小块和灰坡仍可辨识。它无法证明背面局部闭合已经产生符合参考的造型。"
+    },
+    {
+      "view": "day-d-front",
+      "path": "captures\\validation_runs\\lantern-island-31d-20260908T201625Z-7575af2955e449b1a68d49f13e66c31a\\images\\day-d-front.png",
+      "sha256": "4c685f5f8b909b803209a5507d51aadd70dd03d2ab0dfb89bfebdbd39e2a42b8",
+      "directly_viewed": true,
+      "judgment": "两前肩与31c一致：短于31b、没有31a平顶帽柱，但呈两块轮廓独立的凸石，后方大灰坡和窄暗接缝保留。背槽改动没有修复前部大面的组织关系。"
+    },
+    {
+      "view": "day-d-back",
+      "path": "captures\\validation_runs\\lantern-island-31d-20260908T201625Z-7575af2955e449b1a68d49f13e66c31a\\images\\day-d-back.png",
+      "sha256": "c563177c1e5442fa9108b1ccc6c1bc18ed759c1c40d8ff61f1d8e7894161aa74",
+      "directly_viewed": true,
+      "judgment": "第三体中段确实比31c厚，部分近塔缝被遮断/连上；然而整体仍读成一条纵向窄长塞条。塔脚下两侧大灰坡几乎围着这条石条展开，侧缘暗缝与海侧直口仍明显，没有形成短宽、前后错位的岩肩组织。局部实际连接成功，整体造型失败。"
+    },
+    {
+      "view": "day-c-front",
+      "path": "captures\\validation_runs\\lantern-island-31d-20260908T201625Z-7575af2955e449b1a68d49f13e66c31a\\images\\day-c-front.png",
+      "sha256": "fe17d27fd740903dcf4f0247df3533ee342d92c2d1d0765cf2e4256baa71bd34",
+      "directly_viewed": true,
+      "judgment": "前两凸块和接缝延续31c的独立凸石感，上台灰坡、左侧大斜面仍显。没有理由因为背面一个局部截面接上就提升前部视觉结论。"
+    }
+  ],
+  "local_improvement": "Back filler is thicker and declared central diagonal gap is truly closed. This does not imply all peripheral/high gaps are closed or the broad rock forms match1342.",
+  "next_bounded_remodel_direction": [
+    "停止无条件扩大单一填槽凸包。下一轮应同时重排槽两侧原壳大坡面、已加连接体与交界，不能只让中间塞条继续长胖。",
+    "以已定位31b的309/1467面对应XYZ区域和新体交界为有界起点，在31d实际壳中重新定位。不要套旧面/点索引，也不要将整个北侧一次重塑。",
+    "将从塔脚贯到水边的纵向面带改成2–3个高度与前后位置错开的短宽连接面；在中段让接缝横向偏转并结束，海侧用较低宽根接续。两边不做相同高程的整齐台阶，不加入细密折扇。",
+    "把原309/1467附近的长陡面切分后与岩肩共用边界，使局部主坡真的改变；避免保留旧长槽壁、仅用一个凸包遮挡。新的接续应读成主岛岩根，而不是槽中独立贴条或桥板。",
+    "沿真实扩张pad边界保留原线性支承，道路与当前树支承按实际候选复核；近塔1.3748m旧面距离仅是定位证据，不是许可的改形半径。",
+    "前部继续保留短肩/错向的方向，但完整前部仍未通过。后续应将凸石后缘和原宽坡共同组织，减少封闭独立轮廓，不能靠加第三第四颗小岩块完成。"
+  ],
+  "geometry_evidence": {
+    "report": "reviews/round-31d-independent-geometry.json",
+    "base_geometry_and_support_pass": true,
+    "bounded_primary_diagonal_bilateral_pass": true,
+    "main_triangles": 2184,
+    "first_two_native_operands_exact_from31c": true,
+    "primary_diagonal_unfilled_gap_m": 0.0,
+    "primary_diagonal_operand_bank_penetration_m": [
+      0.7915115633563873,
+      1.464791050049238
+    ],
+    "positive_local_Y_crosscuts": 5,
+    "total_local_Y_crosscuts": 9,
+    "scope": "Previously completed actual checks reused; no geometry rerun. Four outer/high crosscuts retain gaps. Neither5/9 nor diagonal closure is an art score."
+  },
+  "root_runtime_report_read": {
+    "path": "reviews/round-31d-runtime-incremental.json",
+    "passed": true,
+    "binding_count": 199,
+    "placements_each_view": 59,
+    "maximum_position_delta_m": 0.00013732910155983546,
+    "maximum_footing_delta_m": 0.0
+  },
+  "limits": [
+    "No new geometry checks, GPU or Blender run during this visual review.",
+    "No whole-crevice closure or full-reference acceptance claimed.",
+    "Bounded face reorganization is an authored design direction, not a validated31e candidate.",
+    "Runtime evidence read from root rather than independently rerun."
+  ]
+}

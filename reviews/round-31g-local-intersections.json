@@ -1,0 +1,24 @@
+{
+  "scope": "Actual finite GLB main-shell triangle intersection check for every pair whose AABBs overlap and at least one triangle differs from31f. Includes all original unchanged triangles as possible partners. No analytic mapping-injectivity argument.",
+  "changed_or_new_triangulation_triangles": 324,
+  "statistics": {
+    "aabb_candidate_pairs": 3322,
+    "noncoplanar_contact_pairs": 2323,
+    "coplanar_contact_pairs": 548,
+    "shared_feature_only_pairs": 2871
+  },
+  "intersection_candidates_outside_legal_shared_features": [],
+  "local_self_intersection_pass": true,
+  "tolerances": {
+    "aabb_margin_m": 1e-07,
+    "plane_m": 1e-06,
+    "shared_coordinate_m": 1e-05,
+    "allowed_shared_feature_band_m": 0.0001
+  },
+  "limits": [
+    "Local changed-region versus entire main-shell sweep only; unchanged/unchanged baseline pairs excluded.",
+    "Legal shared vertices/edges ignored only inside0.1mm band; smaller defects are outside stated resolution.",
+    "17 independent rocks deliberately intersect main shell as separate objects; their authored contact is not a shell self-intersection.",
+    "Numerical triangle test is bounded-resolution evidence, not exact-predicate proof or complete walking test."
+  ]
+}

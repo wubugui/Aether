@@ -1,0 +1,953 @@
+{
+  "scope": "Independent read-only actual GLB path/terrain alignment and route-endpoint review; no Blender/GPU; visual decision pending",
+  "utc": "2026-09-08T09:42:02.318499+00:00",
+  "islands": {
+    "island_a": {
+      "source_sha256": "822d6611aa1192b6960635207cd3d9362c97a31051acc2d221cda1486b93034b",
+      "glb_sha256": "e9d75e7ff8cf4a03bf985c9460aed6fec8df896bed736a23fa1b4f9b13cd527f",
+      "actual_path_up_triangles": 125,
+      "area_m2": 208.3733673095703,
+      "top_samples_vertices_centroids_edge_midpoints": 614,
+      "missing_underlying_terrain": 0,
+      "path_top_minus_actual_terrain_m": [
+        0.04499626159667969,
+        0.04500389099121094
+      ],
+      "maximum_triangle_slope_deg": 36.31845474243164,
+      "area_over30deg_fraction": 0.07691163569688797,
+      "area_over45deg_fraction": 0.0,
+      "worst_triangles": [
+        {
+          "slope_deg": 36.31845474243164,
+          "area_m2": 1.4723390340805054,
+          "godot_local_vertices": [
+            [
+              -17.799999237060547,
+              22.51886749267578,
+              11.195975303649902
+            ],
+            [
+              -17.873233795166016,
+              22.63982582092285,
+              12.804213523864746
+            ],
+            [
+              -16.39837646484375,
+              23.713171005249023,
+              12.813987731933594
+            ]
+          ]
+        },
+        {
+          "slope_deg": 36.31845474243164,
+          "area_m2": 2.3722939491271973,
+          "godot_local_vertices": [
+            [
+              -16.39837646484375,
+              23.713171005249023,
+              12.813987731933594
+            ],
+            [
+              -15.453431129455566,
+              24.22290802001953,
+              11.177342414855957
+            ],
+            [
+              -17.799999237060547,
+              22.51886749267578,
+              11.195975303649902
+            ]
+          ]
+        },
+        {
+          "slope_deg": 35.649208068847656,
+          "area_m2": 4.043910980224609,
+          "godot_local_vertices": [
+            [
+              -60.587242126464844,
+              12.638606071472168,
+              35.354896545410156
+            ],
+            [
+              -61.45222473144531,
+              11.742176055908203,
+              33.85675048828125
+            ],
+            [
+              -65.19343566894531,
+              9.390761375427246,
+              34.97502517700195
+            ]
+          ]
+        },
+        {
+          "slope_deg": 35.649208068847656,
+          "area_m2": 6.349098205566406,
+          "godot_local_vertices": [
+            [
+              -65.19343566894531,
+              9.390761375427246,
+              34.97502517700195
+            ],
+            [
+              -66.42803192138672,
+              8.97010326385498,
+              37.11335754394531
+            ],
+            [
+              -60.587242126464844,
+              12.638606071472168,
+              35.354896545410156
+            ]
+          ]
+        },
+        {
+          "slope_deg": 35.4069709777832,
+          "area_m2": 0.8126786351203918,
+          "godot_local_vertices": [
+            [
+              -27.688926696777344,
+              20.14027976989746,
+              14.394777297973633
+            ],
+            [
+              -27.0,
+              20.318002700805664,
+              15.588000297546387
+            ],
+            [
+              -26.827438354492188,
+              20.81983757019043,
+              13.963945388793945
+            ]
+          ]
+        }
+      ],
+      "route_endpoint_average_grades": [
+        {
+          "route": 0,
+          "segment": 0,
+          "blender_xy": [
+            [
+              -22,
+              -9
+            ],
+            [
+              -21,
+              -12
+            ]
+          ],
+          "endpoint_grade_degrees": 0.2749784999269667,
+          "rise_m": -0.015176773071289062
+        },
+        {
+          "route": 0,
+          "segment": 1,
+          "blender_xy": [
+            [
+              -21,
+              -12
+            ],
+            [
+              -15,
+              -12
+            ]
+          ],
+          "endpoint_grade_degrees": 17.234025898159643,
+          "rise_m": 1.861215591430664
+        },
+        {
+          "route": 0,
+          "segment": 2,
+          "blender_xy": [
+            [
+              -15,
+              -12
+            ],
+            [
+              -9,
+              -9
+            ]
+          ],
+          "endpoint_grade_degrees": 18.375245446714512,
+          "rise_m": 2.228303909301758
+        },
+        {
+          "route": 0,
+          "segment": 3,
+          "blender_xy": [
+            [
+              -9,
+              -9
+            ],
+            [
+              0,
+              -7
+            ]
+          ],
+          "endpoint_grade_degrees": 13.371248540398215,
+          "rise_m": 2.191516876220703
+        },
+        {
+          "route": 0,
+          "segment": 4,
+          "blender_xy": [
+            [
+              0,
+              -7
+            ],
+            [
+              6,
+              0
+            ]
+          ],
+          "endpoint_grade_degrees": 7.4397743752378656,
+          "rise_m": 1.20391845703125
+        },
+        {
+          "route": 0,
+          "segment": 5,
+          "blender_xy": [
+            [
+              6,
+              0
+            ],
+            [
+              6,
+              6
+            ]
+          ],
+          "endpoint_grade_degrees": 1.4711725556393196,
+          "rise_m": 0.15409469604492188
+        },
+        {
+          "route": 0,
+          "segment": 6,
+          "blender_xy": [
+            [
+              6,
+              6
+            ],
+            [
+              1,
+              9
+            ]
+          ],
+          "endpoint_grade_degrees": 1.3701828184004803,
+          "rise_m": 0.13946914672851562
+        },
+        {
+          "route": 1,
+          "segment": 0,
+          "blender_xy": [
+            [
+              18.15,
+              -11.63
+            ],
+            [
+              13,
+              -14
+            ]
+          ],
+          "endpoint_grade_degrees": 2.3245985863220127,
+          "rise_m": -0.2301349639892578
+        },
+        {
+          "route": 1,
+          "segment": 1,
+          "blender_xy": [
+            [
+              13,
+              -14
+            ],
+            [
+              7,
+              -12
+            ]
+          ],
+          "endpoint_grade_degrees": 6.262603179039419,
+          "rise_m": 0.6940593719482422
+        },
+        {
+          "route": 1,
+          "segment": 2,
+          "blender_xy": [
+            [
+              7,
+              -12
+            ],
+            [
+              0,
+              -7
+            ]
+          ],
+          "endpoint_grade_degrees": 4.109874759881975,
+          "rise_m": 0.6181125640869141
+        },
+        {
+          "route": 2,
+          "segment": 0,
+          "blender_xy": [
+            [
+              -21,
+              -12
+            ],
+            [
+              -33,
+              -18
+            ]
+          ],
+          "endpoint_grade_degrees": 15.477140263214181,
+          "rise_m": -3.714935302734375
+        },
+        {
+          "route": 2,
+          "segment": 1,
+          "blender_xy": [
+            [
+              -33,
+              -18
+            ],
+            [
+              -44,
+              -25
+            ]
+          ],
+          "endpoint_grade_degrees": 12.438159089182099,
+          "rise_m": -2.875783920288086
+        },
+        {
+          "route": 2,
+          "segment": 2,
+          "blender_xy": [
+            [
+              -44,
+              -25
+            ],
+            [
+              -59,
+              -34
+            ]
+          ],
+          "endpoint_grade_degrees": 9.575358903874,
+          "rise_m": -2.9509572982788086
+        },
+        {
+          "route": 2,
+          "segment": 3,
+          "blender_xy": [
+            [
+              -59,
+              -34
+            ],
+            [
+              -69,
+              -37
+            ]
+          ],
+          "endpoint_grade_degrees": 25.661624778963702,
+          "rise_m": -5.015970706939697
+        }
+      ]
+    },
+    "island_b": {
+      "source_sha256": "9ddfc8b9ec743a5085cec0b84e51b026376e0fd05989e63745d2240ebb6ef768",
+      "glb_sha256": "9618c5309d65ac20acf4d3b0ca12d372fa419adede86d218455212b23d20bdc3",
+      "actual_path_up_triangles": 81,
+      "area_m2": 101.96421813964844,
+      "top_samples_vertices_centroids_edge_midpoints": 400,
+      "missing_underlying_terrain": 0,
+      "path_top_minus_actual_terrain_m": [
+        0.0449981689453125,
+        0.04500389099121094
+      ],
+      "maximum_triangle_slope_deg": 42.57570266723633,
+      "area_over30deg_fraction": 0.4330176115036011,
+      "area_over45deg_fraction": 0.0,
+      "worst_triangles": [
+        {
+          "slope_deg": 42.57570266723633,
+          "area_m2": 0.0328732393682003,
+          "godot_local_vertices": [
+            [
+              5.665810585021973,
+              21.56713104248047,
+              5.0387864112854
+            ],
+            [
+              5.500507354736328,
+              21.690786361694336,
+              5.008881092071533
+            ],
+            [
+              5.557191371917725,
+              21.451547622680664,
+              5.3120198249816895
+            ]
+          ]
+        },
+        {
+          "slope_deg": 39.8729133605957,
+          "area_m2": 0.5046766400337219,
+          "godot_local_vertices": [
+            [
+              -26.205917358398438,
+              12.087862014770508,
+              24.75735092163086
+            ],
+            [
+              -26.88164710998535,
+              12.896718978881836,
+              23.586986541748047
+            ],
+            [
+              -27.330942153930664,
+              12.506316184997559,
+              23.95519256591797
+            ]
+          ]
+        },
+        {
+          "slope_deg": 39.872894287109375,
+          "area_m2": 3.3704516887664795,
+          "godot_local_vertices": [
+            [
+              -27.330942153930664,
+              12.506316184997559,
+              23.95519256591797
+            ],
+            [
+              -29.21170997619629,
+              9.48251724243164,
+              27.212682723999023
+            ],
+            [
+              -26.205917358398438,
+              12.087862014770508,
+              24.75735092163086
+            ]
+          ]
+        },
+        {
+          "slope_deg": 39.80152130126953,
+          "area_m2": 0.7352059483528137,
+          "godot_local_vertices": [
+            [
+              -37.125,
+              5.78310489654541,
+              29.227500915527344
+            ],
+            [
+              -36.45635223388672,
+              6.86830472946167,
+              28.069400787353516
+            ],
+            [
+              -37.61272430419922,
+              6.019250869750977,
+              28.38275909423828
+            ]
+          ]
+        },
+        {
+          "slope_deg": 39.566707611083984,
+          "area_m2": 4.191869258880615,
+          "godot_local_vertices": [
+            [
+              -31.77593421936035,
+              9.126662254333496,
+              26.801082611083984
+            ],
+            [
+              -36.45635223388672,
+              6.86830472946167,
+              28.069400787353516
+            ],
+            [
+              -35.634403228759766,
+              6.187031269073486,
+              29.227500915527344
+            ]
+          ]
+        }
+      ],
+      "route_endpoint_average_grades": [
+        {
+          "route": 0,
+          "segment": 0,
+          "blender_xy": [
+            [
+              -14.57,
+              -8.34
+            ],
+            [
+              -9,
+              -11
+            ]
+          ],
+          "endpoint_grade_degrees": 4.104444943415576,
+          "rise_m": -0.4429359436035156
+        },
+        {
+          "route": 0,
+          "segment": 1,
+          "blender_xy": [
+            [
+              -9,
+              -11
+            ],
+            [
+              -2,
+              -10
+            ]
+          ],
+          "endpoint_grade_degrees": 9.147950029677338,
+          "rise_m": 1.138671875
+        },
+        {
+          "route": 0,
+          "segment": 2,
+          "blender_xy": [
+            [
+              -2,
+              -10
+            ],
+            [
+              5,
+              -5
+            ]
+          ],
+          "endpoint_grade_degrees": 25.548463034688453,
+          "rise_m": 4.112033843994141
+        },
+        {
+          "route": 0,
+          "segment": 3,
+          "blender_xy": [
+            [
+              5,
+              -5
+            ],
+            [
+              7,
+              0
+            ]
+          ],
+          "endpoint_grade_degrees": 0.14830346039811265,
+          "rise_m": -0.01393890380859375
+        },
+        {
+          "route": 0,
+          "segment": 4,
+          "blender_xy": [
+            [
+              7,
+              0
+            ],
+            [
+              4.815,
+              3.347
+            ]
+          ],
+          "endpoint_grade_degrees": 1.2890618198645505,
+          "rise_m": 0.08994293212890625
+        },
+        {
+          "route": 1,
+          "segment": 0,
+          "blender_xy": [
+            [
+              -9,
+              -11
+            ],
+            [
+              -19,
+              -18
+            ]
+          ],
+          "endpoint_grade_degrees": 11.143898709193593,
+          "rise_m": -2.4045448303222656
+        },
+        {
+          "route": 1,
+          "segment": 1,
+          "blender_xy": [
+            [
+              -19,
+              -18
+            ],
+            [
+              -30,
+              -27
+            ]
+          ],
+          "endpoint_grade_degrees": 17.56146777082529,
+          "rise_m": -4.498006820678711
+        },
+        {
+          "route": 1,
+          "segment": 2,
+          "blender_xy": [
+            [
+              -30,
+              -27
+            ],
+            [
+              -41,
+              -30
+            ]
+          ],
+          "endpoint_grade_degrees": 23.99591360153965,
+          "rise_m": -5.075413703918457
+        }
+      ]
+    },
+    "island_c": {
+      "source_sha256": "2d13704233416ae049d31da6a7a415a6396baea4a2db16b70345f22dae751563",
+      "glb_sha256": "c379f2c0feb43fe094bf14d0e9c563f872d2a0982b1b97317f017e43aa241352",
+      "actual_path_up_triangles": 58,
+      "area_m2": 59.93169021606445,
+      "top_samples_vertices_centroids_edge_midpoints": 288,
+      "missing_underlying_terrain": 0,
+      "path_top_minus_actual_terrain_m": [
+        0.044997215270996094,
+        0.045001983642578125
+      ],
+      "maximum_triangle_slope_deg": 57.360145568847656,
+      "area_over30deg_fraction": 0.5797159671783447,
+      "area_over45deg_fraction": 0.26560211181640625,
+      "worst_triangles": [
+        {
+          "slope_deg": 57.360145568847656,
+          "area_m2": 0.1952015906572342,
+          "godot_local_vertices": [
+            [
+              -9.627954483032227,
+              16.494123458862305,
+              19.71868896484375
+            ],
+            [
+              -9.950355529785156,
+              16.114173889160156,
+              19.94698143005371
+            ],
+            [
+              -9.249505043029785,
+              15.921586990356445,
+              20.10382843017578
+            ]
+          ]
+        },
+        {
+          "slope_deg": 47.726627349853516,
+          "area_m2": 0.8227768540382385,
+          "godot_local_vertices": [
+            [
+              -9.627954483032227,
+              16.494123458862305,
+              19.71868896484375
+            ],
+            [
+              -7.185976505279541,
+              14.371915817260742,
+              19.351125717163086
+            ],
+            [
+              -8.302961349487305,
+              15.59244155883789,
+              19.065967559814453
+            ]
+          ]
+        },
+        {
+          "slope_deg": 47.72660827636719,
+          "area_m2": 2.1443092823028564,
+          "godot_local_vertices": [
+            [
+              -9.249505043029785,
+              15.921586990356445,
+              20.10382843017578
+            ],
+            [
+              -6.874206066131592,
+              13.367339134216309,
+              20.635406494140625
+            ],
+            [
+              -7.185976505279541,
+              14.371915817260742,
+              19.351125717163086
+            ]
+          ]
+        },
+        {
+          "slope_deg": 47.72660446166992,
+          "area_m2": 0.8024795055389404,
+          "godot_local_vertices": [
+            [
+              -9.627954483032227,
+              16.494123458862305,
+              19.71868896484375
+            ],
+            [
+              -9.249505043029785,
+              15.921586990356445,
+              20.10382843017578
+            ],
+            [
+              -7.185976505279541,
+              14.371915817260742,
+              19.351125717163086
+            ]
+          ]
+        },
+        {
+          "slope_deg": 47.72659683227539,
+          "area_m2": 2.0239052772521973,
+          "godot_local_vertices": [
+            [
+              -6.874206066131592,
+              13.367339134216309,
+              20.635406494140625
+            ],
+            [
+              -5.381641387939453,
+              13.371079444885254,
+              18.050283432006836
+            ],
+            [
+              -7.185976505279541,
+              14.371915817260742,
+              19.351125717163086
+            ]
+          ]
+        }
+      ],
+      "route_endpoint_average_grades": [
+        {
+          "route": 0,
+          "segment": 0,
+          "blender_xy": [
+            [
+              -12.7,
+              -18.64
+            ],
+            [
+              -7,
+              -20
+            ]
+          ],
+          "endpoint_grade_degrees": 16.25661131999166,
+          "rise_m": -1.7087678909301758
+        },
+        {
+          "route": 0,
+          "segment": 1,
+          "blender_xy": [
+            [
+              -7,
+              -20
+            ],
+            [
+              0,
+              -15
+            ]
+          ],
+          "endpoint_grade_degrees": 0.5934475287031279,
+          "rise_m": -0.08910274505615234
+        },
+        {
+          "route": 0,
+          "segment": 2,
+          "blender_xy": [
+            [
+              0,
+              -15
+            ],
+            [
+              6,
+              -9
+            ]
+          ],
+          "endpoint_grade_degrees": 2.295898128781052,
+          "rise_m": 0.3401956558227539
+        },
+        {
+          "route": 0,
+          "segment": 3,
+          "blender_xy": [
+            [
+              6,
+              -9
+            ],
+            [
+              9,
+              -2
+            ]
+          ],
+          "endpoint_grade_degrees": 15.257577598613224,
+          "rise_m": 2.0773801803588867
+        },
+        {
+          "route": 0,
+          "segment": 4,
+          "blender_xy": [
+            [
+              9,
+              -2
+            ],
+            [
+              8,
+              3
+            ]
+          ],
+          "endpoint_grade_degrees": 9.945935815572263,
+          "rise_m": 0.894134521484375
+        },
+        {
+          "route": 0,
+          "segment": 5,
+          "blender_xy": [
+            [
+              8,
+              3
+            ],
+            [
+              5.4,
+              3.36
+            ]
+          ],
+          "endpoint_grade_degrees": 18.405720835160533,
+          "rise_m": 0.8734474182128906
+        }
+      ]
+    }
+  },
+  "copied_from20h": {
+    "keeper_house": {
+      "blend": true,
+      "glb": true
+    },
+    "reef_low": {
+      "blend": true,
+      "glb": true
+    },
+    "reef_ridge": {
+      "blend": true,
+      "glb": true
+    },
+    "reef_spire": {
+      "blend": true,
+      "glb": true
+    }
+  },
+  "entrance_endpoint_notes": [
+    {
+      "building": "A house west",
+      "coordinate_system": "Blender XY island local",
+      "path_center_endpoint": [
+        -22,
+        -9
+      ],
+      "nominal_lowest_step_outer_edge": [
+        [
+          -23.0,
+          -8.4
+        ],
+        [
+          -21.0,
+          -8.4
+        ]
+      ],
+      "horizontal_distance_between_path_end_cap_and_outer_step_edge_m": 0.33120639888568704,
+      "qualification": "Analytic source route cap and retained actual asset source dimensions under preview transforms. Horizontal only; not actual new runtime terrain/step raycast."
+    },
+    {
+      "building": "A house east",
+      "coordinate_system": "Blender XY island local",
+      "path_center_endpoint": [
+        18.15,
+        -11.63
+      ],
+      "nominal_lowest_step_outer_edge": [
+        [
+          17.346601143097985,
+          -11.251892251369512
+        ],
+        [
+          19.027511975589256,
+          -11.505937076574629
+        ]
+      ],
+      "horizontal_distance_between_path_end_cap_and_outer_step_edge_m": 0.0,
+      "qualification": "Analytic source route cap and retained actual asset source dimensions under preview transforms. Horizontal only; not actual new runtime terrain/step raycast."
+    },
+    {
+      "building": "B house",
+      "coordinate_system": "Blender XY island local",
+      "path_center_endpoint": [
+        -14.57,
+        -8.34
+      ],
+      "nominal_lowest_step_outer_edge": [
+        [
+          -15.38827813191993,
+          -8.167556491444751
+        ],
+        [
+          -13.79339540183574,
+          -8.039692981094074
+        ]
+      ],
+      "horizontal_distance_between_path_end_cap_and_outer_step_edge_m": 0.0,
+      "qualification": "Analytic source route cap and retained actual asset source dimensions under preview transforms. Horizontal only; not actual new runtime terrain/step raycast."
+    },
+    {
+      "building": "C house",
+      "coordinate_system": "Blender XY island local",
+      "path_center_endpoint": [
+        -12.7,
+        -18.64
+      ],
+      "nominal_lowest_step_outer_edge": [
+        [
+          -13.361622588036955,
+          -18.32508773642195
+        ],
+        [
+          -11.977343078926495,
+          -18.534301121884987
+        ]
+      ],
+      "horizontal_distance_between_path_end_cap_and_outer_step_edge_m": 0.0,
+      "qualification": "Analytic source route cap and retained actual asset source dimensions under preview transforms. Horizontal only; not actual new runtime terrain/step raycast."
+    }
+  ],
+  "lighthouse_endpoints": {
+    "A": [
+      1,
+      9
+    ],
+    "B": [
+      4.815,
+      3.347
+    ],
+    "C": [
+      5.4,
+      3.36
+    ],
+    "coordinate_system": "Blender XY island local",
+    "interpretation": "All approximately 5m from tower axis toward actual front facet after yaw, inside the lowest-step radial interval 4.62..5.28m. Correct approximate entrance alignment, not vertical landing/tread proof."
+  },
+  "material_transition_notes": [
+    "Actual grass-terrain mesh uses exposed-rock material on raised shoulder triangles or normals with Blender Z <0.72; real geometry/material boundary, not image decal.",
+    "Path is separate closed slab at +0.045m with .35m thickness: lower face embedded about .305m below terrain. Exposed path top is continuous but material perimeter intentionally sharp, single uniform stone material.",
+    "Path linear base RGB .145/.127/.089 vs grass .050/.086/.018 may read as strong pale continuous ribbons; visual severity pending GPU images.",
+    "Individual cliff manifold does not prove all cliff bands/outcrop intersections or practical navigation; no whole-scene intersection scan run."
+  ],
+  "priority_findings": [
+    "C route first segment around Blender(-9.6,-19.9) contains57.36degree triangle; >45degree path area26.56%. Actual roadbed grading/steps needed, not color-only repair.",
+    "B >30degree area43.30%; broad steep road surfaces, not isolated numerical sliver despite max42.58degree triangle area.0329m2.",
+    "A house-west path endpoint leaves about.3m minimum endcap-to-lowstep boundary gap (.6m centerline); other house end caps may intersect projected stair outer edge obliquely but vertical connection unproven."
+  ]
+}

@@ -1,0 +1,47 @@
+from pathlib import Path
+import json,hashlib,math
+from collections import defaultdict
+import numpy as np
+from shapely.geometry import Polygon,Point,shape,mapping
+from shapely.ops import unary_union
+from PIL import Image
+R=Path(__file__).resolve().parents[1]
+def read(p):return json.loads((R/p).read_text(encoding='utf-8'))
+def sha(p):return hashlib.sha256((R/p).read_bytes()).hexdigest()
+localization=read('captures/rightcoast33b-visible-transition-localization.json');src=read('reviews/round-33b-reopened-source.json');occ=read('reviews/round-33-occupied-regions.json');house=shape(occ['house_actual_foundation_union']);paving=shape(occ['paving']['actual_union_projection']);mask=shape(occ['hard_occupied_house_and_paving_union']);run=R/'captures/validation_runs/rightcoast-33b-20260908T230223Z-8cfad99a2e374240853a864447c92c75'
+assert localization['source_sha256']==src['source_sha256']==sha('captures/rightcoast_study_33b/mainland_headland.blend');assert localization['source_reopen_sha256']==sha('reviews/round-33b-reopened-source.json')
+selected=[r for r in localization['rows'] if not(r['view']=='day-coast-front' and r['pixel']==[890,378])];assert len(selected)==4
+name=selected[0]['nearest_source_hit']['object'];o=src['objects'][name];v=np.array(o['vertices']);tris=o['triangles'];adj=defaultdict(set)
+for i,f in enumerate(tris):
+ for p in f:adj[p].add(i)
+def planarcoords(g):
+ if g.is_empty:return []
+ if g.geom_type=='Polygon':return list(g.exterior.coords)+[q for ring in g.interiors for q in ring.coords]
+ return [q for child in getattr(g,'geoms',[]) for q in planarcoords(child)]
+def face_record(i):
+ ids=tris[i];t=v[ids];n=np.cross(t[1]-t[0],t[2]-t[0]);poly=Polygon(t[:,:2]);cut=poly.intersection(mask) if poly.is_valid else Polygon();free=poly.difference(mask) if poly.is_valid else Polygon();area=poly.area;kind='degenerate_XY_projection' if area<1e-10 else ('unoccupied_face' if cut.area<1e-10 else ('fully_occupied_face' if free.area<1e-10 else 'partial_occupied_split_required'))
+ co=np.linalg.solve(np.column_stack([t[:,:2],np.ones(3)]),t[:,2]) if area>1e-10 else None
+ def heights(p):
+  vals=[float(np.dot(co,[*q,1])) for q in planarcoords(p)] if co is not None else []
+  return [min(vals),max(vals)] if vals else None
+ return dict(actual_triangle=i,vertex_indices=ids,vertices_blender=t.tolist(),normal=(n/np.linalg.norm(n)).tolist(),slope_degrees=math.degrees(math.acos(np.clip(n[2]/np.linalg.norm(n),-1,1))),projected_area_m2=area,house_intersection_area_m2=poly.intersection(house).area if poly.is_valid else 0,paving_intersection_area_m2=poly.intersection(paving).area if poly.is_valid else 0,actual_occupied_intersection_area_m2=cut.area,unoccupied_projected_area_m2=free.area,classification=kind,triangle_projection=mapping(poly),actual_occupied_piece=mapping(cut),actual_free_piece=mapping(free),height_plane_z_ax_by_c=co.tolist() if co is not None else None,occupied_height_min_max_m=heights(cut),free_height_min_max_m=heights(free))
+rows=[];ringids=set();seedids=set()
+for r in selected:
+ hit=r['nearest_source_hit'];i=hit['triangle'];assert tris[i]==hit['vertex_ids'] and np.array_equal(v[tris[i]],hit['xyz']);at=np.array(hit['location_blender']);t=v[tris[i]];weights=np.linalg.lstsq(np.column_stack([t[1]-t[0],t[2]-t[0]]),at-t[0],rcond=None)[0];reconstructed=t[0]+weights[0]*(t[1]-t[0])+weights[1]*(t[2]-t[0]);bary=[1-sum(weights),*weights]
+ cam=read(str((run/'images'/f"{r['view']}.png.json").relative_to(R)))['camera'];pitch,yaw,roll=cam['rotation'];c,s=math.cos(yaw),math.sin(yaw);cx,sx=math.cos(pitch),math.sin(pitch);basis=np.array([[c,s*sx,s*cx],[0,cx,-sx],[-s,c*sx,c*cx]]);wg=np.array([at[0]-2180,at[2],-at[1]-1830]);view=basis.T@(wg-np.array(cam['position']));w,h=Image.open(run/'images'/f"{r['view']}.png").size;focal=h/(2*math.tan(math.radians(cam['fov'])/2));pixel=np.array([w/2+focal*view[0]/-view[2],h/2-focal*view[1]/-view[2]])
+ ring=set.union(*(adj[p] for p in tris[i]));ringids.update(ring);seedids.update(tris[i]);rows.append(dict(view=r['view'],pixel=r['pixel'],actual_hit_face=face_record(i),hit_blender_xyz=at.tolist(),hit_barycentric=bary,hit_reconstruction_error_m=float(np.linalg.norm(at-reconstructed)),reprojected_actual_camera_pixel=pixel.tolist(),pixel_error=float(np.linalg.norm(pixel-r['pixel'])),vertex_shared_one_ring_triangles=sorted(ring),hit_distance_to_house_m=Point(at[:2]).distance(house),hit_distance_to_paving_m=Point(at[:2]).distance(paving)))
+faces=[face_record(i) for i in sorted(ringids)];vertexids=sorted({p for i in ringids for p in tris[i]});vertices=[]
+for idx in vertexids:
+ constraints=[]
+ for i in adj[idx]:
+  t=v[tris[i]];n=np.cross(t[1]-t[0],t[2]-t[0]);p=Polygon(t[:,:2])
+  if n[2]>1e-9 and t[:,2].max()>0 and p.is_valid and p.intersection(mask).area>1e-10:constraints.append(i)
+ point=Point(v[idx,:2]);vertices.append(dict(vertex_index=idx,xyz=v[idx].tolist(),is_original_hit_vertex=idx in seedids,point_inside_actual_occupied=mask.covers(point),distance_to_actual_occupied_m=point.distance(mask),incident_actual_above_water_upward_support_triangles=sorted(constraints),can_move_without_splitting_any_occupied_incident_face=not constraints,reform_rule='Preserve actual occupied linear pieces; cut partial incidentfaces at the exact actual support boundary before moving the outside vertex.' if constraints and not mask.covers(point) else ('Keep current occupied point/supportheight unless structure itself is deliberately resited.' if constraints else 'No actual house/paving support-face incidence found; silhouette and neighbor continuity remain design constraints.')))
+external_ids=sorted({i for a in vertices for i in a['incident_actual_above_water_upward_support_triangles']} - ringids)
+external_faces=[face_record(i) for i in external_ids]
+upper=[f for f in faces if f['normal'][2]>1e-9 and max(p[2] for p in f['vertices_blender'])>0];domain=unary_union([shape(f['triangle_projection']) for f in upper]);free=domain.difference(mask);occupied=domain.intersection(mask);allv=v[vertexids];examples=[f for f in upper+external_faces if f['classification']=='partial_occupied_split_required'];examples.sort(key=lambda f:f['unoccupied_projected_area_m2'],reverse=True)
+summary=dict(selected_hit_count=4,shared_vertex_one_ring_actual_triangles=len(faces),one_ring_vertices=len(vertexids),actual_upward_transition_domain=mapping(domain),actual_upward_transition_domain_area_m2=domain.area,actual_occupied_piece=mapping(occupied),actual_occupied_piece_area_m2=occupied.area,actual_editable_outside_piece=mapping(free),actual_editable_outside_piece_area_m2=free.area,one_ring_xyz_bounds=[allv.min(axis=0).tolist(),allv.max(axis=0).tolist()],one_ring_face_class_counts=dict(__import__('collections').Counter(f['classification'] for f in faces)),vertex_no_occupied_incident_support_count=sum(a['can_move_without_splitting_any_occupied_incident_face'] for a in vertices),outside_vertices_with_occupied_neighbor_count=sum(not a['point_inside_actual_occupied'] and not a['can_move_without_splitting_any_occupied_incident_face'] for a in vertices),largest_partial_face_examples=[dict(actual_triangle=f['actual_triangle'],vertex_indices=f['vertex_indices'],area_m2=f['projected_area_m2'],actual_occupied_area_m2=f['actual_occupied_intersection_area_m2'],editable_outside_area_m2=f['unoccupied_projected_area_m2']) for f in examples[:6]])
+result=dict(scope='33d bounded four exposed33b source-hit triangles and all shared-vertex one-ring faces. Excludesfront890378. Actual support boundary pieces, not whole-face freezing.',coordinate_system=occ['coordinate_system'],bindings={'localization_sha256':sha('captures/rightcoast33b-visible-transition-localization.json'),'source_reopen_sha256':sha('reviews/round-33b-reopened-source.json'),'actual_source_sha256':src['source_sha256'],'occupied_report_sha256':sha('reviews/round-33-occupied-regions.json')},hits=rows,one_ring_faces=faces,one_ring_vertices=vertices,transition_domain=summary,limits=['The investigated editable band is exactly the union of actual upward source one-ring triangles around these4hits; no claim this covers the entire coastline or all visually problematic slopes.','Reprojection independently checks actual camera/FOV,image dimensions and hit barycentric membership. It does not recast allsceneoccluders or newly establish pixel visibility; root selected4exposedhits and excluded coveredfront890378.','Freeface projection does not automatically allow allits vertices to move: each vertex is checked against allits incident actual upward occupiedsupportfaces, including faces outside the primary ring.','House/road support is actual9foundation+922paving union; no12m/28mfade, layoutpad,2mtree disk or wholeface surrogate added. Tree/Worldoverlay/newmeshselfintersection remain separate candidatechecks.'],full_reference_accepted=False)
+result['additional_actual_support_faces_incident_to_one_ring_vertices']=external_faces
+(R/'reviews/round-33d-visible-transition-domain.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+compact={k:v for k,v in summary.items() if not isinstance(v,dict)};print(json.dumps(dict(hits=[dict(pixel=r['pixel'],triangle=r['actual_hit_face']['actual_triangle'],classification=r['actual_hit_face']['classification'],area=r['actual_hit_face']['projected_area_m2'],occupied=r['actual_hit_face']['actual_occupied_intersection_area_m2'],free=r['actual_hit_face']['unoccupied_projected_area_m2'],pixelerror=r['pixel_error']) for r in rows],summary=compact),indent=2))

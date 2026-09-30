@@ -1,0 +1,802 @@
+{
+  "scope": "Independent six-image review; read-only SHA/native gate and actual GLB grass slope check. No engine, Blender or production changes. Footing GPU evidence executed by parent, independently read here.",
+  "run": "E:\\FeiTing\\captures\\validation_runs\\lantern-islands-20d-20260908T090120Z-7d09803bf0064e7695ba203958762481",
+  "pipeline_passed": true,
+  "visual_acceptance": false,
+  "artifact_count": 53,
+  "artifact_sha256": {
+    "study-inputs/builder.py": "9db85a8ed288bb16d360647e8607d42e9d60daf91c9f76296bb1acc4fc6f1b71",
+    "study-inputs/island_a.blend": "01ada62093854e77e207ccf57b06f954ba780df2d1d34a4da049e6af61626c69",
+    "study-inputs/island_a.glb": "918c959c1426708b3b4590277158beb3aa0a48dd7e314c45a4163074f8102e87",
+    "study-inputs/island_b.blend": "4fddb7759d3f49570838a2762a6c9a4ea5a6df1cc2094776c70f440f5dc3d303",
+    "study-inputs/island_b.glb": "995ab176b4ca7f950b1ee9c008a967edde93a91ef18c853cba845bb1999b805e",
+    "study-inputs/island_c.blend": "9a5ac37ca7cd4143e69fae2f808b17effed64acf00cf458ed02417cc78b362dc",
+    "study-inputs/island_c.glb": "eeba6ad30fba4b8bc1c47b5a195faa48ca662452bde72f5b47e28c63b6852ee2",
+    "study-inputs/keeper_house.blend": "fba313178e3174f1a129b2fde9b337a1da0bfee58b4fc18c25be4a1047ffd46f",
+    "study-inputs/keeper_house.glb": "e64f9dbdbce55c8135e87f52d437770dbd206840fa032f3659ac04d9d8750cc6",
+    "study-inputs/model-report.json": "515e727d6c30e478625ef6da362cfa245d16de04cf6515dd1cab7922d0f5ab9d",
+    "study-inputs/reef_low.blend": "f62bd36a078f82c15ac5e6be244a270d5c0e6c255b9996481b15613637fce503",
+    "study-inputs/reef_low.glb": "dc782b604f9e74239fae7e48e77127e1282f66a953c7735621169a4849127c92",
+    "study-inputs/reef_ridge.blend": "cf10e96e25ccba4293fdda9ac962879c44634cab12b5d4ef6d61a9a86796d868",
+    "study-inputs/reef_ridge.glb": "5478b5ca0d28c4db4358bd26a19048e5b80e0635958a3e13ffb5c2a345b5d91c",
+    "study-inputs/reef_spire.blend": "88c4ef2abfcad60c0735b7a078b471f0fe47e23c79fb33f82ed9171b620793a8",
+    "study-inputs/reef_spire.glb": "ee24acdedd9410cb5db7a423eb805ceff897d01e62b0bee485acbdf4453c0022",
+    "study-inputs/round-20d-coast-native-check.json": "e281dedcefed54635a46984441f5a494b4d504364ce095d364f9260c6d94f81a",
+    "study-inputs/render_lantern_islands_study.py": "362ae8e14715663bbabd3b9faae0a85633766fe243ddee50a3a70a1621598b69",
+    "study-inputs/preview_lantern_islands_20.gd": "e580e1e8e36d6bc8d3a864fc6d57769f5148d51620ffe67961148ba9fbbd63ae",
+    "study-inputs/1126.png": "3051f512881fecf3d2b8dacadbac3ed10473f9094d28870526ae3cd4db9e4353",
+    "study-inputs/1342.png": "7acc98104013d9122eb551846b2d7fc1f7549bce8b2e3199eae8f5385a3ea238",
+    "study-inputs/1218.png": "774d8f62f8fa48a93ed15650c3bc21971b08b55262dea9421de36f3368f556b6",
+    "inputs.json": "2b4529e1492ee86e083458210ba787446c5b8cc85902aaa81f140c67a633b057",
+    "images/archipelago.png": "c59fdb1c4891db399438b3bf488a45fb2a012e07e10dd3e83d6f0af909ef90c5",
+    "images/archipelago.png.json": "8e899304c196286281bb3e4e1b90df2c576880cb6f706da6cc5189c93fc4a373",
+    "capture-archipelago.log": "c0601223c078e9d83545d37e283d29b694f82403fe4f921e25b21c688d4aa034",
+    "capture-archipelago-error.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stages/capture-archipelago.json": "e30d5907281fd19f6cfd16be23ea337d6e3bef0cdfc78d2515c418d6a52595c7",
+    "images/island-front.png": "4054909ac4c0dc6a5a9c27946f6d2cdc410eb5335047133f3e0077700c77e8b4",
+    "images/island-front.png.json": "c907e9f2981bf40361cc107d7e9e53a530acfb98ca2b09a4f9527fa74d54e643",
+    "capture-island-front.log": "9aa14bc020a0c423c7df5ff1c7b8aab2d74ee79d94bcf2237cbfdf74928da6a2",
+    "capture-island-front-error.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stages/capture-island-front.json": "57ecc299866621fb64fafd55b585073b3c502c79e6381ae8f1785e1e79845671",
+    "images/island-back.png": "9236b90795b293b14d70504853952bcbe300569e4ef6ae63274e7094e5cc6556",
+    "images/island-back.png.json": "22d0f359b52d3e06255e8b487dd40e025e630e7dfc75149a69fee142bc2ef5dc",
+    "capture-island-back.log": "b97b3b59b48edf7ae3c146dec6f944f4b0bae77c88c26a5eb47f2bb436be5f6c",
+    "capture-island-back-error.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stages/capture-island-back.json": "79f9f3739de6b83de9322d38db81d2cc95f2f04c61025c1c50bbf70b26b2e788",
+    "images/shoreline.png": "5818c654281a990fc0c475e82988dbbc646c3a7cd855a30941e4a7cc424d132b",
+    "images/shoreline.png.json": "153f91751da432712eb20175fee4a831a95b71ebc60cf58a7f4833e7f6c17571",
+    "capture-shoreline.log": "397fcac197938d8b19f5629ca81e54c53df70f94181619d972be684098e97d75",
+    "capture-shoreline-error.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stages/capture-shoreline.json": "6d9ac7e83f2d486efc7425cb0d806a2879e5a57025b7fa0a68cc563e9ea4dcdb",
+    "images/house-front.png": "ccf223a48f55a6c737d74ca10f92c5b2b7229fbfff47d7b263df74a368b40f09",
+    "images/house-front.png.json": "33adb85cf7011f4233dbe936a4132ac63eb7efff56a51b339e9e68f1cd777ede",
+    "capture-house-front.log": "dab5a9fbce76dc0318eecd2e977591d0633afdf1776b02d65031adc74b4e5259",
+    "capture-house-front-error.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stages/capture-house-front.json": "3a16c5ed71de07f321b272012f6d171cebf1389417639b8e517701120bf1015d",
+    "images/house-back.png": "875ddd1f16fbc34cffb8485a97c23214ca1026426ec18ad0e7d654bc3c3c28da",
+    "images/house-back.png.json": "1dd35d444a2c3c98a1a87a39a7fa8ec9e97a9bc3ef00f2ab9f5b08e8d5bb329f",
+    "capture-house-back.log": "c71d081b2f228535474cdcf46945acb38e6d89152baf79d62015ea7afbfc757b",
+    "capture-house-back-error.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stages/capture-house-back.json": "c601e3ca14dcd28d3f7d5569cbcec6f66c619537b151c5749dc8ba87d12d4145"
+  },
+  "assets": [
+    {
+      "name": "island_a",
+      "parts": 12,
+      "source_sha256": "01ada62093854e77e207ccf57b06f954ba780df2d1d34a4da049e6af61626c69",
+      "glb_sha256": "918c959c1426708b3b4590277158beb3aa0a48dd7e314c45a4163074f8102e87"
+    },
+    {
+      "name": "island_b",
+      "parts": 12,
+      "source_sha256": "4fddb7759d3f49570838a2762a6c9a4ea5a6df1cc2094776c70f440f5dc3d303",
+      "glb_sha256": "995ab176b4ca7f950b1ee9c008a967edde93a91ef18c853cba845bb1999b805e"
+    },
+    {
+      "name": "island_c",
+      "parts": 12,
+      "source_sha256": "9a5ac37ca7cd4143e69fae2f808b17effed64acf00cf458ed02417cc78b362dc",
+      "glb_sha256": "eeba6ad30fba4b8bc1c47b5a195faa48ca662452bde72f5b47e28c63b6852ee2"
+    },
+    {
+      "name": "reef_low",
+      "parts": 2,
+      "source_sha256": "f62bd36a078f82c15ac5e6be244a270d5c0e6c255b9996481b15613637fce503",
+      "glb_sha256": "dc782b604f9e74239fae7e48e77127e1282f66a953c7735621169a4849127c92"
+    },
+    {
+      "name": "reef_spire",
+      "parts": 2,
+      "source_sha256": "88c4ef2abfcad60c0735b7a078b471f0fe47e23c79fb33f82ed9171b620793a8",
+      "glb_sha256": "ee24acdedd9410cb5db7a423eb805ceff897d01e62b0bee485acbdf4453c0022"
+    },
+    {
+      "name": "reef_ridge",
+      "parts": 2,
+      "source_sha256": "cf10e96e25ccba4293fdda9ac962879c44634cab12b5d4ef6d61a9a86796d868",
+      "glb_sha256": "5478b5ca0d28c4db4358bd26a19048e5b80e0635958a3e13ffb5c2a345b5d91c"
+    },
+    {
+      "name": "keeper_house",
+      "parts": 171,
+      "source_sha256": "fba313178e3174f1a129b2fde9b337a1da0bfee58b4fc18c25be4a1047ffd46f",
+      "glb_sha256": "e64f9dbdbce55c8135e87f52d437770dbd206840fa032f3659ac04d9d8750cc6"
+    }
+  ],
+  "source_parts_total": 213,
+  "keeper_house_unchanged_from20c": true,
+  "native_gate_passed": true,
+  "native_gate_sha256": "e281dedcefed54635a46984441f5a494b4d504364ce095d364f9260c6d94f81a",
+  "actual_glb_grass": [
+    {
+      "asset": "island_a",
+      "upward_triangles": 354,
+      "upward_area_m2": 11148.125913182937,
+      "slope_range_deg": [
+        0.0,
+        66.21270445819736
+      ],
+      "horizontal_fraction": 0.015253282545742338,
+      "grass_height_minmax_m": [
+        5.20814323425293,
+        25.87659454345703
+      ]
+    },
+    {
+      "asset": "island_b",
+      "upward_triangles": 296,
+      "upward_area_m2": 5676.480214436254,
+      "slope_range_deg": [
+        0.0,
+        87.62245443242773
+      ],
+      "horizontal_fraction": 0.010024268780106838,
+      "grass_height_minmax_m": [
+        5.0,
+        20.063745498657227
+      ]
+    },
+    {
+      "asset": "island_c",
+      "upward_triangles": 324,
+      "upward_area_m2": 3631.105939150888,
+      "slope_range_deg": [
+        0.0,
+        46.68979657945262
+      ],
+      "horizontal_fraction": 0.11165349870665064,
+      "grass_height_minmax_m": [
+        5.0,
+        16.56515884399414
+      ]
+    }
+  ],
+  "sidecar_views": {
+    "archipelago": {
+      "footings": [
+        {
+          "building": "Lighthouse_island_a",
+          "minmax_gap_m": [
+            -0.51123046875,
+            -0.069091796875
+          ],
+          "positive_samples": []
+        },
+        {
+          "building": "Lighthouse_island_b",
+          "minmax_gap_m": [
+            -0.500686645507813,
+            -0.339431762695313
+          ],
+          "positive_samples": []
+        },
+        {
+          "building": "Lighthouse_island_c",
+          "minmax_gap_m": [
+            -0.500076293945313,
+            0.0678558349609375
+          ],
+          "positive_samples": [
+            {
+              "index": 7,
+              "collider": "/root/Skyfarer/LanternCoastStudy/island_c_2/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+              "gap_m": 0.0678558349609375,
+              "position": [
+                -3045.00512695313,
+                16.0651397705078,
+                -2651.40087890625
+              ]
+            },
+            {
+              "index": 8,
+              "collider": "/root/Skyfarer/LanternCoastStudy/island_c_2/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+              "gap_m": 0.037994384765625,
+              "position": [
+                -3044.60424804688,
+                16.0651397705078,
+                -2647.40600585938
+              ]
+            }
+          ]
+        },
+        {
+          "building": "keeper_house_19",
+          "minmax_gap_m": [
+            -0.649999618530273,
+            -0.592550277709961
+          ],
+          "positive_samples": []
+        },
+        {
+          "building": "keeper_house_20",
+          "minmax_gap_m": [
+            -0.582101821899414,
+            -0.452417373657227
+          ],
+          "positive_samples": []
+        },
+        {
+          "building": "keeper_house_21",
+          "minmax_gap_m": [
+            -0.673519134521484,
+            -0.184597015380859
+          ],
+          "positive_samples": []
+        },
+        {
+          "building": "keeper_house_22",
+          "minmax_gap_m": [
+            -0.559904098510742,
+            -0.0572490692138672
+          ],
+          "positive_samples": []
+        }
+      ],
+      "camera": {
+        "fov": 65.0,
+        "position": [
+          -2215.0,
+          88.0,
+          -1500.0
+        ],
+        "rotation": [
+          -0.0916687622666359,
+          0.608036398887634,
+          0.0
+        ]
+      },
+      "camera_same_as20c": false
+    },
+    "island-front": {
+      "footings": [
+        {
+          "building": "Lighthouse_island_a",
+          "minmax_gap_m": [
+            -0.51123046875,
+            -0.069091796875
+          ],
+          "positive_samples": []
+        },
+        {
+          "building": "Lighthouse_island_b",
+          "minmax_gap_m": [
+            -0.500686645507813,
+            -0.339431762695313
+          ],
+          "positive_samples": []
+        },
+        {
+          "building": "Lighthouse_island_c",
+          "minmax_gap_m": [
+            -0.500076293945313,
+            0.0678558349609375
+          ],
+          "positive_samples": [
+            {
+              "index": 7,
+              "collider": "/root/Skyfarer/LanternCoastStudy/island_c_2/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+              "gap_m": 0.0678558349609375,
+              "position": [
+                -3045.00512695313,
+                16.0651397705078,
+                -2651.40087890625
+              ]
+            },
+            {
+              "index": 8,
+              "collider": "/root/Skyfarer/LanternCoastStudy/island_c_2/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+              "gap_m": 0.037994384765625,
+              "position": [
+                -3044.60424804688,
+                16.0651397705078,
+                -2647.40600585938
+              ]
+            }
+          ]
+        },
+        {
+          "building": "keeper_house_19",
+          "minmax_gap_m": [
+            -0.649999618530273,
+            -0.592550277709961
+          ],
+          "positive_samples": []
+        },
+        {
+          "building": "keeper_house_20",
+          "minmax_gap_m": [
+            -0.582101821899414,
+            -0.452417373657227
+          ],
+          "positive_samples": []
+        },
+        {
+          "building": "keeper_house_21",
+          "minmax_gap_m": [
+            -0.673519134521484,
+            -0.184597015380859
+          ],
+          "positive_samples": []
+        },
+        {
+          "building": "keeper_house_22",
+          "minmax_gap_m": [
+            -0.559904098510742,
+            -0.0572490692138672
+          ],
+          "positive_samples": []
+        }
+      ],
+      "camera": {
+        "fov": 60.0,
+        "position": [
+          -2210.0,
+          85.0,
+          -1495.0
+        ],
+        "rotation": [
+          -0.323378473520279,
+          0.734594464302063,
+          0.0
+        ]
+      },
+      "camera_same_as20c": true
+    },
+    "island-back": {
+      "footings": [
+        {
+          "building": "Lighthouse_island_a",
+          "minmax_gap_m": [
+            -0.51123046875,
+            -0.069091796875
+          ],
+          "positive_samples": []
+        },
+        {
+          "building": "Lighthouse_island_b",
+          "minmax_gap_m": [
+            -0.500686645507813,
+            -0.339431762695313
+          ],
+          "positive_samples": []
+        },
+        {
+          "building": "Lighthouse_island_c",
+          "minmax_gap_m": [
+            -0.500076293945313,
+            0.0678558349609375
+          ],
+          "positive_samples": [
+            {
+              "index": 7,
+              "collider": "/root/Skyfarer/LanternCoastStudy/island_c_2/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+              "gap_m": 0.0678558349609375,
+              "position": [
+                -3045.00512695313,
+                16.0651397705078,
+                -2651.40087890625
+              ]
+            },
+            {
+              "index": 8,
+              "collider": "/root/Skyfarer/LanternCoastStudy/island_c_2/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+              "gap_m": 0.037994384765625,
+              "position": [
+                -3044.60424804688,
+                16.0651397705078,
+                -2647.40600585938
+              ]
+            }
+          ]
+        },
+        {
+          "building": "keeper_house_19",
+          "minmax_gap_m": [
+            -0.649999618530273,
+            -0.592550277709961
+          ],
+          "positive_samples": []
+        },
+        {
+          "building": "keeper_house_20",
+          "minmax_gap_m": [
+            -0.582101821899414,
+            -0.452417373657227
+          ],
+          "positive_samples": []
+        },
+        {
+          "building": "keeper_house_21",
+          "minmax_gap_m": [
+            -0.673519134521484,
+            -0.184597015380859
+          ],
+          "positive_samples": []
+        },
+        {
+          "building": "keeper_house_22",
+          "minmax_gap_m": [
+            -0.559904098510742,
+            -0.0572490692138672
+          ],
+          "positive_samples": []
+        }
+      ],
+      "camera": {
+        "fov": 60.0,
+        "position": [
+          -2485.0,
+          80.0,
+          -1810.0
+        ],
+        "rotation": [
+          -0.305406630039215,
+          -2.44073820114136,
+          0.0
+        ]
+      },
+      "camera_same_as20c": true
+    },
+    "shoreline": {
+      "footings": [
+        {
+          "building": "Lighthouse_island_a",
+          "minmax_gap_m": [
+            -0.51123046875,
+            -0.069091796875
+          ],
+          "positive_samples": []
+        },
+        {
+          "building": "Lighthouse_island_b",
+          "minmax_gap_m": [
+            -0.500686645507813,
+            -0.339431762695313
+          ],
+          "positive_samples": []
+        },
+        {
+          "building": "Lighthouse_island_c",
+          "minmax_gap_m": [
+            -0.500076293945313,
+            0.0678558349609375
+          ],
+          "positive_samples": [
+            {
+              "index": 7,
+              "collider": "/root/Skyfarer/LanternCoastStudy/island_c_2/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+              "gap_m": 0.0678558349609375,
+              "position": [
+                -3045.00512695313,
+                16.0651397705078,
+                -2651.40087890625
+              ]
+            },
+            {
+              "index": 8,
+              "collider": "/root/Skyfarer/LanternCoastStudy/island_c_2/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+              "gap_m": 0.037994384765625,
+              "position": [
+                -3044.60424804688,
+                16.0651397705078,
+                -2647.40600585938
+              ]
+            }
+          ]
+        },
+        {
+          "building": "keeper_house_19",
+          "minmax_gap_m": [
+            -0.649999618530273,
+            -0.592550277709961
+          ],
+          "positive_samples": []
+        },
+        {
+          "building": "keeper_house_20",
+          "minmax_gap_m": [
+            -0.582101821899414,
+            -0.452417373657227
+          ],
+          "positive_samples": []
+        },
+        {
+          "building": "keeper_house_21",
+          "minmax_gap_m": [
+            -0.673519134521484,
+            -0.184597015380859
+          ],
+          "positive_samples": []
+        },
+        {
+          "building": "keeper_house_22",
+          "minmax_gap_m": [
+            -0.559904098510742,
+            -0.0572490692138672
+          ],
+          "positive_samples": []
+        }
+      ],
+      "camera": {
+        "fov": 55.0,
+        "position": [
+          -2242.0,
+          21.0,
+          -1558.0
+        ],
+        "rotation": [
+          -0.121913999319077,
+          0.758737802505493,
+          0.0
+        ]
+      },
+      "camera_same_as20c": true
+    },
+    "house-front": {
+      "footings": [
+        {
+          "building": "Lighthouse_island_a",
+          "minmax_gap_m": [
+            -0.51123046875,
+            -0.069091796875
+          ],
+          "positive_samples": []
+        },
+        {
+          "building": "Lighthouse_island_b",
+          "minmax_gap_m": [
+            -0.500686645507813,
+            -0.339431762695313
+          ],
+          "positive_samples": []
+        },
+        {
+          "building": "Lighthouse_island_c",
+          "minmax_gap_m": [
+            -0.500076293945313,
+            0.0678558349609375
+          ],
+          "positive_samples": [
+            {
+              "index": 7,
+              "collider": "/root/Skyfarer/LanternCoastStudy/island_c_2/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+              "gap_m": 0.0678558349609375,
+              "position": [
+                -3045.00512695313,
+                16.0651397705078,
+                -2651.40087890625
+              ]
+            },
+            {
+              "index": 8,
+              "collider": "/root/Skyfarer/LanternCoastStudy/island_c_2/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+              "gap_m": 0.037994384765625,
+              "position": [
+                -3044.60424804688,
+                16.0651397705078,
+                -2647.40600585938
+              ]
+            }
+          ]
+        },
+        {
+          "building": "keeper_house_19",
+          "minmax_gap_m": [
+            -0.649999618530273,
+            -0.592550277709961
+          ],
+          "positive_samples": []
+        },
+        {
+          "building": "keeper_house_20",
+          "minmax_gap_m": [
+            -0.582101821899414,
+            -0.452417373657227
+          ],
+          "positive_samples": []
+        },
+        {
+          "building": "keeper_house_21",
+          "minmax_gap_m": [
+            -0.673519134521484,
+            -0.184597015380859
+          ],
+          "positive_samples": []
+        },
+        {
+          "building": "keeper_house_22",
+          "minmax_gap_m": [
+            -0.559904098510742,
+            -0.0572490692138672
+          ],
+          "positive_samples": []
+        }
+      ],
+      "camera": {
+        "fov": 55.0,
+        "position": [
+          -2360.0,
+          29.4329986572266,
+          -1632.0
+        ],
+        "rotation": [
+          -0.19739556312561,
+          0.643501102924347,
+          0.0
+        ]
+      },
+      "camera_same_as20c": false
+    },
+    "house-back": {
+      "footings": [
+        {
+          "building": "Lighthouse_island_a",
+          "minmax_gap_m": [
+            -0.51123046875,
+            -0.069091796875
+          ],
+          "positive_samples": []
+        },
+        {
+          "building": "Lighthouse_island_b",
+          "minmax_gap_m": [
+            -0.500686645507813,
+            -0.339431762695313
+          ],
+          "positive_samples": []
+        },
+        {
+          "building": "Lighthouse_island_c",
+          "minmax_gap_m": [
+            -0.500076293945313,
+            0.0678558349609375
+          ],
+          "positive_samples": [
+            {
+              "index": 7,
+              "collider": "/root/Skyfarer/LanternCoastStudy/island_c_2/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+              "gap_m": 0.0678558349609375,
+              "position": [
+                -3045.00512695313,
+                16.0651397705078,
+                -2651.40087890625
+              ]
+            },
+            {
+              "index": 8,
+              "collider": "/root/Skyfarer/LanternCoastStudy/island_c_2/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+              "gap_m": 0.037994384765625,
+              "position": [
+                -3044.60424804688,
+                16.0651397705078,
+                -2647.40600585938
+              ]
+            }
+          ]
+        },
+        {
+          "building": "keeper_house_19",
+          "minmax_gap_m": [
+            -0.649999618530273,
+            -0.592550277709961
+          ],
+          "positive_samples": []
+        },
+        {
+          "building": "keeper_house_20",
+          "minmax_gap_m": [
+            -0.582101821899414,
+            -0.452417373657227
+          ],
+          "positive_samples": []
+        },
+        {
+          "building": "keeper_house_21",
+          "minmax_gap_m": [
+            -0.673519134521484,
+            -0.184597015380859
+          ],
+          "positive_samples": []
+        },
+        {
+          "building": "keeper_house_22",
+          "minmax_gap_m": [
+            -0.559904098510742,
+            -0.0572490692138672
+          ],
+          "positive_samples": []
+        }
+      ],
+      "camera": {
+        "fov": 55.0,
+        "position": [
+          -2385.0,
+          31.4329986572266,
+          -1665.0
+        ],
+        "rotation": [
+          -0.273343980312347,
+          -2.48874592781067,
+          0.0
+        ]
+      },
+      "camera_same_as20c": false
+    }
+  },
+  "production_noncache_input_delta_vs20c": [],
+  "decision": "Continue draft only. Preserve terrain-relief and reduced repetitive blocks, but rebuild primary shoreline geometry and fix island_c lighthouse support before integration.",
+  "grass_steep_face_followup": [
+    {
+      "asset": "island_a",
+      "steepest_triangle_index_in_grass_primitive": 0,
+      "steepest_xyz_godot": [
+        [
+          -76.5,
+          5.542375087738037,
+          23.381999969482422
+        ],
+        [
+          -78.4000015258789,
+          5.20814323425293,
+          19.600000381469727
+        ],
+        [
+          -68.08000183105469,
+          5.832102298736572,
+          41.400001525878906
+        ]
+      ],
+      "steepest_area_m2": 2.962496375127003,
+      "slope_deg": 66.21270445819736,
+      "over45_area_fraction": 0.006128580568834141
+    },
+    {
+      "asset": "island_b",
+      "steepest_triangle_index_in_grass_primitive": 0,
+      "steepest_xyz_godot": [
+        [
+          -47.400001525878906,
+          5.0,
+          10.428000450134277
+        ],
+        [
+          -47.25,
+          5.566729545593262,
+          -0.0
+        ],
+        [
+          -47.17499923706055,
+          5.242867469787598,
+          -7.293000221252441
+        ]
+      ],
+      "steepest_area_m2": 3.758708071944249,
+      "slope_deg": 87.62245443242773,
+      "over45_area_fraction": 0.008769930417528328
+    },
+    {
+      "asset": "island_c",
+      "steepest_triangle_index_in_grass_primitive": 321,
+      "steepest_xyz_godot": [
+        [
+          2.5199999809265137,
+          10.471906661987305,
+          21.823200225830078
+        ],
+        [
+          -4.144000053405762,
+          11.054970741271973,
+          19.979999542236328
+        ],
+        [
+          8.51200008392334,
+          7.856553554534912,
+          25.488000869750977
+        ]
+      ],
+      "steepest_area_m2": 9.751303291165646,
+      "slope_deg": 46.68979657945262,
+      "over45_area_fraction": 0.0026854912675574345
+    }
+  ]
+}

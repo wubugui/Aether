@@ -1,0 +1,131 @@
+{
+  "round": "30d",
+  "scope": "Actual GLB native cutback check, no old top-index assumption. Exact clipped supporting linear surfaces checked only required road/pads/current tree disks. Exposure measured for three targeted unchanged rocks only.",
+  "files": {
+    "captures\\lantern_island_study_30d\\island_c.glb": "7c5e4f1f66436fb2b28cb16416be8d08d95657f96b86dcfd282106b37ca18c5f",
+    "captures\\lantern_island_study_30d\\geometry-evidence.json": "209e8d6b360d91dfcfad9e7d954f704cc5f5b91dd4c767713290dbc6cd75bd9a",
+    "captures\\lantern_island_study_30c\\island_c.glb": "ef53c347e8844f53c8e16fca0f262940fe6ccfc751b2ce31d78408878b47b224",
+    "reviews\\round-30d-cutback-intake.json": "ce49915da4059872293ba4c10521c7ee7a1e907b01a32a702cb8d42f8d510f8b"
+  },
+  "native_objects": 19,
+  "source_terrain_all_triangles_equal_actual_glb": true,
+  "actual_glb_closed_oppositely_paired_edges_at_1e_5m": true,
+  "actual_glb_min_triangle_area_m2": 1.4351405588411331e-06,
+  "actual_glb_volume_m3": 21674.48483949245,
+  "path_and_17_rocks_source_exact_actual_triangles_present": [
+    "island_c terrain fitted keeper paths",
+    "West broken shoulder",
+    "Southwest leaning crag",
+    "South broad low spur",
+    "East high fracture",
+    "Northeast sloping shoulder",
+    "North broken ridge",
+    "Northwest split buttress",
+    "West rooted toe",
+    "Southwest wash ledge",
+    "South low reef",
+    "East submerged root",
+    "Northeast low cluster",
+    "North tidal end",
+    "Northwest rooted slab",
+    "West waterline satellite",
+    "South low satellite",
+    "East tidal satellite"
+  ],
+  "actual_path_glb_counter_exact": true,
+  "required_support_surfaces": [
+    {
+      "region": "road_footprint",
+      "expected_support_projection_area_m2": 25.572388056364687,
+      "same_linear_height_coverage_m2": 25.57238805636466,
+      "unpreserved_area_m2": 0.0,
+      "higher_than_old_by_over_0_1mm_area_m2": 0.0,
+      "all_intersecting_up_surface_height_delta_min_max_m": [
+        0.0,
+        0.0
+      ],
+      "pass": true
+    },
+    {
+      "region": "padded_sites",
+      "expected_support_projection_area_m2": 123.97999999993658,
+      "same_linear_height_coverage_m2": 123.97999999993658,
+      "unpreserved_area_m2": 0.0,
+      "higher_than_old_by_over_0_1mm_area_m2": 0.0,
+      "all_intersecting_up_surface_height_delta_min_max_m": [
+        0.0,
+        0.0
+      ],
+      "pass": true
+    },
+    {
+      "region": "current_CD_tree_axis_2m_disks",
+      "expected_support_projection_area_m2": 77.46574321362782,
+      "same_linear_height_coverage_m2": 77.46574321362787,
+      "unpreserved_area_m2": 0.0,
+      "higher_than_old_by_over_0_1mm_area_m2": 0.0,
+      "all_intersecting_up_surface_height_delta_min_max_m": [
+        0.0,
+        0.0
+      ],
+      "pass": true
+    }
+  ],
+  "three_rock_exposure": [
+    {
+      "rock": "West broken shoulder",
+      "before_30c": {
+        "shoulder_z_threshold_m": 0.5,
+        "total_roof_projection_area_m2": 96.69664991976464,
+        "exposed_projection_area_m2": 1.7650555987630415e-14,
+        "exposed_upward_3d_surface_area_m2": 5.842327854289798e-14
+      },
+      "after_30d": {
+        "shoulder_z_threshold_m": 0.5,
+        "total_roof_projection_area_m2": 96.69664991976464,
+        "exposed_projection_area_m2": 51.83175571457181,
+        "exposed_upward_3d_surface_area_m2": 63.40893425103705
+      },
+      "exposed_projection_gain_m2": 51.8317557145718
+    },
+    {
+      "rock": "Southwest leaning crag",
+      "before_30c": {
+        "shoulder_z_threshold_m": 0.5,
+        "total_roof_projection_area_m2": 77.86269988184442,
+        "exposed_projection_area_m2": 5.065978019025419e-14,
+        "exposed_upward_3d_surface_area_m2": 1.8734726750850044e-13
+      },
+      "after_30d": {
+        "shoulder_z_threshold_m": 0.5,
+        "total_roof_projection_area_m2": 77.86269988184442,
+        "exposed_projection_area_m2": 43.206448243204626,
+        "exposed_upward_3d_surface_area_m2": 53.20821896975102
+      },
+      "exposed_projection_gain_m2": 43.206448243204576
+    },
+    {
+      "rock": "North broken ridge",
+      "before_30c": {
+        "shoulder_z_threshold_m": 0.5,
+        "total_roof_projection_area_m2": 104.67934461599009,
+        "exposed_projection_area_m2": 0.5080560020503104,
+        "exposed_upward_3d_surface_area_m2": 1.8973046720056284
+      },
+      "after_30d": {
+        "shoulder_z_threshold_m": 0.5,
+        "total_roof_projection_area_m2": 104.67934461599009,
+        "exposed_projection_area_m2": 58.213166711649976,
+        "exposed_upward_3d_surface_area_m2": 77.43591824511859
+      },
+      "exposed_projection_gain_m2": 57.705110709599666
+    }
+  ],
+  "pass": true,
+  "limits": [
+    "Exposure uses actual upward rock roof minus upper main-shell coverage, roof Z>=0.5m, 0.1mm separation tolerance. It is geometric surface exposure, not screen-space visibility.",
+    "Not exhaustive 3D self-intersection or walking test.",
+    "Tree support follows current30c runtime axes; candidate runtime placements checked separately by root.",
+    "Positive exposed area is not art acceptance; same-camera actual GPU review remains required."
+  ]
+}

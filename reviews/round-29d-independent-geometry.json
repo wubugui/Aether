@@ -1,0 +1,206 @@
+{
+  "scope": "Independent actualGLB cross-check plus saved source core topology and projected boundary strips. Not proof of all 3D triangle intersections or visual acceptance.",
+  "files": {
+    "captures\\lantern_island_study_29d\\island_c.glb": "fd24ebd2a71e8a537b3b2c19067b0f8fb7972f0f91cc32a41753b597b0f06219",
+    "captures\\lantern_island_study_29d\\geometry-evidence.json": "244d0cc19a97dbdadcef7ade704e40a8a6868057eee65fe201c5f5ead66c1467",
+    "captures\\lantern_island_study_29b\\island_c.glb": "618aa4815d16e5470d2c50c6434ded3793c42ab49879942eb0c652b48aa1dae1"
+  },
+  "path_actual_glb_triangles_unchanged": true,
+  "protected_faces_exact": 515,
+  "boundary_vertices_exact": 18,
+  "changed_top_vertices": 107,
+  "unchanged_rock_parts": [
+    "West broken shoulder",
+    "Southwest leaning crag",
+    "South broad low spur",
+    "East high fracture",
+    "Northeast sloping shoulder",
+    "North broken ridge",
+    "Northwest split buttress",
+    "West rooted toe",
+    "Southwest wash ledge",
+    "South low reef",
+    "East submerged root",
+    "Northeast low cluster",
+    "North tidal end",
+    "Northwest rooted slab",
+    "West waterline satellite",
+    "South low satellite",
+    "East tidal satellite"
+  ],
+  "core_cap_interface_exact": true,
+  "core_edges_twice_and_opposite": true,
+  "core_signed_volume_m3": 65484.716940387894,
+  "core_min_fan_triangle_area_m2": 0.06149443214473699,
+  "core_rings_projected_simple": [
+    true,
+    true,
+    true,
+    true
+  ],
+  "core_band_projection_checks": [
+    {
+      "band": 0,
+      "invalid_projected_quad_indices": [],
+      "sum_projected_quad_area_m2": 735.8526534987911,
+      "projected_quad_union_area_m2": 734.7705524319213,
+      "inner_ring_outside_outer_area_m2": 10.983674606987867
+    },
+    {
+      "band": 1,
+      "invalid_projected_quad_indices": [
+        12
+      ],
+      "sum_projected_quad_area_m2": 365.39862087341623,
+      "projected_quad_union_area_m2": null,
+      "inner_ring_outside_outer_area_m2": 10.468424597449575
+    },
+    {
+      "band": 2,
+      "invalid_projected_quad_indices": [
+        11,
+        14
+      ],
+      "sum_projected_quad_area_m2": 304.6424704280857,
+      "projected_quad_union_area_m2": null,
+      "inner_ring_outside_outer_area_m2": 3.906092128736944
+    }
+  ],
+  "fold_details": [
+    {
+      "band": 1,
+      "edge": 12,
+      "source_vertex_indices": [
+        30,
+        31,
+        49,
+        48
+      ],
+      "xyz": [
+        [
+          -6.159999847412109,
+          15.119999885559082,
+          1.0
+        ],
+        [
+          -2.240000009536743,
+          8.100000381469727,
+          1.2200000286102295
+        ],
+        [
+          -1.8853492736816406,
+          7.972161769866943,
+          6.240825653076172
+        ],
+        [
+          -5.252111911773682,
+          13.364347457885742,
+          3.3897640705108643
+        ]
+      ],
+      "projected_edge_crossings": [
+        {
+          "crossing_xy": [
+            -4.566190007009497,
+            12.265779285564555
+          ],
+          "edge_heights_m": [
+            1.089448526783074,
+            3.9706204603220088
+          ],
+          "vertical_separation_m": 2.8811719335389347
+        }
+      ]
+    },
+    {
+      "band": 2,
+      "edge": 11,
+      "source_vertex_indices": [
+        47,
+        48,
+        66,
+        65
+      ],
+      "xyz": [
+        [
+          -14.634432792663574,
+          25.03460693359375,
+          1.7000000476837158
+        ],
+        [
+          -5.252111911773682,
+          13.364347457885742,
+          3.3897640705108643
+        ],
+        [
+          -5.297599792480469,
+          13.003199577331543,
+          4.774315357208252
+        ],
+        [
+          -14.212800025939941,
+          24.872400283813477,
+          4.560664176940918
+        ]
+      ],
+      "projected_edge_crossings": [
+        {
+          "crossing_xy": [
+            -10.072297001800507,
+            19.359965326395113
+          ],
+          "edge_heights_m": [
+            2.521644609249949,
+            4.659890591922355
+          ],
+          "vertical_separation_m": 2.1382459826724065
+        }
+      ]
+    },
+    {
+      "band": 2,
+      "edge": 14,
+      "source_vertex_indices": [
+        50,
+        51,
+        69,
+        68
+      ],
+      "xyz": [
+        [
+          -10.05983829498291,
+          4.052375793457031,
+          10.751678466796875
+        ],
+        [
+          -25.34193229675293,
+          13.57325267791748,
+          1.7000000476837158
+        ],
+        [
+          -25.267200469970703,
+          13.197600364685059,
+          2.5088722705841064
+        ],
+        [
+          -9.150400161743164,
+          3.7151999473571777,
+          17.34141731262207
+        ]
+      ],
+      "projected_edge_crossings": [
+        {
+          "crossing_xy": [
+            -15.770542089043422,
+            7.610193703788815
+          ],
+          "edge_heights_m": [
+            7.36919343008279,
+            11.248796479488224
+          ],
+          "vertical_separation_m": 3.879603049405434
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,809 @@
+{
+  "scope": "Actual GLB tread components and foundation boundaries; source SHA and authored survey comparison. No engine, no whole terrain triangle/flight/visual acceptance.",
+  "label": "22f",
+  "assets": [
+    {
+      "asset": "harbor_stair_0",
+      "blend_sha_matches": true,
+      "glb_sha_matches": true,
+      "source_closed_report": true,
+      "cells": 207,
+      "actual_tread_components": 621,
+      "source_parts": 1242,
+      "actual_cell_top_range": [
+        2.3499999046325684,
+        19.279407501220703
+      ],
+      "actual_start_end_y": [
+        2.3499999046325684,
+        19.279407501220703
+      ],
+      "actual_max_adjacent_rise_m": 0.18000030517578125,
+      "actual_min_adjacent_rise_m": 0.0,
+      "descending_count": 0,
+      "top_against_record_max_error_m": 4.5776369539396455e-07,
+      "first_cell_min_sample_clearance_m": 0.04696035385131836,
+      "other_cells_min_sample_clearance_m": 0.045000076293895575,
+      "terrain_sample_scope": "five lanes at each start/end row; not unsampled terrain between rows",
+      "foundation_expected_boundary_match_max_error_m": 3.7823574327141324e-06,
+      "tread_bottom_to_base_top_range_m": [
+        -8.010864256391415e-07,
+        1.5258789076710855e-07
+      ],
+      "minimum_tread_plan_depth_m": 0.3302873969078064,
+      "minimum_tread": {
+        "cell": 1,
+        "top_y": 2.5066089630126953,
+        "bottom_y": 2.346608877182007,
+        "top_corner_count": 4,
+        "minimum_plan_depth_between_front_back_lines_m": 0.3302873969078064,
+        "top_vertices": [
+          [
+            0.7038105726242065,
+            2.5066089630126953,
+            0.36710619926452637
+          ],
+          [
+            1.015444278717041,
+            2.5066089630126953,
+            0.16557647287845612
+          ],
+          [
+            1.4042168855667114,
+            2.5066089630126953,
+            1.4859108924865723
+          ],
+          [
+            1.6704134941101074,
+            2.5066089630126953,
+            1.2867941856384277
+          ]
+        ]
+      },
+      "contacts": [
+        {
+          "edge": "start",
+          "closest_top_edge_signed_distance_m": -1.8711346901432287e-08,
+          "target_top_y": 2.35,
+          "actual_top_y": 2.3499999046325684
+        },
+        {
+          "edge": "end",
+          "closest_top_edge_signed_distance_m": 2.081526616928335e-06,
+          "target_top_y": 19.2794071960449,
+          "actual_top_y": 19.279407501220703
+        }
+      ],
+      "landings": [
+        {
+          "cells": [
+            19,
+            20,
+            21
+          ],
+          "actual_top_range_m": [
+            4.92729377746582,
+            4.92729377746582
+          ],
+          "centerline_span_m": 1.1957742235204893
+        },
+        {
+          "cells": [
+            37,
+            38,
+            39
+          ],
+          "actual_top_range_m": [
+            6.89274787902832,
+            6.89274787902832
+          ],
+          "centerline_span_m": 1.1957742235205
+        },
+        {
+          "cells": [
+            55,
+            56,
+            57
+          ],
+          "actual_top_range_m": [
+            9.614152908325195,
+            9.614152908325195
+          ],
+          "centerline_span_m": 1.1957742235205018
+        },
+        {
+          "cells": [
+            73,
+            74,
+            75
+          ],
+          "actual_top_range_m": [
+            12.15947151184082,
+            12.15947151184082
+          ],
+          "centerline_span_m": 1.1957742235205018
+        },
+        {
+          "cells": [
+            91,
+            92,
+            93
+          ],
+          "actual_top_range_m": [
+            14.62693977355957,
+            14.62693977355957
+          ],
+          "centerline_span_m": 1.1957742235205018
+        },
+        {
+          "cells": [
+            109,
+            110,
+            111
+          ],
+          "actual_top_range_m": [
+            16.208086013793945,
+            16.208086013793945
+          ],
+          "centerline_span_m": 1.1957742235204947
+        },
+        {
+          "cells": [
+            127,
+            128,
+            129
+          ],
+          "actual_top_range_m": [
+            17.07933235168457,
+            17.07933235168457
+          ],
+          "centerline_span_m": 1.1957742235204023
+        },
+        {
+          "cells": [
+            145,
+            146,
+            147
+          ],
+          "actual_top_range_m": [
+            17.917070388793945,
+            17.917070388793945
+          ],
+          "centerline_span_m": 1.1957742235205018
+        },
+        {
+          "cells": [
+            163,
+            164,
+            165
+          ],
+          "actual_top_range_m": [
+            18.50926399230957,
+            18.50926399230957
+          ],
+          "centerline_span_m": 1.1957742235205018
+        },
+        {
+          "cells": [
+            181,
+            182,
+            183
+          ],
+          "actual_top_range_m": [
+            19.13530158996582,
+            19.13530158996582
+          ],
+          "centerline_span_m": 1.1957742235205018
+        }
+      ],
+      "reported_min_between_curbs_width_m": 1.68,
+      "near_porch_post_z_strip_vertices": 0,
+      "near_post_strip_abs_x_max_m": null,
+      "note": "Post strip vertices alone not full solid distance. Nominal post inside x=1.215m.",
+      "actual_triangle_sections_at_porch_post_depth": [
+        {
+          "house_local_z": 6.465,
+          "stair_section_x_range": [
+            -1.0026015554674843,
+            1.000360096170453
+          ],
+          "distance_to_nominal_post_inner_x_m": 0.21239844453251577
+        },
+        {
+          "house_local_z": 6.55,
+          "stair_section_x_range": [
+            -1.00599863166279,
+            1.0008357966712187
+          ],
+          "distance_to_nominal_post_inner_x_m": 0.20900136833721006
+        },
+        {
+          "house_local_z": 6.635,
+          "stair_section_x_range": [
+            -1.0093957078580957,
+            1.0013114971719845
+          ],
+          "distance_to_nominal_post_inner_x_m": 0.20560429214190434
+        }
+      ],
+      "saved_source_gate_hashes_match": true,
+      "maximum_tread_top_above_lowest_sampled_ground_m": 1.5162829589843003,
+      "maximum_exposed_height_cell": 91,
+      "maximum_exposed_height_distance_m": [
+        36.2718181134548,
+        36.670409521295
+      ],
+      "actual_curb_inner_control_match_max_error_m": 3.922593501375078e-06,
+      "actual_between_curb_inner_edges_min_m": 1.6814384964037572,
+      "actual_between_raised_curbs_min_m_at_height_above005": 1.7442297879508994
+    },
+    {
+      "asset": "harbor_stair_1",
+      "blend_sha_matches": true,
+      "glb_sha_matches": true,
+      "source_closed_report": true,
+      "cells": 126,
+      "actual_tread_components": 378,
+      "source_parts": 756,
+      "actual_cell_top_range": [
+        2.3499999046325684,
+        15.199909210205078
+      ],
+      "actual_start_end_y": [
+        2.3499999046325684,
+        15.199909210205078
+      ],
+      "actual_max_adjacent_rise_m": 0.18000030517578125,
+      "actual_min_adjacent_rise_m": 0.0,
+      "descending_count": 0,
+      "top_against_record_max_error_m": 4.5776369539396455e-07,
+      "first_cell_min_sample_clearance_m": 0.048821926116938474,
+      "other_cells_min_sample_clearance_m": 0.045000076293895575,
+      "terrain_sample_scope": "five lanes at each start/end row; not unsampled terrain between rows",
+      "foundation_expected_boundary_match_max_error_m": 2.2107985435998137e-06,
+      "tread_bottom_to_base_top_range_m": [
+        -8.010864256391415e-07,
+        1.5258789076710855e-07
+      ],
+      "minimum_tread_plan_depth_m": 0.3712441325187683,
+      "minimum_tread": {
+        "cell": 1,
+        "top_y": 2.4884815216064453,
+        "bottom_y": 2.328481435775757,
+        "top_corner_count": 4,
+        "minimum_plan_depth_between_front_back_lines_m": 0.3712441325187683,
+        "top_vertices": [
+          [
+            -0.8073174953460693,
+            2.4884815216064453,
+            -1.8826305866241455
+          ],
+          [
+            -0.48402854800224304,
+            2.4884815216064453,
+            -2.0681705474853516
+          ],
+          [
+            -0.060092248022556305,
+            2.4884815216064453,
+            -0.7943211197853088
+          ],
+          [
+            0.2609693706035614,
+            2.4884815216064453,
+            -1.0042049884796143
+          ]
+        ]
+      },
+      "contacts": [
+        {
+          "edge": "start",
+          "closest_top_edge_signed_distance_m": -6.65686380723774e-08,
+          "target_top_y": 2.35,
+          "actual_top_y": 2.3499999046325684
+        },
+        {
+          "edge": "end",
+          "closest_top_edge_signed_distance_m": 1.964981038129151e-06,
+          "target_top_y": 15.1999089050293,
+          "actual_top_y": 15.199909210205078
+        }
+      ],
+      "landings": [
+        {
+          "cells": [
+            19,
+            20,
+            21
+          ],
+          "actual_top_range_m": [
+            4.86668586730957,
+            4.86668586730957
+          ],
+          "centerline_span_m": 1.1904842455294897
+        },
+        {
+          "cells": [
+            37,
+            38,
+            39
+          ],
+          "actual_top_range_m": [
+            6.96269416809082,
+            6.96269416809082
+          ],
+          "centerline_span_m": 1.1904842455295004
+        },
+        {
+          "cells": [
+            55,
+            56,
+            57
+          ],
+          "actual_top_range_m": [
+            9.09184455871582,
+            9.09184455871582
+          ],
+          "centerline_span_m": 1.1904842455295004
+        },
+        {
+          "cells": [
+            73,
+            74,
+            75
+          ],
+          "actual_top_range_m": [
+            11.41624641418457,
+            11.41624641418457
+          ],
+          "centerline_span_m": 1.190484245529401
+        },
+        {
+          "cells": [
+            91,
+            92,
+            93
+          ],
+          "actual_top_range_m": [
+            13.75462532043457,
+            13.75462532043457
+          ],
+          "centerline_span_m": 1.1904842455294968
+        },
+        {
+          "cells": [
+            109,
+            110,
+            111
+          ],
+          "actual_top_range_m": [
+            14.84971809387207,
+            14.84971809387207
+          ],
+          "centerline_span_m": 1.190484245529504
+        }
+      ],
+      "reported_min_between_curbs_width_m": 1.68,
+      "near_porch_post_z_strip_vertices": 0,
+      "near_post_strip_abs_x_max_m": null,
+      "note": "Post strip vertices alone not full solid distance. Nominal post inside x=1.215m.",
+      "actual_triangle_sections_at_porch_post_depth": [
+        {
+          "house_local_z": 6.465,
+          "stair_section_x_range": [
+            -1.0010472247857536,
+            1.001890737423474
+          ],
+          "distance_to_nominal_post_inner_x_m": 0.21310926257652607
+        },
+        {
+          "house_local_z": 6.55,
+          "stair_section_x_range": [
+            -1.002411721604652,
+            1.0043660437606987
+          ],
+          "distance_to_nominal_post_inner_x_m": 0.21063395623930137
+        },
+        {
+          "house_local_z": 6.635,
+          "stair_section_x_range": [
+            -1.0037762184235506,
+            1.0068413500979234
+          ],
+          "distance_to_nominal_post_inner_x_m": 0.20815864990207666
+        }
+      ],
+      "saved_source_gate_hashes_match": true,
+      "maximum_tread_top_above_lowest_sampled_ground_m": 0.5017871093749999,
+      "maximum_exposed_height_cell": 37,
+      "maximum_exposed_height_distance_m": [
+        14.682639028197,
+        15.0794671100402
+      ],
+      "actual_curb_inner_control_match_max_error_m": 2.0396625847070666e-06,
+      "actual_between_curb_inner_edges_min_m": 1.6814246091416856,
+      "actual_between_raised_curbs_min_m_at_height_above005": 1.7436978901157554
+    },
+    {
+      "asset": "harbor_stair_2",
+      "blend_sha_matches": true,
+      "glb_sha_matches": true,
+      "source_closed_report": true,
+      "cells": 125,
+      "actual_tread_components": 375,
+      "source_parts": 750,
+      "actual_cell_top_range": [
+        2.3499999046325684,
+        15.199909210205078
+      ],
+      "actual_start_end_y": [
+        2.3499999046325684,
+        15.199909210205078
+      ],
+      "actual_max_adjacent_rise_m": 0.18000030517578125,
+      "actual_min_adjacent_rise_m": 0.0,
+      "descending_count": 0,
+      "top_against_record_max_error_m": 4.24001221688286e-07,
+      "first_cell_min_sample_clearance_m": 0.05910634994506836,
+      "other_cells_min_sample_clearance_m": 0.045000076293895575,
+      "terrain_sample_scope": "five lanes at each start/end row; not unsampled terrain between rows",
+      "foundation_expected_boundary_match_max_error_m": 1.9394445075689603e-06,
+      "tread_bottom_to_base_top_range_m": [
+        -8.010864256391415e-07,
+        1.5258789076710855e-07
+      ],
+      "minimum_tread_plan_depth_m": 0.3823220133781433,
+      "minimum_tread": {
+        "cell": 123,
+        "top_y": 15.152142524719238,
+        "bottom_y": 14.992142677307129,
+        "top_corner_count": 4,
+        "minimum_plan_depth_between_front_back_lines_m": 0.3823220133781433,
+        "top_vertices": [
+          [
+            41.01536560058594,
+            15.152142524719238,
+            -26.714773178100586
+          ],
+          [
+            41.32231140136719,
+            15.152142524719238,
+            -26.25056266784668
+          ],
+          [
+            41.34550094604492,
+            15.152142524719238,
+            -26.908788681030273
+          ],
+          [
+            41.646331787109375,
+            15.152142524719238,
+            -26.456981658935547
+          ]
+        ]
+      },
+      "contacts": [
+        {
+          "edge": "start",
+          "closest_top_edge_signed_distance_m": -6.9595317212388635e-09,
+          "target_top_y": 2.35,
+          "actual_top_y": 2.3499999046325684
+        },
+        {
+          "edge": "end",
+          "closest_top_edge_signed_distance_m": 9.449761365093214e-07,
+          "target_top_y": 15.1999089050293,
+          "actual_top_y": 15.199909210205078
+        }
+      ],
+      "landings": [
+        {
+          "cells": [
+            19,
+            20,
+            21
+          ],
+          "actual_top_range_m": [
+            4.84880256652832,
+            4.84880256652832
+          ],
+          "centerline_span_m": 1.1941580224335198
+        },
+        {
+          "cells": [
+            37,
+            38,
+            39
+          ],
+          "actual_top_range_m": [
+            7.04423713684082,
+            7.04423713684082
+          ],
+          "centerline_span_m": 1.1941580224335997
+        },
+        {
+          "cells": [
+            55,
+            56,
+            57
+          ],
+          "actual_top_range_m": [
+            9.086748123168945,
+            9.086748123168945
+          ],
+          "centerline_span_m": 1.1941580224334984
+        },
+        {
+          "cells": [
+            73,
+            74,
+            75
+          ],
+          "actual_top_range_m": [
+            10.96299934387207,
+            10.96299934387207
+          ],
+          "centerline_span_m": 1.1941580224334984
+        },
+        {
+          "cells": [
+            91,
+            92,
+            93
+          ],
+          "actual_top_range_m": [
+            12.840105056762695,
+            12.840105056762695
+          ],
+          "centerline_span_m": 1.1941580224334984
+        },
+        {
+          "cells": [
+            109,
+            110,
+            111
+          ],
+          "actual_top_range_m": [
+            14.95317268371582,
+            14.95317268371582
+          ],
+          "centerline_span_m": 1.1941580224334984
+        }
+      ],
+      "reported_min_between_curbs_width_m": 1.68,
+      "near_porch_post_z_strip_vertices": 0,
+      "near_post_strip_abs_x_max_m": null,
+      "note": "Post strip vertices alone not full solid distance. Nominal post inside x=1.215m.",
+      "actual_triangle_sections_at_porch_post_depth": [
+        {
+          "house_local_z": 6.465,
+          "stair_section_x_range": [
+            -1.0016145785859296,
+            1.0013264949076888
+          ],
+          "distance_to_nominal_post_inner_x_m": 0.21338542141407046
+        },
+        {
+          "house_local_z": 6.55,
+          "stair_section_x_range": [
+            -1.0037215671828992,
+            1.003066786462749
+          ],
+          "distance_to_nominal_post_inner_x_m": 0.2112784328171009
+        },
+        {
+          "house_local_z": 6.635,
+          "stair_section_x_range": [
+            -1.005828555779869,
+            1.004807078017809
+          ],
+          "distance_to_nominal_post_inner_x_m": 0.20917144422013112
+        }
+      ],
+      "saved_source_gate_hashes_match": true,
+      "maximum_tread_top_above_lowest_sampled_ground_m": 0.5724047851562997,
+      "maximum_exposed_height_cell": 109,
+      "maximum_exposed_height_distance_m": [
+        43.3877414817512,
+        43.7857941558957
+      ],
+      "actual_curb_inner_control_match_max_error_m": 2.091517896535273e-06,
+      "actual_between_curb_inner_edges_min_m": 1.6814351910402356,
+      "actual_between_raised_curbs_min_m_at_height_above005": 1.744066637310425
+    },
+    {
+      "asset": "harbor_stair_3",
+      "blend_sha_matches": true,
+      "glb_sha_matches": true,
+      "source_closed_report": true,
+      "cells": 128,
+      "actual_tread_components": 384,
+      "source_parts": 768,
+      "actual_cell_top_range": [
+        2.3499999046325684,
+        15.199909210205078
+      ],
+      "actual_start_end_y": [
+        2.3499999046325684,
+        15.199909210205078
+      ],
+      "actual_max_adjacent_rise_m": 0.18000030517578125,
+      "actual_min_adjacent_rise_m": 0.0,
+      "descending_count": 0,
+      "top_against_record_max_error_m": 4.577636705249688e-07,
+      "first_cell_min_sample_clearance_m": 0.03829336166381836,
+      "other_cells_min_sample_clearance_m": 0.045000076293895575,
+      "terrain_sample_scope": "five lanes at each start/end row; not unsampled terrain between rows",
+      "foundation_expected_boundary_match_max_error_m": 2.0132751246378753e-06,
+      "tread_bottom_to_base_top_range_m": [
+        -8.010864256391415e-07,
+        1.5258789076710855e-07
+      ],
+      "minimum_tread_plan_depth_m": 0.3456433415412903,
+      "minimum_tread": {
+        "cell": 0,
+        "top_y": 2.3499999046325684,
+        "bottom_y": 2.190000057220459,
+        "top_corner_count": 4,
+        "minimum_plan_depth_between_front_back_lines_m": 0.3456433415412903,
+        "top_vertices": [
+          [
+            -1.134390950202942,
+            2.3499999046325684,
+            -1.691334843635559
+          ],
+          [
+            -0.8376043438911438,
+            2.3499999046325684,
+            -1.8702847957611084
+          ],
+          [
+            -0.3803648054599762,
+            2.3499999046325684,
+            -0.5671098232269287
+          ],
+          [
+            -0.07174896448850632,
+            2.3499999046325684,
+            -0.7870842814445496
+          ]
+        ]
+      },
+      "contacts": [
+        {
+          "edge": "start",
+          "closest_top_edge_signed_distance_m": -2.8714823048818713e-08,
+          "target_top_y": 2.35,
+          "actual_top_y": 2.3499999046325684
+        },
+        {
+          "edge": "end",
+          "closest_top_edge_signed_distance_m": 1.8174066553165962e-06,
+          "target_top_y": 15.1999089050293,
+          "actual_top_y": 15.199909210205078
+        }
+      ],
+      "landings": [
+        {
+          "cells": [
+            19,
+            20,
+            21
+          ],
+          "actual_top_range_m": [
+            4.95152473449707,
+            4.95152473449707
+          ],
+          "centerline_span_m": 1.1958548161419493
+        },
+        {
+          "cells": [
+            37,
+            38,
+            39
+          ],
+          "actual_top_range_m": [
+            7.047075271606445,
+            7.047075271606445
+          ],
+          "centerline_span_m": 1.1958548161418996
+        },
+        {
+          "cells": [
+            55,
+            56,
+            57
+          ],
+          "actual_top_range_m": [
+            9.499467849731445,
+            9.499467849731445
+          ],
+          "centerline_span_m": 1.195854816141999
+        },
+        {
+          "cells": [
+            73,
+            74,
+            75
+          ],
+          "actual_top_range_m": [
+            11.977556228637695,
+            11.977556228637695
+          ],
+          "centerline_span_m": 1.195854816141999
+        },
+        {
+          "cells": [
+            91,
+            92,
+            93
+          ],
+          "actual_top_range_m": [
+            14.13481330871582,
+            14.13481330871582
+          ],
+          "centerline_span_m": 1.195854816141896
+        },
+        {
+          "cells": [
+            109,
+            110,
+            111
+          ],
+          "actual_top_range_m": [
+            14.60185432434082,
+            14.60185432434082
+          ],
+          "centerline_span_m": 1.1958548161419031
+        }
+      ],
+      "reported_min_between_curbs_width_m": 1.68,
+      "near_porch_post_z_strip_vertices": 0,
+      "near_post_strip_abs_x_max_m": null,
+      "note": "Post strip vertices alone not full solid distance. Nominal post inside x=1.215m.",
+      "actual_triangle_sections_at_porch_post_depth": [
+        {
+          "house_local_z": 6.465,
+          "stair_section_x_range": [
+            -1.0005467715847387,
+            1.002414520975227
+          ],
+          "distance_to_nominal_post_inner_x_m": 0.21258547902477298
+        },
+        {
+          "house_local_z": 6.55,
+          "stair_section_x_range": [
+            -1.0012568318238306,
+            1.0055768159964298
+          ],
+          "distance_to_nominal_post_inner_x_m": 0.2094231840035703
+        },
+        {
+          "house_local_z": 6.635,
+          "stair_section_x_range": [
+            -1.0019668920629228,
+            1.0087391110176325
+          ],
+          "distance_to_nominal_post_inner_x_m": 0.2062608889823676
+        }
+      ],
+      "saved_source_gate_hashes_match": true,
+      "maximum_tread_top_above_lowest_sampled_ground_m": 0.7299975585937499,
+      "maximum_exposed_height_cell": 55,
+      "maximum_exposed_height_distance_m": [
+        21.9240049626023,
+        22.3226232346497
+      ],
+      "actual_curb_inner_control_match_max_error_m": 2.3729544052887502e-06,
+      "actual_between_curb_inner_edges_min_m": 1.6814393676236243,
+      "actual_between_raised_curbs_min_m_at_height_above005": 1.7442412522550519
+    }
+  ],
+  "source_parts_total": 3516,
+  "saved_source_gate": {
+    "path": "reviews\\round-22f-harbor-paths-native-check.json",
+    "sha256": "766dd17680ed5901c9f6755ea37689a8242b088e889e22d3309f375f25f77cbc",
+    "passed": true,
+    "origin": "Parent executed saved Blender reopen; independently read and verified hashes, not rerun by reviewer."
+  }
+}

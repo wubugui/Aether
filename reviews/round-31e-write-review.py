@@ -1,0 +1,25 @@
+from pathlib import Path
+import json,hashlib
+R=Path(__file__).resolve().parents[1];run='lantern-island-31e-20260908T203322Z-c8a7a40b1ae5442c8aeba5858633afbd';folder=R/'captures/validation_runs'/run/'images'
+obs={
+'night-reference':'原生建筑比例、右侧守塔屋和较低树组维持。背部局部变形无法靠固定夜间全景充分辨认；参考1342中央岛的短宽错位岩根关系仍未完整实现。',
+'day-reference':'全景岛体比例未退回高圆台，前沿和背部灰面的小变化存在，但全景不能替代近图造型审查。',
+'day-d-front':'前两凸肩保持31c/d的独立凸石感，后方大灰坡和局部直暗缝仍在。本轮背部原壳剪切没有解决前面层次，不能提升这一面的验收状态。',
+'day-d-back':'相对31d可见真实改善：画面上右的原长陡壁有了中段斜折，后部连接体下半与邻坡接点出现偏转，原坡和后体确实一起变形。该方向可以保留。但中央仍是纵向偏窄的条状亮面，侧缝/海侧直口仍明显，上台灰坡的整体量感未解；不是参考中的短宽承重岩根组织。',
+'day-c-front':'两原前肩及与大斜面的接续近似上一稿：较短却仍像独立石块，上台大灰坡继续存在。本轮没有以更多前部窄楔制造新问题，但也没有完成前部。'
+}
+def evidence(p):return {'path':str(p.relative_to(R)),'sha256':hashlib.sha256(p.read_bytes()).hexdigest()}
+g=json.loads((R/'reviews/round-31e-independent-geometry.json').read_text());rt=json.loads((R/'reviews/round-31e-runtime-incremental.json').read_text());anchor=json.loads((R/'reviews/round-31e-anchor-change-check.json').read_text())
+actions=[
+'保留31e原坡与历史后体联动改形的方向，继续处理主壳本身，不回到只新增/扩大一个凸包。',
+'中层需要更明确的横向宽面和钝折端部；使该宽面进入两侧原坡，接缝在局部肩宽内结束或错位，不继续从塔脚贯向海口。两侧高低、前后位置应错开，避免整齐水平台阶。',
+'低根要有明确偏转与宽接续，不能只是中间窄条弯一下。当前<=0.2m固定是本轮自定边界，旧直槽海口因此未参与改形；若下一稿需要改变海口方向，可允许这个局部水线/根部边界一起重塑后核验，不将其扩成全岛岸线改动。',
+'高处大灰面仍需有针对性的面组织。旧点997本版只移动0.000140m，941也只移动0.209060m；这些不等于上台灰面显著改善。保护真实pad支承范围，允许保护外面内控制点产生明确的高低/走向变化。',
+'前部两孤立凸石仍作为独立剩余项。后续同时安排凸肩后缘与主坡的宽面关系，不用更多小块遮挡。'
+]
+report={'round':'31e','run_id':run,'visual_verdict':'retain_actual_native_slope_reform_direction_continue_midlevel_lateral_spread_and_root_turn','candidate_retained_for_iteration':True,'visual_complete':False,'full_reference_accepted':False,'all_reference_goal_complete':False,'reference':{**evidence(R/'ref/1342.png'),'directly_viewed_in_current_continuing_review':True},'comparison_images':[evidence(R/'captures/validation_runs/lantern-island-31d-20260908T201625Z-7575af2955e449b1a68d49f13e66c31a/images'/n) for n in ['day-d-back.png','day-c-front.png']],'comparisons_directly_viewed_in_current_continuing_review':True,'images':[{'view':n,**evidence(folder/(n+'.png')),'directly_viewed':True,'judgment':s} for n,s in obs.items()],'retained_changes':['Original upper-right rear slope has a new mid-height oblique break.','Lower historical rear union and adjacent original-slope join visibly turn together.'],'remaining':['central longitudinal narrow-strip reading','side seam and straight seaward mouth','upper broad grey mass','front isolated convex boulders'],'next_actions':actions,'geometry_evidence':{'report':'reviews/round-31e-independent-geometry.json','passed':g['pass'],'main_triangles':2342,'moved_records':110,'original31d_points_moved':46,'new_bisect_points_moved':64,'changed_triangle_minimum_normal_cosine':g['minimum_normal_cosine_before_after_on_changed_triangles'],'changed_triangle_normal_reversals':0,'local_intersections_report':'reviews/round-31e-local-intersections.json','changed_or_retriangulated_triangles':286,'AABB_candidate_pairs_tested':2711,'unallowed_intersections_found_at_stated_tolerance':0,'scope':'Finite actual GLB triangle checks; unchanged/unchanged pairs excluded, legal shared-feature band0.1mm. Not analytic continuum proof.'},'actual_anchor_evidence':anchor,'root_runtime_report_read':{'path':'reviews/round-31e-runtime-incremental.json','passed':rt['passed'],'binding_count':rt['binding_count'],'placements_each_view':59,'maximum_position_delta_m':max(v['maximum_position_delta_m'] for v in rt['views']),'maximum_footing_delta_m':max(v['maximum_footing_delta_m'] for v in rt['views'])},'limits':['No support/intersection/GPU/Blender rerun during visual review.','Historical3convex operands are not the final31e union/exterior model.','Movement count and intersection-free result are not art quality scores.','Waterline and whole-height-band freezing are current authoring decisions, not permanent user hard constraints.','No whole-world/reference completion or full walking claim.']}
+(R/'reviews/round-31e-island-independent-review.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
+md='# 31e 岛体独立造型审查\n\n保留原壳联动改形方向继续迭代，整体尚未接受。D背可见原陡壁的中层斜折和下根偏转；但纵向窄条、侧缝及海侧直口仍明显，前部孤立凸石问题保持。\n\n本次直接查看五张原图，对照持续审查中直接看过的31d和1342。运行：`'+run+'`。\n\n'
+for n,s in obs.items():md+='## '+n+'\n\n'+s+'\n\n'
+md+='## 下一步有界方向\n\n'+'\n\n'.join('- '+a for a in actions)+'\n\n## 实际原坡变化与验证边界\n\n110移动点中46是实际31d旧点，64是bisect新点。原坡409/938/941分别实移2.235633/0.905176/0.209060m；历史后体411/428/419分别移1.476858/1.567913/1.305035m。所有after坐标在真实GLB中确认。435/408保持；997只移0.000140m，不当成显著形态改善。\n\n实际2342三角主壳闭合单连通，道路/pad保持，当前树支承面差约-8.84至+3.93µm，17岩/path保持。255受移动影响三角最小前后法线cos0.808、无反转；对286个改变/新切分三角与全主壳2711对候选执行离散三角交叉/共面重叠检查，未发现合法共享特征0.1mm容差外的自交。未重跑未变/未变基线对，不把连续变换可逆当离散网格证明。\n\n已读取root运行审计：200绑定、每视角59落点，位置最大差'+str(report['root_runtime_report_read']['maximum_position_delta_m'])+'m、基础样本最大差'+str(report['root_runtime_report_read']['maximum_footing_delta_m'])+'m。原生几何有效不代表美术完成；历史三个凸包只保留为输入历史，不用于本版最终外露判断。`full_reference_accepted=false`。\n'
+(R/'reviews/round-31e-island-independent-review.md').write_text(md,encoding='utf-8');print('31e MD/JSON written; actual main-slope changes retained, visual/full-reference false.')

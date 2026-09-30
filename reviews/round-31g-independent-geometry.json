@@ -1,0 +1,132 @@
+{
+  "round": "31g",
+  "scope": "Actual explicit3D native patch replacement from31f; no same-topology normal inversion or radial-graph assumption. Required support checked with actual trunk footprints, old2m disks excluded as freeze constraints.",
+  "files": {
+    "captures\\lantern_island_study_31g\\island_c.glb": "80857dab1d0f9eb1cf20d33ccd4e4e6f071ee3bbd3786f1cfcf62bf8500dfc34",
+    "captures\\lantern_island_study_31g\\geometry-evidence.json": "7a71cefbf4da08b4b52ccd5e7b9d976cadd129c5022b209cf8f3954bd55daaea",
+    "captures\\lantern_island_study_31f\\island_c.glb": "eafc86f5351b5e7a53e05b45b806a277700fe886446115b9e33e7676aa83d1ef",
+    "captures\\island-31g-cut-patch-full-depth.json": "4a36bfd773a1dda1fe989cac2b8cf099901c92d97a985f0f96ca23933652ceb0",
+    "captures\\lantern_island_study_31g\\reform-plan.json": "7ecf30a452915069ad1964c1e037d3ed6365cff5897c439572b74b4cc4d65a90"
+  },
+  "native_objects": 19,
+  "actual_main_triangles": 2220,
+  "closed_oppositely_paired_edges": true,
+  "connected_components_vertices": [
+    1112
+  ],
+  "minimum_actual_triangle_area_m2": 1.4351405588411331e-06,
+  "actual_volume_m3": 21415.78793156881,
+  "path_and17rocks_source_exact_actual_triangles_present": [
+    "island_c terrain fitted keeper paths",
+    "West broken shoulder",
+    "Southwest leaning crag",
+    "South broad low spur",
+    "East high fracture",
+    "Northeast sloping shoulder",
+    "North broken ridge",
+    "Northwest split buttress",
+    "West rooted toe",
+    "Southwest wash ledge",
+    "South low reef",
+    "East submerged root",
+    "Northeast low cluster",
+    "North tidal end",
+    "Northwest rooted slab",
+    "West waterline satellite",
+    "South low satellite",
+    "East tidal satellite"
+  ],
+  "actual_path_glb_counter_exact": true,
+  "required_supports": [
+    {
+      "region": "road_footprint",
+      "expected_support_projection_area_m2": 25.572388056364687,
+      "same_linear_height_coverage_m2": 25.57238805636466,
+      "unpreserved_area_m2": 0.0,
+      "higher_than_old_by_over_0_1mm_area_m2": 0.0,
+      "all_intersecting_up_surface_height_delta_min_max_m": [
+        0.0,
+        0.0
+      ],
+      "pass": true
+    },
+    {
+      "region": "padded_sites",
+      "expected_support_projection_area_m2": 123.97999999993655,
+      "same_linear_height_coverage_m2": 123.97999999988423,
+      "unpreserved_area_m2": 5.2349057586198586e-11,
+      "higher_than_old_by_over_0_1mm_area_m2": 0.0,
+      "all_intersecting_up_surface_height_delta_min_max_m": [
+        -1.279911084362444e-15,
+        5.709071215775907e-09
+      ],
+      "pass": true
+    },
+    {
+      "region": "current_CD_actual_trunk_footprints",
+      "expected_support_projection_area_m2": 1.6846337669011073,
+      "same_linear_height_coverage_m2": 1.6846337669011073,
+      "unpreserved_area_m2": 4.3312515926487007e-16,
+      "higher_than_old_by_over_0_1mm_area_m2": 0.0,
+      "all_intersecting_up_surface_height_delta_min_max_m": [
+        -1.715762767240625e-08,
+        1.1016223320260232e-08
+      ],
+      "pass": true
+    }
+  ],
+  "retopology": {
+    "cut_mesh_faces": 2584,
+    "removed_cut_faces": 448,
+    "kept_cut_faces": 2136,
+    "replacement_faces": 84,
+    "replacement_controls": 8,
+    "actual_kept_plus_replacement_triangle_counter_exact": true,
+    "boundary_vertices": 70,
+    "boundary_edges_retained": 70,
+    "boundary_edges_total": 70,
+    "old_interior_edge_count": 637,
+    "old_interior_edges_still_in_actual_mesh": 0,
+    "old_selected_triangles_still_in_actual_mesh": 0,
+    "all_replacement_triangles_actual": true,
+    "old_interior_vertices_plan": 190
+  },
+  "base_geometry_and_support_pass": true,
+  "local_triangle_intersection_check_pending": false,
+  "actual_tree_upper_envelope_pending": false,
+  "pass": true,
+  "full_reference_accepted": false,
+  "limits": [
+    "Actual14tree upper-envelope continuity supplement completed using frozen31f instance footprints and31g main+17rocks; candidate runtime handled separately by root.",
+    "No point-count or topology-change criterion implies art acceptance.",
+    "No same-topology normal comparison possible after real replacement.",
+    "Fixed boundary proven by actual coordinate edge counters, not only index list."
+  ],
+  "local_triangle_intersections": {
+    "scope": "Actual finite GLB main-shell triangle intersection check for every pair whose AABBs overlap and at least one triangle differs from31f. Includes all original unchanged triangles as possible partners. No analytic mapping-injectivity argument.",
+    "changed_or_new_triangulation_triangles": 324,
+    "statistics": {
+      "aabb_candidate_pairs": 3322,
+      "noncoplanar_contact_pairs": 2323,
+      "coplanar_contact_pairs": 548,
+      "shared_feature_only_pairs": 2871
+    },
+    "intersection_candidates_outside_legal_shared_features": [],
+    "local_self_intersection_pass": true,
+    "tolerances": {
+      "aabb_margin_m": 1e-07,
+      "plane_m": 1e-06,
+      "shared_coordinate_m": 1e-05,
+      "allowed_shared_feature_band_m": 0.0001
+    },
+    "limits": [
+      "Local changed-region versus entire main-shell sweep only; unchanged/unchanged baseline pairs excluded.",
+      "Legal shared vertices/edges ignored only inside0.1mm band; smaller defects are outside stated resolution.",
+      "17 independent rocks deliberately intersect main shell as separate objects; their authored contact is not a shell self-intersection.",
+      "Numerical triangle test is bounded-resolution evidence, not exact-predicate proof or complete walking test."
+    ]
+  },
+  "old_tree_disk_surface_preserved": null,
+  "actual_tree_base_support": true,
+  "actual_tree_base_report": "reviews/round-31g-actual-tree-support.json"
+}

@@ -1,0 +1,272 @@
+[gd_scene load_steps=22 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/world.glb" id="1"]
+[ext_resource type="PackedScene" path="res://assets/airship.glb" id="2"]
+[ext_resource type="PackedScene" path="res://assets/propeller.glb" id="3"]
+[ext_resource type="Shader" path="res://scripts/palette.gdshader" id="4"]
+[ext_resource type="Shader" path="res://scripts/sky.gdshader" id="5"]
+[ext_resource type="Shader" path="res://scripts/water.gdshader" id="6"]
+[ext_resource type="Shader" path="res://scripts/terrain_surface.gdshader" id="7"]
+[ext_resource type="Texture2D" path="res://assets/reference.jpg" id="8"]
+[ext_resource type="Texture2D" path="res://assets/clean_plate.png" id="9"]
+[ext_resource type="Shader" path="res://scripts/wood_surface.gdshader" id="10"]
+[ext_resource type="Shader" path="res://scripts/ocean.gdshader" id="11"]
+
+[sub_resource type="ShaderMaterial" id="OpenOcean"]
+shader = ExtResource("11")
+
+[sub_resource type="ShaderMaterial" id="WoodSurface"]
+shader = ExtResource("10")
+
+[sub_resource type="ShaderMaterial" id="TerrainSurface"]
+shader = ExtResource("7")
+shader_parameter/surface_original = ExtResource("8")
+shader_parameter/surface_occluded = ExtResource("9")
+
+[sub_resource type="ShaderMaterial" id="Palette"]
+shader = ExtResource("4")
+shader_parameter/haze_density = 0.0
+
+[sub_resource type="ShaderMaterial" id="DetailPalette"]
+shader = ExtResource("4")
+shader_parameter/haze_density = 0.00028
+
+[sub_resource type="ShaderMaterial" id="ShipPalette"]
+shader = ExtResource("4")
+shader_parameter/haze_density = 0.0
+
+[sub_resource type="ShaderMaterial" id="SkyMaterial"]
+shader = ExtResource("5")
+
+[sub_resource type="Sky" id="Sky"]
+sky_material = SubResource("SkyMaterial")
+
+[sub_resource type="Environment" id="Environment"]
+background_mode = 2
+sky = SubResource("Sky")
+
+[sub_resource type="ShaderMaterial" id="Water"]
+shader = ExtResource("6")
+
+[node name="BlenderWorld" type="Node3D"]
+
+[node name="Daylight" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment")
+
+[node name="Landscape" parent="." instance=ExtResource("1")]
+
+[node name="Clouds" parent="Landscape/Landscape" index="0"]
+material_override = SubResource("Palette")
+
+[node name="ForegroundCliffs" parent="Landscape/Landscape" index="1"]
+material_override = SubResource("TerrainSurface")
+
+[node name="Groves" parent="Landscape/Landscape" index="2"]
+material_override = SubResource("DetailPalette")
+
+[node name="Hamlets" parent="Landscape/Landscape" index="3"]
+material_override = SubResource("DetailPalette")
+
+[node name="OpenOcean" parent="Landscape/Landscape" index="4"]
+material_override = SubResource("OpenOcean")
+
+[node name="Paths" parent="Landscape/Landscape" index="5"]
+material_override = SubResource("Palette")
+visible = false
+
+[node name="SnowRange" parent="Landscape/Landscape" index="6"]
+material_override = SubResource("TerrainSurface")
+
+[node name="Terrain" parent="Landscape/Landscape" index="7"]
+material_override = SubResource("TerrainSurface")
+
+[node name="Water" parent="Landscape/Landscape" index="8"]
+material_override = SubResource("TerrainSurface")
+
+[node name="Airship" type="Node3D" parent="."]
+position = Vector3(-4.15,136.8,184)
+rotation = Vector3(0,0.2268928,0)
+
+[node name="Model" parent="Airship" instance=ExtResource("2")]
+
+[node name="Belt stitching 1" parent="Airship/Model/Airship" index="0"]
+material_override = SubResource("ShipPalette")
+
+[node name="Belt stitching 2" parent="Airship/Model/Airship" index="1"]
+material_override = SubResource("ShipPalette")
+
+[node name="Belt stitching 3" parent="Airship/Model/Airship" index="2"]
+material_override = SubResource("ShipPalette")
+
+[node name="Boiler chimney" parent="Airship/Model/Airship" index="3"]
+material_override = SubResource("ShipPalette")
+
+[node name="Cabin lintel -0_35" parent="Airship/Model/Airship" index="4"]
+material_override = SubResource("ShipPalette")
+
+[node name="Cabin lintel -1_21" parent="Airship/Model/Airship" index="5"]
+material_override = SubResource("ShipPalette")
+
+[node name="Cabin upright 0_0" parent="Airship/Model/Airship" index="6"]
+material_override = SubResource("ShipPalette")
+
+[node name="Cabin upright 0_62" parent="Airship/Model/Airship" index="7"]
+material_override = SubResource("ShipPalette")
+
+[node name="Cabin upright 1_27" parent="Airship/Model/Airship" index="8"]
+material_override = SubResource("ShipPalette")
+
+[node name="Chest clasp" parent="Airship/Model/Airship" index="9"]
+material_override = SubResource("ShipPalette")
+
+[node name="Deck board -0_7" parent="Airship/Model/Airship" index="10"]
+material_override = SubResource("ShipPalette")
+
+[node name="Deck board -0_9750000000000001" parent="Airship/Model/Airship" index="11"]
+material_override = SubResource("ShipPalette")
+
+[node name="Deck board -1_25" parent="Airship/Model/Airship" index="12"]
+material_override = SubResource("ShipPalette")
+
+[node name="Deck board -1_525" parent="Airship/Model/Airship" index="13"]
+material_override = SubResource("ShipPalette")
+
+[node name="Deck board -1_8" parent="Airship/Model/Airship" index="14"]
+material_override = SubResource("ShipPalette")
+
+[node name="Deck board -2_075" parent="Airship/Model/Airship" index="15"]
+material_override = SubResource("ShipPalette")
+
+[node name="Deck board -2_35" parent="Airship/Model/Airship" index="16"]
+material_override = SubResource("ShipPalette")
+
+[node name="Envelope" parent="Airship/Model/Airship" index="17"]
+material_override = SubResource("ShipPalette")
+
+[node name="Flag" parent="Airship/Model/Airship" index="18"]
+material_override = SubResource("ShipPalette")
+
+[node name="Flagstaff" parent="Airship/Model/Airship" index="19"]
+material_override = SubResource("ShipPalette")
+
+[node name="Gondola" parent="Airship/Model/Airship" index="20"]
+material_override = SubResource("WoodSurface")
+
+[node name="Lantern suspension" parent="Airship/Model/Airship" index="21"]
+material_override = SubResource("ShipPalette")
+
+[node name="Leather belt 1" parent="Airship/Model/Airship" index="22"]
+material_override = SubResource("ShipPalette")
+
+[node name="Leather belt 2" parent="Airship/Model/Airship" index="23"]
+material_override = SubResource("ShipPalette")
+
+[node name="Leather belt 3" parent="Airship/Model/Airship" index="24"]
+material_override = SubResource("ShipPalette")
+
+[node name="Rear ballast chest" parent="Airship/Model/Airship" index="25"]
+material_override = SubResource("ShipPalette")
+
+[node name="Rear propeller axle" parent="Airship/Model/Airship" index="26"]
+material_override = SubResource("ShipPalette")
+
+[node name="Rigging" parent="Airship/Model/Airship" index="27"]
+material_override = SubResource("ShipPalette")
+
+[node name="Roof board -0_24249999999999994" parent="Airship/Model/Airship" index="28"]
+material_override = SubResource("ShipPalette")
+
+[node name="Roof board -0_485" parent="Airship/Model/Airship" index="29"]
+material_override = SubResource("ShipPalette")
+
+[node name="Roof board -0_7275" parent="Airship/Model/Airship" index="30"]
+material_override = SubResource("ShipPalette")
+
+[node name="Roof board -0_97" parent="Airship/Model/Airship" index="31"]
+material_override = SubResource("ShipPalette")
+
+[node name="Roof board 0_0" parent="Airship/Model/Airship" index="32"]
+material_override = SubResource("ShipPalette")
+
+[node name="Roof board 0_24249999999999994" parent="Airship/Model/Airship" index="33"]
+material_override = SubResource("ShipPalette")
+
+[node name="Roof board 0_4850000000000001" parent="Airship/Model/Airship" index="34"]
+material_override = SubResource("ShipPalette")
+
+[node name="Roof board 0_7275" parent="Airship/Model/Airship" index="35"]
+material_override = SubResource("ShipPalette")
+
+[node name="Roof board 0_97" parent="Airship/Model/Airship" index="36"]
+material_override = SubResource("ShipPalette")
+
+[node name="Rope swag -1_-1_45" parent="Airship/Model/Airship" index="37"]
+material_override = SubResource("ShipPalette")
+
+[node name="Rope swag -1_-2_75" parent="Airship/Model/Airship" index="38"]
+material_override = SubResource("ShipPalette")
+
+[node name="Rope swag -1_0_1" parent="Airship/Model/Airship" index="39"]
+material_override = SubResource("ShipPalette")
+
+[node name="Rope swag -1_1_5" parent="Airship/Model/Airship" index="40"]
+material_override = SubResource("ShipPalette")
+
+[node name="Rope swag 1_-1_45" parent="Airship/Model/Airship" index="41"]
+material_override = SubResource("ShipPalette")
+
+[node name="Rope swag 1_-2_75" parent="Airship/Model/Airship" index="42"]
+material_override = SubResource("ShipPalette")
+
+[node name="Rope swag 1_0_1" parent="Airship/Model/Airship" index="43"]
+material_override = SubResource("ShipPalette")
+
+[node name="Rope swag 1_1_5" parent="Airship/Model/Airship" index="44"]
+material_override = SubResource("ShipPalette")
+
+[node name="Tension cable 0_-1" parent="Airship/Model/Airship" index="45"]
+material_override = SubResource("ShipPalette")
+
+[node name="Tension cable 0_1" parent="Airship/Model/Airship" index="46"]
+material_override = SubResource("ShipPalette")
+
+[node name="Tension cable 1_-1" parent="Airship/Model/Airship" index="47"]
+material_override = SubResource("ShipPalette")
+
+[node name="Tension cable 1_1" parent="Airship/Model/Airship" index="48"]
+material_override = SubResource("ShipPalette")
+
+[node name="Upper gunwale -1" parent="Airship/Model/Airship" index="49"]
+material_override = SubResource("ShipPalette")
+
+[node name="Upper gunwale 1" parent="Airship/Model/Airship" index="50"]
+material_override = SubResource("ShipPalette")
+
+[node name="Window crossbar 0_0" parent="Airship/Model/Airship" index="51"]
+material_override = SubResource("ShipPalette")
+
+[node name="Window crossbar 0_62" parent="Airship/Model/Airship" index="52"]
+material_override = SubResource("ShipPalette")
+
+[node name="Window crossbar 1_27" parent="Airship/Model/Airship" index="53"]
+material_override = SubResource("ShipPalette")
+
+[node name="Propeller" parent="Airship" instance=ExtResource("3")]
+position = Vector3(7.3,3.6,0)
+rotation = Vector3(0.15,0.34906585,0)
+scale = Vector3(1.13,1.13,1.13)
+
+[node name="Propeller_001" parent="Airship/Propeller/Propeller" index="0"]
+material_override = SubResource("ShipPalette")
+
+[node name="ReferenceCamera" type="Camera3D" parent="."]
+position = Vector3(0,145,250)
+rotation = Vector3(-0.0610865,0,0)
+current = true
+fov = 50.0
+near = 0.3
+far = 25000.0
+
+[editable path="Landscape"]
+[editable path="Airship/Model"]
+[editable path="Airship/Propeller"]

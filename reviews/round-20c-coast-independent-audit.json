@@ -1,0 +1,610 @@
+{
+  "scope": "Independent six raw image review against 1126/1342 and daylight1218, SHA binding and targeted GLB grass-face measurement. No GPU/Blender or candidate/production changes. Native gate and footing rays executed by parent; independently read here.",
+  "run": "E:\\FeiTing\\captures\\validation_runs\\lantern-islands-20c-20260908T085028Z-3201ab1e734147eab33bef2f08697333",
+  "run_passed": true,
+  "visual_acceptance": false,
+  "artifact_count": 53,
+  "artifact_sha256": {
+    "study-inputs/builder.py": "6b1098642fdebd4ad0ddc18e864a632106c9d583aeb8676ccf3f3297f82b468c",
+    "study-inputs/island_a.blend": "07bf6532a3f78c260e2ac7fc137a117ecbc78ea01d2e2813e6bce83d2ae46615",
+    "study-inputs/island_a.glb": "5e8526e72695e56c456802a624406ec18fbbc2fa21d76685d0445717e19f4234",
+    "study-inputs/island_b.blend": "073131dc88fc3580bf8ed31f70f5400042fe8288178f960442d15d6c0a868691",
+    "study-inputs/island_b.glb": "716bb65408b522d97643cee4611041f29e26bdf9aef932d1e7c4e63a03eefaff",
+    "study-inputs/island_c.blend": "44befbdbcc7c300ce8e188c5cdeb0ff7949c59378bad5242aa1c8e9ba7ec8bde",
+    "study-inputs/island_c.glb": "e98b643efef2fa4854e41e38b52884e0dd2137599f4428d5ec13b7cb2f5321ee",
+    "study-inputs/keeper_house.blend": "fba313178e3174f1a129b2fde9b337a1da0bfee58b4fc18c25be4a1047ffd46f",
+    "study-inputs/keeper_house.glb": "e64f9dbdbce55c8135e87f52d437770dbd206840fa032f3659ac04d9d8750cc6",
+    "study-inputs/model-report.json": "b75c0d118faf2f37dcfe4ae2ca28f7b00384e0bd879b0620039936b373fb605a",
+    "study-inputs/reef_low.blend": "45ff02e3183dc603681a21095dc1ce6c90c86c62113ef80ecbfa9bed4fca1e09",
+    "study-inputs/reef_low.glb": "fa848c038bf570b1e7952b1bac9668a2fe523ace2623a6114ffdb1dbd692b421",
+    "study-inputs/reef_ridge.blend": "9c8aae8654cf43331afc340ea03d8e14516f38809afa86862b43101ff1712c7a",
+    "study-inputs/reef_ridge.glb": "e5412e538004f8da5c8addf7c58e39fd3ec884edc208af9d30411562af4fda63",
+    "study-inputs/reef_spire.blend": "c4ce228e5d54fc42193e5121fd437bf9e03986176dffac0776565e06cfcabab7",
+    "study-inputs/reef_spire.glb": "ad8c8af701c62ca5b0991acf5a29cf13153f3eaf83674c2440db38a19c98fc34",
+    "study-inputs/round-20c-coast-native-check.json": "23b14e2df6123e259883951bad8e8e997a788cadac57557c70edb2b45c7e55a6",
+    "study-inputs/render_lantern_islands_study.py": "96a6bd5e69f02ee6870fff44bc169ba455b93e01b6d8363d3f6dd033c35dfff7",
+    "study-inputs/preview_lantern_islands_20.gd": "fb6092728634fa6cff55ad9cd07290b5c5bebbcec01fb939976346ffef11e03f",
+    "study-inputs/1126.png": "3051f512881fecf3d2b8dacadbac3ed10473f9094d28870526ae3cd4db9e4353",
+    "study-inputs/1342.png": "7acc98104013d9122eb551846b2d7fc1f7549bce8b2e3199eae8f5385a3ea238",
+    "study-inputs/1218.png": "774d8f62f8fa48a93ed15650c3bc21971b08b55262dea9421de36f3368f556b6",
+    "inputs.json": "08540d9484d50a5352f306bf0c5c08c5b253748153a5fbc7496435d03231047c",
+    "images/archipelago.png": "e2ea4b1e6ba5cff1844f9cc4fbc4be16d3414fcffa59ff09be9b9f9d03f63a67",
+    "images/archipelago.png.json": "a29bd471329085896b62f61b63a69c32ae98b8c209d2a1f8ea967127610b71ec",
+    "capture-archipelago.log": "c48cbb6433b9f5741ebeae69c474261a26c1b0a659f5a725a9795705c67748a1",
+    "capture-archipelago-error.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stages/capture-archipelago.json": "73c410b13c74fbd7084854d260055afc1cd3295114e3a051a2e964acb8692776",
+    "images/island-front.png": "03f442570bf1af3654825328c58243671552973c14965016bb0f2db8e9a3c098",
+    "images/island-front.png.json": "419e804a733a41a367ea957be2aa0b7369bf15b4beddc8f763d6fe90ae55e7f7",
+    "capture-island-front.log": "e07784e3ad2b9457e4bb45b94fdcf86855d3c480876a021c6c13b9cbd30a7ff3",
+    "capture-island-front-error.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stages/capture-island-front.json": "f7007506a1cb82422879a1e5f5bbe3eb9276f43e5cb577bd138663ceb380eec1",
+    "images/island-back.png": "a0a8553f369031e894ab4e0b24f150d34adf48dfd92dd18b70e1312b57e62db1",
+    "images/island-back.png.json": "707c22b3273d7b53b53f2ffffe593c9a10545efbc95153c094e0afc41f07fae4",
+    "capture-island-back.log": "318e1e3f9a1491d555d588e769de92d63b51498741f671fba2762703e03a0a5a",
+    "capture-island-back-error.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stages/capture-island-back.json": "b61509e8cd0e6bc4e050b110b4256788336fb6ab31f4e6ac12d3683e66b50d49",
+    "images/shoreline.png": "e8003a3afbb4e63203fc4e0ead4b99fe55167e7048c9018b01e97ab4e0935006",
+    "images/shoreline.png.json": "82b734e7983f34b13f56c1fc0323d795c684b46206d1605912b838a2c9e7cf1a",
+    "capture-shoreline.log": "e810005d5f7aebd32e93be5d5f2c3c24b75f38d3dfbd478247892b79f138ccba",
+    "capture-shoreline-error.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stages/capture-shoreline.json": "3c80e8cfb0059ebc2f637d82b2b79a409b572a53d50c099f96eaa23027c8f497",
+    "images/house-front.png": "1ed6333c5bf5397dae182b8260317167054446e96b38681d9d8a3efefe99a5c2",
+    "images/house-front.png.json": "8ad277fd688179484e422b8af0a67e6f1a2ba4c068a192b8a4187fcc519aa3ec",
+    "capture-house-front.log": "a8ba99532ff839d80c80d859cf60df64a33b8e000388a7acbf096a3006768e92",
+    "capture-house-front-error.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stages/capture-house-front.json": "4b79c36830d8a577fe43a69fc43298e038d0b8a5bba6ca5f449e8834d0735558",
+    "images/house-back.png": "0a4139401e2f3c5b289372d65e4e099a7fcf1469b8bc1e8691ea660eeefc3765",
+    "images/house-back.png.json": "0253de5da91d730015044660755a5d8a85980beb794f46a3c2e0c326e0b0b1ca",
+    "capture-house-back.log": "3c51d44d355d012ed205f6719c05295592f350c98ec0ed29231d28420bc67d5f",
+    "capture-house-back-error.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stages/capture-house-back.json": "3c8835b1a96679af02122d8407ff4b0ac5478e8f4ab53c77e2537f7f4b1d29d9"
+  },
+  "assets": [
+    {
+      "name": "island_a",
+      "parts": 16,
+      "source_sha256": "07bf6532a3f78c260e2ac7fc137a117ecbc78ea01d2e2813e6bce83d2ae46615",
+      "glb_sha256": "5e8526e72695e56c456802a624406ec18fbbc2fa21d76685d0445717e19f4234",
+      "same_as_20b": true
+    },
+    {
+      "name": "island_b",
+      "parts": 16,
+      "source_sha256": "073131dc88fc3580bf8ed31f70f5400042fe8288178f960442d15d6c0a868691",
+      "glb_sha256": "716bb65408b522d97643cee4611041f29e26bdf9aef932d1e7c4e63a03eefaff",
+      "same_as_20b": true
+    },
+    {
+      "name": "island_c",
+      "parts": 16,
+      "source_sha256": "44befbdbcc7c300ce8e188c5cdeb0ff7949c59378bad5242aa1c8e9ba7ec8bde",
+      "glb_sha256": "e98b643efef2fa4854e41e38b52884e0dd2137599f4428d5ec13b7cb2f5321ee",
+      "same_as_20b": true
+    },
+    {
+      "name": "reef_low",
+      "parts": 2,
+      "source_sha256": "45ff02e3183dc603681a21095dc1ce6c90c86c62113ef80ecbfa9bed4fca1e09",
+      "glb_sha256": "fa848c038bf570b1e7952b1bac9668a2fe523ace2623a6114ffdb1dbd692b421",
+      "same_as_20b": true
+    },
+    {
+      "name": "reef_spire",
+      "parts": 2,
+      "source_sha256": "c4ce228e5d54fc42193e5121fd437bf9e03986176dffac0776565e06cfcabab7",
+      "glb_sha256": "ad8c8af701c62ca5b0991acf5a29cf13153f3eaf83674c2440db38a19c98fc34",
+      "same_as_20b": true
+    },
+    {
+      "name": "reef_ridge",
+      "parts": 2,
+      "source_sha256": "9c8aae8654cf43331afc340ea03d8e14516f38809afa86862b43101ff1712c7a",
+      "glb_sha256": "e5412e538004f8da5c8addf7c58e39fd3ec884edc208af9d30411562af4fda63",
+      "same_as_20b": true
+    },
+    {
+      "name": "keeper_house",
+      "parts": 171,
+      "source_sha256": "fba313178e3174f1a129b2fde9b337a1da0bfee58b4fc18c25be4a1047ffd46f",
+      "glb_sha256": "e64f9dbdbce55c8135e87f52d437770dbd206840fa032f3659ac04d9d8750cc6",
+      "same_as_20b": null
+    }
+  ],
+  "native_gate_sha256": "23b14e2df6123e259883951bad8e8e997a788cadac57557c70edb2b45c7e55a6",
+  "native_gate_passed": true,
+  "20b_gate_remains_failed": true,
+  "keeper_window_orientation_checks": [
+    {
+      "name": "Keeper front window glazing 1",
+      "dimensions_blender": [
+        1.2000000476837158,
+        0.034999847412109375,
+        1.4000000953674316
+      ],
+      "wall_thickness_axis": 1,
+      "passed": true
+    },
+    {
+      "name": "Keeper front window glazing 2",
+      "dimensions_blender": [
+        1.2000000476837158,
+        0.034999847412109375,
+        1.4000000953674316
+      ],
+      "wall_thickness_axis": 1,
+      "passed": true
+    },
+    {
+      "name": "Keeper back window glazing 0",
+      "dimensions_blender": [
+        1.399999976158142,
+        0.034999847412109375,
+        1.4000000953674316
+      ],
+      "wall_thickness_axis": 1,
+      "passed": true
+    },
+    {
+      "name": "Keeper back window glazing 1",
+      "dimensions_blender": [
+        1.399999976158142,
+        0.034999847412109375,
+        1.4000000953674316
+      ],
+      "wall_thickness_axis": 1,
+      "passed": true
+    },
+    {
+      "name": "Keeper east window glazing 0",
+      "dimensions_blender": [
+        0.034999847412109375,
+        1.4000000953674316,
+        1.4000000953674316
+      ],
+      "wall_thickness_axis": 0,
+      "passed": true
+    },
+    {
+      "name": "Keeper east window glazing 1",
+      "dimensions_blender": [
+        0.034999847412109375,
+        1.4000000953674316,
+        1.4000000953674316
+      ],
+      "wall_thickness_axis": 0,
+      "passed": true
+    },
+    {
+      "name": "Keeper west window glazing 0",
+      "dimensions_blender": [
+        0.034999847412109375,
+        1.4000000953674316,
+        1.4000000953674316
+      ],
+      "wall_thickness_axis": 0,
+      "passed": true
+    },
+    {
+      "name": "Keeper west window glazing 1",
+      "dimensions_blender": [
+        0.034999847412109375,
+        1.4000000953674316,
+        1.4000000953674316
+      ],
+      "wall_thickness_axis": 0,
+      "passed": true
+    }
+  ],
+  "actual_glb_grass_faces": [
+    {
+      "asset": "island_a",
+      "upward_grass_triangles": 52,
+      "slope_range_deg": [
+        0.0,
+        19.51270893708884
+      ],
+      "upward_area_m2": 6904.14760376669,
+      "horizontal_area_m2": 2234.9574139446977,
+      "horizontal_fraction": 0.3237122874843194
+    },
+    {
+      "asset": "island_b",
+      "upward_grass_triangles": 52,
+      "slope_range_deg": [
+        0.0,
+        38.79397729094905
+      ],
+      "upward_area_m2": 3468.080171086273,
+      "horizontal_area_m2": 1103.6688001486755,
+      "horizontal_fraction": 0.31823624186951366
+    },
+    {
+      "asset": "island_c",
+      "upward_grass_triangles": 52,
+      "slope_range_deg": [
+        0.0,
+        31.70173427034938
+      ],
+      "upward_area_m2": 2168.0076462473708,
+      "horizontal_area_m2": 678.3348342447146,
+      "horizontal_fraction": 0.3128839676459869
+    }
+  ],
+  "footing_samples": [
+    {
+      "view": "archipelago",
+      "buildings": [
+        {
+          "building": "Lighthouse_island_a",
+          "count": 9,
+          "bottom_gap_minmax": [
+            -0.5,
+            -0.499984741210938
+          ]
+        },
+        {
+          "building": "Lighthouse_island_b",
+          "count": 9,
+          "bottom_gap_minmax": [
+            -0.5,
+            -0.499984741210938
+          ]
+        },
+        {
+          "building": "Lighthouse_island_c",
+          "count": 9,
+          "bottom_gap_minmax": [
+            -0.500015258789063,
+            -0.5
+          ]
+        },
+        {
+          "building": "keeper_house_19",
+          "count": 9,
+          "bottom_gap_minmax": [
+            -0.650014877319336,
+            -0.649969100952148
+          ]
+        },
+        {
+          "building": "keeper_house_20",
+          "count": 9,
+          "bottom_gap_minmax": [
+            -0.552499771118164,
+            -0.552469253540039
+          ]
+        },
+        {
+          "building": "keeper_house_21",
+          "count": 9,
+          "bottom_gap_minmax": [
+            -0.520015716552734,
+            -0.520000457763672
+          ]
+        },
+        {
+          "building": "keeper_house_22",
+          "count": 9,
+          "bottom_gap_minmax": [
+            -0.454999923706055,
+            -0.454999923706055
+          ]
+        }
+      ],
+      "placement_count": 44
+    },
+    {
+      "view": "island-front",
+      "buildings": [
+        {
+          "building": "Lighthouse_island_a",
+          "count": 9,
+          "bottom_gap_minmax": [
+            -0.5,
+            -0.499984741210938
+          ]
+        },
+        {
+          "building": "Lighthouse_island_b",
+          "count": 9,
+          "bottom_gap_minmax": [
+            -0.5,
+            -0.499984741210938
+          ]
+        },
+        {
+          "building": "Lighthouse_island_c",
+          "count": 9,
+          "bottom_gap_minmax": [
+            -0.500015258789063,
+            -0.5
+          ]
+        },
+        {
+          "building": "keeper_house_19",
+          "count": 9,
+          "bottom_gap_minmax": [
+            -0.650014877319336,
+            -0.649969100952148
+          ]
+        },
+        {
+          "building": "keeper_house_20",
+          "count": 9,
+          "bottom_gap_minmax": [
+            -0.552499771118164,
+            -0.552469253540039
+          ]
+        },
+        {
+          "building": "keeper_house_21",
+          "count": 9,
+          "bottom_gap_minmax": [
+            -0.520015716552734,
+            -0.520000457763672
+          ]
+        },
+        {
+          "building": "keeper_house_22",
+          "count": 9,
+          "bottom_gap_minmax": [
+            -0.454999923706055,
+            -0.454999923706055
+          ]
+        }
+      ],
+      "placement_count": 44
+    },
+    {
+      "view": "island-back",
+      "buildings": [
+        {
+          "building": "Lighthouse_island_a",
+          "count": 9,
+          "bottom_gap_minmax": [
+            -0.5,
+            -0.499984741210938
+          ]
+        },
+        {
+          "building": "Lighthouse_island_b",
+          "count": 9,
+          "bottom_gap_minmax": [
+            -0.5,
+            -0.499984741210938
+          ]
+        },
+        {
+          "building": "Lighthouse_island_c",
+          "count": 9,
+          "bottom_gap_minmax": [
+            -0.500015258789063,
+            -0.5
+          ]
+        },
+        {
+          "building": "keeper_house_19",
+          "count": 9,
+          "bottom_gap_minmax": [
+            -0.650014877319336,
+            -0.649969100952148
+          ]
+        },
+        {
+          "building": "keeper_house_20",
+          "count": 9,
+          "bottom_gap_minmax": [
+            -0.552499771118164,
+            -0.552469253540039
+          ]
+        },
+        {
+          "building": "keeper_house_21",
+          "count": 9,
+          "bottom_gap_minmax": [
+            -0.520015716552734,
+            -0.520000457763672
+          ]
+        },
+        {
+          "building": "keeper_house_22",
+          "count": 9,
+          "bottom_gap_minmax": [
+            -0.454999923706055,
+            -0.454999923706055
+          ]
+        }
+      ],
+      "placement_count": 44
+    },
+    {
+      "view": "shoreline",
+      "buildings": [
+        {
+          "building": "Lighthouse_island_a",
+          "count": 9,
+          "bottom_gap_minmax": [
+            -0.5,
+            -0.499984741210938
+          ]
+        },
+        {
+          "building": "Lighthouse_island_b",
+          "count": 9,
+          "bottom_gap_minmax": [
+            -0.5,
+            -0.499984741210938
+          ]
+        },
+        {
+          "building": "Lighthouse_island_c",
+          "count": 9,
+          "bottom_gap_minmax": [
+            -0.500015258789063,
+            -0.5
+          ]
+        },
+        {
+          "building": "keeper_house_19",
+          "count": 9,
+          "bottom_gap_minmax": [
+            -0.650014877319336,
+            -0.649969100952148
+          ]
+        },
+        {
+          "building": "keeper_house_20",
+          "count": 9,
+          "bottom_gap_minmax": [
+            -0.552499771118164,
+            -0.552469253540039
+          ]
+        },
+        {
+          "building": "keeper_house_21",
+          "count": 9,
+          "bottom_gap_minmax": [
+            -0.520015716552734,
+            -0.520000457763672
+          ]
+        },
+        {
+          "building": "keeper_house_22",
+          "count": 9,
+          "bottom_gap_minmax": [
+            -0.454999923706055,
+            -0.454999923706055
+          ]
+        }
+      ],
+      "placement_count": 44
+    },
+    {
+      "view": "house-front",
+      "buildings": [
+        {
+          "building": "Lighthouse_island_a",
+          "count": 9,
+          "bottom_gap_minmax": [
+            -0.5,
+            -0.499984741210938
+          ]
+        },
+        {
+          "building": "Lighthouse_island_b",
+          "count": 9,
+          "bottom_gap_minmax": [
+            -0.5,
+            -0.499984741210938
+          ]
+        },
+        {
+          "building": "Lighthouse_island_c",
+          "count": 9,
+          "bottom_gap_minmax": [
+            -0.500015258789063,
+            -0.5
+          ]
+        },
+        {
+          "building": "keeper_house_19",
+          "count": 9,
+          "bottom_gap_minmax": [
+            -0.650014877319336,
+            -0.649969100952148
+          ]
+        },
+        {
+          "building": "keeper_house_20",
+          "count": 9,
+          "bottom_gap_minmax": [
+            -0.552499771118164,
+            -0.552469253540039
+          ]
+        },
+        {
+          "building": "keeper_house_21",
+          "count": 9,
+          "bottom_gap_minmax": [
+            -0.520015716552734,
+            -0.520000457763672
+          ]
+        },
+        {
+          "building": "keeper_house_22",
+          "count": 9,
+          "bottom_gap_minmax": [
+            -0.454999923706055,
+            -0.454999923706055
+          ]
+        }
+      ],
+      "placement_count": 44
+    },
+    {
+      "view": "house-back",
+      "buildings": [
+        {
+          "building": "Lighthouse_island_a",
+          "count": 9,
+          "bottom_gap_minmax": [
+            -0.5,
+            -0.499984741210938
+          ]
+        },
+        {
+          "building": "Lighthouse_island_b",
+          "count": 9,
+          "bottom_gap_minmax": [
+            -0.5,
+            -0.499984741210938
+          ]
+        },
+        {
+          "building": "Lighthouse_island_c",
+          "count": 9,
+          "bottom_gap_minmax": [
+            -0.500015258789063,
+            -0.5
+          ]
+        },
+        {
+          "building": "keeper_house_19",
+          "count": 9,
+          "bottom_gap_minmax": [
+            -0.650014877319336,
+            -0.649969100952148
+          ]
+        },
+        {
+          "building": "keeper_house_20",
+          "count": 9,
+          "bottom_gap_minmax": [
+            -0.552499771118164,
+            -0.552469253540039
+          ]
+        },
+        {
+          "building": "keeper_house_21",
+          "count": 9,
+          "bottom_gap_minmax": [
+            -0.520015716552734,
+            -0.520000457763672
+          ]
+        },
+        {
+          "building": "keeper_house_22",
+          "count": 9,
+          "bottom_gap_minmax": [
+            -0.454999923706055,
+            -0.454999923706055
+          ]
+        }
+      ],
+      "placement_count": 44
+    }
+  ],
+  "production_noncache_input_delta_vs_19h_native": [],
+  "current_world_sha256": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+  "decision": "Reject whole coast candidate for integration; retain keeper-house source as a useful draft and window correction. Rebuild island silhouette and relief before material/composition polish."
+}

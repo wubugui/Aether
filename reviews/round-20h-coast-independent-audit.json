@@ -1,0 +1,198 @@
+{
+  "reviewer": "independent fidelity reviewer; no Blender or GPU run",
+  "utc": "2026-09-08T09:32:03.994657+00:00",
+  "run": "E:\\FeiTing\\captures\\validation_runs\\lantern-islands-20h-20260908T092421Z-1fa033d6cf29424fbea2c3ab935069bb",
+  "manifest_status": "passed",
+  "artifact_count_verified": 45,
+  "artifact_mismatches": [],
+  "four_stages_passed_same_inputs": true,
+  "house_source_sha256": "ded477b6ed619aa9ca11da4ce7fe190938c27a86ff31237922fad161f2177759",
+  "house_glb_sha256": "8f70f7ba4d6c94d23b310b73f6fee9d171f6efb32d255be2574254e639b6176b",
+  "six_geology_byte_identity_20g": {
+    "island_a": {
+      "blend": true,
+      "glb": true
+    },
+    "island_b": {
+      "blend": true,
+      "glb": true
+    },
+    "island_c": {
+      "blend": true,
+      "glb": true
+    },
+    "reef_low": {
+      "blend": true,
+      "glb": true
+    },
+    "reef_ridge": {
+      "blend": true,
+      "glb": true
+    },
+    "reef_spire": {
+      "blend": true,
+      "glb": true
+    }
+  },
+  "native_gate": {
+    "passed": true,
+    "parts": 371,
+    "source_hashes_match": true,
+    "provenance": "Parent-run saved Blender read; independently read and hash-bound here, not rerun."
+  },
+  "roof_lap_report": {
+    "sha256": "50487e928f816040d503b5199e299000dc9d72752f2e02ca2e350923532ed55f",
+    "bound_in_manifest": true,
+    "source_matches": true,
+    "versions": [
+      {
+        "label": "20g",
+        "source_sha256": "c1d21af177ac9ff25ef2d17bab48f9eb1decc30b94b0d5df155f5f9a0e3f6976",
+        "tile_count": 196,
+        "samples": 1620,
+        "minimum_top_clearance_m": -0.031043802524601816,
+        "maximum_top_clearance_m": 0.031043862217459584,
+        "nonpositive_samples": 762
+      },
+      {
+        "label": "20h",
+        "source_sha256": "ded477b6ed619aa9ca11da4ce7fe190938c27a86ff31237922fad161f2177759",
+        "tile_count": 196,
+        "samples": 1620,
+        "minimum_top_clearance_m": 0.010017224901179844,
+        "maximum_top_clearance_m": 0.025982722904925204,
+        "nonpositive_samples": 0
+      }
+    ]
+  },
+  "independent_actual_glb_target_pair": {
+    "upper": {
+      "row": 0,
+      "col": 5,
+      "ya": -1.3439999999999996,
+      "yb": -0.5159999999999998,
+      "ym": -0.9299999999999997,
+      "x0": 0.0,
+      "x1": 0.5919357142857143,
+      "bias": 0.10799999999999998,
+      "max_export_vertex_error_m": 2.176112048826134e-07
+    },
+    "lower": {
+      "row": 1,
+      "col": 4,
+      "ya": -1.764,
+      "yb": -0.9359999999999997,
+      "ym": -1.3499999999999999,
+      "x0": 0.5642857142857143,
+      "x1": 1.1562214285714285,
+      "bias": 0.09,
+      "max_export_vertex_error_m": 2.0596875434441386e-07
+    },
+    "overlap_x_m": [
+      0.5642857142857143,
+      0.5919357142857143
+    ],
+    "piecewise_y_breaks_m": [
+      -1.3439999999999996,
+      -0.9359999999999997
+    ],
+    "upper_top_minus_lower_top_m": [
+      0.009130434782608693,
+      0.026869565217391284
+    ],
+    "upper_bottom_minus_lower_bottom_m": [
+      0.009130434782608693,
+      0.026869565217391284
+    ],
+    "upper_bottom_minus_lower_top_m": [
+      -0.08586956521739131,
+      -0.06813043478260872
+    ],
+    "interpretation": "Exposed tops remain ordered, equal-thickness bottoms ordered too. Solid tiles still penetrate in intended narrow lap strip; not disjoint-solids proof. Target pair only."
+  },
+  "footing": [
+    {
+      "building": "Lighthouse_island_a",
+      "count": 9,
+      "gap_range_m": [
+        -0.546112060546875,
+        -0.0304718017578125
+      ],
+      "all_grass_colliders": true
+    },
+    {
+      "building": "Lighthouse_island_b",
+      "count": 9,
+      "gap_range_m": [
+        -0.605255126953125,
+        -0.0328521728515625
+      ],
+      "all_grass_colliders": true
+    },
+    {
+      "building": "Lighthouse_island_c",
+      "count": 9,
+      "gap_range_m": [
+        -0.500839233398438,
+        -0.4630126953125
+      ],
+      "all_grass_colliders": true
+    },
+    {
+      "building": "keeper_house_19",
+      "count": 9,
+      "gap_range_m": [
+        -0.649999618530273,
+        -0.543249130249023
+      ],
+      "all_grass_colliders": true
+    },
+    {
+      "building": "keeper_house_20",
+      "count": 9,
+      "gap_range_m": [
+        -0.634454727172852,
+        -0.552499771118164
+      ],
+      "all_grass_colliders": true
+    },
+    {
+      "building": "keeper_house_21",
+      "count": 9,
+      "gap_range_m": [
+        -0.825725555419922,
+        -0.359966278076172
+      ],
+      "all_grass_colliders": true
+    },
+    {
+      "building": "keeper_house_22",
+      "count": 9,
+      "gap_range_m": [
+        -0.53364372253418,
+        -0.303129196166992
+      ],
+      "all_grass_colliders": true
+    }
+  ],
+  "four_views_identical_footing": true,
+  "footing_matches_20g": true,
+  "noncache_production_snapshot_changes_vs20g": [],
+  "production_modified_reported": false,
+  "images_actually_viewed": [
+    "E:\\FeiTing\\captures\\validation_runs\\lantern-islands-20h-20260908T092421Z-1fa033d6cf29424fbea2c3ab935069bb\\images\\house-front.png",
+    "E:\\FeiTing\\captures\\validation_runs\\lantern-islands-20h-20260908T092421Z-1fa033d6cf29424fbea2c3ab935069bb\\images\\house-back.png",
+    "E:\\FeiTing\\captures\\validation_runs\\lantern-islands-20h-20260908T092421Z-1fa033d6cf29424fbea2c3ab935069bb\\images\\archipelago.png",
+    "E:\\FeiTing\\captures\\validation_runs\\lantern-islands-20h-20260908T092421Z-1fa033d6cf29424fbea2c3ab935069bb\\images\\c-site.png"
+  ],
+  "decision": {
+    "keeper_roof_building_draft": "accept bounded local visual improvement",
+    "coast_art": "not accepted for whole scene integration",
+    "all_20_references_complete": false
+  },
+  "limitations": [
+    "1620 samples are top ordering evidence, not complete collision scan.",
+    "Bottom footprint 63 samples do not prove all surfaces, stairs, access or landscape integration.",
+    "Front tile cross seams subtler than rear; do not claim equally readable all angles."
+  ]
+}

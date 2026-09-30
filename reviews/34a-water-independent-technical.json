@@ -1,0 +1,332 @@
+{
+  "scope": "Independent bounded water shader technical review; no engine launch, image art assessment, or repeated land support scan.",
+  "source": "E:\\FeiTing\\captures\\water_study_34a\\open_water.gdshader",
+  "shader_sha256": "99c9e77391dbec7755820f345acf9bb2290c0f7db335420e08ee031893cedc8f",
+  "parent_shader_sha256": "cb2528a352d1c17c966e9a5a48b8c96d54e2a87b73776277ed8f7add3987cdfa",
+  "checks": {
+    "source_parent_sha": true,
+    "source_shader_sha": true,
+    "frozen_shader_matches_source": true,
+    "depth_color_foam_block_unchanged": true,
+    "vertex_block_unchanged": true,
+    "run_terminal_passed": true,
+    "stage_exit_codes_zero": true,
+    "bounded_cpu_found_all": true,
+    "bounded_cell_orientation_positive": true,
+    "runtime_record_checks": true,
+    "fourteen_selected_bindings_match": true
+  },
+  "technical_checks_passed": true,
+  "cells": {
+    "previous_cell_m": [
+      3.2,
+      1.1
+    ],
+    "current_cell_m": [
+      6.5,
+      4.5
+    ],
+    "previous_jitter_fraction": 0.32,
+    "current_jitter_fraction": 0.45,
+    "cell_area_m2": 29.25,
+    "max_vertex_offset_from_grid_m": [
+      1.4625,
+      1.0125
+    ],
+    "shared_vertex_height_continuity": "C0 by shared integer id and shared sea_height at reconstructed world coordinates; piecewise constant facet normals intentionally discontinuous.",
+    "orientation_bound_exact_arithmetic_twice_area_m2": 2.925000000000001,
+    "bounded_float32_min_twice_area_m2": 6.43653678894043,
+    "cpu_samples": [
+      {
+        "world_time": 0.0,
+        "points": 8192,
+        "not_found": 0,
+        "multiple_hits_at_epsilon": 0,
+        "all_normals_finite": true,
+        "min_up_component": 0.9930914044380188
+      },
+      {
+        "world_time": 18.0,
+        "points": 8192,
+        "not_found": 0,
+        "multiple_hits_at_epsilon": 0,
+        "all_normals_finite": true,
+        "min_up_component": 0.992241621017456
+      }
+    ],
+    "sample_world_xz_bounds": [
+      [
+        -3300,
+        -2600
+      ],
+      [
+        -1700,
+        -1300
+      ]
+    ],
+    "seed": 3401,
+    "cpu_limit": "NumPy float32 mirror is not a bit-identical GLSL sin implementation or an exhaustive GPU pixel coverage test.",
+    "fallback": "No found=false diagnostic in shader; if a numerical lookup miss occurs it uses the default origin triangle. No miss in this bounded CPU sample."
+  },
+  "filter": {
+    "formula": "p=1/(1/180+1.5*(dot(dFdx(R),dFdx(R))+dot(dFdy(R),dFdy(R))))",
+    "finite_unit_ray_variance_bound": [
+      0,
+      8
+    ],
+    "power_bound": [
+      0.08329477093937991,
+      180
+    ],
+    "peak_at_zero_variance": 1,
+    "nonnegative_finite_under_unit_ray_assumptions": true,
+    "energy": "p/180 approximately compensates peak for broadening; normalized cosine-lobe energy uses p+1, so this is not exact energy conservation.",
+    "coverage_limit": "Post-branch derivatives measure sampled reflected-ray changes. Facet interiors only see their current facet; no multi-facet prefilter or temporal coverage guarantee.",
+    "performance": "Up to 18 triangle inclusion candidates and three noise-height evaluations per fragment; no independent GPU timing collected."
+  },
+  "shore_depth": {
+    "preserved_from_parent": true,
+    "renderer_observed": "OpenGL 3.3 Compatibility; project selects gl_compatibility",
+    "method": "Actual depth texture -> inverse projection [-1,1] NDC -> world position -> nonnegative difference in Y; original color/foam retained.",
+    "limit": "Scene depth is a visible camera-ray hit, not a vertical same-XZ seabed query; shoreline appearance is still screen-space, especially at oblique views and occlusion."
+  },
+  "limitations": [
+    "No vertex displacement: flat geometry, unchanged silhouette, collision and geometric wave/shore intersection.",
+    "Moon lobe and sky colors are analytic. No cloud/object/shore scene reflection or local-light specular reflection is implemented.",
+    "Custom light() still computes LIGHT_COLOR*ATTENUATION Lambert diffuse, including applicable local lights. No local-light reflection is different from no local illumination.",
+    "Earlier sinusoidal NORMAL assignment is overwritten by the final world-to-view facet NORMAL and does not contribute to the output.",
+    "ROUGHNESS/SPECULAR values do not add a custom SPECULAR_LIGHT contribution; current custom light() only adds DIFFUSE_LIGHT.",
+    "Bounded technical checks and terminal run identity do not establish artistic fidelity or flicker-free animation."
+  ],
+  "runtime": {
+    "run_id": "water-34a-20260908T233808Z-05bd651c68574ef79ba9b59ab98506bb",
+    "status": "passed",
+    "completed_utc": "2026-09-08T23:39:30.154242+00:00",
+    "stages": [
+      {
+        "name": "night-views",
+        "exit_code": 0
+      },
+      {
+        "name": "day-views",
+        "exit_code": 0
+      }
+    ],
+    "error_log_bytes": {
+      "night-views-error.log": 0,
+      "day-views-error.log": 0
+    },
+    "views": [
+      {
+        "view": "night-reference",
+        "camera": {
+          "fov": 70.0,
+          "position": [
+            -2278.0,
+            60.0,
+            -1632.0
+          ],
+          "rotation": [
+            -0.00509163970127702,
+            0.60683274269104,
+            0.0
+          ]
+        },
+        "world_time": 0.0,
+        "checks": {
+          "same_run": true,
+          "shader_identity": true,
+          "camera_equals_revision": true,
+          "expected_time": true,
+          "world_sha_unchanged": true,
+          "rightcoast_glb_unchanged": true,
+          "placements_unchanged": true,
+          "named_headland_trees_unchanged": true
+        }
+      },
+      {
+        "view": "night-water-near",
+        "camera": {
+          "fov": 70.0,
+          "position": [
+            -2330.0,
+            8.0,
+            -1740.0
+          ],
+          "rotation": [
+            -0.0185673981904984,
+            0.380506366491318,
+            0.0
+          ]
+        },
+        "world_time": 0.0,
+        "checks": {
+          "same_run": true,
+          "shader_identity": true,
+          "camera_equals_revision": true,
+          "expected_time": true,
+          "world_sha_unchanged": true,
+          "rightcoast_glb_unchanged": true,
+          "placements_unchanged": true,
+          "named_headland_trees_unchanged": true
+        }
+      },
+      {
+        "view": "night-water-shift",
+        "camera": {
+          "fov": 70.0,
+          "position": [
+            -2363.0,
+            40.0,
+            -1662.0
+          ],
+          "rotation": [
+            -0.00509163970127702,
+            0.60683274269104,
+            0.0
+          ]
+        },
+        "world_time": 0.0,
+        "checks": {
+          "same_run": true,
+          "shader_identity": true,
+          "camera_equals_revision": true,
+          "expected_time": true,
+          "world_sha_unchanged": true,
+          "rightcoast_glb_unchanged": true,
+          "placements_unchanged": true,
+          "named_headland_trees_unchanged": true
+        }
+      },
+      {
+        "view": "night-time18",
+        "camera": {
+          "fov": 70.0,
+          "position": [
+            -2278.0,
+            60.0,
+            -1632.0
+          ],
+          "rotation": [
+            -0.00509163970127702,
+            0.60683274269104,
+            0.0
+          ]
+        },
+        "world_time": 18.0,
+        "checks": {
+          "same_run": true,
+          "shader_identity": true,
+          "camera_equals_revision": true,
+          "expected_time": true,
+          "world_sha_unchanged": true,
+          "rightcoast_glb_unchanged": true,
+          "placements_unchanged": true,
+          "named_headland_trees_unchanged": true
+        }
+      },
+      {
+        "view": "day-reference",
+        "camera": {
+          "fov": 70.0,
+          "position": [
+            -2278.0,
+            60.0,
+            -1632.0
+          ],
+          "rotation": [
+            -0.00509163970127702,
+            0.60683274269104,
+            0.0
+          ]
+        },
+        "world_time": 0.0,
+        "checks": {
+          "same_run": true,
+          "shader_identity": true,
+          "camera_equals_revision": true,
+          "expected_time": true,
+          "world_sha_unchanged": true,
+          "rightcoast_glb_unchanged": true,
+          "placements_unchanged": true,
+          "named_headland_trees_unchanged": true
+        }
+      }
+    ],
+    "selected_bindings": [
+      {
+        "path": "images/night-reference.png.json",
+        "sha256": "724d1ccd1e07cdf17a62c2b54367466409a463bf68d0c1aa31f1036ec095cba7",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/night-reference.png",
+        "sha256": "4d7572366b2b6fdbdd6bee12cde34409605b95687d0d45b332be1c50363ef45e",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/night-water-near.png.json",
+        "sha256": "c92ef2cb0782db8d5047f97a1682b5dc43e73309a9fbd7e63923fc2332cbab63",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/night-water-near.png",
+        "sha256": "dc8d21273e669f2a74e67df5356dc8ee87c7dd006e9f5c654ef0463ff211639e",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/night-water-shift.png.json",
+        "sha256": "e353d350d295055911169e0fb7dc599aedc2396b48e4a1bb599f9dfacbee1dfe",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/night-water-shift.png",
+        "sha256": "ffb97d4d99721e6cf455d2e913e95d8ba4c388c20a80251917dda4170b00f384",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/night-time18.png.json",
+        "sha256": "674308de263382caebfef99f42d50f65094d4ad6149a32aed940cf68b6546217",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/night-time18.png",
+        "sha256": "a0c137939d94dd08d69a2be6bd622bfaedae6712fc8818464eecec4db70da3cc",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/day-reference.png.json",
+        "sha256": "86edaf74d74ebf44e95c9fdb8df6280d8ada81c55643d3e4413b4d64d6780804",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/day-reference.png",
+        "sha256": "d0fa3a07368d3c726154c3dfaeb0094c86512e172b53b3846563988016d5babd",
+        "matches_manifest": true
+      },
+      {
+        "path": "study-inputs/new-environment27f/open_water.gdshader",
+        "sha256": "99c9e77391dbec7755820f345acf9bb2290c0f7db335420e08ee031893cedc8f",
+        "matches_manifest": true
+      },
+      {
+        "path": "study-inputs/water34a-builder.py",
+        "sha256": "7a0b0d5420e2007babf1b2d2328fdf9b8949c7f9c2b8eb91cd23341466acec4e",
+        "matches_manifest": true
+      },
+      {
+        "path": "study-inputs/water34a-design-plan.json",
+        "sha256": "b8a714a23070d6dacbe9047d00b3526ba1db51dd99c0f947da94ad548e219c41",
+        "matches_manifest": true
+      },
+      {
+        "path": "study-inputs/render_water_34a.py",
+        "sha256": "362b7ebf0e3fc0fd697c028697ef1149d0bd346d70dd9b692d9e2470c1baa831",
+        "matches_manifest": true
+      }
+    ],
+    "land_validation": "Exact runtime record comparison only; prior full geometry/footing validation inherited, not repeated."
+  },
+  "full_reference_accepted": false,
+  "all_reference_goal_complete": false
+}

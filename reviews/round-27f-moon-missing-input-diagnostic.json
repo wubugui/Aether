@@ -1,0 +1,69 @@
+{
+  "scope": "Historical comparison of matching27e/27f moon inputs. The motivating missing-moon observation was incorrect; saved moon pixels are identical. No moon rendering regression is established.",
+  "runs": {
+    "27e": {
+      "moon": {
+        "asset": "moon",
+        "position": [
+          -3933.2509765625,
+          3478.45336914063,
+          -9791.30859375
+        ],
+        "radius_m": 330.0,
+        "scope": "Fixed world position near9000m; angular direction matches reference-camera moon light, finite-distance approximation during flight."
+      },
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -2278.0,
+          60.0,
+          -1632.0
+        ],
+        "rotation": [
+          -0.00509163970127702,
+          0.60683274269104,
+          0.0
+        ]
+      },
+      "files": {
+        "sky-assets/moon.glb": "d4f87e9dfe4dbec9f0a91cbad9356eb53b7d51c9b6970e069924cea10ce46cee",
+        "sky-assets/moon.blend": "786fed316ba6a981445e21bd2a270b8bc8f30b65fb4ae8706e64224e63df012d",
+        "moon.gdshader": "6ea8050f93cf21f44cb14c8ab3ed5674b309dd382854ba2ff709bb006b50a146",
+        "open_sky.gdshader": "b514467ebb754a42057c23475b245b51045ed74804cb4faa7598138dd40e80cb"
+      }
+    },
+    "27f": {
+      "moon": {
+        "asset": "moon",
+        "position": [
+          -3933.2509765625,
+          3478.45336914063,
+          -9791.30859375
+        ],
+        "radius_m": 330.0,
+        "scope": "Fixed world position near9000m; angular direction matches reference-camera moon light, finite-distance approximation during flight."
+      },
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -2278.0,
+          60.0,
+          -1632.0
+        ],
+        "rotation": [
+          -0.00509163970127702,
+          0.60683274269104,
+          0.0
+        ]
+      },
+      "files": {
+        "sky-assets/moon.glb": "d4f87e9dfe4dbec9f0a91cbad9356eb53b7d51c9b6970e069924cea10ce46cee",
+        "sky-assets/moon.blend": "786fed316ba6a981445e21bd2a270b8bc8f30b65fb4ae8706e64224e63df012d",
+        "moon.gdshader": "6ea8050f93cf21f44cb14c8ab3ed5674b309dd382854ba2ff709bb006b50a146",
+        "open_sky.gdshader": "b514467ebb754a42057c23475b245b51045ed74804cb4faa7598138dd40e80cb"
+      }
+    }
+  },
+  "withdrawn_original_scope": "Moon absent in both actual27f reference images. This compares frozen inputs only; cause is not established.",
+  "superseded_by": "reviews/round-27h-moon-observation-correction.json"
+}

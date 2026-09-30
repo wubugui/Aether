@@ -1,0 +1,840 @@
+{
+  "round": "31i",
+  "scope": "Bounded actual31h shared-edge and endpoint-one-ring intake only. No31i candidate/native/GPU or full support check.",
+  "files": {
+    "captures\\lantern_island_study_31h\\geometry-evidence.json": "5b73b3d949e205db2c2602ffc775aa4095fa26c7a279dae4bb42897704a5994c",
+    "captures\\validation_runs\\lantern-island-31h-20260908T212800Z-78b153beccc94a60ba27ba0e79a1cfaa\\images\\night-reference.png.json": "12f06812cc05c4d606cfecc6513e25d40c880133ab8584572143458fe33b2745"
+  },
+  "current_actual_tree_count": 14,
+  "selected_groups": [
+    {
+      "target_face": 2142,
+      "requested_edges": [
+        [
+          1108,
+          1106
+        ],
+        [
+          1104,
+          1106
+        ]
+      ],
+      "status": "Parent explicitly selected both split edges.",
+      "target": {
+        "face": 2142,
+        "vertices": [
+          1108,
+          1104,
+          1106
+        ],
+        "xyz": [
+          [
+            -14.0,
+            10.0,
+            5.400000095367432
+          ],
+          [
+            -6.800000190734863,
+            8.5,
+            8.100000381469727
+          ],
+          [
+            -9.0,
+            17.0,
+            2.799999952316284
+          ]
+        ],
+        "material": 2,
+        "area3d_m2": 33.96887702600477,
+        "normal": [
+          -0.22079036902892224,
+          0.4742576850553985,
+          0.8522507032029759
+        ],
+        "projection_mask_distance_m": {
+          "road": 12.125008898305206,
+          "pads": 6.527996499462582,
+          "actual31h_trunks": 6.029308802227837
+        },
+        "upward_support_projection_intersection_m2": {
+          "road": 0.0,
+          "pads": 0.0,
+          "actual31h_trunks": 0.0
+        }
+      },
+      "all_edges": [
+        {
+          "edge": [
+            1108,
+            1104
+          ],
+          "xyz": [
+            [
+              -14.0,
+              10.0,
+              5.400000095367432
+            ],
+            [
+              -6.800000190734863,
+              8.5,
+              8.100000381469727
+            ]
+          ],
+          "length_m": 7.834538837632403,
+          "incident_faces": [
+            {
+              "face": 2141,
+              "directed_edge": [
+                1104,
+                1108
+              ]
+            },
+            {
+              "face": 2142,
+              "directed_edge": [
+                1108,
+                1104
+              ]
+            }
+          ],
+          "candidate_split_edge": false
+        },
+        {
+          "edge": [
+            1104,
+            1106
+          ],
+          "xyz": [
+            [
+              -6.800000190734863,
+              8.5,
+              8.100000381469727
+            ],
+            [
+              -9.0,
+              17.0,
+              2.799999952316284
+            ]
+          ],
+          "length_m": 10.255730286517549,
+          "incident_faces": [
+            {
+              "face": 2142,
+              "directed_edge": [
+                1104,
+                1106
+              ]
+            },
+            {
+              "face": 2143,
+              "directed_edge": [
+                1106,
+                1104
+              ]
+            }
+          ],
+          "candidate_split_edge": true
+        },
+        {
+          "edge": [
+            1106,
+            1108
+          ],
+          "xyz": [
+            [
+              -9.0,
+              17.0,
+              2.799999952316284
+            ],
+            [
+              -14.0,
+              10.0,
+              5.400000095367432
+            ]
+          ],
+          "length_m": 8.986656816851637,
+          "incident_faces": [
+            {
+              "face": 2136,
+              "directed_edge": [
+                1108,
+                1106
+              ]
+            },
+            {
+              "face": 2142,
+              "directed_edge": [
+                1106,
+                1108
+              ]
+            }
+          ],
+          "candidate_split_edge": true
+        }
+      ],
+      "complete_edge_neighbor_faces": [
+        {
+          "face": 2136,
+          "vertices": [
+            1110,
+            1108,
+            1106
+          ],
+          "xyz": [
+            [
+              -6.0,
+              20.0,
+              -5.849999904632568
+            ],
+            [
+              -14.0,
+              10.0,
+              5.400000095367432
+            ],
+            [
+              -9.0,
+              17.0,
+              2.799999952316284
+            ]
+          ],
+          "material": 2,
+          "area3d_m2": 31.918900231455467,
+          "normal": [
+            -0.8263129084489009,
+            0.5553136010095913,
+            -0.09398820066624844
+          ],
+          "projection_mask_distance_m": {
+            "road": 18.45518675461221,
+            "pads": 12.76940007413319,
+            "actual31h_trunks": 6.595856143584695
+          },
+          "upward_support_projection_intersection_m2": {
+            "road": 0.0,
+            "pads": 0.0,
+            "actual31h_trunks": 0.0
+          }
+        },
+        {
+          "face": 2141,
+          "vertices": [
+            1083,
+            1104,
+            1108
+          ],
+          "xyz": [
+            [
+              -14.928303718566895,
+              6.646509170532227,
+              8.210731506347656
+            ],
+            [
+              -6.800000190734863,
+              8.5,
+              8.100000381469727
+            ],
+            [
+              -14.0,
+              10.0,
+              5.400000095367432
+            ]
+          ],
+          "material": 2,
+          "area3d_m2": 17.268852924334247,
+          "normal": [
+            -0.14008831691756973,
+            0.6585175642044101,
+            0.739411848091098
+          ],
+          "projection_mask_distance_m": {
+            "road": 12.125008898305206,
+            "pads": 6.527996499462582,
+            "actual31h_trunks": 3.531949277366146
+          },
+          "upward_support_projection_intersection_m2": {
+            "road": 0.0,
+            "pads": 0.0,
+            "actual31h_trunks": 0.0
+          }
+        },
+        {
+          "face": 2142,
+          "vertices": [
+            1108,
+            1104,
+            1106
+          ],
+          "xyz": [
+            [
+              -14.0,
+              10.0,
+              5.400000095367432
+            ],
+            [
+              -6.800000190734863,
+              8.5,
+              8.100000381469727
+            ],
+            [
+              -9.0,
+              17.0,
+              2.799999952316284
+            ]
+          ],
+          "material": 2,
+          "area3d_m2": 33.96887702600477,
+          "normal": [
+            -0.22079036902892224,
+            0.4742576850553985,
+            0.8522507032029759
+          ],
+          "projection_mask_distance_m": {
+            "road": 12.125008898305206,
+            "pads": 6.527996499462582,
+            "actual31h_trunks": 6.029308802227837
+          },
+          "upward_support_projection_intersection_m2": {
+            "road": 0.0,
+            "pads": 0.0,
+            "actual31h_trunks": 0.0
+          }
+        },
+        {
+          "face": 2143,
+          "vertices": [
+            1104,
+            1105,
+            1106
+          ],
+          "xyz": [
+            [
+              -6.800000190734863,
+              8.5,
+              8.100000381469727
+            ],
+            [
+              -1.0,
+              12.0,
+              6.099999904632568
+            ],
+            [
+              -9.0,
+              17.0,
+              2.799999952316284
+            ]
+          ],
+          "material": 2,
+          "area3d_m2": 33.48963456693146,
+          "normal": [
+            -0.02314145061546464,
+            0.5246400061088591,
+            0.8510095988022158
+          ],
+          "projection_mask_distance_m": {
+            "road": 10.350685212561125,
+            "pads": 6.522841569519992,
+            "actual31h_trunks": 7.522598588983354
+          },
+          "upward_support_projection_intersection_m2": {
+            "road": 0.0,
+            "pads": 0.0,
+            "actual31h_trunks": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "target_face": 2158,
+      "requested_edges": [
+        [
+          1109,
+          1107
+        ],
+        [
+          1105,
+          1107
+        ]
+      ],
+      "status": "Inferred analogous east shoulder split towards low1107; report all target edges as well, pending exact31i plan.",
+      "target": {
+        "face": 2158,
+        "vertices": [
+          1109,
+          1107,
+          1105
+        ],
+        "xyz": [
+          [
+            1.0,
+            9.5,
+            8.199999809265137
+          ],
+          [
+            2.0,
+            20.0,
+            1.399999976158142
+          ],
+          [
+            -1.0,
+            12.0,
+            6.099999904632568
+          ]
+        ],
+        "material": 2,
+        "area3d_m2": 14.354811742277525,
+        "normal": [
+          -0.1758991865076613,
+          0.5468549449731622,
+          0.8185408635763657
+        ],
+        "projection_mask_distance_m": {
+          "road": 7.230627843526048,
+          "pads": 5.99845961068708,
+          "actual31h_trunks": 7.580794815266409
+        },
+        "upward_support_projection_intersection_m2": {
+          "road": 0.0,
+          "pads": 0.0,
+          "actual31h_trunks": 0.0
+        }
+      },
+      "all_edges": [
+        {
+          "edge": [
+            1109,
+            1107
+          ],
+          "xyz": [
+            [
+              1.0,
+              9.5,
+              8.199999809265137
+            ],
+            [
+              2.0,
+              20.0,
+              1.399999976158142
+            ]
+          ],
+          "length_m": 12.549501891718856,
+          "incident_faces": [
+            {
+              "face": 2158,
+              "directed_edge": [
+                1109,
+                1107
+              ]
+            },
+            {
+              "face": 2159,
+              "directed_edge": [
+                1107,
+                1109
+              ]
+            }
+          ],
+          "candidate_split_edge": true
+        },
+        {
+          "edge": [
+            1107,
+            1105
+          ],
+          "xyz": [
+            [
+              2.0,
+              20.0,
+              1.399999976158142
+            ],
+            [
+              -1.0,
+              12.0,
+              6.099999904632568
+            ]
+          ],
+          "length_m": 9.751410119960067,
+          "incident_faces": [
+            {
+              "face": 2158,
+              "directed_edge": [
+                1107,
+                1105
+              ]
+            },
+            {
+              "face": 2168,
+              "directed_edge": [
+                1105,
+                1107
+              ]
+            }
+          ],
+          "candidate_split_edge": true
+        },
+        {
+          "edge": [
+            1105,
+            1109
+          ],
+          "xyz": [
+            [
+              -1.0,
+              12.0,
+              6.099999904632568
+            ],
+            [
+              1.0,
+              9.5,
+              8.199999809265137
+            ]
+          ],
+          "length_m": 3.8288378915092234,
+          "incident_faces": [
+            {
+              "face": 2157,
+              "directed_edge": [
+                1109,
+                1105
+              ]
+            },
+            {
+              "face": 2158,
+              "directed_edge": [
+                1105,
+                1109
+              ]
+            }
+          ],
+          "candidate_split_edge": false
+        }
+      ],
+      "complete_edge_neighbor_faces": [
+        {
+          "face": 2157,
+          "vertices": [
+            994,
+            1109,
+            1105
+          ],
+          "xyz": [
+            [
+              0.04176078736782074,
+              7.352206230163574,
+              10.699999809265137
+            ],
+            [
+              1.0,
+              9.5,
+              8.199999809265137
+            ],
+            [
+              -1.0,
+              12.0,
+              6.099999904632568
+            ]
+          ],
+          "material": 2,
+          "area3d_m2": 4.923684373610592,
+          "normal": [
+            0.17665970807318312,
+            0.7120990830288098,
+            0.6794896934413548
+          ],
+          "projection_mask_distance_m": {
+            "road": 5.92684454496662,
+            "pads": 3.9570601581036793,
+            "actual31h_trunks": 7.580794815266409
+          },
+          "upward_support_projection_intersection_m2": {
+            "road": 0.0,
+            "pads": 0.0,
+            "actual31h_trunks": 0.0
+          }
+        },
+        {
+          "face": 2158,
+          "vertices": [
+            1109,
+            1107,
+            1105
+          ],
+          "xyz": [
+            [
+              1.0,
+              9.5,
+              8.199999809265137
+            ],
+            [
+              2.0,
+              20.0,
+              1.399999976158142
+            ],
+            [
+              -1.0,
+              12.0,
+              6.099999904632568
+            ]
+          ],
+          "material": 2,
+          "area3d_m2": 14.354811742277525,
+          "normal": [
+            -0.1758991865076613,
+            0.5468549449731622,
+            0.8185408635763657
+          ],
+          "projection_mask_distance_m": {
+            "road": 7.230627843526048,
+            "pads": 5.99845961068708,
+            "actual31h_trunks": 7.580794815266409
+          },
+          "upward_support_projection_intersection_m2": {
+            "road": 0.0,
+            "pads": 0.0,
+            "actual31h_trunks": 0.0
+          }
+        },
+        {
+          "face": 2159,
+          "vertices": [
+            1109,
+            1061,
+            1107
+          ],
+          "xyz": [
+            [
+              1.0,
+              9.5,
+              8.199999809265137
+            ],
+            [
+              6.912387847900391,
+              11.062132835388184,
+              7.252151012420654
+            ],
+            [
+              2.0,
+              20.0,
+              1.399999976158142
+            ]
+          ],
+          "material": 2,
+          "area3d_m2": 36.0691488566969,
+          "normal": [
+            -0.009288972353157215,
+            0.5441823390137099,
+            0.8389155481323433
+          ],
+          "projection_mask_distance_m": {
+            "road": 7.135203991283985,
+            "pads": 5.99845961068708,
+            "actual31h_trunks": 4.487066894660219
+          },
+          "upward_support_projection_intersection_m2": {
+            "road": 0.0,
+            "pads": 0.0,
+            "actual31h_trunks": 0.0
+          }
+        },
+        {
+          "face": 2168,
+          "vertices": [
+            1107,
+            1111,
+            1105
+          ],
+          "xyz": [
+            [
+              2.0,
+              20.0,
+              1.399999976158142
+            ],
+            [
+              -4.0,
+              24.0,
+              0.6499999761581421
+            ],
+            [
+              -1.0,
+              12.0,
+              6.099999904632568
+            ]
+          ],
+          "material": 2,
+          "area3d_m2": 34.2455926600064,
+          "normal": [
+            0.1868853583726431,
+            0.44458275073754944,
+            0.8760251369524522
+          ],
+          "projection_mask_distance_m": {
+            "road": 10.360867177893013,
+            "pads": 8.685636857175801,
+            "actual31h_trunks": 10.496690730332498
+          },
+          "upward_support_projection_intersection_m2": {
+            "road": 0.0,
+            "pads": 0.0,
+            "actual31h_trunks": 0.0
+          }
+        }
+      ]
+    }
+  ],
+  "endpoint_one_rings": [
+    {
+      "vertex": 1104,
+      "xyz": [
+        -6.800000190734863,
+        8.5,
+        8.100000381469727
+      ],
+      "complete_incident_faces": [
+        2141,
+        2142,
+        2143,
+        2174,
+        2175,
+        2189,
+        2191,
+        2192,
+        2212,
+        2213,
+        2214,
+        2215
+      ],
+      "occupied_upward_one_ring_faces": []
+    },
+    {
+      "vertex": 1105,
+      "xyz": [
+        -1.0,
+        12.0,
+        6.099999904632568
+      ],
+      "complete_incident_faces": [
+        2143,
+        2157,
+        2158,
+        2167,
+        2168,
+        2178,
+        2190,
+        2191,
+        2196,
+        2201,
+        2202,
+        2203,
+        2204,
+        2205,
+        2206,
+        2207,
+        2208,
+        2209,
+        2218,
+        2219
+      ],
+      "occupied_upward_one_ring_faces": []
+    },
+    {
+      "vertex": 1106,
+      "xyz": [
+        -9.0,
+        17.0,
+        2.799999952316284
+      ],
+      "complete_incident_faces": [
+        2136,
+        2142,
+        2143,
+        2166,
+        2167
+      ],
+      "occupied_upward_one_ring_faces": []
+    },
+    {
+      "vertex": 1107,
+      "xyz": [
+        2.0,
+        20.0,
+        1.399999976158142
+      ],
+      "complete_incident_faces": [
+        2158,
+        2159,
+        2161,
+        2162,
+        2164,
+        2168,
+        2169,
+        2170,
+        2181,
+        2182,
+        2183,
+        2184,
+        2185,
+        2186
+      ],
+      "occupied_upward_one_ring_faces": []
+    },
+    {
+      "vertex": 1108,
+      "xyz": [
+        -14.0,
+        10.0,
+        5.400000095367432
+      ],
+      "complete_incident_faces": [
+        2136,
+        2137,
+        2140,
+        2141,
+        2142,
+        2144,
+        2145,
+        2150,
+        2151,
+        2152,
+        2155,
+        2156,
+        2171,
+        2172,
+        2173,
+        2187,
+        2188
+      ],
+      "occupied_upward_one_ring_faces": []
+    },
+    {
+      "vertex": 1109,
+      "xyz": [
+        1.0,
+        9.5,
+        8.199999809265137
+      ],
+      "complete_incident_faces": [
+        2157,
+        2158,
+        2159,
+        2160,
+        2179,
+        2180,
+        2197,
+        2198,
+        2199,
+        2210,
+        2211
+      ],
+      "occupied_upward_one_ring_faces": []
+    }
+  ],
+  "construction_requirements": [
+    "Use one BMesh edge_split on the shared edge so both incident faces use exactly the same inserted vertex; face_split only after both original edge splits exist.",
+    "2142 cut creates one quad and one triangle locally; its neighbors acquire the same boundary points. Their final tessellation may change even if the new point stays on the old edge. Record and check that entire changed set.",
+    "If the split point is displaced out of the old edge to create shoulder thickness, both incident faces change shape. Treat the opposite neighbor as part of the authored patch; do not preserve its old triangle while moving only target geometry.",
+    "Keep retained occupied upper support linear patches or explicitly repartition their boundary; exact31i candidate support remains necessary even though this bounded one-ring intake has no occupied intersections.",
+    "Quads with four authored noncoplanar vertices need explicit intended diagonal or actual exported tessellation review, not a claim that quad existence proves broad shoulder shape.",
+    "Shared edge checks use actual31h source indices; after BMesh split/reindex match coordinates or lineage, not stale numbers.",
+    "East split-edge choice in this intake is provisional; actual parent plan takes precedence."
+  ],
+  "full_reference_accepted": false
+}

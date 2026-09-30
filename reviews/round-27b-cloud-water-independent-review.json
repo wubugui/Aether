@@ -1,0 +1,272 @@
+{
+  "round": "27b",
+  "reviewer": "independent village_floor_review",
+  "verdict": "reject_cloud_water_art_candidate",
+  "scope": "Bounded direct review of all three actual GPU images, ref1342,26b/27a context, actual frozen identity and cloud projection. No production edits or repeated26b collision tests.",
+  "gpu_status": "passed",
+  "gpu_stages": [
+    {
+      "name": "night-reference",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "name": "night-reverse",
+      "status": "passed",
+      "exit_code": 0
+    },
+    {
+      "name": "day-reference",
+      "status": "passed",
+      "exit_code": 0
+    }
+  ],
+  "native_gate_passed": true,
+  "asset_identity": [
+    {
+      "name": "cloud_bank_0.blend",
+      "sha256": "d40301f7d0a0cf18a2abbc3668da74069d1c02d1db95649373a3fbc2cae7df5e",
+      "matches_frozen": true,
+      "differs_27a": true
+    },
+    {
+      "name": "cloud_bank_0.glb",
+      "sha256": "abb05afa5abd60758702335808b93f90e2f465ed699314d59e4a498c4bec648e",
+      "matches_frozen": true,
+      "differs_27a": true
+    },
+    {
+      "name": "cloud_bank_1.blend",
+      "sha256": "9d36c69e9558f6a077031fcf4245b997de90b1a064a0f8772a02ed3e5c30777b",
+      "matches_frozen": true,
+      "differs_27a": true
+    },
+    {
+      "name": "cloud_bank_1.glb",
+      "sha256": "28c2b542fc2212883c22a3a05f7bb82644f77994a006c7ee99ba30c356656dfa",
+      "matches_frozen": true,
+      "differs_27a": true
+    },
+    {
+      "name": "cloud_bank_2.blend",
+      "sha256": "12f4df4dffe18bf03101139c9c02217bbe62f2b030dd54a7f4e349998e508cc9",
+      "matches_frozen": true,
+      "differs_27a": true
+    },
+    {
+      "name": "cloud_bank_2.glb",
+      "sha256": "b874e41106c0cee06e645170e23f10799b79d1df0d796b983936f80196024249",
+      "matches_frozen": true,
+      "differs_27a": true
+    },
+    {
+      "name": "moon.blend",
+      "sha256": "786fed316ba6a981445e21bd2a270b8bc8f30b65fb4ae8706e64224e63df012d",
+      "matches_frozen": true,
+      "differs_27a": false,
+      "matches_21b_bytes": true
+    },
+    {
+      "name": "moon.glb",
+      "sha256": "d4f87e9dfe4dbec9f0a91cbad9356eb53b7d51c9b6970e069924cea10ce46cee",
+      "matches_frozen": true,
+      "differs_27a": false,
+      "matches_21b_bytes": true
+    }
+  ],
+  "same_world_hash": true,
+  "same_cloud_placements": true,
+  "shader_identity": [
+    {
+      "name": "cloud_surface.gdshader",
+      "sha256": "fa9f0fb46a3319016e718c3d9679b70dbc3a24ac810eefc71c567036754a5e6f",
+      "matches_frozen": true
+    },
+    {
+      "name": "open_water.gdshader",
+      "sha256": "4b93486d42ec0bd34b3f42fc431e33502acab70d1b868da82c98c0cc7714c4f4",
+      "matches_frozen": true
+    }
+  ],
+  "images": {
+    "night-reference": {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\coast-environment-27b-20260908T145749Z-86704eae999c425590f3ff5cadced574\\images\\night-reference.png",
+      "sha256": "3ef6d1f9bc5347a7272cb8a71d76a2858810a7d68413e8b37f142746afcea325",
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -2278.0,
+          60.0,
+          -1632.0
+        ],
+        "rotation": [
+          -0.00509163970127702,
+          0.60683274269104,
+          0.0
+        ]
+      },
+      "observation": "云确已更新并被消费，但主视野两云仍是长薄碟托山丘，浅圆底未解决最终薄厚比例和过于简单轮廓。水光比27a粗而断裂，但近处巨大平亮多边形有冰面/拼片感，远处仍横向密集排列，未达到1342不规则且有层次的波光。"
+    },
+    "night-reverse": {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\coast-environment-27b-20260908T145749Z-86704eae999c425590f3ff5cadced574\\images\\night-reverse.png",
+      "sha256": "e6d17ebe420117711a519a9e08dae3b82d727c5dcdb9430dcfb11055e1e5d22f",
+      "camera": {
+        "fov": 60.0,
+        "position": [
+          -2485.0,
+          80.0,
+          -1810.0
+        ],
+        "rotation": [
+          -0.305406630039215,
+          -2.44073820114136,
+          0.0
+        ]
+      },
+      "observation": "反光带随观察方向消失，地形遮挡和同世界关系维持。大范围海面仍平滑暗蓝，波形难读；近云底仍有岩石折面，天空反复小圆团。后者包含原World云，不能全部归因于新云。"
+    },
+    "day-reference": {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\coast-environment-27b-20260908T145749Z-86704eae999c425590f3ff5cadced574\\images\\day-reference.png",
+      "sha256": "4255d9a98c2ca28304b4877b1f7e51f6aa90431a38de2c2572ba2914fadb015e",
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -2278.0,
+          60.0,
+          -1632.0
+        ],
+        "rotation": [
+          -0.00509163970127702,
+          0.60683274269104,
+          0.0
+        ]
+      },
+      "observation": "实际新云为白色浅圆底块，但主体仍是均匀平底、几团孤立山丘，天空密度/层次远少于参考。海面基本平蓝，仅近岸青色深度带可读。"
+    }
+  },
+  "cloud_consumption": {
+    "preview_uses_new_environment27b": true,
+    "actual_glb_projection": [
+      {
+        "asset": "cloud_bank_0",
+        "position": [
+          -3250.0,
+          450.0,
+          -2900.0
+        ],
+        "projected_bounds": [
+          698.2611109026695,
+          261.0713686808421,
+          912.2027107070617,
+          313.60866614301017
+        ],
+        "sha": "abb05afa5abd60758702335808b93f90e2f465ed699314d59e4a498c4bec648e"
+      },
+      {
+        "asset": "cloud_bank_1",
+        "position": [
+          -2500.0,
+          340.0,
+          -3550.0
+        ],
+        "projected_bounds": [
+          1055.4781546764666,
+          305.07834814717506,
+          1340.9286983391587,
+          366.5303997409454
+        ],
+        "sha": "28c2b542fc2212883c22a3a05f7bb82644f77994a006c7ee99ba30c356656dfa"
+      },
+      {
+        "asset": "cloud_bank_2",
+        "position": [
+          -1700.0,
+          520.0,
+          -3200.0
+        ],
+        "projected_bounds": [
+          1505.117947287853,
+          34.22623010534926,
+          2156.2048091997995,
+          180.8127558173083
+        ],
+        "sha": "b874e41106c0cee06e645170e23f10799b79d1df0d796b983936f80196024249"
+      },
+      {
+        "asset": "cloud_bank_2",
+        "position": [
+          -3850.0,
+          430.0,
+          -4550.0
+        ],
+        "projected_bounds": [
+          854.0137623063919,
+          366.7759989627658,
+          973.9623992855495,
+          396.8146979036077
+        ],
+        "sha": "b874e41106c0cee06e645170e23f10799b79d1df0d796b983936f80196024249"
+      },
+      {
+        "asset": "cloud_bank_1",
+        "position": [
+          -1250.0,
+          630.0,
+          -5050.0
+        ],
+        "projected_bounds": [
+          1491.9661100363032,
+          232.71246062076023,
+          1892.576970250515,
+          307.85108214529737
+        ],
+        "sha": "28c2b542fc2212883c22a3a05f7bb82644f77994a006c7ee99ba30c356656dfa"
+      },
+      {
+        "asset": "cloud_bank_0",
+        "position": [
+          -2500.0,
+          500.0,
+          -6350.0
+        ],
+        "projected_bounds": [
+          1182.4247427634868,
+          367.93551757521584,
+          1331.2708263033744,
+          399.02628947248604
+        ],
+        "sha": "abb05afa5abd60758702335808b93f90e2f465ed699314d59e4a498c4bec648e"
+      },
+      {
+        "asset": "cloud_bank_0",
+        "position": [
+          -1950.0,
+          250.0,
+          -2650.0
+        ],
+        "projected_bounds": [
+          1510.6350477339183,
+          206.1907637415233,
+          1932.5604893936052,
+          288.11739835780406
+        ],
+        "sha": "abb05afa5abd60758702335808b93f90e2f465ed699314d59e4a498c4bec648e"
+      }
+    ],
+    "projection_scope": "GLB vertices with recorded scale/position and adapter y rotation0.35; camera projection in1672x941. Global cloud shader drift up to9world-m not included; bounding boxes are approximate, sufficient to identify visible main clouds."
+  },
+  "water_mechanism": "Shared continuous noise height field sampled at jittered Voronoi sites in world space; a constant sampled normal per facet. cell_size=(10.5,3.6)m. Observer changes reflection, not facet placement. This yields discontinuous visible normal/facet boundaries despite continuous source heights. No actual mesh-wave displacement.",
+  "limits": [
+    "Large-wave sine removed, but base ripple, foam and day normal still include sinusoidal terms.",
+    "World-space implementation and reverse view support real view relationships, but do not prove temporal quality or arbitrary flight.",
+    "Cloud shading remains surface light/haze approximation, not density scattering.",
+    "Native closed-solid and GPU success do not confer visual acceptance."
+  ],
+  "overall_accepted": false,
+  "production_modified_by_reviewer": false,
+  "remaining": [
+    "Replace ice-tile/facet read with a better hierarchy of irregular wave glints.",
+    "Cloud thickness silhouette and underside remain slab-like; refine final viewed volumes not merely topology.",
+    "Beams and broader coast/reference fidelity remain unaccepted."
+  ]
+}

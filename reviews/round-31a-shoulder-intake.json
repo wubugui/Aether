@@ -1,0 +1,160 @@
+{
+  "round": "31a_intake",
+  "source_geometry_sha256": "c21beea37c96ffa8b97f47fa2e36580c5f16d9c77fed5df0cb3fb60eadbf61b8",
+  "ray_evidence": "reviews/round-31a-visible-slope-independent.json",
+  "current_tree_axes_file": "reviews\\round-30k-current-tree-axes.json",
+  "current_tree_axes_sha256": "aee357b4db1bfc6acf605dc84cca5bb8050d9fd4f3de1ffbb86c397d7ae9c726",
+  "current_tree_axes_verified_against_actual_night_sidecar_sha": true,
+  "probes": [
+    {
+      "center_blender_xy": [
+        -12,
+        -20
+      ],
+      "actual30k_main_surface_z_m": 4.800628644119108,
+      "proposed7_to8m_top_rise_over_center_m": [
+        2.199371355880892,
+        3.199371355880892
+      ],
+      "center_horizontal_distances_m": {
+        "road": 6.925754535874546,
+        "expanded_pads": 6.210721218236834,
+        "current14_tree_axis_2m_disks": 17.281695744736073
+      },
+      "diagnostic_probe_disks": [
+        {
+          "radius_m": 3.0,
+          "not_a_final_shoulder_footprint": true,
+          "protection": {
+            "road": {
+              "projection_overlap_m2": 0.0,
+              "actual_support_z_min_max_m": null,
+              "source_faces": [],
+              "nominal_8m_top_below_lowest_support_m": null
+            },
+            "expanded_pads": {
+              "projection_overlap_m2": 0.0,
+              "actual_support_z_min_max_m": null,
+              "source_faces": [],
+              "nominal_8m_top_below_lowest_support_m": null
+            },
+            "current14_tree_axis_2m_disks": {
+              "projection_overlap_m2": 0.0,
+              "actual_support_z_min_max_m": null,
+              "source_faces": [],
+              "nominal_8m_top_below_lowest_support_m": null
+            }
+          }
+        },
+        {
+          "radius_m": 4.0,
+          "not_a_final_shoulder_footprint": true,
+          "protection": {
+            "road": {
+              "projection_overlap_m2": 0.0,
+              "actual_support_z_min_max_m": null,
+              "source_faces": [],
+              "nominal_8m_top_below_lowest_support_m": null
+            },
+            "expanded_pads": {
+              "projection_overlap_m2": 0.0,
+              "actual_support_z_min_max_m": null,
+              "source_faces": [],
+              "nominal_8m_top_below_lowest_support_m": null
+            },
+            "current14_tree_axis_2m_disks": {
+              "projection_overlap_m2": 0.0,
+              "actual_support_z_min_max_m": null,
+              "source_faces": [],
+              "nominal_8m_top_below_lowest_support_m": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "center_blender_xy": [
+        3,
+        -14
+      ],
+      "actual30k_main_surface_z_m": 4.474999864540108,
+      "proposed7_to8m_top_rise_over_center_m": [
+        2.5250001354598917,
+        3.5250001354598917
+      ],
+      "center_horizontal_distances_m": {
+        "road": 3.901050418417748,
+        "expanded_pads": 8.983805106640185,
+        "current14_tree_axis_2m_disks": 15.152511039092154
+      },
+      "diagnostic_probe_disks": [
+        {
+          "radius_m": 3.0,
+          "not_a_final_shoulder_footprint": true,
+          "protection": {
+            "road": {
+              "projection_overlap_m2": 0.0,
+              "actual_support_z_min_max_m": null,
+              "source_faces": [],
+              "nominal_8m_top_below_lowest_support_m": null
+            },
+            "expanded_pads": {
+              "projection_overlap_m2": 0.0,
+              "actual_support_z_min_max_m": null,
+              "source_faces": [],
+              "nominal_8m_top_below_lowest_support_m": null
+            },
+            "current14_tree_axis_2m_disks": {
+              "projection_overlap_m2": 0.0,
+              "actual_support_z_min_max_m": null,
+              "source_faces": [],
+              "nominal_8m_top_below_lowest_support_m": null
+            }
+          }
+        },
+        {
+          "radius_m": 4.0,
+          "not_a_final_shoulder_footprint": true,
+          "protection": {
+            "road": {
+              "projection_overlap_m2": 0.07130363164733873,
+              "actual_support_z_min_max_m": [
+                11.031059703296876,
+                11.080215310355893
+              ],
+              "source_faces": [
+                351,
+                398,
+                399,
+                400,
+                401,
+                360
+              ],
+              "nominal_8m_top_below_lowest_support_m": 3.031059703296876
+            },
+            "expanded_pads": {
+              "projection_overlap_m2": 0.0,
+              "actual_support_z_min_max_m": null,
+              "source_faces": [],
+              "nominal_8m_top_below_lowest_support_m": null
+            },
+            "current14_tree_axis_2m_disks": {
+              "projection_overlap_m2": 0.0,
+              "actual_support_z_min_max_m": null,
+              "source_faces": [],
+              "nominal_8m_top_below_lowest_support_m": null
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "interpretation": [
+    "These radius3/4m disks are explicitly chosen diagnostic neighborhoods, not the eventual union solid footprint.",
+    "A positive support-projection overlap is not automatically interference: exact proposed upper surfaces versus current support heights decide.",
+    "A zero-overlap center/small probe does not establish a larger or oriented shoulder is safe.",
+    "Individual/near-coplanar patch areas do not quantify the entire visually broad slope.",
+    "Actual new union solid must overlap old main volume, remain a single closed exterior, and retain support/path17rocks; new exposed roof and GPU silhouette are separate checks."
+  ],
+  "full_reference_accepted": false
+}

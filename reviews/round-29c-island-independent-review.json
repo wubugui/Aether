@@ -1,0 +1,51 @@
+{
+  "round": "29c",
+  "run_id": "lantern-island-29c-20260908T170924Z-4d7e5928e9e74d1ca0621a44e963b02d",
+  "observed_manifest_status": "passed",
+  "visual_verdict": "rework_required",
+  "full_reference_accepted": false,
+  "all_reference_goal_complete": false,
+  "images": [
+    {
+      "view": "night-reference",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-29c-20260908T170924Z-4d7e5928e9e74d1ca0621a44e963b02d\\images\\night-reference.png",
+      "sha256": "ecbf600dc303bec6d41efd220aae57d45a36ec15ca685f27f57c596449571be5"
+    },
+    {
+      "view": "day-reference",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-29c-20260908T170924Z-4d7e5928e9e74d1ca0621a44e963b02d\\images\\day-reference.png",
+      "sha256": "29794d427749fb4f18b3481c0c7cb0315142b36b9986865df58cc6a2075ebe03"
+    },
+    {
+      "view": "day-d-front",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-29c-20260908T170924Z-4d7e5928e9e74d1ca0621a44e963b02d\\images\\day-d-front.png",
+      "sha256": "caf1620d14823d84a85731a389c0dd91990a69333bce230d667ede2e1bf66533"
+    },
+    {
+      "view": "day-d-back",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-29c-20260908T170924Z-4d7e5928e9e74d1ca0621a44e963b02d\\images\\day-d-back.png",
+      "sha256": "65e42e5be0345479a5760a2fbb5f429a6c40d470dfca42e87783a2f86edba069"
+    },
+    {
+      "view": "day-c-front",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-29c-20260908T170924Z-4d7e5928e9e74d1ca0621a44e963b02d\\images\\day-c-front.png",
+      "sha256": "093ca307df96e8e5fb9a9dbe8e48d655fa25f8ea8fc4c9ed2743f1f4633c0bed"
+    }
+  ],
+  "geometry_evidence": "reviews/round-29c-independent-geometry.json",
+  "detailed_review": "reviews/round-29c-island-independent-review.md",
+  "local_improvement": "New diagonal volumes interrupt portions of upper shield wall.",
+  "remaining_failures": [
+    "Long straight ridge wedges resemble structural ramps",
+    "Monotonic widening and broad flat planes",
+    "Original upper wall and lower layers remain behind overlays"
+  ],
+  "next_action": "Stop adding overlay wedges; locally reshape primary terrain and bedrock topology outside exact protected surfaces.",
+  "wall_localization_evidence": "reviews/round-29c-independent-wall-localization.json",
+  "wall_localization_conclusion": "81 steep high terrain faces selected; only13 wholly frozen. Protection is not the primary cause;68 unfrozen steep faces and184.2397m2 XY outside existing1.2m buffered mask remain. Preserve actual protected surfaces and reshape original terrain topology."
+}

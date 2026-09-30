@@ -1,0 +1,821 @@
+{
+  "run": "lantern-receiver-28g-20260908T162958Z-96465cbb463e4092a4227359c38c71f4",
+  "scope": "Independent saved PNG A/B decode and direct review; no new GPU run. ROIs are explicit image coordinates of visually selected lamp/receiver regions, not perfect object masks.",
+  "views": [
+    {
+      "view": "reference",
+      "artifacts": {
+        "baseline": {
+          "png_sha256": "63eafda141933fe33b8eacfa1f7d9d5719c25617132bd661b9ab8e37ecca717c",
+          "camera": {
+            "fov": 70.0,
+            "position": [
+              -2278.0,
+              60.0,
+              -1632.0
+            ],
+            "rotation": [
+              -0.00509163970127702,
+              0.60683274269104,
+              0.0
+            ]
+          },
+          "core_shadow_states": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "beam_energies": [
+            0.65,
+            0.65,
+            0.65,
+            0.65
+          ]
+        },
+        "core-transmits": {
+          "png_sha256": "9d89807ef22e95835ccaa2bbb6b87f1b9ccecc0569645daf0f78a0596e89937b",
+          "camera": {
+            "fov": 70.0,
+            "position": [
+              -2278.0,
+              60.0,
+              -1632.0
+            ],
+            "rotation": [
+              -0.00509163970127702,
+              0.60683274269104,
+              0.0
+            ]
+          },
+          "core_shadow_states": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "beam_energies": [
+            0.65,
+            0.65,
+            0.65,
+            0.65
+          ]
+        },
+        "beam-boost": {
+          "png_sha256": "ea44770121bfc4de7d72f271ad36c74da18d6aeabc5f71acc9b4cb14a4d1e134",
+          "camera": {
+            "fov": 70.0,
+            "position": [
+              -2278.0,
+              60.0,
+              -1632.0
+            ],
+            "rotation": [
+              -0.00509163970127702,
+              0.60683274269104,
+              0.0
+            ]
+          },
+          "core_shadow_states": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "beam_energies": [
+            1.3,
+            1.3,
+            1.3,
+            1.3
+          ]
+        }
+      },
+      "core_off_vs_baseline": {
+        "changed_pixels": 811,
+        "max_abs_channel_difference": 107,
+        "abs_difference_sum": 8822,
+        "pixels_abs_difference_gt10": 232,
+        "bbox_xyxy": [
+          5,
+          501,
+          1669,
+          940
+        ]
+      },
+      "boost_vs_core_off": {
+        "changed_pixels": 173853,
+        "max_abs_channel_difference": 63,
+        "abs_difference_sum": 3179795,
+        "pixels_abs_difference_gt10": 60229,
+        "bbox_xyxy": [
+          21,
+          448,
+          1672,
+          940
+        ]
+      },
+      "baseline_vs28f": {
+        "changed_pixels": 424,
+        "max_abs_channel_difference": 46,
+        "abs_difference_sum": 2983,
+        "pixels_abs_difference_gt10": 85,
+        "bbox_xyxy": [
+          0,
+          502,
+          1664,
+          940
+        ]
+      },
+      "receiver_rois": {
+        "foreground_lantern": {
+          "xyxy": [
+            289,
+            536,
+            352,
+            610
+          ],
+          "core_off_vs_baseline": {
+            "changed_pixels": 22,
+            "max_abs_channel_difference": 1,
+            "abs_difference_sum": 32,
+            "pixels_abs_difference_gt10": 0,
+            "bbox_xyxy": [
+              23,
+              42,
+              57,
+              60
+            ]
+          },
+          "boost_vs_core_off": {
+            "changed_pixels": 446,
+            "max_abs_channel_difference": 60,
+            "abs_difference_sum": 4142,
+            "pixels_abs_difference_gt10": 30,
+            "bbox_xyxy": [
+              19,
+              31,
+              63,
+              60
+            ]
+          },
+          "baseline_vs28f": {
+            "changed_pixels": 30,
+            "max_abs_channel_difference": 1,
+            "abs_difference_sum": 46,
+            "pixels_abs_difference_gt10": 0,
+            "bbox_xyxy": [
+              19,
+              42,
+              57,
+              60
+            ]
+          }
+        },
+        "foreground_tower": {
+          "xyxy": [
+            310,
+            635,
+            353,
+            765
+          ],
+          "core_off_vs_baseline": {
+            "changed_pixels": 0,
+            "max_abs_channel_difference": 0,
+            "abs_difference_sum": 0,
+            "pixels_abs_difference_gt10": 0,
+            "bbox_xyxy": null
+          },
+          "boost_vs_core_off": {
+            "changed_pixels": 0,
+            "max_abs_channel_difference": 0,
+            "abs_difference_sum": 0,
+            "pixels_abs_difference_gt10": 0,
+            "bbox_xyxy": null
+          },
+          "baseline_vs28f": {
+            "changed_pixels": 3,
+            "max_abs_channel_difference": 1,
+            "abs_difference_sum": 3,
+            "pixels_abs_difference_gt10": 0,
+            "bbox_xyxy": [
+              34,
+              60,
+              41,
+              117
+            ]
+          }
+        },
+        "middle_lantern": {
+          "xyxy": [
+            1006,
+            535,
+            1041,
+            570
+          ],
+          "core_off_vs_baseline": {
+            "changed_pixels": 0,
+            "max_abs_channel_difference": 0,
+            "abs_difference_sum": 0,
+            "pixels_abs_difference_gt10": 0,
+            "bbox_xyxy": null
+          },
+          "boost_vs_core_off": {
+            "changed_pixels": 1222,
+            "max_abs_channel_difference": 25,
+            "abs_difference_sum": 29516,
+            "pixels_abs_difference_gt10": 517,
+            "bbox_xyxy": [
+              0,
+              0,
+              35,
+              35
+            ]
+          },
+          "baseline_vs28f": {
+            "changed_pixels": 0,
+            "max_abs_channel_difference": 0,
+            "abs_difference_sum": 0,
+            "pixels_abs_difference_gt10": 0,
+            "bbox_xyxy": null
+          }
+        }
+      }
+    },
+    {
+      "view": "lamp-close",
+      "artifacts": {
+        "baseline": {
+          "png_sha256": "ec64acd23be76acee099192b6d47f05e47fbedae60842977853f61c6ca7c1ca4",
+          "camera": {
+            "fov": 45.0,
+            "position": [
+              -2344.0,
+              53.0621032714844,
+              -1643.0
+            ],
+            "rotation": [
+              -0.211809575557709,
+              0.605544626712799,
+              0.0
+            ]
+          },
+          "core_shadow_states": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "beam_energies": [
+            0.65,
+            0.65,
+            0.65,
+            0.65
+          ]
+        },
+        "core-transmits": {
+          "png_sha256": "8b11aca8e043bae3300180c3dbfd69e1a2341f914d9739a6797d2ec6a2cb2e16",
+          "camera": {
+            "fov": 45.0,
+            "position": [
+              -2344.0,
+              53.0621032714844,
+              -1643.0
+            ],
+            "rotation": [
+              -0.211809575557709,
+              0.605544626712799,
+              0.0
+            ]
+          },
+          "core_shadow_states": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "beam_energies": [
+            0.65,
+            0.65,
+            0.65,
+            0.65
+          ]
+        },
+        "beam-boost": {
+          "png_sha256": "edd9a3e84275953d54f7940472464c7d5536bbdd3ac25419471d7b5d478ca8a1",
+          "camera": {
+            "fov": 45.0,
+            "position": [
+              -2344.0,
+              53.0621032714844,
+              -1643.0
+            ],
+            "rotation": [
+              -0.211809575557709,
+              0.605544626712799,
+              0.0
+            ]
+          },
+          "core_shadow_states": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "beam_energies": [
+            1.3,
+            1.3,
+            1.3,
+            1.3
+          ]
+        }
+      },
+      "core_off_vs_baseline": {
+        "changed_pixels": 184,
+        "max_abs_channel_difference": 46,
+        "abs_difference_sum": 1537,
+        "pixels_abs_difference_gt10": 39,
+        "bbox_xyxy": [
+          366,
+          263,
+          1656,
+          930
+        ]
+      },
+      "boost_vs_core_off": {
+        "changed_pixels": 257774,
+        "max_abs_channel_difference": 54,
+        "abs_difference_sum": 5012667,
+        "pixels_abs_difference_gt10": 106804,
+        "bbox_xyxy": [
+          0,
+          190,
+          1672,
+          930
+        ]
+      },
+      "baseline_vs28f": {
+        "changed_pixels": 146,
+        "max_abs_channel_difference": 104,
+        "abs_difference_sum": 994,
+        "pixels_abs_difference_gt10": 13,
+        "bbox_xyxy": [
+          391,
+          263,
+          1657,
+          923
+        ]
+      },
+      "receiver_rois": {
+        "core": {
+          "xyxy": [
+            787,
+            424,
+            864,
+            527
+          ],
+          "core_off_vs_baseline": {
+            "changed_pixels": 4,
+            "max_abs_channel_difference": 1,
+            "abs_difference_sum": 4,
+            "pixels_abs_difference_gt10": 0,
+            "bbox_xyxy": [
+              6,
+              22,
+              16,
+              37
+            ]
+          },
+          "boost_vs_core_off": {
+            "changed_pixels": 460,
+            "max_abs_channel_difference": 1,
+            "abs_difference_sum": 670,
+            "pixels_abs_difference_gt10": 0,
+            "bbox_xyxy": [
+              6,
+              6,
+              77,
+              96
+            ]
+          },
+          "baseline_vs28f": {
+            "changed_pixels": 2,
+            "max_abs_channel_difference": 1,
+            "abs_difference_sum": 2,
+            "pixels_abs_difference_gt10": 0,
+            "bbox_xyxy": [
+              15,
+              22,
+              29,
+              47
+            ]
+          }
+        },
+        "left_glass_receiver": {
+          "xyxy": [
+            716,
+            385,
+            771,
+            570
+          ],
+          "core_off_vs_baseline": {
+            "changed_pixels": 0,
+            "max_abs_channel_difference": 0,
+            "abs_difference_sum": 0,
+            "pixels_abs_difference_gt10": 0,
+            "bbox_xyxy": null
+          },
+          "boost_vs_core_off": {
+            "changed_pixels": 1,
+            "max_abs_channel_difference": 1,
+            "abs_difference_sum": 1,
+            "pixels_abs_difference_gt10": 0,
+            "bbox_xyxy": [
+              54,
+              59,
+              55,
+              60
+            ]
+          },
+          "baseline_vs28f": {
+            "changed_pixels": 1,
+            "max_abs_channel_difference": 1,
+            "abs_difference_sum": 1,
+            "pixels_abs_difference_gt10": 0,
+            "bbox_xyxy": [
+              54,
+              59,
+              55,
+              60
+            ]
+          }
+        },
+        "right_glass_receiver": {
+          "xyxy": [
+            904,
+            385,
+            946,
+            559
+          ],
+          "core_off_vs_baseline": {
+            "changed_pixels": 0,
+            "max_abs_channel_difference": 0,
+            "abs_difference_sum": 0,
+            "pixels_abs_difference_gt10": 0,
+            "bbox_xyxy": null
+          },
+          "boost_vs_core_off": {
+            "changed_pixels": 4856,
+            "max_abs_channel_difference": 7,
+            "abs_difference_sum": 42879,
+            "pixels_abs_difference_gt10": 0,
+            "bbox_xyxy": [
+              0,
+              17,
+              42,
+              142
+            ]
+          },
+          "baseline_vs28f": {
+            "changed_pixels": 0,
+            "max_abs_channel_difference": 0,
+            "abs_difference_sum": 0,
+            "pixels_abs_difference_gt10": 0,
+            "bbox_xyxy": null
+          }
+        },
+        "balcony_front_receiver": {
+          "xyxy": [
+            696,
+            614,
+            984,
+            680
+          ],
+          "core_off_vs_baseline": {
+            "changed_pixels": 0,
+            "max_abs_channel_difference": 0,
+            "abs_difference_sum": 0,
+            "pixels_abs_difference_gt10": 0,
+            "bbox_xyxy": null
+          },
+          "boost_vs_core_off": {
+            "changed_pixels": 0,
+            "max_abs_channel_difference": 0,
+            "abs_difference_sum": 0,
+            "pixels_abs_difference_gt10": 0,
+            "bbox_xyxy": null
+          },
+          "baseline_vs28f": {
+            "changed_pixels": 0,
+            "max_abs_channel_difference": 0,
+            "abs_difference_sum": 0,
+            "pixels_abs_difference_gt10": 0,
+            "bbox_xyxy": null
+          }
+        },
+        "roof_receiver": {
+          "xyxy": [
+            780,
+            280,
+            920,
+            346
+          ],
+          "core_off_vs_baseline": {
+            "changed_pixels": 0,
+            "max_abs_channel_difference": 0,
+            "abs_difference_sum": 0,
+            "pixels_abs_difference_gt10": 0,
+            "bbox_xyxy": null
+          },
+          "boost_vs_core_off": {
+            "changed_pixels": 0,
+            "max_abs_channel_difference": 0,
+            "abs_difference_sum": 0,
+            "pixels_abs_difference_gt10": 0,
+            "bbox_xyxy": null
+          },
+          "baseline_vs28f": {
+            "changed_pixels": 0,
+            "max_abs_channel_difference": 0,
+            "abs_difference_sum": 0,
+            "pixels_abs_difference_gt10": 0,
+            "bbox_xyxy": null
+          }
+        },
+        "tower_receiver": {
+          "xyxy": [
+            802,
+            757,
+            882,
+            910
+          ],
+          "core_off_vs_baseline": {
+            "changed_pixels": 0,
+            "max_abs_channel_difference": 0,
+            "abs_difference_sum": 0,
+            "pixels_abs_difference_gt10": 0,
+            "bbox_xyxy": null
+          },
+          "boost_vs_core_off": {
+            "changed_pixels": 0,
+            "max_abs_channel_difference": 0,
+            "abs_difference_sum": 0,
+            "pixels_abs_difference_gt10": 0,
+            "bbox_xyxy": null
+          },
+          "baseline_vs28f": {
+            "changed_pixels": 0,
+            "max_abs_channel_difference": 0,
+            "abs_difference_sum": 0,
+            "pixels_abs_difference_gt10": 0,
+            "bbox_xyxy": null
+          }
+        }
+      }
+    },
+    {
+      "view": "beam-side",
+      "artifacts": {
+        "baseline": {
+          "png_sha256": "34bbf207d68bb631d6fe10f7feae53ad662083d8bf91737b03bf177392e39430",
+          "camera": {
+            "fov": 70.0,
+            "position": [
+              -1893.0,
+              174.662109375,
+              -1826.0
+            ],
+            "rotation": [
+              -0.348858118057251,
+              1.42478406429291,
+              0.0
+            ]
+          },
+          "core_shadow_states": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "beam_energies": [
+            0.65,
+            0.65,
+            0.65,
+            0.65
+          ]
+        },
+        "core-transmits": {
+          "png_sha256": "4341d6b0961bae870f71e54faab9bed8d7c113718bd57a5e604a978f7ca51175",
+          "camera": {
+            "fov": 70.0,
+            "position": [
+              -1893.0,
+              174.662109375,
+              -1826.0
+            ],
+            "rotation": [
+              -0.348858118057251,
+              1.42478406429291,
+              0.0
+            ]
+          },
+          "core_shadow_states": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "beam_energies": [
+            0.65,
+            0.65,
+            0.65,
+            0.65
+          ]
+        },
+        "beam-boost": {
+          "png_sha256": "ff27aa6a05d655f93a29b2e618a833c32bca31b8677efb7355cafe88824dc0c3",
+          "camera": {
+            "fov": 70.0,
+            "position": [
+              -1893.0,
+              174.662109375,
+              -1826.0
+            ],
+            "rotation": [
+              -0.348858118057251,
+              1.42478406429291,
+              0.0
+            ]
+          },
+          "core_shadow_states": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "beam_energies": [
+            1.3,
+            1.3,
+            1.3,
+            1.3
+          ]
+        }
+      },
+      "core_off_vs_baseline": {
+        "changed_pixels": 526,
+        "max_abs_channel_difference": 92,
+        "abs_difference_sum": 4560,
+        "pixels_abs_difference_gt10": 115,
+        "bbox_xyxy": [
+          333,
+          360,
+          1549,
+          939
+        ]
+      },
+      "boost_vs_core_off": {
+        "changed_pixels": 103177,
+        "max_abs_channel_difference": 54,
+        "abs_difference_sum": 633118,
+        "pixels_abs_difference_gt10": 2961,
+        "bbox_xyxy": [
+          275,
+          278,
+          1670,
+          939
+        ]
+      },
+      "baseline_vs28f": {
+        "changed_pixels": 630,
+        "max_abs_channel_difference": 76,
+        "abs_difference_sum": 4776,
+        "pixels_abs_difference_gt10": 133,
+        "bbox_xyxy": [
+          275,
+          360,
+          1670,
+          939
+        ]
+      },
+      "receiver_rois": {
+        "tower_a": {
+          "xyxy": [
+            472,
+            414,
+            495,
+            457
+          ],
+          "core_off_vs_baseline": {
+            "changed_pixels": 0,
+            "max_abs_channel_difference": 0,
+            "abs_difference_sum": 0,
+            "pixels_abs_difference_gt10": 0,
+            "bbox_xyxy": null
+          },
+          "boost_vs_core_off": {
+            "changed_pixels": 46,
+            "max_abs_channel_difference": 16,
+            "abs_difference_sum": 1061,
+            "pixels_abs_difference_gt10": 28,
+            "bbox_xyxy": [
+              11,
+              11,
+              23,
+              17
+            ]
+          },
+          "baseline_vs28f": {
+            "changed_pixels": 0,
+            "max_abs_channel_difference": 0,
+            "abs_difference_sum": 0,
+            "pixels_abs_difference_gt10": 0,
+            "bbox_xyxy": null
+          }
+        },
+        "island_a_house": {
+          "xyxy": [
+            426,
+            449,
+            465,
+            481
+          ],
+          "core_off_vs_baseline": {
+            "changed_pixels": 1,
+            "max_abs_channel_difference": 1,
+            "abs_difference_sum": 1,
+            "pixels_abs_difference_gt10": 0,
+            "bbox_xyxy": [
+              2,
+              16,
+              3,
+              17
+            ]
+          },
+          "boost_vs_core_off": {
+            "changed_pixels": 2,
+            "max_abs_channel_difference": 1,
+            "abs_difference_sum": 2,
+            "pixels_abs_difference_gt10": 0,
+            "bbox_xyxy": [
+              2,
+              16,
+              6,
+              25
+            ]
+          },
+          "baseline_vs28f": {
+            "changed_pixels": 1,
+            "max_abs_channel_difference": 1,
+            "abs_difference_sum": 1,
+            "pixels_abs_difference_gt10": 0,
+            "bbox_xyxy": [
+              2,
+              16,
+              3,
+              17
+            ]
+          }
+        },
+        "tower_d": {
+          "xyxy": [
+            708,
+            428,
+            732,
+            476
+          ],
+          "core_off_vs_baseline": {
+            "changed_pixels": 0,
+            "max_abs_channel_difference": 0,
+            "abs_difference_sum": 0,
+            "pixels_abs_difference_gt10": 0,
+            "bbox_xyxy": null
+          },
+          "boost_vs_core_off": {
+            "changed_pixels": 852,
+            "max_abs_channel_difference": 22,
+            "abs_difference_sum": 10919,
+            "pixels_abs_difference_gt10": 47,
+            "bbox_xyxy": [
+              0,
+              0,
+              24,
+              48
+            ]
+          },
+          "baseline_vs28f": {
+            "changed_pixels": 4,
+            "max_abs_channel_difference": 5,
+            "abs_difference_sum": 14,
+            "pixels_abs_difference_gt10": 0,
+            "bbox_xyxy": [
+              1,
+              29,
+              3,
+              39
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "verdict": "Beam-only energy1.3 is a useful local readability improvement; no demonstrated native receiver-light benefit from core shadow OFF in these samples; full reference appearance remains unaccepted."
+}

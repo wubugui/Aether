@@ -1,0 +1,66 @@
+{
+  "scope": "Completed27g/h extra diagnostics and explicit correction of the mistaken missing-moon observation. No engine defect or rendering repair proven.27h PNGs equal27f exactly. Prior27f covers day/reverse;27d covers actual new-cloud rear view.",
+  "runs": [
+    {
+      "run_id": "coast-moon-diagnostic-27g-20260908T153017Z-e0efc52dc9094edc9316da694d642a7f",
+      "binding_count": 167,
+      "all_artifact_sha256_verified": true,
+      "manifest_sha256": "c753cbfd1a5938493da2c71ef2d45eb9821a01fcffdf2dc94ccb5ed5f5524852"
+    },
+    {
+      "run_id": "coast-moon-readiness-27h-20260908T153333Z-8b7579b40e2d437a8b1142c3bfdb7403",
+      "binding_count": 172,
+      "all_artifact_sha256_verified": true,
+      "manifest_sha256": "22b4f3162db89b6ecb69994f6a179f1fd4c6b8e3c159fc72191d9d10c0a038b6"
+    }
+  ],
+  "views": [
+    {
+      "image": "captures\\validation_runs\\coast-moon-readiness-27h-20260908T153333Z-8b7579b40e2d437a8b1142c3bfdb7403\\images\\night-reference.png",
+      "png_sha256": "e287a25ab46c79b50446437e3fa655684e7b5d97e74f6ac4e2ed718562f5ee7f",
+      "exactly_same_as_27f": true,
+      "moon_region_verified_against_saved_png": true,
+      "readiness": {
+        "attempt": 0,
+        "bright_samples": 25,
+        "center": [
+          1126.06518554688,
+          165.984390258789
+        ],
+        "luminance_threshold": 0.25,
+        "minimum_bright_samples": 20,
+        "radius_pixels": 29.0657501220703,
+        "ready": true,
+        "samples": 25,
+        "scope": "Fixed full-moon reference composition only; pixel evidence does not prove all material readiness."
+      },
+      "root_directly_viewed": true
+    },
+    {
+      "image": "captures\\validation_runs\\coast-moon-readiness-27h-20260908T153333Z-8b7579b40e2d437a8b1142c3bfdb7403\\images\\night-reference-later.png",
+      "png_sha256": "78bf5000fc506b3a35849e039ff16a5425b42add368bdd7dae5e4eb7109b86b1",
+      "exactly_same_as_27f": true,
+      "moon_region_verified_against_saved_png": true,
+      "readiness": {
+        "attempt": 0,
+        "bright_samples": 25,
+        "center": [
+          1126.06518554688,
+          165.984390258789
+        ],
+        "luminance_threshold": 0.25,
+        "minimum_bright_samples": 20,
+        "radius_pixels": 29.0657501220703,
+        "ready": true,
+        "samples": 25,
+        "scope": "Fixed full-moon reference composition only; pixel evidence does not prove all material readiness."
+      },
+      "root_directly_viewed": true
+    }
+  ],
+  "correction": "reviews/round-27h-moon-observation-correction.json",
+  "independent_review": "reviews/round-27h-cloud-water-independent-review.md",
+  "full_reference_accepted": false,
+  "production_installed": false,
+  "goal_status": "active"
+}

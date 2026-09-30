@@ -1,0 +1,187 @@
+{
+  "scope": "Preliminary four-image native material increment review; full engineering status not accepted pending parent stream evidence binding recovery. No rendering or production writes.",
+  "run": "E:\\FeiTing\\captures\\validation_runs\\18c-native-material-20260908T062423Z-e13cc07350264b9d800603025868e010",
+  "artifacts": {
+    "images/opening.png": {
+      "sha256": "7923a6d227c422fa1a4e1db59d361bc362bf40405d6f84bbe94fcedbed16d47d",
+      "matches_manifest": true
+    },
+    "images/cliff-side.png": {
+      "sha256": "23708af130d687898899afb680b414d67cc7d82de0e85286625215a333756549",
+      "matches_manifest": true
+    },
+    "images/cliff-back.png": {
+      "sha256": "b101bf16a78807afffced09a54d097222a980a24ec4c0fd6db9f90da72c62d1f",
+      "matches_manifest": true
+    },
+    "images/reverse.png": {
+      "sha256": "e3a06aa29e423b6e185ee048811c214edce2093d5245b3ae0ab162826bc93a52",
+      "matches_manifest": true
+    },
+    "reports/native-material.json": {
+      "sha256": "a4149ccc0e2e5392ba21a5dc06b5c87ffe76b4481aa00435675252cf886e4e8d",
+      "matches_manifest": true
+    }
+  },
+  "preserved_identity": {
+    "res://assets/models/cliff_western_slab.glb": {
+      "sha256": "af3c37cca1f4019fbbfa7920da528cbd99f2f2501884105cb7ddd5d8c2842856",
+      "current_frozen_17e_same": true
+    },
+    "res://assets/models/cliff_front_columns.glb": {
+      "sha256": "0c798b85a75abc891cd1764f34ae5c719ddf9a43a69996adc812a2b99773950c",
+      "current_frozen_17e_same": true
+    },
+    "res://assets/models/cliff_crown.glb": {
+      "sha256": "ca61243d3016e3e0c194f20afd072070bb02fb0bf4a83c62dc33983827ca8a62",
+      "current_frozen_17e_same": true
+    },
+    "res://assets/models/cliff_central_wall.glb": {
+      "sha256": "1830179834bf8beb1a8792f670551b99edfdba4f95b0e8748a207e19acfc30f3",
+      "current_frozen_17e_same": true
+    },
+    "res://assets/models/cliff_shadow_buttress.glb": {
+      "sha256": "6ba023af32cb07980cee5f58a2faccffea17747117c084938b655da5fa742517",
+      "current_frozen_17e_same": true
+    },
+    "res://assets/scatter/Grounded_rock_0_-1.res": {
+      "sha256": "bb1b91de0e9e389d1d6d2295059ad14d4fa3bbb21e0b2307751facc683309e1a",
+      "current_frozen_17e_same": true
+    },
+    "res://materials/world.tres": {
+      "sha256": "092ea3450eaafa9b7d414a5560f4f6943abbc9cc5a74645f9baf4559726d8910",
+      "current_frozen_17e_same": true
+    },
+    "res://scripts/world_surface.gdshader": {
+      "sha256": "2f504186ff38a21565f636a10b4ec690c7310a5119e641f4f3368fe22b957abf",
+      "current_frozen_17e_same": true
+    }
+  },
+  "image_comparison": {
+    "opening": {
+      "17e_native": {
+        "changed_pixels": 471027,
+        "bbox_inclusive": [
+          0,
+          339,
+          1671,
+          940
+        ],
+        "max_channel_delta": 60
+      },
+      "18c_candidate": {
+        "changed_pixels": 17210,
+        "bbox_inclusive": [
+          2,
+          429,
+          1650,
+          889
+        ],
+        "max_channel_delta": 76,
+        "pixels_delta_gt_1": 17129
+      }
+    },
+    "cliff-side": {
+      "17e_native": {
+        "changed_pixels": 1026876,
+        "bbox_inclusive": [
+          0,
+          0,
+          1671,
+          940
+        ],
+        "max_channel_delta": 71
+      },
+      "18c_candidate": {
+        "changed_pixels": 63584,
+        "bbox_inclusive": [
+          2,
+          33,
+          1669,
+          877
+        ],
+        "max_channel_delta": 81,
+        "pixels_delta_gt_1": 63183
+      }
+    },
+    "cliff-back": {
+      "17e_native": {
+        "changed_pixels": 1047293,
+        "bbox_inclusive": [
+          0,
+          51,
+          1671,
+          940
+        ],
+        "max_channel_delta": 67
+      }
+    },
+    "reverse": {
+      "17e_native": {
+        "changed_pixels": 988848,
+        "bbox_inclusive": [
+          0,
+          0,
+          1671,
+          940
+        ],
+        "max_channel_delta": 73
+      },
+      "18c_candidate": {
+        "changed_pixels": 83123,
+        "bbox_inclusive": [
+          0,
+          0,
+          1671,
+          940
+        ],
+        "max_channel_delta": 55,
+        "pixels_delta_gt_1": 26202
+      }
+    }
+  },
+  "native_material": {
+    "checks": [
+      {
+        "name": "Native scene save and reopen retain the selected terrain material",
+        "passed": true
+      },
+      {
+        "name": "World startup preserves the reopened artist terrain material",
+        "passed": true
+      },
+      {
+        "name": "Unedited terrain keeps its existing native default material",
+        "passed": true
+      },
+      {
+        "name": "Production World file remains unchanged",
+        "passed": true
+      },
+      {
+        "name": "All other native ground tiles retain their selected default material",
+        "passed": true
+      },
+      {
+        "name": "Generated terrain uses the same native ground material",
+        "passed": true
+      },
+      {
+        "name": "Non-terrain scatter keeps the separate world material",
+        "passed": true
+      }
+    ],
+    "default_material": "res://materials/terrain.tres",
+    "native_tiles": 208,
+    "passed": true,
+    "run_id": "18c-native-material-20260908T062423Z-e13cc07350264b9d800603025868e010",
+    "runtime_sha256": "1a2c531d8da8f5db991722bb637c4b7f061dccfd6c8004f560918feab8d42263",
+    "saved_fixture": "res://captures/native_material_checks/2026-09-08T14-26-18-1758/EditedWorld.tscn",
+    "scope": "GPU native scene material save, reopen and real World startup. No release or visual acceptance.",
+    "source_world_sha256": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8"
+  },
+  "candidate_shader_exact_sha": "f98fc817bb6c217870144daff7d53a0ecb1da96e29e6b2315a24301aea858384",
+  "current_shader_exact_match": true,
+  "native_material_checks_pass": true,
+  "status_at_image_review": "failed"
+}

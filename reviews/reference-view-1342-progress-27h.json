@@ -1,0 +1,254 @@
+{
+  "reference": "ref/1342.png",
+  "reference_sha256": "7acc98104013d9122eb551846b2d7fc1f7549bce8b2e3199eae8f5385a3ea238",
+  "status": "in_progress_not_accepted",
+  "scope": "Same continuous original World; temporary scene candidates only. No character or HUD reconstruction.",
+  "camera": {
+    "fov": 70.0,
+    "position": [
+      -2278.0,
+      60.0,
+      -1632.0
+    ],
+    "rotation": [
+      -0.00509163970127702,
+      0.60683274269104,
+      0.0
+    ]
+  },
+  "world_sha256": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+  "environment_study": {
+    "ambient_color": [
+      0.360000014305115,
+      0.46000000834465,
+      0.699999988079071
+    ],
+    "ambient_energy": 1.0,
+    "ambient_source": 2,
+    "directional_light_energy": 0.850000023841858,
+    "emissive_material_variants": 16,
+    "fog_density": 0.000380000012228265,
+    "local_light_records": [
+      {
+        "energy": 2.0,
+        "node": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_a/NativeLanternLight",
+        "position": [
+          -2353.0,
+          49.6621017456055,
+          -1656.0
+        ],
+        "range_m": 13.0
+      },
+      {
+        "energy": 2.0,
+        "node": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_b/NativeLanternLight",
+        "position": [
+          -2700.0,
+          41.2455062866211,
+          -2202.0
+        ],
+        "range_m": 13.0
+      },
+      {
+        "energy": 2.0,
+        "node": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_c/NativeLanternLight",
+        "position": [
+          -3049.0,
+          37.5855178833008,
+          -2651.0
+        ],
+        "range_m": 13.0
+      },
+      {
+        "energy": 2.0,
+        "node": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_d/NativeLanternLight",
+        "position": [
+          -2339.67016601563,
+          37.5854721069336,
+          -1811.37524414063
+        ],
+        "range_m": 13.0
+      }
+    ],
+    "material_bindings": [
+      {
+        "candidate_shader": "terrain_native.gdshader",
+        "original_material": "res://materials/terrain.tres",
+        "original_shader": "res://scripts/terrain_native.gdshader"
+      },
+      {
+        "candidate_shader": "world_surface.gdshader",
+        "original_material": "res://materials/world.tres",
+        "original_shader": "res://scripts/world_surface.gdshader"
+      },
+      {
+        "candidate_shader": "cloud_surface.gdshader",
+        "original_material": "res://materials/cloud.tres",
+        "original_shader": "res://scripts/cloud_surface.gdshader"
+      },
+      {
+        "candidate_shader": "open_water.gdshader",
+        "original_material": "res://scenes/environment/Ocean.tscn::ShaderMaterial_sqy22",
+        "original_shader": "res://scripts/open_water.gdshader"
+      },
+      {
+        "candidate_shader": "cliff_surface.gdshader",
+        "original_material": "res://materials/cliff.tres",
+        "original_shader": "res://scripts/cliff_surface.gdshader"
+      },
+      {
+        "candidate_shader": "ship_surface.gdshader",
+        "original_material": "res://materials/ship.tres",
+        "original_shader": "res://scripts/ship_surface.gdshader"
+      },
+      {
+        "candidate_shader": "ship_surface.gdshader",
+        "original_material": "res://materials/flag.tres",
+        "original_shader": "res://scripts/ship_surface.gdshader"
+      }
+    ],
+    "moon_direction": [
+      -0.183916792273521,
+      0.379828155040741,
+      -0.906589865684509
+    ],
+    "native_sky_assets": [
+      {
+        "asset": "cloud_bank_2",
+        "position": [
+          -5726.25341796875,
+          660.288452148438,
+          -1798.3544921875
+        ],
+        "scale": [
+          4.59999990463257,
+          4.59999990463257,
+          4.59999990463257
+        ]
+      },
+      {
+        "asset": "cloud_bank_1",
+        "position": [
+          -3754.3828125,
+          781.7607421875,
+          -3533.21801757813
+        ],
+        "scale": [
+          3.70000004768372,
+          3.70000004768372,
+          3.70000004768372
+        ]
+      },
+      {
+        "asset": "cloud_bank_1",
+        "position": [
+          -4544.4619140625,
+          699.478332519531,
+          -4688.53173828125
+        ],
+        "scale": [
+          7.0,
+          3.84999990463257,
+          7.0
+        ]
+      },
+      {
+        "asset": "cloud_bank_1",
+        "position": [
+          -1279.00500488281,
+          1014.64245605469,
+          -5800.9189453125
+        ],
+        "scale": [
+          5.59999990463257,
+          5.59999990463257,
+          5.59999990463257
+        ]
+      },
+      {
+        "asset": "cloud_bank_2",
+        "position": [
+          -2252.89038085938,
+          631.88720703125,
+          -4452.9111328125
+        ],
+        "scale": [
+          3.20000004768372,
+          3.20000004768372,
+          3.20000004768372
+        ]
+      },
+      {
+        "asset": "cloud_bank_1",
+        "position": [
+          -816.1669921875,
+          612.246337890625,
+          -7032.755859375
+        ],
+        "scale": [
+          6.5,
+          5.07000017166138,
+          6.5
+        ]
+      },
+      {
+        "asset": "cloud_bank_2",
+        "position": [
+          -7006.205078125,
+          505.712890625,
+          -2187.06591796875
+        ],
+        "scale": [
+          4.19999980926514,
+          2.94000005722046,
+          4.19999980926514
+        ]
+      },
+      {
+        "asset": "moon",
+        "position": [
+          -3933.2509765625,
+          3478.45336914063,
+          -9791.30859375
+        ],
+        "radius_m": 330.0,
+        "scope": "Fixed world position near9000m; angular direction matches reference-camera moon light, finite-distance approximation during flight."
+      }
+    ],
+    "night": true,
+    "sampled_world_time": 0.0,
+    "scope": "27f actual cloud geometry, cloud transmission/haze and irregular world-water normals;21c lights and moon retained. No fullscreen tint. Beams, streaming transitions and other weather states remain unimplemented.",
+    "unmapped_shader_paths": []
+  },
+  "current_candidate": {
+    "native_clouds": "captures/coastal_sky_assets_27d",
+    "cloud_placement": "captures/coast_environment_study_27c/cloud-layout-27c.json",
+    "water_shader": "captures/coast_environment_study_27f/open_water.gdshader",
+    "geometry_basis": "reviews/reference-view-1342-progress-26b.json",
+    "four_view_run": "captures\\validation_runs\\coast-environment-27f-20260908T152526Z-f1543e06af9f4533a1689edaf5dc0add",
+    "two_night_pixel_gate_run": "captures\\validation_runs\\coast-moon-readiness-27h-20260908T153333Z-8b7579b40e2d437a8b1142c3bfdb7403",
+    "night_pngs_equal_27f": true,
+    "production_installed": false
+  },
+  "evidence": [
+    "reviews/round-27d-root-evidence.json",
+    "reviews/round-27f-root-evidence.json",
+    "reviews/round-27h-root-evidence.json",
+    "reviews/round-27d-cloud-water-independent-review.md",
+    "reviews/round-27e-cloud-water-independent-review.md",
+    "reviews/round-27h-cloud-water-independent-review.md"
+  ],
+  "retained_local_progress": [
+    "Round-shoulder editable cloud volumes and visible rear/underside replace pointed27c peaks",
+    "Actual world/view/time-dependent water normal study; not physical sea displacement or finished art"
+  ],
+  "remaining_reference_failures": [
+    "Cloud banks still too similarly spaced/layered; broad flat undersides and older World puff clouds remain",
+    "Regular dense horizontal moon glints and repeated bright clumps remain",
+    "Warm lighthouse beams and local warm reflections missing",
+    "Broad bare shoreline and regular island skirts need detailed Blender rockwork",
+    "Working waterfront context and all other reference scenes/weather/flight/streaming/production acceptance unfinished"
+  ],
+  "moon_observation_correction": "reviews/round-27h-moon-observation-correction.json",
+  "next_visual_priority": "Continue cloud layering/water shape and warm lighthouse beams, then authored main rock coast and all remaining20reference scenes. Do not repeat missing-moon diagnostics; that claim was an observation error."
+}

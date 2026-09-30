@@ -1,0 +1,1073 @@
+{
+  "scope": "Nine reference-coast village lamps and four tower origins only; read-only frozen sources/reports. Four tower spots recorded as colocated additional lights. No live engine tree interrogation or GPU.",
+  "coordinates": "Godot world XYZ in metres; sea at Y=0 per scripts/open_world.gd make_ocean()/WorldBoundaryShape3D.",
+  "run_id": "water-34b-20260908T234145Z-bcb3451587f949d8b6faa363cf23622d",
+  "prior_run_id": "rightcoast-33f-20260908T233517Z-9aac3867c5f340208c238c9e2b83fc1e",
+  "checks": {
+    "selected_frozen_source_bindings_match": true,
+    "nine_lamps_runtime_exact_33f": true,
+    "four_final_beam_records_exact_33f": true,
+    "four_lamp_positions_equal_early_records": true,
+    "actual_tower_asset_matches_runtime_sha": true,
+    "actual_village_lantern_matches_frozen_binding": true
+  },
+  "sources": [
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\water-34b-20260908T234145Z-bcb3451587f949d8b6faa363cf23622d\\study-inputs\\headland_runtime_23g.gd",
+      "sha256": "3aa1767564eacb90d59c0113e6b2c500b489e8aafd70fa370e06799dceb580ad",
+      "matches_manifest": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\water-34b-20260908T234145Z-bcb3451587f949d8b6faa363cf23622d\\study-inputs\\coast_environment_27f.gd",
+      "sha256": "7a1ac95033eb2bad868f4aa700d2e208dbb2be504a52ab603ff27990650c6143",
+      "matches_manifest": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\water-34b-20260908T234145Z-bcb3451587f949d8b6faa363cf23622d\\study-inputs\\lantern_lighting_28h.gd",
+      "sha256": "7a3a233e1dd4b9a41d597ad5a83c7e5bcd67d34b78950f122a6aca54d10a96a7",
+      "matches_manifest": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\water-34b-20260908T234145Z-bcb3451587f949d8b6faa363cf23622d\\study-inputs\\preview.gd",
+      "sha256": "02a817e086c801085ebe107d1694883734cee521ba7dc6028393b9475fd5bf5d",
+      "matches_manifest": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\water-34b-20260908T234145Z-bcb3451587f949d8b6faa363cf23622d\\study-inputs\\new-environment27f\\open_water.gdshader",
+      "sha256": "2f1c09d17eaa641d665a34c5d95c00675d0fcf07c15278a163f028dad06e1781",
+      "matches_manifest": true
+    }
+  ],
+  "village_lamps": [
+    {
+      "house": "fore_fisher",
+      "world_position_godot": [
+        -2266.12133789063,
+        11.4400005340576,
+        -1753.48034667969
+      ],
+      "energy": 1.79999995231628,
+      "range_m": 11.0,
+      "range_provenance": "Frozen headland_runtime_23g.gd configure line32; report omits range.",
+      "color_srgb": [
+        1,
+        0.47,
+        0.12
+      ],
+      "omni_attenuation": 1.3,
+      "node_path_reconstructed": "/root/Skyfarer/MainlandVillage23g/fisher_cottage_1/VillageLantern/VillageWarmLight",
+      "node_path_provenance": "Reconstructed from actual house node name plus frozen child names, not a final full-tree dump.",
+      "sea_plane_y": 0,
+      "height_above_sea_m": 11.4400005340576,
+      "omni_sphere_intersects_sea_plane": false,
+      "sea_plane_intersection_radius_m": 0.0,
+      "sphere_intersection_is_not_visible_water_or_shadow_proof": true,
+      "shadow_enabled": "not explicitly set in frozen source; no final runtime property captured"
+    },
+    {
+      "house": "fore_workshop",
+      "world_position_godot": [
+        -2249.95458984375,
+        13.2399997711182,
+        -1749.25061035156
+      ],
+      "energy": 1.79999995231628,
+      "range_m": 11.0,
+      "range_provenance": "Frozen headland_runtime_23g.gd configure line32; report omits range.",
+      "color_srgb": [
+        1,
+        0.47,
+        0.12
+      ],
+      "omni_attenuation": 1.3,
+      "node_path_reconstructed": "/root/Skyfarer/MainlandVillage23g/quay_workshop_2/VillageLantern/VillageWarmLight",
+      "node_path_provenance": "Reconstructed from actual house node name plus frozen child names, not a final full-tree dump.",
+      "sea_plane_y": 0,
+      "height_above_sea_m": 13.2399997711182,
+      "omni_sphere_intersects_sea_plane": false,
+      "sea_plane_intersection_radius_m": 0.0,
+      "sphere_intersection_is_not_visible_water_or_shadow_proof": true,
+      "shadow_enabled": "not explicitly set in frozen source; no final runtime property captured"
+    },
+    {
+      "house": "fore_keeper",
+      "world_position_godot": [
+        -2251.99609375,
+        14.9400005340576,
+        -1762.29235839844
+      ],
+      "energy": 1.79999995231628,
+      "range_m": 11.0,
+      "range_provenance": "Frozen headland_runtime_23g.gd configure line32; report omits range.",
+      "color_srgb": [
+        1,
+        0.47,
+        0.12
+      ],
+      "omni_attenuation": 1.3,
+      "node_path_reconstructed": "/root/Skyfarer/MainlandVillage23g/keeper_house_3/VillageLantern/VillageWarmLight",
+      "node_path_provenance": "Reconstructed from actual house node name plus frozen child names, not a final full-tree dump.",
+      "sea_plane_y": 0,
+      "height_above_sea_m": 14.9400005340576,
+      "omni_sphere_intersects_sea_plane": false,
+      "sea_plane_intersection_radius_m": 0.0,
+      "sphere_intersection_is_not_visible_water_or_shadow_proof": true,
+      "shadow_enabled": "not explicitly set in frozen source; no final runtime property captured"
+    },
+    {
+      "house": "fore_upper",
+      "world_position_godot": [
+        -2235.97436523438,
+        16.9400005340576,
+        -1762.02709960938
+      ],
+      "energy": 1.79999995231628,
+      "range_m": 11.0,
+      "range_provenance": "Frozen headland_runtime_23g.gd configure line32; report omits range.",
+      "color_srgb": [
+        1,
+        0.47,
+        0.12
+      ],
+      "omni_attenuation": 1.3,
+      "node_path_reconstructed": "/root/Skyfarer/MainlandVillage23g/keeper_house_4/VillageLantern/VillageWarmLight",
+      "node_path_provenance": "Reconstructed from actual house node name plus frozen child names, not a final full-tree dump.",
+      "sea_plane_y": 0,
+      "height_above_sea_m": 16.9400005340576,
+      "omni_sphere_intersects_sea_plane": false,
+      "sea_plane_intersection_radius_m": 0.0,
+      "sphere_intersection_is_not_visible_water_or_shadow_proof": true,
+      "shadow_enabled": "not explicitly set in frozen source; no final runtime property captured"
+    },
+    {
+      "house": "fore_back_cottage",
+      "world_position_godot": [
+        -2232.14111328125,
+        17.9400005340576,
+        -1738.73693847656
+      ],
+      "energy": 1.79999995231628,
+      "range_m": 11.0,
+      "range_provenance": "Frozen headland_runtime_23g.gd configure line32; report omits range.",
+      "color_srgb": [
+        1,
+        0.47,
+        0.12
+      ],
+      "omni_attenuation": 1.3,
+      "node_path_reconstructed": "/root/Skyfarer/MainlandVillage23g/fisher_cottage_5/VillageLantern/VillageWarmLight",
+      "node_path_provenance": "Reconstructed from actual house node name plus frozen child names, not a final full-tree dump.",
+      "sea_plane_y": 0,
+      "height_above_sea_m": 17.9400005340576,
+      "omni_sphere_intersects_sea_plane": false,
+      "sea_plane_intersection_radius_m": 0.0,
+      "sphere_intersection_is_not_visible_water_or_shadow_proof": true,
+      "shadow_enabled": "not explicitly set in frozen source; no final runtime property captured"
+    },
+    {
+      "house": "bay_fisher",
+      "world_position_godot": [
+        -2246.04614257813,
+        8.94000053405762,
+        -1872.01708984375
+      ],
+      "energy": 1.79999995231628,
+      "range_m": 11.0,
+      "range_provenance": "Frozen headland_runtime_23g.gd configure line32; report omits range.",
+      "color_srgb": [
+        1,
+        0.47,
+        0.12
+      ],
+      "omni_attenuation": 1.3,
+      "node_path_reconstructed": "/root/Skyfarer/MainlandVillage23g/fisher_cottage_6/VillageLantern/VillageWarmLight",
+      "node_path_provenance": "Reconstructed from actual house node name plus frozen child names, not a final full-tree dump.",
+      "sea_plane_y": 0,
+      "height_above_sea_m": 8.94000053405762,
+      "omni_sphere_intersects_sea_plane": true,
+      "sea_plane_intersection_radius_m": 6.409086553562018,
+      "sphere_intersection_is_not_visible_water_or_shadow_proof": true,
+      "shadow_enabled": "not explicitly set in frozen source; no final runtime property captured"
+    },
+    {
+      "house": "bay_keeper",
+      "world_position_godot": [
+        -2236.50366210938,
+        10.9400005340576,
+        -1887.72058105469
+      ],
+      "energy": 1.79999995231628,
+      "range_m": 11.0,
+      "range_provenance": "Frozen headland_runtime_23g.gd configure line32; report omits range.",
+      "color_srgb": [
+        1,
+        0.47,
+        0.12
+      ],
+      "omni_attenuation": 1.3,
+      "node_path_reconstructed": "/root/Skyfarer/MainlandVillage23g/keeper_house_7/VillageLantern/VillageWarmLight",
+      "node_path_provenance": "Reconstructed from actual house node name plus frozen child names, not a final full-tree dump.",
+      "sea_plane_y": 0,
+      "height_above_sea_m": 10.9400005340576,
+      "omni_sphere_intersects_sea_plane": true,
+      "sea_plane_intersection_radius_m": 1.1473396684589243,
+      "sphere_intersection_is_not_visible_water_or_shadow_proof": true,
+      "shadow_enabled": "not explicitly set in frozen source; no final runtime property captured"
+    },
+    {
+      "house": "bay_upper",
+      "world_position_godot": [
+        -2223.90380859375,
+        12.9400005340576,
+        -1873.57312011719
+      ],
+      "energy": 1.79999995231628,
+      "range_m": 11.0,
+      "range_provenance": "Frozen headland_runtime_23g.gd configure line32; report omits range.",
+      "color_srgb": [
+        1,
+        0.47,
+        0.12
+      ],
+      "omni_attenuation": 1.3,
+      "node_path_reconstructed": "/root/Skyfarer/MainlandVillage23g/keeper_house_8/VillageLantern/VillageWarmLight",
+      "node_path_provenance": "Reconstructed from actual house node name plus frozen child names, not a final full-tree dump.",
+      "sea_plane_y": 0,
+      "height_above_sea_m": 12.9400005340576,
+      "omni_sphere_intersects_sea_plane": false,
+      "sea_plane_intersection_radius_m": 0.0,
+      "sphere_intersection_is_not_visible_water_or_shadow_proof": true,
+      "shadow_enabled": "not explicitly set in frozen source; no final runtime property captured"
+    },
+    {
+      "house": "bay_workshop",
+      "world_position_godot": [
+        -2217.95458984375,
+        10.9400005340576,
+        -1858.25061035156
+      ],
+      "energy": 1.79999995231628,
+      "range_m": 11.0,
+      "range_provenance": "Frozen headland_runtime_23g.gd configure line32; report omits range.",
+      "color_srgb": [
+        1,
+        0.47,
+        0.12
+      ],
+      "omni_attenuation": 1.3,
+      "node_path_reconstructed": "/root/Skyfarer/MainlandVillage23g/quay_workshop_9/VillageLantern/VillageWarmLight",
+      "node_path_provenance": "Reconstructed from actual house node name plus frozen child names, not a final full-tree dump.",
+      "sea_plane_y": 0,
+      "height_above_sea_m": 10.9400005340576,
+      "omni_sphere_intersects_sea_plane": true,
+      "sea_plane_intersection_radius_m": 1.1473396684589243,
+      "sphere_intersection_is_not_visible_water_or_shadow_proof": true,
+      "shadow_enabled": "not explicitly set in frozen source; no final runtime property captured"
+    }
+  ],
+  "tower_lamps": [
+    {
+      "tower": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_a",
+      "omni_node": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_a/NativeLanternLight",
+      "spot_node": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_a/NativeLanternSpot",
+      "world_position_godot": [
+        -2353.0,
+        49.6620864868164,
+        -1656.0
+      ],
+      "height_above_sea_m": 49.6620864868164,
+      "omni_energy": 4.0,
+      "omni_range_m": 28.0,
+      "omni_color_srgb": [
+        1,
+        0.48,
+        0.12
+      ],
+      "omni_attenuation": 1.5,
+      "omni_shadow_enabled": true,
+      "omni_shadow_provenance": "Frozen final configure line74; final report explicitly captures range/energy.",
+      "omni_sphere_intersects_sea_plane": false,
+      "spot_energy": 8.0,
+      "spot_range_m": 560.0,
+      "spot_color_srgb": [
+        1,
+        0.62,
+        0.2
+      ],
+      "spot_attenuation": 0.65,
+      "spot_half_angle_degrees": 5.22394752502441,
+      "spot_shadows": true,
+      "spot_direction": [
+        0.499611437320709,
+        -0.03996891528368,
+        -0.865327000617981
+      ],
+      "nearest_ideal_cone_sea_distance_m": 379.7406383804205,
+      "spot_cone_can_reach_infinite_sea_plane_ignoring_occlusion": true,
+      "early_environment_record_superseded": {
+        "energy": 2.0,
+        "range_m": 13.0
+      }
+    },
+    {
+      "tower": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_b",
+      "omni_node": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_b/NativeLanternLight",
+      "spot_node": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_b/NativeLanternSpot",
+      "world_position_godot": [
+        -2700.0,
+        41.2455062866211,
+        -2202.0
+      ],
+      "height_above_sea_m": 41.2455062866211,
+      "omni_energy": 4.0,
+      "omni_range_m": 28.0,
+      "omni_color_srgb": [
+        1,
+        0.48,
+        0.12
+      ],
+      "omni_attenuation": 1.5,
+      "omni_shadow_enabled": true,
+      "omni_shadow_provenance": "Frozen final configure line74; final report explicitly captures range/energy.",
+      "omni_sphere_intersects_sea_plane": false,
+      "spot_energy": 8.0,
+      "spot_range_m": 560.0,
+      "spot_color_srgb": [
+        1,
+        0.62,
+        0.2
+      ],
+      "spot_attenuation": 0.65,
+      "spot_half_angle_degrees": 5.22394752502441,
+      "spot_shadows": true,
+      "spot_direction": [
+        -0.799840033054352,
+        -0.0199960004538298,
+        0.599880039691925
+      ],
+      "nearest_ideal_cone_sea_distance_m": 371.7701824012941,
+      "spot_cone_can_reach_infinite_sea_plane_ignoring_occlusion": true,
+      "early_environment_record_superseded": {
+        "energy": 2.0,
+        "range_m": 13.0
+      }
+    },
+    {
+      "tower": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_c",
+      "omni_node": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_c/NativeLanternLight",
+      "spot_node": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_c/NativeLanternSpot",
+      "world_position_godot": [
+        -3048.5,
+        31.2906131744385,
+        -2649.19995117188
+      ],
+      "height_above_sea_m": 31.2906131744385,
+      "omni_energy": 4.0,
+      "omni_range_m": 28.0,
+      "omni_color_srgb": [
+        1,
+        0.48,
+        0.12
+      ],
+      "omni_attenuation": 1.5,
+      "omni_shadow_enabled": true,
+      "omni_shadow_provenance": "Frozen final configure line74; final report explicitly captures range/energy.",
+      "omni_sphere_intersects_sea_plane": false,
+      "spot_energy": 8.0,
+      "spot_range_m": 560.0,
+      "spot_color_srgb": [
+        1,
+        0.62,
+        0.2
+      ],
+      "spot_attenuation": 0.65,
+      "spot_half_angle_degrees": 5.22394752502441,
+      "spot_shadows": true,
+      "spot_direction": [
+        -0.599880039691925,
+        -0.0199960004538298,
+        0.799840033054352
+      ],
+      "nearest_ideal_cone_sea_distance_m": 282.04083340547413,
+      "spot_cone_can_reach_infinite_sea_plane_ignoring_occlusion": true,
+      "early_environment_record_superseded": {
+        "energy": 2.0,
+        "range_m": 13.0
+      }
+    },
+    {
+      "tower": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_d",
+      "omni_node": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_d/NativeLanternLight",
+      "spot_node": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_d/NativeLanternSpot",
+      "world_position_godot": [
+        -2371.89672851563,
+        31.2906131744385,
+        -1813.69689941406
+      ],
+      "height_above_sea_m": 31.2906131744385,
+      "omni_energy": 4.0,
+      "omni_range_m": 28.0,
+      "omni_color_srgb": [
+        1,
+        0.48,
+        0.12
+      ],
+      "omni_attenuation": 1.5,
+      "omni_shadow_enabled": true,
+      "omni_shadow_provenance": "Frozen final configure line74; final report explicitly captures range/energy.",
+      "omni_sphere_intersects_sea_plane": false,
+      "spot_energy": 8.0,
+      "spot_range_m": 560.0,
+      "spot_color_srgb": [
+        1,
+        0.62,
+        0.2
+      ],
+      "spot_attenuation": 0.65,
+      "spot_half_angle_degrees": 5.22394752502441,
+      "spot_shadows": true,
+      "spot_direction": [
+        -0.920402824878693,
+        -0.0250109452754259,
+        -0.390170723199844
+      ],
+      "nearest_ideal_cone_sea_distance_m": 269.91560988173205,
+      "spot_cone_can_reach_infinite_sea_plane_ignoring_occlusion": true,
+      "early_environment_record_superseded": {
+        "energy": 2.0,
+        "range_m": 13.0
+      }
+    }
+  ],
+  "actual_emitting_mesh_bounds": {
+    "tower": {
+      "source": "E:\\FeiTing\\assets\\models\\lighthouse.glb",
+      "sha256": "79b5fd32ec06a3c3cf0fc948e31333c9d374fb018437f2fa630293e266382eb1",
+      "parts": [
+        {
+          "mesh_path_in_glb": "Lantern glazed panel 0",
+          "primitive": 0,
+          "material": "Clear slightly amber lantern glass",
+          "asset_local_godot_aabb_min": [
+            1.3810893297195435,
+            18.279998779296875,
+            -1.2902295589447021
+          ],
+          "asset_local_godot_aabb_max": [
+            1.8889076709747314,
+            21.049999237060547,
+            -0.06424762308597565
+          ],
+          "center": [
+            1.6349985003471375,
+            19.66499900817871,
+            -0.6772385910153389
+          ],
+          "size_m": [
+            0.507818341255188,
+            2.770000457763672,
+            1.2259819358587265
+          ],
+          "bounding_vertex_radius_m": 1.535725700668745,
+          "emissive_factor": [
+            0,
+            0,
+            0
+          ],
+          "emissive_strength": 1,
+          "alpha_mode": "BLEND"
+        },
+        {
+          "mesh_path_in_glb": "Lantern glazed panel 1",
+          "primitive": 0,
+          "material": "Clear slightly amber lantern glass",
+          "asset_local_godot_aabb_min": [
+            0.06424762308597565,
+            18.279998779296875,
+            -1.8889076709747314
+          ],
+          "asset_local_godot_aabb_max": [
+            1.2902295589447021,
+            21.049999237060547,
+            -1.3810893297195435
+          ],
+          "center": [
+            0.6772385910153389,
+            19.66499900817871,
+            -1.6349985003471375
+          ],
+          "size_m": [
+            1.2259819358587265,
+            2.770000457763672,
+            0.507818341255188
+          ],
+          "bounding_vertex_radius_m": 1.535725700668745,
+          "emissive_factor": [
+            0,
+            0,
+            0
+          ],
+          "emissive_strength": 1,
+          "alpha_mode": "BLEND"
+        },
+        {
+          "mesh_path_in_glb": "Lantern glazed panel 2",
+          "primitive": 0,
+          "material": "Clear slightly amber lantern glass",
+          "asset_local_godot_aabb_min": [
+            -1.2902295589447021,
+            18.279998779296875,
+            -1.8889076709747314
+          ],
+          "asset_local_godot_aabb_max": [
+            -0.06424762308597565,
+            21.049999237060547,
+            -1.3810893297195435
+          ],
+          "center": [
+            -0.6772385910153389,
+            19.66499900817871,
+            -1.6349985003471375
+          ],
+          "size_m": [
+            1.2259819358587265,
+            2.770000457763672,
+            0.507818341255188
+          ],
+          "bounding_vertex_radius_m": 1.535725700668745,
+          "emissive_factor": [
+            0,
+            0,
+            0
+          ],
+          "emissive_strength": 1,
+          "alpha_mode": "BLEND"
+        },
+        {
+          "mesh_path_in_glb": "Lantern glazed panel 3",
+          "primitive": 0,
+          "material": "Clear slightly amber lantern glass",
+          "asset_local_godot_aabb_min": [
+            -1.8889076709747314,
+            18.279998779296875,
+            -1.2902295589447021
+          ],
+          "asset_local_godot_aabb_max": [
+            -1.3810893297195435,
+            21.049999237060547,
+            -0.06424762308597565
+          ],
+          "center": [
+            -1.6349985003471375,
+            19.66499900817871,
+            -0.6772385910153389
+          ],
+          "size_m": [
+            0.507818341255188,
+            2.770000457763672,
+            1.2259819358587265
+          ],
+          "bounding_vertex_radius_m": 1.535725700668745,
+          "emissive_factor": [
+            0,
+            0,
+            0
+          ],
+          "emissive_strength": 1,
+          "alpha_mode": "BLEND"
+        },
+        {
+          "mesh_path_in_glb": "Lantern glazed panel 4",
+          "primitive": 0,
+          "material": "Clear slightly amber lantern glass",
+          "asset_local_godot_aabb_min": [
+            -1.8889076709747314,
+            18.279998779296875,
+            0.06424762308597565
+          ],
+          "asset_local_godot_aabb_max": [
+            -1.3810893297195435,
+            21.049999237060547,
+            1.2902295589447021
+          ],
+          "center": [
+            -1.6349985003471375,
+            19.66499900817871,
+            0.6772385910153389
+          ],
+          "size_m": [
+            0.507818341255188,
+            2.770000457763672,
+            1.2259819358587265
+          ],
+          "bounding_vertex_radius_m": 1.535725700668745,
+          "emissive_factor": [
+            0,
+            0,
+            0
+          ],
+          "emissive_strength": 1,
+          "alpha_mode": "BLEND"
+        },
+        {
+          "mesh_path_in_glb": "Lantern glazed panel 5",
+          "primitive": 0,
+          "material": "Clear slightly amber lantern glass",
+          "asset_local_godot_aabb_min": [
+            -1.2902295589447021,
+            18.279998779296875,
+            1.3810893297195435
+          ],
+          "asset_local_godot_aabb_max": [
+            -0.06424762308597565,
+            21.049999237060547,
+            1.8889076709747314
+          ],
+          "center": [
+            -0.6772385910153389,
+            19.66499900817871,
+            1.6349985003471375
+          ],
+          "size_m": [
+            1.2259819358587265,
+            2.770000457763672,
+            0.507818341255188
+          ],
+          "bounding_vertex_radius_m": 1.535725700668745,
+          "emissive_factor": [
+            0,
+            0,
+            0
+          ],
+          "emissive_strength": 1,
+          "alpha_mode": "BLEND"
+        },
+        {
+          "mesh_path_in_glb": "Lantern glazed panel 6",
+          "primitive": 0,
+          "material": "Clear slightly amber lantern glass",
+          "asset_local_godot_aabb_min": [
+            0.06424762308597565,
+            18.279998779296875,
+            1.3810893297195435
+          ],
+          "asset_local_godot_aabb_max": [
+            1.2902295589447021,
+            21.049999237060547,
+            1.8889076709747314
+          ],
+          "center": [
+            0.6772385910153389,
+            19.66499900817871,
+            1.6349985003471375
+          ],
+          "size_m": [
+            1.2259819358587265,
+            2.770000457763672,
+            0.507818341255188
+          ],
+          "bounding_vertex_radius_m": 1.535725700668745,
+          "emissive_factor": [
+            0,
+            0,
+            0
+          ],
+          "emissive_strength": 1,
+          "alpha_mode": "BLEND"
+        },
+        {
+          "mesh_path_in_glb": "Lantern glazed panel 7",
+          "primitive": 0,
+          "material": "Clear slightly amber lantern glass",
+          "asset_local_godot_aabb_min": [
+            1.3810893297195435,
+            18.279998779296875,
+            0.06424762308597565
+          ],
+          "asset_local_godot_aabb_max": [
+            1.8889076709747314,
+            21.049999237060547,
+            1.2902295589447021
+          ],
+          "center": [
+            1.6349985003471375,
+            19.66499900817871,
+            0.6772385910153389
+          ],
+          "size_m": [
+            0.507818341255188,
+            2.770000457763672,
+            1.2259819358587265
+          ],
+          "bounding_vertex_radius_m": 1.535725700668745,
+          "emissive_factor": [
+            0,
+            0,
+            0
+          ],
+          "emissive_strength": 1,
+          "alpha_mode": "BLEND"
+        },
+        {
+          "mesh_path_in_glb": "Opaque_Lamp core",
+          "primitive": 0,
+          "material": "Lamp core",
+          "asset_local_godot_aabb_min": [
+            -0.30000001192092896,
+            18.90999984741211,
+            -0.30000001192092896
+          ],
+          "asset_local_godot_aabb_max": [
+            0.30000001192092896,
+            20.290000915527344,
+            0.30000001192092896
+          ],
+          "center": [
+            0.0,
+            19.600000381469727,
+            0.0
+          ],
+          "size_m": [
+            0.6000000238418579,
+            1.3800010681152344,
+            0.6000000238418579
+          ],
+          "bounding_vertex_radius_m": 0.752396666760529,
+          "emissive_factor": [
+            0.8999999761581421,
+            0.3779999781847003,
+            0.06299999859929084
+          ],
+          "emissive_strength": 1,
+          "alpha_mode": "OPAQUE"
+        },
+        {
+          "mesh_path_in_glb": "Fresnel lens tier 00",
+          "primitive": 0,
+          "material": "Clear optical lens glass",
+          "asset_local_godot_aabb_min": [
+            -0.6399999856948853,
+            18.959999084472656,
+            -0.6399999856948853
+          ],
+          "asset_local_godot_aabb_max": [
+            0.6399999856948853,
+            19.139999389648438,
+            0.6399999856948853
+          ],
+          "center": [
+            0.0,
+            19.049999237060547,
+            0.0
+          ],
+          "size_m": [
+            1.2799999713897705,
+            0.18000030517578125,
+            1.2799999713897705
+          ],
+          "bounding_vertex_radius_m": 0.6462971523651462,
+          "emissive_factor": [
+            0,
+            0,
+            0
+          ],
+          "emissive_strength": 1,
+          "alpha_mode": "BLEND"
+        },
+        {
+          "mesh_path_in_glb": "Fresnel lens tier 01",
+          "primitive": 0,
+          "material": "Clear optical lens glass",
+          "asset_local_godot_aabb_min": [
+            -0.6399999856948853,
+            19.209999084472656,
+            -0.6399999856948853
+          ],
+          "asset_local_godot_aabb_max": [
+            0.6399999856948853,
+            19.389999389648438,
+            0.6399999856948853
+          ],
+          "center": [
+            0.0,
+            19.299999237060547,
+            0.0
+          ],
+          "size_m": [
+            1.2799999713897705,
+            0.18000030517578125,
+            1.2799999713897705
+          ],
+          "bounding_vertex_radius_m": 0.6462971523651462,
+          "emissive_factor": [
+            0,
+            0,
+            0
+          ],
+          "emissive_strength": 1,
+          "alpha_mode": "BLEND"
+        },
+        {
+          "mesh_path_in_glb": "Fresnel lens tier 02",
+          "primitive": 0,
+          "material": "Clear optical lens glass",
+          "asset_local_godot_aabb_min": [
+            -0.699999988079071,
+            19.459999084472656,
+            -0.699999988079071
+          ],
+          "asset_local_godot_aabb_max": [
+            0.699999988079071,
+            19.639999389648438,
+            0.699999988079071
+          ],
+          "center": [
+            0.0,
+            19.549999237060547,
+            0.0
+          ],
+          "size_m": [
+            1.399999976158142,
+            0.18000030517578125,
+            1.399999976158142
+          ],
+          "bounding_vertex_radius_m": 0.705762007178442,
+          "emissive_factor": [
+            0,
+            0,
+            0
+          ],
+          "emissive_strength": 1,
+          "alpha_mode": "BLEND"
+        },
+        {
+          "mesh_path_in_glb": "Fresnel lens tier 03",
+          "primitive": 0,
+          "material": "Clear optical lens glass",
+          "asset_local_godot_aabb_min": [
+            -0.6399999856948853,
+            19.709999084472656,
+            -0.6399999856948853
+          ],
+          "asset_local_godot_aabb_max": [
+            0.6399999856948853,
+            19.889999389648438,
+            0.6399999856948853
+          ],
+          "center": [
+            0.0,
+            19.799999237060547,
+            0.0
+          ],
+          "size_m": [
+            1.2799999713897705,
+            0.18000030517578125,
+            1.2799999713897705
+          ],
+          "bounding_vertex_radius_m": 0.6462971523651462,
+          "emissive_factor": [
+            0,
+            0,
+            0
+          ],
+          "emissive_strength": 1,
+          "alpha_mode": "BLEND"
+        },
+        {
+          "mesh_path_in_glb": "Fresnel lens tier 04",
+          "primitive": 0,
+          "material": "Clear optical lens glass",
+          "asset_local_godot_aabb_min": [
+            -0.6399999856948853,
+            19.959999084472656,
+            -0.6399999856948853
+          ],
+          "asset_local_godot_aabb_max": [
+            0.6399999856948853,
+            20.139999389648438,
+            0.6399999856948853
+          ],
+          "center": [
+            0.0,
+            20.049999237060547,
+            0.0
+          ],
+          "size_m": [
+            1.2799999713897705,
+            0.18000030517578125,
+            1.2799999713897705
+          ],
+          "bounding_vertex_radius_m": 0.6462971523651462,
+          "emissive_factor": [
+            0,
+            0,
+            0
+          ],
+          "emissive_strength": 1,
+          "alpha_mode": "BLEND"
+        }
+      ]
+    },
+    "village": {
+      "source": "E:\\FeiTing\\captures\\validation_runs\\water-34b-20260908T234145Z-bcb3451587f949d8b6faa363cf23622d\\study-inputs\\harbor-kit\\harbor_lantern.glb",
+      "sha256": "445f64442b9d381c0a58e562d34da8a71b8b5458055a2d40bc40eaf5823a01ef",
+      "parts": [
+        {
+          "mesh_path_in_glb": "harbor_lantern_Harbor lantern flame",
+          "primitive": 0,
+          "material": "Harbor lantern flame",
+          "asset_local_godot_aabb_min": [
+            0.7850000262260437,
+            2.309999942779541,
+            -0.052308108657598495
+          ],
+          "asset_local_godot_aabb_max": [
+            0.8949999809265137,
+            2.569999933242798,
+            0.052308108657598495
+          ],
+          "center": [
+            0.8400000035762787,
+            2.4399999380111694,
+            0.0
+          ],
+          "size_m": [
+            0.10999995470046997,
+            0.25999999046325684,
+            0.10461621731519699
+          ],
+          "bounding_vertex_radius_m": 0.14115593807404214,
+          "emissive_factor": [
+            0.8999999761581421,
+            0.3419999866485597,
+            0.05849999630451208
+          ],
+          "emissive_strength": 1,
+          "alpha_mode": "OPAQUE"
+        }
+      ]
+    },
+    "scope": "Read actual GLB indexed primitive vertices with all node transforms in asset-local Godot axes. Vertex-bounding radius is a conservative proxy, not a measured spherical emitter or permission to enlarge it.",
+    "tower_final_material_overrides": [
+      {
+        "mesh": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_a/Model/Opaque_Lamp core",
+        "surface": 0,
+        "source_name": "Lamp core",
+        "energy": 6.0,
+        "alpha": 1.0,
+        "transparency": 0
+      },
+      {
+        "mesh": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_b/Model/Opaque_Lamp core",
+        "surface": 0,
+        "source_name": "Lamp core",
+        "energy": 6.0,
+        "alpha": 1.0,
+        "transparency": 0
+      },
+      {
+        "mesh": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_c/Model/Opaque_Lamp core",
+        "surface": 0,
+        "source_name": "Lamp core",
+        "energy": 6.0,
+        "alpha": 1.0,
+        "transparency": 0
+      },
+      {
+        "mesh": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_d/Model/Opaque_Lamp core",
+        "surface": 0,
+        "source_name": "Lamp core",
+        "energy": 6.0,
+        "alpha": 1.0,
+        "transparency": 0
+      }
+    ],
+    "photometry_limit": "Omni light energy is a scene light parameter, not emissive surface radiance. Final tower opaque core emission multiplier6 differs from Omni energy4; use material radiance/geometry when approximating visible emitter."
+  },
+  "count_summary": {
+    "village_omni": 9,
+    "tower_omni": 4,
+    "additional_colocated_tower_spot": 4,
+    "village_omni_spheres_reaching_sea_plane": 3,
+    "tower_omni_spheres_reaching_sea_plane": 0
+  },
+  "current_light_path": {
+    "custom_light": "DIFFUSE_LIGHT += LIGHT_COLOR * ATTENUATION * max(dot(NORMAL,LIGHT),0.) * .18 / PI;",
+    "custom_specular_contribution": false,
+    "native_light_path_sufficient_for_all_requested_warm_reflections": false,
+    "reason": "Direct specular retains native light range, attenuation, spotlight cone, culling and shadow restrictions; emitting surface visibility/reflection has no Omni range cutoff.",
+    "single_ocean_mesh_size_m": [
+      100000,
+      100000
+    ],
+    "ocean_source": "E:\\FeiTing\\scripts\\open_world.gd",
+    "compatibility_default_omni_per_object": 8,
+    "project_override_found": false,
+    "limit_scope": "Documented default and no matching override in project.godot; actual selected per-draw light list was not captured."
+  },
+  "recommended_implementation": [
+    {
+      "phase": "Native direct specular",
+      "action": "Add a bounded dielectric specular term to light(), gated to non-directional lights to avoid duplicating analytic moon. Use existing view-space NORMAL/LIGHT/VIEW, SPECULAR_AMOUNT, LIGHT_COLOR and ATTENUATION once; preserve current diffuse.",
+      "capability": "Local point/spot highlights wherever actual light volume and visibility allow. Existing sea-plane-reaching village spheres and tower spots are possible, not guaranteed visible.",
+      "cannot": "Restore missing high tower/lamp-emitter reflections outside light range or reconstruct emitting geometry."
+    },
+    {
+      "phase": "Actual emitting-surface reflection preferred for complete image",
+      "action": "A bounded coast planar reflection SubViewport with the same World3D and mirrored camera about Y=0, sea excluded to prevent recursion, appropriate above-water clipping, actual emissive meshes and solid occluders included. Project into water; use normal distortion only as an explicitly approximate departure from a flat mirror. Keep depth/coverage fallback at view edges and avoid double adding analytic sky/moon.",
+      "capability": "Can reflect the visible luminous lamp core/lantern surface even outside its Omni cutoff and include terrain/building occlusion.",
+      "cost_limit": "Additional rendering, clipping/cull-layer work, transparent emitters and normal-distortion limitations require a bounded actual implementation; not implemented or performance measured here."
+    },
+    {
+      "phase": "Lower-cost interim emitter approximation",
+      "action": "Derive an emitter registry from these final nodes plus actual luminous mesh dimensions/material radiance, not Omni range. At each water point use world center/distance and finite angular extent against reflected ray. Supply actual light-to-water visibility from bounded world-space occlusion sampling; do not reuse outside-range ATTENUATION or silently pass through terrain.",
+      "capability": "World-anchored warm emitter highlights across view changes without altering ground illumination.",
+      "cannot": "Called an actual full-scene reflection or use user-camera visibility as light-to-water visibility. A center/radius proxy omits lamp housing silhouette, exact emissive shape and dynamic occlusion."
+    }
+  ],
+  "alternative_probe": "Godot4.5 Compatibility supports at most two reflection probes per mesh. A local probe with actual emissive geometry can provide coarse static reflections but finite-position parallax and one huge ocean mesh limit fidelity; not an automatic drop-in precise mirror.",
+  "proposed_34d_occlusion_atlas_limits": {
+    "proposed_grid": [
+      64,
+      32
+    ],
+    "hemisphere": "downward",
+    "far_m": 450,
+    "requirements": [
+      "Store actual radial nearest collision depth from each final emitter center; compare water distance in the same world frame, with explicit angular interpolation and depth bias.",
+      "Exclude the infinite Sea level collision by exact node/RID. Exclude only emitting optical housing deliberately made transmissive; do not exclude entire tower pedestal or island which physically hides water.",
+      "If the tower has a single broad collision shape for the whole lighthouse, excluding it is broader than optical housing and must be recorded or replaced with optical-aware collider sampling.",
+      "No-hit must be an explicit far sentinel. Water beyond450m is unverified occlusion; apply a documented coverage limit/fade rather than silently marking clear.",
+      "Downward hemisphere applies only to water below emitters. Seam/pole wrapping and filter interpolation cannot guarantee narrow-object visibility at64x32.",
+      "Static masks must invalidate on moved source or moved occluder; collision visibility is not identical to alpha/transmission of the rendered geometry."
+    ],
+    "not_run_or_accepted": true
+  },
+  "required_next_evidence": [
+    "Final runtime list of every actual emitter/light node after all adapters, including range/color/energy/shadow/layer and emitting mesh bounds.",
+    "One light-off comparison distinguishes source-bound contribution; direct-light range-off and emitter visibility-off must have different effects.",
+    "Camera move and source move must move the reflection geometrically; an occluder test must suppress it; retain night/day identity.",
+    "For native route, record rendering/limits/opengl/max_lights_per_object and selected receiver partitioning; default full-ocean mesh cannot promise all17 local lights."
+  ],
+  "official_sources": [
+    {
+      "url": "https://docs.godotengine.org/en/4.5/tutorials/shaders/shader_reference/spatial_shader.html",
+      "supports": "View-space LIGHT/VIEW/NORMAL, SPECULAR_LIGHT and ATTENUATION distance/shadow; fragment material/transparent limitations."
+    },
+    {
+      "url": "https://docs.godotengine.org/en/4.5/classes/class_omnilight3d.html",
+      "supports": "Hard range cutoff, compatibility default8Omni per mesh and AABB requirement."
+    },
+    {
+      "url": "https://docs.godotengine.org/en/4.5/tutorials/3d/global_illumination/reflection_probes.html",
+      "supports": "Probe behavior, box projection and Compatibility two-probe per mesh limit."
+    },
+    {
+      "url": "https://docs.godotengine.org/en/4.5/classes/class_environment.html",
+      "supports": "Built-in SSR is Forward+ only, not current Compatibility."
+    }
+  ],
+  "implementation_changed": false,
+  "full_reference_accepted": false,
+  "all_reference_goal_complete": false
+}

@@ -1,0 +1,132 @@
+{
+  "round": "31b",
+  "run_id": "lantern-island-31b-20260908T195540Z-dc0f57e0a037461484c11dba7dcb8b57",
+  "visual_verdict": "retain_oblique_broad_root_direction_rework_long_parallel_top_faces_and_rear_cleft",
+  "candidate_retained_for_iteration": true,
+  "visual_complete": false,
+  "full_reference_accepted": false,
+  "all_reference_goal_complete": false,
+  "reference": {
+    "path": "ref\\1342.png",
+    "sha256": "7acc98104013d9122eb551846b2d7fc1f7549bce8b2e3199eae8f5385a3ea238",
+    "directly_viewed_in_current_continuing_review": true
+  },
+  "comparison_images": [
+    {
+      "path": "captures\\validation_runs\\lantern-island-31a-20260908T194852Z-ac4f6f47286b4774afd18b8206e9f9ca\\images\\day-c-front.png",
+      "sha256": "657e8c1d7a4dd2fdb803c950622f32e33d9ffd38282f03a08857f61015cc62de"
+    },
+    {
+      "path": "captures\\validation_runs\\lantern-island-30k-r1-20260908T193210Z-09e7ff871c9941519a561b4fede063ee\\images\\day-c-front.png",
+      "sha256": "5883653f07ba3c6c96d3d246a227bffb0bd5caa22cdd2798e73fb772647682a0"
+    }
+  ],
+  "comparisons_directly_viewed_in_current_continuing_review": true,
+  "images": [
+    {
+      "view": "night-reference",
+      "path": "captures\\validation_runs\\lantern-island-31b-20260908T195540Z-dc0f57e0a037461484c11dba7dcb8b57\\images\\night-reference.png",
+      "sha256": "4a7235991dd1cf79b6c7b975bcc9d83b1245b6213f21fde9783086a639a973c4",
+      "size_px": [
+        1672,
+        941
+      ],
+      "directly_viewed": true,
+      "judgment": "新增形态在中景夜图中较弱，中央塔/右侧屋、较低树组与紧凑岛体比例保留。前沿分面存在，但上台到水线的岩块层次仍不如1342自然，不能用夜间低可见度隐藏近图问题。"
+    },
+    {
+      "view": "day-reference",
+      "path": "captures\\validation_runs\\lantern-island-31b-20260908T195540Z-dc0f57e0a037461484c11dba7dcb8b57\\images\\day-reference.png",
+      "sha256": "f75a2b51d8b01cddbbc36112867d6672e363d340c455ed32cc0a64fd1b610603",
+      "size_px": [
+        1672,
+        941
+      ],
+      "directly_viewed": true,
+      "judgment": "岛身轮廓仍紧凑，没有恢复高圆台；新增肩在这个尺度上融入灰色岩群。全景未提供足够证据区分短肩与斜板，评价必须结合三个近视图。"
+    },
+    {
+      "view": "day-d-front",
+      "path": "captures\\validation_runs\\lantern-island-31b-20260908T195540Z-dc0f57e0a037461484c11dba7dcb8b57\\images\\day-d-front.png",
+      "sha256": "da33ede18c42a20f62de57ccce5d2ac8fbe63bd30f5511c5a6895066378b5d4e",
+      "size_px": [
+        1672,
+        941
+      ],
+      "directly_viewed": true,
+      "judgment": "31a闭合多边帽面和同XY竖壁明显消除。左大肩呈偏斜的宽根块石，中肩不再是小按钮，与主坡的承接比31a自然。仍可读出两块独立轮廓感很强的凸包；后接处直暗缝、上台整块灰坡仍在，未形成参考里多方向错位的岩面组织。"
+    },
+    {
+      "view": "day-d-back",
+      "path": "captures\\validation_runs\\lantern-island-31b-20260908T195540Z-dc0f57e0a037461484c11dba7dcb8b57\\images\\day-d-back.png",
+      "sha256": "3420395704063494bd963ae243ecd5c29e2306473fce63a393656c46ce305c53",
+      "size_px": [
+        1672,
+        941
+      ],
+      "directly_viewed": true,
+      "judgment": "后侧长直深槽与大面积整灰坡未被本轮处理，槽从塔基附近贯向水边，侧壁仍像直切面。本视角不能因正面按钮消除而被标记为改形完成。"
+    },
+    {
+      "view": "day-c-front",
+      "path": "captures\\validation_runs\\lantern-island-31b-20260908T195540Z-dc0f57e0a037461484c11dba7dcb8b57\\images\\day-c-front.png",
+      "sha256": "6321a20f4224db89372ba8a64debd567e083663afca3342de5ddeac2b4208ce4",
+      "size_px": [
+        1672,
+        941
+      ],
+      "directly_viewed": true,
+      "judgment": "两颗平顶按钮确实消除，但左肩约x560–690/y490–588读成一张偏长的宽斜面，中肩约x716–812/y522–618也是同向斜板；两个后接位置留有窄直暗缝。比31a自然且宽根有厚度，没有29c极长尖楔的程度；相对30k也确实产生凸肩，不只是原灰坡换色。可是连续面纵深与走向仍相似，参考里的短宽钝折、前后错位尚不足。"
+    }
+  ],
+  "improvements": [
+    "31a两个规则平顶帽柱消除",
+    "宽根和倾斜侧面使凸肩较自然地接入主壳",
+    "相对30k有真实凸肩，部分大斜板被打断",
+    "未形成29c那样极长尖薄楔"
+  ],
+  "remaining": [
+    "C前视两顶面偏长且方向相近",
+    "肩后缘窄直暗缝",
+    "上台宽灰坡",
+    "后侧长直深槽"
+  ],
+  "next_actions": [
+    "保留31b取消平顶柱、宽根倾斜及真实主壳连接的方向，作为继续修改的候选；整体仍不接受。不要重新叠加31a两柱。",
+    "缩短左肩可见连续顶面的纵深，在海侧形成短厚、偏转的钝折前端；中肩改变平面走向与前后位置，避免两块并排同向坡板。应修改少量真实宽面关系，不增加密集小面或整圈碎岩。",
+    "保留根部厚度，检查肩后缘和旧坡交接暗缝，不把后端无限抬高或向塔基延长；那会重新形成长楔/支撑斜板。",
+    "分开处理后侧旧长直深槽：依据该视角的实际源三角与占用关系重新设计短、偏转、有落差的沟谷或凸肩，不能从正面无关区域推断后侧已好。",
+    "下一稿仍需实际GLB支承和同机位近图；新增外露面积、相交体积或19件总数均不是美术优化指标。"
+  ],
+  "geometry_evidence": {
+    "path": "reviews/round-31b-independent-geometry.json",
+    "passed": true,
+    "main_triangles": 2156,
+    "union_volume_gain_m3": 332.70580066520415,
+    "upward_geometric_exterior_area_m2": [
+      168.64849336704725,
+      105.74326723698033
+    ],
+    "road_pad_current14tree_supports_preserved": true,
+    "nonvertex_section_levels_m": [
+      2.137,
+      4.137,
+      6.137
+    ]
+  },
+  "root_runtime_report_read": {
+    "path": "reviews/round-31b-runtime-incremental.json",
+    "passed": true,
+    "binding_count": 199,
+    "placements_each_view": 59,
+    "maximum_position_delta_m": 0.00016784667968972045,
+    "maximum_footing_delta_m": 4.57763671870004e-05
+  },
+  "limits": [
+    "No GPU or Blender rerun by independent reviewer.",
+    "Manual pixel ranges only; not segmentation or exposed screen area.",
+    "Geometric plane area does not measure all former slab area or artistic quality.",
+    "Root runtime audit was read rather than independently rerun.",
+    "No whole walking, complete tree-base contact, or full-reference completion claim."
+  ]
+}

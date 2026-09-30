@@ -1,0 +1,154 @@
+{
+  "scope": "Independent read-only actual GLB topology, bounded saved-source and GPU evidence review. No engine or Blender rerun. Visual conclusion separate.",
+  "run": "E:\\FeiTing\\captures\\validation_runs\\headland-assembly-23d-20260908T120451Z-2f0e842726cc410cb92cc00d5fdfba35",
+  "manifest_passed": true,
+  "stage_count": 5,
+  "stages_passed": true,
+  "bindings_count": 124,
+  "binding_failures": [],
+  "assets": [
+    {
+      "name": "mainland_headland",
+      "source_sha": "9af4dc4efb8bec7c47bcd5fd343c469b688acbb548be7d530dfe5d5301ca7c95",
+      "glb_sha": "27847719a78f6f34f0db7bad2e0ba16e046f98bcba11d54c21131114d5d2fcfc",
+      "source_gate_match": true,
+      "glb_gate_match": true,
+      "bounds": [
+        [
+          -94.89776611328125,
+          -10.000030517578125,
+          -220.0
+        ],
+        [
+          190.0,
+          29.69151496887207,
+          190.0
+        ]
+      ]
+    },
+    {
+      "name": "fisher_cottage",
+      "source_sha": "b31daa00b4780c32f1e8b495fd8cf4893ce588c154fa3211773ae1b9b11d7217",
+      "glb_sha": "280ebd357262e6dbc216270c81b2045ff14a60b759067b5d0675b436d15a0ee8",
+      "source_gate_match": true,
+      "glb_gate_match": true,
+      "bounds": [
+        [
+          -3.259999990463257,
+          -0.6499999761581421,
+          -4.224999904632568
+        ],
+        [
+          3.2200000286102295,
+          6.329999923706055,
+          5.21999979019165
+        ]
+      ]
+    },
+    {
+      "name": "quay_workshop",
+      "source_sha": "bb4ce2f8cded676175441257579eb8e1fc6a6bb63e47fb52900cb580191e338e",
+      "glb_sha": "e4c33b94c6151ffd15b314d01a5aa4f70293095da477d26c796a35d71590996c",
+      "source_gate_match": true,
+      "glb_gate_match": true,
+      "bounds": [
+        [
+          -4.570000171661377,
+          -0.6499999761581421,
+          -3.5250000953674316
+        ],
+        [
+          4.570000171661377,
+          5.559999942779541,
+          4.650000095367432
+        ]
+      ]
+    }
+  ],
+  "terrain": {
+    "welded_vertices": 2834,
+    "triangles": 5664,
+    "non_two_incident_edges": 0,
+    "minimum_triangle_area_m2": 0.03325048249098472,
+    "signed_volume_m3": 2660629.455207945,
+    "top_controls_max_error_m": 9.524216046941092e-07,
+    "actual_top_triangles": 2636,
+    "top_connectivity_equals_layout": true
+  },
+  "views": [
+    {
+      "name": "night-reference",
+      "image_sha": "86ada2078e0d141dc56ff8b28e443b5dcb6d56f86a673ed4bdbbb5313de4f157",
+      "run_id_matches": true,
+      "production_modified": false,
+      "world_sha": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+      "house_count": 9,
+      "footing_samples": 81,
+      "gap_range_m": [
+        -0.649939060211182,
+        -0.649541854858398
+      ],
+      "all_footings_hit_candidate": true
+    },
+    {
+      "name": "day-front",
+      "image_sha": "8d8f90a447bd86ce2b9c4af26b6901fa4177ae6a7e3ba4ed97e27cc0b4fe9764",
+      "run_id_matches": true,
+      "production_modified": false,
+      "world_sha": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+      "house_count": 9,
+      "footing_samples": 81,
+      "gap_range_m": [
+        -0.649939060211182,
+        -0.649541854858398
+      ],
+      "all_footings_hit_candidate": true
+    },
+    {
+      "name": "day-bay",
+      "image_sha": "8f5157b5e640f09b280d88a5d88489b344a2d060eb448d7a4b6db2a717372739",
+      "run_id_matches": true,
+      "production_modified": false,
+      "world_sha": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+      "house_count": 9,
+      "footing_samples": 81,
+      "gap_range_m": [
+        -0.649939060211182,
+        -0.649541854858398
+      ],
+      "all_footings_hit_candidate": true
+    },
+    {
+      "name": "day-back",
+      "image_sha": "d1e58c308fe8f0c3e9b1ac452c916e09931dee217685ba532f7a48d429229c03",
+      "run_id_matches": true,
+      "production_modified": false,
+      "world_sha": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+      "house_count": 9,
+      "footing_samples": 81,
+      "gap_range_m": [
+        -0.649939060211182,
+        -0.649541854858398
+      ],
+      "all_footings_hit_candidate": true
+    },
+    {
+      "name": "day-seam",
+      "image_sha": "9b16bf595c7cf950bbb769e18311eabc180be34e288cd19a2b770c66868b0f3d",
+      "run_id_matches": true,
+      "production_modified": false,
+      "world_sha": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+      "house_count": 9,
+      "footing_samples": 81,
+      "gap_range_m": [
+        -0.649939060211182,
+        -0.649541854858398
+      ],
+      "all_footings_hit_candidate": true
+    }
+  ],
+  "steep_diagnostic": "round-23d-steep-triangle-diagnostic.json",
+  "shore_seam_diagnostic": "round-23d-headland-seam-independent-audit.json",
+  "visual_acceptance": false,
+  "integration_accepted": false
+}

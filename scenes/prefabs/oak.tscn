@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/asset_instance.gd" id="1_np2fy"]
+[ext_resource type="Material" path="res://materials/world.tres" id="2_04fkl"]
+[ext_resource type="PackedScene" path="res://assets/models/oak.glb" id="3_u1124"]
+[ext_resource type="Shape3D" path="res://assets/collision/oak.res" id="4_1vn66"]
+
+[node name="oak" type="Node3D"]
+script = ExtResource("1_np2fy")
+asset_kind = "oak"
+surface_material = ExtResource("2_04fkl")
+
+[node name="Model" parent="." instance=ExtResource("3_u1124")]
+
+[node name="Collision" type="StaticBody3D" parent="."]
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.5, 0)
+shape = ExtResource("4_1vn66")

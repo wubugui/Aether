@@ -1,0 +1,2132 @@
+{
+  "scope": "34e bounded increment; reads56.8MB source report but emits compact fields only. No new physics/GPU/Blender or world-support scan.",
+  "checks": {
+    "source_shader_sha": true,
+    "native_emitter_runtime_sha": true,
+    "native_frozen_same": true,
+    "shader_only_array_loop_gain_delta": true,
+    "environment_adapter_unchanged": true,
+    "one_configure_call": true,
+    "one_material_instance": true,
+    "count_67_unique_13_retained_54_added": true,
+    "retained13_geometry_material_exact": true,
+    "retained13_depths_exact": true,
+    "retained13_hit_records_equivalent": true,
+    "added54_same_instance_light_and_mesh": true,
+    "added54_glb_aabb_within_1mm": true,
+    "added54_source_emission_matches": true,
+    "ray_counts_and_range": true,
+    "4_opaque_proxy_records_inherited": true,
+    "exclusion_records_unchanged": true,
+    "ray_generation_code_unchanged": true,
+    "shader_450m_hard_zero_inherited": true,
+    "actual_harbor_lights_existing_before_this_change": true,
+    "views_identity": true,
+    "bindings": true,
+    "terminal_passed": true
+  },
+  "bounded_incremental_checks_passed": true,
+  "retained13": [
+    {
+      "node": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_a/NativeLanternLight",
+      "old_index": 0,
+      "new_index": 0,
+      "emitter_geometry_material_exact": true,
+      "2048_radial_depths_exact": true,
+      "hit_records_exact_except_versioned_caster_parent": true,
+      "old_roughness": 0.00800000037997961,
+      "new_roughness": 0.0240000002086163
+    },
+    {
+      "node": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_b/NativeLanternLight",
+      "old_index": 1,
+      "new_index": 1,
+      "emitter_geometry_material_exact": true,
+      "2048_radial_depths_exact": true,
+      "hit_records_exact_except_versioned_caster_parent": true,
+      "old_roughness": 0.00800000037997961,
+      "new_roughness": 0.0240000002086163
+    },
+    {
+      "node": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_c/NativeLanternLight",
+      "old_index": 2,
+      "new_index": 2,
+      "emitter_geometry_material_exact": true,
+      "2048_radial_depths_exact": true,
+      "hit_records_exact_except_versioned_caster_parent": true,
+      "old_roughness": 0.00800000037997961,
+      "new_roughness": 0.0240000002086163
+    },
+    {
+      "node": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_d/NativeLanternLight",
+      "old_index": 3,
+      "new_index": 3,
+      "emitter_geometry_material_exact": true,
+      "2048_radial_depths_exact": true,
+      "hit_records_exact_except_versioned_caster_parent": true,
+      "old_roughness": 0.00800000037997961,
+      "new_roughness": 0.0240000002086163
+    },
+    {
+      "node": "/root/Skyfarer/MainlandVillage23g/fisher_cottage_1/VillageLantern/VillageWarmLight",
+      "old_index": 4,
+      "new_index": 4,
+      "emitter_geometry_material_exact": true,
+      "2048_radial_depths_exact": true,
+      "hit_records_exact_except_versioned_caster_parent": true,
+      "old_roughness": 0.0020000000949949,
+      "new_roughness": 0.00600000005215406
+    },
+    {
+      "node": "/root/Skyfarer/MainlandVillage23g/fisher_cottage_5/VillageLantern/VillageWarmLight",
+      "old_index": 5,
+      "new_index": 5,
+      "emitter_geometry_material_exact": true,
+      "2048_radial_depths_exact": true,
+      "hit_records_exact_except_versioned_caster_parent": true,
+      "old_roughness": 0.0020000000949949,
+      "new_roughness": 0.00600000005215406
+    },
+    {
+      "node": "/root/Skyfarer/MainlandVillage23g/fisher_cottage_6/VillageLantern/VillageWarmLight",
+      "old_index": 6,
+      "new_index": 6,
+      "emitter_geometry_material_exact": true,
+      "2048_radial_depths_exact": true,
+      "hit_records_exact_except_versioned_caster_parent": true,
+      "old_roughness": 0.0020000000949949,
+      "new_roughness": 0.00600000005215406
+    },
+    {
+      "node": "/root/Skyfarer/MainlandVillage23g/keeper_house_3/VillageLantern/VillageWarmLight",
+      "old_index": 7,
+      "new_index": 7,
+      "emitter_geometry_material_exact": true,
+      "2048_radial_depths_exact": true,
+      "hit_records_exact_except_versioned_caster_parent": true,
+      "old_roughness": 0.0020000000949949,
+      "new_roughness": 0.00600000005215406
+    },
+    {
+      "node": "/root/Skyfarer/MainlandVillage23g/keeper_house_4/VillageLantern/VillageWarmLight",
+      "old_index": 8,
+      "new_index": 8,
+      "emitter_geometry_material_exact": true,
+      "2048_radial_depths_exact": true,
+      "hit_records_exact_except_versioned_caster_parent": true,
+      "old_roughness": 0.0020000000949949,
+      "new_roughness": 0.00600000005215406
+    },
+    {
+      "node": "/root/Skyfarer/MainlandVillage23g/keeper_house_7/VillageLantern/VillageWarmLight",
+      "old_index": 9,
+      "new_index": 9,
+      "emitter_geometry_material_exact": true,
+      "2048_radial_depths_exact": true,
+      "hit_records_exact_except_versioned_caster_parent": true,
+      "old_roughness": 0.0020000000949949,
+      "new_roughness": 0.00600000005215406
+    },
+    {
+      "node": "/root/Skyfarer/MainlandVillage23g/keeper_house_8/VillageLantern/VillageWarmLight",
+      "old_index": 10,
+      "new_index": 10,
+      "emitter_geometry_material_exact": true,
+      "2048_radial_depths_exact": true,
+      "hit_records_exact_except_versioned_caster_parent": true,
+      "old_roughness": 0.0020000000949949,
+      "new_roughness": 0.00600000005215406
+    },
+    {
+      "node": "/root/Skyfarer/MainlandVillage23g/quay_workshop_2/VillageLantern/VillageWarmLight",
+      "old_index": 11,
+      "new_index": 11,
+      "emitter_geometry_material_exact": true,
+      "2048_radial_depths_exact": true,
+      "hit_records_exact_except_versioned_caster_parent": true,
+      "old_roughness": 0.0020000000949949,
+      "new_roughness": 0.00600000005215406
+    },
+    {
+      "node": "/root/Skyfarer/MainlandVillage23g/quay_workshop_9/VillageLantern/VillageWarmLight",
+      "old_index": 12,
+      "new_index": 12,
+      "emitter_geometry_material_exact": true,
+      "2048_radial_depths_exact": true,
+      "hit_records_exact_except_versioned_caster_parent": true,
+      "old_roughness": 0.0020000000949949,
+      "new_roughness": 0.00600000005215406
+    }
+  ],
+  "added54": [
+    {
+      "index": 13,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_1/HarborWarmLight",
+      "source_role": "house lane",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2187.064453125,
+        22.7228050231934,
+        -2071.91796875
+      ],
+      "actual_half_axes": [
+        0.0528564453125,
+        0.130000114440918,
+        0.0550537109375
+      ],
+      "center_error_m": 0.00013611206668429077,
+      "half_axes_error_m": 9.2444501888167e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_1/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_11/HarborWarmLight",
+      "source_role": "house lane",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2374.6376953125,
+        17.3424034118652,
+        -2326.91796875
+      ],
+      "actual_half_axes": [
+        0.0528564453125,
+        0.130000114440918,
+        0.0550537109375
+      ],
+      "center_error_m": 0.00013611206668429077,
+      "half_axes_error_m": 9.2444501888167e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_11/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_13/HarborWarmLight",
+      "source_role": "house lane",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2354.6376953125,
+        17.4399375915527,
+        -2326.91796875
+      ],
+      "actual_half_axes": [
+        0.0528564453125,
+        0.130000114440918,
+        0.0550537109375
+      ],
+      "center_error_m": 0.00013611206668429077,
+      "half_axes_error_m": 9.2444501888167e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_13/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_15/HarborWarmLight",
+      "source_role": "house lane",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2443.6416015625,
+        17.5369529724121,
+        -2431.91796875
+      ],
+      "actual_half_axes": [
+        0.0528564453125,
+        0.130000114440918,
+        0.0550537109375
+      ],
+      "center_error_m": 0.00013611206668429077,
+      "half_axes_error_m": 9.2444501888167e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_15/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_17/HarborWarmLight",
+      "source_role": "house lane",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2423.6416015625,
+        17.7725486755371,
+        -2431.91796875
+      ],
+      "actual_half_axes": [
+        0.0528564453125,
+        0.130000114440918,
+        0.0550537109375
+      ],
+      "center_error_m": 0.00013611206668429077,
+      "half_axes_error_m": 9.2444501888167e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_17/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_19/HarborWarmLight",
+      "source_role": "house lane",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2463.3583984375,
+        17.2453575134277,
+        -2461.91796875
+      ],
+      "actual_half_axes": [
+        0.0528564453125,
+        0.130000114440918,
+        0.0550537109375
+      ],
+      "center_error_m": 0.00013611206668429077,
+      "half_axes_error_m": 9.2444501888167e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_19/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_21/HarborWarmLight",
+      "source_role": "house lane",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2443.3583984375,
+        17.5687828063965,
+        -2461.91796875
+      ],
+      "actual_half_axes": [
+        0.0528564453125,
+        0.130000114440918,
+        0.0550537109375
+      ],
+      "center_error_m": 0.00013611206668429077,
+      "half_axes_error_m": 9.2444501888167e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_21/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_23/HarborWarmLight",
+      "source_role": "house lane",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2483.0654296875,
+        17.3454551696777,
+        -2491.91796875
+      ],
+      "actual_half_axes": [
+        0.0528564453125,
+        0.130000114440918,
+        0.0550537109375
+      ],
+      "center_error_m": 0.00013611206668429077,
+      "half_axes_error_m": 9.2444501888167e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_23/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_25/HarborWarmLight",
+      "source_role": "house lane",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2463.0654296875,
+        17.4398765563965,
+        -2491.91796875
+      ],
+      "actual_half_axes": [
+        0.0528564453125,
+        0.130000114440918,
+        0.0550537109375
+      ],
+      "center_error_m": 0.00013611206668429077,
+      "half_axes_error_m": 9.2444501888167e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_25/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_27/HarborWarmLight",
+      "source_role": "house lane",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2502.77734375,
+        17.4399070739746,
+        -2521.91796875
+      ],
+      "actual_half_axes": [
+        0.0528564453125,
+        0.130000114440918,
+        0.0550537109375
+      ],
+      "center_error_m": 0.00013611206668429077,
+      "half_axes_error_m": 9.2444501888167e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_27/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_29/HarborWarmLight",
+      "source_role": "house lane",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2482.77734375,
+        17.4399070739746,
+        -2521.91796875
+      ],
+      "actual_half_axes": [
+        0.0528564453125,
+        0.130000114440918,
+        0.0550537109375
+      ],
+      "center_error_m": 0.00013611206668429077,
+      "half_axes_error_m": 9.2444501888167e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_29/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_3/HarborWarmLight",
+      "source_role": "house lane",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2208.021484375,
+        21.5625267028809,
+        -2101.91796875
+      ],
+      "actual_half_axes": [
+        0.0528564453125,
+        0.130000114440918,
+        0.0550537109375
+      ],
+      "center_error_m": 0.00013611206668429077,
+      "half_axes_error_m": 9.2444501888167e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_3/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_31/HarborWarmLight",
+      "source_role": "house lane",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2542.2109375,
+        17.2005882263184,
+        -2581.91796875
+      ],
+      "actual_half_axes": [
+        0.0528564453125,
+        0.130000114440918,
+        0.0550537109375
+      ],
+      "center_error_m": 0.00013611206668429077,
+      "half_axes_error_m": 9.2444501888167e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_31/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_33/HarborWarmLight",
+      "source_role": "house lane",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2522.2109375,
+        17.4399070739746,
+        -2581.91796875
+      ],
+      "actual_half_axes": [
+        0.0528564453125,
+        0.130000114440918,
+        0.0550537109375
+      ],
+      "center_error_m": 0.00013611206668429077,
+      "half_axes_error_m": 9.2444501888167e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_33/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_35/HarborWarmLight",
+      "source_role": "house lane",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2568.5,
+        17.3719749450684,
+        -2621.91796875
+      ],
+      "actual_half_axes": [
+        0.0528564453125,
+        0.130000114440918,
+        0.0550537109375
+      ],
+      "center_error_m": 0.00013611206668429077,
+      "half_axes_error_m": 9.2444501888167e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_35/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_37/HarborWarmLight",
+      "source_role": "house lane",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2548.5,
+        17.4398765563965,
+        -2621.91796875
+      ],
+      "actual_half_axes": [
+        0.0528564453125,
+        0.130000114440918,
+        0.0550537109375
+      ],
+      "center_error_m": 0.00013611206668429077,
+      "half_axes_error_m": 9.2444501888167e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_37/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_39/HarborWarmLight",
+      "source_role": "house lane",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2594.7890625,
+        17.4399070739746,
+        -2661.91796875
+      ],
+      "actual_half_axes": [
+        0.0528564453125,
+        0.130000114440918,
+        0.0550537109375
+      ],
+      "center_error_m": 0.00013611206668429077,
+      "half_axes_error_m": 9.2444501888167e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_39/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_41/HarborWarmLight",
+      "source_role": "house lane",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2574.7890625,
+        17.4399070739746,
+        -2661.91796875
+      ],
+      "actual_half_axes": [
+        0.0528564453125,
+        0.130000114440918,
+        0.0550537109375
+      ],
+      "center_error_m": 0.00013611206668429077,
+      "half_axes_error_m": 9.2444501888167e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_41/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 31,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_43/HarborWarmLight",
+      "source_role": "house lane",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2621.068359375,
+        17.1459007263184,
+        -2701.91796875
+      ],
+      "actual_half_axes": [
+        0.0528564453125,
+        0.130000114440918,
+        0.0550537109375
+      ],
+      "center_error_m": 0.00013611206668429077,
+      "half_axes_error_m": 9.2444501888167e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_43/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 32,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_45/HarborWarmLight",
+      "source_role": "house lane",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2601.068359375,
+        17.4399681091309,
+        -2701.91796875
+      ],
+      "actual_half_axes": [
+        0.0528564453125,
+        0.130000114440918,
+        0.0550537109375
+      ],
+      "center_error_m": 0.00013611206668429077,
+      "half_axes_error_m": 9.2444501888167e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_45/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 33,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_5/HarborWarmLight",
+      "source_role": "house lane",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2305.638671875,
+        22.3662986755371,
+        -2221.91796875
+      ],
+      "actual_half_axes": [
+        0.0528564453125,
+        0.130000114440918,
+        0.0550537109375
+      ],
+      "center_error_m": 0.00013611206668429077,
+      "half_axes_error_m": 9.2444501888167e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_5/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 34,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_50/HarborWarmLight",
+      "source_role": "dock deck",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2312.1416015625,
+        4.78999996185303,
+        -2101.39599609375
+      ],
+      "actual_half_axes": [
+        0.0528564453125,
+        0.130000114440918,
+        0.0550537109375
+      ],
+      "center_error_m": 0.0001255037755072408,
+      "half_axes_error_m": 9.2444501888167e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_50/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 35,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_51/HarborWarmLight",
+      "source_role": "dock deck",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2306.6826171875,
+        4.78999996185303,
+        -2093.2568359375
+      ],
+      "actual_half_axes": [
+        0.0528564453125,
+        0.130000114440918,
+        0.0550537109375
+      ],
+      "center_error_m": 0.00013611206668429077,
+      "half_axes_error_m": 9.2444501888167e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_51/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 36,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_52/HarborWarmLight",
+      "source_role": "dock deck",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2295.46630859375,
+        4.78999996185303,
+        -2109.02783203125
+      ],
+      "actual_half_axes": [
+        0.0528564453125,
+        0.130000114440918,
+        0.0550537109375
+      ],
+      "center_error_m": 0.00013611206668429077,
+      "half_axes_error_m": 9.2444501888167e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_52/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 37,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_53/HarborWarmLight",
+      "source_role": "dock deck",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2293.2939453125,
+        4.78999996185303,
+        -2105.7890625
+      ],
+      "actual_half_axes": [
+        0.0528564453125,
+        0.130000114440918,
+        0.0550537109375
+      ],
+      "center_error_m": 0.0001255037755072408,
+      "half_axes_error_m": 9.2444501888167e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_53/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 38,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_59/HarborWarmLight",
+      "source_role": "dock deck",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2414.00390625,
+        4.78999996185303,
+        -2256.39599609375
+      ],
+      "actual_half_axes": [
+        0.0528564453125,
+        0.130000114440918,
+        0.0550537109375
+      ],
+      "center_error_m": 0.0001255037755072408,
+      "half_axes_error_m": 9.2444501888167e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_59/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 39,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_60/HarborWarmLight",
+      "source_role": "dock deck",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2408.544921875,
+        4.78999996185303,
+        -2248.2568359375
+      ],
+      "actual_half_axes": [
+        0.0528564453125,
+        0.130000114440918,
+        0.0550537109375
+      ],
+      "center_error_m": 0.00013611206668429077,
+      "half_axes_error_m": 9.2444501888167e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_60/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 40,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_61/HarborWarmLight",
+      "source_role": "dock deck",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2397.32861328125,
+        4.78999996185303,
+        -2264.02783203125
+      ],
+      "actual_half_axes": [
+        0.0528564453125,
+        0.130000114440918,
+        0.0550537109375
+      ],
+      "center_error_m": 0.00013611206668429077,
+      "half_axes_error_m": 9.2444501888167e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_61/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 41,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_62/HarborWarmLight",
+      "source_role": "dock deck",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2395.15625,
+        4.78999996185303,
+        -2260.7890625
+      ],
+      "actual_half_axes": [
+        0.0528564453125,
+        0.130000114440918,
+        0.0550537109375
+      ],
+      "center_error_m": 0.0001255037755072408,
+      "half_axes_error_m": 9.2444501888167e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_62/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 42,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_68/HarborWarmLight",
+      "source_role": "dock deck",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2568.43212890625,
+        4.78999996185303,
+        -2491.39599609375
+      ],
+      "actual_half_axes": [
+        0.0528564453125,
+        0.130000114440918,
+        0.0550537109375
+      ],
+      "center_error_m": 0.0001255037755072408,
+      "half_axes_error_m": 9.2444501888167e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_68/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 43,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_69/HarborWarmLight",
+      "source_role": "dock deck",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2562.97314453125,
+        4.78999996185303,
+        -2483.2568359375
+      ],
+      "actual_half_axes": [
+        0.0528564453125,
+        0.130000114440918,
+        0.0550537109375
+      ],
+      "center_error_m": 0.00013611206668429077,
+      "half_axes_error_m": 9.2444501888167e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_69/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 44,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_7/HarborWarmLight",
+      "source_role": "house lane",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2351.6396484375,
+        17.439754486084,
+        -2291.91796875
+      ],
+      "actual_half_axes": [
+        0.0528564453125,
+        0.130000114440918,
+        0.0550537109375
+      ],
+      "center_error_m": 0.00013611206668429077,
+      "half_axes_error_m": 9.2444501888167e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_7/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 45,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_70/HarborWarmLight",
+      "source_role": "dock deck",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2551.7568359375,
+        4.78999996185303,
+        -2499.02783203125
+      ],
+      "actual_half_axes": [
+        0.0528564453125,
+        0.130000114440918,
+        0.0550537109375
+      ],
+      "center_error_m": 0.00013611206668429077,
+      "half_axes_error_m": 9.2444501888167e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_70/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 46,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_71/HarborWarmLight",
+      "source_role": "dock deck",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2549.58447265625,
+        4.78999996185303,
+        -2495.7890625
+      ],
+      "actual_half_axes": [
+        0.0528564453125,
+        0.130000114440918,
+        0.0550537109375
+      ],
+      "center_error_m": 0.0001255037755072408,
+      "half_axes_error_m": 9.2444501888167e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_71/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 47,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_77/HarborWarmLight",
+      "source_role": "dock deck",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2680.15576171875,
+        4.78999996185303,
+        -2661.39599609375
+      ],
+      "actual_half_axes": [
+        0.0528564453125,
+        0.130000114440918,
+        0.0550537109375
+      ],
+      "center_error_m": 0.0001255037755072408,
+      "half_axes_error_m": 9.2444501888167e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_77/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 48,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_78/HarborWarmLight",
+      "source_role": "dock deck",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2674.69677734375,
+        4.78999996185303,
+        -2653.2568359375
+      ],
+      "actual_half_axes": [
+        0.0528564453125,
+        0.130000114440918,
+        0.0550537109375
+      ],
+      "center_error_m": 0.00013611206668429077,
+      "half_axes_error_m": 9.2444501888167e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_78/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 49,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_79/HarborWarmLight",
+      "source_role": "dock deck",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2663.48046875,
+        4.78999996185303,
+        -2669.02783203125
+      ],
+      "actual_half_axes": [
+        0.0528564453125,
+        0.130000114440918,
+        0.0550537109375
+      ],
+      "center_error_m": 0.00013611206668429077,
+      "half_axes_error_m": 9.2444501888167e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_79/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 50,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_80/HarborWarmLight",
+      "source_role": "dock deck",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2661.30810546875,
+        4.78999996185303,
+        -2665.7890625
+      ],
+      "actual_half_axes": [
+        0.0528564453125,
+        0.130000114440918,
+        0.0550537109375
+      ],
+      "center_error_m": 0.0001255037755072408,
+      "half_axes_error_m": 9.2444501888167e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_80/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 51,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_82/HarborWarmLight",
+      "source_role": "stone approach",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2281.900390625,
+        7.2559175491333,
+        -2111.44970703125
+      ],
+      "actual_half_axes": [
+        0.0531005859375,
+        0.129999876022339,
+        0.0548095703125
+      ],
+      "center_error_m": 0.00011639349122560816,
+      "half_axes_error_m": 0.00010787019505187345,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_82/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 52,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_83/HarborWarmLight",
+      "source_role": "stone approach",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2270.267578125,
+        10.5892000198364,
+        -2110.63818359375
+      ],
+      "actual_half_axes": [
+        0.0543212890625,
+        0.130000114440918,
+        0.0543212890625
+      ],
+      "center_error_m": 0.00014795062725170283,
+      "half_axes_error_m": 6.752997887815582e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_83/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 53,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_84/HarborWarmLight",
+      "source_role": "stone approach",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2258.619140625,
+        14.7015047073364,
+        -2108.38793945313
+      ],
+      "actual_half_axes": [
+        0.0546875,
+        0.130000114440918,
+        0.0537109375
+      ],
+      "center_error_m": 3.068426030949922e-05,
+      "half_axes_error_m": 5.183396228858328e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_84/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 54,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_85/HarborWarmLight",
+      "source_role": "stone approach",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2246.96508789063,
+        18.5549583435059,
+        -2105.73876953125
+      ],
+      "actual_half_axes": [
+        0.0546875,
+        0.130000114440918,
+        0.0537109375
+      ],
+      "center_error_m": 5.708367098122835e-05,
+      "half_axes_error_m": 7.531780647695996e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_85/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 55,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_86/HarborWarmLight",
+      "source_role": "stone approach",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2235.171875,
+        20.0327110290527,
+        -2103.3623046875
+      ],
+      "actual_half_axes": [
+        0.054443359375,
+        0.130000114440918,
+        0.05419921875
+      ],
+      "center_error_m": 6.046438375051366e-05,
+      "half_axes_error_m": 4.180185305813211e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_86/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 56,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_87/HarborWarmLight",
+      "source_role": "stone approach",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2223.05224609375,
+        21.0881309509277,
+        -2102.22314453125
+      ],
+      "actual_half_axes": [
+        0.0523681640625,
+        0.130000114440918,
+        0.0550537109375
+      ],
+      "center_error_m": 0.00022862967034598114,
+      "half_axes_error_m": 5.396885171649046e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_87/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 57,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_88/HarborWarmLight",
+      "source_role": "stone approach",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2384.69775390625,
+        7.8054780960083,
+        -2270.36108398438
+      ],
+      "actual_half_axes": [
+        0.05322265625,
+        0.129999876022339,
+        0.054931640625
+      ],
+      "center_error_m": 5.558154634854873e-05,
+      "half_axes_error_m": 2.5374469714734005e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_88/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 58,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_89/HarborWarmLight",
+      "source_role": "stone approach",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2375.55004882813,
+        11.3347444534302,
+        -2278.01245117188
+      ],
+      "actual_half_axes": [
+        0.053466796875,
+        0.130000114440918,
+        0.054931640625
+      ],
+      "center_error_m": 3.2759281111793825e-05,
+      "half_axes_error_m": 8.102088531813934e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_89/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 59,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_9/HarborWarmLight",
+      "source_role": "house lane",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2331.6396484375,
+        17.439754486084,
+        -2291.91796875
+      ],
+      "actual_half_axes": [
+        0.0528564453125,
+        0.130000114440918,
+        0.0550537109375
+      ],
+      "center_error_m": 0.00013611206668429077,
+      "half_axes_error_m": 9.2444501888167e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_9/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 60,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_90/HarborWarmLight",
+      "source_role": "stone approach",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2366.4580078125,
+        15.1577730178833,
+        -2285.68603515625
+      ],
+      "actual_half_axes": [
+        0.0533447265625,
+        0.130000114440918,
+        0.0548095703125
+      ],
+      "center_error_m": 0.0001368579169138684,
+      "half_axes_error_m": 6.099357119637716e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_90/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 61,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_91/HarborWarmLight",
+      "source_role": "stone approach",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2538.70556640625,
+        7.74303913116455,
+        -2504.52294921875
+      ],
+      "actual_half_axes": [
+        0.0533447265625,
+        0.129999876022339,
+        0.0548095703125
+      ],
+      "center_error_m": 0.00016139285025928984,
+      "half_axes_error_m": 5.535453055927064e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_91/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 62,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_92/HarborWarmLight",
+      "source_role": "stone approach",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2528.56103515625,
+        11.3228120803833,
+        -2510.8056640625
+      ],
+      "actual_half_axes": [
+        0.053466796875,
+        0.130000114440918,
+        0.0548095703125
+      ],
+      "center_error_m": 9.321479228674434e-05,
+      "half_axes_error_m": 3.3192524142577895e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_92/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 63,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_93/HarborWarmLight",
+      "source_role": "stone approach",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2518.3984375,
+        14.4650545120239,
+        -2517.08032226563
+      ],
+      "actual_half_axes": [
+        0.053466796875,
+        0.130000114440918,
+        0.054931640625
+      ],
+      "center_error_m": 4.265599773134454e-05,
+      "half_axes_error_m": 8.107797225420654e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_93/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 64,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_94/HarborWarmLight",
+      "source_role": "stone approach",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2651.27685546875,
+        7.89748859405518,
+        -2676.18115234375
+      ],
+      "actual_half_axes": [
+        0.054443359375,
+        0.129999876022339,
+        0.0540771484375
+      ],
+      "center_error_m": 0.00012356547676972696,
+      "half_axes_error_m": 6.8320152877277e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_94/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 65,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_95/HarborWarmLight",
+      "source_role": "stone approach",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2643.20849609375,
+        11.7550935745239,
+        -2685.07397460938
+      ],
+      "actual_half_axes": [
+        0.0548095703125,
+        0.130000114440918,
+        0.0537109375
+      ],
+      "center_error_m": 0.00017693989957479062,
+      "half_axes_error_m": 6.0864181023134734e-05,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_95/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    },
+    {
+      "index": 66,
+      "node": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_96/HarborWarmLight",
+      "source_role": "stone approach",
+      "same_instance_mesh": true,
+      "same_instance_omni_record": true,
+      "emitter_center": [
+        -2635.283203125,
+        15.9352693557739,
+        -2694.01123046875
+      ],
+      "actual_half_axes": [
+        0.0548095703125,
+        0.130000114440918,
+        0.0538330078125
+      ],
+      "center_error_m": 0.00011635612008831231,
+      "half_axes_error_m": 0.00011431512280069,
+      "emission_multiplier": 1.0,
+      "material_multiplier_matches": true,
+      "emission_color_max_error": 4.221076987942496e-08,
+      "rays": 2048,
+      "finite_0_to_450": true,
+      "hit_record_count": 2048,
+      "source_mesh_surfaces": [
+        {
+          "material": "Harbor lantern flame",
+          "mesh": "/root/Skyfarer/SurveyedHarborStudy22g/Harbor_harbor_lantern_96/harbor_lantern_Harbor lantern flame",
+          "surface": 0,
+          "vertices": 60
+        }
+      ]
+    }
+  ],
+  "source_report": {
+    "path": "E:\\FeiTing\\captures\\validation_runs\\water-34e-20260909T000818Z-086f9efe84964e12b961d88e6587cb3b\\images\\actual-emitter-reflection.json",
+    "bytes": 56808489,
+    "sha256": "2e823ef4bbf5b363fe82c6a5bd753217ff94989d288ea9bad5505ee50abdb672"
+  },
+  "art_parameters": {
+    "tower_angular_roughness": 0.024,
+    "lantern_angular_roughness": 0.006,
+    "radiance_gain": 18.0,
+    "physical_calibration": false
+  },
+  "inheritance": {
+    "34d_opaque_mesh_samples": "Four proxy records unchanged except versioned parent path; inherit34d actual GLB3628tri and12hit sample checks; not repeated.",
+    "retained_atlas": "Compare by actual source node. Depth arrays exact; hit records normalize only the versioned caster parent name. Indices do not define source identity.",
+    "added_atlas_limit": "Existing54*2048 depth counts/finiteness/range and unchanged generation code checked; no independent full137216-ray world intersection replay or GPU texture readback.",
+    "land": "33f full支承 inherited; actual identities/placements only compared.",
+    "not_scene_reflection": "WorldAABB angular proxies plus finite nearest64x32 static visibility, 0.25m bias and450m hard coverage boundary retained. No windows or full-scene reflection."
+  },
+  "runtime": {
+    "run_id": "water-34e-20260909T000818Z-086f9efe84964e12b961d88e6587cb3b",
+    "status": "passed",
+    "completed_utc": "2026-09-09T00:10:32.147338+00:00",
+    "views": [
+      {
+        "view": "night-reference",
+        "checks": {
+          "run": true,
+          "shader": true,
+          "camera": true,
+          "time": true,
+          "world_coast": true,
+          "placements": true,
+          "named_trees": true,
+          "emitter_report_sha": true,
+          "counts": true,
+          "unique_bound_moon_emitter_id": true
+        }
+      },
+      {
+        "view": "night-water-near",
+        "checks": {
+          "run": true,
+          "shader": true,
+          "camera": true,
+          "time": true,
+          "world_coast": true,
+          "placements": true,
+          "named_trees": true,
+          "emitter_report_sha": true,
+          "counts": true,
+          "unique_bound_moon_emitter_id": true
+        }
+      },
+      {
+        "view": "night-water-shift",
+        "checks": {
+          "run": true,
+          "shader": true,
+          "camera": true,
+          "time": true,
+          "world_coast": true,
+          "placements": true,
+          "named_trees": true,
+          "emitter_report_sha": true,
+          "counts": true,
+          "unique_bound_moon_emitter_id": true
+        }
+      },
+      {
+        "view": "night-time18",
+        "checks": {
+          "run": true,
+          "shader": true,
+          "camera": true,
+          "time": true,
+          "world_coast": true,
+          "placements": true,
+          "named_trees": true,
+          "emitter_report_sha": true,
+          "counts": true,
+          "unique_bound_moon_emitter_id": true
+        }
+      },
+      {
+        "view": "day-reference",
+        "checks": {
+          "run": true,
+          "shader": true,
+          "camera": true,
+          "time": true,
+          "world_coast": true,
+          "placements": true,
+          "named_trees": true
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "path": "images/night-reference.png",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/night-reference.png.json",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/night-water-near.png",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/night-water-near.png.json",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/night-water-shift.png",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/night-water-shift.png.json",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/night-time18.png",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/night-time18.png.json",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/day-reference.png",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/day-reference.png.json",
+        "matches_manifest": true
+      },
+      {
+        "path": "images/actual-emitter-reflection.json",
+        "sha256": "2e823ef4bbf5b363fe82c6a5bd753217ff94989d288ea9bad5505ee50abdb672",
+        "matches_manifest": true
+      },
+      {
+        "path": "study-inputs/new-environment27f/open_water.gdshader",
+        "sha256": "ade1458591deb73058d9bbca6fb0d4632f0ace0a37010fdafed1ee9b86704795",
+        "matches_manifest": true
+      },
+      {
+        "path": "study-inputs/coast_environment_27f.gd",
+        "sha256": "815d9f7202da5d1896b22adefadd51e78944f5f4a560ef9963cb5003fed963ac",
+        "matches_manifest": true
+      },
+      {
+        "path": "study-inputs/water_emitter_reflections_34e.gd",
+        "sha256": "2b04aea48e51e690f33fb88374119eb4c721a014d7c2685a237d48a040feb307",
+        "matches_manifest": true
+      },
+      {
+        "path": "study-inputs/render_water_34e.py",
+        "sha256": "cb5cbb972dd1a4898913e3260fbd0a29376dcfdfad11e356b74e89770532b8fd",
+        "matches_manifest": true
+      },
+      {
+        "path": "study-inputs/preview.gd",
+        "sha256": "ad244d805bf88d6405766057baea5427c62494fc9eb5daefefc9f310b3939c7d",
+        "matches_manifest": true
+      },
+      {
+        "path": "study-inputs/harbor-kit/harbor_lantern.glb",
+        "sha256": "445f64442b9d381c0a58e562d34da8a71b8b5458055a2d40bc40eaf5823a01ef",
+        "matches_manifest": true
+      }
+    ],
+    "water_material_ids": [
+      -9223371557261267452
+    ],
+    "stage_exit_codes": [
+      {
+        "night-views": 0
+      },
+      {
+        "day-views": 0
+      }
+    ]
+  },
+  "full_reference_accepted": false,
+  "all_reference_goal_complete": false
+}

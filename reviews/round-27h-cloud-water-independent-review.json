@@ -1,0 +1,24 @@
+{
+  "round": "27h",
+  "reviewer": "independent_cloud_water_27_final_review",
+  "run_id": "coast-moon-readiness-27h-20260908T153333Z-8b7579b40e2d437a8b1142c3bfdb7403",
+  "reference_directly_viewed": "ref/1342.png",
+  "evidence_read": ["images/night-reference.png.json", "images/night-reference-later.png.json", "reviews/round-27f-moon-missing-input-diagnostic.json", "reviews/round-27h-saved-moon-pixels.json", "reviews/round-27h-moon-observation-correction.json", "reviews/round-27h-independent-moon-decode.json"],
+  "views": [
+    {"name": "night-reference", "directly_viewed": true, "decoded_moon_crop_directly_viewed": true, "moon_visible_in_saved_png": true, "png_sha256": "e287a25ab46c79b50446437e3fa655684e7b5d97e74f6ac4e2ed718562f5ee7f", "sidecar_pixel_ready": true, "sidecar_bright_samples": 25, "sidecar_attempt": 0},
+    {"name": "night-reference-later", "directly_viewed": true, "decoded_moon_crop_directly_viewed": true, "moon_visible_in_saved_png": true, "png_sha256": "78bf5000fc506b3a35849e039ff16a5425b42add368bdd7dae5e4eb7109b86b1", "sidecar_pixel_ready": true, "sidecar_bright_samples": 25, "sidecar_attempt": 0}
+  ],
+  "pixel_readiness_vs_saved_png_conflict": false,
+  "missing_moon_claim_withdrawn": true,
+  "correction_history": [{"date": "2026-09-08", "withdrawn_claims": ["Moon absent from both 27h saved PNGs", "Readiness diagnostic conflicts with saved PNG", "Longer waiting established moon recovery"], "reason": "Reviewer visual observation error contradicted by independent original-PNG decode and directly viewed moon crops. Do not attribute this error to engine or UI.", "independent_scope": "27e/27h t0/t18 four PNG moon regions", "rectangle": [1080, 120, 1170, 212], "all_independently_decoded_regions_identical": true, "moon_region_rgb_sha256": "a641b1483067ab29f855f3b7773b09e71386c6ae590d97184d220488df1676d6", "center_rgb": [172, 188, 227], "bright_pixels_above_128_all_channels": 3036, "evidence": "reviews/round-27h-independent-moon-decode.json"}],
+  "local_improvements": ["Night water highlights are finer and more horizontal than 27e"],
+  "visual_blockers": ["Dense regular reflection stripes and bright clumps remain", "Cloud layering remains below reference quality"],
+  "t0_t18_water_pattern_visibly_different": true,
+  "smooth_animation_proven": false,
+  "independent_pixel_recomputation": true,
+  "visual_acceptance": false,
+  "verdict": "reject",
+  "production_installed": false,
+  "full_goal_status": "active",
+  "scope": "Environment only; characters excluded. Review of actual saved PNGs and supplied diagnostics, no engine launch or geometry revalidation."
+}

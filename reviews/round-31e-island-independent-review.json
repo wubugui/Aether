@@ -1,0 +1,316 @@
+{
+  "round": "31e",
+  "run_id": "lantern-island-31e-20260908T203322Z-c8a7a40b1ae5442c8aeba5858633afbd",
+  "visual_verdict": "retain_actual_native_slope_reform_direction_continue_midlevel_lateral_spread_and_root_turn",
+  "candidate_retained_for_iteration": true,
+  "visual_complete": false,
+  "full_reference_accepted": false,
+  "all_reference_goal_complete": false,
+  "reference": {
+    "path": "ref\\1342.png",
+    "sha256": "7acc98104013d9122eb551846b2d7fc1f7549bce8b2e3199eae8f5385a3ea238",
+    "directly_viewed_in_current_continuing_review": true
+  },
+  "comparison_images": [
+    {
+      "path": "captures\\validation_runs\\lantern-island-31d-20260908T201625Z-7575af2955e449b1a68d49f13e66c31a\\images\\day-d-back.png",
+      "sha256": "c563177c1e5442fa9108b1ccc6c1bc18ed759c1c40d8ff61f1d8e7894161aa74"
+    },
+    {
+      "path": "captures\\validation_runs\\lantern-island-31d-20260908T201625Z-7575af2955e449b1a68d49f13e66c31a\\images\\day-c-front.png",
+      "sha256": "fe17d27fd740903dcf4f0247df3533ee342d92c2d1d0765cf2e4256baa71bd34"
+    }
+  ],
+  "comparisons_directly_viewed_in_current_continuing_review": true,
+  "images": [
+    {
+      "view": "night-reference",
+      "path": "captures\\validation_runs\\lantern-island-31e-20260908T203322Z-c8a7a40b1ae5442c8aeba5858633afbd\\images\\night-reference.png",
+      "sha256": "4b029fed7fc110da9be0a16dcbe320d6cf46e921c2023863a32c8e0494ef0997",
+      "directly_viewed": true,
+      "judgment": "原生建筑比例、右侧守塔屋和较低树组维持。背部局部变形无法靠固定夜间全景充分辨认；参考1342中央岛的短宽错位岩根关系仍未完整实现。"
+    },
+    {
+      "view": "day-reference",
+      "path": "captures\\validation_runs\\lantern-island-31e-20260908T203322Z-c8a7a40b1ae5442c8aeba5858633afbd\\images\\day-reference.png",
+      "sha256": "a6c22df709c4eefda10b40ce57023decc4dcfe457a096cedd84243a400927b74",
+      "directly_viewed": true,
+      "judgment": "全景岛体比例未退回高圆台，前沿和背部灰面的小变化存在，但全景不能替代近图造型审查。"
+    },
+    {
+      "view": "day-d-front",
+      "path": "captures\\validation_runs\\lantern-island-31e-20260908T203322Z-c8a7a40b1ae5442c8aeba5858633afbd\\images\\day-d-front.png",
+      "sha256": "1b1fc9cb7101d6632e7c5df8fdf6aa58e435597b0f64332f0251a56a01e17587",
+      "directly_viewed": true,
+      "judgment": "前两凸肩保持31c/d的独立凸石感，后方大灰坡和局部直暗缝仍在。本轮背部原壳剪切没有解决前面层次，不能提升这一面的验收状态。"
+    },
+    {
+      "view": "day-d-back",
+      "path": "captures\\validation_runs\\lantern-island-31e-20260908T203322Z-c8a7a40b1ae5442c8aeba5858633afbd\\images\\day-d-back.png",
+      "sha256": "f2c150f8044f1474c96cd4d2026b13363510f6ee60ab9a8a069e23397d7aa4d3",
+      "directly_viewed": true,
+      "judgment": "相对31d可见真实改善：画面上右的原长陡壁有了中段斜折，后部连接体下半与邻坡接点出现偏转，原坡和后体确实一起变形。该方向可以保留。但中央仍是纵向偏窄的条状亮面，侧缝/海侧直口仍明显，上台灰坡的整体量感未解；不是参考中的短宽承重岩根组织。"
+    },
+    {
+      "view": "day-c-front",
+      "path": "captures\\validation_runs\\lantern-island-31e-20260908T203322Z-c8a7a40b1ae5442c8aeba5858633afbd\\images\\day-c-front.png",
+      "sha256": "d0c5533af5c28ef94d07b844acd1cd7f5ef25da9a7958da49b8b5c026c8bfa43",
+      "directly_viewed": true,
+      "judgment": "两原前肩及与大斜面的接续近似上一稿：较短却仍像独立石块，上台大灰坡继续存在。本轮没有以更多前部窄楔制造新问题，但也没有完成前部。"
+    }
+  ],
+  "retained_changes": [
+    "Original upper-right rear slope has a new mid-height oblique break.",
+    "Lower historical rear union and adjacent original-slope join visibly turn together."
+  ],
+  "remaining": [
+    "central longitudinal narrow-strip reading",
+    "side seam and straight seaward mouth",
+    "upper broad grey mass",
+    "front isolated convex boulders"
+  ],
+  "next_actions": [
+    "保留31e原坡与历史后体联动改形的方向，继续处理主壳本身，不回到只新增/扩大一个凸包。",
+    "中层需要更明确的横向宽面和钝折端部；使该宽面进入两侧原坡，接缝在局部肩宽内结束或错位，不继续从塔脚贯向海口。两侧高低、前后位置应错开，避免整齐水平台阶。",
+    "低根要有明确偏转与宽接续，不能只是中间窄条弯一下。当前<=0.2m固定是本轮自定边界，旧直槽海口因此未参与改形；若下一稿需要改变海口方向，可允许这个局部水线/根部边界一起重塑后核验，不将其扩成全岛岸线改动。",
+    "高处大灰面仍需有针对性的面组织。旧点997本版只移动0.000140m，941也只移动0.209060m；这些不等于上台灰面显著改善。保护真实pad支承范围，允许保护外面内控制点产生明确的高低/走向变化。",
+    "前部两孤立凸石仍作为独立剩余项。后续同时安排凸肩后缘与主坡的宽面关系，不用更多小块遮挡。"
+  ],
+  "geometry_evidence": {
+    "report": "reviews/round-31e-independent-geometry.json",
+    "passed": true,
+    "main_triangles": 2342,
+    "moved_records": 110,
+    "original31d_points_moved": 46,
+    "new_bisect_points_moved": 64,
+    "changed_triangle_minimum_normal_cosine": 0.8080636251223551,
+    "changed_triangle_normal_reversals": 0,
+    "local_intersections_report": "reviews/round-31e-local-intersections.json",
+    "changed_or_retriangulated_triangles": 286,
+    "AABB_candidate_pairs_tested": 2711,
+    "unallowed_intersections_found_at_stated_tolerance": 0,
+    "scope": "Finite actual GLB triangle checks; unchanged/unchanged pairs excluded, legal shared-feature band0.1mm. Not analytic continuum proof."
+  },
+  "actual_anchor_evidence": {
+    "scope": "Named original31d source vertices matched by actualXYZ to recorded movement, each after position verified in real31eGLB; does not count newly bisected vertices as old source vertices.",
+    "anchors": [
+      {
+        "actual31d_vertex_index": 409,
+        "role": "old slope lower join",
+        "actual_before_xyz": [
+          -4.312224388122559,
+          4.1582159996032715,
+          5.014765739440918
+        ],
+        "actual_after_xyz": [
+          -4.970585823059082,
+          6.294712066650391,
+          5.014765739440918
+        ],
+        "actual_delta_xyz": [
+          -0.6583614349365234,
+          2.136496067047119,
+          0.0
+        ],
+        "actual_displacement_m": 2.2356330699646323,
+        "after_point_in_real31eGLB_distance_m": 0.0,
+        "matched_moved_record": true
+      },
+      {
+        "actual31d_vertex_index": 938,
+        "role": "old slope upper flank",
+        "actual_before_xyz": [
+          -1.6782678365707397,
+          9.427621841430664,
+          5.736452102661133
+        ],
+        "actual_after_xyz": [
+          -2.5793569087982178,
+          9.513537406921387,
+          5.736452102661133
+        ],
+        "actual_delta_xyz": [
+          -0.901089072227478,
+          0.08591556549072266,
+          0.0
+        ],
+        "actual_displacement_m": 0.9051756738232462,
+        "after_point_in_real31eGLB_distance_m": 0.0,
+        "matched_moved_record": true
+      },
+      {
+        "actual31d_vertex_index": 941,
+        "role": "old slope rear flank",
+        "actual_before_xyz": [
+          0.0,
+          12.57016372680664,
+          6.754788398742676
+        ],
+        "actual_after_xyz": [
+          -0.2090596854686737,
+          12.57016372680664,
+          6.754788398742676
+        ],
+        "actual_delta_xyz": [
+          -0.2090596854686737,
+          0.0,
+          0.0
+        ],
+        "actual_displacement_m": 0.2090596854686737,
+        "after_point_in_real31eGLB_distance_m": 0.0,
+        "matched_moved_record": true
+      },
+      {
+        "actual31d_vertex_index": 997,
+        "role": "old slope high flank",
+        "actual_before_xyz": [
+          1.8143999576568604,
+          9.427621841430664,
+          9.673336029052734
+        ],
+        "actual_after_xyz": [
+          1.8143999576568604,
+          9.427762031555176,
+          9.673336029052734
+        ],
+        "actual_delta_xyz": [
+          0.0,
+          0.00014019012451171875,
+          0.0
+        ],
+        "actual_displacement_m": 0.00014019012451171875,
+        "after_point_in_real31eGLB_distance_m": 0.0,
+        "matched_moved_record": true
+      },
+      {
+        "actual31d_vertex_index": 411,
+        "role": "historical rear union shoulder",
+        "actual_before_xyz": [
+          -6.5,
+          6.900000095367432,
+          5.900000095367432
+        ],
+        "actual_after_xyz": [
+          -7.186107635498047,
+          8.207809448242188,
+          5.900000095367432
+        ],
+        "actual_delta_xyz": [
+          -0.6861076354980469,
+          1.3078093528747559,
+          0.0
+        ],
+        "actual_displacement_m": 1.4768578099991239,
+        "after_point_in_real31eGLB_distance_m": 0.0,
+        "matched_moved_record": true
+      },
+      {
+        "actual31d_vertex_index": 428,
+        "role": "historical rear union high join",
+        "actual_before_xyz": [
+          -5.099999904632568,
+          5.300000190734863,
+          7.400000095367432
+        ],
+        "actual_after_xyz": [
+          -5.220232009887695,
+          6.8632965087890625,
+          7.400000095367432
+        ],
+        "actual_delta_xyz": [
+          -0.12023210525512695,
+          1.5632963180541992,
+          0.0
+        ],
+        "actual_displacement_m": 1.5679129877566216,
+        "after_point_in_real31eGLB_distance_m": 0.0,
+        "matched_moved_record": true
+      },
+      {
+        "actual31d_vertex_index": 419,
+        "role": "historical rear union mid join",
+        "actual_before_xyz": [
+          -4.5,
+          9.699999809265137,
+          5.300000190734863
+        ],
+        "actual_after_xyz": [
+          -5.80293083190918,
+          9.77407169342041,
+          5.300000190734863
+        ],
+        "actual_delta_xyz": [
+          -1.3029308319091797,
+          0.07407188415527344,
+          0.0
+        ],
+        "actual_displacement_m": 1.3050346343150665,
+        "after_point_in_real31eGLB_distance_m": 0.0,
+        "matched_moved_record": true
+      },
+      {
+        "actual31d_vertex_index": 435,
+        "role": "tree support associated high anchor",
+        "actual_before_xyz": [
+          -6.588288307189941,
+          2.6749439239501953,
+          11.694412231445312
+        ],
+        "actual_after_xyz": [
+          -6.588288307189941,
+          2.6749439239501953,
+          11.694412231445312
+        ],
+        "actual_delta_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actual_displacement_m": 0.0,
+        "after_point_in_real31eGLB_distance_m": 0.0,
+        "matched_moved_record": false
+      },
+      {
+        "actual31d_vertex_index": 408,
+        "role": "tree support associated outside anchor",
+        "actual_before_xyz": [
+          -16.329599380493164,
+          3.14254093170166,
+          8.953702926635742
+        ],
+        "actual_after_xyz": [
+          -16.329599380493164,
+          3.14254093170166,
+          8.953702926635742
+        ],
+        "actual_delta_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actual_displacement_m": 0.0,
+        "after_point_in_real31eGLB_distance_m": 0.0,
+        "matched_moved_record": false
+      }
+    ],
+    "total_moved_records": 110,
+    "moved_records_matching_original31d_vertices": 46,
+    "moved_new_bisect_vertices": 64,
+    "pass": true
+  },
+  "root_runtime_report_read": {
+    "path": "reviews/round-31e-runtime-incremental.json",
+    "passed": true,
+    "binding_count": 200,
+    "placements_each_view": 59,
+    "maximum_position_delta_m": 0.00013732910155983546,
+    "maximum_footing_delta_m": 3.0517578125e-05
+  },
+  "limits": [
+    "No support/intersection/GPU/Blender rerun during visual review.",
+    "Historical3convex operands are not the final31e union/exterior model.",
+    "Movement count and intersection-free result are not art quality scores.",
+    "Waterline and whole-height-band freezing are current authoring decisions, not permanent user hard constraints.",
+    "No whole-world/reference completion or full walking claim."
+  ]
+}

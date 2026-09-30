@@ -1,0 +1,97 @@
+{
+  "round": "30d",
+  "run_id": "lantern-island-30d-20260908T183203Z-dfad421d9cb14734824e8942e33ac04c",
+  "visual_verdict": "retain_bounded_shoulder_exposure_retarget_visible_front_slope_by_actual_ray_hits",
+  "full_reference_accepted": false,
+  "all_reference_goal_complete": false,
+  "images": [
+    {
+      "view": "night-reference",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-30d-20260908T183203Z-dfad421d9cb14734824e8942e33ac04c\\images\\night-reference.png",
+      "sha256": "58af7325d7f2799e2415e3cac7ec5fb50f029923905741f747b342c4a324ea97",
+      "judgment": "Central D now shows several additional lower rock turns and recessed breaks; original 30a building proportions and house-right layout are retained. The island remains a rather broad regular upper mound compared with 1342. Local improvement only."
+    },
+    {
+      "view": "day-reference",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-30d-20260908T183203Z-dfad421d9cb14734824e8942e33ac04c\\images\\day-reference.png",
+      "sha256": "9b5842aa36869f3a13c3bfefeb402af9c585bef270f018f2a8adfb091978f0d3",
+      "judgment": "The fixed reference view makes the newly cut recesses more legible around the central island, with lower shoulders appearing as part of the coast. Still sparse, broad main planes and a simple upper mound; not a complete reference match."
+    },
+    {
+      "view": "day-d-front",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-30d-20260908T183203Z-dfad421d9cb14734824e8942e33ac04c\\images\\day-d-front.png",
+      "sha256": "05188e17937edf2e33d62ff94851d71c883b6e30c2622a075617336887f3a51c",
+      "judgment": "The central/front grey slope is largely retained. Differences concentrate near the left peripheral edge and other partly hidden sides. The foreground low crags remain unchanged. Do not infer that the large middle slope was cut merely because three rocks gained exposure."
+    },
+    {
+      "view": "day-d-back",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-30d-20260908T183203Z-dfad421d9cb14734824e8942e33ac04c\\images\\day-d-back.png",
+      "sha256": "ee6746f695a94f5022c06d116c625191731a478a4580cc69b771f1a38e22453e",
+      "judgment": "Clearer local change: left and right rear areas now contain additional recessed breaks and shorter ledges. The new cuts expose underlying shoulder surfaces, but several cut edges remain straight and pocket-like, and two broad grey lobes still dominate. No obvious new open mesh seam is visible in this image."
+    },
+    {
+      "view": "day-c-front",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-30d-20260908T183203Z-dfad421d9cb14734824e8942e33ac04c\\images\\day-c-front.png",
+      "sha256": "2c531dcb85d56faf431fb6b6df70d410d9ca66aff2dc4d85bb71ff60a248da76",
+      "judgment": "The most conspicuous middle/front grey slope remains almost unchanged from30c, roughly across x650-950,y495-605 in the original1672x941 image. Some change is visible at the far-left perimeter, but there is no substantial new division across the middle slope. Camera is from Blender local(+X,-Y), so this is an east/southeast-facing view; screen center cannot be assigned to West/Southwest/North by object names."
+    }
+  ],
+  "compared_to": [
+    "30c same-camera original GPU views",
+    "ref/1342.png"
+  ],
+  "geometry_evidence": "reviews/round-30d-independent-geometry.json",
+  "cutback_intake_evidence": "reviews/round-30d-cutback-intake.json",
+  "day_c_front_orientation": {
+    "actual_sidecar": "captures\\validation_runs\\lantern-island-30d-20260908T183203Z-dfad421d9cb14734824e8942e33ac04c\\images\\day-c-front.png.json",
+    "sidecar_sha256": "2c89373fbff8882b263e493ef8916fcae70b2552a99dfa32e120912f2e58076c",
+    "actual_godot_camera_world": [
+      -2985.0,
+      40.0,
+      -2580.0
+    ],
+    "derived_blender_local_camera": [
+      65.0,
+      -70.0,
+      40.0
+    ],
+    "interpretation": "+X/-Y camera position: east/southeast side. Broad direction only; individual visible pixels need actual ray/triangle hits.",
+    "reviewer_did_not_run_pixel_rays": true
+  },
+  "local_success": [
+    "Three existing shoulders gain measured real water-above upward surface exposure without moving17rocks.",
+    "Reference and rear images reveal additional short recessed breaks.",
+    "30c thin collar stays absent."
+  ],
+  "remaining": [
+    "The central large grey slope in day-c-front and day-d-front remains essentially unchanged.",
+    "Direction of retained broad slope differs from the three named cutback regions; further west cuts are not justified from those front images.",
+    "Rear cuts include straight/pocket-like edges and broad lobes remain; exposure count is not art acceptance."
+  ],
+  "next_actions": [
+    "Use exact current camera rays at the conspicuous front-slope pixels to identify actual native main-shell triangles, then inspect those local faces against road/pad/tree support. Root is performing this localization.",
+    "Target the confirmed visible region with a short staggered slope break or restrained face reshaping; do not expand West/Southwest/North cuts purely because front grey mass remains.",
+    "Keep17rock transforms and native building scale unless a localized finding justifies a specific change; avoid uniform outward displacement.",
+    "Evaluate the next candidate in both fixed reference and front/back views, so improving an occluded region is not mistaken for fixing the visible one."
+  ],
+  "runtime_evidence_attribution": {
+    "owner": "root",
+    "path": "reviews\\round-30d-runtime-incremental.json",
+    "sha256": "f1001231d512754c172d8e00f3720949aa6500c2d92bc14122574e433df23209",
+    "matching_bindings": 196,
+    "placements_per_view": 59,
+    "maximum_position_delta_from_30a_m": 0.00027465820311967093,
+    "maximum_footing_delta_m": 0.0,
+    "independently_rerun_here": false
+  },
+  "limits": [
+    "Geometric exposure is measured in local upward surface/projection space, not screen-visible contribution.",
+    "The image rectangle is a hand-selected visual locator, not segmentation or exact source triangle assignment.",
+    "No reviewer Blender/GPU launch, no new full scene coverage or flight test."
+  ]
+}

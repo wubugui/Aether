@@ -1,0 +1,150 @@
+{
+  "round": "31i",
+  "run_id": "lantern-island-31i-20260908T214100Z-02d75d5cf747426d88e00816dda55bd0",
+  "visual_verdict": "retain_actual_shared_edge_shelf_width_but_reject_large_cap_and_abrupt_front_cut_reading",
+  "candidate_retained_for_iteration": true,
+  "visual_complete": false,
+  "full_reference_accepted": false,
+  "all_reference_goal_complete": false,
+  "reference": {
+    "path": "ref\\1342.png",
+    "sha256": "7acc98104013d9122eb551846b2d7fc1f7549bce8b2e3199eae8f5385a3ea238",
+    "directly_viewed_in_continuing_review": true
+  },
+  "comparison_images": [
+    {
+      "path": "captures\\validation_runs\\lantern-island-31h-20260908T212800Z-78b153beccc94a60ba27ba0e79a1cfaa\\images\\day-d-back.png",
+      "sha256": "0f2314f2cabb79ef440330f41e04e38033ea3fc9970acaf4a95b251ed2432930",
+      "directly_viewed_in_continuing_review": true
+    }
+  ],
+  "images": [
+    {
+      "view": "night-reference",
+      "path": "captures\\validation_runs\\lantern-island-31i-20260908T214100Z-02d75d5cf747426d88e00816dda55bd0\\images\\night-reference.png",
+      "sha256": "1e2d1c4ba73410db9406c5ea7cd6dec9e2a09bfd9f5baaf6d23a196383e15189",
+      "directly_viewed": true,
+      "judgment": "中央岛比例与右侧守塔屋保持，背部新折口在全景左侧可见些许较深暗面，但夜图不足以接受中层岩肩。"
+    },
+    {
+      "view": "day-reference",
+      "path": "captures\\validation_runs\\lantern-island-31i-20260908T214100Z-02d75d5cf747426d88e00816dda55bd0\\images\\day-reference.png",
+      "sha256": "d3de6bdad755dc97318bce831671febeffd59315d297660eeedaf4781eb715cd",
+      "directly_viewed": true,
+      "judgment": "中央岛左侧的新暗折口比31h可辨认；这是本版真实改形的可见变化。但全景仍以大灰坡为主，整体尚未呈现参考1342中自然的短宽错位岩根。"
+    },
+    {
+      "view": "day-d-front",
+      "path": "captures\\validation_runs\\lantern-island-31i-20260908T214100Z-02d75d5cf747426d88e00816dda55bd0\\images\\day-d-front.png",
+      "sha256": "0d0f6c84bbdf46e16793299e648b703e99b4bd9dba41c7a0f1029c448a09f294",
+      "directly_viewed": true,
+      "judgment": "主要正面两孤立凸石、大灰坡与局部暗缝保持，背部两肩带改动没有解决这一面。"
+    },
+    {
+      "view": "day-d-back",
+      "path": "captures\\validation_runs\\lantern-island-31i-20260908T214100Z-02d75d5cf747426d88e00816dda55bd0\\images\\day-d-back.png",
+      "sha256": "73f417a02e6aa3d527925f2f53377eab536f613d74352be6431f27a73278d7b8",
+      "directly_viewed": true,
+      "judgment": "相对31h出现真实肩前断面与新的明暗转折，靠海一处大暗三角口很明显，低根也有实际偏转；旧贯穿塔脚的窄条长缝没有回来。但上方大片灰坡仍近似一张罩面，新增肩更像其边缘被折出一个突檐/直切口，未形成自然短厚块肩。低处几块旧岩仍显独立，不能称低根分离已解决。尖三角草碎片已不见，没有30h密折扇。"
+    },
+    {
+      "view": "day-c-front",
+      "path": "captures\\validation_runs\\lantern-island-31i-20260908T214100Z-02d75d5cf747426d88e00816dda55bd0\\images\\day-c-front.png",
+      "sha256": "7edbeb75382f731f0369cd75162b8cef98f054510afd534ca36e66e720e39fc6",
+      "directly_viewed": true,
+      "judgment": "前面依然是两块相对独立的凸石及其后方大斜板；本次肩带不改变正面验收结论。"
+    }
+  ],
+  "retained_changes": [
+    "Actual finite-width shoulder caps and visible front breaks.",
+    "Old tower-to-sea narrow strip and cleft remain removed.",
+    "Triangular green patches removed."
+  ],
+  "remaining": [
+    "large upper grey cap",
+    "abrupt dark front cut or eave-like reading",
+    "low-root visual separation from several old rocks",
+    "unchanged isolated front shoulders"
+  ],
+  "next_actions": [
+    "保留本版共享边切分形成实际有限肩宽的做法和旧窄条去除；几何成立不能替代形体接受。",
+    "西肩1108/1104到新增1112/1113的实际顶面约24.83m²，两三角法线仅差1.136°。下一步要缩短其连续同坡向读法：将肩后接续与前缘一端错高、错向，形成一段更短的斜顶和侧断面；避免四点同步抬高推出整块板，也不只推一个点生成尖峰。",
+    "东肩前缘1114/1115的实际折角93.978°，明显比西肩28.104°更急。应对这个局部断面检查伸出量和下方承接：可以让前缘较低/更内收或下侧根部适度向外承接，使坡前是短厚斜断面，避免暗口像直立切墙或檐下洞。这里不是按角度阈值评分，仍以实际图为准。",
+    "低根1106/1107/1111虽已改动，图上几块原岩仍分离。需把肩前断面与一处钝根作为同一小区域组织；先确认希望连接的实际旧岩和可见方向，再调整主壳局部端部，不统一外移17岩、不用截面交叠面积声称视觉融合。",
+    "前部两孤立凸石与其后上台灰坡仍是独立待改项。不得因为背部出现新暗面就将正面或全部参考标记完成。"
+  ],
+  "actual_band_measurements": [
+    {
+      "band": "west short tilted shelf",
+      "front_edge_vertices": [
+        1112,
+        1113
+      ],
+      "back_edge_vertices": [
+        1108,
+        1104
+      ],
+      "front_edge_length3d_m": 5.787918451395113,
+      "back_edge_length3d_m": 7.596051568268594,
+      "front_to_back_minimum_XY_segment_distance_m": 3.6303857245960467,
+      "cap_surface_area_m2": 24.83394359731194,
+      "cap_internal_dihedral_angle_deg": 1.135909524949623,
+      "front_crease_normal_angle_deg": 28.103655815310848
+    },
+    {
+      "band": "east lower turned shelf",
+      "front_edge_vertices": [
+        1114,
+        1115
+      ],
+      "back_edge_vertices": [
+        1109,
+        1105
+      ],
+      "front_edge_length3d_m": 3.5999997721778043,
+      "back_edge_length3d_m": 4.134005024128585,
+      "front_to_back_minimum_XY_segment_distance_m": 2.2803508815643476,
+      "cap_surface_area_m2": 9.927847424187792,
+      "cap_internal_dihedral_angle_deg": 0.09634131847188962,
+      "front_crease_normal_angle_deg": 93.97809867573632
+    }
+  ],
+  "geometry": {
+    "report": {
+      "path": "reviews\\round-31i-independent-geometry.json",
+      "sha256": "cefe367f5cc4a8a3d365acf99e75bd377eb986c5ce031c006b2b243e85855afa"
+    },
+    "passed": true,
+    "actual_main_triangles": 2228,
+    "actual_vertices": 1116,
+    "moved_source_controls": 5,
+    "new_shared_edge_points": 4,
+    "actual_changed_or_retriangulated_triangles": 60,
+    "local_AABB_pairs": 1053,
+    "illegal_intersections_found_at_stated_tolerance": 0,
+    "actual14_trunk_footprints_supported": true,
+    "shared_edge_report": {
+      "path": "reviews\\round-31i-shoulder-band-check.json",
+      "sha256": "d8cbf5c5fd4669f1e3a8140fbc8fc566b30132ab4f592ccf0213ac1a8aee5ff2"
+    }
+  },
+  "root_runtime_report_read": {
+    "report": {
+      "path": "reviews\\round-31i-runtime-incremental.json",
+      "sha256": "aa1ce6a83ea00950cfbfb2a3c0e76520c27e6c3526376bfa29e2180c3a43790f"
+    },
+    "passed": true,
+    "bindings": 201,
+    "positions_each_view": 59,
+    "maximum_position_delta_m": 7.629394530983546e-05,
+    "maximum_footing_delta_m": 3.0517578125e-05
+  },
+  "limits": [
+    "Five31i originals directly viewed; no geometry/Blender/GPU rerun during visual review.",
+    "Band normal-angle measurements identify actual geometry, not universal art thresholds.",
+    "The visible dark opening has not been independently pixel-ray-mapped to a particular band; do not infer screen left/right from native west/east names.",
+    "Low-rock visual separation is not a new whole-contact or floating claim.",
+    "Shared source edge1108–1106 survives legally as a BEAUTY neighbor-quad diagonal; actual split segments each have2incident faces, not a T-junction.",
+    "Full20reference and fullwalking goals remain unaccepted."
+  ]
+}

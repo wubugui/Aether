@@ -1,0 +1,13 @@
+# Round 28f independent five-view review
+
+Verdict: retain the local interval and density-profile improvement; reference1342 appearance remains rejected.
+
+Independently opened all five original28f GPU outputs: night reference, beam side, lamp close, reverse and day reference. The actual run is terminal passed. The adjacent JSON records individual PNG/sidecar hashes, camera positions, world identity and four night beam instances versus zero day instances.28e evidence JSON was already completed after its terminal pass. No GPU/Blender run or implementation edit was performed by this reviewer.
+
+Compared with28e, the large far-end orange pools and horizon bands are substantially reduced. The foreground beam emerges more continuously from its lighthouse, and side views retain several fixed world directions. The retained warm central optical stack remains readable in the close image. The opaque roof/frame stays visibly in front of the distant haze. Day reference has no new volume field. These are useful local changes, with limited positive evidence for real spatial rendering and camera-depth clipping.
+
+The reference beam is still too faint. In original1342 the brightest foreground lantern anchors a readable pale warm wedge across the blue sea. In28f the lamp remains modest and the narrow near-source beam is easily lost against the water and island background. The source balance and intensity need controlled further adjustment without restoring28e's detached orange patches. The broad cloud undersides, regular tiered island slopes, thin water sparkle and sparse shore settlements remain larger whole-image gaps. No full reference or world acceptance follows from this optical repair.
+
+The proposed28g native receiver-light test is reasonable but its result is not yet known. The19h source places the opaque luminous core at23.2 m before a3.6 m upper-shaft compression, giving19.6 m with radius.30 m and height1.38 m; this encloses the adapter's native light origin. Enclosure alone does not prove how the renderer's shadow pass affects nearby receivers. A controlled actual GPU comparison can resolve that. Crucially, the unshaded volume uses its own color/energy and a separate collision depth map that excludes the entire own lighthouse. Turning off the core's shadow casting does not directly brighten that beam integral; receiver illumination and volume visibility should be assessed separately.
+
+The earlier12,030-ray CPU interval comparison supports the rebased numerical method but is not a GPU compiler emulator or visual acceptance. Continuous flight, inside-volume observation, moving/weather lighting, thin-object shadow boundaries and warm water reflections remain unproven in this bounded review.

@@ -1,0 +1,120 @@
+{
+  "scope": "Independent five actual GPU image review; no GPU rerun or production edits",
+  "run": "E:\\FeiTing\\captures\\validation_runs\\lantern-islands-20k-20260908T100303Z-f0acc3aa5ea3410b82358e15dcd9b4e3",
+  "status": "passed",
+  "artifact_count": 48,
+  "artifact_mismatches": [],
+  "stages_passed_exit0_same_inputs": true,
+  "geometry_audit_bound": {
+    "island_a": true,
+    "island_b": true,
+    "island_c": true
+  },
+  "native_gate": {
+    "passed": true,
+    "parts": 374,
+    "source_hashes_match": true
+  },
+  "site_checks": [
+    {
+      "original_collider": "/root/Skyfarer/World/Ocean/SeaCollision",
+      "position": [
+        -2340.0,
+        0.0,
+        -1810.0
+      ],
+      "scope": "Original center sea surface before candidate assembly; proposed geography, not original-map reconstruction proof.",
+      "site": "island_d"
+    }
+  ],
+  "footing": [
+    {
+      "building": "Lighthouse_island_a",
+      "samples": 9,
+      "gap_range_m": [
+        -0.5,
+        -0.030670166015625
+      ]
+    },
+    {
+      "building": "Lighthouse_island_b",
+      "samples": 9,
+      "gap_range_m": [
+        -0.605270385742188,
+        -0.436203002929688
+      ]
+    },
+    {
+      "building": "Lighthouse_island_c",
+      "samples": 9,
+      "gap_range_m": [
+        -0.500823974609375,
+        -0.433273315429688
+      ]
+    },
+    {
+      "building": "Lighthouse_island_d",
+      "samples": 9,
+      "gap_range_m": [
+        -0.500869750976563,
+        -0.43328857421875
+      ]
+    },
+    {
+      "building": "keeper_house_21",
+      "samples": 9,
+      "gap_range_m": [
+        -0.463224411010742,
+        -0.401090621948242
+      ]
+    },
+    {
+      "building": "keeper_house_22",
+      "samples": 9,
+      "gap_range_m": [
+        -0.692007064819336,
+        -0.577245712280273
+      ]
+    },
+    {
+      "building": "keeper_house_23",
+      "samples": 9,
+      "gap_range_m": [
+        -0.624383926391602,
+        -0.552408218383789
+      ]
+    },
+    {
+      "building": "keeper_house_24",
+      "samples": 9,
+      "gap_range_m": [
+        -0.825740814208984,
+        -0.436412811279297
+      ]
+    },
+    {
+      "building": "keeper_house_25",
+      "samples": 9,
+      "gap_range_m": [
+        -0.463224411010742,
+        -0.401090621948242
+      ]
+    }
+  ],
+  "same_footing_all_views": true,
+  "images_actually_viewed": [
+    "E:\\FeiTing\\captures\\validation_runs\\lantern-islands-20k-20260908T100303Z-f0acc3aa5ea3410b82358e15dcd9b4e3\\images\\paths.png",
+    "E:\\FeiTing\\captures\\validation_runs\\lantern-islands-20k-20260908T100303Z-f0acc3aa5ea3410b82358e15dcd9b4e3\\images\\b-site.png",
+    "E:\\FeiTing\\captures\\validation_runs\\lantern-islands-20k-20260908T100303Z-f0acc3aa5ea3410b82358e15dcd9b4e3\\images\\c-site.png",
+    "E:\\FeiTing\\captures\\validation_runs\\lantern-islands-20k-20260908T100303Z-f0acc3aa5ea3410b82358e15dcd9b4e3\\images\\d-site.png",
+    "E:\\FeiTing\\captures\\validation_runs\\lantern-islands-20k-20260908T100303Z-f0acc3aa5ea3410b82358e15dcd9b4e3\\images\\reference-coast-near.png"
+  ],
+  "world_sha256": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+  "lighthouse_sha256": "79b5fd32ec06a3c3cf0fc948e31333c9d374fb018437f2fa630293e266382eb1",
+  "production_modified_reported": false,
+  "decision": {
+    "local": "C route continuity and darker path retained; near-reference camera and D midground trial useful",
+    "whole_coast": "rework; continuous shelf bands, broad grass caps, roadbed cut faces remain",
+    "all20references_complete": false
+  }
+}

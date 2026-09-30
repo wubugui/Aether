@@ -1,0 +1,527 @@
+{
+  "round": "31i",
+  "scope": "Actual native and GLB shelf-cap triangles, shared split vertices and finite band width. Distances are finite XY segment measurements; normal angles use actual final BEAUTY triangles.",
+  "files": {
+    "captures\\lantern_island_study_31i\\island_c.glb": "59f6797c28594b591333c29b32ffaebbc333ad459a6e9184003264f13239a267",
+    "captures\\lantern_island_study_31i\\geometry-evidence.json": "9dec05210c242d17a355d27c925eb42ca48fc63db4ec3954226010de8551064e",
+    "captures\\lantern_island_study_31i\\reform-plan.json": "e4beb3b9f9c569c3a85eda7489dc541c3d33c0139419fd4adc6ff9ed2f2621c3"
+  },
+  "bands": [
+    {
+      "band": "west short tilted shelf",
+      "old_source_face_vertices": [
+        1108,
+        1104,
+        1106
+      ],
+      "shared_split_segments": [
+        {
+          "old_source_edge": [
+            1108,
+            1106
+          ],
+          "new_unique_vertex": 1112,
+          "actual_xyz": [
+            -13.0,
+            13.5,
+            6.099999904632568
+          ],
+          "old_endpoint_edge_retained_as_diagonal": true,
+          "old_endpoint_edge_incident_faces": [
+            2136,
+            2222
+          ],
+          "two_shared_segments": [
+            {
+              "edge_vertices": [
+                1108,
+                1112
+              ],
+              "incident_faces": [
+                2142,
+                2222
+              ]
+            },
+            {
+              "edge_vertices": [
+                1112,
+                1106
+              ],
+              "incident_faces": [
+                2220,
+                2222
+              ]
+            }
+          ]
+        },
+        {
+          "old_source_edge": [
+            1104,
+            1106
+          ],
+          "new_unique_vertex": 1113,
+          "actual_xyz": [
+            -7.5,
+            12.5,
+            7.599999904632568
+          ],
+          "old_endpoint_edge_retained_as_diagonal": false,
+          "old_endpoint_edge_incident_faces": [],
+          "two_shared_segments": [
+            {
+              "edge_vertices": [
+                1104,
+                1113
+              ],
+              "incident_faces": [
+                2143,
+                2223
+              ]
+            },
+            {
+              "edge_vertices": [
+                1113,
+                1106
+              ],
+              "incident_faces": [
+                2220,
+                2224
+              ]
+            }
+          ]
+        }
+      ],
+      "back_edge_vertices": [
+        1108,
+        1104
+      ],
+      "back_edge_xyz": [
+        [
+          -14.0,
+          10.0,
+          6.199999809265137
+        ],
+        [
+          -6.800000190734863,
+          8.5,
+          8.100000381469727
+        ]
+      ],
+      "front_edge_vertices": [
+        1112,
+        1113
+      ],
+      "front_edge_xyz": [
+        [
+          -13.0,
+          13.5,
+          6.099999904632568
+        ],
+        [
+          -7.5,
+          12.5,
+          7.599999904632568
+        ]
+      ],
+      "front_edge_length3d_m": 5.787918451395113,
+      "back_edge_length3d_m": 7.596051568268594,
+      "front_to_back_minimum_XY_segment_distance_m": 3.6303857245960467,
+      "shoulder_cap_actual_triangles": [
+        {
+          "face": 2142,
+          "vertices": [
+            1108,
+            1113,
+            1112
+          ],
+          "xyz": [
+            [
+              -14.0,
+              10.0,
+              6.199999809265137
+            ],
+            [
+              -7.5,
+              12.5,
+              7.599999904632568
+            ],
+            [
+              -13.0,
+              13.5,
+              6.099999904632568
+            ]
+          ],
+          "area_m2": 10.497469919363299,
+          "normal": [
+            -0.24529720660918045,
+            0.0976425505967758,
+            0.9645181246315121
+          ],
+          "slope_from_horizontal_deg": 15.308529700189949
+        },
+        {
+          "face": 2223,
+          "vertices": [
+            1108,
+            1104,
+            1113
+          ],
+          "xyz": [
+            [
+              -14.0,
+              10.0,
+              6.199999809265137
+            ],
+            [
+              -6.800000190734863,
+              8.5,
+              8.100000381469727
+            ],
+            [
+              -7.5,
+              12.5,
+              7.599999904632568
+            ]
+          ],
+          "area_m2": 14.336473677948641,
+          "normal": [
+            -0.23890120148927607,
+            0.07916881622029247,
+            0.9678111977370679
+          ],
+          "slope_from_horizontal_deg": 14.576790990371999
+        }
+      ],
+      "cap_surface_area_m2": 24.83394359731194,
+      "cap_internal_dihedral_angle_deg": 1.135909524949623,
+      "front_edge_actual_incident_triangles": [
+        {
+          "face": 2142,
+          "vertices": [
+            1108,
+            1113,
+            1112
+          ],
+          "xyz": [
+            [
+              -14.0,
+              10.0,
+              6.199999809265137
+            ],
+            [
+              -7.5,
+              12.5,
+              7.599999904632568
+            ],
+            [
+              -13.0,
+              13.5,
+              6.099999904632568
+            ]
+          ],
+          "area_m2": 10.497469919363299,
+          "normal": [
+            -0.24529720660918045,
+            0.0976425505967758,
+            0.9645181246315121
+          ],
+          "slope_from_horizontal_deg": 15.308529700189949
+        },
+        {
+          "face": 2220,
+          "vertices": [
+            1112,
+            1113,
+            1106
+          ],
+          "xyz": [
+            [
+              -13.0,
+              13.5,
+              6.099999904632568
+            ],
+            [
+              -7.5,
+              12.5,
+              7.599999904632568
+            ],
+            [
+              -10.5,
+              18.0,
+              3.5
+            ]
+          ],
+          "area_m2": 16.47412730508316,
+          "normal": [
+            -0.12595508152006726,
+            0.5478286995484648,
+            0.8270544319392232
+          ],
+          "slope_from_horizontal_deg": 34.20266471895556
+        }
+      ],
+      "front_crease_normal_angle_deg": 28.103655815310848,
+      "finite_width_and_shared_faces_pass": true
+    },
+    {
+      "band": "east lower turned shelf",
+      "old_source_face_vertices": [
+        1109,
+        1107,
+        1105
+      ],
+      "shared_split_segments": [
+        {
+          "old_source_edge": [
+            1109,
+            1107
+          ],
+          "new_unique_vertex": 1114,
+          "actual_xyz": [
+            2.799999952316284,
+            13.800000190734863,
+            7.599999904632568
+          ],
+          "old_endpoint_edge_retained_as_diagonal": false,
+          "old_endpoint_edge_incident_faces": [],
+          "two_shared_segments": [
+            {
+              "edge_vertices": [
+                1109,
+                1114
+              ],
+              "incident_faces": [
+                2159,
+                2221
+              ]
+            },
+            {
+              "edge_vertices": [
+                1114,
+                1107
+              ],
+              "incident_faces": [
+                2158,
+                2225
+              ]
+            }
+          ]
+        },
+        {
+          "old_source_edge": [
+            1105,
+            1107
+          ],
+          "new_unique_vertex": 1115,
+          "actual_xyz": [
+            2.4000000953674316,
+            17.0,
+            6.0
+          ],
+          "old_endpoint_edge_retained_as_diagonal": false,
+          "old_endpoint_edge_incident_faces": [],
+          "two_shared_segments": [
+            {
+              "edge_vertices": [
+                1105,
+                1115
+              ],
+              "incident_faces": [
+                2226,
+                2227
+              ]
+            },
+            {
+              "edge_vertices": [
+                1115,
+                1107
+              ],
+              "incident_faces": [
+                2158,
+                2168
+              ]
+            }
+          ]
+        }
+      ],
+      "back_edge_vertices": [
+        1109,
+        1105
+      ],
+      "back_edge_xyz": [
+        [
+          1.0,
+          9.5,
+          8.199999809265137
+        ],
+        [
+          0.6000000238418579,
+          13.199999809265137,
+          6.400000095367432
+        ]
+      ],
+      "front_edge_vertices": [
+        1114,
+        1115
+      ],
+      "front_edge_xyz": [
+        [
+          2.799999952316284,
+          13.800000190734863,
+          7.599999904632568
+        ],
+        [
+          2.4000000953674316,
+          17.0,
+          6.0
+        ]
+      ],
+      "front_edge_length3d_m": 3.5999997721778043,
+      "back_edge_length3d_m": 4.134005024128585,
+      "front_to_back_minimum_XY_segment_distance_m": 2.2803508815643476,
+      "shoulder_cap_actual_triangles": [
+        {
+          "face": 2221,
+          "vertices": [
+            1114,
+            1105,
+            1109
+          ],
+          "xyz": [
+            [
+              2.799999952316284,
+              13.800000190734863,
+              7.599999904632568
+            ],
+            [
+              0.6000000238418579,
+              13.199999809265137,
+              6.400000095367432
+            ],
+            [
+              1.0,
+              9.5,
+              8.199999809265137
+            ]
+          ],
+          "area_m2": 5.310489188156159,
+          "normal": [
+            -0.5197260915900492,
+            0.3276533689678211,
+            0.7890044737037735
+          ],
+          "slope_from_horizontal_deg": 37.907424893508875
+        },
+        {
+          "face": 2227,
+          "vertices": [
+            1114,
+            1115,
+            1105
+          ],
+          "xyz": [
+            [
+              2.799999952316284,
+              13.800000190734863,
+              7.599999904632568
+            ],
+            [
+              2.4000000953674316,
+              17.0,
+              6.0
+            ],
+            [
+              0.6000000238418579,
+              13.199999809265137,
+              6.400000095367432
+            ]
+          ],
+          "area_m2": 4.6173582360316345,
+          "normal": [
+            -0.5197777028042598,
+            0.32919255646912365,
+            0.7883294999128533
+          ],
+          "slope_from_horizontal_deg": 37.97032642987302
+        }
+      ],
+      "cap_surface_area_m2": 9.927847424187792,
+      "cap_internal_dihedral_angle_deg": 0.09634131847188962,
+      "front_edge_actual_incident_triangles": [
+        {
+          "face": 2158,
+          "vertices": [
+            1114,
+            1107,
+            1115
+          ],
+          "xyz": [
+            [
+              2.799999952316284,
+              13.800000190734863,
+              7.599999904632568
+            ],
+            [
+              3.200000047683716,
+              20.0,
+              1.7000000476837158
+            ],
+            [
+              2.4000000953674316,
+              17.0,
+              6.0
+            ]
+          ],
+          "area_m2": 5.084760993706361,
+          "normal": [
+            0.8810639599820619,
+            0.2949990389845201,
+            0.3697321536179092
+          ],
+          "slope_from_horizontal_deg": 68.30090054450635
+        },
+        {
+          "face": 2227,
+          "vertices": [
+            1114,
+            1115,
+            1105
+          ],
+          "xyz": [
+            [
+              2.799999952316284,
+              13.800000190734863,
+              7.599999904632568
+            ],
+            [
+              2.4000000953674316,
+              17.0,
+              6.0
+            ],
+            [
+              0.6000000238418579,
+              13.199999809265137,
+              6.400000095367432
+            ]
+          ],
+          "area_m2": 4.6173582360316345,
+          "normal": [
+            -0.5197777028042598,
+            0.32919255646912365,
+            0.7883294999128533
+          ],
+          "slope_from_horizontal_deg": 37.97032642987302
+        }
+      ],
+      "front_crease_normal_angle_deg": 93.97809867573632,
+      "finite_width_and_shared_faces_pass": true
+    }
+  ],
+  "pass": true,
+  "full_reference_accepted": false,
+  "limits": [
+    "Geometric width/crease is not a visual short-shoulder acceptance score.",
+    "Cap triangles may be noncoplanar; actual internal diagonal and its normal change reported instead of ideal quad plane.",
+    "This bounded check does not rerun prior31i complete support/intersection checks."
+  ]
+}

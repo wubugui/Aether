@@ -1,0 +1,317 @@
+{
+  "scope": "Independent actual four-image and bounded environment-source binding review; no Blender/GPU; not all-weather/world audit",
+  "run": "E:\\FeiTing\\captures\\validation_runs\\coast-environment-21a-20260908T100942Z-e446ce77bb9c4a19b675264956c26ce0",
+  "status": "passed",
+  "artifact_count": 53,
+  "artifact_mismatches": [],
+  "all_stages_passed_exit0_same_inputs": true,
+  "all7assets_frozen_from20l": {
+    "island_a": true,
+    "island_b": true,
+    "island_c": true,
+    "keeper_house": true,
+    "reef_low": true,
+    "reef_ridge": true,
+    "reef_spire": true
+  },
+  "source_shader_provenance": {
+    "world_surface": {
+      "recorded": "2f504186ff38a21565f636a10b4ec690c7310a5119e641f4f3368fe22b957abf",
+      "live_equal": true
+    },
+    "terrain_native": {
+      "recorded": "f98fc817bb6c217870144daff7d53a0ecb1da96e29e6b2315a24301aea858384",
+      "live_equal": true
+    },
+    "cliff_surface": {
+      "recorded": "6a9676571ad7fa7cf87b485da405690f1d65d9e540aea5d8547617a3cae623ee",
+      "live_equal": true
+    },
+    "ship_surface": {
+      "recorded": "989485025fe748ea04fdcf0f0546b473c214b3a47516cca8d75a815a9737b76f",
+      "live_equal": true
+    },
+    "wood_surface": {
+      "recorded": "3af6bbb71464d8b1bf10cc6433f13c5a85ff95dd4b7632151c3ba883fa32924f",
+      "live_equal": true
+    },
+    "open_water": {
+      "recorded": "ba78a253924f1a1ae26e65f562b4809536cc98b1022f65adc1a9aaffd776356a",
+      "live_equal": true
+    }
+  },
+  "environment_reports": {
+    "day-paths": {
+      "ambient_energy": 0.600000023841858,
+      "directional_light_energy": 0.850000023841858,
+      "emissive_material_variants": 0,
+      "fog_density": 0.00028000000747852,
+      "material_bindings": [
+        {
+          "candidate_shader": "terrain_native.gdshader",
+          "original_material": "res://materials/terrain.tres",
+          "original_shader": "res://scripts/terrain_native.gdshader"
+        },
+        {
+          "candidate_shader": "world_surface.gdshader",
+          "original_material": "res://materials/world.tres",
+          "original_shader": "res://scripts/world_surface.gdshader"
+        },
+        {
+          "candidate_shader": "cloud_surface.gdshader",
+          "original_material": "res://materials/cloud.tres",
+          "original_shader": "res://scripts/cloud_surface.gdshader"
+        },
+        {
+          "candidate_shader": "open_water.gdshader",
+          "original_material": "res://scenes/environment/Ocean.tscn::ShaderMaterial_sqy22",
+          "original_shader": "res://scripts/open_water.gdshader"
+        },
+        {
+          "candidate_shader": "cliff_surface.gdshader",
+          "original_material": "res://materials/cliff.tres",
+          "original_shader": "res://scripts/cliff_surface.gdshader"
+        },
+        {
+          "candidate_shader": "ship_surface.gdshader",
+          "original_material": "res://materials/ship.tres",
+          "original_shader": "res://scripts/ship_surface.gdshader"
+        },
+        {
+          "candidate_shader": "ship_surface.gdshader",
+          "original_material": "res://materials/flag.tres",
+          "original_shader": "res://scripts/ship_surface.gdshader"
+        }
+      ],
+      "moon_direction": [
+        -0.183916792273521,
+        0.379828155040741,
+        -0.906589865684509
+      ],
+      "night": false,
+      "scope": "Temporary actual shader, scene light and sky changes; no fullscreen tint. Streaming transitions and other weather states remain unimplemented."
+    },
+    "day-reference": {
+      "ambient_energy": 0.600000023841858,
+      "directional_light_energy": 0.850000023841858,
+      "emissive_material_variants": 0,
+      "fog_density": 0.00028000000747852,
+      "material_bindings": [
+        {
+          "candidate_shader": "terrain_native.gdshader",
+          "original_material": "res://materials/terrain.tres",
+          "original_shader": "res://scripts/terrain_native.gdshader"
+        },
+        {
+          "candidate_shader": "world_surface.gdshader",
+          "original_material": "res://materials/world.tres",
+          "original_shader": "res://scripts/world_surface.gdshader"
+        },
+        {
+          "candidate_shader": "cloud_surface.gdshader",
+          "original_material": "res://materials/cloud.tres",
+          "original_shader": "res://scripts/cloud_surface.gdshader"
+        },
+        {
+          "candidate_shader": "open_water.gdshader",
+          "original_material": "res://scenes/environment/Ocean.tscn::ShaderMaterial_sqy22",
+          "original_shader": "res://scripts/open_water.gdshader"
+        },
+        {
+          "candidate_shader": "cliff_surface.gdshader",
+          "original_material": "res://materials/cliff.tres",
+          "original_shader": "res://scripts/cliff_surface.gdshader"
+        },
+        {
+          "candidate_shader": "ship_surface.gdshader",
+          "original_material": "res://materials/ship.tres",
+          "original_shader": "res://scripts/ship_surface.gdshader"
+        },
+        {
+          "candidate_shader": "ship_surface.gdshader",
+          "original_material": "res://materials/flag.tres",
+          "original_shader": "res://scripts/ship_surface.gdshader"
+        }
+      ],
+      "moon_direction": [
+        -0.183916792273521,
+        0.379828155040741,
+        -0.906589865684509
+      ],
+      "night": false,
+      "scope": "Temporary actual shader, scene light and sky changes; no fullscreen tint. Streaming transitions and other weather states remain unimplemented."
+    },
+    "night-reference": {
+      "ambient_energy": 0.280000001192093,
+      "directional_light_energy": 0.5,
+      "emissive_material_variants": 6,
+      "fog_density": 0.000380000012228265,
+      "material_bindings": [
+        {
+          "candidate_shader": "terrain_native.gdshader",
+          "original_material": "res://materials/terrain.tres",
+          "original_shader": "res://scripts/terrain_native.gdshader"
+        },
+        {
+          "candidate_shader": "world_surface.gdshader",
+          "original_material": "res://materials/world.tres",
+          "original_shader": "res://scripts/world_surface.gdshader"
+        },
+        {
+          "candidate_shader": "cloud_surface.gdshader",
+          "original_material": "res://materials/cloud.tres",
+          "original_shader": "res://scripts/cloud_surface.gdshader"
+        },
+        {
+          "candidate_shader": "open_water.gdshader",
+          "original_material": "res://scenes/environment/Ocean.tscn::ShaderMaterial_sqy22",
+          "original_shader": "res://scripts/open_water.gdshader"
+        },
+        {
+          "candidate_shader": "cliff_surface.gdshader",
+          "original_material": "res://materials/cliff.tres",
+          "original_shader": "res://scripts/cliff_surface.gdshader"
+        },
+        {
+          "candidate_shader": "ship_surface.gdshader",
+          "original_material": "res://materials/ship.tres",
+          "original_shader": "res://scripts/ship_surface.gdshader"
+        },
+        {
+          "candidate_shader": "ship_surface.gdshader",
+          "original_material": "res://materials/flag.tres",
+          "original_shader": "res://scripts/ship_surface.gdshader"
+        }
+      ],
+      "moon_direction": [
+        -0.183916792273521,
+        0.379828155040741,
+        -0.906589865684509
+      ],
+      "night": true,
+      "scope": "Temporary actual shader, scene light and sky changes; no fullscreen tint. Streaming transitions and other weather states remain unimplemented."
+    },
+    "night-back": {
+      "ambient_energy": 0.280000001192093,
+      "directional_light_energy": 0.5,
+      "emissive_material_variants": 6,
+      "fog_density": 0.000380000012228265,
+      "material_bindings": [
+        {
+          "candidate_shader": "terrain_native.gdshader",
+          "original_material": "res://materials/terrain.tres",
+          "original_shader": "res://scripts/terrain_native.gdshader"
+        },
+        {
+          "candidate_shader": "world_surface.gdshader",
+          "original_material": "res://materials/world.tres",
+          "original_shader": "res://scripts/world_surface.gdshader"
+        },
+        {
+          "candidate_shader": "cloud_surface.gdshader",
+          "original_material": "res://materials/cloud.tres",
+          "original_shader": "res://scripts/cloud_surface.gdshader"
+        },
+        {
+          "candidate_shader": "open_water.gdshader",
+          "original_material": "res://scenes/environment/Ocean.tscn::ShaderMaterial_sqy22",
+          "original_shader": "res://scripts/open_water.gdshader"
+        },
+        {
+          "candidate_shader": "cliff_surface.gdshader",
+          "original_material": "res://materials/cliff.tres",
+          "original_shader": "res://scripts/cliff_surface.gdshader"
+        },
+        {
+          "candidate_shader": "ship_surface.gdshader",
+          "original_material": "res://materials/ship.tres",
+          "original_shader": "res://scripts/ship_surface.gdshader"
+        },
+        {
+          "candidate_shader": "ship_surface.gdshader",
+          "original_material": "res://materials/flag.tres",
+          "original_shader": "res://scripts/ship_surface.gdshader"
+        }
+      ],
+      "moon_direction": [
+        -0.183916792273521,
+        0.379828155040741,
+        -0.906589865684509
+      ],
+      "night": true,
+      "scope": "Temporary actual shader, scene light and sky changes; no fullscreen tint. Streaming transitions and other weather states remain unimplemented."
+    }
+  },
+  "lamp_core_actual_native_glb_local_aabb": [
+    [
+      -0.3000000119,
+      18.9099998474,
+      -0.3000000119
+    ],
+    [
+      0.3000000119,
+      20.2900009155,
+      0.3000000119
+    ]
+  ],
+  "lamp_core_actual_center": [
+    0,
+    19.6000003815,
+    0
+  ],
+  "lamp_runtime_source": {
+    "type": "OmniLight3D",
+    "parent": "each temporary region Lighthouse_*",
+    "local_position": [
+      0,
+      19.6,
+      0
+    ],
+    "energy": 2,
+    "range": 13,
+    "qualification": "Source and actual GLB center independently confirmed. Sidecar does not inventory each light global transform; no new runtime probe."
+  },
+  "day_image_comparison20k": {
+    "day-paths": {
+      "changed_pixels": 3635,
+      "maximum_channel_delta": 51,
+      "bbox": [
+        620,
+        216,
+        1611,
+        500
+      ],
+      "camera_matches20k": true
+    },
+    "day-reference": {
+      "changed_pixels": 7398,
+      "maximum_channel_delta": 57,
+      "bbox": [
+        0,
+        470,
+        1539,
+        940
+      ],
+      "camera_matches20k": true
+    }
+  },
+  "images_actually_viewed": [
+    "E:\\FeiTing\\captures\\validation_runs\\coast-environment-21a-20260908T100942Z-e446ce77bb9c4a19b675264956c26ce0\\images\\day-paths.png",
+    "E:\\FeiTing\\captures\\validation_runs\\coast-environment-21a-20260908T100942Z-e446ce77bb9c4a19b675264956c26ce0\\images\\day-reference.png",
+    "E:\\FeiTing\\captures\\validation_runs\\coast-environment-21a-20260908T100942Z-e446ce77bb9c4a19b675264956c26ce0\\images\\night-reference.png",
+    "E:\\FeiTing\\captures\\validation_runs\\coast-environment-21a-20260908T100942Z-e446ce77bb9c4a19b675264956c26ce0\\images\\night-back.png"
+  ],
+  "material_coverage_limits": [
+    "7 recorded material bindings correspond to6 shader basenames; sky assigned separately.",
+    "wood_surface candidate exists but absent from current binding list; absence alone is not proof of visible omission.",
+    "emissive_material_variants6 counts cached adapted material variants, not windows or lamps; not an exhaustive all-surface audit.",
+    "No unadapted-material inventory; streamed future nodes are not automatically configured by this one-shot traversal."
+  ],
+  "metadata_issue": "Night sidecar top-level scope incorrectly retains daytime wording; environment_study.night=true and actual image establish night.",
+  "decision": {
+    "night": "reject visual state, retain real scene/material implementation as experiment",
+    "20l_day_road": "limited repaired junction draft retained, no new visible broad degradation; image distant, not full walking proof",
+    "whole_coastal_art": "not accepted",
+    "all20references_complete": false
+  }
+}

@@ -1,0 +1,765 @@
+{
+  "round": "34d",
+  "decision": "retain_bounded_emitter_registration_for_research; visible_warm_reflection_layer_rejected",
+  "scope": "Five actual GPU views and bounded source/report binding; no GPU or geometry rerun",
+  "run_status": "passed",
+  "run_passed": true,
+  "images": [
+    {
+      "view": "night-reference",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\water-34d-20260909T000325Z-9d52dcd583c84d04a34254a8eab8e9e3\\images\\night-reference.png",
+      "sha256": "dc7e638a1bcb96110971c50dbf7340ed6fd09acc840f5c79bc8820b9c34c042b",
+      "actually_viewed": true,
+      "manifest_matches": true,
+      "sidecar_sha256": "766c4a5958b2c5d6e076c98dbe7b22e97c377328a3d75cd2cbc5e7c9fac53bfd",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "water_shader_sha256": "eea715127b8535f2749705643e2ec4f77032a1fed06cac2c21c6cfa3c97703ac",
+      "shader_matches": true,
+      "emitter_reflection": {
+        "count": 13,
+        "night": true,
+        "rays": 26624,
+        "report_sha256": "892845a959653b7cec5a2c0272068719e17caf1bff7bbb33719cc7960973a3a9",
+        "scope": "Actual13 native emission surfaces approximated by their world AABB half axes and angular roughness; material emission read after lighting setup.64x32 static downward hemisphere radial collision map per emitter,450m finite extent; outside extent emits no reflected contribution. Original coarse tower colliders replaced for reflection queries by actual opaque mesh faces, not entire tower shadow removal. Nearest map sampling is approximate for thin/edge occluders. No full scene reflection or all harbor/window emitter coverage.",
+        "water_material_bindings": 1
+      },
+      "emitter_report_matches": true,
+      "production_modified": false
+    },
+    {
+      "view": "day-reference",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\water-34d-20260909T000325Z-9d52dcd583c84d04a34254a8eab8e9e3\\images\\day-reference.png",
+      "sha256": "1586ad9a88dcdb7de42e47b5de0359a4694fe5b01a8c7bef323325b60361c3be",
+      "actually_viewed": true,
+      "manifest_matches": true,
+      "sidecar_sha256": "5f1009adf7b7bf782f7a113e5a1f5b92fa00c744cae64bc8e52d4fe4d1cd4119",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "water_shader_sha256": "eea715127b8535f2749705643e2ec4f77032a1fed06cac2c21c6cfa3c97703ac",
+      "shader_matches": true,
+      "emitter_reflection": {
+        "emitters": [],
+        "night": false,
+        "scope": "No emissive-source reflection in daylight."
+      },
+      "emitter_report_matches": null,
+      "production_modified": false
+    },
+    {
+      "view": "night-time18",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\water-34d-20260909T000325Z-9d52dcd583c84d04a34254a8eab8e9e3\\images\\night-time18.png",
+      "sha256": "77cd751db0ba9597dfeea99a91b57b40199ff7c7f3164016543e28c9ae659977",
+      "actually_viewed": true,
+      "manifest_matches": true,
+      "sidecar_sha256": "618c9b2a095153a8c19434c0b20be3992a19496846bd3b6b3b6f35ad90b82757",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "water_shader_sha256": "eea715127b8535f2749705643e2ec4f77032a1fed06cac2c21c6cfa3c97703ac",
+      "shader_matches": true,
+      "emitter_reflection": {
+        "count": 13,
+        "night": true,
+        "rays": 26624,
+        "report_sha256": "892845a959653b7cec5a2c0272068719e17caf1bff7bbb33719cc7960973a3a9",
+        "scope": "Actual13 native emission surfaces approximated by their world AABB half axes and angular roughness; material emission read after lighting setup.64x32 static downward hemisphere radial collision map per emitter,450m finite extent; outside extent emits no reflected contribution. Original coarse tower colliders replaced for reflection queries by actual opaque mesh faces, not entire tower shadow removal. Nearest map sampling is approximate for thin/edge occluders. No full scene reflection or all harbor/window emitter coverage.",
+        "water_material_bindings": 1
+      },
+      "emitter_report_matches": true,
+      "production_modified": false
+    },
+    {
+      "view": "night-water-near",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\water-34d-20260909T000325Z-9d52dcd583c84d04a34254a8eab8e9e3\\images\\night-water-near.png",
+      "sha256": "72e6e6b7799c33053a5f5bf7e87610a6310f4bf1e297758ac03b05770f8a4893",
+      "actually_viewed": true,
+      "manifest_matches": true,
+      "sidecar_sha256": "c0ea4fa97a2b557f866bab1692b289521e10893d9efb5bd74d64ab1ed46acdc1",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "water_shader_sha256": "eea715127b8535f2749705643e2ec4f77032a1fed06cac2c21c6cfa3c97703ac",
+      "shader_matches": true,
+      "emitter_reflection": {
+        "count": 13,
+        "night": true,
+        "rays": 26624,
+        "report_sha256": "892845a959653b7cec5a2c0272068719e17caf1bff7bbb33719cc7960973a3a9",
+        "scope": "Actual13 native emission surfaces approximated by their world AABB half axes and angular roughness; material emission read after lighting setup.64x32 static downward hemisphere radial collision map per emitter,450m finite extent; outside extent emits no reflected contribution. Original coarse tower colliders replaced for reflection queries by actual opaque mesh faces, not entire tower shadow removal. Nearest map sampling is approximate for thin/edge occluders. No full scene reflection or all harbor/window emitter coverage.",
+        "water_material_bindings": 1
+      },
+      "emitter_report_matches": true,
+      "production_modified": false
+    },
+    {
+      "view": "night-water-shift",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\water-34d-20260909T000325Z-9d52dcd583c84d04a34254a8eab8e9e3\\images\\night-water-shift.png",
+      "sha256": "4c94d8cb74edb439ae5d80db5416999f6c6f2791f6b0a20a35ff4e03ef376b0c",
+      "actually_viewed": true,
+      "manifest_matches": true,
+      "sidecar_sha256": "3be34bcc79645e75beb7e25b3571b106898e59e2fe81b9766533444e86a01d47",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "water_shader_sha256": "eea715127b8535f2749705643e2ec4f77032a1fed06cac2c21c6cfa3c97703ac",
+      "shader_matches": true,
+      "emitter_reflection": {
+        "count": 13,
+        "night": true,
+        "rays": 26624,
+        "report_sha256": "892845a959653b7cec5a2c0272068719e17caf1bff7bbb33719cc7960973a3a9",
+        "scope": "Actual13 native emission surfaces approximated by their world AABB half axes and angular roughness; material emission read after lighting setup.64x32 static downward hemisphere radial collision map per emitter,450m finite extent; outside extent emits no reflected contribution. Original coarse tower colliders replaced for reflection queries by actual opaque mesh faces, not entire tower shadow removal. Nearest map sampling is approximate for thin/edge occluders. No full scene reflection or all harbor/window emitter coverage.",
+        "water_material_bindings": 1
+      },
+      "emitter_report_matches": true,
+      "production_modified": false
+    }
+  ],
+  "frozen_files": [
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\water-34d-20260909T000325Z-9d52dcd583c84d04a34254a8eab8e9e3\\study-inputs\\new-environment27f\\open_water.gdshader",
+      "sha256": "eea715127b8535f2749705643e2ec4f77032a1fed06cac2c21c6cfa3c97703ac",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\water-34d-20260909T000325Z-9d52dcd583c84d04a34254a8eab8e9e3\\study-inputs\\water_emitter_reflections_34d.gd",
+      "sha256": "d0201d04a2572c82b6f2275574e84b4c2eec9f493c0799ccbb76d7ef646dd641",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\water-34d-20260909T000325Z-9d52dcd583c84d04a34254a8eab8e9e3\\study-inputs\\water34d-builder.py",
+      "sha256": "084a027117500ff85c75f2ea48247767ded5315a5315f59b90d1a6b883995092",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\water-34d-20260909T000325Z-9d52dcd583c84d04a34254a8eab8e9e3\\study-inputs\\water34d-design-plan.json",
+      "sha256": "7117bc2f48c9e7588c85f19dd82fbf30f6313d4209663c1a637b938b8287a03f",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\water-34d-20260909T000325Z-9d52dcd583c84d04a34254a8eab8e9e3\\study-inputs\\render_water_34d.py",
+      "sha256": "cda8f36b29f9527a0320cb497f922fff3e0e06d34282841a2c554336b8c7d068",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\water-34d-20260909T000325Z-9d52dcd583c84d04a34254a8eab8e9e3\\actual-water-revision.json",
+      "sha256": "2de2f7f79fca3f1bec1191c11f92755458131d7c6620cc07bbd6a37a80d7444e",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\water-34d-20260909T000325Z-9d52dcd583c84d04a34254a8eab8e9e3\\images\\actual-emitter-reflection.json",
+      "sha256": "892845a959653b7cec5a2c0272068719e17caf1bff7bbb33719cc7960973a3a9",
+      "manifest_matches": true
+    }
+  ],
+  "runtime": {
+    "run_id": "water-34d-20260909T000325Z-9d52dcd583c84d04a34254a8eab8e9e3",
+    "views": [
+      {
+        "view": "night-reference",
+        "camera": {
+          "fov": 70.0,
+          "position": [
+            -2278.0,
+            60.0,
+            -1632.0
+          ],
+          "rotation": [
+            -0.00509163970127702,
+            0.60683274269104,
+            0.0
+          ]
+        },
+        "time": 0.0,
+        "water_shader_sha256": "eea715127b8535f2749705643e2ec4f77032a1fed06cac2c21c6cfa3c97703ac",
+        "world_and_coast_unchanged": true
+      },
+      {
+        "view": "night-water-near",
+        "camera": {
+          "fov": 70.0,
+          "position": [
+            -2330.0,
+            8.0,
+            -1740.0
+          ],
+          "rotation": [
+            -0.0185673981904984,
+            0.380506366491318,
+            0.0
+          ]
+        },
+        "time": 0.0,
+        "water_shader_sha256": "eea715127b8535f2749705643e2ec4f77032a1fed06cac2c21c6cfa3c97703ac",
+        "world_and_coast_unchanged": true
+      },
+      {
+        "view": "night-water-shift",
+        "camera": {
+          "fov": 70.0,
+          "position": [
+            -2363.0,
+            40.0,
+            -1662.0
+          ],
+          "rotation": [
+            -0.00509163970127702,
+            0.60683274269104,
+            0.0
+          ]
+        },
+        "time": 0.0,
+        "water_shader_sha256": "eea715127b8535f2749705643e2ec4f77032a1fed06cac2c21c6cfa3c97703ac",
+        "world_and_coast_unchanged": true
+      },
+      {
+        "view": "night-time18",
+        "camera": {
+          "fov": 70.0,
+          "position": [
+            -2278.0,
+            60.0,
+            -1632.0
+          ],
+          "rotation": [
+            -0.00509163970127702,
+            0.60683274269104,
+            0.0
+          ]
+        },
+        "time": 18.0,
+        "water_shader_sha256": "eea715127b8535f2749705643e2ec4f77032a1fed06cac2c21c6cfa3c97703ac",
+        "world_and_coast_unchanged": true
+      },
+      {
+        "view": "day-reference",
+        "camera": {
+          "fov": 70.0,
+          "position": [
+            -2278.0,
+            60.0,
+            -1632.0
+          ],
+          "rotation": [
+            -0.00509163970127702,
+            0.60683274269104,
+            0.0
+          ]
+        },
+        "time": 0.0,
+        "water_shader_sha256": "eea715127b8535f2749705643e2ec4f77032a1fed06cac2c21c6cfa3c97703ac",
+        "world_and_coast_unchanged": true
+      }
+    ],
+    "scope": "RealGPU water-only main/near/translated/time18/night/day. 13 actual emission-source approximations with finite static collision occlusion; no full scene reflections. Land33f runtime inherited, not repeated.",
+    "passed": true
+  },
+  "emitter_evidence": {
+    "map_rows_per_emitter": 32,
+    "map_width": 64,
+    "max_distance_m": 450.0,
+    "rays": 26624,
+    "scope": "Actual13 native emission surfaces approximated by their world AABB half axes and angular roughness; material emission read after lighting setup.64x32 static downward hemisphere radial collision map per emitter,450m finite extent; outside extent emits no reflected contribution. Original coarse tower colliders replaced for reflection queries by actual opaque mesh faces, not entire tower shadow removal. Nearest map sampling is approximate for thin/edge occluders. No full scene reflection or all harbor/window emitter coverage.",
+    "water_material_bindings": 1,
+    "excluded_original_colliders": [
+      "/root/Skyfarer/World/Ocean/SeaCollision",
+      "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_a/Collision",
+      "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_b/Collision",
+      "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_c/Collision",
+      "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_d/Collision"
+    ],
+    "actual_opaque_tower_colliders": [
+      {
+        "tower": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_a",
+        "triangles": 3628,
+        "surface_count": 10
+      },
+      {
+        "tower": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_b",
+        "triangles": 3628,
+        "surface_count": 10
+      },
+      {
+        "tower": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_c",
+        "triangles": 3628,
+        "surface_count": 10
+      },
+      {
+        "tower": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_d",
+        "triangles": 3628,
+        "surface_count": 10
+      }
+    ],
+    "emitters": [
+      {
+        "index": 0,
+        "light_node": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_a/NativeLanternLight",
+        "emitter_center": [
+          -2353.0,
+          49.6620864868164,
+          -1656.0
+        ],
+        "emitter_half_axes": [
+          0.290771484375,
+          0.690000534057617,
+          0.2906494140625
+        ],
+        "emission_color": [
+          1.0,
+          0.579999983310699,
+          0.159999996423721
+        ],
+        "emission_multiplier": 6.0,
+        "angular_roughness": 0.00800000037997961,
+        "actual_surfaces": [
+          {
+            "material": "Lamp core",
+            "mesh": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_a/Model/Opaque_Lamp core",
+            "surface": 0,
+            "vertices": 72
+          }
+        ],
+        "distance_samples": 2048,
+        "hit_records": 1864,
+        "distance_min": 0.649643778800964,
+        "distance_max": 450.0,
+        "omni_energy": 4.0,
+        "omni_range": 28.0
+      },
+      {
+        "index": 1,
+        "light_node": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_b/NativeLanternLight",
+        "emitter_center": [
+          -2700.0,
+          41.2455062866211,
+          -2202.0
+        ],
+        "emitter_half_axes": [
+          0.2978515625,
+          0.690000534057617,
+          0.2978515625
+        ],
+        "emission_color": [
+          1.0,
+          0.579999983310699,
+          0.159999996423721
+        ],
+        "emission_multiplier": 6.0,
+        "angular_roughness": 0.00800000037997961,
+        "actual_surfaces": [
+          {
+            "material": "Lamp core",
+            "mesh": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_b/Model/Opaque_Lamp core",
+            "surface": 0,
+            "vertices": 72
+          }
+        ],
+        "distance_samples": 2048,
+        "hit_records": 1861,
+        "distance_min": 0.658583343029022,
+        "distance_max": 450.0,
+        "omni_energy": 4.0,
+        "omni_range": 28.0
+      },
+      {
+        "index": 2,
+        "light_node": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_c/NativeLanternLight",
+        "emitter_center": [
+          -3048.5,
+          31.2906131744385,
+          -2649.19995117188
+        ],
+        "emitter_half_axes": [
+          0.298583984375,
+          0.690000534057617,
+          0.298583984375
+        ],
+        "emission_color": [
+          1.0,
+          0.579999983310699,
+          0.159999996423721
+        ],
+        "emission_multiplier": 6.0,
+        "angular_roughness": 0.00800000037997961,
+        "actual_surfaces": [
+          {
+            "material": "Lamp core",
+            "mesh": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_c/Model/Opaque_Lamp core",
+            "surface": 0,
+            "vertices": 72
+          }
+        ],
+        "distance_samples": 2048,
+        "hit_records": 1888,
+        "distance_min": 0.706097424030304,
+        "distance_max": 450.0,
+        "omni_energy": 4.0,
+        "omni_range": 28.0
+      },
+      {
+        "index": 3,
+        "light_node": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_d/NativeLanternLight",
+        "emitter_center": [
+          -2371.89672851563,
+          31.2906131744385,
+          -1813.69677734375
+        ],
+        "emitter_half_axes": [
+          0.300048828125,
+          0.690000534057617,
+          0.29998779296875
+        ],
+        "emission_color": [
+          1.0,
+          0.579999983310699,
+          0.159999996423721
+        ],
+        "emission_multiplier": 6.0,
+        "angular_roughness": 0.00800000037997961,
+        "actual_surfaces": [
+          {
+            "material": "Lamp core",
+            "mesh": "/root/Skyfarer/LanternCoastStudy/Lighthouse_island_d/Model/Opaque_Lamp core",
+            "surface": 0,
+            "vertices": 72
+          }
+        ],
+        "distance_samples": 2048,
+        "hit_records": 1950,
+        "distance_min": 0.651070713996887,
+        "distance_max": 450.0,
+        "omni_energy": 4.0,
+        "omni_range": 28.0
+      },
+      {
+        "index": 4,
+        "light_node": "/root/Skyfarer/MainlandVillage23g/fisher_cottage_1/VillageLantern/VillageWarmLight",
+        "emitter_center": [
+          -2266.12158203125,
+          11.4399995803833,
+          -1753.48034667969
+        ],
+        "emitter_half_axes": [
+          0.0543212890625,
+          0.130000114440918,
+          0.0543212890625
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.0020000000949949,
+        "actual_surfaces": [
+          {
+            "material": "Harbor lantern flame",
+            "mesh": "/root/Skyfarer/MainlandVillage23g/fisher_cottage_1/VillageLantern/harbor_lantern_Harbor lantern flame",
+            "surface": 0,
+            "vertices": 60
+          }
+        ],
+        "distance_samples": 2048,
+        "hit_records": 2027,
+        "distance_min": 0.675547301769257,
+        "distance_max": 450.0,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 5,
+        "light_node": "/root/Skyfarer/MainlandVillage23g/fisher_cottage_5/VillageLantern/VillageWarmLight",
+        "emitter_center": [
+          -2232.14111328125,
+          17.939998626709,
+          -1738.73693847656
+        ],
+        "emitter_half_axes": [
+          0.0546875,
+          0.130000114440918,
+          0.0538330078125
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.0020000000949949,
+        "actual_surfaces": [
+          {
+            "material": "Harbor lantern flame",
+            "mesh": "/root/Skyfarer/MainlandVillage23g/fisher_cottage_5/VillageLantern/harbor_lantern_Harbor lantern flame",
+            "surface": 0,
+            "vertices": 60
+          }
+        ],
+        "distance_samples": 2048,
+        "hit_records": 2021,
+        "distance_min": 0.67191743850708,
+        "distance_max": 450.0,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 6,
+        "light_node": "/root/Skyfarer/MainlandVillage23g/fisher_cottage_6/VillageLantern/VillageWarmLight",
+        "emitter_center": [
+          -2246.04614257813,
+          8.9399995803833,
+          -1872.01708984375
+        ],
+        "emitter_half_axes": [
+          0.054443359375,
+          0.130000114440918,
+          0.05419921875
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.0020000000949949,
+        "actual_surfaces": [
+          {
+            "material": "Harbor lantern flame",
+            "mesh": "/root/Skyfarer/MainlandVillage23g/fisher_cottage_6/VillageLantern/harbor_lantern_Harbor lantern flame",
+            "surface": 0,
+            "vertices": 60
+          }
+        ],
+        "distance_samples": 2048,
+        "hit_records": 2031,
+        "distance_min": 0.674971878528595,
+        "distance_max": 450.0,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 7,
+        "light_node": "/root/Skyfarer/MainlandVillage23g/keeper_house_3/VillageLantern/VillageWarmLight",
+        "emitter_center": [
+          -2251.99609375,
+          14.9399995803833,
+          -1762.29248046875
+        ],
+        "emitter_half_axes": [
+          0.0545654296875,
+          0.130000114440918,
+          0.05401611328125
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.0020000000949949,
+        "actual_surfaces": [
+          {
+            "material": "Harbor lantern flame",
+            "mesh": "/root/Skyfarer/MainlandVillage23g/keeper_house_3/VillageLantern/harbor_lantern_Harbor lantern flame",
+            "surface": 0,
+            "vertices": 60
+          }
+        ],
+        "distance_samples": 2048,
+        "hit_records": 2007,
+        "distance_min": 0.517295300960541,
+        "distance_max": 450.0,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 8,
+        "light_node": "/root/Skyfarer/MainlandVillage23g/keeper_house_4/VillageLantern/VillageWarmLight",
+        "emitter_center": [
+          -2235.97436523438,
+          16.939998626709,
+          -1762.02709960938
+        ],
+        "emitter_half_axes": [
+          0.053955078125,
+          0.130000114440918,
+          0.0545654296875
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.0020000000949949,
+        "actual_surfaces": [
+          {
+            "material": "Harbor lantern flame",
+            "mesh": "/root/Skyfarer/MainlandVillage23g/keeper_house_4/VillageLantern/harbor_lantern_Harbor lantern flame",
+            "surface": 0,
+            "vertices": 60
+          }
+        ],
+        "distance_samples": 2048,
+        "hit_records": 2029,
+        "distance_min": 0.52010703086853,
+        "distance_max": 450.0,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 9,
+        "light_node": "/root/Skyfarer/MainlandVillage23g/keeper_house_7/VillageLantern/VillageWarmLight",
+        "emitter_center": [
+          -2236.50390625,
+          10.9399995803833,
+          -1887.72058105469
+        ],
+        "emitter_half_axes": [
+          0.0540771484375,
+          0.130000114440918,
+          0.0545654296875
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.0020000000949949,
+        "actual_surfaces": [
+          {
+            "material": "Harbor lantern flame",
+            "mesh": "/root/Skyfarer/MainlandVillage23g/keeper_house_7/VillageLantern/harbor_lantern_Harbor lantern flame",
+            "surface": 0,
+            "vertices": 60
+          }
+        ],
+        "distance_samples": 2048,
+        "hit_records": 2030,
+        "distance_min": 0.510239839553833,
+        "distance_max": 450.0,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 10,
+        "light_node": "/root/Skyfarer/MainlandVillage23g/keeper_house_8/VillageLantern/VillageWarmLight",
+        "emitter_center": [
+          -2223.90380859375,
+          12.9399995803833,
+          -1873.57312011719
+        ],
+        "emitter_half_axes": [
+          0.0543212890625,
+          0.130000114440918,
+          0.0543212890625
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.0020000000949949,
+        "actual_surfaces": [
+          {
+            "material": "Harbor lantern flame",
+            "mesh": "/root/Skyfarer/MainlandVillage23g/keeper_house_8/VillageLantern/harbor_lantern_Harbor lantern flame",
+            "surface": 0,
+            "vertices": 60
+          }
+        ],
+        "distance_samples": 2048,
+        "hit_records": 2035,
+        "distance_min": 0.50813090801239,
+        "distance_max": 450.0,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 11,
+        "light_node": "/root/Skyfarer/MainlandVillage23g/quay_workshop_2/VillageLantern/VillageWarmLight",
+        "emitter_center": [
+          -2249.95458984375,
+          13.2399997711182,
+          -1749.25061035156
+        ],
+        "emitter_half_axes": [
+          0.054443359375,
+          0.12999963760376,
+          0.05419921875
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.0020000000949949,
+        "actual_surfaces": [
+          {
+            "material": "Harbor lantern flame",
+            "mesh": "/root/Skyfarer/MainlandVillage23g/quay_workshop_2/VillageLantern/harbor_lantern_Harbor lantern flame",
+            "surface": 0,
+            "vertices": 60
+          }
+        ],
+        "distance_samples": 2048,
+        "hit_records": 2020,
+        "distance_min": 1.00046157836914,
+        "distance_max": 450.0,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      },
+      {
+        "index": 12,
+        "light_node": "/root/Skyfarer/MainlandVillage23g/quay_workshop_9/VillageLantern/VillageWarmLight",
+        "emitter_center": [
+          -2217.95458984375,
+          10.9399995803833,
+          -1858.25061035156
+        ],
+        "emitter_half_axes": [
+          0.054443359375,
+          0.130000114440918,
+          0.05419921875
+        ],
+        "emission_color": [
+          0.954687118530273,
+          0.619678199291229,
+          0.268271505832672
+        ],
+        "emission_multiplier": 1.0,
+        "angular_roughness": 0.0020000000949949,
+        "actual_surfaces": [
+          {
+            "material": "Harbor lantern flame",
+            "mesh": "/root/Skyfarer/MainlandVillage23g/quay_workshop_9/VillageLantern/harbor_lantern_Harbor lantern flame",
+            "surface": 0,
+            "vertices": 60
+          }
+        ],
+        "distance_samples": 2048,
+        "hit_records": 2038,
+        "distance_min": 1.00042593479156,
+        "distance_max": 450.0,
+        "omni_energy": 1.79999995231628,
+        "omni_range": 11.0
+      }
+    ]
+  },
+  "visual_findings": {
+    "main": "A few orange sparks near(887,777)/(925,800), not a broken warm reflection chain",
+    "time18": "Small warm spark shifts near(920,750); no chain",
+    "translated": "Few isolated glints near(1240,790..850)",
+    "near": "No clearly readable warm reflection chain",
+    "day": "No discernible emissive-reflection change; runtime disabled"
+  },
+  "unfinished": [
+    "Warm glint density/shape insufficient",
+    "All-sea horizontal streaks and near large facets inherited34c",
+    "Not all harbor lamps or windows included",
+    "Finite static map cannot prove dynamic/full scene occlusion"
+  ],
+  "full_reference_accepted": false,
+  "production_modified_by_reviewer": false,
+  "reviewer_correction": "Earlier field-absence inference came from truncated display. Direct full-key and all13 record reread confirms omni_energy/omni_range present; no source-drift evidence from this issue."
+}

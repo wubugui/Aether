@@ -1,0 +1,290 @@
+{
+  "scope": "Actual31f named brush-center anchor changes and bounded seaward-mouth affected-triangle swept region versus unchanged17rock AABBs, then sampled actual horizontal solid sections for candidate rocks. No whole contact/visual proof.",
+  "anchors": [
+    {
+      "name": "Lower and turn high original flank",
+      "historic31d_anchor": 997,
+      "matched_actual31e_vertex": 997,
+      "before_xyz": [
+        1.8143999576568604,
+        9.427762031555176,
+        9.673336029052734
+      ],
+      "actual_after_xyz": [
+        0.21439993381500244,
+        10.32776165008545,
+        8.323335647583008
+      ],
+      "actual_delta_xyz": [
+        -1.600000023841858,
+        0.8999996185302734,
+        -1.3500003814697266
+      ],
+      "actual_displacement_m": 2.278705865094701
+    },
+    {
+      "name": "Spread old mid slope across adjoining shoulder",
+      "historic31d_anchor": 409,
+      "matched_actual31e_vertex": 409,
+      "before_xyz": [
+        -4.970585823059082,
+        6.294712066650391,
+        5.014765739440918
+      ],
+      "actual_after_xyz": [
+        -5.370585918426514,
+        7.894711971282959,
+        5.714765548706055
+      ],
+      "actual_delta_xyz": [
+        -0.40000009536743164,
+        1.5999999046325684,
+        0.6999998092651367
+      ],
+      "actual_displacement_m": 1.7916471483217364
+    },
+    {
+      "name": "Turn local seaward cleft mouth and low root together",
+      "historic31d_anchor": 388,
+      "matched_actual31e_vertex": 388,
+      "before_xyz": [
+        -5.793421745300293,
+        12.48392105102539,
+        0.5509111881256104
+      ],
+      "actual_after_xyz": [
+        -7.193421840667725,
+        10.683920860290527,
+        0.9009112119674683
+      ],
+      "actual_delta_xyz": [
+        -1.4000000953674316,
+        -1.8000001907348633,
+        0.3500000238418579
+      ],
+      "actual_displacement_m": 2.30705460931545
+    }
+  ],
+  "changed_mouth_region_vertex_records": 21,
+  "mouth_incident_triangle_count": 68,
+  "mouth_affected_triangle_swept_AABB_xyz": [
+    [
+      -10.88640022277832,
+      4.099999904632568,
+      -5.849999904632568
+    ],
+    [
+      0.8791423439979553,
+      26.248193740844727,
+      6.248589038848877
+    ]
+  ],
+  "changed_vertices_original_z_le_0_2m": [
+    {
+      "vertex_before_final_triangulation": 376,
+      "before": [
+        -7.300000190734863,
+        12.300000190734863,
+        -2.5
+      ],
+      "after": [
+        -7.62210750579834,
+        11.885862350463867,
+        -2.419473171234131
+      ],
+      "distance_m": 0.5307992414811559
+    },
+    {
+      "vertex_before_final_triangulation": 377,
+      "before": [
+        -6.013976097106934,
+        12.924640655517578,
+        -2.5
+      ],
+      "after": [
+        -6.460195064544678,
+        12.350930213928223,
+        -2.3884451389312744
+      ],
+      "distance_m": 0.7353227402001997
+    },
+    {
+      "vertex_before_final_triangulation": 378,
+      "before": [
+        -4.479551792144775,
+        10.995264053344727,
+        -2.5
+      ],
+      "after": [
+        -4.719904899597168,
+        10.686239242553711,
+        -2.4399118423461914
+      ],
+      "distance_m": 0.39607642707715096
+    },
+    {
+      "vertex_before_final_triangulation": 379,
+      "before": [
+        -4.426368236541748,
+        10.899476051330566,
+        -2.5
+      ],
+      "after": [
+        -4.647299766540527,
+        10.615421295166016,
+        -2.4447672367095947
+      ],
+      "distance_m": 0.36407211731263844
+    },
+    {
+      "vertex_before_final_triangulation": 385,
+      "before": [
+        -5.921238899230957,
+        12.808032989501953,
+        -1.045141339302063
+      ],
+      "after": [
+        -6.983743667602539,
+        11.44195556640625,
+        -0.7795151472091675
+      ],
+      "distance_m": 1.7508972562753549
+    },
+    {
+      "vertex_before_final_triangulation": 386,
+      "before": [
+        -5.87370491027832,
+        12.74826431274414,
+        -0.29943013191223145
+      ],
+      "after": [
+        -7.1661224365234375,
+        11.08658504486084,
+        0.023674219846725464
+      ],
+      "distance_m": 2.1297693497818417
+    }
+  ],
+  "seventeen_rock_candidate_count": 3,
+  "local_candidate_rock_contacts": [
+    {
+      "rock": "North broken ridge",
+      "local_mouth_AABB_candidate": true,
+      "section_contacts": [
+        {
+          "z_m": 0.137,
+          "rock_section_area_m2": 109.710201119585,
+          "old_main_overlap_area_m2": 108.58856888593611,
+          "new_main_overlap_area_m2": 109.64935954292353,
+          "overlap_change_m2": 1.0607906569874217,
+          "new_section_horizontal_gap_m": 0.0
+        },
+        {
+          "z_m": 0.637,
+          "rock_section_area_m2": 102.7848448690565,
+          "old_main_overlap_area_m2": 102.17833997326348,
+          "new_main_overlap_area_m2": 102.77406567565842,
+          "overlap_change_m2": 0.5957257023949438,
+          "new_section_horizontal_gap_m": 0.0
+        },
+        {
+          "z_m": 1.637,
+          "rock_section_area_m2": 89.02617740612902,
+          "old_main_overlap_area_m2": 80.38551540515179,
+          "new_main_overlap_area_m2": 80.59882796124938,
+          "overlap_change_m2": 0.21331255609759125,
+          "new_section_horizontal_gap_m": 0.0
+        },
+        {
+          "z_m": 2.637,
+          "rock_section_area_m2": 69.31535490844401,
+          "old_main_overlap_area_m2": 17.86653154823975,
+          "new_main_overlap_area_m2": 17.48176872934318,
+          "overlap_change_m2": -0.3847628188965686,
+          "new_section_horizontal_gap_m": 0.0
+        },
+        {
+          "z_m": 3.637,
+          "rock_section_area_m2": 11.683340389445007,
+          "old_main_overlap_area_m2": 3.4236248456532095,
+          "new_main_overlap_area_m2": 3.4236248456532095,
+          "overlap_change_m2": 0.0,
+          "new_section_horizontal_gap_m": 0.0
+        }
+      ]
+    },
+    {
+      "rock": "Northwest split buttress",
+      "local_mouth_AABB_candidate": true,
+      "section_contacts": [
+        {
+          "z_m": 0.137,
+          "rock_section_area_m2": 127.655388318997,
+          "old_main_overlap_area_m2": 35.42238304837155,
+          "new_main_overlap_area_m2": 35.45667120271178,
+          "overlap_change_m2": 0.03428815434023136,
+          "new_section_horizontal_gap_m": 0.0
+        },
+        {
+          "z_m": 0.637,
+          "rock_section_area_m2": 121.6717265626295,
+          "old_main_overlap_area_m2": 33.540515437925336,
+          "new_main_overlap_area_m2": 33.54559892174458,
+          "overlap_change_m2": 0.005083483819241508,
+          "new_section_horizontal_gap_m": 0.0
+        },
+        {
+          "z_m": 1.637,
+          "rock_section_area_m2": 109.7118262191925,
+          "old_main_overlap_area_m2": 26.710372798560805,
+          "new_main_overlap_area_m2": 26.710372798560805,
+          "overlap_change_m2": 0.0,
+          "new_section_horizontal_gap_m": 0.0
+        },
+        {
+          "z_m": 2.637,
+          "rock_section_area_m2": 97.751151188365,
+          "old_main_overlap_area_m2": 20.022920233011252,
+          "new_main_overlap_area_m2": 20.022920233011252,
+          "overlap_change_m2": 0.0,
+          "new_section_horizontal_gap_m": 0.0
+        },
+        {
+          "z_m": 3.637,
+          "rock_section_area_m2": 77.7368272628215,
+          "old_main_overlap_area_m2": 13.016253593887438,
+          "new_main_overlap_area_m2": 13.016253593887438,
+          "overlap_change_m2": 0.0,
+          "new_section_horizontal_gap_m": 0.0
+        }
+      ]
+    },
+    {
+      "rock": "North tidal end",
+      "local_mouth_AABB_candidate": true,
+      "section_contacts": [
+        {
+          "z_m": 0.137,
+          "rock_section_area_m2": 21.779009568860012,
+          "old_main_overlap_area_m2": 17.508356037318435,
+          "new_main_overlap_area_m2": 17.508356037318435,
+          "overlap_change_m2": 0.0,
+          "new_section_horizontal_gap_m": 0.0
+        },
+        {
+          "z_m": 0.637,
+          "rock_section_area_m2": 18.62453502340651,
+          "old_main_overlap_area_m2": 11.010501275182651,
+          "new_main_overlap_area_m2": 11.010501275182651,
+          "overlap_change_m2": 0.0,
+          "new_section_horizontal_gap_m": 0.0
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "AABB region includes entire incident triangles before/after, including unmoved endpoints, not only brush-radius vertices. Candidate contacts only sampled at listed levels.",
+    "Sampled positive overlap does not prove whole-rock contact or artistic integration.",
+    "Section heights avoid nominal integer levels; an unclosed reconstruction is unavailable evidence, never a zero-section proof."
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "label": "17a",
+  "scope": "Existing five-section production height-surface gate, applied to candidate GLBs plus two unchanged production assets. Not a cross-asset collision or visual verdict.",
+  "algorithm_source": "captures/check_section_surface_overlaps.py",
+  "assets": [
+    {
+      "name": "cliff_crown",
+      "path": "assets\\models\\cliff_crown.glb",
+      "candidate": false,
+      "passed": true,
+      "sha256": "ca61243d3016e3e0c194f20afd072070bb02fb0bf4a83c62dc33983827ca8a62",
+      "roof_faces": 188,
+      "invalid_projected_faces": 0,
+      "downward_nonfloor_faces": 0,
+      "downward_triangle_indices": [],
+      "overlapping_projected_roof_area_m2": 1.8189894035458565e-12
+    },
+    {
+      "name": "cliff_western_slab",
+      "path": "captures\\foreground_study_17a\\cliff_western_slab.glb",
+      "candidate": true,
+      "passed": true,
+      "sha256": "55669169bf3d5fcf4acabff3a1b59539fc226dcfd37a06a6611a277b405aa83b",
+      "roof_faces": 92,
+      "invalid_projected_faces": 0,
+      "downward_nonfloor_faces": 0,
+      "downward_triangle_indices": [],
+      "overlapping_projected_roof_area_m2": 4.547473508864641e-13
+    },
+    {
+      "name": "cliff_front_columns",
+      "path": "captures\\foreground_study_17a\\cliff_front_columns.glb",
+      "candidate": true,
+      "passed": true,
+      "sha256": "97fd17be096e81d7aa7826941ecb371e3e6dde09ded34d8349798589aa9c2047",
+      "roof_faces": 102,
+      "invalid_projected_faces": 0,
+      "downward_nonfloor_faces": 0,
+      "downward_triangle_indices": [],
+      "overlapping_projected_roof_area_m2": 0.0
+    },
+    {
+      "name": "cliff_shadow_buttress",
+      "path": "assets\\models\\cliff_shadow_buttress.glb",
+      "candidate": false,
+      "passed": true,
+      "sha256": "6ba023af32cb07980cee5f58a2faccffea17747117c084938b655da5fa742517",
+      "roof_faces": 105,
+      "invalid_projected_faces": 0,
+      "downward_nonfloor_faces": 0,
+      "downward_triangle_indices": [],
+      "overlapping_projected_roof_area_m2": 0.0
+    },
+    {
+      "name": "cliff_central_wall",
+      "path": "assets\\models\\cliff_central_wall.glb",
+      "candidate": false,
+      "passed": true,
+      "sha256": "1830179834bf8beb1a8792f670551b99edfdba4f95b0e8748a207e19acfc30f3",
+      "roof_faces": 119,
+      "invalid_projected_faces": 0,
+      "downward_nonfloor_faces": 0,
+      "downward_triangle_indices": [],
+      "overlapping_projected_roof_area_m2": 4.547473508864641e-13
+    }
+  ]
+}

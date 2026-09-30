@@ -1,0 +1,67 @@
+{
+  "round": "30b",
+  "run_id": "lantern-island-30b-20260908T181107Z-79169d5784aa499ea0429f797ff3fc6e",
+  "visual_verdict": "retain_lower_coast_improvement_continue_native_shell_and_upper_slope_rework",
+  "full_reference_accepted": false,
+  "all_reference_goal_complete": false,
+  "images": [
+    {
+      "view": "night-reference",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-30b-20260908T181107Z-79169d5784aa499ea0429f797ff3fc6e\\images\\night-reference.png",
+      "sha256": "3c1c2689194391b417b02b43f957b16c0d6b55281ab2c020596a74bea5e09b53",
+      "judgment": "Lower coastal double band is reduced and outlying tall fragments are lower. The retained 30a tower/land proportions and house-right composition remain. Broad upper grey slope and narrow perimeter belt still read as a manufactured tier."
+    },
+    {
+      "view": "day-reference",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-30b-20260908T181107Z-79169d5784aa499ea0429f797ff3fc6e\\images\\day-reference.png",
+      "sha256": "877ca0e378756f9c77194f98fae78f1f024cc63f41df22ecf0bcce975109fda5",
+      "judgment": "Daylight confirms lower shoulders are closer to the island. Unchanged upper surface still has a broad orderly slope; lower changes alone do not deliver the irregular central island in 1342."
+    },
+    {
+      "view": "day-d-front",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-30b-20260908T181107Z-79169d5784aa499ea0429f797ff3fc6e\\images\\day-d-front.png",
+      "sha256": "3e483bdc9f0ebbda253de9b126398bd18f388cc1bb61c96c9a042204fd731690",
+      "judgment": "Shorter shoulders avoid the 29c long wedge ramps, but several are substantially buried. Main slope remains wide and relatively uninterrupted; overlap is not proof of visible rock interlock."
+    },
+    {
+      "view": "day-d-back",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-30b-20260908T181107Z-79169d5784aa499ea0429f797ff3fc6e\\images\\day-d-back.png",
+      "sha256": "7a9ff9fd0aa5c414945e5eb289c3fec21bb7357e5cfec8892b2296b799328de0",
+      "judgment": "Rear coast has more local height variation, yet the upper land rim still forms an almost continuous ledge. Original top surface preserves its broad connected planes."
+    },
+    {
+      "view": "day-c-front",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-30b-20260908T181107Z-79169d5784aa499ea0429f797ff3fc6e\\images\\day-c-front.png",
+      "sha256": "381cb2e9f40e4ff5aaeab9afa04f29875270e7bb534207c9d3c1bfb37e15fa77",
+      "judgment": "Clearest remaining defect: narrow dark band follows the boundary of the broad grey upper slope. Lower rocks are less bead-like than 30a, but some read as separate low pieces and others disappear into the body."
+    }
+  ],
+  "compared_to": [
+    "ref/1342.png",
+    "30a five actual GPU views and independent review"
+  ],
+  "geometry_evidence": "reviews/round-30b-independent-geometry.json",
+  "collar_localization": "reviews/round-30b-cap-skirt-localization.json",
+  "runtime_evidence_owner": "Root: reviews/round-30b-runtime-incremental.json; not independently rerun here",
+  "remaining": [
+    "Continuous 0.65m terrain skirt survives above the rebuilt core and aligns with thin dark belt.",
+    "Large unchanged grey top slopes still lack the reference island asymmetric connected fractures.",
+    "Some primary shoulders have nearly fully overlapping sampled sections and may be swallowed visually; contact is not visible silhouette success.",
+    "Five reef-parent pairs lack overlap at sampled z=0.5/2/4m; these bounded slices neither prove global separation nor establish an error."
+  ],
+  "next": [
+    "Weld main terrain/core exterior, remove internal caps and 18 constant-depth skirt faces, retain actual top/path/support geometry for this candidate.",
+    "Review same-camera actual render after weld; do not accept visually from manifold check.",
+    "If broad slope survives, cut/reform the main body locally to expose short broad shoulders; avoid merely adding increasingly large isolated blocks."
+  ],
+  "limits": [
+    "No new Blender/GPU launched by reviewer.",
+    "No exhaustive 3D intersection or walking proof.",
+    "Pixel/source localization supports collar attribution; no isolated-material counterfactual render was performed."
+  ]
+}

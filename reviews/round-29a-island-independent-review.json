@@ -1,0 +1,53 @@
+{
+  "round": "29a",
+  "run_id": "lantern-island-29a-20260908T164954Z-61a6c0bfbae148aab6c70a201c5b1ec9",
+  "visual_verdict": "rework_required",
+  "full_reference_accepted": false,
+  "all_reference_goal_complete": false,
+  "images": [
+    {
+      "view": "night-reference",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-29a-20260908T164954Z-61a6c0bfbae148aab6c70a201c5b1ec9\\images\\night-reference.png",
+      "sha256": "13636c04c53ed628e28464fb4c406246f8be256f20c1853b765e3eb963073fe4"
+    },
+    {
+      "view": "day-reference",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-29a-20260908T164954Z-61a6c0bfbae148aab6c70a201c5b1ec9\\images\\day-reference.png",
+      "sha256": "7859f41c85bcf20ad67f30e1d50a252e7808c3c11cb33ba43e755496312cf599"
+    },
+    {
+      "view": "day-d-front",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-29a-20260908T164954Z-61a6c0bfbae148aab6c70a201c5b1ec9\\images\\day-d-front.png",
+      "sha256": "f4afe84b7e2001edb35b779f8d0c61f9027d775bfe548f878116d988d15b2c1b"
+    },
+    {
+      "view": "day-d-back",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-29a-20260908T164954Z-61a6c0bfbae148aab6c70a201c5b1ec9\\images\\day-d-back.png",
+      "sha256": "e4a745b8daf92f86796bd7d2cd2ff123d57b75c226ba943a8b6ee35a9bd1671c"
+    },
+    {
+      "view": "day-c-front",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-29a-20260908T164954Z-61a6c0bfbae148aab6c70a201c5b1ec9\\images\\day-c-front.png",
+      "sha256": "3ffd211b67d432c9cf9f505fd67f254f40bb920cf0a4d5dbe2010d68962997e1"
+    }
+  ],
+  "geometry_evidence": "reviews/round-29a-independent-geometry.json",
+  "detailed_review": "reviews/round-29a-island-independent-review.md",
+  "local_improvement": "Actual crags interrupt portions of previous sea-facing continuous wall.",
+  "remaining_failures": [
+    "Tall separate spires around retained green terrace",
+    "Repeated small convex polygonal reef fragments",
+    "Broad intact green cap and upper grey ring wall",
+    "Insufficient embedded broad sloping fracture shoulders"
+  ],
+  "scope_limits": [
+    "No Blender or GPU rerun by reviewer",
+    "No full walking or flight clearance acceptance",
+    "Only C/D island geometry candidate reviewed"
+  ]
+}

@@ -1,0 +1,838 @@
+{
+  "round": "35a",
+  "decision": "visual_rework_required_no_art_acceptance",
+  "run_status": "passed",
+  "run_passed": true,
+  "scope": "Seven actually viewed GPU images and two scene references; bounded source/run identity, no new engine or geometry run",
+  "images": [
+    {
+      "view": "storm-high",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35a-20260909T003123Z-b7154d45310e4e2482e9aff200346918\\images\\storm-high.png",
+      "sha256": "6d416e85cfd2e0af3a66f3eadce87ae962e232133d23e35eef19f03245a63f17",
+      "actually_viewed": true,
+      "manifest_matches": true,
+      "sidecar_sha256": "8d71d1561e180e943240ab381c80376a5cd493da3ca4c0cbc72badacf07fa800",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "runtime_matches": true,
+      "water_matches": true,
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -3000.0,
+          520.0,
+          -1250.0
+        ],
+        "rotation": [
+          -0.130871549248695,
+          -0.826470971107483,
+          0.0
+        ]
+      },
+      "sample": {
+        "camera_weather": 1.0,
+        "flash": 0.0,
+        "lightning_native_lights": 3,
+        "lightning_segments": 60,
+        "material_bindings": 385,
+        "rain_center": [
+          -3000.0,
+          520.0,
+          -1300.0
+        ],
+        "scope": "Discrete sampled observation positions in the same world; not a continuous flight replay.",
+        "time": 0.0,
+        "weather_probes": [
+          {
+            "position": [
+              -3500,
+              0,
+              -3500
+            ],
+            "storm": 1.0
+          },
+          {
+            "position": [
+              -2350,
+              0,
+              -3500
+            ],
+            "storm": 0.5
+          },
+          {
+            "position": [
+              -1200,
+              0,
+              -3500
+            ],
+            "storm": 0.0
+          }
+        ]
+      },
+      "production_modified": false
+    },
+    {
+      "view": "storm-coast-low",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35a-20260909T003123Z-b7154d45310e4e2482e9aff200346918\\images\\storm-coast-low.png",
+      "sha256": "94abc618e552086884b123acf4809cb2eb9e59abae38f5e04c308adc44205bda",
+      "actually_viewed": true,
+      "manifest_matches": true,
+      "sidecar_sha256": "f3ee7873dbba7f3a1af700ee5eb766de1f91b6ea7060f0e7ded73507737ba0da",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "runtime_matches": true,
+      "water_matches": true,
+      "camera": {
+        "fov": 60.0,
+        "position": [
+          -2830.0,
+          170.0,
+          -1550.0
+        ],
+        "rotation": [
+          -0.00844998378306627,
+          -0.95349383354187,
+          0.0
+        ]
+      },
+      "sample": {
+        "camera_weather": 1.0,
+        "flash": 0.0,
+        "lightning_native_lights": 3,
+        "lightning_segments": 60,
+        "material_bindings": 385,
+        "rain_center": [
+          -2900.0,
+          170.0,
+          -1600.0
+        ],
+        "scope": "Discrete sampled observation positions in the same world; not a continuous flight replay.",
+        "time": 0.0,
+        "weather_probes": [
+          {
+            "position": [
+              -3500,
+              0,
+              -3500
+            ],
+            "storm": 1.0
+          },
+          {
+            "position": [
+              -2350,
+              0,
+              -3500
+            ],
+            "storm": 0.5
+          },
+          {
+            "position": [
+              -1200,
+              0,
+              -3500
+            ],
+            "storm": 0.0
+          }
+        ]
+      },
+      "production_modified": false
+    },
+    {
+      "view": "storm-inside",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35a-20260909T003123Z-b7154d45310e4e2482e9aff200346918\\images\\storm-inside.png",
+      "sha256": "7af040a2235bf21f4e7621c57ebeb39eb6ca65d471f100341e12ba56e878f662",
+      "actually_viewed": true,
+      "manifest_matches": true,
+      "sidecar_sha256": "98e0b7e8b9bd7052d6a5cbf40b4bf43f5078ad5a1f14c324b64eeeed081844bb",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "runtime_matches": true,
+      "water_matches": true,
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -3700.0,
+          330.0,
+          -2500.0
+        ],
+        "rotation": [
+          -0.0645345821976662,
+          -0.152649328112602,
+          0.0
+        ]
+      },
+      "sample": {
+        "camera_weather": 1.0,
+        "flash": 0.0,
+        "lightning_native_lights": 3,
+        "lightning_segments": 60,
+        "material_bindings": 385,
+        "rain_center": [
+          -3700.0,
+          330.0,
+          -2500.0
+        ],
+        "scope": "Discrete sampled observation positions in the same world; not a continuous flight replay.",
+        "time": 0.0,
+        "weather_probes": [
+          {
+            "position": [
+              -3500,
+              0,
+              -3500
+            ],
+            "storm": 1.0
+          },
+          {
+            "position": [
+              -2350,
+              0,
+              -3500
+            ],
+            "storm": 0.5
+          },
+          {
+            "position": [
+              -1200,
+              0,
+              -3500
+            ],
+            "storm": 0.0
+          }
+        ]
+      },
+      "production_modified": false
+    },
+    {
+      "view": "storm-edge",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35a-20260909T003123Z-b7154d45310e4e2482e9aff200346918\\images\\storm-edge.png",
+      "sha256": "3a7f4b9e59e22c22985d9175c5e81f6752ec92d16eb6a98e1fcb8be9025b7128",
+      "actually_viewed": true,
+      "manifest_matches": true,
+      "sidecar_sha256": "160cc52b6cda01c4a7ede57fcb9692504893916517a1936656d8503b32afdea1",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "runtime_matches": true,
+      "water_matches": true,
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -2350.0,
+          330.0,
+          -2500.0
+        ],
+        "rotation": [
+          -0.0645345821976662,
+          -0.152649328112602,
+          0.0
+        ]
+      },
+      "sample": {
+        "camera_weather": 0.658578857700478,
+        "flash": 0.0,
+        "lightning_native_lights": 3,
+        "lightning_segments": 60,
+        "material_bindings": 385,
+        "rain_center": [
+          -2400.0,
+          330.0,
+          -2500.0
+        ],
+        "scope": "Discrete sampled observation positions in the same world; not a continuous flight replay.",
+        "time": 0.0,
+        "weather_probes": [
+          {
+            "position": [
+              -3500,
+              0,
+              -3500
+            ],
+            "storm": 1.0
+          },
+          {
+            "position": [
+              -2350,
+              0,
+              -3500
+            ],
+            "storm": 0.5
+          },
+          {
+            "position": [
+              -1200,
+              0,
+              -3500
+            ],
+            "storm": 0.0
+          }
+        ]
+      },
+      "production_modified": false
+    },
+    {
+      "view": "storm-clear",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35a-20260909T003123Z-b7154d45310e4e2482e9aff200346918\\images\\storm-clear.png",
+      "sha256": "0545b88df7b5d6fc3f5698e9cd1ff5e9496878c1c6c3d9e20565cf258bb5846d",
+      "actually_viewed": true,
+      "manifest_matches": true,
+      "sidecar_sha256": "d71f1984c7e77870e87181c807c7b7a7e512d170f6e63c0f0df809702d34a848",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "runtime_matches": true,
+      "water_matches": true,
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -1600.0,
+          330.0,
+          -2500.0
+        ],
+        "rotation": [
+          -0.0645345821976662,
+          -0.152649328112602,
+          0.0
+        ]
+      },
+      "sample": {
+        "camera_weather": 0.0,
+        "flash": 0.0,
+        "lightning_native_lights": 3,
+        "lightning_segments": 60,
+        "material_bindings": 385,
+        "rain_center": [
+          -1600.0,
+          330.0,
+          -2500.0
+        ],
+        "scope": "Discrete sampled observation positions in the same world; not a continuous flight replay.",
+        "time": 0.0,
+        "weather_probes": [
+          {
+            "position": [
+              -3500,
+              0,
+              -3500
+            ],
+            "storm": 1.0
+          },
+          {
+            "position": [
+              -2350,
+              0,
+              -3500
+            ],
+            "storm": 0.5
+          },
+          {
+            "position": [
+              -1200,
+              0,
+              -3500
+            ],
+            "storm": 0.0
+          }
+        ]
+      },
+      "production_modified": false
+    },
+    {
+      "view": "storm-flash",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35a-20260909T003123Z-b7154d45310e4e2482e9aff200346918\\images\\storm-flash.png",
+      "sha256": "c390406c032b03f1a0ea5495d86541c2b0c96541102ed21b9be94dfbb27a62ec",
+      "actually_viewed": true,
+      "manifest_matches": true,
+      "sidecar_sha256": "036db4600a292ebe72406803175a84c9fdc415d08e3a208d7ad9044efed699b3",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "runtime_matches": true,
+      "water_matches": true,
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -3000.0,
+          520.0,
+          -1250.0
+        ],
+        "rotation": [
+          -0.130871549248695,
+          -0.826470971107483,
+          0.0
+        ]
+      },
+      "sample": {
+        "camera_weather": 1.0,
+        "flash": 1.0,
+        "lightning_native_lights": 3,
+        "lightning_segments": 60,
+        "material_bindings": 385,
+        "rain_center": [
+          -3000.0,
+          520.0,
+          -1300.0
+        ],
+        "scope": "Discrete sampled observation positions in the same world; not a continuous flight replay.",
+        "time": 2.04,
+        "weather_probes": [
+          {
+            "position": [
+              -3500,
+              0,
+              -3500
+            ],
+            "storm": 1.0
+          },
+          {
+            "position": [
+              -2350,
+              0,
+              -3500
+            ],
+            "storm": 0.5
+          },
+          {
+            "position": [
+              -1200,
+              0,
+              -3500
+            ],
+            "storm": 0.0
+          }
+        ]
+      },
+      "production_modified": false
+    },
+    {
+      "view": "storm-cloud-back",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35a-20260909T003123Z-b7154d45310e4e2482e9aff200346918\\images\\storm-cloud-back.png",
+      "sha256": "3da131ce66b8186cffa498e2715bd034299618e1acb4c87789b1dcbb9a4f5172",
+      "actually_viewed": true,
+      "manifest_matches": true,
+      "sidecar_sha256": "afc95e7195b125bd3beb61640480d0c4b109200bc27e9e89256e4d9a8f1bc2b1",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "runtime_matches": true,
+      "water_matches": true,
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -4600.0,
+          1400.0,
+          -2900.0
+        ],
+        "rotation": [
+          -0.223694682121277,
+          -1.20906710624695,
+          0.0
+        ]
+      },
+      "sample": {
+        "camera_weather": 1.0,
+        "flash": 0.0,
+        "lightning_native_lights": 3,
+        "lightning_segments": 60,
+        "material_bindings": 385,
+        "rain_center": [
+          -4600.0,
+          1400.0,
+          -2900.0
+        ],
+        "scope": "Discrete sampled observation positions in the same world; not a continuous flight replay.",
+        "time": 0.0,
+        "weather_probes": [
+          {
+            "position": [
+              -3500,
+              0,
+              -3500
+            ],
+            "storm": 1.0
+          },
+          {
+            "position": [
+              -2350,
+              0,
+              -3500
+            ],
+            "storm": 0.5
+          },
+          {
+            "position": [
+              -1200,
+              0,
+              -3500
+            ],
+            "storm": 0.0
+          }
+        ]
+      },
+      "production_modified": false
+    }
+  ],
+  "references": [
+    {
+      "path": "E:\\FeiTing\\ref\\1125.png",
+      "sha256": "aeda03c290ee0d0cb5e7ce3c2ed0e841256f02d2165b2b4cc6cebb0dd2e2a9c3",
+      "actually_viewed": true
+    },
+    {
+      "path": "E:\\FeiTing\\ref\\1341.png",
+      "sha256": "f6020fad26ece1c0021e61f8ea1afae320460a48468f3da6bc6004d4aa7293ef",
+      "actually_viewed": true
+    }
+  ],
+  "frozen_files": [
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35a-20260909T003123Z-b7154d45310e4e2482e9aff200346918\\study-inputs\\storm35a\\builder.py",
+      "sha256": "bc0b498ffb36e5e71ab305408f7e54050cc698a950a8125e5598b34c46193894",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35a-20260909T003123Z-b7154d45310e4e2482e9aff200346918\\study-inputs\\storm35a\\cliff_surface.gdshader",
+      "sha256": "668c193959c9007c25edba90da8fc63a2cf74f79907b4fbb1f01d3221156db14",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35a-20260909T003123Z-b7154d45310e4e2482e9aff200346918\\study-inputs\\storm35a\\cloud_surface.gdshader",
+      "sha256": "fa9f0fb46a3319016e718c3d9679b70dbc3a24ac810eefc71c567036754a5e6f",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35a-20260909T003123Z-b7154d45310e4e2482e9aff200346918\\study-inputs\\storm35a\\design-plan.json",
+      "sha256": "54413e12c07d0bad9549d79b3946144d7c131b25d88e40b8f8eb28da638f9ed1",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35a-20260909T003123Z-b7154d45310e4e2482e9aff200346918\\study-inputs\\storm35a\\moon.gdshader",
+      "sha256": "6ea8050f93cf21f44cb14c8ab3ed5674b309dd382854ba2ff709bb006b50a146",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35a-20260909T003123Z-b7154d45310e4e2482e9aff200346918\\study-inputs\\storm35a\\open_sky.gdshader",
+      "sha256": "b514467ebb754a42057c23475b245b51045ed74804cb4faa7598138dd40e80cb",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35a-20260909T003123Z-b7154d45310e4e2482e9aff200346918\\study-inputs\\storm35a\\open_water.gdshader",
+      "sha256": "547e72c91c441240887785e291cb22329ba36e38ff865d0df0ff2c2bd96cf145",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35a-20260909T003123Z-b7154d45310e4e2482e9aff200346918\\study-inputs\\storm35a\\ship_surface.gdshader",
+      "sha256": "aab31f1c13603775f1cd035a67394e6cb3594eeea97fc0a72905045fdf7ec467",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35a-20260909T003123Z-b7154d45310e4e2482e9aff200346918\\study-inputs\\storm35a\\storm_cloud.gdshader",
+      "sha256": "46fc39e043530669081dd450bd291601378d56d89e0ed1d71518dc4d0da34e8c",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35a-20260909T003123Z-b7154d45310e4e2482e9aff200346918\\study-inputs\\storm35a\\storm_common.gdshaderinc",
+      "sha256": "acd8100f423a9076c136dc2b51a8ba813e2df00209044f14a340b9eaa0e0d6ed",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35a-20260909T003123Z-b7154d45310e4e2482e9aff200346918\\study-inputs\\storm35a\\storm_front_35a.gd",
+      "sha256": "d16d261023da79bc00d9834ddf0f95ce22f4a676c3676834de4f6fbe3e54ac9d",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35a-20260909T003123Z-b7154d45310e4e2482e9aff200346918\\study-inputs\\storm35a\\storm_native.gdshader",
+      "sha256": "3237c78565cf8862cae3fb39794c8c920e3c44870494865eb6339766e2f49375",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35a-20260909T003123Z-b7154d45310e4e2482e9aff200346918\\study-inputs\\storm35a\\storm_rain.gdshader",
+      "sha256": "bab33bb78c3517edca775cee3630d4a8e838828d8bf5fd10e126742211bbeae4",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35a-20260909T003123Z-b7154d45310e4e2482e9aff200346918\\study-inputs\\storm35a\\storm_sky.gdshader",
+      "sha256": "b1bcaac9eaecbd4b113cfda6278b6df221f064afafac2820e414dcd72590216c",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35a-20260909T003123Z-b7154d45310e4e2482e9aff200346918\\study-inputs\\storm35a\\terrain_native.gdshader",
+      "sha256": "42a6aabcaa77be6b339515de01b92f041afb496e883ec1faddb36fff9b79b6be",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35a-20260909T003123Z-b7154d45310e4e2482e9aff200346918\\study-inputs\\storm35a\\wood_surface.gdshader",
+      "sha256": "eb62d082eabd6fd2d021164f11cf2c9792b50f340b64e3e537710bc55129e33f",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35a-20260909T003123Z-b7154d45310e4e2482e9aff200346918\\study-inputs\\storm35a\\world_surface.gdshader",
+      "sha256": "b84d5da6b17361890088396d2921ef177bd654b962ae9c94a3cbcec19251c6a2",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35a-20260909T003123Z-b7154d45310e4e2482e9aff200346918\\study-inputs\\storm35a\\cloud-assets\\builder.py",
+      "sha256": "e619c1d5ddd4964dfbe916936f3f4ebe129dec7a86895b2bc7836f9d3a6a6f29",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35a-20260909T003123Z-b7154d45310e4e2482e9aff200346918\\study-inputs\\storm35a\\cloud-assets\\model-report.json",
+      "sha256": "e3a32a1b570b1395e081ec9ef82d73ad888db991c1b469bf8cb6e55e919cff68",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35a-20260909T003123Z-b7154d45310e4e2482e9aff200346918\\study-inputs\\storm35a\\cloud-assets\\storm_front_shelf.blend",
+      "sha256": "d805c64d89b45800d28f770b567853d7491a459cecb9e72015f39847b84652f8",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35a-20260909T003123Z-b7154d45310e4e2482e9aff200346918\\study-inputs\\storm35a\\cloud-assets\\storm_front_shelf.glb",
+      "sha256": "1a7a3594838e587f7e07952075a92738074a3c99665af0a7697800f6b3c69306",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35a-20260909T003123Z-b7154d45310e4e2482e9aff200346918\\study-inputs\\storm35a\\cloud-assets\\storm_rain_scud.blend",
+      "sha256": "721acc14ad4701a0c5f1b45e8b6754a1fcbca35f1ba90ae1ab95c95f36f985b4",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35a-20260909T003123Z-b7154d45310e4e2482e9aff200346918\\study-inputs\\storm35a\\cloud-assets\\storm_rain_scud.glb",
+      "sha256": "231652bdbef3daf0bb6558f74b30874e5442eab68bf04a1b62215a3bd6395622",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35a-20260909T003123Z-b7154d45310e4e2482e9aff200346918\\study-inputs\\storm35a\\cloud-assets\\storm_rear_anvil.blend",
+      "sha256": "e6ff21a7f8a64da5791bdf18cc818474f9ada8806dd8e422f4c2aafdc6bfb443",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35a-20260909T003123Z-b7154d45310e4e2482e9aff200346918\\study-inputs\\storm35a\\cloud-assets\\storm_rear_anvil.glb",
+      "sha256": "4484f742051425af4671337cc24e051d9d10ed1182fab4620235b5c8cf869672",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35a-20260909T003123Z-b7154d45310e4e2482e9aff200346918\\study-inputs\\render_storm_35a.py",
+      "sha256": "687ee60ec0f4578ef0911fa92574d9b934df547250766a122a34e6d9bbc4ec4a",
+      "manifest_matches": true
+    },
+    {
+      "path": "E:\\FeiTing\\captures\\validation_runs\\storm-35a-20260909T003123Z-b7154d45310e4e2482e9aff200346918\\actual-storm-revision.json",
+      "sha256": "ff7f232c9849026144ea53e268ca8085b03d7ddc6cf85b49bcefc4d03301eb21",
+      "manifest_matches": true
+    }
+  ],
+  "setup_summary": {
+    "front_mask": "world X - curved X(Z), 900m horizontal transition and finite north/south extent",
+    "native_materials_adapted": 391,
+    "rain_instances": 14000,
+    "rain_seed": 350109,
+    "scope": "Actual new Blender clouds, world-oriented rain, fixed spatial lightning, shared world weather mask. Cloud shadow uses an authored weather-field approximation, not ray-marched cloud optical transport. Existing land unchanged; reference landforms still incomplete."
+  },
+  "cloud_instances": [
+    {
+      "asset": "storm_front_shelf",
+      "glb_sha256": "1a7a3594838e587f7e07952075a92738074a3c99665af0a7697800f6b3c69306",
+      "mesh_parts": 7,
+      "position": [
+        -2502.40209960938,
+        920.0,
+        -1000.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "asset": "storm_rear_anvil",
+      "glb_sha256": "4484f742051425af4671337cc24e051d9d10ed1182fab4620235b5c8cf869672",
+      "mesh_parts": 6,
+      "position": [
+        -2702.40209960938,
+        1040.0,
+        -1180.0
+      ],
+      "scale": [
+        1.04999995231628,
+        1.0,
+        1.04999995231628
+      ]
+    },
+    {
+      "asset": "storm_rain_scud",
+      "glb_sha256": "231652bdbef3daf0bb6558f74b30874e5442eab68bf04a1b62215a3bd6395622",
+      "mesh_parts": 4,
+      "position": [
+        -2582.40209960938,
+        685.0,
+        -1090.0
+      ],
+      "scale": [
+        0.850000023841858,
+        0.720000028610229,
+        0.860000014305115
+      ]
+    },
+    {
+      "asset": "storm_front_shelf",
+      "glb_sha256": "1a7a3594838e587f7e07952075a92738074a3c99665af0a7697800f6b3c69306",
+      "mesh_parts": 7,
+      "position": [
+        -2608.54663085938,
+        954.912353515625,
+        -3100.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "asset": "storm_rear_anvil",
+      "glb_sha256": "4484f742051425af4671337cc24e051d9d10ed1182fab4620235b5c8cf869672",
+      "mesh_parts": 6,
+      "position": [
+        -2808.54663085938,
+        1040.0,
+        -3280.0
+      ],
+      "scale": [
+        1.04999995231628,
+        1.0,
+        1.04999995231628
+      ]
+    },
+    {
+      "asset": "storm_rain_scud",
+      "glb_sha256": "231652bdbef3daf0bb6558f74b30874e5442eab68bf04a1b62215a3bd6395622",
+      "mesh_parts": 4,
+      "position": [
+        -2688.54663085938,
+        685.0,
+        -3190.0
+      ],
+      "scale": [
+        0.850000023841858,
+        0.720000028610229,
+        0.860000014305115
+      ]
+    },
+    {
+      "asset": "storm_front_shelf",
+      "glb_sha256": "1a7a3594838e587f7e07952075a92738074a3c99665af0a7697800f6b3c69306",
+      "mesh_parts": 7,
+      "position": [
+        -2789.25537109375,
+        924.939208984375,
+        -5200.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "asset": "storm_rear_anvil",
+      "glb_sha256": "4484f742051425af4671337cc24e051d9d10ed1182fab4620235b5c8cf869672",
+      "mesh_parts": 6,
+      "position": [
+        -2989.25537109375,
+        1040.0,
+        -5380.0
+      ],
+      "scale": [
+        1.04999995231628,
+        1.0,
+        1.04999995231628
+      ]
+    },
+    {
+      "asset": "storm_rain_scud",
+      "glb_sha256": "231652bdbef3daf0bb6558f74b30874e5442eab68bf04a1b62215a3bd6395622",
+      "mesh_parts": 4,
+      "position": [
+        -2869.25537109375,
+        685.0,
+        -5290.0
+      ],
+      "scale": [
+        0.850000023841858,
+        0.720000028610229,
+        0.860000014305115
+      ]
+    },
+    {
+      "asset": "storm_front_shelf",
+      "glb_sha256": "1a7a3594838e587f7e07952075a92738074a3c99665af0a7697800f6b3c69306",
+      "mesh_parts": 7,
+      "position": [
+        -2719.47875976563,
+        885.786437988281,
+        -7300.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "asset": "storm_rear_anvil",
+      "glb_sha256": "4484f742051425af4671337cc24e051d9d10ed1182fab4620235b5c8cf869672",
+      "mesh_parts": 6,
+      "position": [
+        -2919.47875976563,
+        1040.0,
+        -7480.0
+      ],
+      "scale": [
+        1.04999995231628,
+        1.0,
+        1.04999995231628
+      ]
+    },
+    {
+      "asset": "storm_rain_scud",
+      "glb_sha256": "231652bdbef3daf0bb6558f74b30874e5442eab68bf04a1b62215a3bd6395622",
+      "mesh_parts": 4,
+      "position": [
+        -2799.47875976563,
+        685.0,
+        -7390.0
+      ],
+      "scale": [
+        0.850000023841858,
+        0.720000028610229,
+        0.860000014305115
+      ]
+    }
+  ],
+  "priority_order": [
+    {
+      "rank": 1,
+      "issue": "Huge opaque black cloud sacs, repeated ellipsoid chains, insufficient cloud-front depth",
+      "action": "Reshape native cloud shelf/anvil/scud into layered connected front with smaller scale changes and lit gray planes"
+    },
+    {
+      "rank": 2,
+      "issue": "Orange sky dominates storm interiors, separate bright white original clouds, abrupt weather strips",
+      "action": "Coordinate actual sky/cloud/ground weather shading spatially; preserve warm clear side of1125, blue-gray storm side of1341"
+    },
+    {
+      "rank": 3,
+      "issue": "Flat mainland and remote isolated mountains instead of high coast and inlets",
+      "action": "Build actual coast-adjacent ridges, high rocky forecoast and channels in same world; environment alone cannot solve"
+    },
+    {
+      "rank": 4,
+      "issue": "Repeated bright water scratches, thin vertical rain and weakly readable flash",
+      "action": "Improve coherent wave scales and weather-depth/rain/visible lightning after dominant cloud/sky work"
+    }
+  ],
+  "diagnostic_limits": {
+    "cloud_back": "Screen nearly occluded by close opaque cloud planes; image indicates in-or-near geometry but this review did not calculate point containment",
+    "flash": "Left violet illumination visible, no clearly readable branching bolt in this sampled image; runtime records segments/lights, so not evidence lightning absent",
+    "positions": "Discrete views, not continuous flight replay"
+  },
+  "full_reference_accepted": false,
+  "production_modified_by_reviewer": false
+}

@@ -1,0 +1,311 @@
+{
+  "round": "30h",
+  "scope": "Actual30h GLB versus30d; required support masks, closed native shell, actual faceted cutter coverage, and six previously visible target XY heights only.30e failed model is not accepted or used as an asset baseline.",
+  "files": {
+    "captures\\lantern_island_study_30h\\island_c.glb": "7c3101ffbd8403baa04d4be80348d762a5cc4a612d9b51db963774cb5e6a26d2",
+    "captures\\lantern_island_study_30h\\geometry-evidence.json": "2e32f58abde88bcd58436d1afe59ee336833206aa0bc9e9bedc3c31d21a62376",
+    "captures\\lantern_island_study_30d\\island_c.glb": "7c5e4f1f66436fb2b28cb16416be8d08d95657f96b86dcfd282106b37ca18c5f",
+    "captures\\island-30e-faceted-cut-plan.json": "2b739ed9baa5a9577737073f221397d3eee5631595ac6844088776ba8e1245ac"
+  },
+  "joint_builder_changes": {
+    "boolean_solver": "MANIFOLD",
+    "lower_floor_clamped_to_source": false,
+    "causality": "30e/30f/30g failed.30h changes cutter tessellation while retaining MANIFOLD solver and unclamped floor; successful output does not alone isolate all earlier failure causes.",
+    "cutter_tessellation": "30h constraints independent of source interior triangle edges, sampled cutter boundaries plus inset and anchors; see round-30h-plan-independent.json"
+  },
+  "native_objects": 19,
+  "actual_glb_terrain_triangle_count": 2550,
+  "source_terrain_all_triangles_equal_actual_glb": true,
+  "actual_glb_closed_oppositely_paired_edges_at_1e_5m": true,
+  "actual_glb_min_triangle_area_m2": 4.2660192629562824e-08,
+  "actual_glb_volume_m3": 21410.772728915217,
+  "path_and_17_rocks_source_exact_actual_triangles_present": [
+    "island_c terrain fitted keeper paths",
+    "West broken shoulder",
+    "Southwest leaning crag",
+    "South broad low spur",
+    "East high fracture",
+    "Northeast sloping shoulder",
+    "North broken ridge",
+    "Northwest split buttress",
+    "West rooted toe",
+    "Southwest wash ledge",
+    "South low reef",
+    "East submerged root",
+    "Northeast low cluster",
+    "North tidal end",
+    "Northwest rooted slab",
+    "West waterline satellite",
+    "South low satellite",
+    "East tidal satellite"
+  ],
+  "actual_path_glb_counter_exact": true,
+  "required_support_surfaces": [
+    {
+      "region": "road_footprint",
+      "expected_support_projection_area_m2": 25.572388056364687,
+      "same_linear_height_coverage_m2": 25.57238805636466,
+      "unpreserved_area_m2": 0.0,
+      "higher_than_old_by_over_0_1mm_area_m2": 0.0,
+      "all_intersecting_up_surface_height_delta_min_max_m": [
+        0.0,
+        0.0
+      ],
+      "pass": true
+    },
+    {
+      "region": "padded_sites",
+      "expected_support_projection_area_m2": 123.97999999993658,
+      "same_linear_height_coverage_m2": 123.97999999993658,
+      "unpreserved_area_m2": 0.0,
+      "higher_than_old_by_over_0_1mm_area_m2": 0.0,
+      "all_intersecting_up_surface_height_delta_min_max_m": [
+        0.0,
+        0.0
+      ],
+      "pass": true
+    },
+    {
+      "region": "current_CD_tree_axis_2m_disks",
+      "expected_support_projection_area_m2": 77.46574321362782,
+      "same_linear_height_coverage_m2": 77.46574321362786,
+      "unpreserved_area_m2": 0.0,
+      "higher_than_old_by_over_0_1mm_area_m2": 0.0,
+      "all_intersecting_up_surface_height_delta_min_max_m": [
+        -3.2258025592042173e-07,
+        2.4584289642358594e-07
+      ],
+      "pass": true
+    }
+  ],
+  "actual_native_cutter_bottoms": [
+    {
+      "name": "Southern broken lip 0",
+      "actual_bottom_vertices": 42,
+      "actual_bottom_triangles": 51,
+      "actual_projection_area_m2": 140.49999905455684,
+      "projection_difference_from_validated30e_plan_m2": 8.278809861012038e-06,
+      "actual_bottom_projection_min_protection_gap_m": 0.8334181683671262,
+      "actual_bottom_z_min_max_m": [
+        -1.0,
+        10.733884284864763
+      ]
+    },
+    {
+      "name": "Southeast staggered recess 0",
+      "actual_bottom_vertices": 48,
+      "actual_bottom_triangles": 59,
+      "actual_projection_area_m2": 192.0000001683834,
+      "projection_difference_from_validated30e_plan_m2": 4.175801980449423e-06,
+      "actual_bottom_projection_min_protection_gap_m": 3.1989020300942577,
+      "actual_bottom_z_min_max_m": [
+        -1.0,
+        9.147969217368976
+      ]
+    },
+    {
+      "name": "Eastern split shoulder 0",
+      "actual_bottom_vertices": 176,
+      "actual_bottom_triangles": 229,
+      "actual_projection_area_m2": 191.36918357344572,
+      "projection_difference_from_validated30e_plan_m2": 1.3103608549221248e-05,
+      "actual_bottom_projection_min_protection_gap_m": 0.3977060244317513,
+      "actual_bottom_z_min_max_m": [
+        -1.0,
+        9.928250693023148
+      ]
+    }
+  ],
+  "six_target_actual_cut_depths": [
+    {
+      "pixel_30d": [
+        620,
+        548
+      ],
+      "old_source_face": 488,
+      "xy": [
+        -8.40268045512721,
+        -22.849759835229733
+      ],
+      "old_actual_main_surface_z_m": 5.2282953933723775,
+      "new_actual_main_surface_z_m": 2.2956458502437798,
+      "actual_vertical_cut_depth_m": 2.9326495431285977,
+      "native_cutter_bottoms": [
+        {
+          "component": "Southern broken lip 0",
+          "actual_linear_bottom_height_m": 2.2956456869922732
+        },
+        {
+          "component": "Southeast staggered recess 0",
+          "actual_linear_bottom_height_m": null
+        },
+        {
+          "component": "Eastern split shoulder 0",
+          "actual_linear_bottom_height_m": null
+        }
+      ],
+      "expected_boolean_surface_z_m": 2.2956456869922732,
+      "actual_minus_expected_m": 1.6325150653528908e-07
+    },
+    {
+      "pixel_30d": [
+        700,
+        550
+      ],
+      "old_source_face": 308,
+      "xy": [
+        -2.2022517020657375,
+        -17.609635469750906
+      ],
+      "old_actual_main_surface_z_m": 5.168115246216708,
+      "new_actual_main_surface_z_m": 2.2905233847118938,
+      "actual_vertical_cut_depth_m": 2.877591861504814,
+      "native_cutter_bottoms": [
+        {
+          "component": "Southern broken lip 0",
+          "actual_linear_bottom_height_m": 2.2905234156333476
+        },
+        {
+          "component": "Southeast staggered recess 0",
+          "actual_linear_bottom_height_m": null
+        },
+        {
+          "component": "Eastern split shoulder 0",
+          "actual_linear_bottom_height_m": null
+        }
+      ],
+      "expected_boolean_surface_z_m": 2.2905234156333476,
+      "actual_minus_expected_m": -3.092145384187006e-08
+    },
+    {
+      "pixel_30d": [
+        770,
+        552
+      ],
+      "old_source_face": 978,
+      "xy": [
+        4.532523203799933,
+        -14.299116844883912
+      ],
+      "old_actual_main_surface_z_m": 5.8502160527939395,
+      "new_actual_main_surface_z_m": 5.745925223433517,
+      "actual_vertical_cut_depth_m": 0.10429082936042278,
+      "native_cutter_bottoms": [
+        {
+          "component": "Southern broken lip 0",
+          "actual_linear_bottom_height_m": null
+        },
+        {
+          "component": "Southeast staggered recess 0",
+          "actual_linear_bottom_height_m": 5.7459246093094265
+        },
+        {
+          "component": "Eastern split shoulder 0",
+          "actual_linear_bottom_height_m": null
+        }
+      ],
+      "expected_boolean_surface_z_m": 5.7459246093094265,
+      "actual_minus_expected_m": 6.141240902479694e-07
+    },
+    {
+      "pixel_30d": [
+        825,
+        570
+      ],
+      "old_source_face": 897,
+      "xy": [
+        9.7694224328081,
+        -12.00553936418725
+      ],
+      "old_actual_main_surface_z_m": 4.766233120714361,
+      "new_actual_main_surface_z_m": 3.505611582626977,
+      "actual_vertical_cut_depth_m": 1.260621538087384,
+      "native_cutter_bottoms": [
+        {
+          "component": "Southern broken lip 0",
+          "actual_linear_bottom_height_m": null
+        },
+        {
+          "component": "Southeast staggered recess 0",
+          "actual_linear_bottom_height_m": 3.5056115457000856
+        },
+        {
+          "component": "Eastern split shoulder 0",
+          "actual_linear_bottom_height_m": null
+        }
+      ],
+      "expected_boolean_surface_z_m": 3.5056115457000856,
+      "actual_minus_expected_m": 3.692689132250848e-08
+    },
+    {
+      "pixel_30d": [
+        900,
+        548
+      ],
+      "old_source_face": 877,
+      "xy": [
+        14.147895588078221,
+        -6.029880281978336
+      ],
+      "old_actual_main_surface_z_m": 6.470663971243843,
+      "new_actual_main_surface_z_m": 6.470663983532451,
+      "actual_vertical_cut_depth_m": -1.228860835311707e-08,
+      "native_cutter_bottoms": [
+        {
+          "component": "Southern broken lip 0",
+          "actual_linear_bottom_height_m": null
+        },
+        {
+          "component": "Southeast staggered recess 0",
+          "actual_linear_bottom_height_m": null
+        },
+        {
+          "component": "Eastern split shoulder 0",
+          "actual_linear_bottom_height_m": null
+        }
+      ],
+      "expected_boolean_surface_z_m": 6.470663971243843,
+      "actual_minus_expected_m": 1.228860835311707e-08
+    },
+    {
+      "pixel_30d": [
+        970,
+        548
+      ],
+      "old_source_face": 1487,
+      "xy": [
+        17.60043907418696,
+        0.8834506482421745
+      ],
+      "old_actual_main_surface_z_m": 5.352697758792004,
+      "new_actual_main_surface_z_m": 2.790366282026906,
+      "actual_vertical_cut_depth_m": 2.5623314767650984,
+      "native_cutter_bottoms": [
+        {
+          "component": "Southern broken lip 0",
+          "actual_linear_bottom_height_m": null
+        },
+        {
+          "component": "Southeast staggered recess 0",
+          "actual_linear_bottom_height_m": null
+        },
+        {
+          "component": "Eastern split shoulder 0",
+          "actual_linear_bottom_height_m": 2.7903662815236268
+        }
+      ],
+      "expected_boolean_surface_z_m": 2.7903662815236268,
+      "actual_minus_expected_m": 5.032791960957184e-10
+    }
+  ],
+  "pass": true,
+  "full_reference_accepted": false,
+  "limits": [
+    "New runtime placements/footings are separate root evidence. Support masks here use latest30d actual C/D axes.",
+    "Six-point depths prove actual change at those ground coordinates, not new camera visibility or complete visual quality.",
+    "No full3D self-intersection/walking proof or GPU run by reviewer.",
+    "Failed30e topology remains failed;30h joint changes do not establish a unique root cause.",
+    "30f and30g also have no accepted native export; neither is an asset baseline."
+  ],
+  "near_protection_transition_evidence": "reviews/round-30h-near-protection.json"
+}

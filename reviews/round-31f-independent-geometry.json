@@ -1,0 +1,1147 @@
+{
+  "round": "31f",
+  "scope": "Actual31e to31f discrete sculpt, full road/pad and actual native tree-base support, original2m disk differences retained, local finite-triangle self-intersection sweep, named anchors and bounded seaward-rock contact check. Historical operands only provenance.",
+  "files": {
+    "captures\\lantern_island_study_31f\\island_c.glb": "eafc86f5351b5e7a53e05b45b806a277700fe886446115b9e33e7676aa83d1ef",
+    "captures\\lantern_island_study_31f\\geometry-evidence.json": "3bd62c9849c70786596535b54a44876f35caf50556ce49d71b8d496906007278",
+    "captures\\lantern_island_study_31f\\reform-plan.json": "178cb17ff798eac6d2a0ba990873e5fa2ce2efd00d7b925f574647bbe8604eb3",
+    "captures\\lantern_island_study_31e\\island_c.glb": "5244d557e61340caca6a06ef65ce637c05c1ea48b79c6eecde54c45425e694b0"
+  },
+  "native_objects": 19,
+  "actual_main_triangles": 2342,
+  "closed_oppositely_paired_edges": true,
+  "connected_components_vertices": [
+    1173
+  ],
+  "minimum_actual_triangle_area_m2": 1.4351405588411331e-06,
+  "actual_volume_m3": 21794.051287850663,
+  "path_and17rocks_source_exact_actual_triangles_present": [
+    "island_c terrain fitted keeper paths",
+    "West broken shoulder",
+    "Southwest leaning crag",
+    "South broad low spur",
+    "East high fracture",
+    "Northeast sloping shoulder",
+    "North broken ridge",
+    "Northwest split buttress",
+    "West rooted toe",
+    "Southwest wash ledge",
+    "South low reef",
+    "East submerged root",
+    "Northeast low cluster",
+    "North tidal end",
+    "Northwest rooted slab",
+    "West waterline satellite",
+    "South low satellite",
+    "East tidal satellite"
+  ],
+  "actual_path_glb_counter_exact": true,
+  "required_supports": [
+    {
+      "region": "road_footprint",
+      "expected_support_projection_area_m2": 25.572388056364687,
+      "same_linear_height_coverage_m2": 25.57238805636466,
+      "unpreserved_area_m2": 0.0,
+      "higher_than_old_by_over_0_1mm_area_m2": 0.0,
+      "all_intersecting_up_surface_height_delta_min_max_m": [
+        0.0,
+        0.0
+      ],
+      "pass": true
+    },
+    {
+      "region": "padded_sites",
+      "expected_support_projection_area_m2": 123.97999999993655,
+      "same_linear_height_coverage_m2": 123.97999999993657,
+      "unpreserved_area_m2": 3.080685872625822e-17,
+      "higher_than_old_by_over_0_1mm_area_m2": 0.0,
+      "all_intersecting_up_surface_height_delta_min_max_m": [
+        -5.693041385534947e-10,
+        5.620504062164855e-16
+      ],
+      "pass": true
+    },
+    {
+      "region": "current_CD_tree_axis_2m_disks",
+      "expected_support_projection_area_m2": 80.43352357734813,
+      "same_linear_height_coverage_m2": 77.5982263561449,
+      "unpreserved_area_m2": 2.835297221203243,
+      "higher_than_old_by_over_0_1mm_area_m2": 0.0,
+      "all_intersecting_up_surface_height_delta_min_max_m": [
+        -0.04046103976540838,
+        6.38378239159465e-16
+      ],
+      "pass": false
+    }
+  ],
+  "actual_moved_vertices_present_in_GLB": 72,
+  "pre_sculpt_discrete_triangles_equal_actual31e_baseline": true,
+  "moved_triangles": 192,
+  "minimum_normal_cosine_before_after_on_changed_triangles": 0.5577746903882042,
+  "changed_triangles_normal_reversal_count": 0,
+  "changed_triangles_normal_results": [
+    {
+      "actual_GLb_triangle": 617,
+      "normal_dot_cosine_before_after": 0.9999651500703767,
+      "minimum_area_before_after_m2": 0.5712888941390503
+    },
+    {
+      "actual_GLb_triangle": 618,
+      "normal_dot_cosine_before_after": 0.9998739221713148,
+      "minimum_area_before_after_m2": 0.8139948997225355
+    },
+    {
+      "actual_GLb_triangle": 740,
+      "normal_dot_cosine_before_after": 0.9998405300898807,
+      "minimum_area_before_after_m2": 6.085536757719082
+    },
+    {
+      "actual_GLb_triangle": 828,
+      "normal_dot_cosine_before_after": 0.9999583230787721,
+      "minimum_area_before_after_m2": 2.71491713334513
+    },
+    {
+      "actual_GLb_triangle": 829,
+      "normal_dot_cosine_before_after": 0.9999711768142493,
+      "minimum_area_before_after_m2": 4.928227299631035
+    },
+    {
+      "actual_GLb_triangle": 830,
+      "normal_dot_cosine_before_after": 0.9891693289145885,
+      "minimum_area_before_after_m2": 6.593849707583086
+    },
+    {
+      "actual_GLb_triangle": 1027,
+      "normal_dot_cosine_before_after": 0.9999658653823538,
+      "minimum_area_before_after_m2": 2.024439676431167
+    },
+    {
+      "actual_GLb_triangle": 1029,
+      "normal_dot_cosine_before_after": 0.9999851898963303,
+      "minimum_area_before_after_m2": 0.6938312284186144
+    },
+    {
+      "actual_GLb_triangle": 1031,
+      "normal_dot_cosine_before_after": 0.9999851898902961,
+      "minimum_area_before_after_m2": 0.5469131169218004
+    },
+    {
+      "actual_GLb_triangle": 1196,
+      "normal_dot_cosine_before_after": 0.9999267440029375,
+      "minimum_area_before_after_m2": 0.8124762527400664
+    },
+    {
+      "actual_GLb_triangle": 1198,
+      "normal_dot_cosine_before_after": 0.9998924349408849,
+      "minimum_area_before_after_m2": 1.9222538498324138
+    },
+    {
+      "actual_GLb_triangle": 1200,
+      "normal_dot_cosine_before_after": 0.9830000184501811,
+      "minimum_area_before_after_m2": 1.0322500687132683
+    },
+    {
+      "actual_GLb_triangle": 1271,
+      "normal_dot_cosine_before_after": 0.9999987836088166,
+      "minimum_area_before_after_m2": 31.2183800544897
+    },
+    {
+      "actual_GLb_triangle": 1272,
+      "normal_dot_cosine_before_after": 0.9999973788230895,
+      "minimum_area_before_after_m2": 23.60910816935657
+    },
+    {
+      "actual_GLb_triangle": 1505,
+      "normal_dot_cosine_before_after": 0.9998177267299351,
+      "minimum_area_before_after_m2": 6.56132559494451
+    },
+    {
+      "actual_GLb_triangle": 1506,
+      "normal_dot_cosine_before_after": 0.9937104603459234,
+      "minimum_area_before_after_m2": 0.059589407997940574
+    },
+    {
+      "actual_GLb_triangle": 1507,
+      "normal_dot_cosine_before_after": 0.9998520289963893,
+      "minimum_area_before_after_m2": 7.788903369561925
+    },
+    {
+      "actual_GLb_triangle": 1511,
+      "normal_dot_cosine_before_after": 0.9699164776629634,
+      "minimum_area_before_after_m2": 1.2029098488395216
+    },
+    {
+      "actual_GLb_triangle": 1512,
+      "normal_dot_cosine_before_after": 0.7573683662659431,
+      "minimum_area_before_after_m2": 0.07900947328436324
+    },
+    {
+      "actual_GLb_triangle": 1513,
+      "normal_dot_cosine_before_after": 0.9999797464903954,
+      "minimum_area_before_after_m2": 0.3418050144861978
+    },
+    {
+      "actual_GLb_triangle": 1514,
+      "normal_dot_cosine_before_after": 0.9897782420017193,
+      "minimum_area_before_after_m2": 0.07395214594058314
+    },
+    {
+      "actual_GLb_triangle": 1515,
+      "normal_dot_cosine_before_after": 0.98577701774007,
+      "minimum_area_before_after_m2": 0.2736701848999
+    },
+    {
+      "actual_GLb_triangle": 1516,
+      "normal_dot_cosine_before_after": 0.5577746903882042,
+      "minimum_area_before_after_m2": 0.2653798256900846
+    },
+    {
+      "actual_GLb_triangle": 1517,
+      "normal_dot_cosine_before_after": 0.9992624311490923,
+      "minimum_area_before_after_m2": 0.6866164362729535
+    },
+    {
+      "actual_GLb_triangle": 1518,
+      "normal_dot_cosine_before_after": 0.99859863190818,
+      "minimum_area_before_after_m2": 16.50911656945731
+    },
+    {
+      "actual_GLb_triangle": 1519,
+      "normal_dot_cosine_before_after": 0.9985474488487148,
+      "minimum_area_before_after_m2": 1.1023477299381286
+    },
+    {
+      "actual_GLb_triangle": 1520,
+      "normal_dot_cosine_before_after": 0.989458362161515,
+      "minimum_area_before_after_m2": 1.4930845062365772
+    },
+    {
+      "actual_GLb_triangle": 1521,
+      "normal_dot_cosine_before_after": 0.9997920686271313,
+      "minimum_area_before_after_m2": 0.8201085247929967
+    },
+    {
+      "actual_GLb_triangle": 1522,
+      "normal_dot_cosine_before_after": 0.9998168119046104,
+      "minimum_area_before_after_m2": 0.015244080078718417
+    },
+    {
+      "actual_GLb_triangle": 1523,
+      "normal_dot_cosine_before_after": 0.9959217144067622,
+      "minimum_area_before_after_m2": 0.8542710725465993
+    },
+    {
+      "actual_GLb_triangle": 1524,
+      "normal_dot_cosine_before_after": 0.9536094339892666,
+      "minimum_area_before_after_m2": 0.44860683971749765
+    },
+    {
+      "actual_GLb_triangle": 1526,
+      "normal_dot_cosine_before_after": 0.9986355842354299,
+      "minimum_area_before_after_m2": 2.959552203872761
+    },
+    {
+      "actual_GLb_triangle": 1527,
+      "normal_dot_cosine_before_after": 0.9999115229508412,
+      "minimum_area_before_after_m2": 0.07277998748729861
+    },
+    {
+      "actual_GLb_triangle": 1528,
+      "normal_dot_cosine_before_after": 0.9990178007202851,
+      "minimum_area_before_after_m2": 5.17117235970812
+    },
+    {
+      "actual_GLb_triangle": 1652,
+      "normal_dot_cosine_before_after": 0.9999466386440208,
+      "minimum_area_before_after_m2": 10.42383819036061
+    },
+    {
+      "actual_GLb_triangle": 1653,
+      "normal_dot_cosine_before_after": 0.9990900110557707,
+      "minimum_area_before_after_m2": 1.3730385395424136
+    },
+    {
+      "actual_GLb_triangle": 1658,
+      "normal_dot_cosine_before_after": 0.9525887551767105,
+      "minimum_area_before_after_m2": 0.46019041116776316
+    },
+    {
+      "actual_GLb_triangle": 1660,
+      "normal_dot_cosine_before_after": 0.8689285346337057,
+      "minimum_area_before_after_m2": 0.13352068584307694
+    },
+    {
+      "actual_GLb_triangle": 1661,
+      "normal_dot_cosine_before_after": 0.928778568510621,
+      "minimum_area_before_after_m2": 0.7205249628795701
+    },
+    {
+      "actual_GLb_triangle": 1662,
+      "normal_dot_cosine_before_after": 0.9960228981218847,
+      "minimum_area_before_after_m2": 0.799956154404489
+    },
+    {
+      "actual_GLb_triangle": 1663,
+      "normal_dot_cosine_before_after": 0.9915955400694395,
+      "minimum_area_before_after_m2": 1.2581046829008908
+    },
+    {
+      "actual_GLb_triangle": 1664,
+      "normal_dot_cosine_before_after": 0.9999183085905984,
+      "minimum_area_before_after_m2": 0.20332289243478285
+    },
+    {
+      "actual_GLb_triangle": 1665,
+      "normal_dot_cosine_before_after": 0.9735657739565223,
+      "minimum_area_before_after_m2": 0.1444432529365853
+    },
+    {
+      "actual_GLb_triangle": 1666,
+      "normal_dot_cosine_before_after": 0.9528097617433614,
+      "minimum_area_before_after_m2": 0.8522097005529043
+    },
+    {
+      "actual_GLb_triangle": 1667,
+      "normal_dot_cosine_before_after": 0.986665554796346,
+      "minimum_area_before_after_m2": 0.2530900802817162
+    },
+    {
+      "actual_GLb_triangle": 1668,
+      "normal_dot_cosine_before_after": 0.9888990868210669,
+      "minimum_area_before_after_m2": 0.4232065329862357
+    },
+    {
+      "actual_GLb_triangle": 1669,
+      "normal_dot_cosine_before_after": 0.9932868855043906,
+      "minimum_area_before_after_m2": 1.020229405231305
+    },
+    {
+      "actual_GLb_triangle": 1670,
+      "normal_dot_cosine_before_after": 0.9849996387720003,
+      "minimum_area_before_after_m2": 0.0688253909281102
+    },
+    {
+      "actual_GLb_triangle": 1671,
+      "normal_dot_cosine_before_after": 0.988619775251745,
+      "minimum_area_before_after_m2": 0.014432301218856941
+    },
+    {
+      "actual_GLb_triangle": 1672,
+      "normal_dot_cosine_before_after": 0.9907323602748404,
+      "minimum_area_before_after_m2": 0.020979616307034234
+    },
+    {
+      "actual_GLb_triangle": 1673,
+      "normal_dot_cosine_before_after": 0.9912168303764113,
+      "minimum_area_before_after_m2": 0.01433674317174743
+    },
+    {
+      "actual_GLb_triangle": 1674,
+      "normal_dot_cosine_before_after": 0.9996791842490401,
+      "minimum_area_before_after_m2": 0.294674591174085
+    },
+    {
+      "actual_GLb_triangle": 1675,
+      "normal_dot_cosine_before_after": 0.9940465867428425,
+      "minimum_area_before_after_m2": 0.648866273670051
+    },
+    {
+      "actual_GLb_triangle": 1676,
+      "normal_dot_cosine_before_after": 0.9929125729735936,
+      "minimum_area_before_after_m2": 0.034985682529423225
+    },
+    {
+      "actual_GLb_triangle": 1677,
+      "normal_dot_cosine_before_after": 0.949148432817871,
+      "minimum_area_before_after_m2": 0.015682655054383574
+    },
+    {
+      "actual_GLb_triangle": 1678,
+      "normal_dot_cosine_before_after": 0.9784367152990769,
+      "minimum_area_before_after_m2": 0.2914973243946873
+    },
+    {
+      "actual_GLb_triangle": 1679,
+      "normal_dot_cosine_before_after": 0.818691412684888,
+      "minimum_area_before_after_m2": 2.8600152082365224
+    },
+    {
+      "actual_GLb_triangle": 1680,
+      "normal_dot_cosine_before_after": 0.9969673562323534,
+      "minimum_area_before_after_m2": 0.7496170645965549
+    },
+    {
+      "actual_GLb_triangle": 1681,
+      "normal_dot_cosine_before_after": 0.959415670760227,
+      "minimum_area_before_after_m2": 1.0451850339711204
+    },
+    {
+      "actual_GLb_triangle": 1682,
+      "normal_dot_cosine_before_after": 0.9773457708561212,
+      "minimum_area_before_after_m2": 1.3444149904106026
+    },
+    {
+      "actual_GLb_triangle": 1683,
+      "normal_dot_cosine_before_after": 0.9720318038841297,
+      "minimum_area_before_after_m2": 0.047242239890810694
+    },
+    {
+      "actual_GLb_triangle": 1693,
+      "normal_dot_cosine_before_after": 0.9765353793223767,
+      "minimum_area_before_after_m2": 0.0317827825066878
+    },
+    {
+      "actual_GLb_triangle": 1694,
+      "normal_dot_cosine_before_after": 0.95933554182402,
+      "minimum_area_before_after_m2": 0.8355675063231617
+    },
+    {
+      "actual_GLb_triangle": 1695,
+      "normal_dot_cosine_before_after": 0.9028661115728083,
+      "minimum_area_before_after_m2": 0.5876989466091509
+    },
+    {
+      "actual_GLb_triangle": 1696,
+      "normal_dot_cosine_before_after": 0.9786284563616381,
+      "minimum_area_before_after_m2": 3.4737471321373903
+    },
+    {
+      "actual_GLb_triangle": 1697,
+      "normal_dot_cosine_before_after": 0.9751350317681177,
+      "minimum_area_before_after_m2": 0.5160762104920446
+    },
+    {
+      "actual_GLb_triangle": 1699,
+      "normal_dot_cosine_before_after": 0.9844312315953302,
+      "minimum_area_before_after_m2": 1.978282688166151
+    },
+    {
+      "actual_GLb_triangle": 1700,
+      "normal_dot_cosine_before_after": 0.9929159541777705,
+      "minimum_area_before_after_m2": 1.2003651970941014
+    },
+    {
+      "actual_GLb_triangle": 1702,
+      "normal_dot_cosine_before_after": 0.9905700312958918,
+      "minimum_area_before_after_m2": 0.9001074646246019
+    },
+    {
+      "actual_GLb_triangle": 1704,
+      "normal_dot_cosine_before_after": 0.9172261656327737,
+      "minimum_area_before_after_m2": 0.7291712864995008
+    },
+    {
+      "actual_GLb_triangle": 1705,
+      "normal_dot_cosine_before_after": 0.8432054697942571,
+      "minimum_area_before_after_m2": 0.020198337043686725
+    },
+    {
+      "actual_GLb_triangle": 1709,
+      "normal_dot_cosine_before_after": 0.9951474005828947,
+      "minimum_area_before_after_m2": 1.824136361602049
+    },
+    {
+      "actual_GLb_triangle": 1710,
+      "normal_dot_cosine_before_after": 0.9956304153002279,
+      "minimum_area_before_after_m2": 0.27469202052064423
+    },
+    {
+      "actual_GLb_triangle": 1711,
+      "normal_dot_cosine_before_after": 0.9954809761902681,
+      "minimum_area_before_after_m2": 0.6376825502725284
+    },
+    {
+      "actual_GLb_triangle": 1712,
+      "normal_dot_cosine_before_after": 0.9967552477489482,
+      "minimum_area_before_after_m2": 0.2475421415173331
+    },
+    {
+      "actual_GLb_triangle": 1713,
+      "normal_dot_cosine_before_after": 0.996754912520524,
+      "minimum_area_before_after_m2": 0.2506170559932227
+    },
+    {
+      "actual_GLb_triangle": 1714,
+      "normal_dot_cosine_before_after": 0.9993304350271529,
+      "minimum_area_before_after_m2": 2.6348814065618296
+    },
+    {
+      "actual_GLb_triangle": 1717,
+      "normal_dot_cosine_before_after": 0.9989471185854435,
+      "minimum_area_before_after_m2": 7.8670270157716535
+    },
+    {
+      "actual_GLb_triangle": 1718,
+      "normal_dot_cosine_before_after": 0.9803828615073106,
+      "minimum_area_before_after_m2": 0.05077944530042196
+    },
+    {
+      "actual_GLb_triangle": 1719,
+      "normal_dot_cosine_before_after": 0.9192632628392637,
+      "minimum_area_before_after_m2": 2.4443499287448347
+    },
+    {
+      "actual_GLb_triangle": 1720,
+      "normal_dot_cosine_before_after": 0.9977506655144214,
+      "minimum_area_before_after_m2": 2.553474884944787
+    },
+    {
+      "actual_GLb_triangle": 1721,
+      "normal_dot_cosine_before_after": 0.9962111184975359,
+      "minimum_area_before_after_m2": 1.6597045793736607
+    },
+    {
+      "actual_GLb_triangle": 1722,
+      "normal_dot_cosine_before_after": 0.9996366341133065,
+      "minimum_area_before_after_m2": 0.4010334548954426
+    },
+    {
+      "actual_GLb_triangle": 1726,
+      "normal_dot_cosine_before_after": 0.999957209919842,
+      "minimum_area_before_after_m2": 1.0024617199102834
+    },
+    {
+      "actual_GLb_triangle": 1727,
+      "normal_dot_cosine_before_after": 0.982646081901001,
+      "minimum_area_before_after_m2": 1.0728948417709079
+    },
+    {
+      "actual_GLb_triangle": 1728,
+      "normal_dot_cosine_before_after": 0.9311779533326001,
+      "minimum_area_before_after_m2": 2.567077291276138
+    },
+    {
+      "actual_GLb_triangle": 1729,
+      "normal_dot_cosine_before_after": 0.9999735548511018,
+      "minimum_area_before_after_m2": 7.168875353915222
+    },
+    {
+      "actual_GLb_triangle": 1731,
+      "normal_dot_cosine_before_after": 0.9841927097723266,
+      "minimum_area_before_after_m2": 3.140195881844785
+    },
+    {
+      "actual_GLb_triangle": 1732,
+      "normal_dot_cosine_before_after": 0.9999209183517478,
+      "minimum_area_before_after_m2": 2.61171563264102
+    },
+    {
+      "actual_GLb_triangle": 1745,
+      "normal_dot_cosine_before_after": 0.9924412959402186,
+      "minimum_area_before_after_m2": 1.7919331677941401
+    },
+    {
+      "actual_GLb_triangle": 1746,
+      "normal_dot_cosine_before_after": 0.9935187900051311,
+      "minimum_area_before_after_m2": 0.530661357973985
+    },
+    {
+      "actual_GLb_triangle": 1747,
+      "normal_dot_cosine_before_after": 0.9999295644830619,
+      "minimum_area_before_after_m2": 0.29068382989258384
+    },
+    {
+      "actual_GLb_triangle": 1748,
+      "normal_dot_cosine_before_after": 0.9922686304338578,
+      "minimum_area_before_after_m2": 5.339629213312645
+    },
+    {
+      "actual_GLb_triangle": 1749,
+      "normal_dot_cosine_before_after": 0.9948437675661317,
+      "minimum_area_before_after_m2": 3.8542923208524207
+    },
+    {
+      "actual_GLb_triangle": 1750,
+      "normal_dot_cosine_before_after": 0.9086096175266466,
+      "minimum_area_before_after_m2": 0.7305189013685681
+    },
+    {
+      "actual_GLb_triangle": 1751,
+      "normal_dot_cosine_before_after": 0.9624884650642055,
+      "minimum_area_before_after_m2": 1.4103303891856502
+    },
+    {
+      "actual_GLb_triangle": 1752,
+      "normal_dot_cosine_before_after": 0.9891787377289104,
+      "minimum_area_before_after_m2": 0.23745337856629675
+    },
+    {
+      "actual_GLb_triangle": 1753,
+      "normal_dot_cosine_before_after": 0.9835064674546544,
+      "minimum_area_before_after_m2": 0.33620675722932947
+    },
+    {
+      "actual_GLb_triangle": 1754,
+      "normal_dot_cosine_before_after": 0.9987489446873888,
+      "minimum_area_before_after_m2": 0.009170124946681244
+    },
+    {
+      "actual_GLb_triangle": 1765,
+      "normal_dot_cosine_before_after": 0.9636781351486154,
+      "minimum_area_before_after_m2": 1.0005583935259215
+    },
+    {
+      "actual_GLb_triangle": 1766,
+      "normal_dot_cosine_before_after": 0.9946930737962258,
+      "minimum_area_before_after_m2": 0.975804977623304
+    },
+    {
+      "actual_GLb_triangle": 1767,
+      "normal_dot_cosine_before_after": 0.9492997468025076,
+      "minimum_area_before_after_m2": 0.5495260507028473
+    },
+    {
+      "actual_GLb_triangle": 1768,
+      "normal_dot_cosine_before_after": 0.973786614251111,
+      "minimum_area_before_after_m2": 0.7311652666486635
+    },
+    {
+      "actual_GLb_triangle": 1770,
+      "normal_dot_cosine_before_after": 0.9886278789095794,
+      "minimum_area_before_after_m2": 2.5724234007375504
+    },
+    {
+      "actual_GLb_triangle": 1771,
+      "normal_dot_cosine_before_after": 0.9999243334426771,
+      "minimum_area_before_after_m2": 0.1549585373132241
+    },
+    {
+      "actual_GLb_triangle": 1772,
+      "normal_dot_cosine_before_after": 0.9812157378442254,
+      "minimum_area_before_after_m2": 0.23423514596176678
+    },
+    {
+      "actual_GLb_triangle": 1774,
+      "normal_dot_cosine_before_after": 0.9967515438509815,
+      "minimum_area_before_after_m2": 2.502407181578118
+    },
+    {
+      "actual_GLb_triangle": 1776,
+      "normal_dot_cosine_before_after": 0.9295272567601608,
+      "minimum_area_before_after_m2": 0.18519114252801097
+    },
+    {
+      "actual_GLb_triangle": 1777,
+      "normal_dot_cosine_before_after": 0.9979121805170811,
+      "minimum_area_before_after_m2": 10.744674684481348
+    },
+    {
+      "actual_GLb_triangle": 1778,
+      "normal_dot_cosine_before_after": 0.9990046401272128,
+      "minimum_area_before_after_m2": 2.340969288391696
+    },
+    {
+      "actual_GLb_triangle": 1779,
+      "normal_dot_cosine_before_after": 0.9977007019396884,
+      "minimum_area_before_after_m2": 0.4964400345292954
+    },
+    {
+      "actual_GLb_triangle": 1780,
+      "normal_dot_cosine_before_after": 0.9884740688191436,
+      "minimum_area_before_after_m2": 0.040117451641224
+    },
+    {
+      "actual_GLb_triangle": 1781,
+      "normal_dot_cosine_before_after": 0.9998437899966526,
+      "minimum_area_before_after_m2": 0.5107018166841494
+    },
+    {
+      "actual_GLb_triangle": 1782,
+      "normal_dot_cosine_before_after": 0.9841428197722846,
+      "minimum_area_before_after_m2": 1.6356765155957704
+    },
+    {
+      "actual_GLb_triangle": 1783,
+      "normal_dot_cosine_before_after": 0.9998738545183226,
+      "minimum_area_before_after_m2": 0.4279166256340537
+    },
+    {
+      "actual_GLb_triangle": 1824,
+      "normal_dot_cosine_before_after": 0.9845099425543289,
+      "minimum_area_before_after_m2": 0.8754221707858759
+    },
+    {
+      "actual_GLb_triangle": 1840,
+      "normal_dot_cosine_before_after": 0.9988648723085518,
+      "minimum_area_before_after_m2": 0.19721953320263233
+    },
+    {
+      "actual_GLb_triangle": 1841,
+      "normal_dot_cosine_before_after": 0.9999984786032061,
+      "minimum_area_before_after_m2": 3.379271337741549
+    },
+    {
+      "actual_GLb_triangle": 1850,
+      "normal_dot_cosine_before_after": 0.99962159278719,
+      "minimum_area_before_after_m2": 0.13145331491141338
+    },
+    {
+      "actual_GLb_triangle": 1950,
+      "normal_dot_cosine_before_after": 0.9998879769498062,
+      "minimum_area_before_after_m2": 6.122466050608383
+    },
+    {
+      "actual_GLb_triangle": 1960,
+      "normal_dot_cosine_before_after": 0.9999665472479117,
+      "minimum_area_before_after_m2": 1.6429902676214994
+    },
+    {
+      "actual_GLb_triangle": 1961,
+      "normal_dot_cosine_before_after": 0.9999719174332184,
+      "minimum_area_before_after_m2": 3.498828177380495
+    },
+    {
+      "actual_GLb_triangle": 1962,
+      "normal_dot_cosine_before_after": 0.9836301093052161,
+      "minimum_area_before_after_m2": 7.461750948158896
+    },
+    {
+      "actual_GLb_triangle": 1963,
+      "normal_dot_cosine_before_after": 0.955995368607667,
+      "minimum_area_before_after_m2": 6.748385708500021
+    },
+    {
+      "actual_GLb_triangle": 1964,
+      "normal_dot_cosine_before_after": 0.9998292670189427,
+      "minimum_area_before_after_m2": 2.2183448178912406
+    },
+    {
+      "actual_GLb_triangle": 1965,
+      "normal_dot_cosine_before_after": 0.9999986947971137,
+      "minimum_area_before_after_m2": 1.0839129142371415
+    },
+    {
+      "actual_GLb_triangle": 1978,
+      "normal_dot_cosine_before_after": 0.9989853119676636,
+      "minimum_area_before_after_m2": 0.3553824726633835
+    },
+    {
+      "actual_GLb_triangle": 1979,
+      "normal_dot_cosine_before_after": 0.9951234262850778,
+      "minimum_area_before_after_m2": 5.208914222618597
+    },
+    {
+      "actual_GLb_triangle": 1980,
+      "normal_dot_cosine_before_after": 0.9999998506917862,
+      "minimum_area_before_after_m2": 6.091541625253492
+    },
+    {
+      "actual_GLb_triangle": 2072,
+      "normal_dot_cosine_before_after": 0.9561856431052188,
+      "minimum_area_before_after_m2": 0.057704458462012755
+    },
+    {
+      "actual_GLb_triangle": 2076,
+      "normal_dot_cosine_before_after": 0.9951427100128712,
+      "minimum_area_before_after_m2": 0.6592702865882205
+    },
+    {
+      "actual_GLb_triangle": 2077,
+      "normal_dot_cosine_before_after": 0.999996168503548,
+      "minimum_area_before_after_m2": 0.053826322288445166
+    },
+    {
+      "actual_GLb_triangle": 2079,
+      "normal_dot_cosine_before_after": 0.9994931013527254,
+      "minimum_area_before_after_m2": 0.08232383593715516
+    },
+    {
+      "actual_GLb_triangle": 2089,
+      "normal_dot_cosine_before_after": 0.9999988333208413,
+      "minimum_area_before_after_m2": 2.5289788193287768
+    },
+    {
+      "actual_GLb_triangle": 2090,
+      "normal_dot_cosine_before_after": 0.9809746813725979,
+      "minimum_area_before_after_m2": 0.04055214568075609
+    },
+    {
+      "actual_GLb_triangle": 2091,
+      "normal_dot_cosine_before_after": 0.9494554685539883,
+      "minimum_area_before_after_m2": 6.374039542939929
+    },
+    {
+      "actual_GLb_triangle": 2093,
+      "normal_dot_cosine_before_after": 0.9565096740140525,
+      "minimum_area_before_after_m2": 0.26137069683889474
+    },
+    {
+      "actual_GLb_triangle": 2094,
+      "normal_dot_cosine_before_after": 0.967962456265022,
+      "minimum_area_before_after_m2": 0.1483421798002418
+    },
+    {
+      "actual_GLb_triangle": 2095,
+      "normal_dot_cosine_before_after": 0.9952432531559517,
+      "minimum_area_before_after_m2": 0.10931221092911592
+    },
+    {
+      "actual_GLb_triangle": 2096,
+      "normal_dot_cosine_before_after": 0.9028098966711408,
+      "minimum_area_before_after_m2": 0.11406794931345239
+    },
+    {
+      "actual_GLb_triangle": 2106,
+      "normal_dot_cosine_before_after": 0.9998010028591879,
+      "minimum_area_before_after_m2": 3.87853263573715
+    },
+    {
+      "actual_GLb_triangle": 2107,
+      "normal_dot_cosine_before_after": 0.9999138327791204,
+      "minimum_area_before_after_m2": 2.7264906457980165
+    },
+    {
+      "actual_GLb_triangle": 2111,
+      "normal_dot_cosine_before_after": 0.9580504557760418,
+      "minimum_area_before_after_m2": 3.015556464326715
+    },
+    {
+      "actual_GLb_triangle": 2112,
+      "normal_dot_cosine_before_after": 0.9999882541283853,
+      "minimum_area_before_after_m2": 5.592325290080863
+    },
+    {
+      "actual_GLb_triangle": 2113,
+      "normal_dot_cosine_before_after": 0.9999011337904994,
+      "minimum_area_before_after_m2": 0.20169110596794995
+    },
+    {
+      "actual_GLb_triangle": 2114,
+      "normal_dot_cosine_before_after": 0.990731890583695,
+      "minimum_area_before_after_m2": 0.08966428393822773
+    },
+    {
+      "actual_GLb_triangle": 2117,
+      "normal_dot_cosine_before_after": 0.9981328108155892,
+      "minimum_area_before_after_m2": 0.0329766528724845
+    },
+    {
+      "actual_GLb_triangle": 2118,
+      "normal_dot_cosine_before_after": 0.999996000294196,
+      "minimum_area_before_after_m2": 1.9791231168125454
+    },
+    {
+      "actual_GLb_triangle": 2119,
+      "normal_dot_cosine_before_after": 0.9842790755201793,
+      "minimum_area_before_after_m2": 0.08941312545598629
+    },
+    {
+      "actual_GLb_triangle": 2166,
+      "normal_dot_cosine_before_after": 0.9833111918776999,
+      "minimum_area_before_after_m2": 0.025844171281121535
+    },
+    {
+      "actual_GLb_triangle": 2167,
+      "normal_dot_cosine_before_after": 0.9592373693213612,
+      "minimum_area_before_after_m2": 6.764165160679609
+    },
+    {
+      "actual_GLb_triangle": 2168,
+      "normal_dot_cosine_before_after": 0.9979017928475508,
+      "minimum_area_before_after_m2": 0.33029969496224815
+    },
+    {
+      "actual_GLb_triangle": 2169,
+      "normal_dot_cosine_before_after": 0.8861754530053292,
+      "minimum_area_before_after_m2": 0.05063099002728842
+    },
+    {
+      "actual_GLb_triangle": 2170,
+      "normal_dot_cosine_before_after": 0.9999777817425843,
+      "minimum_area_before_after_m2": 0.7213700148833215
+    },
+    {
+      "actual_GLb_triangle": 2174,
+      "normal_dot_cosine_before_after": 0.9978321411950366,
+      "minimum_area_before_after_m2": 4.480184437689029
+    },
+    {
+      "actual_GLb_triangle": 2217,
+      "normal_dot_cosine_before_after": 0.9881567833999766,
+      "minimum_area_before_after_m2": 0.09620797169108959
+    },
+    {
+      "actual_GLb_triangle": 2218,
+      "normal_dot_cosine_before_after": 0.9436763344493588,
+      "minimum_area_before_after_m2": 2.897341101183053
+    },
+    {
+      "actual_GLb_triangle": 2219,
+      "normal_dot_cosine_before_after": 0.9231625158049357,
+      "minimum_area_before_after_m2": 1.2285360536368293
+    },
+    {
+      "actual_GLb_triangle": 2220,
+      "normal_dot_cosine_before_after": 0.9999728083812086,
+      "minimum_area_before_after_m2": 9.383573114641086
+    },
+    {
+      "actual_GLb_triangle": 2221,
+      "normal_dot_cosine_before_after": 0.9991503139037193,
+      "minimum_area_before_after_m2": 0.3536496931982117
+    },
+    {
+      "actual_GLb_triangle": 2226,
+      "normal_dot_cosine_before_after": 0.9230378055380074,
+      "minimum_area_before_after_m2": 0.6198690100562837
+    },
+    {
+      "actual_GLb_triangle": 2227,
+      "normal_dot_cosine_before_after": 0.9512387035528538,
+      "minimum_area_before_after_m2": 1.7806749124763768
+    },
+    {
+      "actual_GLb_triangle": 2228,
+      "normal_dot_cosine_before_after": 0.9251606434176916,
+      "minimum_area_before_after_m2": 5.816749745784738
+    },
+    {
+      "actual_GLb_triangle": 2229,
+      "normal_dot_cosine_before_after": 0.9540968959205153,
+      "minimum_area_before_after_m2": 5.3265258785519904
+    },
+    {
+      "actual_GLb_triangle": 2230,
+      "normal_dot_cosine_before_after": 0.9853883932996738,
+      "minimum_area_before_after_m2": 1.3433317987610611
+    },
+    {
+      "actual_GLb_triangle": 2232,
+      "normal_dot_cosine_before_after": 0.9799272771751265,
+      "minimum_area_before_after_m2": 6.063507185456521
+    },
+    {
+      "actual_GLb_triangle": 2234,
+      "normal_dot_cosine_before_after": 0.9926415610664268,
+      "minimum_area_before_after_m2": 10.614847938638876
+    },
+    {
+      "actual_GLb_triangle": 2235,
+      "normal_dot_cosine_before_after": 0.9879045158136924,
+      "minimum_area_before_after_m2": 0.28960294041508494
+    },
+    {
+      "actual_GLb_triangle": 2236,
+      "normal_dot_cosine_before_after": 0.9171137587843575,
+      "minimum_area_before_after_m2": 0.11235093714336361
+    },
+    {
+      "actual_GLb_triangle": 2237,
+      "normal_dot_cosine_before_after": 0.9409593544613861,
+      "minimum_area_before_after_m2": 2.7194046315863902
+    },
+    {
+      "actual_GLb_triangle": 2238,
+      "normal_dot_cosine_before_after": 0.9316173752581817,
+      "minimum_area_before_after_m2": 2.1796307427496973
+    },
+    {
+      "actual_GLb_triangle": 2239,
+      "normal_dot_cosine_before_after": 0.8962835488362518,
+      "minimum_area_before_after_m2": 0.5634638564134863
+    },
+    {
+      "actual_GLb_triangle": 2240,
+      "normal_dot_cosine_before_after": 0.9968967507879748,
+      "minimum_area_before_after_m2": 9.22259726708248
+    },
+    {
+      "actual_GLb_triangle": 2241,
+      "normal_dot_cosine_before_after": 0.9797285622447922,
+      "minimum_area_before_after_m2": 0.35030573029257334
+    },
+    {
+      "actual_GLb_triangle": 2246,
+      "normal_dot_cosine_before_after": 0.7929504030527622,
+      "minimum_area_before_after_m2": 2.8674569280914572
+    },
+    {
+      "actual_GLb_triangle": 2247,
+      "normal_dot_cosine_before_after": 0.8989547879972117,
+      "minimum_area_before_after_m2": 2.1417283996574157
+    },
+    {
+      "actual_GLb_triangle": 2248,
+      "normal_dot_cosine_before_after": 0.7525562332297159,
+      "minimum_area_before_after_m2": 1.284022718193367
+    },
+    {
+      "actual_GLb_triangle": 2249,
+      "normal_dot_cosine_before_after": 0.9788702154691012,
+      "minimum_area_before_after_m2": 9.81093190421812
+    },
+    {
+      "actual_GLb_triangle": 2250,
+      "normal_dot_cosine_before_after": 0.9988275363989919,
+      "minimum_area_before_after_m2": 1.7056542747077532
+    },
+    {
+      "actual_GLb_triangle": 2251,
+      "normal_dot_cosine_before_after": 0.9906117676894678,
+      "minimum_area_before_after_m2": 2.1304656278985323
+    },
+    {
+      "actual_GLb_triangle": 2270,
+      "normal_dot_cosine_before_after": 0.9399610694521362,
+      "minimum_area_before_after_m2": 0.4005580685183817
+    },
+    {
+      "actual_GLb_triangle": 2271,
+      "normal_dot_cosine_before_after": 0.9723203135010249,
+      "minimum_area_before_after_m2": 8.795059456223294
+    },
+    {
+      "actual_GLb_triangle": 2272,
+      "normal_dot_cosine_before_after": 0.7299758807636816,
+      "minimum_area_before_after_m2": 1.442151760115502
+    },
+    {
+      "actual_GLb_triangle": 2273,
+      "normal_dot_cosine_before_after": 0.9999936066061742,
+      "minimum_area_before_after_m2": 1.315766315887202
+    },
+    {
+      "actual_GLb_triangle": 2297,
+      "normal_dot_cosine_before_after": 0.8264832606714347,
+      "minimum_area_before_after_m2": 5.444652065786827
+    },
+    {
+      "actual_GLb_triangle": 2298,
+      "normal_dot_cosine_before_after": 0.9061410906612563,
+      "minimum_area_before_after_m2": 3.008006214891069
+    },
+    {
+      "actual_GLb_triangle": 2300,
+      "normal_dot_cosine_before_after": 0.9899238998038873,
+      "minimum_area_before_after_m2": 5.729163130614831
+    },
+    {
+      "actual_GLb_triangle": 2330,
+      "normal_dot_cosine_before_after": 0.9798094222778893,
+      "minimum_area_before_after_m2": 17.240770035926854
+    },
+    {
+      "actual_GLb_triangle": 2331,
+      "normal_dot_cosine_before_after": 0.984732005865866,
+      "minimum_area_before_after_m2": 4.1291218851299485
+    },
+    {
+      "actual_GLb_triangle": 2332,
+      "normal_dot_cosine_before_after": 0.9804689625124761,
+      "minimum_area_before_after_m2": 22.694104424701187
+    },
+    {
+      "actual_GLb_triangle": 2333,
+      "normal_dot_cosine_before_after": 0.9601223138323297,
+      "minimum_area_before_after_m2": 2.2144062507206477
+    },
+    {
+      "actual_GLb_triangle": 2336,
+      "normal_dot_cosine_before_after": 0.9533285826792416,
+      "minimum_area_before_after_m2": 0.1741609719461436
+    }
+  ],
+  "normal_comparison_method": "Reconstruct pre-shear positions of final discrete triangles from actual moved before/after records matched to realGLB positions. Same triangulation reconstructed to actual31e baseline. Dot sign is local normal change, not a self-intersection proof.",
+  "local_triangle_intersection_check_pending": false,
+  "base_geometry_and_support_pass": true,
+  "pass": true,
+  "full_reference_accepted": false,
+  "limits": [
+    "Historical three operands not used for final exterior or union-volume claims.",
+    "No continuum-injectivity argument used as proof of discrete mesh non-intersection.",
+    "No Blender/GPU rerun."
+  ],
+  "local_triangle_intersections": {
+    "scope": "Actual finite GLB main-shell triangle intersection check for every pair whose AABBs overlap and at least one triangle differs from31e. Includes all original unchanged triangles as possible partners. No analytic mapping-injectivity argument.",
+    "changed_or_new_triangulation_triangles": 192,
+    "statistics": {
+      "aabb_candidate_pairs": 2071,
+      "noncoplanar_contact_pairs": 1627,
+      "coplanar_contact_pairs": 1,
+      "shared_feature_only_pairs": 1628
+    },
+    "intersection_candidates_outside_legal_shared_features": [],
+    "local_self_intersection_pass": true,
+    "tolerances": {
+      "aabb_margin_m": 1e-07,
+      "plane_m": 1e-06,
+      "shared_coordinate_m": 1e-05,
+      "allowed_shared_feature_band_m": 0.0001
+    },
+    "limits": [
+      "Local changed-region versus entire main-shell sweep only; unchanged/unchanged baseline pairs excluded.",
+      "Legal shared vertices/edges ignored only inside0.1mm band; smaller defects are outside stated resolution.",
+      "17 independent rocks deliberately intersect main shell as separate objects; their authored contact is not a shell self-intersection.",
+      "Numerical triangle test is bounded-resolution evidence, not exact-predicate proof or complete walking test."
+    ]
+  },
+  "old_tree_disk_surface_preserved": false,
+  "actual_tree_base_support": true,
+  "actual_tree_base_report": "reviews/round-31f-actual-tree-support.json",
+  "actual_sculpt_anchors_and_local_rock_contacts_report": "reviews/round-31f-anchor-rock-contact.json",
+  "actual_sculpt_anchors": [
+    {
+      "name": "Lower and turn high original flank",
+      "historic31d_anchor": 997,
+      "matched_actual31e_vertex": 997,
+      "before_xyz": [
+        1.8143999576568604,
+        9.427762031555176,
+        9.673336029052734
+      ],
+      "actual_after_xyz": [
+        0.21439993381500244,
+        10.32776165008545,
+        8.323335647583008
+      ],
+      "actual_delta_xyz": [
+        -1.600000023841858,
+        0.8999996185302734,
+        -1.3500003814697266
+      ],
+      "actual_displacement_m": 2.278705865094701
+    },
+    {
+      "name": "Spread old mid slope across adjoining shoulder",
+      "historic31d_anchor": 409,
+      "matched_actual31e_vertex": 409,
+      "before_xyz": [
+        -4.970585823059082,
+        6.294712066650391,
+        5.014765739440918
+      ],
+      "actual_after_xyz": [
+        -5.370585918426514,
+        7.894711971282959,
+        5.714765548706055
+      ],
+      "actual_delta_xyz": [
+        -0.40000009536743164,
+        1.5999999046325684,
+        0.6999998092651367
+      ],
+      "actual_displacement_m": 1.7916471483217364
+    },
+    {
+      "name": "Turn local seaward cleft mouth and low root together",
+      "historic31d_anchor": 388,
+      "matched_actual31e_vertex": 388,
+      "before_xyz": [
+        -5.793421745300293,
+        12.48392105102539,
+        0.5509111881256104
+      ],
+      "actual_after_xyz": [
+        -7.193421840667725,
+        10.683920860290527,
+        0.9009112119674683
+      ],
+      "actual_delta_xyz": [
+        -1.4000000953674316,
+        -1.8000001907348633,
+        0.3500000238418579
+      ],
+      "actual_displacement_m": 2.30705460931545
+    }
+  ]
+}

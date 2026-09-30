@@ -1,0 +1,168 @@
+{
+  "scope": "Bounded overall visual priority review. Directly viewed reference1342 and current31i day/night originals. No model edits, engine runs, or full31i geometry re-audit. Characters/airship/HUD excluded.",
+  "run": "E:\\FeiTing\\captures\\validation_runs\\lantern-island-31i-20260908T214100Z-02d75d5cf747426d88e00816dda55bd0",
+  "camera": {
+    "fov": 70.0,
+    "position": [
+      -2278.0,
+      60.0,
+      -1632.0
+    ],
+    "rotation": [
+      -0.00509163970127702,
+      0.60683274269104,
+      0.0
+    ]
+  },
+  "evidence_sha256": {
+    "E:\\FeiTing\\ref\\1342.png": "7acc98104013d9122eb551846b2d7fc1f7549bce8b2e3199eae8f5385a3ea238",
+    "E:\\FeiTing\\captures\\validation_runs\\lantern-island-31i-20260908T214100Z-02d75d5cf747426d88e00816dda55bd0\\images\\night-reference.png": "1e2d1c4ba73410db9406c5ea7cd6dec9e2a09bfd9f5baaf6d23a196383e15189",
+    "E:\\FeiTing\\captures\\validation_runs\\lantern-island-31i-20260908T214100Z-02d75d5cf747426d88e00816dda55bd0\\images\\day-reference.png": "d3de6bdad755dc97318bce831671febeffd59315d297660eeedaf4781eb715cd",
+    "E:\\FeiTing\\captures\\validation_runs\\lantern-island-31i-20260908T214100Z-02d75d5cf747426d88e00816dda55bd0\\images\\day-reference.png.json": "c6286d28c6637b906ff37eefd6811b5c8223b3ca53968d93be64dd7456262d05",
+    "E:\\FeiTing\\captures\\validation_runs\\lantern-island-31i-20260908T214100Z-02d75d5cf747426d88e00816dda55bd0\\images\\night-reference.png.json": "b35880fa11801eed876439cd7b7da78561f8453b5d8482db19e156e5d3132227"
+  },
+  "catalog_scope": "All20 references plus original assets/reference.jpg remain the goal. Other references were read from REFERENCE_SCENES.md catalog only, not individually re-reviewed this turn.",
+  "priorities": [
+    {
+      "rank": 1,
+      "title": "前景A：收拢大草台，恢复近塔岩崖、两屋与树群的空间关系",
+      "screen_regions_approx_px": {
+        "candidate": [
+          0,
+          710,
+          1150,
+          941
+        ],
+        "reference": [
+          0,
+          620,
+          940,
+          941
+        ]
+      },
+      "verified_current_world_anchors": {
+        "island_a_origin": [
+          -2350,
+          0,
+          -1650
+        ],
+        "lighthouse": [
+          -2353,
+          30.0621032714844,
+          -1656
+        ],
+        "houses": [
+          [
+            -2372,
+            22.3085021972656,
+            -1648
+          ],
+          [
+            -2331,
+            27.5137786865234,
+            -1644
+          ]
+        ]
+      },
+      "visible_evidence": "候选草面大块连续铺到画面底边，朝相机的主岩壁大多未进入画面；一栋屋只剩底边截断屋顶，大树孤立占据中央前景。参考塔脚是紧凑岩草台，左右两屋与不同高低针叶树成组，画面底部由厚岩体和错位块肩收口。",
+      "next_blender_work": "先从固定主机位向A可见草边/塔脚/两屋/近海前缘取真实射线和剖面，收回朝相机的过宽顶面边界，联动重构暴露岩崖及小草肩；按主图重排两屋与树群层次。位移具体米数须据当前实体决定，禁止直接把像素比当整岛缩放系数。",
+      "stage_check": "先看同机位昼夜全图中草台占幅、岩面可见、两屋完整剪影及塔脚重心，再对真实受影响基础/道路/树根/碰撞作必要检查。"
+    },
+    {
+      "rank": 2,
+      "title": "右岸：把齐整平台和草岸串变成分段岩岬、低湾与有后山层次的港村",
+      "screen_regions_approx_px": {
+        "candidate": [
+          1260,
+          470,
+          1672,
+          941
+        ],
+        "reference": [
+          1220,
+          390,
+          1672,
+          941
+        ]
+      },
+      "verified_current_world_anchors": {
+        "mainland_headland_origin": [
+          -2180,
+          0,
+          -1830
+        ],
+        "near_village_house_center_bounds_xz": [
+          -2261,
+          -2227,
+          -1766,
+          -1739
+        ],
+        "bay_village_house_center_bounds_xz": [
+          -2241,
+          -2213,
+          -1885,
+          -1856
+        ],
+        "first_existing_harbor_house": [
+          -2185.14013671875,
+          20.2431755065918,
+          -2080
+        ]
+      },
+      "search_range_inferred": "从已有Z约-1739至-1885的两组团向远处Z约-2080及更远港岸检查；沿固定机位逐层实测，不推定参考原地图坐标。",
+      "visible_evidence": "当前近/中屋群已有街巷，仍位于规则灰裙台地；远岸是亮而平缓的草坡、分散成排小屋和长连接线。参考是起伏更强的暗岩背山、错落树线、深浅交替的港湾和沿水岸聚集的暖屋群，近中远形成连续层次。",
+      "next_blender_work": "优先重构一组主图清楚可见的岬角-小湾-上部岩脊断面，把小院/短路/屋组纳入真实断面，再接下一段；复用现有木构和房屋，不把加克隆屋或只加灯点当成港岸完成。",
+      "stage_check": "主图能分清高岩肩、低岸工作面和被山脊分隔的屋群；既有街巷若受影响需联动调整，不以一条长墙连接所有平台。"
+    },
+    {
+      "rank": 3,
+      "title": "夜景海面与暖光层次：修密集横亮纹和偏弱的岸灯、水面响应",
+      "screen_regions_approx_px": {
+        "candidate": [
+          650,
+          465,
+          1490,
+          941
+        ],
+        "reference": [
+          630,
+          440,
+          1570,
+          941
+        ]
+      },
+      "verified_current_world_anchors": {
+        "camera": {
+          "fov": 70.0,
+          "position": [
+            -2278.0,
+            60.0,
+            -1632.0
+          ],
+          "rotation": [
+            -0.00509163970127702,
+            0.60683274269104,
+            0.0
+          ]
+        },
+        "near_lighthouse": [
+          -2353,
+          30.0621032714844,
+          -1656
+        ],
+        "central_island_d_origin": [
+          -2372,
+          0,
+          -1812
+        ]
+      },
+      "visible_evidence": "候选月亮、灯芯和束光已经存在，海面却呈密集等距细横线与窄白亮带；参考月光是大小不同的断续面片，暗水仍有层次，沿村与近塔有更明确暖光锚点和局部暖反射。",
+      "next_work": "以实际海面法线/波形尺度、反射与光源/雾响应做一次有界整图迭代，保留原生灯具位置记录。不要再把整图差距归给中央小岛背面；也不能只对PNG叠加光纹。若下一步只做Blender实体，先执行前两项，环境项随后单独冻结验证。",
+      "stage_check": "固定机位夜图辨认反射块面的不规则尺度、近远变化和暖冷层次，并以短时间变化/近水观察排除静态图板式结果；本轮只是优先级建议，尚未执行。"
+    }
+  ],
+  "cd_backside_role": "day-d-back/day-c-front or other auxiliary close views are diagnostics, not a recovered reference camera. Preserve closed volumes, supports, no obvious holes/intersections, and consistent style; exact hidden rock microform is underdetermined by1342. Existing31i local acceptance does not prove the full image; unreferenced backside polish should not monopolize next work.",
+  "world_geography_limit": "Current sidecar anchors are actual candidate placements; screen regions are approximate visual localization, not reference-original geography or geometric accuracy metrics.",
+  "full_reference_accepted": false,
+  "production_modified_by_this_review": false
+}

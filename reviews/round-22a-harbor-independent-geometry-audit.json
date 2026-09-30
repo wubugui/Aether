@@ -1,0 +1,790 @@
+{
+  "scope": "Independent source-gate reading and actualGLB coordinate/material check plus22a native site survey; noBlender/GPU, no model changes, visual pending",
+  "utc": "2026-09-08T10:42:40.536840+00:00",
+  "gate_sha256": "29972c494d0a73956ccece45030daf2a16be47e9318dcf2fb91b41d74f08fdcf",
+  "gate_passed": true,
+  "total_parts": 504,
+  "assets": {
+    "timber_pier": {
+      "source_sha_match": true,
+      "glb_sha_match": true,
+      "source_sha256": "513e6d7cc52cb710669d2b439be4eb08305cebb362f760c3915df93359c1ff15",
+      "glb_sha256": "7d241946f2073c491c910daeb108ca80fba1f76a30559d315d565914ac54ba12",
+      "source_parts": 183,
+      "bounds_godot": [
+        [
+          -2.3499999046325684,
+          -5.400000095367432,
+          -8.100000381469727
+        ],
+        [
+          2.3499999046325684,
+          3.3949999809265137,
+          8.100000381469727
+        ]
+      ],
+      "special_materials": []
+    },
+    "pier_landing": {
+      "source_sha_match": true,
+      "glb_sha_match": true,
+      "source_sha256": "533ea438ff23af4a295c929096254874ca14e64abf0cfef09d7a5a52dd9b7f54",
+      "glb_sha256": "a45db6afd776ccca1fff245455ba679ac52d6caf9321063f7d97b0067e4abd27",
+      "source_parts": 87,
+      "bounds_godot": [
+        [
+          -5.550000190734863,
+          -5.400000095367432,
+          -3.0999999046325684
+        ],
+        [
+          5.550000190734863,
+          3.3949999809265137,
+          3.0999999046325684
+        ]
+      ],
+      "special_materials": []
+    },
+    "repair_awning": {
+      "source_sha_match": true,
+      "glb_sha_match": true,
+      "source_sha256": "db9743bbf09a1b0a6821eb7c8dae1873bf7ee6b86b190ac66a7e8485d5b4eb01",
+      "glb_sha256": "53abafea771d800420cd79a37d643ddd5b518a0f2b821e6b3ebdebb8af78ff63",
+      "source_parts": 55,
+      "bounds_godot": [
+        [
+          -3.3642773628234863,
+          0.0,
+          -2.7227632999420166
+        ],
+        [
+          3.3642773628234863,
+          3.6268880367279053,
+          2.7227632999420166
+        ]
+      ],
+      "special_materials": [
+        {
+          "material": "Harbor weathered red canvas",
+          "alphaMode": "OPAQUE",
+          "baseColorFactor": [
+            0.23499999940395355,
+            0.054999999701976776,
+            0.029999999329447746,
+            1
+          ],
+          "bounds_godot": [
+            [
+              -3.319999933242798,
+              2.852447748184204,
+              -2.680000066757202
+            ],
+            [
+              3.319999933242798,
+              3.6119751930236816,
+              2.680000066757202
+            ]
+          ],
+          "position_count": 1240,
+          "emissiveFactor": null
+        }
+      ]
+    },
+    "harbor_lantern": {
+      "source_sha_match": true,
+      "glb_sha_match": true,
+      "source_sha256": "0a579e3a59b3f4259c9e3845f6c78f321fab10a912c05ddab0e06074e3fa6aef",
+      "glb_sha256": "445f64442b9d381c0a58e562d34da8a71b8b5458055a2d40bc40eaf5823a01ef",
+      "source_parts": 17,
+      "bounds_godot": [
+        [
+          -0.125,
+          0.0,
+          -0.27000001072883606
+        ],
+        [
+          1.1100000143051147,
+          3.200000047683716,
+          0.27000001072883606
+        ]
+      ],
+      "special_materials": [
+        {
+          "material": "Harbor lantern glass",
+          "alphaMode": "BLEND",
+          "baseColorFactor": [
+            0.25,
+            0.18000000715255737,
+            0.07000000029802322,
+            0.3400000035762787
+          ],
+          "bounds_godot": [
+            [
+              0.652999997138977,
+              2.1500000953674316,
+              -0.18700000643730164
+            ],
+            [
+              1.0269999504089355,
+              2.7300000190734863,
+              0.18700000643730164
+            ]
+          ],
+          "position_count": 96,
+          "emissiveFactor": null
+        },
+        {
+          "material": "Harbor lantern flame",
+          "alphaMode": "OPAQUE",
+          "baseColorFactor": [
+            0.800000011920929,
+            0.33000001311302185,
+            0.04500000178813934,
+            1
+          ],
+          "bounds_godot": [
+            [
+              0.7850000262260437,
+              2.309999942779541,
+              -0.052308108657598495
+            ],
+            [
+              0.8949999809265137,
+              2.569999933242798,
+              0.052308108657598495
+            ]
+          ],
+          "position_count": 60,
+          "emissiveFactor": [
+            0.8999999761581421,
+            0.3419999866485597,
+            0.05849999630451208
+          ]
+        }
+      ]
+    },
+    "harbor_cargo": {
+      "source_sha_match": true,
+      "glb_sha_match": true,
+      "source_sha256": "4be4f4230de927e06118a478c56f9dcd6bcf75f6de30825f30b9b13007028dfd",
+      "glb_sha256": "7f87982601852a99f24e0cd65c642fe3e24428c9addc8a6538190f7f4441cd37",
+      "source_parts": 102,
+      "bounds_godot": [
+        [
+          -1.3999603986740112,
+          -0.03999999910593033,
+          -1.4999604225158691
+        ],
+        [
+          1.3624999523162842,
+          2.0399999618530273,
+          0.9650000333786011
+        ]
+      ],
+      "special_materials": []
+    },
+    "moored_fishing_boat": {
+      "source_sha_match": true,
+      "glb_sha_match": true,
+      "source_sha256": "af0dcfe303426875f797100ccce89983153f88cf182c621ee44a7540f8906298",
+      "glb_sha256": "70e6053983dad7c0f35cbc1c23d90890c52be63cff175d4dbd55b3d75cbad665",
+      "source_parts": 60,
+      "bounds_godot": [
+        [
+          -1.1799618005752563,
+          -0.4000000059604645,
+          -3.799999952316284
+        ],
+        [
+          1.1799618005752563,
+          6.150000095367432,
+          3.540438652038574
+        ]
+      ],
+      "special_materials": [
+        {
+          "material": "Harbor flax sail",
+          "alphaMode": "OPAQUE",
+          "baseColorFactor": [
+            0.4300000071525574,
+            0.3700000047683716,
+            0.25,
+            1
+          ],
+          "bounds_godot": [
+            [
+              -0.052000001072883606,
+              1.5800000429153442,
+              -2.6500000953674316
+            ],
+            [
+              0.36000001430511475,
+              5.619999885559082,
+              2.5
+            ]
+          ],
+          "position_count": 30,
+          "emissiveFactor": null
+        }
+      ]
+    }
+  },
+  "pier_structure": [
+    {
+      "asset": "timber_pier",
+      "deck_board_top_y": 2.3499999046325684,
+      "deck_board_bottom_y": 2.200000047683716,
+      "stringer_top_y": 2.190000057220459,
+      "board_to_stringer_vertical_gap_m": 0.009999990463256836,
+      "nail_top_above_deck_m": 0.00800013542175293,
+      "deck_vertices_in_glb": 456,
+      "stringer_vertices_in_glb": 36
+    },
+    {
+      "asset": "pier_landing",
+      "deck_board_top_y": 2.3499999046325684,
+      "deck_board_bottom_y": 2.200000047683716,
+      "stringer_top_y": 2.190000057220459,
+      "board_to_stringer_vertical_gap_m": 0.009999990463256836,
+      "nail_top_above_deck_m": 0.00800013542175293,
+      "deck_vertices_in_glb": 168,
+      "stringer_vertices_in_glb": 36
+    }
+  ],
+  "lantern_core_godot_expected": [
+    0.84,
+    2.44,
+    0
+  ],
+  "glazing_source_gate": [
+    {
+      "name": "Lantern front rear glass",
+      "dimensions": [
+        0.3399999737739563,
+        0.01400001347064972,
+        0.5799999237060547
+      ],
+      "passed": true
+    },
+    {
+      "name": "Lantern side glass",
+      "dimensions": [
+        0.013999998569488525,
+        0.3400000035762787,
+        0.5799999237060547
+      ],
+      "passed": true
+    },
+    {
+      "name": "Lantern front rear glass.001",
+      "dimensions": [
+        0.3399999737739563,
+        0.01400001347064972,
+        0.5799999237060547
+      ],
+      "passed": true
+    },
+    {
+      "name": "Lantern side glass.001",
+      "dimensions": [
+        0.01399993896484375,
+        0.3400000035762787,
+        0.5799999237060547
+      ],
+      "passed": true
+    }
+  ],
+  "boat": {
+    "actual_hull_source66vertex_match_error_m": 1.0662413421827596e-07,
+    "actual_sail_source8vertex_match_error_m": 1.1444441048170039e-07,
+    "hull_structure": "11-point U cross-sections,6 stations, inner/outer wall with joined rim; no top lid across cavity. End-station caps close wall shell only. Individual closed hull means solid wood shell, not closed passenger space.",
+    "hull_width_inner_vsouter_at_station08": [
+      2.24,
+      1.9488
+    ],
+    "outer_keel_y": -0.4,
+    "inner_keel_y": -0.17,
+    "sail_thickness_axisX_m": 0.022,
+    "sail_bulge_axisX_m": 0.36,
+    "limitations": "No all-part collision/selfintersection scan. Mast/yard/stays physically meet or cross; endpoint/proximity and hull-waterline must be seen in actual scene. Thin bow skin about.00455m at rim may be delicate."
+  },
+  "survey_binding": {
+    "status": "passed",
+    "survey_sha_matches": true,
+    "survey_sha256": "b52744d8b82d8fd54dd15db5214d53a1a00e84148cfccaf5418b498a163c8e01",
+    "transects": 16,
+    "house_trials": 96,
+    "selected_houses": 23,
+    "piers": 4
+  },
+  "selected_house_ninepoint_relief": [
+    {
+      "index": 0,
+      "position": [
+        -2185.14013671875,
+        20.2431755065918,
+        -2080.0
+      ],
+      "sample_count": 9,
+      "min_y": 19.8293151855469,
+      "max_y": 20.2231750488281,
+      "relief_m": 0.39385986328120026,
+      "foundation_bottom_gap_range_if_unscaled_keeper_bottom_minus065": [
+        -0.6299995422362983,
+        -0.23613967895509802
+      ],
+      "all_terrain": true
+    },
+    {
+      "index": 1,
+      "position": [
+        -2206.09716796875,
+        19.0994071960449,
+        -2110.0
+      ],
+      "sample_count": 9,
+      "min_y": 18.6876831054688,
+      "max_y": 19.0794067382813,
+      "relief_m": 0.3917236328125,
+      "foundation_bottom_gap_range_if_unscaled_keeper_bottom_minus065": [
+        -0.6299995422363978,
+        -0.23827590942389776
+      ],
+      "all_terrain": true
+    },
+    {
+      "index": 2,
+      "position": [
+        -2303.71435546875,
+        20.2055168151855,
+        -2230.0
+      ],
+      "sample_count": 9,
+      "min_y": 19.7645874023438,
+      "max_y": 20.1855163574219,
+      "relief_m": 0.42092895507810013,
+      "foundation_bottom_gap_range_if_unscaled_keeper_bottom_minus065": [
+        -0.6299995422363978,
+        -0.20907058715829763
+      ],
+      "all_terrain": true
+    },
+    {
+      "index": 3,
+      "position": [
+        -2349.71533203125,
+        15.0199089050293,
+        -2300.0
+      ],
+      "sample_count": 9,
+      "min_y": 14.8676147460938,
+      "max_y": 14.9999084472656,
+      "relief_m": 0.1322937011718004,
+      "foundation_bottom_gap_range_if_unscaled_keeper_bottom_minus065": [
+        -0.6299995422363001,
+        -0.49770584106449967
+      ],
+      "all_terrain": true
+    },
+    {
+      "index": 4,
+      "position": [
+        -2329.71533203125,
+        15.0199089050293,
+        -2300.0
+      ],
+      "sample_count": 9,
+      "min_y": 14.999755859375,
+      "max_y": 14.9999084472656,
+      "relief_m": 0.000152587890600131,
+      "foundation_bottom_gap_range_if_unscaled_keeper_bottom_minus065": [
+        -0.6299995422363001,
+        -0.6298469543456999
+      ],
+      "all_terrain": true
+    },
+    {
+      "index": 5,
+      "position": [
+        -2372.71337890625,
+        15.0199394226074,
+        -2335.0
+      ],
+      "sample_count": 9,
+      "min_y": 14.9338684082031,
+      "max_y": 14.9999389648438,
+      "relief_m": 0.06607055664069961,
+      "foundation_bottom_gap_range_if_unscaled_keeper_bottom_minus065": [
+        -0.6299995422363995,
+        -0.5639289855956999
+      ],
+      "all_terrain": true
+    },
+    {
+      "index": 6,
+      "position": [
+        -2352.71337890625,
+        15.0199394226074,
+        -2335.0
+      ],
+      "sample_count": 9,
+      "min_y": 14.9999084472656,
+      "max_y": 14.9999389648438,
+      "relief_m": 3.051757819960699e-05,
+      "foundation_bottom_gap_range_if_unscaled_keeper_bottom_minus065": [
+        -0.6299995422363995,
+        -0.6299690246581999
+      ],
+      "all_terrain": true
+    },
+    {
+      "index": 7,
+      "position": [
+        -2441.71728515625,
+        15.3935050964355,
+        -2440.0
+      ],
+      "sample_count": 9,
+      "min_y": 15.07763671875,
+      "max_y": 15.3735046386719,
+      "relief_m": 0.29586791992189987,
+      "foundation_bottom_gap_range_if_unscaled_keeper_bottom_minus065": [
+        -0.6299995422363995,
+        -0.33413162231449967
+      ],
+      "all_terrain": true
+    },
+    {
+      "index": 8,
+      "position": [
+        -2421.71728515625,
+        15.3364677429199,
+        -2440.0
+      ],
+      "sample_count": 9,
+      "min_y": 15.0942077636719,
+      "max_y": 15.3164672851563,
+      "relief_m": 0.22225952148439987,
+      "foundation_bottom_gap_range_if_unscaled_keeper_bottom_minus065": [
+        -0.6299995422363995,
+        -0.40774002075199967
+      ],
+      "all_terrain": true
+    },
+    {
+      "index": 9,
+      "position": [
+        -2461.43408203125,
+        15.0863761901855,
+        -2470.0
+      ],
+      "sample_count": 9,
+      "min_y": 14.7322692871094,
+      "max_y": 15.0663757324219,
+      "relief_m": 0.3341064453125,
+      "foundation_bottom_gap_range_if_unscaled_keeper_bottom_minus065": [
+        -0.6299995422363995,
+        -0.29589309692389953
+      ],
+      "all_terrain": true
+    },
+    {
+      "index": 10,
+      "position": [
+        -2441.43408203125,
+        15.1409111022949,
+        -2470.0
+      ],
+      "sample_count": 9,
+      "min_y": 15.0028686523438,
+      "max_y": 15.1209106445313,
+      "relief_m": 0.1180419921875,
+      "foundation_bottom_gap_range_if_unscaled_keeper_bottom_minus065": [
+        -0.6299995422363995,
+        -0.5119575500488995
+      ],
+      "all_terrain": true
+    },
+    {
+      "index": 11,
+      "position": [
+        -2481.14111328125,
+        15.0199089050293,
+        -2500.0
+      ],
+      "sample_count": 9,
+      "min_y": 14.99853515625,
+      "max_y": 14.9999084472656,
+      "relief_m": 0.001373291015600131,
+      "foundation_bottom_gap_range_if_unscaled_keeper_bottom_minus065": [
+        -0.6299995422363001,
+        -0.6286262512206999
+      ],
+      "all_terrain": true
+    },
+    {
+      "index": 12,
+      "position": [
+        -2461.14111328125,
+        15.064769744873,
+        -2500.0
+      ],
+      "sample_count": 9,
+      "min_y": 14.9998779296875,
+      "max_y": 15.0447692871094,
+      "relief_m": 0.04489135742189987,
+      "foundation_bottom_gap_range_if_unscaled_keeper_bottom_minus065": [
+        -0.6299995422363995,
+        -0.5851081848144997
+      ],
+      "all_terrain": true
+    },
+    {
+      "index": 13,
+      "position": [
+        -2500.85302734375,
+        15.0199089050293,
+        -2530.0
+      ],
+      "sample_count": 9,
+      "min_y": 14.9999084472656,
+      "max_y": 14.9999084472656,
+      "relief_m": 0.0,
+      "foundation_bottom_gap_range_if_unscaled_keeper_bottom_minus065": [
+        -0.6299995422363001,
+        -0.6299995422363001
+      ],
+      "all_terrain": true
+    },
+    {
+      "index": 14,
+      "position": [
+        -2480.85302734375,
+        15.0199394226074,
+        -2530.0
+      ],
+      "sample_count": 9,
+      "min_y": 14.9999084472656,
+      "max_y": 14.9999389648438,
+      "relief_m": 3.051757819960699e-05,
+      "foundation_bottom_gap_range_if_unscaled_keeper_bottom_minus065": [
+        -0.6299995422363995,
+        -0.6299690246581999
+      ],
+      "all_terrain": true
+    },
+    {
+      "index": 15,
+      "position": [
+        -2540.28662109375,
+        15.0199394226074,
+        -2590.0
+      ],
+      "sample_count": 9,
+      "min_y": 14.8943786621094,
+      "max_y": 14.9999389648438,
+      "relief_m": 0.10556030273439987,
+      "foundation_bottom_gap_range_if_unscaled_keeper_bottom_minus065": [
+        -0.6299995422363995,
+        -0.5244392395019997
+      ],
+      "all_terrain": true
+    },
+    {
+      "index": 16,
+      "position": [
+        -2520.28662109375,
+        15.0199394226074,
+        -2590.0
+      ],
+      "sample_count": 9,
+      "min_y": 14.9999084472656,
+      "max_y": 14.9999389648438,
+      "relief_m": 3.051757819960699e-05,
+      "foundation_bottom_gap_range_if_unscaled_keeper_bottom_minus065": [
+        -0.6299995422363995,
+        -0.6299690246581999
+      ],
+      "all_terrain": true
+    },
+    {
+      "index": 17,
+      "position": [
+        -2566.57568359375,
+        15.0198783874512,
+        -2630.0
+      ],
+      "sample_count": 9,
+      "min_y": 14.8522338867188,
+      "max_y": 14.9998779296875,
+      "relief_m": 0.14764404296870026,
+      "foundation_bottom_gap_range_if_unscaled_keeper_bottom_minus065": [
+        -0.6299995422363001,
+        -0.4823554992675998
+      ],
+      "all_terrain": true
+    },
+    {
+      "index": 18,
+      "position": [
+        -2546.57568359375,
+        15.0199089050293,
+        -2630.0
+      ],
+      "sample_count": 9,
+      "min_y": 14.9998779296875,
+      "max_y": 14.9999084472656,
+      "relief_m": 3.0517578100131004e-05,
+      "foundation_bottom_gap_range_if_unscaled_keeper_bottom_minus065": [
+        -0.6299995422363001,
+        -0.6299690246581999
+      ],
+      "all_terrain": true
+    },
+    {
+      "index": 19,
+      "position": [
+        -2592.86474609375,
+        15.0199089050293,
+        -2670.0
+      ],
+      "sample_count": 9,
+      "min_y": 14.9998779296875,
+      "max_y": 14.9999084472656,
+      "relief_m": 3.0517578100131004e-05,
+      "foundation_bottom_gap_range_if_unscaled_keeper_bottom_minus065": [
+        -0.6299995422363001,
+        -0.6299690246581999
+      ],
+      "all_terrain": true
+    },
+    {
+      "index": 20,
+      "position": [
+        -2572.86474609375,
+        15.0199089050293,
+        -2670.0
+      ],
+      "sample_count": 9,
+      "min_y": 14.9999084472656,
+      "max_y": 14.9999084472656,
+      "relief_m": 0.0,
+      "foundation_bottom_gap_range_if_unscaled_keeper_bottom_minus065": [
+        -0.6299995422363001,
+        -0.6299995422363001
+      ],
+      "all_terrain": true
+    },
+    {
+      "index": 21,
+      "position": [
+        -2619.14404296875,
+        15.0199089050293,
+        -2710.0
+      ],
+      "sample_count": 9,
+      "min_y": 14.7282104492188,
+      "max_y": 14.9999084472656,
+      "relief_m": 0.2716979980468004,
+      "foundation_bottom_gap_range_if_unscaled_keeper_bottom_minus065": [
+        -0.6299995422363001,
+        -0.35830154418949967
+      ],
+      "all_terrain": true
+    },
+    {
+      "index": 22,
+      "position": [
+        -2599.14404296875,
+        15.0199699401855,
+        -2710.0
+      ],
+      "sample_count": 9,
+      "min_y": 14.9999084472656,
+      "max_y": 14.9999694824219,
+      "relief_m": 6.103515629973799e-05,
+      "foundation_bottom_gap_range_if_unscaled_keeper_bottom_minus065": [
+        -0.6299995422363995,
+        -0.6299385070800998
+      ],
+      "all_terrain": true
+    }
+  ],
+  "pier_entry_deltas": [
+    {
+      "entry": [
+        -2292.02416992188,
+        0,
+        -2110.0
+      ],
+      "terrain_y_range": [
+        2.14315795898438,
+        2.15679931640625
+      ],
+      "deck_minus_entry_terrain_range_m": [
+        0.1932006835937501,
+        0.2068420410156202
+      ],
+      "tip_collider": "/root/Skyfarer/World/Ocean/SeaCollision",
+      "seabed_support_proven": false
+    },
+    {
+      "entry": [
+        -2393.88647460938,
+        0,
+        -2265.0
+      ],
+      "terrain_y_range": [
+        2.142578125,
+        2.157470703125
+      ],
+      "deck_minus_entry_terrain_range_m": [
+        0.1925292968750001,
+        0.2074218750000001
+      ],
+      "tip_collider": "/root/Skyfarer/World/Ocean/SeaCollision",
+      "seabed_support_proven": false
+    },
+    {
+      "entry": [
+        -2548.31469726563,
+        0,
+        -2500.0
+      ],
+      "terrain_y_range": [
+        2.14227294921875,
+        2.15740966796875
+      ],
+      "deck_minus_entry_terrain_range_m": [
+        0.1925903320312501,
+        0.2077270507812501
+      ],
+      "tip_collider": "/root/Skyfarer/World/Ocean/SeaCollision",
+      "seabed_support_proven": false
+    },
+    {
+      "entry": [
+        -2660.03833007813,
+        0,
+        -2670.0
+      ],
+      "terrain_y_range": [
+        2.1431884765625,
+        2.15679931640625
+      ],
+      "deck_minus_entry_terrain_range_m": [
+        0.1932006835937501,
+        0.2068115234375001
+      ],
+      "tip_collider": "/root/Skyfarer/World/Ocean/SeaCollision",
+      "seabed_support_proven": false
+    }
+  ],
+  "limitations": [
+    "9-point unscaledkeeper bound does not establish allfoundations/steps/access, and different scales require their own transforms.",
+    "Entry3samples prove about.2m stepup not connected walkable ramp.",
+    "Pile bottom-5.4m belowsea0 does not prove seabed anchoring.",
+    "Partclosure/positivevolume gates do not prove mutually nonintersecting modules."
+  ],
+  "visual_accepted": false
+}

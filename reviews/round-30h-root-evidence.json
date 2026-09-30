@@ -1,0 +1,123 @@
+{
+  "run_id": "lantern-island-30h-20260908T191003Z-b60fbd9ddc33459aa01a7396a355b6db",
+  "manifest_sha256": "22e30899e1ad4bc4d2fe63ea23510c3fed86d9390aff8322cc5a32259043b213",
+  "terminal_passed": true,
+  "binding_count": 196,
+  "all_bound_hashes_match": true,
+  "incremental_runtime_report": "reviews/round-30h-runtime-incremental.json",
+  "root_views": [
+    {
+      "name": "night-reference",
+      "path": "captures\\validation_runs\\lantern-island-30h-20260908T191003Z-b60fbd9ddc33459aa01a7396a355b6db\\images\\night-reference.png",
+      "png_sha256": "cb7ac344ccc3256b0a33431be3bb9785906fb3b218f8dff0a998ebe17f521522",
+      "sidecar_sha256": "703bb10f75dc7528d73ed08bc3317af4dfe849d4dd2a04143edd99846a795fe3",
+      "root_directly_viewed": true,
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -2278.0,
+          60.0,
+          -1632.0
+        ],
+        "rotation": [
+          -0.00509163970127702,
+          0.60683274269104,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "day-reference",
+      "path": "captures\\validation_runs\\lantern-island-30h-20260908T191003Z-b60fbd9ddc33459aa01a7396a355b6db\\images\\day-reference.png",
+      "png_sha256": "7821f27fa7ad2f932dc38f2cba79393f8ba0573f09b27b06b0a0bdd8c0ec6be8",
+      "sidecar_sha256": "f849c6f2d571a7099f3c781118288801fd88193212593c1e319f2c164d8d491d",
+      "root_directly_viewed": true,
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -2278.0,
+          60.0,
+          -1632.0
+        ],
+        "rotation": [
+          -0.00509163970127702,
+          0.60683274269104,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "day-d-front",
+      "path": "captures\\validation_runs\\lantern-island-30h-20260908T191003Z-b60fbd9ddc33459aa01a7396a355b6db\\images\\day-d-front.png",
+      "png_sha256": "1348eb448b50d5123fdadbece774895627dc3374171923f5e5566c80ef99f61b",
+      "sidecar_sha256": "da0777ae7f3887f56f54f6c98bab12a2907eb7a000c0bbf77a40a84b4cfe56e9",
+      "root_directly_viewed": true,
+      "camera": {
+        "fov": 55.0,
+        "position": [
+          -2335.39868164063,
+          40.0,
+          -1900.23461914063
+        ],
+        "rotation": [
+          -0.304300278425217,
+          2.74837756156921,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "day-d-back",
+      "path": "captures\\validation_runs\\lantern-island-30h-20260908T191003Z-b60fbd9ddc33459aa01a7396a355b6db\\images\\day-d-back.png",
+      "png_sha256": "24949b921a77c45f2cbe5c59af0f586ff9cf2673a773712ab36797573054f7ed",
+      "sidecar_sha256": "53f1cb60bf64d7ac2a83eaa80fc9d5d6e0bf9ae27400947f337a1a3403aa1c17",
+      "root_directly_viewed": true,
+      "camera": {
+        "fov": 55.0,
+        "position": [
+          -2401.97412109375,
+          35.0,
+          -1721.29968261719
+        ],
+        "rotation": [
+          -0.255971014499664,
+          -0.319175213575363,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "day-c-front",
+      "path": "captures\\validation_runs\\lantern-island-30h-20260908T191003Z-b60fbd9ddc33459aa01a7396a355b6db\\images\\day-c-front.png",
+      "png_sha256": "c0b050fd5c79640a2c6c9246cfeffc5dfadd0edcd9a8823390968b58bd06f05d",
+      "sidecar_sha256": "2aebfc967c6656c100f3560d3ddb1558bbf021468bf6fbacac242102a954438c",
+      "root_directly_viewed": true,
+      "camera": {
+        "fov": 55.0,
+        "position": [
+          -2985.0,
+          40.0,
+          -2580.0
+        ],
+        "rotation": [
+          -0.304300338029861,
+          0.748378038406372,
+          0.0
+        ]
+      }
+    }
+  ],
+  "independent_review": "reviews\\round-30h-island-independent-review.md",
+  "independent_review_sha256": "63c65e1f982b46fa3d0f8a6e65f76c490b9f4cb88da656cd97456cd671983ccc",
+  "independent_geometry": "reviews/round-30h-independent-geometry.json",
+  "near_protection": "reviews/round-30h-near-protection.json",
+  "visual_accepted": false,
+  "production_installed": false,
+  "full_goal_status": "active",
+  "root_findings": [
+    "Southern/eastern visible grey slope changes, but new dense vertical pointed triangles and fan-shaped recesses remain unlike reference short broad rock shoulders.",
+    "Protected occupied surfaces, path and17rocks retained; geometry/runtime checks do not imply visual acceptance.",
+    "Do not retain30e/f/g failed meshes or repeat their GPU runs.30h successful native pipeline can inform a revised authoring method, but the new fluted slope is not visually accepted.",
+    "Next sculpt broad staggered facets and transitions from actual occupied plateau to coast. Avoid adding further dense cutter rim samples or only lowering nominal floor planes. Existing narrow straight back slot also remains."
+  ]
+}

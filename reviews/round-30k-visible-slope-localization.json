@@ -1,0 +1,299 @@
+{
+  "scope": "Targeted ray localization of directly viewed unobstructed grey-rock pixels in actual day-c-front. Camera projection uses actual Godot Euler YXZ and vertical FOV, fixed C origin. Intersects actual island GLB only; not a full scene visibility/segmentation test.",
+  "png_sha256": "5883653f07ba3c6c96d3d246a227bffb0bd5caa22cdd2798e73fb772647682a0",
+  "sidecar_sha256": "aef3770b67e5a8f51357505fb2ac76ff956336b1f88f8dc78659d6359a7a49af",
+  "glb_sha256": "4fbf048a8ffc32294400b49a5806e88b1a8f4cff5b908531a2435cdbc907ea9f",
+  "camera": {
+    "fov": 55.0,
+    "position": [
+      -2985.0,
+      40.0,
+      -2580.0
+    ],
+    "rotation": [
+      -0.304300338029861,
+      0.748378038406372,
+      0.0
+    ]
+  },
+  "camera_blender_xyz": [
+    65.0,
+    -70.0,
+    40.0
+  ],
+  "samples": [
+    {
+      "pixel": [
+        620,
+        540
+      ],
+      "hit_blender_xyz": [
+        -11.790194315532759,
+        -20.599268557062466,
+        4.507260038903738
+      ],
+      "triangle_blender_xyz": [
+        [
+          -5.0,
+          -17.5,
+          3.5999999046325684
+        ],
+        [
+          -14.782608985900879,
+          -20.434782028198242,
+          5.491304397583008
+        ],
+        [
+          -14.000782012939453,
+          -21.998435974121094,
+          4.653667449951172
+        ]
+      ],
+      "normal_blender_xyz": [
+        0.276409946593357,
+        -0.3427597486341968,
+        0.8978381235726626
+      ],
+      "source": {
+        "name": "island_c grass and exposed rock terrain",
+        "face": 1850,
+        "vertices": [
+          86,
+          75,
+          73
+        ]
+      },
+      "distance_m": 97.96377289621157,
+      "connected_coplanar_patch": {
+        "source_faces": [
+          1850
+        ],
+        "area_m2": 9.796368871948676,
+        "bounds_min_xyz": [
+          -14.782608985900879,
+          -21.998435974121094,
+          3.5999999046325684
+        ],
+        "bounds_max_xyz": [
+          -5.0,
+          -17.5,
+          5.491304397583008
+        ],
+        "normal_tolerance": 1e-08,
+        "plane_distance_tolerance_m": 1e-05
+      }
+    },
+    {
+      "pixel": [
+        695,
+        525
+      ],
+      "hit_blender_xyz": [
+        -4.576876911360884,
+        -16.24478671146197,
+        6.848831681166843
+      ],
+      "triangle_blender_xyz": [
+        [
+          -3.89082670211792,
+          -14.67684268951416,
+          10.717119216918945
+        ],
+        [
+          -4.446094989776611,
+          -14.896646499633789,
+          10.728569030761719
+        ],
+        [
+          -5.0,
+          -17.5,
+          3.5999999046325684
+        ]
+      ],
+      "normal_blender_xyz": [
+        0.35685301500613154,
+        -0.8860700301352359,
+        0.2958645422776715
+      ],
+      "source": {
+        "name": "island_c grass and exposed rock terrain",
+        "face": 1827,
+        "vertices": [
+          154,
+          142,
+          86
+        ]
+      },
+      "distance_m": 93.96576353831477,
+      "connected_coplanar_patch": {
+        "source_faces": [
+          1672,
+          1823,
+          1824,
+          1825,
+          1826,
+          1827,
+          1828,
+          1829,
+          1830,
+          1831,
+          1832,
+          1833,
+          1834,
+          1835,
+          1836,
+          1838
+        ],
+        "area_m2": 23.543238860895563,
+        "bounds_min_xyz": [
+          -5.0,
+          -17.5,
+          3.5999999046325684
+        ],
+        "bounds_max_xyz": [
+          1.2663664817810059,
+          -12.800225257873535,
+          10.728569030761719
+        ],
+        "normal_tolerance": 1e-08,
+        "plane_distance_tolerance_m": 1e-05
+      }
+    },
+    {
+      "pixel": [
+        755,
+        550
+      ],
+      "hit_blender_xyz": [
+        1.9994436167716287,
+        -13.994436168711246,
+        5.255010991367392
+      ],
+      "triangle_blender_xyz": [
+        [
+          2.0,
+          -14.0,
+          8.56719970703125
+        ],
+        [
+          2.0,
+          -14.0,
+          4.699999809265137
+        ],
+        [
+          1.8666666746139526,
+          -12.666666984558105,
+          10.035901069641113
+        ]
+      ],
+      "normal_blender_xyz": [
+        0.9950371884483399,
+        0.09950373663748968,
+        0.0
+      ],
+      "source": {
+        "name": "island_c grass and exposed rock terrain",
+        "face": 1898,
+        "vertices": [
+          420,
+          406,
+          513
+        ]
+      },
+      "distance_m": 91.17514763282205,
+      "connected_coplanar_patch": {
+        "source_faces": [
+          1686,
+          1897,
+          1898,
+          1899,
+          1900,
+          1901,
+          1902,
+          1903
+        ],
+        "area_m2": 7.8351130260858595,
+        "bounds_min_xyz": [
+          1.658917784690857,
+          -14.0,
+          4.699999809265137
+        ],
+        "bounds_max_xyz": [
+          2.0,
+          -10.589178085327148,
+          11.04412841796875
+        ],
+        "normal_tolerance": 1e-08,
+        "plane_distance_tolerance_m": 1e-05
+      }
+    },
+    {
+      "pixel": [
+        810,
+        545
+      ],
+      "hit_blender_xyz": [
+        6.5595993316924535,
+        -10.775230782111699,
+        6.096881437776162
+      ],
+      "triangle_blender_xyz": [
+        [
+          2.0,
+          -14.0,
+          4.699999809265137
+        ],
+        [
+          9.0,
+          -11.0,
+          3.4000000953674316
+        ],
+        [
+          3.5840179920196533,
+          -9.55573844909668,
+          11.054588317871094
+        ]
+      ],
+      "normal_blender_xyz": [
+        0.42122548616318367,
+        -0.7891856001758875,
+        0.44693979268086426
+      ],
+      "source": {
+        "name": "island_c grass and exposed rock terrain",
+        "face": 1875,
+        "vertices": [
+          406,
+          421,
+          547
+        ]
+      },
+      "distance_m": 89.84584112483259,
+      "connected_coplanar_patch": {
+        "source_faces": [
+          1679,
+          1872,
+          1873,
+          1874,
+          1875,
+          1876,
+          1877
+        ],
+        "area_m2": 37.25043893439691,
+        "bounds_min_xyz": [
+          1.658917784690857,
+          -14.0,
+          3.4000000953674316
+        ],
+        "bounds_max_xyz": [
+          9.0,
+          -9.55573844909668,
+          11.078219413757324
+        ],
+        "normal_tolerance": 1e-08,
+        "plane_distance_tolerance_m": 1e-05
+      }
+    }
+  ],
+  "conclusion": "Localizes four directly seen30k front-slope points: wide left inclined face and central incision/face. Use current native source indices only; no whole-image segmentation or artistic acceptance claim."
+}

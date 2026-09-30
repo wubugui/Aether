@@ -1,0 +1,260 @@
+{
+  "round": "30k",
+  "scope": "Actual30k GLB versus30d; source triangles match, closed shell, road/pad plus five retained C/D tree disks preserved. Two relocated trees use actual all17rock+main upper envelope at radius0.3m, not old2m frozen disks.",
+  "files": {
+    "captures\\lantern_island_study_30k\\island_c.glb": "4fbf048a8ffc32294400b49a5806e88b1a8f4cff5b908531a2435cdbc907ea9f",
+    "captures\\lantern_island_study_30k\\geometry-evidence.json": "c21beea37c96ffa8b97f47fa2e36580c5f16d9c77fed5df0cb3fb60eadbf61b8",
+    "captures\\lantern_island_study_30d\\island_c.glb": "7c5e4f1f66436fb2b28cb16416be8d08d95657f96b86dcfd282106b37ca18c5f",
+    "captures\\island-30k-authored-cut-plan.json": "2ac3414406b3c16766fa13af8a2597692732d278ef1544fe1b2cefff3886f602"
+  },
+  "native_objects": 19,
+  "actual_main_triangles": 1936,
+  "source_native_main_matches_actual_glb": true,
+  "actual_glb_edges_oppositely_paired_at_1e_5m": true,
+  "actual_min_triangle_area_m2": 1.4351405588411331e-06,
+  "actual_main_signed_volume_m3": 21218.726685557802,
+  "path_and17rocks_source_exact_and_actual_triangles_present": [
+    "island_c terrain fitted keeper paths",
+    "West broken shoulder",
+    "Southwest leaning crag",
+    "South broad low spur",
+    "East high fracture",
+    "Northeast sloping shoulder",
+    "North broken ridge",
+    "Northwest split buttress",
+    "West rooted toe",
+    "Southwest wash ledge",
+    "South low reef",
+    "East submerged root",
+    "Northeast low cluster",
+    "North tidal end",
+    "Northwest rooted slab",
+    "West waterline satellite",
+    "South low satellite",
+    "East tidal satellite"
+  ],
+  "actual_path_counter_exact": true,
+  "required_retained_supports": [
+    {
+      "region": "road_footprint",
+      "expected_support_projection_area_m2": 25.572388056364687,
+      "same_linear_height_coverage_m2": 25.57238805636466,
+      "unpreserved_area_m2": 0.0,
+      "higher_than_old_by_over_0_1mm_area_m2": 0.0,
+      "all_intersecting_up_surface_height_delta_min_max_m": [
+        0.0,
+        0.0
+      ],
+      "pass": true
+    },
+    {
+      "region": "padded_sites",
+      "expected_support_projection_area_m2": 123.97999999993658,
+      "same_linear_height_coverage_m2": 123.97999999993657,
+      "unpreserved_area_m2": 7.840743431659626e-15,
+      "higher_than_old_by_over_0_1mm_area_m2": 0.0,
+      "all_intersecting_up_surface_height_delta_min_max_m": [
+        -1.0164395367051604e-19,
+        2.610743550870726e-13
+      ],
+      "pass": true
+    },
+    {
+      "region": "current_CD_tree_axis_2m_disks",
+      "expected_support_projection_area_m2": 55.89157177920087,
+      "same_linear_height_coverage_m2": 55.891571779200795,
+      "unpreserved_area_m2": 0.0,
+      "higher_than_old_by_over_0_1mm_area_m2": 0.0,
+      "all_intersecting_up_surface_height_delta_min_max_m": [
+        0.0,
+        0.0
+      ],
+      "pass": true
+    }
+  ],
+  "retained_tree_axes_local_CD": [
+    [
+      -12.599975846270462,
+      3.2399484710195248
+    ],
+    [
+      -14.399973973877115,
+      1.440010834970904
+    ],
+    [
+      -12.240006291305,
+      -0.7199526786979487
+    ],
+    [
+      8.28002022024867,
+      6.479933000983532
+    ],
+    [
+      10.79995105818415,
+      5.039916351430799
+    ],
+    [
+      -12.60009765625,
+      3.239990234380002
+    ],
+    [
+      -14.39990234375,
+      1.43994140625
+    ],
+    [
+      -12.239990234380002,
+      -0.7199707031199978
+    ],
+    [
+      8.280029296869998,
+      6.47998046875
+    ],
+    [
+      10.800048828119998,
+      5.0400390625
+    ]
+  ],
+  "six_actual_target_depths": [
+    {
+      "pixel30d": [
+        620,
+        548
+      ],
+      "xy": [
+        -8.40268045512721,
+        -22.849759835229733
+      ],
+      "old_ground_z_m": 5.2282953933723775,
+      "actual30k_ground_z_m": 2.567778926662088,
+      "actual_cut_depth_m": 2.6605164667102894,
+      "difference_from_plan_m": 5.731484264970277e-08
+    },
+    {
+      "pixel30d": [
+        700,
+        550
+      ],
+      "xy": [
+        -2.2022517020657375,
+        -17.609635469750906
+      ],
+      "old_ground_z_m": 5.168115246216708,
+      "actual30k_ground_z_m": 3.9088685347669268,
+      "actual_cut_depth_m": 1.259246711449781,
+      "difference_from_plan_m": 3.769804024500445e-09
+    },
+    {
+      "pixel30d": [
+        770,
+        552
+      ],
+      "xy": [
+        4.532523203799933,
+        -14.299116844883912
+      ],
+      "old_ground_z_m": 5.8502160527939395,
+      "actual30k_ground_z_m": 4.102763194333512,
+      "actual_cut_depth_m": 1.7474528584604272,
+      "difference_from_plan_m": 4.0697143433021665e-08
+    },
+    {
+      "pixel30d": [
+        825,
+        570
+      ],
+      "xy": [
+        9.7694224328081,
+        -12.00553936418725
+      ],
+      "old_ground_z_m": 4.766233120714361,
+      "actual30k_ground_z_m": 3.1428573255318555,
+      "actual_cut_depth_m": 1.6233757951825054,
+      "difference_from_plan_m": -1.5481247395143782e-08
+    },
+    {
+      "pixel30d": [
+        900,
+        548
+      ],
+      "xy": [
+        14.147895588078221,
+        -6.029880281978336
+      ],
+      "old_ground_z_m": 6.470663971243843,
+      "actual30k_ground_z_m": 5.734566996104821,
+      "actual_cut_depth_m": 0.7360969751390218,
+      "difference_from_plan_m": -5.54780278605449e-07
+    },
+    {
+      "pixel30d": [
+        970,
+        548
+      ],
+      "xy": [
+        17.60043907418696,
+        0.8834506482421745
+      ],
+      "old_ground_z_m": 5.352697758792004,
+      "actual30k_ground_z_m": 3.1570258261243644,
+      "actual_cut_depth_m": 2.19567193266764,
+      "difference_from_plan_m": -1.4394660574623686e-07
+    }
+  ],
+  "two_relocated_tree_supports": [
+    {
+      "new_blender_xy": [
+        17,
+        -1.5
+      ],
+      "native_instance_scale": 0.8,
+      "trunk_disk_radius_m": 0.3,
+      "supported_area_m2": 0.2827149525839496,
+      "unsupported_area_m2": 0.0,
+      "actual_center_upper_surface": [
+        {
+          "source": "island_c grass and exposed rock terrain_face_1693",
+          "z_m": 3.309756153710732,
+          "slope_deg": 21.3099095494542
+        }
+      ],
+      "actual_upper_envelope_height_min_max_m": [
+        3.1927326789051484,
+        3.3836347292712015
+      ],
+      "max_upper_envelope_slope_deg": 21.3099095494542,
+      "max_internal_height_jump_m": 8.881784197001252e-16,
+      "includes_all17_retained_rocks": true
+    },
+    {
+      "new_blender_xy": [
+        17.6,
+        -5
+      ],
+      "native_instance_scale": 0.55,
+      "trunk_disk_radius_m": 0.3,
+      "supported_area_m2": 0.28271495258394924,
+      "unsupported_area_m2": 5.648439208765302e-18,
+      "actual_center_upper_surface": [
+        {
+          "source": "island_c grass and exposed rock terrain_face_1922",
+          "z_m": 3.4977777498546816,
+          "slope_deg": 4.410963614102534
+        }
+      ],
+      "actual_upper_envelope_height_min_max_m": [
+        3.474636914854536,
+        3.520918584854827
+      ],
+      "max_upper_envelope_slope_deg": 4.410964561850856,
+      "max_internal_height_jump_m": 1.0127125917372415e-16,
+      "includes_all17_retained_rocks": true
+    }
+  ],
+  "pass": true,
+  "full_reference_accepted": false,
+  "limits": [
+    "Tree relocation must also appear in actual runtime sidecars, checked separately by root.",
+    "Tree support geometry is continuous; slopes are reported without inventing an unconditional species/model slope threshold.",
+    "No exhaustive self-intersection, walking, or GPU visual acceptance from geometry alone."
+  ]
+}

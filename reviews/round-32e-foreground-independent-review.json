@@ -1,0 +1,212 @@
+{
+  "round": "32e",
+  "decision": "retain_as_stage_composition_candidate_and_proceed_to_right_coast_water_work; not_final_art_or_native_install_acceptance",
+  "scope": "five actual GPU images plus bounded frozen identity/runtime transforms; no source geometry rerun or C/D review",
+  "run_status": "passed",
+  "run_passed": true,
+  "engine_stages": [
+    {
+      "name": "night-views",
+      "passed": true,
+      "exit_code": 0
+    },
+    {
+      "name": "day-views",
+      "passed": true,
+      "exit_code": 0
+    }
+  ],
+  "images": [
+    {
+      "view": "night-reference",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\foreground-island-32e-20260908T223609Z-ac0259d9ba184d03b996e8edae4e4dc9\\images\\night-reference.png",
+      "sha256": "c00ed66debb77396645a74105ea0887a0787425f9b39c15544ae90cbc89ab50b",
+      "manifest_matches": true,
+      "sidecar_sha256": "7e9e2eb04d6266bc8cd213eee1e536a7e2573a156a5ff094cd17ef3645684fae",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "island_a_glb_sha256": "8cb8bdf399ae1068ee40230a2ad7282d93fa9d06a8d67cb3c145e192ba90a7b9",
+      "production_modified": false,
+      "actually_viewed": true
+    },
+    {
+      "view": "day-reference",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\foreground-island-32e-20260908T223609Z-ac0259d9ba184d03b996e8edae4e4dc9\\images\\day-reference.png",
+      "sha256": "2944e8da7d278e93a3b5d6dbae6021871ba53f52f5a1264ea70f9193eff37e42",
+      "manifest_matches": true,
+      "sidecar_sha256": "d04b0c6f3890f80842d6d86c52d298e21a5fa3888b0deb142f885f2e7ce4c4ff",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "island_a_glb_sha256": "8cb8bdf399ae1068ee40230a2ad7282d93fa9d06a8d67cb3c145e192ba90a7b9",
+      "production_modified": false,
+      "actually_viewed": true
+    },
+    {
+      "view": "day-a-front",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\foreground-island-32e-20260908T223609Z-ac0259d9ba184d03b996e8edae4e4dc9\\images\\day-a-front.png",
+      "sha256": "75512be866dc8f52a47eaa1362688f9395aff5c1c10bf75af831e459feb9d23b",
+      "manifest_matches": true,
+      "sidecar_sha256": "57f9ad5f218acf8201babe7b6153548b6f79dfb99e6374ba0cc0a9d220e0fa68",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "island_a_glb_sha256": "8cb8bdf399ae1068ee40230a2ad7282d93fa9d06a8d67cb3c145e192ba90a7b9",
+      "production_modified": false,
+      "actually_viewed": true
+    },
+    {
+      "view": "day-a-back",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\foreground-island-32e-20260908T223609Z-ac0259d9ba184d03b996e8edae4e4dc9\\images\\day-a-back.png",
+      "sha256": "d09f26ae7580ea2501e7f9f26133707e85154d14049007f65037e9b5a7445233",
+      "manifest_matches": true,
+      "sidecar_sha256": "136e061cda3113f6c67789481f428940b2ed2ab8d2193165afabc8971bebc31e",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "island_a_glb_sha256": "8cb8bdf399ae1068ee40230a2ad7282d93fa9d06a8d67cb3c145e192ba90a7b9",
+      "production_modified": false,
+      "actually_viewed": true
+    },
+    {
+      "view": "day-a-approach",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\foreground-island-32e-20260908T223609Z-ac0259d9ba184d03b996e8edae4e4dc9\\images\\day-a-approach.png",
+      "sha256": "400631396a2b3ea892f9f3e5b265e5faaf7d2796480b2fa4d3b8c749d36d99ad",
+      "manifest_matches": true,
+      "sidecar_sha256": "ecd9a0ee57ace13607f1c394646470f47429e58d59c982fd62db993347001bfa",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "island_a_glb_sha256": "8cb8bdf399ae1068ee40230a2ad7282d93fa9d06a8d67cb3c145e192ba90a7b9",
+      "production_modified": false,
+      "actually_viewed": true
+    }
+  ],
+  "source_identity": [
+    {
+      "file": "island_a.glb",
+      "candidate_sha256": "8cb8bdf399ae1068ee40230a2ad7282d93fa9d06a8d67cb3c145e192ba90a7b9",
+      "frozen_sha256": "8cb8bdf399ae1068ee40230a2ad7282d93fa9d06a8d67cb3c145e192ba90a7b9",
+      "same": true,
+      "manifest_matches": true
+    },
+    {
+      "file": "island_a.blend",
+      "candidate_sha256": "2e8d50ceefa9776634aaa2286a6ede88f47fa1f18ecd7a6f80bb8557377267de",
+      "frozen_sha256": "2e8d50ceefa9776634aaa2286a6ede88f47fa1f18ecd7a6f80bb8557377267de",
+      "same": true,
+      "manifest_matches": true
+    }
+  ],
+  "runtime_changes": {
+    "left_house": {
+      "island": "island_a",
+      "kind": "keeper_house",
+      "position": [
+        -2373.0,
+        27.9998168945313,
+        -1653.0
+      ],
+      "scale": 1.0,
+      "support": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a grass and exposed rock terrain/island_a grass and exposed rock terrain_col",
+      "yaw": 1.5707963267949
+    },
+    "right_house": {
+      "island": "island_a",
+      "kind": "keeper_house",
+      "position": [
+        -2358.0,
+        26.9998931884766,
+        -1669.0
+      ],
+      "scale": 0.85,
+      "support": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a grass and exposed rock terrain/island_a grass and exposed rock terrain_col",
+      "yaw": -0.15
+    },
+    "right_house_y_delta_from_32d_m": -1.4999084472656001,
+    "formerly_tallest_left_tree": {
+      "ground_collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a grass and exposed rock terrain/island_a grass and exposed rock terrain_col",
+      "ground_normal": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "island": "island_a",
+      "island_root": "/root/Skyfarer/LanternCoastStudy/island_a_1",
+      "kind": "existing_native_pine",
+      "position": [
+        -2385.0,
+        28.4521942138672,
+        -1650.0
+      ],
+      "scale": 1.2
+    },
+    "trees_per_view": [
+      {
+        "view": "night-reference",
+        "expected": 8,
+        "actual": 8,
+        "unaffected_delta_m": 0
+      },
+      {
+        "view": "day-reference",
+        "expected": 8,
+        "actual": 8,
+        "unaffected_delta_m": 0
+      },
+      {
+        "view": "day-a-front",
+        "expected": 8,
+        "actual": 8,
+        "unaffected_delta_m": 0
+      },
+      {
+        "view": "day-a-back",
+        "expected": 8,
+        "actual": 8,
+        "unaffected_delta_m": 0
+      },
+      {
+        "view": "day-a-approach",
+        "expected": 8,
+        "actual": 8,
+        "unaffected_delta_m": 0
+      }
+    ]
+  },
+  "visual_findings": [
+    {
+      "item": "left_house",
+      "result": "retain",
+      "detail": "山墙与门廊朝向主机位，短正面与斜侧墙可读，摆脱两屋平行长墙重复；具体建筑细节仍非参考完全一致。"
+    },
+    {
+      "item": "right_house",
+      "result": "retain",
+      "detail": "实际Y约27，相较32d约低1.5m；屋顶与上墙仍完整，塔右较低肩部关系可读。"
+    },
+    {
+      "item": "left_trees",
+      "result": "retain",
+      "detail": "最高树scale1.2，树尖约y606，与其他群树形成分层，不再升到灯室；8/8实例存在。"
+    },
+    {
+      "item": "grass_cliff",
+      "result": "retain_previous_progress_not_finish",
+      "detail": "窄草活动层和主图厚岩前面保持，旧尖楔未返回；宽大整壁与两块按钮状凸岩继续未接受。"
+    },
+    {
+      "item": "small_transition_back",
+      "result": "geometry_handoff_not_proven_defect",
+      "detail": "day-a-back约x756–830/y388–418两屋间塔脚附近有细碎尖折灰绿过渡；已通知root交同版几何审查，不据图宣称裂缝、穿透或浮空。"
+    }
+  ],
+  "tower_geometry_status": "pad design half[5.4,5.1] seen in frozen plan; complete actual bottom footprint/pad interface result pending separate agent at review write, not independently passed here",
+  "correction_32d": {
+    "md": "E:/FeiTing/reviews/round-32d-foreground-independent-review.md",
+    "json": "E:/FeiTing/reviews/round-32d-foreground-independent-review.json",
+    "whole_clipped_piece_area_m2": 0.014907206,
+    "true_error_over_1mm_area_m2": 0.014411437,
+    "outside_design_pad_area_m2_approx": 0.0277593,
+    "completed": true
+  },
+  "next_priority": "保留本轮构图及待细化项；同版必要几何条件确认后阶段冻结，转右岸岩岬港村与真实水面/反射，勿在A无参考背面做无限轮精雕。",
+  "full_reference_goal_complete": false,
+  "reviewer_modified_production": false
+}

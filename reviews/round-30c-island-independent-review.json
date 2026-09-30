@@ -1,0 +1,77 @@
+{
+  "round": "30c",
+  "run_id": "lantern-island-30c-20260908T181715Z-31c81298860748f3ac9257c092e5f4b5",
+  "visual_verdict": "retain_welded_shell_and_collar_removal_continue_selective_main_body_sculpting",
+  "full_reference_accepted": false,
+  "all_reference_goal_complete": false,
+  "images": [
+    {
+      "view": "night-reference",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-30c-20260908T181715Z-31c81298860748f3ac9257c092e5f4b5\\images\\night-reference.png",
+      "sha256": "a445a9a2f0ada9e3ceb182acb37fe982ecf5253e6601e6c94aa0f08c2a88d6af",
+      "judgment": "The former thin terrain collar no longer separates the central island into an obvious extra tier. Tower/native building proportions and keeper-house-right composition remain. The broad upper mound remains too regular relative to 1342, so night view is still incomplete."
+    },
+    {
+      "view": "day-reference",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-30c-20260908T181715Z-31c81298860748f3ac9257c092e5f4b5\\images\\day-reference.png",
+      "sha256": "4517144323210fac15a39768e2e2d44806d18f161b82fe7e3b9b80f304ba289f",
+      "judgment": "The narrow artificial dark rim has disappeared at the small central island. Broad unbroken grey surface remains dominant, with only small peripheral fragments visible; this is a local improvement rather than reference acceptance."
+    },
+    {
+      "view": "day-d-front",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-30c-20260908T181715Z-31c81298860748f3ac9257c092e5f4b5\\images\\day-d-front.png",
+      "sha256": "f8d4c53958c36ae8015cc217bff31a9fa640f71a4e7295e0dceca50fdea3896f",
+      "judgment": "Front collar is gone; coast panels meet upper terrain continuously. Dark lighting emphasizes a large connected slab-like grey slope below the occupied plateau. Shorter foreground crags remain visible, while several side shoulders are swallowed by the body."
+    },
+    {
+      "view": "day-d-back",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-30c-20260908T181715Z-31c81298860748f3ac9257c092e5f4b5\\images\\day-d-back.png",
+      "sha256": "cec970a6a43193161be14115438816b4915f60061f72c5b9805036163d823163",
+      "judgment": "The previous thin band is absent around the rear. A large left/right skirt-like mass is still formed by actual broad sloping terrain, with a deep central cleft; the cleft is a useful asymmetric feature, but the two wide smooth lobes remain too simple."
+    },
+    {
+      "view": "day-c-front",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-30c-20260908T181715Z-31c81298860748f3ac9257c092e5f4b5\\images\\day-c-front.png",
+      "sha256": "424afaaf112402a0f318eb219e021762106c1580958170729ee7445443fec4ae",
+      "judgment": "Most direct comparison with 30b: the thin dark line across the mid/lower slope is visibly removed. The unchanged wide upper grey plane and broad left shoulder are still evident. No new obvious open seam is visible, but visual absence of a seam is not a full 3D intersection proof."
+    }
+  ],
+  "compared_to": [
+    "30b same-camera actual GPU images",
+    "ref/1342.png"
+  ],
+  "geometry_evidence": "reviews/round-30c-independent-geometry.json",
+  "local_visual_success": [
+    "Artificial 0.65m dark collar visibly removed in front/back views.",
+    "Preserves 30a native building/land proportions and D reference house-right placement."
+  ],
+  "remaining": [
+    "Broad upper grey slope remains visually dominant.",
+    "Several buried short shoulders provide little visible contribution.",
+    "Rear broad lobes and sparse low shoreline fragments do not yet match irregular reference fractures."
+  ],
+  "next_actions": [
+    "Prioritize selective cuts/reforming of the main-body slope enveloping West/Southwest and much of North, preserving short wide low shoulder character.",
+    "Use 30b sampled overlap ratios only as a starting localization; measure candidate exposed surface after sculpting. Do not translate every shoulder outward uniformly: East/Northwest have much lower overlap.",
+    "Create two or three offset changes of slope/short ledges reaching the shoreline, with unequal spans and elevations, rather than a circumferential ledge or a new ring of isolated rocks.",
+    "Preserve actual occupied support and native building dimensions. If a desired cut meets a road support area, revise and refit that local route with real geometry checks instead of freezing the whole broad plateau indefinitely."
+  ],
+  "runtime_evidence_attribution": {
+    "owner": "root",
+    "path": "reviews/round-30c-runtime-incremental.json",
+    "reported_matching_bindings": 196,
+    "reported_placements": 59,
+    "reported_max_delta_from_30a_m": 9.155273437e-05,
+    "independently_rerun_here": false
+  },
+  "limits": [
+    "No GPU/Blender launched by reviewer.",
+    "30b section intersections are prior bounded evidence, not new 30c section measurements.",
+    "No claim of exhaustive self-intersection, full walking, whole-scene/reference completion."
+  ]
+}

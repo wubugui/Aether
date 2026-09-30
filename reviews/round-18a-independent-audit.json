@@ -1,0 +1,135 @@
+{
+  "scope": "Read-only artifact identity, frozen production terrain/material comparison and actual screenshot review; no rendering or source writes. Not a gameplay or release validation.",
+  "run": "E:\\FeiTing\\captures\\validation_runs\\terrain-18a-20260908T054408Z-468a16d6942b49f7bfe0c6fb4d301c28",
+  "run_status": "passed",
+  "artifacts": {
+    "study-inputs/terrain.gdshader": {
+      "sha256": "70853787d4ae6c971ce1088163366564e952311811f291943c1aef7fcef7ed89",
+      "matches_manifest": true
+    },
+    "study-inputs/preview.gd": {
+      "sha256": "8702d1276577444587f309485e0bfa0eb0e97c6e32dd92a7a3e005dc6bdc8224",
+      "matches_manifest": true
+    },
+    "scoped-driver.py": {
+      "sha256": "257d954b20cecc8c7ea632d35c430425c73bd1416c3d88349f7c7b4c6cf1c660",
+      "matches_manifest": true
+    },
+    "inputs.json": {
+      "sha256": "3bbc85ccd496f49717808c20315a8dd3510e1dbb03f1bc7adacc3799da34e204",
+      "matches_manifest": true
+    },
+    "images/opening.png": {
+      "sha256": "a15dc647b0c68a8d097fe9b8bb4c3e4be7c8a970d24569838a2b948728297489",
+      "matches_manifest": true
+    },
+    "capture-opening.log": {
+      "sha256": "9a7e6cc30b910d585057777990de7ef4d9d11839895f76c13887e0ba5a4df5ae",
+      "matches_manifest": true
+    },
+    "capture-opening-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches_manifest": true
+    },
+    "stages/capture-opening.json": {
+      "sha256": "94e2cca86729a8ff102286a8954cb288f90e7e201a42a7271b9f0902674c85fa",
+      "matches_manifest": true
+    },
+    "images/cliff-side.png": {
+      "sha256": "1324efab9458b76011ebe032c64cd432666f5a42840a6ebb17d10652135b3ff9",
+      "matches_manifest": true
+    },
+    "capture-cliff-side.log": {
+      "sha256": "5a8fd790bf9c6e682bd994dc9ecbb946fab5accdf5325ddd4391334a056161b5",
+      "matches_manifest": true
+    },
+    "capture-cliff-side-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches_manifest": true
+    },
+    "stages/capture-cliff-side.json": {
+      "sha256": "cfc0a3ab6f5a251868f9ebdb92a744884a194358eafab78673cfae2f3eab5c05",
+      "matches_manifest": true
+    },
+    "images/reverse.png": {
+      "sha256": "6b32ec157852deb2012dec834e88a044df225a00f1a746c5fb6232a5a2da3405",
+      "matches_manifest": true
+    },
+    "capture-reverse.log": {
+      "sha256": "6c0e17db614f7017dc5a9ea820c6500b8c59928f6fe3c61a49f42b69f4b0f66f",
+      "matches_manifest": true
+    },
+    "capture-reverse-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches_manifest": true
+    },
+    "stages/capture-reverse.json": {
+      "sha256": "5a00656953b38bf8e4e2415a1bc4b7b3644b969f168547b8adaf876a53b7a63a",
+      "matches_manifest": true
+    }
+  },
+  "production_preservation": {
+    "res://materials/world.tres": {
+      "sha256": "092ea3450eaafa9b7d414a5560f4f6943abbc9cc5a74645f9baf4559726d8910",
+      "current_and_frozen_equal_16g": true
+    },
+    "res://scripts/world_surface.gdshader": {
+      "sha256": "2f504186ff38a21565f636a10b4ec690c7310a5119e641f4f3368fe22b957abf",
+      "current_and_frozen_equal_16g": true
+    },
+    "res://scenes/world/World.tscn": {
+      "sha256": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+      "current_and_frozen_equal_16g": true
+    },
+    "res://assets/cliff_kit.json": {
+      "sha256": "75e6b82f24e1dad23c7e3576cebdb6b85f789fa3b328660cfa563918b7bb0cb9",
+      "current_and_frozen_equal_16g": true
+    },
+    "res://assets/models/cliff_crown.glb": {
+      "sha256": "ca61243d3016e3e0c194f20afd072070bb02fb0bf4a83c62dc33983827ca8a62",
+      "current_and_frozen_equal_16g": true
+    },
+    "res://assets/models/cliff_central_wall.glb": {
+      "sha256": "1830179834bf8beb1a8792f670551b99edfdba4f95b0e8748a207e19acfc30f3",
+      "current_and_frozen_equal_16g": true
+    },
+    "res://assets/models/cliff_front_columns.glb": {
+      "sha256": "667a5fcc083a828b2b9d6e516920be3952f8fb6e41427523a377a9f5f0b58e3f",
+      "current_and_frozen_equal_16g": true
+    },
+    "res://assets/models/cliff_western_slab.glb": {
+      "sha256": "47112e869a56cf3424f4b85ee047a51711fdfa1fa46bb5c06ea83ebc12e80612",
+      "current_and_frozen_equal_16g": true
+    },
+    "res://assets/models/cliff_shadow_buttress.glb": {
+      "sha256": "6ba023af32cb07980cee5f58a2faccffea17747117c084938b655da5fa742517",
+      "current_and_frozen_equal_16g": true
+    }
+  },
+  "frozen_geometry_preservation_groups": {
+    "res://assets/terrain/": {
+      "tracked_files": 416,
+      "frozen_sha_equal_16g": true
+    },
+    "res://scenes/terrain/": {
+      "tracked_files": 208,
+      "frozen_sha_equal_16g": true
+    },
+    "res://assets/collision/Ground_": {
+      "tracked_files": 208,
+      "frozen_sha_equal_16g": true
+    }
+  },
+  "native_tile_log_counts": {
+    "opening": 208,
+    "cliff-side": 208,
+    "reverse": 208
+  },
+  "shader_scope_findings": [
+    "World-space position samples smooth value noise at scales 180m and 62m per fragment.",
+    "Grass mask derives from original vertex pigment and world height; biome colors use actual transformed mesh normals.",
+    "Grass replacement factor is grass*0.90; original luminance variation enters new pigment at factor 0.24.",
+    "Vertex shader does not write VERTEX. Preview assigns temporary ShaderMaterial to 208 native tiles and Generated_ground_ MeshInstance3D nodes; no save calls.",
+    "Inherited atmospheric haze reads camera distance; biome assignment itself does not use screen coordinates or source image."
+  ]
+}

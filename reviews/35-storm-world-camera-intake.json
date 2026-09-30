@@ -1,0 +1,1860 @@
+{
+  "scope": "Bounded same-world camera/map study; direct reference viewing and savedWorld11mountain/localheadland actualGLB bounds. No cloud edits, GPU or terrain generator.",
+  "references_directly_viewed": [
+    "ref/1125.png",
+    "ref/1341.png"
+  ],
+  "reference_image_dimensions": [
+    1672,
+    941
+  ],
+  "reference_reading": {
+    "1125": "High aerial composition: dark storm/ocean left, clear warm right, receding central transition, varied steep islands/mountains and channels on right. Character/airship excluded from scene scope.",
+    "1341": "Lower along-coast composition: open water left, stepped rocky and forested foreground right, continuous jagged snowy highlands at right distance under low storm ceiling. Character/airship excluded."
+  },
+  "source_identity": {
+    "actual_world_sha": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+    "runtime_world_sha": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+    "world_matches_frozen_run": true,
+    "world_layout_sha": "b6fbb0a0c12819442cce7b7f26a14a193c2cde013c7bde58d27417831d2df22b",
+    "world_layout_role": "Read compact coast/peaks fields only; coastline metadata is evidence of design direction, not actual shoreline intersection guarantee.",
+    "local_headland": {
+      "sha256": "dcef43b72ef7732c54321d2c522c4d22292283a835fb6248a8f5d0142af38da6",
+      "runtime_sha_matches": true,
+      "actual_world_bounds": [
+        [
+          -2283.0379333496094,
+          -10.000030517578125,
+          -2050.0
+        ],
+        [
+          -1990.0,
+          58.9014892578125,
+          -1640.0
+        ]
+      ],
+      "max_height_vertex": [
+        -2175.0,
+        58.9014892578125,
+        -1782.0
+      ]
+    },
+    "world_layout_matches34e_frozen": true
+  },
+  "baseline_camera": {
+    "fov": 70.0,
+    "position": [
+      -2278.0,
+      60.0,
+      -1632.0
+    ],
+    "rotation": [
+      -0.00509163970127702,
+      0.60683274269104,
+      0.0
+    ]
+  },
+  "coordinate_convention": "Godot world XYZ; Y up, oceanY0. Coast metadata records are [z,x]. West of metadata x(z) is sea in base world_math; local appended headland/islands can override.",
+  "coast_samples": [
+    {
+      "world": [
+        -1600.0,
+        0,
+        -1200
+      ],
+      "source": "world_layout coast metadata, before local33f extension/terrain sculpt"
+    },
+    {
+      "world": [
+        -1900.0,
+        0,
+        -1500
+      ],
+      "source": "world_layout coast metadata, before local33f extension/terrain sculpt"
+    },
+    {
+      "world": [
+        -2097.1428571428573,
+        0,
+        -1800
+      ],
+      "source": "world_layout coast metadata, before local33f extension/terrain sculpt"
+    },
+    {
+      "world": [
+        -2294.285714285714,
+        0,
+        -2100
+      ],
+      "source": "world_layout coast metadata, before local33f extension/terrain sculpt"
+    },
+    {
+      "world": [
+        -2491.4285714285716,
+        0,
+        -2400
+      ],
+      "source": "world_layout coast metadata, before local33f extension/terrain sculpt"
+    },
+    {
+      "world": [
+        -2688.5714285714284,
+        0,
+        -2700
+      ],
+      "source": "world_layout coast metadata, before local33f extension/terrain sculpt"
+    },
+    {
+      "world": [
+        -2885.714285714286,
+        0,
+        -3000
+      ],
+      "source": "world_layout coast metadata, before local33f extension/terrain sculpt"
+    },
+    {
+      "world": [
+        -3280.0,
+        0,
+        -3600
+      ],
+      "source": "world_layout coast metadata, before local33f extension/terrain sculpt"
+    },
+    {
+      "world": [
+        -3674.285714285714,
+        0,
+        -4200
+      ],
+      "source": "world_layout coast metadata, before local33f extension/terrain sculpt"
+    }
+  ],
+  "bounded_saved_terrain_transects": [
+    {
+      "world_xz": [
+        -2197.1428571428573,
+        -1800.0
+      ],
+      "offset_from_metadata_coast_x_m": -100.0,
+      "saved_base_tile": "Ground_-3_-3",
+      "actual_base_height_m": -8.0,
+      "actual_34e_headland_height_m": 30.93757546516683,
+      "bounded_upper_height_m": 30.93757546516683,
+      "scope": "Exact vertical barycentric hit of selected saved base tile and localheadland only; no all-world props/islands census."
+    },
+    {
+      "world_xz": [
+        -2097.1428571428573,
+        -1800.0
+      ],
+      "offset_from_metadata_coast_x_m": 0.0,
+      "saved_base_tile": "Ground_-3_-3",
+      "actual_base_height_m": -1.2790095851755723e-05,
+      "actual_34e_headland_height_m": 27.508155398898683,
+      "bounded_upper_height_m": 27.508155398898683,
+      "scope": "Exact vertical barycentric hit of selected saved base tile and localheadland only; no all-world props/islands census."
+    },
+    {
+      "world_xz": [
+        -1997.1428571428573,
+        -1800.0
+      ],
+      "offset_from_metadata_coast_x_m": 100.0,
+      "saved_base_tile": "Ground_-3_-3",
+      "actual_base_height_m": 19.29902532409034,
+      "actual_34e_headland_height_m": 19.608157021658787,
+      "bounded_upper_height_m": 19.608157021658787,
+      "scope": "Exact vertical barycentric hit of selected saved base tile and localheadland only; no all-world props/islands census."
+    },
+    {
+      "world_xz": [
+        -2591.4285714285716,
+        -2400.0
+      ],
+      "offset_from_metadata_coast_x_m": -100.0,
+      "saved_base_tile": "Ground_-4_-4",
+      "actual_base_height_m": -8.0,
+      "actual_34e_headland_height_m": null,
+      "bounded_upper_height_m": -8.0,
+      "scope": "Exact vertical barycentric hit of selected saved base tile and localheadland only; no all-world props/islands census."
+    },
+    {
+      "world_xz": [
+        -2491.4285714285716,
+        -2400.0
+      ],
+      "offset_from_metadata_coast_x_m": 0.0,
+      "saved_base_tile": "Ground_-4_-4",
+      "actual_base_height_m": -3.6497150441442166e-06,
+      "actual_34e_headland_height_m": null,
+      "bounded_upper_height_m": -3.6497150441442166e-06,
+      "scope": "Exact vertical barycentric hit of selected saved base tile and localheadland only; no all-world props/islands census."
+    },
+    {
+      "world_xz": [
+        -2391.4285714285716,
+        -2400.0
+      ],
+      "offset_from_metadata_coast_x_m": 100.0,
+      "saved_base_tile": "Ground_-4_-4",
+      "actual_base_height_m": 15.0,
+      "actual_34e_headland_height_m": null,
+      "bounded_upper_height_m": 15.0,
+      "scope": "Exact vertical barycentric hit of selected saved base tile and localheadland only; no all-world props/islands census."
+    },
+    {
+      "world_xz": [
+        -2985.714285714286,
+        -3000.0
+      ],
+      "offset_from_metadata_coast_x_m": -100.0,
+      "saved_base_tile": "Ground_-4_-4",
+      "actual_base_height_m": -8.0,
+      "actual_34e_headland_height_m": null,
+      "bounded_upper_height_m": -8.0,
+      "scope": "Exact vertical barycentric hit of selected saved base tile and localheadland only; no all-world props/islands census."
+    },
+    {
+      "world_xz": [
+        -2885.714285714286,
+        -3000.0
+      ],
+      "offset_from_metadata_coast_x_m": 0.0,
+      "saved_base_tile": "Ground_-4_-4",
+      "actual_base_height_m": 9.5868372906871e-08,
+      "actual_34e_headland_height_m": null,
+      "bounded_upper_height_m": 9.5868372906871e-08,
+      "scope": "Exact vertical barycentric hit of selected saved base tile and localheadland only; no all-world props/islands census."
+    },
+    {
+      "world_xz": [
+        -2785.714285714286,
+        -3000.0
+      ],
+      "offset_from_metadata_coast_x_m": 100.0,
+      "saved_base_tile": "Ground_-4_-4",
+      "actual_base_height_m": 15.0,
+      "actual_34e_headland_height_m": null,
+      "bounded_upper_height_m": 15.0,
+      "scope": "Exact vertical barycentric hit of selected saved base tile and localheadland only; no all-world props/islands census."
+    }
+  ],
+  "selected_terrain_sources": [
+    {
+      "source": "E:\\FeiTing\\assets\\terrain\\Ground_-3_-3.glb",
+      "sha256": "d1779f8ffd7f7491454742127609a3ee22d69e7b9bf9a53b9863abec6380fef9",
+      "matches34e_frozen_asset": true
+    },
+    {
+      "source": "E:\\FeiTing\\assets\\terrain\\Ground_-4_-4.glb",
+      "sha256": "8b9f398781bb42a69c16e1493a663bd33934a76df725d650d27cf90571d66a2e",
+      "matches34e_frozen_asset": true
+    }
+  ],
+  "actual_saved_mountains": [
+    {
+      "name": "massif_frost_crown",
+      "saved_origin": [
+        1235.7314,
+        0.0,
+        -2900.0
+      ],
+      "actual_glb_path": "E:\\FeiTing\\assets\\models\\massif_frost_crown.glb",
+      "sha256": "50b86c66508a25379ac90fb3bcbe236a8c30119a1b46899d9bb3a63ee000077c",
+      "matches34e_frozen_asset": true,
+      "triangle_count": 394,
+      "world_bounds": [
+        [
+          732.7048497070311,
+          -12.0,
+          -3376.595245361328
+        ],
+        [
+          1707.299759375,
+          459.6551208496094,
+          -2396.7044372558594
+        ]
+      ],
+      "highest_vertex_world": [
+        1235.7314,
+        459.6551208496094,
+        -2900.0
+      ],
+      "metadata_coast_x_at_peak_z": -2820.0,
+      "inland_x_gap_to_metadata_coast_m": 4055.7313999999997
+    },
+    {
+      "name": "massif_west_summit",
+      "saved_origin": [
+        906.32684,
+        0.0,
+        -2730.0
+      ],
+      "actual_glb_path": "E:\\FeiTing\\assets\\models\\massif_west_summit.glb",
+      "sha256": "b9a460a8332a3ee1ddf84c976befd87158900e19b45eaeb5001b841be6e1f35f",
+      "matches34e_frozen_asset": true,
+      "triangle_count": 392,
+      "world_bounds": [
+        [
+          490.1704068945312,
+          -12.0,
+          -3146.1644592285156
+        ],
+        [
+          1307.9783597753906,
+          390.2984313964844,
+          -2326.853515625
+        ]
+      ],
+      "highest_vertex_world": [
+        906.32684,
+        390.2984313964844,
+        -2730.0
+      ],
+      "metadata_coast_x_at_peak_z": -2708.285714285714,
+      "inland_x_gap_to_metadata_coast_m": 3614.6125542857144
+    },
+    {
+      "name": "massif_needle_ridge",
+      "saved_origin": [
+        877.049,
+        0.0,
+        -2350.0
+      ],
+      "actual_glb_path": "E:\\FeiTing\\assets\\models\\massif_needle_ridge.glb",
+      "sha256": "51f27e9e26b0e95021b115344ceb00a13afa04c19f2bb7fc2ea50799a7da89e7",
+      "matches34e_frozen_asset": true,
+      "triangle_count": 378,
+      "world_bounds": [
+        [
+          591.0011484375,
+          -12.0,
+          -2713.9236755371094
+        ],
+        [
+          1148.7752268066406,
+          269.8807373046875,
+          -2015.2096252441406
+        ]
+      ],
+      "highest_vertex_world": [
+        877.049,
+        269.8807373046875,
+        -2350.0
+      ],
+      "metadata_coast_x_at_peak_z": -2458.5714285714284,
+      "inland_x_gap_to_metadata_coast_m": 3335.6204285714284
+    },
+    {
+      "name": "massif_east_summit",
+      "saved_origin": [
+        1443.0315,
+        0.0,
+        -2850.0
+      ],
+      "actual_glb_path": "E:\\FeiTing\\assets\\models\\massif_east_summit.glb",
+      "sha256": "7210c31fb36bedcb6078c56db1f2cd27419eaf19b91cb9c339def2de2cf56d05",
+      "matches34e_frozen_asset": true,
+      "triangle_count": 378,
+      "world_bounds": [
+        [
+          1138.3865109863282,
+          -12.0,
+          -3238.8270874023438
+        ],
+        [
+          1727.9186459960938,
+          299.9814758300781,
+          -2472.3397521972656
+        ]
+      ],
+      "highest_vertex_world": [
+        1443.0315,
+        299.9814758300781,
+        -2850.0
+      ],
+      "metadata_coast_x_at_peak_z": -2787.142857142857,
+      "inland_x_gap_to_metadata_coast_m": 4230.174357142857
+    },
+    {
+      "name": "massif_east_spur",
+      "saved_origin": [
+        1364.3528,
+        0.0,
+        -2320.0
+      ],
+      "actual_glb_path": "E:\\FeiTing\\assets\\models\\massif_east_spur.glb",
+      "sha256": "66e9a1747209a69d8249c6d4e3c052b1ffe5911ad75ce8d75dad2ba41a1e2425",
+      "matches34e_frozen_asset": true,
+      "triangle_count": 366,
+      "world_bounds": [
+        [
+          1020.5741134765624,
+          -12.0,
+          -2727.6029663085938
+        ],
+        [
+          1695.342332470703,
+          172.3566131591797,
+          -1910.8059692382812
+        ]
+      ],
+      "highest_vertex_world": [
+        1364.3528,
+        172.3566131591797,
+        -2320.0
+      ],
+      "metadata_coast_x_at_peak_z": -2438.857142857143,
+      "inland_x_gap_to_metadata_coast_m": 3803.209942857143
+    },
+    {
+      "name": "massif_west_spur",
+      "saved_origin": [
+        471.46335,
+        0.0,
+        -1850.0
+      ],
+      "actual_glb_path": "E:\\FeiTing\\assets\\models\\massif_west_spur.glb",
+      "sha256": "a4a1bb5915cdcb67dc547605f377ea7c2462469c7713f662f090fa5e0d48ae77",
+      "matches34e_frozen_asset": true,
+      "triangle_count": 340,
+      "world_bounds": [
+        [
+          165.57809609375,
+          -12.0,
+          -2193.8820190429688
+        ],
+        [
+          763.3380753417969,
+          152.85169982910156,
+          -1494.0677185058594
+        ]
+      ],
+      "highest_vertex_world": [
+        471.46335,
+        152.85169982910156,
+        -1850.0
+      ],
+      "metadata_coast_x_at_peak_z": -2130.0,
+      "inland_x_gap_to_metadata_coast_m": 2601.46335
+    },
+    {
+      "name": "massif_cirque_wall",
+      "saved_origin": [
+        809.49414,
+        0.0,
+        -1780.0
+      ],
+      "actual_glb_path": "E:\\FeiTing\\assets\\models\\massif_cirque_wall.glb",
+      "sha256": "5e4cf230d83c20e5e1cd50489e86945d5528364675a0959e796446e6d2d59ba0",
+      "matches34e_frozen_asset": true,
+      "triangle_count": 334,
+      "world_bounds": [
+        [
+          574.6189416357422,
+          -12.0,
+          -2096.8099060058594
+        ],
+        [
+          1028.887679428711,
+          136.55426025390625,
+          -1445.6081237792969
+        ]
+      ],
+      "highest_vertex_world": [
+        809.49414,
+        136.55426025390625,
+        -1780.0
+      ],
+      "metadata_coast_x_at_peak_z": -2084.0,
+      "inland_x_gap_to_metadata_coast_m": 2893.49414
+    },
+    {
+      "name": "massif_east_foothill",
+      "saved_origin": [
+        1269.8512,
+        0.0,
+        -1810.0
+      ],
+      "actual_glb_path": "E:\\FeiTing\\assets\\models\\massif_east_foothill.glb",
+      "sha256": "fc5ef47fc5a01bc8e18ae7668bfd2b458c47ec89852098697af7616d1571bb00",
+      "matches34e_frozen_asset": true,
+      "triangle_count": 146,
+      "world_bounds": [
+        [
+          945.6636389648438,
+          -12.0,
+          -2154.191375732422
+        ],
+        [
+          1578.2970618164063,
+          83.43436431884766,
+          -1466.4732055664062
+        ]
+      ],
+      "highest_vertex_world": [
+        1269.8512,
+        83.43436431884766,
+        -1810.0
+      ],
+      "metadata_coast_x_at_peak_z": -2103.714285714286,
+      "inland_x_gap_to_metadata_coast_m": 3373.565485714286
+    },
+    {
+      "name": "massif_blue_buttress",
+      "saved_origin": [
+        398.45325,
+        0.0,
+        -1190.0
+      ],
+      "actual_glb_path": "E:\\FeiTing\\assets\\models\\massif_blue_buttress.glb",
+      "sha256": "b64bb534fabc3180bb2aa01ce1b1647b84cfd7e9a8bf3c9e88fa2d0841f1a70f",
+      "matches34e_frozen_asset": true,
+      "triangle_count": 144,
+      "world_bounds": [
+        [
+          257.27652270507815,
+          -12.0,
+          -1414.7300262451172
+        ],
+        [
+          533.7283659667969,
+          84.82675170898438,
+          -982.4474792480469
+        ]
+      ],
+      "highest_vertex_world": [
+        398.45325,
+        84.82675170898438,
+        -1190.0
+      ],
+      "metadata_coast_x_at_peak_z": -1590.0,
+      "inland_x_gap_to_metadata_coast_m": 1988.45325
+    },
+    {
+      "name": "massif_valley_guard",
+      "saved_origin": [
+        749.5053,
+        0.0,
+        -1430.0
+      ],
+      "actual_glb_path": "E:\\FeiTing\\assets\\models\\massif_valley_guard.glb",
+      "sha256": "032935ec351f2d15188006b121d73a9ccb8d8eb589c93a759ed0ce97ae7bfedb",
+      "matches34e_frozen_asset": true,
+      "triangle_count": 144,
+      "world_bounds": [
+        [
+          500.52298493652347,
+          -12.0,
+          -1733.9970092773438
+        ],
+        [
+          982.1316885498047,
+          84.79813385009766,
+          -1141.9142761230469
+        ]
+      ],
+      "highest_vertex_world": [
+        749.5053,
+        84.79813385009766,
+        -1430.0
+      ],
+      "metadata_coast_x_at_peak_z": -1830.0,
+      "inland_x_gap_to_metadata_coast_m": 2579.5053
+    },
+    {
+      "name": "massif_west_foothill",
+      "saved_origin": [
+        282.50476,
+        0.0,
+        -1520.0
+      ],
+      "actual_glb_path": "E:\\FeiTing\\assets\\models\\massif_west_foothill.glb",
+      "sha256": "3925da39c1a6b28c33ece50ed23a54fdce5cca8b02a8121e99d7db03659bf50e",
+      "matches34e_frozen_asset": true,
+      "triangle_count": 144,
+      "world_bounds": [
+        [
+          83.15196153808591,
+          -12.0,
+          -1796.5261535644531
+        ],
+        [
+          471.1649925439453,
+          83.32828521728516,
+          -1244.3588562011719
+        ]
+      ],
+      "highest_vertex_world": [
+        282.50476,
+        83.32828521728516,
+        -1520.0
+      ],
+      "metadata_coast_x_at_peak_z": -1913.1428571428573,
+      "inland_x_gap_to_metadata_coast_m": 2195.647617142857
+    }
+  ],
+  "candidate_cameras": [
+    {
+      "name": "1125_local_high",
+      "reference": "1125",
+      "position": [
+        -2390,
+        330,
+        -1390
+      ],
+      "look_at": [
+        -2590,
+        60,
+        -2430
+      ],
+      "fov_vertical_degrees": 70,
+      "purpose": "Keep1342 archipelago and34e headland continuity from higher offshore camera; sea left/local land right.",
+      "remaining": "Mountains group is far inland/right or behind this northward framing; does not supply1125 prominent right-hand alpine island hierarchy.",
+      "godot_rotation_radians_pitch_yaw_roll": [
+        -0.2496263819691367,
+        0.18998828791871572,
+        0
+      ],
+      "offset_from_1342_camera_m": [
+        -112.0,
+        270.0,
+        242.0
+      ],
+      "metadata_coast_x_at_camera_z": -1790.0,
+      "camera_x_minus_metadata_coast_x": -600.0,
+      "mountain_peak_projection": [
+        {
+          "name": "massif_frost_crown",
+          "forward_depth_m": 741.351665357256,
+          "uv": [
+            2.584693410191493,
+            0.1890719678296151
+          ],
+          "within_frustum": false
+        },
+        {
+          "name": "massif_west_summit",
+          "forward_depth_m": 656.9980224865511,
+          "uv": [
+            2.6348462977201748,
+            0.2503180371942192
+          ],
+          "within_frustum": false
+        },
+        {
+          "name": "massif_needle_ridge",
+          "forward_depth_m": 330.50771214505136,
+          "uv": [
+            4.621524399577296,
+            0.45199573793522896
+          ],
+          "within_frustum": false
+        },
+        {
+          "name": "massif_east_summit",
+          "forward_depth_m": 695.2846242599408,
+          "uv": [
+            2.8350250141299433,
+            0.34976701571904356
+          ],
+          "within_frustum": false
+        },
+        {
+          "name": "massif_east_spur",
+          "forward_depth_m": 236.8795067707297,
+          "uv": [
+            7.0528365694117445,
+            0.8083681864238101
+          ],
+          "within_frustum": false
+        },
+        {
+          "name": "massif_west_spur",
+          "forward_depth_m": -42.14593024083107,
+          "uv": [
+            -27.122706298878782,
+            -2.7794585016249957
+          ],
+          "within_frustum": false
+        },
+        {
+          "name": "massif_cirque_wall",
+          "forward_depth_m": -166.5872217551356,
+          "uv": [
+            -7.257351024053443,
+            -0.5377749795870399
+          ],
+          "within_frustum": false
+        },
+        {
+          "name": "massif_east_foothill",
+          "forward_depth_m": -209.15990426719816,
+          "uv": [
+            -6.557910046137916,
+            -0.5507520524245328
+          ],
+          "within_frustum": false
+        },
+        {
+          "name": "massif_blue_buttress",
+          "forward_depth_m": -640.016009578025,
+          "uv": [
+            -1.1957095219622114,
+            0.03565849886234923
+          ],
+          "within_frustum": false
+        },
+        {
+          "name": "massif_valley_guard",
+          "forward_depth_m": -475.87282079602903,
+          "uv": [
+            -2.1100211291862223,
+            -0.061757238353970845
+          ],
+          "within_frustum": false
+        },
+        {
+          "name": "massif_west_foothill",
+          "forward_depth_m": -304.41019081995347,
+          "uv": [
+            -2.9971474521730155,
+            -0.27919065817205746
+          ],
+          "within_frustum": false
+        }
+      ],
+      "metadata_coast_projection": [
+        {
+          "world": [
+            -1600.0,
+            0,
+            -1200
+          ],
+          "forward_depth_m": -243.83954334071709,
+          "uv": [
+            -0.7194608536279097,
+            -0.6793518172053812
+          ]
+        },
+        {
+          "world": [
+            -1900.0,
+            0,
+            -1500
+          ],
+          "forward_depth_m": 96.52935017803247,
+          "uv": [
+            2.5897924801881826,
+            2.8372045483276307
+          ]
+        },
+        {
+          "world": [
+            -2097.1428571428573,
+            0,
+            -1800
+          ],
+          "forward_depth_m": 418.0760007372199,
+          "uv": [
+            0.8508747261381826,
+            0.8996202407642843
+          ]
+        },
+        {
+          "world": [
+            -2294.285714285714,
+            0,
+            -2100
+          ],
+          "forward_depth_m": 739.6226512964073,
+          "uv": [
+            0.6239257535542958,
+            0.6467429745036972
+          ]
+        },
+        {
+          "world": [
+            -2491.4285714285716,
+            0,
+            -2400
+          ],
+          "forward_depth_m": 1061.1693018555948,
+          "uv": [
+            0.534513141765226,
+            0.5471152186209003
+          ]
+        },
+        {
+          "world": [
+            -2688.5714285714284,
+            0,
+            -2700
+          ],
+          "forward_depth_m": 1382.7159524147821,
+          "uv": [
+            0.4866858256231973,
+            0.4938237636260705
+          ]
+        },
+        {
+          "world": [
+            -2885.714285714286,
+            0,
+            -3000
+          ],
+          "forward_depth_m": 1704.2626029739695,
+          "uv": [
+            0.45690586120251536,
+            0.4606415204711427
+          ]
+        },
+        {
+          "world": [
+            -3280.0,
+            0,
+            -3600
+          ],
+          "forward_depth_m": 2347.355904092344,
+          "uv": [
+            0.4218219339675923,
+            0.42154935139082944
+          ]
+        },
+        {
+          "world": [
+            -3674.285714285714,
+            0,
+            -4200
+          ],
+          "forward_depth_m": 2990.449205210719,
+          "uv": [
+            0.4018275381264076,
+            0.39927065101477044
+          ]
+        }
+      ],
+      "local_actual_anchor_projection": [
+        {
+          "name": "Lighthouse_island_a",
+          "world": [
+            -2353.0,
+            49.6620864868164,
+            -1656.0
+          ],
+          "forward_depth_m": 315.60178322076393,
+          "uv": [
+            0.6102332796357586,
+            0.9725265420177751
+          ],
+          "within_frustum": true
+        },
+        {
+          "name": "Lighthouse_island_b",
+          "world": [
+            -2700.0,
+            41.2455062866211,
+            -2202.0
+          ],
+          "forward_depth_m": 900.7366059900519,
+          "uv": [
+            0.43259381589586127,
+            0.5541883041022595
+          ],
+          "within_frustum": true
+        },
+        {
+          "name": "Lighthouse_island_c",
+          "world": [
+            -3048.5,
+            31.2906131744385,
+            -2649.19995117188
+          ],
+          "forward_depth_m": 1392.5108889208193,
+          "uv": [
+            0.38200411045063537,
+            0.4760277244732979
+          ],
+          "within_frustum": true
+        },
+        {
+          "name": "Lighthouse_island_d",
+          "world": [
+            -2371.89672851563,
+            31.2906131744385,
+            -1813.69689941406
+          ],
+          "forward_depth_m": 473.6577690231261,
+          "uv": [
+            0.5829723499636842,
+            0.7826819820650611
+          ],
+          "within_frustum": true
+        },
+        {
+          "name": "actual_34e_headland_highest_vertex",
+          "world": [
+            -2175.0,
+            58.9014892578125,
+            -1782.0
+          ],
+          "forward_depth_m": 400.64401377717843,
+          "uv": [
+            0.7860393992588437,
+            0.8165895908255192
+          ],
+          "within_frustum": true
+        }
+      ],
+      "unverified": "Camera collision clearance, rendered visibility/occlusion, cloud volume clearance, near-clipping, fog and actual artistic framing are not GPU-tested."
+    },
+    {
+      "name": "1125_existing_mountains_wide",
+      "reference": "1125",
+      "position": [
+        -3000,
+        520,
+        -1250
+      ],
+      "look_at": [
+        -1100,
+        180,
+        -3000
+      ],
+      "fov_vertical_degrees": 70,
+      "purpose": "Turn northeast across existing coast to put actual alpine group in right half and retain sea on left.",
+      "remaining": "Turns inland across broad low land instead of a close mountain coast; current mountain-to-coast separation and island/channel pattern remain different.",
+      "godot_rotation_radians_pitch_yaw_roll": [
+        -0.13087154501641063,
+        -0.8264709419879024,
+        0
+      ],
+      "offset_from_1342_camera_m": [
+        -722.0,
+        460.0,
+        382.0
+      ],
+      "metadata_coast_x_at_camera_z": -1650.0,
+      "camera_x_minus_metadata_coast_x": -1350.0,
+      "mountain_peak_projection": [
+        {
+          "name": "massif_frost_crown",
+          "forward_depth_m": 4205.0795697283675,
+          "uv": [
+            0.6582599858165454,
+            0.41634650735600615
+          ],
+          "within_frustum": true
+        },
+        {
+          "name": "massif_west_summit",
+          "forward_depth_m": 3859.7245391451856,
+          "uv": [
+            0.662204056035206,
+            0.43021341941207597
+          ],
+          "within_frustum": true
+        },
+        {
+          "name": "massif_needle_ridge",
+          "forward_depth_m": 3598.84853599803,
+          "uv": [
+            0.7029593743734478,
+            0.456066877532576
+          ],
+          "within_frustum": true
+        },
+        {
+          "name": "massif_east_summit",
+          "forward_depth_m": 4343.507247876446,
+          "uv": [
+            0.6696132201725464,
+            0.4424939235346704
+          ],
+          "within_frustum": true
+        },
+        {
+          "name": "massif_east_spur",
+          "forward_depth_m": 3946.793586223685,
+          "uv": [
+            0.720929565529765,
+            0.4694507395990477
+          ],
+          "within_frustum": true
+        },
+        {
+          "name": "massif_west_spur",
+          "forward_depth_m": 2982.5040415929766,
+          "uv": [
+            0.757432724910114,
+            0.4946720069550368
+          ],
+          "within_frustum": true
+        },
+        {
+          "name": "massif_cirque_wall",
+          "forward_depth_m": 3184.123748693783,
+          "uv": [
+            0.7765344312594813,
+            0.49274435342826767
+          ],
+          "within_frustum": true
+        },
+        {
+          "name": "massif_east_foothill",
+          "forward_depth_m": 3546.9240159771857,
+          "uv": [
+            0.781085949946115,
+            0.49465918344812054
+          ],
+          "within_frustum": true
+        },
+        {
+          "name": "massif_blue_buttress",
+          "forward_depth_m": 2494.827844111084,
+          "uv": [
+            0.8779871105881382,
+            0.5316411971746232
+          ],
+          "within_frustum": true
+        },
+        {
+          "name": "massif_valley_guard",
+          "forward_depth_m": 2912.0418452193708,
+          "uv": [
+            0.8322917189260047,
+            0.5136489627027634
+          ],
+          "within_frustum": true
+        },
+        {
+          "name": "massif_west_foothill",
+          "forward_depth_m": 2632.122535504296,
+          "uv": [
+            0.8092165441734125,
+            0.52549819350247
+          ],
+          "within_frustum": true
+        }
+      ],
+      "metadata_coast_projection": [
+        {
+          "world": [
+            -1600.0,
+            0,
+            -1200
+          ],
+          "forward_depth_m": 1055.232154364014,
+          "uv": [
+            0.8752252467664635,
+            0.760929107702979
+          ]
+        },
+        {
+          "world": [
+            -1900.0,
+            0,
+            -1500
+          ],
+          "forward_depth_m": 1037.9603226445288,
+          "uv": [
+            0.7173399342625632,
+            0.7668350067620775
+          ]
+        },
+        {
+          "world": [
+            -2097.1428571428573,
+            0,
+            -1800
+          ],
+          "forward_depth_m": 1095.6975886782363,
+          "uv": [
+            0.5759653175528944,
+            0.7478215470973403
+          ]
+        },
+        {
+          "world": [
+            -2294.285714285714,
+            0,
+            -2100
+          ],
+          "forward_depth_m": 1153.4348547119441,
+          "uv": [
+            0.44874422468037056,
+            0.7307115935983817
+          ]
+        },
+        {
+          "world": [
+            -2491.4285714285716,
+            0,
+            -2400
+          ],
+          "forward_depth_m": 1211.1721207456515,
+          "uv": [
+            0.3336525359750392,
+            0.7152329225902809
+          ]
+        },
+        {
+          "world": [
+            -2688.5714285714284,
+            0,
+            -2700
+          ],
+          "forward_depth_m": 1268.9093867793595,
+          "uv": [
+            0.2290345335995324,
+            0.7011628567279127
+          ]
+        },
+        {
+          "world": [
+            -2885.714285714286,
+            0,
+            -3000
+          ],
+          "forward_depth_m": 1326.6466528130668,
+          "uv": [
+            0.1335227350836009,
+            0.6883174834151166
+          ]
+        },
+        {
+          "world": [
+            -3280.0,
+            0,
+            -3600
+          ],
+          "forward_depth_m": 1442.1211848804821,
+          "uv": [
+            -0.03455720016135333,
+            0.6657124278286916
+          ]
+        },
+        {
+          "world": [
+            -3674.285714285714,
+            0,
+            -4200
+          ],
+          "forward_depth_m": 1557.5957169478975,
+          "uv": [
+            -0.17771545430363445,
+            0.6464590869238083
+          ]
+        }
+      ],
+      "local_actual_anchor_projection": [
+        {
+          "name": "Lighthouse_island_a",
+          "world": [
+            -2353.0,
+            49.6620864868164,
+            -1656.0
+          ],
+          "forward_depth_m": 805.909383316559,
+          "uv": [
+            0.5696614931070701,
+            0.8263470508822657
+          ],
+          "within_frustum": true
+        },
+        {
+          "name": "Lighthouse_island_b",
+          "world": [
+            -2700.0,
+            41.2455062866211,
+            -2202.0
+          ],
+          "forward_depth_m": 920.6947671531759,
+          "uv": [
+            0.28306282617186623,
+            0.7805267013355224
+          ],
+          "within_frustum": true
+        },
+        {
+          "name": "Lighthouse_island_c",
+          "world": [
+            -3048.5,
+            31.2906131744385,
+            -2649.19995117188
+          ],
+          "forward_depth_m": 968.2247670615782,
+          "uv": [
+            0.05918324862558588,
+            0.7695469195732519
+          ],
+          "within_frustum": true
+        },
+        {
+          "name": "Lighthouse_island_d",
+          "world": [
+            -2371.89672851563,
+            31.2906131744385,
+            -1813.69689941406
+          ],
+          "forward_depth_m": 900.4485162367744,
+          "uv": [
+            0.5048648993093786,
+            0.796910076091192
+          ],
+          "within_frustum": true
+        },
+        {
+          "name": "actual_34e_headland_highest_vertex",
+          "world": [
+            -2175.0,
+            58.9014892578125,
+            -1782.0
+          ],
+          "forward_depth_m": 1019.1430433682845,
+          "uv": [
+            0.5660929111144504,
+            0.7318712496067628
+          ],
+          "within_frustum": true
+        }
+      ],
+      "unverified": "Camera collision clearance, rendered visibility/occlusion, cloud volume clearance, near-clipping, fog and actual artistic framing are not GPU-tested."
+    },
+    {
+      "name": "1341_local_alongshore",
+      "reference": "1341",
+      "position": [
+        -2440,
+        145,
+        -1510
+      ],
+      "look_at": [
+        -2760,
+        100,
+        -2690
+      ],
+      "fov_vertical_degrees": 60,
+      "purpose": "Lower offshore along-coast view preserving34e lamps/shore with sea left and coastal slopes right.",
+      "remaining": "Actual right shore is tens of metres high with village pads; cannot substitute for1341 high jagged snowy mass immediately above shoreline.",
+      "godot_rotation_radians_pitch_yaw_roll": [
+        -0.036789592029750094,
+        0.2648173299057888,
+        0
+      ],
+      "offset_from_1342_camera_m": [
+        -162.0,
+        85.0,
+        122.0
+      ],
+      "metadata_coast_x_at_camera_z": -1906.5714285714284,
+      "camera_x_minus_metadata_coast_x": -533.4285714285716,
+      "mountain_peak_projection": [
+        {
+          "name": "massif_frost_crown",
+          "forward_depth_m": 367.65475350777035,
+          "uv": [
+            5.685332759037056,
+            -0.27355963186551313
+          ],
+          "within_frustum": false
+        },
+        {
+          "name": "massif_west_summit",
+          "forward_depth_m": 292.40064377666585,
+          "uv": [
+            6.415757134040953,
+            -0.25888621340922213
+          ],
+          "within_frustum": false
+        },
+        {
+          "name": "massif_needle_ridge",
+          "forward_depth_m": -62.017603853467776,
+          "uv": [
+            -26.38789398554505,
+            2.2131636366620846
+          ],
+          "within_frustum": false
+        },
+        {
+          "name": "massif_east_summit",
+          "forward_depth_m": 271.0828368283176,
+          "uv": [
+            7.868778559654752,
+            -0.027327999650565205
+          ],
+          "within_frustum": false
+        },
+        {
+          "name": "massif_east_spur",
+          "forward_depth_m": -214.8223253921052,
+          "uv": [
+            -8.311594325968896,
+            0.5784838358439894
+          ],
+          "within_frustum": false
+        },
+        {
+          "name": "massif_west_spur",
+          "forward_depth_m": -433.87344622384177,
+          "uv": [
+            -2.7565902544444665,
+            0.48380775498108053
+          ],
+          "within_frustum": false
+        },
+        {
+          "name": "massif_cirque_wall",
+          "forward_depth_m": -589.2020491327065,
+          "uv": [
+            -2.152792127860213,
+            0.45570271014414965
+          ],
+          "within_frustum": false
+        },
+        {
+          "name": "massif_east_foothill",
+          "forward_depth_m": -678.722702402287,
+          "uv": [
+            -2.127601985839019,
+            0.3895162004937229
+          ],
+          "within_frustum": false
+        },
+        {
+          "name": "massif_blue_buttress",
+          "forward_depth_m": -1048.8367691620604,
+          "uv": [
+            -0.734137236584556,
+            0.4184061521788379
+          ],
+          "within_frustum": false
+        },
+        {
+          "name": "massif_valley_guard",
+          "forward_depth_m": -909.1784981930965,
+          "uv": [
+            -1.1390208062703266,
+            0.4107416127260041
+          ],
+          "within_frustum": false
+        },
+        {
+          "name": "massif_west_foothill",
+          "forward_depth_m": -700.1738517087837,
+          "uv": [
+            -1.3309209181209967,
+            0.39179323136749716
+          ],
+          "within_frustum": false
+        }
+      ],
+      "metadata_coast_projection": [
+        {
+          "world": [
+            -1600.0,
+            0,
+            -1200
+          ],
+          "forward_depth_m": -513.3646888352592,
+          "uv": [
+            -0.1926778477480201,
+            0.22335014963420396
+          ]
+        },
+        {
+          "world": [
+            -1900.0,
+            0,
+            -1500
+          ],
+          "forward_depth_m": -145.55175252054102,
+          "uv": [
+            -1.2364578918430102,
+            -0.3952017873586767
+          ]
+        },
+        {
+          "world": [
+            -2097.1428571428573,
+            0,
+            -1800
+          ],
+          "forward_depth_m": 195.35829473801505,
+          "uv": [
+            1.51494244561731,
+            1.1113466858300933
+          ]
+        },
+        {
+          "world": [
+            -2294.285714285714,
+            0,
+            -2100
+          ],
+          "forward_depth_m": 536.268341996571,
+          "uv": [
+            0.7681686578677471,
+            0.7024454821652071
+          ]
+        },
+        {
+          "world": [
+            -2491.4285714285716,
+            0,
+            -2400
+          ],
+          "forward_depth_m": 877.1783892551271,
+          "uv": [
+            0.601853053747943,
+            0.611378211422106
+          ]
+        },
+        {
+          "world": [
+            -2688.5714285714284,
+            0,
+            -2700
+          ],
+          "forward_depth_m": 1218.088436513683,
+          "uv": [
+            0.5286319389290901,
+            0.5712854785567226
+          ]
+        },
+        {
+          "world": [
+            -2885.714285714286,
+            0,
+            -3000
+          ],
+          "forward_depth_m": 1558.998483772239,
+          "uv": [
+            0.4874337079976163,
+            0.5487270994423327
+          ]
+        },
+        {
+          "world": [
+            -3280.0,
+            0,
+            -3600
+          ],
+          "forward_depth_m": 2240.818578289351,
+          "uv": [
+            0.4426437466962794,
+            0.524202043275843
+          ]
+        },
+        {
+          "world": [
+            -3674.285714285714,
+            0,
+            -4200
+          ],
+          "forward_depth_m": 2922.638672806463,
+          "uv": [
+            0.4187518156112952,
+            0.5111198495261544
+          ]
+        }
+      ],
+      "local_actual_anchor_projection": [
+        {
+          "name": "Lighthouse_island_a",
+          "world": [
+            -2353.0,
+            49.6620864868164,
+            -1656.0
+          ],
+          "forward_depth_m": 121.56643072735784,
+          "uv": [
+            0.9898591525400917,
+            1.1477612149734446
+          ],
+          "within_frustum": false
+        },
+        {
+          "name": "Lighthouse_island_b",
+          "world": [
+            -2700.0,
+            41.2455062866211,
+            -2202.0
+          ],
+          "forward_depth_m": 739.2459302289252,
+          "uv": [
+            0.4539682059412035,
+            0.5897554197724709
+          ],
+          "within_frustum": true
+        },
+        {
+          "name": "Lighthouse_island_c",
+          "world": [
+            -3048.5,
+            31.2906131744385,
+            -2649.19995117188
+          ],
+          "forward_depth_m": 1262.082956757786,
+          "uv": [
+            0.38834536077984105,
+            0.5462036763426076
+          ],
+          "within_frustum": true
+        },
+        {
+          "name": "Lighthouse_island_d",
+          "world": [
+            -2371.89672851563,
+            31.2906131744385,
+            -1813.69689941406
+          ],
+          "forward_depth_m": 279.2813571432469,
+          "uv": [
+            0.7534303451075466,
+            0.8209658384602725
+          ],
+          "within_frustum": true
+        },
+        {
+          "name": "actual_34e_headland_highest_vertex",
+          "world": [
+            -2175.0,
+            58.9014892578125,
+            -1782.0
+          ],
+          "forward_depth_m": 196.19504358280497,
+          "uv": [
+            1.312235587444154,
+            0.8484300487641312
+          ],
+          "within_frustum": false
+        }
+      ],
+      "unverified": "Camera collision clearance, rendered visibility/occlusion, cloud volume clearance, near-clipping, fog and actual artistic framing are not GPU-tested."
+    },
+    {
+      "name": "1341_existing_mountains_oblique",
+      "reference": "1341",
+      "position": [
+        -2830,
+        170,
+        -1550
+      ],
+      "look_at": [
+        -900,
+        150,
+        -2920
+      ],
+      "fov_vertical_degrees": 60,
+      "purpose": "Oblique northeast view intentionally includes actual mountain kit as distant right-hand silhouettes.",
+      "remaining": "Broad intervening inland belt remains; lower camera may hide distant low foothills. No actual image or collision visibility test performed.",
+      "godot_rotation_radians_pitch_yaw_roll": [
+        -0.008449983469411627,
+        -0.9534937870944942,
+        0
+      ],
+      "offset_from_1342_camera_m": [
+        -552.0,
+        110.0,
+        82.0
+      ],
+      "metadata_coast_x_at_camera_z": -1932.8571428571427,
+      "camera_x_minus_metadata_coast_x": -897.1428571428573,
+      "mountain_peak_projection": [
+        {
+          "name": "massif_frost_crown",
+          "forward_depth_m": 4094.208458532052,
+          "uv": [
+            0.6491108707667463,
+            0.4314105829515711
+          ],
+          "within_frustum": true
+        },
+        {
+          "name": "massif_west_summit",
+          "forward_depth_m": 3727.794636535283,
+          "uv": [
+            0.6569624082056233,
+            0.4415013031497808
+          ],
+          "within_frustum": true
+        },
+        {
+          "name": "massif_needle_ridge",
+          "forward_depth_m": 3484.988147884211,
+          "uv": [
+            0.708865240095117,
+            0.4678605084754337
+          ],
+          "within_frustum": true
+        },
+        {
+          "name": "massif_east_summit",
+          "forward_depth_m": 4235.6521749206495,
+          "uv": [
+            0.662630844226331,
+            0.46610484257809076
+          ],
+          "within_frustum": true
+        },
+        {
+          "name": "massif_east_spur",
+          "forward_depth_m": 3865.801900996225,
+          "uv": [
+            0.7269377985097961,
+            0.4921539729907811
+          ],
+          "within_frustum": true
+        },
+        {
+          "name": "massif_west_spur",
+          "forward_depth_m": 2865.848443881675,
+          "uv": [
+            0.7834029694600867,
+            0.4978641233775847
+          ],
+          "within_frustum": true
+        },
+        {
+          "name": "massif_cirque_wall",
+          "forward_depth_m": 3101.1039042989128,
+          "uv": [
+            0.8016273955840609,
+            0.5020224362345883
+          ],
+          "within_frustum": true
+        },
+        {
+          "name": "massif_east_foothill",
+          "forward_depth_m": 3494.2987246563366,
+          "uv": [
+            0.801443180508393,
+            0.5141370791504076
+          ],
+          "within_frustum": true
+        },
+        {
+          "name": "massif_blue_buttress",
+          "forward_depth_m": 2424.8706044332525,
+          "uv": [
+            0.9346236024461452,
+            0.5231020353500424
+          ],
+          "within_frustum": true
+        },
+        {
+          "name": "massif_valley_guard",
+          "forward_depth_m": 2850.039572652982,
+          "uv": [
+            0.871068345894911,
+            0.5185726589252844
+          ],
+          "within_frustum": true
+        },
+        {
+          "name": "massif_west_foothill",
+          "forward_depth_m": 2521.3468821663982,
+          "uv": [
+            0.8530006565435994,
+            0.5224527543642665
+          ],
+          "within_frustum": true
+        }
+      ],
+      "metadata_coast_projection": [
+        {
+          "world": [
+            -1600.0,
+            0,
+            -1200
+          ],
+          "forward_depth_m": 801.8093895044938,
+          "uv": [
+            1.106277494931403,
+            0.6763035901755999
+          ]
+        },
+        {
+          "world": [
+            -1900.0,
+            0,
+            -1500
+          ],
+          "forward_depth_m": 730.8303730450381,
+          "uv": [
+            0.8862018249989998,
+            0.6941371198722579
+          ]
+        },
+        {
+          "world": [
+            -2097.1428571428573,
+            0,
+            -1800
+          ],
+          "forward_depth_m": 743.7224801162452,
+          "uv": [
+            0.6444027563086714,
+            0.6906449813318416
+          ]
+        },
+        {
+          "world": [
+            -2294.285714285714,
+            0,
+            -2100
+          ],
+          "forward_depth_m": 756.6145871874526,
+          "uv": [
+            0.41084381287117944,
+            0.687271849283589
+          ]
+        },
+        {
+          "world": [
+            -2491.4285714285716,
+            0,
+            -2400
+          ],
+          "forward_depth_m": 769.5066942586596,
+          "uv": [
+            0.18511083619577,
+            0.6840117423197336
+          ]
+        },
+        {
+          "world": [
+            -2688.5714285714284,
+            0,
+            -2700
+          ],
+          "forward_depth_m": 782.3988013298672,
+          "uv": [
+            -0.03318303474518447,
+            0.6808590732710952
+          ]
+        },
+        {
+          "world": [
+            -2885.714285714286,
+            0,
+            -3000
+          ],
+          "forward_depth_m": 795.2909084010743,
+          "uv": [
+            -0.244399576051334,
+            0.6778086172529487
+          ]
+        },
+        {
+          "world": [
+            -3280.0,
+            0,
+            -3600
+          ],
+          "forward_depth_m": 821.0751225434888,
+          "uv": [
+            -0.6469341656441852,
+            0.6719950855392756
+          ]
+        },
+        {
+          "world": [
+            -3674.285714285714,
+            0,
+            -4200
+          ],
+          "forward_depth_m": 846.8593366859034,
+          "uv": [
+            -1.0249569204891114,
+            0.6665355614869353
+          ]
+        }
+      ],
+      "local_actual_anchor_projection": [
+        {
+          "name": "Lighthouse_island_a",
+          "world": [
+            -2353.0,
+            49.6620864868164,
+            -1656.0
+          ],
+          "forward_depth_m": 451.3237764753607,
+          "uv": [
+            0.7048289076261092,
+            0.7236013148375948
+          ],
+          "within_frustum": true
+        },
+        {
+          "name": "Lighthouse_island_b",
+          "world": [
+            -2700.0,
+            41.2455062866211,
+            -2202.0
+          ],
+          "forward_depth_m": 484.4804121338798,
+          "uv": [
+            0.04083132245002219,
+            0.7228432293674744
+          ],
+          "within_frustum": true
+        },
+        {
+          "name": "Lighthouse_island_c",
+          "world": [
+            -3048.5,
+            31.2906131744385,
+            -2649.19995117188
+          ],
+          "forward_depth_m": 459.23977997160273,
+          "uv": [
+            -0.5855248138655782,
+            0.7542667156619368
+          ],
+          "within_frustum": false
+        },
+        {
+          "name": "Lighthouse_island_d",
+          "world": [
+            -2371.89672851563,
+            31.2906131744385,
+            -1813.69689941406
+          ],
+          "forward_depth_m": 527.3480049274041,
+          "uv": [
+            0.5463394509930162,
+            0.7204824298233101
+          ],
+          "within_frustum": true
+        },
+        {
+          "name": "actual_34e_headland_highest_vertex",
+          "world": [
+            -2175.0,
+            58.9014892578125,
+            -1782.0
+          ],
+          "forward_depth_m": 669.3202827925361,
+          "uv": [
+            0.6383256881389603,
+            0.6364360745038532
+          ],
+          "within_frustum": true
+        }
+      ],
+      "unverified": "Camera collision clearance, rendered visibility/occlusion, cloud volume clearance, near-clipping, fog and actual artistic framing are not GPU-tested."
+    }
+  ],
+  "limitations": [
+    "Candidates are authored suggestions, not recovered positions of reference images.",
+    "Reference mountainous island chain and immediate snowy shoreline are not proven in34e. Camera/weather alone cannot remove measured broad inland gap.",
+    "Projection lists are pinhole geometry at reference aspect only; inside-frustum does not prove visibility behind land, clouds or fog.",
+    "Local34e headland shape and base coast metadata are different layers; headland actualGLB bounds retained separately, no unsupported exact shore-line claim.",
+    "No camera path/flight/whole-world terrain surface check performed."
+  ],
+  "full_reference_accepted": false,
+  "all_reference_goal_complete": false
+}

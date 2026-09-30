@@ -1,0 +1,205 @@
+{
+  "round": "33c",
+  "decision": "visual_reject_do_not_upgrade_from33b",
+  "continuation_basis": "33b remains unfinished visual draft, not overall art acceptance",
+  "run_status": "passed",
+  "run_passed": true,
+  "run_failure_distinction": "GPU run passed; visual review rejected. Do not rewrite run as failed.",
+  "images": [
+    {
+      "view": "night-reference",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\rightcoast-33c-20260908T230636Z-171cc57e608641cfb0e39cbcb89fbcaf\\images\\night-reference.png",
+      "sha256": "c35f00c7882e5ad36c024de918289521b6ddab6b64ccc189c55a2d9b89c9ca35",
+      "manifest_matches": true,
+      "sidecar_sha256": "b7719f7ecaf492a59a7743e5adf165da2d3446677bb346ed9fef6de4bcfda981",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "rightcoast_glb_sha256": "627bd2f2254005cd964f5a62059975ceb7633c91cca29f0474ddf6b21acd3e3a",
+      "production_modified": false,
+      "actually_viewed": true
+    },
+    {
+      "view": "day-reference",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\rightcoast-33c-20260908T230636Z-171cc57e608641cfb0e39cbcb89fbcaf\\images\\day-reference.png",
+      "sha256": "4a578b56eb32373738a732b5128fa1fc77d2f820e3687a2e21a2e4532bb451c3",
+      "manifest_matches": true,
+      "sidecar_sha256": "0d4dca29ee3149fc6e5e6406d0126bb96fad86aef9fbbffe881f5bcdec0b48cd",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "rightcoast_glb_sha256": "627bd2f2254005cd964f5a62059975ceb7633c91cca29f0474ddf6b21acd3e3a",
+      "production_modified": false,
+      "actually_viewed": true
+    },
+    {
+      "view": "day-coast-front",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\rightcoast-33c-20260908T230636Z-171cc57e608641cfb0e39cbcb89fbcaf\\images\\day-coast-front.png",
+      "sha256": "766dfb6402eb426acccfbe675de09e7a9deea8709b12ebba6ace5751100fcd13",
+      "manifest_matches": true,
+      "sidecar_sha256": "f766b97e1b75ef805ca13f2a693ab3f355f6fea50b924513b24a8d25aac60596",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "rightcoast_glb_sha256": "627bd2f2254005cd964f5a62059975ceb7633c91cca29f0474ddf6b21acd3e3a",
+      "production_modified": false,
+      "actually_viewed": true
+    },
+    {
+      "view": "day-coast-bay",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\rightcoast-33c-20260908T230636Z-171cc57e608641cfb0e39cbcb89fbcaf\\images\\day-coast-bay.png",
+      "sha256": "11e9cd2219a5f34758984eed4981c94cb182d4fabc6b6195093d0205a75dd908",
+      "manifest_matches": true,
+      "sidecar_sha256": "7790d4dd68d935069eadb31d7eb82d7a02fdc7acf3438d27bbf83556a061e233",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "rightcoast_glb_sha256": "627bd2f2254005cd964f5a62059975ceb7633c91cca29f0474ddf6b21acd3e3a",
+      "production_modified": false,
+      "actually_viewed": true
+    },
+    {
+      "view": "day-coast-back",
+      "path": "E:\\FeiTing\\captures\\validation_runs\\rightcoast-33c-20260908T230636Z-171cc57e608641cfb0e39cbcb89fbcaf\\images\\day-coast-back.png",
+      "sha256": "a193a7fefd218454ac1f1b4904429540e4d180034e7f996295015682b6ec6562",
+      "manifest_matches": true,
+      "sidecar_sha256": "7c7f58f6339a6e38c04de6102a50a855a1a1c86925802ea43961d61dd5c79928",
+      "sidecar_manifest_matches": true,
+      "run_id_matches": true,
+      "rightcoast_glb_sha256": "627bd2f2254005cd964f5a62059975ceb7633c91cca29f0474ddf6b21acd3e3a",
+      "production_modified": false,
+      "actually_viewed": true
+    }
+  ],
+  "source_identity": [
+    {
+      "file": "mainland_headland.glb",
+      "candidate_sha256": "627bd2f2254005cd964f5a62059975ceb7633c91cca29f0474ddf6b21acd3e3a",
+      "frozen_sha256": "627bd2f2254005cd964f5a62059975ceb7633c91cca29f0474ddf6b21acd3e3a",
+      "same": true,
+      "manifest_matches": true
+    },
+    {
+      "file": "mainland_headland.blend",
+      "candidate_sha256": "051ebdef0e5eb1957bc8bc1c4969c5bb7e03c3b4afe42722e9699fa2e3515c6b",
+      "frozen_sha256": "051ebdef0e5eb1957bc8bc1c4969c5bb7e03c3b4afe42722e9699fa2e3515c6b",
+      "same": true,
+      "manifest_matches": true
+    }
+  ],
+  "findings": [
+    {
+      "view": "day-coast-bay",
+      "region": [
+        940,
+        260,
+        1008,
+        403
+      ],
+      "finding": "新增高窄暗切面在低湾后坡非常显眼，原33b较连续斜坡变成陡折视感；未由图判定非流形或真实断裂。"
+    },
+    {
+      "view": "day-coast-bay",
+      "region": [
+        927,
+        456,
+        1020,
+        483
+      ],
+      "finding": "水线附近新露灰岸唇很窄，未形成可读低作业地面及向上连接，低湾目标未达。"
+    },
+    {
+      "view": "night/day-reference",
+      "finding": "塔岛、屋群总体关系保持，湾底改动占幅很小，主图不足以证明有效工作岸；不以未看到大变化声称几何没改。"
+    },
+    {
+      "view": "day-coast-front",
+      "region": [
+        0,
+        230,
+        115,
+        650
+      ],
+      "finding": "画面左边新显陡长暗三角切面，补充说明局部下切的坡面副作用；这不是主图独立验收目标。"
+    }
+  ],
+  "old_triangle_attribution": {
+    "path": "E:\\FeiTing\\captures\\rightcoast33b-visible-transition-localization.json",
+    "sha256": "46538530b76b4ab50bc5f226703b17fd3f5a1da40e6fbe2e681ffcd2960b1177",
+    "read_not_recomputed": true,
+    "rows": [
+      {
+        "view": "day-coast-front",
+        "pixel": [
+          843,
+          528
+        ],
+        "triangle": 5515,
+        "vertex_displacements_m": [
+          0.0,
+          0.0,
+          0.0067138671875
+        ],
+        "slope_degrees": 41.285805653124804
+      },
+      {
+        "view": "day-coast-front",
+        "pixel": [
+          884,
+          535
+        ],
+        "triangle": 5627,
+        "vertex_displacements_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "slope_degrees": 42.209412800357086
+      },
+      {
+        "view": "day-coast-front",
+        "pixel": [
+          890,
+          378
+        ],
+        "triangle": 8937,
+        "vertex_displacements_m": [
+          0.04540252685546875,
+          0.0,
+          1.2021541595458984
+        ],
+        "slope_degrees": 20.553171188104816
+      },
+      {
+        "view": "day-reference",
+        "pixel": [
+          1375,
+          850
+        ],
+        "triangle": 12426,
+        "vertex_displacements_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "slope_degrees": 41.062678844480786
+      },
+      {
+        "view": "day-reference",
+        "pixel": [
+          1400,
+          868
+        ],
+        "triangle": 15925,
+        "vertex_displacements_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "slope_degrees": 45.41907892867179
+      }
+    ],
+    "conclusion": "front884,535以及主图1375,850/1400,868命中三角全部顶点与26b相同；front843,528两顶点不变第三仅0.006714m。部分可见尖面继承26b，不能全归33新增。",
+    "occlusion_limit": "front890,378仅命中后方约20.55deg地面，定位排除屋树铺地及World遮挡，不作暗立片准确归属。"
+  },
+  "next_action": "保留33c失败艺术尝试与passed渲染包，使用33b继续。若续做湾岸，应联动低岸宽度、后方坡脚与侧向过渡的完整断面，避免只降稀疏点形成高窄切面；先确认主机位低岸可读。",
+  "geometry_status": "separate incremental review pending; visual rejection independent of geometric pass",
+  "full_reference_accepted": false,
+  "production_modified_by_reviewer": false
+}

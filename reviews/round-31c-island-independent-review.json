@@ -1,0 +1,102 @@
+{
+  "round": "31c",
+  "run_id": "lantern-island-31c-20260908T201128Z-28759710080745f9bea8113b6cf38f92",
+  "visual_verdict": "reject_rear_cleft_filler_unconnected_near_pad_bank_front_direction_partial_only",
+  "visual_complete": false,
+  "full_reference_accepted": false,
+  "all_reference_goal_complete": false,
+  "reference": {
+    "path": "ref\\1342.png",
+    "sha256": "7acc98104013d9122eb551846b2d7fc1f7549bce8b2e3199eae8f5385a3ea238",
+    "directly_viewed_in_current_continuing_review": true
+  },
+  "comparison": {
+    "path": "captures\\validation_runs\\lantern-island-31b-20260908T195540Z-dc0f57e0a037461484c11dba7dcb8b57\\images\\day-c-front.png",
+    "sha256": "6321a20f4224db89372ba8a64debd567e083663afca3342de5ddeac2b4208ce4",
+    "directly_viewed_in_current_continuing_review": true
+  },
+  "images": [
+    {
+      "view": "night-reference",
+      "path": "captures\\validation_runs\\lantern-island-31c-20260908T201128Z-28759710080745f9bea8113b6cf38f92\\images\\night-reference.png",
+      "sha256": "6ef522dd7d1bb1e2a8c6fd4d1fbf0f554e8e4a4095a5bf0dc2b4b7699a08c5fc",
+      "directly_viewed": true,
+      "judgment": "中央岛的建筑原生尺度、守塔屋在右与较低树组保留。局部肩在夜间中景分辨度有限，不能从这张图判定背槽或短宽岩肩完成；1342中央岛仍有更自然的错位块面关系。"
+    },
+    {
+      "view": "day-reference",
+      "path": "captures\\validation_runs\\lantern-island-31c-20260908T201128Z-28759710080745f9bea8113b6cf38f92\\images\\day-reference.png",
+      "sha256": "4421b3c2b30274616ef65ea16d347639241f651e9042c6ced66c1f3ad35b8ca4",
+      "directly_viewed": true,
+      "judgment": "总体比例和岩群轮廓保留，前部形态有小幅变化，但远景不足以辨别槽内新体和两岸关系。应以实际近视图和局部截面为准。"
+    },
+    {
+      "view": "day-d-front",
+      "path": "captures\\validation_runs\\lantern-island-31c-20260908T201128Z-28759710080745f9bea8113b6cf38f92\\images\\day-d-front.png",
+      "sha256": "4c685f5f8b909b803209a5507d51aadd70dd03d2ab0dfb89bfebdbd39e2a42b8",
+      "directly_viewed": true,
+      "judgment": "两前肩比31b短，方向差异增加，避免继续变成长斜板。但现在又偏向两块孤立凸石，左肩形成近圆多边轮廓，中央肩呈较小尖块；与后方大灰坡的组织仍生硬。没有恢复31a规则平顶柱，却也没有建立统一短宽承重层次。"
+    },
+    {
+      "view": "day-d-back",
+      "path": "captures\\validation_runs\\lantern-island-31c-20260908T201128Z-28759710080745f9bea8113b6cf38f92\\images\\day-d-back.png",
+      "sha256": "efa15a7872d0c91aacc4bf7da56c1a796042314823f9f6eee4d6d84e50980f21",
+      "directly_viewed": true,
+      "judgment": "第三体可见为槽中一条偏细长的亮灰尖条。它遮挡部分旧黑槽，但两侧、尤其近塔侧仍有长缝，塔基下贯向海面的直切读法没有解决。不是已经接上两岸的短宽斜肩，必须返工。"
+    },
+    {
+      "view": "day-c-front",
+      "path": "captures\\validation_runs\\lantern-island-31c-20260908T201128Z-28759710080745f9bea8113b6cf38f92\\images\\day-c-front.png",
+      "sha256": "fe17d27fd740903dcf4f0247df3533ee342d92c2d1d0765cf2e4256baa71bd34",
+      "directly_viewed": true,
+      "judgment": "比31b的两张偏长同向斜面更短，左顶与中顶走向不再完全相同。但两凸块的独立轮廓感回升，左侧旧大斜板和上台宽灰面仍明显；单纯缩短凸包并没有把这些大面组织成参考式岩根。当前只保留缩短错向方向，不能宣布前部完成。"
+    }
+  ],
+  "next_actions": [
+    "先修第三体靠塔低Y岸的真实空隙：在不动pad支承面的前提下让有限中段实体穿过该空隙，实际截面确认双侧进入。不得将已填的较远Y次级缝误作主目标通过。",
+    "即使双岸接上，仍要避免顶面成为纵向尖条或横板；让宽根、偏转前端和高低错位在D背图可读。不要把背槽整片填成一个平坡。",
+    "前两体暂保留缩短与错向的方向；下一步应将凸块后部与原宽坡的真实宽面组织一起修改，减少封闭独立石块轮廓感，不靠更多小块遮坡。",
+    "实际支承/闭合与美术结论分开：本版基础几何有效，但背槽双岸目标未通过，整体视觉仍失败。"
+  ],
+  "geometry": {
+    "report": "reviews/round-31c-independent-geometry.json",
+    "base_shell_and_support_pass": true,
+    "requested_bilateral_back_cleft_pass": false,
+    "combined_geometry_scope_pass": false,
+    "main_triangles": 2178,
+    "path_17rocks_and_road_pad_current14tree_support_preserved": true,
+    "diagonal_target_gap_m": 1.24170075441147,
+    "target_diagonal_z_m": 5.137,
+    "target_remaining_gap_xy": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          -2.5310092358883014,
+          4.982987510048921
+        ],
+        [
+          -2.60275779187967,
+          6.2226136263514
+        ]
+      ]
+    },
+    "secondary_farther_y_gap_closed": true,
+    "local_crosscut_report": "reviews/round-31c-back-cleft-local-crosscheck.json",
+    "diagonal_report": "reviews/round-31c-back-cleft-diagonal-check.json",
+    "interpretation": "Target near-pad primary gap remains1.24170075m on diagonal. Secondary farther-Y gap closure is real but does not satisfy primary two-bank connection. Full-width X gaps are not used as visible-cleft width."
+  },
+  "root_runtime_report_read": {
+    "path": "reviews/round-31c-runtime-incremental.json",
+    "passed": true,
+    "binding_count": 199,
+    "placements_each_view": 59,
+    "maximum_position_delta_m": 0.00013732910155983546,
+    "maximum_footing_delta_m": 0.0
+  },
+  "limits": [
+    "No Blender/GPU rerun.",
+    "All five original screenshots directly viewed.",
+    "No exterior-area art score, exact visible-crevice segmentation, or full-reference acceptance.",
+    "Runtime report read from root, not independently rerun."
+  ]
+}

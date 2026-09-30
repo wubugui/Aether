@@ -1,0 +1,1188 @@
+{
+  "scope": "Independent actual GLB connected components and projected footprint/height intersection; not whole seabed or route acceptance",
+  "manifest_passed": true,
+  "stages": 5,
+  "bindings": 125,
+  "binding_failures": [],
+  "assets": [
+    {
+      "name": "mainland_headland",
+      "source_sha": "26a86fea95da8efbff6c1620ea992d29a785921a6dfba4212923f8c2bdd31538",
+      "glb_sha": "74be65ddf686b6330af4290f590675e6ada8f6389d1f14d2336beef65f6d373b",
+      "gate_match": true
+    },
+    {
+      "name": "fisher_cottage",
+      "source_sha": "ad7cf27908728d7bd4eb41d7797ddaf21d84397b079ffed086dd0a1dfdd9519f",
+      "glb_sha": "280ebd357262e6dbc216270c81b2045ff14a60b759067b5d0675b436d15a0ee8",
+      "gate_match": true
+    },
+    {
+      "name": "quay_workshop",
+      "source_sha": "8988eb3d7575722a0bb7bbb6e4a7986d74193be4376f7a424c51364df6fc70cd",
+      "glb_sha": "e4c33b94c6151ffd15b314d01a5aa4f70293095da477d26c796a35d71590996c",
+      "gate_match": true
+    }
+  ],
+  "views": [
+    {
+      "name": "night-reference",
+      "image_sha": "1f3652025bc5389441fa8e640d7b96949bad3892ea4ef5b60de3102369a169af",
+      "same_run": true,
+      "footing_count": 81,
+      "gap_range": [
+        -0.649938583374023,
+        -0.649359226226807
+      ],
+      "production_modified": false
+    },
+    {
+      "name": "day-front",
+      "image_sha": "160f4f68bab79aaa897fcd1a1de671b174f40590a695abca5f9e6b0aee1866e1",
+      "same_run": true,
+      "footing_count": 81,
+      "gap_range": [
+        -0.649938583374023,
+        -0.649359226226807
+      ],
+      "production_modified": false
+    },
+    {
+      "name": "day-bay",
+      "image_sha": "a27602613b925e4cc0e0683bba5275e7fe5085899b452a41e85a6cead17c4888",
+      "same_run": true,
+      "footing_count": 81,
+      "gap_range": [
+        -0.649938583374023,
+        -0.649359226226807
+      ],
+      "production_modified": false
+    },
+    {
+      "name": "day-back",
+      "image_sha": "c8ad424f3e9bd0769eff34625f18cd6eedf17dd9fd0e650c90f0ccc36c5d3ba3",
+      "same_run": true,
+      "footing_count": 81,
+      "gap_range": [
+        -0.649938583374023,
+        -0.649359226226807
+      ],
+      "production_modified": false
+    },
+    {
+      "name": "day-seam",
+      "image_sha": "9a8e6191bdf995ad6d8c8ca2c8fabcb3211e2421cc39d36f9170d7ed061d8be9",
+      "same_run": true,
+      "footing_count": 81,
+      "gap_range": [
+        -0.649938583374023,
+        -0.649359226226807
+      ],
+      "production_modified": false
+    }
+  ],
+  "connected_component_vertex_counts": [
+    2772,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9
+  ],
+  "actual_top_control_error": 1.8742103833346846e-06,
+  "top_connectivity_equal": true,
+  "shore_changes": [
+    {
+      "boundary": 0,
+      "xz": [
+        -2070.0,
+        -1648.0
+      ],
+      "design": 8.0,
+      "actual": -0.20000000298023224,
+      "delta": -8.200000002980232
+    },
+    {
+      "boundary": 1,
+      "xz": [
+        -2080.0,
+        -1650.4000244140625
+      ],
+      "design": 8.8,
+      "actual": 3.3413150310516357,
+      "delta": -5.458684968948365
+    },
+    {
+      "boundary": 2,
+      "xz": [
+        -2090.0,
+        -1652.800048828125
+      ],
+      "design": 9.600000000000001,
+      "actual": 9.056097984313965,
+      "delta": -0.5439020156860366
+    },
+    {
+      "boundary": 3,
+      "xz": [
+        -2100.0,
+        -1655.199951171875
+      ],
+      "design": 10.399999999999999,
+      "actual": 10.399999618530273,
+      "delta": -3.8146972514141453e-07
+    },
+    {
+      "boundary": 4,
+      "xz": [
+        -2110.0,
+        -1657.5999755859375
+      ],
+      "design": 11.200000000000001,
+      "actual": 11.199999809265137,
+      "delta": -1.907348643470641e-07
+    },
+    {
+      "boundary": 5,
+      "xz": [
+        -2120.0,
+        -1660.0
+      ],
+      "design": 12.0,
+      "actual": 12.0,
+      "delta": 0.0
+    },
+    {
+      "boundary": 6,
+      "xz": [
+        -2130.0,
+        -1663.333251953125
+      ],
+      "design": 13.0,
+      "actual": 13.0,
+      "delta": 0.0
+    },
+    {
+      "boundary": 7,
+      "xz": [
+        -2140.0,
+        -1666.666748046875
+      ],
+      "design": 14.0,
+      "actual": 14.0,
+      "delta": 0.0
+    },
+    {
+      "boundary": 8,
+      "xz": [
+        -2150.0,
+        -1670.0
+      ],
+      "design": 15.0,
+      "actual": 15.0,
+      "delta": 0.0
+    },
+    {
+      "boundary": 9,
+      "xz": [
+        -2160.0,
+        -1673.333251953125
+      ],
+      "design": 16.0,
+      "actual": 16.0,
+      "delta": 0.0
+    },
+    {
+      "boundary": 10,
+      "xz": [
+        -2170.0,
+        -1676.666748046875
+      ],
+      "design": 17.0,
+      "actual": 17.0,
+      "delta": 0.0
+    },
+    {
+      "boundary": 11,
+      "xz": [
+        -2180.0,
+        -1680.0
+      ],
+      "design": 18.0,
+      "actual": 18.0,
+      "delta": 0.0
+    },
+    {
+      "boundary": 12,
+      "xz": [
+        -2189.166748046875,
+        -1684.666748046875
+      ],
+      "design": 17.666666666666668,
+      "actual": 17.66666603088379,
+      "delta": -6.357828787884046e-07
+    },
+    {
+      "boundary": 13,
+      "xz": [
+        -2198.333251953125,
+        -1689.333251953125
+      ],
+      "design": 17.333333333333336,
+      "actual": 17.33333396911621,
+      "delta": 6.357828752356909e-07
+    },
+    {
+      "boundary": 14,
+      "xz": [
+        -2207.5,
+        -1694.0
+      ],
+      "design": 17.0,
+      "actual": 17.0,
+      "delta": 0.0
+    },
+    {
+      "boundary": 15,
+      "xz": [
+        -2216.66650390625,
+        -1698.666748046875
+      ],
+      "design": 16.666666666666668,
+      "actual": 16.71668815612793,
+      "delta": 0.05002148946126184
+    },
+    {
+      "boundary": 16,
+      "xz": [
+        -2225.83349609375,
+        -1703.333251953125
+      ],
+      "design": 16.333333333333332,
+      "actual": 16.715072631835938,
+      "delta": 0.38173929850260535
+    },
+    {
+      "boundary": 17,
+      "xz": [
+        -2235.0,
+        -1708.0
+      ],
+      "design": 16.0,
+      "actual": 16.0,
+      "delta": 0.0
+    },
+    {
+      "boundary": 18,
+      "xz": [
+        -2243.333251953125,
+        -1714.0
+      ],
+      "design": 13.0,
+      "actual": 13.0,
+      "delta": 0.0
+    },
+    {
+      "boundary": 19,
+      "xz": [
+        -2251.666748046875,
+        -1720.0
+      ],
+      "design": 10.0,
+      "actual": 10.0,
+      "delta": 0.0
+    },
+    {
+      "boundary": 20,
+      "xz": [
+        -2260.0,
+        -1726.0
+      ],
+      "design": 7.0,
+      "actual": 7.0,
+      "delta": 0.0
+    },
+    {
+      "boundary": 21,
+      "xz": [
+        -2264.666748046875,
+        -1734.0
+      ],
+      "design": 6.333333333333334,
+      "actual": 6.333333492279053,
+      "delta": 1.5894571880892272e-07
+    },
+    {
+      "boundary": 22,
+      "xz": [
+        -2269.333251953125,
+        -1742.0
+      ],
+      "design": 5.666666666666666,
+      "actual": 7.085416793823242,
+      "delta": 1.4187501271565761
+    },
+    {
+      "boundary": 23,
+      "xz": [
+        -2274.0,
+        -1750.0
+      ],
+      "design": 5.0,
+      "actual": 6.786044597625732,
+      "delta": 1.7860445976257324
+    },
+    {
+      "boundary": 24,
+      "xz": [
+        -2272.66650390625,
+        -1758.666748046875
+      ],
+      "design": 5.333333333333334,
+      "actual": 7.452277660369873,
+      "delta": 2.118944327036539
+    },
+    {
+      "boundary": 25,
+      "xz": [
+        -2271.333251953125,
+        -1767.333251953125
+      ],
+      "design": 5.666666666666667,
+      "actual": 5.723134994506836,
+      "delta": 0.056468327840168975
+    },
+    {
+      "boundary": 26,
+      "xz": [
+        -2270.0,
+        -1776.0
+      ],
+      "design": 6.0,
+      "actual": 6.0,
+      "delta": 0.0
+    },
+    {
+      "boundary": 27,
+      "xz": [
+        -2262.5,
+        -1784.5
+      ],
+      "design": 7.5,
+      "actual": 7.5,
+      "delta": 0.0
+    },
+    {
+      "boundary": 28,
+      "xz": [
+        -2255.0,
+        -1793.0
+      ],
+      "design": 9.0,
+      "actual": 9.0,
+      "delta": 0.0
+    },
+    {
+      "boundary": 29,
+      "xz": [
+        -2248.0,
+        -1798.666748046875
+      ],
+      "design": 7.666666666666668,
+      "actual": 7.666666507720947,
+      "delta": -1.5894572058527956e-07
+    },
+    {
+      "boundary": 30,
+      "xz": [
+        -2241.0,
+        -1804.3333740234375
+      ],
+      "design": 6.333333333333334,
+      "actual": 6.333333492279053,
+      "delta": 1.5894571880892272e-07
+    },
+    {
+      "boundary": 31,
+      "xz": [
+        -2234.0,
+        -1810.0
+      ],
+      "design": 5.0,
+      "actual": 5.0,
+      "delta": 0.0
+    },
+    {
+      "boundary": 32,
+      "xz": [
+        -2224.333251953125,
+        -1815.0
+      ],
+      "design": 4.166666666666667,
+      "actual": 4.166666507720947,
+      "delta": -1.5894571969710114e-07
+    },
+    {
+      "boundary": 33,
+      "xz": [
+        -2214.66650390625,
+        -1820.0
+      ],
+      "design": 3.3333333333333335,
+      "actual": 6.745157718658447,
+      "delta": 3.411824385325114
+    },
+    {
+      "boundary": 34,
+      "xz": [
+        -2205.0,
+        -1825.0
+      ],
+      "design": 2.5,
+      "actual": 10.43807601928711,
+      "delta": 7.938076019287109
+    },
+    {
+      "boundary": 35,
+      "xz": [
+        -2207.5,
+        -1834.5
+      ],
+      "design": 2.75,
+      "actual": 5.08229923248291,
+      "delta": 2.33229923248291
+    },
+    {
+      "boundary": 36,
+      "xz": [
+        -2210.0,
+        -1844.0
+      ],
+      "design": 3.0,
+      "actual": 7.999704837799072,
+      "delta": 4.999704837799072
+    },
+    {
+      "boundary": 37,
+      "xz": [
+        -2219.333251953125,
+        -1847.333251953125
+      ],
+      "design": 3.0,
+      "actual": 7.717040061950684,
+      "delta": 4.717040061950684
+    },
+    {
+      "boundary": 38,
+      "xz": [
+        -2228.66650390625,
+        -1850.6666259765625
+      ],
+      "design": 3.0,
+      "actual": 3.7120511531829834,
+      "delta": 0.7120511531829834
+    },
+    {
+      "boundary": 39,
+      "xz": [
+        -2238.0,
+        -1854.0
+      ],
+      "design": 3.0,
+      "actual": 3.0078938007354736,
+      "delta": 0.007893800735473633
+    },
+    {
+      "boundary": 40,
+      "xz": [
+        -2246.0,
+        -1862.0
+      ],
+      "design": 3.5,
+      "actual": 5.796017169952393,
+      "delta": 2.2960171699523926
+    },
+    {
+      "boundary": 41,
+      "xz": [
+        -2254.0,
+        -1870.0
+      ],
+      "design": 4.0,
+      "actual": 5.228354454040527,
+      "delta": 1.2283544540405273
+    },
+    {
+      "boundary": 42,
+      "xz": [
+        -2255.5,
+        -1880.0
+      ],
+      "design": 4.5,
+      "actual": 4.845263957977295,
+      "delta": 0.3452639579772949
+    },
+    {
+      "boundary": 43,
+      "xz": [
+        -2257.0,
+        -1890.0
+      ],
+      "design": 5.0,
+      "actual": 5.0,
+      "delta": 0.0
+    },
+    {
+      "boundary": 44,
+      "xz": [
+        -2249.0,
+        -1898.0
+      ],
+      "design": 7.0,
+      "actual": 7.0,
+      "delta": 0.0
+    },
+    {
+      "boundary": 45,
+      "xz": [
+        -2241.0,
+        -1906.0
+      ],
+      "design": 9.0,
+      "actual": 9.0,
+      "delta": 0.0
+    },
+    {
+      "boundary": 46,
+      "xz": [
+        -2233.333251953125,
+        -1910.666748046875
+      ],
+      "design": 10.0,
+      "actual": 10.394675254821777,
+      "delta": 0.39467525482177734
+    },
+    {
+      "boundary": 47,
+      "xz": [
+        -2225.666748046875,
+        -1915.333251953125
+      ],
+      "design": 11.0,
+      "actual": 13.411674499511719,
+      "delta": 2.4116744995117188
+    },
+    {
+      "boundary": 48,
+      "xz": [
+        -2218.0,
+        -1920.0
+      ],
+      "design": 12.0,
+      "actual": 18.3458251953125,
+      "delta": 6.3458251953125
+    },
+    {
+      "boundary": 49,
+      "xz": [
+        -2223.0,
+        -1930.0
+      ],
+      "design": 9.0,
+      "actual": 15.705423355102539,
+      "delta": 6.705423355102539
+    },
+    {
+      "boundary": 50,
+      "xz": [
+        -2228.0,
+        -1940.0
+      ],
+      "design": 6.0,
+      "actual": 17.61068344116211,
+      "delta": 11.61068344116211
+    },
+    {
+      "boundary": 51,
+      "xz": [
+        -2226.5,
+        -1950.0
+      ],
+      "design": 4.5,
+      "actual": 17.63254737854004,
+      "delta": 13.132547378540039
+    },
+    {
+      "boundary": 52,
+      "xz": [
+        -2225.0,
+        -1960.0
+      ],
+      "design": 3.0,
+      "actual": 16.399295806884766,
+      "delta": 13.399295806884766
+    },
+    {
+      "boundary": 53,
+      "xz": [
+        -2232.666748046875,
+        -1966.666748046875
+      ],
+      "design": 3.6666666666666665,
+      "actual": 9.520697593688965,
+      "delta": 5.854030927022299
+    },
+    {
+      "boundary": 54,
+      "xz": [
+        -2240.33349609375,
+        -1973.333251953125
+      ],
+      "design": 4.333333333333333,
+      "actual": 4.9229583740234375,
+      "delta": 0.5896250406901045
+    },
+    {
+      "boundary": 55,
+      "xz": [
+        -2248.0,
+        -1980.0
+      ],
+      "design": 5.0,
+      "actual": 5.0,
+      "delta": 0.0
+    },
+    {
+      "boundary": 56,
+      "xz": [
+        -2253.666748046875,
+        -1986.6666259765625
+      ],
+      "design": 6.666666666666667,
+      "actual": 6.666666507720947,
+      "delta": -1.5894571969710114e-07
+    },
+    {
+      "boundary": 57,
+      "xz": [
+        -2259.333251953125,
+        -1993.333251953125
+      ],
+      "design": 8.333333333333332,
+      "actual": 8.333333015441895,
+      "delta": -3.1789143761784544e-07
+    },
+    {
+      "boundary": 58,
+      "xz": [
+        -2265.0,
+        -2000.0
+      ],
+      "design": 10.0,
+      "actual": 10.0,
+      "delta": 0.0
+    },
+    {
+      "boundary": 59,
+      "xz": [
+        -2260.0,
+        -2010.0
+      ],
+      "design": 12.0,
+      "actual": 12.0,
+      "delta": 0.0
+    },
+    {
+      "boundary": 60,
+      "xz": [
+        -2255.0,
+        -2020.0
+      ],
+      "design": 14.0,
+      "actual": 12.948147773742676,
+      "delta": -1.0518522262573242
+    },
+    {
+      "boundary": 61,
+      "xz": [
+        -2255.0,
+        -2030.0
+      ],
+      "design": 10.0,
+      "actual": 3.636805534362793,
+      "delta": -6.363194465637207
+    },
+    {
+      "boundary": 62,
+      "xz": [
+        -2255.0,
+        -2040.0
+      ],
+      "design": 6.0,
+      "actual": -0.20000000298023224,
+      "delta": -6.200000002980232
+    }
+  ],
+  "rocks": [
+    {
+      "bounds": [
+        [
+          -2283.060043334961,
+          -10.0,
+          -1749.5082397460938
+        ],
+        [
+          -2262.6912689208984,
+          5.400000095367432,
+          -1733.2474060058594
+        ]
+      ],
+      "vertices": 9,
+      "triangles": 14,
+      "non_two_edges": 0,
+      "volume": 2819.9629759141244,
+      "land_footprint_overlap_m2": 77.51296370172832,
+      "old_D_distance_m": 53.46994380579185,
+      "old_D_overlap_m2": 0.0,
+      "house_pad_overlaps": []
+    },
+    {
+      "bounds": [
+        [
+          -2283.0379333496094,
+          -10.0,
+          -1776.5631065368652
+        ],
+        [
+          -2261.848678588867,
+          5.800000190734863,
+          -1752.1859436035156
+        ]
+      ],
+      "vertices": 9,
+      "triangles": 14,
+      "non_two_edges": 0,
+      "volume": 3477.9515454930565,
+      "land_footprint_overlap_m2": 129.89922268788365,
+      "old_D_distance_m": 40.04314868078635,
+      "old_D_overlap_m2": 0.0,
+      "house_pad_overlaps": []
+    },
+    {
+      "bounds": [
+        [
+          -2272.6258850097656,
+          -10.0,
+          -1795.1676330566406
+        ],
+        [
+          -2249.226875305176,
+          7.0,
+          -1777.6848335266113
+        ]
+      ],
+      "vertices": 9,
+      "triangles": 14,
+      "non_two_edges": 0,
+      "volume": 2924.3974626648123,
+      "land_footprint_overlap_m2": 122.3459134732619,
+      "old_D_distance_m": 39.23025772988658,
+      "old_D_overlap_m2": 0.0,
+      "house_pad_overlaps": []
+    },
+    {
+      "bounds": [
+        [
+          -2268.8135528564453,
+          -10.0,
+          -1999.053451538086
+        ],
+        [
+          -2251.171745300293,
+          6.5,
+          -1979.3817291259766
+        ]
+      ],
+      "vertices": 9,
+      "triangles": 14,
+      "non_two_edges": 0,
+      "volume": 3237.72889154206,
+      "land_footprint_overlap_m2": 74.42423146825455,
+      "old_D_distance_m": 141.91679841350097,
+      "old_D_overlap_m2": 0.0,
+      "house_pad_overlaps": []
+    },
+    {
+      "bounds": [
+        [
+          -2263.97900390625,
+          -10.0,
+          -1893.5376586914062
+        ],
+        [
+          -2246.984046936035,
+          4.900000095367432,
+          -1874.7903938293457
+        ]
+      ],
+      "vertices": 9,
+      "triangles": 14,
+      "non_two_edges": 0,
+      "volume": 2903.5202103597308,
+      "land_footprint_overlap_m2": 145.55490027427737,
+      "old_D_distance_m": 59.80389914107659,
+      "old_D_overlap_m2": 0.0,
+      "house_pad_overlaps": []
+    },
+    {
+      "bounds": [
+        [
+          -2259.0479049682617,
+          -10.0,
+          -1873.508804321289
+        ],
+        [
+          -2239.872661590576,
+          4.199999809265137,
+          -1853.80961227417
+        ]
+      ],
+      "vertices": 9,
+      "triangles": 14,
+      "non_two_edges": 0,
+      "volume": 2067.9620397283384,
+      "land_footprint_overlap_m2": 78.4078077433609,
+      "old_D_distance_m": 57.75406262159857,
+      "old_D_overlap_m2": 0.0,
+      "house_pad_overlaps": [
+        {
+          "house": "bay_fisher",
+          "pad_overlap_m2": 8.457150924546372,
+          "max_rock_y_over_pad": 3.1501808128923585,
+          "pad_y": 6.5,
+          "clear_below_pad_m": 3.3498191871076415
+        }
+      ]
+    },
+    {
+      "bounds": [
+        [
+          -2252.112693786621,
+          -10.0,
+          -1813.376916885376
+        ],
+        [
+          -2228.217975616455,
+          4.599999904632568,
+          -1797.927906036377
+        ]
+      ],
+      "vertices": 9,
+      "triangles": 14,
+      "non_two_edges": 0,
+      "volume": 2278.6039198860526,
+      "land_footprint_overlap_m2": 101.8496819901246,
+      "old_D_distance_m": 55.43411055259221,
+      "old_D_overlap_m2": 0.0,
+      "house_pad_overlaps": []
+    },
+    {
+      "bounds": [
+        [
+          -2248.342971801758,
+          -10.0,
+          -1916.1143646240234
+        ],
+        [
+          -2226.546340942383,
+          7.400000095367432,
+          -1897.278205871582
+        ]
+      ],
+      "vertices": 9,
+      "triangles": 14,
+      "non_two_edges": 0,
+      "volume": 2854.7677406296134,
+      "land_footprint_overlap_m2": 131.70322613950032,
+      "old_D_distance_m": 88.04442700988123,
+      "old_D_overlap_m2": 0.0,
+      "house_pad_overlaps": []
+    },
+    {
+      "bounds": [
+        [
+          -2234.7704010009766,
+          -10.0,
+          -1948.5448989868164
+        ],
+        [
+          -2216.8720893859863,
+          5.5,
+          -1930.4514617919922
+        ]
+      ],
+      "vertices": 9,
+      "triangles": 14,
+      "non_two_edges": 0,
+      "volume": 2271.6362851213585,
+      "land_footprint_overlap_m2": 113.19089485864916,
+      "old_D_distance_m": 121.14535395963746,
+      "old_D_overlap_m2": 0.0,
+      "house_pad_overlaps": []
+    },
+    {
+      "bounds": [
+        [
+          -2234.2716941833496,
+          -10.0,
+          -1857.3498859405518
+        ],
+        [
+          -2212.8267211914062,
+          3.5999999046325684,
+          -1840.1624250411987
+        ]
+      ],
+      "vertices": 9,
+      "triangles": 14,
+      "non_two_edges": 0,
+      "volume": 1919.331797381242,
+      "land_footprint_overlap_m2": 92.99981546485097,
+      "old_D_distance_m": 78.04365515546353,
+      "old_D_overlap_m2": 0.0,
+      "house_pad_overlaps": [
+        {
+          "house": "bay_workshop",
+          "pad_overlap_m2": 9.682388259498637,
+          "max_rock_y_over_pad": 1.6947215903173856,
+          "pad_y": 8.5,
+          "clear_below_pad_m": 6.805278409682614
+        }
+      ]
+    },
+    {
+      "bounds": [
+        [
+          -2211.7044715881348,
+          -10.0,
+          -1835.6351690292358
+        ],
+        [
+          -2196.397918701172,
+          3.200000047683716,
+          -1819.0529356002808
+        ]
+      ],
+      "vertices": 9,
+      "triangles": 14,
+      "non_two_edges": 0,
+      "volume": 1858.5406332239509,
+      "land_footprint_overlap_m2": 146.91283622632739,
+      "old_D_distance_m": 95.99516898635346,
+      "old_D_overlap_m2": 0.0,
+      "house_pad_overlaps": []
+    }
+  ],
+  "visual_accepted": false,
+  "integration_accepted": false,
+  "rock_to_mainland_interior_samples": [
+    {
+      "sample_xz": [
+        -2265.824418787426,
+        -1740.3108148001675
+      ],
+      "rock_interval": [
+        -10.0,
+        2.2421092891191003
+      ],
+      "mainland_interval": [
+        -10.00001767959691,
+        7.284858059811392
+      ],
+      "solid_vertical_overlap_m": 12.2421092891191
+    },
+    {
+      "sample_xz": [
+        -2268.369816067552,
+        -1767.7027854919434
+      ],
+      "rock_interval": [
+        -10.0,
+        4.694602451009599
+      ],
+      "mainland_interval": [
+        -10.000011709839558,
+        6.766842658231852
+      ],
+      "solid_vertical_overlap_m": 14.6946024510096
+    },
+    {
+      "sample_xz": [
+        -2255.6915953833304,
+        -1785.4574714192843
+      ],
+      "rock_interval": [
+        -10.0,
+        6.207687567435568
+      ],
+      "mainland_interval": [
+        -10.0,
+        8.8232889054679
+      ],
+      "solid_vertical_overlap_m": 16.207687567435567
+    },
+    {
+      "sample_xz": [
+        -2255.288280550599,
+        -1992.0652684229963
+      ],
+      "rock_interval": [
+        -10.0,
+        5.680820099210472
+      ],
+      "mainland_interval": [
+        -10.0,
+        8.018103289135185
+      ],
+      "solid_vertical_overlap_m": 15.680820099210472
+    },
+    {
+      "sample_xz": [
+        -2251.990346182213,
+        -1882.471435546875
+      ],
+      "rock_interval": [
+        -10.0,
+        3.9392033305147676
+      ],
+      "mainland_interval": [
+        -10.0,
+        5.6501944255133605
+      ],
+      "solid_vertical_overlap_m": 13.939203330514768
+    },
+    {
+      "sample_xz": [
+        -2246.178163199948,
+        -1865.8086842234745
+      ],
+      "rock_interval": [
+        -10.0,
+        3.1684572726126214
+      ],
+      "mainland_interval": [
+        -10.0,
+        6.402826690184455
+      ],
+      "solid_vertical_overlap_m": 13.16845727261262
+    },
+    {
+      "sample_xz": [
+        -2233.9673697194967,
+        -1806.6229133605957
+      ],
+      "rock_interval": [
+        -10.0,
+        3.5102480330668797
+      ],
+      "mainland_interval": [
+        -10.000022457252877,
+        5.759600848948221
+      ],
+      "solid_vertical_overlap_m": 13.51024803306688
+    },
+    {
+      "sample_xz": [
+        -2237.307561965593,
+        -1903.1870841720752
+      ],
+      "rock_interval": [
+        -10.0,
+        7.009016742654255
+      ],
+      "mainland_interval": [
+        -10.0,
+        9.494993713456163
+      ],
+      "solid_vertical_overlap_m": 17.009016742654254
+    },
+    {
+      "sample_xz": [
+        -2223.5692979679743,
+        -1943.2481630848192
+      ],
+      "rock_interval": [
+        -10.0,
+        4.842873940986227
+      ],
+      "mainland_interval": [
+        -10.000019670340974,
+        19.21007641395298
+      ],
+      "solid_vertical_overlap_m": 14.842873940986227
+    },
+    {
+      "sample_xz": [
+        -2220.9215070454084,
+        -1854.3182755501625
+      ],
+      "rock_interval": [
+        -10.0,
+        2.8990622525070155
+      ],
+      "mainland_interval": [
+        -10.000027932504373,
+        7.986244360503497
+      ],
+      "solid_vertical_overlap_m": 12.899062252507015
+    },
+    {
+      "sample_xz": [
+        -2201.7778475404684,
+        -1829.6682195663452
+      ],
+      "rock_interval": [
+        -10.0,
+        2.7106682836568092
+      ],
+      "mainland_interval": [
+        -10.000021965069397,
+        8.561030715939706
+      ],
+      "solid_vertical_overlap_m": 12.710668283656808
+    }
+  ],
+  "root_scope": "One actual vertical section per rock within its projected mainland overlap. Positive interval overlap proves each is attached somewhere to mainland solid; not all interfaces watertight, unioned, or original seabed-supported.",
+  "former_long_wall_triangles": [
+    {
+      "triangle": 1451,
+      "new_slope_degrees": 3.543147417881292
+    },
+    {
+      "triangle": 1450,
+      "new_slope_degrees": 3.473336412585801
+    },
+    {
+      "triangle": 1281,
+      "new_slope_degrees": 3.6818863278395306
+    },
+    {
+      "triangle": 1280,
+      "new_slope_degrees": 4.069546391577317
+    },
+    {
+      "triangle": 2569,
+      "new_slope_degrees": 4.221164830803698
+    },
+    {
+      "triangle": 2568,
+      "new_slope_degrees": 4.677125754797484
+    }
+  ]
+}

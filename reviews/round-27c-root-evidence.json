@@ -1,0 +1,127 @@
+{
+  "run_id": "coast-environment-27c-20260908T151320Z-766da6d8e2214d7f9879e2c4b050ad09",
+  "run_terminal_passed": true,
+  "manifest_sha256": "ee3ac151f9d93304698bc857ae2389a9ab6b210c374a7b5adf32b08053859516",
+  "binding_count": 175,
+  "all_artifact_sha256_verified": true,
+  "views": [
+    {
+      "name": "night-reference",
+      "image": "captures\\validation_runs\\coast-environment-27c-20260908T151320Z-766da6d8e2214d7f9879e2c4b050ad09\\images\\night-reference.png",
+      "image_sha256": "b70364d2162b58835da34ece4bcf113c35904ebdeeb658a16f3cb521df8bbb4e",
+      "sidecar_sha256": "b3a19ce2b9bff1eb3590cfd7e8a42b9fd7dffc20b08e7e04b3cf337679df56c2",
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -2278.0,
+          60.0,
+          -1632.0
+        ],
+        "rotation": [
+          -0.00509163970127702,
+          0.60683274269104,
+          0.0
+        ]
+      },
+      "reported_world_time": 0,
+      "native_sky_asset_count": 8,
+      "root_directly_viewed": true
+    },
+    {
+      "name": "night-reverse",
+      "image": "captures\\validation_runs\\coast-environment-27c-20260908T151320Z-766da6d8e2214d7f9879e2c4b050ad09\\images\\night-reverse.png",
+      "image_sha256": "18b7c75ae3447595971eb4f708023dddd81cb2e8ef7fb8a7d8ab096d1eba5de6",
+      "sidecar_sha256": "95c00f7985b9b32861ee29d944ef9c24776ca60f098c93e4b6cb8e8b16594688",
+      "camera": {
+        "fov": 60.0,
+        "position": [
+          -2485.0,
+          80.0,
+          -1810.0
+        ],
+        "rotation": [
+          -0.305406630039215,
+          -2.44073820114136,
+          0.0
+        ]
+      },
+      "reported_world_time": 0,
+      "native_sky_asset_count": 8,
+      "root_directly_viewed": true
+    },
+    {
+      "name": "day-reference",
+      "image": "captures\\validation_runs\\coast-environment-27c-20260908T151320Z-766da6d8e2214d7f9879e2c4b050ad09\\images\\day-reference.png",
+      "image_sha256": "47715f0ce81c1cbdf342417412289c42cf22a3fc944158b3652da67e4a107097",
+      "sidecar_sha256": "1acf215265ecd6bd0b4f6a9f8288d50c457e076f3cdc9fb5fe4aa8c37c5d1f51",
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -2278.0,
+          60.0,
+          -1632.0
+        ],
+        "rotation": [
+          -0.00509163970127702,
+          0.60683274269104,
+          0.0
+        ]
+      },
+      "reported_world_time": 0,
+      "native_sky_asset_count": 7,
+      "root_directly_viewed": true
+    },
+    {
+      "name": "night-reference-later",
+      "image": "captures\\validation_runs\\coast-environment-27c-20260908T151320Z-766da6d8e2214d7f9879e2c4b050ad09\\images\\night-reference-later.png",
+      "image_sha256": "1905fefac2bcd2d2a36dea253dc20443525a32859967a781f6c21c17945e5851",
+      "sidecar_sha256": "bc873da0105892f97bf1bbfbe23593dd19ca1582478416c9f6b68b7c4f5c89f6",
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -2278.0,
+          60.0,
+          -1632.0
+        ],
+        "rotation": [
+          -0.00509163970127702,
+          0.60683274269104,
+          0.0
+        ]
+      },
+      "reported_world_time": 18,
+      "native_sky_asset_count": 8,
+      "root_directly_viewed": true
+    }
+  ],
+  "time_sample_comparison": {
+    "open_water_patch": {
+      "pixel_rectangle": [
+        1120,
+        760,
+        1220,
+        890
+      ],
+      "changed_pixels": 12975,
+      "total_pixels": 13000,
+      "mean_absolute_channel_difference_255": 80.67820512820512,
+      "max_absolute_channel_difference_255": 255
+    },
+    "upper_sky_control": {
+      "pixel_rectangle": [
+        10,
+        10,
+        600,
+        100
+      ],
+      "changed_pixels": 0,
+      "total_pixels": 53100,
+      "mean_absolute_channel_difference_255": 0.0,
+      "max_absolute_channel_difference_255": 0
+    }
+  },
+  "scope": "Actual four GPU samples and frozen artifact identities only. Time-separated stills establish a changing sampled water pattern, not smooth animation quality or full weather. Prior26b geometry not resampled. Root direct-view field is written only after all4 actual images were inspected.",
+  "visual_acceptance": false,
+  "production_installed": false,
+  "full_goal_status": "active"
+}

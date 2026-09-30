@@ -1,0 +1,231 @@
+{
+  "run_id": "lantern-receiver-28g-20260908T162958Z-96465cbb463e4092a4227359c38c71f4",
+  "terminal_passed": true,
+  "binding_count": 195,
+  "all_bound_sha256_verified": true,
+  "manifest_sha256": "50818a5c36d46b9ae699c1829fad37a892b9dea1553b390d0bb06922ca676ed5",
+  "views": [
+    {
+      "view": "reference",
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -2278.0,
+          60.0,
+          -1632.0
+        ],
+        "rotation": [
+          -0.00509163970127702,
+          0.60683274269104,
+          0.0
+        ]
+      },
+      "baseline_vs_28f": {
+        "changed_pixels": 424,
+        "max_channel_difference": 46,
+        "mean_absolute_channel_difference": 0.0006319840273081506,
+        "bbox": [
+          0,
+          502,
+          1664,
+          940
+        ]
+      },
+      "core_only_delta": {
+        "changed_pixels": 811,
+        "max_channel_difference": 107,
+        "mean_absolute_channel_difference": 0.0018690456214926264,
+        "bbox": [
+          5,
+          501,
+          1669,
+          940
+        ]
+      },
+      "beam_energy_only_delta": {
+        "changed_pixels": 173853,
+        "max_channel_difference": 63,
+        "mean_absolute_channel_difference": 0.6736773885733559,
+        "bbox": [
+          21,
+          448,
+          1672,
+          940
+        ]
+      },
+      "files": {
+        "baseline": {
+          "path": "captures\\validation_runs\\lantern-receiver-28g-20260908T162958Z-96465cbb463e4092a4227359c38c71f4\\images\\reference-baseline.png",
+          "sha256": "63eafda141933fe33b8eacfa1f7d9d5719c25617132bd661b9ab8e37ecca717c",
+          "sidecar_sha256": "e4b63439fc07b5d512a556e101d003fd6faaa44f18d4c3035ccfc3de96294097",
+          "root_directly_viewed": false
+        },
+        "core-transmits": {
+          "path": "captures\\validation_runs\\lantern-receiver-28g-20260908T162958Z-96465cbb463e4092a4227359c38c71f4\\images\\reference-core-transmits.png",
+          "sha256": "9d89807ef22e95835ccaa2bbb6b87f1b9ccecc0569645daf0f78a0596e89937b",
+          "sidecar_sha256": "b6b8fa3905ca5e1d6fd52b3296fac3ef20a0381bf73e7445b48dc5f9d9bf0420",
+          "root_directly_viewed": true
+        },
+        "beam-boost": {
+          "path": "captures\\validation_runs\\lantern-receiver-28g-20260908T162958Z-96465cbb463e4092a4227359c38c71f4\\images\\reference-beam-boost.png",
+          "sha256": "ea44770121bfc4de7d72f271ad36c74da18d6aeabc5f71acc9b4cb14a4d1e134",
+          "sidecar_sha256": "917bcce94626838f46eda741c608926ee0f1c4a0e1f15ffbd6baae3a68aa72af",
+          "root_directly_viewed": true
+        }
+      }
+    },
+    {
+      "view": "lamp-close",
+      "camera": {
+        "fov": 45.0,
+        "position": [
+          -2344.0,
+          53.0621032714844,
+          -1643.0
+        ],
+        "rotation": [
+          -0.211809575557709,
+          0.605544626712799,
+          0.0
+        ]
+      },
+      "baseline_vs_28f": {
+        "changed_pixels": 146,
+        "max_channel_difference": 104,
+        "mean_absolute_channel_difference": 0.00021059072180499552,
+        "bbox": [
+          391,
+          263,
+          1657,
+          923
+        ]
+      },
+      "core_only_delta": {
+        "changed_pixels": 184,
+        "max_channel_difference": 46,
+        "mean_absolute_channel_difference": 0.00032563172979303633,
+        "bbox": [
+          366,
+          263,
+          1656,
+          930
+        ]
+      },
+      "beam_energy_only_delta": {
+        "changed_pixels": 257774,
+        "max_channel_difference": 54,
+        "mean_absolute_channel_difference": 1.0619931204206052,
+        "bbox": [
+          0,
+          190,
+          1672,
+          930
+        ]
+      },
+      "files": {
+        "baseline": {
+          "path": "captures\\validation_runs\\lantern-receiver-28g-20260908T162958Z-96465cbb463e4092a4227359c38c71f4\\images\\lamp-close-baseline.png",
+          "sha256": "ec64acd23be76acee099192b6d47f05e47fbedae60842977853f61c6ca7c1ca4",
+          "sidecar_sha256": "1ace1fb215c47a5185178cd80ed8878ac6969e5eb68585607a497fa158de126b",
+          "root_directly_viewed": false
+        },
+        "core-transmits": {
+          "path": "captures\\validation_runs\\lantern-receiver-28g-20260908T162958Z-96465cbb463e4092a4227359c38c71f4\\images\\lamp-close-core-transmits.png",
+          "sha256": "8b11aca8e043bae3300180c3dbfd69e1a2341f914d9739a6797d2ec6a2cb2e16",
+          "sidecar_sha256": "0ebf223bd0f94c768d0e7f2903a46c3e9b95d79db2322ef2916df69ebf8f2df9",
+          "root_directly_viewed": true
+        },
+        "beam-boost": {
+          "path": "captures\\validation_runs\\lantern-receiver-28g-20260908T162958Z-96465cbb463e4092a4227359c38c71f4\\images\\lamp-close-beam-boost.png",
+          "sha256": "edd9a3e84275953d54f7940472464c7d5536bbdd3ac25419471d7b5d478ca8a1",
+          "sidecar_sha256": "d4a25290fd731d7d407e3976b1bb50789e3deec019a362aaab4c8760427416c5",
+          "root_directly_viewed": true
+        }
+      },
+      "core_only_lamp_frame_roi_620_360_1050_700": {
+        "changed_pixels": 4,
+        "max_channel_difference": 1,
+        "mean_absolute_channel_difference": 9.119927040583676e-06,
+        "bbox": [
+          173,
+          86,
+          183,
+          101
+        ]
+      }
+    },
+    {
+      "view": "beam-side",
+      "camera": {
+        "fov": 70.0,
+        "position": [
+          -1893.0,
+          174.662109375,
+          -1826.0
+        ],
+        "rotation": [
+          -0.348858118057251,
+          1.42478406429291,
+          0.0
+        ]
+      },
+      "baseline_vs_28f": {
+        "changed_pixels": 630,
+        "max_channel_difference": 76,
+        "mean_absolute_channel_difference": 0.0010118524017511657,
+        "bbox": [
+          275,
+          360,
+          1670,
+          939
+        ]
+      },
+      "core_only_delta": {
+        "changed_pixels": 526,
+        "max_channel_difference": 92,
+        "mean_absolute_channel_difference": 0.0009660902328277461,
+        "bbox": [
+          333,
+          360,
+          1549,
+          939
+        ]
+      },
+      "beam_energy_only_delta": {
+        "changed_pixels": 103177,
+        "max_channel_difference": 54,
+        "mean_absolute_channel_difference": 0.1341335780761923,
+        "bbox": [
+          275,
+          278,
+          1670,
+          939
+        ]
+      },
+      "files": {
+        "baseline": {
+          "path": "captures\\validation_runs\\lantern-receiver-28g-20260908T162958Z-96465cbb463e4092a4227359c38c71f4\\images\\beam-side-baseline.png",
+          "sha256": "34bbf207d68bb631d6fe10f7feae53ad662083d8bf91737b03bf177392e39430",
+          "sidecar_sha256": "169ab67ee125bcdb47a1e40ad6cc2e7aa55436150d64a5c9f4b43bb65dd013d0",
+          "root_directly_viewed": false
+        },
+        "core-transmits": {
+          "path": "captures\\validation_runs\\lantern-receiver-28g-20260908T162958Z-96465cbb463e4092a4227359c38c71f4\\images\\beam-side-core-transmits.png",
+          "sha256": "4341d6b0961bae870f71e54faab9bed8d7c113718bd57a5e604a978f7ca51175",
+          "sidecar_sha256": "582d254a8ff7239e85903504d8e017d6c3407200424665f820004c0db65291e1",
+          "root_directly_viewed": true
+        },
+        "beam-boost": {
+          "path": "captures\\validation_runs\\lantern-receiver-28g-20260908T162958Z-96465cbb463e4092a4227359c38c71f4\\images\\beam-side-beam-boost.png",
+          "sha256": "ff27aa6a05d655f93a29b2e618a833c32bca31b8677efb7355cafe88824dc0c3",
+          "sidecar_sha256": "b780314f3c450c40776da166cd35d785cbba4befb42dd00f0b433d2877e740ec",
+          "root_directly_viewed": true
+        }
+      }
+    }
+  ],
+  "production_installed": false,
+  "visual_acceptance": false,
+  "full_goal_status": "active",
+  "scope": "Root directly viewed six core-transmits/beam-boost PNGs; three baseline images compared to previously directly viewed28f originals. Final-beam-side duplicate has exact PNG identity. One real scene, three cameras and three actual parameter states. Core caster A/B and beam energy A/B are separate."
+}

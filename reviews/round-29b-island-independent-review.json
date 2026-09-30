@@ -1,0 +1,57 @@
+{
+  "round": "29b",
+  "run_id": "lantern-island-29b-20260908T170220Z-518110b4cf274a47a5271790baa41f41",
+  "observed_manifest_status": "passed",
+  "visual_verdict": "rework_required",
+  "full_reference_accepted": false,
+  "all_reference_goal_complete": false,
+  "images": [
+    {
+      "view": "night-reference",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-29b-20260908T170220Z-518110b4cf274a47a5271790baa41f41\\images\\night-reference.png",
+      "sha256": "1505ce889ce4d46cc76d8f11d88a3f813fc84832794a7dab14264fa1d2c94e0e"
+    },
+    {
+      "view": "day-reference",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-29b-20260908T170220Z-518110b4cf274a47a5271790baa41f41\\images\\day-reference.png",
+      "sha256": "81f2feb3096be3d0b9f7ca5f2722f0179c28d2165eb6b2d03e75a2cf018d2f10"
+    },
+    {
+      "view": "day-d-front",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-29b-20260908T170220Z-518110b4cf274a47a5271790baa41f41\\images\\day-d-front.png",
+      "sha256": "70a7351e23a0b870a3d8fe1f532a35bf6a5b846eab7b1c7eec64f26f671ae023"
+    },
+    {
+      "view": "day-d-back",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-29b-20260908T170220Z-518110b4cf274a47a5271790baa41f41\\images\\day-d-back.png",
+      "sha256": "3673c706bf339e24171756fca89e404c92d1bd18eaa491d4df28ad3c0a8e7758"
+    },
+    {
+      "view": "day-c-front",
+      "directly_viewed": true,
+      "path": "captures\\validation_runs\\lantern-island-29b-20260908T170220Z-518110b4cf274a47a5271790baa41f41\\images\\day-c-front.png",
+      "sha256": "65bdfcb971e25b041ca9aa4fcd73626a4eacdec41d7e101c15c0c282f4d2892e"
+    }
+  ],
+  "geometry_evidence": "reviews/round-29b-independent-geometry.json",
+  "detailed_review": "reviews/round-29b-island-independent-review.md",
+  "local_improvements": [
+    "Lower wider peripheral crags",
+    "Fewer flattened tidal reefs",
+    "Actual peripheral terrain reshaped"
+  ],
+  "remaining_failures": [
+    "Broad continuous near-vertical upper platform shield wall",
+    "Smooth broad lower rock skirt retains stacked island structure",
+    "Continuous waterline fracture bands",
+    "Weak embedded connection between upper platform and lower shoulders"
+  ],
+  "scope_limits": [
+    "No Blender/GPU rerun by reviewer",
+    "No full walking or flight clearance claim"
+  ]
+}
