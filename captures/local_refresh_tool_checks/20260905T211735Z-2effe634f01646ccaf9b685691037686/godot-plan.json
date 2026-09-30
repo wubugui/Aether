@@ -1,0 +1,46 @@
+[
+	{
+		"name": "legacy full kit still includes terrain",
+		"passed": true
+	},
+	{
+		"name": "six selected assets do not include terrain by default",
+		"passed": true
+	},
+	{
+		"name": "six selected assets plus explicit terrain",
+		"passed": true
+	},
+	{
+		"name": "include-terrain without asset preserves full kit",
+		"passed": true
+	},
+	{
+		"name": "duplicate selection refreshes once",
+		"passed": true
+	},
+	{
+		"name": "reject selection before writes: [\"--asset=cliff_crown\", \"--asset=misspelled\", \"--include-terrain\"]",
+		"passed": true
+	},
+	{
+		"name": "reject selection before writes: [\"--asset=\"]",
+		"passed": true
+	},
+	{
+		"name": "reject selection before writes: [\"--asset\"]",
+		"passed": true
+	},
+	{
+		"name": "reject selection before writes: [\"--include-terrain=true\"]",
+		"passed": true
+	},
+	{
+		"name": "reject selection before writes: [\"--include-terrian\"]",
+		"passed": true
+	},
+	{
+		"name": "selection does not mutate original manifests",
+		"passed": true
+	}
+]

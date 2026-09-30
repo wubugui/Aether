@@ -1,0 +1,8 @@
+ERROR: Attempted to erase an invalid (previously freed?) object instance into a 'TypedArray'.
+   at: _internal_validate_object (core/variant/container_type_validate.h:95)
+   GDScript backtrace (most recent call first):
+       [0] run (res://tools/render_crownreach37a.gd:48)
+ERROR: Condition "!_p->typed.validate(value, "erase")" is true.
+   at: erase (core/variant/array.cpp:341)
+   GDScript backtrace (most recent call first):
+       [0] run (res://tools/render_crownreach37a.gd:48)

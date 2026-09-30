@@ -1,0 +1,120 @@
+{
+  "load_ms": 17268,
+  "materials": 382,
+  "rows": [
+    {
+      "fov": 50.0,
+      "image": "E:\\FeiTing\\captures\\opening_study_38\\run1/base__opening.png",
+      "position": [
+        0.0,
+        145.0,
+        250.0
+      ],
+      "target": [
+        0.0,
+        83.8369979858398,
+        -750.0
+      ],
+      "variant": "base",
+      "view": "opening"
+    },
+    {
+      "apply": {
+        "params_set": 0,
+        "replacements": {
+
+        }
+      },
+      "variant": "base"
+    },
+    {
+      "fov": 50.0,
+      "image": "E:\\FeiTing\\captures\\opening_study_38\\run1/v1_neutral__opening.png",
+      "position": [
+        0.0,
+        145.0,
+        250.0
+      ],
+      "target": [
+        0.0,
+        83.8369979858398,
+        -750.0
+      ],
+      "variant": "v1_neutral",
+      "view": "opening"
+    },
+    {
+      "apply": {
+        "params_set": 0,
+        "replacements": {
+          "ALBEDO*=mix(vec3(1.05,.91,.67),": 4,
+          "EMISSION*=mix(vec3(1.13,.92,.59),": 4,
+          "EMISSION*vec3(.87,.94,.78)+vec3(1.1,.68,.23)*sun_reflection": 1
+        }
+      },
+      "variant": "v1_neutral"
+    },
+    {
+      "fov": 50.0,
+      "image": "E:\\FeiTing\\captures\\opening_study_38\\run1/v2_green__opening.png",
+      "position": [
+        0.0,
+        145.0,
+        250.0
+      ],
+      "target": [
+        0.0,
+        83.8369979858398,
+        -750.0
+      ],
+      "variant": "v2_green",
+      "view": "opening"
+    },
+    {
+      "apply": {
+        "params_set": 4,
+        "replacements": {
+          "ALBEDO*=mix(vec3(1.05,.91,.67),": 4,
+          "EMISSION*=mix(vec3(1.13,.92,.59),": 4,
+          "EMISSION*vec3(.87,.94,.78)+vec3(1.1,.68,.23)*sun_reflection": 1,
+          "vec3 dry=vec3(.73,.745,.46);": 1,
+          "vec3 meadow=vec3(.46,.565,.345);": 1
+        }
+      },
+      "variant": "v2_green"
+    },
+    {
+      "fov": 50.0,
+      "image": "E:\\FeiTing\\captures\\opening_study_38\\run1/v3_green_cool__opening.png",
+      "position": [
+        0.0,
+        145.0,
+        250.0
+      ],
+      "target": [
+        0.0,
+        83.8369979858398,
+        -750.0
+      ],
+      "variant": "v3_green_cool",
+      "view": "opening"
+    },
+    {
+      "apply": {
+        "params_set": 4,
+        "replacements": {
+          "ALBEDO*=mix(vec3(1.05,.91,.67),": 4,
+          "EMISSION*=mix(vec3(1.13,.92,.59),": 4,
+          "EMISSION*vec3(.87,.94,.78)+vec3(1.1,.68,.23)*sun_reflection": 1,
+          "vec3 dry=vec3(.73,.745,.46);": 1,
+          "vec3 meadow=vec3(.46,.565,.345);": 1
+        }
+      },
+      "variant": "v3_green_cool"
+    }
+  ],
+  "scope": "Runtime look study only; no project file modified.",
+  "shaders": 11,
+  "source_game": "res://captures/candidate_highcoast36c/Game36c.tscn",
+  "total_ms": 23721
+}

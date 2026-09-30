@@ -1,0 +1,375 @@
+{
+  "schema_version": 1,
+  "run_id": "coast-environment-21c-20260908T102214Z-b866a4fcb0724d3ba6755f194b342f8b",
+  "round": "coast-environment-21c",
+  "started_utc": "2026-09-08T10:22:14.866821+00:00",
+  "workspace": "E:\\FeiTing",
+  "run_directory": "E:\\FeiTing\\captures\\validation_runs\\coast-environment-21c-20260908T102214Z-b866a4fcb0724d3ba6755f194b342f8b",
+  "status": "passed",
+  "passed": true,
+  "export_windows_requested": false,
+  "capture_views_requested": true,
+  "expected_counts": {},
+  "stages": [
+    {
+      "name": "night-reference",
+      "run_id": "coast-environment-21c-20260908T102214Z-b866a4fcb0724d3ba6755f194b342f8b",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\coast-environment-21c-20260908T102214Z-b866a4fcb0724d3ba6755f194b342f8b\\study-inputs\\preview.gd",
+        "--quit-after",
+        "900",
+        "--",
+        "--label=20l",
+        "--study-dir=E:\\FeiTing\\captures\\validation_runs\\coast-environment-21c-20260908T102214Z-b866a4fcb0724d3ba6755f194b342f8b\\study-inputs",
+        "--view=reference-coast-near",
+        "--environment=night",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\coast-environment-21c-20260908T102214Z-b866a4fcb0724d3ba6755f194b342f8b\\images\\night-reference.png",
+        "--validation-run=coast-environment-21c-20260908T102214Z-b866a4fcb0724d3ba6755f194b342f8b"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788862952314901800,
+      "started_utc": "2026-09-08T10:22:32.314901+00:00",
+      "input_manifest_sha256": "3bf1db18b968573da100f47e932c0096d5ddef7e74bf88a151ae954f79561849",
+      "exit_code": 0,
+      "finished_ns": 1788862959244137900,
+      "image": "images/night-reference.png",
+      "finished_utc": "2026-09-08T10:22:47.891699+00:00"
+    },
+    {
+      "name": "night-back",
+      "run_id": "coast-environment-21c-20260908T102214Z-b866a4fcb0724d3ba6755f194b342f8b",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\coast-environment-21c-20260908T102214Z-b866a4fcb0724d3ba6755f194b342f8b\\study-inputs\\preview.gd",
+        "--quit-after",
+        "900",
+        "--",
+        "--label=20l",
+        "--study-dir=E:\\FeiTing\\captures\\validation_runs\\coast-environment-21c-20260908T102214Z-b866a4fcb0724d3ba6755f194b342f8b\\study-inputs",
+        "--view=island-back",
+        "--environment=night",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\coast-environment-21c-20260908T102214Z-b866a4fcb0724d3ba6755f194b342f8b\\images\\night-back.png",
+        "--validation-run=coast-environment-21c-20260908T102214Z-b866a4fcb0724d3ba6755f194b342f8b"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788862976621941000,
+      "started_utc": "2026-09-08T10:22:56.621941+00:00",
+      "input_manifest_sha256": "3bf1db18b968573da100f47e932c0096d5ddef7e74bf88a151ae954f79561849",
+      "exit_code": 0,
+      "finished_ns": 1788862983182966300,
+      "image": "images/night-back.png",
+      "finished_utc": "2026-09-08T10:23:11.522908+00:00"
+    }
+  ],
+  "artifacts": {
+    "study-inputs/builder.py": {
+      "sha256": "3b02eac21bba13baaae83b80e710d46e36a6774427b0a531056cdd1f49b2034b",
+      "bytes": 22540,
+      "mtime_ns": 1788861872806371700
+    },
+    "study-inputs/island_a.blend": {
+      "sha256": "6b19a42b34fb670f46ed7887ad6d7ee33f4b4f456f88cdb71aa5158683ce0bd2",
+      "bytes": 1105609,
+      "mtime_ns": 1788861874896240600
+    },
+    "study-inputs/island_a.glb": {
+      "sha256": "d6055b3dcf2d108ca0e3341dc237fbf9ac9ec45a483e40aa81e4cc991315f215",
+      "bytes": 577672,
+      "mtime_ns": 1788861875170601000
+    },
+    "study-inputs/island_b.blend": {
+      "sha256": "4d076990c63d61ed6930332802d729dfa3b4b37467fe5800fd6f5054ad8b4649",
+      "bytes": 904528,
+      "mtime_ns": 1788861875696268400
+    },
+    "study-inputs/island_b.glb": {
+      "sha256": "5ad2cfd67c65f23b583ff06421a9230ca81c3150cadfcda1d7c2965a293134b2",
+      "bytes": 353952,
+      "mtime_ns": 1788861875743198900
+    },
+    "study-inputs/island_c.blend": {
+      "sha256": "7cba8e83ebde59a83a6c887a26b05c395c21743103e9e1f1ec721d57c2c1e5f7",
+      "bytes": 806189,
+      "mtime_ns": 1788861875983292700
+    },
+    "study-inputs/island_c.glb": {
+      "sha256": "126f6de07e9236fe1f7d06b3cd3585d3683b0c7156a5bc702797abafbd45875d",
+      "bytes": 230576,
+      "mtime_ns": 1788861876008045300
+    },
+    "study-inputs/keeper_house.blend": {
+      "sha256": "ded477b6ed619aa9ca11da4ce7fe190938c27a86ff31237922fad161f2177759",
+      "bytes": 2474838,
+      "mtime_ns": 1788859346901051300
+    },
+    "study-inputs/keeper_house.glb": {
+      "sha256": "8f70f7ba4d6c94d23b310b73f6fee9d171f6efb32d255be2574254e639b6176b",
+      "bytes": 307084,
+      "mtime_ns": 1788859347431110400
+    },
+    "study-inputs/model-report.json": {
+      "sha256": "aa0e13d4d9c5a7f40dc9a22b4364a3fd4fae45d7105ab2b47035fac74d010245",
+      "bytes": 28303,
+      "mtime_ns": 1788861876035964500
+    },
+    "study-inputs/reef_low.blend": {
+      "sha256": "66c5392aa718ba8520f31a4c6ba08098e425034bae83c010b5e437db739948e9",
+      "bytes": 551018,
+      "mtime_ns": 1788858579418959700
+    },
+    "study-inputs/reef_low.glb": {
+      "sha256": "42de4128c2c51d3f22b9bd4423b23b3c15f509e623abcdac9702e4c1f1a06a87",
+      "bytes": 6280,
+      "mtime_ns": 1788858579426976800
+    },
+    "study-inputs/reef_ridge.blend": {
+      "sha256": "9b7060b1946358d58b53ffd9d089338d3f9d8796caaeb73cb32b84819326b082",
+      "bytes": 551236,
+      "mtime_ns": 1788858579458111400
+    },
+    "study-inputs/reef_ridge.glb": {
+      "sha256": "4427c7705c9ce848cfa62735d46347d931c1c3e52d693b189d0cded9fe89be87",
+      "bytes": 7296,
+      "mtime_ns": 1788858579467920700
+    },
+    "study-inputs/reef_spire.blend": {
+      "sha256": "a384d4f84c982eff4a05974aa48d595e975ed21c0d9899c6fe5faf5d1eecae2a",
+      "bytes": 551372,
+      "mtime_ns": 1788858579437489600
+    },
+    "study-inputs/reef_spire.glb": {
+      "sha256": "c93eb72c79a84893651692223830be491c015e2827d36fa5bbf7e6c3311fb95e",
+      "bytes": 7620,
+      "mtime_ns": 1788858579447545700
+    },
+    "study-inputs/environment/ambient-mode-derivation.py": {
+      "sha256": "982ddd576454c97526eed350b28f2ed0f1229e1080c06f0cb47b6be8306455ab",
+      "bytes": 3420,
+      "mtime_ns": 1788862932032381800
+    },
+    "study-inputs/environment/builder.py": {
+      "sha256": "f78b4aae92ee030d7c559db58abb6a1b3edb03c4d6bfd4232e2d27ba979cba20",
+      "bytes": 4971,
+      "mtime_ns": 1788862076567438000
+    },
+    "study-inputs/environment/cliff_surface.gdshader": {
+      "sha256": "0e89013b39c7e19889423fe852789b708ebc04e6d22037a1149aa9ea924b435e",
+      "bytes": 870,
+      "mtime_ns": 1788862078397531100
+    },
+    "study-inputs/environment/cloud_surface.gdshader": {
+      "sha256": "3f8f503aa34f452fac0b32c41f3b6b6c552ecdd60ea789d07304bdcd38434e74",
+      "bytes": 735,
+      "mtime_ns": 1788862493819493100
+    },
+    "study-inputs/environment/derivation.py": {
+      "sha256": "2a7b1c358e0073ad8e76c81dacf61f83ea63cb1e521e20dcd8aef4cfb6ac3203",
+      "bytes": 4776,
+      "mtime_ns": 1788862492016106800
+    },
+    "study-inputs/environment/moon.gdshader": {
+      "sha256": "6ea8050f93cf21f44cb14c8ab3ed5674b309dd382854ba2ff709bb006b50a146",
+      "bytes": 136,
+      "mtime_ns": 1788862493820504000
+    },
+    "study-inputs/environment/open_sky.gdshader": {
+      "sha256": "b514467ebb754a42057c23475b245b51045ed74804cb4faa7598138dd40e80cb",
+      "bytes": 1279,
+      "mtime_ns": 1788862493818481900
+    },
+    "study-inputs/environment/open_water.gdshader": {
+      "sha256": "258c03b94e3a03b60fb18b16b02a8ef5675bc63a8103556875a95135162cb1b5",
+      "bytes": 2775,
+      "mtime_ns": 1788862493819493100
+    },
+    "study-inputs/environment/ship_surface.gdshader": {
+      "sha256": "30fdf4b4aed5a527a3d933ab7f209c93e7f56378c545b1b7f3d3825bbf78910b",
+      "bytes": 654,
+      "mtime_ns": 1788862078397531100
+    },
+    "study-inputs/environment/source-identities.json": {
+      "sha256": "80c2e174d485c01660d6a8e80db221d692f90162314433fe6c33b9d4541b3156",
+      "bytes": 737,
+      "mtime_ns": 1788862078400042600
+    },
+    "study-inputs/environment/terrain_native.gdshader": {
+      "sha256": "7d448bdfa8e99e93b1240d4293699749099fca6b91410dcbf8d4520045bfeacb",
+      "bytes": 2557,
+      "mtime_ns": 1788862078397531100
+    },
+    "study-inputs/environment/wood_surface.gdshader": {
+      "sha256": "19e4e59af57270e4ce9c82806aa7fae1fad6e392df3ac3f20fd1965a21e96410",
+      "bytes": 669,
+      "mtime_ns": 1788862078398543000
+    },
+    "study-inputs/environment/world_surface.gdshader": {
+      "sha256": "816001f4e1ef080f652ee748ce6590b6a7386d468b4f61c16f6af0ba9a7fe061",
+      "bytes": 1436,
+      "mtime_ns": 1788862078396528600
+    },
+    "study-inputs/environment/sky-assets/builder.py": {
+      "sha256": "effe79578bc51a3ddd65cf6014e837694c6a5614fffae7d56696c199e5927c06",
+      "bytes": 4417,
+      "mtime_ns": 1788862492015524800
+    },
+    "study-inputs/environment/sky-assets/cloud_bank_0.blend": {
+      "sha256": "139edd1c2410f8799f985b21cda2e6dad2b00c7d678beba3b7a4196a5a40e649",
+      "bytes": 672507,
+      "mtime_ns": 1788862494535680900
+    },
+    "study-inputs/environment/sky-assets/cloud_bank_0.glb": {
+      "sha256": "8ae708509d272df7a3073a9058f60105b2a2060cc43dff521478beb43164fcab",
+      "bytes": 10000,
+      "mtime_ns": 1788862494548758000
+    },
+    "study-inputs/environment/sky-assets/cloud_bank_1.blend": {
+      "sha256": "9efa571f6fb01c4a809044f3dca2db02e8e1dc1eb76b9931d562ccdee12410ea",
+      "bytes": 801153,
+      "mtime_ns": 1788862494564517700
+    },
+    "study-inputs/environment/sky-assets/cloud_bank_1.glb": {
+      "sha256": "de490c90fda848c5ce80b0ce49cb5045f994a7847fbc39505aa8a487672c9378",
+      "bytes": 16524,
+      "mtime_ns": 1788862494581256800
+    },
+    "study-inputs/environment/sky-assets/cloud_bank_2.blend": {
+      "sha256": "4bdc71069a84266b796150d48ad62f9ad7b47b78ca5873766ca7537b9251e4c6",
+      "bytes": 887942,
+      "mtime_ns": 1788862494597513700
+    },
+    "study-inputs/environment/sky-assets/cloud_bank_2.glb": {
+      "sha256": "21fd696e93fbac1f7c6d7effbfad151a95faf6feecc83e461474388b51bcede3",
+      "bytes": 13264,
+      "mtime_ns": 1788862494611626400
+    },
+    "study-inputs/environment/sky-assets/model-report.json": {
+      "sha256": "eb2a158ad0d8488db0199c18d7926d93237dc31d32ee277a31a802aab88b1ec7",
+      "bytes": 3386,
+      "mtime_ns": 1788862494624391600
+    },
+    "study-inputs/environment/sky-assets/moon.blend": {
+      "sha256": "786fed316ba6a981445e21bd2a270b8bc8f30b65fb4ae8706e64224e63df012d",
+      "bytes": 614007,
+      "mtime_ns": 1788862494330217700
+    },
+    "study-inputs/environment/sky-assets/moon.glb": {
+      "sha256": "d4f87e9dfe4dbec9f0a91cbad9356eb53b7d51c9b6970e069924cea10ce46cee",
+      "bytes": 37256,
+      "mtime_ns": 1788862494521726600
+    },
+    "study-inputs/environment/sky-assets/round-21b-sky-native-check.json": {
+      "sha256": "5b46458b20c080318143ff33b5289e89a8199070a2730ecc71751688af2ec8a8",
+      "bytes": 7171,
+      "mtime_ns": 1788862544117421000
+    },
+    "study-inputs/round-20l-coast-native-check.json": {
+      "sha256": "20802ff0320447547980bb7d95fef6865ba99c3d8f287533db654e41c6df2353",
+      "bytes": 67927,
+      "mtime_ns": 1788861907141812200
+    },
+    "study-inputs/render_coast_environment_21c.py": {
+      "sha256": "688abb784fc5c54a3ed8197c46b0787484140489651a27f029e8eb3ff575ef00",
+      "bytes": 6221,
+      "mtime_ns": 1788862934319949100
+    },
+    "study-inputs/coast_environment_21c.gd": {
+      "sha256": "3d8caf4c5812580cc11f815860b883b9ae085881357dadf4324bdd7818dc0744",
+      "bytes": 7539,
+      "mtime_ns": 1788862934318952400
+    },
+    "study-inputs/environment-sources-runtime.log": {
+      "sha256": "7c3a529a31ea09012a1f3ec33b1432490a5cba0b39bcf38f0f016d814d483585",
+      "bytes": 153,
+      "mtime_ns": 1788862931892518200
+    },
+    "study-inputs/inspect_environment_sources.gd": {
+      "sha256": "b013d7df4e28df7df2c5fd7e90ef252bd43fe8aefe36e43a03b44d251882c957",
+      "bytes": 280,
+      "mtime_ns": 1788862797786677300
+    },
+    "study-inputs/1342.png": {
+      "sha256": "7acc98104013d9122eb551846b2d7fc1f7549bce8b2e3199eae8f5385a3ea238",
+      "bytes": 1646137,
+      "mtime_ns": 1788847336194355400
+    },
+    "study-inputs/round-20l-path-independent-audit.json": {
+      "sha256": "73faccd2270e318967be8838b5b0fe391763e829e8868c5f0af7b524a92b9d1a",
+      "bytes": 19950,
+      "mtime_ns": 1788862147224636800
+    },
+    "study-inputs/preview.gd": {
+      "sha256": "1ad88a7bb6e6ab9e3be256fb75b89333b288ac914988fe090e3fe925fac34f56",
+      "bytes": 11432,
+      "mtime_ns": 1788862935360031600
+    },
+    "inputs.json": {
+      "sha256": "3bf1db18b968573da100f47e932c0096d5ddef7e74bf88a151ae954f79561849",
+      "bytes": 732077,
+      "mtime_ns": 1788862943622191800
+    },
+    "images/night-reference.png": {
+      "sha256": "36598d7dad6b1cb58ce7065c3717b81ff563455b7d8032b7cf604ad1193f2aa9",
+      "bytes": 468012,
+      "mtime_ns": 1788862958733507300
+    },
+    "images/night-reference.png.json": {
+      "sha256": "854bec77142874ab1986057aacf51f313c7e439010070466cffd2a6df45c2d87",
+      "bytes": 45538,
+      "mtime_ns": 1788862958743701900
+    },
+    "night-reference.log": {
+      "sha256": "4c8b53571aafcc7833ac8165c252345b5f80cc7a0cdc1aef43c1baf5dd318738",
+      "bytes": 357,
+      "mtime_ns": 1788862958743701900
+    },
+    "night-reference-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788862952316408000
+    },
+    "stages/night-reference.json": {
+      "sha256": "797719df3aadb708a6a6ca3a59c54051f3d83336531c88fdcebd004c811b367c",
+      "bytes": 1347,
+      "mtime_ns": 1788862967897725900
+    },
+    "images/night-back.png": {
+      "sha256": "6089b6e6b7d13ca3e46a3ab95abe51aaa91d78e4e18ca0fdca7a8f156d135337",
+      "bytes": 315120,
+      "mtime_ns": 1788862982750904000
+    },
+    "images/night-back.png.json": {
+      "sha256": "c9fd572e18f86621d8920590fb37cf0000d867ed5090cbf33eb806d405fddc2a",
+      "bytes": 45528,
+      "mtime_ns": 1788862982759761900
+    },
+    "night-back.log": {
+      "sha256": "2600f63578e9e5ee8ec2524cd9fb1bba86f0faa20f0790e7d1b2dd5109c991f4",
+      "bytes": 348,
+      "mtime_ns": 1788862982759761900
+    },
+    "night-back-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788862976622962500
+    },
+    "stages/night-back.json": {
+      "sha256": "7f6c38addb388ffb9b493e90eba6df9abe10ee25275e49d87200a7d5f313e621",
+      "bytes": 1323,
+      "mtime_ns": 1788862991528256700
+    }
+  },
+  "visual_acceptance_proven": false,
+  "scope": "Actual temporary20l native Blender island geometry with21c lighting/material study. Explicit runtime AMBIENT_SOURCE_COLOR correction, effective ambient source/color and local lamp records. Retains all21b shaders, clouds and moon geometry. Two affected night reference/reverse GPU views. Not production integration, full weather or reference acceptance.",
+  "completed_utc": "2026-09-08T10:23:20.567776+00:00"
+}

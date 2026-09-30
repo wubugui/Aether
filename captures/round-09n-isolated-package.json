@@ -1,0 +1,233 @@
+{
+  "checks": [
+    {
+      "details": null,
+      "name": "flight HUD initializes with live instruments and navigation font",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "208 complete world-space Blender terrain chunks",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "39 independent native environment prefabs, including the western mesa",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "Windows package excludes historical whole-world models and reference image",
+      "passed": true
+    },
+    {
+      "details": 208,
+      "name": "terrain has active physics colliders",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "airship collider generated from actual balloon geometry",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 39.23486328125,
+        "expected": 39.2347412109375
+      },
+      "name": "actual mesh / collision / height agreement at (240.0, -96.0)",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 195.650634765625,
+        "expected": 195.650512695313
+      },
+      "name": "actual mesh / collision / height agreement at (1060.0, -2940.0)",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 69.7646484375,
+        "expected": 69.7647705078125
+      },
+      "name": "actual mesh / collision / height agreement at (1450.0, -3270.0)",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 559.990600585938,
+        "expected": 559.995422363281
+      },
+      "name": "actual mesh / collision / height agreement at (2670.0, 1200.0)",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 19.10791015625,
+        "expected": 19.10791015625
+      },
+      "name": "actual mesh / collision / height agreement at (-1650.0, 2870.0)",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 0.0,
+        "expected": 0.0
+      },
+      "name": "actual mesh / collision / height agreement at (768.1, -900.0)",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 0.0,
+        "expected": 0.0
+      },
+      "name": "actual mesh / collision / height agreement at (767.9, -900.0)",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 22.705322265625,
+        "expected": 22.7052001953125
+      },
+      "name": "actual mesh / collision / height agreement at (5375.9, 1650.0)",
+      "passed": true
+    },
+    {
+      "details": {
+        "actual": 22.7109375,
+        "expected": 22.7109375
+      },
+      "name": "actual mesh / collision / height agreement at (5376.1, 1650.0)",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "smoothed camera corrects actual assembled cliff obstruction at orbit 3.14159265358979",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "smoothed camera corrects actual assembled cliff obstruction at orbit 2.04203522483337",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "smoothed camera corrects actual assembled cliff obstruction at orbit 4.24115008234622",
+      "passed": true
+    },
+    {
+      "details": 11.0464477539063,
+      "name": "physical W throttle input accelerates the body",
+      "passed": true
+    },
+    {
+      "details": [
+        150.905014038086,
+        -0.682
+      ],
+      "name": "E ascent and D steering work",
+      "passed": true
+    },
+    {
+      "details": 15.2710647583008,
+      "name": "actual world-space flight displacement",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "forward velocity follows the modeled ship nose",
+      "passed": true
+    },
+    {
+      "details": 0.0,
+      "name": "Space brakes to a stable hover",
+      "passed": true
+    },
+    {
+      "details": 3.85061264038086,
+      "name": "sea collision prevents descending through the world",
+      "passed": true
+    },
+    {
+      "details": 0.895,
+      "name": "impact produces damage feedback",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "cannot refill fuel away from a dock",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "dock rejects an unsafe approach speed",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "low-speed docking succeeds",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "dock repairs, refuels and records exploration progress",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "dock platform is a physical modeled surface",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "3D flight ring grants progress and disappears",
+      "passed": true
+    },
+    {
+      "details": 60,
+      "name": "terrain continues outside the initial region",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "streamed terrain has matching collision",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "streamed terrain uses the same outward normals and front-face winding as imported Blender terrain",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "camera can orbit to the opposite side of the ship",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "rescue resets position and motion",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "save and restore persist flight state using an isolated test file",
+      "passed": true
+    }
+  ],
+  "core_chunks": 208,
+  "model_placements": 56328,
+  "passed": true,
+  "provenance": {
+    "engine": "4.5.1-stable (official)",
+    "packaged": true,
+    "run_id": "09n-package-isolation-diagnostic",
+    "sha256": {
+      "D:/test6/captures/validation_runs/09n-20260905T161234Z-a3d41934c99b490c9399cdf3a824da38/package/Aether.exe": "78ccc576e8f8bffd7ef6ad6f36ebd72a41e609a1052225a55b3407c96ea84065",
+      "D:/test6/captures/validation_runs/09n-20260905T161234Z-a3d41934c99b490c9399cdf3a824da38/package/Aether.pck": "b58d3705e97100704c745a358a179b7cddae69a1a38f9ed72e872cfb771c26ca",
+      "res://assets/mountain_kit.json": "8b5b6fbe3f86a6b849d9fd6a2b87bf0fefe6dd1323f91f35cae97ba300196940"
+    },
+    "utc": "2026-09-05T16:31:11"
+  }
+}

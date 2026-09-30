@@ -1,0 +1,40 @@
+{
+	"checks": [
+		{
+			"name": "Native scene save and reopen retain the selected terrain material",
+			"passed": true
+		},
+		{
+			"name": "World startup preserves the reopened artist terrain material",
+			"passed": true
+		},
+		{
+			"name": "Unedited terrain keeps its existing native default material",
+			"passed": true
+		},
+		{
+			"name": "Production World file remains unchanged",
+			"passed": true
+		},
+		{
+			"name": "All other native ground tiles retain their selected default material",
+			"passed": true
+		},
+		{
+			"name": "Generated terrain uses the same native ground material",
+			"passed": true
+		},
+		{
+			"name": "Non-terrain scatter keeps the separate world material",
+			"passed": true
+		}
+	],
+	"default_material": "res://materials/terrain.tres",
+	"native_tiles": 208,
+	"passed": true,
+	"run_id": "18c-native-material-20260908T062423Z-e13cc07350264b9d800603025868e010",
+	"runtime_sha256": "1a2c531d8da8f5db991722bb637c4b7f061dccfd6c8004f560918feab8d42263",
+	"saved_fixture": "res://captures/native_material_checks/2026-09-08T14-26-18-1758/EditedWorld.tscn",
+	"scope": "GPU native scene material save, reopen and real World startup. No release or visual acceptance.",
+	"source_world_sha256": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8"
+}

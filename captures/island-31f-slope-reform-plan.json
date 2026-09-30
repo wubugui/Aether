@@ -1,0 +1,59 @@
+{
+  "scope": "31f local native sculpt of31e current whole rear shell: lower/turn original high flank, spread middle slope across old junction, and turn seaward mouth/low root together. Three authored bounded spherical cosine displacements; no new convex filler and no repeated bisection. Local waterline may move; full occupied support and discrete mesh checks required.",
+  "source": "captures/lantern_island_study_31e/island_c.blend",
+  "brushes": [
+    {
+      "name": "Lower and turn high original flank",
+      "source31d_anchor": 997,
+      "center": [
+        1.8143999576568604,
+        9.427762031555176,
+        9.673336029052734
+      ],
+      "radius_m": 4.4,
+      "delta_xyz": [
+        -1.6,
+        0.9,
+        -1.35
+      ],
+      "continuum_displacement_lipschitz_upper_bound": 0.8134960586609037
+    },
+    {
+      "name": "Spread old mid slope across adjoining shoulder",
+      "source31d_anchor": 409,
+      "center": [
+        -4.970585823059082,
+        6.294712066650391,
+        5.014765739440918
+      ],
+      "radius_m": 4.5,
+      "delta_xyz": [
+        -0.4,
+        1.6,
+        0.7
+      ],
+      "continuum_displacement_lipschitz_upper_bound": 0.6254028837526525
+    },
+    {
+      "name": "Turn local seaward cleft mouth and low root together",
+      "source31d_anchor": 388,
+      "center": [
+        -5.793421745300293,
+        12.48392105102539,
+        0.5509111881256104
+      ],
+      "radius_m": 5.0,
+      "delta_xyz": [
+        -1.4,
+        -1.8,
+        0.35
+      ],
+      "continuum_displacement_lipschitz_upper_bound": 0.7247825151367692
+    }
+  ],
+  "notes": [
+    "Each center independently mapped from named old31d anchor to actual31e saved mesh coordinates.",
+    "Historical convex inputs do not directly describe final sculpted exterior.",
+    "Continuum Lipschitz bound is design information, not replacement for discrete mesh intersection validation."
+  ]
+}

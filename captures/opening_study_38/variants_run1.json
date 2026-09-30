@@ -1,0 +1,23 @@
+[
+ {"name":"base"},
+ {"name":"v1_neutral","replace":[
+   ["EMISSION*=mix(vec3(1.13,.92,.59),","EMISSION*=mix(vec3(1.,1.,1.),"],
+   ["ALBEDO*=mix(vec3(1.05,.91,.67),","ALBEDO*=mix(vec3(1.,1.,1.),"],
+   ["EMISSION*vec3(.87,.94,.78)+vec3(1.1,.68,.23)*sun_reflection","EMISSION*vec3(1.,1.,1.)+vec3(.55,.52,.45)*sun_reflection"]]},
+ {"name":"v2_green","replace":[
+   ["EMISSION*=mix(vec3(1.13,.92,.59),","EMISSION*=mix(vec3(1.,1.,1.),"],
+   ["ALBEDO*=mix(vec3(1.05,.91,.67),","ALBEDO*=mix(vec3(1.,1.,1.),"],
+   ["EMISSION*vec3(.87,.94,.78)+vec3(1.1,.68,.23)*sun_reflection","EMISSION*vec3(1.,1.,1.)+vec3(.55,.52,.45)*sun_reflection"],
+   ["vec3 dry=vec3(.73,.745,.46);","vec3 dry=vec3(.62,.72,.36);"],
+   ["vec3 meadow=vec3(.46,.565,.345);","vec3 meadow=vec3(.40,.58,.27);"]],
+  "params":{"study_haze":[0.60,0.72,0.85]}},
+ {"name":"v3_green_cool","replace":[
+   ["EMISSION*=mix(vec3(1.13,.92,.59),","EMISSION*=mix(vec3(.97,1.,1.03),"],
+   ["ALBEDO*=mix(vec3(1.05,.91,.67),","ALBEDO*=mix(vec3(.98,1.,1.02),"],
+   ["EMISSION*vec3(.87,.94,.78)+vec3(1.1,.68,.23)*sun_reflection","EMISSION*vec3(.97,1.,1.04)+vec3(.55,.52,.45)*sun_reflection"],
+   ["vec3 dry=vec3(.73,.745,.46);","vec3 dry=vec3(.58,.70,.34);"],
+   ["vec3 meadow=vec3(.46,.565,.345);","vec3 meadow=vec3(.36,.54,.25);"]],
+  "params":{"study_haze":[0.66,0.78,0.90]},
+  "env":{"fog_light_color":[0.78,0.87,0.95,1.0]},
+  "sun":{"light_color":[1.0,0.98,0.94,1.0]}}
+]

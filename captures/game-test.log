@@ -1,0 +1,36 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+
+WORLD READY: 208 terrain chunks, 21157 modeled placements, 6 ports
+PASS 208 complete world-space Blender terrain chunks 
+PASS 16 native environment model types 
+PASS terrain has active physics colliders 25
+PASS airship collider generated from actual balloon geometry 
+PASS actual mesh / collision / height agreement at (240.0, -96.0) { "expected": 97.4383717596015, "actual": 97.438232421875 }
+PASS actual mesh / collision / height agreement at (1060.0, -2940.0) { "expected": 475.221357709546, "actual": 475.210693359375 }
+PASS actual mesh / collision / height agreement at (1450.0, -3270.0) { "expected": 438.044277668166, "actual": 438.038208007813 }
+PASS actual mesh / collision / height agreement at (2670.0, 1200.0) { "expected": 605.716283887987, "actual": 605.718017578125 }
+PASS actual mesh / collision / height agreement at (-1650.0, 2870.0) { "expected": 0.0, "actual": 0.0 }
+PASS actual mesh / collision / height agreement at (768.1, -900.0) { "expected": 5.7467276813174, "actual": 5.743408203125 }
+PASS actual mesh / collision / height agreement at (767.9, -900.0) { "expected": 5.76487030475687, "actual": 5.765625 }
+PASS actual mesh / collision / height agreement at (5375.9, 1650.0) { "expected": 38.0429564750373, "actual": 38.0419921875 }
+PASS actual mesh / collision / height agreement at (5376.1, 1650.0) { "expected": 38.0364814098516, "actual": 38.03564453125 }
+PASS physical W throttle input accelerates the body 12.2117919921875
+PASS E ascent and D steering work [154.241668701172, -0.759]
+PASS actual world-space flight displacement 18.8710708618164
+PASS forward velocity follows the modeled ship nose 
+PASS Space brakes to a stable hover 0.0
+PASS sea collision prevents descending through the world 3.85061264038086
+PASS impact produces damage feedback 0.895
+PASS cannot refill fuel away from a dock 
+PASS dock rejects an unsafe approach speed 
+PASS low-speed docking succeeds 
+PASS dock repairs, refuels and records exploration progress 
+PASS dock platform is a physical modeled surface 
+PASS 3D flight ring grants progress and disappears 
+PASS terrain continues outside the initial region 73
+PASS streamed terrain has matching collision 
+PASS streamed terrain uses the same outward normals and front-face winding as imported Blender terrain 
+PASS camera can orbit to the opposite side of the ship 
+PASS rescue resets position and motion 
+PASS save and restore persist flight state using an isolated test file 
+GAME VALIDATION: 32/32 passed

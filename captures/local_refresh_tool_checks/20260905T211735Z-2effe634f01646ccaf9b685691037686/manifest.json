@@ -1,0 +1,205 @@
+{
+  "passed": true,
+  "scope": "Parameter plans and real Blender partial-export fixture, no production refresh or full game validation. Native route export remains a separate read-only Godot step.",
+  "directory": "D:\\test6\\captures\\local_refresh_tool_checks\\20260905T211735Z-2effe634f01646ccaf9b685691037686",
+  "checks": [
+    {
+      "passed": true,
+      "name": "Godot selection function executes without errors",
+      "detail": {
+        "exit_code": 0
+      }
+    },
+    {
+      "name": "legacy full kit still includes terrain",
+      "passed": true
+    },
+    {
+      "name": "six selected assets do not include terrain by default",
+      "passed": true
+    },
+    {
+      "name": "six selected assets plus explicit terrain",
+      "passed": true
+    },
+    {
+      "name": "include-terrain without asset preserves full kit",
+      "passed": true
+    },
+    {
+      "name": "duplicate selection refreshes once",
+      "passed": true
+    },
+    {
+      "name": "reject selection before writes: [\"--asset=cliff_crown\", \"--asset=misspelled\", \"--include-terrain\"]",
+      "passed": true
+    },
+    {
+      "name": "reject selection before writes: [\"--asset=\"]",
+      "passed": true
+    },
+    {
+      "name": "reject selection before writes: [\"--asset\"]",
+      "passed": true
+    },
+    {
+      "name": "reject selection before writes: [\"--include-terrain=true\"]",
+      "passed": true
+    },
+    {
+      "name": "reject selection before writes: [\"--include-terrian\"]",
+      "passed": true
+    },
+    {
+      "name": "selection does not mutate original manifests",
+      "passed": true
+    },
+    {
+      "passed": true,
+      "name": "actual installer rejects late wrong name before backend/build",
+      "detail": {
+        "exit_code": 2
+      }
+    },
+    {
+      "passed": true,
+      "name": "invalid installer creates no backup directories",
+      "detail": null
+    },
+    {
+      "passed": true,
+      "name": "road plan selects only requested native route names",
+      "detail": null
+    },
+    {
+      "passed": true,
+      "name": "selected output paths, native sources, positions, metadata retained",
+      "detail": null
+    },
+    {
+      "passed": true,
+      "name": "unselected manifest and order preserved",
+      "detail": null
+    },
+    {
+      "passed": true,
+      "name": "default road build includes all three routes",
+      "detail": null
+    },
+    {
+      "passed": true,
+      "name": "repeated road CLI parameters",
+      "detail": null
+    },
+    {
+      "passed": true,
+      "name": "late wrong road name fails before any Blender/file operation",
+      "detail": null
+    },
+    {
+      "passed": true,
+      "name": "selected/unselected path collision rejected before writes",
+      "detail": null
+    },
+    {
+      "passed": true,
+      "name": "real Blender partial build succeeds",
+      "detail": {
+        "exit_code": 0
+      }
+    },
+    {
+      "passed": true,
+      "name": "selected GLB really regenerated: Trail_Crownreach",
+      "detail": null
+    },
+    {
+      "passed": true,
+      "name": "selected native Blend really regenerated: Trail_Crownreach",
+      "detail": null
+    },
+    {
+      "passed": true,
+      "name": "selected GLB really regenerated: Trail_HillHamlet",
+      "detail": null
+    },
+    {
+      "passed": true,
+      "name": "selected native Blend really regenerated: Trail_HillHamlet",
+      "detail": null
+    },
+    {
+      "passed": true,
+      "name": "byte-identical unselected/native authoring resource: assets/land_details/custom_Trail_Amberfield.glb",
+      "detail": null
+    },
+    {
+      "passed": true,
+      "name": "byte-identical unselected/native authoring resource: blender/road_kit/custom_Trail_Amberfield.blend",
+      "detail": null
+    },
+    {
+      "passed": true,
+      "name": "byte-identical unselected/native authoring resource: assets/road_routes.json",
+      "detail": null
+    },
+    {
+      "passed": true,
+      "name": "byte-identical unselected/native authoring resource: scenes/world/World.tscn",
+      "detail": null
+    },
+    {
+      "passed": true,
+      "name": "byte-identical unselected/native authoring resource: assets/road_kit.json",
+      "detail": null
+    },
+    {
+      "passed": true,
+      "name": "reports update selected entries and preserve Amberfield report",
+      "detail": null
+    },
+    {
+      "passed": true,
+      "name": "existing custom output paths used without creating default-path duplicates",
+      "detail": null
+    },
+    {
+      "passed": true,
+      "name": "all production models/scenes/materials/authoring files unchanged",
+      "detail": {
+        "protected_files": 3436,
+        "changed": []
+      }
+    }
+  ],
+  "source_sha256": {
+    "tools/install_cliff_kit.gd": "8682e5ac83b8941b2cabb3a2c3e05fe30fd871cebaee1b69ed0c2fbfa6d44086",
+    "blender/build_road_kit.py": "51be4049bdfe9ca060f2172a04b5f234ea4671daf1f281371d6f871c2a9c445d"
+  },
+  "artifacts": {
+    ".gdignore": "f005caba49a31edb985b746d306edd31c3197294c4fbe88af3da6cfab758db67",
+    "blender-selected-error.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "blender-selected.log": "03672d3c42698bb6be08a531f45cfd231fc3494638726448d6ec2977dc7aaba0",
+    "godot-invalid-error.log": "94407ff65306d96d01cb06b246a8142904f5f94ec921556f8ab4a55f8294a2ed",
+    "godot-invalid.log": "7fce11019bc285c51061f1ab778a1a772b8989fd120b8add21d6124bf8af570a",
+    "godot-plan-error.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "godot-plan.gd": "dc5a126472e9f81eaf3a57d34632d7c39f6526a3481efb1a87b7daa9e9b4a133",
+    "godot-plan.json": "cb9b3c515aefa36643909f82a74e8c836c96caf0b1e148573f869c7f36512221",
+    "godot-plan.log": "7fce11019bc285c51061f1ab778a1a772b8989fd120b8add21d6124bf8af570a",
+    "protected-before.json": "f2a2c6a68275268db123dfd5bb22e882bd9cb7d4f0300b7d12435127d7393abd",
+    "road_fixture/assets/road_kit.json": "0b6980047f88e5941eb72d906fa0b4db785ad6f5c1fc21a85ca7c2da975803d1",
+    "road_fixture/assets/road_routes.json": "e3c3e7754f7564c3220d0aa9fee4459577975609a09a4c24fd631d6e43f9c2d9",
+    "road_fixture/assets/land_details/custom_Trail_Amberfield.glb": "f45ee376b1c9cd6edec8c4f2547550ce9c166e36c311d017c1c2d298dcba1921",
+    "road_fixture/assets/land_details/custom_Trail_Crownreach.glb": "d32e6c7caf6aecddb6528659bb5ef86fa81a59037e11cd9d4928f0a24c3cabb4",
+    "road_fixture/assets/land_details/custom_Trail_HillHamlet.glb": "301b13f995c82165d8e94190971e52862ce817d248ab008ea0492bdcfefcaada",
+    "road_fixture/blender/build_road_kit.py": "51be4049bdfe9ca060f2172a04b5f234ea4671daf1f281371d6f871c2a9c445d",
+    "road_fixture/blender/terrain_topology.py": "360392349efaa43304371b198e37aa0175b992db5d5dfab1298dc7d151a9f4f0",
+    "road_fixture/blender/road_kit/custom_Trail_Amberfield.blend": "cb72666aeb3c00e6a7c1da7ce16dea91120543b1f698a1e3e9c1dd0c0e69e839",
+    "road_fixture/blender/road_kit/custom_Trail_Crownreach.blend": "0d76731723319122c36038fd4faf9252070b051ee219bb5a5ddf63116a1315e0",
+    "road_fixture/blender/road_kit/custom_Trail_Crownreach.blend1": "b0bdccec91a493e91f1bd4e5d402f064a5965da47e8420a19bdb8a4276d3b5e4",
+    "road_fixture/blender/road_kit/custom_Trail_HillHamlet.blend": "b6493287fa0814f2e7d490ff923a2d7985cb692b45f4946eb413d4d117b6f0cd",
+    "road_fixture/blender/road_kit/custom_Trail_HillHamlet.blend1": "67566cb2ff1821c7ca5659d6614b7127a5a2850e9ff00edfb32c9d9c104e3fac",
+    "road_fixture/captures/road-authoring-validation.json": "f8f27e0e93a5751dd782788b19deecd2b1af09cf0bb7852463c03ed4eae00280",
+    "road_fixture/scenes/world/World.tscn": "45323c911e4fa313a91ea94bd006971633c6947415ac49bb9d74597ce007be5d"
+  }
+}

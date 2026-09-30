@@ -1,0 +1,62 @@
+{
+	"checks": [
+		{
+			"name": "World contains engine instances without embedded world geometry",
+			"passed": true
+		},
+		{
+			"name": "208 independently reusable terrain scenes",
+			"passed": true
+		},
+		{
+			"name": "Every terrain tile retains a model import and Godot collision resource",
+			"passed": true
+		},
+		{
+			"name": "Saved vegetation has nonzero physical scale",
+			"passed": true
+		},
+		{
+			"name": "Saved vegetation retains distinct instance positions",
+			"passed": true
+		},
+		{
+			"name": "House move survives save and reopen",
+			"passed": true
+		},
+		{
+			"name": "Dock marker move survives save and reopen",
+			"passed": true
+		},
+		{
+			"name": "Copied prefab remains independent with its own collider",
+			"passed": true
+		},
+		{
+			"name": "Saved MultiMesh instance and parent edits persist",
+			"passed": true
+		},
+		{
+			"name": "Runtime reads edited port from scene rather than old layout JSON",
+			"passed": true
+		},
+		{
+			"name": "Vegetation collision follows the saved MultiMesh transform",
+			"passed": true
+		},
+		{
+			"name": "Copied house collider follows the engine scene instance",
+			"passed": true
+		},
+		{
+			"name": "Game startup preserves editor-authored house placement",
+			"passed": true
+		},
+		{
+			"name": "Persistence test leaves authored world unchanged",
+			"passed": true
+		}
+	],
+	"passed": true,
+	"world_sha256": "5cb800a34b34cd2ec9652e857b2eba29a33ceff0bd2bc9f54f047850165d0053"
+}

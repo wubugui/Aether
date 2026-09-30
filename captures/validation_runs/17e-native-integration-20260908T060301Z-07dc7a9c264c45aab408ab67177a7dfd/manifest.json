@@ -1,0 +1,642 @@
+{
+  "schema_version": 1,
+  "run_id": "17e-native-integration-20260908T060301Z-07dc7a9c264c45aab408ab67177a7dfd",
+  "round": "17e-native-integration",
+  "started_utc": "2026-09-08T06:03:01.047645+00:00",
+  "workspace": "E:\\FeiTing",
+  "run_directory": "E:\\FeiTing\\captures\\validation_runs\\17e-native-integration-20260908T060301Z-07dc7a9c264c45aab408ab67177a7dfd",
+  "status": "passed",
+  "passed": true,
+  "export_windows_requested": false,
+  "capture_views_requested": true,
+  "expected_counts": {
+    "game-test": 36,
+    "cliff-tour-test": 6,
+    "cliffs-contact": 21,
+    "road-surfaces": 40642,
+    "geology": 18
+  },
+  "stages": [
+    {
+      "name": "import",
+      "run_id": "17e-native-integration-20260908T060301Z-07dc7a9c264c45aab408ab67177a7dfd",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--headless",
+        "--editor",
+        "--path",
+        "E:\\FeiTing",
+        "--import",
+        "--quit"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788847386682127000,
+      "started_utc": "2026-09-08T06:03:06.682127+00:00",
+      "input_manifest_sha256": null,
+      "exit_code": 0,
+      "finished_ns": 1788847397319718800,
+      "finished_utc": "2026-09-08T06:03:17.328042+00:00"
+    },
+    {
+      "name": "refresh-selected-cliffs",
+      "run_id": "17e-native-integration-20260908T060301Z-07dc7a9c264c45aab408ab67177a7dfd",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "tools/install_cliff_kit.gd",
+        "--",
+        "--asset=cliff_front_columns",
+        "--asset=cliff_western_slab"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788847397350189100,
+      "started_utc": "2026-09-08T06:03:17.350189+00:00",
+      "input_manifest_sha256": null,
+      "exit_code": 0,
+      "finished_ns": 1788847407188984200,
+      "finished_utc": "2026-09-08T06:03:27.194980+00:00"
+    },
+    {
+      "name": "capture-opening",
+      "run_id": "17e-native-integration-20260908T060301Z-07dc7a9c264c45aab408ab67177a7dfd",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--",
+        "--capture",
+        "--view=opening",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\17e-native-integration-20260908T060301Z-07dc7a9c264c45aab408ab67177a7dfd\\images\\opening.png",
+        "--validation-run=17e-native-integration-20260908T060301Z-07dc7a9c264c45aab408ab67177a7dfd"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788847427260795900,
+      "started_utc": "2026-09-08T06:03:47.260795+00:00",
+      "input_manifest_sha256": "bad506e8af4be071eb5ea176ff5d8571c0245e626c08310afa087ec51a1d1747",
+      "exit_code": 0,
+      "finished_ns": 1788847432431164800,
+      "image": "images/opening.png",
+      "finished_utc": "2026-09-08T06:03:58.682868+00:00"
+    },
+    {
+      "name": "capture-cliff-side",
+      "run_id": "17e-native-integration-20260908T060301Z-07dc7a9c264c45aab408ab67177a7dfd",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--",
+        "--capture",
+        "--view=cliff-side",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\17e-native-integration-20260908T060301Z-07dc7a9c264c45aab408ab67177a7dfd\\images\\cliff-side.png",
+        "--validation-run=17e-native-integration-20260908T060301Z-07dc7a9c264c45aab408ab67177a7dfd"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788847445381218200,
+      "started_utc": "2026-09-08T06:04:05.381218+00:00",
+      "input_manifest_sha256": "bad506e8af4be071eb5ea176ff5d8571c0245e626c08310afa087ec51a1d1747",
+      "exit_code": 0,
+      "finished_ns": 1788847450487784100,
+      "image": "images/cliff-side.png",
+      "finished_utc": "2026-09-08T06:04:16.821654+00:00"
+    },
+    {
+      "name": "capture-cliff-back",
+      "run_id": "17e-native-integration-20260908T060301Z-07dc7a9c264c45aab408ab67177a7dfd",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--",
+        "--capture",
+        "--view=cliff-back",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\17e-native-integration-20260908T060301Z-07dc7a9c264c45aab408ab67177a7dfd\\images\\cliff-back.png",
+        "--validation-run=17e-native-integration-20260908T060301Z-07dc7a9c264c45aab408ab67177a7dfd"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788847463000028500,
+      "started_utc": "2026-09-08T06:04:23.000028+00:00",
+      "input_manifest_sha256": "bad506e8af4be071eb5ea176ff5d8571c0245e626c08310afa087ec51a1d1747",
+      "exit_code": 0,
+      "finished_ns": 1788847468341618700,
+      "image": "images/cliff-back.png",
+      "finished_utc": "2026-09-08T06:04:35.211230+00:00"
+    },
+    {
+      "name": "capture-reverse",
+      "run_id": "17e-native-integration-20260908T060301Z-07dc7a9c264c45aab408ab67177a7dfd",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--",
+        "--capture",
+        "--view=reverse",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\17e-native-integration-20260908T060301Z-07dc7a9c264c45aab408ab67177a7dfd\\images\\reverse.png",
+        "--validation-run=17e-native-integration-20260908T060301Z-07dc7a9c264c45aab408ab67177a7dfd"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788847482248924200,
+      "started_utc": "2026-09-08T06:04:42.248924+00:00",
+      "input_manifest_sha256": "bad506e8af4be071eb5ea176ff5d8571c0245e626c08310afa087ec51a1d1747",
+      "exit_code": 0,
+      "finished_ns": 1788847488313177400,
+      "image": "images/reverse.png",
+      "finished_utc": "2026-09-08T06:04:55.025835+00:00"
+    },
+    {
+      "name": "game-test",
+      "run_id": "17e-native-integration-20260908T060301Z-07dc7a9c264c45aab408ab67177a7dfd",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--",
+        "--game-test",
+        "--validation-run=17e-native-integration-20260908T060301Z-07dc7a9c264c45aab408ab67177a7dfd"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788847501620610900,
+      "started_utc": "2026-09-08T06:05:01.620610+00:00",
+      "input_manifest_sha256": "bad506e8af4be071eb5ea176ff5d8571c0245e626c08310afa087ec51a1d1747",
+      "exit_code": 0,
+      "finished_ns": 1788847514873766500,
+      "report": "reports/game-test.json",
+      "report_contract_passed": true,
+      "finished_utc": "2026-09-08T06:05:21.233459+00:00"
+    },
+    {
+      "name": "cliff-tour-test",
+      "run_id": "17e-native-integration-20260908T060301Z-07dc7a9c264c45aab408ab67177a7dfd",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--",
+        "--cliff-tour-test",
+        "--validation-run=17e-native-integration-20260908T060301Z-07dc7a9c264c45aab408ab67177a7dfd"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788847527473656000,
+      "started_utc": "2026-09-08T06:05:27.473656+00:00",
+      "input_manifest_sha256": "bad506e8af4be071eb5ea176ff5d8571c0245e626c08310afa087ec51a1d1747",
+      "exit_code": 0,
+      "finished_ns": 1788847542073185000,
+      "report": "reports/cliff-tour-test.json",
+      "report_contract_passed": true,
+      "finished_utc": "2026-09-08T06:05:48.332529+00:00"
+    },
+    {
+      "name": "cliffs-contact",
+      "run_id": "17e-native-integration-20260908T060301Z-07dc7a9c264c45aab408ab67177a7dfd",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "tools/verify_cliff_flight.gd",
+        "--",
+        "--validation-run=17e-native-integration-20260908T060301Z-07dc7a9c264c45aab408ab67177a7dfd"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788847554664766000,
+      "started_utc": "2026-09-08T06:05:54.664766+00:00",
+      "input_manifest_sha256": "bad506e8af4be071eb5ea176ff5d8571c0245e626c08310afa087ec51a1d1747",
+      "exit_code": 0,
+      "finished_ns": 1788847557465896100,
+      "report": "reports/cliffs-contact.json",
+      "report_contract_passed": true,
+      "finished_utc": "2026-09-08T06:06:03.778459+00:00"
+    },
+    {
+      "name": "cliff-ground-rims",
+      "run_id": "17e-native-integration-20260908T060301Z-07dc7a9c264c45aab408ab67177a7dfd",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "tools/verify_cliff_ground_rims.gd",
+        "--",
+        "--validation-run=17e-native-integration-20260908T060301Z-07dc7a9c264c45aab408ab67177a7dfd"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788847570446581400,
+      "started_utc": "2026-09-08T06:06:10.446581+00:00",
+      "input_manifest_sha256": "bad506e8af4be071eb5ea176ff5d8571c0245e626c08310afa087ec51a1d1747",
+      "exit_code": 0,
+      "finished_ns": 1788847574272714900,
+      "report": "reports/cliff-ground-rims.json",
+      "report_contract_passed": true,
+      "finished_utc": "2026-09-08T06:06:20.270751+00:00"
+    },
+    {
+      "name": "road-surfaces",
+      "run_id": "17e-native-integration-20260908T060301Z-07dc7a9c264c45aab408ab67177a7dfd",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "tools/verify_road_surfaces.gd",
+        "--",
+        "--validation-run=17e-native-integration-20260908T060301Z-07dc7a9c264c45aab408ab67177a7dfd"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788847586419630700,
+      "started_utc": "2026-09-08T06:06:26.419630+00:00",
+      "input_manifest_sha256": "bad506e8af4be071eb5ea176ff5d8571c0245e626c08310afa087ec51a1d1747",
+      "exit_code": 0,
+      "finished_ns": 1788847590375236400,
+      "report": "reports/road-surfaces.json",
+      "report_contract_passed": true,
+      "finished_utc": "2026-09-08T06:06:36.661819+00:00"
+    },
+    {
+      "name": "geology",
+      "run_id": "17e-native-integration-20260908T060301Z-07dc7a9c264c45aab408ab67177a7dfd",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\MIGRATION_20260906\\external\\python\\Python310\\python.exe",
+        "tools/verify_geology_assets.py"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788847602745773200,
+      "started_utc": "2026-09-08T06:06:42.745773+00:00",
+      "input_manifest_sha256": "bad506e8af4be071eb5ea176ff5d8571c0245e626c08310afa087ec51a1d1747",
+      "exit_code": 0,
+      "finished_ns": 1788847603009155100,
+      "report": "reports/geology.json",
+      "report_contract_passed": true,
+      "provenance": {
+        "run_id": "17e-native-integration-20260908T060301Z-07dc7a9c264c45aab408ab67177a7dfd",
+        "method": "fresh report plus every asset SHA256 and frozen inputs",
+        "report_mtime_ns": 1788847602995734300
+      },
+      "finished_utc": "2026-09-08T06:06:49.113173+00:00"
+    }
+  ],
+  "artifacts": {
+    "source-backup/assets/cliff_kit.json": {
+      "sha256": "75e6b82f24e1dad23c7e3576cebdb6b85f789fa3b328660cfa563918b7bb0cb9",
+      "bytes": 4157,
+      "mtime_ns": 1788844324902698200
+    },
+    "source-backup/assets/models/cliff_western_slab.glb": {
+      "sha256": "47112e869a56cf3424f4b85ee047a51711fdfa1fa46bb5c06ea83ebc12e80612",
+      "bytes": 23136,
+      "mtime_ns": 1788644382000000000
+    },
+    "source-backup/blender/cliff_kit/cliff_western_slab.blend": {
+      "sha256": "492769aa3cd07ab13e004ab84a32f11761c592f484904dfa331d5a81105e03d2",
+      "bytes": 526838,
+      "mtime_ns": 1788644382000000000
+    },
+    "source-backup/assets/models/cliff_front_columns.glb": {
+      "sha256": "667a5fcc083a828b2b9d6e516920be3952f8fb6e41427523a377a9f5f0b58e3f",
+      "bytes": 25788,
+      "mtime_ns": 1788844025927203700
+    },
+    "source-backup/blender/cliff_kit/cliff_front_columns.blend": {
+      "sha256": "37312a29ef9e568b0748021567126dabdc605edb057f34dba6d971326a167a38",
+      "bytes": 477263,
+      "mtime_ns": 1788844025929264800
+    },
+    "preparation/integrate_foreground_17e.py": {
+      "sha256": "9f19fa8f2f3f6fb0ff3deeeffd9b27faf380e34727013c1e9e150cb2aeb961f6",
+      "bytes": 7609,
+      "mtime_ns": 1788847379222444300
+    },
+    "preparation/round-17e-independent-review.md": {
+      "sha256": "0668f81a6d8a5181adac8863d1ce5794e7608b5d92db8e413b5cad0dd072a097",
+      "bytes": 3968,
+      "mtime_ns": 1788847311681417500
+    },
+    "preparation/round-17e-projected-surface-gate.json": {
+      "sha256": "d1576701f65ce6569ba7e3c0b1dcb356e5dfdc87003604adee021c795c00fd69",
+      "bytes": 2556,
+      "mtime_ns": 1788846575108845400
+    },
+    "preparation/manifest.json": {
+      "sha256": "17337e1e8aef10fb3a0a9ca03aa5317a09cdc63eb7ccf39c133920033eb1873a",
+      "bytes": 8186,
+      "mtime_ns": 1788846574166528500
+    },
+    "preparation-inputs.json": {
+      "sha256": "598235c36b2b3e79688711e6ade719b12142d591b3fc0531b804011013282665",
+      "bytes": 604265,
+      "mtime_ns": 1788847386668439100
+    },
+    "import.log": {
+      "sha256": "5662ff1b6f14436938051f2691fa13ba6504c4ebb53f7b4c116aef22851f8db4",
+      "bytes": 3522,
+      "mtime_ns": 1788847394495023400
+    },
+    "import-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788847386683181000
+    },
+    "stages/import.json": {
+      "sha256": "0807bb7baa6cf79e7196e08dad4edf072091c04a54921c04dafcdfd49f82e69a",
+      "bytes": 611,
+      "mtime_ns": 1788847397332298100
+    },
+    "refresh-selected-cliffs.log": {
+      "sha256": "ee63ab9e49c48c77fcd9a173d396214d77a53a657b37653ca4bb87863efe2859",
+      "bytes": 380,
+      "mtime_ns": 1788847406978954300
+    },
+    "refresh-selected-cliffs-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788847397353397400
+    },
+    "stages/refresh-selected-cliffs.json": {
+      "sha256": "38aa58603e97605aab7f24555f7c68d85116ad94295be216d1f2393c06fb4059",
+      "bytes": 694,
+      "mtime_ns": 1788847407197008100
+    },
+    "preparation-changes.json": {
+      "sha256": "a7970962ce04b02e4e8302642e50ba7b48c6d30a0f6a8f67d9c10d9da4abf725",
+      "bytes": 4389,
+      "mtime_ns": 1788847413863484100
+    },
+    "inputs.json": {
+      "sha256": "bad506e8af4be071eb5ea176ff5d8571c0245e626c08310afa087ec51a1d1747",
+      "bytes": 731263,
+      "mtime_ns": 1788847420536917200
+    },
+    "images/opening.png": {
+      "sha256": "c5e4213a496cdf0f5576e4ec1073e3574ab384acd01814876b0350c8c0fc207e",
+      "bytes": 747384,
+      "mtime_ns": 1788847432113505600
+    },
+    "capture-opening.log": {
+      "sha256": "3779ac3cb4b291856ba130c1a66293b07fedfee935758e1258f23a8f43dab39c",
+      "bytes": 520,
+      "mtime_ns": 1788847432116027300
+    },
+    "capture-opening-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788847427261795200
+    },
+    "stages/capture-opening.json": {
+      "sha256": "24ffc8cf8c1c4eac6a76749aaedb884166c0a514803c3a4fd26d609543b195bb",
+      "bytes": 949,
+      "mtime_ns": 1788847438684369000
+    },
+    "images/cliff-side.png": {
+      "sha256": "3ec51a337fad3198feff77a0aa5d30d95ff5b7dad2b255c2cd28a99168f25491",
+      "bytes": 896506,
+      "mtime_ns": 1788847450162482200
+    },
+    "capture-cliff-side.log": {
+      "sha256": "b12435768f88cbc4f45b7e00e2c21b8e16c9dbbfdce70de6cd4a2621b2dae9d8",
+      "bytes": 526,
+      "mtime_ns": 1788847450164014800
+    },
+    "capture-cliff-side-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788847445383777300
+    },
+    "stages/capture-cliff-side.json": {
+      "sha256": "5bf7f2fb1c811dcab7aae703c8d361f9913289c66c96ec05fe961415255c6a58",
+      "bytes": 961,
+      "mtime_ns": 1788847456825433000
+    },
+    "images/cliff-back.png": {
+      "sha256": "22e99a32142803fa24b2cff7cd9f9e7b38c70a74ae80dd4f2a3c40cb421af3e8",
+      "bytes": 850295,
+      "mtime_ns": 1788847467935758800
+    },
+    "capture-cliff-back.log": {
+      "sha256": "c44348ac65a8cdd455f2c8f33e9ba17f55d325d64b2413858bc5e15f39b1e54d",
+      "bytes": 516,
+      "mtime_ns": 1788847467936828300
+    },
+    "capture-cliff-back-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788847463001031300
+    },
+    "stages/capture-cliff-back.json": {
+      "sha256": "591d3a46dfe57a019c3fc68ec5a7c361e9de9155ddea35aacb471e01950fc5a8",
+      "bytes": 961,
+      "mtime_ns": 1788847475213297200
+    },
+    "images/reverse.png": {
+      "sha256": "ef9367fb538da9e023e6923fa3c4b5d96718349d55c261b8ea0cdf0134404490",
+      "bytes": 785620,
+      "mtime_ns": 1788847487948088300
+    },
+    "capture-reverse.log": {
+      "sha256": "91965e6e8e8838297063c3590c1bde32c2e7e5248208372f4733b3a874a42b54",
+      "bytes": 508,
+      "mtime_ns": 1788847487950493900
+    },
+    "capture-reverse-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788847482251365500
+    },
+    "stages/capture-reverse.json": {
+      "sha256": "40220816f7714d1f8f326a1816193ad6477a309657d86a1ce973abd722809470",
+      "bytes": 949,
+      "mtime_ns": 1788847495027949400
+    },
+    "previous-reports/game-test.json": {
+      "sha256": "7063049cfd9b85948b00c452bd3b79bd4a7041dd5875fa77aa09f84fb5775f3a",
+      "bytes": 6486,
+      "mtime_ns": 1788844505823603000
+    },
+    "reports/game-test.json": {
+      "sha256": "2c0a2920c6560447b6d7b50e29e728b7887a5fb02e868af0dd5a202136dbbbf7",
+      "bytes": 6486,
+      "mtime_ns": 1788847514530037600
+    },
+    "game-test.log": {
+      "sha256": "968487aead183f5bc612ceac1104aeefeba3f940a4620c690d28ec3c58df2d02",
+      "bytes": 3076,
+      "mtime_ns": 1788847514530037600
+    },
+    "game-test-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788847501621607500
+    },
+    "stages/game-test.json": {
+      "sha256": "07907ce7adbe366eaefb92cbbf58843335bf4b84fa65bf13f8cb5bd2f06f3e3e",
+      "bytes": 811,
+      "mtime_ns": 1788847521235963800
+    },
+    "previous-reports/cliff-tour-test.json": {
+      "sha256": "491c760f3f60049913d31569e15c587ab7df5e32cfe2ff0704649bd13bb3ddcf",
+      "bytes": 44172,
+      "mtime_ns": 1788844549230023100
+    },
+    "reports/cliff-tour-test.json": {
+      "sha256": "e67d82e6420731a3ccc0aecf048d88a2151f16956a7309052c74b766189096fc",
+      "bytes": 45303,
+      "mtime_ns": 1788847541838774300
+    },
+    "cliff-tour-test.log": {
+      "sha256": "81e197a1b8de6da573b0d56e17e69cfa5104ba1e75e06d5472ea4be738740ff1",
+      "bytes": 407,
+      "mtime_ns": 1788847541838774300
+    },
+    "cliff-tour-test-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788847527475566800
+    },
+    "stages/cliff-tour-test.json": {
+      "sha256": "3471fff68481a8be31ce3238d24a10e0501522460cc24702dc433c2bb37dd3f3",
+      "bytes": 829,
+      "mtime_ns": 1788847548334798700
+    },
+    "previous-reports/cliffs-contact.json": {
+      "sha256": "e302cdbd792c255ab08519b83fbd94819a52aa8798fc14f49cd0141b15a4efaf",
+      "bytes": 5972,
+      "mtime_ns": 1788844583083588500
+    },
+    "reports/cliffs-contact.json": {
+      "sha256": "9cfc7c39835caa4ee858996f5ae3df174b60e65371110e8fc38e6f3f20e7f909",
+      "bytes": 5980,
+      "mtime_ns": 1788847557343197300
+    },
+    "cliffs-contact.log": {
+      "sha256": "e3c8a7c46bb4d03aa3a3b6b55fd1cf57cead58c0db797946f152c63650cefeda",
+      "bytes": 4103,
+      "mtime_ns": 1788847557303880100
+    },
+    "cliffs-contact-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788847554665768800
+    },
+    "stages/cliffs-contact.json": {
+      "sha256": "32552239a916eb6d61d370396de76e001a55f3af2ecd4ee8c981c1eb92fe3574",
+      "bytes": 855,
+      "mtime_ns": 1788847563780484800
+    },
+    "previous-reports/cliff-ground-rims.json": {
+      "sha256": "75ca9d0fa1573af0249522dae1ed00375df0e2f25c0941d7fd63eb4b4fa99d47",
+      "bytes": 3050,
+      "mtime_ns": 1788844608273855800
+    },
+    "reports/cliff-ground-rims.json": {
+      "sha256": "077804fffafcbb3b881bbc926894c91f2306b1fbca2a0a213b5c34e7c00eb8cf",
+      "bytes": 3051,
+      "mtime_ns": 1788847574138713000
+    },
+    "cliff-ground-rims.log": {
+      "sha256": "86ee73f4106e8cb321b17a3d790b24dff06d3691a7555e0d3429f904b3a7507a",
+      "bytes": 621,
+      "mtime_ns": 1788847574074302600
+    },
+    "cliff-ground-rims-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788847570448087100
+    },
+    "stages/cliff-ground-rims.json": {
+      "sha256": "10cdd9b1cb8b1fd1153385577fd6e8a62cf942cad5e40b4e2808cfc74de59c4c",
+      "bytes": 866,
+      "mtime_ns": 1788847580272560100
+    },
+    "previous-reports/road-surfaces.json": {
+      "sha256": "c8d427779d749166b7846fde86caea2827ca2aadd0c02bccd8f6ecf797cef50f",
+      "bytes": 2176,
+      "mtime_ns": 1788844633612258300
+    },
+    "reports/road-surfaces.json": {
+      "sha256": "e48ddcfe4655e9211467995c97687dd8cfefbce18bb001bcd02ecca80ef63c77",
+      "bytes": 2176,
+      "mtime_ns": 1788847590251645000
+    },
+    "road-surfaces.log": {
+      "sha256": "b400c15d98e6a101deaf85deac7b56e77aaf7396bcb910fbb42a495dc02a4f72",
+      "bytes": 422,
+      "mtime_ns": 1788847590198378700
+    },
+    "road-surfaces-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788847586420627600
+    },
+    "stages/road-surfaces.json": {
+      "sha256": "c86205c509a48a587b92d160b975fa3efddfb4d8a1bf879b2d595668e870b13c",
+      "bytes": 854,
+      "mtime_ns": 1788847596664397300
+    },
+    "previous-reports/geology.json": {
+      "sha256": "b3a62c1620b2c53735b8e865f4c98447b9c1e1204b7df10a257ee31c0aff1cf8",
+      "bytes": 10432,
+      "mtime_ns": 1788844654020433700
+    },
+    "reports/geology.json": {
+      "sha256": "14993a999e799f472798f815fa5c27c742ac17b1745dc6ba908de606aa0db45a",
+      "bytes": 10443,
+      "mtime_ns": 1788847602995734300
+    },
+    "geology.log": {
+      "sha256": "20c3a0bca7ace8ed4fc31df25e495042f25118bf3f685753014f4d1d651d89f9",
+      "bytes": 707,
+      "mtime_ns": 1788847602995734300
+    },
+    "geology-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788847602747274600
+    },
+    "stages/geology.json": {
+      "sha256": "27d37743df117e1bc18eb106e566a1b9ee384158d369955a4230217127bcf4f2",
+      "bytes": 930,
+      "mtime_ns": 1788847609116827500
+    }
+  },
+  "visual_acceptance_proven": false,
+  "scope": "Two reviewed foreground assets, scoped native prefab/collision and affected foliage refresh, four GPU views and affected source checks. No Windows export or complete visual acceptance.",
+  "candidate_run": "E:\\FeiTing\\captures\\validation_runs\\foreground-17e-20260908T055006Z-348ac27ec16f49c6bc196accd90eba32",
+  "input_count": 3496,
+  "section_surface_gate": {
+    "passed": true,
+    "report_sha256": "d1576701f65ce6569ba7e3c0b1dcb356e5dfdc87003604adee021c795c00fd69",
+    "asset_sha256": {
+      "cliff_crown": "ca61243d3016e3e0c194f20afd072070bb02fb0bf4a83c62dc33983827ca8a62",
+      "cliff_western_slab": "af3c37cca1f4019fbbfa7920da528cbd99f2f2501884105cb7ddd5d8c2842856",
+      "cliff_front_columns": "0c798b85a75abc891cd1764f34ae5c719ddf9a43a69996adc812a2b99773950c",
+      "cliff_shadow_buttress": "6ba023af32cb07980cee5f58a2faccffea17747117c084938b655da5fa742517",
+      "cliff_central_wall": "1830179834bf8beb1a8792f670551b99edfdba4f95b0e8748a207e19acfc30f3"
+    }
+  },
+  "completed_utc": "2026-09-08T06:06:55.237878+00:00"
+}

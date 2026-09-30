@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "D:\test6\captures\local_refresh_tool_checks\20260905T211520Z-15ea98fe287d4c1b91cb52819945733e\road_fixture\blender\build_road_kit.py", line 169, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "D:\test6\captures\local_refresh_tool_checks\20260905T211520Z-15ea98fe287d4c1b91cb52819945733e\road_fixture\blender\build_road_kit.py", line 165, in main
+    reports=[build_route(route,entry,root,sampler,T) for route,entry in zip(routes,entries)]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\test6\captures\local_refresh_tool_checks\20260905T211520Z-15ea98fe287d4c1b91cb52819945733e\road_fixture\blender\build_road_kit.py", line 165, in <listcomp>
+    reports=[build_route(route,entry,root,sampler,T) for route,entry in zip(routes,entries)]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\test6\captures\local_refresh_tool_checks\20260905T211520Z-15ea98fe287d4c1b91cb52819945733e\road_fixture\blender\build_road_kit.py", line 108, in build_route
+    tangent/=np.maximum(np.linalg.norm(tangent,axis=1)[:,None],1e-8)
+numpy.core._exceptions._UFuncOutputCastingError: Cannot cast ufunc 'divide' output from dtype('float64') to dtype('int32') with casting rule 'same_kind'
+
+Error: script failed, file: 'D:\test6\captures\local_refresh_tool_checks\20260905T211520Z-15ea98fe287d4c1b91cb52819945733e\road_fixture\blender\build_road_kit.py', exiting.

@@ -1,0 +1,51 @@
+{
+  "passed": false,
+  "scope": "Five exported section cliff assets: projected upper-surface overlaps and downward folds. Complements the separate manifold and volume check; does not test overlap between placed assets or terrain contact.",
+  "assets": [
+    {
+      "name": "cliff_crown",
+      "passed": true,
+      "sha256": "b9e73bb5e2f328beae342500c914ba95ab2bb12febf1ffb9ec44a3d73b2c1057",
+      "roof_faces": 174,
+      "invalid_projected_faces": 0,
+      "downward_nonfloor_faces": 0,
+      "overlapping_projected_roof_area_m2": 0.0
+    },
+    {
+      "name": "cliff_western_slab",
+      "passed": false,
+      "sha256": "d2eecb201300938f7888e4ebcf62dc1ac078deb207081ebaebe561b5eb9195f5",
+      "roof_faces": 96,
+      "invalid_projected_faces": 0,
+      "downward_nonfloor_faces": 0,
+      "overlapping_projected_roof_area_m2": 1.9312208758547058
+    },
+    {
+      "name": "cliff_front_columns",
+      "passed": true,
+      "sha256": "2fd547a5143a378502e766de8a15f26cc8cf6d3dc4158a4b6672efffd0023c6f",
+      "roof_faces": 154,
+      "invalid_projected_faces": 0,
+      "downward_nonfloor_faces": 0,
+      "overlapping_projected_roof_area_m2": 0.0
+    },
+    {
+      "name": "cliff_shadow_buttress",
+      "passed": true,
+      "sha256": "99c6510e2b8c7a7ece9f656fb31044d663dab9a4c6ddae0363de91c45ad6b25a",
+      "roof_faces": 105,
+      "invalid_projected_faces": 0,
+      "downward_nonfloor_faces": 0,
+      "overlapping_projected_roof_area_m2": 0.0
+    },
+    {
+      "name": "cliff_central_wall",
+      "passed": true,
+      "sha256": "5e3316827472a94d25f9cef5e28df86184bb1f96ca9f1973bd1d2d1072988214",
+      "roof_faces": 109,
+      "invalid_projected_faces": 0,
+      "downward_nonfloor_faces": 0,
+      "overlapping_projected_roof_area_m2": 0.0
+    }
+  ]
+}

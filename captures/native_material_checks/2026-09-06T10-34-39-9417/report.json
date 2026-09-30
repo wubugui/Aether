@@ -1,0 +1,25 @@
+{
+	"checks": [
+		{
+			"name": "Native scene save and reopen retain the selected terrain material",
+			"passed": true
+		},
+		{
+			"name": "World startup preserves the reopened artist terrain material",
+			"passed": true
+		},
+		{
+			"name": "Unedited terrain keeps its existing native default material",
+			"passed": true
+		},
+		{
+			"name": "Production World file remains unchanged",
+			"passed": true
+		}
+	],
+	"passed": true,
+	"runtime_sha256": "c0ac53f86b761d7bf19bbb17dc6addba61173d636ad27ae2c48a250a66535ccd",
+	"saved_fixture": "res://captures/native_material_checks/2026-09-06T10-34-39-9417/EditedWorld.tscn",
+	"scope": "GPU native scene material save, reopen and real World startup. No release or visual acceptance.",
+	"source_world_sha256": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8"
+}

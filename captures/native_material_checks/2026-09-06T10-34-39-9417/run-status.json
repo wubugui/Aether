@@ -1,0 +1,6 @@
+{
+  "passed": false,
+  "reason": "Four assertions passed, but cleanup emitted ERROR: Object is locked and cannot be freed and SCRIPT ERROR: Attempted to free a locked object. The pre-cleanup report does not establish a successful run.",
+  "observed_session": 10854,
+  "fix": "Queue deletion and emit report only after process frames complete; retest in a new directory."
+}

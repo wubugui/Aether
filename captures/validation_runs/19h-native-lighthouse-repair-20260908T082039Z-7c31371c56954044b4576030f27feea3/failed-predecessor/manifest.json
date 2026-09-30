@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "run_id": "19h-native-lighthouse-20260908T081741Z-013b2ef8a2624aa0ad6d56d22e4e0fbe",
+  "round": "19h-native-lighthouse",
+  "started_utc": "2026-09-08T08:17:41.116991+00:00",
+  "workspace": "E:\\FeiTing",
+  "run_directory": "E:\\FeiTing\\captures\\validation_runs\\19h-native-lighthouse-20260908T081741Z-013b2ef8a2624aa0ad6d56d22e4e0fbe",
+  "status": "failed",
+  "passed": false,
+  "export_windows_requested": false,
+  "capture_views_requested": true,
+  "expected_counts": {
+    "game-test": 36
+  },
+  "stages": [
+    {
+      "name": "import",
+      "run_id": "19h-native-lighthouse-20260908T081741Z-013b2ef8a2624aa0ad6d56d22e4e0fbe",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--headless",
+        "--editor",
+        "--path",
+        "E:\\FeiTing",
+        "--import",
+        "--quit"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788855467749586400,
+      "started_utc": "2026-09-08T08:17:47.749586+00:00",
+      "input_manifest_sha256": null,
+      "exit_code": 0,
+      "finished_ns": 1788855479244428400,
+      "finished_utc": "2026-09-08T08:17:59.250951+00:00"
+    },
+    {
+      "name": "derived-install",
+      "run_id": "19h-native-lighthouse-20260908T081741Z-013b2ef8a2624aa0ad6d56d22e4e0fbe",
+      "status": "failed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\19h-native-lighthouse-20260908T081741Z-013b2ef8a2624aa0ad6d56d22e4e0fbe\\preparation\\native_lighthouse_19.gd",
+        "--quit-after",
+        "600",
+        "--",
+        "--mode=install",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\19h-native-lighthouse-20260908T081741Z-013b2ef8a2624aa0ad6d56d22e4e0fbe\\reports\\derived-install.json",
+        "--validation-run=19h-native-lighthouse-20260908T081741Z-013b2ef8a2624aa0ad6d56d22e4e0fbe"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": false,
+      "started_ns": 1788855479268368400,
+      "started_utc": "2026-09-08T08:17:59.268368+00:00",
+      "input_manifest_sha256": null,
+      "exit_code": 0,
+      "finished_ns": 1788855486238360600,
+      "error": "Engine/script error in E:\\FeiTing\\captures\\validation_runs\\19h-native-lighthouse-20260908T081741Z-013b2ef8a2624aa0ad6d56d22e4e0fbe\\derived-install-error.log: ERROR:",
+      "finished_utc": "2026-09-08T08:18:06.266152+00:00"
+    }
+  ],
+  "artifacts": {
+    "preparation-inputs.json": {
+      "sha256": "b441ff5203f1628d9034528791eb6eef4941b47eedcb2faa4afce0bbc3c9cab9",
+      "bytes": 604951,
+      "mtime_ns": 1788855467582649800
+    },
+    "source-backup/assets/models/lighthouse.glb": {
+      "sha256": "27bf2f45f6993ab31d5b690c84bee4875b78be9e7c1b014c424308ddde3d0b38",
+      "bytes": 86636,
+      "mtime_ns": 1788599996000000000
+    },
+    "source-backup/assets/collision/lighthouse.res": {
+      "sha256": "aeb020dac75fb3290edda1941b73b440335340d7711c33b69c97b7732ce60e31",
+      "bytes": 35283,
+      "mtime_ns": 1788601312000000000
+    },
+    "source-backup/assets/meshes/lighthouse.res": {
+      "sha256": "fd63abf04d59e164ad6767b2b4d1286550f36082a3c04cceae712c86e8607343",
+      "bytes": 56097,
+      "mtime_ns": 1788601312000000000
+    },
+    "source-backup/scenes/prefabs/lighthouse.tscn": {
+      "sha256": "845d30d6f0f40527b8c4c434a7bbd22603b100fc0b838c89de7872ee1b1ad1c6",
+      "bytes": 744,
+      "mtime_ns": 1788601312000000000
+    },
+    "source-backup/assets/asset_catalog.json": {
+      "sha256": "c08bd608b2bca025e66fbb82056b5efb9ff88d77d87d70e01c11d24179c81ee5",
+      "bytes": 9814,
+      "mtime_ns": 1788847402429658900
+    },
+    "source-backup/assets/settlement_kit.json": {
+      "sha256": "9ab007ca7e7d8b91e21588157360bb23bc8c3c6c8417537a80ddb6f43417c7f6",
+      "bytes": 209,
+      "mtime_ns": 1788621014000000000
+    },
+    "preparation/integrate_lighthouse_19h.py": {
+      "sha256": "87b53c7d0edfa5dae64cfd1d3e7075a8a7c782bac4e50805ce11dbff76daced1",
+      "bytes": 7698,
+      "mtime_ns": 1788855316054639000
+    },
+    "preparation/round-19h-lighthouse-independent-review.md": {
+      "sha256": "f4d54b625ea6a1bf299e23b66ca56ef4df972a1ad16d8b34b42a3c6c902ac2da",
+      "bytes": 5106,
+      "mtime_ns": 1788855426354389600
+    },
+    "preparation/round-19h-lighthouse-independent-audit.json": {
+      "sha256": "99f4da0e09ce57559cd8d055184b5b73d443e90d9295fd25adfaaae9ad0f3468",
+      "bytes": 31279,
+      "mtime_ns": 1788855355430883500
+    },
+    "preparation/lighthouse.blend": {
+      "sha256": "10540b562966c58df68f6bd7e5030cb0b5e991d0aceb292a318c88215876f000",
+      "bytes": 2023615,
+      "mtime_ns": 1788854928568499900
+    },
+    "preparation/lighthouse.glb": {
+      "sha256": "79b5fd32ec06a3c3cf0fc948e31333c9d374fb018437f2fa630293e266382eb1",
+      "bytes": 270348,
+      "mtime_ns": 1788854928905515200
+    },
+    "preparation/builder.py": {
+      "sha256": "9772fa9587300c411c45ddcfe16be562505b2f3ea0915d82b46b0b9971ada34f",
+      "bytes": 11373,
+      "mtime_ns": 1788854925933199000
+    },
+    "preparation/model-report.json": {
+      "sha256": "5b8491b069afcd25f58e4c539a977bf75acd7c69d536d424ff5a696eff6388c2",
+      "bytes": 722,
+      "mtime_ns": 1788854928905515200
+    },
+    "preparation/native_lighthouse_19.gd": {
+      "sha256": "12f94e862617167b358d48cb14fa7dfbde732c59f18d3fb90f03703bc12a1a22",
+      "bytes": 5907,
+      "mtime_ns": 1788854399904938300
+    },
+    "preparation/capture_native_lighthouse_19.gd": {
+      "sha256": "bf2e29ae5cb45c70689c3ad5a6f8afc6490e148c7b4e1e241e3f3191b9c9a6c5",
+      "bytes": 1736,
+      "mtime_ns": 1788854824588072900
+    },
+    "import.log": {
+      "sha256": "15ac0c6cf12481218600cc59c7980816a1c35248465b2502045072ff9bdf7ede",
+      "bytes": 2751,
+      "mtime_ns": 1788855476320845800
+    },
+    "import-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788855467750596000
+    },
+    "stages/import.json": {
+      "sha256": "70457904d25a72cba4c71e85cba027110f71c0181f6bc0bba59f74e67cccc644",
+      "bytes": 610,
+      "mtime_ns": 1788855479253580600
+    },
+    "derived-install.log": {
+      "sha256": "b3ab5cf1f026374172b3533d2a1f50920a5f676d40a0fd7b06c9705e7aa81170",
+      "bytes": 171,
+      "mtime_ns": 1788855481390732200
+    },
+    "derived-install-error.log": {
+      "sha256": "b33c7f4352afed1b41074e08c4b03b8d674efe74508605cf6069bd3c41df7e1b",
+      "bytes": 52717,
+      "mtime_ns": 1788855486107931500
+    },
+    "stages/derived-install.json": {
+      "sha256": "a2371f7cb4a14846cd20b80ada3f1e8b174812c4cb7df0396184c5cf929e26ed",
+      "bytes": 1236,
+      "mtime_ns": 1788855486273175900
+    }
+  },
+  "visual_acceptance_proven": false,
+  "scope": "Shared lighthouse architecture only: Blender source, material-preserving prefab, full derived mesh/collision, two unchanged placements, seven local GPU views plus opening and 36 gameplay checks. Island/weather/reference completion remains unproven.",
+  "candidate_run": "E:\\FeiTing\\captures\\validation_runs\\lighthouse-19h-20260908T081136Z-5ae8b9c9b2f2432da9e2c4c3ab60f54f",
+  "error": "Engine/script error in E:\\FeiTing\\captures\\validation_runs\\19h-native-lighthouse-20260908T081741Z-013b2ef8a2624aa0ad6d56d22e4e0fbe\\derived-install-error.log: ERROR:",
+  "completed_utc": "2026-09-08T08:18:06.294260+00:00"
+}

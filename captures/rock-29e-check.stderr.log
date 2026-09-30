@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "E:\FeiTing\captures\check_island_29e.py", line 22, in <module>
+    changed=sum(a!=b for a,b in zip(old[terrain]['vertices'][:n],new[terrain]['vertices'][:n]));assert changed==plan['changed_top_vertices']
+                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

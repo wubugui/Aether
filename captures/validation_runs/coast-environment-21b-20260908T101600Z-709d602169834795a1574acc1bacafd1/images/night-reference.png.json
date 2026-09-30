@@ -1,0 +1,1568 @@
+{
+  "camera": {
+    "fov": 70.0,
+    "position": [
+      -2278.0,
+      60.0,
+      -1632.0
+    ],
+    "rotation": [
+      -0.00509163970127702,
+      0.60683274269104,
+      0.0
+    ]
+  },
+  "environment_study": {
+    "ambient_energy": 1.0,
+    "directional_light_energy": 0.850000023841858,
+    "emissive_material_variants": 6,
+    "fog_density": 0.000380000012228265,
+    "material_bindings": [
+      {
+        "candidate_shader": "terrain_native.gdshader",
+        "original_material": "res://materials/terrain.tres",
+        "original_shader": "res://scripts/terrain_native.gdshader"
+      },
+      {
+        "candidate_shader": "world_surface.gdshader",
+        "original_material": "res://materials/world.tres",
+        "original_shader": "res://scripts/world_surface.gdshader"
+      },
+      {
+        "candidate_shader": "cloud_surface.gdshader",
+        "original_material": "res://materials/cloud.tres",
+        "original_shader": "res://scripts/cloud_surface.gdshader"
+      },
+      {
+        "candidate_shader": "open_water.gdshader",
+        "original_material": "res://scenes/environment/Ocean.tscn::ShaderMaterial_sqy22",
+        "original_shader": "res://scripts/open_water.gdshader"
+      },
+      {
+        "candidate_shader": "cliff_surface.gdshader",
+        "original_material": "res://materials/cliff.tres",
+        "original_shader": "res://scripts/cliff_surface.gdshader"
+      },
+      {
+        "candidate_shader": "ship_surface.gdshader",
+        "original_material": "res://materials/ship.tres",
+        "original_shader": "res://scripts/ship_surface.gdshader"
+      },
+      {
+        "candidate_shader": "ship_surface.gdshader",
+        "original_material": "res://materials/flag.tres",
+        "original_shader": "res://scripts/ship_surface.gdshader"
+      }
+    ],
+    "moon_direction": [
+      -0.183916792273521,
+      0.379828155040741,
+      -0.906589865684509
+    ],
+    "native_sky_assets": [
+      {
+        "asset": "cloud_bank_0",
+        "position": [
+          -3250.0,
+          450.0,
+          -2900.0
+        ],
+        "scale": 2.1
+      },
+      {
+        "asset": "cloud_bank_1",
+        "position": [
+          -2500.0,
+          340.0,
+          -3550.0
+        ],
+        "scale": 2.0
+      },
+      {
+        "asset": "cloud_bank_2",
+        "position": [
+          -1700.0,
+          520.0,
+          -3200.0
+        ],
+        "scale": 2.7
+      },
+      {
+        "asset": "cloud_bank_2",
+        "position": [
+          -3850.0,
+          430.0,
+          -4550.0
+        ],
+        "scale": 2.4
+      },
+      {
+        "asset": "cloud_bank_1",
+        "position": [
+          -1250.0,
+          630.0,
+          -5050.0
+        ],
+        "scale": 3.1
+      },
+      {
+        "asset": "cloud_bank_0",
+        "position": [
+          -2500.0,
+          500.0,
+          -6350.0
+        ],
+        "scale": 3.2
+      },
+      {
+        "asset": "cloud_bank_0",
+        "position": [
+          -1950.0,
+          250.0,
+          -2650.0
+        ],
+        "scale": 1.3
+      },
+      {
+        "asset": "moon",
+        "position": [
+          -3933.2509765625,
+          3478.45336914063,
+          -9791.30859375
+        ],
+        "radius_m": 330.0,
+        "scope": "Fixed world position near9000m; angular direction matches reference-camera moon light, finite-distance approximation during flight."
+      }
+    ],
+    "night": true,
+    "scope": "Temporary actual shader, scene light and sky changes; no fullscreen tint. Streaming transitions and other weather states remain unimplemented."
+  },
+  "footing_samples": [
+    {
+      "building": "Lighthouse_island_a",
+      "samples": [
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.09930419921875,
+          "position": [
+            -2357.88354492188,
+            29.5621032714844,
+            -1658.89685058594
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.030670166015625,
+          "position": [
+            -2356.89013671875,
+            29.5621032714844,
+            -1655.00671386719
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.5,
+          "position": [
+            -2355.89697265625,
+            29.5621032714844,
+            -1651.11645507813
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.0828857421875,
+          "position": [
+            -2353.99340820313,
+            29.5621032714844,
+            -1659.89013671875
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.5,
+          "position": [
+            -2353.0,
+            29.5621032714844,
+            -1656.0
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.472061157226563,
+          "position": [
+            -2352.00659179688,
+            29.5621032714844,
+            -1652.10986328125
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.5,
+          "position": [
+            -2350.10302734375,
+            29.5621032714844,
+            -1660.88354492188
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.5,
+          "position": [
+            -2349.10986328125,
+            29.5621032714844,
+            -1656.99328613281
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.469863891601563,
+          "position": [
+            -2348.11645507813,
+            29.5621032714844,
+            -1653.10314941406
+          ]
+        }
+      ],
+      "scope": "Bounding footprint 3x3 samples, not an all-surface contact proof."
+    },
+    {
+      "building": "Lighthouse_island_b",
+      "samples": [
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_b_2/island_b_Coast short olive grass/island_b_Coast short olive grass_col",
+          "gap_m": -0.605270385742188,
+          "position": [
+            -2703.50537109375,
+            21.1455078125,
+            -2206.466796875
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_b_2/island_b_Coast short olive grass/island_b_Coast short olive grass_col",
+          "gap_m": -0.495758056640625,
+          "position": [
+            -2703.98608398438,
+            21.1455078125,
+            -2202.48071289063
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_b_2/island_b_Coast short olive grass/island_b_Coast short olive grass_col",
+          "gap_m": -0.4842529296875,
+          "position": [
+            -2704.466796875,
+            21.1455078125,
+            -2198.49462890625
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_b_2/island_b_Coast short olive grass/island_b_Coast short olive grass_col",
+          "gap_m": -0.5640869140625,
+          "position": [
+            -2699.51928710938,
+            21.1455078125,
+            -2205.98608398438
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_b_2/island_b_Coast short olive grass/island_b_Coast short olive grass_col",
+          "gap_m": -0.5,
+          "position": [
+            -2700.0,
+            21.1455078125,
+            -2202.0
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_b_2/island_b_Coast short olive grass/island_b_Coast short olive grass_col",
+          "gap_m": -0.488418579101563,
+          "position": [
+            -2700.48071289063,
+            21.1455078125,
+            -2198.01391601563
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_b_2/island_b_Coast short olive grass/island_b_Coast short olive grass_col",
+          "gap_m": -0.499984741210938,
+          "position": [
+            -2695.533203125,
+            21.1455078125,
+            -2205.50537109375
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_b_2/island_b_Coast short olive grass/island_b_Coast short olive grass_col",
+          "gap_m": -0.5,
+          "position": [
+            -2696.01391601563,
+            21.1455078125,
+            -2201.51928710938
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_b_2/island_b_Coast short olive grass/island_b_Coast short olive grass_col",
+          "gap_m": -0.436203002929688,
+          "position": [
+            -2696.49462890625,
+            21.1455078125,
+            -2197.533203125
+          ]
+        }
+      ],
+      "scope": "Bounding footprint 3x3 samples, not an all-surface contact proof."
+    },
+    {
+      "building": "Lighthouse_island_c",
+      "samples": [
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.500823974609375,
+          "position": [
+            -3053.39575195313,
+            17.4855194091797,
+            -2654.59399414063
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.499984741210938,
+          "position": [
+            -3052.99487304688,
+            17.4855194091797,
+            -2650.59912109375
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.5,
+          "position": [
+            -3052.59399414063,
+            17.4855194091797,
+            -2646.60424804688
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.499984741210938,
+          "position": [
+            -3049.40087890625,
+            17.4855194091797,
+            -2654.99487304688
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.5,
+          "position": [
+            -3049.0,
+            17.4855194091797,
+            -2651.0
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.499984741210938,
+          "position": [
+            -3048.59912109375,
+            17.4855194091797,
+            -2647.00512695313
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.450393676757813,
+          "position": [
+            -3045.40600585938,
+            17.4855194091797,
+            -2655.39575195313
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.499984741210938,
+          "position": [
+            -3045.00512695313,
+            17.4855194091797,
+            -2651.40087890625
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.433273315429688,
+          "position": [
+            -3044.60424804688,
+            17.4855194091797,
+            -2647.40600585938
+          ]
+        }
+      ],
+      "scope": "Bounding footprint 3x3 samples, not an all-surface contact proof."
+    },
+    {
+      "building": "Lighthouse_island_d",
+      "samples": [
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.500869750976563,
+          "position": [
+            -2345.29638671875,
+            17.4854736328125,
+            -1812.14172363281
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.500030517578125,
+          "position": [
+            -2342.86645507813,
+            17.4854736328125,
+            -1808.94543457031
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.500045776367188,
+          "position": [
+            -2340.4365234375,
+            17.4854736328125,
+            -1805.74914550781
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.500030517578125,
+          "position": [
+            -2342.10009765625,
+            17.4854736328125,
+            -1814.57153320313
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.5,
+          "position": [
+            -2339.67016601563,
+            17.4854736328125,
+            -1811.37524414063
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.500030517578125,
+          "position": [
+            -2337.240234375,
+            17.4854736328125,
+            -1808.17895507813
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.450393676757813,
+          "position": [
+            -2338.90380859375,
+            17.4854736328125,
+            -1817.00134277344
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.500030517578125,
+          "position": [
+            -2336.47387695313,
+            17.4854736328125,
+            -1813.80505371094
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.43328857421875,
+          "position": [
+            -2334.0439453125,
+            17.4854736328125,
+            -1810.60876464844
+          ]
+        }
+      ],
+      "scope": "Bounding footprint 3x3 samples, not an all-surface contact proof."
+    },
+    {
+      "building": "keeper_house_21",
+      "samples": [
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.440977096557617,
+          "position": [
+            -2346.89916992188,
+            15.993989944458,
+            -1794.21081542969
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.463224411010742,
+          "position": [
+            -2345.42700195313,
+            15.993989944458,
+            -1790.72924804688
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.401090621948242,
+          "position": [
+            -2343.955078125,
+            15.993989944458,
+            -1787.24768066406
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.454923629760742,
+          "position": [
+            -2344.38452148438,
+            15.993989944458,
+            -1795.27392578125
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.454999923706055,
+          "position": [
+            -2342.91259765625,
+            15.993989944458,
+            -1791.79235839844
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.455076217651367,
+          "position": [
+            -2341.44067382813,
+            15.993989944458,
+            -1788.31079101563
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.45509147644043,
+          "position": [
+            -2341.8701171875,
+            15.993989944458,
+            -1796.33703613281
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.455121994018555,
+          "position": [
+            -2340.39819335938,
+            15.993989944458,
+            -1792.85546875
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.45979118347168,
+          "position": [
+            -2338.92602539063,
+            15.993989944458,
+            -1789.37390136719
+          ]
+        }
+      ],
+      "scope": "Bounding footprint 3x3 samples, not an all-surface contact proof."
+    },
+    {
+      "building": "keeper_house_22",
+      "samples": [
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.633596420288086,
+          "position": [
+            -2375.89990234375,
+            21.6585025787354,
+            -1653.40002441406
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.577245712280273,
+          "position": [
+            -2375.89990234375,
+            21.6585025787354,
+            -1648.0
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.632711410522461,
+          "position": [
+            -2375.89990234375,
+            21.6585025787354,
+            -1642.59997558594
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.649999618530273,
+          "position": [
+            -2372.0,
+            21.6585025787354,
+            -1653.40002441406
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.649999618530273,
+          "position": [
+            -2372.0,
+            21.6585025787354,
+            -1648.0
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.650014877319336,
+          "position": [
+            -2372.0,
+            21.6585025787354,
+            -1642.59997558594
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.649999618530273,
+          "position": [
+            -2368.10009765625,
+            21.6585025787354,
+            -1653.40002441406
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.650396347045898,
+          "position": [
+            -2368.10009765625,
+            21.6585025787354,
+            -1648.0
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.692007064819336,
+          "position": [
+            -2368.10009765625,
+            21.6585025787354,
+            -1642.59997558594
+          ]
+        }
+      ],
+      "scope": "Bounding footprint 3x3 samples, not an all-surface contact proof."
+    },
+    {
+      "building": "keeper_house_23",
+      "samples": [
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.552530288696289,
+          "position": [
+            -2333.591796875,
+            26.9612789154053,
+            -1649.03381347656
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.624383926391602,
+          "position": [
+            -2334.27783203125,
+            26.9612789154053,
+            -1644.49536132813
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.552408218383789,
+          "position": [
+            -2334.96362304688,
+            26.9612789154053,
+            -1639.95690917969
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.552515029907227,
+          "position": [
+            -2330.31396484375,
+            26.9612789154053,
+            -1648.53845214844
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.552499771118164,
+          "position": [
+            -2331.0,
+            26.9612789154053,
+            -1644.0
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.552530288696289,
+          "position": [
+            -2331.68603515625,
+            26.9612789154053,
+            -1639.46154785156
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.552499771118164,
+          "position": [
+            -2327.03637695313,
+            26.9612789154053,
+            -1648.04309082031
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.552499771118164,
+          "position": [
+            -2327.72216796875,
+            26.9612789154053,
+            -1643.50463867188
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+          "gap_m": -0.552515029907227,
+          "position": [
+            -2328.408203125,
+            26.9612789154053,
+            -1638.96618652344
+          ]
+        }
+      ],
+      "scope": "Bounding footprint 3x3 samples, not an all-surface contact proof."
+    },
+    {
+      "building": "keeper_house_24",
+      "samples": [
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_b_2/island_b_Coast short olive grass/island_b_Coast short olive grass_col",
+          "gap_m": -0.465740203857422,
+          "position": [
+            -2718.45532226563,
+            16.7464027404785,
+            -2201.05688476563
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_b_2/island_b_Coast short olive grass/island_b_Coast short olive grass_col",
+          "gap_m": -0.458812713623047,
+          "position": [
+            -2718.11010742188,
+            16.7464027404785,
+            -2196.75073242188
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_b_2/island_b_Coast short olive grass/island_b_Coast short olive grass_col",
+          "gap_m": -0.436412811279297,
+          "position": [
+            -2717.76489257813,
+            16.7464027404785,
+            -2192.44458007813
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_b_2/island_b_Coast short olive grass/island_b_Coast short olive grass_col",
+          "gap_m": -0.520000457763672,
+          "position": [
+            -2715.34521484375,
+            16.7464027404785,
+            -2201.30615234375
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_b_2/island_b_Coast short olive grass/island_b_Coast short olive grass_col",
+          "gap_m": -0.520000457763672,
+          "position": [
+            -2715.0,
+            16.7464027404785,
+            -2197.0
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_b_2/island_b_Coast short olive grass/island_b_Coast short olive grass_col",
+          "gap_m": -0.520000457763672,
+          "position": [
+            -2714.65478515625,
+            16.7464027404785,
+            -2192.69384765625
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_b_2/island_b_Coast short olive grass/island_b_Coast short olive grass_col",
+          "gap_m": -0.825740814208984,
+          "position": [
+            -2712.23510742188,
+            16.7464027404785,
+            -2201.55541992188
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_b_2/island_b_Coast short olive grass/island_b_Coast short olive grass_col",
+          "gap_m": -0.697261810302734,
+          "position": [
+            -2711.88989257813,
+            16.7464027404785,
+            -2197.24926757813
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_b_2/island_b_Coast short olive grass/island_b_Coast short olive grass_col",
+          "gap_m": -0.530956268310547,
+          "position": [
+            -2711.54467773438,
+            16.7464027404785,
+            -2192.94311523438
+          ]
+        }
+      ],
+      "scope": "Bounding footprint 3x3 samples, not an all-surface contact proof."
+    },
+    {
+      "building": "keeper_house_25",
+      "samples": [
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.440977096557617,
+          "position": [
+            -3064.13452148438,
+            15.993989944458,
+            -2640.1455078125
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.463224411010742,
+          "position": [
+            -3064.69946289063,
+            15.993989944458,
+            -2636.40795898438
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.401090621948242,
+          "position": [
+            -3065.26416015625,
+            15.993989944458,
+            -2632.67041015625
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.454923629760742,
+          "position": [
+            -3061.43505859375,
+            15.993989944458,
+            -2639.73754882813
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.454999923706055,
+          "position": [
+            -3062.0,
+            15.993989944458,
+            -2636.0
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.455076217651367,
+          "position": [
+            -3062.56494140625,
+            15.993989944458,
+            -2632.26245117188
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.45509147644043,
+          "position": [
+            -3058.73583984375,
+            15.993989944458,
+            -2639.32958984375
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.455121994018555,
+          "position": [
+            -3059.30053710938,
+            15.993989944458,
+            -2635.59204101563
+          ]
+        },
+        {
+          "collider": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+          "gap_m": -0.45979118347168,
+          "position": [
+            -3059.86547851563,
+            15.993989944458,
+            -2631.8544921875
+          ]
+        }
+      ],
+      "scope": "Bounding footprint 3x3 samples, not an all-surface contact proof."
+    }
+  ],
+  "lighthouse_sha256": "79b5fd32ec06a3c3cf0fc948e31333c9d374fb018437f2fa630293e266382eb1",
+  "placements": [
+    {
+      "instance": "island_d",
+      "kind": "island_c",
+      "position": [
+        -2340.0,
+        0,
+        -1810.0
+      ],
+      "yaw": 0.55
+    },
+    {
+      "kind": "island_a",
+      "position": [
+        -2350.0,
+        0,
+        -1650.0
+      ]
+    },
+    {
+      "kind": "island_b",
+      "position": [
+        -2700.0,
+        0,
+        -2200.0
+      ]
+    },
+    {
+      "kind": "island_c",
+      "position": [
+        -3050.0,
+        0,
+        -2650.0
+      ]
+    },
+    {
+      "kind": "reef_ridge",
+      "position": [
+        -2470,
+        0,
+        -1560
+      ],
+      "scale": 1.0,
+      "yaw": 0.3
+    },
+    {
+      "kind": "reef_low",
+      "position": [
+        -2380,
+        0,
+        -1490
+      ],
+      "scale": 0.8,
+      "yaw": 0.8
+    },
+    {
+      "kind": "reef_spire",
+      "position": [
+        -2230,
+        0,
+        -1730
+      ],
+      "scale": 0.8,
+      "yaw": -0.3
+    },
+    {
+      "kind": "reef_ridge",
+      "position": [
+        -2500,
+        0,
+        -1740
+      ],
+      "scale": 1.1,
+      "yaw": -0.5
+    },
+    {
+      "kind": "reef_low",
+      "position": [
+        -2510,
+        0,
+        -1870
+      ],
+      "scale": 0.65,
+      "yaw": 0.5
+    },
+    {
+      "kind": "reef_spire",
+      "position": [
+        -2530,
+        0,
+        -1970
+      ],
+      "scale": 1.0,
+      "yaw": 0.2
+    },
+    {
+      "kind": "reef_ridge",
+      "position": [
+        -2740,
+        0,
+        -1940
+      ],
+      "scale": 1.0,
+      "yaw": -0.8
+    },
+    {
+      "kind": "reef_low",
+      "position": [
+        -2470,
+        0,
+        -2080
+      ],
+      "scale": 1.3,
+      "yaw": 0.4
+    },
+    {
+      "kind": "reef_ridge",
+      "position": [
+        -2780,
+        0,
+        -2390
+      ],
+      "scale": 0.7,
+      "yaw": 0.2
+    },
+    {
+      "kind": "reef_low",
+      "position": [
+        -2870,
+        0,
+        -2410
+      ],
+      "scale": 1.1,
+      "yaw": 0.7
+    },
+    {
+      "kind": "reef_spire",
+      "position": [
+        -3010,
+        0,
+        -2400
+      ],
+      "scale": 1.0,
+      "yaw": -0.2
+    },
+    {
+      "kind": "reef_low",
+      "position": [
+        -2930,
+        0,
+        -2590
+      ],
+      "scale": 0.8,
+      "yaw": 0.8
+    },
+    {
+      "kind": "reef_ridge",
+      "position": [
+        -3180,
+        0,
+        -2740
+      ],
+      "scale": 1.3,
+      "yaw": -0.3
+    },
+    {
+      "island": "island_a",
+      "kind": "lighthouse",
+      "position": [
+        -2353.0,
+        30.0621032714844,
+        -1656.0
+      ],
+      "scale": 1.0,
+      "support": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+      "yaw": 0.25
+    },
+    {
+      "island": "island_b",
+      "kind": "lighthouse",
+      "position": [
+        -2700.0,
+        21.6455078125,
+        -2202.0
+      ],
+      "scale": 1.0,
+      "support": "/root/Skyfarer/LanternCoastStudy/island_b_2/island_b_Coast short olive grass/island_b_Coast short olive grass_col",
+      "yaw": -0.12
+    },
+    {
+      "island": "island_c",
+      "kind": "lighthouse",
+      "position": [
+        -3049.0,
+        17.9855194091797,
+        -2651.0
+      ],
+      "scale": 1.0,
+      "support": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+      "yaw": 0.1
+    },
+    {
+      "island": "island_d",
+      "kind": "lighthouse",
+      "position": [
+        -2339.67016601563,
+        17.9854736328125,
+        -1811.37524414063
+      ],
+      "scale": 1.0,
+      "support": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+      "yaw": 0.650000011920929
+    },
+    {
+      "island": "island_d",
+      "kind": "keeper_house",
+      "position": [
+        -2342.91259765625,
+        16.4489898681641,
+        -1791.79235839844
+      ],
+      "scale": 0.7,
+      "support": "/root/Skyfarer/LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+      "yaw": 0.400000011920929
+    },
+    {
+      "island": "island_a",
+      "kind": "keeper_house",
+      "position": [
+        -2372.0,
+        22.3085021972656,
+        -1648.0
+      ],
+      "scale": 1.0,
+      "support": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+      "yaw": 0.0
+    },
+    {
+      "island": "island_a",
+      "kind": "keeper_house",
+      "position": [
+        -2331.0,
+        27.5137786865234,
+        -1644.0
+      ],
+      "scale": 0.85,
+      "support": "/root/Skyfarer/LanternCoastStudy/island_a_1/island_a_Coast short olive grass/island_a_Coast short olive grass_col",
+      "yaw": -0.15
+    },
+    {
+      "island": "island_b",
+      "kind": "keeper_house",
+      "position": [
+        -2715.0,
+        17.2664031982422,
+        -2197.0
+      ],
+      "scale": 0.8,
+      "support": "/root/Skyfarer/LanternCoastStudy/island_b_2/island_b_Coast short olive grass/island_b_Coast short olive grass_col",
+      "yaw": 0.08
+    },
+    {
+      "island": "island_c",
+      "kind": "keeper_house",
+      "position": [
+        -3062.0,
+        16.4489898681641,
+        -2636.0
+      ],
+      "scale": 0.7,
+      "support": "/root/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass/island_c_Coast short olive grass_col",
+      "yaw": -0.15
+    },
+    {
+      "island": "island_d",
+      "kind": "existing_native_pine",
+      "position": [
+        -2357.27124023438,
+        14.8345642089844,
+        -1804.68933105469
+      ],
+      "scale": 0.72
+    },
+    {
+      "island": "island_d",
+      "kind": "existing_native_pine",
+      "position": [
+        -2358.09594726563,
+        14.3443908691406,
+        -1801.25134277344
+      ],
+      "scale": 0.9
+    },
+    {
+      "island": "island_d",
+      "kind": "existing_native_pine",
+      "position": [
+        -2353.97021484375,
+        15.0794677734375,
+        -1800.26184082031
+      ],
+      "scale": 0.55
+    },
+    {
+      "island": "island_d",
+      "kind": "existing_native_pine",
+      "position": [
+        -2349.55541992188,
+        15.8573303222656,
+        -1795.9306640625
+      ],
+      "scale": 0.8
+    },
+    {
+      "island": "island_d",
+      "kind": "existing_native_pine",
+      "position": [
+        -2334.90014648438,
+        12.3171539306641,
+        -1823.68359375
+      ],
+      "scale": 0.7
+    },
+    {
+      "island": "island_d",
+      "kind": "existing_native_pine",
+      "position": [
+        -2330.87084960938,
+        11.3142395019531,
+        -1823.80798339844
+      ],
+      "scale": 0.6
+    },
+    {
+      "island": "island_d",
+      "kind": "existing_native_pine",
+      "position": [
+        -2322.06909179688,
+        10.664306640625,
+        -1818.06103515625
+      ],
+      "scale": 0.8
+    },
+    {
+      "island": "island_d",
+      "kind": "existing_native_pine",
+      "position": [
+        -2319.22216796875,
+        9.84933471679688,
+        -1816.28759765625
+      ],
+      "scale": 0.55
+    },
+    {
+      "island": "island_a",
+      "kind": "existing_native_pine",
+      "position": [
+        -2385.0,
+        17.1958312988281,
+        -1659.0
+      ],
+      "scale": 0.72
+    },
+    {
+      "island": "island_a",
+      "kind": "existing_native_pine",
+      "position": [
+        -2390.0,
+        16.1161346435547,
+        -1654.0
+      ],
+      "scale": 0.9
+    },
+    {
+      "island": "island_a",
+      "kind": "existing_native_pine",
+      "position": [
+        -2384.0,
+        18.3921051025391,
+        -1648.0
+      ],
+      "scale": 0.55
+    },
+    {
+      "island": "island_a",
+      "kind": "existing_native_pine",
+      "position": [
+        -2381.0,
+        20.039306640625,
+        -1636.0
+      ],
+      "scale": 0.8
+    },
+    {
+      "island": "island_a",
+      "kind": "existing_native_pine",
+      "position": [
+        -2376.0,
+        20.3504180908203,
+        -1630.0
+      ],
+      "scale": 0.65
+    },
+    {
+      "island": "island_a",
+      "kind": "existing_native_pine",
+      "position": [
+        -2334.0,
+        25.5252075195313,
+        -1671.0
+      ],
+      "scale": 0.95
+    },
+    {
+      "island": "island_a",
+      "kind": "existing_native_pine",
+      "position": [
+        -2327.0,
+        25.2899627685547,
+        -1668.0
+      ],
+      "scale": 0.7
+    },
+    {
+      "island": "island_a",
+      "kind": "existing_native_pine",
+      "position": [
+        -2320.0,
+        25.2262878417969,
+        -1664.0
+      ],
+      "scale": 0.6
+    },
+    {
+      "island": "island_a",
+      "kind": "existing_native_pine",
+      "position": [
+        -2332.0,
+        26.4448394775391,
+        -1628.0
+      ],
+      "scale": 0.7
+    },
+    {
+      "island": "island_b",
+      "kind": "existing_native_pine",
+      "position": [
+        -2728.0,
+        15.2503204345703,
+        -2202.80004882813
+      ],
+      "scale": 0.9
+    },
+    {
+      "island": "island_b",
+      "kind": "existing_native_pine",
+      "position": [
+        -2723.80004882813,
+        15.8567962646484,
+        -2198.60009765625
+      ],
+      "scale": 0.55
+    },
+    {
+      "island": "island_b",
+      "kind": "existing_native_pine",
+      "position": [
+        -2721.69995117188,
+        15.1346893310547,
+        -2190.19995117188
+      ],
+      "scale": 0.8
+    },
+    {
+      "island": "island_b",
+      "kind": "existing_native_pine",
+      "position": [
+        -2718.19995117188,
+        14.9466552734375,
+        -2186.0
+      ],
+      "scale": 0.65
+    },
+    {
+      "island": "island_b",
+      "kind": "existing_native_pine",
+      "position": [
+        -2688.80004882813,
+        24.1520538330078,
+        -2214.69995117188
+      ],
+      "scale": 0.95
+    },
+    {
+      "island": "island_b",
+      "kind": "existing_native_pine",
+      "position": [
+        -2683.89990234375,
+        22.9152526855469,
+        -2212.60009765625
+      ],
+      "scale": 0.7
+    },
+    {
+      "island": "island_b",
+      "kind": "existing_native_pine",
+      "position": [
+        -2679.0,
+        20.3429565429688,
+        -2209.80004882813
+      ],
+      "scale": 0.6
+    },
+    {
+      "island": "island_b",
+      "kind": "existing_native_pine",
+      "position": [
+        -2672.69995117188,
+        15.102294921875,
+        -2196.5
+      ],
+      "scale": 0.8
+    },
+    {
+      "island": "island_b",
+      "kind": "existing_native_pine",
+      "position": [
+        -2670.60009765625,
+        14.6051635742188,
+        -2192.30004882813
+      ],
+      "scale": 0.55
+    },
+    {
+      "island": "island_b",
+      "kind": "existing_native_pine",
+      "position": [
+        -2687.39990234375,
+        14.7218017578125,
+        -2184.60009765625
+      ],
+      "scale": 0.7
+    },
+    {
+      "island": "island_c",
+      "kind": "existing_native_pine",
+      "position": [
+        -3067.5,
+        14.8345336914063,
+        -2654.5
+      ],
+      "scale": 0.72
+    },
+    {
+      "island": "island_c",
+      "kind": "existing_native_pine",
+      "position": [
+        -3070.0,
+        14.3444061279297,
+        -2652.0
+      ],
+      "scale": 0.9
+    },
+    {
+      "island": "island_c",
+      "kind": "existing_native_pine",
+      "position": [
+        -3067.0,
+        15.0794525146484,
+        -2649.0
+      ],
+      "scale": 0.55
+    },
+    {
+      "island": "island_c",
+      "kind": "existing_native_pine",
+      "position": [
+        -3065.5,
+        15.8574066162109,
+        -2643.0
+      ],
+      "scale": 0.8
+    },
+    {
+      "island": "island_c",
+      "kind": "existing_native_pine",
+      "position": [
+        -3038.5,
+        12.3172454833984,
+        -2659.0
+      ],
+      "scale": 0.7
+    },
+    {
+      "island": "island_c",
+      "kind": "existing_native_pine",
+      "position": [
+        -3035.0,
+        11.3143310546875,
+        -2657.0
+      ],
+      "scale": 0.6
+    },
+    {
+      "island": "island_c",
+      "kind": "existing_native_pine",
+      "position": [
+        -3030.5,
+        10.664306640625,
+        -2647.5
+      ],
+      "scale": 0.8
+    },
+    {
+      "island": "island_c",
+      "kind": "existing_native_pine",
+      "position": [
+        -3029.0,
+        9.84942626953125,
+        -2644.5
+      ],
+      "scale": 0.55
+    }
+  ],
+  "production_modified": false,
+  "region_mesh_nodes": 196,
+  "run_id": "coast-environment-21b-20260908T101600Z-709d602169834795a1574acc1bacafd1",
+  "scope": "Actual temporary 3D geometry in existing world daytime; not night/fog/whole reference acceptance.",
+  "site_checks": [
+    {
+      "original_collider": "/root/Skyfarer/World/Ocean/SeaCollision",
+      "position": [
+        -2340.0,
+        0.0,
+        -1810.0
+      ],
+      "scope": "Original center sea surface before candidate assembly; proposed geography, not original-map reconstruction proof.",
+      "site": "island_d"
+    }
+  ],
+  "view": "reference-coast-near",
+  "world_sha256": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8"
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "run_id": "crownreach37a-20260909T032320Z-d9672fdc78794d1ebe2b19765707a25f",
+  "round": "crownreach37a",
+  "started_utc": "2026-09-09T03:23:20.142032+00:00",
+  "workspace": "E:\\FeiTing",
+  "run_directory": "E:\\FeiTing\\captures\\validation_runs\\crownreach37a-20260909T032320Z-d9672fdc78794d1ebe2b19765707a25f",
+  "status": "failed",
+  "passed": false,
+  "export_windows_requested": false,
+  "capture_views_requested": true,
+  "expected_counts": {
+    "game-test": 36,
+    "packaged-game": 37,
+    "cliffs-contact": 21,
+    "mountains-contact": 33,
+    "road-surfaces": 40642,
+    "tour-test": 7,
+    "stream-test": 4,
+    "cliff-tour-test": 6,
+    "geology": 18
+  },
+  "stages": [
+    {
+      "name": "castle-native-gpu",
+      "run_id": "crownreach37a-20260909T032320Z-d9672fdc78794d1ebe2b19765707a25f",
+      "status": "failed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--audio-driver",
+        "Dummy",
+        "--script",
+        "E:\\FeiTing\\tools\\render_crownreach37a.gd",
+        "--quit-after",
+        "800",
+        "--",
+        "--output-dir=E:\\FeiTing\\captures\\validation_runs\\crownreach37a-20260909T032320Z-d9672fdc78794d1ebe2b19765707a25f\\images"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": false,
+      "started_ns": 1788924200230356700,
+      "started_utc": "2026-09-09T03:23:20.230356+00:00",
+      "input_manifest_sha256": null,
+      "exit_code": 0,
+      "finished_ns": 1788924211126414700,
+      "error": "Engine/script error in E:\\FeiTing\\captures\\validation_runs\\crownreach37a-20260909T032320Z-d9672fdc78794d1ebe2b19765707a25f\\castle-native-gpu-error.log: ERROR:",
+      "finished_utc": "2026-09-09T03:23:31.134564+00:00"
+    }
+  ],
+  "artifacts": {
+    "render_crownreach37a.py": {
+      "sha256": "6dfac22f7041e12584bae88dba9bae6785ea71bbb03003b63ab50d21bdd17cef",
+      "bytes": 1343,
+      "mtime_ns": 1788924198371812500
+    },
+    "render_crownreach37a.gd": {
+      "sha256": "00620e575dea51ca7a55d4ebfd3b4dd8ceda7a734836e4795e63b4b13b2fa670",
+      "bytes": 5316,
+      "mtime_ns": 1788924198370468800
+    },
+    "castle.blend": {
+      "sha256": "8e0f6d5f2def2f43e6db3fdab2bd8af9f7c68983b05842a2925fd303898b5f76",
+      "bytes": 5239351,
+      "mtime_ns": 1788924014534806500
+    },
+    "castle.glb": {
+      "sha256": "69d89b325a8f121c11cde1b795994c0697f5a31fb5d79ebb40d738f064c517ec",
+      "bytes": 2557984,
+      "mtime_ns": 1788924015544417200
+    },
+    "model-report.json": {
+      "sha256": "14e4179f828c3d05fc4667b555562bd664630171ff659e9b4f89835c0a43301c",
+      "bytes": 248559,
+      "mtime_ns": 1788924015590339900
+    },
+    "builder.py": {
+      "sha256": "348dcd8610d5ee18fa01a85a781b30b8c05aff8ae43db72580100fbb27fd21dc",
+      "bytes": 12433,
+      "mtime_ns": 1788924015590339900
+    },
+    "1343.png": {
+      "sha256": "1c0f001d6b204f12115bf31acf954f2dae768d146eaa469ec55a1cbf8508afb6",
+      "bytes": 1839923,
+      "mtime_ns": 1788847334554816900
+    },
+    "castle-native-gpu.log": {
+      "sha256": "01c584e2638e06ae2b94927e4f2923d2bc9525bff8907f332222c3abaab25bff",
+      "bytes": 283,
+      "mtime_ns": 1788924207872498600
+    },
+    "castle-native-gpu-error.log": {
+      "sha256": "a6edae989a5affa124fef14a17149101bf20d6d2bfe89d442e846588703169e8",
+      "bytes": 493,
+      "mtime_ns": 1788924208364757300
+    },
+    "stages/castle-native-gpu.json": {
+      "sha256": "91a4808c0d28bb9910b77fac495bcb1b5222fc23cdc824a534b7eaf07979a264",
+      "bytes": 1008,
+      "mtime_ns": 1788924211137672100
+    }
+  },
+  "visual_acceptance_proven": false,
+  "error": "Engine/script error in E:\\FeiTing\\captures\\validation_runs\\crownreach37a-20260909T032320Z-d9672fdc78794d1ebe2b19765707a25f\\castle-native-gpu-error.log: ERROR:",
+  "completed_utc": "2026-09-09T03:23:31.145065+00:00"
+}

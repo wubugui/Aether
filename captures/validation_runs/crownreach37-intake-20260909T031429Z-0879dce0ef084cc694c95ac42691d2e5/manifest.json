@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "run_id": "crownreach37-intake-20260909T031429Z-0879dce0ef084cc694c95ac42691d2e5",
+  "round": "crownreach37-intake",
+  "started_utc": "2026-09-09T03:14:29.438244+00:00",
+  "workspace": "E:\\FeiTing",
+  "run_directory": "E:\\FeiTing\\captures\\validation_runs\\crownreach37-intake-20260909T031429Z-0879dce0ef084cc694c95ac42691d2e5",
+  "status": "failed",
+  "passed": false,
+  "export_windows_requested": false,
+  "capture_views_requested": true,
+  "expected_counts": {
+    "game-test": 36,
+    "packaged-game": 37,
+    "cliffs-contact": 21,
+    "mountains-contact": 33,
+    "road-surfaces": 40642,
+    "tour-test": 7,
+    "stream-test": 4,
+    "cliff-tour-test": 6,
+    "geology": 18
+  },
+  "stages": [
+    {
+      "name": "central-daylight-intake",
+      "run_id": "crownreach37-intake-20260909T031429Z-0879dce0ef084cc694c95ac42691d2e5",
+      "status": "failed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--audio-driver",
+        "Dummy",
+        "--script",
+        "E:\\FeiTing\\tools\\inspect_crownreach37.gd",
+        "--quit-after",
+        "600",
+        "--",
+        "--output-dir=E:\\FeiTing\\captures\\validation_runs\\crownreach37-intake-20260909T031429Z-0879dce0ef084cc694c95ac42691d2e5\\images"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": false,
+      "started_ns": 1788923669668919900,
+      "started_utc": "2026-09-09T03:14:29.668919+00:00",
+      "input_manifest_sha256": null,
+      "exit_code": 0,
+      "finished_ns": 1788923682741048800,
+      "error": "Engine/script error in E:\\FeiTing\\captures\\validation_runs\\crownreach37-intake-20260909T031429Z-0879dce0ef084cc694c95ac42691d2e5\\central-daylight-intake-error.log: ERROR:",
+      "finished_utc": "2026-09-09T03:14:42.767496+00:00"
+    }
+  ],
+  "artifacts": {
+    "inspect_crownreach37.py": {
+      "sha256": "f0d064152bce26c7c6114ad7fef765c4961999735690f65411b4570cae6bd9fc",
+      "bytes": 1260,
+      "mtime_ns": 1788923666778586300
+    },
+    "inspect_crownreach37.gd": {
+      "sha256": "19b904af70c9958b7ea5047400d1a168454780887e3ebe3f65ef89baa127edb4",
+      "bytes": 2582,
+      "mtime_ns": 1788923666778586300
+    },
+    "1343.png": {
+      "sha256": "1c0f001d6b204f12115bf31acf954f2dae768d146eaa469ec55a1cbf8508afb6",
+      "bytes": 1839923,
+      "mtime_ns": 1788847334554816900
+    },
+    "game.tscn": {
+      "sha256": "4be99633fa80ab9aaa9fb79d3cdf9eea904e8bc68b4b186a38b8739133932eb3",
+      "bytes": 1737,
+      "mtime_ns": 1788616932000000000
+    },
+    "World36c.tscn": {
+      "sha256": "8a192480995f43b7922b3cd0adf046b3c66dc638f4edeee7a499f40e0d1b4827",
+      "bytes": 907120,
+      "mtime_ns": 1788919185284561400
+    },
+    "Game36c.tscn": {
+      "sha256": "5ab6fd082db36a080632042237888da4b8d81e12b2aa2edc7fe8d71e60316bf0",
+      "bytes": 44673130,
+      "mtime_ns": 1788919186735380800
+    },
+    "central-daylight-intake.log": {
+      "sha256": "01c584e2638e06ae2b94927e4f2923d2bc9525bff8907f332222c3abaab25bff",
+      "bytes": 283,
+      "mtime_ns": 1788923680151847600
+    },
+    "central-daylight-intake-error.log": {
+      "sha256": "fe39598b2b15cf522ee19da341f1f7abf8882a73cfdfc3fd72d43ee217294b4e",
+      "bytes": 460,
+      "mtime_ns": 1788923682570133800
+    },
+    "stages/central-daylight-intake.json": {
+      "sha256": "628b5b9152d3460ccb56c2b7925ce40014eda2d8520d7b0fc8f6cdc13efa0fe0",
+      "bytes": 1038,
+      "mtime_ns": 1788923682770488300
+    }
+  },
+  "visual_acceptance_proven": false,
+  "error": "Engine/script error in E:\\FeiTing\\captures\\validation_runs\\crownreach37-intake-20260909T031429Z-0879dce0ef084cc694c95ac42691d2e5\\central-daylight-intake-error.log: ERROR:",
+  "completed_utc": "2026-09-09T03:14:42.783024+00:00"
+}

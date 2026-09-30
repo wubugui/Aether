@@ -1,0 +1,101 @@
+{
+  "started_utc": "2026-09-05T21:39:40.876470+00:00",
+  "stages": [
+    {
+      "name": "model-five-cliffs",
+      "command": [
+        "D:\\test6\\.tools\\blender\\blender-4.5.0-windows-x64\\blender.exe",
+        "-b",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "blender/model_cliff_kit.py",
+        "--",
+        "cliff_crown",
+        "cliff_western_slab",
+        "cliff_front_columns",
+        "cliff_central_wall",
+        "cliff_shadow_buttress"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "model-two-ground-tiles",
+      "command": [
+        "D:\\test6\\.tools\\blender\\blender-4.5.0-windows-x64\\blender.exe",
+        "-b",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "blender/rebuild_terrain_modules.py",
+        "--",
+        "0,-1",
+        "0,0"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "export-saved-native-routes",
+      "command": [
+        "D:\\test6\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "D:\\test6",
+        "--script",
+        "tools/export_road_routes.gd"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "model-two-roads",
+      "command": [
+        "D:\\test6\\.tools\\blender\\blender-4.5.0-windows-x64\\blender.exe",
+        "-b",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "blender/build_road_kit.py",
+        "--",
+        "--road=Trail_Crownreach",
+        "--road=Trail_HillHamlet"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "import-assets",
+      "command": [
+        "D:\\test6\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--headless",
+        "--editor",
+        "--path",
+        "D:\\test6",
+        "--quit"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "refresh-selected-prefabs",
+      "command": [
+        "D:\\test6\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "D:\\test6",
+        "--script",
+        "tools/install_cliff_kit.gd",
+        "--",
+        "--include-terrain",
+        "--asset=cliff_crown",
+        "--asset=cliff_western_slab",
+        "--asset=cliff_front_columns",
+        "--asset=cliff_central_wall",
+        "--asset=cliff_shadow_buttress",
+        "--asset=cliff_eastern_plateau"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "passed": true,
+  "completed_utc": "2026-09-05T21:40:32.269140+00:00",
+  "unchanged_road_files": {
+    "assets/land_details/Trail_Amberfield.glb": "d720be489737357b4ab78051574e1d4d5debda4701fba051f2c4624e09ccd6a9",
+    "blender/road_kit/Trail_Amberfield.blend": "6d8a370735093617448b5e6b5c4aa212ad3c22c7ca82941b855e73b55c96f11d"
+  }
+}

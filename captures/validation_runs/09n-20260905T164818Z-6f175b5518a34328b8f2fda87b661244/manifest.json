@@ -1,0 +1,910 @@
+{
+  "schema_version": 1,
+  "run_id": "09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244",
+  "round": "09n",
+  "started_utc": "2026-09-05T16:48:18.616432+00:00",
+  "workspace": "D:\\test6",
+  "run_directory": "D:\\test6\\captures\\validation_runs\\09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244",
+  "status": "passed",
+  "passed": true,
+  "export_windows_requested": true,
+  "capture_views_requested": true,
+  "expected_counts": {
+    "game-test": 36,
+    "packaged-game": 37,
+    "cliffs-contact": 21,
+    "mountains-contact": 33,
+    "road-surfaces": 40642,
+    "tour-test": 7,
+    "stream-test": 4,
+    "cliff-tour-test": 6,
+    "geology": 18
+  },
+  "stages": [
+    {
+      "name": "prepare-export",
+      "run_id": "09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244",
+      "status": "passed",
+      "command": [
+        "C:\\Users\\wubugui\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "tools/prepare_windows_export.py"
+      ],
+      "cwd": "D:\\test6",
+      "passed": true,
+      "started_ns": 1788626923726073600,
+      "started_utc": "2026-09-05T16:48:43.726073+00:00",
+      "input_manifest_sha256": null,
+      "exit_code": 0,
+      "finished_ns": 1788626925080986400,
+      "finished_utc": "2026-09-05T16:48:45.084660+00:00"
+    },
+    {
+      "name": "import",
+      "run_id": "09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244",
+      "status": "passed",
+      "command": [
+        "D:\\test6\\.tools\\godot\\Godot_v4.5.1-stable_win64_console.exe",
+        "--headless",
+        "--editor",
+        "--path",
+        "D:\\test6",
+        "--import",
+        "--quit"
+      ],
+      "cwd": "D:\\test6",
+      "passed": true,
+      "started_ns": 1788626925120210700,
+      "started_utc": "2026-09-05T16:48:45.120210+00:00",
+      "input_manifest_sha256": null,
+      "exit_code": 0,
+      "finished_ns": 1788626954128014100,
+      "finished_utc": "2026-09-05T16:49:14.133025+00:00"
+    },
+    {
+      "name": "capture-opening",
+      "run_id": "09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244",
+      "status": "passed",
+      "command": [
+        "D:\\test6\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "D:\\test6",
+        "--",
+        "--capture",
+        "--view=opening",
+        "--output=D:\\test6\\captures\\validation_runs\\09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244\\images\\opening.png",
+        "--validation-run=09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244"
+      ],
+      "cwd": "D:\\test6",
+      "passed": true,
+      "started_ns": 1788627043484082300,
+      "started_utc": "2026-09-05T16:50:43.484082+00:00",
+      "input_manifest_sha256": "1e63dac0bfe50c23c0f9a854f81226d83770a825bba15b9464eaa7a9cfa78066",
+      "exit_code": 0,
+      "finished_ns": 1788627060955064400,
+      "image": "images/opening.png",
+      "finished_utc": "2026-09-05T16:51:41.185785+00:00"
+    },
+    {
+      "name": "capture-mountain-back",
+      "run_id": "09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244",
+      "status": "passed",
+      "command": [
+        "D:\\test6\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "D:\\test6",
+        "--",
+        "--capture",
+        "--view=mountain-back",
+        "--output=D:\\test6\\captures\\validation_runs\\09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244\\images\\mountain-back.png",
+        "--validation-run=09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244"
+      ],
+      "cwd": "D:\\test6",
+      "passed": true,
+      "started_ns": 1788627137137693400,
+      "started_utc": "2026-09-05T16:52:17.137693+00:00",
+      "input_manifest_sha256": "1e63dac0bfe50c23c0f9a854f81226d83770a825bba15b9464eaa7a9cfa78066",
+      "exit_code": 0,
+      "finished_ns": 1788627152496464400,
+      "image": "images/mountain-back.png",
+      "finished_utc": "2026-09-05T16:52:59.420109+00:00"
+    },
+    {
+      "name": "capture-cliff-back",
+      "run_id": "09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244",
+      "status": "passed",
+      "command": [
+        "D:\\test6\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "D:\\test6",
+        "--",
+        "--capture",
+        "--view=cliff-back",
+        "--output=D:\\test6\\captures\\validation_runs\\09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244\\images\\cliff-back.png",
+        "--validation-run=09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244"
+      ],
+      "cwd": "D:\\test6",
+      "passed": true,
+      "started_ns": 1788627205175371000,
+      "started_utc": "2026-09-05T16:53:25.175371+00:00",
+      "input_manifest_sha256": "1e63dac0bfe50c23c0f9a854f81226d83770a825bba15b9464eaa7a9cfa78066",
+      "exit_code": 0,
+      "finished_ns": 1788627217811913300,
+      "image": "images/cliff-back.png",
+      "finished_utc": "2026-09-05T16:54:08.573747+00:00"
+    },
+    {
+      "name": "capture-cliff-side",
+      "run_id": "09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244",
+      "status": "passed",
+      "command": [
+        "D:\\test6\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "D:\\test6",
+        "--",
+        "--capture",
+        "--view=cliff-side",
+        "--output=D:\\test6\\captures\\validation_runs\\09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244\\images\\cliff-side.png",
+        "--validation-run=09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244"
+      ],
+      "cwd": "D:\\test6",
+      "passed": true,
+      "started_ns": 1788627276682469500,
+      "started_utc": "2026-09-05T16:54:36.682469+00:00",
+      "input_manifest_sha256": "1e63dac0bfe50c23c0f9a854f81226d83770a825bba15b9464eaa7a9cfa78066",
+      "exit_code": 0,
+      "finished_ns": 1788627291516956800,
+      "image": "images/cliff-side.png",
+      "finished_utc": "2026-09-05T16:55:34.120388+00:00"
+    },
+    {
+      "name": "capture-reverse",
+      "run_id": "09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244",
+      "status": "passed",
+      "command": [
+        "D:\\test6\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "D:\\test6",
+        "--",
+        "--capture",
+        "--view=reverse",
+        "--output=D:\\test6\\captures\\validation_runs\\09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244\\images\\reverse.png",
+        "--validation-run=09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244"
+      ],
+      "cwd": "D:\\test6",
+      "passed": true,
+      "started_ns": 1788627367195946400,
+      "started_utc": "2026-09-05T16:56:07.195946+00:00",
+      "input_manifest_sha256": "1e63dac0bfe50c23c0f9a854f81226d83770a825bba15b9464eaa7a9cfa78066",
+      "exit_code": 0,
+      "finished_ns": 1788627382085965900,
+      "image": "images/reverse.png",
+      "finished_utc": "2026-09-05T16:56:57.914539+00:00"
+    },
+    {
+      "name": "reference-metrics",
+      "run_id": "09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244",
+      "status": "passed",
+      "command": [
+        "C:\\Users\\wubugui\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "tools/compare_reference.py",
+        "--candidate",
+        "D:\\test6\\captures\\validation_runs\\09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244\\images\\opening.png",
+        "--round",
+        "09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244"
+      ],
+      "cwd": "D:\\test6",
+      "passed": true,
+      "started_ns": 1788627457070093400,
+      "started_utc": "2026-09-05T16:57:37.070093+00:00",
+      "input_manifest_sha256": "1e63dac0bfe50c23c0f9a854f81226d83770a825bba15b9464eaa7a9cfa78066",
+      "exit_code": 0,
+      "finished_ns": 1788627463261626200,
+      "report": "reports/reference-metrics.json",
+      "report_contract_passed": true,
+      "finished_utc": "2026-09-05T16:58:36.026333+00:00"
+    },
+    {
+      "name": "game-test",
+      "run_id": "09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244",
+      "status": "passed",
+      "command": [
+        "D:\\test6\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "D:\\test6",
+        "--",
+        "--game-test",
+        "--validation-run=09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244"
+      ],
+      "cwd": "D:\\test6",
+      "passed": true,
+      "started_ns": 1788627560170168300,
+      "started_utc": "2026-09-05T16:59:20.170168+00:00",
+      "input_manifest_sha256": "1e63dac0bfe50c23c0f9a854f81226d83770a825bba15b9464eaa7a9cfa78066",
+      "exit_code": 0,
+      "finished_ns": 1788627583187272900,
+      "report": "reports/game-test.json",
+      "report_contract_passed": true,
+      "finished_utc": "2026-09-05T17:00:03.164719+00:00"
+    },
+    {
+      "name": "tour-test",
+      "run_id": "09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244",
+      "status": "passed",
+      "command": [
+        "D:\\test6\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "D:\\test6",
+        "--",
+        "--tour-test",
+        "--validation-run=09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244"
+      ],
+      "cwd": "D:\\test6",
+      "passed": true,
+      "started_ns": 1788627622016320800,
+      "started_utc": "2026-09-05T17:00:22.016320+00:00",
+      "input_manifest_sha256": "1e63dac0bfe50c23c0f9a854f81226d83770a825bba15b9464eaa7a9cfa78066",
+      "exit_code": 0,
+      "finished_ns": 1788627648676844200,
+      "report": "reports/tour-test.json",
+      "report_contract_passed": true,
+      "finished_utc": "2026-09-05T17:01:21.087582+00:00"
+    },
+    {
+      "name": "stream-test",
+      "run_id": "09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244",
+      "status": "passed",
+      "command": [
+        "D:\\test6\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "D:\\test6",
+        "--",
+        "--stream-test",
+        "--validation-run=09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244"
+      ],
+      "cwd": "D:\\test6",
+      "passed": true,
+      "started_ns": 1788627711095078000,
+      "started_utc": "2026-09-05T17:01:51.095078+00:00",
+      "input_manifest_sha256": "1e63dac0bfe50c23c0f9a854f81226d83770a825bba15b9464eaa7a9cfa78066",
+      "exit_code": 0,
+      "finished_ns": 1788627776268477100,
+      "report": "reports/stream-test.json",
+      "report_contract_passed": true,
+      "finished_utc": "2026-09-05T17:03:27.162974+00:00"
+    },
+    {
+      "name": "cliff-tour-test",
+      "run_id": "09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244",
+      "status": "passed",
+      "command": [
+        "D:\\test6\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "D:\\test6",
+        "--",
+        "--cliff-tour-test",
+        "--validation-run=09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244"
+      ],
+      "cwd": "D:\\test6",
+      "passed": true,
+      "started_ns": 1788627859801148500,
+      "started_utc": "2026-09-05T17:04:19.801148+00:00",
+      "input_manifest_sha256": "1e63dac0bfe50c23c0f9a854f81226d83770a825bba15b9464eaa7a9cfa78066",
+      "exit_code": 0,
+      "finished_ns": 1788627883479735000,
+      "report": "reports/cliff-tour-test.json",
+      "report_contract_passed": true,
+      "finished_utc": "2026-09-05T17:05:11.810811+00:00"
+    },
+    {
+      "name": "cliffs-contact",
+      "run_id": "09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244",
+      "status": "passed",
+      "command": [
+        "D:\\test6\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "D:\\test6",
+        "--script",
+        "tools/verify_cliff_flight.gd",
+        "--",
+        "--validation-run=09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244"
+      ],
+      "cwd": "D:\\test6",
+      "passed": true,
+      "started_ns": 1788627930694692800,
+      "started_utc": "2026-09-05T17:05:30.694692+00:00",
+      "input_manifest_sha256": "1e63dac0bfe50c23c0f9a854f81226d83770a825bba15b9464eaa7a9cfa78066",
+      "exit_code": 0,
+      "finished_ns": 1788627937046369400,
+      "report": "reports/cliffs-contact.json",
+      "report_contract_passed": true,
+      "finished_utc": "2026-09-05T17:05:54.532661+00:00"
+    },
+    {
+      "name": "mountains-contact",
+      "run_id": "09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244",
+      "status": "passed",
+      "command": [
+        "D:\\test6\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "D:\\test6",
+        "--script",
+        "tools/verify_cliff_flight.gd",
+        "--",
+        "--validation-run=09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244",
+        "--mountain-test"
+      ],
+      "cwd": "D:\\test6",
+      "passed": true,
+      "started_ns": 1788627979867093500,
+      "started_utc": "2026-09-05T17:06:19.867093+00:00",
+      "input_manifest_sha256": "1e63dac0bfe50c23c0f9a854f81226d83770a825bba15b9464eaa7a9cfa78066",
+      "exit_code": 0,
+      "finished_ns": 1788627989714307000,
+      "report": "reports/mountains-contact.json",
+      "report_contract_passed": true,
+      "finished_utc": "2026-09-05T17:06:59.083366+00:00"
+    },
+    {
+      "name": "road-surfaces",
+      "run_id": "09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244",
+      "status": "passed",
+      "command": [
+        "D:\\test6\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "D:\\test6",
+        "--script",
+        "tools/verify_road_surfaces.gd",
+        "--",
+        "--validation-run=09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244"
+      ],
+      "cwd": "D:\\test6",
+      "passed": true,
+      "started_ns": 1788628060009156000,
+      "started_utc": "2026-09-05T17:07:40.009156+00:00",
+      "input_manifest_sha256": "1e63dac0bfe50c23c0f9a854f81226d83770a825bba15b9464eaa7a9cfa78066",
+      "exit_code": 0,
+      "finished_ns": 1788628075122699400,
+      "report": "reports/road-surfaces.json",
+      "report_contract_passed": true,
+      "finished_utc": "2026-09-05T17:08:40.244677+00:00"
+    },
+    {
+      "name": "geology",
+      "run_id": "09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244",
+      "status": "passed",
+      "command": [
+        "C:\\Users\\wubugui\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+        "tools/verify_geology_assets.py"
+      ],
+      "cwd": "D:\\test6",
+      "passed": true,
+      "started_ns": 1788628141271075700,
+      "started_utc": "2026-09-05T17:09:01.271075+00:00",
+      "input_manifest_sha256": "1e63dac0bfe50c23c0f9a854f81226d83770a825bba15b9464eaa7a9cfa78066",
+      "exit_code": 0,
+      "finished_ns": 1788628141897225800,
+      "report": "reports/geology.json",
+      "report_contract_passed": true,
+      "provenance": {
+        "run_id": "09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244",
+        "method": "fresh report plus every asset SHA256 and frozen inputs",
+        "report_mtime_ns": 1788628141863776500
+      },
+      "finished_utc": "2026-09-05T17:09:19.346929+00:00"
+    },
+    {
+      "name": "export",
+      "run_id": "09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244",
+      "status": "passed",
+      "command": [
+        "D:\\test6\\.tools\\godot\\Godot_v4.5.1-stable_win64_console.exe",
+        "--headless",
+        "--path",
+        "D:\\test6",
+        "--export-release",
+        "Windows Desktop",
+        "D:\\test6\\captures\\validation_runs\\09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244\\package\\Aether.exe"
+      ],
+      "cwd": "D:\\test6",
+      "passed": true,
+      "started_ns": 1788628174152612800,
+      "started_utc": "2026-09-05T17:09:34.152612+00:00",
+      "input_manifest_sha256": "1e63dac0bfe50c23c0f9a854f81226d83770a825bba15b9464eaa7a9cfa78066",
+      "exit_code": 0,
+      "finished_ns": 1788628188919766800,
+      "finished_utc": "2026-09-05T17:10:04.988739+00:00"
+    },
+    {
+      "name": "packaged-game",
+      "run_id": "09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244",
+      "status": "passed",
+      "command": [
+        "D:\\test6\\captures\\validation_runs\\09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244\\package\\Aether.exe",
+        "--main-pack",
+        "D:\\test6\\captures\\validation_runs\\09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244\\package\\Aether.pck",
+        "--",
+        "--game-test",
+        "--validation-output=D:\\test6\\captures\\validation_runs\\09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244\\outputs\\packaged-game.json",
+        "--validation-run=09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244"
+      ],
+      "cwd": "D:\\test6\\captures\\validation_runs\\09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244\\package",
+      "passed": true,
+      "started_ns": 1788628221563587000,
+      "started_utc": "2026-09-05T17:10:21.563587+00:00",
+      "input_manifest_sha256": "1e63dac0bfe50c23c0f9a854f81226d83770a825bba15b9464eaa7a9cfa78066",
+      "exit_code": 0,
+      "finished_ns": 1788628239988347100,
+      "report": "reports/packaged-game.json",
+      "report_contract_passed": true,
+      "finished_utc": "2026-09-05T17:10:58.813794+00:00"
+    },
+    {
+      "name": "packaged-opening",
+      "run_id": "09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244",
+      "status": "passed",
+      "command": [
+        "D:\\test6\\captures\\validation_runs\\09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244\\package\\Aether.exe",
+        "--main-pack",
+        "D:\\test6\\captures\\validation_runs\\09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244\\package\\Aether.pck",
+        "--",
+        "--capture",
+        "--view=opening",
+        "--output=D:\\test6\\captures\\validation_runs\\09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244\\images\\packaged-opening.png",
+        "--validation-run=09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244"
+      ],
+      "cwd": "D:\\test6\\captures\\validation_runs\\09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244\\package",
+      "passed": true,
+      "started_ns": 1788628279672472900,
+      "started_utc": "2026-09-05T17:11:19.672472+00:00",
+      "input_manifest_sha256": "1e63dac0bfe50c23c0f9a854f81226d83770a825bba15b9464eaa7a9cfa78066",
+      "exit_code": 0,
+      "finished_ns": 1788628292526098100,
+      "image": "images/packaged-opening.png",
+      "finished_utc": "2026-09-05T17:11:57.192658+00:00"
+    }
+  ],
+  "artifacts": {
+    "preparation-inputs.json": {
+      "sha256": "829cb5d18276d8f30dce8dd6d8363b35e245d5fede770b6a5a14f36b1ae61962",
+      "bytes": 603056,
+      "mtime_ns": 1788626923690070300
+    },
+    "prepare-export.log": {
+      "sha256": "debcbfd7c3264d715b12e3e8f3d8845c9965a435fcc1071449827b4e40df545e",
+      "bytes": 109,
+      "mtime_ns": 1788626925013004400
+    },
+    "prepare-export-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788626923731061500
+    },
+    "stages/prepare-export.json": {
+      "sha256": "2cb61b65a7ece41e423cf9d04983bfd00b0b1fe2e1140df320e9f5d827ad4898",
+      "bytes": 553,
+      "mtime_ns": 1788626925089979300
+    },
+    "import.log": {
+      "sha256": "7eb028b37cb708aaad6b7ee14b8f2b6f71d4f288d84e841ae4c6b21d0e62f53a",
+      "bytes": 1448,
+      "mtime_ns": 1788626947984765500
+    },
+    "import-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788626925124200100
+    },
+    "stages/import.json": {
+      "sha256": "552eece6db24d628c0f2c1b068fe07aef3b9414329c8e3eee3859be55a56ad21",
+      "bytes": 594,
+      "mtime_ns": 1788626954149978900
+    },
+    "inputs.json": {
+      "sha256": "1e63dac0bfe50c23c0f9a854f81226d83770a825bba15b9464eaa7a9cfa78066",
+      "bytes": 730074,
+      "mtime_ns": 1788627005864948800
+    },
+    "images/opening.png": {
+      "sha256": "0a6a9184ceb8c09c55900017134d8ecbec6332da6737eee2b4a62c814a16d8bb",
+      "bytes": 753249,
+      "mtime_ns": 1788627060246561300
+    },
+    "capture-opening.log": {
+      "sha256": "1326fe7c4ba186e08c99c9760b5c1142a3f2f74813202122ba186e315860dc9e",
+      "bytes": 495,
+      "mtime_ns": 1788627060248556100
+    },
+    "capture-opening-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788627043488071500
+    },
+    "stages/capture-opening.json": {
+      "sha256": "34ea8472d325eb10076c5156749643471c63ec4b8395faef0cf4dc8609a748c8",
+      "bytes": 884,
+      "mtime_ns": 1788627101198015600
+    },
+    "images/mountain-back.png": {
+      "sha256": "790ca5ec75b0b5446adc29be75893a3fa715b3ef05926b59f15688d6cc3a8bda",
+      "bytes": 779251,
+      "mtime_ns": 1788627151881272700
+    },
+    "capture-mountain-back.log": {
+      "sha256": "9148b041b9badb7ac5a5935ed7a946191c7d067a824f8f51978c50712f03fd80",
+      "bytes": 518,
+      "mtime_ns": 1788627151884257900
+    },
+    "capture-mountain-back-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788627137146177000
+    },
+    "stages/capture-mountain-back.json": {
+      "sha256": "010197a2eaf714690915f86bbb62594ad2c2479d1b1cf61c83e93c67c891b825",
+      "bytes": 908,
+      "mtime_ns": 1788627179423681100
+    },
+    "images/cliff-back.png": {
+      "sha256": "47584ec777e5d89732b1fb52d79f5e4f24fcd0a597d51e07019d697b60f52b47",
+      "bytes": 848853,
+      "mtime_ns": 1788627217336398300
+    },
+    "capture-cliff-back.log": {
+      "sha256": "1e902f045faac5ae2dde423a3e1537094f757902c8c3570282f0f97295217238",
+      "bytes": 512,
+      "mtime_ns": 1788627217338393100
+    },
+    "capture-cliff-back-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788627205181596200
+    },
+    "stages/capture-cliff-back.json": {
+      "sha256": "ab09673120eaaa3a383cc6ef08dec2650d6dd83a5edd64aad79fa97c292e2ae4",
+      "bytes": 896,
+      "mtime_ns": 1788627248594405800
+    },
+    "images/cliff-side.png": {
+      "sha256": "6b9601bcacff21579f786a336b5f0acb01f7bfc487389e762cac65d4e8ef4ab0",
+      "bytes": 893095,
+      "mtime_ns": 1788627290909925800
+    },
+    "capture-cliff-side.log": {
+      "sha256": "d7238cdffd80d0cf2b52b5be884c5090090f84043bcfaef30ca22ac39ae41d16",
+      "bytes": 512,
+      "mtime_ns": 1788627290915908500
+    },
+    "capture-cliff-side-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788627276686458700
+    },
+    "stages/capture-cliff-side.json": {
+      "sha256": "122a3ed35fb25610ef836f40f06acb013859f297ac0227e463d78fc46032d6ce",
+      "bytes": 896,
+      "mtime_ns": 1788627334126379900
+    },
+    "images/reverse.png": {
+      "sha256": "9cc3773657a74bb1024aa08fe320bbffb8c968ac8e2d9803e91ccbeccaf0f6ad",
+      "bytes": 785789,
+      "mtime_ns": 1788627381479993000
+    },
+    "capture-reverse.log": {
+      "sha256": "401e769d37aa0cfdc4d291b3cdd841ea51965ec84208bf9566ea46f7638558af",
+      "bytes": 495,
+      "mtime_ns": 1788627381482985100
+    },
+    "capture-reverse-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788627367245243600
+    },
+    "stages/capture-reverse.json": {
+      "sha256": "b21339cae9a71d43a9d25b0b84f084d3d948d6309fdfd3d56cb968df60bafe27",
+      "bytes": 884,
+      "mtime_ns": 1788627417925107600
+    },
+    "reports/reference-metrics.json": {
+      "sha256": "96abfdf1b6a94f52d416c0ee2a19c33bd8ad047a5271d75f7b0830d27584403b",
+      "bytes": 4640,
+      "mtime_ns": 1788627463116254100
+    },
+    "reference-metrics.log": {
+      "sha256": "e2495c195bae8e1ecee05ae869dda7d913ea8e58c7112c380092e0b68d94f00a",
+      "bytes": 330,
+      "mtime_ns": 1788627463117250400
+    },
+    "reference-metrics-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788627457077075200
+    },
+    "stages/reference-metrics.json": {
+      "sha256": "2c27aceba8c7f14a1f0fca1bafd470ab7d7c5692c68e5bd229a870e26ce4b9a8",
+      "bytes": 914,
+      "mtime_ns": 1788627516042290800
+    },
+    "previous-reports/game-test.json": {
+      "sha256": "d36ae7f5d7f52a4461ce9aef2ddb770a493f7fffe33ec54713f7323396bea86b",
+      "bytes": 6466,
+      "mtime_ns": 1788625094704180700
+    },
+    "reports/game-test.json": {
+      "sha256": "b199f9cef49036080d2c46d0790b2affdf8b84d263a2f904d93872588bd181d3",
+      "bytes": 6466,
+      "mtime_ns": 1788627582678257700
+    },
+    "game-test.log": {
+      "sha256": "5dd3ad7dc2a03de68542c32329dafe5c73de91ea18c4792d2258751fa8f807ba",
+      "bytes": 3082,
+      "mtime_ns": 1788627582677260600
+    },
+    "game-test-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788627560183134700
+    },
+    "stages/game-test.json": {
+      "sha256": "111cad5c9fc1c330390cb5bd7b5bd899632582819f45dc90e82ff1d5ab0a11f8",
+      "bytes": 767,
+      "mtime_ns": 1788627603171564000
+    },
+    "previous-reports/tour-test.json": {
+      "sha256": "475faf6b0b6528707875f51f2ddbf8b73b4a93e08a484c39b87b1ad619095691",
+      "bytes": 32678,
+      "mtime_ns": 1788625145701623400
+    },
+    "reports/tour-test.json": {
+      "sha256": "760338349a5a0d4a8e194fbc09cd8b55361e27045ae3ee939c22126fb073ca53",
+      "bytes": 32311,
+      "mtime_ns": 1788627648221656800
+    },
+    "tour-test.log": {
+      "sha256": "41267c478cfde026d52b0cc80065b621f4acdddc7bd80ac0cda4f00b008413ed",
+      "bytes": 371,
+      "mtime_ns": 1788627648220659900
+    },
+    "tour-test-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788627622022304700
+    },
+    "stages/tour-test.json": {
+      "sha256": "8dfb782bb2edc4b818ed58a0d27b3376926c75304b39b7bcabc4fc1c8a451129",
+      "bytes": 767,
+      "mtime_ns": 1788627681112627500
+    },
+    "previous-reports/stream-test.json": {
+      "sha256": "7c944283536d85d99b0f398bc0bab58468211d41b13262c094ca20b4cf5d179d",
+      "bytes": 52146,
+      "mtime_ns": 1788625230268215800
+    },
+    "reports/stream-test.json": {
+      "sha256": "f9b7c4518b890de646177967e9d5800d2c383e24fe3ce6215ef6b8589f470d02",
+      "bytes": 52521,
+      "mtime_ns": 1788627775813798100
+    },
+    "stream-test.log": {
+      "sha256": "7fadee496d1c5f29315e1fc7430ec17cff38f01d77c009d3d3e94cd62a2c28ac",
+      "bytes": 489,
+      "mtime_ns": 1788627775812801000
+    },
+    "stream-test-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788627711102566900
+    },
+    "stages/stream-test.json": {
+      "sha256": "c027204c58946f81d011acbf95ec963036ffda08cabeeccdcd2a99969f9e8543",
+      "bytes": 773,
+      "mtime_ns": 1788627807188028400
+    },
+    "previous-reports/cliff-tour-test.json": {
+      "sha256": "1c0759f543978e09889390e4e0985d5d99476ef74562f072075da3a937b8e768",
+      "bytes": 41017,
+      "mtime_ns": 1788625285619534200
+    },
+    "reports/cliff-tour-test.json": {
+      "sha256": "05c131a558e65573b14d44ba8ffb6e5a3fbd187860ea3cb104106127bba25c83",
+      "bytes": 41914,
+      "mtime_ns": 1788627883037978700
+    },
+    "cliff-tour-test.log": {
+      "sha256": "013f45d843ba2d10388028161e0124ea1d78213dbb274f16b20abeea34a722ba",
+      "bytes": 414,
+      "mtime_ns": 1788627883037978700
+    },
+    "cliff-tour-test-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788627859810540500
+    },
+    "stages/cliff-tour-test.json": {
+      "sha256": "b965a11d0f05948f3e873918cfcf678db359058a865f7bb22fe20d80467ad65b",
+      "bytes": 785,
+      "mtime_ns": 1788627911819786200
+    },
+    "previous-reports/cliffs-contact.json": {
+      "sha256": "95e4fe055997a2154ddd657d328226d1f4cbadd34a592dd3d4723237ae69d614",
+      "bytes": 5975,
+      "mtime_ns": 1788625318104552300
+    },
+    "reports/cliffs-contact.json": {
+      "sha256": "904205b261d2d94b521feee5c002ec93e9a58e94a36dae690b106edff26100c6",
+      "bytes": 5975,
+      "mtime_ns": 1788627936892490700
+    },
+    "cliffs-contact.log": {
+      "sha256": "15df1527715ebd06fe6b22aa9ae8774b33e4bb44dade3ab44f617673630d875a",
+      "bytes": 4124,
+      "mtime_ns": 1788627936851786000
+    },
+    "cliffs-contact-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788627930699677100
+    },
+    "stages/cliffs-contact.json": {
+      "sha256": "f11f28f89a93386b311b132c086882a259f459dc198fc321d5b005513a20bcf7",
+      "bytes": 811,
+      "mtime_ns": 1788627954536686000
+    },
+    "previous-reports/mountains-contact.json": {
+      "sha256": "baa2a31ffe60acd67d4e88ffade13c51becad51b2eb3d24ec4535e39023abe5b",
+      "bytes": 8599,
+      "mtime_ns": 1788625357868831000
+    },
+    "reports/mountains-contact.json": {
+      "sha256": "be571e5233212f218468abd183bc9b533d17fe4dfbb974755d17aa2614c19dc0",
+      "bytes": 8599,
+      "mtime_ns": 1788627989464850400
+    },
+    "mountains-contact.log": {
+      "sha256": "206bbc1ba9749f1ad14de707ab2515094b8189342ce18974e0b361e9bce57e51",
+      "bytes": 6388,
+      "mtime_ns": 1788627989421011500
+    },
+    "mountains-contact-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788627979879247900
+    },
+    "stages/mountains-contact.json": {
+      "sha256": "d7e82706e1a84e9f9d4e8b6b6d8da4ba66e65bb6499a36463f08f23387fb809c",
+      "bytes": 841,
+      "mtime_ns": 1788628019098983500
+    },
+    "previous-reports/road-surfaces.json": {
+      "sha256": "7d3c997fda115d9951200e60bf967ee02e5b12b617b124ad5866548a5af4ad4c",
+      "bytes": 2157,
+      "mtime_ns": 1788625393230579100
+    },
+    "reports/road-surfaces.json": {
+      "sha256": "382733f583f72e03d1fadebc13ad526f34bcef7fa2763a6bfbe0be49711042c6",
+      "bytes": 2157,
+      "mtime_ns": 1788628074850993200
+    },
+    "road-surfaces.log": {
+      "sha256": "e77a4879792fc95c18eea887a633e514ab124281921d5f2102133733b46c5b27",
+      "bytes": 429,
+      "mtime_ns": 1788628074728028300
+    },
+    "road-surfaces-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788628060030099800
+    },
+    "stages/road-surfaces.json": {
+      "sha256": "b9e43c4832ae3c9e74bcdd9207d62754af8ce89c6accdd1433104cd276cd9fc9",
+      "bytes": 810,
+      "mtime_ns": 1788628120249662900
+    },
+    "previous-reports/geology.json": {
+      "sha256": "15108ab3476a79eab66f34b304a433dcbc31779c6d5d02a87dc1401552b99289",
+      "bytes": 10437,
+      "mtime_ns": 1788625421507838000
+    },
+    "reports/geology.json": {
+      "sha256": "15108ab3476a79eab66f34b304a433dcbc31779c6d5d02a87dc1401552b99289",
+      "bytes": 10437,
+      "mtime_ns": 1788628141863776500
+    },
+    "geology.log": {
+      "sha256": "c885a4129719094347b3f25ea4b7755a32e1d256f79883c37bd1f4d1002ef476",
+      "bytes": 706,
+      "mtime_ns": 1788628141864773800
+    },
+    "geology-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788628141276222600
+    },
+    "stages/geology.json": {
+      "sha256": "92bf5d276f6a8d527058c8660a35e8327f2931e6b5d6f07252a15732a0ab9f33",
+      "bytes": 893,
+      "mtime_ns": 1788628159360892000
+    },
+    "package/Aether.exe": {
+      "sha256": "78ccc576e8f8bffd7ef6ad6f36ebd72a41e609a1052225a55b3407c96ea84065",
+      "bytes": 96725504,
+      "mtime_ns": 1788628181770846800
+    },
+    "package/Aether.pck": {
+      "sha256": "b58d3705e97100704c745a358a179b7cddae69a1a38f9ed72e872cfb771c26ca",
+      "bytes": 42764524,
+      "mtime_ns": 1788628186725246300
+    },
+    "export.log": {
+      "sha256": "a38e937a3c6f024abd33de3fc59ec30ae08b8f7de60a1a79329b91003ae97efe",
+      "bytes": 236661,
+      "mtime_ns": 1788628186727240400
+    },
+    "export-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788628174169458900
+    },
+    "stages/export.json": {
+      "sha256": "1ac7e7f658f632dd4f079450bc30b2d7a44a5d0747720de3f302db14748e081c",
+      "bytes": 777,
+      "mtime_ns": 1788628204992729000
+    },
+    "reports/packaged-game.json": {
+      "sha256": "9328c4e3d14cd005dc885fda025d76bbb157ea413f1e96c3a7cec479b18b975a",
+      "bytes": 6253,
+      "mtime_ns": 1788628239428041700
+    },
+    "packaged-game.log": {
+      "sha256": "3bc98756f0a6f5b03c96de189234f515b35ff6cb2d08cc95694befd0da74c837",
+      "bytes": 3164,
+      "mtime_ns": 1788628239428041700
+    },
+    "packaged-game-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788628221568990200
+    },
+    "stages/packaged-game.json": {
+      "sha256": "b12fb5a48896b127bf81325195345a93d098d6ea33a9e4ab1d17f74563b33188",
+      "bytes": 1180,
+      "mtime_ns": 1788628258817783600
+    },
+    "images/packaged-opening.png": {
+      "sha256": "0a6a9184ceb8c09c55900017134d8ecbec6332da6737eee2b4a62c814a16d8bb",
+      "bytes": 753249,
+      "mtime_ns": 1788628292088712000
+    },
+    "packaged-opening.log": {
+      "sha256": "81fa3115e9ee4f0f5f530be5d4c6cb52d1efef93c4f1b6ef920bebb9c2876d6b",
+      "bytes": 515,
+      "mtime_ns": 1788628292089709000
+    },
+    "packaged-opening-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788628279679665800
+    },
+    "stages/packaged-opening.json": {
+      "sha256": "4f17e40a8bee85de40900838c75aa9633aa7c1b03122d569e328bb26f5726edb",
+      "bytes": 1159,
+      "mtime_ns": 1788628317212606300
+    }
+  },
+  "visual_acceptance_proven": false,
+  "preparation_changes": {},
+  "input_count": 3490,
+  "package": {
+    "D:/test6/captures/validation_runs/09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244/package/Aether.exe": {
+      "sha256": "78ccc576e8f8bffd7ef6ad6f36ebd72a41e609a1052225a55b3407c96ea84065",
+      "bytes": 96725504,
+      "mtime_ns": 1788628181770846800
+    },
+    "D:/test6/captures/validation_runs/09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244/package/Aether.pck": {
+      "sha256": "b58d3705e97100704c745a358a179b7cddae69a1a38f9ed72e872cfb771c26ca",
+      "bytes": 42764524,
+      "mtime_ns": 1788628186725246300
+    }
+  },
+  "source_package_image_sha256_equal": true,
+  "completed_utc": "2026-09-05T17:12:30.804968+00:00"
+}
