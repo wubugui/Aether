@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "E:\FeiTing\blender\model_village_paving_24e.py", line 120, in <module>
+    freeze('village_'+group['name'],'Connected real stone courtyard and contour stairs for village '+group['name']+'. Actual headland-derived shared level field, separate thick limestone pavers and buried closed bedding. All door interfaces, ground envelope, widths and fidelity remain to verify in native World.')
+  File "E:\FeiTing\blender\model_village_paving_24e.py", line 103, in freeze
+    if defects:raise RuntimeError('Native geometry rejected: '+str(defects))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Native geometry rejected: [['foreground terrace bedding 14.550 0', 'open/nonmanifold edge'], ['foreground terrace bedding 14.700 0', 'open/nonmanifold edge'], ['foreground terrace bedding 15.150 0', 'zero area'], ['foreground worn stair paver 15.150 -3146 -2802', 'zero area']]
