@@ -1,0 +1,38 @@
+{
+  "source_report": "report.json",
+  "source_report_sha256": "537503b596ebf8b5bc7f651fa01000852fc4cbc6c799a2843f1ab274e7343562",
+  "original_report_preserved": true,
+  "limited_geometry_runtime_passed": true,
+  "requested_motion_all_passed": false,
+  "total_acceptance_passed": false,
+  "complete_physical_flight_passed": false,
+  "hardware_gpu_acceptance": false,
+  "visual_reference_acceptance": false,
+  "failed_requested_motion": [
+    {
+      "collider": "/root/Skyfarer/World/Terrain/Ground_1_-2/Collision",
+      "delta": "(350.0, 0.0, 0.0)",
+      "end": "(1500.0, 10.0, -1000.0)",
+      "label": "original-plus350m",
+      "passed": false,
+      "reference": "1128",
+      "required": true,
+      "safe_fraction": 0.9931640625,
+      "scope": "Camera sphere/ray only, not complete physical airship flight",
+      "start": "(1150.0, 10.0, -1000.0)"
+    },
+    {
+      "collider": "/root/Skyfarer/World/Terrain/Ground_1_-2/Collision",
+      "delta": "(342.7411, 0.0, -70.91196)",
+      "end": "(1642.741, 7.0, -1020.912)",
+      "label": "original-plus350m",
+      "passed": false,
+      "reference": "1129",
+      "required": true,
+      "safe_fraction": 0.55859375,
+      "scope": "Camera sphere/ray only, not complete physical airship flight",
+      "start": "(1300.0, 7.0, -950.0)"
+    }
+  ],
+  "interpretation": "Original report passed covers its check array only, not all required movement probes. Both original +350m lateral motions hit terrain. +150m lateral and +200m lake approach are supplementary camera observations and cannot replace the failed requested paths."
+}

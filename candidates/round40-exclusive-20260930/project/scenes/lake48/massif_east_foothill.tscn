@@ -1,0 +1,105 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/asset_instance.gd" id="1_7nnfv"]
+[ext_resource type="ArrayMesh" path="res://assets/lake48/massif_east_foothill.mesh" id="2_351mi"]
+[ext_resource type="Shape3D" path="res://assets/lake48/massif_east_foothill_collision.res" id="3_0jmrm"]
+
+[sub_resource type="Shader" id="Shader_mgsgr"]
+code = "shader_type spatial;
+uniform vec3 scene_fill=vec3(1.);
+uniform vec3 scene_haze=vec3(.76,.80,.78);
+uniform vec3 scene_sun_direction=vec3(-.48,.82,.30);
+
+
+uniform float storm_flash=0.;
+uniform vec3 storm_camera=vec3(-2350.,420.,-1300.);
+uniform float storm_strength=0.;
+float storm35_mask(vec3 p){
+    float edge=-2350.+150.*sin((p.z+3500.)*.0007);
+    return storm_strength*(1.-smoothstep(-450.,450.,p.x-edge))*(1.-smoothstep(5200.,6800.,abs(p.z+3500.)))*smoothstep(-12000.,-10000.,p.x);
+}
+float storm35_flash(vec3 p){
+    float f=0.;
+    for(int i=0;i<3;i++){
+        vec3 c=vec3(-3450.-float(i)*440.,230.,-4000.-float(i)*1600.);
+        f+=exp(-length((p-c)/vec3(1150.,850.,1150.))*1.6);
+    }
+    return f*storm_flash;
+}
+float storm35_air(vec3 p){
+    vec3 ray=p-storm_camera;float density=0.;
+    for(int i=0;i<4;i++){
+        vec3 q=storm_camera+ray*((float(i)+.5)/4.);
+        density+=storm35_mask(q)*(1.-smoothstep(600.,1600.,q.y));
+    }
+    return 1.-exp(-length(ray)*.00011*density/4.);
+}
+
+uniform vec3 study_fill=vec3(1.);
+uniform vec3 study_haze=vec3(0.76,0.8,0.78);
+render_mode diffuse_lambert,specular_disabled;
+varying vec3 land_position;
+void vertex() { land_position=(MODEL_MATRIX*vec4(VERTEX,1.)).xyz; }
+void fragment() {
+    vec3 pigment=mix(COLOR.rgb*12.92,1.055*pow(max(COLOR.rgb,vec3(0.)),vec3(1./2.4))-.055,step(vec3(.0031308),COLOR.rgb));
+    ALBEDO=mix(COLOR.rgb,pigment,.52);
+    float distance_to_camera=distance(INV_VIEW_MATRIX[3].xyz,land_position);
+    float low_air=1.-smoothstep(70.,250.,land_position.y);
+    float haze=(1.-exp(-max(distance_to_camera-450.,0.)*.00070))*low_air;
+    EMISSION=ALBEDO*study_fill*.82*(1.-haze)+study_haze*haze;
+    ALBEDO*=1.-haze;
+    ROUGHNESS=1.;
+
+    float storm=storm35_mask(land_position);
+    float storm_air=storm35_air(land_position);
+    EMISSION*=mix(vec3(1.,1.,1.),vec3(.16,.23,.32),storm);
+    ALBEDO*=mix(vec3(1.,1.,1.),vec3(.45,.52,.63),storm);
+    EMISSION+=ALBEDO*vec3(.55,.56,.90)*storm35_flash(land_position)*1.4;
+    EMISSION=mix(EMISSION,vec3(.11,.15,.21)+vec3(.22,.21,.32)*storm35_flash(land_position),storm_air);
+    ALBEDO*=1.-storm_air;
+    ROUGHNESS=mix(ROUGHNESS,.58,storm);
+
+
+ALBEDO*=mix(vec3(1.),scene_fill,.35);
+}
+void light() {
+    DIFFUSE_LIGHT+=LIGHT_COLOR*ATTENUATION*(1.-.90*storm35_mask(land_position))*max(dot(NORMAL,LIGHT),0.)*.08/PI;
+}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1tm3l"]
+render_priority = 0
+shader = SubResource("Shader_mgsgr")
+shader_parameter/scene_fill = Vector3(1, 1, 1)
+shader_parameter/scene_haze = Vector3(0.76, 0.8, 0.78)
+shader_parameter/scene_sun_direction = Vector3(-0.48, 0.82, 0.3)
+shader_parameter/storm_flash = 0.0
+shader_parameter/storm_camera = Vector3(-2350, 420, -1300)
+shader_parameter/storm_strength = 0.0
+shader_parameter/study_fill = Vector3(1, 1, 1)
+shader_parameter/study_haze = Vector3(0.76, 0.8, 0.78)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tpuki"]
+resource_name = "Alpine rock and snow.007"
+cull_mode = 2
+vertex_color_use_as_albedo = true
+
+[node name="massif_east_foothill" type="Node3D"]
+script = ExtResource("1_7nnfv")
+asset_kind = "massif_east_foothill"
+surface_material = SubResource("ShaderMaterial_1tm3l")
+metadata/asset_origin = Vector3(1269.8512, 0, -1810)
+
+[node name="Model" type="Node3D" parent="."]
+
+[node name="massif_east_foothill" type="MeshInstance3D" parent="Model"]
+mesh = ExtResource("2_351mi")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_tpuki")
+
+[node name="Collision" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision"]
+shape = ExtResource("3_0jmrm")

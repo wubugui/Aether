@@ -1,0 +1,10 @@
+WARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.
+     at: set_use_vsync (platform/linuxbsd/x11/gl_manager_x11.cpp:364)
+ERROR: Independent asset reload differs
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] require (res://tools/build_cloud_lake48.gd:33)
+       [1] save_asset (res://tools/build_cloud_lake48.gd:312)
+       [2] save_independent_assets (res://tools/build_cloud_lake48.gd:332)
+       [3] build (res://tools/build_cloud_lake48.gd:362)
+       [4] settle (res://tools/build_cloud_lake48.gd:49)
