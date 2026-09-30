@@ -1,0 +1,7 @@
+{
+  "allocation_fix": "Explicit flags before instance_count; accessor copy preserves transforms, colors and custom data. Historical 42b/42c weather buffers were absent; recover authored custom payload from 42b seed and placement from 42c seed. Serialized buffers checked by full reload equality.",
+  "baseline_sha256": "4ea49a9f43cf10843cf4eb8c350ae060404b8461350b8e64f229a8b23a4e34f0",
+  "candidate_sha256": "5742de44e7f44070ca7475e801ea82b4f9be6433b8a1cef55e00aa667f1607e9",
+  "prior_candidate_sha256": "06f86e4bc73ed2d28a4eb6d76e89e3946cb6b6c6e7e72b9b36f55ed972880c91",
+  "scope": "Preserved full world and weather; actual particle transforms replace vertex deformation; native mesh scaling and physically near-eye transparency fade. No camera movement or geometry removal."
+}

@@ -1,0 +1,32 @@
+{
+  "status": "recovered_for_continued_comparison_without_rebuild",
+  "scene_sha256": "5742de44e7f44070ca7475e801ea82b4f9be6433b8a1cef55e00aa667f1607e9",
+  "scene_bytes": 103542103,
+  "rebuilt_or_overwritten": false,
+  "original_build_status": "failed_due_to_two_exit_texture_errors; unchanged historical evidence",
+  "original_build_evidence": "cloud-evidence/multimesh42d-rendered-20260930T191314Z-igAsRF",
+  "subsequent_gates": {
+    "allocation_checks": "100/100",
+    "settled_reload": "48000/48000 seeded transform/custom floats exact",
+    "real_tree_smoke": "17/17 checks, 12 captures, exit 0, no ERROR",
+    "renderer": "Godot 4.5.1 Compatibility, Mesa llvmpipe software rendering"
+  },
+  "lifecycle_evidence": "cloud-evidence/sky-lifecycle42d-20260930T192210Z-ytQUd7",
+  "smoke_evidence": "cloud-evidence/smoke42d-20260930T191803Z-G76lbN",
+  "lifecycle_comparison": {
+    "sky_immediate": "reproduces the same two349524-byte leaked-texture errors",
+    "sky_settled": "3 process frames plus frame_post_draw before disposal; no ERROR",
+    "reload_settled": "same untouched42d, no live _ready, no save; no ERROR"
+  },
+  "fix_applied_to_tools": "build_particle42d.gd and verify_weather42d.gd settle off-tree loaded Sky resources before disposal; official4.5.1 parsing passed. Builder fix not rerun because42d is immutable. Upper43 worker informed.",
+  "nonweather_preservation": {
+    "nodes_compared": 10446,
+    "geometry_collision_structural_fingerprint_equal": true,
+    "shader_parameter_changes": 1524,
+    "all_shader_changes_null_to_declared_default": true,
+    "unexpected_shader_changes": 0
+  },
+  "visual_status": "rain/snow visibly present and moving but sparse; blizzard intensity and full reference acceptance remain unaccepted",
+  "hardware_gpu_acceptance": false,
+  "known_nonfatal_warning": "Unsupported VSync mode; preserved in all raw stderr"
+}

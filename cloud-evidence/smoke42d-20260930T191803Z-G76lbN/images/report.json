@@ -1,0 +1,190 @@
+{
+  "checks": [
+    {
+      "evidence": {
+        "floats": 28800,
+        "instances": 1800
+      },
+      "name": "Rain serialized reload exactly matches all seeded transforms/custom data",
+      "passed": true
+    },
+    {
+      "evidence": {
+        "floats": 19200,
+        "instances": 1200
+      },
+      "name": "Snow serialized reload exactly matches all seeded transforms/custom data",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "Saved actual rendered reference-1341-time-0",
+      "passed": true
+    },
+    {
+      "evidence": {
+        "allocated": 1800,
+        "changed": 1800,
+        "visible": 1800
+      },
+      "name": "Rain all visible transforms advance 1341",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "Saved actual rendered reference-1341-time-035",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "Saved actual rendered reference-1341-precipitation-off",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "Saved actual rendered reference-1341-precipitation-restored",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "Saved actual rendered reference-1275-time-0",
+      "passed": true
+    },
+    {
+      "evidence": {
+        "allocated": 1200,
+        "changed": 1200,
+        "visible": 1200
+      },
+      "name": "Snow all visible transforms advance 1275",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "Saved actual rendered reference-1275-time-035",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "Saved actual rendered reference-1275-precipitation-off",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "Saved actual rendered reference-1275-precipitation-restored",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "Saved actual rendered reference-1276-time-0",
+      "passed": true
+    },
+    {
+      "evidence": {
+        "allocated": 1200,
+        "changed": 600,
+        "visible": 600
+      },
+      "name": "Snow all visible transforms advance 1276",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "Saved actual rendered reference-1276-time-035",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "Saved actual rendered reference-1276-precipitation-off",
+      "passed": true
+    },
+    {
+      "evidence": null,
+      "name": "Saved actual rendered reference-1276-precipitation-restored",
+      "passed": true
+    }
+  ],
+  "checks_passed": true,
+  "display_driver": "X11",
+  "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "scope": "Quick actual rendered precipitation smoke, not full visual or hardware GPU acceptance",
+  "source_scene": "res://scenes/candidate42d/Game42d.tscn",
+  "source_sha256": "5742de44e7f44070ca7475e801ea82b4f9be6433b8a1cef55e00aa667f1607e9",
+  "views": [
+    {
+      "allocated": 1800,
+      "camera_transform": "[X: (0.838764, 0.0, -0.544496), Y: (0.029122, 0.998569, 0.044861), Z: (0.543716, -0.053484, 0.837563), O: (-2250.0, 168.4879, -2450.0)]",
+      "changed_transforms": 1800,
+      "on_restored_control": {
+        "pixels_over_003": 142944,
+        "rgb_absolute_sum": 9680.34135769308,
+        "total_pixels": 783520
+      },
+      "particle": "Rain",
+      "particle_anchor": "(-2304.0, 160.0, -2496.0)",
+      "precipitation_on_off": {
+        "pixels_over_003": 143724,
+        "rgb_absolute_sum": 9759.18057446182,
+        "total_pixels": 783520
+      },
+      "reference": "1341",
+      "scope": "Pixel differences are diagnostics; moving shader-time scenery may contribute. Review images for precipitation visibility and near-eye artifacts.",
+      "t0_to_t035": {
+        "pixels_over_003": 2520,
+        "rgb_absolute_sum": 317.30195774138,
+        "total_pixels": 783520
+      },
+      "visible_instances": 1800
+    },
+    {
+      "allocated": 1200,
+      "camera_transform": "[X: (0.67828, 0.0, -0.734803), Y: (-0.092704, 0.99201, -0.085573), Z: (0.728932, 0.126161, 0.67286), O: (1128.0, 302.0, -2752.0)]",
+      "changed_transforms": 1200,
+      "on_restored_control": {
+        "pixels_over_003": 0,
+        "rgb_absolute_sum": 0.0,
+        "total_pixels": 783520
+      },
+      "particle": "Snow",
+      "particle_anchor": "(1088.0, 288.0, -2752.0)",
+      "precipitation_on_off": {
+        "pixels_over_003": 187,
+        "rgb_absolute_sum": 20.968626588583,
+        "total_pixels": 783520
+      },
+      "reference": "1275",
+      "scope": "Pixel differences are diagnostics; moving shader-time scenery may contribute. Review images for precipitation visibility and near-eye artifacts.",
+      "t0_to_t035": {
+        "pixels_over_003": 368,
+        "rgb_absolute_sum": 38.360782712698,
+        "total_pixels": 783520
+      },
+      "visible_instances": 1200
+    },
+    {
+      "allocated": 1200,
+      "camera_transform": "[X: (0.9998, 0.0, 0.019996), Y: (0.0004, 0.9998, -0.019988), Z: (-0.019992, 0.019992, 0.9996), O: (1130.0, 220.0, -2000.0)]",
+      "changed_transforms": 600,
+      "on_restored_control": {
+        "pixels_over_003": 0,
+        "rgb_absolute_sum": 0.0,
+        "total_pixels": 783520
+      },
+      "particle": "Snow",
+      "particle_anchor": "(1152.0, 224.0, -2048.0)",
+      "precipitation_on_off": {
+        "pixels_over_003": 165,
+        "rgb_absolute_sum": 17.7764698565006,
+        "total_pixels": 783520
+      },
+      "reference": "1276",
+      "scope": "Pixel differences are diagnostics; moving shader-time scenery may contribute. Review images for precipitation visibility and near-eye artifacts.",
+      "t0_to_t035": {
+        "pixels_over_003": 329,
+        "rgb_absolute_sum": 35.4627438485622,
+        "total_pixels": 783520
+      },
+      "visible_instances": 600
+    }
+  ]
+}
