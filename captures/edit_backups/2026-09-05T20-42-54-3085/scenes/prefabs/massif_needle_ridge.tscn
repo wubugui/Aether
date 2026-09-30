@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/asset_instance.gd" id="1_xdem1"]
+[ext_resource type="Material" path="res://materials/cliff.tres" id="2_ntpl1"]
+[ext_resource type="PackedScene" path="res://assets/models/massif_needle_ridge.glb" id="3_ko8l6"]
+[ext_resource type="Shape3D" path="res://assets/collision/massif_needle_ridge.res" id="4_cpdla"]
+
+[node name="massif_needle_ridge" type="Node3D"]
+script = ExtResource("1_xdem1")
+asset_kind = "massif_needle_ridge"
+surface_material = ExtResource("2_ntpl1")
+
+[node name="Model" parent="." instance=ExtResource("3_ko8l6")]
+
+[node name="Collision" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision"]
+shape = ExtResource("4_cpdla")

@@ -1,0 +1,118 @@
+[
+ {
+  "params": {
+   "study_haze": [
+    0.7, 
+    0.78, 
+    0.82
+   ]
+  }, 
+  "name": "v11", 
+  "replace": [
+   [
+    "EMISSION*=mix(vec3(1.13,.92,.59),", 
+    "EMISSION*=mix(vec3(1.,1.,1.),"
+   ], 
+   [
+    "ALBEDO*=mix(vec3(1.05,.91,.67),", 
+    "ALBEDO*=mix(vec3(1.,1.,1.),"
+   ], 
+   [
+    "EMISSION*vec3(.87,.94,.78)+vec3(1.1,.68,.23)*sun_reflection", 
+    "EMISSION*vec3(1.,1.,1.)+vec3(.55,.52,.45)*sun_reflection"
+   ], 
+   [
+    "vec3 dry=vec3(.73,.745,.46);", 
+    "vec3 dry=vec3(.64,.67,.40);"
+   ], 
+   [
+    "vec3 meadow=vec3(.46,.565,.345);", 
+    "vec3 meadow=vec3(.38,.50,.28);"
+   ], 
+   [
+    "pigment*=.89+.11*max(0.,dot(n,normalize(vec3(-.48,.82,.30))));", 
+    "pigment*=0.65+0.35*max(0.,dot(n,normalize(vec3(-.48,.82,.30))));"
+   ], 
+   [
+    "vec3 deep=mix(vec3(.170,.418,.627),vec3(.230,.498,.677),ripple*.16+.4);", 
+    "vec3 deep=mix(vec3(.150,.380,.610),vec3(.210,.470,.665),ripple*.16+.4);"
+   ], 
+   [
+    "vec3 c=mix(vec3(.32,.59,.65),deep,smoothstep(0.,6.,water_depth));", 
+    "float shelf=smoothstep(0.,10.0,water_depth);\n    vec3 c=mix(vec3(.44,.70,.75),vec3(.30,.60,.72),smoothstep(0.,.45,shelf));\n    c=mix(c,deep,smoothstep(.35,1.,shelf));"
+   ], 
+   [
+    "float foam=(1.-smoothstep(.05,.45,water_depth))*(.45+.15*sin(world_point.x*.2+world_point.z*.3+world_time));", 
+    "float foam_px=fwidth(water_depth);\n    float foam_n=smoothstep(.45,.80,sea_noise(world_point.xz*vec2(.03,.045)+vec2(0.,world_time*.02)));\n    float foam=(1.-smoothstep(0.,max(.8,foam_px),water_depth))*(.12+.50*foam_n);"
+   ], 
+   [
+    "EMISSION=mix(clear_water,storm_water,storm);", 
+    "EMISSION=mix(clear_water,storm_water,storm);\n    EMISSION=mix(EMISSION,vec3(.88,.92,.93),foam*(1.-storm)*(1.-study_night));"
+   ], 
+   [
+    "float haze=(1.-exp(-max(distance_to_camera-650.,0.)*.00038))*low_air;", 
+    "float haze=(1.-exp(-max(distance_to_camera-450.,0.)*.00070))*low_air;"
+   ]
+  ]
+ }, 
+ {
+  "params": {
+   "study_haze": [
+    0.76, 
+    0.8, 
+    0.78
+   ]
+  }, 
+  "name": "v12_fix", 
+  "replace": [
+   [
+    "EMISSION*=mix(vec3(1.13,.92,.59),", 
+    "EMISSION*=mix(vec3(1.,1.,1.),"
+   ], 
+   [
+    "ALBEDO*=mix(vec3(1.05,.91,.67),", 
+    "ALBEDO*=mix(vec3(1.,1.,1.),"
+   ], 
+   [
+    "EMISSION*vec3(.87,.94,.78)+vec3(1.1,.68,.23)*sun_reflection", 
+    "EMISSION*vec3(1.,1.,1.)+vec3(.55,.52,.45)*sun_reflection"
+   ], 
+   [
+    "vec3 dry=vec3(.73,.745,.46);", 
+    "vec3 dry=vec3(.64,.67,.40);"
+   ], 
+   [
+    "vec3 meadow=vec3(.46,.565,.345);", 
+    "vec3 meadow=vec3(.38,.50,.28);"
+   ], 
+   [
+    "pigment*=.89+.11*max(0.,dot(n,normalize(vec3(-.48,.82,.30))));", 
+    "pigment*=0.65+0.35*max(0.,dot(n,normalize(vec3(-.48,.82,.30))));"
+   ], 
+   [
+    "vec3 deep=mix(vec3(.170,.418,.627),vec3(.230,.498,.677),ripple*.16+.4);", 
+    "vec3 deep=mix(vec3(.150,.380,.610),vec3(.210,.470,.665),ripple*.16+.4);"
+   ], 
+   [
+    "vec3 c=mix(vec3(.32,.59,.65),deep,smoothstep(0.,6.,water_depth));", 
+    "float shelf=smoothstep(0.,10.0,water_depth);\n    vec3 c=mix(vec3(.40,.60,.66),vec3(.30,.53,.64),smoothstep(0.,.45,shelf));\n    c=mix(c,deep,smoothstep(.35,1.,shelf));"
+   ], 
+   [
+    "float foam=(1.-smoothstep(.05,.45,water_depth))*(.45+.15*sin(world_point.x*.2+world_point.z*.3+world_time));", 
+    "float foam_px=fwidth(water_depth);\n    float foam_n=smoothstep(.55,.85,sea_noise(world_point.xz*vec2(.03,.045)+vec2(0.,world_time*.02)));\n    float foam=(1.-smoothstep(0.,max(.8,foam_px),water_depth))*.5*foam_n;"
+   ], 
+   [
+    "EMISSION=mix(clear_water,storm_water,storm);", 
+    "EMISSION=mix(clear_water,storm_water,storm);\n    EMISSION=mix(EMISSION,vec3(.74,.78,.79),foam*(1.-storm)*(1.-study_night));\n    ALBEDO*=1.-foam*(1.-storm)*(1.-study_night);"
+   ], 
+   [
+    "float haze=(1.-exp(-max(distance_to_camera-650.,0.)*.00038))*low_air;", 
+    "float haze=(1.-exp(-max(distance_to_camera-450.,0.)*.00070))*low_air;"
+   ], 
+   [
+    "*smoothstep(3.2,7.,world_point.y);", 
+    "*smoothstep(3.2,4.6,world_point.y);"
+   ]
+  ]
+ }
+]

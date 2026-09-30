@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "D:\test6\captures\seat_10j_plateau.py", line 104, in <module>
+    assert all(len(e.link_faces)==2 for e in bm.edges) and all(f.calc_area()>1e-8 for f in bm.faces)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+Error: script failed, file: 'D:/test6/captures/seat_10j_plateau.py', exiting.

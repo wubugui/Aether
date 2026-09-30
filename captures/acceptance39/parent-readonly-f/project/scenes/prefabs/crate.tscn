@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/asset_instance.gd" id="1_xmip3"]
+[ext_resource type="Material" path="res://materials/world.tres" id="2_d21ju"]
+[ext_resource type="PackedScene" path="res://assets/models/crate.glb" id="3_wdn3e"]
+[ext_resource type="Shape3D" path="res://assets/collision/crate.res" id="4_gbwnh"]
+
+[node name="crate" type="Node3D"]
+script = ExtResource("1_xmip3")
+asset_kind = "crate"
+surface_material = ExtResource("2_d21ju")
+
+[node name="Model" parent="." instance=ExtResource("3_wdn3e")]
+
+[node name="Collision" type="StaticBody3D" parent="."]
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision"]
+shape = ExtResource("4_gbwnh")

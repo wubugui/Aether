@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/asset_instance.gd" id="1_861ve"]
+[ext_resource type="Material" path="res://materials/cliff.tres" id="2_odr2e"]
+[ext_resource type="PackedScene" path="res://assets/models/massif_west_summit.glb" id="3_am46j"]
+[ext_resource type="Shape3D" path="res://assets/collision/massif_west_summit.res" id="4_pshc5"]
+
+[node name="massif_west_summit" type="Node3D"]
+script = ExtResource("1_861ve")
+asset_kind = "massif_west_summit"
+surface_material = ExtResource("2_odr2e")
+
+[node name="Model" parent="." instance=ExtResource("3_am46j")]
+
+[node name="Collision" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision"]
+shape = ExtResource("4_pshc5")

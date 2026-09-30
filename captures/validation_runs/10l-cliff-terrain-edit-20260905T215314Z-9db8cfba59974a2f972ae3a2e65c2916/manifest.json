@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "run_id": "10l-cliff-terrain-edit-20260905T215314Z-9db8cfba59974a2f972ae3a2e65c2916",
+  "round": "10l-cliff-terrain-edit",
+  "started_utc": "2026-09-05T21:53:14.283629+00:00",
+  "workspace": "D:\\test6",
+  "run_directory": "D:\\test6\\captures\\validation_runs\\10l-cliff-terrain-edit-20260905T215314Z-9db8cfba59974a2f972ae3a2e65c2916",
+  "status": "failed",
+  "passed": false,
+  "export_windows_requested": false,
+  "capture_views_requested": true,
+  "expected_counts": {
+    "game-test": 36,
+    "cliffs-contact": 21,
+    "cliff-tour-test": 6,
+    "geology": 18,
+    "road-surfaces": 40642,
+    "cliff-ground-rims": 6
+  },
+  "stages": [
+    {
+      "name": "cliff-ground-rims",
+      "run_id": "10l-cliff-terrain-edit-20260905T215314Z-9db8cfba59974a2f972ae3a2e65c2916",
+      "status": "passed",
+      "command": [
+        "D:\\test6\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "D:\\test6",
+        "--script",
+        "tools/verify_cliff_ground_rims.gd",
+        "--",
+        "--validation-run=10l-cliff-terrain-edit-20260905T215314Z-9db8cfba59974a2f972ae3a2e65c2916"
+      ],
+      "cwd": "D:\\test6",
+      "passed": true,
+      "started_ns": 1788645230138962500,
+      "started_utc": "2026-09-05T21:53:50.138962+00:00",
+      "input_manifest_sha256": "ce6c1c35e96854ab8ec1048026ed32a8c800cc64f41b5b706e2b6c4dff3ddff1",
+      "exit_code": 0,
+      "finished_ns": 1788645241653811900,
+      "report": "reports/cliff-ground-rims.json",
+      "report_contract_passed": true,
+      "finished_utc": "2026-09-05T21:54:16.847046+00:00"
+    },
+    {
+      "name": "road-surfaces",
+      "run_id": "10l-cliff-terrain-edit-20260905T215314Z-9db8cfba59974a2f972ae3a2e65c2916",
+      "status": "failed",
+      "command": [
+        "D:\\test6\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "D:\\test6",
+        "--script",
+        "tools/verify_road_surfaces.gd",
+        "--",
+        "--validation-run=10l-cliff-terrain-edit-20260905T215314Z-9db8cfba59974a2f972ae3a2e65c2916"
+      ],
+      "cwd": "D:\\test6",
+      "passed": false,
+      "started_ns": 1788645270605082400,
+      "started_utc": "2026-09-05T21:54:30.605082+00:00",
+      "input_manifest_sha256": "ce6c1c35e96854ab8ec1048026ed32a8c800cc64f41b5b706e2b6c4dff3ddff1",
+      "exit_code": 1,
+      "finished_ns": 1788645277455410100,
+      "error": "Process exited with code 1",
+      "finished_utc": "2026-09-05T21:54:37.455410+00:00"
+    }
+  ],
+  "artifacts": {
+    "scoped-driver.py": {
+      "sha256": "b4736d49be4d633e7c7305b15e297d2e46245caa1bbf8815ab2e378d8815ca51",
+      "bytes": 4439,
+      "mtime_ns": 1788645156398783200
+    },
+    "inputs.json": {
+      "sha256": "ce6c1c35e96854ab8ec1048026ed32a8c800cc64f41b5b706e2b6c4dff3ddff1",
+      "bytes": 730634,
+      "mtime_ns": 1788645209141428900
+    },
+    "reports/cliff-ground-rims.json": {
+      "sha256": "46ebef00cdccefe7fa1782a9712621204ccd4a346d5fb0bc91b1f0d6413a2b91",
+      "bytes": 3048,
+      "mtime_ns": 1788645241319967200
+    },
+    "cliff-ground-rims.log": {
+      "sha256": "229cb237e821e0d25160f09a9476928b6cc8e16f0678fa11044aad0a990f1c28",
+      "bytes": 628,
+      "mtime_ns": 1788645241186329000
+    },
+    "cliff-ground-rims-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788645230143434900
+    },
+    "stages/cliff-ground-rims.json": {
+      "sha256": "884361fa1d51651196d6a766bde43165354e7afeb554f22762ffbeb5fc29a103",
+      "bytes": 860,
+      "mtime_ns": 1788645256850037900
+    },
+    "previous-reports/road-surfaces.json": {
+      "sha256": "382733f583f72e03d1fadebc13ad526f34bcef7fa2763a6bfbe0be49711042c6",
+      "bytes": 2157,
+      "mtime_ns": 1788628074850993200
+    },
+    "road-surfaces.log": {
+      "sha256": "612ffcb5652661e476c1a768dc33fe3fae7bcf74091ca83334e3dacf42a9d1ba",
+      "bytes": 431,
+      "mtime_ns": 1788645277201258100
+    },
+    "road-surfaces-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788645270607779900
+    },
+    "stages/road-surfaces.json": {
+      "sha256": "346c1fe2b792e7c05cc8fe11bc9eb92eeaebdb4956b817436a4cbad89a4923d0",
+      "bytes": 813,
+      "mtime_ns": 1788645277477035100
+    }
+  },
+  "visual_acceptance_proven": false,
+  "scope": "Six independent cliff assets, two local terrain tiles, two regenerated native roads and grounded props. Source captures, full road-surface samples, cliff rim seating, game controls and local cliff flight. No Windows export, no new long-distance/streaming acceptance.",
+  "release_validation": false,
+  "input_count": 3493,
+  "error": "Process exited with code 1",
+  "completed_utc": "2026-09-05T21:54:37.499589+00:00"
+}

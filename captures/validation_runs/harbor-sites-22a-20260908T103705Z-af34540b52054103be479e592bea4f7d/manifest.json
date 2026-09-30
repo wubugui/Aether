@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "run_id": "harbor-sites-22a-20260908T103705Z-af34540b52054103be479e592bea4f7d",
+  "round": "harbor-sites-22a",
+  "started_utc": "2026-09-08T10:37:05.762710+00:00",
+  "workspace": "E:\\FeiTing",
+  "run_directory": "E:\\FeiTing\\captures\\validation_runs\\harbor-sites-22a-20260908T103705Z-af34540b52054103be479e592bea4f7d",
+  "status": "passed",
+  "passed": true,
+  "export_windows_requested": false,
+  "capture_views_requested": true,
+  "expected_counts": {},
+  "stages": [
+    {
+      "name": "native-port-sites",
+      "run_id": "harbor-sites-22a-20260908T103705Z-af34540b52054103be479e592bea4f7d",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\harbor-sites-22a-20260908T103705Z-af34540b52054103be479e592bea4f7d\\survey-inputs\\survey_harbor_sites_22a.gd",
+        "--quit-after",
+        "900",
+        "--",
+        "--output-dir=E:\\FeiTing\\captures\\validation_runs\\harbor-sites-22a-20260908T103705Z-af34540b52054103be479e592bea4f7d\\survey",
+        "--validation-run=harbor-sites-22a-20260908T103705Z-af34540b52054103be479e592bea4f7d"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788863837695355800,
+      "started_utc": "2026-09-08T10:37:17.695355+00:00",
+      "input_manifest_sha256": "5b7fb8bc5a72a9b3f44fc4dbb8f41b50ccbdb1956d8abc6f6b3043fbacea76f8",
+      "exit_code": 0,
+      "finished_ns": 1788863842141497000,
+      "finished_utc": "2026-09-08T10:37:27.966974+00:00"
+    }
+  ],
+  "artifacts": {
+    "survey-inputs/survey_harbor_sites_22a.py": {
+      "sha256": "9858268568b2ef83c57af0d7f1bee2fb99ad01479977bf60f719d1c18fd62d5e",
+      "bytes": 2291,
+      "mtime_ns": 1788863823600701600
+    },
+    "survey-inputs/survey_harbor_sites_22a.gd": {
+      "sha256": "eb0d11c54510b4dad1e5f160668383f9b87ddb8306ed436d91eb234185ff5d2a",
+      "bytes": 4946,
+      "mtime_ns": 1788863823599684100
+    },
+    "survey-inputs/round-22a-port-site-independent-audit.json": {
+      "sha256": "4c7da0d3df6542f157ee88166c5a4be7053fbfc855d8b0a80d6178b1eb5cbb30",
+      "bytes": 40509,
+      "mtime_ns": 1788863499752714200
+    },
+    "survey-inputs/1342.png": {
+      "sha256": "7acc98104013d9122eb551846b2d7fc1f7549bce8b2e3199eae8f5385a3ea238",
+      "bytes": 1646137,
+      "mtime_ns": 1788847336194355400
+    },
+    "survey-inputs/1135.png": {
+      "sha256": "25968bf1203323213d4fc0b2f473c7014cf3532377c89ff9545eb5029322ef59",
+      "bytes": 1850035,
+      "mtime_ns": 1788847334556827300
+    },
+    "inputs.json": {
+      "sha256": "5b7fb8bc5a72a9b3f44fc4dbb8f41b50ccbdb1956d8abc6f6b3043fbacea76f8",
+      "bytes": 732019,
+      "mtime_ns": 1788863831941117000
+    },
+    "survey/survey.json": {
+      "sha256": "b52744d8b82d8fd54dd15db5214d53a1a00e84148cfccaf5418b498a163c8e01",
+      "bytes": 409972,
+      "mtime_ns": 1788863841947016600
+    },
+    "survey/harbor-before.png": {
+      "sha256": "de8148b6f5d1f770bd64c6d70a378071c3713f75f969e1a3f376f0e3825921c6",
+      "bytes": 510044,
+      "mtime_ns": 1788863841932968000
+    },
+    "native-port-sites.log": {
+      "sha256": "db8204d591c97623158cadc2fa0fef5e4bbf0c341b99a9b095667c32706b1a0f",
+      "bytes": 231,
+      "mtime_ns": 1788863841947016600
+    },
+    "native-port-sites-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788863837696560400
+    },
+    "stages/native-port-sites.json": {
+      "sha256": "180284e9878e0c40d6674e4e5d9d8f9c923d9aa54759d5651436c6bfb1dfc0fb",
+      "bytes": 1057,
+      "mtime_ns": 1788863847968973700
+    }
+  },
+  "visual_acceptance_proven": false,
+  "scope": "Native shore transects and proposed building/pier foundation survey. No production changes.",
+  "completed_utc": "2026-09-08T10:37:33.836272+00:00"
+}

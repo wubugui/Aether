@@ -1,0 +1,242 @@
+{
+	"checks": [
+		{
+			"details": "Windows",
+			"name": "real GPU backend",
+			"passed": true
+		},
+		{
+			"details": 3,
+			"name": "all canonical, renamed/reparented prefab and asset_kind-only instances discovered",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "old derived collider still supports planted instance 0",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "old derived collider still supports planted instance 1",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "old derived collider still supports planted instance 2",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "geometry refresh covers all three edited instances",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "shrunken-model sample is in old footprint only 0",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "actual new physics exposes lower ground at former cliff foot 0",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "shrunken-model sample is in old footprint only 1",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "actual new physics exposes lower ground at former cliff foot 1",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "shrunken-model sample is in old footprint only 2",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "actual new physics exposes lower ground at former cliff foot 2",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "negative control: new bounds alone misses all old-footprint trees",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "negative control: canonical node-only lookup misses both edited copies",
+			"passed": true
+		},
+		{
+			"details": {
+				"moved": 3,
+				"removed": 0
+			},
+			"name": "old/new union reseats all three trees without deleting them",
+			"passed": true
+		},
+		{
+			"details": "(-24.5, 2.0, 10.5)",
+			"name": "correct ground height and preserved horizontal placement 0",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "scatter scale/rotation preserved 0",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "scatter color/custom data preserved 0",
+			"passed": true
+		},
+		{
+			"details": "(67.40923, 2.0, 1.258661)",
+			"name": "correct ground height and preserved horizontal placement 1",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "scatter scale/rotation preserved 1",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "scatter color/custom data preserved 1",
+			"passed": true
+		},
+		{
+			"details": "(-54.47994, 2.0, 55.89259)",
+			"name": "correct ground height and preserved horizontal placement 2",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "scatter scale/rotation preserved 2",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "scatter color/custom data preserved 2",
+			"passed": true
+		},
+		{
+			"details": "(170.0, 17.0, 170.0)",
+			"name": "correct ground height and preserved horizontal placement 3",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "scatter scale/rotation preserved 3",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "scatter color/custom data preserved 3",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "shared unrelated MultiMesh remains unchanged",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "native instance transform and authored fields preserved Cliffs/cliff_fixture",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "material/collider overrides preserved Cliffs/cliff_fixture",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "native instance transform and authored fields preserved UserDistrict/RenamedOutcrop",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "material/collider overrides preserved UserDistrict/RenamedOutcrop",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "native instance transform and authored fields preserved UnpackedNativeCopy",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "material/collider overrides preserved UnpackedNativeCopy",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "saved and reloaded GPU MultiMesh placement 0",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "saved and reloaded GPU MultiMesh placement 1",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "saved and reloaded GPU MultiMesh placement 2",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "saved and reloaded GPU MultiMesh placement 3",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "per-instance edited fields survive final save/reload Cliffs/cliff_fixture",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "per-instance edited fields survive final save/reload UserDistrict/RenamedOutcrop",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "per-instance edited fields survive final save/reload UnpackedNativeCopy",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "second refresh is idempotent after save/reload",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "origin compensation respects full rotated/scaled hierarchy Cliffs/cliff_fixture",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "origin compensation respects full rotated/scaled hierarchy UserDistrict/RenamedOutcrop",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "origin compensation respects full rotated/scaled hierarchy UnpackedNativeCopy",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "fixture prefab and derived collision backed up before refresh",
+			"passed": true
+		}
+	],
+	"display_server": "Windows",
+	"frames_drawn": 3,
+	"passed": true,
+	"renderer": "NVIDIA GeForce RTX 4070 SUPER",
+	"scope": "Actual GPU, physics rays, temporary prefab refresh, old/new footprints, transformed copies, GPU MultiMesh persistence. Production assets never passed to the installer."
+}

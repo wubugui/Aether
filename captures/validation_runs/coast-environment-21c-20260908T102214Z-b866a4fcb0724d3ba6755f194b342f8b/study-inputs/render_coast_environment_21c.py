@@ -1,0 +1,66 @@
+"""Freeze20l Blender terrain and21c material study; capture actual day/night GPU views."""
+from pathlib import Path
+import shutil
+from validation_manifest import ValidationRun,exclusive_lock,read_json,require,sha256,snapshot_inputs,utc_now,write_json
+
+def main():
+    root=Path(__file__).resolve().parents[1]
+    source=root/'captures/lantern_islands_study_20l'
+    gate=root/'reviews/round-20l-coast-native-check.json'
+    require(read_json(gate)['passed'],'Native source gate failed')
+    with exclusive_lock(root/'captures/.validation-pipeline.lock'):
+        run=ValidationRun(root,'coast-environment-21c',False,True)
+        run.manifest.update(scope='Actual temporary20l native Blender island geometry with21c lighting/material study. Explicit runtime AMBIENT_SOURCE_COLOR correction, effective ambient source/color and local lamp records. Retains all21b shaders, clouds and moon geometry. Two affected night reference/reverse GPU views. Not production integration, full weather or reference acceptance.',expected_counts={})
+        try:
+            frozen=run.directory/'study-inputs';frozen.mkdir()
+            for path in source.iterdir():
+                if path.is_file():shutil.copy2(path,frozen/path.name);run.bind(frozen/path.name)
+            for item in read_json(gate)['assets']:require(sha256(frozen/(item['asset']+'.blend'))==item['source_sha256'],'Source gate identity changed')
+            for item in read_json(source/'model-report.json')['assets']:require(sha256(frozen/(item['name']+'.glb'))==item['glb_sha256'],'Export identity changed')
+            environment=frozen/'environment';environment.mkdir()
+            for path in (root/'captures/coast_environment_study_21c').iterdir():
+                if path.is_file():shutil.copy2(path,environment/path.name);run.bind(environment/path.name)
+            sky_source=root/'captures/coastal_sky_assets_21b'
+            sky_gate=root/'reviews/round-21b-sky-native-check.json'
+            require(read_json(sky_gate)['passed'],'Sky native gate failed')
+            sky_frozen=environment/'sky-assets';sky_frozen.mkdir()
+            for path in sky_source.iterdir():
+                if path.is_file():shutil.copy2(path,sky_frozen/path.name);run.bind(sky_frozen/path.name)
+            shutil.copy2(sky_gate,sky_frozen/sky_gate.name);run.bind(sky_frozen/sky_gate.name)
+            for item in read_json(sky_gate)['assets']:
+                require(sha256(sky_frozen/(item['asset']+'.blend'))==item['source_sha256'] and sha256(sky_frozen/(item['asset']+'.glb'))==item['glb_sha256'],'Sky source/export identity changed')
+            for path in [gate,Path(__file__),root/'captures/coast_environment_21c.gd',root/'captures/environment-sources-runtime.log',root/'captures/inspect_environment_sources.gd',root/'ref/1342.png',root/'reviews/round-20l-path-independent-audit.json']:
+                shutil.copy2(path,frozen/path.name);run.bind(frozen/path.name)
+            preview=(root/'captures/preview_lantern_islands_20.gd').read_text()
+            anchor='\tfor i in range(40):await process_frame'
+            insertion='''\tvar environment_mode:="day"
+\tfor arg in OS.get_cmdline_user_args():
+\t\tif arg.begins_with("--environment="):environment_mode=arg.trim_prefix("--environment=")
+\tvar adapter=load(directory.path_join("coast_environment_21c.gd")).new()
+\tvar environment_report:Dictionary=adapter.configure(game,region,directory.path_join("environment"),environment_mode=="night")
+'''
+            require(preview.count(anchor)==1,'Preview injection anchor changed')
+            preview=preview.replace('Actual temporary 3D geometry in existing world daytime; not night/fog/whole reference acceptance.','Actual temporary 3D geometry in existing world; lighting mode recorded in environment_study, no full reference acceptance.')
+            preview=preview.replace(anchor,insertion+anchor).replace('report["site_checks"]=site_checks','report["site_checks"]=site_checks\n\treport["environment_study"]=environment_report')
+            (frozen/'preview.gd').write_text(preview);run.bind(frozen/'preview.gd')
+            run.inputs=snapshot_inputs(root,imported=True)
+            write_json(run.directory/'inputs.json',{'run_id':run.run_id,'frozen_utc':utc_now(),'files':run.inputs});run.bind(run.directory/'inputs.json')
+            views=[('night-reference','reference-coast-near','night'),('night-back','island-back','night')]
+            for name,view,mode in views:
+                output=run.directory/'images'/(name+'.png');report=Path(str(output)+'.json')
+                run.stage(name,[root/'.tools/godot/Godot_v4.5.1-stable_win64.exe','--path',root,'--script',frozen/'preview.gd','--quit-after','900','--','--label=20l','--study-dir='+str(frozen),'--view='+view,'--environment='+mode,'--output='+str(output),'--validation-run='+run.run_id],image=output,outputs=[report])
+                data=read_json(report);env=data['environment_study']
+                require(data['run_id']==run.run_id and data['view']==view,'Capture identity mismatch')
+                require(len(data['footing_samples'])==9 and len(data['site_checks'])==1,'Missing buildings or site evidence')
+                require(data['world_sha256']==run.inputs['res://scenes/world/World.tscn']['sha256'],'World changed')
+                require(env['night']==(mode=='night') and len(env['material_bindings'])>=5,'Environment not applied')
+                require(len(env['native_sky_assets'])==(8 if mode=='night' else 7),'Native sky geometry missing')
+                require(env['ambient_source']==2 and len(env['local_light_records'])==4,'Color ambient or lamp records missing')
+            run.assert_inputs()
+            for path,item in run.manifest['artifacts'].items():require(sha256(run.directory/path)==item['sha256'],'Evidence changed')
+            run.manifest.update(status='passed',passed=True,completed_utc=utc_now());run.save()
+            print('COAST ENVIRONMENT STUDY READY '+str(run.directory),flush=True)
+        except Exception as error:
+            run.manifest.update(status='failed',passed=False,error=str(error),completed_utc=utc_now());run.save();raise
+
+if __name__=='__main__':main()

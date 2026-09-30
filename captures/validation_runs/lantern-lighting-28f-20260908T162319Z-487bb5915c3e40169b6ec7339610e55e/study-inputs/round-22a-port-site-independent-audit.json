@@ -1,0 +1,1446 @@
+{
+  "scope": "Read-only20a coarse native coast survey and1342/1332 visual siting notes; suggested probe ranges only, no terrain/model changes or engine run",
+  "utc": "2026-09-08T10:31:39.739489+00:00",
+  "survey_path": "E:\\FeiTing\\captures\\validation_runs\\20a-native-coast-survey-20260908T082856Z-ad3c0ef6f1c2401791c65a24f09dcecb\\survey\\survey.json",
+  "survey_sha256": "8bb29b42be8fcc32b68a6ed5774f1638f7f9695d6fb8f33e797f9142aa6b244a",
+  "survey_manifest_sha_match": true,
+  "run_status": "passed",
+  "world_sha_survey": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+  "current_world_sha": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+  "reference_images_actually_viewed": {
+    "1342": "7acc98104013d9122eb551846b2d7fc1f7549bce8b2e3199eae8f5385a3ea238",
+    "1332": "eb1d652e01949468f8002e9aa76561e4c1a4e65238efe7e2242b9e14993ca7a2"
+  },
+  "camera": {
+    "position": [
+      -2278.0,
+      60.0,
+      -1632.0
+    ],
+    "look_at": [
+      -2950,
+      54,
+      -2600
+    ],
+    "vertical_fov_assumption_degrees": 70,
+    "image_size": [
+      1672,
+      941
+    ],
+    "projection_qualification": "Analytic projection with vertical FOV and no occlusion test; not new runtime camera sampling."
+  },
+  "measured_grid_spacing_m": 50,
+  "coast_brackets": [
+    {
+      "z": -2800,
+      "sea_sample": {
+        "collider": "/root/Skyfarer/World/Ocean/SeaCollision",
+        "height": 0.0,
+        "x": -2800,
+        "z": -2800
+      },
+      "first_land_sample": {
+        "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+        "height": 0.85107421875,
+        "x": -2750,
+        "z": -2800
+      },
+      "inland_samples": [
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+          "height": 0.85107421875,
+          "x": -2750,
+          "z": -2800
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+          "height": 13.5045166015625,
+          "x": -2700,
+          "z": -2800
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+          "height": 14.9998779296875,
+          "x": -2650,
+          "z": -2800
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+          "height": 14.9998779296875,
+          "x": -2600,
+          "z": -2800
+        }
+      ],
+      "shoreline_bracket_x": [
+        -2800,
+        -2750
+      ],
+      "projection_of_first_land": {
+        "in_front": true,
+        "screen_xy": [
+          988.1930791656376,
+          499.4204156191293
+        ],
+        "in_frustum_approx": true,
+        "depth": 1228.9153087040177
+      }
+    },
+    {
+      "z": -2750,
+      "sea_sample": {
+        "collider": "/root/Skyfarer/World/Ocean/SeaCollision",
+        "height": 0.0,
+        "x": -2750,
+        "z": -2750
+      },
+      "first_land_sample": {
+        "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+        "height": 5.315185546875,
+        "x": -2700,
+        "z": -2750
+      },
+      "inland_samples": [
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+          "height": 5.315185546875,
+          "x": -2700,
+          "z": -2750
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+          "height": 14.9998779296875,
+          "x": -2650,
+          "z": -2750
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+          "height": 15.0001220703125,
+          "x": -2600,
+          "z": -2750
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+          "height": 14.9998779296875,
+          "x": -2550,
+          "z": -2750
+        }
+      ],
+      "shoreline_bracket_x": [
+        -2750,
+        -2700
+      ],
+      "projection_of_first_land": {
+        "in_front": true,
+        "screen_xy": [
+          1004.6107724879384,
+          498.7748397726702
+        ],
+        "in_frustum_approx": true,
+        "depth": 1159.3071369638901
+      }
+    },
+    {
+      "z": -2700,
+      "sea_sample": {
+        "collider": "/root/Skyfarer/World/Ocean/SeaCollision",
+        "height": 0.0,
+        "x": -2700,
+        "z": -2700
+      },
+      "first_land_sample": {
+        "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+        "height": 10.366943359375,
+        "x": -2650,
+        "z": -2700
+      },
+      "inland_samples": [
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+          "height": 10.366943359375,
+          "x": -2650,
+          "z": -2700
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+          "height": 14.9998779296875,
+          "x": -2600,
+          "z": -2700
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+          "height": 14.9998779296875,
+          "x": -2550,
+          "z": -2700
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+          "height": 14.9998779296875,
+          "x": -2500,
+          "z": -2700
+        }
+      ],
+      "shoreline_bracket_x": [
+        -2700,
+        -2650
+      ],
+      "projection_of_first_land": {
+        "in_front": true,
+        "screen_xy": [
+          1023.126449933692,
+          497.68450479183804
+        ],
+        "in_frustum_approx": true,
+        "depth": 1089.695973152509
+      }
+    },
+    {
+      "z": -2650,
+      "sea_sample": {
+        "collider": "/root/Skyfarer/World/Ocean/SeaCollision",
+        "height": 0.0,
+        "x": -2700,
+        "z": -2650
+      },
+      "first_land_sample": {
+        "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+        "height": 1.2587890625,
+        "x": -2650,
+        "z": -2650
+      },
+      "inland_samples": [
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+          "height": 1.2587890625,
+          "x": -2650,
+          "z": -2650
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+          "height": 13.9141845703125,
+          "x": -2600,
+          "z": -2650
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+          "height": 14.9998779296875,
+          "x": -2550,
+          "z": -2650
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+          "height": 14.9998779296875,
+          "x": -2500,
+          "z": -2650
+        }
+      ],
+      "shoreline_bracket_x": [
+        -2700,
+        -2650
+      ],
+      "projection_of_first_land": {
+        "in_front": true,
+        "screen_xy": [
+          1012.1769936852845,
+          504.7180624313737
+        ],
+        "in_frustum_approx": true,
+        "depth": 1048.6699654401148
+      }
+    },
+    {
+      "z": -2600,
+      "sea_sample": {
+        "collider": "/root/Skyfarer/World/Ocean/SeaCollision",
+        "height": 0.0,
+        "x": -2650,
+        "z": -2600
+      },
+      "first_land_sample": {
+        "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+        "height": 5.6639404296875,
+        "x": -2600,
+        "z": -2600
+      },
+      "inland_samples": [
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+          "height": 5.6639404296875,
+          "x": -2600,
+          "z": -2600
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+          "height": 14.968994140625,
+          "x": -2550,
+          "z": -2600
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+          "height": 15.0001220703125,
+          "x": -2500,
+          "z": -2600
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+          "height": 14.999755859375,
+          "x": -2450,
+          "z": -2600
+        }
+      ],
+      "shoreline_bracket_x": [
+        -2650,
+        -2600
+      ],
+      "projection_of_first_land": {
+        "in_front": true,
+        "screen_xy": [
+          1033.3223048174923,
+          504.37073594973253
+        ],
+        "in_frustum_approx": true,
+        "depth": 979.062093901569
+      }
+    },
+    {
+      "z": -2550,
+      "sea_sample": {
+        "collider": "/root/Skyfarer/World/Ocean/SeaCollision",
+        "height": 0.0,
+        "x": -2600,
+        "z": -2550
+      },
+      "first_land_sample": {
+        "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+        "height": 10.4593505859375,
+        "x": -2550,
+        "z": -2550
+      },
+      "inland_samples": [
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+          "height": 10.4593505859375,
+          "x": -2550,
+          "z": -2550
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+          "height": 15.0001220703125,
+          "x": -2500,
+          "z": -2550
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+          "height": 14.9998779296875,
+          "x": -2450,
+          "z": -2550
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+          "height": 15.0001220703125,
+          "x": -2400,
+          "z": -2550
+        }
+      ],
+      "shoreline_bracket_x": [
+        -2600,
+        -2550
+      ],
+      "projection_of_first_land": {
+        "in_front": true,
+        "screen_xy": [
+          1057.704942983826,
+          503.68197843901027
+        ],
+        "in_frustum_approx": true,
+        "depth": 909.4522353144571
+      }
+    },
+    {
+      "z": -2500,
+      "sea_sample": {
+        "collider": "/root/Skyfarer/World/Ocean/SeaCollision",
+        "height": 0.0,
+        "x": -2600,
+        "z": -2500
+      },
+      "first_land_sample": {
+        "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+        "height": 1.6673583984375,
+        "x": -2550,
+        "z": -2500
+      },
+      "inland_samples": [
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+          "height": 1.6673583984375,
+          "x": -2550,
+          "z": -2500
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+          "height": 13.4832763671875,
+          "x": -2500,
+          "z": -2500
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+          "height": 15.062255859375,
+          "x": -2450,
+          "z": -2500
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+          "height": 16.76708984375,
+          "x": -2400,
+          "z": -2500
+        }
+      ],
+      "shoreline_bracket_x": [
+        -2600,
+        -2550
+      ],
+      "projection_of_first_land": {
+        "in_front": true,
+        "screen_xy": [
+          1046.1168427836985,
+          512.2141480095361
+        ],
+        "in_frustum_approx": true,
+        "depth": 868.424617825464
+      }
+    },
+    {
+      "z": -2450,
+      "sea_sample": {
+        "collider": "/root/Skyfarer/World/Ocean/SeaCollision",
+        "height": 0.0,
+        "x": -2550,
+        "z": -2450
+      },
+      "first_land_sample": {
+        "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+        "height": 6.011474609375,
+        "x": -2500,
+        "z": -2450
+      },
+      "inland_samples": [
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+          "height": 6.011474609375,
+          "x": -2500,
+          "z": -2450
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+          "height": 15.2335205078125,
+          "x": -2450,
+          "z": -2450
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+          "height": 15.8275146484375,
+          "x": -2400,
+          "z": -2450
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+          "height": 15.290283203125,
+          "x": -2350,
+          "z": -2450
+        }
+      ],
+      "shoreline_bracket_x": [
+        -2550,
+        -2500
+      ],
+      "projection_of_first_land": {
+        "in_front": true,
+        "screen_xy": [
+          1074.9907729885697,
+          512.4929741280802
+        ],
+        "in_frustum_approx": true,
+        "depth": 798.8170570546015
+      }
+    },
+    {
+      "z": -2400,
+      "sea_sample": {
+        "collider": "/root/Skyfarer/World/Ocean/SeaCollision",
+        "height": 0.0,
+        "x": -2500,
+        "z": -2400
+      },
+      "first_land_sample": {
+        "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+        "height": 11.611083984375,
+        "x": -2450,
+        "z": -2400
+      },
+      "inland_samples": [
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+          "height": 11.611083984375,
+          "x": -2450,
+          "z": -2400
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+          "height": 15.0001220703125,
+          "x": -2400,
+          "z": -2400
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+          "height": 15.0001220703125,
+          "x": -2350,
+          "z": -2400
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-4/Collision",
+          "height": 15.0550537109375,
+          "x": -2300,
+          "z": -2400
+        }
+      ],
+      "shoreline_bracket_x": [
+        -2500,
+        -2450
+      ],
+      "projection_of_first_land": {
+        "in_front": true,
+        "screen_xy": [
+          1109.3794905067602,
+          511.66850999799084
+        ],
+        "in_frustum_approx": true,
+        "depth": 729.203103792496
+      }
+    },
+    {
+      "z": -2350,
+      "sea_sample": {
+        "collider": "/root/Skyfarer/World/Ocean/SeaCollision",
+        "height": 0.0,
+        "x": -2500,
+        "z": -2350
+      },
+      "first_land_sample": {
+        "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+        "height": 2.0765380859375,
+        "x": -2450,
+        "z": -2350
+      },
+      "inland_samples": [
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+          "height": 2.0765380859375,
+          "x": -2450,
+          "z": -2350
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+          "height": 14.2677001953125,
+          "x": -2400,
+          "z": -2350
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-4/Collision",
+          "height": 14.9998779296875,
+          "x": -2350,
+          "z": -2350
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-4/Collision",
+          "height": 15.1302490234375,
+          "x": -2300,
+          "z": -2350
+        }
+      ],
+      "shoreline_bracket_x": [
+        -2500,
+        -2450
+      ],
+      "projection_of_first_land": {
+        "in_front": true,
+        "screen_xy": [
+          1097.835490431823,
+          523.636331433308
+        ],
+        "in_frustum_approx": true,
+        "depth": 688.1792671031366
+      }
+    },
+    {
+      "z": -2300,
+      "sea_sample": {
+        "collider": "/root/Skyfarer/World/Ocean/SeaCollision",
+        "height": 0.0,
+        "x": -2450,
+        "z": -2300
+      },
+      "first_land_sample": {
+        "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision",
+        "height": 6.3604736328125,
+        "x": -2400,
+        "z": -2300
+      },
+      "inland_samples": [
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision",
+          "height": 6.3604736328125,
+          "x": -2400,
+          "z": -2300
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision",
+          "height": 14.999755859375,
+          "x": -2350,
+          "z": -2300
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 15.403564453125,
+          "x": -2300,
+          "z": -2300
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 25.9984130859375,
+          "x": -2250,
+          "z": -2300
+        }
+      ],
+      "shoreline_bracket_x": [
+        -2450,
+        -2400
+      ],
+      "projection_of_first_land": {
+        "in_front": true,
+        "screen_xy": [
+          1140.9427052436758,
+          525.3470822799258
+        ],
+        "in_frustum_approx": true,
+        "depth": 618.5720127492096
+      }
+    },
+    {
+      "z": -2250,
+      "sea_sample": {
+        "collider": "/root/Skyfarer/World/Ocean/SeaCollision",
+        "height": 0.0,
+        "x": -2400,
+        "z": -2250
+      },
+      "first_land_sample": {
+        "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision",
+        "height": 12.2119140625,
+        "x": -2350,
+        "z": -2250
+      },
+      "inland_samples": [
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision",
+          "height": 12.2119140625,
+          "x": -2350,
+          "z": -2250
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 18.614013671875,
+          "x": -2300,
+          "z": -2250
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 18.195556640625,
+          "x": -2250,
+          "z": -2250
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 30.4639892578125,
+          "x": -2200,
+          "z": -2250
+        }
+      ],
+      "shoreline_bracket_x": [
+        -2400,
+        -2350
+      ],
+      "projection_of_first_land": {
+        "in_front": true,
+        "screen_xy": [
+          1194.9868969071276,
+          525.5738391607546
+        ],
+        "in_frustum_approx": true,
+        "depth": 548.9567772596432
+      }
+    },
+    {
+      "z": -2200,
+      "sea_sample": {
+        "collider": "/root/Skyfarer/World/Ocean/SeaCollision",
+        "height": 0.0,
+        "x": -2400,
+        "z": -2200
+      },
+      "first_land_sample": {
+        "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision",
+        "height": 2.485107421875,
+        "x": -2350,
+        "z": -2200
+      },
+      "inland_samples": [
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-4_-3/Collision",
+          "height": 2.485107421875,
+          "x": -2350,
+          "z": -2200
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 17.985595703125,
+          "x": -2300,
+          "z": -2200
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 18.8680419921875,
+          "x": -2250,
+          "z": -2200
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 19.013671875,
+          "x": -2200,
+          "z": -2200
+        }
+      ],
+      "shoreline_bracket_x": [
+        -2400,
+        -2350
+      ],
+      "projection_of_first_land": {
+        "in_front": true,
+        "screen_xy": [
+          1186.2598784896295,
+          543.1658703070129
+        ],
+        "in_frustum_approx": true,
+        "depth": 507.9339194884859
+      }
+    },
+    {
+      "z": -2150,
+      "sea_sample": {
+        "collider": "/root/Skyfarer/World/Ocean/SeaCollision",
+        "height": 0.0,
+        "x": -2350,
+        "z": -2150
+      },
+      "first_land_sample": {
+        "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+        "height": 6.8060302734375,
+        "x": -2300,
+        "z": -2150
+      },
+      "inland_samples": [
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 6.8060302734375,
+          "x": -2300,
+          "z": -2150
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 19.6558837890625,
+          "x": -2250,
+          "z": -2150
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 17.4044189453125,
+          "x": -2200,
+          "z": -2150
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 19.349853515625,
+          "x": -2150,
+          "z": -2150
+        }
+      ],
+      "shoreline_bracket_x": [
+        -2350,
+        -2300
+      ],
+      "projection_of_first_land": {
+        "in_front": true,
+        "screen_xy": [
+          1261.135486512398,
+          548.6247712035607
+        ],
+        "in_frustum_approx": true,
+        "depth": 438.32647680934303
+      }
+    },
+    {
+      "z": -2100,
+      "sea_sample": {
+        "collider": "/root/Skyfarer/World/Ocean/SeaCollision",
+        "height": 0.0,
+        "x": -2300,
+        "z": -2100
+      },
+      "first_land_sample": {
+        "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+        "height": 14.0694580078125,
+        "x": -2250,
+        "z": -2100
+      },
+      "inland_samples": [
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 14.0694580078125,
+          "x": -2250,
+          "z": -2100
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 19.3074951171875,
+          "x": -2200,
+          "z": -2100
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 19.4195556640625,
+          "x": -2150,
+          "z": -2100
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 20.6859130859375,
+          "x": -2100,
+          "z": -2100
+        }
+      ],
+      "shoreline_bracket_x": [
+        -2300,
+        -2250
+      ],
+      "projection_of_first_land": {
+        "in_front": true,
+        "screen_xy": [
+          1364.302864997383,
+          550.7857444661095
+        ],
+        "in_frustum_approx": true,
+        "depth": 368.7040520201937
+      }
+    },
+    {
+      "z": -2050,
+      "sea_sample": {
+        "collider": "/root/Skyfarer/World/Ocean/SeaCollision",
+        "height": 0.0,
+        "x": -2300,
+        "z": -2050
+      },
+      "first_land_sample": {
+        "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+        "height": 2.8695068359375,
+        "x": -2250,
+        "z": -2050
+      },
+      "inland_samples": [
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 2.8695068359375,
+          "x": -2250,
+          "z": -2050
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 18.8681640625,
+          "x": -2200,
+          "z": -2050
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 20.19677734375,
+          "x": -2150,
+          "z": -2050
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 18.6055908203125,
+          "x": -2100,
+          "z": -2050
+        }
+      ],
+      "shoreline_bracket_x": [
+        -2300,
+        -2250
+      ],
+      "projection_of_first_land": {
+        "in_front": true,
+        "screen_xy": [
+          1371.9598687649284,
+          584.2294029493687
+        ],
+        "in_frustum_approx": true,
+        "depth": 327.6886949378378
+      }
+    },
+    {
+      "z": -2000,
+      "sea_sample": {
+        "collider": "/root/Skyfarer/World/Ocean/SeaCollision",
+        "height": 0.0,
+        "x": -2250,
+        "z": -2000
+      },
+      "first_land_sample": {
+        "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+        "height": 7.2613525390625,
+        "x": -2200,
+        "z": -2000
+      },
+      "inland_samples": [
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 7.2613525390625,
+          "x": -2200,
+          "z": -2000
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 19.9420166015625,
+          "x": -2150,
+          "z": -2000
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 17.38720703125,
+          "x": -2100,
+          "z": -2000
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 16.446044921875,
+          "x": -2050,
+          "z": -2000
+        }
+      ],
+      "shoreline_bracket_x": [
+        -2250,
+        -2200
+      ],
+      "projection_of_first_land": {
+        "in_front": true,
+        "screen_xy": [
+          1549.2153650184446,
+          604.3916621413566
+        ],
+        "in_frustum_approx": true,
+        "depth": 258.08089114664705
+      }
+    },
+    {
+      "z": -1950,
+      "sea_sample": {
+        "collider": "/root/Skyfarer/World/Ocean/SeaCollision",
+        "height": 0.0,
+        "x": -2200,
+        "z": -1950
+      },
+      "first_land_sample": {
+        "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+        "height": 12.3486328125,
+        "x": -2150,
+        "z": -1950
+      },
+      "inland_samples": [
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 12.3486328125,
+          "x": -2150,
+          "z": -1950
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 17.59228515625,
+          "x": -2100,
+          "z": -1950
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 15.9918212890625,
+          "x": -2050,
+          "z": -1950
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 17.2786865234375,
+          "x": -2000,
+          "z": -1950
+        }
+      ],
+      "shoreline_bracket_x": [
+        -2200,
+        -2150
+      ],
+      "projection_of_first_land": {
+        "in_front": true,
+        "screen_xy": [
+          1857.419787119027,
+          636.97056857239
+        ],
+        "in_frustum_approx": false,
+        "depth": 188.46954646847416
+      }
+    },
+    {
+      "z": -1900,
+      "sea_sample": {
+        "collider": "/root/Skyfarer/World/Ocean/SeaCollision",
+        "height": 0.0,
+        "x": -2200,
+        "z": -1900
+      },
+      "first_land_sample": {
+        "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+        "height": 3.2137451171875,
+        "x": -2150,
+        "z": -1900
+      },
+      "inland_samples": [
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 3.2137451171875,
+          "x": -2150,
+          "z": -1900
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 15.9608154296875,
+          "x": -2100,
+          "z": -1900
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 18.0635986328125,
+          "x": -2050,
+          "z": -1900
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 17.5645751953125,
+          "x": -2000,
+          "z": -1900
+        }
+      ],
+      "shoreline_bracket_x": [
+        -2200,
+        -2150
+      ],
+      "projection_of_first_land": {
+        "in_front": true,
+        "screen_xy": [
+          2011.683576108472,
+          725.8734817003863
+        ],
+        "in_frustum_approx": false,
+        "depth": 147.44367487232523
+      }
+    },
+    {
+      "z": -1850,
+      "sea_sample": {
+        "collider": "/root/Skyfarer/World/Ocean/SeaCollision",
+        "height": 0.0,
+        "x": -2150,
+        "z": -1850
+      },
+      "first_land_sample": {
+        "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+        "height": 7.685791015625,
+        "x": -2100,
+        "z": -1850
+      },
+      "inland_samples": [
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 7.685791015625,
+          "x": -2100,
+          "z": -1850
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 18.73876953125,
+          "x": -2050,
+          "z": -1850
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 19.1546630859375,
+          "x": -2000,
+          "z": -1850
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 17.0677490234375,
+          "x": -1950,
+          "z": -1850
+        }
+      ],
+      "shoreline_bracket_x": [
+        -2150,
+        -2100
+      ],
+      "projection_of_first_land": {
+        "in_front": true,
+        "screen_xy": [
+          3171.5212086586484,
+          918.7064334658999
+        ],
+        "in_frustum_approx": false,
+        "depth": 77.83546273239881
+      }
+    },
+    {
+      "z": -1800,
+      "sea_sample": {
+        "collider": "/root/Skyfarer/World/Ocean/SeaCollision",
+        "height": 0.0,
+        "x": -2100,
+        "z": -1800
+      },
+      "first_land_sample": {
+        "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+        "height": 14.999267578125,
+        "x": -2050,
+        "z": -1800
+      },
+      "inland_samples": [
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 14.999267578125,
+          "x": -2050,
+          "z": -1800
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 19.3006591796875,
+          "x": -2000,
+          "z": -1800
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 17.359130859375,
+          "x": -1950,
+          "z": -1800
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 16.8680419921875,
+          "x": -1900,
+          "z": -1800
+        }
+      ],
+      "shoreline_bracket_x": [
+        -2100,
+        -2050
+      ],
+      "projection_of_first_land": {
+        "in_front": true,
+        "screen_xy": [
+          23998.141068552293,
+          4148.942345947022
+        ],
+        "in_frustum_approx": false,
+        "depth": 8.212783113749254
+      }
+    },
+    {
+      "z": -1750,
+      "sea_sample": {
+        "collider": "/root/Skyfarer/World/Ocean/SeaCollision",
+        "height": 0.0,
+        "x": -2100,
+        "z": -1750
+      },
+      "first_land_sample": {
+        "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+        "height": 3.584228515625,
+        "x": -2050,
+        "z": -1750
+      },
+      "inland_samples": [
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 3.584228515625,
+          "x": -2050,
+          "z": -1750
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 17.843994140625,
+          "x": -2000,
+          "z": -1750
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 18.9840087890625,
+          "x": -1950,
+          "z": -1750
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 17.5826416015625,
+          "x": -1900,
+          "z": -1750
+        }
+      ],
+      "shoreline_bracket_x": [
+        -2100,
+        -2050
+      ],
+      "projection_of_first_land": {
+        "in_front": false,
+        "depth": -32.801478823291134
+      }
+    },
+    {
+      "z": -1700,
+      "sea_sample": {
+        "collider": "/root/Skyfarer/World/Ocean/SeaCollision",
+        "height": 0.0,
+        "x": -2050,
+        "z": -1700
+      },
+      "first_land_sample": {
+        "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+        "height": 8.078857421875,
+        "x": -2000,
+        "z": -1700
+      },
+      "inland_samples": [
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 8.078857421875,
+          "x": -2000,
+          "z": -1700
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 18.37646484375,
+          "x": -1950,
+          "z": -1700
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 19.8795166015625,
+          "x": -1900,
+          "z": -1700
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 18.75146484375,
+          "x": -1850,
+          "z": -1700
+        }
+      ],
+      "shoreline_bracket_x": [
+        -2050,
+        -2000
+      ],
+      "projection_of_first_land": {
+        "in_front": false,
+        "depth": -102.40980594726032
+      }
+    },
+    {
+      "z": -1650,
+      "sea_sample": {
+        "collider": "/root/Skyfarer/World/Ocean/SeaCollision",
+        "height": 0.0,
+        "x": -2000,
+        "z": -1650
+      },
+      "first_land_sample": {
+        "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+        "height": 15.6771240234375,
+        "x": -1950,
+        "z": -1650
+      },
+      "inland_samples": [
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 15.6771240234375,
+          "x": -1950,
+          "z": -1650
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 19.7215576171875,
+          "x": -1900,
+          "z": -1650
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 19.2420654296875,
+          "x": -1850,
+          "z": -1650
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 15.75048828125,
+          "x": -1800,
+          "z": -1650
+        }
+      ],
+      "shoreline_bracket_x": [
+        -2000,
+        -1950
+      ],
+      "projection_of_first_land": {
+        "in_front": false,
+        "depth": -172.0339356079196
+      }
+    },
+    {
+      "z": -1600,
+      "sea_sample": {
+        "collider": "/root/Skyfarer/World/Ocean/SeaCollision",
+        "height": 0.0,
+        "x": -2000,
+        "z": -1600
+      },
+      "first_land_sample": {
+        "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+        "height": 3.9112548828125,
+        "x": -1950,
+        "z": -1600
+      },
+      "inland_samples": [
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 3.9112548828125,
+          "x": -1950,
+          "z": -1600
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 17.001953125,
+          "x": -1900,
+          "z": -1600
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 17.30029296875,
+          "x": -1850,
+          "z": -1600
+        },
+        {
+          "collider": "/root/Skyfarer/World/Terrain/Ground_-3_-3/Collision",
+          "height": 15.5897216796875,
+          "x": -1800,
+          "z": -1600
+        }
+      ],
+      "shoreline_bracket_x": [
+        -2000,
+        -1950
+      ],
+      "projection_of_first_land": {
+        "in_front": false,
+        "depth": -213.04641125231703
+      }
+    }
+  ],
+  "suggested_probe_zones": [
+    {
+      "name": "near_right_port",
+      "suggested_probe_bbox_xz": [
+        -2310,
+        -2160,
+        -2140,
+        -2000
+      ],
+      "anchors_z": [
+        -2100,
+        -2050,
+        -2000
+      ],
+      "role": "Near-right low wharf and small shore shed; nearer part risks right-frame clipping.",
+      "priority": 2
+    },
+    {
+      "name": "main_right_village",
+      "suggested_probe_bbox_xz": [
+        -2470,
+        -2280,
+        -2350,
+        -2190
+      ],
+      "anchors_z": [
+        -2350,
+        -2300,
+        -2250,
+        -2200
+      ],
+      "role": "Primary right-hand clustered houses and wharf, low edge plus raised houses inland.",
+      "priority": 1
+    },
+    {
+      "name": "mid_distance_harbor",
+      "suggested_probe_bbox_xz": [
+        -2640,
+        -2430,
+        -2610,
+        -2430
+      ],
+      "anchors_z": [
+        -2600,
+        -2550,
+        -2500,
+        -2450
+      ],
+      "role": "Secondary small harbor/jetty and light rhythm toward distance.",
+      "priority": 3
+    },
+    {
+      "name": "far_light_cluster",
+      "suggested_probe_bbox_xz": [
+        -2820,
+        -2580,
+        -2800,
+        -2630
+      ],
+      "anchors_z": [
+        -2800,
+        -2750,
+        -2700,
+        -2650
+      ],
+      "role": "Farther warm light clusters, limited readable architectural detail at this camera.",
+      "priority": 4
+    }
+  ],
+  "interpretation": [
+    "Sea height0 hit SeaCollision; does not measure seabed or piling-bearing surface.",
+    "Between adjacent sea and land hits50m apart, shoreline position only bracketed; no exact contact interpolation is authorized as measurement.",
+    "World z-2000..-2800 shoreline approximately in rightfrustum;z-1950..-1800 offshoreedge projects rightoffscreen;z-1750..-1600 edge behindcamera.",
+    "Land samples often rise from0.8..12m firsthit to15..20m within50..100m; not a flat quayside proof.",
+    "Proposed ranges include sea and land intentionally for future local survey; not safe foundation rectangles."
+  ],
+  "reference_requirements": [
+    "1342: irregular multilevel rightshore village with broken low docks and warm light clusters receding, not an evenly spaced line.",
+    "1332: working low timber waterfront below sloped settlement and nearby high lighthouse cape; fog does not substitute solid cliff/wharf/route construction."
+  ],
+  "next_probe_request": "Fine local terrain-only and sea separately, center/corners for actual modules, landward path/step approach, waterfront slope and nearshore seabed if pile foundations are intended; use true scene collisions and confirm visibility without altering camera to hide layout problems."
+}

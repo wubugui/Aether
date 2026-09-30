@@ -1,0 +1,148 @@
+{
+  "functional_checks_passed": true,
+  "check_count": 29,
+  "full_log_clean": false,
+  "log_issues": [
+    "ERROR: Texture with GL ID of 21: leaked 349524 bytes.",
+    "ERROR: Texture with GL ID of 22: leaked 349524 bytes."
+  ],
+  "visual_acceptance": "not_passed",
+  "total_goal_complete": false,
+  "sources": [
+    {
+      "path": "scripts/game39.gd",
+      "bytes": 2637,
+      "sha256": "4a1c95a98eb34eccfd8dab2913991ac259a5aa23fb7cd6d6394d902067b7a3c0"
+    },
+    {
+      "path": "scripts/environment39.gd",
+      "bytes": 5305,
+      "sha256": "7fb505f458c6568d9118283f4114cbf497ba452aa213566ad1823ac6de79b30d"
+    },
+    {
+      "path": "scripts/environment39_sky.gdshader",
+      "bytes": 926,
+      "sha256": "25466971712e6f222b73bd8ad731c633cbc6660d08f0fd6a016a50f3078695c8"
+    },
+    {
+      "path": "assets/reference_views39.json",
+      "bytes": 54543,
+      "sha256": "4c879b2bedc23a7826fb867f75e91879fef9b18e04aef8e0c6eead8a0ca7277c"
+    },
+    {
+      "path": "tools/verify_candidate39.gd",
+      "bytes": 6245,
+      "sha256": "c72c3483092016bb15ce4cdd215ec9cd31fb39e77f369e9728ec730b267c5b0a"
+    },
+    {
+      "path": "scenes/candidate39/cabin_a.tscn",
+      "bytes": 624435,
+      "sha256": "f87f8d155dfa2965e9445094a26c765dd4892534e831c583a893a4bc385f694f"
+    },
+    {
+      "path": "scenes/candidate39/cabin_b.tscn",
+      "bytes": 702780,
+      "sha256": "825ed5792867a89857d6a3ddfdc9b1ea25a3c0b8db2aefc3adea88ebc5ca279d"
+    },
+    {
+      "path": "scenes/candidate39/cloud_sea_tile.tscn",
+      "bytes": 464682,
+      "sha256": "7895c883b513b12b9c066fc868475c755829550214c06b8aee572e87662d00af"
+    },
+    {
+      "path": "scenes/candidate39/floating_island_1.tscn",
+      "bytes": 71946,
+      "sha256": "825c48e8e596398777f1607e7c31d42ecea2f2842694749873fef290d4e3f257"
+    },
+    {
+      "path": "scenes/candidate39/floating_island_2.tscn",
+      "bytes": 50846,
+      "sha256": "2babbfedeb2a93ef1088b3b6f7a34c163674c94feea7f672fc0a7e1246eec947"
+    },
+    {
+      "path": "scenes/candidate39/floating_island_3.tscn",
+      "bytes": 89372,
+      "sha256": "c0e51f951bc85be206c759a9d40c50a6a97417075f457694b4aa2a6b526936f2"
+    },
+    {
+      "path": "scenes/candidate39/Game39.tscn",
+      "bytes": 101603097,
+      "sha256": "a3b8508a6983a7d8f2d069cd20bef0a6ba18331ffb7bac6fcc877f860164bfb8"
+    },
+    {
+      "path": "scenes/candidate39/SkyRegion39.tscn",
+      "bytes": 2323165,
+      "sha256": "6a3f159f00804522015666a4d359626398c5cab0d508863f2310f0037a426ca0"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "captures/acceptance39/gpu-c/boot-day.png",
+      "bytes": 781252,
+      "sha256": "1a54c59d0acdf5a3b27e9e131c0cca2991f9194da0628a71cc82fd9f4e62eae2"
+    },
+    {
+      "path": "captures/acceptance39/gpu-c/high-altitude-flight.png",
+      "bytes": 585052,
+      "sha256": "5d5db67e1c95aa38ee2e1f7e3df252c1742d7b50fa42f57e68481a05073ffb0c"
+    },
+    {
+      "path": "captures/acceptance39/gpu-c/reference-1216.png",
+      "bytes": 645347,
+      "sha256": "4d9497cf3f828d3d158cfff8d84fa1857465934a7ee73fd6c12ec38b96c828cc"
+    },
+    {
+      "path": "captures/acceptance39/gpu-c/reference-1274-back.png",
+      "bytes": 269728,
+      "sha256": "56bc08dfc2f951951258264c440c03ed27d27c02cd443af796db55442d99bb21"
+    },
+    {
+      "path": "captures/acceptance39/gpu-c/reference-1274-side.png",
+      "bytes": 304945,
+      "sha256": "dc051e9c635b5c6e186e5f8ab62fff05e0d41b9142f84dfd21a8250a9684dc1c"
+    },
+    {
+      "path": "captures/acceptance39/gpu-c/reference-1274.png",
+      "bytes": 310808,
+      "sha256": "770259e07020b2777c79a237b1cc2c986b3467b7c5b4aebd66902a4b34989278"
+    },
+    {
+      "path": "captures/acceptance39/gpu-c/reference-1278-back.png",
+      "bytes": 288331,
+      "sha256": "c2ea3a4d261699c39b4903ad1578c5f8677b4cf2c8e6084116b6f92e74d41748"
+    },
+    {
+      "path": "captures/acceptance39/gpu-c/reference-1278-side.png",
+      "bytes": 267470,
+      "sha256": "dae3171dfcd9f04e31d375f51a2e0e644c6baaeb13ca639d342ff2850e0ad17d"
+    },
+    {
+      "path": "captures/acceptance39/gpu-c/reference-1278.png",
+      "bytes": 439513,
+      "sha256": "e62b847590ed7f865b7c98afe58fbb5ce590375a12d9e79444daaea96b62c65f"
+    },
+    {
+      "path": "captures/acceptance39/gpu-c/reference-1342.png",
+      "bytes": 473758,
+      "sha256": "79fac1b567b6b18213c66e9b3bba14dbaf14f10e8c06b0112e2f55edb4781b13"
+    },
+    {
+      "path": "captures/acceptance39/gpu-c/report.json",
+      "bytes": 12111,
+      "sha256": "66e470f4f5b13b70e9ae5f8d3508cff83686397aa9253cc555f9feba026bcc22"
+    },
+    {
+      "path": "captures/acceptance39/gpu-c/same-camera-day-restored.png",
+      "bytes": 781252,
+      "sha256": "1a54c59d0acdf5a3b27e9e131c0cca2991f9194da0628a71cc82fd9f4e62eae2"
+    },
+    {
+      "path": "captures/acceptance39/gpu-c/same-camera-night.png",
+      "bytes": 521796,
+      "sha256": "8e74e6b0a68f4a56781f2ba1121dc76bbdd24db500a58b7f018862311851f8a6"
+    }
+  ],
+  "single_world_instance": true,
+  "raw_screenshot_count": 12,
+  "scope": "Limited native live environment/high-altitude integration. Does not verify all 21 references, complete route, cabin accessibility or full artistic fidelity."
+}

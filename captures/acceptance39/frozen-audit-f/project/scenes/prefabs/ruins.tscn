@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/asset_instance.gd" id="1_tmng0"]
+[ext_resource type="Material" path="res://materials/world.tres" id="2_elmpe"]
+[ext_resource type="PackedScene" path="res://assets/models/ruins.glb" id="3_x642h"]
+[ext_resource type="Shape3D" path="res://assets/collision/ruins.res" id="4_2vqmp"]
+
+[node name="ruins" type="Node3D"]
+script = ExtResource("1_tmng0")
+asset_kind = "ruins"
+surface_material = ExtResource("2_elmpe")
+
+[node name="Model" parent="." instance=ExtResource("3_x642h")]
+
+[node name="Collision" type="StaticBody3D" parent="."]
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision"]
+shape = ExtResource("4_2vqmp")

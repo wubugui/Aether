@@ -1,0 +1,40 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 581.29 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 4070 SUPER
+
+WORLD READY: 208 independent terrain scenes, 54917 saved scatter instances, 169 scene landmarks, 6 scene ports
+PASS 208 complete world-space Blender terrain chunks 
+PASS 27 independent native environment prefabs 
+PASS terrain has active physics colliders 208
+PASS airship collider generated from actual balloon geometry 
+PASS actual mesh / collision / height agreement at (240.0, -96.0) { "expected": 22.224781036377, "actual": 22.224853515625 }
+PASS actual mesh / collision / height agreement at (1060.0, -2940.0) { "expected": 252.290863037109, "actual": 252.291015625 }
+PASS actual mesh / collision / height agreement at (1450.0, -3270.0) { "expected": 76.168083190918, "actual": 76.16796875 }
+PASS actual mesh / collision / height agreement at (2670.0, 1200.0) { "expected": 559.995422363281, "actual": 559.990600585938 }
+PASS actual mesh / collision / height agreement at (-1650.0, 2870.0) { "expected": 25.1941452026367, "actual": 25.194580078125 }
+PASS actual mesh / collision / height agreement at (768.1, -900.0) { "expected": 0.0, "actual": 0.0 }
+PASS actual mesh / collision / height agreement at (767.9, -900.0) { "expected": 0.0, "actual": 0.0 }
+PASS actual mesh / collision / height agreement at (5375.9, 1650.0) { "expected": 22.7051277160645, "actual": 22.705322265625 }
+PASS actual mesh / collision / height agreement at (5376.1, 1650.0) { "expected": 22.7108612060547, "actual": 22.7109375 }
+PASS smoothed camera corrects actual assembled cliff obstruction at orbit 3.14159265358979 
+PASS smoothed camera corrects actual assembled cliff obstruction at orbit 2.04203522483337 
+PASS smoothed camera corrects actual assembled cliff obstruction at orbit 4.24115008234622 
+PASS physical W throttle input accelerates the body 12.2117919921875
+PASS E ascent and D steering work [154.241668701172, -0.759]
+PASS actual world-space flight displacement 18.8710708618164
+PASS forward velocity follows the modeled ship nose 
+PASS Space brakes to a stable hover 0.0
+PASS sea collision prevents descending through the world 3.85061264038086
+PASS impact produces damage feedback 0.895
+PASS cannot refill fuel away from a dock 
+PASS dock rejects an unsafe approach speed 
+PASS low-speed docking succeeds 
+PASS dock repairs, refuels and records exploration progress 
+PASS dock platform is a physical modeled surface 
+PASS 3D flight ring grants progress and disappears 
+PASS terrain continues outside the initial region 73
+PASS streamed terrain has matching collision 
+PASS streamed terrain uses the same outward normals and front-face winding as imported Blender terrain 
+PASS camera can orbit to the opposite side of the ship 
+PASS rescue resets position and motion 
+PASS save and restore persist flight state using an isolated test file 
+GAME VALIDATION: 35/35 passed

@@ -1,0 +1,680 @@
+{
+  "schema_version": 1,
+  "run_id": "19h-native-lighthouse-final-20260908T082434Z-482422f7fede4b64b58f197a71159771",
+  "round": "19h-native-lighthouse-final",
+  "started_utc": "2026-09-08T08:24:34.833455+00:00",
+  "workspace": "E:\\FeiTing",
+  "run_directory": "E:\\FeiTing\\captures\\validation_runs\\19h-native-lighthouse-final-20260908T082434Z-482422f7fede4b64b58f197a71159771",
+  "status": "passed",
+  "passed": true,
+  "export_windows_requested": false,
+  "capture_views_requested": true,
+  "expected_counts": {
+    "game-test": 36
+  },
+  "stages": [
+    {
+      "name": "native-check",
+      "run_id": "19h-native-lighthouse-final-20260908T082434Z-482422f7fede4b64b58f197a71159771",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\19h-native-lighthouse-final-20260908T082434Z-482422f7fede4b64b58f197a71159771\\validation-scripts\\native_lighthouse_19.gd",
+        "--quit-after",
+        "600",
+        "--",
+        "--mode=check",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\19h-native-lighthouse-final-20260908T082434Z-482422f7fede4b64b58f197a71159771\\reports\\native-check.json",
+        "--validation-run=19h-native-lighthouse-final-20260908T082434Z-482422f7fede4b64b58f197a71159771"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788855881210454600,
+      "started_utc": "2026-09-08T08:24:41.210454+00:00",
+      "input_manifest_sha256": "7f0f318b560371bfbe87f9a7a7416f543996e92b2eec49588224ebb0568e8882",
+      "exit_code": 0,
+      "finished_ns": 1788855884875764700,
+      "finished_utc": "2026-09-08T08:24:50.855508+00:00"
+    },
+    {
+      "name": "capture-harbor-front",
+      "run_id": "19h-native-lighthouse-final-20260908T082434Z-482422f7fede4b64b58f197a71159771",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\19h-native-lighthouse-final-20260908T082434Z-482422f7fede4b64b58f197a71159771\\validation-scripts\\capture_native_lighthouse_19.gd",
+        "--",
+        "--site=harbor",
+        "--view=front",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\19h-native-lighthouse-final-20260908T082434Z-482422f7fede4b64b58f197a71159771\\images\\harbor-front.png",
+        "--validation-run=19h-native-lighthouse-final-20260908T082434Z-482422f7fede4b64b58f197a71159771"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788855896993730500,
+      "started_utc": "2026-09-08T08:24:56.993730+00:00",
+      "input_manifest_sha256": "7f0f318b560371bfbe87f9a7a7416f543996e92b2eec49588224ebb0568e8882",
+      "exit_code": 0,
+      "finished_ns": 1788855902098093600,
+      "image": "images/harbor-front.png",
+      "finished_utc": "2026-09-08T08:25:08.126696+00:00"
+    },
+    {
+      "name": "capture-harbor-back",
+      "run_id": "19h-native-lighthouse-final-20260908T082434Z-482422f7fede4b64b58f197a71159771",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\19h-native-lighthouse-final-20260908T082434Z-482422f7fede4b64b58f197a71159771\\validation-scripts\\capture_native_lighthouse_19.gd",
+        "--",
+        "--site=harbor",
+        "--view=back",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\19h-native-lighthouse-final-20260908T082434Z-482422f7fede4b64b58f197a71159771\\images\\harbor-back.png",
+        "--validation-run=19h-native-lighthouse-final-20260908T082434Z-482422f7fede4b64b58f197a71159771"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788855914173079400,
+      "started_utc": "2026-09-08T08:25:14.173079+00:00",
+      "input_manifest_sha256": "7f0f318b560371bfbe87f9a7a7416f543996e92b2eec49588224ebb0568e8882",
+      "exit_code": 0,
+      "finished_ns": 1788855919325295200,
+      "image": "images/harbor-back.png",
+      "finished_utc": "2026-09-08T08:25:25.412924+00:00"
+    },
+    {
+      "name": "capture-harbor-gallery",
+      "run_id": "19h-native-lighthouse-final-20260908T082434Z-482422f7fede4b64b58f197a71159771",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\19h-native-lighthouse-final-20260908T082434Z-482422f7fede4b64b58f197a71159771\\validation-scripts\\capture_native_lighthouse_19.gd",
+        "--",
+        "--site=harbor",
+        "--view=gallery",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\19h-native-lighthouse-final-20260908T082434Z-482422f7fede4b64b58f197a71159771\\images\\harbor-gallery.png",
+        "--validation-run=19h-native-lighthouse-final-20260908T082434Z-482422f7fede4b64b58f197a71159771"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788855931625559300,
+      "started_utc": "2026-09-08T08:25:31.625559+00:00",
+      "input_manifest_sha256": "7f0f318b560371bfbe87f9a7a7416f543996e92b2eec49588224ebb0568e8882",
+      "exit_code": 0,
+      "finished_ns": 1788855936842933600,
+      "image": "images/harbor-gallery.png",
+      "finished_utc": "2026-09-08T08:25:43.092897+00:00"
+    },
+    {
+      "name": "capture-harbor-context",
+      "run_id": "19h-native-lighthouse-final-20260908T082434Z-482422f7fede4b64b58f197a71159771",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\19h-native-lighthouse-final-20260908T082434Z-482422f7fede4b64b58f197a71159771\\validation-scripts\\capture_native_lighthouse_19.gd",
+        "--",
+        "--site=harbor",
+        "--view=context",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\19h-native-lighthouse-final-20260908T082434Z-482422f7fede4b64b58f197a71159771\\images\\harbor-context.png",
+        "--validation-run=19h-native-lighthouse-final-20260908T082434Z-482422f7fede4b64b58f197a71159771"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788855949235401800,
+      "started_utc": "2026-09-08T08:25:49.235401+00:00",
+      "input_manifest_sha256": "7f0f318b560371bfbe87f9a7a7416f543996e92b2eec49588224ebb0568e8882",
+      "exit_code": 0,
+      "finished_ns": 1788855954428753700,
+      "image": "images/harbor-context.png",
+      "finished_utc": "2026-09-08T08:26:00.699315+00:00"
+    },
+    {
+      "name": "capture-harbor-door",
+      "run_id": "19h-native-lighthouse-final-20260908T082434Z-482422f7fede4b64b58f197a71159771",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\19h-native-lighthouse-final-20260908T082434Z-482422f7fede4b64b58f197a71159771\\validation-scripts\\capture_native_lighthouse_19.gd",
+        "--",
+        "--site=harbor",
+        "--view=door",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\19h-native-lighthouse-final-20260908T082434Z-482422f7fede4b64b58f197a71159771\\images\\harbor-door.png",
+        "--validation-run=19h-native-lighthouse-final-20260908T082434Z-482422f7fede4b64b58f197a71159771"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788855966750927800,
+      "started_utc": "2026-09-08T08:26:06.750927+00:00",
+      "input_manifest_sha256": "7f0f318b560371bfbe87f9a7a7416f543996e92b2eec49588224ebb0568e8882",
+      "exit_code": 0,
+      "finished_ns": 1788855971935258900,
+      "image": "images/harbor-door.png",
+      "finished_utc": "2026-09-08T08:26:17.998903+00:00"
+    },
+    {
+      "name": "capture-remote-front",
+      "run_id": "19h-native-lighthouse-final-20260908T082434Z-482422f7fede4b64b58f197a71159771",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\19h-native-lighthouse-final-20260908T082434Z-482422f7fede4b64b58f197a71159771\\validation-scripts\\capture_native_lighthouse_19.gd",
+        "--",
+        "--site=remote",
+        "--view=front",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\19h-native-lighthouse-final-20260908T082434Z-482422f7fede4b64b58f197a71159771\\images\\remote-front.png",
+        "--validation-run=19h-native-lighthouse-final-20260908T082434Z-482422f7fede4b64b58f197a71159771"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788855984181780500,
+      "started_utc": "2026-09-08T08:26:24.181780+00:00",
+      "input_manifest_sha256": "7f0f318b560371bfbe87f9a7a7416f543996e92b2eec49588224ebb0568e8882",
+      "exit_code": 0,
+      "finished_ns": 1788855989171638300,
+      "image": "images/remote-front.png",
+      "finished_utc": "2026-09-08T08:26:35.376045+00:00"
+    },
+    {
+      "name": "capture-remote-door",
+      "run_id": "19h-native-lighthouse-final-20260908T082434Z-482422f7fede4b64b58f197a71159771",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\19h-native-lighthouse-final-20260908T082434Z-482422f7fede4b64b58f197a71159771\\validation-scripts\\capture_native_lighthouse_19.gd",
+        "--",
+        "--site=remote",
+        "--view=door",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\19h-native-lighthouse-final-20260908T082434Z-482422f7fede4b64b58f197a71159771\\images\\remote-door.png",
+        "--validation-run=19h-native-lighthouse-final-20260908T082434Z-482422f7fede4b64b58f197a71159771"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788856001760616100,
+      "started_utc": "2026-09-08T08:26:41.760616+00:00",
+      "input_manifest_sha256": "7f0f318b560371bfbe87f9a7a7416f543996e92b2eec49588224ebb0568e8882",
+      "exit_code": 0,
+      "finished_ns": 1788856006820796000,
+      "image": "images/remote-door.png",
+      "finished_utc": "2026-09-08T08:26:53.311064+00:00"
+    },
+    {
+      "name": "capture-opening",
+      "run_id": "19h-native-lighthouse-final-20260908T082434Z-482422f7fede4b64b58f197a71159771",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--",
+        "--capture",
+        "--view=opening",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\19h-native-lighthouse-final-20260908T082434Z-482422f7fede4b64b58f197a71159771\\images\\opening.png",
+        "--validation-run=19h-native-lighthouse-final-20260908T082434Z-482422f7fede4b64b58f197a71159771"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788856019768162200,
+      "started_utc": "2026-09-08T08:26:59.768162+00:00",
+      "input_manifest_sha256": "7f0f318b560371bfbe87f9a7a7416f543996e92b2eec49588224ebb0568e8882",
+      "exit_code": 0,
+      "finished_ns": 1788856025987032700,
+      "image": "images/opening.png",
+      "finished_utc": "2026-09-08T08:27:12.221448+00:00"
+    },
+    {
+      "name": "game-test",
+      "run_id": "19h-native-lighthouse-final-20260908T082434Z-482422f7fede4b64b58f197a71159771",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--",
+        "--game-test",
+        "--validation-run=19h-native-lighthouse-final-20260908T082434Z-482422f7fede4b64b58f197a71159771"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788856038338430900,
+      "started_utc": "2026-09-08T08:27:18.338430+00:00",
+      "input_manifest_sha256": "7f0f318b560371bfbe87f9a7a7416f543996e92b2eec49588224ebb0568e8882",
+      "exit_code": 0,
+      "finished_ns": 1788856051452220200,
+      "report": "reports/game-test.json",
+      "report_contract_passed": true,
+      "finished_utc": "2026-09-08T08:27:37.677580+00:00"
+    }
+  ],
+  "artifacts": {
+    "installed-evidence/preparation-inputs.json": {
+      "sha256": "6c3caa104e600639e3294b8ca56f50c2388347676e13bf76709f81b02604c565",
+      "bytes": 604958,
+      "mtime_ns": 1788855647388859200
+    },
+    "installed-evidence/source-backup/assets/models/lighthouse.glb": {
+      "sha256": "27bf2f45f6993ab31d5b690c84bee4875b78be9e7c1b014c424308ddde3d0b38",
+      "bytes": 86636,
+      "mtime_ns": 1788599996000000000
+    },
+    "installed-evidence/source-backup/assets/collision/lighthouse.res": {
+      "sha256": "aeb020dac75fb3290edda1941b73b440335340d7711c33b69c97b7732ce60e31",
+      "bytes": 35283,
+      "mtime_ns": 1788601312000000000
+    },
+    "installed-evidence/source-backup/assets/meshes/lighthouse.res": {
+      "sha256": "fd63abf04d59e164ad6767b2b4d1286550f36082a3c04cceae712c86e8607343",
+      "bytes": 56097,
+      "mtime_ns": 1788601312000000000
+    },
+    "installed-evidence/source-backup/scenes/prefabs/lighthouse.tscn": {
+      "sha256": "845d30d6f0f40527b8c4c434a7bbd22603b100fc0b838c89de7872ee1b1ad1c6",
+      "bytes": 744,
+      "mtime_ns": 1788601312000000000
+    },
+    "installed-evidence/source-backup/assets/asset_catalog.json": {
+      "sha256": "c08bd608b2bca025e66fbb82056b5efb9ff88d77d87d70e01c11d24179c81ee5",
+      "bytes": 9814,
+      "mtime_ns": 1788847402429658900
+    },
+    "installed-evidence/source-backup/assets/settlement_kit.json": {
+      "sha256": "9ab007ca7e7d8b91e21588157360bb23bc8c3c6c8417537a80ddb6f43417c7f6",
+      "bytes": 209,
+      "mtime_ns": 1788621014000000000
+    },
+    "installed-evidence/preparation/integrate_lighthouse_19h.py": {
+      "sha256": "baf1d7964a429261b0ca20d6dcae575683f71d0db162ea02e750a7fbaa40fc7e",
+      "bytes": 10105,
+      "mtime_ns": 1788855637407507000
+    },
+    "installed-evidence/preparation/round-19h-lighthouse-independent-review.md": {
+      "sha256": "f4d54b625ea6a1bf299e23b66ca56ef4df972a1ad16d8b34b42a3c6c902ac2da",
+      "bytes": 5106,
+      "mtime_ns": 1788855426354389600
+    },
+    "installed-evidence/preparation/round-19h-lighthouse-independent-audit.json": {
+      "sha256": "99f4da0e09ce57559cd8d055184b5b73d443e90d9295fd25adfaaae9ad0f3468",
+      "bytes": 31279,
+      "mtime_ns": 1788855355430883500
+    },
+    "installed-evidence/preparation/lighthouse.blend": {
+      "sha256": "10540b562966c58df68f6bd7e5030cb0b5e991d0aceb292a318c88215876f000",
+      "bytes": 2023615,
+      "mtime_ns": 1788854928568499900
+    },
+    "installed-evidence/preparation/lighthouse.glb": {
+      "sha256": "79b5fd32ec06a3c3cf0fc948e31333c9d374fb018437f2fa630293e266382eb1",
+      "bytes": 270348,
+      "mtime_ns": 1788854928905515200
+    },
+    "installed-evidence/preparation/builder.py": {
+      "sha256": "9772fa9587300c411c45ddcfe16be562505b2f3ea0915d82b46b0b9971ada34f",
+      "bytes": 11373,
+      "mtime_ns": 1788854925933199000
+    },
+    "installed-evidence/preparation/model-report.json": {
+      "sha256": "5b8491b069afcd25f58e4c539a977bf75acd7c69d536d424ff5a696eff6388c2",
+      "bytes": 722,
+      "mtime_ns": 1788854928905515200
+    },
+    "installed-evidence/preparation/native_lighthouse_19.gd": {
+      "sha256": "84edc6d44ec0f7e61699fbf2e8cbd2422335917935138cba46300cf612f45581",
+      "bytes": 5891,
+      "mtime_ns": 1788855637406368100
+    },
+    "installed-evidence/preparation/capture_native_lighthouse_19.gd": {
+      "sha256": "bf2e29ae5cb45c70689c3ad5a6f8afc6490e148c7b4e1e241e3f3191b9c9a6c5",
+      "bytes": 1736,
+      "mtime_ns": 1788854824588072900
+    },
+    "installed-evidence/resume-current-inputs.json": {
+      "sha256": "f48ee3f6481b3ab55b81eb6914ac95412b9a9f1a8a6c2508e41cf792e626654a",
+      "bytes": 605079,
+      "mtime_ns": 1788855647562887700
+    },
+    "installed-evidence/failed-predecessor/manifest.json": {
+      "sha256": "aa60c2c7ac68149915e140d1c1bfc34cdad7a32e1610fe6b005b40aa1fab84cb",
+      "bytes": 7656,
+      "mtime_ns": 1788855486296772900
+    },
+    "installed-evidence/failed-predecessor/import.log": {
+      "sha256": "15ac0c6cf12481218600cc59c7980816a1c35248465b2502045072ff9bdf7ede",
+      "bytes": 2751,
+      "mtime_ns": 1788855476320845800
+    },
+    "installed-evidence/failed-predecessor/import-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788855467750596000
+    },
+    "installed-evidence/failed-predecessor/derived-install.log": {
+      "sha256": "b3ab5cf1f026374172b3533d2a1f50920a5f676d40a0fd7b06c9705e7aa81170",
+      "bytes": 171,
+      "mtime_ns": 1788855481390732200
+    },
+    "installed-evidence/failed-predecessor/derived-install-error.log": {
+      "sha256": "b33c7f4352afed1b41074e08c4b03b8d674efe74508605cf6069bd3c41df7e1b",
+      "bytes": 52717,
+      "mtime_ns": 1788855486107931500
+    },
+    "installed-evidence/reports/derived-install.json": {
+      "sha256": "2c6bdff87eb26511b879fac87cb9fcaf582873eebea224e1755b3b5556e28c69",
+      "bytes": 213,
+      "mtime_ns": 1788855650448497600
+    },
+    "installed-evidence/derived-install.log": {
+      "sha256": "ba91dac6f4b51bc84101c65be833c3e7fcb6816050d93f666258193000755832",
+      "bytes": 240,
+      "mtime_ns": 1788855650448497600
+    },
+    "installed-evidence/derived-install-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788855647601101600
+    },
+    "installed-evidence/stages/derived-install.json": {
+      "sha256": "983ecd0284b9762e6c8faa6ca8ab3aa740da3fd2988703d1fe0d4e004aca4412",
+      "bytes": 1078,
+      "mtime_ns": 1788855650669384200
+    },
+    "installed-evidence/preparation-changes.json": {
+      "sha256": "f059ffb072bf94d299ff89307c1a0ceb7e9487a369a6cba5da0e251032286c61",
+      "bytes": 2598,
+      "mtime_ns": 1788855659150600500
+    },
+    "installed-evidence/inputs.json": {
+      "sha256": "a34ae9b0a36463520f3a3593d54f3a3eb532c3a5abaddef0d51450ea67d6dcd5",
+      "bytes": 732084,
+      "mtime_ns": 1788855666665857800
+    },
+    "installed-evidence/native-check.log": {
+      "sha256": "b3ab5cf1f026374172b3533d2a1f50920a5f676d40a0fd7b06c9705e7aa81170",
+      "bytes": 171,
+      "mtime_ns": 1788855675567475100
+    },
+    "installed-evidence/native-check-error.log": {
+      "sha256": "1f88c68f214daefe6a2b8376ebc33305b034d3d08bd093c4b88baa4311d1a839",
+      "bytes": 412,
+      "mtime_ns": 1788855677498457600
+    },
+    "installed-evidence/stages/native-check.json": {
+      "sha256": "19f950bc42880d6662641a25a3fede739967808efc3b982fb57f50614305e747",
+      "bytes": 1328,
+      "mtime_ns": 1788855681859697500
+    },
+    "installed-evidence/manifest.json": {
+      "sha256": "ced0d6af21179a57d7aa75eda37e55a53cd898a727df8fb12c4fc86dc36eae3d",
+      "bytes": 10196,
+      "mtime_ns": 1788855681869826700
+    },
+    "validation-scripts/validate_native_lighthouse_19h.py": {
+      "sha256": "36807b482986e3ea1d2a9b172d8a681b30879d3d1757ee5c207c63a0c2cc081c",
+      "bytes": 5154,
+      "mtime_ns": 1788855866797613100
+    },
+    "validation-scripts/native_lighthouse_19.gd": {
+      "sha256": "1d229c110706b3a3616508d865fbd2dc3fc859756c2529687ef4fb857a604dd8",
+      "bytes": 7002,
+      "mtime_ns": 1788855866796966000
+    },
+    "validation-scripts/capture_native_lighthouse_19.gd": {
+      "sha256": "bf2e29ae5cb45c70689c3ad5a6f8afc6490e148c7b4e1e241e3f3191b9c9a6c5",
+      "bytes": 1736,
+      "mtime_ns": 1788854824588072900
+    },
+    "validation-scripts/inspect_native_lighthouse_materials_19.gd": {
+      "sha256": "481e5c3e1b297776f4b4c6287119e64c0a31b0f52d0a02b27e2714e3889a15ef",
+      "bytes": 696,
+      "mtime_ns": 1788855743030195000
+    },
+    "validation-scripts/lighthouse-19h-native-material-diagnostic.stdout.log": {
+      "sha256": "833315d00d4b19344a6a18a23622fbd461897340e36015ef8522753c7e7958c2",
+      "bytes": 4765,
+      "mtime_ns": 1788855746732535500
+    },
+    "validation-scripts/lighthouse-19h-native-material-diagnostic.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788855744805857600
+    },
+    "inputs.json": {
+      "sha256": "7f0f318b560371bfbe87f9a7a7416f543996e92b2eec49588224ebb0568e8882",
+      "bytes": 732083,
+      "mtime_ns": 1788855875101487500
+    },
+    "reports/native-check.json": {
+      "sha256": "9c988b80dcf39491225464c3a2a81dac7dde81832573b0b18ead51b4a4830204",
+      "bytes": 16349,
+      "mtime_ns": 1788855884693328500
+    },
+    "native-check.log": {
+      "sha256": "f301f70cb6c359e5a7ace7a7afed941b4c38cf3daaa59b256bbd8a01473d297f",
+      "bytes": 270,
+      "mtime_ns": 1788855884693328500
+    },
+    "native-check-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788855881211781000
+    },
+    "stages/native-check.json": {
+      "sha256": "f2ea9f88593406aed24f04a1fff33f7c715a02b0e186fcc32a7becdfc67b566b",
+      "bytes": 1135,
+      "mtime_ns": 1788855890857629700
+    },
+    "images/harbor-front.png": {
+      "sha256": "08bdb436bce48421bae390a8ec8fea4c83210070ad7bec2325528fcea2a59d4b",
+      "bytes": 313836,
+      "mtime_ns": 1788855901759997300
+    },
+    "capture-harbor-front.log": {
+      "sha256": "caf30f4559fb3fea9e05195a5667073044f4ec9d302f79b66e276e9e70730ef8",
+      "bytes": 372,
+      "mtime_ns": 1788855901759997300
+    },
+    "capture-harbor-front-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788855896994728500
+    },
+    "stages/capture-harbor-front.json": {
+      "sha256": "3dc6f9258884db282aa777459ae82eba54901f4c1b7344b970d6df919106c60b",
+      "bytes": 1177,
+      "mtime_ns": 1788855908128810400
+    },
+    "images/harbor-back.png": {
+      "sha256": "0b483f3825a78619e782699d4c135774696aff2808cfbbe45e775893583a9dab",
+      "bytes": 404289,
+      "mtime_ns": 1788855918991021500
+    },
+    "capture-harbor-back.log": {
+      "sha256": "b3c574186754834d02c43b3ad93bae1c3f10d71f23db552f5d7a8efff3c5952e",
+      "bytes": 371,
+      "mtime_ns": 1788855918992349900
+    },
+    "capture-harbor-back-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788855914175073400
+    },
+    "stages/capture-harbor-back.json": {
+      "sha256": "c79806d4c9b1d1dda3a85e6acc42966756dae658a559711c3543c3b401678537",
+      "bytes": 1173,
+      "mtime_ns": 1788855925414944700
+    },
+    "images/harbor-gallery.png": {
+      "sha256": "ddd083b02f6a727a98e6a6062df6e4a1c20a74a0ffa934a1ed0fb7777cbc19c8",
+      "bytes": 346097,
+      "mtime_ns": 1788855936506874200
+    },
+    "capture-harbor-gallery.log": {
+      "sha256": "a8e7e34c42efd57aa6ad56951876e8ce2d379594bbb22299b68789b982b0c59c",
+      "bytes": 374,
+      "mtime_ns": 1788855936507872400
+    },
+    "capture-harbor-gallery-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788855931627701100
+    },
+    "stages/capture-harbor-gallery.json": {
+      "sha256": "3f72d58d71207f96d78d1d781eae9bb9c4a6cdc89fdd22857e165aad090e9ff8",
+      "bytes": 1185,
+      "mtime_ns": 1788855943094911500
+    },
+    "images/harbor-context.png": {
+      "sha256": "efd6ddca2c0bfb25d5803ea2a3bd6a623fcb4071007796b143ff2bdc6b5f716c",
+      "bytes": 410047,
+      "mtime_ns": 1788855954088824900
+    },
+    "capture-harbor-context.log": {
+      "sha256": "573d2b077d3ae5eaabc747906b834e84fc47dc0f6da115858b8cad3478ba42d2",
+      "bytes": 374,
+      "mtime_ns": 1788855954089826400
+    },
+    "capture-harbor-context-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788855949236868100
+    },
+    "stages/capture-harbor-context.json": {
+      "sha256": "0ef000209b54db1a10332667af6b4fdcee808cbeadf44a59173cf4aee3f2f99b",
+      "bytes": 1185,
+      "mtime_ns": 1788855960700917100
+    },
+    "images/harbor-door.png": {
+      "sha256": "20d9bf4716dcca01e2a674f29f8156a11d7fceac53e1adcdea7bdbbd400d23fc",
+      "bytes": 188038,
+      "mtime_ns": 1788855971580562000
+    },
+    "capture-harbor-door.log": {
+      "sha256": "816452d6d7d5fca11854991ab5416290c721eaefb524cd7b1250c49ee3722373",
+      "bytes": 371,
+      "mtime_ns": 1788855971581559800
+    },
+    "capture-harbor-door-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788855966752293400
+    },
+    "stages/capture-harbor-door.json": {
+      "sha256": "60aa64668810b4654401facb836c94fd6ad96217b93bd4aadda8264394327ce9",
+      "bytes": 1173,
+      "mtime_ns": 1788855978000902500
+    },
+    "images/remote-front.png": {
+      "sha256": "46f598b889be1e2a132f164c1d621203ee1bf923a643d0e23f8c5c69ef29876b",
+      "bytes": 245083,
+      "mtime_ns": 1788855988941968400
+    },
+    "capture-remote-front.log": {
+      "sha256": "f80140917914f052524656086ee6f7a11b94d2183f7963f804bf8292632d478c",
+      "bytes": 376,
+      "mtime_ns": 1788855988943363000
+    },
+    "capture-remote-front-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788855984182777800
+    },
+    "stages/capture-remote-front.json": {
+      "sha256": "f19fbc1fac1f0f1af3e9fc6f1bb4c1419cbad4c129e4557e3a4b0eeeea03a7af",
+      "bytes": 1177,
+      "mtime_ns": 1788855995378105100
+    },
+    "images/remote-door.png": {
+      "sha256": "41130602031f05cc5f7eed0de21ecf3bf5488ea0971af676e4549ebef159c32a",
+      "bytes": 148552,
+      "mtime_ns": 1788856006441087400
+    },
+    "capture-remote-door.log": {
+      "sha256": "6946b80e321c8b5964cd73446aa26a62990d91b62aa3ed6227428ed8c7b60b2e",
+      "bytes": 375,
+      "mtime_ns": 1788856006442088800
+    },
+    "capture-remote-door-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788856001761617300
+    },
+    "stages/capture-remote-door.json": {
+      "sha256": "d6fbd844be12943e62a07392f8521bfa793ffa3ca381e018ad20fbbe49bba8e9",
+      "bytes": 1173,
+      "mtime_ns": 1788856013313071200
+    },
+    "images/opening.png": {
+      "sha256": "1111aacb9a276cc249aa5f78664f4b22c3122dedd2337817f028af6b08b776f0",
+      "bytes": 722835,
+      "mtime_ns": 1788856025624870600
+    },
+    "capture-opening.log": {
+      "sha256": "9af1f29ab760c6b65e1d4fc5fa225e4bd416c44d85ef4a6b4bb9a1f0cb90c064",
+      "bytes": 525,
+      "mtime_ns": 1788856025626487100
+    },
+    "capture-opening-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788856019769160200
+    },
+    "stages/capture-opening.json": {
+      "sha256": "f63dcf3c1bdcffb0855179d3e525b01e09d91ec07d3c1eb13f75f75b8412bf9e",
+      "bytes": 964,
+      "mtime_ns": 1788856032222648200
+    },
+    "previous-reports/game-test.json": {
+      "sha256": "9da10bf5547ee56e8080fd3b8b1c7bd6f90d802e4cc1a8f6074b61b834bd5b5d",
+      "bytes": 6483,
+      "mtime_ns": 1788848811241771300
+    },
+    "reports/game-test.json": {
+      "sha256": "87bfa562e9c0790c20a50704ad9fb02b8fe0beb6d9a6482a09221425b7a05f44",
+      "bytes": 6491,
+      "mtime_ns": 1788856051094258200
+    },
+    "game-test.log": {
+      "sha256": "da79e68be9449103424c5e32408825492f27a4486089dcde7f64d825963756a3",
+      "bytes": 3076,
+      "mtime_ns": 1788856051093754800
+    },
+    "game-test-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788856038340425200
+    },
+    "stages/game-test.json": {
+      "sha256": "cb20c176ff027ca04ab8af8be2e5477d54621c0e4c3d3ecf6d849c09e4a4024f",
+      "bytes": 821,
+      "mtime_ns": 1788856057679758400
+    }
+  },
+  "visual_acceptance_proven": false,
+  "scope": "Read-only validation of 19h installed architecture: all saved mesh/collision vertices, PBR alpha/material ownership, both placements, 32 contact rays, seven local GPU captures plus opening and 36 gameplay checks. Preserve failed tangent-array and overly narrow alpha-mode checks. No all-reference visual claim.",
+  "installed_from": "E:\\FeiTing\\captures\\validation_runs\\19h-native-lighthouse-repair-20260908T082039Z-7c31371c56954044b4576030f27feea3",
+  "production_mutations_in_this_run": 0,
+  "input_count": 3500,
+  "completed_utc": "2026-09-08T08:27:43.968549+00:00"
+}

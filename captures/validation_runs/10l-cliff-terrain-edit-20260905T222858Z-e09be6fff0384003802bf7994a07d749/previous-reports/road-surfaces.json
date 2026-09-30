@@ -1,0 +1,78 @@
+{
+	"passed": false,
+	"provenance": {
+		"engine": "4.5.1-stable (official)",
+		"packaged": false,
+		"run_id": "10l-cliff-terrain-edit-20260905T215314Z-9db8cfba59974a2f972ae3a2e65c2916",
+		"sha256": {
+			"res://assets/cliff_kit.json": "cd649aeb26b3cecbf1b110fcfc68248711e3d1ec90889d538fc89ff0170af495",
+			"res://assets/mountain_kit.json": "8b5b6fbe3f86a6b849d9fd6a2b87bf0fefe6dd1323f91f35cae97ba300196940",
+			"res://assets/road_kit.json": "1f0047e0203113b801558edd7413b2df362f412083754b099648f49bd8728a3a",
+			"res://scenes/prefabs/Airship.tscn": "e66caa9dc604786bfd03f25b27835fd454ec26942ec72b73e3bbfe599e032329",
+			"res://scenes/world/World.tscn": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+			"res://scripts/game.gd": "aa292916e6878fd46fb4a2ff12dd54611dca402e66ffa4042a864a853aa67467",
+			"res://scripts/hud.gd": "f9992f6569cd9ee0731542afa1db645d260e1e1cf01bf85a250f656324de7654",
+			"res://scripts/world_math.gd": "a7553c54d06d4e63b4fbe221b04b0f158e36f25b000b483f4555944fdd14b297"
+		},
+		"utc": "2026-09-05T21:54:37"
+	},
+	"roads": [
+		{
+			"examples": [
+				{
+					"error_metres": 0.0818820953369141,
+					"ground": "(-5.9729, 20.66675, 136.8786)",
+					"point": "(-5.9729, 20.68487, 136.8786)"
+				},
+				{
+					"error_metres": 0.08370361328125,
+					"ground": "(-5.44043, 20.76782, 137.0639)",
+					"point": "(-5.44042, 20.78412, 137.0639)"
+				},
+				{
+					"error_metres": 0.08468017578125,
+					"ground": "(-6.07843, 20.59912, 136.6259)",
+					"point": "(-6.07842, 20.61444, 136.6259)"
+				},
+				{
+					"error_metres": 0.0875984191894531,
+					"ground": "(-5.439209, 20.7085, 136.7943)",
+					"point": "(-5.4392, 20.7209, 136.7943)"
+				},
+				{
+					"error_metres": 0.092431640625,
+					"ground": "(-5.170959, 20.69873, 136.6117)",
+					"point": "(-5.170933, 20.7063, 136.6117)"
+				}
+			],
+			"failed_samples": 419,
+			"glb_sha256": "4e98e354c249f3fee71bce693ce69a64ae1c7aaad144784ea528a255effaf14b",
+			"maximum_height_error_metres": 0.192328071594238,
+			"name": "Trail_Crownreach",
+			"passed": false,
+			"sample_count": 16044
+		},
+		{
+			"examples": [],
+			"failed_samples": 0,
+			"glb_sha256": "d720be489737357b4ab78051574e1d4d5debda4701fba051f2c4624e09ccd6a9",
+			"maximum_height_error_metres": 0.00407257080078124,
+			"name": "Trail_Amberfield",
+			"passed": true,
+			"sample_count": 22596
+		},
+		{
+			"examples": [],
+			"failed_samples": 0,
+			"glb_sha256": "84e5b20e3cf62bbd6a5c6ec518febee1fe906bb9f73d20534d1539bf274d196d",
+			"maximum_height_error_metres": 0.00256309509277344,
+			"name": "Trail_HillHamlet",
+			"passed": true,
+			"sample_count": 2002
+		}
+	],
+	"samples": 40642,
+	"scope": "Seven interior/edge samples per actual imported road triangle versus full assembled terrain, cliff and massif physics. Expected road clearance 0.10 m; tolerance 0.08 m.",
+	"world_sha256": "6bae76d50d5802971a51d8882d3c8e86fe5cdcd8ab250de2eae856d487f7d7e8",
+	"world_unchanged": true
+}

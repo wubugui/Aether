@@ -1,0 +1,213 @@
+{
+  "load_ms": 5970,
+  "materials": 382,
+  "rows": [
+    {
+      "fov": 50.0,
+      "image": "E:\\FeiTing\\captures\\opening_study_38\\run3/v4_water__opening.png",
+      "position": [
+        0.0,
+        145.0,
+        250.0
+      ],
+      "target": [
+        0.0,
+        83.8369979858398,
+        -750.0
+      ],
+      "variant": "v4_water",
+      "view": "opening"
+    },
+    {
+      "fov": 55.0,
+      "image": "E:\\FeiTing\\captures\\opening_study_38\\run3/v4_water__castle-front.png",
+      "position": [
+        109.0,
+        62.0,
+        -197.0
+      ],
+      "target": [
+        43.2879981994629,
+        30.0,
+        -282.52099609375
+      ],
+      "variant": "v4_water",
+      "view": "castle-front"
+    },
+    {
+      "apply": {
+        "params_set": 4,
+        "replacements": {
+          "ALBEDO*=mix(vec3(1.05,.91,.67),": 4,
+          "EMISSION*=mix(vec3(1.13,.92,.59),": 4,
+          "EMISSION*vec3(.87,.94,.78)+vec3(1.1,.68,.23)*sun_reflection": 1,
+          "EMISSION=mix(clear_water,storm_water,storm);": 1,
+          "float foam=(1.-smoothstep(.05,.45,water_depth))*(.45+.15*sin(world_point.x*.2+world_point.z*.3+world_time));": 1,
+          "pigment*=.89+.11*max(0.,dot(n,normalize(vec3(-.48,.82,.30))));": 1,
+          "vec3 c=mix(vec3(.32,.59,.65),deep,smoothstep(0.,6.,water_depth));": 1,
+          "vec3 deep=mix(vec3(.170,.418,.627),vec3(.230,.498,.677),ripple*.16+.4);": 1,
+          "vec3 dry=vec3(.73,.745,.46);": 1,
+          "vec3 meadow=vec3(.46,.565,.345);": 1
+        }
+      },
+      "variant": "v4_water"
+    },
+    {
+      "fov": 50.0,
+      "image": "E:\\FeiTing\\captures\\opening_study_38\\run3/v7_muted__opening.png",
+      "position": [
+        0.0,
+        145.0,
+        250.0
+      ],
+      "target": [
+        0.0,
+        83.8369979858398,
+        -750.0
+      ],
+      "variant": "v7_muted",
+      "view": "opening"
+    },
+    {
+      "fov": 55.0,
+      "image": "E:\\FeiTing\\captures\\opening_study_38\\run3/v7_muted__castle-front.png",
+      "position": [
+        109.0,
+        62.0,
+        -197.0
+      ],
+      "target": [
+        43.2879981994629,
+        30.0,
+        -282.52099609375
+      ],
+      "variant": "v7_muted",
+      "view": "castle-front"
+    },
+    {
+      "apply": {
+        "params_set": 4,
+        "replacements": {
+          "ALBEDO*=mix(vec3(1.05,.91,.67),": 4,
+          "EMISSION*=mix(vec3(1.13,.92,.59),": 4,
+          "EMISSION*vec3(.87,.94,.78)+vec3(1.1,.68,.23)*sun_reflection": 1,
+          "EMISSION=mix(clear_water,storm_water,storm);": 1,
+          "float foam=(1.-smoothstep(.05,.45,water_depth))*(.45+.15*sin(world_point.x*.2+world_point.z*.3+world_time));": 1,
+          "float haze=(1.-exp(-max(distance_to_camera-650.,0.)*.00038))*low_air;": 5,
+          "pigment*=.89+.11*max(0.,dot(n,normalize(vec3(-.48,.82,.30))));": 1,
+          "vec3 c=mix(vec3(.32,.59,.65),deep,smoothstep(0.,6.,water_depth));": 1,
+          "vec3 deep=mix(vec3(.170,.418,.627),vec3(.230,.498,.677),ripple*.16+.4);": 1,
+          "vec3 dry=vec3(.73,.745,.46);": 1,
+          "vec3 meadow=vec3(.46,.565,.345);": 1
+        }
+      },
+      "variant": "v7_muted"
+    },
+    {
+      "fov": 50.0,
+      "image": "E:\\FeiTing\\captures\\opening_study_38\\run3/v8_muted2__opening.png",
+      "position": [
+        0.0,
+        145.0,
+        250.0
+      ],
+      "target": [
+        0.0,
+        83.8369979858398,
+        -750.0
+      ],
+      "variant": "v8_muted2",
+      "view": "opening"
+    },
+    {
+      "fov": 55.0,
+      "image": "E:\\FeiTing\\captures\\opening_study_38\\run3/v8_muted2__castle-front.png",
+      "position": [
+        109.0,
+        62.0,
+        -197.0
+      ],
+      "target": [
+        43.2879981994629,
+        30.0,
+        -282.52099609375
+      ],
+      "variant": "v8_muted2",
+      "view": "castle-front"
+    },
+    {
+      "apply": {
+        "params_set": 4,
+        "replacements": {
+          "ALBEDO*=mix(vec3(1.05,.91,.67),": 4,
+          "EMISSION*=mix(vec3(1.13,.92,.59),": 4,
+          "EMISSION*vec3(.87,.94,.78)+vec3(1.1,.68,.23)*sun_reflection": 1,
+          "EMISSION=mix(clear_water,storm_water,storm);": 1,
+          "float foam=(1.-smoothstep(.05,.45,water_depth))*(.45+.15*sin(world_point.x*.2+world_point.z*.3+world_time));": 1,
+          "float haze=(1.-exp(-max(distance_to_camera-650.,0.)*.00038))*low_air;": 5,
+          "pigment*=.89+.11*max(0.,dot(n,normalize(vec3(-.48,.82,.30))));": 1,
+          "vec3 c=mix(vec3(.32,.59,.65),deep,smoothstep(0.,6.,water_depth));": 1,
+          "vec3 deep=mix(vec3(.170,.418,.627),vec3(.230,.498,.677),ripple*.16+.4);": 1,
+          "vec3 dry=vec3(.73,.745,.46);": 1,
+          "vec3 meadow=vec3(.46,.565,.345);": 1
+        }
+      },
+      "variant": "v8_muted2"
+    },
+    {
+      "fov": 50.0,
+      "image": "E:\\FeiTing\\captures\\opening_study_38\\run3/v9_contrast__opening.png",
+      "position": [
+        0.0,
+        145.0,
+        250.0
+      ],
+      "target": [
+        0.0,
+        83.8369979858398,
+        -750.0
+      ],
+      "variant": "v9_contrast",
+      "view": "opening"
+    },
+    {
+      "fov": 55.0,
+      "image": "E:\\FeiTing\\captures\\opening_study_38\\run3/v9_contrast__castle-front.png",
+      "position": [
+        109.0,
+        62.0,
+        -197.0
+      ],
+      "target": [
+        43.2879981994629,
+        30.0,
+        -282.52099609375
+      ],
+      "variant": "v9_contrast",
+      "view": "castle-front"
+    },
+    {
+      "apply": {
+        "params_set": 4,
+        "replacements": {
+          "ALBEDO*=mix(vec3(1.05,.91,.67),": 4,
+          "EMISSION*=mix(vec3(1.13,.92,.59),": 4,
+          "EMISSION*vec3(.87,.94,.78)+vec3(1.1,.68,.23)*sun_reflection": 1,
+          "EMISSION=mix(clear_water,storm_water,storm);": 1,
+          "float foam=(1.-smoothstep(.05,.45,water_depth))*(.45+.15*sin(world_point.x*.2+world_point.z*.3+world_time));": 1,
+          "float haze=(1.-exp(-max(distance_to_camera-650.,0.)*.00038))*low_air;": 5,
+          "pigment*=.89+.11*max(0.,dot(n,normalize(vec3(-.48,.82,.30))));": 1,
+          "vec3 c=mix(vec3(.32,.59,.65),deep,smoothstep(0.,6.,water_depth));": 1,
+          "vec3 deep=mix(vec3(.170,.418,.627),vec3(.230,.498,.677),ripple*.16+.4);": 1,
+          "vec3 dry=vec3(.73,.745,.46);": 1,
+          "vec3 meadow=vec3(.46,.565,.345);": 1
+        }
+      },
+      "variant": "v9_contrast"
+    }
+  ],
+  "scope": "Runtime look study only; no project file modified.",
+  "shaders": 11,
+  "source_game": "res://captures/candidate_highcoast36c/Game36c.tscn",
+  "total_ms": 12578
+}

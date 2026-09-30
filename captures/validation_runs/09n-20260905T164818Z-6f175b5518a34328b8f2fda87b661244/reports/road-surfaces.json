@@ -1,0 +1,52 @@
+{
+	"passed": true,
+	"provenance": {
+		"engine": "4.5.1-stable (official)",
+		"packaged": false,
+		"run_id": "09n-20260905T164818Z-6f175b5518a34328b8f2fda87b661244",
+		"sha256": {
+			"res://assets/cliff_kit.json": "6369c39d28d0fb8ddc11413141374d350a796cfa110b562af6c87537b4128fa2",
+			"res://assets/mountain_kit.json": "8b5b6fbe3f86a6b849d9fd6a2b87bf0fefe6dd1323f91f35cae97ba300196940",
+			"res://assets/road_kit.json": "1f0047e0203113b801558edd7413b2df362f412083754b099648f49bd8728a3a",
+			"res://scenes/prefabs/Airship.tscn": "e66caa9dc604786bfd03f25b27835fd454ec26942ec72b73e3bbfe599e032329",
+			"res://scenes/world/World.tscn": "03630577fefe9c30534521c159047233c3374ba4aaac03248e3fad59a8191fdb",
+			"res://scripts/game.gd": "aa292916e6878fd46fb4a2ff12dd54611dca402e66ffa4042a864a853aa67467",
+			"res://scripts/hud.gd": "f9992f6569cd9ee0731542afa1db645d260e1e1cf01bf85a250f656324de7654",
+			"res://scripts/world_math.gd": "a7553c54d06d4e63b4fbe221b04b0f158e36f25b000b483f4555944fdd14b297"
+		},
+		"utc": "2026-09-05T17:07:54"
+	},
+	"roads": [
+		{
+			"examples": [],
+			"failed_samples": 0,
+			"glb_sha256": "384bb4edb00c6458c744c6a4e281be09edd307fe96d57a2b01b17874d113522d",
+			"maximum_height_error_metres": 0.0144973754882813,
+			"name": "Trail_Crownreach",
+			"passed": true,
+			"sample_count": 16044
+		},
+		{
+			"examples": [],
+			"failed_samples": 0,
+			"glb_sha256": "d720be489737357b4ab78051574e1d4d5debda4701fba051f2c4624e09ccd6a9",
+			"maximum_height_error_metres": 0.00456085205078124,
+			"name": "Trail_Amberfield",
+			"passed": true,
+			"sample_count": 22596
+		},
+		{
+			"examples": [],
+			"failed_samples": 0,
+			"glb_sha256": "dc75ae9e6d032c40330931b133d9d0255aef08d3c6dfd40fbe24d47e34be1bbb",
+			"maximum_height_error_metres": 0.00258026123046876,
+			"name": "Trail_HillHamlet",
+			"passed": true,
+			"sample_count": 2002
+		}
+	],
+	"samples": 40642,
+	"scope": "Seven interior/edge samples per actual imported road triangle versus full assembled terrain, cliff and massif physics. Expected road clearance 0.10 m; tolerance 0.08 m.",
+	"world_sha256": "03630577fefe9c30534521c159047233c3374ba4aaac03248e3fad59a8191fdb",
+	"world_unchanged": true
+}

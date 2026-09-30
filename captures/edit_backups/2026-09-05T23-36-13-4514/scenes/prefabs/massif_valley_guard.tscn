@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/asset_instance.gd" id="1_ewwmb"]
+[ext_resource type="Material" path="res://materials/cliff.tres" id="2_ieor6"]
+[ext_resource type="PackedScene" path="res://assets/models/massif_valley_guard.glb" id="3_0544c"]
+[ext_resource type="Shape3D" path="res://assets/collision/massif_valley_guard.res" id="4_226fl"]
+
+[node name="massif_valley_guard" type="Node3D"]
+script = ExtResource("1_ewwmb")
+asset_kind = "massif_valley_guard"
+surface_material = ExtResource("2_ieor6")
+
+[node name="Model" parent="." instance=ExtResource("3_0544c")]
+
+[node name="Collision" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision"]
+shape = ExtResource("4_226fl")

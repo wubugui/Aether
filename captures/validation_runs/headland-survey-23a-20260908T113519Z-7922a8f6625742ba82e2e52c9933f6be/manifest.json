@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "run_id": "headland-survey-23a-20260908T113519Z-7922a8f6625742ba82e2e52c9933f6be",
+  "round": "headland-survey-23a",
+  "started_utc": "2026-09-08T11:35:19.904626+00:00",
+  "workspace": "E:\\FeiTing",
+  "run_directory": "E:\\FeiTing\\captures\\validation_runs\\headland-survey-23a-20260908T113519Z-7922a8f6625742ba82e2e52c9933f6be",
+  "status": "passed",
+  "passed": true,
+  "export_windows_requested": false,
+  "capture_views_requested": true,
+  "expected_counts": {},
+  "stages": [
+    {
+      "name": "native-headland-projection",
+      "run_id": "headland-survey-23a-20260908T113519Z-7922a8f6625742ba82e2e52c9933f6be",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--audio-driver",
+        "Dummy",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\headland-survey-23a-20260908T113519Z-7922a8f6625742ba82e2e52c9933f6be\\survey-inputs\\survey_headland_23a.gd",
+        "--quit-after",
+        "900",
+        "--",
+        "--survey=E:\\FeiTing\\captures\\validation_runs\\headland-survey-23a-20260908T113519Z-7922a8f6625742ba82e2e52c9933f6be\\survey-inputs\\reference-view-1342-progress-22g.json",
+        "--output-dir=E:\\FeiTing\\captures\\validation_runs\\headland-survey-23a-20260908T113519Z-7922a8f6625742ba82e2e52c9933f6be\\survey",
+        "--validation-run=headland-survey-23a-20260908T113519Z-7922a8f6625742ba82e2e52c9933f6be"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788867337270229500,
+      "started_utc": "2026-09-08T11:35:37.270229+00:00",
+      "input_manifest_sha256": "ab6506d19ad74e9d9c6004dcde418d4492404d7dc95aa1c85cad5158e7a20cf6",
+      "exit_code": 0,
+      "finished_ns": 1788867342979335800,
+      "finished_utc": "2026-09-08T11:35:51.798357+00:00"
+    }
+  ],
+  "artifacts": {
+    "survey-inputs/survey_headland_23a.py": {
+      "sha256": "c42c8946918056aabcd301bc9fa00ef2384d61e5ab62fe7db5bea7de835d7eaf",
+      "bytes": 2403,
+      "mtime_ns": 1788867317463388600
+    },
+    "survey-inputs/survey_headland_23a.gd": {
+      "sha256": "7114bb929f7f3aae6545a214b1d8d3960409549d1e9f9d060417a7070794cefd",
+      "bytes": 4091,
+      "mtime_ns": 1788867317463388600
+    },
+    "survey-inputs/reference-view-1342-progress-22g.json": {
+      "sha256": "b01545d091dd1074a2e57f97492145bc208308a8d91c82fe0787a54123b7d199",
+      "bytes": 34114,
+      "mtime_ns": 1788866953405202800
+    },
+    "survey-inputs/1342.png": {
+      "sha256": "7acc98104013d9122eb551846b2d7fc1f7549bce8b2e3199eae8f5385a3ea238",
+      "bytes": 1646137,
+      "mtime_ns": 1788847336194355400
+    },
+    "inputs.json": {
+      "sha256": "ab6506d19ad74e9d9c6004dcde418d4492404d7dc95aa1c85cad5158e7a20cf6",
+      "bytes": 732022,
+      "mtime_ns": 1788867328902972600
+    },
+    "survey/headland.json": {
+      "sha256": "5600cdbe0e0fb81490cd07f1fbe4feaf8149ec8c217ba62f7a0af83faa2e0b50",
+      "bytes": 252045,
+      "mtime_ns": 1788867342659076700
+    },
+    "survey/reference-before.png": {
+      "sha256": "1dac0b4ac21e4cd530db2532e083146e7818c3508598bab418d49409be3b42ba",
+      "bytes": 215829,
+      "mtime_ns": 1788867342649912900
+    },
+    "native-headland-projection.log": {
+      "sha256": "aea664effeeeb29f0aaafecafbc487faedb900a334ba9b13f2ae4e3a952838ce",
+      "bytes": 253,
+      "mtime_ns": 1788867342659076700
+    },
+    "native-headland-projection-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788867337272396500
+    },
+    "stages/native-headland-projection.json": {
+      "sha256": "b3d3fc076c32724758b949ebc733b0446e2a3d9f71e1b60119af1c3d65998516",
+      "bytes": 1292,
+      "mtime_ns": 1788867351800293600
+    }
+  },
+  "visual_acceptance_proven": false,
+  "scope": "Original ground and native projection for a proposed near-right rocky headland. Dummy audio; real GPU. No geometry changes or original-map inference.",
+  "completed_utc": "2026-09-08T11:36:00.466571+00:00"
+}

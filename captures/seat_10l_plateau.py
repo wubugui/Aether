@@ -1,0 +1,156 @@
+"""Settle only the native plateau's lower rim on the study terrain."""
+from pathlib import Path
+import sys,json,bpy,bmesh,numpy as np
+from mathutils import Vector
+root=Path('D:/test6');sys.path.insert(0,str(root/'blender'));sys.path.insert(0,str(root/'captures'))
+import cliff_terrace_topology as C
+import terrain_topology as T
+from cliff_terrace_topology import ground_at
+item=next(i for i in json.loads((root/'assets/cliff_kit.json').read_text()) if i['name']=='cliff_eastern_plateau')
+bpy.ops.wm.open_mainfile(filepath=str(root/item['native_source']))
+obj=bpy.data.objects['cliff_eastern_plateau'];mesh=obj.data;origin=np.array(item['position'])
+# Preserve the native artist vertex paint when retopologizing its contact band.
+# Sampling is on the prior 3D asset's surface, never on a reference image.
+paint_tri=[];paint_colors=[]
+prior_paint=mesh.color_attributes['Palette']
+for face in mesh.polygons:
+    triangle=np.array([mesh.vertices[k].co for k in face.vertices])
+    if triangle[:,2].min()< -14 or abs(np.cross(triangle[1,:2]-triangle[0,:2],triangle[2,:2]-triangle[0,:2]))<1e-6:continue
+    paint_tri.append(triangle[:,:2]);paint_colors.append(np.mean([prior_paint.data[k].color[:3] for k in face.loop_indices],axis=0))
+paint_tri=np.array(paint_tri);paint_colors=np.array(paint_colors)
+pa,pb,pc=paint_tri[:,0],paint_tri[:,1],paint_tri[:,2]
+den=(pb[:,1]-pc[:,1])*(pa[:,0]-pc[:,0])+(pc[:,0]-pb[:,0])*(pa[:,1]-pc[:,1])
+def inherited_paint(center):
+    x,y=center[:2]
+    u=((pb[:,1]-pc[:,1])*(x-pc[:,0])+(pc[:,0]-pb[:,0])*(y-pc[:,1]))/den
+    v=((pc[:,1]-pa[:,1])*(x-pc[:,0])+(pa[:,0]-pc[:,0])*(y-pc[:,1]))/den
+    candidates=np.flatnonzero((u>=-1e-4)&(v>=-1e-4)&(u+v<=1+1e-4))
+    index=candidates[0] if len(candidates) else np.argmin(np.sum((paint_tri.mean(1)-[x,y])**2,axis=1))
+    return paint_colors[index]
+
+rim=set()
+for edge in mesh.edges:
+    a,b=[mesh.vertices[i] for i in edge.vertices]
+    if (a.co.xy-b.co.xy).length>.001:continue
+    if a.co.z< -14 and b.co.z> -14:rim.add(b.index)
+    if b.co.z< -14 and a.co.z> -14:rim.add(a.index)
+assert len(rim)>12
+# Track the original asset's terrain-contact band before changing the cage.
+old_ground={v.index:ground_at(v.co.x+origin[0],-v.co.y+origin[2]) for v in mesh.vertices if v.co.z> -14}
+import cliff_sections_10d
+C.SAMPLER=T.SurfaceSampler()
+changed=[]
+for v in mesh.vertices:
+    if v.index not in old_ground:continue
+    old=old_ground[v.index]
+    fresh=ground_at(v.co.x+origin[0],-v.co.y+origin[2])
+    weight=1-float(cliff_sections_10d.W.smooth(3,12,v.co.z-old))
+    target=v.co.z+(fresh-old)*weight
+    if v.index in rim:target=fresh-1.5
+    if abs(target-v.co.z)>.001:changed.append([v.index,float(v.co.z),target])
+    v.co.z=target
+# Split only the shared contact edge and its two adjacent triangles.
+# This avoids subdivision adding unrelated face-interior vertices.
+vertices=[np.array(v.co) for v in mesh.vertices]
+faces=[tuple(f.vertices) for f in mesh.polygons]
+rim_edges=[tuple(e.vertices) for e in mesh.edges if all(k in rim for k in e.vertices)]
+import math
+for a,b in rim_edges:
+    aa,bb=vertices[a],vertices[b]
+    count=math.ceil(np.linalg.norm((aa-bb)[:2])/3)
+    if count<=1:continue
+    curve=[a]
+    for j in range(1,count):
+        p=aa*(1-j/count)+bb*(j/count)
+        p[2]=ground_at(p[0]+origin[0],-p[1]+origin[2])-1.5
+        curve.append(len(vertices));vertices.append(p)
+    curve.append(b)
+    adjacent=[i for i,f in enumerate(faces) if a in f and b in f]
+    assert len(adjacent)==2
+    for i in adjacent:
+        face=faces[i];c=next(k for k in face if k not in (a,b))
+        path=curve if face[(face.index(a)+1)%3]==b else curve[::-1]
+        replacements=[(c,x,y) for x,y in zip(path,path[1:])]
+        faces[i]=replacements[0];faces.extend(replacements[1:])
+# Rebuild the actual 2.5D roof with millimetre coordinate welding. The old
+# CDT shell contains near-collinear needle strips that collapse in float32.
+# Keep the edited native height controls; add no noise or artificial relief.
+from mathutils.geometry import delaunay_2d_cdt
+cloud={}
+for p in vertices:
+    if p[2]> -14:cloud.setdefault((round(float(p[0]),3),round(float(p[1]),3)),[]).append(float(p[2]))
+controls=[[x,y,float(np.mean(z))] for (x,y),z in cloud.items()]
+xy,_,roof,mapping,_,_=delaunay_2d_cdt([Vector(p[:2]) for p in controls],[],[],0,.002,True)
+vertices=[[float(p.x),float(p.y),float(np.mean([controls[k][2] for k in ids]))] for p,ids in zip(xy,mapping)]
+roof=[tuple(f) for f in roof]
+edge_count={};oriented={}
+for f in roof:
+    for a,b in zip(f,f[1:]+f[:1]):
+        key=tuple(sorted((a,b)));edge_count[key]=edge_count.get(key,0)+1;oriented[key]=(a,b)
+boundary=[oriented[e] for e,count in edge_count.items() if count==1]
+for k in {k for e in boundary for k in e}:
+    p=vertices[k];p[2]=ground_at(p[0]+origin[0],-p[1]+origin[2])-1.5
+# CDT removes redundant collinear hull points. Seat the final boundary,
+# split its one roof triangle, then copy that topology to the closed bottom.
+seated_boundary=[]
+for a,b in boundary:
+    aa,bb=np.array(vertices[a]),np.array(vertices[b])
+    steps=max(1,math.ceil(np.linalg.norm((bb-aa)[:2])/3))
+    curve=[a]
+    for j in range(1,steps):
+        p=aa*(1-j/steps)+bb*(j/steps)
+        p[2]=ground_at(p[0]+origin[0],-p[1]+origin[2])-1.5
+        curve.append(len(vertices));vertices.append(p.tolist())
+    curve.append(b);seated_boundary.extend(zip(curve,curve[1:]))
+    if steps==1:continue
+    matches=[i for i,f in enumerate(roof) if a in f and b in f]
+    assert len(matches)==1
+    i=matches[0];f=roof[i];c=next(k for k in f if k not in (a,b))
+    path=curve if f[(f.index(a)+1)%3]==b else curve[::-1]
+    replacements=[(c,x,y) for x,y in zip(path,path[1:])]
+    roof[i]=replacements[0];roof.extend(replacements[1:])
+boundary=seated_boundary
+# This CDT roof has a convex footprint. Close it with an independently
+# triangulated convex floor, avoiding nearly collinear roof needles below it.
+ring=[a for a,b in boundary]
+center_xy=np.array([vertices[k][:2] for k in ring]).mean(axis=0)
+for a,b in boundary:
+    aa,bb=np.array(vertices[a][:2]),np.array(vertices[b][:2])
+    assert np.cross(bb-aa,center_xy-aa)>1e-6,'Floor fan requires a convex footprint and an interior center'
+floor_map={}
+for k in ring:
+    x,y,z=vertices[k];floor_map[k]=len(vertices);vertices.append([x,y,-15.])
+center=len(vertices);vertices.append([*center_xy,-15.])
+faces=list(roof)
+for a,b in boundary:
+    fa,fb=floor_map[a],floor_map[b]
+    faces.extend([(b,a,fa),(b,fa,fb),(fb,fa,center)])
+bm=bmesh.new()
+for p in vertices:bm.verts.new(p)
+bm.verts.ensure_lookup_table()
+for f in faces:bm.faces.new([bm.verts[k] for k in f])
+bmesh.ops.recalc_face_normals(bm,faces=list(bm.faces))
+print('REBUILT CONTACT SHELL',len(bm.verts),len(bm.faces),'bad edges',sum(len(e.link_faces)!=2 for e in bm.edges),'degenerate',sum(f.calc_area()<=1e-8 for f in bm.faces),flush=True)
+assert all(len(e.link_faces)==2 for e in bm.edges) and all(f.calc_area()>1e-8 for f in bm.faces)
+volume=abs(bm.calc_volume());bm.to_mesh(mesh);bm.free();mesh.update()
+sun=Vector((-.48,-.30,.82)).normalized();attr=mesh.color_attributes.get('Palette') or mesh.color_attributes.new(name='Palette',type='FLOAT_COLOR',domain='CORNER')
+def rgb(h):return np.array([int(h[k:k+2],16)/255 for k in (0,2,4)])
+for face in mesh.polygons:
+    light=max(0,face.normal.dot(sun));grass=face.normal.z>.8 and face.center.z>5
+    c=rgb(['929f78','9fac81','8f9f79'][face.index%3])*(.65+.32*light) if grass else rgb('616e78')*(1-light)+rgb('bcb8ad')*light
+    c=np.where(c<=.04045,c/12.92,((c+.055)/1.055)**2.4)
+    if face.normal.z>1e-5:c=inherited_paint(face.center)
+    for k in face.loop_indices:attr.data[k].color=(*c,1)
+obj['closed_volume_m3']=volume
+contact=[v.index for v in mesh.vertices if v.co.z> -14 and abs(v.co.z-(ground_at(v.co.x+origin[0],-v.co.y+origin[2])-1.5))<.02]
+obj.vertex_groups.new(name='Seated ground rim').add(contact,1.,'REPLACE')
+bpy.ops.object.select_all(action='DESELECT');obj.select_set(True);bpy.context.view_layer.objects.active=obj
+path=root/'captures/cliff_sections_10l_eastern_plateau'
+bpy.ops.export_scene.gltf(filepath=str(path.with_suffix('.glb')),export_format='GLB',use_selection=True,export_apply=True,export_vertex_color='ACTIVE')
+bpy.ops.wm.save_as_mainfile(filepath=str(path.with_suffix('.blend')))
+report={'asset':item['name'],'rim_vertices':len(rim),'changed':changed,'volume_m3':volume,'vertices':len(mesh.vertices),'faces':len(mesh.polygons)}
+(root/'captures/round-10l-plateau-seating.json').write_text(json.dumps(report,indent=2))
+preview=(root/'captures/preview_cliff_sections_10d.gd').read_text()
+preview=preview.replace('\troot.add_child(game)','\treplace_asset(game.get_node("World/Cliffs/cliff_eastern_plateau"),"D:/test6/captures/cliff_sections_10l_eastern_plateau.glb")\n\troot.add_child(game)')
+(root/'captures/preview_cliff_sections_10l.gd').write_text(preview)
+print('Adjusted',len(changed),'native contact-band vertices; volume',volume,flush=True)

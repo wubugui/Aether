@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "run_id": "headland-vertices-23c-20260908T115702Z-aa6c2cb83361436081ef9228520432f4",
+  "round": "headland-vertices-23c",
+  "started_utc": "2026-09-08T11:57:02.708291+00:00",
+  "workspace": "E:\\FeiTing",
+  "run_directory": "E:\\FeiTing\\captures\\validation_runs\\headland-vertices-23c-20260908T115702Z-aa6c2cb83361436081ef9228520432f4",
+  "status": "passed",
+  "passed": true,
+  "export_windows_requested": false,
+  "capture_views_requested": true,
+  "expected_counts": {},
+  "stages": [
+    {
+      "name": "native-vertex-ground",
+      "run_id": "headland-vertices-23c-20260908T115702Z-aa6c2cb83361436081ef9228520432f4",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--audio-driver",
+        "Dummy",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\headland-vertices-23c-20260908T115702Z-aa6c2cb83361436081ef9228520432f4\\survey-inputs\\survey_headland_vertices_23c.gd",
+        "--quit-after",
+        "900",
+        "--",
+        "--reuse=E:\\FeiTing\\captures\\validation_runs\\headland-vertices-23c-20260908T115702Z-aa6c2cb83361436081ef9228520432f4\\survey-inputs\\vertex-survey.json",
+        "--layout=E:\\FeiTing\\captures\\validation_runs\\headland-vertices-23c-20260908T115702Z-aa6c2cb83361436081ef9228520432f4\\survey-inputs\\layout.json",
+        "--reference=E:\\FeiTing\\captures\\validation_runs\\headland-vertices-23c-20260908T115702Z-aa6c2cb83361436081ef9228520432f4\\survey-inputs\\reference-view-1342-progress-22g.json",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\headland-vertices-23c-20260908T115702Z-aa6c2cb83361436081ef9228520432f4\\survey\\vertex-survey.json",
+        "--validation-run=headland-vertices-23c-20260908T115702Z-aa6c2cb83361436081ef9228520432f4"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788868642923859500,
+      "started_utc": "2026-09-08T11:57:22.923859+00:00",
+      "input_manifest_sha256": "de038f9b8c226fda7fe6ef8640826bce9af9d47b288273b251ce7f7702a1ad30",
+      "exit_code": 0,
+      "finished_ns": 1788868648362309100,
+      "finished_utc": "2026-09-08T11:57:37.386664+00:00"
+    }
+  ],
+  "artifacts": {
+    "survey-inputs/survey_headland_vertices_23c.py": {
+      "sha256": "9d7d9675846b954149129162c916bfab2f778b6cd801628a724f843c7dead412",
+      "bytes": 2411,
+      "mtime_ns": 1788868245479831900
+    },
+    "survey-inputs/survey_headland_vertices_23c.gd": {
+      "sha256": "02cbdbbe6145649aaf7830d50d0329254c243f28f9fbdbea331816d5c0d44d81",
+      "bytes": 3223,
+      "mtime_ns": 1788868245478405300
+    },
+    "survey-inputs/layout.json": {
+      "sha256": "1f8c1766af8247e45809fdcfc7397a79d1a3cfae0b9313745b1bd626964c33bf",
+      "bytes": 246601,
+      "mtime_ns": 1788868246389511100
+    },
+    "survey-inputs/layout_headland_23c.py": {
+      "sha256": "917a1e198e2d2819eafdd8acc5f18212e467a1f8aef55f6f70cf4abcd1b4f1a2",
+      "bytes": 5707,
+      "mtime_ns": 1788868245478405300
+    },
+    "survey-inputs/reference-view-1342-progress-22g.json": {
+      "sha256": "b01545d091dd1074a2e57f97492145bc208308a8d91c82fe0787a54123b7d199",
+      "bytes": 34114,
+      "mtime_ns": 1788866953405202800
+    },
+    "survey-inputs/vertex-survey.json": {
+      "sha256": "f2d0b8720f5d2fbb4ce6c7a98d4995ddb713436a4ba51ecc267138b95994ad80",
+      "bytes": 403374,
+      "mtime_ns": 1788868132469697500
+    },
+    "inputs.json": {
+      "sha256": "de038f9b8c226fda7fe6ef8640826bce9af9d47b288273b251ce7f7702a1ad30",
+      "bytes": 732024,
+      "mtime_ns": 1788868632306051600
+    },
+    "survey/vertex-survey.json": {
+      "sha256": "a5e18c37318e9ae0d923fc2541453a8a038b9ec7863a39894aa8923c2d9779d0",
+      "bytes": 450859,
+      "mtime_ns": 1788868648049998600
+    },
+    "native-vertex-ground.log": {
+      "sha256": "40980736bccda5ff10ea438e9e53c932d2eef3c3301c5700118eecf46c1af1fb",
+      "bytes": 207,
+      "mtime_ns": 1788868648049998600
+    },
+    "native-vertex-ground-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788868642926851100
+    },
+    "stages/native-vertex-ground.json": {
+      "sha256": "0c5fba027599736a19fbd988d56b5f1087a18655af2b2278083bfbd2843d2b07",
+      "bytes": 1644,
+      "mtime_ns": 1788868657389127300
+    }
+  },
+  "visual_acceptance_proven": false,
+  "scope": "Read-only original ground and SeaCollision-excluded terrain bed at each authored Blender layout vertex. Dummy audio, native GPU physics.",
+  "completed_utc": "2026-09-08T11:57:46.453787+00:00"
+}

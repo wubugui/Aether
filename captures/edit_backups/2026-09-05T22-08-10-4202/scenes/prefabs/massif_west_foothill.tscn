@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/asset_instance.gd" id="1_qunio"]
+[ext_resource type="Material" path="res://materials/cliff.tres" id="2_wld2a"]
+[ext_resource type="PackedScene" path="res://assets/models/massif_west_foothill.glb" id="3_vhp72"]
+[ext_resource type="Shape3D" path="res://assets/collision/massif_west_foothill.res" id="4_86lv6"]
+
+[node name="massif_west_foothill" type="Node3D"]
+script = ExtResource("1_qunio")
+asset_kind = "massif_west_foothill"
+surface_material = ExtResource("2_wld2a")
+
+[node name="Model" parent="." instance=ExtResource("3_vhp72")]
+
+[node name="Collision" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision"]
+shape = ExtResource("4_86lv6")

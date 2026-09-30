@@ -1,0 +1,12 @@
+from pathlib import Path
+import json
+R=Path(__file__).resolve().parents[1]
+review='reviews/round-26b-village-sloped-paving-independent-review.md';assert (R/review).exists()
+e=R/'reviews/round-26b-root-evidence.json';d=json.loads(e.read_text());d['independent_review']=review;d['independent_review_status']='local_lane_improvement_retained_whole_reference_not_accepted';d['actual_export_limit']='Independent cap classification retains inclined tops and excludes identified near-vertical thickness side faces. Small bedding-cap terrain overlap remains; do not transfer the25f whole-cap47.96mm clearance claim to26b.';e.write_text(json.dumps(d,indent=2),encoding='utf-8')
+p=R/'reviews/reference-view-1342-progress-26b.json';d=json.loads(p.read_text());d['village_progress_26b'].update(status='local_continuous_lane_repair_retained_whole_art_not_accepted',independent_review=review);d['remaining_reference_failures']=['Broad bare cliff sheets and regular island skirts still need authored Blender rockwork','Coherent village lanes now exist; working-waterfront links and village context remain incomplete','Cloud lighting, moon appearance, periodic water reflection and lighthouse beams remain incomplete','All20-reference scenes, real flight/streaming/weather and production integration remain unfinished'];p.write_text(json.dumps(d,indent=2),encoding='utf-8')
+message='**最新26b连贯石铺坡巷完成原生重开、五GPU及独立限定复核，保留改进，整图仍未接受。** 922独立石板/路床替换重复扇贝状台阶边；门口/院落保持水平接口，原九主体屋基、134岸界及底侧几何保留。实际倾斜顶面已单独识别检查；局部薄基床cap有不足1mm土越过，不能沿用25f全cap约48mm净空结论，也不声称全宽通行验收。run `village-paving-26b-20260908T143321Z-441bad8ec7bd4024b195dca93cc8bd82` terminal passed、146绑定SHA核对，根/独立均看完五图。所有26原生/GPU进程结束，不重跑旧版本。当前26b铺地＋26b岸体仅候选，生产仍17e/18c/19h。接续 `reviews/round-26-worklog.md`、`reviews/round-26b-village-sloped-paving-independent-review.md`、`reviews/reference-view-1342-progress-26b.json` 和 `reviews/round-27-next-visual-priorities.md`，继续大岩岸/群岛轮廓、水光、云层与灯塔光束等完整20参考目标。会话Goal已实际读回完整新范围并保持active。'
+for name in ['WORKSPACE_RESUME.md','reviews/LOOP.md']:
+    p=R/name;s=p.read_text(encoding='utf-8');head,rest=s.split('\n\n',1);_,rest=rest.split('\n\n',1);p.write_text(head+'\n\n'+message+'\n\n'+rest,encoding='utf-8')
+for name in ['REFERENCE_SCENES.md','WORLD_SCENE_PLAN.md']:
+    p=R/name;p.write_text(p.read_text(encoding='utf-8')+'\n\n'+message+'\n',encoding='utf-8')
+print('26b bounded-review checkpoint written; complete session Goal remains active')

@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "run_id": "terrain-18a-20260908T054408Z-468a16d6942b49f7bfe0c6fb4d301c28",
+  "round": "terrain-18a",
+  "started_utc": "2026-09-08T05:44:08.317427+00:00",
+  "workspace": "E:\\FeiTing",
+  "run_directory": "E:\\FeiTing\\captures\\validation_runs\\terrain-18a-20260908T054408Z-468a16d6942b49f7bfe0c6fb4d301c28",
+  "status": "passed",
+  "passed": true,
+  "export_windows_requested": false,
+  "capture_views_requested": true,
+  "expected_counts": {},
+  "stages": [
+    {
+      "name": "capture-opening",
+      "run_id": "terrain-18a-20260908T054408Z-468a16d6942b49f7bfe0c6fb4d301c28",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\terrain-18a-20260908T054408Z-468a16d6942b49f7bfe0c6fb4d301c28\\study-inputs\\preview.gd",
+        "--",
+        "--capture",
+        "--view=opening",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\terrain-18a-20260908T054408Z-468a16d6942b49f7bfe0c6fb4d301c28\\images\\opening.png",
+        "--study-dir=E:\\FeiTing\\captures\\validation_runs\\terrain-18a-20260908T054408Z-468a16d6942b49f7bfe0c6fb4d301c28\\study-inputs",
+        "--validation-run=terrain-18a-20260908T054408Z-468a16d6942b49f7bfe0c6fb4d301c28"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788846262441999300,
+      "started_utc": "2026-09-08T05:44:22.441999+00:00",
+      "input_manifest_sha256": "3bbc85ccd496f49717808c20315a8dd3510e1dbb03f1bc7adacc3799da34e204",
+      "exit_code": 0,
+      "finished_ns": 1788846269555395700,
+      "image": "images/opening.png",
+      "finished_utc": "2026-09-08T05:44:36.903071+00:00"
+    },
+    {
+      "name": "capture-cliff-side",
+      "run_id": "terrain-18a-20260908T054408Z-468a16d6942b49f7bfe0c6fb4d301c28",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\terrain-18a-20260908T054408Z-468a16d6942b49f7bfe0c6fb4d301c28\\study-inputs\\preview.gd",
+        "--",
+        "--capture",
+        "--view=cliff-side",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\terrain-18a-20260908T054408Z-468a16d6942b49f7bfe0c6fb4d301c28\\images\\cliff-side.png",
+        "--study-dir=E:\\FeiTing\\captures\\validation_runs\\terrain-18a-20260908T054408Z-468a16d6942b49f7bfe0c6fb4d301c28\\study-inputs",
+        "--validation-run=terrain-18a-20260908T054408Z-468a16d6942b49f7bfe0c6fb4d301c28"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788846283719898200,
+      "started_utc": "2026-09-08T05:44:43.719898+00:00",
+      "input_manifest_sha256": "3bbc85ccd496f49717808c20315a8dd3510e1dbb03f1bc7adacc3799da34e204",
+      "exit_code": 0,
+      "finished_ns": 1788846290208900900,
+      "image": "images/cliff-side.png",
+      "finished_utc": "2026-09-08T05:44:57.370825+00:00"
+    },
+    {
+      "name": "capture-reverse",
+      "run_id": "terrain-18a-20260908T054408Z-468a16d6942b49f7bfe0c6fb4d301c28",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\terrain-18a-20260908T054408Z-468a16d6942b49f7bfe0c6fb4d301c28\\study-inputs\\preview.gd",
+        "--",
+        "--capture",
+        "--view=reverse",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\terrain-18a-20260908T054408Z-468a16d6942b49f7bfe0c6fb4d301c28\\images\\reverse.png",
+        "--study-dir=E:\\FeiTing\\captures\\validation_runs\\terrain-18a-20260908T054408Z-468a16d6942b49f7bfe0c6fb4d301c28\\study-inputs",
+        "--validation-run=terrain-18a-20260908T054408Z-468a16d6942b49f7bfe0c6fb4d301c28"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788846304634825100,
+      "started_utc": "2026-09-08T05:45:04.634825+00:00",
+      "input_manifest_sha256": "3bbc85ccd496f49717808c20315a8dd3510e1dbb03f1bc7adacc3799da34e204",
+      "exit_code": 0,
+      "finished_ns": 1788846311077500200,
+      "image": "images/reverse.png",
+      "finished_utc": "2026-09-08T05:45:18.268137+00:00"
+    }
+  ],
+  "artifacts": {
+    "study-inputs/terrain.gdshader": {
+      "sha256": "70853787d4ae6c971ce1088163366564e952311811f291943c1aef7fcef7ed89",
+      "bytes": 2458,
+      "mtime_ns": 1788846237619497100
+    },
+    "study-inputs/preview.gd": {
+      "sha256": "8702d1276577444587f309485e0bfa0eb0e97c6e32dd92a7a3e005dc6bdc8224",
+      "bytes": 1107,
+      "mtime_ns": 1788846237620001200
+    },
+    "scoped-driver.py": {
+      "sha256": "257d954b20cecc8c7ea632d35c430425c73bd1416c3d88349f7c7b4c6cf1c660",
+      "bytes": 2964,
+      "mtime_ns": 1788846237620518900
+    },
+    "inputs.json": {
+      "sha256": "3bbc85ccd496f49717808c20315a8dd3510e1dbb03f1bc7adacc3799da34e204",
+      "bytes": 731252,
+      "mtime_ns": 1788846255215502200
+    },
+    "images/opening.png": {
+      "sha256": "a15dc647b0c68a8d097fe9b8bb4c3e4be7c8a970d24569838a2b948728297489",
+      "bytes": 711322,
+      "mtime_ns": 1788846269172947800
+    },
+    "capture-opening.log": {
+      "sha256": "9a7e6cc30b910d585057777990de7ef4d9d11839895f76c13887e0ba5a4df5ae",
+      "bytes": 592,
+      "mtime_ns": 1788846269174942800
+    },
+    "capture-opening-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788846262442996500
+    },
+    "stages/capture-opening.json": {
+      "sha256": "94e2cca86729a8ff102286a8954cb288f90e7e201a42a7271b9f0902674c85fa",
+      "bytes": 1205,
+      "mtime_ns": 1788846276905203000
+    },
+    "images/cliff-side.png": {
+      "sha256": "1324efab9458b76011ebe032c64cd432666f5a42840a6ebb17d10652135b3ff9",
+      "bytes": 821442,
+      "mtime_ns": 1788846289838456300
+    },
+    "capture-cliff-side.log": {
+      "sha256": "5a8fd790bf9c6e682bd994dc9ecbb946fab5accdf5325ddd4391334a056161b5",
+      "bytes": 598,
+      "mtime_ns": 1788846289839462800
+    },
+    "capture-cliff-side-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788846283720895600
+    },
+    "stages/capture-cliff-side.json": {
+      "sha256": "cfc0a3ab6f5a251868f9ebdb92a744884a194358eafab78673cfae2f3eab5c05",
+      "bytes": 1217,
+      "mtime_ns": 1788846297372915900
+    },
+    "images/reverse.png": {
+      "sha256": "6b32ec157852deb2012dec834e88a044df225a00f1a746c5fb6232a5a2da3405",
+      "bytes": 712953,
+      "mtime_ns": 1788846310700891800
+    },
+    "capture-reverse.log": {
+      "sha256": "6c0e17db614f7017dc5a9ea820c6500b8c59928f6fe3c61a49f42b69f4b0f66f",
+      "bytes": 592,
+      "mtime_ns": 1788846310703588500
+    },
+    "capture-reverse-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788846304636485900
+    },
+    "stages/capture-reverse.json": {
+      "sha256": "5a00656953b38bf8e4e2415a1bc4b7b3644b969f168547b8adaf876a53b7a63a",
+      "bytes": 1205,
+      "mtime_ns": 1788846318270146500
+    }
+  },
+  "visual_acceptance_proven": false,
+  "scope": "Temporary world-coordinate grass pigment study on native terrain and generated terrain; three raw GPU views. No geometry, source material, gameplay or release acceptance.",
+  "production_modified": false,
+  "input_count": 3496,
+  "completed_utc": "2026-09-08T05:45:25.411941+00:00"
+}

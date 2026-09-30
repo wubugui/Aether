@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "run_id": "village-grid-24a-20260908T122557Z-901d701fb6c6490989941a6f2e047718",
+  "round": "village-grid-24a",
+  "started_utc": "2026-09-08T12:25:57.373171+00:00",
+  "workspace": "E:\\FeiTing",
+  "run_directory": "E:\\FeiTing\\captures\\validation_runs\\village-grid-24a-20260908T122557Z-901d701fb6c6490989941a6f2e047718",
+  "status": "passed",
+  "passed": true,
+  "export_windows_requested": false,
+  "capture_views_requested": true,
+  "expected_counts": {},
+  "stages": [
+    {
+      "name": "native-village-grid",
+      "run_id": "village-grid-24a-20260908T122557Z-901d701fb6c6490989941a6f2e047718",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--audio-driver",
+        "Dummy",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\village-grid-24a-20260908T122557Z-901d701fb6c6490989941a6f2e047718\\survey-inputs\\survey_village_grid_24a.gd",
+        "--quit-after",
+        "900",
+        "--",
+        "--source=E:\\FeiTing\\captures\\validation_runs\\village-grid-24a-20260908T122557Z-901d701fb6c6490989941a6f2e047718\\survey-inputs",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\village-grid-24a-20260908T122557Z-901d701fb6c6490989941a6f2e047718\\survey\\grid.json",
+        "--validation-run=village-grid-24a-20260908T122557Z-901d701fb6c6490989941a6f2e047718"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788870372496961700,
+      "started_utc": "2026-09-08T12:26:12.496961+00:00",
+      "input_manifest_sha256": "8a0266ab01d9ee627f3c2f2b7e576caadc3d0868b66e0f502e9cfe07fbbaed40",
+      "exit_code": 0,
+      "finished_ns": 1788870377357700800,
+      "finished_utc": "2026-09-08T12:26:23.779329+00:00"
+    }
+  ],
+  "artifacts": {
+    "survey-inputs/survey_village_grid_24a.py": {
+      "sha256": "840f9ec9b7c573e37317dde897d5fc6639af042d33111e13986583bac9582cf0",
+      "bytes": 2221,
+      "mtime_ns": 1788870355301561500
+    },
+    "survey-inputs/survey_village_grid_24a.gd": {
+      "sha256": "796c3cb7808ec05c747aec140fa0a0d5e48d2399a49ab89b33252e3e91e8ed69",
+      "bytes": 2463,
+      "mtime_ns": 1788870355301561500
+    },
+    "survey-inputs/mainland_headland.glb": {
+      "sha256": "cd423ca005c39720455921af8d5990839ed05831f153d1524a5095fe8a227b82",
+      "bytes": 278308,
+      "mtime_ns": 1788869823419065000
+    },
+    "survey-inputs/layout.json": {
+      "sha256": "1f8c1766af8247e45809fdcfc7397a79d1a3cfae0b9313745b1bd626964c33bf",
+      "bytes": 246601,
+      "mtime_ns": 1788868246389511100
+    },
+    "survey-inputs/round-23g-headland-independent-audit.json": {
+      "sha256": "c74cc86519d1ea619408efd2dd7148a09de245139e2bd55b13c1e9d77bfde012",
+      "bytes": 24856,
+      "mtime_ns": 1788870136061000700
+    },
+    "survey-inputs/reference-view-1342-progress-23g.json": {
+      "sha256": "d146b31dbc545ac1917a871f63a7247e2e83cc49c1eaadaf27b659f1ba991afe",
+      "bytes": 35184,
+      "mtime_ns": 1788870099234857400
+    },
+    "inputs.json": {
+      "sha256": "8a0266ab01d9ee627f3c2f2b7e576caadc3d0868b66e0f502e9cfe07fbbaed40",
+      "bytes": 732019,
+      "mtime_ns": 1788870363657942300
+    },
+    "survey/grid.json": {
+      "sha256": "b805c78811c1dd79c584f48e5e2954526c51b0f0bb73365530b8041d4b832e37",
+      "bytes": 3130826,
+      "mtime_ns": 1788870377124140100
+    },
+    "native-village-grid.log": {
+      "sha256": "56b06f831858a3f8f6bcf63de6eb3f6b9c082e62b0d675eb7c73f8f2077097a5",
+      "bytes": 193,
+      "mtime_ns": 1788870377124140100
+    },
+    "native-village-grid-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788870372498349400
+    },
+    "stages/native-village-grid.json": {
+      "sha256": "94cf7f9b7996c5997464e1c2b1c53028e0a2d878463d47981a4e1d3888baa918",
+      "bytes": 1242,
+      "mtime_ns": 1788870383780832400
+    }
+  },
+  "visual_acceptance_proven": false,
+  "scope": "Actual23g headland collision height grid for nine-house shared courtyards and short stair connections. Read-only, original World retained.",
+  "completed_utc": "2026-09-08T12:26:30.235065+00:00"
+}

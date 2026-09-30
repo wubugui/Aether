@@ -1,0 +1,84 @@
+{
+  "checked_utc": "2026-09-30T13:40:28.055851+00:00",
+  "writer_identity": "unresolved; no proof of external user session",
+  "child_agent_statement": "independent_intake confirms read-only, no delegation and no build/test launch",
+  "files": [
+    {
+      "path": "scripts/game39.gd",
+      "bytes": 2796,
+      "sha256": "f9c7e03416460738cbb81fa74c5cce104da650a1c9f669ffaaa2b13732c31565",
+      "modified_utc": "2026-09-30T13:10:24.660740+00:00"
+    },
+    {
+      "path": "scripts/environment39.gd",
+      "bytes": 5724,
+      "sha256": "b586e8f02ab573f0ce0c8cab3f80180a2cb1ee59374d5f2c1b8d2a6889bcffeb",
+      "modified_utc": "2026-09-30T13:12:04.171107+00:00"
+    },
+    {
+      "path": "scripts/world39.gd",
+      "bytes": 1152,
+      "sha256": "137ca6ef28d3987a7bd819b4695902842cc43a04c0157a89cb2a8e472dc2fc28",
+      "modified_utc": "2026-09-30T13:10:19.608497+00:00"
+    },
+    {
+      "path": "tools/build_candidate39.gd",
+      "bytes": 10093,
+      "sha256": "3c09c2c02188ad706ddb2c8cb52b6779f9d8ebe1e4406ab7b2c302708f1b16d9",
+      "modified_utc": "2026-09-30T13:10:27.802154+00:00"
+    },
+    {
+      "path": "tools/verify_candidate39.gd",
+      "bytes": 8849,
+      "sha256": "3ba10f0d0762c37463dd22f3d0387b2ce30238df410803861123048096614500",
+      "modified_utc": "2026-09-30T13:17:41.896420+00:00"
+    },
+    {
+      "path": "tools/probe_renderer39.gd",
+      "bytes": 1664,
+      "sha256": "6cbc13fa97afa771ef3fa3f415314cb80ece3e322bbd64c9d25d8c39794df722",
+      "modified_utc": "2026-09-30T13:17:39.572716+00:00"
+    },
+    {
+      "path": "scenes/candidate39/Game39.tscn",
+      "bytes": 101604710,
+      "sha256": "9a52fce69ad88c4545b0993a587a896b8ada1e8b7b5e2351273b76a028f8d151",
+      "modified_utc": "2026-09-30T13:10:51.854506+00:00"
+    },
+    {
+      "path": "scenes/candidate39/Game39-c-build.tscn",
+      "bytes": 101603097,
+      "sha256": "a3b8508a6983a7d8f2d069cd20bef0a6ba18331ffb7bac6fcc877f860164bfb8",
+      "modified_utc": "2026-09-30T12:58:38.398257+00:00"
+    }
+  ],
+  "existing_reports": [
+    {
+      "run": "gpu-c",
+      "passed_reported": true,
+      "check_count": 29,
+      "failed": [],
+      "capture_count": 12,
+      "source_sha256": "a3b8508a6983a7d8f2d069cd20bef0a6ba18331ffb7bac6fcc877f860164bfb8"
+    },
+    {
+      "run": "gpu-d",
+      "passed_reported": false,
+      "check_count": 38,
+      "failed": [
+        "Streamed vegetation/clouds use environment materials"
+      ],
+      "capture_count": 12,
+      "source_sha256": "9a52fce69ad88c4545b0993a587a896b8ada1e8b7b5e2351273b76a028f8d151"
+    },
+    {
+      "run": "check-e",
+      "passed_reported": true,
+      "check_count": 26,
+      "failed": [],
+      "capture_count": 0,
+      "source_sha256": "9a52fce69ad88c4545b0993a587a896b8ada1e8b7b5e2351273b76a028f8d151"
+    }
+  ],
+  "scope": "Read-only identity audit of later files. Existing reports do not become this agent validation."
+}

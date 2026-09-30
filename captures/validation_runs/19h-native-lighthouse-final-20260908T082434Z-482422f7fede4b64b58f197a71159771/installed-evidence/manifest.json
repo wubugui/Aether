@@ -1,0 +1,234 @@
+{
+  "schema_version": 1,
+  "run_id": "19h-native-lighthouse-repair-20260908T082039Z-7c31371c56954044b4576030f27feea3",
+  "round": "19h-native-lighthouse-repair",
+  "started_utc": "2026-09-08T08:20:39.617250+00:00",
+  "workspace": "E:\\FeiTing",
+  "run_directory": "E:\\FeiTing\\captures\\validation_runs\\19h-native-lighthouse-repair-20260908T082039Z-7c31371c56954044b4576030f27feea3",
+  "status": "failed",
+  "passed": false,
+  "export_windows_requested": false,
+  "capture_views_requested": true,
+  "expected_counts": {
+    "game-test": 36
+  },
+  "stages": [
+    {
+      "name": "derived-install",
+      "run_id": "19h-native-lighthouse-repair-20260908T082039Z-7c31371c56954044b4576030f27feea3",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\19h-native-lighthouse-repair-20260908T082039Z-7c31371c56954044b4576030f27feea3\\preparation\\native_lighthouse_19.gd",
+        "--quit-after",
+        "600",
+        "--",
+        "--mode=install",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\19h-native-lighthouse-repair-20260908T082039Z-7c31371c56954044b4576030f27feea3\\reports\\derived-install.json",
+        "--validation-run=19h-native-lighthouse-repair-20260908T082039Z-7c31371c56954044b4576030f27feea3"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788855647599594900,
+      "started_utc": "2026-09-08T08:20:47.599594+00:00",
+      "input_manifest_sha256": null,
+      "exit_code": 0,
+      "finished_ns": 1788855650643823400,
+      "finished_utc": "2026-09-08T08:20:50.665378+00:00"
+    },
+    {
+      "name": "native-check",
+      "run_id": "19h-native-lighthouse-repair-20260908T082039Z-7c31371c56954044b4576030f27feea3",
+      "status": "failed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\19h-native-lighthouse-repair-20260908T082039Z-7c31371c56954044b4576030f27feea3\\preparation\\native_lighthouse_19.gd",
+        "--quit-after",
+        "600",
+        "--",
+        "--mode=check",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\19h-native-lighthouse-repair-20260908T082039Z-7c31371c56954044b4576030f27feea3\\reports\\native-check.json",
+        "--validation-run=19h-native-lighthouse-repair-20260908T082039Z-7c31371c56954044b4576030f27feea3"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": false,
+      "started_ns": 1788855673764854900,
+      "started_utc": "2026-09-08T08:21:13.764854+00:00",
+      "input_manifest_sha256": "a34ae9b0a36463520f3a3593d54f3a3eb532c3a5abaddef0d51450ea67d6dcd5",
+      "exit_code": 0,
+      "finished_ns": 1788855681849442900,
+      "error": "Engine/script error in E:\\FeiTing\\captures\\validation_runs\\19h-native-lighthouse-repair-20260908T082039Z-7c31371c56954044b4576030f27feea3\\native-check-error.log: SCRIPT ERROR",
+      "finished_utc": "2026-09-08T08:21:21.857192+00:00"
+    }
+  ],
+  "artifacts": {
+    "preparation-inputs.json": {
+      "sha256": "6c3caa104e600639e3294b8ca56f50c2388347676e13bf76709f81b02604c565",
+      "bytes": 604958,
+      "mtime_ns": 1788855647388859200
+    },
+    "source-backup/assets/models/lighthouse.glb": {
+      "sha256": "27bf2f45f6993ab31d5b690c84bee4875b78be9e7c1b014c424308ddde3d0b38",
+      "bytes": 86636,
+      "mtime_ns": 1788599996000000000
+    },
+    "source-backup/assets/collision/lighthouse.res": {
+      "sha256": "aeb020dac75fb3290edda1941b73b440335340d7711c33b69c97b7732ce60e31",
+      "bytes": 35283,
+      "mtime_ns": 1788601312000000000
+    },
+    "source-backup/assets/meshes/lighthouse.res": {
+      "sha256": "fd63abf04d59e164ad6767b2b4d1286550f36082a3c04cceae712c86e8607343",
+      "bytes": 56097,
+      "mtime_ns": 1788601312000000000
+    },
+    "source-backup/scenes/prefabs/lighthouse.tscn": {
+      "sha256": "845d30d6f0f40527b8c4c434a7bbd22603b100fc0b838c89de7872ee1b1ad1c6",
+      "bytes": 744,
+      "mtime_ns": 1788601312000000000
+    },
+    "source-backup/assets/asset_catalog.json": {
+      "sha256": "c08bd608b2bca025e66fbb82056b5efb9ff88d77d87d70e01c11d24179c81ee5",
+      "bytes": 9814,
+      "mtime_ns": 1788847402429658900
+    },
+    "source-backup/assets/settlement_kit.json": {
+      "sha256": "9ab007ca7e7d8b91e21588157360bb23bc8c3c6c8417537a80ddb6f43417c7f6",
+      "bytes": 209,
+      "mtime_ns": 1788621014000000000
+    },
+    "preparation/integrate_lighthouse_19h.py": {
+      "sha256": "baf1d7964a429261b0ca20d6dcae575683f71d0db162ea02e750a7fbaa40fc7e",
+      "bytes": 10105,
+      "mtime_ns": 1788855637407507000
+    },
+    "preparation/round-19h-lighthouse-independent-review.md": {
+      "sha256": "f4d54b625ea6a1bf299e23b66ca56ef4df972a1ad16d8b34b42a3c6c902ac2da",
+      "bytes": 5106,
+      "mtime_ns": 1788855426354389600
+    },
+    "preparation/round-19h-lighthouse-independent-audit.json": {
+      "sha256": "99f4da0e09ce57559cd8d055184b5b73d443e90d9295fd25adfaaae9ad0f3468",
+      "bytes": 31279,
+      "mtime_ns": 1788855355430883500
+    },
+    "preparation/lighthouse.blend": {
+      "sha256": "10540b562966c58df68f6bd7e5030cb0b5e991d0aceb292a318c88215876f000",
+      "bytes": 2023615,
+      "mtime_ns": 1788854928568499900
+    },
+    "preparation/lighthouse.glb": {
+      "sha256": "79b5fd32ec06a3c3cf0fc948e31333c9d374fb018437f2fa630293e266382eb1",
+      "bytes": 270348,
+      "mtime_ns": 1788854928905515200
+    },
+    "preparation/builder.py": {
+      "sha256": "9772fa9587300c411c45ddcfe16be562505b2f3ea0915d82b46b0b9971ada34f",
+      "bytes": 11373,
+      "mtime_ns": 1788854925933199000
+    },
+    "preparation/model-report.json": {
+      "sha256": "5b8491b069afcd25f58e4c539a977bf75acd7c69d536d424ff5a696eff6388c2",
+      "bytes": 722,
+      "mtime_ns": 1788854928905515200
+    },
+    "preparation/native_lighthouse_19.gd": {
+      "sha256": "84edc6d44ec0f7e61699fbf2e8cbd2422335917935138cba46300cf612f45581",
+      "bytes": 5891,
+      "mtime_ns": 1788855637406368100
+    },
+    "preparation/capture_native_lighthouse_19.gd": {
+      "sha256": "bf2e29ae5cb45c70689c3ad5a6f8afc6490e148c7b4e1e241e3f3191b9c9a6c5",
+      "bytes": 1736,
+      "mtime_ns": 1788854824588072900
+    },
+    "resume-current-inputs.json": {
+      "sha256": "f48ee3f6481b3ab55b81eb6914ac95412b9a9f1a8a6c2508e41cf792e626654a",
+      "bytes": 605079,
+      "mtime_ns": 1788855647562887700
+    },
+    "failed-predecessor/manifest.json": {
+      "sha256": "aa60c2c7ac68149915e140d1c1bfc34cdad7a32e1610fe6b005b40aa1fab84cb",
+      "bytes": 7656,
+      "mtime_ns": 1788855486296772900
+    },
+    "failed-predecessor/import.log": {
+      "sha256": "15ac0c6cf12481218600cc59c7980816a1c35248465b2502045072ff9bdf7ede",
+      "bytes": 2751,
+      "mtime_ns": 1788855476320845800
+    },
+    "failed-predecessor/import-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788855467750596000
+    },
+    "failed-predecessor/derived-install.log": {
+      "sha256": "b3ab5cf1f026374172b3533d2a1f50920a5f676d40a0fd7b06c9705e7aa81170",
+      "bytes": 171,
+      "mtime_ns": 1788855481390732200
+    },
+    "failed-predecessor/derived-install-error.log": {
+      "sha256": "b33c7f4352afed1b41074e08c4b03b8d674efe74508605cf6069bd3c41df7e1b",
+      "bytes": 52717,
+      "mtime_ns": 1788855486107931500
+    },
+    "reports/derived-install.json": {
+      "sha256": "2c6bdff87eb26511b879fac87cb9fcaf582873eebea224e1755b3b5556e28c69",
+      "bytes": 213,
+      "mtime_ns": 1788855650448497600
+    },
+    "derived-install.log": {
+      "sha256": "ba91dac6f4b51bc84101c65be833c3e7fcb6816050d93f666258193000755832",
+      "bytes": 240,
+      "mtime_ns": 1788855650448497600
+    },
+    "derived-install-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788855647601101600
+    },
+    "stages/derived-install.json": {
+      "sha256": "983ecd0284b9762e6c8faa6ca8ab3aa740da3fd2988703d1fe0d4e004aca4412",
+      "bytes": 1078,
+      "mtime_ns": 1788855650669384200
+    },
+    "preparation-changes.json": {
+      "sha256": "f059ffb072bf94d299ff89307c1a0ceb7e9487a369a6cba5da0e251032286c61",
+      "bytes": 2598,
+      "mtime_ns": 1788855659150600500
+    },
+    "inputs.json": {
+      "sha256": "a34ae9b0a36463520f3a3593d54f3a3eb532c3a5abaddef0d51450ea67d6dcd5",
+      "bytes": 732084,
+      "mtime_ns": 1788855666665857800
+    },
+    "native-check.log": {
+      "sha256": "b3ab5cf1f026374172b3533d2a1f50920a5f676d40a0fd7b06c9705e7aa81170",
+      "bytes": 171,
+      "mtime_ns": 1788855675567475100
+    },
+    "native-check-error.log": {
+      "sha256": "1f88c68f214daefe6a2b8376ebc33305b034d3d08bd093c4b88baa4311d1a839",
+      "bytes": 412,
+      "mtime_ns": 1788855677498457600
+    },
+    "stages/native-check.json": {
+      "sha256": "19f950bc42880d6662641a25a3fede739967808efc3b982fb57f50614305e747",
+      "bytes": 1328,
+      "mtime_ns": 1788855681859697500
+    }
+  },
+  "visual_acceptance_proven": false,
+  "scope": "Shared lighthouse architecture only: Blender source, material-preserving prefab, full derived mesh/collision, two unchanged placements, seven local GPU views plus opening and 36 gameplay checks. Island/weather/reference completion remains unproven.",
+  "candidate_run": "E:\\FeiTing\\captures\\validation_runs\\lighthouse-19h-20260908T081136Z-5ae8b9c9b2f2432da9e2c4c3ab60f54f",
+  "failed_predecessor": "E:\\FeiTing\\captures\\validation_runs\\19h-native-lighthouse-20260908T081741Z-013b2ef8a2624aa0ad6d56d22e4e0fbe",
+  "input_count": 3500,
+  "error": "Engine/script error in E:\\FeiTing\\captures\\validation_runs\\19h-native-lighthouse-repair-20260908T082039Z-7c31371c56954044b4576030f27feea3\\native-check-error.log: SCRIPT ERROR",
+  "completed_utc": "2026-09-08T08:21:21.869826+00:00"
+}

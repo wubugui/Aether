@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/asset_instance.gd" id="1_y513l"]
+[ext_resource type="Material" path="res://materials/world.tres" id="2_5cn6w"]
+[ext_resource type="PackedScene" path="res://assets/models/pine.glb" id="3_talae"]
+[ext_resource type="Shape3D" path="res://assets/collision/pine.res" id="4_6mvrs"]
+
+[node name="pine" type="Node3D"]
+script = ExtResource("1_y513l")
+asset_kind = "pine"
+surface_material = ExtResource("2_5cn6w")
+
+[node name="Model" parent="." instance=ExtResource("3_talae")]
+
+[node name="Collision" type="StaticBody3D" parent="."]
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.5, 0)
+shape = ExtResource("4_6mvrs")

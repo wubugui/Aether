@@ -1,0 +1,153 @@
+{
+  "scope": "31i actual short shelf bands on31h rear: split shared mesh edges and connect front lip into each whole face, making finite-width shoulder tops and separate front drops. West and east bands have different height/direction; low root controls become blunt staggered ends. No filler, no single lifted spike. Rear patch uses existing exposed-rock material; grass remains on preserved upper terrain instead of isolated triangle threshold patches.",
+  "source": "captures/lantern_island_study_31h/island_c.blend",
+  "source_sha256": "432737fdc4dfcad7fb7ab1c6f81eb0721b79303f3e8d476ee26c7e1856f2c3a8",
+  "vertex_changes": [
+    {
+      "index": 1105,
+      "name": "middle east return",
+      "before": [
+        -1.0,
+        12.0,
+        6.099999904632568
+      ],
+      "after": [
+        0.6,
+        13.2,
+        6.4
+      ]
+    },
+    {
+      "index": 1106,
+      "name": "low west blunt root",
+      "before": [
+        -9.0,
+        17.0,
+        2.799999952316284
+      ],
+      "after": [
+        -10.5,
+        18,
+        3.5
+      ]
+    },
+    {
+      "index": 1107,
+      "name": "east sea nose",
+      "before": [
+        2.0,
+        20.0,
+        1.399999976158142
+      ],
+      "after": [
+        3.2,
+        20,
+        1.7
+      ]
+    },
+    {
+      "index": 1108,
+      "name": "west broad flank",
+      "before": [
+        -14.0,
+        10.0,
+        5.400000095367432
+      ],
+      "after": [
+        -14,
+        10,
+        6.2
+      ]
+    },
+    {
+      "index": 1111,
+      "name": "outer rear shoulder",
+      "before": [
+        -4.0,
+        24.0,
+        0.6499999761581421
+      ],
+      "after": [
+        -4.5,
+        23,
+        2.0
+      ]
+    }
+  ],
+  "bands": [
+    {
+      "name": "west short tilted shelf",
+      "face_vertices": [
+        1108,
+        1104,
+        1106
+      ],
+      "edge_splits": [
+        {
+          "edge": [
+            1108,
+            1106
+          ],
+          "ratio": 0.45,
+          "xyz": [
+            -13,
+            13.5,
+            6.1
+          ]
+        },
+        {
+          "edge": [
+            1104,
+            1106
+          ],
+          "ratio": 0.4,
+          "xyz": [
+            -7.5,
+            12.5,
+            7.6
+          ]
+        }
+      ]
+    },
+    {
+      "name": "east lower turned shelf",
+      "face_vertices": [
+        1109,
+        1107,
+        1105
+      ],
+      "edge_splits": [
+        {
+          "edge": [
+            1109,
+            1107
+          ],
+          "ratio": 0.35,
+          "xyz": [
+            2.8,
+            13.8,
+            7.6
+          ]
+        },
+        {
+          "edge": [
+            1105,
+            1107
+          ],
+          "ratio": 0.55,
+          "xyz": [
+            2.4,
+            17,
+            6.0
+          ]
+        }
+      ]
+    }
+  ],
+  "historical_retology_plan": "captures/lantern_island_study_31g/reform-plan.json",
+  "cut_mesh": "captures/island-31g-cut-patch-full-depth.json",
+  "cut_mesh_sha256": "4a36bfd773a1dda1fe989cac2b8cf099901c92d97a985f0f96ca23933652ceb0",
+  "cut_mesh_role": "Historical31g construction input only;31i edits actual31h source.",
+  "actual_moved_vertices": [],
+  "actual_divisions": []
+}

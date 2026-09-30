@@ -1,0 +1,178 @@
+{
+  "schema_version": 1,
+  "run_id": "12-native-material-fix-20260906T024121Z-d0138bf180464f7798f1584131f66fb5",
+  "round": "12-native-material-fix",
+  "started_utc": "2026-09-06T02:41:21.489232+00:00",
+  "workspace": "D:\\test6",
+  "run_directory": "D:\\test6\\captures\\validation_runs\\12-native-material-fix-20260906T024121Z-d0138bf180464f7798f1584131f66fb5",
+  "status": "passed",
+  "passed": true,
+  "export_windows_requested": false,
+  "capture_views_requested": true,
+  "expected_counts": {
+    "game-test": 36,
+    "native-material": 4
+  },
+  "stages": [
+    {
+      "name": "native-material",
+      "run_id": "12-native-material-fix-20260906T024121Z-d0138bf180464f7798f1584131f66fb5",
+      "status": "passed",
+      "command": [
+        "D:\\test6\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "D:\\test6",
+        "--script",
+        "tools/verify_native_terrain_material.gd"
+      ],
+      "cwd": "D:\\test6",
+      "passed": true,
+      "started_ns": 1788662577586249900,
+      "started_utc": "2026-09-06T02:42:57.586249+00:00",
+      "input_manifest_sha256": "6de499d996d2149431a530e7b5a2977642c4c16ee2ca2d03dcf252628ee4dbe0",
+      "exit_code": 0,
+      "finished_ns": 1788662596561081900,
+      "finished_utc": "2026-09-06T02:43:38.224686+00:00",
+      "report": "reports/native-material.json",
+      "report_contract_passed": true
+    },
+    {
+      "name": "capture-opening",
+      "run_id": "12-native-material-fix-20260906T024121Z-d0138bf180464f7798f1584131f66fb5",
+      "status": "passed",
+      "command": [
+        "D:\\test6\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "D:\\test6",
+        "--",
+        "--capture",
+        "--output=D:\\test6\\captures\\validation_runs\\12-native-material-fix-20260906T024121Z-d0138bf180464f7798f1584131f66fb5\\images\\opening.png",
+        "--validation-run=12-native-material-fix-20260906T024121Z-d0138bf180464f7798f1584131f66fb5"
+      ],
+      "cwd": "D:\\test6",
+      "passed": true,
+      "started_ns": 1788662649652618000,
+      "started_utc": "2026-09-06T02:44:09.652618+00:00",
+      "input_manifest_sha256": "6de499d996d2149431a530e7b5a2977642c4c16ee2ca2d03dcf252628ee4dbe0",
+      "exit_code": 0,
+      "finished_ns": 1788662664744996100,
+      "image": "images/opening.png",
+      "finished_utc": "2026-09-06T02:44:48.976316+00:00"
+    },
+    {
+      "name": "game-test",
+      "run_id": "12-native-material-fix-20260906T024121Z-d0138bf180464f7798f1584131f66fb5",
+      "status": "passed",
+      "command": [
+        "D:\\test6\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "D:\\test6",
+        "--",
+        "--game-test",
+        "--validation-run=12-native-material-fix-20260906T024121Z-d0138bf180464f7798f1584131f66fb5"
+      ],
+      "cwd": "D:\\test6",
+      "passed": true,
+      "started_ns": 1788662707311307900,
+      "started_utc": "2026-09-06T02:45:07.311307+00:00",
+      "input_manifest_sha256": "6de499d996d2149431a530e7b5a2977642c4c16ee2ca2d03dcf252628ee4dbe0",
+      "exit_code": 0,
+      "finished_ns": 1788662726712184500,
+      "report": "reports/game-test.json",
+      "report_contract_passed": true,
+      "finished_utc": "2026-09-06T02:45:45.672962+00:00"
+    }
+  ],
+  "artifacts": {
+    "scoped-driver.py": {
+      "sha256": "5f1da65923e6ecd238f11f56589ec155399ee1d87b8f7a1a14230743e443721b",
+      "bytes": 3981,
+      "mtime_ns": 1788662478309327200
+    },
+    "inputs.json": {
+      "sha256": "6de499d996d2149431a530e7b5a2977642c4c16ee2ca2d03dcf252628ee4dbe0",
+      "bytes": 731050,
+      "mtime_ns": 1788662553594022400
+    },
+    "native-material.log": {
+      "sha256": "db74422dcf6770be4a2ba8232c8ca1073e96b72f6fc9f72b686e75ebad5aa05f",
+      "bytes": 640,
+      "mtime_ns": 1788662596386303000
+    },
+    "native-material-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788662577589241300
+    },
+    "stages/native-material.json": {
+      "sha256": "854e133f74ec29a3bd8e7cff99e22394f24cead55117dc25037cd3147d18909d",
+      "bytes": 673,
+      "mtime_ns": 1788662618228675800
+    },
+    "reports/native-material.json": {
+      "sha256": "05a891fbb3966883a09f95412399ae894e35e2372aa668e11f512e17ae0d1a91",
+      "bytes": 815,
+      "mtime_ns": 1788662596383311300
+    },
+    "EditedWorld.tscn": {
+      "sha256": "79cf62415d8d58a4162a308febf90511e2f569496d8caad574f977d6149b33f4",
+      "bytes": 454297,
+      "mtime_ns": 1788662591077349800
+    },
+    "images/opening.png": {
+      "sha256": "ee714e5973cfeab3dfe7abfbd1b53147b1259169b6e5b0d3a8a2d4db95294c2f",
+      "bytes": 745249,
+      "mtime_ns": 1788662664272604000
+    },
+    "capture-opening.log": {
+      "sha256": "fa2ab2532c84d660994a46b833e8bb09a2c3f340d202b2bc3c162421cc0adaaa",
+      "bytes": 525,
+      "mtime_ns": 1788662664273594200
+    },
+    "capture-opening-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788662649660594800
+    },
+    "stages/capture-opening.json": {
+      "sha256": "58c07fb6859964087d887fbb7ff98ccda66bbdbede8342ac6ef1ada6a4299842",
+      "bytes": 918,
+      "mtime_ns": 1788662689016679800
+    },
+    "previous-reports/game-test.json": {
+      "sha256": "01dd8865abb4cdbe32b598a6d87ba6a1390e4e3ad8e36132a65755d8af2860f0",
+      "bytes": 6486,
+      "mtime_ns": 1788647684339536900
+    },
+    "reports/game-test.json": {
+      "sha256": "72a3cc99ca9442d921e9c4f9b507fe98314d2b896f69705e7dc44e4e698f4667",
+      "bytes": 6486,
+      "mtime_ns": 1788662726203873200
+    },
+    "game-test.log": {
+      "sha256": "ee82f97d80c9d47af2b0f1179913258a5f118508233f9a090599cc7728844b3b",
+      "bytes": 3083,
+      "mtime_ns": 1788662726203873200
+    },
+    "game-test-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788662707315294500
+    },
+    "stages/game-test.json": {
+      "sha256": "1904dabbafe9389a772df040c7cb77c60d852d4b7e63f9618cae9e402df325b1",
+      "bytes": 805,
+      "mtime_ns": 1788662745677968700
+    }
+  },
+  "visual_acceptance_proven": false,
+  "scope": "Preserve native terrain material at World startup. GPU material save/reopen/startup, unchanged default opening, current source game controls. No asset geometry, grade-material or release acceptance.",
+  "release_validation": false,
+  "input_count": 3495,
+  "default_opening_equal_to_10l": {
+    "passed": true,
+    "sha256": "ee714e5973cfeab3dfe7abfbd1b53147b1259169b6e5b0d3a8a2d4db95294c2f",
+    "baseline": "D:\\test6\\captures\\validation_runs\\10l-cliff-terrain-edit-20260905T222858Z-e09be6fff0384003802bf7994a07d749\\images\\opening.png"
+  },
+  "completed_utc": "2026-09-06T02:46:03.567759+00:00"
+}

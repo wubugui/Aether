@@ -1,0 +1,88 @@
+5c5
+< uniform vec3 study_haze=vec3(.40,.53,.65);
+---
+> uniform vec3 study_haze=vec3(0.7,0.78,0.82);
+43,44c43,44
+<     vec3 dry=vec3(.73,.745,.46);
+<     vec3 meadow=vec3(.46,.565,.345);
+---
+>     vec3 dry=vec3(.64,.67,.40);
+>     vec3 meadow=vec3(.38,.50,.28);
+48c48
+<     pigment*=.89+.11*max(0.,dot(n,normalize(vec3(-.48,.82,.30))));
+---
+>     pigment*=0.65+0.35*max(0.,dot(n,normalize(vec3(-.48,.82,.30))));
+54c54
+<     float haze=(1.-exp(-max(distance_to_camera-650.,0.)*.00038))*low_air;
+---
+>     float haze=(1.-exp(-max(distance_to_camera-450.,0.)*.00070))*low_air;
+60,61c60,61
+<     EMISSION*=mix(vec3(1.13,.92,.59),vec3(.16,.23,.32),storm);
+<     ALBEDO*=mix(vec3(1.05,.91,.67),vec3(.45,.52,.63),storm);
+---
+>     EMISSION*=mix(vec3(1.,1.,1.),vec3(.16,.23,.32),storm);
+>     ALBEDO*=mix(vec3(1.,1.,1.),vec3(.45,.52,.63),storm);
+79c79
+< shader_parameter/study_haze = Vector3(0.4, 0.53, 0.65)
+---
+> shader_parameter/study_haze = Vector3(0.7, 0.78, 0.82)
+108c108
+< uniform vec3 study_haze=vec3(.40,.53,.65);
+---
+> uniform vec3 study_haze=vec3(0.7,0.78,0.82);
+131c131
+<     float haze=(1.-exp(-max(distance_to_camera-650.,0.)*.00038))*low_air;
+---
+>     float haze=(1.-exp(-max(distance_to_camera-450.,0.)*.00070))*low_air;
+137,138c137,138
+<     EMISSION*=mix(vec3(1.13,.92,.59),vec3(.16,.23,.32),storm);
+<     ALBEDO*=mix(vec3(1.05,.91,.67),vec3(.45,.52,.63),storm);
+---
+>     EMISSION*=mix(vec3(1.,1.,1.),vec3(.16,.23,.32),storm);
+>     ALBEDO*=mix(vec3(1.,1.,1.),vec3(.45,.52,.63),storm);
+156c156
+< shader_parameter/study_haze = Vector3(0.4, 0.53, 0.65)
+---
+> shader_parameter/study_haze = Vector3(0.7, 0.78, 0.82)
+749,751c749,755
+<     vec3 deep=mix(vec3(.170,.418,.627),vec3(.230,.498,.677),ripple*.16+.4);
+<     vec3 c=mix(vec3(.32,.59,.65),deep,smoothstep(0.,6.,water_depth));
+<     float foam=(1.-smoothstep(.05,.45,water_depth))*(.45+.15*sin(world_point.x*.2+world_point.z*.3+world_time));
+---
+>     vec3 deep=mix(vec3(.150,.380,.610),vec3(.210,.470,.665),ripple*.16+.4);
+>     float shelf=smoothstep(0.,10.0,water_depth);
+>     vec3 c=mix(vec3(.44,.70,.75),vec3(.30,.60,.72),smoothstep(0.,.45,shelf));
+>     c=mix(c,deep,smoothstep(.35,1.,shelf));
+>     float foam_px=fwidth(water_depth);
+>     float foam_n=smoothstep(.45,.80,sea_noise(world_point.xz*vec2(.03,.045)+vec2(0.,world_time*.02)));
+>     float foam=(1.-smoothstep(0.,max(.8,foam_px),water_depth))*(.12+.50*foam_n);
+803c807
+<     vec3 clear_water=EMISSION*vec3(.87,.94,.78)+vec3(1.1,.68,.23)*sun_reflection;
+---
+>     vec3 clear_water=EMISSION*vec3(1.,1.,1.)+vec3(.55,.52,.45)*sun_reflection;
+804a809
+>     EMISSION=mix(EMISSION,vec3(.88,.92,.93),foam*(1.-storm)*(1.-study_night));
+860c865
+< uniform vec3 study_haze=vec3(.40,.53,.65);
+---
+> uniform vec3 study_haze=vec3(0.7,0.78,0.82);
+869c874
+<     float haze=(1.-exp(-max(distance_to_camera-650.,0.)*.00038))*low_air;
+---
+>     float haze=(1.-exp(-max(distance_to_camera-450.,0.)*.00070))*low_air;
+876,877c881,882
+<     EMISSION*=mix(vec3(1.13,.92,.59),vec3(.16,.23,.32),storm);
+<     ALBEDO*=mix(vec3(1.05,.91,.67),vec3(.45,.52,.63),storm);
+---
+>     EMISSION*=mix(vec3(1.,1.,1.),vec3(.16,.23,.32),storm);
+>     ALBEDO*=mix(vec3(1.,1.,1.),vec3(.45,.52,.63),storm);
+895c900
+< shader_parameter/study_haze = Vector3(0.4, 0.53, 0.65)
+---
+> shader_parameter/study_haze = Vector3(0.7, 0.78, 0.82)
+901a907,911
+> }
+> point_count = 15
+> 
+> [sub_resource type="Curve3D" id="Curve3D_ff06v"]
+> bake_interval = 2.0

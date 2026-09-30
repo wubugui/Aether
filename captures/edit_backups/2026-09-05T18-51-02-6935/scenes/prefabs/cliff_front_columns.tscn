@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/asset_instance.gd" id="1_x2snn"]
+[ext_resource type="Material" path="res://materials/cliff.tres" id="2_kice5"]
+[ext_resource type="PackedScene" path="res://assets/models/cliff_front_columns.glb" id="3_y3ktm"]
+[ext_resource type="Shape3D" path="res://assets/collision/cliff_front_columns.res" id="4_4hxrj"]
+
+[node name="cliff_front_columns" type="Node3D"]
+script = ExtResource("1_x2snn")
+asset_kind = "cliff_front_columns"
+surface_material = ExtResource("2_kice5")
+
+[node name="Model" parent="." instance=ExtResource("3_y3ktm")]
+
+[node name="Collision" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision"]
+shape = ExtResource("4_4hxrj")

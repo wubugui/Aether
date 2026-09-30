@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "E:\FeiTing\blender\model_lantern_island_30f.py", line 66, in <module>
+    assert all(f.calc_area()>1e-10 for f in bm.faces),(o.name,'zero face')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('island_c grass and exposed rock terrain', 'zero face')

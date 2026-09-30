@@ -1,0 +1,97 @@
+[gd_scene load_steps=11 format=3]
+
+[ext_resource type="PackedScene" path="res://captures/cliff_refresh_regressions/20260905T185943Z-ad63f35b1cba4eb09b78e7359a1d7549/fixture.tscn" id="1_3p4j2"]
+[ext_resource type="BoxMesh" path="res://captures/cliff_refresh_regressions/20260905T185943Z-ad63f35b1cba4eb09b78e7359a1d7549/source.tres" id="2_2hc6p"]
+[ext_resource type="Shape3D" path="res://captures/cliff_refresh_regressions/20260905T185943Z-ad63f35b1cba4eb09b78e7359a1d7549/collision/cliff_fixture.res" id="3_6o1qe"]
+[ext_resource type="MultiMesh" path="res://captures/cliff_refresh_regressions/20260905T185943Z-ad63f35b1cba4eb09b78e7359a1d7549/scatter.res" id="4_2hc6p"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ougy4"]
+size = Vector3(600, 2, 600)
+
+[sub_resource type="BoxMesh" id="BoxMesh_0j4gg"]
+size = Vector3(600, 2, 600)
+
+[sub_resource type="GDScript" id="GDScript_y8hni"]
+script/source = "extends Node3D
+@export var asset_kind:String=\"cliff_fixture\"
+@export var custom_note:String=\"native edit survives\"
+"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1iovb"]
+albedo_color = Color(0.71, 0.28, 0.45, 1)
+roughness = 0.37
+
+[sub_resource type="BoxMesh" id="BoxMesh_lxect"]
+size = Vector3(1, 2, 1)
+
+[sub_resource type="MultiMesh" id="MultiMesh_rnd0q"]
+transform_format = 1
+use_colors = true
+use_custom_data = true
+instance_count = 4
+mesh = SubResource("BoxMesh_lxect")
+buffer = PackedFloat32Array(1.0792644, 0, -0.26411402, -33.509426, 0, 0.9090909, 0, 8.909091, 0.1980855, 0, 0.8094483, 6.2896495, 0.099975586, 0.2998047, 0.5, 1, 0.69970703, 0.19995117, 0.39990234, 1, 1.2147607, 0, -0.059455037, 68.125694, 0, 0.9090909, 0, 9.636364, 0.07780869, 0, 0.8346437, 17.015148, 0.19995117, 0.2998047, 0.5, 1, 0.69970703, 0.2998047, 0.39990234, 1, 1.3090566, 0, 0.1829102, -77.85453, 0, 0.9090909, 0, 9.818182, -0.0458453, 0, 0.84238195, 37.094006, 0.2998047, 0.2998047, 0.5, 1, 0.69970703, 0.39990234, 0.39990234, 1, 1.3534333, 0, 0.4544299, 134.28131, 0, 0.9090909, 0, 15.272727, -0.1704128, 0, 0.83215266, 173.92429, 0.39990234, 0.2998047, 0.5, 1, 0.69970703, 0.5, 0.39990234, 1)
+
+[node name="FixtureWorld" type="Node3D"]
+
+[node name="Ground" type="StaticBody3D" parent="."]
+collision_layer = 4
+collision_mask = 0
+
+[node name="@CollisionShape3D@2" type="CollisionShape3D" parent="Ground"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_ougy4")
+
+[node name="@MeshInstance3D@3" type="MeshInstance3D" parent="Ground"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = SubResource("BoxMesh_0j4gg")
+
+[node name="Cliffs" type="Node3D" parent="."]
+
+[node name="cliff_fixture" parent="Cliffs" instance=ExtResource("1_3p4j2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35, 0, 0)
+script = SubResource("GDScript_y8hni")
+
+[node name="UserDistrict" type="Node3D" parent="."]
+transform = Transform3D(0.98357767, 0, 0.6301542, 0, 0.9, 0, -0.687441, 0, 0.9016129, 45, 0, 20)
+
+[node name="RenamedOutcrop" parent="UserDistrict" instance=ExtResource("1_3p4j2")]
+transform = Transform3D(1.258642, 0, 0.28929237, 0, 1.2, 0, -0.48818088, 0, 0.7458619, 8, 0, -5)
+script = SubResource("GDScript_y8hni")
+
+[node name="UnpackedNativeCopy" type="Node3D" parent="."]
+transform = Transform3D(0.787075, 0, 0.21483551, 0, 1.1, 0, -0.14322367, 0, 1.1806124, -65, 0, 45)
+script = SubResource("GDScript_y8hni")
+metadata/asset_origin = Vector3(0, 0, 0)
+metadata/user_note = "keep metadata"
+
+[node name="Model" type="MeshInstance3D" parent="UnpackedNativeCopy"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, 0)
+material_override = SubResource("StandardMaterial3D_1iovb")
+mesh = ExtResource("2_2hc6p")
+
+[node name="Collision" type="StaticBody3D" parent="UnpackedNativeCopy"]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="UnpackedNativeCopy/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 0.2, -0.8)
+shape = ExtResource("3_6o1qe")
+
+[node name="Vegetation" type="Node3D" parent="."]
+
+[node name="EditedGrove" type="MultiMeshInstance3D" parent="Vegetation"]
+transform = Transform3D(0.87420416, 0, 0.28524315, 0, 1.1, 0, -0.21393235, 0, 1.1656057, 3, 0.2, -4)
+multimesh = ExtResource("4_2hc6p")
+metadata/asset_kind = "oak"
+
+[node name="SharedUnrelated" type="MultiMeshInstance3D" parent="Vegetation"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -220, 0, -220)
+multimesh = SubResource("MultiMesh_rnd0q")
+
+[node name="Camera" type="Camera3D" parent="."]
+transform = Transform3D(0.86029154, -0.3013469, 0.4112037, 0, 0.8065944, 0.59110534, -0.50980234, -0.5085229, 0.6939063, 80, 115, 155)
+current = true
+
+[node name="@DirectionalLight3D@4" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.921061, 0.27935162, -0.27131036, 0, 0.6967067, 0.7173561, 0.38941833, -0.6607287, 0.6417094, 0, 0, 0)

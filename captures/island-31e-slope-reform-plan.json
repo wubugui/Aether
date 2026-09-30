@@ -1,0 +1,75 @@
+{
+  "scope": "31e directly reform31d original rear slopes and existing rear union together, with two sparse oblique cross-sections and composed bounded lateral shears. No new convex filler. Exact upper support elevations >=10.3m and waterline <=0.2m fixed; actual road/pad/current14tree support must be independently checked.",
+  "source": "captures/lantern_island_study_31d/island_c.blend",
+  "cut_face_domain": {
+    "x": [
+      -11.5,
+      4.5
+    ],
+    "y": [
+      1.7,
+      18.5
+    ],
+    "z": [
+      0.2,
+      10.3
+    ]
+  },
+  "cross_sections": [
+    {
+      "name": "Upper oblique rock break",
+      "point": [
+        0,
+        0,
+        7.5
+      ],
+      "normal": [
+        -0.1,
+        0.08,
+        1
+      ]
+    },
+    {
+      "name": "Lower counter oblique root break",
+      "point": [
+        0,
+        0,
+        3.6
+      ],
+      "normal": [
+        0.09,
+        -0.03,
+        1
+      ]
+    }
+  ],
+  "reforms": [
+    {
+      "axis": 1,
+      "amount_m": 2.3,
+      "x_center": -5,
+      "x_radius": 7.5,
+      "y_center": 4.4,
+      "y_radius": 6.0,
+      "z_low": 0.2,
+      "z_peak": 5.8,
+      "z_high": 10.3
+    },
+    {
+      "axis": 0,
+      "amount_m": -1.8,
+      "x_center": -4,
+      "x_radius": 9.0,
+      "y_center": 10.0,
+      "y_radius": 7.0,
+      "z_low": 0.2,
+      "z_peak": 3.6,
+      "z_high": 8.5
+    }
+  ],
+  "notes": [
+    "Apply first Y shear, then X shear on transformed coordinates; both analytic self-axis derivatives stay above0.39 so each continuum map is injective.",
+    "Finite piecewise linear mesh still needs area/orientation/contact checks; analytic continuum property alone is not a mesh self-intersection proof.",
+    "Old three convex operands are retained only as historical construction inputs; actual final model has additional native surface reform."
+  ]
+}

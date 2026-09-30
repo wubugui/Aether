@@ -1,0 +1,15 @@
+from pathlib import Path
+import json,hashlib
+root=Path(__file__).resolve().parents[1]
+run=root/'captures/validation_runs/harbor-assembly-22g-20260908T112011Z-00f0a7b4c813446e842b280476463e21'
+image=run/'images/night-reference.png';sidecar=Path(str(image)+'.json');data=json.loads(sidecar.read_text(encoding='utf-8'))
+prior=json.loads((root/'reviews/reference-view-1342-progress-21c.json').read_text(encoding='utf-8'))
+prior.update(camera=data['camera'],world_sha256=data['world_sha256'],environment_study=data['environment_study'],current_evidence_run=data['run_id'],current_image=str(image.relative_to(root)),current_image_sha256=hashlib.sha256(image.read_bytes()).hexdigest(),current_sidecar=str(sidecar.relative_to(root)),current_sidecar_sha256=hashlib.sha256(sidecar.read_bytes()).hexdigest())
+harbor=data['harbor_study'];paths=harbor['stone_paths']
+prior['harbor_progress']={'kit':'captures/harbor_kit_study_22b','stone_approaches':'captures/harbor_paths_study_22f','assembly_script':'captures/harbor_assembly_22g.gd','source_survey_run':harbor['source_survey_run'],'assets':harbor['assets'],'house_count':len(harbor['house_footings']),'pier_count':len(harbor['pier_entries']),'lamp_count':len(harbor['lights']),'path_assets':paths['assets'],'path_probe_groups':sum(len(r['treads']) for r in paths['runtime_checks']['paths']),'sampled_paths_passed':paths['runtime_checks']['passed'],'detailed_evidence':'reviews/round-22g-root-evidence.json','production_installed':False}
+prior['next_visual_priority']='Reconstruct the near-right rocky mainland headland and layered small coastal village clusters in the fixed reference camera, then link them to the existing continuous mainland. Existing four long stairs on a broad empty straight grass coast are a contact/construction study, not the reference composition.'
+prior['previous_environment_run']=prior['frozen_run'];prior['frozen_run']=str(run.relative_to(root)).replace('\\','/')
+prior['outstanding']=[item.replace('Reference right-bank villages, piers and scene boats not built','Right foreground rocky village composition remains absent; surveyed harbor modules and paths exist as temporary candidates').replace('Warm coastal light chains and true lighthouse beam missing','Warm path and harbor lights exist; the reference light hierarchy and true lighthouse beam remain incomplete') for item in prior['outstanding']]
+prior['remaining_reference_failures']=['Near-right rocky headland and foreground village absent','Identical houses spread along an empty straight grassy slope','Long private stair axes instead of clustered village lanes and stepped waterfront','Island cliff tiers and oversized flat platforms','Regular water reflection grid','Missing real lighthouse beam and warm light/reflection hierarchy','Cloud silhouettes and atmospheric depth','Other weather/time variants and world streaming','Production native scene integration and actual flight/movement evidence']
+output=root/'reviews/reference-view-1342-progress-22g.json';assert not output.exists();output.write_text(json.dumps(prior,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+print('REFERENCE1342 PROGRESS22g RECORDED - NOT ACCEPTED')

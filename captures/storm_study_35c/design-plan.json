@@ -1,0 +1,26 @@
+{
+  "label": "35c",
+  "source_run": "storm-35b-20260909T003744Z-443b5747f7fa4c3a9164f2609d8d953a",
+  "files_sha256": {
+    "builder.py": "cb68c47853ca82138c231c2cc521b658e82a28377b9a4486cd8cca82fef10fa8",
+    "cliff_surface.gdshader": "8f68bd2f870d7ac430938c2e6f25182d4093763574472feb8b64b9b759bbf770",
+    "cloud_surface.gdshader": "fa9f0fb46a3319016e718c3d9679b70dbc3a24ac810eefc71c567036754a5e6f",
+    "moon.gdshader": "6ea8050f93cf21f44cb14c8ab3ed5674b309dd382854ba2ff709bb006b50a146",
+    "open_sky.gdshader": "b514467ebb754a42057c23475b245b51045ed74804cb4faa7598138dd40e80cb",
+    "open_water.gdshader": "ddfb5b553429ba3ecf80d878d9370aa53f6942f3f1c42d1656aa13d93cb6e23c",
+    "ship_surface.gdshader": "2b67f81882e8a2aaf2f4d19a3577add5254c05d39e97062022ec901a32853669",
+    "storm_cloud.gdshader": "660705c7f83cd7c09f56bb816ea13365fb1596330c4b598a1f40a03aa2808931",
+    "storm_common.gdshaderinc": "bef92ef4c25c1d03b6538056b7d51a1687da53241ef057ec915137ee745b0b50",
+    "storm_front_35b.gd": "ba0a1d0155d1cd2418a92692d5dea25fe12d99ee28f27eb27e6b83a99eadb5f7",
+    "storm_front_35c.gd": "27289529fb375309d058fccd4bfaf235fbd256f377caa394b0110206a30ec9bb",
+    "storm_native.gdshader": "3074132e070332f23a37314acdac27cb5732c336a4a09e80f64af3560ea9b7d2",
+    "storm_rain.gdshader": "885c05d35a619e3ea4a7f11d01008c5dc2ca39416cd608ad63fe6ea5990834d5",
+    "storm_sky.gdshader": "071d855ecc4ea403f2464a936f05f611da02ff4f97d3c2bbba679231489290e6",
+    "terrain_native.gdshader": "5442e1990089b2cd8b9d6b23cb6bfa39e7563dd380d073c40e42a52652a3865f",
+    "wood_surface.gdshader": "bb3388af3128c2b452385896397492f1de4fbb7d653044e74f76290b890a8c51",
+    "world_surface.gdshader": "b384aae3ee6c913421f4681fd834d212a5dfafb4f9bacf8ccb6d487b8bad7fb1"
+  },
+  "scope": "Same35b six-part Blender clouds. Rain reset is per-instance, preserving ribbon dimensions; flash falloff centers now share nativeOmni Y230. Retain original and live material references on scene across renderer updates; previous GLES null-material root cause not yet isolated. All35b failed images/logs preserved. Full reference remains unaccepted.",
+  "production_modified": false,
+  "full_reference_accepted": false
+}

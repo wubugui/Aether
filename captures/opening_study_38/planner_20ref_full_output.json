@@ -1,0 +1,2576 @@
+{
+  "summary": "Plan a world camera + time/weather preset + missing-asset list for all 20 FeiTing reference scenes (breadth-first to 60 points)",
+  "agentCount": 5,
+  "logs": [],
+  "result": [
+    {
+      "ref": "1128",
+      "region": "Frostpeak Highlands: new Glass Lake (镜湖) east of the existing Frostpeak massif cluster; lake south end",
+      "summary": "I've planned 1128 as the south end of a new long alpine lake, the Glass Lake, east of the existing Frostpeak cluster. The lake runs north-south from z -700 to -4450, between x 1700 and x 3050. The cluster (east_spur, east_summit, frost_crown, west_summit) forms the lake's west wall and is the left group of peaks. A new east wall of massif prefab instances forms the right group, and a new north range (shared with 1276) supplies the smaller, more distant peaks in the centre.\n\nHow I checked it: I read every terrain GLB and massif GLB in the world and built a height grid plus a crude flat-shaded software renderer with mirror reflections, all in scratchpad/lake1128/. Rendered from this camera with the proposed geometry, the frame matches the reference composition closely: a ring of snow peaks across the full width, mirror water over the lower half, a pine islet at left, a distant islet in the centre and a rock at lower right. Side-by-side renders against all four references are in scratchpad/lake1128/ref_vs_plan.png, and the geometry spec is in plan_geo.py.\n\nProjection check (1672x941 pixels, x then y):\n- west_summit (100,250) and frost_crown (320,230): the left big peaks. The reference has them at about (90,280).\n- east_summit (410,305).\n- North range N1, N3 and N2 at about (680 to 965, 265 to 295).\n- East wall E1 (1255,277) and E2 (1420,246): the right big peaks. The reference has them at about (1370,290).\n- E3 spur (1690,284).\n- Left islet (308,542), far islet (801,464), rock (1375,737).\n- Horizon is at about y 445, set by a 1.45 degree downward pitch.\n\nOur peaks sit about 40 px higher in frame than the reference; this is acceptable for a 60-point pass.\n\nLighting: soft late-morning light from the west-southwest, behind the camera on its left. This matches the lit left faces of the mountains in the reference.\n\nCamera height: y_abs is authoritative. The camera is 22 m above the future water level, and the current ground at this spot is 21.7 m. Once the lake exists this reads as 22 m above the water.\n\nEffect on the opening view (1343): the north range appears as a second row of peaks behind the Frostpeak cluster in the opening camera. No new foreground blocks anything, and the range gets bigger, which is closer to the 1343 reference. The 1343 owner should still check it.\n\nScratchpad note: the scratchpad root is shared with sibling agents. I briefly renamed a sibling's glb.py and then restored it with identical content and the same timestamp. All my own files are now in lake1128/.",
+      "camera": {
+        "x": 2300,
+        "z": -800,
+        "y_abs": 22,
+        "tx": 2300,
+        "tz": -3799,
+        "ty_abs": -53.9,
+        "fov": 50
+      },
+      "env": {
+        "sun_dir": [
+          -0.7,
+          0.55,
+          0.45
+        ],
+        "sun_color": [
+          1,
+          0.95,
+          0.88
+        ],
+        "sun_energy": 1,
+        "sky_zenith": [
+          0.5,
+          0.63,
+          0.8
+        ],
+        "sky_horizon": [
+          0.82,
+          0.82,
+          0.84
+        ],
+        "sky_glow": [
+          0.12,
+          0.09,
+          0.06
+        ],
+        "ambient_color": [
+          0.64,
+          0.68,
+          0.78
+        ],
+        "ambient_energy": 0.55,
+        "fog_color": [
+          0.8,
+          0.81,
+          0.85
+        ],
+        "fog_density": 0.00014,
+        "study_fill": [
+          1,
+          1,
+          1.03
+        ],
+        "study_haze": [
+          0.8,
+          0.82,
+          0.86
+        ],
+        "water_night": 0,
+        "stars": 0
+      },
+      "missing": [
+        {
+          "name": "GlassLake_basin",
+          "what": "Cut a new lake into terrain tiles Ground_2..3_-6..-1. Water sits at y=0 using the existing ocean plane. The bed is at -8 m, with a 90 m shallow shelf and banks lowered to +1.5 m within 40 m of the shore. Polygon (x,z): (1800,-820), (2250,-700), (2700,-850), (3000,-1400), (3050,-2200), (3050,-2900), (2950,-3500), (2750,-4000), (2450,-4450), (2050,-4400), (1800,-3800), (1720,-3100), (1700,-2400), (1720,-1600), (1760,-1180), (1885,-1110), (1900,-1040), (1840,-985), (1790,-930). It includes a grassy promontory near (1850,-1050) that 1129 needs. The current ground here averages about 21 m. Re-ground or remove the oak, poplar and rock scatter inside the basin. Frostpeak massif bases already reach below y=0, so they will rise straight out of the water.",
+          "x": 2380,
+          "z": -2550,
+          "size_m": 3750,
+          "route": "blender_hub",
+          "priority": 1
+        },
+        {
+          "name": "GlassLake_east_wall",
+          "what": "Add massif prefab instances with uniform scale and rotation about Y. Values are prefab, rotation, scale, then position (x,z):\n- massif_frost_crown, rot 150, s 1.0, (3400,-3450)\n- massif_east_summit, rot 60, s 1.15, (3250,-2450)\n- massif_east_spur, rot 200, s 1.0, (3100,-1750)\n- massif_frost_crown, rot 300, s 0.9, (3900,-1900)\n- massif_east_summit, rot 250, s 1.3, (4700,-1700)\nThe first three are the right-hand peaks in 1128 and 1129; the last two are 1344's right-hand peaks.",
+          "x": 3650,
+          "z": -2300,
+          "size_m": 2500,
+          "route": "existing_prefab",
+          "priority": 1
+        },
+        {
+          "name": "Frostpeak_north_gorge_range",
+          "what": "Add massif prefab instances north of the lake, with uniform scale. Values are prefab, rotation, scale, then position (x,z):\n- N1: massif_west_summit, rot 30, s 1.8, (1650,-5050)\n- N2: massif_frost_crown, rot 250, s 1.7, (2850,-5150)\n- N3: massif_needle_ridge, rot 90, s 3.0, (2300,-6100)\n- N4: massif_east_summit, rot 120, s 1.9, (1500,-6400)\n- N5: massif_west_summit, rot 200, s 1.9, (3150,-6450)\n- massif_east_summit, rot 200, s 1.2, (1850,-7500)\n- massif_frost_crown, rot 20, s 1.2, (2800,-7550)\nIn 1128 these are the distant centre peaks. The same instances form the 1276 gorge, and they fill the far horizon for 1343 and 1344.",
+          "x": 2300,
+          "z": -6000,
+          "size_m": 3000,
+          "route": "existing_prefab",
+          "priority": 1
+        },
+        {
+          "name": "Mirror_lake_water",
+          "what": "Add a calm-water mode inside the GlassLake polygon mask. The ocean shader should drop wave normals there and use high reflectance. Reflections need a planar mirror: a mirrored Camera3D rendering to a SubViewport that the shader samples, because GL Compatibility has no screen-space reflections. The mirror must show the snow peaks, sky and clouds, with a faint blue-grey tint and very small ripples.",
+          "x": 2380,
+          "z": -2550,
+          "size_m": 3750,
+          "route": "godot_effect",
+          "priority": 1
+        },
+        {
+          "name": "Lake_islets_and_rocks_1128",
+          "what": "Build islets from the rock prefab, using uniform scale and sinking it so that only 2 to 3 m shows above the water. Pines use scale 0.8 to 1.0.\n- Left islet: rock s 6.5 at (2224,-945), about 45 m wide, with 2 pines.\n- Far centre islet: rock s 8 at (2272,-1615), with 3 pines.\n- Bare rock at lower right: s 2.4 at (2335,-865).",
+          "x": 2270,
+          "z": -1100,
+          "size_m": 60,
+          "route": "existing_prefab",
+          "priority": 2
+        },
+        {
+          "name": "Lake_cloud_bank",
+          "what": "Add big low-poly cumulus using cloud_primary and cloud_edge prefabs at scale 2.5 to 3.5, at (1500, y 750, -3400), (3300, y 820, -3800) and (2600, y 900, -5200). They fill the upper-left and upper-right sky as in the reference, and their reflections appear in the lake.",
+          "x": 2400,
+          "z": -4000,
+          "size_m": 3000,
+          "route": "existing_prefab",
+          "priority": 3
+        }
+      ],
+      "score_form_now": 5,
+      "score_atmos_now": 20
+    },
+    {
+      "ref": "1129",
+      "region": "Frostpeak Highlands: Glass Lake west shore near the south end, at the grassy pine promontory",
+      "summary": "1129 uses the same lake, time and weather as 1128. The camera sits 18 m above the water, next to a grassy promontory on the west shore that is cut into the lake polygon around (1850,-1050). It looks north-northeast, 16 degrees east of north, up the lake.\n\nIn the crude render this is the closest match of the four:\n- The pine point fills px 0 to 500 at left, as in the reference.\n- On the left, the Frostpeak cluster's east flank shows east_spur (46,319), frost_crown (117,189) and east_summit (246,284).\n- The north range is in the centre (460 to 770, 270 to 340).\n- The east wall is on the right: E1 (1087,292), E2 (1295,270), E3 (1628,311).\n- The far islet is at (665,480), matching the reference at (660,486).\n- The right islet is at (1472,525), with the reference at about (1505,540).\n- The near rock with a grass tuft is at (364,855), matching the reference at (360,860).\n\nThe lighting preset matches 1128, with a slightly clearer sky.\n\nCamera height: y_abs is authoritative. The current ground here is 22.4 m, so today this camera would be underground; it only works once the lake is cut. The ripple near the airship is the vehicle's wake, not part of the world.",
+      "camera": {
+        "x": 1935,
+        "z": -905,
+        "y_abs": 18,
+        "tx": 2761.7,
+        "tz": -3788.2,
+        "ty_abs": -44.8,
+        "fov": 50
+      },
+      "env": {
+        "sun_dir": [
+          -0.7,
+          0.55,
+          0.45
+        ],
+        "sun_color": [
+          1,
+          0.95,
+          0.88
+        ],
+        "sun_energy": 1,
+        "sky_zenith": [
+          0.47,
+          0.61,
+          0.8
+        ],
+        "sky_horizon": [
+          0.83,
+          0.83,
+          0.85
+        ],
+        "sky_glow": [
+          0.12,
+          0.09,
+          0.06
+        ],
+        "ambient_color": [
+          0.64,
+          0.68,
+          0.78
+        ],
+        "ambient_energy": 0.55,
+        "fog_color": [
+          0.81,
+          0.82,
+          0.86
+        ],
+        "fog_density": 0.00012,
+        "study_fill": [
+          1,
+          1,
+          1.03
+        ],
+        "study_haze": [
+          0.8,
+          0.82,
+          0.86
+        ],
+        "water_night": 0,
+        "stars": 0
+      },
+      "missing": [
+        {
+          "name": "GlassLake_basin",
+          "what": "This is the lake cut shared with 1128, including the west-shore promontory. The point is about 150 by 120 m around (1850,-1050): a grassy bank 8 to 14 m high sloping gently into the water, with rocks at the waterline.",
+          "x": 1850,
+          "z": -1050,
+          "size_m": 150,
+          "route": "blender_hub",
+          "priority": 1
+        },
+        {
+          "name": "West_point_pines",
+          "what": "Add 10 pines at scale 1.1 to 1.6 on the promontory, spread over x 1815 to 1885 and z -1110 to -1000, plus 2 shore rocks: rock s 1.8 at (1893,-1062) and rock s 1.5 at (1880,-1098). Together they form the left foreground of the frame.",
+          "x": 1850,
+          "z": -1055,
+          "size_m": 120,
+          "route": "existing_prefab",
+          "priority": 1
+        },
+        {
+          "name": "GlassLake_east_wall+north_range",
+          "what": "These are the shared massif instances listed under 1128 (GlassLake_east_wall and Frostpeak_north_gorge_range). They provide the right-hand peaks and the distant centre peaks in this frame.",
+          "x": 2900,
+          "z": -3500,
+          "size_m": 4000,
+          "route": "existing_prefab",
+          "priority": 1
+        },
+        {
+          "name": "Mirror_lake_water",
+          "what": "This is the planar-mirror calm lake mode shared with 1128. Add faint ripple rings or a subtle distortion within about 150 m of the camera; the reference shows gentle ripples near the vehicle.",
+          "x": 2380,
+          "z": -2550,
+          "size_m": 3750,
+          "route": "godot_effect",
+          "priority": 1
+        },
+        {
+          "name": "Lake_islets_1129",
+          "what": "Build islets from the rock prefab, using uniform scale, sunk so 2 to 3 m shows, with pines at scale 0.8 to 1.0.\n- Far islet: rock s 4 at (1979,-1297), with 2 pines.\n- Right islet: rock s 4.5 at (2064,-1020), with 2 pines.\n- Near rock: s 1.5 at (1928,-948), with a bush prefab as the grass tuft.",
+          "x": 2000,
+          "z": -1100,
+          "size_m": 150,
+          "route": "existing_prefab",
+          "priority": 2
+        },
+        {
+          "name": "Lake_cloud_bank",
+          "what": "These are the cumulus cloud prefabs shared with 1128, placed at the upper left and upper right so they reflect in the lake.",
+          "x": 2400,
+          "z": -4000,
+          "size_m": 3000,
+          "route": "existing_prefab",
+          "priority": 3
+        }
+      ],
+      "score_form_now": 3,
+      "score_atmos_now": 15
+    },
+    {
+      "ref": "1276",
+      "region": "Frostpeak Highlands: north gorge (高山雪峡) above the Glass Lake's north end",
+      "summary": "1276 is the mouth of a new gorge north of the Glass Lake. The gorge is formed by the scaled massif instances in the north range, shared with 1128, 1129 and 1344. The camera floats at y 300 above the lake's north end and looks north up the gorge, tilted 1.5 degrees upward.\n\nIn the crude render:\n- The left wall (N1, west_summit at scale 1.8) rises out of the frame at the top left; its peak projects to (163,-49).\n- The right wall (N2, frost_crown at scale 1.7) has a sharp lit face at the right, with its peak at (1652,-1) in the top-right corner.\n- The end peak (N3, needle_ridge at scale 3.0) is centred at (890,207), close to the reference's centre peak at about (850,150 to 200).\n- The right-centre peak (N5) is at (1254,294), against about (1300,280) in the reference.\n- N4 sits at (469,360).\n\nThe two near walls meet in a V at about y 170 near z -5100, so the camera stays south of the walls. Without the cloud floor, the green terrain at y 20 shows at the bottom of the gorge.\n\nMain gaps: the cloud floor at about y 200, the blizzard, and the big flat facets that come from scaling the massifs 1.7 to 3.0 times. The reference walls are finely faceted with patches of snow and dark rock.\n\nLighting: bright sun from the west, slightly north. The left wall's faces toward the camera stay in blue shadow, while the right wall's inner faces and the centre peak's west face are lit, as in the reference.\n\nOn scale: I kept all scales uniform, because non-uniform scaling of collision shapes is unreliable in Godot.\n\nCamera height: y_abs 300 is authoritative. Today's ground here is 19.3 m, which will become water after the lake cut.\n\nThis gorge also works as the setting for 1275 (the cliff port in a blizzard) if that plan wants it.",
+      "camera": {
+        "x": 2050,
+        "z": -4350,
+        "y_abs": 300,
+        "agl": 281,
+        "tx": 2311.4,
+        "tz": -7337.6,
+        "ty_abs": 378.5,
+        "fov": 50
+      },
+      "env": {
+        "sun_dir": [
+          -0.75,
+          0.55,
+          -0.37
+        ],
+        "sun_color": [
+          1,
+          0.97,
+          0.94
+        ],
+        "sun_energy": 1.25,
+        "sky_zenith": [
+          0.45,
+          0.62,
+          0.9
+        ],
+        "sky_horizon": [
+          0.72,
+          0.8,
+          0.92
+        ],
+        "sky_glow": [
+          0.08,
+          0.08,
+          0.08
+        ],
+        "ambient_color": [
+          0.42,
+          0.55,
+          0.8
+        ],
+        "ambient_energy": 0.55,
+        "fog_color": [
+          0.74,
+          0.8,
+          0.92
+        ],
+        "fog_density": 0.00035,
+        "study_fill": [
+          0.82,
+          0.9,
+          1.1
+        ],
+        "study_haze": [
+          0.72,
+          0.79,
+          0.92
+        ],
+        "water_night": 0,
+        "stars": 0
+      },
+      "missing": [
+        {
+          "name": "Frostpeak_north_gorge_range",
+          "what": "Add these massif prefab instances with uniform scale. Values are prefab, rotation, scale, then position (x,z):\n- N1: massif_west_summit, rot 30, s 1.8, (1650,-5050)\n- N2: massif_frost_crown, rot 250, s 1.7, (2850,-5150)\n- N3: massif_needle_ridge, rot 90, s 3.0, (2300,-6100)\n- N4: massif_east_summit, rot 120, s 1.9, (1500,-6400)\n- N5: massif_west_summit, rot 200, s 1.9, (3150,-6450)\n- massif_east_summit, rot 200, s 1.2, (1850,-7500)\n- massif_frost_crown, rot 20, s 1.2, (2800,-7550)\nThe last two block the view of the sea past the terrain edge at z -7680.",
+          "x": 2300,
+          "z": -5800,
+          "size_m": 3000,
+          "route": "existing_prefab",
+          "priority": 1
+        },
+        {
+          "name": "Gorge_cloud_floor",
+          "what": "Add a low cloud sea or fog layer with its top at about y 200, varying by ±30 m, covering x 300 to 4500 and z -8400 to -4600. The top should be bright blue-white with soft edges where it meets the massif walls, plus a few billows rising up the gorge. It fills the V at the gorge bottom and hides the sea horizon beyond the edge of the world.",
+          "x": 2300,
+          "z": -6400,
+          "size_m": 4200,
+          "route": "godot_effect",
+          "priority": 1
+        },
+        {
+          "name": "Blizzard_snowfall",
+          "what": "Add wind-driven falling snow as camera-local particles. Use CPUParticles3D, or GPUParticles3D if it works under GL Compatibility, with about 2000 flakes. Near flakes should be streaks of 0.3 to 0.8 m and far flakes a fine speckle, drifting diagonally from upper left to lower right. Enable it only inside a weather zone of x 800 to 4000, z -4300 to -7700.",
+          "x": 2300,
+          "z": -5500,
+          "size_m": 3000,
+          "route": "godot_effect",
+          "priority": 1
+        },
+        {
+          "name": "Snow_rock_massif_material",
+          "what": "Add a scaled-massif material variant for this region. Slopes facing up should be bright snow and steep faces blue-grey rock with dark crevices. Break the 100 to 200 m flat facets that come from the 1.7 to 3.0 scaling with a world-space facet or noise pattern, so the walls read as finely faceted snow and rock like the reference.",
+          "x": 2300,
+          "z": -5500,
+          "size_m": 3000,
+          "route": "godot_effect",
+          "priority": 2
+        },
+        {
+          "name": "Gorge_wall_facets",
+          "what": "Model 2 dedicated jagged gorge-wall meshes to replace the scaled N1 and N2 as the near walls. Each should be about 1.3 km long and 700 to 850 m high, with 20 to 80 m facets, snow ledges and dark overhangs. Keep the gap between them 250 to 350 m wide at y 300.",
+          "x": 2250,
+          "z": -5100,
+          "size_m": 1500,
+          "route": "blender_hub",
+          "priority": 3
+        },
+        {
+          "name": "Spindrift_veils",
+          "what": "Add blowing-snow veils: semi-transparent sheets or particles streaming off the N1, N2 and N3 ridgelines, plus a few mid-gorge wisps using the cloud_wisp prefab or soft sprites at y 250 to 450.",
+          "x": 2300,
+          "z": -5300,
+          "size_m": 1500,
+          "route": "godot_effect",
+          "priority": 3
+        }
+      ],
+      "score_form_now": 5,
+      "score_atmos_now": 20
+    },
+    {
+      "ref": "1344",
+      "region": "Frostpeak Highlands: Glass valley south of the lake, seen from the north foot of the southeast dome at (2670,1200)",
+      "summary": "1344 looks north up a new outflow river valley toward the Glass Lake. The camera hangs above the north foot of the existing southeast terrain dome, where the current ground is 79 m. That area already has about 600 pines in scatter cells 2_1, 3_1 and 4_1.\n\nThe river leaves the lake's south-east shore at (2900,-1150), winds south past two ponds to (2780,380), then turns west along low ground (20 to 40 m) toward Amberfield at (1500,900). I rerouted it after finding my first route climbed the dome's lower slope at 130 m.\n\nIn the crude render:\n- The Frostpeak cluster is the left big group: west_summit (48,370), frost_crown (199,352), east_summit (265,403). The reference's big left peak is at about (100,350).\n- The lake is a mirror strip at left-centre, (50 to 450, 540 to 610).\n- The north range is the distant centre row, (480 to 750, 325 to 375).\n- E1 and E2 sit at the centre (860,370), E4 at (1161,352), the NE dome at (1186,364), and E5 at the right (1514,359). The reference's right peak is at about (1450,410).\n- The river runs from the bottom centre, through the pond at (925,900) and the pond at (845,654), to the outlet at (787,567). This matches the reference's river at about (600 to 900, 560 to 941).\n\nGaps: the pine forest, rocky knolls, rainbow, sun rays and mist are all missing. The sea horizon still shows between peaks; the rendered view also shows a gap between the E2 and E4 peaks (roughly x 1000 to 1350). Fog and the far massifs should mostly close these gaps.\n\nLighting: golden, low afternoon sun at the upper left, just outside the frame. It lights the west faces of the peaks and throws god rays into the top-left corner.\n\nDependencies: this view needs GlassLake_basin and Frostpeak_north_gorge_range from the 1128 and 1276 plans.\n\nCamera height: y_abs 230 is authoritative. The river cut passes about 13 m from the camera's ground point, so ground-relative height changes after the cut.",
+      "camera": {
+        "x": 2750,
+        "z": 480,
+        "y_abs": 230,
+        "agl": 151,
+        "tx": 3167.1,
+        "tz": -2488,
+        "ty_abs": 99.1,
+        "fov": 50
+      },
+      "env": {
+        "sun_dir": [
+          -0.56,
+          0.37,
+          -0.74
+        ],
+        "sun_color": [
+          1,
+          0.84,
+          0.62
+        ],
+        "sun_energy": 1.25,
+        "sky_zenith": [
+          0.5,
+          0.63,
+          0.85
+        ],
+        "sky_horizon": [
+          0.93,
+          0.85,
+          0.76
+        ],
+        "sky_glow": [
+          0.4,
+          0.28,
+          0.12
+        ],
+        "ambient_color": [
+          0.66,
+          0.62,
+          0.66
+        ],
+        "ambient_energy": 0.45,
+        "fog_color": [
+          0.86,
+          0.79,
+          0.73
+        ],
+        "fog_density": 0.00016,
+        "study_fill": [
+          1.05,
+          0.88,
+          0.72
+        ],
+        "study_haze": [
+          0.86,
+          0.78,
+          0.72
+        ],
+        "water_night": 0,
+        "stars": 0
+      },
+      "missing": [
+        {
+          "name": "Glass_outflow_river",
+          "what": "Cut a winding river channel 40 to 70 m wide, bed at -4 m, with shallow wet banks. Path (x,z): (2900,-1150) at the lake's south-east shore, (2980,-900), (2860,-640), (2960,-380), (2830,-120), (2900,130), (2780,380), (2600,430), (2400,400), (2200,450), (2000,520), (1800,650), (1600,800), (1500,900). Add ponds: an 80 by 55 m ellipse at (2900,-520) and a 70 by 45 m ellipse at (2860,10), plus small marsh pools. All ground along this route is at 15 to 40 m.",
+          "x": 2850,
+          "z": -300,
+          "size_m": 2600,
+          "route": "blender_hub",
+          "priority": 1
+        },
+        {
+          "name": "GlassLake_east_wall",
+          "what": "These are the shared instances from 1128. For this frame, massif_frost_crown at rot 300, s 0.9, (3900,-1900) and massif_east_summit at rot 250, s 1.3, (4700,-1700) supply the right-hand peaks and block the sea past the east terrain edge. E1 to E3 fill the centre.",
+          "x": 3900,
+          "z": -2000,
+          "size_m": 2500,
+          "route": "existing_prefab",
+          "priority": 1
+        },
+        {
+          "name": "Valley_pine_forest",
+          "what": "Add about 500 pines at scale 0.9 to 1.5 as a MultiMesh, in groves across the valley floor and knolls from x 2300 to 3400, z -1300 to 700, and on the dome's north flank. Keep them at least 25 m from the river and ponds, and let them thin out toward the lake.",
+          "x": 2850,
+          "z": -300,
+          "size_m": 2000,
+          "route": "existing_prefab",
+          "priority": 1
+        },
+        {
+          "name": "Valley_rock_knolls",
+          "what": "Add 8 to 12 grass-topped rocky knolls, 20 to 70 m high, using the rock prefab at uniform scale 8 to 14 plus pines, or sculpt them in the terrain:\n- a big knoll at the bottom left around (2560,20)\n- one at the bottom right around (3040,130)\n- a low pine ridge around (2450,-450) to (2600,-650) that partly hides the lake, which currently reads too large at left-centre\n- scattered outcrops in the mid valley",
+          "x": 2800,
+          "z": -150,
+          "size_m": 1200,
+          "route": "existing_prefab",
+          "priority": 2
+        },
+        {
+          "name": "Rainbow_arc",
+          "what": "Add a stylised post-rain rainbow as an additive, translucent 7-band arc mesh fixed in world space, about 3 km from the camera. The band is about 60 m wide on an apparent radius of about 40 degrees. Its left foot comes down in the valley at bearing about -20 degrees from the camera, around (2300,-2300), and the arc rises to the top centre of the frame. It should be enabled only in the post-rain weather preset.",
+          "x": 2600,
+          "z": -2400,
+          "size_m": 3500,
+          "route": "godot_effect",
+          "priority": 2
+        },
+        {
+          "name": "Godrays_valley_mist",
+          "what": "Add sun shafts from the upper-left sun behind breaking cloud, using radial blur of the sky or cloud mask, or 6 to 10 additive shaft cones. Also add low mist banks at y 40 to 120: along the lake's south shore (2400,-900), at the foot of the Frostpeak cluster (1600,-1800), and in the valley pockets. Use fog volumes or cloud_low prefab instances. Add 2 or 3 warm-lit cumulus prefabs at the upper left.",
+          "x": 2300,
+          "z": -1500,
+          "size_m": 3000,
+          "route": "godot_effect",
+          "priority": 2
+        }
+      ],
+      "score_form_now": 20,
+      "score_atmos_now": 30
+    },
+    {
+      "ref": "1131",
+      "region": "NW coast: new 'Frostcoast' snow range just north of the 36b highcoast estuary (the WORLD_SCENE_PLAN snowy-coast band, continuing the Lantern Coast northwards)",
+      "summary": "Checked with a heightfield built from the real World38 terrain meshes (208 tiles, 14 of them the 36b embedded tiles) plus the 11 massifs, and a raymarch preview placed beside the reference (scratchpad coast4/v_n7.png). The west coast runs NW-SE (x -2224 at z -2000, x -3544 at z -4000), with sea to the SW, so a camera just offshore looking NW along the coast puts the sea on the left and the land on the right, as in the reference. The existing Frostpeak massifs are about 3.5 km inland and fall outside this frame; without new peaks the right side is only the 36b green plain and estuary. Proposed camera: over the sea at (-2600, 330 abs, -2350), yaw -22 deg (NNW), pitch -10, fov 55. Projections with the proposed range: hero peak (-2450,-5000) at px (1280,168), reference ~(1300,130); coastline from bottom-centre (~px 880) to centre; horizon ~y 300 (reference ~290); 36b estuary channels at bottom right ~(1560,705); Lantern island C lands bottom-left (276,869). The sun is solved to px (1642,162), matching the reference. Cross-reference risk: from the 1343 opening camera the new range shows at the far left horizon, about 110 px taller than the small far peaks in 1343. Keep the hero scale at 1.5 or lower and rely on 1343 haze, or drop to 1.3 if the 1343 owner objects.",
+      "camera": {
+        "x": -2600,
+        "y_abs": 330,
+        "z": -2350,
+        "tx": -2968.9,
+        "ty_abs": 156.4,
+        "tz": -3263.1,
+        "fov": 55
+      },
+      "env": {
+        "sun_dir": [
+          0.315,
+          0.118,
+          -0.942
+        ],
+        "sun_color": [
+          1,
+          0.95,
+          0.86
+        ],
+        "sun_energy": 1.35,
+        "sky_zenith": [
+          0.28,
+          0.46,
+          0.74
+        ],
+        "sky_horizon": [
+          0.8,
+          0.86,
+          0.92
+        ],
+        "sky_glow": [
+          1,
+          0.93,
+          0.78
+        ],
+        "ambient_color": [
+          0.66,
+          0.74,
+          0.86
+        ],
+        "ambient_energy": 0.8,
+        "fog_color": [
+          0.76,
+          0.83,
+          0.9
+        ],
+        "fog_density": 0.00016,
+        "study_fill": [
+          1,
+          1,
+          1.02
+        ],
+        "study_haze": [
+          0.72,
+          0.8,
+          0.89
+        ],
+        "water_night": 0,
+        "stars": 0
+      },
+      "missing": [
+        {
+          "name": "Frostcoast snow range (shared 1131/1347/1341)",
+          "what": "5 clones of existing massif prefabs forming a snowy coastal range behind the 36b highcoast, instanced at y=0 like the current massifs: hero massif_frost_crown scale 1.5 yaw 30 at (-2450,-5000), peak ~690 m; massif_east_summit s1.3 yaw 10 at (-1900,-4500); massif_west_summit s1.3 yaw 80 at (-2000,-5700); massif_needle_ridge s1.3 yaw 45 at (-3200,-5900); massif_east_spur s1.3 at (-2900,-4400). The existing coastal hamlet (cottages ~(-3280,-5000)) sits at the hero's foot and should be left clear.",
+          "route": "existing_prefab",
+          "x": -2450,
+          "z": -5000,
+          "size_m": 1500,
+          "priority": 1
+        },
+        {
+          "name": "Braided delta archipelago",
+          "what": "Terrain edit of the 36b estuary and south bank, x[-2750,-1700] z[-3700,-2500]: 8-12 low islands (150-400 m wide, 5-25 m high) split by 40-120 m turquoise channels (bed -1 to -3 m); lower the long straight coastal cliff lip to beaches or shelves; then re-ground scatter and collision.",
+          "route": "blender_hub",
+          "x": -2250,
+          "z": -3100,
+          "size_m": 1200,
+          "priority": 2
+        },
+        {
+          "name": "Pine forest cover",
+          "what": "Dense pine scatter (about 1 tree per 150 m2, clumped) on the new islands and on the hill flanks at the foot of the range.",
+          "route": "existing_prefab",
+          "x": -2200,
+          "z": -3500,
+          "size_m": 1500,
+          "priority": 3
+        },
+        {
+          "name": "Offshore peak islands on the left horizon",
+          "what": "Massif clones standing in open sea as distant island silhouettes, left horizon px ~300-600: massif_west_spur s1.4 at (-5200,-4700), massif_east_spur s1.3 at (-5600,-3000), massif_needle_ridge s1.2 at (-4300,-7200). The ocean plane is 100 km, so points beyond the terrain edge are fine.",
+          "route": "existing_prefab",
+          "x": -5200,
+          "z": -4700,
+          "size_m": 900,
+          "priority": 4
+        },
+        {
+          "name": "Low cloud wisps below the camera",
+          "what": "cloud_wisp / cloud_low instances at y 150-300: 3 at the range foot around (-2300,-4200) and 3 below the camera bottom-left around (-3000,-2700).",
+          "route": "existing_prefab",
+          "x": -2300,
+          "z": -4200,
+          "size_m": 500,
+          "priority": 5
+        },
+        {
+          "name": "Faceted cumulus sky",
+          "what": "6 cloud_primary / cloud_middle instances at y 900-1400, placed upper-left over the sea (-3600,-3800) and upper-right over the range (-1800,-5600), to match the white faceted cumulus.",
+          "route": "existing_prefab",
+          "x": -2800,
+          "z": -4800,
+          "size_m": 900,
+          "priority": 6
+        }
+      ],
+      "score_form_now": 25,
+      "score_atmos_now": 40
+    },
+    {
+      "ref": "1347",
+      "region": "Same NW Frostcoast spot as 1131 (same place, golden-hour state)",
+      "summary": "1347 has the same composition as 1131 with warmer light, so it shares the 1131 camera position and turns 4 deg further left so the hero peak sits further right. Preview: scratchpad coast4/v_f1347.png. Proposed camera: (-2600, 330 abs, -2350), yaw -26, pitch -9, fov 55. Projections: hero peak (-2450,-5000) at px ~(1370,160), reference ~(1393,96); coastline at bottom ~px 860; left-horizon island at ~(313,363); sun solved to px (1564,163), reference (1567,161). Depends on the same Frostcoast range, delta and pine items as 1131. The extra items are the pink/orange cumulus field and wind-blown leaves. The 1343 horizon note under 1131 applies here too.",
+      "camera": {
+        "x": -2600,
+        "y_abs": 330,
+        "z": -2350,
+        "tx": -3033,
+        "ty_abs": 173.6,
+        "tz": -3237.7,
+        "fov": 55
+      },
+      "env": {
+        "sun_dir": [
+          0.202,
+          0.135,
+          -0.97
+        ],
+        "sun_color": [
+          1,
+          0.76,
+          0.5
+        ],
+        "sun_energy": 1.4,
+        "sky_zenith": [
+          0.38,
+          0.55,
+          0.8
+        ],
+        "sky_horizon": [
+          1,
+          0.82,
+          0.62
+        ],
+        "sky_glow": [
+          1,
+          0.7,
+          0.4
+        ],
+        "ambient_color": [
+          0.78,
+          0.66,
+          0.66
+        ],
+        "ambient_energy": 0.72,
+        "fog_color": [
+          0.96,
+          0.8,
+          0.68
+        ],
+        "fog_density": 0.00013,
+        "study_fill": [
+          1.05,
+          0.82,
+          0.64
+        ],
+        "study_haze": [
+          0.93,
+          0.76,
+          0.66
+        ],
+        "water_night": 0,
+        "stars": 0
+      },
+      "missing": [
+        {
+          "name": "Frostcoast snow range (shared with 1131)",
+          "what": "Same 5 massif clones as in 1131: hero frost_crown s1.5 at (-2450,-5000); east_summit (-1900,-4500); west_summit (-2000,-5700); needle_ridge (-3200,-5900); east_spur (-2900,-4400).",
+          "route": "existing_prefab",
+          "x": -2450,
+          "z": -5000,
+          "size_m": 1500,
+          "priority": 1
+        },
+        {
+          "name": "Braided delta archipelago (shared with 1131)",
+          "what": "Rework the 36b estuary and south bank x[-2750,-1700] z[-3700,-2500] into low pine islands with turquoise channels and beaches.",
+          "route": "blender_hub",
+          "x": -2250,
+          "z": -3100,
+          "size_m": 1200,
+          "priority": 2
+        },
+        {
+          "name": "Warm cumulus field and low pink puffs",
+          "what": "About 10 cloud_primary / middle / edge instances at y 900-1500 spread over (-3500..-1500, -3500..-6000), warm-lit, plus 3-4 cloud_low puffs at y 150-250 in the bottom-left sea (-3000,-2700).",
+          "route": "existing_prefab",
+          "x": -2800,
+          "z": -4500,
+          "size_m": 3000,
+          "priority": 3
+        },
+        {
+          "name": "Wind-blown leaves",
+          "what": "Camera-local GPUParticles: about 150 small green leaf quads drifting and tumbling 30-150 m in front of the lens, following the camera.",
+          "route": "godot_effect",
+          "x": -2600,
+          "z": -2350,
+          "size_m": 200,
+          "priority": 4
+        },
+        {
+          "name": "Pine forest cover (shared)",
+          "what": "Dense pine clumps on the delta islands and the range foothills.",
+          "route": "existing_prefab",
+          "x": -2200,
+          "z": -3500,
+          "size_m": 1500,
+          "priority": 5
+        },
+        {
+          "name": "Offshore peak islands (shared)",
+          "what": "massif_west_spur s1.4 at (-5200,-4700), east_spur s1.3 at (-5600,-3000), needle_ridge s1.2 at (-4300,-7200), as distant left-horizon islands.",
+          "route": "existing_prefab",
+          "x": -5200,
+          "z": -4700,
+          "size_m": 900,
+          "priority": 6
+        }
+      ],
+      "score_form_now": 25,
+      "score_atmos_now": 35
+    },
+    {
+      "ref": "1220",
+      "region": "SW sunset bay (SW hills ~228 m, the two existing round islands at (-2850,-100) and (-1950,1250), Ruins port); this deviates from WORLD_SCENE_PLAN, which put 1220 in the NW snowy-coast band",
+      "summary": "Reason for the deviation: the NW options all have open sea on the right, with no enclosing shore, village or bay islands. The SW is the only real enclosed bay in the world, and it already has two islands and the SW hills. From a camera high above the SW hills looking NW, the Lantern and Frostcoast coast (5-7 km away) closes the right horizon, as the reference needs. Preview: scratchpad coast4/v_s1220e.png. Proposed camera: (-450, agl 435 over ground 15 m, 3250), yaw -42, pitch -4, fov 50; target over the SW hills (ground 171). Projections with the proposed items: SW massif peak at the left edge px (37,312), reference ~(0-50,330); bay mountain-island peak ~(949,420), reference mid mountain ~(820,430); near round island (926,541), reference forested islet (1030,640); lighthouse site (866,692), reference (1000,750); new village (1380,679), reference 1300-1672 x 560-720; Frostcoast range and Lantern islands sit on the right horizon near px 1170-1450 as far silhouettes. Sun solved to yaw -21.7 deg, sitting on the horizon at px ~(1209,400), reference (1210,410); it sets just above the far Lantern islands with its glitter path on open bay water. Neither the SW massif nor the bay-island peak is visible from the 1343 camera (both outside its frame). An existing cloud at (-1538,598,2718) will hang just above the SW massif peak, which suits this view.",
+      "camera": {
+        "x": -450,
+        "agl": 435,
+        "z": 3250,
+        "tx": -1117.5,
+        "target_agl": 209,
+        "tz": 2508.7,
+        "fov": 50
+      },
+      "env": {
+        "sun_dir": [
+          -0.371,
+          0.015,
+          -0.929
+        ],
+        "sun_color": [
+          1,
+          0.52,
+          0.22
+        ],
+        "sun_energy": 1.1,
+        "sky_zenith": [
+          0.34,
+          0.3,
+          0.52
+        ],
+        "sky_horizon": [
+          1,
+          0.58,
+          0.28
+        ],
+        "sky_glow": [
+          1,
+          0.6,
+          0.2
+        ],
+        "ambient_color": [
+          0.58,
+          0.44,
+          0.62
+        ],
+        "ambient_energy": 0.55,
+        "fog_color": [
+          0.82,
+          0.52,
+          0.48
+        ],
+        "fog_density": 0.00018,
+        "study_fill": [
+          0.95,
+          0.66,
+          0.58
+        ],
+        "study_haze": [
+          0.7,
+          0.5,
+          0.6
+        ],
+        "water_night": 0,
+        "stars": 0
+      },
+      "missing": [
+        {
+          "name": "SW sunset peaks (left foreground mountains)",
+          "what": "massif_frost_crown clone s1.15 yaw 20 at (-1600,3050), peak ~530 m (above the 450 m camera, as in the reference), plus massif_west_summit s0.9 yaw 60 at (-2100,3700) on the SW hills and shore. These give the snowy rock mountains at the left edge.",
+          "route": "existing_prefab",
+          "x": -1600,
+          "z": 3050,
+          "size_m": 1150,
+          "priority": 1
+        },
+        {
+          "name": "Mountain island in the bay",
+          "what": "massif_needle_ridge clone s1.1 yaw 30 set into the far round island (-2850,-100), island top ~139 m; raise the instance about +60 m so the peak reaches ~360 m, still below camera height.",
+          "route": "existing_prefab",
+          "x": -2850,
+          "z": -100,
+          "size_m": 600,
+          "priority": 2
+        },
+        {
+          "name": "Cliff-top lighthouse",
+          "what": "lighthouse prefab plus one cottage as keeper house on the SW hills' NW shoulder (-1230, ground ~75 m, 2330). Put cliff_front_columns / cliff_western_slab under it to make a sea cliff at the promontory (reference bottom-centre).",
+          "route": "existing_prefab",
+          "x": -1230,
+          "z": 2330,
+          "size_m": 80,
+          "priority": 3
+        },
+        {
+          "name": "Bay-shore village with lit windows",
+          "what": "12 cottages, 1 dock and crates on the coast at (-850,1550), ground ~23 m, near the existing Ruins port; warm emissive windows and lanterns for dusk.",
+          "route": "existing_prefab",
+          "x": -850,
+          "z": 1550,
+          "size_m": 300,
+          "priority": 4
+        },
+        {
+          "name": "Pine slopes",
+          "what": "Pine scatter on the SW hills' north and west slopes (foreground bottom-left and bottom band) and on the near round island (-1950,1250).",
+          "route": "existing_prefab",
+          "x": -1100,
+          "z": 2700,
+          "size_m": 900,
+          "priority": 5
+        },
+        {
+          "name": "Sunset cloud banks and sun glitter path",
+          "what": "6 flat faceted cloud slabs (cloud_edge / cloud_primary) at y 1000-1600 spread NW over the bay, with orange-lit undersides and purple tops, plus the water sun-reflection streak tuned for a horizon sun.",
+          "route": "godot_effect",
+          "x": -2000,
+          "z": -500,
+          "size_m": 4000,
+          "priority": 6
+        }
+      ],
+      "score_form_now": 30,
+      "score_atmos_now": 45
+    },
+    {
+      "ref": "1341",
+      "region": "NW storm coast: 36b highcoast estuary and south bank, with the new Frostcoast range as the distant peaks (same area as 1125, 1131 and 1342 under a different weather state)",
+      "summary": "The existing 36b storm rig 'storm-coast-low' was checked: (-2830,170,-1550) aimed at (-900,150,-2920), fov 60 (listed in 35-storm-world-camera-intake as 1341_existing_mountains_oblique). In both my preview and the real 36b GPU image it frames the coast side-on: highcoast hills on the left, the flat plain with Frostpeak centre-right, and sea plus the Lantern islands in front. That suits 1125 better. 1341 needs a view along the coast: sea on the left, coastline diagonal to the centre, estuary and terraces on the right, mountains at right distance. So I propose a reworked rig based on the 36b 'alongshore-high' view (-2250,250,-1870, yaw -25), moved north and lower. Preview: scratchpad coast4/v_f1341.png. Proposed camera: (-2250, agl 149 over ground 21 m, -2450), yaw -33, pitch +3 (horizon ~y 530, reference ~540), fov 55. Projections: hero Frostcoast peak ~(1310,368), reference main peak (1290,380); east_summit ~(1670,445); estuary channel ~(1330,800) mid-right; Lantern island C at the left edge ~(50,780). Rocky stacks can go in the left-foreground sea. The current 36b storm probes give only ~0.5 storm weight at this camera (1.0 at x -3500, 0 at x -1200), so the preset needs a full-storm override.",
+      "camera": {
+        "x": -2250,
+        "agl": 149,
+        "z": -2450,
+        "tx": -2793.9,
+        "ty_abs": 222.3,
+        "tz": -3287.5,
+        "fov": 55
+      },
+      "env": {
+        "sun_dir": [
+          0.15,
+          0.5,
+          -0.853
+        ],
+        "sun_color": [
+          0.6,
+          0.65,
+          0.78
+        ],
+        "sun_energy": 0.22,
+        "sky_zenith": [
+          0.09,
+          0.11,
+          0.15
+        ],
+        "sky_horizon": [
+          0.28,
+          0.32,
+          0.38
+        ],
+        "sky_glow": [
+          0.4,
+          0.38,
+          0.52
+        ],
+        "ambient_color": [
+          0.34,
+          0.38,
+          0.48
+        ],
+        "ambient_energy": 0.55,
+        "fog_color": [
+          0.25,
+          0.28,
+          0.33
+        ],
+        "fog_density": 0.00035,
+        "study_fill": [
+          0.35,
+          0.4,
+          0.5
+        ],
+        "study_haze": [
+          0.3,
+          0.34,
+          0.4
+        ],
+        "water_night": 0,
+        "stars": 0
+      },
+      "missing": [
+        {
+          "name": "Frostcoast snow range (shared with 1131/1347)",
+          "what": "The same 5 massif clones (hero frost_crown s1.5 at (-2450,-5000), etc.) give the jagged dark snow peaks at right distance; without them the right horizon is only the 290 m green north-bank ridge.",
+          "route": "existing_prefab",
+          "x": -2450,
+          "z": -5000,
+          "size_m": 1500,
+          "priority": 1
+        },
+        {
+          "name": "Low storm ceiling at full weight",
+          "what": "Reuse the 35c storm_front_shelf / rear_anvil cloud bodies. Set storm weight 1.0 over x[-3500,-1200] z[-5500,-1500] with the cloud base at 500-700 m, so the ceiling covers the camera and hides the range tops. Fix the old boulder-like cloud blobs and large flat cloud panels flagged in earlier reviews.",
+          "route": "godot_effect",
+          "x": -2400,
+          "z": -3500,
+          "size_m": 5000,
+          "priority": 2
+        },
+        {
+          "name": "Lightning bolts over the range",
+          "what": "3 bolts with flash omni lights, reusing the 35c lightning segments: over the hero (-2450,-5000), over east_summit (-1900,-4500), and a sea strike near (-3300,-4300); violet-white, with cloud-lit flashes.",
+          "route": "godot_effect",
+          "x": -2450,
+          "z": -4700,
+          "size_m": 800,
+          "priority": 3
+        },
+        {
+          "name": "Slanted rain and whitecap sea",
+          "what": "Camera-local slanted rain streaks (35c rain with per-instance loop), plus the storm water mode with whitecaps and foam around the rocks and shore.",
+          "route": "godot_effect",
+          "x": -2250,
+          "z": -2450,
+          "size_m": 400,
+          "priority": 4
+        },
+        {
+          "name": "Sea stacks and stepped rocky terraces",
+          "what": "About 10 rock prefab sea stacks (s6-20) in the left-foreground sea (-2950..-2650, -3100..-2500). Add cliff_western_slab / cliff_front_columns pieces along the 36b south-bank shore (-2600..-2400, -3100..-2500) to replace the smooth green slope with dark stepped cliffs (blender_hub later for final shapes).",
+          "route": "existing_prefab",
+          "x": -2650,
+          "z": -2800,
+          "size_m": 600,
+          "priority": 5
+        },
+        {
+          "name": "Dark pine groves on terraces",
+          "what": "Pine scatter clumps on the south-bank terraces and the right side of the estuary (-2000..-1600, -3300..-2700).",
+          "route": "existing_prefab",
+          "x": -1800,
+          "z": -3000,
+          "size_m": 800,
+          "priority": 6
+        }
+      ],
+      "score_form_now": 35,
+      "score_atmos_now": 40
+    },
+    {
+      "ref": "1125",
+      "region": "Lantern Coast south plain at the moving storm front: storm over the west sea (storm-mask edge x≈-2350), low sun over the plain between the coast and Lantern port (-1120,-1910)",
+      "summary": "I kept the existing 35/36 storm-high rig exactly: pos (-3000,520,-1250), look_at (-1100,180,-3000), fov 70, with sampled rotation (-0.1309,-0.8265,0). I checked the view with a height-map ray-cast built from the real World38 terrain (36b blocks included), the massifs and the lantern-coast study models; it matches the 36b storm-high render. Several reference features already land in the right places. Island A and the 23g headland sit where the reference has its near dark hill (px ~980,780). Reefs 12-16 and islands B/C sit where it has the storm-sea islets (px 200-400,690). The Lantern lighthouse (px ~1090,550) is close to the reference's hilltop tower (1165,605). The biggest form gap is the right half: today it is a flat plain, where the reference has a braided channel archipelago, conical hills and snow peaks at mid-distance. The left half shows the 36b ridge and the NW mountains where the reference has open storm sea. With this fixed camera I accept that and let the storm wall and rain cover it. I tested new peak positions against the 1343 opening camera and the 1341 rig: R1 (-1650,-1250) and M2 (-1650,-2150) stay out of the 1343 frame, or show only as its faint far-left snow peak, which the 1343 reference also has. Both stay 396 m or more from the new 1332 camera. The env keeps the 35c storm runtime (storm_sky mask, rain, lightning), with the sun moved from (0.973,0.11,-0.201) (px 1250,291) down to (0.994,0.045,-0.095) (px ~1353,342; reference sun at 1360,365). The clear-side sky, fill and haze are warmed toward the reference's gold, and fog is raised from 0.000015 to 0.0001 for aerial haze. Storm-side darkening stays in the storm shaders.",
+      "camera": {
+        "x": -3000,
+        "y_abs": 520,
+        "z": -1250,
+        "tx": -1100,
+        "ty_abs": 180,
+        "tz": -3000,
+        "fov": 70
+      },
+      "env": {
+        "sun_dir": [
+          0.994,
+          0.045,
+          -0.095
+        ],
+        "sun_color": [
+          1,
+          0.74,
+          0.42
+        ],
+        "sun_energy": 1.3,
+        "sky_zenith": [
+          0.78,
+          0.58,
+          0.36
+        ],
+        "sky_horizon": [
+          1,
+          0.85,
+          0.55
+        ],
+        "sky_glow": [
+          0.6,
+          0.42,
+          0.14
+        ],
+        "ambient_color": [
+          0.6,
+          0.52,
+          0.44
+        ],
+        "ambient_energy": 0.42,
+        "fog_color": [
+          0.86,
+          0.7,
+          0.46
+        ],
+        "fog_density": 0.0001,
+        "study_fill": [
+          1.05,
+          0.8,
+          0.58
+        ],
+        "study_haze": [
+          0.88,
+          0.72,
+          0.48
+        ],
+        "water_night": 0,
+        "stars": 0
+      },
+      "missing": [
+        {
+          "name": "estuary_channel_archipelago",
+          "what": "Braided river mouth cut into the flat Lantern plain. 3-4 channels, 40-120 m wide, at sea level, winding from the coast near (-2000,-1450) east and north-east toward Lantern port (-1120,-1910). They leave 5-7 grassy islands with sand rims (the reference's right-half channels and islands). Edit Ground_-3_-3 and -2_-3 (36b blocks) plus -3_-2 and -2_-2. This also matches the winding channels in the 1343 left distance.",
+          "x": -1500,
+          "z": -1700,
+          "size_m": 1100,
+          "route": "blender_hub",
+          "priority": 1
+        },
+        {
+          "name": "storm_shelf_wall",
+          "what": "Rework the 35c storm_front_shelf, rear_anvil and rain_scud into one continuous overhanging shelf cloud. Its leading edge follows the storm-mask line x≈-2350 from over the camera to the horizon, with the base at about 650-800 m so it overhangs the top-left 45% of the frame. Add a dense rain curtain under the edge down to the sea, 2 visible bolts on the frame left, dark rough water, and a white foam front along the mask edge. Replace the rock-ball clouds on the sunny side with flat golden cumulus (cloud_* prefabs).",
+          "x": -2600,
+          "z": -2600,
+          "size_m": 4000,
+          "route": "godot_effect",
+          "priority": 2
+        },
+        {
+          "name": "snow_peak_coastal_R1",
+          "what": "Snow-capped coastal peak, about 380 m tall with a base about 520 m wide, rising from the shore. It projects to 1125 px ~(1448,476) as the reference's big right snow peak. It is outside the 1343 frame, at the right edge of the 1341 frame (that reference has a snowy coastal peak), and about 396 m from the 1332 camera. Use massif_needle_ridge at non-uniform scale (0.9,1.4,0.9).",
+          "x": -1650,
+          "z": -1250,
+          "size_m": 520,
+          "route": "existing_prefab",
+          "priority": 3
+        },
+        {
+          "name": "snow_peak_inland_M2",
+          "what": "Second snow peak, about 260 m tall, near the frame center (1125 px ~940,490). It also appears as the faint far-left snow peak in 1343 (1343 px ~138,360) and in the center of 1341. It is outside the 1342 frame (about 85 degrees off-axis). Use massif_west_summit at scale (0.6,0.67,0.6).",
+          "x": -1650,
+          "z": -2150,
+          "size_m": 500,
+          "route": "existing_prefab",
+          "priority": 4
+        },
+        {
+          "name": "green_cone_hills",
+          "what": "Four green and rock cone hills, 90-150 m, standing among the new channels at (-1350,-1850), (-1250,-1550), (-1550,-2300) and (-1950,-2150). Use massif_west_foothill, blue_buttress or valley_guard at scale 1.1-1.7. They read as small far-left hills in 1343, which is consistent with that reference.",
+          "x": -1500,
+          "z": -1950,
+          "size_m": 900,
+          "route": "existing_prefab",
+          "priority": 5
+        },
+        {
+          "name": "island_pine_forest",
+          "what": "About 800 pine instances on the new islands, cone flanks and channel banks (the reference's dense dark conifers). Use the existing pine multimesh scatter.",
+          "x": -1500,
+          "z": -1800,
+          "size_m": 1100,
+          "route": "existing_prefab",
+          "priority": 6
+        }
+      ],
+      "score_form_now": 30,
+      "score_atmos_now": 45
+    },
+    {
+      "ref": "1126",
+      "region": "Outer reef field around lighthouse island C at the NW end of the Lantern Coast channel, looking WSW to open sea",
+      "summary": "New rig, checked by ray-cast and projection. The camera is 38 m above the sea, about 190 m offshore and 200 m east of island C, looking WSW (yaw -107.8°, pitch -13.4°, fov 45). Lighthouse C's lamp (-3048.5,31.3,-2649.2) projects exactly to the reference position (1265,240), and the island waterline lands at y≈422 (reference ≈440). Tower plus rock (12 m island + 24.5 m tower) spans about 150 px, as in the reference. The background along the view axis stays open sea for over 1 km, so thick fog gives the reference's empty grey depth. The high coast sits outside the right edge, and island B is 90° off-axis. Existing reefs 14 (left edge), 15 (low, mid) and 16 (right, px ~1605,350) are in frame. The reference has about 11 stacks; I mapped their waterline pixels onto the sea plane and they fall in a 120×170 m cluster 75-185 m from the camera, which gives the positions below. That cluster also sits where 1125 and 1342 expect distant islets. The existing C beam direction (-0.6,-0.02,0.8) already goes frame-left and away from the camera. The reference beam swings slightly toward the camera, so I re-aim it to (0.71,-0.03,0.71). Env is cold grey fog: at density 0.0035 the lighthouse is about 50% fogged and stacks at 80-110 m about 30%. The lamp and beam must be enabled outside night mode.",
+      "camera": {
+        "x": -2840,
+        "y_abs": 38,
+        "z": -2640,
+        "tx": -2978.9,
+        "ty_abs": 3.2,
+        "tz": -2595.4,
+        "fov": 45
+      },
+      "env": {
+        "sun_dir": [
+          0.249,
+          0.549,
+          0.798
+        ],
+        "sun_color": [
+          0.72,
+          0.78,
+          0.88
+        ],
+        "sun_energy": 0.3,
+        "sky_zenith": [
+          0.28,
+          0.34,
+          0.44
+        ],
+        "sky_horizon": [
+          0.46,
+          0.52,
+          0.6
+        ],
+        "sky_glow": [
+          0.03,
+          0.03,
+          0.035
+        ],
+        "ambient_color": [
+          0.5,
+          0.56,
+          0.66
+        ],
+        "ambient_energy": 0.8,
+        "fog_color": [
+          0.44,
+          0.5,
+          0.58
+        ],
+        "fog_density": 0.0035,
+        "study_fill": [
+          0.52,
+          0.58,
+          0.68
+        ],
+        "study_haze": [
+          0.44,
+          0.5,
+          0.58
+        ],
+        "water_night": 0,
+        "stars": 0
+      },
+      "missing": [
+        {
+          "name": "reef_stack_field",
+          "what": "Eight sea stacks, 8-25 m tall and 8-20 m wide, from the study reef_spire and reef_ridge GLBs at scale 0.35-0.9 with random yaw. Positions: (-2895,-2572), (-2897,-2605), (-2951,-2598), (-2919,-2627), (-2942,-2639), (-2916,-2654), (-2938,-2673), (-2956,-2502). Keep reef_low_15 in place. These are the reference's crowded foreground and mid rocks.",
+          "x": -2925,
+          "z": -2605,
+          "size_m": 180,
+          "route": "existing_prefab",
+          "priority": 1
+        },
+        {
+          "name": "lighthouse_rock_pedestal",
+          "what": "Make island C (a flat 12 m pancake) read as the reference's steep bare rock mound. Ring its shoreline with 3-4 reef_ridge or reef_spire pieces, 12-18 m, hugging the base, and hide most of its 7 pines (IslandPine_51-57). Keep keeper_house_25 as the annex.",
+          "x": -3048,
+          "z": -2649,
+          "size_m": 70,
+          "route": "existing_prefab",
+          "priority": 2
+        },
+        {
+          "name": "sea_fog_banks",
+          "what": "Low fog volume or particle layer from 0 to about 35 m over the sea around the stacks and island C. Add patchy wisps between stacks and a thicker bank behind the island hiding the horizon, so the scene reads as the reference's layered near and far fog, not uniform depth fog.",
+          "x": -3000,
+          "z": -2650,
+          "size_m": 800,
+          "route": "godot_effect",
+          "priority": 3
+        },
+        {
+          "name": "fog_lamp_and_beam",
+          "what": "Turn on C's 28h lamp core, halo and 560 m beam volume in this fog preset (currently night-only). Re-aim the beam to about (0.71,-0.03,0.71) so it sweeps frame-left and slightly toward the camera, and raise its scattering in fog. This gives the reference's warm lamp and cone.",
+          "x": -3048,
+          "z": -2649,
+          "size_m": 560,
+          "route": "godot_effect",
+          "priority": 4
+        },
+        {
+          "name": "far_stack_silhouettes",
+          "what": "Two large faint stacks, 35-45 m (reef_ridge x2.0 and reef_spire x1.5), at 300-450 m: (-3250,-2450) near the frame left and (-3300,-2850) near the frame right. They become grey masses in the fog, like the reference's far-left and far-right shapes.",
+          "x": -3275,
+          "z": -2650,
+          "size_m": 450,
+          "route": "existing_prefab",
+          "priority": 5
+        }
+      ],
+      "score_form_now": 35,
+      "score_atmos_now": 40
+    },
+    {
+      "ref": "1332",
+      "region": "Lantern Coast headland bay: island A lighthouse plus the 23g/33f village headland, seen westward from above the mainland's south shore",
+      "summary": "New rig, found by grid search and ray-cast. Constraints: A's lamp at the reference position, the village right of the lighthouse at similar depth, sea filling the left and lower center, land in the near right. Camera (-1920,125,-1540), at the shoreline (ground about 1.5 m), yaw -78.6°, pitch -22.4°, fov 50. Island A's lamp (-2353,54,-1656) projects to (900,230); reference is (900,212). Village group 1 lands at px (1250,363), inside the reference village area (1110-1370, 330-430). Reefs 4, 5 and 7 fall in the mid-left sea. The near right is the 33f headland and south mainland shore (ray hits x -2010..-2120, z -1625..-1735). A's existing 28h beam points frame-right, like the reference (right component 0.95). Island D's lighthouse projects near px (1201,250) right above the village, at about 490 m; B and C are at 860-1260 m. Fog at 0.0016 leaves D about 55% hidden, reading as the reference's village tower, and mostly hides B and C. The reference's rock stacks are much closer than the existing reefs; their waterline pixels map to 180-270 m from the camera, which gives the positions below. The shared west outer headland from the 1342 plan lands directly behind A at about 1.45 km, standing in for the reference's hills in the fog. Env is blue-hour fog with a weak cool light from behind the scene (WNW), so cliff faces toward the camera stay dark as in the reference. Village, harbor and lighthouse lamps must be forced on for dusk.",
+      "camera": {
+        "x": -1920,
+        "y_abs": 125,
+        "z": -1540,
+        "tx": -2191.8,
+        "ty_abs": 10.6,
+        "tz": -1594.9,
+        "fov": 50
+      },
+      "env": {
+        "sun_dir": [
+          -0.9,
+          0.12,
+          -0.42
+        ],
+        "sun_color": [
+          0.55,
+          0.62,
+          0.82
+        ],
+        "sun_energy": 0.22,
+        "sky_zenith": [
+          0.24,
+          0.3,
+          0.44
+        ],
+        "sky_horizon": [
+          0.42,
+          0.48,
+          0.62
+        ],
+        "sky_glow": [
+          0.05,
+          0.05,
+          0.07
+        ],
+        "ambient_color": [
+          0.4,
+          0.48,
+          0.66
+        ],
+        "ambient_energy": 0.7,
+        "fog_color": [
+          0.4,
+          0.46,
+          0.6
+        ],
+        "fog_density": 0.0016,
+        "study_fill": [
+          0.4,
+          0.46,
+          0.6
+        ],
+        "study_haze": [
+          0.4,
+          0.46,
+          0.6
+        ],
+        "water_night": 0,
+        "stars": 0
+      },
+      "missing": [
+        {
+          "name": "foreground_sea_stacks",
+          "what": "Six stacks, 12-30 m, from the study reef_spire and reef_ridge GLBs at scale 0.5-1.1, 180-270 m from the camera. Positions: (-2124,-1479), (-2110,-1526), (-2149,-1506), (-2158,-1572), (-2066,-1595), (-2087,-1620). These are the reference's rocks in the lower-center sea with foam rings. All positions were checked as open water.",
+          "x": -2115,
+          "z": -1550,
+          "size_m": 200,
+          "route": "existing_prefab",
+          "priority": 1
+        },
+        {
+          "name": "near_right_sea_cliff",
+          "what": "Two or three cliff prefabs (cliff_western_slab, cliff_shadow_buttress, cliff_central_wall; 48-62 m) along the mainland shore from (-2020,-1620) to (-2120,-1735), faces turned SW toward the camera, tops at 45-60 m, with about 15 pines on the ledges. This is the reference's tall near-right cliff with pine-topped plateaus. The spot is behind the 1342 camera and fits the near dark hill in 1125 and the rocky right coast in 1341.",
+          "x": -2070,
+          "z": -1675,
+          "size_m": 160,
+          "route": "existing_prefab",
+          "priority": 2
+        },
+        {
+          "name": "dusk_lamp_mode",
+          "what": "In the dusk preset, turn on village window glass emission, the 22g/23g harbor lanterns and island A's lamp, halo and beam (currently enabled only when night=true). Add warm point reflections on the water. These are the reference's warm windows and beam in the blue fog.",
+          "x": -2250,
+          "z": -1750,
+          "size_m": 300,
+          "route": "godot_effect",
+          "priority": 3
+        },
+        {
+          "name": "fog_layers_and_near_clouds",
+          "what": "Low stratus deck at 40-90 m between the camera and the far shore, and fog pooling at the base of island A and the headland toe. Add foreground cloud puffs at the frame left: cloud_low near (-2160,105,-1445) and a sea-level fog bank near (-2080,10,-1460), matching the reference's clouds at the bottom-left and top-left.",
+          "x": -2200,
+          "z": -1600,
+          "size_m": 700,
+          "route": "godot_effect",
+          "priority": 4
+        },
+        {
+          "name": "west_outer_headland_shared",
+          "what": "Same item as 1342 priority 1. A dark rock headland about 200 m tall at (-3350,-1800), which lands directly behind island A as the reference's faint hills in the fog.",
+          "x": -3350,
+          "z": -1800,
+          "size_m": 600,
+          "route": "existing_prefab",
+          "priority": 5
+        }
+      ],
+      "score_form_now": 45,
+      "score_atmos_now": 40
+    },
+    {
+      "ref": "1342",
+      "region": "Lantern Coast lighthouse channel at night: islands A-D, 23g/33f village headland, 22g harbor along the NE shore",
+      "summary": "I kept the existing 21c-34e rig exactly: pos (-2278,60,-1632), rotation (-0.005092,0.606833,0), fov 70. The look_at below is that rotation's forward ray at 1000 m. The ray-cast reproduces the 34e night-reference layout: A lighthouse lamp at px (321,535), D near (920,546), B center-far (820,480), mainland village on the right. The env is the existing 27f/34e night preset as-is: moon direction (-0.184,0.38,-0.907) as the key light, color (0.5,0.63,1.0), energy 0.85, ambient (0.36,0.46,0.70) at 1.0, fog (0.045,0.09,0.20) at 0.00038, sky from the open_sky night branch, study_fill (0.22,0.32,0.60), study_haze (0.018,0.045,0.13), moonlit water and stars on. The 34e render used the pre-36b terrain. In World38, the 36b high-coast ridge and the NW mountains now project to the right horizon (ridge at px ~1366,366), which supplies the reference's right-side mountain silhouettes. Remaining form gaps: 1) the reference's big dark mountain at the far left; a sea-plane solve puts its waterline at about 1.1 km, around (-3350,-1800), and its summit at about 200 m. 2) Sail boats in the channel. 3) A dense string of lights on the far shore past the last pier. Atmosphere is near 60. The main mismatch is that the mainland grass reads bright green where the reference land is navy; a moon-glitter column is secondary.",
+      "camera": {
+        "x": -2278,
+        "y_abs": 60,
+        "z": -1632,
+        "tx": -2848.26,
+        "ty_abs": 54.91,
+        "tz": -2453.45,
+        "fov": 70
+      },
+      "env": {
+        "sun_dir": [
+          -0.184,
+          0.38,
+          -0.907
+        ],
+        "sun_color": [
+          0.5,
+          0.63,
+          1
+        ],
+        "sun_energy": 0.85,
+        "sky_zenith": [
+          0.009,
+          0.028,
+          0.085
+        ],
+        "sky_horizon": [
+          0.065,
+          0.14,
+          0.3
+        ],
+        "sky_glow": [
+          0.1,
+          0.16,
+          0.32
+        ],
+        "ambient_color": [
+          0.36,
+          0.46,
+          0.7
+        ],
+        "ambient_energy": 1,
+        "fog_color": [
+          0.045,
+          0.09,
+          0.2
+        ],
+        "fog_density": 0.00038,
+        "study_fill": [
+          0.22,
+          0.32,
+          0.6
+        ],
+        "study_haze": [
+          0.018,
+          0.045,
+          0.13
+        ],
+        "water_night": 1,
+        "stars": 1
+      },
+      "missing": [
+        {
+          "name": "west_outer_headland",
+          "what": "Dark rock headland, about 200 m tall and 600 m wide, at about 1.1 km west of the camera. It fills the reference's big dark left mountain (px 0-200, y 360-520), with moonlit upper faces. Use massif_west_spur at scale (1.0,1.35,1.0) with a darker rock tint. It is also the background hills behind A in 1332, out of frame for 1125 and 1341, and fogged out at the 1126 left edge.",
+          "x": -3350,
+          "z": -1800,
+          "size_m": 600,
+          "route": "existing_prefab",
+          "priority": 1
+        },
+        {
+          "name": "channel_sailboats",
+          "what": "Five small boats, 8-12 m, each with a lit lantern, at (-2437,-2150), (-2560,-2600), (-2660,-3120), (-2290,-1745) and (-2280,-1795). All positions are water, taken from the reference boat pixels. Reuse the 22g harbor moored_fishing_boat asset; a mast and sail variant can come later.",
+          "x": -2450,
+          "z": -2300,
+          "size_m": 1400,
+          "route": "existing_prefab",
+          "priority": 2
+        },
+        {
+          "name": "far_shore_light_chain",
+          "what": "Continue harbor houses and about 30 warm harbor lanterns up the coast from the last pier (-2667,-2666) to the estuary around (-2950,-3250). The far right shore then reads as the reference's dense string of lights under the dark ridge.",
+          "x": -2800,
+          "z": -2950,
+          "size_m": 650,
+          "route": "existing_prefab",
+          "priority": 3
+        },
+        {
+          "name": "night_land_tone",
+          "what": "Night material pass: the mainland and island grass reads bright green in the 34e render, while the reference land is dark navy with warm points. Under study_night, blue-shift and darken the grass and cliff fill to about [0.15,0.20,0.40] on land only, keeping sky, water and lamps unchanged.",
+          "x": -2300,
+          "z": -2000,
+          "size_m": 1500,
+          "route": "godot_effect",
+          "priority": 4
+        },
+        {
+          "name": "moon_glitter_column",
+          "what": "Tighten the 34e moon reflection into a narrow bright vertical column below the moon (reference px x≈1150-1200, y 470-800), instead of the current broad scattered patches.",
+          "x": -2700,
+          "z": -2400,
+          "size_m": 1200,
+          "route": "godot_effect",
+          "priority": 5
+        }
+      ],
+      "score_form_now": 55,
+      "score_atmos_now": 58
+    },
+    {
+      "ref": "1343",
+      "region": "Central river plain & Crownreach castle (opening view, reused camera)",
+      "summary": "I reused the opening camera unchanged. Checked with projection and ray-march previews against an 8 m heightfield built from all World38 terrain GLBs, massifs and cliffs, and against the existing rig render captures/opening_study_38/rig_test/ref_1343.png. The layout already matches: sea and estuary mouth at bottom-left, castle at about px 916/645 (ref town 830-990/600-650), Frost massifs at px 1060-1400 (ref 1000-1450), grey rocky hill at bottom-right, mesa at left, clouds in similar spots. What is missing: the ref's dense walled town (only 12 cottages stand near the castle today), pointed grey rock hills scattered on the plain, and a network of mid-distance lakes and islands at mid-left (ref px 0-700, py 440-530; that area is plain green in our world). The two tall far-left green hills sit beyond the terrain tiles and read taller than in the ref. The Crownreach Lagoon proposed for 1218 lies exactly in 1343's mid-left distance; I simulated it in the preview and it adds the ref-like water network while leaving the foreground coast, mesa and castle land intact (lagoon south shore stays at z<=-860).",
+      "camera": {
+        "x": 0,
+        "z": 250,
+        "tx": 0,
+        "tz": -750,
+        "fov": 50,
+        "y_abs": 145,
+        "ty_abs": 83.837
+      },
+      "env": {
+        "sun_dir": [
+          -0.48,
+          0.82,
+          0.3
+        ],
+        "sun_color": [
+          1,
+          0.97,
+          0.9
+        ],
+        "sun_energy": 0.85,
+        "sky_zenith": [
+          0.45,
+          0.64,
+          0.84
+        ],
+        "sky_horizon": [
+          0.82,
+          0.9,
+          0.94
+        ],
+        "sky_glow": [
+          0.12,
+          0.11,
+          0.07
+        ],
+        "ambient_color": [
+          0.84,
+          0.91,
+          1
+        ],
+        "ambient_energy": 0.6,
+        "fog_color": [
+          0.77,
+          0.85,
+          0.9
+        ],
+        "fog_density": 0.0003,
+        "study_fill": [
+          1,
+          1,
+          1
+        ],
+        "study_haze": [
+          0.72,
+          0.8,
+          0.86
+        ],
+        "water_night": 0,
+        "stars": 0
+      },
+      "missing": [
+        {
+          "name": "Crownreach castle town",
+          "what": "About 25 cottages plus a low curtain wall and 2-3 lanes packed around castle37c, so it reads as the ref's walled town (ref px 820-990, py 595-660). Today only 12 cottages stand in small rows at z -254..-102.",
+          "route": "existing_prefab",
+          "x": 60,
+          "z": -300,
+          "size_m": 220,
+          "priority": 1
+        },
+        {
+          "name": "Pointed rock hills on the plain",
+          "what": "3 grey faceted rock peaks, 40-80 m tall, standing on the grass plain (ref px 430/585, 1520/545, 530/655). Instance cliff_crown or cliff_front_columns scaled 0.6-0.9 at (-291,-467), (729,-818) and a small shoreline outcrop at (-170,-304). The flat-topped mesa at (-430,-400) should read more peaked.",
+          "route": "existing_prefab",
+          "x": -291,
+          "z": -467,
+          "size_m": 120,
+          "priority": 2
+        },
+        {
+          "name": "Mid-distance lake-land (shared Crownreach Lagoon)",
+          "what": "The flooded lagoon with plateau islands NW of the castle (see 1218, item 1) supplies the ref's mid-left water and islands network at 1.2-2.5 km. Keep its south shore at z<=-860 so the 1343 foreground land band and mesa stay.",
+          "route": "blender_hub",
+          "x": -800,
+          "z": -1400,
+          "size_m": 1700,
+          "priority": 3
+        },
+        {
+          "name": "Plain hamlets and groves",
+          "what": "3 small hamlets of 4-6 cottages plus oak/poplar groves along the existing trails, breaking up the uniform green plain as in the ref: (2,-151), (350,-600), (-350,-750).",
+          "route": "existing_prefab",
+          "x": 0,
+          "z": -450,
+          "size_m": 800,
+          "priority": 4
+        },
+        {
+          "name": "Right-bank lake widening",
+          "what": "Widen the river/lake east of the castle into a broad lake about 400x250 m (ref px 1250-1672, py 505-560 maps to about (460..740, -1016..-660)).",
+          "route": "blender_hub",
+          "x": 600,
+          "z": -800,
+          "size_m": 400,
+          "priority": 5
+        },
+        {
+          "name": "Horizon haze band",
+          "what": "Distance or height haze ramp so the far plain and the two over-tall far-left green hills (beyond the terrain tiles, about 8 km NNW) fade into the ref's pale blue-white horizon.",
+          "route": "godot_effect",
+          "x": -2200,
+          "z": -6900,
+          "size_m": 3000,
+          "priority": 6
+        }
+      ],
+      "score_form_now": 58,
+      "score_atmos_now": 62
+    },
+    {
+      "ref": "1135",
+      "region": "Hearthwind Port airship deck (south harbor, existing dock_57151, deck y 33.6, 28x19 m)",
+      "summary": "Close-up of the existing Hearthwind airship deck (dock prefab at (120,33.6,480), deck local y 0, posts down to the ground at about 15.6). The docked Airship prefab is placed as try_dock() would place it, at (120, pad_y+5 = 38.6, 480) with rotation.y -10 deg (nose to frame-left and slightly away). The camera sits 26 m south of the ship and 5.4 m above deck, looking N-NW (bearing -8, pitch +2), so the 28 m deck spans the full frame width. Projection check: the ship spans py 168-697 with the envelope centre at py about 328 (ref envelope 210-540, gondola to 700). Deck W and E ends land at px 332 and 1422, and the south edge at py 838, so the deck fills the bottom as in the ref. The Frost massifs appear at the right, px 1060-1525, py 374-485, 2.1-3.2 km away, matching the ref's right-side mountains. The castle is hidden behind the ship, the estuary and lake sit on the right-center horizon, and the lagoon from 1218 would show as distant water/islands at left-center (px 136-800). Sun is behind-left of the camera (bearing -130, elevation 50), which lights the envelope's front and nose as in the ref. The existing lighthouse (162,16,410) shows at right (px 1420) about where the ref's lantern gantry is. The rig currently hides the airship; it must be shown for this view. The ref's repair-menu UI is skipped.",
+      "camera": {
+        "x": 123.62,
+        "z": 505.75,
+        "tx": -15.5,
+        "tz": -483.9,
+        "fov": 50,
+        "y_abs": 39,
+        "ty_abs": 73.9
+      },
+      "env": {
+        "sun_dir": [
+          -0.492,
+          0.766,
+          0.413
+        ],
+        "sun_color": [
+          1,
+          0.95,
+          0.86
+        ],
+        "sun_energy": 1.05,
+        "sky_zenith": [
+          0.43,
+          0.64,
+          0.87
+        ],
+        "sky_horizon": [
+          0.8,
+          0.88,
+          0.94
+        ],
+        "sky_glow": [
+          0.12,
+          0.11,
+          0.07
+        ],
+        "ambient_color": [
+          0.82,
+          0.87,
+          0.95
+        ],
+        "ambient_energy": 0.62,
+        "fog_color": [
+          0.74,
+          0.83,
+          0.9
+        ],
+        "fog_density": 0.00032,
+        "study_fill": [
+          1.02,
+          1,
+          0.96
+        ],
+        "study_haze": [
+          0.68,
+          0.77,
+          0.86
+        ],
+        "water_night": 0,
+        "stars": 0
+      },
+      "missing": [
+        {
+          "name": "Docked airship pose",
+          "what": "Show the player Airship prefab (the rig currently hides it) docked on the Hearthwind deck at (120, 38.6, 480), rotation.y -10 deg, gondola resting 0.5 m above the planks. This is the hero object of the frame.",
+          "route": "existing_prefab",
+          "x": 120,
+          "z": 480,
+          "size_m": 14,
+          "priority": 1
+        },
+        {
+          "name": "Repair shed with red canvas awning",
+          "what": "Timber workshop at the deck's west end: 4 posts, plank roof, slanted red canvas awning, workbench with tools and vise, barrels and rope coils. Footprint 8x6 m, 7 m tall, at about (107,33.6,484), opening toward the S/SE camera (ref px 170-440, py 480-720).",
+          "route": "blender_hub",
+          "x": 107,
+          "z": 484,
+          "size_m": 8,
+          "priority": 2
+        },
+        {
+          "name": "Gantry hoist and hanging lanterns",
+          "what": "2-post timber gantry (about 9 m) with crossbeam, chain and 2 hanging iron lanterns with warm emissive glass at the deck's east end (133,33.6,487), plus 2 lantern posts on the south edge (ref px 1400-1500, py 560-760).",
+          "route": "blender_hub",
+          "x": 133,
+          "z": 487,
+          "size_m": 9,
+          "priority": 3
+        },
+        {
+          "name": "Cargo stacks",
+          "what": "6 crate prefabs stacked 1-2 high plus the barrels and rope coils from the shed kit, on the deck at (126..133, 33.6, 474..485), projecting near px 1200-1400, py 640-730 as in the ref. Existing crate_57172 sits on the ground at y 16 and is not visible.",
+          "route": "existing_prefab",
+          "x": 129,
+          "z": 480,
+          "size_m": 6,
+          "priority": 4
+        },
+        {
+          "name": "Deck railings and under-deck scaffold",
+          "what": "Plank railings on the N/E/W deck edges, and a lower walkway/scaffold about 4.5 m below the south edge (y about 29, z 489-494, x 100-140). It fills the frame bottom (py 880-941) where the ref shows lower platforms instead of the village ground.",
+          "route": "blender_hub",
+          "x": 120,
+          "z": 491,
+          "size_m": 30,
+          "priority": 5
+        },
+        {
+          "name": "Sky cumulus and background water",
+          "what": "2-3 low-poly cumulus (cloud_primary/cloud_middle, scale 2-3) at about (-236,420,-343), (866,380,-1237), (-1390,300,-1573) to match the ref's sky puffs. The shared Crownreach Lagoon (1218, item 1) supplies the distant sea and islands at left-center.",
+          "route": "existing_prefab",
+          "x": -236,
+          "z": -343,
+          "size_m": 200,
+          "priority": 6
+        }
+      ],
+      "score_form_now": 22,
+      "score_atmos_now": 50
+    },
+    {
+      "ref": "1217",
+      "region": "New 'Windmill Bluff' SE of Hearthwind, looking WNW over the harbor town to the sunset sea (castle to the right)",
+      "summary": "Golden-hour view from a high bluff 1 km ESE of Hearthwind, facing bearing -63 (WNW) with pitch -4, so the sea horizon falls at py about 400 as in the ref. Projection check at y_abs 250: Hearthwind town/dock at px 1054/619, 1.06 km away (ref town about 1100/640). Castle at px 1434, 1.47 km (ref 1385). Low sun at bearing -46.5, elevation 6, lands at px about 1134/289 (ref 1185/290) over open sea, 8 deg left of where the NW coastline meets the horizon, so the glitter path sits on water. The two existing round islands (-2850,-120) and (-1950,1270) appear left and center as the ref's big and far islands. The ref's elevated vantage needs a new bluff: the whole region is 15-95 m plain and hearth sits 400 m inland behind a 50-57 m coastal ridge. I computed hilltop props at y 214 by ray-plane picking from the ref pixels: windmill (894,214,1050), cottage (884,214,1062), fence along x about 878 over z 1040-1130, lamp (878,214,1124). The bluff footprint x 780-1110, z 860-1260 clears the flight rings 57358 (890,105,760), 57359 (1170,107,815), 57361 (1260,118,1250), the Amberfield cottages (x>=1138) and all roads. It is not visible from the 1343, 1135 or 1218 cameras. I deviate from WORLD_SCENE_PLAN's Amberfield idea because the existing mills there stand on flat ground (y about 27) with no view over the harbor.",
+      "camera": {
+        "x": 950,
+        "z": 1160,
+        "tx": 61.2,
+        "tz": 707.1,
+        "fov": 50,
+        "y_abs": 250,
+        "ty_abs": 180.2
+      },
+      "env": {
+        "sun_dir": [
+          -0.721,
+          0.105,
+          -0.685
+        ],
+        "sun_color": [
+          1,
+          0.7,
+          0.4
+        ],
+        "sun_energy": 1.25,
+        "sky_zenith": [
+          0.42,
+          0.55,
+          0.78
+        ],
+        "sky_horizon": [
+          0.98,
+          0.82,
+          0.6
+        ],
+        "sky_glow": [
+          0.75,
+          0.5,
+          0.18
+        ],
+        "ambient_color": [
+          0.6,
+          0.55,
+          0.7
+        ],
+        "ambient_energy": 0.5,
+        "fog_color": [
+          0.9,
+          0.74,
+          0.58
+        ],
+        "fog_density": 0.00045,
+        "study_fill": [
+          1.05,
+          0.8,
+          0.6
+        ],
+        "study_haze": [
+          0.86,
+          0.72,
+          0.66
+        ],
+        "water_night": 0,
+        "stars": 0
+      },
+      "missing": [
+        {
+          "name": "Windmill Bluff landform",
+          "what": "New steep bluff with a flat grassy top at y about 214, spanning x 880-1060 and z 950-1130. Dark faceted rock cliff on the W face (x 800-880) and SW/S faces (ref bottom-right dark rock), grassy E/N slopes, footprint x 780-1110 and z 860-1260 on the 20 m plain. Keep at least 40 m clearance from the Amberfield cottages and flight rings 57358, 57359 and 57361.",
+          "route": "blender_hub",
+          "x": 970,
+          "z": 1060,
+          "size_m": 330,
+          "priority": 1
+        },
+        {
+          "name": "Bluff-top windmill farm",
+          "what": "mill + mill_rotor (scale about 1.2, cap facing the camera) at (894,214,1050); cottage at (884,214,1062) in front-left; 5-6 pines at (866..875, 214, 1045..1060) and (892,214,1028); 2 crates. The ref's timber rail fence along the cliff edge (x about 878, z 1040-1130) and an iron lamp post with a warm lit lamp at (878,214,1124) come as a small hub kit.",
+          "route": "existing_prefab",
+          "x": 890,
+          "z": 1060,
+          "size_m": 60,
+          "priority": 2
+        },
+        {
+          "name": "Golden cloudscape",
+          "what": "Large sunlit cumulus: cloud_primary/cloud_middle at scale 3-4 at (-960,700,1250), (-1130,750,310), (-160,800,-590), plus thin stratus bands near the horizon. Low cloud banks below the hilltop: cloud_low at scale 1.5-2 at (677,140,1050), (623,140,1075), (731,160,800), (737,170,700), matching the ref's puffs at px 600-900/py 720-800 and px 1300-1672/py 550-720.",
+          "route": "existing_prefab",
+          "x": -600,
+          "z": 600,
+          "size_m": 250,
+          "priority": 3
+        },
+        {
+          "name": "Hearthwind Bay inlet and big island",
+          "what": "Carve a sea inlet from the straight coast (x about -350) east to the town's west edge (x about -110..-60), z 380-900, so Hearthwind reads as a waterfront harbor. Keep cottages (-85,446) and (-32,430) on the shore. Add a green island about 150 m in radius and 45 m high with rocky skirts at (-264,784) (ref big island, px 600/590). Lower the 50-57 m coastal ridge at (-200..-100, 400..600) that now hides the water.",
+          "route": "blender_hub",
+          "x": -220,
+          "z": 640,
+          "size_m": 600,
+          "priority": 4
+        },
+        {
+          "name": "Lighthouse islet, pier and sailboat",
+          "what": "Rock islet about 25 m in radius with a lighthouse prefab at (-90,8,470) (ref px 910/575). Timber pier about 60 m from the town edge at (20,0,560) into the bay with one moored sailboat (ref px 820-900/620-640).",
+          "route": "existing_prefab",
+          "x": -40,
+          "z": 520,
+          "size_m": 80,
+          "priority": 5
+        },
+        {
+          "name": "Sun glare and sea glitter",
+          "what": "Sun disc bloom with soft god rays at bearing -46.5, elevation 6, plus a bright specular glitter path on the sea toward the sun, and warm rim light on cloud edges.",
+          "route": "godot_effect",
+          "x": -3000,
+          "z": -2600,
+          "size_m": 4000,
+          "priority": 6
+        }
+      ],
+      "score_form_now": 22,
+      "score_atmos_now": 35
+    },
+    {
+      "ref": "1218",
+      "region": "New 'Crownreach Lagoon' archipelago: flooded plain NW of the castle, between the estuary and the Frost massifs",
+      "summary": "Bright-day aerial view from 300 m over the estuary-mouth sea at (-650,-350), facing bearing +8 with pitch -4.5. I rejected the WORLD_SCENE_PLAN southern-harbor option: from the south sea the 460 m Frost massifs sit 5.5 km away and rise only about 20 px above the horizon, against about 120 px in the ref. From here frost_crown projects to px 1388/333 (ref main peak 1340/280), with the snowy range filling px 1250-1672 as in the ref and the valley between the massifs at center-right. The foreground today is flat plain (x -1700..40, z -2000..-860). The main build is to flood it into a lagoon with flat-topped cliff islands. I simulated that in the preview and it matches the ref: village island V (-700,-1140) projects to px 634/750 (ref village about 620/740), jetty-head lighthouse (-552,-1029) to 840/820 (ref 840/790), and waterfalls at (-873,-1996), (-77,-1579), (-270,-975) to px 555/542, 1141/569, 1259/779 (ref 555/555, 1140/600, 1270/800). Conflict checks: the lagoon sits outside the 1342 lantern-island and 23g headland area (x<=-2180) and south of the 36b highcoast edit domain (z<-2150). Keep the land strip north of z -1450 on the old coastline, and keep Lantern port (-1120,-1910) on land with the lagoon north shore at z>=-1820. No roads or flight rings cross it; the vegetation scatter inside must be removed. It adds the ref-like mid-distance lakes to the 1343 view without touching 1343's foreground. The left horizon shows distant highcoast land rather than open sea, which I accept for 60 points.",
+      "camera": {
+        "x": -650,
+        "z": -350,
+        "tx": -511.3,
+        "tz": -1337.2,
+        "fov": 50,
+        "y_abs": 300,
+        "ty_abs": 221.5
+      },
+      "env": {
+        "sun_dir": [
+          -0.52,
+          0.819,
+          0.242
+        ],
+        "sun_color": [
+          1,
+          0.97,
+          0.9
+        ],
+        "sun_energy": 1.15,
+        "sky_zenith": [
+          0.2,
+          0.52,
+          0.88
+        ],
+        "sky_horizon": [
+          0.68,
+          0.84,
+          0.96
+        ],
+        "sky_glow": [
+          0.1,
+          0.1,
+          0.06
+        ],
+        "ambient_color": [
+          0.78,
+          0.87,
+          1
+        ],
+        "ambient_energy": 0.65,
+        "fog_color": [
+          0.72,
+          0.84,
+          0.96
+        ],
+        "fog_density": 0.00012,
+        "study_fill": [
+          1.1,
+          1.08,
+          1
+        ],
+        "study_haze": [
+          0.6,
+          0.74,
+          0.9
+        ],
+        "water_night": 0,
+        "stars": 0
+      },
+      "missing": [
+        {
+          "name": "Crownreach Lagoon flood and plateau islands",
+          "what": "Terrain edit that floods the plain inside the polygon (-1560,-1100), (-1100,-880), (-600,-870), (-250,-860), (-60,-960), (40,-1250), (-20,-1600), (-150,-1930), (-600,-2000), (-950,-1820), (-1300,-1780), (-1700,-1480), (-1720,-1420) to about -6 m. Leave 8-10 flat-topped green plateau islands with near-vertical tan/grey cliff skirts of 15-60 m and sandy coves: village V (-700,-1140) r110 h18; P1 (-1050,-1480) r220 h60; P2 (-390,-1620) r150 h45; P4 (-270,-980) r90 h35; barrier islands B1 (-1500,-1250) r150 and B2 (-1640,-1520) r120; islets at (-850,-1260), (-200,-1330), (-760,-1760). Open the lagoon to the sea on the old coastline only between z -1100 and -1450. Link it to the estuary channel near (0,-900). Give the north shore (z about -2000) and east shore (x about 40, foothills) cliffed plateau edges.",
+          "route": "blender_hub",
+          "x": -800,
+          "z": -1400,
+          "size_m": 1700,
+          "priority": 1
+        },
+        {
+          "name": "Island village and lighthouse jetty",
+          "what": "6-8 cottages on island V around (-700,18,-1140) with a small sand beach on its SE. A timber jetty about 130 m long from (-640,0,-1100) to (-552,0,-1029), which can be built from 4-5 dock prefabs scaled 0.35 or taken from the hub dock kit, with a lighthouse prefab at its head (-550,~2,-1027).",
+          "route": "existing_prefab",
+          "x": -640,
+          "z": -1090,
+          "size_m": 180,
+          "priority": 2
+        },
+        {
+          "name": "Pine forests on plateaus",
+          "what": "Dense pine clusters (300-500 pine instances, scattered oaks) on P1, P2, the north-shore plateau around (-870,-2000) and the east-shore foothill plateau around (40,-1200). The ref's islands read as dark-green forest tops.",
+          "route": "existing_prefab",
+          "x": -600,
+          "z": -1600,
+          "size_m": 1500,
+          "priority": 3
+        },
+        {
+          "name": "Three waterfalls",
+          "what": "Waterfalls from plateau lips into the lagoon, each a scrolling white water sheet with a mist/foam particle pool: north-shore cliff (-873,~60,-1996) with a 50 m drop, foothill edge (-77,~70,-1579) with a 60 m drop, island P4 east face (-270,35,-975) with a 30 m drop.",
+          "route": "godot_effect",
+          "x": -400,
+          "z": -1500,
+          "size_m": 60,
+          "priority": 4
+        },
+        {
+          "name": "Turquoise shallows and surf foam",
+          "what": "Water material tint by depth, going from deep blue to turquoise over shallows near islands and beaches, with a white foam ring on lagoon and coast shorelines as in the ref's bright water.",
+          "route": "godot_effect",
+          "x": -800,
+          "z": -1400,
+          "size_m": 1700,
+          "priority": 5
+        },
+        {
+          "name": "Near-camera clouds and contrails",
+          "what": "White low-poly puffs at the lower corners: cloud_edge/cloud_low at scale about 0.5 at (-730,230,-516) and (-528,230,-480). Cumulus cloud_primary at (-840,700,-1921) and (1335,650,-2463). Add 2-3 thin contrail streaks high in the sky.",
+          "route": "existing_prefab",
+          "x": -630,
+          "z": -500,
+          "size_m": 150,
+          "priority": 6
+        }
+      ],
+      "score_form_now": 25,
+      "score_atmos_now": 45
+    },
+    {
+      "ref": "1216",
+      "region": "West storm sea, high altitude, night (above the same storm system as 1125/1341; storm35 mask x<-2350)",
+      "summary": "Night chase-cam at 1320 m ASL over open sea at (-3050,-2700), looking NNW (heading -28.7 deg, pitch -4.8 deg, fov 50). y is absolute (y_abs/ty_abs) because the camera is over sea. The moon uses the same azimuth as the 1342 moon (-0.184,*,-0.907) but a lower 13 deg elevation; it projects to px (1157,135), and the ref has it at (1157,148). The shot has two cloud levels. The upper level is a moonlit cloud-sea deck with tops at 1080-1180 m, starting about 1.3 km ahead and running to the horizon. Its pixel rows y 470-560 hit y=1120 at 1.3-2.6 km. The lower level is a dark storm under-deck at 450-850 m, with bolts 1.9-2.5 km out. Their ground points were solved from the ref's bolt pixels (330..1490, 770..870). The existing world flash centre (-3890,230,-5600) projects to (1055,750) and can be reused. The airship prop sits 31 m left-front. Its envelope spans px 259-667 against the ref's ~300-710. It is taller than the ref ship because of the game model's proportions. Today the view would show only moonlit ocean 1.3 km below plus a few 500-600 m clouds (e.g. cloud_57346). There is no airship (the player ship is hidden), no deck and no lightning. The upper deck must be gated to the storm-night weather state; otherwise it would roof the clear-night 1342 view, whose camera is 1.3 km away.",
+      "camera": {
+        "x": -3050,
+        "z": -2700,
+        "y_abs": 1320,
+        "tx": -4007.1,
+        "tz": -4448.1,
+        "ty_abs": 1152.6,
+        "fov": 50
+      },
+      "env": {
+        "sun_dir": [
+          -0.1937,
+          0.225,
+          -0.9549
+        ],
+        "sun_color": [
+          0.62,
+          0.72,
+          1
+        ],
+        "sun_energy": 0.5,
+        "sky_zenith": [
+          0.015,
+          0.04,
+          0.13
+        ],
+        "sky_horizon": [
+          0.2,
+          0.3,
+          0.55
+        ],
+        "sky_glow": [
+          0.45,
+          0.55,
+          0.85
+        ],
+        "ambient_color": [
+          0.22,
+          0.3,
+          0.52
+        ],
+        "ambient_energy": 0.45,
+        "fog_color": [
+          0.2,
+          0.28,
+          0.48
+        ],
+        "fog_density": 0.00015,
+        "study_fill": [
+          0.1,
+          0.13,
+          0.22
+        ],
+        "study_haze": [
+          0.25,
+          0.34,
+          0.56
+        ],
+        "water_night": 1,
+        "stars": 1
+      },
+      "missing": [
+        {
+          "name": "upper_cloud_sea_deck",
+          "what": "Moonlit low-poly cloud-sea deck: tileable ~1.5 km lumpy tiles in 3-4 variants, tops 1080-1180 m, blue-white moonlit tops and violet shadows. The near edge breaks into 300-650 m cumulus heads starting ~1.3 km NNW of the camera: bright head apex (-3715,1171,-4373), right heads (-3102,1128,-4599) and (-2664,1147,-5271), left band (-5618,1181,-4251), near-left dark head (-4033,1107,-3194). Gate it to the storm-night state. The same tile set is reused for the Eastern Cloud Basin (1274/1278/1275).",
+          "x": -4800,
+          "z": -6500,
+          "size_m": 9000,
+          "route": "blender_hub",
+          "priority": 1
+        },
+        {
+          "name": "storm_underdeck",
+          "what": "Dark thunderstorm masses at 450-850 m, seen below the gaps 1.5-2.5 km ahead. Reuse the 35b storm_front_shelf and storm_rain_scud GLBs (scale 0.6-0.8) at (-4100,*,-3900), (-3100,*,-4300) and (-4700,*,-4300), plus the existing cloud_57346. Use a dark slate/violet material with flash emission.",
+          "x": -4000,
+          "z": -4100,
+          "size_m": 2500,
+          "route": "existing_prefab",
+          "priority": 2
+        },
+        {
+          "name": "lightning_bolts",
+          "what": "5-6 purple-white branching bolts spanning y ~760 down to ~150, using the 35a bolt generator plus OmniLight flashes (range ~900 m, staggered pulses). Bolt sites: (-4975,-3996), (-4567,-4005), (-4221,-4598), (-3703,-4580), (-2857,-4804), and the existing flash centre (-3890,-5600). Flashes up-light the cloud bottoms.",
+          "x": -4000,
+          "z": -4500,
+          "size_m": 2500,
+          "route": "godot_effect",
+          "priority": 3
+        },
+        {
+          "name": "airship_prop",
+          "what": "Visual-only copy of scenes/prefabs/Airship.tscn (not the player body) at (-3073.5,1318.7,-2720.2). Godot yaw -171 deg puts the bow (local -X) toward screen right. It is 31 m from the camera and ~5 m below eye level, so the deck reads. Red pennant and warm running lanterns on.",
+          "x": -3073.5,
+          "z": -2720.2,
+          "size_m": 15,
+          "route": "existing_prefab",
+          "priority": 4
+        },
+        {
+          "name": "moon_and_stars",
+          "what": "Reuse the 21b Blender moon sphere at (-5374,4020,-14159) with radius ~530 m (a ~5 deg disc as in the ref), plus a soft halo. Enable the star field.",
+          "x": -5374,
+          "z": -14159,
+          "size_m": 1060,
+          "route": "existing_prefab",
+          "priority": 5
+        },
+        {
+          "name": "high_cirrus_streaks",
+          "what": "Flattened cloud_wisp/cloud_edge instances scaled 6-10x at y 1900-2600, lit moon blue-white: an upper-left band around (-4600,-3900) and thin right-side streaks around (-2300,-6200). Matches the ref's top-left and right sky clouds.",
+          "x": -3500,
+          "z": -5000,
+          "size_m": 3000,
+          "route": "existing_prefab",
+          "priority": 6
+        }
+      ],
+      "score_form_now": 8,
+      "score_atmos_now": 22
+    },
+    {
+      "ref": "1274",
+      "region": "Eastern Cloud Basin: 'Skyreach' hub floating island, timber lodge Cabin A (new Sky Archipelago; the region is currently empty lowland at 15-45 m)",
+      "summary": "Where the cabins live: both cabins are rooms of 'Skyreach Station', a timber lodge on the SE rim of the hub island of a new Sky Archipelago. The hub top is ~527 m at (4400,-4900). The archipelago floats over a regional cloud sea (tops ~240 m) that covers the empty eastern lowland (x 1500-9000, z -1500..-9000). I placed it where projection shows all islands and the hub outside the opening-1343 frustum. They are also outside the 1275 frame or hidden behind its frost-crown cliff. The camera eye is 1.55 m above the cabin floor (y 528) at (4400,529.55,-4900), heading 232.85 deg, pitch -11 deg, fov 60, with y absolute. That heading was solved so the hex window's distant 'mesa' is the existing SE terrain hill (2700,467,1300) at 5 km. It projects to (198,322); the ref mesa is at ~(200,350). The planned east peak E2 also shows in the window at ~(423,358). The frost crown falls on the back wall, so it is hidden. The window islands were placed by casting rays from the ref's window pixels. The window wall's outward normal is heading ~143 deg; the back wall is ~4 m ahead. Today nothing exists at this site: the camera would float ~515 m above flat lowland and see only sky and ground, so both scores are near zero.",
+      "camera": {
+        "x": 4400,
+        "z": -4900,
+        "y_abs": 529.55,
+        "tx": 4392.17,
+        "tz": -4894.08,
+        "ty_abs": 527.64,
+        "fov": 60
+      },
+      "env": {
+        "sun_dir": [
+          -0.579,
+          0.574,
+          0.579
+        ],
+        "sun_color": [
+          1,
+          0.95,
+          0.86
+        ],
+        "sun_energy": 1.15,
+        "sky_zenith": [
+          0.22,
+          0.45,
+          0.85
+        ],
+        "sky_horizon": [
+          0.7,
+          0.82,
+          0.95
+        ],
+        "sky_glow": [
+          1,
+          0.95,
+          0.85
+        ],
+        "ambient_color": [
+          0.6,
+          0.48,
+          0.36
+        ],
+        "ambient_energy": 0.3,
+        "fog_color": [
+          0.78,
+          0.86,
+          0.96
+        ],
+        "fog_density": 0.00022,
+        "study_fill": [
+          1,
+          1,
+          1
+        ],
+        "study_haze": [
+          0.8,
+          0.87,
+          0.97
+        ],
+        "water_night": 0,
+        "stars": 0
+      },
+      "missing": [
+        {
+          "name": "cabin_A_shell",
+          "what": "Timber cabin room built around the camera, ~4.6x4.2x2.7 m, floor y=528. Chunky plank floor, slanted plank walls, heavy ceiling beams and rafters with rope swags. Left wall (outward normal heading ~143 deg, ~1.9 m left of the camera) holds a 2.4x1.7 m hexagonal window with a thick cross-mullion frame and an outside chain. Window centre ~(4398.8,529.5,-4897.0). The back wall is ~4 m ahead.",
+          "x": 4398,
+          "z": -4898,
+          "size_m": 5,
+          "route": "blender_hub",
+          "priority": 1
+        },
+        {
+          "name": "cabin_A_props",
+          "what": "Chunky low-poly prop set matching 1274: bed with drawer base, patchwork quilt, pillow and rolled red blanket; iron-strapped foreground chest; nightstand crate with mug and journal; cast-iron stove with glowing firebox and stovepipe; log bucket; open toolbox with wrenches; pinned treasure map; wall shelf with plant, bottles and books; wrench and towel hooks; rope coil; green patched tarp curtain; rug; potted plants.",
+          "x": 4397,
+          "z": -4898,
+          "size_m": 5,
+          "route": "blender_hub",
+          "priority": 2
+        },
+        {
+          "name": "cabin_A_lighting",
+          "what": "Hanging lantern OmniLight at ~(4398.5,530.6,-4898.4): energy ~2, range 6 m, colour [1,.72,.42]. Flickering stove-fire OmniLight at ~(4397.0,528.2,-4899.3), colour [1,.5,.2]. Cool daylight spill through the window with a faint dust shaft. Set exposure so the exterior reads bright while the interior stays warm.",
+          "x": 4398,
+          "z": -4899,
+          "size_m": 6,
+          "route": "godot_effect",
+          "priority": 3
+        },
+        {
+          "name": "skyreach_hub_island_and_lodge",
+          "what": "Host structure. Hub floating island: grass top at ~527 m, ~130x90 m, rock inverted-cone underside down to ~400 m. On it, a 24x14 m timber lodge perched on the SE rim, so Cabin A's window and Cabin B's porthole both overhang the drop. Add a small sky dock. This is the first piece of a floating-island kit, reused for the other islands.",
+          "x": 4400,
+          "z": -4900,
+          "size_m": 130,
+          "route": "blender_hub",
+          "priority": 4
+        },
+        {
+          "name": "window_view_islands",
+          "what": "Island-kit variants placed by rays from the ref window pixels. I1: village island, top 448, at (4187,-4238), ~140 m, with 3-4 cottage prefabs. I2: tree islet, top 609, at (4147,-3936), ~40 m. I3: 25 m platform, top 532, at (4330,-4756), hung by chains from a ~40 m brown anchor balloon centred ~(4344,575,-4762). I4: island, top 443, at (3911,-3918), ~90 m. I2 and I4 project at the far left edge of 1275 but sit behind its cliff.",
+          "x": 4150,
+          "z": -4300,
+          "size_m": 1000,
+          "route": "blender_hub",
+          "priority": 5
+        },
+        {
+          "name": "eastern_cloud_basin",
+          "what": "Shared cloud-sea deck (same tiles as 1216/1275): sunlit white tops ~240 m with blue shadows, covering x 1500-9000, z -1500..-9000. Gate it to the archipelago-day and blizzard states. It fills the lower half of the window, with the SE hill and peak E2 poking through as the distant mesa.",
+          "x": 4500,
+          "z": -5000,
+          "size_m": 7000,
+          "route": "blender_hub",
+          "priority": 6
+        }
+      ],
+      "score_form_now": 2,
+      "score_atmos_now": 5
+    },
+    {
+      "ref": "1278",
+      "region": "Eastern Cloud Basin: Skyreach lodge Cabin B (NE corner room, 8 m from Cabin A)",
+      "summary": "Second room of the same Skyreach lodge (see 1274), a corner room 8 m NE along the SE facade. Eye height 1.55 m at (4406.3,529.55,-4904.93), heading 25 deg (NNE), pitch -12.3 deg, fov 58, with y absolute. The ref is 3:2 (1536x1024). A 1672x941 render with the same horizontal fov crops ~80 ref-px top and bottom, so ref pixel y maps to (y-80)/864*941. The round porthole is in the right wall (outward normal heading ~115 deg), centre ~(4408.8,529.65,-4907.3). It looks NE (~47 deg) over the cloud basin. The porthole islands were placed by rays from the ref pixels: spire island (1252,185), islands (1089,327) and (1306,338). All of them fall outside the opening-1343 frustum (projection checked) and outside the 1275 frame. The frost crown, SE hill and east hills do not project inside this frame, so the porthole shows only islands and cloud sea, as in the ref. Today nothing exists here, so both scores are near zero.",
+      "camera": {
+        "x": 4406.3,
+        "z": -4904.93,
+        "y_abs": 529.55,
+        "tx": 4410.43,
+        "tz": -4913.78,
+        "ty_abs": 527.42,
+        "fov": 58
+      },
+      "env": {
+        "sun_dir": [
+          -0.663,
+          0.5,
+          0.557
+        ],
+        "sun_color": [
+          1,
+          0.92,
+          0.8
+        ],
+        "sun_energy": 1.1,
+        "sky_zenith": [
+          0.24,
+          0.47,
+          0.86
+        ],
+        "sky_horizon": [
+          0.74,
+          0.84,
+          0.95
+        ],
+        "sky_glow": [
+          1,
+          0.92,
+          0.78
+        ],
+        "ambient_color": [
+          0.62,
+          0.46,
+          0.32
+        ],
+        "ambient_energy": 0.28,
+        "fog_color": [
+          0.8,
+          0.87,
+          0.96
+        ],
+        "fog_density": 0.0002,
+        "study_fill": [
+          1.02,
+          0.97,
+          0.9
+        ],
+        "study_haze": [
+          0.82,
+          0.88,
+          0.96
+        ],
+        "water_night": 0,
+        "stars": 0
+      },
+      "missing": [
+        {
+          "name": "cabin_B_shell",
+          "what": "Corner lodge room, ~5.5x4.5x2.8 m, floor y=528. Heavy curved beams and rafters with rope swags, plank walls and floor. The right wall (outward normal heading ~115 deg) holds a ~1.8 m round porthole with cross mullions and an octagonal hub, centre ~(4408.8,529.65,-4907.3). A curtained bed alcove sits on the back-left wall. Use the same wood language and thickness as Cabin A.",
+          "x": 4408,
+          "z": -4908,
+          "size_m": 6,
+          "route": "blender_hub",
+          "priority": 1
+        },
+        {
+          "name": "cabin_B_props",
+          "what": "Prop set matching 1278: cast-iron stove with fire, stovepipe and kettle; stacked firewood and log bucket; curtained bed with checked quilt and drawer base; iron-strapped chest with mug and books; two wooden armchairs, one with a green blanket; desk with map, brass telescope on a stand, lantern, mug and book stack; crate of scrolls; potted plants; framed floating-island painting; pinned notes; hanging coat and bags; shelves with books and bottles; red rug. Much of this can share meshes with the Cabin A set.",
+          "x": 4407,
+          "z": -4908,
+          "size_m": 6,
+          "route": "blender_hub",
+          "priority": 2
+        },
+        {
+          "name": "cabin_B_lighting",
+          "what": "Stove-fire OmniLight at ~(4405.6,528.4,-4907.9) with flicker, colour [1,.5,.2]. Bed-alcove lantern at ~(4407.0,530.0,-4909.5). Desk lantern at ~(4408.6,529.1,-4906.1). All warm, range 4-6 m. Add cool daylight through the porthole and a warm pool on the rug.",
+          "x": 4407,
+          "z": -4908,
+          "size_m": 6,
+          "route": "godot_effect",
+          "priority": 3
+        },
+        {
+          "name": "porthole_view_islands",
+          "what": "Island-kit variants. I5: spire island ~140 m wide with a tall rock spire and slim tower, apex ~649, at (5322,-5672). I6: ~90 m island, top 493, at (4935,-5504). I7: ~100 m island, top 477, at (5211,-5496). Add small ruins and trees on their tops.",
+          "x": 5150,
+          "z": -5560,
+          "size_m": 700,
+          "route": "blender_hub",
+          "priority": 4
+        },
+        {
+          "name": "skyreach_hub_island_and_lodge",
+          "what": "Shared with 1274: hub island (top ~527 m, ~130x90 m) with the 24x14 m lodge on its SE rim. Cabin B is the NE corner room, so its porthole overhangs the drop.",
+          "x": 4400,
+          "z": -4900,
+          "size_m": 130,
+          "route": "blender_hub",
+          "priority": 5
+        },
+        {
+          "name": "eastern_cloud_basin",
+          "what": "Shared cloud-sea deck with tops ~240 m (see 1274). It must extend beyond x 5400 (the end of the terrain chunks) so the porthole never shows the world edge.",
+          "x": 4500,
+          "z": -5000,
+          "size_m": 7000,
+          "route": "blender_hub",
+          "priority": 6
+        }
+      ],
+      "score_form_now": 2,
+      "score_atmos_now": 5
+    },
+    {
+      "ref": "1275",
+      "region": "Frostpeak summit port: saddle between massif_west_summit and massif_frost_crown (dock_57188 at 1080,286,-2800), looking ESE over the eastern cloud basin",
+      "summary": "Home is the existing summit port. The dock sits on the SW-NE saddle ridge (~288-300 m). The camera is 22 m above the dock deck at (1033,317,-2801), looking ESE (heading 108 deg, pitch -5.5 deg, fov 50), with the frost crown's steep SW flank as the left wall. I checked the layout with a heightmap ray-march preview (terrain GLBs plus mountain-kit massifs). Existing east_summit projects to (369,419). The east hills (4300,*,-2300/-2700) sit at (540-670,375-384) as the receding horizon ridge. The dock projects lower-left, at (544,848) for the existing dock and ~(480-740,640-700) for the planned pier centre. The terrain knob at ~(1080,329,-2691) fills the lower right like the ref's near peak. The right half needs a valley cloud sea (tops ~150) and 4 new massif instances. Their positions and apexes were solved from the ref peak pixels and kept at least 1.6 km out, so all four project outside the opening-1343 frame (px>1800). Use absolute y: the massif surface under the camera is ~277 m but base terrain is only ~179 m, so an agl value would be ambiguous. The sun is 3 deg up at heading 87 deg, so it sits just right of the cliff edge (px ~450), as in the ref. The dock falls in the frost crown's shadow and is lit by lanterns. Today the view would show the slope, a generic dock and 2-3 peaks. The ground would be green lowland instead of cloud sea, with no airship, blizzard, snow or harbor dressing.",
+      "camera": {
+        "x": 1033,
+        "z": -2801,
+        "y_abs": 317,
+        "tx": 1979.7,
+        "tz": -2493.4,
+        "ty_abs": 221.2,
+        "fov": 50
+      },
+      "env": {
+        "sun_dir": [
+          0.9973,
+          0.0523,
+          -0.0523
+        ],
+        "sun_color": [
+          1,
+          0.86,
+          0.7
+        ],
+        "sun_energy": 0.55,
+        "sky_zenith": [
+          0.42,
+          0.5,
+          0.66
+        ],
+        "sky_horizon": [
+          0.86,
+          0.82,
+          0.8
+        ],
+        "sky_glow": [
+          1,
+          0.86,
+          0.66
+        ],
+        "ambient_color": [
+          0.62,
+          0.68,
+          0.8
+        ],
+        "ambient_energy": 0.75,
+        "fog_color": [
+          0.74,
+          0.78,
+          0.86
+        ],
+        "fog_density": 0.0005,
+        "study_fill": [
+          0.72,
+          0.77,
+          0.88
+        ],
+        "study_haze": [
+          0.78,
+          0.82,
+          0.9
+        ],
+        "water_night": 0,
+        "stars": 0
+      },
+      "missing": [
+        {
+          "name": "valley_cloud_sea",
+          "what": "Eastern Cloud Basin deck (same tiles as 1216/1274), set in the blizzard-morning state to tops ~140-160 m. It wraps the massif bases east of Frostpeak and hides the green lowland; the peaks poke through. Coverage x 1200-9000, z -4500..+500, with soft wisps where it meets the slopes.",
+          "x": 3500,
+          "z": -2200,
+          "size_m": 6000,
+          "route": "blender_hub",
+          "priority": 1
+        },
+        {
+          "name": "east_peak_chain",
+          "what": "4 massif prefab instances filling the ref's right half, rotated to avoid repeats. E1: massif_west_summit x0.87 at (2224,-1890), apex ~340, lands at px ~1190. E2: massif_frost_crown x0.78 at (2900,-1839), apex ~360, px ~1000. E3: massif_east_summit x1.07 at (2062,-1575), apex ~320, px ~1470. E4: massif_west_summit x0.97 at (3400,-1300), apex ~380, px ~1100 as back filler. All are outside the opening frustum, and they also give the future southern lake basin an eastern snow wall.",
+          "x": 2600,
+          "z": -1650,
+          "size_m": 2200,
+          "route": "existing_prefab",
+          "priority": 2
+        },
+        {
+          "name": "cliff_harbor",
+          "what": "Summit cliff harbor replacing the generic dock_57188 visuals. A faceted ice/rock buttress (~110 m, snow ledges) set against the frost crown SW flank, with a lantern-lit tunnel portal at ~(1101,295,-2821). A cantilevered timber pier ~30x10 m centred (1098,295,-2805), running toward heading ~190 deg, with trestle struts, railings, stairs down to the lower left, and 6 lamp posts carrying warm OmniLights (range ~8 m).",
+          "x": 1098,
+          "z": -2805,
+          "size_m": 45,
+          "route": "blender_hub",
+          "priority": 3
+        },
+        {
+          "name": "moored_airship",
+          "what": "Visual-only Airship prefab resting in a cradle on the pier at (1104,300,-2803). Godot yaw -108 deg puts the stern and propeller toward screen right and the bow toward the cliff, as in the ref. Red pennant and one warm hull lantern.",
+          "x": 1104,
+          "z": -2803,
+          "size_m": 15,
+          "route": "existing_prefab",
+          "priority": 4
+        },
+        {
+          "name": "blizzard_wall",
+          "what": "Towering blizzard cloud wall filling the upper right. Reuse the 35b storm_rear_anvil and storm_front_shelf at scale ~1.8-2.0 with a white-to-slate snowstorm material. Centre (3900,900,-600), long axis along heading ~37/217 deg. The top reaches ~1800 m (above the frame top) and the base sinks into the cloud sea. It sits ~3.6 km out, behind all the peaks.",
+          "x": 3900,
+          "z": -600,
+          "size_m": 5000,
+          "route": "existing_prefab",
+          "priority": 5
+        },
+        {
+          "name": "wind_snow",
+          "what": "Camera-local wind-driven snow streaks: radius ~150 m, wind from the SE toward the NW at ~25 m/s, streaks running upper right to lower left. Add a large falling-snow veil volume under the wall (x 2500-4500, z -1800..+300) that fades into the cloud sea.",
+          "x": 3000,
+          "z": -1200,
+          "size_m": 3000,
+          "route": "godot_effect",
+          "priority": 6
+        }
+      ],
+      "score_form_now": 25,
+      "score_atmos_now": 22
+    }
+  ],
+  "workflowProgress": [
+    {
+      "type": "workflow_phase",
+      "index": 1,
+      "title": "Plan"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 1,
+      "label": "plan:alpine",
+      "phaseIndex": 1,
+      "phaseTitle": "Plan",
+      "agentId": "ac0a9a0bb03fe6a60",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1790531509680,
+      "queuedAt": 1790531509640,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "Project E:/FeiTing: low-poly airship game world in Godot 4.5.1 (GL Compatibility). All 20 reference images in E:/FeiTing/ref/*.png belong to ONE big 3D world at different places/times/weathers. The producer now wants BREADTH FIRST: every reference scene first reaches ~60/100 in form (landforms/assets/composition) and atmosphere (time of day, weather, light), and only later gets refined. Previous r…",
+      "promptFramed": true,
+      "lastProgressAt": 1790533410769,
+      "tokens": 320639,
+      "toolCalls": 97,
+      "durationMs": 1901081,
+      "resultPreview": "{\"refs\":[{\"ref\":\"1128\",\"region\":\"Frostpeak Highlands: new Glass Lake (镜湖) east of the existing Frostpeak massif cluster; lake south end\",\"summary\":\"I've planned 1128 as the south end of a new long alpine lake, the Glass Lake, east of the existing Frostpeak cluster. The lake runs north-south from z -700 to -4450, between x 1700 and x 3050. The cluster (east_spur, east_summit, frost_crown, west_summ…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 2,
+      "label": "plan:coast-snow",
+      "phaseIndex": 1,
+      "phaseTitle": "Plan",
+      "agentId": "adc108dc4f1f7d397",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1790531509682,
+      "queuedAt": 1790531509641,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "Project E:/FeiTing: low-poly airship game world in Godot 4.5.1 (GL Compatibility). All 20 reference images in E:/FeiTing/ref/*.png belong to ONE big 3D world at different places/times/weathers. The producer now wants BREADTH FIRST: every reference scene first reaches ~60/100 in form (landforms/assets/composition) and atmosphere (time of day, weather, light), and only later gets refined. Previous r…",
+      "promptFramed": true,
+      "lastProgressAt": 1790533154598,
+      "tokens": 293515,
+      "toolCalls": 117,
+      "durationMs": 1643686,
+      "resultPreview": "{\"refs\":[{\"ref\":\"1131\",\"region\":\"NW coast: new 'Frostcoast' snow range just north of the 36b highcoast estuary (the WORLD_SCENE_PLAN snowy-coast band, continuing the Lantern Coast northwards)\",\"summary\":\"Checked with a heightfield built from the real World38 terrain meshes (208 tiles, 14 of them the 36b embedded tiles) plus the 11 massifs, and a raymarch preview placed beside the reference (scratc…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 3,
+      "label": "plan:lighthouse",
+      "phaseIndex": 1,
+      "phaseTitle": "Plan",
+      "agentId": "aa29f423303d66d80",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1790531509684,
+      "queuedAt": 1790531509641,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "Project E:/FeiTing: low-poly airship game world in Godot 4.5.1 (GL Compatibility). All 20 reference images in E:/FeiTing/ref/*.png belong to ONE big 3D world at different places/times/weathers. The producer now wants BREADTH FIRST: every reference scene first reaches ~60/100 in form (landforms/assets/composition) and atmosphere (time of day, weather, light), and only later gets refined. Previous r…",
+      "promptFramed": true,
+      "lastProgressAt": 1790533173391,
+      "tokens": 312506,
+      "toolCalls": 82,
+      "durationMs": 1662478,
+      "resultPreview": "{\"refs\":[{\"ref\":\"1125\",\"region\":\"Lantern Coast south plain at the moving storm front: storm over the west sea (storm-mask edge x≈-2350), low sun over the plain between the coast and Lantern port (-1120,-1910)\",\"summary\":\"I kept the existing 35/36 storm-high rig exactly: pos (-3000,520,-1250), look_at (-1100,180,-3000), fov 70, with sampled rotation (-0.1309,-0.8265,0). I checked the view with a he…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 4,
+      "label": "plan:day-land",
+      "phaseIndex": 1,
+      "phaseTitle": "Plan",
+      "agentId": "a40d81910a086595e",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1790531509686,
+      "queuedAt": 1790531509641,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "Project E:/FeiTing: low-poly airship game world in Godot 4.5.1 (GL Compatibility). All 20 reference images in E:/FeiTing/ref/*.png belong to ONE big 3D world at different places/times/weathers. The producer now wants BREADTH FIRST: every reference scene first reaches ~60/100 in form (landforms/assets/composition) and atmosphere (time of day, weather, light), and only later gets refined. Previous r…",
+      "promptFramed": true,
+      "lastProgressAt": 1790533660717,
+      "tokens": 341394,
+      "toolCalls": 107,
+      "durationMs": 2149804,
+      "resultPreview": "{\"refs\":[{\"ref\":\"1343\",\"region\":\"Central river plain & Crownreach castle (opening view, reused camera)\",\"summary\":\"I reused the opening camera unchanged. Checked with projection and ray-march previews against an 8 m heightfield built from all World38 terrain GLBs, massifs and cliffs, and against the existing rig render captures/opening_study_38/rig_test/ref_1343.png. The layout already matches: se…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 5,
+      "label": "plan:sky-interior",
+      "phaseIndex": 1,
+      "phaseTitle": "Plan",
+      "agentId": "a5ecec4f9d2f0c684",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1790531509688,
+      "queuedAt": 1790531509641,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "Project E:/FeiTing: low-poly airship game world in Godot 4.5.1 (GL Compatibility). All 20 reference images in E:/FeiTing/ref/*.png belong to ONE big 3D world at different places/times/weathers. The producer now wants BREADTH FIRST: every reference scene first reaches ~60/100 in form (landforms/assets/composition) and atmosphere (time of day, weather, light), and only later gets refined. Previous r…",
+      "promptFramed": true,
+      "lastProgressAt": 1790532932380,
+      "tokens": 268219,
+      "toolCalls": 79,
+      "durationMs": 1421466,
+      "resultPreview": "{\"refs\":[{\"ref\":\"1216\",\"region\":\"West storm sea, high altitude, night (above the same storm system as 1125/1341; storm35 mask x<-2350)\",\"summary\":\"Night chase-cam at 1320 m ASL over open sea at (-3050,-2700), looking NNW (heading -28.7 deg, pitch -4.8 deg, fov 50). y is absolute (y_abs/ty_abs) because the camera is over sea. The moon uses the same azimuth as the 1342 moon (-0.184,*,-0.907) but a l…"
+    }
+  ],
+  "totalTokens": 1536273,
+  "totalToolCalls": 482
+}

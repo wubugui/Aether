@@ -1,0 +1,690 @@
+{
+  "schema_version": 1,
+  "run_id": "harbor-assembly-22a-20260908T104332Z-7bb7bd47c7e846a0b285e9a5dcfd5654",
+  "round": "harbor-assembly-22a",
+  "started_utc": "2026-09-08T10:43:32.059940+00:00",
+  "workspace": "E:\\FeiTing",
+  "run_directory": "E:\\FeiTing\\captures\\validation_runs\\harbor-assembly-22a-20260908T104332Z-7bb7bd47c7e846a0b285e9a5dcfd5654",
+  "status": "passed",
+  "passed": true,
+  "export_windows_requested": false,
+  "capture_views_requested": true,
+  "expected_counts": {},
+  "stages": [
+    {
+      "name": "day-reference",
+      "run_id": "harbor-assembly-22a-20260908T104332Z-7bb7bd47c7e846a0b285e9a5dcfd5654",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\harbor-assembly-22a-20260908T104332Z-7bb7bd47c7e846a0b285e9a5dcfd5654\\study-inputs\\preview.gd",
+        "--quit-after",
+        "900",
+        "--",
+        "--label=20l",
+        "--study-dir=E:\\FeiTing\\captures\\validation_runs\\harbor-assembly-22a-20260908T104332Z-7bb7bd47c7e846a0b285e9a5dcfd5654\\study-inputs",
+        "--view=reference-coast-near",
+        "--environment=day",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\harbor-assembly-22a-20260908T104332Z-7bb7bd47c7e846a0b285e9a5dcfd5654\\images\\day-reference.png",
+        "--validation-run=harbor-assembly-22a-20260908T104332Z-7bb7bd47c7e846a0b285e9a5dcfd5654"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788864224541343200,
+      "started_utc": "2026-09-08T10:43:44.541343+00:00",
+      "input_manifest_sha256": "d96284c3c4cdd1994e70da08ff909520377cb890b57eb854a91e80291b007266",
+      "exit_code": 0,
+      "finished_ns": 1788864230758295600,
+      "image": "images/day-reference.png",
+      "finished_utc": "2026-09-08T10:43:56.980825+00:00"
+    },
+    {
+      "name": "night-reference",
+      "run_id": "harbor-assembly-22a-20260908T104332Z-7bb7bd47c7e846a0b285e9a5dcfd5654",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\harbor-assembly-22a-20260908T104332Z-7bb7bd47c7e846a0b285e9a5dcfd5654\\study-inputs\\preview.gd",
+        "--quit-after",
+        "900",
+        "--",
+        "--label=20l",
+        "--study-dir=E:\\FeiTing\\captures\\validation_runs\\harbor-assembly-22a-20260908T104332Z-7bb7bd47c7e846a0b285e9a5dcfd5654\\study-inputs",
+        "--view=reference-coast-near",
+        "--environment=night",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\harbor-assembly-22a-20260908T104332Z-7bb7bd47c7e846a0b285e9a5dcfd5654\\images\\night-reference.png",
+        "--validation-run=harbor-assembly-22a-20260908T104332Z-7bb7bd47c7e846a0b285e9a5dcfd5654"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788864243157650800,
+      "started_utc": "2026-09-08T10:44:03.157650+00:00",
+      "input_manifest_sha256": "d96284c3c4cdd1994e70da08ff909520377cb890b57eb854a91e80291b007266",
+      "exit_code": 0,
+      "finished_ns": 1788864248972104100,
+      "image": "images/night-reference.png",
+      "finished_utc": "2026-09-08T10:44:15.134772+00:00"
+    },
+    {
+      "name": "dock-front",
+      "run_id": "harbor-assembly-22a-20260908T104332Z-7bb7bd47c7e846a0b285e9a5dcfd5654",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\harbor-assembly-22a-20260908T104332Z-7bb7bd47c7e846a0b285e9a5dcfd5654\\study-inputs\\preview.gd",
+        "--quit-after",
+        "900",
+        "--",
+        "--label=20l",
+        "--study-dir=E:\\FeiTing\\captures\\validation_runs\\harbor-assembly-22a-20260908T104332Z-7bb7bd47c7e846a0b285e9a5dcfd5654\\study-inputs",
+        "--view=dock-front",
+        "--environment=day",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\harbor-assembly-22a-20260908T104332Z-7bb7bd47c7e846a0b285e9a5dcfd5654\\images\\dock-front.png",
+        "--validation-run=harbor-assembly-22a-20260908T104332Z-7bb7bd47c7e846a0b285e9a5dcfd5654"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788864260891392400,
+      "started_utc": "2026-09-08T10:44:20.891392+00:00",
+      "input_manifest_sha256": "d96284c3c4cdd1994e70da08ff909520377cb890b57eb854a91e80291b007266",
+      "exit_code": 0,
+      "finished_ns": 1788864266547901500,
+      "image": "images/dock-front.png",
+      "finished_utc": "2026-09-08T10:44:32.591031+00:00"
+    },
+    {
+      "name": "dock-back",
+      "run_id": "harbor-assembly-22a-20260908T104332Z-7bb7bd47c7e846a0b285e9a5dcfd5654",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\harbor-assembly-22a-20260908T104332Z-7bb7bd47c7e846a0b285e9a5dcfd5654\\study-inputs\\preview.gd",
+        "--quit-after",
+        "900",
+        "--",
+        "--label=20l",
+        "--study-dir=E:\\FeiTing\\captures\\validation_runs\\harbor-assembly-22a-20260908T104332Z-7bb7bd47c7e846a0b285e9a5dcfd5654\\study-inputs",
+        "--view=dock-back",
+        "--environment=day",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\harbor-assembly-22a-20260908T104332Z-7bb7bd47c7e846a0b285e9a5dcfd5654\\images\\dock-back.png",
+        "--validation-run=harbor-assembly-22a-20260908T104332Z-7bb7bd47c7e846a0b285e9a5dcfd5654"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788864278548971600,
+      "started_utc": "2026-09-08T10:44:38.548971+00:00",
+      "input_manifest_sha256": "d96284c3c4cdd1994e70da08ff909520377cb890b57eb854a91e80291b007266",
+      "exit_code": 0,
+      "finished_ns": 1788864284245644900,
+      "image": "images/dock-back.png",
+      "finished_utc": "2026-09-08T10:44:50.337120+00:00"
+    },
+    {
+      "name": "boat-close",
+      "run_id": "harbor-assembly-22a-20260908T104332Z-7bb7bd47c7e846a0b285e9a5dcfd5654",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\harbor-assembly-22a-20260908T104332Z-7bb7bd47c7e846a0b285e9a5dcfd5654\\study-inputs\\preview.gd",
+        "--quit-after",
+        "900",
+        "--",
+        "--label=20l",
+        "--study-dir=E:\\FeiTing\\captures\\validation_runs\\harbor-assembly-22a-20260908T104332Z-7bb7bd47c7e846a0b285e9a5dcfd5654\\study-inputs",
+        "--view=boat-close",
+        "--environment=day",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\harbor-assembly-22a-20260908T104332Z-7bb7bd47c7e846a0b285e9a5dcfd5654\\images\\boat-close.png",
+        "--validation-run=harbor-assembly-22a-20260908T104332Z-7bb7bd47c7e846a0b285e9a5dcfd5654"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788864296343099800,
+      "started_utc": "2026-09-08T10:44:56.343099+00:00",
+      "input_manifest_sha256": "d96284c3c4cdd1994e70da08ff909520377cb890b57eb854a91e80291b007266",
+      "exit_code": 0,
+      "finished_ns": 1788864302168537900,
+      "image": "images/boat-close.png",
+      "finished_utc": "2026-09-08T10:45:08.075792+00:00"
+    },
+    {
+      "name": "night-dock",
+      "run_id": "harbor-assembly-22a-20260908T104332Z-7bb7bd47c7e846a0b285e9a5dcfd5654",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\harbor-assembly-22a-20260908T104332Z-7bb7bd47c7e846a0b285e9a5dcfd5654\\study-inputs\\preview.gd",
+        "--quit-after",
+        "900",
+        "--",
+        "--label=20l",
+        "--study-dir=E:\\FeiTing\\captures\\validation_runs\\harbor-assembly-22a-20260908T104332Z-7bb7bd47c7e846a0b285e9a5dcfd5654\\study-inputs",
+        "--view=dock-front",
+        "--environment=night",
+        "--output=E:\\FeiTing\\captures\\validation_runs\\harbor-assembly-22a-20260908T104332Z-7bb7bd47c7e846a0b285e9a5dcfd5654\\images\\night-dock.png",
+        "--validation-run=harbor-assembly-22a-20260908T104332Z-7bb7bd47c7e846a0b285e9a5dcfd5654"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788864314202884100,
+      "started_utc": "2026-09-08T10:45:14.202884+00:00",
+      "input_manifest_sha256": "d96284c3c4cdd1994e70da08ff909520377cb890b57eb854a91e80291b007266",
+      "exit_code": 0,
+      "finished_ns": 1788864320033968300,
+      "image": "images/night-dock.png",
+      "finished_utc": "2026-09-08T10:45:26.198242+00:00"
+    }
+  ],
+  "artifacts": {
+    "study-inputs/builder.py": {
+      "sha256": "3b02eac21bba13baaae83b80e710d46e36a6774427b0a531056cdd1f49b2034b",
+      "bytes": 22540,
+      "mtime_ns": 1788861872806371700
+    },
+    "study-inputs/island_a.blend": {
+      "sha256": "6b19a42b34fb670f46ed7887ad6d7ee33f4b4f456f88cdb71aa5158683ce0bd2",
+      "bytes": 1105609,
+      "mtime_ns": 1788861874896240600
+    },
+    "study-inputs/island_a.glb": {
+      "sha256": "d6055b3dcf2d108ca0e3341dc237fbf9ac9ec45a483e40aa81e4cc991315f215",
+      "bytes": 577672,
+      "mtime_ns": 1788861875170601000
+    },
+    "study-inputs/island_b.blend": {
+      "sha256": "4d076990c63d61ed6930332802d729dfa3b4b37467fe5800fd6f5054ad8b4649",
+      "bytes": 904528,
+      "mtime_ns": 1788861875696268400
+    },
+    "study-inputs/island_b.glb": {
+      "sha256": "5ad2cfd67c65f23b583ff06421a9230ca81c3150cadfcda1d7c2965a293134b2",
+      "bytes": 353952,
+      "mtime_ns": 1788861875743198900
+    },
+    "study-inputs/island_c.blend": {
+      "sha256": "7cba8e83ebde59a83a6c887a26b05c395c21743103e9e1f1ec721d57c2c1e5f7",
+      "bytes": 806189,
+      "mtime_ns": 1788861875983292700
+    },
+    "study-inputs/island_c.glb": {
+      "sha256": "126f6de07e9236fe1f7d06b3cd3585d3683b0c7156a5bc702797abafbd45875d",
+      "bytes": 230576,
+      "mtime_ns": 1788861876008045300
+    },
+    "study-inputs/keeper_house.blend": {
+      "sha256": "ded477b6ed619aa9ca11da4ce7fe190938c27a86ff31237922fad161f2177759",
+      "bytes": 2474838,
+      "mtime_ns": 1788859346901051300
+    },
+    "study-inputs/keeper_house.glb": {
+      "sha256": "8f70f7ba4d6c94d23b310b73f6fee9d171f6efb32d255be2574254e639b6176b",
+      "bytes": 307084,
+      "mtime_ns": 1788859347431110400
+    },
+    "study-inputs/model-report.json": {
+      "sha256": "aa0e13d4d9c5a7f40dc9a22b4364a3fd4fae45d7105ab2b47035fac74d010245",
+      "bytes": 28303,
+      "mtime_ns": 1788861876035964500
+    },
+    "study-inputs/reef_low.blend": {
+      "sha256": "66c5392aa718ba8520f31a4c6ba08098e425034bae83c010b5e437db739948e9",
+      "bytes": 551018,
+      "mtime_ns": 1788858579418959700
+    },
+    "study-inputs/reef_low.glb": {
+      "sha256": "42de4128c2c51d3f22b9bd4423b23b3c15f509e623abcdac9702e4c1f1a06a87",
+      "bytes": 6280,
+      "mtime_ns": 1788858579426976800
+    },
+    "study-inputs/reef_ridge.blend": {
+      "sha256": "9b7060b1946358d58b53ffd9d089338d3f9d8796caaeb73cb32b84819326b082",
+      "bytes": 551236,
+      "mtime_ns": 1788858579458111400
+    },
+    "study-inputs/reef_ridge.glb": {
+      "sha256": "4427c7705c9ce848cfa62735d46347d931c1c3e52d693b189d0cded9fe89be87",
+      "bytes": 7296,
+      "mtime_ns": 1788858579467920700
+    },
+    "study-inputs/reef_spire.blend": {
+      "sha256": "a384d4f84c982eff4a05974aa48d595e975ed21c0d9899c6fe5faf5d1eecae2a",
+      "bytes": 551372,
+      "mtime_ns": 1788858579437489600
+    },
+    "study-inputs/reef_spire.glb": {
+      "sha256": "c93eb72c79a84893651692223830be491c015e2827d36fa5bbf7e6c3311fb95e",
+      "bytes": 7620,
+      "mtime_ns": 1788858579447545700
+    },
+    "study-inputs/environment/ambient-mode-derivation.py": {
+      "sha256": "982ddd576454c97526eed350b28f2ed0f1229e1080c06f0cb47b6be8306455ab",
+      "bytes": 3420,
+      "mtime_ns": 1788862932032381800
+    },
+    "study-inputs/environment/builder.py": {
+      "sha256": "f78b4aae92ee030d7c559db58abb6a1b3edb03c4d6bfd4232e2d27ba979cba20",
+      "bytes": 4971,
+      "mtime_ns": 1788862076567438000
+    },
+    "study-inputs/environment/cliff_surface.gdshader": {
+      "sha256": "0e89013b39c7e19889423fe852789b708ebc04e6d22037a1149aa9ea924b435e",
+      "bytes": 870,
+      "mtime_ns": 1788862078397531100
+    },
+    "study-inputs/environment/cloud_surface.gdshader": {
+      "sha256": "3f8f503aa34f452fac0b32c41f3b6b6c552ecdd60ea789d07304bdcd38434e74",
+      "bytes": 735,
+      "mtime_ns": 1788862493819493100
+    },
+    "study-inputs/environment/derivation.py": {
+      "sha256": "2a7b1c358e0073ad8e76c81dacf61f83ea63cb1e521e20dcd8aef4cfb6ac3203",
+      "bytes": 4776,
+      "mtime_ns": 1788862492016106800
+    },
+    "study-inputs/environment/moon.gdshader": {
+      "sha256": "6ea8050f93cf21f44cb14c8ab3ed5674b309dd382854ba2ff709bb006b50a146",
+      "bytes": 136,
+      "mtime_ns": 1788862493820504000
+    },
+    "study-inputs/environment/open_sky.gdshader": {
+      "sha256": "b514467ebb754a42057c23475b245b51045ed74804cb4faa7598138dd40e80cb",
+      "bytes": 1279,
+      "mtime_ns": 1788862493818481900
+    },
+    "study-inputs/environment/open_water.gdshader": {
+      "sha256": "258c03b94e3a03b60fb18b16b02a8ef5675bc63a8103556875a95135162cb1b5",
+      "bytes": 2775,
+      "mtime_ns": 1788862493819493100
+    },
+    "study-inputs/environment/ship_surface.gdshader": {
+      "sha256": "30fdf4b4aed5a527a3d933ab7f209c93e7f56378c545b1b7f3d3825bbf78910b",
+      "bytes": 654,
+      "mtime_ns": 1788862078397531100
+    },
+    "study-inputs/environment/source-identities.json": {
+      "sha256": "80c2e174d485c01660d6a8e80db221d692f90162314433fe6c33b9d4541b3156",
+      "bytes": 737,
+      "mtime_ns": 1788862078400042600
+    },
+    "study-inputs/environment/terrain_native.gdshader": {
+      "sha256": "7d448bdfa8e99e93b1240d4293699749099fca6b91410dcbf8d4520045bfeacb",
+      "bytes": 2557,
+      "mtime_ns": 1788862078397531100
+    },
+    "study-inputs/environment/wood_surface.gdshader": {
+      "sha256": "19e4e59af57270e4ce9c82806aa7fae1fad6e392df3ac3f20fd1965a21e96410",
+      "bytes": 669,
+      "mtime_ns": 1788862078398543000
+    },
+    "study-inputs/environment/world_surface.gdshader": {
+      "sha256": "816001f4e1ef080f652ee748ce6590b6a7386d468b4f61c16f6af0ba9a7fe061",
+      "bytes": 1436,
+      "mtime_ns": 1788862078396528600
+    },
+    "study-inputs/environment/sky-assets/builder.py": {
+      "sha256": "effe79578bc51a3ddd65cf6014e837694c6a5614fffae7d56696c199e5927c06",
+      "bytes": 4417,
+      "mtime_ns": 1788862492015524800
+    },
+    "study-inputs/environment/sky-assets/cloud_bank_0.blend": {
+      "sha256": "139edd1c2410f8799f985b21cda2e6dad2b00c7d678beba3b7a4196a5a40e649",
+      "bytes": 672507,
+      "mtime_ns": 1788862494535680900
+    },
+    "study-inputs/environment/sky-assets/cloud_bank_0.glb": {
+      "sha256": "8ae708509d272df7a3073a9058f60105b2a2060cc43dff521478beb43164fcab",
+      "bytes": 10000,
+      "mtime_ns": 1788862494548758000
+    },
+    "study-inputs/environment/sky-assets/cloud_bank_1.blend": {
+      "sha256": "9efa571f6fb01c4a809044f3dca2db02e8e1dc1eb76b9931d562ccdee12410ea",
+      "bytes": 801153,
+      "mtime_ns": 1788862494564517700
+    },
+    "study-inputs/environment/sky-assets/cloud_bank_1.glb": {
+      "sha256": "de490c90fda848c5ce80b0ce49cb5045f994a7847fbc39505aa8a487672c9378",
+      "bytes": 16524,
+      "mtime_ns": 1788862494581256800
+    },
+    "study-inputs/environment/sky-assets/cloud_bank_2.blend": {
+      "sha256": "4bdc71069a84266b796150d48ad62f9ad7b47b78ca5873766ca7537b9251e4c6",
+      "bytes": 887942,
+      "mtime_ns": 1788862494597513700
+    },
+    "study-inputs/environment/sky-assets/cloud_bank_2.glb": {
+      "sha256": "21fd696e93fbac1f7c6d7effbfad151a95faf6feecc83e461474388b51bcede3",
+      "bytes": 13264,
+      "mtime_ns": 1788862494611626400
+    },
+    "study-inputs/environment/sky-assets/model-report.json": {
+      "sha256": "eb2a158ad0d8488db0199c18d7926d93237dc31d32ee277a31a802aab88b1ec7",
+      "bytes": 3386,
+      "mtime_ns": 1788862494624391600
+    },
+    "study-inputs/environment/sky-assets/moon.blend": {
+      "sha256": "786fed316ba6a981445e21bd2a270b8bc8f30b65fb4ae8706e64224e63df012d",
+      "bytes": 614007,
+      "mtime_ns": 1788862494330217700
+    },
+    "study-inputs/environment/sky-assets/moon.glb": {
+      "sha256": "d4f87e9dfe4dbec9f0a91cbad9356eb53b7d51c9b6970e069924cea10ce46cee",
+      "bytes": 37256,
+      "mtime_ns": 1788862494521726600
+    },
+    "study-inputs/environment/sky-assets/round-21b-sky-native-check.json": {
+      "sha256": "5b46458b20c080318143ff33b5289e89a8199070a2730ecc71751688af2ec8a8",
+      "bytes": 7171,
+      "mtime_ns": 1788862544117421000
+    },
+    "study-inputs/harbor-kit/builder.py": {
+      "sha256": "adb93505b5232ec182fd05a02fd033dbf759b35996f7c0a855e749dde6bad09d",
+      "bytes": 17705,
+      "mtime_ns": 1788863675932284600
+    },
+    "study-inputs/harbor-kit/harbor_cargo.blend": {
+      "sha256": "4be4f4230de927e06118a478c56f9dcd6bcf75f6de30825f30b9b13007028dfd",
+      "bytes": 1230877,
+      "mtime_ns": 1788863677144948500
+    },
+    "study-inputs/harbor-kit/harbor_cargo.glb": {
+      "sha256": "7f87982601852a99f24e0cd65c642fe3e24428c9addc8a6538190f7f4441cd37",
+      "bytes": 114036,
+      "mtime_ns": 1788863677186209000
+    },
+    "study-inputs/harbor-kit/harbor_lantern.blend": {
+      "sha256": "0a579e3a59b3f4259c9e3845f6c78f321fab10a912c05ddab0e06074e3fa6aef",
+      "bytes": 745328,
+      "mtime_ns": 1788863677070524100
+    },
+    "study-inputs/harbor-kit/harbor_lantern.glb": {
+      "sha256": "445f64442b9d381c0a58e562d34da8a71b8b5458055a2d40bc40eaf5823a01ef",
+      "bytes": 18240,
+      "mtime_ns": 1788863677095730200
+    },
+    "study-inputs/harbor-kit/model-report.json": {
+      "sha256": "090c2d2cf8f92818d08b97ea5637ce28d60f42221a3372e0b14818c30ae56091",
+      "bytes": 34255,
+      "mtime_ns": 1788863677275412600
+    },
+    "study-inputs/harbor-kit/moored_fishing_boat.blend": {
+      "sha256": "af0dcfe303426875f797100ccce89983153f88cf182c621ee44a7540f8906298",
+      "bytes": 1000005,
+      "mtime_ns": 1788863677226117300
+    },
+    "study-inputs/harbor-kit/moored_fishing_boat.glb": {
+      "sha256": "70e6053983dad7c0f35cbc1c23d90890c52be63cff175d4dbd55b3d75cbad665",
+      "bytes": 51324,
+      "mtime_ns": 1788863677261660300
+    },
+    "study-inputs/harbor-kit/pier_landing.blend": {
+      "sha256": "533ea438ff23af4a295c929096254874ca14e64abf0cfef09d7a5a52dd9b7f54",
+      "bytes": 1069400,
+      "mtime_ns": 1788863676933454300
+    },
+    "study-inputs/harbor-kit/pier_landing.glb": {
+      "sha256": "a45db6afd776ccca1fff245455ba679ac52d6caf9321063f7d97b0067e4abd27",
+      "bytes": 94012,
+      "mtime_ns": 1788863676974694900
+    },
+    "study-inputs/harbor-kit/repair_awning.blend": {
+      "sha256": "db9743bbf09a1b0a6821eb7c8dae1873bf7ee6b86b190ac66a7e8485d5b4eb01",
+      "bytes": 949180,
+      "mtime_ns": 1788863677013009700
+    },
+    "study-inputs/harbor-kit/repair_awning.glb": {
+      "sha256": "53abafea771d800420cd79a37d643ddd5b518a0f2b821e6b3ebdebb8af78ff63",
+      "bytes": 106592,
+      "mtime_ns": 1788863677049200900
+    },
+    "study-inputs/harbor-kit/timber_pier.blend": {
+      "sha256": "513e6d7cc52cb710669d2b439be4eb08305cebb362f760c3915df93359c1ff15",
+      "bytes": 1604792,
+      "mtime_ns": 1788863676523707900
+    },
+    "study-inputs/harbor-kit/timber_pier.glb": {
+      "sha256": "7d241946f2073c491c910daeb108ca80fba1f76a30559d315d565914ac54ba12",
+      "bytes": 193340,
+      "mtime_ns": 1788863676878560400
+    },
+    "study-inputs/harbor-kit/round-22a-harbor-native-check.json": {
+      "sha256": "29972c494d0a73956ccece45030daf2a16be47e9318dcf2fb91b41d74f08fdcf",
+      "bytes": 242038,
+      "mtime_ns": 1788863885405611000
+    },
+    "study-inputs/harbor-survey.json": {
+      "sha256": "b52744d8b82d8fd54dd15db5214d53a1a00e84148cfccaf5418b498a163c8e01",
+      "bytes": 409972,
+      "mtime_ns": 1788863841947016600
+    },
+    "study-inputs/harbor_assembly_22a.gd": {
+      "sha256": "355b219aa9d4dcd19ae1a6fe851b336708127e0019784b3478a3490c5a36cb8e",
+      "bytes": 7006,
+      "mtime_ns": 1788864125189451200
+    },
+    "study-inputs/1135.png": {
+      "sha256": "25968bf1203323213d4fc0b2f473c7014cf3532377c89ff9545eb5029322ef59",
+      "bytes": 1850035,
+      "mtime_ns": 1788847334556827300
+    },
+    "study-inputs/round-22a-port-site-independent-audit.json": {
+      "sha256": "4c7da0d3df6542f157ee88166c5a4be7053fbfc855d8b0a80d6178b1eb5cbb30",
+      "bytes": 40509,
+      "mtime_ns": 1788863499752714200
+    },
+    "study-inputs/round-20l-coast-native-check.json": {
+      "sha256": "20802ff0320447547980bb7d95fef6865ba99c3d8f287533db654e41c6df2353",
+      "bytes": 67927,
+      "mtime_ns": 1788861907141812200
+    },
+    "study-inputs/render_harbor_assembly_22a.py": {
+      "sha256": "ff7fb924cb204803efc403f3927002220d684284ebdbca9e47f583168188aac4",
+      "bytes": 8385,
+      "mtime_ns": 1788864211952884300
+    },
+    "study-inputs/coast_environment_21c.gd": {
+      "sha256": "3d8caf4c5812580cc11f815860b883b9ae085881357dadf4324bdd7818dc0744",
+      "bytes": 7539,
+      "mtime_ns": 1788862934318952400
+    },
+    "study-inputs/environment-sources-runtime.log": {
+      "sha256": "7c3a529a31ea09012a1f3ec33b1432490a5cba0b39bcf38f0f016d814d483585",
+      "bytes": 153,
+      "mtime_ns": 1788862931892518200
+    },
+    "study-inputs/inspect_environment_sources.gd": {
+      "sha256": "b013d7df4e28df7df2c5fd7e90ef252bd43fe8aefe36e43a03b44d251882c957",
+      "bytes": 280,
+      "mtime_ns": 1788862797786677300
+    },
+    "study-inputs/1342.png": {
+      "sha256": "7acc98104013d9122eb551846b2d7fc1f7549bce8b2e3199eae8f5385a3ea238",
+      "bytes": 1646137,
+      "mtime_ns": 1788847336194355400
+    },
+    "study-inputs/round-20l-path-independent-audit.json": {
+      "sha256": "73faccd2270e318967be8838b5b0fe391763e829e8868c5f0af7b524a92b9d1a",
+      "bytes": 19950,
+      "mtime_ns": 1788862147224636800
+    },
+    "study-inputs/preview.gd": {
+      "sha256": "0af20d81f0e2a2d391b96aaf8facf27f4288287529fdab2a9fade8465907d527",
+      "bytes": 11706,
+      "mtime_ns": 1788864212566486800
+    },
+    "inputs.json": {
+      "sha256": "d96284c3c4cdd1994e70da08ff909520377cb890b57eb854a91e80291b007266",
+      "bytes": 732075,
+      "mtime_ns": 1788864218573814400
+    },
+    "images/day-reference.png": {
+      "sha256": "dcc5dcd1f9b816f6cd05eb1a115a46e11c29ab13f79b479b88c31e2891438912",
+      "bytes": 353192,
+      "mtime_ns": 1788864230359772100
+    },
+    "images/day-reference.png.json": {
+      "sha256": "1faa68cbf2d8140ec4a51c92718fa3254191d22d18b419bc1073b637c9b961a2",
+      "bytes": 141080,
+      "mtime_ns": 1788864230368686000
+    },
+    "day-reference.log": {
+      "sha256": "4c8b53571aafcc7833ac8165c252345b5f80cc7a0cdc1aef43c1baf5dd318738",
+      "bytes": 357,
+      "mtime_ns": 1788864230368686000
+    },
+    "day-reference-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788864224542345500
+    },
+    "stages/day-reference.json": {
+      "sha256": "989f1a7637049a173bb29367d251bb6828958344a85a0ed3a97790e48611f3db",
+      "bytes": 1329,
+      "mtime_ns": 1788864236982834800
+    },
+    "images/night-reference.png": {
+      "sha256": "9089798cf7370812fbca33baa743a73f70817e37f08f722c41933895305584d3",
+      "bytes": 472975,
+      "mtime_ns": 1788864248608497500
+    },
+    "images/night-reference.png.json": {
+      "sha256": "71ed521c20909232f096daa8a93f5c6fc406a666bc76fe7017b3dffe98fab088",
+      "bytes": 142955,
+      "mtime_ns": 1788864248617331400
+    },
+    "night-reference.log": {
+      "sha256": "4c8b53571aafcc7833ac8165c252345b5f80cc7a0cdc1aef43c1baf5dd318738",
+      "bytes": 357,
+      "mtime_ns": 1788864248617331400
+    },
+    "night-reference-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788864243158648500
+    },
+    "stages/night-reference.json": {
+      "sha256": "a6d9d8bbb0ec6d2d8b78316bf9764ef8d6146786ac37c990b2f6461311f54a37",
+      "bytes": 1337,
+      "mtime_ns": 1788864255136831000
+    },
+    "images/dock-front.png": {
+      "sha256": "76818293678bc86a96ed1b38c958add8a1892943eaa50c64cc35f18b2e70dbaf",
+      "bytes": 357068,
+      "mtime_ns": 1788864266193025200
+    },
+    "images/dock-front.png.json": {
+      "sha256": "918ff9c70c8e0223cc385e7f355964366859460c03d4282600ef6e4442f827af",
+      "bytes": 141088,
+      "mtime_ns": 1788864266201953600
+    },
+    "dock-front.log": {
+      "sha256": "9630d0908f5761bb10d46facf2eaf8f336038182d1e15b8eefab35926f587632",
+      "bytes": 347,
+      "mtime_ns": 1788864266201953600
+    },
+    "dock-front-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788864260892493600
+    },
+    "stages/dock-front.json": {
+      "sha256": "c1ce8519e4aa55edc5902e321b4d1dfb1ab43257c42468e6220696277c05035c",
+      "bytes": 1310,
+      "mtime_ns": 1788864272592124100
+    },
+    "images/dock-back.png": {
+      "sha256": "fce90aa7b432ee51837e8b7b8bd222d3b282256739806803e7025d8f0df497c9",
+      "bytes": 359880,
+      "mtime_ns": 1788864283882309300
+    },
+    "images/dock-back.png.json": {
+      "sha256": "0aee3405d51fa1b3930842201c62e5deadc2fd4c0854c0b8cd042cda4d6e1412",
+      "bytes": 141087,
+      "mtime_ns": 1788864283890289600
+    },
+    "dock-back.log": {
+      "sha256": "607b64c8c9a35070a5a99df3ae2e74a57c663dd6c70afa1fb2327694537fb66f",
+      "bytes": 346,
+      "mtime_ns": 1788864283890289600
+    },
+    "dock-back-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788864278551132800
+    },
+    "stages/dock-back.json": {
+      "sha256": "1feec501acc0f538097bf56bf8ff146a67996736956f445318212eeb584d5c28",
+      "bytes": 1306,
+      "mtime_ns": 1788864290339114700
+    },
+    "images/boat-close.png": {
+      "sha256": "ea90cb8f3c3fff0d84aded5aea124ad531251cc367425faa84481fb811a0e142",
+      "bytes": 398220,
+      "mtime_ns": 1788864301771165000
+    },
+    "images/boat-close.png.json": {
+      "sha256": "67134bce2a5b0365e67a1cb14ca19765d74a81f612856d2894ae827b273bc180",
+      "bytes": 141102,
+      "mtime_ns": 1788864301779975300
+    },
+    "boat-close.log": {
+      "sha256": "9767ac08b0e7d500d1296048df2f2aaca708c9471a10ad4cb480911bd8df314b",
+      "bytes": 347,
+      "mtime_ns": 1788864301779975300
+    },
+    "boat-close-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788864296345109900
+    },
+    "stages/boat-close.json": {
+      "sha256": "767ee22dbcb8fd3a0a5189abf5ef7b6184d54520daf94023b821ea01e1a8938a",
+      "bytes": 1310,
+      "mtime_ns": 1788864308076894900
+    },
+    "images/night-dock.png": {
+      "sha256": "3e584996d1dcd70b274935fa600e9f05ca01f533b3c2147b18d0fcf56176223e",
+      "bytes": 370970,
+      "mtime_ns": 1788864319675531200
+    },
+    "images/night-dock.png.json": {
+      "sha256": "acab135c2e699fd3dc176211b3f0cff4cf8ad0742d2d05f5d1cce3bae3e0fcd1",
+      "bytes": 142963,
+      "mtime_ns": 1788864319685451300
+    },
+    "night-dock.log": {
+      "sha256": "9630d0908f5761bb10d46facf2eaf8f336038182d1e15b8eefab35926f587632",
+      "bytes": 347,
+      "mtime_ns": 1788864319685451300
+    },
+    "night-dock-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788864314204884200
+    },
+    "stages/night-dock.json": {
+      "sha256": "5d66d30af919860a775d6ce12f6057fbee4e4bd6c3a36700c94aa109b7212530",
+      "bytes": 1312,
+      "mtime_ns": 1788864326200361400
+    }
+  },
+  "visual_acceptance_proven": false,
+  "scope": "Six new detailed Blender harbor modules,23 surveyed native houses and4 piers in the same20l island/21c night world. Six actual GPU views. Temporary scene, no full reference, land-route, seabed or production acceptance.",
+  "completed_utc": "2026-09-08T10:45:32.664504+00:00"
+}

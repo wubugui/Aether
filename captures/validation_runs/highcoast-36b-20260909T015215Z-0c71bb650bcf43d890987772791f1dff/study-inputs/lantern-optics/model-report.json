@@ -1,0 +1,31 @@
+{
+  "scope": "Independent editable Blender optical control volumes. Runtime integrates density inside their true3D interior and clips to camera depth and sampled light-space scene occlusion. Native19h lighthouse is unchanged; these are not camera-facing image planes.",
+  "assets": [
+    {
+      "asset": "lantern_beam",
+      "parts": [
+        {
+          "name": "Lantern beam closed world volume 560m",
+          "vertices": 160,
+          "faces": 130,
+          "volume_m3": 1551672.8582250902
+        }
+      ],
+      "source_sha256": "6e88a280f53b8ce045f1b99e6f7137d99b5a5db6f9cbd0b12cf02349ab35740f",
+      "glb_sha256": "531ee0776df2d105538fb334da907a647999affe6bf32e0c082e999e682997fb"
+    },
+    {
+      "asset": "lantern_halo",
+      "parts": [
+        {
+          "name": "Lantern luminous haze closed sphere 1.45m",
+          "vertices": 162,
+          "faces": 320,
+          "volume_m3": 12.33780238409495
+        }
+      ],
+      "source_sha256": "7fe0a79558ca64dacf0754dcc64143cad1a3baa58e1d655105f8e3674c818a84",
+      "glb_sha256": "f08774f209d3f61b0b7b31e3626923751581d48dc62c8143e4d1af51d7e632df"
+    }
+  ]
+}

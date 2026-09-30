@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "E:\FeiTing\blender\model_harbor_paths_22e.py", line 180, in <module>
+    if failures:raise RuntimeError('Coupled stair/terrain/endpoint constraints fail: '+str(failures[:10]))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Coupled stair/terrain/endpoint constraints fail: [['terrain envelope', 0, 2.35, 2.35670654296875]]

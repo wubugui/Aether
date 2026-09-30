@@ -1,0 +1,19 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 581.29 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 4070 SUPER
+
+PASS World contains engine instances without embedded world geometry
+PASS 208 independently reusable terrain scenes
+PASS Every terrain tile retains a model import and Godot collision resource
+PASS Saved vegetation has nonzero physical scale
+PASS Saved vegetation retains distinct instance positions
+PASS House move survives save and reopen
+PASS Dock marker move survives save and reopen
+PASS Copied prefab remains independent with its own collider
+PASS Saved MultiMesh instance and parent edits persist
+WORLD READY: 208 independent terrain scenes, 57151 saved scatter instances, 170 scene landmarks, 6 scene ports
+PASS Runtime reads edited port from scene rather than old layout JSON
+PASS Vegetation collision follows the saved MultiMesh transform
+PASS Copied house collider follows the engine scene instance
+PASS Game startup preserves editor-authored house placement
+PASS Persistence test leaves authored world unchanged
+ASSEMBLY VALIDATION true

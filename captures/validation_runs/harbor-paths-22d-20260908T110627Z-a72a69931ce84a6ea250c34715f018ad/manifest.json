@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "run_id": "harbor-paths-22d-20260908T110627Z-a72a69931ce84a6ea250c34715f018ad",
+  "round": "harbor-paths-22d",
+  "started_utc": "2026-09-08T11:06:27.297219+00:00",
+  "workspace": "E:\\FeiTing",
+  "run_directory": "E:\\FeiTing\\captures\\validation_runs\\harbor-paths-22d-20260908T110627Z-a72a69931ce84a6ea250c34715f018ad",
+  "status": "passed",
+  "passed": true,
+  "export_windows_requested": false,
+  "capture_views_requested": true,
+  "expected_counts": {},
+  "stages": [
+    {
+      "name": "native-route-transects",
+      "run_id": "harbor-paths-22d-20260908T110627Z-a72a69931ce84a6ea250c34715f018ad",
+      "status": "passed",
+      "command": [
+        "E:\\FeiTing\\.tools\\godot\\Godot_v4.5.1-stable_win64.exe",
+        "--path",
+        "E:\\FeiTing",
+        "--script",
+        "E:\\FeiTing\\captures\\validation_runs\\harbor-paths-22d-20260908T110627Z-a72a69931ce84a6ea250c34715f018ad\\survey-inputs\\survey_harbor_paths_22d.gd",
+        "--quit-after",
+        "900",
+        "--",
+        "--survey=E:\\FeiTing\\captures\\validation_runs\\harbor-paths-22d-20260908T110627Z-a72a69931ce84a6ea250c34715f018ad\\survey-inputs\\sites.json",
+        "--output-dir=E:\\FeiTing\\captures\\validation_runs\\harbor-paths-22d-20260908T110627Z-a72a69931ce84a6ea250c34715f018ad\\survey",
+        "--validation-run=harbor-paths-22d-20260908T110627Z-a72a69931ce84a6ea250c34715f018ad"
+      ],
+      "cwd": "E:\\FeiTing",
+      "passed": true,
+      "started_ns": 1788865603085824600,
+      "started_utc": "2026-09-08T11:06:43.085824+00:00",
+      "input_manifest_sha256": "000c9e6de91973e51603ef61eeeee8baa56ef97c186db00cbd0d93a35ba57e20",
+      "exit_code": 0,
+      "finished_ns": 1788865608592890800,
+      "finished_utc": "2026-09-08T11:06:56.531111+00:00"
+    }
+  ],
+  "artifacts": {
+    "survey-inputs/survey_harbor_paths_22d.py": {
+      "sha256": "515b2c873c1f4dbb8313405a06dcd72695bedd7e4c7946bcf31240e453292faf",
+      "bytes": 2300,
+      "mtime_ns": 1788865587018518900
+    },
+    "survey-inputs/survey_harbor_paths_22d.gd": {
+      "sha256": "00c7c5018deae4aec58161899c0af5cb8f6ff0b60de026879a717e196ee3c67c",
+      "bytes": 4757,
+      "mtime_ns": 1788865587017515300
+    },
+    "survey-inputs/sites.json": {
+      "sha256": "b52744d8b82d8fd54dd15db5214d53a1a00e84148cfccaf5418b498a163c8e01",
+      "bytes": 409972,
+      "mtime_ns": 1788863841947016600
+    },
+    "inputs.json": {
+      "sha256": "000c9e6de91973e51603ef61eeeee8baa56ef97c186db00cbd0d93a35ba57e20",
+      "bytes": 732019,
+      "mtime_ns": 1788865595202470600
+    },
+    "survey/paths.json": {
+      "sha256": "92f5f9bbcc829c2eb1979d2acb6170b38bd5f97df7b74235cb434886a66355b7",
+      "bytes": 963744,
+      "mtime_ns": 1788865608367479600
+    },
+    "survey/paths-before.png": {
+      "sha256": "d61b2a70f46c805923350e56e3d3ff523e8f31ab9061f27b2b6c73f15afafae0",
+      "bytes": 299323,
+      "mtime_ns": 1788865608328494000
+    },
+    "native-route-transects.log": {
+      "sha256": "4a3bbed0c917b5a49814cb6e66662d4d71044139b8d55e5532ee27cb8d0c6645",
+      "bytes": 193,
+      "mtime_ns": 1788865608367479600
+    },
+    "native-route-transects-error.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mtime_ns": 1788865603087819900
+    },
+    "stages/native-route-transects.json": {
+      "sha256": "178031045e062bfab48c1e0e14d0640bd587f3acd110c25d892f2992516c6c5a",
+      "bytes": 1213,
+      "mtime_ns": 1788865616535107900
+    }
+  },
+  "visual_acceptance_proven": false,
+  "scope": "Read-only five-wide sections for4 curved, continuously aligned pier-to-door approaches.",
+  "completed_utc": "2026-09-08T11:07:04.914120+00:00"
+}

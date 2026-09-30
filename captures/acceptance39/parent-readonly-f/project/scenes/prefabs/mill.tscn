@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/asset_instance.gd" id="1_xex85"]
+[ext_resource type="Material" path="res://materials/world.tres" id="2_64fqw"]
+[ext_resource type="PackedScene" path="res://assets/models/mill.glb" id="3_qjiyw"]
+[ext_resource type="Shape3D" path="res://assets/collision/mill.res" id="4_rc8y6"]
+
+[node name="mill" type="Node3D"]
+script = ExtResource("1_xex85")
+asset_kind = "mill"
+surface_material = ExtResource("2_64fqw")
+
+[node name="Model" parent="." instance=ExtResource("3_qjiyw")]
+
+[node name="Collision" type="StaticBody3D" parent="."]
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision"]
+shape = ExtResource("4_rc8y6")
