@@ -1,0 +1,37 @@
+{
+  "status": "finished_reconciled_after_wrapper_postcheck_exception",
+  "passed": false,
+  "process": {
+    "status": "finished",
+    "command": [
+      "/workspace/scratch/a29d03198654/tools-feiting/Godot_v4.5.1-stable_linux.x86_64",
+      "--path",
+      "/workspace/scratch/a29d03198654/Aether/candidates/round40-exclusive-20260930/project",
+      "--editor",
+      "--import",
+      "--quit",
+      "--rendering-method",
+      "gl_compatibility",
+      "--audio-driver",
+      "Dummy"
+    ],
+    "returncode": -15,
+    "signal": 15,
+    "wall_seconds": 180.28074760500022,
+    "max_rss_kib": 3383060,
+    "timeout_triggered": true,
+    "wrapper_received_signal": null
+  },
+  "reason": "Actual import reached the 180 second limit and its own child was terminated. The observed project.godot CRLF-to-LF change fails the wrapper frozen-source postcheck; no postcheck traceback was captured. Final state is explicitly reconciled from the completed child report and saved before/after hashes.",
+  "observed_project_change": "line endings only; full observed bytes preserved separately",
+  "restored_original_project_bytes": true,
+  "original_input_count": 1484,
+  "all_original_inputs_exact_after_restoration": true,
+  "new_import_sidecar_count": 89,
+  "new_import_sidecar_bytes": 14406,
+  "scene_save_requested": false,
+  "renderer": "OpenGL Compatibility / Mesa llvmpipe, software only",
+  "vulkan_errors_preserved": true,
+  "runtime_or_visual_acceptance": false,
+  "ui_screenshot_approval": "New editor screenshot action returned JavaScript execution did not receive approval; not retried"
+}
