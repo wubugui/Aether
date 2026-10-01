@@ -1,0 +1,7 @@
+# Identical-material resource control reproduces the five pixels
+
+2026-10-01 02:34UTC. Godot4.5.1 Compatibility/llvmpipe, exit0,5 actual PNGs. Only the32native group02 materials are varied, with all other bindings, camera, world and uniforms fixed.
+
+Original StandardMaterial3D → duplicate(false) of that same class/value state changes exactly the5previous pixel coordinates, with maxchannel30. No shader conversion or clip insertion exists in this control. Official un-injected ShaderMaterial and injected ShaderMaterial produce the exact same5-pixel delta. All three trial images are pairwise fullRGBA identical. Original A→restored A2 is fullRGBA identical. Canonical source/copy property controls pass. Original50/51 scene files unchanged.
+
+This proves that replacing material resource identity alone is sufficient to reproduce this difference. Render ordering is a plausible mechanism supported by renderer material-ID sort keys, but the exact internal GPU mechanism is not independently traced. Do not call it a newly introduced shader color error, and do not erase the original failed zero-difference gate. Next use a same-value material-copy baseline alongside the original baseline, requiring zero additional converted-material differences in every tested environment, with original→copy deltas separately reported. No relaxed pixel tolerance. Strict all-reference fidelity remains unaccepted.
