@@ -1,0 +1,292 @@
+{
+  "passed": false,
+  "native_identity": {
+    "checks": {
+      "vertices_exact": true,
+      "ordered_oriented_faces_exact": true,
+      "nonempty": true,
+      "no_modifiers": true,
+      "flat_faces": true,
+      "matrix_identity": true,
+      "effective_visible": true,
+      "edit_groups_exact": true,
+      "edit_group_inventory_exact": true
+    },
+    "groups": [
+      {
+        "name": "CrownA_short_top_folds",
+        "passed": true
+      },
+      {
+        "name": "CrownB_short_top_folds",
+        "passed": true
+      },
+      {
+        "name": "Shared_wide_saddle",
+        "passed": true
+      },
+      {
+        "name": "Low_front_shoulder",
+        "passed": true
+      },
+      {
+        "name": "Top_outer_shared_boundary",
+        "passed": true
+      },
+      {
+        "name": "Side_upper_bulge",
+        "passed": true
+      },
+      {
+        "name": "Side_inset_waist",
+        "passed": true
+      },
+      {
+        "name": "Side_lower_return",
+        "passed": true
+      },
+      {
+        "name": "Belly_A_fold",
+        "passed": true
+      },
+      {
+        "name": "Belly_shared_saddle_fold",
+        "passed": true
+      },
+      {
+        "name": "Belly_B_fold",
+        "passed": true
+      }
+    ],
+    "passed": true,
+    "basic_shared_edge_incidence_two": true,
+    "final_self_intersection_validation": false,
+    "final_continuous_valley_validation": false
+  },
+  "cameras": [
+    {
+      "name": "1216-source-front",
+      "matrix_world": [
+        [
+          0.6853646636009216,
+          0.11998851597309113,
+          -0.7182464599609375,
+          -958.0
+        ],
+        [
+          -0.7282000184059143,
+          0.11293032020330429,
+          -0.6759966611862183,
+          -633.0
+        ],
+        [
+          -2.939170329341323e-08,
+          0.9863313436508179,
+          0.164774090051651,
+          1150.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "projection": [
+        [
+          0.9366548657417297,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.6642794609069824,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0000388622283936,
+          -0.7000135779380798
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "actual_vertex_bounds_normalized": [
+        [
+          0.47488194704055786,
+          0.12577156722545624
+        ],
+        [
+          0.6811100244522095,
+          0.44767194986343384
+        ]
+      ],
+      "depth_range_m": [
+        991.5274658203125,
+        1398.9132080078125
+      ],
+      "resolution_xy": [
+        836,
+        471
+      ],
+      "pixel_aspect_xy": [
+        1.0010626992561105,
+        1.0
+      ],
+      "all_vertices_in_front": true,
+      "actual_vertex_count": 182,
+      "world_loaded": false,
+      "visual_acceptance": false,
+      "expected_reference_projection": [
+        [
+          0.93665486574173,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.66427946090698,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.00003886222839,
+          -0.70001357793808
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "maximum_projection_matrix_error": 3.552713678800501e-15,
+      "passed": true,
+      "crop_permitted_for_exact_reference_camera": true,
+      "reduced_resolution_not_reference_pixel_validation": true,
+      "same_E_camera_matrix": true,
+      "same_E_camera_projection": true
+    },
+    {
+      "name": "shared-side-back",
+      "matrix_world": [
+        [
+          -0.6139405369758606,
+          -0.2163812667131424,
+          0.7591153979301453,
+          1790.6153564453125
+        ],
+        [
+          0.7893522381782532,
+          -0.16829639673233032,
+          0.5904229879379272,
+          1408.5880126953125
+        ],
+        [
+          -9.883301288482471e-08,
+          0.961694061756134,
+          0.27412503957748413,
+          1391.8411865234375
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "projection": [
+        [
+          0.003043601755052805,
+          0.0,
+          0.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.004342066589742899,
+          0.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -0.00011111326602986082,
+          -1.0000388622283936
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "actual_vertex_bounds_normalized": [
+        [
+          0.09700547158718109,
+          -0.06379338353872299
+        ],
+        [
+          0.8741233944892883,
+          0.8127439618110657
+        ]
+      ],
+      "depth_range_m": [
+        2168.955078125,
+        2600.77001953125
+      ],
+      "resolution_xy": [
+        836,
+        586
+      ],
+      "pixel_aspect_xy": [
+        1,
+        1
+      ],
+      "all_vertices_in_front": true,
+      "actual_vertex_count": 182,
+      "world_loaded": false,
+      "visual_acceptance": false,
+      "minimum_margin": -0.06379338353872299,
+      "passed": false,
+      "all_actual_vertices_inside": false,
+      "same_E_camera_matrix": true,
+      "same_E_camera_projection": true
+    }
+  ],
+  "actual_world_bounds": [
+    [
+      3737.5203369322517,
+      493.0,
+      3460.7900752325672
+    ],
+    [
+      4218.098209213623,
+      888.0,
+      3901.9130657828873
+    ]
+  ],
+  "actual_local_uv_y_bounds": [
+    [
+      -259.3323952307605,
+      -207.54039379646875,
+      493.0
+    ],
+    [
+      251.78017420189465,
+      199.96007484409103,
+      888.0
+    ]
+  ],
+  "visual_acceptance": false
+}

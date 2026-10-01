@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-f/source58f.py", line 133, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-f/source58f.py", line 128, in main
+    if args.mode=='build':build(args.out)
+                          ^^^^^^^^^^^^^^^
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-f/source58f.py", line 93, in build
+    assert report['passed'],'Preserve source/checks; camera or source gate failed. No auto-reframe or repair'
+           ~~~~~~^^^^^^^^^^
+AssertionError: Preserve source/checks; camera or source gate failed. No auto-reframe or repair
+
+Error: script failed, file: '/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-f/source58f.py', exiting.

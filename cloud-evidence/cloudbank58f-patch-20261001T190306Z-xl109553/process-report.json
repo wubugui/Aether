@@ -1,0 +1,51 @@
+{
+  "state": "completed",
+  "complete": false,
+  "passed": false,
+  "run_id": "cloudbank58f-patch-20261001T190306Z-xl109553",
+  "commands": [
+    {
+      "job": {
+        "mode": "build",
+        "view": null
+      },
+      "state": "completed",
+      "complete": false,
+      "argv": [
+        "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+        "--factory-startup",
+        "-b",
+        "-t",
+        "2",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-f/source58f.py",
+        "--",
+        "--mode",
+        "build",
+        "--out",
+        "/workspace/scratch/a29d03198654/Aether/cloud-evidence/cloudbank58f-patch-20261001T190306Z-xl109553/outputs"
+      ],
+      "pid": 6,
+      "actual_child_exit_code": 1
+    }
+  ],
+  "images": [],
+  "world_loaded": false,
+  "final_geometry_pass": false,
+  "visual_acceptance": false,
+  "actual_wrapper_exit_code": 1,
+  "error": null,
+  "limit_stop_reason": null,
+  "elapsed_seconds": 0.8727266960013367,
+  "peak_observed_rss_kib": 254420,
+  "actual_peak_child_rss_kib": 259520,
+  "protected_unchanged": true,
+  "prepared_inputs_unchanged": true,
+  "source": {
+    "path": "source-assets/cloud-bank58/revision-f/shared_patch58f.blend",
+    "bytes": 101969,
+    "sha256": "c505c969c4f586075a420e9d2984de710e7c2670a77293dcddae199572f474be"
+  }
+}
