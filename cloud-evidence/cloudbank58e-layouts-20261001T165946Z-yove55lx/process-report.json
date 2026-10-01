@@ -1,0 +1,241 @@
+{
+  "state": "completed",
+  "passed": true,
+  "complete": true,
+  "run_id": "cloudbank58e-layouts-20261001T165946Z-yove55lx",
+  "published_d_preview_commit": "3113f77e62649e3ee1557e8d2b45f5496f951651",
+  "commands": [
+    {
+      "job": {
+        "script": "build58e.py",
+        "args": []
+      },
+      "state": "completed",
+      "complete": true,
+      "argv": [
+        "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+        "--factory-startup",
+        "-b",
+        "-t",
+        "2",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-e/build58e.py",
+        "--",
+        "--out",
+        "/workspace/scratch/a29d03198654/Aether/cloud-evidence/cloudbank58e-layouts-20261001T165946Z-yove55lx/outputs"
+      ],
+      "pid": 7,
+      "actual_child_exit_code": 0
+    },
+    {
+      "job": {
+        "script": "render_one58e.py",
+        "layout": "A_offset_shoulders",
+        "view": "1216-source-front",
+        "args": [
+          "--layout",
+          "A_offset_shoulders",
+          "--view",
+          "1216-source-front"
+        ]
+      },
+      "state": "completed",
+      "complete": true,
+      "argv": [
+        "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+        "--factory-startup",
+        "-b",
+        "-t",
+        "2",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-e/render_one58e.py",
+        "--",
+        "--out",
+        "/workspace/scratch/a29d03198654/Aether/cloud-evidence/cloudbank58e-layouts-20261001T165946Z-yove55lx/outputs",
+        "--layout",
+        "A_offset_shoulders",
+        "--view",
+        "1216-source-front"
+      ],
+      "pid": 33,
+      "actual_child_exit_code": 0
+    },
+    {
+      "job": {
+        "script": "render_one58e.py",
+        "layout": "A_offset_shoulders",
+        "view": "shared-side-back",
+        "args": [
+          "--layout",
+          "A_offset_shoulders",
+          "--view",
+          "shared-side-back"
+        ]
+      },
+      "state": "completed",
+      "complete": true,
+      "argv": [
+        "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+        "--factory-startup",
+        "-b",
+        "-t",
+        "2",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-e/render_one58e.py",
+        "--",
+        "--out",
+        "/workspace/scratch/a29d03198654/Aether/cloud-evidence/cloudbank58e-layouts-20261001T165946Z-yove55lx/outputs",
+        "--layout",
+        "A_offset_shoulders",
+        "--view",
+        "shared-side-back"
+      ],
+      "pid": 52,
+      "actual_child_exit_code": 0
+    },
+    {
+      "job": {
+        "script": "render_one58e.py",
+        "layout": "B_staggered_crowns",
+        "view": "1216-source-front",
+        "args": [
+          "--layout",
+          "B_staggered_crowns",
+          "--view",
+          "1216-source-front"
+        ]
+      },
+      "state": "completed",
+      "complete": true,
+      "argv": [
+        "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+        "--factory-startup",
+        "-b",
+        "-t",
+        "2",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-e/render_one58e.py",
+        "--",
+        "--out",
+        "/workspace/scratch/a29d03198654/Aether/cloud-evidence/cloudbank58e-layouts-20261001T165946Z-yove55lx/outputs",
+        "--layout",
+        "B_staggered_crowns",
+        "--view",
+        "1216-source-front"
+      ],
+      "pid": 71,
+      "actual_child_exit_code": 0
+    },
+    {
+      "job": {
+        "script": "render_one58e.py",
+        "layout": "B_staggered_crowns",
+        "view": "shared-side-back",
+        "args": [
+          "--layout",
+          "B_staggered_crowns",
+          "--view",
+          "shared-side-back"
+        ]
+      },
+      "state": "completed",
+      "complete": true,
+      "argv": [
+        "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+        "--factory-startup",
+        "-b",
+        "-t",
+        "2",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-e/render_one58e.py",
+        "--",
+        "--out",
+        "/workspace/scratch/a29d03198654/Aether/cloud-evidence/cloudbank58e-layouts-20261001T165946Z-yove55lx/outputs",
+        "--layout",
+        "B_staggered_crowns",
+        "--view",
+        "shared-side-back"
+      ],
+      "pid": 90,
+      "actual_child_exit_code": 0
+    }
+  ],
+  "images": [
+    {
+      "layout": "A_offset_shoulders",
+      "view": "1216-source-front",
+      "name": "A_offset_shoulders-1216-source-front.png",
+      "width": 836,
+      "height": 471,
+      "bytes": 325955,
+      "sha256": "8a07ff248d43510b0be0baf94900e271f9d1e00ba3c78944b30cd89e2f83a6bb",
+      "png_crc_complete": true,
+      "decoded_scanline_bytes": 1181739
+    },
+    {
+      "layout": "A_offset_shoulders",
+      "view": "shared-side-back",
+      "name": "A_offset_shoulders-shared-side-back.png",
+      "width": 836,
+      "height": 586,
+      "bytes": 494552,
+      "sha256": "d04c6ac79840b4d6713d5168d6826e8c20dfa728a0d7a6a09261e8716a77abbe",
+      "png_crc_complete": true,
+      "decoded_scanline_bytes": 1470274
+    },
+    {
+      "layout": "B_staggered_crowns",
+      "view": "1216-source-front",
+      "name": "B_staggered_crowns-1216-source-front.png",
+      "width": 836,
+      "height": 471,
+      "bytes": 325806,
+      "sha256": "6b676ea422752d366a42b96b7d7f5d36de1f77be7c0cbc65dd2b305b652bb1b4",
+      "png_crc_complete": true,
+      "decoded_scanline_bytes": 1181739
+    },
+    {
+      "layout": "B_staggered_crowns",
+      "view": "shared-side-back",
+      "name": "B_staggered_crowns-shared-side-back.png",
+      "width": 836,
+      "height": 586,
+      "bytes": 494639,
+      "sha256": "55e0d96efde85df5d1832d8df66a842f88322d008bd7429d8374c46d598fd05f",
+      "png_crc_complete": true,
+      "decoded_scanline_bytes": 1470274
+    }
+  ],
+  "single_shell": false,
+  "world_loaded": false,
+  "visual_acceptance": false,
+  "actual_wrapper_exit_code": 0,
+  "error": null,
+  "limit_stop_reason": null,
+  "elapsed_seconds": 7.146015743999669,
+  "peak_observed_rss_kib": 273564,
+  "actual_peak_child_rss_kib": 288332,
+  "protected_unchanged": true,
+  "prepared_inputs_unchanged": true,
+  "source_files": {
+    "A_offset_shoulders": {
+      "bytes": 92900,
+      "sha256": "cc40c5bf141c76bcb44c1d9d5b8891976ccae90bc8172ace85e111ba9aab38fe"
+    },
+    "B_staggered_crowns": {
+      "bytes": 93100,
+      "sha256": "dcb2cf7d4e743cd8802107f503f3a2ec8e97ad5ba5b2f604d49b5af9283f790d"
+    }
+  },
+  "final_shell_or_corridor_validation": false
+}

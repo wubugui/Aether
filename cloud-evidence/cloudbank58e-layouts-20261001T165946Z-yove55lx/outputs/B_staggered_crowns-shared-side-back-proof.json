@@ -1,0 +1,144 @@
+{
+  "state": "completed",
+  "passed": true,
+  "layout": "B_staggered_crowns",
+  "view": "shared-side-back",
+  "pid": 90,
+  "source_sha256": "dcb2cf7d4e743cd8802107f503f3a2ec8e97ad5ba5b2f604d49b5af9283f790d",
+  "single_shell": false,
+  "visual_acceptance": false,
+  "parts": [
+    {
+      "id": "B_main",
+      "vertices": 47,
+      "triangles": 90,
+      "float32_identity_exact": true,
+      "edge_incidence_two": true,
+      "visible": true
+    },
+    {
+      "id": "B_second",
+      "vertices": 47,
+      "triangles": 90,
+      "float32_identity_exact": true,
+      "edge_incidence_two": true,
+      "visible": true
+    },
+    {
+      "id": "B_saddle",
+      "vertices": 47,
+      "triangles": 90,
+      "float32_identity_exact": true,
+      "edge_incidence_two": true,
+      "visible": true
+    },
+    {
+      "id": "B_front",
+      "vertices": 47,
+      "triangles": 90,
+      "float32_identity_exact": true,
+      "edge_incidence_two": true,
+      "visible": true
+    }
+  ],
+  "camera": {
+    "name": "shared-side-back",
+    "matrix_world": [
+      [
+        -0.6139405369758606,
+        -0.2163812667131424,
+        0.7591153979301453,
+        1790.6153564453125
+      ],
+      [
+        0.7893522381782532,
+        -0.16829639673233032,
+        0.5904229879379272,
+        1408.5880126953125
+      ],
+      [
+        -9.883301288482471e-08,
+        0.961694061756134,
+        0.27412503957748413,
+        1391.8411865234375
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "projection": [
+      [
+        0.003043601755052805,
+        0.0,
+        0.0,
+        -0.0
+      ],
+      [
+        0.0,
+        0.004342066589742899,
+        0.0,
+        -0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -0.00011111326602986082,
+        -1.0000388622283936
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "actual_vertex_bounds_normalized": [
+      [
+        0.0899999737739563,
+        0.11893095821142197
+      ],
+      [
+        0.8740823268890381,
+        0.8810687065124512
+      ]
+    ],
+    "depth_range_m": [
+      2157.12255859375,
+      2588.986328125
+    ],
+    "resolution_xy": [
+      836,
+      586
+    ],
+    "pixel_aspect_xy": [
+      1,
+      1
+    ],
+    "all_vertices_in_front": true,
+    "actual_vertex_count": 188,
+    "world_loaded": false,
+    "visual_acceptance": false,
+    "minimum_margin": 0.0899999737739563,
+    "passed": true,
+    "all_actual_vertices_inside": true
+  },
+  "renderer": {
+    "engine": "CYCLES",
+    "device": "CPU",
+    "samples": 8,
+    "threads": 2,
+    "denoising": false
+  },
+  "material_and_lighting_match_frozen_settings": true,
+  "front_crop_measured_not_reframed": false,
+  "image_sha256": "55e0d96efde85df5d1832d8df66a842f88322d008bd7429d8374c46d598fd05f",
+  "image_bytes": 494639,
+  "source_saved": false,
+  "source_unchanged": true,
+  "elapsed_seconds": 1.4547691269999632,
+  "final_intersection_or_valley_validation_performed": false,
+  "world_loaded": false
+}

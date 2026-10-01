@@ -1,0 +1,171 @@
+{
+  "state": "completed",
+  "passed": true,
+  "layout": "B_staggered_crowns",
+  "view": "1216-source-front",
+  "pid": 71,
+  "source_sha256": "dcb2cf7d4e743cd8802107f503f3a2ec8e97ad5ba5b2f604d49b5af9283f790d",
+  "single_shell": false,
+  "visual_acceptance": false,
+  "parts": [
+    {
+      "id": "B_main",
+      "vertices": 47,
+      "triangles": 90,
+      "float32_identity_exact": true,
+      "edge_incidence_two": true,
+      "visible": true
+    },
+    {
+      "id": "B_second",
+      "vertices": 47,
+      "triangles": 90,
+      "float32_identity_exact": true,
+      "edge_incidence_two": true,
+      "visible": true
+    },
+    {
+      "id": "B_saddle",
+      "vertices": 47,
+      "triangles": 90,
+      "float32_identity_exact": true,
+      "edge_incidence_two": true,
+      "visible": true
+    },
+    {
+      "id": "B_front",
+      "vertices": 47,
+      "triangles": 90,
+      "float32_identity_exact": true,
+      "edge_incidence_two": true,
+      "visible": true
+    }
+  ],
+  "camera": {
+    "name": "1216-source-front",
+    "matrix_world": [
+      [
+        0.6853646636009216,
+        0.11998851597309113,
+        -0.7182464599609375,
+        -958.0
+      ],
+      [
+        -0.7282000184059143,
+        0.11293032020330429,
+        -0.6759966611862183,
+        -633.0
+      ],
+      [
+        -2.939170329341323e-08,
+        0.9863313436508179,
+        0.164774090051651,
+        1150.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "projection": [
+      [
+        0.9366548657417297,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.6642794609069824,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0000388622283936,
+        -0.7000135779380798
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0,
+        0.0
+      ]
+    ],
+    "actual_vertex_bounds_normalized": [
+      [
+        0.4715535044670105,
+        0.1745307296514511
+      ],
+      [
+        0.6731995940208435,
+        0.46436479687690735
+      ]
+    ],
+    "depth_range_m": [
+      992.6018676757812,
+      1388.8218994140625
+    ],
+    "resolution_xy": [
+      836,
+      471
+    ],
+    "pixel_aspect_xy": [
+      1.0010626992561105,
+      1.0
+    ],
+    "all_vertices_in_front": true,
+    "actual_vertex_count": 188,
+    "world_loaded": false,
+    "visual_acceptance": false,
+    "expected_reference_projection": [
+      [
+        0.93665486574173,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.66427946090698,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -1.00003886222839,
+        -0.70001357793808
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0,
+        0.0
+      ]
+    ],
+    "maximum_projection_matrix_error": 3.552713678800501e-15,
+    "passed": true,
+    "crop_permitted_for_exact_reference_camera": true,
+    "reduced_resolution_not_reference_pixel_validation": true
+  },
+  "renderer": {
+    "engine": "CYCLES",
+    "device": "CPU",
+    "samples": 8,
+    "threads": 2,
+    "denoising": false
+  },
+  "material_and_lighting_match_frozen_settings": true,
+  "front_crop_measured_not_reframed": true,
+  "image_sha256": "6b676ea422752d366a42b96b7d7f5d36de1f77be7c0cbc65dd2b305b652bb1b4",
+  "image_bytes": 325806,
+  "source_saved": false,
+  "source_unchanged": true,
+  "elapsed_seconds": 0.5476845140001387,
+  "final_intersection_or_valley_validation_performed": false,
+  "world_loaded": false
+}
