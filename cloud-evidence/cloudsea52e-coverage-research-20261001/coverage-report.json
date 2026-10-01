@@ -1,0 +1,242 @@
+{
+  "method": "Sampled triangle unions of verifiedGLB source meshes at exact saved51b anchors; no AABB filling. Camera projection uses exact recorded1216 poses, verticalFOV62 and near. Diagnostic masks omit every non-CloudSea object/material/lighting; not rendered images or visual acceptance. Old46 GLB follows preserved46->51b geometry lineage;52e exact GLB hashes were verified in build.",
+  "source_files": [
+    {
+      "path": "candidates/round40-exclusive-20260930/project/assets/clouds46/cloud_sea_46_0.glb",
+      "sha256": "49862b2958fbff32b67906ce2a9fc0a9078a6215634959af0c4c1a85379f7d76"
+    },
+    {
+      "path": "candidates/round40-exclusive-20260930/project/assets/clouds46/cloud_sea_46_1.glb",
+      "sha256": "7d7fef5d9f89fb68a1d35badfcf4d0a99f437a14f19f6da381fe4814c0f1a74f"
+    },
+    {
+      "path": "candidates/round40-exclusive-20260930/project/assets/clouds46/cloud_sea_46_2.glb",
+      "sha256": "3f582690e77d864795b29591f4704d81a7b7b98e2188327bc5f7e16ae5ee3632"
+    },
+    {
+      "path": "candidates/round40-exclusive-20260930/project/assets/clouds52e/cloud_sea_52e_0.glb",
+      "sha256": "9c33a3fc5167736786641abb4d29b7098b8a8ead8113076c9db83679716f8a96"
+    },
+    {
+      "path": "candidates/round40-exclusive-20260930/project/assets/clouds52e/cloud_sea_52e_1.glb",
+      "sha256": "b5810f31e6c879b5068188a5dad301e27446c08ddc278e49b88e3385c37baa73"
+    },
+    {
+      "path": "candidates/round40-exclusive-20260930/project/assets/clouds52e/cloud_sea_52e_2.glb",
+      "sha256": "50ea4ec8bdefb1af13e931c0dbddabbad80186ee5a6b6e386afe368f93c8f5fc"
+    }
+  ],
+  "grid": {
+    "roi_xz": [
+      1475,
+      1275,
+      4925,
+      4725
+    ],
+    "step_m": 10,
+    "shape": [
+      345,
+      345
+    ]
+  },
+  "versions": {
+    "46": {
+      "world_triangles": 131540,
+      "interior_topdown_coverage_fraction": 0.9395589161940768,
+      "uncovered_fraction": 0.060441083805923126,
+      "largest_empty_sample_radius_m": 178.88543819998318,
+      "largest_empty_center_xz": [
+        3760.0,
+        1280.0
+      ],
+      "largest_connected_empty_sample_area_m2": 92700,
+      "top_visible_surface_height_percentiles_m": {
+        "0": 642.4311778741874,
+        "10": 721.3422456146033,
+        "50": 821.4023564211031,
+        "90": 986.7739713382502,
+        "100": 1075.624135921916
+      },
+      "camera_cloudsea_triangle_coverage": [
+        {
+          "name": "1216-front",
+          "full_frame_fraction": 0.5871145599346539,
+          "lower_half_fraction": 1.0,
+          "middle_third_fraction": 0.7582324455205811,
+          "upper_third_fraction": 0.0,
+          "size": [
+            295,
+            166
+          ],
+          "camera": [
+            0.685364723205566,
+            0.0,
+            0.72819995880127,
+            0.119988560676575,
+            0.986331343650818,
+            -0.112930417060852,
+            -0.718246459960938,
+            0.164774194359779,
+            0.675996720790863,
+            3000.0,
+            1150.0,
+            4300.0
+          ],
+          "fov": 62.0
+        },
+        {
+          "name": "1216-side",
+          "full_frame_fraction": 0.5796610169491525,
+          "lower_half_fraction": 0.976679599754952,
+          "middle_third_fraction": 0.7707021791767554,
+          "upper_third_fraction": 0.0,
+          "size": [
+            295,
+            166
+          ],
+          "camera": [
+            0.998377561569214,
+            0.0,
+            -0.0569418966770172,
+            -0.00938255432993174,
+            0.986331343650818,
+            -0.164506852626801,
+            0.0561635717749596,
+            0.164774194359779,
+            0.984731018543243,
+            3000.0,
+            1150.0,
+            4300.0
+          ],
+          "fov": 62.0
+        },
+        {
+          "name": "1216-back",
+          "full_frame_fraction": 0.45613641004696753,
+          "lower_half_fraction": 0.8437819072901777,
+          "middle_third_fraction": 0.47312348668280874,
+          "upper_third_fraction": 0.0,
+          "size": [
+            295,
+            166
+          ],
+          "camera": [
+            -0.685364782810211,
+            0.0,
+            -0.728199899196625,
+            -0.119988553225994,
+            0.986331343650818,
+            0.112930424511433,
+            0.718246400356293,
+            0.164774194359779,
+            -0.675996780395508,
+            3000.0,
+            1150.0,
+            4300.0
+          ],
+          "fov": 62.0
+        }
+      ]
+    },
+    "52e": {
+      "world_triangles": 62500,
+      "interior_topdown_coverage_fraction": 0.35242176013442555,
+      "uncovered_fraction": 0.6475782398655745,
+      "largest_empty_sample_radius_m": 370.1351104664349,
+      "largest_empty_center_xz": [
+        2450.0,
+        1280.0
+      ],
+      "largest_connected_empty_sample_area_m2": 7707600,
+      "top_visible_surface_height_percentiles_m": {
+        "0": 747.3725271787451,
+        "10": 820.0217775311636,
+        "50": 913.29733249589,
+        "90": 1009.7207192740208,
+        "100": 1064.9659303082567
+      },
+      "camera_cloudsea_triangle_coverage": [
+        {
+          "name": "1216-front",
+          "full_frame_fraction": 0.3559730447212579,
+          "lower_half_fraction": 0.5447008372472942,
+          "middle_third_fraction": 0.585230024213075,
+          "upper_third_fraction": 0.0,
+          "size": [
+            295,
+            166
+          ],
+          "camera": [
+            0.685364723205566,
+            0.0,
+            0.72819995880127,
+            0.119988560676575,
+            0.986331343650818,
+            -0.112930417060852,
+            -0.718246459960938,
+            0.164774194359779,
+            0.675996720790863,
+            3000.0,
+            1150.0,
+            4300.0
+          ],
+          "fov": 62.0
+        },
+        {
+          "name": "1216-side",
+          "full_frame_fraction": 0.41942005309373087,
+          "lower_half_fraction": 0.6628139677353482,
+          "middle_third_fraction": 0.6676755447941889,
+          "upper_third_fraction": 0.0,
+          "size": [
+            295,
+            166
+          ],
+          "camera": [
+            0.998377561569214,
+            0.0,
+            -0.0569418966770172,
+            -0.00938255432993174,
+            0.986331343650818,
+            -0.164506852626801,
+            0.0561635717749596,
+            0.164774194359779,
+            0.984731018543243,
+            3000.0,
+            1150.0,
+            4300.0
+          ],
+          "fov": 62.0
+        },
+        {
+          "name": "1216-back",
+          "full_frame_fraction": 0.33538901368184604,
+          "lower_half_fraction": 0.5901572391259955,
+          "middle_third_fraction": 0.4511501210653753,
+          "upper_third_fraction": 0.0,
+          "size": [
+            295,
+            166
+          ],
+          "camera": [
+            -0.685364782810211,
+            0.0,
+            -0.728199899196625,
+            -0.119988553225994,
+            0.986331343650818,
+            0.112930424511433,
+            0.718246400356293,
+            0.164774194359779,
+            -0.675996780395508,
+            3000.0,
+            1150.0,
+            4300.0
+          ],
+          "fov": 62.0
+        }
+      ]
+    }
+  },
+  "visual_acceptance": false,
+  "suggested_next_candidate_built": false
+}

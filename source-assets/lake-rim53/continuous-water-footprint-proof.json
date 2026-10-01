@@ -1,0 +1,31 @@
+{
+  "method": "Each baseline saved triangle clipped exactly at Y0, projected into XZ, and unioned using installed GEOS 3.13.1. Difference of every added closed component projection against union of actual dry support is measured. Coordinates serialized to 1nm for polygon operations. This proves no added component projects into a baseline water column, stronger than finite sampling. Crown original body edit is strictly at Y>355 and does not move XZ coordinates. Existing source bodies are retained with native float32 mapping tolerance; dense BVH highest-water comparison separately verifies zero change.",
+  "dry_triangle_polygons": 23053,
+  "results": [
+    {
+      "mountain": "massif_west_spur",
+      "all_new_component_projection_area_m2": 168950.0,
+      "projected_area_outside_actual_saved_y_ge_0_support_m2": 0.0,
+      "continuous_planar_containment_pass": true
+    },
+    {
+      "mountain": "massif_cirque_wall",
+      "all_new_component_projection_area_m2": 108568.99992625036,
+      "projected_area_outside_actual_saved_y_ge_0_support_m2": 2.5849394142282115e-26,
+      "continuous_planar_containment_pass": true
+    },
+    {
+      "mountain": "massif_east_foothill",
+      "all_new_component_projection_area_m2": 324037.5010600068,
+      "projected_area_outside_actual_saved_y_ge_0_support_m2": 2.639562809530177e-12,
+      "continuous_planar_containment_pass": true
+    },
+    {
+      "mountain": "massif_frost_crown",
+      "all_new_component_projection_area_m2": 10173.187623857752,
+      "projected_area_outside_actual_saved_y_ge_0_support_m2": 0.0,
+      "continuous_planar_containment_pass": true
+    }
+  ],
+  "all_added_component_footprints_on_saved_dry_land": true
+}

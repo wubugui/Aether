@@ -1,0 +1,27 @@
+Info: Saved as "massif_west_spur_rim53.blend"
+INFO Draco mesh compression is available, use library at /workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/4.5/scripts/addons_core/io_scene_gltf2/libextern_draco.so
+12:41:03 | INFO: Starting glTF 2.0 export
+12:41:03 | INFO: Extracting primitive: massif_west_spur_saved51b_authoritative_body
+12:41:03 | INFO: Primitives created: 1
+12:41:03 | INFO: Extracting primitive: ridge_shoulders_editable_mesh
+12:41:03 | INFO: Primitives created: 1
+12:41:03 | INFO: Extracting primitive: snow_cap_editable_mesh
+12:41:03 | INFO: Primitives created: 1
+12:41:03 | INFO: Extracting primitive: snow_gully_editable_mesh
+12:41:03 | INFO: Primitives created: 1
+12:41:03 | INFO: Extracting primitive: shore_rock_apron_editable_mesh
+12:41:03 | INFO: Primitives created: 1
+12:41:03 | INFO: Finished glTF 2.0 export in 0.015211820602416992 s
+
+RIM53_SAVED massif_west_spur 5 2596
+LENS_DEBUG shore_rock_apron {'(68, 69)': 3, '(64, 69)': 3, '(145, 146)': 3, '(141, 146)': 3, '(66, 70)': 3, '(143, 147)': 3, '(66, 71)': 3, '(143, 148)': 3, '(70, 75)': 3, '(147, 152)': 3, '(71, 75)': 3, '(148, 152)': 3, '(64, 141)': 3, '(68, 145)': 3, '(75, 152)': 4}
+Blender 4.5.14 LTS (hash 62c1db4208e8 built 2026-09-15 01:31:19)
+Read blend: "/workspace/scratch/a29d03198654/Aether/source-assets/lake-rim53/original_west_spur.blend"
+Read blend: "/workspace/scratch/a29d03198654/Aether/source-assets/lake48/massif_cirque_wall_lake48.blend"
+Traceback (most recent call last):
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/lake-rim53/sculpt_rim53.py", line 199, in <module>
+    assert audit['boundary_edges']==0 and audit['nonmanifold_edges']==0 and audit['degenerate_faces']==0,(name,o.name,audit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('massif_cirque_wall', 'shore_rock_apron', {'mountain': 'massif_cirque_wall', 'component': 'shore_rock_apron', 'vertices': 154, 'triangles': 316, 'boundary_edges': 0, 'nonmanifold_edges': 15, 'degenerate_faces': 0, 'signed_volume': 57148.44864309919, 'bounds': [[759.5714302062988, 19.16132354736328, -2133.0], [915.0, 129.24102783203125, -1510.0]]})
+
+Blender quit
