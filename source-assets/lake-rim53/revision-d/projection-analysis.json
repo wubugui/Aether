@@ -1,0 +1,292 @@
+{
+  "actual_runtime_report": "cloud-evidence/rim53b-world-diagnostic-20261001T052441Z-zv0suI/images/diagnostic-report.json",
+  "actual_runtime_report_sha256": "ab08e3608c145dff685ac9f71f7fd1e2889ee1ad362abd4f48f248d17f08bf2c",
+  "method": "Use the recorded actual optical camera transforms. Recover main projection diagonal by multiplying recorded reflection projection by its1.08 optical overscan. The basis values in runtime text are rounded to6decimals; this analysis predicts projection, not occlusion or graphical acceptance. The next diagnostic records main get_camera_projection and engine unproject_position directly.",
+  "approximate_reference_image_anchors": {
+    "1128": {
+      "pixel": [
+        82,
+        278
+      ],
+      "image_size": [
+        1672,
+        941
+      ],
+      "note": "Visually identified left peak apex, approximate, not a calibrated world correspondence."
+    },
+    "1129": {
+      "pixel": [
+        94,
+        281
+      ],
+      "image_size": [
+        1672,
+        941
+      ],
+      "note": "Visually identified left peak apex, approximate; do not assert it is the exact same world point as1128."
+    }
+  },
+  "cameras": {
+    "1128": {
+      "origin": [
+        1150.0,
+        10.0,
+        -1000.0
+      ],
+      "basis_columns": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.995634,
+          0.093341
+        ],
+        [
+          0.0,
+          -0.093341,
+          0.995634
+        ]
+      ],
+      "projection_x": 0.9006670800000001,
+      "projection_y": 1.6003342800000002,
+      "size": [
+        1179,
+        664
+      ],
+      "keep_aspect": 1,
+      "fov": 64.0,
+      "source_primary_transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 0.995634, 0.093341), Z: (0.0, -0.093341, 0.995634), O: (1150.0, 10.0, -1000.0)]",
+      "source_reflection_projection": "[X: (0.833951, 0.0, 0.0, 0.0), Y: (0.0, 1.481791, 0.0, 0.0), Z: (0.0, 0.0, -1.000039, -1.0), W: (0.0, 0.0, -0.700014, 0.0)]",
+      "optical_overscan": 1.08
+    },
+    "1129": {
+      "origin": [
+        1300.0,
+        7.0,
+        -950.0
+      ],
+      "basis_columns": [
+        [
+          0.97926,
+          0.0,
+          -0.202606
+        ],
+        [
+          0.015417,
+          0.997101,
+          0.074515
+        ],
+        [
+          0.202018,
+          -0.076094,
+          0.976421
+        ]
+      ],
+      "projection_x": 0.8666341200000001,
+      "projection_y": 1.5398650800000002,
+      "size": [
+        1179,
+        664
+      ],
+      "keep_aspect": 1,
+      "fov": 66.0,
+      "source_primary_transform": "[X: (0.97926, 0.0, -0.202606), Y: (0.015417, 0.997101, 0.074515), Z: (0.202018, -0.076094, 0.976421), O: (1300.0, 7.0, -950.0)]",
+      "source_reflection_projection": "[X: (0.802439, 0.0, 0.0, 0.0), Y: (0.0, 1.425801, 0.0, 0.0), Z: (0.0, 0.0, -1.000039, -1.0), W: (0.0, 0.0, -0.700014, 0.0)]",
+      "optical_overscan": 1.08
+    }
+  },
+  "candidate_vertex_projections": [
+    {
+      "revision": "revision-b",
+      "highest_world_vertex": [
+        242.0000000000001,
+        300.12213134765625,
+        -2030.0
+      ],
+      "references": {
+        "1128": {
+          "highest_world_vertex_projection_normalized": [
+            0.11152447460566095,
+            0.3534998690279048
+          ],
+          "uppermost_projected_vertex_world": [
+            259.3333282470704,
+            276.43170166015625,
+            -1783.3333358764648
+          ],
+          "uppermost_projected_vertex_normalized": [
+            0.0016079836017802718,
+            0.30895058133188
+          ],
+          "uppermost_inside_vertex_world": [
+            259.3333282470704,
+            276.43170166015625,
+            -1783.3333358764648
+          ],
+          "uppermost_inside_vertex_normalized": [
+            0.0016079836017802718,
+            0.30895058133188
+          ]
+        },
+        "1129": {
+          "highest_world_vertex_projection_normalized": [
+            0.22560658495688246,
+            0.38337733036667765
+          ],
+          "uppermost_projected_vertex_world": [
+            250.0000000000001,
+            283.99884033203125,
+            -1810.0
+          ],
+          "uppermost_projected_vertex_normalized": [
+            0.15510450339041265,
+            0.359403086330807
+          ],
+          "uppermost_inside_vertex_world": [
+            250.0000000000001,
+            283.99884033203125,
+            -1810.0
+          ],
+          "uppermost_inside_vertex_normalized": [
+            0.15510450339041265,
+            0.359403086330807
+          ]
+        }
+      }
+    },
+    {
+      "revision": "revision-c",
+      "highest_world_vertex": [
+        242.0000000000001,
+        300.00927734375,
+        -2030.0
+      ],
+      "references": {
+        "1128": {
+          "highest_world_vertex_projection_normalized": [
+            0.11152058683220006,
+            0.35358382007641814
+          ],
+          "uppermost_projected_vertex_world": [
+            250.0000000000001,
+            285.0201416015625,
+            -1810.0
+          ],
+          "uppermost_projected_vertex_normalized": [
+            0.012938912476892106,
+            0.3094013138388614
+          ],
+          "uppermost_inside_vertex_world": [
+            250.0000000000001,
+            285.0201416015625,
+            -1810.0
+          ],
+          "uppermost_inside_vertex_normalized": [
+            0.012938912476892106,
+            0.3094013138388614
+          ]
+        },
+        "1129": {
+          "highest_world_vertex_projection_normalized": [
+            0.2256047591246872,
+            0.3834436861974321
+          ],
+          "uppermost_projected_vertex_world": [
+            250.0000000000001,
+            285.0201416015625,
+            -1810.0
+          ],
+          "uppermost_projected_vertex_normalized": [
+            0.15512948344906435,
+            0.3586825556149853
+          ],
+          "uppermost_inside_vertex_world": [
+            250.0000000000001,
+            285.0201416015625,
+            -1810.0
+          ],
+          "uppermost_inside_vertex_normalized": [
+            0.15512948344906435,
+            0.3586825556149853
+          ]
+        }
+      }
+    },
+    {
+      "revision": "revision-d",
+      "highest_world_vertex": [
+        245.0000000000001,
+        324.7420349121094,
+        -1880.0
+      ],
+      "references": {
+        "1128": {
+          "highest_world_vertex_projection_normalized": [
+            0.049933146383426386,
+            0.2956781088776128
+          ],
+          "uppermost_projected_vertex_world": [
+            245.0000000000001,
+            324.7420349121094,
+            -1880.0
+          ],
+          "uppermost_projected_vertex_normalized": [
+            0.049933146383426386,
+            0.2956781088776128
+          ],
+          "uppermost_inside_vertex_world": [
+            245.0000000000001,
+            324.7420349121094,
+            -1880.0
+          ],
+          "uppermost_inside_vertex_normalized": [
+            0.049933146383426386,
+            0.2956781088776128
+          ]
+        },
+        "1129": {
+          "highest_world_vertex_projection_normalized": [
+            0.18043666286836518,
+            0.3445472325254291
+          ],
+          "uppermost_projected_vertex_world": [
+            245.0000000000001,
+            324.7420349121094,
+            -1880.0
+          ],
+          "uppermost_projected_vertex_normalized": [
+            0.18043666286836518,
+            0.3445472325254291
+          ],
+          "uppermost_inside_vertex_world": [
+            245.0000000000001,
+            324.7420349121094,
+            -1880.0
+          ],
+          "uppermost_inside_vertex_normalized": [
+            0.18043666286836518,
+            0.3445472325254291
+          ]
+        }
+      }
+    }
+  ],
+  "selected_design": {
+    "main_rock_crest": [
+      245,
+      323.5,
+      -1880
+    ],
+    "north_rock_crest": [
+      222,
+      283,
+      -2045
+    ],
+    "basis": "The visible silhouette problem is the closer southern shoulder, not merely the highest world-space vertex. Move the nearer crest about70\u201397m north and reshape its height to place the snowy main apex inside original1128 at roughly5% width/30% height. Reduce the farther crest to a secondary shoulder. Retain the same dry footprint and actual buildings.",
+    "remaining_gap": "Projected1129 peak remains farther right/lower than the approximate reference left apex. No claim of matching one mountain to both reference peak anchors; wider surrounding ridge composition remains incomplete."
+  },
+  "graphical_acceptance": false
+}
