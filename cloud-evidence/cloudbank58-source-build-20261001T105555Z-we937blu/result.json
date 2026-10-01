@@ -1,0 +1,67 @@
+{
+  "complete": true,
+  "commands": [
+    {
+      "phase": "build",
+      "argv": [
+        "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+        "-b",
+        "-t",
+        "2",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/build58.py"
+      ],
+      "started_utc": "2026-10-01T10:55:55.047747+00:00",
+      "exit_code": 0,
+      "finished_utc": "2026-10-01T10:55:57.067241+00:00",
+      "hard_errors": []
+    },
+    {
+      "phase": "verify",
+      "argv": [
+        "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+        "-b",
+        "-t",
+        "2",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/verify58.py"
+      ],
+      "started_utc": "2026-10-01T10:55:57.067757+00:00",
+      "exit_code": 0,
+      "finished_utc": "2026-10-01T10:56:02.197446+00:00",
+      "hard_errors": []
+    }
+  ],
+  "wall_seconds": 7.15154551800515,
+  "peak_child_rss_kib": 549960,
+  "rendered": false,
+  "world_launched": false,
+  "visual_acceptance": false,
+  "hardware_gpu_acceptance": false,
+  "source_hashes": {
+    "CloudBank58_upper_west_layer.glb": {
+      "sha256": "fbeed4211ef1a8d694b9db1999c82ff588dc76538de7909c4833a6dd12ec7622",
+      "bytes": 35172
+    },
+    "CloudBank58_upper_east_layer.glb": {
+      "sha256": "9564fd115142c4fdac1aa245e14e555830e4a45ae34ef2cafd4c4978089cfd4f",
+      "bytes": 35080
+    },
+    "CloudBank58_upper_far_veil.glb": {
+      "sha256": "f6854fbdaa566a1ebfc4f87e8e18c78290fe9f862676b44dfac614b892aa1801",
+      "bytes": 35252
+    },
+    "cloud_bank58.blend": {
+      "sha256": "b5bd51e5b8ec179335139c5149eb4e247eb893a98cf73e4900068a93bfd9dfe0",
+      "bytes": 1450776
+    },
+    "CloudBank58_four_root_continuous_volume.glb": {
+      "sha256": "dd69533259e6c9414ae80557b8b9fd0baf4a616b933a6c1a127c21dbc9eaf8c6",
+      "bytes": 690356
+    }
+  }
+}

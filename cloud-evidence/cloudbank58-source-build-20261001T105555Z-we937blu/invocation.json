@@ -1,0 +1,40 @@
+{
+  "commands": [
+    {
+      "phase": "build",
+      "argv": [
+        "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+        "-b",
+        "-t",
+        "2",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/build58.py"
+      ],
+      "started_utc": "2026-10-01T10:55:55.047747+00:00",
+      "exit_code": 0,
+      "finished_utc": "2026-10-01T10:55:57.067241+00:00",
+      "hard_errors": []
+    },
+    {
+      "phase": "verify",
+      "argv": [
+        "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+        "-b",
+        "-t",
+        "2",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/verify58.py"
+      ],
+      "started_utc": "2026-10-01T10:55:57.067757+00:00",
+      "exit_code": 0,
+      "finished_utc": "2026-10-01T10:56:02.197446+00:00"
+    }
+  ],
+  "threads": 2,
+  "rendered": false,
+  "world_launched": false
+}

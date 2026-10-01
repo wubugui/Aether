@@ -1,0 +1,2196 @@
+{
+  "native_source_geometry_passed": true,
+  "native_controls_match_recipe": true,
+  "geometry": [
+    {
+      "name": "CloudBank58_four_root_continuous_volume",
+      "passed": true,
+      "vertices": 3026,
+      "triangles": 6048,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "components": [
+        3026
+      ],
+      "nonadjacent_triangle_overlap_count": 0,
+      "overlap_pairs": [],
+      "duplicate_triangles": 0,
+      "zero_area_triangles": 0,
+      "signed_volume_m3": 2038527564.3630848,
+      "world_bounds": [
+        [
+          2554.2587890625,
+          249.12542724609375,
+          2369.1396484375
+        ],
+        [
+          4991.47705078125,
+          1136.1566467285156,
+          4790.8924560546875
+        ]
+      ],
+      "glb_oriented_triangle_correspondence": true,
+      "glb_vertex_error_m": 0.0006905339541845024,
+      "internal_caps": 0,
+      "source_shader_or_material_changed": false
+    },
+    {
+      "name": "CloudBank58_upper_west_layer",
+      "passed": true,
+      "vertices": 154,
+      "triangles": 304,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "components": [
+        154
+      ],
+      "nonadjacent_triangle_overlap_count": 0,
+      "overlap_pairs": [],
+      "duplicate_triangles": 0,
+      "zero_area_triangles": 0,
+      "signed_volume_m3": 11940157.450096792,
+      "world_bounds": [
+        [
+          2704.2647705078125,
+          1462.8239135742188,
+          2633.0494995117188
+        ],
+        [
+          3542.6655883789062,
+          1621.740234375,
+          3023.2022705078125
+        ]
+      ],
+      "glb_oriented_triangle_correspondence": true,
+      "glb_vertex_error_m": 0.00027295752079226077,
+      "internal_caps": 0,
+      "source_shader_or_material_changed": false
+    },
+    {
+      "name": "CloudBank58_upper_east_layer",
+      "passed": true,
+      "vertices": 154,
+      "triangles": 304,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "components": [
+        154
+      ],
+      "nonadjacent_triangle_overlap_count": 0,
+      "overlap_pairs": [],
+      "duplicate_triangles": 0,
+      "zero_area_triangles": 0,
+      "signed_volume_m3": 11120859.139533898,
+      "world_bounds": [
+        [
+          4117.816223144531,
+          1594.44970703125,
+          3737.7843017578125
+        ],
+        [
+          4895.2021484375,
+          1741.5201416015625,
+          4173.572082519531
+        ]
+      ],
+      "glb_oriented_triangle_correspondence": true,
+      "glb_vertex_error_m": 0.0005459150415845215,
+      "internal_caps": 0,
+      "source_shader_or_material_changed": false
+    },
+    {
+      "name": "CloudBank58_upper_far_veil",
+      "passed": true,
+      "vertices": 154,
+      "triangles": 304,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "components": [
+        154
+      ],
+      "nonadjacent_triangle_overlap_count": 0,
+      "overlap_pairs": [],
+      "duplicate_triangles": 0,
+      "zero_area_triangles": 0,
+      "signed_volume_m3": 5592730.478102583,
+      "world_bounds": [
+        [
+          3797.791097640991,
+          1335.6695556640625,
+          2370.228271484375
+        ],
+        [
+          4811.33984375,
+          1433.2654418945312,
+          2638.3755493164062
+        ]
+      ],
+      "glb_oriented_triangle_correspondence": true,
+      "glb_vertex_error_m": 0.0005459150415845215,
+      "internal_caps": 0,
+      "source_shader_or_material_changed": false
+    }
+  ],
+  "native_ocean_y": 0.0,
+  "bank_bottom_altitude_above_saved_ocean_m": [
+    249.12542724609375,
+    421.8001403808594
+  ],
+  "external_root_count": 21,
+  "external_mesh_count": 105,
+  "external_root_contacts": [
+    {
+      "root": "CloudSea_-1_-1",
+      "mesh": "CloudSea52f_v1_low_drift",
+      "world_bounds": [
+        [
+          1939.8953890831474,
+          476.0614013671875,
+          1260.3053261971356
+        ],
+        [
+          2918.8841128533477,
+          855.3852233886719,
+          2535.8592243519224
+        ]
+      ],
+      "bvh_surface_overlap_pair_count": 0,
+      "first_pairs": [],
+      "interpretation": "Actual triangle BVH overlaps; contacts/intersections require visual review and are not an accepted boundary blend"
+    },
+    {
+      "root": "CloudSea_-1_0",
+      "mesh": "CloudSea52e_v2_main_ridge",
+      "world_bounds": [
+        [
+          2026.2705345471993,
+          665.0,
+          2339.8923961067703
+        ],
+        [
+          2694.9696502880347,
+          1050.0,
+          2850.661579576243
+        ]
+      ],
+      "bvh_surface_overlap_pair_count": 0,
+      "first_pairs": [],
+      "interpretation": "Actual triangle BVH overlaps; contacts/intersections require visual review and are not an accepted boundary blend"
+    },
+    {
+      "root": "CloudSea_-1_0",
+      "mesh": "CloudSea52f_v2_low_saddle",
+      "world_bounds": [
+        [
+          1339.1425733978472,
+          511.8811492919922,
+          2535.2698845681907
+        ],
+        [
+          2728.0320900432407,
+          882.695556640625,
+          3399.016411081754
+        ]
+      ],
+      "bvh_surface_overlap_pair_count": 92,
+      "first_pairs": [
+        [
+          1338,
+          2077
+        ],
+        [
+          1338,
+          436
+        ],
+        [
+          1339,
+          461
+        ],
+        [
+          1339,
+          2122
+        ],
+        [
+          1339,
+          460
+        ],
+        [
+          1339,
+          2077
+        ],
+        [
+          1339,
+          455
+        ],
+        [
+          1339,
+          2123
+        ],
+        [
+          1339,
+          457
+        ],
+        [
+          1341,
+          436
+        ],
+        [
+          1341,
+          2076
+        ],
+        [
+          1341,
+          430
+        ]
+      ],
+      "interpretation": "Actual triangle BVH overlaps; contacts/intersections require visual review and are not an accepted boundary blend"
+    },
+    {
+      "root": "CloudSea_-1_0",
+      "mesh": "CloudSea52f_v2_low_drift",
+      "world_bounds": [
+        [
+          1440.302060927279,
+          484.59735107421875,
+          3074.667098372678
+        ],
+        [
+          2793.5746116399537,
+          846.8042755126953,
+          3771.4360649182327
+        ]
+      ],
+      "bvh_surface_overlap_pair_count": 105,
+      "first_pairs": [
+        [
+          1233,
+          1944
+        ],
+        [
+          1233,
+          1547
+        ],
+        [
+          1233,
+          34
+        ],
+        [
+          1233,
+          1533
+        ],
+        [
+          1232,
+          1944
+        ],
+        [
+          1232,
+          1971
+        ],
+        [
+          1232,
+          377
+        ],
+        [
+          1160,
+          1526
+        ],
+        [
+          1160,
+          1521
+        ],
+        [
+          1229,
+          1971
+        ],
+        [
+          1229,
+          379
+        ],
+        [
+          1161,
+          1533
+        ]
+      ],
+      "interpretation": "Actual triangle BVH overlaps; contacts/intersections require visual review and are not an accepted boundary blend"
+    },
+    {
+      "root": "CloudSea_-1_1",
+      "mesh": "CloudSea52e_v0_main_ridge",
+      "world_bounds": [
+        [
+          2244.4113383727417,
+          670.0,
+          3958.4539789902283
+        ],
+        [
+          2861.0568314074535,
+          1055.0,
+          4518.156675708208
+        ]
+      ],
+      "bvh_surface_overlap_pair_count": 125,
+      "first_pairs": [
+        [
+          3833,
+          10
+        ],
+        [
+          3833,
+          525
+        ],
+        [
+          3833,
+          518
+        ],
+        [
+          3832,
+          529
+        ],
+        [
+          3832,
+          525
+        ],
+        [
+          3832,
+          23
+        ],
+        [
+          3832,
+          531
+        ],
+        [
+          3756,
+          51
+        ],
+        [
+          3756,
+          53
+        ],
+        [
+          3756,
+          54
+        ],
+        [
+          3756,
+          560
+        ],
+        [
+          3760,
+          28
+        ]
+      ],
+      "interpretation": "Actual triangle BVH overlaps; contacts/intersections require visual review and are not an accepted boundary blend"
+    },
+    {
+      "root": "CloudSea_-1_2",
+      "mesh": "CloudSea52f_v1_low_saddle",
+      "world_bounds": [
+        [
+          1595.9785143423676,
+          518.0720520019531,
+          4788.5732205928725
+        ],
+        [
+          2639.2911802115173,
+          889.2968444824219,
+          5933.334937340321
+        ]
+      ],
+      "bvh_surface_overlap_pair_count": 0,
+      "first_pairs": [],
+      "interpretation": "Actual triangle BVH overlaps; contacts/intersections require visual review and are not an accepted boundary blend"
+    },
+    {
+      "root": "CloudSea_0_-1",
+      "mesh": "CloudSea52e_v1_main_ridge",
+      "world_bounds": [
+        [
+          3088.1527044783447,
+          680.0,
+          1992.637187773047
+        ],
+        [
+          3644.7650789960035,
+          1065.0,
+          2615.060004246722
+        ]
+      ],
+      "bvh_surface_overlap_pair_count": 0,
+      "first_pairs": [],
+      "interpretation": "Actual triangle BVH overlaps; contacts/intersections require visual review and are not an accepted boundary blend"
+    },
+    {
+      "root": "CloudSea_0_-1",
+      "mesh": "CloudSea52f_v1_low_saddle",
+      "world_bounds": [
+        [
+          2745.978514342368,
+          518.0720520019531,
+          1338.5732205928725
+        ],
+        [
+          3789.2911802115173,
+          889.2968444824219,
+          2483.3349373403207
+        ]
+      ],
+      "bvh_surface_overlap_pair_count": 50,
+      "first_pairs": [
+        [
+          1307,
+          153
+        ],
+        [
+          1307,
+          1625
+        ],
+        [
+          1307,
+          152
+        ],
+        [
+          1307,
+          1624
+        ],
+        [
+          1307,
+          1623
+        ],
+        [
+          1307,
+          1631
+        ],
+        [
+          1307,
+          1628
+        ],
+        [
+          16,
+          1801
+        ],
+        [
+          16,
+          1804
+        ],
+        [
+          16,
+          150
+        ],
+        [
+          16,
+          1800
+        ],
+        [
+          1304,
+          153
+        ]
+      ],
+      "interpretation": "Actual triangle BVH overlaps; contacts/intersections require visual review and are not an accepted boundary blend"
+    },
+    {
+      "root": "CloudSea_0_2",
+      "mesh": "CloudSea52e_v1_main_ridge",
+      "world_bounds": [
+        [
+          2796.9136070073714,
+          680.0,
+          4543.647938438589
+        ],
+        [
+          3413.4702233869866,
+          1065.0,
+          5128.599969326367
+        ]
+      ],
+      "bvh_surface_overlap_pair_count": 0,
+      "first_pairs": [],
+      "interpretation": "Actual triangle BVH overlaps; contacts/intersections require visual review and are not an accepted boundary blend"
+    },
+    {
+      "root": "CloudSea_0_2",
+      "mesh": "CloudSea52f_v1_low_saddle",
+      "world_bounds": [
+        [
+          2554.456169007494,
+          518.0720520019531,
+          4721.180691520543
+        ],
+        [
+          3718.4777967625423,
+          889.2968444824219,
+          5731.205301578635
+        ]
+      ],
+      "bvh_surface_overlap_pair_count": 56,
+      "first_pairs": [
+        [
+          4323,
+          2083
+        ],
+        [
+          4323,
+          2093
+        ],
+        [
+          4323,
+          401
+        ],
+        [
+          4323,
+          2090
+        ],
+        [
+          4325,
+          685
+        ],
+        [
+          4325,
+          2090
+        ],
+        [
+          4325,
+          2089
+        ],
+        [
+          4322,
+          686
+        ],
+        [
+          4322,
+          685
+        ],
+        [
+          4322,
+          2082
+        ],
+        [
+          4322,
+          404
+        ],
+        [
+          4322,
+          403
+        ]
+      ],
+      "interpretation": "Actual triangle BVH overlaps; contacts/intersections require visual review and are not an accepted boundary blend"
+    },
+    {
+      "root": "CloudSea_1_-1",
+      "mesh": "CloudSea52e_v1_offset_shoulder",
+      "world_bounds": [
+        [
+          3915.8134988687234,
+          795.0,
+          1811.3757485089202
+        ],
+        [
+          4326.821523021565,
+          1035.0,
+          2411.0213840492193
+        ]
+      ],
+      "bvh_surface_overlap_pair_count": 0,
+      "first_pairs": [],
+      "interpretation": "Actual triangle BVH overlaps; contacts/intersections require visual review and are not an accepted boundary blend"
+    },
+    {
+      "root": "CloudSea_1_-1",
+      "mesh": "CloudSea52f_v1_low_drift",
+      "world_bounds": [
+        [
+          4071.709194958614,
+          476.0614013671875,
+          1441.5578016001148
+        ],
+        [
+          5242.558416992107,
+          855.3852233886719,
+          2521.10968714563
+        ]
+      ],
+      "bvh_surface_overlap_pair_count": 167,
+      "first_pairs": [
+        [
+          1533,
+          2868
+        ],
+        [
+          1533,
+          2859
+        ],
+        [
+          1533,
+          2860
+        ],
+        [
+          1532,
+          2828
+        ],
+        [
+          1532,
+          2859
+        ],
+        [
+          2818,
+          2828
+        ],
+        [
+          2818,
+          1134
+        ],
+        [
+          2819,
+          1134
+        ],
+        [
+          2817,
+          1132
+        ],
+        [
+          2817,
+          2850
+        ],
+        [
+          2817,
+          1151
+        ],
+        [
+          2817,
+          1128
+        ]
+      ],
+      "interpretation": "Actual triangle BVH overlaps; contacts/intersections require visual review and are not an accepted boundary blend"
+    },
+    {
+      "root": "CloudSea_1_2",
+      "mesh": "CloudSea52e_v1_offset_shoulder",
+      "world_bounds": [
+        [
+          4396.814006949887,
+          795.0,
+          4788.506772230832
+        ],
+        [
+          4811.108355122763,
+          1035.0,
+          5363.727771023463
+        ]
+      ],
+      "bvh_surface_overlap_pair_count": 0,
+      "first_pairs": [],
+      "interpretation": "Actual triangle BVH overlaps; contacts/intersections require visual review and are not an accepted boundary blend"
+    },
+    {
+      "root": "CloudSea_1_2",
+      "mesh": "CloudSea52f_v1_low_drift",
+      "world_bounds": [
+        [
+          3456.38293103006,
+          476.0614013671875,
+          4651.730517237201
+        ],
+        [
+          4707.955973587069,
+          855.3852233886719,
+          5606.874902831198
+        ]
+      ],
+      "bvh_surface_overlap_pair_count": 177,
+      "first_pairs": [
+        [
+          4321,
+          467
+        ],
+        [
+          4321,
+          2041
+        ],
+        [
+          4321,
+          468
+        ],
+        [
+          4321,
+          466
+        ],
+        [
+          4321,
+          2039
+        ],
+        [
+          4321,
+          460
+        ],
+        [
+          4321,
+          2038
+        ],
+        [
+          4393,
+          2048
+        ],
+        [
+          4393,
+          2047
+        ],
+        [
+          4392,
+          460
+        ],
+        [
+          4392,
+          459
+        ],
+        [
+          4392,
+          2035
+        ]
+      ],
+      "interpretation": "Actual triangle BVH overlaps; contacts/intersections require visual review and are not an accepted boundary blend"
+    },
+    {
+      "root": "CloudSea_2_0",
+      "mesh": "CloudSea52e_v2_main_ridge",
+      "world_bounds": [
+        [
+          4690.76433616758,
+          665.0,
+          3005.4439911147315
+        ],
+        [
+          5434.330023762572,
+          1050.0,
+          3469.691407055235
+        ]
+      ],
+      "bvh_surface_overlap_pair_count": 105,
+      "first_pairs": [
+        [
+          2875,
+          41
+        ],
+        [
+          2872,
+          41
+        ],
+        [
+          2872,
+          583
+        ],
+        [
+          2872,
+          603
+        ],
+        [
+          2872,
+          40
+        ],
+        [
+          2872,
+          581
+        ],
+        [
+          2589,
+          41
+        ],
+        [
+          2589,
+          40
+        ],
+        [
+          2589,
+          581
+        ],
+        [
+          2873,
+          603
+        ],
+        [
+          2874,
+          41
+        ],
+        [
+          2874,
+          582
+        ]
+      ],
+      "interpretation": "Actual triangle BVH overlaps; contacts/intersections require visual review and are not an accepted boundary blend"
+    },
+    {
+      "root": "CloudSea_2_0",
+      "mesh": "CloudSea52f_v2_low_saddle",
+      "world_bounds": [
+        [
+          4749.6519629077275,
+          511.8811492919922,
+          2402.6333396583846
+        ],
+        [
+          6217.5815154416705,
+          882.695556640625,
+          3357.4298387740596
+        ]
+      ],
+      "bvh_surface_overlap_pair_count": 102,
+      "first_pairs": [
+        [
+          2868,
+          302
+        ],
+        [
+          2868,
+          105
+        ],
+        [
+          2868,
+          106
+        ],
+        [
+          2445,
+          302
+        ],
+        [
+          2444,
+          302
+        ],
+        [
+          2444,
+          1899
+        ],
+        [
+          2444,
+          1883
+        ],
+        [
+          2444,
+          1637
+        ],
+        [
+          2869,
+          106
+        ],
+        [
+          2869,
+          107
+        ],
+        [
+          2869,
+          1660
+        ],
+        [
+          2869,
+          119
+        ]
+      ],
+      "interpretation": "Actual triangle BVH overlaps; contacts/intersections require visual review and are not an accepted boundary blend"
+    },
+    {
+      "root": "CloudSea_2_1",
+      "mesh": "CloudSea52e_v0_main_ridge",
+      "world_bounds": [
+        [
+          4846.5377966048245,
+          670.0,
+          3490.5705792411163
+        ],
+        [
+          5307.897073920625,
+          1055.0,
+          4210.261161630692
+        ]
+      ],
+      "bvh_surface_overlap_pair_count": 26,
+      "first_pairs": [
+        [
+          4964,
+          616
+        ],
+        [
+          4964,
+          613
+        ],
+        [
+          4964,
+          614
+        ],
+        [
+          4965,
+          616
+        ],
+        [
+          4965,
+          106
+        ],
+        [
+          4965,
+          618
+        ],
+        [
+          4892,
+          613
+        ],
+        [
+          4892,
+          69
+        ],
+        [
+          4892,
+          70
+        ],
+        [
+          4892,
+          68
+        ],
+        [
+          5842,
+          4
+        ],
+        [
+          5842,
+          618
+        ]
+      ],
+      "interpretation": "Actual triangle BVH overlaps; contacts/intersections require visual review and are not an accepted boundary blend"
+    }
+  ],
+  "exterior_boundary_samples": [
+    {
+      "source_vertex": 722,
+      "world": [
+        2714.500732421875,
+        590.2877960205078,
+        2419.1666259765625
+      ],
+      "nearest_external_triangle_distance_m": 78.96246199978445
+    },
+    {
+      "source_vertex": 730,
+      "world": [
+        3160.8676147460938,
+        614.8470230102539,
+        2452.6724853515625
+      ],
+      "nearest_external_triangle_distance_m": 84.11933134682037
+    },
+    {
+      "source_vertex": 738,
+      "world": [
+        3676.670051574707,
+        603.0656204223633,
+        2477.198486328125
+      ],
+      "nearest_external_triangle_distance_m": 177.95485283107888
+    },
+    {
+      "source_vertex": 746,
+      "world": [
+        2656.745361328125,
+        613.555061340332,
+        3226.2492065429688
+      ],
+      "nearest_external_triangle_distance_m": 15.37222199028413
+    },
+    {
+      "source_vertex": 754,
+      "world": [
+        2657.3900146484375,
+        571.6874847412109,
+        2726.5626831054688
+      ],
+      "nearest_external_triangle_distance_m": 5.822889870217041
+    },
+    {
+      "source_vertex": 762,
+      "world": [
+        2832.5921020507812,
+        448.7330780029297,
+        2457.8428955078125
+      ],
+      "nearest_external_triangle_distance_m": 135.53026220818293
+    },
+    {
+      "source_vertex": 770,
+      "world": [
+        3342.408203125,
+        478.264892578125,
+        2462.0438232421875
+      ],
+      "nearest_external_triangle_distance_m": 232.50916678283406
+    },
+    {
+      "source_vertex": 778,
+      "world": [
+        2626.7159423828125,
+        439.7613525390625,
+        3471.9770126342773
+      ],
+      "nearest_external_triangle_distance_m": 64.6630425337374
+    },
+    {
+      "source_vertex": 786,
+      "world": [
+        2687.394287109375,
+        421.43365478515625,
+        3050.0416870117188
+      ],
+      "nearest_external_triangle_distance_m": 217.5667491786257
+    },
+    {
+      "source_vertex": 794,
+      "world": [
+        2701.82861328125,
+        422.2606201171875,
+        2533.86279296875
+      ],
+      "nearest_external_triangle_distance_m": 187.01826198730177
+    },
+    {
+      "source_vertex": 1486,
+      "world": [
+        4226.441223144531,
+        549.7365875244141,
+        2381.7388916015625
+      ],
+      "nearest_external_triangle_distance_m": 52.290060343353645
+    },
+    {
+      "source_vertex": 1494,
+      "world": [
+        4746.833190917969,
+        622.8019256591797,
+        2410.4453125
+      ],
+      "nearest_external_triangle_distance_m": 30.265581638828678
+    },
+    {
+      "source_vertex": 1502,
+      "world": [
+        4968.1160888671875,
+        592.0795288085938,
+        2726.7103881835938
+      ],
+      "nearest_external_triangle_distance_m": 118.27770986016334
+    },
+    {
+      "source_vertex": 1510,
+      "world": [
+        4968.9610595703125,
+        572.4009323120117,
+        3223.819793701172
+      ],
+      "nearest_external_triangle_distance_m": 83.93397319083327
+    },
+    {
+      "source_vertex": 1518,
+      "world": [
+        3969.9456481933594,
+        387.721435546875,
+        2446.012451171875
+      ],
+      "nearest_external_triangle_distance_m": 201.15096796567224
+    },
+    {
+      "source_vertex": 1526,
+      "world": [
+        4487.081237792969,
+        433.80535888671875,
+        2398.31396484375
+      ],
+      "nearest_external_triangle_distance_m": 119.16881461774325
+    },
+    {
+      "source_vertex": 1534,
+      "world": [
+        4950.669189453125,
+        496.68861389160156,
+        2484.0595703125
+      ],
+      "nearest_external_triangle_distance_m": 152.2520006690476
+    },
+    {
+      "source_vertex": 1542,
+      "world": [
+        4940.7313232421875,
+        421.1707763671875,
+        2980.8432006835938
+      ],
+      "nearest_external_triangle_distance_m": 124.30192242403056
+    },
+    {
+      "source_vertex": 1550,
+      "world": [
+        4877.771240234375,
+        381.0735168457031,
+        3471.95304107666
+      ],
+      "nearest_external_triangle_distance_m": 318.1303316722514
+    },
+    {
+      "source_vertex": 2242,
+      "world": [
+        3414.0388793945312,
+        604.4307022094727,
+        4747.4083251953125
+      ],
+      "nearest_external_triangle_distance_m": 74.40311728599956
+    },
+    {
+      "source_vertex": 2250,
+      "world": [
+        2902.6480102539062,
+        582.0942306518555,
+        4746.9725341796875
+      ],
+      "nearest_external_triangle_distance_m": 110.62146015669204
+    },
+    {
+      "source_vertex": 2258,
+      "world": [
+        2620.8062744140625,
+        635.5639724731445,
+        4440.929931640625
+      ],
+      "nearest_external_triangle_distance_m": 109.05315026095913
+    },
+    {
+      "source_vertex": 2266,
+      "world": [
+        2595.411865234375,
+        587.8220520019531,
+        3946.7420654296875
+      ],
+      "nearest_external_triangle_distance_m": 179.33414987397015
+    },
+    {
+      "source_vertex": 2274,
+      "world": [
+        3663.0277786254883,
+        440.337158203125,
+        4760.2952880859375
+      ],
+      "nearest_external_triangle_distance_m": 142.24766556361496
+    },
+    {
+      "source_vertex": 2282,
+      "world": [
+        3160.66015625,
+        452.55860900878906,
+        4735.064453125
+      ],
+      "nearest_external_triangle_distance_m": 210.47483682206078
+    },
+    {
+      "source_vertex": 2290,
+      "world": [
+        2658.8409423828125,
+        437.15850830078125,
+        4683.3385009765625
+      ],
+      "nearest_external_triangle_distance_m": 214.21366452350352
+    },
+    {
+      "source_vertex": 2298,
+      "world": [
+        2585.224609375,
+        483.2544860839844,
+        4192.1641845703125
+      ],
+      "nearest_external_triangle_distance_m": 208.30929068017772
+    },
+    {
+      "source_vertex": 2306,
+      "world": [
+        2606.13916015625,
+        452.8127899169922,
+        3688.0544967651367
+      ],
+      "nearest_external_triangle_distance_m": 132.96170699315635
+    },
+    {
+      "source_vertex": 2962,
+      "world": [
+        4896.9307861328125,
+        623.4020080566406,
+        4005.748779296875
+      ],
+      "nearest_external_triangle_distance_m": 109.92627304458655
+    },
+    {
+      "source_vertex": 2970,
+      "world": [
+        4953.5146484375,
+        618.9497528076172,
+        4508.876403808594
+      ],
+      "nearest_external_triangle_distance_m": 345.3736641048999
+    },
+    {
+      "source_vertex": 2978,
+      "world": [
+        4619.27197265625,
+        590.0280990600586,
+        4698.0966796875
+      ],
+      "nearest_external_triangle_distance_m": 23.554761507433724
+    },
+    {
+      "source_vertex": 2986,
+      "world": [
+        4118.825714111328,
+        588.9860763549805,
+        4702.2962646484375
+      ],
+      "nearest_external_triangle_distance_m": 18.254550438353775
+    },
+    {
+      "source_vertex": 2994,
+      "world": [
+        4870.8372802734375,
+        407.2236328125,
+        3792.2884368896484
+      ],
+      "nearest_external_triangle_distance_m": 279.58269758998506
+    },
+    {
+      "source_vertex": 3002,
+      "world": [
+        4852.046630859375,
+        511.3446502685547,
+        4320.594787597656
+      ],
+      "nearest_external_triangle_distance_m": 395.4159933301696
+    },
+    {
+      "source_vertex": 3010,
+      "world": [
+        4807.901123046875,
+        480.2691345214844,
+        4693.993896484375
+      ],
+      "nearest_external_triangle_distance_m": 155.67265334080798
+    },
+    {
+      "source_vertex": 3018,
+      "world": [
+        4313.7410888671875,
+        412.6892395019531,
+        4662.3626708984375
+      ],
+      "nearest_external_triangle_distance_m": 167.47414517690234
+    }
+  ],
+  "camera_world": [
+    3000.0,
+    1150.0,
+    4300.0
+  ],
+  "camera_new_optical_geometry": [
+    {
+      "name": "CloudBank58_four_root_continuous_volume",
+      "classification": "outside",
+      "nearest_surface_m": 220.9334450161334,
+      "nearest_triangle": 3556,
+      "rays": [
+        {
+          "direction": [
+            0.9420289034262276,
+            0.23325476343439444,
+            0.24119237227728443
+          ],
+          "unique_forward_hits": 0,
+          "odd": false
+        },
+        {
+          "direction": [
+            0.17234262930327127,
+            0.9239169422132563,
+            0.34157795891442094
+          ],
+          "unique_forward_hits": 0,
+          "odd": false
+        },
+        {
+          "direction": [
+            0.3839654270814171,
+            0.2718321083781326,
+            0.882427252333519
+          ],
+          "unique_forward_hits": 0,
+          "odd": false
+        }
+      ]
+    },
+    {
+      "name": "CloudBank58_upper_west_layer",
+      "classification": "outside",
+      "nearest_surface_m": 1330.3935454557986,
+      "nearest_triangle": 16,
+      "rays": [
+        {
+          "direction": [
+            0.9420289034262276,
+            0.23325476343439444,
+            0.24119237227728443
+          ],
+          "unique_forward_hits": 0,
+          "odd": false
+        },
+        {
+          "direction": [
+            0.17234262930327127,
+            0.9239169422132563,
+            0.34157795891442094
+          ],
+          "unique_forward_hits": 0,
+          "odd": false
+        },
+        {
+          "direction": [
+            0.3839654270814171,
+            0.2718321083781326,
+            0.882427252333519
+          ],
+          "unique_forward_hits": 0,
+          "odd": false
+        }
+      ]
+    },
+    {
+      "name": "CloudBank58_upper_east_layer",
+      "classification": "outside",
+      "nearest_surface_m": 1239.780328807582,
+      "nearest_triangle": 9,
+      "rays": [
+        {
+          "direction": [
+            0.9420289034262276,
+            0.23325476343439444,
+            0.24119237227728443
+          ],
+          "unique_forward_hits": 0,
+          "odd": false
+        },
+        {
+          "direction": [
+            0.17234262930327127,
+            0.9239169422132563,
+            0.34157795891442094
+          ],
+          "unique_forward_hits": 0,
+          "odd": false
+        },
+        {
+          "direction": [
+            0.3839654270814171,
+            0.2718321083781326,
+            0.882427252333519
+          ],
+          "unique_forward_hits": 0,
+          "odd": false
+        }
+      ]
+    },
+    {
+      "name": "CloudBank58_upper_far_veil",
+      "classification": "outside",
+      "nearest_surface_m": 1860.7069577301324,
+      "nearest_triangle": 0,
+      "rays": [
+        {
+          "direction": [
+            0.9420289034262276,
+            0.23325476343439444,
+            0.24119237227728443
+          ],
+          "unique_forward_hits": 0,
+          "odd": false
+        },
+        {
+          "direction": [
+            0.17234262930327127,
+            0.9239169422132563,
+            0.34157795891442094
+          ],
+          "unique_forward_hits": 0,
+          "odd": false
+        },
+        {
+          "direction": [
+            0.3839654270814171,
+            0.2718321083781326,
+            0.882427252333519
+          ],
+          "unique_forward_hits": 0,
+          "odd": false
+        }
+      ]
+    }
+  ],
+  "camera_outside_all_new_volumes": true,
+  "source_route_samples": [
+    {
+      "point": [
+        3000,
+        1150,
+        4300
+      ],
+      "sampled_center_to_cloud_surface_m": 220.9334450161334,
+      "new_volume_classifications": [
+        {
+          "name": "CloudBank58_four_root_continuous_volume",
+          "classification": "outside",
+          "nearest_surface_m": 220.9334450161334,
+          "nearest_triangle": 3556,
+          "rays": [
+            {
+              "direction": [
+                0.9420289034262276,
+                0.23325476343439444,
+                0.24119237227728443
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            },
+            {
+              "direction": [
+                0.17234262930327127,
+                0.9239169422132563,
+                0.34157795891442094
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            },
+            {
+              "direction": [
+                0.3839654270814171,
+                0.2718321083781326,
+                0.882427252333519
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            }
+          ]
+        },
+        {
+          "name": "CloudBank58_upper_west_layer",
+          "classification": "outside",
+          "nearest_surface_m": 1330.3935454557986,
+          "nearest_triangle": 16,
+          "rays": [
+            {
+              "direction": [
+                0.9420289034262276,
+                0.23325476343439444,
+                0.24119237227728443
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            },
+            {
+              "direction": [
+                0.17234262930327127,
+                0.9239169422132563,
+                0.34157795891442094
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            },
+            {
+              "direction": [
+                0.3839654270814171,
+                0.2718321083781326,
+                0.882427252333519
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            }
+          ]
+        },
+        {
+          "name": "CloudBank58_upper_east_layer",
+          "classification": "outside",
+          "nearest_surface_m": 1239.780328807582,
+          "nearest_triangle": 9,
+          "rays": [
+            {
+              "direction": [
+                0.9420289034262276,
+                0.23325476343439444,
+                0.24119237227728443
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            },
+            {
+              "direction": [
+                0.17234262930327127,
+                0.9239169422132563,
+                0.34157795891442094
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            },
+            {
+              "direction": [
+                0.3839654270814171,
+                0.2718321083781326,
+                0.882427252333519
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            }
+          ]
+        },
+        {
+          "name": "CloudBank58_upper_far_veil",
+          "classification": "outside",
+          "nearest_surface_m": 1860.7069577301324,
+          "nearest_triangle": 0,
+          "rays": [
+            {
+              "direction": [
+                0.9420289034262276,
+                0.23325476343439444,
+                0.24119237227728443
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            },
+            {
+              "direction": [
+                0.17234262930327127,
+                0.9239169422132563,
+                0.34157795891442094
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            },
+            {
+              "direction": [
+                0.3839654270814171,
+                0.2718321083781326,
+                0.882427252333519
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "point": [
+        3350,
+        1150,
+        3990
+      ],
+      "sampled_center_to_cloud_surface_m": 234.6375295911184,
+      "new_volume_classifications": [
+        {
+          "name": "CloudBank58_four_root_continuous_volume",
+          "classification": "outside",
+          "nearest_surface_m": 234.6375295911184,
+          "nearest_triangle": 3488,
+          "rays": [
+            {
+              "direction": [
+                0.9420289034262276,
+                0.23325476343439444,
+                0.24119237227728443
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            },
+            {
+              "direction": [
+                0.17234262930327127,
+                0.9239169422132563,
+                0.34157795891442094
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            },
+            {
+              "direction": [
+                0.3839654270814171,
+                0.2718321083781326,
+                0.882427252333519
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            }
+          ]
+        },
+        {
+          "name": "CloudBank58_upper_west_layer",
+          "classification": "outside",
+          "nearest_surface_m": 1129.2148277008623,
+          "nearest_triangle": 80,
+          "rays": [
+            {
+              "direction": [
+                0.9420289034262276,
+                0.23325476343439444,
+                0.24119237227728443
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            },
+            {
+              "direction": [
+                0.17234262930327127,
+                0.9239169422132563,
+                0.34157795891442094
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            },
+            {
+              "direction": [
+                0.3839654270814171,
+                0.2718321083781326,
+                0.882427252333519
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            }
+          ]
+        },
+        {
+          "name": "CloudBank58_upper_east_layer",
+          "classification": "outside",
+          "nearest_surface_m": 922.7026505330822,
+          "nearest_triangle": 9,
+          "rays": [
+            {
+              "direction": [
+                0.9420289034262276,
+                0.23325476343439444,
+                0.24119237227728443
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            },
+            {
+              "direction": [
+                0.17234262930327127,
+                0.9239169422132563,
+                0.34157795891442094
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            },
+            {
+              "direction": [
+                0.3839654270814171,
+                0.2718321083781326,
+                0.882427252333519
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            }
+          ]
+        },
+        {
+          "name": "CloudBank58_upper_far_veil",
+          "classification": "outside",
+          "nearest_surface_m": 1444.624253112597,
+          "nearest_triangle": 0,
+          "rays": [
+            {
+              "direction": [
+                0.9420289034262276,
+                0.23325476343439444,
+                0.24119237227728443
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            },
+            {
+              "direction": [
+                0.17234262930327127,
+                0.9239169422132563,
+                0.34157795891442094
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            },
+            {
+              "direction": [
+                0.3839654270814171,
+                0.2718321083781326,
+                0.882427252333519
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "point": [
+        3750,
+        1150,
+        3740
+      ],
+      "sampled_center_to_cloud_surface_m": 314.0088292805479,
+      "new_volume_classifications": [
+        {
+          "name": "CloudBank58_four_root_continuous_volume",
+          "classification": "outside",
+          "nearest_surface_m": 314.0088292805479,
+          "nearest_triangle": 1149,
+          "rays": [
+            {
+              "direction": [
+                0.9420289034262276,
+                0.23325476343439444,
+                0.24119237227728443
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            },
+            {
+              "direction": [
+                0.17234262930327127,
+                0.9239169422132563,
+                0.34157795891442094
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            },
+            {
+              "direction": [
+                0.3839654270814171,
+                0.2718321083781326,
+                0.882427252333519
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            }
+          ]
+        },
+        {
+          "name": "CloudBank58_upper_west_layer",
+          "classification": "outside",
+          "nearest_surface_m": 1029.4487878351072,
+          "nearest_triangle": 176,
+          "rays": [
+            {
+              "direction": [
+                0.9420289034262276,
+                0.23325476343439444,
+                0.24119237227728443
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            },
+            {
+              "direction": [
+                0.17234262930327127,
+                0.9239169422132563,
+                0.34157795891442094
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            },
+            {
+              "direction": [
+                0.3839654270814171,
+                0.2718321083781326,
+                0.882427252333519
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            }
+          ]
+        },
+        {
+          "name": "CloudBank58_upper_east_layer",
+          "classification": "outside",
+          "nearest_surface_m": 708.8302466224609,
+          "nearest_triangle": 24,
+          "rays": [
+            {
+              "direction": [
+                0.9420289034262276,
+                0.23325476343439444,
+                0.24119237227728443
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            },
+            {
+              "direction": [
+                0.17234262930327127,
+                0.9239169422132563,
+                0.34157795891442094
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            },
+            {
+              "direction": [
+                0.3839654270814171,
+                0.2718321083781326,
+                0.882427252333519
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            }
+          ]
+        },
+        {
+          "name": "CloudBank58_upper_far_veil",
+          "classification": "outside",
+          "nearest_surface_m": 1127.003055199358,
+          "nearest_triangle": 0,
+          "rays": [
+            {
+              "direction": [
+                0.9420289034262276,
+                0.23325476343439444,
+                0.24119237227728443
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            },
+            {
+              "direction": [
+                0.17234262930327127,
+                0.9239169422132563,
+                0.34157795891442094
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            },
+            {
+              "direction": [
+                0.3839654270814171,
+                0.2718321083781326,
+                0.882427252333519
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "point": [
+        4200,
+        1150,
+        3250
+      ],
+      "sampled_center_to_cloud_surface_m": 317.65717442094126,
+      "new_volume_classifications": [
+        {
+          "name": "CloudBank58_four_root_continuous_volume",
+          "classification": "outside",
+          "nearest_surface_m": 317.65717442094126,
+          "nearest_triangle": 2533,
+          "rays": [
+            {
+              "direction": [
+                0.9420289034262276,
+                0.23325476343439444,
+                0.24119237227728443
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            },
+            {
+              "direction": [
+                0.17234262930327127,
+                0.9239169422132563,
+                0.34157795891442094
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            },
+            {
+              "direction": [
+                0.3839654270814171,
+                0.2718321083781326,
+                0.882427252333519
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            }
+          ]
+        },
+        {
+          "name": "CloudBank58_upper_west_layer",
+          "classification": "outside",
+          "nearest_surface_m": 925.6895958235543,
+          "nearest_triangle": 240,
+          "rays": [
+            {
+              "direction": [
+                0.9420289034262276,
+                0.23325476343439444,
+                0.24119237227728443
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            },
+            {
+              "direction": [
+                0.17234262930327127,
+                0.9239169422132563,
+                0.34157795891442094
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            },
+            {
+              "direction": [
+                0.3839654270814171,
+                0.2718321083781326,
+                0.882427252333519
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            }
+          ]
+        },
+        {
+          "name": "CloudBank58_upper_east_layer",
+          "classification": "outside",
+          "nearest_surface_m": 820.065264110113,
+          "nearest_triangle": 118,
+          "rays": [
+            {
+              "direction": [
+                0.9420289034262276,
+                0.23325476343439444,
+                0.24119237227728443
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            },
+            {
+              "direction": [
+                0.17234262930327127,
+                0.9239169422132563,
+                0.34157795891442094
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            },
+            {
+              "direction": [
+                0.3839654270814171,
+                0.2718321083781326,
+                0.882427252333519
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            }
+          ]
+        },
+        {
+          "name": "CloudBank58_upper_far_veil",
+          "classification": "outside",
+          "nearest_surface_m": 701.9209349816138,
+          "nearest_triangle": 32,
+          "rays": [
+            {
+              "direction": [
+                0.9420289034262276,
+                0.23325476343439444,
+                0.24119237227728443
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            },
+            {
+              "direction": [
+                0.17234262930327127,
+                0.9239169422132563,
+                0.34157795891442094
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            },
+            {
+              "direction": [
+                0.3839654270814171,
+                0.2718321083781326,
+                0.882427252333519
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "point": [
+        4550,
+        1150,
+        3010
+      ],
+      "sampled_center_to_cloud_surface_m": 300.9743403385091,
+      "new_volume_classifications": [
+        {
+          "name": "CloudBank58_four_root_continuous_volume",
+          "classification": "outside",
+          "nearest_surface_m": 300.9743403385091,
+          "nearest_triangle": 2065,
+          "rays": [
+            {
+              "direction": [
+                0.9420289034262276,
+                0.23325476343439444,
+                0.24119237227728443
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            },
+            {
+              "direction": [
+                0.17234262930327127,
+                0.9239169422132563,
+                0.34157795891442094
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            },
+            {
+              "direction": [
+                0.3839654270814171,
+                0.2718321083781326,
+                0.882427252333519
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            }
+          ]
+        },
+        {
+          "name": "CloudBank58_upper_west_layer",
+          "classification": "outside",
+          "nearest_surface_m": 1122.1413518680706,
+          "nearest_triangle": 272,
+          "rays": [
+            {
+              "direction": [
+                0.9420289034262276,
+                0.23325476343439444,
+                0.24119237227728443
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            },
+            {
+              "direction": [
+                0.17234262930327127,
+                0.9239169422132563,
+                0.34157795891442094
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            },
+            {
+              "direction": [
+                0.3839654270814171,
+                0.2718321083781326,
+                0.882427252333519
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            }
+          ]
+        },
+        {
+          "name": "CloudBank58_upper_east_layer",
+          "classification": "outside",
+          "nearest_surface_m": 906.6771906942357,
+          "nearest_triangle": 247,
+          "rays": [
+            {
+              "direction": [
+                0.9420289034262276,
+                0.23325476343439444,
+                0.24119237227728443
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            },
+            {
+              "direction": [
+                0.17234262930327127,
+                0.9239169422132563,
+                0.34157795891442094
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            },
+            {
+              "direction": [
+                0.3839654270814171,
+                0.2718321083781326,
+                0.882427252333519
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            }
+          ]
+        },
+        {
+          "name": "CloudBank58_upper_far_veil",
+          "classification": "outside",
+          "nearest_surface_m": 481.81482381616445,
+          "nearest_triangle": 224,
+          "rays": [
+            {
+              "direction": [
+                0.9420289034262276,
+                0.23325476343439444,
+                0.24119237227728443
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            },
+            {
+              "direction": [
+                0.17234262930327127,
+                0.9239169422132563,
+                0.34157795891442094
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            },
+            {
+              "direction": [
+                0.3839654270814171,
+                0.2718321083781326,
+                0.882427252333519
+              ],
+              "unique_forward_hits": 0,
+              "odd": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "route_sampled_only": true,
+  "route_swept_volume_checked": false,
+  "ship_envelope_checked": false,
+  "physical_collision_checked": false,
+  "whole_world_loaded": false,
+  "rendered": false,
+  "visual_acceptance": false,
+  "source_sha256": {
+    "cloud_bank58.blend": "b5bd51e5b8ec179335139c5149eb4e247eb893a98cf73e4900068a93bfd9dfe0",
+    "CloudBank58_four_root_continuous_volume.glb": "dd69533259e6c9414ae80557b8b9fd0baf4a616b933a6c1a127c21dbc9eaf8c6",
+    "CloudBank58_upper_west_layer.glb": "fbeed4211ef1a8d694b9db1999c82ff588dc76538de7909c4833a6dd12ec7622",
+    "CloudBank58_upper_east_layer.glb": "9564fd115142c4fdac1aa245e14e555830e4a45ae34ef2cafd4c4978089cfd4f",
+    "CloudBank58_upper_far_veil.glb": "f6854fbdaa566a1ebfc4f87e8e18c78290fe9f862676b44dfac614b892aa1801"
+  }
+}
