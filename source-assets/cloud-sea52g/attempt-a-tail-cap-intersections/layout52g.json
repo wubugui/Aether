@@ -1,0 +1,59 @@
+{
+  "status": "One representative upper-form prototype",
+  "parts": [
+    {
+      "name": "CloudSea52g_v0_main_ridge",
+      "center_xy": [
+        -350,
+        -360
+      ],
+      "heading": 12,
+      "length": 740,
+      "nominal_width": 460,
+      "low": -30,
+      "high": 350,
+      "mode": 0,
+      "editable_control_cage": "CONTROL52g_v0_main_ridge_loft_cage",
+      "triangle_target": 2200
+    },
+    {
+      "name": "CloudSea52g_v0_offset_shoulder",
+      "center_xy": [
+        350,
+        -60
+      ],
+      "heading": -18,
+      "length": 435,
+      "nominal_width": 310,
+      "low": 10,
+      "high": 215,
+      "mode": 1,
+      "editable_control_cage": "CONTROL52g_v0_offset_shoulder_loft_cage",
+      "triangle_target": 1300
+    },
+    {
+      "name": "CloudSea52g_v0_low_tail",
+      "center_xy": [
+        -40,
+        400
+      ],
+      "heading": 32,
+      "length": 305,
+      "nominal_width": 230,
+      "low": -20,
+      "high": 120,
+      "mode": 2,
+      "editable_control_cage": "CONTROL52g_v0_low_tail_loft_cage",
+      "triangle_target": 850
+    }
+  ],
+  "retained_low_bodies": [
+    "CloudSea52f_v0_low_saddle",
+    "CloudSea52f_v0_low_drift"
+  ],
+  "hierarchy_intent": "Dominant irregular long ridge, smaller offset shoulder and short low tail; about5:2:1 plan-area design intent",
+  "construction": "Editable closed cross-section cages, genuine concave gullies, no sphere pile or brightness change",
+  "unchanged_low_body_limitation": "52f lower disk appearance remains for separate later resculpt",
+  "world_integration": false,
+  "visual_acceptance": false
+}

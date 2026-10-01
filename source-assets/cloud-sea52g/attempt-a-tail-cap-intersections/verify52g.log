@@ -1,0 +1,129 @@
+Blender 4.5.14 LTS (hash 62c1db4208e8 built 2026-09-15 01:31:19)
+Read blend: "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-sea52f/variants/cloud_sea52f_variants.blend"
+Read blend: "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-sea52g/cloud_sea52g_prototype.blend"
+Traceback (most recent call last):
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-sea52g/verify52g.py", line 71, in <module>
+    assert all(not(r['boundary_edges'] or r['nonmanifold_edges'] or r['zero_area_triangles'] or r['nonadjacent_triangle_intersections']) and len(r['connected_components'])==1 and r['signed_volume']>0 for r in rows)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+{"name": "CloudSea52f_v0_low_drift", "vertices": 1701, "triangles": 3398, "bounds_blender_xyz": [[-684.2409057617188, 100.87012481689453, -208.16860961914062], [689.4754638671875, 782.1609497070312, 165.3107147216797]], "boundary_edges": 0, "nonmanifold_edges": 0, "connected_components": [1701], "signed_volume": 77097550.63969691, "triangle_aspect_over_20": 1, "zero_area_triangles": 0, "nonadjacent_triangle_intersections": 0, "intersection_pairs": []}
+{"name": "CloudSea52f_v0_low_saddle", "vertices": 1802, "triangles": 3600, "bounds_blender_xyz": [[-656.1708984375, -299.1527404785156, -129.8936309814453], [642.2778930664062, 357.70635986328125, 195.85714721679688]], "boundary_edges": 0, "nonmanifold_edges": 0, "connected_components": [1802], "signed_volume": 82473421.07751828, "triangle_aspect_over_20": 1, "zero_area_triangles": 0, "nonadjacent_triangle_intersections": 0, "intersection_pairs": []}
+{"name": "CloudSea52g_v0_low_tail", "vertices": 427, "triangles": 850, "bounds_blender_xyz": [[-175.7183837890625, 236.39242553710938, -19.51614761352539], [98.95409393310547, 538.19921875, 119.32843780517578]], "boundary_edges": 0, "nonmanifold_edges": 0, "connected_components": [427], "signed_volume": 2855017.103514271, "triangle_aspect_over_20": 1, "zero_area_triangles": 0, "nonadjacent_triangle_intersections": 6, "intersection_pairs": [[836, 841], [836, 845], [348, 841], [352, 841], [352, 353], [349, 841]]}
+{"name": "CloudSea52g_v0_main_ridge", "vertices": 1102, "triangles": 2200, "bounds_blender_xyz": [[-710.5004272460938, -661.97998046875, -28.30320167541504], [10.44744873046875, -84.99767303466797, 345.752685546875]], "boundary_edges": 0, "nonmanifold_edges": 0, "connected_components": [1102], "signed_volume": 39370884.26213996, "triangle_aspect_over_20": 4, "zero_area_triangles": 0, "nonadjacent_triangle_intersections": 0, "intersection_pairs": []}
+{"name": "CloudSea52g_v0_offset_shoulder", "vertices": 652, "triangles": 1300, "bounds_blender_xyz": [[137.92779541015625, -222.99851989746094, 10.856937408447266], [555.2116088867188, 136.1085205078125, 213.4840087890625]], "boundary_edges": 0, "nonmanifold_edges": 0, "connected_components": [652], "signed_volume": 8673858.415167516, "triangle_aspect_over_20": 4, "zero_area_triangles": 0, "nonadjacent_triangle_intersections": 0, "intersection_pairs": []}
+{
+  "old_meshes_and_controls_unchanged": true,
+  "new": [
+    {
+      "name": "CloudSea52g_v0_low_tail",
+      "vertices": 427,
+      "triangles": 850,
+      "bounds_blender_xyz": [
+        [
+          -175.7183837890625,
+          236.39242553710938,
+          -19.51614761352539
+        ],
+        [
+          98.95409393310547,
+          538.19921875,
+          119.32843780517578
+        ]
+      ],
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "connected_components": [
+        427
+      ],
+      "signed_volume": 2855017.103514271,
+      "triangle_aspect_over_20": 1,
+      "zero_area_triangles": 0,
+      "nonadjacent_triangle_intersections": 6,
+      "intersection_pairs": [
+        [
+          836,
+          841
+        ],
+        [
+          836,
+          845
+        ],
+        [
+          348,
+          841
+        ],
+        [
+          352,
+          841
+        ],
+        [
+          352,
+          353
+        ],
+        [
+          349,
+          841
+        ]
+      ]
+    },
+    {
+      "name": "CloudSea52g_v0_main_ridge",
+      "vertices": 1102,
+      "triangles": 2200,
+      "bounds_blender_xyz": [
+        [
+          -710.5004272460938,
+          -661.97998046875,
+          -28.30320167541504
+        ],
+        [
+          10.44744873046875,
+          -84.99767303466797,
+          345.752685546875
+        ]
+      ],
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "connected_components": [
+        1102
+      ],
+      "signed_volume": 39370884.26213996,
+      "triangle_aspect_over_20": 4,
+      "zero_area_triangles": 0,
+      "nonadjacent_triangle_intersections": 0,
+      "intersection_pairs": []
+    },
+    {
+      "name": "CloudSea52g_v0_offset_shoulder",
+      "vertices": 652,
+      "triangles": 1300,
+      "bounds_blender_xyz": [
+        [
+          137.92779541015625,
+          -222.99851989746094,
+          10.856937408447266
+        ],
+        [
+          555.2116088867188,
+          136.1085205078125,
+          213.4840087890625
+        ]
+      ],
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "connected_components": [
+        652
+      ],
+      "signed_volume": 8673858.415167516,
+      "triangle_aspect_over_20": 4,
+      "zero_area_triangles": 0,
+      "nonadjacent_triangle_intersections": 0,
+      "intersection_pairs": []
+    }
+  ],
+  "axis_mapping_verified": true
+}
+
+Error: script failed, file: 'source-assets/cloud-sea52g/verify52g.py', exiting.
+
+Blender quit
