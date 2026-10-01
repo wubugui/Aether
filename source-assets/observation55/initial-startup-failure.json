@@ -1,0 +1,12 @@
+{
+  "scope": "First pure math probe startup, no world or renderer stage",
+  "tool_exit_code": 134,
+  "observed_errors": [
+    "Fontconfig: No writable cache directories",
+    "Could not create /home/agent/.local/share/godot",
+    "Could not create user://logs",
+    "Godot handle_crash reported signal11 then process exited134"
+  ],
+  "cause_verified": "XDG variables were omitted; attempted default data directory is not writable. Corrected invocation explicitly uses existing permitted tools-feiting/userdata paths.",
+  "math_result_obtained": false
+}
