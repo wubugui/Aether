@@ -1,0 +1,67 @@
+{
+  "all_passed": true,
+  "cases": [
+    {
+      "case": "all five exact named sets accepted",
+      "passed": true
+    },
+    {
+      "case": "missing initialization rejected",
+      "passed": true
+    },
+    {
+      "case": "old B phase name rejected",
+      "passed": true
+    },
+    {
+      "case": "changed original active material rejected",
+      "passed": true
+    },
+    {
+      "case": "hidden part rejected",
+      "passed": true
+    },
+    {
+      "case": "duplicate cloud path rejected",
+      "passed": true
+    },
+    {
+      "case": "one RGB channel residual detected exactly",
+      "passed": true
+    },
+    {
+      "case": "alpha-only residual fails all-RGBA equality",
+      "passed": true
+    },
+    {
+      "case": "equal all-RGBA arrays accepted",
+      "passed": true
+    },
+    {
+      "case": "complete outside camera diagnosis accepted",
+      "passed": true
+    },
+    {
+      "case": "near-boundary outside claim rejected",
+      "passed": true
+    },
+    {
+      "case": "contradictory parity outside claim rejected",
+      "passed": true
+    },
+    {
+      "case": "original resource masquerading as D rejected",
+      "passed": true
+    },
+    {
+      "case": "inside diagnostic remains valid but cannot claim outside",
+      "passed": true
+    },
+    {
+      "case": "inside diagnosis with false outside claim rejected",
+      "passed": true
+    }
+  ],
+  "no_engine_or_world_run": true,
+  "fixtures_not_actual_runtime_results": true
+}

@@ -1,0 +1,29 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/candidate55-observation/Game55Observation.tscn" id="1_base"]
+[ext_resource type="ArrayMesh" path="res://assets/coast56/Ground_-4_-4_coast56.mesh" id="2_mesh"]
+[ext_resource type="Shape3D" path="res://assets/coast56/Ground_-4_-4_coast56_collision.res" id="3_shape"]
+[ext_resource type="MultiMesh" path="res://assets/coast56/rock_-4_-4.res" id="4_scatter"]
+[ext_resource type="MultiMesh" path="res://assets/coast56/bush_-4_-4.res" id="5_scatter"]
+[ext_resource type="MultiMesh" path="res://assets/coast56/oak_-4_-4_CoastalPines36b.res" id="6_scatter"]
+[ext_resource type="MultiMesh" path="res://assets/coast56/poplar_-4_-4_CoastalPines36b.res" id="7_scatter"]
+
+[node name="Skyfarer" instance=ExtResource("1_base")]
+
+[node name="Ground_-4_-4" parent="World/Terrain/Ground_-4_-4/Model" index="0"]
+mesh = ExtResource("2_mesh")
+
+[node name="Shape" parent="World/Terrain/Ground_-4_-4/Collision" index="0"]
+shape = ExtResource("3_shape")
+
+[node name="rock_-4_-4" parent="World/Vegetation" index="313"]
+multimesh = ExtResource("4_scatter")
+
+[node name="bush_-4_-4" parent="World/Vegetation" index="314"]
+multimesh = ExtResource("5_scatter")
+
+[node name="oak_-4_-4_CoastalPines36b" parent="World/Vegetation" index="767"]
+multimesh = ExtResource("6_scatter")
+
+[node name="poplar_-4_-4_CoastalPines36b" parent="World/Vegetation" index="768"]
+multimesh = ExtResource("7_scatter")

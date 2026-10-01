@@ -1,0 +1,37 @@
+{
+  "mode": "build",
+  "records": [
+    {
+      "stage": "build",
+      "mode": "build",
+      "command": [
+        "/workspace/scratch/a29d03198654/tools-feiting/Godot_v4.5.1-stable_linux.x86_64",
+        "--path",
+        "/workspace/scratch/a29d03198654/Aether/candidates/round40-exclusive-20260930/project",
+        "--rendering-method",
+        "gl_compatibility",
+        "--audio-driver",
+        "Dummy",
+        "--disable-vsync",
+        "--script",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/coast56/integration-preparation/build_coast56.gd"
+      ],
+      "started": true,
+      "finished": true,
+      "max_rss_kib": 924712,
+      "renderer_executed": true,
+      "visual_acceptance": false,
+      "source_scene_mutation_allowed": false,
+      "allowed_build_outputs": "Only independent assets/coast56 six resources and tiny scenes/candidate56-coast, plus evidence",
+      "pid": 201666,
+      "exit_code": 0,
+      "signal": null,
+      "elapsed_seconds": 31.854492024998763,
+      "errors": [],
+      "interrupted": null,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "parse_is_not_runtime_verification": false
+}

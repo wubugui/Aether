@@ -1,0 +1,143 @@
+{
+  "geometry_and_native_readback_passed": true,
+  "variants": [
+    {
+      "name": "CloudSea52hD_v0_main_crown",
+      "vertices": 919,
+      "triangles": 1834,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "components": [
+        919
+      ],
+      "signed_volume_m3": 60997291.1811629,
+      "nonadjacent_triangle_intersections": 0,
+      "intersection_pairs": [],
+      "zero_area_triangles": 0,
+      "triangle_aspect_over20": 0,
+      "triangle_aspect_max": 2.7804458375183096,
+      "bounds_blender_xyz": [
+        [
+          -709.6004028320312,
+          -602.1054077148438,
+          -25.742794036865234
+        ],
+        [
+          -14.06518268585205,
+          -79.04283905029297,
+          364.9816589355469
+        ]
+      ],
+      "dimensions_m": [
+        695.5352201461792,
+        523.0625686645508,
+        390.7244529724121
+      ],
+      "native_GLBlender_readback": {
+        "max_vertex_error_m": 0.0,
+        "all_oriented_triangle_correspondence_exact": true,
+        "triangles": 1834,
+        "axis_bounds_error_m": 0.0,
+        "attributes": [
+          "POSITION",
+          "NORMAL",
+          "COLOR_0"
+        ]
+      },
+      "passed": true
+    }
+  ],
+  "authored_controls": [
+    {
+      "name": "CONTROL52hD_continuous_density_skin",
+      "vertices": 13964,
+      "triangles": 27924,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "components": [
+        13964
+      ],
+      "signed_volume_m3": 61606474.78301151,
+      "nonadjacent_triangle_intersections": 0,
+      "intersection_pairs": [],
+      "zero_area_triangles": 0,
+      "triangle_aspect_over20": 963,
+      "triangle_aspect_max": 19894.00977939256,
+      "bounds_blender_xyz": [
+        [
+          -710.0,
+          -602.527587890625,
+          -26.01123046875
+        ],
+        [
+          -14.000030517578125,
+          -78.27236938476562,
+          366.01123046875
+        ]
+      ],
+      "dimensions_m": [
+        695.9999694824219,
+        524.2552185058594,
+        392.0224609375
+      ]
+    },
+    {
+      "native_density_object": "CONTROL52hD_density",
+      "element_count": 9,
+      "elements": [
+        {
+          "role": "main_wide_curved_volume",
+          "native_element_index": 0,
+          "native_properties_readback_exact": true
+        },
+        {
+          "role": "medium_rear_broad_connection",
+          "native_element_index": 1,
+          "native_properties_readback_exact": true
+        },
+        {
+          "role": "small_front_low_connection",
+          "native_element_index": 2,
+          "native_properties_readback_exact": true
+        },
+        {
+          "role": "main_front_left_short_rise",
+          "native_element_index": 3,
+          "native_properties_readback_exact": true
+        },
+        {
+          "role": "main_offset_upper_crown",
+          "native_element_index": 4,
+          "native_properties_readback_exact": true
+        },
+        {
+          "role": "main_front_oblique_shoulder",
+          "native_element_index": 5,
+          "native_properties_readback_exact": true
+        },
+        {
+          "role": "main_rear_short_fold",
+          "native_element_index": 6,
+          "native_properties_readback_exact": true
+        },
+        {
+          "role": "medium_outer_unequal_shoulder",
+          "native_element_index": 7,
+          "native_properties_readback_exact": true
+        },
+        {
+          "role": "small_outer_low_fold",
+          "native_element_index": 8,
+          "native_properties_readback_exact": true
+        }
+      ]
+    }
+  ],
+  "source_sha256": {
+    "cloud_sea52h_d.blend": "0e3b36f873b3d698c16ba2d716d593e56bac81a228320ddd3945d59f62b84dd5",
+    "cloud_sea_52h_d_main_v0.glb": "0f8b70fef06f0e183b0c86138ae8e398ff699e202d0acd00f2233d8e4d9ec0aa"
+  },
+  "visual_acceptance": false,
+  "world_modified": false,
+  "rendered": false
+}

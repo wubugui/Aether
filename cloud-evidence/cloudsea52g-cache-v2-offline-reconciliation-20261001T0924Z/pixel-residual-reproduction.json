@@ -1,0 +1,106 @@
+{
+  "changed_pixels": 3,
+  "changed_channels": 7,
+  "max_channel_difference": 3,
+  "total_absolute_channel_difference": 11,
+  "changed_fraction": 3.832122382660412e-06,
+  "entire_RGBA_difference_field_matches_original_AB_A2": true,
+  "pixels": [
+    {
+      "x": 436,
+      "y": 452,
+      "A0": [
+        83,
+        98,
+        131,
+        255
+      ],
+      "R0": [
+        82,
+        97,
+        130,
+        255
+      ],
+      "original_A": [
+        83,
+        98,
+        131,
+        255
+      ],
+      "original_A2": [
+        82,
+        97,
+        130,
+        255
+      ]
+    },
+    {
+      "x": 435,
+      "y": 453,
+      "A0": [
+        68,
+        81,
+        110,
+        255
+      ],
+      "R0": [
+        66,
+        79,
+        107,
+        255
+      ],
+      "original_A": [
+        68,
+        81,
+        110,
+        255
+      ],
+      "original_A2": [
+        66,
+        79,
+        107,
+        255
+      ]
+    },
+    {
+      "x": 434,
+      "y": 458,
+      "A0": [
+        63,
+        77,
+        104,
+        255
+      ],
+      "R0": [
+        63,
+        76,
+        104,
+        255
+      ],
+      "original_A": [
+        63,
+        77,
+        104,
+        255
+      ],
+      "original_A2": [
+        63,
+        76,
+        104,
+        255
+      ]
+    }
+  ],
+  "unchanged_pair_exact": {
+    "A0_A1": true,
+    "R0_R1": true
+  },
+  "cross_process_baseline_difference_pixels": 76,
+  "cross_process_baseline_max_channel_difference": 79,
+  "cross_process_baseline_difference_unchanged_by_rebind": true,
+  "bounded_conclusion": "In this fixed52f front observation on llvmpipe, exact-geometry resource rebind is sufficient to reproduce the same three-pixel residual without loading D geometry. Two before samples match and two after samples match. Renderer-internal shadow/cache/draw mechanisms were not separately observed or isolated.",
+  "shadow_root_cause_proven": false,
+  "cross_process_full_images_identical": false,
+  "pixel_acceptance": false,
+  "visual_acceptance": false
+}

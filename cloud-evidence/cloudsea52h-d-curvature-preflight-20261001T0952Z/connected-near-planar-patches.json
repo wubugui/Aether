@@ -1,0 +1,49 @@
+{
+  "method": "For every final triangle, flood only adjacent triangles whose unit normal stays within2degrees of that seed normal. Report the maximum connected area. This measures broad near-planar surface extent, not visual style or cloud acceptance.",
+  "rows": [
+    {
+      "revision": "c",
+      "source_sha256": "e6228be76ca5d5c81ae767d8e46872cb6801d1bc8eeaa5b2d3ff3f9b539181c6",
+      "triangles": 1872,
+      "largest_connected_two_degree_patch_triangles": 29,
+      "patch_area_m2": 16281.009704589844,
+      "whole_surface_area_m2": 776036.4615936279,
+      "patch_area_percent": 2.09796968445993,
+      "patch_bounds_xyz": [
+        [
+          -673.1163330078125,
+          -315.3955993652344,
+          5.640739917755127
+        ],
+        [
+          -529.6641845703125,
+          -169.96163940429688,
+          147.02862548828125
+        ]
+      ]
+    },
+    {
+      "revision": "d",
+      "source_sha256": "0e3b36f873b3d698c16ba2d716d593e56bac81a228320ddd3945d59f62b84dd5",
+      "triangles": 1834,
+      "largest_connected_two_degree_patch_triangles": 6,
+      "patch_area_m2": 2765.4176025390625,
+      "whole_surface_area_m2": 882056.5046310425,
+      "patch_area_percent": 0.3135193253515902,
+      "patch_bounds_xyz": [
+        [
+          -360.8720397949219,
+          -281.1583251953125,
+          269.10040283203125
+        ],
+        [
+          -267.3529357910156,
+          -212.732177734375,
+          285.757080078125
+        ]
+      ]
+    }
+  ],
+  "rendered": false,
+  "visual_acceptance": false
+}

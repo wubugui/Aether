@@ -1,0 +1,9 @@
+# 52hD actual single-world comparison
+
+The bounded A0/A/D/A2 experiment finished with child and external wrapper exit 0 in 211.87 s, peak 2515672 KiB. Original materials, lighting, camera and all non-scope native state remained exact. Ten actual main meshes were temporarily replaced. Stabilized original A and restored A2 are RGBA-exact; initial A0/A retains the documented three-pixel resource-registration residual (max 3/255), not silently accepted as exact. The D phase changes 51715 pixels. No scene was saved.
+
+A and D actual images and the original ref/1216.png were inspected. D has smoother continuous joined crowns in the center/right, but the overall scene remains a dense field of similarly sized stone-like round bodies. The D shoulders show horizontal tiering, the dark gaps remain, and changing ten main crowns leaves 115 surrounding components dominating the result. The reference instead has depth-separated large continuous cloud strata, local irregular rising crests, upper thin layers and a lower storm volume; the current uniform balls and pitch-black gaps fail those distinctions. Moon/ship scale and composition also remain mismatched.
+
+Visual verdict: rejected for integration. Do not enlarge single crowns again to conceal the hierarchy problem. Next research should examine a bounded multi-root group as one cloud-bank arrangement with explicit large/medium/small volume roles, wider quiet areas and a separate continuous lower cloud layer. Preserve all original source candidates, and review the complete group's editable native geometry from front/side/back/underneath before another world replacement. This is a proposed scope, not an implemented or accepted scene.
+
+All output is official Godot 4.5.1 Compatibility on llvmpipe software, not hardware GPU acceptance. Optical volume tests and physics clearance are separate; neither implies complete safe flight. All reference and complete GOAL acceptance remain open.

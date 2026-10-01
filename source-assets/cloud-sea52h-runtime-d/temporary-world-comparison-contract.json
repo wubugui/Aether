@@ -1,0 +1,62 @@
+{
+  "status": "Prepared for explicitly authorized single1216-front D trial; not a visual pass",
+  "baseline_scene": "candidates/round40-exclusive-20260930/project/scenes/candidate52f/Game52f.tscn",
+  "baseline_sha256": "201f667747406b1414a298a6b5433ac1550d8b447dff8f6cb6823d94d2acbd7c",
+  "target_count": 10,
+  "target_paths": [
+    "SkyRegion39/CloudSea_-2_-2/CloudSea52e_v0_main_ridge",
+    "SkyRegion39/CloudSea_-2_1/CloudSea52e_v0_main_ridge",
+    "SkyRegion39/CloudSea_-1_-2/CloudSea52e_v0_main_ridge",
+    "SkyRegion39/CloudSea_-1_1/CloudSea52e_v0_main_ridge",
+    "SkyRegion39/CloudSea_0_-2/CloudSea52e_v0_main_ridge",
+    "SkyRegion39/CloudSea_0_1/CloudSea52e_v0_main_ridge",
+    "SkyRegion39/CloudSea_1_-2/CloudSea52e_v0_main_ridge",
+    "SkyRegion39/CloudSea_1_1/CloudSea52e_v0_main_ridge",
+    "SkyRegion39/CloudSea_2_-2/CloudSea52e_v0_main_ridge",
+    "SkyRegion39/CloudSea_2_1/CloudSea52e_v0_main_ridge"
+  ],
+  "only_expected_scene_change": "Ten existing main mesh resources, plus only a necessary actual GLB ancestor transform; root and other115 meshes stay exact",
+  "replacement_glb": "source-assets/cloud-sea52h-revision-d/cloud_sea_52h_d_main_v0.glb",
+  "replacement_glb_sha256": "0f8b70fef06f0e183b0c86138ae8e398ff699e202d0acd00f2233d8e4d9ec0aa",
+  "replacement_glb_node": "CloudSea52hD_v0_main_crown",
+  "replacement_mesh_triangles": 1834,
+  "preserve": [
+    "all25 root transforms",
+    "target node paths and ownership; original local/global/component values restored exactly after D",
+    "all existing material override and surface material behavior",
+    "other115 CloudSea meshes",
+    "all unrelated nodes and properties",
+    "all52f sources and savedGame52f"
+  ],
+  "do_not_use": "Canceled C runtime; old52g failure is preserved; no rejected54 payload",
+  "world_scene_modified": false,
+  "visual_acceptance": false,
+  "phase_order": [
+    "A0",
+    "A",
+    "D",
+    "A2"
+  ],
+  "material_proof_order": [
+    "1216",
+    "A0",
+    "A",
+    "D",
+    "A2"
+  ],
+  "geometry_report_sha256": "d5e824e71279cb65b2d4f599b65d8a2fa17dc9c0f41a651fb41c7c1f3a8eda3f",
+  "viewport_requested": [
+    1180,
+    664
+  ],
+  "viewport_actual_readback": [
+    1179,
+    664
+  ],
+  "viewport_texture_metadata": [
+    831,
+    468
+  ],
+  "actual_camera_triangle_classification_required": true,
+  "strict_A_A2_RGBA_tolerance": 0
+}

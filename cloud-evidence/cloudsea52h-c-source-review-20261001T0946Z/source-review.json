@@ -1,0 +1,44 @@
+{
+  "reviewer": "source worker",
+  "reviewed_reference": "/workspace/scratch/a29d03198654/Aether/ref/1216.png",
+  "reference_sha256": "f705cb5de0664e9189bdc66b8ed116fc6db5f6ec1f541606df2b399dbde3aa4f",
+  "views": {
+    "front": {
+      "path": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/cloudsea52h-c-source-v0-20261001T094300Z-wc1ecaf4/images/sea52h-c-main-0-front.png",
+      "sha256": "feba6159d3539f548edd6ba0448e4459f122f65be1a4014cd20fccd75cdc8114",
+      "actually_viewed": true
+    },
+    "side": {
+      "path": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/cloudsea52h-c-source-v0-20261001T094300Z-wc1ecaf4/images/sea52h-c-main-0-side.png",
+      "sha256": "167fe360a37d099e8672bf9c8da21c6babdeaa0315a8d3336f61c8e5a54cba57",
+      "actually_viewed": true
+    },
+    "back": {
+      "path": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/cloudsea52h-c-source-v0-20261001T094300Z-wc1ecaf4/images/sea52h-c-main-0-back.png",
+      "sha256": "5ac6d902d9be4a9bb87bfa0ad5025857a2d7e374730d1546f9bc7d181fbce601",
+      "actually_viewed": true
+    },
+    "top": {
+      "path": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/cloudsea52h-c-source-v0-20261001T094300Z-wc1ecaf4/images/sea52h-c-main-0-top.png",
+      "sha256": "948d90d7613a2bdeb6ec3580f9cc0c49e65cdaca31236039263c3d9bd93aec6e",
+      "actually_viewed": true
+    },
+    "underside": {
+      "path": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/cloudsea52h-c-source-v0-20261001T094300Z-wc1ecaf4/images/sea52h-c-main-0-underside.png",
+      "sha256": "46e57ecde1ce347e769528da1634e8282d04b547b5555fe31f07064dc6873ec2",
+      "actually_viewed": true
+    }
+  },
+  "run_complete": true,
+  "blender_exitcode": 0,
+  "original_source_manifest_all_files_unchanged": true,
+  "visual_acceptance": false,
+  "world_integration_recommended": false,
+  "findings": [
+    "Narrow all-around bevel strips disappeared. Unequal short shoulders now affect the external silhouette.",
+    "The central broad top plane and massive smooth underside remain dominant. This still reads as a large stone base carrying attached platforms.",
+    "Front/back shoulders have abrupt step roots and angular creases; they do not yet read as broad continuous rolling cloud volume.",
+    "The source geometry and close/reopen checks pass, but the reference shape objective is not met."
+  ],
+  "next_geometry_hypothesis": "Adding positive cages outside the old convex macro shell changes the rim while leaving its dominant interior planes. A next independent experiment should directly redistribute interior control vertices across those planes, with wide short nonparallel convex/concave transitions and volume present through shoulder roots; no new model is started by this report."
+}
