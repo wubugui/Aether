@@ -1,0 +1,69 @@
+{
+  "state": "finished",
+  "complete": false,
+  "run_id": "cloudbank58c-source-20261001T124316Z-l9ffuthi",
+  "started_utc": "20261001T124316Z",
+  "commands": [
+    {
+      "script": "build58c.py",
+      "argv": [
+        "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+        "-b",
+        "-t",
+        "2",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-c/recovery-01/build58c.py"
+      ],
+      "state": "finished",
+      "complete": true,
+      "actual_child_exit_code": 0,
+      "hard_errors": []
+    },
+    {
+      "script": "verify58c.py",
+      "argv": [
+        "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+        "-b",
+        "-t",
+        "2",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-c/recovery-01/verify58c.py"
+      ],
+      "state": "finished",
+      "complete": false,
+      "actual_child_exit_code": 1,
+      "hard_errors": [
+        "Traceback (most recent call last):",
+        "Error: script failed, file: '/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-c/recovery-01/verify58c.py', exiting."
+      ]
+    }
+  ],
+  "world_loaded": false,
+  "rendered": false,
+  "visual_acceptance": false,
+  "limit_stop_reason": null,
+  "error": null,
+  "wall_seconds": 8.343554330000188,
+  "peak_observed_rss_kib": 355896,
+  "peak_child_rss_kib": 362192,
+  "protected_A_B_unchanged": true,
+  "frozen_inputs_unchanged": true,
+  "source_files": {
+    "cloud_bank58c_union.blend": {
+      "sha256": "1c62e7e840178940f959a946b8c3a5417472147ed932f9ed980b668e31538189",
+      "bytes": 9537897
+    },
+    "cloud_bank58c_coarse15.blend": {
+      "sha256": "68a861096c0b889bc2277415092fb6e75d8a538b82d4c35770388a977f9d9119",
+      "bytes": 7676611
+    },
+    "cloud_bank58c_controls.blend": {
+      "sha256": "1b1459782760b2c00da5c7f47580453ae1d9bdaf709f16d9d065986ac547d313",
+      "bytes": 5892573
+    }
+  }
+}

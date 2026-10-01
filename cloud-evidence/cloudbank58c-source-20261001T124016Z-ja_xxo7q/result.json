@@ -1,0 +1,44 @@
+{
+  "state": "finished",
+  "complete": false,
+  "run_id": "cloudbank58c-source-20261001T124016Z-ja_xxo7q",
+  "started_utc": "20261001T124016Z",
+  "commands": [
+    {
+      "script": "build58c.py",
+      "argv": [
+        "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+        "-b",
+        "-t",
+        "2",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-c/build58c.py"
+      ],
+      "state": "finished",
+      "complete": false,
+      "actual_child_exit_code": 1,
+      "hard_errors": [
+        "Traceback (most recent call last):",
+        "Error: script failed, file: '/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-c/build58c.py', exiting."
+      ]
+    }
+  ],
+  "world_loaded": false,
+  "rendered": false,
+  "visual_acceptance": false,
+  "limit_stop_reason": null,
+  "error": null,
+  "wall_seconds": 1.2938159390032524,
+  "peak_observed_rss_kib": 262056,
+  "peak_child_rss_kib": 268720,
+  "protected_A_B_unchanged": true,
+  "frozen_inputs_unchanged": true,
+  "source_files": {
+    "cloud_bank58c_controls.blend": {
+      "sha256": "ca0289e74c20f4837f3b32b57711b55dfefd8abe3834159b23d709d6aeb64141",
+      "bytes": 5891317
+    }
+  }
+}

@@ -1,0 +1,2316 @@
+{
+  "camera_source": "cloud-evidence/cloudsea52h-d-ab-front-20261001T102736Z-svczz9fo/images/report.json",
+  "camera_source_sha256": "96fb590c0e2a2ed88a6b1fe52049c9ecb30d1c06379de6de10a1e78e18d2f816",
+  "camera": {
+    "camera_far": 18000.0,
+    "camera_fov": 62.0,
+    "camera_keep_aspect": 1,
+    "camera_near": 0.349999994039536,
+    "camera_projection_columns": [
+      [
+        0.93665486574173,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.66427946090698,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -1.00003886222839,
+        -1.0
+      ],
+      [
+        0.0,
+        0.0,
+        -0.70001357793808,
+        0.0
+      ]
+    ],
+    "camera_transform": [
+      0.685364723205566,
+      0.0,
+      0.72819995880127,
+      0.119988560676575,
+      0.986331343650818,
+      -0.112930417060852,
+      -0.718246459960938,
+      0.164774194359779,
+      0.675996720790863,
+      3000.0,
+      1150.0,
+      4300.0
+    ]
+  },
+  "exact_reference_resolution": [
+    1672,
+    941
+  ],
+  "sampling_grid": [
+    836,
+    471
+  ],
+  "summary": {
+    "lower_density": {
+      "count": 9,
+      "with_nearest_triangle_samples": 9,
+      "with_25_or_more_samples": 9
+    },
+    "medium_fold": {
+      "count": 18,
+      "with_nearest_triangle_samples": 16,
+      "with_25_or_more_samples": 16
+    },
+    "primary_crown": {
+      "count": 6,
+      "with_nearest_triangle_samples": 6,
+      "with_25_or_more_samples": 6
+    },
+    "small_edge_fold": {
+      "count": 24,
+      "with_nearest_triangle_samples": 17,
+      "with_25_or_more_samples": 17
+    }
+  },
+  "controls": [
+    {
+      "id": "L01",
+      "role": "lower_density",
+      "parent_form": null,
+      "camera_depth_range_m": [
+        122.22347609308726,
+        1000.1842495251749
+      ],
+      "conservative_obb_reference_pixel_bounds": null,
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        -76.53320193482159,
+        12.119240293716741
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -76.96988715759053,
+        -21.335484807604434
+      ],
+      "isolated_actual_triangle_sample_count": 18870,
+      "isolated_sample_reference_bbox": [
+        0.0,
+        777.1740976645435,
+        742.0,
+        941.0
+      ],
+      "nearest_actual_triangle_sample_count": 1639,
+      "visible_fraction_of_isolated_samples": 0.08685744568097509,
+      "nearest_sample_reference_bbox": [
+        0.0,
+        873.0721868365181,
+        672.0,
+        941.0
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "L02",
+      "role": "lower_density",
+      "parent_form": null,
+      "camera_depth_range_m": [
+        0.0778335867483015,
+        934.5029773299608
+      ],
+      "conservative_obb_reference_pixel_bounds": null,
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        -89.94351483965038,
+        86.99085063673812
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -89.99262231254296,
+        -24.914222445854175
+      ],
+      "isolated_actual_triangle_sample_count": 8701,
+      "isolated_sample_reference_bbox": [
+        784.0,
+        835.1125265392782,
+        1314.0,
+        941.0
+      ],
+      "nearest_actual_triangle_sample_count": 1480,
+      "visible_fraction_of_isolated_samples": 0.17009539133432938,
+      "nearest_sample_reference_bbox": [
+        820.0,
+        889.0552016985138,
+        1030.0,
+        941.0
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "L03",
+      "role": "lower_density",
+      "parent_form": null,
+      "camera_depth_range_m": [
+        153.51830444272457,
+        1159.0072978564065
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        476.1164117033499,
+        560.5029845158297,
+        29377.78683721,
+        20236.859158119554
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        -4.133777863218852,
+        69.43418390878466
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -76.9973946661217,
+        -15.185650429694233
+      ],
+      "isolated_actual_triangle_sample_count": 44231,
+      "isolated_sample_reference_bbox": [
+        786.0,
+        683.2738853503184,
+        1672.0,
+        941.0
+      ],
+      "nearest_actual_triangle_sample_count": 8856,
+      "visible_fraction_of_isolated_samples": 0.2002215640614049,
+      "nearest_sample_reference_bbox": [
+        882.0,
+        699.2569002123142,
+        1672.0,
+        941.0
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "L04",
+      "role": "lower_density",
+      "parent_form": null,
+      "camera_depth_range_m": [
+        738.272214631666,
+        1606.7233060615506
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        922.2844563037052,
+        508.4402410065457,
+        2060.6674145989227,
+        1444.6150918512717
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        9.35689688415932,
+        48.43320089252796
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -41.03195776373071,
+        -7.512554957166648
+      ],
+      "isolated_actual_triangle_sample_count": 49866,
+      "isolated_sample_reference_bbox": [
+        966.0,
+        573.3906581740977,
+        1672.0,
+        941.0
+      ],
+      "nearest_actual_triangle_sample_count": 533,
+      "visible_fraction_of_isolated_samples": 0.010688645570127943,
+      "nearest_sample_reference_bbox": [
+        1032.0,
+        613.348195329087,
+        1672.0,
+        871.0743099787686
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "L05",
+      "role": "lower_density",
+      "parent_form": null,
+      "camera_depth_range_m": [
+        612.6431032017144,
+        1635.1626247817146
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        55.455994749637,
+        519.9387607048616,
+        1346.5530791857366,
+        2440.0361363833576
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        -39.08374767731414,
+        25.323892106194737
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -42.596533461849404,
+        -8.972829551398107
+      ],
+      "isolated_actual_triangle_sample_count": 62623,
+      "isolated_sample_reference_bbox": [
+        204.0,
+        593.3694267515923,
+        1196.0,
+        941.0
+      ],
+      "nearest_actual_triangle_sample_count": 13123,
+      "visible_fraction_of_isolated_samples": 0.20955559458984718,
+      "nearest_sample_reference_bbox": [
+        620.0,
+        595.3673036093418,
+        1048.0,
+        893.0509554140127
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "L06",
+      "role": "lower_density",
+      "parent_form": null,
+      "camera_depth_range_m": [
+        1029.2101664369777,
+        2026.7513984337788
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        569.8605860972427,
+        483.2701913335341,
+        1287.8330000001783,
+        1149.4805628485087
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        -8.274772133488439,
+        28.04454928170612
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -29.235701773076613,
+        -4.727890215582158
+      ],
+      "isolated_actual_triangle_sample_count": 36281,
+      "isolated_sample_reference_bbox": [
+        722.0,
+        535.4309978768578,
+        1252.0,
+        909.0339702760085
+      ],
+      "nearest_actual_triangle_sample_count": 5515,
+      "visible_fraction_of_isolated_samples": 0.15200793803919407,
+      "nearest_sample_reference_bbox": [
+        786.0,
+        535.4309978768578,
+        1064.0,
+        697.2590233545648
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "L07",
+      "role": "lower_density",
+      "parent_form": null,
+      "camera_depth_range_m": [
+        690.1722469085378,
+        1598.7392669913813
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        -649.9582578700474,
+        512.1852307228736,
+        719.7794342674763,
+        1437.7303573943198
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        -56.21040909315303,
+        -13.647607714421033
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -38.35655367921601,
+        -8.164561849837833
+      ],
+      "isolated_actual_triangle_sample_count": 47225,
+      "isolated_sample_reference_bbox": [
+        0.0,
+        583.380042462845,
+        646.0,
+        941.0
+      ],
+      "nearest_actual_triangle_sample_count": 7604,
+      "visible_fraction_of_isolated_samples": 0.16101641079936474,
+      "nearest_sample_reference_bbox": [
+        0.0,
+        583.380042462845,
+        358.0,
+        927.0148619957537
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "L08",
+      "role": "lower_density",
+      "parent_form": null,
+      "camera_depth_range_m": [
+        1278.7385473229979,
+        2325.107162445595
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        318.1490067401319,
+        470.048589757874,
+        983.3223002781664,
+        1025.1421636355572
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        -31.127197479459678,
+        0.40455238008861616
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -22.822507550543342,
+        -2.755542186327517
+      ],
+      "isolated_actual_triangle_sample_count": 27217,
+      "isolated_sample_reference_bbox": [
+        364.0,
+        507.46072186836517,
+        842.0,
+        799.1507430997876
+      ],
+      "nearest_actual_triangle_sample_count": 1300,
+      "visible_fraction_of_isolated_samples": 0.04776426498144542,
+      "nearest_sample_reference_bbox": [
+        634.0,
+        507.46072186836517,
+        802.0,
+        595.3673036093418
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "L09",
+      "role": "lower_density",
+      "parent_form": null,
+      "camera_depth_range_m": [
+        1800.8606075903547,
+        2782.335744192326
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        567.7517758134229,
+        442.85678119504803,
+        1051.015510912109,
+        786.605170781134
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        -11.34438028846928,
+        14.469338507602988
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -14.697540381056665,
+        0.25485501307905994
+      ],
+      "isolated_actual_triangle_sample_count": 14655,
+      "isolated_sample_reference_bbox": [
+        678.0,
+        467.5031847133758,
+        1038.0,
+        675.2823779193205
+      ],
+      "nearest_actual_triangle_sample_count": 2870,
+      "visible_fraction_of_isolated_samples": 0.19583759808938928,
+      "nearest_sample_reference_bbox": [
+        782.0,
+        467.5031847133758,
+        1030.0,
+        581.3821656050956
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "P01",
+      "role": "primary_crown",
+      "parent_form": null,
+      "camera_depth_range_m": [
+        426.66278198852183,
+        800.3514844153808
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        -71.16740549367154,
+        533.7301665914064,
+        740.1777182453596,
+        1348.0805090867414
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        -44.012727415526264,
+        -12.65369167690154
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -35.65717050473352,
+        -8.764323315144624
+      ],
+      "isolated_actual_triangle_sample_count": 36621,
+      "isolated_sample_reference_bbox": [
+        88.0,
+        591.3715498938429,
+        660.0,
+        941.0
+      ],
+      "nearest_actual_triangle_sample_count": 22929,
+      "visible_fraction_of_isolated_samples": 0.6261161628573769,
+      "nearest_sample_reference_bbox": [
+        88.0,
+        591.3715498938429,
+        660.0,
+        941.0
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "P02",
+      "role": "primary_crown",
+      "parent_form": null,
+      "camera_depth_range_m": [
+        491.48094220126177,
+        893.7075571369031
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        905.9435671191803,
+        462.3435794198522,
+        1667.1556653656678,
+        1183.2351397887633
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        15.794552823005718,
+        42.09743318845519
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -30.47027830094172,
+        -2.886491195085315
+      ],
+      "isolated_actual_triangle_sample_count": 40818,
+      "isolated_sample_reference_bbox": [
+        1058.0,
+        509.45859872611464,
+        1544.0,
+        931.0106157112526
+      ],
+      "nearest_actual_triangle_sample_count": 24518,
+      "visible_fraction_of_isolated_samples": 0.6006663726787201,
+      "nearest_sample_reference_bbox": [
+        1058.0,
+        509.45859872611464,
+        1544.0,
+        879.0658174097665
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "P03",
+      "role": "primary_crown",
+      "parent_form": null,
+      "camera_depth_range_m": [
+        845.9743405048272,
+        1258.630468025084
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        1206.8485298795947,
+        424.90934825212986,
+        1731.5961707702763,
+        771.5080252775936
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        28.398319031850704,
+        45.927796033900854
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -16.958541304236718,
+        1.8610304528207209
+      ],
+      "isolated_actual_triangle_sample_count": 18673,
+      "isolated_sample_reference_bbox": [
+        1260.0,
+        445.5265392781316,
+        1644.0,
+        709.2462845010616
+      ],
+      "nearest_actual_triangle_sample_count": 7087,
+      "visible_fraction_of_isolated_samples": 0.379531944518824,
+      "nearest_sample_reference_bbox": [
+        1290.0,
+        445.5265392781316,
+        1636.0,
+        623.3375796178344
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "P04",
+      "role": "primary_crown",
+      "parent_form": null,
+      "camera_depth_range_m": [
+        1049.960606640863,
+        1339.1280253575449
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        372.82465875339756,
+        469.40909889336615,
+        679.9585390819428,
+        708.9929750135841
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        -27.054953752553892,
+        -11.610745893175643
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -13.947460862405881,
+        -1.1456381335854877
+      ],
+      "isolated_actual_triangle_sample_count": 7771,
+      "isolated_sample_reference_bbox": [
+        436.0,
+        485.484076433121,
+        674.0,
+        665.2929936305733
+      ],
+      "nearest_actual_triangle_sample_count": 5797,
+      "visible_fraction_of_isolated_samples": 0.74597863852786,
+      "nearest_sample_reference_bbox": [
+        436.0,
+        485.484076433121,
+        674.0,
+        641.3184713375796
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "P05",
+      "role": "primary_crown",
+      "parent_form": null,
+      "camera_depth_range_m": [
+        1777.368666102864,
+        2135.456091163933
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        661.7998955551319,
+        417.79309993109587,
+        851.7624738943279,
+        562.0920236800063
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        -10.223696361946114,
+        -0.3885801450987483
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -4.761251925881954,
+        3.205623718856196
+      ],
+      "isolated_actual_triangle_sample_count": 2851,
+      "isolated_sample_reference_bbox": [
+        694.0,
+        427.5456475583864,
+        830.0,
+        535.4309978768578
+      ],
+      "nearest_actual_triangle_sample_count": 2691,
+      "visible_fraction_of_isolated_samples": 0.9438793405822519,
+      "nearest_sample_reference_bbox": [
+        694.0,
+        427.5456475583864,
+        830.0,
+        531.4352441613588
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "P06",
+      "role": "primary_crown",
+      "parent_form": null,
+      "camera_depth_range_m": [
+        2116.772408053692,
+        2402.7026220377543
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        740.8399053008251,
+        424.4486535297153,
+        872.5219474783653,
+        520.698841028435
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        -5.301316638770802,
+        1.8108796710382273
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -2.6963280641289114,
+        2.8525243535723512
+      ],
+      "isolated_actual_triangle_sample_count": 1411,
+      "isolated_sample_reference_bbox": [
+        764.0,
+        431.54140127388536,
+        860.0,
+        507.46072186836517
+      ],
+      "nearest_actual_triangle_sample_count": 290,
+      "visible_fraction_of_isolated_samples": 0.20552799433026223,
+      "nearest_sample_reference_bbox": [
+        812.0,
+        431.54140127388536,
+        860.0,
+        483.48619957537153
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "M01",
+      "role": "medium_fold",
+      "parent_form": "P01",
+      "camera_depth_range_m": [
+        546.6900127252709,
+        784.2044705536157
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        -18.305218102187958,
+        577.9252922338474,
+        463.2931569288293,
+        1000.6273398432106
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        -45.081187043687,
+        -28.067254164632267
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -26.34208549059076,
+        -11.07506705387933
+      ],
+      "isolated_actual_triangle_sample_count": 14715,
+      "isolated_sample_reference_bbox": [
+        50.0,
+        623.3375796178344,
+        418.0,
+        859.0870488322718
+      ],
+      "nearest_actual_triangle_sample_count": 6026,
+      "visible_fraction_of_isolated_samples": 0.40951410125722054,
+      "nearest_sample_reference_bbox": [
+        50.0,
+        623.3375796178344,
+        348.0,
+        857.0891719745223
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "M02",
+      "role": "medium_fold",
+      "parent_form": "P01",
+      "camera_depth_range_m": [
+        555.1957186580714,
+        755.2303090305472
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        524.1846297248952,
+        728.5674914339941,
+        903.823327807852,
+        1219.9627300206835
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        -20.41003285894145,
+        2.00329478329824
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -39.449426908461106,
+        -22.622113139164213
+      ],
+      "isolated_actual_triangle_sample_count": 8917,
+      "isolated_sample_reference_bbox": [
+        552.0,
+        797.1528662420383,
+        864.0,
+        941.0
+      ],
+      "nearest_actual_triangle_sample_count": 7068,
+      "visible_fraction_of_isolated_samples": 0.7926432656723114,
+      "nearest_sample_reference_bbox": [
+        596.0,
+        797.1528662420383,
+        856.0,
+        941.0
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "M03",
+      "role": "medium_fold",
+      "parent_form": "P01",
+      "camera_depth_range_m": [
+        433.8044447819948,
+        654.1761501720878
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        146.72924702764834,
+        576.8699117418741,
+        637.8406187347342,
+        1015.2537724579199
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        -39.02495480202936,
+        -19.283687405864853
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -28.94395138419557,
+        -11.574843835648393
+      ],
+      "isolated_actual_triangle_sample_count": 18532,
+      "isolated_sample_reference_bbox": [
+        202.0,
+        631.3290870488323,
+        562.0,
+        903.0403397027601
+      ],
+      "nearest_actual_triangle_sample_count": 9223,
+      "visible_fraction_of_isolated_samples": 0.49767968918627237,
+      "nearest_sample_reference_bbox": [
+        202.0,
+        633.3269639065818,
+        540.0,
+        871.0743099787686
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "M04",
+      "role": "medium_fold",
+      "parent_form": "P02",
+      "camera_depth_range_m": [
+        361.11921686622713,
+        632.5162962122909
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        978.4973465336861,
+        627.2943882550968,
+        1597.3431162119316,
+        1359.2767231551065
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        12.856717284747909,
+        36.390072229156246
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -39.35177220686863,
+        -15.944612190550014
+      ],
+      "isolated_actual_triangle_sample_count": 20302,
+      "isolated_sample_reference_bbox": [
+        1014.0,
+        695.2611464968153,
+        1412.0,
+        941.0
+      ],
+      "nearest_actual_triangle_sample_count": 13490,
+      "visible_fraction_of_isolated_samples": 0.6644665550192099,
+      "nearest_sample_reference_bbox": [
+        1014.0,
+        695.2611464968153,
+        1412.0,
+        941.0
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "M05",
+      "role": "medium_fold",
+      "parent_form": "P02",
+      "camera_depth_range_m": [
+        805.2505234502219,
+        1046.157316523371
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        977.2837667801031,
+        481.9212344943248,
+        1286.6373087254199,
+        725.9685408095139
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        14.645175809622382,
+        28.31456194080113
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -13.683711414582415,
+        -2.7658161793245006
+      ],
+      "isolated_actual_triangle_sample_count": 6476,
+      "isolated_sample_reference_bbox": [
+        1040.0,
+        507.46072186836517,
+        1258.0,
+        661.2972399150743
+      ],
+      "nearest_actual_triangle_sample_count": 1943,
+      "visible_fraction_of_isolated_samples": 0.30003088326127236,
+      "nearest_sample_reference_bbox": [
+        1040.0,
+        507.46072186836517,
+        1188.0,
+        645.3142250530785
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "M06",
+      "role": "medium_fold",
+      "parent_form": "P02",
+      "camera_depth_range_m": [
+        634.9166868916818,
+        861.7583144583346
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        1299.1021543692693,
+        601.9724461413981,
+        1785.4466496732946,
+        942.0860979915975
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        33.95670363965002,
+        46.821255135534024
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -26.29156118092342,
+        -13.090267217370092
+      ],
+      "isolated_actual_triangle_sample_count": 11985,
+      "isolated_sample_reference_bbox": [
+        1364.0,
+        653.3057324840764,
+        1670.0,
+        857.0891719745223
+      ],
+      "nearest_actual_triangle_sample_count": 5379,
+      "visible_fraction_of_isolated_samples": 0.448811013767209,
+      "nearest_sample_reference_bbox": [
+        1492.0,
+        657.3014861995754,
+        1670.0,
+        851.0955414012739
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "M07",
+      "role": "medium_fold",
+      "parent_form": "P02",
+      "camera_depth_range_m": [
+        665.6013598675386,
+        936.7217367385343
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        775.1902817400253,
+        661.4055278524502,
+        1146.0639720475067,
+        1038.2202882478925
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        -2.329098628246858,
+        15.933789482050901
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -29.826023322209668,
+        -16.44848083084645
+      ],
+      "isolated_actual_triangle_sample_count": 9503,
+      "isolated_sample_reference_bbox": [
+        804.0,
+        701.2547770700637,
+        1060.0,
+        919.0233545647559
+      ],
+      "nearest_actual_triangle_sample_count": 5214,
+      "visible_fraction_of_isolated_samples": 0.5486688414184995,
+      "nearest_sample_reference_bbox": [
+        804.0,
+        701.2547770700637,
+        1004.0,
+        861.0849256900212
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "M08",
+      "role": "medium_fold",
+      "parent_form": "P03",
+      "camera_depth_range_m": [
+        1141.1993641680779,
+        1406.9286652760732
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        1241.9812099600229,
+        462.25286828442376,
+        1440.191518411325,
+        613.7686127253154
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        27.760057559120366,
+        36.389949443495766
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -7.661047716351294,
+        -0.4088681428018298
+      ],
+      "isolated_actual_triangle_sample_count": 3091,
+      "isolated_sample_reference_bbox": [
+        1248.0,
+        475.4946921443737,
+        1412.0,
+        575.3885350318471
+      ],
+      "nearest_actual_triangle_sample_count": 37,
+      "visible_fraction_of_isolated_samples": 0.011970236169524426,
+      "nearest_sample_reference_bbox": [
+        1276.0,
+        479.49044585987264,
+        1298.0,
+        491.4777070063694
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "M09",
+      "role": "medium_fold",
+      "parent_form": "P03",
+      "camera_depth_range_m": [
+        916.1529491674139,
+        1166.7876289683916
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        1055.9321866172124,
+        453.03778589640365,
+        1353.9581292729392,
+        665.56389393647
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        18.725256860707187,
+        32.15258499043099
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -11.234387913001605,
+        -0.10182119583486636
+      ],
+      "isolated_actual_triangle_sample_count": 6485,
+      "isolated_sample_reference_bbox": [
+        1102.0,
+        471.49893842887474,
+        1328.0,
+        625.3354564755839
+      ],
+      "nearest_actual_triangle_sample_count": 388,
+      "visible_fraction_of_isolated_samples": 0.059830377794911335,
+      "nearest_sample_reference_bbox": [
+        1154.0,
+        475.4946921443737,
+        1314.0,
+        511.4564755838641
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "M10",
+      "role": "medium_fold",
+      "parent_form": "P03",
+      "camera_depth_range_m": [
+        791.0384952920998,
+        1070.2641133544403
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        1378.2193405873882,
+        532.276700069536,
+        1794.3105623532877,
+        768.9332175304669
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        37.85250497047472,
+        48.51913301537954
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -17.65161626268114,
+        -6.824259550602963
+      ],
+      "isolated_actual_triangle_sample_count": 7111,
+      "isolated_sample_reference_bbox": [
+        1444.0,
+        563.4012738853503,
+        1672.0,
+        719.2356687898089
+      ],
+      "nearest_actual_triangle_sample_count": 2654,
+      "visible_fraction_of_isolated_samples": 0.37322458163408806,
+      "nearest_sample_reference_bbox": [
+        1530.0,
+        577.3864118895966,
+        1672.0,
+        717.2377919320594
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "M11",
+      "role": "medium_fold",
+      "parent_form": "P04",
+      "camera_depth_range_m": [
+        1082.9252703448221,
+        1298.6386031303466
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        302.79393003305455,
+        525.1626431430556,
+        484.1824907991194,
+        681.8850413134978
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        -32.96725916992048,
+        -24.57386973137885
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -12.347847565286509,
+        -4.995895557481194
+      ],
+      "isolated_actual_triangle_sample_count": 2947,
+      "isolated_sample_reference_bbox": [
+        328.0,
+        539.4267515923567,
+        478.0,
+        641.3184713375796
+      ],
+      "nearest_actual_triangle_sample_count": 1641,
+      "visible_fraction_of_isolated_samples": 0.5568374618255854,
+      "nearest_sample_reference_bbox": [
+        328.0,
+        539.4267515923567,
+        446.0,
+        627.3333333333334
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "M12",
+      "role": "medium_fold",
+      "parent_form": "P04",
+      "camera_depth_range_m": [
+        1173.8399878407442,
+        1402.563661597614
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        591.6517731271533,
+        552.5294167770321,
+        781.0199312664406,
+        713.0041515145641
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        -13.847122034088066,
+        -5.323148704413224
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -14.69721624005445,
+        -7.303522553097714
+      ],
+      "isolated_actual_triangle_sample_count": 2500,
+      "isolated_sample_reference_bbox": [
+        644.0,
+        571.3927813163482,
+        762.0,
+        675.2823779193205
+      ],
+      "nearest_actual_triangle_sample_count": 786,
+      "visible_fraction_of_isolated_samples": 0.3144,
+      "nearest_sample_reference_bbox": [
+        648.0,
+        571.3927813163482,
+        746.0,
+        627.3333333333334
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "M13",
+      "role": "medium_fold",
+      "parent_form": "P04",
+      "camera_depth_range_m": [
+        908.9150125068554,
+        1125.017093490268
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        434.88748779057164,
+        635.6881382946507,
+        643.6473921812117,
+        819.9064013984143
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        -25.796062862881627,
+        -14.652162937960433
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -21.885254319275635,
+        -14.118890012633146
+      ],
+      "isolated_actual_triangle_sample_count": 3749,
+      "isolated_sample_reference_bbox": [
+        458.0,
+        667.2908704883228,
+        632.0,
+        785.1656050955414
+      ],
+      "nearest_actual_triangle_sample_count": 0,
+      "visible_fraction_of_isolated_samples": 0.0,
+      "nearest_sample_reference_bbox": null,
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "M14",
+      "role": "medium_fold",
+      "parent_form": "P05",
+      "camera_depth_range_m": [
+        2034.7852473393182,
+        2239.4511021639696
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        704.555635586165,
+        426.0161669007646,
+        797.8439068800488,
+        502.0877735223543
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        -9.015292274327606,
+        -3.968127730444438
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -1.7378047578109204,
+        2.883395362074666
+      ],
+      "isolated_actual_triangle_sample_count": 798,
+      "isolated_sample_reference_bbox": [
+        712.0,
+        431.54140127388536,
+        782.0,
+        493.4755838641189
+      ],
+      "nearest_actual_triangle_sample_count": 26,
+      "visible_fraction_of_isolated_samples": 0.03258145363408521,
+      "nearest_sample_reference_bbox": [
+        714.0,
+        431.54140127388536,
+        750.0,
+        457.51380042462847
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "M15",
+      "role": "medium_fold",
+      "parent_form": "P05",
+      "camera_depth_range_m": [
+        1709.3266219923287,
+        1894.9666203643594
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        685.0037424984952,
+        512.3694628599991,
+        810.2102148473739,
+        605.2871093281926
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        -9.546479397203028,
+        -2.828383693621814
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -8.23998187912335,
+        -3.7140115785923076
+      ],
+      "isolated_actual_triangle_sample_count": 1079,
+      "isolated_sample_reference_bbox": [
+        704.0,
+        521.4458598726114,
+        798.0,
+        583.380042462845
+      ],
+      "nearest_actual_triangle_sample_count": 615,
+      "visible_fraction_of_isolated_samples": 0.5699721964782206,
+      "nearest_sample_reference_bbox": [
+        712.0,
+        521.4458598726114,
+        798.0,
+        575.3885350318471
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "M16",
+      "role": "medium_fold",
+      "parent_form": "P05",
+      "camera_depth_range_m": [
+        1864.6456118467565,
+        2058.3234604230774
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        791.703683907101,
+        491.5723673193384,
+        882.8903199514027,
+        564.3987309332218
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        -2.764676413928736,
+        2.9001938401137206
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -6.005902608699646,
+        -2.158000062464037
+      ],
+      "isolated_actual_triangle_sample_count": 804,
+      "isolated_sample_reference_bbox": [
+        798.0,
+        499.4692144373673,
+        876.0,
+        553.4118895966029
+      ],
+      "nearest_actual_triangle_sample_count": 771,
+      "visible_fraction_of_isolated_samples": 0.9589552238805971,
+      "nearest_sample_reference_bbox": [
+        798.0,
+        499.4692144373673,
+        876.0,
+        551.4140127388536
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "M17",
+      "role": "medium_fold",
+      "parent_form": "P06",
+      "camera_depth_range_m": [
+        2127.1351777053533,
+        2305.601925067829
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        709.1245921668637,
+        448.77975621701245,
+        789.7982143031755,
+        511.513460418668
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        -8.381892137842962,
+        -4.559899702399265
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -2.5485536634583457,
+        1.1476032455399685
+      ],
+      "isolated_actual_triangle_sample_count": 486,
+      "isolated_sample_reference_bbox": [
+        720.0,
+        455.515923566879,
+        774.0,
+        505.4628450106157
+      ],
+      "nearest_actual_triangle_sample_count": 0,
+      "visible_fraction_of_isolated_samples": 0.0,
+      "nearest_sample_reference_bbox": null,
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "M18",
+      "role": "medium_fold",
+      "parent_form": "P06",
+      "camera_depth_range_m": [
+        2231.231962098321,
+        2424.2281079557156
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        823.609649587123,
+        440.9554044008164,
+        898.9779309026193,
+        497.0962117268946
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        -0.4852902842973403,
+        3.5338302841231988
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -1.376376041700082,
+        1.8375294396320432
+      ],
+      "isolated_actual_triangle_sample_count": 436,
+      "isolated_sample_reference_bbox": [
+        830.0,
+        445.5265392781316,
+        884.0,
+        489.47983014861995
+      ],
+      "nearest_actual_triangle_sample_count": 124,
+      "visible_fraction_of_isolated_samples": 0.28440366972477066,
+      "nearest_sample_reference_bbox": [
+        854.0,
+        445.5265392781316,
+        884.0,
+        471.49893842887474
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "S01",
+      "role": "small_edge_fold",
+      "parent_form": "M01",
+      "camera_depth_range_m": [
+        587.9669416490019,
+        678.3384729456598
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        41.382861359236436,
+        605.3612929214378,
+        233.25852720649175,
+        759.5203251576414
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        -44.128486700534864,
+        -38.74279290207355
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -18.115979070240567,
+        -11.159754325026109
+      ],
+      "isolated_actual_triangle_sample_count": 2462,
+      "isolated_sample_reference_bbox": [
+        76.0,
+        625.3354564755839,
+        208.0,
+        727.2271762208068
+      ],
+      "nearest_actual_triangle_sample_count": 1858,
+      "visible_fraction_of_isolated_samples": 0.7546709991876523,
+      "nearest_sample_reference_bbox": [
+        76.0,
+        625.3354564755839,
+        206.0,
+        727.2271762208068
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "S02",
+      "role": "small_edge_fold",
+      "parent_form": "M02",
+      "camera_depth_range_m": [
+        644.713851527669,
+        722.3412981160092
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        765.7113512862733,
+        820.5760886965506,
+        896.4229908598226,
+        965.3980555647561
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        -4.548223298191764,
+        3.458900279666262
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -30.837074998677558,
+        -25.55772961678547
+      ],
+      "isolated_actual_triangle_sample_count": 1869,
+      "isolated_sample_reference_bbox": [
+        774.0,
+        845.1019108280254,
+        884.0,
+        937.004246284501
+      ],
+      "nearest_actual_triangle_sample_count": 278,
+      "visible_fraction_of_isolated_samples": 0.1487426431246656,
+      "nearest_sample_reference_bbox": [
+        848.0,
+        855.0912951167728,
+        880.0,
+        909.0339702760085
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "S03",
+      "role": "small_edge_fold",
+      "parent_form": "M03",
+      "camera_depth_range_m": [
+        404.5704118727808,
+        492.55472548249367
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        219.8710832663073,
+        677.3866498007803,
+        409.0617881897681,
+        938.7870198188051
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        -37.74335469339526,
+        -29.68207534634307
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -27.080507130286737,
+        -17.15741459897944
+      ],
+      "isolated_actual_triangle_sample_count": 4546,
+      "isolated_sample_reference_bbox": [
+        230.0,
+        713.2420382165606,
+        390.0,
+        871.0743099787686
+      ],
+      "nearest_actual_triangle_sample_count": 4123,
+      "visible_fraction_of_isolated_samples": 0.9069511658600968,
+      "nearest_sample_reference_bbox": [
+        230.0,
+        715.23991507431,
+        378.0,
+        871.0743099787686
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "S04",
+      "role": "small_edge_fold",
+      "parent_form": "M04",
+      "camera_depth_range_m": [
+        328.9604372080821,
+        444.40895367740825
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        1126.9867424128677,
+        757.0691595771239,
+        1421.0097150001357,
+        1133.726410104522
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        21.045952152337556,
+        34.11965164020246
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -35.895301446217864,
+        -23.04815322944926
+      ],
+      "isolated_actual_triangle_sample_count": 6515,
+      "isolated_sample_reference_bbox": [
+        1138.0,
+        803.1464968152866,
+        1366.0,
+        941.0
+      ],
+      "nearest_actual_triangle_sample_count": 6443,
+      "visible_fraction_of_isolated_samples": 0.9889485801995396,
+      "nearest_sample_reference_bbox": [
+        1138.0,
+        803.1464968152866,
+        1366.0,
+        941.0
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "S05",
+      "role": "small_edge_fold",
+      "parent_form": "M04",
+      "camera_depth_range_m": [
+        495.250857521384,
+        573.1193471244698
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        1092.694952984204,
+        623.8888458211873,
+        1289.0889419325335,
+        824.2756821295048
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        20.61806742443904,
+        28.476244807526765
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -21.762605556903278,
+        -12.97477986719933
+      ],
+      "isolated_actual_triangle_sample_count": 3239,
+      "isolated_sample_reference_bbox": [
+        1130.0,
+        651.307855626327,
+        1260.0,
+        783.167728237792
+      ],
+      "nearest_actual_triangle_sample_count": 1472,
+      "visible_fraction_of_isolated_samples": 0.45446125347329425,
+      "nearest_sample_reference_bbox": [
+        1134.0,
+        651.307855626327,
+        1260.0,
+        715.23991507431
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "S06",
+      "role": "small_edge_fold",
+      "parent_form": "M05",
+      "camera_depth_range_m": [
+        978.7999176382303,
+        1066.163386961211
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        1052.9632864619366,
+        490.3984199501094,
+        1163.1600063926296,
+        581.0002666908156
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        16.489674864853583,
+        20.863437760470994
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -7.038142373147542,
+        -2.0693539110955403
+      ],
+      "isolated_actual_triangle_sample_count": 858,
+      "isolated_sample_reference_bbox": [
+        1068.0,
+        499.4692144373673,
+        1134.0,
+        567.3970276008492
+      ],
+      "nearest_actual_triangle_sample_count": 173,
+      "visible_fraction_of_isolated_samples": 0.20163170163170163,
+      "nearest_sample_reference_bbox": [
+        1068.0,
+        499.4692144373673,
+        1112.0,
+        531.4352441613588
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "S07",
+      "role": "small_edge_fold",
+      "parent_form": "M06",
+      "camera_depth_range_m": [
+        754.7945859558298,
+        850.2006273264857
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        1495.837839332982,
+        632.5261664976089,
+        1684.673423275563,
+        760.0550834122553
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        40.67067645979707,
+        45.80938675837865
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -18.203162819531517,
+        -12.89836432888917
+      ],
+      "isolated_actual_triangle_sample_count": 1897,
+      "isolated_sample_reference_bbox": [
+        1510.0,
+        649.3099787685775,
+        1642.0,
+        727.2271762208068
+      ],
+      "nearest_actual_triangle_sample_count": 436,
+      "visible_fraction_of_isolated_samples": 0.22983658408012653,
+      "nearest_sample_reference_bbox": [
+        1540.0,
+        649.3099787685775,
+        1642.0,
+        703.2526539278132
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "S08",
+      "role": "small_edge_fold",
+      "parent_form": "M06",
+      "camera_depth_range_m": [
+        695.3512607287399,
+        780.8739559607054
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        1378.9282000640926,
+        644.6957126618315,
+        1550.4827975926974,
+        773.5258247232107
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        35.919745012053376,
+        42.006804448640246
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -19.430322774155172,
+        -14.092931166202318
+      ],
+      "isolated_actual_triangle_sample_count": 2039,
+      "isolated_sample_reference_bbox": [
+        1404.0,
+        667.2908704883228,
+        1542.0,
+        747.2059447983015
+      ],
+      "nearest_actual_triangle_sample_count": 0,
+      "visible_fraction_of_isolated_samples": 0.0,
+      "nearest_sample_reference_bbox": null,
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "S09",
+      "role": "small_edge_fold",
+      "parent_form": "M07",
+      "camera_depth_range_m": [
+        633.0265868343681,
+        717.123217405158
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        924.2135308587799,
+        781.0779850792495,
+        1063.0785924267293,
+        924.6166332835388
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        7.377317469982427,
+        14.498213522176826
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -28.474649211340356,
+        -23.495088169852117
+      ],
+      "isolated_actual_triangle_sample_count": 1639,
+      "isolated_sample_reference_bbox": [
+        938.0,
+        811.1380042462845,
+        1038.0,
+        895.0488322717622
+      ],
+      "nearest_actual_triangle_sample_count": 997,
+      "visible_fraction_of_isolated_samples": 0.6082977425259305,
+      "nearest_sample_reference_bbox": [
+        942.0,
+        811.1380042462845,
+        1018.0,
+        875.0700636942676
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "S10",
+      "role": "small_edge_fold",
+      "parent_form": "M08",
+      "camera_depth_range_m": [
+        1300.398060115302,
+        1389.7905314464952
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        1290.8858078962323,
+        467.3003882885865,
+        1350.4351398241156,
+        527.2420816057474
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        30.340842133835537,
+        33.075369476410906
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -3.5838789067700425,
+        -0.15675119008039526
+      ],
+      "isolated_actual_triangle_sample_count": 448,
+      "isolated_sample_reference_bbox": [
+        1294.0,
+        473.4968152866242,
+        1346.0,
+        519.447983014862
+      ],
+      "nearest_actual_triangle_sample_count": 0,
+      "visible_fraction_of_isolated_samples": 0.0,
+      "nearest_sample_reference_bbox": null,
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "S11",
+      "role": "small_edge_fold",
+      "parent_form": "M09",
+      "camera_depth_range_m": [
+        985.4478277392259,
+        1088.6000616023446
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        1071.155081585826,
+        465.85526699865466,
+        1180.9504309726406,
+        549.1815047424857
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        17.697273279704667,
+        22.78046450277557
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -4.746598947469386,
+        -0.051430970438657776
+      ],
+      "isolated_actual_triangle_sample_count": 952,
+      "isolated_sample_reference_bbox": [
+        1086.0,
+        471.49893842887474,
+        1164.0,
+        535.4309978768578
+      ],
+      "nearest_actual_triangle_sample_count": 528,
+      "visible_fraction_of_isolated_samples": 0.5546218487394958,
+      "nearest_sample_reference_bbox": [
+        1086.0,
+        471.49893842887474,
+        1160.0,
+        513.4543524416135
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "S12",
+      "role": "small_edge_fold",
+      "parent_form": "M09",
+      "camera_depth_range_m": [
+        992.2030843037393,
+        1075.5101653199322
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        1217.3390707579288,
+        485.57070608127293,
+        1309.0280160232724,
+        556.1104769022883
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        26.189302755914103,
+        30.782152723773912
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -5.581670234357766,
+        -1.6427564071607428
+      ],
+      "isolated_actual_triangle_sample_count": 794,
+      "isolated_sample_reference_bbox": [
+        1222.0,
+        493.4755838641189,
+        1302.0,
+        547.4182590233546
+      ],
+      "nearest_actual_triangle_sample_count": 0,
+      "visible_fraction_of_isolated_samples": 0.0,
+      "nearest_sample_reference_bbox": null,
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "S13",
+      "role": "small_edge_fold",
+      "parent_form": "M10",
+      "camera_depth_range_m": [
+        895.3098939389719,
+        973.8011723250049
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        1543.039345201144,
+        562.6234088073863,
+        1694.0907701421884,
+        652.3064551514123
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        43.00315048892498,
+        46.51891179090714
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -12.082999180536678,
+        -7.617524309872334
+      ],
+      "isolated_actual_triangle_sample_count": 1095,
+      "isolated_sample_reference_bbox": [
+        1566.0,
+        575.3885350318471,
+        1662.0,
+        637.3227176220806
+      ],
+      "nearest_actual_triangle_sample_count": 38,
+      "visible_fraction_of_isolated_samples": 0.034703196347031964,
+      "nearest_sample_reference_bbox": [
+        1634.0,
+        579.3842887473461,
+        1662.0,
+        599.3630573248407
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "S14",
+      "role": "small_edge_fold",
+      "parent_form": "M11",
+      "camera_depth_range_m": [
+        1147.0162731257271,
+        1216.8834597276912
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        319.71971988217354,
+        547.4859913572529,
+        397.406597278337,
+        606.2820795767977
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        -33.03985185122592,
+        -29.906240690422308
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -9.062078138780564,
+        -6.135915038072005
+      ],
+      "isolated_actual_triangle_sample_count": 421,
+      "isolated_sample_reference_bbox": [
+        326.0,
+        555.4097664543524,
+        386.0,
+        595.3673036093418
+      ],
+      "nearest_actual_triangle_sample_count": 88,
+      "visible_fraction_of_isolated_samples": 0.20902612826603326,
+      "nearest_sample_reference_bbox": [
+        326.0,
+        555.4097664543524,
+        364.0,
+        581.3821656050956
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "S15",
+      "role": "small_edge_fold",
+      "parent_form": "M12",
+      "camera_depth_range_m": [
+        1256.6514800235884,
+        1341.5181942340553
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        704.3862692206319,
+        571.5632770977803,
+        767.1960063300994,
+        628.7652929150586
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        -8.833332360670646,
+        -5.37482507518363
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -10.661828504991462,
+        -7.79121292771946
+      ],
+      "isolated_actual_triangle_sample_count": 372,
+      "isolated_sample_reference_bbox": [
+        714.0,
+        577.3864118895966,
+        762.0,
+        617.343949044586
+      ],
+      "nearest_actual_triangle_sample_count": 156,
+      "visible_fraction_of_isolated_samples": 0.41935483870967744,
+      "nearest_sample_reference_bbox": [
+        732.0,
+        577.3864118895966,
+        762.0,
+        605.3566878980891
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "S16",
+      "role": "small_edge_fold",
+      "parent_form": "M13",
+      "camera_depth_range_m": [
+        894.3925384429938,
+        962.7845627420531
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        500.34018831167936,
+        690.6031456155176,
+        569.2232682271507,
+        785.9783955779089
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        -22.86046395947972,
+        -19.233315831469277
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -20.858914418703772,
+        -16.831877137236546
+      ],
+      "isolated_actual_triangle_sample_count": 663,
+      "isolated_sample_reference_bbox": [
+        506.0,
+        707.2484076433121,
+        562.0,
+        769.1825902335456
+      ],
+      "nearest_actual_triangle_sample_count": 0,
+      "visible_fraction_of_isolated_samples": 0.0,
+      "nearest_sample_reference_bbox": null,
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "S17",
+      "role": "small_edge_fold",
+      "parent_form": "M14",
+      "camera_depth_range_m": [
+        2166.4764763375147,
+        2237.1728678254603
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        740.4609307788245,
+        431.5946777659608,
+        773.5826479602232,
+        460.7398688946747
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        -6.610744445042503,
+        -5.1068952285514575
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        0.8757828300056743,
+        2.6997820803405306
+      ],
+      "isolated_actual_triangle_sample_count": 93,
+      "isolated_sample_reference_bbox": [
+        746.0,
+        433.53927813163483,
+        766.0,
+        459.51167728237795
+      ],
+      "nearest_actual_triangle_sample_count": 0,
+      "visible_fraction_of_isolated_samples": 0.0,
+      "nearest_sample_reference_bbox": null,
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "S18",
+      "role": "small_edge_fold",
+      "parent_form": "M15",
+      "camera_depth_range_m": [
+        1677.8825966933605,
+        1754.82663939197
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        715.0487535265574,
+        537.5358909932178,
+        759.3673681932457,
+        573.6419290699515
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        -8.636978344693608,
+        -5.9267050517425295
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -7.024930828470748,
+        -5.215205838236574
+      ],
+      "isolated_actual_triangle_sample_count": 169,
+      "isolated_sample_reference_bbox": [
+        718.0,
+        541.4246284501062,
+        754.0,
+        567.3970276008492
+      ],
+      "nearest_actual_triangle_sample_count": 129,
+      "visible_fraction_of_isolated_samples": 0.7633136094674556,
+      "nearest_sample_reference_bbox": [
+        718.0,
+        541.4246284501062,
+        754.0,
+        563.4012738853503
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "S19",
+      "role": "small_edge_fold",
+      "parent_form": "M16",
+      "camera_depth_range_m": [
+        1915.8118805766778,
+        1982.2736848688196
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        849.2472652417846,
+        503.53983112015584,
+        883.9603301056146,
+        534.326813890398
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        1.1439575769677657,
+        3.4305199364801746
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -4.381666876435625,
+        -2.6081500750582483
+      ],
+      "isolated_actual_triangle_sample_count": 142,
+      "isolated_sample_reference_bbox": [
+        852.0,
+        505.4628450106157,
+        882.0,
+        531.4352441613588
+      ],
+      "nearest_actual_triangle_sample_count": 39,
+      "visible_fraction_of_isolated_samples": 0.2746478873239437,
+      "nearest_sample_reference_bbox": [
+        866.0,
+        505.4628450106157,
+        882.0,
+        525.4416135881104
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "S20",
+      "role": "small_edge_fold",
+      "parent_form": "M17",
+      "camera_depth_range_m": [
+        2176.3572152553584,
+        2235.462269810138
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        713.9098057250145,
+        457.1042699886068,
+        743.4105022841803,
+        481.35320922069485
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        -8.56861007618225,
+        -7.110821215885096
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -0.6148612826111254,
+        0.8099780829452071
+      ],
+      "isolated_actual_triangle_sample_count": 77,
+      "isolated_sample_reference_bbox": [
+        718.0,
+        459.51167728237795,
+        738.0,
+        479.49044585987264
+      ],
+      "nearest_actual_triangle_sample_count": 0,
+      "visible_fraction_of_isolated_samples": 0.0,
+      "nearest_sample_reference_bbox": null,
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "S21",
+      "role": "small_edge_fold",
+      "parent_form": "M18",
+      "camera_depth_range_m": [
+        2289.513960328601,
+        2349.833779796356
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        868.2622019425594,
+        450.03389415970594,
+        897.6024035084719,
+        472.661390215247
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        2.54789673977274,
+        4.174160863371675
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -0.0016089817844020153,
+        1.3593354560051845
+      ],
+      "isolated_actual_triangle_sample_count": 75,
+      "isolated_sample_reference_bbox": [
+        870.0,
+        451.52016985138005,
+        894.0,
+        469.50106157112526
+      ],
+      "nearest_actual_triangle_sample_count": 45,
+      "visible_fraction_of_isolated_samples": 0.6,
+      "nearest_sample_reference_bbox": [
+        876.0,
+        451.52016985138005,
+        894.0,
+        469.50106157112526
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "S22",
+      "role": "small_edge_fold",
+      "parent_form": "M18",
+      "camera_depth_range_m": [
+        2291.4575321826,
+        2355.766784453266
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        830.6010059720489,
+        449.2707956246694,
+        854.3410767474074,
+        469.66607951735904
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        -0.29538650344434675,
+        1.1261028219985747
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        0.22622287015689732,
+        1.4383744456167262
+      ],
+      "isolated_actual_triangle_sample_count": 61,
+      "isolated_sample_reference_bbox": [
+        832.0,
+        451.52016985138005,
+        852.0,
+        467.5031847133758
+      ],
+      "nearest_actual_triangle_sample_count": 0,
+      "visible_fraction_of_isolated_samples": 0.0,
+      "nearest_sample_reference_bbox": null,
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "S23",
+      "role": "small_edge_fold",
+      "parent_form": "P02",
+      "camera_depth_range_m": [
+        694.5815024270452,
+        777.7875241755029
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        1179.8103233166005,
+        440.5836944237912,
+        1283.0629258583745,
+        579.1932188741648
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        24.18361236719203,
+        29.37700807155175
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -6.764416763165691,
+        1.6649718489603247
+      ],
+      "isolated_actual_triangle_sample_count": 1912,
+      "isolated_sample_reference_bbox": [
+        1188.0,
+        447.5244161358811,
+        1276.0,
+        563.4012738853503
+      ],
+      "nearest_actual_triangle_sample_count": 1179,
+      "visible_fraction_of_isolated_samples": 0.6166317991631799,
+      "nearest_sample_reference_bbox": [
+        1188.0,
+        447.5244161358811,
+        1276.0,
+        519.447983014862
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    },
+    {
+      "id": "S24",
+      "role": "small_edge_fold",
+      "parent_form": "P04",
+      "camera_depth_range_m": [
+        1086.0922716841637,
+        1145.8262742798315
+      ],
+      "conservative_obb_reference_pixel_bounds": [
+        494.34799546523857,
+        459.76529030011255,
+        552.112419839883,
+        526.25904768825
+      ],
+      "conservative_obb_is_visible_width": false,
+      "actual_control_vertex_horizontal_angles_deg": [
+        -23.419770242755618,
+        -20.095962627226104
+      ],
+      "actual_control_vertex_vertical_angles_deg": [
+        -3.6125786303438234,
+        0.45685891214978835
+      ],
+      "isolated_actual_triangle_sample_count": 539,
+      "isolated_sample_reference_bbox": [
+        496.0,
+        463.50743099787684,
+        550.0,
+        519.447983014862
+      ],
+      "nearest_actual_triangle_sample_count": 493,
+      "visible_fraction_of_isolated_samples": 0.9146567717996289,
+      "nearest_sample_reference_bbox": [
+        496.0,
+        463.50743099787684,
+        550.0,
+        513.4543524416135
+      ],
+      "visibility_limit": "Discrete nearest-surface sample spans may include disconnected patches, not continuous visible silhouette width. Pre-union controls only."
+    }
+  ],
+  "method": "Actual native-authoring control triangles, near-plane clipped, perspective-correct nearest depth atpixelcentres. Oriented box projection is separately marked conservative.",
+  "limitations": [
+    "This omits external21roots, oldupperribbons,ship and everyworldobject",
+    "Actualunion geometry and anyreduction can change visibility",
+    "Nearest triangle samples and angle bounds are not continuous silhouette measurement or a rendered visual acceptance"
+  ],
+  "world_loaded": false,
+  "blender_started": false,
+  "visual_acceptance": false
+}
