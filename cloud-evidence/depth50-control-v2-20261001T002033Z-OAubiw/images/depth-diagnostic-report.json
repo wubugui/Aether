@@ -1,0 +1,303 @@
+{
+  "bounds": [
+    768,
+    -2304,
+    1536,
+    -768
+  ],
+  "cameras": [
+    {
+      "camera_transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 0.995634, 0.093341), Z: (0.0, -0.093341, 0.995634), O: (1150.0, 10.0, -1000.0)]",
+      "fov": 64.0,
+      "reference": "1128"
+    },
+    {
+      "camera_transform": "[X: (0.97926, 0.0, -0.202606), Y: (0.015417, 0.997101, 0.074515), Z: (0.202018, -0.076094, 0.976421), O: (1300.0, 7.0, -950.0)]",
+      "fov": 66.0,
+      "reference": "1129"
+    }
+  ],
+  "candidate_written": false,
+  "diagnostic_completed": true,
+  "diagnostic_water_shader_sha256": "fcbd9e787e1db8e2278d49c17e2da53b93732921d2314d00420052f4fdad77bd",
+  "game49_sha256": "52d13fcb7ea412d3a0fae2eedb1d0f9c369dbe06c0da320d786c26c97c475ec8",
+  "game49_unchanged": true,
+  "grid_spacing_m": 1,
+  "height_texture": "/workspace/scratch/a29d03198654/Aether/source-assets/lake50-intake/height49-1m-rf.res",
+  "height_texture_sha256": "c665b351a842d919a73905328f2ed8a5281dfc60fe42324f8bb51c68640e5940",
+  "images": [
+    {
+      "height": 664,
+      "path": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/depth50-control-v2-20261001T002033Z-OAubiw/images/1128-A-original-depth.png",
+      "saved": true,
+      "sha256": "8ab968203c4fab1c88f034d0aaeb4555460615be2f3e992c9d81ae5adcab438c",
+      "width": 1179
+    },
+    {
+      "height": 664,
+      "path": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/depth50-control-v2-20261001T002033Z-OAubiw/images/1128-B-world-vertical-depth.png",
+      "saved": true,
+      "sha256": "7294d68a5bcfa320be3f85dee8ecc6ccdfa75e6c018e64d0a0b0226922a043e0",
+      "width": 1179
+    },
+    {
+      "height": 664,
+      "path": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/depth50-control-v2-20261001T002033Z-OAubiw/images/1128-A2-restored-depth.png",
+      "saved": true,
+      "sha256": "8ab968203c4fab1c88f034d0aaeb4555460615be2f3e992c9d81ae5adcab438c",
+      "width": 1179
+    },
+    {
+      "height": 664,
+      "path": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/depth50-control-v2-20261001T002033Z-OAubiw/images/1129-A-original-depth.png",
+      "saved": true,
+      "sha256": "68e38a2329718f3879acde3ab3acd93bbbc5bf410609f36ca40d420a102098e7",
+      "width": 1179
+    },
+    {
+      "height": 664,
+      "path": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/depth50-control-v2-20261001T002033Z-OAubiw/images/1129-B-world-vertical-depth.png",
+      "saved": true,
+      "sha256": "6d14a15e3acda0e221221588a8ef52525101b2a676c0dd7fbf662ef27a3117e2",
+      "width": 1179
+    },
+    {
+      "height": 664,
+      "path": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/depth50-control-v2-20261001T002033Z-OAubiw/images/1129-A2-restored-depth.png",
+      "saved": true,
+      "sha256": "68e38a2329718f3879acde3ab3acd93bbbc5bf410609f36ca40d420a102098e7",
+      "width": 1179
+    }
+  ],
+  "ocean_original_material_restored": true,
+  "scope": "Read-only runtime A/B/A water-depth causal test. Geometry, original materials, opacity, colors, lighting and reference cameras not changed. Only water_depth input inside bounded two-tile region is substituted. Runtime processing frozen for comparison. No saved candidate modification.",
+  "source_water_shader_sha256": "5893dfe5f1bc48e6f8daea33d1361bf794f36f86494ab1263490d99e2170873b",
+  "texel_centers": "((world_x-768+0.5)/769,(world_z+2304+0.5)/1537)",
+  "uniform_checks": [
+    {
+      "name": "scene_fill",
+      "preserved": true
+    },
+    {
+      "name": "scene_haze",
+      "preserved": true
+    },
+    {
+      "name": "scene_sun_direction",
+      "preserved": true
+    },
+    {
+      "name": "storm_flash",
+      "preserved": true
+    },
+    {
+      "name": "storm_camera",
+      "preserved": true
+    },
+    {
+      "name": "storm_strength",
+      "preserved": true
+    },
+    {
+      "name": "study_night",
+      "preserved": true
+    },
+    {
+      "name": "moon_direction",
+      "preserved": true
+    },
+    {
+      "name": "moon_world_center",
+      "preserved": true
+    },
+    {
+      "name": "moon_world_radius",
+      "preserved": true
+    },
+    {
+      "name": "emitter_count",
+      "preserved": true
+    },
+    {
+      "name": "emitter_positions",
+      "preserved": true
+    },
+    {
+      "name": "emitter_dimensions",
+      "preserved": true
+    },
+    {
+      "name": "emitter_colors",
+      "preserved": true
+    },
+    {
+      "name": "emitter_occlusion",
+      "preserved": true
+    },
+    {
+      "name": "emitter_reflection_gain",
+      "preserved": true
+    },
+    {
+      "name": "scene_fill",
+      "preserved": true,
+      "reference": "1128"
+    },
+    {
+      "name": "scene_haze",
+      "preserved": true,
+      "reference": "1128"
+    },
+    {
+      "name": "scene_sun_direction",
+      "preserved": true,
+      "reference": "1128"
+    },
+    {
+      "name": "storm_flash",
+      "preserved": true,
+      "reference": "1128"
+    },
+    {
+      "name": "storm_camera",
+      "preserved": true,
+      "reference": "1128"
+    },
+    {
+      "name": "storm_strength",
+      "preserved": true,
+      "reference": "1128"
+    },
+    {
+      "name": "study_night",
+      "preserved": true,
+      "reference": "1128"
+    },
+    {
+      "name": "moon_direction",
+      "preserved": true,
+      "reference": "1128"
+    },
+    {
+      "name": "moon_world_center",
+      "preserved": true,
+      "reference": "1128"
+    },
+    {
+      "name": "moon_world_radius",
+      "preserved": true,
+      "reference": "1128"
+    },
+    {
+      "name": "emitter_count",
+      "preserved": true,
+      "reference": "1128"
+    },
+    {
+      "name": "emitter_positions",
+      "preserved": true,
+      "reference": "1128"
+    },
+    {
+      "name": "emitter_dimensions",
+      "preserved": true,
+      "reference": "1128"
+    },
+    {
+      "name": "emitter_colors",
+      "preserved": true,
+      "reference": "1128"
+    },
+    {
+      "name": "emitter_occlusion",
+      "preserved": true,
+      "reference": "1128"
+    },
+    {
+      "name": "emitter_reflection_gain",
+      "preserved": true,
+      "reference": "1128"
+    },
+    {
+      "name": "scene_fill",
+      "preserved": true,
+      "reference": "1129"
+    },
+    {
+      "name": "scene_haze",
+      "preserved": true,
+      "reference": "1129"
+    },
+    {
+      "name": "scene_sun_direction",
+      "preserved": true,
+      "reference": "1129"
+    },
+    {
+      "name": "storm_flash",
+      "preserved": true,
+      "reference": "1129"
+    },
+    {
+      "name": "storm_camera",
+      "preserved": true,
+      "reference": "1129"
+    },
+    {
+      "name": "storm_strength",
+      "preserved": true,
+      "reference": "1129"
+    },
+    {
+      "name": "study_night",
+      "preserved": true,
+      "reference": "1129"
+    },
+    {
+      "name": "moon_direction",
+      "preserved": true,
+      "reference": "1129"
+    },
+    {
+      "name": "moon_world_center",
+      "preserved": true,
+      "reference": "1129"
+    },
+    {
+      "name": "moon_world_radius",
+      "preserved": true,
+      "reference": "1129"
+    },
+    {
+      "name": "emitter_count",
+      "preserved": true,
+      "reference": "1129"
+    },
+    {
+      "name": "emitter_positions",
+      "preserved": true,
+      "reference": "1129"
+    },
+    {
+      "name": "emitter_dimensions",
+      "preserved": true,
+      "reference": "1129"
+    },
+    {
+      "name": "emitter_colors",
+      "preserved": true,
+      "reference": "1129"
+    },
+    {
+      "name": "emitter_occlusion",
+      "preserved": true,
+      "reference": "1129"
+    },
+    {
+      "name": "emitter_reflection_gain",
+      "preserved": true,
+      "reference": "1129"
+    }
+  ],
+  "visual_acceptance": false
+}

@@ -1,0 +1,9 @@
+# Official Godot4.5.1 material conversions
+
+Three representative native materials from native-feature-groups.json were opened in an isolated temporary editor project. Each holder resource's Material property menu used the actual built-in **Convert to ShaderMaterial**, followed by Inspector Save. Saved holders were then loaded by a read-only-to-input extraction script to save the generated ShaderMaterial and exact shader code. No approximate hand-written replacement was used.
+
+The initially attempted automatic resource inspector staging did not expose conversion at the root menu. The editor was kept open, no state discarded, and saved holder resources provided the normal material property conversion UI. Three native input files are untouched. Editor viewport initialization logged a Vulkan-surface probe failure despite Compatibility mode; this is retained in the original temporary project logs and is not represented as a clean graphical runtime test. Conversion and resource extraction succeeded; actual game material-preservation before/after rendering is a separate gate.
+
+The top-level *_shader.tres and .gdshader are self-contained outputs. The holder/extract files at top level are exact provenance copies; use conversion-project/ for their original res:// context. The original editor remains open at this checkpoint; do not close it by force. A global dirty marker persisted despite each holder save, so future handling must retain/check state. Project source contains no game assets beyond three representative material values.
+
+Feature1 is double-sided vertex-color Burley rough1;feature2 back-cull vertex-color Lambert rough.96;feature3 unshaded transparent rainbow. Reuse only for exact supported feature equivalence, copy actual per-material values includingalbedo/alpha, and reject unknown groups. See conversion-manifest.json for saved-holder/material/shader SHA. These templates are not themselves a full-world material or reflection acceptance.
