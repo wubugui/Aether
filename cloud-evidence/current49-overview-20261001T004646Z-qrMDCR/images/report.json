@@ -1,0 +1,158 @@
+{
+  "captures": [
+    {
+      "camera_clear": true,
+      "camera_transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 0.998106, -0.061517), Z: (0.0, 0.061517, 0.998106), O: (0.0, 145.0, 250.0)]",
+      "environment_instance": -9223371836014717070,
+      "fov": 50.0,
+      "image": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/current49-overview-20261001T004646Z-qrMDCR/images/boot-controller-original.png",
+      "name": "boot-controller-original",
+      "near": 0.349999994039536,
+      "pixels": [
+        1180,
+        664
+      ],
+      "reference_identity": "assets/reference.jpg",
+      "reference_state": "1343",
+      "sha256": "031a31a73cd453bd47ad54406efa3e2413d7dbac7647a514d215193d74e21f8e",
+      "weather_time": 5.61666666666667,
+      "world_instance": 262261442794
+    },
+    {
+      "camera_clear": true,
+      "camera_transform": "[X: (-0.644146, 0.0, -0.764903), Y: (-0.071542, 0.995616, 0.060247), Z: (0.76155, 0.09353, -0.641322), O: (3351.05, 961.65, 3698.4)]",
+      "environment_instance": -9223371836014717070,
+      "fov": 72.0,
+      "image": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/current49-overview-20261001T004646Z-qrMDCR/images/reference-1278.png",
+      "name": "reference-1278",
+      "near": 0.349999994039536,
+      "pixels": [
+        1180,
+        664
+      ],
+      "reference_identity": "ref/1278.png",
+      "reference_state": "1278",
+      "sha256": "e5b407e01e0d3be45776a93bcc70d7896aab69fdfba36adf191049172e6b0c07",
+      "weather_time": 0.35,
+      "world_instance": 262261442794
+    },
+    {
+      "camera_clear": true,
+      "camera_transform": "[X: (0.685365, 0.0, 0.7282), Y: (0.119989, 0.986331, -0.11293), Z: (-0.718246, 0.164774, 0.675997), O: (3000.0, 1150.0, 4300.0)]",
+      "environment_instance": -9223371836014717070,
+      "fov": 62.0,
+      "image": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/current49-overview-20261001T004646Z-qrMDCR/images/reference-1216.png",
+      "name": "reference-1216",
+      "near": 0.349999994039536,
+      "pixels": [
+        1180,
+        664
+      ],
+      "reference_identity": "ref/1216.png",
+      "reference_state": "1216",
+      "sha256": "9683d41754afcb0a3f4214a9569c8c98d54fcb5ef7f3ad3e5eefa048e1132a78",
+      "weather_time": 0.35,
+      "world_instance": 262261442794
+    }
+  ],
+  "checks": [
+    {
+      "detail": null,
+      "name": "208 authored terrain tiles retained",
+      "passed": true
+    },
+    {
+      "detail": 55574,
+      "name": "Authored scatter count retained",
+      "passed": true
+    },
+    {
+      "detail": 28800,
+      "name": "Persisted weather buffer Rain",
+      "passed": true
+    },
+    {
+      "detail": 19200,
+      "name": "Persisted weather buffer Snow",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "Observation camera collision-free boot-controller-original",
+      "passed": true
+    },
+    {
+      "detail": 0,
+      "name": "Rendered image saved boot-controller-original",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "Unique reference 1278",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "Same world and environment 1278",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "Observation camera collision-free reference-1278",
+      "passed": true
+    },
+    {
+      "detail": 0,
+      "name": "Rendered image saved reference-1278",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "Unique reference 1216",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "Same world and environment 1216",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "Observation camera collision-free reference-1216",
+      "passed": true
+    },
+    {
+      "detail": 0,
+      "name": "Rendered image saved reference-1216",
+      "passed": true
+    },
+    {
+      "detail": [
+        "1278",
+        "1216"
+      ],
+      "name": "Selected overview states 1216/1278 captured; not complete reference coverage",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "Saved source scene unchanged",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "Project default unchanged",
+      "passed": true
+    }
+  ],
+  "complete_flight_passed": false,
+  "functional_passed": true,
+  "hardware_gpu_acceptance": false,
+  "reason": "All captured; visual review and hardware GPU validation remain pending",
+  "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "scope": "Reference survey of one unchanged saved world through its public observation/environment controls. Camera collision failures and screenshots are retained. Side/back are rotations, not flight validation. Weather is reproducibly held at 0.35 seconds using the existing controller. No script, geometry, material, environment resource or reference camera replacement.",
+  "software_renderer": true,
+  "source_scene": "res://scenes/candidate49/Game49.tscn",
+  "source_sha256": "52d13fcb7ea412d3a0fae2eedb1d0f9c369dbe06c0da320d786c26c97c475ec8",
+  "visual_acceptance": false
+}
