@@ -1,0 +1,63 @@
+{
+  "exit_code": 0,
+  "max_rss_kib": 813028,
+  "seconds": 126.57490701100323,
+  "command": [
+    "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+    "--background",
+    "/workspace/scratch/a29d03198654/Aether/source-assets/coast57/Ground_-5_-5_coast57.blend",
+    "--threads",
+    "2",
+    "--python",
+    "/workspace/scratch/a29d03198654/Aether/source-assets/coast57/preview_coast57.py"
+  ],
+  "source_inputs_unchanged": true,
+  "expected_images": 8,
+  "captures": [
+    {
+      "path": "source-assets/coast57/previews/candidate_land_back.png",
+      "bytes": 625187,
+      "sha256": "0a3e10b34441742a72b978b8fcf6f877296306a0ab5286f0d115d7a814971d9b"
+    },
+    {
+      "path": "source-assets/coast57/previews/candidate_low_shore.png",
+      "bytes": 626555,
+      "sha256": "404cd4a3a68036c8ac7ee29cfa96b7f95ec4a65b445ff63021769109827a1c58"
+    },
+    {
+      "path": "source-assets/coast57/previews/candidate_overhead.png",
+      "bytes": 629729,
+      "sha256": "ab09e74cb5bc9037b1347e6039fc6f18a3c8fa1ce703dad371b6fdccc92bd8b3"
+    },
+    {
+      "path": "source-assets/coast57/previews/candidate_sea_north.png",
+      "bytes": 635916,
+      "sha256": "9ddfc1aa4a60e934532ffced93b36d84d34beb5b76ce0a610e2e650d32a2c9a1"
+    },
+    {
+      "path": "source-assets/coast57/previews/candidate_sea_south.png",
+      "bytes": 645180,
+      "sha256": "86c3bc74d741704e3a45c4e5062b1dfde97f5c0f37cca56c878b3da15dfc7975"
+    },
+    {
+      "path": "source-assets/coast57/previews/original_low_shore.png",
+      "bytes": 630906,
+      "sha256": "c4abc38f35bbed6809e9b0be6a39873278ef2e49dc1faa89cf3b047476bc8246"
+    },
+    {
+      "path": "source-assets/coast57/previews/original_overhead.png",
+      "bytes": 633018,
+      "sha256": "983b51f1bed4e3b509a2e3937fe22516898c17e84a6c9531d4cfeb1f4078ea94"
+    },
+    {
+      "path": "source-assets/coast57/previews/original_sea_south.png",
+      "bytes": 647587,
+      "sha256": "a5b45d3991b32c90e445139ecf4613773c6cd927c879b155e460f9b46e36681b"
+    }
+  ],
+  "candidate_count": 5,
+  "original_count": 3,
+  "source_only": true,
+  "world_integration": false,
+  "passed": true
+}

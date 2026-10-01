@@ -1,0 +1,7 @@
+# 1216 ship-composition proposal (CPU-only)
+
+The original ref/1216.png and actual52hD A image were visually inspected. The reference ship is large and viewed along its side; the current observation is a much smaller frontal hull. A separate pose study is appropriate after the cloud geometry comparison, not a hidden change to its camera.
+
+prepare_pose59.py uses the recorded unchanged1216camera matrix/FOV and the previously measured118-mesh native hull bounding box. It estimates a side-facing ship pose at yaw133 degrees and world(3015.97655,1140.85878,4266.18507), preserving camera and ship scale. The fitted conservative AABB width/height residuals are about-1.39%/+1.74%; these are NOT silhouette fit or visual success. Bounds include empty corners, and actual geometry/source identity must be checked before testing.
+
+The reference rectangle is a hand estimate including flag and propeller, with +/-8px uncertainty. Actual PNG dimensions1672x941 are read with PIL. An initial calculation accidentally used1664 as width; its invalid JSON is explicitly preserved and superseded. No scene, preset, controller or runtime was changed. Do not apply this proposal automatically. Later tests must check actual full hull/propeller envelope against clouds and solids, normal F2 continuity, exact camera/material/source preservation and full A/A2 state/pixel restoration. No full reference acceptance is implied.

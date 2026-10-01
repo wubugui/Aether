@@ -1,0 +1,163 @@
+{
+  "status": "CPU-only proposal, NOT renderer/mesh/occlusion/physics accepted",
+  "reference": "ref/1216.png",
+  "reference_sha256": "f705cb5de0664e9189bdc66b8ed116fc6db5f6ec1f541606df2b399dbde3aa4f",
+  "measurement": "Full original image visually inspected; manually estimated ship including flag/propeller bounds, +/-8px, not segmentation",
+  "reference_size": [
+    1664,
+    941
+  ],
+  "approximate_reference_bounds_px": [
+    188,
+    266,
+    723,
+    692
+  ],
+  "same_camera_fov": 62,
+  "same_camera_transform": [
+    0.685364723205566,
+    0.0,
+    0.72819995880127,
+    0.119988560676575,
+    0.986331343650818,
+    -0.112930417060852,
+    -0.718246459960938,
+    0.164774194359779,
+    0.675996720790863,
+    3000.0,
+    1150.0,
+    4300.0
+  ],
+  "ship_scale_unchanged": true,
+  "ship_aabb_source": "near-ship53west-v2-renderer-20261001T072841Z-i9rjqlen; same original 118-mesh hull but actual52f source identity needs runtime recheck",
+  "limitations": [
+    "AABB is not silhouette and can significantly overstate empty corners",
+    "Camera projection uses logical1672x941 aspect and actual recorded matrix; verify actual viewport readback separately",
+    "No world/source/default edits",
+    "No target pose is yet implemented",
+    "Exact mesh/propeller envelope, target-volume classification, A/A2 state/pixels and real F2 continuity required before any saved preset",
+    "No camera change may be silently mixed into58 geometry comparison"
+  ],
+  "best_five": [
+    {
+      "yaw_degrees": 133.0,
+      "position_world": [
+        3016.041631538073,
+        1140.858781703137,
+        4266.254219547429
+      ],
+      "depth_m": 35.25,
+      "projected_aabb_uv": [
+        [
+          0.11616638928120421,
+          0.2793414552287884
+        ],
+        [
+          0.43121863334628696,
+          0.7398560533142539
+        ]
+      ],
+      "size_relative_error": [
+        -0.02009918855271453,
+        0.017239992484561206
+      ],
+      "score": 0.0007044224238354916
+    },
+    {
+      "yaw_degrees": 133.5,
+      "position_world": [
+        3016.0643559254704,
+        1140.858082421128,
+        4266.26351647141
+      ],
+      "depth_m": 35.25,
+      "projected_aabb_uv": [
+        [
+          0.11632562302428356,
+          0.27937209613336306
+        ],
+        [
+          0.43105418117668093,
+          0.7398218687502559
+        ]
+      ],
+      "size_relative_error": [
+        -0.021105942494225705,
+        0.017096798198347862
+      ],
+      "score": 0.0007424283634557627
+    },
+    {
+      "yaw_degrees": 132.5,
+      "position_world": [
+        3016.020004044505,
+        1140.8709775450504,
+        4266.2432865729725
+      ],
+      "depth_m": 35.25,
+      "projected_aabb_uv": [
+        [
+          0.11601834669264216,
+          0.27880651938487844
+        ],
+        [
+          0.4313716936899326,
+          0.7404541062939064
+        ]
+      ],
+      "size_relative_error": [
+        -0.01916267401216576,
+        0.019742674369472635
+      ],
+      "score": 0.0007565853942677768
+    },
+    {
+      "yaw_degrees": 132.5,
+      "position_world": [
+        3016.105977489259,
+        1140.8301777369363,
+        4265.9747539958025
+      ],
+      "depth_m": 35.5,
+      "projected_aabb_uv": [
+        [
+          0.11713094155228737,
+          0.28071915357127786
+        ],
+        [
+          0.4302627949601774,
+          0.7385176796032161
+        ]
+      ],
+      "size_relative_error": [
+        -0.026072141923871084,
+        0.011240406094023436
+      ],
+      "score": 0.000822854167923358
+    },
+    {
+      "yaw_degrees": 133.0,
+      "position_world": [
+        3015.9559202481614,
+        1140.8995400671536,
+        4266.523040766096
+      ],
+      "depth_m": 35.0,
+      "projected_aabb_uv": [
+        [
+          0.11503874324850277,
+          0.27740537770222107
+        ],
+        [
+          0.43234215604806087,
+          0.74181506960584
+        ]
+      ],
+      "size_relative_error": [
+        -0.013097422619692156,
+        0.02584394385282973
+      ],
+      "score": 0.0008248641049667512
+    }
+  ]
+}

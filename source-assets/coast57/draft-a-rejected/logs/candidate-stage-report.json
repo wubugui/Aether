@@ -1,0 +1,48 @@
+[
+  {
+    "stage": "candidate-build",
+    "pid": 6,
+    "exit_code": 0,
+    "max_rss_kib": 254948,
+    "seconds": 0.6141339129972039,
+    "command": [
+      "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+      "--background",
+      "/workspace/scratch/a29d03198654/Aether/source-assets/coast57/Ground_-5_-5_authority57.blend",
+      "--threads",
+      "2",
+      "--python",
+      "/workspace/scratch/a29d03198654/Aether/source-assets/coast57/blender_candidate57.py"
+    ]
+  },
+  {
+    "stage": "candidate-fresh-readback",
+    "pid": 24,
+    "exit_code": 0,
+    "max_rss_kib": 266240,
+    "seconds": 0.6655912749993149,
+    "command": [
+      "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+      "--background",
+      "/workspace/scratch/a29d03198654/Aether/source-assets/coast57/Ground_-5_-5_coast57.blend",
+      "--threads",
+      "2",
+      "--python",
+      "/workspace/scratch/a29d03198654/Aether/source-assets/coast57/read_blender57.py",
+      "--",
+      "Ground_-5_-5_COAST57",
+      "candidate-blend-readback.json"
+    ]
+  },
+  {
+    "stage": "static-verification",
+    "pid": 42,
+    "exit_code": 0,
+    "max_rss_kib": 157668,
+    "seconds": 0.5630888129962841,
+    "command": [
+      "python",
+      "/workspace/scratch/a29d03198654/Aether/source-assets/coast57/verify_static57.py"
+    ]
+  }
+]

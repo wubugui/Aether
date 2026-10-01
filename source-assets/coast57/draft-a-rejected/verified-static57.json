@@ -1,0 +1,917 @@
+{
+  "passed": true,
+  "check_count": 84,
+  "checks": [
+    {
+      "name": "Zero-change saved Blender preserves native field 0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Saved candidate Blender matches planned field 0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Zero-change saved Blender preserves native field 1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Saved candidate Blender matches planned field 1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Zero-change saved Blender preserves native field 2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Saved candidate Blender matches planned field 2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Zero-change saved Blender preserves native field 3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Saved candidate Blender matches planned field 3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Zero-change saved Blender preserves native field 12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Saved candidate Blender matches planned field 12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "All unchanged triangles preserve native field 0",
+      "passed": true,
+      "detail": {
+        "unchanged_triangles": 2287
+      }
+    },
+    {
+      "name": "All unchanged triangles preserve native field 1",
+      "passed": true,
+      "detail": {
+        "unchanged_triangles": 2287
+      }
+    },
+    {
+      "name": "All unchanged triangles preserve native field 2",
+      "passed": true,
+      "detail": {
+        "unchanged_triangles": 2287
+      }
+    },
+    {
+      "name": "All unchanged triangles preserve native field 3",
+      "passed": true,
+      "detail": {
+        "unchanged_triangles": 2287
+      }
+    },
+    {
+      "name": "All indices remain bit-exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "All native colors remain bit-exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Every XZ coordinate remains bit-exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Every modified triangle lies wholly within authorized box",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "All box-crossing or exterior triangles are exactly retained",
+      "passed": true,
+      "detail": 2087
+    },
+    {
+      "name": "Four tile boundaries exactly retained",
+      "passed": true,
+      "detail": 388
+    },
+    {
+      "name": "No triangles or vertices added or removed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Open terrain topology retained without adding a bottom",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original collision corners of unchanged triangles exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Moved native vertex maps directly to all changed collision corners",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Every other original collision corner exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Actual replacement collision keeps original open topology and no new folds",
+      "passed": true,
+      "detail": {
+        "original": {
+          "unique_positions": 1505,
+          "boundary_edges": 138,
+          "nonmanifold_edges": 0,
+          "xz_nonnegative_faces": 0
+        },
+        "candidate": {
+          "unique_positions": 1505,
+          "boundary_edges": 138,
+          "nonmanifold_edges": 0,
+          "xz_nonnegative_faces": 0
+        }
+      }
+    },
+    {
+      "name": "Collision/native error did not increase",
+      "passed": true,
+      "detail": {
+        "before": 6.103515625e-05,
+        "after": 6.103515625e-05
+      }
+    },
+    {
+      "name": "41 roots from complete actual-world screen accounted for",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Scatter root World/Vegetation/rock_-5_-5[2]",
+      "passed": true,
+      "detail": {
+        "surface": {
+          "height": 78.9991226196289,
+          "triangle_index": 2602,
+          "slope_degrees": 0.0
+        },
+        "origin_offset": 8.392333984375e-05,
+        "unchanged_XZ_basis": true
+      }
+    },
+    {
+      "name": "Scatter root World/Vegetation/rock_-5_-5[3]",
+      "passed": true,
+      "detail": {
+        "surface": {
+          "height": 78.99912261962889,
+          "triangle_index": 2229,
+          "slope_degrees": 0.0
+        },
+        "origin_offset": -9.918212889203915e-05,
+        "unchanged_XZ_basis": true
+      }
+    },
+    {
+      "name": "Scatter root World/Vegetation/rock_-5_-5[4]",
+      "passed": true,
+      "detail": {
+        "surface": {
+          "height": 78.9991226196289,
+          "triangle_index": 2080,
+          "slope_degrees": 0.0
+        },
+        "origin_offset": -9.918212890625e-05,
+        "unchanged_XZ_basis": true
+      }
+    },
+    {
+      "name": "Scatter root World/Vegetation/rock_-5_-5[6]",
+      "passed": true,
+      "detail": {
+        "surface": {
+          "height": 26.797298477558826,
+          "triangle_index": 2244,
+          "slope_degrees": 30.835451218427625
+        },
+        "origin_offset": -1.953510974317396e-06,
+        "unchanged_XZ_basis": true
+      }
+    },
+    {
+      "name": "Scatter root World/Vegetation/rock_-5_-5[7]",
+      "passed": true,
+      "detail": {
+        "surface": {
+          "height": 33.56477903109023,
+          "triangle_index": 1862,
+          "slope_degrees": 49.28978488551042
+        },
+        "origin_offset": 9.787269142691457e-06,
+        "unchanged_XZ_basis": true
+      }
+    },
+    {
+      "name": "Scatter root World/Vegetation/oak_-5_-5_CoastalPines36b[2]",
+      "passed": true,
+      "detail": {
+        "surface": {
+          "height": 31.451143321373607,
+          "triangle_index": 2614,
+          "slope_degrees": 28.977654405137354
+        },
+        "origin_offset": 5.334915861965328e-05,
+        "unchanged_XZ_basis": true
+      }
+    },
+    {
+      "name": "Scatter root World/Vegetation/oak_-5_-5_CoastalPines36b[3]",
+      "passed": true,
+      "detail": {
+        "surface": {
+          "height": 3.887795560958478,
+          "triangle_index": 1868,
+          "slope_degrees": 19.251944252668256
+        },
+        "origin_offset": -0.00011002362022116685,
+        "unchanged_XZ_basis": true
+      }
+    },
+    {
+      "name": "Scatter root World/Vegetation/oak_-5_-5_CoastalPines36b[4]",
+      "passed": true,
+      "detail": {
+        "surface": {
+          "height": 42.16020332114599,
+          "triangle_index": 2613,
+          "slope_degrees": 21.962647217291977
+        },
+        "origin_offset": 3.3037496585563986e-05,
+        "unchanged_XZ_basis": true
+      }
+    },
+    {
+      "name": "Scatter root World/Vegetation/oak_-5_-5_CoastalPines36b[5]",
+      "passed": true,
+      "detail": {
+        "surface": {
+          "height": 78.9991226196289,
+          "triangle_index": 2228,
+          "slope_degrees": 0.0
+        },
+        "origin_offset": -3.814697265625e-05,
+        "unchanged_XZ_basis": true
+      }
+    },
+    {
+      "name": "Scatter root World/Vegetation/oak_-5_-5_CoastalPines36b[6]",
+      "passed": true,
+      "detail": {
+        "surface": {
+          "height": 27.362347183932634,
+          "triangle_index": 1862,
+          "slope_degrees": 49.28978488551042
+        },
+        "origin_offset": 6.240774217047829e-05,
+        "unchanged_XZ_basis": true
+      }
+    },
+    {
+      "name": "Scatter root World/Vegetation/oak_-5_-5_CoastalPines36b[7]",
+      "passed": true,
+      "detail": {
+        "surface": {
+          "height": 78.9991226196289,
+          "triangle_index": 2077,
+          "slope_degrees": 0.0
+        },
+        "origin_offset": -9.918212890625e-05,
+        "unchanged_XZ_basis": true
+      }
+    },
+    {
+      "name": "Scatter root World/Vegetation/oak_-5_-5_CoastalPines36b[9]",
+      "passed": true,
+      "detail": {
+        "surface": {
+          "height": 28.707787405452535,
+          "triangle_index": 2619,
+          "slope_degrees": 26.457957512703274
+        },
+        "origin_offset": 6.209711094129489e-05,
+        "unchanged_XZ_basis": true
+      }
+    },
+    {
+      "name": "Scatter root World/Vegetation/oak_-5_-5_CoastalPines36b[10]",
+      "passed": true,
+      "detail": {
+        "surface": {
+          "height": 21.595166121086493,
+          "triangle_index": 2620,
+          "slope_degrees": 25.512199865810697
+        },
+        "origin_offset": -0.0001210313648130068,
+        "unchanged_XZ_basis": true
+      }
+    },
+    {
+      "name": "Scatter root World/Vegetation/oak_-5_-5_CoastalPines36b[12]",
+      "passed": true,
+      "detail": {
+        "surface": {
+          "height": 17.557601552557404,
+          "triangle_index": 2187,
+          "slope_degrees": 12.900827722739576
+        },
+        "origin_offset": -0.0002380424255683522,
+        "unchanged_XZ_basis": true
+      }
+    },
+    {
+      "name": "Scatter root World/Vegetation/oak_-5_-5_CoastalPines36b[13]",
+      "passed": true,
+      "detail": {
+        "surface": {
+          "height": 51.61821036076755,
+          "triangle_index": 2185,
+          "slope_degrees": 23.393959894565526
+        },
+        "origin_offset": 1.4736888701349926e-05,
+        "unchanged_XZ_basis": true
+      }
+    },
+    {
+      "name": "Scatter root World/Vegetation/oak_-5_-5_CoastalPines36b[14]",
+      "passed": true,
+      "detail": {
+        "surface": {
+          "height": 78.9991226196289,
+          "triangle_index": 2075,
+          "slope_degrees": 0.0
+        },
+        "origin_offset": -3.814697265625e-05,
+        "unchanged_XZ_basis": true
+      }
+    },
+    {
+      "name": "Scatter root World/Vegetation/oak_-5_-5_CoastalPines36b[19]",
+      "passed": true,
+      "detail": {
+        "surface": {
+          "height": 30.289190688729782,
+          "triangle_index": 2366,
+          "slope_degrees": 6.901515230485737
+        },
+        "origin_offset": -6.118417282152677e-06,
+        "unchanged_XZ_basis": true
+      }
+    },
+    {
+      "name": "Scatter root World/Vegetation/oak_-5_-5_CoastalPines36b[21]",
+      "passed": true,
+      "detail": {
+        "surface": {
+          "height": 78.9991226196289,
+          "triangle_index": 2685,
+          "slope_degrees": 0.0
+        },
+        "origin_offset": -9.918212890625e-05,
+        "unchanged_XZ_basis": true
+      }
+    },
+    {
+      "name": "Scatter root World/Vegetation/oak_-5_-5_CoastalPines36b[23]",
+      "passed": true,
+      "detail": {
+        "surface": {
+          "height": 14.45029840513023,
+          "triangle_index": 2191,
+          "slope_degrees": 34.26138174670078
+        },
+        "origin_offset": 8.764223305135488e-05,
+        "unchanged_XZ_basis": true
+      }
+    },
+    {
+      "name": "Scatter root World/Vegetation/oak_-5_-5_CoastalPines36b[27]",
+      "passed": true,
+      "detail": {
+        "surface": {
+          "height": 78.9991226196289,
+          "triangle_index": 1941,
+          "slope_degrees": 0.0
+        },
+        "origin_offset": -3.814697265625e-05,
+        "unchanged_XZ_basis": true
+      }
+    },
+    {
+      "name": "Scatter root World/Vegetation/oak_-5_-5_CoastalPines36b[28]",
+      "passed": true,
+      "detail": {
+        "surface": {
+          "height": 78.9991226196289,
+          "triangle_index": 2355,
+          "slope_degrees": 0.0
+        },
+        "origin_offset": -0.00016021728515625,
+        "unchanged_XZ_basis": true
+      }
+    },
+    {
+      "name": "Scatter root World/Vegetation/oak_-5_-5_CoastalPines36b[30]",
+      "passed": true,
+      "detail": {
+        "surface": {
+          "height": 18.489623525715277,
+          "triangle_index": 2245,
+          "slope_degrees": 30.016980839200965
+        },
+        "origin_offset": -8.724031488682726e-05,
+        "unchanged_XZ_basis": true
+      }
+    },
+    {
+      "name": "Scatter root World/Vegetation/oak_-5_-5_CoastalPines36b[31]",
+      "passed": true,
+      "detail": {
+        "surface": {
+          "height": 78.99912261962892,
+          "triangle_index": 1798,
+          "slope_degrees": 0.0
+        },
+        "origin_offset": 8.392333982953915e-05,
+        "unchanged_XZ_basis": true
+      }
+    },
+    {
+      "name": "Scatter root World/Vegetation/oak_-5_-5_CoastalPines36b[33]",
+      "passed": true,
+      "detail": {
+        "surface": {
+          "height": 3.106584247175819,
+          "triangle_index": 1865,
+          "slope_degrees": 23.426222064038875
+        },
+        "origin_offset": -0.00017660481131720474,
+        "unchanged_XZ_basis": true
+      }
+    },
+    {
+      "name": "Scatter root World/Vegetation/oak_-5_-5_CoastalPines36b[34]",
+      "passed": true,
+      "detail": {
+        "surface": {
+          "height": 7.329880083508375,
+          "triangle_index": 2699,
+          "slope_degrees": 5.2981665979726005
+        },
+        "origin_offset": 0.00021616130363710795,
+        "unchanged_XZ_basis": true
+      }
+    },
+    {
+      "name": "Scatter root World/Vegetation/oak_-5_-5_CoastalPines36b[36]",
+      "passed": true,
+      "detail": {
+        "surface": {
+          "height": 78.9991226196289,
+          "triangle_index": 2231,
+          "slope_degrees": 0.0
+        },
+        "origin_offset": -3.814697265625e-05,
+        "unchanged_XZ_basis": true
+      }
+    },
+    {
+      "name": "Scatter root World/Vegetation/oak_-5_-5_CoastalPines36b[37]",
+      "passed": true,
+      "detail": {
+        "surface": {
+          "height": 38.05820445697739,
+          "triangle_index": 1584,
+          "slope_degrees": 57.96958384761646
+        },
+        "origin_offset": -2.2694282080237826e-05,
+        "unchanged_XZ_basis": true
+      }
+    },
+    {
+      "name": "Scatter root World/Vegetation/oak_-5_-5_CoastalPines36b[41]",
+      "passed": true,
+      "detail": {
+        "surface": {
+          "height": 25.84681913777502,
+          "triangle_index": 2617,
+          "slope_degrees": 24.471403070661257
+        },
+        "origin_offset": 7.226542322058549e-05,
+        "unchanged_XZ_basis": true
+      }
+    },
+    {
+      "name": "Scatter root World/Vegetation/oak_-5_-5_CoastalPines36b[42]",
+      "passed": true,
+      "detail": {
+        "surface": {
+          "height": 31.356660661387842,
+          "triangle_index": 2366,
+          "slope_degrees": 6.901515230485737
+        },
+        "origin_offset": 2.8791737157973785e-05,
+        "unchanged_XZ_basis": true
+      }
+    },
+    {
+      "name": "Scatter root World/Vegetation/oak_-5_-5_CoastalPines36b[43]",
+      "passed": true,
+      "detail": {
+        "surface": {
+          "height": 78.9991226196289,
+          "triangle_index": 2080,
+          "slope_degrees": 0.0
+        },
+        "origin_offset": -9.918212890625e-05,
+        "unchanged_XZ_basis": true
+      }
+    },
+    {
+      "name": "Scatter root World/Vegetation/oak_-5_-5_CoastalPines36b[44]",
+      "passed": true,
+      "detail": {
+        "surface": {
+          "height": 68.83858526133919,
+          "triangle_index": 2181,
+          "slope_degrees": 26.670307348410425
+        },
+        "origin_offset": -4.6137804034174223e-05,
+        "unchanged_XZ_basis": true
+      }
+    },
+    {
+      "name": "Scatter root World/Vegetation/oak_-5_-5_CoastalPines36b[47]",
+      "passed": true,
+      "detail": {
+        "surface": {
+          "height": 11.46771075888042,
+          "triangle_index": 2084,
+          "slope_degrees": 6.644460512680697
+        },
+        "origin_offset": 0.0028140290224119013,
+        "unchanged_XZ_basis": true
+      }
+    },
+    {
+      "name": "Scatter root World/Vegetation/oak_-5_-5_CoastalPines36b[48]",
+      "passed": true,
+      "detail": {
+        "surface": {
+          "height": 78.9991226196289,
+          "triangle_index": 2603,
+          "slope_degrees": 0.0
+        },
+        "origin_offset": -9.918212890625e-05,
+        "unchanged_XZ_basis": true
+      }
+    },
+    {
+      "name": "Scatter root World/Vegetation/poplar_-5_-5_CoastalPines36b[1]",
+      "passed": true,
+      "detail": {
+        "surface": {
+          "height": 78.91594751674735,
+          "triangle_index": 2233,
+          "slope_degrees": 1.1935177082968107
+        },
+        "origin_offset": 3.759067452335785e-05,
+        "unchanged_XZ_basis": true
+      }
+    },
+    {
+      "name": "Scatter root World/Vegetation/poplar_-5_-5_CoastalPines36b[2]",
+      "passed": true,
+      "detail": {
+        "surface": {
+          "height": 5.08915163584966,
+          "triangle_index": 1880,
+          "slope_degrees": 31.58180349287719
+        },
+        "origin_offset": -3.553935307820666e-05,
+        "unchanged_XZ_basis": true
+      }
+    },
+    {
+      "name": "Scatter root World/Vegetation/poplar_-5_-5_CoastalPines36b[4]",
+      "passed": true,
+      "detail": {
+        "surface": {
+          "height": 22.70587013220865,
+          "triangle_index": 1527,
+          "slope_degrees": 60.572597579436874
+        },
+        "origin_offset": -6.912207681253335e-05,
+        "unchanged_XZ_basis": true
+      }
+    },
+    {
+      "name": "Scatter root World/Vegetation/poplar_-5_-5_CoastalPines36b[5]",
+      "passed": true,
+      "detail": {
+        "surface": {
+          "height": 59.766145301247406,
+          "triangle_index": 2183,
+          "slope_degrees": 43.98740495164017
+        },
+        "origin_offset": -0.0001350168235774163,
+        "unchanged_XZ_basis": true
+      }
+    },
+    {
+      "name": "Scatter root World/Vegetation/poplar_-5_-5_CoastalPines36b[7]",
+      "passed": true,
+      "detail": {
+        "surface": {
+          "height": 38.72480087200953,
+          "triangle_index": 2613,
+          "slope_degrees": 21.962647217291977
+        },
+        "origin_offset": -9.994427515636062e-05,
+        "unchanged_XZ_basis": true
+      }
+    },
+    {
+      "name": "Scatter root World/Vegetation/poplar_-5_-5_CoastalPines36b[10]",
+      "passed": true,
+      "detail": {
+        "surface": {
+          "height": 78.9991226196289,
+          "triangle_index": 2227,
+          "slope_degrees": 0.0
+        },
+        "origin_offset": -9.918212890625e-05,
+        "unchanged_XZ_basis": true
+      }
+    },
+    {
+      "name": "Scatter root World/Vegetation/poplar_-5_-5_CoastalPines36b[13]",
+      "passed": true,
+      "detail": {
+        "surface": {
+          "height": 25.054345777878872,
+          "triangle_index": 1802,
+          "slope_degrees": 46.2049970263226
+        },
+        "origin_offset": 5.752717483886727e-05,
+        "unchanged_XZ_basis": true
+      }
+    },
+    {
+      "name": "Scatter root World/Vegetation/poplar_-5_-5_CoastalPines36b[17]",
+      "passed": true,
+      "detail": {
+        "surface": {
+          "height": 37.399063866400375,
+          "triangle_index": 2361,
+          "slope_degrees": 12.773083696749001
+        },
+        "origin_offset": -0.00013808515037538882,
+        "unchanged_XZ_basis": true
+      }
+    },
+    {
+      "name": "All three actual source groups covered",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Authoritative source world still byte-identical",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Future integration base retains saved56 and55 chain",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Existing world/default/56 resource preserved: candidates/round40-exclusive-20260930/project/scenes/candidate53d-west/Game53dWest.tscn",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Existing world/default/56 resource preserved: candidates/round40-exclusive-20260930/project/scenes/candidate55-observation/Game55Observation.tscn",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Existing world/default/56 resource preserved: candidates/round40-exclusive-20260930/project/scenes/candidate56-coast/Game56Coast.tscn",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Existing world/default/56 resource preserved: candidates/round40-exclusive-20260930/project/project.godot",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Existing world/default/56 resource preserved: candidates/round40-exclusive-20260930/project/assets/coast56/Ground_-4_-4_coast56.mesh",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Existing world/default/56 resource preserved: candidates/round40-exclusive-20260930/project/assets/coast56/Ground_-4_-4_coast56_collision.res",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Existing world/default/56 resource preserved: candidates/round40-exclusive-20260930/project/assets/coast56/rock_-4_-4.res",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Existing world/default/56 resource preserved: candidates/round40-exclusive-20260930/project/assets/coast56/bush_-4_-4.res",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Existing world/default/56 resource preserved: candidates/round40-exclusive-20260930/project/assets/coast56/oak_-4_-4_CoastalPines36b.res",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Existing world/default/56 resource preserved: candidates/round40-exclusive-20260930/project/assets/coast56/poplar_-4_-4_CoastalPines36b.res",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original neighbor seam differences explicitly retained as baseline",
+      "passed": true,
+      "detail": [
+        {
+          "axis": 0,
+          "value": -3840.0,
+          "neighbor": "Ground_-6_-5",
+          "target_boundary_vertices": 33,
+          "neighbor_boundary_vertices": 33,
+          "exact_common_horizontal_coordinates": 33,
+          "common_coordinate_max_height_difference": 0.0
+        },
+        {
+          "axis": 0,
+          "value": -3072.0,
+          "neighbor": "Ground_-4_-5",
+          "target_boundary_vertices": 38,
+          "neighbor_boundary_vertices": 38,
+          "exact_common_horizontal_coordinates": 38,
+          "common_coordinate_max_height_difference": 0.00222015380859375
+        },
+        {
+          "axis": 2,
+          "value": -3840.0,
+          "neighbor": "Ground_-5_-6",
+          "target_boundary_vertices": 38,
+          "neighbor_boundary_vertices": 38,
+          "exact_common_horizontal_coordinates": 38,
+          "common_coordinate_max_height_difference": 0.0012006759643554688
+        },
+        {
+          "axis": 2,
+          "value": -3072.0,
+          "neighbor": "Ground_-5_-4",
+          "target_boundary_vertices": 33,
+          "neighbor_boundary_vertices": 33,
+          "exact_common_horizontal_coordinates": 33,
+          "common_coordinate_max_height_difference": 0.0
+        }
+      ]
+    },
+    {
+      "name": "Projected geometry and winding unchanged",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "shore_profiles": [
+    {
+      "z": -3740,
+      "original_coast_x": -3384.084515719116,
+      "candidate_coast_x": -3384.084515719116,
+      "change_x": 0.0
+    },
+    {
+      "z": -3720,
+      "original_coast_x": -3369.5852263707347,
+      "candidate_coast_x": -3366.478918980495,
+      "change_x": 3.1063073902396354
+    },
+    {
+      "z": -3700,
+      "original_coast_x": -3354.8714039008555,
+      "candidate_coast_x": -3343.5372602301295,
+      "change_x": 11.334143670726007
+    },
+    {
+      "z": -3680,
+      "original_coast_x": -3339.891598559359,
+      "candidate_coast_x": -3320.121102493426,
+      "change_x": 19.770496065933003
+    },
+    {
+      "z": -3660,
+      "original_coast_x": -3325.330696042314,
+      "candidate_coast_x": -3301.497874887196,
+      "change_x": 23.832821155117927
+    },
+    {
+      "z": -3640,
+      "original_coast_x": -3311.7946488381112,
+      "candidate_coast_x": -3281.1833926431937,
+      "change_x": 30.611256194917587
+    },
+    {
+      "z": -3630,
+      "original_coast_x": -3304.9996368743755,
+      "candidate_coast_x": -3273.031879572526,
+      "change_x": 31.96775730184936
+    },
+    {
+      "z": -3620,
+      "original_coast_x": -3298.174855212742,
+      "candidate_coast_x": -3266.284283415705,
+      "change_x": 31.890571797036955
+    },
+    {
+      "z": -3600,
+      "original_coast_x": -3284.698207782967,
+      "candidate_coast_x": -3259.116721517136,
+      "change_x": 25.581486265831245
+    },
+    {
+      "z": -3580,
+      "original_coast_x": -3271.555099917599,
+      "candidate_coast_x": -3251.217732587756,
+      "change_x": 20.33736732984289
+    },
+    {
+      "z": -3560,
+      "original_coast_x": -3258.3715851316833,
+      "candidate_coast_x": -3248.482685742729,
+      "change_x": 9.888899388954542
+    },
+    {
+      "z": -3540,
+      "original_coast_x": -3245.183260954406,
+      "candidate_coast_x": -3241.965849579496,
+      "change_x": 3.217411374909716
+    },
+    {
+      "z": -3520,
+      "original_coast_x": -3232.6276570553673,
+      "candidate_coast_x": -3232.303118286117,
+      "change_x": 0.32453876925046643
+    },
+    {
+      "z": -3500,
+      "original_coast_x": -3219.4415584406247,
+      "candidate_coast_x": -3219.1541925004467,
+      "change_x": 0.287365940178006
+    },
+    {
+      "z": -3480,
+      "original_coast_x": -3205.9742279213406,
+      "candidate_coast_x": -3205.8360107779654,
+      "change_x": 0.13821714337518642
+    },
+    {
+      "z": -3460,
+      "original_coast_x": -3192.5772440427427,
+      "candidate_coast_x": -3192.5538036752505,
+      "change_x": 0.023440367492185032
+    }
+  ],
+  "original_source_scene_sha256": "6ec57b72a831d6fa906a8d866c339909de55c9c42297a038dcd429b18d0c2b18",
+  "candidate_blend_sha256": "3bc9bbd837814cfd5ccc4534fab811bb8c50d9e5a18c632975c25280b0267e8e",
+  "candidate_native_sha256": "f1286dfe44bd55251d7b82f4cfe483c263765fd34ef9a52d95f1115471bb1c26",
+  "limits": "Static source and exact-array checks, root-point terrain support only. No world integration, actual GPU render, full tree/rock footprint, flight or independent visual acceptance."
+}

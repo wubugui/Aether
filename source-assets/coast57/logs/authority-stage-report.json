@@ -1,0 +1,49 @@
+[
+  {
+    "stage": "native-export",
+    "pid": 6,
+    "exit_code": 0,
+    "max_rss_kib": 406644,
+    "seconds": 7.03142822200607,
+    "command": [
+      "/workspace/scratch/a29d03198654/tools-feiting/Godot_v4.5.1-stable_linux.x86_64",
+      "--headless",
+      "--path",
+      "/workspace/scratch/a29d03198654/Aether/candidates/round40-exclusive-20260930/project",
+      "--script",
+      "/workspace/scratch/a29d03198654/Aether/source-assets/coast57/export_saved57_authority.gd"
+    ]
+  },
+  {
+    "stage": "authority-build",
+    "pid": 20,
+    "exit_code": 0,
+    "max_rss_kib": 253140,
+    "seconds": 0.8508559519978007,
+    "command": [
+      "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+      "--background",
+      "--factory-startup",
+      "--threads",
+      "2",
+      "--python",
+      "/workspace/scratch/a29d03198654/Aether/source-assets/coast57/blender_authority57.py"
+    ]
+  },
+  {
+    "stage": "authority-fresh-readback",
+    "pid": 38,
+    "exit_code": 0,
+    "max_rss_kib": 262972,
+    "seconds": 0.5794445119972806,
+    "command": [
+      "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+      "--background",
+      "/workspace/scratch/a29d03198654/Aether/source-assets/coast57/Ground_-5_-5_authority57.blend",
+      "--threads",
+      "2",
+      "--python",
+      "/workspace/scratch/a29d03198654/Aether/source-assets/coast57/read_blender57.py"
+    ]
+  }
+]

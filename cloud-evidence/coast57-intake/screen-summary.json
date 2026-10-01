@@ -1,0 +1,281 @@
+{
+  "authority": {
+    "source_world_path": "candidates/round40-exclusive-20260930/project/scenes/candidate53d-west/Game53dWest.tscn",
+    "source_world_sha256": "6ec57b72a831d6fa906a8d866c339909de55c9c42297a038dcd429b18d0c2b18",
+    "native_export_path": "cloud-evidence/coast-boundary-readonly-20261001/native-coast.json",
+    "native_export_sha256": "886c5d04611e9971d5e50675dce438df5674ce3a66f2cfa5cb569a58d5d949d0",
+    "mesh_id": "ArrayMesh_5ypxy",
+    "shape_id": "ConcavePolygonShape3D_iacqo",
+    "mesh_block_sha256": "e4deba008a316212854a97a8037f7c5dd37b39b5799dd59ab3905930059ba1bd",
+    "shape_block_sha256": "d2cdaaeeb2ff7dfa96f9596d07041167889dbc5dc73e96298132013d18ca1635",
+    "mesh_fields": {
+      "vertex_count": "8264,",
+      "index_count": "8610,",
+      "format": "34896613391,",
+      "aabb": "AABB(0, -8, 0, 768, 95.165955, 768),",
+      "lods": null,
+      "shadow_mesh": null,
+      "vertex_data": {
+        "bytes": 99168,
+        "sha256": "80c7f190a44567224e0c561d5c0620a06a27f314d8ae7f250fd236c901827261"
+      },
+      "attribute_data": {
+        "bytes": 33056,
+        "sha256": "c364be47b10ca178fcf2f7ed3810e1f78c73f75c25f9ee104b62f6d127e22b05"
+      },
+      "index_data": {
+        "bytes": 17220,
+        "sha256": "3ee8787662d60ab66609c2371c54ac59c626eed463ba2731675285d9dd7efa45"
+      }
+    },
+    "world_bounds": [
+      [
+        -3840.0,
+        -8.0,
+        -3840.0
+      ],
+      [
+        -3072.0,
+        87.16595458984375,
+        -3072.0
+      ]
+    ],
+    "source_export_method": "surface_get_arrays indexed native geometry, transformed to float32 world coordinates; direct Shape.get_faces; prior outside-tree CPU export, not Mesh.get_faces or new engine run",
+    "current_inheritance": "56 -> 55 -> saved53; neither 55 nor 56 overrides this tile or its scatter groups",
+    "inherited_scene_hashes": {
+      "scenes/candidate55-observation/Game55Observation.tscn": "65d43959d704e7406c56f4003df5063fad37572e42afd9a8025fbed55dbba286",
+      "scenes/candidate56-coast/Game56Coast.tscn": "5c0cd84b860c409b647d970f123187e89b2e01099e159a43aff372d40ddbe8c5"
+    }
+  },
+  "triangle_scope": {
+    "total": 2870,
+    "wholly_inside_box": 783,
+    "boundary_crossing_or_aabb_overlap": 141,
+    "outside_interior_pool": 2087
+  },
+  "topology": {
+    "welded_points": 1505,
+    "boundary_edges": 138,
+    "nonmanifold_edges": 0,
+    "zero_area_faces": 0,
+    "open_heightfield": true
+  },
+  "shore_fit": {
+    "sample_count": 3,
+    "bounds": [
+      [
+        [
+          0.8400000333786011,
+          0.0,
+          6.300000190734863
+        ],
+        [
+          -2.040863513946533,
+          0.0,
+          -18.75074577331543
+        ],
+        [
+          -4.0,
+          15.8583984375,
+          -221.0
+        ]
+      ],
+      [
+        [
+          2.040863513946533,
+          0.0,
+          18.75074577331543
+        ],
+        [
+          -0.8400000333786011,
+          0.0,
+          -6.300000190734863
+        ],
+        [
+          10.577596664428711,
+          16.5302734375,
+          -87.06610107421875
+        ]
+      ]
+    ],
+    "x_equals_a_z_plus_b": [
+      0.6756552045191282,
+      -853.9352502775308
+    ],
+    "rms_x_residual": 1.4159645156308944,
+    "max_abs_x_residual": 3.684723111170115
+  },
+  "scatter": {
+    "groups": [
+      {
+        "node": "World/Vegetation/rock_-5_-5",
+        "kind": "rock",
+        "multimesh_id": "MultiMesh_f4hi1",
+        "group_total": 9,
+        "full_original_buffer_sha256": "e1362c50ea2adf363b0c6979853d28c6cce7c5ba5a92d812ee48be24c0484cd1",
+        "roots": 5
+      },
+      {
+        "node": "World/Vegetation/oak_-5_-5_CoastalPines36b",
+        "kind": "pine",
+        "multimesh_id": "MultiMesh_ywq3w",
+        "group_total": 49,
+        "full_original_buffer_sha256": "60ab914a3802e408052e756695ddc87b27af54e3c7c8d9c6046d1a35b11483c4",
+        "roots": 28
+      },
+      {
+        "node": "World/Vegetation/poplar_-5_-5_CoastalPines36b",
+        "kind": "pine",
+        "multimesh_id": "MultiMesh_v140r",
+        "group_total": 18,
+        "full_original_buffer_sha256": "04834686d8d5052b1c3815e3077cd27a53b2425589dc1ca4eb73f3d02f7e4d52",
+        "roots": 8
+      }
+    ],
+    "roots": 41,
+    "nodes_scanned": 775,
+    "instances_scanned": 57797,
+    "unsupported": []
+  },
+  "intersecting_meshes": [],
+  "nearest_other": [
+    {
+      "max": [
+        -3140.5263671875,
+        22.0999984741211,
+        -2715.19750976562
+      ],
+      "mesh": "res://scenes/candidate53d-west/Game53dWest.tscn::ArrayMesh_l0rv6",
+      "min": [
+        -3227.13061523438,
+        -6.5,
+        -2764.44946289062
+      ],
+      "node": "/Skyfarer/LanternCoastStudy/reef_ridge_16/reef_ridge_Coast blue grey bedrock",
+      "origin": [
+        -3180.0,
+        0.0,
+        -2740.0
+      ],
+      "distance_xz_to_box": 665.55053710938
+    },
+    {
+      "max": [
+        -3018.36181640625,
+        5.97588539123535,
+        -2619.5146484375
+      ],
+      "mesh": "res://scenes/candidate53d-west/Game53dWest.tscn::ArrayMesh_0v3nv",
+      "min": [
+        -3082.96752929688,
+        -3.25,
+        -2678.65649414062
+      ],
+      "node": "/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast blue grey bedrock",
+      "origin": [
+        -3050.0,
+        0.0,
+        -2650.0
+      ],
+      "distance_xz_to_box": 752.2555866747961
+    },
+    {
+      "max": [
+        -3023.7919921875,
+        11.6944122314453,
+        -2621.61767578125
+      ],
+      "mesh": "res://scenes/candidate53d-west/Game53dWest.tscn::ArrayMesh_6gb6b",
+      "min": [
+        -3079.8369140625,
+        -5.84999990463257,
+        -2673.0
+      ],
+      "node": "/Skyfarer/LanternCoastStudy/island_c_3/island_c_Coast short olive grass",
+      "origin": [
+        -3050.0,
+        0.0,
+        -2650.0
+      ],
+      "distance_xz_to_box": 758.0646895034902
+    },
+    {
+      "max": [
+        -3039.05834960938,
+        17.3506259918213,
+        -2654.02026367188
+      ],
+      "mesh": "res://scenes/candidate53d-west/Game53dWest.tscn::ArrayMesh_yx5k2",
+      "min": [
+        -3044.38159179688,
+        8.11062622070312,
+        -2659.2099609375
+      ],
+      "node": "/Skyfarer/LanternCoastStudy/IslandPine_54/Model/pine",
+      "origin": [
+        -3041.71997070312,
+        8.11062622070312,
+        -2656.47998046875
+      ],
+      "distance_xz_to_box": 774.4904311720991
+    },
+    {
+      "max": [
+        -3059.86254882812,
+        19.146411895752,
+        -2650.7099609375
+      ],
+      "mesh": "res://scenes/candidate53d-west/Game53dWest.tscn::ArrayMesh_yx5k2",
+      "min": [
+        -3065.33764648438,
+        9.64241027832031,
+        -2656.04809570312
+      ],
+      "node": "/Skyfarer/LanternCoastStudy/IslandPine_51/Model/pine",
+      "origin": [
+        -3062.60009765625,
+        9.64241027832031,
+        -2653.23999023438
+      ],
+      "distance_xz_to_box": 775.8798380268903
+    }
+  ],
+  "seams": [
+    {
+      "axis": 0,
+      "value": -3840.0,
+      "neighbor": "Ground_-6_-5",
+      "target_boundary_vertices": 33,
+      "neighbor_boundary_vertices": 33,
+      "exact_common_horizontal_coordinates": 33,
+      "common_coordinate_max_height_difference": 0.0
+    },
+    {
+      "axis": 0,
+      "value": -3072.0,
+      "neighbor": "Ground_-4_-5",
+      "target_boundary_vertices": 38,
+      "neighbor_boundary_vertices": 38,
+      "exact_common_horizontal_coordinates": 38,
+      "common_coordinate_max_height_difference": 0.00222015380859375
+    },
+    {
+      "axis": 2,
+      "value": -3840.0,
+      "neighbor": "Ground_-5_-6",
+      "target_boundary_vertices": 38,
+      "neighbor_boundary_vertices": 38,
+      "exact_common_horizontal_coordinates": 38,
+      "common_coordinate_max_height_difference": 0.0012006759643554688
+    },
+    {
+      "axis": 2,
+      "value": -3072.0,
+      "neighbor": "Ground_-5_-4",
+      "target_boundary_vertices": 33,
+      "neighbor_boundary_vertices": 33,
+      "exact_common_horizontal_coordinates": 33,
+      "common_coordinate_max_height_difference": 0.0
+    }
+  ]
+}
