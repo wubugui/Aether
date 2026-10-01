@@ -1,0 +1,601 @@
+[gd_scene load_steps=95 format=3]
+
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_rockroot.mesh" id="1_qiw6t"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_shoulder.mesh" id="2_ethe3"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_grasscap_west.mesh" id="3_8a334"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_grasscap_east.mesh" id="4_n08s2"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_wetshore_00.mesh" id="5_o28me"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_wetshore_01.mesh" id="6_jd6pe"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_wetshore_02.mesh" id="7_6f304"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_wetshore_03.mesh" id="8_imty0"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_wetshore_04.mesh" id="9_o70xj"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_wetshore_05.mesh" id="10_p680f"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_01_trunk.mesh" id="11_8g6j8"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_01_branch_00_00.mesh" id="12_xwhmh"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_01_branch_00_01.mesh" id="13_0jjhj"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_01_branch_00_02.mesh" id="14_bg1jc"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_01_branch_00_03.mesh" id="15_gmmq8"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_01_branch_00_04.mesh" id="16_0agyj"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_01_crown_tier_00.mesh" id="17_v7y4j"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_01_branch_01_00.mesh" id="18_vraj2"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_01_branch_01_01.mesh" id="19_ra55j"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_01_branch_01_02.mesh" id="20_ggmpq"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_01_branch_01_03.mesh" id="21_uqjlt"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_01_branch_01_04.mesh" id="22_ucnmx"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_01_crown_tier_01.mesh" id="23_18x4x"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_01_branch_02_00.mesh" id="24_4ux5y"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_01_branch_02_01.mesh" id="25_x2eux"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_01_branch_02_02.mesh" id="26_utji1"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_01_branch_02_03.mesh" id="27_wp768"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_01_branch_02_04.mesh" id="28_kylyp"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_01_crown_tier_02.mesh" id="29_5iul0"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_01_crown_tier_03.mesh" id="30_ycyod"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_01_crown_tier_04.mesh" id="31_nlf4y"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_01_leader.mesh" id="32_32af3"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_02_trunk.mesh" id="33_lfocq"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_02_branch_00_00.mesh" id="34_xl64g"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_02_branch_00_01.mesh" id="35_p3jjd"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_02_branch_00_02.mesh" id="36_jpmpl"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_02_branch_00_03.mesh" id="37_13bl4"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_02_branch_00_04.mesh" id="38_iclxa"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_02_crown_tier_00.mesh" id="39_yldvw"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_02_branch_01_00.mesh" id="40_6srk6"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_02_branch_01_01.mesh" id="41_51awj"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_02_branch_01_02.mesh" id="42_ryqq1"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_02_branch_01_03.mesh" id="43_3kwjy"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_02_branch_01_04.mesh" id="44_ljxd7"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_02_crown_tier_01.mesh" id="45_ifu87"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_02_branch_02_00.mesh" id="46_4kclu"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_02_branch_02_01.mesh" id="47_cms2t"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_02_branch_02_02.mesh" id="48_wqrri"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_02_branch_02_03.mesh" id="49_csm8c"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_02_branch_02_04.mesh" id="50_5hvit"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_02_crown_tier_02.mesh" id="51_p63yy"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_02_crown_tier_03.mesh" id="52_qvysi"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_02_crown_tier_04.mesh" id="53_quho4"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/island_near_right__island_near_right_pine_02_leader.mesh" id="54_wxhnc"]
+[ext_resource type="Shape3D" path="res://assets/lake49/island_near_right__island_near_right_rockroot_collision.res" id="55_apkow"]
+[ext_resource type="Shape3D" path="res://assets/lake49/island_near_right__island_near_right_shoulder_collision.res" id="56_gul7a"]
+[ext_resource type="Shape3D" path="res://assets/lake49/island_near_right__island_near_right_wetshore_00_collision.res" id="57_3a7el"]
+[ext_resource type="Shape3D" path="res://assets/lake49/island_near_right__island_near_right_wetshore_01_collision.res" id="58_l8rsj"]
+[ext_resource type="Shape3D" path="res://assets/lake49/island_near_right__island_near_right_wetshore_02_collision.res" id="59_smc6f"]
+[ext_resource type="Shape3D" path="res://assets/lake49/island_near_right__island_near_right_wetshore_03_collision.res" id="60_qwk7c"]
+[ext_resource type="Shape3D" path="res://assets/lake49/island_near_right__island_near_right_wetshore_04_collision.res" id="61_hd7r8"]
+[ext_resource type="Shape3D" path="res://assets/lake49/island_near_right__island_near_right_wetshore_05_collision.res" id="62_mr4ra"]
+[ext_resource type="Shape3D" path="res://assets/lake49/island_near_right__island_near_right_pine_01_trunk_collision.res" id="63_psvbr"]
+[ext_resource type="Shape3D" path="res://assets/lake49/island_near_right__island_near_right_pine_01_branch_00_00_collision.res" id="64_6njql"]
+[ext_resource type="Shape3D" path="res://assets/lake49/island_near_right__island_near_right_pine_01_branch_00_01_collision.res" id="65_nougy"]
+[ext_resource type="Shape3D" path="res://assets/lake49/island_near_right__island_near_right_pine_01_branch_00_02_collision.res" id="66_mcw7k"]
+[ext_resource type="Shape3D" path="res://assets/lake49/island_near_right__island_near_right_pine_01_branch_00_03_collision.res" id="67_2rh2q"]
+[ext_resource type="Shape3D" path="res://assets/lake49/island_near_right__island_near_right_pine_01_branch_00_04_collision.res" id="68_kwari"]
+[ext_resource type="Shape3D" path="res://assets/lake49/island_near_right__island_near_right_pine_01_branch_01_00_collision.res" id="69_ngmr7"]
+[ext_resource type="Shape3D" path="res://assets/lake49/island_near_right__island_near_right_pine_01_branch_01_01_collision.res" id="70_gh8yw"]
+[ext_resource type="Shape3D" path="res://assets/lake49/island_near_right__island_near_right_pine_01_branch_01_02_collision.res" id="71_jfsgc"]
+[ext_resource type="Shape3D" path="res://assets/lake49/island_near_right__island_near_right_pine_01_branch_01_03_collision.res" id="72_42lch"]
+[ext_resource type="Shape3D" path="res://assets/lake49/island_near_right__island_near_right_pine_01_branch_01_04_collision.res" id="73_a0hmm"]
+[ext_resource type="Shape3D" path="res://assets/lake49/island_near_right__island_near_right_pine_01_branch_02_00_collision.res" id="74_vn6dv"]
+[ext_resource type="Shape3D" path="res://assets/lake49/island_near_right__island_near_right_pine_01_branch_02_01_collision.res" id="75_3tsd4"]
+[ext_resource type="Shape3D" path="res://assets/lake49/island_near_right__island_near_right_pine_01_branch_02_02_collision.res" id="76_83nh0"]
+[ext_resource type="Shape3D" path="res://assets/lake49/island_near_right__island_near_right_pine_01_branch_02_03_collision.res" id="77_j4wnl"]
+[ext_resource type="Shape3D" path="res://assets/lake49/island_near_right__island_near_right_pine_01_branch_02_04_collision.res" id="78_wxj7q"]
+[ext_resource type="Shape3D" path="res://assets/lake49/island_near_right__island_near_right_pine_02_trunk_collision.res" id="79_lj8wt"]
+[ext_resource type="Shape3D" path="res://assets/lake49/island_near_right__island_near_right_pine_02_branch_00_00_collision.res" id="80_8h2wg"]
+[ext_resource type="Shape3D" path="res://assets/lake49/island_near_right__island_near_right_pine_02_branch_00_01_collision.res" id="81_bcegm"]
+[ext_resource type="Shape3D" path="res://assets/lake49/island_near_right__island_near_right_pine_02_branch_00_02_collision.res" id="82_6w0lq"]
+[ext_resource type="Shape3D" path="res://assets/lake49/island_near_right__island_near_right_pine_02_branch_00_03_collision.res" id="83_kbqp8"]
+[ext_resource type="Shape3D" path="res://assets/lake49/island_near_right__island_near_right_pine_02_branch_00_04_collision.res" id="84_d2uw1"]
+[ext_resource type="Shape3D" path="res://assets/lake49/island_near_right__island_near_right_pine_02_branch_01_00_collision.res" id="85_nsf7i"]
+[ext_resource type="Shape3D" path="res://assets/lake49/island_near_right__island_near_right_pine_02_branch_01_01_collision.res" id="86_82rg5"]
+[ext_resource type="Shape3D" path="res://assets/lake49/island_near_right__island_near_right_pine_02_branch_01_02_collision.res" id="87_q4w64"]
+[ext_resource type="Shape3D" path="res://assets/lake49/island_near_right__island_near_right_pine_02_branch_01_03_collision.res" id="88_br71q"]
+[ext_resource type="Shape3D" path="res://assets/lake49/island_near_right__island_near_right_pine_02_branch_01_04_collision.res" id="89_0cwjy"]
+[ext_resource type="Shape3D" path="res://assets/lake49/island_near_right__island_near_right_pine_02_branch_02_00_collision.res" id="90_ts11w"]
+[ext_resource type="Shape3D" path="res://assets/lake49/island_near_right__island_near_right_pine_02_branch_02_01_collision.res" id="91_jr524"]
+[ext_resource type="Shape3D" path="res://assets/lake49/island_near_right__island_near_right_pine_02_branch_02_02_collision.res" id="92_6n43b"]
+[ext_resource type="Shape3D" path="res://assets/lake49/island_near_right__island_near_right_pine_02_branch_02_03_collision.res" id="93_v3i3g"]
+[ext_resource type="Shape3D" path="res://assets/lake49/island_near_right__island_near_right_pine_02_branch_02_04_collision.res" id="94_a3n4u"]
+
+[node name="island_near_right" type="Node3D"]
+metadata/source_blend = "source-assets/lake49/island_near_right.blend"
+metadata/source_glb = "source-assets/lake49/island_near_right.glb"
+metadata/world_anchor = Vector3(1380, 0, -1120)
+metadata/source_blend_sha256 = "a944560116a63ef76982580ac9f96e593ce6bc2bb10c3de8dd1ab86d13111aad"
+metadata/source_glb_sha256 = "368addb81e40692f1dc7abfecd12693dbb38217780d75f248ec243207d019892"
+
+[node name="Meshes" type="Node3D" parent="."]
+
+[node name="island_near_right_rockroot" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("1_qiw6t")
+metadata/authoring_role = "rockroot"
+
+[node name="island_near_right_shoulder" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("2_ethe3")
+metadata/authoring_role = "shoulder"
+
+[node name="island_near_right_grasscap_west" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("3_8a334")
+metadata/authoring_role = "grasscap"
+
+[node name="island_near_right_grasscap_east" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("4_n08s2")
+metadata/authoring_role = "grasscap"
+
+[node name="island_near_right_wetshore_00" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("5_o28me")
+metadata/authoring_role = "wetshore"
+
+[node name="island_near_right_wetshore_01" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("6_jd6pe")
+metadata/authoring_role = "wetshore"
+
+[node name="island_near_right_wetshore_02" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("7_6f304")
+metadata/authoring_role = "wetshore"
+
+[node name="island_near_right_wetshore_03" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("8_imty0")
+metadata/authoring_role = "wetshore"
+
+[node name="island_near_right_wetshore_04" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("9_o70xj")
+metadata/authoring_role = "wetshore"
+
+[node name="island_near_right_wetshore_05" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("10_p680f")
+metadata/authoring_role = "wetshore"
+
+[node name="island_near_right_pine_01_trunk" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("11_8g6j8")
+metadata/authoring_role = "tree_trunk"
+
+[node name="island_near_right_pine_01_branch_00_00" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("12_xwhmh")
+metadata/authoring_role = "tree_trunk"
+
+[node name="island_near_right_pine_01_branch_00_01" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("13_0jjhj")
+metadata/authoring_role = "tree_trunk"
+
+[node name="island_near_right_pine_01_branch_00_02" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("14_bg1jc")
+metadata/authoring_role = "tree_trunk"
+
+[node name="island_near_right_pine_01_branch_00_03" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("15_gmmq8")
+metadata/authoring_role = "tree_trunk"
+
+[node name="island_near_right_pine_01_branch_00_04" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("16_0agyj")
+metadata/authoring_role = "tree_trunk"
+
+[node name="island_near_right_pine_01_crown_tier_00" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("17_v7y4j")
+metadata/authoring_role = "tree_crown"
+
+[node name="island_near_right_pine_01_branch_01_00" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("18_vraj2")
+metadata/authoring_role = "tree_trunk"
+
+[node name="island_near_right_pine_01_branch_01_01" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("19_ra55j")
+metadata/authoring_role = "tree_trunk"
+
+[node name="island_near_right_pine_01_branch_01_02" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("20_ggmpq")
+metadata/authoring_role = "tree_trunk"
+
+[node name="island_near_right_pine_01_branch_01_03" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("21_uqjlt")
+metadata/authoring_role = "tree_trunk"
+
+[node name="island_near_right_pine_01_branch_01_04" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("22_ucnmx")
+metadata/authoring_role = "tree_trunk"
+
+[node name="island_near_right_pine_01_crown_tier_01" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("23_18x4x")
+metadata/authoring_role = "tree_crown"
+
+[node name="island_near_right_pine_01_branch_02_00" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("24_4ux5y")
+metadata/authoring_role = "tree_trunk"
+
+[node name="island_near_right_pine_01_branch_02_01" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("25_x2eux")
+metadata/authoring_role = "tree_trunk"
+
+[node name="island_near_right_pine_01_branch_02_02" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("26_utji1")
+metadata/authoring_role = "tree_trunk"
+
+[node name="island_near_right_pine_01_branch_02_03" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("27_wp768")
+metadata/authoring_role = "tree_trunk"
+
+[node name="island_near_right_pine_01_branch_02_04" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("28_kylyp")
+metadata/authoring_role = "tree_trunk"
+
+[node name="island_near_right_pine_01_crown_tier_02" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("29_5iul0")
+metadata/authoring_role = "tree_crown"
+
+[node name="island_near_right_pine_01_crown_tier_03" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("30_ycyod")
+metadata/authoring_role = "tree_crown"
+
+[node name="island_near_right_pine_01_crown_tier_04" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("31_nlf4y")
+metadata/authoring_role = "tree_crown"
+
+[node name="island_near_right_pine_01_leader" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("32_32af3")
+metadata/authoring_role = "tree_crown"
+
+[node name="island_near_right_pine_02_trunk" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("33_lfocq")
+metadata/authoring_role = "tree_trunk"
+
+[node name="island_near_right_pine_02_branch_00_00" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("34_xl64g")
+metadata/authoring_role = "tree_trunk"
+
+[node name="island_near_right_pine_02_branch_00_01" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("35_p3jjd")
+metadata/authoring_role = "tree_trunk"
+
+[node name="island_near_right_pine_02_branch_00_02" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("36_jpmpl")
+metadata/authoring_role = "tree_trunk"
+
+[node name="island_near_right_pine_02_branch_00_03" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("37_13bl4")
+metadata/authoring_role = "tree_trunk"
+
+[node name="island_near_right_pine_02_branch_00_04" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("38_iclxa")
+metadata/authoring_role = "tree_trunk"
+
+[node name="island_near_right_pine_02_crown_tier_00" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("39_yldvw")
+metadata/authoring_role = "tree_crown"
+
+[node name="island_near_right_pine_02_branch_01_00" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("40_6srk6")
+metadata/authoring_role = "tree_trunk"
+
+[node name="island_near_right_pine_02_branch_01_01" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("41_51awj")
+metadata/authoring_role = "tree_trunk"
+
+[node name="island_near_right_pine_02_branch_01_02" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("42_ryqq1")
+metadata/authoring_role = "tree_trunk"
+
+[node name="island_near_right_pine_02_branch_01_03" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("43_3kwjy")
+metadata/authoring_role = "tree_trunk"
+
+[node name="island_near_right_pine_02_branch_01_04" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("44_ljxd7")
+metadata/authoring_role = "tree_trunk"
+
+[node name="island_near_right_pine_02_crown_tier_01" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("45_ifu87")
+metadata/authoring_role = "tree_crown"
+
+[node name="island_near_right_pine_02_branch_02_00" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("46_4kclu")
+metadata/authoring_role = "tree_trunk"
+
+[node name="island_near_right_pine_02_branch_02_01" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("47_cms2t")
+metadata/authoring_role = "tree_trunk"
+
+[node name="island_near_right_pine_02_branch_02_02" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("48_wqrri")
+metadata/authoring_role = "tree_trunk"
+
+[node name="island_near_right_pine_02_branch_02_03" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("49_csm8c")
+metadata/authoring_role = "tree_trunk"
+
+[node name="island_near_right_pine_02_branch_02_04" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("50_5hvit")
+metadata/authoring_role = "tree_trunk"
+
+[node name="island_near_right_pine_02_crown_tier_02" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("51_p63yy")
+metadata/authoring_role = "tree_crown"
+
+[node name="island_near_right_pine_02_crown_tier_03" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("52_qvysi")
+metadata/authoring_role = "tree_crown"
+
+[node name="island_near_right_pine_02_crown_tier_04" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("53_quho4")
+metadata/authoring_role = "tree_crown"
+
+[node name="island_near_right_pine_02_leader" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("54_wxhnc")
+metadata/authoring_role = "tree_crown"
+
+[node name="Collision_island_near_right_rockroot" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_island_near_right_rockroot"]
+shape = ExtResource("55_apkow")
+
+[node name="Collision_island_near_right_shoulder" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_island_near_right_shoulder"]
+shape = ExtResource("56_gul7a")
+
+[node name="Collision_island_near_right_wetshore_00" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_island_near_right_wetshore_00"]
+shape = ExtResource("57_3a7el")
+
+[node name="Collision_island_near_right_wetshore_01" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_island_near_right_wetshore_01"]
+shape = ExtResource("58_l8rsj")
+
+[node name="Collision_island_near_right_wetshore_02" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_island_near_right_wetshore_02"]
+shape = ExtResource("59_smc6f")
+
+[node name="Collision_island_near_right_wetshore_03" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_island_near_right_wetshore_03"]
+shape = ExtResource("60_qwk7c")
+
+[node name="Collision_island_near_right_wetshore_04" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_island_near_right_wetshore_04"]
+shape = ExtResource("61_hd7r8")
+
+[node name="Collision_island_near_right_wetshore_05" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_island_near_right_wetshore_05"]
+shape = ExtResource("62_mr4ra")
+
+[node name="Collision_island_near_right_pine_01_trunk" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_island_near_right_pine_01_trunk"]
+shape = ExtResource("63_psvbr")
+
+[node name="Collision_island_near_right_pine_01_branch_00_00" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_island_near_right_pine_01_branch_00_00"]
+shape = ExtResource("64_6njql")
+
+[node name="Collision_island_near_right_pine_01_branch_00_01" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_island_near_right_pine_01_branch_00_01"]
+shape = ExtResource("65_nougy")
+
+[node name="Collision_island_near_right_pine_01_branch_00_02" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_island_near_right_pine_01_branch_00_02"]
+shape = ExtResource("66_mcw7k")
+
+[node name="Collision_island_near_right_pine_01_branch_00_03" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_island_near_right_pine_01_branch_00_03"]
+shape = ExtResource("67_2rh2q")
+
+[node name="Collision_island_near_right_pine_01_branch_00_04" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_island_near_right_pine_01_branch_00_04"]
+shape = ExtResource("68_kwari")
+
+[node name="Collision_island_near_right_pine_01_branch_01_00" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_island_near_right_pine_01_branch_01_00"]
+shape = ExtResource("69_ngmr7")
+
+[node name="Collision_island_near_right_pine_01_branch_01_01" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_island_near_right_pine_01_branch_01_01"]
+shape = ExtResource("70_gh8yw")
+
+[node name="Collision_island_near_right_pine_01_branch_01_02" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_island_near_right_pine_01_branch_01_02"]
+shape = ExtResource("71_jfsgc")
+
+[node name="Collision_island_near_right_pine_01_branch_01_03" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_island_near_right_pine_01_branch_01_03"]
+shape = ExtResource("72_42lch")
+
+[node name="Collision_island_near_right_pine_01_branch_01_04" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_island_near_right_pine_01_branch_01_04"]
+shape = ExtResource("73_a0hmm")
+
+[node name="Collision_island_near_right_pine_01_branch_02_00" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_island_near_right_pine_01_branch_02_00"]
+shape = ExtResource("74_vn6dv")
+
+[node name="Collision_island_near_right_pine_01_branch_02_01" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_island_near_right_pine_01_branch_02_01"]
+shape = ExtResource("75_3tsd4")
+
+[node name="Collision_island_near_right_pine_01_branch_02_02" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_island_near_right_pine_01_branch_02_02"]
+shape = ExtResource("76_83nh0")
+
+[node name="Collision_island_near_right_pine_01_branch_02_03" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_island_near_right_pine_01_branch_02_03"]
+shape = ExtResource("77_j4wnl")
+
+[node name="Collision_island_near_right_pine_01_branch_02_04" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_island_near_right_pine_01_branch_02_04"]
+shape = ExtResource("78_wxj7q")
+
+[node name="Collision_island_near_right_pine_02_trunk" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_island_near_right_pine_02_trunk"]
+shape = ExtResource("79_lj8wt")
+
+[node name="Collision_island_near_right_pine_02_branch_00_00" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_island_near_right_pine_02_branch_00_00"]
+shape = ExtResource("80_8h2wg")
+
+[node name="Collision_island_near_right_pine_02_branch_00_01" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_island_near_right_pine_02_branch_00_01"]
+shape = ExtResource("81_bcegm")
+
+[node name="Collision_island_near_right_pine_02_branch_00_02" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_island_near_right_pine_02_branch_00_02"]
+shape = ExtResource("82_6w0lq")
+
+[node name="Collision_island_near_right_pine_02_branch_00_03" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_island_near_right_pine_02_branch_00_03"]
+shape = ExtResource("83_kbqp8")
+
+[node name="Collision_island_near_right_pine_02_branch_00_04" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_island_near_right_pine_02_branch_00_04"]
+shape = ExtResource("84_d2uw1")
+
+[node name="Collision_island_near_right_pine_02_branch_01_00" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_island_near_right_pine_02_branch_01_00"]
+shape = ExtResource("85_nsf7i")
+
+[node name="Collision_island_near_right_pine_02_branch_01_01" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_island_near_right_pine_02_branch_01_01"]
+shape = ExtResource("86_82rg5")
+
+[node name="Collision_island_near_right_pine_02_branch_01_02" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_island_near_right_pine_02_branch_01_02"]
+shape = ExtResource("87_q4w64")
+
+[node name="Collision_island_near_right_pine_02_branch_01_03" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_island_near_right_pine_02_branch_01_03"]
+shape = ExtResource("88_br71q")
+
+[node name="Collision_island_near_right_pine_02_branch_01_04" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_island_near_right_pine_02_branch_01_04"]
+shape = ExtResource("89_0cwjy")
+
+[node name="Collision_island_near_right_pine_02_branch_02_00" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_island_near_right_pine_02_branch_02_00"]
+shape = ExtResource("90_ts11w")
+
+[node name="Collision_island_near_right_pine_02_branch_02_01" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_island_near_right_pine_02_branch_02_01"]
+shape = ExtResource("91_jr524")
+
+[node name="Collision_island_near_right_pine_02_branch_02_02" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_island_near_right_pine_02_branch_02_02"]
+shape = ExtResource("92_6n43b")
+
+[node name="Collision_island_near_right_pine_02_branch_02_03" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_island_near_right_pine_02_branch_02_03"]
+shape = ExtResource("93_v3i3g")
+
+[node name="Collision_island_near_right_pine_02_branch_02_04" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_island_near_right_pine_02_branch_02_04"]
+shape = ExtResource("94_a3n4u")

@@ -1,0 +1,150 @@
+[gd_scene load_steps=24 format=3]
+
+[ext_resource type="ArrayMesh" path="res://assets/lake49/foreground_rock__foreground_rock_rockroot.mesh" id="1_5akfr"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/foreground_rock__foreground_rock_shoulder.mesh" id="2_hw05m"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/foreground_rock__foreground_rock_wetshore_00.mesh" id="3_61r2s"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/foreground_rock__foreground_rock_wetshore_01.mesh" id="4_wxr44"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/foreground_rock__foreground_rock_wetshore_02.mesh" id="5_i4mo2"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/foreground_rock__foreground_rock_wetshore_03.mesh" id="6_yu8im"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/foreground_rock__foreground_rock_wetshore_04.mesh" id="7_orjxe"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/foreground_rock__foreground_rock_wetshore_05.mesh" id="8_ouciw"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/foreground_rock__foreground_rock_grassblade_00.mesh" id="9_g5bo6"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/foreground_rock__foreground_rock_grassblade_01.mesh" id="10_0v0dj"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/foreground_rock__foreground_rock_grassblade_02.mesh" id="11_sl05k"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/foreground_rock__foreground_rock_grassblade_03.mesh" id="12_giwng"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/foreground_rock__foreground_rock_grassblade_04.mesh" id="13_ev4ia"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/foreground_rock__foreground_rock_grassblade_05.mesh" id="14_5vrxq"]
+[ext_resource type="ArrayMesh" path="res://assets/lake49/foreground_rock__foreground_rock_grassblade_06.mesh" id="15_rnti8"]
+[ext_resource type="Shape3D" path="res://assets/lake49/foreground_rock__foreground_rock_rockroot_collision.res" id="16_vcu1y"]
+[ext_resource type="Shape3D" path="res://assets/lake49/foreground_rock__foreground_rock_shoulder_collision.res" id="17_ggt7d"]
+[ext_resource type="Shape3D" path="res://assets/lake49/foreground_rock__foreground_rock_wetshore_00_collision.res" id="18_mjjxt"]
+[ext_resource type="Shape3D" path="res://assets/lake49/foreground_rock__foreground_rock_wetshore_01_collision.res" id="19_vq4rm"]
+[ext_resource type="Shape3D" path="res://assets/lake49/foreground_rock__foreground_rock_wetshore_02_collision.res" id="20_v0287"]
+[ext_resource type="Shape3D" path="res://assets/lake49/foreground_rock__foreground_rock_wetshore_03_collision.res" id="21_vwry0"]
+[ext_resource type="Shape3D" path="res://assets/lake49/foreground_rock__foreground_rock_wetshore_04_collision.res" id="22_2upuf"]
+[ext_resource type="Shape3D" path="res://assets/lake49/foreground_rock__foreground_rock_wetshore_05_collision.res" id="23_7knm1"]
+
+[node name="foreground_rock" type="Node3D"]
+metadata/source_blend = "source-assets/lake49/foreground_rock.blend"
+metadata/source_glb = "source-assets/lake49/foreground_rock.glb"
+metadata/world_anchor = Vector3(1200, 0, -1070)
+metadata/source_blend_sha256 = "57a8da32d636c21481e64d8d115431d29512460d61e28318481c058a88fd8a25"
+metadata/source_glb_sha256 = "742f627bc253c94a7d08e11947421acebfcafec02ae9a7cf1afe24df8ab2c282"
+
+[node name="Meshes" type="Node3D" parent="."]
+
+[node name="foreground_rock_rockroot" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("1_5akfr")
+metadata/authoring_role = "rockroot"
+
+[node name="foreground_rock_shoulder" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("2_hw05m")
+metadata/authoring_role = "shoulder"
+
+[node name="foreground_rock_wetshore_00" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("3_61r2s")
+metadata/authoring_role = "wetshore"
+
+[node name="foreground_rock_wetshore_01" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("4_wxr44")
+metadata/authoring_role = "wetshore"
+
+[node name="foreground_rock_wetshore_02" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("5_i4mo2")
+metadata/authoring_role = "wetshore"
+
+[node name="foreground_rock_wetshore_03" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("6_yu8im")
+metadata/authoring_role = "wetshore"
+
+[node name="foreground_rock_wetshore_04" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("7_orjxe")
+metadata/authoring_role = "wetshore"
+
+[node name="foreground_rock_wetshore_05" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("8_ouciw")
+metadata/authoring_role = "wetshore"
+
+[node name="foreground_rock_grassblade_00" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("9_g5bo6")
+metadata/authoring_role = "grass_tuft"
+
+[node name="foreground_rock_grassblade_01" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("10_0v0dj")
+metadata/authoring_role = "grass_tuft"
+
+[node name="foreground_rock_grassblade_02" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("11_sl05k")
+metadata/authoring_role = "grass_tuft"
+
+[node name="foreground_rock_grassblade_03" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("12_giwng")
+metadata/authoring_role = "grass_tuft"
+
+[node name="foreground_rock_grassblade_04" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("13_ev4ia")
+metadata/authoring_role = "grass_tuft"
+
+[node name="foreground_rock_grassblade_05" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("14_5vrxq")
+metadata/authoring_role = "grass_tuft"
+
+[node name="foreground_rock_grassblade_06" type="MeshInstance3D" parent="Meshes"]
+mesh = ExtResource("15_rnti8")
+metadata/authoring_role = "grass_tuft"
+
+[node name="Collision_foreground_rock_rockroot" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_foreground_rock_rockroot"]
+shape = ExtResource("16_vcu1y")
+
+[node name="Collision_foreground_rock_shoulder" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_foreground_rock_shoulder"]
+shape = ExtResource("17_ggt7d")
+
+[node name="Collision_foreground_rock_wetshore_00" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_foreground_rock_wetshore_00"]
+shape = ExtResource("18_mjjxt")
+
+[node name="Collision_foreground_rock_wetshore_01" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_foreground_rock_wetshore_01"]
+shape = ExtResource("19_vq4rm")
+
+[node name="Collision_foreground_rock_wetshore_02" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_foreground_rock_wetshore_02"]
+shape = ExtResource("20_v0287")
+
+[node name="Collision_foreground_rock_wetshore_03" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_foreground_rock_wetshore_03"]
+shape = ExtResource("21_vwry0")
+
+[node name="Collision_foreground_rock_wetshore_04" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_foreground_rock_wetshore_04"]
+shape = ExtResource("22_2upuf")
+
+[node name="Collision_foreground_rock_wetshore_05" type="StaticBody3D" parent="."]
+collision_layer = 5
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape3D" parent="Collision_foreground_rock_wetshore_05"]
+shape = ExtResource("23_7knm1")
