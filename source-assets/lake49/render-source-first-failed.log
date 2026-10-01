@@ -1,0 +1,9 @@
+Blender 4.5.14 LTS (hash 62c1db4208e8 built 2026-09-15 01:31:19)
+Read blend: "/workspace/scratch/a29d03198654/Aether/source-assets/lake49/island_near_left.blend"
+Traceback (most recent call last):
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/lake49/render_source49.py", line 9, in <module>
+    sc.world.color=(.5,.5,.5);sc.world.use_nodes=True;sc.world.node_tree.nodes['Background'].inputs[0].default_value=(.64,.72,.82,1);sc.world.node_tree.nodes['Background'].inputs[1].default_value=.7
+    ^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'color'
+
+Blender quit

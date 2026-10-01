@@ -1,0 +1,477 @@
+{
+  "hardware_gpu_acceptance": false,
+  "reference_visual_acceptance": false,
+  "cameras": [
+    {
+      "name": "1128",
+      "position": [
+        1150,
+        10,
+        -1000
+      ],
+      "target": [
+        1150,
+        160,
+        -2600
+      ],
+      "fov": 64
+    },
+    {
+      "name": "1129",
+      "position": [
+        1300,
+        7,
+        -950
+      ],
+      "target": [
+        1000,
+        120,
+        -2400
+      ],
+      "fov": 66
+    }
+  ],
+  "islands": [
+    {
+      "name": "island_near_left",
+      "projections": {
+        "1128": {
+          "all_above_water": {
+            "bbox": [
+              84.89145935276338,
+              354.66009822094827,
+              336.5898604303726,
+              423.0998312568631
+            ],
+            "visible_width_px": 251.69840107760922,
+            "left_clipped": false,
+            "fully_offscreen": false
+          },
+          "rockshore_above_water": {
+            "bbox": [
+              84.89145935276338,
+              400.83861528776,
+              336.5898604303726,
+              423.0998312568631
+            ],
+            "visible_width_px": 251.69840107760922,
+            "left_clipped": false,
+            "fully_offscreen": false
+          }
+        },
+        "1129": {
+          "all_above_water": {
+            "bbox": [
+              89.1449925210502,
+              348.72147236087426,
+              224.0156940278626,
+              386.77130054657243
+            ],
+            "visible_width_px": 134.8707015068124,
+            "left_clipped": false,
+            "fully_offscreen": false
+          },
+          "rockshore_above_water": {
+            "bbox": [
+              89.1449925210502,
+              376.09654398654703,
+              224.0156940278626,
+              386.77130054657243
+            ],
+            "visible_width_px": 134.8707015068124,
+            "left_clipped": false,
+            "fully_offscreen": false
+          }
+        }
+      },
+      "trees": [
+        {
+          "name": "island_near_left_pine_01",
+          "actual_support_y": 3.484016336306857,
+          "foot_y": 3.4840164184570312,
+          "residual_m": 8.215017421875359e-08,
+          "trunk_lowest_y": 3.3194491863250732,
+          "trunk_burial_m": 0.164567232131958
+        },
+        {
+          "name": "island_near_left_pine_02",
+          "actual_support_y": 3.423142366354033,
+          "foot_y": 3.4231414794921875,
+          "residual_m": -8.868618452950727e-07,
+          "trunk_lowest_y": 3.2607860565185547,
+          "trunk_burial_m": 0.1623554229736328
+        }
+      ],
+      "world_bounds": [
+        [
+          1008.9599990844727,
+          -25.7088623046875,
+          -1170.5655574798584
+        ],
+        [
+          1077.630687713623,
+          17.88081169128418,
+          -1128.726999282837
+        ]
+      ],
+      "root_dense_burial": {
+        "samples": 1939,
+        "min_m": 1.4965993285899657,
+        "max_m": 1.5046878612751655,
+        "all_1_to_2m": true
+      }
+    },
+    {
+      "name": "island_far_middle",
+      "projections": {
+        "1128": {
+          "all_above_water": {
+            "bbox": [
+              487.3944675800677,
+              373.70555965214027,
+              544.3974826025659,
+              390.3346058245627
+            ],
+            "visible_width_px": 57.003015022498175,
+            "left_clipped": false,
+            "fully_offscreen": false
+          },
+          "rockshore_above_water": {
+            "bbox": [
+              487.3944675800677,
+              387.3425128415581,
+              544.3974826025659,
+              390.3346058245627
+            ],
+            "visible_width_px": 57.003015022498175,
+            "left_clipped": false,
+            "fully_offscreen": false
+          }
+        },
+        "1129": {
+          "all_above_water": {
+            "bbox": [
+              501.8064833420955,
+              361.9959739138365,
+              549.1112810078592,
+              376.05585503629663
+            ],
+            "visible_width_px": 47.30479766576377,
+            "left_clipped": false,
+            "fully_offscreen": false
+          },
+          "rockshore_above_water": {
+            "bbox": [
+              501.8064833420955,
+              373.62855505890616,
+              549.1112810078592,
+              376.05585503629663
+            ],
+            "visible_width_px": 47.30479766576377,
+            "left_clipped": false,
+            "fully_offscreen": false
+          }
+        }
+      },
+      "trees": [
+        {
+          "name": "island_far_middle_pine_01",
+          "actual_support_y": 2.3020687006705147,
+          "foot_y": 2.30206298828125,
+          "residual_m": -5.712389264722617e-06,
+          "trunk_lowest_y": 2.136228322982788,
+          "trunk_burial_m": 0.16583466529846191
+        },
+        {
+          "name": "island_far_middle_pine_02",
+          "actual_support_y": 2.9989923107617273,
+          "foot_y": 2.9989852905273438,
+          "residual_m": -7.020234383592339e-06,
+          "trunk_lowest_y": 2.8318045139312744,
+          "trunk_burial_m": 0.16718077659606934
+        },
+        {
+          "name": "island_far_middle_pine_03",
+          "actual_support_y": 2.447384693714483,
+          "foot_y": 2.4473724365234375,
+          "residual_m": -1.2257191045694782e-05,
+          "trunk_lowest_y": 2.2799019813537598,
+          "trunk_burial_m": 0.16747045516967773
+        }
+      ],
+      "world_bounds": [
+        [
+          1021.8400001525879,
+          -31.422607421875,
+          -1670.5655574798584
+        ],
+        [
+          1094.550136566162,
+          19.911008834838867,
+          -1628.726999282837
+        ]
+      ],
+      "root_dense_burial": {
+        "samples": 2053,
+        "min_m": 1.4921320246844445,
+        "max_m": 1.5056776483241272,
+        "all_1_to_2m": true
+      }
+    },
+    {
+      "name": "island_near_right",
+      "projections": {
+        "1128": {
+          "all_above_water": {
+            "bbox": [
+              1506.4809090060457,
+              361.9221129392803,
+              1792.964056717114,
+              432.1949664841557
+            ],
+            "visible_width_px": 0.0,
+            "left_clipped": false,
+            "fully_offscreen": true
+          },
+          "rockshore_above_water": {
+            "bbox": [
+              1506.4809090060457,
+              410.0530927647177,
+              1792.964056717114,
+              432.1949664841557
+            ],
+            "visible_width_px": 0.0,
+            "left_clipped": false,
+            "fully_offscreen": true
+          }
+        },
+        "1129": {
+          "all_above_water": {
+            "bbox": [
+              905.350255927844,
+              345.3845167189183,
+              1065.0992354920088,
+              397.12976929793535
+            ],
+            "visible_width_px": 159.74897956416476,
+            "left_clipped": false,
+            "fully_offscreen": false
+          },
+          "rockshore_above_water": {
+            "bbox": [
+              905.350255927844,
+              382.6373198144426,
+              1065.0992354920088,
+              397.12976929793535
+            ],
+            "visible_width_px": 159.74897956416476,
+            "left_clipped": false,
+            "fully_offscreen": false
+          }
+        }
+      },
+      "trees": [
+        {
+          "name": "island_near_right_pine_01",
+          "actual_support_y": 2.6672689098865594,
+          "foot_y": 2.667266845703125,
+          "residual_m": -2.064183434402622e-06,
+          "trunk_lowest_y": 2.504262685775757,
+          "trunk_burial_m": 0.16300415992736816
+        },
+        {
+          "name": "island_near_right_pine_02",
+          "actual_support_y": 3.242313057753219,
+          "foot_y": 3.2423095703125,
+          "residual_m": -3.4874407188745238e-06,
+          "trunk_lowest_y": 3.0769717693328857,
+          "trunk_burial_m": 0.16533780097961426
+        }
+      ],
+      "world_bounds": [
+        [
+          1358.7999992370605,
+          -25.434814453125,
+          -1132.7310600280762
+        ],
+        [
+          1399.1945209503174,
+          14.524863243103027,
+          -1106.831000328064
+        ]
+      ],
+      "root_dense_burial": {
+        "samples": 705,
+        "min_m": 1.4993925657002478,
+        "max_m": 1.5015679113640807,
+        "all_1_to_2m": true
+      }
+    },
+    {
+      "name": "foreground_rock",
+      "projections": {
+        "1128": {
+          "all_above_water": {
+            "bbox": [
+              907.5269084670603,
+              418.1078367195406,
+              1069.2450726307866,
+              468.0372178053175
+            ],
+            "visible_width_px": 161.71816416372633,
+            "left_clipped": false,
+            "fully_offscreen": false
+          },
+          "rockshore_above_water": {
+            "bbox": [
+              907.5269084670603,
+              427.90114568088006,
+              1069.2450726307866,
+              468.0372178053175
+            ],
+            "visible_width_px": 161.71816416372633,
+            "left_clipped": false,
+            "fully_offscreen": false
+          }
+        },
+        "1129": {
+          "all_above_water": {
+            "bbox": [
+              281.8070786557327,
+              377.48810404165994,
+              348.2343307821951,
+              398.5389209686237
+            ],
+            "visible_width_px": 66.4272521264624,
+            "left_clipped": false,
+            "fully_offscreen": false
+          },
+          "rockshore_above_water": {
+            "bbox": [
+              281.8070786557327,
+              382.5458070584201,
+              348.2343307821951,
+              398.5389209686237
+            ],
+            "visible_width_px": 66.4272521264624,
+            "left_clipped": false,
+            "fully_offscreen": false
+          }
+        }
+      },
+      "trees": [],
+      "world_bounds": [
+        [
+          1190.460000038147,
+          -24.4036865234375,
+          -1076.8551859855652
+        ],
+        [
+          1208.6375341415405,
+          5.259437561035156,
+          -1062.9089999198914
+        ]
+      ],
+      "root_dense_burial": {
+        "samples": 171,
+        "min_m": 1.4998462405670523,
+        "max_m": 1.5013283643946203,
+        "all_1_to_2m": true
+      }
+    }
+  ],
+  "route_clearances": [
+    {
+      "name": "1128-lateral150",
+      "start": [
+        1150,
+        10,
+        -1000
+      ],
+      "end": [
+        1300,
+        10,
+        -1000
+      ],
+      "all_new_mesh_distance_lower_bound_m": 63.44428858641302,
+      "sampling_interval_max_m": 0.5,
+      "at_least_10m_clearance": true
+    },
+    {
+      "name": "1128-approach200",
+      "start": [
+        1150,
+        10,
+        -1000
+      ],
+      "end": [
+        1150,
+        28.668,
+        -1199.127
+      ],
+      "all_new_mesh_distance_lower_bound_m": 44.0694465364917,
+      "sampling_interval_max_m": 0.5,
+      "at_least_10m_clearance": true
+    },
+    {
+      "name": "1129-lateral150",
+      "start": [
+        1300,
+        7,
+        -950
+      ],
+      "end": [
+        1446.889,
+        7,
+        -980.391
+      ],
+      "all_new_mesh_distance_lower_bound_m": 136.69109662945266,
+      "sampling_interval_max_m": 0.5,
+      "at_least_10m_clearance": true
+    },
+    {
+      "name": "1129-approach200",
+      "start": [
+        1300,
+        7,
+        -950
+      ],
+      "end": [
+        1259.596,
+        22.219,
+        -1145.284
+      ],
+      "all_new_mesh_distance_lower_bound_m": 66.89920871932445,
+      "sampling_interval_max_m": 0.5,
+      "at_least_10m_clearance": true
+    }
+  ],
+  "curved_water_corridor": {
+    "waypoints_xz": [
+      [
+        1100,
+        -1080
+      ],
+      [
+        1125,
+        -1530
+      ],
+      [
+        1125,
+        -1730
+      ],
+      [
+        1100,
+        -1850
+      ],
+      [
+        1070,
+        -2090
+      ]
+    ],
+    "width_m": 20,
+    "probe_count": 1032,
+    "max_highest_solid_y": -20.938207320417707,
+    "all_submerged_at_least_2m": true
+  }
+}
