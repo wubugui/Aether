@@ -1,0 +1,73 @@
+{
+  "version": "61-native-coast57b",
+  "native_build_passed": true,
+  "fresh_native_saved_scope_passed": true,
+  "runtime_two_phase_root_collision_cache_passed": true,
+  "40_adjusted_objects_continuous_foot_support_passed": true,
+  "full_foot_native_reconciliation_passed": true,
+  "inherited_1128_1216_exact_pose_and_toggle_passed": true,
+  "source57b_all106_manifest_files_unchanged": true,
+  "actual_image_count": 10,
+  "independent_review_passed": true,
+  "ordinary_flight_passed": false,
+  "real_UI_observation_transition_continuity_passed": false,
+  "hardware_GPU_passed": false,
+  "visual_reference_acceptance": false,
+  "all_reference_GOAL_complete": false,
+  "scene_sha256": "dff06de665e1fa1f6ab74ff3cdf4e91442e1ac322839a37718e799f0d7fa44d8",
+  "base60_scene_sha256": "8fcb0d24d503133a7e6ba29645291a73314c88b40ab447e0802937f1c802ac45",
+  "scope": "One tile_-5_-5 mesh/collision and4scatter buffers;40 root transforms,7XZ moves;inherits60->56->55->53;defaultunchanged",
+  "resources": [
+    {
+      "path": "candidates/round40-exclusive-20260930/project/assets/coast61/Ground_-5_-5_coast61.mesh",
+      "sha256": "9a6f4cf1297c93247a0eae13edbc8a2754864c1759240d4401172b7a58355613",
+      "bytes": 203421
+    },
+    {
+      "path": "candidates/round40-exclusive-20260930/project/assets/coast61/Ground_-5_-5_coast61_collision.res",
+      "sha256": "9b287d4154ef03b2b0ccfa0ec2dac795cdd73344afe774bcb6f4e03cb23589d5",
+      "bytes": 103683
+    },
+    {
+      "path": "candidates/round40-exclusive-20260930/project/assets/coast61/bush_-5_-5.res",
+      "sha256": "28f4b15c34cead149d7c594ec78dd8d83c4a837ff6405ee0d79c36e6d34f311e",
+      "bytes": 756
+    },
+    {
+      "path": "candidates/round40-exclusive-20260930/project/assets/coast61/rock_-5_-5.res",
+      "sha256": "d968e6bab2e3444e0f8254f7afcdf750e1b08913ac9089b39523cc705e6c320e",
+      "bytes": 948
+    },
+    {
+      "path": "candidates/round40-exclusive-20260930/project/assets/coast61/oak_-5_-5_CoastalPines36b.res",
+      "sha256": "0a780a53e0a90777105703b23a899dfe1cc62d9b2774272087d9869958d64253",
+      "bytes": 9971
+    },
+    {
+      "path": "candidates/round40-exclusive-20260930/project/assets/coast61/poplar_-5_-5_CoastalPines36b.res",
+      "sha256": "6dd75045f47223d6344b2dfa0946b2424a60a9d7a2899a6ddc7e29b300682514",
+      "bytes": 8483
+    }
+  ],
+  "evidence": {
+    "cloud-evidence/coast61-build-20261001T123605Z-gq87o4e1/wrapper-report.json": "b1c4c4417e9d0c6658b726ce136d73c24cb5b20c073e5b3e624748c4e9a8b1af",
+    "cloud-evidence/coast61-build-20261001T123605Z-gq87o4e1/build-report61.json": "60aa206bc424592bfde8f2dd62f8d462d6413610d129deb28af43de5ce029c3d",
+    "cloud-evidence/coast61-v2-verify-20261001T124815Z-czvc76_r/wrapper-report.json": "64487bd1c862b399883a549756c47ee3ae3614214419b84064580f75a20f2f69",
+    "cloud-evidence/coast61-v2-verify-20261001T124815Z-czvc76_r/verify-report61.json": "0d955f89ced83c509baba7ee95c573212206a1ecd4ed2c8bc5755e62a5d872a0",
+    "cloud-evidence/coast61-v2-verify-20261001T124815Z-czvc76_r/full-foot-report61.json": "6477a31a32d74dcb612046569b8d54b18d12f71eb52dee604aaf52e97026413c",
+    "cloud-evidence/coast61-v2-verify-20261001T124815Z-czvc76_r/runtime-native61.json": "170833215bcc88a47c41061532271fbf2c5bc205c06563fd0d990a3b06607121",
+    "cloud-evidence/coast61-v2-verify-20261001T124815Z-czvc76_r/VISUAL_REVIEW.md": "cec35102e8424c277d2a8515ab72906ba6e5291a40ee4783b96d51b2e10fa7a2",
+    "cloud-evidence/coast61-independent-review/review.json": "202a953500303b176850d7e1d2f08b342c38dfee28ba349bf8df86626851d37d"
+  },
+  "first_failed_run_preserved": "cloud-evidence/coast61-verify-20261001T123638Z-b66cdbe8",
+  "failure_resolution": "Verifier-only temporary camera-state restoration, supported by bare-Node3D sequence evidence;original exact pose expectations unchanged",
+  "limits": [
+    "Only 40 adjusted objects pass new continuous foot contact; 20 unchanged objects retain their old local conditions, including rock0/8 gaps0.150/0.388m",
+    "Visibility is actual native triangle area above terrain and top clearance, not solid volume or camera occlusion",
+    "The7 clearance checks are conservative foot-radius XZ checks; this audit additionally checked all81 instances in the4groups and found the same nearest neighbors; no tree canopy clearance claim",
+    "Original millimeter tile-seam mismatch frozen, open heightfield not capped",
+    "Edited759 triangle normals/tangents use native engine packing; untouched2111 triangles retain all original GPU fields exactly; no universal source-normal-byte claim on edited surface",
+    "Actual readback used llvmpipe; no hardware GPU,61 ordinary flight, repeated user F2/observe scale continuity, opening/full-reference acceptance",
+    "Visual review rejects overall1131/1347 match: major high mountain chain/coast hierarchy still missing"
+  ]
+}

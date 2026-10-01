@@ -1,0 +1,30 @@
+{
+  "first_world_failure": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/coast61-verify-20261001T123638Z-b66cdbe8",
+  "exact_original_gate_preserved": true,
+  "expected_lake_pose_is_identical_to60_capture": true,
+  "bare_node_report_sha256": "a997dc02a00723bde3e27df6f5f1ff9944c4455451984113c1fc46906b50dd34",
+  "bare_node_control_source": "Saved Camera Transform3D at Game53dWest.tscn:59301, inherited unchanged through61; same55 pose and42 reference records. No world instantiated.",
+  "bare_node_differences": {
+    "control60": [],
+    "original61_sequence": [
+      {
+        "component": 0,
+        "actual": 0.9999999403953552,
+        "expected": 1.0,
+        "difference": -5.960464477539063e-08
+      },
+      {
+        "component": 8,
+        "actual": 0.9994644522666931,
+        "expected": 0.9994645118713379,
+        "difference": -5.960464477539063e-08
+      }
+    ],
+    "pristine": [],
+    "restored61_sequence": []
+  },
+  "first_world_actual_hex_was_not_recorded": true,
+  "attribution_limit": "Bare-node original61 operation sequence reproduces the exact failure class and corrected sequence restores original exact bytes. The first world report used a rounded string, so its exact component values cannot be recovered retroactively. Fresh v2 logs all real bytes.",
+  "real_UI_navigation_tested": false,
+  "v2_actual_renderer_executed": false
+}

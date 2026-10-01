@@ -1,0 +1,37 @@
+{
+  "mode": "parse",
+  "records": [
+    {
+      "stage": "build",
+      "mode": "parse",
+      "command": [
+        "/workspace/scratch/a29d03198654/tools-feiting/Godot_v4.5.1-stable_linux.x86_64",
+        "--path",
+        "/workspace/scratch/a29d03198654/Aether/candidates/round40-exclusive-20260930/project",
+        "--headless",
+        "--check-only",
+        "--script",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/coast61-integration/build_coast61.gd"
+      ],
+      "started": true,
+      "finished": true,
+      "max_rss_kib": 112640,
+      "renderer_executed": false,
+      "visual_acceptance": false,
+      "source_scene_mutation_allowed": false,
+      "allowed_build_outputs": "Evidence only, including actual native full-foot reconciliation",
+      "pid": 5,
+      "exit_code": 1,
+      "signal": null,
+      "elapsed_seconds": 0.20141419798892457,
+      "errors": [
+        "SCRIPT ERROR: Parse Error: Preload file \"/workspace/scratch/a29d02870654/Aether/source-assets/coast61-integration/coast61_common.gd\" does not exist.",
+        "ERROR: Failed to load script \"/workspace/scratch/a29d03198654/Aether/source-assets/coast61-integration/build_coast61.gd\" with error \"Parse error\"."
+      ],
+      "interrupted": null,
+      "passed": false
+    }
+  ],
+  "passed": false,
+  "parse_is_not_runtime_verification": true
+}

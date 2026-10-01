@@ -1,0 +1,66 @@
+{
+  "ready": true,
+  "base_scene": "res://scenes/candidate60-observation/Game60Observation.tscn",
+  "verified60_path": "/workspace/scratch/a29d03198654/Aether/candidates/round40-exclusive-20260930/project/scenes/candidate60-observation/verified60.json",
+  "verified60_sha256": "f3caa3fedbcd49343138659ada966c06edccd5edf174efb0454d58a95d28c2cd",
+  "required_reports": [
+    {
+      "kind": "scope",
+      "path": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/observation60-scope-20261001T114951Z-0edetyeh/process-report.json",
+      "sha256": "e275fe2fa008032528fecdfd6c4645252dc860b7787a9b6dc1360bc1bade6dd8",
+      "assertions": {
+        "passed": true,
+        "child_exit": 0,
+        "inputs_unchanged": true,
+        "parse": false,
+        "status": "finished",
+        "errors": [],
+        "gate_errors": []
+      },
+      "detail_report": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/observation60-scope-20261001T114951Z-0edetyeh/scope-report.json",
+      "detail_sha256": "611993704c161953bc2d2ff910060d737a26b1ab504ff45d971c9df4138996ae"
+    },
+    {
+      "kind": "capture",
+      "path": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/observation60-capture-20261001T115015Z-95ypprk7/process-report.json",
+      "sha256": "63bbc57c8c2e36868db3d0dfb869ad06bedbf1f97ee33a56b94636bc80564aa0",
+      "assertions": {
+        "passed": true,
+        "child_exit": 0,
+        "inputs_unchanged": true,
+        "parse": false,
+        "status": "finished",
+        "errors": [],
+        "gate_errors": []
+      },
+      "detail_report": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/observation60-capture-20261001T115015Z-95ypprk7/images/report60.json",
+      "detail_sha256": "20121544ba1fc31194df4e4beb69560c848d94ac75b47362d55e5c069e547217"
+    },
+    {
+      "kind": "flight",
+      "path": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/observation60-flight-20261001T115223Z-l9b5o74g/process-report.json",
+      "sha256": "2f56fa43927956b3fcdbbe1dc48875ca39461b72c819f1e3feb3acf47eaacdc8",
+      "assertions": {
+        "passed": true,
+        "child_exit": 0,
+        "inputs_unchanged": true,
+        "parse": false,
+        "status": "finished",
+        "errors": [],
+        "gate_errors": []
+      },
+      "detail_report": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/observation60-flight-20261001T115223Z-l9b5o74g/images/player-flight-report.json",
+      "detail_sha256": "fc03697e633e8f1625fade7b96e1600084637ef05a49df43e6a0e196b0cc3329"
+    }
+  ],
+  "immutable_inputs": {
+    "res://scenes/candidate60-observation/Game60Observation.tscn": "8fcb0d24d503133a7e6ba29645291a73314c88b40ab447e0802937f1c802ac45",
+    "res://scripts/game60_observation.gd": "564734997383ce2dacdf41caa88087886838fae596f93702378b4bf17991e589",
+    "res://assets/observation60/cloud_observation_pose.json": "d8a440ded9b0f5ff3b781bc63a3b6233948b9a880ffd87a77048bf90ca9e5345",
+    "res://scenes/candidate56-coast/Game56Coast.tscn": "5c0cd84b860c409b647d970f123187e89b2e01099e159a43aff372d40ddbe8c5",
+    "/workspace/scratch/a29d03198654/Aether/candidates/round40-exclusive-20260930/project/scenes/candidate60-observation/verified60.json": "f3caa3fedbcd49343138659ada966c06edccd5edf174efb0454d58a95d28c2cd",
+    "/workspace/scratch/a29d03198654/Aether/cloud-evidence/observation60-scope-20261001T114951Z-0edetyeh/scope-report.json": "611993704c161953bc2d2ff910060d737a26b1ab504ff45d971c9df4138996ae",
+    "/workspace/scratch/a29d03198654/Aether/cloud-evidence/observation60-capture-20261001T115015Z-95ypprk7/images/report60.json": "20121544ba1fc31194df4e4beb69560c848d94ac75b47362d55e5c069e547217",
+    "/workspace/scratch/a29d03198654/Aether/cloud-evidence/observation60-flight-20261001T115223Z-l9b5o74g/images/player-flight-report.json": "fc03697e633e8f1625fade7b96e1600084637ef05a49df43e6a0e196b0cc3329"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "mode": "verify",
+  "records": [
+    {
+      "stage": "verify",
+      "mode": "verify",
+      "command": [
+        "/workspace/scratch/a29d03198654/tools-feiting/Godot_v4.5.1-stable_linux.x86_64",
+        "--path",
+        "/workspace/scratch/a29d03198654/Aether/candidates/round40-exclusive-20260930/project",
+        "--rendering-method",
+        "gl_compatibility",
+        "--audio-driver",
+        "Dummy",
+        "--disable-vsync",
+        "--script",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/coast61-integration/verification-v2/verify_coast61_v2.gd"
+      ],
+      "started": true,
+      "finished": true,
+      "max_rss_kib": 1691040,
+      "renderer_executed": true,
+      "visual_acceptance": false,
+      "source_scene_mutation_allowed": false,
+      "allowed_build_outputs": "Evidence only, including actual native full-foot reconciliation",
+      "pid": 231170,
+      "exit_code": 0,
+      "signal": null,
+      "elapsed_seconds": 251.07370856200578,
+      "errors": [],
+      "interrupted": null,
+      "passed": true
+    },
+    {
+      "stage": "feet",
+      "mode": "verify",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/coast61-integration/verify_runtime_feet61.py",
+        "/workspace/scratch/a29d03198654/Aether/cloud-evidence/coast61-v2-verify-20261001T124815Z-czvc76_r"
+      ],
+      "started": true,
+      "finished": true,
+      "max_rss_kib": 170700,
+      "renderer_executed": false,
+      "visual_acceptance": false,
+      "source_scene_mutation_allowed": false,
+      "allowed_build_outputs": "Evidence only, including actual native full-foot reconciliation",
+      "pid": 232284,
+      "exit_code": 0,
+      "signal": null,
+      "elapsed_seconds": 2.805761669995263,
+      "errors": [],
+      "interrupted": null,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "parse_is_not_runtime_verification": false
+}

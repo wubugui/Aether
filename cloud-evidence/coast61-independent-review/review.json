@@ -1,0 +1,308 @@
+{
+  "review_passed": true,
+  "review_kind": "Independent finished-evidence hash/scope review; no engine or world rerun",
+  "source57b_manifest_file_count": 106,
+  "all_source57b_files_unchanged": true,
+  "all_52_pinned_inputs_unchanged": true,
+  "actual_build": {
+    "mode": "build",
+    "records": [
+      {
+        "stage": "build",
+        "mode": "build",
+        "command": [
+          "/workspace/scratch/a29d03198654/tools-feiting/Godot_v4.5.1-stable_linux.x86_64",
+          "--path",
+          "/workspace/scratch/a29d03198654/Aether/candidates/round40-exclusive-20260930/project",
+          "--rendering-method",
+          "gl_compatibility",
+          "--audio-driver",
+          "Dummy",
+          "--disable-vsync",
+          "--script",
+          "/workspace/scratch/a29d03198654/Aether/source-assets/coast61-integration/build_coast61.gd"
+        ],
+        "started": true,
+        "finished": true,
+        "max_rss_kib": 922592,
+        "renderer_executed": true,
+        "visual_acceptance": false,
+        "source_scene_mutation_allowed": false,
+        "allowed_build_outputs": "Only independent assets/coast61 six resources and tiny scenes/candidate61-coast, plus evidence",
+        "pid": 227430,
+        "exit_code": 0,
+        "signal": null,
+        "elapsed_seconds": 32.55889035000291,
+        "errors": [],
+        "interrupted": null,
+        "passed": true
+      }
+    ],
+    "passed": true,
+    "parse_is_not_runtime_verification": false
+  },
+  "actual_fresh_wrapper": {
+    "mode": "verify",
+    "records": [
+      {
+        "stage": "verify",
+        "mode": "verify",
+        "command": [
+          "/workspace/scratch/a29d03198654/tools-feiting/Godot_v4.5.1-stable_linux.x86_64",
+          "--path",
+          "/workspace/scratch/a29d03198654/Aether/candidates/round40-exclusive-20260930/project",
+          "--rendering-method",
+          "gl_compatibility",
+          "--audio-driver",
+          "Dummy",
+          "--disable-vsync",
+          "--script",
+          "/workspace/scratch/a29d03198654/Aether/source-assets/coast61-integration/verification-v2/verify_coast61_v2.gd"
+        ],
+        "started": true,
+        "finished": true,
+        "max_rss_kib": 1691040,
+        "renderer_executed": true,
+        "visual_acceptance": false,
+        "source_scene_mutation_allowed": false,
+        "allowed_build_outputs": "Evidence only, including actual native full-foot reconciliation",
+        "pid": 231170,
+        "exit_code": 0,
+        "signal": null,
+        "elapsed_seconds": 251.07370856200578,
+        "errors": [],
+        "interrupted": null,
+        "passed": true
+      },
+      {
+        "stage": "feet",
+        "mode": "verify",
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "/workspace/scratch/a29d03198654/Aether/source-assets/coast61-integration/verify_runtime_feet61.py",
+          "/workspace/scratch/a29d03198654/Aether/cloud-evidence/coast61-v2-verify-20261001T124815Z-czvc76_r"
+        ],
+        "started": true,
+        "finished": true,
+        "max_rss_kib": 170700,
+        "renderer_executed": false,
+        "visual_acceptance": false,
+        "source_scene_mutation_allowed": false,
+        "allowed_build_outputs": "Evidence only, including actual native full-foot reconciliation",
+        "pid": 232284,
+        "exit_code": 0,
+        "signal": null,
+        "elapsed_seconds": 2.805761669995263,
+        "errors": [],
+        "interrupted": null,
+        "passed": true
+      }
+    ],
+    "passed": true,
+    "parse_is_not_runtime_verification": false
+  },
+  "full_foot_check_count": 446,
+  "native_scene_sha256": "dff06de665e1fa1f6ab74ff3cdf4e91442e1ac322839a37718e799f0d7fa44d8",
+  "native_scene_bytes": 1453,
+  "independent_resources": [
+    {
+      "path": "candidates/round40-exclusive-20260930/project/assets/coast61/Ground_-5_-5_coast61.mesh",
+      "sha256": "9a6f4cf1297c93247a0eae13edbc8a2754864c1759240d4401172b7a58355613",
+      "bytes": 203421
+    },
+    {
+      "path": "candidates/round40-exclusive-20260930/project/assets/coast61/Ground_-5_-5_coast61_collision.res",
+      "sha256": "9b287d4154ef03b2b0ccfa0ec2dac795cdd73344afe774bcb6f4e03cb23589d5",
+      "bytes": 103683
+    },
+    {
+      "path": "candidates/round40-exclusive-20260930/project/assets/coast61/bush_-5_-5.res",
+      "sha256": "28f4b15c34cead149d7c594ec78dd8d83c4a837ff6405ee0d79c36e6d34f311e",
+      "bytes": 756
+    },
+    {
+      "path": "candidates/round40-exclusive-20260930/project/assets/coast61/rock_-5_-5.res",
+      "sha256": "d968e6bab2e3444e0f8254f7afcdf750e1b08913ac9089b39523cc705e6c320e",
+      "bytes": 948
+    },
+    {
+      "path": "candidates/round40-exclusive-20260930/project/assets/coast61/oak_-5_-5_CoastalPines36b.res",
+      "sha256": "0a780a53e0a90777105703b23a899dfe1cc62d9b2774272087d9869958d64253",
+      "bytes": 9971
+    },
+    {
+      "path": "candidates/round40-exclusive-20260930/project/assets/coast61/poplar_-5_-5_CoastalPines36b.res",
+      "sha256": "6dd75045f47223d6344b2dfa0946b2424a60a9d7a2899a6ddc7e29b300682514",
+      "bytes": 8483
+    }
+  ],
+  "two_actual_surface_face_counts": [
+    2111,
+    759
+  ],
+  "original_surface_vertex_fields_exact": true,
+  "actual_root_count": 60,
+  "changed_roots": 40,
+  "unchanged_inbox_roots": 20,
+  "full_group_instances": 81,
+  "changed_translation_components": {
+    "x": 5,
+    "y": 40,
+    "z": 6
+  },
+  "relocations": 7,
+  "root_support_phases_identical": true,
+  "root_phase_record_count": 120,
+  "runtime_cache_max_difference_m": 0.000244140625,
+  "actual_physics_vs_direct_shape_max_m": 0.0,
+  "actual_mesh_vs_shape_corner_difference_m": 6.103515625e-05,
+  "original_inherited_corner_difference_m": 6.103515625e-05,
+  "40_adjusted_mesh_and_collision_feet_max_air_gap_m": 0,
+  "unchanged_existing_rock_foot_gaps_m": [
+    {
+      "index": 0,
+      "mesh_gap": 0.15008400620865814,
+      "shape_gap": 0.15009410628812248
+    },
+    {
+      "index": 2,
+      "mesh_gap": 8.392334029849735e-05,
+      "shape_gap": 0.00010681152389224735
+    },
+    {
+      "index": 8,
+      "mesh_gap": 0.38764382301985734,
+      "shape_gap": 0.38764713306773046
+    }
+  ],
+  "affected_rock_bush_visibility": [
+    {
+      "node": "World/Vegetation/bush_-5_-5",
+      "index": 1,
+      "extra_seat_m": 0.207631570334333,
+      "extra_seat_fraction_of_original_above_origin_height": 0.05646151313755223,
+      "maximum_burial_fraction_of_full_height": 0.20387195487254794,
+      "remaining_above_ground_mesh_area_fraction": 0.8105488514048093,
+      "above_ground_area_retention_ratio": 0.8771803164512102,
+      "top_above_terrain_m": 3.469851455531966
+    },
+    {
+      "node": "World/Vegetation/rock_-5_-5",
+      "index": 3,
+      "extra_seat_m": 0.32701831046604934,
+      "extra_seat_fraction_of_original_above_origin_height": 0.06385454867908384,
+      "maximum_burial_fraction_of_full_height": 0.2545662419899262,
+      "remaining_above_ground_mesh_area_fraction": 0.7681608578145159,
+      "above_ground_area_retention_ratio": 0.8795250294073667,
+      "top_above_terrain_m": 4.794181307403932
+    },
+    {
+      "node": "World/Vegetation/rock_-5_-5",
+      "index": 4,
+      "extra_seat_m": 0.8116532464039541,
+      "extra_seat_fraction_of_original_above_origin_height": 0.12193576436246054,
+      "maximum_burial_fraction_of_full_height": 0.30081167033855655,
+      "remaining_above_ground_mesh_area_fraction": 0.670053572552358,
+      "above_ground_area_retention_ratio": 0.7671897394849904,
+      "top_above_terrain_m": 5.844645056551016
+    },
+    {
+      "node": "World/Vegetation/rock_-5_-5",
+      "index": 6,
+      "extra_seat_m": 0.9325890969673669,
+      "extra_seat_fraction_of_original_above_origin_height": 0.22428249639081912,
+      "maximum_burial_fraction_of_full_height": 0.3823012605554517,
+      "remaining_above_ground_mesh_area_fraction": 0.652164870740043,
+      "above_ground_area_retention_ratio": 0.7749701561831982,
+      "top_above_terrain_m": 3.2255091830379
+    },
+    {
+      "node": "World/Vegetation/rock_-5_-5",
+      "index": 7,
+      "extra_seat_m": 1.2446725915394172,
+      "extra_seat_fraction_of_original_above_origin_height": 0.20660865428270334,
+      "maximum_burial_fraction_of_full_height": 0.3682248353874291,
+      "remaining_above_ground_mesh_area_fraction": 0.6598492096200856,
+      "above_ground_area_retention_ratio": 0.750472170572466,
+      "top_above_terrain_m": 4.779639391121918
+    }
+  ],
+  "relocation_clearance_all81": [
+    {
+      "node": "World/Vegetation/oak_-5_-5_CoastalPines36b",
+      "index": 6,
+      "all_81_nearest": [
+        "World/Vegetation/rock_-5_-5",
+        7
+      ],
+      "radial_foot_clearance_m": 5.552927647591362
+    },
+    {
+      "node": "World/Vegetation/oak_-5_-5_CoastalPines36b",
+      "index": 33,
+      "all_81_nearest": [
+        "World/Vegetation/rock_-5_-5",
+        7
+      ],
+      "radial_foot_clearance_m": 5.070897258248596
+    },
+    {
+      "node": "World/Vegetation/oak_-5_-5_CoastalPines36b",
+      "index": 37,
+      "all_81_nearest": [
+        "World/Vegetation/oak_-5_-5_CoastalPines36b",
+        45
+      ],
+      "radial_foot_clearance_m": 46.68387362933728
+    },
+    {
+      "node": "World/Vegetation/oak_-5_-5_CoastalPines36b",
+      "index": 44,
+      "all_81_nearest": [
+        "World/Vegetation/poplar_-5_-5_CoastalPines36b",
+        5
+      ],
+      "radial_foot_clearance_m": 21.642735860052674
+    },
+    {
+      "node": "World/Vegetation/poplar_-5_-5_CoastalPines36b",
+      "index": 4,
+      "all_81_nearest": [
+        "World/Vegetation/rock_-5_-5",
+        7
+      ],
+      "radial_foot_clearance_m": 40.60838749017861
+    },
+    {
+      "node": "World/Vegetation/rock_-5_-5",
+      "index": 4,
+      "all_81_nearest": [
+        "World/Vegetation/rock_-5_-5",
+        3
+      ],
+      "radial_foot_clearance_m": 4.757810820944707
+    },
+    {
+      "node": "World/Vegetation/rock_-5_-5",
+      "index": 7,
+      "all_81_nearest": [
+        "World/Vegetation/oak_-5_-5_CoastalPines36b",
+        33
+      ],
+      "radial_foot_clearance_m": 5.070897258248595
+    }
+  ],
+  "all_10_image_hashes_match": true,
+  "inherited_pose_bytes_exact": true,
+  "actual_full_foot_report": "cloud-evidence/coast61-v2-verify-20261001T124815Z-czvc76_r/full-foot-report61.json",
+  "visual_review": "cloud-evidence/coast61-v2-verify-20261001T124815Z-czvc76_r/VISUAL_REVIEW.md",
+  "limits": [
+    "Only 40 adjusted objects pass new continuous foot contact; 20 unchanged objects retain their old local conditions, including rock0/8 gaps0.150/0.388m",
+    "Visibility is actual native triangle area above terrain and top clearance, not solid volume or camera occlusion",
+    "The7 clearance checks are conservative foot-radius XZ checks; this audit additionally checked all81 instances in the4groups and found the same nearest neighbors; no tree canopy clearance claim",
+    "Original millimeter tile-seam mismatch frozen, open heightfield not capped",
+    "Edited759 triangle normals/tangents use native engine packing; untouched2111 triangles retain all original GPU fields exactly; no universal source-normal-byte claim on edited surface",
+    "Actual readback used llvmpipe; no hardware GPU,61 ordinary flight, repeated user F2/observe scale continuity, opening/full-reference acceptance",
+    "Visual review rejects overall1131/1347 match: major high mountain chain/coast hierarchy still missing"
+  ]
+}

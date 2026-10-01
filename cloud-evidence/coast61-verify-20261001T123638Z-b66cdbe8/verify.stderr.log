@@ -1,0 +1,8 @@
+WARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.
+     at: set_use_vsync (platform/linuxbsd/x11/gl_manager_x11.cpp:364)
+ERROR: Inherited exact camera/ship pose 1128
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] check (/workspace/scratch/a29d03198654/Aether/source-assets/coast61-integration/coast61_common.gd:22)
+       [1] pose_exact (/workspace/scratch/a29d03198654/Aether/source-assets/coast61-integration/verify_coast61.gd:103)
+       [2] inherited_observations (/workspace/scratch/a29d03198654/Aether/source-assets/coast61-integration/verify_coast61.gd:109)

@@ -1,0 +1,39 @@
+{
+  "mode": "verify",
+  "records": [
+    {
+      "stage": "verify",
+      "mode": "verify",
+      "command": [
+        "/workspace/scratch/a29d03198654/tools-feiting/Godot_v4.5.1-stable_linux.x86_64",
+        "--path",
+        "/workspace/scratch/a29d03198654/Aether/candidates/round40-exclusive-20260930/project",
+        "--rendering-method",
+        "gl_compatibility",
+        "--audio-driver",
+        "Dummy",
+        "--disable-vsync",
+        "--script",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/coast61-integration/verify_coast61.gd"
+      ],
+      "started": true,
+      "finished": true,
+      "max_rss_kib": 1604300,
+      "renderer_executed": true,
+      "visual_acceptance": false,
+      "source_scene_mutation_allowed": false,
+      "allowed_build_outputs": "Evidence only, including actual native full-foot reconciliation",
+      "pid": 227735,
+      "exit_code": 1,
+      "signal": null,
+      "elapsed_seconds": 186.89621886100213,
+      "errors": [
+        "ERROR: Inherited exact camera/ship pose 1128"
+      ],
+      "interrupted": null,
+      "passed": false
+    }
+  ],
+  "passed": false,
+  "parse_is_not_runtime_verification": false
+}

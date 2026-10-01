@@ -1,0 +1,89 @@
+{
+  "candidate": "res://scenes/candidate61-coast/Game61Coast.tscn",
+  "candidate_bytes": 1453,
+  "candidate_sha256": "dff06de665e1fa1f6ab74ff3cdf4e91442e1ac322839a37718e799f0d7fa44d8",
+  "checked_MM_groups": 4,
+  "checked_roots": 60,
+  "failures": [],
+  "full_scene_packed": false,
+  "hardware_gpu_acceptance": false,
+  "mesh_flags": [
+    "Ground_-5_-5_Ground_-5_-5Geometry",
+    false,
+    0,
+    "[P: (0.0, 0.0, 0.0), S: (0.0, 0.0, 0.0)]"
+  ],
+  "modified_component_counts": {
+    "x": 5.0,
+    "y": 40.0,
+    "z": 6.0
+  },
+  "next_gate": "Separate fresh-process verifier must repeat exact saved readback, then live cache/60 full-foot/7 relocation/collision, ten bounded views,1128/1216 inheritance and independent full-foot reconciliation. No acceptance implied.",
+  "notes": {
+    "actual_candidate_mesh_collision_max_component_error": 0.00006103515625,
+    "drawn_triangle_count": 2870,
+    "edited_surface_normal_native_encoding_max_delta": 0.0000798434848547913,
+    "original_lods_absent": true,
+    "original_mesh_collision_max_component_error": 0.00006103515625,
+    "original_shadow_mesh_absent": true
+  },
+  "old_surface_material": "a8e3d224bfdeec163e4226b0bcc05aaacddd9aeb282ba5e1631ed8c2daab502a",
+  "original_active_material": "dfba999aa68bc42260384e0785ef8f5acaecbc968a4b3ed9079de404ee4a37f8",
+  "passed": true,
+  "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "renderer_run": true,
+  "resources": [
+    {
+      "canonical": "a33b661ebbdff65d388888d09be21936587edb5be377d1d340af1668ddebc164",
+      "class": "ArrayMesh",
+      "path": "res://assets/coast61/Ground_-5_-5_coast61.mesh",
+      "sha256": "9a6f4cf1297c93247a0eae13edbc8a2754864c1759240d4401172b7a58355613"
+    },
+    {
+      "canonical": "ac9c4b33488cd22875ee08db24695b186dce06ce2bb6faa490cf33961138222a",
+      "class": "ConcavePolygonShape3D",
+      "path": "res://assets/coast61/Ground_-5_-5_coast61_collision.res",
+      "sha256": "9b287d4154ef03b2b0ccfa0ec2dac795cdd73344afe774bcb6f4e03cb23589d5"
+    },
+    {
+      "canonical": "f2faff1dc6775ab4c00eafca6766344e164a8922277087d893e198fab648340a",
+      "class": "MultiMesh",
+      "path": "res://assets/coast61/bush_-5_-5.res",
+      "sha256": "28f4b15c34cead149d7c594ec78dd8d83c4a837ff6405ee0d79c36e6d34f311e"
+    },
+    {
+      "canonical": "1e308daed16c422cd5cb765cd2cf9427cdd6eb9aa96e38641079e3b748c5fd12",
+      "class": "MultiMesh",
+      "path": "res://assets/coast61/rock_-5_-5.res",
+      "sha256": "d968e6bab2e3444e0f8254f7afcdf750e1b08913ac9089b39523cc705e6c320e"
+    },
+    {
+      "canonical": "c7bc05d7d82d47fe0ed8ca1724df096223549746b366897a6f9317786b117097",
+      "class": "MultiMesh",
+      "path": "res://assets/coast61/oak_-5_-5_CoastalPines36b.res",
+      "sha256": "0a780a53e0a90777105703b23a899dfe1cc62d9b2774272087d9869958d64253"
+    },
+    {
+      "canonical": "637833a2c133d91e340031f54feab18815c0caa52c26ee534997706da8fd1fa5",
+      "class": "MultiMesh",
+      "path": "res://assets/coast61/poplar_-5_-5_CoastalPines36b.res",
+      "sha256": "6dd75045f47223d6344b2dfa0946b2424a60a9d7a2899a6ddc7e29b300682514"
+    }
+  ],
+  "shape_flags": {
+    "backface_collision": true,
+    "class": "ConcavePolygonShape3D",
+    "custom_solver_bias": 0.0,
+    "margin": 0.0399999991059303,
+    "resource_local_to_scene": false,
+    "resource_name": "",
+    "script": null
+  },
+  "source_scene_sha256": "6ec57b72a831d6fa906a8d866c339909de55c9c42297a038dcd429b18d0c2b18",
+  "stage": "release_original_before_reload",
+  "surface0_triangles": 2111,
+  "surface1_triangles": 759,
+  "unaffected_graph_sha256": "4ae95170b881609736913b11c75f688cc76285464fd5fe3285b128afe2b21ed0",
+  "visual_acceptance": false,
+  "world_entered_tree": false
+}

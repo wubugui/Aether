@@ -1,0 +1,64 @@
+{
+  "stage": "prepared_and_parsed_only",
+  "base60_prerequisites_locked": true,
+  "base60_scene_sha256": "8fcb0d24d503133a7e6ba29645291a73314c88b40ab447e0802937f1c802ac45",
+  "parse_evidence": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/coast61-parse-20261001T121622Z-utfql3nf",
+  "parse_passed": true,
+  "parse_records": [
+    {
+      "stage": "build",
+      "exit_code": 0,
+      "max_rss_kib": 112640,
+      "errors": []
+    },
+    {
+      "stage": "verify",
+      "exit_code": 0,
+      "max_rss_kib": 114924,
+      "errors": []
+    },
+    {
+      "stage": "feet",
+      "exit_code": 0,
+      "max_rss_kib": 115080,
+      "errors": []
+    }
+  ],
+  "template_bytes": 1453,
+  "changed_root_count": 40,
+  "checked_roots": 60,
+  "full_MM_group_instances": 81,
+  "changed_translation_components": {
+    "x": 5,
+    "y": 40,
+    "z": 6
+  },
+  "XZ_relocations": 7,
+  "two_surfaces_triangles": [
+    2111,
+    759
+  ],
+  "unused_original_surface0_vertices": 2125,
+  "actual61_scene_or_resources_exist": false,
+  "renderer_build_executed": false,
+  "renderer_verify_executed": false,
+  "planned_views": 10,
+  "full_foot_gate_uses_actual_GL_export": true,
+  "scope_note": "Builder/fresh verifier and actual-data post-check prepared; parent coordinates renderer window. Parse does not establish serialization/runtime success.",
+  "files": {
+    "prepare61.py": "c9285e02c334d5d8c73d563d9e0b9fcdaa59e81de9498938c4c7ad00a6174636",
+    "preparation-manifest.json": "791f21ce862543d2947529039cf2ef1ce94e609c68043508934cdb8913f490dc",
+    "base60-gate.json": "af0f973a7a95b3b52971209b13b4c3643fec966f17804eb88ab01c88c4b0c0c6",
+    "README.md": "d2ac7abc58b50a44b546cea132b0b778334beec62947ecc501dc957dc261d363",
+    "coast61_common.gd": "1739f61c4e6e1f43c20377a4b2d1a37e7560403a7492d4cffbb41ca6d376ec4b",
+    "static-multimesh-authority.json": "32adf8e04be12342220736ed89ebedd6fa860cfe9bd4bd517212de98b73fdf23",
+    "surface-triangle-map.json": "7a8b7fbc1fd175ebb4852b302f4de87188a0bd33d49b86b62ea43a96b5f8b304",
+    "verify_coast61.gd": "c949e5838952021156c5db352a791365cd3925e556013d076b802feb7c022110",
+    "Game61Coast.tscn.template": "dff06de665e1fa1f6ab74ff3cdf4e91442e1ac322839a37718e799f0d7fa44d8",
+    "last-parse.txt": "b10651911f25ca805498f344fda6c848ebb59dd7db6ccffc12bc27fcb7c7321d",
+    "build_coast61.gd": "ddb94a8937296a6be6686347c191224290f0ebcdc2ee94745de739dc4d8ff6d0",
+    "run_coast61.py": "dbf0c43ba64e66631a6550b11b90500bf056f230c06d5d7f528c387b4120552e",
+    "seal_base60.py": "fbecd37305ecb047005c14503ee8ee57ccf9aa7c9a9918266c70ad4294fdba9a",
+    "verify_runtime_feet61.py": "ccc9b69bca7ffa902288ec2844e70acdc475074e9b2a76ba87151fe0ea1f5861"
+  }
+}

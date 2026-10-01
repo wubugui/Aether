@@ -1,0 +1,789 @@
+{
+  "stage": "61 actual native limited coast, ready for parent checkpoint",
+  "source57b_is_frozen_separate_previous_stage": true,
+  "files": {
+    "source-assets/coast61-integration/prepare61.py": {
+      "sha256": "c9285e02c334d5d8c73d563d9e0b9fcdaa59e81de9498938c4c7ad00a6174636",
+      "bytes": 6997
+    },
+    "source-assets/coast61-integration/preparation-manifest.json": {
+      "sha256": "791f21ce862543d2947529039cf2ef1ce94e609c68043508934cdb8913f490dc",
+      "bytes": 6360
+    },
+    "source-assets/coast61-integration/base60-gate.json": {
+      "sha256": "af0f973a7a95b3b52971209b13b4c3643fec966f17804eb88ab01c88c4b0c0c6",
+      "bytes": 3856
+    },
+    "source-assets/coast61-integration/README.md": {
+      "sha256": "6d9f24fdda58778f743568f5205a812eee1b40167328fc383f6bfe0fd1dd7484",
+      "bytes": 9242
+    },
+    "source-assets/coast61-integration/coast61_common.gd": {
+      "sha256": "1739f61c4e6e1f43c20377a4b2d1a37e7560403a7492d4cffbb41ca6d376ec4b",
+      "bytes": 15314
+    },
+    "source-assets/coast61-integration/static-multimesh-authority.json": {
+      "sha256": "32adf8e04be12342220736ed89ebedd6fa860cfe9bd4bd517212de98b73fdf23",
+      "bytes": 29977
+    },
+    "source-assets/coast61-integration/last-build.txt": {
+      "sha256": "b39173883011738e0349e4df9caf481bf8f69f9964117e8115a4e30f48a5fc83",
+      "bytes": 94
+    },
+    "source-assets/coast61-integration/surface-triangle-map.json": {
+      "sha256": "7a8b7fbc1fd175ebb4852b302f4de87188a0bd33d49b86b62ea43a96b5f8b304",
+      "bytes": 298915
+    },
+    "source-assets/coast61-integration/verify_coast61.gd": {
+      "sha256": "c949e5838952021156c5db352a791365cd3925e556013d076b802feb7c022110",
+      "bytes": 18695
+    },
+    "source-assets/coast61-integration/Game61Coast.tscn.template": {
+      "sha256": "dff06de665e1fa1f6ab74ff3cdf4e91442e1ac322839a37718e799f0d7fa44d8",
+      "bytes": 1453
+    },
+    "source-assets/coast61-integration/last-verify.txt": {
+      "sha256": "1157c32d568f65f01e157a49680eafeef69ff263648be577c0a285d5167732e5",
+      "bytes": 95
+    },
+    "source-assets/coast61-integration/last-parse.txt": {
+      "sha256": "b10651911f25ca805498f344fda6c848ebb59dd7db6ccffc12bc27fcb7c7321d",
+      "bytes": 94
+    },
+    "source-assets/coast61-integration/build_coast61.gd": {
+      "sha256": "ddb94a8937296a6be6686347c191224290f0ebcdc2ee94745de739dc4d8ff6d0",
+      "bytes": 7585
+    },
+    "source-assets/coast61-integration/run_coast61.py": {
+      "sha256": "dbf0c43ba64e66631a6550b11b90500bf056f230c06d5d7f528c387b4120552e",
+      "bytes": 7109
+    },
+    "source-assets/coast61-integration/seal_base60.py": {
+      "sha256": "fbecd37305ecb047005c14503ee8ee57ccf9aa7c9a9918266c70ad4294fdba9a",
+      "bytes": 1802
+    },
+    "source-assets/coast61-integration/verify_runtime_feet61.py": {
+      "sha256": "ccc9b69bca7ffa902288ec2844e70acdc475074e9b2a76ba87151fe0ea1f5861",
+      "bytes": 9494
+    },
+    "source-assets/coast61-integration/preparation-result.json": {
+      "sha256": "2f1b1dc72d4a0c4ff32c0c9be7e7156dda707ab50baac92867c5d0be497d9b95",
+      "bytes": 2672
+    },
+    "source-assets/coast61-integration/verification-v2/probe.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "source-assets/coast61-integration/verification-v2/probe.stdout.log": {
+      "sha256": "4c891eab3753626801c3f9c22fd8475808c3a1d2ace14687dfe46a40880aeb0a",
+      "bytes": 100
+    },
+    "source-assets/coast61-integration/verification-v2/probe_camera_sequence61.gd": {
+      "sha256": "4ca87b8d5138cfc9ed418bd91a7141a9e1a5d065f7bbcb2ceb5e6dd8409f6957",
+      "bytes": 4418
+    },
+    "source-assets/coast61-integration/verification-v2/README.md": {
+      "sha256": "c3dcd65672769a8e46dd9f23b2a71612563692f4150312b1642d85d677e2d94d",
+      "bytes": 4804
+    },
+    "source-assets/coast61-integration/verification-v2/probe-process.json": {
+      "sha256": "fe2e38ce3df36896cacbba3c3f31d27b4f4a71047666fc7e156469e5dc46b447",
+      "bytes": 511
+    },
+    "source-assets/coast61-integration/verification-v2/last-verify.txt": {
+      "sha256": "88d9b331f6c2f03087beab1514a9060b7d5d2156c182602f817b9842fcf4cfa3",
+      "bytes": 98
+    },
+    "source-assets/coast61-integration/verification-v2/last-parse.txt": {
+      "sha256": "992a336bb1d6d6475596ee7883f664ea39ec1af20838ce2c060f186a4f706bfe",
+      "bytes": 97
+    },
+    "source-assets/coast61-integration/verification-v2/run_coast61_v2.py": {
+      "sha256": "e35e199863524e07d55d955479afb80568d5a19db7287fabaca1c18c40a9d098",
+      "bytes": 7564
+    },
+    "source-assets/coast61-integration/verification-v2/diagnosis.json": {
+      "sha256": "4c5934a2b850c412b33a497cb57d731a29abd3a07b62bb8b873e6bbb2dcff143",
+      "bytes": 1373
+    },
+    "source-assets/coast61-integration/verification-v2/verify_coast61_v2.gd": {
+      "sha256": "fbb8410e2595f620e9498ce5f70725cd00e7cd8c05689bcf448d45ef37ce5310",
+      "bytes": 21475
+    },
+    "source-assets/coast61-integration/verification-v2/bare-node-sequence.json": {
+      "sha256": "a997dc02a00723bde3e27df6f5f1ff9944c4455451984113c1fc46906b50dd34",
+      "bytes": 24114
+    },
+    "source-assets/coast61-integration/verification-v2/initial-constructor-parse-failure/probe.stderr.log": {
+      "sha256": "7ed3257d5cf592171e844bc61450a873a41c58128535087e9a86b4562c77c519",
+      "bytes": 538
+    },
+    "source-assets/coast61-integration/verification-v2/initial-constructor-parse-failure/probe.stdout.log": {
+      "sha256": "2b6560eb96b2bf0ee7d4c27ac570f44412326f93a49eb4cbed384ec89f8ab334",
+      "bytes": 73
+    },
+    "source-assets/coast61-integration/verification-v2/initial-constructor-parse-failure/probe_camera_sequence61.gd": {
+      "sha256": "b49efe30a19b059bc2e1a1932b9600c35eae6d120c606115c136b316d981a389",
+      "bytes": 4375
+    },
+    "source-assets/coast61-integration/verification-v2/initial-constructor-parse-failure/probe-process.json": {
+      "sha256": "712929213828f8a834d2b828aca4cde921196a6014a26ccb8b7d4ea5c1d497cf",
+      "bytes": 511
+    },
+    "source-assets/coast61-integration/verification-v2/initial-unit-scale-control/probe.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "source-assets/coast61-integration/verification-v2/initial-unit-scale-control/probe.stdout.log": {
+      "sha256": "4c891eab3753626801c3f9c22fd8475808c3a1d2ace14687dfe46a40880aeb0a",
+      "bytes": 100
+    },
+    "source-assets/coast61-integration/verification-v2/initial-unit-scale-control/probe_camera_sequence61.gd": {
+      "sha256": "01036404751b38c36b14b5c404683d3e11d3785a69ce3998bbb340cd6cb6042d",
+      "bytes": 4281
+    },
+    "source-assets/coast61-integration/verification-v2/initial-unit-scale-control/probe-process.json": {
+      "sha256": "fcaa31041fd3db7aafbf82a18a3d7af2fbe8e32e7406dc227121cb7a856da111",
+      "bytes": 511
+    },
+    "source-assets/coast61-integration/verification-v2/initial-unit-scale-control/bare-node-sequence.json": {
+      "sha256": "8ef31aa4389e9ac1a3acb04712d7570c30a2c6499093122463750bb7f4af1262",
+      "bytes": 23048
+    },
+    "candidates/round40-exclusive-20260930/project/scenes/candidate61-coast/Game61Coast.tscn": {
+      "sha256": "dff06de665e1fa1f6ab74ff3cdf4e91442e1ac322839a37718e799f0d7fa44d8",
+      "bytes": 1453
+    },
+    "candidates/round40-exclusive-20260930/project/scenes/candidate61-coast/verified61.json": {
+      "sha256": "ca1507f01ae54787fad615b35dadcf4a84a9f7b431c7c96c1becf048ef577673",
+      "bytes": 4829
+    },
+    "candidates/round40-exclusive-20260930/project/scenes/candidate61-coast/build-report61.json": {
+      "sha256": "b29ec2d54f557ed9dab8cdd9e32062639ec9348529111f601a257760faeb4f49",
+      "bytes": 3680
+    },
+    "candidates/round40-exclusive-20260930/project/assets/coast61/bush_-5_-5.res": {
+      "sha256": "28f4b15c34cead149d7c594ec78dd8d83c4a837ff6405ee0d79c36e6d34f311e",
+      "bytes": 756
+    },
+    "candidates/round40-exclusive-20260930/project/assets/coast61/Ground_-5_-5_coast61.mesh": {
+      "sha256": "9a6f4cf1297c93247a0eae13edbc8a2754864c1759240d4401172b7a58355613",
+      "bytes": 203421
+    },
+    "candidates/round40-exclusive-20260930/project/assets/coast61/poplar_-5_-5_CoastalPines36b.res": {
+      "sha256": "6dd75045f47223d6344b2dfa0946b2424a60a9d7a2899a6ddc7e29b300682514",
+      "bytes": 8483
+    },
+    "candidates/round40-exclusive-20260930/project/assets/coast61/rock_-5_-5.res": {
+      "sha256": "d968e6bab2e3444e0f8254f7afcdf750e1b08913ac9089b39523cc705e6c320e",
+      "bytes": 948
+    },
+    "candidates/round40-exclusive-20260930/project/assets/coast61/oak_-5_-5_CoastalPines36b.res": {
+      "sha256": "0a780a53e0a90777105703b23a899dfe1cc62d9b2774272087d9869958d64253",
+      "bytes": 9971
+    },
+    "candidates/round40-exclusive-20260930/project/assets/coast61/Ground_-5_-5_coast61_collision.res": {
+      "sha256": "9b287d4154ef03b2b0ccfa0ec2dac795cdd73344afe774bcb6f4e03cb23589d5",
+      "bytes": 103683
+    },
+    "cloud-evidence/coast61-build-20261001T123605Z-gq87o4e1/preparation-manifest.json": {
+      "sha256": "791f21ce862543d2947529039cf2ef1ce94e609c68043508934cdb8913f490dc",
+      "bytes": 6360
+    },
+    "cloud-evidence/coast61-build-20261001T123605Z-gq87o4e1/build.stdout.log": {
+      "sha256": "d56eb112c0d00eab79ac50d4f645d1ed4e7f26eab78bc7cfa5250b6fcf6e58c6",
+      "bytes": 216
+    },
+    "cloud-evidence/coast61-build-20261001T123605Z-gq87o4e1/base60-gate.json": {
+      "sha256": "af0f973a7a95b3b52971209b13b4c3643fec966f17804eb88ab01c88c4b0c0c6",
+      "bytes": 3856
+    },
+    "cloud-evidence/coast61-build-20261001T123605Z-gq87o4e1/coast61_common.gd": {
+      "sha256": "1739f61c4e6e1f43c20377a4b2d1a37e7560403a7492d4cffbb41ca6d376ec4b",
+      "bytes": 15314
+    },
+    "cloud-evidence/coast61-build-20261001T123605Z-gq87o4e1/verify_coast61.gd": {
+      "sha256": "c949e5838952021156c5db352a791365cd3925e556013d076b802feb7c022110",
+      "bytes": 18695
+    },
+    "cloud-evidence/coast61-build-20261001T123605Z-gq87o4e1/Game61Coast.tscn.template": {
+      "sha256": "dff06de665e1fa1f6ab74ff3cdf4e91442e1ac322839a37718e799f0d7fa44d8",
+      "bytes": 1453
+    },
+    "cloud-evidence/coast61-build-20261001T123605Z-gq87o4e1/build_coast61.gd": {
+      "sha256": "ddb94a8937296a6be6686347c191224290f0ebcdc2ee94745de739dc4d8ff6d0",
+      "bytes": 7585
+    },
+    "cloud-evidence/coast61-build-20261001T123605Z-gq87o4e1/wrapper-report.json": {
+      "sha256": "b1c4c4417e9d0c6658b726ce136d73c24cb5b20c073e5b3e624748c4e9a8b1af",
+      "bytes": 1139
+    },
+    "cloud-evidence/coast61-build-20261001T123605Z-gq87o4e1/run_coast61.py": {
+      "sha256": "dbf0c43ba64e66631a6550b11b90500bf056f230c06d5d7f528c387b4120552e",
+      "bytes": 7109
+    },
+    "cloud-evidence/coast61-build-20261001T123605Z-gq87o4e1/input-sha256.json": {
+      "sha256": "627835bdf0711edc46462b71b040bd7dee1a3ef245f4de7d2f996fcb041a6a45",
+      "bytes": 8182
+    },
+    "cloud-evidence/coast61-build-20261001T123605Z-gq87o4e1/build-report61.json": {
+      "sha256": "60aa206bc424592bfde8f2dd62f8d462d6413610d129deb28af43de5ce029c3d",
+      "bytes": 3658
+    },
+    "cloud-evidence/coast61-build-20261001T123605Z-gq87o4e1/exit-code.txt": {
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "bytes": 1
+    },
+    "cloud-evidence/coast61-build-20261001T123605Z-gq87o4e1/verify_runtime_feet61.py": {
+      "sha256": "ccc9b69bca7ffa902288ec2844e70acdc475074e9b2a76ba87151fe0ea1f5861",
+      "bytes": 9494
+    },
+    "cloud-evidence/coast61-build-20261001T123605Z-gq87o4e1/build.stderr.log": {
+      "sha256": "12bab35d551a3e20a027c0a1164acc445f84527e1e857d5d898cfa9e45f3a5b0",
+      "bytes": 171
+    },
+    "cloud-evidence/coast61-independent-review/review_actual.py": {
+      "sha256": "538e18a588482b35669ae9c0a6a8b6c87ab5d9845bf1071784750daf825cf476",
+      "bytes": 8621
+    },
+    "cloud-evidence/coast61-independent-review/review.json": {
+      "sha256": "202a953500303b176850d7e1d2f08b342c38dfee28ba349bf8df86626851d37d",
+      "bytes": 11421
+    },
+    "cloud-evidence/coast61-parse-20261001T121111Z-kmog4lih/preparation-manifest.json": {
+      "sha256": "791f21ce862543d2947529039cf2ef1ce94e609c68043508934cdb8913f490dc",
+      "bytes": 6360
+    },
+    "cloud-evidence/coast61-parse-20261001T121111Z-kmog4lih/build.stdout.log": {
+      "sha256": "2b6560eb96b2bf0ee7d4c27ac570f44412326f93a49eb4cbed384ec89f8ab334",
+      "bytes": 73
+    },
+    "cloud-evidence/coast61-parse-20261001T121111Z-kmog4lih/base60-gate.json": {
+      "sha256": "af0f973a7a95b3b52971209b13b4c3643fec966f17804eb88ab01c88c4b0c0c6",
+      "bytes": 3856
+    },
+    "cloud-evidence/coast61-parse-20261001T121111Z-kmog4lih/coast61_common.gd": {
+      "sha256": "b6dc68cbd61afbf09734bb4032b79aa6dea17e7a6c374e394f4dfe938d381b4b",
+      "bytes": 15303
+    },
+    "cloud-evidence/coast61-parse-20261001T121111Z-kmog4lih/verify_coast61.gd": {
+      "sha256": "b9477c522067ce06d10ffdcf1101277ade2c053709ce745618ded6e4b0d04b82",
+      "bytes": 18695
+    },
+    "cloud-evidence/coast61-parse-20261001T121111Z-kmog4lih/Game61Coast.tscn.template": {
+      "sha256": "dff06de665e1fa1f6ab74ff3cdf4e91442e1ac322839a37718e799f0d7fa44d8",
+      "bytes": 1453
+    },
+    "cloud-evidence/coast61-parse-20261001T121111Z-kmog4lih/build_coast61.gd": {
+      "sha256": "7775005b1b600f4b71af0627749e4146eece3f6abcdb47fd7f59f14fc43b8512",
+      "bytes": 7585
+    },
+    "cloud-evidence/coast61-parse-20261001T121111Z-kmog4lih/wrapper-report.json": {
+      "sha256": "67ce357a580cbc872d3b23ce4c5e13079177257150b709bfcb23a1f4c2c0a137",
+      "bytes": 1355
+    },
+    "cloud-evidence/coast61-parse-20261001T121111Z-kmog4lih/run_coast61.py": {
+      "sha256": "dbf0c43ba64e66631a6550b11b90500bf056f230c06d5d7f528c387b4120552e",
+      "bytes": 7109
+    },
+    "cloud-evidence/coast61-parse-20261001T121111Z-kmog4lih/input-sha256.json": {
+      "sha256": "b39495054c29f07863d62421f2666ba54c1ee5ba3f884dbf86c6f571866fe214",
+      "bytes": 8182
+    },
+    "cloud-evidence/coast61-parse-20261001T121111Z-kmog4lih/exit-code.txt": {
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "bytes": 1
+    },
+    "cloud-evidence/coast61-parse-20261001T121111Z-kmog4lih/verify_runtime_feet61.py": {
+      "sha256": "12e328b3df8edd3b54b6a974953a305b349927da50be86e911bdaad6bc8dfd2b",
+      "bytes": 8881
+    },
+    "cloud-evidence/coast61-parse-20261001T121111Z-kmog4lih/build.stderr.log": {
+      "sha256": "d4b1de2f8a4e1a3f41bb83573e66fa6ff7b1c583cde9460265ef125c222a422e",
+      "bytes": 470
+    },
+    "cloud-evidence/coast61-parse-20261001T121146Z-xicl2bf8/preparation-manifest.json": {
+      "sha256": "791f21ce862543d2947529039cf2ef1ce94e609c68043508934cdb8913f490dc",
+      "bytes": 6360
+    },
+    "cloud-evidence/coast61-parse-20261001T121146Z-xicl2bf8/verify.stdout.log": {
+      "sha256": "2b6560eb96b2bf0ee7d4c27ac570f44412326f93a49eb4cbed384ec89f8ab334",
+      "bytes": 73
+    },
+    "cloud-evidence/coast61-parse-20261001T121146Z-xicl2bf8/build.stdout.log": {
+      "sha256": "2b6560eb96b2bf0ee7d4c27ac570f44412326f93a49eb4cbed384ec89f8ab334",
+      "bytes": 73
+    },
+    "cloud-evidence/coast61-parse-20261001T121146Z-xicl2bf8/base60-gate.json": {
+      "sha256": "af0f973a7a95b3b52971209b13b4c3643fec966f17804eb88ab01c88c4b0c0c6",
+      "bytes": 3856
+    },
+    "cloud-evidence/coast61-parse-20261001T121146Z-xicl2bf8/coast61_common.gd": {
+      "sha256": "1739f61c4e6e1f43c20377a4b2d1a37e7560403a7492d4cffbb41ca6d376ec4b",
+      "bytes": 15314
+    },
+    "cloud-evidence/coast61-parse-20261001T121146Z-xicl2bf8/verify_coast61.gd": {
+      "sha256": "c949e5838952021156c5db352a791365cd3925e556013d076b802feb7c022110",
+      "bytes": 18695
+    },
+    "cloud-evidence/coast61-parse-20261001T121146Z-xicl2bf8/feet.stdout.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "cloud-evidence/coast61-parse-20261001T121146Z-xicl2bf8/verify.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "cloud-evidence/coast61-parse-20261001T121146Z-xicl2bf8/Game61Coast.tscn.template": {
+      "sha256": "dff06de665e1fa1f6ab74ff3cdf4e91442e1ac322839a37718e799f0d7fa44d8",
+      "bytes": 1453
+    },
+    "cloud-evidence/coast61-parse-20261001T121146Z-xicl2bf8/feet.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "cloud-evidence/coast61-parse-20261001T121146Z-xicl2bf8/build_coast61.gd": {
+      "sha256": "ddb94a8937296a6be6686347c191224290f0ebcdc2ee94745de739dc4d8ff6d0",
+      "bytes": 7585
+    },
+    "cloud-evidence/coast61-parse-20261001T121146Z-xicl2bf8/wrapper-report.json": {
+      "sha256": "12491339c2a960d7d8109002864c1fd07d1cbae2e7934de97d9cdab4bb15a5d7",
+      "bytes": 2724
+    },
+    "cloud-evidence/coast61-parse-20261001T121146Z-xicl2bf8/run_coast61.py": {
+      "sha256": "dbf0c43ba64e66631a6550b11b90500bf056f230c06d5d7f528c387b4120552e",
+      "bytes": 7109
+    },
+    "cloud-evidence/coast61-parse-20261001T121146Z-xicl2bf8/input-sha256.json": {
+      "sha256": "a134fefbc9fbabc7250aa44f2b78656506afd13f29c95262ea49a3d0588b132e",
+      "bytes": 8182
+    },
+    "cloud-evidence/coast61-parse-20261001T121146Z-xicl2bf8/exit-code.txt": {
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "bytes": 1
+    },
+    "cloud-evidence/coast61-parse-20261001T121146Z-xicl2bf8/verify_runtime_feet61.py": {
+      "sha256": "12e328b3df8edd3b54b6a974953a305b349927da50be86e911bdaad6bc8dfd2b",
+      "bytes": 8881
+    },
+    "cloud-evidence/coast61-parse-20261001T121146Z-xicl2bf8/build.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "cloud-evidence/coast61-parse-20261001T121622Z-utfql3nf/preparation-manifest.json": {
+      "sha256": "791f21ce862543d2947529039cf2ef1ce94e609c68043508934cdb8913f490dc",
+      "bytes": 6360
+    },
+    "cloud-evidence/coast61-parse-20261001T121622Z-utfql3nf/verify.stdout.log": {
+      "sha256": "2b6560eb96b2bf0ee7d4c27ac570f44412326f93a49eb4cbed384ec89f8ab334",
+      "bytes": 73
+    },
+    "cloud-evidence/coast61-parse-20261001T121622Z-utfql3nf/build.stdout.log": {
+      "sha256": "2b6560eb96b2bf0ee7d4c27ac570f44412326f93a49eb4cbed384ec89f8ab334",
+      "bytes": 73
+    },
+    "cloud-evidence/coast61-parse-20261001T121622Z-utfql3nf/base60-gate.json": {
+      "sha256": "af0f973a7a95b3b52971209b13b4c3643fec966f17804eb88ab01c88c4b0c0c6",
+      "bytes": 3856
+    },
+    "cloud-evidence/coast61-parse-20261001T121622Z-utfql3nf/coast61_common.gd": {
+      "sha256": "1739f61c4e6e1f43c20377a4b2d1a37e7560403a7492d4cffbb41ca6d376ec4b",
+      "bytes": 15314
+    },
+    "cloud-evidence/coast61-parse-20261001T121622Z-utfql3nf/verify_coast61.gd": {
+      "sha256": "c949e5838952021156c5db352a791365cd3925e556013d076b802feb7c022110",
+      "bytes": 18695
+    },
+    "cloud-evidence/coast61-parse-20261001T121622Z-utfql3nf/feet.stdout.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "cloud-evidence/coast61-parse-20261001T121622Z-utfql3nf/verify.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "cloud-evidence/coast61-parse-20261001T121622Z-utfql3nf/Game61Coast.tscn.template": {
+      "sha256": "dff06de665e1fa1f6ab74ff3cdf4e91442e1ac322839a37718e799f0d7fa44d8",
+      "bytes": 1453
+    },
+    "cloud-evidence/coast61-parse-20261001T121622Z-utfql3nf/feet.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "cloud-evidence/coast61-parse-20261001T121622Z-utfql3nf/build_coast61.gd": {
+      "sha256": "ddb94a8937296a6be6686347c191224290f0ebcdc2ee94745de739dc4d8ff6d0",
+      "bytes": 7585
+    },
+    "cloud-evidence/coast61-parse-20261001T121622Z-utfql3nf/wrapper-report.json": {
+      "sha256": "7f62d4226127beae12b318d3e60ca2acb8f176cbf29aa2fcc3bb16589a66e721",
+      "bytes": 2723
+    },
+    "cloud-evidence/coast61-parse-20261001T121622Z-utfql3nf/run_coast61.py": {
+      "sha256": "dbf0c43ba64e66631a6550b11b90500bf056f230c06d5d7f528c387b4120552e",
+      "bytes": 7109
+    },
+    "cloud-evidence/coast61-parse-20261001T121622Z-utfql3nf/input-sha256.json": {
+      "sha256": "627835bdf0711edc46462b71b040bd7dee1a3ef245f4de7d2f996fcb041a6a45",
+      "bytes": 8182
+    },
+    "cloud-evidence/coast61-parse-20261001T121622Z-utfql3nf/exit-code.txt": {
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "bytes": 1
+    },
+    "cloud-evidence/coast61-parse-20261001T121622Z-utfql3nf/verify_runtime_feet61.py": {
+      "sha256": "ccc9b69bca7ffa902288ec2844e70acdc475074e9b2a76ba87151fe0ea1f5861",
+      "bytes": 9494
+    },
+    "cloud-evidence/coast61-parse-20261001T121622Z-utfql3nf/build.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "cloud-evidence/coast61-v2-parse-20261001T124549Z-wc_66uzm/preparation-manifest.json": {
+      "sha256": "791f21ce862543d2947529039cf2ef1ce94e609c68043508934cdb8913f490dc",
+      "bytes": 6360
+    },
+    "cloud-evidence/coast61-v2-parse-20261001T124549Z-wc_66uzm/verify.stdout.log": {
+      "sha256": "2b6560eb96b2bf0ee7d4c27ac570f44412326f93a49eb4cbed384ec89f8ab334",
+      "bytes": 73
+    },
+    "cloud-evidence/coast61-v2-parse-20261001T124549Z-wc_66uzm/build.stdout.log": {
+      "sha256": "2b6560eb96b2bf0ee7d4c27ac570f44412326f93a49eb4cbed384ec89f8ab334",
+      "bytes": 73
+    },
+    "cloud-evidence/coast61-v2-parse-20261001T124549Z-wc_66uzm/base60-gate.json": {
+      "sha256": "af0f973a7a95b3b52971209b13b4c3643fec966f17804eb88ab01c88c4b0c0c6",
+      "bytes": 3856
+    },
+    "cloud-evidence/coast61-v2-parse-20261001T124549Z-wc_66uzm/coast61_common.gd": {
+      "sha256": "1739f61c4e6e1f43c20377a4b2d1a37e7560403a7492d4cffbb41ca6d376ec4b",
+      "bytes": 15314
+    },
+    "cloud-evidence/coast61-v2-parse-20261001T124549Z-wc_66uzm/feet.stdout.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "cloud-evidence/coast61-v2-parse-20261001T124549Z-wc_66uzm/verify.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "cloud-evidence/coast61-v2-parse-20261001T124549Z-wc_66uzm/Game61Coast.tscn.template": {
+      "sha256": "dff06de665e1fa1f6ab74ff3cdf4e91442e1ac322839a37718e799f0d7fa44d8",
+      "bytes": 1453
+    },
+    "cloud-evidence/coast61-v2-parse-20261001T124549Z-wc_66uzm/feet.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "cloud-evidence/coast61-v2-parse-20261001T124549Z-wc_66uzm/build_coast61.gd": {
+      "sha256": "ddb94a8937296a6be6686347c191224290f0ebcdc2ee94745de739dc4d8ff6d0",
+      "bytes": 7585
+    },
+    "cloud-evidence/coast61-v2-parse-20261001T124549Z-wc_66uzm/run_coast61_v2.py": {
+      "sha256": "1a7b5aeffb6dac6fe22be5e2df6073395917024f290bd5ac8b56deba97930bed",
+      "bytes": 7237
+    },
+    "cloud-evidence/coast61-v2-parse-20261001T124549Z-wc_66uzm/wrapper-report.json": {
+      "sha256": "0de5c96671f7ac12e201708c072f53427cb093c2a6235d787d6e6348a328ca05",
+      "bytes": 2742
+    },
+    "cloud-evidence/coast61-v2-parse-20261001T124549Z-wc_66uzm/input-sha256.json": {
+      "sha256": "b6a114da46ed2ceceefdbaf71fb8e62b1cfed50bd703a9a24e7855f02c898ae3",
+      "bytes": 8220
+    },
+    "cloud-evidence/coast61-v2-parse-20261001T124549Z-wc_66uzm/exit-code.txt": {
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "bytes": 1
+    },
+    "cloud-evidence/coast61-v2-parse-20261001T124549Z-wc_66uzm/verify_coast61_v2.gd": {
+      "sha256": "fbb8410e2595f620e9498ce5f70725cd00e7cd8c05689bcf448d45ef37ce5310",
+      "bytes": 21475
+    },
+    "cloud-evidence/coast61-v2-parse-20261001T124549Z-wc_66uzm/verify_runtime_feet61.py": {
+      "sha256": "ccc9b69bca7ffa902288ec2844e70acdc475074e9b2a76ba87151fe0ea1f5861",
+      "bytes": 9494
+    },
+    "cloud-evidence/coast61-v2-parse-20261001T124549Z-wc_66uzm/build.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "cloud-evidence/coast61-v2-parse-20261001T124706Z-nn7rmuz0/preparation-manifest.json": {
+      "sha256": "791f21ce862543d2947529039cf2ef1ce94e609c68043508934cdb8913f490dc",
+      "bytes": 6360
+    },
+    "cloud-evidence/coast61-v2-parse-20261001T124706Z-nn7rmuz0/verify.stdout.log": {
+      "sha256": "2b6560eb96b2bf0ee7d4c27ac570f44412326f93a49eb4cbed384ec89f8ab334",
+      "bytes": 73
+    },
+    "cloud-evidence/coast61-v2-parse-20261001T124706Z-nn7rmuz0/build.stdout.log": {
+      "sha256": "2b6560eb96b2bf0ee7d4c27ac570f44412326f93a49eb4cbed384ec89f8ab334",
+      "bytes": 73
+    },
+    "cloud-evidence/coast61-v2-parse-20261001T124706Z-nn7rmuz0/base60-gate.json": {
+      "sha256": "af0f973a7a95b3b52971209b13b4c3643fec966f17804eb88ab01c88c4b0c0c6",
+      "bytes": 3856
+    },
+    "cloud-evidence/coast61-v2-parse-20261001T124706Z-nn7rmuz0/coast61_common.gd": {
+      "sha256": "1739f61c4e6e1f43c20377a4b2d1a37e7560403a7492d4cffbb41ca6d376ec4b",
+      "bytes": 15314
+    },
+    "cloud-evidence/coast61-v2-parse-20261001T124706Z-nn7rmuz0/feet.stdout.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "cloud-evidence/coast61-v2-parse-20261001T124706Z-nn7rmuz0/verify.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "cloud-evidence/coast61-v2-parse-20261001T124706Z-nn7rmuz0/Game61Coast.tscn.template": {
+      "sha256": "dff06de665e1fa1f6ab74ff3cdf4e91442e1ac322839a37718e799f0d7fa44d8",
+      "bytes": 1453
+    },
+    "cloud-evidence/coast61-v2-parse-20261001T124706Z-nn7rmuz0/feet.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "cloud-evidence/coast61-v2-parse-20261001T124706Z-nn7rmuz0/build_coast61.gd": {
+      "sha256": "ddb94a8937296a6be6686347c191224290f0ebcdc2ee94745de739dc4d8ff6d0",
+      "bytes": 7585
+    },
+    "cloud-evidence/coast61-v2-parse-20261001T124706Z-nn7rmuz0/run_coast61_v2.py": {
+      "sha256": "e35e199863524e07d55d955479afb80568d5a19db7287fabaca1c18c40a9d098",
+      "bytes": 7564
+    },
+    "cloud-evidence/coast61-v2-parse-20261001T124706Z-nn7rmuz0/wrapper-report.json": {
+      "sha256": "ad83689a9cbe9aaf4099b2f9b1068ff4dda72b8470a0afd25943579bfa37009f",
+      "bytes": 2742
+    },
+    "cloud-evidence/coast61-v2-parse-20261001T124706Z-nn7rmuz0/input-sha256.json": {
+      "sha256": "080dda4f2da9ef630da4bd3862380ca11a61c71f57f7dbd50d10453852692488",
+      "bytes": 9815
+    },
+    "cloud-evidence/coast61-v2-parse-20261001T124706Z-nn7rmuz0/exit-code.txt": {
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "bytes": 1
+    },
+    "cloud-evidence/coast61-v2-parse-20261001T124706Z-nn7rmuz0/verify_coast61_v2.gd": {
+      "sha256": "fbb8410e2595f620e9498ce5f70725cd00e7cd8c05689bcf448d45ef37ce5310",
+      "bytes": 21475
+    },
+    "cloud-evidence/coast61-v2-parse-20261001T124706Z-nn7rmuz0/verify_runtime_feet61.py": {
+      "sha256": "ccc9b69bca7ffa902288ec2844e70acdc475074e9b2a76ba87151fe0ea1f5861",
+      "bytes": 9494
+    },
+    "cloud-evidence/coast61-v2-parse-20261001T124706Z-nn7rmuz0/build.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "cloud-evidence/coast61-v2-verify-20261001T124815Z-czvc76_r/1347_front.png": {
+      "sha256": "0687a43494b9a6c145a82ae07e51f66dc3aabf572ec00493ff7d487b70891086",
+      "bytes": 561159
+    },
+    "cloud-evidence/coast61-v2-verify-20261001T124815Z-czvc76_r/preparation-manifest.json": {
+      "sha256": "791f21ce862543d2947529039cf2ef1ce94e609c68043508934cdb8913f490dc",
+      "bytes": 6360
+    },
+    "cloud-evidence/coast61-v2-verify-20261001T124815Z-czvc76_r/verify.stdout.log": {
+      "sha256": "81b4c8d33df16198bcacc2783df375cc948512492a80c64ef5c1130ceb0283d6",
+      "bytes": 328
+    },
+    "cloud-evidence/coast61-v2-verify-20261001T124815Z-czvc76_r/verify-report61.json": {
+      "sha256": "0d955f89ced83c509baba7ee95c573212206a1ecd4ed2c8bc5755e62a5d872a0",
+      "bytes": 80626
+    },
+    "cloud-evidence/coast61-v2-verify-20261001T124815Z-czvc76_r/base60-gate.json": {
+      "sha256": "af0f973a7a95b3b52971209b13b4c3643fec966f17804eb88ab01c88c4b0c0c6",
+      "bytes": 3856
+    },
+    "cloud-evidence/coast61-v2-verify-20261001T124815Z-czvc76_r/coast61_common.gd": {
+      "sha256": "1739f61c4e6e1f43c20377a4b2d1a37e7560403a7492d4cffbb41ca6d376ec4b",
+      "bytes": 15314
+    },
+    "cloud-evidence/coast61-v2-verify-20261001T124815Z-czvc76_r/1131_back.png": {
+      "sha256": "be9124e570ec613643490d2f3ae47d9e497d296f15af30bce3dfdf3db9f322bf",
+      "bytes": 731116
+    },
+    "cloud-evidence/coast61-v2-verify-20261001T124815Z-czvc76_r/feet.stdout.log": {
+      "sha256": "12e1c6cdab241e10cb72ff8ec95075981e10efc5b893c7fc796feaa7323f5a1e",
+      "bytes": 34
+    },
+    "cloud-evidence/coast61-v2-verify-20261001T124815Z-czvc76_r/verify.stderr.log": {
+      "sha256": "12bab35d551a3e20a027c0a1164acc445f84527e1e857d5d898cfa9e45f3a5b0",
+      "bytes": 171
+    },
+    "cloud-evidence/coast61-v2-verify-20261001T124815Z-czvc76_r/Game61Coast.tscn.template": {
+      "sha256": "dff06de665e1fa1f6ab74ff3cdf4e91442e1ac322839a37718e799f0d7fa44d8",
+      "bytes": 1453
+    },
+    "cloud-evidence/coast61-v2-verify-20261001T124815Z-czvc76_r/runtime-native61.json": {
+      "sha256": "170833215bcc88a47c41061532271fbf2c5bc205c06563fd0d990a3b06607121",
+      "bytes": 917746
+    },
+    "cloud-evidence/coast61-v2-verify-20261001T124815Z-czvc76_r/feet.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "cloud-evidence/coast61-v2-verify-20261001T124815Z-czvc76_r/full-foot-report61.json": {
+      "sha256": "6477a31a32d74dcb612046569b8d54b18d12f71eb52dee604aaf52e97026413c",
+      "bytes": 359185
+    },
+    "cloud-evidence/coast61-v2-verify-20261001T124815Z-czvc76_r/1131_front.png": {
+      "sha256": "269d8d99825dcce469beb8ae8ac44917efcdb922cf4a55eb51d91905b202ed07",
+      "bytes": 563553
+    },
+    "cloud-evidence/coast61-v2-verify-20261001T124815Z-czvc76_r/1131_side.png": {
+      "sha256": "81079323f1a7c2425b094140904e37ef2428afdcb581ddacbd3cc84ee1691b13",
+      "bytes": 769672
+    },
+    "cloud-evidence/coast61-v2-verify-20261001T124815Z-czvc76_r/inheritance_1216.png": {
+      "sha256": "8bb99632b6b95cc6c9270e983f756112b0705d10f18e24888e148ec9f394b375",
+      "bytes": 421317
+    },
+    "cloud-evidence/coast61-v2-verify-20261001T124815Z-czvc76_r/build_coast61.gd": {
+      "sha256": "ddb94a8937296a6be6686347c191224290f0ebcdc2ee94745de739dc4d8ff6d0",
+      "bytes": 7585
+    },
+    "cloud-evidence/coast61-v2-verify-20261001T124815Z-czvc76_r/local_bay_low.png": {
+      "sha256": "ac9ea4db1db765f0e15b129bef1ba6febe596c27d47ef7e41cbf507805e60b7c",
+      "bytes": 419199
+    },
+    "cloud-evidence/coast61-v2-verify-20261001T124815Z-czvc76_r/1347_back.png": {
+      "sha256": "fed432c2841c92cd15a6950a91729bfb0fb8a84729f69c1bc1c1f62ffde8a3d3",
+      "bytes": 686942
+    },
+    "cloud-evidence/coast61-v2-verify-20261001T124815Z-czvc76_r/run_coast61_v2.py": {
+      "sha256": "e35e199863524e07d55d955479afb80568d5a19db7287fabaca1c18c40a9d098",
+      "bytes": 7564
+    },
+    "cloud-evidence/coast61-v2-verify-20261001T124815Z-czvc76_r/wrapper-report.json": {
+      "sha256": "64487bd1c862b399883a549756c47ee3ae3614214419b84064580f75a20f2f69",
+      "bytes": 1987
+    },
+    "cloud-evidence/coast61-v2-verify-20261001T124815Z-czvc76_r/input-sha256.json": {
+      "sha256": "080dda4f2da9ef630da4bd3862380ca11a61c71f57f7dbd50d10453852692488",
+      "bytes": 9815
+    },
+    "cloud-evidence/coast61-v2-verify-20261001T124815Z-czvc76_r/exit-code.txt": {
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "bytes": 1
+    },
+    "cloud-evidence/coast61-v2-verify-20261001T124815Z-czvc76_r/verify_coast61_v2.gd": {
+      "sha256": "fbb8410e2595f620e9498ce5f70725cd00e7cd8c05689bcf448d45ef37ce5310",
+      "bytes": 21475
+    },
+    "cloud-evidence/coast61-v2-verify-20261001T124815Z-czvc76_r/verify_runtime_feet61.py": {
+      "sha256": "ccc9b69bca7ffa902288ec2844e70acdc475074e9b2a76ba87151fe0ea1f5861",
+      "bytes": 9494
+    },
+    "cloud-evidence/coast61-v2-verify-20261001T124815Z-czvc76_r/1347_side.png": {
+      "sha256": "e5bbf8b435dd22b060b20da024e60793e202a9b44ccfa9ba09e3dc012cec6a18",
+      "bytes": 690004
+    },
+    "cloud-evidence/coast61-v2-verify-20261001T124815Z-czvc76_r/inheritance_1128.png": {
+      "sha256": "bf15100cf63ed05ee322b0caaa30b6015b26d7f1180b5931c3f522fff8daf834",
+      "bytes": 466078
+    },
+    "cloud-evidence/coast61-v2-verify-20261001T124815Z-czvc76_r/VISUAL_REVIEW.md": {
+      "sha256": "cec35102e8424c277d2a8515ab72906ba6e5291a40ee4783b96d51b2e10fa7a2",
+      "bytes": 1516
+    },
+    "cloud-evidence/coast61-v2-verify-20261001T124815Z-czvc76_r/adjacent_north_east.png": {
+      "sha256": "dc89c02c8725233eb565a2d478ef3c1ddb4eae534f5f3e7d434da6794d8767c9",
+      "bytes": 506675
+    },
+    "cloud-evidence/coast61-verify-20261001T123638Z-b66cdbe8/1347_front.png": {
+      "sha256": "527f923b231fa4b688f7ee5969b3a7e1128f7cd49b01fc7850c3432509bd5784",
+      "bytes": 559357
+    },
+    "cloud-evidence/coast61-verify-20261001T123638Z-b66cdbe8/preparation-manifest.json": {
+      "sha256": "791f21ce862543d2947529039cf2ef1ce94e609c68043508934cdb8913f490dc",
+      "bytes": 6360
+    },
+    "cloud-evidence/coast61-verify-20261001T123638Z-b66cdbe8/verify.stdout.log": {
+      "sha256": "cb12e3e34aeaeccb42f6a2023be5dccc39474e727c686f9280b403abe2afd162",
+      "bytes": 329
+    },
+    "cloud-evidence/coast61-verify-20261001T123638Z-b66cdbe8/verify-report61.json": {
+      "sha256": "337b5c9a4fa4df9c52a9f79b6016a66d617ba601eb37c946051afdb0df67134b",
+      "bytes": 35147
+    },
+    "cloud-evidence/coast61-verify-20261001T123638Z-b66cdbe8/base60-gate.json": {
+      "sha256": "af0f973a7a95b3b52971209b13b4c3643fec966f17804eb88ab01c88c4b0c0c6",
+      "bytes": 3856
+    },
+    "cloud-evidence/coast61-verify-20261001T123638Z-b66cdbe8/coast61_common.gd": {
+      "sha256": "1739f61c4e6e1f43c20377a4b2d1a37e7560403a7492d4cffbb41ca6d376ec4b",
+      "bytes": 15314
+    },
+    "cloud-evidence/coast61-verify-20261001T123638Z-b66cdbe8/verify_coast61.gd": {
+      "sha256": "c949e5838952021156c5db352a791365cd3925e556013d076b802feb7c022110",
+      "bytes": 18695
+    },
+    "cloud-evidence/coast61-verify-20261001T123638Z-b66cdbe8/1131_back.png": {
+      "sha256": "2d26a09ddccb8d94914d3104e0d427eea608c6cb1cf08635cc9e8979bce94607",
+      "bytes": 731407
+    },
+    "cloud-evidence/coast61-verify-20261001T123638Z-b66cdbe8/verify.stderr.log": {
+      "sha256": "a511a5a2b8c2671091f9e43aa1989d808b39c4cca620ad6ebe9d58dec007a406",
+      "bytes": 685
+    },
+    "cloud-evidence/coast61-verify-20261001T123638Z-b66cdbe8/Game61Coast.tscn.template": {
+      "sha256": "dff06de665e1fa1f6ab74ff3cdf4e91442e1ac322839a37718e799f0d7fa44d8",
+      "bytes": 1453
+    },
+    "cloud-evidence/coast61-verify-20261001T123638Z-b66cdbe8/1131_front.png": {
+      "sha256": "2fa9ac8d858873f5159e11e18469f0b37e6160f6d262349d4cdd35b677763aa1",
+      "bytes": 563630
+    },
+    "cloud-evidence/coast61-verify-20261001T123638Z-b66cdbe8/1131_side.png": {
+      "sha256": "27d09baa07cfe3410a6331bf0a61d55aa54be60b75763dffa9bfb4b77cb71321",
+      "bytes": 769778
+    },
+    "cloud-evidence/coast61-verify-20261001T123638Z-b66cdbe8/build_coast61.gd": {
+      "sha256": "ddb94a8937296a6be6686347c191224290f0ebcdc2ee94745de739dc4d8ff6d0",
+      "bytes": 7585
+    },
+    "cloud-evidence/coast61-verify-20261001T123638Z-b66cdbe8/local_bay_low.png": {
+      "sha256": "5231e85ee6c6e9732f7f66c1dd0a0238edce9fcc12164f18928ac5de6e1b5253",
+      "bytes": 419333
+    },
+    "cloud-evidence/coast61-verify-20261001T123638Z-b66cdbe8/1347_back.png": {
+      "sha256": "10b0a3baac74632330732dc9f922ccf7caf7672f8dd23a4300bcb2fbfc669b61",
+      "bytes": 686838
+    },
+    "cloud-evidence/coast61-verify-20261001T123638Z-b66cdbe8/wrapper-report.json": {
+      "sha256": "77cb590f3e9881847e259cee2ca46e333000c1f45127dabc63dd0d47712cd6ea",
+      "bytes": 1178
+    },
+    "cloud-evidence/coast61-verify-20261001T123638Z-b66cdbe8/run_coast61.py": {
+      "sha256": "dbf0c43ba64e66631a6550b11b90500bf056f230c06d5d7f528c387b4120552e",
+      "bytes": 7109
+    },
+    "cloud-evidence/coast61-verify-20261001T123638Z-b66cdbe8/input-sha256.json": {
+      "sha256": "627835bdf0711edc46462b71b040bd7dee1a3ef245f4de7d2f996fcb041a6a45",
+      "bytes": 8182
+    },
+    "cloud-evidence/coast61-verify-20261001T123638Z-b66cdbe8/exit-code.txt": {
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+      "bytes": 1
+    },
+    "cloud-evidence/coast61-verify-20261001T123638Z-b66cdbe8/verify_runtime_feet61.py": {
+      "sha256": "ccc9b69bca7ffa902288ec2844e70acdc475074e9b2a76ba87151fe0ea1f5861",
+      "bytes": 9494
+    },
+    "cloud-evidence/coast61-verify-20261001T123638Z-b66cdbe8/1347_side.png": {
+      "sha256": "d733c3b66aced4c980529d1445cdaaf371f06cb68aeb3ace0a6ce67d3e4d0d58",
+      "bytes": 689930
+    },
+    "cloud-evidence/coast61-verify-20261001T123638Z-b66cdbe8/VISUAL_REVIEW.md": {
+      "sha256": "9434df843dbc33da4ffcde62402dba3ed53c78622878954acab6c97bdf8067f0",
+      "bytes": 1958
+    },
+    "cloud-evidence/coast61-verify-20261001T123638Z-b66cdbe8/adjacent_north_east.png": {
+      "sha256": "8d6be7f5489437609bdefe04c955c6b3c80fbacc55cfec827531a9a4f10953a3",
+      "bytes": 506575
+    }
+  },
+  "file_count": 195,
+  "bytes": 13672898,
+  "limits": "Not61 ordinary flight, hardware or reference acceptance. First failure and all original inputs preserved. Native scene/default/source files not rewritten by review."
+}
