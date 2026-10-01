@@ -1,0 +1,22 @@
+{
+  "baseline_game50_sha256": "031b39ea75680e98fbed4882507251ec0ebfb3469300f82402891a0137351ff0",
+  "base_depth50_shader_sha256": "fe50e0044e454e5d20836328e5eea7aea235d01c10ffe2aad661c4b6635d2d4b",
+  "reflection51_shader_sha256": "97a56c288a628f4676e538f1562dfa4b47b7bb3f4a9252b9e6e3a82e9eb40cff",
+  "reverse_remove_exact": true,
+  "global_insertion": "\n/* LAKE51_WATER_GLOBAL_BEGIN */\nuniform bool lake51_reflection_enabled=false;\nuniform float lake51_reflection_strength=.94;\nuniform sampler2D lake51_reflection_texture : filter_linear, repeat_disable;\nuniform mat4 lake51_reflection_view;\nuniform mat4 lake51_reflection_projection;\nfloat lake51_region_weight(vec2 p){\n    vec2 a=p-vec2(768.,-2304.);vec2 b=vec2(1536.,-768.)-p;\n    return smoothstep(0.,64.,max(0.,min(min(a.x,a.y),min(b.x,b.y))));\n}\nvec3 lake51_srgb_to_linear(vec3 c){\n    return mix(c/12.92,pow((c+vec3(.055))/1.055,vec3(2.4)),step(vec3(.04045),c));\n}\n/* LAKE51_WATER_GLOBAL_END */\n",
+  "normal_insertion": "\n    /* LAKE51_CALM_BEGIN */\n    if(lake51_reflection_enabled){\n        float calm=lake51_region_weight(world_point.xz);\n        vec3 fine_normal=normalize(vec3(.002*sin(world_point.x*.047+world_time*.12),1.,.002*cos(world_point.z*.043-world_time*.1)));\n        wave_normal=normalize(mix(wave_normal,fine_normal,calm));\n        ROUGHNESS=mix(ROUGHNESS,.045,calm);\n    }\n    /* LAKE51_CALM_END */\n",
+  "fragment_tail_insertion": "\n    /* LAKE51_LIVE_REFLECTION_BEGIN */\n    if(lake51_reflection_enabled){\n        float lake_weight=lake51_region_weight(world_point.xz);\n        vec4 clip_point=lake51_reflection_projection*lake51_reflection_view*vec4(world_point,1.);\n        if(lake_weight>0. && clip_point.w>0.){\n            vec2 ref_uv=clip_point.xy/clip_point.w*.5+.5;ref_uv.y=1.-ref_uv.y;\n            float ref_edge=min(min(ref_uv.x,ref_uv.y),min(1.-ref_uv.x,1.-ref_uv.y));\n            if(ref_edge>0.){\n                vec3 reflected_color=textureLod(lake51_reflection_texture,ref_uv,0.).rgb;\n                // Target Godot4.5 Compatibility computes in sRGB. The offscreen\n                // color is sampled directly there; other backends need a new gate.\n                if(!OUTPUT_IS_SRGB){reflected_color=lake51_srgb_to_linear(reflected_color);}\n                float blend=clamp(lake51_reflection_strength,0.,1.)*lake_weight*smoothstep(0.,.012,ref_edge);\n                vec3 mirror_color=reflected_color*vec3(.94,.97,1.);\n                EMISSION=mix(EMISSION,mirror_color,blend);\n                ALBEDO*=1.-blend;\n            }\n        }\n    }\n    /* LAKE51_LIVE_REFLECTION_END */\n",
+  "scope": "Three reversible insertions only. Disabled flag uses complete original Game50 shader. Enabled geographic lake mask changes normals/roughness and mixes the live shared-World3D viewport via world-projective coordinates. Global sea outside bounds remains original. This is candidate source, not visual acceptance.",
+  "bounds": [
+    768,
+    -2304,
+    1536,
+    -768
+  ],
+  "feather_m": 64,
+  "main_camera_transform_changed": false,
+  "reflection_image_source": "Actual SubViewport render texture, never an uploaded/reference image",
+  "color_pipeline": "Compatibility OUTPUT_IS_SRGB direct sample; other backends unvalidated",
+  "hardware_gpu_acceptance": false,
+  "visual_acceptance": false
+}

@@ -1,0 +1,11 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3]
+
+[ext_resource type="Shader" path="res://assets/reflection51/clip_shader_007.tres" id="1_8e207"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_8e207")
+shader_parameter/lake51_reflection_clip_enabled = false
+shader_parameter/lake51_reflection_plane_y = 0.0
+shader_parameter/tint = Vector3(0.9, 0.94, 1)
+shader_parameter/precipitation_time = 0.0
