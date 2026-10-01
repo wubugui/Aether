@@ -1,6 +1,6 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-01 17:03 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-01 18:02 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
 
 ## 目标、工程与交付状态
 
@@ -9,7 +9,7 @@
 - 当前恢复工作区：/workspace/scratch/a29d03198654/Aether。实际项目为 candidates/round40-exclusive-20260930/project。项目默认仍是42c；**最新已保存原生候选是61**，必须显式加载，不能把默认42c误当全部最新成果。
 - 本次恢复、最近独立核实的远端工程基线为 **4bff9179882f1bf8387fedd02d5799f4f10f4c04**，tree **fa3170f658c6305f15ad7e634f88285a59114e07**。13:24正常push成功，13:25独立ls-remote和GitHub commit API核对一致，恢复后再次核对。此提交包含已完成211米近湾飞行证据；完整已提交历史可从GitHub恢复。最新文档发布在其后的df47，见下一项。
 - 权威进度文档已通过已连接GitHub插件的原生Git对象接口发布：远端 **df47dbebec35c85b980d9d0ab542ecd4eb178840**，parent为4bff917，tree **89e672ff5410ff07be2fa88b74237b38c7166e94**；五个改动blob、父提交、完整树与远端ref已核。它与原本地8c8bc23内容树完全相同，本地已对齐df47；五个D草稿前后SHA不变。
-- 58D静态控制笼小项已发布并核验：**e9b7fd2f8766dd0493d5bef4126392d680637501**，parent df47、tree **7f5f6a6d3689b039b581c00f5cda6c4dd9beaa12**；14个文本blob逐字回读一致。本地97f1dfa与远端同树，正常公共fetch后soft对齐e9b7fd2。原生源项已发布 **4508884a03596960a4ac1f31ff7f9b703ff473d1**，tree **91fa0785dc963d0b5484a6a9954aaff9e9df03e2**，parent e9b7fd2；33文本逐字回读、114775字节blend经全新bare公共partial读取核SHA通过，本地5302e0b已同树soft对齐。58D五面失败项已完整发布 **3113f77e62649e3ee1557e8d2b45f5496f951651**，tree **c877d26c99be536ce8625e3ea239ab7ce5123abe**，parent4508884；39文本逐字回读、5PNG逐个先证实在独立bare缺失，再公共Git实际取得并字节/SHA256一致。本地441172c已同树soft对齐。当前58E两个极小布局/四图已终态且均视觉拒绝，随本修订立即发布，核验远端前待推。终端Git认证仍未恢复：官方设备授权等待曾被api.github.com网络策略阻止，登录未保存。后续代码/文档直接使用已授权插件原生发布，不等待CLI、不提取凭据或代理被拒请求。
+- 58D静态控制笼小项已发布并核验：**e9b7fd2f8766dd0493d5bef4126392d680637501**，parent df47、tree **7f5f6a6d3689b039b581c00f5cda6c4dd9beaa12**；14个文本blob逐字回读一致。本地97f1dfa与远端同树，正常公共fetch后soft对齐e9b7fd2。原生源项已发布 **4508884a03596960a4ac1f31ff7f9b703ff473d1**，tree **91fa0785dc963d0b5484a6a9954aaff9e9df03e2**，parent e9b7fd2；33文本逐字回读、114775字节blend经全新bare公共partial读取核SHA通过，本地5302e0b已同树soft对齐。58D五面失败项已完整发布 **3113f77e62649e3ee1557e8d2b45f5496f951651**，tree **c877d26c99be536ce8625e3ea239ab7ce5123abe**，parent4508884；39文本逐字回读、5PNG逐个先证实在独立bare缺失，再公共Git实际取得并字节/SHA256一致。本地441172c已同树soft对齐。58E两源/四图已完整发布 **558d187b2f2ff1f7f6f4a1e5b82dd2fad5d7b2e0**，tree **e01fb8eb8bb6b0708246781a7b5351837db5bca4**，parent3113f77；37文本逐字回读，6二进制均经独立bare先确认缺失再取得并字节/SHA256匹配。18:01再次核远端ref并将本地1e7bf8e同树soft对齐558d187。两种形体仍视觉拒绝，E的Slack0/5详见下方。当前小项是已有近湾停船orbit源码准备及中断后核验，不含引擎解析/实际图。终端Git认证仍未恢复：官方设备授权等待曾被api.github.com网络策略阻止，登录未保存。后续代码/文档直接使用已授权插件原生发布，不等待CLI、不提取凭据或代理被拒请求。
 - 文档无法在自身提交中写入自身最终SHA。每次开工须实时执行git rev-parse HEAD，并与远端分支比较；本页的“已核远端”是明确时间点的证据，不是永久固定回退点。后续新提交优先使用其实际HEAD与核验结果。
 
 ## 每项工作的固定流程
@@ -38,7 +38,7 @@
 | 58D静态控制笼 | [静态报告](source-assets/cloud-bank58/revision-d/STATIC_CHECK58D.md)、[冻结清单](source-assets/cloud-bank58/revision-d/static-freeze58d-20261001T1550Z.json)。首次完整检查exit0，1.262秒/41140KiB；325点/646三角、单壳genus0、4439候选对窄相位检查无不当穿插；54抽样谷线射线通过原高度/160米门，float32敏感性通过 | e9b7fd2已核远端，14个blob精确回读。没有Blender原生构建、实图或世界集成；抽样射线不证明全连续谷宽或飞艇航路 |
 | 58D原生小源 | [fold58d.blend](source-assets/cloud-bank58/revision-d/native-01/fold58d.blend)，114775字节，SHA256 2b742986751183db994b5d803127c45eb44a02046cd85a17f689355d1c2540a2。[实际运行](cloud-evidence/cloudbank58d-native-20261001T162033Z-y035f3f3/process-report.json)build0/fresh0/wrapper0，2.072秒/262260KiB；1个原样325/646网格、34可编辑引导、全部选择组、5相机、无贴图材质新进程读回通过 | 4508884已完整普通Git发布/回读。12小折皱仍仅引导；实际前参考机位下腹会裁切，另4面逐点留边约9%，不改机位掩盖。几何/54抽样射线通过不等于视觉或连续通路通过 |
 | 58D五面实际源图 | [逐图拒绝报告](source-assets/cloud-bank58/revision-d/preview-01/VISUAL_REVIEW58D.md)、[运行](cloud-evidence/cloudbank58d-preview-20261001T163423Z-tvsyc8vq/process-report.json)。5个新进程和wrapper全exit0，9.345秒/293484KiB，5PNG共2416622字节，制作者与主任务都逐图实看 | **视觉拒绝**：前景狭高尖岩，侧背长直折壁，底部宽盘，顶部山脊/切槽。保留全源/实图，不扩四根，不入Game61；3113f77已完整发布/独立回读，5PNG+报告Slack全部finalize成功 |
-| 58E两个极小布局研究 | [方案](source-assets/cloud-bank58/revision-e/README.md)、[运行](cloud-evidence/cloudbank58e-layouts-20261001T165946Z-yove55lx/process-report.json)。2个独立可编辑blend分别92900/93100字节；4张CPU实图共1640952字节；5进程+wrapper全exit0，7.146秒/288332KiB，旧D/C输入未变 | **两种当前造型均拒绝**：A三块挂体/拱洞，B较紧凑但仍规则多面石块、窄接颈和大平腹。B只保留相对位置比较用途；明确相交分件布局研究，未单壳、未入世界、未做最终连续路径检验。本修订立即保存，远端核验前待推 |
+| 58E两个极小布局研究 | [方案](source-assets/cloud-bank58/revision-e/README.md)、[运行](cloud-evidence/cloudbank58e-layouts-20261001T165946Z-yove55lx/process-report.json)。2个独立可编辑blend分别92900/93100字节；4张CPU实图共1640952字节；5进程+wrapper全exit0，7.146秒/288332KiB，旧D/C输入未变 | **两种当前造型均拒绝**：A三块挂体/拱洞，B较紧凑但仍规则多面石块、窄接颈和大平腹。B只保留相对位置比较用途；明确相交分件布局研究，未单壳、未入世界、未做最终连续路径检验。558d187已完整发布/独立取回验证；Slack5个payload各两次明确拒绝、0/5交付，全部保持停止 |
 
 61的10图逐图视觉结论见 [VISUAL_REVIEW.md](cloud-evidence/coast61-v2-verify-20261001T124815Z-czvc76_r/VISUAL_REVIEW.md)。近湾飞行独立复核见 [review.json](cloud-evidence/nearbay61-independent-review/review.json)。既往云端实际图形证据使用Mesa llvmpipe软件渲染；迁移保留的本机历史另有GTX970图形证据。当前云端61候选并未通过硬件GPU验收。
 
@@ -62,7 +62,7 @@
 | 已提交源码、原生资产、失败与检查证据 | 当前开发所需稀疏路径已恢复；历史仍在GitHub，不全量展开历史截图 | 开工核当前HEAD和所需资源；不要重复已终态测试来充当新成果 |
 | 58D小段折皱云 | 五份初稿已按记录重建；15:50首次完整静态检查通过，新增报告/检查器共12文件444266字节，另有冻结清单。初稿历史geometry_passed:false字段未篡改，新结果由独立日期的proof绑定 | 静态项已发布e9b7fd2；小源已发布4508884；16:34五面真实CPU图完成但视觉拒绝，立即保存失败项。下一次先少量廉价真实3D选形，不在石峰控制笼上继续堆静态检查，不扩四根或入世界 |
 | 西北山脊蓝图与控制源 | 未提交稿在环境变化时不可见，恢复后尚未补回；旧草稿60点/76面不是已验证模型 | 按下述约束重建，不声称旧草稿仍在或已构建 |
-| 近湾orbit补测 | 未生成/未运行，已通过的211米数据保留 | 新50米走廊、约31米有限输入段；用原生右键/MouseMotion看岸，不直接写运动阶段camera/ship变换 |
+| 近湾orbit补测 | [独立源码](source-assets/coast61-nearbay-orbit/README.md)5文件已准备；18:02只读static-only exit0，1477旧输入全匹配，新manifest1483项。尚未Godot解析/运行 | 第一小项只停船原生右键环绕，不发W；全_process相机间步及完整可见几何范围先验证。50米走廊/31米预测只属未来计划，不能复用旧船走廊覆盖相机 |
 | 临时wrapper、窗口ID与工具缓存 | 旧w61/x61/y61脚本、editor39845891/terminal27267931不再代表当前桌面 | 从版本化Python/GDScript入口重建必要临时wrapper；先重新读取桌面库存，不操作旧窗口号 |
 | 旧重复备份 | 曾在确认GitHub可恢复后逐项清理1,661,301,708字节ZIP/bundle/分卷；本地细审计随环境变化不可见，异常前Git记录仍在历史区 | 不重打同类备份；不把备份清理记录推断为工作区变化的原因 |
 
@@ -70,9 +70,9 @@
 
 ## 下一具体动作与边界
 
-1. **立即发布58E双布局失败项**：先固定当前本地HEAD/完整tree，6个二进制（2原生源+4PNG）用原生base64 blob，其余UTF8可使用官方create_tree的content字段在同一已核base_tree上创建，避免逐小日志多次调用。逐文本blob回读、完整tree/parent/ref核验，二进制从独立公共partial Git实际取得；任何未解决的拒绝不得改格式绕行。没有CLI认证或LFS能力恢复。
+1. **立即保存停船orbit源码准备与恢复收据**：E已完整Git外存，原生create_tree inline content已实证得到精确完整树，后续文本沿此官方接口减少逐文件写入。当前准备源码仍未Godot解析/运行，本修订核远端前待推。先恢复新机项目导入与受控解析，再决定实际图形窗口；不重跑旧211米飞行。
 2. Blender4.5.14已16:10解包，binarySHA与旧记录精确，--version通过。16:14新云桌面已核，仅Chromium和新终端37748739，尚无Godot世界/编辑器作业；图形后端和项目导入状态仍待实际验证，不能沿用旧窗口/缓存。
-3. 重建orbit补测：起点(-3430,28,-3665)，同向50米走廊。仅一次初始船与camera摆位可作明确fixture，排除里程；之后全部用原生输入。右键分步转到看岸、有限飞行并制动、停稳后另看侧/背；每次相机路径做完整扫掠和实际遮挡检查。屏幕射线不等于像素可见，仍需实看岸景图片。旧211米测试不重跑替代此项。
+3. orbit源码已准备，先独立解析；第一实际小项仅停船原生右键转向观察。后续移动补测仍待安排：起点(-3430,28,-3665)，同向50米走廊。仅一次初始船与camera摆位可作明确fixture，排除里程；之后全部用原生输入。右键分步转到看岸、有限飞行并制动、停稳后另看侧/背；每次相机路径做完整扫掠和实际遮挡检查。屏幕射线不等于像素可见，仍需实看岸景图片。旧211米测试不重跑替代此项。
 4. 云体下一版：D石峰与E石块都已用真实低成本小图确认失败。B仅可作错位布局参照，不直接扩展或融合后称形通过。下一次改的是冠、肩、侧腹共同构成的短折面和多尺度外轮廓，消除窄接颈、大平腹与重复截面；先1个小patch/最多2图实看，再决定连接/细化与严格几何。保持参考低poly，不靠磨圆、提亮、换机位掩盖，不堆静态计数代替选形。目前尚未生成下一版资产。
 5. 西北主山链：先重建独立控制源，范围X[-3048,-2040]、Z[-5160,-3770]；主/副峰初始720/650/580米、鞍部与不等宽肩部属于设计推断。保护56/61整块、湖/开场山群、北侧12屋及40米缓冲、河口与旧道路。调查包络内1785根、主脊包络567根只是待核池，非批准全改数量。不能把380米肩部压在28米边带上形成85度陡墙；不能每块衰减出周期性768米沟。先原生源/正侧背形体，再最小实际地形footprint、碰撞、缓存和逐项散布。
 
@@ -130,13 +130,27 @@ GIT_TERMINAL_PROMPT=0 git -c credential.helper= ls-remote https://github.com/wub
 # 再通过官方GitHub commit API/连接器核同一SHA与本地tree；不读取或输出token
 ~~~
 
+## 中断和E交付的准确状态
+
+17:13之后调用曾返回aborted by user；17:39只读恢复调用12.6秒时同样中断、没有新结果。18:00重新开始并实际核验，不能把中断区间记成持续开发或正在渲染。没有新形体F或新的Godot世界运行。
+
+E完整Git提交558d187已验证，[发布/未发送记录](source-assets/cloud-bank58/revision-e/PUBLICATION58E.json)。五个Slack文件均已取得旧ID，但原POST及一次证据重试各自明确在CreateProcess前被拒，未上传、未finalize、0/5交付：
+
+- A前图 F0C63TSN69X，325955B
+- A侧后 F0C65L67UH2，494552B
+- B前图 F0C5WLPJJ9K，325806B
+- B侧后 F0C61R60S2W，494639B
+- 原报告 F0C6WB47X1N
+
+所有这些旧payload保持停止，不能重新包装、嵌入别的文件、换渠道或重新申请ID绕行，不能finalize。自动审核理由误将任务归为仅GitHub或UU memory alerts；主任务保留用户持续项目截图报告授权，若需新的用户决定由主任务集中处理，不逐图打扰。其他独立工程工作继续。
+
 ## 已交付收据与本项待推状态
 
 - 61当前近湾/全貌/阶段报告已经Slack确认成功：[报告](https://tupworld.slack.com/files/UKQMWM9MZ/F0C5J32C2GP/game61-stage-report.md)。三文件IDs为F0C5J2YEHDM、F0C5T7CNE83、F0C5J32C2GP；[本地收据](cloud-delivery/coast61-stage-20261001/DELIVERY_RECEIPT.json)。
 - 60三PNG和51图报告包已确认：F0C5TNLR86R、F0C5X3G11AA、F0C5TNP45QD、F0C5X7APTHU；[收据](cloud-delivery/observation60-and-research-20261001/DELIVERY_RECEIPT.json)。不得重复POST或finalize。部分旧ZIP在连接器读取中不可见，不能无证据说丢失或重发。
 - 13:42恢复进展已发送：[原消息](https://tupworld.slack.com/archives/C0C5WDC9649/p1790862140398009?thread_ts=1790835576.223599&cid=C0C5WDC9649)。没有把未提交草稿说成已恢复验收。
 - **进度文档项已发布**：远端df47dbebec35c85b980d9d0ab542ecd4eb178840，tree89e672ff5410ff07be2fa88b74237b38c7166e94，父4bff917与五个blob精确核对；终端认证没有恢复。
-- **58D静态小项已发布e9b7fd2**，完整tree/parent/ref和14个blob精确核验；[Slack原报告](https://tupworld.slack.com/archives/C0C5WDC9649/p1790871012890899?thread_ts=1790835576.223599&cid=C0C5WDC9649)。原生源项已完整发布4508884，[二进制独立读回收据](source-assets/cloud-bank58/revision-d/native-01/PUBLICATION_NATIVE58D.json)。D五图/报告已Git3113f77及Slack全部交付：[收据](source-assets/cloud-bank58/revision-d/preview-01/PUBLICATION_PREVIEW58D.json)、[完整逐图报告](https://tupworld.slack.com/files/UKQMWM9MZ/F0C63NWC7AM/visual_review58d.md)。当前E双布局已终态并视觉拒绝，随本修订即时发布。
+- **58D静态小项已发布e9b7fd2**，完整tree/parent/ref和14个blob精确核验；[Slack原报告](https://tupworld.slack.com/archives/C0C5WDC9649/p1790871012890899?thread_ts=1790835576.223599&cid=C0C5WDC9649)。原生源项已完整发布4508884，[二进制独立读回收据](source-assets/cloud-bank58/revision-d/native-01/PUBLICATION_NATIVE58D.json)。D五图/报告已Git3113f77及Slack全部交付：[收据](source-assets/cloud-bank58/revision-d/preview-01/PUBLICATION_PREVIEW58D.json)、[完整逐图报告](https://tupworld.slack.com/files/UKQMWM9MZ/F0C63NWC7AM/visual_review58d.md)。E双布局已558d187完整Git发布、Slack0/5停止；当前停船orbit源码准备随本修订保存，尚未引擎解析/运行。
 
 ## 历史记录（仅追溯，不作为当前操作指令）
 
