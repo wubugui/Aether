@@ -1,0 +1,64 @@
+{
+  "source_scene": "res://scenes/candidate53d-west/Game53dWest.tscn",
+  "source_sha256": "6ec57b72a831d6fa906a8d866c339909de55c9c42297a038dcd429b18d0c2b18",
+  "source_mesh": "res://scenes/candidate53d-west/Game53dWest.tscn::ArrayMesh_5ypxy",
+  "source_shape": "res://scenes/candidate53d-west/Game53dWest.tscn::ConcavePolygonShape3D_iacqo",
+  "box_xmin_xmax_zmin_zmax": [
+    -3440.0,
+    -3090.0,
+    -3816.0,
+    -3430.0
+  ],
+  "origin": [
+    -3840.0,
+    0.0,
+    -3840.0
+  ],
+  "design_inference": "Revision B: explicit water/foot/unequal bench/back-slope section knots; 30m inland and56m northern expansion inside same tile. Reference-informed inference.",
+  "positions_moved": 1942,
+  "triangles_changed": 759,
+  "normal_tangent_indices_modified": 2125,
+  "protected_faces": 1912,
+  "unchanged_faces": 2111,
+  "raw_fields_unchanged_on_all_unchanged_triangles": true,
+  "all_indices_colors_uv_absence_unchanged": true,
+  "tile_boundary_positions_exact": true,
+  "old_topology": {
+    "unique_positions": 1505,
+    "triangle_count": 2870,
+    "boundary_edges": 138,
+    "nonmanifold_edges": 0,
+    "degenerate_3d": 0,
+    "degenerate_xz": 0,
+    "signed_xz_min": -1526.5548618093599,
+    "signed_xz_max": -0.650986073538661
+  },
+  "candidate_topology": {
+    "unique_positions": 1505,
+    "triangle_count": 2870,
+    "boundary_edges": 138,
+    "nonmanifold_edges": 0,
+    "degenerate_3d": 0,
+    "degenerate_xz": 0,
+    "signed_xz_min": -1526.5548618093599,
+    "signed_xz_max": -0.650986073538661
+  },
+  "max_x_displacement": 0.0,
+  "construction": "Original XZ and index topology held exactly; native height profile translated laterally by Y-only reshaping with a low dry shoulder",
+  "max_height_lowering": -71.43305206298828,
+  "geometry_collision_corner_max_abs_error_before": 6.103515625e-05,
+  "geometry_collision_corner_max_abs_error_after": 6.103515625e-05,
+  "root_minheight_gate_passed": false,
+  "root_minheight_failures": [
+    {
+      "node": "World/Vegetation/oak_-5_-5_CoastalPines36b",
+      "index": 33,
+      "actual_height": 2.491893324666698,
+      "unchanged_minimum_guard": 3
+    }
+  ],
+  "scatter_count": 60,
+  "scatter_xz_relocated": 0,
+  "scatter_max_horizontal_move": 0.0,
+  "authorization_scope": "Only an independent source and static replacement data. No saved world/default/prefab edits."
+}

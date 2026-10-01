@@ -1,0 +1,44 @@
+{
+  "state": "finished",
+  "complete": false,
+  "run_id": "cloudbank58b-recovery-fill-20261001T113747Z-o2gz3_me",
+  "stage": "fill",
+  "started_utc": "20261001T113747Z",
+  "commands": [
+    {
+      "script": "fill_cavity58b.py",
+      "argv": [
+        "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+        "-b",
+        "-t",
+        "2",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-b/recovery-03/fill_cavity58b.py"
+      ],
+      "state": "finished",
+      "complete": false,
+      "actual_child_exit_code": 1,
+      "hard_errors": [
+        "Traceback (most recent call last):",
+        "Error: script failed, file: '/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-b/recovery-03/fill_cavity58b.py', exiting."
+      ]
+    }
+  ],
+  "world_loaded": false,
+  "rendered": false,
+  "visual_acceptance": false,
+  "limit_stop_reason": null,
+  "error": null,
+  "wall_seconds": 2.5193703179975273,
+  "peak_observed_rss_kib": 327356,
+  "peak_child_rss_kib": 336428,
+  "protected_unchanged": true,
+  "source_files": {
+    "cloud_bank58b_union.blend": {
+      "sha256": "ed393ba932c0addf90fb23628604ea27f1779cb4ab69e7d3201bce3bbca8db06",
+      "bytes": 2655676
+    }
+  }
+}

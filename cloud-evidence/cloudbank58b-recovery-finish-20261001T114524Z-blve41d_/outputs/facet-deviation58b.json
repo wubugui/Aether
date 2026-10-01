@@ -1,0 +1,78 @@
+{
+  "passed": true,
+  "raw_geometry": {
+    "name": "EDIT58B_continuous_union_before_facets",
+    "vertices": 25284,
+    "triangles": 50572,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "components": [
+      25284
+    ],
+    "nonadjacent_self_overlap_count": 0,
+    "first_overlap_pairs": [],
+    "zero_area_triangles": 0,
+    "duplicate_triangles": 0,
+    "signed_volume_m3": 1318379521.8137708,
+    "world_bounds": [
+      [
+        2517.62353515625,
+        217.32937622070312,
+        2427.34521484375
+      ],
+      [
+        5090.60693359375,
+        963.9862976074219,
+        4645.78759765625
+      ]
+    ],
+    "closed_geometry_passed": true
+  },
+  "reduced_geometry": {
+    "name": "CloudBank58B_four_root_folded_volume",
+    "vertices": 4498,
+    "triangles": 9000,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "components": [
+      4498
+    ],
+    "nonadjacent_self_overlap_count": 0,
+    "first_overlap_pairs": [],
+    "zero_area_triangles": 0,
+    "duplicate_triangles": 0,
+    "signed_volume_m3": 1317957842.1969845,
+    "world_bounds": [
+      [
+        2517.8382568359375,
+        217.33737182617188,
+        2426.955810546875
+      ],
+      [
+        5090.581298828125,
+        964.76318359375,
+        4645.8856201171875
+      ]
+    ],
+    "closed_geometry_passed": true
+  },
+  "relative_signed_volume_change": -0.0003198469103996037,
+  "raw_to_reduced": {
+    "samples": 75856,
+    "kinds": "Every native vertex and every native triangle centroid",
+    "max_m": 4.653666019439697,
+    "p95_m": 0.9464744180440903,
+    "median_m": 0.2478269264101982
+  },
+  "reduced_to_raw": {
+    "samples": 13498,
+    "kinds": "Every native vertex and every native triangle centroid",
+    "max_m": 4.267080307006836,
+    "p95_m": 1.2310904502868651,
+    "median_m": 0.3321085274219513
+  },
+  "volume_tolerance_fraction": 0.03,
+  "max_sampled_surface_offset_tolerance_m": 35,
+  "is_continuous_Hausdorff_bound": false,
+  "visual_acceptance": false
+}

@@ -1,0 +1,75 @@
+{
+  "state": "finished",
+  "complete": true,
+  "run_id": "cloudbank58b-recovery-recover-proof-20261001T114019Z-sbytwdqr",
+  "stage": "recover-proof",
+  "started_utc": "20261001T114019Z",
+  "commands": [
+    {
+      "script": "recover_fill_proof58b.py",
+      "argv": [
+        "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+        "-b",
+        "-t",
+        "2",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-b/recovery-03/recover_fill_proof58b.py"
+      ],
+      "state": "finished",
+      "complete": true,
+      "actual_child_exit_code": 0,
+      "hard_errors": []
+    },
+    {
+      "script": "verify_union58b.py",
+      "argv": [
+        "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+        "-b",
+        "-t",
+        "2",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-b/recovery-03/verify_union58b.py"
+      ],
+      "state": "finished",
+      "complete": true,
+      "actual_child_exit_code": 0,
+      "hard_errors": []
+    },
+    {
+      "script": "inspect_pairs58b.py",
+      "argv": [
+        "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+        "-b",
+        "-t",
+        "2",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-b/recovery-03/inspect_pairs58b.py"
+      ],
+      "state": "finished",
+      "complete": true,
+      "actual_child_exit_code": 0,
+      "hard_errors": []
+    }
+  ],
+  "world_loaded": false,
+  "rendered": false,
+  "visual_acceptance": false,
+  "limit_stop_reason": null,
+  "error": null,
+  "wall_seconds": 5.027192934998311,
+  "peak_observed_rss_kib": 323040,
+  "peak_child_rss_kib": 322644,
+  "protected_unchanged": true,
+  "source_files": {
+    "cloud_bank58b_union.blend": {
+      "sha256": "ed393ba932c0addf90fb23628604ea27f1779cb4ab69e7d3201bce3bbca8db06",
+      "bytes": 2655676
+    }
+  }
+}

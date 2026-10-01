@@ -1,0 +1,81 @@
+{
+  "state": "finished",
+  "complete": true,
+  "run_id": "cloudbank58b-recovery-finish-20261001T114524Z-blve41d_",
+  "stage": "finish",
+  "started_utc": "20261001T114524Z",
+  "commands": [
+    {
+      "script": "finish58b.py",
+      "argv": [
+        "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+        "-b",
+        "-t",
+        "2",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-b/recovery-03/finish58b.py"
+      ],
+      "state": "finished",
+      "complete": true,
+      "actual_child_exit_code": 0,
+      "hard_errors": []
+    },
+    {
+      "script": "verify_final58b.py",
+      "argv": [
+        "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+        "-b",
+        "-t",
+        "2",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-b/recovery-03/verify_final58b.py",
+        "--",
+        "--source",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-b/recovery-03"
+      ],
+      "state": "finished",
+      "complete": true,
+      "actual_child_exit_code": 0,
+      "hard_errors": []
+    }
+  ],
+  "world_loaded": false,
+  "rendered": false,
+  "visual_acceptance": false,
+  "limit_stop_reason": null,
+  "error": null,
+  "wall_seconds": 14.04435007700522,
+  "peak_observed_rss_kib": 384736,
+  "peak_child_rss_kib": 587540,
+  "protected_unchanged": true,
+  "source_files": {
+    "CloudBank58_upper_west_layer.glb": {
+      "sha256": "f5bb2d86245ad15585561f5f8b9064f5e121be515595344c01e1e60bc4098e2e",
+      "bytes": 35064
+    },
+    "cloud_bank58b.blend": {
+      "sha256": "9158443c62cdf0c43ebc8909f6791b9162770adba5da15d1294bec1c02ecce50",
+      "bytes": 3574399
+    },
+    "CloudBank58_upper_east_layer.glb": {
+      "sha256": "22e14b1a54ee6f647e3f647f166dc16f64aa691855450749ec1d24ce25e2ab63",
+      "bytes": 35116
+    },
+    "cloud_bank58b_union.blend": {
+      "sha256": "ed393ba932c0addf90fb23628604ea27f1779cb4ab69e7d3201bce3bbca8db06",
+      "bytes": 2655676
+    },
+    "CloudBank58_upper_far_veil.glb": {
+      "sha256": "4d933c9e29e28023b330363362d072a291b3013f4b3da9fa6a467af2d667a40c",
+      "bytes": 35324
+    },
+    "CloudBank58B_four_root_folded_volume.glb": {
+      "sha256": "ac583ede0bbfb5ae431f8056ab8c6554b3dea5a9f819e730bceb98fb6851d510",
+      "bytes": 1027244
+    }
+  }
+}

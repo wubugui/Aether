@@ -1,0 +1,50 @@
+[
+  {
+    "stage": "build-source",
+    "exit_code": 0,
+    "max_rss_kib": 257188,
+    "seconds": 0.5790455259993905,
+    "command": [
+      "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+      "--background",
+      "/workspace/scratch/a29d03198654/Aether/source-assets/coast57/revision-b/Ground_-5_-5_authority57.blend",
+      "--threads",
+      "2",
+      "--python",
+      "/workspace/scratch/a29d03198654/Aether/source-assets/coast57/revision-b/blender_candidate57b.py"
+    ]
+  },
+  {
+    "stage": "fresh-terrain-readback",
+    "exit_code": 0,
+    "max_rss_kib": 267832,
+    "seconds": 0.6360238119959831,
+    "command": [
+      "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+      "--background",
+      "/workspace/scratch/a29d03198654/Aether/source-assets/coast57/revision-b/Ground_-5_-5_coast57b.blend",
+      "--threads",
+      "2",
+      "--python",
+      "/workspace/scratch/a29d03198654/Aether/source-assets/coast57/revision-b/read_blender57b.py",
+      "--",
+      "Ground_-5_-5_COAST57B",
+      "candidate-blend-readback.json"
+    ]
+  },
+  {
+    "stage": "fresh-props-readback",
+    "exit_code": 0,
+    "max_rss_kib": 248700,
+    "seconds": 0.5076003660069546,
+    "command": [
+      "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+      "--background",
+      "/workspace/scratch/a29d03198654/Aether/source-assets/coast57/revision-b/Ground_-5_-5_coast57b.blend",
+      "--threads",
+      "2",
+      "--python",
+      "/workspace/scratch/a29d03198654/Aether/source-assets/coast57/revision-b/read_props57b.py"
+    ]
+  }
+]

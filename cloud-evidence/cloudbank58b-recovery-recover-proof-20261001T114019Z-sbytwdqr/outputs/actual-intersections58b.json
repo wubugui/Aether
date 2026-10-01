@@ -1,0 +1,45 @@
+{
+  "source_sha256": "ed393ba932c0addf90fb23628604ea27f1779cb4ab69e7d3201bce3bbca8db06",
+  "source_unchanged": true,
+  "counterexample_cases_passed": 5,
+  "candidate_count": 0,
+  "shared_native_vertex_or_edge_pairs_excluded": 0,
+  "classification_counts": {},
+  "real_positive_area_or_interior_crossings": 0,
+  "ambiguous_or_degenerate": 0,
+  "candidate_rows": [],
+  "connected_components": [
+    {
+      "vertex_count": 25284,
+      "triangle_count": 50572,
+      "native_vertex_indices": null,
+      "world_bounds": [
+        [
+          2517.62353515625,
+          217.32937622070312,
+          2427.34521484375
+        ],
+        [
+          5090.60693359375,
+          963.9862976074219,
+          4645.78759765625
+        ]
+      ],
+      "dimensions_m": [
+        2572.9833984375,
+        746.6569213867188,
+        2218.4423828125
+      ],
+      "signed_volume_m3": 1318379521.8137739,
+      "actual_world_vertices": null,
+      "sampled_nearest_main_surface_m": null
+    }
+  ],
+  "wall_seconds": 0.3857741439860547,
+  "method": "Actual saved native triangles. BVH broad-phase followed by double-precision signed-plane, polygon-clipping and segment/barycentric narrow phase. Adjacent shared native vertex/edge pairs excluded. Coplanar zero-area and boundary-only contacts classified separately from true interior crossing.",
+  "modifies_union_geometry": false,
+  "original_failure_preserved": true,
+  "visual_acceptance": false,
+  "world_loaded": false,
+  "rendered": false
+}

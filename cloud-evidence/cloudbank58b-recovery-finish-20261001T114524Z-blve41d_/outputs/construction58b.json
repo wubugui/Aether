@@ -1,0 +1,189 @@
+{
+  "source_method": "Eleven exact frozenB3D loft controls joined and voxel-unioned at26m with preserve_volume=False; single-variable intervention against recovery01. No rectangular domain or common bottom cap. Explicit fill of one proven200m3 internal voxel cavity; main exterior exact. Native bounded Decimate instead of QuadriFlow.",
+  "native_control_count": 11,
+  "voxel_size_m": 26,
+  "facet_target_triangles": 9000,
+  "decimate_deviation_gate_passed": true,
+  "native_controls_retained": true,
+  "raw_union_retained": true,
+  "rectangular_domain": false,
+  "heightfield": false,
+  "common_bottom_cap": false,
+  "coplanar_seam_caps": false,
+  "origin": [
+    3775.0,
+    700.0,
+    3575.0
+  ],
+  "meshes": [
+    {
+      "name": "CloudBank58B_four_root_folded_volume",
+      "file": "CloudBank58B_four_root_folded_volume.glb",
+      "sha256": "ac583ede0bbfb5ae431f8056ab8c6554b3dea5a9f819e730bceb98fb6851d510",
+      "root": "CloudSea_0_0",
+      "native_root_basis_rows": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native_root_position": [
+        3200.0,
+        700.0,
+        3000.0
+      ],
+      "kind": "continuous_lower_folded_volume",
+      "world_bounds": [
+        [
+          2517.83837890625,
+          217.33737182617188,
+          2426.955810546875
+        ],
+        [
+          5090.5810546875,
+          964.76318359375,
+          4645.8857421875
+        ]
+      ]
+    },
+    {
+      "name": "CloudBank58_upper_west_layer",
+      "file": "CloudBank58_upper_west_layer.glb",
+      "sha256": "f5bb2d86245ad15585561f5f8b9064f5e121be515595344c01e1e60bc4098e2e",
+      "root": "CloudSea_0_0",
+      "native_root_basis_rows": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "native_root_position": [
+        3200.0,
+        700.0,
+        3000.0
+      ],
+      "kind": "closed_upper_ribbon",
+      "world_bounds": [
+        [
+          2704.2646484375,
+          1462.823974609375,
+          2633.049560546875
+        ],
+        [
+          3542.66552734375,
+          1621.740234375,
+          3023.2021484375
+        ]
+      ]
+    },
+    {
+      "name": "CloudBank58_upper_east_layer",
+      "file": "CloudBank58_upper_east_layer.glb",
+      "sha256": "22e14b1a54ee6f647e3f647f166dc16f64aa691855450749ec1d24ce25e2ab63",
+      "root": "CloudSea_1_1",
+      "native_root_basis_rows": [
+        [
+          -0.30733278,
+          0.0,
+          0.9516021
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          -0.9516021,
+          0.0,
+          -0.30733278
+        ]
+      ],
+      "native_root_position": [
+        4350.0,
+        700.0,
+        4150.0
+      ],
+      "kind": "closed_upper_ribbon",
+      "world_bounds": [
+        [
+          4117.81640625,
+          1594.44970703125,
+          3737.7841796875
+        ],
+        [
+          4895.2021484375,
+          1741.5201416015625,
+          4173.572265625
+        ]
+      ]
+    },
+    {
+      "name": "CloudBank58_upper_far_veil",
+      "file": "CloudBank58_upper_far_veil.glb",
+      "sha256": "4d933c9e29e28023b330363362d072a291b3013f4b3da9fa6a467af2d667a40c",
+      "root": "CloudSea_1_0",
+      "native_root_basis_rows": [
+        [
+          -0.9874798,
+          0.0,
+          0.15774564
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          -0.15774564,
+          0.0,
+          -0.9874798
+        ]
+      ],
+      "native_root_position": [
+        4350.0,
+        700.0,
+        3000.0
+      ],
+      "kind": "closed_upper_ribbon",
+      "world_bounds": [
+        [
+          3797.791015625,
+          1335.6695556640625,
+          2370.228271484375
+        ],
+        [
+          4811.33984375,
+          1433.265380859375,
+          2638.37548828125
+        ]
+      ]
+    }
+  ],
+  "source_sha256": "9158443c62cdf0c43ebc8909f6791b9162770adba5da15d1294bec1c02ecce50",
+  "rendered": false,
+  "world_loaded": false,
+  "visual_acceptance": false,
+  "native_readback_pending": true
+}

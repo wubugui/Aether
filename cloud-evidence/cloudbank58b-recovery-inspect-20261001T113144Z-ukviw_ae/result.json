@@ -1,0 +1,62 @@
+{
+  "state": "finished",
+  "complete": true,
+  "run_id": "cloudbank58b-recovery-inspect-20261001T113144Z-ukviw_ae",
+  "stage": "inspect",
+  "started_utc": "20261001T113144Z",
+  "commands": [
+    {
+      "script": "inspect_pairs58b.py",
+      "argv": [
+        "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+        "-b",
+        "-t",
+        "2",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-b/recovery-02/inspect_pairs58b.py"
+      ],
+      "state": "finished",
+      "complete": true,
+      "actual_child_exit_code": 0,
+      "hard_errors": []
+    },
+    {
+      "script": "compare_union58b.py",
+      "argv": [
+        "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+        "-b",
+        "-t",
+        "2",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-b/recovery-02/compare_union58b.py"
+      ],
+      "state": "finished",
+      "complete": true,
+      "actual_child_exit_code": 0,
+      "hard_errors": []
+    }
+  ],
+  "world_loaded": false,
+  "rendered": false,
+  "visual_acceptance": false,
+  "limit_stop_reason": null,
+  "error": null,
+  "wall_seconds": 2.016816408999148,
+  "peak_observed_rss_kib": 259540,
+  "peak_child_rss_kib": 303344,
+  "protected_unchanged": true,
+  "source_files": {
+    "cloud_bank58b_union.blend": {
+      "sha256": "6e56a9e3c6d34d43a406f38d1cda3f488873740289f1183c8366d2a3df35b765",
+      "bytes": 2554466
+    },
+    "cloud_bank58b_controls.blend": {
+      "sha256": "a46353f3d4c347627e61a6776ea2ff4bf206fe8d6aa4acafecaca584290f6885",
+      "bytes": 803949
+    }
+  }
+}

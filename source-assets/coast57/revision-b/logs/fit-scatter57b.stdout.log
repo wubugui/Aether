@@ -1,0 +1,44 @@
+{
+  "status": "B source placement candidate; independent visual/native readback still required",
+  "foot_contact_method": "Exact convex foot-polygon versus terrain-triangle intersection; extrema of plane differences occur at intersection vertices. Full footprint coverage checked per polygon. Pine actual base ring; rock/bush actual lower surfaces clipped at root plane.",
+  "evaluation_bound_metres": 0.001,
+  "rounding_seat_pad_metres": 0.002,
+  "basis_preserved_for_all": true,
+  "relocations": [
+    {
+      "node": "World/Vegetation/rock_-5_-5",
+      "index": 7,
+      "kind": "rock",
+      "terrain_height": 11.084186059029093,
+      "terrain_triangle": 1863,
+      "seat_depth_from_root_point": 1.912588640465562,
+      "horizontal_move": [
+        -4.0,
+        18.0
+      ],
+      "horizontal_distance": 18.439088914585774,
+      "max_extra_seat_allowed_by_model": 2.008100121879579,
+      "max_burial_allowed_by_model": 3.7827002121090914
+    },
+    {
+      "node": "World/Vegetation/oak_-5_-5_CoastalPines36b",
+      "index": 33,
+      "kind": "pine",
+      "terrain_height": 3.0315835301805123,
+      "terrain_triangle": 1865,
+      "seat_depth_from_root_point": 0.10136956824131471,
+      "horizontal_move": [
+        0.0,
+        -2.0
+      ],
+      "horizontal_distance": 2.0,
+      "max_extra_seat_allowed_by_model": 0.6430989459151917,
+      "max_burial_allowed_by_model": 0.6430989459151917
+    }
+  ],
+  "count": 60,
+  "affected_count": 40,
+  "max_final_air_gap_on_affected": 0,
+  "unchanged_original_foot_conditions_retained": true,
+  "limits": "Continuous lower-foot contact, not full rigid-body stability or runtime collision. Model-based burial limits prevent solving gaps by hiding most of an object. Existing unaffected placements preserve baseline defects."
+}
