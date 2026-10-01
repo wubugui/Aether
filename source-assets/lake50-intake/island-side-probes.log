@@ -1,0 +1,23 @@
+{
+  "purpose": "Actual49 support BVH versus1m signed-height sampling around every island side; diagnostic, not material acceptance",
+  "island_count": 4,
+  "sides_per_island": 8,
+  "sample_offsets_m": [
+    -2,
+    -1,
+    -0.5,
+    0,
+    0.5,
+    1,
+    2,
+    4
+  ],
+  "all_side_probe_count": 256,
+  "depth_error": {
+    "count": 256,
+    "max_m": 20.917222412986998,
+    "mean_m": 2.0469605151716954,
+    "p95_m": 10.747761279824545,
+    "p99_m": 16.800169426562107
+  }
+}

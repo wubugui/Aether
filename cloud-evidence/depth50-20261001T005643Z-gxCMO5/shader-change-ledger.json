@@ -1,0 +1,18 @@
+{
+  "baseline_scene_sha256": "52d13fcb7ea412d3a0fae2eedb1d0f9c369dbe06c0da320d786c26c97c475ec8",
+  "original_ocean_shader_sha256": "5893dfe5f1bc48e6f8daea33d1361bf794f36f86494ab1263490d99e2170873b",
+  "new_shader_sha256": "fe50e0044e454e5d20836328e5eea7aea235d01c10ffe2aad661c4b6635d2d4b",
+  "reverse_remove_insertions_exact": true,
+  "inserted_declarations_and_helpers": "\n// LAKE_DEPTH50_BEGIN: signed actual-mesh bathymetry; all styling stays original.\nuniform bool lake50_depth_enabled=false;\nuniform sampler2D lake50_height : filter_linear, repeat_disable;\nuniform sampler2D lake50_patch0 : filter_linear, repeat_disable;\nuniform vec4 lake50_patch_bounds0;\nuniform vec2 lake50_patch_size0;\nuniform sampler2D lake50_patch1 : filter_linear, repeat_disable;\nuniform vec4 lake50_patch_bounds1;\nuniform vec2 lake50_patch_size1;\nuniform sampler2D lake50_patch2 : filter_linear, repeat_disable;\nuniform vec4 lake50_patch_bounds2;\nuniform vec2 lake50_patch_size2;\nuniform sampler2D lake50_patch3 : filter_linear, repeat_disable;\nuniform vec4 lake50_patch_bounds3;\nuniform vec2 lake50_patch_size3;\nfloat lake50_edge_distance(vec2 p,vec4 b){return min(min(p.x-b.x,p.y-b.y),min(b.z-p.x,b.w-p.y));}\nfloat lake50_patch_weight(vec2 p,vec4 b){return smoothstep(0.,8.,max(0.,lake50_edge_distance(p,b)));}\nfloat lake50_vertical_height(vec2 p){\n    vec2 grid=p-vec2(768.,-2304.);\n    float h=textureLod(lake50_height,(grid+vec2(.5))/vec2(769.,1537.),0.).r;\n    float w0=lake50_patch_weight(p,lake50_patch_bounds0);\n    if(w0>0.){\n        vec2 uv0=((p-lake50_patch_bounds0.xy)/.25+vec2(.5))/lake50_patch_size0;\n        h=mix(h,textureLod(lake50_patch0,uv0,0.).r,w0);\n    }\n    float w1=lake50_patch_weight(p,lake50_patch_bounds1);\n    if(w1>0.){\n        vec2 uv1=((p-lake50_patch_bounds1.xy)/.25+vec2(.5))/lake50_patch_size1;\n        h=mix(h,textureLod(lake50_patch1,uv1,0.).r,w1);\n    }\n    float w2=lake50_patch_weight(p,lake50_patch_bounds2);\n    if(w2>0.){\n        vec2 uv2=((p-lake50_patch_bounds2.xy)/.25+vec2(.5))/lake50_patch_size2;\n        h=mix(h,textureLod(lake50_patch2,uv2,0.).r,w2);\n    }\n    float w3=lake50_patch_weight(p,lake50_patch_bounds3);\n    if(w3>0.){\n        vec2 uv3=((p-lake50_patch_bounds3.xy)/.25+vec2(.5))/lake50_patch_size3;\n        h=mix(h,textureLod(lake50_patch3,uv3,0.).r,w3);\n    }\n    return h;\n}\n// LAKE_DEPTH50_END\n",
+  "inserted_depth_assignment": "\n    // LAKE_DEPTH50_REPLACE_BEGIN: only this depth input is altered.\n    if(lake50_depth_enabled){\n        float lake50_edge=lake50_edge_distance(world_point.xz,vec4(768.,-2304.,1536.,-768.));\n        if(lake50_edge>0.){\n            float lake50_world_depth=max(0.,world_point.y-lake50_vertical_height(world_point.xz));\n            water_depth=mix(water_depth,lake50_world_depth,smoothstep(0.,32.,lake50_edge));\n        }\n    }\n    // LAKE_DEPTH50_REPLACE_END\n",
+  "unchanged": "All original render modes, vertex, normals, colors, opacity, lighting, weather, night and emitter equations remain byte-identical outside the two insertions. When depth flag false or outside bounded domain, original depth path is used. No reflection in this candidate.",
+  "source_bounds": [
+    768,
+    -2304,
+    1536,
+    -768
+  ],
+  "domain_feather_m": 32,
+  "patch_feather_m": 8,
+  "sampler": "float32 signed height; no source_color; linear/no mipmaps; exact texel-center UV"
+}

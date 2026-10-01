@@ -1,0 +1,81 @@
+raster 0 20862 0.0
+raster 5000 20862 0.17
+raster 10000 20862 0.31
+raster 15000 20862 0.47
+raster 20000 20862 0.62
+{
+  "width": 769,
+  "height": 1537,
+  "covered_samples": 1181953,
+  "minimum_height_y": -95.0,
+  "maximum_height_y": 203.2779541015625,
+  "maximum_depth_m": 95.0,
+  "validation": {
+    "seed": 490050,
+    "bvh_nodes": 2047,
+    "grid_point_height_error": {
+      "count": 2500,
+      "max_m": 7.50389503423321e-06,
+      "mean_m": 7.219548611678172e-07,
+      "p95_m": 2.4712503268631265e-06,
+      "p99_m": 3.7029767571539176e-06
+    },
+    "random_continuous_bilinear_height_error": {
+      "count": 4000,
+      "max_m": 6.864974228398594,
+      "mean_m": 0.006220378453024448,
+      "p95_m": 0.009681804139837482,
+      "p99_m": 0.099415747817109
+    },
+    "random_water_vertical_depth_error": {
+      "count": 2075,
+      "max_m": 6.864974228398594,
+      "mean_m": 0.007355756308304976,
+      "p95_m": 0.0035928017865597185,
+      "p99_m": 0.04009964779652327
+    },
+    "actual_exposed_shore_zero_height_error": {
+      "count": 2180,
+      "max_m": 25.015458071728442,
+      "mean_m": 1.2813871927248026,
+      "p95_m": 10.381492508984431,
+      "p99_m": 18.785332967090362
+    },
+    "actual_exposed_shore_texture_zero_offset": {
+      "count": 2165,
+      "max_m": 1.9057620588227924,
+      "mean_m": 0.17109676535244994,
+      "p95_m": 0.7233341049001312,
+      "p99_m": 1.0770508407996424
+    },
+    "shore_zero_not_found_within_2m": 15,
+    "note": "Grid-point error tests storage/raster correctness. Continuous and shoreline errors quantify expected 1m bilinear approximation, including steep island sides and upper-envelope mesh transitions; they are NOT claimed zero."
+  },
+  "domain_edges": {
+    "west": {
+      "min_height_y": -23.150299072265625,
+      "max_height_y": 152.73641967773438,
+      "water_samples": 110,
+      "total_samples": 1537
+    },
+    "east": {
+      "min_height_y": 15.0,
+      "max_height_y": 78.2271728515625,
+      "water_samples": 0,
+      "total_samples": 1537
+    },
+    "north_z_min": {
+      "min_height_y": 32.88035202026367,
+      "max_height_y": 203.2779541015625,
+      "water_samples": 0,
+      "total_samples": 769
+    },
+    "south_z_max": {
+      "min_height_y": -1.0532000064849854,
+      "max_height_y": 21.51289939880371,
+      "water_samples": 423,
+      "total_samples": 769
+    }
+  },
+  "elapsed_seconds": 4.901760101318359
+}

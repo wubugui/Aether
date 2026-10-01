@@ -1,0 +1,3481 @@
+{
+  "purpose": "Actual49 support BVH versus1m signed-height sampling around every island side; diagnostic, not material acceptance",
+  "island_count": 4,
+  "sides_per_island": 8,
+  "sample_offsets_m": [
+    -2,
+    -1,
+    -0.5,
+    0,
+    0.5,
+    1,
+    2,
+    4
+  ],
+  "samples": [
+    {
+      "island": "island_near_left",
+      "side": "east",
+      "actual_shore_source_mesh": "World/LakeIslands49/island_near_left/Meshes/island_near_left_wetshore_00",
+      "actual_shore_world_xz": [
+        1077.1130996340544,
+        -1154.8947954913451
+      ],
+      "selected_shore_angular_distance_degrees": 8.666525654073823,
+      "samples": [
+        {
+          "offset_m_from_actual_shore": -2,
+          "world_xz": [
+            1075.1359354533506,
+            -1154.5934289329114
+          ],
+          "actual_highest_y": 0.9136510992336127,
+          "baked_linear_height_y": 1.049460586304459,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -1,
+          "world_xz": [
+            1076.1245175437025,
+            -1154.7441122121281
+          ],
+          "actual_highest_y": 0.4597009153715072,
+          "baked_linear_height_y": 0.0466715954816298,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -0.5,
+          "world_xz": [
+            1076.6188085888784,
+            -1154.8194538517366
+          ],
+          "actual_highest_y": 0.23272582344044943,
+          "baked_linear_height_y": -1.623821447942368,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 1.623821447942368,
+          "depth_error_m": 1.623821447942368
+        },
+        {
+          "offset_m_from_actual_shore": 0,
+          "world_xz": [
+            1077.1130996340544,
+            -1154.8947954913451
+          ],
+          "actual_highest_y": 6.311617894994015e-14,
+          "baked_linear_height_y": -4.094100314824813,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 4.094100314824813,
+          "depth_error_m": 4.094100314824813
+        },
+        {
+          "offset_m_from_actual_shore": 0.5,
+          "world_xz": [
+            1077.6073906792303,
+            -1154.9701371309536
+          ],
+          "actual_highest_y": -22.569161318654103,
+          "baked_linear_height_y": -13.873053456831393,
+          "actual_depth_m": 22.569161318654103,
+          "baked_signed_height_depth_m": 13.873053456831393,
+          "depth_error_m": 8.69610786182271
+        },
+        {
+          "offset_m_from_actual_shore": 1,
+          "world_xz": [
+            1078.1016817244063,
+            -1155.045478770562
+          ],
+          "actual_highest_y": -22.557988794471463,
+          "baked_linear_height_y": -22.55798871549746,
+          "actual_depth_m": 22.557988794471463,
+          "baked_signed_height_depth_m": 22.55798871549746,
+          "depth_error_m": 7.897400422507417e-08
+        },
+        {
+          "offset_m_from_actual_shore": 2,
+          "world_xz": [
+            1079.0902638147581,
+            -1155.1961620497789
+          ],
+          "actual_highest_y": -22.53564374610618,
+          "baked_linear_height_y": -22.535644229569748,
+          "actual_depth_m": 22.53564374610618,
+          "baked_signed_height_depth_m": 22.535644229569748,
+          "depth_error_m": 4.83463566069986e-07
+        },
+        {
+          "offset_m_from_actual_shore": 4,
+          "world_xz": [
+            1081.0674279954617,
+            -1155.4975286082129
+          ],
+          "actual_highest_y": -22.490953649375623,
+          "baked_linear_height_y": -22.490953802872877,
+          "actual_depth_m": 22.490953649375623,
+          "baked_signed_height_depth_m": 22.490953802872877,
+          "depth_error_m": 1.5349725401847536e-07
+        }
+      ]
+    },
+    {
+      "island": "island_near_left",
+      "side": "southeast",
+      "actual_shore_source_mesh": "World/LakeIslands49/island_near_left/Meshes/island_near_left_wetshore_05",
+      "actual_shore_world_xz": [
+        1061.5248320743024,
+        -1134.0821312120747
+      ],
+      "selected_shore_angular_distance_degrees": 1.0718089768383547,
+      "samples": [
+        {
+          "offset_m_from_actual_shore": -2,
+          "world_xz": [
+            1060.084412369049,
+            -1135.4696437607452
+          ],
+          "actual_highest_y": 0.9663636429453639,
+          "baked_linear_height_y": 0.9427561879251152,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -1,
+          "world_xz": [
+            1060.8046222216756,
+            -1134.7758874864098
+          ],
+          "actual_highest_y": 0.5315670187179448,
+          "baked_linear_height_y": -4.706483398380964,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 4.706483398380964,
+          "depth_error_m": 4.706483398380964
+        },
+        {
+          "offset_m_from_actual_shore": -0.5,
+          "world_xz": [
+            1061.164727147989,
+            -1134.4290093492423
+          ],
+          "actual_highest_y": 0.3141687066043023,
+          "baked_linear_height_y": -10.819626302724755,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 10.819626302724755,
+          "depth_error_m": 10.819626302724755
+        },
+        {
+          "offset_m_from_actual_shore": 0,
+          "world_xz": [
+            1061.5248320743024,
+            -1134.0821312120747
+          ],
+          "actual_highest_y": 8.305856002976952e-15,
+          "baked_linear_height_y": -10.044563589284513,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 10.044563589284513,
+          "depth_error_m": 10.044563589284513
+        },
+        {
+          "offset_m_from_actual_shore": 0.5,
+          "world_xz": [
+            1061.8849370006158,
+            -1133.7352530749072
+          ],
+          "actual_highest_y": 0.009426986041368466,
+          "baked_linear_height_y": -8.051847434007142,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 8.051847434007142,
+          "depth_error_m": 8.051847434007142
+        },
+        {
+          "offset_m_from_actual_shore": 1,
+          "world_xz": [
+            1062.2450419269292,
+            -1133.3883749377396
+          ],
+          "actual_highest_y": -23.293254741996357,
+          "baked_linear_height_y": -10.650819425573761,
+          "actual_depth_m": 23.293254741996357,
+          "baked_signed_height_depth_m": 10.650819425573761,
+          "depth_error_m": 12.642435316422596
+        },
+        {
+          "offset_m_from_actual_shore": 2,
+          "world_xz": [
+            1062.9652517795557,
+            -1132.6946186634043
+          ],
+          "actual_highest_y": -23.29140068328771,
+          "baked_linear_height_y": -7.576569772338642,
+          "actual_depth_m": 23.29140068328771,
+          "baked_signed_height_depth_m": 7.576569772338642,
+          "depth_error_m": 15.714830910949066
+        },
+        {
+          "offset_m_from_actual_shore": 4,
+          "world_xz": [
+            1064.405671484809,
+            -1131.3071061147339
+          ],
+          "actual_highest_y": -23.28784535713011,
+          "baked_linear_height_y": -23.2878449372287,
+          "actual_depth_m": 23.28784535713011,
+          "baked_signed_height_depth_m": 23.2878449372287,
+          "depth_error_m": 4.1990140786651864e-07
+        }
+      ]
+    },
+    {
+      "island": "island_near_left",
+      "side": "south",
+      "actual_shore_source_mesh": "World/LakeIslands49/island_near_left/Meshes/island_near_left_wetshore_04",
+      "actual_shore_world_xz": [
+        1044.2851747408795,
+        -1128.9500125159966
+      ],
+      "selected_shore_angular_distance_degrees": 1.944929325694911,
+      "samples": [
+        {
+          "offset_m_from_actual_shore": -2,
+          "world_xz": [
+            1044.353052544194,
+            -1130.9488603350708
+          ],
+          "actual_highest_y": 1.5141439264241603,
+          "baked_linear_height_y": 1.4270073451593603,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -1,
+          "world_xz": [
+            1044.3191136425366,
+            -1129.9494364255336
+          ],
+          "actual_highest_y": 0.9996446190835524,
+          "baked_linear_height_y": 1.013637766721154,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -0.5,
+          "world_xz": [
+            1044.302144191708,
+            -1129.4497244707652
+          ],
+          "actual_highest_y": 0.3494130845356076,
+          "baked_linear_height_y": 0.49960241626157265,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": 0,
+          "world_xz": [
+            1044.2851747408795,
+            -1128.9500125159966
+          ],
+          "actual_highest_y": 8.162914788556463e-14,
+          "baked_linear_height_y": -1.1568479157271072,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 1.1568479157271072,
+          "depth_error_m": 1.1568479157271072
+        },
+        {
+          "offset_m_from_actual_shore": 0.5,
+          "world_xz": [
+            1044.268205290051,
+            -1128.450300561228
+          ],
+          "actual_highest_y": -23.793644409187852,
+          "baked_linear_height_y": -13.06983813699671,
+          "actual_depth_m": 23.793644409187852,
+          "baked_signed_height_depth_m": 13.06983813699671,
+          "depth_error_m": 10.723806272191142
+        },
+        {
+          "offset_m_from_actual_shore": 1,
+          "world_xz": [
+            1044.2512358392223,
+            -1127.9505886064596
+          ],
+          "actual_highest_y": -23.80415030658597,
+          "baked_linear_height_y": -23.804150109493524,
+          "actual_depth_m": 23.80415030658597,
+          "baked_signed_height_depth_m": 23.804150109493524,
+          "depth_error_m": 1.9709244725163444e-07
+        },
+        {
+          "offset_m_from_actual_shore": 2,
+          "world_xz": [
+            1044.217296937565,
+            -1126.9511646969224
+          ],
+          "actual_highest_y": -23.825162101382222,
+          "baked_linear_height_y": -23.825161648763853,
+          "actual_depth_m": 23.825162101382222,
+          "baked_signed_height_depth_m": 23.825161648763853,
+          "depth_error_m": 4.526183694508745e-07
+        },
+        {
+          "offset_m_from_actual_shore": 4,
+          "world_xz": [
+            1044.1494191342504,
+            -1124.9523168778485
+          ],
+          "actual_highest_y": -23.8671856909747,
+          "baked_linear_height_y": -23.867140827662524,
+          "actual_depth_m": 23.8671856909747,
+          "baked_signed_height_depth_m": 23.867140827662524,
+          "depth_error_m": 4.4863312176346426e-05
+        }
+      ]
+    },
+    {
+      "island": "island_near_left",
+      "side": "southwest",
+      "actual_shore_source_mesh": "World/LakeIslands49/island_near_left/Meshes/island_near_left_shoulder",
+      "actual_shore_world_xz": [
+        1029.4827466123984,
+        -1134.4126675877183
+      ],
+      "selected_shore_angular_distance_degrees": 0.12908789651006752,
+      "samples": [
+        {
+          "offset_m_from_actual_shore": -2,
+          "world_xz": [
+            1030.8937703525328,
+            -1135.8300637937161
+          ],
+          "actual_highest_y": 1.3097847093558652,
+          "baked_linear_height_y": 1.2999049869173491,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -1,
+          "world_xz": [
+            1030.1882584824655,
+            -1135.1213656907173
+          ],
+          "actual_highest_y": 0.6548923546779806,
+          "baked_linear_height_y": 0.6477485829280729,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -0.5,
+          "world_xz": [
+            1029.835502547432,
+            -1134.7670166392177
+          ],
+          "actual_highest_y": 0.3274461773388702,
+          "baked_linear_height_y": -4.434274189482975,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 4.434274189482975,
+          "depth_error_m": 4.434274189482975
+        },
+        {
+          "offset_m_from_actual_shore": 0,
+          "world_xz": [
+            1029.4827466123984,
+            -1134.4126675877183
+          ],
+          "actual_highest_y": -7.232322379868705e-14,
+          "baked_linear_height_y": -12.583976006940436,
+          "actual_depth_m": 7.232322379868705e-14,
+          "baked_signed_height_depth_m": 12.583976006940436,
+          "depth_error_m": 12.583976006940363
+        },
+        {
+          "offset_m_from_actual_shore": 0.5,
+          "world_xz": [
+            1029.1299906773647,
+            -1134.0583185362188
+          ],
+          "actual_highest_y": -21.35025306351882,
+          "baked_linear_height_y": -21.433600701076305,
+          "actual_depth_m": 21.35025306351882,
+          "baked_signed_height_depth_m": 21.433600701076305,
+          "depth_error_m": 0.08334763755748398
+        },
+        {
+          "offset_m_from_actual_shore": 1,
+          "world_xz": [
+            1028.7772347423313,
+            -1133.7039694847192
+          ],
+          "actual_highest_y": -24.04205914701305,
+          "baked_linear_height_y": -23.568298377294376,
+          "actual_depth_m": 24.04205914701305,
+          "baked_signed_height_depth_m": 23.568298377294376,
+          "depth_error_m": 0.4737607697186732
+        },
+        {
+          "offset_m_from_actual_shore": 2,
+          "world_xz": [
+            1028.071722872264,
+            -1132.9952713817204
+          ],
+          "actual_highest_y": -24.07225957587907,
+          "baked_linear_height_y": -24.07224696338426,
+          "actual_depth_m": 24.07225957587907,
+          "baked_signed_height_depth_m": 24.07224696338426,
+          "depth_error_m": 1.261249481032678e-05
+        },
+        {
+          "offset_m_from_actual_shore": 4,
+          "world_xz": [
+            1026.6606991321298,
+            -1131.5778751757225
+          ],
+          "actual_highest_y": -24.13244877346994,
+          "baked_linear_height_y": -24.132460502790604,
+          "actual_depth_m": 24.13244877346994,
+          "baked_signed_height_depth_m": 24.132460502790604,
+          "depth_error_m": 1.1729320664954912e-05
+        }
+      ]
+    },
+    {
+      "island": "island_near_left",
+      "side": "west",
+      "actual_shore_source_mesh": "World/LakeIslands49/island_near_left/Meshes/island_near_left_shoulder",
+      "actual_shore_world_xz": [
+        1012.6674078064615,
+        -1149.8914790003755
+      ],
+      "selected_shore_angular_distance_degrees": 0.19230663230828757,
+      "samples": [
+        {
+          "offset_m_from_actual_shore": -2,
+          "world_xz": [
+            1014.6673965411592,
+            -1149.8981917555864
+          ],
+          "actual_highest_y": 0.6523110232607584,
+          "baked_linear_height_y": 0.6326355750371868,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -1,
+          "world_xz": [
+            1013.6674021738103,
+            -1149.8948353779808
+          ],
+          "actual_highest_y": 0.32615551163036954,
+          "baked_linear_height_y": 0.30119110816846834,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -0.5,
+          "world_xz": [
+            1013.1674049901359,
+            -1149.8931571891783
+          ],
+          "actual_highest_y": 0.163077755815151,
+          "baked_linear_height_y": 0.1368992757126301,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": 0,
+          "world_xz": [
+            1012.6674078064615,
+            -1149.8914790003755
+          ],
+          "actual_highest_y": -2.4820423494276156e-14,
+          "baked_linear_height_y": -0.16348569612856947,
+          "actual_depth_m": 2.4820423494276156e-14,
+          "baked_signed_height_depth_m": 0.16348569612856947,
+          "depth_error_m": 0.16348569612854466
+        },
+        {
+          "offset_m_from_actual_shore": 0.5,
+          "world_xz": [
+            1012.1674106227871,
+            -1149.8898008115727
+          ],
+          "actual_highest_y": -0.21642985233662354,
+          "baked_linear_height_y": -0.5366690572536799,
+          "actual_depth_m": 0.21642985233662354,
+          "baked_signed_height_depth_m": 0.5366690572536799,
+          "depth_error_m": 0.3202392049170563
+        },
+        {
+          "offset_m_from_actual_shore": 1,
+          "world_xz": [
+            1011.6674134391127,
+            -1149.8881226227702
+          ],
+          "actual_highest_y": -0.3400000035762787,
+          "baked_linear_height_y": -1.1362639089484838,
+          "actual_depth_m": 0.3400000035762787,
+          "baked_signed_height_depth_m": 1.1362639089484838,
+          "depth_error_m": 0.7962639053722051
+        },
+        {
+          "offset_m_from_actual_shore": 2,
+          "world_xz": [
+            1010.6674190717638,
+            -1149.8847662451647
+          ],
+          "actual_highest_y": -6.265713861554762,
+          "baked_linear_height_y": -6.10757860960967,
+          "actual_depth_m": 6.265713861554762,
+          "baked_signed_height_depth_m": 6.10757860960967,
+          "depth_error_m": 0.15813525194509204
+        },
+        {
+          "offset_m_from_actual_shore": 4,
+          "world_xz": [
+            1008.6674303370662,
+            -1149.8780534899538
+          ],
+          "actual_highest_y": -24.206798146999986,
+          "baked_linear_height_y": -24.20679802410871,
+          "actual_depth_m": 24.206798146999986,
+          "baked_signed_height_depth_m": 24.20679802410871,
+          "depth_error_m": 1.2289127582221226e-07
+        }
+      ]
+    },
+    {
+      "island": "island_near_left",
+      "side": "northwest",
+      "actual_shore_source_mesh": "World/LakeIslands49/island_near_left/Meshes/island_near_left_shoulder",
+      "actual_shore_world_xz": [
+        1030.3376401186508,
+        -1163.3286654608476
+      ],
+      "selected_shore_angular_distance_degrees": 2.7279212491675726,
+      "samples": [
+        {
+          "offset_m_from_actual_shore": -2,
+          "world_xz": [
+            1031.8175580747952,
+            -1161.9833614643169
+          ],
+          "actual_highest_y": 0.5934735355368621,
+          "baked_linear_height_y": 0.5934735558443723,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -1,
+          "world_xz": [
+            1031.0775990967231,
+            -1162.6560134625822
+          ],
+          "actual_highest_y": 0.3743182331119384,
+          "baked_linear_height_y": 0.3743182263496862,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -0.5,
+          "world_xz": [
+            1030.7076196076869,
+            -1162.992339461715
+          ],
+          "actual_highest_y": 0.26474058189943583,
+          "baked_linear_height_y": 0.21000892434329763,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": 0,
+          "world_xz": [
+            1030.3376401186508,
+            -1163.3286654608476
+          ],
+          "actual_highest_y": 4.1244785364824565e-14,
+          "baked_linear_height_y": -0.015281198882241553,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0.015281198882241553,
+          "depth_error_m": 0.015281198882241553
+        },
+        {
+          "offset_m_from_actual_shore": 0.5,
+          "world_xz": [
+            1029.9676606296148,
+            -1163.6649914599802
+          ],
+          "actual_highest_y": -0.3400000035762787,
+          "baked_linear_height_y": -0.4203589723854039,
+          "actual_depth_m": 0.3400000035762787,
+          "baked_signed_height_depth_m": 0.4203589723854039,
+          "depth_error_m": 0.08035896880912519
+        },
+        {
+          "offset_m_from_actual_shore": 1,
+          "world_xz": [
+            1029.5976811405785,
+            -1164.001317459113
+          ],
+          "actual_highest_y": -0.3400000035762787,
+          "baked_linear_height_y": -3.6051490620406597,
+          "actual_depth_m": 0.3400000035762787,
+          "baked_signed_height_depth_m": 3.6051490620406597,
+          "depth_error_m": 3.265149058464381
+        },
+        {
+          "offset_m_from_actual_shore": 2,
+          "world_xz": [
+            1028.8577221625064,
+            -1164.6739694573782
+          ],
+          "actual_highest_y": -18.789148536753643,
+          "baked_linear_height_y": -17.54108128711325,
+          "actual_depth_m": 18.789148536753643,
+          "baked_signed_height_depth_m": 17.54108128711325,
+          "depth_error_m": 1.2480672496403926
+        },
+        {
+          "offset_m_from_actual_shore": 4,
+          "world_xz": [
+            1027.377804206362,
+            -1166.019273453909
+          ],
+          "actual_highest_y": -23.510321536251396,
+          "baked_linear_height_y": -23.510326576625868,
+          "actual_depth_m": 23.510321536251396,
+          "baked_signed_height_depth_m": 23.510326576625868,
+          "depth_error_m": 5.04037447157657e-06
+        }
+      ]
+    },
+    {
+      "island": "island_near_left",
+      "side": "north",
+      "actual_shore_source_mesh": "World/LakeIslands49/island_near_left/Meshes/island_near_left_wetshore_01",
+      "actual_shore_world_xz": [
+        1044.9337874360872,
+        -1168.9802361362074
+      ],
+      "selected_shore_angular_distance_degrees": 0.19987554667466825,
+      "samples": [
+        {
+          "offset_m_from_actual_shore": -2,
+          "world_xz": [
+            1044.9407643947036,
+            -1166.9802483057324
+          ],
+          "actual_highest_y": 1.149673373380516,
+          "baked_linear_height_y": 1.1494042921966305,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -1,
+          "world_xz": [
+            1044.9372759153953,
+            -1167.9802422209698
+          ],
+          "actual_highest_y": 0.6081472767296048,
+          "baked_linear_height_y": 0.605895690827086,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -0.5,
+          "world_xz": [
+            1044.9355316757412,
+            -1168.4802391785886
+          ],
+          "actual_highest_y": 0.270468201079051,
+          "baked_linear_height_y": -0.40862960028574,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0.40862960028574,
+          "depth_error_m": 0.40862960028574
+        },
+        {
+          "offset_m_from_actual_shore": 0,
+          "world_xz": [
+            1044.9337874360872,
+            -1168.9802361362074
+          ],
+          "actual_highest_y": -8.784639682346551e-15,
+          "baked_linear_height_y": -1.4928342396557879,
+          "actual_depth_m": 8.784639682346551e-15,
+          "baked_signed_height_depth_m": 1.4928342396557879,
+          "depth_error_m": 1.492834239655779
+        },
+        {
+          "offset_m_from_actual_shore": 0.5,
+          "world_xz": [
+            1044.9320431964331,
+            -1169.4802330938262
+          ],
+          "actual_highest_y": -23.057671293895204,
+          "baked_linear_height_y": -11.888309581307169,
+          "actual_depth_m": 23.057671293895204,
+          "baked_signed_height_depth_m": 11.888309581307169,
+          "depth_error_m": 11.169361712588035
+        },
+        {
+          "offset_m_from_actual_shore": 1,
+          "world_xz": [
+            1044.930298956779,
+            -1169.980230051445
+          ],
+          "actual_highest_y": -23.050756845949845,
+          "baked_linear_height_y": -22.626712541387025,
+          "actual_depth_m": 23.050756845949845,
+          "baked_signed_height_depth_m": 22.626712541387025,
+          "depth_error_m": 0.4240443045628197
+        },
+        {
+          "offset_m_from_actual_shore": 2,
+          "world_xz": [
+            1044.9268104774708,
+            -1170.9802239666824
+          ],
+          "actual_highest_y": -23.03692795005913,
+          "baked_linear_height_y": -23.036927974307122,
+          "actual_depth_m": 23.03692795005913,
+          "baked_signed_height_depth_m": 23.036927974307122,
+          "depth_error_m": 2.4247992058690215e-08
+        },
+        {
+          "offset_m_from_actual_shore": 4,
+          "world_xz": [
+            1044.9198335188546,
+            -1172.9802117971576
+          ],
+          "actual_highest_y": -23.00927015827768,
+          "baked_linear_height_y": -23.009271008635608,
+          "actual_depth_m": 23.00927015827768,
+          "baked_signed_height_depth_m": 23.009271008635608,
+          "depth_error_m": 8.503579280727536e-07
+        }
+      ]
+    },
+    {
+      "island": "island_near_left",
+      "side": "northeast",
+      "actual_shore_source_mesh": "World/LakeIslands49/island_near_left/Meshes/island_near_left_shoulder",
+      "actual_shore_world_xz": [
+        1056.7814930473114,
+        -1168.6270478764386
+      ],
+      "selected_shore_angular_distance_degrees": 12.686898997106498,
+      "samples": [
+        {
+          "offset_m_from_actual_shore": -2,
+          "world_xz": [
+            1055.712401828709,
+            -1166.9367686195383
+          ],
+          "actual_highest_y": 1.0482643557169482,
+          "baked_linear_height_y": 1.0357518816779971,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -1,
+          "world_xz": [
+            1056.2469474380102,
+            -1167.7819082479884
+          ],
+          "actual_highest_y": 0.5879834346873315,
+          "baked_linear_height_y": 0.581100441291535,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -0.5,
+          "world_xz": [
+            1056.514220242661,
+            -1168.2044780622136
+          ],
+          "actual_highest_y": 0.3578429741724651,
+          "baked_linear_height_y": 0.31306571026987673,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": 0,
+          "world_xz": [
+            1056.7814930473114,
+            -1168.6270478764386
+          ],
+          "actual_highest_y": -3.7192471324942744e-14,
+          "baked_linear_height_y": -0.02479940305159989,
+          "actual_depth_m": 3.7192471324942744e-14,
+          "baked_signed_height_depth_m": 0.02479940305159989,
+          "depth_error_m": 0.024799403051562696
+        },
+        {
+          "offset_m_from_actual_shore": 0.5,
+          "world_xz": [
+            1057.048765851962,
+            -1169.0496176906636
+          ],
+          "actual_highest_y": -0.3400000035762787,
+          "baked_linear_height_y": -1.1522349275837294,
+          "actual_depth_m": 0.3400000035762787,
+          "baked_signed_height_depth_m": 1.1522349275837294,
+          "depth_error_m": 0.8122349240074507
+        },
+        {
+          "offset_m_from_actual_shore": 1,
+          "world_xz": [
+            1057.3160386566126,
+            -1169.4721875048888
+          ],
+          "actual_highest_y": -4.060226379164856,
+          "baked_linear_height_y": -7.7077786404643165,
+          "actual_depth_m": 4.060226379164856,
+          "baked_signed_height_depth_m": 7.7077786404643165,
+          "depth_error_m": 3.6475522612994604
+        },
+        {
+          "offset_m_from_actual_shore": 2,
+          "world_xz": [
+            1057.8505842659138,
+            -1170.317327133339
+          ],
+          "actual_highest_y": -21.50344380022781,
+          "baked_linear_height_y": -17.00748067285018,
+          "actual_depth_m": 21.50344380022781,
+          "baked_signed_height_depth_m": 17.00748067285018,
+          "depth_error_m": 4.495963127377632
+        },
+        {
+          "offset_m_from_actual_shore": 4,
+          "world_xz": [
+            1058.9196754845161,
+            -1172.0076063902393
+          ],
+          "actual_highest_y": -22.706648242358696,
+          "baked_linear_height_y": -22.706648522542668,
+          "actual_depth_m": 22.706648242358696,
+          "baked_signed_height_depth_m": 22.706648522542668,
+          "depth_error_m": 2.8018397202345113e-07
+        }
+      ]
+    },
+    {
+      "island": "island_far_middle",
+      "side": "east",
+      "actual_shore_source_mesh": "World/LakeIslands49/island_far_middle/Meshes/island_far_middle_wetshore_00",
+      "actual_shore_world_xz": [
+        1093.4307225825773,
+        -1657.6956908839427
+      ],
+      "selected_shore_angular_distance_degrees": 12.963547436178786,
+      "samples": [
+        {
+          "offset_m_from_actual_shore": -2,
+          "world_xz": [
+            1091.4816966119377,
+            -1657.24702868833
+          ],
+          "actual_highest_y": 0.8928134533239577,
+          "baked_linear_height_y": 0.8775276580865239,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -1,
+          "world_xz": [
+            1092.4562095972576,
+            -1657.4713597861364
+          ],
+          "actual_highest_y": 0.5533828376630608,
+          "baked_linear_height_y": 0.5165728308407315,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -0.5,
+          "world_xz": [
+            1092.9434660899174,
+            -1657.5835253350394
+          ],
+          "actual_highest_y": 0.2763273794288772,
+          "baked_linear_height_y": 0.2725378190073954,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": 0,
+          "world_xz": [
+            1093.4307225825773,
+            -1657.6956908839427
+          ],
+          "actual_highest_y": 1.0711917464156784e-13,
+          "baked_linear_height_y": -9.236862807993056,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 9.236862807993056,
+          "depth_error_m": 9.236862807993056
+        },
+        {
+          "offset_m_from_actual_shore": 0.5,
+          "world_xz": [
+            1093.9179790752373,
+            -1657.807856432846
+          ],
+          "actual_highest_y": -20.461824072547973,
+          "baked_linear_height_y": -19.90928777333886,
+          "actual_depth_m": 20.461824072547973,
+          "baked_signed_height_depth_m": 19.90928777333886,
+          "depth_error_m": 0.5525362992091125
+        },
+        {
+          "offset_m_from_actual_shore": 1,
+          "world_xz": [
+            1094.405235567897,
+            -1657.920021981749
+          ],
+          "actual_highest_y": -27.818875479375492,
+          "baked_linear_height_y": -24.374511932002115,
+          "actual_depth_m": 27.818875479375492,
+          "baked_signed_height_depth_m": 24.374511932002115,
+          "depth_error_m": 3.444363547373378
+        },
+        {
+          "offset_m_from_actual_shore": 2,
+          "world_xz": [
+            1095.379748553217,
+            -1658.1443530795555
+          ],
+          "actual_highest_y": -28.344190074862023,
+          "baked_linear_height_y": -28.344189657310537,
+          "actual_depth_m": 28.344190074862023,
+          "baked_signed_height_depth_m": 28.344189657310537,
+          "depth_error_m": 4.175514867199581e-07
+        },
+        {
+          "offset_m_from_actual_shore": 4,
+          "world_xz": [
+            1097.3287745238567,
+            -1658.5930152751682
+          ],
+          "actual_highest_y": -28.309609645728692,
+          "baked_linear_height_y": -28.309610088662787,
+          "actual_depth_m": 28.309609645728692,
+          "baked_signed_height_depth_m": 28.309610088662787,
+          "depth_error_m": 4.4293409473539214e-07
+        }
+      ]
+    },
+    {
+      "island": "island_far_middle",
+      "side": "southeast",
+      "actual_shore_source_mesh": "World/LakeIslands49/island_far_middle/Meshes/island_far_middle_wetshore_05",
+      "actual_shore_world_xz": [
+        1077.4707945038242,
+        -1634.1132024290546
+      ],
+      "selected_shore_angular_distance_degrees": 2.718667963776201,
+      "samples": [
+        {
+          "offset_m_from_actual_shore": -2,
+          "world_xz": [
+            1075.9910938339733,
+            -1635.4587454152288
+          ],
+          "actual_highest_y": 0.590219079948079,
+          "baked_linear_height_y": 0.5697062466511368,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -1,
+          "world_xz": [
+            1076.7309441688988,
+            -1634.7859739221417
+          ],
+          "actual_highest_y": 0.234001398507577,
+          "baked_linear_height_y": -5.850727189229405,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 5.850727189229405,
+          "depth_error_m": 5.850727189229405
+        },
+        {
+          "offset_m_from_actual_shore": -0.5,
+          "world_xz": [
+            1077.1008693363615,
+            -1634.4495881755981
+          ],
+          "actual_highest_y": 0.05589255778732612,
+          "baked_linear_height_y": -13.985116194956328,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 13.985116194956328,
+          "depth_error_m": 13.985116194956328
+        },
+        {
+          "offset_m_from_actual_shore": 0,
+          "world_xz": [
+            1077.4707945038242,
+            -1634.1132024290546
+          ],
+          "actual_highest_y": 2.811639809863209e-14,
+          "baked_linear_height_y": -13.323578464887694,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 13.323578464887694,
+          "depth_error_m": 13.323578464887694
+        },
+        {
+          "offset_m_from_actual_shore": 0.5,
+          "world_xz": [
+            1077.840719671287,
+            -1633.776816682511
+          ],
+          "actual_highest_y": 0.013292406251411218,
+          "baked_linear_height_y": -9.835908741781749,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 9.835908741781749,
+          "depth_error_m": 9.835908741781749
+        },
+        {
+          "offset_m_from_actual_shore": 1,
+          "world_xz": [
+            1078.2106448387497,
+            -1633.4404309359675
+          ],
+          "actual_highest_y": -28.558488889181344,
+          "baked_linear_height_y": -12.522626447011515,
+          "actual_depth_m": 28.558488889181344,
+          "baked_signed_height_depth_m": 12.522626447011515,
+          "depth_error_m": 16.03586244216983
+        },
+        {
+          "offset_m_from_actual_shore": 2,
+          "world_xz": [
+            1078.950495173675,
+            -1632.7676594428804
+          ],
+          "actual_highest_y": -28.538117997868294,
+          "baked_linear_height_y": -7.620895584881295,
+          "actual_depth_m": 28.538117997868294,
+          "baked_signed_height_depth_m": 7.620895584881295,
+          "depth_error_m": 20.917222412986998
+        },
+        {
+          "offset_m_from_actual_shore": 4,
+          "world_xz": [
+            1080.430195843526,
+            -1631.422116456706
+          ],
+          "actual_highest_y": -28.49737621524219,
+          "baked_linear_height_y": -28.49737626363533,
+          "actual_depth_m": 28.49737621524219,
+          "baked_signed_height_depth_m": 28.49737626363533,
+          "depth_error_m": 4.8393140161806514e-08
+        }
+      ]
+    },
+    {
+      "island": "island_far_middle",
+      "side": "south",
+      "actual_shore_source_mesh": "World/LakeIslands49/island_far_middle/Meshes/island_far_middle_wetshore_04",
+      "actual_shore_world_xz": [
+        1062.992820793282,
+        -1629.7116814994188
+      ],
+      "selected_shore_angular_distance_degrees": 8.391439098297258,
+      "samples": [
+        {
+          "offset_m_from_actual_shore": -2,
+          "world_xz": [
+            1062.7009503654922,
+            -1631.6902697975197
+          ],
+          "actual_highest_y": 0.9194409053124339,
+          "baked_linear_height_y": 0.8697425236692122,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -1,
+          "world_xz": [
+            1062.846885579387,
+            -1630.7009756484692
+          ],
+          "actual_highest_y": 0.5550740475394077,
+          "baked_linear_height_y": 0.5366390879110933,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -0.5,
+          "world_xz": [
+            1062.9198531863344,
+            -1630.206328573944
+          ],
+          "actual_highest_y": 0.28211274432546984,
+          "baked_linear_height_y": 0.2753665029543542,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": 0,
+          "world_xz": [
+            1062.992820793282,
+            -1629.7116814994188
+          ],
+          "actual_highest_y": 1.0630038516090679e-13,
+          "baked_linear_height_y": -8.213233735494347,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 8.213233735494347,
+          "depth_error_m": 8.213233735494347
+        },
+        {
+          "offset_m_from_actual_shore": 0.5,
+          "world_xz": [
+            1063.0657884002294,
+            -1629.2170344248937
+          ],
+          "actual_highest_y": -28.85497967467166,
+          "baked_linear_height_y": -22.973197789994458,
+          "actual_depth_m": 28.85497967467166,
+          "baked_signed_height_depth_m": 22.973197789994458,
+          "depth_error_m": 5.881781884677203
+        },
+        {
+          "offset_m_from_actual_shore": 1,
+          "world_xz": [
+            1063.1387560071769,
+            -1628.7223873503683
+          ],
+          "actual_highest_y": -28.84962672522862,
+          "baked_linear_height_y": -28.849626716695155,
+          "actual_depth_m": 28.84962672522862,
+          "baked_signed_height_depth_m": 28.849626716695155,
+          "depth_error_m": 8.533465489790615e-09
+        },
+        {
+          "offset_m_from_actual_shore": 2,
+          "world_xz": [
+            1063.2846912210716,
+            -1627.7330932013178
+          ],
+          "actual_highest_y": -28.83892082634255,
+          "baked_linear_height_y": -28.838603620096748,
+          "actual_depth_m": 28.83892082634255,
+          "baked_signed_height_depth_m": 28.838603620096748,
+          "depth_error_m": 0.0003172062458034475
+        },
+        {
+          "offset_m_from_actual_shore": 4,
+          "world_xz": [
+            1063.5765616488616,
+            -1625.754504903217
+          ],
+          "actual_highest_y": -28.811762752644047,
+          "baked_linear_height_y": -28.811762514912864,
+          "actual_depth_m": 28.811762752644047,
+          "baked_signed_height_depth_m": 28.811762514912864,
+          "depth_error_m": 2.3773118229541979e-07
+        }
+      ]
+    },
+    {
+      "island": "island_far_middle",
+      "side": "southwest",
+      "actual_shore_source_mesh": "World/LakeIslands49/island_far_middle/Meshes/island_far_middle_shoulder",
+      "actual_shore_world_xz": [
+        1036.3528464114186,
+        -1635.783980831619
+      ],
+      "selected_shore_angular_distance_degrees": 13.986871178522437,
+      "samples": [
+        {
+          "offset_m_from_actual_shore": -2,
+          "world_xz": [
+            1038.0669449349732,
+            -1636.8144497790151
+          ],
+          "actual_highest_y": 0.48009784758540425,
+          "baked_linear_height_y": 0.48009784140756684,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -1,
+          "world_xz": [
+            1037.209895673196,
+            -1636.2992153053171
+          ],
+          "actual_highest_y": 0.35698006417787875,
+          "baked_linear_height_y": 0.35698006462334037,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -0.5,
+          "world_xz": [
+            1036.7813710423072,
+            -1636.041598068468
+          ],
+          "actual_highest_y": 0.29542117247410893,
+          "baked_linear_height_y": 0.19639523730906736,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": 0,
+          "world_xz": [
+            1036.3528464114186,
+            -1635.783980831619
+          ],
+          "actual_highest_y": 3.0378477511305846e-13,
+          "baked_linear_height_y": -4.414247645744242,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 4.414247645744242,
+          "depth_error_m": 4.414247645744242
+        },
+        {
+          "offset_m_from_actual_shore": 0.5,
+          "world_xz": [
+            1035.92432178053,
+            -1635.52636359477
+          ],
+          "actual_highest_y": -5.734734626684334,
+          "baked_linear_height_y": -10.713385992401149,
+          "actual_depth_m": 5.734734626684334,
+          "baked_signed_height_depth_m": 10.713385992401149,
+          "depth_error_m": 4.978651365716814
+        },
+        {
+          "offset_m_from_actual_shore": 1,
+          "world_xz": [
+            1035.4957971496412,
+            -1635.2687463579207
+          ],
+          "actual_highest_y": -14.939807211106316,
+          "baked_linear_height_y": -18.036529566539226,
+          "actual_depth_m": 14.939807211106316,
+          "baked_signed_height_depth_m": 18.036529566539226,
+          "depth_error_m": 3.0967223554329095
+        },
+        {
+          "offset_m_from_actual_shore": 2,
+          "world_xz": [
+            1034.638747887864,
+            -1634.7535118842227
+          ],
+          "actual_highest_y": -29.533507958275536,
+          "baked_linear_height_y": -27.21242501605941,
+          "actual_depth_m": 29.533507958275536,
+          "baked_signed_height_depth_m": 27.21242501605941,
+          "depth_error_m": 2.321082942216126
+        },
+        {
+          "offset_m_from_actual_shore": 4,
+          "world_xz": [
+            1032.9246493643095,
+            -1633.7230429368262
+          ],
+          "actual_highest_y": -29.56556973079578,
+          "baked_linear_height_y": -29.565569585076457,
+          "actual_depth_m": 29.56556973079578,
+          "baked_signed_height_depth_m": 29.565569585076457,
+          "depth_error_m": 1.4571932283047317e-07
+        }
+      ]
+    },
+    {
+      "island": "island_far_middle",
+      "side": "west",
+      "actual_shore_source_mesh": "World/LakeIslands49/island_far_middle/Meshes/island_far_middle_shoulder",
+      "actual_shore_world_xz": [
+        1025.3068455310677,
+        -1649.7929392806757
+      ],
+      "selected_shore_angular_distance_degrees": 0.3419569260446047,
+      "samples": [
+        {
+          "offset_m_from_actual_shore": -2,
+          "world_xz": [
+            1027.3068099108757,
+            -1649.8048757583308
+          ],
+          "actual_highest_y": 0.49962237330592146,
+          "baked_linear_height_y": 0.46867268975024606,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -1,
+          "world_xz": [
+            1026.3068277209718,
+            -1649.7989075195032
+          ],
+          "actual_highest_y": 0.29867096374963664,
+          "baked_linear_height_y": 0.26502189561671297,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -0.5,
+          "world_xz": [
+            1025.8068366260197,
+            -1649.7959234000896
+          ],
+          "actual_highest_y": 0.19819525897145435,
+          "baked_linear_height_y": -0.06914488374960669,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0.06914488374960669,
+          "depth_error_m": 0.06914488374960669
+        },
+        {
+          "offset_m_from_actual_shore": 0,
+          "world_xz": [
+            1025.3068455310677,
+            -1649.7929392806757
+          ],
+          "actual_highest_y": 1.1539380562197721e-14,
+          "baked_linear_height_y": -0.7843146396744647,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0.7843146396744647,
+          "depth_error_m": 0.7843146396744647
+        },
+        {
+          "offset_m_from_actual_shore": 0.5,
+          "world_xz": [
+            1024.8068544361156,
+            -1649.7899551612618
+          ],
+          "actual_highest_y": -0.253179697107482,
+          "baked_linear_height_y": -1.835879623363967,
+          "actual_depth_m": 0.253179697107482,
+          "baked_signed_height_depth_m": 1.835879623363967,
+          "depth_error_m": 1.582699926256485
+        },
+        {
+          "offset_m_from_actual_shore": 1,
+          "world_xz": [
+            1024.3068633411635,
+            -1649.7869710418481
+          ],
+          "actual_highest_y": -0.3400000035762787,
+          "baked_linear_height_y": -3.4332107675846295,
+          "actual_depth_m": 0.3400000035762787,
+          "baked_signed_height_depth_m": 3.4332107675846295,
+          "depth_error_m": 3.093210764008351
+        },
+        {
+          "offset_m_from_actual_shore": 2,
+          "world_xz": [
+            1023.3068811512595,
+            -1649.7810028030206
+          ],
+          "actual_highest_y": -14.487663640493786,
+          "baked_linear_height_y": -13.89643115086287,
+          "actual_depth_m": 14.487663640493786,
+          "baked_signed_height_depth_m": 13.89643115086287,
+          "depth_error_m": 0.5912324896309151
+        },
+        {
+          "offset_m_from_actual_shore": 4,
+          "world_xz": [
+            1021.3069167714515,
+            -1649.7690663253654
+          ],
+          "actual_highest_y": -29.93450561082707,
+          "baked_linear_height_y": -29.746042481057696,
+          "actual_depth_m": 29.93450561082707,
+          "baked_signed_height_depth_m": 29.746042481057696,
+          "depth_error_m": 0.1884631297693744
+        }
+      ]
+    },
+    {
+      "island": "island_far_middle",
+      "side": "northwest",
+      "actual_shore_source_mesh": "World/LakeIslands49/island_far_middle/Meshes/island_far_middle_shoulder",
+      "actual_shore_world_xz": [
+        1045.4326863113397,
+        -1664.4979022140276
+      ],
+      "selected_shore_angular_distance_degrees": 0.13682943209909934,
+      "samples": [
+        {
+          "offset_m_from_actual_shore": -2,
+          "world_xz": [
+            1046.850273155274,
+            -1663.0870699986651
+          ],
+          "actual_highest_y": 0.5080824727856699,
+          "baked_linear_height_y": 0.5080824902574602,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -1,
+          "world_xz": [
+            1046.1414797333068,
+            -1663.7924861063464
+          ],
+          "actual_highest_y": 0.35500981557538314,
+          "baked_linear_height_y": 0.3550098184801221,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -0.5,
+          "world_xz": [
+            1045.7870830223233,
+            -1664.145194160187
+          ],
+          "actual_highest_y": 0.2784734869702398,
+          "baked_linear_height_y": 0.21134993522396922,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": 0,
+          "world_xz": [
+            1045.4326863113397,
+            -1664.4979022140276
+          ],
+          "actual_highest_y": 5.4012350148013866e-14,
+          "baked_linear_height_y": -0.011415595356662575,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0.011415595356662575,
+          "depth_error_m": 0.011415595356662575
+        },
+        {
+          "offset_m_from_actual_shore": 0.5,
+          "world_xz": [
+            1045.0782896003561,
+            -1664.8506102678682
+          ],
+          "actual_highest_y": -0.34000000357627874,
+          "baked_linear_height_y": -0.2601251570140224,
+          "actual_depth_m": 0.34000000357627874,
+          "baked_signed_height_depth_m": 0.2601251570140224,
+          "depth_error_m": 0.07987484656225635
+        },
+        {
+          "offset_m_from_actual_shore": 1,
+          "world_xz": [
+            1044.7238928893726,
+            -1665.2033183217088
+          ],
+          "actual_highest_y": -0.34000000357627874,
+          "baked_linear_height_y": -3.939421465448015,
+          "actual_depth_m": 0.34000000357627874,
+          "baked_signed_height_depth_m": 3.939421465448015,
+          "depth_error_m": 3.5994214618717364
+        },
+        {
+          "offset_m_from_actual_shore": 2,
+          "world_xz": [
+            1044.0150994674054,
+            -1665.90873442939
+          ],
+          "actual_highest_y": -21.34523611476237,
+          "baked_linear_height_y": -21.36373967413095,
+          "actual_depth_m": 21.34523611476237,
+          "baked_signed_height_depth_m": 21.36373967413095,
+          "depth_error_m": 0.0185035593685825
+        },
+        {
+          "offset_m_from_actual_shore": 4,
+          "world_xz": [
+            1042.5975126234712,
+            -1667.3195666447523
+          ],
+          "actual_highest_y": -29.494949017795683,
+          "baked_linear_height_y": -29.494948951324005,
+          "actual_depth_m": 29.494949017795683,
+          "baked_signed_height_depth_m": 29.494948951324005,
+          "depth_error_m": 6.647167793971676e-08
+        }
+      ]
+    },
+    {
+      "island": "island_far_middle",
+      "side": "north",
+      "actual_shore_source_mesh": "World/LakeIslands49/island_far_middle/Meshes/island_far_middle_wetshore_01",
+      "actual_shore_world_xz": [
+        1063.7831501290505,
+        -1668.303641810671
+      ],
+      "selected_shore_angular_distance_degrees": 11.677931114000023,
+      "samples": [
+        {
+          "offset_m_from_actual_shore": -2,
+          "world_xz": [
+            1063.3783299121537,
+            -1666.3450401176278
+          ],
+          "actual_highest_y": 0.8862514532386366,
+          "baked_linear_height_y": 0.8700495493579256,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -1,
+          "world_xz": [
+            1063.5807400206022,
+            -1667.3243409641493
+          ],
+          "actual_highest_y": 0.5493679257594168,
+          "baked_linear_height_y": 0.5377667818860288,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -0.5,
+          "world_xz": [
+            1063.6819450748262,
+            -1667.8139913874102
+          ],
+          "actual_highest_y": 0.28135964054663515,
+          "baked_linear_height_y": 0.27497948494712265,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": 0,
+          "world_xz": [
+            1063.7831501290505,
+            -1668.303641810671
+          ],
+          "actual_highest_y": -7.375350330462993e-14,
+          "baked_linear_height_y": -7.575728744053959,
+          "actual_depth_m": 7.375350330462993e-14,
+          "baked_signed_height_depth_m": 7.575728744053959,
+          "depth_error_m": 7.575728744053885
+        },
+        {
+          "offset_m_from_actual_shore": 0.5,
+          "world_xz": [
+            1063.8843551832747,
+            -1668.7932922339319
+          ],
+          "actual_highest_y": -19.036855003764746,
+          "baked_linear_height_y": -19.76260090733188,
+          "actual_depth_m": 19.036855003764746,
+          "baked_signed_height_depth_m": 19.76260090733188,
+          "depth_error_m": 0.7257459035671339
+        },
+        {
+          "offset_m_from_actual_shore": 1,
+          "world_xz": [
+            1063.9855602374987,
+            -1669.2829426571927
+          ],
+          "actual_highest_y": -29.02577803471698,
+          "baked_linear_height_y": -25.835493108317593,
+          "actual_depth_m": 29.02577803471698,
+          "baked_signed_height_depth_m": 25.835493108317593,
+          "depth_error_m": 3.1902849263993858
+        },
+        {
+          "offset_m_from_actual_shore": 2,
+          "world_xz": [
+            1064.1879703459472,
+            -1670.2622435037142
+          ],
+          "actual_highest_y": -29.020262198900433,
+          "baked_linear_height_y": -29.020262266304915,
+          "actual_depth_m": 29.020262198900433,
+          "baked_signed_height_depth_m": 29.020262266304915,
+          "depth_error_m": 6.74044819959363e-08
+        },
+        {
+          "offset_m_from_actual_shore": 4,
+          "world_xz": [
+            1064.592790562844,
+            -1672.2208451967574
+          ],
+          "actual_highest_y": -29.00923052726734,
+          "baked_linear_height_y": -29.00923066880206,
+          "actual_depth_m": 29.00923052726734,
+          "baked_signed_height_depth_m": 29.00923066880206,
+          "depth_error_m": 1.4153471994404754e-07
+        }
+      ]
+    },
+    {
+      "island": "island_far_middle",
+      "side": "northeast",
+      "actual_shore_source_mesh": "World/LakeIslands49/island_far_middle/Meshes/island_far_middle_shoulder",
+      "actual_shore_world_xz": [
+        1072.879887914222,
+        -1668.719491918696
+      ],
+      "selected_shore_angular_distance_degrees": 10.470205500940281,
+      "samples": [
+        {
+          "offset_m_from_actual_shore": -2,
+          "world_xz": [
+            1071.746218482382,
+            -1667.0718288404814
+          ],
+          "actual_highest_y": 0.8063127604271116,
+          "baked_linear_height_y": 0.7967564451390505,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -1,
+          "world_xz": [
+            1072.313053198302,
+            -1667.8956603795887
+          ],
+          "actual_highest_y": 0.5147257672335446,
+          "baked_linear_height_y": 0.5102370146920846,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -0.5,
+          "world_xz": [
+            1072.5964705562621,
+            -1668.3075761491423
+          ],
+          "actual_highest_y": 0.36893227063676626,
+          "baked_linear_height_y": 0.232796489134121,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": 0,
+          "world_xz": [
+            1072.879887914222,
+            -1668.719491918696
+          ],
+          "actual_highest_y": -1.771083280033281e-13,
+          "baked_linear_height_y": -0.10440863213984226,
+          "actual_depth_m": 1.771083280033281e-13,
+          "baked_signed_height_depth_m": 0.10440863213984226,
+          "depth_error_m": 0.10440863213966516
+        },
+        {
+          "offset_m_from_actual_shore": 0.5,
+          "world_xz": [
+            1073.163305272182,
+            -1669.1314076882495
+          ],
+          "actual_highest_y": -0.3400000035762787,
+          "baked_linear_height_y": -2.8364209246702323,
+          "actual_depth_m": 0.3400000035762787,
+          "baked_signed_height_depth_m": 2.8364209246702323,
+          "depth_error_m": 2.4964209210939536
+        },
+        {
+          "offset_m_from_actual_shore": 1,
+          "world_xz": [
+            1073.4467226301422,
+            -1669.5433234578031
+          ],
+          "actual_highest_y": -5.5481443687948415,
+          "baked_linear_height_y": -10.161802480192149,
+          "actual_depth_m": 5.5481443687948415,
+          "baked_signed_height_depth_m": 10.161802480192149,
+          "depth_error_m": 4.613658111397307
+        },
+        {
+          "offset_m_from_actual_shore": 2,
+          "world_xz": [
+            1074.0135573460623,
+            -1670.3671549969104
+          ],
+          "actual_highest_y": -26.813797055222782,
+          "baked_linear_height_y": -21.10175567865418,
+          "actual_depth_m": 26.813797055222782,
+          "baked_signed_height_depth_m": 21.10175567865418,
+          "depth_error_m": 5.712041376568603
+        },
+        {
+          "offset_m_from_actual_shore": 4,
+          "world_xz": [
+            1075.1472267779025,
+            -1672.0148180751248
+          ],
+          "actual_highest_y": -28.78243837871419,
+          "baked_linear_height_y": -28.782438907532676,
+          "actual_depth_m": 28.78243837871419,
+          "baked_signed_height_depth_m": 28.782438907532676,
+          "depth_error_m": 5.288184858898148e-07
+        }
+      ]
+    },
+    {
+      "island": "island_near_right",
+      "side": "east",
+      "actual_shore_source_mesh": "World/LakeIslands49/island_near_right/Meshes/island_near_right_wetshore_00",
+      "actual_shore_world_xz": [
+        1395.4439074240497,
+        -1126.207580040585
+      ],
+      "selected_shore_angular_distance_degrees": 21.8973461005236,
+      "samples": [
+        {
+          "offset_m_from_actual_shore": -2,
+          "world_xz": [
+            1393.5882003651886,
+            -1125.4616904296554
+          ],
+          "actual_highest_y": 0.59082413385411,
+          "baked_linear_height_y": 0.5908241411715132,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -1,
+          "world_xz": [
+            1394.516053894619,
+            -1125.8346352351202
+          ],
+          "actual_highest_y": 0.318347443020986,
+          "baked_linear_height_y": 0.29149516510817236,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -0.5,
+          "world_xz": [
+            1394.9799806593344,
+            -1126.0211076378525
+          ],
+          "actual_highest_y": 0.02136056771471566,
+          "baked_linear_height_y": -0.4395683201279182,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0.4395683201279182,
+          "depth_error_m": 0.4395683201279182
+        },
+        {
+          "offset_m_from_actual_shore": 0,
+          "world_xz": [
+            1395.4439074240497,
+            -1126.207580040585
+          ],
+          "actual_highest_y": 4.2538889077903264e-14,
+          "baked_linear_height_y": -4.723737189896342,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 4.723737189896342,
+          "depth_error_m": 4.723737189896342
+        },
+        {
+          "offset_m_from_actual_shore": 0.5,
+          "world_xz": [
+            1395.907834188765,
+            -1126.3940524433176
+          ],
+          "actual_highest_y": -23.590499340426405,
+          "baked_linear_height_y": -9.06095575730278,
+          "actual_depth_m": 23.590499340426405,
+          "baked_signed_height_depth_m": 9.06095575730278,
+          "depth_error_m": 14.529543583123624
+        },
+        {
+          "offset_m_from_actual_shore": 1,
+          "world_xz": [
+            1396.3717609534804,
+            -1126.58052484605
+          ],
+          "actual_highest_y": -23.609998631985523,
+          "baked_linear_height_y": -13.538720296236058,
+          "actual_depth_m": 23.609998631985523,
+          "baked_signed_height_depth_m": 13.538720296236058,
+          "depth_error_m": 10.071278335749465
+        },
+        {
+          "offset_m_from_actual_shore": 2,
+          "world_xz": [
+            1397.2996144829108,
+            -1126.9534696515148
+          ],
+          "actual_highest_y": -23.622811929379658,
+          "baked_linear_height_y": -22.841848372569494,
+          "actual_depth_m": 23.622811929379658,
+          "baked_signed_height_depth_m": 22.841848372569494,
+          "depth_error_m": 0.780963556810164
+        },
+        {
+          "offset_m_from_actual_shore": 4,
+          "world_xz": [
+            1399.155321541772,
+            -1127.6993592624444
+          ],
+          "actual_highest_y": -23.649299724461642,
+          "baked_linear_height_y": -23.649299527439567,
+          "actual_depth_m": 23.649299724461642,
+          "baked_signed_height_depth_m": 23.649299527439567,
+          "depth_error_m": 1.9702207509908476e-07
+        }
+      ]
+    },
+    {
+      "island": "island_near_right",
+      "side": "southeast",
+      "actual_shore_source_mesh": "World/LakeIslands49/island_near_right/Meshes/island_near_right_wetshore_05",
+      "actual_shore_world_xz": [
+        1396.1220838584827,
+        -1112.10272614865
+      ],
+      "selected_shore_angular_distance_degrees": 18.90244630603809,
+      "samples": [
+        {
+          "offset_m_from_actual_shore": -2,
+          "world_xz": [
+            1394.3259911412295,
+            -1112.9825278030187
+          ],
+          "actual_highest_y": 1.0685852167261896,
+          "baked_linear_height_y": 1.0385489569649926,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -1,
+          "world_xz": [
+            1395.2240374998562,
+            -1112.5426269758343
+          ],
+          "actual_highest_y": 0.5569591851979586,
+          "baked_linear_height_y": -2.3589618384221636,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 2.3589618384221636,
+          "depth_error_m": 2.3589618384221636
+        },
+        {
+          "offset_m_from_actual_shore": -0.5,
+          "world_xz": [
+            1395.6730606791693,
+            -1112.3226765622421
+          ],
+          "actual_highest_y": 0.2834235608611478,
+          "baked_linear_height_y": -4.89662752073362,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 4.89662752073362,
+          "depth_error_m": 4.89662752073362
+        },
+        {
+          "offset_m_from_actual_shore": 0,
+          "world_xz": [
+            1396.1220838584827,
+            -1112.10272614865
+          ],
+          "actual_highest_y": -1.3811868315727338e-13,
+          "baked_linear_height_y": -4.991494112151168,
+          "actual_depth_m": 1.3811868315727338e-13,
+          "baked_signed_height_depth_m": 4.991494112151168,
+          "depth_error_m": 4.991494112151029
+        },
+        {
+          "offset_m_from_actual_shore": 0.5,
+          "world_xz": [
+            1396.571107037796,
+            -1111.8827757350577
+          ],
+          "actual_highest_y": -23.934550711759172,
+          "baked_linear_height_y": -13.616489858368961,
+          "actual_depth_m": 23.934550711759172,
+          "baked_signed_height_depth_m": 13.616489858368961,
+          "depth_error_m": 10.318060853390211
+        },
+        {
+          "offset_m_from_actual_shore": 1,
+          "world_xz": [
+            1397.0201302171092,
+            -1111.6628253214656
+          ],
+          "actual_highest_y": -23.94950734460478,
+          "baked_linear_height_y": -23.949501686110782,
+          "actual_depth_m": 23.94950734460478,
+          "baked_signed_height_depth_m": 23.949501686110782,
+          "depth_error_m": 5.658493996918423e-06
+        },
+        {
+          "offset_m_from_actual_shore": 2,
+          "world_xz": [
+            1397.918176575736,
+            -1111.2229244942812
+          ],
+          "actual_highest_y": -23.979163405166926,
+          "baked_linear_height_y": -23.97915406221922,
+          "actual_depth_m": 23.979163405166926,
+          "baked_signed_height_depth_m": 23.97915406221922,
+          "depth_error_m": 9.342947706159066e-06
+        },
+        {
+          "offset_m_from_actual_shore": 4,
+          "world_xz": [
+            1399.7142692929892,
+            -1110.3431228399124
+          ],
+          "actual_highest_y": -24.03824476708845,
+          "baked_linear_height_y": -24.03824489912658,
+          "actual_depth_m": 24.03824476708845,
+          "baked_signed_height_depth_m": 24.03824489912658,
+          "depth_error_m": 1.3203812798678882e-07
+        }
+      ]
+    },
+    {
+      "island": "island_near_right",
+      "side": "south",
+      "actual_shore_source_mesh": "World/LakeIslands49/island_near_right/Meshes/island_near_right_wetshore_04",
+      "actual_shore_world_xz": [
+        1382.107846102141,
+        -1107.7649845437804
+      ],
+      "selected_shore_angular_distance_degrees": 9.774951647274989,
+      "samples": [
+        {
+          "offset_m_from_actual_shore": -2,
+          "world_xz": [
+            1381.768288730127,
+            -1109.735948975502
+          ],
+          "actual_highest_y": 1.3395321791867267,
+          "baked_linear_height_y": 1.3967970974199009,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -1,
+          "world_xz": [
+            1381.938067416134,
+            -1108.750466759641
+          ],
+          "actual_highest_y": 0.8924334380423865,
+          "baked_linear_height_y": 0.7181008500805872,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -0.5,
+          "world_xz": [
+            1382.0229567591375,
+            -1108.2577256517109
+          ],
+          "actual_highest_y": 0.6083046747145691,
+          "baked_linear_height_y": 0.04837892519739928,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": 0,
+          "world_xz": [
+            1382.107846102141,
+            -1107.7649845437804
+          ],
+          "actual_highest_y": -9.265851974582517e-14,
+          "baked_linear_height_y": -7.295036267058775,
+          "actual_depth_m": 9.265851974582517e-14,
+          "baked_signed_height_depth_m": 7.295036267058775,
+          "depth_error_m": 7.295036267058682
+        },
+        {
+          "offset_m_from_actual_shore": 0.5,
+          "world_xz": [
+            1382.1927354451443,
+            -1107.27224343585
+          ],
+          "actual_highest_y": -23.719033660567852,
+          "baked_linear_height_y": -18.434355157363655,
+          "actual_depth_m": 23.719033660567852,
+          "baked_signed_height_depth_m": 18.434355157363655,
+          "depth_error_m": 5.284678503204198
+        },
+        {
+          "offset_m_from_actual_shore": 1,
+          "world_xz": [
+            1382.277624788148,
+            -1106.7795023279198
+          ],
+          "actual_highest_y": -23.73192909485446,
+          "baked_linear_height_y": -23.731929763757233,
+          "actual_depth_m": 23.73192909485446,
+          "baked_signed_height_depth_m": 23.731929763757233,
+          "depth_error_m": 6.689027713946416e-07
+        },
+        {
+          "offset_m_from_actual_shore": 2,
+          "world_xz": [
+            1382.4474034741547,
+            -1105.794020112059
+          ],
+          "actual_highest_y": -23.757719963427668,
+          "baked_linear_height_y": -23.757720555668957,
+          "actual_depth_m": 23.757719963427668,
+          "baked_signed_height_depth_m": 23.757720555668957,
+          "depth_error_m": 5.922412888992312e-07
+        },
+        {
+          "offset_m_from_actual_shore": 4,
+          "world_xz": [
+            1382.7869608461685,
+            -1103.8230556803376
+          ],
+          "actual_highest_y": -23.809334116115657,
+          "baked_linear_height_y": -23.80943579483453,
+          "actual_depth_m": 23.809334116115657,
+          "baked_signed_height_depth_m": 23.80943579483453,
+          "depth_error_m": 0.00010167871887389879
+        }
+      ]
+    },
+    {
+      "island": "island_near_right",
+      "side": "southwest",
+      "actual_shore_source_mesh": "World/LakeIslands49/island_near_right/Meshes/island_near_right_shoulder",
+      "actual_shore_world_xz": [
+        1366.9841062074772,
+        -1111.0285663432494
+      ],
+      "selected_shore_angular_distance_degrees": 10.422763418442397,
+      "samples": [
+        {
+          "offset_m_from_actual_shore": -2,
+          "world_xz": [
+            1368.630830019386,
+            -1112.1635996851792
+          ],
+          "actual_highest_y": 0.6385670493339598,
+          "baked_linear_height_y": 0.6385670577110032,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -1,
+          "world_xz": [
+            1367.8074681134317,
+            -1111.5960830142144
+          ],
+          "actual_highest_y": 0.3715879943572784,
+          "baked_linear_height_y": 0.3548790135551922,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -0.5,
+          "world_xz": [
+            1367.3957871604543,
+            -1111.3123246787318
+          ],
+          "actual_highest_y": 0.2380984668688598,
+          "baked_linear_height_y": 0.1898906076104624,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": 0,
+          "world_xz": [
+            1366.9841062074772,
+            -1111.0285663432494
+          ],
+          "actual_highest_y": -2.2488955142563327e-14,
+          "baked_linear_height_y": -0.17674502489784194,
+          "actual_depth_m": 2.2488955142563327e-14,
+          "baked_signed_height_depth_m": 0.17674502489784194,
+          "depth_error_m": 0.17674502489781946
+        },
+        {
+          "offset_m_from_actual_shore": 0.5,
+          "world_xz": [
+            1366.5724252545,
+            -1110.744808007767
+          ],
+          "actual_highest_y": -16.360805503348104,
+          "baked_linear_height_y": -9.844266783702627,
+          "actual_depth_m": 16.360805503348104,
+          "baked_signed_height_depth_m": 9.844266783702627,
+          "depth_error_m": 6.516538719645476
+        },
+        {
+          "offset_m_from_actual_shore": 1,
+          "world_xz": [
+            1366.1607443015228,
+            -1110.4610496722844
+          ],
+          "actual_highest_y": -23.30735351148381,
+          "baked_linear_height_y": -17.29980473299973,
+          "actual_depth_m": 23.30735351148381,
+          "baked_signed_height_depth_m": 17.29980473299973,
+          "depth_error_m": 6.007548778484082
+        },
+        {
+          "offset_m_from_actual_shore": 2,
+          "world_xz": [
+            1365.3373823955685,
+            -1109.8935330013196
+          ],
+          "actual_highest_y": -23.30319662419764,
+          "baked_linear_height_y": -23.303206395464994,
+          "actual_depth_m": 23.30319662419764,
+          "baked_signed_height_depth_m": 23.303206395464994,
+          "depth_error_m": 9.77126735435263e-06
+        },
+        {
+          "offset_m_from_actual_shore": 4,
+          "world_xz": [
+            1363.6906585836596,
+            -1108.7584996593896
+          ],
+          "actual_highest_y": -23.295686167201513,
+          "baked_linear_height_y": -23.29568618383389,
+          "actual_depth_m": 23.295686167201513,
+          "baked_signed_height_depth_m": 23.29568618383389,
+          "depth_error_m": 1.6632377253245068e-08
+        }
+      ]
+    },
+    {
+      "island": "island_near_right",
+      "side": "west",
+      "actual_shore_source_mesh": "World/LakeIslands49/island_near_right/Meshes/island_near_right_shoulder",
+      "actual_shore_world_xz": [
+        1361.0959683859423,
+        -1119.9019310371662
+      ],
+      "selected_shore_angular_distance_degrees": 0.29723221906050334,
+      "samples": [
+        {
+          "offset_m_from_actual_shore": -2,
+          "world_xz": [
+            1363.09594147397,
+            -1119.9123063523605
+          ],
+          "actual_highest_y": 0.8903451526948857,
+          "baked_linear_height_y": 0.8449821715981088,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -1,
+          "world_xz": [
+            1362.0959549299562,
+            -1119.9071186947633
+          ],
+          "actual_highest_y": 0.44517257634741153,
+          "baked_linear_height_y": 0.3965821577971423,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -0.5,
+          "world_xz": [
+            1361.5959616579491,
+            -1119.9045248659647
+          ],
+          "actual_highest_y": 0.22258628817362366,
+          "baked_linear_height_y": 0.027207845028208538,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": 0,
+          "world_xz": [
+            1361.0959683859423,
+            -1119.9019310371662
+          ],
+          "actual_highest_y": -6.275188701998502e-14,
+          "baked_linear_height_y": -0.3855665552347027,
+          "actual_depth_m": 6.275188701998502e-14,
+          "baked_signed_height_depth_m": 0.3855665552347027,
+          "depth_error_m": 0.38556655523463995
+        },
+        {
+          "offset_m_from_actual_shore": 0.5,
+          "world_xz": [
+            1360.5959751139355,
+            -1119.8993372083676
+          ],
+          "actual_highest_y": -0.29895739952048883,
+          "baked_linear_height_y": -1.3416959678112412,
+          "actual_depth_m": 0.29895739952048883,
+          "baked_signed_height_depth_m": 1.3416959678112412,
+          "depth_error_m": 1.0427385682907524
+        },
+        {
+          "offset_m_from_actual_shore": 1,
+          "world_xz": [
+            1360.0959818419285,
+            -1119.896743379569
+          ],
+          "actual_highest_y": -0.8774057147567715,
+          "baked_linear_height_y": -2.469110907732448,
+          "actual_depth_m": 0.8774057147567715,
+          "baked_signed_height_depth_m": 2.469110907732448,
+          "depth_error_m": 1.5917051929756765
+        },
+        {
+          "offset_m_from_actual_shore": 2,
+          "world_xz": [
+            1359.0959952979147,
+            -1119.8915557219718
+          ],
+          "actual_highest_y": -21.097862954164246,
+          "baked_linear_height_y": -18.99280720033341,
+          "actual_depth_m": 21.097862954164246,
+          "baked_signed_height_depth_m": 18.99280720033341,
+          "depth_error_m": 2.105055753830836
+        },
+        {
+          "offset_m_from_actual_shore": 4,
+          "world_xz": [
+            1357.0960222098872,
+            -1119.8811804067775
+          ],
+          "actual_highest_y": -22.92407564096926,
+          "baked_linear_height_y": -22.924101848103486,
+          "actual_depth_m": 22.92407564096926,
+          "baked_signed_height_depth_m": 22.924101848103486,
+          "depth_error_m": 2.6207134226297057e-05
+        }
+      ]
+    },
+    {
+      "island": "island_near_right",
+      "side": "northwest",
+      "actual_shore_source_mesh": "World/LakeIslands49/island_near_right/Meshes/island_near_right_shoulder",
+      "actual_shore_world_xz": [
+        1371.526911731884,
+        -1128.2679655342463
+      ],
+      "selected_shore_angular_distance_degrees": 0.7019915824548296,
+      "samples": [
+        {
+          "offset_m_from_actual_shore": -2,
+          "world_xz": [
+            1372.958345751798,
+            -1126.8711847187162
+          ],
+          "actual_highest_y": 0.6242276914959695,
+          "baked_linear_height_y": 0.6242276839612664,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -1,
+          "world_xz": [
+            1372.242628741841,
+            -1127.5695751264814
+          ],
+          "actual_highest_y": 0.3286988089356779,
+          "baked_linear_height_y": 0.32869880706078575,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -0.5,
+          "world_xz": [
+            1371.8847702368626,
+            -1127.9187703303637
+          ],
+          "actual_highest_y": 0.18093436765562712,
+          "baked_linear_height_y": 0.16130970291422717,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": 0,
+          "world_xz": [
+            1371.526911731884,
+            -1128.2679655342463
+          ],
+          "actual_highest_y": 9.374445664178666e-14,
+          "baked_linear_height_y": -0.5044821496346866,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0.5044821496346866,
+          "depth_error_m": 0.5044821496346866
+        },
+        {
+          "offset_m_from_actual_shore": 0.5,
+          "world_xz": [
+            1371.1690532269054,
+            -1128.6171607381289
+          ],
+          "actual_highest_y": -0.3400000035762787,
+          "baked_linear_height_y": -2.063365383999199,
+          "actual_depth_m": 0.3400000035762787,
+          "baked_signed_height_depth_m": 2.063365383999199,
+          "depth_error_m": 1.7233653804229205
+        },
+        {
+          "offset_m_from_actual_shore": 1,
+          "world_xz": [
+            1370.811194721927,
+            -1128.9663559420112
+          ],
+          "actual_highest_y": -8.191337456315615,
+          "baked_linear_height_y": -7.33163734896658,
+          "actual_depth_m": 8.191337456315615,
+          "baked_signed_height_depth_m": 7.33163734896658,
+          "depth_error_m": 0.8597001073490356
+        },
+        {
+          "offset_m_from_actual_shore": 2,
+          "world_xz": [
+            1370.0954777119698,
+            -1129.6647463497764
+          ],
+          "actual_highest_y": -22.985138633295115,
+          "baked_linear_height_y": -22.369268860914048,
+          "actual_depth_m": 22.985138633295115,
+          "baked_signed_height_depth_m": 22.369268860914048,
+          "depth_error_m": 0.6158697723810675
+        },
+        {
+          "offset_m_from_actual_shore": 4,
+          "world_xz": [
+            1368.6640436920559,
+            -1131.0615271653064
+          ],
+          "actual_highest_y": -22.928578122833258,
+          "baked_linear_height_y": -22.928578553476648,
+          "actual_depth_m": 22.928578122833258,
+          "baked_signed_height_depth_m": 22.928578553476648,
+          "depth_error_m": 4.3064338939302615e-07
+        }
+      ]
+    },
+    {
+      "island": "island_near_right",
+      "side": "north",
+      "actual_shore_source_mesh": "World/LakeIslands49/island_near_right/Meshes/island_near_right_wetshore_01",
+      "actual_shore_world_xz": [
+        1379.8999674240551,
+        -1131.7729517186394
+      ],
+      "selected_shore_angular_distance_degrees": 0.48681984175183474,
+      "samples": [
+        {
+          "offset_m_from_actual_shore": -2,
+          "world_xz": [
+            1379.9169604377976,
+            -1129.7730239105713
+          ],
+          "actual_highest_y": 1.2485826305456815,
+          "baked_linear_height_y": 1.1706366107634574,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -1,
+          "world_xz": [
+            1379.9084639309265,
+            -1130.7729878146054
+          ],
+          "actual_highest_y": 0.8497675559047309,
+          "baked_linear_height_y": 0.785448779887895,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -0.5,
+          "world_xz": [
+            1379.9042156774908,
+            -1131.2729697666225
+          ],
+          "actual_highest_y": 0.4664205372034481,
+          "baked_linear_height_y": -5.822616029523832,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 5.822616029523832,
+          "depth_error_m": 5.822616029523832
+        },
+        {
+          "offset_m_from_actual_shore": 0,
+          "world_xz": [
+            1379.8999674240551,
+            -1131.7729517186394
+          ],
+          "actual_highest_y": 2.4002327903005494e-13,
+          "baked_linear_height_y": -17.734322407486044,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 17.734322407486044,
+          "depth_error_m": 17.734322407486044
+        },
+        {
+          "offset_m_from_actual_shore": 0.5,
+          "world_xz": [
+            1379.8957191706195,
+            -1132.2729336706564
+          ],
+          "actual_highest_y": -23.13811239178714,
+          "baked_linear_height_y": -23.138112933158297,
+          "actual_depth_m": 23.13811239178714,
+          "baked_signed_height_depth_m": 23.138112933158297,
+          "depth_error_m": 5.413711576807145e-07
+        },
+        {
+          "offset_m_from_actual_shore": 1,
+          "world_xz": [
+            1379.8914709171838,
+            -1132.7729156226735
+          ],
+          "actual_highest_y": -23.12838526129662,
+          "baked_linear_height_y": -23.128386029799653,
+          "actual_depth_m": 23.12838526129662,
+          "baked_signed_height_depth_m": 23.128386029799653,
+          "depth_error_m": 7.685030318782538e-07
+        },
+        {
+          "offset_m_from_actual_shore": 2,
+          "world_xz": [
+            1379.8829744103127,
+            -1133.7728795267076
+          ],
+          "actual_highest_y": -23.1089310003156,
+          "baked_linear_height_y": -23.108930748931677,
+          "actual_depth_m": 23.1089310003156,
+          "baked_signed_height_depth_m": 23.108930748931677,
+          "depth_error_m": 2.513839234552506e-07
+        },
+        {
+          "offset_m_from_actual_shore": 4,
+          "world_xz": [
+            1379.86598139657,
+            -1135.7728073347755
+          ],
+          "actual_highest_y": -23.07002247835355,
+          "baked_linear_height_y": -23.070022702299205,
+          "actual_depth_m": 23.07002247835355,
+          "baked_signed_height_depth_m": 23.070022702299205,
+          "depth_error_m": 2.239456549091301e-07
+        }
+      ]
+    },
+    {
+      "island": "island_near_right",
+      "side": "northeast",
+      "actual_shore_source_mesh": "World/LakeIslands49/island_near_right/Meshes/island_near_right_shoulder",
+      "actual_shore_world_xz": [
+        1386.9584189700074,
+        -1131.4368034888084
+      ],
+      "selected_shore_angular_distance_degrees": 13.682689938576466,
+      "samples": [
+        {
+          "offset_m_from_actual_shore": -2,
+          "world_xz": [
+            1385.918864499632,
+            -1129.7281998182275
+          ],
+          "actual_highest_y": 1.1181140557763063,
+          "baked_linear_height_y": 1.110075974065234,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -1,
+          "world_xz": [
+            1386.4386417348198,
+            -1130.582501653518
+          ],
+          "actual_highest_y": 0.6269480549907834,
+          "baked_linear_height_y": 0.5708106334108399,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -0.5,
+          "world_xz": [
+            1386.6985303524136,
+            -1131.009652571163
+          ],
+          "actual_highest_y": 0.32100187217314113,
+          "baked_linear_height_y": 0.276785877446462,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": 0,
+          "world_xz": [
+            1386.9584189700074,
+            -1131.4368034888084
+          ],
+          "actual_highest_y": -8.648984306525165e-14,
+          "baked_linear_height_y": -1.394060006739997,
+          "actual_depth_m": 8.648984306525165e-14,
+          "baked_signed_height_depth_m": 1.394060006739997,
+          "depth_error_m": 1.3940600067399105
+        },
+        {
+          "offset_m_from_actual_shore": 0.5,
+          "world_xz": [
+            1387.2183075876012,
+            -1131.8639544064538
+          ],
+          "actual_highest_y": -0.3400000035762787,
+          "baked_linear_height_y": -3.8039909630622795,
+          "actual_depth_m": 0.3400000035762787,
+          "baked_signed_height_depth_m": 3.8039909630622795,
+          "depth_error_m": 3.4639909594860008
+        },
+        {
+          "offset_m_from_actual_shore": 1,
+          "world_xz": [
+            1387.478196205195,
+            -1132.291105324099
+          ],
+          "actual_highest_y": -11.754612942501003,
+          "baked_linear_height_y": -10.80903903685065,
+          "actual_depth_m": 11.754612942501003,
+          "baked_signed_height_depth_m": 10.80903903685065,
+          "depth_error_m": 0.9455739056503525
+        },
+        {
+          "offset_m_from_actual_shore": 2,
+          "world_xz": [
+            1387.9979734403828,
+            -1133.1454071593894
+          ],
+          "actual_highest_y": -23.2945566457607,
+          "baked_linear_height_y": -23.294556567635393,
+          "actual_depth_m": 23.2945566457607,
+          "baked_signed_height_depth_m": 23.294556567635393,
+          "depth_error_m": 7.812530711248655e-08
+        },
+        {
+          "offset_m_from_actual_shore": 4,
+          "world_xz": [
+            1389.037527910758,
+            -1134.8540108299703
+          ],
+          "actual_highest_y": -23.28285678972199,
+          "baked_linear_height_y": -23.282856154715283,
+          "actual_depth_m": 23.28285678972199,
+          "baked_signed_height_depth_m": 23.282856154715283,
+          "depth_error_m": 6.35006706772856e-07
+        }
+      ]
+    },
+    {
+      "island": "foreground_rock",
+      "side": "east",
+      "actual_shore_source_mesh": "World/LakeIslands49/foreground_rock/Meshes/foreground_rock_shoulder",
+      "actual_shore_world_xz": [
+        1208.474939819143,
+        -1072.328468273123
+      ],
+      "selected_shore_angular_distance_degrees": 15.362798752710926,
+      "samples": [
+        {
+          "offset_m_from_actual_shore": -2,
+          "world_xz": [
+            1206.5464045743229,
+            -1071.7986080939368
+          ],
+          "actual_highest_y": 2.179213215386613,
+          "baked_linear_height_y": 1.935016079314666,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -1,
+          "world_xz": [
+            1207.510672196733,
+            -1072.06353818353
+          ],
+          "actual_highest_y": 1.4223816225709154,
+          "baked_linear_height_y": 1.2526083274709054,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -0.5,
+          "world_xz": [
+            1207.992806007938,
+            -1072.1960032283264
+          ],
+          "actual_highest_y": 1.0474287669477598,
+          "baked_linear_height_y": 0.9328144897018137,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": 0,
+          "world_xz": [
+            1208.474939819143,
+            -1072.328468273123
+          ],
+          "actual_highest_y": -1.0676529105246857e-13,
+          "baked_linear_height_y": -10.316569876170755,
+          "actual_depth_m": 1.0676529105246857e-13,
+          "baked_signed_height_depth_m": 10.316569876170755,
+          "depth_error_m": 10.316569876170648
+        },
+        {
+          "offset_m_from_actual_shore": 0.5,
+          "world_xz": [
+            1208.9570736303478,
+            -1072.4609333179196
+          ],
+          "actual_highest_y": -22.641398871909477,
+          "baked_linear_height_y": -21.637633128408087,
+          "actual_depth_m": 22.641398871909477,
+          "baked_signed_height_depth_m": 21.637633128408087,
+          "depth_error_m": 1.0037657435013898
+        },
+        {
+          "offset_m_from_actual_shore": 1,
+          "world_xz": [
+            1209.439207441553,
+            -1072.593398362716
+          ],
+          "actual_highest_y": -22.636929746315428,
+          "baked_linear_height_y": -22.636929555042904,
+          "actual_depth_m": 22.636929746315428,
+          "baked_signed_height_depth_m": 22.636929555042904,
+          "depth_error_m": 1.9127252315342957e-07
+        },
+        {
+          "offset_m_from_actual_shore": 2,
+          "world_xz": [
+            1210.403475063963,
+            -1072.8583284523093
+          ],
+          "actual_highest_y": -22.62799149512731,
+          "baked_linear_height_y": -22.62799166793938,
+          "actual_depth_m": 22.62799149512731,
+          "baked_signed_height_depth_m": 22.62799166793938,
+          "depth_error_m": 1.7281206865504828e-07
+        },
+        {
+          "offset_m_from_actual_shore": 4,
+          "world_xz": [
+            1212.3320103087829,
+            -1073.3881886314953
+          ],
+          "actual_highest_y": -22.610114992751093,
+          "baked_linear_height_y": -22.610134478834176,
+          "actual_depth_m": 22.610114992751093,
+          "baked_signed_height_depth_m": 22.610134478834176,
+          "depth_error_m": 1.948608308310895e-05
+        }
+      ]
+    },
+    {
+      "island": "foreground_rock",
+      "side": "southeast",
+      "actual_shore_source_mesh": "World/LakeIslands49/foreground_rock/Meshes/foreground_rock_wetshore_05",
+      "actual_shore_world_xz": [
+        1205.9183552321902,
+        -1064.1652238108218
+      ],
+      "selected_shore_angular_distance_degrees": 0.4074357318167821,
+      "samples": [
+        {
+          "offset_m_from_actual_shore": -2,
+          "world_xz": [
+            1204.4941209041594,
+            -1065.5693450943509
+          ],
+          "actual_highest_y": 1.3937093798805666,
+          "baked_linear_height_y": 1.4740545992587102,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -1,
+          "world_xz": [
+            1205.2062380681748,
+            -1064.8672844525863
+          ],
+          "actual_highest_y": 1.1087766695267953,
+          "baked_linear_height_y": -2.02746715278888,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 2.02746715278888,
+          "depth_error_m": 2.02746715278888
+        },
+        {
+          "offset_m_from_actual_shore": -0.5,
+          "world_xz": [
+            1205.5622966501826,
+            -1064.516254131704
+          ],
+          "actual_highest_y": 0.7412778537361864,
+          "baked_linear_height_y": -10.369626299498393,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 10.369626299498393,
+          "depth_error_m": 10.369626299498393
+        },
+        {
+          "offset_m_from_actual_shore": 0,
+          "world_xz": [
+            1205.9183552321902,
+            -1064.1652238108218
+          ],
+          "actual_highest_y": 2.812975546939711e-13,
+          "baked_linear_height_y": -18.83516984010715,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 18.83516984010715,
+          "depth_error_m": 18.83516984010715
+        },
+        {
+          "offset_m_from_actual_shore": 0.5,
+          "world_xz": [
+            1206.2744138141977,
+            -1063.8141934899395
+          ],
+          "actual_highest_y": -22.86656874297396,
+          "baked_linear_height_y": -22.866567982912496,
+          "actual_depth_m": 22.86656874297396,
+          "baked_signed_height_depth_m": 22.866567982912496,
+          "depth_error_m": 7.600614644331927e-07
+        },
+        {
+          "offset_m_from_actual_shore": 1,
+          "world_xz": [
+            1206.6304723962055,
+            -1063.4631631690572
+          ],
+          "actual_highest_y": -22.87433399352949,
+          "baked_linear_height_y": -22.874333406434037,
+          "actual_depth_m": 22.87433399352949,
+          "baked_signed_height_depth_m": 22.874333406434037,
+          "depth_error_m": 5.870954531417283e-07
+        },
+        {
+          "offset_m_from_actual_shore": 2,
+          "world_xz": [
+            1207.3425895602209,
+            -1062.7611025272927
+          ],
+          "actual_highest_y": -22.889864747152078,
+          "baked_linear_height_y": -22.88992315186151,
+          "actual_depth_m": 22.889864747152078,
+          "baked_signed_height_depth_m": 22.88992315186151,
+          "depth_error_m": 5.84047094314144e-05
+        },
+        {
+          "offset_m_from_actual_shore": 4,
+          "world_xz": [
+            1208.7668238882513,
+            -1061.3569812437638
+          ],
+          "actual_highest_y": -22.921357585114556,
+          "baked_linear_height_y": -22.921358029889586,
+          "actual_depth_m": 22.921357585114556,
+          "baked_signed_height_depth_m": 22.921358029889586,
+          "depth_error_m": 4.4477502925133194e-07
+        }
+      ]
+    },
+    {
+      "island": "foreground_rock",
+      "side": "south",
+      "actual_shore_source_mesh": "World/LakeIslands49/foreground_rock/Meshes/foreground_rock_wetshore_04",
+      "actual_shore_world_xz": [
+        1199.909517899554,
+        -1062.9655936232407
+      ],
+      "selected_shore_angular_distance_degrees": 0.7369430076082975,
+      "samples": [
+        {
+          "offset_m_from_actual_shore": -2,
+          "world_xz": [
+            1199.935241354053,
+            -1064.965428192371
+          ],
+          "actual_highest_y": 2.3674151147004636,
+          "baked_linear_height_y": 2.3827422194681622,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -1,
+          "world_xz": [
+            1199.9223796268034,
+            -1063.9655109078058
+          ],
+          "actual_highest_y": 1.3500277107397183,
+          "baked_linear_height_y": 1.192053456838418,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -0.5,
+          "world_xz": [
+            1199.9159487631787,
+            -1063.4655522655232
+          ],
+          "actual_highest_y": 1.1241258697138488,
+          "baked_linear_height_y": -0.37638172184217994,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0.37638172184217994,
+          "depth_error_m": 0.37638172184217994
+        },
+        {
+          "offset_m_from_actual_shore": 0,
+          "world_xz": [
+            1199.909517899554,
+            -1062.9655936232407
+          ],
+          "actual_highest_y": -7.504413757075667e-15,
+          "baked_linear_height_y": -2.694856577315839,
+          "actual_depth_m": 7.504413757075667e-15,
+          "baked_signed_height_depth_m": 2.694856577315839,
+          "depth_error_m": 2.6948565773158313
+        },
+        {
+          "offset_m_from_actual_shore": 0.5,
+          "world_xz": [
+            1199.9030870359293,
+            -1062.4656349809582
+          ],
+          "actual_highest_y": -22.925817520226683,
+          "baked_linear_height_y": -13.245013067745948,
+          "actual_depth_m": 22.925817520226683,
+          "baked_signed_height_depth_m": 13.245013067745948,
+          "depth_error_m": 9.680804452480736
+        },
+        {
+          "offset_m_from_actual_shore": 1,
+          "world_xz": [
+            1199.8966561723046,
+            -1061.9656763386756
+          ],
+          "actual_highest_y": -22.93860709834576,
+          "baked_linear_height_y": -22.93860680313826,
+          "actual_depth_m": 22.93860709834576,
+          "baked_signed_height_depth_m": 22.93860680313826,
+          "depth_error_m": 2.952074993345377e-07
+        },
+        {
+          "offset_m_from_actual_shore": 2,
+          "world_xz": [
+            1199.883794445055,
+            -1060.9657590541103
+          ],
+          "actual_highest_y": -22.96418625458392,
+          "baked_linear_height_y": -22.964185794136956,
+          "actual_depth_m": 22.96418625458392,
+          "baked_signed_height_depth_m": 22.964185794136956,
+          "depth_error_m": 4.604469658886501e-07
+        },
+        {
+          "offset_m_from_actual_shore": 4,
+          "world_xz": [
+            1199.8580709905561,
+            -1058.96592448498
+          ],
+          "actual_highest_y": -23.015344567060232,
+          "baked_linear_height_y": -23.01534383190372,
+          "actual_depth_m": 23.015344567060232,
+          "baked_signed_height_depth_m": 23.01534383190372,
+          "depth_error_m": 7.35156511666446e-07
+        }
+      ]
+    },
+    {
+      "island": "foreground_rock",
+      "side": "southwest",
+      "actual_shore_source_mesh": "World/LakeIslands49/foreground_rock/Meshes/foreground_rock_shoulder",
+      "actual_shore_world_xz": [
+        1194.1860428273358,
+        -1065.0964040499312
+      ],
+      "selected_shore_angular_distance_degrees": 4.85511488857461,
+      "samples": [
+        {
+          "offset_m_from_actual_shore": -2,
+          "world_xz": [
+            1195.7148759559811,
+            -1066.3858493821403
+          ],
+          "actual_highest_y": 1.4460193766354181,
+          "baked_linear_height_y": 1.4525809489186021,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -1,
+          "world_xz": [
+            1194.9504593916586,
+            -1065.7411267160358
+          ],
+          "actual_highest_y": 0.7458358514024014,
+          "baked_linear_height_y": 0.4575650946917493,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -0.5,
+          "world_xz": [
+            1194.5682511094972,
+            -1065.4187653829836
+          ],
+          "actual_highest_y": 0.39765886171541853,
+          "baked_linear_height_y": -3.8978675928556865,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 3.8978675928556865,
+          "depth_error_m": 3.8978675928556865
+        },
+        {
+          "offset_m_from_actual_shore": 0,
+          "world_xz": [
+            1194.1860428273358,
+            -1065.0964040499312
+          ],
+          "actual_highest_y": -1.2484978328952678e-13,
+          "baked_linear_height_y": -12.30008860376995,
+          "actual_depth_m": 1.2484978328952678e-13,
+          "baked_signed_height_depth_m": 12.30008860376995,
+          "depth_error_m": 12.300088603769826
+        },
+        {
+          "offset_m_from_actual_shore": 0.5,
+          "world_xz": [
+            1193.8038345451744,
+            -1064.7740427168787
+          ],
+          "actual_highest_y": -22.89728669953188,
+          "baked_linear_height_y": -19.123152641131774,
+          "actual_depth_m": 22.89728669953188,
+          "baked_signed_height_depth_m": 19.123152641131774,
+          "depth_error_m": 3.7741340584001044
+        },
+        {
+          "offset_m_from_actual_shore": 1,
+          "world_xz": [
+            1193.421626263013,
+            -1064.4516813838266
+          ],
+          "actual_highest_y": -22.907694104203646,
+          "baked_linear_height_y": -21.752525047155256,
+          "actual_depth_m": 22.907694104203646,
+          "baked_signed_height_depth_m": 21.752525047155256,
+          "depth_error_m": 1.15516905704839
+        },
+        {
+          "offset_m_from_actual_shore": 2,
+          "world_xz": [
+            1192.6572096986904,
+            -1063.806958717722
+          ],
+          "actual_highest_y": -22.928508913547194,
+          "baked_linear_height_y": -22.928518897971635,
+          "actual_depth_m": 22.928508913547194,
+          "baked_signed_height_depth_m": 22.928518897971635,
+          "depth_error_m": 9.984424441000783e-06
+        },
+        {
+          "offset_m_from_actual_shore": 4,
+          "world_xz": [
+            1191.128376570045,
+            -1062.5175133855125
+          ],
+          "actual_highest_y": -22.970252985503386,
+          "baked_linear_height_y": -22.970253148916573,
+          "actual_depth_m": 22.970252985503386,
+          "baked_signed_height_depth_m": 22.970253148916573,
+          "depth_error_m": 1.6341318698209761e-07
+        }
+      ]
+    },
+    {
+      "island": "foreground_rock",
+      "side": "west",
+      "actual_shore_source_mesh": "World/LakeIslands49/foreground_rock/Meshes/foreground_rock_shoulder",
+      "actual_shore_world_xz": [
+        1191.3253870456765,
+        -1069.987442271098
+      ],
+      "selected_shore_angular_distance_degrees": 0.08294368492652565,
+      "samples": [
+        {
+          "offset_m_from_actual_shore": -2,
+          "world_xz": [
+            1193.3253849500143,
+            -1069.9903375508782
+          ],
+          "actual_highest_y": 2.0560327185553176,
+          "baked_linear_height_y": 2.018094750318914,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -1,
+          "world_xz": [
+            1192.3253859978454,
+            -1069.988889910988
+          ],
+          "actual_highest_y": 1.0998482069556494,
+          "baked_linear_height_y": 1.0821771674253176,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -0.5,
+          "world_xz": [
+            1191.825386521761,
+            -1069.988166091043
+          ],
+          "actual_highest_y": 0.6217559511558154,
+          "baked_linear_height_y": 0.5290581484635946,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": 0,
+          "world_xz": [
+            1191.3253870456765,
+            -1069.987442271098
+          ],
+          "actual_highest_y": -6.752237657892124e-14,
+          "baked_linear_height_y": -0.1696848055299223,
+          "actual_depth_m": 6.752237657892124e-14,
+          "baked_signed_height_depth_m": 0.1696848055299223,
+          "depth_error_m": 0.16968480552985477
+        },
+        {
+          "offset_m_from_actual_shore": 0.5,
+          "world_xz": [
+            1190.825387569592,
+            -1069.986718451153
+          ],
+          "actual_highest_y": -8.667006152326326,
+          "baked_linear_height_y": -4.505982377797744,
+          "actual_depth_m": 8.667006152326326,
+          "baked_signed_height_depth_m": 4.505982377797744,
+          "depth_error_m": 4.161023774528583
+        },
+        {
+          "offset_m_from_actual_shore": 1,
+          "world_xz": [
+            1190.3253880935076,
+            -1069.9859946312079
+          ],
+          "actual_highest_y": -22.785901622586113,
+          "baked_linear_height_y": -15.586075872317123,
+          "actual_depth_m": 22.785901622586113,
+          "baked_signed_height_depth_m": 15.586075872317123,
+          "depth_error_m": 7.199825750268991
+        },
+        {
+          "offset_m_from_actual_shore": 2,
+          "world_xz": [
+            1189.3253891413387,
+            -1069.9845469913178
+          ],
+          "actual_highest_y": -22.79241263470115,
+          "baked_linear_height_y": -22.79241225777323,
+          "actual_depth_m": 22.79241263470115,
+          "baked_signed_height_depth_m": 22.79241225777323,
+          "depth_error_m": 3.7692792176358125e-07
+        },
+        {
+          "offset_m_from_actual_shore": 4,
+          "world_xz": [
+            1187.3253912370012,
+            -1069.9816517115376
+          ],
+          "actual_highest_y": -22.805434658931226,
+          "baked_linear_height_y": -22.805434387671703,
+          "actual_depth_m": 22.805434658931226,
+          "baked_signed_height_depth_m": 22.805434387671703,
+          "depth_error_m": 2.7125952328788117e-07
+        }
+      ]
+    },
+    {
+      "island": "foreground_rock",
+      "side": "northwest",
+      "actual_shore_source_mesh": "World/LakeIslands49/foreground_rock/Meshes/foreground_rock_shoulder",
+      "actual_shore_world_xz": [
+        1195.7912612936805,
+        -1073.8697201480027
+      ],
+      "selected_shore_angular_distance_degrees": 2.4030501444395616,
+      "samples": [
+        {
+          "offset_m_from_actual_shore": -2,
+          "world_xz": [
+            1197.2635275329037,
+            -1072.5160465829053
+          ],
+          "actual_highest_y": 1.5421127236775896,
+          "baked_linear_height_y": 1.638224089070945,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -1,
+          "world_xz": [
+            1196.527394413292,
+            -1073.192883365454
+          ],
+          "actual_highest_y": 0.7895131941650694,
+          "baked_linear_height_y": 0.8372274141190692,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -0.5,
+          "world_xz": [
+            1196.1593278534863,
+            -1073.5313017567285
+          ],
+          "actual_highest_y": 0.4549855724656101,
+          "baked_linear_height_y": 0.5042725937846652,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": 0,
+          "world_xz": [
+            1195.7912612936805,
+            -1073.8697201480027
+          ],
+          "actual_highest_y": -3.991251773527438e-14,
+          "baked_linear_height_y": -3.8950851469604753,
+          "actual_depth_m": 3.991251773527438e-14,
+          "baked_signed_height_depth_m": 3.8950851469604753,
+          "depth_error_m": 3.8950851469604353
+        },
+        {
+          "offset_m_from_actual_shore": 0.5,
+          "world_xz": [
+            1195.4231947338747,
+            -1074.208138539277
+          ],
+          "actual_highest_y": -11.746045562111028,
+          "baked_linear_height_y": -13.556743925431272,
+          "actual_depth_m": 11.746045562111028,
+          "baked_signed_height_depth_m": 13.556743925431272,
+          "depth_error_m": 1.8106983633202436
+        },
+        {
+          "offset_m_from_actual_shore": 1,
+          "world_xz": [
+            1195.0551281740688,
+            -1074.5465569305513
+          ],
+          "actual_highest_y": -22.643681469997972,
+          "baked_linear_height_y": -21.58153167118898,
+          "actual_depth_m": 22.643681469997972,
+          "baked_signed_height_depth_m": 21.58153167118898,
+          "depth_error_m": 1.062149798808992
+        },
+        {
+          "offset_m_from_actual_shore": 2,
+          "world_xz": [
+            1194.3189950544572,
+            -1075.2233937131
+          ],
+          "actual_highest_y": -22.630941983553953,
+          "baked_linear_height_y": -22.63113654241449,
+          "actual_depth_m": 22.630941983553953,
+          "baked_signed_height_depth_m": 22.63113654241449,
+          "depth_error_m": 0.0001945588605387627
+        },
+        {
+          "offset_m_from_actual_shore": 4,
+          "world_xz": [
+            1192.8467288152337,
+            -1076.5770672781973
+          ],
+          "actual_highest_y": -22.60705156189105,
+          "baked_linear_height_y": -22.607052158453115,
+          "actual_depth_m": 22.60705156189105,
+          "baked_signed_height_depth_m": 22.607052158453115,
+          "depth_error_m": 5.965620637482516e-07
+        }
+      ]
+    },
+    {
+      "island": "foreground_rock",
+      "side": "north",
+      "actual_shore_source_mesh": "World/LakeIslands49/foreground_rock/Meshes/foreground_rock_wetshore_01",
+      "actual_shore_world_xz": [
+        1199.9950354311743,
+        -1076.3444378734375
+      ],
+      "selected_shore_angular_distance_degrees": 0.04483435545137523,
+      "samples": [
+        {
+          "offset_m_from_actual_shore": -2,
+          "world_xz": [
+            1199.9966004452558,
+            -1074.3444384857548
+          ],
+          "actual_highest_y": 2.2345425432038213,
+          "baked_linear_height_y": 2.289368784871928,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -1,
+          "world_xz": [
+            1199.9958179382152,
+            -1075.3444381795962
+          ],
+          "actual_highest_y": 1.4565534273800058,
+          "baked_linear_height_y": 1.1783661410885757,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -0.5,
+          "world_xz": [
+            1199.9954266846946,
+            -1075.8444380265169
+          ],
+          "actual_highest_y": 0.821937618763691,
+          "baked_linear_height_y": 0.7098851582917505,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": 0,
+          "world_xz": [
+            1199.9950354311743,
+            -1076.3444378734375
+          ],
+          "actual_highest_y": 1.6591589213632574e-13,
+          "baked_linear_height_y": -7.400917019764421,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 7.400917019764421,
+          "depth_error_m": 7.400917019764421
+        },
+        {
+          "offset_m_from_actual_shore": 0.5,
+          "world_xz": [
+            1199.994644177654,
+            -1076.8444377203582
+          ],
+          "actual_highest_y": -22.564295597654805,
+          "baked_linear_height_y": -18.96318127497319,
+          "actual_depth_m": 22.564295597654805,
+          "baked_signed_height_depth_m": 18.96318127497319,
+          "depth_error_m": 3.601114322681614
+        },
+        {
+          "offset_m_from_actual_shore": 1,
+          "world_xz": [
+            1199.9942529241334,
+            -1077.3444375672789
+          ],
+          "actual_highest_y": -22.55196744484833,
+          "baked_linear_height_y": -22.55196691253594,
+          "actual_depth_m": 22.55196744484833,
+          "baked_signed_height_depth_m": 22.55196691253594,
+          "depth_error_m": 5.323123914990902e-07
+        },
+        {
+          "offset_m_from_actual_shore": 2,
+          "world_xz": [
+            1199.9934704170928,
+            -1078.3444372611202
+          ],
+          "actual_highest_y": -22.527311139235366,
+          "baked_linear_height_y": -22.527310409555337,
+          "actual_depth_m": 22.527311139235366,
+          "baked_signed_height_depth_m": 22.527310409555337,
+          "depth_error_m": 7.296800283995708e-07
+        },
+        {
+          "offset_m_from_actual_shore": 4,
+          "world_xz": [
+            1199.9919054030113,
+            -1080.344436648803
+          ],
+          "actual_highest_y": -22.47799852800945,
+          "baked_linear_height_y": -22.477999295503555,
+          "actual_depth_m": 22.47799852800945,
+          "baked_signed_height_depth_m": 22.477999295503555,
+          "depth_error_m": 7.674941038260386e-07
+        }
+      ]
+    },
+    {
+      "island": "foreground_rock",
+      "side": "northeast",
+      "actual_shore_source_mesh": "World/LakeIslands49/foreground_rock/Meshes/foreground_rock_shoulder",
+      "actual_shore_world_xz": [
+        1205.5677591583649,
+        -1073.7697782131636
+      ],
+      "selected_shore_angular_distance_degrees": 10.899140109544467,
+      "samples": [
+        {
+          "offset_m_from_actual_shore": -2,
+          "world_xz": [
+            1203.9116553173565,
+            -1072.6484753692375
+          ],
+          "actual_highest_y": 1.8488384538815508,
+          "baked_linear_height_y": 1.9408683547591021,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -1,
+          "world_xz": [
+            1204.7397072378606,
+            -1073.2091267912006
+          ],
+          "actual_highest_y": 1.1405055965103494,
+          "baked_linear_height_y": 1.1569204822703911,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0,
+          "depth_error_m": 0
+        },
+        {
+          "offset_m_from_actual_shore": -0.5,
+          "world_xz": [
+            1205.1537331981128,
+            -1073.489452502182
+          ],
+          "actual_highest_y": 0.7138835859636836,
+          "baked_linear_height_y": -0.9290211201550229,
+          "actual_depth_m": 0,
+          "baked_signed_height_depth_m": 0.9290211201550229,
+          "depth_error_m": 0.9290211201550229
+        },
+        {
+          "offset_m_from_actual_shore": 0,
+          "world_xz": [
+            1205.5677591583649,
+            -1073.7697782131636
+          ],
+          "actual_highest_y": -1.2517979708359661e-11,
+          "baked_linear_height_y": -9.480748882925322,
+          "actual_depth_m": 1.2517979708359661e-11,
+          "baked_signed_height_depth_m": 9.480748882925322,
+          "depth_error_m": 9.480748882912804
+        },
+        {
+          "offset_m_from_actual_shore": 0.5,
+          "world_xz": [
+            1205.981785118617,
+            -1074.050103924145
+          ],
+          "actual_highest_y": -22.609497131763753,
+          "baked_linear_height_y": -22.207225958032854,
+          "actual_depth_m": 22.609497131763753,
+          "baked_signed_height_depth_m": 22.207225958032854,
+          "depth_error_m": 0.4022711737308988
+        },
+        {
+          "offset_m_from_actual_shore": 1,
+          "world_xz": [
+            1206.3958110788692,
+            -1074.3304296351266
+          ],
+          "actual_highest_y": -22.601175238563627,
+          "baked_linear_height_y": -22.601252565447126,
+          "actual_depth_m": 22.601175238563627,
+          "baked_signed_height_depth_m": 22.601252565447126,
+          "depth_error_m": 7.732688349904038e-05
+        },
+        {
+          "offset_m_from_actual_shore": 2,
+          "world_xz": [
+            1207.2238629993733,
+            -1074.8910810570897
+          ],
+          "actual_highest_y": -22.585018372809387,
+          "baked_linear_height_y": -22.585018881833438,
+          "actual_depth_m": 22.585018372809387,
+          "baked_signed_height_depth_m": 22.585018881833438,
+          "depth_error_m": 5.090240513538902e-07
+        },
+        {
+          "offset_m_from_actual_shore": 4,
+          "world_xz": [
+            1208.879966840382,
+            -1076.012383901016
+          ],
+          "actual_highest_y": -22.553089840471756,
+          "baked_linear_height_y": -22.55309261207446,
+          "actual_depth_m": 22.553089840471756,
+          "baked_signed_height_depth_m": 22.55309261207446,
+          "depth_error_m": 2.7716027055646464e-06
+        }
+      ]
+    }
+  ],
+  "all_side_probe_count": 256,
+  "depth_error": {
+    "count": 256,
+    "max_m": 20.917222412986998,
+    "mean_m": 2.0469605151716954,
+    "p95_m": 10.747761279824545,
+    "p99_m": 16.800169426562107
+  }
+}

@@ -1,0 +1,267 @@
+shader_type spatial;
+// LAKE_DEPTH50_BEGIN: signed actual-mesh bathymetry; all styling stays original.
+uniform bool lake50_depth_enabled=false;
+uniform sampler2D lake50_height : filter_linear, repeat_disable;
+uniform sampler2D lake50_patch0 : filter_linear, repeat_disable;
+uniform vec4 lake50_patch_bounds0;
+uniform vec2 lake50_patch_size0;
+uniform sampler2D lake50_patch1 : filter_linear, repeat_disable;
+uniform vec4 lake50_patch_bounds1;
+uniform vec2 lake50_patch_size1;
+uniform sampler2D lake50_patch2 : filter_linear, repeat_disable;
+uniform vec4 lake50_patch_bounds2;
+uniform vec2 lake50_patch_size2;
+uniform sampler2D lake50_patch3 : filter_linear, repeat_disable;
+uniform vec4 lake50_patch_bounds3;
+uniform vec2 lake50_patch_size3;
+float lake50_edge_distance(vec2 p,vec4 b){return min(min(p.x-b.x,p.y-b.y),min(b.z-p.x,b.w-p.y));}
+float lake50_patch_weight(vec2 p,vec4 b){return smoothstep(0.,8.,max(0.,lake50_edge_distance(p,b)));}
+float lake50_vertical_height(vec2 p){
+    vec2 grid=p-vec2(768.,-2304.);
+    float h=textureLod(lake50_height,(grid+vec2(.5))/vec2(769.,1537.),0.).r;
+    float w0=lake50_patch_weight(p,lake50_patch_bounds0);
+    if(w0>0.){
+        vec2 uv0=((p-lake50_patch_bounds0.xy)/.25+vec2(.5))/lake50_patch_size0;
+        h=mix(h,textureLod(lake50_patch0,uv0,0.).r,w0);
+    }
+    float w1=lake50_patch_weight(p,lake50_patch_bounds1);
+    if(w1>0.){
+        vec2 uv1=((p-lake50_patch_bounds1.xy)/.25+vec2(.5))/lake50_patch_size1;
+        h=mix(h,textureLod(lake50_patch1,uv1,0.).r,w1);
+    }
+    float w2=lake50_patch_weight(p,lake50_patch_bounds2);
+    if(w2>0.){
+        vec2 uv2=((p-lake50_patch_bounds2.xy)/.25+vec2(.5))/lake50_patch_size2;
+        h=mix(h,textureLod(lake50_patch2,uv2,0.).r,w2);
+    }
+    float w3=lake50_patch_weight(p,lake50_patch_bounds3);
+    if(w3>0.){
+        vec2 uv3=((p-lake50_patch_bounds3.xy)/.25+vec2(.5))/lake50_patch_size3;
+        h=mix(h,textureLod(lake50_patch3,uv3,0.).r,w3);
+    }
+    return h;
+}
+// LAKE_DEPTH50_END
+
+uniform vec3 scene_fill=vec3(1.);
+uniform vec3 scene_haze=vec3(.76,.80,.78);
+uniform vec3 scene_sun_direction=vec3(-.48,.82,.30);
+
+
+uniform float storm_flash=0.;
+uniform vec3 storm_camera=vec3(-2350.,420.,-1300.);
+uniform float storm_strength=0.;
+float storm35_mask(vec3 p){
+    float edge=-2350.+150.*sin((p.z+3500.)*.0007);
+    return storm_strength*(1.-smoothstep(-450.,450.,p.x-edge))*(1.-smoothstep(5200.,6800.,abs(p.z+3500.)))*smoothstep(-12000.,-10000.,p.x);
+}
+float storm35_flash(vec3 p){
+    float f=0.;
+    for(int i=0;i<3;i++){
+        vec3 c=vec3(-3450.-float(i)*440.,230.,-4000.-float(i)*1600.);
+        f+=exp(-length((p-c)/vec3(1150.,850.,1150.))*1.6);
+    }
+    return f*storm_flash;
+}
+float storm35_air(vec3 p){
+    vec3 ray=p-storm_camera;float density=0.;
+    for(int i=0;i<4;i++){
+        vec3 q=storm_camera+ray*((float(i)+.5)/4.);
+        density+=storm35_mask(q)*(1.-smoothstep(600.,1600.,q.y));
+    }
+    return 1.-exp(-length(ray)*.00011*density/4.);
+}
+
+uniform float study_night=0.;
+uniform vec3 moon_direction=vec3(-.184,.38,-.907);
+uniform vec3 moon_world_center=vec3(-3933.250977,3478.453369,-9791.308594);
+uniform float moon_world_radius=330.;
+render_mode diffuse_lambert, cull_disabled, ambient_light_disabled;
+varying vec3 world_point;
+uniform sampler2D depth_texture : hint_depth_texture, repeat_disable, filter_nearest;
+global uniform float world_time;
+uniform int emitter_count=0;
+uniform vec4 emitter_positions[80];
+uniform vec4 emitter_dimensions[80];
+uniform vec4 emitter_colors[80];
+uniform sampler2D emitter_occlusion : filter_nearest, repeat_disable;
+uniform float emitter_reflection_gain=18.;
+
+// A continuous world-space wind field; no repeated two-sine grid mask.
+float sea_hash(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}
+float sea_noise(vec2 p){
+    vec2 i=floor(p),f=fract(p);vec2 u=f*f*(3.-2.*f);
+    return mix(mix(sea_hash(i),sea_hash(i+vec2(1.,0.)),u.x),
+               mix(sea_hash(i+vec2(0.,1.)),sea_hash(i+vec2(1.,1.)),u.x),u.y);
+}
+float sea_height(vec2 p){
+    vec2 wind=normalize(vec2(.83,-.56));
+    vec2 q=vec2(dot(p,wind),dot(p,vec2(-wind.y,wind.x)));
+    q.y+=world_time*.55;
+    float swell=2.4*(sea_noise(q*vec2(.045,.085)+vec2(9.2,3.6))-.5);
+    float crest=1.35*(sea_noise(q*vec2(.09,.20)+vec2(2.3,1.7))-.5);
+    float small=.15*(sea_noise(q*vec2(.17,.45)+vec2(17.2,5.6))-.5);
+    return (swell+crest+small)*(1.+storm35_mask(vec3(p.x,0.,p.y))*.75);
+}
+// Shared jittered vertices define a continuous piecewise-planar height field.
+// This supplies material normals; the existing sea geometry is still flat.
+float sea_cross(vec2 a,vec2 b){return a.x*b.y-a.y*b.x;}
+vec2 sea_vertex(vec2 id){
+    vec2 offset=vec2(sea_hash(id),sea_hash(id+vec2(71.,19.)))-.5;
+    return (id+offset*.45)*vec2(5.5,2.8);
+}
+bool sea_inside(vec2 p,vec2 a,vec2 b,vec2 c){
+    return sea_cross(b-a,p-a)>=-.00001 && sea_cross(c-b,p-b)>=-.00001 && sea_cross(a-c,p-c)>=-.00001;
+}
+vec3 sea_facet_normal(vec2 p){
+    vec2 wind=normalize(vec2(.83,-.56));vec2 across=vec2(-wind.y,wind.x);
+    vec2 q=vec2(dot(p,wind),dot(p,across));q.y+=world_time*.55;
+    vec2 cell=floor(q/vec2(5.5,2.8));
+    vec2 va=vec2(0.);vec2 vb=vec2(1.,0.);vec2 vc=vec2(0.,1.);bool found=false;
+    for(int y=-1;y<=1;y++){
+        for(int x=-1;x<=1;x++){
+            vec2 id=cell+vec2(float(x),float(y));
+            vec2 a=sea_vertex(id),b=sea_vertex(id+vec2(1.,0.));
+            vec2 c=sea_vertex(id+vec2(1.,1.)),d=sea_vertex(id+vec2(0.,1.));
+            if(mod(id.x+id.y,2.)<1.){
+                if(!found && sea_inside(q,a,b,c)){va=a;vb=b;vc=c;found=true;}
+                if(!found && sea_inside(q,a,c,d)){va=a;vb=c;vc=d;found=true;}
+            }else{
+                if(!found && sea_inside(q,a,b,d)){va=a;vb=b;vc=d;found=true;}
+                if(!found && sea_inside(q,b,c,d)){va=b;vb=c;vc=d;found=true;}
+            }
+        }
+    }
+    va.y-=world_time*.55;vb.y-=world_time*.55;vc.y-=world_time*.55;
+    vec2 wa=wind*va.x+across*va.y,wb=wind*vb.x+across*vb.y,wc=wind*vc.x+across*vc.y;
+    vec3 a3=vec3(wa.x,sea_height(wa),wa.y),b3=vec3(wb.x,sea_height(wb),wb.y),c3=vec3(wc.x,sea_height(wc),wc.y);
+    vec3 n=normalize(cross(c3-a3,b3-a3));
+    return n.y<0.?-n:n;
+}
+// Reflection of actual registered emission surfaces, independent of native
+// Omni illumination cutoff. Finite static scene occlusion covers450m only.
+vec3 local_emission_reflection(vec3 point,vec3 ray,float fresnel){
+    vec3 result=vec3(0.);
+    for(int i=0;i<80;i++){
+        if(i>=emitter_count){break;}
+        vec3 to_emitter=emitter_positions[i].xyz-point;
+        float distance=length(to_emitter);
+        if(distance<=.01 || distance>=450. || to_emitter.y<=0.){continue;}
+        vec3 direction=to_emitter/distance;
+        float facing=dot(ray,direction);
+        if(facing<.90){continue;}
+        vec3 horizontal=abs(direction.y)>.999?vec3(1.,0.,0.):normalize(cross(direction,vec3(0.,1.,0.)));
+        vec3 vertical=normalize(cross(horizontal,direction));
+        vec3 axes=emitter_dimensions[i].xyz;
+        float width=dot(abs(horizontal),axes)/distance;
+        float height=dot(abs(vertical),axes)/distance;
+        float rough=emitter_dimensions[i].w;
+        float sx=sqrt(width*width+rough*rough),sy=sqrt(height*height+rough*rough);
+        vec2 slope=vec2(dot(ray,horizontal),dot(ray,vertical))/max(facing,.001);
+        float coverage=exp(-.5*dot(slope/vec2(sx,sy),slope/vec2(sx,sy)))*(width*height)/(sx*sy);
+        if(coverage<.00001){continue;}
+        vec3 outgoing=-direction;
+        float u=fract(atan(outgoing.z,outgoing.x)/6.28318530718+.5);
+        float v=clamp(-outgoing.y,0.,.999999);
+        vec2 uv=vec2((floor(u*64.)+.5)/64.,(float(i)*32.+floor(v*32.)+.5)/(32.*float(emitter_count)));
+        float hit_distance=textureLod(emitter_occlusion,uv,0.).r*450.;
+        float visible=step(distance,hit_distance+.25);
+        result+=emitter_colors[i].rgb*emitter_colors[i].a*coverage*visible*max(.04,fresnel)*emitter_reflection_gain;
+    }
+    return result;
+}
+void vertex() {
+    world_point=(MODEL_MATRIX*vec4(VERTEX,1.)).xyz;
+}
+void fragment() {
+    float ripple=sin(world_point.x*.031+world_time*.8)*sin(world_point.z*.043-world_time*.6);
+    // Compatibility renderer uses OpenGL NDC depth [-1, 1]. Shore color
+    // follows the real submerged terrain, from every camera direction.
+    float scene_depth=textureLod(depth_texture,SCREEN_UV,0.).r;
+    vec4 view_position=INV_PROJECTION_MATRIX*vec4(vec3(SCREEN_UV,scene_depth)*2.-1.,1.);
+    view_position/=view_position.w;
+    vec3 bottom_world=(INV_VIEW_MATRIX*view_position).xyz;
+    float water_depth=max(world_point.y-bottom_world.y,0.);
+    // LAKE_DEPTH50_REPLACE_BEGIN: only this depth input is altered.
+    if(lake50_depth_enabled){
+        float lake50_edge=lake50_edge_distance(world_point.xz,vec4(768.,-2304.,1536.,-768.));
+        if(lake50_edge>0.){
+            float lake50_world_depth=max(0.,world_point.y-lake50_vertical_height(world_point.xz));
+            water_depth=mix(water_depth,lake50_world_depth,smoothstep(0.,32.,lake50_edge));
+        }
+    }
+    // LAKE_DEPTH50_REPLACE_END
+
+    vec3 deep=mix(vec3(.150,.380,.610),vec3(.210,.470,.665),ripple*.16+.4);
+    float shelf=smoothstep(0.,10.0,water_depth);
+    vec3 c=mix(vec3(.40,.60,.66),vec3(.30,.53,.64),smoothstep(0.,.45,shelf));
+    c=mix(c,deep,smoothstep(.35,1.,shelf));
+    float foam_px=fwidth(water_depth);
+    float foam_n=smoothstep(.55,.85,sea_noise(world_point.xz*vec2(.03,.045)+vec2(0.,world_time*.02)));
+    float foam=(1.-smoothstep(0.,max(.8,foam_px),water_depth))*.5*foam_n;
+    c=mix(c,vec3(.83,.90,.87),foam);
+    ALBEDO=mix(pow(c,vec3(2.2)),c,.60);
+    ROUGHNESS=.38;SPECULAR=.3;
+    vec3 day_emission=ALBEDO*.82;
+    // The moon reflection is computed from the actual surface position,
+    // wave normal and view ray. It moves with the observer in the same world.
+    vec3 wave_normal=sea_facet_normal(world_point.xz);
+    vec3 view_direction=normalize(INV_VIEW_MATRIX[3].xyz-world_point);
+    // Finite authored world sphere; actual runtime node values are bound
+    // after construction. Each water point has its own incident direction.
+    vec3 reflected_ray=reflect(-view_direction,wave_normal);
+    vec3 to_moon=moon_world_center-world_point;
+    float moon_distance=max(length(to_moon),moon_world_radius+1.);
+    vec3 local_moon_direction=to_moon/moon_distance;
+    float separation=acos(clamp(dot(reflected_ray,local_moon_direction),-1.,1.));
+    float moon_radius=asin(clamp(moon_world_radius/moon_distance,0.,1.));
+    float pixel_angle=max(.00015,.65*(length(dFdx(view_direction))+length(dFdy(view_direction))));
+    float reflected=1.-smoothstep(moon_radius-pixel_angle,moon_radius+pixel_angle,separation);
+    // Micro-rough reflection surrounds a smaller silver core. This is an
+    // angular surface response, not a screen-space position/brightness mask.
+    float rough_width=.045;
+    float outside_disk=max(separation-moon_radius,0.);
+    float rough_reflection=exp(-outside_disk*outside_disk/(2.*rough_width*rough_width));
+    float rough_peak=(moon_radius*moon_radius)/(moon_radius*moon_radius+rough_width*rough_width);
+    vec3 moon_radiance=vec3(.36,.55,.95)*rough_reflection*rough_peak+vec3(.60,.78,1.16)*reflected*.62;
+    float broken_wave=.70+.30*sea_noise(world_point.xz*vec2(.035,.055)+vec2(4.,world_time*.08));
+    vec3 night_color=mix(vec3(.016,.043,.125),vec3(.030,.080,.215),ripple*.3+.5);
+    night_color=mix(night_color,vec3(.065,.095,.15),foam*.6);
+    vec3 sky_ray=reflect(-view_direction,wave_normal);
+    float fresnel=pow(1.-max(dot(wave_normal,view_direction),0.),3.);
+    float sky_height=smoothstep(0.,.85,sky_ray.y);
+    // Match the actual open_sky night gradient and halo radiance.
+    float sky_altitude=clamp(sky_ray.y,0.,1.);
+    vec3 reflected_night_sky=mix(vec3(.065,.14,.30),vec3(.009,.028,.085),pow(clamp(sky_altitude/.7,0.,1.),.6));
+    reflected_night_sky+=vec3(.10,.16,.32)*exp(-separation*25.);
+    vec3 reflected_day_sky=mix(vec3(.66,.77,.87),vec3(.25,.46,.69),sky_height);
+    day_emission=mix(day_emission,reflected_day_sky,.40*fresnel);
+    night_color=mix(night_color,reflected_night_sky,.65*fresnel);
+    EMISSION=mix(day_emission,night_color+moon_radiance*broken_wave+local_emission_reflection(world_point,reflected_ray,fresnel),study_night);
+    ALBEDO=mix(ALBEDO,vec3(.006,.016,.043),study_night);
+    NORMAL=normalize((VIEW_MATRIX*vec4(wave_normal,0.)).xyz);
+    ALPHA=1.;
+
+    float storm=storm35_mask(world_point);
+    vec3 sun_center=vec3(-2278.,420.,-1300.)+normalize(scene_sun_direction)*13000.;
+    vec3 to_sun=normalize(sun_center-world_point);
+    float sun_sep=acos(clamp(dot(reflected_ray,to_sun),-1.,1.));
+    float sun_reflection=exp(-sun_sep*sun_sep/.006)*(1.-storm*.96);
+    float crest_level=1.-wave_normal.y;
+    float whitecaps=smoothstep(.10,.23,crest_level)*storm*smoothstep(.48,.69,sea_noise(world_point.xz*.017+vec2(world_time*.08,3.)));
+    vec3 storm_water=mix(vec3(.024,.055,.085),vec3(.26,.34,.40),whitecaps*.8);
+    vec3 clear_water=EMISSION*vec3(1.,1.,1.)+vec3(.55,.52,.45)*sun_reflection;
+    EMISSION=mix(clear_water,storm_water,storm);
+    EMISSION=mix(EMISSION,vec3(.74,.78,.79),foam*(1.-storm)*(1.-study_night));
+    ALBEDO*=1.-foam*(1.-storm)*(1.-study_night);
+    EMISSION+=vec3(.34,.35,.65)*storm35_flash(world_point)*(whitecaps+.18);
+    EMISSION=mix(EMISSION,vec3(.11,.15,.21),storm35_air(world_point));
+    ALBEDO*=1.-storm*.85;
+
+
+ALBEDO*=mix(vec3(1.),scene_fill,.35);
+EMISSION*=scene_fill;
+}
+void light() {
+    DIFFUSE_LIGHT+=LIGHT_COLOR*ATTENUATION*(1.-.9*storm35_mask(world_point))*max(dot(NORMAL,LIGHT),0.)*.18/PI;
+}

@@ -1,0 +1,233 @@
+{
+  "purpose": "Additive 0.25m island height patches for existing49 material diagnosis only; no new candidate",
+  "source_scene_sha256": "52d13fcb7ea412d3a0fae2eedb1d0f9c369dbe06c0da320d786c26c97c475ec8",
+  "source_export_manifest_sha256": "8d87cddcdef1c211f8ea0d2eb41ed781c2abc895179ea642ef8e38a72719c8e4",
+  "source_triangle_binary_sha256": "66b620550a06d991124d594f815b5e4f8a4b7dcb628bb6ee0883cb891231725a",
+  "frozen_base_height_rf_sha256": "eb07f4fe37de298c661c3b097568873bbf38bc1705c353e113961eab481ed803",
+  "frozen_base_height_image_sha256": "c665b351a842d919a73905328f2ed8a5281dfc60fe42324f8bb51c68640e5940",
+  "source_geometry": "Same actual saved49 Mesh.get_faces world triangles as frozen1m bake, all intersecting static support including island roots/shoulders/wetshore/solid grass caps",
+  "sea_level_y": 0,
+  "pixel_uv": "((world_xz - world_bounds.xy) / spacing_m + vec2(0.5)) / vec2(size)",
+  "sampler": "filter_linear, repeat_disable, no mipmaps, no source_color/sRGB conversion",
+  "blend": "Outside bounds weight strictly0. Inside distance d=min(x-xmin,z-zmin,xmax-x,zmax-z); w=smoothstep(0,8,d); h=mix(base_signed_height,patch_signed_height,w); depth=max(0,-h). Four domains do not overlap.",
+  "patches": [
+    {
+      "name": "island_near_left",
+      "actual_ground_footprint_xmin_zmin_xmax_zmax": [
+        1008.96002197266,
+        -1170.56555175781,
+        1077.63073730469,
+        -1128.72705078125
+      ],
+      "world_bounds": [
+        996.75,
+        -1182.75,
+        1089.75,
+        -1116.5
+      ],
+      "size": [
+        373,
+        266
+      ],
+      "spacing_m": 0.25,
+      "feather_width_m": 8.0,
+      "footprint_margin_to_domain_m": [
+        12.210021972660002,
+        12.184448242190001,
+        12.119262695309999,
+        12.22705078125
+      ],
+      "footprint_margin_to_feather_inner_edge_m": [
+        4.210021972660002,
+        4.184448242190001,
+        4.119262695309999,
+        4.22705078125
+      ],
+      "minimum_margin_beyond_feather_m": 4.119262695309999,
+      "raw_float32_file": "island_near_left-height025-rf.f32",
+      "raw_sha256": "677c27dca15ccb1b33974e27ea03210af9e34a02f902ee5dcb214d062d3a3ae2",
+      "image_resource": "island_near_left-height025-rf.res",
+      "exr_file": "island_near_left-height025.exr",
+      "sample_count": 99218,
+      "missing_samples": 0,
+      "min_height_y": -25.132629475867315,
+      "max_height_y": 4.541849945676484,
+      "projected_overlapping_input_triangles": 1177,
+      "source_meshes": [
+        "World/LakeIslands49/island_near_left/Meshes/island_near_left_rockroot",
+        "World/LakeIslands49/island_near_left/Meshes/island_near_left_shoulder",
+        "World/LakeIslands49/island_near_left/Meshes/island_near_left_grasscap_west",
+        "World/LakeIslands49/island_near_left/Meshes/island_near_left_grasscap_east",
+        "World/LakeIslands49/island_near_left/Meshes/island_near_left_wetshore_00",
+        "World/LakeIslands49/island_near_left/Meshes/island_near_left_wetshore_01",
+        "World/LakeIslands49/island_near_left/Meshes/island_near_left_wetshore_02",
+        "World/LakeIslands49/island_near_left/Meshes/island_near_left_wetshore_03",
+        "World/LakeIslands49/island_near_left/Meshes/island_near_left_wetshore_04",
+        "World/LakeIslands49/island_near_left/Meshes/island_near_left_wetshore_05"
+      ]
+    },
+    {
+      "name": "island_far_middle",
+      "actual_ground_footprint_xmin_zmin_xmax_zmax": [
+        1021.84002685547,
+        -1670.56555175781,
+        1094.55017089844,
+        -1628.72705078125
+      ],
+      "world_bounds": [
+        1009.75,
+        -1682.75,
+        1106.75,
+        -1616.5
+      ],
+      "size": [
+        389,
+        266
+      ],
+      "spacing_m": 0.25,
+      "feather_width_m": 8.0,
+      "footprint_margin_to_domain_m": [
+        12.09002685547,
+        12.184448242190001,
+        12.199829101559999,
+        12.22705078125
+      ],
+      "footprint_margin_to_feather_inner_edge_m": [
+        4.0900268554700006,
+        4.184448242190001,
+        4.199829101559999,
+        4.22705078125
+      ],
+      "minimum_margin_beyond_feather_m": 4.0900268554700006,
+      "raw_float32_file": "island_far_middle-height025-rf.f32",
+      "raw_sha256": "842541bfd47ed36c337e46f93507b99af7801bddd134bae83478cdaccb1e289b",
+      "image_resource": "island_far_middle-height025-rf.res",
+      "exr_file": "island_far_middle-height025.exr",
+      "sample_count": 103474,
+      "missing_samples": 0,
+      "min_height_y": -30.240388111338007,
+      "max_height_y": 3.2719722130031905,
+      "projected_overlapping_input_triangles": 1102,
+      "source_meshes": [
+        "World/LakeIslands49/island_far_middle/Meshes/island_far_middle_rockroot",
+        "World/LakeIslands49/island_far_middle/Meshes/island_far_middle_shoulder",
+        "World/LakeIslands49/island_far_middle/Meshes/island_far_middle_grasscap_west",
+        "World/LakeIslands49/island_far_middle/Meshes/island_far_middle_grasscap_east",
+        "World/LakeIslands49/island_far_middle/Meshes/island_far_middle_wetshore_00",
+        "World/LakeIslands49/island_far_middle/Meshes/island_far_middle_wetshore_01",
+        "World/LakeIslands49/island_far_middle/Meshes/island_far_middle_wetshore_02",
+        "World/LakeIslands49/island_far_middle/Meshes/island_far_middle_wetshore_03",
+        "World/LakeIslands49/island_far_middle/Meshes/island_far_middle_wetshore_04",
+        "World/LakeIslands49/island_far_middle/Meshes/island_far_middle_wetshore_05"
+      ]
+    },
+    {
+      "name": "island_near_right",
+      "actual_ground_footprint_xmin_zmin_xmax_zmax": [
+        1358.80004882812,
+        -1132.73107910156,
+        1399.19458007812,
+        -1106.8310546875
+      ],
+      "world_bounds": [
+        1346.75,
+        -1144.75,
+        1411.25,
+        -1094.75
+      ],
+      "size": [
+        259,
+        201
+      ],
+      "spacing_m": 0.25,
+      "feather_width_m": 8.0,
+      "footprint_margin_to_domain_m": [
+        12.050048828119998,
+        12.018920898440001,
+        12.055419921880002,
+        12.0810546875
+      ],
+      "footprint_margin_to_feather_inner_edge_m": [
+        4.050048828119998,
+        4.018920898440001,
+        4.055419921880002,
+        4.0810546875
+      ],
+      "minimum_margin_beyond_feather_m": 4.018920898440001,
+      "raw_float32_file": "island_near_right-height025-rf.f32",
+      "raw_sha256": "49b023cc5de92c9dd395a398038ebb13058de50ba1cc743777f7ab69b6f201eb",
+      "image_resource": "island_near_right-height025-rf.res",
+      "exr_file": "island_near_right-height025.exr",
+      "sample_count": 52059,
+      "missing_samples": 0,
+      "min_height_y": -24.65373397706036,
+      "max_height_y": 3.5525941818423528,
+      "projected_overlapping_input_triangles": 1003,
+      "source_meshes": [
+        "World/LakeIslands49/island_near_right/Meshes/island_near_right_rockroot",
+        "World/LakeIslands49/island_near_right/Meshes/island_near_right_shoulder",
+        "World/LakeIslands49/island_near_right/Meshes/island_near_right_grasscap_west",
+        "World/LakeIslands49/island_near_right/Meshes/island_near_right_grasscap_east",
+        "World/LakeIslands49/island_near_right/Meshes/island_near_right_wetshore_00",
+        "World/LakeIslands49/island_near_right/Meshes/island_near_right_wetshore_01",
+        "World/LakeIslands49/island_near_right/Meshes/island_near_right_wetshore_02",
+        "World/LakeIslands49/island_near_right/Meshes/island_near_right_wetshore_03",
+        "World/LakeIslands49/island_near_right/Meshes/island_near_right_wetshore_04",
+        "World/LakeIslands49/island_near_right/Meshes/island_near_right_wetshore_05"
+      ]
+    },
+    {
+      "name": "foreground_rock",
+      "actual_ground_footprint_xmin_zmin_xmax_zmax": [
+        1190.4599609375,
+        -1076.85522460938,
+        1208.63757324219,
+        -1062.90905761719
+      ],
+      "world_bounds": [
+        1178.25,
+        -1089.0,
+        1220.75,
+        -1050.75
+      ],
+      "size": [
+        171,
+        154
+      ],
+      "spacing_m": 0.25,
+      "feather_width_m": 8.0,
+      "footprint_margin_to_domain_m": [
+        12.2099609375,
+        12.144775390619998,
+        12.112426757809999,
+        12.159057617190001
+      ],
+      "footprint_margin_to_feather_inner_edge_m": [
+        4.2099609375,
+        4.144775390619998,
+        4.112426757809999,
+        4.159057617190001
+      ],
+      "minimum_margin_beyond_feather_m": 4.112426757809999,
+      "raw_float32_file": "foreground_rock-height025-rf.f32",
+      "raw_sha256": "2c857bc519e3478c85f315c7e9a76871fa593982f5206bbcc5306d6d8f6becb2",
+      "image_resource": "foreground_rock-height025-rf.res",
+      "exr_file": "foreground_rock-height025.exr",
+      "sample_count": 26334,
+      "missing_samples": 0,
+      "min_height_y": -23.36318196205174,
+      "max_height_y": 3.879590421504428,
+      "projected_overlapping_input_triangles": 760,
+      "source_meshes": [
+        "World/LakeIslands49/foreground_rock/Meshes/foreground_rock_rockroot",
+        "World/LakeIslands49/foreground_rock/Meshes/foreground_rock_shoulder",
+        "World/LakeIslands49/foreground_rock/Meshes/foreground_rock_wetshore_00",
+        "World/LakeIslands49/foreground_rock/Meshes/foreground_rock_wetshore_01",
+        "World/LakeIslands49/foreground_rock/Meshes/foreground_rock_wetshore_02",
+        "World/LakeIslands49/foreground_rock/Meshes/foreground_rock_wetshore_03",
+        "World/LakeIslands49/foreground_rock/Meshes/foreground_rock_wetshore_04",
+        "World/LakeIslands49/foreground_rock/Meshes/foreground_rock_wetshore_05"
+      ]
+    }
+  ]
+}
