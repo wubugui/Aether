@@ -1,0 +1,7 @@
+# Full51 verifier stopped at the first normal-pass difference
+
+2026-10-01 01:53UTC, exit1. 663 checks, one failed: same-world original50 ready materials versus all converted51 materials with depth/clip/reflection disabled. Exactly5 changed pixels in1128 at(508,387),(510,387),(498,388),(279,405),(962,432), maximum channel difference30. OriginalA and restoredA2 match allRGBA bytes. All114material pairs,248saved binding fields,387ready binding fields and prior movement results match the intended scope. Three actual PNGs retained. Stderr contains the knownVSync warning only.
+
+The strict zero-difference gate failed and correctly prevented later reference, clip-only and dynamic tests. Do not describe unrun gates as passed. Saved50/51 files remain unchanged. Diagnosing Ocean/native/custom material groups and possible shadow-path effects next; no raised tolerance, no production shadow removal, no51b build yet.
+
+Official Godot4.5.1 Compatibility source has a potentially relevant branch: shaders using discard do not use the shared shadow material optimization even when a runtime uniform disables the discard condition. This is a diagnostic hypothesis, not established causality for these five pixels. Source: https://raw.githubusercontent.com/godotengine/godot/4.5.1-stable/drivers/gles3/rasterizer_scene_gles3.cpp (function _geometry_instance_add_surface_with_material). All actual reference fidelity and hardwareGPU gates remain false.
