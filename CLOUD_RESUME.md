@@ -1,4 +1,4 @@
-# Cloud continuation — 2026-09-30 UTC
+# Cloud continuation — updated 2026-10-01 UTC
 
 Read unchanged GOAL.md first: all 20 reference images plus the original opening in one real 3D world. All visual acceptance remains pending. Do not confuse functional checks, migration, source asset review or software-rendered pixels with complete GPU/visual acceptance.
 
@@ -13,7 +13,7 @@ Read unchanged GOAL.md first: all 20 reference images plus the original opening 
 
 ## Tools and actual rendering
 
-Official Godot 4.5.1 stable is installed in /workspace/shared/feiting-tools/Godot_v4.5.1-stable_linux.x86_64. Official Blender 4.5.14 LTS in /workspace/shared/feiting-tools/blender-4.5.14-linux-x64/blender was checksum-verified. User explicitly permitted cloud Blender on September 30, overriding the previous Hub-only restriction. Do not modify either user's network settings.
+Current official tools are /workspace/scratch/a29d03198654/tools-feiting/Godot_v4.5.1-stable_linux.x86_64 and tools-feiting/blender-4.5.14-linux-x64/blender, vendor-checksum verified. Earlier /workspace/shared tool paths disappeared and are obsolete. User explicitly permitted cloud Blender on September 30, overriding the previous Hub-only restriction. Do not modify either user's network settings.
 
 Cloud desktop X11 can run Godot Compatibility, but reports Mesa llvmpipe software rendering. No hardware GPU gate is satisfied. Cloud shell does not expose the display; run graphical commands through the existing cloud desktop terminal. Use isolated XDG directories and Dummy audio. The VSync unsupported warning is known and retained, never suppress other warnings/errors.
 
@@ -100,3 +100,15 @@ Nextworker sculpt_shared_lake_basin48 owns ongoinglake50plan/bindings/depthpatch
 User explicitly requested separate newSlack channels with progress/currentappearance. ParentcreatedandIverifiedprivate #feiting-progress C0C5WDC9649,owneruserUKQMWM9MZjoined. All future FeiTing progress goes to this new channel, NOT the old self-DM thread. Current channel summary https://tupworld.slack.com/archives/C0C5WDC9649/p1790815652390219 . Five Game49 realPNG sharedsuccessfullyinthatsummarythread: openingF0C5SHD38F8,lakeF0C5WEB3FC1,islandbackF0C6NSUJK40,nightcloudsF0C5UBSE4D8,cabinF0C5UBTD5H8. No researchframe substitutedforcurrentversion. Allcaptionedcloudcandidate/softwarerender/notaccepted;summaryhasprogress/failures/Gitwriteblock. Do notduplicate delivery. Latest freshGame49overviewrun current49-overview-20261001T004646Z-qrMDCR completedexit0,boot+1216+1278 actualsavedworld,source/defaultunchanged;committedb6168a1. NoGodotgameprocessleftfromthisrun.
 
 Workplan split: Game50 is now water-depth-only persistentfix using1m+four0.25m patches, Oceancopy+externaltextures/controlleronly. SameWorlddynamicreflection/114materialclip planretainedforindependent51. At00:44:53UTCworkerhadwrittenproject/scripts/lake_depth50.gd andproject/assets/lake_depth50/lake_water_depth50.gdshader, matching4.5.1parsepass;source-assets/lake_depth50/shader-change-ledger.jsonverifiesremovingtwoinsertsrestores49shaderexactincludingCRLF. Builder/verifierstillbeingcompleted;do notclaimGame50built. ParentaskedactualmodelID;visibletool/runtimeprovidesnone,soAstraisnotverified. Do notguessmodelname. Explicitusercontinuationstillactive.
+
+## Latest checkpoint 2026-10-01 01:29 UTC
+
+Game50 depth-only build/reload and corrected independent verifier completed successfully. Candidate SHA031b39ea75680e98fbed4882507251ec0ebfb3469300f82402891a0137351ff0. Local commitc1e78a4. Successful run cloud-evidence/depth50-verify-v2-20261001T010738Z-G3enLm:227 bounded checks,60actual PNG,12 poses, all required original49/disabled50/restored controls fullRGBA zero-difference; independent PNG recomputation agrees. All2235PhysicsObject modes/layers/masks/RIDs unchanged by freeze. Original350m camera routes still blocked,150m/200m remain clear, no full-airship claim. All12 enabled images reviewed by developer; large cyan root columns removed but thin cyan edges, strong waves, no mirror reflections and major scene/reference gaps remain. Hardware/visual/total acceptance false. Detailed report cloud-evidence/depth50-review.md.
+
+First50 verifier preserved in depth50-20261001T005643Z-gxCMO5 with27frames: process_mode disabling removed collision objects and global-uniform getter produced errors; manually interrupted, no fabricated exit code. Correctedv2 stops callbacks only. Do not reuse invalid first motion outcomes.
+
+NewSlack channel delivery succeeded: https://tupworld.slack.com/archives/C0C5WDC9649/p1790817346914309 . Two current50images F0C5NE8J7JP/F0C5SN635P0 plus31.32MB87frame(success+failed)report ZIP F0C5PC0AQSZ, allHTTP200 andcompleteconfirmed. Trackingcloud-delivery/depth50-20261001/delivery-manifest.json. No duplicate sharing. CloudGitwriteblock/manualtransfer remains; later commits stilllocal.
+
+51 prepared actualcontroller/watershader/materialfactory;114scopedmaterials(73Shader/41Standard),4officialnative templates,12custom/generatedshader bodies. Exact reversiblecodeinjection, olduniforms/flags retained, next_pass114allnull and nonnullrejected. Primitive true-render compile/control finishedexit0 inreflection51-source-compile-20261001T011358Z-XFxZBJ;original/injectedmainpassallRGBA0difference, markerclips4894pixels, diagnosticboxesonly. Committed1563764. Purecameraopticsunit1715points/120cases passedmaxNDC3.42e-5 after correctingtester'schildviewportaspect, retainedfailedtests, commitf391d84. Neitherisfullsceneacceptance.
+
+01:29UTCstartedbuilder-only51 diagnosticOFF via source-assets/reflection51/build_diagnostic51.sh, pointertools-feiting/feiting51-build-last.txt. Checkactualexitbeforeanyrepeat. Controllerclip/reflectiondefaultfalse; thissaveddiagnosticcandidatewillNOTshowreflectiononordinarylaunch. Workercontinuesfullmainpass/clip/reflectionverifier. Afteractualgates,authoraseparateexplicitdefaultONcandidateandreteststartup;donotoverwriteoffdraft. GUItestTerminal27267931isoccupiedbycurrentbuilder;retainedconvertereditor39845891mustremainuntouched. Existingworldnative49/50/default42c/protectedcliffhashunchanged. LatestmodelIDstillnotexposed;Astraunverified.
