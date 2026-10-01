@@ -1,0 +1,61 @@
+{
+  "source_verified": true,
+  "visual_acceptance": false,
+  "axis_mapping": "Blender (x,y,z) -> glTF/Godot (x,z,-y)",
+  "axis_evidence_sha256": "9a73588ffffe19874a2495121fc497a8d85330c24eff626fe50aefa65055e93e",
+  "source_evidence": [
+    {
+      "filename": "geometry52e.json",
+      "sha256": "1f851f68fde4d33cecbfb9d896a2bf6fdb51bc5a29fd7d1f46aa4dbd8b45f407"
+    },
+    {
+      "filename": "surface-integrity52e.json",
+      "sha256": "3a06f2beaec0271d9a67409e24156ca2c6b3423eae4007d80025b8b528ea21a2"
+    },
+    {
+      "filename": "axis-map52e.json",
+      "sha256": "9a73588ffffe19874a2495121fc497a8d85330c24eff626fe50aefa65055e93e"
+    },
+    {
+      "filename": "cloud_sea52e.blend",
+      "sha256": "562c1f42ff532090bbd1b4311dbc9f7a17b05ee6ed803b540f4b01c4020a2aec"
+    },
+    {
+      "filename": "model_sea52e.py",
+      "sha256": "28296503ec5bbbc576625b380f9941fbeeef102c46b7d063939ef61964432104"
+    }
+  ],
+  "variants": [
+    {
+      "variant": 0,
+      "filename": "cloud_sea_52e_0.glb",
+      "sha256": "9c33a3fc5167736786641abb4d29b7098b8a8ead8113076c9db83679716f8a96",
+      "mesh_names": [
+        "CloudSea52e_v0_main_ridge",
+        "CloudSea52e_v0_offset_shoulder",
+        "CloudSea52e_v0_low_tail"
+      ]
+    },
+    {
+      "variant": 1,
+      "filename": "cloud_sea_52e_1.glb",
+      "sha256": "b5810f31e6c879b5068188a5dad301e27446c08ddc278e49b88e3385c37baa73",
+      "mesh_names": [
+        "CloudSea52e_v1_main_ridge",
+        "CloudSea52e_v1_offset_shoulder",
+        "CloudSea52e_v1_low_tail"
+      ]
+    },
+    {
+      "variant": 2,
+      "filename": "cloud_sea_52e_2.glb",
+      "sha256": "50ea4ec8bdefb1af13e931c0dbddabbad80186ee5a6b6e386afe368f93c8f5fc",
+      "mesh_names": [
+        "CloudSea52e_v2_main_ridge",
+        "CloudSea52e_v2_offset_shoulder",
+        "CloudSea52e_v2_low_tail"
+      ]
+    }
+  ],
+  "limits": "Source structural validity only. Bounds validate export axes, never world nonintersection. Source preview and world visual acceptance remain separate."
+}
