@@ -1,5 +1,7 @@
 # Aether local-to-cloud handoff — 2026-09-30
 
+**Historical migration snapshot.** Current cloud work, verified candidate, outstanding failures and recovery steps are maintained only in [CLOUD_RESUME.md](CLOUD_RESUME.md). Read it and GOAL before each task; update progress in the same commit as each completed verifiable item, immediately push and verify the remote. The old42c/no43 status and old next-step recommendations below describe the migration date, not the current development state.
+
 Local development stopped at the user's instruction. This branch preserves project material; migration is not GOAL acceptance. Read the unchanged `GOAL.md` for the full requirement.
 
 ## Current candidate and evidence

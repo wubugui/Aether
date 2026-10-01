@@ -1,3 +1,144 @@
+# Aether 云端开发权威进度与恢复入口
+
+更新时间：2026-10-01 15:33 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 目标、工程与交付状态
+
+- 总目标仍是20张参考图加原开场，全部位于同一可实际接近、飞行、转向观察的原生3D世界。只做场景，不新增角色。全部参考视觉与硬件GPU验收仍未完成；检查计数、闭合网格、迁移或短程飞行都不能代替视觉验收。
+- 当前开发仓库：[wubugui/Aether](https://github.com/wubugui/Aether)，工作分支 development/feiting-cloud-20260930。只做正常非强制推送，不改默认分支，不写 migration/feiting-20260930。
+- 当前恢复工作区：/workspace/scratch/a29d03198654/Aether。实际项目为 candidates/round40-exclusive-20260930/project。项目默认仍是42c；**最新已保存原生候选是61**，必须显式加载，不能把默认42c误当全部最新成果。
+- 本次恢复、最近独立核实的远端工程基线为 **4bff9179882f1bf8387fedd02d5799f4f10f4c04**，tree **fa3170f658c6305f15ad7e634f88285a59114e07**。13:24正常push成功，13:25独立ls-remote和GitHub commit API核对一致，恢复后再次核对。此提交包含已完成211米近湾飞行证据；完整已提交历史可从GitHub恢复。
+- 本次进度文档整理是该基线之后的本地工作，**截至此记录尚未完成推送核验，不得称已交付**。15:21只读gh auth status返回未登录；15:32主线程确认本次官方设备授权后的等待被api.github.com网络策略阻止，登录未保存。认证由主线程协调，不自行重启登录、复制凭据或绕过策略。不要因有本地commit或公开仓库可读就声称可写。
+- 文档无法在自身提交中写入自身最终SHA。每次开工须实时执行git rev-parse HEAD，并与远端分支比较；本页的“已核远端”是明确时间点的证据，不是永久固定回退点。后续新提交优先使用其实际HEAD与核验结果。
+
+## 每项工作的固定流程
+
+1. 开始前读本页、GOAL、所改资产的原生权威和已有失败记录；核当前HEAD、工作树未提交内容与最近远端。先查进程/退出码/最后日志，不能重复启动已终态测试。
+2. 给本项划定实际改动范围、预期结果与验收方式。记录源码/原生资产路径、版本、输入SHA、运行目录、真实退出码、图片和明确未通过项。图片必须实际看过，研究源图不能冒充已集成世界。
+3. 完成一项可验证改动或有结论的失败试验，就更新本页的当前状态、已完成/未通过项、下一动作；把该项源码、可编辑原生资源、必要证据与文档放入同一提交。**立即push并独立核对远端commit/tree，不攒到整个阶段结束。** 若使用LFS，还须核远端对象可恢复；当前Aether没有LFS依赖。
+4. 只有远端核验成功才能记“已推送”。失败则记“本地已提交/待推”、准确原因及下一步，先解决发布，不继续堆大量未推改动。不要把Git输出不确定、上传开始或单一API返回当完整交付。
+5. 阶段结束把报告和当前真实图片发到既有 [#feiting-progress线程](https://tupworld.slack.com/archives/C0C5WDC9649/p1790835576223599)。检查已有内容避免重复，不改收件频道/身份绕过拒绝。最近发送收据见下方。
+6. 以GitHub完整版本历史为恢复依据，不再同步本机，不额外堆原项目ZIP/bundle/分卷备份。清理仅限已证明可恢复的重复材料，保留未推、唯一资料和失败证据，不删除或压缩Git历史。
+
+## 当前有效原生候选
+
+入口：[Game61Coast.tscn](candidates/round40-exclusive-20260930/project/scenes/candidate61-coast/Game61Coast.tscn)。SHA256为dff06de665e1fa1f6ab74ff3cdf4e91442e1ac322839a37718e799f0d7fa44d8；1453字节继承场景和六个独立资源，不是另一份整世界拷贝。
+
+继承链为61 → 60云海船体观察 → 56低岬 → 55镜湖观察 → 53d西山 → 51b反射基线。61只改Ground_-5_-5地块、对应碰撞和四组散布。失败的52f/58研究云体没有合入这条当前世界链。
+
+| 已完成项 | 实际结果与证据 | 交付与边界 |
+|---|---|---|
+| 61原生海湾集成 | [verified61.json](candidates/round40-exclusive-20260930/project/scenes/candidate61-coast/verified61.json)、[源与范围](source-assets/coast61-integration/README.md)。759改动三角、2111原三角GPU字段保持；40调整根、7水平移位 | a41b5fed8c359d02b79eb3e13329a8fd1d730a4e已核远端。没有晋级默认场景 |
+| 61新进程真实世界检查 | [v2证据](cloud-evidence/coast61-v2-verify-20261001T124815Z-czvc76_r/wrapper-report.json)：Godot exit0，251.07秒，10张实图；1128/1216精确姿态、开关恢复、两轮120根碰撞/缓存记录通过；实际导出几何的连续足面446检查exit0 | [独立复核](cloud-evidence/coast61-independent-review/review.json)。仅40调整物件的新连续支承通过；20原样物件仍包括旧岩石约0.150/0.388米局部空隙。rock7保留原地上表面积75.047%，净高4.780米。未称所有物件零间隙 |
+| 61近湾普通输入飞行 | [verified-flight61.json](source-assets/coast61-nearbay-flight/verified-flight61.json)、[实际运行](cloud-evidence/player-nearbay61-renderer-20261001T131646Z-f5163t8s/wrapper-report.json)：exit0，66.63秒，544物理步；水平沿线202.391米、累计3D路径211.009米、18/36.785/55.570米三层，稳定制动无碰撞/伤害 | 4bff917已核远端；1477输入不变、5张实图已看。初始摆位和后续导航不计里程。**5图几乎只有海面/船，岸景视觉覆盖未过**；不是GUI键盘焦点、全世界航线或硬件GPU验收 |
+| 60可关闭云海观察 | [verified60.json](candidates/round40-exclusive-20260930/project/scenes/candidate60-observation/verified60.json)。11294节点范围、10图、启用/关闭/重复、12.23米普通短飞全部终态0 | 8e58d80及后续1d8a56d已推。只改1216船位置/朝向，船比例与相机/FOV未改；船照明/轮廓和云海仍不匹配参考 |
+| 56、55、53d、51b继承成果 | 56低岬、55完整船与镜像构图、53d西山与散布/碰撞、51b同世界动态反射都保存在当前继承链；详细旧证据在历史区和各source-assets目录 | 这些是限定功能/局部实体成果，整图视觉仍未接受。51b原1344两像素主通道差异和旧350米路线失败不能被后来窄检查抹去 |
+| 58C云体研究冻结 | [C冻结清单](source-assets/cloud-bank58/revision-c-complete-freeze-20261001T1305Z.json)、[视觉拒绝](source-assets/cloud-bank58/revision-c/VISUAL_REVIEW58C.md)。最终单壳genus0、330谷底射线过原厚度/高度门，五面真实源图完成 | 16823e02042c39da82a6516171a5159b7fb1fc8e已核远端。结构通过但巨石冠、圆台托体、空缓面/宽底板仍失败；未入世界 |
+
+61的10图逐图视觉结论见 [VISUAL_REVIEW.md](cloud-evidence/coast61-v2-verify-20261001T124815Z-czvc76_r/VISUAL_REVIEW.md)。近湾飞行独立复核见 [review.json](cloud-evidence/nearbay61-independent-review/review.json)。既往云端实际图形证据使用Mesa llvmpipe软件渲染；迁移保留的本机历史另有GTX970图形证据。当前云端61候选并未通过硬件GPU验收。
+
+## 必须保留的失败与未完成事项
+
+- **1131/1347全貌仍失败**：右侧高主山链、多尺度海湾/岛链、暖光和纵深缺失，目前主要是低绿丘和长直远岸。原配置props字段里的山体意图不等于已实例化实体；当前西北区域缺对应主山链，不能搬走湖/开场的已有山体补洞。
+- **云海仍失败**：52e/52f及52g/52h多版有石球感、黑裂沟、厚硬底板或体积穿越问题。58A是矩形厚盘，58B是椭圆托盘/环管和大盆槽，58C仍巨石冠与稀疏褶皱。保持各原生源、失败日志和真实图，不能靠提亮/雾或减面掩盖结构差。
+- **61首次验证失败必须保留**：[首次8图运行](cloud-evidence/coast61-verify-20261001T123638Z-b66cdbe8/wrapper-report.json)因临时诊断相机导致1128精确姿态门失败。裸Node3D序列复现scale微小漂移；v2只完整恢复测试相机，不改原生scene或放宽exact门。该首次失败不能改成通过。
+- 51b完整检查的1344像素差、52g等几何重绑的3像素差、旧350米路线阻断仍保留。后来恢复/限定短飞不是全路线或所有视角已修复。
+- 54v2源五面曾完成但视觉仍失败；对应旧世界GUI启动在09:07/09:09被拒后没有执行。不要自动重试耗尽动作或换入口绕过。检查新授权与真实状态，不能伪造旧世界图。
+- 水面规则波带、云层重复、船体比例/照明、植被与地貌层次、天气暴雪强度、舱室内外及其余参考仍有缺口。原完整61张参考调查位于cloud-evidence/full-reference-survey-20260930T225223Z-Tc88Sk及[逐图差距审查](cloud-evidence/full-survey47-review.md)，不能把它的功能通过当21场景视觉完成。
+
+## 13:26环境变化、恢复与未提交草稿
+
+这是已观察事实，不是已查明根因：13:25:15仍能生成D静态稿；13:26后Aether、工具和旧桌面窗口在当前环境不可见。旧终端主机标识a1bfdf987bb6，新执行环境标识ddb97ac3550a；具体触发机制未知。没有证据把它归因于用户另一台电脑打开dot。
+
+13:33—13:40通过公共GitHub正常HTTPS partial/sparse恢复原路径，commit/tree精确为4bff917/fa3170f；1477固定输入SHA、61和53d原生scene以及保护母版均匹配。恢复记录：[RESTORE_STATUS.json](cloud-evidence/workspace-recovery-20261001T1327Z/RESTORE_STATUS.json)。该记录是当时恢复快照，当前工具/草稿状态以下表为准；恢复读取不代表重新跑过图形验收。
+
+| 工作 | 恢复后的真实状态 | 下一步，不能冒称已完成 |
+|---|---|---|
+| 已提交源码、原生资产、失败与检查证据 | 当前开发所需稀疏路径已恢复；历史仍在GitHub，不全量展开历史截图 | 开工核当前HEAD和所需资源；不要重复已终态测试来充当新成果 |
+| 58D小段折皱云 | 本地source-assets/cloud-bank58/revision-d/CONTEXT_REBUILD58D.md及该目录树内另外4份计划/生成器/JSON已按记录重建，尚未提交，远端不可据此取回；325顶点/646三角仅静态生成，未通过拓扑/自交/谷底门，无Blender源或实图 | 保留3主折脊、8中脊、侧/腹折线的小段范围；先核闭合、绕序、穿插、谷底，再原生源五面，不能先扩四根或入世界 |
+| 西北山脊蓝图与控制源 | 未提交稿在环境变化时不可见，恢复后尚未补回；旧草稿60点/76面不是已验证模型 | 按下述约束重建，不声称旧草稿仍在或已构建 |
+| 近湾orbit补测 | 未生成/未运行，已通过的211米数据保留 | 新50米走廊、约31米有限输入段；用原生右键/MouseMotion看岸，不直接写运动阶段camera/ship变换 |
+| 临时wrapper、窗口ID与工具缓存 | 旧w61/x61/y61脚本、editor39845891/terminal27267931不再代表当前桌面 | 从版本化Python/GDScript入口重建必要临时wrapper；先重新读取桌面库存，不操作旧窗口号 |
+| 旧重复备份 | 曾在确认GitHub可恢复后逐项清理1,661,301,708字节ZIP/bundle/分卷；本地细审计随环境变化不可见，异常前Git记录仍在历史区 | 不重打同类备份；不把备份清理记录推断为工作区变化的原因 |
+
+13:42用户要求先调查时已暂停新开发；15:20用户明确要求维护进度并继续，当前先完成本文档同提交/立即推送。认证尚待主线程确认，暂不积累大量新制作。
+
+## 下一具体动作与边界
+
+1. **先发布本次进度文档项**：校对入口、证据路径、完成/失败/待推状态，提交这份文档与恢复记录；认证确认后立即正常push并核验，不把本地commit写成已交付。
+2. 恢复官方匹配工具的最后一步：Blender归档已下载并核官方SHA，但尚未解包；确认新桌面与Godot导入状态。新机器的真实图形环境还没有重新验证，不能直接沿用旧窗口/缓存。
+3. 重建orbit补测：起点(-3430,28,-3665)，同向50米走廊。仅一次初始船与camera摆位可作明确fixture，排除里程；之后全部用原生输入。右键分步转到看岸、有限飞行并制动、停稳后另看侧/背；每次相机路径做完整扫掠和实际遮挡检查。屏幕射线不等于像素可见，仍需实看岸景图片。旧211米测试不重跑替代此项。
+4. 云体58D：只做约640×625米的一个折皱结点，先通过实际连续控制笼与真实相机源图，不再用圆台叠帽；当前重建稿不可直接集成。
+5. 西北主山链：先重建独立控制源，范围X[-3048,-2040]、Z[-5160,-3770]；主/副峰初始720/650/580米、鞍部与不等宽肩部属于设计推断。保护56/61整块、湖/开场山群、北侧12屋及40米缓冲、河口与旧道路。调查包络内1785根、主脊包络567根只是待核池，非批准全改数量。不能把380米肩部压在28米边带上形成85度陡墙；不能每块衰减出周期性768米沟。先原生源/正侧背形体，再最小实际地形footprint、碰撞、缓存和逐项散布。
+
+每完成以上一个可验证小项就更新本页并立即提交/推送，不等其它并行项或整个山链/云海阶段结束。
+
+## 工具版本、实际运行与保护项
+
+| 项目 | 当前状态 |
+|---|---|
+| Godot | 要求官方4.5.1 stable f62fdbde1；已恢复到/workspace/scratch/a29d03198654/tools-feiting/Godot_v4.5.1-stable_linux.x86_64，二进制SHA db07cae7de644278a1884d4552bdf2bca3f5d30131b18faf3a0c4d730080b199，与旧记录一致 |
+| Blender | 使用官方4.5.14；归档blender-4.5.14-linux-x64.tar.xz已恢复，SHA 9ba871ff2ecd36526b77432745980b7e6664ecd0c7ca11c48849073dcfe06da3。尚未解包；旧版本二进制SHA为050c02562f81fe80ba616a80198fa02d381e60f8b61b8d39add881f4bca0d7d8，解包后须核 |
+| 保护母版 | blender/cliff_kit/cliff_eastern_plateau.blend，SHA abb66e414168cbd24e2495b64c27714759c844ff75582b0f71d5384d8f760dd7，已恢复核对，不允许批量重建覆盖 |
+| 图形与输入 | 既往云端结果为Compatibility/llvmpipe软件图形；不否定迁移记录中的本机GTX970历史证据。headless只可用于解析/明确静态读取，不用于整游戏MultiMesh保存或视觉通过。真实图形入口从当前云桌面终端启动，并协调重任务资源 |
+| 用户数据 | 必须用项目外的绝对XDG_DATA_HOME、XDG_CACHE_HOME、XDG_CONFIG_HOME和Dummy音频，隔离运行目录；禁止依赖旧shared路径 |
+| 资源生命周期 | 对载入场景在释放前至少3 process frames+frame_post_draw，释放后8 frames；保留真实错误，不能靠存live整场景规避泄漏 |
+
+## 正常恢复与开工命令
+
+目录已存在时先读/核，不覆盖、不删除。只有确实缺失才按公共仓库恢复；后续应先读取远端最新开发HEAD，本次已核4bff917不是永久回退点。正常恢复无须复制凭据，禁止改TLS、代理或网络限制。
+
+~~~sh
+# 在现有项目内：只读核实，不会保存凭据
+git rev-parse HEAD HEAD^{tree}
+git status --short
+GIT_TERMINAL_PROMPT=0 git -c credential.helper= ls-remote https://github.com/wubugui/Aether.git refs/heads/development/feiting-cloud-20260930
+GH_CONFIG_DIR=/workspace/scratch/a29d03198654/.github-cli-auth gh auth status --hostname github.com
+
+# 仅当Aether目录缺失：在/workspace/scratch/a29d03198654执行
+GIT_TERMINAL_PROMPT=0 git -c credential.helper= clone --filter=blob:none --no-checkout --single-branch --branch development/feiting-cloud-20260930 https://github.com/wubugui/Aether.git Aether
+cd Aether
+git sparse-checkout set --no-cone --stdin <<'SPARSE'
+/*
+!/*/
+/candidates/round40-exclusive-20260930/project/
+/source-assets/
+/cloud-evidence/
+/ref/
+/blender/cliff_kit/
+/assets/reference.jpg
+/cloud-delivery/observation60-and-research-20261001/
+/cloud-delivery/coast61-stage-20261001/
+SPARSE
+GIT_TERMINAL_PROMPT=0 git -c credential.helper= checkout development/feiting-cloud-20260930
+git rev-parse HEAD HEAD^{tree}
+~~~
+
+恢复后将实际HEAD/tree与刚读取的远端核对；若远端在克隆期间前进，先核最新文档与提交关系，不强制回退。用对应运行的input-sha256.json逐项验证需要的原生输入，读取已有wrapper-report和退出码，不重做已终态测试。新增图形任务使用新输出目录；证据需要但不在稀疏展开中的路径，按需正常sparse-checkout add，不展开全部历史。
+
+认证确认可用后，提交每项完整源码/原生资源/证据和本页，正常推送固定的本地SHA：
+
+~~~sh
+# 用实际已创建的提交SHA替换LOCAL_COMMIT_SHA；此示例不创建认证、不改全局配置
+GH_CONFIG_DIR=/workspace/scratch/a29d03198654/.github-cli-auth GIT_TERMINAL_PROMPT=0 git -c credential.helper= -c 'credential.https://github.com.helper=!/usr/bin/gh auth git-credential' -c pack.threads=1 -c pack.windowMemory=128m push https://github.com/wubugui/Aether.git LOCAL_COMMIT_SHA:refs/heads/development/feiting-cloud-20260930
+GIT_TERMINAL_PROMPT=0 git -c credential.helper= ls-remote https://github.com/wubugui/Aether.git refs/heads/development/feiting-cloud-20260930
+# 再通过官方GitHub commit API/连接器核同一SHA与本地tree；不读取或输出token
+~~~
+
+## 已交付收据与本项待推状态
+
+- 61当前近湾/全貌/阶段报告已经Slack确认成功：[报告](https://tupworld.slack.com/files/UKQMWM9MZ/F0C5J32C2GP/game61-stage-report.md)。三文件IDs为F0C5J2YEHDM、F0C5T7CNE83、F0C5J32C2GP；[本地收据](cloud-delivery/coast61-stage-20261001/DELIVERY_RECEIPT.json)。
+- 60三PNG和51图报告包已确认：F0C5TNLR86R、F0C5X3G11AA、F0C5TNP45QD、F0C5X7APTHU；[收据](cloud-delivery/observation60-and-research-20261001/DELIVERY_RECEIPT.json)。不得重复POST或finalize。部分旧ZIP在连接器读取中不可见，不能无证据说丢失或重发。
+- 13:42恢复进展已发送：[原消息](https://tupworld.slack.com/archives/C0C5WDC9649/p1790862140398009?thread_ts=1790835576.223599&cid=C0C5WDC9649)。没有把未提交草稿说成已恢复验收。
+- **本项：权威进度文档一致性。** 已明确最新61/211米结果、恢复边界、草稿损失和当前工具状态；修改只涉及进度/入口与恢复记录，不改场景。15:21认证只读检查未登录；15:32官方设备授权等待又被工具报告“Network access to https://api.github.com:443 was blocked by policy”，主线程仅核文件元数据确认登录未保存。完成本地提交后立即报告主线程，推送仍受认证网络阻碍；不重启登录或换路绕过。在实际正常push并独立核验之前，状态保持“本地文档项待推”，不积累大批新制作。
+
+## 历史记录（仅追溯，不作为当前操作指令）
+
+以下原记录保留了每次成功、失败、旧阻碍和曾经的传输流程。旧版本“尚未运行”“当前HEAD”“本机同步”“保持旧窗口打开”等只属于其时间点；当前工作以本页上半部、实时Git/进程状态与明确最新用户指令为准。历史明确拒绝的动作不能因记录折叠而被当作重新授权。
+
+<details>
+<summary>展开2026-09-30至2026-10-01 13:21的原始进度记录</summary>
+
 # Cloud continuation — updated 2026-10-01 UTC
 
 Read unchanged GOAL.md first: all 20 reference images plus the original opening in one real 3D world. All visual acceptance remains pending. Do not confuse functional checks, migration, source asset review or software-rendered pixels with complete GPU/visual acceptance.
@@ -289,3 +430,5 @@ Game61 first real build→fresh verify launched via w61.sh at12:36:05 in existin
 13:14 latestremote16823e02042c39da82a6516171a5159b7fb1fc8e/tree859e8955e9bbb6991d6fa3a51f875b8c1beb0887 independentlyverified afternormalpush,includescompletefrozen58Cfailure/source/previews+61reportreceipts. Nativecurrent61 unchanged. Nearbayflight216m inputscriptparse0,awaitingfinalwordingclassificationclarification(noGUIfocusclaim,fixturelook_atmustnotbeconfusedwithnativecontrollerdrift). y61.sh prepared/notyetlaunched. MAZfinalsmallimage13:14terminal0/windowfree.58Dstaticthree-ridge/foldsmallpatchplanactive. Bothold15partssets598977970Bremovedafterstreamreconstructionexactd3c29c5e bundleSHAandcheckpointremoteancestorproof;allmetadataremains;totalbackupcleanup1661301708B. No more newbackupZIPs.
 
 13:21 nearbayactual y61 completed0 atplayer-nearbay61-renderer-20261001T131646Z-f5163t8s:66.633946s/1710568KiB;544physicssteps9.066667simsec,actual3Dpath211.008694m,horizontalalong202.391359m within216.333mpreflightcorridor,threelevels18/36.7850037/55.5700073,peak29.919998mps,maxstepvelocitydifference0.0001464m,noerrors/collisions/damage,stablebrake/allkeysreleased.1477inputSHAunchanged,5realPNGallviewed. Allfourbefore/afternativeobserve_referenceposes/F2gatesexact;noGUIkeyboardfocusclaim. IMPORTANTall5imagesmostlyopensea/ship,currentfollowcameraanglesdonotshowshore. Thisisboundedmotionproofnotshorevisualcoverage. Separateorbit-native-mouse-eventcandidatepreparing;donotrepeaty61samejob. NoownGodotactive. MAZoffspecularsmallrenderwindowactive/nextstatuswithsibling.58Dstaticfoldcagesourcepreparing,notBlender-built.
+
+</details>

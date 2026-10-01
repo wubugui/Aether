@@ -1,6 +1,8 @@
 # Aether — Skyfarer 飞艇游戏 Demo
 
-2026-09-08 已迁移恢复到 `E:\FeiTing`。本机完整性校验、运行证据和最新制作接续请先读 [WORKSPACE_RESUME.md](WORKSPACE_RESUME.md)。
+当前云端开发与恢复请先读 [CLOUD_RESUME.md](CLOUD_RESUME.md) 和 [GOAL.md](GOAL.md)。CLOUD_RESUME是唯一权威当前进度：每次开工先核对，完成一项后与成果同提交并立即push、核验远端。完整参考验收尚未通过。
+
+以下为原母版及本机迁移时期的工程说明，不代表最新云候选状态；历史接续记录保留在 [WORKSPACE_RESUME.md](WORKSPACE_RESUME.md)。当前有效候选、已完成检查、失败证据和恢复命令以CLOUD_RESUME为准。
 
 这是持续制作中的 Godot 3D 飞艇游戏。当前使用独立 Blender 资产、Godot 预制场景和持久化世界布置。**画面尚未通过原图精确还原审查，不能视为美术完成。**
 
