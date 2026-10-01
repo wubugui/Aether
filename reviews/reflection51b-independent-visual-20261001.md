@@ -40,3 +40,16 @@
 2. 还原1128/1129主体方向、距离、高度及环湖主峰轮廓；1129需要明确接近水面的状态和局部水波。
 3. 调整镜像的水色/轻微扰动与岸线过渡，处理背面亮带；避免把当前强镜面直接视为美术完成。
 4. 继续雪山层次、云带分布、暖冷光与大气返工；完整零差失败和350m失败另行诊断，硬件GPU验证仍待补齐。
+
+## 补充：完整动态船体同帧取证（2026-10-01 04:37 UTC）
+
+本节仅附加新证据，不替换上面的固定机位裁切记录，也不把新的观察位当作1128/1129参考验收。独立逐图实看 `cloud-evidence/reflection51b-full-ship-20261001T043524Z-6Yfgcy/images/` 的 `supplement-A-original-ship.png`、`supplement-B-moved-ship.png`、`supplement-A2-restored-ship.png`。
+
+- 三张最终main截图中，完整气囊、吊舱、红旗/桅杆、尾部推进器及其倒影同时位于画框内；没有碰到画面边缘，也没有被HUD遮住。相对于前一批运动截图，这补齐了“完整动态船倒影同帧可见”的特定证据缺口，无需拿raw纹理替代最终合成画面。
+- A→B中实体与倒影都向右移动，实体略升、倒影略降，环境和机位保持稳定，方向关系合理；A2视觉恢复。另独立读取解码后的完整RGBA字节确认A/A2完全相同，A/B不同。
+- 这三张图未见新蓝色屏幕边框、矩形反射边界、船/倒影轮廓截断或残留旧船影。范围仅为这两个船姿态与恢复帧，不代表所有运动/接水/流送情况。
+- 仍存在原有美术缺口：主体宽度约画宽9%，仍小于参考约20%；环境云镜像强而密，船倒影叠在明亮云团上，水体识别不足；左侧岸线的浅亮/蓝细带仍显眼。原固定参考视角仍是小端面船，不能因补充侧面图而判其构图通过。
+
+新报告 `full-silhouette-report.json` 记录候选SHA仍为同一 `b169f62527a52b9f2a3f091c2d7db136ad7cd67111e405f08f390eeb082e2bb1`。临时相机约 `(1385.116,12,-1052.122)`，FOV55°、距目标约91.90m；依据118个可见mesh的膨胀bounds选择，主画面联合bounds最小留边约15%，超过12%的记录要求。B为8m纵向及0.75m向上移动。报告记载原参考camera/ship恢复、保存场景未改、临时姿态未保存；这些是取证配置，不能代替本节实际像素结论。
+
+补充报告只给 `limited_full_silhouette_dynamic_passed=true`，仍为 `supplementary_only=true`、`reference_composition_acceptance=false`、`conversion_pixel_gate_passed=false`、`requested350m_motion_passed=false`、`total_acceptance_passed=false`。原full1344的2px失败、身份5px差异及350m失败不被本次补充消除；总GOAL仍未通过。
