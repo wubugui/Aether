@@ -1,0 +1,20 @@
+CIRQUE54_SELF_INTERSECTION lower_rock_shoulders triangles 148 candidate_pairs 1370 crossings 11 contacts 0
+CIRQUE54_SELF_INTERSECTION rock_body triangles 692 candidate_pairs 6853 crossings 16 contacts 7
+CIRQUE54_SELF_INTERSECTION shore_rock_apron triangles 92 candidate_pairs 794 crossings 20 contacts 1
+CIRQUE54_SELF_INTERSECTION snow_back_basin triangles 28 candidate_pairs 160 crossings 1 contacts 0
+CIRQUE54_SELF_INTERSECTION snow_field_north triangles 68 candidate_pairs 781 crossings 12 contacts 0
+CIRQUE54_SELF_INTERSECTION snow_field_saddle triangles 12 candidate_pairs 56 crossings 2 contacts 0
+CIRQUE54_SELF_INTERSECTION snow_gully_a triangles 96 candidate_pairs 964 crossings 12 contacts 0
+CIRQUE54_SELF_INTERSECTION snow_gully_b triangles 68 candidate_pairs 681 crossings 12 contacts 1
+CIRQUE54_SELF_INTERSECTION upper_cirque_mass triangles 420 candidate_pairs 3454 crossings 6 contacts 0
+Blender 4.5.14 LTS (hash 62c1db4208e8 built 2026-09-15 01:31:19)
+Read blend: "/workspace/scratch/a29d03198654/Aether/source-assets/lake-cirque54/v1/massif_cirque_wall_cirque54.blend"
+Traceback (most recent call last):
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/lake-cirque54/v1/check_self_intersections54_v2.py", line 87, in <module>
+    assert report['all9_components_no_self_crossing'], 'Actual triangle self-crossings detected; source not clear'
+           ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Actual triangle self-crossings detected; source not clear
+
+Error: script failed, file: 'source-assets/lake-cirque54/v1/check_self_intersections54_v2.py', exiting.
+
+Blender quit

@@ -1,0 +1,89 @@
+{
+  "baseline_scene_sha256": "6ec57b72a831d6fa906a8d866c339909de55c9c42297a038dcd429b18d0c2b18",
+  "binary_sha256": "cf972cb3dd604167a2c4fa4fe31f95c1a1a7cb91ca5724d8d37d4b592bf09a9a",
+  "total_saved_nonwater_layer4_shapes": 1096,
+  "unhandled_saved_shapes": [],
+  "water_shapes_explicitly_excluded": [
+    {
+      "class": "WorldBoundaryShape3D",
+      "layer": 5,
+      "mask": 2,
+      "origin": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "path": "/Skyfarer/World/Ocean/SeaCollision/Shape",
+      "role": "water_plane_excluded_from_dry_land"
+    }
+  ],
+  "actual_bbox_intersecting_support_shapes": [
+    "/Skyfarer/World/Terrain/Ground_0_-3/Collision/Shape",
+    "/Skyfarer/World/Terrain/Ground_1_-3/Collision/Shape",
+    "/Skyfarer/World/Terrain/Ground_0_-2/Collision/Shape",
+    "/Skyfarer/World/Terrain/Ground_1_-2/Collision/Shape",
+    "/Skyfarer/World/Mountains/massif_needle_ridge/Collision/Shape",
+    "/Skyfarer/World/Mountains/massif_west_spur/Collision/Shape",
+    "/Skyfarer/World/Mountains/massif_cirque_wall/Collision/Shape",
+    "/Skyfarer/World/Mountains/massif_valley_guard/Collision/Shape"
+  ],
+  "dry_clipped_polygons": 1037,
+  "method": "Actual full-scene layer4 collider triangles, safely culled by exact world bounding boxes only, clipped at Y0 and unioned with GEOS. Every new closed component full XZ projection is subtracted from that actual dry union. Original692triangle root preserved separately. This continuous proof does not depend on finite point sampling or a six-tile assumption. No buildings or floating-island colliders intersect this candidate box.",
+  "component_results": [
+    {
+      "component": "upper_cirque_mass",
+      "footprint_area_m2": 118842.22656248401,
+      "outside_actual_dry_support_m2": 0.0,
+      "pass": true
+    },
+    {
+      "component": "snow_gully_a",
+      "footprint_area_m2": 12834.5512027895,
+      "outside_actual_dry_support_m2": 0.0,
+      "pass": true
+    },
+    {
+      "component": "snow_gully_b",
+      "footprint_area_m2": 8950.823499240878,
+      "outside_actual_dry_support_m2": 0.0,
+      "pass": true
+    },
+    {
+      "component": "snow_field_north",
+      "footprint_area_m2": 6127.599639904003,
+      "outside_actual_dry_support_m2": 0.0,
+      "pass": true
+    },
+    {
+      "component": "snow_field_saddle",
+      "footprint_area_m2": 1642.159636155338,
+      "outside_actual_dry_support_m2": 0.0,
+      "pass": true
+    },
+    {
+      "component": "snow_back_basin",
+      "footprint_area_m2": 727.5486450240023,
+      "outside_actual_dry_support_m2": 0.0,
+      "pass": true
+    },
+    {
+      "component": "lower_rock_shoulders",
+      "footprint_area_m2": 22075.847995876084,
+      "outside_actual_dry_support_m2": 0.0,
+      "pass": true
+    },
+    {
+      "component": "shore_rock_apron",
+      "footprint_area_m2": 14762.030101623315,
+      "outside_actual_dry_support_m2": 0.0,
+      "pass": true
+    }
+  ],
+  "all_new_footprints_dry": true,
+  "new_body_top_projection": {
+    "triangle_area_sum_m2": 118842.2265625,
+    "union_area_m2": 118842.226562484,
+    "distinct_triangle_overlap_area_m2": 1.6007106751203537e-08,
+    "no_projected_triangle_interior_overlap": true
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "original_run": "cloud-evidence/cirque54-source-preview-20261001T073318Z-Q7tgAL",
+  "original_exit_code_unchanged": 6,
+  "original_report_sha256": "94a6b0bde0254f60fbb499e739eb96a2d71e94eba17983caf25618c5655846a9",
+  "correction": "unproject_position emits logical viewport coordinates. Original margins divided these by physical PNG dimensions. Recover exact logical extrema from recorded unrounded margins and PNG sizes, then divide by the recorded logical viewport size. Camera, mesh, source, pixels and7%threshold unchanged. No rerender and no retrospective change of original exit6.",
+  "all_corrected_framing_pass": true,
+  "minimum_all_views_margin": 0.09019990732515315,
+  "views": [
+    {
+      "view": "front_lake_south",
+      "original_mixed_coordinate_margins": [
+        0.418603610992432,
+        0.151715861426459,
+        0.112353515625,
+        -0.189058176676432
+      ],
+      "logical_projection_extrema_px": [
+        535.812622070313,
+        109.23542022705047,
+        1136.1875,
+        856.1218872070309
+      ],
+      "logical_viewport": [
+        1672.0,
+        941.0
+      ],
+      "actual_png_dimensions": [
+        1280,
+        720
+      ],
+      "corrected_normalized_margins_left_top_right_bottom": [
+        0.32046209453966085,
+        0.11608439981620666,
+        0.3204620215311005,
+        0.09019990732515315
+      ],
+      "unchanged_threshold": 0.07,
+      "framing_pass": true,
+      "png_sha256": "f23849f33ebb9373bf18ab4627eca1b0c24ca3e1a174f92bffe47ce6b4af23d0",
+      "png_error": 0
+    },
+    {
+      "view": "lake_facing_east",
+      "original_mixed_coordinate_margins": [
+        0.310125184059143,
+        0.29747248755561,
+        0.00387506484985356,
+        -0.137177954779731
+      ],
+      "logical_projection_extrema_px": [
+        396.96023559570307,
+        214.1801910400392,
+        1275.0399169921875,
+        818.7681274414062
+      ],
+      "logical_viewport": [
+        1672.0,
+        941.0
+      ],
+      "actual_png_dimensions": [
+        1280,
+        720
+      ],
+      "corrected_normalized_margins_left_top_right_bottom": [
+        0.2374164088491047,
+        0.22760912969185887,
+        0.23741631758840465,
+        0.12989572004101357
+      ],
+      "unchanged_threshold": 0.07,
+      "framing_pass": true,
+      "png_sha256": "d3b2dcd526bfc820d30000c883c805cbaec5e894f9337a2dc57a2dd85b41ee98",
+      "png_error": 0
+    },
+    {
+      "view": "back_north",
+      "original_mixed_coordinate_margins": [
+        0.418603658676147,
+        0.413507800632053,
+        0.112353515625,
+        -0.154019927978516
+      ],
+      "logical_projection_extrema_px": [
+        535.8126831054682,
+        297.7256164550782,
+        1136.1875,
+        830.8943481445315
+      ],
+      "logical_viewport": [
+        1672.0,
+        941.0
+      ],
+      "actual_png_dimensions": [
+        1280,
+        720
+      ],
+      "corrected_normalized_margins_left_top_right_bottom": [
+        0.3204621310439403,
+        0.3163927911318578,
+        0.3204620215311005,
+        0.11700919432037038
+      ],
+      "unchanged_threshold": 0.07,
+      "framing_pass": true,
+      "png_sha256": "572f3d25a2dbe2b73e6d31cdcc4d3334a8657b23a78904116ebda05447438b8b",
+      "png_error": 0
+    },
+    {
+      "view": "outer_west",
+      "original_mixed_coordinate_margins": [
+        0.310125088691711,
+        0.31159364912245,
+        0.00387516021728518,
+        0.070499759250217
+      ],
+      "logical_projection_extrema_px": [
+        396.9601135253901,
+        224.347427368164,
+        1275.039794921875,
+        669.2401733398438
+      ],
+      "logical_viewport": [
+        1672.0,
+        941.0
+      ],
+      "actual_png_dimensions": [
+        1280,
+        720
+      ],
+      "corrected_normalized_margins_left_top_right_bottom": [
+        0.23741633584054433,
+        0.23841384417445696,
+        0.23741639059696473,
+        0.2887989656324721
+      ],
+      "unchanged_threshold": 0.07,
+      "framing_pass": true,
+      "png_sha256": "b075c23eef3df7c639651a6ab7bfad65a85950a8c7192e43711f38917eb6c030",
+      "png_error": 0
+    },
+    {
+      "view": "top",
+      "original_mixed_coordinate_margins": [
+        0.310295581817627,
+        0.244478670756022,
+        0.00351800918579104,
+        -0.103741794162326
+      ],
+      "logical_projection_extrema_px": [
+        397.17834472656256,
+        176.02464294433585,
+        1275.4969482421875,
+        794.6940917968747
+      ],
+      "logical_viewport": [
+        1672.0,
+        941.0
+      ],
+      "actual_png_dimensions": [
+        1280,
+        720
+      ],
+      "corrected_normalized_margins_left_top_right_bottom": [
+        0.23754685689387714,
+        0.18706125711406574,
+        0.23714297353936153,
+        0.1554791798120354
+      ],
+      "unchanged_threshold": 0.07,
+      "framing_pass": true,
+      "png_sha256": "633886ca662056aee5dac23e138050233a375397149b0dfa91c4adc7a691b0d4",
+      "png_error": 0
+    }
+  ]
+}

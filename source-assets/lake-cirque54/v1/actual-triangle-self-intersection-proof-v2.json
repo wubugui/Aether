@@ -1,0 +1,2209 @@
+{
+  "blend_sha256": "82cb0e0de1a3e4bf50fb1b77c2157fcc4f3f038dec2ab5c178df5b688e1fe268",
+  "method": "Fresh Blender4.5.14 reopen, actual mesh loop triangles in native source coordinates. Per component exhaustive all-pairs AABB broad phase (native BVH overlaps also reported but never used to exclude pairs); normalized-plane separation, edge/plane and barycentric containment for noncoplanar triangles, convex2Dclipping for coplanar triangles. Ordinary geometric shared-edge/shared-vertex intersections excluded only when the entire intersection stays on that boundary. Positive-area coplanar overlap or a non-boundary crossing segment is a self-intersection. Components are checked independently; intentional layer/root intersections between distinct objects are not counted.",
+  "distance_tolerance_m": 1e-05,
+  "coplanar_projected_area_tolerance_m2": 1e-07,
+  "components": [
+    {
+      "component": "lower_rock_shoulders",
+      "actual_loop_triangles": 148,
+      "native_bvh_overlap_pairs": 4,
+      "exhaustive_aabb_candidate_pairs": 1370,
+      "plane_separated_pairs": 398,
+      "ordinary_shared_vertex_or_edge_intersections": 844,
+      "self_crossing_count": 11,
+      "self_crossings": [
+        {
+          "triangles": [
+            2,
+            121
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 0.00025875347720507235,
+          "points_local": [
+            [
+              40.50581741333008,
+              -85.99996948242188,
+              116.50647735595703
+            ],
+            [
+              40.50577163696289,
+              -85.99979400634766,
+              116.50659942626953
+            ],
+            [
+              40.505859375,
+              -86.0,
+              116.5064697265625
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            6,
+            121
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 5.244341691920288e-05,
+          "points_local": [
+            [
+              40.50581741333008,
+              -85.99996948242188,
+              116.50647735595703
+            ],
+            [
+              40.505859375,
+              -86.0,
+              116.5064697265625
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            11,
+            79
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 0.0004968487596180705,
+          "points_local": [
+            [
+              59.84375,
+              76.13817596435547,
+              140.67965698242188
+            ],
+            [
+              59.8433837890625,
+              76.13818359375,
+              140.67999267578125
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            13,
+            79
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 0.0004968487596180705,
+          "points_local": [
+            [
+              59.84375,
+              76.13817596435547,
+              140.67965698242188
+            ],
+            [
+              59.8433837890625,
+              76.13818359375,
+              140.67999267578125
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            16,
+            86
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 0.00042827091602996213,
+          "points_local": [
+            [
+              28.505859375,
+              330.0,
+              61.306095123291016
+            ],
+            [
+              28.505952835083008,
+              329.9998474121094,
+              61.30648422241211
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            34,
+            108
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 7.077779890167035e-05,
+          "points_local": [
+            [
+              -29.017822265625,
+              71.7933349609375,
+              161.47434997558594
+            ],
+            [
+              -29.017778396606445,
+              71.79328155517578,
+              161.47433471679688
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            39,
+            115
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 3.4172960028016885e-05,
+          "points_local": [
+            [
+              -29.494140625,
+              -106.0,
+              106.68000030517578
+            ],
+            [
+              -29.49412727355957,
+              -106.00003051757812,
+              106.67999267578125
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            46,
+            121
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 109.57551597492879,
+          "points_local": [
+            [
+              17.505859375,
+              4.0,
+              174.62525939941406
+            ],
+            [
+              40.50577163696289,
+              -85.99978637695312,
+              116.50659942626953
+            ],
+            [
+              40.505859375,
+              -86.0,
+              116.5064697265625
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            47,
+            119
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 5.541988458926253e-05,
+          "points_local": [
+            [
+              17.505859375,
+              4.0,
+              173.67999267578125
+            ],
+            [
+              17.505870819091797,
+              3.999955177307129,
+              173.67996215820312
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            60,
+            146
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 0.00038639701117250364,
+          "points_local": [
+            [
+              -39.755126953125,
+              289.337890625,
+              180.48057556152344
+            ],
+            [
+              -39.75524139404297,
+              289.33807373046875,
+              180.48025512695312
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            119,
+            120
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 0.9452972422654272,
+          "points_local": [
+            [
+              17.505859375,
+              4.0,
+              174.62525939941406
+            ],
+            [
+              17.505859375,
+              4.0,
+              173.67999267578125
+            ],
+            [
+              17.505870819091797,
+              3.9999542236328125,
+              173.67996215820312
+            ]
+          ]
+        }
+      ],
+      "other_zero_area_contacts_or_disjoint_coplanar_candidates": [],
+      "no_self_crossing": false
+    },
+    {
+      "component": "rock_body",
+      "actual_loop_triangles": 692,
+      "native_bvh_overlap_pairs": 0,
+      "exhaustive_aabb_candidate_pairs": 6853,
+      "plane_separated_pairs": 1901,
+      "ordinary_shared_vertex_or_edge_intersections": 4755,
+      "self_crossing_count": 16,
+      "self_crossings": [
+        {
+          "triangles": [
+            14,
+            117
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 3.420288818441257e-05,
+          "points_local": [
+            [
+              -126.421875,
+              -262.0726318359375,
+              -1.6407999992370605
+            ],
+            [
+              -126.42189025878906,
+              -262.0726013183594,
+              -1.6408023834228516
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            14,
+            118
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 3.41548657253431e-05,
+          "points_local": [
+            [
+              -126.421875,
+              -262.0726318359375,
+              -1.6407999992370605
+            ],
+            [
+              -126.42189025878906,
+              -262.0726013183594,
+              -1.6408015489578247
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            137,
+            477
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 0.00012674902134579582,
+          "points_local": [
+            [
+              206.02227783203125,
+              -27.0496826171875,
+              -167.0
+            ],
+            [
+              206.0222625732422,
+              -27.0498046875,
+              -166.99996948242188
+            ],
+            [
+              206.02227783203125,
+              -27.0496826171875,
+              -166.99996948242188
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            137,
+            574
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 20.74570239042619,
+          "points_local": [
+            [
+              209.3651123046875,
+              -6.5750732421875,
+              -167.0
+            ],
+            [
+              206.02227783203125,
+              -27.0496826171875,
+              -167.0
+            ],
+            [
+              206.02227783203125,
+              -27.0496826171875,
+              -166.99996948242188
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            137,
+            665
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 0.00012674902134579582,
+          "points_local": [
+            [
+              206.02227783203125,
+              -27.0496826171875,
+              -167.0
+            ],
+            [
+              206.0222625732422,
+              -27.0498046875,
+              -166.99996948242188
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            364,
+            456
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 7.197556405682833e-05,
+          "points_local": [
+            [
+              65.2672348022461,
+              -297.9787292480469,
+              -81.17526245117188
+            ],
+            [
+              65.2672119140625,
+              -297.978759765625,
+              -81.17520141601562
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            420,
+            618
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 6.019490752433586e-05,
+          "points_local": [
+            [
+              142.1708984375,
+              142.8033447265625,
+              -50.42020034790039
+            ],
+            [
+              142.17091369628906,
+              142.80337524414062,
+              -50.420249938964844
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            453,
+            549
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 0.00020585231877490298,
+          "points_local": [
+            [
+              123.42402648925781,
+              -261.5658874511719,
+              -166.9999237060547
+            ],
+            [
+              123.4241943359375,
+              -261.5657958984375,
+              -166.9999542236328
+            ],
+            [
+              123.4241943359375,
+              -261.5657958984375,
+              -167.0
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            456,
+            577
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 0.00010816533568388233,
+          "points_local": [
+            [
+              65.2672119140625,
+              -297.978759765625,
+              -81.17520141601562
+            ],
+            [
+              65.26720428466797,
+              -297.978759765625,
+              -81.17516326904297
+            ],
+            [
+              65.2672348022461,
+              -297.9787292480469,
+              -81.17526245117188
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            473,
+            637
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 3.411968959808029e-05,
+          "points_local": [
+            [
+              179.3734130859375,
+              190.536865234375,
+              -156.6407928466797
+            ],
+            [
+              179.37339782714844,
+              190.53689575195312,
+              -156.6407928466797
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            495,
+            532
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 5.583679644891528e-05,
+          "points_local": [
+            [
+              212.70799255371094,
+              13.899362564086914,
+              -166.99998474121094
+            ],
+            [
+              212.7080078125,
+              13.8994140625,
+              -167.0
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            499,
+            546
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 0.0001201478252260103,
+          "points_local": [
+            [
+              175.3443145751953,
+              -147.10252380371094,
+              -166.99996948242188
+            ],
+            [
+              175.3443603515625,
+              -147.1024169921875,
+              -166.99996948242188
+            ],
+            [
+              175.3443603515625,
+              -147.1024169921875,
+              -167.0
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            525,
+            549
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 4.57763671875e-05,
+          "points_local": [
+            [
+              123.4241943359375,
+              -261.5657958984375,
+              -166.9999542236328
+            ],
+            [
+              123.4241943359375,
+              -261.5657958984375,
+              -167.0
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            546,
+            640
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 3.0517578125e-05,
+          "points_local": [
+            [
+              175.3443603515625,
+              -147.1024169921875,
+              -167.0
+            ],
+            [
+              175.3443603515625,
+              -147.1024169921875,
+              -166.99996948242188
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            546,
+            684
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 20.948109048433896,
+          "points_local": [
+            [
+              175.3443603515625,
+              -147.1024169921875,
+              -167.0
+            ],
+            [
+              166.69097900390625,
+              -166.1796875,
+              -167.0
+            ],
+            [
+              175.3443145751953,
+              -147.10252380371094,
+              -166.99996948242188
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            549,
+            641
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 34.62044241756402,
+          "points_local": [
+            [
+              123.4241943359375,
+              -261.5657958984375,
+              -167.0
+            ],
+            [
+              94.345703125,
+              -279.772216796875,
+              -162.3585968017578
+            ],
+            [
+              123.42402648925781,
+              -261.5658874511719,
+              -166.9999237060547
+            ]
+          ]
+        }
+      ],
+      "other_zero_area_contacts_or_disjoint_coplanar_candidates": [
+        {
+          "triangles": [
+            356,
+            568
+          ],
+          "type": "coplanar_zero_area_contact_or_disjoint"
+        },
+        {
+          "triangles": [
+            450,
+            683
+          ],
+          "type": "coplanar_zero_area_contact_or_disjoint"
+        },
+        {
+          "triangles": [
+            451,
+            684
+          ],
+          "type": "coplanar_zero_area_contact_or_disjoint"
+        },
+        {
+          "triangles": [
+            456,
+            642
+          ],
+          "type": "coplanar_zero_area_contact_or_disjoint"
+        },
+        {
+          "triangles": [
+            486,
+            636
+          ],
+          "type": "coplanar_zero_area_contact_or_disjoint"
+        },
+        {
+          "triangles": [
+            496,
+            573
+          ],
+          "type": "coplanar_zero_area_contact_or_disjoint"
+        },
+        {
+          "triangles": [
+            497,
+            572
+          ],
+          "type": "coplanar_zero_area_contact_or_disjoint"
+        }
+      ],
+      "no_self_crossing": false
+    },
+    {
+      "component": "shore_rock_apron",
+      "actual_loop_triangles": 92,
+      "native_bvh_overlap_pairs": 2,
+      "exhaustive_aabb_candidate_pairs": 794,
+      "plane_separated_pairs": 201,
+      "ordinary_shared_vertex_or_edge_intersections": 505,
+      "self_crossing_count": 20,
+      "self_crossings": [
+        {
+          "triangles": [
+            0,
+            46
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 0.00018123074288079757,
+          "points_local": [
+            [
+              19.505859375,
+              -285.0,
+              13.77718734741211
+            ],
+            [
+              19.505802154541016,
+              -284.9998779296875,
+              13.777308464050293
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            0,
+            49
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 50.5338094106776,
+          "points_local": [
+            [
+              -3.494140625,
+              -240.0,
+              63.63326644897461
+            ],
+            [
+              37.50585174560547,
+              -214.00003051757812,
+              77.65699768066406
+            ],
+            [
+              37.505859375,
+              -214.0,
+              77.65702819824219
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            1,
+            83
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 7.976731745272249e-05,
+          "points_local": [
+            [
+              19.50587272644043,
+              -284.99993896484375,
+              12.796627044677734
+            ],
+            [
+              19.505849838256836,
+              -284.9999694824219,
+              12.796599388122559
+            ],
+            [
+              19.505859375,
+              -285.0,
+              12.796577453613281
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            6,
+            59
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 9.918212890625e-05,
+          "points_local": [
+            [
+              89.5058822631836,
+              157.99996948242188,
+              131.4443817138672
+            ],
+            [
+              89.505859375,
+              158.0,
+              131.44447326660156
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            7,
+            55
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 0.00035122941107272793,
+          "points_local": [
+            [
+              124.505859375,
+              105.0,
+              -1.332516074180603
+            ],
+            [
+              124.50585174560547,
+              105.00035095214844,
+              -1.332527756690979
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            8,
+            59
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 86.36968350644749,
+          "points_local": [
+            [
+              96.505859375,
+              75.0,
+              108.60323333740234
+            ],
+            [
+              89.50588989257812,
+              157.99996948242188,
+              131.4443817138672
+            ],
+            [
+              89.505859375,
+              158.0,
+              131.44447326660156
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            18,
+            79
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 3.411968959808029e-05,
+          "points_local": [
+            [
+              81.505859375,
+              -110.0,
+              80.4331283569336
+            ],
+            [
+              81.505859375,
+              -110.00001525878906,
+              80.43309783935547
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            24,
+            67
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 0.00010578479479875219,
+          "points_local": [
+            [
+              101.50582885742188,
+              290.0000305175781,
+              32.149356842041016
+            ],
+            [
+              101.50581359863281,
+              290.0,
+              32.149436950683594
+            ],
+            [
+              101.505859375,
+              290.0,
+              32.14934158325195
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            24,
+            74
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 0.0005338941051306428,
+          "points_local": [
+            [
+              50.505859375,
+              292.0,
+              153.48838806152344
+            ],
+            [
+              50.50574493408203,
+              292.00018310546875,
+              153.48789978027344
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            25,
+            73
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 0.0006121133173685977,
+          "points_local": [
+            [
+              50.505859375,
+              292.0,
+              152.67999267578125
+            ],
+            [
+              50.505855560302734,
+              292.0,
+              152.6799774169922
+            ],
+            [
+              50.50609588623047,
+              292.0,
+              152.67942810058594
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            25,
+            77
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 0.0021066395821317664,
+          "points_local": [
+            [
+              101.50557708740234,
+              290.0,
+              31.18067169189453
+            ],
+            [
+              101.505859375,
+              290.0,
+              31.18000030517578
+            ],
+            [
+              101.50411987304688,
+              290.0009460449219,
+              31.18071937561035
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            26,
+            78
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 0.0003429198550105149,
+          "points_local": [
+            [
+              54.505859375,
+              -183.0,
+              86.59986114501953
+            ],
+            [
+              54.505977630615234,
+              -182.9996795654297,
+              86.5998306274414
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            26,
+            79
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 78.07706830414871,
+          "points_local": [
+            [
+              81.505859375,
+              -110.0,
+              80.4331283569336
+            ],
+            [
+              54.505859375,
+              -183.0,
+              86.59986114501953
+            ],
+            [
+              81.505859375,
+              -110.00001525878906,
+              80.43309783935547
+            ],
+            [
+              54.505977630615234,
+              -182.9996795654297,
+              86.5998306274414
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            30,
+            49
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 4.464988674438334e-05,
+          "points_local": [
+            [
+              37.5058479309082,
+              -214.00003051757812,
+              77.65699768066406
+            ],
+            [
+              37.505859375,
+              -214.0,
+              77.65702819824219
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            31,
+            83
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 0.00011190139880273918,
+          "points_local": [
+            [
+              19.505874633789062,
+              -284.99993896484375,
+              12.79662799835205
+            ],
+            [
+              19.505859375,
+              -285.0,
+              12.796577453613281
+            ],
+            [
+              19.505922317504883,
+              -284.9999084472656,
+              12.796564102172852
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            32,
+            84
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 0.0004194652218940995,
+          "points_local": [
+            [
+              102.505859375,
+              -6.0,
+              77.61730194091797
+            ],
+            [
+              102.50582885742188,
+              -5.999607563018799,
+              77.61744689941406
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            46,
+            83
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 0.9806098988368919,
+          "points_local": [
+            [
+              19.505849838256836,
+              -284.9999694824219,
+              12.79659652709961
+            ],
+            [
+              19.505859375,
+              -285.0,
+              13.77718734741211
+            ],
+            [
+              19.505859375,
+              -285.0,
+              12.796577453613281
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            67,
+            72
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 0.969440461008147,
+          "points_local": [
+            [
+              101.505859375,
+              290.0,
+              32.14934158325195
+            ],
+            [
+              101.505859375,
+              290.0,
+              31.18000030517578
+            ],
+            [
+              101.50582122802734,
+              290.0,
+              32.14944076538086
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            67,
+            73
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 0.00010626516935107513,
+          "points_local": [
+            [
+              101.505859375,
+              290.0,
+              32.14934158325195
+            ],
+            [
+              101.50582122802734,
+              290.0,
+              32.14944076538086
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            72,
+            77
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 0.9693412822120244,
+          "points_local": [
+            [
+              101.50557708740234,
+              290.0,
+              31.18067169189453
+            ],
+            [
+              101.505859375,
+              290.0,
+              32.14934158325195
+            ],
+            [
+              101.505859375,
+              290.0,
+              31.18000030517578
+            ]
+          ]
+        }
+      ],
+      "other_zero_area_contacts_or_disjoint_coplanar_candidates": [
+        {
+          "triangles": [
+            67,
+            77
+          ],
+          "type": "isolated_nonshared_vertex_contact",
+          "points_local": [
+            [
+              101.50582122802734,
+              290.0000305175781,
+              32.14935302734375
+            ]
+          ]
+        }
+      ],
+      "no_self_crossing": false
+    },
+    {
+      "component": "snow_back_basin",
+      "actual_loop_triangles": 28,
+      "native_bvh_overlap_pairs": 0,
+      "exhaustive_aabb_candidate_pairs": 160,
+      "plane_separated_pairs": 31,
+      "ordinary_shared_vertex_or_edge_intersections": 113,
+      "self_crossing_count": 1,
+      "self_crossings": [
+        {
+          "triangles": [
+            7,
+            25
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 4.315837287515549e-05,
+          "points_local": [
+            [
+              -68.494140625,
+              304.0,
+              129.67999267578125
+            ],
+            [
+              -68.494140625,
+              303.9999694824219,
+              129.68002319335938
+            ]
+          ]
+        }
+      ],
+      "other_zero_area_contacts_or_disjoint_coplanar_candidates": [],
+      "no_self_crossing": false
+    },
+    {
+      "component": "snow_field_north",
+      "actual_loop_triangles": 68,
+      "native_bvh_overlap_pairs": 2,
+      "exhaustive_aabb_candidate_pairs": 781,
+      "plane_separated_pairs": 225,
+      "ordinary_shared_vertex_or_edge_intersections": 460,
+      "self_crossing_count": 12,
+      "self_crossings": [
+        {
+          "triangles": [
+            2,
+            30
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 5.2995468099402634e-05,
+          "points_local": [
+            [
+              -14.494140625,
+              218.0,
+              229.1312255859375
+            ],
+            [
+              -14.49416732788086,
+              218.0,
+              229.1311798095703
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            3,
+            67
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 3.411968959808029e-05,
+          "points_local": [
+            [
+              -14.494155883789062,
+              218.0,
+              227.67996215820312
+            ],
+            [
+              -14.494140625,
+              218.0,
+              227.67999267578125
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            5,
+            49
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 6.518557544950508e-05,
+          "points_local": [
+            [
+              -42.413673400878906,
+              251.97235107421875,
+              209.67999267578125
+            ],
+            [
+              -42.4136962890625,
+              251.972412109375,
+              209.67999267578125
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            7,
+            49
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 6.518557544950508e-05,
+          "points_local": [
+            [
+              -42.413673400878906,
+              251.97235107421875,
+              209.67999267578125
+            ],
+            [
+              -42.4136962890625,
+              251.972412109375,
+              209.67999267578125
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            8,
+            65
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 0.0011576836323160947,
+          "points_local": [
+            [
+              -24.49449920654297,
+              257.0007629394531,
+              214.85081481933594
+            ],
+            [
+              -24.494140625,
+              257.00006103515625,
+              214.85157775878906
+            ],
+            [
+              -24.494140625,
+              257.0,
+              214.8516082763672
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            16,
+            65
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 6.823937919616058e-05,
+          "points_local": [
+            [
+              -24.494140625,
+              257.00006103515625,
+              214.85157775878906
+            ],
+            [
+              -24.494140625,
+              257.0,
+              214.8516082763672
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            20,
+            54
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 0.00020810213771035546,
+          "points_local": [
+            [
+              74.505859375,
+              232.0,
+              158.39784240722656
+            ],
+            [
+              74.50569152832031,
+              231.99998474121094,
+              158.39796447753906
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            26,
+            64
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 0.00016296393862376272,
+          "points_local": [
+            [
+              -42.494140625,
+              292.0,
+              185.9942626953125
+            ],
+            [
+              -42.494083404541016,
+              291.9998779296875,
+              185.99435424804688
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            29,
+            67
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 0.00015110246521254242,
+          "points_local": [
+            [
+              -14.494140625,
+              218.0,
+              227.67999267578125
+            ],
+            [
+              -14.494075775146484,
+              217.9998779296875,
+              227.679931640625
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            30,
+            67
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 1.451263465997661,
+          "points_local": [
+            [
+              -14.494155883789062,
+              218.0,
+              227.67996215820312
+            ],
+            [
+              -14.494140625,
+              218.0,
+              229.1312255859375
+            ],
+            [
+              -14.494140625,
+              218.0,
+              227.67999267578125
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            36,
+            65
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 1.1716156227439016,
+          "points_local": [
+            [
+              -24.49449920654297,
+              257.0007629394531,
+              214.8507843017578
+            ],
+            [
+              -24.494140625,
+              257.0,
+              214.8516082763672
+            ],
+            [
+              -24.494140625,
+              257.0,
+              213.67999267578125
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            37,
+            65
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 0.0011788093522649061,
+          "points_local": [
+            [
+              -24.49449920654297,
+              257.0007629394531,
+              214.85081481933594
+            ],
+            [
+              -24.49449920654297,
+              257.0007629394531,
+              214.8507843017578
+            ],
+            [
+              -24.494140625,
+              257.0,
+              214.8516082763672
+            ]
+          ]
+        }
+      ],
+      "other_zero_area_contacts_or_disjoint_coplanar_candidates": [],
+      "no_self_crossing": false
+    },
+    {
+      "component": "snow_field_saddle",
+      "actual_loop_triangles": 12,
+      "native_bvh_overlap_pairs": 0,
+      "exhaustive_aabb_candidate_pairs": 56,
+      "plane_separated_pairs": 7,
+      "ordinary_shared_vertex_or_edge_intersections": 42,
+      "self_crossing_count": 2,
+      "self_crossings": [
+        {
+          "triangles": [
+            1,
+            7
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 4.9591064453125e-05,
+          "points_local": [
+            [
+              -45.78399658203125,
+              137.6217041015625,
+              187.67999267578125
+            ],
+            [
+              -45.78398513793945,
+              137.6216583251953,
+              187.6799774169922
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            2,
+            10
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 7.792166982961844e-05,
+          "points_local": [
+            [
+              7.1683349609375,
+              51.86181640625,
+              141.87136840820312
+            ],
+            [
+              7.168272018432617,
+              51.86185073852539,
+              141.87139892578125
+            ]
+          ]
+        }
+      ],
+      "other_zero_area_contacts_or_disjoint_coplanar_candidates": [],
+      "no_self_crossing": false
+    },
+    {
+      "component": "snow_gully_a",
+      "actual_loop_triangles": 96,
+      "native_bvh_overlap_pairs": 3,
+      "exhaustive_aabb_candidate_pairs": 964,
+      "plane_separated_pairs": 289,
+      "ordinary_shared_vertex_or_edge_intersections": 568,
+      "self_crossing_count": 12,
+      "self_crossings": [
+        {
+          "triangles": [
+            3,
+            47
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 0.00022942161489494163,
+          "points_local": [
+            [
+              -28.494140625,
+              214.0,
+              205.67999267578125
+            ],
+            [
+              -28.494075775146484,
+              213.99981689453125,
+              205.68011474609375
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            5,
+            55
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 0.00010013126181340552,
+          "points_local": [
+            [
+              -45.32025146484375,
+              207.6060791015625,
+              223.67999267578125
+            ],
+            [
+              -45.32022476196289,
+              207.60598754882812,
+              223.67996215820312
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            6,
+            56
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 9.718591707604482e-05,
+          "points_local": [
+            [
+              10.9169921875,
+              172.2088623046875,
+              202.3843536376953
+            ],
+            [
+              10.917031288146973,
+              172.2087860107422,
+              202.38430786132812
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            6,
+            57
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 51.47788037564047,
+          "points_local": [
+            [
+              32.391212463378906,
+              132.27073669433594,
+              178.01683044433594
+            ],
+            [
+              10.9169921875,
+              172.2088623046875,
+              202.3843536376953
+            ],
+            [
+              32.3912353515625,
+              132.270751953125,
+              178.016845703125
+            ],
+            [
+              10.917030334472656,
+              172.2087860107422,
+              202.38430786132812
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            8,
+            57
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 3.145679951185349e-05,
+          "points_local": [
+            [
+              32.391212463378906,
+              132.27073669433594,
+              178.01683044433594
+            ],
+            [
+              32.3912353515625,
+              132.270751953125,
+              178.016845703125
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            11,
+            61
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 0.00019555672634851527,
+          "points_local": [
+            [
+              5.505859375,
+              65.0,
+              195.67999267578125
+            ],
+            [
+              5.505928039550781,
+              65.0,
+              195.6798095703125
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            36,
+            87
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 3.699715564970174e-05,
+          "points_local": [
+            [
+              101.70864868164062,
+              -9.947861671447754,
+              78.3244857788086
+            ],
+            [
+              101.70867919921875,
+              -9.9478759765625,
+              78.32447052001953
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            37,
+            85
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 4.88519610399845e-05,
+          "points_local": [
+            [
+              92.9691162109375,
+              -53.2296142578125,
+              65.21675872802734
+            ],
+            [
+              92.96912384033203,
+              -53.22956848144531,
+              65.2167739868164
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            38,
+            86
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 3.7811713412473696e-05,
+          "points_local": [
+            [
+              88.2518310546875,
+              20.5887451171875,
+              116.39917755126953
+            ],
+            [
+              88.25183868408203,
+              20.58872413635254,
+              116.3991470336914
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            47,
+            50
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 1.3926696747250817,
+          "points_local": [
+            [
+              -28.494140625,
+              214.0,
+              207.07266235351562
+            ],
+            [
+              -28.494140625,
+              214.0,
+              205.67999267578125
+            ],
+            [
+              -28.494075775146484,
+              213.99981689453125,
+              205.68011474609375
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            84,
+            87
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 1.5305862545220175,
+          "points_local": [
+            [
+              101.70867156982422,
+              -9.947917938232422,
+              78.32445526123047
+            ],
+            [
+              101.70867919921875,
+              -9.9478759765625,
+              78.32447052001953
+            ],
+            [
+              101.70867919921875,
+              -9.9478759765625,
+              76.79388427734375
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            85,
+            87
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 4.52970202905194e-05,
+          "points_local": [
+            [
+              101.70867156982422,
+              -9.947917938232422,
+              78.32445526123047
+            ],
+            [
+              101.70867919921875,
+              -9.9478759765625,
+              78.32447052001953
+            ]
+          ]
+        }
+      ],
+      "other_zero_area_contacts_or_disjoint_coplanar_candidates": [],
+      "no_self_crossing": false
+    },
+    {
+      "component": "snow_gully_b",
+      "actual_loop_triangles": 68,
+      "native_bvh_overlap_pairs": 0,
+      "exhaustive_aabb_candidate_pairs": 681,
+      "plane_separated_pairs": 249,
+      "ordinary_shared_vertex_or_edge_intersections": 370,
+      "self_crossing_count": 12,
+      "self_crossings": [
+        {
+          "triangles": [
+            0,
+            63
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 7.965321738365593e-05,
+          "points_local": [
+            [
+              -69.20426177978516,
+              132.37823486328125,
+              189.37875366210938
+            ],
+            [
+              -69.20428466796875,
+              132.3782958984375,
+              189.37879943847656
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            3,
+            64
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 3.496227794613525e-05,
+          "points_local": [
+            [
+              -34.75628662109375,
+              -4.802734375,
+              137.67999267578125
+            ],
+            [
+              -34.75629425048828,
+              -4.802703857421875,
+              137.6800079345703
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            4,
+            67
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 7.015828765010651e-05,
+          "points_local": [
+            [
+              -34.756256103515625,
+              -4.802789688110352,
+              138.99301147460938
+            ],
+            [
+              -34.75628662109375,
+              -4.802734375,
+              138.9930419921875
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            9,
+            47
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 3.737624729588589e-05,
+          "points_local": [
+            [
+              27.9112548828125,
+              -134.279296875,
+              86.89620971679688
+            ],
+            [
+              27.911239624023438,
+              -134.27932739257812,
+              86.89622497558594
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            12,
+            51
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 9.267830362896989e-05,
+          "points_local": [
+            [
+              -29.017858505249023,
+              71.79341888427734,
+              161.94873046875
+            ],
+            [
+              -29.017822265625,
+              71.7933349609375,
+              161.94871520996094
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            17,
+            35
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 4.382753483992026e-05,
+          "points_local": [
+            [
+              -42.494140625,
+              68.0,
+              147.67999267578125
+            ],
+            [
+              -42.49412536621094,
+              67.99996185302734,
+              147.6799774169922
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            19,
+            53
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 0.00022869549556960988,
+          "points_local": [
+            [
+              -4.23199462890625,
+              4.802734375,
+              137.67999267578125
+            ],
+            [
+              -4.232069492340088,
+              4.802936553955078,
+              137.68006896972656
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            22,
+            54
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 4.08218283192148e-05,
+          "points_local": [
+            [
+              -4.23199462890625,
+              4.802734375,
+              139.1094970703125
+            ],
+            [
+              -4.231983661651611,
+              4.802698135375977,
+              139.10948181152344
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            34,
+            64
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 4.609316243589238e-05,
+          "points_local": [
+            [
+              -34.75628662109375,
+              -4.802734375,
+              138.9930419921875
+            ],
+            [
+              -34.75629806518555,
+              -4.802692413330078,
+              138.99305725097656
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            35,
+            65
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 5.060767807549133e-05,
+          "points_local": [
+            [
+              -55.9704475402832,
+              64.2066650390625,
+              160.6799774169922
+            ],
+            [
+              -55.970458984375,
+              64.2066650390625,
+              160.67999267578125
+            ],
+            [
+              -55.97044372558594,
+              64.20661926269531,
+              160.6799774169922
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            42,
+            47
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 1.1619033764131197,
+          "points_local": [
+            [
+              27.9112548828125,
+              -134.279296875,
+              88.05810546875
+            ],
+            [
+              27.911239624023438,
+              -134.27932739257812,
+              88.05811309814453
+            ],
+            [
+              27.9112548828125,
+              -134.279296875,
+              86.89620971679688
+            ],
+            [
+              27.911239624023438,
+              -134.27932739257812,
+              86.89622497558594
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            43,
+            47
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 3.496227794613525e-05,
+          "points_local": [
+            [
+              27.9112548828125,
+              -134.279296875,
+              88.05810546875
+            ],
+            [
+              27.911239624023438,
+              -134.27932739257812,
+              88.05811309814453
+            ]
+          ]
+        }
+      ],
+      "other_zero_area_contacts_or_disjoint_coplanar_candidates": [
+        {
+          "triangles": [
+            38,
+            49
+          ],
+          "type": "coplanar_zero_area_contact_or_disjoint"
+        }
+      ],
+      "no_self_crossing": false
+    },
+    {
+      "component": "upper_cirque_mass",
+      "actual_loop_triangles": 420,
+      "native_bvh_overlap_pairs": 0,
+      "exhaustive_aabb_candidate_pairs": 3454,
+      "plane_separated_pairs": 706,
+      "ordinary_shared_vertex_or_edge_intersections": 2659,
+      "self_crossing_count": 6,
+      "self_crossings": [
+        {
+          "triangles": [
+            78,
+            139
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 4.2862329586494887e-05,
+          "points_local": [
+            [
+              102.505859375,
+              -6.0,
+              77.0
+            ],
+            [
+              102.505859375,
+              -5.999959945678711,
+              77.00001525878906
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            78,
+            140
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 4.1085546929431944e-05,
+          "points_local": [
+            [
+              102.505859375,
+              -6.0,
+              77.0
+            ],
+            [
+              102.505859375,
+              -5.999961853027344,
+              77.00001525878906
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            245,
+            356
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 3.7811713412473696e-05,
+          "points_local": [
+            [
+              17.505859375,
+              4.0,
+              82.7305908203125
+            ],
+            [
+              17.50585174560547,
+              4.000036239624023,
+              82.73058319091797
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            246,
+            367
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 3.284643192156701e-05,
+          "points_local": [
+            [
+              -4.23199462890625,
+              4.802734375,
+              101.3333740234375
+            ],
+            [
+              -4.23199462890625,
+              4.80276346206665,
+              101.33335876464844
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            274,
+            410
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 0.00011322648681378044,
+          "points_local": [
+            [
+              87.505859375,
+              -156.0,
+              -16.4752197265625
+            ],
+            [
+              87.50587463378906,
+              -155.99990844726562,
+              -16.475154876708984
+            ],
+            [
+              87.505859375,
+              -155.99998474121094,
+              -16.475202560424805
+            ]
+          ]
+        },
+        {
+          "triangles": [
+            275,
+            410
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 0.00011322648681378044,
+          "points_local": [
+            [
+              87.505859375,
+              -156.0,
+              -16.4752197265625
+            ],
+            [
+              87.50587463378906,
+              -155.99990844726562,
+              -16.475154876708984
+            ]
+          ]
+        }
+      ],
+      "other_zero_area_contacts_or_disjoint_coplanar_candidates": [],
+      "no_self_crossing": false
+    }
+  ],
+  "all9_components_no_self_crossing": false
+}

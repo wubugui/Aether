@@ -1,0 +1,203 @@
+{
+  "baseline_sha256": "6ec57b72a831d6fa906a8d866c339909de55c9c42297a038dcd429b18d0c2b18",
+  "source_path": "/workspace/scratch/a29d03198654/Aether/source-assets/lake48/massif_cirque_wall_lake48.blend",
+  "source_sha256": "87571787db1dc735c4f0ba66cb63d6c60cfd3e9b059aac381dc0b1ec2d5812ab",
+  "source_equivalence": {
+    "triangles": 692,
+    "exact_triangle_topology_after_nearest_mapping": true,
+    "max_mapping_error_m": 0.00012789195170626044,
+    "original_root_vertices_changed_after_mapping": 0
+  },
+  "component_audits": [
+    {
+      "component": "rock_body",
+      "vertices": 348,
+      "triangles": 692,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 13902336.6319821,
+      "bounds": [
+        [
+          574.6189575195312,
+          -167.0,
+          -2096.809814453125
+        ],
+        [
+          1028.8876953125,
+          136.55429077148438,
+          -1445.608154296875
+        ]
+      ]
+    },
+    {
+      "component": "upper_cirque_mass",
+      "vertices": 212,
+      "triangles": 420,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 10895652.770989483,
+      "bounds": [
+        [
+          704.0,
+          -23.0491943359375,
+          -2110.0
+        ],
+        [
+          934.0,
+          231.0,
+          -1495.0
+        ]
+      ]
+    },
+    {
+      "component": "snow_gully_a",
+      "vertices": 54,
+      "triangles": 96,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 18918.160652656275,
+      "bounds": [
+        [
+          764.1738891601562,
+          61.68000030517578,
+          -1998.0
+        ],
+        [
+          911.2028198242188,
+          232.382568359375,
+          -1670.0
+        ]
+      ]
+    },
+    {
+      "component": "snow_gully_b",
+      "vertices": 36,
+      "triangles": 68,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 12756.246731650393,
+      "bounds": [
+        [
+          740.2898559570312,
+          83.68000030517578,
+          -1917.6217041015625
+        ],
+        [
+          854.8680419921875,
+          189.39999389648438,
+          -1602.0
+        ]
+      ]
+    },
+    {
+      "component": "snow_field_north",
+      "vertices": 38,
+      "triangles": 68,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 8239.470858445207,
+      "bounds": [
+        [
+          728.0,
+          148.67999267578125,
+          -2072.0
+        ],
+        [
+          884.0,
+          229.1312255859375,
+          -1952.2088623046875
+        ]
+      ]
+    },
+    {
+      "component": "snow_field_saddle",
+      "vertices": 8,
+      "triangles": 12,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 2295.2965379620123,
+      "bounds": [
+        [
+          763.7101440429688,
+          140.67999267578125,
+          -1917.6217041015625
+        ],
+        [
+          816.6624755859375,
+          189.39999389648438,
+          -1831.86181640625
+        ]
+      ]
+    },
+    {
+      "component": "snow_back_basin",
+      "vertices": 18,
+      "triangles": 28,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 1017.4935536229168,
+      "bounds": [
+        [
+          741.0,
+          129.67999267578125,
+          -2093.826416015625
+        ],
+        [
+          785.0,
+          214.8516082763672,
+          -2031.972412109375
+        ]
+      ]
+    },
+    {
+      "component": "lower_rock_shoulders",
+      "vertices": 86,
+      "triangles": 148,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 18339.88032473039,
+      "bounds": [
+        [
+          754.8724365234375,
+          60.54645538330078,
+          -2110.0
+        ],
+        [
+          912.0,
+          180.48057556152344,
+          -1540.0
+        ]
+      ]
+    },
+    {
+      "component": "shore_rock_apron",
+      "vertices": 52,
+      "triangles": 92,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 13063.643436540791,
+      "bounds": [
+        [
+          806.0,
+          -5.369194507598877,
+          -2110.0
+        ],
+        [
+          934.0,
+          157.69891357421875,
+          -1495.0
+        ]
+      ]
+    }
+  ],
+  "note": "New components intentionally intersect the retained original root below their visible surfaces. No source48 or saved native candidate modified. New dry-footprint, root-edge and reopen proofs are separate."
+}

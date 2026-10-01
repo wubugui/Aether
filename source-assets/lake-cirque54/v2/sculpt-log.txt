@@ -1,0 +1,27 @@
+CIRQUE54V2_GEOMETRY_GATE_FAIL {'component': 'remodeled_cirque_body', 'vertices': 518, 'triangles': 1076, 'boundary_edges': 19, 'nonmanifold_edges': 78, 'degenerate_faces': 0, 'signed_volume': 16495316.618317334, 'bounds': [[574.6189575195312, -167.0, -2096.809814453125], [1028.8876953125, 178.46810913085938, -1445.608154296875]]}
+Info: Saved as "massif_cirque_wall_cirque54v2.blend"
+INFO Draco mesh compression is available, use library at /workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/4.5/scripts/addons_core/io_scene_gltf2/libextern_draco.so
+16:04:12 | INFO: Starting glTF 2.0 export
+16:04:12 | INFO: Extracting primitive: remodeled_cirque_body_editable_mesh
+16:04:12 | INFO: Primitives created: 1
+16:04:12 | INFO: Extracting primitive: snow_gully_a_editable_mesh
+16:04:12 | INFO: Primitives created: 1
+16:04:12 | INFO: Extracting primitive: snow_gully_b_editable_mesh
+16:04:12 | INFO: Primitives created: 1
+16:04:12 | INFO: Extracting primitive: upper_snow_basin_editable_mesh
+16:04:12 | INFO: Primitives created: 1
+16:04:12 | INFO: Extracting primitive: north_snow_patch_editable_mesh
+16:04:12 | INFO: Primitives created: 1
+16:04:12 | INFO: Finished glTF 2.0 export in 0.013107538223266602 s
+Blender 4.5.14 LTS (hash 62c1db4208e8 built 2026-09-15 01:31:19)
+Read blend: "/workspace/scratch/a29d03198654/Aether/source-assets/lake48/massif_cirque_wall_lake48.blend"
+Traceback (most recent call last):
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/lake-cirque54/v2/sculpt_cirque54_v2.py", line 218, in <module>
+    assert all(not any(r[k] for k in ['boundary_edges','nonmanifold_edges','degenerate_faces']) and r['signed_volume']>0 for r in audits),'Source is saved as failed geometry for inspection; no preview pass'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Source is saved as failed geometry for inspection; no preview pass
+
+
+Error: script failed, file: 'source-assets/lake-cirque54/v2/sculpt_cirque54_v2.py', exiting.
+
+Blender quit

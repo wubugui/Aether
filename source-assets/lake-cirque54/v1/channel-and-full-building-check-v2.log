@@ -1,0 +1,10 @@
+Blender 4.5.14 LTS (hash 62c1db4208e8 built 2026-09-15 01:31:19)
+Traceback (most recent call last):
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/lake-cirque54/v1/check_channels_and_full_probes.py", line 26, in <module>
+    report={'channel_sections':sections,'channel_all_control_centers_have_both_higher_banks':all(s['incision_below_lower_bank_m'] is not None and s['incision_below_lower_bank_m']>1 for s in sections),'full_building_probe_count':len(rows),'actual_saved53_runtime_report':str(runtimepath.relative_to(R)),'runtime_report_sha256':hashlib.sha256(runtimepath.read_bytes()).hexdigest(),'full_intake_vs_actual_physics_max_error_m':max(r['intake_vs_actual_runtime_error_m'] for r in rows),'building_candidate_support_change_max_m':max(r['new_source_support_change_m'] for r in rows),'building_rows':rows,'scope':'Offline independent geometry cross-check against171 existing real saved53west physics rays; not a new54 engine acceptance run.'}
+                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: max() arg is an empty sequence
+
+Error: script failed, file: 'source-assets/lake-cirque54/v1/check_channels_and_full_probes.py', exiting.
+
+Blender quit
