@@ -2,6 +2,16 @@
 
 Read unchanged GOAL.md first: all 20 reference images plus the original opening in one real 3D world. All visual acceptance remains pending. Do not confuse functional checks, migration, source asset review or software-rendered pixels with complete GPU/visual acceptance.
 
+## Current state — 2026-10-01 02:37 UTC
+
+Game50 is the latest candidate with completed bounded verification. Game51 is a saved reflection-off diagnostic candidate; runtime reflection and the screen-border overscan fix have actual images, but full verification is still open. Neither candidate meets the complete GOAL.
+
+The blocked graphical action resumed successfully after new explicit user authorization on October1. Do not repeat earlier completed runs. Material-family diagnosis finished with13 images, followed by5 native-group02 controls. Merely duplicating the original native materials with identical property values reproduces exactly the same5 changed pixels as official conversion and clip injection. The three trial images are pixel-identical; original restoration is exact. This is a resource-identity effect, with rendering-order mechanism still an inference. Evidence commit7dae117 retains the original failed gate and controls.
+
+A new independent verifier v2 is being prepared to retain original-to-copy differences explicitly while requiring full-RGBA zero additional differences between a same-value copy baseline and converted materials, then check7 environments, clip-only mode and dynamic reflections. It has not run. Original v1 remains unchanged. Do not raise a pixel tolerance or describe unrun gates as passed. Game51b overscan/default-on sources are prepared but no51b scene has been built.
+
+The attempted51 Slack diagnostic sharing remains blocked after two rejections; it was not resent. Earlier49/50 deliveries in #feiting-progress succeeded. User asks that routine troubleshooting stay in engineering coordination, with only substantive results or necessary decisions sent to them. Coordinate heavy render windows with MAZ to avoid overlapping memory peaks; no change to either project’s fidelity or geometry is authorized merely to reduce load.
+
 ## Repository state
 
 - Working branch: development/feiting-cloud-20260930. Never write/force-push the migration branch.
