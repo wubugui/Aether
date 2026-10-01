@@ -1,0 +1,20 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3]
+
+[ext_resource type="Shader" path="res://assets/reflection51b/clip_shader_005.tres" id="1_tofal"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_tofal")
+shader_parameter/lake51_reflection_clip_enabled = false
+shader_parameter/lake51_reflection_plane_y = 0.0
+shader_parameter/scene_fill = Vector3(1, 1, 1)
+shader_parameter/scene_haze = Vector3(0.76, 0.8, 0.78)
+shader_parameter/scene_sun_direction = Vector3(-0.48, 0.82, 0.3)
+shader_parameter/base_color = Color(0.18281268, 0.21802102, 0.2374612, 1)
+shader_parameter/has_texture = false
+shader_parameter/use_vertex_color = false
+shader_parameter/base_roughness = 0.62
+shader_parameter/source_emission = Vector3(0, 0, 0)
+shader_parameter/storm_flash = 0.0
+shader_parameter/storm_camera = Vector3(-2350, 420, -1300)
+shader_parameter/storm_strength = 0.0

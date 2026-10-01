@@ -1,0 +1,32 @@
+{
+  "base_controller": "candidates/round40-exclusive-20260930/project/scripts/lake_reflection51.gd",
+  "base_controller_sha256": "39192ce37c70050c0d1a647dc134fe267abdc390e7297b9a2d15dd111d02a0c9",
+  "new_controller": "candidates/round40-exclusive-20260930/project/scripts/lake_reflection51b.gd",
+  "new_controller_sha256": "163a6c1195da85c8b4124761a1c9ad7054e7dd4ce71d65ab70191477d11774f7",
+  "new_shader": "candidates/round40-exclusive-20260930/project/assets/reflection51b/lake_water_reflection51b.gdshader",
+  "new_shader_sha256": "97a56c288a628f4676e538f1562dfa4b47b7bb3f4a9252b9e6e3a82e9eb40cff",
+  "old_shader_sha256": "97a56c288a628f4676e538f1562dfa4b47b7bb3f4a9252b9e6e3a82e9eb40cff",
+  "shader_bytes_identical": true,
+  "changes": [
+    "Independent paths; original51 resources untouched",
+    "Controller default clip/reflection true",
+    "Perspective FOV optical expansion factor1.08; ortho/frustum size factor1.08; mirrored frustum_offset unchanged",
+    "Actual expanded camera projection sent to existing projective shader",
+    "Diagnostic optical_overscan field"
+  ],
+  "evidence": "cloud-evidence/reflection51-overscan-20261001T014352Z-1NnorN",
+  "limits": [
+    "Source only, no51b saved candidate yet",
+    "Actual full-scene normal gate still pending",
+    "Orthographic/frustum overscan visual tests pending",
+    "Side/back/dynamic waterline clipping acceptance pending"
+  ],
+  "optical_math_test": {
+    "path": "source-assets/reflection51b/test_overscan_optics51b.gd",
+    "sample_count": 1715,
+    "max_ndc_error": 6.34737516520545e-05,
+    "tolerance": 0.0001,
+    "passed": true,
+    "scope": "120 camera states, all3 projections, roll,h/v offsets, both keep_aspect; mirrored expanded-camera NDC equals main NDC /1.08; no pixels"
+  }
+}
