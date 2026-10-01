@@ -1,0 +1,71 @@
+{
+  "status": "finished",
+  "passed": false,
+  "run_id": "nearbay61-import-v2-20261001T193439Z-3c7iugl3",
+  "timeout_seconds": 600,
+  "command": [
+    "/workspace/scratch/a29d03198654/tools-feiting/Godot_v4.5.1-stable_linux.x86_64",
+    "--path",
+    "/workspace/scratch/a29d03198654/Aether/candidates/round40-exclusive-20260930/project",
+    "--editor",
+    "--import",
+    "--quit",
+    "--rendering-method",
+    "gl_compatibility",
+    "--audio-driver",
+    "Dummy"
+  ],
+  "cache_before": {
+    "file_count": 933,
+    "bytes": 50995261,
+    "latest_mtime": 1790878723.3118637
+  },
+  "scene_save_requested": false,
+  "visual_acceptance": false,
+  "import_process_completed": true,
+  "process": {
+    "status": "finished",
+    "command": [
+      "/workspace/scratch/a29d03198654/tools-feiting/Godot_v4.5.1-stable_linux.x86_64",
+      "--path",
+      "/workspace/scratch/a29d03198654/Aether/candidates/round40-exclusive-20260930/project",
+      "--editor",
+      "--import",
+      "--quit",
+      "--rendering-method",
+      "gl_compatibility",
+      "--audio-driver",
+      "Dummy"
+    ],
+    "returncode": 0,
+    "signal": null,
+    "wall_seconds": 32.78464896500009,
+    "max_rss_kib": 2543044,
+    "timeout_triggered": false,
+    "wrapper_received_signal": null
+  },
+  "exception": null,
+  "sources_unchanged_after_exact_restoration": true,
+  "observed_source_changes": [
+    {
+      "path": "candidates/round40-exclusive-20260930/project/project.godot",
+      "before_sha256": "e0771ee52a04182da1e63bcbc48822790a3fe0685cf3a502314778bbaea7fc93",
+      "observed_sha256": "e74f76562dd60dce8e79d85a7dd821dc3379f99f6539279e2ecc7068236ca49c"
+    }
+  ],
+  "project_newline_normalization_restored": true,
+  "logged_errors": [
+    "ERROR: Required extension VK_KHR_surface not found.",
+    "ERROR: Condition \"err != OK\" is true. Returning: err"
+  ],
+  "renderer_lines": [
+    "OpenGL API 4.5 (Core Profile) Mesa 25.0.7-2+deb13u1 - Compatibility - Using Device: Mesa - llvmpipe (LLVM 19.1.7, 256 bits)"
+  ],
+  "cache_after": {
+    "file_count": 938,
+    "bytes": 53952079,
+    "latest_mtime": 1790883309.791109
+  },
+  "userdata": "/workspace/scratch/a29d03198654/tools-feiting/nearbay61-import-v2-q188u_9h",
+  "runtime_or_visual_acceptance": false
+}
