@@ -1,0 +1,83 @@
+{
+  "method": "Independent Pillow RGBA8 decode, exact all-channel per-pixel equality",
+  "images": [
+    {
+      "name": "group2-A-original.png",
+      "file_sha256": "9b15bfeb0a0947331668934444b97081a8b3d664d70387c54645d66a92406a8a",
+      "rgba_sha256": "accf231a04cc6d2a1c9426e1645a0beeabea8bb5c44e2fc96960f626f1148ec3"
+    },
+    {
+      "name": "group2-rid.png",
+      "file_sha256": "f9d8a3315a16fd6870a8431c24de19e167ee3fa242e95e7a4405de252be7a413",
+      "rgba_sha256": "302317f9ba4303273cde4de4c1ed8718d3b56eb18351f69b7eabff753803a0a6"
+    },
+    {
+      "name": "group2-plain.png",
+      "file_sha256": "f9d8a3315a16fd6870a8431c24de19e167ee3fa242e95e7a4405de252be7a413",
+      "rgba_sha256": "302317f9ba4303273cde4de4c1ed8718d3b56eb18351f69b7eabff753803a0a6"
+    },
+    {
+      "name": "group2-injected.png",
+      "file_sha256": "f9d8a3315a16fd6870a8431c24de19e167ee3fa242e95e7a4405de252be7a413",
+      "rgba_sha256": "302317f9ba4303273cde4de4c1ed8718d3b56eb18351f69b7eabff753803a0a6"
+    },
+    {
+      "name": "group2-A2-original-restored.png",
+      "file_sha256": "9b15bfeb0a0947331668934444b97081a8b3d664d70387c54645d66a92406a8a",
+      "rgba_sha256": "accf231a04cc6d2a1c9426e1645a0beeabea8bb5c44e2fc96960f626f1148ec3"
+    }
+  ],
+  "comparisons": [
+    {
+      "a": "group2-A-original.png",
+      "b": "group2-rid.png",
+      "changed_pixels": 5
+    },
+    {
+      "a": "group2-A-original.png",
+      "b": "group2-plain.png",
+      "changed_pixels": 5
+    },
+    {
+      "a": "group2-A-original.png",
+      "b": "group2-injected.png",
+      "changed_pixels": 5
+    },
+    {
+      "a": "group2-A-original.png",
+      "b": "group2-A2-original-restored.png",
+      "changed_pixels": 0
+    },
+    {
+      "a": "group2-rid.png",
+      "b": "group2-plain.png",
+      "changed_pixels": 0
+    },
+    {
+      "a": "group2-rid.png",
+      "b": "group2-injected.png",
+      "changed_pixels": 0
+    },
+    {
+      "a": "group2-rid.png",
+      "b": "group2-A2-original-restored.png",
+      "changed_pixels": 5
+    },
+    {
+      "a": "group2-plain.png",
+      "b": "group2-injected.png",
+      "changed_pixels": 0
+    },
+    {
+      "a": "group2-plain.png",
+      "b": "group2-A2-original-restored.png",
+      "changed_pixels": 5
+    },
+    {
+      "a": "group2-injected.png",
+      "b": "group2-A2-original-restored.png",
+      "changed_pixels": 5
+    }
+  ],
+  "inference": "Material identity replacement alone is sufficient to reproduce the five pixels; this does not prove a specific sorting or depth-conflict mechanism. No tolerance relaxed."
+}

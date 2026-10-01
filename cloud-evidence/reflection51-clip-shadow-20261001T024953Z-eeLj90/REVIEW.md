@@ -1,0 +1,7 @@
+# Clip-only failure isolated to the Sun shadow pass
+
+2026-10-01 02:51UTC, official Godot4.5.1 Compatibility/llvmpipe, exit0,5PNG. With original Sun shadows enabled, clip-off versus clip-on changes30pixels in1343 (maxchannel3). With Sun.shadow_enabled temporarily false in both controls, clip-off/on is fullRGBA identical. Restoring the original Sun flag and clip-off restores the original image exactly. Reflection rendering stays disabled throughout; original scene/resource files and non-clip uniforms remain unchanged. Temporary shadow disabling is diagnosis only, not a production fix.
+
+The matching4.5.1 renderer source initializes RenderDataGLES3.camera_visible_layers to0xFFFFFFFF in rasterizer_scene_gles3.h. Its _render_shadow_pass constructs that data without replacing visible_layers, then writes it into the shader UBO. The existing bit19-only marker test therefore also matches this shadow pass. A proposed independent fix requires marker19 set AND water-layer18 clear: the reflected camera already excludes water18, while the shadow pass has all bits set. This has source support, but the corrected guard has not yet been rendered by this run. Old51 remains preserved.
+
+Sources: https://raw.githubusercontent.com/godotengine/godot/4.5.1-stable/drivers/gles3/rasterizer_scene_gles3.h and https://raw.githubusercontent.com/godotengine/godot/4.5.1-stable/drivers/gles3/rasterizer_scene_gles3.cpp .
