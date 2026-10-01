@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "review": "Finished actual evidence only, no rerun",
+  "evidence": "cloud-evidence/player-nearbay61-renderer-20261001T131646Z-f5163t8s",
+  "wrapper_sha256": "01e53cc1c041fa224ea61037696d35fc711612c8d10366856a001567f61632ed",
+  "runtime_report_sha256": "cb8e5ee5372fd331bbb455e216b22085f28da08ad8b4aa12207e5af44414410b",
+  "source_count": 1477,
+  "all_current_sources_match": true,
+  "input_check_count": 1518,
+  "real_physics_samples": 544,
+  "initial_fixture": [
+    -3480.0,
+    18.0,
+    -3740.0
+  ],
+  "fixture_excluded_from_distance": true,
+  "final_stop": [
+    -3367.716796875,
+    55.5700073242188,
+    -3571.611328125
+  ],
+  "horizontal_along_corridor_m": 202.3913588029871,
+  "horizontal_chord_m": 202.39135979541328,
+  "three_dimensional_endpoint_chord_m": 205.8488959654102,
+  "actual_three_dimensional_integrated_path_m": 211.008694074437,
+  "independently_recomputed_path_m": 211.00869459050801,
+  "sum_of_steps_matches_endpoint_delta_max_m": 4.973799150320701e-14,
+  "max_lateral_drift_m": 0.0203106161206961,
+  "max_step_velocity_difference_m": 0.000146397564094514,
+  "actual_height_levels_m": [
+    18.0,
+    36.7850036621094,
+    55.5700073242188
+  ],
+  "actual_physics_seconds": 9.0666666666667,
+  "peak_speed_mps": 29.9199981689453,
+  "five_actual_image_hashes_passed": true,
+  "actual_physics_preflight_shape_sweeps": 86,
+  "actual_combined_body_test_move_queries": 12,
+  "actual_visible_meshes": 118,
+  "propeller_full_rotation_meshes": 1,
+  "conservative_min_sea_clearance_m": 11.7266545295715,
+  "pre_and_post_native_observation_exact_pose_comparisons": 4,
+  "all_exact_pose_comparisons_passed": true,
+  "pose_attribution": "No exact-pose mismatch reproduced in this one fixture/native-flight/native observe_reference-method plus physical F2 sequence. No camera restoration or expectation change was used. This does not establish every repeated GUI sequence is drift-free.",
+  "process_seconds": 66.63394623398199,
+  "max_rss_kib": 1710568,
+  "limits": [
+    "216.33m is prechecked corridor length; actual horizontal progress is202.391m and actual3D travelled path is211.009m",
+    "The one-time initial fixture and later reference-method navigation are never counted as flown distance",
+    "Native physical input events and observe_reference method calls are tested; GUI clicks, external keyboard focus and all user navigation sequences are not",
+    "llvmpipe software rendering; no hardware GPU, full-world route or reference visual acceptance",
+    "Current inputs remain unchanged; no native scene/default write and no extra engine run in review"
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "stage": "Static water-corridor proposal only; no engine or real flight",
+  "actual_native_export_sha256": "170833215bcc88a47c41061532271fbf2c5bc205c06563fd0d990a3b06607121",
+  "scene_sha256": "dff06de665e1fa1f6ab74ff3cdf4e91442e1ac322839a37718e799f0d7fa44d8",
+  "initial_fixture_ship_position": [
+    -3480,
+    18,
+    -3740
+  ],
+  "planned_horizontal_endpoint": [
+    -3360,
+    18,
+    -3560
+  ],
+  "horizontal_length_m": 216.33307652783935,
+  "corridor_25m_lateral_and_end_padding": [
+    [
+      -3473.0662475471845,
+      -3774.6687622640766
+    ],
+    [
+      -3325.3312377359234,
+      -3553.0662475471845
+    ],
+    [
+      -3366.9337524528155,
+      -3525.3312377359234
+    ],
+    [
+      -3514.6687622640766,
+      -3746.9337524528155
+    ]
+  ],
+  "static_continuous_mesh_and_shape_result": {
+    "mesh_faces_source_order": {
+      "max_y": -7.999999999999999,
+      "intersection_pieces": 70,
+      "covered_area_m2": 13316.653826389462,
+      "expected_area_m2": 13316.653826391968,
+      "coverage_absolute_error_m2": 2.5065673980861902e-09
+    },
+    "shape_faces": {
+      "max_y": -7.999999999999999,
+      "intersection_pieces": 70,
+      "covered_area_m2": 13316.653826391324,
+      "expected_area_m2": 13316.653826391968,
+      "coverage_absolute_error_m2": 6.439222488552332e-10
+    }
+  },
+  "actual_prior_same_native_boat_envelope": "cloud-evidence/player-flight56-renderer-20261001T104551Z-xfs9_s99/images/player-flight-report.json",
+  "boat_local_padded_AABB": {
+    "position": [
+      -7.38875,
+      -4.833155,
+      -5.032102
+    ],
+    "size": [
+      16.96652,
+      16.75201,
+      10.03917
+    ]
+  },
+  "estimated_start_boat_bottom_above_sea_m": 13.166845,
+  "intended_levels_m": [
+    18,
+    36,
+    55
+  ],
+  "scope": "One initial navigation fixture explicitly excluded from distance. Then native F2/W/E/Space through full real controller, time_scale1, no testing override/autopilot or subsequent pose assignments. Continuous distance/velocity records, low and mid-height screenshots; final stop. Real loaded full-body, propeller revolution and visible-envelope collision casts are required before any key input.",
+  "ui_pose_regression": "Record camera scale and exact inherited1128/1216 bytes before flight and after normal F2 observation transitions without diagnostic transforms. Preserve any failure as separate controller issue, no tolerance loosening.",
+  "limits": [
+    "Static corridor proves actual saved terrain and shape remain below sea across the padded route, not runtime collision, full-body clearance, current camera clearance or flight",
+    "Altitude levels reached only by actual E/release/brake; measure actual endpoints and do not force exactY",
+    "Ordinary inspection/navigation initialization is not flown distance and is recorded separately",
+    "No actual flight run or native/default change"
+  ]
+}
