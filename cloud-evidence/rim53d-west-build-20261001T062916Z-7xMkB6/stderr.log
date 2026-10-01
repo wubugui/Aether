@@ -1,0 +1,8 @@
+WARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.
+     at: set_use_vsync (platform/linuxbsd/x11/gl_manager_x11.cpp:364)
+ERROR: Affected scatter indices differ from exact120 source-impact set
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] require (/workspace/scratch/a29d03198654/Aether/source-assets/lake-rim53/integration-west53/build_west53.gd:30)
+       [1] build (/workspace/scratch/a29d03198654/Aether/source-assets/lake-rim53/integration-west53/build_west53.gd:127)
+       [2] settle (/workspace/scratch/a29d03198654/Aether/source-assets/lake-rim53/integration-west53/build_west53.gd:28)

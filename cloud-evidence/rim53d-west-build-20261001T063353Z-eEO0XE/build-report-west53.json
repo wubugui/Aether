@@ -1,0 +1,1584 @@
+{
+  "baseline": "res://scenes/candidate51b/Game51b.tscn",
+  "baseline_sha256": "b169f62527a52b9f2a3f091c2d7db136ad7cd67111e405f08f390eeb082e2bb1",
+  "build_saved_reload_passed": true,
+  "candidate": "res://scenes/candidate53d-west/Game53dWest.tscn",
+  "candidate_bytes": 103070885,
+  "candidate_sha256": "6ec57b72a831d6fa906a8d866c339909de55c9c42297a038dcd429b18d0c2b18",
+  "collision_triangles": 1780,
+  "exact_changes": {
+    "added_nodes": [
+      "World/Mountains/massif_west_spur/Model/ridge_shoulders",
+      "World/Mountains/massif_west_spur/Model/shore_rock_apron",
+      "World/Mountains/massif_west_spur/Model/snow_cap",
+      "World/Mountains/massif_west_spur/Model/snow_gully"
+    ],
+    "changed_properties": [
+      {
+        "path": "World/Vegetation/oak_0_-3",
+        "property": "multimesh"
+      },
+      {
+        "path": "World/Vegetation/oak_0_-3",
+        "property": "exact_multimesh_buffer"
+      },
+      {
+        "path": "World/Vegetation/poplar_0_-3",
+        "property": "multimesh"
+      },
+      {
+        "path": "World/Vegetation/poplar_0_-3",
+        "property": "exact_multimesh_buffer"
+      },
+      {
+        "path": "World/Vegetation/bush_0_-3",
+        "property": "multimesh"
+      },
+      {
+        "path": "World/Vegetation/bush_0_-3",
+        "property": "exact_multimesh_buffer"
+      },
+      {
+        "path": "World/Vegetation/rock_0_-3",
+        "property": "multimesh"
+      },
+      {
+        "path": "World/Vegetation/rock_0_-3",
+        "property": "exact_multimesh_buffer"
+      },
+      {
+        "path": "World/Mountains/massif_west_spur/Collision/Shape",
+        "property": "shape"
+      }
+    ],
+    "removed_nodes": []
+  },
+  "failures": [],
+  "hardware_gpu_acceptance": false,
+  "inventory": [
+    {
+      "class": "ArrayMesh",
+      "fingerprint": "d82b1ef3a3d9e2d65ba025e8fe3881ed9b06bc407899e510be5a8d542a9f483f",
+      "path": "res://assets/rim53d-west/ridge_shoulders.mesh",
+      "sha256": "eab29b85c45a97e4fe33d7d5668b34e2746c6b8e81c5f46e3d90283ff940ca8a"
+    },
+    {
+      "class": "ArrayMesh",
+      "fingerprint": "1600783e9e99d9ec06e6a971e25529035d6006dcc1ebfcb5532b46f2d031c8f7",
+      "path": "res://assets/rim53d-west/snow_cap.mesh",
+      "sha256": "05d1e610324dc2f60addb8026be5ea56248e7d486d192a690a1c99895dadad67"
+    },
+    {
+      "class": "ArrayMesh",
+      "fingerprint": "eef62762b3d6914e94173f2c0ee93037fe12f1fa1b43cb5e578df0762d85ec16",
+      "path": "res://assets/rim53d-west/snow_gully.mesh",
+      "sha256": "1a880dd60588d4b490adb610620bcc12d9a4bace5c925e304b788749c93af736"
+    },
+    {
+      "class": "ArrayMesh",
+      "fingerprint": "5941ab90430362d185ab8683f9cae99e940efed7d6870aee030ed3e0500af41e",
+      "path": "res://assets/rim53d-west/shore_rock_apron.mesh",
+      "sha256": "7900aa6f4d46d18c65db7e24867a657914bbb0f3e45bbc76fe7dccc76d94af76"
+    },
+    {
+      "class": "ConcavePolygonShape3D",
+      "fingerprint": "a658af0df74ec332e0b2ad9396b4a8ae1ab10cab49b3ee748cff448638c2ad56",
+      "path": "res://assets/rim53d-west/massif_west_spur_collision.res",
+      "sha256": "e16331a7c9266f69af69417a69818cd5e2691dc8ded523f7e5b4ec74cb20e330"
+    },
+    {
+      "class": "MultiMesh",
+      "fingerprint": "17f31d2dfa96ee8a1d64e323eae8d2243fc53b3c3f0fcdb38ade74b011939dce",
+      "path": "res://assets/rim53d-west/Grounded_oak_0_-3.res",
+      "sha256": "76f90124b5d0e103321167a14b5b5b37a3bf2e44944a175906895dbda3b267a2"
+    },
+    {
+      "class": "MultiMesh",
+      "fingerprint": "f8dc1f4716e089e00d1dc0672bd4ae09307d28403f91f54c1ab812fe7cb6edbc",
+      "path": "res://assets/rim53d-west/Grounded_poplar_0_-3.res",
+      "sha256": "6c8e9df0cabdde19c42ebe92347ae099da9ee456a7a343fb35826210df89fe91"
+    },
+    {
+      "class": "MultiMesh",
+      "fingerprint": "c6d3fe0690e4f4901938c3818df79f456ef31735413b5b4aa21b7a57e5028b1e",
+      "path": "res://assets/rim53d-west/Grounded_bush_0_-3.res",
+      "sha256": "0b9199203c4547f9e62662e134fe2a2da484dc767699a04a7bb6c9c2bf360280"
+    },
+    {
+      "class": "MultiMesh",
+      "fingerprint": "4fccc9aabcfa809dba84fd51ebd8503431a26e28025ad56dc32b3e2f3864bdb1",
+      "path": "res://assets/rim53d-west/Grounded_rock_0_-3.res",
+      "sha256": "38afd09b5f9846e7fd7bb8e319e1a41f5a0229566ab51e4a0db36406d1376b47"
+    },
+    {
+      "class": "PackedScene",
+      "native_reload_exact": true,
+      "path": "res://scenes/candidate53d-west/massif_west_spur.tscn",
+      "sha256": "082c71d6f3d8a1486a5736161cea7699c1556c59e80239fa6bdbe2f52410044b"
+    }
+  ],
+  "manifest_sha256": "9bca63c34b214a7a3176a0a139c1a35cea946b88aea10e99385956387f021a7d",
+  "material_bindings": {
+    "Airship/Visuals/CarriageLantern40_0|material_override": [
+      "res://assets/reflection51b/clip_material_002.tres",
+      "dd58e999589042a29e3a69a5cd172283810abc13c0e0781d5efb1497fe3cc2be",
+      "res://assets/reflection51b/clip_shader_001.tres"
+    ],
+    "Airship/Visuals/CarriageLantern40_1|material_override": [
+      "res://assets/reflection51b/clip_material_003.tres",
+      "dd58e999589042a29e3a69a5cd172283810abc13c0e0781d5efb1497fe3cc2be",
+      "res://assets/reflection51b/clip_shader_001.tres"
+    ],
+    "Airship|cloth_material": [
+      "res://assets/reflection51b/clip_material_001.tres",
+      "dcd0e8af70118af7373eb063250038b80af17b76d4df97ceda53295bdea44163",
+      "res://assets/reflection51b/clip_shader_000.tres"
+    ],
+    "Airship|hull_material": [
+      "res://assets/reflection51b/clip_material_000.tres",
+      "fd6c6906f7bddcb6862aae1482d1a887e408157ab12094972a1e8ae848e713b2",
+      "res://assets/reflection51b/clip_shader_000.tres"
+    ],
+    "LanternCoastStudy/IslandD_CVariant/island_c_Coast blue grey bedrock|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_040.tres",
+      "3ac22b211a1467551c6e04a920d9c7bb094e92c196f668dee0ea3132b7b29e75",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/IslandD_CVariant/island_c_Coast blue grey bedrock|surface_material_override/1": [
+      "res://assets/reflection51b/clip_material_039.tres",
+      "fd8562328244ea60f54393f827ba61c37f7b1ec17fa406f08ff0d70c02455354",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/IslandD_CVariant/island_c_Coast blue grey bedrock|surface_material_override/2": [
+      "res://assets/reflection51b/clip_material_041.tres",
+      "a2832977392fe2f441f19a4a4035aa9885e61e080076be4b4472610a736d2cba",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_038.tres",
+      "f5bc7c7cb1179e4cd6beb42127c47843c17de9b7d9f1a6ac2f5a8bb27eee8823",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass|surface_material_override/1": [
+      "res://assets/reflection51b/clip_material_039.tres",
+      "fd8562328244ea60f54393f827ba61c37f7b1ec17fa406f08ff0d70c02455354",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass|surface_material_override/2": [
+      "res://assets/reflection51b/clip_material_040.tres",
+      "3ac22b211a1467551c6e04a920d9c7bb094e92c196f668dee0ea3132b7b29e75",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass|surface_material_override/3": [
+      "res://assets/reflection51b/clip_material_040.tres",
+      "3ac22b211a1467551c6e04a920d9c7bb094e92c196f668dee0ea3132b7b29e75",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass|surface_material_override/4": [
+      "res://assets/reflection51b/clip_material_039.tres",
+      "fd8562328244ea60f54393f827ba61c37f7b1ec17fa406f08ff0d70c02455354",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/IslandD_CVariant/island_c_Coast short olive grass|surface_material_override/5": [
+      "res://assets/reflection51b/clip_material_041.tres",
+      "a2832977392fe2f441f19a4a4035aa9885e61e080076be4b4472610a736d2cba",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/island_a_1/island_a faulted bedrock|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_042.tres",
+      "3ac22b211a1467551c6e04a920d9c7bb094e92c196f668dee0ea3132b7b29e75",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/island_a_1/island_a faulted bedrock|surface_material_override/1": [
+      "res://assets/reflection51b/clip_material_043.tres",
+      "fd8562328244ea60f54393f827ba61c37f7b1ec17fa406f08ff0d70c02455354",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/island_a_1/island_a faulted bedrock|surface_material_override/2": [
+      "res://assets/reflection51b/clip_material_044.tres",
+      "a2832977392fe2f441f19a4a4035aa9885e61e080076be4b4472610a736d2cba",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/island_a_1/island_a low shore ledge 00|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_042.tres",
+      "3ac22b211a1467551c6e04a920d9c7bb094e92c196f668dee0ea3132b7b29e75",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/island_a_1/island_a low shore ledge 00|surface_material_override/1": [
+      "res://assets/reflection51b/clip_material_043.tres",
+      "fd8562328244ea60f54393f827ba61c37f7b1ec17fa406f08ff0d70c02455354",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/island_a_1/island_a low shore ledge 00|surface_material_override/2": [
+      "res://assets/reflection51b/clip_material_044.tres",
+      "a2832977392fe2f441f19a4a4035aa9885e61e080076be4b4472610a736d2cba",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/island_a_1/island_a low shore ledge 01|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_042.tres",
+      "3ac22b211a1467551c6e04a920d9c7bb094e92c196f668dee0ea3132b7b29e75",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/island_a_1/island_a low shore ledge 01|surface_material_override/1": [
+      "res://assets/reflection51b/clip_material_044.tres",
+      "a2832977392fe2f441f19a4a4035aa9885e61e080076be4b4472610a736d2cba",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/island_a_1/island_a low shore ledge 02|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_042.tres",
+      "3ac22b211a1467551c6e04a920d9c7bb094e92c196f668dee0ea3132b7b29e75",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/island_a_1/island_a low shore ledge 02|surface_material_override/1": [
+      "res://assets/reflection51b/clip_material_043.tres",
+      "fd8562328244ea60f54393f827ba61c37f7b1ec17fa406f08ff0d70c02455354",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/island_a_1/island_a low shore ledge 02|surface_material_override/2": [
+      "res://assets/reflection51b/clip_material_044.tres",
+      "a2832977392fe2f441f19a4a4035aa9885e61e080076be4b4472610a736d2cba",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/island_a_1/island_a low shore ledge 03|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_042.tres",
+      "3ac22b211a1467551c6e04a920d9c7bb094e92c196f668dee0ea3132b7b29e75",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/island_a_1/island_a low shore ledge 03|surface_material_override/1": [
+      "res://assets/reflection51b/clip_material_044.tres",
+      "a2832977392fe2f441f19a4a4035aa9885e61e080076be4b4472610a736d2cba",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/island_a_1/island_a low shore ledge 04|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_042.tres",
+      "3ac22b211a1467551c6e04a920d9c7bb094e92c196f668dee0ea3132b7b29e75",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/island_a_1/island_a low shore ledge 04|surface_material_override/1": [
+      "res://assets/reflection51b/clip_material_043.tres",
+      "fd8562328244ea60f54393f827ba61c37f7b1ec17fa406f08ff0d70c02455354",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/island_a_1/island_a low shore ledge 04|surface_material_override/2": [
+      "res://assets/reflection51b/clip_material_044.tres",
+      "a2832977392fe2f441f19a4a4035aa9885e61e080076be4b4472610a736d2cba",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/island_b_2/island_b_Coast blue grey bedrock|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_045.tres",
+      "3ac22b211a1467551c6e04a920d9c7bb094e92c196f668dee0ea3132b7b29e75",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/island_b_2/island_b_Coast blue grey bedrock|surface_material_override/1": [
+      "res://assets/reflection51b/clip_material_046.tres",
+      "fd8562328244ea60f54393f827ba61c37f7b1ec17fa406f08ff0d70c02455354",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/island_b_2/island_b_Coast blue grey bedrock|surface_material_override/2": [
+      "res://assets/reflection51b/clip_material_047.tres",
+      "a2832977392fe2f441f19a4a4035aa9885e61e080076be4b4472610a736d2cba",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/island_c_3/island_c_Coast blue grey bedrock|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_050.tres",
+      "3ac22b211a1467551c6e04a920d9c7bb094e92c196f668dee0ea3132b7b29e75",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/island_c_3/island_c_Coast blue grey bedrock|surface_material_override/1": [
+      "res://assets/reflection51b/clip_material_049.tres",
+      "fd8562328244ea60f54393f827ba61c37f7b1ec17fa406f08ff0d70c02455354",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/island_c_3/island_c_Coast blue grey bedrock|surface_material_override/2": [
+      "res://assets/reflection51b/clip_material_051.tres",
+      "a2832977392fe2f441f19a4a4035aa9885e61e080076be4b4472610a736d2cba",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/island_c_3/island_c_Coast short olive grass|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_048.tres",
+      "f5bc7c7cb1179e4cd6beb42127c47843c17de9b7d9f1a6ac2f5a8bb27eee8823",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/island_c_3/island_c_Coast short olive grass|surface_material_override/1": [
+      "res://assets/reflection51b/clip_material_049.tres",
+      "fd8562328244ea60f54393f827ba61c37f7b1ec17fa406f08ff0d70c02455354",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/island_c_3/island_c_Coast short olive grass|surface_material_override/2": [
+      "res://assets/reflection51b/clip_material_050.tres",
+      "3ac22b211a1467551c6e04a920d9c7bb094e92c196f668dee0ea3132b7b29e75",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/island_c_3/island_c_Coast short olive grass|surface_material_override/3": [
+      "res://assets/reflection51b/clip_material_050.tres",
+      "3ac22b211a1467551c6e04a920d9c7bb094e92c196f668dee0ea3132b7b29e75",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/island_c_3/island_c_Coast short olive grass|surface_material_override/4": [
+      "res://assets/reflection51b/clip_material_049.tres",
+      "fd8562328244ea60f54393f827ba61c37f7b1ec17fa406f08ff0d70c02455354",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/island_c_3/island_c_Coast short olive grass|surface_material_override/5": [
+      "res://assets/reflection51b/clip_material_051.tres",
+      "a2832977392fe2f441f19a4a4035aa9885e61e080076be4b4472610a736d2cba",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/reef_low_11/reef_low_Coast blue grey bedrock|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_071.tres",
+      "3ac22b211a1467551c6e04a920d9c7bb094e92c196f668dee0ea3132b7b29e75",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/reef_low_11/reef_low_Coast blue grey bedrock|surface_material_override/1": [
+      "res://assets/reflection51b/clip_material_072.tres",
+      "a2832977392fe2f441f19a4a4035aa9885e61e080076be4b4472610a736d2cba",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/reef_low_13/reef_low_Coast blue grey bedrock|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_076.tres",
+      "3ac22b211a1467551c6e04a920d9c7bb094e92c196f668dee0ea3132b7b29e75",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/reef_low_13/reef_low_Coast blue grey bedrock|surface_material_override/1": [
+      "res://assets/reflection51b/clip_material_077.tres",
+      "a2832977392fe2f441f19a4a4035aa9885e61e080076be4b4472610a736d2cba",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/reef_low_15/reef_low_Coast blue grey bedrock|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_081.tres",
+      "3ac22b211a1467551c6e04a920d9c7bb094e92c196f668dee0ea3132b7b29e75",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/reef_low_15/reef_low_Coast blue grey bedrock|surface_material_override/1": [
+      "res://assets/reflection51b/clip_material_082.tres",
+      "a2832977392fe2f441f19a4a4035aa9885e61e080076be4b4472610a736d2cba",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/reef_low_5/reef_low_Coast blue grey bedrock|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_055.tres",
+      "3ac22b211a1467551c6e04a920d9c7bb094e92c196f668dee0ea3132b7b29e75",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/reef_low_5/reef_low_Coast blue grey bedrock|surface_material_override/1": [
+      "res://assets/reflection51b/clip_material_056.tres",
+      "a2832977392fe2f441f19a4a4035aa9885e61e080076be4b4472610a736d2cba",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/reef_low_8/reef_low_Coast blue grey bedrock|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_063.tres",
+      "3ac22b211a1467551c6e04a920d9c7bb094e92c196f668dee0ea3132b7b29e75",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/reef_low_8/reef_low_Coast blue grey bedrock|surface_material_override/1": [
+      "res://assets/reflection51b/clip_material_064.tres",
+      "a2832977392fe2f441f19a4a4035aa9885e61e080076be4b4472610a736d2cba",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/reef_ridge_10/reef_ridge_Coast blue grey bedrock|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_068.tres",
+      "3ac22b211a1467551c6e04a920d9c7bb094e92c196f668dee0ea3132b7b29e75",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/reef_ridge_10/reef_ridge_Coast blue grey bedrock|surface_material_override/1": [
+      "res://assets/reflection51b/clip_material_069.tres",
+      "fd8562328244ea60f54393f827ba61c37f7b1ec17fa406f08ff0d70c02455354",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/reef_ridge_10/reef_ridge_Coast blue grey bedrock|surface_material_override/2": [
+      "res://assets/reflection51b/clip_material_070.tres",
+      "a2832977392fe2f441f19a4a4035aa9885e61e080076be4b4472610a736d2cba",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/reef_ridge_12/reef_ridge_Coast blue grey bedrock|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_073.tres",
+      "3ac22b211a1467551c6e04a920d9c7bb094e92c196f668dee0ea3132b7b29e75",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/reef_ridge_12/reef_ridge_Coast blue grey bedrock|surface_material_override/1": [
+      "res://assets/reflection51b/clip_material_074.tres",
+      "fd8562328244ea60f54393f827ba61c37f7b1ec17fa406f08ff0d70c02455354",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/reef_ridge_12/reef_ridge_Coast blue grey bedrock|surface_material_override/2": [
+      "res://assets/reflection51b/clip_material_075.tres",
+      "a2832977392fe2f441f19a4a4035aa9885e61e080076be4b4472610a736d2cba",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/reef_ridge_16/reef_ridge_Coast blue grey bedrock|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_083.tres",
+      "3ac22b211a1467551c6e04a920d9c7bb094e92c196f668dee0ea3132b7b29e75",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/reef_ridge_16/reef_ridge_Coast blue grey bedrock|surface_material_override/1": [
+      "res://assets/reflection51b/clip_material_084.tres",
+      "fd8562328244ea60f54393f827ba61c37f7b1ec17fa406f08ff0d70c02455354",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/reef_ridge_16/reef_ridge_Coast blue grey bedrock|surface_material_override/2": [
+      "res://assets/reflection51b/clip_material_085.tres",
+      "a2832977392fe2f441f19a4a4035aa9885e61e080076be4b4472610a736d2cba",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/reef_ridge_4/reef_ridge_Coast blue grey bedrock|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_052.tres",
+      "3ac22b211a1467551c6e04a920d9c7bb094e92c196f668dee0ea3132b7b29e75",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/reef_ridge_4/reef_ridge_Coast blue grey bedrock|surface_material_override/1": [
+      "res://assets/reflection51b/clip_material_053.tres",
+      "fd8562328244ea60f54393f827ba61c37f7b1ec17fa406f08ff0d70c02455354",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/reef_ridge_4/reef_ridge_Coast blue grey bedrock|surface_material_override/2": [
+      "res://assets/reflection51b/clip_material_054.tres",
+      "a2832977392fe2f441f19a4a4035aa9885e61e080076be4b4472610a736d2cba",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/reef_ridge_7/reef_ridge_Coast blue grey bedrock|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_060.tres",
+      "3ac22b211a1467551c6e04a920d9c7bb094e92c196f668dee0ea3132b7b29e75",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/reef_ridge_7/reef_ridge_Coast blue grey bedrock|surface_material_override/1": [
+      "res://assets/reflection51b/clip_material_061.tres",
+      "fd8562328244ea60f54393f827ba61c37f7b1ec17fa406f08ff0d70c02455354",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/reef_ridge_7/reef_ridge_Coast blue grey bedrock|surface_material_override/2": [
+      "res://assets/reflection51b/clip_material_062.tres",
+      "a2832977392fe2f441f19a4a4035aa9885e61e080076be4b4472610a736d2cba",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/reef_spire_14/reef_spire_Coast blue grey bedrock|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_078.tres",
+      "3ac22b211a1467551c6e04a920d9c7bb094e92c196f668dee0ea3132b7b29e75",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/reef_spire_14/reef_spire_Coast blue grey bedrock|surface_material_override/1": [
+      "res://assets/reflection51b/clip_material_079.tres",
+      "fd8562328244ea60f54393f827ba61c37f7b1ec17fa406f08ff0d70c02455354",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/reef_spire_14/reef_spire_Coast blue grey bedrock|surface_material_override/2": [
+      "res://assets/reflection51b/clip_material_080.tres",
+      "a2832977392fe2f441f19a4a4035aa9885e61e080076be4b4472610a736d2cba",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/reef_spire_6/reef_spire_Coast blue grey bedrock|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_057.tres",
+      "3ac22b211a1467551c6e04a920d9c7bb094e92c196f668dee0ea3132b7b29e75",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/reef_spire_6/reef_spire_Coast blue grey bedrock|surface_material_override/1": [
+      "res://assets/reflection51b/clip_material_058.tres",
+      "fd8562328244ea60f54393f827ba61c37f7b1ec17fa406f08ff0d70c02455354",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/reef_spire_6/reef_spire_Coast blue grey bedrock|surface_material_override/2": [
+      "res://assets/reflection51b/clip_material_059.tres",
+      "a2832977392fe2f441f19a4a4035aa9885e61e080076be4b4472610a736d2cba",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/reef_spire_9/reef_spire_Coast blue grey bedrock|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_065.tres",
+      "3ac22b211a1467551c6e04a920d9c7bb094e92c196f668dee0ea3132b7b29e75",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/reef_spire_9/reef_spire_Coast blue grey bedrock|surface_material_override/1": [
+      "res://assets/reflection51b/clip_material_066.tres",
+      "fd8562328244ea60f54393f827ba61c37f7b1ec17fa406f08ff0d70c02455354",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "LanternCoastStudy/reef_spire_9/reef_spire_Coast blue grey bedrock|surface_material_override/2": [
+      "res://assets/reflection51b/clip_material_067.tres",
+      "a2832977392fe2f441f19a4a4035aa9885e61e080076be4b4472610a736d2cba",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "MainlandVillage23g/mainland_headland_0/Mainland headland continuous bedrock and grass terraces|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_097.tres",
+      "3ac22b211a1467551c6e04a920d9c7bb094e92c196f668dee0ea3132b7b29e75",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "MainlandVillage23g/mainland_headland_0/Mainland headland continuous bedrock and grass terraces|surface_material_override/1": [
+      "res://assets/reflection51b/clip_material_098.tres",
+      "fd8562328244ea60f54393f827ba61c37f7b1ec17fa406f08ff0d70c02455354",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "MainlandVillage23g/mainland_headland_0/Mainland headland continuous bedrock and grass terraces|surface_material_override/2": [
+      "res://assets/reflection51b/clip_material_099.tres",
+      "a2832977392fe2f441f19a4a4035aa9885e61e080076be4b4472610a736d2cba",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "MainlandVillage23g/mainland_headland_0/Mainland headland continuous bedrock and grass terraces|surface_material_override/3": [
+      "res://assets/reflection51b/clip_material_100.tres",
+      "f5bc7c7cb1179e4cd6beb42127c47843c17de9b7d9f1a6ac2f5a8bb27eee8823",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "MainlandVillage23g/mainland_headland_0/Mainland headland continuous bedrock and grass terraces|surface_material_override/4": [
+      "res://assets/reflection51b/clip_material_101.tres",
+      "7e92c6a40913119e42dcb332bc7e15e49222e476b6587602c192f0b924a74119",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_moored_fishing_boat_54/moored_fishing_boat_Harbor oak plank 0|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_095.tres",
+      "afc2571507f64f38ce20558ce57fa6c325d2360f59a6d51c27e7b3e2e3e414e8",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_moored_fishing_boat_54/moored_fishing_boat_Harbor oak plank 1|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_094.tres",
+      "9aa0748dbac41b8326caecaf1140a0efa8c9cd060b3dcf968b3d965563eb2d85",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_moored_fishing_boat_54/moored_fishing_boat_Harbor oak plank 3|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_096.tres",
+      "cffe85edeeffd126ef30c9b841685ab3d84cab129a95bbe4db4f26f46f39d200",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_moored_fishing_boat_63/moored_fishing_boat_Harbor oak plank 0|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_095.tres",
+      "afc2571507f64f38ce20558ce57fa6c325d2360f59a6d51c27e7b3e2e3e414e8",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_moored_fishing_boat_63/moored_fishing_boat_Harbor oak plank 1|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_094.tres",
+      "9aa0748dbac41b8326caecaf1140a0efa8c9cd060b3dcf968b3d965563eb2d85",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_moored_fishing_boat_63/moored_fishing_boat_Harbor oak plank 3|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_096.tres",
+      "cffe85edeeffd126ef30c9b841685ab3d84cab129a95bbe4db4f26f46f39d200",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_moored_fishing_boat_72/moored_fishing_boat_Harbor oak plank 0|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_095.tres",
+      "afc2571507f64f38ce20558ce57fa6c325d2360f59a6d51c27e7b3e2e3e414e8",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_moored_fishing_boat_72/moored_fishing_boat_Harbor oak plank 1|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_094.tres",
+      "9aa0748dbac41b8326caecaf1140a0efa8c9cd060b3dcf968b3d965563eb2d85",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_moored_fishing_boat_72/moored_fishing_boat_Harbor oak plank 3|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_096.tres",
+      "cffe85edeeffd126ef30c9b841685ab3d84cab129a95bbe4db4f26f46f39d200",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_moored_fishing_boat_81/moored_fishing_boat_Harbor oak plank 0|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_095.tres",
+      "afc2571507f64f38ce20558ce57fa6c325d2360f59a6d51c27e7b3e2e3e414e8",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_moored_fishing_boat_81/moored_fishing_boat_Harbor oak plank 1|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_094.tres",
+      "9aa0748dbac41b8326caecaf1140a0efa8c9cd060b3dcf968b3d965563eb2d85",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_moored_fishing_boat_81/moored_fishing_boat_Harbor oak plank 3|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_096.tres",
+      "cffe85edeeffd126ef30c9b841685ab3d84cab129a95bbe4db4f26f46f39d200",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_pier_landing_47/pier_landing_Harbor oak plank 0|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_090.tres",
+      "afc2571507f64f38ce20558ce57fa6c325d2360f59a6d51c27e7b3e2e3e414e8",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_pier_landing_47/pier_landing_Harbor oak plank 1|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_091.tres",
+      "9aa0748dbac41b8326caecaf1140a0efa8c9cd060b3dcf968b3d965563eb2d85",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_pier_landing_47/pier_landing_Harbor oak plank 2|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_092.tres",
+      "5913c7070a4ebf39f05493edbc4119ae8ad15ad2e34f18d1dc82d6a40c08a09c",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_pier_landing_47/pier_landing_Harbor oak plank 3|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_093.tres",
+      "cffe85edeeffd126ef30c9b841685ab3d84cab129a95bbe4db4f26f46f39d200",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_pier_landing_56/pier_landing_Harbor oak plank 0|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_090.tres",
+      "afc2571507f64f38ce20558ce57fa6c325d2360f59a6d51c27e7b3e2e3e414e8",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_pier_landing_56/pier_landing_Harbor oak plank 1|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_091.tres",
+      "9aa0748dbac41b8326caecaf1140a0efa8c9cd060b3dcf968b3d965563eb2d85",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_pier_landing_56/pier_landing_Harbor oak plank 2|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_092.tres",
+      "5913c7070a4ebf39f05493edbc4119ae8ad15ad2e34f18d1dc82d6a40c08a09c",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_pier_landing_56/pier_landing_Harbor oak plank 3|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_093.tres",
+      "cffe85edeeffd126ef30c9b841685ab3d84cab129a95bbe4db4f26f46f39d200",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_pier_landing_65/pier_landing_Harbor oak plank 0|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_090.tres",
+      "afc2571507f64f38ce20558ce57fa6c325d2360f59a6d51c27e7b3e2e3e414e8",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_pier_landing_65/pier_landing_Harbor oak plank 1|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_091.tres",
+      "9aa0748dbac41b8326caecaf1140a0efa8c9cd060b3dcf968b3d965563eb2d85",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_pier_landing_65/pier_landing_Harbor oak plank 2|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_092.tres",
+      "5913c7070a4ebf39f05493edbc4119ae8ad15ad2e34f18d1dc82d6a40c08a09c",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_pier_landing_65/pier_landing_Harbor oak plank 3|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_093.tres",
+      "cffe85edeeffd126ef30c9b841685ab3d84cab129a95bbe4db4f26f46f39d200",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_pier_landing_74/pier_landing_Harbor oak plank 0|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_090.tres",
+      "afc2571507f64f38ce20558ce57fa6c325d2360f59a6d51c27e7b3e2e3e414e8",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_pier_landing_74/pier_landing_Harbor oak plank 1|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_091.tres",
+      "9aa0748dbac41b8326caecaf1140a0efa8c9cd060b3dcf968b3d965563eb2d85",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_pier_landing_74/pier_landing_Harbor oak plank 2|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_092.tres",
+      "5913c7070a4ebf39f05493edbc4119ae8ad15ad2e34f18d1dc82d6a40c08a09c",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_pier_landing_74/pier_landing_Harbor oak plank 3|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_093.tres",
+      "cffe85edeeffd126ef30c9b841685ab3d84cab129a95bbe4db4f26f46f39d200",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_timber_pier_46/timber_pier_Harbor oak plank 0|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_086.tres",
+      "afc2571507f64f38ce20558ce57fa6c325d2360f59a6d51c27e7b3e2e3e414e8",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_timber_pier_46/timber_pier_Harbor oak plank 1|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_087.tres",
+      "9aa0748dbac41b8326caecaf1140a0efa8c9cd060b3dcf968b3d965563eb2d85",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_timber_pier_46/timber_pier_Harbor oak plank 2|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_088.tres",
+      "5913c7070a4ebf39f05493edbc4119ae8ad15ad2e34f18d1dc82d6a40c08a09c",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_timber_pier_46/timber_pier_Harbor oak plank 3|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_089.tres",
+      "cffe85edeeffd126ef30c9b841685ab3d84cab129a95bbe4db4f26f46f39d200",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_timber_pier_55/timber_pier_Harbor oak plank 0|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_086.tres",
+      "afc2571507f64f38ce20558ce57fa6c325d2360f59a6d51c27e7b3e2e3e414e8",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_timber_pier_55/timber_pier_Harbor oak plank 1|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_087.tres",
+      "9aa0748dbac41b8326caecaf1140a0efa8c9cd060b3dcf968b3d965563eb2d85",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_timber_pier_55/timber_pier_Harbor oak plank 2|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_088.tres",
+      "5913c7070a4ebf39f05493edbc4119ae8ad15ad2e34f18d1dc82d6a40c08a09c",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_timber_pier_55/timber_pier_Harbor oak plank 3|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_089.tres",
+      "cffe85edeeffd126ef30c9b841685ab3d84cab129a95bbe4db4f26f46f39d200",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_timber_pier_64/timber_pier_Harbor oak plank 0|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_086.tres",
+      "afc2571507f64f38ce20558ce57fa6c325d2360f59a6d51c27e7b3e2e3e414e8",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_timber_pier_64/timber_pier_Harbor oak plank 1|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_087.tres",
+      "9aa0748dbac41b8326caecaf1140a0efa8c9cd060b3dcf968b3d965563eb2d85",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_timber_pier_64/timber_pier_Harbor oak plank 2|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_088.tres",
+      "5913c7070a4ebf39f05493edbc4119ae8ad15ad2e34f18d1dc82d6a40c08a09c",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_timber_pier_64/timber_pier_Harbor oak plank 3|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_089.tres",
+      "cffe85edeeffd126ef30c9b841685ab3d84cab129a95bbe4db4f26f46f39d200",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_timber_pier_73/timber_pier_Harbor oak plank 0|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_086.tres",
+      "afc2571507f64f38ce20558ce57fa6c325d2360f59a6d51c27e7b3e2e3e414e8",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_timber_pier_73/timber_pier_Harbor oak plank 1|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_087.tres",
+      "9aa0748dbac41b8326caecaf1140a0efa8c9cd060b3dcf968b3d965563eb2d85",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_timber_pier_73/timber_pier_Harbor oak plank 2|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_088.tres",
+      "5913c7070a4ebf39f05493edbc4119ae8ad15ad2e34f18d1dc82d6a40c08a09c",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "SurveyedHarborStudy22g/Harbor_timber_pier_73/timber_pier_Harbor oak plank 3|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_089.tres",
+      "cffe85edeeffd126ef30c9b841685ab3d84cab129a95bbe4db4f26f46f39d200",
+      "res://assets/reflection51b/clip_shader_005.tres"
+    ],
+    "Weather42b/Rainbow/spectrum_band_0|material_override": [
+      "res://assets/reflection51b/clip_material_104.tres",
+      "1284e7519e9cb2f94c68e9491076590be975264af12f7efd2c4f4968877bd12a",
+      "res://assets/reflection51b/clip_shader_008.tres"
+    ],
+    "Weather42b/Rainbow/spectrum_band_1|material_override": [
+      "res://assets/reflection51b/clip_material_105.tres",
+      "01e1577340d7e5fb341e47ad98b68a457f5ce5e6f517d780ebc5680636a78303",
+      "res://assets/reflection51b/clip_shader_008.tres"
+    ],
+    "Weather42b/Rainbow/spectrum_band_2|material_override": [
+      "res://assets/reflection51b/clip_material_106.tres",
+      "3dd1a5bcdb7898aa69efb4fd62eeb753fcd491b5a30e21f0590b71f19950a1e9",
+      "res://assets/reflection51b/clip_shader_008.tres"
+    ],
+    "Weather42b/Rainbow/spectrum_band_3|material_override": [
+      "res://assets/reflection51b/clip_material_107.tres",
+      "6713f210ef9a73a03513f85a8b5787ef3a1eef593b2fda181ad6eebf39485597",
+      "res://assets/reflection51b/clip_shader_008.tres"
+    ],
+    "Weather42b/Rainbow/spectrum_band_4|material_override": [
+      "res://assets/reflection51b/clip_material_108.tres",
+      "ac7987581ffef34f6abf5f917499c5f5663546342e6ed136937395a91bc746db",
+      "res://assets/reflection51b/clip_shader_008.tres"
+    ],
+    "Weather42b/Rainbow/spectrum_band_5|material_override": [
+      "res://assets/reflection51b/clip_material_109.tres",
+      "7fc2375412940dfad12354f5da1cf5b647f1de268fa1c47a2296dfcfa4dabdc0",
+      "res://assets/reflection51b/clip_shader_008.tres"
+    ],
+    "Weather42b/Rainbow/spectrum_band_6|material_override": [
+      "res://assets/reflection51b/clip_material_110.tres",
+      "1e2ed35a004501706410364d23cd2388390a8eb37b55fda584323791b5da0d34",
+      "res://assets/reflection51b/clip_shader_008.tres"
+    ],
+    "Weather42b/Rain|material_override": [
+      "res://assets/reflection51b/clip_material_102.tres",
+      "1cd07b40333074c7fab9a2a6113aaa7451f7c4cff750c64f696b8916f8506a47",
+      "res://assets/reflection51b/clip_shader_006.tres"
+    ],
+    "Weather42b/Snow|material_override": [
+      "res://assets/reflection51b/clip_material_103.tres",
+      "bcf75d86be192dcdc372c5093cd67e9c77922124da760f2f671dddaa9dcf0de0",
+      "res://assets/reflection51b/clip_shader_007.tres"
+    ],
+    "World/Cliffs/cliff_central_wall|surface_material": [
+      "res://assets/reflection51b/clip_material_005.tres",
+      "e860d3d2f96d2e059b14b715e9ff276b372bef9147334dd92f0ed0a83bcad9b7",
+      "res://assets/reflection51b/clip_shader_003.tres"
+    ],
+    "World/Cliffs/cliff_crown|surface_material": [
+      "res://assets/reflection51b/clip_material_005.tres",
+      "e860d3d2f96d2e059b14b715e9ff276b372bef9147334dd92f0ed0a83bcad9b7",
+      "res://assets/reflection51b/clip_shader_003.tres"
+    ],
+    "World/Cliffs/cliff_eastern_plateau|surface_material": [
+      "res://assets/reflection51b/clip_material_005.tres",
+      "e860d3d2f96d2e059b14b715e9ff276b372bef9147334dd92f0ed0a83bcad9b7",
+      "res://assets/reflection51b/clip_shader_003.tres"
+    ],
+    "World/Cliffs/cliff_front_columns|surface_material": [
+      "res://assets/reflection51b/clip_material_005.tres",
+      "e860d3d2f96d2e059b14b715e9ff276b372bef9147334dd92f0ed0a83bcad9b7",
+      "res://assets/reflection51b/clip_shader_003.tres"
+    ],
+    "World/Cliffs/cliff_shadow_buttress|surface_material": [
+      "res://assets/reflection51b/clip_material_005.tres",
+      "e860d3d2f96d2e059b14b715e9ff276b372bef9147334dd92f0ed0a83bcad9b7",
+      "res://assets/reflection51b/clip_shader_003.tres"
+    ],
+    "World/Cliffs/cliff_western_mesa|surface_material": [
+      "res://assets/reflection51b/clip_material_005.tres",
+      "e860d3d2f96d2e059b14b715e9ff276b372bef9147334dd92f0ed0a83bcad9b7",
+      "res://assets/reflection51b/clip_shader_003.tres"
+    ],
+    "World/Cliffs/cliff_western_slab|surface_material": [
+      "res://assets/reflection51b/clip_material_005.tres",
+      "e860d3d2f96d2e059b14b715e9ff276b372bef9147334dd92f0ed0a83bcad9b7",
+      "res://assets/reflection51b/clip_shader_003.tres"
+    ],
+    "World/LakeIslands49/foreground_rock/Meshes/foreground_rock_rockroot|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_030.tres",
+      "9840f65568b1e000fa9ed8b7097c6706841cfd1ded7628a10e12ef4d05546ff3",
+      "res://assets/reflection51b/clip_shader_004.tres"
+    ],
+    "World/LakeIslands49/foreground_rock/Meshes/foreground_rock_shoulder|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_031.tres",
+      "1b6d362fe868d51f3f8ca88ec6cbf8b1d3d80fa32894d0fae15d02fbc85ab500",
+      "res://assets/reflection51b/clip_shader_004.tres"
+    ],
+    "World/LakeIslands49/foreground_rock/Meshes/foreground_rock_wetshore_00|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_032.tres",
+      "1c81612f8b721fb0f704658f76d5872197ca2cb114d610434adbe04613e99fbd",
+      "res://assets/reflection51b/clip_shader_004.tres"
+    ],
+    "World/LakeIslands49/foreground_rock/Meshes/foreground_rock_wetshore_01|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_033.tres",
+      "1c81612f8b721fb0f704658f76d5872197ca2cb114d610434adbe04613e99fbd",
+      "res://assets/reflection51b/clip_shader_004.tres"
+    ],
+    "World/LakeIslands49/foreground_rock/Meshes/foreground_rock_wetshore_02|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_034.tres",
+      "1c81612f8b721fb0f704658f76d5872197ca2cb114d610434adbe04613e99fbd",
+      "res://assets/reflection51b/clip_shader_004.tres"
+    ],
+    "World/LakeIslands49/foreground_rock/Meshes/foreground_rock_wetshore_03|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_035.tres",
+      "1c81612f8b721fb0f704658f76d5872197ca2cb114d610434adbe04613e99fbd",
+      "res://assets/reflection51b/clip_shader_004.tres"
+    ],
+    "World/LakeIslands49/foreground_rock/Meshes/foreground_rock_wetshore_04|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_036.tres",
+      "1c81612f8b721fb0f704658f76d5872197ca2cb114d610434adbe04613e99fbd",
+      "res://assets/reflection51b/clip_shader_004.tres"
+    ],
+    "World/LakeIslands49/foreground_rock/Meshes/foreground_rock_wetshore_05|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_037.tres",
+      "1c81612f8b721fb0f704658f76d5872197ca2cb114d610434adbe04613e99fbd",
+      "res://assets/reflection51b/clip_shader_004.tres"
+    ],
+    "World/LakeIslands49/island_far_middle/Meshes/island_far_middle_rockroot|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_014.tres",
+      "9840f65568b1e000fa9ed8b7097c6706841cfd1ded7628a10e12ef4d05546ff3",
+      "res://assets/reflection51b/clip_shader_004.tres"
+    ],
+    "World/LakeIslands49/island_far_middle/Meshes/island_far_middle_shoulder|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_015.tres",
+      "1b6d362fe868d51f3f8ca88ec6cbf8b1d3d80fa32894d0fae15d02fbc85ab500",
+      "res://assets/reflection51b/clip_shader_004.tres"
+    ],
+    "World/LakeIslands49/island_far_middle/Meshes/island_far_middle_wetshore_00|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_016.tres",
+      "1c81612f8b721fb0f704658f76d5872197ca2cb114d610434adbe04613e99fbd",
+      "res://assets/reflection51b/clip_shader_004.tres"
+    ],
+    "World/LakeIslands49/island_far_middle/Meshes/island_far_middle_wetshore_01|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_017.tres",
+      "1c81612f8b721fb0f704658f76d5872197ca2cb114d610434adbe04613e99fbd",
+      "res://assets/reflection51b/clip_shader_004.tres"
+    ],
+    "World/LakeIslands49/island_far_middle/Meshes/island_far_middle_wetshore_02|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_018.tres",
+      "1c81612f8b721fb0f704658f76d5872197ca2cb114d610434adbe04613e99fbd",
+      "res://assets/reflection51b/clip_shader_004.tres"
+    ],
+    "World/LakeIslands49/island_far_middle/Meshes/island_far_middle_wetshore_03|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_019.tres",
+      "1c81612f8b721fb0f704658f76d5872197ca2cb114d610434adbe04613e99fbd",
+      "res://assets/reflection51b/clip_shader_004.tres"
+    ],
+    "World/LakeIslands49/island_far_middle/Meshes/island_far_middle_wetshore_04|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_020.tres",
+      "1c81612f8b721fb0f704658f76d5872197ca2cb114d610434adbe04613e99fbd",
+      "res://assets/reflection51b/clip_shader_004.tres"
+    ],
+    "World/LakeIslands49/island_far_middle/Meshes/island_far_middle_wetshore_05|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_021.tres",
+      "1c81612f8b721fb0f704658f76d5872197ca2cb114d610434adbe04613e99fbd",
+      "res://assets/reflection51b/clip_shader_004.tres"
+    ],
+    "World/LakeIslands49/island_near_left/Meshes/island_near_left_rockroot|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_006.tres",
+      "9840f65568b1e000fa9ed8b7097c6706841cfd1ded7628a10e12ef4d05546ff3",
+      "res://assets/reflection51b/clip_shader_004.tres"
+    ],
+    "World/LakeIslands49/island_near_left/Meshes/island_near_left_shoulder|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_007.tres",
+      "1b6d362fe868d51f3f8ca88ec6cbf8b1d3d80fa32894d0fae15d02fbc85ab500",
+      "res://assets/reflection51b/clip_shader_004.tres"
+    ],
+    "World/LakeIslands49/island_near_left/Meshes/island_near_left_wetshore_00|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_008.tres",
+      "1c81612f8b721fb0f704658f76d5872197ca2cb114d610434adbe04613e99fbd",
+      "res://assets/reflection51b/clip_shader_004.tres"
+    ],
+    "World/LakeIslands49/island_near_left/Meshes/island_near_left_wetshore_01|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_009.tres",
+      "1c81612f8b721fb0f704658f76d5872197ca2cb114d610434adbe04613e99fbd",
+      "res://assets/reflection51b/clip_shader_004.tres"
+    ],
+    "World/LakeIslands49/island_near_left/Meshes/island_near_left_wetshore_02|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_010.tres",
+      "1c81612f8b721fb0f704658f76d5872197ca2cb114d610434adbe04613e99fbd",
+      "res://assets/reflection51b/clip_shader_004.tres"
+    ],
+    "World/LakeIslands49/island_near_left/Meshes/island_near_left_wetshore_03|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_011.tres",
+      "1c81612f8b721fb0f704658f76d5872197ca2cb114d610434adbe04613e99fbd",
+      "res://assets/reflection51b/clip_shader_004.tres"
+    ],
+    "World/LakeIslands49/island_near_left/Meshes/island_near_left_wetshore_04|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_012.tres",
+      "1c81612f8b721fb0f704658f76d5872197ca2cb114d610434adbe04613e99fbd",
+      "res://assets/reflection51b/clip_shader_004.tres"
+    ],
+    "World/LakeIslands49/island_near_left/Meshes/island_near_left_wetshore_05|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_013.tres",
+      "1c81612f8b721fb0f704658f76d5872197ca2cb114d610434adbe04613e99fbd",
+      "res://assets/reflection51b/clip_shader_004.tres"
+    ],
+    "World/LakeIslands49/island_near_right/Meshes/island_near_right_rockroot|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_022.tres",
+      "9840f65568b1e000fa9ed8b7097c6706841cfd1ded7628a10e12ef4d05546ff3",
+      "res://assets/reflection51b/clip_shader_004.tres"
+    ],
+    "World/LakeIslands49/island_near_right/Meshes/island_near_right_shoulder|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_023.tres",
+      "1b6d362fe868d51f3f8ca88ec6cbf8b1d3d80fa32894d0fae15d02fbc85ab500",
+      "res://assets/reflection51b/clip_shader_004.tres"
+    ],
+    "World/LakeIslands49/island_near_right/Meshes/island_near_right_wetshore_00|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_024.tres",
+      "1c81612f8b721fb0f704658f76d5872197ca2cb114d610434adbe04613e99fbd",
+      "res://assets/reflection51b/clip_shader_004.tres"
+    ],
+    "World/LakeIslands49/island_near_right/Meshes/island_near_right_wetshore_01|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_025.tres",
+      "1c81612f8b721fb0f704658f76d5872197ca2cb114d610434adbe04613e99fbd",
+      "res://assets/reflection51b/clip_shader_004.tres"
+    ],
+    "World/LakeIslands49/island_near_right/Meshes/island_near_right_wetshore_02|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_026.tres",
+      "1c81612f8b721fb0f704658f76d5872197ca2cb114d610434adbe04613e99fbd",
+      "res://assets/reflection51b/clip_shader_004.tres"
+    ],
+    "World/LakeIslands49/island_near_right/Meshes/island_near_right_wetshore_03|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_027.tres",
+      "1c81612f8b721fb0f704658f76d5872197ca2cb114d610434adbe04613e99fbd",
+      "res://assets/reflection51b/clip_shader_004.tres"
+    ],
+    "World/LakeIslands49/island_near_right/Meshes/island_near_right_wetshore_04|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_028.tres",
+      "1c81612f8b721fb0f704658f76d5872197ca2cb114d610434adbe04613e99fbd",
+      "res://assets/reflection51b/clip_shader_004.tres"
+    ],
+    "World/LakeIslands49/island_near_right/Meshes/island_near_right_wetshore_05|surface_material_override/0": [
+      "res://assets/reflection51b/clip_material_029.tres",
+      "1c81612f8b721fb0f704658f76d5872197ca2cb114d610434adbe04613e99fbd",
+      "res://assets/reflection51b/clip_shader_004.tres"
+    ],
+    "World/Mountains/massif_blue_buttress|surface_material": [
+      "res://assets/reflection51b/clip_material_005.tres",
+      "e860d3d2f96d2e059b14b715e9ff276b372bef9147334dd92f0ed0a83bcad9b7",
+      "res://assets/reflection51b/clip_shader_003.tres"
+    ],
+    "World/Mountains/massif_cirque_wall|surface_material": [
+      "res://assets/reflection51b/clip_material_005.tres",
+      "e860d3d2f96d2e059b14b715e9ff276b372bef9147334dd92f0ed0a83bcad9b7",
+      "res://assets/reflection51b/clip_shader_003.tres"
+    ],
+    "World/Mountains/massif_east_foothill|surface_material": [
+      "res://assets/reflection51b/clip_material_005.tres",
+      "e860d3d2f96d2e059b14b715e9ff276b372bef9147334dd92f0ed0a83bcad9b7",
+      "res://assets/reflection51b/clip_shader_003.tres"
+    ],
+    "World/Mountains/massif_east_spur|surface_material": [
+      "res://assets/reflection51b/clip_material_005.tres",
+      "e860d3d2f96d2e059b14b715e9ff276b372bef9147334dd92f0ed0a83bcad9b7",
+      "res://assets/reflection51b/clip_shader_003.tres"
+    ],
+    "World/Mountains/massif_east_summit|surface_material": [
+      "res://assets/reflection51b/clip_material_005.tres",
+      "e860d3d2f96d2e059b14b715e9ff276b372bef9147334dd92f0ed0a83bcad9b7",
+      "res://assets/reflection51b/clip_shader_003.tres"
+    ],
+    "World/Mountains/massif_frost_crown|surface_material": [
+      "res://assets/reflection51b/clip_material_005.tres",
+      "e860d3d2f96d2e059b14b715e9ff276b372bef9147334dd92f0ed0a83bcad9b7",
+      "res://assets/reflection51b/clip_shader_003.tres"
+    ],
+    "World/Mountains/massif_needle_ridge|surface_material": [
+      "res://assets/reflection51b/clip_material_005.tres",
+      "e860d3d2f96d2e059b14b715e9ff276b372bef9147334dd92f0ed0a83bcad9b7",
+      "res://assets/reflection51b/clip_shader_003.tres"
+    ],
+    "World/Mountains/massif_valley_guard|surface_material": [
+      "res://assets/reflection51b/clip_material_005.tres",
+      "e860d3d2f96d2e059b14b715e9ff276b372bef9147334dd92f0ed0a83bcad9b7",
+      "res://assets/reflection51b/clip_shader_003.tres"
+    ],
+    "World/Mountains/massif_west_foothill|surface_material": [
+      "res://assets/reflection51b/clip_material_005.tres",
+      "e860d3d2f96d2e059b14b715e9ff276b372bef9147334dd92f0ed0a83bcad9b7",
+      "res://assets/reflection51b/clip_shader_003.tres"
+    ],
+    "World/Mountains/massif_west_spur|surface_material": [
+      "res://assets/reflection51b/clip_material_005.tres",
+      "e860d3d2f96d2e059b14b715e9ff276b372bef9147334dd92f0ed0a83bcad9b7",
+      "res://assets/reflection51b/clip_shader_003.tres"
+    ],
+    "World/Mountains/massif_west_summit|surface_material": [
+      "res://assets/reflection51b/clip_material_005.tres",
+      "e860d3d2f96d2e059b14b715e9ff276b372bef9147334dd92f0ed0a83bcad9b7",
+      "res://assets/reflection51b/clip_shader_003.tres"
+    ],
+    "World/Terrain/Ground_-1_-1|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-1_-2|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-1_0|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-1_1|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-2_-1|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-2_-2|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-2_0|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-2_1|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-2_2|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-2_3|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-3_-1|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-3_-2|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-3_-3|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-3_-5|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-3_0|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-3_1|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-3_2|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-3_3|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-3_4|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-3_5|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-4_-1|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-4_-2|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-4_-3|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-4_-4|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-4_-5|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-4_0|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-4_1|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-4_2|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-4_3|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-4_4|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-4_5|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-5_-1|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-5_-2|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-5_-3|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-5_-4|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-5_-5|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-5_-6|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-5_0|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-5_1|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-5_2|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-5_3|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-5_4|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-5_5|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-6_-1|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-6_-2|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-6_-3|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-6_-4|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-6_-5|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-6_-6|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-6_-7|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-6_-8|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-6_0|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-6_1|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-6_2|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-6_3|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-6_4|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_-6_5|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_0_-1|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_0_-2|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_1_-1|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_1_-2|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World/Terrain/Ground_1_-3|surface_material": [
+      "res://assets/reflection51b/clip_material_004.tres",
+      "4029ba17793e3cfc7d9799094ddf2083a6897a2943aa254eb34bba69278e516a",
+      "res://assets/reflection51b/clip_shader_002.tres"
+    ],
+    "World|stream_cloud_material": [
+      "res://assets/reflection51b/clip_material_113.tres",
+      "38bcdaa0181788a5a904f3512c063b8cb7dcdd0501a6d4fd732b500f8228b91e",
+      "res://assets/reflection51b/clip_shader_011.tres"
+    ],
+    "World|stream_terrain_material": [
+      "res://assets/reflection51b/clip_material_111.tres",
+      "78a9745f728b25f87523506142e206a73d53b42287b75db2ab04484c2aa1129f",
+      "res://assets/reflection51b/clip_shader_009.tres"
+    ],
+    "World|stream_world_material": [
+      "res://assets/reflection51b/clip_material_112.tres",
+      "db880c25f0035d44918e87d27be4aed119f94c1ef328f5094ac357a515910f65",
+      "res://assets/reflection51b/clip_shader_010.tres"
+    ],
+    "controller_exact_clipping_paths": [
+      "res://assets/reflection51b/clip_material_000.tres",
+      "res://assets/reflection51b/clip_material_001.tres",
+      "res://assets/reflection51b/clip_material_002.tres",
+      "res://assets/reflection51b/clip_material_003.tres",
+      "res://assets/reflection51b/clip_material_004.tres",
+      "res://assets/reflection51b/clip_material_005.tres",
+      "res://assets/reflection51b/clip_material_006.tres",
+      "res://assets/reflection51b/clip_material_007.tres",
+      "res://assets/reflection51b/clip_material_008.tres",
+      "res://assets/reflection51b/clip_material_009.tres",
+      "res://assets/reflection51b/clip_material_010.tres",
+      "res://assets/reflection51b/clip_material_011.tres",
+      "res://assets/reflection51b/clip_material_012.tres",
+      "res://assets/reflection51b/clip_material_013.tres",
+      "res://assets/reflection51b/clip_material_014.tres",
+      "res://assets/reflection51b/clip_material_015.tres",
+      "res://assets/reflection51b/clip_material_016.tres",
+      "res://assets/reflection51b/clip_material_017.tres",
+      "res://assets/reflection51b/clip_material_018.tres",
+      "res://assets/reflection51b/clip_material_019.tres",
+      "res://assets/reflection51b/clip_material_020.tres",
+      "res://assets/reflection51b/clip_material_021.tres",
+      "res://assets/reflection51b/clip_material_022.tres",
+      "res://assets/reflection51b/clip_material_023.tres",
+      "res://assets/reflection51b/clip_material_024.tres",
+      "res://assets/reflection51b/clip_material_025.tres",
+      "res://assets/reflection51b/clip_material_026.tres",
+      "res://assets/reflection51b/clip_material_027.tres",
+      "res://assets/reflection51b/clip_material_028.tres",
+      "res://assets/reflection51b/clip_material_029.tres",
+      "res://assets/reflection51b/clip_material_030.tres",
+      "res://assets/reflection51b/clip_material_031.tres",
+      "res://assets/reflection51b/clip_material_032.tres",
+      "res://assets/reflection51b/clip_material_033.tres",
+      "res://assets/reflection51b/clip_material_034.tres",
+      "res://assets/reflection51b/clip_material_035.tres",
+      "res://assets/reflection51b/clip_material_036.tres",
+      "res://assets/reflection51b/clip_material_037.tres",
+      "res://assets/reflection51b/clip_material_038.tres",
+      "res://assets/reflection51b/clip_material_039.tres",
+      "res://assets/reflection51b/clip_material_040.tres",
+      "res://assets/reflection51b/clip_material_041.tres",
+      "res://assets/reflection51b/clip_material_042.tres",
+      "res://assets/reflection51b/clip_material_043.tres",
+      "res://assets/reflection51b/clip_material_044.tres",
+      "res://assets/reflection51b/clip_material_045.tres",
+      "res://assets/reflection51b/clip_material_046.tres",
+      "res://assets/reflection51b/clip_material_047.tres",
+      "res://assets/reflection51b/clip_material_048.tres",
+      "res://assets/reflection51b/clip_material_049.tres",
+      "res://assets/reflection51b/clip_material_050.tres",
+      "res://assets/reflection51b/clip_material_051.tres",
+      "res://assets/reflection51b/clip_material_052.tres",
+      "res://assets/reflection51b/clip_material_053.tres",
+      "res://assets/reflection51b/clip_material_054.tres",
+      "res://assets/reflection51b/clip_material_055.tres",
+      "res://assets/reflection51b/clip_material_056.tres",
+      "res://assets/reflection51b/clip_material_057.tres",
+      "res://assets/reflection51b/clip_material_058.tres",
+      "res://assets/reflection51b/clip_material_059.tres",
+      "res://assets/reflection51b/clip_material_060.tres",
+      "res://assets/reflection51b/clip_material_061.tres",
+      "res://assets/reflection51b/clip_material_062.tres",
+      "res://assets/reflection51b/clip_material_063.tres",
+      "res://assets/reflection51b/clip_material_064.tres",
+      "res://assets/reflection51b/clip_material_065.tres",
+      "res://assets/reflection51b/clip_material_066.tres",
+      "res://assets/reflection51b/clip_material_067.tres",
+      "res://assets/reflection51b/clip_material_068.tres",
+      "res://assets/reflection51b/clip_material_069.tres",
+      "res://assets/reflection51b/clip_material_070.tres",
+      "res://assets/reflection51b/clip_material_071.tres",
+      "res://assets/reflection51b/clip_material_072.tres",
+      "res://assets/reflection51b/clip_material_073.tres",
+      "res://assets/reflection51b/clip_material_074.tres",
+      "res://assets/reflection51b/clip_material_075.tres",
+      "res://assets/reflection51b/clip_material_076.tres",
+      "res://assets/reflection51b/clip_material_077.tres",
+      "res://assets/reflection51b/clip_material_078.tres",
+      "res://assets/reflection51b/clip_material_079.tres",
+      "res://assets/reflection51b/clip_material_080.tres",
+      "res://assets/reflection51b/clip_material_081.tres",
+      "res://assets/reflection51b/clip_material_082.tres",
+      "res://assets/reflection51b/clip_material_083.tres",
+      "res://assets/reflection51b/clip_material_084.tres",
+      "res://assets/reflection51b/clip_material_085.tres",
+      "res://assets/reflection51b/clip_material_086.tres",
+      "res://assets/reflection51b/clip_material_087.tres",
+      "res://assets/reflection51b/clip_material_088.tres",
+      "res://assets/reflection51b/clip_material_089.tres",
+      "res://assets/reflection51b/clip_material_090.tres",
+      "res://assets/reflection51b/clip_material_091.tres",
+      "res://assets/reflection51b/clip_material_092.tres",
+      "res://assets/reflection51b/clip_material_093.tres",
+      "res://assets/reflection51b/clip_material_094.tres",
+      "res://assets/reflection51b/clip_material_095.tres",
+      "res://assets/reflection51b/clip_material_096.tres",
+      "res://assets/reflection51b/clip_material_097.tres",
+      "res://assets/reflection51b/clip_material_098.tres",
+      "res://assets/reflection51b/clip_material_099.tres",
+      "res://assets/reflection51b/clip_material_100.tres",
+      "res://assets/reflection51b/clip_material_101.tres",
+      "res://assets/reflection51b/clip_material_102.tres",
+      "res://assets/reflection51b/clip_material_103.tres",
+      "res://assets/reflection51b/clip_material_104.tres",
+      "res://assets/reflection51b/clip_material_105.tres",
+      "res://assets/reflection51b/clip_material_106.tres",
+      "res://assets/reflection51b/clip_material_107.tres",
+      "res://assets/reflection51b/clip_material_108.tres",
+      "res://assets/reflection51b/clip_material_109.tres",
+      "res://assets/reflection51b/clip_material_110.tres",
+      "res://assets/reflection51b/clip_material_111.tres",
+      "res://assets/reflection51b/clip_material_112.tres",
+      "res://assets/reflection51b/clip_material_113.tres"
+    ]
+  },
+  "new_bindings": [
+    {
+      "material_override": "res://assets/reflection51b/clip_material_005.tres",
+      "mesh_surface_material/0": "res://assets/reflection51b/clip_material_005.tres",
+      "owner": ".",
+      "path": "World/Mountains/massif_west_spur/Model/ridge_shoulders",
+      "surface_material_override/0": "res://assets/reflection51b/clip_material_005.tres"
+    },
+    {
+      "material_override": "res://assets/reflection51b/clip_material_005.tres",
+      "mesh_surface_material/0": "res://assets/reflection51b/clip_material_005.tres",
+      "owner": ".",
+      "path": "World/Mountains/massif_west_spur/Model/snow_cap",
+      "surface_material_override/0": "res://assets/reflection51b/clip_material_005.tres"
+    },
+    {
+      "material_override": "res://assets/reflection51b/clip_material_005.tres",
+      "mesh_surface_material/0": "res://assets/reflection51b/clip_material_005.tres",
+      "owner": ".",
+      "path": "World/Mountains/massif_west_spur/Model/snow_gully",
+      "surface_material_override/0": "res://assets/reflection51b/clip_material_005.tres"
+    },
+    {
+      "material_override": "res://assets/reflection51b/clip_material_005.tres",
+      "mesh_surface_material/0": "res://assets/reflection51b/clip_material_005.tres",
+      "owner": ".",
+      "path": "World/Mountains/massif_west_spur/Model/shore_rock_apron",
+      "surface_material_override/0": "res://assets/reflection51b/clip_material_005.tres"
+    }
+  ],
+  "next_gate": "Fresh process live ready bindings, actual collision and scatter support, saved-world waterline preservation, original1128/1129 plus side/back/near views; no visual pass implied.",
+  "original_root_mesh_fingerprint": "846bbeb7212e8c5965efb19b02c8c85e7c7d9c8c097ea10f6cb2a05ee61de8ab",
+  "prefab": "res://scenes/candidate53d-west/massif_west_spur.tscn",
+  "project_default_sha256": "e0771ee52a04182da1e63bcbc48822790a3fe0685cf3a502314778bbaea7fc93",
+  "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "scatter_changed": 120,
+  "scatter_groups": [
+    "World/Vegetation/oak_0_-3",
+    "World/Vegetation/poplar_0_-3",
+    "World/Vegetation/bush_0_-3",
+    "World/Vegetation/rock_0_-3"
+  ],
+  "scatter_untouched_in_six_tiles": 1141,
+  "scene_entered_live_tree": false,
+  "source_depth_proof": {
+    "all_added_component_footprints_on_saved_dry_land": true,
+    "dry_triangle_polygons": 23053.0,
+    "method": "Each baseline saved triangle clipped exactly at Y0, projected into XZ, and unioned using installed GEOS 3.13.1. Difference of every added closed component projection against union of actual dry support is measured. Coordinates serialized to 1nm for polygon operations. This proves no added component projects into a baseline water column, stronger than finite sampling. Crown original body edit is strictly at Y>355 and does not move XZ coordinates. Existing source bodies are retained with native float32 mapping tolerance; dense BVH highest-water comparison separately verifies zero change.",
+    "results": [
+      {
+        "all_new_component_projection_area_m2": 277565.0,
+        "continuous_planar_containment_pass": true,
+        "mountain": "massif_west_spur",
+        "projected_area_outside_actual_saved_y_ge_0_support_m2": 0.0
+      }
+    ]
+  },
+  "source_visual_gate": {
+    "observations": "Both parents/worker inspected all five actual source views: a connected double crest and descending snow gullies improve the former horizontal banding. Sharp apex and inherited green root remain visible. Only west is admitted for a saved native integration trial. Other three failed first sources remain excluded.",
+    "reference_visual_acceptance": false,
+    "reviewed_views": [
+      {
+        "path": "cloud-evidence/rim53d-source-preview-20261001T060759Z-o4Ypqq/images/massif_west_spur--back_north.png",
+        "sha256": "96e9032e1a14912e6a5b5f1239aa35ce70ef6c07bb73dbbb2c3b2b3c000214d4"
+      },
+      {
+        "path": "cloud-evidence/rim53d-source-preview-20261001T060759Z-o4Ypqq/images/massif_west_spur--front_lake_south.png",
+        "sha256": "74c40152fc1dcb4b532f07a7da66d081c50f83847371c7ddf913d6856fbae648"
+      },
+      {
+        "path": "cloud-evidence/rim53d-source-preview-20261001T060759Z-o4Ypqq/images/massif_west_spur--lake_facing_east.png",
+        "sha256": "7aec7ec2cc23e17cfdab0d5036e1ab8ef81bf13b38619ab25629404ef25ee8d5"
+      },
+      {
+        "path": "cloud-evidence/rim53d-source-preview-20261001T060759Z-o4Ypqq/images/massif_west_spur--outer_west.png",
+        "sha256": "b4166507fd7cb8d5ce8c5b27168403fd79ce3c0a0c7e376e183c91051126ca0a"
+      },
+      {
+        "path": "cloud-evidence/rim53d-source-preview-20261001T060759Z-o4Ypqq/images/massif_west_spur--top.png",
+        "sha256": "49fbd2c33e1c49102a32bd7cc039d6a10a95402871178a66f37215d387b5323d"
+      }
+    ],
+    "scope": "Limited west-only native integration trial, not reference or whole-GOAL visual acceptance",
+    "source_form_ready_for_integration": true,
+    "source_payload_sha256": "e9194892b8b880191148d5133b8d5c05b26efd400fdb89b933b91d7d99e5ad58",
+    "source_world_diagnostic": "cloud-evidence/rim53d-world-diagnostic-20261001T055458Z-XsQNSO/images/diagnostic-report.json"
+  },
+  "unaffected_graph_fingerprint": "6c68e77feb6a7864922b87e1352cd022a692691891e3d6e5402435d2c547d4c2",
+  "visual_acceptance": false,
+  "weather": {
+    "Rain": {
+      "buffer_sha256": "edbe1ada3ee4d40f693668f977032791a258b9b9d049cc5445886ceefa28cb37",
+      "canonical": "0d96410e1a7b49c7eaad18a48e42539882b20e7785edd3953c149a70c8e7e1ab",
+      "count": 1800,
+      "floats": 28800,
+      "valid": true
+    },
+    "Snow": {
+      "buffer_sha256": "3a91ac31e2d6c9b3f4bd55ba9ed291b883b130890cdd69d943b15560f32e45e9",
+      "canonical": "ac3a01165c20aab8dd83caaa685dd14de93281440852456c25a6cdccf076c2bf",
+      "count": 1200,
+      "floats": 19200,
+      "valid": true
+    }
+  }
+}
