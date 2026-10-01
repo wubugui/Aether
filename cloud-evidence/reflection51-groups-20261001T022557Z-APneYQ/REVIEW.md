@@ -1,0 +1,5 @@
+# Material-family isolation: native group02
+
+2026-10-01 02:28UTC. Godot4.5.1 Compatibility/llvmpipe, exit0,13 actual PNGs. Diagnostic instrumentation/restoration passed; not material preservation acceptance. Ocean-only and all custom ShaderMaterial copies cause0changedpixels. Native-only reproduces exactly the5previous points. Adaptive native feature isolation attributes all5 to3f17e41d2d8b4db1b376b27d02c1a44b8764f8d1e911907c62e065bcef0e3ca9 (group02:32CullBack, vertex-color, Lambert,roughness.96 materials). Other active native groups each0.
+
+Turning Sun.shadow_enabled off for both original and converted controls still gives5changedpixels at the same coordinates (maxdelta15); therefore the earlier shared-shadow-path hypothesis cannot by itself explain the discrepancy. Sun.shadow_enabled and original complete image were restored exactly. Final original A restores allRGBA bytes. No production shadows, original geometry, shader sources or saved50/51 scenes changed. Next discriminate native identical-resource RID copies from official un-injected conversion templates, rather than altering water/custom shaders or hiding the five-pixel result.
