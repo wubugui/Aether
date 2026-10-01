@@ -1,0 +1,50 @@
+{
+	"checks": [
+		{
+			"detail": [],
+			"label": "Every stored property and exact MultiMesh buffer unchanged except root script/opt-in export",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"label": "Effective inherited node order, owners, actual groups, persistent connections and child scene paths unchanged",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"label": "Only intended root subclass is active",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"label": "Native scene inheritance retains original56 coast and55 lake base",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"label": "Real renderer retains saved Rain buffers",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"label": "Real renderer retains saved Snow buffers",
+			"passed": true
+		}
+	],
+	"node_count": 11294,
+	"passed_provisional": true,
+	"scope": "Native inherited scene readback, no scene tree startup or saved world mutation",
+	"visual_acceptance": false,
+	"weather": {
+		"Rain": {
+			"count": 1800,
+			"floats": 28800,
+			"valid": true
+		},
+		"Snow": {
+			"count": 1200,
+			"floats": 19200,
+			"valid": true
+		}
+	}
+}

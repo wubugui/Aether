@@ -1,0 +1,164 @@
+{
+  "status": "CPU-only AABB proposal; NOT renderer, silhouette, mesh, occlusion or physics accepted",
+  "reference_size_actual": [
+    1672,
+    941
+  ],
+  "reference_sha256": "f705cb5de0664e9189bdc66b8ed116fc6db5f6ec1f541606df2b399dbde3aa4f",
+  "approximate_reference_ship_bounds_px": [
+    188,
+    266,
+    723,
+    692
+  ],
+  "measurement_uncertainty_px": 8,
+  "method": "Actual original pixels visually inspected, manually estimated full ship including flag/propeller; not automatic segmentation",
+  "camera_transform": [
+    0.685364723205566,
+    0.0,
+    0.72819995880127,
+    0.119988560676575,
+    0.986331343650818,
+    -0.112930417060852,
+    -0.718246459960938,
+    0.164774194359779,
+    0.675996720790863,
+    3000.0,
+    1150.0,
+    4300.0
+  ],
+  "camera_fov": 62,
+  "logical_aspect": 1.7768331562167907,
+  "ship_scale_unchanged": true,
+  "candidate_scene_changed": false,
+  "best_five": [
+    {
+      "yaw_degrees": 133.0,
+      "position_world": [
+        3015.976546596865,
+        1140.858781703137,
+        4266.185066803056
+      ],
+      "depth_m": 35.25,
+      "projected_aabb_uv": [
+        [
+          0.1146619724456519,
+          0.27863964401786057
+        ],
+        [
+          0.4301979570465177,
+          0.7392163732073083
+        ]
+      ],
+      "size_relative_error": [
+        -0.013876324761406322,
+        0.017377235134437452
+      ],
+      "score": 0.0004920619423705143
+    },
+    {
+      "yaw_degrees": 133.5,
+      "position_world": [
+        3015.999325462524,
+        1140.858082421128,
+        4266.194421610186
+      ],
+      "depth_m": 35.25,
+      "projected_aabb_uv": [
+        [
+          0.11482184767599385,
+          0.27867258616284646
+        ],
+        [
+          0.43003836475553825,
+          0.7391842778030736
+        ]
+      ],
+      "size_relative_error": [
+        -0.014874735407479855,
+        0.017233572378999362
+      ],
+      "score": 0.0005165517181122611
+    },
+    {
+      "yaw_degrees": 133.0,
+      "position_world": [
+        3016.061911875382,
+        1140.8179721638428,
+        4265.915890421286
+      ],
+      "depth_m": 35.5,
+      "projected_aabb_uv": [
+        [
+          0.11577289695830328,
+          0.28055864965978916
+        ],
+        [
+          0.42908683477844534,
+          0.7373032559900046
+        ]
+      ],
+      "size_relative_error": [
+        -0.020820740120976566,
+        0.008912381588574547
+      ],
+      "score": 0.0005214330327174771
+    },
+    {
+      "yaw_degrees": 132.5,
+      "position_world": [
+        3016.0403420956786,
+        1140.8301777369363,
+        4265.905016395831
+      ],
+      "depth_m": 35.5,
+      "projected_aabb_uv": [
+        [
+          0.11562542293492167,
+          0.27999232217949455
+        ],
+        [
+          0.42923405826845235,
+          0.7378548317819387
+        ]
+      ],
+      "size_relative_error": [
+        -0.019899741537077964,
+        0.01138174069460085
+      ],
+      "score": 0.0005321112120468732
+    },
+    {
+      "yaw_degrees": 132.5,
+      "position_world": [
+        3015.9548649204476,
+        1140.8709775450504,
+        4266.174076259326
+      ],
+      "depth_m": 35.25,
+      "projected_aabb_uv": [
+        [
+          0.11451344409096026,
+          0.2780636474043456
+        ],
+        [
+          0.43034621957258373,
+          0.7397771555363998
+        ]
+      ],
+      "size_relative_error": [
+        -0.012948783915374795,
+        0.019888289089819322
+      ],
+      "score": 0.0005576864373095393
+    }
+  ],
+  "requirements": [
+    "Verify actual same hull mesh/resource identity in52f before using prior AABB",
+    "AABB includes empty corners and does not certify silhouette fit",
+    "Runtime full mesh/propeller envelope, optical-cloud outside/inside, physical clearance required",
+    "A/A2 exact state and pixel restoration, F2 continuity before any saved preset",
+    "Keep all camera/ship changes out of58 geometry experiment"
+  ],
+  "rejected_initial_record": "proposal-rejected-wrong-reference-width.json used1664 not actual1672; preserved as invalid, not implementation"
+}

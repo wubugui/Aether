@@ -1,0 +1,7 @@
+# 59B exact-vertex pose research
+
+59A used a conservative box that substantially overstated visible silhouette. Its successful restoration test and visually rejected result remain intact. This version reads the saved52f SceneState without instantiating a world, exports all118original meshes/25669vertices and exact surface-array hashes, and verifies those same native bytes in the actual renderer before testing. Propeller phase is explicitly separate from unchanged native mesh bytes.
+
+The CPU search is a bounded grid, not a global optimality proof: yaw0..358 degrees in2-degree steps, depth22..70m in0.5m steps, fixed camera/FOV/ship scale and translation solving the estimated reference center. Convex-hull support is only a search acceleration; final candidates are checked against all unique source vertices. Best sampled pose yaw158degrees at(3011.01389,1141.62146,4273.73663) still has approximately width-11.2%/height+11.1% residual. This is a known limitation, not an acceptance threshold or reason to distort geometry. The exact future render decides whether the view is useful.
+
+The initial static helper wrongly omitted the ./ prefix and produced0meshes with exit0; rejected-static-export-00 preserves that invalid result, and the fixed helper rejects an empty export. A numerical transpose approximation failed the full-vertex reprojection assertion; the corrected CPU fit uses the actual affine inverse. Both rejected drafts remain for provenance. No scene or preset is saved, and no flight/F2 continuity is asserted for a temporary study pose.

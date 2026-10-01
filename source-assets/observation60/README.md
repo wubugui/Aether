@@ -1,0 +1,12 @@
+# Game60: switchable native1216 observation
+
+The saved independent candidate inherits Game56Coast, retaining its native coast and Game55 lake observations. Only the1216 navigation/observation ship position and yaw change, using the actual59B studied transform. Camera/FOV, ship geometry and scale remain original. improved_cloud_observation can be disabled; disabling returns the inherited56 pose. Normal heading, altitude and clearance are synchronized for F2 return. Default entry is unchanged. Failed52f/58 cloud research is not merged.
+
+Real official Godot4.5.1 Compatibility results:
+- Native scope:11294nodes, all stored properties/exact MultiMesh buffers, effective owners/groups/persistent connections equal56 except root script and opt-in export. Rain28800/Snow19200 floats valid.24.29s/781476KiB.
+- Captures:10actual images across1216 enabled/disabled/re-enabled plus preserved1128/1129. Ship/camera transform bytes match studied poses. Repeated main/raw reflection pixels exact. Complete padded boat/propeller solid clearance passes;1216 bounds separate from the25original cloud meshes. Two lake full boat/mirror frusta and actual water footprints pass.127.78s/1771768KiB.
+- Ordinary boot then physical-input F2/W/Space:12.2297825m, peak13.7500076m/s,2.133333simulatedseconds, stable brake, zero collisions/damage, all keys released. Start(3011.013916,1141.621460,4273.736816), stop(3022.353271,1141.621460,4278.317871).25m full-volume solid preflight, no heading jump, unchanged source. Threeactualframes inspected.51.52s/1653592KiB.
+
+The1216 boat is larger and more lateral. It remains too tall/narrow and dark compared with the reference; open deck/rigging, cloud hierarchy, distant scale, moon/light and storm depth remain unresolved. The inherited lakes retain real mirrors but coarse mountains, green banks and repeated large clouds remain wrong. All images are llvmpipe software rendering. No desktop keyboard-focus proof, complete cloud traversal, hardware GPU gate or wholeGOAL acceptance is claimed. Prior1344 pixel and350m route failures remain open.
+
+59A box-only placement and59B exact118mesh/25669vertex search remain separate. The conservative box overstated visible width;59B still has about-11%/+11% width/height residual. It was accepted only for a bounded observation improvement, never model resizing. Verification loads the native inherited candidate and does not save scenes.

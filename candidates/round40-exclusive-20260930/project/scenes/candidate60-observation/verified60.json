@@ -1,0 +1,44 @@
+{
+  "stage": "bounded_native_observation_complete",
+  "native_scope_passed": true,
+  "three_pose_capture_passed": true,
+  "ordinary_input_flight_passed": true,
+  "candidate_sha256": "8fcb0d24d503133a7e6ba29645291a73314c88b40ab447e0802937f1c802ac45",
+  "input_files": {
+    "/workspace/scratch/a29d03198654/Aether/candidates/round40-exclusive-20260930/project/scenes/candidate60-observation/Game60Observation.tscn": "8fcb0d24d503133a7e6ba29645291a73314c88b40ab447e0802937f1c802ac45",
+    "/workspace/scratch/a29d03198654/Aether/candidates/round40-exclusive-20260930/project/scripts/game60_observation.gd": "564734997383ce2dacdf41caa88087886838fae596f93702378b4bf17991e589",
+    "/workspace/scratch/a29d03198654/Aether/candidates/round40-exclusive-20260930/project/assets/observation60/cloud_observation_pose.json": "d8a440ded9b0f5ff3b781bc63a3b6233948b9a880ffd87a77048bf90ca9e5345",
+    "/workspace/scratch/a29d03198654/Aether/candidates/round40-exclusive-20260930/project/scenes/candidate56-coast/Game56Coast.tscn": "5c0cd84b860c409b647d970f123187e89b2e01099e159a43aff372d40ddbe8c5"
+  },
+  "proofs": {
+    "scope": {
+      "directory": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/observation60-scope-20261001T114951Z-0edetyeh",
+      "process_report": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/observation60-scope-20261001T114951Z-0edetyeh/process-report.json",
+      "sha256": "e275fe2fa008032528fecdfd6c4645252dc860b7787a9b6dc1360bc1bade6dd8",
+      "elapsed_seconds": 24.29378408800403,
+      "peak_rss_kib": 781476
+    },
+    "capture": {
+      "directory": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/observation60-capture-20261001T115015Z-95ypprk7",
+      "process_report": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/observation60-capture-20261001T115015Z-95ypprk7/process-report.json",
+      "sha256": "63bbc57c8c2e36868db3d0dfb869ad06bedbf1f97ee33a56b94636bc80564aa0",
+      "elapsed_seconds": 127.77507935500762,
+      "peak_rss_kib": 1771768
+    },
+    "flight": {
+      "directory": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/observation60-flight-20261001T115223Z-l9b5o74g",
+      "process_report": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/observation60-flight-20261001T115223Z-l9b5o74g/process-report.json",
+      "sha256": "2f56fa43927956b3fcdbbe1dc48875ca39461b72c819f1e3feb3acf47eaacdc8",
+      "elapsed_seconds": 51.521846642994205,
+      "peak_rss_kib": 1653592
+    }
+  },
+  "flight_metres": 12.2297825068235,
+  "native_world_base": "Game56Coast -> Game55Observation -> Game53dWest -> Game51b",
+  "cloud52f_or58_merged": false,
+  "default_changed": false,
+  "visual_acceptance": false,
+  "hardware_gpu_acceptance": false,
+  "full_goal_passed": false,
+  "independent_review_scope": "Parent viewed59B main study and allowed limited switchable composition candidate, not independent full60/GOAL acceptance"
+}
