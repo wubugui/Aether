@@ -1,0 +1,51 @@
+{
+  "flags": [
+    {
+      "json_encoding": "\"[P: (0.0, 0.0, 0.0), S: (0.0, 0.0, 0.0)]\"",
+      "native_type": "AABB",
+      "parsed_json_type": "String",
+      "property": "custom_aabb",
+      "same_native_type": false,
+      "typed_equal": false
+    },
+    {
+      "json_encoding": "\"..\"",
+      "native_type": "NodePath",
+      "parsed_json_type": "String",
+      "property": "skeleton",
+      "same_native_type": false,
+      "typed_equal": false
+    },
+    {
+      "json_encoding": "\"<Object#null>\"",
+      "native_type": "Object",
+      "parsed_json_type": "String",
+      "property": "material_overlay",
+      "same_native_type": false,
+      "typed_equal": false
+    },
+    {
+      "json_encoding": "1",
+      "native_type": "int",
+      "parsed_json_type": "float",
+      "property": "layers",
+      "same_native_type": false,
+      "typed_equal": false
+    },
+    {
+      "json_encoding": "0.0",
+      "native_type": "float",
+      "parsed_json_type": "float",
+      "property": "extra_cull_margin",
+      "same_native_type": true,
+      "typed_equal": true
+    }
+  ],
+  "game_loaded": false,
+  "isolated_json_type_loss_reproduced": true,
+  "native_repeat_equal": true,
+  "native_vs_json_equal": false,
+  "renderer_images_created": false,
+  "scene_saved": false,
+  "scope": "Proves loss of nativeVariant types duringJSON transport only; does not prove52f mesh/source equality or waive failed world audit."
+}
