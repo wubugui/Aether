@@ -1,0 +1,111 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+
+{
+  "A": {
+    "basis": [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "local_bytes": "12000000e333efbc000000000ee47f3f000000000000803f000000000ee47fbf00000000e333efbc00c08f44b5cd0c423cef8bc4",
+    "rotation": [
+      0.0,
+      1.60000002384186,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "component_restore": {
+    "basis": [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "local_bytes": "12000000e333efbc000000000ee47f3f000000000000803f000000000ee47fbf00000000e333efbc00c08f44b5cd0c423cef8bc4",
+    "rotation": [
+      0.0,
+      1.60000002384186,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "component_restore_exact_global": true,
+  "component_restore_exact_local": true,
+  "component_restore_exact_rotation": true,
+  "component_restore_exact_scale": true,
+  "matrix_restore": {
+    "basis": [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "local_bytes": "120000000000803f0000000000000000000000000000803f0000000000000000000000000000803f000000000000000000000000",
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "matrix_restore_exact_derived_scale": true,
+  "matrix_restore_exact_global": true,
+  "source": "Three nodes only; no PackedScene, game, assets or rendered viewport"
+}
+
+ERROR: Condition "!is_inside_tree()" is true. Returning: Transform3D()
+   at: get_global_transform (scene/3d/node_3d.cpp:621)
+   GDScript backtrace (most recent call first):
+       [0] _initialize (/workspace/scratch/a29d03198654/Aether/source-assets/near-ship53west/diagnose_transform_roundtrip.gd:14)
+ERROR: Condition "!is_inside_tree()" is true. Returning: Transform3D()
+   at: get_global_transform (scene/3d/node_3d.cpp:621)
+   GDScript backtrace (most recent call first):
+       [0] record (/workspace/scratch/a29d03198654/Aether/source-assets/near-ship53west/diagnose_transform_roundtrip.gd:4)
+       [1] _initialize (/workspace/scratch/a29d03198654/Aether/source-assets/near-ship53west/diagnose_transform_roundtrip.gd:19)
+ERROR: Condition "!is_inside_tree()" is true. Returning: Transform3D()
+   at: get_global_transform (scene/3d/node_3d.cpp:621)
+   GDScript backtrace (most recent call first):
+       [0] record (/workspace/scratch/a29d03198654/Aether/source-assets/near-ship53west/diagnose_transform_roundtrip.gd:4)
+       [1] _initialize (/workspace/scratch/a29d03198654/Aether/source-assets/near-ship53west/diagnose_transform_roundtrip.gd:22)
+ERROR: Condition "!is_inside_tree()" is true. Returning: Transform3D()
+   at: get_global_transform (scene/3d/node_3d.cpp:621)
+   GDScript backtrace (most recent call first):
+       [0] _initialize (/workspace/scratch/a29d03198654/Aether/source-assets/near-ship53west/diagnose_transform_roundtrip.gd:23)
+ERROR: Condition "!is_inside_tree()" is true. Returning: Transform3D()
+   at: get_global_transform (scene/3d/node_3d.cpp:621)
+   GDScript backtrace (most recent call first):
+       [0] record (/workspace/scratch/a29d03198654/Aether/source-assets/near-ship53west/diagnose_transform_roundtrip.gd:4)
+       [1] _initialize (/workspace/scratch/a29d03198654/Aether/source-assets/near-ship53west/diagnose_transform_roundtrip.gd:28)
+ERROR: Condition "!is_inside_tree()" is true. Returning: Transform3D()
+   at: get_global_transform (scene/3d/node_3d.cpp:621)
+   GDScript backtrace (most recent call first):
+       [0] _initialize (/workspace/scratch/a29d03198654/Aether/source-assets/near-ship53west/diagnose_transform_roundtrip.gd:29)
