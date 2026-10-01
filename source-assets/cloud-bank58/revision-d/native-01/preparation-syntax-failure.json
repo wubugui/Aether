@@ -1,0 +1,11 @@
+{
+  "status": "Failed static syntax check before any Blender startup",
+  "file": "verify58d.py",
+  "sha256_before_fix": "e571e9fa99d52bbfa75d6d29579b78f6380773b2538525d46badfad7f3c837f5",
+  "error": "SyntaxError: '(' was never closed",
+  "line": 120,
+  "cause": "Missing closing parenthesis on inventory_ok expression",
+  "old_line_123": "                  and np.array_equal(np.asarray(inventory['neutral_material_rgba']),np.asarray(settings['material_linear_rgba'],dtype=np.float32).astype(float))",
+  "proposed_change": "Append exactly one closing parenthesis to that expression",
+  "blender_started": false
+}

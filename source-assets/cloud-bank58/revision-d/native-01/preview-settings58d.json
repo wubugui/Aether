@@ -1,0 +1,37 @@
+{
+  "status": "Prepared camera and neutral material settings; not rendered or visually accepted",
+  "engine": "CYCLES",
+  "device": "CPU",
+  "threads": 2,
+  "samples": 8,
+  "denoising": false,
+  "material_linear_rgba": [0.56, 0.60, 0.67, 1.0],
+  "material_roughness": 0.9,
+  "world_linear_rgba": [0.37, 0.53, 0.7, 1.0],
+  "world_strength": 0.7,
+  "sun_energy": 2.5,
+  "sun_angle_radians": 0.15,
+  "sun_source_rotation_xyz_radians": [0.4, -0.6, -0.4],
+  "front": {
+    "name": "1216-source-front",
+    "resolution_xy": [836, 471],
+    "reference_resolution_xy": [1672, 941],
+    "pixel_aspect_xy": [1.0010626992561105, 1.0],
+    "camera_from_control_plan": true,
+    "maximum_projection_matrix_error": 0.000002,
+    "full_shape_framing_required": false,
+    "reason": "Preserve the actual 1216 camera; lower outline may be cropped. This reduced resolution is only isolated shape review."
+  },
+  "complete_shape_views": [
+    {"name": "back", "source_offset_xyz_m": [600, 2000, 450]},
+    {"name": "side", "source_offset_xyz_m": [2000, 60, 330]},
+    {"name": "underside", "source_offset_xyz_m": [690, -810, -1560]},
+    {"name": "top", "source_offset_xyz_m": [0, -390, 1950]}
+  ],
+  "complete_shape_resolution_xy": [836, 586],
+  "complete_shape_pixel_aspect_xy": [1.0, 1.0],
+  "complete_shape_max_normalized_span": 0.82,
+  "complete_shape_minimum_margin": 0.07,
+  "world_loaded": false,
+  "visual_acceptance": false
+}

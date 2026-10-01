@@ -1,0 +1,65 @@
+{
+  "state": "completed",
+  "complete": true,
+  "passed": true,
+  "run_id": "cloudbank58d-native-20261001T162033Z-y035f3f3",
+  "commands": [
+    {
+      "script": "build58d.py",
+      "argv": [
+        "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+        "--factory-startup",
+        "-b",
+        "-t",
+        "2",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-d/native-01/build58d.py",
+        "--",
+        "--out",
+        "/workspace/scratch/a29d03198654/Aether/cloud-evidence/cloudbank58d-native-20261001T162033Z-y035f3f3/outputs"
+      ],
+      "state": "completed",
+      "complete": true,
+      "actual_child_exit_code": 0
+    },
+    {
+      "script": "verify58d.py",
+      "argv": [
+        "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+        "--factory-startup",
+        "-b",
+        "-t",
+        "2",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-d/native-01/verify58d.py",
+        "--",
+        "--out",
+        "/workspace/scratch/a29d03198654/Aether/cloud-evidence/cloudbank58d-native-20261001T162033Z-y035f3f3/outputs"
+      ],
+      "state": "completed",
+      "complete": true,
+      "actual_child_exit_code": 0
+    }
+  ],
+  "world_loaded": false,
+  "rendered": false,
+  "visual_acceptance": false,
+  "actual_wrapper_exit_code": 0,
+  "error": null,
+  "limit_stop_reason": null,
+  "elapsed_seconds": 2.0723025370007235,
+  "peak_observed_rss_kib": 253784,
+  "actual_peak_child_rss_kib": 262260,
+  "inputs_unchanged": true,
+  "protected_c_unchanged": true,
+  "frozen_static_d_unchanged": true,
+  "source": {
+    "path": "source-assets/cloud-bank58/revision-d/native-01/fold58d.blend",
+    "sha256": "2b742986751183db994b5d803127c45eb44a02046cd85a17f689355d1c2540a2",
+    "bytes": 114775
+  }
+}
