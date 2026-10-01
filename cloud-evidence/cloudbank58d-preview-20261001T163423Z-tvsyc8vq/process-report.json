@@ -1,0 +1,197 @@
+{
+  "state": "completed",
+  "complete": true,
+  "passed": true,
+  "run_id": "cloudbank58d-preview-20261001T163423Z-tvsyc8vq",
+  "published_native_commit": "4508884a03596960a4ac1f31ff7f9b703ff473d1",
+  "expected_views": [
+    "1216-source-front",
+    "back",
+    "side",
+    "underside",
+    "top"
+  ],
+  "commands": [
+    {
+      "view": "1216-source-front",
+      "state": "completed",
+      "complete": true,
+      "argv": [
+        "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+        "--factory-startup",
+        "-b",
+        "-t",
+        "2",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-d/preview-01/render_one58d.py",
+        "--",
+        "--view",
+        "1216-source-front",
+        "--out",
+        "/workspace/scratch/a29d03198654/Aether/cloud-evidence/cloudbank58d-preview-20261001T163423Z-tvsyc8vq/images"
+      ],
+      "pid": 7,
+      "actual_child_exit_code": 0
+    },
+    {
+      "view": "back",
+      "state": "completed",
+      "complete": true,
+      "argv": [
+        "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+        "--factory-startup",
+        "-b",
+        "-t",
+        "2",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-d/preview-01/render_one58d.py",
+        "--",
+        "--view",
+        "back",
+        "--out",
+        "/workspace/scratch/a29d03198654/Aether/cloud-evidence/cloudbank58d-preview-20261001T163423Z-tvsyc8vq/images"
+      ],
+      "pid": 26,
+      "actual_child_exit_code": 0
+    },
+    {
+      "view": "side",
+      "state": "completed",
+      "complete": true,
+      "argv": [
+        "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+        "--factory-startup",
+        "-b",
+        "-t",
+        "2",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-d/preview-01/render_one58d.py",
+        "--",
+        "--view",
+        "side",
+        "--out",
+        "/workspace/scratch/a29d03198654/Aether/cloud-evidence/cloudbank58d-preview-20261001T163423Z-tvsyc8vq/images"
+      ],
+      "pid": 45,
+      "actual_child_exit_code": 0
+    },
+    {
+      "view": "underside",
+      "state": "completed",
+      "complete": true,
+      "argv": [
+        "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+        "--factory-startup",
+        "-b",
+        "-t",
+        "2",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-d/preview-01/render_one58d.py",
+        "--",
+        "--view",
+        "underside",
+        "--out",
+        "/workspace/scratch/a29d03198654/Aether/cloud-evidence/cloudbank58d-preview-20261001T163423Z-tvsyc8vq/images"
+      ],
+      "pid": 64,
+      "actual_child_exit_code": 0
+    },
+    {
+      "view": "top",
+      "state": "completed",
+      "complete": true,
+      "argv": [
+        "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+        "--factory-startup",
+        "-b",
+        "-t",
+        "2",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-d/preview-01/render_one58d.py",
+        "--",
+        "--view",
+        "top",
+        "--out",
+        "/workspace/scratch/a29d03198654/Aether/cloud-evidence/cloudbank58d-preview-20261001T163423Z-tvsyc8vq/images"
+      ],
+      "pid": 83,
+      "actual_child_exit_code": 0
+    }
+  ],
+  "images": [
+    {
+      "view": "1216-source-front",
+      "name": "cloudbank58d-1216-source-front.png",
+      "width": 836,
+      "height": 471,
+      "bytes": 349463,
+      "sha256": "afbfc1473989390b7710a56fab690668516daaf9c080f70d1c75dfd148575d48",
+      "png_crc_complete": true,
+      "decoded_scanline_bytes": 1181739
+    },
+    {
+      "view": "back",
+      "name": "cloudbank58d-back.png",
+      "width": 836,
+      "height": 586,
+      "bytes": 516706,
+      "sha256": "0683e96791bc378d08263acf80e9a851b4372f952372ed44d4dc49238e5d26ab",
+      "png_crc_complete": true,
+      "decoded_scanline_bytes": 1470274
+    },
+    {
+      "view": "side",
+      "name": "cloudbank58d-side.png",
+      "width": 836,
+      "height": 586,
+      "bytes": 509247,
+      "sha256": "1366fd4567d509dc89d013940bec366a0fe80378be2207405f9d7a39a557ddd4",
+      "png_crc_complete": true,
+      "decoded_scanline_bytes": 1470274
+    },
+    {
+      "view": "underside",
+      "name": "cloudbank58d-underside.png",
+      "width": 836,
+      "height": 586,
+      "bytes": 507637,
+      "sha256": "27ed19814b4daae954eb7ad2c0a1031fbadf6db9ab407d462ff7cf960076e8ce",
+      "png_crc_complete": true,
+      "decoded_scanline_bytes": 1470274
+    },
+    {
+      "view": "top",
+      "name": "cloudbank58d-top.png",
+      "width": 836,
+      "height": 586,
+      "bytes": 533569,
+      "sha256": "b29c05442293b5f264ac5336e84d099dca59d70db865653df8947bb2100e90bc",
+      "png_crc_complete": true,
+      "decoded_scanline_bytes": 1470274
+    }
+  ],
+  "world_loaded": false,
+  "visual_acceptance": false,
+  "actual_wrapper_exit_code": 0,
+  "limit_stop_reason": null,
+  "error": null,
+  "elapsed_seconds": 9.345048159000726,
+  "peak_observed_rss_kib": 275924,
+  "actual_peak_child_rss_kib": 293484,
+  "protected_inputs_unchanged": true,
+  "preview_inputs_unchanged": true,
+  "source_sha256": "2b742986751183db994b5d803127c45eb44a02046cd85a17f689355d1c2540a2",
+  "source_saved": false,
+  "partial_outputs_preserved": true,
+  "hardware_gpu_acceptance": false
+}
