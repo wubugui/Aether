@@ -1,0 +1,187 @@
+{
+  "status": "Native source and readback checked, five-face actual render pending",
+  "render_executed": false,
+  "world_changed": false,
+  "visual_acceptance": false,
+  "original_material_formula_retained": true,
+  "official_blender": "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+  "threads": 2,
+  "source": "source-assets/cloud-sea52h/cloud_sea52h_main.blend",
+  "export": "source-assets/cloud-sea52h/cloud_sea_52h_main_v0.glb",
+  "preview_entry": "source-assets/cloud-sea52h/run_preview_main52h.py",
+  "geometry": {
+    "status": "Geometry validation only; visual review pending",
+    "part": {
+      "name": "CloudSea52h_v0_main_crown",
+      "vertices": 969,
+      "triangles": 1934,
+      "bounds_blender_xyz": [
+        [
+          -689.8040771484375,
+          -619.2939453125,
+          -34.958316802978516
+        ],
+        [
+          -18.22970199584961,
+          -120.74344635009766,
+          321.4147644042969
+        ]
+      ],
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "components": [
+        969
+      ],
+      "signed_volume": 45434647.58650181,
+      "zero_area_triangles": 0,
+      "nonadjacent_triangle_intersections": 0,
+      "intersection_pairs": [],
+      "triangle_aspect_over_20": 0,
+      "triangle_aspect_max": 2.4727992723043015,
+      "dimensions_blender_xyz": [
+        671.5743751525879,
+        498.55049896240234,
+        356.3730812072754
+      ]
+    },
+    "axis_mapping": "Blender(x,y,z) -> glTF/Godot(x,z,-y)",
+    "axis_error_m": 0.0,
+    "attributes": [
+      "POSITION",
+      "NORMAL",
+      "COLOR_0"
+    ],
+    "editable_control_volume_meshes": 2,
+    "editable_region_reference_handles": 4,
+    "visual_acceptance": false,
+    "native_glb_readback": {
+      "imported_meshes": 1,
+      "max_vertex_distance_m": 0.0,
+      "all_oriented_triangle_vertex_correspondence_exact": true,
+      "imported_triangles": 1934,
+      "no_source_save": true
+    },
+    "editable_controls": [
+      {
+        "name": "CONTROL52h_v0_continuous_rounded_surface",
+        "vertices": 31390,
+        "faces": 31388,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "signed_volume": 45855495.78326516,
+        "editable_modifiers": []
+      },
+      {
+        "name": "CONTROL52h_v0_closed_polyhedral_cage",
+        "vertices": 63,
+        "faces": 106,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "signed_volume": 46764617.36900387,
+        "editable_modifiers": [
+          "BEVEL"
+        ]
+      }
+    ],
+    "native_blend_final_meshes": 1,
+    "source_hashes": {
+      "cloud_sea52h_main.blend": "31f8230023068f1653995e09312c5277c79630adfc8e5ce47f3cc2a1cc9aeaa9",
+      "cloud_sea_52h_main_v0.glb": "f8fa1cae4133f2b1564111c7bb5a062102c63f898ac2b7167b9404de097f918d"
+    }
+  },
+  "old_protected_hashes_still_exact": true,
+  "files": {
+    "run_preview_main52h.py": {
+      "bytes": 3889,
+      "sha256": "da14b98f5873ce899b9429de07f227db353f9e7ff30e6dd4d15eb2d03db60905"
+    },
+    "verify_main52h-process.json": {
+      "bytes": 389,
+      "sha256": "8621c685ec94a9011abc588a62a02b5385e958b40e7078d67b63433fb37675e1"
+    },
+    "model_main52h.py": {
+      "bytes": 5847,
+      "sha256": "3bd609b53203c109a2c3ba41611083a76f795f610f4d39ece28cd242e2807ab3"
+    },
+    "check_framing_main52h.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "geometry52h.json": {
+      "bytes": 2100,
+      "sha256": "d95a7e518eee393c73bbba94eef661ab2a5e143ebc2ccf7f6648840475ed82a6"
+    },
+    "README.md": {
+      "bytes": 4281,
+      "sha256": "698fc17f2ed7596b6988ae04520978949964b187d247657f7b560ba9f29fd52a"
+    },
+    "check_framing_main52h-process.json": {
+      "bytes": 395,
+      "sha256": "fb8717169f0f7539004d08fe5158a567ba0d215fceafdf8462c1bd8a3d0bce70"
+    },
+    "check_framing_main52h.stdout.log": {
+      "bytes": 740,
+      "sha256": "30abc89f1b2154f1373e3db9c8010ac796e226e7175e842339d6f872cb785379"
+    },
+    "camera-framing-preflight52h.json": {
+      "bytes": 1624,
+      "sha256": "a99f37afd45bcf1989730706c5f10c590adca742ae688d13fc36e209b21050ff"
+    },
+    "protected-sources52h.json": {
+      "bytes": 14015,
+      "sha256": "e35c66e73c333186876d784fbba57f0cf9e71d65f7e9888eff579075db617193"
+    },
+    "construction52h.json": {
+      "bytes": 557,
+      "sha256": "eb05ce962b7b43386b1013a1d4b0b11af665efbc3a53974b6ed00d1287bdfd21"
+    },
+    "prepare_layout52h.py": {
+      "bytes": 3188,
+      "sha256": "5de6d0633fca0f4a98505e8ad22c12b0fc8cd9748f0b92c44f4fa0e3d117817c"
+    },
+    "cloud_sea_52h_main_v0.glb": {
+      "bytes": 221680,
+      "sha256": "f8fa1cae4133f2b1564111c7bb5a062102c63f898ac2b7167b9404de097f918d"
+    },
+    "verify_main52h.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "preview_main52h.py": {
+      "bytes": 3319,
+      "sha256": "d2bd70e4c9efe6d6409ef73d837bb188d44cafde00162cb8db5f111faebec979"
+    },
+    "check_framing_main52h.py": {
+      "bytes": 3430,
+      "sha256": "eeaf4e1595d4e85d33c823d8c5724fab5c07ca1c0505201f26e2d0284732d011"
+    },
+    "model.stdout.log": {
+      "bytes": 730,
+      "sha256": "feac6f99fdb59b2754091d95f9e3245ab79164aa2e89912e47e7cbb3b3bfc85d"
+    },
+    "model.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cloud_sea52h_main.blend": {
+      "bytes": 2654908,
+      "sha256": "31f8230023068f1653995e09312c5277c79630adfc8e5ce47f3cc2a1cc9aeaa9"
+    },
+    "model-process.json": {
+      "bytes": 388,
+      "sha256": "0bb82e4c714f565bef9ed8fb1edcf3b2e9115afeb874845235ef8f8ea9a05780"
+    },
+    "layout52h.json": {
+      "bytes": 8685,
+      "sha256": "c066ed98023ca65bb244bd215d54eae9dac51e6f93ee82032e563933f03abcf6"
+    },
+    "verify_main52h.stdout.log": {
+      "bytes": 2361,
+      "sha256": "81dcaf6fb1d6206ff57d4518a5af52da224266c94f9a303e8c45535b6e52ebb9"
+    },
+    "verify_main52h.py": {
+      "bytes": 4903,
+      "sha256": "a31ada97908b18570925e57d963b44b41f0824b24ce534175db5804976f569d2"
+    }
+  }
+}

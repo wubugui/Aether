@@ -1,0 +1,63 @@
+{
+  "source_gpu_collision_authority": "Actual saved53 ArrayMesh.surface_get_arrays expanded indices transformed to world; exact float32 equality with original ConcavePolygonShape3D faces",
+  "baseline_sha256": "6ec57b72a831d6fa906a8d866c339909de55c9c42297a038dcd429b18d0c2b18",
+  "full_nonwater_land_shape_count": 1096,
+  "actual_intersecting_support_shapes": [
+    "/Skyfarer/World/Terrain/Ground_0_-3/Collision/Shape",
+    "/Skyfarer/World/Terrain/Ground_1_-3/Collision/Shape",
+    "/Skyfarer/World/Terrain/Ground_0_-2/Collision/Shape",
+    "/Skyfarer/World/Terrain/Ground_1_-2/Collision/Shape",
+    "/Skyfarer/World/Mountains/massif_needle_ridge/Collision/Shape",
+    "/Skyfarer/World/Mountains/massif_west_spur/Collision/Shape",
+    "/Skyfarer/World/Mountains/massif_cirque_wall/Collision/Shape",
+    "/Skyfarer/World/Mountains/massif_east_foothill/Collision/Shape",
+    "/Skyfarer/World/Mountains/massif_valley_guard/Collision/Shape"
+  ],
+  "all_modified_triangles_minimum_y_m": 2.924259662628174,
+  "unmodified_body_triangles_excluded_only_after_exact_float32_match": 451,
+  "method": "Every modified/new triangle in the full remodelled body and every snow layer is identified by exact original float32triangle comparison. All such projected triangle footprints must lie in the complete saved-scene nonwater collider dry union and have no positive-area intersection with19protected regions. Original wet/protected triangles are separately proven unchanged. GEOS continuous polygon union/difference/intersection, no finite point replacement for footprint checks.",
+  "results": [
+    {
+      "component": "remodeled_cirque_body",
+      "new_or_modified_triangles": 411,
+      "modified_projection_area_m2": 107613.28357309462,
+      "outside_actual_saved_dry_union_m2": 1.4217166778255163e-25,
+      "overlap_with_actual_protected_rectangles_m2": 0.0,
+      "distance_to_protected_rectangles_m": 3.0823329912834203,
+      "dry_containment_pass": true,
+      "protected_continuous_exclusion_pass": true
+    },
+    {
+      "component": "snow_gully_a",
+      "new_or_modified_triangles": 360,
+      "modified_projection_area_m2": 23535.812334843646,
+      "outside_actual_saved_dry_union_m2": 1.2924697071141057e-26,
+      "overlap_with_actual_protected_rectangles_m2": 0.0,
+      "distance_to_protected_rectangles_m": 65.56690978999995,
+      "dry_containment_pass": true,
+      "protected_continuous_exclusion_pass": true
+    },
+    {
+      "component": "snow_gully_b",
+      "new_or_modified_triangles": 284,
+      "modified_projection_area_m2": 13829.037985538382,
+      "outside_actual_saved_dry_union_m2": 2.5849394142282115e-26,
+      "overlap_with_actual_protected_rectangles_m2": 0.0,
+      "distance_to_protected_rectangles_m": 52.26776123000002,
+      "dry_containment_pass": true,
+      "protected_continuous_exclusion_pass": true
+    },
+    {
+      "component": "upper_snow_basin",
+      "new_or_modified_triangles": 48,
+      "modified_projection_area_m2": 1184.7051715141954,
+      "outside_actual_saved_dry_union_m2": 2.5849394142282115e-26,
+      "overlap_with_actual_protected_rectangles_m2": 0.0,
+      "distance_to_protected_rectangles_m": 59.31726074200003,
+      "dry_containment_pass": true,
+      "protected_continuous_exclusion_pass": true
+    }
+  ],
+  "all_new_modified_footprints_dry": true,
+  "all_protected_regions_continuously_excluded": true
+}

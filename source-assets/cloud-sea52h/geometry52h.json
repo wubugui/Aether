@@ -1,0 +1,80 @@
+{
+  "status": "Geometry validation only; visual review pending",
+  "part": {
+    "name": "CloudSea52h_v0_main_crown",
+    "vertices": 969,
+    "triangles": 1934,
+    "bounds_blender_xyz": [
+      [
+        -689.8040771484375,
+        -619.2939453125,
+        -34.958316802978516
+      ],
+      [
+        -18.22970199584961,
+        -120.74344635009766,
+        321.4147644042969
+      ]
+    ],
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "components": [
+      969
+    ],
+    "signed_volume": 45434647.58650181,
+    "zero_area_triangles": 0,
+    "nonadjacent_triangle_intersections": 0,
+    "intersection_pairs": [],
+    "triangle_aspect_over_20": 0,
+    "triangle_aspect_max": 2.4727992723043015,
+    "dimensions_blender_xyz": [
+      671.5743751525879,
+      498.55049896240234,
+      356.3730812072754
+    ]
+  },
+  "axis_mapping": "Blender(x,y,z) -> glTF/Godot(x,z,-y)",
+  "axis_error_m": 0.0,
+  "attributes": [
+    "POSITION",
+    "NORMAL",
+    "COLOR_0"
+  ],
+  "editable_control_volume_meshes": 2,
+  "editable_region_reference_handles": 4,
+  "visual_acceptance": false,
+  "native_glb_readback": {
+    "imported_meshes": 1,
+    "max_vertex_distance_m": 0.0,
+    "all_oriented_triangle_vertex_correspondence_exact": true,
+    "imported_triangles": 1934,
+    "no_source_save": true
+  },
+  "editable_controls": [
+    {
+      "name": "CONTROL52h_v0_continuous_rounded_surface",
+      "vertices": 31390,
+      "faces": 31388,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 45855495.78326516,
+      "editable_modifiers": []
+    },
+    {
+      "name": "CONTROL52h_v0_closed_polyhedral_cage",
+      "vertices": 63,
+      "faces": 106,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 46764617.36900387,
+      "editable_modifiers": [
+        "BEVEL"
+      ]
+    }
+  ],
+  "native_blend_final_meshes": 1,
+  "source_hashes": {
+    "cloud_sea52h_main.blend": "31f8230023068f1653995e09312c5277c79630adfc8e5ce47f3cc2a1cc9aeaa9",
+    "cloud_sea_52h_main_v0.glb": "f8fa1cae4133f2b1564111c7bb5a062102c63f898ac2b7167b9404de097f918d"
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "blend_sha256": "b82a555b84a51ee542918142a4586604c9e7bb611687db712ab4377e6375c66b",
+  "method": "Fresh Blender4.5.14 reopen, actual mesh loop triangles in native source coordinates. Per component exhaustive all-pairs AABB broad phase (native BVH overlaps also reported but never used to exclude pairs); float64 arithmetic on the exact native float32 input coordinates for normalized-plane separation, edge/plane and barycentric containment for noncoplanar triangles, convex2Dclipping for coplanar triangles. Ordinary geometric shared-edge/shared-vertex intersections excluded only when the entire intersection stays on that boundary. Positive-area coplanar overlap or a non-boundary crossing segment is a self-intersection. Components are checked independently; intentional layer/root intersections between distinct objects are not counted.",
+  "distance_tolerance_m": 1e-05,
+  "coplanar_projected_area_tolerance_m2": 1e-07,
+  "components": [
+    {
+      "component": "remodeled_cirque_body",
+      "actual_loop_triangles": 862,
+      "native_bvh_overlap_pairs": 0,
+      "exhaustive_aabb_candidate_pairs": 9173,
+      "plane_separated_pairs": 2548,
+      "ordinary_shared_vertex_or_edge_intersections": 6392,
+      "self_crossing_count": 0,
+      "self_crossings": [],
+      "other_zero_area_contacts_or_disjoint_coplanar_candidates": [
+        {
+          "triangles": [
+            537,
+            738
+          ],
+          "type": "coplanar_zero_area_contact_or_disjoint"
+        },
+        {
+          "triangles": [
+            542,
+            835
+          ],
+          "type": "coplanar_zero_area_contact_or_disjoint"
+        },
+        {
+          "triangles": [
+            543,
+            834
+          ],
+          "type": "coplanar_zero_area_contact_or_disjoint"
+        },
+        {
+          "triangles": [
+            635,
+            812
+          ],
+          "type": "coplanar_zero_area_contact_or_disjoint"
+        }
+      ],
+      "no_self_crossing": true
+    },
+    {
+      "component": "snow_gully_a",
+      "actual_loop_triangles": 360,
+      "native_bvh_overlap_pairs": 0,
+      "exhaustive_aabb_candidate_pairs": 6143,
+      "plane_separated_pairs": 2538,
+      "ordinary_shared_vertex_or_edge_intersections": 3136,
+      "self_crossing_count": 0,
+      "self_crossings": [],
+      "other_zero_area_contacts_or_disjoint_coplanar_candidates": [],
+      "no_self_crossing": true
+    },
+    {
+      "component": "snow_gully_b",
+      "actual_loop_triangles": 284,
+      "native_bvh_overlap_pairs": 0,
+      "exhaustive_aabb_candidate_pairs": 5294,
+      "plane_separated_pairs": 2262,
+      "ordinary_shared_vertex_or_edge_intersections": 2588,
+      "self_crossing_count": 0,
+      "self_crossings": [],
+      "other_zero_area_contacts_or_disjoint_coplanar_candidates": [],
+      "no_self_crossing": true
+    },
+    {
+      "component": "upper_snow_basin",
+      "actual_loop_triangles": 48,
+      "native_bvh_overlap_pairs": 0,
+      "exhaustive_aabb_candidate_pairs": 482,
+      "plane_separated_pairs": 134,
+      "ordinary_shared_vertex_or_edge_intersections": 306,
+      "self_crossing_count": 0,
+      "self_crossings": [],
+      "other_zero_area_contacts_or_disjoint_coplanar_candidates": [],
+      "no_self_crossing": true
+    }
+  ],
+  "positive_negative_controls": [
+    {
+      "component": "QA_coplanar_overlap",
+      "actual_loop_triangles": 2,
+      "native_bvh_overlap_pairs": 0,
+      "exhaustive_aabb_candidate_pairs": 1,
+      "plane_separated_pairs": 0,
+      "ordinary_shared_vertex_or_edge_intersections": 0,
+      "self_crossing_count": 1,
+      "self_crossings": [
+        {
+          "triangles": [
+            0,
+            1
+          ],
+          "type": "coplanar_positive_area_overlap",
+          "projected_overlap_area_m2": 0.5
+        }
+      ],
+      "other_zero_area_contacts_or_disjoint_coplanar_candidates": [],
+      "no_self_crossing": false
+    },
+    {
+      "component": "QA_disjoint",
+      "actual_loop_triangles": 2,
+      "native_bvh_overlap_pairs": 0,
+      "exhaustive_aabb_candidate_pairs": 0,
+      "plane_separated_pairs": 0,
+      "ordinary_shared_vertex_or_edge_intersections": 0,
+      "self_crossing_count": 0,
+      "self_crossings": [],
+      "other_zero_area_contacts_or_disjoint_coplanar_candidates": [],
+      "no_self_crossing": true
+    },
+    {
+      "component": "QA_noncoplanar_crossing",
+      "actual_loop_triangles": 2,
+      "native_bvh_overlap_pairs": 1,
+      "exhaustive_aabb_candidate_pairs": 1,
+      "plane_separated_pairs": 0,
+      "ordinary_shared_vertex_or_edge_intersections": 0,
+      "self_crossing_count": 1,
+      "self_crossings": [
+        {
+          "triangles": [
+            0,
+            1
+          ],
+          "type": "noncoplanar_crossing_segment",
+          "length_m": 1.0,
+          "points_local": [
+            [
+              0.0,
+              -0.5,
+              0.0
+            ],
+            [
+              0.0,
+              0.5,
+              0.0
+            ]
+          ]
+        }
+      ],
+      "other_zero_area_contacts_or_disjoint_coplanar_candidates": [],
+      "no_self_crossing": false
+    },
+    {
+      "component": "QA_shared_edge",
+      "actual_loop_triangles": 2,
+      "native_bvh_overlap_pairs": 0,
+      "exhaustive_aabb_candidate_pairs": 1,
+      "plane_separated_pairs": 0,
+      "ordinary_shared_vertex_or_edge_intersections": 1,
+      "self_crossing_count": 0,
+      "self_crossings": [],
+      "other_zero_area_contacts_or_disjoint_coplanar_candidates": [],
+      "no_self_crossing": true
+    }
+  ],
+  "all_controls_expected": true,
+  "all4_components_no_self_crossing": true
+}

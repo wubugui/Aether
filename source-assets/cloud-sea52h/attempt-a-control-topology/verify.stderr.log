@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-sea52h/verify_main52h.py", line 62, in <module>
+    assert len(controls)==2 and all(c['boundary_edges']==0 and c['nonmanifold_edges']==0 and c['signed_volume']>0 for c in controls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+Error: script failed, file: '/workspace/scratch/a29d03198654/Aether/source-assets/cloud-sea52h/verify_main52h.py', exiting.

@@ -1,0 +1,51 @@
+{
+  "scope": "One-view phase/material lifecycle diagnostic of unchanged, visually rejected54v1 source. Never shape acceptance.",
+  "child_returncode": 0,
+  "wrapper_exit_code": 1,
+  "elapsed_seconds": 67.92664169199998,
+  "frozen_inputs_unchanged": true,
+  "log_errors": [
+    {
+      "received_elapsed_s": 66.38118890300393,
+      "stream": "stderr",
+      "stream_phase": "cleanup.before_queue_free",
+      "line": "ERROR: Parameter \"material\" is null."
+    },
+    {
+      "received_elapsed_s": 66.38335986601305,
+      "stream": "stderr",
+      "stream_phase": "cleanup.before_queue_free",
+      "line": "ERROR: Parameter \"material\" is null."
+    },
+    {
+      "received_elapsed_s": 66.38428676400508,
+      "stream": "stderr",
+      "stream_phase": "cleanup.before_queue_free",
+      "line": "ERROR: Parameter \"material\" is null."
+    },
+    {
+      "received_elapsed_s": 66.38432912800636,
+      "stream": "stderr",
+      "stream_phase": "cleanup.before_queue_free",
+      "line": "ERROR: Parameter \"material\" is null."
+    }
+  ],
+  "warnings": [
+    {
+      "received_elapsed_s": 0.18018244999984745,
+      "stream": "stderr",
+      "stream_phase": "process_start",
+      "line": "WARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver."
+    }
+  ],
+  "unexpected_warnings": [],
+  "gate_failures": [
+    "Godot ERROR/SCRIPT ERROR/resource leak in raw logs"
+  ],
+  "stream_end_phases": {
+    "stdout": "quit.requested",
+    "stderr": "quit.requested"
+  },
+  "phase_attribution": "Within-stream stderr markers bracket GLES errors. Cross-stream reception timestamps are evidence of receipt order, not assumed render causality.",
+  "visual_acceptance": false
+}

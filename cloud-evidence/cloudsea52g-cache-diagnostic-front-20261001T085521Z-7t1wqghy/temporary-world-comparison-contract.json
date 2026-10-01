@@ -1,0 +1,34 @@
+{
+  "status": "Prepared only; wait for actual complete-combination five-face review before any trial",
+  "baseline_scene": "candidates/round40-exclusive-20260930/project/scenes/candidate52f/Game52f.tscn",
+  "baseline_sha256": "201f667747406b1414a298a6b5433ac1550d8b447dff8f6cb6823d94d2acbd7c",
+  "target_count": 10,
+  "target_paths": [
+    "SkyRegion39/CloudSea_-2_-2/CloudSea52e_v0_main_ridge",
+    "SkyRegion39/CloudSea_-2_1/CloudSea52e_v0_main_ridge",
+    "SkyRegion39/CloudSea_-1_-2/CloudSea52e_v0_main_ridge",
+    "SkyRegion39/CloudSea_-1_1/CloudSea52e_v0_main_ridge",
+    "SkyRegion39/CloudSea_0_-2/CloudSea52e_v0_main_ridge",
+    "SkyRegion39/CloudSea_0_1/CloudSea52e_v0_main_ridge",
+    "SkyRegion39/CloudSea_1_-2/CloudSea52e_v0_main_ridge",
+    "SkyRegion39/CloudSea_1_1/CloudSea52e_v0_main_ridge",
+    "SkyRegion39/CloudSea_2_-2/CloudSea52e_v0_main_ridge",
+    "SkyRegion39/CloudSea_2_1/CloudSea52e_v0_main_ridge"
+  ],
+  "only_expected_scene_change": "mesh geometry at these ten existing MeshInstance3D paths",
+  "replacement_glb": "source-assets/cloud-sea52g/revision-d-combination/cloud_sea_52g_d_main_only.glb",
+  "replacement_glb_sha256": "a399fac8726ab341757a7249d17773e14a28002337eb86ae5e159d9436438624",
+  "replacement_glb_node": "CloudSea52g_d_v0_main_crown",
+  "replacement_mesh_triangles": 2200,
+  "preserve": [
+    "all25 root transforms",
+    "target node paths, transforms and ownership",
+    "all existing material override and surface material behavior",
+    "other115 CloudSea meshes",
+    "all unrelated nodes and properties",
+    "all52f sources and savedGame52f"
+  ],
+  "do_not_use": "Rejected first52g offset shoulder or low tail",
+  "world_scene_modified": false,
+  "visual_acceptance": false
+}

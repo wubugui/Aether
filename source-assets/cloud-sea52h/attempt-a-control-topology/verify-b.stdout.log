@@ -1,0 +1,82 @@
+16:55:15 | INFO: Data are loaded, start creating Blender stuff
+16:55:15 | INFO: Blender create Mesh node 52h_unstructured_closed_macro_faces.001
+16:55:15 | INFO: glTF import finished in 0.01s
+Blender 4.5.14 LTS (hash 62c1db4208e8 built 2026-09-15 01:31:19)
+Read blend: "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-sea52h/cloud_sea52h_main.blend"
+{
+  "status": "Geometry validation only; visual review pending",
+  "part": {
+    "name": "CloudSea52h_v0_main_crown",
+    "vertices": 902,
+    "triangles": 1800,
+    "bounds_blender_xyz": [
+      [
+        -696.819580078125,
+        -626.8319702148438,
+        -35.52900695800781
+      ],
+      [
+        -5.525494575500488,
+        -113.04285430908203,
+        327.6466369628906
+      ]
+    ],
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "components": [
+      902
+    ],
+    "signed_volume": 46678355.631644845,
+    "zero_area_triangles": 0,
+    "nonadjacent_triangle_intersections": 0,
+    "intersection_pairs": [],
+    "triangle_aspect_over_20": 83,
+    "triangle_aspect_max": 314.36345624785724
+  },
+  "axis_mapping": "Blender(x,y,z) -> glTF/Godot(x,z,-y)",
+  "axis_error_m": 0.0,
+  "attributes": [
+    "POSITION",
+    "NORMAL",
+    "COLOR_0"
+  ],
+  "editable_control_volume_meshes": 2,
+  "editable_region_reference_handles": 4,
+  "visual_acceptance": false,
+  "native_glb_readback": {
+    "imported_meshes": 1,
+    "max_vertex_distance_m": 0.0,
+    "all_oriented_triangle_vertex_correspondence_exact": true,
+    "imported_triangles": 1800,
+    "no_source_save": true
+  },
+  "editable_controls": [
+    {
+      "name": "CONTROL52h_v0_continuous_rounded_surface",
+      "vertices": 33112,
+      "faces": 33110,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "signed_volume": 46691248.3161899,
+      "editable_modifiers": []
+    },
+    {
+      "name": "CONTROL52h_v0_closed_polyhedral_cage",
+      "vertices": 63,
+      "faces": 110,
+      "boundary_edges": 2,
+      "nonmanifold_edges": 8,
+      "signed_volume": 47222504.29059125,
+      "editable_modifiers": [
+        "BEVEL"
+      ]
+    }
+  ],
+  "native_blend_final_meshes": 1,
+  "source_hashes": {
+    "cloud_sea52h_main.blend": "78777b821d939070dd71b13a8cca279c395e5a94ea916558e2c9607994f8e9d2",
+    "cloud_sea_52h_main_v0.glb": "629fd8d40ff54b09ec6e1bf303bb13e29d2b0e9096e4233c681d2d8b376b70ec"
+  }
+}
+
+Blender quit
