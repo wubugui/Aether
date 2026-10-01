@@ -1,0 +1,789 @@
+{
+  "status": "Geometry checks only; visual acceptance pending",
+  "old_52e_and_first_saddle_mesh_and_control_fingerprints_unchanged": true,
+  "retained_count": 107,
+  "old_fingerprints": {
+    "CloudSea52e_v0_low_tail": "86acf663007f4196b0fc2198704500a7766f6f5bb3391e16851e3f46778f99fe",
+    "CloudSea52e_v0_main_ridge": "73892a2a5b07c8aa74b7b5d82f63eb69fc431f4c292f02df7624013a0b1e8902",
+    "CloudSea52e_v0_offset_shoulder": "eb50defd2b5fb7d1ec4fc8bc4b657f9bf2c96dd6c836db770ace412621cc9e8c",
+    "CloudSea52e_v1_low_tail": "7e49a358b111d1dd806ee9d50053358eb5d5e4ca120c49f91b65550dd688b9a1",
+    "CloudSea52e_v1_main_ridge": "0fabeb586bdba4b45eef06940a852fa88fabc24ed0f0b5cd39b5a764c80a9a30",
+    "CloudSea52e_v1_offset_shoulder": "c1bb6ddf705c7043dc1dea125fdea1264e7b9738dd9acd454409cec4daaf2745",
+    "CloudSea52e_v2_low_tail": "97398dbc7d90ebf33a8226374ad194c988fcde211b76297fc6a02e444b895137",
+    "CloudSea52e_v2_main_ridge": "309d9573f87f84156e2d522880479b57a6f38cec5a9f020f0c0db769e8eff94d",
+    "CloudSea52e_v2_offset_shoulder": "1d67414209cf9447ef983d06191bbb4ecd021f3485f198a46d878696c49f21ec",
+    "CloudSea52f_v0_low_saddle": "6d612c228c7495342a1a958cea3ec38f8301cd0ae0edfa624a5e95e2c7be2318",
+    "CONTROL52e_v0_p0_0": "ec046f9861e78a6d12059457c28bd5077668a3e942841fbe879f4fa0f7562de4",
+    "CONTROL52e_v0_p0_1": "0f4dc61f555d76f02665490edf5f5dd39cb002aa86a05ab6c04b5bb0bff1ab20",
+    "CONTROL52e_v0_p0_2": "3466e2de6a4d549f62f81453fe19af718fff132b339f62032c169b51140a3656",
+    "CONTROL52e_v0_p0_3": "cd0f6e1f2f1332474c71bfe1c2071b7f8a3de9f870e4a1c2aaaf32467c2118fd",
+    "CONTROL52e_v0_p0_4": "7e9e6f24f4719dcbc046eb2252ef1b7f2d5aeff354e423774bd1775eb55a9763",
+    "CONTROL52e_v0_p0_5": "e56a4a275f0549d40b2a00afea9130f41821c74d7bdd65c7cc9e119918726a91",
+    "CONTROL52e_v0_p0_6": "c1524ba5063c5f3dfb5aba64ba66c0b5148611ccc34381f7218984c93ddaa3db",
+    "CONTROL52e_v0_p0_7": "da17fa8a038d8317bd8edcb0f166d5e75ed4a7dc86a08c324038b9d7854fe72c",
+    "CONTROL52e_v0_p1_0": "ddd94ab5acad4954155120ab7638a71799e6f29ae1b3837183e697cdab3f5817",
+    "CONTROL52e_v0_p1_1": "e483dfa4cb22c290a3a598341fdbdc5551ab649bace9d78c0cc0bb37cc291258",
+    "CONTROL52e_v0_p1_2": "84a3d4dc4b45bf02530baf764e31eecabfc8e89f197f1018485eca9d9bd351f7",
+    "CONTROL52e_v0_p1_3": "6bdb953758a4ed62234e0c56eab6f1527422555e2ac7c59765fc47a0e66775dc",
+    "CONTROL52e_v0_p1_4": "7b854336dc488c4165c8112b0f8a0881cc0a5798cf032684bdd367b50db9c896",
+    "CONTROL52e_v0_p1_5": "e0505ee0fea8055fc75c6130ef4e2f3ca0efb3a1cabfe96324efc6110adf2e9c",
+    "CONTROL52e_v0_p1_6": "3d15d399c41703bcbc822a348ec43852d76752e81900e358a54e4fcfc641c8f0",
+    "CONTROL52e_v0_p2_0": "047fab72d910fd15968a9db100ca6ed464a54c9a3e68806d53ce3907992f6b3b",
+    "CONTROL52e_v0_p2_1": "a0878bb5b80558a1612b05b813e9b01df835f4f6c49f44298d24bcedca8f18ec",
+    "CONTROL52e_v0_p2_2": "e3df593e33f929ff5eec4a50605199b3f1db68489f91bbe5b0f2da684ccd57be",
+    "CONTROL52e_v0_p2_3": "b0fe7ae0b2740dffb8b792ed8f57681430286c4c6cc76a37de9dbc8bc07540ac",
+    "CONTROL52e_v0_p2_4": "d18b10fdbf6934a752d31c539020350a4f597ca1115af3e7e43ea277b385a060",
+    "CONTROL52e_v0_p2_5": "892df64b6662d173ffb279eecc9ab7a71e94e1a5902982e7726d27c28a77190e",
+    "CONTROL52e_v0_p2_6": "50d9f9629d1d8ac5d8d03670824b44508cc94d5fdc782c36606fc2be97885ff9",
+    "CONTROL52e_v1_p0_0": "df3ae0e7eaaa910e0c78190562ccf3c8b19d80578956021819fc4b8772c6fb83",
+    "CONTROL52e_v1_p0_1": "7324a43abc58417efa897f41262eafc83fd6a36fcd29c0694ba511de3c5b4fb4",
+    "CONTROL52e_v1_p0_2": "6ed8092c8cd4d767839a82f7bf10bd4f820d69b0c11ee9f14867f743405776d5",
+    "CONTROL52e_v1_p0_3": "e9c5794863b18e8a8f3320d65d85ce6a7d1b3cddc2c9d5bd55496411f14ea3ad",
+    "CONTROL52e_v1_p0_4": "cdf94f3cdc68fce90be18348fd34280ec18757bed55f449b0c7d1712b778f1c0",
+    "CONTROL52e_v1_p0_5": "64ca331b030b78fcd1b95271054fbe9f0e58772c2cd21ca027388ba84d4784f9",
+    "CONTROL52e_v1_p0_6": "a5da9301032d16f29429536ea528f42283b7c432c2b854d136002a4a4519977c",
+    "CONTROL52e_v1_p1_0": "520ab6abb95b95224e3401f41a21e089cb45b819b85740bcfe90da77268d6eec",
+    "CONTROL52e_v1_p1_1": "7cd11bbdf5a33b1bbebf7d3dd99063c474ce8299280fbb5767e449f4ecbf7c0e",
+    "CONTROL52e_v1_p1_2": "6015a46ad99f011a451ab121d1deea219fc7f7cfb3b2212a20c365739b948f93",
+    "CONTROL52e_v1_p1_3": "326c4b83b539cff14d938786640e7737083beeb93b0f7e8deab1add02dc28aab",
+    "CONTROL52e_v1_p1_4": "14d264d8e99bc3f25e7a3e1d96d062a795284047683432fffd114ee961aa850a",
+    "CONTROL52e_v1_p1_5": "dd832b345079d65ff09763567267943aa3cd297951ca70e9221913c70ec0fe2c",
+    "CONTROL52e_v1_p1_6": "1c0e189f20f431886446d1879b36f44864e1622e6ab927645df1434d9a5f5d2c",
+    "CONTROL52e_v1_p2_0": "d806c40948ebe7b527f51f3a369f5d2a3cd58147fe9634eb03dd13f13068e2e8",
+    "CONTROL52e_v1_p2_1": "0cdab47673036c22c1bfde02341cb64c58b1e295909d3534f417787343639d2e",
+    "CONTROL52e_v1_p2_2": "819972fe7b368cb2c6655d4bf020f3e492eeaa2b9796cebbb61a74d78e947795",
+    "CONTROL52e_v1_p2_3": "329b16f64ac2795f291d9b664fb8ae8491e4c940d2b4bff4bdd4153074a33b62",
+    "CONTROL52e_v1_p2_4": "89663c8966e62a3fa2d244b0eb5abb59f4c1a43642c630da3686a6905a89e662",
+    "CONTROL52e_v1_p2_5": "19d7823a491507a5aa869abf2449e4b6fbec96df0a6ebb40e693e5e3196c8726",
+    "CONTROL52e_v1_p2_6": "4973eb1391d91a07bc21223afaa164438d4d96c60aae7c910ee48e5b36eb7988",
+    "CONTROL52e_v1_p2_7": "147adb57addd3d1da85c85225abffefcd6b4e2a8c48da8f1e142efc997d57167",
+    "CONTROL52e_v2_p0_0": "5885e3d39472be589c5d8aa8966e525bc29306a25aaa5e32f34b3d949a180ffe",
+    "CONTROL52e_v2_p0_1": "987b8e1cd612eeeb28c54fd841409cc05b6e5029c93f6c732b1c8e336470b697",
+    "CONTROL52e_v2_p0_2": "9f15e650a4af1080e92c77a4cf2ea254038218b8fd909fccf0c3e06568f839b2",
+    "CONTROL52e_v2_p0_3": "3134907a6dd80c0a721f309d82fda02cb731273f5ff6d9fdefbf6d613b323c0c",
+    "CONTROL52e_v2_p0_4": "d13eb27821745092282e9bfbca24f7e66aaf191700e2b18126582c724ac654df",
+    "CONTROL52e_v2_p0_5": "cad3a3ce5653e947606dd52b1c4a349620360516cded69c0657d0826f3182337",
+    "CONTROL52e_v2_p0_6": "13d0bc3400d6e770653cbc3b62c592e24c862d01eb5092aa465579f8c37a8893",
+    "CONTROL52e_v2_p1_0": "b322532d44949773f2ccad0d3009ff3a8a2c2e74d2af7455735a1215036d6c5d",
+    "CONTROL52e_v2_p1_1": "904a73109158a36d9170b448a81ed8b3671607dd72b333f89c9d333fd83daf65",
+    "CONTROL52e_v2_p1_2": "d366c1ac5aa07f64a97fd659fe290fedb1967b3ff67b154c996ef72d46b98256",
+    "CONTROL52e_v2_p1_3": "f5ff0b18e149ec969d83b2320664801f5f0449b3ff46e98cff7ec69e1c8494df",
+    "CONTROL52e_v2_p1_4": "ec8b557147e257bf0bf97f713490384b6c875ee9438a4ceab2e9979ec27231fc",
+    "CONTROL52e_v2_p1_5": "1ab92224f521c9d35f55191a07ce6bb3c4072c3a37fd37f0f4d9204fda84bc42",
+    "CONTROL52e_v2_p1_6": "9d4f017372fbd38726fadbb0ca04abbee0c2ffc5cd01be4dc23cfccd64621f5d",
+    "CONTROL52e_v2_p1_7": "d27576dd25456275fe911c5276e3a255a30ea713351e0858f14936683f6d2fb0",
+    "CONTROL52e_v2_p2_0": "eaaad7cfbbd4d095040acf85b7f9593cb7d127208432c8cb42cf00d141e6f68b",
+    "CONTROL52e_v2_p2_1": "b24c974ee653c82c1851a1fa2ab55fb95acc7c6904cf69909e09c8e816f9d23f",
+    "CONTROL52e_v2_p2_2": "bf115da18612e5c8f0f2c56b8d476e58e27fc07f36c19f6e314c61e7d3f77668",
+    "CONTROL52e_v2_p2_3": "ec1b7e632a16c662b696f8934624fb08df1e999204fd7e594176ccd7d901e327",
+    "CONTROL52e_v2_p2_4": "aa9753e76fd04751a3baa972b2858bf5b2889df8f2ac1a2f6eb259eaf6d88e23",
+    "CONTROL52e_v2_p2_5": "8f587aeddf356220f024c75558eefd5068a576772d96746100d7766d0437db13",
+    "CONTROL52e_v2_p2_6": "3065ef9c10118eb8efc2b18d3c0469ff2c06318f12d384b9cd06f1984328b75e",
+    "CONTROL52f_v0_saddle_00_low_core": "e5aedf7493b628567b775ac7517a11faf972f188f0b497d803c3a604ce9ed553",
+    "CONTROL52f_v0_saddle_01_low_core": "dd881c113ed3f288ecde2e6d3a60ce60e449534cd03155cfee697add80511967",
+    "CONTROL52f_v0_saddle_02_low_core": "5d87028ab1be6bd09e5d3123b5fc72feb3500d9bdbba9250d9d5df9ff1d4a2ef",
+    "CONTROL52f_v0_saddle_03_low_core": "aa9cb45441467e56e5f550c05b8cbac8809242df1504f885b48993b44353c6cc",
+    "CONTROL52f_v0_saddle_04_low_core": "ac20a6f3f4472dc287db178ab3e921c2d23835974bbce30de1f5083ad850396d",
+    "CONTROL52f_v0_saddle_05_low_end": "155e5aa1d66f1611fbe4ab2a01fdf774f3a61e6cf4e656964a92efbc35b08d48",
+    "CONTROL52f_v0_saddle_06_fork": "ecb6f2b6009b29ecf30b5940898a37ff02cc7581a2774281e3028e9d08627ddd",
+    "CONTROL52f_v0_saddle_07_fork_end": "bd37b2e0c20f209d49469af40fb2bdc608d14bc70267a8bdd85953505585d9ee",
+    "CONTROL52f_v0_saddle_08_medium_shoulder": "35be9f629e78d8c3edd2983e04b09f02b3f651392ddea52d110f0997310c5f0d",
+    "CONTROL52f_v0_saddle_09_medium_shoulder": "a2ee19badd638511d4dd0bf2dec575cc27b8eaf47114e60a3012344bf8956b97",
+    "CONTROL52f_v0_saddle_10_medium_shoulder": "f1adf31778986af8fecb889b79e469c39309a1343336544d27e5932e669a48a4",
+    "CONTROL52f_v0_saddle_11_medium_shoulder": "48d65ce720113873d0a0fff035eef34cbac00a7600bd3c572991fb676ddf228b",
+    "CONTROL52f_v0_saddle_12_medium_shoulder": "47d6f577983d5eb19ec5b013e0fd46e66d7e58aeee2e46b93c052e0dddd09e88",
+    "CONTROL52f_v0_saddle_13_medium_shoulder": "973319ad52e6801daa72af38e912ea4a02553b9ffee24014caf6003eea7d6f49",
+    "CONTROL52f_v0_saddle_14_medium_shoulder": "67c75bb2f5b088c1f689e4590223fcb7c3f4398d88bb7a860584d16af74e054f",
+    "CONTROL52f_v0_saddle_15_medium_shoulder": "0bc6e35191a047ddec861ad5a27e50ba36ae6df2f1e89b5b2b126f64a1f039db",
+    "CONTROL52f_v0_saddle_16_medium_shoulder": "058f25a58a6770e49d6984b54bc97b3fb8e376850bde60a38e14dcfe75c12611",
+    "CONTROL52f_v0_saddle_17_medium_shoulder": "0e54fd0c4b484eb57b39642568bf8eb8b54ec3ca829b5293ea356c4b3ca6b395",
+    "CONTROL52f_v0_saddle_18_small_crown_edge": "7ae13d65c614a19a2136c467d21b5bb48628ff7ffcd7413969288bbbeabf9075",
+    "CONTROL52f_v0_saddle_19_small_crown_edge": "351f783b3ca506779d857947c3489a514ca7dee15f5d232f9184df2c6ed6c4cd",
+    "CONTROL52f_v0_saddle_20_small_crown_edge": "b6d953e89b19430b56760ffae93dc7fc50e4985b841f0c5c50a17421ab860c66",
+    "CONTROL52f_v0_saddle_21_small_valley": "aaabb7c2aad5d1d409553d0e758844630dc4bdaf1862a8b9af97cc1e777151c7",
+    "CONTROL52f_v0_saddle_22_small_valley": "3ee177a5ad182f918aad9de16cc8e3ba8ff879da25e365bf17e4db0ba3ce0157",
+    "CONTROL52f_v0_saddle_23_small_valley": "e2cd09b84060a69a7d224f01950fe667bed720dd391dbd9678ea6caf0a3513b3",
+    "CONTROL52f_v0_saddle_24_small_shoulder_edge": "a7bf3b4933ece300ac69c346163efd869660023282e700e811c02e20ee295ab4",
+    "CONTROL52f_v0_saddle_25_small_shoulder_edge": "d888b2f3a3ba664c572527369fac0933f164c12187881d8bf7019702654a679a",
+    "CONTROL52f_v0_saddle_26_small_shoulder_edge": "f943eca7512fc74902ee652c194954e3c0e9a7d54e6c92187ca5b8634f76948a",
+    "CONTROL52f_v0_saddle_27_small_shoulder_edge": "1d222552378a815757cc39904893cd11bcae6dc7bf355cd3e221be4aff15c4be",
+    "CONTROL52f_v0_saddle_28_small_fork_edge": "7135d0204e59f0c0b2b567870865d6fe537b6df57b53262c40958dfd2e9a7c80",
+    "CONTROL52f_v0_saddle_29_small_fork_edge": "6a3c3551ca93dc4d8c2f91d2b11d172052e8ceaa88e2cc74776a5f2c779d5c36",
+    "CONTROL52f_v0_saddle_30_small_fork_edge": "004a85c0246b68da657bad98b5b2fa42012b37da7cc1739987ea9e7f6c011ccd"
+  },
+  "new_fingerprints": {
+    "CloudSea52e_v0_low_tail": "86acf663007f4196b0fc2198704500a7766f6f5bb3391e16851e3f46778f99fe",
+    "CloudSea52e_v0_main_ridge": "73892a2a5b07c8aa74b7b5d82f63eb69fc431f4c292f02df7624013a0b1e8902",
+    "CloudSea52e_v0_offset_shoulder": "eb50defd2b5fb7d1ec4fc8bc4b657f9bf2c96dd6c836db770ace412621cc9e8c",
+    "CloudSea52e_v1_low_tail": "7e49a358b111d1dd806ee9d50053358eb5d5e4ca120c49f91b65550dd688b9a1",
+    "CloudSea52e_v1_main_ridge": "0fabeb586bdba4b45eef06940a852fa88fabc24ed0f0b5cd39b5a764c80a9a30",
+    "CloudSea52e_v1_offset_shoulder": "c1bb6ddf705c7043dc1dea125fdea1264e7b9738dd9acd454409cec4daaf2745",
+    "CloudSea52e_v2_low_tail": "97398dbc7d90ebf33a8226374ad194c988fcde211b76297fc6a02e444b895137",
+    "CloudSea52e_v2_main_ridge": "309d9573f87f84156e2d522880479b57a6f38cec5a9f020f0c0db769e8eff94d",
+    "CloudSea52e_v2_offset_shoulder": "1d67414209cf9447ef983d06191bbb4ecd021f3485f198a46d878696c49f21ec",
+    "CloudSea52f_v0_low_saddle": "6d612c228c7495342a1a958cea3ec38f8301cd0ae0edfa624a5e95e2c7be2318",
+    "CONTROL52e_v0_p0_0": "ec046f9861e78a6d12059457c28bd5077668a3e942841fbe879f4fa0f7562de4",
+    "CONTROL52e_v0_p0_1": "0f4dc61f555d76f02665490edf5f5dd39cb002aa86a05ab6c04b5bb0bff1ab20",
+    "CONTROL52e_v0_p0_2": "3466e2de6a4d549f62f81453fe19af718fff132b339f62032c169b51140a3656",
+    "CONTROL52e_v0_p0_3": "cd0f6e1f2f1332474c71bfe1c2071b7f8a3de9f870e4a1c2aaaf32467c2118fd",
+    "CONTROL52e_v0_p0_4": "7e9e6f24f4719dcbc046eb2252ef1b7f2d5aeff354e423774bd1775eb55a9763",
+    "CONTROL52e_v0_p0_5": "e56a4a275f0549d40b2a00afea9130f41821c74d7bdd65c7cc9e119918726a91",
+    "CONTROL52e_v0_p0_6": "c1524ba5063c5f3dfb5aba64ba66c0b5148611ccc34381f7218984c93ddaa3db",
+    "CONTROL52e_v0_p0_7": "da17fa8a038d8317bd8edcb0f166d5e75ed4a7dc86a08c324038b9d7854fe72c",
+    "CONTROL52e_v0_p1_0": "ddd94ab5acad4954155120ab7638a71799e6f29ae1b3837183e697cdab3f5817",
+    "CONTROL52e_v0_p1_1": "e483dfa4cb22c290a3a598341fdbdc5551ab649bace9d78c0cc0bb37cc291258",
+    "CONTROL52e_v0_p1_2": "84a3d4dc4b45bf02530baf764e31eecabfc8e89f197f1018485eca9d9bd351f7",
+    "CONTROL52e_v0_p1_3": "6bdb953758a4ed62234e0c56eab6f1527422555e2ac7c59765fc47a0e66775dc",
+    "CONTROL52e_v0_p1_4": "7b854336dc488c4165c8112b0f8a0881cc0a5798cf032684bdd367b50db9c896",
+    "CONTROL52e_v0_p1_5": "e0505ee0fea8055fc75c6130ef4e2f3ca0efb3a1cabfe96324efc6110adf2e9c",
+    "CONTROL52e_v0_p1_6": "3d15d399c41703bcbc822a348ec43852d76752e81900e358a54e4fcfc641c8f0",
+    "CONTROL52e_v0_p2_0": "047fab72d910fd15968a9db100ca6ed464a54c9a3e68806d53ce3907992f6b3b",
+    "CONTROL52e_v0_p2_1": "a0878bb5b80558a1612b05b813e9b01df835f4f6c49f44298d24bcedca8f18ec",
+    "CONTROL52e_v0_p2_2": "e3df593e33f929ff5eec4a50605199b3f1db68489f91bbe5b0f2da684ccd57be",
+    "CONTROL52e_v0_p2_3": "b0fe7ae0b2740dffb8b792ed8f57681430286c4c6cc76a37de9dbc8bc07540ac",
+    "CONTROL52e_v0_p2_4": "d18b10fdbf6934a752d31c539020350a4f597ca1115af3e7e43ea277b385a060",
+    "CONTROL52e_v0_p2_5": "892df64b6662d173ffb279eecc9ab7a71e94e1a5902982e7726d27c28a77190e",
+    "CONTROL52e_v0_p2_6": "50d9f9629d1d8ac5d8d03670824b44508cc94d5fdc782c36606fc2be97885ff9",
+    "CONTROL52e_v1_p0_0": "df3ae0e7eaaa910e0c78190562ccf3c8b19d80578956021819fc4b8772c6fb83",
+    "CONTROL52e_v1_p0_1": "7324a43abc58417efa897f41262eafc83fd6a36fcd29c0694ba511de3c5b4fb4",
+    "CONTROL52e_v1_p0_2": "6ed8092c8cd4d767839a82f7bf10bd4f820d69b0c11ee9f14867f743405776d5",
+    "CONTROL52e_v1_p0_3": "e9c5794863b18e8a8f3320d65d85ce6a7d1b3cddc2c9d5bd55496411f14ea3ad",
+    "CONTROL52e_v1_p0_4": "cdf94f3cdc68fce90be18348fd34280ec18757bed55f449b0c7d1712b778f1c0",
+    "CONTROL52e_v1_p0_5": "64ca331b030b78fcd1b95271054fbe9f0e58772c2cd21ca027388ba84d4784f9",
+    "CONTROL52e_v1_p0_6": "a5da9301032d16f29429536ea528f42283b7c432c2b854d136002a4a4519977c",
+    "CONTROL52e_v1_p1_0": "520ab6abb95b95224e3401f41a21e089cb45b819b85740bcfe90da77268d6eec",
+    "CONTROL52e_v1_p1_1": "7cd11bbdf5a33b1bbebf7d3dd99063c474ce8299280fbb5767e449f4ecbf7c0e",
+    "CONTROL52e_v1_p1_2": "6015a46ad99f011a451ab121d1deea219fc7f7cfb3b2212a20c365739b948f93",
+    "CONTROL52e_v1_p1_3": "326c4b83b539cff14d938786640e7737083beeb93b0f7e8deab1add02dc28aab",
+    "CONTROL52e_v1_p1_4": "14d264d8e99bc3f25e7a3e1d96d062a795284047683432fffd114ee961aa850a",
+    "CONTROL52e_v1_p1_5": "dd832b345079d65ff09763567267943aa3cd297951ca70e9221913c70ec0fe2c",
+    "CONTROL52e_v1_p1_6": "1c0e189f20f431886446d1879b36f44864e1622e6ab927645df1434d9a5f5d2c",
+    "CONTROL52e_v1_p2_0": "d806c40948ebe7b527f51f3a369f5d2a3cd58147fe9634eb03dd13f13068e2e8",
+    "CONTROL52e_v1_p2_1": "0cdab47673036c22c1bfde02341cb64c58b1e295909d3534f417787343639d2e",
+    "CONTROL52e_v1_p2_2": "819972fe7b368cb2c6655d4bf020f3e492eeaa2b9796cebbb61a74d78e947795",
+    "CONTROL52e_v1_p2_3": "329b16f64ac2795f291d9b664fb8ae8491e4c940d2b4bff4bdd4153074a33b62",
+    "CONTROL52e_v1_p2_4": "89663c8966e62a3fa2d244b0eb5abb59f4c1a43642c630da3686a6905a89e662",
+    "CONTROL52e_v1_p2_5": "19d7823a491507a5aa869abf2449e4b6fbec96df0a6ebb40e693e5e3196c8726",
+    "CONTROL52e_v1_p2_6": "4973eb1391d91a07bc21223afaa164438d4d96c60aae7c910ee48e5b36eb7988",
+    "CONTROL52e_v1_p2_7": "147adb57addd3d1da85c85225abffefcd6b4e2a8c48da8f1e142efc997d57167",
+    "CONTROL52e_v2_p0_0": "5885e3d39472be589c5d8aa8966e525bc29306a25aaa5e32f34b3d949a180ffe",
+    "CONTROL52e_v2_p0_1": "987b8e1cd612eeeb28c54fd841409cc05b6e5029c93f6c732b1c8e336470b697",
+    "CONTROL52e_v2_p0_2": "9f15e650a4af1080e92c77a4cf2ea254038218b8fd909fccf0c3e06568f839b2",
+    "CONTROL52e_v2_p0_3": "3134907a6dd80c0a721f309d82fda02cb731273f5ff6d9fdefbf6d613b323c0c",
+    "CONTROL52e_v2_p0_4": "d13eb27821745092282e9bfbca24f7e66aaf191700e2b18126582c724ac654df",
+    "CONTROL52e_v2_p0_5": "cad3a3ce5653e947606dd52b1c4a349620360516cded69c0657d0826f3182337",
+    "CONTROL52e_v2_p0_6": "13d0bc3400d6e770653cbc3b62c592e24c862d01eb5092aa465579f8c37a8893",
+    "CONTROL52e_v2_p1_0": "b322532d44949773f2ccad0d3009ff3a8a2c2e74d2af7455735a1215036d6c5d",
+    "CONTROL52e_v2_p1_1": "904a73109158a36d9170b448a81ed8b3671607dd72b333f89c9d333fd83daf65",
+    "CONTROL52e_v2_p1_2": "d366c1ac5aa07f64a97fd659fe290fedb1967b3ff67b154c996ef72d46b98256",
+    "CONTROL52e_v2_p1_3": "f5ff0b18e149ec969d83b2320664801f5f0449b3ff46e98cff7ec69e1c8494df",
+    "CONTROL52e_v2_p1_4": "ec8b557147e257bf0bf97f713490384b6c875ee9438a4ceab2e9979ec27231fc",
+    "CONTROL52e_v2_p1_5": "1ab92224f521c9d35f55191a07ce6bb3c4072c3a37fd37f0f4d9204fda84bc42",
+    "CONTROL52e_v2_p1_6": "9d4f017372fbd38726fadbb0ca04abbee0c2ffc5cd01be4dc23cfccd64621f5d",
+    "CONTROL52e_v2_p1_7": "d27576dd25456275fe911c5276e3a255a30ea713351e0858f14936683f6d2fb0",
+    "CONTROL52e_v2_p2_0": "eaaad7cfbbd4d095040acf85b7f9593cb7d127208432c8cb42cf00d141e6f68b",
+    "CONTROL52e_v2_p2_1": "b24c974ee653c82c1851a1fa2ab55fb95acc7c6904cf69909e09c8e816f9d23f",
+    "CONTROL52e_v2_p2_2": "bf115da18612e5c8f0f2c56b8d476e58e27fc07f36c19f6e314c61e7d3f77668",
+    "CONTROL52e_v2_p2_3": "ec1b7e632a16c662b696f8934624fb08df1e999204fd7e594176ccd7d901e327",
+    "CONTROL52e_v2_p2_4": "aa9753e76fd04751a3baa972b2858bf5b2889df8f2ac1a2f6eb259eaf6d88e23",
+    "CONTROL52e_v2_p2_5": "8f587aeddf356220f024c75558eefd5068a576772d96746100d7766d0437db13",
+    "CONTROL52e_v2_p2_6": "3065ef9c10118eb8efc2b18d3c0469ff2c06318f12d384b9cd06f1984328b75e",
+    "CONTROL52f_v0_saddle_00_low_core": "e5aedf7493b628567b775ac7517a11faf972f188f0b497d803c3a604ce9ed553",
+    "CONTROL52f_v0_saddle_01_low_core": "dd881c113ed3f288ecde2e6d3a60ce60e449534cd03155cfee697add80511967",
+    "CONTROL52f_v0_saddle_02_low_core": "5d87028ab1be6bd09e5d3123b5fc72feb3500d9bdbba9250d9d5df9ff1d4a2ef",
+    "CONTROL52f_v0_saddle_03_low_core": "aa9cb45441467e56e5f550c05b8cbac8809242df1504f885b48993b44353c6cc",
+    "CONTROL52f_v0_saddle_04_low_core": "ac20a6f3f4472dc287db178ab3e921c2d23835974bbce30de1f5083ad850396d",
+    "CONTROL52f_v0_saddle_05_low_end": "155e5aa1d66f1611fbe4ab2a01fdf774f3a61e6cf4e656964a92efbc35b08d48",
+    "CONTROL52f_v0_saddle_06_fork": "ecb6f2b6009b29ecf30b5940898a37ff02cc7581a2774281e3028e9d08627ddd",
+    "CONTROL52f_v0_saddle_07_fork_end": "bd37b2e0c20f209d49469af40fb2bdc608d14bc70267a8bdd85953505585d9ee",
+    "CONTROL52f_v0_saddle_08_medium_shoulder": "35be9f629e78d8c3edd2983e04b09f02b3f651392ddea52d110f0997310c5f0d",
+    "CONTROL52f_v0_saddle_09_medium_shoulder": "a2ee19badd638511d4dd0bf2dec575cc27b8eaf47114e60a3012344bf8956b97",
+    "CONTROL52f_v0_saddle_10_medium_shoulder": "f1adf31778986af8fecb889b79e469c39309a1343336544d27e5932e669a48a4",
+    "CONTROL52f_v0_saddle_11_medium_shoulder": "48d65ce720113873d0a0fff035eef34cbac00a7600bd3c572991fb676ddf228b",
+    "CONTROL52f_v0_saddle_12_medium_shoulder": "47d6f577983d5eb19ec5b013e0fd46e66d7e58aeee2e46b93c052e0dddd09e88",
+    "CONTROL52f_v0_saddle_13_medium_shoulder": "973319ad52e6801daa72af38e912ea4a02553b9ffee24014caf6003eea7d6f49",
+    "CONTROL52f_v0_saddle_14_medium_shoulder": "67c75bb2f5b088c1f689e4590223fcb7c3f4398d88bb7a860584d16af74e054f",
+    "CONTROL52f_v0_saddle_15_medium_shoulder": "0bc6e35191a047ddec861ad5a27e50ba36ae6df2f1e89b5b2b126f64a1f039db",
+    "CONTROL52f_v0_saddle_16_medium_shoulder": "058f25a58a6770e49d6984b54bc97b3fb8e376850bde60a38e14dcfe75c12611",
+    "CONTROL52f_v0_saddle_17_medium_shoulder": "0e54fd0c4b484eb57b39642568bf8eb8b54ec3ca829b5293ea356c4b3ca6b395",
+    "CONTROL52f_v0_saddle_18_small_crown_edge": "7ae13d65c614a19a2136c467d21b5bb48628ff7ffcd7413969288bbbeabf9075",
+    "CONTROL52f_v0_saddle_19_small_crown_edge": "351f783b3ca506779d857947c3489a514ca7dee15f5d232f9184df2c6ed6c4cd",
+    "CONTROL52f_v0_saddle_20_small_crown_edge": "b6d953e89b19430b56760ffae93dc7fc50e4985b841f0c5c50a17421ab860c66",
+    "CONTROL52f_v0_saddle_21_small_valley": "aaabb7c2aad5d1d409553d0e758844630dc4bdaf1862a8b9af97cc1e777151c7",
+    "CONTROL52f_v0_saddle_22_small_valley": "3ee177a5ad182f918aad9de16cc8e3ba8ff879da25e365bf17e4db0ba3ce0157",
+    "CONTROL52f_v0_saddle_23_small_valley": "e2cd09b84060a69a7d224f01950fe667bed720dd391dbd9678ea6caf0a3513b3",
+    "CONTROL52f_v0_saddle_24_small_shoulder_edge": "a7bf3b4933ece300ac69c346163efd869660023282e700e811c02e20ee295ab4",
+    "CONTROL52f_v0_saddle_25_small_shoulder_edge": "d888b2f3a3ba664c572527369fac0933f164c12187881d8bf7019702654a679a",
+    "CONTROL52f_v0_saddle_26_small_shoulder_edge": "f943eca7512fc74902ee652c194954e3c0e9a7d54e6c92187ca5b8634f76948a",
+    "CONTROL52f_v0_saddle_27_small_shoulder_edge": "1d222552378a815757cc39904893cd11bcae6dc7bf355cd3e221be4aff15c4be",
+    "CONTROL52f_v0_saddle_28_small_fork_edge": "7135d0204e59f0c0b2b567870865d6fe537b6df57b53262c40958dfd2e9a7c80",
+    "CONTROL52f_v0_saddle_29_small_fork_edge": "6a3c3551ca93dc4d8c2f91d2b11d172052e8ceaa88e2cc74776a5f2c779d5c36",
+    "CONTROL52f_v0_saddle_30_small_fork_edge": "004a85c0246b68da657bad98b5b2fa42012b37da7cc1739987ea9e7f6c011ccd"
+  },
+  "new_control_count": 30,
+  "parts": [
+    {
+      "name": "CloudSea52e_v0_low_tail",
+      "vertices": 325,
+      "triangles": 650,
+      "bounds_blender_xyz": [
+        [
+          -296.8020935058594,
+          202.22723388671875,
+          5.0
+        ],
+        [
+          181.15232849121094,
+          590.1124267578125,
+          245.0
+        ]
+      ],
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "connected_components": [
+        325
+      ],
+      "signed_volume": 12848312.170904871,
+      "zero_area_triangles": 0,
+      "nonadjacent_triangle_intersections": 0,
+      "intersection_pairs": []
+    },
+    {
+      "name": "CloudSea52e_v0_main_ridge",
+      "vertices": 552,
+      "triangles": 1100,
+      "bounds_blender_xyz": [
+        [
+          -724.7723999023438,
+          -602.114013671875,
+          -30.0
+        ],
+        [
+          15.428011894226074,
+          -147.17245483398438,
+          355.0
+        ]
+      ],
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "connected_components": [
+        552
+      ],
+      "signed_volume": 40036173.043389395,
+      "zero_area_triangles": 0,
+      "nonadjacent_triangle_intersections": 0,
+      "intersection_pairs": []
+    },
+    {
+      "name": "CloudSea52e_v0_offset_shoulder",
+      "vertices": 377,
+      "triangles": 750,
+      "bounds_blender_xyz": [
+        [
+          66.60541534423828,
+          -272.4228820800781,
+          80.0
+        ],
+        [
+          634.1638793945312,
+          146.56146240234375,
+          320.0
+        ]
+      ],
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "connected_components": [
+        377
+      ],
+      "signed_volume": 16452434.48685709,
+      "zero_area_triangles": 0,
+      "nonadjacent_triangle_intersections": 0,
+      "intersection_pairs": []
+    },
+    {
+      "name": "CloudSea52e_v1_low_tail",
+      "vertices": 327,
+      "triangles": 650,
+      "bounds_blender_xyz": [
+        [
+          -285.2571716308594,
+          244.0076446533203,
+          10.0
+        ],
+        [
+          207.19288635253906,
+          608.445556640625,
+          260.0
+        ]
+      ],
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "connected_components": [
+        327
+      ],
+      "signed_volume": 14401611.091010679,
+      "zero_area_triangles": 0,
+      "nonadjacent_triangle_intersections": 0,
+      "intersection_pairs": []
+    },
+    {
+      "name": "CloudSea52e_v1_main_ridge",
+      "vertices": 552,
+      "triangles": 1100,
+      "bounds_blender_xyz": [
+        [
+          -701.5722045898438,
+          -601.9837646484375,
+          -20.0
+        ],
+        [
+          27.07243537902832,
+          -106.63186645507812,
+          365.0
+        ]
+      ],
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "connected_components": [
+        552
+      ],
+      "signed_volume": 40012832.870787546,
+      "zero_area_triangles": 0,
+      "nonadjacent_triangle_intersections": 0,
+      "intersection_pairs": []
+    },
+    {
+      "name": "CloudSea52e_v1_offset_shoulder",
+      "vertices": 377,
+      "triangles": 750,
+      "bounds_blender_xyz": [
+        [
+          46.46891784667969,
+          -270.66461181640625,
+          95.0
+        ],
+        [
+          616.4630737304688,
+          163.6344451904297,
+          335.0
+        ]
+      ],
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "connected_components": [
+        377
+      ],
+      "signed_volume": 17848641.694645233,
+      "zero_area_triangles": 0,
+      "nonadjacent_triangle_intersections": 0,
+      "intersection_pairs": []
+    },
+    {
+      "name": "CloudSea52e_v2_low_tail",
+      "vertices": 327,
+      "triangles": 650,
+      "bounds_blender_xyz": [
+        [
+          -328.09417724609375,
+          222.25718688964844,
+          15.0
+        ],
+        [
+          228.53919982910156,
+          592.358642578125,
+          270.0
+        ]
+      ],
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "connected_components": [
+        327
+      ],
+      "signed_volume": 16058143.123574257,
+      "zero_area_triangles": 0,
+      "nonadjacent_triangle_intersections": 0,
+      "intersection_pairs": []
+    },
+    {
+      "name": "CloudSea52e_v2_main_ridge",
+      "vertices": 550,
+      "triangles": 1100,
+      "bounds_blender_xyz": [
+        [
+          -714.1791381835938,
+          -607.2052612304688,
+          -35.0
+        ],
+        [
+          -7.224929332733154,
+          -114.1264419555664,
+          350.0
+        ]
+      ],
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "connected_components": [
+        550
+      ],
+      "signed_volume": 38814581.71428917,
+      "zero_area_triangles": 0,
+      "nonadjacent_triangle_intersections": 0,
+      "intersection_pairs": []
+    },
+    {
+      "name": "CloudSea52e_v2_offset_shoulder",
+      "vertices": 377,
+      "triangles": 750,
+      "bounds_blender_xyz": [
+        [
+          57.140987396240234,
+          -260.22113037109375,
+          70.0
+        ],
+        [
+          628.400634765625,
+          159.8135223388672,
+          315.0
+        ]
+      ],
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "connected_components": [
+        377
+      ],
+      "signed_volume": 19806729.134384558,
+      "zero_area_triangles": 0,
+      "nonadjacent_triangle_intersections": 0,
+      "intersection_pairs": []
+    },
+    {
+      "name": "CloudSea52f_v0_low_drift",
+      "vertices": 1701,
+      "triangles": 3398,
+      "bounds_blender_xyz": [
+        [
+          -684.2409057617188,
+          100.87012481689453,
+          -208.16860961914062
+        ],
+        [
+          689.4754638671875,
+          782.1609497070312,
+          165.3107147216797
+        ]
+      ],
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "connected_components": [
+        1701
+      ],
+      "signed_volume": 77097550.63969691,
+      "zero_area_triangles": 0,
+      "nonadjacent_triangle_intersections": 0,
+      "intersection_pairs": []
+    },
+    {
+      "name": "CloudSea52f_v0_low_saddle",
+      "vertices": 1802,
+      "triangles": 3600,
+      "bounds_blender_xyz": [
+        [
+          -656.1708984375,
+          -299.1527404785156,
+          -129.8936309814453
+        ],
+        [
+          642.2778930664062,
+          357.70635986328125,
+          195.85714721679688
+        ]
+      ],
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "connected_components": [
+        1802
+      ],
+      "signed_volume": 82473421.07751828,
+      "zero_area_triangles": 0,
+      "nonadjacent_triangle_intersections": 0,
+      "intersection_pairs": []
+    }
+  ],
+  "axis_mapping": "Blender (x,y,z) -> glTF/Godot (x,z,-y)",
+  "axis_checks": [
+    {
+      "file": "cloud_sea_52f_drift_v0.glb",
+      "node": "CloudSea52f_v0_low_drift",
+      "expected_godot_xyz": [
+        [
+          -684.2409057617188,
+          -208.16860961914062,
+          -782.1609497070312
+        ],
+        [
+          689.4754638671875,
+          165.3107147216797,
+          -100.87012481689453
+        ]
+      ],
+      "actual_glb_xyz": [
+        [
+          -684.2409057617188,
+          -208.16860961914062,
+          -782.1609497070312
+        ],
+        [
+          689.4754638671875,
+          165.3107147216797,
+          -100.87012481689453
+        ]
+      ],
+      "max_abs_error": 0.0,
+      "attributes": [
+        "POSITION",
+        "NORMAL",
+        "COLOR_0"
+      ]
+    },
+    {
+      "file": "cloud_sea_52f_pair_v0.glb",
+      "node": "CloudSea52f_v0_low_saddle",
+      "expected_godot_xyz": [
+        [
+          -656.1708984375,
+          -129.8936309814453,
+          -357.70635986328125
+        ],
+        [
+          642.2778930664062,
+          195.85714721679688,
+          299.1527404785156
+        ]
+      ],
+      "actual_glb_xyz": [
+        [
+          -656.1708984375,
+          -129.8936309814453,
+          -357.70635986328125
+        ],
+        [
+          642.2778930664062,
+          195.85714721679688,
+          299.1527404785156
+        ]
+      ],
+      "max_abs_error": 0.0,
+      "attributes": [
+        "POSITION",
+        "NORMAL",
+        "COLOR_0"
+      ]
+    },
+    {
+      "file": "cloud_sea_52f_pair_v0.glb",
+      "node": "CloudSea52f_v0_low_drift",
+      "expected_godot_xyz": [
+        [
+          -684.2409057617188,
+          -208.16860961914062,
+          -782.1609497070312
+        ],
+        [
+          689.4754638671875,
+          165.3107147216797,
+          -100.87012481689453
+        ]
+      ],
+      "actual_glb_xyz": [
+        [
+          -684.2409057617188,
+          -208.16860961914062,
+          -782.1609497070312
+        ],
+        [
+          689.4754638671875,
+          165.3107147216797,
+          -100.87012481689453
+        ]
+      ],
+      "max_abs_error": 0.0,
+      "attributes": [
+        "POSITION",
+        "NORMAL",
+        "COLOR_0"
+      ]
+    },
+    {
+      "file": "cloud_sea_52f_two_body_v0.glb",
+      "node": "CloudSea52e_v0_main_ridge",
+      "expected_godot_xyz": [
+        [
+          -724.7723999023438,
+          -30.0,
+          147.17245483398438
+        ],
+        [
+          15.428011894226074,
+          355.0,
+          602.114013671875
+        ]
+      ],
+      "actual_glb_xyz": [
+        [
+          -724.7723999023438,
+          -30,
+          147.17245483398438
+        ],
+        [
+          15.428011894226074,
+          355,
+          602.114013671875
+        ]
+      ],
+      "max_abs_error": 0.0,
+      "attributes": [
+        "POSITION",
+        "NORMAL",
+        "COLOR_0"
+      ]
+    },
+    {
+      "file": "cloud_sea_52f_two_body_v0.glb",
+      "node": "CloudSea52e_v0_offset_shoulder",
+      "expected_godot_xyz": [
+        [
+          66.60541534423828,
+          80.0,
+          -146.56146240234375
+        ],
+        [
+          634.1638793945312,
+          320.0,
+          272.4228820800781
+        ]
+      ],
+      "actual_glb_xyz": [
+        [
+          66.60541534423828,
+          80,
+          -146.56146240234375
+        ],
+        [
+          634.1638793945312,
+          320,
+          272.4228820800781
+        ]
+      ],
+      "max_abs_error": 0.0,
+      "attributes": [
+        "POSITION",
+        "NORMAL",
+        "COLOR_0"
+      ]
+    },
+    {
+      "file": "cloud_sea_52f_two_body_v0.glb",
+      "node": "CloudSea52e_v0_low_tail",
+      "expected_godot_xyz": [
+        [
+          -296.8020935058594,
+          5.0,
+          -590.1124267578125
+        ],
+        [
+          181.15232849121094,
+          245.0,
+          -202.22723388671875
+        ]
+      ],
+      "actual_glb_xyz": [
+        [
+          -296.8020935058594,
+          5,
+          -590.1124267578125
+        ],
+        [
+          181.15232849121094,
+          245,
+          -202.22723388671875
+        ]
+      ],
+      "max_abs_error": 0.0,
+      "attributes": [
+        "POSITION",
+        "NORMAL",
+        "COLOR_0"
+      ]
+    },
+    {
+      "file": "cloud_sea_52f_two_body_v0.glb",
+      "node": "CloudSea52f_v0_low_saddle",
+      "expected_godot_xyz": [
+        [
+          -656.1708984375,
+          -129.8936309814453,
+          -357.70635986328125
+        ],
+        [
+          642.2778930664062,
+          195.85714721679688,
+          299.1527404785156
+        ]
+      ],
+      "actual_glb_xyz": [
+        [
+          -656.1708984375,
+          -129.8936309814453,
+          -357.70635986328125
+        ],
+        [
+          642.2778930664062,
+          195.85714721679688,
+          299.1527404785156
+        ]
+      ],
+      "max_abs_error": 0.0,
+      "attributes": [
+        "POSITION",
+        "NORMAL",
+        "COLOR_0"
+      ]
+    },
+    {
+      "file": "cloud_sea_52f_two_body_v0.glb",
+      "node": "CloudSea52f_v0_low_drift",
+      "expected_godot_xyz": [
+        [
+          -684.2409057617188,
+          -208.16860961914062,
+          -782.1609497070312
+        ],
+        [
+          689.4754638671875,
+          165.3107147216797,
+          -100.87012481689453
+        ]
+      ],
+      "actual_glb_xyz": [
+        [
+          -684.2409057617188,
+          -208.16860961914062,
+          -782.1609497070312
+        ],
+        [
+          689.4754638671875,
+          165.3107147216797,
+          -100.87012481689453
+        ]
+      ],
+      "max_abs_error": 0.0,
+      "attributes": [
+        "POSITION",
+        "NORMAL",
+        "COLOR_0"
+      ]
+    }
+  ],
+  "material_reused": "Cloud46 diffuse warm crown cool belly",
+  "visual_acceptance": false
+}
