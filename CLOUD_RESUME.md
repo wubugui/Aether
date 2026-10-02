@@ -1,6 +1,6 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 20:46 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 21:18 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
 
 ## 云端硬性前置闸门：先插件上传完整核回，再继续工作
 
@@ -11,6 +11,17 @@
 - 上传失败优先查明原因并在授权内反复进行合规恢复，保持原payload、完整base tree/parent和非force ref；真实安全拒绝必须停止该动作，按批准规则取得明确证据/一次原call重试，仍拒则报告并保持闸门关闭，绝不绕审批/换route
 - 本项全部完成成果和本入口更新都核回后，才允许下一项。纯读取以查错/确认上传状态可以继续；与修复当前上传无关的新开发/渲染必须等待
 - 私密Slack交付定位符/收据仍仅本地，不因“全部项目”混入公开仓库；原受阻发送保持独立停止
+
+## 21:18 官方3.11既有源fresh-only恢复准备有限接受，原完整比较不改
+
+- form-v2真实保存/原整体失败与跨Python诊断已 **bd403f0b8ec262cdb6e1c627d11999ac35fa2533** 完整插件发布，tree6b8ac8d6095442a253821bf2128d9f655dcc1a95、parentb171d340；66路径/63blob新bare逐字节核回，本地817327e同树对齐。另从远端对象新空目录恢复解析23原JSON、原324985B模型blob/SHA33cc763精确同，之后才做此恢复准备
+- [form-v2-recovery-v1](source-assets/cloud-bank58/revision-l/form-v2-recovery-v1/README.md)原19文件506069B；FINAL65d0fdb785b29ab8bda4e268cda7f462c9d996c5667a68bf1af6b60e92f46962，manifest4c3a28f5f374bafd2aae0f534afa150bb252a67af46f1aeef2c46d863d07a50d；旧624+本包17冻结与FINAL自身共642核同。仅新目录，原源/旧所有成功和失败/原准入不改
+- 固定已有官方bundled **Python3.11.15**，执行文件SHA60b08089c60cbe81827b135c8fd9e206ba2ee6bf54aa1dbd0d6f56ac2d5914f6，wrapper和外观察都用它；**全部原报告精确比较保留，不新增容差或rounding**。原完整build报告+exercise重放精确同，21normal全同；3.12负控仍43处差，底层数学原因未猜定
+- 实测此3.11缺os.pidfd_open但libc同名符号与signal.pidfd_send_signal可用。仅恢复适配给deadline.os补同语义桥：int/unsigned→int、errno失败OSError、不可继承/关闭保留，原v3文件和Owned身份/kill/reap逻辑不改；无裸PID/syscall猜号/OS权限改动。作者24 normal/-O（含6原Owned）及7已有短自有进程例符合预期并回收，无新监督框架
+- [窄独立复核](source-assets/cloud-bank58/revision-l/form-v2-recovery-v1/NARROW_REVIEW.md)亲读verify-only/桥/原源保护和双前件，官方3.11 normal18/-O18各过（.433/.440秒），18manifest条目全同、实际runtime与既有源精确SHA/大小核过。仅open/capture/exercise，禁止build/save/render/export；控制编辑只内存恢复，原8Text按旧form-v2逐字节核
+- 唯一新阶段saved-source-fresh-open，原已存form-v2/.blend **纳入全仓保护**；旧build成功但旧source整体failed永久保留，新恢复另行准入/真实外Popen wait/完整SHA链。只组合“原成功build+新成功fresh”后才可有后续views适配，不伪造原source两阶段成功。120秒/verify30/CPU2/1.5GiB/20秒尾余量不变
+- 本包/本入口完整插件发布核回后，唯一准确入口是官方3.11 `observe_saved58l.py --run-approved saved-source-fresh-open`。恢复真实结果再外存核回后才原固定机位图；当前0native/fresh-open/新准入，形体候选不改，原23面corner几何失败/full_native=false及视觉/world/GOAL未过仍明示
+- 新独立图报2件已正常交付并回核：报告全文字节SHA同，PNG传原字节POST200、connector回取文件重封装但RGBA尺寸/像素完全同。原23+4受阻件仍原停、不解释旧网络错误；追踪53已送/43待送，其中16后续从未尝试新件现在按原授权流程逐件交付，私密ID/收据仅本地
 
 ## 20:46 form-v2已真实保存，但跨Python派生统计末位导致原报告相等门失败
 

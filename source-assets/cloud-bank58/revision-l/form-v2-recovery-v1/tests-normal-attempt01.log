@@ -1,0 +1,44 @@
+test_bridge_errno_failure_no_fd_leak (__main__.RecoveryTests.test_bridge_errno_failure_no_fd_leak) ... ok
+test_bridge_missing_symbol_stops (__main__.RecoveryTests.test_bridge_missing_symbol_stops) ... ok
+test_bridge_real_fd_closed (__main__.RecoveryTests.test_bridge_real_fd_closed) ... ok
+test_build_source_views_refused (__main__.RecoveryTests.test_build_source_views_refused) ... ok
+test_changed_source_refused (__main__.RecoveryTests.test_changed_source_refused) ... ok
+test_duplicate_admission_refused (__main__.RecoveryTests.test_duplicate_admission_refused) ... ok
+test_exact_native_command_only_verify (__main__.RecoveryTests.test_exact_native_command_only_verify) ... ok
+test_failed_build_refused (__main__.RecoveryTests.test_failed_build_refused) ... ok
+test_missing_source_refused (__main__.RecoveryTests.test_missing_source_refused) ... ok
+test_no_save_or_build_calls_in_adapter (__main__.RecoveryTests.test_no_save_or_build_calls_in_adapter) ... ok
+test_noop_no_supervision (__main__.RecoveryTests.test_noop_no_supervision) ... ok
+test_old_complete_source_still_rejected (__main__.RecoveryTests.test_old_complete_source_still_rejected) ... ok
+test_original_functions_directly_reused (__main__.RecoveryTests.test_original_functions_directly_reused) ... ok
+test_original_saved_predecessor (__main__.RecoveryTests.test_original_saved_predecessor) ... ok
+test_runtime (__main__.RecoveryTests.test_runtime) ... ok
+test_saved_source_never_excluded (__main__.RecoveryTests.test_saved_source_never_excluded) ... ok
+test_symlink_source_refused (__main__.RecoveryTests.test_symlink_source_refused) ... ok
+test_wrong_predecessor_not_relabelled_success (__main__.RecoveryTests.test_wrong_predecessor_not_relabelled_success) ... ok
+test_failed_cleanup_is_bounded_and_never_passes (test_runner58l_v3.IdentityTests.test_failed_cleanup_is_bounded_and_never_passes) ... Traceback (most recent call last):
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/source-runner-v3/deadline58l_v3.py", line 288, in supervise
+    time.sleep(POLL_SECONDS)
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/source-runner-v3/deadline58l_v3.py", line 190, in stopped
+    raise InterruptedError('Supervisor stop signal ' + str(number))
+InterruptedError: Supervisor stop signal 14
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/source-runner-v3/deadline58l_v3.py", line 341, in supervise
+    time.sleep(POLL_SECONDS)
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/source-runner-v3/deadline58l_v3.py", line 317, in cleanup_alarm
+    raise TimeoutError('Bounded failure cleanup/receipt expired')
+TimeoutError: Bounded failure cleanup/receipt expired
+ok
+test_no_unknown_or_supervisor_signal (test_runner58l_v3.IdentityTests.test_no_unknown_or_supervisor_signal) ... ok
+test_pin_rejects_changed_identity (test_runner58l_v3.IdentityTests.test_pin_rejects_changed_identity) ... ok
+test_preexisting_child_not_signaled_or_reaped (test_runner58l_v3.IdentityTests.test_preexisting_child_not_signaled_or_reaped) ... ok
+test_reused_pid_retired_without_signaling_replacement (test_runner58l_v3.IdentityTests.test_reused_pid_retired_without_signaling_replacement) ... ok
+test_unobservable_pidfd_is_rejected_before_fork (test_runner58l_v3.IdentityTests.test_unobservable_pidfd_is_rejected_before_fork) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.778s
+
+OK
