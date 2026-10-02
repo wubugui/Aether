@@ -1,6 +1,15 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 04:54 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 04:59 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 04:59 H两图实看拒绝，北山脊v2保护准备通过
+
+- 第五world三原图/完整失败已完整发布 **ea4db04dbc9202c5a949ed62ee10e36c26187e41**，tree **07dd12651b0a099ad10d66dd1d5c1617610dcebf**、parent32677268；27路径/26blob新bare独立公共Git回读字节/SHA一致，本地46205d4同树soft对齐。没有把600秒终态重新记为仍在运行
+- [H独立post-save两图](cloud-evidence/cloudbank58h-preview-20261002T045701Z-5xryonc5/RESULT_PREVIEW58H.md)两个新进程/wrapper全0、3.608秒/302708KiB，590旧输入及原156243B源SHA不变。每次实际开源后images0/libraries0/无stronglinks，网格/组/八控制/文本/field+blend/固定双相机/光材全核；无清库、重建或另存，原build false完整保留
+- **H两图继续视觉拒绝**：我与独立审查均实际看过两张原PNG及1216，前面仍堆圆泡，侧后两椭圆帽连着大空圆腹、下方圆坠块，缺少宽斜面/断续台阶/中尺度短折。两图324453/493999B，原固定机位及留边门不变；不能拿细三角替代造型，不扩四根、不入Game61。下一版先换明确粗面/折肩构造思路，尚未构建
+- [北山脊依赖guard v2](source-assets/north-ridge62-intake/dependency-guard-v2/RESULT.md)正常/优化Python均29/29负控通过，两次真实static检查1543保护身份。固定gzip/rawSHA、全1483加载闭包与精确51差集、project/UID/classcache、autoload/override/extension/remap/import缺席状态；运行前与finally后都核，变更不被采为新baseline，child0亦不能覆盖终态失败
+- 原6884B图遍历/4624B二进制审计器逐字节打包，说明历史首遍局限和复现方式；旧collector/plan/边界/1477/PREPARATION_CHECK/审计证据均不改。**v2尚未Godot解析或采集**，下一步本项即时发布后先原生parse、再有界collect，不能把Python模拟称占用或视觉通过
+- orbit v6正在准备每process MM身份/轻量遥测与显式连续输入协议，未新world。E/F2八件Slack原问题仍待答，新图无换路分享。完整GOAL及硬件GPU验收未通过
 
 ## 04:54第五world：65次真实转向，三图，600秒门失败
 

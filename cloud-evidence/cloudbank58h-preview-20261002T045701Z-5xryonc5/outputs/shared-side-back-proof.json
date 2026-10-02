@@ -1,0 +1,764 @@
+{
+  "state": "completed",
+  "passed": true,
+  "pid": 25,
+  "view": "shared-side-back",
+  "source_sha256_before": "2e5d757d9007e6a3dd92e4dc893dfe53ce80076cedc36b635f939377513bcd2a",
+  "source_saved": false,
+  "rebuilt": false,
+  "cleared_or_removed_datablocks": false,
+  "original_build_passed": false,
+  "world_loaded": false,
+  "pixels_edited": false,
+  "final_geometry_pass": false,
+  "visual_acceptance": false,
+  "factory_startup_inventory": {
+    "image_count": 2,
+    "library_count": 0,
+    "images": [
+      {
+        "name": "Render Result",
+        "type": "RENDER_RESULT",
+        "rna_type": "Image",
+        "source": "VIEWER",
+        "users": 1,
+        "use_fake_user": false,
+        "packed": {
+          "single_packed_file": false,
+          "single_packed_size_bytes": null,
+          "packed_files_count": 0,
+          "packed_files": []
+        },
+        "filepath": "",
+        "filepath_raw": "",
+        "library": null,
+        "direct_id_references": [],
+        "active_scene_user_paths": [],
+        "explicit_node_references": [],
+        "dependency_classification": "not_file_backed",
+        "external_filepath_followed": false,
+        "image_pixels_read": false
+      },
+      {
+        "name": "Viewer Node",
+        "type": "COMPOSITING",
+        "rna_type": "Image",
+        "source": "VIEWER",
+        "users": 0,
+        "use_fake_user": false,
+        "packed": {
+          "single_packed_file": false,
+          "single_packed_size_bytes": null,
+          "packed_files_count": 0,
+          "packed_files": []
+        },
+        "filepath": "",
+        "filepath_raw": "",
+        "library": null,
+        "direct_id_references": [],
+        "active_scene_user_paths": [],
+        "explicit_node_references": [],
+        "dependency_classification": "not_file_backed",
+        "external_filepath_followed": false,
+        "image_pixels_read": false
+      }
+    ],
+    "libraries": [],
+    "library_weak_references": [
+      {
+        "datablock": {
+          "name": "Dots Stroke",
+          "type": "Material",
+          "library": null
+        },
+        "library_filepath": "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/4.5/datafiles/assets/brushes/essentials_brushes-gp_draw.blend",
+        "id_name": "MADots Stroke",
+        "classification": "append_provenance_metadata_not_a_strong_library_link"
+      },
+      {
+        "datablock": {
+          "name": "Material",
+          "type": "Material",
+          "library": null
+        },
+        "library_filepath": "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/4.5/datafiles/assets/brushes/essentials_brushes-gp_draw.blend",
+        "id_name": "MAMaterial",
+        "classification": "append_provenance_metadata_not_a_strong_library_link"
+      }
+    ],
+    "all_strongly_linked_ids": [],
+    "references_source": "bpy.data.user_map plus direct node-image and image-socket pointers",
+    "active_scene_paths_are_native_id_graph_paths_not_render_visibility_proof": true,
+    "unresolved_file_backed_images": [],
+    "no_external_dependency_identified_in_images_libraries_scope": true,
+    "external_file_existence_or_bytes_checked": false
+  },
+  "post_save_validation": {
+    "stage": "Independent post-save full identity validation, not a repaired build result",
+    "passed": true,
+    "original_build_passed": false,
+    "original_build_external_data_gate": false,
+    "original_pre_save_datablocks": {
+      "image_count": 0,
+      "library_count": 1,
+      "images": [],
+      "libraries": [
+        {
+          "name": "B_staggered_crowns.blend",
+          "type": "Library",
+          "source": null,
+          "source_property_present": false,
+          "users": 1,
+          "packed": {
+            "single_packed_file": false,
+            "single_packed_size_bytes": null,
+            "packed_files_count": null,
+            "packed_files": []
+          },
+          "filepath": "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-e/B_staggered_crowns.blend",
+          "library": null,
+          "parent": null,
+          "direct_id_references": [],
+          "linked_datablock_count": 0,
+          "linked_datablocks": [],
+          "dependency_classification": "library_record_without_linked_datablocks_found",
+          "external_filepath_followed": false
+        }
+      ],
+      "library_weak_references": [
+        {
+          "datablock": {
+            "name": "VIEW58E_1216-source-front",
+            "type": "Camera",
+            "library": null
+          },
+          "library_filepath": "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-e/B_staggered_crowns.blend",
+          "id_name": "CAVIEW58E_1216-source-front",
+          "classification": "append_provenance_metadata_not_a_strong_library_link"
+        },
+        {
+          "datablock": {
+            "name": "VIEW58E_shared-side-back",
+            "type": "Camera",
+            "library": null
+          },
+          "library_filepath": "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-e/B_staggered_crowns.blend",
+          "id_name": "CAVIEW58E_shared-side-back",
+          "classification": "append_provenance_metadata_not_a_strong_library_link"
+        }
+      ],
+      "all_strongly_linked_ids": [],
+      "references_source": "bpy.data.user_map plus direct node-image and image-socket pointers",
+      "active_scene_paths_are_native_id_graph_paths_not_render_visibility_proof": true,
+      "unresolved_file_backed_images": [],
+      "no_external_dependency_identified_in_images_libraries_scope": true,
+      "external_file_existence_or_bytes_checked": false
+    },
+    "original_failure_attribution": "Recorded image_count=0, library_count=1; no strongly linked ID. Strict Library-count gate failed.",
+    "source_saved": false,
+    "cleared_or_removed_datablocks": false,
+    "world_loaded": false,
+    "final_geometry_pass": false,
+    "visual_acceptance": false,
+    "pre_render_datablocks": {
+      "image_count": 0,
+      "library_count": 0,
+      "images": [],
+      "libraries": [],
+      "library_weak_references": [
+        {
+          "datablock": {
+            "name": "VIEW58E_1216-source-front",
+            "type": "Camera",
+            "library": null
+          },
+          "library_filepath": "//../revision-e/B_staggered_crowns.blend",
+          "id_name": "CAVIEW58E_1216-source-front",
+          "classification": "append_provenance_metadata_not_a_strong_library_link"
+        },
+        {
+          "datablock": {
+            "name": "VIEW58E_shared-side-back",
+            "type": "Camera",
+            "library": null
+          },
+          "library_filepath": "//../revision-e/B_staggered_crowns.blend",
+          "id_name": "CAVIEW58E_shared-side-back",
+          "classification": "append_provenance_metadata_not_a_strong_library_link"
+        }
+      ],
+      "all_strongly_linked_ids": [],
+      "references_source": "bpy.data.user_map plus direct node-image and image-socket pointers",
+      "active_scene_paths_are_native_id_graph_paths_not_render_visibility_proof": true,
+      "unresolved_file_backed_images": [],
+      "no_external_dependency_identified_in_images_libraries_scope": true,
+      "external_file_existence_or_bytes_checked": false
+    },
+    "loaded_subgates": {
+      "images_empty": true,
+      "libraries_empty": true,
+      "no_strong_library_links": true
+    },
+    "loaded_failing_subgates": [],
+    "native_identity": {
+      "checks": {
+        "single_mesh": true,
+        "no_intermediate_mesh": true,
+        "nonempty": true,
+        "no_modifiers": true,
+        "flat_faces": true,
+        "matrix_identity": true,
+        "effective_visible": true,
+        "exact_control_names": true,
+        "native_empty_controls": true,
+        "exact_edit_group_names": true,
+        "embedded_texts_match_files": true,
+        "no_external_data": true,
+        "field_parameters_exact": true,
+        "blend_parameters_exact": true,
+        "no_strong_library_links": true,
+        "autoexec_disabled": true
+      },
+      "passed": true,
+      "mesh": {
+        "vertices_sha256": "358c86f98dc1417d27bd11417ddc802fc87ac1d8a4b4569c78355633d6bd1b7d",
+        "oriented_triangles_sha256": "58e3ea6de9ea767014177f0e622aaa739be897824f5368ec4eeedb4cc374a006",
+        "vertices": 802,
+        "triangles": 1600
+      },
+      "group_sha256": "69dabfca7e4d4853ace434c26457b179a2bb7eae9cbdbb3e29648d86a5f0ad02",
+      "controls": [
+        {
+          "name": "CONTROL58H_Front_Left_Belly",
+          "location": [
+            -119.16778564453125,
+            12.807747840881348,
+            630.0
+          ],
+          "rotation_mode": "XYZ",
+          "rotation_euler": [
+            0.19198621809482574,
+            -0.2617994248867035,
+            -1.1473044157028198
+          ],
+          "scale": [
+            88.2292709350586,
+            73.35916900634766,
+            75.34185028076172
+          ],
+          "control_id": "Front_Left_Belly",
+          "role": "local under-return belonging to front shoulder, no full-width base"
+        },
+        {
+          "name": "CONTROL58H_Front_Low_Shoulder",
+          "location": [
+            -105.0749740600586,
+            -35.724639892578125,
+            698.0
+          ],
+          "rotation_mode": "XYZ",
+          "rotation_euler": [
+            0.2617994248867035,
+            0.10471977293491364,
+            -1.234571099281311
+          ],
+          "scale": [
+            106.26144409179688,
+            83.6316909790039,
+            73.79267120361328
+          ],
+          "control_id": "Front_Low_Shoulder",
+          "role": "broad shoulder stepping forward below the main crown"
+        },
+        {
+          "name": "CONTROL58H_Main_Crown",
+          "location": [
+            -54.315155029296875,
+            75.2187728881836,
+            782.2647705078125
+          ],
+          "rotation_mode": "XYZ",
+          "rotation_euler": [
+            -0.022163549438118935,
+            0.0686313733458519,
+            -1.0275737047195435
+          ],
+          "scale": [
+            142.6388702392578,
+            116.92900085449219,
+            84.19358825683594
+          ],
+          "control_id": "Main_Crown",
+          "role": "broad offset main crown, shorter vertically than F2 stone peak"
+        },
+        {
+          "name": "CONTROL58H_Rear_Lower_Crown",
+          "location": [
+            132.5323944091797,
+            -38.68026351928711,
+            748.4357299804688
+          ],
+          "rotation_mode": "XYZ",
+          "rotation_euler": [
+            0.03554439917206764,
+            -0.06650343537330627,
+            -0.5402082204818726
+          ],
+          "scale": [
+            113.51689147949219,
+            92.83333587646484,
+            68.11189270019531
+          ],
+          "control_id": "Rear_Lower_Crown",
+          "role": "smaller lower rear crown, not a matching twin peak"
+        },
+        {
+          "name": "CONTROL58H_Rear_Right_Belly",
+          "location": [
+            128.03469848632812,
+            -23.687911987304688,
+            646.0
+          ],
+          "rotation_mode": "XYZ",
+          "rotation_euler": [
+            -0.24434609711170197,
+            0.15707963705062866,
+            -0.34445300698280334
+          ],
+          "scale": [
+            84.44902038574219,
+            75.611328125,
+            64.80970764160156
+          ],
+          "control_id": "Rear_Right_Belly",
+          "role": "higher rear return offset in depth and height from front belly"
+        },
+        {
+          "name": "CONTROL58H_Right_Mid_Shoulder",
+          "location": [
+            198.32740783691406,
+            -61.89699172973633,
+            687.0
+          ],
+          "rotation_mode": "XYZ",
+          "rotation_euler": [
+            -0.20943954586982727,
+            0.2967059910297394,
+            -0.48407939076423645
+          ],
+          "scale": [
+            76.28335571289062,
+            87.04126739501953,
+            65.52545166015625
+          ],
+          "control_id": "Right_Mid_Shoulder",
+          "role": "asymmetric lateral step under rear crown, above the front shoulder return"
+        },
+        {
+          "name": "CONTROL58H_Small_Turn_Shoulder",
+          "location": [
+            -162.90261840820312,
+            110.34371185302734,
+            735.0
+          ],
+          "rotation_mode": "XYZ",
+          "rotation_euler": [
+            -0.12217305600643158,
+            0.2094395011663437,
+            -1.3043841123580933
+          ],
+          "scale": [
+            55.26825714111328,
+            56.237876892089844,
+            51.38978576660156
+          ],
+          "control_id": "Small_Turn_Shoulder",
+          "role": "single small change of direction on left front contour, not repeated surface noise"
+        },
+        {
+          "name": "CONTROL58H_Wide_Oblique_Core",
+          "location": [
+            33.71137619018555,
+            15.24936580657959,
+            707.0
+          ],
+          "rotation_mode": "XYZ",
+          "rotation_euler": [
+            -0.13962632417678833,
+            -0.19198621809482574,
+            -0.3968128561973572
+          ],
+          "scale": [
+            126.46937561035156,
+            79.87540435791016,
+            83.67899322509766
+          ],
+          "control_id": "Wide_Oblique_Core",
+          "role": "deep wide overlap joining the crowns internally, never a common bottom plate"
+        }
+      ],
+      "text_sha256": {
+        "FIELD58H_patch.py": "b495c93cee12477a63b23f61da95356890cbfba21af4c431de0631751ebeb2ea",
+        "EDIT58H_rebuild.py": "d5cd8ef800f2701713132206410fffb060af3024ee6ea4be01d21cb8f6968187",
+        "CONTROL58H.json": "ccd1f711f281b87408777d05886bbd0baaaec018b206ed84d4f66bb9537f5e3f"
+      },
+      "field_parameters": {
+        "gradient_semantics": "Deterministic branch gradient at hard-min ties; zero norm gradient at control centers; tetrahedron linear gradients determine mesh winding",
+        "half_axes_semantics": "Actual individual zero-surface half-axes in metres; no density strength or support multiplier",
+        "iso_value": 0.0,
+        "kernel": "Hard union of original ellipsoid PSEUDO-distances plus independently computed designated pair candidates",
+        "ownership_semantics": "Nonnegative nearest-original-piece one-hot weights; ties within 1e-12 pseudo-metres split equally; NOT additive density contributions",
+        "pair_candidate": "min(d_a,d_b) - w * max(width_m - abs(d_a-d_b), 0)^2 / (4*width_m)",
+        "piece_pseudo_distance": "d_i = min(half_axes_i) * (norm(((p-center_i) @ axes_local_i) / half_axes_i) - 1)",
+        "positive_inside": true,
+        "scalar_correction_bound": "Each candidate differs from its pair hard min by 0..width_m/4; global correction <= max(width_m)/4. This is NOT a spatial displacement bound.",
+        "union": "D = min(all d_i, all designated pair candidates); public scalar = -D",
+        "window": "w = max(1 - sum(((p-window_center_uvy_m)/window_half_axes_m)^2), 0)^2"
+      },
+      "blend_parameters": [
+        {
+          "id": "front_shoulder_main_root",
+          "pair": [
+            "Front_Low_Shoulder",
+            "Main_Crown"
+          ],
+          "width_m": 12.0,
+          "window_center_uvy_m": [
+            -76.0,
+            -55.0,
+            736.0
+          ],
+          "window_half_axes_m": [
+            100.0,
+            60.0,
+            80.0
+          ]
+        },
+        {
+          "id": "back_right_shoulder_rear_root",
+          "pair": [
+            "Right_Mid_Shoulder",
+            "Rear_Lower_Crown"
+          ],
+          "width_m": 12.0,
+          "window_center_uvy_m": [
+            170.0,
+            98.0,
+            714.0
+          ],
+          "window_half_axes_m": [
+            65.0,
+            60.0,
+            70.0
+          ]
+        },
+        {
+          "id": "high_small_shoulder_main_root",
+          "pair": [
+            "Small_Turn_Shoulder",
+            "Main_Crown"
+          ],
+          "width_m": 12.0,
+          "window_center_uvy_m": [
+            -197.0,
+            -37.0,
+            770.0
+          ],
+          "window_half_axes_m": [
+            52.0,
+            49.0,
+            62.0
+          ]
+        }
+      ],
+      "final_geometry_pass": false,
+      "visual_acceptance": false
+    },
+    "original_recorded_identity_comparisons": {
+      "mesh": true,
+      "group_sha256": true,
+      "controls": true,
+      "text_sha256": true,
+      "field_parameters": true,
+      "blend_parameters": true
+    },
+    "cameras": [
+      {
+        "name": "1216-source-front",
+        "matrix_world": [
+          [
+            0.6853646636009216,
+            0.11998851597309113,
+            -0.7182464599609375,
+            -958.0
+          ],
+          [
+            -0.7282000184059143,
+            0.11293032020330429,
+            -0.6759966611862183,
+            -633.0
+          ],
+          [
+            -2.939170329341323e-08,
+            0.9863313436508179,
+            0.164774090051651,
+            1150.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "projection": [
+          [
+            0.9366548657417297,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.6642794609069824,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0000388622283936,
+            -0.7000135779380798
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            0.0
+          ]
+        ],
+        "actual_vertex_bounds_normalized": [
+          [
+            0.4793289303779602,
+            0.1898808479309082
+          ],
+          [
+            0.6675039529800415,
+            0.4390562176704407
+          ]
+        ],
+        "depth_range_m": [
+          1005.1478271484375,
+          1377.738525390625
+        ],
+        "resolution_xy": [
+          836,
+          471
+        ],
+        "pixel_aspect_xy": [
+          1.0010626992561105,
+          1.0
+        ],
+        "all_vertices_in_front": true,
+        "actual_vertex_count": 802,
+        "world_loaded": false,
+        "visual_acceptance": false,
+        "expected_reference_projection": [
+          [
+            0.93665486574173,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.66427946090698,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.00003886222839,
+            -0.70001357793808
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            0.0
+          ]
+        ],
+        "maximum_projection_matrix_error": 3.552713678800501e-15,
+        "passed": true,
+        "crop_permitted_for_exact_reference_camera": true,
+        "reduced_resolution_not_reference_pixel_validation": true,
+        "same_E_camera_matrix": true,
+        "same_E_camera_projection": true
+      },
+      {
+        "name": "shared-side-back",
+        "matrix_world": [
+          [
+            -0.6139405369758606,
+            -0.2163812667131424,
+            0.7591153979301453,
+            1790.6153564453125
+          ],
+          [
+            0.7893522381782532,
+            -0.16829639673233032,
+            0.5904229879379272,
+            1408.5880126953125
+          ],
+          [
+            -9.883301288482471e-08,
+            0.961694061756134,
+            0.27412503957748413,
+            1391.8411865234375
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "projection": [
+          [
+            0.003043601755052805,
+            0.0,
+            0.0,
+            -0.0
+          ],
+          [
+            0.0,
+            0.004342066589742899,
+            0.0,
+            -0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -0.00011111326602986082,
+            -1.0000388622283936
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "actual_vertex_bounds_normalized": [
+          [
+            0.1021042987704277,
+            0.0975991040468216
+          ],
+          [
+            0.8487188816070557,
+            0.7704428434371948
+          ]
+        ],
+        "depth_range_m": [
+          2191.121826171875,
+          2568.18505859375
+        ],
+        "resolution_xy": [
+          836,
+          586
+        ],
+        "pixel_aspect_xy": [
+          1,
+          1
+        ],
+        "all_vertices_in_front": true,
+        "actual_vertex_count": 802,
+        "world_loaded": false,
+        "visual_acceptance": false,
+        "minimum_margin": 0.0975991040468216,
+        "passed": true,
+        "all_actual_vertices_inside": true,
+        "same_E_camera_matrix": true,
+        "same_E_camera_projection": true
+      }
+    ],
+    "material_and_lighting_unchanged": true
+  },
+  "renderer": {
+    "engine": "CYCLES",
+    "device": "CPU",
+    "threads": 2,
+    "samples": 8,
+    "denoising": false,
+    "compositing": false,
+    "sequencer": false,
+    "resolution": [
+      836,
+      586
+    ]
+  },
+  "post_render_datablocks": {
+    "image_count": 1,
+    "library_count": 0,
+    "images": [
+      {
+        "name": "Render Result",
+        "type": "RENDER_RESULT",
+        "rna_type": "Image",
+        "source": "VIEWER",
+        "users": 1,
+        "use_fake_user": false,
+        "packed": {
+          "single_packed_file": false,
+          "single_packed_size_bytes": null,
+          "packed_files_count": 0,
+          "packed_files": []
+        },
+        "filepath": "",
+        "filepath_raw": "",
+        "library": null,
+        "direct_id_references": [],
+        "active_scene_user_paths": [],
+        "explicit_node_references": [],
+        "dependency_classification": "not_file_backed",
+        "external_filepath_followed": false,
+        "image_pixels_read": false
+      }
+    ],
+    "libraries": [],
+    "library_weak_references": [
+      {
+        "datablock": {
+          "name": "VIEW58E_1216-source-front",
+          "type": "Camera",
+          "library": null
+        },
+        "library_filepath": "//../revision-e/B_staggered_crowns.blend",
+        "id_name": "CAVIEW58E_1216-source-front",
+        "classification": "append_provenance_metadata_not_a_strong_library_link"
+      },
+      {
+        "datablock": {
+          "name": "VIEW58E_shared-side-back",
+          "type": "Camera",
+          "library": null
+        },
+        "library_filepath": "//../revision-e/B_staggered_crowns.blend",
+        "id_name": "CAVIEW58E_shared-side-back",
+        "classification": "append_provenance_metadata_not_a_strong_library_link"
+      }
+    ],
+    "all_strongly_linked_ids": [],
+    "references_source": "bpy.data.user_map plus direct node-image and image-socket pointers",
+    "active_scene_paths_are_native_id_graph_paths_not_render_visibility_proof": true,
+    "unresolved_file_backed_images": [],
+    "no_external_dependency_identified_in_images_libraries_scope": true,
+    "external_file_existence_or_bytes_checked": false
+  },
+  "post_render_datablocks_note": "Runtime render-result images are recorded after rendering; not saved to source and not used to rewrite the pre-render gate.",
+  "image_sha256": "d50891275cef72721278aab16a74d95fb0f56627bec2ee88167531398b1ef170",
+  "image_bytes": 493999,
+  "source_sha256_after": "2e5d757d9007e6a3dd92e4dc893dfe53ce80076cedc36b635f939377513bcd2a",
+  "source_unchanged": true
+}

@@ -16,8 +16,13 @@ import re
 import shutil
 import signal
 import subprocess
+import sys
 import tempfile
 import time
+
+# Keep the advertised default/static check free of bytecode-file writes.
+sys.dont_write_bytecode = True
+from dependency_guard62 import validate_dependencies
 
 HERE = Path(__file__).resolve().parent
 AETHER = HERE.parents[1]
@@ -26,7 +31,10 @@ GODOT = AETHER.parent / 'tools-feiting/Godot_v4.5.1-stable_linux.x86_64'
 PRIOR = AETHER / 'cloud-evidence/player-nearbay61-renderer-20261001T131646Z-f5163t8s/input-sha256.json'
 SCRIPT = HERE / 'collect_saved62.gd'
 ENGINE_SHA = 'db07cae7de644278a1884d4552bdf2bca3f5d30131b18faf3a0c4d730080b199'
-SOURCES = ('collect_saved62.gd', 'run_intake62.py', 'plan.json', 'reused-boundary-index.json', 'README.md')
+SOURCES = ('collect_saved62.gd', 'run_intake62.py', 'dependency_guard62.py', 'plan.json',
+           'reused-boundary-index.json', 'README.md', 'DEPENDENCY_REVIEW.json.gz',
+           'audit-tools/audit_north62_deps.py', 'audit-tools/north62_binary_review.py',
+           'audit-tools/README.md')
 
 
 def digest(path: Path) -> str:
@@ -44,6 +52,7 @@ def require(condition: bool, message: str) -> None:
 
 
 def manifest() -> dict[str, str]:
+    reviewed, _ = validate_dependencies(PROJECT, PRIOR)
     old = json.loads(PRIOR.read_text())
     if len(old) != 1477:
         raise RuntimeError('Expected exactly 1477 protected prior inputs')
@@ -52,6 +61,7 @@ def manifest() -> dict[str, str]:
             raise RuntimeError('Protected input absent or changed: ' + raw)
     plan = json.loads((HERE / 'plan.json').read_text())
     extra = [PRIOR, GODOT, Path(plan['reuse_geometry_file']), *[HERE / x for x in SOURCES]]
+    old.update(reviewed)
     old.update({str(p): digest(p) for p in extra})
     return dict(sorted(old.items()))
 
@@ -60,6 +70,7 @@ def static_checks() -> dict:
     ast.parse(Path(__file__).read_text())
     plan = json.loads((HERE / 'plan.json').read_text())
     protected = manifest()
+    _, dependency_guard = validate_dependencies(PROJECT, PRIOR)
     settings = (PROJECT/'project.godot').read_text()
     section = ''
     for raw in settings.splitlines():
@@ -117,6 +128,7 @@ def static_checks() -> dict:
             'reused_boundary_index_exactly_recomputed':True,
             'godot_parse_passed':False, 'native_collection_passed':False,
             'all_occupancy_complete':False, 'protected_prior_inputs':1477,
+            'dependency_guard':dependency_guard,
             'manifest_count':len(protected), 'target_tiles':plan['target_tiles'],
             'no_previous_position_dataset_tiles':sorted(set(plan['terrain_and_neighbor_names'])-set(plan['reuse_geometry_tiles'])),
             'source_sha256':{name:digest(HERE/name) for name in SOURCES}}
@@ -210,7 +222,9 @@ def main() -> int:
         write_json(out/'wrapper-report.json',result)
         write_json(out/'input-sha256.json',before)
         write_json(out/'preparation.json',preparation)
-        for name in SOURCES: shutil.copy2(HERE/name,out/name)
+        for name in SOURCES:
+            (out/name).parent.mkdir(parents=True,exist_ok=True)
+            shutil.copy2(HERE/name,out/name)
         userdata = Path(tempfile.mkdtemp(prefix='north-ridge62-xdg-',dir=AETHER.parent/'tools-feiting'))
         env = os.environ.copy()
         env.update(OMP_NUM_THREADS='2',OPENBLAS_NUM_THREADS='2',PYTHONDONTWRITEBYTECODE='1',
@@ -220,6 +234,9 @@ def main() -> int:
         command = [str(GODOT),'--headless','--path',str(PROJECT),'--audio-driver','Dummy',
                    '--rendering-method','gl_compatibility','--script',str(out/SCRIPT.name)]
         if args.parse_only: command.insert(1,'--check-only')
+        # Recheck against the immutable review immediately before the child,
+        # including absence claims that a plain hash manifest cannot express.
+        _, result['dependency_guard_before'] = validate_dependencies(PROJECT, PRIOR)
         result['status'] = 'running'
         process = launch(command,out,env)
         result['process'] = process
@@ -245,10 +262,17 @@ def main() -> int:
         result.update(status='wrapper_exception',exception=repr(exc),passed=False)
     finally:
         try:
-            result['changed_inputs'] = [raw for raw,sha in before.items() if not Path(raw).is_file() or digest(Path(raw)) != sha]
-            if result['changed_inputs']: result['passed'] = False
+            _, result['dependency_guard_after'] = validate_dependencies(PROJECT, PRIOR)
         except BaseException as exc:
-            result.update(input_recheck_error=repr(exc),passed=False)
+            result.update(dependency_guard_recheck_error=repr(exc),passed=False,
+                          godot_parse_passed=False,native_collection_passed=False)
+        try:
+            result['changed_inputs'] = [raw for raw,sha in before.items() if not Path(raw).is_file() or digest(Path(raw)) != sha]
+            if result['changed_inputs']:
+                result.update(passed=False,godot_parse_passed=False,native_collection_passed=False)
+        except BaseException as exc:
+            result.update(input_recheck_error=repr(exc),passed=False,
+                          godot_parse_passed=False,native_collection_passed=False)
         write_json(out/'wrapper-report.json',result)
         for sig,handler in prior_handlers.items(): signal.signal(sig,handler)
     print(json.dumps(result,indent=2))

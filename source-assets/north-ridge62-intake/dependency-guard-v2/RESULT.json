@@ -1,0 +1,563 @@
+{
+  "status": "v2_pure_python_guard_preparation_pass",
+  "verified_at_utc": "2026-10-02T04:54:56Z",
+  "verification_clock": "clock.curr_time tool; filesystem clock was not used",
+  "normal_fixture": {
+    "status": "pure_python_fixture_pass",
+    "optimization_level": 0,
+    "passed": true,
+    "checks_passed": 29,
+    "checks": [
+      {
+        "case": "all_five_python_sources_parse",
+        "passed": true
+      },
+      {
+        "case": "real_1483_closure_and_startup_identity_pass",
+        "passed": true
+      },
+      {
+        "case": "isolated_copy_positive",
+        "passed": true
+      },
+      {
+        "case": "omitted_script_same_length_change",
+        "passed": true,
+        "rejection": "Dependency guard: SHA256 changed: res://scripts/hud.gd"
+      },
+      {
+        "case": "covered_entry_same_length_change",
+        "passed": true,
+        "rejection": "Dependency guard: SHA256 changed: res://scenes/candidate61-coast/Game61Coast.tscn"
+      },
+      {
+        "case": "omitted_imported_scene_same_length_change",
+        "passed": true,
+        "rejection": "Dependency guard: SHA256 changed: res://.godot/imported/poplar.glb-8386d326e6b0620c1917bf931c4d7aab.scn"
+      },
+      {
+        "case": "existing_import_remap_changed",
+        "passed": true,
+        "rejection": "Dependency guard: SHA256 changed: res://assets/models/poplar.glb.import"
+      },
+      {
+        "case": "uid_cache_same_length_change",
+        "passed": true,
+        "rejection": "Dependency guard: SHA256 changed: .godot/uid_cache.bin"
+      },
+      {
+        "case": "global_class_cache_same_length_change",
+        "passed": true,
+        "rejection": "Dependency guard: SHA256 changed: .godot/global_script_class_cache.cfg"
+      },
+      {
+        "case": "nonempty_autoload_added",
+        "passed": true,
+        "rejection": "Dependency guard: byte length changed: project.godot"
+      },
+      {
+        "case": "project_resource_remap_setting_added",
+        "passed": true,
+        "rejection": "Dependency guard: byte length changed: project.godot"
+      },
+      {
+        "case": "empty_override_appeared",
+        "passed": true,
+        "rejection": "Dependency guard: reviewed-absent path appeared: override.cfg"
+      },
+      {
+        "case": "dangling_override_symlink_appeared",
+        "passed": true,
+        "rejection": "Dependency guard: symlinked dependency path: res://override.cfg"
+      },
+      {
+        "case": "empty_extension_list_appeared",
+        "passed": true,
+        "rejection": "Dependency guard: reviewed-absent path appeared: .godot/extension_list.cfg"
+      },
+      {
+        "case": "new_dependency_remap_appeared",
+        "passed": true,
+        "rejection": "Dependency guard: unreviewed remap/import sidecar: res://scripts/hud.gd.remap"
+      },
+      {
+        "case": "dangling_remap_symlink_appeared",
+        "passed": true,
+        "rejection": "Dependency guard: unreviewed remap/import sidecar: res://scripts/hud.gd.remap"
+      },
+      {
+        "case": "new_import_sidecar_appeared",
+        "passed": true,
+        "rejection": "Dependency guard: unreviewed remap/import sidecar: res://scripts/hud.gd.import"
+      },
+      {
+        "case": "omitted_script_missing",
+        "passed": true,
+        "rejection": "Dependency guard: missing/nonregular file: res://scripts/hud.gd"
+      },
+      {
+        "case": "uid_cache_missing",
+        "passed": true,
+        "rejection": "Dependency guard: missing/nonregular file: .godot/uid_cache.bin"
+      },
+      {
+        "case": "frozen_gzip_byte_changed",
+        "passed": true,
+        "rejection": "Dependency guard: SHA256 changed: frozen review gzip"
+      },
+      {
+        "case": "equivalent_json_unapproved_gzip_rejected",
+        "passed": true,
+        "rejection": "Dependency guard: SHA256 changed: frozen review gzip"
+      },
+      {
+        "case": "historical_manifest_changed",
+        "passed": true,
+        "rejection": "Dependency guard: historical 1477 manifest identity changed"
+      },
+      {
+        "case": "packaged_auditor_changed",
+        "passed": true,
+        "rejection": "Dependency guard: packaged auditor identity changed: audit-tools/audit_north62_deps.py"
+      },
+      {
+        "case": "simulated_positive_terminal_flow",
+        "passed": true,
+        "simulated_launch_calls": 1,
+        "wrapper_returncode": 0,
+        "engine_started": false
+      },
+      {
+        "case": "prelaunch_new_override_blocks_admission",
+        "passed": true,
+        "simulated_launch_calls": 0,
+        "wrapper_returncode": 1,
+        "engine_started": false
+      },
+      {
+        "case": "postlaunch_new_remap_clears_success",
+        "passed": true,
+        "simulated_launch_calls": 1,
+        "wrapper_returncode": 1,
+        "engine_started": false
+      },
+      {
+        "case": "postlaunch_uid_change_clears_success",
+        "passed": true,
+        "simulated_launch_calls": 1,
+        "wrapper_returncode": 1,
+        "engine_started": false
+      },
+      {
+        "case": "cancelled_flow_still_checks_absence",
+        "passed": true,
+        "simulated_launch_calls": 1,
+        "wrapper_returncode": 1,
+        "engine_started": false
+      },
+      {
+        "case": "real_inputs_and_frozen_evidence_unchanged_after_fixtures",
+        "passed": true
+      }
+    ],
+    "real_dependency_guard": {
+      "status": "frozen_dependency_identities_verified",
+      "review_gzip_sha256": "e39ef6863849f6034f9c7fb3efeb97a191e39d3cacc9fdab9903692a832fe722",
+      "review_json_sha256": "4aa3634f3ec1d1e380d53d724ffa707af4bf66b7136c0bd5fc9592d4d9e80601",
+      "reviewed_closure_files": 1483,
+      "reviewed_closure_bytes": 133839275,
+      "exact_prior_manifest_delta_files": 51,
+      "prior_manifest_sha256": "3329d137d9c43c0fbd2f43f8ca52c4529b8590d891c5fca6fdd376fe3c2b1db9",
+      "startup_control_identities_verified": [
+        "project.godot",
+        "override.cfg",
+        ".godot/global_script_class_cache.cfg",
+        ".godot/extension_list.cfg",
+        ".godot/uid_cache.bin"
+      ],
+      "reviewed_absent_controls_still_absent": [
+        "override.cfg",
+        ".godot/extension_list.cfg"
+      ],
+      "unreviewed_dependency_remap_or_import_sidecars": [],
+      "packaged_auditors_match_frozen_embedded_sources": true,
+      "project_autoload_empty": true,
+      "global_script_class_cache_empty": true,
+      "uid_cache_matches_review": true,
+      "godot_invoked": false,
+      "native_parse_passed": false,
+      "native_collection_passed": false,
+      "all_occupancy_complete": false
+    },
+    "frozen_legacy_sha256": {
+      "PREPARATION_CHECK.json": "89eef9491d23fab11a3590eadc6019fc85f13a7824fb5e96cc9d03591f2af573",
+      "collect_saved62.gd": "de01904877245d5543c5fc67aadb0a3fc9a9bc81fe26ac589430258998bd81fd",
+      "plan.json": "4f87a817181ac55991730f1889dcd91b277a888524f383d4a74cb5ff6a481040",
+      "reused-boundary-index.json": "d9447a154632a989f3bf2594e5108dfcff1d23b9fd1847a8e16ab798173db9d9",
+      "DEPENDENCY_REVIEW.md": "8cf3959ad06d1aceb1f56f9f263dbc2db78abffef40a98018067e6f462939497",
+      "DEPENDENCY_REVIEW.json": "4aa3634f3ec1d1e380d53d724ffa707af4bf66b7136c0bd5fc9592d4d9e80601",
+      "DEPENDENCY_REVIEW.json.gz": "e39ef6863849f6034f9c7fb3efeb97a191e39d3cacc9fdab9903692a832fe722",
+      "dependency-storage.json": "dbc61273d8761f5dc4f0c08c94523263dccae34e30e68bebb68b2d371390d965"
+    },
+    "engines_started": false,
+    "native_parse_passed": false,
+    "native_collection_passed": false,
+    "all_occupancy_complete": false
+  },
+  "optimized_fixture": {
+    "status": "pure_python_fixture_pass",
+    "optimization_level": 1,
+    "passed": true,
+    "checks_passed": 29,
+    "checks": [
+      {
+        "case": "all_five_python_sources_parse",
+        "passed": true
+      },
+      {
+        "case": "real_1483_closure_and_startup_identity_pass",
+        "passed": true
+      },
+      {
+        "case": "isolated_copy_positive",
+        "passed": true
+      },
+      {
+        "case": "omitted_script_same_length_change",
+        "passed": true,
+        "rejection": "Dependency guard: SHA256 changed: res://scripts/hud.gd"
+      },
+      {
+        "case": "covered_entry_same_length_change",
+        "passed": true,
+        "rejection": "Dependency guard: SHA256 changed: res://scenes/candidate61-coast/Game61Coast.tscn"
+      },
+      {
+        "case": "omitted_imported_scene_same_length_change",
+        "passed": true,
+        "rejection": "Dependency guard: SHA256 changed: res://.godot/imported/poplar.glb-8386d326e6b0620c1917bf931c4d7aab.scn"
+      },
+      {
+        "case": "existing_import_remap_changed",
+        "passed": true,
+        "rejection": "Dependency guard: SHA256 changed: res://assets/models/poplar.glb.import"
+      },
+      {
+        "case": "uid_cache_same_length_change",
+        "passed": true,
+        "rejection": "Dependency guard: SHA256 changed: .godot/uid_cache.bin"
+      },
+      {
+        "case": "global_class_cache_same_length_change",
+        "passed": true,
+        "rejection": "Dependency guard: SHA256 changed: .godot/global_script_class_cache.cfg"
+      },
+      {
+        "case": "nonempty_autoload_added",
+        "passed": true,
+        "rejection": "Dependency guard: byte length changed: project.godot"
+      },
+      {
+        "case": "project_resource_remap_setting_added",
+        "passed": true,
+        "rejection": "Dependency guard: byte length changed: project.godot"
+      },
+      {
+        "case": "empty_override_appeared",
+        "passed": true,
+        "rejection": "Dependency guard: reviewed-absent path appeared: override.cfg"
+      },
+      {
+        "case": "dangling_override_symlink_appeared",
+        "passed": true,
+        "rejection": "Dependency guard: symlinked dependency path: res://override.cfg"
+      },
+      {
+        "case": "empty_extension_list_appeared",
+        "passed": true,
+        "rejection": "Dependency guard: reviewed-absent path appeared: .godot/extension_list.cfg"
+      },
+      {
+        "case": "new_dependency_remap_appeared",
+        "passed": true,
+        "rejection": "Dependency guard: unreviewed remap/import sidecar: res://scripts/hud.gd.remap"
+      },
+      {
+        "case": "dangling_remap_symlink_appeared",
+        "passed": true,
+        "rejection": "Dependency guard: unreviewed remap/import sidecar: res://scripts/hud.gd.remap"
+      },
+      {
+        "case": "new_import_sidecar_appeared",
+        "passed": true,
+        "rejection": "Dependency guard: unreviewed remap/import sidecar: res://scripts/hud.gd.import"
+      },
+      {
+        "case": "omitted_script_missing",
+        "passed": true,
+        "rejection": "Dependency guard: missing/nonregular file: res://scripts/hud.gd"
+      },
+      {
+        "case": "uid_cache_missing",
+        "passed": true,
+        "rejection": "Dependency guard: missing/nonregular file: .godot/uid_cache.bin"
+      },
+      {
+        "case": "frozen_gzip_byte_changed",
+        "passed": true,
+        "rejection": "Dependency guard: SHA256 changed: frozen review gzip"
+      },
+      {
+        "case": "equivalent_json_unapproved_gzip_rejected",
+        "passed": true,
+        "rejection": "Dependency guard: SHA256 changed: frozen review gzip"
+      },
+      {
+        "case": "historical_manifest_changed",
+        "passed": true,
+        "rejection": "Dependency guard: historical 1477 manifest identity changed"
+      },
+      {
+        "case": "packaged_auditor_changed",
+        "passed": true,
+        "rejection": "Dependency guard: packaged auditor identity changed: audit-tools/audit_north62_deps.py"
+      },
+      {
+        "case": "simulated_positive_terminal_flow",
+        "passed": true,
+        "simulated_launch_calls": 1,
+        "wrapper_returncode": 0,
+        "engine_started": false
+      },
+      {
+        "case": "prelaunch_new_override_blocks_admission",
+        "passed": true,
+        "simulated_launch_calls": 0,
+        "wrapper_returncode": 1,
+        "engine_started": false
+      },
+      {
+        "case": "postlaunch_new_remap_clears_success",
+        "passed": true,
+        "simulated_launch_calls": 1,
+        "wrapper_returncode": 1,
+        "engine_started": false
+      },
+      {
+        "case": "postlaunch_uid_change_clears_success",
+        "passed": true,
+        "simulated_launch_calls": 1,
+        "wrapper_returncode": 1,
+        "engine_started": false
+      },
+      {
+        "case": "cancelled_flow_still_checks_absence",
+        "passed": true,
+        "simulated_launch_calls": 1,
+        "wrapper_returncode": 1,
+        "engine_started": false
+      },
+      {
+        "case": "real_inputs_and_frozen_evidence_unchanged_after_fixtures",
+        "passed": true
+      }
+    ],
+    "real_dependency_guard": {
+      "status": "frozen_dependency_identities_verified",
+      "review_gzip_sha256": "e39ef6863849f6034f9c7fb3efeb97a191e39d3cacc9fdab9903692a832fe722",
+      "review_json_sha256": "4aa3634f3ec1d1e380d53d724ffa707af4bf66b7136c0bd5fc9592d4d9e80601",
+      "reviewed_closure_files": 1483,
+      "reviewed_closure_bytes": 133839275,
+      "exact_prior_manifest_delta_files": 51,
+      "prior_manifest_sha256": "3329d137d9c43c0fbd2f43f8ca52c4529b8590d891c5fca6fdd376fe3c2b1db9",
+      "startup_control_identities_verified": [
+        "project.godot",
+        "override.cfg",
+        ".godot/global_script_class_cache.cfg",
+        ".godot/extension_list.cfg",
+        ".godot/uid_cache.bin"
+      ],
+      "reviewed_absent_controls_still_absent": [
+        "override.cfg",
+        ".godot/extension_list.cfg"
+      ],
+      "unreviewed_dependency_remap_or_import_sidecars": [],
+      "packaged_auditors_match_frozen_embedded_sources": true,
+      "project_autoload_empty": true,
+      "global_script_class_cache_empty": true,
+      "uid_cache_matches_review": true,
+      "godot_invoked": false,
+      "native_parse_passed": false,
+      "native_collection_passed": false,
+      "all_occupancy_complete": false
+    },
+    "frozen_legacy_sha256": {
+      "PREPARATION_CHECK.json": "89eef9491d23fab11a3590eadc6019fc85f13a7824fb5e96cc9d03591f2af573",
+      "collect_saved62.gd": "de01904877245d5543c5fc67aadb0a3fc9a9bc81fe26ac589430258998bd81fd",
+      "plan.json": "4f87a817181ac55991730f1889dcd91b277a888524f383d4a74cb5ff6a481040",
+      "reused-boundary-index.json": "d9447a154632a989f3bf2594e5108dfcff1d23b9fd1847a8e16ab798173db9d9",
+      "DEPENDENCY_REVIEW.md": "8cf3959ad06d1aceb1f56f9f263dbc2db78abffef40a98018067e6f462939497",
+      "DEPENDENCY_REVIEW.json": "4aa3634f3ec1d1e380d53d724ffa707af4bf66b7136c0bd5fc9592d4d9e80601",
+      "DEPENDENCY_REVIEW.json.gz": "e39ef6863849f6034f9c7fb3efeb97a191e39d3cacc9fdab9903692a832fe722",
+      "dependency-storage.json": "dbc61273d8761f5dc4f0c08c94523263dccae34e30e68bebb68b2d371390d965"
+    },
+    "engines_started": false,
+    "native_parse_passed": false,
+    "native_collection_passed": false,
+    "all_occupancy_complete": false
+  },
+  "static_normal": {
+    "status": "source_preparation_only",
+    "python_ast_passed": true,
+    "source_scope_guards_passed": true,
+    "godot_invoked": false,
+    "project_autoload_empty": true,
+    "project_override_absent": true,
+    "reused_boundary_index_exactly_recomputed": true,
+    "godot_parse_passed": false,
+    "native_collection_passed": false,
+    "all_occupancy_complete": false,
+    "protected_prior_inputs": 1477,
+    "dependency_guard": {
+      "status": "frozen_dependency_identities_verified",
+      "review_gzip_sha256": "e39ef6863849f6034f9c7fb3efeb97a191e39d3cacc9fdab9903692a832fe722",
+      "review_json_sha256": "4aa3634f3ec1d1e380d53d724ffa707af4bf66b7136c0bd5fc9592d4d9e80601",
+      "reviewed_closure_files": 1483,
+      "reviewed_closure_bytes": 133839275,
+      "exact_prior_manifest_delta_files": 51,
+      "prior_manifest_sha256": "3329d137d9c43c0fbd2f43f8ca52c4529b8590d891c5fca6fdd376fe3c2b1db9",
+      "startup_control_identities_verified": [
+        "project.godot",
+        "override.cfg",
+        ".godot/global_script_class_cache.cfg",
+        ".godot/extension_list.cfg",
+        ".godot/uid_cache.bin"
+      ],
+      "reviewed_absent_controls_still_absent": [
+        "override.cfg",
+        ".godot/extension_list.cfg"
+      ],
+      "unreviewed_dependency_remap_or_import_sidecars": [],
+      "packaged_auditors_match_frozen_embedded_sources": true,
+      "project_autoload_empty": true,
+      "global_script_class_cache_empty": true,
+      "uid_cache_matches_review": true,
+      "godot_invoked": false,
+      "native_parse_passed": false,
+      "native_collection_passed": false,
+      "all_occupancy_complete": false
+    },
+    "manifest_count": 1543,
+    "target_tiles": [
+      "Ground_-4_-7",
+      "Ground_-3_-7",
+      "Ground_-4_-6",
+      "Ground_-3_-6",
+      "Ground_-4_-5",
+      "Ground_-3_-5"
+    ],
+    "no_previous_position_dataset_tiles": [
+      "Ground_-3_-8",
+      "Ground_-4_-8"
+    ],
+    "source_sha256": {
+      "collect_saved62.gd": "de01904877245d5543c5fc67aadb0a3fc9a9bc81fe26ac589430258998bd81fd",
+      "run_intake62.py": "6db1820ac4e25181c50e6099be76847857dc2e50f6144208d804b4f859ed8f40",
+      "dependency_guard62.py": "67c53dea3c1ab20b30a30fb81e3449cb7c505bc1863eeaea823827f26568014f",
+      "plan.json": "4f87a817181ac55991730f1889dcd91b277a888524f383d4a74cb5ff6a481040",
+      "reused-boundary-index.json": "d9447a154632a989f3bf2594e5108dfcff1d23b9fd1847a8e16ab798173db9d9",
+      "README.md": "8536b08340ead7b6e34e3c76b8075ed68da2bc6ba6e6c71d2f3c5b39851d1100",
+      "DEPENDENCY_REVIEW.json.gz": "e39ef6863849f6034f9c7fb3efeb97a191e39d3cacc9fdab9903692a832fe722",
+      "audit-tools/audit_north62_deps.py": "7efbb80f98581453faaaa6b8c3fc70c0d4747848f1778bb13676d1130ca72f5a",
+      "audit-tools/north62_binary_review.py": "f89c31a863550f75bc18de17804f1157e843fde1dc096986afac21fcf0fee448",
+      "audit-tools/README.md": "737883499ef6da1454771b3b3330e3fe6a5e1dadd68f684cea7fd8c79021d0bc"
+    }
+  },
+  "static_optimized": {
+    "status": "source_preparation_only",
+    "python_ast_passed": true,
+    "source_scope_guards_passed": true,
+    "godot_invoked": false,
+    "project_autoload_empty": true,
+    "project_override_absent": true,
+    "reused_boundary_index_exactly_recomputed": true,
+    "godot_parse_passed": false,
+    "native_collection_passed": false,
+    "all_occupancy_complete": false,
+    "protected_prior_inputs": 1477,
+    "dependency_guard": {
+      "status": "frozen_dependency_identities_verified",
+      "review_gzip_sha256": "e39ef6863849f6034f9c7fb3efeb97a191e39d3cacc9fdab9903692a832fe722",
+      "review_json_sha256": "4aa3634f3ec1d1e380d53d724ffa707af4bf66b7136c0bd5fc9592d4d9e80601",
+      "reviewed_closure_files": 1483,
+      "reviewed_closure_bytes": 133839275,
+      "exact_prior_manifest_delta_files": 51,
+      "prior_manifest_sha256": "3329d137d9c43c0fbd2f43f8ca52c4529b8590d891c5fca6fdd376fe3c2b1db9",
+      "startup_control_identities_verified": [
+        "project.godot",
+        "override.cfg",
+        ".godot/global_script_class_cache.cfg",
+        ".godot/extension_list.cfg",
+        ".godot/uid_cache.bin"
+      ],
+      "reviewed_absent_controls_still_absent": [
+        "override.cfg",
+        ".godot/extension_list.cfg"
+      ],
+      "unreviewed_dependency_remap_or_import_sidecars": [],
+      "packaged_auditors_match_frozen_embedded_sources": true,
+      "project_autoload_empty": true,
+      "global_script_class_cache_empty": true,
+      "uid_cache_matches_review": true,
+      "godot_invoked": false,
+      "native_parse_passed": false,
+      "native_collection_passed": false,
+      "all_occupancy_complete": false
+    },
+    "manifest_count": 1543,
+    "target_tiles": [
+      "Ground_-4_-7",
+      "Ground_-3_-7",
+      "Ground_-4_-6",
+      "Ground_-3_-6",
+      "Ground_-4_-5",
+      "Ground_-3_-5"
+    ],
+    "no_previous_position_dataset_tiles": [
+      "Ground_-3_-8",
+      "Ground_-4_-8"
+    ],
+    "source_sha256": {
+      "collect_saved62.gd": "de01904877245d5543c5fc67aadb0a3fc9a9bc81fe26ac589430258998bd81fd",
+      "run_intake62.py": "6db1820ac4e25181c50e6099be76847857dc2e50f6144208d804b4f859ed8f40",
+      "dependency_guard62.py": "67c53dea3c1ab20b30a30fb81e3449cb7c505bc1863eeaea823827f26568014f",
+      "plan.json": "4f87a817181ac55991730f1889dcd91b277a888524f383d4a74cb5ff6a481040",
+      "reused-boundary-index.json": "d9447a154632a989f3bf2594e5108dfcff1d23b9fd1847a8e16ab798173db9d9",
+      "README.md": "8536b08340ead7b6e34e3c76b8075ed68da2bc6ba6e6c71d2f3c5b39851d1100",
+      "DEPENDENCY_REVIEW.json.gz": "e39ef6863849f6034f9c7fb3efeb97a191e39d3cacc9fdab9903692a832fe722",
+      "audit-tools/audit_north62_deps.py": "7efbb80f98581453faaaa6b8c3fc70c0d4747848f1778bb13676d1130ca72f5a",
+      "audit-tools/north62_binary_review.py": "f89c31a863550f75bc18de17804f1157e843fde1dc096986afac21fcf0fee448",
+      "audit-tools/README.md": "737883499ef6da1454771b3b3330e3fe6a5e1dadd68f684cea7fd8c79021d0bc"
+    }
+  },
+  "owned_source_sha256": {
+    "run_intake62.py": "6db1820ac4e25181c50e6099be76847857dc2e50f6144208d804b4f859ed8f40",
+    "README.md": "8536b08340ead7b6e34e3c76b8075ed68da2bc6ba6e6c71d2f3c5b39851d1100",
+    "dependency_guard62.py": "67c53dea3c1ab20b30a30fb81e3449cb7c505bc1863eeaea823827f26568014f",
+    "audit-tools/audit_north62_deps.py": "7efbb80f98581453faaaa6b8c3fc70c0d4747848f1778bb13676d1130ca72f5a",
+    "audit-tools/north62_binary_review.py": "f89c31a863550f75bc18de17804f1157e843fde1dc096986afac21fcf0fee448",
+    "audit-tools/README.md": "737883499ef6da1454771b3b3330e3fe6a5e1dadd68f684cea7fd8c79021d0bc",
+    "dependency-guard-v2/check_dependency_guard62.py": "0d5bb3a7e10bfd404882f7e5fa515c3a89dacb4f36cfdb9617ba9c881f2be727"
+  },
+  "default_static_created_no_bytecode": true,
+  "engines_started": false,
+  "native_parse_passed": false,
+  "native_collection_passed": false,
+  "all_occupancy_complete": false,
+  "limits": [
+    "No Godot or Blender process was started by these checks.",
+    "Runner lifecycle cases replace launch with a Python mock and must not be represented as native parsing.",
+    "Absence/identity checks reject detected changes; they cannot undo loading that already happened after a concurrent external mutation. Coordinate a quiescent project window.",
+    "This result does not modify or retroactively expand the old1477 manifest or PREPARATION_CHECK.json."
+  ]
+}
