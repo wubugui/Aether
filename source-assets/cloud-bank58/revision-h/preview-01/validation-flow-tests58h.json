@@ -1,0 +1,165 @@
+{
+  "status": "Pure mocked validation control-flow fixtures passed; not native readback or render",
+  "passed": true,
+  "checked_at_utc": "2026-10-02T04:41:47.908022+00:00",
+  "script_sha256": "44318487a1563e5ad13fe0708b421deace8fac92d3953ffbd08538fd6bfd86cb",
+  "validator_sha256": "63fbcc6e3d8da19f963be9298f596b7938d91bd494ee28411f8dfef195d0e58c",
+  "tests": [
+    {
+      "case": "valid_synthetic_post_save",
+      "expected_acceptance": true,
+      "observed_acceptance": true,
+      "passed": true,
+      "observed_helper_calls": [
+        "inputs",
+        "native_identity",
+        "cameras",
+        "lighting"
+      ],
+      "persisted_observation_count": 4,
+      "error": null
+    },
+    {
+      "case": "nonempty_images",
+      "expected_acceptance": false,
+      "observed_acceptance": false,
+      "passed": true,
+      "observed_helper_calls": [],
+      "persisted_observation_count": 1,
+      "error": "Strict fresh-open image/Library/strong-link gate failed; no render"
+    },
+    {
+      "case": "orphan_library_record",
+      "expected_acceptance": false,
+      "observed_acceptance": false,
+      "passed": true,
+      "observed_helper_calls": [],
+      "persisted_observation_count": 1,
+      "error": "Strict fresh-open image/Library/strong-link gate failed; no render"
+    },
+    {
+      "case": "strong_linked_id",
+      "expected_acceptance": false,
+      "observed_acceptance": false,
+      "passed": true,
+      "observed_helper_calls": [],
+      "persisted_observation_count": 1,
+      "error": "Strict fresh-open image/Library/strong-link gate failed; no render"
+    },
+    {
+      "case": "mesh_signature_changed",
+      "expected_acceptance": false,
+      "observed_acceptance": false,
+      "passed": true,
+      "observed_helper_calls": [
+        "inputs",
+        "native_identity"
+      ],
+      "persisted_observation_count": 2,
+      "error": "Full saved H native identity mismatch"
+    },
+    {
+      "case": "group_weights_changed",
+      "expected_acceptance": false,
+      "observed_acceptance": false,
+      "passed": true,
+      "observed_helper_calls": [
+        "inputs",
+        "native_identity"
+      ],
+      "persisted_observation_count": 2,
+      "error": "Full saved H native identity mismatch"
+    },
+    {
+      "case": "control_transform_changed",
+      "expected_acceptance": false,
+      "observed_acceptance": false,
+      "passed": true,
+      "observed_helper_calls": [
+        "inputs",
+        "native_identity"
+      ],
+      "persisted_observation_count": 2,
+      "error": "Full saved H native identity mismatch"
+    },
+    {
+      "case": "embedded_text_changed",
+      "expected_acceptance": false,
+      "observed_acceptance": false,
+      "passed": true,
+      "observed_helper_calls": [
+        "inputs",
+        "native_identity"
+      ],
+      "persisted_observation_count": 2,
+      "error": "Full saved H native identity mismatch"
+    },
+    {
+      "case": "field_parameters_changed",
+      "expected_acceptance": false,
+      "observed_acceptance": false,
+      "passed": true,
+      "observed_helper_calls": [
+        "inputs",
+        "native_identity"
+      ],
+      "persisted_observation_count": 2,
+      "error": "Full saved H native identity mismatch"
+    },
+    {
+      "case": "blend_parameters_changed",
+      "expected_acceptance": false,
+      "observed_acceptance": false,
+      "passed": true,
+      "observed_helper_calls": [
+        "inputs",
+        "native_identity"
+      ],
+      "persisted_observation_count": 2,
+      "error": "Full saved H native identity mismatch"
+    },
+    {
+      "case": "native_subgate_false",
+      "expected_acceptance": false,
+      "observed_acceptance": false,
+      "passed": true,
+      "observed_helper_calls": [
+        "inputs",
+        "native_identity"
+      ],
+      "persisted_observation_count": 2,
+      "error": "Full saved H native identity mismatch"
+    },
+    {
+      "case": "camera_projection_changed",
+      "expected_acceptance": false,
+      "observed_acceptance": false,
+      "passed": true,
+      "observed_helper_calls": [
+        "inputs",
+        "native_identity",
+        "cameras"
+      ],
+      "persisted_observation_count": 3,
+      "error": "Exact original two-camera proof changed"
+    },
+    {
+      "case": "lighting_failure",
+      "expected_acceptance": false,
+      "observed_acceptance": false,
+      "passed": true,
+      "observed_helper_calls": [
+        "inputs",
+        "native_identity",
+        "cameras",
+        "lighting"
+      ],
+      "persisted_observation_count": 3,
+      "error": "Synthetic light failure"
+    }
+  ],
+  "test_count": 13,
+  "native_execution": false,
+  "world_loaded": false,
+  "visual_acceptance": false
+}

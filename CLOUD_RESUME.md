@@ -1,6 +1,14 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 04:36 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 04:43 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 04:43 H独立post-save两图入口准备完毕
+
+- v5输入单位与H首次失败证据已完整发布 **050fbe9fdc6773fcbaf1b218422f24e20c71310d**，tree **12de2760310c77983d59cfa29c64c3f22ac83a25**、parent27894128；71路径/52唯一blob新bare独立公共Git回读一致，本地0ef4a19同树soft对齐
+- [H独立预览入口](source-assets/cloud-bank58/revision-h/preview-01/README.md)准备完成：每视图新进程打开原156243B源，先保存实际加载inventory，再严格要求images0/libraries0/无stronglink、完整网格/组/八控制/内嵌文本/field+blend/双相机/光材全部身份一致才render。无cleanup/resave/rebuild，不修改原build false。两固定图总30秒/CPU2/1.5GiB，任一失败立即停
+- AST/原证据身份检查与13个纯Python模拟flow负控通过；模拟覆盖image、无强链接的孤立Library、stronglink、mesh/group/control/text/field/blend/camera/light变化均拒，不能当Blender原生验证。590旧保护输入与H源SHA不变，10准备文件冻结。**H新进程读回和两图尚未执行**
+- 第五次真实Game61停船orbit在04:40:43启动，已真实显示默认图与原生转向，仍在完整逐步检查，当前无终态结论；其运行目录nearbay61-orbit-renderer-20261002T044043Z-8wi327py不纳入本准备提交，不把进行中称通过。H须等其终态释放窗口
+- 北山脊依赖审计正在补齐旧1477清单未覆盖的实际保存依赖身份；历史清单数字不代表完整闭包。未启动采集或改世界。E/F2八件Slack原问题仍待答，完整GOAL/硬件GPU验收未通过
 
 ## 04:36输入单位v5通过轻夹具；H保存源依赖门失败
 
