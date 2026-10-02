@@ -1,0 +1,37 @@
+{
+  "lossless_gzip": [
+    {
+      "raw": "main-project-before.json",
+      "bytes": 1002602,
+      "sha256": "515e03c43586e0009371478de736a094c2480f2d4f9c6bc321a6f5fdee0e67f0",
+      "stored": "main-project-before.json.gz",
+      "stored_bytes": 225446,
+      "stored_sha256": "cf5a283b84f4eadcb01cd60f0d478a5bccf6a5f52fffdf886516c0653c24d7c5"
+    },
+    {
+      "raw": "main-project-after.json",
+      "bytes": 1002602,
+      "sha256": "515e03c43586e0009371478de736a094c2480f2d4f9c6bc321a6f5fdee0e67f0",
+      "stored": "main-project-after.json.gz",
+      "stored_bytes": 225446,
+      "stored_sha256": "cf5a283b84f4eadcb01cd60f0d478a5bccf6a5f52fffdf886516c0653c24d7c5"
+    },
+    {
+      "raw": "shared-project-before.json",
+      "bytes": 601491,
+      "sha256": "ca20cd38af18e7ec63d325891af470449e1014388c05b965a79414e45bc4e59c",
+      "stored": "shared-project-before.json.gz",
+      "stored_bytes": 223310,
+      "stored_sha256": "e716266e6f3f415c733af97b410acff24e35142cd2d3997b9656151e64ff73d1"
+    },
+    {
+      "raw": "shared-project-after.json",
+      "bytes": 601491,
+      "sha256": "ca20cd38af18e7ec63d325891af470449e1014388c05b965a79414e45bc4e59c",
+      "stored": "shared-project-after.json.gz",
+      "stored_bytes": 223310,
+      "stored_sha256": "e716266e6f3f415c733af97b410acff24e35142cd2d3997b9656151e64ff73d1"
+    }
+  ],
+  "restore": "Run restore_storage.py --restore-missing; refuses different existing raw."
+}

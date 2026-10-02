@@ -1,0 +1,8 @@
+WARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.
+     at: set_use_vsync (platform/linuxbsd/x11/gl_manager_x11.cpp:364)
+ERROR: Opt-out and original observation camera restored
+   at: push_error (core/variant/variant_utility.cpp:1024)
+   GDScript backtrace (most recent call first):
+       [0] check (res://cloud_k_trial/observe58k.gd:19)
+       [1] run (res://cloud_k_trial/observe58k.gd:183)
+       [2] capture (res://cloud_k_trial/observe58k.gd:133)

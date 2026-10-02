@@ -1,6 +1,15 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 12:14 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 12:24 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 12:24 K首次实际四图完成，世界造型明确打回
+
+- K同副本迁移与GUI读回已完整发布 **9c491deb63c984081e1acc51aa7fee5e8d15ed88**，tree **bb2406c1cadb4fcd817ce39ea375cac8aba597c4**、parent4fe802c7；18路径/16唯一blob新bare公共Git逐字节/SHA核回，本地8a05536同树对齐
+- [K真实世界四图](cloud-evidence/cloudbank58k-world-trial-v2-renderer-20261002T121854Z-931jfijg/RESULT.md)已全部产出1179×664原PNG，420967/414964/267170/299361B；childPID227195 exit1/58.631秒、wrapper1/71.493秒，CPU2/llvmpipe、aggregate1869596KiB，无超时/RSS触界。原GUI call首拒后依据飞艇原文同call一次重试成功，未改route
+- 唯一native失败在最终“opt-out与原相机恢复”组合门，未分别记录最终布尔项/矩阵，**不能先归因为舍入或放宽epsilon**。wrapper images:0仅其process失败后没走图像验证分支，实际4PNG/4capture完整保留；main/freeze原样，旧warning/error原样
+- 已实际看全四图；02删大旧云后右下大片近黑露洞，K只小范围露三冠，04近景硬折大暗面/窄亮顶像纸皇冠，03侧背有厚度但明显被邻云挡。独立审也已实看原1216/四图并拒绝。**此单unit世界方案打回**，不推广/不原样重跑；下一按大云覆盖及实际邻居做新的受控作者布局，不伸缩挪K/藏云/换原机位求通过
+- [北干净恢复只读probe](source-assets/north-ridge62-authoring/restore-read-v1/README.md)已冻结 SHA956733e30dcd74363852eee8855aba23a3b00efe72e44e04b58abbabc0d11754，22普通/-O、独立审与145输入、真实4文件/7目录恢复preflight过；直接复用原capture/完整validator/supervisor，新增实际opened filepath与当前launchPID绑定，历史PID数值重复不误拒。**尚未native**，发布后CPU2/native30/outer60一次无save/rebuild/render，完成后才认完整外存native恢复
+- 用户要求所有成果持续通过插件上传，本项含4原图/真实失败/准备源码立即外存；不会只留云端。私密交付23旧件仍停、不混入公开repo。北四源视图/167支撑、云世界和全部GOAL仍未验收
 
 ## 12:14 K同一副本搬移和GUI全文件读回通过
 

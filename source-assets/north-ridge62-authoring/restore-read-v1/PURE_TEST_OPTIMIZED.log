@@ -1,0 +1,37 @@
+test_changed_content_same_length_rejected (__main__.RestoreReadTests.test_changed_content_same_length_rejected) ... ok
+test_command_has_only_restored_open_entry (__main__.RestoreReadTests.test_command_has_only_restored_open_entry) ... ok
+test_default_never_launches (__main__.RestoreReadTests.test_default_never_launches) ... ok
+test_default_real_path_gate_is_engine_free (__main__.RestoreReadTests.test_default_real_path_gate_is_engine_free) ... ok
+test_exact_synthetic_four_file_layout (__main__.RestoreReadTests.test_exact_synthetic_four_file_layout) ... ok
+test_explicit_path_rejects_original_outside_and_wrong_name (__main__.RestoreReadTests.test_explicit_path_rejects_original_outside_and_wrong_name) ... ok
+test_extra_empty_directory_rejected (__main__.RestoreReadTests.test_extra_empty_directory_rejected) ... ok
+test_extra_file_rejected (__main__.RestoreReadTests.test_extra_file_rejected) ... ok
+test_hardlink_rejected (__main__.RestoreReadTests.test_hardlink_rejected) ... ok
+test_intermediate_symlink_rejected (__main__.RestoreReadTests.test_intermediate_symlink_rejected) ... ok
+test_missing_explicit_path_native_rejected_before_launch (__main__.RestoreReadTests.test_missing_explicit_path_native_rejected_before_launch) ... ok
+test_missing_file_rejected (__main__.RestoreReadTests.test_missing_file_rejected) ... ok
+test_original_protection_has_no_v2_mutable_exclusions (__main__.RestoreReadTests.test_original_protection_has_no_v2_mutable_exclusions) ... ok
+test_raw_only_pid_affinity_may_differ (__main__.RestoreReadTests.test_raw_only_pid_affinity_may_differ) ... ok
+test_raw_preserved_before_failing_native_validation_using_fake_rna (__main__.RestoreReadTests.test_raw_preserved_before_failing_native_validation_using_fake_rna) ... Pure checks passed; no native process, restoration, source save, rebuild or images. Local review/freeze and parent scheduling still required.
+Pure checks passed; no native process, restoration, source save, rebuild or images. Local review/freeze and parent scheduling still required.
+NORTH62_STAGE {"stage":"python_entry","pid":7,"elapsed_seconds":0.03218785500212107,"native_user_seconds":0.538226,"native_system_seconds":0.027663,"native_peak_rss_kib":33900}
+NORTH62_STAGE {"stage":"fresh_open.begin","pid":7,"elapsed_seconds":0.0328463269979693,"native_user_seconds":0.538883,"native_system_seconds":0.027663,"native_peak_rss_kib":33900,"restored_source":"/workspace/scratch/a29d03198654/Aether/source-assets/north-ridge62-authoring/restore-read-v1/.pure-fixture-gezouvxg/restored/source-assets/north-ridge62-authoring/recovery-v2/north-ridge62.blend"}
+NORTH62_STAGE {"stage":"fresh_open.complete","pid":7,"elapsed_seconds":0.033136835001641884,"native_user_seconds":0.5391739999999999,"native_system_seconds":0.027663,"native_peak_rss_kib":33900}
+NORTH62_STAGE {"stage":"raw.persisted","pid":7,"elapsed_seconds":0.03367205501126591,"native_user_seconds":0.5396179999999999,"native_system_seconds":0.027663,"native_peak_rss_kib":33900,"sha256":"a43f61ee446d296b500bd3063a5ed4af9a974f0f4eddc7159ab8495690f9d254","bytes":66}
+NORTH62_STAGE {"stage":"native_terminal","pid":7,"elapsed_seconds":0.03474388700851705,"native_user_seconds":0.540682,"native_system_seconds":0.027663,"native_peak_rss_kib":33900,"passed":false,"state":"failed"}
+ok
+test_real_raw_validator_and_negative_controls (__main__.RestoreReadTests.test_real_raw_validator_and_negative_controls) ... ok
+test_relative_traversal_missing_rejected (__main__.RestoreReadTests.test_relative_traversal_missing_rejected) ... ok
+test_same_pid_still_requires_this_launch_pid_binding_and_filepath (__main__.RestoreReadTests.test_same_pid_still_requires_this_launch_pid_binding_and_filepath) ... ok
+test_static_probe_reuses_capture_and_validator_no_mutators (__main__.RestoreReadTests.test_static_probe_reuses_capture_and_validator_no_mutators) ... ok
+test_symlink_root_ancestor_and_file_rejected (__main__.RestoreReadTests.test_symlink_root_ancestor_and_file_rejected) ... ok
+test_tree_identity_detects_membership_and_bytes (__main__.RestoreReadTests.test_tree_identity_detects_membership_and_bytes) ... ok
+test_wrong_actual_opened_filepath_fails_before_capture_using_fake_rna (__main__.RestoreReadTests.test_wrong_actual_opened_filepath_fails_before_capture_using_fake_rna) ... NORTH62_STAGE {"stage":"python_entry","pid":7,"elapsed_seconds":4.223239547005505,"native_user_seconds":4.629718,"native_system_seconds":0.126141,"native_peak_rss_kib":230256}
+NORTH62_STAGE {"stage":"fresh_open.begin","pid":7,"elapsed_seconds":4.223673747997964,"native_user_seconds":4.630143,"native_system_seconds":0.126152,"native_peak_rss_kib":230256,"restored_source":"/workspace/scratch/a29d03198654/Aether/source-assets/north-ridge62-authoring/restore-read-v1/.pure-fixture-hr7dm2n8/restored/source-assets/north-ridge62-authoring/recovery-v2/north-ridge62.blend"}
+NORTH62_STAGE {"stage":"native_terminal","pid":7,"elapsed_seconds":4.2242061639990425,"native_user_seconds":4.630654,"native_system_seconds":0.126166,"native_peak_rss_kib":230256,"passed":false,"state":"failed"}
+ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 4.224s
+
+OK
