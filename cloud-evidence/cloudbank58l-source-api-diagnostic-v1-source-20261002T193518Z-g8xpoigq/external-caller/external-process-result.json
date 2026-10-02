@@ -1,0 +1,55 @@
+{
+  "stage": "source",
+  "acceptance_mode": "api_consistency_isolated_diagnostic_v1",
+  "full_native_acceptance": false,
+  "historical_default_corner_geometry_passed": false,
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/source-api-diagnostic-v1/run58l_api_diagnostic.py",
+    "--run-approved",
+    "source"
+  ],
+  "cwd": "/workspace/scratch/a29d03198654/Aether",
+  "publication_commit": "f23d427ab4b4d0b0322a4d052d72d5791688ec0d",
+  "process_exit_observed": true,
+  "actual_exit_code": 0,
+  "timeout": false,
+  "cleanup": [],
+  "source_chain_verified": true,
+  "utc_started": "2026-10-02T19:35:18.428116+00:00",
+  "started_monotonic": 109113.637084023,
+  "supervisor_pid": 6,
+  "ended_monotonic": 109172.937040233,
+  "wall_seconds": 59.299956210001255,
+  "remaining_owned_pids": [],
+  "ownership_history": [
+    {
+      "pid": 2,
+      "state": "R",
+      "ppid": 1,
+      "pgid": 1,
+      "sid": 1,
+      "starttime": 10911356,
+      "rss_kib": 13824,
+      "reason": "supervisor"
+    },
+    {
+      "pid": 6,
+      "state": "R",
+      "ppid": 2,
+      "pgid": 6,
+      "sid": 6,
+      "starttime": 10911363,
+      "rss_kib": 128,
+      "reason": "actual_external_Popen"
+    }
+  ],
+  "cleanup_signals": [],
+  "utc_process_observation_complete": "2026-10-02T19:36:17.728629+00:00",
+  "supervisor_terminal_sha256": "75e2a09995b9a8a69b3137dd9f5f8aeb07fa238ca2fdee7dc18d608ec68be2ca",
+  "source_sha256": "7e72984235a84e63f5275f0287267656a8b11eaa651173856ae2beaa54ac5bd7",
+  "source_bytes": 319519,
+  "run": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/cloudbank58l-source-api-diagnostic-v1-source-20261002T193518Z-g8xpoigq",
+  "source_build_verify_stages": 2
+}

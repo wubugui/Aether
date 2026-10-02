@@ -1,6 +1,6 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 19:28 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 19:43 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
 
 ## 云端硬性前置闸门：先插件上传完整核回，再继续工作
 
@@ -11,6 +11,16 @@
 - 上传失败优先查明原因并在授权内反复进行合规恢复，保持原payload、完整base tree/parent和非force ref；真实安全拒绝必须停止该动作，按批准规则取得明确证据/一次原call重试，仍拒则报告并保持闸门关闭，绝不绕审批/换route
 - 本项全部完成成果和本入口更新都核回后，才允许下一项。纯读取以查错/确认上传状态可以继续；与修复当前上传无关的新开发/渲染必须等待
 - 私密Slack交付定位符/收据仍仅本地，不因“全部项目”混入公开仓库；原受阻发送保持独立停止
+
+## 19:43 首份L隔离API诊断源真实保存/fresh-open通过，先完整外存再出图
+
+- 准备已 **f23d427ab4b4d0b0322a4d052d72d5791688ec0d** 完整插件发布，treedb73fb5473ff61c74ee33e87ace2d195dcb18b20、parent4cbe1f7c；22路径/22blob新bare逐字节核回，本地fe64249同树对齐。tree首次授权拒后原参数一次证据重试成功，8已存blob未重传；窗口实际释放后才运行
+- [实际source结果](cloud-evidence/cloudbank58l-source-api-diagnostic-v1-source-20261002T193518Z-g8xpoigq/RESULT.md)：launcher6真实exit0/**59.299956秒**，worker7 exit0/59.223187秒；Blender build8 exit0/**15.097158秒**，独立fresh-open30 exit0/**14.701706秒**。CPU2/native峰325496KiB、全树采样峰415088KiB，原总120秒/资源门不变且未触及，自有后代全回收/残留[]
+- **唯一真实新源319519B，SHA7e72984235a84e63f5275f0287267656a8b11eaa651173856ae2beaa54ac5bd7**，source-api-diagnostic-v1/cloud_bank58l_api_diagnostic_v1.blend直接普通Git原字节，无LFS。七主+谷宽控制、manual/combined与恢复在build/fresh两进程真实执行，八Text与全部raw复核；14154受保护文件4584610202B前后同、295冻结同、66原输出SHA链完整
+- [窄结果复核](cloud-evidence/cloudbank58l-source-api-diagnostic-v1-source-20261002T193518Z-g8xpoigq/NARROW_RESULT_REVIEW.md)重新调用实际prior_source/两套exercise通过。原identity是排除运行元数据后的**数值/结构相等**；C01 value1005.0→1005表示差如实保留，不称整份raw逐字节/类型相同。保存.blend在独立fresh前后SHA精确同
+- 有限结论仅“**API隔离诊断源可编辑保存及独立fresh-open恢复通过**”。原默认corner→数学几何3e-5仍22面/max0.0001594134493/角0.00915847°失败，full_native_acceptance=false；polygon数学/flat/向外/同面3corner与新API各门分别过，不改变旧门口径。当前0PNG，视觉/接触/world/全部GOAL仍未过
+- 44大JSON保27唯一原字节对象：14唯一gzip/15块5276689B，13fresh仅真实PID/path严格literal byte patch，所有别名及全SHA明确；原工作raw未改。先将模型、全部原始成功及旧失败范围/报告与本入口插件发布、实际远端逐字节核回并新目录恢复44JSON，再一次四原绝对机位源诊断图，不重构源/改机位或扩展证明框架
+- 引擎窗口已释放，不自动接views。正常交付51成功与旧23/另4受阻批次仍停，私密收据不入Git；当前真实新源准备交付不冒称已发图
 
 ## 19:28 API一致性隔离诊断源准备窄审接受，待发布后一次真实保存
 
