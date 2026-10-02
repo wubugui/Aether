@@ -1,0 +1,11 @@
+# K actual normals collected; exact polygon/corner assumption rejected
+
+2026-10-02 09:18 UTC. Native Blender 4.5.14 child exited 1 after .587595727 seconds; wrapper exited 1 after 5.561372625 seconds. CPU2, peak child 255384 KiB / observed aggregate 282936 KiB. No timeout or RSS limit fired. Only the existing source was opened; no export, save, Godot, image or world occurred.
+
+Unlike the prior export failure, complete actual arrays were saved before validation. `outputs/source-normal-arrays.json` is 281016 bytes, SHA256 `35cde26e14f8767c015295cff3b8f271a85052a111d8fd68e066784a18e1b1c7`, and the failed native terminal binds that exact SHA and its actual process PID. It includes 194 positions, 384 triangles/polygon normals, 1152 corner normals, complete loop ownership/vertex mapping, source SHA, full before/after identity, dependencies, cameras and scene state.
+
+The next validator failed at the newly introduced assumption `Actual flat corner normals equal polygon normal exactly`. The original 3e-5 geometric outward-normal tolerance has not been loosened. Preliminary read-only analysis of these actual values finds all three corners of each face exactly equal to one another, but all 384 polygon/corner pairs differ. The largest component difference is 8.52346420288086e-6 at face 270. Complete before/after native identities, cameras, scene state and source hashes match. This is a successful raw capture followed by a failed validation, not a successful readback trial or accepted transfer.
+
+All 1051 prepared/protected identities and the entire main project, including importer/cache files, remain unchanged. Before/after 1002602-byte project manifests are byte-identical, losslessly gzipped with original hashes and restoration commands. The source is still the accepted 136389-byte .blend. Original failed reports, raw arrays, traceback, admission/terminal marker and logs are retained unchanged.
+
+Next is source-only analysis using these already captured actual corner values: verify the original geometry/flatness gate and replay the installed exporter rounding, explain the polygon/corner distinction, and design faithful NORMAL-only transfer without another redundant source read. Never silently rewrite this failed native result as passed or substitute mathematical normals for the actual corner data.

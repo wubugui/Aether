@@ -1,0 +1,14 @@
+{
+  "version": "cloud58k-normal-readback-v1",
+  "pid": 5,
+  "passed": false,
+  "state": "failed",
+  "source_saved": false,
+  "export_performed": false,
+  "godot_started": false,
+  "world_loaded": false,
+  "images": 0,
+  "visual_acceptance": false,
+  "raw_sha256": "35cde26e14f8767c015295cff3b8f271a85052a111d8fd68e066784a18e1b1c7",
+  "error": "Traceback (most recent call last):\n  File \"/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-k/normal-readback-v1/collect58k.py\", line 80, in main\n    result['validation'] = g.validate_readback(data, os.getpid(), verified)\n                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-k/normal-readback-v1/guard58k.py\", line 76, in validate_readback\n    c.require(np.array_equal(n[row], np.repeat(p[face][None, :], 3, axis=0)), 'Actual flat corner normals equal polygon normal exactly')\n  File \"/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-k/import-v1/contract58k.py\", line 29, in require\n    if not ok:raise ValueError(message)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Actual flat corner normals equal polygon normal exactly\n"
+}

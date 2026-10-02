@@ -1,6 +1,14 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 09:14 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 09:20 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 09:20 K实际法线数据取得，新增逐位假设门失败
+
+- K纯数值诊断/只读准备已完整发布 **3804d7d31c6ca2e4d18e0c701d33b0e80d015348**，tree **511451e3ddd3a05300e437098df394bd868e6858**、parentecc3f97；16路径/16blob新bare公共Git逐字节/SHA回读一致，本地82d79b5同树对齐
+- [一次实际normal读取](cloud-evidence/cloudbank58k-normal-readback-v1-20261002T091816Z-whfkeukw/RESULT.md)child1/.588秒、wrapper1/总5.561秒，CPU2/255384KiB，未触时限/RSS界。**完整384polygon/1152corner及loops真实raw先存281016B**，SHA35cde26e14f8767c015295cff3b8f271a85052a111d8fd68e066784a18e1b1c7由native terminal/PID绑定；没有再次导出/save/Godot/图
+- 后置“corner与polygon逐位精确相等”新增假设门拒绝，不改失败或松原3e-5。父只读初算：每面3个corner彼此逐位全同，但384面p-vs-c均有小差，最大8.5234642e-6在face270。实际before/after完整identity/cameras/scene state/source SHA一致，1051输入及含缓存mainproject全部未变。原source仍136389B，原GLB仍失败候选
+- 实际数据已足够后续离线定位，不盲重跑读取。正在用真正exporter取的fresh corner重放round/normalize、核原几何flat/outward门，并查polygon/corner差异机制；采集数据存在不等于原验证/transfer成功。原raw/terminal/traceback与两1002602B清单无损gzip全保留
+- 下一步保raw GLB的NORMAL-only忠实恢复与独立Godot import，准备尚未完成；北shadow-v3仍源码收尾，无新engine。重窗口已向MAZ释放，既定4rad成功不重复长跑。Slack集中频道/补发问题仍待答，原八件继续停；全GOAL/硬件GPU未验收
 
 ## 09:14 K导出法线完整数值重放与原生只读准备
 
