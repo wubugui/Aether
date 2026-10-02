@@ -1,6 +1,15 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 04:30 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 04:36 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 04:36输入单位v5通过轻夹具；H保存源依赖门失败
+
+- H/山脊准备已完整发布 **278941281e348f6a88acb8147d3a59df1fc64c2d**，tree **6fd47cdc8211c8b3165c7c0071ae1b6136372e7f**、parent3bc1659f；17文本逐字节/SHA独立公共Git回读，本地471807d同树soft对齐
+- [v5真实输入轻夹具](source-assets/coast61-nearbay-orbit/input-units-v5/RESULT.md)43/43通过，child/wrapper0、0.530秒、119764KiB/CPU2，1567受保护输入不变；原native game、.05rad步长/.00001容差、几何和物理门未改。实时final transform的basis转换relative、完整矩阵转换position；实际headless parse/flush独立_input收到一次-12.5，合成原算式增量.050000000745rad，剪切/平移例也通过。缺失/重复事件、旧错误单位、矩阵变化、按钮未按及非法矩阵仍拒
+- [正式入口解析](cloud-evidence/nearbay61-orbit-parse-20261002T043356Z-3h274pae/wrapper-report.json)helper/main均0（0.504/0.256秒），无错误，1487源manifest不变。轻夹具记录的矩阵只属于它，headless显示尺寸0、texture832×469不是真实截图。**第五world尚未运行，不能称停船环绕通过**；将发布后协调实际图形运行
+- [H第一次原生试验](cloud-evidence/cloudbank58h-patch-20261002T043431Z-wm5tuke1/RESULT58H.md)child/wrapper1，1.540秒/297320KiB，564旧输入和15准备输入不变，0图。156243B可编辑源保存；802顶点/1600三角、基本拓扑/采样保形、八控制/内嵌文本、固定E双相机/光材门通过，native no_external_data仍false
+- H本次准确捕获原因：启动factory无图像/库，未移除VIEWER；保存前images0/libraries1，E相机append来源Library users1、无direct引用/stronglinkedID，两个相机弱来源引用。此证据只属于H，不反推G。旧source/false报告不改，不清库/重存；准备独立post-save逐门读回后两图，仍须零images/libraries与完整身份全部实际通过才能渲染
+- 北山脊依赖只读审计仍在进行，尚未原生采集；E/F2八件Slack仍待频道明确回答，无重试/换路。完整GOAL及硬件GPU验收未通过
 
 ## 04:30 H云体与北山脊采集准备完成
 

@@ -1,0 +1,78 @@
+{
+  "candidate": "58H",
+  "state": "completed",
+  "complete": false,
+  "passed": false,
+  "run_id": "cloudbank58h-patch-20261002T043431Z-wm5tuke1",
+  "commands": [
+    {
+      "job": {
+        "mode": "build",
+        "view": null
+      },
+      "state": "completed",
+      "complete": false,
+      "argv": [
+        "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+        "--factory-startup",
+        "--disable-autoexec",
+        "-b",
+        "-t",
+        "2",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-h/source58h.py",
+        "--",
+        "--mode",
+        "build",
+        "--out",
+        "/workspace/scratch/a29d03198654/Aether/cloud-evidence/cloudbank58h-patch-20261002T043431Z-wm5tuke1/outputs"
+      ],
+      "input_manifest_sha256": "3f1b5b096d4a4f67ab7f130ff0e89e5381475b2e0ba725ae9051ae780cb18556",
+      "prepared_before": true,
+      "protected_before": true,
+      "source_sha256_before": null,
+      "pid": 6,
+      "actual_child_exit_code": 1,
+      "elapsed_seconds": 1.0686200839991216,
+      "peak_observed_rss_kib": 297480,
+      "actual_peak_child_rss_kib": 297320,
+      "actual_child_user_seconds": 0.918616,
+      "actual_child_system_seconds": 0.103034,
+      "prepared_after": true,
+      "protected_after": true,
+      "source_sha256_after": "2e5d757d9007e6a3dd92e4dc893dfe53ce80076cedc36b635f939377513bcd2a"
+    }
+  ],
+  "images": [],
+  "limits": {
+    "total_seconds": 30,
+    "cpu_threads": 2,
+    "max_wrapper_plus_child_rss_kib": 1572864,
+    "max_source_bytes": 200000
+  },
+  "world_loaded": false,
+  "final_geometry_pass": false,
+  "visual_acceptance": false,
+  "cpu_affinity": [
+    0,
+    1
+  ],
+  "actual_wrapper_exit_code": 1,
+  "error": null,
+  "limit_stop_reason": null,
+  "elapsed_seconds": 1.5398361130064586,
+  "peak_observed_rss_kib": 297480,
+  "actual_peak_child_rss_kib": 297320,
+  "actual_peak_wrapper_rss_kib": 26772,
+  "peak_observed_aggregate_rss_kib": 323360,
+  "conservative_sum_of_separate_peak_rss_kib": 324092,
+  "protected_unchanged": true,
+  "prepared_inputs_unchanged": true,
+  "source": {
+    "path": "source-assets/cloud-bank58/revision-h/field_patch58h.blend",
+    "bytes": 156243,
+    "sha256": "2e5d757d9007e6a3dd92e4dc893dfe53ce80076cedc36b635f939377513bcd2a"
+  }
+}

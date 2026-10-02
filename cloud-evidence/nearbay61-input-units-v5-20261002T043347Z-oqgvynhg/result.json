@@ -1,0 +1,1266 @@
+{
+  "checks": [
+    {
+      "details": null,
+      "name": "identity_conversion_valid",
+      "passed": true
+    },
+    {
+      "details": {
+        "intended_local_center": [
+          836.0,
+          470.5
+        ],
+        "intended_local_relative": [
+          -12.5,
+          0.0
+        ],
+        "received_local_position": [
+          836.0,
+          470.5
+        ],
+        "received_local_relative": [
+          -12.5,
+          0.0
+        ],
+        "sent_window_position": [
+          836.0,
+          470.5
+        ],
+        "sent_window_relative": [
+          -12.5,
+          0.0
+        ],
+        "transform_hex": "0b0000000000803f00000000000000000000803f0000000000000000"
+      },
+      "name": "identity_actual_xformed_by_roundtrip",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "identity_source_event_not_mutated",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "uniform_conversion_valid",
+      "passed": true
+    },
+    {
+      "details": {
+        "intended_local_center": [
+          836.0,
+          470.5
+        ],
+        "intended_local_relative": [
+          -12.5,
+          0.0
+        ],
+        "received_local_position": [
+          836.0,
+          470.5
+        ],
+        "received_local_relative": [
+          -12.5,
+          0.0
+        ],
+        "sent_window_position": [
+          589.380004882812,
+          331.702484130859
+        ],
+        "sent_window_relative": [
+          -8.8125,
+          0.0
+        ],
+        "transform_hex": "0b000000e17a343f0000000000000000e17a343f0000000000000000"
+      },
+      "name": "uniform_actual_xformed_by_roundtrip",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "uniform_source_event_not_mutated",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "nonuniform_translated_conversion_valid",
+      "passed": true
+    },
+    {
+      "details": {
+        "intended_local_center": [
+          836.0,
+          470.5
+        ],
+        "intended_local_relative": [
+          -12.5,
+          4.25
+        ],
+        "received_local_position": [
+          836.0,
+          470.500030517578
+        ],
+        "received_local_relative": [
+          -12.5,
+          4.25
+        ],
+        "sent_window_position": [
+          455.0,
+          333.875
+        ],
+        "sent_window_relative": [
+          -6.25,
+          3.1875
+        ],
+        "transform_hex": "0b0000000000003f00000000000000000000403f00001442000098c1"
+      },
+      "name": "nonuniform_translated_actual_xformed_by_roundtrip",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "nonuniform_translated_source_event_not_mutated",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "sheared_translated_conversion_valid",
+      "passed": true
+    },
+    {
+      "details": {
+        "intended_local_center": [
+          836.0,
+          470.5
+        ],
+        "intended_local_relative": [
+          -12.5,
+          4.25
+        ],
+        "received_local_position": [
+          836.0,
+          470.499938964844
+        ],
+        "received_local_relative": [
+          -12.4999990463257,
+          4.25
+        ],
+        "sent_window_position": [
+          799.899963378906,
+          676.249938964844
+        ],
+        "sent_window_relative": [
+          -9.14999961853027,
+          4.27499961853027
+        ],
+        "transform_hex": "0b000000cdcc4c3fcdcccc3dcdcc4c3e6666a63f00001442000098c1"
+      },
+      "name": "sheared_translated_actual_xformed_by_roundtrip",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "sheared_translated_source_event_not_mutated",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "reflected_conversion_valid",
+      "passed": true
+    },
+    {
+      "details": {
+        "intended_local_center": [
+          836.0,
+          470.5
+        ],
+        "intended_local_relative": [
+          -12.5,
+          4.25
+        ],
+        "received_local_position": [
+          836.0,
+          470.499969482422
+        ],
+        "received_local_relative": [
+          -12.5,
+          4.25
+        ],
+        "sent_window_position": [
+          -631.799987792969,
+          592.649963378906
+        ],
+        "sent_window_relative": [
+          10.0,
+          5.52499961853027
+        ],
+        "transform_hex": "0b000000cdcc4cbf00000000000000006666a63f00001442000098c1"
+      },
+      "name": "reflected_actual_xformed_by_roundtrip",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "reflected_source_event_not_mutated",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "singular_rejected",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "infinite_basis_rejected",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "nan_origin_rejected",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "nonfinite_delta_rejected",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "nonfinite_center_rejected",
+      "passed": true
+    },
+    {
+      "details": {
+        "content_scale_aspect": 1,
+        "content_scale_factor": 1.0,
+        "content_scale_mode": 1,
+        "content_scale_size": [
+          1672.0,
+          941.0
+        ],
+        "display_server_window_size": [
+          0.0,
+          0.0
+        ],
+        "final_transform": {
+          "determinant": 0.497572064399719,
+          "hex": "0b0000004984343f000000000000000052a4343f0000803f00000000",
+          "origin": [
+            1.0,
+            0.0
+          ],
+          "x": [
+            0.705143511295319,
+            0.0
+          ],
+          "y": [
+            0.0,
+            0.705632328987122
+          ]
+        },
+        "valid_transform": true,
+        "viewport_rect_position": [
+          0.0,
+          0.0
+        ],
+        "viewport_rect_size": [
+          1672.0,
+          941.0
+        ],
+        "viewport_texture_size": [
+          832.0,
+          469.0
+        ],
+        "window_id": 0,
+        "window_size": [
+          1180.0,
+          664.0
+        ]
+      },
+      "name": "headless_content_scale_nonidentity",
+      "passed": true
+    },
+    {
+      "details": {
+        "content_scale_aspect": 1,
+        "content_scale_factor": 1.0,
+        "content_scale_mode": 1,
+        "content_scale_size": [
+          1672.0,
+          941.0
+        ],
+        "display_server_window_size": [
+          0.0,
+          0.0
+        ],
+        "final_transform": {
+          "determinant": 0.497572064399719,
+          "hex": "0b0000004984343f000000000000000052a4343f0000803f00000000",
+          "origin": [
+            1.0,
+            0.0
+          ],
+          "x": [
+            0.705143511295319,
+            0.0
+          ],
+          "y": [
+            0.0,
+            0.705632328987122
+          ]
+        },
+        "valid_transform": true,
+        "viewport_rect_position": [
+          0.0,
+          0.0
+        ],
+        "viewport_rect_size": [
+          1672.0,
+          941.0
+        ],
+        "viewport_texture_size": [
+          832.0,
+          469.0
+        ],
+        "window_id": 0,
+        "window_size": [
+          1180.0,
+          664.0
+        ]
+      },
+      "name": "canvas_items_live_live_mapping_valid",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "canvas_items_live_native_button_pressed",
+      "passed": true
+    },
+    {
+      "details": {
+        "angle_after": [
+          0.0500000007450581,
+          0.0
+        ],
+        "angle_before": [
+          0.0,
+          0.0
+        ],
+        "delivered": [
+          {
+            "button_mask": 2,
+            "global_position": [
+              836.0,
+              470.499969482422
+            ],
+            "input_mapping": {
+              "content_scale_aspect": 1,
+              "content_scale_factor": 1.0,
+              "content_scale_mode": 1,
+              "content_scale_size": [
+                1672.0,
+                941.0
+              ],
+              "display_server_window_size": [
+                0.0,
+                0.0
+              ],
+              "final_transform": {
+                "determinant": 0.497572064399719,
+                "hex": "0b0000004984343f000000000000000052a4343f0000803f00000000",
+                "origin": [
+                  1.0,
+                  0.0
+                ],
+                "x": [
+                  0.705143511295319,
+                  0.0
+                ],
+                "y": [
+                  0.0,
+                  0.705632328987122
+                ]
+              },
+              "valid_transform": true,
+              "viewport_rect_position": [
+                0.0,
+                0.0
+              ],
+              "viewport_rect_size": [
+                1672.0,
+                941.0
+              ],
+              "viewport_texture_size": [
+                832.0,
+                469.0
+              ],
+              "window_id": 0,
+              "window_size": [
+                1180.0,
+                664.0
+              ]
+            },
+            "kind": "motion",
+            "position": [
+              836.0,
+              470.499969482422
+            ],
+            "relative": [
+              -12.5,
+              0.0
+            ],
+            "right": true
+          }
+        ],
+        "delivery_check": {
+          "event_count": 1,
+          "mapping_stable": true,
+          "passed": true,
+          "received_center_matches": true,
+          "received_relative_matches": true,
+          "right_button_held": true,
+          "single_motion": true,
+          "witness_mapping_matches": true
+        },
+        "intended_viewport_relative": [
+          -12.5,
+          0.0
+        ],
+        "mapping_after": {
+          "content_scale_aspect": 1,
+          "content_scale_factor": 1.0,
+          "content_scale_mode": 1,
+          "content_scale_size": [
+            1672.0,
+            941.0
+          ],
+          "display_server_window_size": [
+            0.0,
+            0.0
+          ],
+          "final_transform": {
+            "determinant": 0.497572064399719,
+            "hex": "0b0000004984343f000000000000000052a4343f0000803f00000000",
+            "origin": [
+              1.0,
+              0.0
+            ],
+            "x": [
+              0.705143511295319,
+              0.0
+            ],
+            "y": [
+              0.0,
+              0.705632328987122
+            ]
+          },
+          "valid_transform": true,
+          "viewport_rect_position": [
+            0.0,
+            0.0
+          ],
+          "viewport_rect_size": [
+            1672.0,
+            941.0
+          ],
+          "viewport_texture_size": [
+            832.0,
+            469.0
+          ],
+          "window_id": 0,
+          "window_size": [
+            1180.0,
+            664.0
+          ]
+        },
+        "mapping_before": {
+          "content_scale_aspect": 1,
+          "content_scale_factor": 1.0,
+          "content_scale_mode": 1,
+          "content_scale_size": [
+            1672.0,
+            941.0
+          ],
+          "display_server_window_size": [
+            0.0,
+            0.0
+          ],
+          "final_transform": {
+            "determinant": 0.497572064399719,
+            "hex": "0b0000004984343f000000000000000052a4343f0000803f00000000",
+            "origin": [
+              1.0,
+              0.0
+            ],
+            "x": [
+              0.705143511295319,
+              0.0
+            ],
+            "y": [
+              0.0,
+              0.705632328987122
+            ]
+          },
+          "valid_transform": true,
+          "viewport_rect_position": [
+            0.0,
+            0.0
+          ],
+          "viewport_rect_size": [
+            1672.0,
+            941.0
+          ],
+          "viewport_texture_size": [
+            832.0,
+            469.0
+          ],
+          "window_id": 0,
+          "window_size": [
+            1180.0,
+            664.0
+          ]
+        },
+        "sent_window_position": [
+          590.5,
+          332.0
+        ],
+        "sent_window_relative": [
+          -8.81429386138916,
+          0.0
+        ]
+      },
+      "name": "canvas_items_live_actual_parse_flush_dispatch",
+      "passed": true
+    },
+    {
+      "details": {
+        "angle_after": [
+          0.0500000007450581,
+          0.0
+        ],
+        "angle_before": [
+          0.0,
+          0.0
+        ],
+        "delivered": [
+          {
+            "button_mask": 2,
+            "global_position": [
+              836.0,
+              470.499969482422
+            ],
+            "input_mapping": {
+              "content_scale_aspect": 1,
+              "content_scale_factor": 1.0,
+              "content_scale_mode": 1,
+              "content_scale_size": [
+                1672.0,
+                941.0
+              ],
+              "display_server_window_size": [
+                0.0,
+                0.0
+              ],
+              "final_transform": {
+                "determinant": 0.497572064399719,
+                "hex": "0b0000004984343f000000000000000052a4343f0000803f00000000",
+                "origin": [
+                  1.0,
+                  0.0
+                ],
+                "x": [
+                  0.705143511295319,
+                  0.0
+                ],
+                "y": [
+                  0.0,
+                  0.705632328987122
+                ]
+              },
+              "valid_transform": true,
+              "viewport_rect_position": [
+                0.0,
+                0.0
+              ],
+              "viewport_rect_size": [
+                1672.0,
+                941.0
+              ],
+              "viewport_texture_size": [
+                832.0,
+                469.0
+              ],
+              "window_id": 0,
+              "window_size": [
+                1180.0,
+                664.0
+              ]
+            },
+            "kind": "motion",
+            "position": [
+              836.0,
+              470.499969482422
+            ],
+            "relative": [
+              -12.5,
+              0.0
+            ],
+            "right": true
+          }
+        ],
+        "delivery_check": {
+          "event_count": 1,
+          "mapping_stable": true,
+          "passed": true,
+          "received_center_matches": true,
+          "received_relative_matches": true,
+          "right_button_held": true,
+          "single_motion": true,
+          "witness_mapping_matches": true
+        },
+        "intended_viewport_relative": [
+          -12.5,
+          0.0
+        ],
+        "mapping_after": {
+          "content_scale_aspect": 1,
+          "content_scale_factor": 1.0,
+          "content_scale_mode": 1,
+          "content_scale_size": [
+            1672.0,
+            941.0
+          ],
+          "display_server_window_size": [
+            0.0,
+            0.0
+          ],
+          "final_transform": {
+            "determinant": 0.497572064399719,
+            "hex": "0b0000004984343f000000000000000052a4343f0000803f00000000",
+            "origin": [
+              1.0,
+              0.0
+            ],
+            "x": [
+              0.705143511295319,
+              0.0
+            ],
+            "y": [
+              0.0,
+              0.705632328987122
+            ]
+          },
+          "valid_transform": true,
+          "viewport_rect_position": [
+            0.0,
+            0.0
+          ],
+          "viewport_rect_size": [
+            1672.0,
+            941.0
+          ],
+          "viewport_texture_size": [
+            832.0,
+            469.0
+          ],
+          "window_id": 0,
+          "window_size": [
+            1180.0,
+            664.0
+          ]
+        },
+        "mapping_before": {
+          "content_scale_aspect": 1,
+          "content_scale_factor": 1.0,
+          "content_scale_mode": 1,
+          "content_scale_size": [
+            1672.0,
+            941.0
+          ],
+          "display_server_window_size": [
+            0.0,
+            0.0
+          ],
+          "final_transform": {
+            "determinant": 0.497572064399719,
+            "hex": "0b0000004984343f000000000000000052a4343f0000803f00000000",
+            "origin": [
+              1.0,
+              0.0
+            ],
+            "x": [
+              0.705143511295319,
+              0.0
+            ],
+            "y": [
+              0.0,
+              0.705632328987122
+            ]
+          },
+          "valid_transform": true,
+          "viewport_rect_position": [
+            0.0,
+            0.0
+          ],
+          "viewport_rect_size": [
+            1672.0,
+            941.0
+          ],
+          "viewport_texture_size": [
+            832.0,
+            469.0
+          ],
+          "window_id": 0,
+          "window_size": [
+            1180.0,
+            664.0
+          ]
+        },
+        "sent_window_position": [
+          590.5,
+          332.0
+        ],
+        "sent_window_relative": [
+          -8.81429386138916,
+          0.0
+        ]
+      },
+      "name": "canvas_items_live_unchanged_angle_tolerance",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "canvas_items_live_native_button_released",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "canvas_items_live_missing_event_rejected",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "canvas_items_live_duplicate_event_rejected",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "canvas_items_live_old_scaled_delta_rejected",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "canvas_items_live_changed_transform_rejected",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "canvas_items_live_witness_transform_change_rejected",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "canvas_items_live_unheld_button_rejected",
+      "passed": true
+    },
+    {
+      "details": {
+        "content_scale_aspect": 1,
+        "content_scale_factor": 1.0,
+        "content_scale_mode": 1,
+        "content_scale_size": [
+          1672.0,
+          941.0
+        ],
+        "display_server_window_size": [
+          0.0,
+          0.0
+        ],
+        "final_transform": {
+          "determinant": 0.507523477077484,
+          "hex": "0b000000d469103f7583903dd469103e9dd56a3ff4b8d841218356c1",
+          "origin": [
+            27.0903091430664,
+            -13.4070138931274
+          ],
+          "x": [
+            0.564114809036255,
+            0.0705632343888283
+          ],
+          "y": [
+            0.141028702259064,
+            0.917321979999542
+          ]
+        },
+        "valid_transform": true,
+        "viewport_rect_position": [
+          0.0,
+          0.0
+        ],
+        "viewport_rect_size": [
+          1672.0,
+          941.0
+        ],
+        "viewport_texture_size": [
+          832.0,
+          469.0
+        ],
+        "window_id": 0,
+        "window_size": [
+          1180.0,
+          664.0
+        ]
+      },
+      "name": "canvas_plus_shear_live_live_mapping_valid",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "canvas_plus_shear_live_native_button_pressed",
+      "passed": true
+    },
+    {
+      "details": {
+        "angle_after": [
+          0.0999999940395355,
+          0.0
+        ],
+        "angle_before": [
+          0.0500000007450581,
+          0.0
+        ],
+        "delivered": [
+          {
+            "button_mask": 2,
+            "global_position": [
+              836.0,
+              470.5
+            ],
+            "input_mapping": {
+              "content_scale_aspect": 1,
+              "content_scale_factor": 1.0,
+              "content_scale_mode": 1,
+              "content_scale_size": [
+                1672.0,
+                941.0
+              ],
+              "display_server_window_size": [
+                0.0,
+                0.0
+              ],
+              "final_transform": {
+                "determinant": 0.507523477077484,
+                "hex": "0b000000d469103f7583903dd469103e9dd56a3ff4b8d841218356c1",
+                "origin": [
+                  27.0903091430664,
+                  -13.4070138931274
+                ],
+                "x": [
+                  0.564114809036255,
+                  0.0705632343888283
+                ],
+                "y": [
+                  0.141028702259064,
+                  0.917321979999542
+                ]
+              },
+              "valid_transform": true,
+              "viewport_rect_position": [
+                0.0,
+                0.0
+              ],
+              "viewport_rect_size": [
+                1672.0,
+                941.0
+              ],
+              "viewport_texture_size": [
+                832.0,
+                469.0
+              ],
+              "window_id": 0,
+              "window_size": [
+                1180.0,
+                664.0
+              ]
+            },
+            "kind": "motion",
+            "position": [
+              836.0,
+              470.5
+            ],
+            "relative": [
+              -12.4999990463257,
+              0.0
+            ],
+            "right": true
+          }
+        ],
+        "delivery_check": {
+          "event_count": 1,
+          "mapping_stable": true,
+          "passed": true,
+          "received_center_matches": true,
+          "received_relative_matches": true,
+          "right_button_held": true,
+          "single_motion": true,
+          "witness_mapping_matches": true
+        },
+        "intended_viewport_relative": [
+          -12.5,
+          0.0
+        ],
+        "mapping_after": {
+          "content_scale_aspect": 1,
+          "content_scale_factor": 1.0,
+          "content_scale_mode": 1,
+          "content_scale_size": [
+            1672.0,
+            941.0
+          ],
+          "display_server_window_size": [
+            0.0,
+            0.0
+          ],
+          "final_transform": {
+            "determinant": 0.507523477077484,
+            "hex": "0b000000d469103f7583903dd469103e9dd56a3ff4b8d841218356c1",
+            "origin": [
+              27.0903091430664,
+              -13.4070138931274
+            ],
+            "x": [
+              0.564114809036255,
+              0.0705632343888283
+            ],
+            "y": [
+              0.141028702259064,
+              0.917321979999542
+            ]
+          },
+          "valid_transform": true,
+          "viewport_rect_position": [
+            0.0,
+            0.0
+          ],
+          "viewport_rect_size": [
+            1672.0,
+            941.0
+          ],
+          "viewport_texture_size": [
+            832.0,
+            469.0
+          ],
+          "window_id": 0,
+          "window_size": [
+            1180.0,
+            664.0
+          ]
+        },
+        "mapping_before": {
+          "content_scale_aspect": 1,
+          "content_scale_factor": 1.0,
+          "content_scale_mode": 1,
+          "content_scale_size": [
+            1672.0,
+            941.0
+          ],
+          "display_server_window_size": [
+            0.0,
+            0.0
+          ],
+          "final_transform": {
+            "determinant": 0.507523477077484,
+            "hex": "0b000000d469103f7583903dd469103e9dd56a3ff4b8d841218356c1",
+            "origin": [
+              27.0903091430664,
+              -13.4070138931274
+            ],
+            "x": [
+              0.564114809036255,
+              0.0705632343888283
+            ],
+            "y": [
+              0.141028702259064,
+              0.917321979999542
+            ]
+          },
+          "valid_transform": true,
+          "viewport_rect_position": [
+            0.0,
+            0.0
+          ],
+          "viewport_rect_size": [
+            1672.0,
+            941.0
+          ],
+          "viewport_texture_size": [
+            832.0,
+            469.0
+          ],
+          "window_id": 0,
+          "window_size": [
+            1180.0,
+            664.0
+          ]
+        },
+        "sent_window_position": [
+          565.044311523438,
+          477.183868408203
+        ],
+        "sent_window_relative": [
+          -7.0514349937439,
+          -0.882040441036224
+        ]
+      },
+      "name": "canvas_plus_shear_live_actual_parse_flush_dispatch",
+      "passed": true
+    },
+    {
+      "details": {
+        "angle_after": [
+          0.0999999940395355,
+          0.0
+        ],
+        "angle_before": [
+          0.0500000007450581,
+          0.0
+        ],
+        "delivered": [
+          {
+            "button_mask": 2,
+            "global_position": [
+              836.0,
+              470.5
+            ],
+            "input_mapping": {
+              "content_scale_aspect": 1,
+              "content_scale_factor": 1.0,
+              "content_scale_mode": 1,
+              "content_scale_size": [
+                1672.0,
+                941.0
+              ],
+              "display_server_window_size": [
+                0.0,
+                0.0
+              ],
+              "final_transform": {
+                "determinant": 0.507523477077484,
+                "hex": "0b000000d469103f7583903dd469103e9dd56a3ff4b8d841218356c1",
+                "origin": [
+                  27.0903091430664,
+                  -13.4070138931274
+                ],
+                "x": [
+                  0.564114809036255,
+                  0.0705632343888283
+                ],
+                "y": [
+                  0.141028702259064,
+                  0.917321979999542
+                ]
+              },
+              "valid_transform": true,
+              "viewport_rect_position": [
+                0.0,
+                0.0
+              ],
+              "viewport_rect_size": [
+                1672.0,
+                941.0
+              ],
+              "viewport_texture_size": [
+                832.0,
+                469.0
+              ],
+              "window_id": 0,
+              "window_size": [
+                1180.0,
+                664.0
+              ]
+            },
+            "kind": "motion",
+            "position": [
+              836.0,
+              470.5
+            ],
+            "relative": [
+              -12.4999990463257,
+              0.0
+            ],
+            "right": true
+          }
+        ],
+        "delivery_check": {
+          "event_count": 1,
+          "mapping_stable": true,
+          "passed": true,
+          "received_center_matches": true,
+          "received_relative_matches": true,
+          "right_button_held": true,
+          "single_motion": true,
+          "witness_mapping_matches": true
+        },
+        "intended_viewport_relative": [
+          -12.5,
+          0.0
+        ],
+        "mapping_after": {
+          "content_scale_aspect": 1,
+          "content_scale_factor": 1.0,
+          "content_scale_mode": 1,
+          "content_scale_size": [
+            1672.0,
+            941.0
+          ],
+          "display_server_window_size": [
+            0.0,
+            0.0
+          ],
+          "final_transform": {
+            "determinant": 0.507523477077484,
+            "hex": "0b000000d469103f7583903dd469103e9dd56a3ff4b8d841218356c1",
+            "origin": [
+              27.0903091430664,
+              -13.4070138931274
+            ],
+            "x": [
+              0.564114809036255,
+              0.0705632343888283
+            ],
+            "y": [
+              0.141028702259064,
+              0.917321979999542
+            ]
+          },
+          "valid_transform": true,
+          "viewport_rect_position": [
+            0.0,
+            0.0
+          ],
+          "viewport_rect_size": [
+            1672.0,
+            941.0
+          ],
+          "viewport_texture_size": [
+            832.0,
+            469.0
+          ],
+          "window_id": 0,
+          "window_size": [
+            1180.0,
+            664.0
+          ]
+        },
+        "mapping_before": {
+          "content_scale_aspect": 1,
+          "content_scale_factor": 1.0,
+          "content_scale_mode": 1,
+          "content_scale_size": [
+            1672.0,
+            941.0
+          ],
+          "display_server_window_size": [
+            0.0,
+            0.0
+          ],
+          "final_transform": {
+            "determinant": 0.507523477077484,
+            "hex": "0b000000d469103f7583903dd469103e9dd56a3ff4b8d841218356c1",
+            "origin": [
+              27.0903091430664,
+              -13.4070138931274
+            ],
+            "x": [
+              0.564114809036255,
+              0.0705632343888283
+            ],
+            "y": [
+              0.141028702259064,
+              0.917321979999542
+            ]
+          },
+          "valid_transform": true,
+          "viewport_rect_position": [
+            0.0,
+            0.0
+          ],
+          "viewport_rect_size": [
+            1672.0,
+            941.0
+          ],
+          "viewport_texture_size": [
+            832.0,
+            469.0
+          ],
+          "window_id": 0,
+          "window_size": [
+            1180.0,
+            664.0
+          ]
+        },
+        "sent_window_position": [
+          565.044311523438,
+          477.183868408203
+        ],
+        "sent_window_relative": [
+          -7.0514349937439,
+          -0.882040441036224
+        ]
+      },
+      "name": "canvas_plus_shear_live_unchanged_angle_tolerance",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "canvas_plus_shear_live_native_button_released",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "canvas_plus_shear_live_missing_event_rejected",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "canvas_plus_shear_live_duplicate_event_rejected",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "canvas_plus_shear_live_old_scaled_delta_rejected",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "canvas_plus_shear_live_changed_transform_rejected",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "canvas_plus_shear_live_witness_transform_change_rejected",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "canvas_plus_shear_live_unheld_button_rejected",
+      "passed": true
+    }
+  ],
+  "display_server": "headless",
+  "engine": {
+    "build": "official",
+    "hash": "f62fdbde15035c5576dad93e586201f4d41ef0cb",
+    "hex": 263425,
+    "major": 4,
+    "minor": 5,
+    "patch": 1,
+    "status": "stable",
+    "string": "4.5.1-stable (official)",
+    "timestamp": 0
+  },
+  "passed": true,
+  "scope": "Actual InputEventMouseMotion.xformed_by and actual Input.parse_input_event/flush to Node._input in a headless synthetic root Window. No game/world, real display, image, hardware GPU, production final transform, camera motion or orbit-runtime acceptance.",
+  "version": "orbit61-native-input-units-v5"
+}
