@@ -1,6 +1,15 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 03:53 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 04:17 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 04:17第四次真实world：一张默认图，输入缩放门终态失败
+
+- G两原PNG、视觉拒绝与v4同步验证已完整发布 **afa369660a6f614f27e662ed3313aeb83b9fb4ce**，tree **466253cc2f4f4c77e824e319d107e1e56fb0a2b0**、parente6dfe8df；66路径/50唯一blob新bare独立公共Git回读匹配，本地4adafe2同树对齐。原create_tree首次授权上下文拒绝后，同参数一次原用户证据重试成功，11个已存大blob未重传
+- **第四world有真实一张默认图但仍失败**：[wrapper](cloud-evidence/nearbay61-orbit-renderer-20261002T040614Z-kyawbpny/wrapper-report.json)child/wrapper1，36.287秒，峰1656340KiB，1486源不变、无脚本错误。[原PNG](cloud-evidence/nearbay61-orbit-renderer-20261002T040614Z-kyawbpny/images/01-default-native-camera.png)1179×664/378853B已实看，完整船/海面/天空可见，无岸景覆盖，不是转向或参考视觉通过
+- v4本轮真正观察到Rain/Snow在process信号起点(0,128,192)到late witness变为(-3456,32,-3648)，三阶段own/tree/effective visible都false、visible_instance_count都0，post_draw后稳定；船/相机暂停姿态未变，库存门正常通过。此实测证明本轮同步问题被正确处理，不倒推旧未存具体身份的失败
+- F2和右键实际送达，第一motion请求.05rad，原window事件relative=-12.5，被原生witness收为-17.7268886566，实际orbit.x=.0709075555，超出原增量门而停止。已有4个process样本/3个已审段，camera与ship路径均0；退出释放输入。完整报告无损gzip保留，原build/前轮失败不改
+- [单位诊断](cloud-evidence/nearbay61-orbit-renderer-20261002T040614Z-kyawbpny/INPUT_SCALE_DIAGNOSIS.md)：观测倍率与1672/1179一致；官方4.5.1输入链使用get_final_transform().affine_inverse()。下一项将实际viewport-local目标增量通过实时final transform基变换成window事件，核原生接收量与原.00001容差；不改game灵敏度、不直接写orbit、不放宽步进。旧运行没有记录实时矩阵，不伪造它
+- H云体和西北山脊只在准备独立源码/缺口采集，均未新原生构建或world集成。E/F2八件Slack分享仍待明确频道回答，没有重试/换路；所有完整GOAL及硬件GPU验收未通过
 
 ## 03:53 G两张实图视觉拒绝；v4过程同步修复待真实world
 
