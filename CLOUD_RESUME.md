@@ -1,6 +1,6 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 23:03 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 23:21 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
 
 ## 云端硬性前置闸门：先插件上传完整核回，再继续工作
 
@@ -11,6 +11,16 @@
 - 上传失败优先查明原因并在授权内反复进行合规恢复，保持原payload、完整base tree/parent和非force ref；真实安全拒绝必须停止该动作，按批准规则取得明确证据/一次原call重试，仍拒则报告并保持闸门关闭，绝不绕审批/换route
 - 本项全部完成成果和本入口更新都核回后，才允许下一项。纯读取以查错/确认上传状态可以继续；与修复当前上传无关的新开发/渲染必须等待
 - 私密Slack交付定位符/收据仍仅本地，不因“全部项目”混入公开仓库；原受阻发送保持独立停止
+
+## 23:21 form-v3原四机位薄适配准备接受，核回后一次真实看图
+
+- form-v3原生源/保存与fresh真实结果已 **54760692ced07d0a2b79b7e262a5d16ce0b91217** 完整插件发布，tree5f3db8c28723948b321c7bbaf48e9c6bd65e2c6a、parent5b30f0a1；65路径/62blob新bare逐字核回，本地697fb32同树clean。远端包新空目录44原JSON全部恢复解析、324179B源SHAc36c7517原字节同，之后才开始此次views准备
+- [form-v3-views-v1](source-assets/cloud-bank58/revision-l/form-v3-views-v1/README.md)原14文件323976B；FINAL2ccfe241332fd50958c074298431a72614cd1a99ad333fd9a8799177cb29c703、manifest82a9631c5f02a009eb14d81f2e6112675a9ada9408477c4b8feba246b8750bb7；959冻结含自身核同，14778旧文件4885923973B逐SHA未变，无旧大raw/源复制
+- 五个薄适配只将已完成render-only流程绑定新form-v3真实source与external验证链；未改prior_source(g)直接读其真实成功记录，original_source_stage='failed'明确指历史form-v2，所有旧失败保持。原render/restore分支AST相同，8Text仍是原form-v3字节；新adapter有独立身份，不改源版本/内容
+- [窄独立复核](source-assets/cloud-bank58/revision-l/form-v3-views-v1/NARROW_REVIEW.md)亲读真实source+external/SHA绑定，官方3.11 normal13(.091秒)/-O13(.086秒)全过、manifest12条同；实际completed_source()只读重放与RENDER_BINDINGS精确相同。无新数学/可见性/监督框架，原3.11/桥/v3直接复用，源仍受全仓保护不在排除项
+- 固定原4命名输出/3方向、1179×664/校准aspect/CPU2/Cycles8samples/无denoise/原材质灯光和绝对机位。原120秒/每图27/1.5GiB/20秒尾余量保持，before/rendered/restored raw+原PNG CRC/解码检查保持。只open/render/restore，无build/save/verify/export和world装配
+- 本包/本入口先插件完整发布核回，然后唯一官方3.11 `form-v3-views-v1/observe_views58l.py --run-approved views` 一次观察。当前0engine/新准入/PNG；实际图才判断两区肩腹是否改善，新24面corner数学失败、历史23/22面和full_native/visual/contact/weather/world/GOAL未过均保持
+- form-v3准备/实际源新4报告已全部正常交付，全文bytes/SHA同、线程每项一次；累计84成功、旧28原受阻/未知件不动，私密回执仅本地。本views准备报告待Git闭环后再发，不混称有新图
 
 ## 23:03 form-v3真实保存与独立fresh-open整体完成，先外存再原机位图
 

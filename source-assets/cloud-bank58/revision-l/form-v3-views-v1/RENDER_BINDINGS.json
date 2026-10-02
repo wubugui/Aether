@@ -1,0 +1,286 @@
+{
+  "version": "cloudbank58l-form-v3-views-v1",
+  "stage": "views",
+  "source": "source-assets/cloud-bank58/revision-l/form-v3/cloud_bank58l_form_v3.blend",
+  "source_sha256": "c36c7517ed10540cda20bbd849f35f0e449595a96e960cc60c52ba00f4747e4c",
+  "source_bytes": 324179,
+  "predecessor_publication_commit": "54760692ced07d0a2b79b7e262a5d16ce0b91217",
+  "four_output_names": [
+    "01-original61-front",
+    "02-k-trial-front",
+    "03-k-fixed-side-back",
+    "04-k-fixed-near"
+  ],
+  "four_outputs_three_unique_directions": true,
+  "world_cameras": [
+    {
+      "name": "01-original61-front",
+      "camera_transform": "1200000010742f3f8ebcf53d00df37bf0000000035807c3f91ba283e506b3a3f1048e7bd1f0e2d3f00803b4500c08f4400608645",
+      "camera_projection": "130000009dc86f3f000000000000000000000000000000001c07d53f00000000000000000000000000000000460180bf000080bf0000000000000000173433bf00000000",
+      "reference": "1216",
+      "weather_time": 0.35,
+      "resolution": [
+        1179,
+        664
+      ],
+      "near": 0.3499999940395355,
+      "far": 18000.0,
+      "fov": 62.0
+    },
+    {
+      "name": "02-k-trial-front",
+      "camera_transform": "1200000010742f3f8ebcf53d00df37bf0000000035807c3f91ba283e506b3a3f1048e7bd1f0e2d3f00803b4500c08f4400608645",
+      "camera_projection": "130000009dc86f3f000000000000000000000000000000001c07d53f00000000000000000000000000000000460180bf000080bf0000000000000000173433bf00000000",
+      "reference": "1216",
+      "weather_time": 0.35,
+      "resolution": [
+        1179,
+        664
+      ],
+      "near": 0.3499999940395355,
+      "far": 18000.0,
+      "fov": 62.0
+    },
+    {
+      "name": "03-k-fixed-side-back",
+      "camera_transform": "12000000322b1dbf0a935dbe6555423f000000009631763f1c5a8c3e00134abfe5552c3ef32517bf9eef904596f77344086b4345",
+      "camera_projection": "130000009dc86f3f000000000000000000000000000000001c07d53f00000000000000000000000000000000460180bf000080bf0000000000000000173433bf00000000",
+      "reference": "1216",
+      "weather_time": 0.35,
+      "resolution": [
+        1179,
+        664
+      ],
+      "near": 0.3499999940395355,
+      "far": 18000.0,
+      "fov": 62.0
+    },
+    {
+      "name": "04-k-fixed-near",
+      "camera_transform": "120000000c742f3f92bcf53d04df37bf0000000036807c3f8fba283e546b3a3f0848e7bd1b0e2d3fcd3c5c4550014f44b0fa7d45",
+      "camera_projection": "130000009dc86f3f000000000000000000000000000000001c07d53f00000000000000000000000000000000460180bf000080bf0000000000000000173433bf00000000",
+      "reference": "1216",
+      "weather_time": 0.35,
+      "resolution": [
+        1179,
+        664
+      ],
+      "near": 0.3499999940395355,
+      "far": 18000.0,
+      "fov": 62.0
+    }
+  ],
+  "original_settings": {
+    "render_filepath": "",
+    "engine": "CYCLES",
+    "device": "CPU",
+    "samples": 8,
+    "denoising": false,
+    "threads_mode": "FIXED",
+    "threads": 2,
+    "resolution": [
+      1179,
+      664
+    ],
+    "percentage": 100,
+    "pixel_aspect": [
+      1.0006932020187378,
+      1.0
+    ],
+    "view_transform": "AgX",
+    "look": "None",
+    "exposure": 0.0,
+    "gamma": 1.0,
+    "use_nodes": false,
+    "use_compositing": false,
+    "use_sequencer": false,
+    "transparent": false,
+    "active_camera": "L58_ABSOLUTE_01-original61-front"
+  },
+  "source_camera_mapping_sha256": "130921f620ebea4a2e420a4d16ee2cd09c447f5bc4780fefbb53c5e6a187910d",
+  "source_texts": [
+    {
+      "name": "BINDINGS58L.json",
+      "sha256": "82f815e42cd685b04f1821b0385f72914458d1ce450703b9cf11b5f95a1b0cea",
+      "bytes": 125481,
+      "is_in_memory": true,
+      "filepath": "",
+      "use_module": false
+    },
+    {
+      "name": "CANDIDATE58L.json",
+      "sha256": "ddb9042385d25776a8a1f08f3394ca72da1869531e66e6c43ca8d05f27dbe8d3",
+      "bytes": 439569,
+      "is_in_memory": true,
+      "filepath": "",
+      "use_module": false
+    },
+    {
+      "name": "EDIT58L.py",
+      "sha256": "ec066f509cd040fad95416900326d8515745294c18751e20fd96a564d910c6f9",
+      "bytes": 796,
+      "is_in_memory": true,
+      "filepath": "",
+      "use_module": false
+    },
+    {
+      "name": "GEOMETRY58L.py",
+      "sha256": "a21106be69f53831a3886fafe0be64e124d0264dce28bb5b56e985eb512016b2",
+      "bytes": 14552,
+      "is_in_memory": true,
+      "filepath": "",
+      "use_module": false
+    },
+    {
+      "name": "NATIVE58L.py",
+      "sha256": "bd280df591cf276b53d52c14bb2403a60f648db05224822df8944ed0d33b4bc3",
+      "bytes": 28057,
+      "is_in_memory": true,
+      "filepath": "",
+      "use_module": false
+    },
+    {
+      "name": "NATIVE_SUPPORT58L.py",
+      "sha256": "e406198576c7539bd46783e6e26593692771c718db5010898593a320f6353a98",
+      "bytes": 23943,
+      "is_in_memory": true,
+      "filepath": "",
+      "use_module": false
+    },
+    {
+      "name": "POLY58K.py",
+      "sha256": "43e9fd8b2a0bed72c01c6dc0a30d3e48338747151903b1273e22ca0eb296a633",
+      "bytes": 11506,
+      "is_in_memory": true,
+      "filepath": "",
+      "use_module": false
+    },
+    {
+      "name": "README58L.txt",
+      "sha256": "750c1f97a244ab124787f7ea0bfb14ae84976923c40c01a2a315dc9783b4ecd9",
+      "bytes": 2292,
+      "is_in_memory": true,
+      "filepath": "",
+      "use_module": false
+    }
+  ],
+  "source_native_sha256": "bd280df591cf276b53d52c14bb2403a60f648db05224822df8944ed0d33b4bc3",
+  "source_raw_reference": {
+    "path": "cloud-evidence/cloudbank58l-form-v3-source-20261002T225658Z-jcrc3gec/outputs/build-raw.json",
+    "sha256": "3c9a563225a3e0205dec2caee37521169756489b2e7183dbf4654b298e01113b"
+  },
+  "current_default_normals": {
+    "acceptance_mode": "api_consistency_isolated_diagnostic_v1",
+    "diagnostic_normal_acceptance": true,
+    "full_native_acceptance": false,
+    "polygon_geometry_passed": true,
+    "polygon_geometry_max_abs": 2.7049721644800684e-06,
+    "flat": true,
+    "three_corners_equal": true,
+    "outward": true,
+    "unit_length_error_max": 1.3596210401978226e-07,
+    "geometric_direction_dot_min": 0.9999998228341509,
+    "corner_newell_api_passed": true,
+    "corner_newell_api_max_abs": 5.960464477539063e-08,
+    "comparison_limit": 3e-05,
+    "original_corner_geometry_passed": false,
+    "original_corner_geometry_max_abs": 0.0005249128728819219,
+    "original_corner_geometry_faces_over_limit": [
+      10,
+      11,
+      12,
+      13,
+      726,
+      728,
+      729,
+      1181,
+      1198,
+      1242,
+      1345,
+      1435,
+      1548,
+      1576,
+      1577,
+      1578,
+      1870,
+      2291,
+      2292,
+      2293,
+      2294,
+      2763,
+      2968,
+      2969
+    ],
+    "original_corner_geometry_max_angle_degrees": 0.03410575291451074,
+    "historical_default_failure": {
+      "raw_sha256": "0b39aa841519b65874e24d219c4e74d3063daa8dfd9bdf86b15fdb90e9b5a99c",
+      "original_corner_geometry_passed": false,
+      "faces_over_3e_5": 22,
+      "max_abs": 0.00015941344933428914,
+      "max_angle_degrees": 0.009158468662372497
+    }
+  },
+  "historical_default_failure": {
+    "raw_sha256": "0b39aa841519b65874e24d219c4e74d3063daa8dfd9bdf86b15fdb90e9b5a99c",
+    "original_corner_geometry_passed": false,
+    "faces_over_3e_5": 22,
+    "max_abs": 0.00015941344933428914,
+    "max_angle_degrees": 0.009158468662372497
+  },
+  "limits": {
+    "total_wall_seconds": 120,
+    "native_caps": {
+      "render": 27
+    },
+    "tail_reserve_seconds": 20,
+    "cpu_threads": 2,
+    "max_wrapper_plus_child_rss_kib": 1572864
+  },
+  "acceptance_mode": "api_consistency_isolated_diagnostic_v1",
+  "full_native_acceptance": false,
+  "visual_acceptance": false,
+  "world_acceptance": false,
+  "global_GOAL": false,
+  "exact_comparison_policy": "Original full equality and original 3e-5/API gates. No rounding, no new tolerance.",
+  "runtime": {
+    "python_path": "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/4.5/python/bin/python3.11",
+    "python_sha256": "60b08089c60cbe81827b135c8fd9e206ba2ee6bf54aa1dbd0d6f56ac2d5914f6",
+    "python_version": "3.11.15 (main, Apr 25 2025, 12:39:20) [GCC 11.2.1 20220127 (Red Hat 11.2.1-9)]",
+    "numpy_version": "1.26.4"
+  },
+  "completed_source_predecessor": {
+    "source_chain_verified": true,
+    "source_runner_version": "cloudbank58l-form-v3",
+    "source_run": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/cloudbank58l-form-v3-source-20261002T225658Z-jcrc3gec",
+    "original_source_stage": "failed",
+    "original_source_stage_refers_to": "form-v2",
+    "source_sha256": "c36c7517ed10540cda20bbd849f35f0e449595a96e960cc60c52ba00f4747e4c",
+    "source_bytes": 324179,
+    "source_admission_sha256": "25a19acd7bd25de723096af4e91d3b29f5e362a45840499fd85b231365776389",
+    "source_terminal_sha256": "3db4b539b17aeb0fa9c764adfb3188ef8a9bc6effdfa9009919f9667d587db78",
+    "source_supervisor_sha256": "be9cc9beff4bf8c4430881cbf53e551abff9fb06842ca1fe81fae89b1092ddbc",
+    "source_observation_sha256": "e52766c71a5fb49332f37f84e03a55442c304ec901414be8970f440218e92313",
+    "source_validation_sha256": "f99145d8c97f8dcd3031733fba9578f9f659604003d9e4eb42b6dd14e55cd5cf",
+    "source_external_result_sha256": "4efa34a9894df3a31b559d525ddd0b29c552c8cbab52073ff718b3b53decf14e",
+    "launcher_pid": 5,
+    "launcher_exit_code": 0,
+    "launcher_wall_seconds": 73.12697763800679,
+    "worker_pid": 6,
+    "native_pids": [
+      7,
+      29
+    ],
+    "source_build_raw_sha256": "3c9a563225a3e0205dec2caee37521169756489b2e7183dbf4654b298e01113b",
+    "full_native_acceptance": false,
+    "visual_acceptance": false,
+    "world_acceptance": false,
+    "global_GOAL": false
+  },
+  "historical_form_v2_default_failure": {
+    "raw_sha256": "8ad8010e94bd7d9edcabe794ffb18c99a7519e50c34a37f20c1e3c8bdcfaafa7",
+    "original_corner_geometry_passed": false,
+    "faces_over_3e_5": 23,
+    "max_abs": 0.0005249128728819219,
+    "max_angle_degrees": 0.03410575291451074
+  }
+}

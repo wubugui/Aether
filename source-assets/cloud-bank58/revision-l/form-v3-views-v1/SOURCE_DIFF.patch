@@ -1,0 +1,315 @@
+--- source-assets/cloud-bank58/revision-l/form-v2-views-v1/views58l.py
++++ source-assets/cloud-bank58/revision-l/form-v3-views-v1/views58l.py
+@@ -1,26 +1,77 @@
+-"""Thin four-view binding for the already saved/recovered form-v2. No engine on import."""
++"""Thin four-view binding for the actually completed form-v3 source. No engine on import."""
+ from __future__ import annotations
+ import os, sys
+ from pathlib import Path
+ sys.dont_write_bytecode = True
+ HERE = Path(__file__).resolve().parent
+-sys.path.insert(0, str(HERE.parent / 'form-v2-recovery-v1'))
+-import recovery58l as recovery
+-ROOT, FORM = recovery.ROOT, recovery.FORM
+-original, g, native, s, support, deadline = recovery.original, recovery.g, recovery.native, recovery.s, recovery.support, recovery.deadline
+-require, sha, read = recovery.require, recovery.sha, recovery.read
+-runtime, install_pidfd_bridge, require_source, verify_pins = recovery.runtime, recovery.install_pidfd_bridge, recovery.require_source, recovery.verify_pins
+-PYTHON, PYTHON_SHA, SOURCE_SHA, SOURCE_BYTES = recovery.PYTHON, recovery.PYTHON_SHA, recovery.SOURCE_SHA, recovery.SOURCE_BYTES
+-VERSION, STAGE = 'cloudbank58l-form-v2-views-v1', 'views'
++FORM = HERE.parent / 'form-v3'
++sys.path.insert(0, str(FORM))
++import run58l_form_v3 as original
++import geometry58l as g
++import native58l as native
++import runtime58l as form_runtime
++ROOT = original.ROOT
++s, support, deadline = original.native_support, original.support, original.deadline58l_v3
++require, sha, read = s.require, support.sha, support.strict_json
++runtime, install_pidfd_bridge = form_runtime.runtime, form_runtime.install_pidfd_bridge
++PYTHON, PYTHON_SHA = form_runtime.PYTHON, form_runtime.PYTHON_SHA
++SOURCE_SHA = 'c36c7517ed10540cda20bbd849f35f0e449595a96e960cc60c52ba00f4747e4c'
++SOURCE_BYTES = 324179
++SOURCE_RUN = ROOT / 'cloud-evidence/cloudbank58l-form-v3-source-20261002T225658Z-jcrc3gec'
++# Use the already reviewed exact file-freeze checker unchanged. Scoped loading
++# restores form-v3 modules; no old-source success function is invoked.
++with form_runtime.legacy() as (_recovery, _old_views):
++    verify_pins = _recovery.verify_pins
++
++VERSION, STAGE = 'cloudbank58l-form-v3-views-v1', 'views'
+ TOTAL, CAPS = 120, {'render': 27}
+ VIEWS = ('01-original61-front', '02-k-trial-front', '03-k-fixed-side-back', '04-k-fixed-near')
+ ATTEMPT, TERMINAL, OBSERVATION = [HERE / ('views-' + x + '.json') for x in ('attempt', 'terminal', 'launch-observation')]
+ 
++def require_source(path=None):
++    path = g.SOURCE if path is None else Path(path)
++    require(path.resolve() == FORM / 'cloud_bank58l_form_v3.blend' and path.is_file() and not path.is_symlink(),
++            'Only the actual saved form-v3 source; no rebuild or fallback')
++    require(path.stat().st_size == SOURCE_BYTES and sha(path) == SOURCE_SHA, 'Exact actual saved-source SHA/size')
++    return SOURCE_SHA
++
+ def predecessor():
+-    return read(HERE / 'RENDER_BINDINGS.json')['combined_predecessor']
++    return read(HERE / 'RENDER_BINDINGS.json')['completed_source_predecessor']
++
++def source_binding(prior):
++    """Bind existing actual completion records; original_source_stage is old form-v2."""
++    require(prior == read(FORM / 'source-terminal.json') and prior['run'] == str(SOURCE_RUN),
++            'Original actual form-v3 source terminal and run')
++    validation = read(FORM / 'source-launch-validation.json')
++    external_path = SOURCE_RUN / 'external-caller/external-process-result.json'
++    external = read(external_path)
++    require(validation['source_chain_verified'] is True and validation['run'] == str(SOURCE_RUN)
++            and validation['external_result_sha256'] == sha(external_path), 'Actual source external validation SHA')
++    require(external['source_chain_verified'] is True and external['combined_evidence'] == prior
++            and external['actual_exit_code'] == 0 and external['process_exit_observed'] is True,
++            'Actual completed form-v3 source, never reinterpret historical failed field')
++    return dict(source_chain_verified=True, source_runner_version=original.VERSION, source_run=str(SOURCE_RUN),
++                original_source_stage='failed', original_source_stage_refers_to='form-v2',
++                source_sha256=SOURCE_SHA, source_bytes=SOURCE_BYTES,
++                source_admission_sha256=sha(FORM / 'source-attempt.json'),
++                source_terminal_sha256=sha(FORM / 'source-terminal.json'),
++                source_supervisor_sha256=sha(SOURCE_RUN / 'supervisor-terminal.json'),
++                source_observation_sha256=sha(FORM / 'source-launch-observation.json'),
++                source_validation_sha256=sha(FORM / 'source-launch-validation.json'),
++                source_external_result_sha256=sha(external_path),
++                launcher_pid=external['supervisor_pid'], launcher_exit_code=external['actual_exit_code'],
++                launcher_wall_seconds=external['wall_seconds'], worker_pid=prior['worker_pid'],
++                native_pids=[r['pid'] for r in prior['stages']],
++                source_build_raw_sha256=sha(SOURCE_RUN / 'outputs/build-raw.json'),
++                full_native_acceptance=False, visual_acceptance=False, world_acceptance=False, global_GOAL=False)
++
++def completed_source():
++    # Direct unmodified source-only result validator; this never calls its main,
++    # phase or consumed admission and never opens/builds/saves/renders anything.
++    return source_binding(original.prior_source(g))
+ 
+ def require_new_admission(stage, *, check_prior=True):
+-    require(stage == STAGE, 'Only recovered-source views; build/save/source/verify/export refused')
++    require(stage == STAGE, 'Only saved-form-v3 views; build/save/source/verify/export refused')
+     for suffix in ('attempt', 'terminal', 'launch-observation', 'launch-validation'):
+         p = HERE / ('views-' + suffix + '.json')
+         require(not p.exists() and not p.is_symlink(), 'New views already attempted; preserve all one-shot evidence')
+@@ -30,8 +81,8 @@
+         require(not p.is_symlink() and p.is_file() and str(p) in pins and sha(p) == pins[str(p)],
+                 'Unknown or changed earlier admission')
+     if check_prior:
+-        actual = recovery.prior_recovery()
+-        require(actual == predecessor(), 'Real old-build plus actual fresh-only combination; original source remains failed')
++        actual = completed_source()
++        require(actual == predecessor(), 'Actual completed form-v3 source required; historical form-v2 source remains failed')
+     return predecessor()
+ 
+ def exclusions():
+@@ -46,7 +97,8 @@
+ 
+ def require_scope(record):
+     require(record['original_source_stage'] == 'failed' and record['acceptance_mode'] == s.DIAGNOSTIC_MODE
+-            and record['full_native_acceptance'] is False, 'Recovered diagnostic views never full-native or old-source success')
++            and record['full_native_acceptance'] is False
++            and record['historical_form_v2_default_failure'] == s.HISTORICAL_FORM_V2_DEFAULT_FAILURE, 'Diagnostic views never full-native or historical form-v2 success')
+     require(all(record[k] is False for k in ('world_loaded', 'world_integration_allowed', 'contact_acceptance',
+             'world_acceptance', 'global_GOAL', 'visual_acceptance', 'weather_acceptance')), 'No visual/world/GOAL acceptance')
+ 
+@@ -65,7 +117,7 @@
+             and a['render_bindings_sha256'] == sha(HERE / 'RENDER_BINDINGS.json'), 'Unchanged original candidate/camera inputs')
+     require(a['predecessor'] == predecessor() and a['original_source_stage'] == 'failed'
+             and a['acceptance_mode'] == s.DIAGNOSTIC_MODE and a['full_native_acceptance'] is False,
+-            'Actual recovered source combination, never old prior_source')
++            'Actual completed form-v3 source and failed historical form-v2 identity')
+     require(not (out / (view + '.png')).exists() and not (out / (view + '.png')).is_symlink(), 'Never overwrite a view')
+ 
+ def validate_image(out, view, terminal):
+@@ -95,7 +147,7 @@
+     require(raw['cpu_affinity'] == cpus and terminal['raw_path'] == str(out / (label + '-raw.json'))
+             and terminal['raw_sha256'] == sha(out / (label + '-raw.json')), 'Original baseline bytes')
+     require(terminal['validation'] == g.validate_native_raw(raw, c, b), 'Full original baseline validation exactly equal')
+-    require(Path(raw['opened_filepath']).resolve() == g.SOURCE and s.identity(raw) == s.identity(baseline), 'Actual recovered source baseline identity')
++    require(Path(raw['opened_filepath']).resolve() == g.SOURCE and s.identity(raw) == s.identity(baseline), 'Actual completed form-v3 baseline identity')
+     require(terminal['source_sha256'] == SOURCE_SHA and terminal['source_bytes'] == SOURCE_BYTES
+             and terminal['source_saved'] is False and terminal['images'] == 1 and terminal['exact_identity_restored'] is True
+             and terminal['diagnostic_acceptance'] is True, 'Exactly one no-save diagnostic image')
+@@ -116,7 +168,7 @@
+ 
+ def prior_views():
+     runtime(); require_source(); verify_pins(HERE / 'FINAL_SHA256.json')
+-    require(recovery.prior_recovery() == predecessor(), 'Actual completed recovery prerequisite remains true')
++    require(completed_source() == predecessor(), 'Actual completed form-v3 prerequisite remains true')
+     a, worker, observed = read(ATTEMPT), read(TERMINAL), read(OBSERVATION)
+     run = Path(worker['run']); out = run / 'outputs'
+     require(run.is_absolute() and run == run.resolve() and run.parent == ROOT / 'cloud-evidence'
+@@ -144,8 +196,9 @@
+             and worker['intended_worker_exit_code'] == 0 and worker['completion_authority'] == str(run / 'supervisor-terminal.json'), 'Worker preparation is not completion')
+     for x in (worker, receipt):
+         require(x['original_source_stage'] == 'failed' and x['acceptance_mode'] == s.DIAGNOSTIC_MODE and x['full_native_acceptance'] is False
+-                and x['source_sha256'] == SOURCE_SHA and x['source_bytes'] == SOURCE_BYTES and x['admission_sha256'] == sha(ATTEMPT), 'Limited recovered-source scope')
++                and x['source_sha256'] == SOURCE_SHA and x['source_bytes'] == SOURCE_BYTES and x['admission_sha256'] == sha(ATTEMPT), 'Limited saved-form-v3 scope')
+     require_scope(worker)
++    require(receipt['historical_form_v2_default_failure'] == s.HISTORICAL_FORM_V2_DEFAULT_FAILURE, 'Historical form-v2 23-face failure preserved')
+     require(receipt['diagnostic_acceptance'] is True and worker['diagnostic_acceptance'] is False and worker['diagnostic_prepared_passed'] is True, 'External completion authority only')
+     require(worker['limits'] == dict(total_wall_seconds=TOTAL, cpu_threads=2, native_caps=CAPS, max_wrapper_plus_child_rss_kib=support.MAX_RSS_KIB), 'Unchanged render limits')
+     require(all(worker[k] is True for k in ('frozen_inputs_unchanged', 'protected_originals_unchanged', 'earlier_outputs_unchanged', 'saved_source_unchanged', 'source_diagnostic_only'))
+@@ -155,7 +208,7 @@
+     actual = {str(p):sha(p) for p in out.rglob('*') if p.is_file()}
+     require(all(not p.is_symlink() for p in out.rglob('*')) and actual == worker['views_output_sha256'], 'All actual new output bytes sealed')
+     require(len(worker['stages']) == 4, 'Exactly four independent render children')
+-    c, b = read(g.CANDIDATE_PATH), read(g.BINDING_PATH); baseline = read(recovery.OLD_RUN / 'outputs/build-raw.json')
++    c, b = read(g.CANDIDATE_PATH), read(g.BINDING_PATH); baseline = read(SOURCE_RUN / 'outputs/build-raw.json')
+     images, normals, pids = [], [], []
+     for view, row in zip(VIEWS, worker['stages']):
+         require(row == read(run / ('render-' + view + '.process.json')) and row['pid'] not in (receipt['worker_pid'], receipt['supervisor_pid']), 'Actual separate registered native process')
+@@ -164,6 +217,6 @@
+     require(len(set(pids)) == 4 and worker['images'] == images and worker['normal_validation_by_stage'] == normals, 'Four actual image/process/normal identities')
+     require({p.name for p in out.glob('*.png')} == {v + '.png' for v in VIEWS}, 'Only four fresh output files')
+     require_source()
+-    return dict(existing_saved_source_fresh_open_verified=True, views_chain_verified=True, original_source_stage='failed',
++    return dict(source_chain_verified=True, views_chain_verified=True, original_source_stage='failed',
+                 source_sha256=SOURCE_SHA, source_bytes=SOURCE_BYTES, images=images, four_outputs_three_directions=True,
+                 acceptance_mode=s.DIAGNOSTIC_MODE, full_native_acceptance=False, visual_acceptance=False, world_acceptance=False, global_GOAL=False)
+--- source-assets/cloud-bank58/revision-l/form-v2-views-v1/render_saved58l.py
++++ source-assets/cloud-bank58/revision-l/form-v3-views-v1/render_saved58l.py
+@@ -25,7 +25,8 @@
+     n._TELEMETRY = (a.out, label)
+     emit('native_entry', mode='render', views_stage=v.STAGE, views_version=v.VERSION)
+     report = dict(acceptance_mode=s.DIAGNOSTIC_MODE, full_native_acceptance=False, diagnostic_acceptance=False,
+-                  historical_default_failure=dict(s.HISTORICAL_DEFAULT_FAILURE), version=g.VERSION,
++                  historical_default_failure=dict(s.HISTORICAL_DEFAULT_FAILURE),
++                  historical_form_v2_default_failure=dict(s.HISTORICAL_FORM_V2_DEFAULT_FAILURE), version=g.VERSION,
+                   views_version=v.VERSION, views_stage=v.STAGE, original_source_stage='failed',
+                   admission_sha256=v.sha(a.admission), adapter_sha256=v.sha(Path(__file__)),
+                   source_native_sha256=v.sha(v.FORM / 'native58l.py'), runtime=runtime,
+@@ -45,7 +46,7 @@
+         write(rawpath, raw, True); report.update(raw_path=str(rawpath), raw_sha256=sha(rawpath))
+         write(a.out / (label + '-result.json'), report)
+         report['validation'] = g.validate_native_raw(raw, c, b)
+-        v.require(s.identity(raw) == s.identity(v.read(v.recovery.OLD_RUN / 'outputs/build-raw.json')), 'Original recovered source numeric identity')
++        v.require(s.identity(raw) == s.identity(v.read(v.SOURCE_RUN / 'outputs/build-raw.json')), 'Original saved form-v3 source numeric identity')
+         s.require(a.view in [r['name'] for r in b['world_cameras']],'Exactly one original absolute camera');scene=bpy.context.scene;original_camera=scene.camera;original_filepath=scene.render.filepath;original_images=set(bpy.data.images.keys());scene.camera=bpy.data.objects[s.CAMERA_PREFIX+a.view];path=a.out/(a.view+'.png');scene.render.filepath=str(path);emit('render.begin',view=a.view);bpy.ops.render.render(write_still=True);emit('render.complete',view=a.view);report.update(images=1,image_sha256=sha(path),image_path=str(path),source_diagnostic_only=True)
+         rendered=capture(c,g);rendered_path=a.out/(label+'-rendered-raw.json');write(rendered_path,rendered,True);report['rendered_raw_sha256']=sha(rendered_path);report['rendered_normals']=s.validate_normals(rendered['mesh'])
+         for img in list(bpy.data.images):
+--- source-assets/cloud-bank58/revision-l/form-v2-views-v1/run_views58l.py
++++ source-assets/cloud-bank58/revision-l/form-v3-views-v1/run_views58l.py
+@@ -15,7 +15,7 @@
+     out=run/'outputs';out.mkdir()
+     admission=dict(views=list(r.VIEWS),original_source_stage='failed',source_native_sha256=support.sha(r.FORM/'native58l.py'),render_bindings_sha256=support.sha(HERE/'RENDER_BINDINGS.json'),predecessor=r.predecessor(),source_sha256=r.SOURCE_SHA,source_bytes=r.SOURCE_BYTES,prior_failure_admissions=list(native_support.FAILURE_ADMISSIONS),acceptance_mode=native_support.DIAGNOSTIC_MODE,full_native_acceptance=False,state='admitted_one_shot_not_complete',wrapper_pid=os.getpid(),stage=stage,run=str(run),source=str(g.SOURCE),output=str(out),native_sha256=support.sha(HERE/'render_saved58l.py'),runner_version=VERSION,runner_sha256=support.sha(HERE/'run_views58l.py'),supervisor_pid=os.getppid(),candidate_sha256=support.sha(g.CANDIDATE_PATH),binding_sha256=support.sha(g.BINDING_PATH),utc=time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()))
+     with (r.ATTEMPT).open('x') as f:json.dump(admission,f);f.flush();os.fsync(f.fileno())
+-    print(run,flush=True);report=dict(predecessor=r.predecessor(),original_source_stage='failed',runtime=r.runtime(),prior_failure_admissions=list(native_support.FAILURE_ADMISSIONS),acceptance_mode=native_support.DIAGNOSTIC_MODE,full_native_acceptance=False,version=g.VERSION,runner_version=VERSION,stage=stage,state='preparing',passed=False,run=str(run),source=str(g.SOURCE),runner_sha256=support.sha(HERE/'run_views58l.py'),supervisor_pid=os.getppid(),limits=dict(total_wall_seconds=limit,cpu_threads=2,native_caps=CAPS,max_wrapper_plus_child_rss_kib=support.MAX_RSS_KIB),stages=[],images=[],normal_validation_by_stage=[],historical_default_failure=dict(native_support.HISTORICAL_DEFAULT_FAILURE),world_loaded=False,world_modified=False,world_integration_allowed=False,contact_acceptance=False,world_acceptance=False,global_GOAL=False,visual_acceptance=False,weather_acceptance=False,source_diagnostic_only=True)
++    print(run,flush=True);report=dict(predecessor=r.predecessor(),original_source_stage='failed',runtime=r.runtime(),prior_failure_admissions=list(native_support.FAILURE_ADMISSIONS),acceptance_mode=native_support.DIAGNOSTIC_MODE,full_native_acceptance=False,version=g.VERSION,runner_version=VERSION,stage=stage,state='preparing',passed=False,run=str(run),source=str(g.SOURCE),runner_sha256=support.sha(HERE/'run_views58l.py'),supervisor_pid=os.getppid(),limits=dict(total_wall_seconds=limit,cpu_threads=2,native_caps=CAPS,max_wrapper_plus_child_rss_kib=support.MAX_RSS_KIB),stages=[],images=[],normal_validation_by_stage=[],historical_default_failure=dict(native_support.HISTORICAL_DEFAULT_FAILURE),historical_form_v2_default_failure=dict(native_support.HISTORICAL_FORM_V2_DEFAULT_FAILURE),world_loaded=False,world_modified=False,world_integration_allowed=False,contact_acceptance=False,world_acceptance=False,global_GOAL=False,visual_acceptance=False,weather_acceptance=False,source_diagnostic_only=True)
+     admission_path=r.ATTEMPT;admission_sha=support.sha(admission_path)
+     excluded=r.exclusions()
+     pins={};before={};outputs={};handlers={};source_sha=r.SOURCE_SHA
+@@ -31,7 +31,7 @@
+         env=os.environ.copy();env.pop('PYTHONOPTIMIZE',None);env.update(OMP_NUM_THREADS='2',OPENBLAS_NUM_THREADS='2',MKL_NUM_THREADS='2',NUMEXPR_NUM_THREADS='2',PYTHONDONTWRITEBYTECODE='1',PYTHONUNBUFFERED='1')
+         for key,name in [('XDG_CONFIG_HOME','config'),('XDG_CACHE_HOME','cache'),('XDG_DATA_HOME','data'),('BLENDER_USER_CONFIG','blender-config')]:p=run/name;p.mkdir();env[key]=str(p)
+         jobs=[('render',view) for view in r.VIEWS]
+-        build_raw=support.strict_json(r.recovery.OLD_RUN/'outputs/build-raw.json')
++        build_raw=support.strict_json(r.SOURCE_RUN/'outputs/build-raw.json')
+         for mode,view in jobs:
+             native_support.require(support.sha(admission_path)==admission_sha,'Immutable current stage admission')
+             native_support.require(r.verify_pins(HERE/'FINAL_SHA256.json')==pins,'Frozen inputs changed between children')
+@@ -82,7 +82,7 @@
+ 
+ def main(arguments=None):
+     parser=argparse.ArgumentParser();parser.add_argument('--run-approved',choices=[r.STAGE]);a=parser.parse_args(arguments)
+-    if not a.run_approved:print('No-op: recovered-source original four views only; no stage admission or engine.');return 0
++    if not a.run_approved:print('No-op: saved-form-v3 original four views only; no stage admission or engine.');return 0
+     started=time.monotonic();stage=a.run_approved;limit=r.TOTAL
+     r.runtime(); r.install_pidfd_bridge(); r.require_new_admission(stage)
+     r.verify_pins(HERE/'FINAL_SHA256.json')
+@@ -104,7 +104,7 @@
+             native_support.require(prepared['prepared_passed'] is True and prepared['passed'] is False and prepared['worker_pid']==record['worker_pid'] and prepared['supervisor_pid']==record['supervisor_pid'] and prepared['stage']==stage and prepared['run']==str(run) and prepared['source']==str(g.SOURCE) and prepared['runner_version']==VERSION and prepared['runner_sha256']==record['runner_sha256'] and prepared['admission_sha256']==record['admission_sha256'],'Actual complete prepared worker terminal')
+             native_support.require((HERE/(stage+'-terminal.json')).read_bytes()==(run/'wrapper-report.json').read_bytes(),'Prepared terminal and wrapper bytes identical')
+             record.update(source_sha256=prepared['source_sha256'],source_bytes=prepared['source_bytes'])
+-        record['diagnostic_acceptance']=bool(record['passed']);record['historical_default_failure']=dict(native_support.HISTORICAL_DEFAULT_FAILURE)
++        record['diagnostic_acceptance']=bool(record['passed']);record['historical_default_failure']=dict(native_support.HISTORICAL_DEFAULT_FAILURE);record['historical_form_v2_default_failure']=dict(native_support.HISTORICAL_FORM_V2_DEFAULT_FAILURE)
+         support.atomic_json(run/'supervisor-terminal.json',record)
+     code,record=deadline58l_v3.supervise(lambda:phase(stage,run,started,limit),started=started,limit=limit,finish=finish)
+     # No success IO follows this bound. CLI uses os._exit under an armed hard timer,
+--- source-assets/cloud-bank58/revision-l/form-v2-views-v1/observe_views58l.py
++++ source-assets/cloud-bank58/revision-l/form-v3-views-v1/observe_views58l.py
+@@ -6,8 +6,8 @@
+ import views58l as r
+ ROOT=r.ROOT
+ if '--run-approved' not in sys.argv:
+-    print('No-op: explicit recovered-source four-view approval required.'); raise SystemExit(0)
+-if sys.argv[1:] != ['--run-approved',r.STAGE]: raise RuntimeError('Only exact recovered-source views stage')
++    print('No-op: explicit saved-form-v3 four-view approval required.'); raise SystemExit(0)
++if sys.argv[1:] != ['--run-approved',r.STAGE]: raise RuntimeError('Only exact saved-form-v3 views stage')
+ r.runtime(); r.install_pidfd_bridge(); r.require_new_admission(r.STAGE,check_prior=False)
+ r.verify_pins(HERE/'FINAL_SHA256.json')
+ D=r.deadline
+@@ -19,9 +19,9 @@
+ if libc.prctl(36,1,0,0,0)!=0: raise OSError(ctypes.get_errno(),'caller subreaper')
+ owned=D.Owned()
+ if set(owned.scan())!={os.getpid()}: raise RuntimeError('Caller has pre-existing children')
+-temp=pathlib.Path(tempfile.mkdtemp(prefix='aether-l-form-v2-views-caller-',dir=ROOT.parent))
++temp=pathlib.Path(tempfile.mkdtemp(prefix='aether-l-form-v3-views-caller-',dir=ROOT.parent))
+ command=[str(r.PYTHON),'-B',str(HERE/'run_views58l.py'),'--run-approved',r.STAGE]
+-rec=dict(stage=r.STAGE,runtime=r.runtime(),original_source_stage='failed',acceptance_mode='api_consistency_isolated_diagnostic_v1',full_native_acceptance=False,historical_default_corner_geometry_passed=False,command=command,cwd=str(ROOT),predecessor_publication_commit='fa8607bc4697f0505a05536ec34e4131c5d72cd7',process_exit_observed=False,actual_exit_code=None,timeout=False,cleanup=[],views_chain_verified=False,utc_started=datetime.datetime.now(datetime.timezone.utc).isoformat())
++rec=dict(stage=r.STAGE,runtime=r.runtime(),original_source_stage='failed',acceptance_mode='api_consistency_isolated_diagnostic_v1',full_native_acceptance=False,historical_default_corner_geometry_passed=False,command=command,cwd=str(ROOT),predecessor_publication_commit='54760692ced07d0a2b79b7e262a5d16ce0b91217',process_exit_observed=False,actual_exit_code=None,timeout=False,cleanup=[],views_chain_verified=False,utc_started=datetime.datetime.now(datetime.timezone.utc).isoformat())
+ p=None;start=time.monotonic();rec['started_monotonic']=start
+ try:
+     with (temp/'launcher.stdout.log').open('xb') as out,(temp/'launcher.stderr.log').open('xb') as err:
+--- source-assets/cloud-bank58/revision-l/form-v2-views-v1/test_views58l.py
++++ source-assets/cloud-bank58/revision-l/form-v3-views-v1/test_views58l.py
+@@ -9,11 +9,13 @@
+ class Views(unittest.TestCase):
+     def test_official_runtime_and_original_imports(self):
+         self.assertEqual(v.runtime()['python_sha256'],v.PYTHON_SHA)
+-        self.assertIs(v.native.capture,v.recovery.native.capture)
+-        self.assertIs(v.g.validate_native_raw,v.recovery.g.validate_native_raw)
+-        self.assertIs(v.original.png_info,v.recovery.original.png_info)
+-        self.assertIs(v.deadline,v.recovery.deadline)
+-        self.assertIs(v.install_pidfd_bridge,v.recovery.install_pidfd_bridge)
++        self.assertEqual(Path(v.native.__file__).resolve(),v.FORM/"native58l.py")
++        self.assertEqual(Path(v.g.__file__).resolve(),v.FORM/"geometry58l.py")
++        self.assertEqual(Path(v.s.__file__).resolve(),v.FORM/"native_support58l.py")
++        self.assertIs(v.runtime,v.form_runtime.runtime)
++        self.assertEqual(Path(v.original.__file__).resolve(),v.FORM/"run58l_form_v3.py")
++        self.assertIs(v.deadline,v.original.deadline58l_v3)
++        self.assertIs(v.install_pidfd_bridge,v.form_runtime.install_pidfd_bridge)
+     def test_noop_without_engine(self):
+         with contextlib.redirect_stdout(io.StringIO()):
+             self.assertEqual(native_adapter.main([]),0)
+@@ -38,16 +40,16 @@
+                 p=h/('views-'+suffix+'.json');p.write_text('{}')
+                 with patch.object(v,'HERE',h),self.assertRaises(Exception):v.require_new_admission('views')
+                 p.unlink()
+-    def test_actual_recovery_required_and_fake_old_success_refused(self):
++    def test_actual_form_v3_required_and_fake_old_success_refused(self):
+         expected=v.predecessor()
+         with tempfile.TemporaryDirectory() as tmp,patch.object(v,'HERE',Path(tmp)/'isolated'),patch.object(v,'verify_pins',return_value={}),patch.object(v,'require_source',return_value=v.SOURCE_SHA),patch.object(v,'predecessor',return_value=expected):
+-            with patch.object(v.recovery,'prior_recovery',return_value=expected) as actual:
++            with patch.object(v,'completed_source',return_value=expected) as actual:
+                 self.assertEqual(v.require_new_admission('views'),expected);actual.assert_called_once_with()
+             fake=copy.deepcopy(expected);fake['original_source_stage']='completed'
+-            with patch.object(v.recovery,'prior_recovery',return_value=fake),self.assertRaises(Exception):v.require_new_admission('views')
+-            with patch.object(v.recovery,'prior_recovery',side_effect=RuntimeError('Old source cannot be accepted')),self.assertRaises(Exception):v.require_new_admission('views')
++            with patch.object(v,'completed_source',return_value=fake),self.assertRaises(Exception):v.require_new_admission('views')
++            with patch.object(v,'completed_source',side_effect=RuntimeError('Old source cannot be accepted')),self.assertRaises(Exception):v.require_new_admission('views')
+     def test_scope_rejects_fake_acceptance(self):
+-        row=dict(original_source_stage='failed',acceptance_mode=v.s.DIAGNOSTIC_MODE,full_native_acceptance=False,
++        row=dict(original_source_stage='failed',acceptance_mode=v.s.DIAGNOSTIC_MODE,full_native_acceptance=False,historical_form_v2_default_failure=v.s.HISTORICAL_FORM_V2_DEFAULT_FAILURE,
+                  world_loaded=False,world_integration_allowed=False,contact_acceptance=False,world_acceptance=False,
+                  global_GOAL=False,visual_acceptance=False,weather_acceptance=False)
+         v.require_scope(row)
+@@ -97,10 +99,17 @@
+         self.assertFalse(any(x.endswith(('create_source','rebuild_from_controls','exercise','save_as_mainfile','export')) for x in calls))
+     def test_embedded_text_identity_and_prior_failure(self):
+         b=v.read(v.HERE/'RENDER_BINDINGS.json')
+-        old=v.read(v.recovery.OLD_RUN/'outputs/build-raw.json')
++        old=v.read(v.SOURCE_RUN/'outputs/build-raw.json')
+         self.assertEqual(b['source_texts'],old['texts']);self.assertEqual(len(old['texts']),8)
+-        self.assertEqual(v.read(v.FORM/'source-terminal.json')['state'],'failed')
+-        self.assertEqual(v.sha(v.FORM/'source-terminal.json'),v.recovery.OLD_TERMINAL_SHA)
++        self.assertEqual(v.read(v.FORM/'source-terminal.json')['state'],'awaiting_external_process_terminal')
++        self.assertEqual(v.source_binding(v.read(v.FORM/'source-terminal.json')),v.predecessor())
++        self.assertTrue(v.predecessor()['source_chain_verified'])
++        self.assertEqual(v.predecessor()['original_source_stage_refers_to'],'form-v2')
++        old_form=v.FORM.parent/'form-v2'
++        self.assertEqual(v.read(old_form/'source-terminal.json')['state'],'failed')
++        self.assertEqual(v.sha(old_form/'source-terminal.json'),'c4856a8ffeaf5b28280beab2316f32e5b02f52720fcfed39a546d3ab9b7e7531')
++        self.assertFalse(b['current_default_normals']['original_corner_geometry_passed'])
++        self.assertEqual(len(b['current_default_normals']['original_corner_geometry_faces_over_limit']),24)
+         self.assertEqual(v.require_source(),v.SOURCE_SHA)
+ 
+ if __name__=='__main__':unittest.main(verbosity=2)
