@@ -1,0 +1,315 @@
+{
+  "checks": [
+    {
+      "details": null,
+      "name": "null_material_explicit_zero",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "grow_disabled_despite_positive_amount",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "grow_enabled_positive",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "grow_enabled_negative_absolute_envelope",
+      "passed": true
+    },
+    {
+      "details": [
+        {
+          "details": "",
+          "reason": "Material audit did not return explicit successful classification"
+        }
+      ],
+      "name": "empty_classifier_result_fails_closed",
+      "passed": true
+    },
+    {
+      "details": [
+        {
+          "details": "",
+          "reason": "Material audit returned invalid expansion"
+        }
+      ],
+      "name": "nonfinite_classifier_result_fails_closed",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "next_pass_still_rejected",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "billboard_still_rejected",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unknown_vertex_assignment_still_rejected",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unknown_position_override_still_rejected",
+      "passed": true
+    },
+    {
+      "details": {
+        "affected_geometry": [
+          {
+            "class": "MeshInstance3D",
+            "instance_id": 25870468476,
+            "path": "/root/FixtureLifecycleOnly/RetiredTile/OldGeometry",
+            "queued_ancestors": [
+              {
+                "class": "Node3D",
+                "instance_id": 25853691259,
+                "path": "/root/FixtureLifecycleOnly/RetiredTile"
+              }
+            ],
+            "self_queued": false
+          }
+        ],
+        "physics_frame": 1,
+        "process_frame": 0,
+        "queued_nodes": [
+          {
+            "class": "Node3D",
+            "instance_id": 25853691259,
+            "path": "/root/FixtureLifecycleOnly/RetiredTile"
+          }
+        ]
+      },
+      "name": "queued_parent_identifies_nonqueued_geometry_descendant",
+      "passed": true
+    },
+    {
+      "details": {
+        "max_process_frames": 8,
+        "max_wall_msec": 15000,
+        "ok": true,
+        "reason": "All recorded fixture queued nodes and geometry descendants are actually gone",
+        "samples": [
+          {
+            "affected_geometry": [
+              {
+                "class": "MeshInstance3D",
+                "instance_id": 25870468476,
+                "path": "/root/FixtureLifecycleOnly/RetiredTile/OldGeometry",
+                "queued_ancestors": [
+                  {
+                    "class": "Node3D",
+                    "instance_id": 25853691259,
+                    "path": "/root/FixtureLifecycleOnly/RetiredTile"
+                  }
+                ],
+                "self_queued": false
+              }
+            ],
+            "physics_frame": 1,
+            "process_frame": 0,
+            "queued_nodes": [
+              {
+                "class": "Node3D",
+                "instance_id": 25853691259,
+                "path": "/root/FixtureLifecycleOnly/RetiredTile"
+              }
+            ]
+          },
+          {
+            "affected_geometry": [],
+            "physics_frame": 1,
+            "process_frame": 0,
+            "queued_nodes": []
+          }
+        ],
+        "still_alive": [],
+        "tracked_identities": [
+          {
+            "class": "Node3D",
+            "instance_id": 25853691259,
+            "path": "/root/FixtureLifecycleOnly/RetiredTile"
+          },
+          {
+            "class": "MeshInstance3D",
+            "instance_id": 25870468476,
+            "path": "/root/FixtureLifecycleOnly/RetiredTile/OldGeometry",
+            "queued_ancestors": [
+              {
+                "class": "Node3D",
+                "instance_id": 25853691259,
+                "path": "/root/FixtureLifecycleOnly/RetiredTile"
+              }
+            ],
+            "self_queued": false
+          }
+        ],
+        "waited_process_frames": 1,
+        "wall_msec": 0
+      },
+      "name": "fixture_drain_waits_for_actual_parent_and_geometry_deletion",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "persistent_fixture_geometry_unchanged",
+      "passed": true
+    },
+    {
+      "details": {
+        "max_process_frames": 8,
+        "max_wall_msec": 15000,
+        "ok": false,
+        "reason": "Native paused fixture changed while draining queued deletions",
+        "samples": [],
+        "waited_process_frames": 0,
+        "wall_msec": 0
+      },
+      "name": "changed_pause_guard_rejects_before_baseline",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "post_drain_baseline_valid",
+      "passed": true
+    },
+    {
+      "details": [
+        {
+          "details": {
+            "bounds_position": [
+              -0.5,
+              -0.5,
+              -0.5
+            ],
+            "bounds_size": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "expansion": 0.0,
+            "instance_id": 25820136825,
+            "layers": 1,
+            "path": "/root/FixtureLifecycleOnly/StableNear",
+            "query_candidate": true,
+            "queued_ancestors_at_inventory": [],
+            "visible": true
+          },
+          "reason": "Inventoried geometry was removed"
+        }
+      ],
+      "name": "baseline_queued_deletion_rejected_with_saved_identity",
+      "passed": true
+    },
+    {
+      "details": [
+        {
+          "details": {
+            "bounds_position": [
+              -0.5,
+              -0.5,
+              -0.5
+            ],
+            "bounds_size": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "expansion": 0.0,
+            "instance_id": 25820136825,
+            "layers": 1,
+            "path": "/root/FixtureLifecycleOnly/StableNear",
+            "query_candidate": true,
+            "queued_ancestors_at_inventory": [],
+            "visible": true
+          },
+          "reason": "Inventoried geometry was removed"
+        }
+      ],
+      "name": "baseline_actual_deletion_rejected_with_saved_identity",
+      "passed": true
+    },
+    {
+      "details": [
+        {
+          "details": {
+            "bounds_position": [
+              999.5,
+              -0.5,
+              -0.5
+            ],
+            "bounds_size": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "expansion": 0.0,
+            "instance_id": 26004686204,
+            "layers": 1,
+            "path": "/root/FixtureLifecycleOnly/DistantStillWatched",
+            "query_candidate": false,
+            "queued_ancestors_at_inventory": [],
+            "visible": true
+          },
+          "reason": "Inventoried geometry was removed"
+        }
+      ],
+      "name": "distant_baseline_deletion_is_not_exempt",
+      "passed": true
+    },
+    {
+      "details": [
+        {
+          "details": {
+            "bounds_position": [
+              999.497985839844,
+              -0.501999974250793,
+              -0.501999974250793
+            ],
+            "bounds_size": [
+              1.00399994850159,
+              1.00399994850159,
+              1.00399994850159
+            ],
+            "expansion": 0.0,
+            "instance_id": 26071795066,
+            "layers": 1,
+            "path": "/root/FixtureLifecycleOnly/QueuedDistantParent/NewDistantChild",
+            "query_candidate": false,
+            "queued_ancestors_at_inventory": [
+              {
+                "instance_id": 26055017852,
+                "path": "/root/FixtureLifecycleOnly/QueuedDistantParent"
+              }
+            ],
+            "visible": true
+          },
+          "reason": "Queued new geometry cannot enter frozen inventory"
+        }
+      ],
+      "name": "new_geometry_under_queued_parent_is_rejected",
+      "passed": true
+    }
+  ],
+  "engine": {
+    "build": "official",
+    "hash": "f62fdbde15035c5576dad93e586201f4d41ef0cb",
+    "hex": 263425,
+    "major": 4,
+    "minor": 5,
+    "patch": 1,
+    "status": "stable",
+    "string": "4.5.1-stable (official)",
+    "timestamp": 0
+  },
+  "passed": true,
+  "scope": "Synthetic material and node-lifecycle fixture only. No game/world resource, MultiMesh access, input events, render or orbit claim.",
+  "version": "orbit61-material-lifecycle-v3"
+}
