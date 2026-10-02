@@ -1,6 +1,14 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 04:43 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 04:47 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 04:47北山脊依赖闭包审计与身份缺口
+
+- H独立预览准备已完整发布 **a7380d640a516ce29adf51d0ed49eec9ecd38656**，tree **881f54980a4536f06d1fb256514445c00e612c91**、parent050fbe9f；11文本新bare独立公共Git回读字节/SHA一致，本地4d79c2d同树对齐，H读回/两图尚未运行
+- [保存加载依赖审计](source-assets/north-ridge62-intake/DEPENDENCY_REVIEW.md)查明1483文件/2304加载边/23脚本；未见static var/_static_init/_init或自定义Resource脚本基类。1301二进制资源完整属性流边界核过，1543处script属性均null；五个实际压缩导入场景无脚本/额外依赖。仍是限定版本源码/序列化只读证据，未启动任何引擎，不宣称ResourceLoader普遍不会执行代码
+- **旧1477输入清单未覆盖实际闭包51文件，包括9脚本/5导入cache**，差集与完整SHA、继承/preload/import路径均保留；数字19旧脚本与23闭包脚本是不同集合，不能仅说多4项。历史测试只保护原记录集合，不追改旧manifest/结果，不继续称旧清单为所有加载依赖
+- 审计还固定project.godot、UID/globalclasscache及autoload/override/extension/remap缺席状态。完整730050B JSON无损gzip91486B保存，原始SHA与恢复命令在[storage](source-assets/north-ridge62-intake/dependency-storage.json)，原文仍本地保留。审计工具源码可复现打包与新runner前后精确保护正在准备，未修改旧审计/collector；之后才parse/collect
+- 第五world04:40:43开始仍在原生缓慢小步环绕；04:46真实GUI已看到近岸斜坡/海面，尚无终态、不能作通过结论。H和MAZ重作业错峰等待。E/F2八件Slack仍待频道回答；完整GOAL及硬件GPU验收未通过
 
 ## 04:43 H独立post-save两图入口准备完毕
 
