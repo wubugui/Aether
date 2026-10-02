@@ -1,0 +1,44 @@
+{
+  "engine_commit": "f62fdbde15035c5576dad93e586201f4d41ef0cb",
+  "retrieved_utc": "2026-10-02",
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/godotengine/godot/f62fdbde15035c5576dad93e586201f4d41ef0cb/core/object/object_id.h",
+      "sha256": "e53e69981644399e83c642b1a2f49bcf6164af68d28d834564691dbba860835b",
+      "bytes": 3519
+    },
+    {
+      "url": "https://raw.githubusercontent.com/godotengine/godot/f62fdbde15035c5576dad93e586201f4d41ef0cb/core/crypto/hashing_context.cpp",
+      "sha256": "fd0dc77143865754d62444d65a6b37d72ebd14f8d08057fa81f6844aec324a60",
+      "bytes": 4860
+    },
+    {
+      "url": "https://raw.githubusercontent.com/godotengine/godot/f62fdbde15035c5576dad93e586201f4d41ef0cb/drivers/gles3/storage/mesh_storage.cpp",
+      "sha256": "1231231220be8dd9f74ff1b6ee7dc4be6c64214bd51cf012405d279256a379b1",
+      "bytes": 91601
+    },
+    {
+      "url": "https://raw.githubusercontent.com/godotengine/godot/f62fdbde15035c5576dad93e586201f4d41ef0cb/scene/resources/multimesh.cpp",
+      "sha256": "7dd0bd990f377623ea45999e87bedb18687c60b789db9116211619b1ce25e8eb",
+      "bytes": 20053
+    },
+    {
+      "url": "https://raw.githubusercontent.com/godotengine/godot/f62fdbde15035c5576dad93e586201f4d41ef0cb/servers/rendering/renderer_scene_cull.cpp",
+      "sha256": "30b9fc975a861f10f4c3425d02c2513ce82937c2d6917a26e4e82454080b0493",
+      "bytes": 170269
+    },
+    {
+      "url": "https://raw.githubusercontent.com/godotengine/godot/f62fdbde15035c5576dad93e586201f4d41ef0cb/doc/classes/RenderingServer.xml",
+      "sha256": "14117a71f0ca3d5ca33040c473a59b9424bc25376e4a635d162ea0ef6c7dd3ec",
+      "bytes": 337956
+    }
+  ],
+  "source_observations": [
+    "ObjectID uses bit 63 for RefCounted identity, defines valid as nonzero, and explicitly converts to int64_t. Negative signed values are valid.",
+    "HashingContext.update fails on zero bytes. start/finish computes the empty digest without update. Count/stride validation must precede hashing.",
+    "MultiMesh::set_mesh assigns the CPU Ref first. GLES3 _multimesh_set_mesh immediately returns for a null RID, leaving a prior stored server RID unchanged.",
+    "GLES3 _multimesh_get_mesh only accesses the MultiMesh stored RID, not the referenced Mesh, so CPU/server binding agreement can be checked safely before querying mesh bounds or surface count.",
+    "RendererSceneCull::free calls update_dirty_instances before deleting an instance. The MultiMesh dependency update reads the stored mesh RID and calls mesh_get_surface_count when that RID is nonzero. A previously freed Mesh therefore explains the delayed error logged at later node.free."
+  ],
+  "claim_limit": "Pinned source diagnosis plus source-only correction. No new native execution, full-world acceptance, universal renderer-state freeze, or proof of mutation absence between observations."
+}

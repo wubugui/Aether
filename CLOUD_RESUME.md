@@ -1,6 +1,15 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 06:15 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 06:21 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 06:21修正v6真实GL 61项通过；scatter原生解析通过
+
+- 空资源/散布准备已完整发布 **5888da46ec1cb1a29c5763ad556e10afa2736609**，tree **8960ab4ec501f61c9b814aa69de2b1429869ea33**、parent9e86fc75；38路径/37唯一blob新bare公共Git逐字节/SHA回读一致，本地1a11d99同树对齐。官方upstream原文的缩进原样保存，不为diff-check改源码引用
+- [修正v6四入口parse](cloud-evidence/nearbay61-orbit-parse-20261002T061856Z-p7b7_x2x/wrapper-report.json)全0，0.455/0.153/0.153/0.254秒，无错误，1558输入与全1483闭包/启动/cache/缺席状态匹配
+- [真实X11 GL61项](cloud-evidence/nearbay61-continuous-v6-20261002T061937Z-zjkx_tqa/RESULT.md) **61/61通过**，320×180/llvmpipe、child/wrapper0、1.588秒/261028KiB/CPU2，无engineerror，1587旧输入/39源码未变。实际signed ID解析、完整setter/getter/空SHA、无伪AABB空资源及全部旧负控通过。实际观察CPU mesh RID0而server旧RID670014898183，正确拒绝并恢复后通过，印证生命周期修正；原47/48两error失败不改
+- 轻夹具world_loaded=false、orbit_runtime_passed=false；未跑长world、未获新游戏图，不能当停船环绕/通用live资源冻结/视觉验收。原600/720秒与全部真实段/输入/船0门不变，后续发布本证据后安排正式world
+- [scatter首次原生parse](cloud-evidence/north-ridge62-scatter-parse-20261002T061957Z-mjvw2bx9/RESULT.md) child/wrapper0、0.454秒/134128KiB/CPU2，1568/全1483保护匹配，无logerror。**尚未实际资源collect**，775/57797仍是源码准备计数，bulk保真/运行时占用仍未证明；2283728B元数据使用原sources gzip无损保存/可复原
+- 本证据即时发布。J2局部连接一次数学候选已过原genus/相交门，剩固定机位/完整准备核查中，无Blender源/图片。MAZ正式双图窗口先用，之后北scatter collect≤60秒及正式orbit≤720秒错峰。E/F2八件Slack仍待答，全部GOAL/硬件GPU验收未通过
 
 ## 06:15空资源修正与775组保存散布采集准备完成
 

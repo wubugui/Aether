@@ -1,0 +1,1523 @@
+{
+  "checks": [
+    {
+      "details": null,
+      "name": "real_display_gl_backend_required",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "full_buffer_baseline_passes",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "actual_native_setter_getter_round_trip",
+      "passed": true
+    },
+    {
+      "details": {
+        "bound": true,
+        "buffer_byte_count": 160,
+        "buffer_float_count": 40,
+        "buffer_sha256": "b02b8ef0ac75a4ec1891fcfd15811dbbe6d14bc830203f12cf4ef925239365e1",
+        "cpu_mesh_rid": 339302416384,
+        "custom_aabb_hex": "10000000000000000000000000000000000000000000000000000000",
+        "has_drawable_bounds": true,
+        "instance_count": 2,
+        "mesh_aabb_hex": "10000000000000bf000000bf000000bf0000803f0000803f0000803f",
+        "mesh_binding_matches": true,
+        "mesh_instance_id": -9223372010346773130,
+        "mesh_surface_count": 1,
+        "multimesh_aabb_hex": "10000000000000bf000000bf000000bf000040400000803f0000803f",
+        "multimesh_instance_id": -9223372010363550347,
+        "node_instance_id": 26474448244,
+        "non_rendered_reason": "",
+        "ok": true,
+        "server_mesh_rid": 339302416384,
+        "transform_format": 1,
+        "use_colors": true,
+        "use_custom_data": true,
+        "visible_instance_count": -1
+      },
+      "name": "identity_covers_all_transform_color_custom_slots",
+      "passed": true
+    },
+    {
+      "details": {
+        "multimesh_full_buffer_count": 1,
+        "ok": true,
+        "phase": "late_process",
+        "physics_frame": 1,
+        "process_frame": 10,
+        "scope": "Exact CPU MultiMesh buffer including color/custom slots; resource and mesh bindings/count/bounds. Not universal mutable Mesh/material coverage.",
+        "serial": 1,
+        "ticks_usec": 452197,
+        "watched_geometry_count": 1
+      },
+      "name": "late_witness_is_explicit_and_frame_associated",
+      "passed": true
+    },
+    {
+      "details": [
+        {
+          "details": {
+            "before": {
+              "bound": true,
+              "buffer_byte_count": 160,
+              "buffer_float_count": 40,
+              "buffer_sha256": "b02b8ef0ac75a4ec1891fcfd15811dbbe6d14bc830203f12cf4ef925239365e1",
+              "cpu_mesh_rid": 352187318273,
+              "custom_aabb_hex": "10000000000000000000000000000000000000000000000000000000",
+              "has_drawable_bounds": true,
+              "instance_count": 2,
+              "mesh_aabb_hex": "10000000000000bf000000bf000000bf0000803f0000803f0000803f",
+              "mesh_binding_matches": true,
+              "mesh_instance_id": -9223372010246109830,
+              "mesh_surface_count": 1,
+              "multimesh_aabb_hex": "10000000000000bf000000bf000000bf000040400000803f0000803f",
+              "multimesh_instance_id": -9223372010262887047,
+              "node_instance_id": 26575111544,
+              "non_rendered_reason": "",
+              "ok": true,
+              "server_mesh_rid": 352187318273,
+              "transform_format": 1,
+              "use_colors": true,
+              "use_custom_data": true,
+              "visible_instance_count": -1
+            },
+            "current": {
+              "bound": true,
+              "buffer_byte_count": 160,
+              "buffer_float_count": 40,
+              "buffer_sha256": "18abd27668e750b20e3556db9dd14d7daa66aa433b981a937ee473d4af75f252",
+              "cpu_mesh_rid": 352187318273,
+              "custom_aabb_hex": "10000000000000000000000000000000000000000000000000000000",
+              "has_drawable_bounds": true,
+              "instance_count": 2,
+              "mesh_aabb_hex": "10000000000000bf000000bf000000bf0000803f0000803f0000803f",
+              "mesh_binding_matches": true,
+              "mesh_instance_id": -9223372010246109830,
+              "mesh_surface_count": 1,
+              "multimesh_aabb_hex": "10000000000000bf000000bf000000bf000080400000803f0000803f",
+              "multimesh_instance_id": -9223372010262887047,
+              "node_instance_id": 26575111544,
+              "non_rendered_reason": "",
+              "ok": true,
+              "server_mesh_rid": 352187318273,
+              "transform_format": 1,
+              "use_colors": true,
+              "use_custom_data": true,
+              "visible_instance_count": -1
+            },
+            "instance_id": 26575111544,
+            "path": "/root/@Node3D@2/MM_2"
+          },
+          "reason": "Actual MultiMesh binding/count/full buffer identity changed after inventory"
+        }
+      ],
+      "name": "actual_transform_mutation_rejected",
+      "passed": true
+    },
+    {
+      "details": [
+        {
+          "details": {
+            "before": {
+              "bound": true,
+              "buffer_byte_count": 160,
+              "buffer_float_count": 40,
+              "buffer_sha256": "b02b8ef0ac75a4ec1891fcfd15811dbbe6d14bc830203f12cf4ef925239365e1",
+              "cpu_mesh_rid": 365072220161,
+              "custom_aabb_hex": "10000000000000000000000000000000000000000000000000000000",
+              "has_drawable_bounds": true,
+              "instance_count": 2,
+              "mesh_aabb_hex": "10000000000000bf000000bf000000bf0000803f0000803f0000803f",
+              "mesh_binding_matches": true,
+              "mesh_instance_id": -9223372010128669318,
+              "mesh_surface_count": 1,
+              "multimesh_aabb_hex": "10000000000000bf000000bf000000bf000040400000803f0000803f",
+              "multimesh_instance_id": -9223372010145446535,
+              "node_instance_id": 26692552059,
+              "non_rendered_reason": "",
+              "ok": true,
+              "server_mesh_rid": 365072220161,
+              "transform_format": 1,
+              "use_colors": true,
+              "use_custom_data": true,
+              "visible_instance_count": -1
+            },
+            "current": {
+              "bound": true,
+              "buffer_byte_count": 160,
+              "buffer_float_count": 40,
+              "buffer_sha256": "4d90ff22d6d3f4c0f43d8b55af28e22a470e1159fb4566ce80b24fcf3efbab33",
+              "cpu_mesh_rid": 365072220161,
+              "custom_aabb_hex": "10000000000000000000000000000000000000000000000000000000",
+              "has_drawable_bounds": true,
+              "instance_count": 2,
+              "mesh_aabb_hex": "10000000000000bf000000bf000000bf0000803f0000803f0000803f",
+              "mesh_binding_matches": true,
+              "mesh_instance_id": -9223372010128669318,
+              "mesh_surface_count": 1,
+              "multimesh_aabb_hex": "10000000000000bf000000bf000000bf000040400000803f0000803f",
+              "multimesh_instance_id": -9223372010145446535,
+              "node_instance_id": 26692552059,
+              "non_rendered_reason": "",
+              "ok": true,
+              "server_mesh_rid": 365072220161,
+              "transform_format": 1,
+              "use_colors": true,
+              "use_custom_data": true,
+              "visible_instance_count": -1
+            },
+            "instance_id": 26692552059,
+            "path": "/root/@Node3D@2/MM_2"
+          },
+          "reason": "Actual MultiMesh binding/count/full buffer identity changed after inventory"
+        }
+      ],
+      "name": "actual_color_buffer_mutation_rejected",
+      "passed": true
+    },
+    {
+      "details": [
+        {
+          "details": {
+            "before": {
+              "bound": true,
+              "buffer_byte_count": 160,
+              "buffer_float_count": 40,
+              "buffer_sha256": "b02b8ef0ac75a4ec1891fcfd15811dbbe6d14bc830203f12cf4ef925239365e1",
+              "cpu_mesh_rid": 377957122049,
+              "custom_aabb_hex": "10000000000000000000000000000000000000000000000000000000",
+              "has_drawable_bounds": true,
+              "instance_count": 2,
+              "mesh_aabb_hex": "10000000000000bf000000bf000000bf0000803f0000803f0000803f",
+              "mesh_binding_matches": true,
+              "mesh_instance_id": -9223372010011228806,
+              "mesh_surface_count": 1,
+              "multimesh_aabb_hex": "10000000000000bf000000bf000000bf000040400000803f0000803f",
+              "multimesh_instance_id": -9223372010028006023,
+              "node_instance_id": 26809992568,
+              "non_rendered_reason": "",
+              "ok": true,
+              "server_mesh_rid": 377957122049,
+              "transform_format": 1,
+              "use_colors": true,
+              "use_custom_data": true,
+              "visible_instance_count": -1
+            },
+            "current": {
+              "bound": true,
+              "buffer_byte_count": 160,
+              "buffer_float_count": 40,
+              "buffer_sha256": "9926b0f0eb32f437d6c039ce359fc1258c47d3ce374946564a258c763f8a9dc2",
+              "cpu_mesh_rid": 377957122049,
+              "custom_aabb_hex": "10000000000000000000000000000000000000000000000000000000",
+              "has_drawable_bounds": true,
+              "instance_count": 2,
+              "mesh_aabb_hex": "10000000000000bf000000bf000000bf0000803f0000803f0000803f",
+              "mesh_binding_matches": true,
+              "mesh_instance_id": -9223372010011228806,
+              "mesh_surface_count": 1,
+              "multimesh_aabb_hex": "10000000000000bf000000bf000000bf000040400000803f0000803f",
+              "multimesh_instance_id": -9223372010028006023,
+              "node_instance_id": 26809992568,
+              "non_rendered_reason": "",
+              "ok": true,
+              "server_mesh_rid": 377957122049,
+              "transform_format": 1,
+              "use_colors": true,
+              "use_custom_data": true,
+              "visible_instance_count": -1
+            },
+            "instance_id": 26809992568,
+            "path": "/root/@Node3D@2/MM_2"
+          },
+          "reason": "Actual MultiMesh binding/count/full buffer identity changed after inventory"
+        }
+      ],
+      "name": "actual_custom_buffer_mutation_rejected",
+      "passed": true
+    },
+    {
+      "details": [
+        {
+          "details": {
+            "before": {
+              "bound": true,
+              "buffer_byte_count": 160,
+              "buffer_float_count": 40,
+              "buffer_sha256": "b02b8ef0ac75a4ec1891fcfd15811dbbe6d14bc830203f12cf4ef925239365e1",
+              "cpu_mesh_rid": 390842023937,
+              "custom_aabb_hex": "10000000000000000000000000000000000000000000000000000000",
+              "has_drawable_bounds": true,
+              "instance_count": 2,
+              "mesh_aabb_hex": "10000000000000bf000000bf000000bf0000803f0000803f0000803f",
+              "mesh_binding_matches": true,
+              "mesh_instance_id": -9223372009893788294,
+              "mesh_surface_count": 1,
+              "multimesh_aabb_hex": "10000000000000bf000000bf000000bf000040400000803f0000803f",
+              "multimesh_instance_id": -9223372009910565511,
+              "node_instance_id": 26927433083,
+              "non_rendered_reason": "",
+              "ok": true,
+              "server_mesh_rid": 390842023937,
+              "transform_format": 1,
+              "use_colors": true,
+              "use_custom_data": true,
+              "visible_instance_count": -1
+            },
+            "current": {
+              "bound": true,
+              "buffer_byte_count": 80,
+              "buffer_float_count": 20,
+              "buffer_sha256": "5b6fb58e61fa475939767d68a446f97f1bff02c0e5935a3ea8bb51e6515783d8",
+              "cpu_mesh_rid": 390842023937,
+              "custom_aabb_hex": "10000000000000000000000000000000000000000000000000000000",
+              "has_drawable_bounds": true,
+              "instance_count": 1,
+              "mesh_aabb_hex": "10000000000000bf000000bf000000bf0000803f0000803f0000803f",
+              "mesh_binding_matches": true,
+              "mesh_instance_id": -9223372009893788294,
+              "mesh_surface_count": 1,
+              "multimesh_aabb_hex": "10000000000000000000000000000000000000000000000000000000",
+              "multimesh_instance_id": -9223372009910565511,
+              "node_instance_id": 26927433083,
+              "non_rendered_reason": "",
+              "ok": true,
+              "server_mesh_rid": 390842023937,
+              "transform_format": 1,
+              "use_colors": true,
+              "use_custom_data": true,
+              "visible_instance_count": -1
+            },
+            "instance_id": 26927433083,
+            "path": "/root/@Node3D@2/MM_2"
+          },
+          "reason": "Actual MultiMesh binding/count/full buffer identity changed after inventory"
+        }
+      ],
+      "name": "instance_count_mutation_rejected",
+      "passed": true
+    },
+    {
+      "details": [
+        {
+          "details": {
+            "before": {
+              "bound": true,
+              "buffer_byte_count": 160,
+              "buffer_float_count": 40,
+              "buffer_sha256": "b02b8ef0ac75a4ec1891fcfd15811dbbe6d14bc830203f12cf4ef925239365e1",
+              "cpu_mesh_rid": 403726925825,
+              "custom_aabb_hex": "10000000000000000000000000000000000000000000000000000000",
+              "has_drawable_bounds": true,
+              "instance_count": 2,
+              "mesh_aabb_hex": "10000000000000bf000000bf000000bf0000803f0000803f0000803f",
+              "mesh_binding_matches": true,
+              "mesh_instance_id": -9223372009776347782,
+              "mesh_surface_count": 1,
+              "multimesh_aabb_hex": "10000000000000bf000000bf000000bf000040400000803f0000803f",
+              "multimesh_instance_id": -9223372009793124999,
+              "node_instance_id": 27044873592,
+              "non_rendered_reason": "",
+              "ok": true,
+              "server_mesh_rid": 403726925825,
+              "transform_format": 1,
+              "use_colors": true,
+              "use_custom_data": true,
+              "visible_instance_count": -1
+            },
+            "current": {
+              "bound": true,
+              "buffer_byte_count": 160,
+              "buffer_float_count": 40,
+              "buffer_sha256": "b02b8ef0ac75a4ec1891fcfd15811dbbe6d14bc830203f12cf4ef925239365e1",
+              "cpu_mesh_rid": 403726925825,
+              "custom_aabb_hex": "10000000000000000000000000000000000000000000000000000000",
+              "has_drawable_bounds": true,
+              "instance_count": 2,
+              "mesh_aabb_hex": "10000000000000bf000000bf000000bf0000803f0000803f0000803f",
+              "mesh_binding_matches": true,
+              "mesh_instance_id": -9223372009776347782,
+              "mesh_surface_count": 1,
+              "multimesh_aabb_hex": "10000000000000bf000000bf000000bf0000803f0000803f0000803f",
+              "multimesh_instance_id": -9223372009793124999,
+              "node_instance_id": 27044873592,
+              "non_rendered_reason": "",
+              "ok": true,
+              "server_mesh_rid": 403726925825,
+              "transform_format": 1,
+              "use_colors": true,
+              "use_custom_data": true,
+              "visible_instance_count": 1
+            },
+            "instance_id": 27044873592,
+            "path": "/root/@Node3D@2/MM_2"
+          },
+          "reason": "Actual MultiMesh binding/count/full buffer identity changed after inventory"
+        }
+      ],
+      "name": "visible_count_mutation_rejected",
+      "passed": true
+    },
+    {
+      "details": [
+        {
+          "details": {
+            "before": {
+              "bound": true,
+              "buffer_byte_count": 160,
+              "buffer_float_count": 40,
+              "buffer_sha256": "b02b8ef0ac75a4ec1891fcfd15811dbbe6d14bc830203f12cf4ef925239365e1",
+              "cpu_mesh_rid": 416611827713,
+              "custom_aabb_hex": "10000000000000000000000000000000000000000000000000000000",
+              "has_drawable_bounds": true,
+              "instance_count": 2,
+              "mesh_aabb_hex": "10000000000000bf000000bf000000bf0000803f0000803f0000803f",
+              "mesh_binding_matches": true,
+              "mesh_instance_id": -9223372009658907270,
+              "mesh_surface_count": 1,
+              "multimesh_aabb_hex": "10000000000000bf000000bf000000bf000040400000803f0000803f",
+              "multimesh_instance_id": -9223372009675684487,
+              "node_instance_id": 27162314107,
+              "non_rendered_reason": "",
+              "ok": true,
+              "server_mesh_rid": 416611827713,
+              "transform_format": 1,
+              "use_colors": true,
+              "use_custom_data": true,
+              "visible_instance_count": -1
+            },
+            "current_binding": {
+              "bound": false,
+              "node_instance_id": 27162314107,
+              "ok": true
+            },
+            "instance_id": 27162314107,
+            "path": "/root/@Node3D@2/MM_2"
+          },
+          "reason": "Actual MultiMesh resource binding changed after inventory"
+        }
+      ],
+      "name": "null_multimesh_rebinding_rejected_without_dereference",
+      "passed": true
+    },
+    {
+      "details": [
+        {
+          "details": {
+            "before": {
+              "bound": true,
+              "buffer_byte_count": 160,
+              "buffer_float_count": 40,
+              "buffer_sha256": "b02b8ef0ac75a4ec1891fcfd15811dbbe6d14bc830203f12cf4ef925239365e1",
+              "cpu_mesh_rid": 429496729601,
+              "custom_aabb_hex": "10000000000000000000000000000000000000000000000000000000",
+              "has_drawable_bounds": true,
+              "instance_count": 2,
+              "mesh_aabb_hex": "10000000000000bf000000bf000000bf0000803f0000803f0000803f",
+              "mesh_binding_matches": true,
+              "mesh_instance_id": -9223372009558243974,
+              "mesh_surface_count": 1,
+              "multimesh_aabb_hex": "10000000000000bf000000bf000000bf000040400000803f0000803f",
+              "multimesh_instance_id": -9223372009575021191,
+              "node_instance_id": 27262977400,
+              "non_rendered_reason": "",
+              "ok": true,
+              "server_mesh_rid": 429496729601,
+              "transform_format": 1,
+              "use_colors": true,
+              "use_custom_data": true,
+              "visible_instance_count": -1
+            },
+            "current_binding": {
+              "bound": true,
+              "cpu_mesh_rid": 429496729601,
+              "mesh_binding_matches": true,
+              "mesh_instance_id": -9223372009558243974,
+              "multimesh_instance_id": -9223372009491135108,
+              "node_instance_id": 27262977400,
+              "ok": true,
+              "server_mesh_rid": 429496729601
+            },
+            "instance_id": 27262977400,
+            "path": "/root/@Node3D@2/MM_2"
+          },
+          "reason": "Actual MultiMesh resource binding changed after inventory"
+        }
+      ],
+      "name": "equivalent_multimesh_resource_rebinding_rejected",
+      "passed": true
+    },
+    {
+      "details": [
+        {
+          "details": {
+            "before": {
+              "bound": true,
+              "buffer_byte_count": 160,
+              "buffer_float_count": 40,
+              "buffer_sha256": "b02b8ef0ac75a4ec1891fcfd15811dbbe6d14bc830203f12cf4ef925239365e1",
+              "cpu_mesh_rid": 446676598785,
+              "custom_aabb_hex": "10000000000000000000000000000000000000000000000000000000",
+              "has_drawable_bounds": true,
+              "instance_count": 2,
+              "mesh_aabb_hex": "10000000000000bf000000bf000000bf0000803f0000803f0000803f",
+              "mesh_binding_matches": true,
+              "mesh_instance_id": -9223372009440803462,
+              "mesh_surface_count": 1,
+              "multimesh_aabb_hex": "10000000000000bf000000bf000000bf000040400000803f0000803f",
+              "multimesh_instance_id": -9223372009457580679,
+              "node_instance_id": 27380417915,
+              "non_rendered_reason": "",
+              "ok": true,
+              "server_mesh_rid": 446676598785,
+              "transform_format": 1,
+              "use_colors": true,
+              "use_custom_data": true,
+              "visible_instance_count": -1
+            },
+            "current_binding": {
+              "bound": true,
+              "cpu_mesh_rid": 450971566082,
+              "mesh_binding_matches": true,
+              "mesh_instance_id": -9223372009373694600,
+              "multimesh_instance_id": -9223372009457580679,
+              "node_instance_id": 27380417915,
+              "ok": true,
+              "server_mesh_rid": 450971566082
+            },
+            "instance_id": 27380417915,
+            "path": "/root/@Node3D@2/MM_2"
+          },
+          "reason": "Actual MultiMesh resource binding changed after inventory"
+        }
+      ],
+      "name": "mesh_binding_replacement_rejected",
+      "passed": true
+    },
+    {
+      "details": [
+        {
+          "details": {
+            "current_binding": {
+              "bound": true,
+              "cpu_mesh_rid": 0,
+              "mesh_binding_matches": false,
+              "mesh_instance_id": 0,
+              "multimesh_instance_id": -9223372009340140167,
+              "node_instance_id": 27497858428,
+              "ok": false,
+              "server_mesh_rid": 463856467969
+            },
+            "path": "/root/@Node3D@2/MM_2"
+          },
+          "reason": "MultiMesh CPU/server binding is inconsistent or identity unavailable"
+        }
+      ],
+      "name": "null_mesh_binding_rejected_without_dereference",
+      "passed": true
+    },
+    {
+      "details": [
+        {
+          "details": {
+            "before": {
+              "bound": true,
+              "buffer_byte_count": 160,
+              "buffer_float_count": 40,
+              "buffer_sha256": "b02b8ef0ac75a4ec1891fcfd15811dbbe6d14bc830203f12cf4ef925239365e1",
+              "cpu_mesh_rid": 476741369857,
+              "custom_aabb_hex": "10000000000000000000000000000000000000000000000000000000",
+              "has_drawable_bounds": true,
+              "instance_count": 2,
+              "mesh_aabb_hex": "10000000000000bf000000bf000000bf0000803f0000803f0000803f",
+              "mesh_binding_matches": true,
+              "mesh_instance_id": -9223372009222699654,
+              "mesh_surface_count": 1,
+              "multimesh_aabb_hex": "10000000000000bf000000bf000000bf000040400000803f0000803f",
+              "multimesh_instance_id": -9223372009239476871,
+              "node_instance_id": 27598521720,
+              "non_rendered_reason": "",
+              "ok": true,
+              "server_mesh_rid": 476741369857,
+              "transform_format": 1,
+              "use_colors": true,
+              "use_custom_data": true,
+              "visible_instance_count": -1
+            },
+            "current": {
+              "bound": true,
+              "buffer_byte_count": 160,
+              "buffer_float_count": 40,
+              "buffer_sha256": "b02b8ef0ac75a4ec1891fcfd15811dbbe6d14bc830203f12cf4ef925239365e1",
+              "cpu_mesh_rid": 476741369857,
+              "custom_aabb_hex": "10000000000020c1000020c1000020c10000a0410000a0410000a041",
+              "has_drawable_bounds": true,
+              "instance_count": 2,
+              "mesh_aabb_hex": "10000000000000bf000000bf000000bf0000803f0000803f0000803f",
+              "mesh_binding_matches": true,
+              "mesh_instance_id": -9223372009222699654,
+              "mesh_surface_count": 1,
+              "multimesh_aabb_hex": "10000000000020c1000020c1000020c10000a0410000a0410000a041",
+              "multimesh_instance_id": -9223372009239476871,
+              "node_instance_id": 27598521720,
+              "non_rendered_reason": "",
+              "ok": true,
+              "server_mesh_rid": 476741369857,
+              "transform_format": 1,
+              "use_colors": true,
+              "use_custom_data": true,
+              "visible_instance_count": -1
+            },
+            "instance_id": 27598521720,
+            "path": "/root/@Node3D@2/MM_2"
+          },
+          "reason": "Actual MultiMesh binding/count/full buffer identity changed after inventory"
+        }
+      ],
+      "name": "custom_aabb_mutation_rejected",
+      "passed": true
+    },
+    {
+      "details": [
+        {
+          "details": {
+            "before": {
+              "bound": true,
+              "buffer_byte_count": 160,
+              "buffer_float_count": 40,
+              "buffer_sha256": "b02b8ef0ac75a4ec1891fcfd15811dbbe6d14bc830203f12cf4ef925239365e1",
+              "cpu_mesh_rid": 489626271745,
+              "custom_aabb_hex": "10000000000000000000000000000000000000000000000000000000",
+              "has_drawable_bounds": true,
+              "instance_count": 2,
+              "mesh_aabb_hex": "10000000000000bf000000bf000000bf0000803f0000803f0000803f",
+              "mesh_binding_matches": true,
+              "mesh_instance_id": -9223372009105259142,
+              "mesh_surface_count": 1,
+              "multimesh_aabb_hex": "10000000000000bf000000bf000000bf000040400000803f0000803f",
+              "multimesh_instance_id": -9223372009122036359,
+              "node_instance_id": 27715962236,
+              "non_rendered_reason": "",
+              "ok": true,
+              "server_mesh_rid": 489626271745,
+              "transform_format": 1,
+              "use_colors": true,
+              "use_custom_data": true,
+              "visible_instance_count": -1
+            },
+            "current": {
+              "bound": true,
+              "buffer_byte_count": 160,
+              "buffer_float_count": 40,
+              "buffer_sha256": "9926b0f0eb32f437d6c039ce359fc1258c47d3ce374946564a258c763f8a9dc2",
+              "cpu_mesh_rid": 489626271745,
+              "custom_aabb_hex": "10000000000000000000000000000000000000000000000000000000",
+              "has_drawable_bounds": true,
+              "instance_count": 2,
+              "mesh_aabb_hex": "10000000000000bf000000bf000000bf0000803f0000803f0000803f",
+              "mesh_binding_matches": true,
+              "mesh_instance_id": -9223372009105259142,
+              "mesh_surface_count": 1,
+              "multimesh_aabb_hex": "10000000000000bf000000bf000000bf000040400000803f0000803f",
+              "multimesh_instance_id": -9223372009122036359,
+              "node_instance_id": 27715962236,
+              "non_rendered_reason": "",
+              "ok": true,
+              "server_mesh_rid": 489626271745,
+              "transform_format": 1,
+              "use_colors": true,
+              "use_custom_data": true,
+              "visible_instance_count": -1
+            },
+            "instance_id": 27715962236,
+            "path": "/root/@Node3D@2/MM_2"
+          },
+          "reason": "Actual MultiMesh binding/count/full buffer identity changed after inventory"
+        }
+      ],
+      "name": "hidden_buffer_mutation_is_not_exempt",
+      "passed": true
+    },
+    {
+      "details": [
+        {
+          "details": {
+            "before": {
+              "bound": true,
+              "buffer_byte_count": 160,
+              "buffer_float_count": 40,
+              "buffer_sha256": "b02b8ef0ac75a4ec1891fcfd15811dbbe6d14bc830203f12cf4ef925239365e1",
+              "cpu_mesh_rid": 502511173633,
+              "custom_aabb_hex": "10000000000000000000000000000000000000000000000000000000",
+              "has_drawable_bounds": true,
+              "instance_count": 2,
+              "mesh_aabb_hex": "10000000000000bf000000bf000000bf0000803f0000803f0000803f",
+              "mesh_binding_matches": true,
+              "mesh_instance_id": -9223372008987818630,
+              "mesh_surface_count": 1,
+              "multimesh_aabb_hex": "10000000000000bf000000bf000000bf000040400000803f0000803f",
+              "multimesh_instance_id": -9223372009004595847,
+              "node_instance_id": 27833402744,
+              "non_rendered_reason": "",
+              "ok": true,
+              "server_mesh_rid": 502511173633,
+              "transform_format": 1,
+              "use_colors": true,
+              "use_custom_data": true,
+              "visible_instance_count": -1
+            },
+            "current": {
+              "bound": true,
+              "buffer_byte_count": 160,
+              "buffer_float_count": 40,
+              "buffer_sha256": "9926b0f0eb32f437d6c039ce359fc1258c47d3ce374946564a258c763f8a9dc2",
+              "cpu_mesh_rid": 502511173633,
+              "custom_aabb_hex": "10000000000000000000000000000000000000000000000000000000",
+              "has_drawable_bounds": true,
+              "instance_count": 2,
+              "mesh_aabb_hex": "10000000000000bf000000bf000000bf0000803f0000803f0000803f",
+              "mesh_binding_matches": true,
+              "mesh_instance_id": -9223372008987818630,
+              "mesh_surface_count": 1,
+              "multimesh_aabb_hex": "10000000000000bf000000bf000000bf000040400000803f0000803f",
+              "multimesh_instance_id": -9223372009004595847,
+              "node_instance_id": 27833402744,
+              "non_rendered_reason": "",
+              "ok": true,
+              "server_mesh_rid": 502511173633,
+              "transform_format": 1,
+              "use_colors": true,
+              "use_custom_data": true,
+              "visible_instance_count": -1
+            },
+            "instance_id": 27833402744,
+            "path": "/root/@Node3D@2/MM_2"
+          },
+          "reason": "Actual MultiMesh binding/count/full buffer identity changed after inventory"
+        }
+      ],
+      "name": "outside_domain_buffer_mutation_is_not_exempt",
+      "passed": true
+    },
+    {
+      "details": [
+        {
+          "details": {
+            "before": {
+              "bound": true,
+              "buffer_byte_count": 160,
+              "buffer_float_count": 40,
+              "buffer_sha256": "b02b8ef0ac75a4ec1891fcfd15811dbbe6d14bc830203f12cf4ef925239365e1",
+              "cpu_mesh_rid": 515396075521,
+              "custom_aabb_hex": "10000000000000000000000000000000000000000000000000000000",
+              "has_drawable_bounds": true,
+              "instance_count": 2,
+              "mesh_aabb_hex": "10000000000000bf000000bf000000bf0000803f0000803f0000803f",
+              "mesh_binding_matches": true,
+              "mesh_instance_id": -9223372008870378118,
+              "mesh_surface_count": 1,
+              "multimesh_aabb_hex": "10000000000000bf000000bf000000bf000040400000803f0000803f",
+              "multimesh_instance_id": -9223372008887155335,
+              "node_instance_id": 27950843260,
+              "non_rendered_reason": "",
+              "ok": true,
+              "server_mesh_rid": 515396075521,
+              "transform_format": 1,
+              "use_colors": true,
+              "use_custom_data": true,
+              "visible_instance_count": -1
+            },
+            "current": {
+              "bound": true,
+              "buffer_byte_count": 160,
+              "buffer_float_count": 40,
+              "buffer_sha256": "b02b8ef0ac75a4ec1891fcfd15811dbbe6d14bc830203f12cf4ef925239365e1",
+              "cpu_mesh_rid": 515396075521,
+              "custom_aabb_hex": "10000000000000000000000000000000000000000000000000000000",
+              "has_drawable_bounds": false,
+              "instance_count": 2,
+              "mesh_aabb_hex": null,
+              "mesh_binding_matches": true,
+              "mesh_instance_id": -9223372008870378118,
+              "mesh_surface_count": null,
+              "multimesh_aabb_hex": null,
+              "multimesh_instance_id": -9223372008887155335,
+              "node_instance_id": 27950843260,
+              "non_rendered_reason": "zero_visible_instances",
+              "ok": true,
+              "server_mesh_rid": 515396075521,
+              "transform_format": 1,
+              "use_colors": true,
+              "use_custom_data": true,
+              "visible_instance_count": 0
+            },
+            "instance_id": 27950843260,
+            "path": "/root/@Node3D@2/MM_2"
+          },
+          "reason": "Actual MultiMesh binding/count/full buffer identity changed after inventory"
+        }
+      ],
+      "name": "hidden_visible_count_mutation_is_not_exempt",
+      "passed": true
+    },
+    {
+      "details": [
+        {
+          "details": {
+            "before": {
+              "bounds_intersects_domain": true,
+              "bounds_position": [
+                -0.501999974250793,
+                -0.501999974250793,
+                -0.501999974250793
+              ],
+              "bounds_size": [
+                3.00399994850159,
+                1.00399994850159,
+                1.00399994850159
+              ],
+              "camera_cull_mask": 1048575,
+              "class": "MultiMeshInstance3D",
+              "cpu_non_rendered_reason": "",
+              "effective_query_candidate": true,
+              "effective_visible": true,
+              "exists": true,
+              "has_drawable_bounds": true,
+              "inside_tree": true,
+              "instance_id": 28068283768,
+              "layers": 1,
+              "own_visible": true,
+              "path": "/root/@Node3D@2/MM_2",
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "transform_hex": "120000000000803f0000000000000000000000000000803f0000000000000000000000000000803f000000000000000000000000",
+              "tree_visible": true
+            },
+            "bounds_position": [
+              -0.501999974250793,
+              -0.501999974250793,
+              -0.501999974250793
+            ],
+            "bounds_size": [
+              3.00399994850159,
+              1.00399994850159,
+              1.00399994850159
+            ],
+            "current": {
+              "bounds_intersects_domain": true,
+              "bounds_position": [
+                -0.501999974250793,
+                -0.501999974250793,
+                -0.501999974250793
+              ],
+              "bounds_size": [
+                3.00399994850159,
+                1.00399994850159,
+                1.00399994850159
+              ],
+              "camera_cull_mask": 1048575,
+              "class": "MultiMeshInstance3D",
+              "cpu_non_rendered_reason": "",
+              "effective_query_candidate": false,
+              "effective_visible": false,
+              "exists": true,
+              "has_drawable_bounds": true,
+              "inside_tree": true,
+              "instance_id": 28068283768,
+              "layers": 1,
+              "own_visible": false,
+              "path": "/root/@Node3D@2/MM_2",
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "transform_hex": "120000000000803f0000000000000000000000000000803f0000000000000000000000000000803f000000000000000000000000",
+              "tree_visible": false
+            },
+            "expansion": 0.0,
+            "has_drawable_bounds": true,
+            "instance_id": 28068283768,
+            "layers": 1,
+            "multimesh_identity": {
+              "bound": true,
+              "buffer_byte_count": 160,
+              "buffer_float_count": 40,
+              "buffer_sha256": "b02b8ef0ac75a4ec1891fcfd15811dbbe6d14bc830203f12cf4ef925239365e1",
+              "cpu_mesh_rid": 528280977409,
+              "custom_aabb_hex": "10000000000000000000000000000000000000000000000000000000",
+              "has_drawable_bounds": true,
+              "instance_count": 2,
+              "mesh_aabb_hex": "10000000000000bf000000bf000000bf0000803f0000803f0000803f",
+              "mesh_binding_matches": true,
+              "mesh_instance_id": -9223372008752937606,
+              "mesh_surface_count": 1,
+              "multimesh_aabb_hex": "10000000000000bf000000bf000000bf000040400000803f0000803f",
+              "multimesh_instance_id": -9223372008769714823,
+              "node_instance_id": 28068283768,
+              "non_rendered_reason": "",
+              "ok": true,
+              "server_mesh_rid": 528280977409,
+              "transform_format": 1,
+              "use_colors": true,
+              "use_custom_data": true,
+              "visible_instance_count": -1
+            },
+            "path": "/root/@Node3D@2/MM_2",
+            "query_candidate": true,
+            "queued_ancestors_at_inventory": [],
+            "visible": true
+          },
+          "reason": "Candidate geometry visibility/transform changed after stationary inventory"
+        }
+      ],
+      "name": "visibility_gate_retained",
+      "passed": true
+    },
+    {
+      "details": [
+        {
+          "details": {
+            "before": {
+              "bounds_intersects_domain": true,
+              "bounds_position": [
+                -0.501999974250793,
+                -0.501999974250793,
+                -0.501999974250793
+              ],
+              "bounds_size": [
+                3.00399994850159,
+                1.00399994850159,
+                1.00399994850159
+              ],
+              "camera_cull_mask": 1048575,
+              "class": "MultiMeshInstance3D",
+              "cpu_non_rendered_reason": "",
+              "effective_query_candidate": true,
+              "effective_visible": true,
+              "exists": true,
+              "has_drawable_bounds": true,
+              "inside_tree": true,
+              "instance_id": 28185724284,
+              "layers": 1,
+              "own_visible": true,
+              "path": "/root/@Node3D@2/MM_2",
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "transform_hex": "120000000000803f0000000000000000000000000000803f0000000000000000000000000000803f000000000000000000000000",
+              "tree_visible": true
+            },
+            "bounds_position": [
+              -0.501999974250793,
+              -0.501999974250793,
+              -0.501999974250793
+            ],
+            "bounds_size": [
+              3.00399994850159,
+              1.00399994850159,
+              1.00399994850159
+            ],
+            "current": {
+              "bounds_intersects_domain": true,
+              "bounds_position": [
+                0.497999995946884,
+                -0.501999974250793,
+                -0.501999974250793
+              ],
+              "bounds_size": [
+                3.00399994850159,
+                1.00399994850159,
+                1.00399994850159
+              ],
+              "camera_cull_mask": 1048575,
+              "class": "MultiMeshInstance3D",
+              "cpu_non_rendered_reason": "",
+              "effective_query_candidate": true,
+              "effective_visible": true,
+              "exists": true,
+              "has_drawable_bounds": true,
+              "inside_tree": true,
+              "instance_id": 28185724284,
+              "layers": 1,
+              "own_visible": true,
+              "path": "/root/@Node3D@2/MM_2",
+              "position": [
+                1.0,
+                0.0,
+                0.0
+              ],
+              "transform_hex": "120000000000803f0000000000000000000000000000803f0000000000000000000000000000803f0000803f0000000000000000",
+              "tree_visible": true
+            },
+            "expansion": 0.0,
+            "has_drawable_bounds": true,
+            "instance_id": 28185724284,
+            "layers": 1,
+            "multimesh_identity": {
+              "bound": true,
+              "buffer_byte_count": 160,
+              "buffer_float_count": 40,
+              "buffer_sha256": "b02b8ef0ac75a4ec1891fcfd15811dbbe6d14bc830203f12cf4ef925239365e1",
+              "cpu_mesh_rid": 541165879297,
+              "custom_aabb_hex": "10000000000000000000000000000000000000000000000000000000",
+              "has_drawable_bounds": true,
+              "instance_count": 2,
+              "mesh_aabb_hex": "10000000000000bf000000bf000000bf0000803f0000803f0000803f",
+              "mesh_binding_matches": true,
+              "mesh_instance_id": -9223372008635497094,
+              "mesh_surface_count": 1,
+              "multimesh_aabb_hex": "10000000000000bf000000bf000000bf000040400000803f0000803f",
+              "multimesh_instance_id": -9223372008652274311,
+              "node_instance_id": 28185724284,
+              "non_rendered_reason": "",
+              "ok": true,
+              "server_mesh_rid": 541165879297,
+              "transform_format": 1,
+              "use_colors": true,
+              "use_custom_data": true,
+              "visible_instance_count": -1
+            },
+            "path": "/root/@Node3D@2/MM_2",
+            "query_candidate": true,
+            "queued_ancestors_at_inventory": [],
+            "visible": true
+          },
+          "reason": "Candidate geometry visibility/transform changed after stationary inventory"
+        }
+      ],
+      "name": "transform_gate_retained",
+      "passed": true
+    },
+    {
+      "details": [
+        {
+          "details": {
+            "before": {
+              "bounds_intersects_domain": true,
+              "bounds_position": [
+                -0.501999974250793,
+                -0.501999974250793,
+                -0.501999974250793
+              ],
+              "bounds_size": [
+                3.00399994850159,
+                1.00399994850159,
+                1.00399994850159
+              ],
+              "camera_cull_mask": 1048575,
+              "class": "MultiMeshInstance3D",
+              "cpu_non_rendered_reason": "",
+              "effective_query_candidate": true,
+              "effective_visible": true,
+              "exists": true,
+              "has_drawable_bounds": true,
+              "inside_tree": true,
+              "instance_id": 28303164792,
+              "layers": 1,
+              "own_visible": true,
+              "path": "/root/@Node3D@2/MM_2",
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "transform_hex": "120000000000803f0000000000000000000000000000803f0000000000000000000000000000803f000000000000000000000000",
+              "tree_visible": true
+            },
+            "bounds_position": [
+              -0.501999974250793,
+              -0.501999974250793,
+              -0.501999974250793
+            ],
+            "bounds_size": [
+              3.00399994850159,
+              1.00399994850159,
+              1.00399994850159
+            ],
+            "current": {
+              "bounds_intersects_domain": true,
+              "bounds_position": [
+                -0.501999974250793,
+                -0.501999974250793,
+                -0.501999974250793
+              ],
+              "bounds_size": [
+                3.00399994850159,
+                1.00399994850159,
+                1.00399994850159
+              ],
+              "camera_cull_mask": 1048575,
+              "class": "MultiMeshInstance3D",
+              "cpu_non_rendered_reason": "",
+              "effective_query_candidate": true,
+              "effective_visible": true,
+              "exists": true,
+              "has_drawable_bounds": true,
+              "inside_tree": true,
+              "instance_id": 28303164792,
+              "layers": 1,
+              "own_visible": true,
+              "path": "/root/@Node3D@2/MM_2",
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "transform_hex": "120000000000803f0000000000000000000000000000803f0000000000000000000000000000803f000000000000000000000000",
+              "tree_visible": true
+            },
+            "current_queued_ancestors": [
+              {
+                "instance_id": 28303164792,
+                "path": "/root/@Node3D@2/MM_2"
+              }
+            ],
+            "expansion": 0.0,
+            "has_drawable_bounds": true,
+            "instance_id": 28303164792,
+            "layers": 1,
+            "multimesh_identity": {
+              "bound": true,
+              "buffer_byte_count": 160,
+              "buffer_float_count": 40,
+              "buffer_sha256": "b02b8ef0ac75a4ec1891fcfd15811dbbe6d14bc830203f12cf4ef925239365e1",
+              "cpu_mesh_rid": 554050781185,
+              "custom_aabb_hex": "10000000000000000000000000000000000000000000000000000000",
+              "has_drawable_bounds": true,
+              "instance_count": 2,
+              "mesh_aabb_hex": "10000000000000bf000000bf000000bf0000803f0000803f0000803f",
+              "mesh_binding_matches": true,
+              "mesh_instance_id": -9223372008518056582,
+              "mesh_surface_count": 1,
+              "multimesh_aabb_hex": "10000000000000bf000000bf000000bf000040400000803f0000803f",
+              "multimesh_instance_id": -9223372008534833799,
+              "node_instance_id": 28303164792,
+              "non_rendered_reason": "",
+              "ok": true,
+              "server_mesh_rid": 554050781185,
+              "transform_format": 1,
+              "use_colors": true,
+              "use_custom_data": true,
+              "visible_instance_count": -1
+            },
+            "path": "/root/@Node3D@2/MM_2",
+            "query_candidate": true,
+            "queued_ancestors_at_inventory": [],
+            "visible": true
+          },
+          "reason": "Inventoried geometry is now queued for deletion"
+        }
+      ],
+      "name": "queued_removal_gate_retained",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "missing_baseline_is_rejected",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "explicit_null_baseline_can_stay_null",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "null_to_bound_resource_change_is_rejected",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "empty_identity_cannot_be_accepted",
+      "passed": true
+    },
+    {
+      "details": [
+        {
+          "details": {
+            "before": {
+              "bound": true,
+              "buffer_byte_count": 160,
+              "buffer_float_count": 40,
+              "buffer_sha256": "b02b8ef0ac75a4ec1891fcfd15811dbbe6d14bc830203f12cf4ef925239365e1",
+              "cpu_mesh_rid": 588410519554,
+              "custom_aabb_hex": "10000000000000000000000000000000000000000000000000000000",
+              "has_drawable_bounds": true,
+              "instance_count": 2,
+              "mesh_aabb_hex": "10000000000000bf000000bf000000bf0000803f0000803f0000803f",
+              "mesh_binding_matches": true,
+              "mesh_instance_id": -9223372008249621120,
+              "mesh_surface_count": 1,
+              "multimesh_aabb_hex": "10000000000000bf000000bf000000bf000040400000803f0000803f",
+              "multimesh_instance_id": -9223372008266398337,
+              "node_instance_id": 28571600251,
+              "non_rendered_reason": "",
+              "ok": true,
+              "server_mesh_rid": 588410519554,
+              "transform_format": 1,
+              "use_colors": true,
+              "use_custom_data": true,
+              "visible_instance_count": -1
+            },
+            "current": {
+              "bound": true,
+              "buffer_byte_count": 160,
+              "buffer_float_count": 40,
+              "buffer_sha256": "9926b0f0eb32f437d6c039ce359fc1258c47d3ce374946564a258c763f8a9dc2",
+              "cpu_mesh_rid": 588410519554,
+              "custom_aabb_hex": "10000000000000000000000000000000000000000000000000000000",
+              "has_drawable_bounds": true,
+              "instance_count": 2,
+              "mesh_aabb_hex": "10000000000000bf000000bf000000bf0000803f0000803f0000803f",
+              "mesh_binding_matches": true,
+              "mesh_instance_id": -9223372008249621120,
+              "mesh_surface_count": 1,
+              "multimesh_aabb_hex": "10000000000000bf000000bf000000bf000040400000803f0000803f",
+              "multimesh_instance_id": -9223372008266398337,
+              "node_instance_id": 28571600251,
+              "non_rendered_reason": "",
+              "ok": true,
+              "server_mesh_rid": 588410519554,
+              "transform_format": 1,
+              "use_colors": true,
+              "use_custom_data": true,
+              "visible_instance_count": -1
+            },
+            "instance_id": 28571600251,
+            "path": "/root/@Node3D@2/MM_3"
+          },
+          "reason": "Actual MultiMesh binding/count/full buffer identity changed after inventory"
+        }
+      ],
+      "name": "late_mutation_rejected_even_when_final_buffer_restored",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "actual_removal_gate_retained",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "new_distant_MM_classified_and_watched",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "new_distant_MM_later_mutation_rejected",
+      "passed": true
+    },
+    {
+      "details": {
+        "bound": true,
+        "buffer_byte_count": 0,
+        "buffer_float_count": 0,
+        "buffer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "cpu_mesh_rid": 0,
+        "custom_aabb_hex": "10000000000000000000000000000000000000000000000000000000",
+        "has_drawable_bounds": false,
+        "instance_count": 0,
+        "mesh_aabb_hex": null,
+        "mesh_binding_matches": true,
+        "mesh_instance_id": 0,
+        "mesh_surface_count": null,
+        "multimesh_aabb_hex": null,
+        "multimesh_instance_id": -9223372007947631222,
+        "node_instance_id": 28890367369,
+        "non_rendered_reason": "null_mesh",
+        "ok": true,
+        "server_mesh_rid": 0,
+        "transform_format": 0,
+        "use_colors": false,
+        "use_custom_data": false,
+        "visible_instance_count": -1
+      },
+      "name": "fresh_empty_resource_has_empty_hash_and_no_coverage",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "fresh_empty_count_change_is_rejected",
+      "passed": true
+    },
+    {
+      "details": {
+        "bound": true,
+        "buffer_byte_count": 0,
+        "buffer_float_count": 0,
+        "buffer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "cpu_mesh_rid": 635655159813,
+        "custom_aabb_hex": "10000000000000000000000000000000000000000000000000000000",
+        "has_drawable_bounds": false,
+        "instance_count": 0,
+        "mesh_aabb_hex": null,
+        "mesh_binding_matches": true,
+        "mesh_instance_id": -9223372007813413491,
+        "mesh_surface_count": null,
+        "multimesh_aabb_hex": null,
+        "multimesh_instance_id": -9223372007830190708,
+        "node_instance_id": 29007807881,
+        "non_rendered_reason": "zero_instances",
+        "ok": true,
+        "server_mesh_rid": 635655159813,
+        "transform_format": 1,
+        "use_colors": true,
+        "use_custom_data": true,
+        "visible_instance_count": -1
+      },
+      "name": "zero_instance_bound_mesh_has_empty_hash_and_no_coverage",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "zero_instance_layout_change_is_rejected",
+      "passed": true
+    },
+    {
+      "details": {
+        "bound": true,
+        "buffer_byte_count": 160,
+        "buffer_float_count": 40,
+        "buffer_sha256": "b02b8ef0ac75a4ec1891fcfd15811dbbe6d14bc830203f12cf4ef925239365e1",
+        "cpu_mesh_rid": 0,
+        "custom_aabb_hex": "10000000000000000000000000000000000000000000000000000000",
+        "has_drawable_bounds": false,
+        "instance_count": 2,
+        "mesh_aabb_hex": null,
+        "mesh_binding_matches": true,
+        "mesh_instance_id": 0,
+        "mesh_surface_count": null,
+        "multimesh_aabb_hex": null,
+        "multimesh_instance_id": -9223372007695972977,
+        "node_instance_id": 29142025609,
+        "non_rendered_reason": "null_mesh",
+        "ok": true,
+        "server_mesh_rid": 0,
+        "transform_format": 1,
+        "use_colors": true,
+        "use_custom_data": true,
+        "visible_instance_count": -1
+      },
+      "name": "never_bound_null_mesh_keeps_full_buffer_watch_without_coverage",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "null_mesh_full_buffer_mutation_is_rejected",
+      "passed": true
+    },
+    {
+      "details": {
+        "bound": true,
+        "buffer_byte_count": 160,
+        "buffer_float_count": 40,
+        "buffer_sha256": "b02b8ef0ac75a4ec1891fcfd15811dbbe6d14bc830203f12cf4ef925239365e1",
+        "cpu_mesh_rid": 657129996294,
+        "custom_aabb_hex": "10000000000000000000000000000000000000000000000000000000",
+        "has_drawable_bounds": false,
+        "instance_count": 2,
+        "mesh_aabb_hex": null,
+        "mesh_binding_matches": true,
+        "mesh_instance_id": -9223372007561755246,
+        "mesh_surface_count": null,
+        "multimesh_aabb_hex": null,
+        "multimesh_instance_id": -9223372007578532463,
+        "node_instance_id": 29259466121,
+        "non_rendered_reason": "zero_visible_instances",
+        "ok": true,
+        "server_mesh_rid": 657129996294,
+        "transform_format": 1,
+        "use_colors": true,
+        "use_custom_data": true,
+        "visible_instance_count": 0
+      },
+      "name": "zero_visible_instances_keep_full_buffer_watch_without_coverage",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "zero_visible_becoming_drawable_is_rejected",
+      "passed": true
+    },
+    {
+      "details": {
+        "bound": true,
+        "cpu_mesh_rid": 0,
+        "mesh_binding_matches": false,
+        "mesh_instance_id": 0,
+        "multimesh_instance_id": -9223372007444314732,
+        "node_instance_id": 29393683849,
+        "ok": false,
+        "server_mesh_rid": 670014898183
+      },
+      "name": "stale_cpu_null_binding_is_rejected_before_bounds",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "restored_cpu_server_binding_matches_original_identity",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "new_empty_binding_is_classified_without_finite_coverage",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "new_empty_mesh_binding_change_is_rejected",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "new_empty_bound_mesh_retained_through_removal",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "sequence_initial_sample_audit",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "begin_event_with_empty_pending",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "no_process_cannot_complete_event",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "new_process_alone_cannot_complete_event",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "capture_cannot_precede_its_physics_audit",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "new_process_exact_audit_allows_next_event",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "capture_ready_only_after_same_frame_audit",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "second_event_requires_newer_process_again",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "later_capture_frame_cannot_pass_early",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "pending_segment_blocks_input",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "duplicate_process_frame_rejected",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "missing_process_frame_rejected",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "wrong_segment_audit_rejected",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "duplicate_audit_rejected",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "overlapping_input_event_rejected",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "missing_process_complete_event_rejected",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "same_frame_process_does_not_satisfy_strict_newer_requirement",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "unflushed_later_segment_blocks_next_input",
+      "passed": true
+    },
+    {
+      "details": {
+        "counters": {
+          "late_process_callbacks": 2
+        },
+        "diagnostic_only": true,
+        "engine_process_delta_seconds_sum": 0.03,
+        "last_engine_process_delta_seconds": 0.02,
+        "last_process_interarrival_wall_seconds": 0.000003,
+        "open_operation_elapsed_seconds": {
+
+        },
+        "process_interarrival_wall_seconds_sum": 0.000003,
+        "timers": {
+          "fixture_operation": {
+            "calls": 1,
+            "last_seconds": 0.000002,
+            "max_seconds": 0.000002,
+            "total_seconds": 0.000002
+          }
+        },
+        "wall_seconds": 0.000017
+      },
+      "name": "telemetry_distinguishes_engine_delta_from_wall_and_never_accepts",
+      "passed": true
+    }
+  ],
+  "coverage_limit": "Mutation restored between all process/physics observations is not detected. Mesh same-resource contents/materials/ship geometry are not generally frozen by the MM guard.",
+  "display_backend": "X11",
+  "engine": {
+    "build": "official",
+    "hash": "f62fdbde15035c5576dad93e586201f4d41ef0cb",
+    "hex": 263425,
+    "major": 4,
+    "minor": 5,
+    "patch": 1,
+    "status": "stable",
+    "string": "4.5.1-stable (official)",
+    "timestamp": 0
+  },
+  "passed": true,
+  "rendering_driver": "opengl3",
+  "rendering_method": "gl_compatibility",
+  "scope": "Small real-display GL compatibility fixture: actual native MultiMesh setters/readbacks and production sequence helpers only. No game/full world, game input, saved framebuffer, production timing or continuous orbit acceptance.",
+  "version": "orbit61-continuous-v6",
+  "world_loaded": false
+}
