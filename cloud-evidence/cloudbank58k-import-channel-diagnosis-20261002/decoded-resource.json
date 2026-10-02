@@ -1,0 +1,252 @@
+{
+  "source_sha256": "4cf0cb28881b99bce3029f4a31e77dac6a452179d992388be7927993f3fea73f",
+  "source_bytes": 29492,
+  "header": {
+    "engine_version": [
+      4,
+      5
+    ],
+    "format_version": 6,
+    "flags": 3,
+    "uid": 18446744073709551615,
+    "main_type": "PackedScene",
+    "metadata_offset": 0,
+    "byte_order": "little",
+    "real_width": 32
+  },
+  "external_resources": [],
+  "resources": [
+    {
+      "index": 0,
+      "path": "local://StandardMaterial3D_p5lpo",
+      "offset": 3057,
+      "type": "StandardMaterial3D",
+      "end_offset": 3187,
+      "properties": {
+        "resource_name": "58K same neutral source inspection",
+        "cull_mode": 2,
+        "albedo_color": {
+          "type": "Color",
+          "values": [
+            0.773573100566864,
+            0.7977377772331238,
+            0.8378605246543884,
+            1.0
+          ]
+        },
+        "roughness": 0.8999999761581421,
+        "script": null
+      },
+      "property_provenance": {
+        "resource_name": {
+          "property_offset": 3084,
+          "variant_offset": 3088,
+          "variant_kind": 5,
+          "end_offset": 3131
+        },
+        "cull_mode": {
+          "property_offset": 3131,
+          "variant_offset": 3135,
+          "variant_kind": 3,
+          "end_offset": 3143
+        },
+        "albedo_color": {
+          "property_offset": 3143,
+          "variant_offset": 3147,
+          "variant_kind": 20,
+          "end_offset": 3167
+        },
+        "roughness": {
+          "property_offset": 3167,
+          "variant_offset": 3171,
+          "variant_kind": 4,
+          "end_offset": 3179
+        },
+        "script": {
+          "property_offset": 3179,
+          "variant_offset": 3183,
+          "variant_kind": 1,
+          "end_offset": 3187
+        }
+      }
+    },
+    {
+      "index": 1,
+      "path": "local://ArrayMesh_5766i",
+      "offset": 3187,
+      "type": "ArrayMesh",
+      "end_offset": 28982,
+      "properties": {
+        "resource_name": "cloud58k_CloudBank58K_authored_polyhedral_shell_mesh",
+        "_surfaces": [
+          {
+            "format": 34359742471,
+            "primitive": 3,
+            "vertex_data": {
+              "packed_type": "PackedByteArray",
+              "variant_kind": 31,
+              "count": 23040,
+              "payload_offset": 3371,
+              "payload_bytes": 23040,
+              "payload_sha256": "6d3e3be9014ae790556976d1e40cf60ee460e9aa869efca6b9abce397f9b8262"
+            },
+            "vertex_count": 1152,
+            "aabb": {
+              "type": "AABB",
+              "values": [
+                -233.44503784179688,
+                606.328857421875,
+                -183.78085327148438,
+                460.38641357421875,
+                245.65423583984375,
+                349.700927734375
+              ]
+            },
+            "uv_scale": {
+              "type": "Vector4",
+              "values": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "index_data": {
+              "packed_type": "PackedByteArray",
+              "variant_kind": 31,
+              "count": 2304,
+              "payload_offset": 26545,
+              "payload_bytes": 2304,
+              "payload_sha256": "ea7db52bc6c7f11cafcbaeb3043feac4593f2eed131d0a0ce9fe11e59fd46a2d"
+            },
+            "index_count": 1152,
+            "material": {
+              "resource_ref": "internal",
+              "index": 0,
+              "path": "local://StandardMaterial3D_p5lpo"
+            },
+            "name": "58K same neutral source inspection"
+          }
+        ],
+        "blend_shape_mode": 0,
+        "script": null
+      },
+      "property_provenance": {
+        "resource_name": {
+          "property_offset": 3205,
+          "variant_offset": 3209,
+          "variant_kind": 5,
+          "end_offset": 3270
+        },
+        "_surfaces": {
+          "property_offset": 3270,
+          "variant_offset": 3274,
+          "variant_kind": 30,
+          "end_offset": 28962
+        },
+        "blend_shape_mode": {
+          "property_offset": 28962,
+          "variant_offset": 28966,
+          "variant_kind": 3,
+          "end_offset": 28974
+        },
+        "script": {
+          "property_offset": 28974,
+          "variant_offset": 28978,
+          "variant_kind": 1,
+          "end_offset": 28982
+        }
+      }
+    },
+    {
+      "index": 2,
+      "path": "local://PackedScene_pfbsd",
+      "offset": 28982,
+      "type": "PackedScene",
+      "end_offset": 29488,
+      "properties": {
+        "_bundled": {
+          "names": {
+            "packed_type": "PackedStringArray",
+            "values": [
+              "Cloud58K_Import",
+              "Node3D",
+              "CloudBank58K_authored_polyhedral_shell",
+              "gi_mode",
+              "mesh",
+              "skeleton",
+              "MeshInstance3D"
+            ]
+          },
+          "variants": [
+            0,
+            {
+              "resource_ref": "internal",
+              "index": 1,
+              "path": "local://ArrayMesh_5766i"
+            },
+            {
+              "node_path_names": [],
+              "node_path_subnames": [],
+              "absolute": false
+            }
+          ],
+          "node_count": 2,
+          "nodes": {
+            "packed_type": "PackedInt32Array",
+            "variant_kind": 32,
+            "count": 20,
+            "payload_offset": 29265,
+            "payload_bytes": 80,
+            "payload_sha256": "43ad3c5f1d6d02f1cdcdd44cd72567f7905472bbbd82860bb8dfb177f6ff8410"
+          },
+          "conn_count": 0,
+          "conns": {
+            "packed_type": "PackedInt32Array",
+            "variant_kind": 32,
+            "count": 0,
+            "payload_offset": 29394,
+            "payload_bytes": 0,
+            "payload_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "node_paths": [],
+          "editable_instances": [],
+          "version": 3
+        },
+        "script": null
+      },
+      "property_provenance": {
+        "_bundled": {
+          "property_offset": 29002,
+          "variant_offset": 29006,
+          "variant_kind": 26,
+          "end_offset": 29480
+        },
+        "script": {
+          "property_offset": 29480,
+          "variant_offset": 29484,
+          "variant_kind": 1,
+          "end_offset": 29488
+        }
+      }
+    }
+  ],
+  "variant_kinds": [
+    1,
+    3,
+    4,
+    5,
+    15,
+    20,
+    22,
+    24,
+    26,
+    30,
+    31,
+    32,
+    34,
+    40,
+    50
+  ],
+  "all_record_boundaries_validated": true
+}

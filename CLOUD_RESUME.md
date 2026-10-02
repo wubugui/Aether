@@ -1,6 +1,16 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 09:50 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 10:00 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 10:00 实际导入cache通道诊断完成；Slack获新明确补发批准
+
+- 北完整native/keep列表、K真实忠实GLB与实际SCN/readback失败已完整发布 **6bcdc4ce7f4775fbc6c36ff0a7c07fc40c9b45ed**，tree **316d73d782191b9c454104de3d1cda3f6b80fa68**、parent7078b0ee；66路径/61blob新bare公共Git逐字节/SHA核回一致，本地d41f193同树对齐。create_tree首拒后原参数一次证据重试，8既存blob未重传
+- [实际SCN离线诊断](cloud-evidence/cloudbank58k-import-channel-diagnosis-20261002/README.md)：11096B原cache解RSCC mode2→29492B资源，唯一embedded material/ArrayMesh/PackedScene，无external依赖；实际通道V/N/T/I+格式version，无UV/color/custom/skin。1152V/1152index/384triangle。离线实际payload解码过**原Godot2e-4** normal/flat/winding及position1e-5门，位置误差0、normal最大.0001013611；不冒称新的native API读取
+- 1152 tangent全部finite、w+1，每三角逐值平坦，单位误差≤1.19e-7，|T·N|最大.000168383；packed tangentSHA9abbd7ac9e2aa0960922abde0d5d32757d718348e386d642b895a088a0310aba。实际sidecar ensure_tangents=false仍真，允许官方来源只证存储及有关路径，**内部具体插入call未证**；三被二拒源码无新请求/替代route
+- 诊断7文件+freeze SHAba1d57c3522910b08f66850f19116bca25366d5c40e2d21ae459237040509be7，原失败/sidecar/source/保护身份已核。下一最小cache-only新probe只接受此固定V/N/T/I，显式TANGENT语义/存储误差界，原geometry/material/no texture/normal map保持，再native保存fresh reload所有数组含T精确相等；**不重import/派生/Blender**，源码准备未完成，不称native通过
+- 北1131/1347原图已实看，连续山脊方案拟收缩北4tile，南两target及两旧coast整tile保留；当前约182root受影响为设计计算，尚无native山体。主峰参考构图与既有云AABB视线风险分开记录，不能把AABB命中当真实云面遮挡或先改天气
+- **09:56用户针对两私密频道与积压图报给出新的明确“发”批准。** 已启动既有#feiting-progress原thread去重/文件状态核对，原E/F2八件优先同payload交付，随后未交付阶段图报；原已发送D/F不重复。当前仅交付进行中，成功数量/链接等真实回执后记录，不能先称已发完。signed upload URL/凭据不进Git
+- 当前无Aether engine；固定4rad窄观察已过，新的云世界整合/北山体仍待实际制作及实图验收；完整GOAL/硬件GPU未验收
 
 ## 09:50 北六mesh/rock真实读取通过；K忠实GLB及editor导入完成
 
