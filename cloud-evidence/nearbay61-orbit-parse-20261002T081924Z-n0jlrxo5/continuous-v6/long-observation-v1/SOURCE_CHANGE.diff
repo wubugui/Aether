@@ -1,0 +1,380 @@
+--- immutable-sixth-run/run_orbit61.py
++++ current/run_orbit61.py
+@@ -49,6 +49,22 @@
+ 
+ SUPPORT = load_module('orbit61_wrapper_support', HERE / 'continuous-v6/wrapper_support.py')
+ atomic_json = SUPPORT.atomic_json
++
++
++def validate_budgets(observation_seconds: int, wall_timeout: float) -> None:
++    # Two named finite experiments, never an arbitrary deadline relaxation.
++    if type(observation_seconds) is not int or observation_seconds not in (600, 900):
++        raise ValueError('Observation budget must be the explicit integer 600 or 900')
++    if (type(wall_timeout) not in (int, float) or not math.isfinite(wall_timeout) or
++            not 0 < wall_timeout <= observation_seconds + 120):
++        raise ValueError('Outer process timeout must be finite, positive and within observation +120 seconds')
++    if observation_seconds == 900 and wall_timeout != 1020:
++        raise ValueError('The separate 900-second observation requires the explicit 1020-second outer bound')
++
++
++def expected_settle_seconds(observation_seconds: int) -> int:
++    validate_budgets(observation_seconds, observation_seconds + 120)
++    return 30 if observation_seconds == 900 else 15
+ 
+ 
+ def dependency_validation() -> tuple[dict, dict]:
+@@ -159,13 +175,16 @@
+         'flight_attempted': False, 'scope': 'No files written by this static check. Source assertions and geometry arithmetic do not establish GDScript parsing or runtime behavior.'}
+ 
+ 
+-def child_run(command: list[str], out: Path, env: dict, timeout: float, label: str) -> dict:
++def child_run(command: list[str], out: Path, env: dict, timeout: float, label: str, observation_budget_seconds: int) -> dict:
++    validate_budgets(observation_budget_seconds, timeout)
+     return SUPPORT.run_child(command, out, env, PROJECT, timeout, label,
+-                             heartbeat=out / 'images/orbit-progress.json')
+-
+-
+-def validate_completion(out: Path, report_sha: str) -> dict:
++                             heartbeat=out / 'images/orbit-progress.json',
++                             wall_timeout_limit=observation_budget_seconds + 120)
++
++
++def validate_completion(out: Path, report_sha: str, expected_observation_seconds: int) -> dict:
+     """Require real-native post-receipt wall evidence, independently of the last sample."""
++    validate_budgets(expected_observation_seconds, expected_observation_seconds + 120)
+     receipt_path = out / 'images/orbit-completion.json'
+     receipt = SUPPORT.strict_json(receipt_path)
+     prefix = 'ORBIT61_TERMINAL_WALL '
+@@ -192,6 +211,10 @@
+                                       (terminal, 'orbit61-terminal-wall-v1', 'finish_before_cleanup')]:
+         if (not isinstance(record, dict) or record.get('version') != version or
+                 record.get('first_item_runtime_passed') is not True or
++                type(record.get('requested_observation_budget_seconds')) is not int or
++                record['requested_observation_budget_seconds'] != expected_observation_seconds or
++                type(record.get('settle_wait_budget_seconds')) is not int or
++                record['settle_wait_budget_seconds'] != expected_settle_seconds(expected_observation_seconds) or
+                 record.get('native_report_sha256') != report_sha):
+             raise ValueError('Incomplete or mismatched native wall evidence')
+         wall = record.get('wall_deadline')
+@@ -200,13 +223,15 @@
+         seconds = wall.get('verification_completed_wall_seconds')
+         limit = wall.get('limit_seconds')
+         last = wall.get('last_check')
+-        if (type(limit) not in (int, float) or limit != 600 or
+-                type(seconds) not in (int, float) or not math.isfinite(seconds) or not 0 <= seconds <= 600 or
++        if (type(limit) not in (int, float) or limit != expected_observation_seconds or
++                type(seconds) not in (int, float) or not math.isfinite(seconds) or not 0 <= seconds <= expected_observation_seconds or
+                 wall.get('first_exceeded_at') != {} or not isinstance(last, dict) or
+                 last.get('boundary') != boundary or type(last.get('elapsed_msec')) is not int or
+                 last['elapsed_msec'] < 0 or seconds != last['elapsed_msec'] / 1000 or
+                 type(last.get('wall_seconds')) not in (int, float) or last['wall_seconds'] != seconds):
+-            raise ValueError('Invalid, inconsistent or exceeded native 600-second completion wall')
++            raise ValueError('Invalid, inconsistent or exceeded requested native completion wall')
++        if record.get('strict_600_performance_passed') is not (seconds <= 600):
++            raise ValueError('Strict 600-second performance result is missing or inconsistent')
+     if (terminal.get('completion_receipt_sha256') != digest(receipt_path) or
+             terminal['wall_deadline']['verification_completed_wall_seconds'] <
+             receipt['wall_deadline']['verification_completed_wall_seconds']):
+@@ -221,6 +246,9 @@
+               'godot_parse_passed': False, 'flight_attempted': False,
+               'nearshore_pixel_coverage_passed': False,
+               'actual_png_manual_review_required': bool(args.run_renderer),
++              'requested_observation_budget_seconds': getattr(args, 'observation_budget', None),
++              'outer_process_timeout_seconds': args.wall_timeout,
++              'strict_600_performance_passed': False,
+               'wrapper_received_signal': None, 'input_aftercheck_attempted': False,
+               'output': str(out)}
+     before = {}
+@@ -234,6 +262,10 @@
+     previous = {sig: signal.signal(sig, cancel_setup) for sig in (signal.SIGINT, signal.SIGTERM)}
+     try:
+         atomic_json(out / 'wrapper-report.json', result)
++        validate_budgets(args.observation_budget, args.wall_timeout)
++        if args.observation_budget == 900 and not args.run_renderer:
++            raise ValueError('The long observation is only for an explicit renderer run')
++        result['settle_wait_budget_seconds'] = expected_settle_seconds(args.observation_budget)
+         before = source_manifest()
+         atomic_json(out / 'input-sha256.json', before)
+         atomic_json(out / 'source-preparation.json', preparation)
+@@ -259,7 +291,9 @@
+                 raise RuntimeError('Actual display required; no headless fallback')
+             jobs = [('renderer', [str(GODOT), '--path', str(PROJECT), '--rendering-method',
+                      'gl_compatibility', '--audio-driver', 'Dummy', '--disable-vsync', '--script',
+-                     str(SCRIPT), '--', f'--output-dir={out / "images"}'])]
++                     str(SCRIPT), '--', f'--output-dir={out / "images"}',
++                     f'--observation-budget-seconds={args.observation_budget}',
++                     f'--settle-wait-budget-seconds={expected_settle_seconds(args.observation_budget)}'])]
+         else:
+             jobs = [(script.stem, [str(GODOT), '--path', str(PROJECT), '--headless', '--check-only',
+                      '--script', str(script)]) for script in
+@@ -272,7 +306,7 @@
+             if source_manifest() != before:
+                 raise RuntimeError('Inputs changed before child admission')
+             result['status'] = 'running'
+-            row = child_run(command, out, env, args.wall_timeout, label)
++            row = child_run(command, out, env, args.wall_timeout, label, args.observation_budget)
+             result['processes'].append(row)
+             if row.get('wrapper_received_signal') is not None:
+                 result['wrapper_received_signal'] = row['wrapper_received_signal']
+@@ -286,7 +320,15 @@
+             runtime_path = out / 'images/orbit-report.json'
+             runtime = SUPPORT.strict_json(runtime_path)
+             result['native_report_sha256'] = digest(runtime_path)
+-            result['native_completion'] = validate_completion(out, result['native_report_sha256'])
++            if (type(runtime.get('requested_observation_budget_seconds')) is not int or
++                    runtime['requested_observation_budget_seconds'] != args.observation_budget or
++                    type(runtime.get('settle_wait_budget_seconds')) is not int or
++                    runtime['settle_wait_budget_seconds'] != expected_settle_seconds(args.observation_budget) or
++                    not isinstance(runtime.get('wall_deadline'), dict) or
++                    type(runtime['wall_deadline'].get('limit_seconds')) not in (int, float) or
++                    runtime['wall_deadline']['limit_seconds'] != args.observation_budget):
++                raise ValueError('Native report does not match requested observation budget')
++            result['native_completion'] = validate_completion(out, result['native_report_sha256'], args.observation_budget)
+             result['verification_completed_wall_seconds'] = result['native_completion']['terminal']['wall_deadline']['verification_completed_wall_seconds']
+             success = success and runtime.get('complete') is True and runtime.get('first_item_runtime_passed') is True
+         result.update(status='finished', passed=bool(success))
+@@ -313,6 +355,9 @@
+         if result['wrapper_received_signal'] is not None:
+             result['passed'] = False
+         result['first_item_runtime_passed'] = bool(args.run_renderer and result['passed'])
++        result['strict_600_performance_passed'] = bool(
++            result['first_item_runtime_passed'] and
++            result['native_completion']['terminal']['strict_600_performance_passed'])
+         result['godot_parse_passed'] = bool(args.parse_only and result['passed'])
+         try:
+             atomic_json(out / 'wrapper-report.json', result)
+@@ -329,10 +374,16 @@
+     mode.add_argument('--static-only', action='store_true')
+     mode.add_argument('--parse-only', action='store_true')
+     mode.add_argument('--run-renderer', action='store_true')
++    parser.add_argument('--observation-budget', type=int, choices=(600, 900), default=600,
++                        help='600 preserves the original experiment; 900 is a separate longer observation, never a 600-second performance pass')
+     parser.add_argument('--wall-timeout', type=float, default=720)
+     args = parser.parse_args()
+-    if not 0 < args.wall_timeout <= 720:
+-        parser.error('--wall-timeout must be positive and at most the original 720 seconds')
++    try:
++        validate_budgets(args.observation_budget, args.wall_timeout)
++        if args.observation_budget == 900 and not args.run_renderer:
++            raise ValueError('The long observation is only for an explicit renderer run')
++    except ValueError as exc:
++        parser.error(str(exc))
+     preparation = static_checks()
+     if not args.parse_only and not args.run_renderer:
+         print(json.dumps(preparation, indent=2))
+--- immutable-sixth-run/verify_orbit61.gd
++++ current/verify_orbit61.gd
+@@ -57,6 +57,10 @@
+ var inventory_ready := false
+ var passed := false
+ var start_wall := 0
++var observation_budget_seconds := 600
++var observation_budget_valid := false
++var settle_wait_budget_seconds := 15
++var settle_budget_valid := false
+ var source_hashes := {}
+ var failures := []
+ var checks := []
+@@ -93,16 +97,16 @@
+ var verification_completed_wall_seconds: Variant = null
+ 
+ func wall_deadline_snapshot() -> Dictionary:
+- return {"limit_seconds":MAX_WALL_SECONDS,"clock":"Time.get_ticks_msec monotonic; no supplied/mock clock","start_scope":"run entry before initial source hashes, scene load, fixture synchronization, inventory and preflight","completion_scope":"Final native check after report write/hash and receipt flush/rename/hash, before emitting terminal clock metadata and cleanup; actual child exit retains the unchanged 720s limit","completion_receipt":"orbit-completion.json","checks":wall_deadline_checks,"last_check":wall_deadline_last.duplicate(true),"first_exceeded_at":wall_deadline_exceeded_at.duplicate(true),"verification_completed_wall_seconds":verification_completed_wall_seconds}
++ return {"limit_seconds":observation_budget_seconds,"historical_performance_limit_seconds":MAX_WALL_SECONDS,"clock":"Time.get_ticks_msec monotonic; no supplied/mock clock","start_scope":"run entry before initial source hashes, scene load, fixture synchronization, inventory and preflight","completion_scope":"Final native check after report write/hash and receipt flush/rename/hash, before emitting terminal clock metadata and cleanup; actual child exit is separately bounded by the wrapper (default720s; explicit long observation1020s)","completion_receipt":"orbit-completion.json","checks":wall_deadline_checks,"last_check":wall_deadline_last.duplicate(true),"first_exceeded_at":wall_deadline_exceeded_at.duplicate(true),"verification_completed_wall_seconds":verification_completed_wall_seconds}
+ 
+ func within_wall_deadline(boundary: String, completing: bool=false) -> bool:
+- # A late process sample cannot license an expensive phase to finish after600.
++ # A late process sample cannot license an expensive phase to finish after the requested finite budget.
+  # The only clock is the actual native monotonic clock, never an argument.
+  var elapsed_msec: int=Time.get_ticks_msec()-start_wall
+  wall_deadline_checks+=1
+  wall_deadline_last={"boundary":boundary,"elapsed_msec":elapsed_msec,"wall_seconds":elapsed_msec/1000.0}
+  if completing: verification_completed_wall_seconds=elapsed_msec/1000.0
+- if elapsed_msec>=0 and elapsed_msec<=MAX_WALL_SECONDS*1000 and wall_deadline_exceeded_at.is_empty(): return true
++ if elapsed_msec>=0 and elapsed_msec<=observation_budget_seconds*1000 and wall_deadline_exceeded_at.is_empty(): return true
+  if wall_deadline_exceeded_at.is_empty(): wall_deadline_exceeded_at=wall_deadline_last.duplicate(true)
+  passed=false
+  if not failed:
+@@ -127,8 +131,22 @@
+  if DirAccess.rename_absolute(output.path_join("orbit-progress.json.tmp"),output.path_join("orbit-progress.json"))!=OK: push_error("Cannot replace orbit diagnostic heartbeat")
+ 
+ func _initialize() -> void:
++ var budget_arguments:=0
++ var settle_arguments:=0
+  for arg in OS.get_cmdline_user_args():
+   if arg.begins_with("--output-dir="): output=arg.trim_prefix("--output-dir=")
++  if arg.begins_with("--observation-budget-seconds="):
++   budget_arguments+=1
++   var value:=arg.trim_prefix("--observation-budget-seconds=")
++   observation_budget_valid=value in ["600","900"]
++   if observation_budget_valid: observation_budget_seconds=int(value)
++  if arg.begins_with("--settle-wait-budget-seconds="):
++   settle_arguments+=1
++   var value:=arg.trim_prefix("--settle-wait-budget-seconds=")
++   settle_budget_valid=value in ["15","30"]
++   if settle_budget_valid: settle_wait_budget_seconds=int(value)
++ observation_budget_valid=observation_budget_valid and budget_arguments==1
++ settle_budget_valid=settle_budget_valid and settle_arguments==1 and ((observation_budget_seconds==600 and settle_wait_budget_seconds==15) or (observation_budget_seconds==900 and settle_wait_budget_seconds==30))
+  call_deferred("run")
+ 
+ func vec(p: Vector3) -> Array:
+@@ -141,7 +159,7 @@
+ func report(complete: bool) -> void:
+  var began:=telemetry.begin("full_report_write")
+  if output.is_empty() or not DirAccess.dir_exists_absolute(output): return
+- var result := {"version":"61-anchored-orbit-v6","wall_deadline":wall_deadline_snapshot(),"display_backend":DisplayServer.get_name(),"rendering_method":RenderingServer.get_current_rendering_method(),"rendering_driver":RenderingServer.get_current_rendering_driver_name(),"control_protocol":CONTROL_PROTOCOL,"sequence":sequence.snapshot(),"telemetry":telemetry.snapshot(),"complete":complete,"stage":stage,"failed":failed,"first_item_runtime_passed":passed and complete and not failed,"fixture_excluded_from_distance":fixture,"checks":checks,"failures":failures,"events":events,"delivered":delivered,"process_samples":process_samples,"audited_segments":audited,"preflight":preflight,"captures":captures,"near_plane_envelope_radius_m":sphere.radius,"actual_camera_path_m":process_path,"actual_ship_path_after_fixture_m":ship_path,"flight_attempted":false,"short_flight_passed":false,"nearshore_pixel_coverage_passed":false,"manual_normal_material_png_review_required":true,"nearest_ray_scope_m":LOCAL_RAY_METERS,"gui_focus_verified":false,"hardware_gpu_acceptance":false,"reference_visual_acceptance":false,"total_acceptance_passed":false,"scene_saved":false,"state":current_state(),"visual_inventory":visual.rows if visual!=null else [],"visual_inventory_failures":visual.failures if visual!=null else [],"visual_triangle_count":visual.triangle_count if visual!=null else 0,"visual_method":"Actual static indexed surfaces in an isolated physics query space, classified shader and animated ship conservative envelopes. Envelope hits do not imply pixel visibility or universal live resource freezing.","live_resource_identity_scope":LIVE_RESOURCE_IDENTITY_SCOPE,"source_count":source_hashes.size()}
++ var result := {"version":"61-anchored-orbit-v6","requested_observation_budget_seconds":observation_budget_seconds,"settle_wait_budget_seconds":settle_wait_budget_seconds,"strict_600_performance_authority":"Completion receipt and final terminal wall only; this report precedes those clock observations","wall_deadline":wall_deadline_snapshot(),"display_backend":DisplayServer.get_name(),"rendering_method":RenderingServer.get_current_rendering_method(),"rendering_driver":RenderingServer.get_current_rendering_driver_name(),"control_protocol":CONTROL_PROTOCOL,"sequence":sequence.snapshot(),"telemetry":telemetry.snapshot(),"complete":complete,"stage":stage,"failed":failed,"first_item_runtime_passed":passed and complete and not failed,"fixture_excluded_from_distance":fixture,"checks":checks,"failures":failures,"events":events,"delivered":delivered,"process_samples":process_samples,"audited_segments":audited,"preflight":preflight,"captures":captures,"near_plane_envelope_radius_m":sphere.radius,"actual_camera_path_m":process_path,"actual_ship_path_after_fixture_m":ship_path,"flight_attempted":false,"short_flight_passed":false,"nearshore_pixel_coverage_passed":false,"manual_normal_material_png_review_required":true,"nearest_ray_scope_m":LOCAL_RAY_METERS,"gui_focus_verified":false,"hardware_gpu_acceptance":false,"reference_visual_acceptance":false,"total_acceptance_passed":false,"scene_saved":false,"state":current_state(),"visual_inventory":visual.rows if visual!=null else [],"visual_inventory_failures":visual.failures if visual!=null else [],"visual_triangle_count":visual.triangle_count if visual!=null else 0,"visual_method":"Actual static indexed surfaces in an isolated physics query space, classified shader and animated ship conservative envelopes. Envelope hits do not imply pixel visibility or universal live resource freezing.","live_resource_identity_scope":LIVE_RESOURCE_IDENTITY_SCOPE,"source_count":source_hashes.size()}
+  var file := FileAccess.open(output.path_join("orbit-report.json.tmp"),FileAccess.WRITE)
+  if file==null: push_error("Cannot write orbit report"); return
+  file.store_string(JSON.stringify(result,"  "));file.flush();file.close()
+@@ -359,6 +377,12 @@
+   await witness.physics_checked
+  return false
+ 
++func within_settle_budget(began: int, boundary: String) -> bool:
++ var elapsed_msec:=Time.get_ticks_msec()-began
++ if elapsed_msec>=0 and elapsed_msec<=settle_wait_budget_seconds*1000: return true
++ abort("Native orbit smoothing exceeded selected settle wait budget",{"boundary":boundary,"elapsed_msec":elapsed_msec,"settle_wait_budget_seconds":settle_wait_budget_seconds})
++ return false
++
+ func wait_settled() -> bool:
+  var began:=Time.get_ticks_msec()
+  var stable:=0
+@@ -366,14 +390,15 @@
+   await witness.processed
+   if failed: return false
+   if not within_wall_deadline("settle_after_process"): return false
++  if not within_settle_budget(began,"after_process"): return false
+   if game.camera.global_position.distance_to(native_desired(game.orbit.x))<=SETTLE_METERS: stable+=1
+   else: stable=0
+   if stable>=2:
+    await witness.physics_checked
+    if not within_wall_deadline("settle_after_physics"): return false
++   if not within_settle_budget(began,"after_physics_before_success"): return false
+    if not failed and pending.is_empty(): return true
+-  if Time.get_ticks_msec()-began>15000:
+-   abort("Native orbit smoothing did not settle within15s");return false
++  if not within_settle_budget(began,"before_next_process_wait"): return false
+  return false
+ 
+ func local_rays() -> Array:
+@@ -453,7 +478,7 @@
+  within_wall_deadline("finish_before_cleanup",true)
+  # This clock is sampled AFTER the receipt flush/rename/hash. It is deliberately
+  # recorded outside that receipt, rather than labelling a pre-write tick post-write.
+- print("ORBIT61_TERMINAL_WALL ",JSON.stringify({"version":"orbit61-terminal-wall-v1","first_item_runtime_passed":passed and not failed,"native_report_sha256":report_sha,"completion_receipt_sha256":receipt_sha,"wall_deadline":wall_deadline_snapshot()}))
++ print("ORBIT61_TERMINAL_WALL ",JSON.stringify({"version":"orbit61-terminal-wall-v1","requested_observation_budget_seconds":observation_budget_seconds,"settle_wait_budget_seconds":settle_wait_budget_seconds,"strict_600_performance_passed":strict_600_performance_passed(),"first_item_runtime_passed":passed and not failed,"native_report_sha256":report_sha,"completion_receipt_sha256":receipt_sha,"wall_deadline":wall_deadline_snapshot()}))
+  if is_instance_valid(game):
+   for i in range(3): await process_frame
+   await RenderingServer.frame_post_draw
+@@ -462,12 +487,15 @@
+  for i in range(8): await process_frame
+  quit(0 if passed else 1)
+ 
++func strict_600_performance_passed() -> bool:
++ return passed and not failed and verification_completed_wall_seconds!=null and verification_completed_wall_seconds>=0 and verification_completed_wall_seconds<=MAX_WALL_SECONDS
++
+ func write_completion_receipt(report_sha: String) -> void:
+  var receipt:=FileAccess.open(output.path_join("orbit-completion.json.tmp"),FileAccess.WRITE)
+  if receipt==null:
+   push_error("Cannot write orbit completion receipt");passed=false
+  else:
+-  receipt.store_string(JSON.stringify({"version":"orbit61-completion-v1","first_item_runtime_passed":passed and not failed,"native_report_sha256":report_sha,"wall_deadline":wall_deadline_snapshot()}));receipt.flush();receipt.close()
++  receipt.store_string(JSON.stringify({"version":"orbit61-completion-v1","requested_observation_budget_seconds":observation_budget_seconds,"settle_wait_budget_seconds":settle_wait_budget_seconds,"strict_600_performance_passed":strict_600_performance_passed(),"first_item_runtime_passed":passed and not failed,"native_report_sha256":report_sha,"wall_deadline":wall_deadline_snapshot()}));receipt.flush();receipt.close()
+   if DirAccess.rename_absolute(output.path_join("orbit-completion.json.tmp"),output.path_join("orbit-completion.json"))!=OK:
+    push_error("Cannot replace orbit completion receipt");passed=false
+ 
+@@ -493,6 +521,7 @@
+ 
+ func run() -> void:
+  start_wall=Time.get_ticks_msec()
++ if not observation_budget_valid or not settle_budget_valid: push_error("Require one explicit matching600/15 or900/30 observation/settle budget pair");quit(2);return
+  if output.is_empty() or not output.is_absolute_path() or DirAccess.dir_exists_absolute(output): push_error("Use new absolute output directory");quit(2);return
+  if DirAccess.make_dir_recursive_absolute(output)!=OK: quit(2);return
+  if not check(DisplayServer.get_name()!="headless","Actual display required"): return
+--- immutable-sixth-run/continuous-v6/wrapper_support.py
++++ current/continuous-v6/wrapper_support.py
+@@ -71,7 +71,7 @@
+ 
+ 
+ def run_child(command: list[str], out: Path, env: dict, cwd: Path, timeout: float,
+-              label: str, heartbeat: Path | None = None) -> dict:
++              label: str, heartbeat: Path | None = None, *, wall_timeout_limit: int = 720) -> dict:
+     """Own the child's PID before delivering cancellation; always kill/reap on error.
+ 
+     Terminal reports preserve the actual wait4 exit status. The timeout is a hard
+@@ -81,13 +81,17 @@
+     cpus = sorted(os.sched_getaffinity(0))[:2]
+     if len(cpus) != 2:
+         raise RuntimeError('Two available CPUs are required')
+-    if not 0 < timeout <= 720:
+-        raise ValueError('Child timeout must be positive and at most 720 seconds')
++    if type(wall_timeout_limit) is not int or wall_timeout_limit not in (720, 1020):
++        raise ValueError('Only the default720 or explicit1020 process cap is supported')
++    if (type(timeout) not in (int, float) or not math.isfinite(timeout) or
++            not 0 < timeout <= wall_timeout_limit):
++        raise ValueError('Child timeout must be finite, positive and within the explicitly selected cap')
+     started = time.monotonic()
+     child = None
+     previous_handlers = {}
+     result = {'status': 'not_started', 'command': command, 'cpu_affinity': cpus,
+-              'wall_timeout_seconds': timeout, 'timeout_triggered': False,
++              'wall_timeout_seconds': timeout, 'wall_timeout_limit_seconds': wall_timeout_limit,
++              'timeout_triggered': False,
+               'wrapper_received_signal': None, 'returncode': None,
+               'native_exit_observed': False, 'max_rss_kib': None}
+     previous_mask = signal.pthread_sigmask(signal.SIG_BLOCK, STOP_SIGNALS)
+--- immutable-sixth-run/continuous-v6/test_wrappers.py
++++ current/continuous-v6/test_wrappers.py
+@@ -206,8 +206,8 @@
+         self.runner.own_sources = lambda: []
+         self.runner.DEPENDENCY_FILES = ()
+         self.runner.dependency_validation = lambda: ({}, {'status': 'unit-test-only'})
+-        self.args = SimpleNamespace(run_renderer=True, parse_only=False, wall_timeout=720)
+-        def launch(command, out, env, timeout, label):
++        self.args = SimpleNamespace(run_renderer=True, parse_only=False, wall_timeout=720, observation_budget=600)
++        def launch(command, out, env, timeout, label, observation_budget_seconds):
+             self.launches += 1
+             (out / 'images').mkdir(exist_ok=True)
+             self.write_mock_completion(out)
+@@ -217,18 +217,22 @@
+     def write_mock_completion(self, out):
+         # Explicit test-only payloads. No native clock or engine is exercised.
+         report_path = out / 'images/orbit-report.json'
+-        report_path.write_text('{"complete":true,"first_item_runtime_passed":true}')
++        report_path.write_text(json.dumps({'complete': True, 'first_item_runtime_passed': True,
++                                         'requested_observation_budget_seconds': 600, 'settle_wait_budget_seconds': 15,
++                                         'wall_deadline': {'limit_seconds': 600}}))
+         def wall(boundary, msec):
+             return {'limit_seconds': 600, 'verification_completed_wall_seconds': msec / 1000,
+                     'first_exceeded_at': {}, 'last_check': {'boundary': boundary,
+                     'elapsed_msec': msec, 'wall_seconds': msec / 1000}}
+         receipt_path = out / 'images/orbit-completion.json'
+         receipt = {'version': 'orbit61-completion-v1', 'first_item_runtime_passed': True,
++                   'requested_observation_budget_seconds': 600, 'settle_wait_budget_seconds': 15, 'strict_600_performance_passed': True,
+                    'native_report_sha256': self.support.sha(report_path),
+                    'wall_deadline': wall('finish_after_final_report_and_sha', 590000)}
+         receipt_path.write_text(json.dumps(receipt))
+         terminal = {'version': 'orbit61-terminal-wall-v1', 'first_item_runtime_passed': True,
+-                    'native_report_sha256': self.support.sha(report_path),
++                    'requested_observation_budget_seconds': 600, 'settle_wait_budget_seconds': 15, 'strict_600_performance_passed': True,
++                   'native_report_sha256': self.support.sha(report_path),
+                     'completion_receipt_sha256': self.support.sha(receipt_path),
+                     'wall_deadline': wall('finish_before_cleanup', 591000)}
+         (out / 'renderer.stdout.log').write_text('ORBIT61_TERMINAL_WALL ' + json.dumps(terminal) + '\n')
+--- immutable-sixth-run/continuous-v6/check_static.py
++++ current/continuous-v6/check_static.py
+@@ -81,10 +81,10 @@
+     checks.append(require(all(str(module.DEPENDENCY_HOME/name) in inputs for name in module.DEPENDENCY_FILES) and set(reviewed).issubset(inputs),'Reviewed closure/guard/gzip/auditor files included in input manifest'))
+     runner=(ORBIT/'run_orbit61.py').read_text()
+     checks.append(require("result['dependency_guard_before'] = dependency_validation()" in runner and "result['dependency_guard_after'] = dependency_validation()" in runner and "target = out / 'dependency-review62' / relative" in runner,'Wrapper checks full dependency guard before children and finally, and snapshots auditors/review'))
+-    tests=module.SUPPORT.strict_json(HERE/'WRAPPER_TESTS.json')
++    tests=module.SUPPORT.strict_json(HERE/'long-observation-v1/WRAPPER_TESTS.json')
+     checks.append(require(tests.get('passed') is True and tests.get('tests_run')==29 and tests.get('godot_invoked') is False and all(hashlib.sha256((ORBIT/name).read_bytes()).hexdigest()==sha for name,sha in tests['tested_source_sha256'].items()),'29 Python-only wrapper tests match final source hashes'))
+-    deadline=module.SUPPORT.strict_json(HERE/'deadline-v1/TESTS.json')
+-    checks.append(require(deadline.get('passed') is True and deadline.get('tests_run')==10 and deadline.get('godot_invoked') is False and deadline.get('native_clock_tested') is False and all(hashlib.sha256((ORBIT/name).read_bytes()).hexdigest()==sha for name,sha in deadline['tested_source_sha256'].items()),'10 deadline source-order and isolated Python tests match current sources; no native clock proof'))
++    deadline=module.SUPPORT.strict_json(HERE/'long-observation-v1/TESTS.json')
++    checks.append(require(deadline.get('passed') is True and deadline.get('tests_run')==21 and deadline.get('godot_invoked') is False and deadline.get('native_clock_tested') is False and all(hashlib.sha256((ORBIT/name).read_bytes()).hexdigest()==sha for name,sha in deadline['tested_source_sha256'].items()),'21 budget/deadline source-order and isolated Python tests match current sources; no native clock proof'))
+     files=[ORBIT/name for name in ['verify_orbit61.gd','visible_geometry61.gd','run_orbit61.py','native_sequence61.gd','orbit_telemetry61.gd']]+[HERE/name for name in ['README.md','fixture.gd','run_fixture.py','wrapper_support.py','test_wrappers.py','check_static.py','WRAPPER_TESTS.json','EMPTY_RESOURCE_SOURCES.json']]
+     return {'version':'orbit61-continuous-v6-preparation','passed':True,'checks':checks,'original_static_checks':original,'source_sha256':{str(p.relative_to(ORBIT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in files},'wrapper_python_tests':tests,'dependency_guard':evidence,'godot_invoked':False,'gdscript_parse_passed':False,'native_fixture_passed':False,'world_run_passed':False,'scope':'Python AST/source assertions, 29 isolated wrapper tests, unchanged inherited1477 inputs and exact1483 saved loading closure/absence guards. Graphical native mutation fixture and GDScript parsing remain unrun; no universal live-resource identity or world acceptance.'}
+ 

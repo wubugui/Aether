@@ -1,6 +1,15 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 08:08 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 08:31 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 08:31 最终观察源码原生解析通过；北proxy版本门失败与K导入准备
+
+- K实际源/两图、最终900/30模式及proxy准备已完整发布 **821d3a4c8ad530f2eecc4adfa73786f8473f680f**，tree **5700552cbb2f3a1d5b0d638e46baca9b234cb491**、parent00b7394b；100路径/87唯一blob新bare公共Git逐字节/SHA回读一致，本地465c812同树对齐
+- [最终观察四入口parse](cloud-evidence/nearbay61-orbit-parse-20261002T081924Z-n0jlrxo5/RESULT.md)四child/wrapper全0、.480/.154/.153/.253秒，无logerror；1603输入/全1483闭包与启动/cache/缺席状态未变。**仅源码语法通过，新900 world尚未运行**；parse本身仍default600/settle15、每child60秒，不冒称执行900模式
+- [北proxy第一次native失败](cloud-evidence/north-ridge62-proxy-bounds-v1-20261002T081935Z-ppkqotra/RESULT.md)child2/wrapper1、.454秒/128944KiB/CPU2，因fixed engine version门在读mesh前拒绝，无engineerror/超时/保护变化。展示串实际4.5.1-stable (official)，原错误门拿它匹配banner前缀；同二进制旧native字典及完整hash已核。原失败/v1不改，独立version-guard-v2准备精确结构字段+fullhash及先记录字典，未重跑，不把空结果称占用完成
+- [K隔离导入准备](source-assets/cloud-bank58/revision-k/import-v1/README.md)正常/-O各17方法含384逐三角翻面负控、独立审查及1026冻结身份核过。只选一云壳，标准轴(x,z,-y)，保相对原anchor(3958,0,3667)的世界轴方向且不应用anchor；194作者顶点/384定向面、平法线/中性材质/实际bounds和fresh native reload门。保留第一次测试dict共享失败日志；修测试后通过不代表native已过
+- 未来导入单次CPU2/1.5GiB/120秒，Blender选mesh GLB→独立/tmp最小Godot导入→原生保存→fresh加载；完整main project前后哈希，禁止主项目/.godot/世界改动。**尚未引擎/导出/图**，先发布准备，安排在900观察终态之后
+- 下一次正式停船观察用明确900 native/1020 outer/settle30，旧600/720/15与历史失败保留；≤.02m两次稳定/逐physics/所有身份空间输入门不变。MAZ无engine，先完成本checkpoint发布再开独占窗口。北被二拒三份官方源码下载继续停。Slack集中双频道确认尚待答，原E/F2八件不重发；全部GOAL/硬件GPU验收仍未通过
 
 ## 08:08 K原生修复成功/单位源造型局部接受；900与北proxy准备完成
 

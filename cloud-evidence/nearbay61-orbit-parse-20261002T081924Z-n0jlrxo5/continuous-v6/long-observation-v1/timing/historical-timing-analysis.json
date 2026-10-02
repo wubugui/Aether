@@ -1,0 +1,356 @@
+{
+  "version": "orbit61-historical-timing-analysis-v1",
+  "analysis_kind": "Read-only historical analysis; no engine invocation, performance acceptance, or long-mode runtime result",
+  "source_evidence_directory": "cloud-evidence/nearbay61-orbit-renderer-20261002T070230Z-qx75unzy",
+  "source_sha256": {
+    "images/orbit-report.json": "e749e678bd297c9114d0b83819ef27a2c110123494c38b65cbfad311422a0944",
+    "images/orbit-report.json.gz": "cf1bf6c9b3f3650113c5f4dd0cfa46f30dc73fb9e7ab479174a9a54ade78d6e0",
+    "images/orbit-progress.json": "2f3160abb24a54090f0b42d54b7f08c84d8f613fba38f40b115ab272a29ff56d",
+    "images/orbit-completion.json": "8f04df1e688cbfeb8f19b5a52f20fac2991ae6abc52cdc710151b1168bb59716",
+    "renderer.process.json": "2d75642a28f999a75b4ec320a44d472017fea0a9ceb50bd86d4b9baf748b2ca7",
+    "renderer.stdout.log": "9ecf89e79d554187913631423d0f5189dee2aac805db6c0e621ac608eeaf29fa",
+    "wrapper-report.json": "7ce2f744bb2331f048a70302ca439e3c8df30539b8c9760396625dd63be65865",
+    "verify_orbit61.gd": "61385ac8de79065b851a6ab637ee0227dcbc3c0f49142068a35e43a0c55b2c90",
+    "visible_geometry61.gd": "966c863a02d136aefacb78e76d7301649b96c628408c589d3a4345fac30086f7",
+    "native_sequence61.gd": "aa5d8c335b56880472b238e5c5e0987464c7c66bc4cde657333020a23b8bc023",
+    "orbit_telemetry61.gd": "24bd6c1f2ca1d1a97c143ad2c7861aca173368de984806dd6adb1439c541e8a2",
+    "native_mouse61.gd": "f38ec4d3bc1c4891c8c919ef18d359e080eb90c948b72c09d1d149394e867cbf"
+  },
+  "gzip_roundtrip_verified": true,
+  "historical_result": {
+    "strict_native_limit_seconds": 600,
+    "outer_limit_seconds": 720,
+    "native_first_exceeded": {
+      "boundary": "audit_begin",
+      "elapsed_msec": 600128,
+      "wall_seconds": 600.128
+    },
+    "terminal_verification_completed_wall_seconds": 601.325,
+    "child_wall_seconds": 612.1321546010004,
+    "child_returncode": 1,
+    "outer_timeout_triggered": false,
+    "wrapper_status": "wrapper_exception",
+    "wrapper_passed": false,
+    "native_first_item_runtime_passed": false,
+    "report_complete_field_meaning": "Report serialization was final; failed=true and runtime_passed=false remain authoritative"
+  },
+  "observed_costs": {
+    "timers_from_final_report": {
+      "capture_image": {
+        "calls": 3,
+        "last_seconds": 0.073919,
+        "max_seconds": 0.098158,
+        "total_seconds": 0.264656
+      },
+      "capture_local_rays": {
+        "calls": 3,
+        "last_seconds": 0.000296,
+        "max_seconds": 0.000306,
+        "total_seconds": 0.000771
+      },
+      "final_source_hash": {
+        "calls": 1,
+        "last_seconds": 1.009732,
+        "max_seconds": 1.009732,
+        "total_seconds": 1.009732
+      },
+      "full_report_write": {
+        "calls": 6,
+        "last_seconds": 0.05398,
+        "max_seconds": 0.05398,
+        "total_seconds": 0.229758
+      },
+      "initial_source_hash": {
+        "calls": 1,
+        "last_seconds": 1.006613,
+        "max_seconds": 1.006613,
+        "total_seconds": 1.006613
+      },
+      "inventory_prepare": {
+        "calls": 1,
+        "last_seconds": 0.551496,
+        "max_seconds": 0.551496,
+        "total_seconds": 0.551496
+      },
+      "inventory_validation": {
+        "calls": 1385,
+        "last_seconds": 0.042555,
+        "max_seconds": 0.113485,
+        "total_seconds": 61.86802
+      },
+      "multimesh_buffer_hash": {
+        "calls": 1120612,
+        "last_seconds": 1.2e-05,
+        "max_seconds": 0.006123,
+        "total_seconds": 15.9037560000103
+      },
+      "native_los_ray": {
+        "calls": 306,
+        "last_seconds": 4e-06,
+        "max_seconds": 0.000166,
+        "total_seconds": 0.005281
+      },
+      "physical_sweep": {
+        "calls": 233,
+        "last_seconds": 3.4e-05,
+        "max_seconds": 0.000134,
+        "total_seconds": 0.00613700000000001
+      },
+      "preflight": {
+        "calls": 1,
+        "last_seconds": 0.001543,
+        "max_seconds": 0.001543,
+        "total_seconds": 0.001543
+      },
+      "preparation": {
+        "calls": 1,
+        "last_seconds": 40.151818,
+        "max_seconds": 40.151818,
+        "total_seconds": 40.151818
+      },
+      "scene_load_instantiate": {
+        "calls": 1,
+        "last_seconds": 6.34595,
+        "max_seconds": 6.34595,
+        "total_seconds": 6.34595
+      },
+      "visible_sweep": {
+        "calls": 233,
+        "last_seconds": 1.2e-05,
+        "max_seconds": 8.7e-05,
+        "total_seconds": 0.002471
+      }
+    },
+    "final_progress_full_report_write_timer": {
+      "calls": 7,
+      "last_seconds": 0.057294,
+      "max_seconds": 0.057294,
+      "total_seconds": 0.287052
+    },
+    "counters_from_final_report": {
+      "capture_local_rays": 27,
+      "captures_saved": 3,
+      "inventory_nodes": 5418,
+      "inventory_validation_calls": 1385,
+      "late_process_callbacks": 158,
+      "multimesh_buffer_bytes": 4015796928,
+      "multimesh_buffer_hashes": 1120612,
+      "native_los_rays": 306,
+      "native_motion_events": 72,
+      "physical_sweep_queries": 233,
+      "physics_audit_callbacks": 1230,
+      "preflight_segments": 80,
+      "source_files_hashed": 3136,
+      "visible_sweep_queries": 233
+    },
+    "inventory_validation_mean_seconds": 0.044670050541516244,
+    "inventory_validation_call_decomposition": {
+      "late_process": 154,
+      "physics_callbacks": 1230,
+      "before_f2": 1,
+      "sum": 1385
+    },
+    "nesting_and_limits": [
+      "preparation includes initial_source_hash and scene_load_instantiate, plus asynchronous waits and other work",
+      "multimesh_buffer_hash is nested within inventory preparation, inventory validation, and new-geometry classification; its timer begins after reading mm.buffer",
+      "preflight includes its physical/visible sweeps; those timers also count later audited sweeps",
+      "capture_image covers image extraction/PNG save, not all wait-for-draw or audit latency",
+      "full_report_write excludes its own current call in the snapshot; later diagnostic progress records seven completed calls",
+      "No disjoint CPU/rasterization/scheduling attribution is available; do not subtract nested totals to label the residual rendering"
+    ]
+  },
+  "wall_vs_engine_delta": {
+    "report_telemetry_wall_seconds": 601.283843,
+    "process_interarrival_wall_seconds_sum": 589.803796,
+    "engine_process_delta_seconds_sum": 21.0333333333333,
+    "difference_seconds": 568.7704626666667,
+    "ratio": 28.041384912836815,
+    "telemetry_callbacks": 158,
+    "active_process_sample_count": 154,
+    "active_sample_interarrival_seconds": 556.140879,
+    "active_sample_delta_sum_seconds": 20.53230766666666,
+    "clock_caution": "Telemetry starts at object construction, watchdog at run entry, process_wall_usec uses engine monotonic epoch, and wrapper wall uses parent process lifetime. Their origins and scopes differ. The exact run-entry tick is not persisted; milestones below retain their native tick epoch rather than inventing exact watchdog-relative times. Latest progress includes cleanup callbacks and is not final-report acceptance."
+  },
+  "milestones": [
+    {
+      "name": "01-default-native-camera",
+      "orbit_radians": 0.0,
+      "process_frame": 6,
+      "recorded_engine_epoch_process_seconds": 43.812333,
+      "elapsed_since_first_active_sample_seconds": 2.17082,
+      "physics_identity_witness_engine_epoch_seconds": 44.657755,
+      "actual_frame_segment_audited": true
+    },
+    {
+      "name": "02-shore-candidate",
+      "orbit_radians": 2.59999990463257,
+      "process_frame": 115,
+      "recorded_engine_epoch_process_seconds": 437.196126,
+      "elapsed_since_first_active_sample_seconds": 395.554613,
+      "physics_identity_witness_engine_epoch_seconds": 441.481036,
+      "actual_frame_segment_audited": true
+    },
+    {
+      "name": "03-ship-side-candidate",
+      "orbit_radians": 3.14159274101257,
+      "process_frame": 142,
+      "recorded_engine_epoch_process_seconds": 543.981485,
+      "elapsed_since_first_active_sample_seconds": 502.339972,
+      "physics_identity_witness_engine_epoch_seconds": 547.430144,
+      "actual_frame_segment_audited": true
+    }
+  ],
+  "process_spacing_windows": {
+    "all_active_samples": {
+      "first_process_frame": 4,
+      "last_process_frame": 157,
+      "interval_count": 153,
+      "min_seconds": 1.034374,
+      "median_seconds": 3.782385,
+      "mean_seconds": 3.634907705882353,
+      "max_seconds": 6.160837
+    },
+    "shore_to_pi_motion": {
+      "first_process_frame": 116,
+      "last_process_frame": 136,
+      "interval_count": 20,
+      "min_seconds": 3.649843,
+      "median_seconds": 3.987716,
+      "mean_seconds": 4.0004564,
+      "max_seconds": 4.473174
+    },
+    "after_pi_motion": {
+      "first_process_frame": 143,
+      "last_process_frame": 157,
+      "interval_count": 14,
+      "min_seconds": 3.365545,
+      "median_seconds": 3.623044,
+      "mean_seconds": 3.5695414285714286,
+      "max_seconds": 3.781532
+    }
+  },
+  "path_and_ordering": {
+    "goal_radians": 4,
+    "last_observed_radians": 3.54159235954285,
+    "fraction_of_angular_goal": 0.8853980898857124,
+    "angular_remainder_radians": 0.4584076404571502,
+    "native_motions_delivered": 72,
+    "event_protocols_completed": 71,
+    "sample_count": 154,
+    "audited_segment_count": 153,
+    "pending_segment_count": 1,
+    "pending_event_frame": 157,
+    "required_newer_event_frame": -1,
+    "last_sample_frame": 157,
+    "last_sample_engine_epoch_seconds": 597.782392,
+    "last_audited_frame": 156,
+    "actual_camera_path_m": 233.056806928711,
+    "actual_ship_path_m": 0.0,
+    "all_recorded_audited_segments_clear": true,
+    "preflight_segments": 80,
+    "preflight_scope": "Intended conservative desired arc, not execution of missing actual path",
+    "remaining_input_model": [
+      {
+        "requested_radians": 0.05,
+        "modeled_float32_orbit_after": 3.591592311859131
+      },
+      {
+        "requested_radians": 0.05,
+        "modeled_float32_orbit_after": 3.641592264175415
+      },
+      {
+        "requested_radians": 0.05,
+        "modeled_float32_orbit_after": 3.691592216491699
+      },
+      {
+        "requested_radians": 0.05,
+        "modeled_float32_orbit_after": 3.7415921688079834
+      },
+      {
+        "requested_radians": 0.05,
+        "modeled_float32_orbit_after": 3.7915921211242676
+      },
+      {
+        "requested_radians": 0.05,
+        "modeled_float32_orbit_after": 3.8415920734405518
+      },
+      {
+        "requested_radians": 0.05,
+        "modeled_float32_orbit_after": 3.891592025756836
+      },
+      {
+        "requested_radians": 0.05,
+        "modeled_float32_orbit_after": 3.94159197807312
+      },
+      {
+        "requested_radians": 0.05,
+        "modeled_float32_orbit_after": 3.9915919303894043
+      },
+      {
+        "requested_radians": 0.008408069610595703,
+        "modeled_float32_orbit_after": 4.0
+      }
+    ],
+    "remaining_input_count": 10,
+    "modeled_total_input_count": 82,
+    "remaining_obligations": [
+      "Audit pending frame157 and obtain/audit a strictly newer sample for active event72",
+      "Deliver approximately10 further inputs, each waiting for its newer exact process/physics protocol",
+      "Settle at4rad twice within0.02m, save fourth PNG, and audit its own sampled segment",
+      "Release all inputs; complete final identity/source/report/receipt/terminal-clock checks"
+    ]
+  },
+  "long_observation_plausibility": {
+    "proposed_separate_native_limit_seconds": 900,
+    "proposed_separate_outer_limit_seconds": 1020,
+    "assessment": "Plausible under observed recent cadence, not guaranteed; not a retroactive strict600 pass",
+    "forecast_kind": "Simple conditional interval-equivalent scenarios, not a fitted performance model or promised completion time",
+    "allowance_explanation": "One newer sample for the active event,20 samples for10 further two-sample input protocols, plus approximately5\u20137 interval equivalents for settling, capture, final audit phase and scheduling margin. Phase overlap makes this a planning allowance rather than an exact count. Final source/report bookkeeping allowance1.1s is historical scale only.",
+    "scenarios": [
+      {
+        "assumption": "after_pi_motion_mean_spacing_continues",
+        "process_interval_equivalent_allowance": [
+          26,
+          28
+        ],
+        "final_bookkeeping_allowance_seconds": 1.1,
+        "additional_seconds_range": [
+          93.90807714285714,
+          101.04715999999999
+        ],
+        "native_completion_elapsed_seconds_range": [
+          694.0360771428572,
+          701.1751600000001
+        ]
+      },
+      {
+        "assumption": "shore_to_pi_motion_mean_spacing_continues",
+        "process_interval_equivalent_allowance": [
+          26,
+          28
+        ],
+        "final_bookkeeping_allowance_seconds": 1.1,
+        "additional_seconds_range": [
+          105.1118664,
+          113.11277919999999
+        ],
+        "native_completion_elapsed_seconds_range": [
+          705.2398664000001,
+          713.2407792
+        ]
+      }
+    ],
+    "local_deadlines_unchanged_in_original_source": {
+      "event_seconds": 15,
+      "settle_seconds": 15,
+      "capture_seconds": 20
+    },
+    "observed_pi_settle_seconds": 14.785784,
+    "limits": [
+      "A fresh run may have different scene-dependent cadence and scheduling; one old run cannot establish an upper bound",
+      "Raising only the global ceiling does not prevent local event/settle/capture timeouts; PI settle already consumed about14.786s of15s",
+      "Even a separately successful900s observation cannot make the historical600s result pass or prove a600s performance target",
+      "No scene visual, nearshore pixel coverage, flight, hardware GPU, or universal live resource freeze acceptance follows"
+    ]
+  }
+}
