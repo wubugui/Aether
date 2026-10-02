@@ -1,0 +1,255 @@
+{
+  "schema": "cloudbank-l-profile-revision-v2",
+  "status": "Single authoritative offline section and shared-junction definition; no model geometry",
+  "inherits": {
+    "published_commit": "b19400f1fdf4bb581e248f2389fb203c645a0808",
+    "base_directory": "source-assets/cloud-bank58/revision-l/design-v1",
+    "design_plan_sha256": "afd626dc8f78ae7c244c8ed39374d7e3f372e562123b96015f1d626f97ed4df7",
+    "landmarks_sha256": "271688a22abfc53ba905972a77df3fef5a6b711a0a1136461316925eb1ec2767",
+    "bindings_sha256": "57d823ce213fd642a433a9a5596f56c0734ddf187a95ca03c7a35e19b7d2d921",
+    "old_plot_script_sha256": "ee8ea22d2298101fdd6ee552d95306891a5600ba29dd084e6d70fb4f852cc95a",
+    "survey_npz_sha256": "33dd320034359f224d9fff0a5a9d43f1a51a5a770beaefefe6954c6c6b7c1615"
+  },
+  "constraints": "Read unchanged from bound v1 form: thickness >=120m where external-rim distance >=80m, interior belly 560..630m. No editable replacement gate.",
+  "nodes": {
+    "A": {
+      "base_control": "C01_Crown_A"
+    },
+    "B": {
+      "base_control": "C02_Crown_B"
+    },
+    "C": {
+      "base_control": "C03_Return_C"
+    },
+    "D": {
+      "base_control": "C04_Shoulder_D"
+    },
+    "V0": {
+      "base_main_valley_index": 0
+    },
+    "V1": {
+      "base_main_valley_index": 1
+    },
+    "V2": {
+      "base_main_valley_index": 2
+    },
+    "V3": {
+      "base_main_valley_index": 3
+    },
+    "V4": {
+      "base_main_valley_index": 4
+    },
+    "VB1": {
+      "base_branch_index": 1
+    },
+    "VB2": {
+      "base_branch_index": 2
+    },
+    "B_exit": {
+      "world_xyz_m": [
+        4390,
+        835,
+        4610
+      ],
+      "status": "Existing v1 central-section exit, now explicitly located"
+    },
+    "A_belly": {
+      "xz_of_node": "A",
+      "y_m": 570,
+      "status": "The same lower-surface intersection for both located sections; one authority, not two repeated constants"
+    }
+  },
+  "main_valley_nodes": [
+    "V0",
+    "V1",
+    "V2",
+    "V3",
+    "V4"
+  ],
+  "branch_valley_nodes": [
+    "V2",
+    "VB1",
+    "VB2"
+  ],
+  "shared_junction": "V2",
+  "sections": {
+    "near_A": {
+      "path_kind": "line",
+      "origin_node": "A",
+      "xz_direction": [
+        0.7282,
+        -0.6854
+      ],
+      "direction_status": "Exact rounded coordinate formula inherited from v1 diagram 04, not a replacement camera matrix",
+      "stations_m": [
+        -240,
+        -190,
+        -125,
+        -60,
+        0,
+        70,
+        150,
+        225
+      ],
+      "top_y_m": [
+        730,
+        820,
+        940,
+        990,
+        {
+          "node_y": "A"
+        },
+        940,
+        850,
+        780
+      ],
+      "bottom_y_m": [
+        680,
+        620,
+        580,
+        560,
+        {
+          "node_y": "A_belly"
+        },
+        590,
+        610,
+        625
+      ],
+      "anchor_stations": [
+        {
+          "node": "A",
+          "station_m": 0,
+          "bottom_node": "A_belly"
+        }
+      ],
+      "interpolation": "PCHIP for top and bottom separately; linear XZ path",
+      "maximum_node": "A"
+    },
+    "D_A_valley_B": {
+      "path_kind": "polyline",
+      "path_nodes": [
+        "D",
+        "A",
+        "V1",
+        "B",
+        "B_exit"
+      ],
+      "stations": [
+        {
+          "node": "D"
+        },
+        {
+          "segment": 0,
+          "fraction": 0.3
+        },
+        {
+          "segment": 0,
+          "fraction": 0.6
+        },
+        {
+          "segment": 0,
+          "fraction": 0.85
+        },
+        {
+          "node": "A"
+        },
+        {
+          "segment": 1,
+          "fraction": 0.24
+        },
+        {
+          "segment": 1,
+          "fraction": 0.47
+        },
+        {
+          "segment": 1,
+          "fraction": 0.74
+        },
+        {
+          "node": "V1"
+        },
+        {
+          "segment": 2,
+          "fraction": 0.24
+        },
+        {
+          "segment": 2,
+          "fraction": 0.47
+        },
+        {
+          "segment": 2,
+          "fraction": 0.73
+        },
+        {
+          "node": "B"
+        },
+        {
+          "segment": 3,
+          "fraction": 0.53
+        },
+        {
+          "node": "B_exit"
+        }
+      ],
+      "top_y_m": [
+        {
+          "node_y": "D"
+        },
+        880,
+        965,
+        998,
+        {
+          "node_y": "A"
+        },
+        955,
+        860,
+        780,
+        {
+          "node_y": "V1"
+        },
+        810,
+        915,
+        1000,
+        {
+          "node_y": "B"
+        },
+        955,
+        {
+          "node_y": "B_exit"
+        }
+      ],
+      "bottom_y_m": [
+        610,
+        595,
+        580,
+        565,
+        {
+          "node_y": "A_belly"
+        },
+        575,
+        585,
+        590,
+        595,
+        580,
+        570,
+        575,
+        585,
+        610,
+        625
+      ],
+      "interpolation": "PCHIP top and bottom along actual XZ polyline arc length; anchors are exact node references",
+      "bottom_anchor_nodes": {
+        "A": "A_belly"
+      },
+      "maximum_node": "B"
+    }
+  },
+  "unchanged_dependencies": [
+    "v1 plan image 02 and four-region XZ layout",
+    "v1 landmark image 05 and all 52 landmark semantics/coordinates/rays",
+    "v1 actual four camera byte records, anchor, basis, scale, material and weather",
+    "four archived footprint survey files"
+  ],
+  "unlocated_return_sketch": "The unchanged C inset in v1 image03 is an unlocated conceptual profile. It is not reissued here or certified as a spatially constrained section. C control/layout and its 52-point membership stay unchanged; its eventual geometry/interface remains a future gate.",
+  "validation_scope": "Two explicitly located 1D sections plus the shared junction. Whole-interval numerical extrema of the piecewise-cubic top-minus-bottom and bottom curves. Spatial classification uses <=1m section-parameter intervals, actual world-motion radii and conservative bounds relative to the finite 5m external-empty-cell surrogate. Near direction is the inherited rounded, almost-unit vector, so a 1m parameter interval is about 1.0000242m in XZ; central uses true polyline arc length. Filled 20 internal cells cannot grant outer-edge exemptions. No directed-rounding proof, analytic true mesh distance, 2D/3D candidate, contact, self-occlusion, native or pixel proof."
+}

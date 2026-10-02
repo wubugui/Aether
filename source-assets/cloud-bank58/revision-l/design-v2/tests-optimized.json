@@ -1,0 +1,162 @@
+{
+  "status": "passed pure offline tests",
+  "python_optimized": true,
+  "test_count": 15,
+  "tests": [
+    {
+      "test": "v2_full_two_section_consistency",
+      "passed": true
+    },
+    {
+      "test": "R1_reject_actual_v1_bottom_profile",
+      "passed": true
+    },
+    {
+      "test": "R2_reject_actual_v1_A_height_and_peak",
+      "passed": true
+    },
+    {
+      "test": "R3_reject_actual_v1_branch_junction",
+      "passed": true
+    },
+    {
+      "test": "reject_all_three_original_conflicts_together",
+      "passed": true
+    },
+    {
+      "test": "detect_control_drift_against_unchanged_landmarks",
+      "passed": true
+    },
+    {
+      "test": "detect_shared_lower_intersection_drift_between_sections",
+      "passed": true
+    },
+    {
+      "test": "detect_shifted_peak_even_when_A_anchor_height_is_correct",
+      "passed": true
+    },
+    {
+      "test": "accept_resolved_plot_lines",
+      "passed": true
+    },
+    {
+      "test": "detect_plotted_curve_control_drift",
+      "passed": true
+    },
+    {
+      "test": "accept_actual_saved_PNG_metadata_hash_and_artist_trace",
+      "passed": true
+    },
+    {
+      "test": "reject_stale_plot_definition_binding",
+      "passed": true
+    },
+    {
+      "test": "detect_PNG_byte_identity_drift",
+      "passed": true
+    },
+    {
+      "test": "reject_weakening_original_120m_gate",
+      "passed": true
+    },
+    {
+      "test": "continuous_polynomial_extremum_detects_endpoint_safe_interior_failure",
+      "passed": true
+    }
+  ],
+  "actual_v1_literal_fixture": {
+    "s": [
+      -240,
+      -190,
+      -125,
+      -60,
+      0,
+      70,
+      150,
+      225
+    ],
+    "top": [
+      730,
+      820,
+      940,
+      1005,
+      990,
+      940,
+      850,
+      780
+    ],
+    "bottom": [
+      680,
+      620,
+      580,
+      560,
+      570,
+      595,
+      630,
+      700
+    ]
+  },
+  "fixture_source_sha256": "ee8ea22d2298101fdd6ee552d95306891a5600ba29dd084e6d70fb4f852cc95a",
+  "negative_design_fixture_results": [
+    {
+      "fixture": "R1_actual_v1",
+      "rejected": true,
+      "observed_issues": [
+        "INTERIOR_BELLY_RANGE:near_A",
+        "INTERIOR_THICKNESS:near_A"
+      ]
+    },
+    {
+      "fixture": "R2_actual_v1",
+      "rejected": true,
+      "observed_issues": [
+        "PROFILE_ANCHOR_DRIFT:near_A:A",
+        "PROFILE_CREST_DRIFT:near_A"
+      ]
+    },
+    {
+      "fixture": "R3_actual_v1",
+      "rejected": true,
+      "observed_issues": [
+        "SHARED_JUNCTION_IDENTITY",
+        "SHARED_JUNCTION_HEIGHT"
+      ]
+    },
+    {
+      "fixture": "R1_R2_R3_actual_v1",
+      "rejected": true,
+      "observed_issues": [
+        "SHARED_JUNCTION_IDENTITY",
+        "SHARED_JUNCTION_HEIGHT",
+        "PROFILE_ANCHOR_DRIFT:near_A:A",
+        "PROFILE_CREST_DRIFT:near_A",
+        "INTERIOR_BELLY_RANGE:near_A",
+        "INTERIOR_THICKNESS:near_A"
+      ]
+    },
+    {
+      "fixture": "control_drift",
+      "rejected": true,
+      "observed_issues": [
+        "CONTROL_LANDMARK_DRIFT:A"
+      ]
+    },
+    {
+      "fixture": "belly_intersection_drift",
+      "rejected": true,
+      "observed_issues": [
+        "PROFILE_BOTTOM_ANCHOR_DRIFT:near_A:A_belly"
+      ]
+    },
+    {
+      "fixture": "peak_shift_drift",
+      "rejected": true,
+      "observed_issues": [
+        "PROFILE_CREST_DRIFT:near_A"
+      ]
+    }
+  ],
+  "old_v1_pass_rewritten": false,
+  "native_started": false,
+  "scope": "Two defined 1D sections and their plotting/control bindings, not whole candidate mesh or native validation"
+}

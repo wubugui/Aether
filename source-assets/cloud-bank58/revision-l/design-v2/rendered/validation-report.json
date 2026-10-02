@@ -1,0 +1,260 @@
+{
+  "version": "v2-offline-consistency",
+  "passed": true,
+  "issues": [],
+  "scope": "Two explicitly located 1D sections plus the shared junction. Whole-interval numerical extrema of the piecewise-cubic top-minus-bottom and bottom curves. Spatial classification uses <=1m section-parameter intervals, actual world-motion radii and conservative bounds relative to the finite 5m external-empty-cell surrogate. Near direction is the inherited rounded, almost-unit vector, so a 1m parameter interval is about 1.0000242m in XZ; central uses true polyline arc length. Filled 20 internal cells cannot grant outer-edge exemptions. No directed-rounding proof, analytic true mesh distance, 2D/3D candidate, contact, self-occlusion, native or pixel proof.",
+  "node_coordinates_xyz_m": {
+    "A": [
+      4140.0,
+      1005.0,
+      3910.0
+    ],
+    "B": [
+      4330.0,
+      1040.0,
+      4480.0
+    ],
+    "C": [
+      4750.0,
+      925.0,
+      4300.0
+    ],
+    "D": [
+      4470.0,
+      845.0,
+      3690.0
+    ],
+    "V0": [
+      3990.0,
+      775.0,
+      4170.0
+    ],
+    "V1": [
+      4180.0,
+      755.0,
+      4170.0
+    ],
+    "V2": [
+      4480.0,
+      740.0,
+      4070.0
+    ],
+    "V3": [
+      4720.0,
+      755.0,
+      4020.0
+    ],
+    "V4": [
+      4830.0,
+      775.0,
+      4020.0
+    ],
+    "VB1": [
+      4500.0,
+      770.0,
+      3890.0
+    ],
+    "VB2": [
+      4510.0,
+      805.0,
+      3810.0
+    ],
+    "B_exit": [
+      4390.0,
+      835.0,
+      4610.0
+    ],
+    "A_belly": [
+      4140.0,
+      570.0,
+      3910.0
+    ]
+  },
+  "main_valley_xyz_m": [
+    [
+      3990.0,
+      775.0,
+      4170.0
+    ],
+    [
+      4180.0,
+      755.0,
+      4170.0
+    ],
+    [
+      4480.0,
+      740.0,
+      4070.0
+    ],
+    [
+      4720.0,
+      755.0,
+      4020.0
+    ],
+    [
+      4830.0,
+      775.0,
+      4020.0
+    ]
+  ],
+  "branch_valley_xyz_m": [
+    [
+      4480.0,
+      740.0,
+      4070.0
+    ],
+    [
+      4500.0,
+      770.0,
+      3890.0
+    ],
+    [
+      4510.0,
+      805.0,
+      3810.0
+    ]
+  ],
+  "resolved_control_override": {
+    "id": "C05_Main_Valley",
+    "path_xzy_m": [
+      [
+        3990.0,
+        4170.0,
+        775.0
+      ],
+      [
+        4180.0,
+        4170.0,
+        755.0
+      ],
+      [
+        4480.0,
+        4070.0,
+        740.0
+      ],
+      [
+        4720.0,
+        4020.0,
+        755.0
+      ],
+      [
+        4830.0,
+        4020.0,
+        775.0
+      ]
+    ],
+    "blind_branch_xzy_m": [
+      [
+        4480.0,
+        4070.0,
+        740.0
+      ],
+      [
+        4500.0,
+        3890.0,
+        770.0
+      ],
+      [
+        4510.0,
+        3810.0,
+        805.0
+      ]
+    ],
+    "all_other_control_fields": "inherit exact v1 base unchanged"
+  },
+  "section_audits": [
+    {
+      "section": "near_A",
+      "edge_exempt_ranges_m": [
+        [
+          -240.0,
+          -189.0
+        ]
+      ],
+      "interval_count": 465,
+      "guarded_interval_count": 414,
+      "edge_exempt_interval_count": 51,
+      "guarded_thickness_min_m": 154.99999999999997,
+      "guarded_belly_range_m": [
+        560.0,
+        625.0
+      ],
+      "whole_profile_thickness_min_m": 50.0,
+      "endpoint": {
+        "station_m": 225.0,
+        "world_xz_m": [
+          4303.845,
+          3755.785
+        ],
+        "top_y_m": 780.0000000000001,
+        "bottom_y_m": 625.0,
+        "thickness_m": 155.0000000000001,
+        "external_center_distance_m": 120.62711241673637,
+        "external_cell_discrete_lower_m": 117.09157851080363,
+        "selected_sample_covered": true,
+        "any_eight_neighbor_sample_covered": false
+      },
+      "violations": []
+    },
+    {
+      "section": "D_A_valley_B",
+      "edge_exempt_ranges_m": [],
+      "interval_count": 1161,
+      "guarded_interval_count": 1161,
+      "edge_exempt_interval_count": 0,
+      "guarded_thickness_min_m": 160.0,
+      "guarded_belly_range_m": [
+        565.0,
+        625.0
+      ],
+      "whole_profile_thickness_min_m": 160.0,
+      "endpoint": {
+        "station_m": 1147.2312868475717,
+        "world_xz_m": [
+          4390.0,
+          4610.0
+        ],
+        "top_y_m": 835.0,
+        "bottom_y_m": 625.0,
+        "thickness_m": 210.0,
+        "external_center_distance_m": 155.60366319595437,
+        "external_cell_discrete_lower_m": 152.06812929002163,
+        "selected_sample_covered": true,
+        "any_eight_neighbor_sample_covered": true
+      },
+      "violations": []
+    }
+  ],
+  "unchanged_constraints": {
+    "description": "One asymmetric, closed, thick cloud bank: two offset major crowns, a lower bent side return, a low forward shoulder, a broad hooked trough with a blind branch, and a continuous belly",
+    "max_world_y_m": 1057.0673217773438,
+    "min_world_y_m": 533.4189910888672,
+    "target_interior_belly_y_range_m": [
+      560,
+      630
+    ],
+    "target_interior_valley_floor_y_range_m": [
+      735,
+      780
+    ],
+    "interior_min_vertical_thickness_m": 120,
+    "interior_distance_from_outer_rim_m": 80,
+    "hierarchy": "A broad low-side face and tall B crown must not be collinear; C is a bent ridge, D is a shoulder, not four same-size spheres"
+  },
+  "source_definition_sha256": "8384939554110e74217aff3778b76cf19093e707781a2fcdc85f694d6cdb90ad",
+  "original_definition_file_sha256": "4d6e3c1126569e5cb9a9a28204ee04ad467edef7c9e10482e617ca126b4dfc30",
+  "survey_npz_sha256": "33dd320034359f224d9fff0a5a9d43f1a51a5a770beaefefe6954c6c6b7c1615",
+  "native_geometry": false,
+  "interface_acceptance": false,
+  "pixel_acceptance": false,
+  "analytical_true_mesh_boundary_distance_proven": false,
+  "internal_cells_filled_only_for_outer_edge_classification": 20,
+  "roundoff_note": "1e-9 arithmetic comparison guard only; no physical 120m/80m gate change. Reported valid margins are meters, not epsilon-level passes.",
+  "interval_storage": {
+    "path": "interval-audit.json.gz",
+    "encoding": "gzip of canonical UTF-8 JSON",
+    "raw_bytes": 512513,
+    "raw_sha256": "86f07c7bb738ba0ffb147d11ae22857591cc2f2802f9e27646ca867440906004",
+    "compressed_sha256": "6effebfa8fa630b12bb80406628ae13542cfdcd21236eaeea1ddff2507af6a6d"
+  }
+}
