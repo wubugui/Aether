@@ -1,0 +1,89 @@
+{
+  "reference_result": "cloud-evidence/nearbay61-continuous-v6-20261002T064755Z-ip7pcsa8/result.json",
+  "reference_wrapper": "cloud-evidence/nearbay61-continuous-v6-20261002T064755Z-ip7pcsa8/wrapper-report.json",
+  "first_failure_report": "cloud-evidence/north-ridge62-proxy-bounds-v1-20261002T081935Z-ppkqotra/native-proxy-meshes.json",
+  "first_failure_wrapper": "cloud-evidence/north-ridge62-proxy-bounds-v1-20261002T081935Z-ppkqotra/wrapper-report.json",
+  "expected_engine": {
+    "major": 4,
+    "minor": 5,
+    "patch": 1,
+    "status": "stable",
+    "build": "official",
+    "hash": "f62fdbde15035c5576dad93e586201f4d41ef0cb",
+    "hex": 263425,
+    "string": "4.5.1-stable (official)",
+    "timestamp": 0
+  },
+  "old_guard_counterexample": {
+    "expression": "observed.string.begins_with(\"4.5.1.stable.official\")",
+    "observed_string": "4.5.1-stable (official)",
+    "offline_result": false
+  },
+  "scope": "Version-only supplemental preparation; v1 files, first failed evidence and parent gzip/raw data remain unchanged. No new engine execution.",
+  "immutable_prior_files": {
+    "cloud-evidence/nearbay61-continuous-v6-20261002T064755Z-ip7pcsa8/result.json": {
+      "bytes": 57862,
+      "sha256": "07384bbd9e1f74d48f67a1132a81e9f746db3c8182f9379aacbc69860542d8aa"
+    },
+    "cloud-evidence/nearbay61-continuous-v6-20261002T064755Z-ip7pcsa8/wrapper-report.json": {
+      "bytes": 5066,
+      "sha256": "8e7783475d3291b10e1b1ac911739a27f026deb54de8475667af61ba72fa17b6"
+    },
+    "cloud-evidence/north-ridge62-proxy-bounds-v1-20261002T081935Z-ppkqotra/native-proxy-meshes.json": {
+      "bytes": 186,
+      "sha256": "e58ce8888954a93fd143074218dc306a9cc801b2ecc938af9a9868d5241f6599"
+    },
+    "cloud-evidence/north-ridge62-proxy-bounds-v1-20261002T081935Z-ppkqotra/wrapper-report.json": {
+      "bytes": 3578,
+      "sha256": "6a8ad658f9ec5ed3b5f9108194fd053bc4118e52dd5b93749d5f78c132eb1e89"
+    },
+    "cloud-evidence/north-ridge62-proxy-bounds-v1-20261002T081935Z-ppkqotra/process-report.json": {
+      "bytes": 715,
+      "sha256": "4dd447d4d748b182f7be2d37800e225a07142d8dabf4735755233ed85343bfdc"
+    },
+    "cloud-evidence/north-ridge62-proxy-bounds-v1-20261002T081935Z-ppkqotra/read_proxy_meshes62.gd": {
+      "bytes": 8791,
+      "sha256": "22d729bf5d4ac1eebb34013f677016310bcef77f636c69cd26100de35ab39fb1"
+    },
+    "cloud-evidence/north-ridge62-proxy-bounds-v1-20261002T081935Z-ppkqotra/run_proxy62.py": {
+      "bytes": 8218,
+      "sha256": "6ec447a4c766124bb7c9665fae058450b8cc5efa1dad308553be71c387d9f6fd"
+    },
+    "cloud-evidence/north-ridge62-proxy-bounds-v1-20261002T081935Z-ppkqotra/stdout.log": {
+      "bytes": 107,
+      "sha256": "d3fc24a79a06235c4903a47de30def7191df91971749193472ae038f5606d289"
+    },
+    "cloud-evidence/north-ridge62-proxy-bounds-v1-20261002T081935Z-ppkqotra/stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source-assets/north-ridge62-intake/proxy-bounds-v1/FINAL_SHA256.json": {
+      "bytes": 1200,
+      "sha256": "95158efd63c46c8760f8df2c214524a2c5132c9a908a3ea69747c481d421e48f"
+    },
+    "source-assets/north-ridge62-intake/proxy-bounds-v1/read_proxy_meshes62.gd": {
+      "bytes": 8791,
+      "sha256": "22d729bf5d4ac1eebb34013f677016310bcef77f636c69cd26100de35ab39fb1"
+    },
+    "source-assets/north-ridge62-intake/proxy-bounds-v1/run_proxy62.py": {
+      "bytes": 8218,
+      "sha256": "6ec447a4c766124bb7c9665fae058450b8cc5efa1dad308553be71c387d9f6fd"
+    },
+    "source-assets/north-ridge62-intake/proxy-bounds-v1/source-bounds-preparation.json": {
+      "bytes": 1049150,
+      "sha256": "845a9d7451baee512d3512dc3d8d6b952f04e8204a861efb995345be4923251b"
+    },
+    "source-assets/north-ridge62-intake/proxy-bounds-v1/source-bounds-preparation.json.gz": {
+      "bytes": 148014,
+      "sha256": "e9636f6831fa5d3236a5881403364e78e199f543f127ae4cca8e83df1a14aa32"
+    },
+    "source-assets/north-ridge62-intake/proxy-bounds-v1/storage.json": {
+      "bytes": 536,
+      "sha256": "a54264e3599c8d5d046a3297a6cc63911fe765e326bf4bf2252411f37aa1b9c6"
+    },
+    "source-assets/north-ridge62-intake/proxy-bounds-v1/STORAGE.md": {
+      "bytes": 907,
+      "sha256": "a93e4a487ccad2176745e1e734373848a73ac407b1c88fed8e13e3a7358b78d3"
+    }
+  }
+}

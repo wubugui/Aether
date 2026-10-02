@@ -1,6 +1,14 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 08:31 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 08:38 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 08:38 北proxy结构化版本修正准备；900观察已实际启动
+
+- 四parse/首次proxy失败/K隔离导入准备已完整发布 **d9cb8351e2af2814e521dd5f457e3571b1f6dd87**，tree **2717f3e2752e123ce4487c7cee2bb20364f45742**、parent821d3a4c；125路径/111唯一blob新bare公共Git逐字节/SHA核回一致，本地0aeb5ef同树对齐。生成fontconfig cache留本地并忽略，原Godot日志按原字节单独保存
+- [version-guard-v2](source-assets/north-ridge62-intake/proxy-bounds-v1/version-guard-v2/README.md)只继承替换初始化：先保存实际engine字典，再核九字段/类型与完整hash；Python independently同schema，原六mesh/rock/CPU2/60秒/二进制SHA/全闭包门不变。29普通/-O方法、来源16pin和独立审查通过，freeze SHAc1002340e88b5b750aeeafae16785777ee415615ec2a9b6c5419d4d9bfb075af
+- 原v1/failure/freeze/raw/gzip/storage身份未变，旧错误仍保留。**v2尚未原生解析/mesh读取**，准备即时发布后等待独占world真实终态，再一次原60秒采集；二拒官方源码下载不再尝试
+- 明确900 native/1020 outer/settle30的[新世界观察](cloud-evidence/nearbay61-orbit-renderer-20261002T083649Z-y9u3upd2/)已在08:36:49 UTC实际启动，初始约60秒仍running，有新engine心跳。此处只是开始状态，目录运行中暂不提交；终态/报告/图片尚未取得，不当完成。MAZ已释放且保留重窗口；源/场景不在运行中修改
+- K隔离GLB/原生reload准备已发布，等900终态后120秒内单次试验。Slack集中双私密频道及补发问题仍待答，原E/F2八件继续停；全部GOAL/硬件GPU未验收
 
 ## 08:31 最终观察源码原生解析通过；北proxy版本门失败与K导入准备
 
