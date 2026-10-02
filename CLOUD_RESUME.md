@@ -1,6 +1,15 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 03:27 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 03:37 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 03:37第三次真实orbit与G原生只读检查
+
+- 材料/生命周期修复、19项合成和正式入口解析已完整发布 **dca7186d4a66fcd94487fc6c86c9916a6a91f231**，tree **af2cab8f0a572ae150156f8919f62e332a79b262**、parenta964a013；37路径/25唯一blob新bare公共Git回读匹配，本地650b214同树对齐
+- **第三次真实Game61仍失败**：[wrapper](cloud-evidence/nearbay61-orbit-renderer-20261002T033202Z-i141mgll/wrapper-report.json)child/wrapper1，34.792秒，峰1582488KiB，1486输入不变，无脚本/材质错误。fixture drain真实记录73个待删节点/受影响几何身份，等待一次process信号/16毫秒后二者均失效、队列清空，仍处原生参考暂停
+- 此次在F2前完整库存门发现/root/Skyfarer/Weather42b/Rain的可见性/变换变化。该分支只保留path，没有before/current对照，不能断言是持续隐藏的跟随对象或已定位正确修复。0F2输入、0图、0相机/船路径；不是已有圈转通过。下项先核信号恢复相对完整weather _process顺序与实际visibility，补确切前后诊断，不冻结天气、不改世界或简单跳过变化
+- 完整981397B运行JSON以[无损gzip](cloud-evidence/nearbay61-orbit-renderer-20261002T033202Z-i141mgll/images/orbit-report.json.gz)保存，原文仍本地原样，恢复/原SHA在[身份说明](cloud-evidence/nearbay61-orbit-renderer-20261002T033202Z-i141mgll/report-storage.json)，所有记录保留且解压逐字节一致。小wrapper、源快照和原stdout/stderr仍普通文件
+- **G保存源的新进程只读检查通过**：[结果](source-assets/cloud-bank58/revision-g/inspection-01/RESULT_INSPECTION58G.md)child/wrapper0、0.475秒，源152743B及SHA完全不变，当前images=0、libraries=0、无强链接ID，网格与八控制身份匹配。相机仅有E来源弱引用元数据。该进程启动时有两个无路径VIEWER块、开源后为空，但不能反推原build保存前哪个子门触发；原build false完整保留
+- G尚无图；正在准备明确post-save验证的独立两图入口，每图重新完整检查并不改旧build结果、不伪造passed、不另存源。所有图形检查继续错峰；E/F2八件Slack仍待用户频道确认，未重发
 
 ## 03:27材料与fixture删除生命周期限定修复已验证
 

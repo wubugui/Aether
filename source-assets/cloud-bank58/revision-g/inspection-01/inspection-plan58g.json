@@ -1,0 +1,32 @@
+{
+  "status": "Read-only fresh-process diagnostic prepared; not run",
+  "source": {
+    "path": "source-assets/cloud-bank58/revision-g/field_patch58g.blend",
+    "bytes": 152743,
+    "sha256": "a30f3b267a4de95a9d3fb2514ab99ca22e416607087e9b80cf9bfc5407999b15"
+  },
+  "original_build_report": {
+    "path": "cloud-evidence/cloudbank58g-patch-20261002T031700Z-l81janv4/outputs/build-result58g.json",
+    "sha256": "5cb628d28333882a9a36f1f08fbf96e87007813d7d0b579d49eb1ebf6e25d9ec"
+  },
+  "original_failure_freeze": {
+    "path": "source-assets/cloud-bank58/revision-g/failure-freeze58g.json",
+    "sha256": "0263027264f540d7b6da5a96071aec031fa6012c6f6a0569bb8a106356a60d48"
+  },
+  "blender_binary_sha256": "050c02562f81fe80ba616a80198fa02d381e60f8b61b8d39add881f4bca0d7d8",
+  "limits": {
+    "total_seconds": 15,
+    "cpu_threads": 2,
+    "max_wrapper_plus_child_rss_kib": 1572864
+  },
+  "scope": {
+    "open_existing_source_only": true,
+    "rebuild": false,
+    "save_source": false,
+    "render": false,
+    "follow_reported_external_filepaths": false,
+    "read_image_pixels": false,
+    "clear_or_remove_datablocks": false
+  },
+  "interpretation": "Fresh-load datablock state can identify current failing subgates; it cannot retrospectively identify unrecorded pre-save counts if the state changes during serialization/loading."
+}

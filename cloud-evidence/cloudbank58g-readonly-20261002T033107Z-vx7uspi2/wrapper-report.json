@@ -1,0 +1,58 @@
+{
+  "state": "completed",
+  "complete": true,
+  "passed": true,
+  "run_id": "cloudbank58g-readonly-20261002T033107Z-vx7uspi2",
+  "child": {
+    "actual_exit_code": 0,
+    "actual_peak_rss_kib": 247244,
+    "user_seconds": 0.301504,
+    "system_seconds": 0.041974
+  },
+  "readonly": true,
+  "rebuilt": false,
+  "source_saved": false,
+  "rendered": false,
+  "visual_acceptance": false,
+  "source_sha256_before": "a30f3b267a4de95a9d3fb2514ab99ca22e416607087e9b80cf9bfc5407999b15",
+  "limits": {
+    "total_seconds": 15,
+    "cpu_threads": 2,
+    "max_wrapper_plus_child_rss_kib": 1572864
+  },
+  "cpu_affinity": [
+    0,
+    1
+  ],
+  "argv": [
+    "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+    "--factory-startup",
+    "--disable-autoexec",
+    "-b",
+    "-t",
+    "2",
+    "--python-exit-code",
+    "1",
+    "--python",
+    "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-g/inspection-01/inspect58g.py",
+    "--",
+    "--out",
+    "/workspace/scratch/a29d03198654/Aether/cloud-evidence/cloudbank58g-readonly-20261002T033107Z-vx7uspi2/outputs"
+  ],
+  "pid": 5,
+  "inspection_passed": true,
+  "loaded_image_count": 0,
+  "loaded_library_count": 0,
+  "source_unchanged_child": true,
+  "source_sha256_after": "a30f3b267a4de95a9d3fb2514ab99ca22e416607087e9b80cf9bfc5407999b15",
+  "source_unchanged": true,
+  "protected_unchanged": true,
+  "prepared_unchanged": true,
+  "actual_wrapper_exit_code": 0,
+  "elapsed_seconds": 0.4751039690017933,
+  "error": null,
+  "limit_stop_reason": null,
+  "actual_peak_wrapper_rss_kib": 14208,
+  "conservative_sum_of_separate_peak_rss_kib": 261452,
+  "peak_observed_aggregate_rss_kib": 257748
+}
