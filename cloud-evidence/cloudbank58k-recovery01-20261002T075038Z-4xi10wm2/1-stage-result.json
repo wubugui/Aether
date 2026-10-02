@@ -1,0 +1,41 @@
+{
+  "job": {
+    "mode": "verify",
+    "view": null
+  },
+  "state": "completed",
+  "complete": true,
+  "argv": [
+    "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+    "--factory-startup",
+    "--disable-autoexec",
+    "-b",
+    "-t",
+    "2",
+    "--python-exit-code",
+    "1",
+    "--python",
+    "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-k/recovery-01/source_contact58k.py",
+    "--",
+    "--mode",
+    "verify",
+    "--out",
+    "/workspace/scratch/a29d03198654/Aether/cloud-evidence/cloudbank58k-recovery01-20261002T075038Z-4xi10wm2/outputs"
+  ],
+  "input_manifest_sha256": "a680f51d33cd9fde427010afd3eb4fb4aaf191d733e5f5a79afd22e9921fd5bb",
+  "prepared_before": true,
+  "protected_before": true,
+  "source_sha256_before": "16eeb67dce6e89f05562b67f869c77dd7882942585241a2648ae46ff48012bee",
+  "pid": 28,
+  "actual_child_exit_code": 0,
+  "elapsed_seconds": 0.8140547289949609,
+  "peak_observed_rss_kib": 304816,
+  "actual_peak_child_rss_kib": 310500,
+  "actual_child_user_seconds": 0.706071,
+  "actual_child_system_seconds": 0.077655,
+  "prepared_after": true,
+  "protected_after": true,
+  "source_sha256_after": "16eeb67dce6e89f05562b67f869c77dd7882942585241a2648ae46ff48012bee",
+  "contact_result_sha256": "64e08cceb49a0248ee33e8487ab60bc78eb7a9b9e9ec56aba8a8484d4b935b9a",
+  "actual_saved_contact_passed": true
+}

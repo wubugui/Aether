@@ -206,8 +206,8 @@ class WrapperTests(unittest.TestCase):
         self.runner.own_sources = lambda: []
         self.runner.DEPENDENCY_FILES = ()
         self.runner.dependency_validation = lambda: ({}, {'status': 'unit-test-only'})
-        self.args = SimpleNamespace(run_renderer=True, parse_only=False, wall_timeout=720)
-        def launch(command, out, env, timeout, label):
+        self.args = SimpleNamespace(run_renderer=True, parse_only=False, wall_timeout=720, observation_budget=600)
+        def launch(command, out, env, timeout, label, observation_budget_seconds):
             self.launches += 1
             (out / 'images').mkdir(exist_ok=True)
             self.write_mock_completion(out)
@@ -217,18 +217,22 @@ class WrapperTests(unittest.TestCase):
     def write_mock_completion(self, out):
         # Explicit test-only payloads. No native clock or engine is exercised.
         report_path = out / 'images/orbit-report.json'
-        report_path.write_text('{"complete":true,"first_item_runtime_passed":true}')
+        report_path.write_text(json.dumps({'complete': True, 'first_item_runtime_passed': True,
+                                         'requested_observation_budget_seconds': 600, 'settle_wait_budget_seconds': 15,
+                                         'wall_deadline': {'limit_seconds': 600}}))
         def wall(boundary, msec):
             return {'limit_seconds': 600, 'verification_completed_wall_seconds': msec / 1000,
                     'first_exceeded_at': {}, 'last_check': {'boundary': boundary,
                     'elapsed_msec': msec, 'wall_seconds': msec / 1000}}
         receipt_path = out / 'images/orbit-completion.json'
         receipt = {'version': 'orbit61-completion-v1', 'first_item_runtime_passed': True,
+                   'requested_observation_budget_seconds': 600, 'settle_wait_budget_seconds': 15, 'strict_600_performance_passed': True,
                    'native_report_sha256': self.support.sha(report_path),
                    'wall_deadline': wall('finish_after_final_report_and_sha', 590000)}
         receipt_path.write_text(json.dumps(receipt))
         terminal = {'version': 'orbit61-terminal-wall-v1', 'first_item_runtime_passed': True,
-                    'native_report_sha256': self.support.sha(report_path),
+                    'requested_observation_budget_seconds': 600, 'settle_wait_budget_seconds': 15, 'strict_600_performance_passed': True,
+                   'native_report_sha256': self.support.sha(report_path),
                     'completion_receipt_sha256': self.support.sha(receipt_path),
                     'wall_deadline': wall('finish_before_cleanup', 591000)}
         (out / 'renderer.stdout.log').write_text('ORBIT61_TERMINAL_WALL ' + json.dumps(terminal) + '\n')

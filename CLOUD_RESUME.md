@@ -1,6 +1,17 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 07:43 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 08:08 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 08:08 K原生修复成功/单位源造型局部接受；900与北proxy准备完成
+
+- K修复准备已完整发布 **00b7394b28769fcadb8e49e606242babd0c3a01e**，tree **e2913ea0491197bd85b64e8ff720b469e866bfc9**、parentae750e94；19路径/18唯一blob新bare公共Git字节/SHA核回一致，本地9745214同树对齐。原统一diff文本中的上下文空白原样保留，不为格式lint改证据
+- [K recovery真实结果](cloud-evidence/cloudbank58k-recovery01-20261002T075038Z-4xi10wm2/RESULT58K.md)四child/wrapper全0、5.501秒/347412KiB/CPU2，136389B可编辑源SHA16eeb67dce6e89f05562b67f869c77dd7882942585241a2648ae46ff48012bee。actual保存194V/384T/genus0、1164精确权重槽/1156属性值、6控制/recipe/完整旧group_signature与fresh identity/contact都过，fresh images0/libraries0/无stronglink，828旧保护不变
+- **K单位中性云源造型门局部接受**：[逐图审查](cloud-evidence/cloudbank58k-recovery01-20261002T075038Z-4xi10wm2/SOURCE_FORM_REVIEW.json)我与独立审查实看319392/461484B原PNG及1216。连续膨起的宽分面/不等冠与厚鞍肩替代叠板，中心峰仍略直/平顶、三峰稍排齐，后续受控试放可作小修。机器报告原visual_acceptance=false不改，另记仅source-form决策；无世界/天气/整1216或全GOAL通过。import-v1只准备独立小项目忠实导入，不改Game61/四根
+- [最终900独立观察准备](source-assets/coast61-nearbay-orbit/continuous-v6/long-observation-v1/README.md)default600/720/settle15保留，显式900/1020/settle30；event15/capture20、两次≤.02m/逐帧physics/原路径/输入/所有身份空间门不变。settle实际时钟在process/physics后且成功前核，原生报告/收据/唯一stdout与wrapper绑定请求预算，strict600性能独立false不可被900成功覆盖
+- normal/-O各29wrapper/21预算/28static通过；最终独立只读审查核39文件freeze SHA61f65c73eca24f68006e4bbb154361954b47085cfa9cb7c4448d729a4781703d。sharedlauncher只增加明确1020 opt-in，default720/kill-reap不改；旧600及未发布15秒草案小记录保留。**尚未新parse/world**，发布后60秒短解析，再一次完整900/1020有界观察
+- [北proxy准备](source-assets/north-ridge62-intake/proxy-bounds-v1/README.md)完整775/57797离线重放精确复现676/575visual命中，471保守树capsule query命中无新增proxy-only，保留81个coast61/243个coast56旧实例。18普通/-O测试与独立审查通过、1511原身份保护；岩prefab首个导入mesh/faces、六视觉源native顶点尚未读，**未引擎**。下一一次CPU2/60秒SceneState+资源数组read，不实例world，完成逐path/index保留/调整清单；active碰撞/全占用仍false
+- proxy的1049150B生成JSON无损gzip入Git，原freeze/rawSHA不改。**云端重拉后若原source-bounds-preparation.json缺失，先按[STORAGE](source-assets/north-ridge62-intake/proxy-bounds-v1/STORAGE.md)恢复，再运行原static/collect；不得覆盖不同已有文件。** 被二拒的三份官方源码下载继续停，不从别路补取，原生顶点观察不冒充独立解码
+- 本阶段代码/源/两图/证据即时发布；MAZ近观察已在08:02:46真实终态释放，后续先短parse/proxy，再约长world。E/F2八件Slack原频道问题仍待答，全部GOAL/硬件GPU验收未通过
 
 ## 07:43 K语义数据安全写入修复准备完成
 

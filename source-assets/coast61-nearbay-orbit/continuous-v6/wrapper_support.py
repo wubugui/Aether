@@ -71,7 +71,7 @@ def error_lines(paths: list[Path]) -> list[str]:
 
 
 def run_child(command: list[str], out: Path, env: dict, cwd: Path, timeout: float,
-              label: str, heartbeat: Path | None = None) -> dict:
+              label: str, heartbeat: Path | None = None, *, wall_timeout_limit: int = 720) -> dict:
     """Own the child's PID before delivering cancellation; always kill/reap on error.
 
     Terminal reports preserve the actual wait4 exit status. The timeout is a hard
@@ -81,13 +81,17 @@ def run_child(command: list[str], out: Path, env: dict, cwd: Path, timeout: floa
     cpus = sorted(os.sched_getaffinity(0))[:2]
     if len(cpus) != 2:
         raise RuntimeError('Two available CPUs are required')
-    if not 0 < timeout <= 720:
-        raise ValueError('Child timeout must be positive and at most 720 seconds')
+    if type(wall_timeout_limit) is not int or wall_timeout_limit not in (720, 1020):
+        raise ValueError('Only the default720 or explicit1020 process cap is supported')
+    if (type(timeout) not in (int, float) or not math.isfinite(timeout) or
+            not 0 < timeout <= wall_timeout_limit):
+        raise ValueError('Child timeout must be finite, positive and within the explicitly selected cap')
     started = time.monotonic()
     child = None
     previous_handlers = {}
     result = {'status': 'not_started', 'command': command, 'cpu_affinity': cpus,
-              'wall_timeout_seconds': timeout, 'timeout_triggered': False,
+              'wall_timeout_seconds': timeout, 'wall_timeout_limit_seconds': wall_timeout_limit,
+              'timeout_triggered': False,
               'wrapper_received_signal': None, 'returncode': None,
               'native_exit_observed': False, 'max_rss_kib': None}
     previous_mask = signal.pthread_sigmask(signal.SIG_BLOCK, STOP_SIGNALS)

@@ -1,0 +1,11 @@
+# K recovery: native source passed; neutral source-form gate accepted
+
+Blender4.5.14 build, fresh verification/contact and two fresh original renders all child0; wrapper0,5.500616038s,347412KiB peak childRSS,CPU2. Original30-second/1.5GiB/200000-byte caps retained. All828 historical/prepared/failure identities and current preparation/result snapshots stayed unchanged.
+
+The136389-byte editable source at source-assets/cloud-bank58/revision-k/recovery-01/authored_envelope58k.blend has SHA25616eeb67dce6e89f05562b67f869c77dd7882942585241a2648ae46ff48012bee. Actual saved readback194V/384T/576edges,one closed genus-zero shell; same6Empty controls, persistent recipe, fixed E cameras/light/material and original group_signature traversal pass. Full native semantic audit checks1164 exact float32 weight slots (386 stored memberships) and1156 FACE/POINT values. Fresh images0/libraries0/no stronglinked IDs. Actual contact test2601 AABB pairs,zero coplanar pairs/no nonindexed contacts,original1e-8m.
+
+Original front319392B at836×471 and side/back461484B at836×586 are retained without edits. I and an independent reviewer viewed them with1216. Accept the narrow neutral source-form gate: one continuous swollen broad-faceted cloud mass, unequal crowns and substantial connecting saddles; J2's stacked roofs/shelves and disconnected-looking joins are gone. The central crown still has a slightly upright flat-cap profile and the humps feel somewhat aligned. These remain refinements for a controlled import/context trial, not a reason to discard this source architecture.
+
+The original machine reports keep visual_acceptance=false; the separate SOURCE_FORM_REVIEW.json records this explicitly scoped manual decision. No world integration, composition/weather, entire1216 scene, hardwareGPU or full-GOAL acceptance follows. Source-only faithful GLB/Godot import preparation can proceed in a separate minimal project before any placement; no four-root/world rollout has occurred.
+
+This proves the repaired phase-ordered native authoring and complete save/reload path passed. It supports the lifetime explanation but does not prove the exact originalSIGSEGV cause. Original failed K run/recipe/scripts/crash remain immutable; no failed report was relabeled.

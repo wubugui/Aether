@@ -57,6 +57,10 @@ var active := false
 var inventory_ready := false
 var passed := false
 var start_wall := 0
+var observation_budget_seconds := 600
+var observation_budget_valid := false
+var settle_wait_budget_seconds := 15
+var settle_budget_valid := false
 var source_hashes := {}
 var failures := []
 var checks := []
@@ -93,16 +97,16 @@ var wall_deadline_exceeded_at := {}
 var verification_completed_wall_seconds: Variant = null
 
 func wall_deadline_snapshot() -> Dictionary:
- return {"limit_seconds":MAX_WALL_SECONDS,"clock":"Time.get_ticks_msec monotonic; no supplied/mock clock","start_scope":"run entry before initial source hashes, scene load, fixture synchronization, inventory and preflight","completion_scope":"Final native check after report write/hash and receipt flush/rename/hash, before emitting terminal clock metadata and cleanup; actual child exit retains the unchanged 720s limit","completion_receipt":"orbit-completion.json","checks":wall_deadline_checks,"last_check":wall_deadline_last.duplicate(true),"first_exceeded_at":wall_deadline_exceeded_at.duplicate(true),"verification_completed_wall_seconds":verification_completed_wall_seconds}
+ return {"limit_seconds":observation_budget_seconds,"historical_performance_limit_seconds":MAX_WALL_SECONDS,"clock":"Time.get_ticks_msec monotonic; no supplied/mock clock","start_scope":"run entry before initial source hashes, scene load, fixture synchronization, inventory and preflight","completion_scope":"Final native check after report write/hash and receipt flush/rename/hash, before emitting terminal clock metadata and cleanup; actual child exit is separately bounded by the wrapper (default720s; explicit long observation1020s)","completion_receipt":"orbit-completion.json","checks":wall_deadline_checks,"last_check":wall_deadline_last.duplicate(true),"first_exceeded_at":wall_deadline_exceeded_at.duplicate(true),"verification_completed_wall_seconds":verification_completed_wall_seconds}
 
 func within_wall_deadline(boundary: String, completing: bool=false) -> bool:
- # A late process sample cannot license an expensive phase to finish after600.
+ # A late process sample cannot license an expensive phase to finish after the requested finite budget.
  # The only clock is the actual native monotonic clock, never an argument.
  var elapsed_msec: int=Time.get_ticks_msec()-start_wall
  wall_deadline_checks+=1
  wall_deadline_last={"boundary":boundary,"elapsed_msec":elapsed_msec,"wall_seconds":elapsed_msec/1000.0}
  if completing: verification_completed_wall_seconds=elapsed_msec/1000.0
- if elapsed_msec>=0 and elapsed_msec<=MAX_WALL_SECONDS*1000 and wall_deadline_exceeded_at.is_empty(): return true
+ if elapsed_msec>=0 and elapsed_msec<=observation_budget_seconds*1000 and wall_deadline_exceeded_at.is_empty(): return true
  if wall_deadline_exceeded_at.is_empty(): wall_deadline_exceeded_at=wall_deadline_last.duplicate(true)
  passed=false
  if not failed:
@@ -127,8 +131,22 @@ func progress(force: bool=false) -> void:
  if DirAccess.rename_absolute(output.path_join("orbit-progress.json.tmp"),output.path_join("orbit-progress.json"))!=OK: push_error("Cannot replace orbit diagnostic heartbeat")
 
 func _initialize() -> void:
+ var budget_arguments:=0
+ var settle_arguments:=0
  for arg in OS.get_cmdline_user_args():
   if arg.begins_with("--output-dir="): output=arg.trim_prefix("--output-dir=")
+  if arg.begins_with("--observation-budget-seconds="):
+   budget_arguments+=1
+   var value:=arg.trim_prefix("--observation-budget-seconds=")
+   observation_budget_valid=value in ["600","900"]
+   if observation_budget_valid: observation_budget_seconds=int(value)
+  if arg.begins_with("--settle-wait-budget-seconds="):
+   settle_arguments+=1
+   var value:=arg.trim_prefix("--settle-wait-budget-seconds=")
+   settle_budget_valid=value in ["15","30"]
+   if settle_budget_valid: settle_wait_budget_seconds=int(value)
+ observation_budget_valid=observation_budget_valid and budget_arguments==1
+ settle_budget_valid=settle_budget_valid and settle_arguments==1 and ((observation_budget_seconds==600 and settle_wait_budget_seconds==15) or (observation_budget_seconds==900 and settle_wait_budget_seconds==30))
  call_deferred("run")
 
 func vec(p: Vector3) -> Array:
@@ -141,7 +159,7 @@ func current_state() -> Dictionary:
 func report(complete: bool) -> void:
  var began:=telemetry.begin("full_report_write")
  if output.is_empty() or not DirAccess.dir_exists_absolute(output): return
- var result := {"version":"61-anchored-orbit-v6","wall_deadline":wall_deadline_snapshot(),"display_backend":DisplayServer.get_name(),"rendering_method":RenderingServer.get_current_rendering_method(),"rendering_driver":RenderingServer.get_current_rendering_driver_name(),"control_protocol":CONTROL_PROTOCOL,"sequence":sequence.snapshot(),"telemetry":telemetry.snapshot(),"complete":complete,"stage":stage,"failed":failed,"first_item_runtime_passed":passed and complete and not failed,"fixture_excluded_from_distance":fixture,"checks":checks,"failures":failures,"events":events,"delivered":delivered,"process_samples":process_samples,"audited_segments":audited,"preflight":preflight,"captures":captures,"near_plane_envelope_radius_m":sphere.radius,"actual_camera_path_m":process_path,"actual_ship_path_after_fixture_m":ship_path,"flight_attempted":false,"short_flight_passed":false,"nearshore_pixel_coverage_passed":false,"manual_normal_material_png_review_required":true,"nearest_ray_scope_m":LOCAL_RAY_METERS,"gui_focus_verified":false,"hardware_gpu_acceptance":false,"reference_visual_acceptance":false,"total_acceptance_passed":false,"scene_saved":false,"state":current_state(),"visual_inventory":visual.rows if visual!=null else [],"visual_inventory_failures":visual.failures if visual!=null else [],"visual_triangle_count":visual.triangle_count if visual!=null else 0,"visual_method":"Actual static indexed surfaces in an isolated physics query space, classified shader and animated ship conservative envelopes. Envelope hits do not imply pixel visibility or universal live resource freezing.","live_resource_identity_scope":LIVE_RESOURCE_IDENTITY_SCOPE,"source_count":source_hashes.size()}
+ var result := {"version":"61-anchored-orbit-v6","requested_observation_budget_seconds":observation_budget_seconds,"settle_wait_budget_seconds":settle_wait_budget_seconds,"strict_600_performance_authority":"Completion receipt and final terminal wall only; this report precedes those clock observations","wall_deadline":wall_deadline_snapshot(),"display_backend":DisplayServer.get_name(),"rendering_method":RenderingServer.get_current_rendering_method(),"rendering_driver":RenderingServer.get_current_rendering_driver_name(),"control_protocol":CONTROL_PROTOCOL,"sequence":sequence.snapshot(),"telemetry":telemetry.snapshot(),"complete":complete,"stage":stage,"failed":failed,"first_item_runtime_passed":passed and complete and not failed,"fixture_excluded_from_distance":fixture,"checks":checks,"failures":failures,"events":events,"delivered":delivered,"process_samples":process_samples,"audited_segments":audited,"preflight":preflight,"captures":captures,"near_plane_envelope_radius_m":sphere.radius,"actual_camera_path_m":process_path,"actual_ship_path_after_fixture_m":ship_path,"flight_attempted":false,"short_flight_passed":false,"nearshore_pixel_coverage_passed":false,"manual_normal_material_png_review_required":true,"nearest_ray_scope_m":LOCAL_RAY_METERS,"gui_focus_verified":false,"hardware_gpu_acceptance":false,"reference_visual_acceptance":false,"total_acceptance_passed":false,"scene_saved":false,"state":current_state(),"visual_inventory":visual.rows if visual!=null else [],"visual_inventory_failures":visual.failures if visual!=null else [],"visual_triangle_count":visual.triangle_count if visual!=null else 0,"visual_method":"Actual static indexed surfaces in an isolated physics query space, classified shader and animated ship conservative envelopes. Envelope hits do not imply pixel visibility or universal live resource freezing.","live_resource_identity_scope":LIVE_RESOURCE_IDENTITY_SCOPE,"source_count":source_hashes.size()}
  var file := FileAccess.open(output.path_join("orbit-report.json.tmp"),FileAccess.WRITE)
  if file==null: push_error("Cannot write orbit report"); return
  file.store_string(JSON.stringify(result,"  "));file.flush();file.close()
@@ -359,6 +377,12 @@ func wait_event_audited() -> bool:
   await witness.physics_checked
  return false
 
+func within_settle_budget(began: int, boundary: String) -> bool:
+ var elapsed_msec:=Time.get_ticks_msec()-began
+ if elapsed_msec>=0 and elapsed_msec<=settle_wait_budget_seconds*1000: return true
+ abort("Native orbit smoothing exceeded selected settle wait budget",{"boundary":boundary,"elapsed_msec":elapsed_msec,"settle_wait_budget_seconds":settle_wait_budget_seconds})
+ return false
+
 func wait_settled() -> bool:
  var began:=Time.get_ticks_msec()
  var stable:=0
@@ -366,14 +390,15 @@ func wait_settled() -> bool:
   await witness.processed
   if failed: return false
   if not within_wall_deadline("settle_after_process"): return false
+  if not within_settle_budget(began,"after_process"): return false
   if game.camera.global_position.distance_to(native_desired(game.orbit.x))<=SETTLE_METERS: stable+=1
   else: stable=0
   if stable>=2:
    await witness.physics_checked
    if not within_wall_deadline("settle_after_physics"): return false
+   if not within_settle_budget(began,"after_physics_before_success"): return false
    if not failed and pending.is_empty(): return true
-  if Time.get_ticks_msec()-began>15000:
-   abort("Native orbit smoothing did not settle within15s");return false
+  if not within_settle_budget(began,"before_next_process_wait"): return false
  return false
 
 func local_rays() -> Array:
@@ -453,7 +478,7 @@ func finish() -> void:
  within_wall_deadline("finish_before_cleanup",true)
  # This clock is sampled AFTER the receipt flush/rename/hash. It is deliberately
  # recorded outside that receipt, rather than labelling a pre-write tick post-write.
- print("ORBIT61_TERMINAL_WALL ",JSON.stringify({"version":"orbit61-terminal-wall-v1","first_item_runtime_passed":passed and not failed,"native_report_sha256":report_sha,"completion_receipt_sha256":receipt_sha,"wall_deadline":wall_deadline_snapshot()}))
+ print("ORBIT61_TERMINAL_WALL ",JSON.stringify({"version":"orbit61-terminal-wall-v1","requested_observation_budget_seconds":observation_budget_seconds,"settle_wait_budget_seconds":settle_wait_budget_seconds,"strict_600_performance_passed":strict_600_performance_passed(),"first_item_runtime_passed":passed and not failed,"native_report_sha256":report_sha,"completion_receipt_sha256":receipt_sha,"wall_deadline":wall_deadline_snapshot()}))
  if is_instance_valid(game):
   for i in range(3): await process_frame
   await RenderingServer.frame_post_draw
@@ -462,12 +487,15 @@ func finish() -> void:
  for i in range(8): await process_frame
  quit(0 if passed else 1)
 
+func strict_600_performance_passed() -> bool:
+ return passed and not failed and verification_completed_wall_seconds!=null and verification_completed_wall_seconds>=0 and verification_completed_wall_seconds<=MAX_WALL_SECONDS
+
 func write_completion_receipt(report_sha: String) -> void:
  var receipt:=FileAccess.open(output.path_join("orbit-completion.json.tmp"),FileAccess.WRITE)
  if receipt==null:
   push_error("Cannot write orbit completion receipt");passed=false
  else:
-  receipt.store_string(JSON.stringify({"version":"orbit61-completion-v1","first_item_runtime_passed":passed and not failed,"native_report_sha256":report_sha,"wall_deadline":wall_deadline_snapshot()}));receipt.flush();receipt.close()
+  receipt.store_string(JSON.stringify({"version":"orbit61-completion-v1","requested_observation_budget_seconds":observation_budget_seconds,"settle_wait_budget_seconds":settle_wait_budget_seconds,"strict_600_performance_passed":strict_600_performance_passed(),"first_item_runtime_passed":passed and not failed,"native_report_sha256":report_sha,"wall_deadline":wall_deadline_snapshot()}));receipt.flush();receipt.close()
   if DirAccess.rename_absolute(output.path_join("orbit-completion.json.tmp"),output.path_join("orbit-completion.json"))!=OK:
    push_error("Cannot replace orbit completion receipt");passed=false
 
@@ -493,6 +521,7 @@ func paused_fixture_unchanged() -> bool:
 
 func run() -> void:
  start_wall=Time.get_ticks_msec()
+ if not observation_budget_valid or not settle_budget_valid: push_error("Require one explicit matching600/15 or900/30 observation/settle budget pair");quit(2);return
  if output.is_empty() or not output.is_absolute_path() or DirAccess.dir_exists_absolute(output): push_error("Use new absolute output directory");quit(2);return
  if DirAccess.make_dir_recursive_absolute(output)!=OK: quit(2);return
  if not check(DisplayServer.get_name()!="headless","Actual display required"): return

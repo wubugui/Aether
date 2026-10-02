@@ -1,0 +1,59 @@
+{
+  "status": "source_bounds_ready_pending_native_rock_and_vertex_read",
+  "raw_report_sha256": "62482b889a2dc6c5687274748397f5d4bf9da3be6898b8fbca6d372a5a2452bf",
+  "classification_sha256": "24341762139c49ae788aff4417e65ebfe90591312e6cc1d890ce9bb57def4186",
+  "saved_groups_requeried": 775,
+  "saved_instances_requeried": 57797,
+  "vegetation_instances_by_actual_class": {
+    "poplar": 12811,
+    "oak": 27280,
+    "rock": 7395,
+    "bush": 3833,
+    "pine": 3478
+  },
+  "visual_query_count": 676,
+  "visual_design_count": 575,
+  "combined_query_count": 676,
+  "combined_design_count": 575,
+  "source_proxy_query_count": 471,
+  "proxy_only_query_count": 0,
+  "protected_saved_instance_counts": {
+    "coast61_-5_-5": 81,
+    "coast56_-4_-4": 243
+  },
+  "design_box": [
+    -3048.0,
+    -2040.0,
+    -5160.0,
+    -3770.0
+  ],
+  "query_box_with_40m": [
+    -3088.0,
+    -2000.0,
+    -5200.0,
+    -3730.0
+  ],
+  "scope": "All 775 saved groups streamed once; 773 vegetation groups use source metadata. No full-world buffer output or world instantiation.",
+  "tree_envelope": "Affine transform of enclosing local box x,z=+-max(2.4,float32(2.4)), y=0..11. Directed binary64 outer bounds union exact native-style float32 bounds. Conservative capsule envelope; not exact capsule contact.",
+  "rock_first_imported_faces_observed": false,
+  "native_visual_vertex_bounds_observed": false,
+  "rock_pending_policy": "No rock proxy clearance claim until native first-mesh faces exist; visual-only rock entries provisional.",
+  "runtime_activation_limits": {
+    "focus_cells": "3x3 neighborhood",
+    "horizontal_root_distance_max": 350,
+    "vertical_root_difference_max": 150,
+    "refresh_after_seconds": 0.4,
+    "active_colliders_observed": false
+  },
+  "original_unproved_flags_unchanged": {
+    "all_occupancy_complete": false,
+    "runtime_generated_entities_proved": false,
+    "runtime_model_scene_and_collision_proved": false,
+    "shader_deformation_envelopes_proved": false,
+    "road_width_proved": false,
+    "visual_acceptance": false,
+    "vertex_payload_bounds_independently_recomputed": false
+  },
+  "terrain_changed": false,
+  "deletion_authorized": false
+}

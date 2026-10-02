@@ -51,6 +51,22 @@ SUPPORT = load_module('orbit61_wrapper_support', HERE / 'continuous-v6/wrapper_s
 atomic_json = SUPPORT.atomic_json
 
 
+def validate_budgets(observation_seconds: int, wall_timeout: float) -> None:
+    # Two named finite experiments, never an arbitrary deadline relaxation.
+    if type(observation_seconds) is not int or observation_seconds not in (600, 900):
+        raise ValueError('Observation budget must be the explicit integer 600 or 900')
+    if (type(wall_timeout) not in (int, float) or not math.isfinite(wall_timeout) or
+            not 0 < wall_timeout <= observation_seconds + 120):
+        raise ValueError('Outer process timeout must be finite, positive and within observation +120 seconds')
+    if observation_seconds == 900 and wall_timeout != 1020:
+        raise ValueError('The separate 900-second observation requires the explicit 1020-second outer bound')
+
+
+def expected_settle_seconds(observation_seconds: int) -> int:
+    validate_budgets(observation_seconds, observation_seconds + 120)
+    return 30 if observation_seconds == 900 else 15
+
+
 def dependency_validation() -> tuple[dict, dict]:
     guard = DEPENDENCY_HOME / 'dependency_guard62.py'
     if digest(guard) != DEPENDENCY_GUARD_SHA:
@@ -159,13 +175,16 @@ def static_checks() -> dict:
         'flight_attempted': False, 'scope': 'No files written by this static check. Source assertions and geometry arithmetic do not establish GDScript parsing or runtime behavior.'}
 
 
-def child_run(command: list[str], out: Path, env: dict, timeout: float, label: str) -> dict:
+def child_run(command: list[str], out: Path, env: dict, timeout: float, label: str, observation_budget_seconds: int) -> dict:
+    validate_budgets(observation_budget_seconds, timeout)
     return SUPPORT.run_child(command, out, env, PROJECT, timeout, label,
-                             heartbeat=out / 'images/orbit-progress.json')
+                             heartbeat=out / 'images/orbit-progress.json',
+                             wall_timeout_limit=observation_budget_seconds + 120)
 
 
-def validate_completion(out: Path, report_sha: str) -> dict:
+def validate_completion(out: Path, report_sha: str, expected_observation_seconds: int) -> dict:
     """Require real-native post-receipt wall evidence, independently of the last sample."""
+    validate_budgets(expected_observation_seconds, expected_observation_seconds + 120)
     receipt_path = out / 'images/orbit-completion.json'
     receipt = SUPPORT.strict_json(receipt_path)
     prefix = 'ORBIT61_TERMINAL_WALL '
@@ -192,6 +211,10 @@ def validate_completion(out: Path, report_sha: str) -> dict:
                                       (terminal, 'orbit61-terminal-wall-v1', 'finish_before_cleanup')]:
         if (not isinstance(record, dict) or record.get('version') != version or
                 record.get('first_item_runtime_passed') is not True or
+                type(record.get('requested_observation_budget_seconds')) is not int or
+                record['requested_observation_budget_seconds'] != expected_observation_seconds or
+                type(record.get('settle_wait_budget_seconds')) is not int or
+                record['settle_wait_budget_seconds'] != expected_settle_seconds(expected_observation_seconds) or
                 record.get('native_report_sha256') != report_sha):
             raise ValueError('Incomplete or mismatched native wall evidence')
         wall = record.get('wall_deadline')
@@ -200,13 +223,15 @@ def validate_completion(out: Path, report_sha: str) -> dict:
         seconds = wall.get('verification_completed_wall_seconds')
         limit = wall.get('limit_seconds')
         last = wall.get('last_check')
-        if (type(limit) not in (int, float) or limit != 600 or
-                type(seconds) not in (int, float) or not math.isfinite(seconds) or not 0 <= seconds <= 600 or
+        if (type(limit) not in (int, float) or limit != expected_observation_seconds or
+                type(seconds) not in (int, float) or not math.isfinite(seconds) or not 0 <= seconds <= expected_observation_seconds or
                 wall.get('first_exceeded_at') != {} or not isinstance(last, dict) or
                 last.get('boundary') != boundary or type(last.get('elapsed_msec')) is not int or
                 last['elapsed_msec'] < 0 or seconds != last['elapsed_msec'] / 1000 or
                 type(last.get('wall_seconds')) not in (int, float) or last['wall_seconds'] != seconds):
-            raise ValueError('Invalid, inconsistent or exceeded native 600-second completion wall')
+            raise ValueError('Invalid, inconsistent or exceeded requested native completion wall')
+        if record.get('strict_600_performance_passed') is not (seconds <= 600):
+            raise ValueError('Strict 600-second performance result is missing or inconsistent')
     if (terminal.get('completion_receipt_sha256') != digest(receipt_path) or
             terminal['wall_deadline']['verification_completed_wall_seconds'] <
             receipt['wall_deadline']['verification_completed_wall_seconds']):
@@ -221,6 +246,9 @@ def execute(args, out: Path, preparation: dict) -> dict:
               'godot_parse_passed': False, 'flight_attempted': False,
               'nearshore_pixel_coverage_passed': False,
               'actual_png_manual_review_required': bool(args.run_renderer),
+              'requested_observation_budget_seconds': getattr(args, 'observation_budget', None),
+              'outer_process_timeout_seconds': args.wall_timeout,
+              'strict_600_performance_passed': False,
               'wrapper_received_signal': None, 'input_aftercheck_attempted': False,
               'output': str(out)}
     before = {}
@@ -234,6 +262,10 @@ def execute(args, out: Path, preparation: dict) -> dict:
     previous = {sig: signal.signal(sig, cancel_setup) for sig in (signal.SIGINT, signal.SIGTERM)}
     try:
         atomic_json(out / 'wrapper-report.json', result)
+        validate_budgets(args.observation_budget, args.wall_timeout)
+        if args.observation_budget == 900 and not args.run_renderer:
+            raise ValueError('The long observation is only for an explicit renderer run')
+        result['settle_wait_budget_seconds'] = expected_settle_seconds(args.observation_budget)
         before = source_manifest()
         atomic_json(out / 'input-sha256.json', before)
         atomic_json(out / 'source-preparation.json', preparation)
@@ -259,7 +291,9 @@ def execute(args, out: Path, preparation: dict) -> dict:
                 raise RuntimeError('Actual display required; no headless fallback')
             jobs = [('renderer', [str(GODOT), '--path', str(PROJECT), '--rendering-method',
                      'gl_compatibility', '--audio-driver', 'Dummy', '--disable-vsync', '--script',
-                     str(SCRIPT), '--', f'--output-dir={out / "images"}'])]
+                     str(SCRIPT), '--', f'--output-dir={out / "images"}',
+                     f'--observation-budget-seconds={args.observation_budget}',
+                     f'--settle-wait-budget-seconds={expected_settle_seconds(args.observation_budget)}'])]
         else:
             jobs = [(script.stem, [str(GODOT), '--path', str(PROJECT), '--headless', '--check-only',
                      '--script', str(script)]) for script in
@@ -272,7 +306,7 @@ def execute(args, out: Path, preparation: dict) -> dict:
             if source_manifest() != before:
                 raise RuntimeError('Inputs changed before child admission')
             result['status'] = 'running'
-            row = child_run(command, out, env, args.wall_timeout, label)
+            row = child_run(command, out, env, args.wall_timeout, label, args.observation_budget)
             result['processes'].append(row)
             if row.get('wrapper_received_signal') is not None:
                 result['wrapper_received_signal'] = row['wrapper_received_signal']
@@ -286,7 +320,15 @@ def execute(args, out: Path, preparation: dict) -> dict:
             runtime_path = out / 'images/orbit-report.json'
             runtime = SUPPORT.strict_json(runtime_path)
             result['native_report_sha256'] = digest(runtime_path)
-            result['native_completion'] = validate_completion(out, result['native_report_sha256'])
+            if (type(runtime.get('requested_observation_budget_seconds')) is not int or
+                    runtime['requested_observation_budget_seconds'] != args.observation_budget or
+                    type(runtime.get('settle_wait_budget_seconds')) is not int or
+                    runtime['settle_wait_budget_seconds'] != expected_settle_seconds(args.observation_budget) or
+                    not isinstance(runtime.get('wall_deadline'), dict) or
+                    type(runtime['wall_deadline'].get('limit_seconds')) not in (int, float) or
+                    runtime['wall_deadline']['limit_seconds'] != args.observation_budget):
+                raise ValueError('Native report does not match requested observation budget')
+            result['native_completion'] = validate_completion(out, result['native_report_sha256'], args.observation_budget)
             result['verification_completed_wall_seconds'] = result['native_completion']['terminal']['wall_deadline']['verification_completed_wall_seconds']
             success = success and runtime.get('complete') is True and runtime.get('first_item_runtime_passed') is True
         result.update(status='finished', passed=bool(success))
@@ -313,6 +355,9 @@ def execute(args, out: Path, preparation: dict) -> dict:
         if result['wrapper_received_signal'] is not None:
             result['passed'] = False
         result['first_item_runtime_passed'] = bool(args.run_renderer and result['passed'])
+        result['strict_600_performance_passed'] = bool(
+            result['first_item_runtime_passed'] and
+            result['native_completion']['terminal']['strict_600_performance_passed'])
         result['godot_parse_passed'] = bool(args.parse_only and result['passed'])
         try:
             atomic_json(out / 'wrapper-report.json', result)
@@ -329,10 +374,16 @@ def main() -> int:
     mode.add_argument('--static-only', action='store_true')
     mode.add_argument('--parse-only', action='store_true')
     mode.add_argument('--run-renderer', action='store_true')
+    parser.add_argument('--observation-budget', type=int, choices=(600, 900), default=600,
+                        help='600 preserves the original experiment; 900 is a separate longer observation, never a 600-second performance pass')
     parser.add_argument('--wall-timeout', type=float, default=720)
     args = parser.parse_args()
-    if not 0 < args.wall_timeout <= 720:
-        parser.error('--wall-timeout must be positive and at most the original 720 seconds')
+    try:
+        validate_budgets(args.observation_budget, args.wall_timeout)
+        if args.observation_budget == 900 and not args.run_renderer:
+            raise ValueError('The long observation is only for an explicit renderer run')
+    except ValueError as exc:
+        parser.error(str(exc))
     preparation = static_checks()
     if not args.parse_only and not args.run_renderer:
         print(json.dumps(preparation, indent=2))
