@@ -1,0 +1,111 @@
+{
+  "status": "wrapper_exception",
+  "mode": "renderer",
+  "processes": [
+    {
+      "status": "finished",
+      "command": [
+        "/workspace/scratch/a29d03198654/tools-feiting/Godot_v4.5.1-stable_linux.x86_64",
+        "--path",
+        "/workspace/scratch/a29d03198654/Aether/candidates/round40-exclusive-20260930/project",
+        "--rendering-method",
+        "gl_compatibility",
+        "--audio-driver",
+        "Dummy",
+        "--disable-vsync",
+        "--script",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/coast61-nearbay-orbit/verify_orbit61.gd",
+        "--",
+        "--output-dir=/workspace/scratch/a29d03198654/Aether/cloud-evidence/nearbay61-orbit-renderer-20261002T070230Z-qx75unzy/images"
+      ],
+      "cpu_affinity": [
+        0,
+        1
+      ],
+      "wall_timeout_seconds": 720,
+      "timeout_triggered": false,
+      "wrapper_received_signal": null,
+      "returncode": 1,
+      "native_exit_observed": true,
+      "max_rss_kib": 2670236,
+      "pid": 155995,
+      "signal": null,
+      "wall_seconds": 612.1321546010004
+    }
+  ],
+  "sources_unchanged": true,
+  "passed": false,
+  "first_item_runtime_passed": false,
+  "godot_parse_passed": false,
+  "flight_attempted": false,
+  "nearshore_pixel_coverage_passed": false,
+  "actual_png_manual_review_required": true,
+  "wrapper_received_signal": null,
+  "input_aftercheck_attempted": true,
+  "output": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/nearbay61-orbit-renderer-20261002T070230Z-qx75unzy",
+  "userdata_root": "/workspace/scratch/a29d03198654/tools-feiting/nearbay61-orbit-9aipu20a",
+  "expected_processes": 1,
+  "dependency_guard_before": {
+    "status": "frozen_dependency_identities_verified",
+    "review_gzip_sha256": "e39ef6863849f6034f9c7fb3efeb97a191e39d3cacc9fdab9903692a832fe722",
+    "review_json_sha256": "4aa3634f3ec1d1e380d53d724ffa707af4bf66b7136c0bd5fc9592d4d9e80601",
+    "reviewed_closure_files": 1483,
+    "reviewed_closure_bytes": 133839275,
+    "exact_prior_manifest_delta_files": 51,
+    "prior_manifest_sha256": "3329d137d9c43c0fbd2f43f8ca52c4529b8590d891c5fca6fdd376fe3c2b1db9",
+    "startup_control_identities_verified": [
+      "project.godot",
+      "override.cfg",
+      ".godot/global_script_class_cache.cfg",
+      ".godot/extension_list.cfg",
+      ".godot/uid_cache.bin"
+    ],
+    "reviewed_absent_controls_still_absent": [
+      "override.cfg",
+      ".godot/extension_list.cfg"
+    ],
+    "unreviewed_dependency_remap_or_import_sidecars": [],
+    "packaged_auditors_match_frozen_embedded_sources": true,
+    "project_autoload_empty": true,
+    "global_script_class_cache_empty": true,
+    "uid_cache_matches_review": true,
+    "godot_invoked": false,
+    "native_parse_passed": false,
+    "native_collection_passed": false,
+    "all_occupancy_complete": false
+  },
+  "logged_errors": [],
+  "native_report_sha256": "e749e678bd297c9114d0b83819ef27a2c110123494c38b65cbfad311422a0944",
+  "exception": "ValueError('Incomplete or mismatched native wall evidence')",
+  "dependency_guard_after": {
+    "status": "frozen_dependency_identities_verified",
+    "review_gzip_sha256": "e39ef6863849f6034f9c7fb3efeb97a191e39d3cacc9fdab9903692a832fe722",
+    "review_json_sha256": "4aa3634f3ec1d1e380d53d724ffa707af4bf66b7136c0bd5fc9592d4d9e80601",
+    "reviewed_closure_files": 1483,
+    "reviewed_closure_bytes": 133839275,
+    "exact_prior_manifest_delta_files": 51,
+    "prior_manifest_sha256": "3329d137d9c43c0fbd2f43f8ca52c4529b8590d891c5fca6fdd376fe3c2b1db9",
+    "startup_control_identities_verified": [
+      "project.godot",
+      "override.cfg",
+      ".godot/global_script_class_cache.cfg",
+      ".godot/extension_list.cfg",
+      ".godot/uid_cache.bin"
+    ],
+    "reviewed_absent_controls_still_absent": [
+      "override.cfg",
+      ".godot/extension_list.cfg"
+    ],
+    "unreviewed_dependency_remap_or_import_sidecars": [],
+    "packaged_auditors_match_frozen_embedded_sources": true,
+    "project_autoload_empty": true,
+    "global_script_class_cache_empty": true,
+    "uid_cache_matches_review": true,
+    "godot_invoked": false,
+    "native_parse_passed": false,
+    "native_collection_passed": false,
+    "all_occupancy_complete": false
+  },
+  "changed_inputs": [],
+  "input_recheck_errors": []
+}
