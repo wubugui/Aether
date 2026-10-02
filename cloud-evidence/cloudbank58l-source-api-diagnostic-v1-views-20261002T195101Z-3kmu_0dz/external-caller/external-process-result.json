@@ -1,0 +1,89 @@
+{
+  "stage": "views",
+  "acceptance_mode": "api_consistency_isolated_diagnostic_v1",
+  "full_native_acceptance": false,
+  "historical_default_corner_geometry_passed": false,
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/source-api-diagnostic-v1/run58l_api_diagnostic.py",
+    "--run-approved",
+    "views"
+  ],
+  "cwd": "/workspace/scratch/a29d03198654/Aether",
+  "publication_commit": "aa3c54c378eea644968bf0a95532f1300a6d3a51",
+  "process_exit_observed": true,
+  "actual_exit_code": 0,
+  "timeout": false,
+  "cleanup": [],
+  "views_chain_verified": true,
+  "utc_started": "2026-10-02T19:50:58.584769+00:00",
+  "started_monotonic": 110053.793734439,
+  "supervisor_pid": 5,
+  "ended_monotonic": 110098.291282119,
+  "wall_seconds": 44.497547680002754,
+  "remaining_owned_pids": [],
+  "ownership_history": [
+    {
+      "pid": 2,
+      "state": "R",
+      "ppid": 1,
+      "pgid": 1,
+      "sid": 1,
+      "starttime": 11005375,
+      "rss_kib": 14080,
+      "reason": "supervisor"
+    },
+    {
+      "pid": 5,
+      "state": "R",
+      "ppid": 2,
+      "pgid": 5,
+      "sid": 5,
+      "starttime": 11005379,
+      "rss_kib": 0,
+      "reason": "actual_external_Popen"
+    }
+  ],
+  "cleanup_signals": [],
+  "utc_process_observation_complete": "2026-10-02T19:51:43.082789+00:00",
+  "supervisor_terminal_sha256": "cc27f52c6d7773e256e86022e1dd9ac421ec02e6880e089ddf654b2802eb45f4",
+  "source_sha256": "7e72984235a84e63f5275f0287267656a8b11eaa651173856ae2beaa54ac5bd7",
+  "source_bytes": 319519,
+  "run": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/cloudbank58l-source-api-diagnostic-v1-views-20261002T195101Z-3kmu_0dz",
+  "views_render_stages": 4,
+  "images": [
+    {
+      "view": "01-original61-front",
+      "bytes": 764893,
+      "sha256": "3adacdda4c26e5612190742a403c86b0872d0c12b0ad39acd98bfad3d00100fa",
+      "width": 1179,
+      "height": 664,
+      "crc_and_scanlines_validated": true
+    },
+    {
+      "view": "02-k-trial-front",
+      "bytes": 764890,
+      "sha256": "24ee8921db730e3fd8877fa1874a4d0bc0f72d882efba5d186f6bf43d0f54687",
+      "width": 1179,
+      "height": 664,
+      "crc_and_scanlines_validated": true
+    },
+    {
+      "view": "03-k-fixed-side-back",
+      "bytes": 856438,
+      "sha256": "f1315d93a54a6ccb37c61b7180dbbc44822c0fd284b13200a7a44382ad771891",
+      "width": 1179,
+      "height": 664,
+      "crc_and_scanlines_validated": true
+    },
+    {
+      "view": "04-k-fixed-near",
+      "bytes": 837671,
+      "sha256": "3316d83b822930067b16437f184aee1390e0215e672df7c782a7d19e1b799092",
+      "width": 1179,
+      "height": 664,
+      "crc_and_scanlines_validated": true
+    }
+  ]
+}

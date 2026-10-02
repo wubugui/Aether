@@ -1,0 +1,40 @@
+{
+  "status": "finished",
+  "command": [
+    "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+    "--factory-startup",
+    "--disable-autoexec",
+    "-b",
+    "-t",
+    "2",
+    "--python-exit-code",
+    "1",
+    "--python",
+    "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/source-api-diagnostic-v1/native58l.py",
+    "--",
+    "--mode",
+    "render",
+    "--out",
+    "/workspace/scratch/a29d03198654/Aether/cloud-evidence/cloudbank58l-source-api-diagnostic-v1-views-20261002T195101Z-3kmu_0dz/outputs",
+    "--admission",
+    "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/source-api-diagnostic-v1/views-attempt.json",
+    "--view",
+    "02-k-trial-front"
+  ],
+  "cpu_affinity": [
+    0,
+    1
+  ],
+  "wall_timeout_seconds": 27,
+  "wall_timeout_limit_seconds": 720,
+  "timeout_triggered": false,
+  "wrapper_received_signal": null,
+  "returncode": 0,
+  "native_exit_observed": true,
+  "max_rss_kib": 329356,
+  "rss_limit_triggered": false,
+  "max_aggregate_observed_rss_kib": 385044,
+  "pid": 26,
+  "signal": null,
+  "wall_seconds": 5.049636505995295
+}
