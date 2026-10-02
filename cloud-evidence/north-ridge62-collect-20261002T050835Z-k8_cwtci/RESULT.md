@@ -1,0 +1,9 @@
+# First saved-native north intake: completed, strict classification failure
+
+Godot4.5.1 actual child exit2, wrapperexit1,11.940689892seconds,508364KiB peak, CPU2. No timeout or logged engine errors.1543 protected file identities unchanged; full1483dependency closure, exact51delta, project/UID/classcache and remap/startup absence checks passed before and after. This did not instantiate any scene node or enter/render/save a world.
+
+The complete report contains16 expectedterrain records,16 correspondingcollision records,172 savedSettlement identity entries,4 whole bounded entities intersecting the buffered query,3 transformed curve hulls and775 explicitly unresolvedMultiMesh groups. Existing SHA/resource/transform-bound position reuse remained separate from new border reads. These counts are not native-live occupancy clearance.
+
+The sole recorded issue is World/Ocean/SeaCollision/Shape, native WorldBoundaryShape3D, currently classified as unbounded_saved_shape. Therefore saved_data_read_complete andnative_collection_passed arefalse. Preserve the global collider; do not drop it or invent a finite box. Next collector revision must explicitly record its native plane, transformed equation and solid-side semantics, rejecting invalid/noninvertible transforms and continuing to reject unknown shapes. The first false result remains immutable.
+
+The historical northern12house claim is still unverified;172 is the complete saved catalog,4is the current bounded queryintersection set, andneither number independently establishes that claim. A separate identity/bounds reconciliation is in preparation.775MM placement, generated entities, road width and fulloccupancy remain unproved. The complete1211462B nativeJSON is losslessly stored with originalSHA/restoration map; raw original stays local. No terrain, houses, scatter, native source or visual acceptance was changed.

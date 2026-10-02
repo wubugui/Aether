@@ -1,0 +1,132 @@
+{
+  "status": "preparation_only_no_engine_run",
+  "entry": "res://scenes/candidate61-coast/Game61Coast.tscn",
+  "entry_sha256": "dff06de665e1fa1f6ab74ff3cdf4e91442e1ac322839a37718e799f0d7fa44d8",
+  "design_box": [
+    -3048,
+    -2040,
+    -5160,
+    -3770
+  ],
+  "query_box_with_40m": [
+    -3088,
+    -2000,
+    -5200,
+    -3730
+  ],
+  "target_tiles": [
+    "Ground_-4_-7",
+    "Ground_-3_-7",
+    "Ground_-4_-6",
+    "Ground_-3_-6",
+    "Ground_-4_-5",
+    "Ground_-3_-5"
+  ],
+  "terrain_and_neighbor_names": [
+    "Ground_-2_-5",
+    "Ground_-2_-6",
+    "Ground_-2_-7",
+    "Ground_-3_-4",
+    "Ground_-3_-5",
+    "Ground_-3_-6",
+    "Ground_-3_-7",
+    "Ground_-3_-8",
+    "Ground_-4_-4",
+    "Ground_-4_-5",
+    "Ground_-4_-6",
+    "Ground_-4_-7",
+    "Ground_-4_-8",
+    "Ground_-5_-5",
+    "Ground_-5_-6",
+    "Ground_-5_-7"
+  ],
+  "reuse_geometry_tiles": [
+    "Ground_-2_-5",
+    "Ground_-2_-6",
+    "Ground_-2_-7",
+    "Ground_-3_-4",
+    "Ground_-3_-5",
+    "Ground_-3_-6",
+    "Ground_-3_-7",
+    "Ground_-4_-4",
+    "Ground_-4_-5",
+    "Ground_-4_-6",
+    "Ground_-4_-7",
+    "Ground_-5_-5",
+    "Ground_-5_-6",
+    "Ground_-5_-7"
+  ],
+  "reuse_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+  "reuse_source_sha256": "6ec57b72a831d6fa906a8d866c339909de55c9c42297a038dcd429b18d0c2b18",
+  "reuse_geometry_file": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/coast-boundary-readonly-20261001/native-coast.json",
+  "reuse_geometry_sha256": "886c5d04611e9971d5e50675dce438df5674ce3a66f2cfa5cb569a58d5d949d0",
+  "fixed_reference_views": {
+    "1131": {
+      "eye": [
+        -2600,
+        330,
+        -2350
+      ],
+      "target": [
+        -2969,
+        156,
+        -3263
+      ],
+      "fov": 55
+    },
+    "1347": {
+      "eye": [
+        -2600,
+        330,
+        -2350
+      ],
+      "target": [
+        -3033,
+        174,
+        -3238
+      ],
+      "fov": 55
+    }
+  },
+  "observed_viewport": [
+    1179,
+    664
+  ],
+  "reference_capture_evidence": "cloud-evidence/coast61-v2-verify-20261001T124815Z-czvc76_r/verify-report61.json",
+  "design_hypotheses_not_assets": {
+    "peaks_world_xyz": [
+      [
+        -2620,
+        720,
+        -4620
+      ],
+      [
+        -2830,
+        650,
+        -4880
+      ],
+      [
+        -2310,
+        580,
+        -4290
+      ]
+    ],
+    "heights_are_world_y": true,
+    "approved_edit_footprint": false
+  },
+  "expected_northern_houses_unverified": 12,
+  "execution": {
+    "wall_limit_seconds": 60,
+    "cpu_count": 2,
+    "no_instantiation": true,
+    "no_world": true,
+    "no_render": true,
+    "no_resource_save": true,
+    "no_runtime_generation_proof": true
+  },
+  "frozen_whole_tiles": [
+    "Ground_-4_-4",
+    "Ground_-5_-5"
+  ],
+  "protected_master": "blender/cliff_kit/cliff_eastern_plateau.blend"
+}

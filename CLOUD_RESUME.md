@@ -1,6 +1,15 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 05:04 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 05:10 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 05:10北山脊第一次只读原生采集：海平面分类门失败
+
+- collector解析已完整发布 **52d5d899104954a542074d60a6ccf079aed5031e**，tree **08ad9f83a8f204e66a6880a4c07f074cd53e8425**、parent7212d9e2；18blob新bare公共Git独立读回字节/SHA一致，本地9921030同树soft对齐
+- [首次SceneState采集终态](cloud-evidence/north-ridge62-collect-20261002T050835Z-k8_cwtci/RESULT.md)child2/wrapper1，11.94069秒/508364KiB/CPU2，无错误/超时；1543身份不变，全1483依赖闭包及启动/cache/缺席sidecar前后核过。不实例化world、不保存资源、无图
+- 完整读出16目标/邻接地形和16碰撞、172个保存Settlement身份目录、4个查询范围相交的完整有限对象、3条Curve控制包络；775MultiMesh组仍明确unresolved。旧数组复用按SHA/资源/变换条件，未重复导出全世界网格。北12屋旧说法尚未与新完整目录核定，不能把4或172当作其证明
+- 唯一issue是World/Ocean/SeaCollision/Shape的WorldBoundaryShape3D未分类无限形体，故saved_data_read_complete/native_collection_passed保持false。下一项显式记录无限海平面原始/世界方程、变换与实体半空间，不能丢弃或伪装成有限AABB；仍保留其它未知shape失败、775MM/运行时实体/道路宽度缺口
+- 1211462B完整nativeJSON无损gzip保存并核逐字节还原，原始SHA/命令在[intake-storage](cloud-evidence/north-ridge62-collect-20261002T050835Z-k8_cwtci/intake-storage.json)。旧失败原样保留，当前未改地形/屋/散布/源资产；即刻发布后再修改collector
+- v6源码准备的headless MM实例setter测试方式经官方4.5.1 Dummy源码核查不适用，正在改成真实小图形GL夹具并加稳健终态/完整依赖保护，尚未引擎运行，不造假通过。I粗面云体在纯数学可行性阶段，未Blender。E/F2八件Slack原问题仍待答，完整GOAL/硬件GPU验收未通过
 
 ## 05:04北山脊collector原生解析通过
 
