@@ -1,0 +1,12 @@
+{
+  "raw_path": "bindings62.json",
+  "raw_bytes": 5424728,
+  "raw_sha256": "a8b634d10c5e1dd57884f9a782b43853ffac9119a290609351c225ddb4df3c27",
+  "xz_path": "bindings62.json.xz",
+  "xz_bytes": 625288,
+  "xz_sha256": "b52110da9ebd287c8df7a62ba7f7b8612dbb9afd89c5f9a190a1feedb9863027",
+  "compression": "Python stdlib lzma preset6",
+  "lossless_roundtrip_verified": true,
+  "raw_local_retained": true,
+  "restore_command": "python -c \"import lzma,pathlib; p=pathlib.Path('bindings62.json'); assert not p.exists(); p.write_bytes(lzma.decompress(pathlib.Path('bindings62.json.xz').read_bytes()))\""
+}

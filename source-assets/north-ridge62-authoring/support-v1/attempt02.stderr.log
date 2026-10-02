@@ -1,0 +1,14 @@
+/workspace/scratch/a29d03198654/Aether/source-assets/north-ridge62-authoring/support-v1/solve_support62.py:68: DeprecationWarning: Arrays of 2-dimensional vectors are deprecated. Use arrays of 3-dimensional vectors instead. (deprecated in NumPy 2.0)
+  t=self.xz[i];a,b,c=t;den=np.cross(b-a,c-a);u=np.cross(np.array([x,z])-a,c-a)/den;v=np.cross(b-a,np.array([x,z])-a)/den
+/workspace/scratch/a29d03198654/Aether/source-assets/north-ridge62-authoring/support-v1/solve_support62.py:128: DeprecationWarning: Arrays of 2-dimensional vectors are deprecated. Use arrays of 3-dimensional vectors instead. (deprecated in NumPy 2.0)
+  a,b,c=t;den=np.cross(b-a,c-a);u=np.cross(p-a,c-a)/den;v=np.cross(b-a,p-a)/den;return min(u,v,1-u-v)>=-1e-10
+/workspace/scratch/a29d03198654/Aether/source-assets/north-ridge62-authoring/support-v1/solve_support62.py:177: DeprecationWarning: Arrays of 2-dimensional vectors are deprecated. Use arrays of 3-dimensional vectors instead. (deprecated in NumPy 2.0)
+  b=row['original_combined_bounds'];box=[b['min'][0]-8,b['max'][0]+8,b['min'][2]-8,b['max'][2]+8];need=max(0.,iv['lower_y_translation_m']-iv['upper_y_translation_m']);poly=np.array(plan['polygon_xz']);corners=np.array([[box[0],box[2]],[box[1],box[2]],[box[1],box[3]],[box[0],box[3]]]);inside=all(all(np.cross(q-p,x-p)>=0 for p,q in zip(poly,np.roll(poly,-1,axis=0)))for x in corners)
+solved 20 of 167
+solved 40 of 167
+solved 60 of 167
+solved 80 of 167
+solved 100 of 167
+solved 120 of 167
+solved 140 of 167
+solved 160 of 167

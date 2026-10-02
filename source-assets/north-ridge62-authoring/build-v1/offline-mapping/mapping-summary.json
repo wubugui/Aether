@@ -1,0 +1,550 @@
+{
+  "status": "four_pinned_mesh_offline_mapping_verified",
+  "engine_invoked": false,
+  "world_modified": false,
+  "targets": [
+    "Ground_-4_-7",
+    "Ground_-3_-7",
+    "Ground_-4_-6",
+    "Ground_-3_-6"
+  ],
+  "source_pins": {
+    "candidates/round40-exclusive-20260930/project/scenes/candidate53d-west/Game53dWest.tscn": {
+      "bytes": 103070885,
+      "sha256": "6ec57b72a831d6fa906a8d866c339909de55c9c42297a038dcd429b18d0c2b18"
+    },
+    "cloud-evidence/coast-boundary-readonly-20261001/native-coast.json": {
+      "bytes": 16889430,
+      "sha256": "886c5d04611e9971d5e50675dce438df5674ce3a66f2cfa5cb569a58d5d949d0"
+    },
+    "cloud-evidence/north-ridge62-collect-20261002T053100Z-3mmbw0ol/native-intake.json": {
+      "bytes": 1215201,
+      "sha256": "5d6e5719b9b5f22397338ab508324ec180afd5a1d54554dcb66294ed79e88df2"
+    },
+    "source-assets/north-ridge62-authoring/preparation-v1/candidate-plan.json": {
+      "bytes": 26009,
+      "sha256": "88ea079034d579652e0f8de2e9b734a134e1e23382a1175e8e8b33d5b9aa6538"
+    },
+    "cloud-evidence/coast-boundary-readonly-20261001/read_saved_coast.gd": {
+      "bytes": 2419,
+      "sha256": "b609b92339da06d05e4ac7182dc06a20112287a4877400af9bb87c22db4487e6"
+    },
+    "source-assets/north-ridge62-intake/scatter-readonly-v1/scene_inputs62.py": {
+      "bytes": 10499,
+      "sha256": "e84a19c9be5b73d7864e5fe948bce74d159c1253dbf67de77c0d0070d97098f2"
+    },
+    "source-assets/coast61-nearbay-orbit/visible_geometry61.gd": {
+      "bytes": 36142,
+      "sha256": "966c863a02d136aefacb78e76d7301649b96c628408c589d3a4345fac30086f7"
+    },
+    "source-assets/north-ridge62-intake/scatter-readonly-v1/upstream/drivers__gles3__storage__mesh_storage.cpp": {
+      "bytes": 91601,
+      "sha256": "1231231220be8dd9f74ff1b6ee7dc4be6c64214bd51cf012405d279256a379b1"
+    }
+  },
+  "sources_unchanged": true,
+  "meshes": [
+    {
+      "tile": "Ground_-4_-7",
+      "resource": "res://scenes/candidate53d-west/Game53dWest.tscn::ArrayMesh_xat5f",
+      "surface": 0,
+      "format": 34896613391,
+      "format_hex": "0x82000100f",
+      "format_fields": [
+        "vertex",
+        "normal",
+        "tangent",
+        "color",
+        "index",
+        "compressed_attributes",
+        "current_format_version"
+      ],
+      "vertex_count": 6144,
+      "index_count": 6144,
+      "triangle_count": 2048,
+      "indices_sequential": true,
+      "unique_local_xyz_count": 1089,
+      "unique_world_xyz_count": 1089,
+      "source_block_byte_span": [
+        8602154,
+        8750160
+      ],
+      "source_block_sha256": "e8fb8992dad8f075ce6bd758eeaf18501634f68c00b2142170bade5338f0f12a",
+      "surface_storage_sha256_native_intake_witness": "3db137b74a3e985f82ca5c60b89507b06d57d9b6945ba3883ab7051f932da2f1",
+      "surface_storage_variant_hash_recomputed": false,
+      "source_aabb": [
+        0.0,
+        15.0,
+        0.0,
+        768.0,
+        45.253665924072266,
+        768.0
+      ],
+      "world_transform_columns": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -3072.0,
+        0.0,
+        -5376.0
+      ],
+      "transform_variant_hex": "120000000000803f0000000000000000000000000000803f0000000000000000000000000000803f000040c5000000000000a8c5",
+      "source_material_reference": "SubResource(\"StandardMaterial3D_8oo5c\")",
+      "source_surface_name": "Meadow stone and shore.041",
+      "source_shadow_reference": "SubResource(\"ArrayMesh_4eksh\")",
+      "source_uv_present": false,
+      "source_uv2_present": false,
+      "source_colors_present": true,
+      "source_color_storage": "one RGBA8 unsigned normalized record per original source vertex",
+      "packed_payloads": {
+        "vertex_data": {
+          "bytes": 73728,
+          "sha256": "d5aed31d9b40919df54778ca5b0d2618a3bd70ef30713b7a5b111d561919eb09",
+          "file": "Ground_-4_-7.vertex_data.bin"
+        },
+        "attribute_data": {
+          "bytes": 24576,
+          "sha256": "c23bffbdd170c4a808913503e92c8950522ff9af578b453926ae4d8010de3946",
+          "file": "Ground_-4_-7.attribute_data.bin"
+        },
+        "index_data": {
+          "bytes": 12288,
+          "sha256": "cc74caece99fc5259f3c64cd444e3cd932e256b114cf7d442dc458f66c16698b",
+          "file": "Ground_-4_-7.index_data.bin"
+        }
+      },
+      "position_storage": {
+        "start": 0,
+        "stride": 8,
+        "bytes": 49152,
+        "xyz": "u16x3 normalized by 65535, float32 AABB decode",
+        "fourth_u16": "preserved uninterpreted packed tangent component"
+      },
+      "normal_tangent_storage": {
+        "start": 49152,
+        "stride": 4,
+        "bytes": 24576,
+        "semantic_decode_performed": false
+      },
+      "survey_method": "surface_get_arrays; index expansion in source order; float32 composed world transform; no Mesh.get_faces; no snapping; no nearest match",
+      "survey_node": "/Skyfarer/World/Terrain/Ground_-4_-7/Model/Ground_-4_-7",
+      "survey_ordered_float32_match": true,
+      "survey_ordered_world_xyz_float32_sha256": "0728b6d25e5a0724addb034cca36688ec417cbf664dd941c5214e7d160ac63b1",
+      "source_local_xyz_float32_sha256": "e6188886aa69fcd5fe769bc071e9b47edcc8ffe9af395fa71cdd0c6035934e3a",
+      "float32_max_component_error_m": 0.0,
+      "survey_json_decimal_vs_float32_max_error_m": 5.002220859751105e-12,
+      "float32_translation_max_roundoff_m": 0.000244140625,
+      "stored_position_quantization_step_m": [
+        0.011718928816662852,
+        0.0006905266792412034,
+        0.011718928816662852
+      ],
+      "mapping_file": "Ground_-4_-7.mapping.json.gz"
+    },
+    {
+      "tile": "Ground_-3_-7",
+      "resource": "res://scenes/candidate53d-west/Game53dWest.tscn::ArrayMesh_ywvy3",
+      "surface": 0,
+      "format": 34896613391,
+      "format_hex": "0x82000100f",
+      "format_fields": [
+        "vertex",
+        "normal",
+        "tangent",
+        "color",
+        "index",
+        "compressed_attributes",
+        "current_format_version"
+      ],
+      "vertex_count": 6144,
+      "index_count": 6144,
+      "triangle_count": 2048,
+      "indices_sequential": true,
+      "unique_local_xyz_count": 1089,
+      "unique_world_xyz_count": 1089,
+      "source_block_byte_span": [
+        8778685,
+        8926690
+      ],
+      "source_block_sha256": "3aa55608836d4f49a1cc86083ad6d961e5bd96f50c7d576e55eff4613be7e9e6",
+      "surface_storage_sha256_native_intake_witness": "cf59768fb5cf7285d0b1ccbe459614b7820dc1ccecb41f52b9bccd151f050853",
+      "surface_storage_variant_hash_recomputed": false,
+      "source_aabb": [
+        0.0,
+        15.0,
+        0.0,
+        768.0,
+        69.2597427368164,
+        768.0
+      ],
+      "world_transform_columns": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2304.0,
+        0.0,
+        -5376.0
+      ],
+      "transform_variant_hex": "120000000000803f0000000000000000000000000000803f0000000000000000000000000000803f000010c5000000000000a8c5",
+      "source_material_reference": "SubResource(\"StandardMaterial3D_3t2je\")",
+      "source_surface_name": "Meadow stone and shore.042",
+      "source_shadow_reference": "SubResource(\"ArrayMesh_e6cp0\")",
+      "source_uv_present": false,
+      "source_uv2_present": false,
+      "source_colors_present": true,
+      "source_color_storage": "one RGBA8 unsigned normalized record per original source vertex",
+      "packed_payloads": {
+        "vertex_data": {
+          "bytes": 73728,
+          "sha256": "d6a312d880ef1039b9837ed076a731a35158d0d4b1a85791a4bb3bd90331942c",
+          "file": "Ground_-3_-7.vertex_data.bin"
+        },
+        "attribute_data": {
+          "bytes": 24576,
+          "sha256": "887291ea55fece996159a6dc9552f546fac1c4b1d22905db28db31b173fe4521",
+          "file": "Ground_-3_-7.attribute_data.bin"
+        },
+        "index_data": {
+          "bytes": 12288,
+          "sha256": "cc74caece99fc5259f3c64cd444e3cd932e256b114cf7d442dc458f66c16698b",
+          "file": "Ground_-3_-7.index_data.bin"
+        }
+      },
+      "position_storage": {
+        "start": 0,
+        "stride": 8,
+        "bytes": 49152,
+        "xyz": "u16x3 normalized by 65535, float32 AABB decode",
+        "fourth_u16": "preserved uninterpreted packed tangent component"
+      },
+      "normal_tangent_storage": {
+        "start": 49152,
+        "stride": 4,
+        "bytes": 24576,
+        "semantic_decode_performed": false
+      },
+      "survey_method": "surface_get_arrays; index expansion in source order; float32 composed world transform; no Mesh.get_faces; no snapping; no nearest match",
+      "survey_node": "/Skyfarer/World/Terrain/Ground_-3_-7/Model/Ground_-3_-7",
+      "survey_ordered_float32_match": true,
+      "survey_ordered_world_xyz_float32_sha256": "9df9756ba23f7e96b30a28c2dae15197fd6eb0075c82e2070b8164558a63213d",
+      "source_local_xyz_float32_sha256": "548003efa82fe1a82f25bab42b533633c10acce02a7a8e728522087d0dfc73a8",
+      "float32_max_component_error_m": 0.0,
+      "survey_json_decimal_vs_float32_max_error_m": 5.002220859751105e-12,
+      "float32_translation_max_roundoff_m": 0.000244140625,
+      "stored_position_quantization_step_m": [
+        0.011718928816662852,
+        0.0010568359309806425,
+        0.011718928816662852
+      ],
+      "mapping_file": "Ground_-3_-7.mapping.json.gz"
+    },
+    {
+      "tile": "Ground_-4_-6",
+      "resource": "res://scenes/candidate53d-west/Game53dWest.tscn::ArrayMesh_v5uyt",
+      "surface": 0,
+      "format": 34896613391,
+      "format_hex": "0x82000100f",
+      "format_fields": [
+        "vertex",
+        "normal",
+        "tangent",
+        "color",
+        "index",
+        "compressed_attributes",
+        "current_format_version"
+      ],
+      "vertex_count": 6058,
+      "index_count": 6144,
+      "triangle_count": 2048,
+      "indices_sequential": false,
+      "unique_local_xyz_count": 1089,
+      "unique_world_xyz_count": 1089,
+      "source_block_byte_span": [
+        11163907,
+        11310035
+      ],
+      "source_block_sha256": "6ae099d0b416b520157bf03d92cd8d98a0e33c1b758be11795193729e5143728",
+      "surface_storage_sha256_native_intake_witness": "9309c905a97c6a66b7b207c82ffdd0b937e49880c148efedc7a2b5073cda4d2d",
+      "surface_storage_variant_hash_recomputed": false,
+      "source_aabb": [
+        0.0,
+        14.0,
+        0.0,
+        768.0,
+        278.5013122558594,
+        768.0
+      ],
+      "world_transform_columns": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -3072.0,
+        0.0,
+        -4608.0
+      ],
+      "transform_variant_hex": "120000000000803f0000000000000000000000000000803f0000000000000000000000000000803f000040c500000000000090c5",
+      "source_material_reference": "SubResource(\"StandardMaterial3D_j0om4\")",
+      "source_surface_name": "Meadow stone and shore.054",
+      "source_shadow_reference": null,
+      "source_uv_present": false,
+      "source_uv2_present": false,
+      "source_colors_present": true,
+      "source_color_storage": "one RGBA8 unsigned normalized record per original source vertex",
+      "packed_payloads": {
+        "vertex_data": {
+          "bytes": 72696,
+          "sha256": "84829937dda816c885b7b3381c3531111ece3dc38cf286c3940541e87a4e688e",
+          "file": "Ground_-4_-6.vertex_data.bin"
+        },
+        "attribute_data": {
+          "bytes": 24232,
+          "sha256": "5e640c1e760e8806758a3c96950e063379a9ca9d8a4f1cd03addf77f98316b33",
+          "file": "Ground_-4_-6.attribute_data.bin"
+        },
+        "index_data": {
+          "bytes": 12288,
+          "sha256": "bf29eb037624fb4e8e1ab76b0f984435651a0c7fd6415b4a0ac8a612ed37057c",
+          "file": "Ground_-4_-6.index_data.bin"
+        }
+      },
+      "position_storage": {
+        "start": 0,
+        "stride": 8,
+        "bytes": 48464,
+        "xyz": "u16x3 normalized by 65535, float32 AABB decode",
+        "fourth_u16": "preserved uninterpreted packed tangent component"
+      },
+      "normal_tangent_storage": {
+        "start": 48464,
+        "stride": 4,
+        "bytes": 24232,
+        "semantic_decode_performed": false
+      },
+      "survey_method": "surface_get_arrays; index expansion in source order; float32 composed world transform; no Mesh.get_faces; no snapping; no nearest match",
+      "survey_node": "/Skyfarer/World/Terrain/Ground_-4_-6/Model/Ground_-4_-6",
+      "survey_ordered_float32_match": true,
+      "survey_ordered_world_xyz_float32_sha256": "5447ffe202b802366ce81afab79fd58e5a9f052f127fc54e4708f0165d909386",
+      "source_local_xyz_float32_sha256": "c51d66cd0f8a04e28de0b490c571c9cd089ec284810dcf008d6ed7186ee56989",
+      "float32_max_component_error_m": 0.0,
+      "survey_json_decimal_vs_float32_max_error_m": 5.002220859751105e-12,
+      "float32_translation_max_roundoff_m": 0.000244140625,
+      "stored_position_quantization_step_m": [
+        0.011718928816662852,
+        0.004249657621970846,
+        0.011718928816662852
+      ],
+      "mapping_file": "Ground_-4_-6.mapping.json.gz"
+    },
+    {
+      "tile": "Ground_-3_-6",
+      "resource": "res://scenes/candidate53d-west/Game53dWest.tscn::ArrayMesh_rlgfb",
+      "surface": 0,
+      "format": 34896613391,
+      "format_hex": "0x82000100f",
+      "format_fields": [
+        "vertex",
+        "normal",
+        "tangent",
+        "color",
+        "index",
+        "compressed_attributes",
+        "current_format_version"
+      ],
+      "vertex_count": 6009,
+      "index_count": 6144,
+      "triangle_count": 2048,
+      "indices_sequential": false,
+      "unique_local_xyz_count": 1089,
+      "unique_world_xyz_count": 1089,
+      "source_block_byte_span": [
+        11491769,
+        11636850
+      ],
+      "source_block_sha256": "d7aa41c54f5fac82c1395d1d50c98ea832386b8b124a06f6d5ef127cb88f354b",
+      "surface_storage_sha256_native_intake_witness": "9a67c184a75b6180e4305eb9e033367483d6be108ba501012439cede14e5d2c7",
+      "surface_storage_variant_hash_recomputed": false,
+      "source_aabb": [
+        0.0,
+        14.0,
+        0.0,
+        768.0,
+        257.9601745605469,
+        768.0
+      ],
+      "world_transform_columns": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -2304.0,
+        0.0,
+        -4608.0
+      ],
+      "transform_variant_hex": "120000000000803f0000000000000000000000000000803f0000000000000000000000000000803f000010c500000000000090c5",
+      "source_material_reference": "SubResource(\"StandardMaterial3D_04l20\")",
+      "source_surface_name": "Meadow stone and shore.055",
+      "source_shadow_reference": null,
+      "source_uv_present": false,
+      "source_uv2_present": false,
+      "source_colors_present": true,
+      "source_color_storage": "one RGBA8 unsigned normalized record per original source vertex",
+      "packed_payloads": {
+        "vertex_data": {
+          "bytes": 72108,
+          "sha256": "f8ff2fe9c73b142bb1730b30b4c0367bd0473bcb0a708fc7bb25ffa0ff111778",
+          "file": "Ground_-3_-6.vertex_data.bin"
+        },
+        "attribute_data": {
+          "bytes": 24036,
+          "sha256": "8dbb7cea9a8555293b28dab69a9a5eccb5b13b10c305e8712aae6094b20a5182",
+          "file": "Ground_-3_-6.attribute_data.bin"
+        },
+        "index_data": {
+          "bytes": 12288,
+          "sha256": "6ab007d7bc091fa908cc2e22f57e199b10b5ec2a0a3cb54e174bd6ba6b7deb66",
+          "file": "Ground_-3_-6.index_data.bin"
+        }
+      },
+      "position_storage": {
+        "start": 0,
+        "stride": 8,
+        "bytes": 48072,
+        "xyz": "u16x3 normalized by 65535, float32 AABB decode",
+        "fourth_u16": "preserved uninterpreted packed tangent component"
+      },
+      "normal_tangent_storage": {
+        "start": 48072,
+        "stride": 4,
+        "bytes": 24036,
+        "semantic_decode_performed": false
+      },
+      "survey_method": "surface_get_arrays; index expansion in source order; float32 composed world transform; no Mesh.get_faces; no snapping; no nearest match",
+      "survey_node": "/Skyfarer/World/Terrain/Ground_-3_-6/Model/Ground_-3_-6",
+      "survey_ordered_float32_match": true,
+      "survey_ordered_world_xyz_float32_sha256": "1eb588d955eb852e07c16decb04cb08714933a30d697a5edb8aa7888b9fa7041",
+      "source_local_xyz_float32_sha256": "81cba6da9af79f988e97bf9f5de78f073d7cfbb141e8da630f19065ac7fef31d",
+      "float32_max_component_error_m": 0.0,
+      "survey_json_decimal_vs_float32_max_error_m": 5.002220859751105e-12,
+      "float32_translation_max_roundoff_m": 0.000244140625,
+      "stored_position_quantization_step_m": [
+        0.011718928816662852,
+        0.003936219952095016,
+        0.011718928816662852
+      ],
+      "mapping_file": "Ground_-3_-6.mapping.json.gz"
+    }
+  ],
+  "artifacts": {
+    "Ground_-4_-7.mapping.json.gz": {
+      "bytes": 210965,
+      "sha256": "068f4a4066964cb3ef8c582afebb74461de222b53b88f380c58d715225f3e491"
+    },
+    "Ground_-4_-7.source-block.tscn.txt": {
+      "bytes": 148006,
+      "sha256": "e8fb8992dad8f075ce6bd758eeaf18501634f68c00b2142170bade5338f0f12a"
+    },
+    "Ground_-4_-7.vertex_data.bin": {
+      "bytes": 73728,
+      "sha256": "d5aed31d9b40919df54778ca5b0d2618a3bd70ef30713b7a5b111d561919eb09"
+    },
+    "Ground_-4_-7.attribute_data.bin": {
+      "bytes": 24576,
+      "sha256": "c23bffbdd170c4a808913503e92c8950522ff9af578b453926ae4d8010de3946"
+    },
+    "Ground_-4_-7.index_data.bin": {
+      "bytes": 12288,
+      "sha256": "cc74caece99fc5259f3c64cd444e3cd932e256b114cf7d442dc458f66c16698b"
+    },
+    "Ground_-3_-7.mapping.json.gz": {
+      "bytes": 202698,
+      "sha256": "50bbe2a063996226c26d04661a45ef9c5ef9f9183d42cfb0790886301b9089a2"
+    },
+    "Ground_-3_-7.source-block.tscn.txt": {
+      "bytes": 148005,
+      "sha256": "3aa55608836d4f49a1cc86083ad6d961e5bd96f50c7d576e55eff4613be7e9e6"
+    },
+    "Ground_-3_-7.vertex_data.bin": {
+      "bytes": 73728,
+      "sha256": "d6a312d880ef1039b9837ed076a731a35158d0d4b1a85791a4bb3bd90331942c"
+    },
+    "Ground_-3_-7.attribute_data.bin": {
+      "bytes": 24576,
+      "sha256": "887291ea55fece996159a6dc9552f546fac1c4b1d22905db28db31b173fe4521"
+    },
+    "Ground_-3_-7.index_data.bin": {
+      "bytes": 12288,
+      "sha256": "cc74caece99fc5259f3c64cd444e3cd932e256b114cf7d442dc458f66c16698b"
+    },
+    "Ground_-4_-6.mapping.json.gz": {
+      "bytes": 164892,
+      "sha256": "9e330db4d62df06161c60abf7b4111271da81fef4d0b412475dd2c26a88e63a3"
+    },
+    "Ground_-4_-6.source-block.tscn.txt": {
+      "bytes": 146128,
+      "sha256": "6ae099d0b416b520157bf03d92cd8d98a0e33c1b758be11795193729e5143728"
+    },
+    "Ground_-4_-6.vertex_data.bin": {
+      "bytes": 72696,
+      "sha256": "84829937dda816c885b7b3381c3531111ece3dc38cf286c3940541e87a4e688e"
+    },
+    "Ground_-4_-6.attribute_data.bin": {
+      "bytes": 24232,
+      "sha256": "5e640c1e760e8806758a3c96950e063379a9ca9d8a4f1cd03addf77f98316b33"
+    },
+    "Ground_-4_-6.index_data.bin": {
+      "bytes": 12288,
+      "sha256": "bf29eb037624fb4e8e1ab76b0f984435651a0c7fd6415b4a0ac8a612ed37057c"
+    },
+    "Ground_-3_-6.mapping.json.gz": {
+      "bytes": 152500,
+      "sha256": "966e8ac9228ff65902ff1d4ef3ad58ea56e2b4049a723cfc961a7c75e83bf808"
+    },
+    "Ground_-3_-6.source-block.tscn.txt": {
+      "bytes": 145081,
+      "sha256": "d7aa41c54f5fac82c1395d1d50c98ea832386b8b124a06f6d5ef127cb88f354b"
+    },
+    "Ground_-3_-6.vertex_data.bin": {
+      "bytes": 72108,
+      "sha256": "f8ff2fe9c73b142bb1730b30b4c0367bd0473bcb0a708fc7bb25ffa0ff111778"
+    },
+    "Ground_-3_-6.attribute_data.bin": {
+      "bytes": 24036,
+      "sha256": "8dbb7cea9a8555293b28dab69a9a5eccb5b13b10c305e8712aae6094b20a5182"
+    },
+    "Ground_-3_-6.index_data.bin": {
+      "bytes": 12288,
+      "sha256": "6ab007d7bc091fa908cc2e22f57e199b10b5ec2a0a3cb54e174bd6ba6b7deb66"
+    }
+  },
+  "method_scope": "Existing reviewed HEADER and numeric helpers plus narrow exact observed one-surface literal extraction, existing compressed surface_positions formula. Not a general TSCN parser; RSRC parser does not apply to these text blocks.",
+  "limits": [
+    "Native surface storage var_to_bytes hash is quoted from pinned intake, not independently recomputed.",
+    "Normals/tangents are preserved as exact storage bytes, not semantically decoded or regenerated.",
+    "No original UV/UV2 data exists on these four surfaces; adding UV is a new authored attribute.",
+    "Exact source RGBA8 and corner/index association are available; no Blender color-space/storage roundtrip has been tested.",
+    "No shadow/LOD/collision decoding, resource mutation, native creation, export, integration or acceptance is included."
+  ]
+}

@@ -1,0 +1,4 @@
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/north-ridge62-authoring/support-v1/solve_support62.py", line 27
+    def area2(p):return abs(float(np.sum(p[:,0]*np.roll(p[:,1],-1)-p[:,1]*np.roll(p[:,0],-1)))/2
+                           ^
+SyntaxError: '(' was never closed

@@ -1,0 +1,31 @@
+Reviewer-owned pure Python test doubles. No real bpy import, native process, blend, PNG, or native pass.
+
+NORMAL
+test_all_six_mesh_mode_guards_reject_before_write (__main__.RebuildAuthorLogic.test_all_six_mesh_mode_guards_reject_before_write) ... ok
+test_all_six_mesh_transform_guards_reject_before_write (__main__.RebuildAuthorLogic.test_all_six_mesh_transform_guards_reject_before_write) ... ok
+test_boundary_height_rejected_before_write (__main__.RebuildAuthorLogic.test_boundary_height_rejected_before_write) ... ok
+test_control_and_handle_deltas_add (__main__.RebuildAuthorLogic.test_control_and_handle_deltas_add) ... ok
+test_control_horizontal_edit_rejected_before_write (__main__.RebuildAuthorLogic.test_control_horizontal_edit_rejected_before_write) ... ok
+test_handle_edit_and_repeat_are_idempotent (__main__.RebuildAuthorLogic.test_handle_edit_and_repeat_are_idempotent) ... ok
+test_handle_horizontal_edit_rejected_before_write (__main__.RebuildAuthorLogic.test_handle_horizontal_edit_rejected_before_write) ... ok
+test_initial_is_frozen_and_has_five_derived_writes (__main__.RebuildAuthorLogic.test_initial_is_frozen_and_has_five_derived_writes) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 2.164s
+
+OK
+
+OPTIMIZED
+test_all_six_mesh_mode_guards_reject_before_write (__main__.RebuildAuthorLogic.test_all_six_mesh_mode_guards_reject_before_write) ... ok
+test_all_six_mesh_transform_guards_reject_before_write (__main__.RebuildAuthorLogic.test_all_six_mesh_transform_guards_reject_before_write) ... ok
+test_boundary_height_rejected_before_write (__main__.RebuildAuthorLogic.test_boundary_height_rejected_before_write) ... ok
+test_control_and_handle_deltas_add (__main__.RebuildAuthorLogic.test_control_and_handle_deltas_add) ... ok
+test_control_horizontal_edit_rejected_before_write (__main__.RebuildAuthorLogic.test_control_horizontal_edit_rejected_before_write) ... ok
+test_handle_edit_and_repeat_are_idempotent (__main__.RebuildAuthorLogic.test_handle_edit_and_repeat_are_idempotent) ... ok
+test_handle_horizontal_edit_rejected_before_write (__main__.RebuildAuthorLogic.test_handle_horizontal_edit_rejected_before_write) ... ok
+test_initial_is_frozen_and_has_five_derived_writes (__main__.RebuildAuthorLogic.test_initial_is_frozen_and_has_five_derived_writes) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 2.217s
+
+OK

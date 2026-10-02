@@ -1,6 +1,17 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 10:46 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 11:05 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 11:05 北实际作者管线与167连续支撑预解已封存
+
+- K实际native资产与fresh roundtrip证据已完整发布 **24e2692b813b7f3c8092f3819c383b9121c70e0b**，tree **17955a36d7b42cabddc4a12adbdccc8cf63e8774**、parent53325473；41路径/37blob新bare公共Git逐字节/SHA核回一致，本地7404c67同树对齐。该独立工程包未包含私密交付记录或其被拒提交parent；原create_tree经一次原授权重试成功，6既存工程blob无重传
+- [北build-v1实际可执行准备](source-assets/north-ridge62-authoring/build-v1/README.md)：一个27control/15语义handle/4326点master/8192原三角，四派生保6144/6144/6058/6009属性vertex、原index/localXYZ/RGBA8与packed源字节。24576展开corner逐float32匹配survey，原UV/UV2缺席已证，原local反算有≤.00024414m舍入故单独保原值；未静默更改冻结1246新Y/2479面
+- native builder/嵌入rebuild/fresh reopen/四固定view one-shot均已实现，raw先存后验、真实PID/wait4/kill-reap沿用原helper。21源码+9mapping+8mock普通/-O及独立审查通过，77身份/父default preflight exit0；freeze SHA5f330a85d21da0ffdf3c57c6183b52e86bb6b4c0fa976431946a6f9a46afcc49。**无blend/原PNG/native通过**；源stage60秒、views90秒，各CPU2/1.5GiB，原1131/1347 pose/FOV55和1179×664不改，side/back仅诊断
+- 5424728B bindings以625288B无损XZ入Git，原raw/freeze不改。重拉先按[STORAGE](source-assets/north-ridge62-authoring/build-v1/STORAGE.md)只恢复缺失raw并核SHA，再default检查。预先约窗且暂停其它Aether source-assets写入，完整source/assets/ref/mainproject会员与字节前后保护；source实过且发布后才四图，不把准备当制作完成
+- [167支撑有限预解](source-assets/north-ridge62-authoring/support-v1/README.md)五canonical mesh实际packed解码与v4原生SHA全匹配，岩get_faces snap整段同；167原affine全保且upright，无重正交化。结果**31条件Y候选+7实际foot未变dy0保原+117空区间+12可见面积/顶空失败**，所有原support_proved仍false、0placement。509query/保护实例保持，至少57630全局实例原样
+- 实际连续足片/三角clip extrema、rock visual/真实snap碰撞、树下帽椭球解析极值与自然空隙分开；原visual/collision≤.00048828125m微差记录，候选共同碰撞面仍nominal未native。旧pine首非零mesh层/2与95%、rock/bush原比例门不放宽，新oak/poplar用min(mesh首正层,实际trunk上环)/2的明确更严候选tree-family条件，不冒称旧验收
+- 129blocked逐row有原bounds+≤8m域、低高witness/±2m约束和完整邻居重核清单；35连必要witness门都失败、94只必要条件过不称bench可行。20普通/-O、全167双模式复算、30独立连续cap优化fixture与独立审查完成，35源身份未变；freeze SHA14ca1cab8ff50ba080b22a7f730016d1190e94ab508fb2a9d65045a0921015ca。2108300B完整报告→194501B无损gzip及旧失败保全；暂不整合世界或擅自迁移/删森林
+- K当前61真实只有25个旧46 CloudSea root（非历史52f125part），单unit试放正在准备，以CloudSea_1_1最邻近设计选择明确记录；K覆盖小于旧单元且邻居有真实三角视线遮挡风险，不能靠AABB称可见或套旧scale。固定原1216 off/on与诊断视图后才判断。全GOAL/硬件GPU/世界美术仍未验收，私密交付记录仅本地，受阻发送不重试
 
 ## 10:46 K实际native保存/fresh reload完整通过
 
