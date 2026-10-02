@@ -1,6 +1,15 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 05:54 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 06:15 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 06:15空资源修正与775组保存散布采集准备完成
+
+- 上项真实GL失败/四解析/J两handle失败已完整发布 **9e86fc757ba50c562315f32183bf1b64cdc97ff3**，tree **40e8fb24d456e54fa0de479b24900a89ce6861ce**、parenta7657807；116路径/84唯一blob新bare公共Git逐字节/SHA回读一致，本地62c0cb4同树对齐。原非force ref首拒后同参数一次证据重试成功，已存对象无重传
+- [v6空资源修正准备](source-assets/coast61-nearbay-orbit/continuous-v6/README.md)按固定4.5.1源码定位：RefCounted ID可合法负号；零buffer用start/finish空哈希；GLES3忽略set_mesh(null)会留下旧server RID，CPU Ref丢弃后延迟free可能触发旧mesh查询。现在先核CPU/server存储RID一致再读bounds，负控保留原资源并立即恢复；空/零可见绑定无伪造有限AABB，仍核完整身份/buffer，原日志不滤
+- 原48真实轻夹具命名全部保留，加13空资源/绑定案例，共61；27静态/依赖和29隔离Python wrapper检查通过，首次失败run的37源码快照再次核原SHA。**修正后的原生解析/真实X11 GL 61项尚未运行**，旧47/48及两error失败不追改，长world不提前开
+- [保存MM读取准备](source-assets/north-ridge62-intake/scatter-readonly-v1/README.md)独立读708二进制+67内嵌共775组、57797保存实例/17空组，含隐藏雨雪3000。固定官方Dummy bulk路径会保留整buffer，与实例getter no-op区别明确；原生须逐组核buffer SHA/格式/mesh绑定及新独立祖先变换baseline，旧报告没有scatter变换不能追認为旧native证明
+- 173数学/文本/source/终态schema及14decoder组normal/-O通过，1568保护/全1483闭包一致，28准备文件冻结。未来包围盒限定于保存ArrayMesh surface元数据联合/shadow包围，不是重新解码顶点极值；shader变形、runtime model_scene/碰撞、道路宽度与all_occupancy_complete明确false。不重复整世界buffer，仅保query实例与全部组身份；尚未Godot parse/collect或改地形
+- 本准备立即发布后错峰跑修正v6小夹具与scatter原生解析/采集。J2仅开始一次有数学约束的两个局部连接平移设计，未试候选/引擎/资源。E/F2八件Slack原频道问题仍待答，全部GOAL/硬件GPU验收未通过
 
 ## 05:54 v6真实GL轻夹具失败；J单候选两handle静态拒绝
 

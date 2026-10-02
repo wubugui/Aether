@@ -13,8 +13,13 @@ var failed:=false
 var output: String
 var scene: Node3D
 var camera: Camera3D
+const EMPTY_SHA256="e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+
+func diagnostic(name: String, stage: String) -> void:
+ print("ORBIT61_CASE ",name," ",stage)
 
 func record(name: String, ok: bool, details: Variant=null) -> void:
+ diagnostic(name,"passed" if ok else "failed")
  checks.append({"name":name,"passed":ok,"details":details})
  if not ok: failed=true
 
@@ -22,35 +27,66 @@ func _initialize() -> void:
  output=OS.get_cmdline_user_args()[0]
  call_deferred("run")
 
-func fixture(hidden: bool=false, distant: bool=false, null_binding: bool=false) -> Dictionary:
+func fixture(hidden: bool=false, distant: bool=false, null_binding: bool=false, empty_mode: String="") -> Dictionary:
  var node:=MultiMeshInstance3D.new()
  node.name="MM_"+str(scene.get_child_count())
+ var mm: MultiMesh=null
+ var mesh: Mesh=null
  if not null_binding:
-  var mm:=MultiMesh.new()
-  mm.transform_format=MultiMesh.TRANSFORM_3D
-  mm.use_colors=true;mm.use_custom_data=true
-  mm.mesh=BoxMesh.new();mm.instance_count=2
-  mm.set_instance_transform(0,Transform3D.IDENTITY)
-  mm.set_instance_transform(1,Transform3D(Basis.IDENTITY,Vector3(2,0,0)))
-  mm.set_instance_color(0,Color.WHITE);mm.set_instance_color(1,Color.WHITE)
-  mm.set_instance_custom_data(0,Color(0,0,0,0));mm.set_instance_custom_data(1,Color(0,0,0,0))
+  mm=MultiMesh.new()
+  if empty_mode!="fresh":
+   mm.transform_format=MultiMesh.TRANSFORM_3D
+   mm.use_colors=true;mm.use_custom_data=true
+   if empty_mode!="null_mesh":
+    mesh=BoxMesh.new();mm.mesh=mesh
+   mm.instance_count=0 if empty_mode=="zero_instances" else 2
+   if mm.instance_count>0:
+    mm.set_instance_transform(0,Transform3D.IDENTITY)
+    mm.set_instance_transform(1,Transform3D(Basis.IDENTITY,Vector3(2,0,0)))
+    mm.set_instance_color(0,Color.WHITE);mm.set_instance_color(1,Color.WHITE)
+    mm.set_instance_custom_data(0,Color(0,0,0,0));mm.set_instance_custom_data(1,Color(0,0,0,0))
+   if empty_mode=="zero_visible": mm.visible_instance_count=0
   node.multimesh=mm
  node.visible=not hidden
  if distant: node.position=Vector3(1000,0,0)
  scene.add_child(node)
  var guard=Audit.new()
  guard.owner_game={"camera":camera};guard.domain=AABB(Vector3.ONE*-5,Vector3.ONE*10)
- var watch: Dictionary=guard.watch_entry(node,not hidden,0.0,guard.world_bounds(node.get_aabb(),node.global_transform))
+ var watch: Dictionary=guard.watch_entry(node,not hidden,0.0,guard.geometry_bounds(node))
  var bound: bool=guard.bind_multimesh_identity(watch)
  guard.watches.append(watch)
- return {"node":node,"guard":guard,"watch":watch,"baseline_ok":bound}
+ # Retain resources independently of the node. In pinned GLES3, setting mesh
+ # null leaves the prior server RID; dropping the last Mesh reference would
+ # invalidate it until a later global dirty-instance drain (including free()).
+ return {"node":node,"guard":guard,"watch":watch,"baseline_ok":bound,"held_multimesh":mm,"held_mesh":mesh}
+
+func dispose_fixture(f: Dictionary) -> void:
+ if not is_instance_valid(f.node): return
+ # Keep both old and mutated resources alive through restoration and node free.
+ var changed_mm: MultiMesh=f.node.multimesh
+ var changed_mesh: Mesh=changed_mm.mesh if changed_mm!=null else null
+ if f.held_multimesh!=null: f.held_multimesh.mesh=f.held_mesh
+ f.node.multimesh=f.held_multimesh
+ f.node.free()
+ # These locals intentionally retain references until after native node teardown.
+ if changed_mm!=null: changed_mm=null
+ if changed_mesh!=null: changed_mesh=null
 
 func check_guard(name: String, mutate: Callable, hidden: bool=false, distant: bool=false) -> void:
+ diagnostic(name,"begin")
  var f:=fixture(hidden,distant)
  var baseline: bool=f.baseline_ok and f.guard.unchanged(true,"fixture_baseline",10)
+ diagnostic(name,"mutate")
  mutate.call(f.node)
+ diagnostic(name,"witness")
  var rejected: bool=not f.guard.unchanged(true,"late_process",11)
  record(name,baseline and rejected and not f.guard.failures.is_empty(),f.guard.failures)
+ diagnostic(name,"restore_and_dispose")
+ dispose_fixture(f)
+
+func stable_empty(f: Dictionary, expected_reason: String, expected_floats: int) -> bool:
+ var identity: Dictionary=f.watch.get("multimesh_identity",{})
+ return f.baseline_ok and f.guard.unchanged(true,"late_process",11) and f.guard.unchanged(true,"physics",12) and identity.get("ok")==true and identity.get("mesh_binding_matches")==true and identity.non_rendered_reason==expected_reason and identity.has_drawable_bounds==false and identity.mesh_surface_count==null and identity.mesh_aabb_hex==null and identity.multimesh_aabb_hex==null and identity.buffer_float_count==expected_floats and identity.buffer_byte_count==4*expected_floats and (expected_floats!=0 or identity.buffer_sha256==EMPTY_SHA256) and f.watch.has_drawable_bounds==false and f.watch.bounds_position==null and f.watch.bounds_size==null and not f.watch.query_candidate and not f.watch.before.effective_query_candidate
 
 func run() -> void:
  record("real_display_gl_backend_required",DisplayServer.get_name()=="X11" and RenderingServer.get_current_rendering_method()=="gl_compatibility" and RenderingServer.get_current_rendering_driver_name() in ["opengl3","opengl3_es","opengl3_angle"])
@@ -60,7 +96,7 @@ func run() -> void:
  record("full_buffer_baseline_passes",stable.baseline_ok and stable.guard.unchanged(true,"late_process",10))
  record("actual_native_setter_getter_round_trip",stable.node.multimesh.get_instance_transform(1).origin==Vector3(2,0,0) and stable.node.multimesh.get_instance_color(0).is_equal_approx(Color.WHITE) and stable.node.multimesh.get_instance_custom_data(0).is_equal_approx(Color(0,0,0,0)))
  var identity: Dictionary=stable.watch.multimesh_identity
- record("identity_covers_all_transform_color_custom_slots",identity.ok and identity.bound and identity.instance_count==2 and identity.transform_format==MultiMesh.TRANSFORM_3D and identity.use_colors and identity.use_custom_data and identity.buffer_float_count==40 and identity.buffer_byte_count==160 and identity.buffer_sha256.length()==64 and identity.mesh_instance_id>0 and identity.multimesh_instance_id>0,identity)
+ record("identity_covers_all_transform_color_custom_slots",identity.ok and identity.bound and identity.instance_count==2 and identity.transform_format==MultiMesh.TRANSFORM_3D and identity.use_colors and identity.use_custom_data and identity.buffer_float_count==40 and identity.buffer_byte_count==160 and identity.buffer_sha256.length()==64 and identity.mesh_instance_id!=0 and identity.multimesh_instance_id!=0 and is_instance_id_valid(identity.mesh_instance_id) and is_instance_id_valid(identity.multimesh_instance_id) and instance_from_id(identity.mesh_instance_id)==stable.node.multimesh.mesh and instance_from_id(identity.multimesh_instance_id)==stable.node.multimesh and identity.mesh_binding_matches and identity.cpu_mesh_rid==identity.server_mesh_rid,identity)
  record("late_witness_is_explicit_and_frame_associated",stable.guard.last_identity_witness.get("ok")==true and stable.guard.last_identity_witness.phase=="late_process" and stable.guard.last_identity_witness.process_frame==10 and stable.guard.last_identity_witness.multimesh_full_buffer_count==1,stable.guard.last_identity_witness)
  check_guard("actual_transform_mutation_rejected",func(n): n.multimesh.set_instance_transform(1,Transform3D(Basis.IDENTITY,Vector3(3,0,0))))
  check_guard("actual_color_buffer_mutation_rejected",func(n): n.multimesh.set_instance_color(0,Color.RED))
@@ -80,10 +116,13 @@ func run() -> void:
  check_guard("queued_removal_gate_retained",func(n): n.queue_free())
  var missing:=fixture();missing.watch.erase("multimesh_identity")
  record("missing_baseline_is_rejected",not missing.guard.unchanged(true,"late_process",11))
+ diagnostic("explicit_null_baseline_can_stay_null","begin")
  var null_case:=fixture(true,false,true)
  record("explicit_null_baseline_can_stay_null",null_case.baseline_ok and null_case.guard.unchanged(true,"late_process",11))
+ diagnostic("null_to_bound_resource_change_is_rejected","mutate")
  null_case.node.multimesh=MultiMesh.new()
  record("null_to_bound_resource_change_is_rejected",not null_case.guard.unchanged(true,"late_process",12))
+ dispose_fixture(null_case)
  var empty:=EmptyIdentity.new()
  record("empty_identity_cannot_be_accepted",not empty.bind_multimesh_identity(stable.watch))
  var transient:=fixture()
@@ -93,12 +132,59 @@ func run() -> void:
  transient.node.multimesh.buffer=original
  var final_equal: bool=transient.guard.unchanged(true,"final",12)
  record("late_mutation_rejected_even_when_final_buffer_restored",late_rejected and final_equal,transient.guard.failures)
- var removed:=fixture();removed.node.free()
+ diagnostic("actual_removal_gate_retained","begin")
+ var removed:=fixture()
+ diagnostic("actual_removal_gate_retained","free_with_resources_retained")
+ removed.node.free()
  record("actual_removal_gate_retained",not removed.guard.unchanged(true,"late_process",11))
  var fresh:=fixture(false,true)
  record("new_distant_MM_classified_and_watched",fresh.guard.accept_distant_new_node(fresh.node))
  fresh.node.multimesh.set_instance_custom_data(0,Color(1,0,0,0))
  record("new_distant_MM_later_mutation_rejected",not fresh.guard.unchanged(true,"late_process",12))
+
+ diagnostic("fresh_empty_resource_has_empty_hash_and_no_coverage","begin")
+ var fresh_empty:=fixture(false,false,false,"fresh")
+ record("fresh_empty_resource_has_empty_hash_and_no_coverage",stable_empty(fresh_empty,"null_mesh",0),fresh_empty.watch.multimesh_identity)
+ fresh_empty.node.multimesh.instance_count=1
+ record("fresh_empty_count_change_is_rejected",not fresh_empty.guard.unchanged(true,"late_process",13))
+ dispose_fixture(fresh_empty)
+ diagnostic("zero_instance_bound_mesh_has_empty_hash_and_no_coverage","begin")
+ var zero_instances:=fixture(false,false,false,"zero_instances")
+ record("zero_instance_bound_mesh_has_empty_hash_and_no_coverage",stable_empty(zero_instances,"zero_instances",0),zero_instances.watch.multimesh_identity)
+ zero_instances.node.multimesh.use_colors=false
+ record("zero_instance_layout_change_is_rejected",not zero_instances.guard.unchanged(true,"late_process",13))
+ dispose_fixture(zero_instances)
+ diagnostic("never_bound_null_mesh_keeps_full_buffer_watch_without_coverage","begin")
+ var never_bound:=fixture(false,false,false,"null_mesh")
+ record("never_bound_null_mesh_keeps_full_buffer_watch_without_coverage",stable_empty(never_bound,"null_mesh",40),never_bound.watch.multimesh_identity)
+ never_bound.node.multimesh.set_instance_custom_data(0,Color(1,0,0,0))
+ record("null_mesh_full_buffer_mutation_is_rejected",not never_bound.guard.unchanged(true,"late_process",13))
+ dispose_fixture(never_bound)
+ diagnostic("zero_visible_instances_keep_full_buffer_watch_without_coverage","begin")
+ var zero_visible:=fixture(false,false,false,"zero_visible")
+ record("zero_visible_instances_keep_full_buffer_watch_without_coverage",stable_empty(zero_visible,"zero_visible_instances",40),zero_visible.watch.multimesh_identity)
+ zero_visible.node.multimesh.visible_instance_count=1
+ record("zero_visible_becoming_drawable_is_rejected",not zero_visible.guard.unchanged(true,"late_process",13))
+ dispose_fixture(zero_visible)
+ diagnostic("stale_cpu_null_binding_is_rejected_before_bounds","begin")
+ var stale:=fixture()
+ stale.node.multimesh.mesh=null
+ var stale_binding: Dictionary=stale.guard.multimesh_binding_identity(stale.node)
+ record("stale_cpu_null_binding_is_rejected_before_bounds",stale_binding.get("ok")==false and stale_binding.cpu_mesh_rid==0 and stale_binding.server_mesh_rid==stale.held_mesh.get_rid().get_id() and not stale.guard.bind_multimesh_identity(stale.watch),stale_binding)
+ stale.node.multimesh.mesh=stale.held_mesh
+ record("restored_cpu_server_binding_matches_original_identity",stale.guard.unchanged(true,"restored",14))
+ dispose_fixture(stale)
+ diagnostic("new_empty_binding_is_classified_without_finite_coverage","begin")
+ var new_empty:=fixture(false,false,false,"fresh")
+ new_empty.guard.watches.clear()
+ record("new_empty_binding_is_classified_without_finite_coverage",new_empty.guard.accept_distant_new_node(new_empty.node) and new_empty.guard.unchanged(true,"late_process",11) and new_empty.guard.watches.size()==1 and new_empty.guard.watches[0].bounds_position==null and not new_empty.guard.watches[0].query_candidate)
+ new_empty.node.multimesh.mesh=BoxMesh.new()
+ record("new_empty_mesh_binding_change_is_rejected",not new_empty.guard.unchanged(true,"late_process",12))
+ # Freshly bound mesh must stay alive until the MM itself is released; restoring
+ # a CPU-null mesh would deliberately recreate the pinned GLES3 stale-RID state.
+ var new_empty_mesh: Mesh=new_empty.node.multimesh.mesh
+ new_empty.node.free()
+ record("new_empty_bound_mesh_retained_through_removal",is_instance_valid(new_empty_mesh))
 
  var seq=Sequence.new()
  record("sequence_initial_sample_audit",seq.sample(10) and seq.audit(10))

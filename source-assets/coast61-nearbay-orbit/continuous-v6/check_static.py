@@ -41,16 +41,33 @@ def main():
     geometry=section(main_source,'classify_new_geometry')
     checks.append(require('if not is_instance_valid(node): abort(' in geometry,'Removed new geometry fails closed'))
     mm=section(visual,'multimesh_identity')
-    checks.append(require(mm.index('if mm==null: return')<mm.index('mm.instance_count') and 'buffer.to_byte_array()' in mm and 'HashingContext.HASH_SHA256' in mm,'Explicit null guard precedes full native buffer hashing'))
+    binding=section(visual,'multimesh_binding_identity')
+    checks.append(require(binding.index('if mm==null: return')<binding.index('mm.mesh') and mm.index('multimesh_binding_identity(node)')<mm.index('mm.instance_count') and 'buffer.to_byte_array()' in mm and 'HashingContext.HASH_SHA256' in mm,'Explicit null/binding guard precedes full native buffer hashing'))
+    checks.append(require('RenderingServer.multimesh_get_mesh(mm.get_rid())' in binding and '"ok":cpu_mesh_rid==server_mesh_rid' in binding and '"server_mesh_rid":server_mesh_rid.get_id()' in binding and 'get_surface_count' not in binding and 'get_aabb' not in binding,'CPU/server stored mesh RID agreement fails before unsafe mesh queries'))
+    checks.append(require(mm.index('buffer.size()!=count*stride')<mm.index('hashing.start(')<mm.index('if not bytes.is_empty() and hashing.update(bytes)!=OK')<mm.index('hashing.finish()'),'True empty buffer uses start/finish while nonzero layout mismatch still rejects'))
+    checks.append(require('mesh.get_surface_count() if drawable else null' in mm and 'mesh.get_aabb()).hex_encode() if drawable else null' in mm and 'mm.get_aabb()).hex_encode() if drawable else null' in mm,'Empty bindings skip computed mesh and MultiMesh coverage queries'))
+    bounds=section(visual,'geometry_bounds')
+    checks.append(require(bounds.index('multimesh_binding_identity(node)')<bounds.index('multimesh_non_rendered_reason(node)')<bounds.index('node.get_aabb()') and 'return null' in bounds,'Geometry bounds guard consistent empty resources without fabricated AABB'))
     prepare=section(visual,'prepare')
     checks.append(require(prepare.index('bind_multimesh_identity(watch)')<prepare.index('if not visible: continue'),'Hidden MultiMeshes acquire baseline before visibility skip'))
     runtime=section(visual,'unchanged')
-    checks.append(require('if check_buffers and node is MultiMeshInstance3D:' in runtime and 'if item.query_candidate or current_bounds.intersects(domain):' in runtime and 'validate_multimesh_identity(item)' in runtime,'MM validation is separate from domain-specific transform rejection'))
+    checks.append(require('if check_buffers and node is MultiMeshInstance3D:' in runtime and 'if item.query_candidate or (current_bounds is AABB and current_bounds.intersects(domain)):' in runtime and 'validate_multimesh_identity(item)' in runtime,'MM validation is separate from domain-specific transform rejection'))
+    checks.append(require(runtime.index('validate_multimesh_identity(item)')<runtime.index('queued_ancestors(node)')<runtime.index('geometry_bounds(node,'),'MM resource identity validation precedes evidence and transform bounds'))
+    new_geometry=section(visual,'accept_distant_new_node')
+    checks.append(require(new_geometry.index('multimesh_binding_identity(node)')<new_geometry.index('mesh.get_surface_count()'),'New MM CPU/server binding checked before material surface reads'))
     run=section(main_source,'run')
     loop=run.split('while game.orbit.x<goal-.000001',1)[1]
     checks.append(require('if not await wait_event_audited(): return' in loop and 'wait_settled()' not in loop.split('if not check(mouse_button(false)',1)[0],'Intermediate event loop uses exact-process/audit wait, not intermediate settle'))
     checks.append(require(main_source.count('if not await wait_settled(): return')==2 and 'if stable>=2:' in main_source and 'const SETTLE_METERS := .02' in main_source,'Startup and target settling keep two samples and .02m'))
     fixture_source=(HERE/'fixture.gd').read_text()
+    checks.append(require('identity.mesh_instance_id>0' not in fixture_source and 'identity.multimesh_instance_id>0' not in fixture_source and 'is_instance_id_valid(identity.mesh_instance_id)' in fixture_source and 'instance_from_id(identity.multimesh_instance_id)==stable.node.multimesh' in fixture_source,'Native ObjectIDs checked by nonzero/live resolution, never positive sign'))
+    checks.append(require('"held_multimesh":mm,"held_mesh":mesh' in fixture_source and 'dispose_fixture(f)' in section(fixture_source,'check_guard') and section(fixture_source,'dispose_fixture').index('f.held_multimesh.mesh=f.held_mesh')<section(fixture_source,'dispose_fixture').index('f.node.free()'),'Negative fixture resources retained and binding restored before disposal'))
+    old_fixture=(module.AETHER/'cloud-evidence/nearbay61-continuous-v6-20261002T054712Z-k649_9in/source-snapshot/continuous-v6/fixture.gd').read_text()
+    import re
+    check_pattern=r'(?:record|check_guard)\("([^"\n]+)"'
+    old_names=set(re.findall(check_pattern,old_fixture))
+    current_names=re.findall(check_pattern,fixture_source)
+    checks.append(require(len(old_names)==48 and old_names.issubset(current_names) and len(current_names)==61 and len(set(current_names))==61,'All prior 48 native checks retained plus 13 explicit empty/binding cases'))
     fixture_wrapper=(HERE/'run_fixture.py').read_text()
     wrapper_tree=ast.parse(fixture_wrapper)
     command=next(node.value for node in ast.walk(wrapper_tree) if isinstance(node,ast.Assign) and any(isinstance(t,ast.Name) and t.id=='command' for t in node.targets))
@@ -66,7 +83,7 @@ def main():
     checks.append(require("result['dependency_guard_before'] = dependency_validation()" in runner and "result['dependency_guard_after'] = dependency_validation()" in runner and "target = out / 'dependency-review62' / relative" in runner,'Wrapper checks full dependency guard before children and finally, and snapshots auditors/review'))
     tests=module.SUPPORT.strict_json(HERE/'WRAPPER_TESTS.json')
     checks.append(require(tests.get('passed') is True and tests.get('tests_run')==29 and tests.get('godot_invoked') is False and all(hashlib.sha256((ORBIT/name).read_bytes()).hexdigest()==sha for name,sha in tests['tested_source_sha256'].items()),'29 Python-only wrapper tests match final source hashes'))
-    files=[ORBIT/name for name in ['verify_orbit61.gd','visible_geometry61.gd','run_orbit61.py','native_sequence61.gd','orbit_telemetry61.gd']]+[HERE/name for name in ['README.md','fixture.gd','run_fixture.py','wrapper_support.py','test_wrappers.py','check_static.py','WRAPPER_TESTS.json']]
+    files=[ORBIT/name for name in ['verify_orbit61.gd','visible_geometry61.gd','run_orbit61.py','native_sequence61.gd','orbit_telemetry61.gd']]+[HERE/name for name in ['README.md','fixture.gd','run_fixture.py','wrapper_support.py','test_wrappers.py','check_static.py','WRAPPER_TESTS.json','EMPTY_RESOURCE_SOURCES.json']]
     return {'version':'orbit61-continuous-v6-preparation','passed':True,'checks':checks,'original_static_checks':original,'source_sha256':{str(p.relative_to(ORBIT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in files},'wrapper_python_tests':tests,'dependency_guard':evidence,'godot_invoked':False,'gdscript_parse_passed':False,'native_fixture_passed':False,'world_run_passed':False,'scope':'Python AST/source assertions, 29 isolated wrapper tests, unchanged inherited1477 inputs and exact1483 saved loading closure/absence guards. Graphical native mutation fixture and GDScript parsing remain unrun; no universal live-resource identity or world acceptance.'}
 
 if __name__=='__main__':

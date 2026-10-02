@@ -198,3 +198,58 @@ No Godot, native MM, GDScript parser, full world or framebuffer runs in this sui
 
 No engine was started during this preparation. No new heavy world is authorized
 by this file. The parent owns publication and any later engine/display scheduling.
+
+
+## First native light failure and empty-resource correction
+
+The first real X11/GL v6 light fixture is immutable at
+`cloud-evidence/nearbay61-continuous-v6-20261002T054712Z-k649_9in`.
+It completed with 47/48 named checks passing, child/wrapper1, and two logged
+engine errors. The sole named failure assumed RefCounted ObjectIDs were positive;
+the log errors were an empty SHA256 update and a delayed null Mesh lookup during
+node disposal. The preceding parse pass only applies to its saved source snapshot.
+Neither old result is rewritten or upgraded by this correction.
+
+The current prepared fixture retains all48 existing names and adds13 explicit
+checks (61 total). It still requires the same real X11/GL/native APIs and rejects
+any logged engine error. Its current corrected source has not been parsed or run
+natively yet. Python-only wrapper tests and source assertions do not count as
+native acceptance.
+
+- ObjectIDs are checked by nonzero value, live ID validity and exact object
+  resolution, independent of sign. The pinned ObjectID implementation uses the
+  top bit for RefCounted instances and exposes signed int64 conversion
+- A count-zero full buffer hashes through SHA256 start/finish without an empty
+  update. The exact format/count/length gate stays ahead of hashing, including for
+  nonzero counts; the expected empty digest is checked in native positives
+- CPU mesh binding is compared to RenderingServer.multimesh_get_mesh's stored
+  mesh RID before any mesh AABB/surface query. The native report records both
+  RIDs. This narrow binding check does not freeze arbitrary renderer state
+- A fresh null binding or zero-instance/zero-visible-instance resource has no
+  finite drawable bounds. Its coverage fields are null, query candidacy is false,
+  and its binding/count/layout/full buffer still participates in every identity
+  witness. Mesh/server surface and computed-AABB queries are skipped for it
+- An earlier bound Mesh followed by CPU mesh=null is different: pinned GLES3
+  ignores the null setter and retains the server RID. This mismatch is rejected
+  explicitly, including at baseline creation. CPU null is never treated as
+  sufficient proof of a null renderer binding
+- Negative fixtures retain their original resources, restore bindings immediately
+  after the rejection witness, then dispose the node. Case/stage markers precede
+  mutations, witnesses and cleanup. The null and actual/queued removal negatives
+  remain present; raw errors are never ignored or filtered
+- New positives cover a default empty MultiMesh, a bound mesh with zero instances,
+  an allocated never-mesh-bound buffer, zero visible instances, fresh empty-node
+  classification and valid restoration. New negatives cover count/layout/buffer/
+  visible-count/binding changes and stale CPU/server binding mismatch
+
+The precise source chain and downloaded SHA256 identities are recorded in
+`EMPTY_RESOURCE_SOURCES.json`. All links are pinned to the executed engine commit:
+[ObjectID](https://raw.githubusercontent.com/godotengine/godot/f62fdbde15035c5576dad93e586201f4d41ef0cb/core/object/object_id.h),
+[hashing](https://raw.githubusercontent.com/godotengine/godot/f62fdbde15035c5576dad93e586201f4d41ef0cb/core/crypto/hashing_context.cpp),
+[GLES3 storage](https://raw.githubusercontent.com/godotengine/godot/f62fdbde15035c5576dad93e586201f4d41ef0cb/drivers/gles3/storage/mesh_storage.cpp),
+[CPU MultiMesh](https://raw.githubusercontent.com/godotengine/godot/f62fdbde15035c5576dad93e586201f4d41ef0cb/scene/resources/multimesh.cpp),
+[renderer disposal](https://raw.githubusercontent.com/godotengine/godot/f62fdbde15035c5576dad93e586201f4d41ef0cb/servers/rendering/renderer_scene_cull.cpp),
+and [binding getter API](https://raw.githubusercontent.com/godotengine/godot/f62fdbde15035c5576dad93e586201f4d41ef0cb/doc/classes/RenderingServer.xml).
+
+No engine was started for this correction. Coordinated parse and strict native
+light validation remain required; no new full-world run is authorized by it.

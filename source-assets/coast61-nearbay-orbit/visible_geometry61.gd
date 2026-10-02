@@ -31,13 +31,36 @@ func metric_end(label: String, began: int) -> void:
 func metric_count(label: String, amount: int=1) -> void:
  if telemetry!=null: telemetry.count(label,amount)
 
-func multimesh_identity(node: MultiMeshInstance3D) -> Dictionary:
- # Explicit successful dictionary required at every caller. No changed-signal
- # assumption, no missing-property numeric defaults, no null dereference.
+func multimesh_binding_identity(node: MultiMeshInstance3D) -> Dictionary:
  if not is_instance_valid(node): return {}
  var mm: MultiMesh=node.multimesh
  if mm==null: return {"ok":true,"bound":false,"node_instance_id":node.get_instance_id()}
  if not is_instance_valid(mm): return {}
+ var mesh: Mesh=mm.mesh
+ if mesh!=null and not is_instance_valid(mesh): return {}
+ # RefCounted ObjectIDs have bit 63 set and are negative as GDScript int64.
+ # Zero means null; validity and exact identity are independent of the sign.
+ # This getter only reads the MultiMesh's stored RID; it does not dereference
+ # a possibly stale mesh. GLES3 4.5.1 ignores set_mesh(null), so CPU null alone
+ # does not establish an empty rendering binding.
+ var cpu_mesh_rid: RID=mesh.get_rid() if mesh!=null else RID()
+ var server_mesh_rid: RID=RenderingServer.multimesh_get_mesh(mm.get_rid())
+ return {"ok":cpu_mesh_rid==server_mesh_rid,"bound":true,"node_instance_id":node.get_instance_id(),"multimesh_instance_id":mm.get_instance_id(),"mesh_instance_id":mesh.get_instance_id() if mesh!=null else 0,"cpu_mesh_rid":cpu_mesh_rid.get_id(),"server_mesh_rid":server_mesh_rid.get_id(),"mesh_binding_matches":cpu_mesh_rid==server_mesh_rid}
+
+func multimesh_non_rendered_reason(node: MultiMeshInstance3D) -> String:
+ var mm: MultiMesh=node.multimesh
+ if mm==null: return "null_multimesh"
+ if mm.mesh==null: return "null_mesh"
+ if mm.instance_count==0: return "zero_instances"
+ if mm.visible_instance_count==0: return "zero_visible_instances"
+ return ""
+
+func multimesh_identity(node: MultiMeshInstance3D) -> Dictionary:
+ # Explicit successful dictionary required at every caller. No changed-signal
+ # assumption, no missing-property numeric defaults, no null dereference.
+ var identity: Dictionary=multimesh_binding_identity(node)
+ if identity.get("ok")!=true or not identity.bound: return identity
+ var mm: MultiMesh=node.multimesh
  var mesh: Mesh=mm.mesh
  var count: int=mm.instance_count
  var visible_count: int=mm.visible_instance_count
@@ -51,18 +74,26 @@ func multimesh_identity(node: MultiMeshInstance3D) -> Dictionary:
  var began:=metric_begin("multimesh_buffer_hash")
  var bytes: PackedByteArray=buffer.to_byte_array()
  var hashing:=HashingContext.new()
- if hashing.start(HashingContext.HASH_SHA256)!=OK or hashing.update(bytes)!=OK: return {}
+ if hashing.start(HashingContext.HASH_SHA256)!=OK: return {}
+ # Godot 4.5.1 rejects update(empty). SHA256 of a true zero-count buffer
+ # is start/finish with no update; the exact count/stride check above remains.
+ if not bytes.is_empty() and hashing.update(bytes)!=OK: return {}
  var digest: PackedByteArray=hashing.finish()
  if digest.size()!=32: return {}
  metric_end("multimesh_buffer_hash",began)
  metric_count("multimesh_buffer_hashes");metric_count("multimesh_buffer_bytes",bytes.size())
- var bounds: AABB=mm.get_aabb()
- return {"ok":true,"bound":true,"node_instance_id":node.get_instance_id(),"multimesh_instance_id":mm.get_instance_id(),"mesh_instance_id":mesh.get_instance_id() if mesh!=null else 0,"mesh_surface_count":mesh.get_surface_count() if mesh!=null else 0,"mesh_aabb_hex":var_to_bytes(mesh.get_aabb()).hex_encode() if mesh!=null else "null","multimesh_aabb_hex":var_to_bytes(bounds).hex_encode(),"custom_aabb_hex":var_to_bytes(mm.custom_aabb).hex_encode(),"transform_format":format,"use_colors":mm.use_colors,"use_custom_data":mm.use_custom_data,"instance_count":count,"visible_instance_count":visible_count,"buffer_float_count":buffer.size(),"buffer_byte_count":bytes.size(),"buffer_sha256":digest.hex_encode()}
+ var empty_reason: String=multimesh_non_rendered_reason(node)
+ var drawable: bool=empty_reason.is_empty()
+ # No computed MM bounds or mesh surface/AABB queries for empty bindings.
+ # The safe stored-RID query above must first confirm CPU/server agreement.
+ # Null here means no drawable coverage, never a made-up finite AABB.
+ identity.merge({"has_drawable_bounds":drawable,"non_rendered_reason":empty_reason,"mesh_surface_count":mesh.get_surface_count() if drawable else null,"mesh_aabb_hex":var_to_bytes(mesh.get_aabb()).hex_encode() if drawable else null,"multimesh_aabb_hex":var_to_bytes(mm.get_aabb()).hex_encode() if drawable else null,"custom_aabb_hex":var_to_bytes(mm.custom_aabb).hex_encode(),"transform_format":format,"use_colors":mm.use_colors,"use_custom_data":mm.use_custom_data,"instance_count":count,"visible_instance_count":visible_count,"buffer_float_count":buffer.size(),"buffer_byte_count":bytes.size(),"buffer_sha256":digest.hex_encode()})
+ return identity
 
 func bind_multimesh_identity(item: Dictionary) -> bool:
  if not item.node is MultiMeshInstance3D: return true
  var state: Dictionary=multimesh_identity(item.node)
- if state.get("ok")!=true: return fail("MultiMesh baseline did not return explicit identity",item.path)
+ if state.get("ok")!=true: return fail("MultiMesh baseline did not return explicit consistent identity",{"path":item.path,"identity":state})
  item.multimesh_identity=state
  return true
 
@@ -70,6 +101,12 @@ func validate_multimesh_identity(item: Dictionary) -> bool:
  if not item.node is MultiMeshInstance3D: return true
  if not item.has("multimesh_identity") or item.multimesh_identity.get("ok")!=true:
   return fail("Missing explicit MultiMesh baseline identity",item.path)
+ # Detect null/rebound resources before full hashing, bounds or mesh queries.
+ var binding: Dictionary=multimesh_binding_identity(item.node)
+ if binding.get("ok")!=true: return fail("MultiMesh CPU/server binding is inconsistent or identity unavailable",{"path":item.path,"current_binding":binding})
+ for key in binding:
+  if not item.multimesh_identity.has(key) or item.multimesh_identity[key]!=binding[key]:
+   return fail("Actual MultiMesh resource binding changed after inventory",{"path":item.path,"instance_id":item.instance_id,"before":item.multimesh_identity,"current_binding":binding})
  var current: Dictionary=multimesh_identity(item.node)
  if current.get("ok")!=true:
   return fail("MultiMesh witness did not return explicit identity",item.path)
@@ -417,15 +454,28 @@ func queued_ancestors(node: Node) -> Array:
   parent=parent.get_parent()
  return result
 
-func geometry_state(node: GeometryInstance3D, bounds: AABB) -> Dictionary:
+func geometry_bounds(node: GeometryInstance3D, expansion: float=0.0) -> Variant:
+ # Empty CPU bindings are watched but have no finite drawable query bound.
+ # Do not ask GLES3 to compute bounds for a null mesh or zero-instance resource.
+ if node is MultiMeshInstance3D:
+  var binding: Dictionary=multimesh_binding_identity(node)
+  if binding.get("ok")!=true:
+   fail("MultiMesh CPU/server binding cannot provide safe bounds",{"path":str(node.get_path()),"current_binding":binding})
+   return null
+  if not multimesh_non_rendered_reason(node).is_empty(): return null
+ return world_bounds(node.get_aabb(),node.global_transform).grow(expansion*node.global_basis.get_scale().length()+.002)
+
+func geometry_state(node: GeometryInstance3D, bounds: Variant) -> Dictionary:
  var tree_visible: bool=node.is_visible_in_tree()
  var mask: int=owner_game.camera.cull_mask
  var effective: bool=tree_visible and (node.layers & mask)!=0
- var intersects: bool=bounds.intersects(domain)
- return {"exists":true,"inside_tree":node.is_inside_tree(),"path":str(node.get_path()),"instance_id":node.get_instance_id(),"class":node.get_class(),"own_visible":node.visible,"tree_visible":tree_visible,"effective_visible":effective,"layers":node.layers,"camera_cull_mask":mask,"transform_hex":var_to_bytes(node.global_transform).hex_encode(),"position":v(node.global_position),"bounds_position":v(bounds.position),"bounds_size":v(bounds.size),"bounds_intersects_domain":intersects,"effective_query_candidate":effective and intersects}
+ var has_bounds: bool=bounds is AABB
+ var intersects: bool=has_bounds and bounds.intersects(domain)
+ return {"exists":true,"inside_tree":node.is_inside_tree(),"path":str(node.get_path()),"instance_id":node.get_instance_id(),"class":node.get_class(),"own_visible":node.visible,"tree_visible":tree_visible,"effective_visible":effective,"layers":node.layers,"camera_cull_mask":mask,"transform_hex":var_to_bytes(node.global_transform).hex_encode(),"position":v(node.global_position),"has_drawable_bounds":has_bounds,"cpu_non_rendered_reason":multimesh_non_rendered_reason(node) if node is MultiMeshInstance3D else "","bounds_position":v(bounds.position) if has_bounds else null,"bounds_size":v(bounds.size) if has_bounds else null,"bounds_intersects_domain":intersects,"effective_query_candidate":effective and intersects}
 
-func watch_entry(node: GeometryInstance3D, visible: bool, expansion: float, bounds: AABB) -> Dictionary:
- return {"node":node,"path":str(node.get_path()),"instance_id":node.get_instance_id(),"transform":node.global_transform,"visible":visible,"layers":node.layers,"query_candidate":bounds.intersects(domain),"expansion":expansion,"bounds_position":v(bounds.position),"bounds_size":v(bounds.size),"queued_ancestors_at_inventory":queued_ancestors(node),"before":geometry_state(node,bounds)}
+func watch_entry(node: GeometryInstance3D, visible: bool, expansion: float, bounds: Variant) -> Dictionary:
+ var has_bounds: bool=bounds is AABB
+ return {"node":node,"path":str(node.get_path()),"instance_id":node.get_instance_id(),"transform":node.global_transform,"visible":visible,"layers":node.layers,"query_candidate":has_bounds and bounds.intersects(domain),"expansion":expansion,"has_drawable_bounds":has_bounds,"bounds_position":v(bounds.position) if has_bounds else null,"bounds_size":v(bounds.size) if has_bounds else null,"queued_ancestors_at_inventory":queued_ancestors(node),"before":geometry_state(node,bounds)}
 
 func watch_evidence(item: Dictionary) -> Dictionary:
  var result:=item.duplicate()
@@ -437,7 +487,7 @@ func watch_evidence(item: Dictionary) -> Dictionary:
  elif not node.is_inside_tree():
   result.current={"exists":true,"inside_tree":false,"path_at_inventory":item.path,"instance_id":node.get_instance_id(),"global_state_unavailable_outside_tree":true}
  else:
-  var bounds: AABB=world_bounds(node.get_aabb(),node.global_transform).grow(float(item.expansion)*node.global_basis.get_scale().length()+.002)
+  var bounds: Variant=geometry_bounds(node,float(item.expansion))
   result.current=geometry_state(node,bounds)
  return result
 
@@ -450,13 +500,14 @@ func prepare(game, query_domain: AABB) -> bool:
  for node in game.find_children("*","GeometryInstance3D",true,false):
   if game.airship.is_ancestor_of(node): continue
   var visible: bool=node.is_visible_in_tree() and (node.layers & game.camera.cull_mask)!=0
-  var initial_bounds: AABB=world_bounds(node.get_aabb(),node.global_transform).grow(.002)
+  var initial_bounds: Variant=geometry_bounds(node)
   var watch:=watch_entry(node,visible,0.0,initial_bounds)
   if not watch.queued_ancestors_at_inventory.is_empty(): return fail("Queued geometry cannot enter frozen inventory",watch_evidence(watch))
   if not bind_multimesh_identity(watch): return false
   watches.append(watch)
   metric_count("inventory_nodes");progress()
   if not visible: continue
+  if node is MultiMeshInstance3D and not initial_bounds is AABB: continue
   if not node is MeshInstance3D and not node is MultiMeshInstance3D:
    # Fail closed: unknown particle/procedural bounds need their own audit.
    return fail("Unclassified visible geometry type",[str(node.get_path()),node.get_class()])
@@ -473,7 +524,7 @@ func prepare(game, query_domain: AABB) -> bool:
    if extra<0: return false
    expansion=maxf(expansion,extra)
   watches[-1].expansion=expansion
-  var node_bounds: AABB=world_bounds(node.get_aabb(),node.global_transform).grow(expansion*node.global_basis.get_scale().length()+.002)
+  var node_bounds: AABB=geometry_bounds(node,expansion)
   watches[-1].query_candidate=node_bounds.intersects(domain)
   watches[-1].bounds_position=v(node_bounds.position)
   watches[-1].bounds_size=v(node_bounds.size)
@@ -495,6 +546,10 @@ func unchanged(check_buffers: bool, phase: String="unspecified", process_frame: 
   var node=item.node
   if not is_instance_valid(node): return fail("Inventoried geometry was removed",watch_evidence(item))
   if not node.is_inside_tree(): return fail("Inventoried geometry left the tree",watch_evidence(item))
+  # Binding/null changes must fail before any evidence/transform bound query.
+  if check_buffers and node is MultiMeshInstance3D:
+   if not validate_multimesh_identity(item): return false
+   multimesh_count+=1
   var queued:=queued_ancestors(node)
   if not queued.is_empty():
    var evidence:=watch_evidence(item)
@@ -502,12 +557,9 @@ func unchanged(check_buffers: bool, phase: String="unspecified", process_frame: 
    return fail("Inventoried geometry is now queued for deletion",evidence)
   var visible: bool=node.is_visible_in_tree() and (node.layers & owner_game.camera.cull_mask)!=0
   if node.global_transform!=item.transform or visible!=item.visible or node.layers!=item.layers:
-   var current_bounds: AABB=world_bounds(node.get_aabb(),node.global_transform).grow(float(item.expansion)*node.global_basis.get_scale().length()+.002)
-   if item.query_candidate or current_bounds.intersects(domain):
+   var current_bounds: Variant=geometry_bounds(node,float(item.expansion))
+   if item.query_candidate or (current_bounds is AABB and current_bounds.intersects(domain)):
     return fail("Candidate geometry visibility/transform changed after stationary inventory",watch_evidence(item))
-  if check_buffers and node is MultiMeshInstance3D:
-   if not validate_multimesh_identity(item): return false
-   multimesh_count+=1
  metric_end("inventory_validation",began)
  metric_count("inventory_validation_calls")
  if check_buffers:
@@ -522,6 +574,19 @@ func accept_distant_new_node(node: GeometryInstance3D) -> bool:
  var visible: bool=node.is_visible_in_tree() and (node.layers & owner_game.camera.cull_mask)!=0
  if not node is MeshInstance3D and not node is MultiMeshInstance3D:
   return fail("Unclassified new geometry",[str(node.get_path()),node.get_class()])
+ # Reject inconsistent renderer bindings before material/surface/bounds reads,
+ # including when CPU mesh is nonnull and only the server binding changed.
+ if node is MultiMeshInstance3D:
+  var binding: Dictionary=multimesh_binding_identity(node)
+  if binding.get("ok")!=true: return fail("New MultiMesh CPU/server binding is inconsistent",{"path":str(node.get_path()),"current_binding":binding})
+ # Newly observed legitimate empty MM bindings have no local query coverage,
+ # but enter the full identity watch so binding/count/buffer changes fail closed.
+ if node is MultiMeshInstance3D and not multimesh_non_rendered_reason(node).is_empty():
+  var empty_item:=watch_entry(node,visible,0.0,null)
+  if not empty_item.queued_ancestors_at_inventory.is_empty(): return fail("Queued new geometry cannot enter frozen inventory",watch_evidence(empty_item))
+  if not bind_multimesh_identity(empty_item): return false
+  watches.append(empty_item)
+  return true
  var mesh: Mesh=node.mesh if node is MeshInstance3D else (node.multimesh.mesh if node.multimesh!=null else null)
  if mesh==null: return fail("New geometry has no classifiable bounds",str(node.get_path()))
  var expansion:=material_expansion(node.material_override)
@@ -531,7 +596,7 @@ func accept_distant_new_node(node: GeometryInstance3D) -> bool:
   var extra:=material_expansion(material)
   if extra<0: return false
   expansion=maxf(expansion,extra)
- var bounds: AABB=world_bounds(node.get_aabb(),node.global_transform).grow(expansion*node.global_basis.get_scale().length()+.002)
+ var bounds: AABB=geometry_bounds(node,expansion)
  if visible and bounds.intersects(domain): return fail("New visible candidate after frozen local inventory",{"path":str(node.get_path()),"instance_id":node.get_instance_id(),"before":null,"current":geometry_state(node,bounds)})
  var item:=watch_entry(node,visible,expansion,bounds)
  if not item.queued_ancestors_at_inventory.is_empty(): return fail("Queued new geometry cannot enter frozen inventory",watch_evidence(item))
