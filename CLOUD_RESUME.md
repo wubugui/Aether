@@ -1,6 +1,15 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 05:19 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 05:25 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 05:25海平面/目录与v6图形夹具准备完成
+
+- I纯源码准备已完整发布 **d8efee0bd64adf8ebdac96d743c8f54cb114c8f4**，tree **45b58793a416bc034eddd68817ac0efae76864c5**、parent2841c700；16blob新bare独立公共Git读回匹配，本地b1c7c98同树soft对齐。原create_tree首拒后以原用户授权同参数一次重试成功，两已存blob未重传；I尚无native源或图
+- [海平面分类准备](source-assets/north-ridge62-intake/world-boundary-v1/README.md)显式新增unbounded_world_boundaries数组，按4.5.1逆转置normal/面上点公式记录无限plane方程/实体半空间、保存collision/metadata。非单位源normal、非finite/不可逆、unsupported top_level/disable_scale等仍拒；不造有限AABB、不丢海平面、runtime物理证明仍false。普通/-O Python106数学正控、12数值负控、25source guard负控通过，9份MIT官方源码/文档固定SHA；**新GDScript尚未parse/collect**
+- 新目录逐项核172保存Settlement完整边界及part union：0项与query的X范围重叠，24项只在Z重叠，西/东各12。西cottage_57299–57310最近完整边距query153.00390625m、距design193.00390625m，不能追认历史“北12”身份。4个有限query hits实际是Ocean、原生云组、Rainbow、CoastalStorm；Storm整组AABB命中但87个part均不命中，是保守group假阳性。775MM/道路宽度/运行时实体仍未证明
+- [v6准备](source-assets/coast61-nearbay-orbit/continuous-v6/README.md)显式连续输入协议：每≤.05rad原生事件后必须有更晚实际process及精确physics审段、pending清空才能下一步；只在3个目标完整2次≤.02m收敛。原所有实际sweep/视线/角误差/船0门、600/720秒界不变。每late-process和physics完整MM绑定/数量/格式/buffer/边界身份与段关联，新geometry先分类；通用Mesh/材料/ship/观测间恢复限制写进完整runtime报告，不冒称全资源冻结
+- v6初始headless夹具设计在执行前被4.5.1 Dummy源码复核纠正：实例setter是no-op，不能当native mutation证明。现在仅真实DISPLAY下320×180 X11/GL小夹具，48项实际检查**尚未运行**。共享launcher增加signal-safe kill/reap、实际退出/日志/最后身份、严格JSON/check集合及轻量进度计时；main wrapper复用固定北依赖guard，对每child前后核全1483闭包与缺席状态，保留原1477历史
+- v6最终18/18静态检查和29/29隔离Python wrapper测试通过（真实Python child信号/超时/异常，不是Godot）；再次static核1557身份/1483加载闭包通过。准备即时发布后协调原生parse/小GL夹具，尚未新的world。E/F2八件Slack仍待频道回答，全部GOAL/硬件GPU验收未通过
 
 ## 05:19 I粗面云体纯源码准备完成
 

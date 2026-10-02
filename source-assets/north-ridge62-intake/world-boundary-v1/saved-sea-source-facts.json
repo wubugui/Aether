@@ -1,0 +1,112 @@
+{
+  "status": "text/source evidence only; no new native collection",
+  "sources": [
+    {
+      "source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "bytes": 103070885,
+      "sha256": "6ec57b72a831d6fa906a8d866c339909de55c9c42297a038dcd429b18d0c2b18",
+      "relevant_sections": [
+        {
+          "path": ".",
+          "line": 58665,
+          "saved_section": "[node name=\"Skyfarer\" type=\"Node3D\"]\nscript = ExtResource(\"1_ql0jc\")"
+        },
+        {
+          "path": "World",
+          "line": 59308,
+          "saved_section": "[node name=\"World\" type=\"Node3D\" parent=\".\"]\nscript = ExtResource(\"7_7krpj\")\nstream_terrain_material = ExtResource(\"8_lo6dk\")\nstream_world_material = ExtResource(\"9_3hc1l\")\nstream_cloud_material = ExtResource(\"10_527r3\")"
+        },
+        {
+          "path": "World/Ocean",
+          "line": 77971,
+          "saved_section": "[node name=\"Ocean\" type=\"MeshInstance3D\" parent=\"World\"]\nlayers = 262144\nmaterial_override = ExtResource(\"927_ux40f\")\ncast_shadow = 0\nmesh = SubResource(\"PlaneMesh_ivalj\")"
+        },
+        {
+          "path": "World/Ocean/SeaCollision",
+          "line": 77977,
+          "saved_section": "[node name=\"SeaCollision\" type=\"StaticBody3D\" parent=\"World/Ocean\"]\ncollision_layer = 5\ncollision_mask = 2"
+        },
+        {
+          "path": "World/Ocean/SeaCollision/Shape",
+          "line": 77981,
+          "saved_section": "[node name=\"Shape\" type=\"CollisionShape3D\" parent=\"World/Ocean/SeaCollision\"]\nshape = SubResource(\"WorldBoundaryShape3D_qam02\")"
+        },
+        {
+          "resource_type": "WorldBoundaryShape3D",
+          "line": 25818,
+          "saved_section": "[sub_resource type=\"WorldBoundaryShape3D\" id=\"WorldBoundaryShape3D_qam02\"]"
+        }
+      ]
+    },
+    {
+      "source": "res://scenes/candidate55-observation/Game55Observation.tscn",
+      "bytes": 338,
+      "sha256": "65d43959d704e7406c56f4003df5063fad37572e42afd9a8025fbed55dbba286",
+      "relevant_sections": [
+        {
+          "path": ".",
+          "line": 6,
+          "saved_section": "[node name=\"Skyfarer\" instance=ExtResource(\"1_base\")]\nscript = ExtResource(\"2_pose\")\nimproved_lake_observation = true"
+        }
+      ]
+    },
+    {
+      "source": "res://scenes/candidate56-coast/Game56Coast.tscn",
+      "bytes": 1453,
+      "sha256": "5c0cd84b860c409b647d970f123187e89b2e01099e159a43aff372d40ddbe8c5",
+      "relevant_sections": [
+        {
+          "path": ".",
+          "line": 11,
+          "saved_section": "[node name=\"Skyfarer\" instance=ExtResource(\"1_base\")]"
+        }
+      ]
+    },
+    {
+      "source": "res://scenes/candidate60-observation/Game60Observation.tscn",
+      "bytes": 339,
+      "sha256": "8fcb0d24d503133a7e6ba29645291a73314c88b40ab447e0802937f1c802ac45",
+      "relevant_sections": [
+        {
+          "path": ".",
+          "line": 6,
+          "saved_section": "[node name=\"Skyfarer\" instance=ExtResource(\"1_base\")]\nscript = ExtResource(\"2_pose\")\nimproved_cloud_observation = true"
+        }
+      ]
+    },
+    {
+      "source": "res://scenes/candidate61-coast/Game61Coast.tscn",
+      "bytes": 1453,
+      "sha256": "dff06de665e1fa1f6ab74ff3cdf4e91442e1ac322839a37718e799f0d7fa44d8",
+      "relevant_sections": [
+        {
+          "path": ".",
+          "line": 11,
+          "saved_section": "[node name=\"Skyfarer\" instance=ExtResource(\"1_base\")]"
+        }
+      ]
+    }
+  ],
+  "interpretation": {
+    "shape": "World/Ocean/SeaCollision/Shape",
+    "resource": "res://scenes/candidate53d-west/Game53dWest.tscn::WorldBoundaryShape3D_qam02",
+    "local_plane_native_default": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "saved_world_transform": "identity; no transform overrides in full effective scene inheritance for relevant nodes",
+    "saved_shape_disabled_native_default": false,
+    "saved_body_collision_layer": 5,
+    "saved_body_collision_mask": 2,
+    "layer_names": {
+      "1": "World solid",
+      "2": "Airship",
+      "3": "Ground probe"
+    },
+    "expected_world_plane": "y = 0",
+    "conservative_solid_half_space": "y <= 0",
+    "runtime_collision_tested": false
+  }
+}

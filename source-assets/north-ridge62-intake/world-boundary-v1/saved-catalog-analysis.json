@@ -1,0 +1,1166 @@
+{
+  "status": "analysis_of_failed_saved_native_run_only",
+  "input": "cloud-evidence/north-ridge62-collect-20261002T050835Z-k8_cwtci/native-intake.json",
+  "input_bytes": 1211462,
+  "input_sha256": "bd48c7ccbaee51cbf43dba1efeac7a78957de59166eeafcecddbfb1038744b04",
+  "historical_issue": {
+    "class": "WorldBoundaryShape3D",
+    "kind": "unbounded_saved_shape",
+    "path": "World/Ocean/SeaCollision/Shape"
+  },
+  "historical_failure_preserved": true,
+  "design_box": [
+    -3048.0,
+    -2040.0,
+    -5160.0,
+    -3770.0
+  ],
+  "query_box_with_40m": [
+    -3088.0,
+    -2000.0,
+    -5200.0,
+    -3730.0
+  ],
+  "saved_catalog_count": 172,
+  "saved_catalog_type_counts": {
+    "dock": 6,
+    "lighthouse": 2,
+    "cottage": 149,
+    "crate": 6,
+    "castle": 1,
+    "observatory": 1,
+    "mill": 3,
+    "mill_rotor": 3,
+    "ruins": 1
+  },
+  "all_saved_settlement_part_unions_recomputed": true,
+  "settlement_x_overlap_count": 0,
+  "settlement_z_overlap_count": 24,
+  "settlement_query_hit_count": 0,
+  "bounded_query_entity_count": 4,
+  "bounded_query_entities": [
+    {
+      "root": "World/Ocean",
+      "whole_bounds": {
+        "max": [
+          50000.0,
+          0.0,
+          50000.0
+        ],
+        "min": [
+          -50000.0,
+          0.0,
+          -50000.0
+        ]
+      },
+      "whole_bounds_plus_40m_xz": {
+        "max": [
+          50040.0,
+          0.0,
+          50040.0
+        ],
+        "min": [
+          -50040.0,
+          0.0,
+          -50040.0
+        ]
+      },
+      "hits_design": true,
+      "hits_query": true,
+      "part_count": 1,
+      "part_paths": [
+        "World/Ocean"
+      ],
+      "part_query_hits": 1,
+      "part_query_hit_paths": [
+        "World/Ocean"
+      ],
+      "whole_group_only_hit": false,
+      "interpretation": "Conservative whole-group AABB; not exact occupied volume or live visibility."
+    },
+    {
+      "root": "NativeCoastalSky27f/_Node3D_712",
+      "whole_bounds": {
+        "max": [
+          -1848.7890625,
+          800.850708007812,
+          -4230.63427734375
+        ],
+        "min": [
+          -2653.443359375,
+          594.208923339844,
+          -4661.7880859375
+        ]
+      },
+      "whole_bounds_plus_40m_xz": {
+        "max": [
+          -1808.7890625,
+          800.850708007812,
+          -4190.63427734375
+        ],
+        "min": [
+          -2693.443359375,
+          594.208923339844,
+          -4701.7880859375
+        ]
+      },
+      "hits_design": true,
+      "hits_query": true,
+      "part_count": 4,
+      "part_paths": [
+        "NativeCoastalSky27f/_Node3D_712/Cloud bank 2 joined vapor lobe 00",
+        "NativeCoastalSky27f/_Node3D_712/Cloud bank 2 joined vapor lobe 01",
+        "NativeCoastalSky27f/_Node3D_712/Cloud bank 2 joined vapor lobe 02",
+        "NativeCoastalSky27f/_Node3D_712/Cloud bank 2 joined vapor lobe 03"
+      ],
+      "part_query_hits": 4,
+      "part_query_hit_paths": [
+        "NativeCoastalSky27f/_Node3D_712/Cloud bank 2 joined vapor lobe 00",
+        "NativeCoastalSky27f/_Node3D_712/Cloud bank 2 joined vapor lobe 01",
+        "NativeCoastalSky27f/_Node3D_712/Cloud bank 2 joined vapor lobe 02",
+        "NativeCoastalSky27f/_Node3D_712/Cloud bank 2 joined vapor lobe 03"
+      ],
+      "whole_group_only_hit": false,
+      "interpretation": "Conservative whole-group AABB; not exact occupied volume or live visibility."
+    },
+    {
+      "root": "Weather42b/Rainbow",
+      "whole_bounds": {
+        "max": [
+          -1400.0,
+          650.0,
+          -3900.0
+        ],
+        "min": [
+          -3200.0,
+          -250.0,
+          -3900.0
+        ]
+      },
+      "whole_bounds_plus_40m_xz": {
+        "max": [
+          -1360.0,
+          650.0,
+          -3860.0
+        ],
+        "min": [
+          -3240.0,
+          -250.0,
+          -3940.0
+        ]
+      },
+      "hits_design": true,
+      "hits_query": true,
+      "part_count": 7,
+      "part_paths": [
+        "Weather42b/Rainbow/spectrum_band_0",
+        "Weather42b/Rainbow/spectrum_band_1",
+        "Weather42b/Rainbow/spectrum_band_2",
+        "Weather42b/Rainbow/spectrum_band_3",
+        "Weather42b/Rainbow/spectrum_band_4",
+        "Weather42b/Rainbow/spectrum_band_5",
+        "Weather42b/Rainbow/spectrum_band_6"
+      ],
+      "part_query_hits": 7,
+      "part_query_hit_paths": [
+        "Weather42b/Rainbow/spectrum_band_0",
+        "Weather42b/Rainbow/spectrum_band_1",
+        "Weather42b/Rainbow/spectrum_band_2",
+        "Weather42b/Rainbow/spectrum_band_3",
+        "Weather42b/Rainbow/spectrum_band_4",
+        "Weather42b/Rainbow/spectrum_band_5",
+        "Weather42b/Rainbow/spectrum_band_6"
+      ],
+      "whole_group_only_hit": false,
+      "interpretation": "Conservative whole-group AABB; not exact occupied volume or live visibility."
+    },
+    {
+      "root": "Weather42b/CoastalStorm",
+      "whole_bounds": {
+        "max": [
+          -3000.0029296875,
+          830.854370117188,
+          -3488.33666992188
+        ],
+        "min": [
+          -4599.126953125,
+          341.736083984375,
+          -4925.72705078125
+        ]
+      },
+      "whole_bounds_plus_40m_xz": {
+        "max": [
+          -2960.0029296875,
+          830.854370117188,
+          -3448.33666992188
+        ],
+        "min": [
+          -4639.126953125,
+          341.736083984375,
+          -4965.72705078125
+        ]
+      },
+      "hits_design": true,
+      "hits_query": true,
+      "part_count": 87,
+      "part_paths": [
+        "Weather42b/CoastalStorm/Bolt_0/trunk_00",
+        "Weather42b/CoastalStorm/Bolt_0/trunk_01",
+        "Weather42b/CoastalStorm/Bolt_0/trunk_02",
+        "Weather42b/CoastalStorm/Bolt_0/trunk_03",
+        "Weather42b/CoastalStorm/Bolt_0/trunk_04",
+        "Weather42b/CoastalStorm/Bolt_0/trunk_05",
+        "Weather42b/CoastalStorm/Bolt_0/trunk_06",
+        "Weather42b/CoastalStorm/Bolt_0/trunk_07",
+        "Weather42b/CoastalStorm/Bolt_0/trunk_08",
+        "Weather42b/CoastalStorm/Bolt_0/trunk_09",
+        "Weather42b/CoastalStorm/Bolt_0/trunk_10",
+        "Weather42b/CoastalStorm/Bolt_0/trunk_11",
+        "Weather42b/CoastalStorm/Bolt_0/trunk_12",
+        "Weather42b/CoastalStorm/Bolt_0/trunk_13",
+        "Weather42b/CoastalStorm/Bolt_0/trunk_14",
+        "Weather42b/CoastalStorm/Bolt_0/trunk_15",
+        "Weather42b/CoastalStorm/Bolt_0/trunk_16",
+        "Weather42b/CoastalStorm/Bolt_0/branch_4_0",
+        "Weather42b/CoastalStorm/Bolt_0/branch_4_1",
+        "Weather42b/CoastalStorm/Bolt_0/branch_4_2",
+        "Weather42b/CoastalStorm/Bolt_0/branch_4_3",
+        "Weather42b/CoastalStorm/Bolt_0/branch_8_0",
+        "Weather42b/CoastalStorm/Bolt_0/branch_8_1",
+        "Weather42b/CoastalStorm/Bolt_0/branch_8_2",
+        "Weather42b/CoastalStorm/Bolt_0/branch_8_3",
+        "Weather42b/CoastalStorm/Bolt_0/branch_11_0",
+        "Weather42b/CoastalStorm/Bolt_0/branch_11_1",
+        "Weather42b/CoastalStorm/Bolt_0/branch_11_2",
+        "Weather42b/CoastalStorm/Bolt_0/branch_11_3",
+        "Weather42b/CoastalStorm/Bolt_1/trunk_00_001",
+        "Weather42b/CoastalStorm/Bolt_1/trunk_01_001",
+        "Weather42b/CoastalStorm/Bolt_1/trunk_02_001",
+        "Weather42b/CoastalStorm/Bolt_1/trunk_03_001",
+        "Weather42b/CoastalStorm/Bolt_1/trunk_04_001",
+        "Weather42b/CoastalStorm/Bolt_1/trunk_05_001",
+        "Weather42b/CoastalStorm/Bolt_1/trunk_06_001",
+        "Weather42b/CoastalStorm/Bolt_1/trunk_07_001",
+        "Weather42b/CoastalStorm/Bolt_1/trunk_08_001",
+        "Weather42b/CoastalStorm/Bolt_1/trunk_09_001",
+        "Weather42b/CoastalStorm/Bolt_1/trunk_10_001",
+        "Weather42b/CoastalStorm/Bolt_1/trunk_11_001",
+        "Weather42b/CoastalStorm/Bolt_1/trunk_12_001",
+        "Weather42b/CoastalStorm/Bolt_1/trunk_13_001",
+        "Weather42b/CoastalStorm/Bolt_1/trunk_14_001",
+        "Weather42b/CoastalStorm/Bolt_1/trunk_15_001",
+        "Weather42b/CoastalStorm/Bolt_1/trunk_16_001",
+        "Weather42b/CoastalStorm/Bolt_1/branch_4_0_001",
+        "Weather42b/CoastalStorm/Bolt_1/branch_4_1_001",
+        "Weather42b/CoastalStorm/Bolt_1/branch_4_2_001",
+        "Weather42b/CoastalStorm/Bolt_1/branch_4_3_001",
+        "Weather42b/CoastalStorm/Bolt_1/branch_8_0_001",
+        "Weather42b/CoastalStorm/Bolt_1/branch_8_1_001",
+        "Weather42b/CoastalStorm/Bolt_1/branch_8_2_001",
+        "Weather42b/CoastalStorm/Bolt_1/branch_8_3_001",
+        "Weather42b/CoastalStorm/Bolt_1/branch_11_0_001",
+        "Weather42b/CoastalStorm/Bolt_1/branch_11_1_001",
+        "Weather42b/CoastalStorm/Bolt_1/branch_11_2_001",
+        "Weather42b/CoastalStorm/Bolt_1/branch_11_3_001",
+        "Weather42b/CoastalStorm/Bolt_2/trunk_00_002",
+        "Weather42b/CoastalStorm/Bolt_2/trunk_01_002",
+        "Weather42b/CoastalStorm/Bolt_2/trunk_02_002",
+        "Weather42b/CoastalStorm/Bolt_2/trunk_03_002",
+        "Weather42b/CoastalStorm/Bolt_2/trunk_04_002",
+        "Weather42b/CoastalStorm/Bolt_2/trunk_05_002",
+        "Weather42b/CoastalStorm/Bolt_2/trunk_06_002",
+        "Weather42b/CoastalStorm/Bolt_2/trunk_07_002",
+        "Weather42b/CoastalStorm/Bolt_2/trunk_08_002",
+        "Weather42b/CoastalStorm/Bolt_2/trunk_09_002",
+        "Weather42b/CoastalStorm/Bolt_2/trunk_10_002",
+        "Weather42b/CoastalStorm/Bolt_2/trunk_11_002",
+        "Weather42b/CoastalStorm/Bolt_2/trunk_12_002",
+        "Weather42b/CoastalStorm/Bolt_2/trunk_13_002",
+        "Weather42b/CoastalStorm/Bolt_2/trunk_14_002",
+        "Weather42b/CoastalStorm/Bolt_2/trunk_15_002",
+        "Weather42b/CoastalStorm/Bolt_2/trunk_16_002",
+        "Weather42b/CoastalStorm/Bolt_2/branch_4_0_002",
+        "Weather42b/CoastalStorm/Bolt_2/branch_4_1_002",
+        "Weather42b/CoastalStorm/Bolt_2/branch_4_2_002",
+        "Weather42b/CoastalStorm/Bolt_2/branch_4_3_002",
+        "Weather42b/CoastalStorm/Bolt_2/branch_8_0_002",
+        "Weather42b/CoastalStorm/Bolt_2/branch_8_1_002",
+        "Weather42b/CoastalStorm/Bolt_2/branch_8_2_002",
+        "Weather42b/CoastalStorm/Bolt_2/branch_8_3_002",
+        "Weather42b/CoastalStorm/Bolt_2/branch_11_0_002",
+        "Weather42b/CoastalStorm/Bolt_2/branch_11_1_002",
+        "Weather42b/CoastalStorm/Bolt_2/branch_11_2_002",
+        "Weather42b/CoastalStorm/Bolt_2/branch_11_3_002"
+      ],
+      "part_query_hits": 0,
+      "part_query_hit_paths": [],
+      "whole_group_only_hit": true,
+      "interpretation": "Conservative whole-group AABB; not exact occupied volume or live visibility."
+    }
+  ],
+  "west_z_overlapping_cluster": {
+    "selection": "All saved catalog bounds overlapping query Z and entirely west of query X; no nearest-N selection.",
+    "historical_northern_12_identity_proved": false,
+    "count": 12,
+    "union_bounds": {
+      "min": [
+        -3360.1787109375,
+        22.5930004119873,
+        -5048.17041015625
+      ],
+      "max": [
+        -3241.00390625,
+        39.6990013122559,
+        -4946.12548828125
+      ]
+    },
+    "minimum_x_gap_to_query_m": 153.00390625,
+    "minimum_x_gap_to_design_m": 193.00390625,
+    "identities": [
+      {
+        "root": "World/Settlements/cottage_57299",
+        "whole_bounds": {
+          "max": [
+            -3258.00268554688,
+            28.925500869751,
+            -4962.52978515625
+          ],
+          "min": [
+            -3266.55151367188,
+            22.5930004119873,
+            -4970.55419921875
+          ]
+        },
+        "whole_bounds_plus_40m_xz": {
+          "max": [
+            -3218.00268554688,
+            28.925500869751,
+            -4922.52978515625
+          ],
+          "min": [
+            -3306.55151367188,
+            22.5930004119873,
+            -5010.55419921875
+          ]
+        },
+        "hits_design": false,
+        "hits_query": false,
+        "part_count": 2,
+        "part_paths": [
+          "World/Settlements/cottage_57299/Model/cottage",
+          "World/Settlements/cottage_57299/Collision/Shape"
+        ]
+      },
+      {
+        "root": "World/Settlements/cottage_57300",
+        "whole_bounds": {
+          "max": [
+            -3270.28784179688,
+            29.7104988098145,
+            -4978.6787109375
+          ],
+          "min": [
+            -3275.92407226562,
+            23.4459991455078,
+            -4985.6435546875
+          ]
+        },
+        "whole_bounds_plus_40m_xz": {
+          "max": [
+            -3230.28784179688,
+            29.7104988098145,
+            -4938.6787109375
+          ],
+          "min": [
+            -3315.92407226562,
+            23.4459991455078,
+            -5025.6435546875
+          ]
+        },
+        "hits_design": false,
+        "hits_query": false,
+        "part_count": 2,
+        "part_paths": [
+          "World/Settlements/cottage_57300/Model/cottage",
+          "World/Settlements/cottage_57300/Collision/Shape"
+        ]
+      },
+      {
+        "root": "World/Settlements/cottage_57301",
+        "whole_bounds": {
+          "max": [
+            -3297.93359375,
+            36.2275009155273,
+            -5008.18359375
+          ],
+          "min": [
+            -3312.1982421875,
+            25.7129993438721,
+            -5021.6982421875
+          ]
+        },
+        "whole_bounds_plus_40m_xz": {
+          "max": [
+            -3257.93359375,
+            36.2275009155273,
+            -4968.18359375
+          ],
+          "min": [
+            -3352.1982421875,
+            25.7129993438721,
+            -5061.6982421875
+          ]
+        },
+        "hits_design": false,
+        "hits_query": false,
+        "part_count": 2,
+        "part_paths": [
+          "World/Settlements/cottage_57301/Model/cottage",
+          "World/Settlements/cottage_57301/Collision/Shape"
+        ]
+      },
+      {
+        "root": "World/Settlements/cottage_57302",
+        "whole_bounds": {
+          "max": [
+            -3241.00390625,
+            31.0809993743896,
+            -4995.07275390625
+          ],
+          "min": [
+            -3250.90625,
+            23.7029991149902,
+            -5004.28564453125
+          ]
+        },
+        "whole_bounds_plus_40m_xz": {
+          "max": [
+            -3201.00390625,
+            31.0809993743896,
+            -4955.07275390625
+          ],
+          "min": [
+            -3290.90625,
+            23.7029991149902,
+            -5044.28564453125
+          ]
+        },
+        "hits_design": false,
+        "hits_query": false,
+        "part_count": 2,
+        "part_paths": [
+          "World/Settlements/cottage_57302/Model/cottage",
+          "World/Settlements/cottage_57302/Collision/Shape"
+        ]
+      },
+      {
+        "root": "World/Settlements/cottage_57303",
+        "whole_bounds": {
+          "max": [
+            -3348.74340820312,
+            33.3629989624023,
+            -4986.09423828125
+          ],
+          "min": [
+            -3355.48266601562,
+            27.1580009460449,
+            -4991.47216796875
+          ]
+        },
+        "whole_bounds_plus_40m_xz": {
+          "max": [
+            -3308.74340820312,
+            33.3629989624023,
+            -4946.09423828125
+          ],
+          "min": [
+            -3395.48266601562,
+            27.1580009460449,
+            -5031.47216796875
+          ]
+        },
+        "hits_design": false,
+        "hits_query": false,
+        "part_count": 2,
+        "part_paths": [
+          "World/Settlements/cottage_57303/Model/cottage",
+          "World/Settlements/cottage_57303/Collision/Shape"
+        ]
+      },
+      {
+        "root": "World/Settlements/cottage_57304",
+        "whole_bounds": {
+          "max": [
+            -3257.46508789062,
+            33.9075012207031,
+            -4982.56005859375
+          ],
+          "min": [
+            -3271.14282226562,
+            23.7840003967285,
+            -4995.41552734375
+          ]
+        },
+        "whole_bounds_plus_40m_xz": {
+          "max": [
+            -3217.46508789062,
+            33.9075012207031,
+            -4942.56005859375
+          ],
+          "min": [
+            -3311.14282226562,
+            23.7840003967285,
+            -5035.41552734375
+          ]
+        },
+        "hits_design": false,
+        "hits_query": false,
+        "part_count": 2,
+        "part_paths": [
+          "World/Settlements/cottage_57304/Model/cottage",
+          "World/Settlements/cottage_57304/Collision/Shape"
+        ]
+      },
+      {
+        "root": "World/Settlements/cottage_57305",
+        "whole_bounds": {
+          "max": [
+            -3291.40698242188,
+            35.9119987487793,
+            -5038.30029296875
+          ],
+          "min": [
+            -3300.79907226562,
+            28.9589996337891,
+            -5047.12548828125
+          ]
+        },
+        "whole_bounds_plus_40m_xz": {
+          "max": [
+            -3251.40698242188,
+            35.9119987487793,
+            -4998.30029296875
+          ],
+          "min": [
+            -3340.79907226562,
+            28.9589996337891,
+            -5087.12548828125
+          ]
+        },
+        "hits_design": false,
+        "hits_query": false,
+        "part_count": 2,
+        "part_paths": [
+          "World/Settlements/cottage_57305/Model/cottage",
+          "World/Settlements/cottage_57305/Collision/Shape"
+        ]
+      },
+      {
+        "root": "World/Settlements/cottage_57306",
+        "whole_bounds": {
+          "max": [
+            -3346.76123046875,
+            39.6990013122559,
+            -5033.90185546875
+          ],
+          "min": [
+            -3360.1787109375,
+            29.1420001983643,
+            -5048.17041015625
+          ]
+        },
+        "whole_bounds_plus_40m_xz": {
+          "max": [
+            -3306.76123046875,
+            39.6990013122559,
+            -4993.90185546875
+          ],
+          "min": [
+            -3400.1787109375,
+            29.1420001983643,
+            -5088.17041015625
+          ]
+        },
+        "hits_design": false,
+        "hits_query": false,
+        "part_count": 2,
+        "part_paths": [
+          "World/Settlements/cottage_57306/Model/cottage",
+          "World/Settlements/cottage_57306/Collision/Shape"
+        ]
+      },
+      {
+        "root": "World/Settlements/cottage_57307",
+        "whole_bounds": {
+          "max": [
+            -3259.33740234375,
+            31.4660015106201,
+            -5008.21630859375
+          ],
+          "min": [
+            -3268.20458984375,
+            24.8700008392334,
+            -5016.48583984375
+          ]
+        },
+        "whole_bounds_plus_40m_xz": {
+          "max": [
+            -3219.33740234375,
+            31.4660015106201,
+            -4968.21630859375
+          ],
+          "min": [
+            -3308.20458984375,
+            24.8700008392334,
+            -5056.48583984375
+          ]
+        },
+        "hits_design": false,
+        "hits_query": false,
+        "part_count": 2,
+        "part_paths": [
+          "World/Settlements/cottage_57307/Model/cottage",
+          "World/Settlements/cottage_57307/Collision/Shape"
+        ]
+      },
+      {
+        "root": "World/Settlements/cottage_57308",
+        "whole_bounds": {
+          "max": [
+            -3287.5556640625,
+            30.1679992675781,
+            -4968.81298828125
+          ],
+          "min": [
+            -3296.6162109375,
+            22.806999206543,
+            -4976.63134765625
+          ]
+        },
+        "whole_bounds_plus_40m_xz": {
+          "max": [
+            -3247.5556640625,
+            30.1679992675781,
+            -4928.81298828125
+          ],
+          "min": [
+            -3336.6162109375,
+            22.806999206543,
+            -5016.63134765625
+          ]
+        },
+        "hits_design": false,
+        "hits_query": false,
+        "part_count": 2,
+        "part_paths": [
+          "World/Settlements/cottage_57308/Model/cottage",
+          "World/Settlements/cottage_57308/Collision/Shape"
+        ]
+      },
+      {
+        "root": "World/Settlements/cottage_57309",
+        "whole_bounds": {
+          "max": [
+            -3342.67309570312,
+            36.8819999694824,
+            -5024.61572265625
+          ],
+          "min": [
+            -3354.89282226562,
+            27.2940006256104,
+            -5037.58642578125
+          ]
+        },
+        "whole_bounds_plus_40m_xz": {
+          "max": [
+            -3302.67309570312,
+            36.8819999694824,
+            -4984.61572265625
+          ],
+          "min": [
+            -3394.89282226562,
+            27.2940006256104,
+            -5077.58642578125
+          ]
+        },
+        "hits_design": false,
+        "hits_query": false,
+        "part_count": 2,
+        "part_paths": [
+          "World/Settlements/cottage_57309/Model/cottage",
+          "World/Settlements/cottage_57309/Collision/Shape"
+        ]
+      },
+      {
+        "root": "World/Settlements/cottage_57310",
+        "whole_bounds": {
+          "max": [
+            -3323.47534179688,
+            32.1420021057129,
+            -4946.12548828125
+          ],
+          "min": [
+            -3334.33862304688,
+            23.8460006713867,
+            -4955.96044921875
+          ]
+        },
+        "whole_bounds_plus_40m_xz": {
+          "max": [
+            -3283.47534179688,
+            32.1420021057129,
+            -4906.12548828125
+          ],
+          "min": [
+            -3374.33862304688,
+            23.8460006713867,
+            -4995.96044921875
+          ]
+        },
+        "hits_design": false,
+        "hits_query": false,
+        "part_count": 2,
+        "part_paths": [
+          "World/Settlements/cottage_57310/Model/cottage",
+          "World/Settlements/cottage_57310/Collision/Shape"
+        ]
+      }
+    ]
+  },
+  "east_z_overlapping_cluster": {
+    "selection": "All saved catalog bounds overlapping query Z and entirely east of query X; no nearest-N selection.",
+    "historical_northern_12_identity_proved": false,
+    "count": 12,
+    "union_bounds": {
+      "min": [
+        2191.8994140625,
+        15.2019996643066,
+        -4255.0390625
+      ],
+      "max": [
+        2301.03955078125,
+        28.2224998474121,
+        -4143.9228515625
+      ]
+    },
+    "minimum_x_gap_to_query_m": 4191.8994140625,
+    "minimum_x_gap_to_design_m": 4231.8994140625,
+    "identities": [
+      {
+        "root": "World/Settlements/cottage_57275",
+        "whole_bounds": {
+          "max": [
+            2236.21411132812,
+            21.755500793457,
+            -4243.06640625
+          ],
+          "min": [
+            2227.37573242188,
+            15.2019996643066,
+            -4251.34765625
+          ]
+        },
+        "whole_bounds_plus_40m_xz": {
+          "max": [
+            2276.21411132812,
+            21.755500793457,
+            -4203.06640625
+          ],
+          "min": [
+            2187.37573242188,
+            15.2019996643066,
+            -4291.34765625
+          ]
+        },
+        "hits_design": false,
+        "hits_query": false,
+        "part_count": 2,
+        "part_paths": [
+          "World/Settlements/cottage_57275/Model/cottage",
+          "World/Settlements/cottage_57275/Collision/Shape"
+        ]
+      },
+      {
+        "root": "World/Settlements/cottage_57276",
+        "whole_bounds": {
+          "max": [
+            2287.02270507812,
+            24.7154998779297,
+            -4143.9228515625
+          ],
+          "min": [
+            2275.43530273438,
+            16.2070007324219,
+            -4155.384765625
+          ]
+        },
+        "whole_bounds_plus_40m_xz": {
+          "max": [
+            2327.02270507812,
+            24.7154998779297,
+            -4103.9228515625
+          ],
+          "min": [
+            2235.43530273438,
+            16.2070007324219,
+            -4195.384765625
+          ]
+        },
+        "hits_design": false,
+        "hits_query": false,
+        "part_count": 2,
+        "part_paths": [
+          "World/Settlements/cottage_57276/Model/cottage",
+          "World/Settlements/cottage_57276/Collision/Shape"
+        ]
+      },
+      {
+        "root": "World/Settlements/cottage_57277",
+        "whole_bounds": {
+          "max": [
+            2204.6748046875,
+            25.6625003814697,
+            -4144.5576171875
+          ],
+          "min": [
+            2191.8994140625,
+            16.3040008544922,
+            -4157.0224609375
+          ]
+        },
+        "whole_bounds_plus_40m_xz": {
+          "max": [
+            2244.6748046875,
+            25.6625003814697,
+            -4104.5576171875
+          ],
+          "min": [
+            2151.8994140625,
+            16.3040008544922,
+            -4197.0224609375
+          ]
+        },
+        "hits_design": false,
+        "hits_query": false,
+        "part_count": 2,
+        "part_paths": [
+          "World/Settlements/cottage_57277/Model/cottage",
+          "World/Settlements/cottage_57277/Collision/Shape"
+        ]
+      },
+      {
+        "root": "World/Settlements/cottage_57278",
+        "whole_bounds": {
+          "max": [
+            2284.65600585938,
+            24.5815010070801,
+            -4215.9072265625
+          ],
+          "min": [
+            2275.31616210938,
+            16.7700004577637,
+            -4223.8125
+          ]
+        },
+        "whole_bounds_plus_40m_xz": {
+          "max": [
+            2324.65600585938,
+            24.5815010070801,
+            -4175.9072265625
+          ],
+          "min": [
+            2235.31616210938,
+            16.7700004577637,
+            -4263.8125
+          ]
+        },
+        "hits_design": false,
+        "hits_query": false,
+        "part_count": 2,
+        "part_paths": [
+          "World/Settlements/cottage_57278/Model/cottage",
+          "World/Settlements/cottage_57278/Collision/Shape"
+        ]
+      },
+      {
+        "root": "World/Settlements/cottage_57279",
+        "whole_bounds": {
+          "max": [
+            2262.65258789062,
+            28.2224998474121,
+            -4146.96630859375
+          ],
+          "min": [
+            2250.80151367188,
+            17.3680000305176,
+            -4156.45361328125
+          ]
+        },
+        "whole_bounds_plus_40m_xz": {
+          "max": [
+            2302.65258789062,
+            28.2224998474121,
+            -4106.96630859375
+          ],
+          "min": [
+            2210.80151367188,
+            17.3680000305176,
+            -4196.45361328125
+          ]
+        },
+        "hits_design": false,
+        "hits_query": false,
+        "part_count": 2,
+        "part_paths": [
+          "World/Settlements/cottage_57279/Model/cottage",
+          "World/Settlements/cottage_57279/Collision/Shape"
+        ]
+      },
+      {
+        "root": "World/Settlements/cottage_57280",
+        "whole_bounds": {
+          "max": [
+            2301.03955078125,
+            25.6975002288818,
+            -4177.712890625
+          ],
+          "min": [
+            2290.36865234375,
+            15.8290004730225,
+            -4186.205078125
+          ]
+        },
+        "whole_bounds_plus_40m_xz": {
+          "max": [
+            2341.03955078125,
+            25.6975002288818,
+            -4137.712890625
+          ],
+          "min": [
+            2250.36865234375,
+            15.8290004730225,
+            -4226.205078125
+          ]
+        },
+        "hits_design": false,
+        "hits_query": false,
+        "part_count": 2,
+        "part_paths": [
+          "World/Settlements/cottage_57280/Model/cottage",
+          "World/Settlements/cottage_57280/Collision/Shape"
+        ]
+      },
+      {
+        "root": "World/Settlements/cottage_57281",
+        "whole_bounds": {
+          "max": [
+            2293.43701171875,
+            26.3145008087158,
+            -4196.5146484375
+          ],
+          "min": [
+            2282.59912109375,
+            16.5310001373291,
+            -4208.857421875
+          ]
+        },
+        "whole_bounds_plus_40m_xz": {
+          "max": [
+            2333.43701171875,
+            26.3145008087158,
+            -4156.5146484375
+          ],
+          "min": [
+            2242.59912109375,
+            16.5310001373291,
+            -4248.857421875
+          ]
+        },
+        "hits_design": false,
+        "hits_query": false,
+        "part_count": 2,
+        "part_paths": [
+          "World/Settlements/cottage_57281/Model/cottage",
+          "World/Settlements/cottage_57281/Collision/Shape"
+        ]
+      },
+      {
+        "root": "World/Settlements/cottage_57282",
+        "whole_bounds": {
+          "max": [
+            2291.01513671875,
+            24.8289985656738,
+            -4244.8076171875
+          ],
+          "min": [
+            2282.0966796875,
+            17.5189990997314,
+            -4254.5166015625
+          ]
+        },
+        "whole_bounds_plus_40m_xz": {
+          "max": [
+            2331.01513671875,
+            24.8289985656738,
+            -4204.8076171875
+          ],
+          "min": [
+            2242.0966796875,
+            17.5189990997314,
+            -4294.5166015625
+          ]
+        },
+        "hits_design": false,
+        "hits_query": false,
+        "part_count": 2,
+        "part_paths": [
+          "World/Settlements/cottage_57282/Model/cottage",
+          "World/Settlements/cottage_57282/Collision/Shape"
+        ]
+      },
+      {
+        "root": "World/Settlements/cottage_57283",
+        "whole_bounds": {
+          "max": [
+            2222.81884765625,
+            25.6570014953613,
+            -4194.96337890625
+          ],
+          "min": [
+            2214.97119140625,
+            16.5960006713867,
+            -4204.80029296875
+          ]
+        },
+        "whole_bounds_plus_40m_xz": {
+          "max": [
+            2262.81884765625,
+            25.6570014953613,
+            -4154.96337890625
+          ],
+          "min": [
+            2174.97119140625,
+            16.5960006713867,
+            -4244.80029296875
+          ]
+        },
+        "hits_design": false,
+        "hits_query": false,
+        "part_count": 2,
+        "part_paths": [
+          "World/Settlements/cottage_57283/Model/cottage",
+          "World/Settlements/cottage_57283/Collision/Shape"
+        ]
+      },
+      {
+        "root": "World/Settlements/cottage_57284",
+        "whole_bounds": {
+          "max": [
+            2240.14428710938,
+            26.6485023498535,
+            -4147.73974609375
+          ],
+          "min": [
+            2228.88354492188,
+            17.5960006713867,
+            -4157.52783203125
+          ]
+        },
+        "whole_bounds_plus_40m_xz": {
+          "max": [
+            2280.14428710938,
+            26.6485023498535,
+            -4107.73974609375
+          ],
+          "min": [
+            2188.88354492188,
+            17.5960006713867,
+            -4197.52783203125
+          ]
+        },
+        "hits_design": false,
+        "hits_query": false,
+        "part_count": 2,
+        "part_paths": [
+          "World/Settlements/cottage_57284/Model/cottage",
+          "World/Settlements/cottage_57284/Collision/Shape"
+        ]
+      },
+      {
+        "root": "World/Settlements/cottage_57285",
+        "whole_bounds": {
+          "max": [
+            2283.70263671875,
+            26.7465000152588,
+            -4236.03466796875
+          ],
+          "min": [
+            2271.02734375,
+            17.4559993743896,
+            -4248.47119140625
+          ]
+        },
+        "whole_bounds_plus_40m_xz": {
+          "max": [
+            2323.70263671875,
+            26.7465000152588,
+            -4196.03466796875
+          ],
+          "min": [
+            2231.02734375,
+            17.4559993743896,
+            -4288.47119140625
+          ]
+        },
+        "hits_design": false,
+        "hits_query": false,
+        "part_count": 2,
+        "part_paths": [
+          "World/Settlements/cottage_57285/Model/cottage",
+          "World/Settlements/cottage_57285/Collision/Shape"
+        ]
+      },
+      {
+        "root": "World/Settlements/cottage_57286",
+        "whole_bounds": {
+          "max": [
+            2285.19360351562,
+            26.9285011291504,
+            -4245.525390625
+          ],
+          "min": [
+            2273.91040039062,
+            17.4340000152588,
+            -4255.0390625
+          ]
+        },
+        "whole_bounds_plus_40m_xz": {
+          "max": [
+            2325.19360351562,
+            26.9285011291504,
+            -4205.525390625
+          ],
+          "min": [
+            2233.91040039062,
+            17.4340000152588,
+            -4295.0390625
+          ]
+        },
+        "hits_design": false,
+        "hits_query": false,
+        "part_count": 2,
+        "part_paths": [
+          "World/Settlements/cottage_57286/Model/cottage",
+          "World/Settlements/cottage_57286/Collision/Shape"
+        ]
+      }
+    ]
+  },
+  "expected_northern_12_identity_proved": false,
+  "saved_catalog_is_house_count": false,
+  "scatter_unresolved_count": 775,
+  "curves_count": 3,
+  "runtime_generated_entities_proved": false,
+  "all_occupancy_complete": false,
+  "scope": "Saved complete-part conservative AABBs only. No scatter placement, runtime membership, road width, terrain-edit footprint, visibility or collision clearance is established."
+}

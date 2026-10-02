@@ -131,6 +131,100 @@ func shape_bounds(shape: Shape3D) -> Variant:
 	if shape is ConcavePolygonShape3D: return point_bounds(shape.get_faces())
 	return null
 
+func transform_record(value: Transform3D) -> Dictionary:
+	return {"basis_columns":[vec(value.basis.x),vec(value.basis.y),vec(value.basis.z)],"origin":vec(value.origin),"native_variant_hex":var_to_bytes(value).hex_encode()}
+
+func metadata_value(value: Variant) -> Dictionary:
+	# Native encoding preserves Variant types without calling object _to_string().
+	# Objects are encoded as process-local IDs, never serialized with full_objects.
+	return {"variant_type":type_string(typeof(value)),"native_variant_hex":var_to_bytes(value).hex_encode(),"resource_path":value.resource_path if value is Resource else ""}
+
+func saved_metadata(path: String) -> Dictionary:
+	var result: Dictionary = {}
+	for key in rows[path].properties:
+		if str(key).begins_with("metadata/"):
+			result[str(key).trim_prefix("metadata/")] = {"value":metadata_value(rows[path].properties[key]),"property_source":rows[path].property_source.get(key,"")}
+	return result
+
+func world_boundary_record(path: String, shape: WorldBoundaryShape3D, transform: Transform3D) -> Dictionary:
+	# Separate global constraint: never assign a finite AABB or feed add_part/hits.
+	var item: Dictionary = {"path":path,"class":shape.get_class(),"resource":shape.resource_path,"property_source":rows[path].property_source.get("shape",""),"classification":"unbounded_saved_world_boundary","classification_valid":false,"finite_bounds":null,"finite_occupancy_clearance_proved":false,"runtime_physics_behavior_proved":false,"query_policy":"Global half-space constraint retained without finite XZ filtering; no clearance inference.","physics_engine_setting":ProjectSettings.get_setting("physics/3d/physics_engine","DEFAULT"),"backend_caveat":"Godot Physics broadphase sentinels and Jolt finite backend proxies are not finite occupancy authority.","resource_metadata":{}}
+	for key in shape.get_meta_list(): item.resource_metadata[str(key)] = metadata_value(shape.get_meta(key))
+	var row: Dictionary = rows[path]
+	var p: Dictionary = row.properties
+	var body_path: String = path.get_base_dir() if "/" in path else "."
+	if not ClassDB.is_parent_class(str(row.type),"CollisionShape3D") or not rows.has(body_path) or not ClassDB.is_parent_class(str(rows[body_path].type),"CollisionObject3D"):
+		issues.append({"kind":"invalid_world_boundary_collision_parent","path":path,"parent":body_path}); return item
+	var body: Dictionary = rows[body_path]
+	var bp: Dictionary = body.properties
+	var disabled: Variant = p.get("disabled",false)
+	var layer: Variant = bp.get("collision_layer",1)
+	var mask: Variant = bp.get("collision_mask",1)
+	var disable_mode: Variant = bp.get("disable_mode",0)
+	if not disabled is bool or not layer is int or not mask is int or not disable_mode is int:
+		issues.append({"kind":"invalid_world_boundary_collision_flags","path":path}); return item
+	if layer < 0 or layer > 4294967295 or mask < 0 or mask > 4294967295 or disable_mode not in [0,1,2]:
+		issues.append({"kind":"invalid_world_boundary_collision_flags","path":path}); return item
+	item.collision = {"parent":body_path,"parent_type":body.type,"shape_disabled_saved":disabled,"shape_enabled_saved":not disabled,"collision_layer":layer,"collision_mask":mask,"body_disable_mode":disable_mode,"effective_runtime_enabled_proved":false,"property_sources":{"disabled":row.property_source.get("disabled","Godot 4.5.1 native default false"),"collision_layer":body.property_source.get("collision_layer","Godot 4.5.1 native default 1"),"collision_mask":body.property_source.get("collision_mask","Godot 4.5.1 native default 1"),"disable_mode":body.property_source.get("disable_mode","Godot 4.5.1 native default 0")}}
+	item.saved_ancestry = []
+	var current: String = path
+	while true:
+		if not rows.has(current):
+			issues.append({"kind":"missing_world_boundary_ancestor","path":path,"ancestor":current}); return item
+		var ancestor: Dictionary = rows[current]
+		var ap: Dictionary = ancestor.properties
+		if not ClassDB.class_exists(str(ancestor.type)):
+			issues.append({"kind":"unknown_world_boundary_ancestor_type","path":path,"ancestor":current}); return item
+		if ClassDB.is_parent_class(str(ancestor.type),"Node3D"):
+			if not ap.get("transform",Transform3D.IDENTITY) is Transform3D:
+				issues.append({"kind":"invalid_world_boundary_ancestor_transform","path":path,"ancestor":current}); return item
+			for alternative in ["position","rotation","rotation_degrees","scale","quaternion"]:
+				if ap.has(alternative):
+					issues.append({"kind":"unsupported_world_boundary_transform_property","path":path,"ancestor":current,"property":alternative}); return item
+		var process_mode: Variant = ap.get("process_mode",0)
+		if not process_mode is int or process_mode not in [0,1,2,3,4]:
+			issues.append({"kind":"invalid_world_boundary_process_mode","path":path,"ancestor":current}); return item
+		item.saved_ancestry.append({"path":current,"type":ancestor.type,"process_mode":process_mode,"process_mode_source":ancestor.property_source.get("process_mode","Godot 4.5.1 native default INHERIT"),"metadata":saved_metadata(current)})
+		# Existing transform resolver does not model disable_scale. Do not clear it.
+		if bool(ap.get("disable_scale",false)):
+			issues.append({"kind":"unsupported_world_boundary_disable_scale","path":path,"ancestor":current}); return item
+		if current == ".": break
+		current = current.get_base_dir() if "/" in current else "."
+	# CollisionShape3D passes its LOCAL transform to its direct shape owner.
+	# Refuse top_level here rather than confuse scene-global and physics transforms.
+	if bool(p.get("top_level",false)):
+		issues.append({"kind":"unsupported_world_boundary_top_level","path":path}); return item
+	var local_plane: Plane = shape.plane
+	var normal_length_squared: float = local_plane.normal.length_squared()
+	var determinant: float = transform.basis.determinant()
+	if not local_plane.is_finite() or not is_finite(normal_length_squared) or normal_length_squared <= 0.0:
+		issues.append({"kind":"invalid_world_boundary_plane","path":path}); return item
+	# Godot Plane/xform requires a unit normal; silently normalizing bad source
+	# would change what the pinned physics code receives. Preserve and reject it.
+	if not local_plane.normal.is_normalized():
+		issues.append({"kind":"non_unit_world_boundary_normal","path":path}); return item
+	if not transform.is_finite() or not is_finite(determinant) or determinant == 0.0:
+		issues.append({"kind":"invalid_world_boundary_transform","path":path}); return item
+	var inverse_basis: Basis = transform.basis.inverse()
+	if not inverse_basis.is_finite():
+		issues.append({"kind":"invalid_world_boundary_inverse","path":path}); return item
+	# Match 4.5.1 Transform3D::xform_fast(Plane): inverse-transpose normal,
+	# transform one point on the unit-normal plane, then dot for world d.
+	var world_normal_raw: Vector3 = inverse_basis.transposed() * local_plane.normal
+	var world_length_squared: float = world_normal_raw.length_squared()
+	if not world_normal_raw.is_finite() or not is_finite(world_length_squared) or world_length_squared <= 0.0:
+		issues.append({"kind":"invalid_world_boundary_world_normal","path":path}); return item
+	var world_normal: Vector3 = world_normal_raw.normalized()
+	var world_point: Vector3 = transform * (local_plane.normal * local_plane.d)
+	var world_d: float = world_normal.dot(world_point)
+	if not world_normal.is_finite() or not world_normal.is_normalized() or not world_point.is_finite() or not is_finite(world_d):
+		issues.append({"kind":"invalid_world_boundary_world_plane","path":path}); return item
+	item.local_plane = {"normal":vec(local_plane.normal),"d":local_plane.d,"native_variant_hex":var_to_bytes(local_plane).hex_encode(),"equation":"normal.dot(local_position) = d"}
+	item.world_transform = transform_record(transform)
+	item.world_plane = {"normal":vec(world_normal),"d":world_d,"point_on_plane":vec(world_point),"equation":"normal.dot(world_position) = d","solid_half_space":"normal.dot(world_position) <= d","strict_interior":"normal.dot(world_position) < d","outward_side":"normal.dot(world_position) > d"}
+	item.classification_valid = true
+	return item
+
 func add_part(entities: Dictionary, path: String, b: AABB, kind: String, resource: Resource) -> void:
 	var root_path: String = entity_root(path)
 	if not entities.has(root_path): entities[root_path] = {"box":b,"parts":[]}
@@ -206,7 +300,7 @@ func _initialize() -> void:
 	var data: Variant = JSON.parse_string(FileAccess.get_file_as_string(plan_path))
 	if not data is Dictionary: printerr("Invalid plan"); quit(2); return
 	plan = data
-	report = {"mode":"SceneState only; no instantiation, world, render or resource save", "entry":plan.entry,"design_box":plan.design_box,"query_box_with_40m":plan.query_box_with_40m,"geometry_reuse":{},"terrain":[],"terrain_collision":[],"entities":[],"settlement_identity_catalog":[],"scatter_unresolved":[],"curves":[],"scripted_node_count":0,"script_resources":{}}
+	report = {"mode":"SceneState only; no instantiation, world, render or resource save", "entry":plan.entry,"design_box":plan.design_box,"query_box_with_40m":plan.query_box_with_40m,"geometry_reuse":{},"terrain":[],"terrain_collision":[],"entities":[],"settlement_identity_catalog":[],"unbounded_world_boundaries":[],"scatter_unresolved":[],"curves":[],"scripted_node_count":0,"script_resources":{}}
 	if FileAccess.get_sha256(plan.entry) != plan.entry_sha256:
 		issues.append({"kind":"entry_sha_changed"}); finish(2); return
 	if FileAccess.get_sha256(plan.reuse_source) != plan.reuse_source_sha256 or FileAccess.get_sha256(plan.reuse_geometry_file) != plan.reuse_geometry_sha256:
@@ -284,6 +378,9 @@ func _initialize() -> void:
 				var unchanged: bool = base_rows.has(path) and base_rows[path].properties.get("shape") == shape and var_to_bytes(base_transforms[path]) == var_to_bytes(transform)
 				report.terrain_collision.append({"path":path,"tile":tile,"resource":shape.resource_path,"bounds":bounds(transform*local_shape_box),"native_faces_sha256":digest(faces),"face_count":faces.size()/3,"same_bound_resource_and_transform_as_sha_pinned_53d":unchanged,"property_source":row.property_source.get("shape","")})
 				if tile in plan.target_tiles and not unchanged: issues.append({"kind":"target_collision_changed_since_reuse_source","tile":tile})
+				continue
+			if shape is WorldBoundaryShape3D:
+				report.unbounded_world_boundaries.append(world_boundary_record(path,shape,transform))
 				continue
 			var local_box: Variant = shape_bounds(shape)
 			if local_box != null: add_part(entities,path,transform*local_box,"collision_bounds_including_disabled",shape)

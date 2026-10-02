@@ -6,6 +6,19 @@ const SCENE_SHA := "dff06de665e1fa1f6ab74ff3cdf4e91442e1ac322839a37718e799f0d7fa
 const VISUAL_AUDIT = preload("visible_geometry61.gd")
 const FIXTURE_LIFECYCLE = preload("fixture_lifecycle61.gd")
 const NATIVE_MOUSE = preload("native_mouse61.gd")
+const TELEMETRY = preload("orbit_telemetry61.gd")
+const SEQUENCE = preload("native_sequence61.gd")
+const CONTROL_PROTOCOL := "v6 continuous: each <=.05rad native event waits for a newer actual late-process sample and its exact physics audit; settle twice <=.02m only at capture goals and startup"
+const LIVE_RESOURCE_IDENTITY_SCOPE := {
+ "universal_live_resource_freeze_proved":false,
+ "multimesh_observation":"Complete CPU transform/color/custom-data buffer, binding, counts, formats and bounds at late-process/physics/final witnesses, including hidden/outside-domain nodes",
+ "mesh_content_limit":"Same-resource Mesh vertex/index/LOD/shadow arrays can mutate without ID, surface-count or AABB changes; these arrays are not rehashed at every witness",
+ "mesh_instance_binding_limit":"MeshInstance3D bindings and all same-resource mutable fields are not universally frozen by the MultiMesh-specific guard",
+ "material_shader_limit":"Material/shader rebindings, code, parameters and arbitrary shader semantics lack a complete live fingerprint; native weather legitimately changes time uniforms",
+ "ship_limit":"Animated ship descendants retain documented conservative envelopes, not universal live resource identity",
+ "observation_limit":"Rendering-server-only mutation or changes reverted between every observed boundary are not generally detected by CPU snapshots",
+ "dependency_limit":"Wrapper verifies exact reviewed saved loading closure and reviewed absence controls before/after; this is not live geometry/material or pixel coverage acceptance"
+}
 const START := Vector3(-3430,28,-3665)
 const FORWARD := Vector3(0.5547001962252291,0,0.8320502943378437)
 const ORBIT_TARGETS := [2.6,PI,4.0]
@@ -67,6 +80,25 @@ var requested_capture := ""
 var captured := ""
 var new_geometry := []
 var fixture_pause_state := {}
+var telemetry=TELEMETRY.new()
+var sequence=SEQUENCE.new()
+var last_progress_usec := -1000000
+var angular_index := -1
+var angular_goal := 0.0
+var motion_index := 0
+var source_hash_completed := 0
+
+func progress(force: bool=false) -> void:
+ var now:=Time.get_ticks_usec()
+ if not force and now-last_progress_usec<1000000: return
+ if output.is_empty() or not DirAccess.dir_exists_absolute(output): return
+ last_progress_usec=now
+ var state: Dictionary={"version":"orbit61-progress-v6","diagnostic_only":true,"completion_authority":"orbit-report.json plus wrapper-report.json; this heartbeat is never acceptance","stage":stage,"failed":failed,"finishing":finishing,"angular_index":angular_index,"angular_goal":angular_goal,"native_motion_count":motion_index,"pending_segments":pending.size(),"last_sampled_process_frame":last_frame,"last_audited_process_frame":sequence.last_audit,"process_samples":process_samples.size(),"audited_segments":audited.size(),"captures":captures.size(),"preflight_segments":preflight.size(),"source_hash_completed":source_hash_completed,"source_hash_total":source_hashes.size(),"sequence":sequence.snapshot(),"telemetry":telemetry.snapshot()}
+ if is_instance_valid(game): state.orbit=[game.orbit.x,game.orbit.y]
+ var file:=FileAccess.open(output.path_join("orbit-progress.json.tmp"),FileAccess.WRITE)
+ if file==null: push_error("Cannot write orbit diagnostic heartbeat");return
+ file.store_string(JSON.stringify(state));file.flush();file.close()
+ if DirAccess.rename_absolute(output.path_join("orbit-progress.json.tmp"),output.path_join("orbit-progress.json"))!=OK: push_error("Cannot replace orbit diagnostic heartbeat")
 
 func _initialize() -> void:
  for arg in OS.get_cmdline_user_args():
@@ -81,15 +113,19 @@ func current_state() -> Dictionary:
  return {"ship_position":vec(game.airship.global_position),"ship_transform_hex":var_to_bytes(game.airship.global_transform).hex_encode(),"velocity":vec(game.airship.velocity),"camera_position":vec(game.camera.global_position),"camera_transform_hex":var_to_bytes(game.camera.global_transform).hex_encode(),"camera_scale":vec(game.camera.scale),"orbit":[game.orbit.x,game.orbit.y],"heading":game.heading,"speed":game.speed,"throttle":game.throttle,"anchored":game.anchored,"photo_mode":game.photo_mode,"reference_observation":game.reference_observation,"test_frozen":game.test_frozen,"testing":game.testing,"test_override_input":game.test_override_input,"auto_pilot":game.auto_pilot,"docked":game.docked,"travelled":game.travelled,"right_button":Input.is_mouse_button_pressed(MOUSE_BUTTON_RIGHT),"process_frame":Engine.get_process_frames(),"physics_frame":Engine.get_physics_frames()}
 
 func report(complete: bool) -> void:
+ var began:=telemetry.begin("full_report_write")
  if output.is_empty() or not DirAccess.dir_exists_absolute(output): return
- var result := {"version":"61-anchored-orbit-preparation-v1","complete":complete,"stage":stage,"failed":failed,"first_item_runtime_passed":passed and complete and not failed,"fixture_excluded_from_distance":fixture,"checks":checks,"failures":failures,"events":events,"delivered":delivered,"process_samples":process_samples,"audited_segments":audited,"preflight":preflight,"captures":captures,"near_plane_envelope_radius_m":sphere.radius,"actual_camera_path_m":process_path,"actual_ship_path_after_fixture_m":ship_path,"flight_attempted":false,"short_flight_passed":false,"nearshore_pixel_coverage_passed":false,"manual_normal_material_png_review_required":true,"nearest_ray_scope_m":LOCAL_RAY_METERS,"gui_focus_verified":false,"hardware_gpu_acceptance":false,"reference_visual_acceptance":false,"total_acceptance_passed":false,"scene_saved":false,"state":current_state(),"visual_inventory":visual.rows if visual!=null else [],"visual_inventory_failures":visual.failures if visual!=null else [],"visual_triangle_count":visual.triangle_count if visual!=null else 0,"visual_method":"Actual static indexed surfaces in an isolated physics query space, complete shader/ship animated envelopes. Envelope hits are conservative; no pixel visibility inferred.","source_count":source_hashes.size()}
+ var result := {"version":"61-anchored-orbit-v6","display_backend":DisplayServer.get_name(),"rendering_method":RenderingServer.get_current_rendering_method(),"rendering_driver":RenderingServer.get_current_rendering_driver_name(),"control_protocol":CONTROL_PROTOCOL,"sequence":sequence.snapshot(),"telemetry":telemetry.snapshot(),"complete":complete,"stage":stage,"failed":failed,"first_item_runtime_passed":passed and complete and not failed,"fixture_excluded_from_distance":fixture,"checks":checks,"failures":failures,"events":events,"delivered":delivered,"process_samples":process_samples,"audited_segments":audited,"preflight":preflight,"captures":captures,"near_plane_envelope_radius_m":sphere.radius,"actual_camera_path_m":process_path,"actual_ship_path_after_fixture_m":ship_path,"flight_attempted":false,"short_flight_passed":false,"nearshore_pixel_coverage_passed":false,"manual_normal_material_png_review_required":true,"nearest_ray_scope_m":LOCAL_RAY_METERS,"gui_focus_verified":false,"hardware_gpu_acceptance":false,"reference_visual_acceptance":false,"total_acceptance_passed":false,"scene_saved":false,"state":current_state(),"visual_inventory":visual.rows if visual!=null else [],"visual_inventory_failures":visual.failures if visual!=null else [],"visual_triangle_count":visual.triangle_count if visual!=null else 0,"visual_method":"Actual static indexed surfaces in an isolated physics query space, classified shader and animated ship conservative envelopes. Envelope hits do not imply pixel visibility or universal live resource freezing.","live_resource_identity_scope":LIVE_RESOURCE_IDENTITY_SCOPE,"source_count":source_hashes.size()}
  var file := FileAccess.open(output.path_join("orbit-report.json.tmp"),FileAccess.WRITE)
  if file==null: push_error("Cannot write orbit report"); return
  file.store_string(JSON.stringify(result,"  "));file.flush();file.close()
  if DirAccess.rename_absolute(output.path_join("orbit-report.json.tmp"),output.path_join("orbit-report.json"))!=OK: push_error("Cannot replace orbit report")
+ telemetry.end("full_report_write",began)
+ progress(true)
 
 func mark(label: String) -> void:
  stage=label
+ progress(true)
  print("ORBIT61 ",label)
  report(false)
 
@@ -130,6 +166,11 @@ func mouse_button(pressed: bool) -> bool:
  return Input.is_mouse_button_pressed(MOUSE_BUTTON_RIGHT)==pressed
 
 func motion(radians: float) -> bool:
+ if not check(radians>0 and radians<=STEP_RADIANS,"Native event stays within unchanged .05rad bound",radians): return false
+ if not check(pending.is_empty() and sequence.begin_event(Engine.get_process_frames()),"Native event starts only after all previous exact segments audited",sequence.snapshot()): return false
+ motion_index+=1
+ telemetry.count("native_motion_events")
+ progress()
  var before: Vector2=game.orbit
  var mapping_before:=NATIVE_MOUSE.snapshot(root)
  var center:=root.get_visible_rect().get_center()
@@ -169,12 +210,16 @@ func native_desired(angle: float) -> Vector3:
  return game.airship.global_position+relative.rotated(Vector3.UP,game.heading+angle)
 
 func raw_native_ray(from: Vector3, to: Vector3) -> Dictionary:
+ var began:=telemetry.begin("native_los_ray")
  var query := PhysicsRayQueryParameters3D.create(from,to,1,[game.airship.get_rid()])
  var hit: Dictionary=game.get_world_3d().direct_space_state.intersect_ray(query)
+ telemetry.end("native_los_ray",began);telemetry.count("native_los_rays")
  if hit.is_empty(): return {}
  return {"path":str(hit.collider.get_path()) if hit.collider is Node else str(hit.collider),"position":vec(hit.position),"distance":from.distance_to(hit.position)}
 
 func sweep(space: PhysicsDirectSpaceState3D, a: Vector3, b: Vector3, mask: int, visual_query: bool) -> Dictionary:
+ var label: String="visible_sweep" if visual_query else "physical_sweep"
+ var began:=telemetry.begin(label)
  var q := PhysicsShapeQueryParameters3D.new()
  q.shape=sphere;q.transform=Transform3D(Basis.IDENTITY,a);q.collision_mask=mask
  q.margin=.005;q.collide_with_bodies=true;q.collide_with_areas=false
@@ -189,9 +234,12 @@ func sweep(space: PhysicsDirectSpaceState3D, a: Vector3, b: Vector3, mask: int, 
   if visual_query: hit_rows.append(visual.decode(hit))
   else: hit_rows.append({"source":str(hit.collider.get_path()) if hit.collider is Node else str(hit.collider),"shape":hit.get("shape",-1)})
  var clear: bool=start_hits.is_empty() and end_hits.is_empty() and fractions.size()==2 and fractions[0]>=.999999 and fractions[1]>=.999999
+ telemetry.end(label,began);telemetry.count(label+"_queries")
  return {"clear":clear,"from":vec(a),"to":vec(b),"radius_m":sphere.radius,"mask":mask,"fractions":Array(fractions),"endpoint_hits":hit_rows}
 
 func sample_process(delta: float) -> void:
+ telemetry.process(delta)
+ progress()
  if not active or failed or finishing: return
  var frame:=Engine.get_process_frames()
  var position: Vector3=game.camera.global_position
@@ -213,20 +261,34 @@ func sample_process(delta: float) -> void:
  # exact unobstructed smoothing step must explain this actual position.
  if expected.distance_to(position)>.002:
   abort("Native camera correction or unexplained process displacement",{"expected":vec(expected),"actual":vec(position),"dt":delta});return
- var row := {"process_frame":frame,"physics_frame":Engine.get_physics_frames(),"dt":delta,"from":vec(last_camera),"to":vec(position),"target":vec(target),"desired":vec(desired),"orbit":[game.orbit.x,game.orbit.y],"camera_transform_hex":var_to_bytes(game.camera.global_transform).hex_encode()}
+ if not classify_new_geometry(): return
+ # Full CPU MM state is read now, at the same late-process witness as this
+ # camera endpoint. Endpoint-only final hashes cannot replace this observation.
+ if not visual.unchanged(true,"late_process",frame): abort("Late-process visual identity changed",visual.failures);return
+ if visual.last_identity_witness.get("ok")!=true or visual.last_identity_witness.get("process_frame")!=frame:
+  abort("Missing explicit same-process identity witness");return
+ if not sequence.sample(frame): abort("Process sequence guard failed",sequence.snapshot());return
+ var row := {"identity_witness":visual.last_identity_witness.duplicate(true),"event_index":motion_index,"process_wall_usec":Time.get_ticks_usec(),"process_frame":frame,"physics_frame":Engine.get_physics_frames(),"dt":delta,"from":vec(last_camera),"to":vec(position),"target":vec(target),"desired":vec(desired),"orbit":[game.orbit.x,game.orbit.y],"camera_transform_hex":var_to_bytes(game.camera.global_transform).hex_encode()}
  process_path+=last_camera.distance_to(position);ship_path+=last_ship.distance_to(ship)
  process_samples.append(row)
  pending.append({"row":row,"from":last_camera,"to":position,"target":target,"desired":desired})
  last_frame=frame;last_camera=position;last_ship=ship
 
+func classify_new_geometry() -> bool:
+ # Run at both observed boundaries, before the identity witness. New geometry
+ # must not be absent from a segment's endpoint inventory until next physics.
+ for node in new_geometry:
+  if not is_instance_valid(node): abort("New geometry removed before runtime classification");return false
+  if not node is GeometryInstance3D: abort("Unclassified queued geometry type");return false
+  if not visual.accept_distant_new_node(node):
+   abort("New visual candidate after inventory; sequence cannot claim coverage",visual.failures);return false
+ new_geometry.clear()
+ return true
+
 func audit_pending() -> void:
  if not active or failed or finishing or not inventory_ready: return
- if not visual.unchanged(false): abort("Visual candidate inventory changed",visual.failures);return
- for node in new_geometry:
-  if is_instance_valid(node) and node is GeometryInstance3D:
-   if not visual.accept_distant_new_node(node):
-    abort("New visual candidate after inventory; sequence cannot claim coverage",visual.failures);return
- new_geometry.clear()
+ if not classify_new_geometry(): return
+ if not visual.unchanged(true,"physics_before_segments",last_frame): abort("Visual candidate inventory changed",visual.failures);return
  var space: PhysicsDirectSpaceState3D=game.get_world_3d().direct_space_state
  var visual_space: PhysicsDirectSpaceState3D=PhysicsServer3D.space_get_direct_state(visual.space)
  if visual_space==null: abort("Isolated visual query space unavailable");return
@@ -236,15 +298,33 @@ func audit_pending() -> void:
   var native_after:=raw_native_ray(item.target,item.to)
   var physical:=sweep(space,item.from,item.to,0xffffffff,false)
   var drawn:=sweep(visual_space,item.from,item.to,1,true)
-  var row := {"process_frame":item.row.process_frame,"physical":physical,"visible_geometry":drawn,"native_desired_blocker":native_before,"native_actual_blocker":native_after}
+  var row := {"identity_witness_serial":item.row.identity_witness.serial,"identity_process_frame":item.row.identity_witness.process_frame,"physics_identity_witness":visual.last_identity_witness.duplicate(true),"process_frame":item.row.process_frame,"physical":physical,"visible_geometry":drawn,"native_desired_blocker":native_before,"native_actual_blocker":native_after}
   audited.append(row)
   if not native_before.is_empty() or not native_after.is_empty() or not physical.clear or not drawn.clear:
    abort("Actual process camera path or native line of sight blocked",row);return
+  if item.row.identity_witness.get("ok")!=true or item.row.identity_witness.process_frame!=item.row.process_frame:
+   abort("Queued segment has no exact late-process identity witness",item.row);return
+  if not sequence.audit(item.row.process_frame): abort("Physics audit sequence guard failed",sequence.snapshot());return
+ telemetry.count("physics_audit_callbacks");progress()
  if not captures.is_empty() and not audited.is_empty():
   var latest: Dictionary=captures[-1]
-  if audited[-1].process_frame>=latest.state.process_frame:
+  if audited[-1].process_frame>=latest.state.process_frame and sequence.capture_ready(latest.state.process_frame):
    latest.actual_frame_segment_audited=true
    captured=latest.name
+
+func wait_event_audited() -> bool:
+ # Do not settle the intermediate desired angle: retain every actual Lerp
+ # segment, then wait for its associated physics queries before next input.
+ var began:=Time.get_ticks_msec()
+ await witness.processed
+ while not failed:
+  if sequence.event_ready():
+   return check(pending.is_empty() and sequence.complete_event(),"Native event has newer actual process and exact successful physics audit",sequence.snapshot())
+  if not sequence.failure.is_empty(): abort("Native sequence guard failed",sequence.snapshot());return false
+  if Time.get_ticks_msec()-began>15000:
+   abort("Native event process/physics audit did not finish within15s",sequence.snapshot());return false
+  await witness.physics_checked
+ return false
 
 func wait_settled() -> bool:
  var began:=Time.get_ticks_msec()
@@ -262,6 +342,7 @@ func wait_settled() -> bool:
  return false
 
 func local_rays() -> Array:
+ var began:=telemetry.begin("capture_local_rays")
  var result:=[]
  var space: PhysicsDirectSpaceState3D=PhysicsServer3D.space_get_direct_state(visual.space)
  var viewport_size: Vector2=game.camera.get_viewport().get_visible_rect().size
@@ -274,15 +355,18 @@ func local_rays() -> Array:
   query.hit_back_faces=true;query.hit_from_inside=true
   var hit: Dictionary=space.intersect_ray(query)
   result.append({"viewport_pixel":[pixel.x,pixel.y],"uv":[uv.x,uv.y],"nearest_geometry_or_envelope":visual.decode(hit),"distance_m":from.distance_to(hit.position) if not hit.is_empty() else null,"ray_limit_m":LOCAL_RAY_METERS,"pixel_visibility_proved":false})
+ telemetry.end("capture_local_rays",began);telemetry.count("capture_local_rays",result.size())
  return result
 
 func after_draw() -> void:
  if requested_capture.is_empty() or failed or finishing: return
  var name:=requested_capture
  requested_capture=""
+ var began:=telemetry.begin("capture_image")
  var image: Image=root.get_texture().get_image()
  var path:=output.path_join(name+".png")
  if not check(image!=null and image.save_png(path)==OK,"Actual normal-material image saved",name): return
+ telemetry.end("capture_image",began);telemetry.count("captures_saved")
  captures.append({"name":name,"path":path,"sha256":FileAccess.get_sha256(path),"size":[image.get_width(),image.get_height()],"state":current_state(),"nearest_local_rays":local_rays(),"pixel_review":"not reviewed by renderer harness"})
  mark("captured_pending_frame_audit_"+name)
 
@@ -290,7 +374,9 @@ func capture(name: String) -> bool:
  requested_capture=name
  var began:=Time.get_ticks_msec()
  while captured!=name and not failed:
-  await witness.processed
+  # Completion is established in physics; returning from processed would
+  # enqueue a new unaudited segment before the next event starts.
+  await witness.physics_checked
   if Time.get_ticks_msec()-began>20000: abort("Actual capture timeout",name)
  return not failed
 
@@ -298,10 +384,14 @@ func finish() -> void:
  if finishing: return
  finishing=true;active=false;release_all()
  if visual!=null and not failed:
-  if not visual.unchanged(true): failed=true;failures.append({"reason":"Final visual buffers changed","details":visual.failures})
+  if not visual.unchanged(true,"final",last_frame): failed=true;failures.append({"reason":"Final visual buffers changed","details":visual.failures})
+ var source_began:=telemetry.begin("final_source_hash")
+ source_hash_completed=0
  for path in source_hashes:
+  source_hash_completed+=1;telemetry.count("source_files_hashed");progress()
   if FileAccess.get_sha256(path)!=source_hashes[path]: failed=true;failures.append({"reason":"Frozen input changed","path":path})
- passed=not failed and captures.size()==4 and audited.size()==process_samples.size() and ship_path==0 and inputs_released()
+ telemetry.end("final_source_hash",source_began)
+ passed=not failed and sequence.capture_ready(last_frame) and captures.size()==4 and audited.size()==process_samples.size() and ship_path==0 and inputs_released()
  stage="complete" if passed else "failed_or_incomplete"
  report(true)
  if is_instance_valid(game):
@@ -338,14 +428,22 @@ func run() -> void:
  if DirAccess.make_dir_recursive_absolute(output)!=OK: quit(2);return
  if not check(DisplayServer.get_name()!="headless","Actual display required"): return
  if not check(not ProjectSettings.get_setting("physics/3d/run_on_separate_thread",false),"Queries use main-thread physics; threaded mode is not silently overridden"): return
+ stage="preparing_source_hashes";progress(true)
+ var prep_began:=telemetry.begin("preparation")
+ var hash_began:=telemetry.begin("initial_source_hash")
  source_hashes=JSON.parse_string(FileAccess.get_file_as_string(OS.get_environment("ORBIT61_INPUTS")))
  for path in source_hashes:
+  source_hash_completed+=1;telemetry.count("source_files_hashed");progress()
   if not check(FileAccess.get_sha256(path)==source_hashes[path],"Exact frozen input",path): return
+ telemetry.end("initial_source_hash",hash_began)
  if not check(FileAccess.get_sha256(SCENE)==SCENE_SHA,"Exact saved Game61"): return
  root.size=Vector2i(1180,664);release_all()
+ stage="loading_saved_world";progress(true)
+ var load_began:=telemetry.begin("scene_load_instantiate")
  var packed: PackedScene=load(SCENE)
  if not check(packed!=null,"Saved scene loaded"): return
  game=packed.instantiate();packed=null;root.add_child(game)
+ telemetry.end("scene_load_instantiate",load_began)
  witness=Witness.new();witness.harness=self;witness.process_priority=100000;witness.process_physics_priority=100000;root.add_child(witness)
  RenderingServer.frame_post_draw.connect(after_draw)
  for i in range(3): await process_frame
@@ -362,6 +460,7 @@ func run() -> void:
  fixture={"classification":"one initial fixture, excluded from all motion; no flight in this first item","state":current_state()}
  fixture_pause_state={"ship":game.airship.global_transform,"camera":game.camera.global_transform,"travelled":game.travelled}
  visual=VISUAL_AUDIT.new()
+ visual.telemetry=telemetry;visual.progress_callback=progress
  visual.owner_game=game
  visual.domain=AABB(START-Vector3.ONE*550,Vector3.ONE*1100)
  var lifecycle=FIXTURE_LIFECYCLE.new()
@@ -391,7 +490,11 @@ func run() -> void:
  sphere.radius=radius+.02
  # All450m screenshot rays, camera orbit and near-plane fit in this domain.
  var domain:=AABB(START-Vector3.ONE*550,Vector3.ONE*1100)
+ telemetry.end("preparation",prep_began)
+ stage="preparing_visible_inventory";progress(true)
+ var inventory_began:=telemetry.begin("inventory_prepare")
  if not check(visual.prepare(game,domain),"Complete classified visible candidate inventory",visual.failures): return
+ telemetry.end("inventory_prepare",inventory_began)
  inventory_ready=true
  node_added.connect(func(node: Node):
   if inventory_ready and node is GeometryInstance3D: new_geometry.append(node))
@@ -401,6 +504,8 @@ func run() -> void:
  await witness.physics_checked
  var visual_space: PhysicsDirectSpaceState3D=PhysicsServer3D.space_get_direct_state(visual.space)
  if not check(visual_space!=null,"Isolated visual query space active"): return
+ stage="preflight_desired_arc";progress(true)
+ var preflight_began:=telemetry.begin("preflight")
  var previous: Vector3=game.camera.global_position
  # Conservative full disk tessellation: each chord grows by its exact arc
  # sagitta, so the true desired arc between .05rad points is not skipped.
@@ -414,12 +519,13 @@ func run() -> void:
   var row:=sweep(visual_space,previous,destination,1,true)
   var physical:=sweep(game.get_world_3d().direct_space_state,previous,destination,0xffffffff,false)
   row.physical=physical;row.from_angle=angle;row.to_angle=next
-  preflight.append(row)
+  preflight.append(row);telemetry.count("preflight_segments");progress()
   if not check(row.clear and physical.clear,"Proposed desired orbit arc clears full visible/physical volumes",row): return
   previous=destination;angle=next
  sphere.radius=base_radius
+ telemetry.end("preflight",preflight_began)
  # Check the baseline after server-registration waits and before any F2 input.
- if not check(visual.unchanged(true),"Complete frozen inventory unchanged before native F2",visual.failures): return
+ if not check(visual.unchanged(true,"before_f2",Engine.get_process_frames()),"Complete frozen inventory unchanged before native F2",visual.failures): return
  for node in new_geometry:
   if not check(is_instance_valid(node),"New geometry survives until pre-input classification"): return
   if not check(visual.accept_distant_new_node(node),"New pre-input geometry remains outside query domain",visual.failures): return
@@ -431,13 +537,15 @@ func run() -> void:
  if not await wait_settled(): return
  if not await capture("01-default-native-camera"): return
  for index in range(ORBIT_TARGETS.size()):
+  angular_index=index;angular_goal=ORBIT_TARGETS[index];stage="continuous_native_orbit";progress(true)
   if not check(mouse_button(true),"Native right mouse pressed"): return
   var goal: float=ORBIT_TARGETS[index]
   while game.orbit.x<goal-.000001 and not failed:
    var amount:=minf(STEP_RADIANS,goal-game.orbit.x)
    if not motion(amount): return
-   if not await wait_settled(): return
+   if not await wait_event_audited(): return
   if not check(mouse_button(false),"Native right mouse released"): return
+  stage="settling_capture_goal";progress(true)
   if not await wait_settled(): return
   if not await capture(["02-shore-candidate","03-ship-side-candidate","04-further-side-candidate"][index]): return
  await witness.physics_checked

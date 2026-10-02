@@ -14,6 +14,68 @@ var mesh_audits := {}
 var owner_game
 var domain := AABB()
 var triangle_count := 0
+var telemetry
+var progress_callback: Callable
+var last_identity_witness: Dictionary={}
+var identity_witness_serial := 0
+
+func progress() -> void:
+ if progress_callback.is_valid(): progress_callback.call()
+
+func metric_begin(label: String) -> int:
+ return telemetry.begin(label) if telemetry!=null else Time.get_ticks_usec()
+
+func metric_end(label: String, began: int) -> void:
+ if telemetry!=null: telemetry.end(label,began)
+
+func metric_count(label: String, amount: int=1) -> void:
+ if telemetry!=null: telemetry.count(label,amount)
+
+func multimesh_identity(node: MultiMeshInstance3D) -> Dictionary:
+ # Explicit successful dictionary required at every caller. No changed-signal
+ # assumption, no missing-property numeric defaults, no null dereference.
+ if not is_instance_valid(node): return {}
+ var mm: MultiMesh=node.multimesh
+ if mm==null: return {"ok":true,"bound":false,"node_instance_id":node.get_instance_id()}
+ if not is_instance_valid(mm): return {}
+ var mesh: Mesh=mm.mesh
+ var count: int=mm.instance_count
+ var visible_count: int=mm.visible_instance_count
+ var format: int=mm.transform_format
+ if count<0 or visible_count< -1 or visible_count>count or not format in [MultiMesh.TRANSFORM_2D,MultiMesh.TRANSFORM_3D]:
+  fail("Invalid MultiMesh count or transform format",str(node.get_path()));return {}
+ var buffer: PackedFloat32Array=mm.buffer
+ var stride: int=(12 if format==MultiMesh.TRANSFORM_3D else 8)+(4 if mm.use_colors else 0)+(4 if mm.use_custom_data else 0)
+ if buffer.size()!=count*stride:
+  fail("Actual MultiMesh buffer length differs from explicit format/count",{"path":str(node.get_path()),"length":buffer.size(),"count":count,"stride":stride});return {}
+ var began:=metric_begin("multimesh_buffer_hash")
+ var bytes: PackedByteArray=buffer.to_byte_array()
+ var hashing:=HashingContext.new()
+ if hashing.start(HashingContext.HASH_SHA256)!=OK or hashing.update(bytes)!=OK: return {}
+ var digest: PackedByteArray=hashing.finish()
+ if digest.size()!=32: return {}
+ metric_end("multimesh_buffer_hash",began)
+ metric_count("multimesh_buffer_hashes");metric_count("multimesh_buffer_bytes",bytes.size())
+ var bounds: AABB=mm.get_aabb()
+ return {"ok":true,"bound":true,"node_instance_id":node.get_instance_id(),"multimesh_instance_id":mm.get_instance_id(),"mesh_instance_id":mesh.get_instance_id() if mesh!=null else 0,"mesh_surface_count":mesh.get_surface_count() if mesh!=null else 0,"mesh_aabb_hex":var_to_bytes(mesh.get_aabb()).hex_encode() if mesh!=null else "null","multimesh_aabb_hex":var_to_bytes(bounds).hex_encode(),"custom_aabb_hex":var_to_bytes(mm.custom_aabb).hex_encode(),"transform_format":format,"use_colors":mm.use_colors,"use_custom_data":mm.use_custom_data,"instance_count":count,"visible_instance_count":visible_count,"buffer_float_count":buffer.size(),"buffer_byte_count":bytes.size(),"buffer_sha256":digest.hex_encode()}
+
+func bind_multimesh_identity(item: Dictionary) -> bool:
+ if not item.node is MultiMeshInstance3D: return true
+ var state: Dictionary=multimesh_identity(item.node)
+ if state.get("ok")!=true: return fail("MultiMesh baseline did not return explicit identity",item.path)
+ item.multimesh_identity=state
+ return true
+
+func validate_multimesh_identity(item: Dictionary) -> bool:
+ if not item.node is MultiMeshInstance3D: return true
+ if not item.has("multimesh_identity") or item.multimesh_identity.get("ok")!=true:
+  return fail("Missing explicit MultiMesh baseline identity",item.path)
+ var current: Dictionary=multimesh_identity(item.node)
+ if current.get("ok")!=true:
+  return fail("MultiMesh witness did not return explicit identity",item.path)
+ if current!=item.multimesh_identity:
+  return fail("Actual MultiMesh binding/count/full buffer identity changed after inventory",{"path":item.path,"instance_id":item.instance_id,"before":item.multimesh_identity,"current":current})
+ return true
 
 func v(p: Vector3) -> Array:
  return [p.x,p.y,p.z]
@@ -391,7 +453,9 @@ func prepare(game, query_domain: AABB) -> bool:
   var initial_bounds: AABB=world_bounds(node.get_aabb(),node.global_transform).grow(.002)
   var watch:=watch_entry(node,visible,0.0,initial_bounds)
   if not watch.queued_ancestors_at_inventory.is_empty(): return fail("Queued geometry cannot enter frozen inventory",watch_evidence(watch))
+  if not bind_multimesh_identity(watch): return false
   watches.append(watch)
+  metric_count("inventory_nodes");progress()
   if not visible: continue
   if not node is MeshInstance3D and not node is MultiMeshInstance3D:
    # Fail closed: unknown particle/procedural bounds need their own audit.
@@ -419,15 +483,14 @@ func prepare(game, query_domain: AABB) -> bool:
   else:
    var count: int=node.multimesh.instance_count
    if node.multimesh.visible_instance_count>=0: count=mini(count,node.multimesh.visible_instance_count)
-   watches[-1]["buffer_sha256"]=var_to_bytes(node.multimesh.buffer).hex_encode().sha256_text()
-   watches[-1]["instance_count"]=node.multimesh.instance_count
-   watches[-1]["visible_instance_count"]=node.multimesh.visible_instance_count
    for index in range(count):
     var pose: Transform3D=node.global_transform*node.multimesh.get_instance_transform(index)
     if not add_mesh(mesh,pose,str(node.get_path())+"#"+str(index),expansion): return false
  return true
 
-func unchanged(check_buffers: bool) -> bool:
+func unchanged(check_buffers: bool, phase: String="unspecified", process_frame: int=-1) -> bool:
+ var began:=metric_begin("inventory_validation")
+ var multimesh_count:=0
  for item in watches:
   var node=item.node
   if not is_instance_valid(node): return fail("Inventoried geometry was removed",watch_evidence(item))
@@ -442,9 +505,15 @@ func unchanged(check_buffers: bool) -> bool:
    var current_bounds: AABB=world_bounds(node.get_aabb(),node.global_transform).grow(float(item.expansion)*node.global_basis.get_scale().length()+.002)
    if item.query_candidate or current_bounds.intersects(domain):
     return fail("Candidate geometry visibility/transform changed after stationary inventory",watch_evidence(item))
-  if check_buffers and node is MultiMeshInstance3D and item.has("buffer_sha256"):
-   if node.multimesh.instance_count!=item.instance_count or node.multimesh.visible_instance_count!=item.visible_instance_count or var_to_bytes(node.multimesh.buffer).hex_encode().sha256_text()!=item.buffer_sha256:
-    return fail("Actual MultiMesh buffer changed after inventory",watch_evidence(item))
+  if check_buffers and node is MultiMeshInstance3D:
+   if not validate_multimesh_identity(item): return false
+   multimesh_count+=1
+ metric_end("inventory_validation",began)
+ metric_count("inventory_validation_calls")
+ if check_buffers:
+  identity_witness_serial+=1
+  last_identity_witness={"ok":true,"serial":identity_witness_serial,"phase":phase,"process_frame":process_frame,"physics_frame":Engine.get_physics_frames(),"ticks_usec":Time.get_ticks_usec(),"watched_geometry_count":watches.size(),"multimesh_full_buffer_count":multimesh_count,"scope":"Exact CPU MultiMesh buffer including color/custom slots; resource and mesh bindings/count/bounds. Not universal mutable Mesh/material coverage."}
+ progress()
  return true
 
 func accept_distant_new_node(node: GeometryInstance3D) -> bool:
@@ -466,10 +535,7 @@ func accept_distant_new_node(node: GeometryInstance3D) -> bool:
  if visible and bounds.intersects(domain): return fail("New visible candidate after frozen local inventory",{"path":str(node.get_path()),"instance_id":node.get_instance_id(),"before":null,"current":geometry_state(node,bounds)})
  var item:=watch_entry(node,visible,expansion,bounds)
  if not item.queued_ancestors_at_inventory.is_empty(): return fail("Queued new geometry cannot enter frozen inventory",watch_evidence(item))
- if node is MultiMeshInstance3D:
-  item.buffer_sha256=var_to_bytes(node.multimesh.buffer).hex_encode().sha256_text()
-  item.instance_count=node.multimesh.instance_count
-  item.visible_instance_count=node.multimesh.visible_instance_count
+ if not bind_multimesh_identity(item): return false
  watches.append(item)
  return true
 
