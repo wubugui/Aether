@@ -1,0 +1,159 @@
+{
+  "candidate": "F2",
+  "state": "completed",
+  "complete": true,
+  "passed": true,
+  "run_id": "cloudbank58f2-patch-20261001T193919Z-6lf_rpif",
+  "commands": [
+    {
+      "job": {
+        "mode": "build",
+        "view": null
+      },
+      "state": "completed",
+      "complete": true,
+      "argv": [
+        "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+        "--factory-startup",
+        "-b",
+        "-t",
+        "2",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-f2/source58f.py",
+        "--",
+        "--mode",
+        "build",
+        "--out",
+        "/workspace/scratch/a29d03198654/Aether/cloud-evidence/cloudbank58f2-patch-20261001T193919Z-6lf_rpif/outputs"
+      ],
+      "input_manifest_sha256": "314c7adda04db5dd2254f31dbe9b46d647c271b2da1e915480bf5462bef643dc",
+      "protected_before": true,
+      "prepared_before": true,
+      "pid": 6,
+      "actual_child_exit_code": 0,
+      "elapsed_seconds": 0.6050660929977312,
+      "peak_observed_rss_kib": 250860,
+      "actual_peak_child_rss_kib": 259060,
+      "actual_child_user_seconds": 0.506605,
+      "actual_child_system_seconds": 0.089178,
+      "protected_after": true,
+      "prepared_after": true
+    },
+    {
+      "job": {
+        "mode": "render",
+        "view": "1216-source-front"
+      },
+      "state": "completed",
+      "complete": true,
+      "argv": [
+        "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+        "--factory-startup",
+        "-b",
+        "-t",
+        "2",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-f2/source58f.py",
+        "--",
+        "--mode",
+        "render",
+        "--out",
+        "/workspace/scratch/a29d03198654/Aether/cloud-evidence/cloudbank58f2-patch-20261001T193919Z-6lf_rpif/outputs",
+        "--view",
+        "1216-source-front"
+      ],
+      "input_manifest_sha256": "314c7adda04db5dd2254f31dbe9b46d647c271b2da1e915480bf5462bef643dc",
+      "protected_before": true,
+      "prepared_before": true,
+      "pid": 28,
+      "actual_child_exit_code": 0,
+      "elapsed_seconds": 1.108290019998094,
+      "peak_observed_rss_kib": 274192,
+      "actual_peak_child_rss_kib": 280984,
+      "actual_child_user_seconds": 1.457866,
+      "actual_child_system_seconds": 0.062981,
+      "protected_after": true,
+      "prepared_after": true
+    },
+    {
+      "job": {
+        "mode": "render",
+        "view": "shared-side-back"
+      },
+      "state": "completed",
+      "complete": true,
+      "argv": [
+        "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+        "--factory-startup",
+        "-b",
+        "-t",
+        "2",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-f2/source58f.py",
+        "--",
+        "--mode",
+        "render",
+        "--out",
+        "/workspace/scratch/a29d03198654/Aether/cloud-evidence/cloudbank58f2-patch-20261001T193919Z-6lf_rpif/outputs",
+        "--view",
+        "shared-side-back"
+      ],
+      "input_manifest_sha256": "314c7adda04db5dd2254f31dbe9b46d647c271b2da1e915480bf5462bef643dc",
+      "protected_before": true,
+      "prepared_before": true,
+      "pid": 47,
+      "actual_child_exit_code": 0,
+      "elapsed_seconds": 2.2164325939993432,
+      "peak_observed_rss_kib": 271632,
+      "actual_peak_child_rss_kib": 288896,
+      "actual_child_user_seconds": 3.760116,
+      "actual_child_system_seconds": 0.095673,
+      "protected_after": true,
+      "prepared_after": true
+    }
+  ],
+  "images": [
+    {
+      "view": "1216-source-front",
+      "name": "58F-1216-source-front.png",
+      "width": 836,
+      "height": 471,
+      "bytes": 330968,
+      "sha256": "f3b1f0b9ded7a60b809cb2804e284e81f795a1c5605931e8856e940b32da7de8",
+      "png_crc_complete": true,
+      "decoded_scanline_bytes": 1181739
+    },
+    {
+      "view": "shared-side-back",
+      "name": "58F-shared-side-back.png",
+      "width": 836,
+      "height": 586,
+      "bytes": 550489,
+      "sha256": "5efe00b1218adda75f6da6043a980882dfb6ab748e2af96e5829d10de8f0f2be",
+      "png_crc_complete": true,
+      "decoded_scanline_bytes": 1470274
+    }
+  ],
+  "world_loaded": false,
+  "final_geometry_pass": false,
+  "visual_acceptance": false,
+  "actual_wrapper_exit_code": 0,
+  "error": null,
+  "limit_stop_reason": null,
+  "elapsed_seconds": 4.44817698100087,
+  "peak_observed_rss_kib": 274192,
+  "actual_peak_child_rss_kib": 288896,
+  "protected_unchanged": true,
+  "prepared_inputs_unchanged": true,
+  "source": {
+    "path": "source-assets/cloud-bank58/revision-f2/shared_patch58f2.blend",
+    "bytes": 98486,
+    "sha256": "5db39996a41a448da5424b371506060f06de798b718c7a1a63be475d27366ece"
+  }
+}

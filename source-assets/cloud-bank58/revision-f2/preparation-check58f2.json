@@ -1,0 +1,88 @@
+{
+  "status": "Prepared only; static scope/projection/syntax checks passed",
+  "passed": true,
+  "scripts": [
+    {
+      "path": "source-assets/cloud-bank58/revision-f2/patch58f.py",
+      "sha256": "047850f4b41cca5acc3c478ded9507c18b9fd8296687026f687717dccc2159c9",
+      "syntax_passed": true
+    },
+    {
+      "path": "source-assets/cloud-bank58/revision-f2/source58f.py",
+      "sha256": "a4a52e177deb15ab9d33f5687fb7b2cac276fd20028abd7612a55515a714f382",
+      "syntax_passed": true
+    },
+    {
+      "path": "source-assets/cloud-bank58/revision-f2/run_patch58f2.py",
+      "sha256": "512a2a6ad3f42c397772178cba19544dc1837ff372f830b46c0b44f83734444d",
+      "syntax_passed": true
+    },
+    {
+      "path": "source-assets/cloud-bank58/revision-f2/check_preparation58f2.py",
+      "sha256": "a21660e25ffab585e09e29d94a449ef64f9f426ce88bd0d36b46e0ba78595ca0",
+      "syntax_passed": true
+    }
+  ],
+  "changed_vertex_ids": [
+    113,
+    127,
+    133,
+    134,
+    138,
+    141,
+    142,
+    166,
+    180
+  ],
+  "world_xz_exact": true,
+  "top_grid_exact": true,
+  "faces_exact": true,
+  "edit_groups_exact": true,
+  "cameras_static_only": [
+    {
+      "name": "1216-source-front",
+      "bounds": [
+        [
+          0.4748819591534448,
+          0.13093614480861782
+        ],
+        [
+          0.6811100414129602,
+          0.44767194457484294
+        ]
+      ],
+      "minimum_margin": 0.13093614480861782,
+      "minimum_depth_m": 991.527427197168,
+      "native_camera_not_reexecuted": true,
+      "static_prediction_only": true
+    },
+    {
+      "name": "shared-side-back",
+      "bounds": [
+        [
+          0.09700554146198542,
+          0.07125854367170825
+        ],
+        [
+          0.8741234358226407,
+          0.8127441151154513
+        ]
+      ],
+      "minimum_margin": 0.07125854367170825,
+      "minimum_depth_m": 2168.9550591971474,
+      "native_camera_not_reexecuted": true,
+      "static_prediction_only": true
+    }
+  ],
+  "failed_f_native_report_sha256": "5094eae39a922783a623c84ab929d285da64b2a6e8eb2394e7c6d3172edc7102",
+  "protected_file_count": 437,
+  "protected_unchanged": true,
+  "source_generated": false,
+  "blender_started": false,
+  "images": [],
+  "world_loaded": false,
+  "final_geometry_pass": false,
+  "visual_acceptance": false,
+  "elapsed_seconds": 0.09912630100006936,
+  "actual_peak_rss_kib": 39184
+}

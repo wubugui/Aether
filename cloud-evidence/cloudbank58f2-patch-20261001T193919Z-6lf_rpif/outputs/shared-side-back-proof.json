@@ -1,0 +1,169 @@
+{
+  "state": "completed",
+  "passed": true,
+  "view": "shared-side-back",
+  "pid": 47,
+  "source_sha256": "5db39996a41a448da5424b371506060f06de798b718c7a1a63be475d27366ece",
+  "visual_acceptance": false,
+  "native_identity": {
+    "checks": {
+      "vertices_exact": true,
+      "ordered_oriented_faces_exact": true,
+      "nonempty": true,
+      "no_modifiers": true,
+      "flat_faces": true,
+      "matrix_identity": true,
+      "effective_visible": true,
+      "edit_groups_exact": true,
+      "edit_group_inventory_exact": true
+    },
+    "groups": [
+      {
+        "name": "CrownA_short_top_folds",
+        "passed": true
+      },
+      {
+        "name": "CrownB_short_top_folds",
+        "passed": true
+      },
+      {
+        "name": "Shared_wide_saddle",
+        "passed": true
+      },
+      {
+        "name": "Low_front_shoulder",
+        "passed": true
+      },
+      {
+        "name": "Top_outer_shared_boundary",
+        "passed": true
+      },
+      {
+        "name": "Side_upper_bulge",
+        "passed": true
+      },
+      {
+        "name": "Side_inset_waist",
+        "passed": true
+      },
+      {
+        "name": "Side_lower_return",
+        "passed": true
+      },
+      {
+        "name": "Belly_A_fold",
+        "passed": true
+      },
+      {
+        "name": "Belly_shared_saddle_fold",
+        "passed": true
+      },
+      {
+        "name": "Belly_B_fold",
+        "passed": true
+      }
+    ],
+    "passed": true,
+    "basic_shared_edge_incidence_two": true,
+    "final_self_intersection_validation": false,
+    "final_continuous_valley_validation": false
+  },
+  "camera": {
+    "name": "shared-side-back",
+    "matrix_world": [
+      [
+        -0.6139405369758606,
+        -0.2163812667131424,
+        0.7591153979301453,
+        1790.6153564453125
+      ],
+      [
+        0.7893522381782532,
+        -0.16829639673233032,
+        0.5904229879379272,
+        1408.5880126953125
+      ],
+      [
+        -9.883301288482471e-08,
+        0.961694061756134,
+        0.27412503957748413,
+        1391.8411865234375
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "projection": [
+      [
+        0.003043601755052805,
+        0.0,
+        0.0,
+        -0.0
+      ],
+      [
+        0.0,
+        0.004342066589742899,
+        0.0,
+        -0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -0.00011111326602986082,
+        -1.0000388622283936
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "actual_vertex_bounds_normalized": [
+      [
+        0.09700547158718109,
+        0.0712585300207138
+      ],
+      [
+        0.8741233944892883,
+        0.8127439618110657
+      ]
+    ],
+    "depth_range_m": [
+      2168.955078125,
+      2600.77001953125
+    ],
+    "resolution_xy": [
+      836,
+      586
+    ],
+    "pixel_aspect_xy": [
+      1,
+      1
+    ],
+    "all_vertices_in_front": true,
+    "actual_vertex_count": 182,
+    "world_loaded": false,
+    "visual_acceptance": false,
+    "minimum_margin": 0.0712585300207138,
+    "passed": true,
+    "all_actual_vertices_inside": true
+  },
+  "material_and_lighting_unchanged": true,
+  "renderer": {
+    "engine": "CYCLES",
+    "device": "CPU",
+    "samples": 8,
+    "threads": 2,
+    "denoising": false
+  },
+  "image_sha256": "5efe00b1218adda75f6da6043a980882dfb6ab748e2af96e5829d10de8f0f2be",
+  "image_bytes": 550489,
+  "source_unchanged": true,
+  "source_saved": false,
+  "world_loaded": false,
+  "final_geometry_pass": false
+}

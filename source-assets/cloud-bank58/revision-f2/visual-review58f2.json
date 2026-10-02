@@ -1,0 +1,37 @@
+{
+  "status": "Rejected after directly inspecting both raw source PNGs",
+  "reviewed_utc": "2026-10-01T19:41:25.439986+00:00",
+  "candidate": "F2",
+  "native_pipeline_passed": true,
+  "visual_acceptance": false,
+  "final_geometry_pass": false,
+  "world_integrated": false,
+  "hardware_gpu_verified": false,
+  "actual_images": [
+    {
+      "path": "cloud-evidence/cloudbank58f2-patch-20261001T193919Z-6lf_rpif/outputs/58F-1216-source-front.png",
+      "directly_viewed": true,
+      "bytes": 330968,
+      "sha256": "f3b1f0b9ded7a60b809cb2804e284e81f795a1c5605931e8856e940b32da7de8"
+    },
+    {
+      "path": "cloud-evidence/cloudbank58f2-patch-20261001T193919Z-6lf_rpif/outputs/58F-shared-side-back.png",
+      "directly_viewed": true,
+      "bytes": 550489,
+      "sha256": "5efe00b1218adda75f6da6043a980882dfb6ab748e2af96e5829d10de8f0f2be"
+    }
+  ],
+  "reference_reviewed": {
+    "path": "ref/1216.png",
+    "directly_viewed": true,
+    "bytes": 1721327,
+    "sha256": "f705cb5de0664e9189bdc66b8ed116fc6db5f6ec1f541606df2b399dbde3aa4f"
+  },
+  "findings": {
+    "front": "Hard twin stone crowns and pointed V join; dark near-horizontal waist belt and thick lower lip remain",
+    "side_back": "Large long straight sloping walls, pointed triangles, rocklike crown/saddle, wide thick belly and near-level projected bottom remain"
+  },
+  "report": "source-assets/cloud-bank58/revision-f2/RESULT58F2.md",
+  "report_sha256": "8f6d00a1c961f1ab2efab0b2133b25295fe4bfd2914ee844014a6ea015ba0fe2",
+  "limited_acceptance": "Native nine-height edit and exact unchanged camera/material/light pipeline only; shape rejected"
+}
