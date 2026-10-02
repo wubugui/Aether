@@ -1,0 +1,30 @@
+{
+  "version": "cloud58k-world-trial-v1",
+  "stage": "renderer",
+  "passed": false,
+  "state": "failed",
+  "limits": {
+    "parse_child_seconds": 30,
+    "renderer_child_seconds": 240,
+    "wrapper_seconds": 300,
+    "cpus": 2,
+    "maximum_aggregate_rss_kib": 3145728,
+    "images": 4,
+    "requested_window_width": 1180,
+    "requested_window_height": 664
+  },
+  "native_scene_source_sha256": "91ab3412c67b5f82449396677a30a9bbe1542a338c00150dc1822910cdf7f789",
+  "freeze_sha256": "4c99da76ec61bae16a3ec445f187286ef68471d1261bef989eb1c2bb352ae148",
+  "images": 0,
+  "world_geometry_saved": false,
+  "blender_started": false,
+  "glb_derived": false,
+  "visual_acceptance": false,
+  "hardware_gpu_acceptance": false,
+  "error": "Traceback (most recent call last):\n  File \"/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-k/world-trial-v1/run_world58k.py\", line 110, in main\n    require(scratch.parent == Path('/tmp') and scratch.name.startswith('cloud58k-world-trial-v1-') and scratch.is_dir(), 'Same isolated parse work copy must exist')\n  File \"/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-k/world-trial-v1/run_world58k.py\", line 33, in require\n    raise ValueError(message)\nValueError: Same isolated parse work copy must exist\n",
+  "main_project_unchanged": true,
+  "temporary_project_manifest_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+  "frozen_inputs_unchanged": true,
+  "elapsed_seconds": 4.918580600002315,
+  "logged_errors": []
+}

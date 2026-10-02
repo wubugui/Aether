@@ -1,0 +1,3371 @@
+{
+  "version": "cloud58k-world-trial-v1",
+  "native_acceptance": "source-bound saved/fresh-reloaded asset only",
+  "inherited_scene": "res://scenes/candidate61-coast/Game61Coast.tscn",
+  "current_cloud_source": "candidates/round40-exclusive-20260930/project/scenes/candidate53d-west/Game53dWest.tscn",
+  "current_cloud_source_sha256": "6ec57b72a831d6fa906a8d866c339909de55c9c42297a038dcd429b18d0c2b18",
+  "historical_52f_is_not_current_61": true,
+  "selected_root": "CloudSea_1_1",
+  "selection_basis": "New bounded design choice: closest of four original roots to the unchanged K world anchor; no historical unique-root claim",
+  "anchor_world_xyz": [
+    3958.0,
+    0.0,
+    3667.0
+  ],
+  "world_basis": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "apply_local_uv_again": false,
+  "recenter": false,
+  "scale": [
+    1,
+    1,
+    1
+  ],
+  "placement": "CloudKTrial under identity SkyRegion39; identity basis plus anchor, outside old root rotation",
+  "k_world_bounds": [
+    [
+      3724.554962158203,
+      606.328857421875,
+      3483.2191467285156
+    ],
+    [
+      4184.941375732422,
+      851.9830932617188,
+      3832.9200592041016
+    ]
+  ],
+  "current_clouds": {
+    "CloudSea_0_0": {
+      "path": "SkyRegion39/CloudSea_0_0/cloud_sea_46_2_continuous_crown",
+      "root_transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        3200.0,
+        700.0,
+        3000.0
+      ],
+      "mesh_id": "ArrayMesh_ae4aq",
+      "vertex_count": 15470,
+      "index_count": 16800,
+      "format": 34896613391,
+      "vertex_data_sha256": "a0800888200d00c975f9070eac0d043abe33af704413e37a9bebc6727dd567c1",
+      "index_data_sha256": "506647c7ee2284bb40069052813f376596bd2ac7f63cbb0bc7c539e19821e962",
+      "material_block": "[sub_resource type=\"StandardMaterial3D\" id=\"StandardMaterial3D_8ghfl\"]\nresource_name = \"Cloud41 diffuse density\"\ncull_mode = 2\ndiffuse_mode = 2\nvertex_color_use_as_albedo = true",
+      "node_block": "[node name=\"cloud_sea_46_2_continuous_crown\" type=\"MeshInstance3D\" parent=\"SkyRegion39/CloudSea_0_0\"]\nmaterial_override = SubResource(\"StandardMaterial3D_8ghfl\")\nmesh = SubResource(\"ArrayMesh_ae4aq\")\nskeleton = NodePath(\"\")",
+      "world_bounds": [
+        [
+          2418.26708984375,
+          531.2657165527344,
+          2333.308837890625
+        ],
+        [
+          3963.039306640625,
+          1077.0101013183594,
+          3677.98291015625
+        ]
+      ],
+      "root_anchor_distance_xz_m": 1009.6796264648438,
+      "aabb_gap_m": 0.0,
+      "k_aabb_contained": false,
+      "front_ray_to_k_bounds_center_first_hit_m": null,
+      "k_triangle_centroid_segments_blocked": 0
+    },
+    "CloudSea_0_1": {
+      "path": "SkyRegion39/CloudSea_0_1/cloud_sea_46_0_continuous_crown",
+      "root_transform": [
+        0.4535960853099823,
+        0.0,
+        0.8912073969841003,
+        0.0,
+        1.0,
+        0.0,
+        -0.8912073969841003,
+        0.0,
+        0.4535960853099823,
+        3200.0,
+        700.0,
+        4150.0
+      ],
+      "mesh_id": "ArrayMesh_d78o4",
+      "vertex_count": 14374,
+      "index_count": 15492,
+      "format": 34896613391,
+      "vertex_data_sha256": "40dd9efa2312e77abe6328ba2d1adaa589e74fdd0a22d04ab6778d811daef5a3",
+      "index_data_sha256": "7cd38c957ce17a126d16fa0d311e63ab745dd8410198e7cf8bfcbbe7301fc1de",
+      "material_block": "[sub_resource type=\"StandardMaterial3D\" id=\"StandardMaterial3D_wyq7j\"]\nresource_name = \"Cloud41 diffuse density\"\ncull_mode = 2\ndiffuse_mode = 2\nvertex_color_use_as_albedo = true",
+      "node_block": "[node name=\"cloud_sea_46_0_continuous_crown\" type=\"MeshInstance3D\" parent=\"SkyRegion39/CloudSea_0_1\"]\nmaterial_override = SubResource(\"StandardMaterial3D_wyq7j\")\nmesh = SubResource(\"ArrayMesh_d78o4\")\nskeleton = NodePath(\"\")",
+      "world_bounds": [
+        [
+          2441.6174949880187,
+          533.4189910888672,
+          3374.064530023794
+        ],
+        [
+          3949.174706259455,
+          1057.0673217773438,
+          4836.573645817609
+        ]
+      ],
+      "root_anchor_distance_xz_m": 898.8064575195312,
+      "aabb_gap_m": 0.0,
+      "k_aabb_contained": false,
+      "front_ray_to_k_bounds_center_first_hit_m": null,
+      "k_triangle_centroid_segments_blocked": 209
+    },
+    "CloudSea_1_0": {
+      "path": "SkyRegion39/CloudSea_1_0/cloud_sea_46_2_continuous_crown",
+      "root_transform": [
+        -0.9874798059463501,
+        0.0,
+        -0.15774564445018768,
+        0.0,
+        1.0,
+        0.0,
+        0.15774564445018768,
+        0.0,
+        -0.9874798059463501,
+        4350.0,
+        700.0,
+        3000.0
+      ],
+      "mesh_id": "ArrayMesh_ae4aq",
+      "vertex_count": 15470,
+      "index_count": 16800,
+      "format": 34896613391,
+      "vertex_data_sha256": "a0800888200d00c975f9070eac0d043abe33af704413e37a9bebc6727dd567c1",
+      "index_data_sha256": "506647c7ee2284bb40069052813f376596bd2ac7f63cbb0bc7c539e19821e962",
+      "material_block": "[sub_resource type=\"StandardMaterial3D\" id=\"StandardMaterial3D_8ghfl\"]\nresource_name = \"Cloud41 diffuse density\"\ncull_mode = 2\ndiffuse_mode = 2\nvertex_color_use_as_albedo = true",
+      "node_block": "[node name=\"cloud_sea_46_2_continuous_crown\" type=\"MeshInstance3D\" parent=\"SkyRegion39/CloudSea_1_0\"]\nmaterial_override = SubResource(\"StandardMaterial3D_8ghfl\")\nmesh = SubResource(\"ArrayMesh_ae4aq\")\nskeleton = NodePath(\"\")",
+      "world_bounds": [
+        [
+          3582.50750357263,
+          531.2657165527344,
+          2319.018678355069
+        ],
+        [
+          5140.005517166448,
+          1077.0101013183594,
+          3660.639356687434
+        ]
+      ],
+      "root_anchor_distance_xz_m": 773.6620483398438,
+      "aabb_gap_m": 0.0,
+      "k_aabb_contained": false,
+      "front_ray_to_k_bounds_center_first_hit_m": null,
+      "k_triangle_centroid_segments_blocked": 35
+    },
+    "CloudSea_1_1": {
+      "path": "SkyRegion39/CloudSea_1_1/cloud_sea_46_0_continuous_crown",
+      "root_transform": [
+        -0.3073327839374542,
+        0.0,
+        -0.9516021013259888,
+        0.0,
+        1.0,
+        0.0,
+        0.9516021013259888,
+        0.0,
+        -0.3073327839374542,
+        4350.0,
+        700.0,
+        4150.0
+      ],
+      "mesh_id": "ArrayMesh_d78o4",
+      "vertex_count": 14374,
+      "index_count": 15492,
+      "format": 34896613391,
+      "vertex_data_sha256": "40dd9efa2312e77abe6328ba2d1adaa589e74fdd0a22d04ab6778d811daef5a3",
+      "index_data_sha256": "7cd38c957ce17a126d16fa0d311e63ab745dd8410198e7cf8bfcbbe7301fc1de",
+      "material_block": "[sub_resource type=\"StandardMaterial3D\" id=\"StandardMaterial3D_wyq7j\"]\nresource_name = \"Cloud41 diffuse density\"\ncull_mode = 2\ndiffuse_mode = 2\nvertex_color_use_as_albedo = true",
+      "node_block": "[node name=\"cloud_sea_46_0_continuous_crown\" type=\"MeshInstance3D\" parent=\"SkyRegion39/CloudSea_1_1\"]\nmaterial_override = SubResource(\"StandardMaterial3D_wyq7j\")\nmesh = SubResource(\"ArrayMesh_d78o4\")\nskeleton = NodePath(\"\")",
+      "world_bounds": [
+        [
+          3634.7505534880656,
+          533.4189910888672,
+          3436.617347573965
+        ],
+        [
+          5078.773200066709,
+          1057.0673217773438,
+          4925.965261179167
+        ]
+      ],
+      "root_anchor_distance_xz_m": 622.0554809570312,
+      "aabb_gap_m": 0.0,
+      "k_aabb_contained": true,
+      "front_ray_to_k_bounds_center_first_hit_m": 1116.5192460462515,
+      "k_triangle_centroid_segments_blocked": 210
+    }
+  },
+  "original_front_position": [
+    3000.0,
+    1150.0,
+    4300.0
+  ],
+  "coverage_mismatch": {
+    "old_world_span_xyz": [
+      1444.0226465786436,
+      523.6483306884766,
+      1489.347913605202
+    ],
+    "k_world_span_xyz": [
+      460.38641357421875,
+      245.65423583984375,
+      349.70091247558594
+    ],
+    "k_to_old_span_ratio_xyz": [
+      0.31882215605483955,
+      0.46912063200290394,
+      0.2348013578835852
+    ],
+    "k_to_old_xz_aabb_area_ratio": 0.07485987516504863,
+    "suitability_proven": false,
+    "warning": "Only about 7.49% of old XZ AABB area; replacing this bank unit may open a conspicuous gap. Bounds containment is not semantic equivalence."
+  },
+  "original_front_projected_k": {
+    "pixel_bounds": [
+      [
+        557.8877878253113,
+        380.7127155147558
+      ],
+      [
+        789.684160299929,
+        493.4362163953797
+      ]
+    ],
+    "resolution": [
+      1180,
+      664
+    ],
+    "fov_degrees": 62,
+    "depth_range_m": [
+      1064.923162030403,
+      1345.7960065973496
+    ],
+    "all_vertices_in_front": true,
+    "self_clear_centroid_samples": 178,
+    "clear_centroid_samples_after_single_replacement": 83,
+    "samples": [
+      {
+        "face": 0,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 1,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 2,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 3,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 4,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 5,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 6,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 7,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 8,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 9,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 10,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 11,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 12,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 13,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 14,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 15,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 16,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 17,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 18,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 19,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 20,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_0"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 21,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_0"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 22,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 23,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 24,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 25,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 26,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 27,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 28,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 29,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 30,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 31,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 32,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 33,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 34,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 35,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 36,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 37,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 38,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 39,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 40,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 41,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 42,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 43,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_0"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 44,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_0"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 45,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_0"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 46,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_0"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 47,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 48,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 49,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 50,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 51,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 52,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 53,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 54,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 55,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 56,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 57,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 58,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 59,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 60,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 61,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 62,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 63,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 64,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 65,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 66,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_0"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 67,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 68,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_0"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 69,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_0"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 70,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_0"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 71,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 72,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 73,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 74,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 75,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 76,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 77,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 78,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 79,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 80,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 81,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 82,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 83,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 84,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 85,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 86,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 87,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 88,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 89,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 90,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 91,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_0",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 92,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_0"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 93,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_0"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 94,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_0"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 95,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_0"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 96,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 97,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 98,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 99,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 100,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 101,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 102,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 103,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 104,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 105,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 106,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 107,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 108,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 109,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 110,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 111,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 112,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 113,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 114,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 115,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_0",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 116,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_0"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 117,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_0"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 118,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_0"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 119,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_0"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 120,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 121,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 122,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 123,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 124,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 125,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 126,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 127,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 128,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 129,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 130,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 131,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 132,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 133,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 134,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 135,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 136,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 137,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 138,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_0",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 139,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 140,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_0"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 141,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_0"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 142,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_0"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 143,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_0"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 144,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 145,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 146,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 147,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 148,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 149,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 150,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 151,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 152,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 153,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 154,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 155,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 156,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 157,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 158,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 159,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 160,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 161,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 162,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 163,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 164,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_0"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 165,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_0",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 166,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_0"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 167,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_0"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 168,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 169,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 170,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 171,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 172,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 173,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 174,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 175,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 176,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 177,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 178,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 179,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 180,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 181,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 182,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 183,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 184,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 185,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 186,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 187,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 188,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 189,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 190,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_0"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 191,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 192,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 193,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 194,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 195,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 196,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 197,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 198,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 199,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 200,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 201,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 202,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 203,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 204,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 205,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 206,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 207,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 208,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 209,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 210,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 211,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 212,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 213,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 214,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_0",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 215,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_0",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 216,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 217,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 218,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 219,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 220,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 221,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 222,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 223,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 224,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 225,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 226,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 227,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 228,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 229,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 230,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 231,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 232,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 233,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 234,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 235,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 236,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 237,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 238,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_0",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 239,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_0",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 240,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 241,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 242,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 243,
+        "self_hidden": true,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 244,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 245,
+        "self_hidden": false,
+        "old_cloud_hits": [],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 246,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 247,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 248,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 249,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 250,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 251,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 252,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 253,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 254,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 255,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 256,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 257,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 258,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 259,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 260,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 261,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 262,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_0",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 263,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 264,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 265,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 266,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 267,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 268,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 269,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 270,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 271,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 272,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 273,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 274,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 275,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 276,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 277,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 278,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 279,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 280,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 281,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 282,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 283,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 284,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 285,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 286,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 287,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 288,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 289,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 290,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 291,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 292,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 293,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 294,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 295,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 296,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 297,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 298,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 299,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 300,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 301,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 302,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 303,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 304,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 305,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 306,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 307,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 308,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 309,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 310,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 311,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 312,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 313,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 314,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 315,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 316,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 317,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 318,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 319,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 320,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 321,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 322,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 323,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 324,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 325,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 326,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 327,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 328,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 329,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 330,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 331,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 332,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 333,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 334,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 335,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 336,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 337,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 338,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 339,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 340,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 341,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 342,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 343,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": true
+      },
+      {
+        "face": 344,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 345,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 346,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 347,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 348,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 349,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 350,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 351,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 352,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 353,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 354,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 355,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 356,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 357,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 358,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 359,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 360,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 361,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 362,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 363,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 364,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 365,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 366,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 367,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 368,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 369,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 370,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 371,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 372,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 373,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 374,
+        "self_hidden": false,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 375,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 376,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 377,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 378,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 379,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 380,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 381,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 382,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1"
+        ],
+        "clear_after_single_replacement": false
+      },
+      {
+        "face": 383,
+        "self_hidden": true,
+        "old_cloud_hits": [
+          "CloudSea_0_1",
+          "CloudSea_1_1"
+        ],
+        "clear_after_single_replacement": false
+      }
+    ],
+    "pixel_coverage_proven": false,
+    "caveat": "A limited nonzero open sample set means not fully buried in these four fixed meshes; other world geometry and actual pixels remain untested."
+  },
+  "diagnostic_scope": "Four relevant current-61 meshes/two fixed compressed resources, offline indexed triangle segment samples. Not all-world visibility, actual pixel coverage, minimum surface distance, or native readback.",
+  "material": {
+    "k_actual": {
+      "albedo_srgb_rgba": [
+        0.773573100566864,
+        0.7977377772331238,
+        0.8378605246543884,
+        1.0
+      ],
+      "cull_mode": 2,
+      "emission_enabled": false,
+      "emission_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.8999999761581421,
+      "shader_material": false,
+      "texture_count": 0,
+      "transparency": 0
+    },
+    "k_diffuse_mode": "Burley default (0), no property serialized",
+    "k_vertex_color_use_as_albedo": false,
+    "k_roughness": 0.8999999761581421,
+    "old_diffuse_mode": "Lambert wrap (2)",
+    "old_vertex_color_use_as_albedo": true,
+    "old_roughness": "1.0 default, not serialized",
+    "old_albedo": "white default multiplied by packed vertex colors",
+    "common": "Opaque, two-sided, per-pixel StandardMaterial; shared World3D Sun/ambient/fog and spatial lightning",
+    "retained": "K actual authored material; old shared override is not assigned to K",
+    "weather": "SceneEnvironment42b registers ShaderMaterial only; StandardMaterial is lit by shared native environment. cloud_tint is not applied to these StandardMaterial instances."
+  },
+  "inherited_source_frame": {
+    "anchor_godot_world_xyz": [
+      3958.0,
+      0.0,
+      3667.0
+    ],
+    "local_u_world": [
+      0.685364723205566,
+      0.0,
+      0.72819995880127
+    ],
+    "local_v_world": [
+      0.72819995880127,
+      0.0,
+      -0.685364723205566
+    ]
+  },
+  "world_loaded": false,
+  "images": 0,
+  "visual_acceptance": false
+}

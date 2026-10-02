@@ -1,6 +1,15 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 11:38 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 11:43 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 11:43 K图形副本路径保护失败；北等价批处理恢复准备完成
+
+- K真实parse已完整发布 **c654b1b6567e934b84936de46e7a3764df73b391**，tree **d8d4eac24836354973ac493c400708de199c431a**、parent6b704d79；31路径/30唯一blob新bare公共Git逐字节/SHA核回，本地c3d9830同树对齐
+- [K真实图形wrapper终态](cloud-evidence/cloudbank58k-world-trial-v1-renderer-20261002T114049Z-pwlfe4xf/RESULT.md) PID218996/exit1/4.919秒，GUI看不到exec创建的原/tmp副本，“同一完整工作副本必须存在”保护拒绝。**0 Godot child/世界/图**，不是renderer超时；4884主工程与47freeze不变，空临时manifest仅路径不可见不冒称原副本已删。终端已见exit1，旧one-shot不重跑
+- 下一独立v2将先核原parse副本整会员/字节，再一次明确重定位到授权共享工作根、核GUI可见与前后identity，不二次复制或fallback重建。原四图/机位/单anchor/材质/资源/预算门保持，尚在静态准备
+- [北recovery-v2](source-assets/north-ridge62-authoring/recovery-v2/README.md)已115文件冻结 SHAea449eb5f23b5fea12261a1e34990eeacf47e43c9024e076479f6d818e8b49af，17普通/-O、独立全量对照与20破坏测试通过。5.4MB单行文本改同字节internal load、实际末LF/hash/内部属性核回；group24566→7192调用、278600项属性→55批写，所有原真实group/normal/相机/材料/精确shape/fresh reopen门保留，未量化权重求快
+- 官方4.5 Text.write逐字扩容线索支持优先嫌疑，但4.5.14对应函数体/原无phase停点未实证；不把假设当根因。新Python入口/各阶段flush记录真实PID与墙钟/user/system/RSS。独立source总120秒、build≤75/fresh≤30/末保护预留8，CPU2/1.5GiB；旧60秒失败不改，views仍90秒/四原尺寸。**尚无新blend/native/图**，发布后约窗一次source，所有source写入临时暂停
+- 全GOAL/世界美术/北支撑仍未验收；私密交付23件仍因原工具二拒停止，已送不重复
 
 ## 11:38 K原生parse实过，下一固定四图
 

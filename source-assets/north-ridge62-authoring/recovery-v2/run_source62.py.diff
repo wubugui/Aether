@@ -1,0 +1,62 @@
+--- build-v1/run_source62.py
++++ recovery-v2/run_source62.py
+@@ -10,7 +10,8 @@
+ sys.path.insert(0,str(c.ROOT/'source-assets/cloud-bank58/revision-k/import-v1'))
+ import bounded_support58k as support
+ import run_import58k as inherited
+-TOTAL={'source':60,'views':90}
++TOTAL={'source':120,'views':90}
++NATIVE_CAPS={'build':75,'verify':30,'render':90}
+ MUTABLE={'north-ridge62.blend','source-attempt.json','source-terminal.json','views-attempt.json','views-terminal.json'}
+ 
+ def protected_manifest():
+@@ -33,15 +34,15 @@
+ def main():
+     ap=argparse.ArgumentParser();ap.add_argument('--run-approved',choices=['source','views']);args=ap.parse_args()
+     if not args.run_approved:
+-        c.check_binding(c.read(c.HERE/'bindings62.json'));frozen_inputs();print('Prepared only; no Blender, Godot, source or images created. Parent schedules each explicit stage.');return 0
++        c.check_binding(c.read(c.BINDING_PATH));frozen_inputs();print('Prepared only; no Blender, Godot, source or images created. Parent schedules each explicit stage.');return 0
+     stage=args.run_approved;limit=TOTAL[stage]
+     c.require(not (c.HERE/(stage+'-terminal.json')).exists(),'One-shot stage already retained')
+     if stage=='source':c.require(not c.SOURCE.exists(),'Do not overwrite a source')
+     else:
+         prior=c.read(c.HERE/'source-terminal.json');c.require(prior['passed'] and prior['source_sha256']==c.sha(c.SOURCE),'Prior actual build/fresh-reopen passed and source unchanged')
+     with (c.HERE/(stage+'-attempt.json')).open('x') as f:json.dump(dict(state='admitted_not_complete',pid=os.getpid(),stage=stage,utc=time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime())),f);f.flush();os.fsync(f.fileno())
+-    started=time.monotonic();run=Path(tempfile.mkdtemp(prefix='north-ridge62-'+stage+'-'+time.strftime('%Y%m%dT%H%M%SZ',time.gmtime())+'-',dir=c.ROOT/'cloud-evidence'));print(run,flush=True)
+-    report=dict(version=c.VERSION,stage=stage,state='preparing',passed=False,run=str(run),limits=dict(total_wall_seconds=limit,cpu_threads=2,max_wrapper_plus_child_rss_kib=support.MAX_RSS_KIB),stages=[],images=[],godot_started=False,world_loaded=False,world_modified=False,support_pending_rows=167,world_integration_allowed=False,visual_acceptance=False)
++    started=time.monotonic();run=Path(tempfile.mkdtemp(prefix='north-ridge62-recovery-v2-'+stage+'-'+time.strftime('%Y%m%dT%H%M%SZ',time.gmtime())+'-',dir=c.ROOT/'cloud-evidence'));print(run,flush=True)
++    report=dict(version=c.VERSION,recovery_version=c.RECOVERY_VERSION,stage=stage,state='preparing',passed=False,run=str(run),limits=dict(total_wall_seconds=limit,original_v1_source_seconds=60,source_budget_change='new independent recovery source stage:120s total, build cap75s, verify cap30s; original60s failure unchanged',cpu_threads=2,max_wrapper_plus_child_rss_kib=support.MAX_RSS_KIB),stages=[],images=[],godot_started=False,world_loaded=False,world_modified=False,support_pending_rows=167,world_integration_allowed=False,visual_acceptance=False)
+     before={};pins={};old_handlers={};outputs={};source_sha=c.sha(c.SOURCE) if stage=='views' else None
+     def stop(number,frame):raise InterruptedError('Wrapper stop signal '+str(number))
+     try:
+@@ -58,7 +59,7 @@
+         env.update(OMP_NUM_THREADS='2',OPENBLAS_NUM_THREADS='2',MKL_NUM_THREADS='2',NUMEXPR_NUM_THREADS='2',PYTHONDONTWRITEBYTECODE='1',PYTHONUNBUFFERED='1')
+         for key,name in [('XDG_CONFIG_HOME','config'),('XDG_CACHE_HOME','cache'),('XDG_DATA_HOME','data'),('BLENDER_USER_CONFIG','blender-config')]:path=run/name;path.mkdir();env[key]=str(path)
+         jobs=[('build',None),('verify',None)] if stage=='source' else [('render',v)for v in ['1131','1347','side','back']]
+-        raw_build=None;binding=c.read(c.HERE/'bindings62.json')
++        raw_build=None;binding=c.read(c.BINDING_PATH)
+         for mode,view in jobs:
+             c.require(frozen_inputs()==pins,'Frozen source preparation changed between processes')
+             if source_sha:c.require(c.sha(c.SOURCE)==source_sha,'Saved source changed between processes')
+@@ -68,10 +69,11 @@
+             command=[str(c.BLENDER),'--factory-startup','--disable-autoexec','-b','-t','2','--python-exit-code','1','--python',str(c.HERE/'native62.py'),'--','--mode',mode,'--out',str(output)]
+             if view:command+=['--view',view]
+             report['state']='running';support.atomic_json(run/'wrapper-report.json',report)
+-            row=support.run_child(command,run,env,run,remaining,label);report['stages'].append(row);support.atomic_json(run/'wrapper-report.json',report)
++            row=support.run_child(command,run,env,run,min(NATIVE_CAPS[mode],remaining),label);report['stages'].append(row);support.atomic_json(run/'wrapper-report.json',report)
+             c.require(support.process_passed(row),'Native child failed '+label)
+             c.require(not support.error_lines([run/(label+'.stdout.log'),run/(label+'.stderr.log')]),'Native error/leak log')
+             terminal=c.read(output/(label+'-result.json'));rawpath=output/(label+'-raw.json');raw=c.read(rawpath)
++            c.require(terminal['recovery_version']==c.RECOVERY_VERSION,'Recovery telemetry identity')
+             c.require(terminal['passed'] and terminal['state']=='completed' and terminal['version']==c.VERSION and terminal['mode']==mode and terminal['pid']==row['pid']==raw['pid'],'Native terminal/PID completion')
+             c.require(terminal['raw_sha256']==c.sha(rawpath),'Raw saved before validation SHA binding')
+             c.require(raw['cpu_affinity']==row['cpu_affinity']==cpus,'Actual CPU2 identity')
+@@ -87,7 +89,7 @@
+                 info=png_info(output/('62-'+view+'.png'));c.require(info['sha256']==terminal['image_sha256'],'Actual image identity');report['images'].append(dict(view=view,**info))
+             c.require(source_sha is None or c.sha(c.SOURCE)==source_sha,'Native no-save source bytes remained unchanged')
+             if source_sha is None:source_sha=c.sha(c.SOURCE)
+-            outputs.update({p:c.sha(p)for p in output.iterdir()if p.is_file()})
++            outputs.update({p:c.sha(p)for p in output.rglob('*')if p.is_file()})
+         c.require(len(report['stages'])==len(jobs),'All required independent processes finished');report.update(passed=True,state='completed')
+     except BaseException:report.update(passed=False,state='failed',error=traceback.format_exc())
+     finally:

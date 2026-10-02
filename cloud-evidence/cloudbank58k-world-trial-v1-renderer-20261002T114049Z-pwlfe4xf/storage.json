@@ -1,0 +1,21 @@
+{
+  "lossless_gzip": [
+    {
+      "raw": "main-project-before.json",
+      "bytes": 1002602,
+      "sha256": "515e03c43586e0009371478de736a094c2480f2d4f9c6bc321a6f5fdee0e67f0",
+      "stored": "main-project-before.json.gz",
+      "stored_bytes": 225446,
+      "stored_sha256": "cf5a283b84f4eadcb01cd60f0d478a5bccf6a5f52fffdf886516c0653c24d7c5"
+    },
+    {
+      "raw": "main-project-after.json",
+      "bytes": 1002602,
+      "sha256": "515e03c43586e0009371478de736a094c2480f2d4f9c6bc321a6f5fdee0e67f0",
+      "stored": "main-project-after.json.gz",
+      "stored_bytes": 225446,
+      "stored_sha256": "cf5a283b84f4eadcb01cd60f0d478a5bccf6a5f52fffdf886516c0653c24d7c5"
+    }
+  ],
+  "restore": "Restore missing raw only; verify size/SHA; never overwrite different existing raw."
+}

@@ -1,0 +1,48 @@
+{
+  "status": "independent_recovery_implemented_and_pure_tested_not_native",
+  "original_v1_source_attempt_failed": true,
+  "original_v1_freeze_sha256": "5f330a85d21da0ffdf3c57c6183b52e86bb6b4c0fa976431946a6f9a46afcc49",
+  "original_shape_or_preparation_modified": false,
+  "engine_started": false,
+  "blend_created": false,
+  "images_created": false,
+  "root_cause_measured": false,
+  "primary_static_hypothesis": "single-line 5424727-byte Text.write first-line insertion cost; exact killed call unknown",
+  "embedded_binding_compact_bytes": 5424727,
+  "embedded_binding_compact_sha256": "40bb1d7510384575421b4c8a588b48692ef5bced8e5cb02fa7439abab93cb310",
+  "original_candidate_y_sha256": "2eca5d39aedc03678f7d4611aa8aa497bb616ec9e7b5bade5da16db5284d13d5",
+  "five_mesh_vertices": 28681,
+  "five_mesh_triangles": 16384,
+  "positive_memberships_unchanged": 24566,
+  "group_add_calls": {
+    "v1": 24566,
+    "recovery": 7192
+  },
+  "custom_attribute_element_writes_v1": 278600,
+  "custom_attribute_bulk_writes_recovery": 55,
+  "attribute_scalar_components_exact": 479367,
+  "pure_tests": {
+    "normal_methods": 17,
+    "optimized_methods": 17,
+    "passed": true
+  },
+  "independent_actual_native_gate_tests": false,
+  "independent_offline_corruption_checks": 20,
+  "source_budget_seconds": {
+    "old_v1_unchanged": 60,
+    "new_recovery_total": 120,
+    "new_build_cap": 75,
+    "new_fresh_verify_cap": 30,
+    "final_guard_reserve": 8
+  },
+  "view_budget_seconds_unchanged": 90,
+  "cpu_threads_unchanged": 2,
+  "max_aggregate_rss_kib_unchanged": 1572864,
+  "image_dimensions_unchanged": [
+    1179,
+    664
+  ],
+  "support_rows_accepted": 0,
+  "world_integration_allowed": false,
+  "visual_acceptance": false
+}

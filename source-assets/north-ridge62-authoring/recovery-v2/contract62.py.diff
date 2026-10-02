@@ -1,0 +1,51 @@
+--- build-v1/contract62.py
++++ recovery-v2/contract62.py
+@@ -5,6 +5,9 @@
+ HERE=Path(__file__).resolve().parent
+ ROOT=HERE.parents[2]
+ PREP=HERE.parent/'preparation-v1'
++ORIGINAL=HERE.parent/'build-v1'
++BINDING_PATH=ORIGINAL/'bindings62.json'
++RECOVERY_VERSION='north-ridge62-recovery-v2'
+ VERSION='north-ridge62-build-v1'
+ ORIGIN=[-2560.0,0.0,-4608.0]
+ TILES=['Ground_-4_-7','Ground_-3_-7','Ground_-4_-6','Ground_-3_-6']
+@@ -13,7 +16,7 @@
+ BLENDER_SHA='050c02562f81fe80ba616a80198fa02d381e60f8b61b8d39add881f4bca0d7d8'
+ SOURCE=HERE/'north-ridge62.blend'
+ MATERIALS=[dict(name='R62_Grass',color=[.23,.32,.13,1.],roughness=.96),dict(name='R62_Rock',color=[.30,.34,.37,1.],roughness=.94),dict(name='R62_Snow',color=[.78,.84,.87,1.],roughness=.90)]
+-TEXTS=['BINDINGS62.json','CONTRACT62.py','REBUILD62.py','README62.txt']
++TEXTS=['BINDINGS62.json','CONTRACT62.py','REBUILD62.py','README62.txt','BULK62.py']
+ 
+ def require(ok,message):
+     if not ok:raise ValueError(message)
+@@ -90,6 +93,9 @@
+             t=b['tiles'][i-1];idx=t['master_vertex_ids'];faces=t['faces_blender'];mats=[exp['materials'][k] for k in t['master_face_ids']]
+         require(digest(row['vertices'])==digest(np.array(exp['vertices'])[idx]),'Native exact float32 geometry '+row['name'])
+         require(row['faces']==faces and row['material_indices']==mats,'Exact topology/material-region mapping '+row['name'])
++        schemas=[('source_master_vertex','INT','POINT'),('original_source_vertex','INT','POINT'),('original_color','FLOAT_COLOR','POINT'),('original_local','FLOAT_VECTOR','POINT'),('original_world','FLOAT_VECTOR','POINT'),('canonical_base_y','FLOAT','POINT'),('collar','FLOAT','POINT'),('changed','BOOLEAN','POINT'),('source_triangle','INT','FACE'),('source_tile','INT','FACE'),('material_region','INT','FACE')]
++        require(row['attribute_schemas']=={name:dict(data_type=kind,domain=domain)for name,kind,domain in schemas},'Actual native attribute domains/data types')
++        require(row['polygon_loop_counts']==[3]*len(faces) and row['polygon_loop_starts']==list(range(0,len(faces)*3,3)) and row['loop_vertex_indices']==[i for face in faces for i in face],'Actual full native triangle loop mapping')
+         require(row['flat']==[True]*len(faces),'Every face flat')
+         require(row['matrix_world']==np.eye(4).tolist(),'No native transform drift')
+         require(row['source_properties']==({} if i==0 else dict(derived_from='R62_MASTER_EVALUATED',source_resource=b['tiles'][i-1]['source_resource'],original_mapping_scope=b['mapping_scope'])),'Native source resource metadata')
+@@ -120,8 +126,9 @@
+     require(raw['semantic_handles']==[dict(name=c['name'],location=f32(local([[*c['xz'][:1],c['target_y'],c['xz'][1]]]))[0].tolist(),lock_location=[True,True,False],lock_rotation=[True]*3,lock_scale=[True]*3) for c in b['controls'][12:]],'15 height-only semantic handles')
+     require(raw['embedded_binding_sha256']==hashlib.sha256(json.dumps(b,separators=(',',':'),ensure_ascii=False).encode()).hexdigest(),'Embedded full precision binding')
+     require(raw['embedded_text_names']==TEXTS,'Editable source texts')
+-    expected_text_hashes={'BINDINGS62.json':hashlib.sha256(json.dumps(b,separators=(',',':'),ensure_ascii=False).encode()).hexdigest(),'CONTRACT62.py':sha(HERE/'contract62.py'),'REBUILD62.py':sha(HERE/'rebuild62.py'),'README62.txt':sha(HERE/'SOURCE_README.txt')}
++    expected_text_hashes={'BINDINGS62.json':hashlib.sha256(json.dumps(b,separators=(',',':'),ensure_ascii=False).encode()).hexdigest(),'CONTRACT62.py':sha(HERE/'contract62.py'),'REBUILD62.py':sha(HERE/'rebuild62.py'),'README62.txt':sha(HERE/'SOURCE_README.txt'),'BULK62.py':sha(HERE/'bulk62.py')}
+     require(raw['embedded_text_sha256']==expected_text_hashes,'Actual embedded edit code and exact full-precision recipe')
++    require(raw['embedded_text_internal']=={name:dict(is_in_memory=True,filepath='')for name in TEXTS},'All five editable Texts internally packed, no external paths')
+     for actual,planned in zip(raw['materials'],MATERIALS):
+         require(actual['name']==planned['name'] and actual['use_nodes'] and actual['metallic']==0,'Native editable principled material')
+         require(digest(actual['base_color'])==digest(planned['color']) and digest([actual['roughness']])==digest([planned['roughness']]),'Native material values')
+@@ -156,7 +163,7 @@
+ MAPPING_SUMMARY_SHA='72b6d2d6ad1c7623d3a4e81a30c2daf20641d145f97a12605936998c1a36a371'
+ 
+ def mapping_authority():
+-    directory=HERE/'offline-mapping';summary=read(directory/'mapping-summary.json')
++    directory=ORIGINAL/'offline-mapping';summary=read(directory/'mapping-summary.json')
+     require(sha(directory/'mapping-summary.json')==MAPPING_SUMMARY_SHA,'Fixed independent four-mesh mapping authority')
+     for name,pin in summary['artifacts'].items():
+         path=directory/name;require(path.stat().st_size==pin['bytes'] and sha(path)==pin['sha256'],'Original mapping artifact identity '+name)
