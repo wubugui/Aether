@@ -1,6 +1,6 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 16:25 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 17:01 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
 
 ## 云端硬性前置闸门：先插件上传完整核回，再继续工作
 
@@ -11,6 +11,17 @@
 - 上传失败优先查明原因并在授权内反复进行合规恢复，保持原payload、完整base tree/parent和非force ref；真实安全拒绝必须停止该动作，按批准规则取得明确证据/一次原call重试，仍拒则报告并保持闸门关闭，绝不绕审批/换route
 - 本项全部完成成果和本入口更新都核回后，才允许下一项。纯读取以查错/确认上传状态可以继续；与修复当前上传无关的新开发/渲染必须等待
 - 私密Slack交付定位符/收据仍仅本地，不因“全部项目”混入公开仓库；原受阻发送保持独立停止
+
+## 17:01 runner-v2修复部分成立；当前环境漏后代监督使source/views仍HOLD
+
+- 原隔离源准备及拒绝独审已完整发布 **d9356dc5ee85e2846569332561e34ee9b9174f6e**，tree **651f0182980428b75dfa42e08b37f645014e47c8**、parent58c43ec4；38路径/38唯一blob新bare公共Git逐字节/SHA核回，本地8e8fb61同树对齐，无拒绝。原1567V/3130tri候选、原生适配与全部几何门字节不变
+- 新[source-runner-v2](source-assets/cloud-bank58/revision-l/source-runner-v2/README.md)原13文件/122839B，manifest SHA37ef33c2b8a2b187ec9e5e19761a544216c3b0932204c8902ae557156c838828，FINAL SHA538c6786899d6357d5d8bcfd52fec79cd43af81cb110d90d5e0c527599952a25。独立119冻结输入/109旧依赖113175986B及4已有cache全未变，无整包/模型复制
+- [独审](source-assets/cloud-bank58/revision-l/source-runner-v2/INDEPENDENT_REVIEW.md)13991B/SHAf275080d7d90a0d8029b4936fb40bf1c9136410b820d114d52f1c7af70001907确认原R1实际主/次控制状态与手工combined绑定、R2精确阶段保护、旧R3最后hash/耐久写盘漏计时已关闭；normal/-O各42过，独审实测6.542/6.725秒。真实短Python launcher→worker→两耐久终态→收据正例exit0/0.159秒；这些只是纯监督试验，不是native
+- **新source自身阻点已实证，不放行：** 当前exec环境实际缺/proc/PID/task/TID/children，v2吞FileNotFound后process_tree只返回supervisor自身。真实supervisor6→worker7→孙8，0.08秒门，在0.082997秒仅kill7，0.084078秒reap7/-9；孙8未被kill，睡满0.5秒到0.503320秒才reap8/0。外部Popen实际exit1/0.542538秒。运行期aggregate RSS也漏worker/native，末尾峰值和不能代替全过程监视；不能猜成普通性能问题或靠事后stage字段弥补
+- views还存在独立stage关联漏检：prior_source未核两阶段记录/receipt的stage，纯fixture可把views记录带正确PID/SHA冒充source。该点本来只限views，但上述漏后代问题影响source本身，故**两阶段均HOLD**，一次source准入仍0，不删除任何attempt/记录重试
+- 下一仅做此环境的自有PID/进程组明确登记、完整资源采样/kill-reap适配并补stage断言；旧候选/形体/原生适配/120秒与CPU2/1.5GiB门不改。先将本13文件+独审/当前进度完整插件发布核回，才开始修复；不继续新的几何调查或全J_i工作
+- 成功必须最终由实际调用方观察launcher真实exit0/总墙钟<120及source阶段/PID/完整文件SHA关联；阶段记录自身只prepared、不能独自作成功。此执行方法仍待真正source，当前0.blend/新PNG/native，源/视觉/接触/世界/全部GOAL未通过
+- source-v1两原报告23639B已正常交付并全文SHA核回、各一次；本轮累计49成功/旧23仍停，所有私密收据只本地。此页和工程证据不包含私密交付定位符
 
 ## 16:25 整岸有限候选几何通过；原生runner三项缺口暂停放行
 
