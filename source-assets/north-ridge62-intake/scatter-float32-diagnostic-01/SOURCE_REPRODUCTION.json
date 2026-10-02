@@ -1,0 +1,75 @@
+{
+  "status": "passed_exact_pinned_source_reproduction",
+  "godot_invoked": false,
+  "old_native_raw_bits_recovered": false,
+  "fresh_native_fixture_still_required": true,
+  "official_commit": "f62fdbde15035c5576dad93e586201f4d41ef0cb",
+  "prepared_inputs_sha256": "827e5618b5f4d1ea22a7e789f6ad1fbc1aa80daa5d98de2bac4ff00553518b8c",
+  "extracted_function_sha256": "666c9322ba0ae82b888c09f648567e75a775f9d0eb30f2d3d09cc9692fe3d26e",
+  "harness_sha256": "e24aeb2b70699565f5602f92dd3872babe45409752eacca16ed79c51c350f0f9",
+  "compiler_flags": [
+    "-std=c++17",
+    "-O0",
+    "-ffp-contract=off"
+  ],
+  "compile_returncode": 0,
+  "execute_returncode": 0,
+  "component_count": 9300,
+  "canonical_float32_identity_matches": 9300,
+  "binary64_transport_differences": [
+    {
+      "path": "World/Vegetation/Authored_WestRoadCopse",
+      "component_index": 10,
+      "input_token": "14.084564208984375",
+      "source_reproduced_json_float64_hex_le": "010000004c2b2c40",
+      "independent_float32_lifted_to_float64_hex_le": "000000004c2b2c40",
+      "same_float32_hex_le": "605a6141",
+      "delta": 1.7763568394002505e-15
+    },
+    {
+      "path": "World/Vegetation/Authored_EastRoadTrees",
+      "component_index": 9,
+      "input_token": "113.87054443359375",
+      "source_reproduced_json_float64_hex_le": "01000000b7775c40",
+      "independent_float32_lifted_to_float64_hex_le": "00000000b7775c40",
+      "same_float32_hex_le": "b8bde342",
+      "delta": 1.4210854715202004e-14
+    },
+    {
+      "path": "World/Vegetation/Authored_EasternShoreWoods",
+      "component_index": 11,
+      "input_token": "-368.82305908203125",
+      "source_reproduced_json_float64_hex_le": "010000402b0d77c0",
+      "independent_float32_lifted_to_float64_hex_le": "000000402b0d77c0",
+      "same_float32_hex_le": "5a69b8c3",
+      "delta": -5.684341886080802e-14
+    },
+    {
+      "path": "World/Vegetation/Authored_LakeBendWoods",
+      "component_index": 10,
+      "input_token": "15.979339599609375",
+      "source_reproduced_json_float64_hex_le": "010000006cf52f40",
+      "independent_float32_lifted_to_float64_hex_le": "000000006cf52f40",
+      "same_float32_hex_le": "60ab7f41",
+      "delta": 1.7763568394002505e-15
+    },
+    {
+      "path": "World/Vegetation/Authored_AlpineValleyWoods",
+      "component_index": 9,
+      "input_token": "200.55665588378906",
+      "source_reproduced_json_float64_hex_le": "ffffff1fd0116940",
+      "independent_float32_lifted_to_float64_hex_le": "00000020d0116940",
+      "same_float32_hex_le": "818e4843",
+      "delta": -2.842170943040401e-14
+    }
+  ],
+  "known_failure_component": {
+    "path": "World/Vegetation/Authored_WestRoadCopse",
+    "component_index": 10,
+    "input_token": "14.084564208984375",
+    "source_reproduced_json_float64_hex_le": "010000004c2b2c40",
+    "independent_float32_lifted_to_float64_hex_le": "000000004c2b2c40",
+    "same_float32_hex_le": "605a6141",
+    "delta": 1.7763568394002505e-15
+  }
+}

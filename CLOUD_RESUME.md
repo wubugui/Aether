@@ -1,6 +1,16 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 06:43 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 06:50 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 06:50 J2实图仍拒绝；严格计时parse通过；scatter字节修正准备完成
+
+- 严格600准备已完整发布 **c8297b4aa8d5e13b6b3733b2f9e452dc5c14dfd1**，tree **b5558298bece333fd25ea8d5d3afe9533f0b1c07**、parentfa750eec；17blob新bare公共Git字节/SHA核回一致，本地d1048ce同树对齐
+- [J2实际原生结果](cloud-evidence/cloudbank58j2-contact-v1-20261002T064602Z-jf2pmotn/RESULT58J2.md)build/fresh验证+actual数组contact/两新进程原图全0，7.044秒/348884KiB/CPU2。184589B可编辑源SHA7adb6537…，实际665V/1326T/genus0、八控制/分组属性/内嵌重建/固定机位光材全核，fresh images0/libraries0/无stronglink；10995AABBpair/6coplanar实际接触门通过，原证明/快照/692旧输入不变
+- **J2视觉再次拒绝**：两人均实看1216及两原PNG（318284/475829B）。正面菱形屋顶+薄挑檐，侧后两大屋顶、尖右悬角、窄中接和暗夹层；从直墙变斜板仍没有参考厚实不规则云团。原源/失败实图保留，不扩四根、不入Game61；下一K仅准备三不等错位团块的连续闭包络/宽鞍肩/厚下腹，先看体块而非随机碎面
+- [新四入口parse](cloud-evidence/nearbay61-orbit-parse-20261002T064631Z-xov4nl6z/wrapper-report.json)全0（.456/.154/.154/.254秒），[当前GL回归61/61](cloud-evidence/nearbay61-continuous-v6-20261002T064755Z-ip7pcsa8/RESULT.md)0、1.637秒，无error，1587旧/49源码不变。**轻夹具没有执行game main finish/600收据**，只能证明原几何sequence回归；新deadline实际终态仍等正式world，不把源码快照当执行证明
+- [scatter精确诊断](source-assets/north-ridge62-intake/scatter-float32-diagnostic-01/README.md)固定4.5.1 built_in_strtod编译复现：首个Y由JSON读成14.084564208984377，原生float32提升double是14.084564208984375，仅1个binary64 ULP；9300分量5处传输差异全部恢复原float32字节。旧native日志未记原位，因此这是固定源码复现，不追改旧失败
+- [correction-01](source-assets/north-ridge62-intake/scatter-float32-correction-01/README.md)保留原v1/metadata，新增SHA绑定775行×48字节独立sidecar；要求actual本身已是float32、与固定字节全量相等、JSON预期也转回相同字节，保signedzero/finite/顺序和每行raw64/32证据。无epsilon放宽；空SHA所有返回码严查，日志错误门不变
+- 原173+扩展231Python及14decoder组normal/-O通过，708资源+5mesh、1589保护/全1483闭包一致，24新文件冻结。**新collector及18项原生小fixture均尚未parse/run**，发布后先两parse/fixture再collect。所有full占用/变形/runtime/道路仍false，E/F2八件Slack仍待答，全部GOAL/硬件GPU验收未通过
 
 ## 06:43 v6严格600秒完成收据准备通过
 
