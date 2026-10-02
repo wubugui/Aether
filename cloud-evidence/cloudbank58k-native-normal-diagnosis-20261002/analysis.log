@@ -1,0 +1,103 @@
+{
+  "version": "cloud58k-native-normal-diagnosis-20261002",
+  "diagnosis_passed": true,
+  "native_collection_data_preserved": true,
+  "original_native_validation_passed": false,
+  "original_wrapper_passed": false,
+  "original_failure": "Actual flat corner normals equal polygon normal exactly",
+  "source_sha256": "16eeb67dce6e89f05562b67f869c77dd7882942585241a2648ae46ff48012bee",
+  "raw_sha256": "35cde26e14f8767c015295cff3b8f271a85052a111d8fd68e066784a18e1b1c7",
+  "raw_bytes": 281016,
+  "native_pid": 5,
+  "native_exit": 1,
+  "native_seconds": 0.5875957270036452,
+  "wrapper_seconds": 5.5613726250012405,
+  "checks": {
+    "source_sha": true,
+    "full_identity": true,
+    "camera_identity": true,
+    "scene_identity": true,
+    "dependencies": true,
+    "source_flat_flags": true,
+    "version": true,
+    "scope": true,
+    "geometry_fingerprint": true,
+    "exact_float32_normals": true,
+    "all_loop_owners_and_vertices": true,
+    "all_actual_corners_flat_bit_equal": true,
+    "original_3e5_polygon_unit_and_outward_gate": true,
+    "original_3e5_corner_unit_and_outward_gate": true
+  },
+  "polygon_count": 384,
+  "corner_count": 1152,
+  "differing_polygon_corner_faces": 384,
+  "maximum_polygon_corner_difference": 8.52346420288086e-06,
+  "maximum_difference_face": {
+    "face": 270,
+    "vertices": [
+      135,
+      136,
+      148
+    ],
+    "polygon": [
+      -0.23033899068832397,
+      -0.05529206991195679,
+      0.9715383052825928
+    ],
+    "corner": [
+      -0.23034751415252686,
+      -0.05529196932911873,
+      0.9715363383293152
+    ],
+    "corner_minus_polygon": [
+      -8.52346420288086e-06,
+      1.0058283805847168e-07,
+      -1.9669532775878906e-06
+    ],
+    "max_corner_polygon_difference": 8.52346420288086e-06,
+    "all_three_corners_bit_equal": true,
+    "polygon_geometry_error": 2.6388063845139698e-08,
+    "corner_geometry_error": 8.509929039529629e-06
+  },
+  "all_triangles_corner_normals_exactly_flat": true,
+  "polygon_geometric_max": 1.0260302307774083e-07,
+  "corner_geometric_max": 8.509929039529629e-06,
+  "polygon_unit_max": 9.786306254255805e-08,
+  "corner_unit_max": 1.2353108358453824e-07,
+  "original_normal_epsilon": 3e-05,
+  "actual_corner_exporter_replay_exact_faces": 384,
+  "actual_corner_exporter_replay_max": 0.0,
+  "mathematical_newell_vs_native_corner_exact_faces": 166,
+  "mathematical_newell_vs_native_corner_max": 5.960464477539063e-08,
+  "memory_only_actual_corner_substitution_original_contract": {
+    "passed": true,
+    "authored_vertex_count": 194,
+    "render_vertex_count": 1152,
+    "triangles": 384,
+    "maximum_position_error_m": 0.0,
+    "maximum_normal_component_error": 8.509929039557385e-06,
+    "godot_relative_bounds": [
+      [
+        -233.44503784179688,
+        606.328857421875,
+        -183.78085327148438
+      ],
+      [
+        226.94137573242188,
+        851.9830932617188,
+        165.92005920410156
+      ]
+    ],
+    "front_face": "counterclockwise"
+  },
+  "modified_glb_created": false,
+  "transfer_passed": false,
+  "native_processes_started_for_diagnosis": 0,
+  "images": 0,
+  "world_loaded": false,
+  "source_custom_normal_attribute_presence_not_collected": true,
+  "references": [
+    "https://raw.githubusercontent.com/blender/blender/v4.5.14/source/blender/makesrna/intern/rna_mesh.cc",
+    "https://raw.githubusercontent.com/blender/blender/v4.5.14/source/blender/blenkernel/intern/mesh_normals.cc"
+  ]
+}

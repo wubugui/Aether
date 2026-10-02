@@ -1,6 +1,15 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 09:20 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 09:26 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 09:26 实际corner法线原门通过；北shadow-v3准备完成
+
+- K实际normal原raw及bit-equality验证失败已完整发布 **b86a8383228b6e53a74dacbf1f75e647d4e88540**，tree **c80ce55e7db7cd6071e6bf71de5f8e194218cefe**、parent3804d7d3；29路径/27blob新bare公共Git逐字节/SHA回读一致，本地2598901同树对齐。create_tree首拒后原授权同参数一次重试，已存blob未重传
+- [实际native corner诊断](cloud-evidence/cloudbank58k-native-normal-diagnosis-20261002/README.md)source/PID/rawSHA身份核过，每面3corner逐bit平坦，corner对几何最大8.509929e-6，polygon对几何最大1.026030e-7，**二者都过原3e-5，不松门**。actual corner经原exporter round→normalize→Y-up精确重放384面原GLB，最大误差0；仅内存恢复corner也过原完整geometry门/位置误差0，未写新GLB
+- 同版4.5.14官方RNA/mesh源码解释两API：polygon直接三角cross，corner来自Newell face缓存展开，float32运算序不同不保证bit相等。旧数学Newell值与actual仍有≤5.96e-8差、166面bit同，后续必须用actual而非推算。原readback-v1/native/wrapper失败完整保留，只读诊断不追改pass；未独立核custom_normal属性缺席，不扩大结论
+- [shadow-arrays-v3](source-assets/north-ridge62-intake/proxy-bounds-v1/shadow-arrays-v3/README.md)源准备完成：字节不变复用coast61严格decoder与完整base/全部LOD有向三角等价门，只补mesh_summary/完整精度JSON。indexed视觉与actual primary get_faces snapped bounds分记精确hash/并集，岩proxy用实际get_faces；不调用shadow缺失API、不加epsilon。原版本/六mesh/rock绑定与775组重放和protected实例不变
+- normal/-O各60纯组、双向独立源码审查、父默认static exit0，旧v1/v2/失败/helper身份未变。**v3尚未native parse/collect**；发布后仅原CPU2/60秒一次资源读取，形成逐path/index保留/调整约束后转北山体制作，不再扩大整世界审计
+- K独立transfer-v2正在准备，保raw且只用actual corner恢复NORMAL payload，其余GLB字节全保、再原geometry/material门；后续仅隔离Godot import/save/fresh reload，不重读/重export。当前无Aether engine，Slack集中两私密频道/补发仍待答，原八件继续停；全GOAL/硬件GPU未验收
 
 ## 09:20 K实际法线数据取得，新增逐位假设门失败
 
