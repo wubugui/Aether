@@ -1,0 +1,48 @@
+{
+  "stage": "source",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/source-runner-v3/run58l_v3.py",
+    "--run-approved",
+    "source"
+  ],
+  "cwd": "/workspace/scratch/a29d03198654/Aether",
+  "publication_commit": "cc4cce48963459683ea6ae5c72e3d12439571f2a",
+  "process_exit_observed": true,
+  "actual_exit_code": 1,
+  "timeout": false,
+  "cleanup": [],
+  "source_chain_verified": false,
+  "utc_started": "2026-10-02T17:51:27.572968+00:00",
+  "started_monotonic": 102882.78193634,
+  "supervisor_pid": 5,
+  "ended_monotonic": 102898.89538936,
+  "wall_seconds": 16.11345301999245,
+  "remaining_owned_pids": [],
+  "ownership_history": [
+    {
+      "pid": 2,
+      "state": "R",
+      "ppid": 1,
+      "pgid": 1,
+      "sid": 1,
+      "starttime": 10288272,
+      "rss_kib": 13824,
+      "reason": "supervisor"
+    },
+    {
+      "pid": 5,
+      "state": "R",
+      "ppid": 2,
+      "pgid": 5,
+      "sid": 5,
+      "starttime": 10288278,
+      "rss_kib": 0,
+      "reason": "actual_external_Popen"
+    }
+  ],
+  "cleanup_signals": [],
+  "utc_process_observation_complete": "2026-10-02T17:51:43.686964+00:00",
+  "supervisor_terminal_sha256": "cbee31c9fa37ae431c17cae9a596f57706b40b0d0167ef5279f9f380b2d05205"
+}

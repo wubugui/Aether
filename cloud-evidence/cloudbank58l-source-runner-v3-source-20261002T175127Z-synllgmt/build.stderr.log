@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/source-v1/native58l.py", line 235, in <module>
+    if __name__=='__main__':raise SystemExit(main())
+                                             ^^^^^^
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/source-v1/native58l.py", line 213, in main
+    report['validation']=g.validate_native_raw(raw,c,b)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/source-v1/geometry58l.py", line 173, in validate_native_raw
+    report=support.validate_capture(raw,candidate,binding,support.expected_texts(HERE,candidate,binding))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/source-v1/native_support58l.py", line 112, in validate_capture
+    gs=groups(candidate);require(mesh['group_names']==[g[0] for g in gs],'Actual vertex group identities')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/source-v1/native_support58l.py", line 23, in require
+    if not ok: raise ValueError(message)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Actual vertex group identities
+
+Error: script failed, file: '/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/source-v1/native58l.py', exiting.

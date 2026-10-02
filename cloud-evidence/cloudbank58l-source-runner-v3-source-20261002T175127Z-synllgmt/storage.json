@@ -1,0 +1,76 @@
+{
+  "version": "cloud58l-source-v3-failure-lossless-raw-v1",
+  "purpose": "Exact original runtime bytes; identical before/after and raw/failure aliases share one unique compressed representation. No native model was saved.",
+  "raw_files": [
+    {
+      "path": "protected-before.json",
+      "bytes": 2823330,
+      "sha256": "023502e456db2b606c673d8397726296b401e22d6b40b41d734038a28511e866",
+      "encoding": "gzip-mtime0",
+      "compressed_bytes": 554464,
+      "compressed_sha256": "d2a05bf6fd32899718d16e3a21b85e66609337213ecbf0c427db0ed7b3b06c18",
+      "parts": [
+        {
+          "path": "lossless-storage/023502e456db2b606c673d8397726296b401e22d6b40b41d734038a28511e866.gz.part000",
+          "bytes": 500000,
+          "sha256": "79a2bf5676af9dea6722ccefba790a42a16dcdf83afa8eef6b669aed57090871"
+        },
+        {
+          "path": "lossless-storage/023502e456db2b606c673d8397726296b401e22d6b40b41d734038a28511e866.gz.part001",
+          "bytes": 54464,
+          "sha256": "89a1688a1f7ccb0704a1cc6975066f47e8945adde046f2b747d0d7a75053a2d2"
+        }
+      ]
+    },
+    {
+      "path": "protected-after.json",
+      "bytes": 2823330,
+      "sha256": "023502e456db2b606c673d8397726296b401e22d6b40b41d734038a28511e866",
+      "encoding": "gzip-mtime0",
+      "compressed_bytes": 554464,
+      "compressed_sha256": "d2a05bf6fd32899718d16e3a21b85e66609337213ecbf0c427db0ed7b3b06c18",
+      "parts": [
+        {
+          "path": "lossless-storage/023502e456db2b606c673d8397726296b401e22d6b40b41d734038a28511e866.gz.part000",
+          "bytes": 500000,
+          "sha256": "79a2bf5676af9dea6722ccefba790a42a16dcdf83afa8eef6b669aed57090871"
+        },
+        {
+          "path": "lossless-storage/023502e456db2b606c673d8397726296b401e22d6b40b41d734038a28511e866.gz.part001",
+          "bytes": 54464,
+          "sha256": "89a1688a1f7ccb0704a1cc6975066f47e8945adde046f2b747d0d7a75053a2d2"
+        }
+      ]
+    },
+    {
+      "path": "outputs/build-raw.json",
+      "bytes": 1556139,
+      "sha256": "73dfbbf9a376d4c32d29f27f02ff3ca99d72e1e7686f4e4a2a11de55b2e7182a",
+      "encoding": "gzip-mtime0",
+      "compressed_bytes": 363772,
+      "compressed_sha256": "8b1dc8aa801acc09843b83a24d5197ab995ba700e217e647ba9801821ce4c4ce",
+      "parts": [
+        {
+          "path": "lossless-storage/73dfbbf9a376d4c32d29f27f02ff3ca99d72e1e7686f4e4a2a11de55b2e7182a.gz.part000",
+          "bytes": 363772,
+          "sha256": "8b1dc8aa801acc09843b83a24d5197ab995ba700e217e647ba9801821ce4c4ce"
+        }
+      ]
+    },
+    {
+      "path": "outputs/build-failure-raw.json",
+      "bytes": 1556139,
+      "sha256": "73dfbbf9a376d4c32d29f27f02ff3ca99d72e1e7686f4e4a2a11de55b2e7182a",
+      "encoding": "gzip-mtime0",
+      "compressed_bytes": 363772,
+      "compressed_sha256": "8b1dc8aa801acc09843b83a24d5197ab995ba700e217e647ba9801821ce4c4ce",
+      "parts": [
+        {
+          "path": "lossless-storage/73dfbbf9a376d4c32d29f27f02ff3ca99d72e1e7686f4e4a2a11de55b2e7182a.gz.part000",
+          "bytes": 363772,
+          "sha256": "8b1dc8aa801acc09843b83a24d5197ab995ba700e217e647ba9801821ce4c4ce"
+        }
+      ]
+    }
+  ]
+}
