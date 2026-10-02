@@ -1,0 +1,213 @@
+{
+  "scope": {
+    "parent_candidate_sha256": "3a0c9b31f9bcc715db982c1536596dbaba7e9a8377c409e49885804ee1a13b5d",
+    "parent_bindings_sha256": "2dae0bd8bc39a2a0101f32cba53c475e5442a406ae6ae83cb689e104596f0a54",
+    "old_top_PCHIP_identity": false,
+    "old_bottom_PCHIP_identity": true,
+    "maximum_top_displacement_m": 120,
+    "topology_unchanged": true,
+    "all_XZ_unchanged": true,
+    "complete_nonconvex_rim_unchanged": true,
+    "belly_unchanged": true,
+    "main_crowns_and_valley_nodes_unchanged": true,
+    "core80m_rule_unchanged": true,
+    "top_return_m": 75,
+    "old_top_return_m": 45
+  },
+  "authored_lobes": [
+    [
+      "A",
+      4140,
+      3910,
+      185,
+      180,
+      1005
+    ],
+    [
+      "B",
+      4330,
+      4480,
+      195,
+      180,
+      1040
+    ],
+    [
+      "C",
+      4750,
+      4300,
+      185,
+      230,
+      925
+    ],
+    [
+      "D",
+      4470,
+      3690,
+      210,
+      145,
+      845
+    ],
+    [
+      "A_near_shoulder",
+      4020,
+      3900,
+      130,
+      150,
+      895
+    ],
+    [
+      "A_oblique_shoulder",
+      4250,
+      3835,
+      145,
+      120,
+      910
+    ],
+    [
+      "A_valley_shoulder",
+      4105,
+      4040,
+      150,
+      115,
+      872
+    ],
+    [
+      "B_valley_shoulder",
+      4245,
+      4345,
+      140,
+      140,
+      902
+    ],
+    [
+      "B_side_shoulder",
+      4460,
+      4460,
+      135,
+      155,
+      927
+    ],
+    [
+      "B_back_shoulder",
+      4310,
+      4600,
+      165,
+      125,
+      912
+    ],
+    [
+      "C_low_shoulder",
+      4620,
+      4310,
+      145,
+      180,
+      857
+    ],
+    [
+      "D_near_shoulder",
+      4360,
+      3680,
+      145,
+      115,
+      820
+    ]
+  ],
+  "changed_top_vertices": 571,
+  "unchanged_total_vertices": 996,
+  "maximum_abs_displacement_m": 110.8035888671875,
+  "minimum_delta_m": -110.8035888671875,
+  "maximum_delta_m": 97.028076171875,
+  "rms_delta_all_top_m": 23.382936406984186,
+  "old_face_descriptors": {
+    "slope_degrees_percentiles": [
+      0.14666073300006707,
+      17.033869152269638,
+      37.09969417566262,
+      57.515334915242036,
+      65.74842610549442,
+      77.38507199597763,
+      78.95083857825963
+    ],
+    "top_triangles_over_70_degrees": 55
+  },
+  "new_face_descriptors": {
+    "slope_degrees_percentiles": [
+      0.14666073300006707,
+      15.377156911521501,
+      38.52427570884617,
+      58.031203938076665,
+      62.8883221773304,
+      71.27999794209326,
+      81.65895721608878
+    ],
+    "top_triangles_over_70_degrees": 22
+  },
+  "visual_acceptance": false,
+  "native_executed": false,
+  "geometry": {
+    "passed": true,
+    "topology": {
+      "vertices": 1567,
+      "triangles": 3130,
+      "edges": 4695,
+      "components": 1,
+      "euler": 2,
+      "positive_volume_m3": 289493286.4686012,
+      "minimum_triangle_area_m2": 0.3776152864805115,
+      "minimum_edge_m": 0.7249355789091214,
+      "maximum_edge_m": 181.47577776308742,
+      "directed_edge_incidence_two": true,
+      "all_vertex_links_one_cycle": true
+    },
+    "planar_embedding": {
+      "passed": true,
+      "all_planar_edges_tested": 2449,
+      "aabb_edge_pairs_tested": 12454,
+      "adaptive_exact_predicates": true,
+      "nonoverlap_proof": "connected consistently oriented disk; one prescribed simple boundary; no intersecting or overlapping embedded edges"
+    },
+    "non_self_intersection": true,
+    "intersection_method": "actual paired PL heightfield; exact XZ identity, positive interior thickness, prescribed nonoverlapping disk; upper/bottom meet only at shared simple rim",
+    "guarded_triangles": 1180,
+    "outer_return_triangles": 385,
+    "outer_return_max_bound_m": 77.93207968880047,
+    "core_rule": "Clip each actual affine violation region against560/630/120. Every nonempty violation polygon lies wholly strictly within80m of true rim by convex point-to-segment distance upper bound; no interior seam/hole exemption",
+    "contact_acceptance": false,
+    "world_acceptance": false,
+    "global_GOAL": false
+  },
+  "controls": [
+    {
+      "id": "C01_Crown_A",
+      "changed_vertices": 122
+    },
+    {
+      "id": "C02_Crown_B",
+      "changed_vertices": 99
+    },
+    {
+      "id": "C03_Return_C",
+      "changed_vertices": 61
+    },
+    {
+      "id": "C04_Shoulder_D",
+      "changed_vertices": 43
+    },
+    {
+      "id": "C05_Main_Valley",
+      "changed_vertices": 231
+    },
+    {
+      "id": "C06_Belly",
+      "changed_vertices": 681
+    },
+    {
+      "id": "C07_Meso_Relief",
+      "changed_vertices": 469
+    },
+    {
+      "id": "C05_Main_Valley.width_multiplier",
+      "changed_vertices": 105
+    }
+  ]
+}

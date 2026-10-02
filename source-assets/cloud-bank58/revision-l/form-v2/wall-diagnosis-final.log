@@ -1,0 +1,285 @@
+{
+  "method": "Read-only ray/triangle lookup of manually identified pixels in old true PNGs.\nNot an image render, visibility acceptance or new camera. No image is altered.\n",
+  "scope": "Manual pixels chosen after viewing actual old PNGs. Their nearest triangle is calculated using original camera bytes and original float32 mesh. No new visual pass implied.",
+  "samples": [
+    {
+      "view": "03-k-fixed-side-back",
+      "pixel_xy": [
+        360,
+        440
+      ],
+      "hit": true,
+      "old_face_index": 1248,
+      "old_face_vertex_ids": [
+        387,
+        49,
+        386
+      ],
+      "sheet": "top",
+      "world_hit": [
+        4405.142999839104,
+        742.5724498336804,
+        3572.5259603792056
+      ],
+      "true_rim_distance_hit_m": 22.704090886169684,
+      "true_rim_distance_vertices_m": [
+        61.08151560046314,
+        3.1446182826359006e-06,
+        27.660518124464936
+      ],
+      "new_top_y_deltas_m": [
+        -5.42034912109375,
+        0.0,
+        -12.09210205078125
+      ]
+    },
+    {
+      "view": "03-k-fixed-side-back",
+      "pixel_xy": [
+        550,
+        390
+      ],
+      "hit": true,
+      "old_face_index": 1048,
+      "old_face_vertex_ids": [
+        369,
+        370,
+        34
+      ],
+      "sheet": "top",
+      "world_hit": [
+        4227.13885301706,
+        752.9567371463144,
+        3499.2674080724237
+      ],
+      "true_rim_distance_hit_m": 35.40769853584698,
+      "true_rim_distance_vertices_m": [
+        44.93610859490595,
+        25.965951459862897,
+        1.0883365858632177e-06
+      ],
+      "new_top_y_deltas_m": [
+        -10.3392333984375,
+        -4.18511962890625,
+        0.0
+      ]
+    },
+    {
+      "view": "03-k-fixed-side-back",
+      "pixel_xy": [
+        260,
+        505
+      ],
+      "hit": true,
+      "old_face_index": 1396,
+      "old_face_vertex_ids": [
+        371,
+        53,
+        378
+      ],
+      "sheet": "top",
+      "world_hit": [
+        4509.081793913684,
+        747.6822520284878,
+        3525.909117347558
+      ],
+      "true_rim_distance_hit_m": 33.58801279742594,
+      "true_rim_distance_vertices_m": [
+        20.41292834801535,
+        2.0712249251632612e-06,
+        61.86352991297212
+      ],
+      "new_top_y_deltas_m": [
+        -1.85015869140625,
+        0.0,
+        -14.3438720703125
+      ]
+    },
+    {
+      "view": "03-k-fixed-side-back",
+      "pixel_xy": [
+        410,
+        310
+      ],
+      "hit": true,
+      "old_face_index": 1357,
+      "old_face_vertex_ids": [
+        402,
+        420,
+        421
+      ],
+      "sheet": "top",
+      "world_hit": [
+        4261.943308077514,
+        819.3128141693544,
+        3690.772870899057
+      ],
+      "true_rim_distance_hit_m": 82.43114224109479,
+      "true_rim_distance_vertices_m": [
+        53.04797981801313,
+        96.66452902578808,
+        66.6681269717299
+      ],
+      "new_top_y_deltas_m": [
+        -8.93365478515625,
+        -19.32177734375,
+        -13.7713623046875
+      ]
+    },
+    {
+      "view": "03-k-fixed-side-back",
+      "pixel_xy": [
+        625,
+        310
+      ],
+      "hit": true,
+      "old_face_index": 771,
+      "old_face_vertex_ids": [
+        18,
+        393,
+        394
+      ],
+      "sheet": "top",
+      "world_hit": [
+        3871.1935599967774,
+        751.124418499202,
+        3644.6326435512015
+      ],
+      "true_rim_distance_hit_m": 26.88076256905684,
+      "true_rim_distance_vertices_m": [
+        1.891767888333617e-07,
+        39.28105353297517,
+        34.80378529594213
+      ],
+      "new_top_y_deltas_m": [
+        0.0,
+        -16.37646484375,
+        -16.9375
+      ]
+    },
+    {
+      "view": "04-k-fixed-near",
+      "pixel_xy": [
+        770,
+        410
+      ],
+      "hit": true,
+      "old_face_index": 519,
+      "old_face_vertex_ids": [
+        533,
+        509,
+        532
+      ],
+      "sheet": "top",
+      "world_hit": [
+        3705.527831672958,
+        768.1744680030932,
+        3980.986516839987
+      ],
+      "true_rim_distance_hit_m": 63.15176756033736,
+      "true_rim_distance_vertices_m": [
+        81.15569959473208,
+        54.01456651441305,
+        30.931576902614967
+      ],
+      "new_top_y_deltas_m": [
+        60.69720458984375,
+        32.9830322265625,
+        -3.26239013671875
+      ]
+    },
+    {
+      "view": "04-k-fixed-near",
+      "pixel_xy": [
+        720,
+        335
+      ],
+      "hit": true,
+      "old_face_index": 1197,
+      "old_face_vertex_ids": [
+        511,
+        490,
+        510
+      ],
+      "sheet": "top",
+      "world_hit": [
+        3768.4974039838353,
+        780.4701202706424,
+        3923.950341560538
+      ],
+      "true_rim_distance_hit_m": 129.12563753535235,
+      "true_rim_distance_vertices_m": [
+        142.04717082509606,
+        113.44424767421894,
+        104.41603673023994
+      ],
+      "new_top_y_deltas_m": [
+        72.765625,
+        67.1292724609375,
+        69.010986328125
+      ]
+    },
+    {
+      "view": "04-k-fixed-near",
+      "pixel_xy": [
+        980,
+        220
+      ],
+      "hit": true,
+      "old_face_index": 463,
+      "old_face_vertex_ids": [
+        539,
+        538,
+        558
+      ],
+      "sheet": "top",
+      "world_hit": [
+        3971.6615115328846,
+        840.5185276226366,
+        3996.8694489034765
+      ],
+      "true_rim_distance_hit_m": 71.70785319418108,
+      "true_rim_distance_vertices_m": [
+        107.680596907885,
+        72.29402460627547,
+        66.80031378514569
+      ],
+      "new_top_y_deltas_m": [
+        -13.80743408203125,
+        12.567626953125,
+        3.55267333984375
+      ]
+    },
+    {
+      "view": "01-original61-front",
+      "pixel_xy": [
+        795,
+        425
+      ],
+      "hit": true,
+      "old_face_index": 743,
+      "old_face_vertex_ids": [
+        513,
+        514,
+        493
+      ],
+      "sheet": "top",
+      "world_hit": [
+        3904.274116366204,
+        835.4898824698292,
+        3934.731469102652
+      ],
+      "true_rim_distance_hit_m": 106.10606905565503,
+      "true_rim_distance_vertices_m": [
+        102.0640614306329,
+        110.57804734179662,
+        150.66149875000335
+      ],
+      "new_top_y_deltas_m": [
+        29.8282470703125,
+        4.16973876953125,
+        8.2735595703125
+      ]
+    }
+  ]
+}

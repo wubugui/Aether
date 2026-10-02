@@ -1,0 +1,133 @@
+{
+  "scope": "Original exact four camera records, intentionally only three unique directions. No pose/frustum refit.",
+  "author_frame": {
+    "anchor_world": [
+      3958,
+      0,
+      3667
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "world_to_blender": "(X-3958,3667-Z,Y)"
+  },
+  "source_inspection_lighting": {
+    "world_linear_rgba": [
+      0.37,
+      0.53,
+      0.7,
+      1.0
+    ],
+    "world_strength": 0.7,
+    "sun_energy": 2.5,
+    "sun_angle_radians": 0.15,
+    "sun_source_rotation_xyz_radians": [
+      0.4,
+      -0.6,
+      -0.4
+    ]
+  },
+  "material": {
+    "linear_rgba": [
+      0.5600000023841858,
+      0.6000000238418579,
+      0.6700000166893005,
+      1.0
+    ],
+    "roughness": 0.8999999761581421,
+    "metallic": 0.0,
+    "backface_culling": false,
+    "godot_actual": {
+      "albedo_srgb_rgba": [
+        0.773573100566864,
+        0.7977377772331238,
+        0.8378605246543884,
+        1.0
+      ],
+      "cull_mode": 2,
+      "emission_enabled": false,
+      "emission_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.8999999761581421,
+      "shader_material": false,
+      "texture_count": 0,
+      "transparency": 0
+    },
+    "conversion_note": "Blender linear 0.56/0.60/0.67; preserve actual Godot sRGB 0.7735731/0.7977378/0.8378605. The sRGB triplet is never fed into the Blender linear socket."
+  },
+  "world_cameras": [
+    {
+      "name": "01-original61-front",
+      "camera_transform": "1200000010742f3f8ebcf53d00df37bf0000000035807c3f91ba283e506b3a3f1048e7bd1f0e2d3f00803b4500c08f4400608645",
+      "camera_projection": "130000009dc86f3f000000000000000000000000000000001c07d53f00000000000000000000000000000000460180bf000080bf0000000000000000173433bf00000000",
+      "reference": "1216",
+      "weather_time": 0.35,
+      "resolution": [
+        1179,
+        664
+      ],
+      "near": 0.3499999940395355,
+      "far": 18000.0,
+      "fov": 62.0
+    },
+    {
+      "name": "02-k-trial-front",
+      "camera_transform": "1200000010742f3f8ebcf53d00df37bf0000000035807c3f91ba283e506b3a3f1048e7bd1f0e2d3f00803b4500c08f4400608645",
+      "camera_projection": "130000009dc86f3f000000000000000000000000000000001c07d53f00000000000000000000000000000000460180bf000080bf0000000000000000173433bf00000000",
+      "reference": "1216",
+      "weather_time": 0.35,
+      "resolution": [
+        1179,
+        664
+      ],
+      "near": 0.3499999940395355,
+      "far": 18000.0,
+      "fov": 62.0
+    },
+    {
+      "name": "03-k-fixed-side-back",
+      "camera_transform": "12000000322b1dbf0a935dbe6555423f000000009631763f1c5a8c3e00134abfe5552c3ef32517bf9eef904596f77344086b4345",
+      "camera_projection": "130000009dc86f3f000000000000000000000000000000001c07d53f00000000000000000000000000000000460180bf000080bf0000000000000000173433bf00000000",
+      "reference": "1216",
+      "weather_time": 0.35,
+      "resolution": [
+        1179,
+        664
+      ],
+      "near": 0.3499999940395355,
+      "far": 18000.0,
+      "fov": 62.0
+    },
+    {
+      "name": "04-k-fixed-near",
+      "camera_transform": "120000000c742f3f92bcf53d04df37bf0000000036807c3f8fba283e546b3a3f0848e7bd1b0e2d3fcd3c5c4550014f44b0fa7d45",
+      "camera_projection": "130000009dc86f3f000000000000000000000000000000001c07d53f00000000000000000000000000000000460180bf000080bf0000000000000000173433bf00000000",
+      "reference": "1216",
+      "weather_time": 0.35,
+      "resolution": [
+        1179,
+        664
+      ],
+      "near": 0.3499999940395355,
+      "far": 18000.0,
+      "fov": 62.0
+    }
+  ],
+  "pixel_aspect_float32": [
+    1.0006932020187378,
+    1.0
+  ],
+  "actual_future_png_dimensions": [
+    1179,
+    664
+  ],
+  "source_only": true,
+  "visual_acceptance": false,
+  "world_acceptance": false
+}
