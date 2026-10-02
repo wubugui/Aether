@@ -1,0 +1,8 @@
+{
+  "scope": "Diagnostic metadata-print attempt only; original source/raw/reports unchanged",
+  "bundled_python_replay": "Completed with 21/21 whole normal reports exactly equal to native",
+  "external_python_replay": "21 validators completed, then metadata print failed before JSON output",
+  "error": "AttributeError: module 'math' has no attribute '__file__'",
+  "correction": "Diagnostic-only metadata access uses getattr(math, '__file__', 'built-in'); no validator change",
+  "engine_started": false
+}
