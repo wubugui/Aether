@@ -1,0 +1,59 @@
+{
+  "stage": "views",
+  "runtime": {
+    "executable": "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/4.5/python/bin/python3.11",
+    "version": "3.11.15 (main, Apr 25 2025, 12:39:20) [GCC 11.2.1 20220127 (Red Hat 11.2.1-9)]",
+    "numpy_version": "1.26.4",
+    "python_sha256": "60b08089c60cbe81827b135c8fd9e206ba2ee6bf54aa1dbd0d6f56ac2d5914f6",
+    "numpy_file": "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/4.5/python/lib/python3.11/site-packages/numpy/__init__.py"
+  },
+  "original_source_stage": "failed",
+  "acceptance_mode": "api_consistency_isolated_diagnostic_v1",
+  "full_native_acceptance": false,
+  "historical_default_corner_geometry_passed": false,
+  "command": [
+    "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/4.5/python/bin/python3.11",
+    "-B",
+    "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/form-v3-views-v1/run_views58l.py",
+    "--run-approved",
+    "views"
+  ],
+  "cwd": "/workspace/scratch/a29d03198654/Aether",
+  "predecessor_publication_commit": "54760692ced07d0a2b79b7e262a5d16ce0b91217",
+  "process_exit_observed": true,
+  "actual_exit_code": 0,
+  "timeout": false,
+  "cleanup": [],
+  "views_chain_verified": false,
+  "utc_started": "2026-10-02T23:25:01.953776+00:00",
+  "started_monotonic": 122897.162758326,
+  "supervisor_pid": 5,
+  "ended_monotonic": 122958.462216778,
+  "wall_seconds": 61.29945845200564,
+  "remaining_owned_pids": [],
+  "ownership_history": [
+    {
+      "pid": 2,
+      "state": "R",
+      "ppid": 1,
+      "pgid": 1,
+      "sid": 1,
+      "starttime": 12289619,
+      "rss_kib": 38224,
+      "reason": "supervisor"
+    },
+    {
+      "pid": 5,
+      "state": "R",
+      "ppid": 2,
+      "pgid": 5,
+      "sid": 5,
+      "starttime": 12289716,
+      "rss_kib": 0,
+      "reason": "actual_external_Popen"
+    }
+  ],
+  "cleanup_signals": [],
+  "utc_process_observation_complete": "2026-10-02T23:26:03.253811+00:00",
+  "supervisor_terminal_sha256": "ebb1f5ee51b6b83baa294b96b1b9927fd7c6019878b0691dd1185a88d7091509"
+}
