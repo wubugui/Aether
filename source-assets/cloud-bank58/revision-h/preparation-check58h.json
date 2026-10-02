@@ -1,0 +1,451 @@
+{
+  "status": "Prepared only: AST, conversion, deterministic raw-shell and fixed-camera static checks passed",
+  "passed": true,
+  "scripts": [
+    {
+      "path": "source-assets/cloud-bank58/revision-h/patch58h.py",
+      "sha256": "b495c93cee12477a63b23f61da95356890cbfba21af4c431de0631751ebeb2ea",
+      "syntax_passed": true
+    },
+    {
+      "path": "source-assets/cloud-bank58/revision-h/rebuild58h.py",
+      "sha256": "d5cd8ef800f2701713132206410fffb060af3024ee6ea4be01d21cb8f6968187",
+      "syntax_passed": true
+    },
+    {
+      "path": "source-assets/cloud-bank58/revision-h/source58h.py",
+      "sha256": "85077def46cac2dc18ec63973084a86c4a75e6cbc9ff377b7f91e134b9bf107a",
+      "syntax_passed": true
+    },
+    {
+      "path": "source-assets/cloud-bank58/revision-h/run_patch58h.py",
+      "sha256": "770dc210b74c0750ccf9a57c43ae5cc37fc6db1a22d731edd79320ecaa7906f3",
+      "syntax_passed": true
+    },
+    {
+      "path": "source-assets/cloud-bank58/revision-h/check_preparation58h.py",
+      "sha256": "14f7a2c4acb28294f99a0da207b13a0e834e44bfbaeca778a1b2b02e5e4a4833",
+      "syntax_passed": true
+    }
+  ],
+  "analytic_isolated_control_checks": [
+    {
+      "id": "Main_Crown",
+      "G_nominal_to_isolated_iso_half_axes_factor": 1.0000000000000002,
+      "G_isolated_zero_surface_bounds": [
+        [
+          -233.37494584188195,
+          -106.17697683524112,
+          647.1531664803766
+        ],
+        [
+          49.37494584188195,
+          130.17697683524113,
+          866.8468335196234
+        ]
+      ],
+      "H_isolated_zero_surface_bounds": [
+        [
+          -233.37494584188192,
+          -106.17697683524113,
+          697.6827098994034
+        ],
+        [
+          49.374945841881924,
+          130.17697683524113,
+          866.8468335196234
+        ]
+      ],
+      "is_crown_preservation_check": true,
+      "is_unchanged_belly_check": false
+    },
+    {
+      "id": "Rear_Lower_Crown",
+      "G_nominal_to_isolated_iso_half_axes_factor": 0.9895254910607645,
+      "G_isolated_zero_surface_bounds": [
+        [
+          7.012818854393885,
+          -24.454029944333982,
+          639.1489813364348
+        ],
+        [
+          230.98718114560612,
+          164.45402994433397,
+          816.8510186635652
+        ]
+      ],
+      "H_isolated_zero_surface_bounds": [
+        [
+          7.0128188543938705,
+          -24.454029944333982,
+          680.0204499216749
+        ],
+        [
+          230.98718114560614,
+          164.45402994433397,
+          816.8510186635652
+        ]
+      ],
+      "is_crown_preservation_check": true,
+      "is_unchanged_belly_check": false
+    },
+    {
+      "id": "Wide_Oblique_Core",
+      "G_nominal_to_isolated_iso_half_axes_factor": 0.9508976241309182,
+      "G_isolated_zero_surface_bounds": [
+        [
+          -106.93064723516454,
+          -53.962369049636166,
+          621.4549460905357
+        ],
+        [
+          130.93064723516454,
+          123.96236904963617,
+          792.5450539094643
+        ]
+      ],
+      "H_isolated_zero_surface_bounds": [
+        [
+          -106.93064723516454,
+          -53.962369049636166,
+          621.4549460905357
+        ],
+        [
+          130.93064723516454,
+          123.96236904963617,
+          792.5450539094643
+        ]
+      ],
+      "is_crown_preservation_check": false,
+      "is_unchanged_belly_check": false
+    },
+    {
+      "id": "Front_Low_Shoulder",
+      "G_nominal_to_isolated_iso_half_axes_factor": 0.9839023064807505,
+      "G_isolated_zero_surface_bounds": [
+        [
+          -148.67003360655423,
+          -188.05240488279097,
+          623.0876663096265
+        ],
+        [
+          56.67003360655423,
+          -13.947595117209033,
+          772.9123336903735
+        ]
+      ],
+      "H_isolated_zero_surface_bounds": [
+        [
+          -148.67003360655423,
+          -188.05240488279097,
+          623.0876663096265
+        ],
+        [
+          56.67003360655423,
+          -13.947595117209033,
+          772.9123336903735
+        ]
+      ],
+      "is_crown_preservation_check": false,
+      "is_unchanged_belly_check": false
+    },
+    {
+      "id": "Right_Mid_Shoulder",
+      "G_nominal_to_isolated_iso_half_axes_factor": 0.977991814274733,
+      "G_isolated_zero_surface_bounds": [
+        [
+          103.50954269463551,
+          -75.4416234529892,
+          619.5184451877298
+        ],
+        [
+          258.4904573053645,
+          93.4416234529892,
+          754.4815548122702
+        ]
+      ],
+      "H_isolated_zero_surface_bounds": [
+        [
+          103.5095426946355,
+          17.55837654701078,
+          619.5184451877298
+        ],
+        [
+          258.4904573053645,
+          186.44162345298923,
+          754.4815548122702
+        ]
+      ],
+      "is_crown_preservation_check": false,
+      "is_unchanged_belly_check": false
+    },
+    {
+      "id": "Front_Left_Belly",
+      "G_nominal_to_isolated_iso_half_axes_factor": 0.9913401191361616,
+      "G_isolated_zero_surface_bounds": [
+        [
+          -177.09743491859126,
+          -152.98005514524004,
+          553.792460410221
+        ],
+        [
+          -4.902565081408753,
+          -3.019944854759956,
+          706.207539589779
+        ]
+      ],
+      "H_isolated_zero_surface_bounds": [
+        [
+          -177.09743491859126,
+          -152.98005514524004,
+          553.792460410221
+        ],
+        [
+          -4.902565081408753,
+          -3.01994485475997,
+          706.207539589779
+        ]
+      ],
+      "is_crown_preservation_check": false,
+      "is_unchanged_belly_check": true
+    },
+    {
+      "id": "Rear_Right_Belly",
+      "G_nominal_to_isolated_iso_half_axes_factor": 0.981965290297327,
+      "G_isolated_zero_surface_bounds": [
+        [
+          22.46744553043554,
+          0.32697476388990765,
+          579.9800635569239
+        ],
+        [
+          187.53255446956445,
+          153.6730252361101,
+          712.0199364430761
+        ]
+      ],
+      "H_isolated_zero_surface_bounds": [
+        [
+          22.467445530435555,
+          0.32697476388990765,
+          579.9800635569239
+        ],
+        [
+          187.53255446956445,
+          153.6730252361101,
+          712.0199364430761
+        ]
+      ],
+      "is_crown_preservation_check": false,
+      "is_unchanged_belly_check": true
+    },
+    {
+      "id": "Small_Turn_Shoulder",
+      "G_nominal_to_isolated_iso_half_axes_factor": 0.969618567815032,
+      "G_isolated_zero_surface_bounds": [
+        [
+          -247.2462075098891,
+          -99.03426819566381,
+          650.3646783924844
+        ],
+        [
+          -136.7537924901109,
+          13.034268195663813,
+          753.6353216075156
+        ]
+      ],
+      "H_isolated_zero_surface_bounds": [
+        [
+          -247.2462075098891,
+          -99.03426819566381,
+          683.3646783924844
+        ],
+        [
+          -136.7537924901109,
+          13.034268195663813,
+          786.6353216075156
+        ]
+      ],
+      "is_crown_preservation_check": false,
+      "is_unchanged_belly_check": false
+    }
+  ],
+  "actual_raw_local_bounds": [
+    [
+      -246.7794136208219,
+      -187.72052723022145,
+      554.1708098431783
+    ],
+    [
+      258.2953317190303,
+      185.1526926513841,
+      866.7953804453659
+    ]
+  ],
+  "raw_topology": {
+    "vertices": 5740,
+    "triangles": 11476,
+    "edges": 17214,
+    "connected_components": 1,
+    "closed_edge_incidence_two": true,
+    "oriented_edges_consistent": true,
+    "euler_characteristic": 2,
+    "minimum_double_triangle_area_m2": 0.00032578307232138495,
+    "signed_volume_m3": 16940939.575051535,
+    "maximum_edge_m": 31.040631198608068,
+    "duplicate_triangle_count": 0,
+    "duplicate_coordinate_count": 0,
+    "nonsingle_cycle_vertex_links": 0,
+    "self_intersections_checked": false,
+    "continuous_valley_checked": false,
+    "visual_acceptance": false,
+    "passed": true
+  },
+  "raw_grid": {
+    "shape": [
+      32,
+      25,
+      21
+    ],
+    "nodes": 16800,
+    "active_cubes": 1975,
+    "spacing_m": 18.0,
+    "lower_uvy_m": [
+      -268.3,
+      -218.3,
+      525.1
+    ],
+    "upper_uvy_m": [
+      289.7,
+      213.7,
+      885.1
+    ],
+    "boundary_max_positive_inside_scalar": -18.19289222129182,
+    "shared_grid_edge_intersections": 5740,
+    "winding_basis": "Each tetrahedron linear scalar interpolant gradient"
+  },
+  "raw_fingerprint": {
+    "vertices_sha256": "fad8d5b173585bc7f6852487cfb3bef81d76dccf9d3887a1be0d31d914e46cde",
+    "oriented_triangles_sha256": "8a517b307086ebd3bfee1faf9e811e03a012b4bf4fcca244beb4fa380d2fb2e9",
+    "vertices": 5740,
+    "triangles": 11476
+  },
+  "deterministic_repeat_exact": true,
+  "cameras_static_only": [
+    {
+      "name": "1216-source-front",
+      "normalized_bounds": [
+        [
+          0.4790890906740276,
+          0.19019187346297678
+        ],
+        [
+          0.6674673216268948,
+          0.4389496981992841
+        ]
+      ],
+      "minimum_margin": 0.19019187346297678,
+      "raw_undecimated_only": true,
+      "native_projection_not_reexecuted": true
+    },
+    {
+      "name": "shared-side-back",
+      "normalized_bounds": [
+        [
+          0.10211408519334803,
+          0.09762935279685847
+        ],
+        [
+          0.849330179075643,
+          0.770524593651011
+        ]
+      ],
+      "minimum_margin": 0.09762935279685847,
+      "raw_undecimated_only": true,
+      "native_projection_not_reexecuted": true
+    }
+  ],
+  "field_semantics": {
+    "kernel": "Hard union of original ellipsoid PSEUDO-distances plus independently computed designated pair candidates",
+    "iso_value": 0.0,
+    "positive_inside": true,
+    "half_axes_semantics": "Actual individual zero-surface half-axes in metres; no density strength or support multiplier",
+    "piece_pseudo_distance": "d_i = min(half_axes_i) * (norm(((p-center_i) @ axes_local_i) / half_axes_i) - 1)",
+    "union": "D = min(all d_i, all designated pair candidates); public scalar = -D",
+    "pair_candidate": "min(d_a,d_b) - w * max(width_m - abs(d_a-d_b), 0)^2 / (4*width_m)",
+    "window": "w = max(1 - sum(((p-window_center_uvy_m)/window_half_axes_m)^2), 0)^2",
+    "scalar_correction_bound": "Each candidate differs from its pair hard min by 0..width_m/4; global correction <= max(width_m)/4. This is NOT a spatial displacement bound.",
+    "ownership_semantics": "Nonnegative nearest-original-piece one-hot weights; ties within 1e-12 pseudo-metres split equally; NOT additive density contributions",
+    "gradient_semantics": "Deterministic branch gradient at hard-min ties; zero norm gradient at control centers; tetrahedron linear gradients determine mesh winding"
+  },
+  "blend_parameters": [
+    {
+      "id": "front_shoulder_main_root",
+      "pair": [
+        "Front_Low_Shoulder",
+        "Main_Crown"
+      ],
+      "width_m": 12.0,
+      "window_center_uvy_m": [
+        -76.0,
+        -55.0,
+        736.0
+      ],
+      "window_half_axes_m": [
+        100.0,
+        60.0,
+        80.0
+      ]
+    },
+    {
+      "id": "back_right_shoulder_rear_root",
+      "pair": [
+        "Right_Mid_Shoulder",
+        "Rear_Lower_Crown"
+      ],
+      "width_m": 12.0,
+      "window_center_uvy_m": [
+        170.0,
+        98.0,
+        714.0
+      ],
+      "window_half_axes_m": [
+        65.0,
+        60.0,
+        70.0
+      ]
+    },
+    {
+      "id": "high_small_shoulder_main_root",
+      "pair": [
+        "Small_Turn_Shoulder",
+        "Main_Crown"
+      ],
+      "width_m": 12.0,
+      "window_center_uvy_m": [
+        -197.0,
+        -37.0,
+        770.0
+      ],
+      "window_half_axes_m": [
+        52.0,
+        49.0,
+        62.0
+      ]
+    }
+  ],
+  "pseudo_distance_not_euclidean_signed_distance": true,
+  "native_collapse_not_run": true,
+  "source_generated": false,
+  "blender_started": false,
+  "images": [],
+  "protected_file_count": 564,
+  "protected_unchanged": true,
+  "native_size_unverified": true,
+  "proposed_source_maximum_bytes": 200000,
+  "world_loaded": false,
+  "final_geometry_pass": false,
+  "visual_acceptance": false,
+  "elapsed_seconds": 0.9287450120027643,
+  "actual_peak_rss_kib": 60912
+}

@@ -1,0 +1,1178 @@
+{
+  "candidate": "58H",
+  "status": "Pure preparation passed: exact isolated crown/belly conversion checks, shared-edge raw topology, limited field checks and frozen-E projection predictions only",
+  "formulas": {
+    "g_support": "support = nominal_half_axes * sqrt(2)",
+    "g_isolated_iso": "actual = support * sqrt(1 - (0.125 / strength)^(1/3)); this is the isolated ellipsoid, not the sum-density G envelope",
+    "covariance": "Q = R @ diag(actual_half_axes^2) @ R.T; individual projected half-extents = sqrt(diag(Q))",
+    "crown_affine": "L=diag(1,1,0.77); Q_H=L@Q@L.T; center_H=center_G+[0,0,0.23*sqrt(Q_YY)]",
+    "crown_principal_axes": "Eigen-decompose Q_H; positive square roots of eigenvalues give actual half-axes; orthonormal eigenvectors form axes_local columns with right-handed sign convention",
+    "invariant_proof": "L leaves U and V unchanged, so the full upper-left 2x2 projected covariance block and U/V centers are unchanged: the entire individual U/V projected ellipse, not just its axis-aligned bounds, is preserved. The Y half-extent becomes 0.77*sqrt(Q_YY); the center lift preserves the individual top. Principal axes change because this is an affine local-Y squash, not an axis-length edit in the old rotated frame.",
+    "scope": "Individual ellipsoid U/V envelope and top invariants only; merged G summed-density envelope and merged H union envelope may differ"
+  },
+  "control_conversion": [
+    {
+      "id": "Main_Crown",
+      "change": "23 percent affine local-Y flatten, individual U/V projected envelope and top Y fixed",
+      "g_strength_conversion_only": 1.0,
+      "g_nominal_half_axes_m": [
+        143.0,
+        117.0,
+        109.0
+      ],
+      "g_support_half_axes_m": [
+        202.2325394193526,
+        165.46298679765212,
+        154.14927829866738
+      ],
+      "g_isolated_iso_factor_from_support": 0.7071067811865476,
+      "g_isolated_actual_half_axes_m": [
+        143.00000000000003,
+        117.00000000000001,
+        109.00000000000003
+      ],
+      "g_center_uvy_m": [
+        -92.0,
+        12.0,
+        757.0
+      ],
+      "g_isolated_covariance_m2": [
+        [
+          19986.87531179506,
+          -1369.0115714743308,
+          -1191.0605539500223
+        ],
+        [
+          -1369.0115714743308,
+          13965.797853917114,
+          62.88660594412634
+        ],
+        [
+          -1191.0605539500223,
+          62.88660594412629,
+          12066.32683428785
+        ]
+      ],
+      "g_isolated_actual_bounds_uvy_m": [
+        [
+          -233.37494584188195,
+          -106.1769768352411,
+          647.1531664803766
+        ],
+        [
+          49.37494584188195,
+          130.1769768352411,
+          866.8468335196234
+        ]
+      ],
+      "h_center_uvy_m": [
+        -92.0,
+        12.0,
+        782.2647717095134
+      ],
+      "h_zero_surface_covariance_m2": [
+        [
+          19986.875311795055,
+          -1369.0115714743317,
+          -917.1166265415167
+        ],
+        [
+          -1369.0115714743308,
+          13965.797853917118,
+          48.422686576978876
+        ],
+        [
+          -917.1166265415164,
+          48.42268657697884,
+          7154.12518004927
+        ]
+      ],
+      "h_isolated_actual_bounds_uvy_m": [
+        [
+          -233.37494584188195,
+          -106.17697683524113,
+          697.6827098994034
+        ],
+        [
+          49.37494584188195,
+          130.17697683524113,
+          866.8468335196234
+        ]
+      ],
+      "affine_y_factor": 0.77,
+      "covariance_reconstruction_max_error_m2": 3.637978807091713e-12,
+      "uv_envelope_max_error_m": 2.842170943040401e-14,
+      "top_y_difference_m": 1.4210854715202004e-14,
+      "individual_y_extent_ratio": 0.7700000000000001,
+      "uv_projected_covariance_max_error_m2": 3.637978807091713e-12
+    },
+    {
+      "id": "Rear_Lower_Crown",
+      "change": "23 percent affine local-Y flatten, individual U/V projected envelope and top Y fixed",
+      "g_strength_conversion_only": 0.94,
+      "g_nominal_half_axes_m": [
+        115.0,
+        94.0,
+        89.0
+      ],
+      "g_support_half_axes_m": [
+        162.63455967290594,
+        132.93607486307096,
+        125.86500705120547
+      ],
+      "g_isolated_iso_factor_from_support": 0.6997001848860149,
+      "g_isolated_actual_half_axes_m": [
+        113.79543147198791,
+        93.01539615971187,
+        88.06776870440804
+      ],
+      "g_center_uvy_m": [
+        119.0,
+        70.0,
+        728.0
+      ],
+      "g_isolated_covariance_m2": [
+        [
+          12541.128740938797,
+          1100.976093020295,
+          633.1654369435397
+        ],
+        [
+          1100.9760930202951,
+          8921.563772725143,
+          369.25953093771284
+        ],
+        [
+          633.1654369435398,
+          369.2595309377129,
+          7894.503517553213
+        ]
+      ],
+      "g_isolated_actual_bounds_uvy_m": [
+        [
+          7.012818854393885,
+          -24.454029944333996,
+          639.1489813364348
+        ],
+        [
+          230.98718114560612,
+          164.454029944334,
+          816.8510186635652
+        ]
+      ],
+      "h_center_uvy_m": [
+        119.0,
+        70.0,
+        748.43573429262
+      ],
+      "h_zero_surface_covariance_m2": [
+        [
+          12541.1287409388,
+          1100.976093020296,
+          487.5373864465259
+        ],
+        [
+          1100.9760930202958,
+          8921.56377272514,
+          284.32983882203825
+        ],
+        [
+          487.5373864465259,
+          284.32983882203825,
+          4680.651135557302
+        ]
+      ],
+      "h_isolated_actual_bounds_uvy_m": [
+        [
+          7.0128188543938705,
+          -24.454029944333982,
+          680.0204499216749
+        ],
+        [
+          230.98718114560614,
+          164.45402994433397,
+          816.8510186635652
+        ]
+      ],
+      "affine_y_factor": 0.77,
+      "covariance_reconstruction_max_error_m2": 3.637978807091713e-12,
+      "uv_envelope_max_error_m": 2.842170943040401e-14,
+      "top_y_difference_m": 2.842170943040401e-14,
+      "individual_y_extent_ratio": 0.7700000000000001,
+      "uv_projected_covariance_max_error_m2": 3.637978807091713e-12
+    },
+    {
+      "id": "Wide_Oblique_Core",
+      "change": "Exact converted isolated G zero-surface retained",
+      "g_strength_conversion_only": 0.76,
+      "g_nominal_half_axes_m": [
+        133.0,
+        84.0,
+        88.0
+      ],
+      "g_support_half_axes_m": [
+        188.09040379562165,
+        118.79393923933999,
+        124.45079348883237
+      ],
+      "g_isolated_iso_factor_from_support": 0.672386158237149,
+      "g_isolated_actual_half_axes_m": [
+        126.46938400941211,
+        79.87540042699712,
+        83.6789909235208
+      ],
+      "g_center_uvy_m": [
+        12.0,
+        35.0,
+        707.0
+      ],
+      "g_isolated_covariance_m2": [
+        [
+          14144.498851775154,
+          3435.2181948010875,
+          1506.5089752400581
+        ],
+        [
+          3435.218194801087,
+          7914.303106923663,
+          762.866637349207
+        ],
+        [
+          1506.5089752400581,
+          762.866637349207,
+          7317.956248373139
+        ]
+      ],
+      "g_isolated_actual_bounds_uvy_m": [
+        [
+          -106.93064723516456,
+          -53.962369049636166,
+          621.4549460905358
+        ],
+        [
+          130.93064723516454,
+          123.96236904963617,
+          792.5450539094642
+        ]
+      ],
+      "h_center_uvy_m": [
+        12.0,
+        35.0,
+        707.0
+      ],
+      "h_zero_surface_covariance_m2": [
+        [
+          14144.498851775154,
+          3435.2181948010875,
+          1506.5089752400581
+        ],
+        [
+          3435.218194801087,
+          7914.303106923663,
+          762.866637349207
+        ],
+        [
+          1506.5089752400581,
+          762.866637349207,
+          7317.956248373139
+        ]
+      ],
+      "h_isolated_actual_bounds_uvy_m": [
+        [
+          -106.93064723516456,
+          -53.962369049636166,
+          621.4549460905358
+        ],
+        [
+          130.93064723516454,
+          123.96236904963617,
+          792.5450539094642
+        ]
+      ],
+      "affine_y_factor": 1.0,
+      "covariance_reconstruction_max_error_m2": 0.0,
+      "uv_envelope_max_error_m": 0.0,
+      "top_y_difference_m": -4.263256414560601e-14,
+      "individual_y_extent_ratio": 1.0,
+      "uv_projected_covariance_max_error_m2": 0.0
+    },
+    {
+      "id": "Front_Low_Shoulder",
+      "change": "Exact converted isolated G zero-surface retained",
+      "g_strength_conversion_only": 0.91,
+      "g_nominal_half_axes_m": [
+        108.0,
+        85.0,
+        75.0
+      ],
+      "g_support_half_axes_m": [
+        152.73506473629428,
+        120.20815280171308,
+        106.06601717798213
+      ],
+      "g_isolated_iso_factor_from_support": 0.6957239929376234,
+      "g_isolated_actual_half_axes_m": [
+        106.26144909992105,
+        83.6316960508638,
+        73.79267298605629
+      ],
+      "g_center_uvy_m": [
+        -46.0,
+        -101.0,
+        698.0
+      ],
+      "g_isolated_covariance_m2": [
+        [
+          10541.135800770971,
+          -1584.8899889552295,
+          -388.70860137017894
+        ],
+        [
+          -1584.8899889552306,
+          7578.121195877368,
+          594.6132891238636
+        ],
+        [
+          -388.70860137017877,
+          594.6132891238638,
+          5611.857738937877
+        ]
+      ],
+      "g_isolated_actual_bounds_uvy_m": [
+        [
+          -148.67003360655423,
+          -188.05240488279097,
+          623.0876663096265
+        ],
+        [
+          56.67003360655421,
+          -13.947595117209033,
+          772.9123336903735
+        ]
+      ],
+      "h_center_uvy_m": [
+        -46.0,
+        -101.0,
+        698.0
+      ],
+      "h_zero_surface_covariance_m2": [
+        [
+          10541.135800770971,
+          -1584.8899889552295,
+          -388.70860137017894
+        ],
+        [
+          -1584.8899889552306,
+          7578.121195877368,
+          594.6132891238636
+        ],
+        [
+          -388.70860137017877,
+          594.6132891238638,
+          5611.857738937877
+        ]
+      ],
+      "h_isolated_actual_bounds_uvy_m": [
+        [
+          -148.67003360655423,
+          -188.05240488279097,
+          623.0876663096265
+        ],
+        [
+          56.67003360655421,
+          -13.947595117209033,
+          772.9123336903735
+        ]
+      ],
+      "affine_y_factor": 1.0,
+      "covariance_reconstruction_max_error_m2": 0.0,
+      "uv_envelope_max_error_m": 0.0,
+      "top_y_difference_m": -1.4210854715202004e-14,
+      "individual_y_extent_ratio": 1.0,
+      "uv_projected_covariance_max_error_m2": 0.0
+    },
+    {
+      "id": "Right_Mid_Shoulder",
+      "change": "Same converted isolated shape, existing right shoulder moved from V9 to V102",
+      "g_strength_conversion_only": 0.88,
+      "g_nominal_half_axes_m": [
+        78.0,
+        89.0,
+        67.0
+      ],
+      "g_support_half_axes_m": [
+        110.30865786510142,
+        125.86500705120547,
+        94.75230867899738
+      ],
+      "g_isolated_iso_factor_from_support": 0.6915446438185983,
+      "g_isolated_actual_half_axes_m": [
+        76.28336151342918,
+        87.04127147045125,
+        65.52545155640712
+      ],
+      "g_center_uvy_m": [
+        181.0,
+        9.0,
+        687.0
+      ],
+      "g_isolated_covariance_m2": [
+        [
+          6004.7709733945185,
+          -687.4016862872049,
+          -157.9468432958244
+        ],
+        [
+          -687.4016862872052,
+          7130.387771376419,
+          -729.5774368311378
+        ],
+        [
+          -157.94684329582452,
+          -729.5774368311378,
+          4553.760239881439
+        ]
+      ],
+      "g_isolated_actual_bounds_uvy_m": [
+        [
+          103.5095426946355,
+          -75.44162345298922,
+          619.5184451877298
+        ],
+        [
+          258.4904573053645,
+          93.44162345298922,
+          754.4815548122702
+        ]
+      ],
+      "h_center_uvy_m": [
+        181.0,
+        102.0,
+        687.0
+      ],
+      "h_zero_surface_covariance_m2": [
+        [
+          6004.7709733945185,
+          -687.4016862872049,
+          -157.9468432958244
+        ],
+        [
+          -687.4016862872052,
+          7130.387771376419,
+          -729.5774368311378
+        ],
+        [
+          -157.94684329582452,
+          -729.5774368311378,
+          4553.760239881439
+        ]
+      ],
+      "h_isolated_actual_bounds_uvy_m": [
+        [
+          103.5095426946355,
+          17.55837654701078,
+          619.5184451877298
+        ],
+        [
+          258.4904573053645,
+          186.44162345298923,
+          754.4815548122702
+        ]
+      ],
+      "affine_y_factor": 1.0,
+      "covariance_reconstruction_max_error_m2": 0.0,
+      "uv_envelope_max_error_m": 93.00000000000001,
+      "top_y_difference_m": -4.263256414560601e-14,
+      "individual_y_extent_ratio": 1.0,
+      "uv_projected_covariance_max_error_m2": 0.0
+    },
+    {
+      "id": "Front_Left_Belly",
+      "change": "Exact converted isolated G zero-surface retained",
+      "g_strength_conversion_only": 0.95,
+      "g_nominal_half_axes_m": [
+        89.0,
+        74.0,
+        76.0
+      ],
+      "g_support_half_axes_m": [
+        125.86500705120547,
+        104.65180361560904,
+        107.48023074035522
+      ],
+      "g_isolated_iso_factor_from_support": 0.7009833207034597,
+      "g_isolated_actual_half_axes_m": [
+        88.22927060311838,
+        73.35916881607595,
+        75.34184905434827
+      ],
+      "g_center_uvy_m": [
+        -91.0,
+        -78.0,
+        630.0
+      ],
+      "g_isolated_covariance_m2": [
+        [
+          7412.768299561055,
+          -681.4099339386994,
+          483.4620439347053
+        ],
+        [
+          -681.4099339386992,
+          5622.008669583236,
+          -222.88318351255924
+        ],
+        [
+          483.4620439347054,
+          -222.88318351255919,
+          5807.5890903277295
+        ]
+      ],
+      "g_isolated_actual_bounds_uvy_m": [
+        [
+          -177.09743491859126,
+          -152.98005514524004,
+          553.792460410221
+        ],
+        [
+          -4.902565081408753,
+          -3.01994485475997,
+          706.207539589779
+        ]
+      ],
+      "h_center_uvy_m": [
+        -91.0,
+        -78.0,
+        630.0
+      ],
+      "h_zero_surface_covariance_m2": [
+        [
+          7412.768299561055,
+          -681.4099339386994,
+          483.4620439347053
+        ],
+        [
+          -681.4099339386992,
+          5622.008669583236,
+          -222.88318351255924
+        ],
+        [
+          483.4620439347054,
+          -222.88318351255919,
+          5807.5890903277295
+        ]
+      ],
+      "h_isolated_actual_bounds_uvy_m": [
+        [
+          -177.09743491859126,
+          -152.98005514524004,
+          553.792460410221
+        ],
+        [
+          -4.902565081408753,
+          -3.01994485475997,
+          706.207539589779
+        ]
+      ],
+      "affine_y_factor": 1.0,
+      "covariance_reconstruction_max_error_m2": 0.0,
+      "uv_envelope_max_error_m": 0.0,
+      "top_y_difference_m": 2.842170943040401e-14,
+      "individual_y_extent_ratio": 1.0,
+      "uv_projected_covariance_max_error_m2": 0.0
+    },
+    {
+      "id": "Rear_Right_Belly",
+      "change": "Exact converted isolated G zero-surface retained",
+      "g_strength_conversion_only": 0.9,
+      "g_nominal_half_axes_m": [
+        86.0,
+        77.0,
+        66.0
+      ],
+      "g_support_half_axes_m": [
+        121.62236636408618,
+        108.89444430272833,
+        93.33809511662427
+      ],
+      "g_isolated_iso_factor_from_support": 0.6943543156590566,
+      "g_isolated_actual_half_axes_m": [
+        84.44901496557011,
+        75.61132735289418,
+        64.80970915962358
+      ],
+      "g_center_uvy_m": [
+        105.0,
+        77.0,
+        646.0
+      ],
+      "g_isolated_covariance_m2": [
+        [
+          6811.622547271624,
+          547.2349289278202,
+          -231.68140700869554
+        ],
+        [
+          547.2349289278203,
+          5878.752798857175,
+          -512.7223160649992
+        ],
+        [
+          -231.68140700869543,
+          -512.7223160649995,
+          4358.632007947807
+        ]
+      ],
+      "g_isolated_actual_bounds_uvy_m": [
+        [
+          22.46744553043554,
+          0.32697476388990765,
+          579.9800635569239
+        ],
+        [
+          187.53255446956445,
+          153.6730252361101,
+          712.0199364430761
+        ]
+      ],
+      "h_center_uvy_m": [
+        105.0,
+        77.0,
+        646.0
+      ],
+      "h_zero_surface_covariance_m2": [
+        [
+          6811.622547271624,
+          547.2349289278202,
+          -231.68140700869554
+        ],
+        [
+          547.2349289278203,
+          5878.752798857175,
+          -512.7223160649992
+        ],
+        [
+          -231.68140700869543,
+          -512.7223160649995,
+          4358.632007947807
+        ]
+      ],
+      "h_isolated_actual_bounds_uvy_m": [
+        [
+          22.46744553043554,
+          0.32697476388990765,
+          579.9800635569239
+        ],
+        [
+          187.53255446956445,
+          153.6730252361101,
+          712.0199364430761
+        ]
+      ],
+      "affine_y_factor": 1.0,
+      "covariance_reconstruction_max_error_m2": 0.0,
+      "uv_envelope_max_error_m": 0.0,
+      "top_y_difference_m": -2.842170943040401e-14,
+      "individual_y_extent_ratio": 1.0,
+      "uv_projected_covariance_max_error_m2": 0.0
+    },
+    {
+      "id": "Small_Turn_Shoulder",
+      "change": "Same converted isolated shape, existing small left/front shoulder raised from Y702 to Y735",
+      "g_strength_conversion_only": 0.84,
+      "g_nominal_half_axes_m": [
+        57.0,
+        58.0,
+        53.0
+      ],
+      "g_support_half_axes_m": [
+        80.61017305526643,
+        82.02438661763952,
+        74.95331880577405
+      ],
+      "g_isolated_iso_factor_from_support": 0.6856238644663973,
+      "g_isolated_actual_half_axes_m": [
+        55.26825836545682,
+        56.237876933271856,
+        51.38978409419669
+      ],
+      "g_center_uvy_m": [
+        -192.0,
+        -43.0,
+        702.0
+      ],
+      "g_isolated_covariance_m2": [
+        [
+          3052.143444225726,
+          41.54017774969506,
+          -101.87227814169216
+        ],
+        [
+          41.54017774969504,
+          3139.8392122235814,
+          -15.754846317162619
+        ],
+        [
+          -101.8722781416923,
+          -15.754846317162636,
+          2666.206437511563
+        ]
+      ],
+      "g_isolated_actual_bounds_uvy_m": [
+        [
+          -247.24620750988908,
+          -99.03426819566381,
+          650.3646783924844
+        ],
+        [
+          -136.75379249011092,
+          13.034268195663813,
+          753.6353216075156
+        ]
+      ],
+      "h_center_uvy_m": [
+        -192.0,
+        -43.0,
+        735.0
+      ],
+      "h_zero_surface_covariance_m2": [
+        [
+          3052.143444225726,
+          41.54017774969506,
+          -101.87227814169216
+        ],
+        [
+          41.54017774969504,
+          3139.8392122235814,
+          -15.754846317162619
+        ],
+        [
+          -101.8722781416923,
+          -15.754846317162636,
+          2666.206437511563
+        ]
+      ],
+      "h_isolated_actual_bounds_uvy_m": [
+        [
+          -247.24620750988908,
+          -99.03426819566381,
+          683.3646783924844
+        ],
+        [
+          -136.75379249011092,
+          13.034268195663813,
+          786.6353216075156
+        ]
+      ],
+      "affine_y_factor": 1.0,
+      "covariance_reconstruction_max_error_m2": 0.0,
+      "uv_envelope_max_error_m": 0.0,
+      "top_y_difference_m": 33.00000000000005,
+      "individual_y_extent_ratio": 1.0,
+      "uv_projected_covariance_max_error_m2": 0.0
+    }
+  ],
+  "raw_prediction": {
+    "h_topology": {
+      "vertices": 5740,
+      "triangles": 11476,
+      "edges": 17214,
+      "connected_components": 1,
+      "closed_edge_incidence_two": true,
+      "oriented_edges_consistent": true,
+      "euler_characteristic": 2,
+      "minimum_double_triangle_area_m2": 0.00032578307232138495,
+      "signed_volume_m3": 16940939.575051535,
+      "maximum_edge_m": 31.040631198608068,
+      "duplicate_triangle_count": 0,
+      "duplicate_coordinate_count": 0,
+      "nonsingle_cycle_vertex_links": 0,
+      "self_intersections_checked": false,
+      "continuous_valley_checked": false,
+      "visual_acceptance": false,
+      "passed": true
+    },
+    "h_grid": {
+      "shape": [
+        32,
+        25,
+        21
+      ],
+      "nodes": 16800,
+      "active_cubes": 1975,
+      "spacing_m": 18.0,
+      "lower_uvy_m": [
+        -268.3,
+        -218.3,
+        525.1
+      ],
+      "upper_uvy_m": [
+        289.7,
+        213.7,
+        885.1
+      ],
+      "boundary_max_positive_inside_scalar": -18.19289222129182,
+      "shared_grid_edge_intersections": 5740,
+      "winding_basis": "Each tetrahedron linear scalar interpolant gradient"
+    },
+    "h_fingerprint": {
+      "vertices_sha256": "fad8d5b173585bc7f6852487cfb3bef81d76dccf9d3887a1be0d31d914e46cde",
+      "oriented_triangles_sha256": "8a517b307086ebd3bfee1faf9e811e03a012b4bf4fcca244beb4fa380d2fb2e9",
+      "vertices": 5740,
+      "triangles": 11476
+    },
+    "h_bounds_uvy_m": [
+      [
+        -246.7794136208219,
+        -187.72052723022145,
+        554.1708098431783
+      ],
+      [
+        258.2953317190303,
+        185.1526926513841,
+        866.7953804453659
+      ]
+    ],
+    "g_raw_bounds_uvy_m": [
+      [
+        -247.88581667496172,
+        -188.98504747535304,
+        552.5909318801873
+      ],
+      [
+        259.745024164633,
+        165.0431813053598,
+        866.8377465025229
+      ]
+    ],
+    "h_minus_g_raw_bounds_uvy_m": [
+      [
+        1.106403054139804,
+        1.2645202451315924,
+        1.5798779629909632
+      ],
+      [
+        -1.4496924456026932,
+        20.109511346024277,
+        -0.042366057156982606
+      ]
+    ],
+    "comparison_scope": "G summed density raw mesh versus H localized pair-union raw mesh. Their merged envelopes are intentionally not invariant.",
+    "blend_samples": [
+      {
+        "id": "front_shoulder_main_root",
+        "raw_vertices_with_positive_scalar_change": 52,
+        "maximum_sampled_raw_scalar_correction_pseudo_m": 0.4313236877726263,
+        "theoretical_scalar_correction_bound_pseudo_m": 3.0,
+        "outside_window_exact_hard_union": true,
+        "spatial_displacement_bound_claimed": false
+      },
+      {
+        "id": "back_right_shoulder_rear_root",
+        "raw_vertices_with_positive_scalar_change": 29,
+        "maximum_sampled_raw_scalar_correction_pseudo_m": 0.08710416839142626,
+        "theoretical_scalar_correction_bound_pseudo_m": 3.0,
+        "outside_window_exact_hard_union": true,
+        "spatial_displacement_bound_claimed": false
+      },
+      {
+        "id": "high_small_shoulder_main_root",
+        "raw_vertices_with_positive_scalar_change": 38,
+        "maximum_sampled_raw_scalar_correction_pseudo_m": 0.9656935982179249,
+        "theoretical_scalar_correction_bound_pseudo_m": 3.0,
+        "outside_window_exact_hard_union": true,
+        "spatial_displacement_bound_claimed": false
+      }
+    ],
+    "frozen_e_projections": [
+      {
+        "name": "1216-source-front",
+        "matrix_world": [
+          [
+            0.6853646636009216,
+            0.11998851597309113,
+            -0.7182464599609375,
+            -958.0
+          ],
+          [
+            -0.7282000184059143,
+            0.11293032020330429,
+            -0.6759966611862183,
+            -633.0
+          ],
+          [
+            -2.939170329341323e-08,
+            0.9863313436508179,
+            0.164774090051651,
+            1150.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "projection": [
+          [
+            0.9366548657417297,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.6642794609069824,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0000388622283936,
+            -0.7000135779380798
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            0.0
+          ]
+        ],
+        "h_raw": {
+          "normalized_bounds": [
+            [
+              0.4790890906740276,
+              0.19019187346297678
+            ],
+            [
+              0.6674673216268948,
+              0.4389496981992841
+            ]
+          ],
+          "minimum_margin": 0.19019187346297678,
+          "minimum_depth_m": 1005.4315085269994
+        },
+        "g_raw": {
+          "normalized_bounds": [
+            [
+              0.4787146860815408,
+              0.18832549445574237
+            ],
+            [
+              0.6807936986385524,
+              0.43890745986524393
+            ]
+          ],
+          "minimum_margin": 0.18832549445574237,
+          "minimum_depth_m": 1004.3154154130586
+        },
+        "h_minus_g_minimum_margin": 0.0018663790072344089,
+        "required_side_back_margin": null,
+        "raw_side_back_margin_passed": null,
+        "scope": "Pure raw mesh, source-coordinates float32 prediction from frozen E matrices; no native collapse/projection/render acceptance",
+        "visual_acceptance": false
+      },
+      {
+        "name": "shared-side-back",
+        "matrix_world": [
+          [
+            -0.6139405369758606,
+            -0.2163812667131424,
+            0.7591153979301453,
+            1790.6153564453125
+          ],
+          [
+            0.7893522381782532,
+            -0.16829639673233032,
+            0.5904229879379272,
+            1408.5880126953125
+          ],
+          [
+            -9.883301288482471e-08,
+            0.961694061756134,
+            0.27412503957748413,
+            1391.8411865234375
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "projection": [
+          [
+            0.003043601755052805,
+            0.0,
+            0.0,
+            -0.0
+          ],
+          [
+            0.0,
+            0.004342066589742899,
+            0.0,
+            -0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -0.00011111326602986082,
+            -1.0000388622283936
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "h_raw": {
+          "normalized_bounds": [
+            [
+              0.10211408519334803,
+              0.09762935279685847
+            ],
+            [
+              0.849330179075643,
+              0.770524593651011
+            ]
+          ],
+          "minimum_margin": 0.09762935279685847,
+          "minimum_depth_m": 2190.46398758984
+        },
+        "g_raw": {
+          "normalized_bounds": [
+            [
+              0.08705384041756159,
+              0.09608141854574426
+            ],
+            [
+              0.8510064725556152,
+              0.7697763959469643
+            ]
+          ],
+          "minimum_margin": 0.08705384041756159,
+          "minimum_depth_m": 2198.411661312791
+        },
+        "h_minus_g_minimum_margin": 0.01057551237929688,
+        "required_side_back_margin": 0.07,
+        "raw_side_back_margin_passed": true,
+        "scope": "Pure raw mesh, source-coordinates float32 prediction from frozen E matrices; no native collapse/projection/render acceptance",
+        "visual_acceptance": false
+      }
+    ],
+    "native_collapse_not_run": true,
+    "continuous_hausdorff_proof": false,
+    "continuous_valley_proof": false,
+    "self_intersection_check": false,
+    "elapsed_seconds": 1.0621552680022432,
+    "actual_peak_rss_kib": 60400
+  },
+  "native_source_generated": false,
+  "native_collapse_run": false,
+  "images": [],
+  "visual_acceptance": false,
+  "final_geometry_pass": false,
+  "source_identities": {
+    "source-assets/cloud-bank58/revision-g/controls58g.json": {
+      "bytes": 2773,
+      "sha256": "112a8dcc460b3a2e5ca93a66b0b0cea7a9430e51a637401f785b3485159c15da"
+    },
+    "source-assets/cloud-bank58/revision-g/patch58g.py": {
+      "bytes": 9848,
+      "sha256": "8cca903e4ae8024ca3d60abde49ead091de3c765839c383d547bc3ea67c67bdd"
+    },
+    "source-assets/cloud-bank58/revision-e/B_staggered_crowns.blend": {
+      "bytes": 93100,
+      "sha256": "dcb2cf7d4e743cd8802107f503f3a2ec8e97ad5ba5b2f604d49b5af9283f790d"
+    },
+    "cloud-evidence/cloudbank58e-layouts-20261001T165946Z-yove55lx/outputs/build-result58e.json": {
+      "bytes": 10938,
+      "sha256": "cabf192575ac41211eacde07cf542111126e1eb4024e5c769975e459603e0fd3"
+    },
+    "source-assets/cloud-bank58/revision-d/control-plan58d.json": {
+      "bytes": 59043,
+      "sha256": "3888de7c3e0f4d4ec77f64437497f3c1c0d6aa1b4feb808475dc91ae60548be0"
+    }
+  },
+  "h_prepared_identities": {
+    "patch58h.py": {
+      "bytes": 14899,
+      "sha256": "b495c93cee12477a63b23f61da95356890cbfba21af4c431de0631751ebeb2ea"
+    },
+    "controls58h.json": {
+      "bytes": 8440,
+      "sha256": "ccd1f711f281b87408777d05886bbd0baaaec018b206ed84d4f66bb9537f5e3f"
+    }
+  },
+  "checks": {
+    "syntax_passed": true,
+    "same_eight_control_ids": true,
+    "both_crown_uv_and_top_invariants_passed": true,
+    "both_crown_y_extent_ratios": [
+      0.77,
+      0.77
+    ],
+    "belly_retention": [
+      {
+        "id": "Front_Left_Belly",
+        "center_exact": true,
+        "converted_axes_exact": true,
+        "rotation_exact": true
+      },
+      {
+        "id": "Rear_Right_Belly",
+        "center_exact": true,
+        "converted_axes_exact": true,
+        "rotation_exact": true
+      }
+    ],
+    "positive_inside_iso_zero": true,
+    "independent_pair_min_exact": true,
+    "blend_order_independent_scalar_exact": true,
+    "empty_blend_list_exact_hard_union": true,
+    "compact_window_tests_passed": true,
+    "scalar_correction_bound_passed": true,
+    "ownership_nonnegative_normalized": true,
+    "raw_surface_ownership": [
+      {
+        "id": "Main_Crown",
+        "raw_surface_vertices_owned": 1581
+      },
+      {
+        "id": "Rear_Lower_Crown",
+        "raw_surface_vertices_owned": 855
+      },
+      {
+        "id": "Wide_Oblique_Core",
+        "raw_surface_vertices_owned": 523
+      },
+      {
+        "id": "Front_Low_Shoulder",
+        "raw_surface_vertices_owned": 731
+      },
+      {
+        "id": "Right_Mid_Shoulder",
+        "raw_surface_vertices_owned": 555
+      },
+      {
+        "id": "Front_Left_Belly",
+        "raw_surface_vertices_owned": 686
+      },
+      {
+        "id": "Rear_Right_Belly",
+        "raw_surface_vertices_owned": 509
+      },
+      {
+        "id": "Small_Turn_Shoulder",
+        "raw_surface_vertices_owned": 300
+      }
+    ],
+    "branch_gradient_sparse_sample_max_error": 2.840150337135583e-10,
+    "deterministic_repeat_exact": true,
+    "same_18m_grid_and_1600_final_budget": true,
+    "no_native_execution": true,
+    "old_input_files_read_only": true
+  }
+}

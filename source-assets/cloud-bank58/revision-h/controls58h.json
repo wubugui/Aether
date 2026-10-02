@@ -1,0 +1,339 @@
+{
+  "candidate": "58H",
+  "status": "Minimal first design hypothesis; isolated-control invariants are not merged silhouette or visual acceptance",
+  "coordinate_system": "Existing D local U/V/Y metres, same world anchor; no whole-object fitting",
+  "field": {
+    "kernel": "Hard union of original ellipsoid PSEUDO-distances plus independently computed designated pair candidates",
+    "iso_value": 0.0,
+    "positive_inside": true,
+    "half_axes_semantics": "Actual individual zero-surface half-axes in metres; no density strength or support multiplier",
+    "piece_pseudo_distance": "d_i = min(half_axes_i) * (norm(((p-center_i) @ axes_local_i) / half_axes_i) - 1)",
+    "union": "D = min(all d_i, all designated pair candidates); public scalar = -D",
+    "pair_candidate": "min(d_a,d_b) - w * max(width_m - abs(d_a-d_b), 0)^2 / (4*width_m)",
+    "window": "w = max(1 - sum(((p-window_center_uvy_m)/window_half_axes_m)^2), 0)^2",
+    "scalar_correction_bound": "Each candidate differs from its pair hard min by 0..width_m/4; global correction <= max(width_m)/4. This is NOT a spatial displacement bound.",
+    "ownership_semantics": "Nonnegative nearest-original-piece one-hot weights; ties within 1e-12 pseudo-metres split equally; NOT additive density contributions",
+    "gradient_semantics": "Deterministic branch gradient at hard-min ties; zero norm gradient at control centers; tetrahedron linear gradients determine mesh winding"
+  },
+  "meshing": {
+    "spacing_m": 18.0,
+    "grid_origin_uvy_m": [
+      1.7,
+      -2.3,
+      3.1
+    ],
+    "max_grid_nodes": 150000,
+    "max_raw_triangles": 30000,
+    "target_triangles": 1600,
+    "maximum_sampled_surface_offset_m": 16.0,
+    "maximum_landmark_sample_offset_m": 9.0,
+    "maximum_final_edge_m": 85.0,
+    "comment": "One 18m shared-edge tetrahedral extraction and one later native Blender collapse to 1600 triangles. No native extraction/collapse has run in pure preparation."
+  },
+  "controls": [
+    {
+      "id": "Main_Crown",
+      "role": "broad offset main crown, shorter vertically than F2 stone peak",
+      "center_uvy_m": [
+        -92.0,
+        12.0,
+        782.2647717095134
+      ],
+      "half_axes_m": [
+        142.6388734652412,
+        116.9289985877692,
+        84.19358295968773
+      ],
+      "axes_local": [
+        [
+          0.9753353336376073,
+          0.20876256808771804,
+          0.0716880542589773
+        ],
+        [
+          -0.20980493691279636,
+          0.9777163993851449,
+          0.007247814868325819
+        ],
+        [
+          -0.06857751384407812,
+          -0.022109557633948132,
+          0.9974007680246675
+        ]
+      ]
+    },
+    {
+      "id": "Rear_Lower_Crown",
+      "role": "smaller lower rear crown, not a matching twin peak",
+      "center_uvy_m": [
+        119.0,
+        70.0,
+        748.43573429262
+      ],
+      "half_axes_m": [
+        113.51689630760336,
+        92.83333978074307,
+        68.1118853583071
+      ],
+      "axes_local": [
+        [
+          0.960166552414286,
+          -0.27411315039252465,
+          -0.05424179575520565
+        ],
+        [
+          0.2714111310628475,
+          0.9610435399907473,
+          -0.05226195726567068
+        ],
+        [
+          0.0664544171598104,
+          0.035458356193401375,
+          0.9971592227001724
+        ]
+      ]
+    },
+    {
+      "id": "Wide_Oblique_Core",
+      "role": "deep wide overlap joining the crowns internally, never a common bottom plate",
+      "center_uvy_m": [
+        12.0,
+        35.0,
+        707.0
+      ],
+      "half_axes_m": [
+        126.46938400941211,
+        79.87540042699712,
+        83.6789909235208
+      ],
+      "axes_local": [
+        [
+          0.8967610545371135,
+          -0.3785186722814387,
+          -0.22922309176821815
+        ],
+        [
+          0.39926374534745557,
+          0.9154559826660451,
+          0.05028722951275064
+        ],
+        [
+          0.1908089953765448,
+          -0.13661609910710643,
+          0.9720740551769455
+        ]
+      ]
+    },
+    {
+      "id": "Front_Low_Shoulder",
+      "role": "broad shoulder stepping forward below the main crown",
+      "center_uvy_m": [
+        -46.0,
+        -101.0,
+        698.0
+      ],
+      "half_axes_m": [
+        106.26144909992105,
+        83.6316960508638,
+        73.79267298605629
+      ],
+      "axes_local": [
+        [
+          0.908540960039796,
+          0.4175924476183769,
+          -0.013033480811309076
+        ],
+        [
+          -0.40450849718747367,
+          0.8714133153540402,
+          -0.2775098368108988
+        ],
+        [
+          -0.10452846326765347,
+          0.25740120729276555,
+          0.9606343835461697
+        ]
+      ]
+    },
+    {
+      "id": "Right_Mid_Shoulder",
+      "role": "asymmetric lateral step under rear crown, above the front shoulder return",
+      "center_uvy_m": [
+        181.0,
+        102.0,
+        687.0
+      ],
+      "half_axes_m": [
+        76.28336151342918,
+        87.04127147045125,
+        65.52545155640712
+      ],
+      "axes_local": [
+        [
+          0.9042039106970216,
+          -0.3759294152944837,
+          0.20271251218550942
+        ],
+        [
+          0.3113423744974871,
+          0.9050662534554662,
+          0.2896912195741398
+        ],
+        [
+          -0.29237170472273677,
+          -0.19882693874933943,
+          0.9354072026155706
+        ]
+      ]
+    },
+    {
+      "id": "Front_Left_Belly",
+      "role": "local under-return belonging to front shoulder, no full-width base",
+      "center_uvy_m": [
+        -91.0,
+        -78.0,
+        630.0
+      ],
+      "half_axes_m": [
+        88.22927060311838,
+        73.35916881607595,
+        75.34184905434827
+      ],
+      "axes_local": [
+        [
+          0.913300811407433,
+          0.272892113751623,
+          -0.3023433844731778
+        ],
+        [
+          -0.3144746886074361,
+          0.9442249202156032,
+          -0.09769836369711665
+        ],
+        [
+          0.25881904510252074,
+          0.18430733652247605,
+          0.9481790482794956
+        ]
+      ]
+    },
+    {
+      "id": "Rear_Right_Belly",
+      "role": "higher rear return offset in depth and height from front belly",
+      "center_uvy_m": [
+        105.0,
+        77.0,
+        646.0
+      ],
+      "half_axes_m": [
+        84.44901496557011,
+        75.61132735289418,
+        64.80970915962358
+      ],
+      "axes_local": [
+        [
+          0.8800367553350505,
+          -0.4742251143613986,
+          0.025413582358158368
+        ],
+        [
+          0.44840112333371024,
+          0.8473585873075002,
+          0.284464157864052
+        ],
+        [
+          -0.15643446504023087,
+          -0.23894343561846598,
+          0.958349775772093
+        ]
+      ]
+    },
+    {
+      "id": "Small_Turn_Shoulder",
+      "role": "single small change of direction on left front contour, not repeated surface noise",
+      "center_uvy_m": [
+        -192.0,
+        -43.0,
+        735.0
+      ],
+      "half_axes_m": [
+        55.26825836545682,
+        56.237876933271856,
+        51.38978409419669
+      ],
+      "axes_local": [
+        [
+          0.8636530695286485,
+          0.44360001276311617,
+          0.23942097688027822
+        ],
+        [
+          -0.4592124827517693,
+          0.8882617346043217,
+          0.010723176892959029
+        ],
+        [
+          -0.20791169081775934,
+          -0.11920620585474925,
+          0.9708566368455311
+        ]
+      ]
+    }
+  ],
+  "blends": [
+    {
+      "id": "front_shoulder_main_root",
+      "pair": [
+        "Front_Low_Shoulder",
+        "Main_Crown"
+      ],
+      "width_m": 12.0,
+      "window_center_uvy_m": [
+        -76.0,
+        -55.0,
+        736.0
+      ],
+      "window_half_axes_m": [
+        100.0,
+        60.0,
+        80.0
+      ]
+    },
+    {
+      "id": "back_right_shoulder_rear_root",
+      "pair": [
+        "Right_Mid_Shoulder",
+        "Rear_Lower_Crown"
+      ],
+      "width_m": 12.0,
+      "window_center_uvy_m": [
+        170.0,
+        98.0,
+        714.0
+      ],
+      "window_half_axes_m": [
+        65.0,
+        60.0,
+        70.0
+      ]
+    },
+    {
+      "id": "high_small_shoulder_main_root",
+      "pair": [
+        "Small_Turn_Shoulder",
+        "Main_Crown"
+      ],
+      "width_m": 12.0,
+      "window_center_uvy_m": [
+        -197.0,
+        -37.0,
+        770.0
+      ],
+      "window_half_axes_m": [
+        52.0,
+        49.0,
+        62.0
+      ]
+    }
+  ]
+}
