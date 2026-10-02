@@ -1,6 +1,14 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 06:21 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 06:27 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 06:27保存散布首次native采集失败，v6严格终态计时发现缺口
+
+- v6真实61/61与scatter解析证据已完整发布 **92e0e15438ba00dc677a1e45eb9de34c97a6f84e**，tree **16e22e4e28aeb7f1666e056a8c6d9b50bcd43f6d**、parent5888da46；135路径/100唯一blob新bare公共Git字节/SHA回读一致，本地dfbdc72同树对齐
+- [首次scatter保存collect](cloud-evidence/north-ridge62-scatter-collect-20261002T062426Z-j_zfldme/RESULT.md)child2/wrapper1、8.429秒/520152KiB/CPU2，60秒界未触发，1568/全1483保护未变。741组记录是部分值（不称741全部完成），52628累计实例/316query/245design；停于World/Vegetation/Authored_WestRoadCopse的独立保存transform精确比较，native打印实际/预期相同但未保float64原位，须独立查明，不能直接放宽epsilon
+- 原始stderr17处HashingContext.update(empty) error，和v6已定位的空哈希API性质相同，此collector还未检查hash返回码。全部错误仍使wrapper失败，未过滤；3634488B原生partial与2283728Bmetadata原SHA/无损gzip/恢复命令保留。775完整bulk保真、运行生成/变形/道路/全占用仍未证明，未改世界或资产
+- v6独立代码复核确认空MM初始/新增纳入完整身份且无unchanged(false)，但发现继承的严格600秒终态缺口：只在active process核wall，末次sample<600后physics/capture/finalhash可越600且在720wrapper内接受。未开新world；准备最小统一deadline helper补耗时边界与passed前核，原起点/600/720/所有段与输入门不变。现61/61只证明旧已运行轻夹具范围，不越界称严格600全程成立
+- J2一次数学连接候选完成拓扑/float32/固定机位门，独立审查与零面积接触补核正在封存，无Blender源/图。先即时发布本失败，然后源码修正/原生轻验；E/F2八件Slack仍待答，全部GOAL/硬件GPU验收未通过
 
 ## 06:21修正v6真实GL 61项通过；scatter原生解析通过
 
