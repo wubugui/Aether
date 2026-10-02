@@ -1,0 +1,183 @@
+extends SceneTree
+# Resource-array validation only; no scene is added to a viewport and no images.
+var report: Dictionary = {"version":"cloud58k-cache-readback-v3", "passed":false, "world_loaded":false, "images":0}
+var destination: String
+
+func check(ok: bool, message: String) -> bool:
+	if not ok:
+		report["error"] = message
+		finish(1)
+	return ok
+
+func finish(code: int) -> void:
+	var file := FileAccess.open(destination, FileAccess.WRITE)
+	if file:
+		file.store_string(JSON.stringify(report, "\t", true, true) + "\n")
+		file.close()
+	quit(code)
+
+func vec(value: Vector3) -> Array:
+	return [value.x, value.y, value.z]
+
+func bytes_sha(value: PackedByteArray) -> String:
+	var hash := HashingContext.new()
+	hash.start(HashingContext.HASH_SHA256)
+	hash.update(value)
+	return hash.finish().hex_encode()
+
+func oct_error(a: float, b: float) -> float:
+	return 2.0 * sqrt(3.0) * sqrt(a*a + b*b + (a+b)*(a+b))
+
+func scan(node: Node, output: Array) -> void:
+	output.append(node)
+	for child in node.get_children():
+		scan(child, output)
+
+func _initialize() -> void:
+	var args := OS.get_cmdline_user_args()
+	if args.size() != 2:
+		quit(2)
+		return
+	var mode: String = args[0]
+	destination = args[1]
+	report["mode"] = mode
+	report["pid"] = OS.get_process_id()
+	report["engine"] = Engine.get_version_info()
+	if not check(Engine.get_version_info().major == 4 and Engine.get_version_info().minor == 5 and Engine.get_version_info().patch == 1, "Pinned Godot 4.5.1"):
+		return
+	if not check(mode in ["import", "reload"], "Explicit import/reload mode"):
+		return
+	var path: String = "res://imported.scn" if mode == "import" else "res://roundtrip.tscn"
+	var packed = ResourceLoader.load(path, "PackedScene", ResourceLoader.CACHE_MODE_IGNORE)
+	if not check(packed is PackedScene, "PackedScene load"):
+		return
+	var instance: Node = packed.instantiate()
+	if not check(instance != null, "PackedScene instance"):
+		return
+	var all_nodes: Array = []
+	scan(instance, all_nodes)
+	var meshes: Array = []
+	var transforms: Array = []
+	for node in all_nodes:
+		if not check(node is Node3D and node.get_script() == null, "Native Node3D only, no external scripts"):
+			instance.free()
+			return
+		var t: Transform3D = node.transform
+		transforms.append({"name":str(node.name), "class":node.get_class(), "origin":vec(t.origin), "basis":[vec(t.basis.x),vec(t.basis.y),vec(t.basis.z)]})
+		if not check(t == Transform3D.IDENTITY, "Identity transform / unshifted origin"):
+			instance.free()
+			return
+		if node is MeshInstance3D:
+			meshes.append(node)
+		elif not check(node.get_class() == "Node3D", "No control/camera/light/character nodes"):
+			instance.free()
+			return
+	if not check(meshes.size() == 1 and all_nodes.size() <= 2, "One selected mesh and optional native root"):
+		instance.free()
+		return
+	var mesh_node: MeshInstance3D = meshes[0]
+	var mesh: ArrayMesh = mesh_node.mesh as ArrayMesh
+	if not check(mesh != null and mesh.get_surface_count() == 1 and mesh.get_blend_shape_count() == 0 and mesh.shadow_mesh == null, "One unchanged ArrayMesh surface, no morph or shadow mesh"):
+		instance.free()
+		return
+	if not check(mesh.surface_get_primitive_type(0) == Mesh.PRIMITIVE_TRIANGLES and mesh_node.material_override == null and mesh_node.material_overlay == null and mesh_node.get_surface_override_material(0) == null, "Triangles and native material only"):
+		instance.free()
+		return
+	var arrays: Array = mesh.surface_get_arrays(0)
+	var channels: Array = []
+	var channel_records: Array = []
+	for index in range(Mesh.ARRAY_MAX):
+		var size: int = 0 if arrays[index] == null else arrays[index].size()
+		channel_records.append({"channel":index,"type":type_string(typeof(arrays[index])),"count":size})
+		if size > 0: channels.append(index)
+	report["channels"] = channel_records
+	report["format"] = mesh.surface_get_format(0)
+	if not check(channels == [Mesh.ARRAY_VERTEX, Mesh.ARRAY_NORMAL, Mesh.ARRAY_TANGENT, Mesh.ARRAY_INDEX], "Only fixed-cache positions, normals, tangents and indices"):
+		instance.free()
+		return
+	if not check(typeof(arrays[Mesh.ARRAY_VERTEX]) == TYPE_PACKED_VECTOR3_ARRAY and typeof(arrays[Mesh.ARRAY_NORMAL]) == TYPE_PACKED_VECTOR3_ARRAY and typeof(arrays[Mesh.ARRAY_TANGENT]) == TYPE_PACKED_FLOAT32_ARRAY and typeof(arrays[Mesh.ARRAY_INDEX]) == TYPE_PACKED_INT32_ARRAY, "Exact native array types"):
+		instance.free()
+		return
+	var positions: Array = []
+	var normals: Array = []
+	var tangents: Array = []
+	for value in arrays[Mesh.ARRAY_VERTEX]: positions.append(vec(value))
+	for value in arrays[Mesh.ARRAY_NORMAL]: normals.append(vec(value))
+	for value in arrays[Mesh.ARRAY_TANGENT]: tangents.append(value)
+	var indices: Array = []
+	for value in arrays[Mesh.ARRAY_INDEX]: indices.append(value)
+	report["geometry"] = {"positions":positions, "normals":normals, "indices":indices}
+	report["tangents"] = tangents
+	# Record actual arrays before validation, so any later failure is diagnosable.
+	if not check(positions.size() == 1152 and normals.size() == 1152 and tangents.size() == 4608 and indices.size() == 1152, "Fixed-cache actual channel counts"):
+		instance.free()
+		return
+	var u: float = pow(2.0, -24.0)
+	var a: float = 1.0/65535.0 + 8.0*u
+	var b: float = 1.0/32767.0 + 17.0*u
+	var dot_bound: float = oct_error(a,a) + oct_error(a,b) + 72.0*u + 1024.0*u*u
+	var max_unit_error: float = 0.0
+	var max_dot: float = 0.0
+	for index in range(1152):
+		var normal: Vector3 = arrays[Mesh.ARRAY_NORMAL][index]
+		var tangent := Vector3(tangents[index*4], tangents[index*4+1], tangents[index*4+2])
+		if not check(normal.is_finite() and tangent.is_finite() and tangents[index*4+3] == 1.0 and normal.length_squared() > 0 and tangent.length_squared() > 0, "Finite nonzero fixed-cache tangents with positive handedness"):
+			instance.free()
+			return
+		max_unit_error = max(max_unit_error,abs(tangent.length()-1.0))
+		max_dot = max(max_dot,abs(normal.normalized().dot(tangent.normalized())))
+	report["native_tangent_semantics"] = {"maximum_unit_error":max_unit_error,"maximum_normalized_absolute_dot":max_dot,"unit_bound":64.0*u,"orthogonality_bound":dot_bound,"prequantization_exact_orthogonality_proven":false}
+	if not check(max_unit_error <= 64.0*u and max_dot <= dot_bound, "Explicit signed-oct16 precision model tangent semantics"):
+		instance.free()
+		return
+	var surfaces: Array = mesh.get("_surfaces")
+	if not check(surfaces.size() == 1, "One native stored surface"):
+		instance.free()
+		return
+	var stored: Dictionary = surfaces[0]
+	var stored_box: AABB = stored["aabb"]
+	report["stored_surface"] = {"format":stored["format"], "primitive":stored["primitive"], "vertex_count":stored["vertex_count"], "index_count":stored["index_count"], "vertex_data_bytes":stored["vertex_data"].size(), "index_data_bytes":stored["index_data"].size(), "vertex_data_sha256":bytes_sha(stored["vertex_data"]), "index_data_sha256":bytes_sha(stored["index_data"]), "aabb_position":vec(stored_box.position), "aabb_size":vec(stored_box.size), "aabb_end":vec(stored_box.end)}
+	if not check(stored["format"] == 34359742471 and report["format"] == 34359742471 and stored["vertex_count"] == 1152 and stored["index_count"] == 1152, "Exact original cache storage format/count"):
+		instance.free()
+		return
+	for key in ["attribute_data", "skin_data", "blend_shapes", "bone_aabbs", "lods"]:
+		if not check(not stored.has(key) or stored[key].is_empty(), "No additional stored channel/deformation/LOD"):
+			instance.free()
+			return
+	var material: StandardMaterial3D = mesh.surface_get_material(0) as StandardMaterial3D
+	if not check(material != null, "Native StandardMaterial3D"):
+		instance.free()
+		return
+	var textures: int = 0
+	for slot in range(BaseMaterial3D.TEXTURE_MAX):
+		if material.get_texture(slot) != null: textures += 1
+	var color: Color = material.albedo_color
+	report["material"] = {"albedo_srgb_rgba":[color.r,color.g,color.b,color.a], "roughness":material.roughness, "metallic":material.metallic, "texture_count":textures, "shader_material":false, "emission_enabled":material.emission_enabled, "emission_rgb":[material.emission.r,material.emission.g,material.emission.b], "transparency":material.transparency, "cull_mode":material.cull_mode}
+	report["transforms"] = transforms
+	var box: AABB = mesh.get_aabb()
+	report["aabb"] = [vec(box.position), vec(box.end)]
+	report["aabb_storage"] = {"position":vec(box.position),"size":vec(box.size),"end":vec(box.end)}
+	report["dependencies"] = Array(ResourceLoader.get_dependencies(path))
+	if not check(report["dependencies"].is_empty(), "Preserved native scene has no external dependencies"):
+		instance.free()
+		return
+	if mode == "import":
+		# A separate, native editable snapshot, with embedded duplicate resources.
+		# No array/material values are changed. Fresh-process reload checks equality.
+		instance.scene_file_path = ""
+		var copied_mesh: ArrayMesh = mesh.duplicate(true) as ArrayMesh
+		copied_mesh.resource_path = ""
+		var copied_material: StandardMaterial3D = material.duplicate(true) as StandardMaterial3D
+		copied_material.resource_path = ""
+		copied_mesh.surface_set_material(0, copied_material)
+		mesh_node.mesh = copied_mesh
+		for node in all_nodes:
+			if node != instance: node.owner = instance
+		var saved := PackedScene.new()
+		if not check(saved.pack(instance) == OK and ResourceSaver.save(saved, "res://roundtrip.tscn") == OK, "Native PackedScene roundtrip save"):
+			instance.free()
+			return
+		report["roundtrip_saved"] = true
+	instance.free()
+	report["passed"] = true
+	finish(0)

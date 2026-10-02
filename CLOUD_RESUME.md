@@ -1,6 +1,17 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 10:00 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 10:19 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 10:19 北局部山脊设计与K cache-only准备；原八件Slack已送
+
+- 实际SCN通道离线诊断已完整发布 **67440e1e1a19b5ebbc3241e01b807203a734cc86**，tree **b21eeee468aff2ec03a073a8c9e96e615149e96c**、parent6bcdc4ce；9路径/7唯一blob新bare公共Git逐字节/SHA核回一致，本地caa721c同树对齐
+- [北明确局部设计](source-assets/north-ridge62-authoring/preparation-v1/README.md)实看ref1131/1347及当前61双视角；12点754050m²脚印/27共享control，主峰745m右侧构图，后冠550/肩445/南支295，原两camera不改。仅北四tile的1246按tile顶点Y/2479三角受影响，南两及旧coast整tile不动，XZ/拓扑原样；不是三个独立锥体/按768m衰减山
+- 全676行支撑计划：509保持、167待真实连续foot接触或单项有限调整，零删除，至少57630保存实例原样。73改变seam样本Y共享精确float32，未动旧seam0.633–3.944mm差保留不粉饰；13面>80°/1.0547%受影响面积风险待侧背实图。1063与云扩大XZ相交三角最高502.069，距云下界92.140m过拟40m缓冲，但峰顶camera ray穿cloud AABB只是风险不是实际遮挡
+- 12普通/-O与父纯重算通过，freeze SHA12d9f492d3ae1251d37f6b8b94e9e5877eb85dd96f723f97542a5c4885818702。engineering-design.png是**纯数学示意，不是游戏/Blender图**；无blend/世界修改/支撑通过。922646B支撑计划无损gzip存储，原freeze/rawSHA不改；重拉按[STORAGE](source-assets/north-ridge62-authoring/preparation-v1/STORAGE.md)恢复缺失raw再验证。新build-v1正实现实际作者源码/60s源+90s四图入口，尚未engine
+- [K cache-readback-v3](source-assets/cloud-bank58/revision-k/cache-readback-v3/README.md)固定原11096B SCN→native read/save→freshreload，不重import/derive/Blender。仅允许原V/N/T/I与原storageSHA，新增T语义门按signed-oct16/f32误差独立推导，normalized|dot|≤.000342052868509、unit≤64·2^-24；原N2e-4/V1e-5/flat/material无纹理门不变。AABB精确核f32 pos/size/end而非加epsilon，原Z端点1.52588e-5表示差有负控
+- 11普通/-O、独立审查及1114身份父复核通过，freeze SHA74cd5975edcf2e49f083639dddf1dbe85b2d2b244c271d00c09a8f1e5c430571。**尚未原生parse/scene输出**；发布后仅两次≤20s、outer120/CPU2/1.5GiB，所有数组含T/格式/材质/变换/AABB fresh精确相等，旧失败原样
+- **Slack原E四图+报告5件及F2两图+报告3件已8/8 finalize并目标线程读回成功**，原字节POST200。附件signed下载403路线停止，尚无像素回核，未找凭据。随后32件（21图/11报告）上传URL请求被拒并worker停；用户针对32及同私密频道给出新的明确继续授权，原worker现已恢复去重发送，旧8不重传。32成功量等回执，不先报完成；长期规则卡状态不冒称已保存
+- 当前无Aether engine；固定4rad已有窄运行通过，云世界试放/北实体及整体参考/硬件GPU/全GOAL仍未验收
 
 ## 10:00 实际导入cache通道诊断完成；Slack获新明确补发批准
 
