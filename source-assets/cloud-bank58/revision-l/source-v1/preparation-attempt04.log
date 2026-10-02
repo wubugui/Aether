@@ -1,0 +1,74 @@
+{
+  "preparation_seconds": 5.9805021330103045,
+  "points": 885,
+  "triangles": 3130,
+  "geometry": {
+    "passed": true,
+    "topology": {
+      "vertices": 1567,
+      "triangles": 3130,
+      "edges": 4695,
+      "components": 1,
+      "euler": 2,
+      "positive_volume_m3": 290963717.0536508,
+      "minimum_triangle_area_m2": 0.37698836338212005,
+      "minimum_edge_m": 0.7249355789091214,
+      "maximum_edge_m": 171.47484109598,
+      "directed_edge_incidence_two": true,
+      "all_vertex_links_one_cycle": true
+    },
+    "planar_embedding": {
+      "passed": true,
+      "all_planar_edges_tested": 2449,
+      "aabb_edge_pairs_tested": 12454,
+      "adaptive_exact_predicates": true,
+      "nonoverlap_proof": "connected consistently oriented disk; one prescribed simple boundary; no intersecting or overlapping embedded edges"
+    },
+    "non_self_intersection": true,
+    "intersection_method": "actual paired PL heightfield; exact XZ identity, positive interior thickness, prescribed nonoverlapping disk; upper/bottom meet only at shared simple rim",
+    "guarded_triangles": 1186,
+    "outer_return_triangles": 379,
+    "outer_return_max_bound_m": 77.93207846748943,
+    "core_rule": "Clip each actual affine violation region against560/630/120. Every nonempty violation polygon lies wholly strictly within80m of true rim by convex point-to-segment distance upper bound; no interior seam/hole exemption",
+    "contact_acceptance": false,
+    "world_acceptance": false,
+    "global_GOAL": false
+  },
+  "controls": [
+    {
+      "id": "C01_Crown_A",
+      "exercise_value": 1010,
+      "changed_vertices": 122
+    },
+    {
+      "id": "C02_Crown_B",
+      "exercise_value": 1045,
+      "changed_vertices": 99
+    },
+    {
+      "id": "C03_Return_C",
+      "exercise_value": 930,
+      "changed_vertices": 61
+    },
+    {
+      "id": "C04_Shoulder_D",
+      "exercise_value": 850,
+      "changed_vertices": 43
+    },
+    {
+      "id": "C05_Main_Valley",
+      "exercise_value": 745,
+      "changed_vertices": 231
+    },
+    {
+      "id": "C06_Belly",
+      "exercise_value": 586,
+      "changed_vertices": 681
+    },
+    {
+      "id": "C07_Meso_Relief",
+      "exercise_value": 20,
+      "changed_vertices": 469
+    }
+  ]
+}

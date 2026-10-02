@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/source-v1/prepare_candidate58l.py", line 186, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/source-v1/prepare_candidate58l.py", line 181, in main
+    c,r,report=make();g.write(g.CANDIDATE_PATH,c);g.write(g.HERE/'rim-source-binding.json',r);report['geometry']=g.validate_candidate(c)
+                                                                                                                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/source-v1/geometry58l.py", line 145, in validate_candidate
+    proof=spatial_gate(c)
+          ^^^^^^^^^^^^^^^
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/source-v1/geometry58l.py", line 126, in spatial_gate
+    topo=topology(f32(local(v)),f,dict(maximum_vertices=2584,maximum_triangles=5164,minimum_area_m2=1e-8,minimum_edge_m=1e-5))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-k/poly58k.py", line 26, in topology
+    require(all(len(a)==2 for a in undirected.values()),'Nonmanifold edge incidence')
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-k/poly58k.py", line 14, in require
+    raise ValueError(message)
+ValueError: Nonmanifold edge incidence

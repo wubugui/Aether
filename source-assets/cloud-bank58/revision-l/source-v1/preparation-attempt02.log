@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/source-v1/prepare_candidate58l.py", line 186, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/source-v1/prepare_candidate58l.py", line 181, in main
+    c,r,report=make();g.write(g.CANDIDATE_PATH,c);g.write(g.HERE/'rim-source-binding.json',r);report['geometry']=g.validate_candidate(c)
+                                                                                                                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/source-v1/geometry58l.py", line 128, in validate_candidate
+    proof=spatial_gate(c)
+          ^^^^^^^^^^^^^^^
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/source-v1/geometry58l.py", line 103, in spatial_gate
+    else:require(upper<80,'CORE_VOLUME_VIOLATION triangle='+str(i)+' upper='+str(upper)+' bottom='+str(B[t,1].tolist())+' thick='+str(thick[t].tolist()));exempt.append(dict(triangle=i,external_distance_upper_m=upper))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/source-v1/geometry58l.py", line 25, in require
+    if not ok: raise ValueError(message)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: CORE_VOLUME_VIOLATION triangle=272 upper=82.11281855131915 bottom=[680.3296508789062, 680.0, 623.758056640625] thick=[97.67034912109375, 50.0, 174.2193603515625]
