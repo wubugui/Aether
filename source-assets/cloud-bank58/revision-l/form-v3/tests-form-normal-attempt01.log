@@ -1,0 +1,15 @@
+.....F..........
+======================================================================
+FAIL: test_deterministic_single_candidate (test_form58l.FormTests.test_deterministic_single_candidate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/form-v3/test_form58l.py", line 16, in test_deterministic_single_candidate
+    c,b,r=prep.make();self.assertEqual(c,self.c);self.assertEqual(b,self.b);self.assertEqual(r,g.read(HERE/'FORM_CHANGE_REPORT.json'))
+                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'can[874 chars]r': [('large_high', 3818.0, 3896.0, 123.0, 101[63601 chars]alse} != {'can[874 chars]r': [['large_high', 3818.0, 3896.0, 123.0, 101[63601 chars]alse}
+Diff is 153387 characters long. Set self.maxDiff to None to see it.
+
+----------------------------------------------------------------------
+Ran 16 tests in 4.371s
+
+FAILED (failures=1)

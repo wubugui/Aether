@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/form-v3/check_projection58l.py", line 27, in <module>
+    if __name__=='__main__':r=check();g.write(HERE/'PROJECTION_SAMPLES.json',r);print(json.dumps(r,indent=2))
+                              ^^^^^^^
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/form-v3/check_projection58l.py", line 25, in check
+    p,ti=top_at(c,[x,z]);op,oi=top_at(old,[x,z]);rows.append({'view':view,'name':name,'world_xz':[x,z],'old_world_point':op.tolist(),'new_world_point':p.tolist(),'new_minus_old_y_m':float(p[1]-op[1]),'actual_top_triangle':ti,'old_projection':project(old,b,op,view),'new_projection':project(c,b,p,view)})
+         ^^^^^^^^^^^^^^^
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/form-v3/check_projection58l.py", line 15, in top_at
+    g.require(bool(out),'TARGET_OUTSIDE_TRUE_DOMAIN:'+str(xz));return np.array([xz[0],out[0][0],xz[1]]),out[0][1]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/form-v3/geometry58l.py", line 25, in require
+    if not ok: raise ValueError(message)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: TARGET_OUTSIDE_TRUE_DOMAIN:[4335, 3630]
