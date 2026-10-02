@@ -1,0 +1,28 @@
+{
+  "lossless_gzip": [
+    {
+      "raw": "protected-before.json",
+      "bytes": 1527117,
+      "sha256": "9583c029e14edb89305ccdc82a7ac296c49de3d853bc7375bc5f5493ddba923c",
+      "stored": "protected-before.json.gz",
+      "stored_bytes": 344582,
+      "stored_sha256": "afa8800044fe275d39fb1213c68d36435fd138c3c9ed525fcc68423f58b705ec"
+    },
+    {
+      "raw": "protected-after.json",
+      "bytes": 1527117,
+      "sha256": "9583c029e14edb89305ccdc82a7ac296c49de3d853bc7375bc5f5493ddba923c",
+      "stored": "protected-after.json.gz",
+      "stored_bytes": 344582,
+      "stored_sha256": "afa8800044fe275d39fb1213c68d36435fd138c3c9ed525fcc68423f58b705ec"
+    }
+  ],
+  "exact_existing_stream_alias": {
+    "raw": "outputs/restore-read-raw.json",
+    "bytes": 14837932,
+    "sha256": "c941a75a43a5c4f88d4083c403cb9f3219752c49056405bed66840803b0f629b",
+    "source_manifest": "cloud-evidence/north-ridge62-recovery-v2-source-20261002T114825Z-lnt78w53/native-storage.json",
+    "source_entry": "cloud-evidence/north-ridge62-recovery-v2-source-20261002T114825Z-lnt78w53/outputs/build-raw.json"
+  },
+  "explanation": "Actual restored native raw happens to be byte-identical to the original build raw, including reused historical PID5; new wait4 process/current opened path prove this distinct read. Reuse the canonical stored stream without another compressed data copy."
+}

@@ -1,6 +1,24 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 12:24 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 12:32 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 云端硬性前置闸门：先插件上传完整核回，再继续工作
+
+用户2026-10-02最新明确要求：**GitHub上传是重中之重。本项全部代码、原生源/必要无损恢复表示、图片以及失败/成功记录，必须先通过已连接GitHub插件发布到wubugui/Aether，并实际从远端读回核实完整，成功后才开始下一开发、设计、模型制作、采集或渲染项。** 不以本地commit、blob/tree创建、ref返回成功或云盘留存代替完整远端核验；不边积压未外存成果边开新项。
+
+- 开工先核CLOUD_RESUME、HEAD、所有未上传文件/发布收据/未终态调用，优先完成当前外存闭环。已成功对象不重复传，不确定结果先只读核定
+- 上传只用GitHub插件，禁止CLI push、其它上传方式、本机或中转代传；只读公共Git读回用于独立验证，不是上传路线
+- 上传失败优先查明原因并在授权内反复进行合规恢复，保持原payload、完整base tree/parent和非force ref；真实安全拒绝必须停止该动作，按批准规则取得明确证据/一次原call重试，仍拒则报告并保持闸门关闭，绝不绕审批/换route
+- 本项全部完成成果和本入口更新都核回后，才允许下一项。纯读取以查错/确认上传状态可以继续；与修复当前上传无关的新开发/渲染必须等待
+- 私密Slack交付定位符/收据仍仅本地，不因“全部项目”混入公开仓库；原受阻发送保持独立停止
+
+## 12:32 北Git干净恢复后native fresh-open实过
+
+- K4原图/失败及北read准备已完整发布 **7240bd38b6e2c178f9bd997ec3bffc6ae07f30bc**，tree **b23439c7d92bf111d6199754ee58f61981344612**、parent9c491deb；44路径/42唯一blob新bare公共Git逐字节/SHA核回，本地c22a31d同树对齐。六新blob全成功，所有实际成果经插件外存
+- [北真正干净恢复native终验](cloud-evidence/north-ridge62-restore-read-v1-20261002T122842Z-b5lgjbp1/RESULT.md)新childPID5/0/4.358秒，wrapper0/13.965秒，actual opened filepath确为新空目录恢复的10,004,835B源，而非原工作源。源SHA **dd1d3c12b8c3f98fdcd42a21057d519f1cac48eeab468cbc7721d1c1673ab502**，原完整geometry/权重/属性/normal/材质/相机/Text门全过，145输入/原保护树/恢复4文件7目录及输出全未变，无save/rebuild/render
+- 此次14,837,932B raw与原build恰逐字节/SHA全同（历史PID再次5但本次launch/wait4与opened filepath严格实绑），存储直接引用已发布原build XZ流，不新增重复压缩副本。**分块远端逐字节→新干净目录恢复→实际native fresh-open链已闭环**；Git仍需restore脚本还原原生路径，不宣称存在直接.blend blob
+- [K独立四图审查](cloud-evidence/cloudbank58k-world-trial-v2-renderer-20261002T121854Z-931jfijg/INDEPENDENT_VISUAL_REVIEW.md)ref和四图亲看/完整PNG解码、所有SHA/47与27freeze核实；离线原图像validator30谓词中28true、nativepassed/restored两false，明确原wrapper未走此分支。大露洞/硬冠/覆盖不足视觉打回，camera复位复合失败不捏造根因或放宽门；下一受控整岸设计在仓库外准备，原素材不改
+- 下一北原1131/1347+侧背四source图（原90秒/CPU2），当前0北图，167支撑/世界/全GOAL仍待验收。原Slack23受阻件保持停，新Git工程成果持续外存
 
 ## 12:24 K首次实际四图完成，世界造型明确打回
 
