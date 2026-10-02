@@ -1,6 +1,15 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 07:17 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 07:27 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 07:27 K首次native崩溃已保全；北散布按实际来源分类完成
+
+- 六轮world超时已完整发布 **8655ed37222867eedfa4819a22eed54d7a19f3ad**，tree **904ae2c5f728107f39cbc8af6ddbc754bb5f2d3d**、parent6c76eab9；55路径/54blob新bare公共Git字节/SHA核回一致，本地df95c78同树对齐。原非force ref与只读验证先拒，收到原授权证据后各同动作恢复；已存对象不重传
+- [K首次原生试验](cloud-evidence/cloudbank58k-contact-v1-20261002T072145Z-i0z0k2u2/RESULT58K.md)build子SIGSEGV(-11)/.863秒，wrapper1/1.526秒/316248KiB/CPU2；未触资源界，**0原生源/0图**，773旧/35准备输入不变。匹配的3463B原crash逐字节保全，栈为rebuild58k.py:28 group_signature读顶点变形组，原partial build报告仍running是crash未执行finally，不代表进程仍活
+- RNA属性句柄跨CustomData层分配是具体待验证风险：FACE属性创建后仍持旧attr，POINT属性在首次组权重分配前持引用；官方源码显示层可重分配/移位。尚不能证明它就是此崩溃原因。正在独立recovery-01安全分相/重新按名查询与全权重/属性检查准备，原K失败/recipe/机位/门不改，未重试原生
+- [北33命中组分类](source-assets/north-ridge62-intake/scatter-hit-review-01/README.md)1974离线检查normal/-O逐字节一致，48源码SHA/原raw+gzip不变。676query/575design分为poplar33/22、oak79/48、rock142/123、bush62/52、pine360/330；10个pine组不能看旧oak/poplar名字猜。两片-4_-6松林占260design命中；root-only会各漏8个，两个buffer-only来自受保护coast61 -5_-5，不可整组修改
+- 查明具体runtime物理路径：world39→open_world按metadata/实际transform生成邻近树capsule(radius2.4,height11,localY5.5)与rock prefab首个导入mesh碰撞，bush跳过；model_scene只是编辑提取绑定。下一限定读这些proxy包络/岩prefab实际faces并重查visual+proxy边缘命中，形成逐path/index保留/支撑/调整清单，再定山脊局部脚印；不为假设性全局变形无限延伸审计。当前仍非active collider/全占用/删除授权
+- 900秒独立观察模式按本工具自定预算调整正在准备，默认600/720回放保留；明确strict600性能仍单独false，不放宽路径/身份/输入/遮挡门。新长world未开。E/F2八件Slack原频道问题仍待答，全部GOAL/硬件GPU验收未通过
 
 ## 07:17第六world终态：严格600守卫生效，三图未完成全环绕
 

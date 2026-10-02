@@ -1,0 +1,3253 @@
+{
+  "status": "completed_offline_source_bound_hit_classification_no_engine",
+  "raw_report": "cloud-evidence/north-ridge62-scatter-float32-collect-20261002T065622Z-6k1gbidm/native-scatter.json",
+  "raw_sha256": "62482b889a2dc6c5687274748397f5d4bf9da3be6898b8fbca6d372a5a2452bf",
+  "published_report_commit_as_supplied_by_parent": "d01f8a19 (not Git-verified by this worker)",
+  "design_box_xmin_xmax_zmin_zmax": [
+    -3048.0,
+    -2040.0,
+    -5160.0,
+    -3770.0
+  ],
+  "query_box_with_40m": [
+    -3088.0,
+    -2000.0,
+    -5200.0,
+    -3730.0
+  ],
+  "counts": {
+    "all_saved_groups": 775,
+    "all_saved_instances": 57797,
+    "hit_groups": 33,
+    "query_instances": 676,
+    "design_instances": 575,
+    "buffer_only_instances": 101
+  },
+  "classes": {
+    "poplar": {
+      "groups": 4,
+      "query": 33,
+      "design": 22,
+      "buffer_only": 11
+    },
+    "oak": {
+      "groups": 4,
+      "query": 79,
+      "design": 48,
+      "buffer_only": 31
+    },
+    "rock": {
+      "groups": 8,
+      "query": 142,
+      "design": 123,
+      "buffer_only": 19
+    },
+    "bush": {
+      "groups": 7,
+      "query": 62,
+      "design": 52,
+      "buffer_only": 10
+    },
+    "pine": {
+      "groups": 10,
+      "query": 360,
+      "design": 330,
+      "buffer_only": 30
+    }
+  },
+  "root_only_false_negatives": {
+    "query": 8,
+    "design": 8
+  },
+  "saved_render_binding": {
+    "all_hit_groups_visible": true,
+    "all_visible_instance_count_minus_one": true,
+    "material_override": "res://scenes/candidate53d-west/Game53dWest.tscn::ShaderMaterial_4hw14",
+    "shader_resource": "res://scenes/candidate53d-west/Game53dWest.tscn::Shader_pk3vb",
+    "shader_code_utf8_sha256_as_recorded_by_native": "cc22fad7f413d52b57bb9c7b9638fe74b55ef73a52d60311334a293ec17dee4b",
+    "saved_cloud_drift": false,
+    "saved_vertex_displacement_for_this_branch": "zero; conditional X displacement is disabled",
+    "next_pass": "",
+    "scope": "saved source state, not a live material-state observation"
+  },
+  "source_runtime_path": {
+    "world_script": "res://scripts/world39.gd",
+    "base_script": "res://scripts/open_world.gd",
+    "ready_lines": "35-76: reads metadata/asset_kind and full saved composed transforms into layout.props/prop_transforms",
+    "collision_lines": "289-331: nearby index selection; bush skip; tree capsule or prefab first-mesh triangle collision; exact saved transform applied",
+    "activation": "source rule: 3x3 focus-cell neighborhood, horizontal root distance <=350m, |focus.y-root.y|<=150m; refreshed after >0.4s; presence depends on focus, not proved by saved read",
+    "tree_local_proxy_aabb": {
+      "min": [
+        -2.4,
+        0,
+        -2.4
+      ],
+      "max": [
+        2.4,
+        11,
+        2.4
+      ]
+    },
+    "tree_query_candidate_count": 472,
+    "tree_design_candidate_count": 400,
+    "rock_query_candidate_count": 142,
+    "rock_design_candidate_count": 123,
+    "bush_query_visual_only_count": 62,
+    "bush_design_visual_only_count": 52,
+    "model_scene_role": "editor extract_selected only in scatter_group; not the runtime collision switch",
+    "runtime_source_effect_observed": false
+  },
+  "footprint_interpretation": [
+    "575 design hits constrain any actual changed footprint by per-instance whole visual bounds and terrain support. 101 buffer-only hits protect transition/edge work; neither count authorizes removal or moving entire groups.",
+    "Pines dominate with 330 design hits. Two -4_-6 pine groups contribute 260; these are existing authored groves, not generic oak/poplar from their names.",
+    "Bushes remain visual/support constraints despite source collision skip. Rocks are bounded saved rock meshes, not houses or terrain. All hit origins must be reconciled against changed terrain before moving, retaining or replacing them.",
+    "Two buffer-only coast61 hits (one bush, one pine) belong to the protected -5_-5 neighbor resources; preserve the whole protected tile and its existing adjustment work.",
+    "Group union boxes in this report are summaries only. Retrieve precise saved bounds/transforms with the raw path+instance-index locator; do not flatten groves into a blanket exclusion rectangle."
+  ],
+  "other_intake_context": {
+    "source": "cloud-evidence/north-ridge62-collect-20261002T053100Z-3mmbw0ol/native-intake.json",
+    "saved_settlement_count": 172,
+    "saved_settlement_query_hits": 0,
+    "historical_northern_12_identity_proved": false,
+    "curve_count": 3,
+    "curve_control_hull_query_hits": 0,
+    "road_width_proved": false,
+    "warning": "This does not erase the four non-scatter saved hit entities: ocean, native cloud bank, rainbow and coastal-storm union. Their nature/height and state need separate footprint/composition treatment; weather unions are not ground-building exclusions."
+  },
+  "smallest_useful_next_bounded_read": [
+    "Qualify actual source-specific collision footprints: use the existing proved saved buffers and metadata to compute transformed tree capsule envelopes, and read just the rock prefab first imported mesh and its actual face/vertex extent. Do not substitute the saved rock visual mesh or assets/collision/rock.res without proving identity: runtime uses model_meshes[kind] from the prefab first mesh.",
+    "Re-query the union of visual and collision envelopes from the relevant proved saved buffers, including groups just outside the visual query; checking only these 676 rows could miss a proxy-only intersection. The source formulas are a bounded prediction, not proof that live colliders are present.",
+    "For ground support, retain exact source mesh/transform identifiers; independently read vertex payload extrema for the few bound geometries and shadows when needed for the exact edited footprint. Six bound resource identities here reduce to five recorded primary surface-storage hashes (pine is duplicated). No new full-world export is needed.",
+    "Stop this read when there is a path/index-keyed conservative visual+source-collision keep/reconcile list and exact rock-source identity, then draw the first constrained mountain footprint with the 16 tile/border protections. A later bounded live snapshot at that footprint remains necessary before claiming runtime clearance. Do not block conceptual design on universal shader/model replacement audits unsupported by current source."
+  ],
+  "priorities_not_expanded_now": [
+    "The actual hit shader has saved cloud_drift=false, no overlay and no next pass. A generic deformation audit is not the leading new uncertainty for these 33 groups; saved-state review is not a live-state guarantee.",
+    "No saved settlement or curve control hull hits this query. Keep the old 12-house claim unproved instead of selecting the nearest 12; do not launch a general road/world audit solely because the legacy boolean is false."
+  ],
+  "original_unproved_flags_unchanged": {
+    "all_occupancy_complete": false,
+    "runtime_generated_entities_proved": false,
+    "runtime_model_scene_and_collision_proved": false,
+    "shader_deformation_envelopes_proved": false,
+    "road_width_proved": false,
+    "vertex_payload_bounds_independently_recomputed": false,
+    "visual_acceptance": false
+  },
+  "engines_started": 0,
+  "project_or_orbit_inputs_written": false,
+  "source_pins": {
+    "source-assets/north-ridge62-intake/scatter-hit-review-01/classify_hits.py": {
+      "bytes": 23897,
+      "sha256": "626ae5f61a844da050f3e294d47fcc4e3069156792202289f214394e8b85fdb7"
+    },
+    "cloud-evidence/north-ridge62-scatter-float32-collect-20261002T065622Z-6k1gbidm/native-scatter.json": {
+      "bytes": 6221922,
+      "sha256": "62482b889a2dc6c5687274748397f5d4bf9da3be6898b8fbca6d372a5a2452bf"
+    },
+    "cloud-evidence/north-ridge62-scatter-float32-collect-20261002T065622Z-6k1gbidm/native-scatter.json.gz": {
+      "bytes": 428481,
+      "sha256": "c84be8b53195ddd894c52f37b2b111fbbef4b0d7bdb2536e9a5e7a724773e8ba"
+    },
+    "cloud-evidence/north-ridge62-scatter-float32-collect-20261002T065622Z-6k1gbidm/wrapper-report.json": {
+      "bytes": 3866,
+      "sha256": "377fcfe4f6f53ac3ab54a081be85f638d46299bd0f84607305f87a54eadb6e06"
+    },
+    "cloud-evidence/north-ridge62-collect-20261002T053100Z-3mmbw0ol/native-intake.json": {
+      "bytes": 1215201,
+      "sha256": "5d6e5719b9b5f22397338ab508324ec180afd5a1d54554dcb66294ed79e88df2"
+    },
+    "source-assets/north-ridge62-intake/DEPENDENCY_REVIEW.json": {
+      "bytes": 730050,
+      "sha256": "4aa3634f3ec1d1e380d53d724ffa707af4bf66b7136c0bd5fc9592d4d9e80601"
+    },
+    "source-assets/north-ridge62-intake/plan.json": {
+      "bytes": 2803,
+      "sha256": "4f87a817181ac55991730f1889dcd91b277a888524f383d4a74cb5ff6a481040"
+    },
+    "cloud-evidence/north-ridge62-scatter-float32-collect-20261002T065622Z-6k1gbidm/collect_scatter62.gd": {
+      "bytes": 19943,
+      "sha256": "a1f92919762f8ee072997824cb3c9c6bc08818539e17b51d9319e85c35c2b5b7"
+    },
+    "cloud-evidence/north-ridge62-scatter-float32-collect-20261002T065622Z-6k1gbidm/transform-float32-identities.json": {
+      "bytes": 100184,
+      "sha256": "d2c07fdfb808dcdcd75e0afa82545aca8748e942b24d8624b55804f3f3f8b9c2"
+    },
+    "cloud-evidence/north-ridge62-scatter-float32-collect-20261002T065622Z-6k1gbidm/prepared-inputs.json.gz": {
+      "bytes": 109534,
+      "sha256": "657dff020cf4a2640ff5260f42091af56964f93423b5c8bfe631431f571a797f"
+    },
+    "cloud-evidence/north-ridge62-scatter-float32-collect-20261002T065622Z-6k1gbidm/storage.json": {
+      "bytes": 893,
+      "sha256": "7d58648676d12b31127685f3995abda787f9def86b71e7fa3ff98a3c9e14c9f1"
+    },
+    "candidates/round40-exclusive-20260930/project/scenes/candidate53d-west/Game53dWest.tscn": {
+      "bytes": 103070885,
+      "sha256": "6ec57b72a831d6fa906a8d866c339909de55c9c42297a038dcd429b18d0c2b18"
+    },
+    "candidates/round40-exclusive-20260930/project/scenes/candidate55-observation/Game55Observation.tscn": {
+      "bytes": 338,
+      "sha256": "65d43959d704e7406c56f4003df5063fad37572e42afd9a8025fbed55dbba286"
+    },
+    "candidates/round40-exclusive-20260930/project/scenes/candidate56-coast/Game56Coast.tscn": {
+      "bytes": 1453,
+      "sha256": "5c0cd84b860c409b647d970f123187e89b2e01099e159a43aff372d40ddbe8c5"
+    },
+    "candidates/round40-exclusive-20260930/project/scenes/candidate60-observation/Game60Observation.tscn": {
+      "bytes": 339,
+      "sha256": "8fcb0d24d503133a7e6ba29645291a73314c88b40ab447e0802937f1c802ac45"
+    },
+    "candidates/round40-exclusive-20260930/project/scenes/candidate61-coast/Game61Coast.tscn": {
+      "bytes": 1453,
+      "sha256": "dff06de665e1fa1f6ab74ff3cdf4e91442e1ac322839a37718e799f0d7fa44d8"
+    },
+    "candidates/round40-exclusive-20260930/project/assets/scatter/Grounded_poplar_-5_-7.res": {
+      "bytes": 8102,
+      "sha256": "f9a49058c33afc9ebf93f8f140a1b6cf25fd32cee34083326e3db8de225daf54"
+    },
+    "candidates/round40-exclusive-20260930/project/assets/meshes/poplar.res": {
+      "bytes": 12865,
+      "sha256": "bf9b420db71e994a9069df30345c56b8a85ae83a9346d72e5d076792a7c77a6f"
+    },
+    "candidates/round40-exclusive-20260930/project/assets/scatter/Grounded_oak_-5_-7.res": {
+      "bytes": 16883,
+      "sha256": "6af8d356e1043b4b0fa946d963f3b8ec0fd7be97e058f147d07e6e7246c6572f"
+    },
+    "candidates/round40-exclusive-20260930/project/assets/meshes/oak.res": {
+      "bytes": 26683,
+      "sha256": "f264a2b7ddd949e6907df239d3b1aba235a750566cd842b162c434e3eccd3e59"
+    },
+    "candidates/round40-exclusive-20260930/project/assets/scatter/Grounded_rock_-5_-7.res": {
+      "bytes": 2724,
+      "sha256": "4ca8f9133488e8bbbb8471bafd4a199b914ee3cad652147f59d6205a3310c453"
+    },
+    "candidates/round40-exclusive-20260930/project/assets/meshes/rock.res": {
+      "bytes": 7061,
+      "sha256": "bb83241d0e8699c5779171bfe59fae2806b217dcbebc5536a343576b256d7f30"
+    },
+    "candidates/round40-exclusive-20260930/project/assets/scatter/Grounded_poplar_-4_-7.res": {
+      "bytes": 2630,
+      "sha256": "3a54d45a36c546a0509873e990e1746b0960d3cebb8a27c81b23010fcf6847e2"
+    },
+    "candidates/round40-exclusive-20260930/project/assets/scatter/Grounded_oak_-4_-7.res": {
+      "bytes": 6035,
+      "sha256": "9071794f2624ecf963792e526650392fedfe943f8df510294cb0fcd9a67b9279"
+    },
+    "candidates/round40-exclusive-20260930/project/assets/scatter/Grounded_bush_-4_-7.res": {
+      "bytes": 1668,
+      "sha256": "ecd68abb3c344873b0818805a08c6661e582707ec87967ed495fee35bd6d334f"
+    },
+    "candidates/round40-exclusive-20260930/project/assets/meshes/bush.res": {
+      "bytes": 7061,
+      "sha256": "a243a9b858e0b939ea08febdb93963f687fa18cc61c2ed6587ef1795703b5a4e"
+    },
+    "candidates/round40-exclusive-20260930/project/assets/scatter/Grounded_rock_-4_-7.res": {
+      "bytes": 2724,
+      "sha256": "28d06d60a04f57556bf215a5f49654367298da70354b1e98320776edf2ecf20b"
+    },
+    "candidates/round40-exclusive-20260930/project/assets/scatter/Grounded_oak_-3_-7.res": {
+      "bytes": 4547,
+      "sha256": "ac713b4f635ae92af637122b780d972d57751c89f4973d56435f877a178c8a72"
+    },
+    "candidates/round40-exclusive-20260930/project/assets/scatter/Grounded_poplar_-3_-7.res": {
+      "bytes": 2390,
+      "sha256": "05d36bda9000ce98810cd23b018fc5634b926bcd17b3b42d0dfd617dda2ed4e3"
+    },
+    "candidates/round40-exclusive-20260930/project/assets/scatter/Grounded_bush_-3_-7.res": {
+      "bytes": 1668,
+      "sha256": "859563506ef5fb9c70e92d55f2ce3dac56c2a53e5cbbe2a48b027aa535e614f6"
+    },
+    "candidates/round40-exclusive-20260930/project/assets/scatter/Grounded_rock_-3_-7.res": {
+      "bytes": 2580,
+      "sha256": "c5086e271a658383742e71e3187b31677ce6e6a6002eac5b9ce74f725bfde02a"
+    },
+    "candidates/round40-exclusive-20260930/project/assets/coast61/bush_-5_-5.res": {
+      "bytes": 756,
+      "sha256": "28f4b15c34cead149d7c594ec78dd8d83c4a837ff6405ee0d79c36e6d34f311e"
+    },
+    "candidates/round40-exclusive-20260930/project/assets/meshes/pine.res": {
+      "bytes": 7349,
+      "sha256": "cd93b88033141213b8bb9ca49dfb3b6e204b71c7e18b4a9a2b13d25a23415d91"
+    },
+    "candidates/round40-exclusive-20260930/project/assets/coast61/oak_-5_-5_CoastalPines36b.res": {
+      "bytes": 9971,
+      "sha256": "0a780a53e0a90777105703b23a899dfe1cc62d9b2774272087d9869958d64253"
+    },
+    "candidates/round40-exclusive-20260930/project/scripts/scatter_group.gd": {
+      "bytes": 2582,
+      "sha256": "c29cdd93a3e0fb82b9c6e9f237ad7ece17830e4c3926a1e54c29d407d8c5c8db"
+    },
+    "candidates/round40-exclusive-20260930/project/scripts/open_world.gd": {
+      "bytes": 16366,
+      "sha256": "1a2c531d8da8f5db991722bb637c4b7f061dccfd6c8004f560918feab8d42263"
+    },
+    "candidates/round40-exclusive-20260930/project/scripts/world39.gd": {
+      "bytes": 1152,
+      "sha256": "137ca6ef28d3987a7bd819b4695902842cc43a04c0157a89cb2a8e472dc2fc28"
+    },
+    "candidates/round40-exclusive-20260930/project/scripts/asset_instance.gd": {
+      "bytes": 383,
+      "sha256": "a46bd214a944a6819061fcc8e803e56d35877b08cbe4eaf3f762b938a46fc62f"
+    },
+    "candidates/round40-exclusive-20260930/project/scripts/environment42b.gd": {
+      "bytes": 6501,
+      "sha256": "2b6e738b02b92a9d86186633e2b41f6117d638583583e870e57eab40ddba8a29"
+    },
+    "candidates/round40-exclusive-20260930/project/assets/asset_catalog.json": {
+      "bytes": 11290,
+      "sha256": "00ef2ddbcf3262d9c5ea2170e9ef21b63335fabdb29d544fd7027a8a14ee9a25"
+    },
+    "candidates/round40-exclusive-20260930/project/assets/models/rock.glb": {
+      "bytes": 6840,
+      "sha256": "4051fe9da4e12319ef481db1f66d3353829e300a5ca62bb6e7d6c932acf2ff8b"
+    },
+    "candidates/round40-exclusive-20260930/project/assets/models/rock.glb.import": {
+      "bytes": 1032,
+      "sha256": "5b47bfcc43a2b574b6725d88c836e7933211b6f32d723238f24fa724fa43def6"
+    },
+    "candidates/round40-exclusive-20260930/project/scenes/prefabs/poplar.tscn": {
+      "bytes": 790,
+      "sha256": "07d3d3460e6b72a24ef928adf86245bce83556da7144dac93ab638f518ff96d7"
+    },
+    "candidates/round40-exclusive-20260930/project/scenes/prefabs/oak.tscn": {
+      "bytes": 778,
+      "sha256": "11f762a8041d974259adf475754e47eccff1a3ce5aa074f4200f1f5a7111ac9f"
+    },
+    "candidates/round40-exclusive-20260930/project/scenes/prefabs/rock.tscn": {
+      "bytes": 720,
+      "sha256": "6c703a46c607f15cf40d4a11310e224c4d3390e5bdddc9ee237aa0a11e7c26b1"
+    },
+    "candidates/round40-exclusive-20260930/project/scenes/prefabs/bush.tscn": {
+      "bytes": 468,
+      "sha256": "ef9e69d84899a8d92ba00a10f992b741f01d269f50346f18ee0f97b7e828786b"
+    },
+    "candidates/round40-exclusive-20260930/project/scenes/prefabs/pine.tscn": {
+      "bytes": 782,
+      "sha256": "783757ca6518a56e0354b9832598de4bb30f1426f72381bea1d89a46f9eccf58"
+    },
+    "candidates/round40-exclusive-20260930/project/.godot/imported/rock.glb-9fe9ded640b9e8b845c59e36f0f83d1b.scn": {
+      "bytes": 3352,
+      "sha256": "c5c24a6306fe815be434380a116d25e124d5e518b91be541c168a7f1ecd6be86"
+    }
+  },
+  "checks_passed_count": 1974,
+  "groups": [
+    {
+      "path": "World/Vegetation/poplar_-5_-7",
+      "class": "poplar",
+      "class_evidence": "bound mesh + resolved saved prefab + effective metadata/asset_kind; not group name",
+      "mesh_resource": "res://assets/meshes/poplar.res",
+      "mesh_surface_storage_sha256": "9ba00e052d383f0fda67e72ab396a83add0431b743a3ccd66e92fb8871edf999",
+      "model_scene": "res://scenes/prefabs/poplar.tscn",
+      "metadata_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "saved_resource": "res://assets/scatter/Grounded_poplar_-5_-7.res",
+      "saved_resource_sha256": "f9a49058c33afc9ebf93f8f140a1b6cf25fd32cee34083326e3db8de225daf54",
+      "buffer_sha256": "e67751539f99b41028f57237dd366a2666c76ee3890ea4fecb7fca79d78854e5",
+      "saved_property_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "query_count": 2,
+      "design_count": 0,
+      "query_indices": [
+        38,
+        89
+      ],
+      "design_indices": [],
+      "buffer_only_indices": [
+        38,
+        89
+      ],
+      "hit_union_summary_not_a_keepout_polygon": {
+        "min": [
+          -3087.056884765625,
+          25.072998046875,
+          -5128.619140625
+        ],
+        "max": [
+          -3071.940185546875,
+          33.5880012512207,
+          -4870.2216796875
+        ]
+      },
+      "root_y_range": [
+        25.072998046875,
+        25.84600067138672
+      ],
+      "saved_visible": true,
+      "saved_visible_instance_count": -1,
+      "source_collision_rule": "tree capsule r=2.4 h=11, center Y=5.5",
+      "runtime_collision_observed": false,
+      "whole_tile_protected_neighbor": false,
+      "raw_rows_locator": {
+        "array": "groups",
+        "path_match": "World/Vegetation/poplar_-5_-7",
+        "instances_array": "instances_overlapping_query",
+        "index_field": "index"
+      }
+    },
+    {
+      "path": "World/Vegetation/oak_-5_-7",
+      "class": "oak",
+      "class_evidence": "bound mesh + resolved saved prefab + effective metadata/asset_kind; not group name",
+      "mesh_resource": "res://assets/meshes/oak.res",
+      "mesh_surface_storage_sha256": "562669ff8c39dda650a782c63650c187fe9bc672dfc366ab3e0e024a65a74bbf",
+      "model_scene": "res://scenes/prefabs/oak.tscn",
+      "metadata_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "saved_resource": "res://assets/scatter/Grounded_oak_-5_-7.res",
+      "saved_resource_sha256": "6af8d356e1043b4b0fa946d963f3b8ec0fd7be97e058f147d07e6e7246c6572f",
+      "buffer_sha256": "798cbcb9b8f61d2b00382535541b110b97494c598da3577c084be79b1d06741d",
+      "saved_property_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "query_count": 10,
+      "design_count": 0,
+      "query_indices": [
+        37,
+        109,
+        143,
+        151,
+        175,
+        226,
+        235,
+        250,
+        259,
+        308
+      ],
+      "design_indices": [],
+      "buffer_only_indices": [
+        37,
+        109,
+        143,
+        151,
+        175,
+        226,
+        235,
+        250,
+        259,
+        308
+      ],
+      "hit_union_summary_not_a_keepout_polygon": {
+        "min": [
+          -3093.895263671875,
+          22.745849609375,
+          -5193.63671875
+        ],
+        "max": [
+          -3070.25244140625,
+          42.79669189453125,
+          -4766.2900390625
+        ]
+      },
+      "root_y_range": [
+        22.745849609375,
+        36.123291015625
+      ],
+      "saved_visible": true,
+      "saved_visible_instance_count": -1,
+      "source_collision_rule": "tree capsule r=2.4 h=11, center Y=5.5",
+      "runtime_collision_observed": false,
+      "whole_tile_protected_neighbor": false,
+      "raw_rows_locator": {
+        "array": "groups",
+        "path_match": "World/Vegetation/oak_-5_-7",
+        "instances_array": "instances_overlapping_query",
+        "index_field": "index"
+      }
+    },
+    {
+      "path": "World/Vegetation/rock_-5_-7",
+      "class": "rock",
+      "class_evidence": "bound mesh + resolved saved prefab + effective metadata/asset_kind; not group name",
+      "mesh_resource": "res://assets/meshes/rock.res",
+      "mesh_surface_storage_sha256": "ee2d69d2bdbebc4561cb4b27f106304101bf3b4211bc77197651afe064edbfa2",
+      "model_scene": "res://scenes/prefabs/rock.tscn",
+      "metadata_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "saved_resource": "res://assets/scatter/Grounded_rock_-5_-7.res",
+      "saved_resource_sha256": "4ca8f9133488e8bbbb8471bafd4a199b914ee3cad652147f59d6205a3310c453",
+      "buffer_sha256": "2590456257a9ab2706f062ff75e67b5ce35987c8a1015e140ef9a7109176feb9",
+      "saved_property_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "query_count": 2,
+      "design_count": 0,
+      "query_indices": [
+        6,
+        25
+      ],
+      "design_indices": [],
+      "buffer_only_indices": [
+        6,
+        25
+      ],
+      "hit_union_summary_not_a_keepout_polygon": {
+        "min": [
+          -3087.009521484375,
+          22.917499542236328,
+          -5098.52490234375
+        ],
+        "max": [
+          -3068.425048828125,
+          31.962501525878906,
+          -4979.82177734375
+        ]
+      },
+      "root_y_range": [
+        24.760000228881836,
+        25.23200035095215
+      ],
+      "saved_visible": true,
+      "saved_visible_instance_count": -1,
+      "source_collision_rule": "rock first imported prefab mesh faces",
+      "runtime_collision_observed": false,
+      "whole_tile_protected_neighbor": false,
+      "raw_rows_locator": {
+        "array": "groups",
+        "path_match": "World/Vegetation/rock_-5_-7",
+        "instances_array": "instances_overlapping_query",
+        "index_field": "index"
+      }
+    },
+    {
+      "path": "World/Vegetation/poplar_-4_-7",
+      "class": "poplar",
+      "class_evidence": "bound mesh + resolved saved prefab + effective metadata/asset_kind; not group name",
+      "mesh_resource": "res://assets/meshes/poplar.res",
+      "mesh_surface_storage_sha256": "9ba00e052d383f0fda67e72ab396a83add0431b743a3ccd66e92fb8871edf999",
+      "model_scene": "res://scenes/prefabs/poplar.tscn",
+      "metadata_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "saved_resource": "res://assets/scatter/Grounded_poplar_-4_-7.res",
+      "saved_resource_sha256": "3a54d45a36c546a0509873e990e1746b0960d3cebb8a27c81b23010fcf6847e2",
+      "buffer_sha256": "eaf51791a0faadaef8b5d57cc0308ec3af2f50c16731c08b4b4740b7cba96879",
+      "saved_property_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "query_count": 29,
+      "design_count": 21,
+      "query_indices": [
+        1,
+        3,
+        5,
+        7,
+        8,
+        10,
+        11,
+        13,
+        16,
+        17,
+        19,
+        20,
+        22,
+        23,
+        24,
+        26,
+        28,
+        29,
+        30,
+        32,
+        33,
+        34,
+        35,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "design_indices": [
+        3,
+        7,
+        8,
+        10,
+        13,
+        16,
+        17,
+        20,
+        22,
+        23,
+        24,
+        28,
+        29,
+        30,
+        33,
+        34,
+        35,
+        40,
+        41,
+        42,
+        43
+      ],
+      "buffer_only_indices": [
+        1,
+        5,
+        11,
+        19,
+        26,
+        32,
+        38,
+        39
+      ],
+      "hit_union_summary_not_a_keepout_polygon": {
+        "min": [
+          -3073.21630859375,
+          15.782999992370605,
+          -5193.650390625
+        ],
+        "max": [
+          -2622.34326171875,
+          38.92948532104492,
+          -4816.76123046875
+        ]
+      },
+      "root_y_range": [
+        15.782999992370605,
+        29.036376953125
+      ],
+      "saved_visible": true,
+      "saved_visible_instance_count": -1,
+      "source_collision_rule": "tree capsule r=2.4 h=11, center Y=5.5",
+      "runtime_collision_observed": false,
+      "whole_tile_protected_neighbor": false,
+      "raw_rows_locator": {
+        "array": "groups",
+        "path_match": "World/Vegetation/poplar_-4_-7",
+        "instances_array": "instances_overlapping_query",
+        "index_field": "index"
+      }
+    },
+    {
+      "path": "World/Vegetation/oak_-4_-7",
+      "class": "oak",
+      "class_evidence": "bound mesh + resolved saved prefab + effective metadata/asset_kind; not group name",
+      "mesh_resource": "res://assets/meshes/oak.res",
+      "mesh_surface_storage_sha256": "562669ff8c39dda650a782c63650c187fe9bc672dfc366ab3e0e024a65a74bbf",
+      "model_scene": "res://scenes/prefabs/oak.tscn",
+      "metadata_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "saved_resource": "res://assets/scatter/Grounded_oak_-4_-7.res",
+      "saved_resource_sha256": "9071794f2624ecf963792e526650392fedfe943f8df510294cb0fcd9a67b9279",
+      "buffer_sha256": "1f96b59c4af5e1ed7b90a93d6bc2e37a67e810f251f9a8af3245c107ffd924ee",
+      "saved_property_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "query_count": 62,
+      "design_count": 43,
+      "query_indices": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        8,
+        10,
+        11,
+        12,
+        14,
+        18,
+        21,
+        22,
+        24,
+        25,
+        27,
+        31,
+        34,
+        36,
+        37,
+        38,
+        40,
+        44,
+        45,
+        46,
+        48,
+        49,
+        51,
+        52,
+        53,
+        54,
+        55,
+        57,
+        60,
+        61,
+        62,
+        66,
+        68,
+        69,
+        70,
+        71,
+        72,
+        75,
+        77,
+        79,
+        80,
+        82,
+        86,
+        89,
+        93,
+        95,
+        97,
+        98,
+        99,
+        101,
+        102,
+        106,
+        107,
+        109,
+        112,
+        113,
+        114
+      ],
+      "design_indices": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        10,
+        11,
+        12,
+        14,
+        21,
+        22,
+        31,
+        34,
+        36,
+        37,
+        40,
+        45,
+        46,
+        48,
+        52,
+        53,
+        54,
+        57,
+        60,
+        61,
+        68,
+        69,
+        71,
+        72,
+        79,
+        82,
+        86,
+        89,
+        93,
+        95,
+        97,
+        98,
+        99,
+        101,
+        102,
+        106,
+        112,
+        114
+      ],
+      "buffer_only_indices": [
+        8,
+        18,
+        24,
+        25,
+        27,
+        38,
+        44,
+        49,
+        51,
+        55,
+        62,
+        66,
+        70,
+        75,
+        77,
+        80,
+        107,
+        109,
+        113
+      ],
+      "hit_union_summary_not_a_keepout_polygon": {
+        "min": [
+          -3073.84130859375,
+          15.92199993133545,
+          -5203.24609375
+        ],
+        "max": [
+          -2606.05517578125,
+          41.32490539550781,
+          -4792.02734375
+        ]
+      },
+      "root_y_range": [
+        15.92199993133545,
+        34.04150390625
+      ],
+      "saved_visible": true,
+      "saved_visible_instance_count": -1,
+      "source_collision_rule": "tree capsule r=2.4 h=11, center Y=5.5",
+      "runtime_collision_observed": false,
+      "whole_tile_protected_neighbor": false,
+      "raw_rows_locator": {
+        "array": "groups",
+        "path_match": "World/Vegetation/oak_-4_-7",
+        "instances_array": "instances_overlapping_query",
+        "index_field": "index"
+      }
+    },
+    {
+      "path": "World/Vegetation/bush_-4_-7",
+      "class": "bush",
+      "class_evidence": "bound mesh + resolved saved prefab + effective metadata/asset_kind; not group name",
+      "mesh_resource": "res://assets/meshes/bush.res",
+      "mesh_surface_storage_sha256": "839f32d4ccb85c93fe2eaba8c4f285f32844b344fc0c1d1f0d430d8e1afd90f5",
+      "model_scene": "res://scenes/prefabs/bush.tscn",
+      "metadata_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "saved_resource": "res://assets/scatter/Grounded_bush_-4_-7.res",
+      "saved_resource_sha256": "ecd68abb3c344873b0818805a08c6661e582707ec87967ed495fee35bd6d334f",
+      "buffer_sha256": "f1ad05b4efa1fa418389582110f4a7599410d7afc03cfd70db0a2ccaa324112b",
+      "saved_property_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "query_count": 14,
+      "design_count": 12,
+      "query_indices": [
+        2,
+        3,
+        4,
+        6,
+        8,
+        10,
+        11,
+        13,
+        15,
+        17,
+        19,
+        20,
+        22,
+        23
+      ],
+      "design_indices": [
+        2,
+        3,
+        4,
+        8,
+        10,
+        11,
+        15,
+        17,
+        19,
+        20,
+        22,
+        23
+      ],
+      "buffer_only_indices": [
+        6,
+        13
+      ],
+      "hit_union_summary_not_a_keepout_polygon": {
+        "min": [
+          -3064.3896484375,
+          14.373000144958496,
+          -5193.08349609375
+        ],
+        "max": [
+          -2335.118896484375,
+          52.67271423339844,
+          -4656.5341796875
+        ]
+      },
+      "root_y_range": [
+        15.0,
+        49.505615234375
+      ],
+      "saved_visible": true,
+      "saved_visible_instance_count": -1,
+      "source_collision_rule": "none (bush skip)",
+      "runtime_collision_observed": false,
+      "whole_tile_protected_neighbor": false,
+      "raw_rows_locator": {
+        "array": "groups",
+        "path_match": "World/Vegetation/bush_-4_-7",
+        "instances_array": "instances_overlapping_query",
+        "index_field": "index"
+      }
+    },
+    {
+      "path": "World/Vegetation/rock_-4_-7",
+      "class": "rock",
+      "class_evidence": "bound mesh + resolved saved prefab + effective metadata/asset_kind; not group name",
+      "mesh_resource": "res://assets/meshes/rock.res",
+      "mesh_surface_storage_sha256": "ee2d69d2bdbebc4561cb4b27f106304101bf3b4211bc77197651afe064edbfa2",
+      "model_scene": "res://scenes/prefabs/rock.tscn",
+      "metadata_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "saved_resource": "res://assets/scatter/Grounded_rock_-4_-7.res",
+      "saved_resource_sha256": "28d06d60a04f57556bf215a5f49654367298da70354b1e98320776edf2ecf20b",
+      "buffer_sha256": "27f061ea98182b60272f8db3d0a1587a7615924d6797189d7a0c7704db40c7f5",
+      "saved_property_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "query_count": 41,
+      "design_count": 36,
+      "query_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        11,
+        12,
+        13,
+        14,
+        15,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        42,
+        43,
+        44,
+        45
+      ],
+      "design_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        11,
+        12,
+        13,
+        14,
+        15,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        32,
+        33,
+        34,
+        38,
+        39,
+        40,
+        42,
+        44,
+        45
+      ],
+      "buffer_only_indices": [
+        30,
+        35,
+        36,
+        37,
+        43
+      ],
+      "hit_union_summary_not_a_keepout_polygon": {
+        "min": [
+          -3053.07421875,
+          13.284000396728516,
+          -5201.4541015625
+        ],
+        "max": [
+          -2342.591552734375,
+          45.139217376708984,
+          -4607.2275390625
+        ]
+      },
+      "root_y_range": [
+        15.0,
+        39.203369140625
+      ],
+      "saved_visible": true,
+      "saved_visible_instance_count": -1,
+      "source_collision_rule": "rock first imported prefab mesh faces",
+      "runtime_collision_observed": false,
+      "whole_tile_protected_neighbor": false,
+      "raw_rows_locator": {
+        "array": "groups",
+        "path_match": "World/Vegetation/rock_-4_-7",
+        "instances_array": "instances_overlapping_query",
+        "index_field": "index"
+      }
+    },
+    {
+      "path": "World/Vegetation/oak_-3_-7",
+      "class": "oak",
+      "class_evidence": "bound mesh + resolved saved prefab + effective metadata/asset_kind; not group name",
+      "mesh_resource": "res://assets/meshes/oak.res",
+      "mesh_surface_storage_sha256": "562669ff8c39dda650a782c63650c187fe9bc672dfc366ab3e0e024a65a74bbf",
+      "model_scene": "res://scenes/prefabs/oak.tscn",
+      "metadata_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "saved_resource": "res://assets/scatter/Grounded_oak_-3_-7.res",
+      "saved_resource_sha256": "ac713b4f635ae92af637122b780d972d57751c89f4973d56435f877a178c8a72",
+      "buffer_sha256": "42bdbfd666decfd8ebda5df7cc0b37f9bdddb2d89583c806d752c2bb6c2cf770",
+      "saved_property_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "query_count": 2,
+      "design_count": 0,
+      "query_indices": [
+        4,
+        75
+      ],
+      "design_indices": [],
+      "buffer_only_indices": [
+        4,
+        75
+      ],
+      "hit_union_summary_not_a_keepout_polygon": {
+        "min": [
+          -2032.7247314453125,
+          15.0,
+          -5082.88134765625
+        ],
+        "max": [
+          -2000.309326171875,
+          21.64900016784668,
+          -5043.08447265625
+        ]
+      },
+      "root_y_range": [
+        15.0,
+        15.0
+      ],
+      "saved_visible": true,
+      "saved_visible_instance_count": -1,
+      "source_collision_rule": "tree capsule r=2.4 h=11, center Y=5.5",
+      "runtime_collision_observed": false,
+      "whole_tile_protected_neighbor": false,
+      "raw_rows_locator": {
+        "array": "groups",
+        "path_match": "World/Vegetation/oak_-3_-7",
+        "instances_array": "instances_overlapping_query",
+        "index_field": "index"
+      }
+    },
+    {
+      "path": "World/Vegetation/poplar_-3_-7",
+      "class": "poplar",
+      "class_evidence": "bound mesh + resolved saved prefab + effective metadata/asset_kind; not group name",
+      "mesh_resource": "res://assets/meshes/poplar.res",
+      "mesh_surface_storage_sha256": "9ba00e052d383f0fda67e72ab396a83add0431b743a3ccd66e92fb8871edf999",
+      "model_scene": "res://scenes/prefabs/poplar.tscn",
+      "metadata_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "saved_resource": "res://assets/scatter/Grounded_poplar_-3_-7.res",
+      "saved_resource_sha256": "05d36bda9000ce98810cd23b018fc5634b926bcd17b3b42d0dfd617dda2ed4e3",
+      "buffer_sha256": "6483e51aa992d5e485d4cc166b2573af1b7a2b7d911563a28df5bf0aeda243d6",
+      "saved_property_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "query_count": 1,
+      "design_count": 0,
+      "query_indices": [
+        14
+      ],
+      "design_indices": [],
+      "buffer_only_indices": [
+        14
+      ],
+      "hit_union_summary_not_a_keepout_polygon": {
+        "min": [
+          -2023.467529296875,
+          15.0,
+          -5033.42578125
+        ],
+        "max": [
+          -2019.1383056640625,
+          25.13599967956543,
+          -5029.16796875
+        ]
+      },
+      "root_y_range": [
+        15.0,
+        15.0
+      ],
+      "saved_visible": true,
+      "saved_visible_instance_count": -1,
+      "source_collision_rule": "tree capsule r=2.4 h=11, center Y=5.5",
+      "runtime_collision_observed": false,
+      "whole_tile_protected_neighbor": false,
+      "raw_rows_locator": {
+        "array": "groups",
+        "path_match": "World/Vegetation/poplar_-3_-7",
+        "instances_array": "instances_overlapping_query",
+        "index_field": "index"
+      }
+    },
+    {
+      "path": "World/Vegetation/bush_-3_-7",
+      "class": "bush",
+      "class_evidence": "bound mesh + resolved saved prefab + effective metadata/asset_kind; not group name",
+      "mesh_resource": "res://assets/meshes/bush.res",
+      "mesh_surface_storage_sha256": "839f32d4ccb85c93fe2eaba8c4f285f32844b344fc0c1d1f0d430d8e1afd90f5",
+      "model_scene": "res://scenes/prefabs/bush.tscn",
+      "metadata_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "saved_resource": "res://assets/scatter/Grounded_bush_-3_-7.res",
+      "saved_resource_sha256": "859563506ef5fb9c70e92d55f2ce3dac56c2a53e5cbbe2a48b027aa535e614f6",
+      "buffer_sha256": "925b37d03a6e12137fe5c38b4a53f4a249b1b787a4088435d57ab0282fca9251",
+      "saved_property_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "query_count": 9,
+      "design_count": 6,
+      "query_indices": [
+        0,
+        7,
+        10,
+        11,
+        12,
+        13,
+        15,
+        18,
+        20
+      ],
+      "design_indices": [
+        10,
+        11,
+        12,
+        13,
+        15,
+        20
+      ],
+      "buffer_only_indices": [
+        0,
+        7,
+        18
+      ],
+      "hit_union_summary_not_a_keepout_polygon": {
+        "min": [
+          -2297.285400390625,
+          14.324999809265137,
+          -5192.94970703125
+        ],
+        "max": [
+          -2009.804443359375,
+          18.645000457763672,
+          -4743.943359375
+        ]
+      },
+      "root_y_range": [
+        15.0,
+        15.0
+      ],
+      "saved_visible": true,
+      "saved_visible_instance_count": -1,
+      "source_collision_rule": "none (bush skip)",
+      "runtime_collision_observed": false,
+      "whole_tile_protected_neighbor": false,
+      "raw_rows_locator": {
+        "array": "groups",
+        "path_match": "World/Vegetation/bush_-3_-7",
+        "instances_array": "instances_overlapping_query",
+        "index_field": "index"
+      }
+    },
+    {
+      "path": "World/Vegetation/rock_-3_-7",
+      "class": "rock",
+      "class_evidence": "bound mesh + resolved saved prefab + effective metadata/asset_kind; not group name",
+      "mesh_resource": "res://assets/meshes/rock.res",
+      "mesh_surface_storage_sha256": "ee2d69d2bdbebc4561cb4b27f106304101bf3b4211bc77197651afe064edbfa2",
+      "model_scene": "res://scenes/prefabs/rock.tscn",
+      "metadata_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "saved_resource": "res://assets/scatter/Grounded_rock_-3_-7.res",
+      "saved_resource_sha256": "c5086e271a658383742e71e3187b31677ce6e6a6002eac5b9ce74f725bfde02a",
+      "buffer_sha256": "541b5fc8e4552b02ca7f88e23f5645bce59c88328007b40d0aba6da9971457dc",
+      "saved_property_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "query_count": 17,
+      "design_count": 14,
+      "query_indices": [
+        1,
+        2,
+        10,
+        11,
+        14,
+        18,
+        19,
+        21,
+        22,
+        23,
+        26,
+        29,
+        32,
+        34,
+        37,
+        38,
+        39
+      ],
+      "design_indices": [
+        1,
+        2,
+        10,
+        11,
+        14,
+        18,
+        19,
+        21,
+        22,
+        23,
+        26,
+        32,
+        34,
+        39
+      ],
+      "buffer_only_indices": [
+        29,
+        37,
+        38
+      ],
+      "hit_union_summary_not_a_keepout_polygon": {
+        "min": [
+          -2299.811767578125,
+          13.14210033416748,
+          -5131.13720703125
+        ],
+        "max": [
+          -1998.3004150390625,
+          22.2627010345459,
+          -4628.12841796875
+        ]
+      },
+      "root_y_range": [
+        15.0,
+        15.0
+      ],
+      "saved_visible": true,
+      "saved_visible_instance_count": -1,
+      "source_collision_rule": "rock first imported prefab mesh faces",
+      "runtime_collision_observed": false,
+      "whole_tile_protected_neighbor": false,
+      "raw_rows_locator": {
+        "array": "groups",
+        "path_match": "World/Vegetation/rock_-3_-7",
+        "instances_array": "instances_overlapping_query",
+        "index_field": "index"
+      }
+    },
+    {
+      "path": "World/Vegetation/rock_-5_-6",
+      "class": "rock",
+      "class_evidence": "bound mesh + resolved saved prefab + effective metadata/asset_kind; not group name",
+      "mesh_resource": "res://assets/meshes/rock.res",
+      "mesh_surface_storage_sha256": "ee2d69d2bdbebc4561cb4b27f106304101bf3b4211bc77197651afe064edbfa2",
+      "model_scene": "res://scenes/prefabs/rock.tscn",
+      "metadata_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "saved_resource": "res://scenes/candidate53d-west/Game53dWest.tscn::MultiMesh_88atd",
+      "saved_resource_sha256": "6ec57b72a831d6fa906a8d866c339909de55c9c42297a038dcd429b18d0c2b18",
+      "buffer_sha256": "9e62bf91a9228f8f58a24118a1e4148c1bcd633ceaceb2ce4aa9222b7182642b",
+      "saved_property_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "query_count": 2,
+      "design_count": 0,
+      "query_indices": [
+        5,
+        22
+      ],
+      "design_indices": [],
+      "buffer_only_indices": [
+        5,
+        22
+      ],
+      "hit_union_summary_not_a_keepout_polygon": {
+        "min": [
+          -3094.385498046875,
+          13.344449043273926,
+          -4315.7568359375
+        ],
+        "max": [
+          -3067.030517578125,
+          22.611364364624023,
+          -4257.771484375
+        ]
+      },
+      "root_y_range": [
+        14.733749389648438,
+        15.50776481628418
+      ],
+      "saved_visible": true,
+      "saved_visible_instance_count": -1,
+      "source_collision_rule": "rock first imported prefab mesh faces",
+      "runtime_collision_observed": false,
+      "whole_tile_protected_neighbor": false,
+      "raw_rows_locator": {
+        "array": "groups",
+        "path_match": "World/Vegetation/rock_-5_-6",
+        "instances_array": "instances_overlapping_query",
+        "index_field": "index"
+      }
+    },
+    {
+      "path": "World/Vegetation/oak_-4_-6",
+      "class": "oak",
+      "class_evidence": "bound mesh + resolved saved prefab + effective metadata/asset_kind; not group name",
+      "mesh_resource": "res://assets/meshes/oak.res",
+      "mesh_surface_storage_sha256": "562669ff8c39dda650a782c63650c187fe9bc672dfc366ab3e0e024a65a74bbf",
+      "model_scene": "res://scenes/prefabs/oak.tscn",
+      "metadata_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "saved_resource": "res://scenes/candidate53d-west/Game53dWest.tscn::MultiMesh_5tp7s",
+      "saved_resource_sha256": "6ec57b72a831d6fa906a8d866c339909de55c9c42297a038dcd429b18d0c2b18",
+      "buffer_sha256": "872fa6e673372d1b3362ecfa7264e8e6a8d89eb7546d3acefb5b1ddb120bad68",
+      "saved_property_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "query_count": 5,
+      "design_count": 5,
+      "query_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "design_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "buffer_only_indices": [],
+      "hit_union_summary_not_a_keepout_polygon": {
+        "min": [
+          -2936.016357421875,
+          15.0,
+          -4445.03271484375
+        ],
+        "max": [
+          -2485.0107421875,
+          62.39360046386719,
+          -4130.583984375
+        ]
+      },
+      "root_y_range": [
+        15.0,
+        53.63399887084961
+      ],
+      "saved_visible": true,
+      "saved_visible_instance_count": -1,
+      "source_collision_rule": "tree capsule r=2.4 h=11, center Y=5.5",
+      "runtime_collision_observed": false,
+      "whole_tile_protected_neighbor": false,
+      "raw_rows_locator": {
+        "array": "groups",
+        "path_match": "World/Vegetation/oak_-4_-6",
+        "instances_array": "instances_overlapping_query",
+        "index_field": "index"
+      }
+    },
+    {
+      "path": "World/Vegetation/bush_-4_-6",
+      "class": "bush",
+      "class_evidence": "bound mesh + resolved saved prefab + effective metadata/asset_kind; not group name",
+      "mesh_resource": "res://assets/meshes/bush.res",
+      "mesh_surface_storage_sha256": "839f32d4ccb85c93fe2eaba8c4f285f32844b344fc0c1d1f0d430d8e1afd90f5",
+      "model_scene": "res://scenes/prefabs/bush.tscn",
+      "metadata_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "saved_resource": "res://scenes/candidate53d-west/Game53dWest.tscn::MultiMesh_anrd6",
+      "saved_resource_sha256": "6ec57b72a831d6fa906a8d866c339909de55c9c42297a038dcd429b18d0c2b18",
+      "buffer_sha256": "bf21890e71309a4ea4478eafb57be12453d96284fdf40d1f6c6176a05b8de5ec",
+      "saved_property_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "query_count": 24,
+      "design_count": 24,
+      "query_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "design_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "buffer_only_indices": [],
+      "hit_union_summary_not_a_keepout_polygon": {
+        "min": [
+          -3024.010498046875,
+          14.243026733398438,
+          -4564.25927734375
+        ],
+        "max": [
+          -2307.220947265625,
+          257.25701904296875,
+          -3863.439697265625
+        ]
+      },
+      "root_y_range": [
+        14.890874862670898,
+        255.58030700683594
+      ],
+      "saved_visible": true,
+      "saved_visible_instance_count": -1,
+      "source_collision_rule": "none (bush skip)",
+      "runtime_collision_observed": false,
+      "whole_tile_protected_neighbor": false,
+      "raw_rows_locator": {
+        "array": "groups",
+        "path_match": "World/Vegetation/bush_-4_-6",
+        "instances_array": "instances_overlapping_query",
+        "index_field": "index"
+      }
+    },
+    {
+      "path": "World/Vegetation/rock_-4_-6",
+      "class": "rock",
+      "class_evidence": "bound mesh + resolved saved prefab + effective metadata/asset_kind; not group name",
+      "mesh_resource": "res://assets/meshes/rock.res",
+      "mesh_surface_storage_sha256": "ee2d69d2bdbebc4561cb4b27f106304101bf3b4211bc77197651afe064edbfa2",
+      "model_scene": "res://scenes/prefabs/rock.tscn",
+      "metadata_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "saved_resource": "res://scenes/candidate53d-west/Game53dWest.tscn::MultiMesh_ninny",
+      "saved_resource_sha256": "6ec57b72a831d6fa906a8d866c339909de55c9c42297a038dcd429b18d0c2b18",
+      "buffer_sha256": "e7aa05f1551088adf5b383828c647d6df0f738b24c7736c9bc259bd9393123ee",
+      "saved_property_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "query_count": 46,
+      "design_count": 44,
+      "query_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45
+      ],
+      "design_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        45
+      ],
+      "buffer_only_indices": [
+        34,
+        44
+      ],
+      "hit_union_summary_not_a_keepout_polygon": {
+        "min": [
+          -3071.76025390625,
+          12.24329948425293,
+          -4606.7412109375
+        ],
+        "max": [
+          -2302.02294921875,
+          244.18634033203125,
+          -3845.176513671875
+        ]
+      },
+      "root_y_range": [
+        14.0,
+        240.47543334960938
+      ],
+      "saved_visible": true,
+      "saved_visible_instance_count": -1,
+      "source_collision_rule": "rock first imported prefab mesh faces",
+      "runtime_collision_observed": false,
+      "whole_tile_protected_neighbor": false,
+      "raw_rows_locator": {
+        "array": "groups",
+        "path_match": "World/Vegetation/rock_-4_-6",
+        "instances_array": "instances_overlapping_query",
+        "index_field": "index"
+      }
+    },
+    {
+      "path": "World/Vegetation/poplar_-3_-6",
+      "class": "poplar",
+      "class_evidence": "bound mesh + resolved saved prefab + effective metadata/asset_kind; not group name",
+      "mesh_resource": "res://assets/meshes/poplar.res",
+      "mesh_surface_storage_sha256": "9ba00e052d383f0fda67e72ab396a83add0431b743a3ccd66e92fb8871edf999",
+      "model_scene": "res://scenes/prefabs/poplar.tscn",
+      "metadata_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "saved_resource": "res://scenes/candidate53d-west/Game53dWest.tscn::MultiMesh_mwomb",
+      "saved_resource_sha256": "6ec57b72a831d6fa906a8d866c339909de55c9c42297a038dcd429b18d0c2b18",
+      "buffer_sha256": "d015402c3a5c17d485c9fa84869e2e2ea3b518050c26943fb6aa1e9e8473d09f",
+      "saved_property_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "query_count": 1,
+      "design_count": 1,
+      "query_indices": [
+        0
+      ],
+      "design_indices": [
+        0
+      ],
+      "buffer_only_indices": [],
+      "hit_union_summary_not_a_keepout_polygon": {
+        "min": [
+          -2105.533203125,
+          15.0,
+          -4546.01318359375
+        ],
+        "max": [
+          -2100.697265625,
+          26.172000885009766,
+          -4541.1162109375
+        ]
+      },
+      "root_y_range": [
+        15.0,
+        15.0
+      ],
+      "saved_visible": true,
+      "saved_visible_instance_count": -1,
+      "source_collision_rule": "tree capsule r=2.4 h=11, center Y=5.5",
+      "runtime_collision_observed": false,
+      "whole_tile_protected_neighbor": false,
+      "raw_rows_locator": {
+        "array": "groups",
+        "path_match": "World/Vegetation/poplar_-3_-6",
+        "instances_array": "instances_overlapping_query",
+        "index_field": "index"
+      }
+    },
+    {
+      "path": "World/Vegetation/bush_-3_-6",
+      "class": "bush",
+      "class_evidence": "bound mesh + resolved saved prefab + effective metadata/asset_kind; not group name",
+      "mesh_resource": "res://assets/meshes/bush.res",
+      "mesh_surface_storage_sha256": "839f32d4ccb85c93fe2eaba8c4f285f32844b344fc0c1d1f0d430d8e1afd90f5",
+      "model_scene": "res://scenes/prefabs/bush.tscn",
+      "metadata_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "saved_resource": "res://scenes/candidate53d-west/Game53dWest.tscn::MultiMesh_inhl0",
+      "saved_resource_sha256": "6ec57b72a831d6fa906a8d866c339909de55c9c42297a038dcd429b18d0c2b18",
+      "buffer_sha256": "69f509d6805075186552bcc92700160543e85ae543aba4eb06c913d97bea32c5",
+      "saved_property_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "query_count": 8,
+      "design_count": 7,
+      "query_indices": [
+        2,
+        5,
+        9,
+        12,
+        13,
+        16,
+        20,
+        23
+      ],
+      "design_indices": [
+        2,
+        5,
+        9,
+        12,
+        13,
+        16,
+        20
+      ],
+      "buffer_only_indices": [
+        23
+      ],
+      "hit_union_summary_not_a_keepout_polygon": {
+        "min": [
+          -2294.764404296875,
+          14.375,
+          -4601.97265625
+        ],
+        "max": [
+          -2008.75830078125,
+          259.86798095703125,
+          -3869.286376953125
+        ]
+      },
+      "root_y_range": [
+        15.0,
+        255.43997192382812
+      ],
+      "saved_visible": true,
+      "saved_visible_instance_count": -1,
+      "source_collision_rule": "none (bush skip)",
+      "runtime_collision_observed": false,
+      "whole_tile_protected_neighbor": false,
+      "raw_rows_locator": {
+        "array": "groups",
+        "path_match": "World/Vegetation/bush_-3_-6",
+        "instances_array": "instances_overlapping_query",
+        "index_field": "index"
+      }
+    },
+    {
+      "path": "World/Vegetation/rock_-3_-6",
+      "class": "rock",
+      "class_evidence": "bound mesh + resolved saved prefab + effective metadata/asset_kind; not group name",
+      "mesh_resource": "res://assets/meshes/rock.res",
+      "mesh_surface_storage_sha256": "ee2d69d2bdbebc4561cb4b27f106304101bf3b4211bc77197651afe064edbfa2",
+      "model_scene": "res://scenes/prefabs/rock.tscn",
+      "metadata_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "saved_resource": "res://scenes/candidate53d-west/Game53dWest.tscn::MultiMesh_tvug1",
+      "saved_resource_sha256": "6ec57b72a831d6fa906a8d866c339909de55c9c42297a038dcd429b18d0c2b18",
+      "buffer_sha256": "57e21d8dafa0787dffee94a6cc3d25133ffb80d8592ae99559442577644e2830",
+      "saved_property_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "query_count": 23,
+      "design_count": 23,
+      "query_indices": [
+        1,
+        5,
+        7,
+        10,
+        11,
+        12,
+        13,
+        16,
+        19,
+        22,
+        23,
+        25,
+        27,
+        28,
+        29,
+        32,
+        33,
+        36,
+        37,
+        39,
+        40,
+        43,
+        44
+      ],
+      "design_indices": [
+        1,
+        5,
+        7,
+        10,
+        11,
+        12,
+        13,
+        16,
+        19,
+        22,
+        23,
+        25,
+        27,
+        28,
+        29,
+        32,
+        33,
+        36,
+        37,
+        39,
+        40,
+        43,
+        44
+      ],
+      "buffer_only_indices": [],
+      "hit_union_summary_not_a_keepout_polygon": {
+        "min": [
+          -2307.9560546875,
+          13.847200393676758,
+          -4582.1279296875
+        ],
+        "max": [
+          -2085.100830078125,
+          264.7210388183594,
+          -3868.9931640625
+        ]
+      },
+      "root_y_range": [
+        15.0,
+        257.97003173828125
+      ],
+      "saved_visible": true,
+      "saved_visible_instance_count": -1,
+      "source_collision_rule": "rock first imported prefab mesh faces",
+      "runtime_collision_observed": false,
+      "whole_tile_protected_neighbor": false,
+      "raw_rows_locator": {
+        "array": "groups",
+        "path_match": "World/Vegetation/rock_-3_-6",
+        "instances_array": "instances_overlapping_query",
+        "index_field": "index"
+      }
+    },
+    {
+      "path": "World/Vegetation/bush_-5_-5",
+      "class": "bush",
+      "class_evidence": "bound mesh + resolved saved prefab + effective metadata/asset_kind; not group name",
+      "mesh_resource": "res://assets/meshes/bush.res",
+      "mesh_surface_storage_sha256": "839f32d4ccb85c93fe2eaba8c4f285f32844b344fc0c1d1f0d430d8e1afd90f5",
+      "model_scene": "res://scenes/prefabs/bush.tscn",
+      "metadata_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "saved_resource": "res://assets/coast61/bush_-5_-5.res",
+      "saved_resource_sha256": "28f4b15c34cead149d7c594ec78dd8d83c4a837ff6405ee0d79c36e6d34f311e",
+      "buffer_sha256": "884cebd9d3a88000c29f9e2b7a13220e98e95ba51b2e7a0a18ad8bfaadb598eb",
+      "saved_property_source": "res://scenes/candidate61-coast/Game61Coast.tscn",
+      "query_count": 1,
+      "design_count": 0,
+      "query_indices": [
+        3
+      ],
+      "design_indices": [],
+      "buffer_only_indices": [
+        3
+      ],
+      "hit_union_summary_not_a_keepout_polygon": {
+        "min": [
+          -3086.08740234375,
+          78.56652069091797,
+          -3803.4677734375
+        ],
+        "max": [
+          -3082.49462890625,
+          81.33452606201172,
+          -3799.357666015625
+        ]
+      },
+      "root_y_range": [
+        78.9990234375,
+        78.9990234375
+      ],
+      "saved_visible": true,
+      "saved_visible_instance_count": -1,
+      "source_collision_rule": "none (bush skip)",
+      "runtime_collision_observed": false,
+      "whole_tile_protected_neighbor": true,
+      "raw_rows_locator": {
+        "array": "groups",
+        "path_match": "World/Vegetation/bush_-5_-5",
+        "instances_array": "instances_overlapping_query",
+        "index_field": "index"
+      }
+    },
+    {
+      "path": "World/Vegetation/bush_-4_-5",
+      "class": "bush",
+      "class_evidence": "bound mesh + resolved saved prefab + effective metadata/asset_kind; not group name",
+      "mesh_resource": "res://assets/meshes/bush.res",
+      "mesh_surface_storage_sha256": "839f32d4ccb85c93fe2eaba8c4f285f32844b344fc0c1d1f0d430d8e1afd90f5",
+      "model_scene": "res://scenes/prefabs/bush.tscn",
+      "metadata_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "saved_resource": "res://scenes/candidate53d-west/Game53dWest.tscn::MultiMesh_5c3km",
+      "saved_resource_sha256": "6ec57b72a831d6fa906a8d866c339909de55c9c42297a038dcd429b18d0c2b18",
+      "buffer_sha256": "706b5d6576fd41723ca0e0bdd8b36ee430a13a45785d13cec7fa423032ab1e2b",
+      "saved_property_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "query_count": 4,
+      "design_count": 2,
+      "query_indices": [
+        8,
+        9,
+        12,
+        16
+      ],
+      "design_indices": [
+        8,
+        12
+      ],
+      "buffer_only_indices": [
+        9,
+        16
+      ],
+      "hit_union_summary_not_a_keepout_polygon": {
+        "min": [
+          -2855.341552734375,
+          106.4856185913086,
+          -3810.28125
+        ],
+        "max": [
+          -2738.892578125,
+          144.9488067626953,
+          -3745.798828125
+        ]
+      },
+      "root_y_range": [
+        107.04412078857422,
+        141.64671325683594
+      ],
+      "saved_visible": true,
+      "saved_visible_instance_count": -1,
+      "source_collision_rule": "none (bush skip)",
+      "runtime_collision_observed": false,
+      "whole_tile_protected_neighbor": false,
+      "raw_rows_locator": {
+        "array": "groups",
+        "path_match": "World/Vegetation/bush_-4_-5",
+        "instances_array": "instances_overlapping_query",
+        "index_field": "index"
+      }
+    },
+    {
+      "path": "World/Vegetation/rock_-4_-5",
+      "class": "rock",
+      "class_evidence": "bound mesh + resolved saved prefab + effective metadata/asset_kind; not group name",
+      "mesh_resource": "res://assets/meshes/rock.res",
+      "mesh_surface_storage_sha256": "ee2d69d2bdbebc4561cb4b27f106304101bf3b4211bc77197651afe064edbfa2",
+      "model_scene": "res://scenes/prefabs/rock.tscn",
+      "metadata_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "saved_resource": "res://scenes/candidate53d-west/Game53dWest.tscn::MultiMesh_bdcvl",
+      "saved_resource_sha256": "6ec57b72a831d6fa906a8d866c339909de55c9c42297a038dcd429b18d0c2b18",
+      "buffer_sha256": "690496eefde156ca36286d292d7fb76c5761a04d63a439f58a4645ef521b76d9",
+      "saved_property_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "query_count": 8,
+      "design_count": 5,
+      "query_indices": [
+        1,
+        3,
+        4,
+        9,
+        20,
+        28,
+        35,
+        43
+      ],
+      "design_indices": [
+        1,
+        4,
+        9,
+        28,
+        43
+      ],
+      "buffer_only_indices": [
+        3,
+        20,
+        35
+      ],
+      "hit_union_summary_not_a_keepout_polygon": {
+        "min": [
+          -2934.258544921875,
+          101.0105972290039,
+          -3825.58251953125
+        ],
+        "max": [
+          -2432.153564453125,
+          160.23863220214844,
+          -3734.826904296875
+        ]
+      },
+      "root_y_range": [
+        102.93779754638672,
+        154.59703063964844
+      ],
+      "saved_visible": true,
+      "saved_visible_instance_count": -1,
+      "source_collision_rule": "rock first imported prefab mesh faces",
+      "runtime_collision_observed": false,
+      "whole_tile_protected_neighbor": false,
+      "raw_rows_locator": {
+        "array": "groups",
+        "path_match": "World/Vegetation/rock_-4_-5",
+        "instances_array": "instances_overlapping_query",
+        "index_field": "index"
+      }
+    },
+    {
+      "path": "World/Vegetation/bush_-3_-5",
+      "class": "bush",
+      "class_evidence": "bound mesh + resolved saved prefab + effective metadata/asset_kind; not group name",
+      "mesh_resource": "res://assets/meshes/bush.res",
+      "mesh_surface_storage_sha256": "839f32d4ccb85c93fe2eaba8c4f285f32844b344fc0c1d1f0d430d8e1afd90f5",
+      "model_scene": "res://scenes/prefabs/bush.tscn",
+      "metadata_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "saved_resource": "res://scenes/candidate53d-west/Game53dWest.tscn::MultiMesh_wpj54",
+      "saved_resource_sha256": "6ec57b72a831d6fa906a8d866c339909de55c9c42297a038dcd429b18d0c2b18",
+      "buffer_sha256": "725b86426782f1cdc50c26a122dedda8b377ecbc8b0a371abfaaaacfb63269da",
+      "saved_property_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "query_count": 2,
+      "design_count": 1,
+      "query_indices": [
+        5,
+        21
+      ],
+      "design_indices": [
+        21
+      ],
+      "buffer_only_indices": [
+        5
+      ],
+      "hit_union_summary_not_a_keepout_polygon": {
+        "min": [
+          -2209.343017578125,
+          135.14259338378906,
+          -3819.9453125
+        ],
+        "max": [
+          -2081.95556640625,
+          192.75588989257812,
+          -3736.678955078125
+        ]
+      },
+      "root_y_range": [
+        135.82708740234375,
+        189.33499145507812
+      ],
+      "saved_visible": true,
+      "saved_visible_instance_count": -1,
+      "source_collision_rule": "none (bush skip)",
+      "runtime_collision_observed": false,
+      "whole_tile_protected_neighbor": false,
+      "raw_rows_locator": {
+        "array": "groups",
+        "path_match": "World/Vegetation/bush_-3_-5",
+        "instances_array": "instances_overlapping_query",
+        "index_field": "index"
+      }
+    },
+    {
+      "path": "World/Vegetation/rock_-3_-5",
+      "class": "rock",
+      "class_evidence": "bound mesh + resolved saved prefab + effective metadata/asset_kind; not group name",
+      "mesh_resource": "res://assets/meshes/rock.res",
+      "mesh_surface_storage_sha256": "ee2d69d2bdbebc4561cb4b27f106304101bf3b4211bc77197651afe064edbfa2",
+      "model_scene": "res://scenes/prefabs/rock.tscn",
+      "metadata_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "saved_resource": "res://scenes/candidate53d-west/Game53dWest.tscn::MultiMesh_j8p3f",
+      "saved_resource_sha256": "6ec57b72a831d6fa906a8d866c339909de55c9c42297a038dcd429b18d0c2b18",
+      "buffer_sha256": "0cf96b2b44fc319f23a407e4a72366fbf5d7819f5f7f245c573b430c7c036321",
+      "saved_property_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "query_count": 3,
+      "design_count": 1,
+      "query_indices": [
+        19,
+        37,
+        44
+      ],
+      "design_indices": [
+        19
+      ],
+      "buffer_only_indices": [
+        37,
+        44
+      ],
+      "hit_union_summary_not_a_keepout_polygon": {
+        "min": [
+          -2232.1513671875,
+          122.13956451416016,
+          -3789.02294921875
+        ],
+        "max": [
+          -2091.744873046875,
+          165.85311889648438,
+          -3723.3427734375
+        ]
+      },
+      "root_y_range": [
+        123.43646240234375,
+        159.33001708984375
+      ],
+      "saved_visible": true,
+      "saved_visible_instance_count": -1,
+      "source_collision_rule": "rock first imported prefab mesh faces",
+      "runtime_collision_observed": false,
+      "whole_tile_protected_neighbor": false,
+      "raw_rows_locator": {
+        "array": "groups",
+        "path_match": "World/Vegetation/rock_-3_-5",
+        "instances_array": "instances_overlapping_query",
+        "index_field": "index"
+      }
+    },
+    {
+      "path": "World/Vegetation/oak_-5_-6_CoastalPines36b",
+      "class": "pine",
+      "class_evidence": "bound mesh + resolved saved prefab + effective metadata/asset_kind; not group name",
+      "mesh_resource": "res://scenes/candidate53d-west/Game53dWest.tscn::ArrayMesh_8qhtw",
+      "mesh_surface_storage_sha256": "b10553bb366c5eabb6b4ce9b7bf721b514eada62e1494cd9ffb6bcedb1286708",
+      "model_scene": "res://scenes/prefabs/pine.tscn",
+      "metadata_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "saved_resource": "res://scenes/candidate53d-west/Game53dWest.tscn::MultiMesh_hddjp",
+      "saved_resource_sha256": "6ec57b72a831d6fa906a8d866c339909de55c9c42297a038dcd429b18d0c2b18",
+      "buffer_sha256": "dbb73e1ab66bc92df232338ee30f5d082c87c32ba03737b2869e4449eb546d5a",
+      "saved_property_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "query_count": 3,
+      "design_count": 0,
+      "query_indices": [
+        0,
+        48,
+        50
+      ],
+      "design_indices": [],
+      "buffer_only_indices": [
+        0,
+        48,
+        50
+      ],
+      "hit_union_summary_not_a_keepout_polygon": {
+        "min": [
+          -3088.839599609375,
+          36.479736328125,
+          -3901.468994140625
+        ],
+        "max": [
+          -3072.192138671875,
+          84.0009994506836,
+          -3841.605224609375
+        ]
+      },
+      "root_y_range": [
+        36.479736328125,
+        76.0281982421875
+      ],
+      "saved_visible": true,
+      "saved_visible_instance_count": -1,
+      "source_collision_rule": "tree capsule r=2.4 h=11, center Y=5.5",
+      "runtime_collision_observed": false,
+      "whole_tile_protected_neighbor": false,
+      "raw_rows_locator": {
+        "array": "groups",
+        "path_match": "World/Vegetation/oak_-5_-6_CoastalPines36b",
+        "instances_array": "instances_overlapping_query",
+        "index_field": "index"
+      }
+    },
+    {
+      "path": "World/Vegetation/poplar_-5_-6_CoastalPines36b",
+      "class": "pine",
+      "class_evidence": "bound mesh + resolved saved prefab + effective metadata/asset_kind; not group name",
+      "mesh_resource": "res://scenes/candidate53d-west/Game53dWest.tscn::ArrayMesh_8qhtw",
+      "mesh_surface_storage_sha256": "b10553bb366c5eabb6b4ce9b7bf721b514eada62e1494cd9ffb6bcedb1286708",
+      "model_scene": "res://scenes/prefabs/pine.tscn",
+      "metadata_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "saved_resource": "res://scenes/candidate53d-west/Game53dWest.tscn::MultiMesh_5i33k",
+      "saved_resource_sha256": "6ec57b72a831d6fa906a8d866c339909de55c9c42297a038dcd429b18d0c2b18",
+      "buffer_sha256": "2c37f5a537bbc40912544f72c1aca1bf4bc05ac6b4de2dac3b2abaeb70036d70",
+      "saved_property_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "query_count": 1,
+      "design_count": 0,
+      "query_indices": [
+        2
+      ],
+      "design_indices": [],
+      "buffer_only_indices": [
+        2
+      ],
+      "hit_union_summary_not_a_keepout_polygon": {
+        "min": [
+          -3056.5703125,
+          48.9520263671875,
+          -3888.61279296875
+        ],
+        "max": [
+          -3051.30859375,
+          56.436424255371094,
+          -3883.4267578125
+        ]
+      },
+      "root_y_range": [
+        48.9520263671875,
+        48.9520263671875
+      ],
+      "saved_visible": true,
+      "saved_visible_instance_count": -1,
+      "source_collision_rule": "tree capsule r=2.4 h=11, center Y=5.5",
+      "runtime_collision_observed": false,
+      "whole_tile_protected_neighbor": false,
+      "raw_rows_locator": {
+        "array": "groups",
+        "path_match": "World/Vegetation/poplar_-5_-6_CoastalPines36b",
+        "instances_array": "instances_overlapping_query",
+        "index_field": "index"
+      }
+    },
+    {
+      "path": "World/Vegetation/oak_-4_-6_CoastalPines36b",
+      "class": "pine",
+      "class_evidence": "bound mesh + resolved saved prefab + effective metadata/asset_kind; not group name",
+      "mesh_resource": "res://scenes/candidate53d-west/Game53dWest.tscn::ArrayMesh_8qhtw",
+      "mesh_surface_storage_sha256": "b10553bb366c5eabb6b4ce9b7bf721b514eada62e1494cd9ffb6bcedb1286708",
+      "model_scene": "res://scenes/prefabs/pine.tscn",
+      "metadata_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "saved_resource": "res://scenes/candidate53d-west/Game53dWest.tscn::MultiMesh_pedqn",
+      "saved_resource_sha256": "6ec57b72a831d6fa906a8d866c339909de55c9c42297a038dcd429b18d0c2b18",
+      "buffer_sha256": "487673a506862e4dc7a53bbc0e182989fce8875b15fab51fa074aa85612067a5",
+      "saved_property_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "query_count": 174,
+      "design_count": 174,
+      "query_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173
+      ],
+      "design_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173
+      ],
+      "buffer_only_indices": [],
+      "hit_union_summary_not_a_keepout_polygon": {
+        "min": [
+          -3050.687744140625,
+          14.022851943969727,
+          -4397.0693359375
+        ],
+        "max": [
+          -2315.63525390625,
+          286.7586669921875,
+          -3836.9365234375
+        ]
+      },
+      "root_y_range": [
+        14.022851943969727,
+        277.6374816894531
+      ],
+      "saved_visible": true,
+      "saved_visible_instance_count": -1,
+      "source_collision_rule": "tree capsule r=2.4 h=11, center Y=5.5",
+      "runtime_collision_observed": false,
+      "whole_tile_protected_neighbor": false,
+      "raw_rows_locator": {
+        "array": "groups",
+        "path_match": "World/Vegetation/oak_-4_-6_CoastalPines36b",
+        "instances_array": "instances_overlapping_query",
+        "index_field": "index"
+      }
+    },
+    {
+      "path": "World/Vegetation/poplar_-4_-6_CoastalPines36b",
+      "class": "pine",
+      "class_evidence": "bound mesh + resolved saved prefab + effective metadata/asset_kind; not group name",
+      "mesh_resource": "res://scenes/candidate53d-west/Game53dWest.tscn::ArrayMesh_8qhtw",
+      "mesh_surface_storage_sha256": "b10553bb366c5eabb6b4ce9b7bf721b514eada62e1494cd9ffb6bcedb1286708",
+      "model_scene": "res://scenes/prefabs/pine.tscn",
+      "metadata_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "saved_resource": "res://scenes/candidate53d-west/Game53dWest.tscn::MultiMesh_bl4ah",
+      "saved_resource_sha256": "6ec57b72a831d6fa906a8d866c339909de55c9c42297a038dcd429b18d0c2b18",
+      "buffer_sha256": "f39a8ccdc154d0a3cb47b6c9eba33bbf2db3e2668268a753861596b2744f67e3",
+      "saved_property_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "query_count": 86,
+      "design_count": 86,
+      "query_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85
+      ],
+      "design_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85
+      ],
+      "buffer_only_indices": [],
+      "hit_union_summary_not_a_keepout_polygon": {
+        "min": [
+          -2993.587890625,
+          16.05615234375,
+          -4375.0009765625
+        ],
+        "max": [
+          -2319.5302734375,
+          252.7003631591797,
+          -3843.128662109375
+        ]
+      },
+      "root_y_range": [
+        16.05615234375,
+        244.55596923828125
+      ],
+      "saved_visible": true,
+      "saved_visible_instance_count": -1,
+      "source_collision_rule": "tree capsule r=2.4 h=11, center Y=5.5",
+      "runtime_collision_observed": false,
+      "whole_tile_protected_neighbor": false,
+      "raw_rows_locator": {
+        "array": "groups",
+        "path_match": "World/Vegetation/poplar_-4_-6_CoastalPines36b",
+        "instances_array": "instances_overlapping_query",
+        "index_field": "index"
+      }
+    },
+    {
+      "path": "World/Vegetation/oak_-3_-6_CoastalPines36b",
+      "class": "pine",
+      "class_evidence": "bound mesh + resolved saved prefab + effective metadata/asset_kind; not group name",
+      "mesh_resource": "res://scenes/candidate53d-west/Game53dWest.tscn::ArrayMesh_8qhtw",
+      "mesh_surface_storage_sha256": "b10553bb366c5eabb6b4ce9b7bf721b514eada62e1494cd9ffb6bcedb1286708",
+      "model_scene": "res://scenes/prefabs/pine.tscn",
+      "metadata_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "saved_resource": "res://scenes/candidate53d-west/Game53dWest.tscn::MultiMesh_a6lfe",
+      "saved_resource_sha256": "6ec57b72a831d6fa906a8d866c339909de55c9c42297a038dcd429b18d0c2b18",
+      "buffer_sha256": "ab5b809a7fbedbdad0a02d09301471a37a51779f9c079bb435f4445e8fd69bde",
+      "saved_property_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "query_count": 16,
+      "design_count": 16,
+      "query_indices": [
+        0,
+        1,
+        3,
+        4,
+        11,
+        12,
+        13,
+        15,
+        16,
+        18,
+        19,
+        20,
+        24,
+        28,
+        29,
+        32
+      ],
+      "design_indices": [
+        0,
+        1,
+        3,
+        4,
+        11,
+        12,
+        13,
+        15,
+        16,
+        18,
+        19,
+        20,
+        24,
+        28,
+        29,
+        32
+      ],
+      "buffer_only_indices": [],
+      "hit_union_summary_not_a_keepout_polygon": {
+        "min": [
+          -2304.780029296875,
+          148.7161865234375,
+          -4152.466796875
+        ],
+        "max": [
+          -2130.57666015625,
+          256.6885070800781,
+          -3851.2138671875
+        ]
+      },
+      "root_y_range": [
+        148.7161865234375,
+        247.07891845703125
+      ],
+      "saved_visible": true,
+      "saved_visible_instance_count": -1,
+      "source_collision_rule": "tree capsule r=2.4 h=11, center Y=5.5",
+      "runtime_collision_observed": false,
+      "whole_tile_protected_neighbor": false,
+      "raw_rows_locator": {
+        "array": "groups",
+        "path_match": "World/Vegetation/oak_-3_-6_CoastalPines36b",
+        "instances_array": "instances_overlapping_query",
+        "index_field": "index"
+      }
+    },
+    {
+      "path": "World/Vegetation/poplar_-3_-6_CoastalPines36b",
+      "class": "pine",
+      "class_evidence": "bound mesh + resolved saved prefab + effective metadata/asset_kind; not group name",
+      "mesh_resource": "res://scenes/candidate53d-west/Game53dWest.tscn::ArrayMesh_8qhtw",
+      "mesh_surface_storage_sha256": "b10553bb366c5eabb6b4ce9b7bf721b514eada62e1494cd9ffb6bcedb1286708",
+      "model_scene": "res://scenes/prefabs/pine.tscn",
+      "metadata_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "saved_resource": "res://scenes/candidate53d-west/Game53dWest.tscn::MultiMesh_jus3n",
+      "saved_resource_sha256": "6ec57b72a831d6fa906a8d866c339909de55c9c42297a038dcd429b18d0c2b18",
+      "buffer_sha256": "50ad4babbafa28d56dcd18def1567d40f654b460a0bf8e734de972b9b49656d8",
+      "saved_property_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "query_count": 5,
+      "design_count": 5,
+      "query_indices": [
+        2,
+        5,
+        8,
+        9,
+        10
+      ],
+      "design_indices": [
+        2,
+        5,
+        8,
+        9,
+        10
+      ],
+      "buffer_only_indices": [],
+      "hit_union_summary_not_a_keepout_polygon": {
+        "min": [
+          -2291.06298828125,
+          112.1209716796875,
+          -4199.662109375
+        ],
+        "max": [
+          -2211.55078125,
+          241.9090576171875,
+          -4047.8076171875
+        ]
+      },
+      "root_y_range": [
+        112.1209716796875,
+        236.36505126953125
+      ],
+      "saved_visible": true,
+      "saved_visible_instance_count": -1,
+      "source_collision_rule": "tree capsule r=2.4 h=11, center Y=5.5",
+      "runtime_collision_observed": false,
+      "whole_tile_protected_neighbor": false,
+      "raw_rows_locator": {
+        "array": "groups",
+        "path_match": "World/Vegetation/poplar_-3_-6_CoastalPines36b",
+        "instances_array": "instances_overlapping_query",
+        "index_field": "index"
+      }
+    },
+    {
+      "path": "World/Vegetation/oak_-5_-5_CoastalPines36b",
+      "class": "pine",
+      "class_evidence": "bound mesh + resolved saved prefab + effective metadata/asset_kind; not group name",
+      "mesh_resource": "res://assets/coast61/oak_-5_-5_CoastalPines36b.res::ArrayMesh_8qhtw",
+      "mesh_surface_storage_sha256": "b10553bb366c5eabb6b4ce9b7bf721b514eada62e1494cd9ffb6bcedb1286708",
+      "model_scene": "res://scenes/prefabs/pine.tscn",
+      "metadata_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "saved_resource": "res://assets/coast61/oak_-5_-5_CoastalPines36b.res",
+      "saved_resource_sha256": "0a780a53e0a90777105703b23a899dfe1cc62d9b2774272087d9869958d64253",
+      "buffer_sha256": "6efff4bb041a8fcc9954ecd0e177b66b0f3f8e4a555799c3e7aa345454da5c27",
+      "saved_property_source": "res://scenes/candidate61-coast/Game61Coast.tscn",
+      "query_count": 1,
+      "design_count": 0,
+      "query_indices": [
+        32
+      ],
+      "design_indices": [],
+      "buffer_only_indices": [
+        32
+      ],
+      "hit_union_summary_not_a_keepout_polygon": {
+        "min": [
+          -3086.817138671875,
+          78.9990234375,
+          -3803.3701171875
+        ],
+        "max": [
+          -3080.6376953125,
+          87.34142303466797,
+          -3797.25927734375
+        ]
+      },
+      "root_y_range": [
+        78.9990234375,
+        78.9990234375
+      ],
+      "saved_visible": true,
+      "saved_visible_instance_count": -1,
+      "source_collision_rule": "tree capsule r=2.4 h=11, center Y=5.5",
+      "runtime_collision_observed": false,
+      "whole_tile_protected_neighbor": true,
+      "raw_rows_locator": {
+        "array": "groups",
+        "path_match": "World/Vegetation/oak_-5_-5_CoastalPines36b",
+        "instances_array": "instances_overlapping_query",
+        "index_field": "index"
+      }
+    },
+    {
+      "path": "World/Vegetation/oak_-4_-5_CoastalPines36b",
+      "class": "pine",
+      "class_evidence": "bound mesh + resolved saved prefab + effective metadata/asset_kind; not group name",
+      "mesh_resource": "res://scenes/candidate53d-west/Game53dWest.tscn::ArrayMesh_8qhtw",
+      "mesh_surface_storage_sha256": "b10553bb366c5eabb6b4ce9b7bf721b514eada62e1494cd9ffb6bcedb1286708",
+      "model_scene": "res://scenes/prefabs/pine.tscn",
+      "metadata_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "saved_resource": "res://scenes/candidate53d-west/Game53dWest.tscn::MultiMesh_y47k1",
+      "saved_resource_sha256": "6ec57b72a831d6fa906a8d866c339909de55c9c42297a038dcd429b18d0c2b18",
+      "buffer_sha256": "06f72a45f49ad890e79264ae553efdf7a63c612474171eb69d9e86ca3f2d7e94",
+      "saved_property_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "query_count": 48,
+      "design_count": 29,
+      "query_indices": [
+        3,
+        4,
+        10,
+        24,
+        29,
+        30,
+        36,
+        42,
+        53,
+        55,
+        57,
+        61,
+        66,
+        67,
+        78,
+        86,
+        100,
+        106,
+        110,
+        113,
+        115,
+        121,
+        138,
+        141,
+        147,
+        162,
+        163,
+        179,
+        180,
+        183,
+        184,
+        209,
+        210,
+        213,
+        215,
+        227,
+        228,
+        229,
+        231,
+        233,
+        235,
+        237,
+        256,
+        257,
+        263,
+        277,
+        286,
+        296
+      ],
+      "design_indices": [
+        24,
+        29,
+        30,
+        36,
+        42,
+        57,
+        61,
+        67,
+        78,
+        86,
+        106,
+        110,
+        113,
+        115,
+        138,
+        141,
+        163,
+        180,
+        184,
+        209,
+        213,
+        228,
+        229,
+        231,
+        235,
+        257,
+        263,
+        277,
+        296
+      ],
+      "buffer_only_indices": [
+        3,
+        4,
+        10,
+        53,
+        55,
+        66,
+        100,
+        121,
+        147,
+        162,
+        179,
+        183,
+        210,
+        215,
+        227,
+        233,
+        237,
+        256,
+        286
+      ],
+      "hit_union_summary_not_a_keepout_polygon": {
+        "min": [
+          -3069.030029296875,
+          77.08312225341797,
+          -3840.954833984375
+        ],
+        "max": [
+          -2427.575927734375,
+          193.64874267578125,
+          -3725.1787109375
+        ]
+      },
+      "root_y_range": [
+        77.08312225341797,
+        186.4679412841797
+      ],
+      "saved_visible": true,
+      "saved_visible_instance_count": -1,
+      "source_collision_rule": "tree capsule r=2.4 h=11, center Y=5.5",
+      "runtime_collision_observed": false,
+      "whole_tile_protected_neighbor": false,
+      "raw_rows_locator": {
+        "array": "groups",
+        "path_match": "World/Vegetation/oak_-4_-5_CoastalPines36b",
+        "instances_array": "instances_overlapping_query",
+        "index_field": "index"
+      }
+    },
+    {
+      "path": "World/Vegetation/poplar_-4_-5_CoastalPines36b",
+      "class": "pine",
+      "class_evidence": "bound mesh + resolved saved prefab + effective metadata/asset_kind; not group name",
+      "mesh_resource": "res://scenes/candidate53d-west/Game53dWest.tscn::ArrayMesh_8qhtw",
+      "mesh_surface_storage_sha256": "b10553bb366c5eabb6b4ce9b7bf721b514eada62e1494cd9ffb6bcedb1286708",
+      "model_scene": "res://scenes/prefabs/pine.tscn",
+      "metadata_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "saved_resource": "res://scenes/candidate53d-west/Game53dWest.tscn::MultiMesh_vyi6j",
+      "saved_resource_sha256": "6ec57b72a831d6fa906a8d866c339909de55c9c42297a038dcd429b18d0c2b18",
+      "buffer_sha256": "c397cd3f00d63a84c7eafc07f357705201282bddad6fa6baa8110444c680b147",
+      "saved_property_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "query_count": 22,
+      "design_count": 18,
+      "query_indices": [
+        1,
+        3,
+        5,
+        8,
+        12,
+        14,
+        16,
+        24,
+        33,
+        37,
+        39,
+        43,
+        46,
+        51,
+        67,
+        70,
+        75,
+        104,
+        127,
+        130,
+        131,
+        133
+      ],
+      "design_indices": [
+        3,
+        5,
+        8,
+        12,
+        14,
+        24,
+        33,
+        37,
+        39,
+        43,
+        46,
+        51,
+        67,
+        70,
+        75,
+        127,
+        130,
+        133
+      ],
+      "buffer_only_indices": [
+        1,
+        16,
+        104,
+        131
+      ],
+      "hit_union_summary_not_a_keepout_polygon": {
+        "min": [
+          -3022.64111328125,
+          78.21947479248047,
+          -3840.868408203125
+        ],
+        "max": [
+          -2473.456298828125,
+          183.27687072753906,
+          -3728.92236328125
+        ]
+      },
+      "root_y_range": [
+        78.21947479248047,
+        172.6904754638672
+      ],
+      "saved_visible": true,
+      "saved_visible_instance_count": -1,
+      "source_collision_rule": "tree capsule r=2.4 h=11, center Y=5.5",
+      "runtime_collision_observed": false,
+      "whole_tile_protected_neighbor": false,
+      "raw_rows_locator": {
+        "array": "groups",
+        "path_match": "World/Vegetation/poplar_-4_-5_CoastalPines36b",
+        "instances_array": "instances_overlapping_query",
+        "index_field": "index"
+      }
+    },
+    {
+      "path": "World/Vegetation/oak_-3_-5_CoastalPines36b",
+      "class": "pine",
+      "class_evidence": "bound mesh + resolved saved prefab + effective metadata/asset_kind; not group name",
+      "mesh_resource": "res://scenes/candidate53d-west/Game53dWest.tscn::ArrayMesh_8qhtw",
+      "mesh_surface_storage_sha256": "b10553bb366c5eabb6b4ce9b7bf721b514eada62e1494cd9ffb6bcedb1286708",
+      "model_scene": "res://scenes/prefabs/pine.tscn",
+      "metadata_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "saved_resource": "res://scenes/candidate53d-west/Game53dWest.tscn::MultiMesh_fjbua",
+      "saved_resource_sha256": "6ec57b72a831d6fa906a8d866c339909de55c9c42297a038dcd429b18d0c2b18",
+      "buffer_sha256": "7b4b8f66adbe5ff3055ccb35c207fbb560a776b0ac41d6a8008267f56dd6ac38",
+      "saved_property_source": "res://scenes/candidate53d-west/Game53dWest.tscn",
+      "query_count": 4,
+      "design_count": 2,
+      "query_indices": [
+        58,
+        90,
+        149,
+        186
+      ],
+      "design_indices": [
+        90,
+        186
+      ],
+      "buffer_only_indices": [
+        58,
+        149
+      ],
+      "hit_union_summary_not_a_keepout_polygon": {
+        "min": [
+          -2179.51123046875,
+          158.6734619140625,
+          -3838.843505859375
+        ],
+        "max": [
+          -1995.7496337890625,
+          219.7419891357422,
+          -3752.1064453125
+        ]
+      },
+      "root_y_range": [
+        158.6734619140625,
+        210.33038330078125
+      ],
+      "saved_visible": true,
+      "saved_visible_instance_count": -1,
+      "source_collision_rule": "tree capsule r=2.4 h=11, center Y=5.5",
+      "runtime_collision_observed": false,
+      "whole_tile_protected_neighbor": false,
+      "raw_rows_locator": {
+        "array": "groups",
+        "path_match": "World/Vegetation/oak_-3_-5_CoastalPines36b",
+        "instances_array": "instances_overlapping_query",
+        "index_field": "index"
+      }
+    }
+  ]
+}

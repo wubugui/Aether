@@ -1,0 +1,39 @@
+# Blender 4.5.14, Commit date: 2026-09-14 14:54, Hash 62c1db4208e8
+
+# backtrace
+/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender() [0xf82dc0]
+/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender() [0x75cc08]
+/lib/x86_64-linux-gnu/libc.so.6(+0x3fdf0) [0x7f154e3a1df0]
+/lib/x86_64-linux-gnu/libc.so.6(+0x17bb62) [0x7f154e4ddb62]
+/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender() [0xdcd47b]
+/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender() [0xdcd1b1]
+/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender() [0xdcf35b]
+/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender() [0xdd0f12]
+/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender() [0x84a053]
+/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender() [0x191c5ed]
+/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender() [0x1834877]
+/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender() [0x1ae8214]
+/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender() [0x68e5e4f]
+/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender(_PyObject_MakeTpCall+0x83) [0x6881823]
+/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender(PyObject_CallOneArg+0x80) [0x6881d80]
+/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender() [0x1ae7916]
+/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender(PyObject_GetIter+0x18) [0x686bbc8]
+/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender(_PyEval_EvalFrameDefault+0x7cc1) [0x7541e1]
+/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender(PyEval_EvalCode+0x22f) [0x6944def]
+/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender() [0x698cf1d]
+/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender(PyRun_FileExFlags+0x90) [0x698ef50]
+/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender() [0x1adda6f]
+/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender() [0x759a81]
+/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender() [0xf8a471]
+/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender() [0x6bf467]
+/lib/x86_64-linux-gnu/libc.so.6(+0x29ca8) [0x7f154e38bca8]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x85) [0x7f154e38bd65]
+/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender() [0x75817e]
+
+# Python backtrace
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-k/rebuild58k.py", line 28 in <listcomp>
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-k/rebuild58k.py", line 28 in group_signature
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-k/source58k.py", line 52 in native_identity
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-k/source58k.py", line 100 in build
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-k/source_contact58k.py", line 26 in main
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-k/source_contact58k.py", line 34 in <module>
