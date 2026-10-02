@@ -1,0 +1,59 @@
+{
+  "stage": "saved-source-fresh-open",
+  "runtime": {
+    "executable": "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/4.5/python/bin/python3.11",
+    "version": "3.11.15 (main, Apr 25 2025, 12:39:20) [GCC 11.2.1 20220127 (Red Hat 11.2.1-9)]",
+    "numpy_version": "1.26.4",
+    "python_sha256": "60b08089c60cbe81827b135c8fd9e206ba2ee6bf54aa1dbd0d6f56ac2d5914f6",
+    "numpy_file": "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/4.5/python/lib/python3.11/site-packages/numpy/__init__.py"
+  },
+  "original_source_stage": "failed",
+  "acceptance_mode": "api_consistency_isolated_diagnostic_v1",
+  "full_native_acceptance": false,
+  "historical_default_corner_geometry_passed": false,
+  "command": [
+    "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/4.5/python/bin/python3.11",
+    "-B",
+    "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/form-v2-recovery-v1/run_saved58l.py",
+    "--run-approved",
+    "saved-source-fresh-open"
+  ],
+  "cwd": "/workspace/scratch/a29d03198654/Aether",
+  "predecessor_publication_commit": "bd403f0b8ec262cdb6e1c627d11999ac35fa2533",
+  "process_exit_observed": true,
+  "actual_exit_code": 0,
+  "timeout": false,
+  "cleanup": [],
+  "recovery_chain_verified": false,
+  "utc_started": "2026-10-02T21:25:05.425039+00:00",
+  "started_monotonic": 115700.634018696,
+  "supervisor_pid": 6,
+  "ended_monotonic": 115737.456531298,
+  "wall_seconds": 36.822512601997005,
+  "remaining_owned_pids": [],
+  "ownership_history": [
+    {
+      "pid": 2,
+      "state": "R",
+      "ppid": 1,
+      "pgid": 1,
+      "sid": 1,
+      "starttime": 11569989,
+      "rss_kib": 38960,
+      "reason": "supervisor"
+    },
+    {
+      "pid": 6,
+      "state": "R",
+      "ppid": 2,
+      "pgid": 6,
+      "sid": 6,
+      "starttime": 11570063,
+      "rss_kib": 0,
+      "reason": "actual_external_Popen"
+    }
+  ],
+  "cleanup_signals": [],
+  "utc_process_observation_complete": "2026-10-02T21:25:42.248136+00:00",
+  "supervisor_terminal_sha256": "766756ea0501ecf7e389b69a3569bf972e7d9c99da606782956c08335738615b"
+}

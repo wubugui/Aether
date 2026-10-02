@@ -1,0 +1,84 @@
+{
+  "stage": "saved-source-fresh-open",
+  "runtime": {
+    "executable": "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/4.5/python/bin/python3.11",
+    "version": "3.11.15 (main, Apr 25 2025, 12:39:20) [GCC 11.2.1 20220127 (Red Hat 11.2.1-9)]",
+    "numpy_version": "1.26.4",
+    "python_sha256": "60b08089c60cbe81827b135c8fd9e206ba2ee6bf54aa1dbd0d6f56ac2d5914f6",
+    "numpy_file": "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/4.5/python/lib/python3.11/site-packages/numpy/__init__.py"
+  },
+  "original_source_stage": "failed",
+  "acceptance_mode": "api_consistency_isolated_diagnostic_v1",
+  "full_native_acceptance": false,
+  "historical_default_corner_geometry_passed": false,
+  "command": [
+    "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/4.5/python/bin/python3.11",
+    "-B",
+    "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/form-v2-recovery-v1/run_saved58l.py",
+    "--run-approved",
+    "saved-source-fresh-open"
+  ],
+  "cwd": "/workspace/scratch/a29d03198654/Aether",
+  "predecessor_publication_commit": "bd403f0b8ec262cdb6e1c627d11999ac35fa2533",
+  "process_exit_observed": true,
+  "actual_exit_code": 0,
+  "timeout": false,
+  "cleanup": [],
+  "recovery_chain_verified": true,
+  "utc_started": "2026-10-02T21:25:05.425039+00:00",
+  "started_monotonic": 115700.634018696,
+  "supervisor_pid": 6,
+  "ended_monotonic": 115737.456531298,
+  "wall_seconds": 36.822512601997005,
+  "remaining_owned_pids": [],
+  "ownership_history": [
+    {
+      "pid": 2,
+      "state": "R",
+      "ppid": 1,
+      "pgid": 1,
+      "sid": 1,
+      "starttime": 11569989,
+      "rss_kib": 38960,
+      "reason": "supervisor"
+    },
+    {
+      "pid": 6,
+      "state": "R",
+      "ppid": 2,
+      "pgid": 6,
+      "sid": 6,
+      "starttime": 11570063,
+      "rss_kib": 0,
+      "reason": "actual_external_Popen"
+    }
+  ],
+  "cleanup_signals": [],
+  "utc_process_observation_complete": "2026-10-02T21:25:42.248136+00:00",
+  "supervisor_terminal_sha256": "766756ea0501ecf7e389b69a3569bf972e7d9c99da606782956c08335738615b",
+  "source_sha256": "33cc763abc893cce0de214ae3b4df19b8b7e3bbde6d268432b8fd3847e61cc4a",
+  "source_bytes": 324985,
+  "run": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/cloudbank58l-form-v2-recovery-v1-saved-source-fresh-open-20261002T212506Z-7knis0f3",
+  "combined_evidence": {
+    "predecessor": {
+      "original_source_stage": "failed",
+      "original_admission_sha256": "8216396cd70064b29057ed32fcd8c8f61eecaf1ccab4a949bc065c7ccb3d2e87",
+      "original_terminal_sha256": "c4856a8ffeaf5b28280beab2316f32e5b02f52720fcfed39a546d3ab9b7e7531",
+      "original_build_result_sha256": "db26f06e7d04ed45a4b789ddd1bce2d92b097fd7e704423528027c7f6a2a8e82",
+      "original_build_raw_sha256": "8ad8010e94bd7d9edcabe794ffb18c99a7519e50c34a37f20c1e3c8bdcfaafa7",
+      "source_sha256": "33cc763abc893cce0de214ae3b4df19b8b7e3bbde6d268432b8fd3847e61cc4a",
+      "source_bytes": 324985,
+      "original_build_pid": 8
+    },
+    "recovery_admission_sha256": "eb7cc48b731a0c916499bf0419f3020554d6620dbf6459fb1bc30629fa70af26",
+    "recovery_terminal_sha256": "6c1cbf38413f33b815a075901d0d1fbf78eefa86b60acd5e649d120ba136e00a",
+    "recovery_supervisor_sha256": "766756ea0501ecf7e389b69a3569bf972e7d9c99da606782956c08335738615b",
+    "recovery_observation_sha256": "f2dce989836af58ea1275bd52c8d61bbe66a9fdec03d99ad6b2b7cdb86028989",
+    "existing_saved_source_fresh_open_verified": true,
+    "original_source_stage": "failed",
+    "full_native_acceptance": false,
+    "visual_acceptance": false,
+    "world_acceptance": false,
+    "global_GOAL": false
+  }
+}

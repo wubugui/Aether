@@ -1,6 +1,6 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 21:18 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 21:36 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
 
 ## 云端硬性前置闸门：先插件上传完整核回，再继续工作
 
@@ -11,6 +11,16 @@
 - 上传失败优先查明原因并在授权内反复进行合规恢复，保持原payload、完整base tree/parent和非force ref；真实安全拒绝必须停止该动作，按批准规则取得明确证据/一次原call重试，仍拒则报告并保持闸门关闭，绝不绕审批/换route
 - 本项全部完成成果和本入口更新都核回后，才允许下一项。纯读取以查错/确认上传状态可以继续；与修复当前上传无关的新开发/渲染必须等待
 - 私密Slack交付定位符/收据仍仅本地，不因“全部项目”混入公开仓库；原受阻发送保持独立停止
+
+## 21:36 现存form-v2源fresh-only恢复实际通过，原整体失败保持
+
+- 恢复准备已 **1ce6a139a3f46693d506a257eea2c76e8fb843ce** 完整插件发布，tree2bdef2b2a092744bc4be057c356d5a485f4a8e5b、parentbd403f0b；21路径/20blob新bare逐字核回，本地88efcd3同树对齐。tree首拒后原用户项目授权同call一次成功，6blob未重传；明确空窗后才使用已发布官方3.11观察入口
+- [实际fresh-only结果](cloud-evidence/cloudbank58l-form-v2-recovery-v1-saved-source-fresh-open-20261002T212506Z-7knis0f3/RESULT.md)：launcher6真实exit0/**36.822513秒**，worker7 exit0/36.550126秒，独立Blender verify8 exit0/**13.933329秒**；recovery_chain_verified=true、残留[]。原CPU2/120秒/verify30/1.5GiB门保持，native峰326892KiB/全树采样峰414924KiB，无资源触界
+- **没有build/save/render/export、0PNG**。原唯一324985B/SHA33cc763abc893cce0de214ae3b4df19b8b7e3bbde6d268432b8fd3847e61cc4a源纳入全程保护且字节不变，21实际raw/8Text/7主+谷宽/manual/combined及恢复齐全；14478保护项4735760197B前后同，642冻结同
+- [窄独立结果复核](cloud-evidence/cloudbank58l-form-v2-recovery-v1-saved-source-fresh-open-20261002T212506Z-7knis0f3/NARROW_RECOVERY_RESULT.md)3732B/SHA86104d5ff6af94afd3f0671a5a93e97af562d1822ab7a2bd22d16e4c89b7cc58，官方3.11只读prior_recovery重算7.855秒通过，完整原报告/实际raw/exercise精确相等、stage/PID/SHA链及无save事件核实。原v3保持，只有已审pidfd绑定兼容桥；无新容差或向量改写
+- 现在只成立“**现有form-v2诊断源独立fresh-open及内存编辑恢复通过**”。组合原真实成功build和本次fresh-only，original_source_stage='failed'永久保留，旧三次source失败未改；不同raw只按原numeric identity比较，不伪称文件字节同。新默认23面旧corner几何3e-5失败和历史旧22面保留，full_native/visual/contact/world/GOAL仍false
+- 23大原JSON保14唯一gzip/15部件5291924B，原工作字节不改；本run不复制已存模型。下一先模型关联/全部真实结果/复核/本入口插件完整发布、远端逐字核回并新空目录恢复23JSON，再最窄原机位views适配，必须使用真实组合前件，不走原source虚假成功路径。views准备也先外存后真实成像，当前未有form-v2新图/美术结论
+- 引擎窗口已释放。新独立图报补发继续按原流程逐件核回，已成功件不重复；一个新报告普通连接超时且已上传字节未知，保持未finalize/不盲POST，其他独立新件可继续。旧27受阻件仍原停、私密清单仅本地，不混入本公开仓库
 
 ## 21:18 官方3.11既有源fresh-only恢复准备有限接受，原完整比较不改
 
