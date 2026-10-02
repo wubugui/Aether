@@ -1,0 +1,12 @@
+{
+  "original_path": "renderer.stderr.log",
+  "original_bytes": 2173277,
+  "original_sha256": "b0862868d04cfe09e61d3d7b687262577bccd977e22ee3036dc1289addf5555a",
+  "stored_path": "renderer.stderr.log.gz",
+  "stored_bytes": 11012,
+  "stored_sha256": "40b1580a243d966c9bc4f9566ad408118a66178c69f40796a171127ef6fcc94c",
+  "lossless_roundtrip_byte_exact": true,
+  "original_local_file_unchanged": true,
+  "restore_command": "gzip -dc renderer.stderr.log.gz > renderer.stderr.log",
+  "reason": "3154 repeated material property errors yield a 2.17MB log; store its complete original bytes losslessly rather than a truncated error excerpt. No source asset or image compressed/changed."
+}
