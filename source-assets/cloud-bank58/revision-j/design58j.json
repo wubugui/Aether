@@ -1,0 +1,2041 @@
+{
+  "candidate": "58J",
+  "status": "One source-only metric-plane design hypothesis; no native or visual acceptance",
+  "coordinates": "Physical source-local U,V,Y metres; frozen E cameras and source basis; no whole-object fit",
+  "tolerances": {
+    "classification_m": 1e-08,
+    "weld_m": 2e-07,
+    "minimum_edge_m": 1e-05,
+    "minimum_area_m2": 1e-06,
+    "float32_max_displacement_m": 0.0001,
+    "maximum_vertices": 800,
+    "maximum_triangles": 1600
+  },
+  "metric_authoring_contract": "For original transform x=c+R S q, n_local=S R.T N_metric, d_local=h. Derived once here. Rebuild reads stored local planes only.",
+  "controls": [
+    {
+      "id": "Main_Crown",
+      "role": "Wide irregular high mound; four short sloping crown facets and unequal broad shoulders",
+      "center": [
+        -98,
+        0,
+        766
+      ],
+      "scale": [
+        145,
+        110,
+        91
+      ],
+      "yaw_degrees": -9,
+      "planes": [
+        [
+          65.62827194573066,
+          19.11142524802671,
+          79.59039334968502,
+          72
+        ],
+        [
+          -43.6315891785235,
+          57.33058082716734,
+          72.67583141430364,
+          74
+        ],
+        [
+          -58.86154761179389,
+          -37.46880909016426,
+          77.17237675023476,
+          77
+        ],
+        [
+          50.93199275646846,
+          -64.30453627158431,
+          66.5531868473445,
+          81
+        ],
+        [
+          118.00184351132663,
+          -17.400660898350058,
+          50.88655421583796,
+          116
+        ],
+        [
+          48.820655500662,
+          91.66820611402754,
+          39.89177435780605,
+          116
+        ],
+        [
+          -101.81180026683278,
+          54.08160622626993,
+          46.86846481681493,
+          113
+        ],
+        [
+          -91.68899090219142,
+          -74.59092785308457,
+          34.08920000084799,
+          130
+        ],
+        [
+          48.94010289798467,
+          -79.6190539935833,
+          54.7651671068364,
+          106
+        ],
+        [
+          85.00162296475513,
+          43.495000343911556,
+          -64.34671708797583,
+          78
+        ],
+        [
+          -78.97687568028995,
+          64.24935401693621,
+          -54.7651671068364,
+          77
+        ],
+        [
+          -64.52452382729494,
+          -48.94963876553408,
+          -70.72028249258435,
+          72
+        ],
+        [
+          78.7194326189118,
+          -57.66918598840793,
+          -59.70137163813616,
+          83
+        ],
+        [
+          -54.180415289178974,
+          -12.566259873711244,
+          -83.76594166417208,
+          78
+        ]
+      ],
+      "metric_authorship": [
+        {
+          "role": "upper",
+          "azimuth_degrees": 12,
+          "inclination_from_horizontal_degrees": 29,
+          "support_metres": 72,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            0.4742153668566221,
+            0.10079758787013175,
+            0.8746197071393957
+          ]
+        },
+        {
+          "role": "upper",
+          "azimuth_degrees": 111,
+          "inclination_from_horizontal_degrees": 37,
+          "support_metres": 74,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            -0.21567121585255694,
+            0.5618427259867126,
+            0.7986355100472928
+          ]
+        },
+        {
+          "role": "upper",
+          "azimuth_degrees": 211,
+          "inclination_from_horizontal_degrees": 32,
+          "support_metres": 77,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            -0.45422946531282565,
+            -0.27292859770842215,
+            0.848048096156426
+          ]
+        },
+        {
+          "role": "upper",
+          "azimuth_degrees": 292,
+          "inclination_from_horizontal_degrees": 43,
+          "support_metres": 81,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            0.2554810823782511,
+            -0.6323378682909752,
+            0.7313537016191705
+          ]
+        },
+        {
+          "role": "shoulder",
+          "azimuth_degrees": -20,
+          "inclination_from_horizontal_degrees": 56,
+          "support_metres": 116,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            0.7790404892842349,
+            -0.2835475493876399,
+            0.5591929034707468
+          ]
+        },
+        {
+          "role": "shoulder",
+          "azimuth_degrees": 59,
+          "inclination_from_horizontal_degrees": 64,
+          "support_metres": 116,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            0.4629131553465411,
+            0.7704168665533864,
+            0.43837114678907746
+          ]
+        },
+        {
+          "role": "shoulder",
+          "azimuth_degrees": 136,
+          "inclination_from_horizontal_degrees": 59,
+          "support_metres": 113,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            -0.616594554943878,
+            0.5954384403164665,
+            0.5150380749100542
+          ]
+        },
+        {
+          "role": "shoulder",
+          "azimuth_degrees": 218,
+          "inclination_from_horizontal_degrees": 68,
+          "support_metres": 130,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            -0.7306308479691596,
+            -0.5708313798007189,
+            0.37460659341591196
+          ]
+        },
+        {
+          "role": "shoulder",
+          "azimuth_degrees": 286,
+          "inclination_from_horizontal_degrees": 53,
+          "support_metres": 106,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            0.22013378025099645,
+            -0.767697724824625,
+            0.6018150231520484
+          ]
+        },
+        {
+          "role": "return",
+          "azimuth_degrees": 25,
+          "inclination_from_horizontal_degrees": 45,
+          "support_metres": 78,
+          "up_sign": -1,
+          "normal_metric_UVY": [
+            0.6408563820557884,
+            0.29883623873011983,
+            -0.7071067811865476
+          ]
+        },
+        {
+          "role": "return",
+          "azimuth_degrees": 124,
+          "inclination_from_horizontal_degrees": 53,
+          "support_metres": 77,
+          "up_sign": -1,
+          "normal_metric_UVY": [
+            -0.4465913096781864,
+            0.6620988446058653,
+            -0.6018150231520484
+          ]
+        },
+        {
+          "role": "return",
+          "azimuth_degrees": 216,
+          "inclination_from_horizontal_degrees": 39,
+          "support_metres": 72,
+          "up_sign": -1,
+          "normal_metric_UVY": [
+            -0.5091308912660061,
+            -0.36990524482602644,
+            -0.7771459614569709
+          ]
+        },
+        {
+          "role": "return",
+          "azimuth_degrees": 307,
+          "inclination_from_horizontal_degrees": 49,
+          "support_metres": 83,
+          "up_sign": -1,
+          "normal_metric_UVY": [
+            0.4541955634948399,
+            -0.6027378705387919,
+            -0.6560590289905073
+          ]
+        },
+        {
+          "role": "lower_clip",
+          "azimuth_degrees": 188,
+          "inclination_from_horizontal_degrees": 23,
+          "support_metres": 78,
+          "up_sign": -1,
+          "normal_metric_UVY": [
+            -0.3869285600062875,
+            -0.05437926279347803,
+            -0.9205048534524404
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Rear_Crown",
+      "role": "Lower offset mound with skew crest, short upper facets, and unequal inward lower returns",
+      "center": [
+        110,
+        45,
+        745
+      ],
+      "scale": [
+        118,
+        102,
+        83
+      ],
+      "yaw_degrees": 16,
+      "planes": [
+        [
+          48.61103648298075,
+          -46.66761524267222,
+          65.40489254935792,
+          69
+        ],
+        [
+          36.53525160414635,
+          33.866818513414366,
+          73.95354150763454,
+          61
+        ],
+        [
+          -70.35156882438363,
+          30.985451713932175,
+          61.681020514623725,
+          74
+        ],
+        [
+          -28.92581605575265,
+          -51.26512374196972,
+          68.81011852206845,
+          68
+        ],
+        [
+          103.14225566853833,
+          3.1134263336958794,
+          40.23919848044598,
+          107
+        ],
+        [
+          31.46939867491896,
+          79.00139435977039,
+          47.60684421713683,
+          96
+        ],
+        [
+          -85.61233446141408,
+          59.927162306128686,
+          29.74453981225993,
+          104
+        ],
+        [
+          -69.97749820154233,
+          -60.489023869129845,
+          45.20503990624725,
+          105
+        ],
+        [
+          53.47215943516232,
+          -80.0583278565824,
+          35.077315724478055,
+          99
+        ],
+        [
+          86.17284238005288,
+          -27.111556458492732,
+          -52.23359245713651,
+          70
+        ],
+        [
+          17.414578093420772,
+          65.20291641520275,
+          -62.640895158490075,
+          66
+        ],
+        [
+          -95.31914840702231,
+          19.022273355767403,
+          -46.41301098807198,
+          80
+        ],
+        [
+          -17.347860442893424,
+          -70.548789750983,
+          -58.68986283848345,
+          72
+        ],
+        [
+          13.067530824558588,
+          -34.76447371193184,
+          -77.48717539926774,
+          72
+        ]
+      ],
+      "metric_authorship": [
+        {
+          "role": "upper",
+          "azimuth_degrees": -32,
+          "inclination_from_horizontal_degrees": 38,
+          "support_metres": 69,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            0.522110542026781,
+            -0.32625087602130226,
+            0.7880107536067219
+          ]
+        },
+        {
+          "role": "upper",
+          "azimuth_degrees": 63,
+          "inclination_from_horizontal_degrees": 27,
+          "support_metres": 61,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            0.20610737385376343,
+            0.4045084971874736,
+            0.8910065241883679
+          ]
+        },
+        {
+          "role": "upper",
+          "azimuth_degrees": 169,
+          "inclination_from_horizontal_degrees": 42,
+          "support_metres": 74,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            -0.6568367924786735,
+            0.12767613877503212,
+            0.7431448254773942
+          ]
+        },
+        {
+          "role": "upper",
+          "azimuth_degrees": 260,
+          "inclination_from_horizontal_degrees": 34,
+          "support_metres": 68,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            -0.09710282865197488,
+            -0.5506975067673988,
+            0.8290375725550416
+          ]
+        },
+        {
+          "role": "shoulder",
+          "azimuth_degrees": 18,
+          "inclination_from_horizontal_degrees": 61,
+          "support_metres": 107,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            0.8318127717550812,
+            0.2702723531213128,
+            0.4848096202463371
+          ]
+        },
+        {
+          "role": "shoulder",
+          "azimuth_degrees": 87,
+          "inclination_from_horizontal_degrees": 55,
+          "support_metres": 96,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            0.04287110554622677,
+            0.8180294248815739,
+            0.5735764363510462
+          ]
+        },
+        {
+          "role": "shoulder",
+          "azimuth_degrees": 157,
+          "inclination_from_horizontal_degrees": 69,
+          "support_metres": 104,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            -0.8593653136788735,
+            0.36477893358074914,
+            0.3583679495453004
+          ]
+        },
+        {
+          "role": "shoulder",
+          "azimuth_degrees": 241,
+          "inclination_from_horizontal_degrees": 57,
+          "support_metres": 105,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            -0.4065955595574007,
+            -0.7335178065228577,
+            0.5446390350150271
+          ]
+        },
+        {
+          "role": "shoulder",
+          "azimuth_degrees": 316,
+          "inclination_from_horizontal_degrees": 65,
+          "support_metres": 99,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            0.6519432625723083,
+            -0.6295742904771795,
+            0.42261826174069944
+          ]
+        },
+        {
+          "role": "return",
+          "azimuth_degrees": -4,
+          "inclination_from_horizontal_degrees": 51,
+          "support_metres": 70,
+          "up_sign": -1,
+          "normal_metric_UVY": [
+            0.7752528729540811,
+            -0.05421096185572621,
+            -0.6293203910498375
+          ]
+        },
+        {
+          "role": "return",
+          "azimuth_degrees": 93,
+          "inclination_from_horizontal_degrees": 41,
+          "support_metres": 66,
+          "up_sign": -1,
+          "normal_metric_UVY": [
+            -0.03433547663403541,
+            0.6551599228923277,
+            -0.754709580222772
+          ]
+        },
+        {
+          "role": "return",
+          "azimuth_degrees": 183,
+          "inclination_from_horizontal_degrees": 56,
+          "support_metres": 80,
+          "up_sign": -1,
+          "normal_metric_UVY": [
+            -0.8279014053747026,
+            -0.04338847412099681,
+            -0.5591929034707468
+          ]
+        },
+        {
+          "role": "return",
+          "azimuth_degrees": 274,
+          "inclination_from_horizontal_degrees": 45,
+          "support_metres": 72,
+          "up_sign": -1,
+          "normal_metric_UVY": [
+            0.04932527561613229,
+            -0.7053843046066396,
+            -0.7071067811865476
+          ]
+        },
+        {
+          "role": "lower_clip",
+          "azimuth_degrees": 304,
+          "inclination_from_horizontal_degrees": 21,
+          "support_metres": 72,
+          "up_sign": -1,
+          "normal_metric_UVY": [
+            0.20039681421709463,
+            -0.29710049497256336,
+            -0.9335804264972017
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Front_Short_Fold",
+      "role": "Buried broad front mound; local shoulder cuts into crowns without a shelf",
+      "center": [
+        -59,
+        -79,
+        724
+      ],
+      "scale": [
+        109,
+        76,
+        63
+      ],
+      "yaw_degrees": -17,
+      "planes": [
+        [
+          62.28192472791639,
+          3.799276505287507,
+          51.606578790206484,
+          48
+        ],
+        [
+          -16.72237126709621,
+          50.50342775709157,
+          46.07528320200774,
+          52
+        ],
+        [
+          -46.377944912817895,
+          -15.078951440895977,
+          55.6256983501124,
+          46
+        ],
+        [
+          26.8025622568073,
+          -44.0262280496852,
+          48.960195571789164,
+          53
+        ],
+        [
+          59.005845488079515,
+          45.69247627506924,
+          37.03047089442581,
+          83
+        ],
+        [
+          -61.77241199718446,
+          55.1279469683454,
+          24.616061094824243,
+          82
+        ],
+        [
+          -87.91304180995819,
+          -19.916656805733805,
+          33.384913646691906,
+          92
+        ],
+        [
+          -3.3913606865078095e-14,
+          -67.10401705727844,
+          29.576708455511124,
+          70
+        ],
+        [
+          87.28597945014542,
+          -16.307374179093383,
+          35.22915291865705,
+          88
+        ],
+        [
+          64.90278999449485,
+          27.19093874794315,
+          -45.318407421335024,
+          55
+        ],
+        [
+          -52.48191852099472,
+          50.365802285314814,
+          -36.13531549011591,
+          50
+        ],
+        [
+          -46.88186607021715,
+          -36.30400573748463,
+          -48.260799916495614,
+          57
+        ],
+        [
+          59.666410994502705,
+          -43.08040986047688,
+          -38.78667294551647,
+          47
+        ],
+        [
+          -6.935411579728627,
+          -30.531407044466814,
+          -57.55336383148386,
+          54
+        ]
+      ],
+      "metric_authorship": [
+        {
+          "role": "upper",
+          "azimuth_degrees": -12,
+          "inclination_from_horizontal_degrees": 35,
+          "support_metres": 48,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            0.5610424150542221,
+            -0.11925324669497091,
+            0.8191520442889918
+          ]
+        },
+        {
+          "role": "upper",
+          "azimuth_degrees": 86,
+          "inclination_from_horizontal_degrees": 43,
+          "support_metres": 52,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            0.04757380069723614,
+            0.6803370463345039,
+            0.7313537016191705
+          ]
+        },
+        {
+          "role": "upper",
+          "azimuth_degrees": 188,
+          "inclination_from_horizontal_degrees": 28,
+          "support_metres": 46,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            -0.46490269780907095,
+            -0.06533781320548052,
+            0.882947592858927
+          ]
+        },
+        {
+          "role": "upper",
+          "azimuth_degrees": 276,
+          "inclination_from_horizontal_degrees": 39,
+          "support_metres": 53,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            0.06578189337943793,
+            -0.6258729081007873,
+            0.7771459614569709
+          ]
+        },
+        {
+          "role": "shoulder",
+          "azimuth_degrees": 31,
+          "inclination_from_horizontal_degrees": 54,
+          "support_metres": 83,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            0.6934629132905097,
+            0.41667455535239106,
+            0.5877852522924731
+          ]
+        },
+        {
+          "role": "shoulder",
+          "azimuth_degrees": 111,
+          "inclination_from_horizontal_degrees": 67,
+          "support_metres": 82,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            -0.32987943687824817,
+            0.8593653136788735,
+            0.3907311284892737
+          ]
+        },
+        {
+          "role": "shoulder",
+          "azimuth_degrees": 181,
+          "inclination_from_horizontal_degrees": 58,
+          "support_metres": 92,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            -0.8479189343237682,
+            -0.01480048005248654,
+            0.5299192642332049
+          ]
+        },
+        {
+          "role": "shoulder",
+          "azimuth_degrees": 253,
+          "inclination_from_horizontal_degrees": 62,
+          "support_metres": 70,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            -0.25814889290500165,
+            -0.8443669823171055,
+            0.46947156278589086
+          ]
+        },
+        {
+          "role": "shoulder",
+          "azimuth_degrees": 328,
+          "inclination_from_horizontal_degrees": 56,
+          "support_metres": 88,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            0.703063735047448,
+            -0.43932298047005003,
+            0.5591929034707468
+          ]
+        },
+        {
+          "role": "return",
+          "azimuth_degrees": 14,
+          "inclination_from_horizontal_degrees": 44,
+          "support_metres": 55,
+          "up_sign": -1,
+          "normal_metric_UVY": [
+            0.6740240480782129,
+            0.16805306977561685,
+            -0.7193398003386512
+          ]
+        },
+        {
+          "role": "return",
+          "azimuth_degrees": 109,
+          "inclination_from_horizontal_degrees": 55,
+          "support_metres": 50,
+          "up_sign": -1,
+          "normal_metric_UVY": [
+            -0.2666898192789741,
+            0.774523474115396,
+            -0.5735764363510462
+          ]
+        },
+        {
+          "role": "return",
+          "azimuth_degrees": 211,
+          "inclination_from_horizontal_degrees": 40,
+          "support_metres": 57,
+          "up_sign": -1,
+          "normal_metric_UVY": [
+            -0.5509765203197738,
+            -0.3310600930689905,
+            -0.766044443118978
+          ]
+        },
+        {
+          "role": "return",
+          "azimuth_degrees": 297,
+          "inclination_from_horizontal_degrees": 52,
+          "support_metres": 47,
+          "up_sign": -1,
+          "normal_metric_UVY": [
+            0.3577493958300525,
+            -0.7021227225941818,
+            -0.6156614753256583
+          ]
+        },
+        {
+          "role": "lower_clip",
+          "azimuth_degrees": 244,
+          "inclination_from_horizontal_degrees": 24,
+          "support_metres": 54,
+          "up_sign": -1,
+          "normal_metric_UVY": [
+            -0.17830160866627834,
+            -0.36557247320823844,
+            -0.9135454576426009
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Back_Diagonal_Ledge",
+      "role": "Short rear mound with diagonal crown facets; no broad horizontal ledge",
+      "center": [
+        21,
+        96,
+        726
+      ],
+      "scale": [
+        129,
+        66,
+        58
+      ],
+      "yaw_degrees": 8,
+      "planes": [
+        [
+          63.18811092954809,
+          10.504264181226022,
+          49.715703440722514,
+          48
+        ],
+        [
+          -46.09368098363483,
+          36.31434829764669,
+          43.77315565292078,
+          49
+        ],
+        [
+          -58.08478178830568,
+          -24.936191103785173,
+          46.92298567374695,
+          53
+        ],
+        [
+          39.94108014351591,
+          -21.913823743974014,
+          51.67837840292534,
+          46
+        ],
+        [
+          116.54120482502636,
+          -13.765685053256904,
+          21.727182418122894,
+          111
+        ],
+        [
+          49.116552663332655,
+          49.319222547153025,
+          31.589064030871572,
+          65
+        ],
+        [
+          -90.57383121464943,
+          36.204853819635424,
+          26.331448984893715,
+          98
+        ],
+        [
+          -84.43159613718413,
+          -31.384865037740077,
+          34.09154463296344,
+          100
+        ],
+        [
+          18.435389349356655,
+          -59.551681009738246,
+          23.59072529839641,
+          66
+        ],
+        [
+          87.25264552265679,
+          23.73598140371793,
+          -37.28168136181928,
+          59
+        ],
+        [
+          -56.15865413123327,
+          28.732334671793758,
+          -45.70462370918987,
+          52
+        ],
+        [
+          -70.70744182827966,
+          -40.17740779751119,
+          -33.26743330836068,
+          60
+        ],
+        [
+          68.37158299032734,
+          -28.326901326892052,
+          -42.41851469391189,
+          57
+        ],
+        [
+          13.319968643620065,
+          23.76626797357929,
+          -53.77666356487367,
+          51
+        ]
+      ],
+      "metric_authorship": [
+        {
+          "role": "upper",
+          "azimuth_degrees": 26,
+          "inclination_from_horizontal_degrees": 31,
+          "support_metres": 48,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            0.4629131553465411,
+            0.2257778315383592,
+            0.8571673007021123
+          ]
+        },
+        {
+          "role": "upper",
+          "azimuth_degrees": 131,
+          "inclination_from_horizontal_degrees": 41,
+          "support_metres": 49,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            -0.4304134495199672,
+            0.49513403437078524,
+            0.754709580222772
+          ]
+        },
+        {
+          "role": "upper",
+          "azimuth_degrees": 228,
+          "inclination_from_horizontal_degrees": 36,
+          "support_metres": 53,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            -0.39330510227525695,
+            -0.43680956873307614,
+            0.8090169943749475
+          ]
+        },
+        {
+          "role": "upper",
+          "azimuth_degrees": 321,
+          "inclination_from_horizontal_degrees": 27,
+          "support_metres": 46,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            0.3528168834124206,
+            -0.2857054788290029,
+            0.8910065241883679
+          ]
+        },
+        {
+          "role": "shoulder",
+          "azimuth_degrees": -5,
+          "inclination_from_horizontal_degrees": 68,
+          "support_metres": 111,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            0.9236556400757017,
+            -0.08080939750840503,
+            0.37460659341591196
+          ]
+        },
+        {
+          "role": "shoulder",
+          "azimuth_degrees": 71,
+          "inclination_from_horizontal_degrees": 57,
+          "support_metres": 65,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            0.2730444290035272,
+            0.7929786008008274,
+            0.5446390350150271
+          ]
+        },
+        {
+          "role": "shoulder",
+          "azimuth_degrees": 150,
+          "inclination_from_horizontal_degrees": 63,
+          "support_metres": 98,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            -0.7716342848848005,
+            0.44550326209418384,
+            0.4539904997395468
+          ]
+        },
+        {
+          "role": "shoulder",
+          "azimuth_degrees": 224,
+          "inclination_from_horizontal_degrees": 54,
+          "support_metres": 100,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            -0.5819581232042503,
+            -0.5619904269861369,
+            0.5877852522924731
+          ]
+        },
+        {
+          "role": "shoulder",
+          "azimuth_degrees": 287,
+          "inclination_from_horizontal_degrees": 66,
+          "support_metres": 66,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            0.26709484279267987,
+            -0.873627865932047,
+            0.4067366430758002
+          ]
+        },
+        {
+          "role": "return",
+          "azimuth_degrees": 36,
+          "inclination_from_horizontal_degrees": 50,
+          "support_metres": 59,
+          "up_sign": -1,
+          "normal_metric_UVY": [
+            0.619742972929746,
+            0.4502696262659356,
+            -0.6427876096865394
+          ]
+        },
+        {
+          "role": "return",
+          "azimuth_degrees": 143,
+          "inclination_from_horizontal_degrees": 38,
+          "support_metres": 52,
+          "up_sign": -1,
+          "normal_metric_UVY": [
+            -0.49168911636317597,
+            0.37051432502693515,
+            -0.7880107536067219
+          ]
+        },
+        {
+          "role": "return",
+          "azimuth_degrees": 236,
+          "inclination_from_horizontal_degrees": 55,
+          "support_metres": 60,
+          "up_sign": -1,
+          "normal_metric_UVY": [
+            -0.4580640100299589,
+            -0.6791078223508459,
+            -0.5735764363510462
+          ]
+        },
+        {
+          "role": "return",
+          "azimuth_degrees": 329,
+          "inclination_from_horizontal_degrees": 43,
+          "support_metres": 57,
+          "up_sign": -1,
+          "normal_metric_UVY": [
+            0.5845866933780389,
+            -0.3512551224584034,
+            -0.7313537016191705
+          ]
+        },
+        {
+          "role": "lower_clip",
+          "azimuth_degrees": 82,
+          "inclination_from_horizontal_degrees": 22,
+          "support_metres": 51,
+          "up_sign": -1,
+          "normal_metric_UVY": [
+            0.05213516124577892,
+            0.37096094779983385,
+            -0.9271838545667874
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Front_Lower_Buttress",
+      "role": "Raised 32 m and mostly buried: wide attachment with tapered sloping underside",
+      "center": [
+        -111,
+        -31,
+        662
+      ],
+      "scale": [
+        96,
+        86,
+        67
+      ],
+      "yaw_degrees": -12,
+      "planes": [
+        [
+          57.23517463678668,
+          -26.124988699982026,
+          49.790703306985414,
+          49
+        ],
+        [
+          17.882641998392977,
+          44.01422226881979,
+          56.19092805234341,
+          54
+        ],
+        [
+          -46.364618234234264,
+          3.6338390587650413,
+          58.59952037833951,
+          55
+        ],
+        [
+          -6.177998199253201,
+          -52.6568382917647,
+          52.79672049165037,
+          48
+        ],
+        [
+          78.99431456419924,
+          17.64388065643926,
+          35.50459070362473,
+          78
+        ],
+        [
+          4.515767604339035,
+          77.19035610544897,
+          29.37086683486819,
+          75
+        ],
+        [
+          -70.04062488151547,
+          27.935752070207833,
+          40.321606551187244,
+          79
+        ],
+        [
+          -42.07578833414015,
+          -70.89002276716866,
+          24.010652619535126,
+          81
+        ],
+        [
+          56.70027889473122,
+          -54.4698960888428,
+          33.50000000000001,
+          75
+        ],
+        [
+          60.18486114862772,
+          -4.7170042053047965,
+          -52.06877941761705,
+          51
+        ],
+        [
+          -1.2644638402712989,
+          64.89513854964402,
+          -43.95595494236399,
+          53
+        ],
+        [
+          -79.3937355547757,
+          -4.973443439003314,
+          -37.465924532540036,
+          59
+        ],
+        [
+          18.38148445722849,
+          -57.426369562524165,
+          -48.19576662268963,
+          49
+        ],
+        [
+          -22.920387683100863,
+          -31.617812163769486,
+          -60.21920110204419,
+          54
+        ]
+      ],
+      "metric_authorship": [
+        {
+          "role": "upper",
+          "azimuth_degrees": -39,
+          "inclination_from_horizontal_degrees": 42,
+          "support_metres": 49,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            0.5200121484190409,
+            -0.4210975348571715,
+            0.7431448254773942
+          ]
+        },
+        {
+          "role": "upper",
+          "azimuth_degrees": 58,
+          "inclination_from_horizontal_degrees": 33,
+          "support_metres": 54,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            0.2886147167078459,
+            0.4618800967369667,
+            0.838670567945424
+          ]
+        },
+        {
+          "role": "upper",
+          "azimuth_degrees": 163,
+          "inclination_from_horizontal_degrees": 29,
+          "support_metres": 55,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            -0.4636257455782053,
+            0.14174461513740413,
+            0.8746197071393957
+          ]
+        },
+        {
+          "role": "upper",
+          "azimuth_degrees": 252,
+          "inclination_from_horizontal_degrees": 38,
+          "support_metres": 48,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            -0.19024985865758087,
+            -0.5855288579403553,
+            0.7880107536067219
+          ]
+        },
+        {
+          "role": "shoulder",
+          "azimuth_degrees": 2,
+          "inclination_from_horizontal_degrees": 58,
+          "support_metres": 78,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            0.8475314881697402,
+            0.029596451735373414,
+            0.5299192642332049
+          ]
+        },
+        {
+          "role": "shoulder",
+          "azimuth_degrees": 75,
+          "inclination_from_horizontal_degrees": 64,
+          "support_metres": 75,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            0.23262501680698122,
+            0.868168381835218,
+            0.43837114678907746
+          ]
+        },
+        {
+          "role": "shoulder",
+          "azimuth_degrees": 144,
+          "inclination_from_horizontal_degrees": 53,
+          "support_metres": 79,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            -0.6461096999395639,
+            0.46942617476287607,
+            0.6018150231520484
+          ]
+        },
+        {
+          "role": "shoulder",
+          "azimuth_degrees": 230,
+          "inclination_from_horizontal_degrees": 69,
+          "support_metres": 81,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            -0.6000939307982763,
+            -0.7151640979228268,
+            0.3583679495453004
+          ]
+        },
+        {
+          "role": "shoulder",
+          "azimuth_degrees": 301,
+          "inclination_from_horizontal_degrees": 60,
+          "support_metres": 75,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            0.4460360567883396,
+            -0.7423286577013641,
+            0.5000000000000001
+          ]
+        },
+        {
+          "role": "return",
+          "azimuth_degrees": -17,
+          "inclination_from_horizontal_degrees": 39,
+          "support_metres": 51,
+          "up_sign": -1,
+          "normal_metric_UVY": [
+            0.6018220829854768,
+            -0.1839954755480203,
+            -0.7771459614569709
+          ]
+        },
+        {
+          "role": "return",
+          "azimuth_degrees": 79,
+          "inclination_from_horizontal_degrees": 49,
+          "support_metres": 53,
+          "up_sign": -1,
+          "normal_metric_UVY": [
+            0.14400537680336106,
+            0.7408434395550485,
+            -0.6560590289905073
+          ]
+        },
+        {
+          "role": "return",
+          "azimuth_degrees": 172,
+          "inclination_from_horizontal_degrees": 56,
+          "support_metres": 59,
+          "up_sign": -1,
+          "normal_metric_UVY": [
+            -0.8209694358882806,
+            0.1153797297848903,
+            -0.5591929034707468
+          ]
+        },
+        {
+          "role": "return",
+          "azimuth_degrees": 274,
+          "inclination_from_horizontal_degrees": 44,
+          "support_metres": 49,
+          "up_sign": -1,
+          "normal_metric_UVY": [
+            0.04845691838005985,
+            -0.6929662175819667,
+            -0.7193398003386512
+          ]
+        },
+        {
+          "role": "lower_clip",
+          "azimuth_degrees": 225,
+          "inclination_from_horizontal_degrees": 26,
+          "support_metres": 54,
+          "up_sign": -1,
+          "normal_metric_UVY": [
+            -0.30997521057108013,
+            -0.30997521057108,
+            -0.898794046299167
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Rear_Lower_Buttress",
+      "role": "Raised 26 m and buried independently; short tapered underside without a hanging foot",
+      "center": [
+        111,
+        55,
+        691
+      ],
+      "scale": [
+        94,
+        80,
+        63
+      ],
+      "yaw_degrees": 19,
+      "planes": [
+        [
+          44.10344389908665,
+          -1.3107457005891354,
+          55.6256983501124,
+          49
+        ],
+        [
+          -10.272351872997755,
+          49.58076801876437,
+          48.960195571789164,
+          50
+        ],
+        [
+          -63.4839526969768,
+          -7.593266129566167,
+          46.07528320200774,
+          52
+        ],
+        [
+          11.824357122431039,
+          -43.58886604657884,
+          52.22936707096762,
+          46
+        ],
+        [
+          59.65258790094545,
+          -52.57196856807282,
+          25.624408513775414,
+          81
+        ],
+        [
+          66.88940829066043,
+          29.005834745289466,
+          37.91434645857905,
+          74
+        ],
+        [
+          -19.889427803118956,
+          67.89118111632953,
+          30.543006075519237,
+          75
+        ],
+        [
+          -78.64299520777436,
+          -4.680216116228434,
+          34.31225920594671,
+          78
+        ],
+        [
+          -12.129670906815594,
+          -73.45284520241741,
+          23.600215385202453,
+          71
+        ],
+        [
+          74.09850247481855,
+          -14.55913806933993,
+          -37.03047089442581,
+          54
+        ],
+        [
+          4.387562007943054,
+          53.40005102657238,
+          -46.81812400507584,
+          49
+        ],
+        [
+          -69.58979189516019,
+          5.181547138684901,
+          -42.15522820060807,
+          57
+        ],
+        [
+          0.9872933161066113,
+          -48.137869104725254,
+          -50.31403713297945,
+          50
+        ],
+        [
+          -22.78596439157377,
+          27.695089044700335,
+          -57.09739058330894,
+          49
+        ]
+      ],
+      "metric_authorship": [
+        {
+          "role": "upper",
+          "azimuth_degrees": 17,
+          "inclination_from_horizontal_degrees": 28,
+          "support_metres": 49,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            0.4489578882815462,
+            0.13726020113055823,
+            0.882947592858927
+          ]
+        },
+        {
+          "role": "upper",
+          "azimuth_degrees": 119,
+          "inclination_from_horizontal_degrees": 39,
+          "support_metres": 50,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            -0.305100579798148,
+            0.5504160161168589,
+            0.7771459614569709
+          ]
+        },
+        {
+          "role": "upper",
+          "azimuth_degrees": 207,
+          "inclination_from_horizontal_degrees": 43,
+          "support_metres": 52,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            -0.6076649883014538,
+            -0.309620776306325,
+            0.7313537016191705
+          ]
+        },
+        {
+          "role": "upper",
+          "azimuth_degrees": 302,
+          "inclination_from_horizontal_degrees": 34,
+          "support_metres": 46,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            0.29632709197164764,
+            -0.4742224771725511,
+            0.8290375725550416
+          ]
+        },
+        {
+          "role": "shoulder",
+          "azimuth_degrees": -27,
+          "inclination_from_horizontal_degrees": 66,
+          "support_metres": 81,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            0.8139749629022057,
+            -0.4147409588499573,
+            0.4067366430758002
+          ]
+        },
+        {
+          "role": "shoulder",
+          "azimuth_degrees": 46,
+          "inclination_from_horizontal_degrees": 53,
+          "support_metres": 74,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            0.5547788420001426,
+            0.5744903083407764,
+            0.6018150231520484
+          ]
+        },
+        {
+          "role": "shoulder",
+          "azimuth_degrees": 123,
+          "inclination_from_horizontal_degrees": 61,
+          "support_metres": 75,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            -0.4763520333015261,
+            0.7335178065228574,
+            0.4848096202463371
+          ]
+        },
+        {
+          "role": "shoulder",
+          "azimuth_degrees": 203,
+          "inclination_from_horizontal_degrees": 57,
+          "support_metres": 78,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            -0.7720003282414775,
+            -0.3276946974440555,
+            0.5446390350150271
+          ]
+        },
+        {
+          "role": "shoulder",
+          "azimuth_degrees": 281,
+          "inclination_from_horizontal_degrees": 68,
+          "support_metres": 71,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            0.1769150198192414,
+            -0.9101488756965439,
+            0.37460659341591196
+          ]
+        },
+        {
+          "role": "return",
+          "azimuth_degrees": 6,
+          "inclination_from_horizontal_degrees": 54,
+          "support_metres": 54,
+          "up_sign": -1,
+          "normal_metric_UVY": [
+            0.8045851146309164,
+            0.0845653031794291,
+            -0.5877852522924731
+          ]
+        },
+        {
+          "role": "return",
+          "azimuth_degrees": 105,
+          "inclination_from_horizontal_degrees": 42,
+          "support_metres": 49,
+          "up_sign": -1,
+          "normal_metric_UVY": [
+            -0.17318374458667046,
+            0.6463305338424854,
+            -0.7431448254773942
+          ]
+        },
+        {
+          "role": "return",
+          "azimuth_degrees": 194,
+          "inclination_from_horizontal_degrees": 48,
+          "support_metres": 57,
+          "up_sign": -1,
+          "normal_metric_UVY": [
+            -0.7210702481648369,
+            -0.1797830048845753,
+            -0.6691306063588582
+          ]
+        },
+        {
+          "role": "return",
+          "azimuth_degrees": 290,
+          "inclination_from_horizontal_degrees": 37,
+          "support_metres": 50,
+          "up_sign": -1,
+          "normal_metric_UVY": [
+            0.20583286047400434,
+            -0.5655211363340803,
+            -0.7986355100472928
+          ]
+        },
+        {
+          "role": "lower_clip",
+          "azimuth_degrees": 144,
+          "inclination_from_horizontal_degrees": 25,
+          "support_metres": 49,
+          "up_sign": -1,
+          "normal_metric_UVY": [
+            -0.34190535588142545,
+            0.24840878160066351,
+            -0.9063077870366499
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Left_Short_Accent",
+      "role": "Inward buried accent leaves one small local angular fold",
+      "center": [
+        -205,
+        -30,
+        735
+      ],
+      "scale": [
+        39,
+        41,
+        32
+      ],
+      "yaw_degrees": 23,
+      "planes": [
+        [
+          20.663703643539083,
+          -0.3791830215121093,
+          27.13753907700563,
+          25
+        ],
+        [
+          -15.633874547163154,
+          22.621678800482638,
+          23.403318451813455,
+          28
+        ],
+        [
+          -7.482722358022026,
+          -16.86966013133907,
+          28.512208774027773,
+          25
+        ],
+        [
+          25.513952517183846,
+          -20.21209826645192,
+          18.354445963233477,
+          35
+        ],
+        [
+          19.60137084251783,
+          30.550495409202192,
+          14.027876697250479,
+          35
+        ],
+        [
+          -28.04823736238701,
+          18.425277949132926,
+          16.957416455462557,
+          33
+        ],
+        [
+          -22.416010605784553,
+          -30.16252803289834,
+          11.467774385449612,
+          36
+        ],
+        [
+          27.335223546484222,
+          6.634466107225082,
+          -22.229067854687912,
+          27
+        ],
+        [
+          -16.9781977606054,
+          17.848874568841584,
+          -25.2163441154151,
+          28
+        ],
+        [
+          -6.095761566625591,
+          -32.96817847608276,
+          -18.354445963233477,
+          27
+        ]
+      ],
+      "metric_authorship": [
+        {
+          "role": "upper",
+          "azimuth_degrees": 22,
+          "inclination_from_horizontal_degrees": 32,
+          "support_metres": 25,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            0.4913325860209388,
+            0.19851125035986744,
+            0.848048096156426
+          ]
+        },
+        {
+          "role": "upper",
+          "azimuth_degrees": 149,
+          "inclination_from_horizontal_degrees": 43,
+          "support_metres": 28,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            -0.584586693378039,
+            0.35125512245840335,
+            0.7313537016191705
+          ]
+        },
+        {
+          "role": "upper",
+          "azimuth_degrees": 268,
+          "inclination_from_horizontal_degrees": 27,
+          "support_metres": 25,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            -0.015844039948626983,
+            -0.4537139409935182,
+            0.8910065241883679
+          ]
+        },
+        {
+          "role": "shoulder",
+          "azimuth_degrees": -14,
+          "inclination_from_horizontal_degrees": 55,
+          "support_metres": 35,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            0.7948197277438546,
+            -0.19817081533873587,
+            0.5735764363510462
+          ]
+        },
+        {
+          "role": "shoulder",
+          "azimuth_degrees": 79,
+          "inclination_from_horizontal_degrees": 64,
+          "support_metres": 35,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            0.17149798902476385,
+            0.8822806681681806,
+            0.43837114678907746
+          ]
+        },
+        {
+          "role": "shoulder",
+          "azimuth_degrees": 171,
+          "inclination_from_horizontal_degrees": 58,
+          "support_metres": 33,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            -0.8376072168376061,
+            0.13266395025061686,
+            0.5299192642332049
+          ]
+        },
+        {
+          "role": "shoulder",
+          "azimuth_degrees": 255,
+          "inclination_from_horizontal_degrees": 69,
+          "support_metres": 36,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            -0.2416283945124097,
+            -0.9017694448716104,
+            0.3583679495453004
+          ]
+        },
+        {
+          "role": "return",
+          "azimuth_degrees": 36,
+          "inclination_from_horizontal_degrees": 46,
+          "support_metres": 27,
+          "up_sign": -1,
+          "normal_metric_UVY": [
+            0.5819581232042503,
+            0.4228173260260713,
+            -0.6946583704589973
+          ]
+        },
+        {
+          "role": "return",
+          "azimuth_degrees": 158,
+          "inclination_from_horizontal_degrees": 38,
+          "support_metres": 28,
+          "up_sign": -1,
+          "normal_metric_UVY": [
+            -0.5708313798007189,
+            0.23063084796915956,
+            -0.7880107536067219
+          ]
+        },
+        {
+          "role": "return",
+          "azimuth_degrees": 282,
+          "inclination_from_horizontal_degrees": 55,
+          "support_metres": 27,
+          "up_sign": -1,
+          "normal_metric_UVY": [
+            0.17031128656494843,
+            -0.8012516067574694,
+            -0.5735764363510462
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Right_Short_Accent",
+      "role": "Inward raised accent leaves only one local side/back fold",
+      "center": [
+        201,
+        30,
+        715
+      ],
+      "scale": [
+        36,
+        40,
+        31
+      ],
+      "yaw_degrees": -26,
+      "planes": [
+        [
+          23.614527888817157,
+          -0.4579923528316751,
+          23.39599698690593,
+          26
+        ],
+        [
+          -10.503565661983862,
+          15.487447133650711,
+          27.11321092132127,
+          24
+        ],
+        [
+          -4.3994673231073635,
+          -22.997629371063894,
+          25.079526825623372,
+          27
+        ],
+        [
+          23.837287965018636,
+          23.84798943199445,
+          14.073705491925951,
+          32
+        ],
+        [
+          -21.300392646321605,
+          22.069930537056234,
+          18.221342821066667,
+          36
+        ],
+        [
+          -24.010568957566583,
+          -25.763041021170253,
+          11.61280439589327,
+          34
+        ],
+        [
+          21.349067247928165,
+          -23.72118583103131,
+          16.88381008546584,
+          33
+        ],
+        [
+          26.979939436619798,
+          9.74034858458746,
+          -19.085505735095406,
+          27
+        ],
+        [
+          -20.732324011213244,
+          15.53792124388898,
+          -22.299533810498186,
+          28
+        ],
+        [
+          1.1338763298491432,
+          -24.039610263145722,
+          -24.757700811466076,
+          26
+        ]
+      ],
+      "metric_authorship": [
+        {
+          "role": "upper",
+          "azimuth_degrees": -27,
+          "inclination_from_horizontal_degrees": 41,
+          "support_metres": 26,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            0.5845528750832276,
+            -0.2978445664300422,
+            0.754709580222772
+          ]
+        },
+        {
+          "role": "upper",
+          "azimuth_degrees": 101,
+          "inclination_from_horizontal_degrees": 29,
+          "support_metres": 24,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            -0.09250603658808777,
+            0.4759023020307434,
+            0.8746197071393957
+          ]
+        },
+        {
+          "role": "upper",
+          "azimuth_degrees": 232,
+          "inclination_from_horizontal_degrees": 36,
+          "support_metres": 27,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            -0.36187673560104816,
+            -0.46318109961790904,
+            0.8090169943749475
+          ]
+        },
+        {
+          "role": "shoulder",
+          "azimuth_degrees": 16,
+          "inclination_from_horizontal_degrees": 63,
+          "support_metres": 32,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            0.8564904425334172,
+            0.2455946823429768,
+            0.4539904997395468
+          ]
+        },
+        {
+          "role": "shoulder",
+          "azimuth_degrees": 111,
+          "inclination_from_horizontal_degrees": 54,
+          "support_metres": 36,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            -0.28992576142145166,
+            0.7552824306520477,
+            0.5877852522924731
+          ]
+        },
+        {
+          "role": "shoulder",
+          "azimuth_degrees": 198,
+          "inclination_from_horizontal_degrees": 68,
+          "support_metres": 34,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            -0.8818042466894013,
+            -0.28651556797120686,
+            0.37460659341591196
+          ]
+        },
+        {
+          "role": "shoulder",
+          "azimuth_degrees": 289,
+          "inclination_from_horizontal_degrees": 57,
+          "support_metres": 33,
+          "up_sign": 1,
+          "normal_metric_UVY": [
+            0.2730444290035268,
+            -0.7929786008008275,
+            0.5446390350150271
+          ]
+        },
+        {
+          "role": "return",
+          "azimuth_degrees": -8,
+          "inclination_from_horizontal_degrees": 52,
+          "support_metres": 27,
+          "up_sign": -1,
+          "normal_metric_UVY": [
+            0.780341887121718,
+            -0.10966990016932557,
+            -0.6156614753256583
+          ]
+        },
+        {
+          "role": "return",
+          "azimuth_degrees": 120,
+          "inclination_from_horizontal_degrees": 44,
+          "support_metres": 28,
+          "up_sign": -1,
+          "normal_metric_UVY": [
+            -0.34732918522949846,
+            0.6015917957689934,
+            -0.7193398003386512
+          ]
+        },
+        {
+          "role": "return",
+          "azimuth_degrees": 247,
+          "inclination_from_horizontal_degrees": 37,
+          "support_metres": 26,
+          "up_sign": -1,
+          "normal_metric_UVY": [
+            -0.23514786313799826,
+            -0.5539736496920531,
+            -0.7986355100472928
+          ]
+        }
+      ]
+    }
+  ]
+}

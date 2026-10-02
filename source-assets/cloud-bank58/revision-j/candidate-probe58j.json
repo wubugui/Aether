@@ -1,0 +1,19 @@
+{
+  "candidate": "58J",
+  "passed": false,
+  "state": "completed",
+  "native_started": false,
+  "images": [],
+  "visual_acceptance": false,
+  "geometry_modified_by_probe": false,
+  "cpu_affinity": [
+    0,
+    1
+  ],
+  "design_sha256": "ef8a57ca98f7c5d20179dbbf7755e6168ee1d0600ab07cb8dcdd6044920a66ac",
+  "stage": "build",
+  "error": "Shell is not genus zero",
+  "traceback": "Traceback (most recent call last):\n  File \"/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-j/probe_candidate58j.py\", line 34, in main\n    report['stage']='build';mesh=poly.build(config)\n                                 ^^^^^^^^^^^^^^^^^^\n  File \"/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-j/poly58j.py\", line 229, in build\n    proof=topology(V,F,tol)\n          ^^^^^^^^^^^^^^^^^\n  File \"/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-j/poly58j.py\", line 212, in topology\n    euler=len(V)-len(undirected)+len(F);require(euler==2,'Shell is not genus zero')\n                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-j/poly58j.py\", line 16, in require\n    raise ValueError(message)\nValueError: Shell is not genus zero\n",
+  "elapsed_seconds": 0.24523836900334572,
+  "actual_peak_rss_kib": 27136
+}

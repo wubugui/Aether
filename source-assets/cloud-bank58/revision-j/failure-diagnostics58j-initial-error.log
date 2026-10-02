@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-j/diagnose_failure58j.py", line 46, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-j/diagnose_failure58j.py", line 33, in main
+    if n>2 and not all(simplex[tuple(x)]['positive_volume_overlap'] for x in combinations(ids,n-1)):continue
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-j/diagnose_failure58j.py", line 33, in <genexpr>
+    if n>2 and not all(simplex[tuple(x)]['positive_volume_overlap'] for x in combinations(ids,n-1)):continue
+                       ~~~~~~~^^^^^^^^^^
+KeyError: (0, 1, 2)

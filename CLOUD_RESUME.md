@@ -1,6 +1,15 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 05:37 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 05:54 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 05:54 v6真实GL轻夹具失败；J单候选两handle静态拒绝
+
+- I原生源/两图视觉拒绝及北plane真实采集已完整发布 **a7657807e5b22b77ffa3d06270bcbbc1261d2cc3**，tree **78e605ab0140568f8c4d741e939c7aa7f95c7249**、parent403c1559；72路径/51blob新bare公共Git字节/SHA回读一致，本地7193eaa同树soft对齐
+- [v6四入口原生解析](cloud-evidence/nearbay61-orbit-parse-20261002T054513Z-_nzqh78v/wrapper-report.json)均0，无错误，0.480/0.179/0.154/0.254秒；1557身份与全1483加载闭包/启动/cache前后匹配
+- [v6第一真实小GL夹具](cloud-evidence/nearbay61-continuous-v6-20261002T054712Z-k649_9in/RESULT.md)X11/gl_compatibility/opengl3/llvmpipe、320×180、CPU2，child/wrapper1，1.589秒/248884KiB，1587旧保护及38源码不变。48项实际执行、47项布尔通过；唯一命名失败是把合法负号RefCounted ID误限为>0，原生160字节/40float与setter/getter已读
+- 同时两条真实engineerror保持失败：对合法0实例空buffer调用HashingContext.update(empty)返回FAILED；另GLES3 nullmesh出现在fixture第96行创建/释放remove案例处，其确切对象/生命周期原因尚需隔离，不能猜成已定位。正准备支持空哈希/非零signed ID、显式空绑定及负控清理，不删负控/滤日志。未开v6大world，不称停船环绕通过
+- [J单一物理斜面候选](source-assets/cloud-bank58/revision-j/README.md)在未改genus0门前停住：662V/1328T/Euler−2、两个handle；0引擎/0源/0图，673旧源证据不变。只读诊断露出面积96.66%在15–60°，固定余边24.34%/12.17%，不能代替拓扑或实图。Main/Rear/Back与Main/Front/Left两组各缺三重交叠（共同半径缺4.2467/2.0295m），尚未修改/试验局部位移，原诊断程序首次key错误也保留
+- MM保存bulk读取另在源码准备：已独立核775binding/57797保存实例（含隐藏雨雪3000），但尚无新原生bulk/占用结果。J局部连接只在失败发布后讨论；本项即时发布，所有旧数据不追改。E/F2八件Slack待频道回答，全部GOAL/硬件GPU验收未通过
 
 ## 05:37 I两原图拒绝，北保存平面分类实际通过
 
