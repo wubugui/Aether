@@ -1,0 +1,199 @@
+{
+  "version": "cloud58k-cache-readback-v3",
+  "passed": true,
+  "state": "completed",
+  "stages": [
+    {
+      "status": "finished",
+      "command": [
+        "/workspace/scratch/a29d03198654/tools-feiting/Godot_v4.5.1-stable_linux.x86_64",
+        "--headless",
+        "--path",
+        "/tmp/cloud58k-cache-readback-v3-bth4b1yl",
+        "--script",
+        "res://probe58k.gd",
+        "--",
+        "import",
+        "/workspace/scratch/a29d03198654/Aether/cloud-evidence/cloudbank58k-cache-readback-v3-20261002T103637Z-zfmq_a2d/native-import.json"
+      ],
+      "cpu_affinity": [
+        0,
+        1
+      ],
+      "wall_timeout_seconds": 20,
+      "wall_timeout_limit_seconds": 720,
+      "timeout_triggered": false,
+      "wrapper_received_signal": null,
+      "returncode": 0,
+      "native_exit_observed": true,
+      "max_rss_kib": 118740,
+      "rss_limit_triggered": false,
+      "max_aggregate_observed_rss_kib": 152524,
+      "pid": 5,
+      "signal": null,
+      "wall_seconds": 0.5107684219983639
+    },
+    {
+      "status": "finished",
+      "command": [
+        "/workspace/scratch/a29d03198654/tools-feiting/Godot_v4.5.1-stable_linux.x86_64",
+        "--headless",
+        "--path",
+        "/tmp/cloud58k-cache-readback-v3-bth4b1yl",
+        "--script",
+        "res://probe58k.gd",
+        "--",
+        "reload",
+        "/workspace/scratch/a29d03198654/Aether/cloud-evidence/cloudbank58k-cache-readback-v3-20261002T103637Z-zfmq_a2d/native-reload.json"
+      ],
+      "cpu_affinity": [
+        0,
+        1
+      ],
+      "wall_timeout_seconds": 20,
+      "wall_timeout_limit_seconds": 720,
+      "timeout_triggered": false,
+      "wrapper_received_signal": null,
+      "returncode": 0,
+      "native_exit_observed": true,
+      "max_rss_kib": 117604,
+      "rss_limit_triggered": false,
+      "max_aggregate_observed_rss_kib": 153204,
+      "pid": 12,
+      "signal": null,
+      "wall_seconds": 0.18118257400055882
+    }
+  ],
+  "run": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/cloudbank58k-cache-readback-v3-20261002T103637Z-zfmq_a2d",
+  "limits": {
+    "total_seconds": 120,
+    "native_stage_seconds": [
+      20,
+      20
+    ],
+    "cpu_threads": 2,
+    "max_wrapper_plus_child_rss_kib": 1572864
+  },
+  "blender_started": false,
+  "export_performed": false,
+  "glb_derived": false,
+  "editor_import_performed": false,
+  "source_saved": false,
+  "world_loaded": false,
+  "images": 0,
+  "visual_acceptance": false,
+  "temporary_project": "/tmp/cloud58k-cache-readback-v3-bth4b1yl",
+  "import_validation": {
+    "geometry": {
+      "passed": true,
+      "authored_vertex_count": 194,
+      "render_vertex_count": 1152,
+      "triangles": 384,
+      "maximum_position_error_m": 0.0,
+      "maximum_normal_component_error": 0.00010136112354180993,
+      "godot_relative_bounds": [
+        [
+          -233.44503784179688,
+          606.328857421875,
+          -183.78085327148438
+        ],
+        [
+          226.94137573242188,
+          851.9830932617188,
+          165.92005920410156
+        ]
+      ],
+      "front_face": "clockwise"
+    },
+    "material": {
+      "passed": true,
+      "color_representation": "sRGB Godot property",
+      "maximum_color_error": 4.7566141803123685e-08
+    },
+    "tangents": {
+      "passed": true,
+      "count": 1152,
+      "components": 4608,
+      "handedness": 1,
+      "maximum_unit_error": 1.1187862747341626e-07,
+      "maximum_normalized_absolute_dot": 0.00016838992018380905,
+      "unit_bound": 3.814697265625e-06,
+      "orthogonality_bound": 0.00034205286850920414,
+      "bound_source": "signed-oct16 positive-handedness quantization and explicit float32 operation budget; not fitted to observations",
+      "prequantization_exact_orthogonality_proven": false
+    },
+    "exact_original_surface_storage": true,
+    "exact_float32_aabb_storage": true,
+    "vertex_tolerance_unchanged": 1e-05,
+    "aabb_endpoint_epsilon_added": false
+  },
+  "reload_validation": {
+    "geometry": {
+      "passed": true,
+      "authored_vertex_count": 194,
+      "render_vertex_count": 1152,
+      "triangles": 384,
+      "maximum_position_error_m": 0.0,
+      "maximum_normal_component_error": 0.00010136112354180993,
+      "godot_relative_bounds": [
+        [
+          -233.44503784179688,
+          606.328857421875,
+          -183.78085327148438
+        ],
+        [
+          226.94137573242188,
+          851.9830932617188,
+          165.92005920410156
+        ]
+      ],
+      "front_face": "clockwise"
+    },
+    "material": {
+      "passed": true,
+      "color_representation": "sRGB Godot property",
+      "maximum_color_error": 4.7566141803123685e-08
+    },
+    "tangents": {
+      "passed": true,
+      "count": 1152,
+      "components": 4608,
+      "handedness": 1,
+      "maximum_unit_error": 1.1187862747341626e-07,
+      "maximum_normalized_absolute_dot": 0.00016838992018380905,
+      "unit_bound": 3.814697265625e-06,
+      "orthogonality_bound": 0.00034205286850920414,
+      "bound_source": "signed-oct16 positive-handedness quantization and explicit float32 operation budget; not fitted to observations",
+      "prequantization_exact_orthogonality_proven": false
+    },
+    "exact_original_surface_storage": true,
+    "exact_float32_aabb_storage": true,
+    "vertex_tolerance_unchanged": 1e-05,
+    "aabb_endpoint_epsilon_added": false
+  },
+  "inputs_unchanged": true,
+  "changed_inputs": [],
+  "input_read_errors": [],
+  "main_project_unchanged": true,
+  "source_unchanged": true,
+  "temporary_project_manifest": {
+    "imported.scn": {
+      "bytes": 11096,
+      "sha256": "1b94f241fba9cc48a7879ec71dee4ecff3854955be37f344158494997d3c3e42"
+    },
+    "probe58k.gd": {
+      "bytes": 9424,
+      "sha256": "12f829310b3da07715e95abcd02f1647e1acda190f15b5b9a80a195a169ecf09"
+    },
+    "project.godot": {
+      "bytes": 176,
+      "sha256": "538cecdf153c3ffaa537d126bcff8bd5d70b6ad8dbb277b0938149699abfec91"
+    },
+    "roundtrip.tscn": {
+      "bytes": 34772,
+      "sha256": "91ab3412c67b5f82449396677a30a9bbe1542a338c00150dc1822910cdf7f789"
+    }
+  },
+  "elapsed_seconds": 8.787844610997126,
+  "logged_errors": []
+}

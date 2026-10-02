@@ -1,6 +1,16 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 10:19 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 10:46 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 10:46 K实际native保存/fresh reload完整通过
+
+- Kcache-only与北局部设计准备已完整发布 **5332547352c0989a5b41d9185abd89b000ee291d**，tree **c61705969da6eeea2d7fc89b710c894491683000**、parent67440e1e；30路径/30blob新bare公共Git逐字节/SHA核回一致，本地5108ab9同树对齐。原create_tree经原授权一次同参数重试成功，5已存blob不重传
+- [K cache-only实际终态](cloud-evidence/cloudbank58k-cache-readback-v3-20261002T103637Z-zfmq_a2d/RESULT.md) **两Godot child0/.511与.181秒、wrapper0/总8.788秒**，CPU2、aggregate153204KiB，无日志error/超时。固定既有11096B SCN→实际保存 **34772B roundtrip.tscn，SHA91ab3412c67b5f82449396677a30a9bbe1542a338c00150dc1822910cdf7f789**→独立新进程reopen，全native报告除mode/PID/roundtrip_saved外逐项精确相同
+- 194作者点/1152render vertices/384定向三角，位置误差0，normal最大.0001013611<原Godot2e-4；完整V/N/T/I、原packed storage、材质、identity变换、AABB pos/f32 size/end及零external依赖往返均过。T单位误差1.12e-7，normalized|dot|.0001683899在独立推导界内，不冒称未知prequantization/插入call已证明；原V/flat/material门不变，AABB无新增epsilon
+- source/1114准备身份/原raw与忠实GLB/已取actual normals/原cache及整个mainproject全未变，前后完整清单无损gzip原SHA保留。无Blender重复、无derive/import/世界/图。本轮连同此前成功editor import完成忠实资源链；旧v1/v2失败不追改，**全世界/天气/硬件GPU/全部GOAL仍未验收**
+- 下一仅一个正确原cloud单位的真实试放，先核world-axis relative anchor(3958,0,3667)与实际root/天气材质语义，不双旋/recenter/四root铺开。已有固定4rad窄观察不原样重跑；新几何用自己的有限受影响视图。源/侧背原生视觉仍需实际证据
+- 北build-v1作者源码及167支撑预解并行：4目标完整GPU corner关联已逐float32核实，保原index/RGBA8；当前仅离线候选，零blend/placement/世界改动，支撑失败行不得暗中删除或移动整组
+- 项目阶段图报已有17件交付确认，余23件发送工具两次拒绝后停止，不第三试或换route；私密沟通定位符及详细交付收据只保本地交付目录，不加入公开项目。该未发布记录提交已独立保留且不作为本次工程parent；本次仅从已核5332547接续K授权模型/代码/证据。当前无Aether engine，已向MAZ释放
 
 ## 10:19 北局部山脊设计与K cache-only准备；原八件Slack已送
 
