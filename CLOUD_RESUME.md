@@ -1,6 +1,15 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 11:05 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 11:33 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 11:33 北首次native超时保全；K四图世界试放准备完成
+
+- 北实际作者管线/167支撑预解已完整发布 **ea8f6f2bb07d3fccf74ba139a1c9ae7d96bee488**，tree **d520f9d816220e8851f6388be5ba9334837ff5bb**、parent24e2692b；72路径/69唯一blob新bare公共Git逐字节/SHA核回，本地dfd46a0同树对齐
+- [北source首轮真实失败](cloud-evidence/north-ridge62-source-20261002T111415Z-wlgkmd5l/RESULT.md)wrapper1/总55.139秒，唯一build child PID5在剩余48.652秒界被终止，实际48.704秒/-9；CPU2、peak338460KiB、aggregate390320KiB，无RSS触界。**0完成blend/raw/图**，fresh reopen/views未开始。原stdout/stderr空且无phase记录，不能先认定耗时根因
+- 77冻结输入、7336原保护文件与早先输出全未变；saved_source_unchanged=false仅新文件不存在，不是原资产受损。原60秒失败/准入/终态全保，两1440730B完整manifest无损gzip、5.4MB绑定原样XZ；不修改原freeze。下一独立恢复准备将用同字节嵌入文本加载/属性批写与逐阶段计时，另明确有限预算，不追改旧失败或减模型验收门
+- [K单unit真实世界试放准备](source-assets/cloud-bank58/revision-k/world-trial-v1/README.md)已47文件冻结 SHA4c99da76ec61bae16a3ec445f187286ef68471d1261bef989eb1c2bb352ae148，12普通/-O、独立审查及4884主工程身份核过。**尚无engine/世界图**；发布后parse≤30秒与单次renderer≤240秒/outer300，CPU2/3GiB，复用同一临时工作副本
+- 明确只试CloudSea_1_1，原world-axis anchor(3958,0,3667)/作者材质不变；K XZ包围面积只有旧单元7.486%，邻云真实indexed三角遮挡及移除后露洞风险保持。四原PNG固定1216 off/on、side/back、near，1179×664按实际Image/IHDR核，纹理metadata与像素不混同；不挪机位/拉伸K/隐藏邻云求通过
+- 全GOAL、北实体/支撑与K世界视觉仍未验收。私密交付记录只本地，已送17不重复，余23工具拒绝保持停止；当前无Aether engine，重窗口与MAZ错峰
 
 ## 11:05 北实际作者管线与167连续支撑预解已封存
 

@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "lossless_gzip": [
+    {
+      "raw": "protected-before.json",
+      "bytes": 1440730,
+      "sha256": "96879f54756cda1e7b053d44c5e14a6efe7b07b0f97a198db25c11ff6a25b1a4",
+      "stored": "protected-before.json.gz",
+      "stored_bytes": 334929,
+      "stored_sha256": "8146c1f1d16a7b5db46540069237ac8b32d7a80147ab86d15a066df656aceff2"
+    },
+    {
+      "raw": "protected-after.json",
+      "bytes": 1440730,
+      "sha256": "96879f54756cda1e7b053d44c5e14a6efe7b07b0f97a198db25c11ff6a25b1a4",
+      "stored": "protected-after.json.gz",
+      "stored_bytes": 334929,
+      "stored_sha256": "8146c1f1d16a7b5db46540069237ac8b32d7a80147ab86d15a066df656aceff2"
+    }
+  ],
+  "binding_snapshot_storage": "preparation-snapshot/bindings-storage.json",
+  "restore": "Restore missing raw only; verify all original size/SHA values; never overwrite an existing different file."
+}

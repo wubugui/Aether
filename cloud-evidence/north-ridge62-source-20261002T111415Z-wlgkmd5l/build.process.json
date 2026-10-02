@@ -1,0 +1,36 @@
+{
+  "status": "finished",
+  "command": [
+    "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+    "--factory-startup",
+    "--disable-autoexec",
+    "-b",
+    "-t",
+    "2",
+    "--python-exit-code",
+    "1",
+    "--python",
+    "/workspace/scratch/a29d03198654/Aether/source-assets/north-ridge62-authoring/build-v1/native62.py",
+    "--",
+    "--mode",
+    "build",
+    "--out",
+    "/workspace/scratch/a29d03198654/Aether/cloud-evidence/north-ridge62-source-20261002T111415Z-wlgkmd5l/outputs"
+  ],
+  "cpu_affinity": [
+    0,
+    1
+  ],
+  "wall_timeout_seconds": 48.65194236498792,
+  "wall_timeout_limit_seconds": 720,
+  "timeout_triggered": true,
+  "wrapper_received_signal": null,
+  "returncode": -9,
+  "native_exit_observed": true,
+  "max_rss_kib": 338460,
+  "rss_limit_triggered": false,
+  "max_aggregate_observed_rss_kib": 390320,
+  "pid": 5,
+  "signal": 9,
+  "wall_seconds": 48.703885249007726
+}

@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/candidate61-coast/Game61Coast.tscn" id="1_base"]
+[ext_resource type="Script" path="res://cloud_k_trial/trial58k.gd" id="2_trial"]
+
+[node name="Skyfarer" instance=ExtResource("1_base")]
+
+[node name="CloudKTrial" type="Node3D" parent="SkyRegion39"]
+script = ExtResource("2_trial")
+enabled = false
