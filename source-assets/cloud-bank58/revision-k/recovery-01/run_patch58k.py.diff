@@ -1,0 +1,28 @@
+--- frozen/run_patch58k.py
++++ recovery-01/run_patch58k.py
+@@ -19,13 +19,14 @@
+ import traceback
+ import zlib
+ SUPPLEMENT = Path(__file__).resolve().parent
+-P = SUPPLEMENT
++P = SUPPLEMENT.parent
+ sys.path.insert(0,str(SUPPLEMENT))
++sys.path.insert(1,str(P))
+ import contact_guard58k as contact_guard
+ import source_contact58k as contact_entry
+ sys.path.insert(0, str(P.parent / 'revision-d/native-01'))
+ import common58d as c
+-SOURCE = P / 'authored_envelope58k.blend'
++SOURCE = SUPPLEMENT / 'authored_envelope58k.blend'
+ VIEWS = ['1216-source-front', 'shared-side-back']
+ LIMIT_SECONDS = 30
+ MAX_RSS_KIB = 1572864
+@@ -97,7 +98,7 @@
+     parser.parse_args()
+     start = time.monotonic()
+     stamp = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')
+-    run = Path(tempfile.mkdtemp(prefix='cloudbank58k-contact-v1-' + stamp + '-', dir=c.ROOT / 'cloud-evidence'))
++    run = Path(tempfile.mkdtemp(prefix='cloudbank58k-recovery01-' + stamp + '-', dir=c.ROOT / 'cloud-evidence'))
+     for name in ('inputs', 'outputs', 'blender-config', 'xdg-cache', 'xdg-config', 'xdg-data'):
+         (run / name).mkdir()
+     print(run, flush=True)

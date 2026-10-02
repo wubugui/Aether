@@ -1,0 +1,63 @@
+{
+  "status": "Prepared source-only RNA lifetime repair; native validation pending",
+  "passed": true,
+  "native_started": false,
+  "native_proof": false,
+  "native_source_created": false,
+  "images": [],
+  "visual_acceptance": false,
+  "cause_status": "Source hazard established; original native crash cause remains a hypothesis",
+  "original_773_protected_and_35_prepared_unchanged": true,
+  "protected_identity_count": 828,
+  "original_failure_crash_sha256": "c161427c2d022509acd84204e57d533f2e6c6c1429db99832755c396b01169f8",
+  "recipe_sha256": "a3fef870bce69bbbc9e607c5a105a4e80da352035e491bc04f932d371db45bfa",
+  "corrected_rebuild_sha256": "0683db85daa45bf964262edb84abf1c44aebdcf3ccd16de7868eedfed5c7828e",
+  "corrected_sources": {
+    "rebuild58k.py": "0683db85daa45bf964262edb84abf1c44aebdcf3ccd16de7868eedfed5c7828e",
+    "run_patch58k.py": "fb822db1f72eac8536d5e60ca05f0294b285add68888156b867d51530ea1f811",
+    "source_contact58k.py": "9aef20a6328b381533a3d0f1f2d56a5953dbddb81af87dc042488915606a5b0e",
+    "test_recovery_static58k.py": "34067c82f131cf31cfc82d0a6f99a438fd30869ac04a0dcc70fadb0c0866d8b4"
+  },
+  "static_tests": {
+    "static-tests58k.log": {
+      "checks": 2375,
+      "sha256": "46e0c97f995759749627ec35444f3fd528af8278c708287de504c05081afd441",
+      "passed": true
+    },
+    "static-tests58k-optimized.log": {
+      "checks": 2375,
+      "sha256": "46e0c97f995759749627ec35444f3fd528af8278c708287de504c05081afd441",
+      "passed": true
+    }
+  },
+  "inherited_tests": {
+    "inherited-math-normal.log": {
+      "checks": 33,
+      "sha256": "78b9152d098a24391e91012c49ef9d0e2b565d710bbb428f9233a504704427d0",
+      "passed": true
+    },
+    "inherited-math-optimized.log": {
+      "checks": 33,
+      "sha256": "f710880125e043209014bfef491ac9a0b389b9ad3ed3d37b2a4f29a6589507b2",
+      "passed": true
+    },
+    "inherited-contact-normal.log": {
+      "checks": 36,
+      "sha256": "2250b680fc9bd08b15da8688ba33aee220f915d3ba4657a4606e89c17d75f683",
+      "passed": true
+    },
+    "inherited-contact-optimized.log": {
+      "checks": 36,
+      "sha256": "42528baa6f10f36273319ec120db82dfd2903e25fb7596da53a543f93d70c3a5",
+      "passed": true
+    }
+  },
+  "future_command": "PYTHONDONTWRITEBYTECODE=1 OPENBLAS_NUM_THREADS=2 python source-assets/cloud-bank58/revision-k/recovery-01/run_patch58k.py --run-approved-patch-trial",
+  "limits": {
+    "total_seconds": 30,
+    "cpu_threads": 2,
+    "max_rss_kib": 1572864,
+    "max_source_bytes": 200000
+  },
+  "scope": "Native semantic population phase ordering and full recipe identity checks only; original geometry/camera/material/contact functions unchanged"
+}

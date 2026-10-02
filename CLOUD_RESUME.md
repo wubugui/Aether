@@ -1,6 +1,16 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 07:27 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 07:43 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 07:43 K语义数据安全写入修复准备完成
+
+- K原native崩溃/北33组分类已完整发布 **ae750e94a2035ca4114f35be00f5908958d5c412**，tree **5118ef83ccb80bf78c913d1812dfcc9534fb7812**、parent8655ed37；29路径/29blob新bare公共Git逐字节/SHA回读一致，本地05c66f8同树对齐
+- [K recovery-01](source-assets/cloud-bank58/revision-k/recovery-01/README.md)准备独立修复入口，原K/failure不改。先完成flat/material及全部deform组权重分配，再创建全部四属性，之后按名重新取得RNA引用填值，任何结构分配间不持旧Attribute/data句柄。保留原group_signature崩溃处遍历，不能靠跳过此项掩盖问题
+- 194×6全部1164权重槽（包括应缺成员/范围/顺序/重复）及1156个FACE/POINT整值都核原recipe的精确float32/整数；保存前与fresh打开后额外语义审查进入完整identity equality。原194V/384T/六控制/recipe/相机光材/7%/拓扑/actualcontact、30秒/CPU2/1.5GiB/200000B门均不变
+- normal/-O各2375纯fake-RNA/静态负控+原33math/36contact通过；独立审查复跑并核全部16新准备与828旧保护身份。新freeze SHA56ebb9431a5d91fdc3bb9f281badc07be2a6e0dab3842a86c938d9418040d8ca、修复rebuild SHA0683db85daa45bf964262edb84abf1c44aebdcf3ccd16de7868eedfed5c7828e。**尚未Blender/源/图**；未来仅新recovery01入口一次有界试验，不重跑失败原入口
+- 官方4.5.14 Attribute/CustomData/mesh源码证明句柄失效风险，group-add完整调用链仅取得官方4.5.0，版本限制明确。即便后续修复成功，也只能证明新路径实际通过，不能反推精确原crash原因已由native最小复现证实
+- 新900观察预算准备补充：600模式settle仍15秒，900模式明确30秒；两次≤.02m与逐帧physics/原事件15秒/capture20秒/全部身份及空间门保留。该未发布草案正在最终测试封存，尚无新world。北proxy官方三源码下载原调用+证据重试均拒，已停不换route；使用已有固定源码准备窄原生surface/rock读取，缺独立压缩解码证明保持false
+- 本K修复准备即时发布后排单源两图。E/F2八件Slack原频道问题仍待答，全部GOAL/硬件GPU验收未通过
 
 ## 07:27 K首次native崩溃已保全；北散布按实际来源分类完成
 
