@@ -1,0 +1,58 @@
+{
+  "lossless_gzip": [
+    {
+      "raw": "protected-before.json",
+      "bytes": 1450628,
+      "sha256": "4b7281b9d73f7ceb937b304f1fbb80f4d943fe2988fd65890fb181f3de3e2f0d",
+      "stored": "protected-before.json.gz",
+      "stored_bytes": 337511,
+      "stored_sha256": "c79b260af23b1ef26b11e090b13862651ae87338dcdd13d461354b8c730b47ef"
+    },
+    {
+      "raw": "protected-after.json",
+      "bytes": 1450628,
+      "sha256": "4b7281b9d73f7ceb937b304f1fbb80f4d943fe2988fd65890fb181f3de3e2f0d",
+      "stored": "protected-after.json.gz",
+      "stored_bytes": 337511,
+      "stored_sha256": "c79b260af23b1ef26b11e090b13862651ae87338dcdd13d461354b8c730b47ef"
+    }
+  ],
+  "exact_raw_splices": [
+    {
+      "raw": "outputs/render-1131-raw.json",
+      "bytes": 14837932,
+      "sha256": "c941a75a43a5c4f88d4083c403cb9f3219752c49056405bed66840803b0f629b",
+      "offset": 69,
+      "expected_ascii": "5",
+      "replacement_ascii": "5"
+    },
+    {
+      "raw": "outputs/render-1347-raw.json",
+      "bytes": 14837933,
+      "sha256": "9e476591b52fe1980bc9a55019914c6a555fa75dc97ad4e70bedb5194d037633",
+      "offset": 69,
+      "expected_ascii": "5",
+      "replacement_ascii": "24"
+    },
+    {
+      "raw": "outputs/render-side-raw.json",
+      "bytes": 14837933,
+      "sha256": "e83818f60beb5e5a5079da08f3a160f2e4d233d2d47aa547d61346fdb93e9d4c",
+      "offset": 69,
+      "expected_ascii": "5",
+      "replacement_ascii": "43"
+    },
+    {
+      "raw": "outputs/render-back-raw.json",
+      "bytes": 14837933,
+      "sha256": "f76132a8b18a4692da1183fb44094105bc9d24244dd265fe1674b91cfc8a2366",
+      "offset": 69,
+      "expected_ascii": "5",
+      "replacement_ascii": "62"
+    }
+  ],
+  "base_manifest": "cloud-evidence/north-ridge62-recovery-v2-source-20261002T114825Z-lnt78w53/native-storage.json",
+  "base_entry": "cloud-evidence/north-ridge62-recovery-v2-source-20261002T114825Z-lnt78w53/outputs/build-raw.json",
+  "base_raw_sha256": "c941a75a43a5c4f88d4083c403cb9f3219752c49056405bed66840803b0f629b",
+  "explanation": "These four actual raw files differ from the already-published actual build raw only in the literal PID digits at byte offset69. Store a verified exact byte splice on that canonical stream, without JSON reserialization or duplicate14.8MB data. Original native files are unchanged."
+}
