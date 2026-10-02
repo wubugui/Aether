@@ -1,0 +1,97 @@
+{
+  "status": "finished",
+  "mode": "scatter-float32-fixture",
+  "passed": true,
+  "native_parse_passed": false,
+  "native_collection_passed": false,
+  "native_buffer_retention_verified": false,
+  "native_float32_fixture_passed": true,
+  "all_occupancy_complete": false,
+  "output": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/north-ridge62-scatter-float32-fixture-20261002T065539Z-v9ezb9jr",
+  "dependency_guard_before": {
+    "status": "frozen_dependency_identities_verified",
+    "review_gzip_sha256": "e39ef6863849f6034f9c7fb3efeb97a191e39d3cacc9fdab9903692a832fe722",
+    "review_json_sha256": "4aa3634f3ec1d1e380d53d724ffa707af4bf66b7136c0bd5fc9592d4d9e80601",
+    "reviewed_closure_files": 1483,
+    "reviewed_closure_bytes": 133839275,
+    "exact_prior_manifest_delta_files": 51,
+    "prior_manifest_sha256": "3329d137d9c43c0fbd2f43f8ca52c4529b8590d891c5fca6fdd376fe3c2b1db9",
+    "startup_control_identities_verified": [
+      "project.godot",
+      "override.cfg",
+      ".godot/global_script_class_cache.cfg",
+      ".godot/extension_list.cfg",
+      ".godot/uid_cache.bin"
+    ],
+    "reviewed_absent_controls_still_absent": [
+      "override.cfg",
+      ".godot/extension_list.cfg"
+    ],
+    "unreviewed_dependency_remap_or_import_sidecars": [],
+    "packaged_auditors_match_frozen_embedded_sources": true,
+    "project_autoload_empty": true,
+    "global_script_class_cache_empty": true,
+    "uid_cache_matches_review": true,
+    "godot_invoked": false,
+    "native_parse_passed": false,
+    "native_collection_passed": false,
+    "all_occupancy_complete": false
+  },
+  "process": {
+    "status": "finished",
+    "command": [
+      "/workspace/scratch/a29d03198654/tools-feiting/Godot_v4.5.1-stable_linux.x86_64",
+      "--headless",
+      "--path",
+      "/workspace/scratch/a29d03198654/Aether/candidates/round40-exclusive-20260930/project",
+      "--audio-driver",
+      "Dummy",
+      "--rendering-method",
+      "gl_compatibility",
+      "--script",
+      "/workspace/scratch/a29d03198654/Aether/cloud-evidence/north-ridge62-scatter-float32-fixture-20261002T065539Z-v9ezb9jr/check_float32_native.gd"
+    ],
+    "cpu_affinity": [
+      0,
+      1
+    ],
+    "wall_limit_seconds": 60,
+    "timeout_triggered": false,
+    "external_signal": null,
+    "pid": 35,
+    "returncode": 0,
+    "max_rss_kib": 136156,
+    "wall_seconds": 0.604394948000845
+  },
+  "log_errors": [],
+  "dependency_guard_after": {
+    "status": "frozen_dependency_identities_verified",
+    "review_gzip_sha256": "e39ef6863849f6034f9c7fb3efeb97a191e39d3cacc9fdab9903692a832fe722",
+    "review_json_sha256": "4aa3634f3ec1d1e380d53d724ffa707af4bf66b7136c0bd5fc9592d4d9e80601",
+    "reviewed_closure_files": 1483,
+    "reviewed_closure_bytes": 133839275,
+    "exact_prior_manifest_delta_files": 51,
+    "prior_manifest_sha256": "3329d137d9c43c0fbd2f43f8ca52c4529b8590d891c5fca6fdd376fe3c2b1db9",
+    "startup_control_identities_verified": [
+      "project.godot",
+      "override.cfg",
+      ".godot/global_script_class_cache.cfg",
+      ".godot/extension_list.cfg",
+      ".godot/uid_cache.bin"
+    ],
+    "reviewed_absent_controls_still_absent": [
+      "override.cfg",
+      ".godot/extension_list.cfg"
+    ],
+    "unreviewed_dependency_remap_or_import_sidecars": [],
+    "packaged_auditors_match_frozen_embedded_sources": true,
+    "project_autoload_empty": true,
+    "global_script_class_cache_empty": true,
+    "uid_cache_matches_review": true,
+    "godot_invoked": false,
+    "native_parse_passed": false,
+    "native_collection_passed": false,
+    "all_occupancy_complete": false
+  },
+  "changed_inputs": []
+}

@@ -1,6 +1,15 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 06:50 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 06:58 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 06:58北保存散布775组完成；18项原生float32轻验通过
+
+- J2原源/两拒绝图、计时parse/GL与scatter修正已完整发布 **f276cbe674f09f9095d990f37a088ac110f8d729**，tree **499232ffb320b4f81b7eec709f168cf5f13281c3**、parentc8297b4a；185路径/129唯一blob新bare公共Git字节/SHA回读一致，本地508f1fb同树对齐。J2独立terminal freeze补入本次，原生源/图/原始终态已在上项上传，无重跑
+- 新scatter collector parse与fixture parse各child/wrapper0，.504/.605秒；[18项实际native fixture](cloud-evidence/north-ridge62-scatter-float32-fixture-20261002T065539Z-v9ezb9jr/wrapper-report.json)全部通过，.604秒/136156KiB，无error。真实复现Y的1个binary64ULP和精确float32身份，邻1ULP/错顺序/非float32 actual/非法值等拒绝；空与abc原生SHA通过，旧失败不改
+- [纠正后完整保存采集](cloud-evidence/north-ridge62-scatter-float32-collect-20261002T065622Z-6k1gbidm/RESULT.md)child/wrapper0，11.090秒/545124KiB/CPU2，issues=[]，1589输入/全1483闭包/启动/cache未变。**775组/57797保存实例**的独立bulk格式数量/字节hash/绑定和祖先合成变换48字节全部匹配，17空组合法无error
+- 查询40m缓冲矩形命中**676**个保存实例完整bound-mesh包围盒，设计矩形**575**；是逐实例模型范围，不是root或组AABB推断，保留隐藏/weather/model_scene等字段。不能据数量授权删除或一概叫地面树木；下一按组/物种/实际来源分类，核真正地形阻塞，不盲清场
+- 6221922B原生JSON SHA62482b889a2dc6c5687274748397f5d4bf9da3be6898b8fbca6d372a5a2452bf无损gzip保全，所有大metadata原SHA/恢复命令随各run记录。**仅保存未变形mesh元数据AABB**，顶点极值/变形/运行model_scene或碰撞/道路仍未证，all_occupancy_complete/完整视觉仍false，未改地形/世界
+- 本项立即发布；严格600修正已过解析，独立GL回归没有执行main完成收据，下一第六次真实停船orbit单次600内部/720wrapper正式核。K仅单一连续包络数学准备，0native源/图；E/F2八件Slack仍待答，全部GOAL/硬件GPU验收未通过
 
 ## 06:50 J2实图仍拒绝；严格计时parse通过；scatter字节修正准备完成
 
