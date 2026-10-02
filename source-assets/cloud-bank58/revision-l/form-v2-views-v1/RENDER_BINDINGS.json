@@ -1,0 +1,272 @@
+{
+  "version": "cloudbank58l-form-v2-views-v1",
+  "stage": "views",
+  "source": "source-assets/cloud-bank58/revision-l/form-v2/cloud_bank58l_form_v2.blend",
+  "source_sha256": "33cc763abc893cce0de214ae3b4df19b8b7e3bbde6d268432b8fd3847e61cc4a",
+  "source_bytes": 324985,
+  "predecessor_publication_commit": "fa8607bc4697f0505a05536ec34e4131c5d72cd7",
+  "combined_predecessor": {
+    "predecessor": {
+      "original_source_stage": "failed",
+      "original_admission_sha256": "8216396cd70064b29057ed32fcd8c8f61eecaf1ccab4a949bc065c7ccb3d2e87",
+      "original_terminal_sha256": "c4856a8ffeaf5b28280beab2316f32e5b02f52720fcfed39a546d3ab9b7e7531",
+      "original_build_result_sha256": "db26f06e7d04ed45a4b789ddd1bce2d92b097fd7e704423528027c7f6a2a8e82",
+      "original_build_raw_sha256": "8ad8010e94bd7d9edcabe794ffb18c99a7519e50c34a37f20c1e3c8bdcfaafa7",
+      "source_sha256": "33cc763abc893cce0de214ae3b4df19b8b7e3bbde6d268432b8fd3847e61cc4a",
+      "source_bytes": 324985,
+      "original_build_pid": 8
+    },
+    "recovery_admission_sha256": "eb7cc48b731a0c916499bf0419f3020554d6620dbf6459fb1bc30629fa70af26",
+    "recovery_terminal_sha256": "6c1cbf38413f33b815a075901d0d1fbf78eefa86b60acd5e649d120ba136e00a",
+    "recovery_supervisor_sha256": "766756ea0501ecf7e389b69a3569bf972e7d9c99da606782956c08335738615b",
+    "recovery_observation_sha256": "f2dce989836af58ea1275bd52c8d61bbe66a9fdec03d99ad6b2b7cdb86028989",
+    "existing_saved_source_fresh_open_verified": true,
+    "original_source_stage": "failed",
+    "full_native_acceptance": false,
+    "visual_acceptance": false,
+    "world_acceptance": false,
+    "global_GOAL": false
+  },
+  "four_output_names": [
+    "01-original61-front",
+    "02-k-trial-front",
+    "03-k-fixed-side-back",
+    "04-k-fixed-near"
+  ],
+  "four_outputs_three_unique_directions": true,
+  "world_cameras": [
+    {
+      "name": "01-original61-front",
+      "camera_transform": "1200000010742f3f8ebcf53d00df37bf0000000035807c3f91ba283e506b3a3f1048e7bd1f0e2d3f00803b4500c08f4400608645",
+      "camera_projection": "130000009dc86f3f000000000000000000000000000000001c07d53f00000000000000000000000000000000460180bf000080bf0000000000000000173433bf00000000",
+      "reference": "1216",
+      "weather_time": 0.35,
+      "resolution": [
+        1179,
+        664
+      ],
+      "near": 0.3499999940395355,
+      "far": 18000.0,
+      "fov": 62.0
+    },
+    {
+      "name": "02-k-trial-front",
+      "camera_transform": "1200000010742f3f8ebcf53d00df37bf0000000035807c3f91ba283e506b3a3f1048e7bd1f0e2d3f00803b4500c08f4400608645",
+      "camera_projection": "130000009dc86f3f000000000000000000000000000000001c07d53f00000000000000000000000000000000460180bf000080bf0000000000000000173433bf00000000",
+      "reference": "1216",
+      "weather_time": 0.35,
+      "resolution": [
+        1179,
+        664
+      ],
+      "near": 0.3499999940395355,
+      "far": 18000.0,
+      "fov": 62.0
+    },
+    {
+      "name": "03-k-fixed-side-back",
+      "camera_transform": "12000000322b1dbf0a935dbe6555423f000000009631763f1c5a8c3e00134abfe5552c3ef32517bf9eef904596f77344086b4345",
+      "camera_projection": "130000009dc86f3f000000000000000000000000000000001c07d53f00000000000000000000000000000000460180bf000080bf0000000000000000173433bf00000000",
+      "reference": "1216",
+      "weather_time": 0.35,
+      "resolution": [
+        1179,
+        664
+      ],
+      "near": 0.3499999940395355,
+      "far": 18000.0,
+      "fov": 62.0
+    },
+    {
+      "name": "04-k-fixed-near",
+      "camera_transform": "120000000c742f3f92bcf53d04df37bf0000000036807c3f8fba283e546b3a3f0848e7bd1b0e2d3fcd3c5c4550014f44b0fa7d45",
+      "camera_projection": "130000009dc86f3f000000000000000000000000000000001c07d53f00000000000000000000000000000000460180bf000080bf0000000000000000173433bf00000000",
+      "reference": "1216",
+      "weather_time": 0.35,
+      "resolution": [
+        1179,
+        664
+      ],
+      "near": 0.3499999940395355,
+      "far": 18000.0,
+      "fov": 62.0
+    }
+  ],
+  "original_settings": {
+    "render_filepath": "",
+    "engine": "CYCLES",
+    "device": "CPU",
+    "samples": 8,
+    "denoising": false,
+    "threads_mode": "FIXED",
+    "threads": 2,
+    "resolution": [
+      1179,
+      664
+    ],
+    "percentage": 100,
+    "pixel_aspect": [
+      1.0006932020187378,
+      1.0
+    ],
+    "view_transform": "AgX",
+    "look": "None",
+    "exposure": 0.0,
+    "gamma": 1.0,
+    "use_nodes": false,
+    "use_compositing": false,
+    "use_sequencer": false,
+    "transparent": false,
+    "active_camera": "L58_ABSOLUTE_01-original61-front"
+  },
+  "source_camera_mapping_sha256": "130921f620ebea4a2e420a4d16ee2cd09c447f5bc4780fefbb53c5e6a187910d",
+  "source_texts": [
+    {
+      "name": "BINDINGS58L.json",
+      "sha256": "d10b57a7dbacb40936693bd0c1f201be0616ee02959abcb9fe6cdcea6c46c9a8",
+      "bytes": 122268,
+      "is_in_memory": true,
+      "filepath": "",
+      "use_module": false
+    },
+    {
+      "name": "CANDIDATE58L.json",
+      "sha256": "617b54d20c12fa53807af00655681307cacb384f436d5db2a44fe68bc83af693",
+      "bytes": 439291,
+      "is_in_memory": true,
+      "filepath": "",
+      "use_module": false
+    },
+    {
+      "name": "EDIT58L.py",
+      "sha256": "b33dbed775aba05e2f44fd3a8522e65b4df792d6a9620a4205a10cb956b5a53b",
+      "bytes": 796,
+      "is_in_memory": true,
+      "filepath": "",
+      "use_module": false
+    },
+    {
+      "name": "GEOMETRY58L.py",
+      "sha256": "d9e7cd3758334d3f82ffa5c56c7508af18b8ac299d109a2babd48d23ac7644e7",
+      "bytes": 13511,
+      "is_in_memory": true,
+      "filepath": "",
+      "use_module": false
+    },
+    {
+      "name": "NATIVE58L.py",
+      "sha256": "b0151477aca4c8f350c10b821f42168e2487c589414a06c9f141546925a829bf",
+      "bytes": 27543,
+      "is_in_memory": true,
+      "filepath": "",
+      "use_module": false
+    },
+    {
+      "name": "NATIVE_SUPPORT58L.py",
+      "sha256": "49ba520be8a18e8c5ad323157293cb37c229b29e02c2d8fe824647ea0f438d04",
+      "bytes": 23212,
+      "is_in_memory": true,
+      "filepath": "",
+      "use_module": false
+    },
+    {
+      "name": "POLY58K.py",
+      "sha256": "43e9fd8b2a0bed72c01c6dc0a30d3e48338747151903b1273e22ca0eb296a633",
+      "bytes": 11506,
+      "is_in_memory": true,
+      "filepath": "",
+      "use_module": false
+    },
+    {
+      "name": "README58L.txt",
+      "sha256": "4da3082280a1690dea9b39a3b5eaabb44c48d3556a94ec64cd127c199111be6b",
+      "bytes": 1874,
+      "is_in_memory": true,
+      "filepath": "",
+      "use_module": false
+    }
+  ],
+  "source_native_sha256": "b0151477aca4c8f350c10b821f42168e2487c589414a06c9f141546925a829bf",
+  "source_raw_reference": {
+    "path": "cloud-evidence/cloudbank58l-form-v2-source-20261002T203132Z-gplbz9_7/outputs/build-raw.json",
+    "sha256": "8ad8010e94bd7d9edcabe794ffb18c99a7519e50c34a37f20c1e3c8bdcfaafa7"
+  },
+  "current_default_normals": {
+    "acceptance_mode": "api_consistency_isolated_diagnostic_v1",
+    "diagnostic_normal_acceptance": true,
+    "full_native_acceptance": false,
+    "polygon_geometry_passed": true,
+    "polygon_geometry_max_abs": 2.7049721644800684e-06,
+    "flat": true,
+    "three_corners_equal": true,
+    "outward": true,
+    "unit_length_error_max": 1.3277417698631666e-07,
+    "geometric_direction_dot_min": 0.9999998228341509,
+    "corner_newell_api_passed": true,
+    "corner_newell_api_max_abs": 5.960464477539063e-08,
+    "comparison_limit": 3e-05,
+    "original_corner_geometry_passed": false,
+    "original_corner_geometry_max_abs": 0.0005249128728819219,
+    "original_corner_geometry_faces_over_limit": [
+      10,
+      11,
+      12,
+      13,
+      726,
+      728,
+      729,
+      1198,
+      1242,
+      1345,
+      1435,
+      1548,
+      1576,
+      1577,
+      1578,
+      1870,
+      2291,
+      2292,
+      2293,
+      2294,
+      2609,
+      2610,
+      2763
+    ],
+    "original_corner_geometry_max_angle_degrees": 0.03410575291451074,
+    "historical_default_failure": {
+      "raw_sha256": "0b39aa841519b65874e24d219c4e74d3063daa8dfd9bdf86b15fdb90e9b5a99c",
+      "original_corner_geometry_passed": false,
+      "faces_over_3e_5": 22,
+      "max_abs": 0.00015941344933428914,
+      "max_angle_degrees": 0.009158468662372497
+    }
+  },
+  "historical_default_failure": {
+    "raw_sha256": "0b39aa841519b65874e24d219c4e74d3063daa8dfd9bdf86b15fdb90e9b5a99c",
+    "original_corner_geometry_passed": false,
+    "faces_over_3e_5": 22,
+    "max_abs": 0.00015941344933428914,
+    "max_angle_degrees": 0.009158468662372497
+  },
+  "limits": {
+    "total_wall_seconds": 120,
+    "native_caps": {
+      "render": 27
+    },
+    "tail_reserve_seconds": 20,
+    "cpu_threads": 2,
+    "max_wrapper_plus_child_rss_kib": 1572864
+  },
+  "acceptance_mode": "api_consistency_isolated_diagnostic_v1",
+  "full_native_acceptance": false,
+  "visual_acceptance": false,
+  "world_acceptance": false,
+  "global_GOAL": false,
+  "exact_comparison_policy": "Original full equality and original 3e-5/API gates. No rounding, no new tolerance.",
+  "runtime": {
+    "python_path": "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/4.5/python/bin/python3.11",
+    "python_sha256": "60b08089c60cbe81827b135c8fd9e206ba2ee6bf54aa1dbd0d6f56ac2d5914f6",
+    "python_version": "3.11.15 (main, Apr 25 2025, 12:39:20) [GCC 11.2.1 20220127 (Red Hat 11.2.1-9)]",
+    "numpy_version": "1.26.4"
+  }
+}

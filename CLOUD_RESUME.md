@@ -1,6 +1,6 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 21:36 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 22:01 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
 
 ## 云端硬性前置闸门：先插件上传完整核回，再继续工作
 
@@ -11,6 +11,16 @@
 - 上传失败优先查明原因并在授权内反复进行合规恢复，保持原payload、完整base tree/parent和非force ref；真实安全拒绝必须停止该动作，按批准规则取得明确证据/一次原call重试，仍拒则报告并保持闸门关闭，绝不绕审批/换route
 - 本项全部完成成果和本入口更新都核回后，才允许下一项。纯读取以查错/确认上传状态可以继续；与修复当前上传无关的新开发/渲染必须等待
 - 私密Slack交付定位符/收据仍仅本地，不因“全部项目”混入公开仓库；原受阻发送保持独立停止
+
+## 22:01 form-v2原机位views薄适配准备接受，核回后一次真实成像
+
+- 真实fresh-only结果已 **fa8607bc4697f0505a05536ec34e4131c5d72cd7** 完整插件发布，tree335ae5ba0bf379302f7794f5dbc2d35bf0dd2b06、parent1ce6a139；41路径/39blob新bare逐字节核回，本地bf98ae1同树对齐。23原JSON再从远端包新空目录恢复解析，原324985B源SHA33cc763保持；此闭环后才开始本薄适配
+- [form-v2-views-v1](source-assets/cloud-bank58/revision-l/form-v2-views-v1/README.md)原15文件282427B；FINAL1816e4ed5314a12ab5afd7932add2bd664e54ecf7c0cef3cfe11a4280bee1a2d，manifest587b2baee0443acb5064431d69e1a860a42040f7d3ea577b7fe99b8e48bbf267；722冻结含FINAL核同。旧模型/候选/所有原文件未改，不复制旧大raw/资产
+- 最小render-only入口只open原SHA33cc763源、原capture/精确validator、原render/restore分支AST逐句同，无build/save/export；原8Text仍按form-v2原字节核。四命名原输出/三方向、1179×664/校准pixel aspect/CPU2/Cycles8samples/无denoise、原材质灯光绝对机位不改
+- 真实prior_recovery组合前件在wrapper准入完整核一次；四native核已冻结admission与原源，不反复重放历史21态exercise。3.11/已审桥/原v3监督直接复用，原120秒/每图27/1.5GiB/20秒尾余量保持；旧原source失败保持failed，不能走原虚假成功路径。原源与旧全部阶段证据在全仓保护内，只有新run/新terminal临时输出排除
+- [窄独立复核](source-assets/cloud-bank58/revision-l/form-v2-views-v1/NARROW_REVIEW.md)亲读实际入口/前件/保护/机位，13normal(.104秒)/13-O(.107秒)全过、manifest13条全同；官方3.11 runtime及只读require_new_admission('views')真实组合匹配，未消费准入。首次纯测有一个临时夹具父目录误扫其它准入，日志保留，仅隔离夹具修正后通过
+- 本包/本入口完整插件发布核回后，唯一原生观察入口是官方3.11 `observe_views58l.py --run-approved views`。当前0native/新准入/PNG，实际图像才决定form-v2是否改善，旧23面corner几何失败/历史旧22面、full_native=false和visual/world/GOAL未过均保持；不扩任何新几何/监督框架
+- 新独立进度交付已追踪72成功，28仍停（原27受阻+一项普通连接超时上传字节未知）；最新fresh-only4报告已全文SHA回核，已成功件不重发，未知件不盲POST/finalize，私密收据仅本地
 
 ## 21:36 现存form-v2源fresh-only恢复实际通过，原整体失败保持
 
