@@ -1,0 +1,170 @@
+{
+  "status": "finished",
+  "mode": "renderer",
+  "processes": [
+    {
+      "status": "finished",
+      "command": [
+        "/workspace/scratch/a29d03198654/tools-feiting/Godot_v4.5.1-stable_linux.x86_64",
+        "--path",
+        "/workspace/scratch/a29d03198654/Aether/candidates/round40-exclusive-20260930/project",
+        "--rendering-method",
+        "gl_compatibility",
+        "--audio-driver",
+        "Dummy",
+        "--disable-vsync",
+        "--script",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/coast61-nearbay-orbit/verify_orbit61.gd",
+        "--",
+        "--output-dir=/workspace/scratch/a29d03198654/Aether/cloud-evidence/nearbay61-orbit-renderer-20261002T083649Z-y9u3upd2/images",
+        "--observation-budget-seconds=900",
+        "--settle-wait-budget-seconds=30"
+      ],
+      "cpu_affinity": [
+        0,
+        1
+      ],
+      "wall_timeout_seconds": 1020.0,
+      "wall_timeout_limit_seconds": 1020,
+      "timeout_triggered": false,
+      "wrapper_received_signal": null,
+      "returncode": 0,
+      "native_exit_observed": true,
+      "max_rss_kib": 2668516,
+      "pid": 179641,
+      "signal": null,
+      "wall_seconds": 705.8827635570051
+    }
+  ],
+  "sources_unchanged": true,
+  "passed": true,
+  "first_item_runtime_passed": true,
+  "godot_parse_passed": false,
+  "flight_attempted": false,
+  "nearshore_pixel_coverage_passed": false,
+  "actual_png_manual_review_required": true,
+  "requested_observation_budget_seconds": 900,
+  "outer_process_timeout_seconds": 1020.0,
+  "strict_600_performance_passed": false,
+  "wrapper_received_signal": null,
+  "input_aftercheck_attempted": true,
+  "output": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/nearbay61-orbit-renderer-20261002T083649Z-y9u3upd2",
+  "settle_wait_budget_seconds": 30,
+  "userdata_root": "/workspace/scratch/a29d03198654/tools-feiting/nearbay61-orbit-14k7wi0n",
+  "expected_processes": 1,
+  "dependency_guard_before": {
+    "status": "frozen_dependency_identities_verified",
+    "review_gzip_sha256": "e39ef6863849f6034f9c7fb3efeb97a191e39d3cacc9fdab9903692a832fe722",
+    "review_json_sha256": "4aa3634f3ec1d1e380d53d724ffa707af4bf66b7136c0bd5fc9592d4d9e80601",
+    "reviewed_closure_files": 1483,
+    "reviewed_closure_bytes": 133839275,
+    "exact_prior_manifest_delta_files": 51,
+    "prior_manifest_sha256": "3329d137d9c43c0fbd2f43f8ca52c4529b8590d891c5fca6fdd376fe3c2b1db9",
+    "startup_control_identities_verified": [
+      "project.godot",
+      "override.cfg",
+      ".godot/global_script_class_cache.cfg",
+      ".godot/extension_list.cfg",
+      ".godot/uid_cache.bin"
+    ],
+    "reviewed_absent_controls_still_absent": [
+      "override.cfg",
+      ".godot/extension_list.cfg"
+    ],
+    "unreviewed_dependency_remap_or_import_sidecars": [],
+    "packaged_auditors_match_frozen_embedded_sources": true,
+    "project_autoload_empty": true,
+    "global_script_class_cache_empty": true,
+    "uid_cache_matches_review": true,
+    "godot_invoked": false,
+    "native_parse_passed": false,
+    "native_collection_passed": false,
+    "all_occupancy_complete": false
+  },
+  "logged_errors": [],
+  "native_report_sha256": "53d0877995d21be76f4c367d40ca7ba7c59b157b6e5e1296cb749a67fc359c9e",
+  "native_completion": {
+    "completion_receipt_sha256": "53e9b53306d08f3469ed19b09c1a336bc8ac0dd6170c95080d3264fb7b30c64c",
+    "receipt": {
+      "first_item_runtime_passed": true,
+      "native_report_sha256": "53d0877995d21be76f4c367d40ca7ba7c59b157b6e5e1296cb749a67fc359c9e",
+      "requested_observation_budget_seconds": 900,
+      "settle_wait_budget_seconds": 30,
+      "strict_600_performance_passed": false,
+      "version": "orbit61-completion-v1",
+      "wall_deadline": {
+        "checks": 9102,
+        "clock": "Time.get_ticks_msec monotonic; no supplied/mock clock",
+        "completion_receipt": "orbit-completion.json",
+        "completion_scope": "Final native check after report write/hash and receipt flush/rename/hash, before emitting terminal clock metadata and cleanup; actual child exit is separately bounded by the wrapper (default720s; explicit long observation1020s)",
+        "first_exceeded_at": {},
+        "historical_performance_limit_seconds": 600.0,
+        "last_check": {
+          "boundary": "finish_after_final_report_and_sha",
+          "elapsed_msec": 694579,
+          "wall_seconds": 694.579
+        },
+        "limit_seconds": 900,
+        "start_scope": "run entry before initial source hashes, scene load, fixture synchronization, inventory and preflight",
+        "verification_completed_wall_seconds": 694.579
+      }
+    },
+    "terminal": {
+      "completion_receipt_sha256": "53e9b53306d08f3469ed19b09c1a336bc8ac0dd6170c95080d3264fb7b30c64c",
+      "first_item_runtime_passed": true,
+      "native_report_sha256": "53d0877995d21be76f4c367d40ca7ba7c59b157b6e5e1296cb749a67fc359c9e",
+      "requested_observation_budget_seconds": 900,
+      "settle_wait_budget_seconds": 30,
+      "strict_600_performance_passed": false,
+      "version": "orbit61-terminal-wall-v1",
+      "wall_deadline": {
+        "checks": 9104,
+        "clock": "Time.get_ticks_msec monotonic; no supplied/mock clock",
+        "completion_receipt": "orbit-completion.json",
+        "completion_scope": "Final native check after report write/hash and receipt flush/rename/hash, before emitting terminal clock metadata and cleanup; actual child exit is separately bounded by the wrapper (default720s; explicit long observation1020s)",
+        "first_exceeded_at": {},
+        "historical_performance_limit_seconds": 600.0,
+        "last_check": {
+          "boundary": "finish_before_cleanup",
+          "elapsed_msec": 694579,
+          "wall_seconds": 694.579
+        },
+        "limit_seconds": 900,
+        "start_scope": "run entry before initial source hashes, scene load, fixture synchronization, inventory and preflight",
+        "verification_completed_wall_seconds": 694.579
+      }
+    }
+  },
+  "verification_completed_wall_seconds": 694.579,
+  "dependency_guard_after": {
+    "status": "frozen_dependency_identities_verified",
+    "review_gzip_sha256": "e39ef6863849f6034f9c7fb3efeb97a191e39d3cacc9fdab9903692a832fe722",
+    "review_json_sha256": "4aa3634f3ec1d1e380d53d724ffa707af4bf66b7136c0bd5fc9592d4d9e80601",
+    "reviewed_closure_files": 1483,
+    "reviewed_closure_bytes": 133839275,
+    "exact_prior_manifest_delta_files": 51,
+    "prior_manifest_sha256": "3329d137d9c43c0fbd2f43f8ca52c4529b8590d891c5fca6fdd376fe3c2b1db9",
+    "startup_control_identities_verified": [
+      "project.godot",
+      "override.cfg",
+      ".godot/global_script_class_cache.cfg",
+      ".godot/extension_list.cfg",
+      ".godot/uid_cache.bin"
+    ],
+    "reviewed_absent_controls_still_absent": [
+      "override.cfg",
+      ".godot/extension_list.cfg"
+    ],
+    "unreviewed_dependency_remap_or_import_sidecars": [],
+    "packaged_auditors_match_frozen_embedded_sources": true,
+    "project_autoload_empty": true,
+    "global_script_class_cache_empty": true,
+    "uid_cache_matches_review": true,
+    "godot_invoked": false,
+    "native_parse_passed": false,
+    "native_collection_passed": false,
+    "all_occupancy_complete": false
+  },
+  "changed_inputs": [],
+  "input_recheck_errors": []
+}

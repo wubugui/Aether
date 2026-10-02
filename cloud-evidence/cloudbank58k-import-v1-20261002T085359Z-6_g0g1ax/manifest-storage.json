@@ -1,0 +1,24 @@
+{
+  "lossless_roundtrip_verified": true,
+  "raw_files_retained_locally": true,
+  "files": [
+    {
+      "raw_path": "main-project-before.json",
+      "raw_bytes": 1002602,
+      "raw_sha256": "515e03c43586e0009371478de736a094c2480f2d4f9c6bc321a6f5fdee0e67f0",
+      "gzip_path": "main-project-before.json.gz",
+      "gzip_bytes": 225446,
+      "gzip_sha256": "cf5a283b84f4eadcb01cd60f0d478a5bccf6a5f52fffdf886516c0653c24d7c5",
+      "restore_command": "gzip -dc main-project-before.json.gz > main-project-before.json"
+    },
+    {
+      "raw_path": "main-project-after.json",
+      "raw_bytes": 1002602,
+      "raw_sha256": "515e03c43586e0009371478de736a094c2480f2d4f9c6bc321a6f5fdee0e67f0",
+      "gzip_path": "main-project-after.json.gz",
+      "gzip_bytes": 225446,
+      "gzip_sha256": "cf5a283b84f4eadcb01cd60f0d478a5bccf6a5f52fffdf886516c0653c24d7c5",
+      "restore_command": "gzip -dc main-project-after.json.gz > main-project-after.json"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "version": "orbit61-explicit-long-observation-preparation-v2-settle",
+  "source_preparation_passed": true,
+  "default_native_budget_seconds": 600,
+  "default_outer_timeout_seconds": 720,
+  "opt_in_native_budget_seconds": 900,
+  "opt_in_outer_timeout_seconds": 1020,
+  "long_mode_requires_renderer": true,
+  "historical_strict600_run": "cloud-evidence/nearbay61-orbit-renderer-20261002T070230Z-qx75unzy",
+  "historical_strict600_performance_passed": false,
+  "historical_first_exceeded_seconds": 600.128,
+  "historical_child_wall_seconds": 612.1321546010004,
+  "historical_child_returncode": 1,
+  "future_strict600_result_separate": true,
+  "normal_python_groups": {
+    "existing_wrapper": 29,
+    "budget_and_deadline": 21,
+    "static_and_dependency": 28
+  },
+  "optimized_python_groups": {
+    "existing_wrapper": 29,
+    "budget_and_deadline": 21,
+    "static_and_dependency": 28
+  },
+  "independent_review": "INDEPENDENT_REVIEW.md",
+  "timing_analysis": "timing/ANALYSIS.md",
+  "native_engine_invoked": false,
+  "native_parse_passed": false,
+  "new_world_observation_passed": false,
+  "reference_visual_acceptance": false,
+  "hardware_gpu_acceptance": false,
+  "production_changed": [
+    "source-assets/coast61-nearbay-orbit/run_orbit61.py",
+    "source-assets/coast61-nearbay-orbit/verify_orbit61.gd",
+    "source-assets/coast61-nearbay-orbit/continuous-v6/wrapper_support.py"
+  ],
+  "preparation_existing_changed": [
+    "source-assets/coast61-nearbay-orbit/continuous-v6/test_wrappers.py",
+    "source-assets/coast61-nearbay-orbit/continuous-v6/check_static.py"
+  ],
+  "future_parse_command": "PYTHONDONTWRITEBYTECODE=1 python source-assets/coast61-nearbay-orbit/run_orbit61.py --parse-only --wall-timeout 60",
+  "future_long_command": "PYTHONDONTWRITEBYTECODE=1 python source-assets/coast61-nearbay-orbit/run_orbit61.py --run-renderer --observation-budget 900 --wall-timeout 1020",
+  "default_settle_wait_seconds": 15,
+  "opt_in_settle_wait_seconds": 30,
+  "native_event_wait_seconds": 15,
+  "capture_wait_seconds": 20,
+  "settle_success_checks_actual_local_clock_before_return": true,
+  "independent_review_scope": "Initial unpublished draft only; new settle amendment uses source/predicate/schema tests and exact normalized preservation checks, no new independent/native review",
+  "superseded_draft": "draft-before-settle-budget/SUPERSEDED.json"
+}

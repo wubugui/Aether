@@ -1,0 +1,68 @@
+--- source-assets/coast61-nearbay-orbit/continuous-v6/wrapper_support.py
++++ source-assets/cloud-bank58/revision-k/import-v1/bounded_support58k.py
+@@ -8,9 +8,19 @@
+ from pathlib import Path
+ import signal
+ import subprocess
++import resource
+ import time
+ 
+-STOP_SIGNALS = {signal.SIGINT, signal.SIGTERM}
++MAX_RSS_KIB = 1572864
++
++def resident_kib(pid):
++    try:
++        for line in (Path('/proc') / str(pid) / 'status').read_text().splitlines():
++            if line.startswith('VmRSS:'):return int(line.split()[1])
++    except FileNotFoundError:pass
++    return 0
++
++STOP_SIGNALS = {signal.SIGINT, signal.SIGTERM, signal.SIGALRM}
+ 
+ 
+ def sha(path: Path) -> str:
+@@ -78,6 +88,8 @@
+     child wall limit, with no unreported termination-grace extension. SIGKILL of
+     this Python process or an unwritable filesystem cannot promise a report.
+     """
++    if len(list(Path('/proc/self/task').iterdir())) != 1:
++        raise RuntimeError('preexec_fn requires a single-threaded supervising wrapper')
+     cpus = sorted(os.sched_getaffinity(0))[:2]
+     if len(cpus) != 2:
+         raise RuntimeError('Two available CPUs are required')
+@@ -93,7 +105,7 @@
+               'wall_timeout_seconds': timeout, 'wall_timeout_limit_seconds': wall_timeout_limit,
+               'timeout_triggered': False,
+               'wrapper_received_signal': None, 'returncode': None,
+-              'native_exit_observed': False, 'max_rss_kib': None}
++              'native_exit_observed': False, 'max_rss_kib': None, 'rss_limit_triggered': False, 'max_aggregate_observed_rss_kib': 0}
+     previous_mask = signal.pthread_sigmask(signal.SIG_BLOCK, STOP_SIGNALS)
+ 
+     def kill_child():
+@@ -140,6 +152,11 @@
+             last_heartbeat = -1.0
+             while not wait_child(os.WNOHANG):
+                 now = time.monotonic()
++                aggregate = resident_kib(child.pid) + resident_kib(os.getpid())
++                result['max_aggregate_observed_rss_kib'] = max(result['max_aggregate_observed_rss_kib'], aggregate)
++                if aggregate > MAX_RSS_KIB:
++                    result['rss_limit_triggered'] = True
++                    kill_child()
+                 if now - started >= timeout:
+                     result['timeout_triggered'] = True
+                     kill_child()
+@@ -168,6 +185,8 @@
+         except BaseException as exc:
+             result.update(status='reap_error', reap_error=repr(exc))
+         result['wall_seconds'] = time.monotonic() - started
++        if result['max_rss_kib'] is not None and result['max_rss_kib'] + resource.getrusage(resource.RUSAGE_SELF).ru_maxrss > MAX_RSS_KIB:
++            result['rss_limit_triggered'] = True
+         if result['wall_seconds'] > timeout:
+             result['timeout_triggered'] = True
+         for name, report in [(f'{label}.process.json', result), (f'{label}.progress.json', {
+@@ -189,4 +208,4 @@
+ def process_passed(row: dict) -> bool:
+     return (row.get('status') == 'finished' and row.get('native_exit_observed') is True
+             and row.get('returncode') == 0 and row.get('wrapper_received_signal') is None
+-            and row.get('timeout_triggered') is False and not row.get('terminal_report_errors'))
++            and row.get('timeout_triggered') is False and row.get('rss_limit_triggered') is False and not row.get('terminal_report_errors'))

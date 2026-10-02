@@ -1,0 +1,117 @@
+{
+	"all_occupancy_complete": false,
+	"engine_version_guard": {
+		"expected": {
+			"build": "official",
+			"hash": "f62fdbde15035c5576dad93e586201f4d41ef0cb",
+			"hex": 263425,
+			"major": 4,
+			"minor": 5,
+			"patch": 1,
+			"status": "stable",
+			"string": "4.5.1-stable (official)",
+			"timestamp": 0
+		},
+		"mismatches": [],
+		"passed": true,
+		"policy": "strict_fixed_4_5_1_structured_fields_full_commit_hash_v2"
+	},
+	"engine_version_info": {
+		"build": "official",
+		"hash": "f62fdbde15035c5576dad93e586201f4d41ef0cb",
+		"hex": 263425,
+		"major": 4,
+		"minor": 5,
+		"patch": 1,
+		"status": "stable",
+		"string": "4.5.1-stable (official)",
+		"timestamp": 0
+	},
+	"issues": [
+		"native arrays unavailable"
+	],
+	"passed": false,
+	"request_sha256": "fb474831b762ea3aa8eddca2b21dd74b84ae40b51c5f443dc483f7e79834c3a8",
+	"runtime_collision_observed": false,
+	"visual_meshes": [
+		{
+			"combined_vertex_bounds": {
+				"max": [
+					3.80221891403198,
+					13.1999998092651,
+					3.51377868652344
+				],
+				"min": [
+					-3.80221891403198,
+					0.0,
+					-3.90000009536743
+				]
+			},
+			"face_bounds": {
+				"max": [
+					3.80219984054565,
+					13.1999998092651,
+					3.51379990577698
+				],
+				"min": [
+					-3.80219984054565,
+					0.0,
+					-3.89999985694885
+				]
+			},
+			"face_bytes_sha256": "509df225d3b50e9b177da02ce9146e73f4382368c7baf77e43a965ab5480afbd",
+			"face_vertex_count": 168,
+			"mesh_resource": "res://assets/coast61/oak_-5_-5_CoastalPines36b.res::ArrayMesh_8qhtw",
+			"shadow": {
+				"mesh_resource": "res://assets/coast61/oak_-5_-5_CoastalPines36b.res::ArrayMesh_bpun8",
+				"shadow_mesh_resource": "",
+				"shadow_surface_storage_sha256": "",
+				"surface_storage_sha256": "981f7a2609bb9977fdd6eb600cf0b106b9389657fd23fe37749bd96f73df49a1",
+				"surfaces": [],
+				"vertex_bounds": {
+
+				},
+				"vertex_count": 0
+			},
+			"shadow_mesh_resource": "res://assets/coast61/oak_-5_-5_CoastalPines36b.res::ArrayMesh_bpun8",
+			"shadow_surface_storage_sha256": "981f7a2609bb9977fdd6eb600cf0b106b9389657fd23fe37749bd96f73df49a1",
+			"surface_storage_sha256": "b10553bb366c5eabb6b4ce9b7bf721b514eada62e1494cd9ffb6bcedb1286708",
+			"surfaces": [
+				{
+					"format": 34896613407,
+					"index": 0,
+					"index_count": 168,
+					"primitive": 3,
+					"vertex_bounds": {
+						"max": [
+							3.80221891403198,
+							13.1999998092651,
+							3.51377868652344
+						],
+						"min": [
+							-3.80221891403198,
+							0.0,
+							-3.90000009536743
+						]
+					},
+					"vertex_bytes_sha256": "76ae8f87cee80408e43fc1cb7f7dd629a3db981332c72a7d8dde731e676df22a",
+					"vertex_count": 120
+				}
+			],
+			"vertex_bounds": {
+				"max": [
+					3.80221891403198,
+					13.1999998092651,
+					3.51377868652344
+				],
+				"min": [
+					-3.80221891403198,
+					0.0,
+					-3.90000009536743
+				]
+			},
+			"vertex_count": 120
+		}
+	],
+	"world_instantiated": false
+}

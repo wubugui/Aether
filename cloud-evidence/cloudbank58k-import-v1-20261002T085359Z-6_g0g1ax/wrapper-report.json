@@ -1,0 +1,77 @@
+{
+  "version": "cloud58k-import-v1",
+  "passed": false,
+  "state": "failed",
+  "run": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/cloudbank58k-import-v1-20261002T085359Z-6_g0g1ax",
+  "limits": {
+    "total_seconds": 120,
+    "native_stage_seconds": [
+      30,
+      30,
+      20,
+      20
+    ],
+    "cpu_threads": 2,
+    "max_wrapper_plus_child_rss_kib": 1572864,
+    "max_glb_bytes": 250000
+  },
+  "stages": [
+    {
+      "status": "finished",
+      "command": [
+        "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+        "--factory-startup",
+        "--disable-autoexec",
+        "-b",
+        "-t",
+        "2",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-k/import-v1/export58k.py",
+        "--",
+        "--out",
+        "/workspace/scratch/a29d03198654/Aether/cloud-evidence/cloudbank58k-import-v1-20261002T085359Z-6_g0g1ax/export"
+      ],
+      "cpu_affinity": [
+        0,
+        1
+      ],
+      "wall_timeout_seconds": 30,
+      "wall_timeout_limit_seconds": 720,
+      "timeout_triggered": false,
+      "wrapper_received_signal": null,
+      "returncode": 1,
+      "native_exit_observed": true,
+      "max_rss_kib": 267240,
+      "rss_limit_triggered": false,
+      "max_aggregate_observed_rss_kib": 291668,
+      "pid": 5,
+      "signal": null,
+      "wall_seconds": 0.7423880279966397
+    }
+  ],
+  "world_loaded": false,
+  "world_anchor_applied": false,
+  "images": 0,
+  "visual_acceptance": false,
+  "temporary_project": "/tmp/cloud58k-import-v1-1nzqggaa",
+  "error": "Traceback (most recent call last):\n  File \"/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-k/import-v1/run_import58k.py\", line 121, in main\n    c.require(support.process_passed(row),'Native stage failed: '+label)\n  File \"/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-k/import-v1/contract58k.py\", line 29, in require\n    if not ok:raise ValueError(message)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Native stage failed: blender-export\n",
+  "inputs_unchanged": true,
+  "changed_inputs": [],
+  "input_read_errors": [],
+  "main_project_unchanged": true,
+  "source_unchanged": true,
+  "temporary_project_manifest": {
+    "probe58k.gd": {
+      "bytes": 5886,
+      "sha256": "0fb18872d2c8b2aa25143b8d62410674ba0dca4b83083962232657a710f68dd9"
+    },
+    "project.godot": {
+      "bytes": 176,
+      "sha256": "538cecdf153c3ffaa537d126bcff8bd5d70b6ad8dbb277b0938149699abfec91"
+    }
+  },
+  "elapsed_seconds": 7.035966707000625,
+  "logged_errors": []
+}

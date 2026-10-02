@@ -1,6 +1,16 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 08:38 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 08:56 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 08:56 首次完整4rad停船观察通过；北shadow和K导入失败保全
+
+- 北版本门v2准备已完整发布 **f720461751f0f82093d4daa02b1f29abd1d2ff31**，tree **a2c805b748cda0ed236f5faa7d4aaddb4ac0b2a7**、parentd9cb8351；12路径/11唯一blob新bare公共Git逐字节/SHA核回一致，本地02a0202同树对齐。create_tree首拒后原参数一次证据重试成功，已存blob未重传
+- [新完整停船观察](cloud-evidence/nearbay61-orbit-renderer-20261002T083649Z-y9u3upd2/RESULT.md)明确900 native/1020 outer/settle30；**child0实测705.883秒、wrapper0，694.579秒完整报告/收据/唯一stdout终态匹配**，2668516KiB/CPU2/llvmpipe，无engineerror（原VSync warning保留）。82真实motion全部闭环、最终4.0rad≈229°不是360°；179样本/179实际physics+isolated visual审段clear/pending0，camera264.458679m/ship0m
+- 四张1179×664原PNG完整（378361/454499/332305/307183B），均capture帧审过；我与独立审查全看过。船/岸/水/树真实材料可见，无明显单帧入墙；大片暗壁、低绿丘、串团云仍视觉不合格，K尚未集成。原≤.02m两次/输入/空间/身份门不变；**strict600性能false，flight/像素覆盖/硬件GPU/参考和总验收均false**，六旧失败不改
+- 独立重算1603实际SHA及前后manifest/67源码快照、82事件/179段/capture变换与PNG SHA/完整completion链一致。原3079360B report SHA53d0877995d21be76f4c367d40ca7ba7c59b157b6e5e1296cb749a67fc359c9e→109999B无损gzip。1613inventory共73.062秒，1310080hash/4.690GB共18.680秒为嵌套；process墙钟682.958秒/engine delta24.352秒，差额不全归渲染
+- [北v2实际读取失败](cloud-evidence/north-ridge62-proxy-version-v2-20261002T085042Z-fb_yi_2s/RESULT.md)child2/wrapper1、.506秒/129548KiB，九字段版本门实过；第一CoastalPines36b主mesh120V/168face vertices已读，shadow ArrayMesh_bpun8原生vertex接口不可用而拒绝。无engineerror/保护变化，不称6mesh/岩face/占用完成。已有coast61严格shadow解码/有向base全部LOD覆盖门可复用，先只读诊断，原v1/v2失败不改
+- [K首次隔离导入失败](cloud-evidence/cloudbank58k-import-v1-20261002T085359Z-6_g0g1ax/RESULT.md)wrapper1/总7.036秒，Blender child1/.742秒，生成31144B候选GLB后原3e-5平法线门拒绝；无成功source-readback、**Godot阶段未开始、0图**。源/1026准备身份/含缓存全mainproject未变，前后1002602B清单各225446B无损gzip。一次准入/terminal与失败GLB保留，不盲重跑或松阈值，纯Python定位具体法线差
+- 本世界成功和两短失败完整外存后继续K忠实导入与北proxy最小修正，不重复同4rad长跑。全GOAL仍未验收，场景艺术改善与实际飞行尚需做。重窗口已向MAZ释放。Slack集中两私密频道/补发确认仍待答，原E/F2八件继续停
 
 ## 08:38 北proxy结构化版本修正准备；900观察已实际启动
 

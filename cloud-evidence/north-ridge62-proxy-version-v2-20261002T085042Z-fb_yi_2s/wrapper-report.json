@@ -1,0 +1,129 @@
+{
+  "status": "wrapper_exception",
+  "passed": false,
+  "native_mesh_read_passed": false,
+  "native_parse_passed": false,
+  "all_occupancy_complete": false,
+  "runtime_collision_observed": false,
+  "output": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/north-ridge62-proxy-version-v2-20261002T085042Z-fb_yi_2s",
+  "copied_native_launch_inputs": {
+    "/workspace/scratch/a29d03198654/Aether/cloud-evidence/north-ridge62-proxy-version-v2-20261002T085042Z-fb_yi_2s/version-guard-v2/read_proxy_meshes62_v2.gd": "53435388caa6b5b8ade434e379f23f959c9651fa0f995663427051906ff12c3e",
+    "/workspace/scratch/a29d03198654/Aether/cloud-evidence/north-ridge62-proxy-version-v2-20261002T085042Z-fb_yi_2s/read_proxy_meshes62.gd": "22d729bf5d4ac1eebb34013f677016310bcef77f636c69cd26100de35ab39fb1",
+    "/workspace/scratch/a29d03198654/Aether/cloud-evidence/north-ridge62-proxy-version-v2-20261002T085042Z-fb_yi_2s/native-request-v2.json": "fb474831b762ea3aa8eddca2b21dd74b84ae40b51c5f443dc483f7e79834c3a8"
+  },
+  "dependency_guard_before": {
+    "status": "frozen_dependency_identities_verified",
+    "review_gzip_sha256": "e39ef6863849f6034f9c7fb3efeb97a191e39d3cacc9fdab9903692a832fe722",
+    "review_json_sha256": "4aa3634f3ec1d1e380d53d724ffa707af4bf66b7136c0bd5fc9592d4d9e80601",
+    "reviewed_closure_files": 1483,
+    "reviewed_closure_bytes": 133839275,
+    "exact_prior_manifest_delta_files": 51,
+    "prior_manifest_sha256": "3329d137d9c43c0fbd2f43f8ca52c4529b8590d891c5fca6fdd376fe3c2b1db9",
+    "startup_control_identities_verified": [
+      "project.godot",
+      "override.cfg",
+      ".godot/global_script_class_cache.cfg",
+      ".godot/extension_list.cfg",
+      ".godot/uid_cache.bin"
+    ],
+    "reviewed_absent_controls_still_absent": [
+      "override.cfg",
+      ".godot/extension_list.cfg"
+    ],
+    "unreviewed_dependency_remap_or_import_sidecars": [],
+    "packaged_auditors_match_frozen_embedded_sources": true,
+    "project_autoload_empty": true,
+    "global_script_class_cache_empty": true,
+    "uid_cache_matches_review": true,
+    "godot_invoked": false,
+    "native_parse_passed": false,
+    "native_collection_passed": false,
+    "all_occupancy_complete": false
+  },
+  "process": {
+    "status": "finished",
+    "command": [
+      "/workspace/scratch/a29d03198654/tools-feiting/Godot_v4.5.1-stable_linux.x86_64",
+      "--headless",
+      "--path",
+      "/workspace/scratch/a29d03198654/Aether/candidates/round40-exclusive-20260930/project",
+      "--audio-driver",
+      "Dummy",
+      "--rendering-method",
+      "gl_compatibility",
+      "--script",
+      "/workspace/scratch/a29d03198654/Aether/cloud-evidence/north-ridge62-proxy-version-v2-20261002T085042Z-fb_yi_2s/version-guard-v2/read_proxy_meshes62_v2.gd"
+    ],
+    "cpu_affinity": [
+      0,
+      1
+    ],
+    "wall_limit_seconds": 60,
+    "timeout_triggered": false,
+    "external_signal": null,
+    "pid": 5,
+    "returncode": 2,
+    "max_rss_kib": 129548,
+    "wall_seconds": 0.5058311780012446
+  },
+  "log_errors": [],
+  "native_report_sha256": "12a9077d9cdbba6c402ad70d03d43b5d757e557c42fd179e1410a13e0857dad0",
+  "engine_version_info": {
+    "build": "official",
+    "hash": "f62fdbde15035c5576dad93e586201f4d41ef0cb",
+    "hex": 263425,
+    "major": 4,
+    "minor": 5,
+    "patch": 1,
+    "status": "stable",
+    "string": "4.5.1-stable (official)",
+    "timestamp": 0
+  },
+  "engine_version_guard": {
+    "policy": "strict_fixed_4_5_1_structured_fields_full_commit_hash_v2",
+    "expected": {
+      "major": 4,
+      "minor": 5,
+      "patch": 1,
+      "status": "stable",
+      "build": "official",
+      "hash": "f62fdbde15035c5576dad93e586201f4d41ef0cb",
+      "hex": 263425,
+      "string": "4.5.1-stable (official)",
+      "timestamp": 0
+    },
+    "passed": true,
+    "mismatches": []
+  },
+  "exception": "RuntimeError('native process failed')",
+  "dependency_guard_after": {
+    "status": "frozen_dependency_identities_verified",
+    "review_gzip_sha256": "e39ef6863849f6034f9c7fb3efeb97a191e39d3cacc9fdab9903692a832fe722",
+    "review_json_sha256": "4aa3634f3ec1d1e380d53d724ffa707af4bf66b7136c0bd5fc9592d4d9e80601",
+    "reviewed_closure_files": 1483,
+    "reviewed_closure_bytes": 133839275,
+    "exact_prior_manifest_delta_files": 51,
+    "prior_manifest_sha256": "3329d137d9c43c0fbd2f43f8ca52c4529b8590d891c5fca6fdd376fe3c2b1db9",
+    "startup_control_identities_verified": [
+      "project.godot",
+      "override.cfg",
+      ".godot/global_script_class_cache.cfg",
+      ".godot/extension_list.cfg",
+      ".godot/uid_cache.bin"
+    ],
+    "reviewed_absent_controls_still_absent": [
+      "override.cfg",
+      ".godot/extension_list.cfg"
+    ],
+    "unreviewed_dependency_remap_or_import_sidecars": [],
+    "packaged_auditors_match_frozen_embedded_sources": true,
+    "project_autoload_empty": true,
+    "global_script_class_cache_empty": true,
+    "uid_cache_matches_review": true,
+    "godot_invoked": false,
+    "native_parse_passed": false,
+    "native_collection_passed": false,
+    "all_occupancy_complete": false
+  },
+  "changed_inputs": []
+}
