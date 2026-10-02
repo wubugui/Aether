@@ -1,6 +1,15 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 11:55 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 12:08 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 12:08 北源分块远端核回/干净恢复；K共享迁移准备完成
+
+- 北真实源与raw已完整发布 **cb8715d427341ba2ff5bbec5c313b58f6faa6c94**，tree **ee8e39d572ce3d1308300398627e1ccab034d6a0**、parent7360c8a4；68路径/61唯一blob新bare公共Git逐字节/SHA核回，本地fb113cb同树对齐，14新blob均成功、无拒绝或重复上传
+- [独立原生源复核](cloud-evidence/north-ridge62-recovery-v2-source-20261002T114825Z-lnt78w53/INDEPENDENT_REVIEW.md)两14.8MB raw重放及另一路几何/投影重算过，实际仅PID不同；66/24条phase/stdout/terminal全同，内嵌5.4MB load实测.026秒，原失败停点仍未知。7364当时before/after一致；K源码解HOLD后后续正常编辑另记，不伪称整个当前工作区冻结
+- [干净恢复](cloud-evidence/north-ridge62-recovery-v2-source-20261002T114825Z-lnt78w53/CLEAN_RESTORE.json)从已核Git对象向全新空目录导出13个存储文件，实际恢复.blend/两raw/内嵌绑定4原文件，每个大小/SHA精确，原源10,004,835B。**干净恢复后的native fresh-open尚待单次验证**；恢复probe静态准备中，不把original fresh当新恢复验证
+- [K共享工作副本v2](source-assets/cloud-bank58/revision-k/world-trial-v2/README.md)27文件freeze SHA3287dd78bdd6cb4bde5e684d7e9cd3178ad0533a68c5ddd23fb8a8ddd178e3d3；16普通/-O、3独立微fixture与review通过，原/tmp4889文件/93目录和main4884均全同，目标仓库外Aether-working/cloud58k-world-trial-v2尚不存在
+- 同副本跨设备逐文件搬移：核目标hash/metadata/fsync/journal后才移除对应原临时成员，任何故障停止保分区，不自动恢复/回滚/重建、不形成第二完整工作项目。180秒迁移phase/300outer，真实目录inode与全会员/SHA绑定；完成后必须从GUI只读核可见再一次renderer，原四图validator AST精确相同、240/300/CPU2/3GiB原门不改
+- 此页更新时0实际迁移/新K图，北四视图/支撑/所有GOAL未验收。原受阻Slack23件继续停，私密收据仅本地
 
 ## 11:55 北实际可编辑源与独立fresh-open通过
 
