@@ -1,0 +1,15 @@
+{
+  "command": "set -o pipefail; PYTHONDONTWRITEBYTECODE=1 python source-assets/cloud-bank58/revision-l/build-v1/interface-feasibility.py --verify | python -c 'import json,sys; x=json.load(sys.stdin); print(json.dumps({\"report_verified\":x[\"report_verified\"],\"witness\":x[\"contradiction_witness\"][\"midpoint_world_xyz_m\"],\"whole_segment_distance_lower_bound_m\":x[\"contradiction_witness\"][\"whole_witness_segment_distance_lower_bound_m\"],\"boundary\":x[\"actual_projection_boundary\"]},indent=2))'",
+  "exit_code": 0,
+  "stdout": "{\n  \"report_verified\": true,\n  \"witness\": [\n    4399.821461526581,\n    632.9938350802806,\n    4606.956858738289\n  ],\n  \"whole_segment_distance_lower_bound_m\": 148.82507750089027,\n  \"boundary\": {\n    \"candidate_silhouette_edges\": 269,\n    \"retained_union_boundary_segments\": 210,\n    \"loops\": [\n      {\n        \"component\": 0,\n        \"segments\": 203,\n        \"absolute_area_m2\": 1403190.3879037984,\n        \"perimeter_m\": 5579.2387878386035\n      },\n      {\n        \"component\": 1,\n        \"segments\": 7,\n        \"absolute_area_m2\": 437.4008730072528,\n        \"perimeter_m\": 83.39331543442628\n      }\n    ]\n  }\n}\n",
+  "stderr": "",
+  "output_scope": "Full stdout of the executed verification-and-summary pipeline. The verifier's complete JSON passed through the summary consumer; it was not separately retained.",
+  "timing": {
+    "initial_exec_wait_wall_time_seconds": 1.001003126,
+    "final_poll_wall_time_seconds": 0.000018338,
+    "process_elapsed_wall_seconds": null,
+    "note": "Exact process elapsed wall time was not instrumented; polling wall times are not represented as process duration. No rerun was performed solely to add timing."
+  },
+  "verification": "The verifier returned report_verified=true and pipeline pipefail exit=0; report witness, boundary, topology, all four contact statistics and input SHA identities matched.",
+  "no_files_written_by_verifier": true
+}

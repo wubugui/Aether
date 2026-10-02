@@ -1,0 +1,16 @@
+{
+  "schema": "cloudbank58l-offline-candidate-v1",
+  "implementation_ready": false,
+  "status": "IMPLEMENTATION PREPARATION BLOCKED by an actual old lower-interface seam versus interior belly constraint. No candidate mesh created.",
+  "blockers": [
+    "EXACT_OLD_LOWER_SEAM_Y632_786680_TO633_200990_AT_INTERIOR_DISTANCE_GE148_825_CONFLICTS_WITH_BELLY_Y_LE630",
+    "CONTINUOUS_INTERFACE_LOCK_SELECTION_REQUIRES_NEW_DESIGN_DECISION",
+    "WHOLE_BANK_CANDIDATE_AND_SPATIAL_GATE_NOT_IMPLEMENTED"
+  ],
+  "design_authority": "../design-v2/profile-definition.json plus its SHA-bound design-v1 layout",
+  "native_build_ran": false,
+  "native_parse_ran": false,
+  "source_views_ran": false,
+  "world_changed": false,
+  "next_action": "Independent review and complete publication/readback of this blocked preparation only. No native run, candidate construction, or design revision is allowed inside this item."
+}

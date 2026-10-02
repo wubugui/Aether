@@ -1,0 +1,353 @@
+{
+  "version": "revision-l-build-v1-interface-feasibility-1",
+  "scope": "Read-only finite offline geometry analysis of selected CloudSea_1_1 and four cardinal neighbors. Reused archived survey; no old9 survey or 52-ray rerun, native application, source geometry construction, world edit, Git or Slack.",
+  "conclusion": "Strict preservation of the original actual lower-envelope contact seam is incompatible with the unchanged interior belly Y<=630 requirement and retained outer footprint. The contradiction has a concrete +Z lower/lower triangle-intersection witness. Preserving contact connectivity while allowing the lower seam to move is a different, currently underdefined interpretation; no relaxation is selected here.",
+  "input_sha256": {
+    "candidates/round40-exclusive-20260930/project/scenes/candidate53d-west/Game53dWest.tscn": "6ec57b72a831d6fa906a8d866c339909de55c9c42297a038dcd429b18d0c2b18",
+    "cloud-evidence/cloudbank-next-footprint-checkpoint-20261002/survey-grids.npz": "33dd320034359f224d9fff0a5a9d43f1a51a5a770beaefefe6954c6c6b7c1615",
+    "source-assets/cloud-bank58/revision-l/design-v1/DESIGN.md": "dc7bf5e9a7a8127248642e3541f7fccf206e4176c49e72b519c08948841edfa5",
+    "source-assets/cloud-bank58/revision-l/design-v1/design_plan.json": "afd626dc8f78ae7c244c8ed39374d7e3f372e562123b96015f1d626f97ed4df7",
+    "source-assets/cloud-bank58/revision-l/design-v2/profile-definition.json": "4d6e3c1126569e5cb9a9a28204ee04ad467edef7c9e10482e617ca126b4dfc30",
+    "source-assets/cloud-bank58/revision-l/design-v2/REVISION_NOTES.md": "9ecd19afe7c22aefb1bb876a1da61e2f9c7f6d5f9fbc2c2639a5819f30ecfc2f",
+    "source-assets/cloud-bank58/revision-k/world-trial-v1/provenance58k.py": "65ae9acd7a0823a5c63aa88cd160b39706ab1c7a1c7404066a6dce715dccedaa",
+    "source-assets/cloud-bank58/revision-l/build-v1/interface-feasibility.py": "c28a3a702e05069c9acb398a025a22dddea270e5b84e8d21958de04b905abce0"
+  },
+  "decode": "Unmodified provenance58k.py decode_clouds, in-memory NEIGHBORS overridden to exactly selected plus cardinal four. float32 packed decode and float64 world transform. No analyze() or historical survey was called.",
+  "topology": [
+    {
+      "cloud": "CloudSea_1_1",
+      "welded_V": 2582,
+      "E": 7746,
+      "F": 5164,
+      "euler": 0,
+      "genus": 1
+    },
+    {
+      "cloud": "CloudSea_0_1",
+      "welded_V": 2582,
+      "E": 7746,
+      "F": 5164,
+      "euler": 0,
+      "genus": 1
+    },
+    {
+      "cloud": "CloudSea_1_0",
+      "welded_V": 2798,
+      "E": 8400,
+      "F": 5600,
+      "euler": -2,
+      "genus": 2
+    },
+    {
+      "cloud": "CloudSea_1_2",
+      "welded_V": 2595,
+      "E": 7785,
+      "F": 5190,
+      "euler": 0,
+      "genus": 1
+    },
+    {
+      "cloud": "CloudSea_2_1",
+      "welded_V": 2582,
+      "E": 7746,
+      "F": 5164,
+      "euler": 0,
+      "genus": 1
+    }
+  ],
+  "topology_checks": "Each mesh has one component, every edge incidence exactly 2, consistent directed edge orientation, each vertex link one cycle, no duplicate face or zero-area triangle. Exhaustive AABB-filtered nonadjacent triangle pairs gave no positive-length transverse intersection and no coplanar plane-straddling candidate. This float64 test is not a directed-rounding proof and does not certify isolated tangency below its 1e-6m length threshold. The original genus1 is not independently blocking: the design already permits finite closure of the archived 20 interior empty cells. Copying the old topology unchanged would not yield g0.",
+  "actual_surface_intersections": [
+    {
+      "neighbor": "CloudSea_0_1",
+      "segments": 255,
+      "summed_segment_length_m": 1934.2528905321024,
+      "Y_range_m": [
+        605.5813121599499,
+        756.4167661573513
+      ]
+    },
+    {
+      "neighbor": "CloudSea_1_0",
+      "segments": 191,
+      "summed_segment_length_m": 1703.5542997065145,
+      "Y_range_m": [
+        590.2308554768975,
+        743.8023163439631
+      ]
+    },
+    {
+      "neighbor": "CloudSea_1_2",
+      "segments": 281,
+      "summed_segment_length_m": 2023.7520702063598,
+      "Y_range_m": [
+        596.7825489523897,
+        750.5168222218824
+      ]
+    },
+    {
+      "neighbor": "CloudSea_2_1",
+      "segments": 206,
+      "summed_segment_length_m": 1702.3579646282178,
+      "Y_range_m": [
+        608.5920844762834,
+        719.6044008727077
+      ]
+    }
+  ],
+  "surface_intersection_method": "Triangle pair AABBs, reciprocal plane-straddling tests, nonparallel plane intersection, overlap of the two triangle line intervals. All four pairs had zero coplanar candidates. Segment totals are not claims about the number of connected 3D seam loops, signed intersection volume, or contact acceptance.",
+  "projected_overlap_caveat": "Archived 5m overlap masks have 3/1/1/2 four-connected components for -X/-Z/+Z/+X. These are irregular masks; the collar rectangles are locators only. Real triangle intersections exist for all four, but neither projected components nor the surface-intersection segment count defines which seam portions are locked. No whole overlap region is assumed locked.",
+  "contradiction_witness": {
+    "neighbor": "CloudSea_1_2",
+    "segment_world_xyz_m": [
+      [
+        4397.824340988003,
+        632.7866801705255,
+        4610.587744753434
+      ],
+      [
+        4401.818582065157,
+        633.2009899900357,
+        4603.325972723145
+      ]
+    ],
+    "midpoint_world_xyz_m": [
+      4399.821461526581,
+      632.9938350802806,
+      4606.956858738289
+    ],
+    "triangle_evidence": [
+      {
+        "cloud": "CloudSea_1_1",
+        "triangle_index_zero_based": 530,
+        "triangle_world_xyz_m": [
+          [
+            4423.967371292923,
+            640.5457611083984,
+            4615.815365407867
+          ],
+          [
+            4380.78799934461,
+            626.2270278930664,
+            4591.467121059319
+          ],
+          [
+            4417.041925040001,
+            640.1861953735352,
+            4632.156471224167
+          ]
+        ],
+        "barycentrics_endpoint_midpoint_endpoint": [
+          {
+            "barycentric": [
+              2.631228568361621e-14,
+              0.530082844364665,
+              0.46991715563530867
+            ],
+            "reconstruction_residual_m": 0.0
+          },
+          {
+            "barycentric": [
+              0.24352580609237218,
+              0.5215156160900015,
+              0.2349585778176263
+            ],
+            "reconstruction_residual_m": 1.1368683772161603e-13
+          },
+          {
+            "barycentric": [
+              0.48705161218464,
+              0.5129483878153467,
+              1.3347279442328868e-14
+            ],
+            "reconstruction_residual_m": 1.1368683772161603e-13
+          }
+        ],
+        "height_gradient_xz": [
+          0.27766284395476803,
+          0.09567121007316504
+        ]
+      },
+      {
+        "cloud": "CloudSea_1_2",
+        "triangle_index_zero_based": 4706,
+        "triangle_world_xyz_m": [
+          [
+            4370.478614199463,
+            639.4283676147461,
+            4615.375294774371
+          ],
+          [
+            4421.3729559202475,
+            622.5550994873047,
+            4627.853469344525
+          ],
+          [
+            4408.171091042801,
+            638.1409149169922,
+            4571.483840093286
+          ]
+        ],
+        "barycentrics_endpoint_midpoint_endpoint": [
+          {
+            "barycentric": [
+              0.4065909304093185,
+              0.3771186283592603,
+              0.2162904412314213
+            ],
+            "reconstruction_residual_m": 1.1368683772161603e-13
+          },
+          {
+            "barycentric": [
+              0.3472337137746433,
+              0.35892423104191234,
+              0.2938420551834444
+            ],
+            "reconstruction_residual_m": 1.1368683772161603e-13
+          },
+          {
+            "barycentric": [
+              0.2878764971399912,
+              0.34072983372456284,
+              0.371393669135446
+            ],
+            "reconstruction_residual_m": 1.1368683772161603e-13
+          }
+        ],
+        "height_gradient_xz": [
+          -0.2798123421233438,
+          -0.21096059803642925
+        ]
+      }
+    ],
+    "midpoint_vertical_intersections": {
+      "selected": {
+        "Y_sorted_m": [
+          632.9938350802806,
+          933.7605249723672
+        ],
+        "triangle_indices_sorted": [
+          530,
+          3197
+        ]
+      },
+      "neighbor": {
+        "Y_sorted_m": [
+          632.9938350802809,
+          725.6702535434521
+        ],
+        "triangle_indices_sorted": [
+          4706,
+          1849
+        ]
+      }
+    },
+    "vertical_interpretation": "Exactly two actual surface hits in each mesh at the witness. They are lower/lower intersections; the selected continuous vertical thickness here is 300.7666898920866m. The failure is belly height, not insufficient thickness.",
+    "local_exterior_lower_union_seam_test": [
+      {
+        "offset_along_height_difference_gradient_m": -1,
+        "XZ_m": [
+          4398.945259194493,
+          4606.474915304632
+        ],
+        "selected_bottom_m": 632.7044381373887,
+        "neighbor_bottom_m": 633.3406783819801
+      },
+      {
+        "offset_along_height_difference_gradient_m": 1,
+        "XZ_m": [
+          4400.697663858667,
+          4607.438802171948
+        ],
+        "selected_bottom_m": 633.2832320231724,
+        "neighbor_bottom_m": 632.6469917785814
+      }
+    ],
+    "seam_interpretation": "The lower envelope of the two-cloud union switches between the selected and neighbor surface across this line. It is therefore a real exterior lower-union junction, not merely a buried upper/lower crossing. Moving the selected belly down would retain overlap but replace/move this old lower junction.",
+    "distance_to_actual_projected_union_boundary_m": 152.9689674246909,
+    "nearest_boundary_point_XZ_m": [
+      4453.664193390528,
+      4750.1366939819545
+    ],
+    "nearest_boundary_segment_XZ_m": [
+      [
+        4444.560217691076,
+        4757.761354652577
+      ],
+      [
+        4453.664193390528,
+        4750.1366939819545
+      ]
+    ],
+    "nearest_boundary_original_welded_edge_world_xyz_m": [
+      [
+        4428.034392298256,
+        734.0489654541016,
+        4771.601880493368
+      ],
+      [
+        4453.664193390528,
+        725.2196197509766,
+        4750.1366939819545
+      ]
+    ],
+    "nearest_boundary_component": 0,
+    "whole_witness_segment_distance_lower_bound_m": 148.82507750089027,
+    "distance_bound_reason": "Distance-to-boundary is 1-Lipschitz; midpoint distance minus half the witness segment XZ length bounds every point on the segment. The nearest component is the outer contour. Even including the internal-hole boundary does not weaken this witness.",
+    "required_equalities_and_inequality": [
+      "Exact lower-envelope lock: new_bottom(XZ)=old_bottom(XZ) along the old lower seam",
+      "Retained original external rim puts the whole segment >148.825m inside; it cannot use the distance<80m rim exemption",
+      "Interior belly gate: 560<=new_bottom(XZ)<=630"
+    ],
+    "incompatibility_margin_m_at_midpoint": 2.9938350802806326,
+    "whole_segment_minimum_belly_violation_m": 2.7866801705255284,
+    "scope_of_proof": "Conditional on exact lower-envelope seam preservation and the retained old external rim. It does not prove that mere overlap/contact connectivity cannot be preserved by a revised belly, and does not designate every overlap sample as a lock. A new rim cutting >72m inward near this point would alter the retained footprint contract and is not presumed authorized."
+  },
+  "actual_projection_boundary": {
+    "candidate_silhouette_edges": 269,
+    "retained_union_boundary_segments": 210,
+    "loops": [
+      {
+        "component": 0,
+        "segments": 203,
+        "perimeter_m": 5579.2387878386035,
+        "absolute_area_m2": 1403190.3879037984
+      },
+      {
+        "component": 1,
+        "segments": 7,
+        "perimeter_m": 83.39331543442628,
+        "absolute_area_m2": 437.4008730072528
+      }
+    ],
+    "method": "Take welded edges whose adjacent triangle projected orientation changes, then subtract intervals strictly inside any other projected triangle using barycentric line clipping. Trace surviving segments into closed degree-2 loops. This uses actual triangle edges, not the 5m distance field. Float64 thresholds: barycentric 1e-10, projected-degeneracy 1e-10, discarded segment lengths <1e-4m, loop endpoint merge 1e-4m. Numerical rather than formal directed-rounding proof; the 68.8m+ rim-distance and 2.78m+ belly violations do not depend on threshold-sized margins."
+  },
+  "archived_grid_crosscheck": {
+    "internal_empty_cells": 20,
+    "cell_area_m2": 25,
+    "plus_Z_overlap_certified_interior_samples": 2557,
+    "plus_Z_interior_old_bottom_above630_samples": 300,
+    "strongest_grid_bottom_witness": {
+      "XZ_m": [
+        4442.5,
+        4667.5
+      ],
+      "old_bottom_m": 642.0906454738405,
+      "old_top_m": 881.2699676191039,
+      "external_empty_cell_distance_lower_bound_m": 82.0506799371857
+    },
+    "caveat": "These 300 samples only refute locking the entire lower overlap envelope. They do not define which interface portions must be locked; the actual seam witness above is the narrower decisive evidence."
+  },
+  "minimum_author_decision": {
+    "question": "A: preserve the actual original lower junction, requiring a new explicit finite locked-region/design-gate definition; or B: release the identity of the old inner-interface lower surface and re-prove controlled new contact?",
+    "option_A": "Keeping the old lower seam is incompatible with the current unmodified all-interior 560..630 belly gate. Any finite exception/lock-region or other design-gate definition must be explicitly authored and approved in a separate design decision; this task changes neither 120m nor 560..630m, and never calls an interface an outer rim.",
+    "option_B": "Release geometric identity of the old interior-interface lower surface while retaining the stated controlled-contact goal, then prove the resulting new triangle intersections, vertical intervals, gaps and continuity against the frozen neighbors. This is not already authorized by the current exact-lock language. Specify the actual fixed patch/curve subset, transition limits and allowed displacement/contact metric.",
+    "decision_status": "No option chosen; no source construction authorized by this analysis."
+  },
+  "possible_construction_after_resolution": "NumPy/SciPy suffice in principle for a finite offline candidate: extract the nonconvex projected rim and explicitly permitted interior-hole closure, author constrained planar crown/valley/shoulder paths and contour rings, triangulate with boundary/constraint edge recovery (plain scipy Delaunay plus centroid filtering is insufficient), interpolate top and bottom fields honoring v2 shared nodes, and join them by a continuous side ring into one g0 shell. Explicitly fixed interface patches must be part of the constraints, not guessed from overlap rectangles. Retain bounded controls as stored weights with zero support on the selected locks. Run edge/vertex-link/orientation, full triangle intersection, pointwise vertical interval/thickness, float32 export, coverage and contact checks. This is a construction option, not a built candidate or global feasibility certificate; no algorithm can satisfy the strict contradictory lower-seam equalities above.",
+  "acceptance": "No new source, native, topology-of-candidate, world-contact, visual, saved/fresh-open, or whole-goal acceptance is claimed.",
+  "reproduction": {
+    "command": "python source-assets/cloud-bank58/revision-l/build-v1/interface-feasibility.py --verify",
+    "behavior": "Read-only; prints computed evidence and verifies frozen input identities and report geometry; writes no files.",
+    "source_sha256": "c28a3a702e05069c9acb398a025a22dddea270e5b84e8d21958de04b905abce0"
+  }
+}

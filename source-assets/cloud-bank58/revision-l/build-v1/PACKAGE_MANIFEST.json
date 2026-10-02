@@ -1,0 +1,106 @@
+{
+  "schema": "cloudbank58l-blocked-preparation-manifest-v1",
+  "status": "BLOCKED: exact old lower seam versus current interior belly gate. No candidate/native.",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 19,
+      "sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793"
+    },
+    {
+      "path": "PREPARATION_CHECK.json",
+      "bytes": 1830,
+      "sha256": "fb1e8f637fc9c33794199bce30c21ab5ae442a5c6442bf2aeb3cb7103a98e2e2"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5574,
+      "sha256": "6e152e778ac778ade09fe18c200a5e268aa16addeec6e622a74c3242d05c7880"
+    },
+    {
+      "path": "candidate-status.json",
+      "bytes": 905,
+      "sha256": "a8d600ec26628471a4e24de16008d794ec79ff4a60c8be08d2c85fc4663ed0b6"
+    },
+    {
+      "path": "contract58l.py",
+      "bytes": 8624,
+      "sha256": "d64b76f19c309cd6aedc0775af20dd5ecabe2d6ceff78ccc863de442f4433fc0"
+    },
+    {
+      "path": "input-bindings.json",
+      "bytes": 10222,
+      "sha256": "18db7f047c4007460c2df4431a8431f79f5e92ab59eab3409a4ed3597cf4b95d"
+    },
+    {
+      "path": "interface-feasibility-replay.json",
+      "bytes": 1985,
+      "sha256": "1599ed387801e0d296214a37a514d76cbb086f72f25c6f30bacf0789a2066f7e"
+    },
+    {
+      "path": "interface-feasibility.json",
+      "bytes": 16022,
+      "sha256": "ddcfd4addb04635b07c4b4535f15e8a89b57d0d1a6fbf4f86752fe7ad05f8a55"
+    },
+    {
+      "path": "interface-feasibility.md",
+      "bytes": 3224,
+      "sha256": "ece71ad84c86d5c40b9b257d73f7f25b51fa175f53dad4fc4ece921e9162139c"
+    },
+    {
+      "path": "interface-feasibility.py",
+      "bytes": 15172,
+      "sha256": "c28a3a702e05069c9acb398a025a22dddea270e5b84e8d21958de04b905abce0"
+    },
+    {
+      "path": "native58l.py",
+      "bytes": 37630,
+      "sha256": "6c57fc184fdfea5b34936be745be628114b99a2821660db32d7bf3aab25a0234"
+    },
+    {
+      "path": "run58l.py",
+      "bytes": 1907,
+      "sha256": "964016f10dbf249c4246680acad2f6bc17225e0cdff1b59c7ae12743be9871ea"
+    },
+    {
+      "path": "test_contract58l.py",
+      "bytes": 4844,
+      "sha256": "7b0a0bebe5e4b6b3006a68a30d9c90ffd44cf4ca617c7e7ebfd6784a6b71a9dd"
+    },
+    {
+      "path": "test_native58l.py",
+      "bytes": 5205,
+      "sha256": "c1f543f28a6427a6d1e9ca2739af83fe5f361628cb2c1568a815a54f04e26b12"
+    },
+    {
+      "path": "tests-contract-normal.log",
+      "bytes": 1847,
+      "sha256": "ce500240f10b142c9ee4e3ee5b9cd4d381840f85ad6fe33699e580862971461d"
+    },
+    {
+      "path": "tests-contract-optimized.log",
+      "bytes": 1847,
+      "sha256": "dd99f8feb5bba5231ea5ef6d3a306339e260fb9a3c5dca6e9d52d8f96ed5367e"
+    },
+    {
+      "path": "tests-native-normal.log",
+      "bytes": 1618,
+      "sha256": "95b6615af6198c6db042cb0e0ce8176b0102494914ce3bac8ac15c0acbe30d5e"
+    },
+    {
+      "path": "tests-native-optimized.log",
+      "bytes": 1618,
+      "sha256": "ed5a734cd285c14566d8fe082ab1ba35c6a5463c84d6ab89177df51cf4eaea80"
+    }
+  ],
+  "file_count": 18,
+  "payload_bytes": 120093,
+  "manifest_and_checksum_excluded_to_avoid_self_reference": true,
+  "input_binding_file": "input-bindings.json",
+  "interface_report": "interface-feasibility.json",
+  "entrypoints": "Default no-op or unconditional refusal; no native launcher exists. Provisional source code is unfinished.",
+  "native_geometry_created": false,
+  "offline_candidate_mesh_created": false,
+  "native_source_views": 0,
+  "publication_status": "Worker did not use Git; complete parent publication/readback still required before any next item."
+}
