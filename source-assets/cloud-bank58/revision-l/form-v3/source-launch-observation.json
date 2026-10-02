@@ -1,0 +1,59 @@
+{
+  "stage": "source",
+  "runtime": {
+    "executable": "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/4.5/python/bin/python3.11",
+    "version": "3.11.15 (main, Apr 25 2025, 12:39:20) [GCC 11.2.1 20220127 (Red Hat 11.2.1-9)]",
+    "numpy_version": "1.26.4",
+    "python_sha256": "60b08089c60cbe81827b135c8fd9e206ba2ee6bf54aa1dbd0d6f56ac2d5914f6",
+    "numpy_file": "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/4.5/python/lib/python3.11/site-packages/numpy/__init__.py"
+  },
+  "original_source_stage": "failed",
+  "acceptance_mode": "api_consistency_isolated_diagnostic_v1",
+  "full_native_acceptance": false,
+  "historical_default_corner_geometry_passed": false,
+  "command": [
+    "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/4.5/python/bin/python3.11",
+    "-B",
+    "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/form-v3/run58l_form_v3.py",
+    "--run-approved",
+    "source"
+  ],
+  "cwd": "/workspace/scratch/a29d03198654/Aether",
+  "predecessor_publication_commit": "3e4ff5c325ece6b4a3ab7dfa3492f3d1861040f6",
+  "process_exit_observed": true,
+  "actual_exit_code": 0,
+  "timeout": false,
+  "cleanup": [],
+  "source_chain_verified": false,
+  "utc_started": "2026-10-02T22:56:43.363594+00:00",
+  "started_monotonic": 121198.57257234,
+  "supervisor_pid": 5,
+  "ended_monotonic": 121271.699549978,
+  "wall_seconds": 73.12697763800679,
+  "remaining_owned_pids": [],
+  "ownership_history": [
+    {
+      "pid": 2,
+      "state": "R",
+      "ppid": 1,
+      "pgid": 1,
+      "sid": 1,
+      "starttime": 12119798,
+      "rss_kib": 38140,
+      "reason": "supervisor"
+    },
+    {
+      "pid": 5,
+      "state": "R",
+      "ppid": 2,
+      "pgid": 5,
+      "sid": 5,
+      "starttime": 12119857,
+      "rss_kib": 0,
+      "reason": "actual_external_Popen"
+    }
+  ],
+  "cleanup_signals": [],
+  "utc_process_observation_complete": "2026-10-02T22:57:56.491146+00:00",
+  "supervisor_terminal_sha256": "be9cc9beff4bf8c4430881cbf53e551abff9fb06842ca1fe81fae89b1092ddbc"
+}
