@@ -1,0 +1,147 @@
+{
+  "schema": "cloudbank-l-contact-contract-v3",
+  "route": "B",
+  "status": "Frozen design contract only; no candidate or implementation release",
+  "authority_order": [
+    "GOAL and current user authorization",
+    "this v3 contact/lock clarification",
+    "v2 unchanged shared nodes and located sections",
+    "v1 remaining design"
+  ],
+  "selected": "SkyRegion39/CloudSea_1_1/cloud_sea_46_0_continuous_crown",
+  "frozen_neighbors": [
+    "CloudSea_0_1",
+    "CloudSea_1_0",
+    "CloudSea_1_2",
+    "CloudSea_2_1"
+  ],
+  "other_roots_frozen": 24,
+  "external_lock": {
+    "file": "external-rim.json",
+    "segments": 203,
+    "metric": "XZ Hausdorff distance and symmetric-difference area, both zero in the design domain",
+    "source_y_locked": false,
+    "old_positive_area_surface_patches_locked": [],
+    "rule": "Keep the actual nonconvex outer projected curve and every external bay. No convexification, rectangle filling, bank translation or scale. Source-edge XYZ identifies provenance only; its Y does not become a surface lock.",
+    "domain": "Closed domain inside the actual external component of the union of frozen selected triangle projections. external-rim.json catalogs203 finite computed pieces and retains their3.8879e-9m join residual; it does not silently weld them or prove exact arithmetic closure. Source-bound exact/adaptive predicates resolve ambiguous joins in implementation. Fill only the bounded original internal projection hole (7 computed segments, approximately437.400873m2), never an exterior bay."
+  },
+  "released_identity": {
+    "set": "Every selected old surface point in the interior of the external projected domain, including lower/upper surfaces inside all four neighbor overlaps and the original internal-hole wall. Old triangle, vertex, lower-envelope switch-line and seam-loop identities are not constraints on the new surface.",
+    "old_lower_seam_locked": false,
+    "original_530_4706_witness": "Explicitly released, not preserved. Its projection remains >80m inside and receives the unchanged belly rule. Frozen neighbor triangle4706 never moves.",
+    "outer_y": "Old outer-silhouette Y identity also not locked: the goal preserves the XZ coast and bays, not the failed old cloud's vertical profile. New rim heights are authored with the same absolute Y envelope and continuous return to the belly."
+  },
+  "solid_class": "A single closed, consistently oriented g0 solid over the filled external domain, with one occupied vertical interval [B(q),T(q)] at each interior XZ q. B,T are continuous piecewise-linear surfaces on a constrained triangulation and B<T inside. Rim side surfaces close the shell; independent topology, orientation, intersection and float32 checks remain mandatory. No candidate triangles are defined in this package.",
+  "unchanged_gates": {
+    "interior_distance_from_external_rim_m": 80,
+    "interior_min_vertical_thickness_m": 120,
+    "interior_belly_y_m": [
+      560,
+      630
+    ],
+    "world_y_envelope_m": [
+      533.4189910888672,
+      1057.0673217773438
+    ],
+    "triangle_ceiling": 5164,
+    "new_interior_seam_exception": false
+  },
+  "transition": {
+    "distance": "d(q)=Euclidean XZ distance to external-rim.json only. Never distance to a neighbor seam, overlap edge, old hole or raster void.",
+    "sets": {
+      "rim": "d=0",
+      "rim_return": "0<d<80",
+      "core": "d>=80"
+    },
+    "control_taper": "u=min(1,d/80); w_rim=u*u*(3-2*u). This governs control displacement only, not interpolation from old belly Y. It reaches full support at the already mandated 80m core boundary.",
+    "continuity": "B and T and control deformation are continuous across d=80 and all mesh/control-region boundaries. The rim-return is not an extra locked 50-100m old collar; no old lower Y is blended into the core.",
+    "rim_y": "Author a new baseline rim Y within the original absolute envelope, then close and roll the side into the body. No old rim Y equalities. Seven macro controls have zero weight on the new baseline rim, preserving its authored return during control exercises."
+  },
+  "control_supports": {
+    "C01_Crown_A": "Top/shoulder surface over D intersect q_A<1; ellipse half spans250,235 centered4140,3910; q_A is normalized radius. Weight w_rim*(max(0,1-q_A*q_A))^2. Crest range975..1030, default1005.",
+    "C02_Crown_B": "Same top/shoulder rule: center4330,4480; half spans280,215; crest1010..1050, default1040.",
+    "C03_Return_C": "Same top/shoulder rule: center4750,4300; half spans155,280; crest900..955, default925.",
+    "C04_Shoulder_D": "Same top/shoulder rule: center4470,3690; half spans210,125; crest820..875, default845.",
+    "C05_Main_Valley": "Top valley/shoulder field within160m of the authoritative v2 main and branch XZ polylines. Compact squared support max(0,1-(distance/160)^2)^2 times w_rim; branch end remains blind. Inherit original floor735..780 and width multiplier0.9..1.1. V2 is one shared junction; no second branch height.",
+    "C06_Belly": "B surface on all D interior, weight w_rim. Inherit bounded fullness parameter560..615/default585; this parameter is not a constant belly height. Baseline still exactly references A_belly570 and both v2 lower profiles; reject any control state violating560..630/core thickness.",
+    "C07_Meso_Relief": "Top/side shoulder field only; amplitude0..25m/default18 and wavelength70..160m inherited. Multiply w_rim and a valley mask: zero within85m of the main/branch lines, smoothly rise over85..160m via smoothstep. Exclude belly and authoritative crest/junction nodes. No random spikes or camera-facing geometry."
+  },
+  "displacement_and_metric": {
+    "old_to_new": "No vertex correspondence or arbitrary old-to-new Y displacement cap. At fixed XZ, a source surface point of height y may be replaced only within[533.4189910888672-y,1057.0673217773438-y] vertical displacement; core B additionally lies560..630 and T-B>=120. XZ domain displacement is zero. Old topology may change only to the stated filled-domain g0 shell.",
+    "controls": "Use scalar height-field variations with stored support; shoulder spread/valley width reshape the height field on fixed XZ, never the bank transform or rim. Parameter ranges above remain bounded, and all simultaneous states must pass the same gates. Weight support does not by itself prove a deformation valid.",
+    "numerical_policy": "Design equalities are exact. Candidate/native checks must report actual float32 round-trip coordinate error and propagate that measured error into geometric predicates. No fixed aesthetic tolerance or epsilon may close a positive gap, erase a bay, lower120 or raise630. Ambiguous sign cases require exact/adaptive predicates or remain unproved."
+  },
+  "v2_preservation": {
+    "definition_path": "source-assets/cloud-bank58/revision-l/design-v2/profile-definition.json",
+    "definition_sha256": "4d6e3c1126569e5cb9a9a28204ee04ad467edef7c9e10482e617ca126b4dfc30",
+    "A_xyz_m": [
+      4140,
+      1005,
+      3910
+    ],
+    "A_belly_xyz_m": [
+      4140,
+      570,
+      3910
+    ],
+    "V2_xyz_m": [
+      4480,
+      740,
+      4070
+    ],
+    "sections": [
+      "near_A",
+      "D_A_valley_B"
+    ],
+    "rule": "Keep the two authoritative baseline PCHIP targets and exact shared nodes, not just labels. Finite planar triangles cannot exactly equal a cubic between knots: the later implementation must retain knots and disclose/certify its interpolation residual to these unchanged targets while preserving their extrema, shared identities and gates. No approximation tolerance is invented or accepted here. Nondefault control exercises must derive shared nodes once, update both representations together and never overwrite this baseline authority.",
+    "old_grid_guard_retained": true
+  },
+  "contact_contract": {
+    "domain_per_neighbor": "Let S0 be the frozen selected solid and N_i each frozen neighbor. O_i is the intersection of actual triangle projections. J_i=projection_XZ(interior(S0 intersect N_i)) is the old genuine positive-volume contact footprint, not the entire O_i and not its sampled components.",
+    "pass": "For every q in J_i, the new single occupied interval [B(q),T(q)] must overlap at least one actual parity/winding interval of N_i with positive length in the interior; boundary closures may touch at zero length. Thus no new positive-area separating gap can appear in an old joined footprint. At least one positive-volume component per cardinal neighbor, and the connected new bank plus four neighbors form a connected union. No requirement to retain old seam-loop counts, exact intersection curves or old overlap depth.",
+    "gap_metric": "At q, enumerate all true N_i intervals [l_j,u_j]. signed_gap(q)=min_j(max(B(q),l_j)-min(T(q),u_j)); positive means separation, zero touch, negative volume overlap. Never use global minY/maxY if N_i has multiple intervals.",
+    "continuity_and_components": "Build the full contact-volume cell adjacency and record each component and its incident neighbor. There must be no lost J_i region or newly disconnected selected component. Four positive sample rays do not establish this graph or continuum condition.",
+    "finite_verification_algorithm": "Overlay projected edges of S0, N_i and candidate, plus Y-order/equality lines within each planar cell. Evaluate oriented crossing order to obtain all intervals. On resulting convex cells interval endpoint heights are affine: split at competing max/min branches, compute signed-gap extrema from vertices/edge limits, classify interior signs, and assemble contact-volume adjacency across cell faces. Include degenerate/vertical triangles and coplanar/tangent cases with exact or adaptive fallback; unresolved cells remain unproved. Also check actual triangle-triangle contacts and full source/native topology. This finite algorithm is specified for the next implementation; it is not implemented or passed by the local witness script.",
+    "no_new_diagonal_bridge": "Projection stays within the old external domain. Do not add geometry into exterior bays or new diagonal bridge footprints. Other24 roots cannot change.",
+    "local_witnesses_are_global_proof": false
+  },
+  "frozen_world": {
+    "anchor_xyz_m": [
+      3958,
+      0,
+      3667
+    ],
+    "basis": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "camera_source": "source-assets/cloud-bank58/revision-l/design-v1/evidence-bindings.json#fixed_actual_camera_records",
+    "camera_rule": "All four original serialized absolute transform/projection records unchanged; do not recenter from new bounds",
+    "material_weather": "Inherit v1 K normal opaque/two-sided Burley material, Sun/ambient/fog/lightning, time0.35, reference1216 and1179x664; no new substitute materials or hidden neighbors"
+  },
+  "stage": {
+    "candidate_created": false,
+    "native_allowed": false,
+    "contact_accepted": false,
+    "visual_accepted": false,
+    "next_item_requires_independent_review_and_full_plugin_publication_readback": true
+  }
+}

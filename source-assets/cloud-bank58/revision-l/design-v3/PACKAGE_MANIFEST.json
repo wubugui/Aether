@@ -1,0 +1,75 @@
+{
+  "schema": "cloudbank-l-design-v3-package",
+  "scope": "Frozen B-route design contract; no candidate geometry, recipe, source, images or native",
+  "parent_verified_release": "0dafbe77d665f7574ebc08ce2c0dbbe2053ead20",
+  "payload_files": [
+    {
+      "path": "CONTRACT.md",
+      "bytes": 10943,
+      "sha256": "f9718fa63dbcc73e7dd4c919a5eb8efe77218b079b0a7c7e252fe7bcc211454a"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3503,
+      "sha256": "678ded596c31e6cb92eaceaf6adea2bc1ef843969c6bd75985b0e8a571e7d3b5"
+    },
+    {
+      "path": "check_contract.py",
+      "bytes": 4636,
+      "sha256": "382a4fee62cadf40f6938747e32dcddeb31b300f9520188b684ca51aee9424d9"
+    },
+    {
+      "path": "contact-contract.json",
+      "bytes": 11148,
+      "sha256": "2c93501f7fa9aebc9b1df0432af1a71fc1bcb1bc7536d2c444eafc69c32c59f8"
+    },
+    {
+      "path": "contact-evidence.json",
+      "bytes": 34600,
+      "sha256": "02b910c45a28e48439db64ebd54bb6b30866a92f2e66a368d1b1d3c7aca50b45"
+    },
+    {
+      "path": "dependencies.json",
+      "bytes": 12710,
+      "sha256": "d8bd9589ddb7bfe60ce056602a762c19a11cbf2b986fe74fc4cdd92e0de1f137"
+    },
+    {
+      "path": "external-rim.json",
+      "bytes": 139991,
+      "sha256": "7d20bf2db403152759fa9c4063da957939141416de7fd306865bf7d7ed08af77"
+    },
+    {
+      "path": "replay-result.json",
+      "bytes": 654,
+      "sha256": "047c1034a7491ad3edc62683540186213c2afe1e3d9691580ffccce0874f01af"
+    },
+    {
+      "path": "replay_contract.py",
+      "bytes": 11651,
+      "sha256": "49892874014fb04a0c5967e6f7de8426434f699c66e9345ba9881a2e7a69eaba"
+    },
+    {
+      "path": "test_contract.py",
+      "bytes": 4239,
+      "sha256": "c517aadb4d0fa90b399c0a4f1a26639ed7bd7e05a2a32d420eb701eca51b597e"
+    },
+    {
+      "path": "tests-normal.log",
+      "bytes": 2147,
+      "sha256": "26fc7d916c8576df2f9ee7dc4a697af8c0ee0721f21ef131bf20422900466c1a"
+    },
+    {
+      "path": "tests-optimized.log",
+      "bytes": 2147,
+      "sha256": "9ac19c6bcc42c0bb307c1a2706c19892d311557fc38d698d59b08ca2d60a8ec5"
+    }
+  ],
+  "payload_count": 12,
+  "payload_bytes": 238369,
+  "exclusions": [
+    "PACKAGE_MANIFEST.json is covered by SHA256SUMS.txt",
+    "SHA256SUMS.txt cannot recursively cover itself",
+    "Independent review and parent progress, when added, are separately included by the parent publication task"
+  ],
+  "stage": "Stop. Independent review and full plugin publication/remote byte readback required before next item."
+}
