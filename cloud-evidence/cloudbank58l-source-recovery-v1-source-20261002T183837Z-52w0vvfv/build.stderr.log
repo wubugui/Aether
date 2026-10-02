@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/source-recovery-v1/native58l.py", line 246, in <module>
+    if __name__=='__main__':raise SystemExit(main())
+                                             ^^^^^^
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/source-recovery-v1/native58l.py", line 224, in main
+    report['validation']=g.validate_native_raw(raw,c,b)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/source-v1/geometry58l.py", line 173, in validate_native_raw
+    report=support.validate_capture(raw,candidate,binding,support.expected_texts(HERE,candidate,binding))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/source-recovery-v1/native_support58l.py", line 196, in validate_capture
+    require(max_normal<=3e-5,'Actual outward flat polygon/corner normals')
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/source-recovery-v1/native_support58l.py", line 25, in require
+    if not ok: raise ValueError(message)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Actual outward flat polygon/corner normals
+
+Error: script failed, file: '/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/source-recovery-v1/native58l.py', exiting.

@@ -1,0 +1,66 @@
+{
+  "scope": "Read-only API-path diagnosis; the original native run remains failed and unsaved",
+  "blender_version": [
+    4,
+    5,
+    14
+  ],
+  "raw_sha256": "0b39aa841519b65874e24d219c4e74d3063daa8dfd9bdf86b15fdb90e9b5a99c",
+  "old_raw_sha256": "73dfbbf9a376d4c32d29f27f02ff3ca99d72e1e7686f4e4a2a11de55b2e7182a",
+  "vertices": 1567,
+  "triangles": 3130,
+  "corner_count": 9390,
+  "all_polygons_flat": true,
+  "all_three_corners_bit_equal": true,
+  "old_new_polygon_float32_bits_equal": true,
+  "old_new_corner_float32_bits_equal": true,
+  "polygon_vs_geometric_max": 2.7049721644800684e-06,
+  "corner_vs_geometric_max": 0.00015941344933428914,
+  "corner_vs_polygon_max": 0.00015941262245178223,
+  "corner_vs_float32_newell_max": 5.960464477539063e-08,
+  "old_comparison_faces_over_3e_5": [
+    12,
+    13,
+    682,
+    726,
+    727,
+    729,
+    1198,
+    1344,
+    1403,
+    1404,
+    1435,
+    1576,
+    1577,
+    1578,
+    1870,
+    2291,
+    2292,
+    2293,
+    2294,
+    2609,
+    2610,
+    2763
+  ],
+  "newell_comparison_faces_over_3e_5": [],
+  "corner_unit_length_error_max": 1.3277417698631666e-07,
+  "corner_geometric_angle_degrees_max": 0.009158468662372497,
+  "corner_geometric_dot_min": 0.999999987224719,
+  "source_saved": false,
+  "native_acceptance": false,
+  "visual_acceptance": false,
+  "world_acceptance": false,
+  "GOAL_acceptance": false,
+  "primary_sources": [
+    {
+      "url": "https://raw.githubusercontent.com/blender/blender/v4.5.14/source/blender/makesrna/intern/rna_mesh.cc",
+      "lines": "498-506",
+      "role": "polygon getter calls the per-face normal calculator"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/blender/blender/v4.5.14/source/blender/blenkernel/intern/mesh_normals.cc",
+      "lines": "113-176,417-443",
+      "role": "triangle direct calculation differs from the cached float32 Newell path gathered for flat corners"
+    }
+  ]
+}
