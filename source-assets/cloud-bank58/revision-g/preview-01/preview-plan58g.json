@@ -1,0 +1,60 @@
+{
+  "status": "Post-save preview preparation only; original build remains false",
+  "inputs": {
+    "source": {
+      "path": "source-assets/cloud-bank58/revision-g/field_patch58g.blend",
+      "bytes": 152743,
+      "sha256": "a30f3b267a4de95a9d3fb2514ab99ca22e416607087e9b80cf9bfc5407999b15"
+    },
+    "original_build_report": {
+      "path": "cloud-evidence/cloudbank58g-patch-20261002T031700Z-l81janv4/outputs/build-result58g.json",
+      "bytes": 13665,
+      "sha256": "5cb628d28333882a9a36f1f08fbf96e87007813d7d0b579d49eb1ebf6e25d9ec"
+    },
+    "readback_report": {
+      "path": "cloud-evidence/cloudbank58g-readonly-20261002T033107Z-vx7uspi2/outputs/inspection-result58g.json",
+      "bytes": 13818,
+      "sha256": "cdd715918cc1068e92f281e008a0de0e9fc701ad4b6a1ca1e98354d3fded7668"
+    },
+    "readback_wrapper": {
+      "path": "cloud-evidence/cloudbank58g-readonly-20261002T033107Z-vx7uspi2/wrapper-report.json",
+      "bytes": 1687,
+      "sha256": "e0170dbee510f1afdf5e7051d4a88c7d7ea713b4413b88b8f3b9343a7cc0c1ca"
+    },
+    "readback_freeze": {
+      "path": "source-assets/cloud-bank58/revision-g/inspection-01/inspection-completed-freeze58g.json",
+      "bytes": 4143,
+      "sha256": "6003aa736c718566cb194a98bc5c4af4b13aa556fc7d29524188ed13ad54556b"
+    },
+    "original_failure_freeze": {
+      "path": "source-assets/cloud-bank58/revision-g/failure-freeze58g.json",
+      "bytes": 5163,
+      "sha256": "0263027264f540d7b6da5a96071aec031fa6012c6f6a0569bb8a106356a60d48"
+    },
+    "original_preparation_freeze": {
+      "path": "source-assets/cloud-bank58/revision-g/preparation-freeze58g.json",
+      "bytes": 100193,
+      "sha256": "c79c39c94258fad45cd1fb5befcbaa1c71105cbd340f679ea523837999d88946"
+    }
+  },
+  "views": [
+    "1216-source-front",
+    "shared-side-back"
+  ],
+  "limits": {
+    "total_seconds": 20,
+    "cpu_threads": 2,
+    "max_wrapper_plus_child_rss_kib": 1572864
+  },
+  "blender_binary_sha256": "050c02562f81fe80ba616a80198fa02d381e60f8b61b8d39add881f4bca0d7d8",
+  "policy": {
+    "build_new_source": false,
+    "rewrite_original_reports": false,
+    "save_source": false,
+    "automatic_reframe": false,
+    "image_filtering": false,
+    "pixels_edited": false,
+    "each_view_independent_new_process": true
+  },
+  "basis": "Independent saved-source readback permits a new validation phase; every view reruns full native identity, both cameras, original light/material, empty images/libraries and no strongly linked IDs before rendering."
+}

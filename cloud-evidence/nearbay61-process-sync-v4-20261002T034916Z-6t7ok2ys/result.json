@@ -1,0 +1,795 @@
+{
+  "checks": [
+    {
+      "details": {
+        "follower_updates": 1,
+        "phase": "process_frame_signal_start",
+        "process_frame": 1,
+        "rain_position": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "name": "process_signal_precedes_native_follower_update",
+      "passed": true
+    },
+    {
+      "details": {
+        "follower_updates": 2,
+        "phase": "after_late_witness",
+        "process_frame": 1,
+        "rain_position": [
+          128.0,
+          32.0,
+          64.0
+        ]
+      },
+      "name": "late_witness_observes_native_follower_update",
+      "passed": true
+    },
+    {
+      "details": [
+        {
+          "details": {
+            "before": {
+              "bounds_intersects_domain": true,
+              "bounds_position": [
+                -0.501999974250793,
+                -0.501999974250793,
+                -0.501999974250793
+              ],
+              "bounds_size": [
+                1.00399994850159,
+                1.00399994850159,
+                1.00399994850159
+              ],
+              "camera_cull_mask": 1048575,
+              "class": "MeshInstance3D",
+              "effective_query_candidate": false,
+              "effective_visible": false,
+              "exists": true,
+              "inside_tree": true,
+              "instance_id": 25249711473,
+              "layers": 1,
+              "own_visible": false,
+              "path": "/root/ProcessSyncOnly/HiddenFollower",
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "transform_hex": "120000000000803f0000000000000000000000000000803f0000000000000000000000000000803f000000000000000000000000",
+              "tree_visible": false
+            },
+            "bounds_position": [
+              -0.501999974250793,
+              -0.501999974250793,
+              -0.501999974250793
+            ],
+            "bounds_size": [
+              1.00399994850159,
+              1.00399994850159,
+              1.00399994850159
+            ],
+            "current": {
+              "bounds_intersects_domain": true,
+              "bounds_position": [
+                127.498001098633,
+                31.4979991912842,
+                63.4980010986328
+              ],
+              "bounds_size": [
+                1.00399994850159,
+                1.00399994850159,
+                1.00399994850159
+              ],
+              "camera_cull_mask": 1048575,
+              "class": "MeshInstance3D",
+              "effective_query_candidate": false,
+              "effective_visible": false,
+              "exists": true,
+              "inside_tree": true,
+              "instance_id": 25249711473,
+              "layers": 1,
+              "own_visible": false,
+              "path": "/root/ProcessSyncOnly/HiddenFollower",
+              "position": [
+                128.0,
+                32.0,
+                64.0
+              ],
+              "transform_hex": "120000000000803f0000000000000000000000000000803f0000000000000000000000000000803f000000430000004200008042",
+              "tree_visible": false
+            },
+            "expansion": 0.0,
+            "instance_id": 25249711473,
+            "layers": 1,
+            "path": "/root/ProcessSyncOnly/HiddenFollower",
+            "query_candidate": true,
+            "queued_ancestors_at_inventory": [],
+            "visible": false
+          },
+          "reason": "Candidate geometry visibility/transform changed after stationary inventory"
+        }
+      ],
+      "name": "premature_hidden_inventory_still_fails_after_follow",
+      "passed": true
+    },
+    {
+      "details": {
+        "before": {
+          "bounds_intersects_domain": true,
+          "bounds_position": [
+            -0.501999974250793,
+            -0.501999974250793,
+            -0.501999974250793
+          ],
+          "bounds_size": [
+            1.00399994850159,
+            1.00399994850159,
+            1.00399994850159
+          ],
+          "camera_cull_mask": 1048575,
+          "class": "MeshInstance3D",
+          "effective_query_candidate": false,
+          "effective_visible": false,
+          "exists": true,
+          "inside_tree": true,
+          "instance_id": 25249711473,
+          "layers": 1,
+          "own_visible": false,
+          "path": "/root/ProcessSyncOnly/HiddenFollower",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "transform_hex": "120000000000803f0000000000000000000000000000803f0000000000000000000000000000803f000000000000000000000000",
+          "tree_visible": false
+        },
+        "bounds_position": [
+          -0.501999974250793,
+          -0.501999974250793,
+          -0.501999974250793
+        ],
+        "bounds_size": [
+          1.00399994850159,
+          1.00399994850159,
+          1.00399994850159
+        ],
+        "current": {
+          "bounds_intersects_domain": true,
+          "bounds_position": [
+            127.498001098633,
+            31.4979991912842,
+            63.4980010986328
+          ],
+          "bounds_size": [
+            1.00399994850159,
+            1.00399994850159,
+            1.00399994850159
+          ],
+          "camera_cull_mask": 1048575,
+          "class": "MeshInstance3D",
+          "effective_query_candidate": false,
+          "effective_visible": false,
+          "exists": true,
+          "inside_tree": true,
+          "instance_id": 25249711473,
+          "layers": 1,
+          "own_visible": false,
+          "path": "/root/ProcessSyncOnly/HiddenFollower",
+          "position": [
+            128.0,
+            32.0,
+            64.0
+          ],
+          "transform_hex": "120000000000803f0000000000000000000000000000803f0000000000000000000000000000803f000000430000004200008042",
+          "tree_visible": false
+        },
+        "expansion": 0.0,
+        "instance_id": 25249711473,
+        "layers": 1,
+        "path": "/root/ProcessSyncOnly/HiddenFollower",
+        "query_candidate": true,
+        "queued_ancestors_at_inventory": [],
+        "visible": false
+      },
+      "name": "hidden_follow_failure_has_complete_before_current",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "post_process_baseline_remains_exact_for_stationary_ship",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "camera_rotation_does_not_move_ship_grid_follower",
+      "passed": true
+    },
+    {
+      "details": [
+        {
+          "details": {
+            "before": {
+              "bounds_intersects_domain": true,
+              "bounds_position": [
+                127.498001098633,
+                31.4979991912842,
+                63.4980010986328
+              ],
+              "bounds_size": [
+                1.00399994850159,
+                1.00399994850159,
+                1.00399994850159
+              ],
+              "camera_cull_mask": 1048575,
+              "class": "MeshInstance3D",
+              "effective_query_candidate": false,
+              "effective_visible": false,
+              "exists": true,
+              "inside_tree": true,
+              "instance_id": 25249711473,
+              "layers": 1,
+              "own_visible": false,
+              "path": "/root/ProcessSyncOnly/HiddenFollower",
+              "position": [
+                128.0,
+                32.0,
+                64.0
+              ],
+              "transform_hex": "120000000000803f0000000000000000000000000000803f0000000000000000000000000000803f000000430000004200008042",
+              "tree_visible": false
+            },
+            "bounds_position": [
+              127.498001098633,
+              31.4979991912842,
+              63.4980010986328
+            ],
+            "bounds_size": [
+              1.00399994850159,
+              1.00399994850159,
+              1.00399994850159
+            ],
+            "current": {
+              "bounds_intersects_domain": true,
+              "bounds_position": [
+                127.498001098633,
+                31.4979991912842,
+                63.4980010986328
+              ],
+              "bounds_size": [
+                1.00399994850159,
+                1.00399994850159,
+                1.00399994850159
+              ],
+              "camera_cull_mask": 1048575,
+              "class": "MeshInstance3D",
+              "effective_query_candidate": true,
+              "effective_visible": true,
+              "exists": true,
+              "inside_tree": true,
+              "instance_id": 25249711473,
+              "layers": 1,
+              "own_visible": true,
+              "path": "/root/ProcessSyncOnly/HiddenFollower",
+              "position": [
+                128.0,
+                32.0,
+                64.0
+              ],
+              "transform_hex": "120000000000803f0000000000000000000000000000803f0000000000000000000000000000803f000000430000004200008042",
+              "tree_visible": true
+            },
+            "expansion": 0.0,
+            "instance_id": 25249711473,
+            "layers": 1,
+            "path": "/root/ProcessSyncOnly/HiddenFollower",
+            "query_candidate": true,
+            "queued_ancestors_at_inventory": [],
+            "visible": false
+          },
+          "reason": "Candidate geometry visibility/transform changed after stationary inventory"
+        }
+      ],
+      "name": "hidden_to_visible_still_fails_with_diagnostics",
+      "passed": true
+    },
+    {
+      "details": [
+        {
+          "details": {
+            "before": {
+              "bounds_intersects_domain": true,
+              "bounds_position": [
+                127.498001098633,
+                31.4979991912842,
+                63.4980010986328
+              ],
+              "bounds_size": [
+                1.00399994850159,
+                1.00399994850159,
+                1.00399994850159
+              ],
+              "camera_cull_mask": 1048575,
+              "class": "MeshInstance3D",
+              "effective_query_candidate": true,
+              "effective_visible": true,
+              "exists": true,
+              "inside_tree": true,
+              "instance_id": 25249711473,
+              "layers": 1,
+              "own_visible": true,
+              "path": "/root/ProcessSyncOnly/HiddenFollower",
+              "position": [
+                128.0,
+                32.0,
+                64.0
+              ],
+              "transform_hex": "120000000000803f0000000000000000000000000000803f0000000000000000000000000000803f000000430000004200008042",
+              "tree_visible": true
+            },
+            "bounds_position": [
+              127.498001098633,
+              31.4979991912842,
+              63.4980010986328
+            ],
+            "bounds_size": [
+              1.00399994850159,
+              1.00399994850159,
+              1.00399994850159
+            ],
+            "current": {
+              "bounds_intersects_domain": true,
+              "bounds_position": [
+                127.498001098633,
+                31.4979991912842,
+                63.4980010986328
+              ],
+              "bounds_size": [
+                1.00399994850159,
+                1.00399994850159,
+                1.00399994850159
+              ],
+              "camera_cull_mask": 1048575,
+              "class": "MeshInstance3D",
+              "effective_query_candidate": false,
+              "effective_visible": false,
+              "exists": true,
+              "inside_tree": true,
+              "instance_id": 25249711473,
+              "layers": 1,
+              "own_visible": false,
+              "path": "/root/ProcessSyncOnly/HiddenFollower",
+              "position": [
+                128.0,
+                32.0,
+                64.0
+              ],
+              "transform_hex": "120000000000803f0000000000000000000000000000803f0000000000000000000000000000803f000000430000004200008042",
+              "tree_visible": false
+            },
+            "expansion": 0.0,
+            "instance_id": 25249711473,
+            "layers": 1,
+            "path": "/root/ProcessSyncOnly/HiddenFollower",
+            "query_candidate": true,
+            "queued_ancestors_at_inventory": [],
+            "visible": true
+          },
+          "reason": "Candidate geometry visibility/transform changed after stationary inventory"
+        }
+      ],
+      "name": "visible_to_hidden_still_fails",
+      "passed": true
+    },
+    {
+      "details": [
+        {
+          "details": {
+            "before": {
+              "bounds_intersects_domain": true,
+              "bounds_position": [
+                127.498001098633,
+                31.4979991912842,
+                63.4980010986328
+              ],
+              "bounds_size": [
+                1.00399994850159,
+                1.00399994850159,
+                1.00399994850159
+              ],
+              "camera_cull_mask": 1048575,
+              "class": "MeshInstance3D",
+              "effective_query_candidate": false,
+              "effective_visible": false,
+              "exists": true,
+              "inside_tree": true,
+              "instance_id": 25249711473,
+              "layers": 1,
+              "own_visible": false,
+              "path": "/root/ProcessSyncOnly/HiddenFollower",
+              "position": [
+                128.0,
+                32.0,
+                64.0
+              ],
+              "transform_hex": "120000000000803f0000000000000000000000000000803f0000000000000000000000000000803f000000430000004200008042",
+              "tree_visible": false
+            },
+            "bounds_position": [
+              127.498001098633,
+              31.4979991912842,
+              63.4980010986328
+            ],
+            "bounds_size": [
+              1.00399994850159,
+              1.00399994850159,
+              1.00399994850159
+            ],
+            "current": {
+              "bounds_intersects_domain": true,
+              "bounds_position": [
+                127.498001098633,
+                31.4979991912842,
+                63.4980010986328
+              ],
+              "bounds_size": [
+                1.00399994850159,
+                1.00399994850159,
+                1.00399994850159
+              ],
+              "camera_cull_mask": 1048575,
+              "class": "MeshInstance3D",
+              "effective_query_candidate": false,
+              "effective_visible": false,
+              "exists": true,
+              "inside_tree": true,
+              "instance_id": 25249711473,
+              "layers": 2,
+              "own_visible": false,
+              "path": "/root/ProcessSyncOnly/HiddenFollower",
+              "position": [
+                128.0,
+                32.0,
+                64.0
+              ],
+              "transform_hex": "120000000000803f0000000000000000000000000000803f0000000000000000000000000000803f000000430000004200008042",
+              "tree_visible": false
+            },
+            "expansion": 0.0,
+            "instance_id": 25249711473,
+            "layers": 1,
+            "path": "/root/ProcessSyncOnly/HiddenFollower",
+            "query_candidate": true,
+            "queued_ancestors_at_inventory": [],
+            "visible": false
+          },
+          "reason": "Candidate geometry visibility/transform changed after stationary inventory"
+        }
+      ],
+      "name": "hidden_layer_change_still_fails",
+      "passed": true
+    },
+    {
+      "details": [
+        {
+          "details": {
+            "before": {
+              "bounds_intersects_domain": true,
+              "bounds_position": [
+                127.498001098633,
+                31.4979991912842,
+                63.4980010986328
+              ],
+              "bounds_size": [
+                1.00399994850159,
+                1.00399994850159,
+                1.00399994850159
+              ],
+              "camera_cull_mask": 1048575,
+              "class": "MeshInstance3D",
+              "effective_query_candidate": true,
+              "effective_visible": true,
+              "exists": true,
+              "inside_tree": true,
+              "instance_id": 25249711473,
+              "layers": 1,
+              "own_visible": true,
+              "path": "/root/ProcessSyncOnly/HiddenFollower",
+              "position": [
+                128.0,
+                32.0,
+                64.0
+              ],
+              "transform_hex": "120000000000803f0000000000000000000000000000803f0000000000000000000000000000803f000000430000004200008042",
+              "tree_visible": true
+            },
+            "bounds_position": [
+              127.498001098633,
+              31.4979991912842,
+              63.4980010986328
+            ],
+            "bounds_size": [
+              1.00399994850159,
+              1.00399994850159,
+              1.00399994850159
+            ],
+            "current": {
+              "bounds_intersects_domain": true,
+              "bounds_position": [
+                128.498001098633,
+                31.4979991912842,
+                63.4980010986328
+              ],
+              "bounds_size": [
+                1.00399994850159,
+                1.00399994850159,
+                1.00399994850159
+              ],
+              "camera_cull_mask": 1048575,
+              "class": "MeshInstance3D",
+              "effective_query_candidate": true,
+              "effective_visible": true,
+              "exists": true,
+              "inside_tree": true,
+              "instance_id": 25249711473,
+              "layers": 1,
+              "own_visible": true,
+              "path": "/root/ProcessSyncOnly/HiddenFollower",
+              "position": [
+                129.0,
+                32.0,
+                64.0
+              ],
+              "transform_hex": "120000000000803f0000000000000000000000000000803f0000000000000000000000000000803f000001430000004200008042",
+              "tree_visible": true
+            },
+            "expansion": 0.0,
+            "instance_id": 25249711473,
+            "layers": 1,
+            "path": "/root/ProcessSyncOnly/HiddenFollower",
+            "query_candidate": true,
+            "queued_ancestors_at_inventory": [],
+            "visible": true
+          },
+          "reason": "Candidate geometry visibility/transform changed after stationary inventory"
+        }
+      ],
+      "name": "visible_candidate_transform_still_fails",
+      "passed": true
+    },
+    {
+      "details": [
+        {
+          "details": {
+            "before": {
+              "bounds_intersects_domain": true,
+              "bounds_position": [
+                128.498001098633,
+                31.4979991912842,
+                63.4980010986328
+              ],
+              "bounds_size": [
+                1.00399994850159,
+                1.00399994850159,
+                1.00399994850159
+              ],
+              "camera_cull_mask": 1048575,
+              "class": "MeshInstance3D",
+              "effective_query_candidate": true,
+              "effective_visible": true,
+              "exists": true,
+              "inside_tree": true,
+              "instance_id": 25249711473,
+              "layers": 1,
+              "own_visible": true,
+              "path": "/root/ProcessSyncOnly/HiddenFollower",
+              "position": [
+                129.0,
+                32.0,
+                64.0
+              ],
+              "transform_hex": "120000000000803f0000000000000000000000000000803f0000000000000000000000000000803f000001430000004200008042",
+              "tree_visible": true
+            },
+            "bounds_position": [
+              128.498001098633,
+              31.4979991912842,
+              63.4980010986328
+            ],
+            "bounds_size": [
+              1.00399994850159,
+              1.00399994850159,
+              1.00399994850159
+            ],
+            "current": {
+              "bounds_intersects_domain": true,
+              "bounds_position": [
+                128.498001098633,
+                31.4979991912842,
+                63.4980010986328
+              ],
+              "bounds_size": [
+                1.00399994850159,
+                1.00399994850159,
+                1.00399994850159
+              ],
+              "camera_cull_mask": 0,
+              "class": "MeshInstance3D",
+              "effective_query_candidate": false,
+              "effective_visible": false,
+              "exists": true,
+              "inside_tree": true,
+              "instance_id": 25249711473,
+              "layers": 1,
+              "own_visible": true,
+              "path": "/root/ProcessSyncOnly/HiddenFollower",
+              "position": [
+                129.0,
+                32.0,
+                64.0
+              ],
+              "transform_hex": "120000000000803f0000000000000000000000000000803f0000000000000000000000000000803f000001430000004200008042",
+              "tree_visible": true
+            },
+            "expansion": 0.0,
+            "instance_id": 25249711473,
+            "layers": 1,
+            "path": "/root/ProcessSyncOnly/HiddenFollower",
+            "query_candidate": true,
+            "queued_ancestors_at_inventory": [],
+            "visible": true
+          },
+          "reason": "Candidate geometry visibility/transform changed after stationary inventory"
+        }
+      ],
+      "name": "effective_visibility_mask_change_still_fails",
+      "passed": true
+    },
+    {
+      "details": [
+        {
+          "details": {
+            "before": {
+              "bounds_intersects_domain": true,
+              "bounds_position": [
+                128.498001098633,
+                31.4979991912842,
+                63.4980010986328
+              ],
+              "bounds_size": [
+                1.00399994850159,
+                1.00399994850159,
+                1.00399994850159
+              ],
+              "camera_cull_mask": 1048575,
+              "class": "MeshInstance3D",
+              "effective_query_candidate": true,
+              "effective_visible": true,
+              "exists": true,
+              "inside_tree": true,
+              "instance_id": 25249711473,
+              "layers": 1,
+              "own_visible": true,
+              "path": "/root/ProcessSyncOnly/HiddenFollower",
+              "position": [
+                129.0,
+                32.0,
+                64.0
+              ],
+              "transform_hex": "120000000000803f0000000000000000000000000000803f0000000000000000000000000000803f000001430000004200008042",
+              "tree_visible": true
+            },
+            "bounds_position": [
+              128.498001098633,
+              31.4979991912842,
+              63.4980010986328
+            ],
+            "bounds_size": [
+              1.00399994850159,
+              1.00399994850159,
+              1.00399994850159
+            ],
+            "current": {
+              "exists": false,
+              "instance_id": 25249711473,
+              "path": "/root/ProcessSyncOnly/HiddenFollower",
+              "state_unavailable_after_deletion": true
+            },
+            "expansion": 0.0,
+            "instance_id": 25249711473,
+            "layers": 1,
+            "path": "/root/ProcessSyncOnly/HiddenFollower",
+            "query_candidate": true,
+            "queued_ancestors_at_inventory": [],
+            "visible": true
+          },
+          "reason": "Inventoried geometry was removed"
+        }
+      ],
+      "name": "queued_deletion_keeps_full_live_diagnostics",
+      "passed": true
+    },
+    {
+      "details": [
+        {
+          "details": {
+            "before": {
+              "bounds_intersects_domain": true,
+              "bounds_position": [
+                128.498001098633,
+                31.4979991912842,
+                63.4980010986328
+              ],
+              "bounds_size": [
+                1.00399994850159,
+                1.00399994850159,
+                1.00399994850159
+              ],
+              "camera_cull_mask": 1048575,
+              "class": "MeshInstance3D",
+              "effective_query_candidate": true,
+              "effective_visible": true,
+              "exists": true,
+              "inside_tree": true,
+              "instance_id": 25249711473,
+              "layers": 1,
+              "own_visible": true,
+              "path": "/root/ProcessSyncOnly/HiddenFollower",
+              "position": [
+                129.0,
+                32.0,
+                64.0
+              ],
+              "transform_hex": "120000000000803f0000000000000000000000000000803f0000000000000000000000000000803f000001430000004200008042",
+              "tree_visible": true
+            },
+            "bounds_position": [
+              128.498001098633,
+              31.4979991912842,
+              63.4980010986328
+            ],
+            "bounds_size": [
+              1.00399994850159,
+              1.00399994850159,
+              1.00399994850159
+            ],
+            "current": {
+              "exists": false,
+              "instance_id": 25249711473,
+              "path": "/root/ProcessSyncOnly/HiddenFollower",
+              "state_unavailable_after_deletion": true
+            },
+            "expansion": 0.0,
+            "instance_id": 25249711473,
+            "layers": 1,
+            "path": "/root/ProcessSyncOnly/HiddenFollower",
+            "query_candidate": true,
+            "queued_ancestors_at_inventory": [],
+            "visible": true
+          },
+          "reason": "Inventoried geometry was removed"
+        }
+      ],
+      "name": "actual_deletion_preserves_before_and_marks_current_unavailable",
+      "passed": true
+    }
+  ],
+  "engine": {
+    "build": "official",
+    "hash": "f62fdbde15035c5576dad93e586201f4d41ef0cb",
+    "hex": 263425,
+    "major": 4,
+    "minor": 5,
+    "patch": 1,
+    "status": "stable",
+    "string": "4.5.1-stable (official)",
+    "timestamp": 0
+  },
+  "passed": true,
+  "scope": "Real synthetic _process signal/witness ordering and unchanged strict inventory gates. No game, MultiMesh, input, world render or production post_draw claim.",
+  "version": "orbit61-process-sync-v4"
+}

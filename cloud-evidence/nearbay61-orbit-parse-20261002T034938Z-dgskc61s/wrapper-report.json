@@ -1,0 +1,52 @@
+{
+  "status": "finished",
+  "mode": "parse",
+  "processes": [
+    {
+      "status": "finished",
+      "command": [
+        "/workspace/scratch/a29d03198654/tools-feiting/Godot_v4.5.1-stable_linux.x86_64",
+        "--path",
+        "/workspace/scratch/a29d03198654/Aether/candidates/round40-exclusive-20260930/project",
+        "--headless",
+        "--check-only",
+        "--script",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/coast61-nearbay-orbit/visible_geometry61.gd"
+      ],
+      "returncode": 0,
+      "signal": null,
+      "wall_seconds": 0.5011467449949123,
+      "max_rss_kib": 120504,
+      "timeout_triggered": false,
+      "wrapper_received_signal": null
+    },
+    {
+      "status": "finished",
+      "command": [
+        "/workspace/scratch/a29d03198654/tools-feiting/Godot_v4.5.1-stable_linux.x86_64",
+        "--path",
+        "/workspace/scratch/a29d03198654/Aether/candidates/round40-exclusive-20260930/project",
+        "--headless",
+        "--check-only",
+        "--script",
+        "/workspace/scratch/a29d03198654/Aether/source-assets/coast61-nearbay-orbit/verify_orbit61.gd"
+      ],
+      "returncode": 0,
+      "signal": null,
+      "wall_seconds": 0.2508148959968821,
+      "max_rss_kib": 125956,
+      "timeout_triggered": false,
+      "wrapper_received_signal": null
+    }
+  ],
+  "sources_unchanged": true,
+  "logged_errors": [],
+  "passed": true,
+  "first_item_runtime_passed": false,
+  "godot_parse_passed": true,
+  "flight_attempted": false,
+  "nearshore_pixel_coverage_passed": false,
+  "actual_png_manual_review_required": false,
+  "userdata_root": "/workspace/scratch/a29d03198654/tools-feiting/nearbay61-orbit-_1zi6yqy",
+  "output": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/nearbay61-orbit-parse-20261002T034938Z-dgskc61s"
+}

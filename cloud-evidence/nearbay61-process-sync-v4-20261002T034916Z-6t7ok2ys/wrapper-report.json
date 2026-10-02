@@ -1,0 +1,41 @@
+{
+  "version": "orbit61-process-sync-v4",
+  "command": [
+    "/workspace/scratch/a29d03198654/tools-feiting/Godot_v4.5.1-stable_linux.x86_64",
+    "--headless",
+    "--path",
+    "/tmp/orbit61-process-sync-ba7m2ma5",
+    "--audio-driver",
+    "Dummy",
+    "--script",
+    "/workspace/scratch/a29d03198654/Aether/source-assets/coast61-nearbay-orbit/process-sync-v4/fixture.gd",
+    "--",
+    "/workspace/scratch/a29d03198654/Aether/cloud-evidence/nearbay61-process-sync-v4-20261002T034916Z-6t7ok2ys/result.json"
+  ],
+  "cpu_affinity": [
+    0,
+    1
+  ],
+  "watchdog_seconds": 59,
+  "maximum_requested_seconds": 60,
+  "wall_seconds": 0.5798958130035317,
+  "returncode": 0,
+  "max_rss_kib": 124740,
+  "timeout": false,
+  "godot_sha256": "db07cae7de644278a1884d4552bdf2bca3f5d30131b18faf3a0c4d730080b199",
+  "inputs": {
+    "source-assets/coast61-nearbay-orbit/visible_geometry61.gd": "7a8bde6578ba5ffe4caa6e9f43b2af0d292e9a644451eb1e9adaaa9ab2b4b409",
+    "source-assets/coast61-nearbay-orbit/fixture_lifecycle61.gd": "eee07ca433fea5012ecf2c4a6093b848804ed3cca57cdd3ec4802d3981b9a37f",
+    "source-assets/coast61-nearbay-orbit/verify_orbit61.gd": "00ddab82c7d9684da53da76335ab53aec6b1f034bb29995f9a56f2c0950eb98d",
+    "source-assets/coast61-nearbay-orbit/process-sync-v4/fixture.gd": "01b9ce32db2596ad141914d41b5b5e62ab3d567ff954d3828b49e278d0277b14",
+    "source-assets/coast61-nearbay-orbit/process-sync-v4/run_fixture.py": "7092b79ee6c9db70544a2732406ddb1dfe47d0c6c9d6d14e572692410b483776"
+  },
+  "protected_input_count": 1543,
+  "protected_input_manifest_sha256": "d88aace6efcc94c01b9f9cff76d69bdf596d19b568c76d23f8aa27304f7218bc",
+  "inputs_unchanged": true,
+  "logged_errors": [],
+  "passed": true,
+  "world_loaded": false,
+  "images": 0,
+  "orbit_runtime_passed": false
+}

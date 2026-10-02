@@ -1,6 +1,16 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 03:37 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 03:53 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 03:53 G两张实图视觉拒绝；v4过程同步修复待真实world
+
+- 上项第三world失败与G独立源读回已完整发布 **e6dfe8df78beb43b940f9cec513dd989052f6350**，tree **164c8396ceef87d016dfafc81ae3c7392ce2ee44**、parentdca7186d；40路径/38blob独立公共Git取回字节SHA一致，本地9eb96e8同树对齐
+- **G的新post-save两图实际完成但造型仍拒绝**：[结果](source-assets/cloud-bank58/revision-g/preview-01/RESULT_PREVIEW58G.md)、[独立实图复核](source-assets/cloud-bank58/revision-g/preview-01/INDEPENDENT_VISUAL_REVIEW.md)。两个新进程/wrapper均0、总3.376秒，两原PNG323774/481087B；源SHA与534旧保护输入不变。每图先真实完整核网格/组/控制/文本/两相机/光材/空images/libraries/无强外链，再渲染；不造passed build-result，不改旧build false，不重建或另存源
+- 制作者、独立复核及接续任务均看过两图与1216：尖峰、贯穿腰槽和齐底改善，但变成两大圆腹/融合圆团，中尺度错肩与短折仍不足，侧后中央大空腹面明显。不能用细碎三角替代缺失体量；未扩四根、未入Game61、未接受完整云形
+- **v4只修baseline相对_process的时点，未放宽hidden变化门**：drain后等待late witness与frame_post_draw，逐段复核暂停姿态/15秒界，最终队列空才prepare；三阶段记录Rain/Snow，变化失败记录完整before/current。所有既有visibility/transform/移除拒绝条件不变
+- [13项真实轻夹具](cloud-evidence/nearbay61-process-sync-v4-20261002T034916Z-6t7ok2ys/result.json)child/wrapper0、0.580秒/124740KiB、CPU2、1543保护输入及源码不变，无错误。同process_frame=1实测：信号起点跟随更新次数1/位置(0,0,0)，late witness次数2/位置(128,32,64)；旧过早hidden baseline仍严格失败并给全诊断，完整process后静止baseline通过。这不是生产post_draw或旧Rain两端状态实测
+- [主入口新解析](cloud-evidence/nearbay61-orbit-parse-20261002T034938Z-dgskc61s/wrapper-report.json)helper/main均0（0.501/0.251秒）、无错误、30秒界未触发、manifest相同；第四次真实world尚未运行。下一步即时发布本项后排程新world；G下一版先重新设计可见中尺度肩腹，不再用纯圆化或密三角补造型
+- E/F2八件Slack仍待用户私密频道明确回答，全部原共享动作保持停止；新G图也未换路发送。完整GOAL及硬件GPU/视觉验收仍未通过
 
 ## 03:37第三次真实orbit与G原生只读检查
 

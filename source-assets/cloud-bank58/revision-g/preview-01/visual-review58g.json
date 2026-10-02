@@ -1,0 +1,68 @@
+{
+  "status": "Two original images actually viewed; current G shape rejected",
+  "reference": {
+    "path": "ref/1216.png",
+    "sha256": "f705cb5de0664e9189bdc66b8ed116fc6db5f6ec1f541606df2b399dbde3aa4f"
+  },
+  "images": [
+    {
+      "view": "1216-source-front",
+      "path": "cloud-evidence/cloudbank58g-preview-20261002T034503Z-j51ya7r4/outputs/58G-1216-source-front.png",
+      "width": 836,
+      "height": 471,
+      "bytes": 323774,
+      "sha256": "0092fff05b111a20c39167708420c71da73e2fd29372c84bab028a892d6760aa",
+      "original_png_crc_and_payload_verified": true
+    },
+    {
+      "view": "shared-side-back",
+      "path": "cloud-evidence/cloudbank58g-preview-20261002T034503Z-j51ya7r4/outputs/58G-shared-side-back.png",
+      "width": 836,
+      "height": 586,
+      "bytes": 481087,
+      "sha256": "06b2b3779f8ea09ec40dbfa69bf424ccc3b88510d69191677134da714e0b4b44",
+      "original_png_crc_and_payload_verified": true
+    }
+  ],
+  "reviewers": [
+    {
+      "role": "source_author",
+      "actually_viewed": [
+        "reference",
+        "1216-source-front",
+        "shared-side-back"
+      ],
+      "conclusion": "reject"
+    },
+    {
+      "role": "independent_visual_reviewer",
+      "actually_viewed": [
+        "reference",
+        "G-front",
+        "G-side-back",
+        "F2-front",
+        "F2-side-back"
+      ],
+      "conclusion": "reject"
+    }
+  ],
+  "visible_improvements": [
+    "F2 pointed stone crowns and long planar slopes reduced",
+    "Through-running waist trench removed",
+    "Shared flat bottom replaced by separate uneven lower returns"
+  ],
+  "remaining_failures": [
+    "Rounded fused masses dominate the silhouette",
+    "Medium-scale asymmetric shoulders and flank turns lack distinct volume",
+    "Broad uninterrupted belly and gradual crown-to-shoulder curvature",
+    "Small facets texture the round forms instead of creating deliberate short angular transitions"
+  ],
+  "source_unchanged": true,
+  "original_build_remains_false": true,
+  "post_save_native_preview_passed": true,
+  "final_geometry_pass": false,
+  "world_loaded": false,
+  "hardware_gpu_acceptance": false,
+  "visual_acceptance": false,
+  "no_automatic_followup": true
+}
