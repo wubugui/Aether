@@ -1,0 +1,170 @@
+{
+  "passed": true,
+  "test_count": 36,
+  "tests": [
+    {
+      "name": "entry imports without bpy or launching native",
+      "passed": true
+    },
+    {
+      "name": "fake fresh called only for verify",
+      "passed": true
+    },
+    {
+      "name": "actual-array extraction protocol positive",
+      "passed": true
+    },
+    {
+      "name": "render prerequisite positive",
+      "passed": true
+    },
+    {
+      "name": "never overwrite contact evidence",
+      "passed": true,
+      "actual_error": "Never replace a prior contact verification report"
+    },
+    {
+      "name": "failed proof",
+      "passed": true,
+      "actual_error": "Contact verification failed or incomplete"
+    },
+    {
+      "name": "unfinished proof",
+      "passed": true,
+      "actual_error": "Contact verification failed or incomplete"
+    },
+    {
+      "name": "predicted arrays prohibited",
+      "passed": true,
+      "actual_error": "Contact check did not use saved-source arrays"
+    },
+    {
+      "name": "changed source",
+      "passed": true,
+      "actual_error": "Contact source identity mismatch"
+    },
+    {
+      "name": "wrong verify report",
+      "passed": true,
+      "actual_error": "Original verification report identity mismatch"
+    },
+    {
+      "name": "different PID",
+      "passed": true,
+      "actual_error": "Contact not in same fresh verification process"
+    },
+    {
+      "name": "wrong arrays",
+      "passed": true,
+      "actual_error": "Contact arrays differ from saved native identity"
+    },
+    {
+      "name": "wrong checker code",
+      "passed": true,
+      "actual_error": "Contact verifier code identity mismatch"
+    },
+    {
+      "name": "relaxed tolerance",
+      "passed": true,
+      "actual_error": "Contact tolerance changed"
+    },
+    {
+      "name": "actual nonindexed contact",
+      "passed": true,
+      "actual_error": "Nonindexed coplanar contact detected"
+    },
+    {
+      "name": "missing coplanar pairs",
+      "passed": true,
+      "actual_error": "Coplanar coverage differs from original checker"
+    },
+    {
+      "name": "missing AABB pairs",
+      "passed": true,
+      "actual_error": "AABB coverage differs from original checker"
+    },
+    {
+      "name": "render cannot bypass missing proof",
+      "passed": true,
+      "actual_error": "[Errno 2] No such file or directory: '/tmp/j2-contact-protocol-w1yuldk8/missing/saved-source-contact58k.json'"
+    },
+    {
+      "name": "fake fresh called only for verify",
+      "passed": true
+    },
+    {
+      "name": "contact failure stops verify",
+      "passed": true,
+      "actual_error": "Nonindexed coplanar contact detected"
+    },
+    {
+      "name": "contact failure evidence retained",
+      "passed": true
+    },
+    {
+      "name": "failed proof blocks render",
+      "passed": true,
+      "actual_error": "Contact verification failed or incomplete"
+    },
+    {
+      "name": "fake fresh called only for verify",
+      "passed": true
+    },
+    {
+      "name": "original native failure not bypassed",
+      "passed": true,
+      "actual_error": "Original native verification did not pass"
+    },
+    {
+      "name": "original failure retains contact failure",
+      "passed": true
+    },
+    {
+      "name": "runner loads dedicated supplement freeze",
+      "passed": true
+    },
+    {
+      "name": "runner executes supplement entry",
+      "passed": true
+    },
+    {
+      "name": "source code snapshot required",
+      "passed": true
+    },
+    {
+      "name": "result snapshots retained",
+      "passed": true
+    },
+    {
+      "name": "result immutability before stage",
+      "passed": true
+    },
+    {
+      "name": "result immutability after stage",
+      "passed": true
+    },
+    {
+      "name": "result identity required for terminal pass",
+      "passed": true
+    },
+    {
+      "name": "failed stage breaks before render",
+      "passed": true
+    },
+    {
+      "name": "unchanged 30 second CPU2 RSS source caps",
+      "passed": true
+    },
+    {
+      "name": "render fresh-process proof guard",
+      "passed": true
+    },
+    {
+      "name": "actual arrays no mathematical reconstruction",
+      "passed": true
+    }
+  ],
+  "optimized_python": false,
+  "native_started": false,
+  "scope": "Pure Python fake-core protocol and static source checks only; no Blender or actual native proof"
+}

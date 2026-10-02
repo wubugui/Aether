@@ -1,0 +1,939 @@
+{
+  "candidate": "58K",
+  "construction": "One directly authored closed cross-section envelope; no union, clipping, smoothing or remesh",
+  "reference": "ref/1216.png",
+  "tolerances": {
+    "classification_m": 1e-08,
+    "weld_m": 2e-07,
+    "minimum_edge_m": 1e-05,
+    "minimum_area_m2": 1e-06,
+    "float32_max_displacement_m": 0.0001,
+    "maximum_vertices": 800,
+    "maximum_triangles": 1600
+  },
+  "controls": [
+    {
+      "id": "Left_Forward_Lobe",
+      "center": [
+        -201,
+        -42,
+        727
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw_degrees": 0,
+      "role": "small forward swollen lobe",
+      "rest_center": [
+        -201,
+        -42,
+        727
+      ]
+    },
+    {
+      "id": "Main_High_Lobe",
+      "center": [
+        -78,
+        17,
+        741
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw_degrees": 0,
+      "role": "dominant tall swollen lobe",
+      "rest_center": [
+        -78,
+        17,
+        741
+      ]
+    },
+    {
+      "id": "Right_Rear_Lobe",
+      "center": [
+        129,
+        65,
+        733
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw_degrees": 0,
+      "role": "middle-sized rear swollen lobe",
+      "rest_center": [
+        129,
+        65,
+        733
+      ]
+    },
+    {
+      "id": "Left_Broad_Saddle",
+      "center": [
+        -147,
+        -9,
+        717
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw_degrees": 0,
+      "role": "substantial left saddle",
+      "rest_center": [
+        -147,
+        -9,
+        717
+      ]
+    },
+    {
+      "id": "Right_Broad_Saddle",
+      "center": [
+        23,
+        40,
+        720
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw_degrees": 0,
+      "role": "substantial right saddle",
+      "rest_center": [
+        23,
+        40,
+        720
+      ]
+    },
+    {
+      "id": "Continuous_Belly",
+      "center": [
+        -10,
+        20,
+        637
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw_degrees": 0,
+      "role": "shared continuous lower volume",
+      "rest_center": [
+        -10,
+        20,
+        637
+      ]
+    }
+  ],
+  "authoring_recipe": {
+    "type": "authored_swollen_section_envelope",
+    "version": 1,
+    "rings": [
+      {
+        "id": "R00",
+        "center_uvy_m": [
+          -250,
+          -36,
+          721
+        ],
+        "front_halfwidth_m": 30,
+        "back_halfwidth_m": 38,
+        "top_y_m": 750,
+        "bottom_y_m": 685,
+        "angles_degrees": [
+          1,
+          29,
+          59,
+          91,
+          124,
+          152,
+          182,
+          211,
+          243,
+          272,
+          301,
+          334
+        ],
+        "u_offsets_m": [
+          -0.5,
+          1.0,
+          2.0,
+          1.5,
+          0.0,
+          -1.5,
+          -2.0,
+          -1.0,
+          0.5,
+          1.5,
+          0.5,
+          -1.0
+        ],
+        "control_weights": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": "R01",
+        "center_uvy_m": [
+          -229,
+          -40,
+          724
+        ],
+        "front_halfwidth_m": 66,
+        "back_halfwidth_m": 61,
+        "top_y_m": 780,
+        "bottom_y_m": 659,
+        "angles_degrees": [
+          -2,
+          25,
+          62,
+          95,
+          126,
+          149,
+          179,
+          207,
+          237,
+          269,
+          305,
+          333
+        ],
+        "u_offsets_m": [
+          0.25,
+          -0.5,
+          -1.0,
+          -0.75,
+          0.0,
+          0.75,
+          1.0,
+          0.5,
+          -0.25,
+          -0.75,
+          -0.25,
+          0.5
+        ],
+        "control_weights": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": "R02",
+        "center_uvy_m": [
+          -201,
+          -42,
+          727
+        ],
+        "front_halfwidth_m": 82,
+        "back_halfwidth_m": 77,
+        "top_y_m": 800,
+        "bottom_y_m": 641,
+        "angles_degrees": [
+          3,
+          32,
+          65,
+          94,
+          119,
+          153,
+          185,
+          215,
+          241,
+          273,
+          303,
+          330
+        ],
+        "u_offsets_m": [
+          1.0,
+          -2.0,
+          -4.0,
+          -3.0,
+          0.0,
+          3.0,
+          4.0,
+          2.0,
+          -1.0,
+          -3.0,
+          -1.0,
+          2.0
+        ],
+        "control_weights": [
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": "R03",
+        "center_uvy_m": [
+          -175,
+          -32,
+          720
+        ],
+        "front_halfwidth_m": 83,
+        "back_halfwidth_m": 83,
+        "top_y_m": 786,
+        "bottom_y_m": 634,
+        "angles_degrees": [
+          0,
+          27,
+          56,
+          89,
+          120,
+          151,
+          181,
+          209,
+          244,
+          274,
+          307,
+          336
+        ],
+        "u_offsets_m": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "control_weights": [
+          0.7,
+          0,
+          0,
+          0.3,
+          0
+        ]
+      },
+      {
+        "id": "R04",
+        "center_uvy_m": [
+          -147,
+          -9,
+          717
+        ],
+        "front_halfwidth_m": 76,
+        "back_halfwidth_m": 95,
+        "top_y_m": 774,
+        "bottom_y_m": 628,
+        "angles_degrees": [
+          -2,
+          25,
+          62,
+          95,
+          126,
+          149,
+          179,
+          207,
+          237,
+          269,
+          305,
+          333
+        ],
+        "u_offsets_m": [
+          -0.75,
+          1.5,
+          3.0,
+          2.25,
+          0.0,
+          -2.25,
+          -3.0,
+          -1.5,
+          0.75,
+          2.25,
+          0.75,
+          -1.5
+        ],
+        "control_weights": [
+          0.1,
+          0.2,
+          0,
+          0.7,
+          0
+        ]
+      },
+      {
+        "id": "R05",
+        "center_uvy_m": [
+          -117,
+          8,
+          728
+        ],
+        "front_halfwidth_m": 99,
+        "back_halfwidth_m": 105,
+        "top_y_m": 819,
+        "bottom_y_m": 609,
+        "angles_degrees": [
+          1,
+          29,
+          59,
+          91,
+          124,
+          152,
+          182,
+          211,
+          243,
+          272,
+          301,
+          334
+        ],
+        "u_offsets_m": [
+          0.75,
+          -1.5,
+          -3.0,
+          -2.25,
+          0.0,
+          2.25,
+          3.0,
+          1.5,
+          -0.75,
+          -2.25,
+          -0.75,
+          1.5
+        ],
+        "control_weights": [
+          0,
+          0.75,
+          0,
+          0.25,
+          0
+        ]
+      },
+      {
+        "id": "R06",
+        "center_uvy_m": [
+          -84,
+          17,
+          741
+        ],
+        "front_halfwidth_m": 114,
+        "back_halfwidth_m": 117,
+        "top_y_m": 852,
+        "bottom_y_m": 606,
+        "angles_degrees": [
+          0,
+          27,
+          56,
+          89,
+          120,
+          151,
+          181,
+          209,
+          244,
+          274,
+          307,
+          336
+        ],
+        "u_offsets_m": [
+          1.25,
+          -2.5,
+          -5.0,
+          -3.75,
+          0.0,
+          3.75,
+          5.0,
+          2.5,
+          -1.25,
+          -3.75,
+          -1.25,
+          2.5
+        ],
+        "control_weights": [
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": "R07",
+        "center_uvy_m": [
+          -48,
+          18,
+          743
+        ],
+        "front_halfwidth_m": 115,
+        "back_halfwidth_m": 113,
+        "top_y_m": 847,
+        "bottom_y_m": 614,
+        "angles_degrees": [
+          3,
+          32,
+          65,
+          94,
+          119,
+          153,
+          185,
+          215,
+          241,
+          273,
+          303,
+          330
+        ],
+        "u_offsets_m": [
+          -0.75,
+          1.5,
+          3.0,
+          2.25,
+          0.0,
+          -2.25,
+          -3.0,
+          -1.5,
+          0.75,
+          2.25,
+          0.75,
+          -1.5
+        ],
+        "control_weights": [
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": "R08",
+        "center_uvy_m": [
+          -12,
+          25,
+          727
+        ],
+        "front_halfwidth_m": 92,
+        "back_halfwidth_m": 100,
+        "top_y_m": 807,
+        "bottom_y_m": 625,
+        "angles_degrees": [
+          1,
+          29,
+          59,
+          91,
+          124,
+          152,
+          182,
+          211,
+          243,
+          272,
+          301,
+          334
+        ],
+        "u_offsets_m": [
+          0.5,
+          -1.0,
+          -2.0,
+          -1.5,
+          0.0,
+          1.5,
+          2.0,
+          1.0,
+          -0.5,
+          -1.5,
+          -0.5,
+          1.0
+        ],
+        "control_weights": [
+          0,
+          0.65,
+          0,
+          0,
+          0.35
+        ]
+      },
+      {
+        "id": "R09",
+        "center_uvy_m": [
+          23,
+          40,
+          720
+        ],
+        "front_halfwidth_m": 84,
+        "back_halfwidth_m": 89,
+        "top_y_m": 774,
+        "bottom_y_m": 633,
+        "angles_degrees": [
+          3,
+          32,
+          65,
+          94,
+          119,
+          153,
+          185,
+          215,
+          241,
+          273,
+          303,
+          330
+        ],
+        "u_offsets_m": [
+          -1.0,
+          2.0,
+          4.0,
+          3.0,
+          0.0,
+          -3.0,
+          -4.0,
+          -2.0,
+          1.0,
+          3.0,
+          1.0,
+          -2.0
+        ],
+        "control_weights": [
+          0,
+          0.15,
+          0.15,
+          0,
+          0.7
+        ]
+      },
+      {
+        "id": "R10",
+        "center_uvy_m": [
+          57,
+          52,
+          730
+        ],
+        "front_halfwidth_m": 91,
+        "back_halfwidth_m": 96,
+        "top_y_m": 789,
+        "bottom_y_m": 632,
+        "angles_degrees": [
+          -2,
+          25,
+          62,
+          95,
+          126,
+          149,
+          179,
+          207,
+          237,
+          269,
+          305,
+          333
+        ],
+        "u_offsets_m": [
+          0.5,
+          -1.0,
+          -2.0,
+          -1.5,
+          0.0,
+          1.5,
+          2.0,
+          1.0,
+          -0.5,
+          -1.5,
+          -0.5,
+          1.0
+        ],
+        "control_weights": [
+          0,
+          0,
+          0.7,
+          0,
+          0.3
+        ]
+      },
+      {
+        "id": "R11",
+        "center_uvy_m": [
+          94,
+          61,
+          737
+        ],
+        "front_halfwidth_m": 101,
+        "back_halfwidth_m": 103,
+        "top_y_m": 817,
+        "bottom_y_m": 637,
+        "angles_degrees": [
+          0,
+          27,
+          56,
+          89,
+          120,
+          151,
+          181,
+          209,
+          244,
+          274,
+          307,
+          336
+        ],
+        "u_offsets_m": [
+          1.0,
+          -2.0,
+          -4.0,
+          -3.0,
+          0.0,
+          3.0,
+          4.0,
+          2.0,
+          -1.0,
+          -3.0,
+          -1.0,
+          2.0
+        ],
+        "control_weights": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "id": "R12",
+        "center_uvy_m": [
+          129,
+          65,
+          733
+        ],
+        "front_halfwidth_m": 108,
+        "back_halfwidth_m": 98,
+        "top_y_m": 825,
+        "bottom_y_m": 628,
+        "angles_degrees": [
+          1,
+          29,
+          59,
+          91,
+          124,
+          152,
+          182,
+          211,
+          243,
+          272,
+          301,
+          334
+        ],
+        "u_offsets_m": [
+          -0.5,
+          1.0,
+          2.0,
+          1.5,
+          0.0,
+          -1.5,
+          -2.0,
+          -1.0,
+          0.5,
+          1.5,
+          0.5,
+          -1.0
+        ],
+        "control_weights": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "id": "R13",
+        "center_uvy_m": [
+          163,
+          62,
+          727
+        ],
+        "front_halfwidth_m": 102,
+        "back_halfwidth_m": 87,
+        "top_y_m": 806,
+        "bottom_y_m": 637,
+        "angles_degrees": [
+          -2,
+          25,
+          62,
+          95,
+          126,
+          149,
+          179,
+          207,
+          237,
+          269,
+          305,
+          333
+        ],
+        "u_offsets_m": [
+          0.25,
+          -0.5,
+          -1.0,
+          -0.75,
+          0.0,
+          0.75,
+          1.0,
+          0.5,
+          -0.25,
+          -0.75,
+          -0.25,
+          0.5
+        ],
+        "control_weights": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "id": "R14",
+        "center_uvy_m": [
+          198,
+          55,
+          720
+        ],
+        "front_halfwidth_m": 73,
+        "back_halfwidth_m": 71,
+        "top_y_m": 777,
+        "bottom_y_m": 660,
+        "angles_degrees": [
+          0,
+          27,
+          56,
+          89,
+          120,
+          151,
+          181,
+          209,
+          244,
+          274,
+          307,
+          336
+        ],
+        "u_offsets_m": [
+          -0.75,
+          1.5,
+          3.0,
+          2.25,
+          0.0,
+          -2.25,
+          -3.0,
+          -1.5,
+          0.75,
+          2.25,
+          0.75,
+          -1.5
+        ],
+        "control_weights": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "id": "R15",
+        "center_uvy_m": [
+          228,
+          42,
+          720
+        ],
+        "front_halfwidth_m": 42,
+        "back_halfwidth_m": 47,
+        "top_y_m": 750,
+        "bottom_y_m": 687,
+        "angles_degrees": [
+          3,
+          32,
+          65,
+          94,
+          119,
+          153,
+          185,
+          215,
+          241,
+          273,
+          303,
+          330
+        ],
+        "u_offsets_m": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "control_weights": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      }
+    ],
+    "left_tip_uvy_m": [
+      -263,
+      -30,
+      708
+    ],
+    "right_tip_uvy_m": [
+      246,
+      35,
+      716
+    ],
+    "belly_influence_maximum": 0.45,
+    "diagonal_rows": [
+      "001011001010",
+      "110100110101",
+      "010110101001",
+      "101001010110",
+      "011010010101",
+      "100101101010",
+      "010011010100",
+      "101100101011",
+      "001101001010",
+      "110010110101",
+      "010101101001",
+      "101010010110",
+      "011001010101",
+      "100110101010",
+      "010010101101"
+    ]
+  },
+  "design_intent": {
+    "lobes": 3,
+    "main_crown_y_m": 852,
+    "secondary_crown_y_m": 825,
+    "small_crown_y_m": 800,
+    "saddle_y_m": [
+      774,
+      774
+    ],
+    "saddle_bottom_y_m": [
+      628,
+      633
+    ],
+    "no_candidate_search": true,
+    "no_generated_images": true,
+    "control_redesign": "Replace 8 independently intersecting cages by 3 lobe + 2 saddle + 1 belly blended semantic handles. Ring table and explicit diagonals are the authority."
+  }
+}
