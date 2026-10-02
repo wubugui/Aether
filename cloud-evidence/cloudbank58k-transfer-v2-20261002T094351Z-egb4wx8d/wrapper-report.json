@@ -1,0 +1,188 @@
+{
+  "version": "cloud58k-transfer-v2",
+  "passed": false,
+  "state": "failed",
+  "run": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/cloudbank58k-transfer-v2-20261002T094351Z-egb4wx8d",
+  "stages": [
+    {
+      "status": "finished",
+      "command": [
+        "/workspace/scratch/a29d03198654/tools-feiting/Godot_v4.5.1-stable_linux.x86_64",
+        "--headless",
+        "--editor",
+        "--path",
+        "/tmp/cloud58k-transfer-v2-fwj5g236",
+        "--import"
+      ],
+      "cpu_affinity": [
+        0,
+        1
+      ],
+      "wall_timeout_seconds": 30,
+      "wall_timeout_limit_seconds": 720,
+      "timeout_triggered": false,
+      "wrapper_received_signal": null,
+      "returncode": 0,
+      "native_exit_observed": true,
+      "max_rss_kib": 799324,
+      "rss_limit_triggered": false,
+      "max_aggregate_observed_rss_kib": 834100,
+      "pid": 5,
+      "signal": null,
+      "wall_seconds": 5.366883177994168
+    },
+    {
+      "status": "finished",
+      "command": [
+        "/workspace/scratch/a29d03198654/tools-feiting/Godot_v4.5.1-stable_linux.x86_64",
+        "--headless",
+        "--path",
+        "/tmp/cloud58k-transfer-v2-fwj5g236",
+        "--script",
+        "res://probe58k.gd",
+        "--",
+        "import",
+        "/workspace/scratch/a29d03198654/Aether/cloud-evidence/cloudbank58k-transfer-v2-20261002T094351Z-egb4wx8d/godot-import.json"
+      ],
+      "cpu_affinity": [
+        0,
+        1
+      ],
+      "wall_timeout_seconds": 20,
+      "wall_timeout_limit_seconds": 720,
+      "timeout_triggered": false,
+      "wrapper_received_signal": null,
+      "returncode": 1,
+      "native_exit_observed": true,
+      "max_rss_kib": 115760,
+      "rss_limit_triggered": false,
+      "max_aggregate_observed_rss_kib": 149816,
+      "pid": 405,
+      "signal": null,
+      "wall_seconds": 0.18041573899972718
+    }
+  ],
+  "limits": {
+    "total_seconds": 120,
+    "native_stage_seconds": [
+      30,
+      20,
+      20
+    ],
+    "cpu_threads": 2,
+    "max_wrapper_plus_child_rss_kib": 1572864
+  },
+  "source_saved": false,
+  "blender_started": false,
+  "export_performed": false,
+  "world_loaded": false,
+  "world_anchor_applied": false,
+  "images": 0,
+  "visual_acceptance": false,
+  "normal_restoration": {
+    "passed": true,
+    "source_sha256": "16eeb67dce6e89f05562b67f869c77dd7882942585241a2648ae46ff48012bee",
+    "actual_native_normal_sha256": "35cde26e14f8767c015295cff3b8f271a85052a111d8fd68e066784a18e1b1c7",
+    "raw_glb_sha256": "48a0aa816dc5dd247958fb883d4114b8d07e7fdf2d458af6a408e0af4c22dd60",
+    "adjusted_glb_sha256": "4aa51a731723cb6cadf7808da210c232ddae97a9026ab59fe08b9c3846817441",
+    "bytes": 31144,
+    "normal_slots": 1152,
+    "allowed_normal_byte_count": 13824,
+    "changed_byte_count": 6297,
+    "all_non_normal_bytes_identical": true,
+    "native_corner_values_preserved_exactly": true,
+    "original_geometry_contract": {
+      "passed": true,
+      "authored_vertex_count": 194,
+      "render_vertex_count": 1152,
+      "triangles": 384,
+      "maximum_position_error_m": 0.0,
+      "maximum_normal_component_error": 8.509929039557385e-06,
+      "godot_relative_bounds": [
+        [
+          -233.44503784179688,
+          606.328857421875,
+          -183.78085327148438
+        ],
+        [
+          226.94137573242188,
+          851.9830932617188,
+          165.92005920410156
+        ]
+      ],
+      "front_face": "counterclockwise"
+    },
+    "original_material_contract": {
+      "passed": true,
+      "color_representation": "linear glTF factor",
+      "maximum_color_error": 0.0
+    },
+    "unmodified_official_export": false,
+    "source_saved": false,
+    "world_loaded": false,
+    "visual_acceptance": false
+  },
+  "temporary_project": "/tmp/cloud58k-transfer-v2-fwj5g236",
+  "error": "Traceback (most recent call last):\n  File \"/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-k/transfer-v2/run_transfer58k.py\", line 94, in main\n    c.require(support.process_passed(row), 'Native stage failed: ' + label)\n  File \"/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-k/import-v1/contract58k.py\", line 29, in require\n    if not ok:raise ValueError(message)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Native stage failed: godot-import-readback\n",
+  "inputs_unchanged": true,
+  "changed_inputs": [],
+  "input_read_errors": [],
+  "main_project_unchanged": true,
+  "source_unchanged": true,
+  "temporary_project_manifest": {
+    ".godot/.gdignore": {
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    ".godot/editor/cloud58k.glb-881e77f8fe8f0ca84615afb44b109440.scn-folding-d75e2e135e479289167e4a740305cf1c.cfg": {
+      "bytes": 49,
+      "sha256": "fa44dfbae9b3b64980c44d9922acdad9b34ea46c85cce8a917708577229c27f6"
+    },
+    ".godot/editor/filesystem_cache10": {
+      "bytes": 341,
+      "sha256": "9d9b99ab391939257ba31056256ff2ca32841b84ed56f4d25827a17c1f374a3e"
+    },
+    ".godot/editor/project_metadata.cfg": {
+      "bytes": 144,
+      "sha256": "3f16a356e8022467eb11b76f8daf92e25068e7c29bdff5fad30a9b55ea34daf0"
+    },
+    ".godot/global_script_class_cache.cfg": {
+      "bytes": 8,
+      "sha256": "f61aa7ad3097022d6a9d110ca3f73fa7bb348ec2cf9a6e7c9523574dc75f5a16"
+    },
+    ".godot/imported/cloud58k.glb-881e77f8fe8f0ca84615afb44b109440.md5": {
+      "bytes": 91,
+      "sha256": "6ebe5062a580221caaa4dcfdf0e74f707b6558767c7abf77fcac8e7fdd6e1b22"
+    },
+    ".godot/imported/cloud58k.glb-881e77f8fe8f0ca84615afb44b109440.scn": {
+      "bytes": 11096,
+      "sha256": "1b94f241fba9cc48a7879ec71dee4ecff3854955be37f344158494997d3c3e42"
+    },
+    ".godot/uid_cache.bin": {
+      "bytes": 63,
+      "sha256": "f5a30e410afd1129450b5ef3d0f3afa0d49b18327f93aec4141024985d8b0bb8"
+    },
+    "cloud58k.glb": {
+      "bytes": 31144,
+      "sha256": "4aa51a731723cb6cadf7808da210c232ddae97a9026ab59fe08b9c3846817441"
+    },
+    "cloud58k.glb.import": {
+      "bytes": 1054,
+      "sha256": "a21107419255bdf37968d48464e4f5996bf3289c266f5d832447e256ac6b2d1d"
+    },
+    "probe58k.gd": {
+      "bytes": 5886,
+      "sha256": "0fb18872d2c8b2aa25143b8d62410674ba0dca4b83083962232657a710f68dd9"
+    },
+    "probe58k.gd.uid": {
+      "bytes": 20,
+      "sha256": "ed9aecdc9d847c41180904083491a0be7ab6f7ef71efea7b8adb3d3afcf1db76"
+    },
+    "project.godot": {
+      "bytes": 176,
+      "sha256": "538cecdf153c3ffaa537d126bcff8bd5d70b6ad8dbb277b0938149699abfec91"
+    }
+  },
+  "elapsed_seconds": 13.634362245007651,
+  "logged_errors": []
+}

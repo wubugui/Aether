@@ -1,0 +1,9 @@
+# Native visual/shadow/rock read completed
+
+2026-10-02 09:43 UTC. Child/wrapper exit 0; actual native child 5.821576847 seconds, CPU2, 407648 KiB peak. No log errors or timeouts. Six visual source identities and the first imported runtime rock mesh completed, including the original structured engine/full hash, source storage bindings, strict shadow base/all-LOD oriented coverage, actual indexed bounds, separately observed get_faces snap-byte witnesses and conservative unions. The native report is 52734 bytes, SHA 4ba532025fa2a02919bd7b4b90190dd4d4e4f3112026e5e94bf5497d53e968de.
+
+The full existing saved-buffer replay still covers 775 groups / 57797 instances. Combined visual/proxy query is 676 instances, design 575, and proxy-only query 0. Actual source-specific proxy query is 613. The complete 676 path/index keep/reconcile entries are retained, with 81 coast61 -5_-5 and 243 coast56 -4_-4 saved instances protected. This is not authorization to delete hit groups or any blanket scatter rewrite.
+
+Every protected input, the full reviewed 1483-file saved closure, startup/cache and absence controls remain unchanged. No world instantiated, active colliders observed, terrain or source asset changed. The conservative capsule envelope and actual saved rock faces constrain the next local design; road width, runtime-generated entities, arbitrary shader deformation and full occupancy remain unproved as explicitly recorded.
+
+The 1164309-byte keep/reconcile JSON is locally retained and losslessly published as gzip with exact hashes and restore command in keep-storage.json. The prior version-string, shadow-API and Script-class parse failures remain intact. With this bounded intake complete, next work is a reference-grounded continuous north-ridge footprint and editable native candidate under the existing coast/house/river/road/per-instance constraints, not another whole-world audit.

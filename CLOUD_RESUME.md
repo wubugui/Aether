@@ -1,6 +1,16 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 09:38 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 09:50 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 09:50 北六mesh/rock真实读取通过；K忠实GLB及editor导入完成
+
+- Ktransfer-v2/北v4准备已完整发布 **7078b0ee62c92832f0c13c6a77733b0e3efd918a**，tree **b919fdbcaa99f47a30b91791bf4b5f3bc72da9b7**、parent03309992；24路径/24blob新bare公共Git逐字节/SHA核回一致，本地2826661同树对齐
+- [北v4完整native结果](cloud-evidence/north-ridge62-shadow-script-v4-20261002T094319Z-o5sjgbgh/RESULT.md) **child/wrapper0、5.822秒/407648KiB/CPU2**，6visual身份及first imported rock全完成，版本/严格shadow全部LOD有向覆盖/indexed实际bounds/primary get_faces全字节snap证明均过，0日志error/超时/输入变化。原native report52734B SHA4ba532025fa2a02919bd7b4b90190dd4d4e4f3112026e5e94bf5497d53e968de
+- 已有775组/57797实例全requery得676query/575design，source proxy613、proxy-only0；676逐path/index keep/reconcile完整保存。coast61 81/coast56 243受保护实例保持，**不授权整组删除**；1164309B列表→184162B无损gzip。全1483闭包/启动保护未变；运行碰撞/全占用/道路宽度限制保留，没有世界实例或地形改动。当前已转实际1131/1347双原图、连续北山脊脚印/逐实例支撑设计，不扩大整世界调查
+- [K一次transfer真实结果](cloud-evidence/cloudbank58k-transfer-v2-20261002T094351Z-egb4wx8d/RESULT.md)生成31144B **NORMAL-only忠实派生GLB SHA4aa51a731723cb6cadf7808da210c232ddae97a9026ab59fe08b9c3846817441**，6297normal槽byte改变/其余全同，位置0/normal8.509929e-6，原3e-5/flat/384定向面/材料门过；明确不是未改官方export。无Blender重复
+- Godot editor import实测5.367秒exit0；后续resource read .180秒exit1、wrapper总13.634秒1，原“仅position/normal/index”通道假设门拒绝，**未native保存/fresh reload**。只读实际cache证实额外TANGENT：format0x800001007、1152V/1152index，无UV/color/custom/skin；sidecar ensure_tangents=false仍真。正在定位实际存储规则，不能直接删门。源/1078身份/含缓存mainproject全不变，原GLB/失败保持
+- 实际imported SCN11096B SHA1b94f241fba9cc48a7879ec71dee4ecff3854955be37f344158494997d3c3e42已按wrapper终态manifest原字节保全，避免仅留/tmp丢失；用于最小读回修正，不重新派生/导入同GLB。北被二拒三官方文件（rendering_server.cpp/.h、capsule_shape_3d.cpp）继续禁重试/换route，现有来源仍可分析
+- 本两项真实结果即时外存。当前无Aether engine，窗口已给MAZ；K世界试放/天气/全造型未开始，固定4rad观察已通过窄范围不重跑。Slack集中两私密频道补发确认仍待答，原八件停；全GOAL/硬件GPU未验收
 
 ## 09:38 K忠实NORMAL转换与北单点Script路径修正准备完成
 

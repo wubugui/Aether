@@ -1,0 +1,2080 @@
+{
+	"all_occupancy_complete": false,
+	"engine_version_guard": {
+		"expected": {
+			"build": "official",
+			"hash": "f62fdbde15035c5576dad93e586201f4d41ef0cb",
+			"hex": 263425,
+			"major": 4,
+			"minor": 5,
+			"patch": 1,
+			"status": "stable",
+			"string": "4.5.1-stable (official)",
+			"timestamp": 0
+		},
+		"mismatches": [],
+		"passed": true,
+		"policy": "strict_fixed_4_5_1_structured_fields_full_commit_hash_v2"
+	},
+	"engine_version_info": {
+		"build": "official",
+		"hash": "f62fdbde15035c5576dad93e586201f4d41ef0cb",
+		"hex": 263425,
+		"major": 4,
+		"minor": 5,
+		"patch": 1,
+		"status": "stable",
+		"string": "4.5.1-stable (official)",
+		"timestamp": 0
+	},
+	"issues": [],
+	"passed": true,
+	"request_sha256": "08e53c4e7602849bf84e5a1cfc89f054c62914031625a48d98303f2912a13fb0",
+	"rock": {
+		"combined_clearance_bounds": {
+			"max": [
+				3.69940757751464844,
+				4.30000019073486328,
+				2.31621575355529785
+			],
+			"min": [
+				-2.95160245895385742,
+				-1.10000002384185791,
+				-2.12660002708435059
+			]
+		},
+		"combined_vertex_bounds": {
+			"max": [
+				3.69940757751464844,
+				4.30000019073486328,
+				2.31621575355529785
+			],
+			"min": [
+				-2.95160245895385742,
+				-1.10000002384185791,
+				-2.12660002708435059
+			]
+		},
+		"face_bounds": {
+			"max": [
+				3.69940757751464844,
+				4.30000019073486328,
+				2.31621575355529785
+			],
+			"min": [
+				-2.95160245895385742,
+				-1.10000002384185791,
+				-2.12660002708435059
+			]
+		},
+		"face_bytes_sha256": "3ee92cf47209c310699bf4237dcb620c11c72b4f212c723f5f909d06ff03a8da",
+		"face_method": "actual_indexed_base_faces",
+		"face_vertex_count": 120,
+		"first_mesh_node_path": "Model/rock",
+		"geometry_policy": "strict_existing_shadow_indexed_arrays_plus_actual_get_faces_v3",
+		"get_faces_bounds": {
+			"max": [
+				3.69939994812011719,
+				4.29999971389770508,
+				2.31620001792907715
+			],
+			"min": [
+				-2.9515998363494873,
+				-1.10000002384185791,
+				-2.12660002708435059
+			]
+		},
+		"get_faces_bytes_sha256": "20738d402431be5922fc6659aa80de1a7907abd3438c62ac989cca7b2e278267",
+		"get_faces_observed": true,
+		"get_faces_snap_proof": {
+			"method": "exact_float32_Vector3_snapped_base_indexed_faces",
+			"passed": true,
+			"predicted_bounds": {
+				"max": [
+					3.69939994812011719,
+					4.29999971389770508,
+					2.31620001792907715
+				],
+				"min": [
+					-2.9515998363494873,
+					-1.10000002384185791,
+					-2.12660002708435059
+				]
+			},
+			"predicted_face_bytes_sha256": "20738d402431be5922fc6659aa80de1a7907abd3438c62ac989cca7b2e278267",
+			"step_float32_hex": "17b7d138"
+		},
+		"get_faces_vertex_count": 120,
+		"imported_node_inventory": [
+			{
+				"index": 0,
+				"path": ".",
+				"type": "Node3D"
+			},
+			{
+				"index": 1,
+				"mesh_resource": "res://assets/models/rock.glb::ArrayMesh_y2h1h",
+				"path": "./rock",
+				"type": "MeshInstance3D"
+			}
+		],
+		"imported_scene": "res://assets/models/rock.glb",
+		"indexed_visual_bounds": {
+			"max": [
+				3.69940757751464844,
+				4.30000019073486328,
+				2.31621575355529785
+			],
+			"min": [
+				-2.95160245895385742,
+				-1.10000002384185791,
+				-2.12660002708435059
+			]
+		},
+		"mesh_node_count": 1,
+		"mesh_node_transform_applied_to_proxy": false,
+		"mesh_node_transform_variant_hex": "120000000000803f0000000000000000000000000000803f0000000000000000000000000000803f000000000000000000000000",
+		"mesh_resource": "res://assets/models/rock.glb::ArrayMesh_y2h1h",
+		"prefab": "res://scenes/prefabs/rock.tscn",
+		"shadow": {
+			"combined_clearance_bounds": {
+				"max": [
+					3.69940757751464844,
+					4.30000019073486328,
+					2.31621575355529785
+				],
+				"min": [
+					-2.95160245895385742,
+					-1.10000002384185791,
+					-2.12660002708435059
+				]
+			},
+			"combined_vertex_bounds": {
+				"max": [
+					3.69940757751464844,
+					4.30000019073486328,
+					2.31621575355529785
+				],
+				"min": [
+					-2.95160245895385742,
+					-1.10000002384185791,
+					-2.12660002708435059
+				]
+			},
+			"face_bounds": {
+				"max": [
+					3.69940757751464844,
+					4.30000019073486328,
+					2.31621575355529785
+				],
+				"min": [
+					-2.95160245895385742,
+					-1.10000002384185791,
+					-2.12660002708435059
+				]
+			},
+			"face_bytes_sha256": "39cdbf8887ba377d193cc2622a598c06f6898fb16e6d7d4fc8a42046dd07aab2",
+			"face_method": "actual_indexed_base_faces",
+			"face_vertex_count": 120,
+			"get_faces_bounds": null,
+			"get_faces_bytes_sha256": "",
+			"get_faces_observed": false,
+			"get_faces_snap_proof": null,
+			"get_faces_vertex_count": 0,
+			"indexed_visual_bounds": {
+				"max": [
+					3.69940757751464844,
+					4.30000019073486328,
+					2.31621575355529785
+				],
+				"min": [
+					-2.95160245895385742,
+					-1.10000002384185791,
+					-2.12660002708435059
+				]
+			},
+			"mesh_resource": "res://assets/models/rock.glb::ArrayMesh_yjhaa",
+			"shadow_mesh_resource": "",
+			"shadow_surface_storage_sha256": "",
+			"surface_storage_sha256": "a53cf15bf0eb9a985f4669362312f73d3af09b370a3b30044b0d94bd3530a23e",
+			"surfaces": [
+				{
+					"api_vertex_missing": true,
+					"format": 34896613377,
+					"index": 0,
+					"index_count": 120,
+					"levels": [
+						{
+							"bounds": {
+								"max": [
+									3.69940757751464844,
+									4.30000019073486328,
+									2.31621575355529785
+								],
+								"min": [
+									-2.95160245895385742,
+									-1.10000002384185791,
+									-2.12660002708435059
+								]
+							},
+							"face_bytes_sha256": "39cdbf8887ba377d193cc2622a598c06f6898fb16e6d7d4fc8a42046dd07aab2",
+							"face_vertex_count": 120,
+							"oriented_faces_sha256": "30da51efa240437a01fd4010f179e9d667825eb8d20ea82039504be605247f8a",
+							"source_faces_hex_text_sha256": "b28c80e95bb5bdf0c0b0a29e4957a1acc499d42cbe5f02d83c74780a50c3e7f5",
+							"threshold": 0.0
+						}
+					],
+					"primitive": 3,
+					"vertex_bounds": {
+						"max": [
+							3.69940757751464844,
+							4.30000019073486328,
+							2.31621575355529785
+						],
+						"min": [
+							-2.95160245895385742,
+							-1.10000002384185791,
+							-2.12660002708435059
+						]
+					},
+					"vertex_bytes_sha256": "5e96da7e69926d58466d5027b04bdebdfa512d872ec948c8bd8f63d0c9893f2e",
+					"vertex_count": 24
+				}
+			],
+			"vertex_bounds": {
+				"max": [
+					3.69940757751464844,
+					4.30000019073486328,
+					2.31621575355529785
+				],
+				"min": [
+					-2.95160245895385742,
+					-1.10000002384185791,
+					-2.12660002708435059
+				]
+			},
+			"vertex_count": 24
+		},
+		"shadow_coverage_proof": {
+			"helper_sha256": "966c863a02d136aefacb78e76d7301649b96c628408c589d3a4345fac30086f7",
+			"method": "existing_audit_array_mesh_exact_oriented_multiset_all_base_lods",
+			"passed": true,
+			"shadow_present": true,
+			"surfaces": [
+				{
+					"levels": [
+						{
+							"source_faces_hex_text_sha256": "955caa93c08cc258e8f7fa9e0815dcf0c1acd45b1b07f59830a500f1701a82ea",
+							"threshold": 0.0,
+							"triangles": 40
+						}
+					],
+					"shadow_api_vertex_missing": true,
+					"shadow_vertices": 24,
+					"source_format": 34896613407,
+					"source_vertices": 120,
+					"surface": 0
+				}
+			]
+		},
+		"shadow_mesh_resource": "res://assets/models/rock.glb::ArrayMesh_yjhaa",
+		"shadow_surface_storage_sha256": "a53cf15bf0eb9a985f4669362312f73d3af09b370a3b30044b0d94bd3530a23e",
+		"source_rule": "open_world.gd first_mesh(scene).mesh, mesh_body(mesh).get_faces(), then full saved body transform",
+		"surface_storage_sha256": "ee2d69d2bdbebc4561cb4b27f106304101bf3b4211bc77197651afe064edbfa2",
+		"surfaces": [
+			{
+				"api_vertex_missing": false,
+				"format": 34896613407,
+				"index": 0,
+				"index_count": 120,
+				"levels": [
+					{
+						"bounds": {
+							"max": [
+								3.69940757751464844,
+								4.30000019073486328,
+								2.31621575355529785
+							],
+							"min": [
+								-2.95160245895385742,
+								-1.10000002384185791,
+								-2.12660002708435059
+							]
+						},
+						"face_bytes_sha256": "3ee92cf47209c310699bf4237dcb620c11c72b4f212c723f5f909d06ff03a8da",
+						"face_vertex_count": 120,
+						"oriented_faces_sha256": "30da51efa240437a01fd4010f179e9d667825eb8d20ea82039504be605247f8a",
+						"source_faces_hex_text_sha256": "955caa93c08cc258e8f7fa9e0815dcf0c1acd45b1b07f59830a500f1701a82ea",
+						"threshold": 0.0
+					}
+				],
+				"primitive": 3,
+				"vertex_bounds": {
+					"max": [
+						3.69940757751464844,
+						4.30000019073486328,
+						2.31621575355529785
+					],
+					"min": [
+						-2.95160245895385742,
+						-1.10000002384185791,
+						-2.12660002708435059
+					]
+				},
+				"vertex_bytes_sha256": "3ee92cf47209c310699bf4237dcb620c11c72b4f212c723f5f909d06ff03a8da",
+				"vertex_count": 120
+			}
+		],
+		"vertex_bounds": {
+			"max": [
+				3.69940757751464844,
+				4.30000019073486328,
+				2.31621575355529785
+			],
+			"min": [
+				-2.95160245895385742,
+				-1.10000002384185791,
+				-2.12660002708435059
+			]
+		},
+		"vertex_count": 120
+	},
+	"runtime_collision_observed": false,
+	"visual_meshes": [
+		{
+			"combined_clearance_bounds": {
+				"max": [
+					3.80221891403198242,
+					13.1999998092651367,
+					3.51379990577697754
+				],
+				"min": [
+					-3.80221891403198242,
+					0.0,
+					-3.90000009536743164
+				]
+			},
+			"combined_vertex_bounds": {
+				"max": [
+					3.80221891403198242,
+					13.1999998092651367,
+					3.5137786865234375
+				],
+				"min": [
+					-3.80221891403198242,
+					0.0,
+					-3.90000009536743164
+				]
+			},
+			"face_bounds": {
+				"max": [
+					3.80221891403198242,
+					13.1999998092651367,
+					3.5137786865234375
+				],
+				"min": [
+					-3.80221891403198242,
+					0.0,
+					-3.90000009536743164
+				]
+			},
+			"face_bytes_sha256": "df0d504ce26b0bdc6126f0f37ca0683632901135f54024afb94514d8088f6768",
+			"face_method": "actual_indexed_base_faces",
+			"face_vertex_count": 168,
+			"geometry_policy": "strict_existing_shadow_indexed_arrays_plus_actual_get_faces_v3",
+			"get_faces_bounds": {
+				"max": [
+					3.8021998405456543,
+					13.1999998092651367,
+					3.51379990577697754
+				],
+				"min": [
+					-3.8021998405456543,
+					0.0,
+					-3.89999985694885254
+				]
+			},
+			"get_faces_bytes_sha256": "509df225d3b50e9b177da02ce9146e73f4382368c7baf77e43a965ab5480afbd",
+			"get_faces_observed": true,
+			"get_faces_snap_proof": {
+				"method": "exact_float32_Vector3_snapped_base_indexed_faces",
+				"passed": true,
+				"predicted_bounds": {
+					"max": [
+						3.8021998405456543,
+						13.1999998092651367,
+						3.51379990577697754
+					],
+					"min": [
+						-3.8021998405456543,
+						0.0,
+						-3.89999985694885254
+					]
+				},
+				"predicted_face_bytes_sha256": "509df225d3b50e9b177da02ce9146e73f4382368c7baf77e43a965ab5480afbd",
+				"step_float32_hex": "17b7d138"
+			},
+			"get_faces_vertex_count": 168,
+			"indexed_visual_bounds": {
+				"max": [
+					3.80221891403198242,
+					13.1999998092651367,
+					3.5137786865234375
+				],
+				"min": [
+					-3.80221891403198242,
+					0.0,
+					-3.90000009536743164
+				]
+			},
+			"mesh_resource": "res://assets/coast61/oak_-5_-5_CoastalPines36b.res::ArrayMesh_8qhtw",
+			"shadow": {
+				"combined_clearance_bounds": {
+					"max": [
+						3.80221891403198242,
+						13.1999998092651367,
+						3.5137786865234375
+					],
+					"min": [
+						-3.80221891403198242,
+						0.0,
+						-3.90000009536743164
+					]
+				},
+				"combined_vertex_bounds": {
+					"max": [
+						3.80221891403198242,
+						13.1999998092651367,
+						3.5137786865234375
+					],
+					"min": [
+						-3.80221891403198242,
+						0.0,
+						-3.90000009536743164
+					]
+				},
+				"face_bounds": {
+					"max": [
+						3.80221891403198242,
+						13.1999998092651367,
+						3.5137786865234375
+					],
+					"min": [
+						-3.80221891403198242,
+						0.0,
+						-3.90000009536743164
+					]
+				},
+				"face_bytes_sha256": "ba2bc3891cd4f8c0fb1fdc58fa6a5e01b2f97679f9156a6af32144a51ac47919",
+				"face_method": "actual_indexed_base_faces",
+				"face_vertex_count": 168,
+				"get_faces_bounds": null,
+				"get_faces_bytes_sha256": "",
+				"get_faces_observed": false,
+				"get_faces_snap_proof": null,
+				"get_faces_vertex_count": 0,
+				"indexed_visual_bounds": {
+					"max": [
+						3.80221891403198242,
+						13.1999998092651367,
+						3.5137786865234375
+					],
+					"min": [
+						-3.80221891403198242,
+						0.0,
+						-3.90000009536743164
+					]
+				},
+				"mesh_resource": "res://assets/coast61/oak_-5_-5_CoastalPines36b.res::ArrayMesh_bpun8",
+				"shadow_mesh_resource": "",
+				"shadow_surface_storage_sha256": "",
+				"surface_storage_sha256": "981f7a2609bb9977fdd6eb600cf0b106b9389657fd23fe37749bd96f73df49a1",
+				"surfaces": [
+					{
+						"api_vertex_missing": true,
+						"format": 34896613377,
+						"index": 0,
+						"index_count": 168,
+						"levels": [
+							{
+								"bounds": {
+									"max": [
+										3.80221891403198242,
+										13.1999998092651367,
+										3.5137786865234375
+									],
+									"min": [
+										-3.80221891403198242,
+										0.0,
+										-3.90000009536743164
+									]
+								},
+								"face_bytes_sha256": "ba2bc3891cd4f8c0fb1fdc58fa6a5e01b2f97679f9156a6af32144a51ac47919",
+								"face_vertex_count": 168,
+								"oriented_faces_sha256": "bc9f3444d9d8e9b873d516c52b14bde2f663ec55b74cc7a37c404c482254f8c3",
+								"source_faces_hex_text_sha256": "e5ad5e9e282b7c79dbd09e2c00b3edb245d9b889d443fa0e1f9da65dc240b939",
+								"threshold": 0.0
+							}
+						],
+						"primitive": 3,
+						"vertex_bounds": {
+							"max": [
+								3.80221891403198242,
+								13.1999998092651367,
+								3.5137786865234375
+							],
+							"min": [
+								-3.80221891403198242,
+								0.0,
+								-3.90000009536743164
+							]
+						},
+						"vertex_bytes_sha256": "b192ee4890229a35f679f3ebc8e8dd58fb1e0c1aab27c599fc55ed4e1091cf04",
+						"vertex_count": 36
+					}
+				],
+				"vertex_bounds": {
+					"max": [
+						3.80221891403198242,
+						13.1999998092651367,
+						3.5137786865234375
+					],
+					"min": [
+						-3.80221891403198242,
+						0.0,
+						-3.90000009536743164
+					]
+				},
+				"vertex_count": 36
+			},
+			"shadow_coverage_proof": {
+				"helper_sha256": "966c863a02d136aefacb78e76d7301649b96c628408c589d3a4345fac30086f7",
+				"method": "existing_audit_array_mesh_exact_oriented_multiset_all_base_lods",
+				"passed": true,
+				"shadow_present": true,
+				"surfaces": [
+					{
+						"levels": [
+							{
+								"source_faces_hex_text_sha256": "010f23f7f20f9f17022234d5385aa74f9e9c33a8f907f0064edd3d6c2ea1e4c4",
+								"threshold": 0.0,
+								"triangles": 56
+							}
+						],
+						"shadow_api_vertex_missing": true,
+						"shadow_vertices": 36,
+						"source_format": 34896613407,
+						"source_vertices": 120,
+						"surface": 0
+					}
+				]
+			},
+			"shadow_mesh_resource": "res://assets/coast61/oak_-5_-5_CoastalPines36b.res::ArrayMesh_bpun8",
+			"shadow_surface_storage_sha256": "981f7a2609bb9977fdd6eb600cf0b106b9389657fd23fe37749bd96f73df49a1",
+			"surface_storage_sha256": "b10553bb366c5eabb6b4ce9b7bf721b514eada62e1494cd9ffb6bcedb1286708",
+			"surfaces": [
+				{
+					"api_vertex_missing": false,
+					"format": 34896613407,
+					"index": 0,
+					"index_count": 168,
+					"levels": [
+						{
+							"bounds": {
+								"max": [
+									3.80221891403198242,
+									13.1999998092651367,
+									3.5137786865234375
+								],
+								"min": [
+									-3.80221891403198242,
+									0.0,
+									-3.90000009536743164
+								]
+							},
+							"face_bytes_sha256": "df0d504ce26b0bdc6126f0f37ca0683632901135f54024afb94514d8088f6768",
+							"face_vertex_count": 168,
+							"oriented_faces_sha256": "bc9f3444d9d8e9b873d516c52b14bde2f663ec55b74cc7a37c404c482254f8c3",
+							"source_faces_hex_text_sha256": "010f23f7f20f9f17022234d5385aa74f9e9c33a8f907f0064edd3d6c2ea1e4c4",
+							"threshold": 0.0
+						}
+					],
+					"primitive": 3,
+					"vertex_bounds": {
+						"max": [
+							3.80221891403198242,
+							13.1999998092651367,
+							3.5137786865234375
+						],
+						"min": [
+							-3.80221891403198242,
+							0.0,
+							-3.90000009536743164
+						]
+					},
+					"vertex_bytes_sha256": "76ae8f87cee80408e43fc1cb7f7dd629a3db981332c72a7d8dde731e676df22a",
+					"vertex_count": 120
+				}
+			],
+			"vertex_bounds": {
+				"max": [
+					3.80221891403198242,
+					13.1999998092651367,
+					3.5137786865234375
+				],
+				"min": [
+					-3.80221891403198242,
+					0.0,
+					-3.90000009536743164
+				]
+			},
+			"vertex_count": 120
+		},
+		{
+			"combined_clearance_bounds": {
+				"max": [
+					2.35220003128051758,
+					2.70000004768371582,
+					1.44609999656677246
+				],
+				"min": [
+					-1.61000001430511475,
+					-0.5,
+					-1.44609999656677246
+				]
+			},
+			"combined_vertex_bounds": {
+				"max": [
+					2.35219526290893555,
+					2.70000004768371582,
+					1.44608807563781738
+				],
+				"min": [
+					-1.60996496677398682,
+					-0.5,
+					-1.44608807563781738
+				]
+			},
+			"face_bounds": {
+				"max": [
+					2.35219526290893555,
+					2.70000004768371582,
+					1.44608807563781738
+				],
+				"min": [
+					-1.60996496677398682,
+					-0.5,
+					-1.44608807563781738
+				]
+			},
+			"face_bytes_sha256": "60a84596547f24ab796d9e05b7c62a2655dbee008bf811cd190a6d42843c1d4f",
+			"face_method": "actual_indexed_base_faces",
+			"face_vertex_count": 120,
+			"geometry_policy": "strict_existing_shadow_indexed_arrays_plus_actual_get_faces_v3",
+			"get_faces_bounds": {
+				"max": [
+					2.35220003128051758,
+					2.70000004768371582,
+					1.44609999656677246
+				],
+				"min": [
+					-1.61000001430511475,
+					-0.5,
+					-1.44609999656677246
+				]
+			},
+			"get_faces_bytes_sha256": "d539b27d3a5f77c0c8d659c43c51d484ec7e8f47130ad250b2e286b3ae33213b",
+			"get_faces_observed": true,
+			"get_faces_snap_proof": {
+				"method": "exact_float32_Vector3_snapped_base_indexed_faces",
+				"passed": true,
+				"predicted_bounds": {
+					"max": [
+						2.35220003128051758,
+						2.70000004768371582,
+						1.44609999656677246
+					],
+					"min": [
+						-1.61000001430511475,
+						-0.5,
+						-1.44609999656677246
+					]
+				},
+				"predicted_face_bytes_sha256": "d539b27d3a5f77c0c8d659c43c51d484ec7e8f47130ad250b2e286b3ae33213b",
+				"step_float32_hex": "17b7d138"
+			},
+			"get_faces_vertex_count": 120,
+			"indexed_visual_bounds": {
+				"max": [
+					2.35219526290893555,
+					2.70000004768371582,
+					1.44608807563781738
+				],
+				"min": [
+					-1.60996496677398682,
+					-0.5,
+					-1.44608807563781738
+				]
+			},
+			"mesh_resource": "res://assets/meshes/bush.res",
+			"shadow": {
+				"combined_clearance_bounds": {
+					"max": [
+						2.35219526290893555,
+						2.70000004768371582,
+						1.44608807563781738
+					],
+					"min": [
+						-1.60996496677398682,
+						-0.5,
+						-1.44608807563781738
+					]
+				},
+				"combined_vertex_bounds": {
+					"max": [
+						2.35219526290893555,
+						2.70000004768371582,
+						1.44608807563781738
+					],
+					"min": [
+						-1.60996496677398682,
+						-0.5,
+						-1.44608807563781738
+					]
+				},
+				"face_bounds": {
+					"max": [
+						2.35219526290893555,
+						2.70000004768371582,
+						1.44608807563781738
+					],
+					"min": [
+						-1.60996496677398682,
+						-0.5,
+						-1.44608807563781738
+					]
+				},
+				"face_bytes_sha256": "4e157e2ab31b4923b5afd8d3fa92816672d1a708772fcc969f56490cc1914577",
+				"face_method": "actual_indexed_base_faces",
+				"face_vertex_count": 120,
+				"get_faces_bounds": null,
+				"get_faces_bytes_sha256": "",
+				"get_faces_observed": false,
+				"get_faces_snap_proof": null,
+				"get_faces_vertex_count": 0,
+				"indexed_visual_bounds": {
+					"max": [
+						2.35219526290893555,
+						2.70000004768371582,
+						1.44608807563781738
+					],
+					"min": [
+						-1.60996496677398682,
+						-0.5,
+						-1.44608807563781738
+					]
+				},
+				"mesh_resource": "res://assets/meshes/bush.res::ArrayMesh_moh7i",
+				"shadow_mesh_resource": "",
+				"shadow_surface_storage_sha256": "",
+				"surface_storage_sha256": "ae09bbe5558357971cfd0bc99b1b5e2f61f46dfff74e659d773fbfaba7d04a68",
+				"surfaces": [
+					{
+						"api_vertex_missing": true,
+						"format": 34896613377,
+						"index": 0,
+						"index_count": 120,
+						"levels": [
+							{
+								"bounds": {
+									"max": [
+										2.35219526290893555,
+										2.70000004768371582,
+										1.44608807563781738
+									],
+									"min": [
+										-1.60996496677398682,
+										-0.5,
+										-1.44608807563781738
+									]
+								},
+								"face_bytes_sha256": "4e157e2ab31b4923b5afd8d3fa92816672d1a708772fcc969f56490cc1914577",
+								"face_vertex_count": 120,
+								"oriented_faces_sha256": "382a51ca991c3cdface9e3e30abd8f0d1ff97f9f049c629615b9210eb7bd5423",
+								"source_faces_hex_text_sha256": "feabfc023a7f59c342ddcf641619dae97b18cc7c9c4fdda0bda485e2201d57c5",
+								"threshold": 0.0
+							}
+						],
+						"primitive": 3,
+						"vertex_bounds": {
+							"max": [
+								2.35219526290893555,
+								2.70000004768371582,
+								1.44608807563781738
+							],
+							"min": [
+								-1.60996496677398682,
+								-0.5,
+								-1.44608807563781738
+							]
+						},
+						"vertex_bytes_sha256": "0182eb7b52742b9fc3f89de121cbfea2f4c64bf6790945d13b5002c3ba0d9b25",
+						"vertex_count": 24
+					}
+				],
+				"vertex_bounds": {
+					"max": [
+						2.35219526290893555,
+						2.70000004768371582,
+						1.44608807563781738
+					],
+					"min": [
+						-1.60996496677398682,
+						-0.5,
+						-1.44608807563781738
+					]
+				},
+				"vertex_count": 24
+			},
+			"shadow_coverage_proof": {
+				"helper_sha256": "966c863a02d136aefacb78e76d7301649b96c628408c589d3a4345fac30086f7",
+				"method": "existing_audit_array_mesh_exact_oriented_multiset_all_base_lods",
+				"passed": true,
+				"shadow_present": true,
+				"surfaces": [
+					{
+						"levels": [
+							{
+								"source_faces_hex_text_sha256": "1362e150af078824cad9c2489b8a664d029f8594ffec9bf192cee173efd0f12c",
+								"threshold": 0.0,
+								"triangles": 40
+							}
+						],
+						"shadow_api_vertex_missing": true,
+						"shadow_vertices": 24,
+						"source_format": 34896613407,
+						"source_vertices": 120,
+						"surface": 0
+					}
+				]
+			},
+			"shadow_mesh_resource": "res://assets/meshes/bush.res::ArrayMesh_moh7i",
+			"shadow_surface_storage_sha256": "ae09bbe5558357971cfd0bc99b1b5e2f61f46dfff74e659d773fbfaba7d04a68",
+			"surface_storage_sha256": "839f32d4ccb85c93fe2eaba8c4f285f32844b344fc0c1d1f0d430d8e1afd90f5",
+			"surfaces": [
+				{
+					"api_vertex_missing": false,
+					"format": 34896613407,
+					"index": 0,
+					"index_count": 120,
+					"levels": [
+						{
+							"bounds": {
+								"max": [
+									2.35219526290893555,
+									2.70000004768371582,
+									1.44608807563781738
+								],
+								"min": [
+									-1.60996496677398682,
+									-0.5,
+									-1.44608807563781738
+								]
+							},
+							"face_bytes_sha256": "60a84596547f24ab796d9e05b7c62a2655dbee008bf811cd190a6d42843c1d4f",
+							"face_vertex_count": 120,
+							"oriented_faces_sha256": "382a51ca991c3cdface9e3e30abd8f0d1ff97f9f049c629615b9210eb7bd5423",
+							"source_faces_hex_text_sha256": "1362e150af078824cad9c2489b8a664d029f8594ffec9bf192cee173efd0f12c",
+							"threshold": 0.0
+						}
+					],
+					"primitive": 3,
+					"vertex_bounds": {
+						"max": [
+							2.35219526290893555,
+							2.70000004768371582,
+							1.44608807563781738
+						],
+						"min": [
+							-1.60996496677398682,
+							-0.5,
+							-1.44608807563781738
+						]
+					},
+					"vertex_bytes_sha256": "60a84596547f24ab796d9e05b7c62a2655dbee008bf811cd190a6d42843c1d4f",
+					"vertex_count": 120
+				}
+			],
+			"vertex_bounds": {
+				"max": [
+					2.35219526290893555,
+					2.70000004768371582,
+					1.44608807563781738
+				],
+				"min": [
+					-1.60996496677398682,
+					-0.5,
+					-1.44608807563781738
+				]
+			},
+			"vertex_count": 120
+		},
+		{
+			"combined_clearance_bounds": {
+				"max": [
+					4.35319995880126953,
+					12.1999998092651367,
+					4.09999990463256836
+				],
+				"min": [
+					-4.64339971542358398,
+					0.0,
+					-3.5
+				]
+			},
+			"combined_vertex_bounds": {
+				"max": [
+					4.35317373275756836,
+					12.1999998092651367,
+					4.09999942779541016
+				],
+				"min": [
+					-4.64338541030883789,
+					0.0,
+					-3.4999997615814209
+				]
+			},
+			"face_bounds": {
+				"max": [
+					4.35317373275756836,
+					12.1999998092651367,
+					4.09999942779541016
+				],
+				"min": [
+					-4.64338541030883789,
+					0.0,
+					-3.4999997615814209
+				]
+			},
+			"face_bytes_sha256": "51fcd9d33dcda1872365e7a8c5c65abfec0bdbaee7b996c22c3fe5308f0db231",
+			"face_method": "actual_indexed_base_faces",
+			"face_vertex_count": 972,
+			"geometry_policy": "strict_existing_shadow_indexed_arrays_plus_actual_get_faces_v3",
+			"get_faces_bounds": {
+				"max": [
+					4.35319995880126953,
+					12.1999998092651367,
+					4.09999990463256836
+				],
+				"min": [
+					-4.64339971542358398,
+					0.0,
+					-3.5
+				]
+			},
+			"get_faces_bytes_sha256": "0561df082dc97f6526874ee72008cb48875a6f594c4238415854bb74fc52a33b",
+			"get_faces_observed": true,
+			"get_faces_snap_proof": {
+				"method": "exact_float32_Vector3_snapped_base_indexed_faces",
+				"passed": true,
+				"predicted_bounds": {
+					"max": [
+						4.35319995880126953,
+						12.1999998092651367,
+						4.09999990463256836
+					],
+					"min": [
+						-4.64339971542358398,
+						0.0,
+						-3.5
+					]
+				},
+				"predicted_face_bytes_sha256": "0561df082dc97f6526874ee72008cb48875a6f594c4238415854bb74fc52a33b",
+				"step_float32_hex": "17b7d138"
+			},
+			"get_faces_vertex_count": 972,
+			"indexed_visual_bounds": {
+				"max": [
+					4.35317373275756836,
+					12.1999998092651367,
+					4.09999942779541016
+				],
+				"min": [
+					-4.64338541030883789,
+					0.0,
+					-3.4999997615814209
+				]
+			},
+			"mesh_resource": "res://assets/meshes/oak.res",
+			"shadow": {
+				"combined_clearance_bounds": {
+					"max": [
+						4.35317373275756836,
+						12.1999998092651367,
+						4.09999942779541016
+					],
+					"min": [
+						-4.64338541030883789,
+						0.0,
+						-3.4999997615814209
+					]
+				},
+				"combined_vertex_bounds": {
+					"max": [
+						4.35317373275756836,
+						12.1999998092651367,
+						4.09999942779541016
+					],
+					"min": [
+						-4.64338541030883789,
+						0.0,
+						-3.4999997615814209
+					]
+				},
+				"face_bounds": {
+					"max": [
+						4.35317373275756836,
+						12.1999998092651367,
+						4.09999942779541016
+					],
+					"min": [
+						-4.64338541030883789,
+						0.0,
+						-3.4999997615814209
+					]
+				},
+				"face_bytes_sha256": "82f693f0807e99c1dcbc31adeaf25a65027ac08b034d4ce63a373d09640ce6b7",
+				"face_method": "actual_indexed_base_faces",
+				"face_vertex_count": 972,
+				"get_faces_bounds": null,
+				"get_faces_bytes_sha256": "",
+				"get_faces_observed": false,
+				"get_faces_snap_proof": null,
+				"get_faces_vertex_count": 0,
+				"indexed_visual_bounds": {
+					"max": [
+						4.35317373275756836,
+						12.1999998092651367,
+						4.09999942779541016
+					],
+					"min": [
+						-4.64338541030883789,
+						0.0,
+						-3.4999997615814209
+					]
+				},
+				"mesh_resource": "res://assets/meshes/oak.res::ArrayMesh_flpox",
+				"shadow_mesh_resource": "",
+				"shadow_surface_storage_sha256": "",
+				"surface_storage_sha256": "91ee2988845a875dd7d279d1fb2b88ef386e50139a1141f164c38cd22db3d2fa",
+				"surfaces": [
+					{
+						"api_vertex_missing": true,
+						"format": 34896613377,
+						"index": 0,
+						"index_count": 972,
+						"levels": [
+							{
+								"bounds": {
+									"max": [
+										4.35317373275756836,
+										12.1999998092651367,
+										4.09999942779541016
+									],
+									"min": [
+										-4.64338541030883789,
+										0.0,
+										-3.4999997615814209
+									]
+								},
+								"face_bytes_sha256": "82f693f0807e99c1dcbc31adeaf25a65027ac08b034d4ce63a373d09640ce6b7",
+								"face_vertex_count": 972,
+								"oriented_faces_sha256": "d275a6dd11246111fd505fa309112dd773645d42a10a78e5ad4e2371a7a88a8d",
+								"source_faces_hex_text_sha256": "906dc480ab4c11b00364a95f1e61f4210b9d27970734e71040a70e549d0d4fa3",
+								"threshold": 0.0
+							}
+						],
+						"primitive": 3,
+						"vertex_bounds": {
+							"max": [
+								4.35317373275756836,
+								12.1999998092651367,
+								4.09999942779541016
+							],
+							"min": [
+								-4.64338541030883789,
+								0.0,
+								-3.4999997615814209
+							]
+						},
+						"vertex_bytes_sha256": "48672afa7d6d96b536051bff80ec06adcf0d7d1d0c299e2a1114e606ac3ce201",
+						"vertex_count": 176
+					}
+				],
+				"vertex_bounds": {
+					"max": [
+						4.35317373275756836,
+						12.1999998092651367,
+						4.09999942779541016
+					],
+					"min": [
+						-4.64338541030883789,
+						0.0,
+						-3.4999997615814209
+					]
+				},
+				"vertex_count": 176
+			},
+			"shadow_coverage_proof": {
+				"helper_sha256": "966c863a02d136aefacb78e76d7301649b96c628408c589d3a4345fac30086f7",
+				"method": "existing_audit_array_mesh_exact_oriented_multiset_all_base_lods",
+				"passed": true,
+				"shadow_present": true,
+				"surfaces": [
+					{
+						"levels": [
+							{
+								"source_faces_hex_text_sha256": "2528627c7de0fb2b41797c55b8ca4ad8181cbf52fd196aa936ffe7ec33b6383a",
+								"threshold": 0.0,
+								"triangles": 324
+							}
+						],
+						"shadow_api_vertex_missing": true,
+						"shadow_vertices": 176,
+						"source_format": 34896613407,
+						"source_vertices": 870,
+						"surface": 0
+					}
+				]
+			},
+			"shadow_mesh_resource": "res://assets/meshes/oak.res::ArrayMesh_flpox",
+			"shadow_surface_storage_sha256": "91ee2988845a875dd7d279d1fb2b88ef386e50139a1141f164c38cd22db3d2fa",
+			"surface_storage_sha256": "562669ff8c39dda650a782c63650c187fe9bc672dfc366ab3e0e024a65a74bbf",
+			"surfaces": [
+				{
+					"api_vertex_missing": false,
+					"format": 34896613407,
+					"index": 0,
+					"index_count": 972,
+					"levels": [
+						{
+							"bounds": {
+								"max": [
+									4.35317373275756836,
+									12.1999998092651367,
+									4.09999942779541016
+								],
+								"min": [
+									-4.64338541030883789,
+									0.0,
+									-3.4999997615814209
+								]
+							},
+							"face_bytes_sha256": "51fcd9d33dcda1872365e7a8c5c65abfec0bdbaee7b996c22c3fe5308f0db231",
+							"face_vertex_count": 972,
+							"oriented_faces_sha256": "d275a6dd11246111fd505fa309112dd773645d42a10a78e5ad4e2371a7a88a8d",
+							"source_faces_hex_text_sha256": "2528627c7de0fb2b41797c55b8ca4ad8181cbf52fd196aa936ffe7ec33b6383a",
+							"threshold": 0.0
+						}
+					],
+					"primitive": 3,
+					"vertex_bounds": {
+						"max": [
+							4.35317373275756836,
+							12.1999998092651367,
+							4.09999942779541016
+						],
+						"min": [
+							-4.64338541030883789,
+							0.0,
+							-3.4999997615814209
+						]
+					},
+					"vertex_bytes_sha256": "1a8d790011035c9c063214a09a62fd02433ae364689fc22f792a1076ce36bf92",
+					"vertex_count": 870
+				}
+			],
+			"vertex_bounds": {
+				"max": [
+					4.35317373275756836,
+					12.1999998092651367,
+					4.09999942779541016
+				],
+				"min": [
+					-4.64338541030883789,
+					0.0,
+					-3.4999997615814209
+				]
+			},
+			"vertex_count": 870
+		},
+		{
+			"combined_clearance_bounds": {
+				"max": [
+					2.30999994277954102,
+					14.0,
+					2.20000004768371582
+				],
+				"min": [
+					-2.28253889083862305,
+					0.0,
+					-2.20000004768371582
+				]
+			},
+			"combined_vertex_bounds": {
+				"max": [
+					2.30996465682983398,
+					14.0,
+					2.19999980926513672
+				],
+				"min": [
+					-2.28253889083862305,
+					0.0,
+					-2.19999980926513672
+				]
+			},
+			"face_bounds": {
+				"max": [
+					2.30996465682983398,
+					14.0,
+					2.19999980926513672
+				],
+				"min": [
+					-2.28253889083862305,
+					0.0,
+					-2.19999980926513672
+				]
+			},
+			"face_bytes_sha256": "880633cc13b2581f4a24c0e0697e4fffb1ab59c30053d6876c0d3becac541d54",
+			"face_method": "actual_indexed_base_faces",
+			"face_vertex_count": 372,
+			"geometry_policy": "strict_existing_shadow_indexed_arrays_plus_actual_get_faces_v3",
+			"get_faces_bounds": {
+				"max": [
+					2.30999994277954102,
+					14.0,
+					2.20000004768371582
+				],
+				"min": [
+					-2.28250002861022949,
+					0.0,
+					-2.20000004768371582
+				]
+			},
+			"get_faces_bytes_sha256": "b4bbcb85843db8580f0d7ad2e42fb9db024deea0c958baaedbac5e233e3436ba",
+			"get_faces_observed": true,
+			"get_faces_snap_proof": {
+				"method": "exact_float32_Vector3_snapped_base_indexed_faces",
+				"passed": true,
+				"predicted_bounds": {
+					"max": [
+						2.30999994277954102,
+						14.0,
+						2.20000004768371582
+					],
+					"min": [
+						-2.28250002861022949,
+						0.0,
+						-2.20000004768371582
+					]
+				},
+				"predicted_face_bytes_sha256": "b4bbcb85843db8580f0d7ad2e42fb9db024deea0c958baaedbac5e233e3436ba",
+				"step_float32_hex": "17b7d138"
+			},
+			"get_faces_vertex_count": 372,
+			"indexed_visual_bounds": {
+				"max": [
+					2.30996465682983398,
+					14.0,
+					2.19999980926513672
+				],
+				"min": [
+					-2.28253889083862305,
+					0.0,
+					-2.19999980926513672
+				]
+			},
+			"mesh_resource": "res://assets/meshes/poplar.res",
+			"shadow": {
+				"combined_clearance_bounds": {
+					"max": [
+						2.30996465682983398,
+						14.0,
+						2.19999980926513672
+					],
+					"min": [
+						-2.28253889083862305,
+						0.0,
+						-2.19999980926513672
+					]
+				},
+				"combined_vertex_bounds": {
+					"max": [
+						2.30996465682983398,
+						14.0,
+						2.19999980926513672
+					],
+					"min": [
+						-2.28253889083862305,
+						0.0,
+						-2.19999980926513672
+					]
+				},
+				"face_bounds": {
+					"max": [
+						2.30996465682983398,
+						14.0,
+						2.19999980926513672
+					],
+					"min": [
+						-2.28253889083862305,
+						0.0,
+						-2.19999980926513672
+					]
+				},
+				"face_bytes_sha256": "380935f5d124dbf88ca5a738bec13c41732b877764bcc2f9c96008d30e0a6fab",
+				"face_method": "actual_indexed_base_faces",
+				"face_vertex_count": 372,
+				"get_faces_bounds": null,
+				"get_faces_bytes_sha256": "",
+				"get_faces_observed": false,
+				"get_faces_snap_proof": null,
+				"get_faces_vertex_count": 0,
+				"indexed_visual_bounds": {
+					"max": [
+						2.30996465682983398,
+						14.0,
+						2.19999980926513672
+					],
+					"min": [
+						-2.28253889083862305,
+						0.0,
+						-2.19999980926513672
+					]
+				},
+				"mesh_resource": "res://assets/meshes/poplar.res::ArrayMesh_w8vcp",
+				"shadow_mesh_resource": "",
+				"shadow_surface_storage_sha256": "",
+				"surface_storage_sha256": "e1c6c13cce572781dc5c951374719d90a772985489b7a6d6d668fe45773a67f3",
+				"surfaces": [
+					{
+						"api_vertex_missing": true,
+						"format": 34896613377,
+						"index": 0,
+						"index_count": 372,
+						"levels": [
+							{
+								"bounds": {
+									"max": [
+										2.30996465682983398,
+										14.0,
+										2.19999980926513672
+									],
+									"min": [
+										-2.28253889083862305,
+										0.0,
+										-2.19999980926513672
+									]
+								},
+								"face_bytes_sha256": "380935f5d124dbf88ca5a738bec13c41732b877764bcc2f9c96008d30e0a6fab",
+								"face_vertex_count": 372,
+								"oriented_faces_sha256": "489ee4cecbbf726ac18066867ee95f9d8a691ca5e32e48d50b49a37e38055e75",
+								"source_faces_hex_text_sha256": "2a4fa35dcfa39501e936dcf5b1bf4deb87b0a5c5dcc432b6fb85b6d1850c2bd4",
+								"threshold": 0.0
+							}
+						],
+						"primitive": 3,
+						"vertex_bounds": {
+							"max": [
+								2.30996465682983398,
+								14.0,
+								2.19999980926513672
+							],
+							"min": [
+								-2.28253889083862305,
+								0.0,
+								-2.19999980926513672
+							]
+						},
+						"vertex_bytes_sha256": "df938d94d8a99bdbb30e32ca33e3b73a7cdbe90c3ed799762627cef97eb0b5e8",
+						"vertex_count": 68
+					}
+				],
+				"vertex_bounds": {
+					"max": [
+						2.30996465682983398,
+						14.0,
+						2.19999980926513672
+					],
+					"min": [
+						-2.28253889083862305,
+						0.0,
+						-2.19999980926513672
+					]
+				},
+				"vertex_count": 68
+			},
+			"shadow_coverage_proof": {
+				"helper_sha256": "966c863a02d136aefacb78e76d7301649b96c628408c589d3a4345fac30086f7",
+				"method": "existing_audit_array_mesh_exact_oriented_multiset_all_base_lods",
+				"passed": true,
+				"shadow_present": true,
+				"surfaces": [
+					{
+						"levels": [
+							{
+								"source_faces_hex_text_sha256": "ee86babe1963fa2cf7b22c89e1bcde3c667698e14900c2ae72fc9c89a67f096e",
+								"threshold": 0.0,
+								"triangles": 124
+							}
+						],
+						"shadow_api_vertex_missing": true,
+						"shadow_vertices": 68,
+						"source_format": 34896613407,
+						"source_vertices": 342,
+						"surface": 0
+					}
+				]
+			},
+			"shadow_mesh_resource": "res://assets/meshes/poplar.res::ArrayMesh_w8vcp",
+			"shadow_surface_storage_sha256": "e1c6c13cce572781dc5c951374719d90a772985489b7a6d6d668fe45773a67f3",
+			"surface_storage_sha256": "9ba00e052d383f0fda67e72ab396a83add0431b743a3ccd66e92fb8871edf999",
+			"surfaces": [
+				{
+					"api_vertex_missing": false,
+					"format": 34896613407,
+					"index": 0,
+					"index_count": 372,
+					"levels": [
+						{
+							"bounds": {
+								"max": [
+									2.30996465682983398,
+									14.0,
+									2.19999980926513672
+								],
+								"min": [
+									-2.28253889083862305,
+									0.0,
+									-2.19999980926513672
+								]
+							},
+							"face_bytes_sha256": "880633cc13b2581f4a24c0e0697e4fffb1ab59c30053d6876c0d3becac541d54",
+							"face_vertex_count": 372,
+							"oriented_faces_sha256": "489ee4cecbbf726ac18066867ee95f9d8a691ca5e32e48d50b49a37e38055e75",
+							"source_faces_hex_text_sha256": "ee86babe1963fa2cf7b22c89e1bcde3c667698e14900c2ae72fc9c89a67f096e",
+							"threshold": 0.0
+						}
+					],
+					"primitive": 3,
+					"vertex_bounds": {
+						"max": [
+							2.30996465682983398,
+							14.0,
+							2.19999980926513672
+						],
+						"min": [
+							-2.28253889083862305,
+							0.0,
+							-2.19999980926513672
+						]
+					},
+					"vertex_bytes_sha256": "f070a35b821e834e34a3f257415663fdbe5f2025df4021cf98b71af81288471c",
+					"vertex_count": 342
+				}
+			],
+			"vertex_bounds": {
+				"max": [
+					2.30996465682983398,
+					14.0,
+					2.19999980926513672
+				],
+				"min": [
+					-2.28253889083862305,
+					0.0,
+					-2.19999980926513672
+				]
+			},
+			"vertex_count": 342
+		},
+		{
+			"combined_clearance_bounds": {
+				"max": [
+					3.69940757751464844,
+					4.30000019073486328,
+					2.31621575355529785
+				],
+				"min": [
+					-2.95160245895385742,
+					-1.10000002384185791,
+					-2.12660002708435059
+				]
+			},
+			"combined_vertex_bounds": {
+				"max": [
+					3.69940757751464844,
+					4.30000019073486328,
+					2.31621575355529785
+				],
+				"min": [
+					-2.95160245895385742,
+					-1.10000002384185791,
+					-2.12660002708435059
+				]
+			},
+			"face_bounds": {
+				"max": [
+					3.69940757751464844,
+					4.30000019073486328,
+					2.31621575355529785
+				],
+				"min": [
+					-2.95160245895385742,
+					-1.10000002384185791,
+					-2.12660002708435059
+				]
+			},
+			"face_bytes_sha256": "3ee92cf47209c310699bf4237dcb620c11c72b4f212c723f5f909d06ff03a8da",
+			"face_method": "actual_indexed_base_faces",
+			"face_vertex_count": 120,
+			"geometry_policy": "strict_existing_shadow_indexed_arrays_plus_actual_get_faces_v3",
+			"get_faces_bounds": {
+				"max": [
+					3.69939994812011719,
+					4.29999971389770508,
+					2.31620001792907715
+				],
+				"min": [
+					-2.9515998363494873,
+					-1.10000002384185791,
+					-2.12660002708435059
+				]
+			},
+			"get_faces_bytes_sha256": "20738d402431be5922fc6659aa80de1a7907abd3438c62ac989cca7b2e278267",
+			"get_faces_observed": true,
+			"get_faces_snap_proof": {
+				"method": "exact_float32_Vector3_snapped_base_indexed_faces",
+				"passed": true,
+				"predicted_bounds": {
+					"max": [
+						3.69939994812011719,
+						4.29999971389770508,
+						2.31620001792907715
+					],
+					"min": [
+						-2.9515998363494873,
+						-1.10000002384185791,
+						-2.12660002708435059
+					]
+				},
+				"predicted_face_bytes_sha256": "20738d402431be5922fc6659aa80de1a7907abd3438c62ac989cca7b2e278267",
+				"step_float32_hex": "17b7d138"
+			},
+			"get_faces_vertex_count": 120,
+			"indexed_visual_bounds": {
+				"max": [
+					3.69940757751464844,
+					4.30000019073486328,
+					2.31621575355529785
+				],
+				"min": [
+					-2.95160245895385742,
+					-1.10000002384185791,
+					-2.12660002708435059
+				]
+			},
+			"mesh_resource": "res://assets/meshes/rock.res",
+			"shadow": {
+				"combined_clearance_bounds": {
+					"max": [
+						3.69940757751464844,
+						4.30000019073486328,
+						2.31621575355529785
+					],
+					"min": [
+						-2.95160245895385742,
+						-1.10000002384185791,
+						-2.12660002708435059
+					]
+				},
+				"combined_vertex_bounds": {
+					"max": [
+						3.69940757751464844,
+						4.30000019073486328,
+						2.31621575355529785
+					],
+					"min": [
+						-2.95160245895385742,
+						-1.10000002384185791,
+						-2.12660002708435059
+					]
+				},
+				"face_bounds": {
+					"max": [
+						3.69940757751464844,
+						4.30000019073486328,
+						2.31621575355529785
+					],
+					"min": [
+						-2.95160245895385742,
+						-1.10000002384185791,
+						-2.12660002708435059
+					]
+				},
+				"face_bytes_sha256": "39cdbf8887ba377d193cc2622a598c06f6898fb16e6d7d4fc8a42046dd07aab2",
+				"face_method": "actual_indexed_base_faces",
+				"face_vertex_count": 120,
+				"get_faces_bounds": null,
+				"get_faces_bytes_sha256": "",
+				"get_faces_observed": false,
+				"get_faces_snap_proof": null,
+				"get_faces_vertex_count": 0,
+				"indexed_visual_bounds": {
+					"max": [
+						3.69940757751464844,
+						4.30000019073486328,
+						2.31621575355529785
+					],
+					"min": [
+						-2.95160245895385742,
+						-1.10000002384185791,
+						-2.12660002708435059
+					]
+				},
+				"mesh_resource": "res://assets/meshes/rock.res::ArrayMesh_yjhaa",
+				"shadow_mesh_resource": "",
+				"shadow_surface_storage_sha256": "",
+				"surface_storage_sha256": "a53cf15bf0eb9a985f4669362312f73d3af09b370a3b30044b0d94bd3530a23e",
+				"surfaces": [
+					{
+						"api_vertex_missing": true,
+						"format": 34896613377,
+						"index": 0,
+						"index_count": 120,
+						"levels": [
+							{
+								"bounds": {
+									"max": [
+										3.69940757751464844,
+										4.30000019073486328,
+										2.31621575355529785
+									],
+									"min": [
+										-2.95160245895385742,
+										-1.10000002384185791,
+										-2.12660002708435059
+									]
+								},
+								"face_bytes_sha256": "39cdbf8887ba377d193cc2622a598c06f6898fb16e6d7d4fc8a42046dd07aab2",
+								"face_vertex_count": 120,
+								"oriented_faces_sha256": "30da51efa240437a01fd4010f179e9d667825eb8d20ea82039504be605247f8a",
+								"source_faces_hex_text_sha256": "b28c80e95bb5bdf0c0b0a29e4957a1acc499d42cbe5f02d83c74780a50c3e7f5",
+								"threshold": 0.0
+							}
+						],
+						"primitive": 3,
+						"vertex_bounds": {
+							"max": [
+								3.69940757751464844,
+								4.30000019073486328,
+								2.31621575355529785
+							],
+							"min": [
+								-2.95160245895385742,
+								-1.10000002384185791,
+								-2.12660002708435059
+							]
+						},
+						"vertex_bytes_sha256": "5e96da7e69926d58466d5027b04bdebdfa512d872ec948c8bd8f63d0c9893f2e",
+						"vertex_count": 24
+					}
+				],
+				"vertex_bounds": {
+					"max": [
+						3.69940757751464844,
+						4.30000019073486328,
+						2.31621575355529785
+					],
+					"min": [
+						-2.95160245895385742,
+						-1.10000002384185791,
+						-2.12660002708435059
+					]
+				},
+				"vertex_count": 24
+			},
+			"shadow_coverage_proof": {
+				"helper_sha256": "966c863a02d136aefacb78e76d7301649b96c628408c589d3a4345fac30086f7",
+				"method": "existing_audit_array_mesh_exact_oriented_multiset_all_base_lods",
+				"passed": true,
+				"shadow_present": true,
+				"surfaces": [
+					{
+						"levels": [
+							{
+								"source_faces_hex_text_sha256": "955caa93c08cc258e8f7fa9e0815dcf0c1acd45b1b07f59830a500f1701a82ea",
+								"threshold": 0.0,
+								"triangles": 40
+							}
+						],
+						"shadow_api_vertex_missing": true,
+						"shadow_vertices": 24,
+						"source_format": 34896613407,
+						"source_vertices": 120,
+						"surface": 0
+					}
+				]
+			},
+			"shadow_mesh_resource": "res://assets/meshes/rock.res::ArrayMesh_yjhaa",
+			"shadow_surface_storage_sha256": "a53cf15bf0eb9a985f4669362312f73d3af09b370a3b30044b0d94bd3530a23e",
+			"surface_storage_sha256": "ee2d69d2bdbebc4561cb4b27f106304101bf3b4211bc77197651afe064edbfa2",
+			"surfaces": [
+				{
+					"api_vertex_missing": false,
+					"format": 34896613407,
+					"index": 0,
+					"index_count": 120,
+					"levels": [
+						{
+							"bounds": {
+								"max": [
+									3.69940757751464844,
+									4.30000019073486328,
+									2.31621575355529785
+								],
+								"min": [
+									-2.95160245895385742,
+									-1.10000002384185791,
+									-2.12660002708435059
+								]
+							},
+							"face_bytes_sha256": "3ee92cf47209c310699bf4237dcb620c11c72b4f212c723f5f909d06ff03a8da",
+							"face_vertex_count": 120,
+							"oriented_faces_sha256": "30da51efa240437a01fd4010f179e9d667825eb8d20ea82039504be605247f8a",
+							"source_faces_hex_text_sha256": "955caa93c08cc258e8f7fa9e0815dcf0c1acd45b1b07f59830a500f1701a82ea",
+							"threshold": 0.0
+						}
+					],
+					"primitive": 3,
+					"vertex_bounds": {
+						"max": [
+							3.69940757751464844,
+							4.30000019073486328,
+							2.31621575355529785
+						],
+						"min": [
+							-2.95160245895385742,
+							-1.10000002384185791,
+							-2.12660002708435059
+						]
+					},
+					"vertex_bytes_sha256": "3ee92cf47209c310699bf4237dcb620c11c72b4f212c723f5f909d06ff03a8da",
+					"vertex_count": 120
+				}
+			],
+			"vertex_bounds": {
+				"max": [
+					3.69940757751464844,
+					4.30000019073486328,
+					2.31621575355529785
+				],
+				"min": [
+					-2.95160245895385742,
+					-1.10000002384185791,
+					-2.12660002708435059
+				]
+			},
+			"vertex_count": 120
+		},
+		{
+			"combined_clearance_bounds": {
+				"max": [
+					3.80221891403198242,
+					13.1999998092651367,
+					3.51379990577697754
+				],
+				"min": [
+					-3.80221891403198242,
+					0.0,
+					-3.90000009536743164
+				]
+			},
+			"combined_vertex_bounds": {
+				"max": [
+					3.80221891403198242,
+					13.1999998092651367,
+					3.5137786865234375
+				],
+				"min": [
+					-3.80221891403198242,
+					0.0,
+					-3.90000009536743164
+				]
+			},
+			"face_bounds": {
+				"max": [
+					3.80221891403198242,
+					13.1999998092651367,
+					3.5137786865234375
+				],
+				"min": [
+					-3.80221891403198242,
+					0.0,
+					-3.90000009536743164
+				]
+			},
+			"face_bytes_sha256": "df0d504ce26b0bdc6126f0f37ca0683632901135f54024afb94514d8088f6768",
+			"face_method": "actual_indexed_base_faces",
+			"face_vertex_count": 168,
+			"geometry_policy": "strict_existing_shadow_indexed_arrays_plus_actual_get_faces_v3",
+			"get_faces_bounds": {
+				"max": [
+					3.8021998405456543,
+					13.1999998092651367,
+					3.51379990577697754
+				],
+				"min": [
+					-3.8021998405456543,
+					0.0,
+					-3.89999985694885254
+				]
+			},
+			"get_faces_bytes_sha256": "509df225d3b50e9b177da02ce9146e73f4382368c7baf77e43a965ab5480afbd",
+			"get_faces_observed": true,
+			"get_faces_snap_proof": {
+				"method": "exact_float32_Vector3_snapped_base_indexed_faces",
+				"passed": true,
+				"predicted_bounds": {
+					"max": [
+						3.8021998405456543,
+						13.1999998092651367,
+						3.51379990577697754
+					],
+					"min": [
+						-3.8021998405456543,
+						0.0,
+						-3.89999985694885254
+					]
+				},
+				"predicted_face_bytes_sha256": "509df225d3b50e9b177da02ce9146e73f4382368c7baf77e43a965ab5480afbd",
+				"step_float32_hex": "17b7d138"
+			},
+			"get_faces_vertex_count": 168,
+			"indexed_visual_bounds": {
+				"max": [
+					3.80221891403198242,
+					13.1999998092651367,
+					3.5137786865234375
+				],
+				"min": [
+					-3.80221891403198242,
+					0.0,
+					-3.90000009536743164
+				]
+			},
+			"mesh_resource": "res://scenes/candidate53d-west/Game53dWest.tscn::ArrayMesh_8qhtw",
+			"shadow": {
+				"combined_clearance_bounds": {
+					"max": [
+						3.80221891403198242,
+						13.1999998092651367,
+						3.5137786865234375
+					],
+					"min": [
+						-3.80221891403198242,
+						0.0,
+						-3.90000009536743164
+					]
+				},
+				"combined_vertex_bounds": {
+					"max": [
+						3.80221891403198242,
+						13.1999998092651367,
+						3.5137786865234375
+					],
+					"min": [
+						-3.80221891403198242,
+						0.0,
+						-3.90000009536743164
+					]
+				},
+				"face_bounds": {
+					"max": [
+						3.80221891403198242,
+						13.1999998092651367,
+						3.5137786865234375
+					],
+					"min": [
+						-3.80221891403198242,
+						0.0,
+						-3.90000009536743164
+					]
+				},
+				"face_bytes_sha256": "ba2bc3891cd4f8c0fb1fdc58fa6a5e01b2f97679f9156a6af32144a51ac47919",
+				"face_method": "actual_indexed_base_faces",
+				"face_vertex_count": 168,
+				"get_faces_bounds": null,
+				"get_faces_bytes_sha256": "",
+				"get_faces_observed": false,
+				"get_faces_snap_proof": null,
+				"get_faces_vertex_count": 0,
+				"indexed_visual_bounds": {
+					"max": [
+						3.80221891403198242,
+						13.1999998092651367,
+						3.5137786865234375
+					],
+					"min": [
+						-3.80221891403198242,
+						0.0,
+						-3.90000009536743164
+					]
+				},
+				"mesh_resource": "res://scenes/candidate53d-west/Game53dWest.tscn::ArrayMesh_bpun8",
+				"shadow_mesh_resource": "",
+				"shadow_surface_storage_sha256": "",
+				"surface_storage_sha256": "981f7a2609bb9977fdd6eb600cf0b106b9389657fd23fe37749bd96f73df49a1",
+				"surfaces": [
+					{
+						"api_vertex_missing": true,
+						"format": 34896613377,
+						"index": 0,
+						"index_count": 168,
+						"levels": [
+							{
+								"bounds": {
+									"max": [
+										3.80221891403198242,
+										13.1999998092651367,
+										3.5137786865234375
+									],
+									"min": [
+										-3.80221891403198242,
+										0.0,
+										-3.90000009536743164
+									]
+								},
+								"face_bytes_sha256": "ba2bc3891cd4f8c0fb1fdc58fa6a5e01b2f97679f9156a6af32144a51ac47919",
+								"face_vertex_count": 168,
+								"oriented_faces_sha256": "bc9f3444d9d8e9b873d516c52b14bde2f663ec55b74cc7a37c404c482254f8c3",
+								"source_faces_hex_text_sha256": "e5ad5e9e282b7c79dbd09e2c00b3edb245d9b889d443fa0e1f9da65dc240b939",
+								"threshold": 0.0
+							}
+						],
+						"primitive": 3,
+						"vertex_bounds": {
+							"max": [
+								3.80221891403198242,
+								13.1999998092651367,
+								3.5137786865234375
+							],
+							"min": [
+								-3.80221891403198242,
+								0.0,
+								-3.90000009536743164
+							]
+						},
+						"vertex_bytes_sha256": "b192ee4890229a35f679f3ebc8e8dd58fb1e0c1aab27c599fc55ed4e1091cf04",
+						"vertex_count": 36
+					}
+				],
+				"vertex_bounds": {
+					"max": [
+						3.80221891403198242,
+						13.1999998092651367,
+						3.5137786865234375
+					],
+					"min": [
+						-3.80221891403198242,
+						0.0,
+						-3.90000009536743164
+					]
+				},
+				"vertex_count": 36
+			},
+			"shadow_coverage_proof": {
+				"helper_sha256": "966c863a02d136aefacb78e76d7301649b96c628408c589d3a4345fac30086f7",
+				"method": "existing_audit_array_mesh_exact_oriented_multiset_all_base_lods",
+				"passed": true,
+				"shadow_present": true,
+				"surfaces": [
+					{
+						"levels": [
+							{
+								"source_faces_hex_text_sha256": "010f23f7f20f9f17022234d5385aa74f9e9c33a8f907f0064edd3d6c2ea1e4c4",
+								"threshold": 0.0,
+								"triangles": 56
+							}
+						],
+						"shadow_api_vertex_missing": true,
+						"shadow_vertices": 36,
+						"source_format": 34896613407,
+						"source_vertices": 120,
+						"surface": 0
+					}
+				]
+			},
+			"shadow_mesh_resource": "res://scenes/candidate53d-west/Game53dWest.tscn::ArrayMesh_bpun8",
+			"shadow_surface_storage_sha256": "981f7a2609bb9977fdd6eb600cf0b106b9389657fd23fe37749bd96f73df49a1",
+			"surface_storage_sha256": "b10553bb366c5eabb6b4ce9b7bf721b514eada62e1494cd9ffb6bcedb1286708",
+			"surfaces": [
+				{
+					"api_vertex_missing": false,
+					"format": 34896613407,
+					"index": 0,
+					"index_count": 168,
+					"levels": [
+						{
+							"bounds": {
+								"max": [
+									3.80221891403198242,
+									13.1999998092651367,
+									3.5137786865234375
+								],
+								"min": [
+									-3.80221891403198242,
+									0.0,
+									-3.90000009536743164
+								]
+							},
+							"face_bytes_sha256": "df0d504ce26b0bdc6126f0f37ca0683632901135f54024afb94514d8088f6768",
+							"face_vertex_count": 168,
+							"oriented_faces_sha256": "bc9f3444d9d8e9b873d516c52b14bde2f663ec55b74cc7a37c404c482254f8c3",
+							"source_faces_hex_text_sha256": "010f23f7f20f9f17022234d5385aa74f9e9c33a8f907f0064edd3d6c2ea1e4c4",
+							"threshold": 0.0
+						}
+					],
+					"primitive": 3,
+					"vertex_bounds": {
+						"max": [
+							3.80221891403198242,
+							13.1999998092651367,
+							3.5137786865234375
+						],
+						"min": [
+							-3.80221891403198242,
+							0.0,
+							-3.90000009536743164
+						]
+					},
+					"vertex_bytes_sha256": "76ae8f87cee80408e43fc1cb7f7dd629a3db981332c72a7d8dde731e676df22a",
+					"vertex_count": 120
+				}
+			],
+			"vertex_bounds": {
+				"max": [
+					3.80221891403198242,
+					13.1999998092651367,
+					3.5137786865234375
+				],
+				"min": [
+					-3.80221891403198242,
+					0.0,
+					-3.90000009536743164
+				]
+			},
+			"vertex_count": 120
+		}
+	],
+	"world_instantiated": false
+}
