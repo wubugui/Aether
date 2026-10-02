@@ -1,6 +1,13 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 04:59 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 05:04 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 05:04北山脊collector原生解析通过
+
+- H两图视觉拒绝与北依赖v2已完整发布 **7212d9e21b81c3a567005998fd47eda73843212d**，tree **0f8524d9f7d3f01e7617227e16ef70f4cdd57c62**、parentea4db04d；31路径/28blob新bare公共Git独立取回字节/SHA一致，本地3ee18c9同树soft对齐。H预览终态freeze收据随此项补入，未重跑源或图片
+- [collector第一次原生check-only](cloud-evidence/north-ridge62-parse-20261002T050339Z-0sr7us0m/wrapper-report.json)Godot4.5.1 child/wrapper0，0.504872秒、119232KiB、CPU2，60秒界未触发，无日志错误。1543已保护输入无变化，全1483实际加载闭包/精确51差集及project/UID/classcache/缺席sidecar前后都匹配
+- 这仅证明当前collector原生语法/类型解析，未加载Game61世界、未执行保存SceneState采集，native_collection_passed/all_occupancy_complete仍false。下一步本项即时发布后运行一次CPU2/60秒有界只读collect，实际核六目标+10保护块和完整保存实体；未知MultiMesh/运行时实体仍要保留缺口
+- v6环绕检查代码和轻夹具仍准备；I云形粗面/局部折肩方案开始纯源码可行性，没有新的native资源或图。E/F2八件Slack仍待频道回答。完整GOAL/硬件GPU验收未通过
 
 ## 04:59 H两图实看拒绝，北山脊v2保护准备通过
 
