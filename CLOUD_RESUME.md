@@ -1,6 +1,15 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 05:25 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 05:37 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 05:37 I两原图拒绝，北保存平面分类实际通过
+
+- v6/海平面准备已完整发布 **403c1559d36cc8e03c4f41f1ab031b1dfc62bc2b**，tree **8003e89340f6e969d9ffd8233a0309f52d5e2223**、parentd8efee0b；35blob新bare公共Git逐字节/SHA独立回读，本地21205ba同树soft对齐。原Python测试日志末尾空行完整保留，source diff-check单独排除日志，不改原证据
+- [I实际原生结果](cloud-evidence/cloudbank58i-patch-20261002T052947Z-fli_9iwz/RESULT58I.md)：build/freshverify/两新进程原图与wrapper全0、6.329秒/304624KiB，623旧输入/20准备输入不变；可编辑143303B源502V/1000T及实际float32拓扑/相交、八控制/组/属性/内嵌重建、固定相机光材读回通过，fresh源images0/libraries0/无stronglink
+- **I视觉仍拒绝**：两个审查均实看1216与326517/523501B原PNG，圆团变成平顶长板+近直墙、叠块肩、吊脚块，未有饱满不规则云肩。独立裸union面积统计近水平38.76%、近垂直55.78%、15–60°斜面4.61%，冠顶实际仅7.32/9.57°；规范化系数没有等于物理尺度斜率。下一设计以明确物理法线/短斜面/局部回返纠正，不扩四根、不入Game61，不改I失败/数据
+- [北collector新parse](cloud-evidence/north-ridge62-parse-20261002T053012Z-iu_wfbw9/wrapper-report.json)0、0.504秒；[新原生保存读取](cloud-evidence/north-ridge62-collect-20261002T053100Z-3mmbw0ol/RESULT.md)child/wrapper0、11.744秒/508588KiB/CPU2，1543输入及全1483依赖/启动/cache/缺席状态不变，无错误。实际输出UP/identity的无限y=0海平面及y<=0实体半空间、层5/掩码2、保存flag/provenance，finite_bounds=null，不丢plane、不伪装AABB
+- 北issues=[]/saved_data_read_complete=true只代表本次保存类型分类，**all_occupancy_complete仍false**。16地形/16碰撞/172目录/4有限实体/3曲线/775未解MM保持；完整1215201B JSON无损gzip+原SHA保存。运行物理/生成实体/道路宽度未验证，未改世界/资源；下一独立准备读取实际保存MMbulk buffer及完整mesh包围盒，不能用Dummy实例getter或组root点作证明
+- I/北本项立即发布。v6真GL48项夹具尚未运行，长world未再开。E/F2八件Slack仍待明确频道回答，所有完整GOAL/硬件GPU验收未通过
 
 ## 05:25海平面/目录与v6图形夹具准备完成
 
