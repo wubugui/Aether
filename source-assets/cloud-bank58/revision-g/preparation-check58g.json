@@ -1,0 +1,244 @@
+{
+  "candidate": "58G",
+  "status": "Prepared only: pure numpy/AST/static raw projection checks passed",
+  "passed": true,
+  "scripts": [
+    {
+      "path": "source-assets/cloud-bank58/revision-g/patch58g.py",
+      "sha256": "8cca903e4ae8024ca3d60abde49ead091de3c765839c383d547bc3ea67c67bdd",
+      "syntax_passed": true
+    },
+    {
+      "path": "source-assets/cloud-bank58/revision-g/rebuild58g.py",
+      "sha256": "46744b843967ffca9c8548fa28deabd1ccd3a78dbd34504faa9cbea26a1b7818",
+      "syntax_passed": true
+    },
+    {
+      "path": "source-assets/cloud-bank58/revision-g/source58g.py",
+      "sha256": "89d831c5d2c58c379ec992ab5c2f9593babfa4668350918b74b1709587c6c0eb",
+      "syntax_passed": true
+    },
+    {
+      "path": "source-assets/cloud-bank58/revision-g/run_patch58g.py",
+      "sha256": "8d39b5a5fdd6609ab49dfe18624436dd8e6155d21870e332935fe29f152dc70a",
+      "syntax_passed": true
+    },
+    {
+      "path": "source-assets/cloud-bank58/revision-g/check_preparation58g.py",
+      "sha256": "6b0c7e6e98e55ab0410f792729f556fb182663b6a202a26355c70d9bbe783184",
+      "syntax_passed": true
+    }
+  ],
+  "controls": [
+    {
+      "id": "Main_Crown",
+      "role": "broad offset main crown, shorter vertically than F2 stone peak",
+      "center_uvy_m": [
+        -92,
+        12,
+        757
+      ],
+      "half_axes_m": [
+        143,
+        117,
+        109
+      ]
+    },
+    {
+      "id": "Rear_Lower_Crown",
+      "role": "smaller lower rear crown, not a matching twin peak",
+      "center_uvy_m": [
+        119,
+        70,
+        728
+      ],
+      "half_axes_m": [
+        115,
+        94,
+        89
+      ]
+    },
+    {
+      "id": "Wide_Oblique_Core",
+      "role": "deep wide overlap joining the crowns internally, never a common bottom plate",
+      "center_uvy_m": [
+        12,
+        35,
+        707
+      ],
+      "half_axes_m": [
+        133,
+        84,
+        88
+      ]
+    },
+    {
+      "id": "Front_Low_Shoulder",
+      "role": "broad shoulder stepping forward below the main crown",
+      "center_uvy_m": [
+        -46,
+        -101,
+        698
+      ],
+      "half_axes_m": [
+        108,
+        85,
+        75
+      ]
+    },
+    {
+      "id": "Right_Mid_Shoulder",
+      "role": "asymmetric lateral step under rear crown, above the front shoulder return",
+      "center_uvy_m": [
+        181,
+        9,
+        687
+      ],
+      "half_axes_m": [
+        78,
+        89,
+        67
+      ]
+    },
+    {
+      "id": "Front_Left_Belly",
+      "role": "local under-return belonging to front shoulder, no full-width base",
+      "center_uvy_m": [
+        -91,
+        -78,
+        630
+      ],
+      "half_axes_m": [
+        89,
+        74,
+        76
+      ]
+    },
+    {
+      "id": "Rear_Right_Belly",
+      "role": "higher rear return offset in depth and height from front belly",
+      "center_uvy_m": [
+        105,
+        77,
+        646
+      ],
+      "half_axes_m": [
+        86,
+        77,
+        66
+      ]
+    },
+    {
+      "id": "Small_Turn_Shoulder",
+      "role": "single small change of direction on left front contour, not repeated surface noise",
+      "center_uvy_m": [
+        -192,
+        -43,
+        702
+      ],
+      "half_axes_m": [
+        57,
+        58,
+        53
+      ]
+    }
+  ],
+  "raw_topology": {
+    "vertices": 5710,
+    "triangles": 11416,
+    "edges": 17124,
+    "connected_components": 1,
+    "closed_edge_incidence_two": true,
+    "oriented_edges_consistent": true,
+    "euler_characteristic": 2,
+    "minimum_double_triangle_area_m2": 0.0006804869202723495,
+    "signed_volume_m3": 19019398.71129928,
+    "maximum_edge_m": 30.52079143392858,
+    "duplicate_triangle_count": 0,
+    "duplicate_coordinate_count": 0,
+    "nonsingle_cycle_vertex_links": 0,
+    "self_intersections_checked": false,
+    "continuous_valley_checked": false,
+    "visual_acceptance": false,
+    "passed": true
+  },
+  "raw_grid": {
+    "shape": [
+      37,
+      28,
+      26
+    ],
+    "nodes": 26936,
+    "active_cubes": 1938,
+    "spacing_m": 18.0,
+    "lower_uvy_m": [
+      -322.3,
+      -254.3,
+      489.1
+    ],
+    "upper_uvy_m": [
+      325.7,
+      231.7,
+      939.1
+    ],
+    "boundary_max_density": 0.0,
+    "shared_grid_edge_intersections": 5710
+  },
+  "raw_fingerprint": {
+    "vertices_sha256": "33a9c1823b1f971926480514a111112902b59a8e99f69a9d8e8090fc3cc8a9a8",
+    "oriented_triangles_sha256": "ac66ba29b725f4fa187d7dfa4b668dc3c05d488c059603fc3e483bf1922f1592",
+    "vertices": 5710,
+    "triangles": 11416
+  },
+  "deterministic_repeat_exact": true,
+  "analytic_gradient_max_error": 2.9412063062839167e-12,
+  "cameras_static_only": [
+    {
+      "name": "1216-source-front",
+      "minimum_margin": 0.18832549445574237,
+      "normalized_bounds": [
+        [
+          0.4787146860815408,
+          0.18832549445574237
+        ],
+        [
+          0.6807936986385524,
+          0.43890745986524393
+        ]
+      ],
+      "raw_undecimated_only": true,
+      "native_projection_not_reexecuted": true,
+      "visual_acceptance": false
+    },
+    {
+      "name": "shared-side-back",
+      "minimum_margin": 0.08705384041756159,
+      "normalized_bounds": [
+        [
+          0.08705384041756159,
+          0.09608141854574426
+        ],
+        [
+          0.8510064725556152,
+          0.7697763959469643
+        ]
+      ],
+      "raw_undecimated_only": true,
+      "native_projection_not_reexecuted": true,
+      "visual_acceptance": false
+    }
+  ],
+  "proposed_source_maximum_bytes": 200000,
+  "native_size_unverified": true,
+  "native_collapse_not_run": true,
+  "source_generated": false,
+  "blender_started": false,
+  "images": [],
+  "world_loaded": false,
+  "final_geometry_pass": false,
+  "visual_acceptance": false,
+  "protected_file_count": 489,
+  "protected_unchanged": true,
+  "elapsed_seconds": 0.958855360004236,
+  "actual_peak_rss_kib": 61220
+}

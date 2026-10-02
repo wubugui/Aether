@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-g/source58g.py", line 238, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-g/source58g.py", line 228, in main
+    if args.mode=='build':build(args.out)
+                          ^^^^^^^^^^^^^^^
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-g/source58g.py", line 181, in build
+    assert report['passed'],'G native candidate saved but guard failed; preserve it and stop. No auto-fit or repair.'
+           ~~~~~~^^^^^^^^^^
+AssertionError: G native candidate saved but guard failed; preserve it and stop. No auto-fit or repair.
+
+Error: script failed, file: '/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-g/source58g.py', exiting.

@@ -1,0 +1,555 @@
+{
+  "candidate": "58G",
+  "state": "completed",
+  "passed": false,
+  "build_pid": 6,
+  "native_identity": {
+    "checks": {
+      "single_mesh": true,
+      "no_intermediate_mesh": true,
+      "nonempty": true,
+      "no_modifiers": true,
+      "flat_faces": true,
+      "matrix_identity": true,
+      "effective_visible": true,
+      "exact_control_names": true,
+      "native_empty_controls": true,
+      "exact_edit_group_names": true,
+      "embedded_texts_match_files": true,
+      "no_external_data": false,
+      "autoexec_disabled": true
+    },
+    "passed": false,
+    "mesh": {
+      "vertices_sha256": "a7c95974e47890be9f908e5be41d89dcc607113307150855db3d3ac28205b72c",
+      "oriented_triangles_sha256": "0e5bb91eb7b46caebc1d5c4d79a5f8d74d6264be93cd5fd403a03a52f1567e6e",
+      "vertices": 802,
+      "triangles": 1600
+    },
+    "group_sha256": "5973776492177234bf2893e5d9e80aa6f67c43fe0100ec559f795fa8d6523c55",
+    "controls": [
+      {
+        "name": "CONTROL58G_Front_Left_Belly",
+        "location": [
+          -119.16778564453125,
+          12.807747840881348,
+          630.0
+        ],
+        "rotation_mode": "XYZ",
+        "rotation_euler": [
+          0.19198623299598694,
+          -0.2617994248867035,
+          -1.1473044157028198
+        ],
+        "scale": [
+          89.0,
+          74.0,
+          76.0
+        ],
+        "field_strength": 0.95,
+        "control_id": "Front_Left_Belly",
+        "role": "local under-return belonging to front shoulder, no full-width base"
+      },
+      {
+        "name": "CONTROL58G_Front_Low_Shoulder",
+        "location": [
+          -105.0749740600586,
+          -35.724639892578125,
+          698.0
+        ],
+        "rotation_mode": "XYZ",
+        "rotation_euler": [
+          0.2617994248867035,
+          0.10471977293491364,
+          -1.234571099281311
+        ],
+        "scale": [
+          108.0,
+          85.0,
+          75.0
+        ],
+        "field_strength": 0.91,
+        "control_id": "Front_Low_Shoulder",
+        "role": "broad shoulder stepping forward below the main crown"
+      },
+      {
+        "name": "CONTROL58G_Main_Crown",
+        "location": [
+          -54.315155029296875,
+          75.2187728881836,
+          757.0
+        ],
+        "rotation_mode": "XYZ",
+        "rotation_euler": [
+          -0.10471975803375244,
+          0.13962635397911072,
+          -1.025131344795227
+        ],
+        "scale": [
+          143.0,
+          117.00000762939453,
+          109.0
+        ],
+        "field_strength": 1.0,
+        "control_id": "Main_Crown",
+        "role": "broad offset main crown, shorter vertically than F2 stone peak"
+      },
+      {
+        "name": "CONTROL58G_Rear_Lower_Crown",
+        "location": [
+          132.5323944091797,
+          -38.68026351928711,
+          728.0
+        ],
+        "rotation_mode": "XYZ",
+        "rotation_euler": [
+          0.2094394862651825,
+          -0.13962633907794952,
+          -0.5364391803741455
+        ],
+        "scale": [
+          114.99999237060547,
+          93.99999237060547,
+          89.0
+        ],
+        "field_strength": 0.94,
+        "control_id": "Rear_Lower_Crown",
+        "role": "smaller lower rear crown, not a matching twin peak"
+      },
+      {
+        "name": "CONTROL58G_Rear_Right_Belly",
+        "location": [
+          128.03469848632812,
+          -23.687911987304688,
+          646.0
+        ],
+        "rotation_mode": "XYZ",
+        "rotation_euler": [
+          -0.24434609711170197,
+          0.15707963705062866,
+          -0.34445297718048096
+        ],
+        "scale": [
+          86.0,
+          77.0,
+          66.0
+        ],
+        "field_strength": 0.9,
+        "control_id": "Rear_Right_Belly",
+        "role": "higher rear return offset in depth and height from front belly"
+      },
+      {
+        "name": "CONTROL58G_Right_Mid_Shoulder",
+        "location": [
+          130.6048126220703,
+          -125.63591003417969,
+          687.0
+        ],
+        "rotation_mode": "XYZ",
+        "rotation_euler": [
+          -0.2094395011663437,
+          0.2967059910297394,
+          -0.48407936096191406
+        ],
+        "scale": [
+          78.0,
+          89.0,
+          67.0
+        ],
+        "field_strength": 0.88,
+        "control_id": "Right_Mid_Shoulder",
+        "role": "asymmetric lateral step under rear crown, above the front shoulder return"
+      },
+      {
+        "name": "CONTROL58G_Small_Turn_Shoulder",
+        "location": [
+          -162.90261840820312,
+          110.34371185302734,
+          702.0
+        ],
+        "rotation_mode": "XYZ",
+        "rotation_euler": [
+          -0.12217306345701218,
+          0.20943951606750488,
+          -1.3043841123580933
+        ],
+        "scale": [
+          57.0,
+          58.0,
+          53.0
+        ],
+        "field_strength": 0.84,
+        "control_id": "Small_Turn_Shoulder",
+        "role": "single small change of direction on left front contour, not repeated surface noise"
+      },
+      {
+        "name": "CONTROL58G_Wide_Oblique_Core",
+        "location": [
+          33.71137619018555,
+          15.24936580657959,
+          707.0
+        ],
+        "rotation_mode": "XYZ",
+        "rotation_euler": [
+          -0.13962632417678833,
+          -0.19198621809482574,
+          -0.3968128561973572
+        ],
+        "scale": [
+          133.0,
+          84.0,
+          88.0
+        ],
+        "field_strength": 0.76,
+        "control_id": "Wide_Oblique_Core",
+        "role": "deep wide overlap joining the crowns internally, never a common bottom plate"
+      }
+    ],
+    "text_sha256": {
+      "FIELD58G_patch.py": "8cca903e4ae8024ca3d60abde49ead091de3c765839c383d547bc3ea67c67bdd",
+      "EDIT58G_rebuild.py": "46744b843967ffca9c8548fa28deabd1ccd3a78dbd34504faa9cbea26a1b7818",
+      "CONTROL58G.json": "112a8dcc460b3a2e5ca93a66b0b0cea7a9430e51a637401f785b3485159c15da"
+    },
+    "final_geometry_pass": false,
+    "visual_acceptance": false
+  },
+  "cameras": [
+    {
+      "name": "1216-source-front",
+      "matrix_world": [
+        [
+          0.6853646636009216,
+          0.11998851597309113,
+          -0.7182464599609375,
+          -958.0
+        ],
+        [
+          -0.7282000184059143,
+          0.11293032020330429,
+          -0.6759966611862183,
+          -633.0
+        ],
+        [
+          -2.939170329341323e-08,
+          0.9863313436508179,
+          0.164774090051651,
+          1150.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "projection": [
+        [
+          0.9366548657417297,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.6642794609069824,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0000388622283936,
+          -0.7000135779380798
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "actual_vertex_bounds_normalized": [
+        [
+          0.4784243106842041,
+          0.1880553513765335
+        ],
+        [
+          0.6811618804931641,
+          0.43853944540023804
+        ]
+      ],
+      "depth_range_m": [
+        1003.9739379882812,
+        1353.8505859375
+      ],
+      "resolution_xy": [
+        836,
+        471
+      ],
+      "pixel_aspect_xy": [
+        1.0010626992561105,
+        1.0
+      ],
+      "all_vertices_in_front": true,
+      "actual_vertex_count": 802,
+      "world_loaded": false,
+      "visual_acceptance": false,
+      "expected_reference_projection": [
+        [
+          0.93665486574173,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.66427946090698,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.00003886222839,
+          -0.70001357793808
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "maximum_projection_matrix_error": 3.552713678800501e-15,
+      "passed": true,
+      "crop_permitted_for_exact_reference_camera": true,
+      "reduced_resolution_not_reference_pixel_validation": true,
+      "same_E_camera_matrix": true,
+      "same_E_camera_projection": true
+    },
+    {
+      "name": "shared-side-back",
+      "matrix_world": [
+        [
+          -0.6139405369758606,
+          -0.2163812667131424,
+          0.7591153979301453,
+          1790.6153564453125
+        ],
+        [
+          0.7893522381782532,
+          -0.16829639673233032,
+          0.5904229879379272,
+          1408.5880126953125
+        ],
+        [
+          -9.883301288482471e-08,
+          0.961694061756134,
+          0.27412503957748413,
+          1391.8411865234375
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "projection": [
+        [
+          0.003043601755052805,
+          0.0,
+          0.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.004342066589742899,
+          0.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -0.00011111326602986082,
+          -1.0000388622283936
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "actual_vertex_bounds_normalized": [
+        [
+          0.08682633191347122,
+          0.09694623202085495
+        ],
+        [
+          0.8512495160102844,
+          0.7698336243629456
+        ]
+      ],
+      "depth_range_m": [
+        2197.951171875,
+        2568.793212890625
+      ],
+      "resolution_xy": [
+        836,
+        586
+      ],
+      "pixel_aspect_xy": [
+        1,
+        1
+      ],
+      "all_vertices_in_front": true,
+      "actual_vertex_count": 802,
+      "world_loaded": false,
+      "visual_acceptance": false,
+      "minimum_margin": 0.08682633191347122,
+      "passed": true,
+      "all_actual_vertices_inside": true,
+      "same_E_camera_matrix": true,
+      "same_E_camera_projection": true
+    }
+  ],
+  "field_design_hypothesis": true,
+  "world_loaded": false,
+  "final_geometry_pass": false,
+  "visual_acceptance": false,
+  "geometry": {
+    "raw_topology": {
+      "vertices": 5710,
+      "triangles": 11416,
+      "edges": 17124,
+      "connected_components": 1,
+      "closed_edge_incidence_two": true,
+      "oriented_edges_consistent": true,
+      "euler_characteristic": 2,
+      "minimum_double_triangle_area_m2": 0.0006806832341722819,
+      "signed_volume_m3": 19019397.988953337,
+      "maximum_edge_m": 30.520792084248612,
+      "duplicate_triangle_count": 0,
+      "duplicate_coordinate_count": 0,
+      "nonsingle_cycle_vertex_links": 0,
+      "self_intersections_checked": false,
+      "continuous_valley_checked": false,
+      "visual_acceptance": false,
+      "passed": true
+    },
+    "raw_grid": {
+      "shape": [
+        37,
+        28,
+        26
+      ],
+      "nodes": 26936,
+      "active_cubes": 1938,
+      "spacing_m": 18.0,
+      "lower_uvy_m": [
+        -322.3,
+        -254.3,
+        489.1
+      ],
+      "upper_uvy_m": [
+        325.7,
+        231.7,
+        939.1
+      ],
+      "boundary_max_density": 0.0,
+      "shared_grid_edge_intersections": 5710
+    },
+    "final_topology": {
+      "vertices": 802,
+      "triangles": 1600,
+      "edges": 2400,
+      "connected_components": 1,
+      "closed_edge_incidence_two": true,
+      "oriented_edges_consistent": true,
+      "euler_characteristic": 2,
+      "minimum_double_triangle_area_m2": 51.750697140413486,
+      "signed_volume_m3": 18968193.62195904,
+      "maximum_edge_m": 74.5079244870308,
+      "duplicate_triangle_count": 0,
+      "duplicate_coordinate_count": 0,
+      "nonsingle_cycle_vertex_links": 0,
+      "self_intersections_checked": false,
+      "continuous_valley_checked": false,
+      "visual_acceptance": false,
+      "passed": true
+    },
+    "mesh_identity": {
+      "vertices_sha256": "a7c95974e47890be9f908e5be41d89dcc607113307150855db3d3ac28205b72c",
+      "oriented_triangles_sha256": "0e5bb91eb7b46caebc1d5c4d79a5f8d74d6264be93cd5fd403a03a52f1567e6e",
+      "vertices": 802,
+      "triangles": 1600
+    },
+    "group_sha256": "5973776492177234bf2893e5d9e80aa6f67c43fe0100ec559f795fa8d6523c55",
+    "sampled_shape_preservation": {
+      "raw_vertex_to_final_max_m": 4.705509662628174,
+      "final_vertex_to_raw_max_m": 1.779463529586792,
+      "landmark_sample_count": 42,
+      "landmark_raw_vertex_ids": [
+        50,
+        76,
+        169,
+        331,
+        421,
+        520,
+        548,
+        703,
+        708,
+        947,
+        1501,
+        1568,
+        1574,
+        1651,
+        1757,
+        2023,
+        2172,
+        2373,
+        2429,
+        2875,
+        3130,
+        3144,
+        3226,
+        3276,
+        3786,
+        3824,
+        4090,
+        4121,
+        4144,
+        4204,
+        4249,
+        4319,
+        4378,
+        4455,
+        4736,
+        4866,
+        5093,
+        5151,
+        5152,
+        5171,
+        5683,
+        5690
+      ],
+      "landmark_to_final_max_m": 1.928000569343567,
+      "basis": "Preservation of extracted raw tetrahedral shell only, not distance to analytic density isosurface",
+      "analytic_field_distance_proved": false,
+      "continuous_hausdorff_proof": false,
+      "passed": true
+    },
+    "decimation_passes": 1,
+    "target_triangles": 1600,
+    "passed": true,
+    "previous_surface_retained": false,
+    "single_shared_field_surface": true,
+    "final_geometry_pass": false,
+    "visual_acceptance": false
+  },
+  "material_and_lighting_unchanged": true,
+  "source_sha256": "a30f3b267a4de95a9d3fb2514ab99ca22e416607087e9b80cf9bfc5407999b15",
+  "source_bytes": 152743,
+  "source_within_200000_bytes": true
+}

@@ -1,0 +1,39 @@
+{
+  "job": {
+    "mode": "build",
+    "view": null
+  },
+  "state": "completed",
+  "complete": false,
+  "argv": [
+    "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+    "--factory-startup",
+    "--disable-autoexec",
+    "-b",
+    "-t",
+    "2",
+    "--python-exit-code",
+    "1",
+    "--python",
+    "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-g/source58g.py",
+    "--",
+    "--mode",
+    "build",
+    "--out",
+    "/workspace/scratch/a29d03198654/Aether/cloud-evidence/cloudbank58g-patch-20261002T031700Z-l81janv4/outputs"
+  ],
+  "input_manifest_sha256": "874e1da7934860721958ec98a4e80925af308926ffc992a1debb8e59eb7567db",
+  "prepared_before": true,
+  "protected_before": true,
+  "source_sha256_before": null,
+  "pid": 6,
+  "actual_child_exit_code": 1,
+  "elapsed_seconds": 1.1189358199990238,
+  "peak_observed_rss_kib": 305144,
+  "actual_peak_child_rss_kib": 304916,
+  "actual_child_user_seconds": 0.9762219999999999,
+  "actual_child_system_seconds": 0.10414699999999999,
+  "prepared_after": true,
+  "protected_after": true,
+  "source_sha256_after": "a30f3b267a4de95a9d3fb2514ab99ca22e416607087e9b80cf9bfc5407999b15"
+}

@@ -1,0 +1,32 @@
+{
+  "candidate": "58G",
+  "status": "Design hypothesis for one isolated patch; not inferred 3D measurements, not visual acceptance",
+  "coordinate_system": "Existing D local U/V/Y metres, same world anchor; no whole-object fitting",
+  "field": {
+    "kernel": "sum(strength * max(0, 1 - squared_ellipsoid_radius)^3)",
+    "iso_value": 0.125,
+    "support_radius_multiplier": 1.4142135623730951,
+    "comment": "At strength 1 an isolated control's nominal half-axes describe its isosurface. Positive finite support only; no negative grooves, noise, floor or global height mask."
+  },
+  "meshing": {
+    "spacing_m": 18.0,
+    "grid_origin_uvy_m": [1.7, -2.3, 3.1],
+    "max_grid_nodes": 150000,
+    "max_raw_triangles": 30000,
+    "target_triangles": 1600,
+    "maximum_sampled_surface_offset_m": 16.0,
+    "maximum_landmark_sample_offset_m": 9.0,
+    "maximum_final_edge_m": 85.0,
+    "comment": "One shared-edge tetrahedral extraction and one Blender collapse only. Flat faces; no smoothing, subdivision, cap, repeated repair or automatic camera fitting."
+  },
+  "controls": [
+    {"id":"Main_Crown","role":"broad offset main crown, shorter vertically than F2 stone peak","center_uvy_m":[-92,12,757],"half_axes_m":[143,117,109],"rotation_xyz_degrees":[-6,8,-12],"strength":1.0},
+    {"id":"Rear_Lower_Crown","role":"smaller lower rear crown, not a matching twin peak","center_uvy_m":[119,70,728],"half_axes_m":[115,94,89],"rotation_xyz_degrees":[12,-8,16],"strength":0.94},
+    {"id":"Wide_Oblique_Core","role":"deep wide overlap joining the crowns internally, never a common bottom plate","center_uvy_m":[12,35,707],"half_axes_m":[133,84,88],"rotation_xyz_degrees":[-8,-11,24],"strength":0.76},
+    {"id":"Front_Low_Shoulder","role":"broad shoulder stepping forward below the main crown","center_uvy_m":[-46,-101,698],"half_axes_m":[108,85,75],"rotation_xyz_degrees":[15,6,-24],"strength":0.91},
+    {"id":"Right_Mid_Shoulder","role":"asymmetric lateral step under rear crown, above the front shoulder return","center_uvy_m":[181,9,687],"half_axes_m":[78,89,67],"rotation_xyz_degrees":[-12,17,19],"strength":0.88},
+    {"id":"Front_Left_Belly","role":"local under-return belonging to front shoulder, no full-width base","center_uvy_m":[-91,-78,630],"half_axes_m":[89,74,76],"rotation_xyz_degrees":[11,-15,-19],"strength":0.95},
+    {"id":"Rear_Right_Belly","role":"higher rear return offset in depth and height from front belly","center_uvy_m":[105,77,646],"half_axes_m":[86,77,66],"rotation_xyz_degrees":[-14,9,27],"strength":0.90},
+    {"id":"Small_Turn_Shoulder","role":"single small change of direction on left front contour, not repeated surface noise","center_uvy_m":[-192,-43,702],"half_axes_m":[57,58,53],"rotation_xyz_degrees":[-7,12,-28],"strength":0.84}
+  ]
+}

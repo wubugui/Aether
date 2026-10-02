@@ -1,0 +1,8 @@
+{
+  "state": "completed",
+  "mode": "build",
+  "view": null,
+  "pid": 6,
+  "passed": false,
+  "error": "Traceback (most recent call last):\n  File \"/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-g/source58g.py\", line 228, in main\n    if args.mode=='build':build(args.out)\n                          ^^^^^^^^^^^^^^^\n  File \"/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-g/source58g.py\", line 181, in build\n    assert report['passed'],'G native candidate saved but guard failed; preserve it and stop. No auto-fit or repair.'\n           ~~~~~~^^^^^^^^^^\nAssertionError: G native candidate saved but guard failed; preserve it and stop. No auto-fit or repair.\n"
+}
