@@ -1,6 +1,15 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 09:02 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 09:14 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 09:14 K导出法线完整数值重放与原生只读准备
+
+- shadow精确诊断已完整发布 **ecc3f97b54cabad39ca5c1a373f38b79469ec628**，tree **2b8e91c0402762a31a545eecbb99e1a490350751**、parent95ffd10c；6路径/6blob新bare公共Git逐字节/SHA回读一致，本地e0e553f同树对齐
+- [K失败GLB纯Python诊断](cloud-evidence/cloudbank58k-normal-diagnosis-20261002/README.md)：真实31144B GLB全部1152 split vertices精确匹配194作者点，384定向面双射、每面三个normal相同；216面超原3e-5，首面4.7151e-5/最大面302为5.9934e-5。安装的官方exporter确实固定round(4)再normalize；Cross/Newell不同起点的377/381部分复现保留，按官方4.5.14 Newell last→first顺序重放后384面所有float32分量精确匹配GLB
+- 此为完整数值重放，**不是fresh native polygon/corner normal实测**。原失败没有source-readback，不能拿推算法线冒充实际值；不改官方exporter/源/原GLB/失败/3e-5阈值。后续方案保raw并仅将NORMAL payload按真实作者法线恢复，须证明其余字节全未变及原所有位置/材质/normal门；尚未实现或运行
+- [normal-readback-v1准备](source-assets/cloud-bank58/revision-k/normal-readback-v1/README.md)只打开原源，读384实际polygon/1152corner normals及loops，raw先写后验；完整identity/源SHA/项目所有文件前后核。相机矩阵/投影纯读，纠正继承helper临时改camera/render设置的副作用但不改旧helper；独立fake禁止setter核过
+- normal/-O各10 methods含384逐面反向负控、独立审查及1051冻结身份通过，freeze SHA8910b534bacb707fe6acaceb6d4e36fb885ffbcf82c01cd20f921642aa9dc223。单次native30秒/CPU2/1.5GiB，完整wrapper60秒含全project hash；只有open_mainfile，无save/export/Godot/图。**尚未engine**，本准备外存后错峰单次采集，保原准入与失败不重跑
+- shadow-arrays-v3在准备，无新native；既定4rad观察已完整95ffd10，不再原样长跑。Slack集中两私密频道及补发问题仍待答，原八件继续停；全GOAL/硬件GPU未验收
 
 ## 09:02 完整观察与两失败已外存；shadow差值精确重放
 
