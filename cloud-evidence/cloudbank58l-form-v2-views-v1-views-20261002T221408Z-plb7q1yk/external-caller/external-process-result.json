@@ -1,0 +1,109 @@
+{
+  "stage": "views",
+  "runtime": {
+    "executable": "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/4.5/python/bin/python3.11",
+    "version": "3.11.15 (main, Apr 25 2025, 12:39:20) [GCC 11.2.1 20220127 (Red Hat 11.2.1-9)]",
+    "numpy_version": "1.26.4",
+    "python_sha256": "60b08089c60cbe81827b135c8fd9e206ba2ee6bf54aa1dbd0d6f56ac2d5914f6",
+    "numpy_file": "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/4.5/python/lib/python3.11/site-packages/numpy/__init__.py"
+  },
+  "original_source_stage": "failed",
+  "acceptance_mode": "api_consistency_isolated_diagnostic_v1",
+  "full_native_acceptance": false,
+  "historical_default_corner_geometry_passed": false,
+  "command": [
+    "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/4.5/python/bin/python3.11",
+    "-B",
+    "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/form-v2-views-v1/run_views58l.py",
+    "--run-approved",
+    "views"
+  ],
+  "cwd": "/workspace/scratch/a29d03198654/Aether",
+  "predecessor_publication_commit": "fa8607bc4697f0505a05536ec34e4131c5d72cd7",
+  "process_exit_observed": true,
+  "actual_exit_code": 0,
+  "timeout": false,
+  "cleanup": [],
+  "views_chain_verified": true,
+  "utc_started": "2026-10-02T22:13:59.850153+00:00",
+  "started_monotonic": 118635.059141276,
+  "supervisor_pid": 5,
+  "ended_monotonic": 118688.200047692,
+  "wall_seconds": 53.14090641599614,
+  "remaining_owned_pids": [],
+  "ownership_history": [
+    {
+      "pid": 2,
+      "state": "R",
+      "ppid": 1,
+      "pgid": 1,
+      "sid": 1,
+      "starttime": 11863427,
+      "rss_kib": 36828,
+      "reason": "supervisor"
+    },
+    {
+      "pid": 5,
+      "state": "R",
+      "ppid": 2,
+      "pgid": 5,
+      "sid": 5,
+      "starttime": 11863505,
+      "rss_kib": 0,
+      "reason": "actual_external_Popen"
+    }
+  ],
+  "cleanup_signals": [],
+  "utc_process_observation_complete": "2026-10-02T22:14:52.991626+00:00",
+  "supervisor_terminal_sha256": "92b1191889e36c6b96317f5576f2038c958b9fd6b8c274e01ecdb40ebd11d910",
+  "source_sha256": "33cc763abc893cce0de214ae3b4df19b8b7e3bbde6d268432b8fd3847e61cc4a",
+  "source_bytes": 324985,
+  "run": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/cloudbank58l-form-v2-views-v1-views-20261002T221408Z-plb7q1yk",
+  "combined_evidence": {
+    "existing_saved_source_fresh_open_verified": true,
+    "views_chain_verified": true,
+    "original_source_stage": "failed",
+    "source_sha256": "33cc763abc893cce0de214ae3b4df19b8b7e3bbde6d268432b8fd3847e61cc4a",
+    "source_bytes": 324985,
+    "images": [
+      {
+        "view": "01-original61-front",
+        "bytes": 766134,
+        "sha256": "fd60e737b439854dae8e66ddd520ec3927e1995b937b7c17f250ef2c11e327b7",
+        "width": 1179,
+        "height": 664,
+        "crc_and_scanlines_validated": true
+      },
+      {
+        "view": "02-k-trial-front",
+        "bytes": 766131,
+        "sha256": "f811cb4bba7c6955955a0eb34a7e2cdd713541c11c61a644be4ba7e1f21fc648",
+        "width": 1179,
+        "height": 664,
+        "crc_and_scanlines_validated": true
+      },
+      {
+        "view": "03-k-fixed-side-back",
+        "bytes": 859673,
+        "sha256": "910a89719f530c2c81f3c6f0b177394330accfb644534b4d735bc2c73d95309c",
+        "width": 1179,
+        "height": 664,
+        "crc_and_scanlines_validated": true
+      },
+      {
+        "view": "04-k-fixed-near",
+        "bytes": 824036,
+        "sha256": "6c2757c993ed8ac953459ca7cf21754aa16d66aeed619087e1a55cf8d1ee9525",
+        "width": 1179,
+        "height": 664,
+        "crc_and_scanlines_validated": true
+      }
+    ],
+    "four_outputs_three_directions": true,
+    "acceptance_mode": "api_consistency_isolated_diagnostic_v1",
+    "full_native_acceptance": false,
+    "visual_acceptance": false,
+    "world_acceptance": false,
+    "global_GOAL": false
+  }
+}
