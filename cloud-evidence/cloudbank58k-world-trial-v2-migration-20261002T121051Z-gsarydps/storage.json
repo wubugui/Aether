@@ -1,0 +1,53 @@
+{
+  "lossless_gzip": [
+    {
+      "raw": "migration-journal.jsonl",
+      "bytes": 3513998,
+      "sha256": "b60281387095700acc4d5676fbecfc91b0d7257f8674d9f5f7525cbaba40b81a",
+      "stored": "migration-journal.jsonl.gz",
+      "stored_bytes": 414242,
+      "stored_sha256": "149b87dc1383672af983caf68cc427b1c19029a636113fea5121bdd13152a323"
+    },
+    {
+      "raw": "member-partition.json",
+      "bytes": 1262657,
+      "sha256": "98090d60dccdd66f8d75ae11c6081fe97ffe838dc092ebaa58f91a532c47670d",
+      "stored": "member-partition.json.gz",
+      "stored_bytes": 226786,
+      "stored_sha256": "2eefa5229627b0fb6c7d0cc4012780c39c07777cab721cf23c77794f306ced9b"
+    },
+    {
+      "raw": "main-project-before.json",
+      "bytes": 1002602,
+      "sha256": "515e03c43586e0009371478de736a094c2480f2d4f9c6bc321a6f5fdee0e67f0",
+      "stored": "main-project-before.json.gz",
+      "stored_bytes": 225446,
+      "stored_sha256": "cf5a283b84f4eadcb01cd60f0d478a5bccf6a5f52fffdf886516c0653c24d7c5"
+    },
+    {
+      "raw": "main-project-after.json",
+      "bytes": 1002602,
+      "sha256": "515e03c43586e0009371478de736a094c2480f2d4f9c6bc321a6f5fdee0e67f0",
+      "stored": "main-project-after.json.gz",
+      "stored_bytes": 225446,
+      "stored_sha256": "cf5a283b84f4eadcb01cd60f0d478a5bccf6a5f52fffdf886516c0653c24d7c5"
+    },
+    {
+      "raw": "before-tree.json",
+      "bytes": 601491,
+      "sha256": "ca20cd38af18e7ec63d325891af470449e1014388c05b965a79414e45bc4e59c",
+      "stored": "before-tree.json.gz",
+      "stored_bytes": 223310,
+      "stored_sha256": "e716266e6f3f415c733af97b410acff24e35142cd2d3997b9656151e64ff73d1"
+    },
+    {
+      "raw": "after-tree.json",
+      "bytes": 601491,
+      "sha256": "ca20cd38af18e7ec63d325891af470449e1014388c05b965a79414e45bc4e59c",
+      "stored": "after-tree.json.gz",
+      "stored_bytes": 223310,
+      "stored_sha256": "e716266e6f3f415c733af97b410acff24e35142cd2d3997b9656151e64ff73d1"
+    }
+  ],
+  "restore": "Use restore_storage.py --restore-missing from this directory; refuses differing existing raw."
+}

@@ -1,6 +1,14 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 12:08 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 12:14 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 12:14 K同一副本搬移和GUI全文件读回通过
+
+- 北独审/干净恢复与K共享准备已完整发布 **4fe802c7daf943435656e4fb6dca2011e377e526**，tree **a2d9d11c0c63a94cd9aca2f342c6e75d955c80d0**、parentcb8715d4；14路径/14唯一blob新bare公共Git逐字节/SHA核回，本地8422a3a同树对齐。冻结review的末尾空行原样保留，不改其SHA
+- [K一次实际迁移](cloud-evidence/cloudbank58k-world-trial-v2-migration-20261002T121051Z-gsarydps/RESULT.md) exit0/总16.513秒，实际move11.150秒；原4889文件/93目录全部逐个核hash/fsync后迁移至仓库外固定共享工作目录，旧/tmp源已空并移除。前后相对树SHA完全同，4889全部可恢复、0读取/收尾错误，main4884与27freeze未变；无第二完整项目副本/重建/engine
+- 云端GUI终端实际运行--check-shared-copy，**passed:true/members4889/engine_started:false**，stderr空；确认同一个共享副本在图形进程可见且逐SHA一致。不是从exec读到就推断GUI可见，也没有改display/网络/权限
+- 原3.51MB逐文件journal、分区和全树/protection清单无损gzip与原SHA保全，重拉按restore_storage.py恢复缺失原raw；原v1失败保持。下一一次原四PNGrenderer240/300/CPU2/3GiB，仍0新K图/视觉通过
+- 北恢复后的native fresh-open脚本仍静态准备，干净恢复4文件精确不等于该原生验证已完成；北四源视图、167支撑与全GOAL仍待验收。私密受阻交付23原件继续停
 
 ## 12:08 北源分块远端核回/干净恢复；K共享迁移准备完成
 
