@@ -164,6 +164,56 @@ def child_run(command: list[str], out: Path, env: dict, timeout: float, label: s
                              heartbeat=out / 'images/orbit-progress.json')
 
 
+def validate_completion(out: Path, report_sha: str) -> dict:
+    """Require real-native post-receipt wall evidence, independently of the last sample."""
+    receipt_path = out / 'images/orbit-completion.json'
+    receipt = SUPPORT.strict_json(receipt_path)
+    prefix = 'ORBIT61_TERMINAL_WALL '
+    records = [line[len(prefix):] for line in (out / 'renderer.stdout.log').read_text().splitlines()
+               if line.startswith(prefix)]
+    if len(records) != 1:
+        raise ValueError('Exactly one native terminal wall record is required')
+    def unique(pairs):
+        value = {}
+        for key, item in pairs:
+            if key in value:
+                raise ValueError('Duplicate terminal wall JSON key: ' + key)
+            value[key] = item
+        return value
+    def invalid(value):
+        raise ValueError('Nonfinite terminal wall JSON number: ' + value)
+    def finite(value):
+        number = float(value)
+        if not math.isfinite(number):
+            invalid(value)
+        return number
+    terminal = json.loads(records[0], object_pairs_hook=unique, parse_constant=invalid, parse_float=finite)
+    for record, version, boundary in [(receipt, 'orbit61-completion-v1', 'finish_after_final_report_and_sha'),
+                                      (terminal, 'orbit61-terminal-wall-v1', 'finish_before_cleanup')]:
+        if (not isinstance(record, dict) or record.get('version') != version or
+                record.get('first_item_runtime_passed') is not True or
+                record.get('native_report_sha256') != report_sha):
+            raise ValueError('Incomplete or mismatched native wall evidence')
+        wall = record.get('wall_deadline')
+        if not isinstance(wall, dict):
+            raise ValueError('Missing explicit native wall deadline')
+        seconds = wall.get('verification_completed_wall_seconds')
+        limit = wall.get('limit_seconds')
+        last = wall.get('last_check')
+        if (type(limit) not in (int, float) or limit != 600 or
+                type(seconds) not in (int, float) or not math.isfinite(seconds) or not 0 <= seconds <= 600 or
+                wall.get('first_exceeded_at') != {} or not isinstance(last, dict) or
+                last.get('boundary') != boundary or type(last.get('elapsed_msec')) is not int or
+                last['elapsed_msec'] < 0 or seconds != last['elapsed_msec'] / 1000 or
+                type(last.get('wall_seconds')) not in (int, float) or last['wall_seconds'] != seconds):
+            raise ValueError('Invalid, inconsistent or exceeded native 600-second completion wall')
+    if (terminal.get('completion_receipt_sha256') != digest(receipt_path) or
+            terminal['wall_deadline']['verification_completed_wall_seconds'] <
+            receipt['wall_deadline']['verification_completed_wall_seconds']):
+        raise ValueError('Terminal wall does not bind the completed receipt in monotonic order')
+    return {'completion_receipt_sha256': digest(receipt_path), 'receipt': receipt, 'terminal': terminal}
+
+
 def execute(args, out: Path, preparation: dict) -> dict:
     selected = 'renderer' if args.run_renderer else 'parse'
     result = {'status': 'preparing', 'mode': selected, 'processes': [],
@@ -236,6 +286,8 @@ def execute(args, out: Path, preparation: dict) -> dict:
             runtime_path = out / 'images/orbit-report.json'
             runtime = SUPPORT.strict_json(runtime_path)
             result['native_report_sha256'] = digest(runtime_path)
+            result['native_completion'] = validate_completion(out, result['native_report_sha256'])
+            result['verification_completed_wall_seconds'] = result['native_completion']['terminal']['wall_deadline']['verification_completed_wall_seconds']
             success = success and runtime.get('complete') is True and runtime.get('first_item_runtime_passed') is True
         result.update(status='finished', passed=bool(success))
     except BaseException as exc:

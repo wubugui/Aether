@@ -1,6 +1,14 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 06:39 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 06:43 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 06:43 v6严格600秒完成收据准备通过
+
+- J2数学修复/原生contact补充已完整发布 **fa750eec3f2c0a23098e5f09a46943d148449257**，tree **8fc65c23d600149abc9af84ce3ceb790e0175f4f**、parent793e526e；40路径/38唯一blob新bare公共Git逐字节/SHA核回一致，本地c81024d同树对齐。J2原生单源两图仍未开始，等待MAZ当前spin终态窗口
+- [严格600完成门修正](source-assets/coast61-nearbay-orbit/continuous-v6/deadline-v1/README.md)准备完成：共同helper只读原生Time.get_ticks_msec，原run第一条start不变；初始哈希、加载、fixture、inventory/preflight、每实际process/physics、输入/settle/capture、终态身份/hash/报告/收据写完均补边界。超时首次位置sticky，不能再次恢复成功
+- 最终大报告落盘hash后写小completion收据；收据flush/rename/hash之后、cleanup前最后原生时钟绑定两文件SHA，经唯一stdout终态记录保存。wrapper严格核两SHA、单一记录、真实完成0–600wall及递增顺序、精确boundary/毫秒秒一致；缺证据/错SHA/非法或超时wall/child非0/错误日志/身份变化均不能通过。失败最多一次改写，不递归
+- **600明确覆盖run入口至大报告及收据完成后的cleanup前验收点**，之后原三帧/postdraw/释放/八帧清理与实际退出仍由原720秒wrapper保护，不声称同步操作会在600整点被抢占。几何/sequence/鼠标/所有段/船0/容差门及共享launcher均不改
+- 28static/依赖、原29wrapper、独立10deadline组normal/-O通过；1587旧保护、39原GL快照SHA一致，15修改/新增文件连freeze共16文件冻结。**新计时代码尚未原生解析/执行**，旧61/61不追认；发布后先parse/轻验再正式world。scatter精确float32修正在独立目录准备，旧失败不改；E/F2八件Slack仍待答，全部GOAL/硬件GPU验收未通过
 
 ## 06:39 J2两局部连接数学修复与native接触门准备完成
 

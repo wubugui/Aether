@@ -87,6 +87,32 @@ var angular_index := -1
 var angular_goal := 0.0
 var motion_index := 0
 var source_hash_completed := 0
+var wall_deadline_checks := 0
+var wall_deadline_last := {}
+var wall_deadline_exceeded_at := {}
+var verification_completed_wall_seconds: Variant = null
+
+func wall_deadline_snapshot() -> Dictionary:
+ return {"limit_seconds":MAX_WALL_SECONDS,"clock":"Time.get_ticks_msec monotonic; no supplied/mock clock","start_scope":"run entry before initial source hashes, scene load, fixture synchronization, inventory and preflight","completion_scope":"Final native check after report write/hash and receipt flush/rename/hash, before emitting terminal clock metadata and cleanup; actual child exit retains the unchanged 720s limit","completion_receipt":"orbit-completion.json","checks":wall_deadline_checks,"last_check":wall_deadline_last.duplicate(true),"first_exceeded_at":wall_deadline_exceeded_at.duplicate(true),"verification_completed_wall_seconds":verification_completed_wall_seconds}
+
+func within_wall_deadline(boundary: String, completing: bool=false) -> bool:
+ # A late process sample cannot license an expensive phase to finish after600.
+ # The only clock is the actual native monotonic clock, never an argument.
+ var elapsed_msec: int=Time.get_ticks_msec()-start_wall
+ wall_deadline_checks+=1
+ wall_deadline_last={"boundary":boundary,"elapsed_msec":elapsed_msec,"wall_seconds":elapsed_msec/1000.0}
+ if completing: verification_completed_wall_seconds=elapsed_msec/1000.0
+ if elapsed_msec>=0 and elapsed_msec<=MAX_WALL_SECONDS*1000 and wall_deadline_exceeded_at.is_empty(): return true
+ if wall_deadline_exceeded_at.is_empty(): wall_deadline_exceeded_at=wall_deadline_last.duplicate(true)
+ passed=false
+ if not failed:
+  if finishing:
+   failed=true;active=false
+   failures.append({"reason":"Stationary orbit wall watchdog","details":wall_deadline_exceeded_at.duplicate(true),"state":current_state()})
+   if is_instance_valid(game): game.test_frozen=true
+  else:
+   abort("Stationary orbit wall watchdog",wall_deadline_exceeded_at.duplicate(true))
+ return false
 
 func progress(force: bool=false) -> void:
  var now:=Time.get_ticks_usec()
@@ -115,7 +141,7 @@ func current_state() -> Dictionary:
 func report(complete: bool) -> void:
  var began:=telemetry.begin("full_report_write")
  if output.is_empty() or not DirAccess.dir_exists_absolute(output): return
- var result := {"version":"61-anchored-orbit-v6","display_backend":DisplayServer.get_name(),"rendering_method":RenderingServer.get_current_rendering_method(),"rendering_driver":RenderingServer.get_current_rendering_driver_name(),"control_protocol":CONTROL_PROTOCOL,"sequence":sequence.snapshot(),"telemetry":telemetry.snapshot(),"complete":complete,"stage":stage,"failed":failed,"first_item_runtime_passed":passed and complete and not failed,"fixture_excluded_from_distance":fixture,"checks":checks,"failures":failures,"events":events,"delivered":delivered,"process_samples":process_samples,"audited_segments":audited,"preflight":preflight,"captures":captures,"near_plane_envelope_radius_m":sphere.radius,"actual_camera_path_m":process_path,"actual_ship_path_after_fixture_m":ship_path,"flight_attempted":false,"short_flight_passed":false,"nearshore_pixel_coverage_passed":false,"manual_normal_material_png_review_required":true,"nearest_ray_scope_m":LOCAL_RAY_METERS,"gui_focus_verified":false,"hardware_gpu_acceptance":false,"reference_visual_acceptance":false,"total_acceptance_passed":false,"scene_saved":false,"state":current_state(),"visual_inventory":visual.rows if visual!=null else [],"visual_inventory_failures":visual.failures if visual!=null else [],"visual_triangle_count":visual.triangle_count if visual!=null else 0,"visual_method":"Actual static indexed surfaces in an isolated physics query space, classified shader and animated ship conservative envelopes. Envelope hits do not imply pixel visibility or universal live resource freezing.","live_resource_identity_scope":LIVE_RESOURCE_IDENTITY_SCOPE,"source_count":source_hashes.size()}
+ var result := {"version":"61-anchored-orbit-v6","wall_deadline":wall_deadline_snapshot(),"display_backend":DisplayServer.get_name(),"rendering_method":RenderingServer.get_current_rendering_method(),"rendering_driver":RenderingServer.get_current_rendering_driver_name(),"control_protocol":CONTROL_PROTOCOL,"sequence":sequence.snapshot(),"telemetry":telemetry.snapshot(),"complete":complete,"stage":stage,"failed":failed,"first_item_runtime_passed":passed and complete and not failed,"fixture_excluded_from_distance":fixture,"checks":checks,"failures":failures,"events":events,"delivered":delivered,"process_samples":process_samples,"audited_segments":audited,"preflight":preflight,"captures":captures,"near_plane_envelope_radius_m":sphere.radius,"actual_camera_path_m":process_path,"actual_ship_path_after_fixture_m":ship_path,"flight_attempted":false,"short_flight_passed":false,"nearshore_pixel_coverage_passed":false,"manual_normal_material_png_review_required":true,"nearest_ray_scope_m":LOCAL_RAY_METERS,"gui_focus_verified":false,"hardware_gpu_acceptance":false,"reference_visual_acceptance":false,"total_acceptance_passed":false,"scene_saved":false,"state":current_state(),"visual_inventory":visual.rows if visual!=null else [],"visual_inventory_failures":visual.failures if visual!=null else [],"visual_triangle_count":visual.triangle_count if visual!=null else 0,"visual_method":"Actual static indexed surfaces in an isolated physics query space, classified shader and animated ship conservative envelopes. Envelope hits do not imply pixel visibility or universal live resource freezing.","live_resource_identity_scope":LIVE_RESOURCE_IDENTITY_SCOPE,"source_count":source_hashes.size()}
  var file := FileAccess.open(output.path_join("orbit-report.json.tmp"),FileAccess.WRITE)
  if file==null: push_error("Cannot write orbit report"); return
  file.store_string(JSON.stringify(result,"  "));file.flush();file.close()
@@ -128,6 +154,7 @@ func mark(label: String) -> void:
  progress(true)
  print("ORBIT61 ",label)
  report(false)
+ within_wall_deadline("report_"+label)
 
 func check(ok: bool, label: String, detail: Variant=null) -> bool:
  checks.append({"passed":ok,"name":label,"details":detail})
@@ -166,6 +193,7 @@ func mouse_button(pressed: bool) -> bool:
  return Input.is_mouse_button_pressed(MOUSE_BUTTON_RIGHT)==pressed
 
 func motion(radians: float) -> bool:
+ if not within_wall_deadline("before_native_motion"): return false
  if not check(radians>0 and radians<=STEP_RADIANS,"Native event stays within unchanged .05rad bound",radians): return false
  if not check(pending.is_empty() and sequence.begin_event(Engine.get_process_frames()),"Native event starts only after all previous exact segments audited",sequence.snapshot()): return false
  motion_index+=1
@@ -246,8 +274,7 @@ func sample_process(delta: float) -> void:
  var ship: Vector3=game.airship.global_position
  if last_frame>=0 and frame!=last_frame+1:
   abort("Missing actual camera process sample",[last_frame,frame]);return
- if Time.get_ticks_msec()-start_wall>MAX_WALL_SECONDS*1000:
-  abort("Stationary orbit wall watchdog");return
+ if not within_wall_deadline("process_begin"): return
  if game.airship.global_transform!=base_ship or game.airship.velocity!=Vector3.ZERO or game.speed!=0 or game.throttle!=0 or not game.anchored or game.travelled!=base_travelled:
   abort("Stationary item moved the ship",current_state());return
  if game.photo_mode or game.reference_observation or game.testing or game.test_override_input or game.test_frozen or game.auto_pilot or game.docked or game.cockpit or game.zoom!=1 or Engine.time_scale!=1:
@@ -267,6 +294,7 @@ func sample_process(delta: float) -> void:
  if not visual.unchanged(true,"late_process",frame): abort("Late-process visual identity changed",visual.failures);return
  if visual.last_identity_witness.get("ok")!=true or visual.last_identity_witness.get("process_frame")!=frame:
   abort("Missing explicit same-process identity witness");return
+ if not within_wall_deadline("process_after_identity"): return
  if not sequence.sample(frame): abort("Process sequence guard failed",sequence.snapshot());return
  var row := {"identity_witness":visual.last_identity_witness.duplicate(true),"event_index":motion_index,"process_wall_usec":Time.get_ticks_usec(),"process_frame":frame,"physics_frame":Engine.get_physics_frames(),"dt":delta,"from":vec(last_camera),"to":vec(position),"target":vec(target),"desired":vec(desired),"orbit":[game.orbit.x,game.orbit.y],"camera_transform_hex":var_to_bytes(game.camera.global_transform).hex_encode()}
  process_path+=last_camera.distance_to(position);ship_path+=last_ship.distance_to(ship)
@@ -287,8 +315,10 @@ func classify_new_geometry() -> bool:
 
 func audit_pending() -> void:
  if not active or failed or finishing or not inventory_ready: return
+ if not within_wall_deadline("audit_begin"): return
  if not classify_new_geometry(): return
  if not visual.unchanged(true,"physics_before_segments",last_frame): abort("Visual candidate inventory changed",visual.failures);return
+ if not within_wall_deadline("audit_after_identity"): return
  var space: PhysicsDirectSpaceState3D=game.get_world_3d().direct_space_state
  var visual_space: PhysicsDirectSpaceState3D=PhysicsServer3D.space_get_direct_state(visual.space)
  if visual_space==null: abort("Isolated visual query space unavailable");return
@@ -298,6 +328,7 @@ func audit_pending() -> void:
   var native_after:=raw_native_ray(item.target,item.to)
   var physical:=sweep(space,item.from,item.to,0xffffffff,false)
   var drawn:=sweep(visual_space,item.from,item.to,1,true)
+  if not within_wall_deadline("audit_after_segment_queries"): return
   var row := {"identity_witness_serial":item.row.identity_witness.serial,"identity_process_frame":item.row.identity_witness.process_frame,"physics_identity_witness":visual.last_identity_witness.duplicate(true),"process_frame":item.row.process_frame,"physical":physical,"visible_geometry":drawn,"native_desired_blocker":native_before,"native_actual_blocker":native_after}
   audited.append(row)
   if not native_before.is_empty() or not native_after.is_empty() or not physical.clear or not drawn.clear:
@@ -306,6 +337,7 @@ func audit_pending() -> void:
    abort("Queued segment has no exact late-process identity witness",item.row);return
   if not sequence.audit(item.row.process_frame): abort("Physics audit sequence guard failed",sequence.snapshot());return
  telemetry.count("physics_audit_callbacks");progress()
+ if not within_wall_deadline("audit_before_capture_completion"): return
  if not captures.is_empty() and not audited.is_empty():
   var latest: Dictionary=captures[-1]
   if audited[-1].process_frame>=latest.state.process_frame and sequence.capture_ready(latest.state.process_frame):
@@ -318,6 +350,7 @@ func wait_event_audited() -> bool:
  var began:=Time.get_ticks_msec()
  await witness.processed
  while not failed:
+  if not within_wall_deadline("wait_event_after_process_or_physics"): return false
   if sequence.event_ready():
    return check(pending.is_empty() and sequence.complete_event(),"Native event has newer actual process and exact successful physics audit",sequence.snapshot())
   if not sequence.failure.is_empty(): abort("Native sequence guard failed",sequence.snapshot());return false
@@ -332,10 +365,12 @@ func wait_settled() -> bool:
  while not failed:
   await witness.processed
   if failed: return false
+  if not within_wall_deadline("settle_after_process"): return false
   if game.camera.global_position.distance_to(native_desired(game.orbit.x))<=SETTLE_METERS: stable+=1
   else: stable=0
   if stable>=2:
    await witness.physics_checked
+   if not within_wall_deadline("settle_after_physics"): return false
    if not failed and pending.is_empty(): return true
   if Time.get_ticks_msec()-began>15000:
    abort("Native orbit smoothing did not settle within15s");return false
@@ -360,14 +395,17 @@ func local_rays() -> Array:
 
 func after_draw() -> void:
  if requested_capture.is_empty() or failed or finishing: return
+ if not within_wall_deadline("capture_before_image"): return
  var name:=requested_capture
  requested_capture=""
  var began:=telemetry.begin("capture_image")
  var image: Image=root.get_texture().get_image()
  var path:=output.path_join(name+".png")
  if not check(image!=null and image.save_png(path)==OK,"Actual normal-material image saved",name): return
+ if not within_wall_deadline("capture_after_image_write"): return
  telemetry.end("capture_image",began);telemetry.count("captures_saved")
  captures.append({"name":name,"path":path,"sha256":FileAccess.get_sha256(path),"size":[image.get_width(),image.get_height()],"state":current_state(),"nearest_local_rays":local_rays(),"pixel_review":"not reviewed by renderer harness"})
+ if not within_wall_deadline("capture_after_hash_and_rays"): return
  mark("captured_pending_frame_audit_"+name)
 
 func capture(name: String) -> bool:
@@ -377,23 +415,45 @@ func capture(name: String) -> bool:
   # Completion is established in physics; returning from processed would
   # enqueue a new unaudited segment before the next event starts.
   await witness.physics_checked
+  if not within_wall_deadline("capture_after_physics"): return false
   if Time.get_ticks_msec()-began>20000: abort("Actual capture timeout",name)
- return not failed
+ return not failed and within_wall_deadline("capture_return")
 
 func finish() -> void:
  if finishing: return
  finishing=true;active=false;release_all()
+ within_wall_deadline("finish_begin")
  if visual!=null and not failed:
   if not visual.unchanged(true,"final",last_frame): failed=true;failures.append({"reason":"Final visual buffers changed","details":visual.failures})
+ within_wall_deadline("finish_after_identity")
  var source_began:=telemetry.begin("final_source_hash")
  source_hash_completed=0
  for path in source_hashes:
   source_hash_completed+=1;telemetry.count("source_files_hashed");progress()
   if FileAccess.get_sha256(path)!=source_hashes[path]: failed=true;failures.append({"reason":"Frozen input changed","path":path})
+  within_wall_deadline("finish_source_hash")
  telemetry.end("final_source_hash",source_began)
- passed=not failed and sequence.capture_ready(last_frame) and captures.size()==4 and audited.size()==process_samples.size() and ship_path==0 and inputs_released()
+ var deadline_ok:=within_wall_deadline("finish_after_final_hash_before_pass")
+ passed=deadline_ok and not failed and sequence.capture_ready(last_frame) and captures.size()==4 and audited.size()==process_samples.size() and ship_path==0 and inputs_released()
  stage="complete" if passed else "failed_or_incomplete"
  report(true)
+ var report_sha:=FileAccess.get_sha256(output.path_join("orbit-report.json"))
+ within_wall_deadline("finish_after_final_report_and_sha",true)
+ write_completion_receipt(report_sha)
+ var receipt_sha:=FileAccess.get_sha256(output.path_join("orbit-completion.json"))
+ var receipt_in_time:=within_wall_deadline("finish_after_receipt_flush_rename_and_sha",true)
+ if not receipt_in_time:
+  # Exactly one failed rewrite; no recursion or retry can restore success.
+  passed=false;stage="failed_or_incomplete"
+  report(true)
+  report_sha=FileAccess.get_sha256(output.path_join("orbit-report.json"))
+  write_completion_receipt(report_sha)
+  receipt_sha=FileAccess.get_sha256(output.path_join("orbit-completion.json"))
+  within_wall_deadline("finish_after_failed_evidence_rewrite",true)
+ within_wall_deadline("finish_before_cleanup",true)
+ # This clock is sampled AFTER the receipt flush/rename/hash. It is deliberately
+ # recorded outside that receipt, rather than labelling a pre-write tick post-write.
+ print("ORBIT61_TERMINAL_WALL ",JSON.stringify({"version":"orbit61-terminal-wall-v1","first_item_runtime_passed":passed and not failed,"native_report_sha256":report_sha,"completion_receipt_sha256":receipt_sha,"wall_deadline":wall_deadline_snapshot()}))
  if is_instance_valid(game):
   for i in range(3): await process_frame
   await RenderingServer.frame_post_draw
@@ -401,6 +461,15 @@ func finish() -> void:
  if visual!=null: visual.close()
  for i in range(8): await process_frame
  quit(0 if passed else 1)
+
+func write_completion_receipt(report_sha: String) -> void:
+ var receipt:=FileAccess.open(output.path_join("orbit-completion.json.tmp"),FileAccess.WRITE)
+ if receipt==null:
+  push_error("Cannot write orbit completion receipt");passed=false
+ else:
+  receipt.store_string(JSON.stringify({"version":"orbit61-completion-v1","first_item_runtime_passed":passed and not failed,"native_report_sha256":report_sha,"wall_deadline":wall_deadline_snapshot()}));receipt.flush();receipt.close()
+  if DirAccess.rename_absolute(output.path_join("orbit-completion.json.tmp"),output.path_join("orbit-completion.json"))!=OK:
+   push_error("Cannot replace orbit completion receipt");passed=false
 
 func fixture_sync_snapshot(phase: String, lifecycle) -> Dictionary:
  var weather:=[]
@@ -435,6 +504,7 @@ func run() -> void:
  for path in source_hashes:
   source_hash_completed+=1;telemetry.count("source_files_hashed");progress()
   if not check(FileAccess.get_sha256(path)==source_hashes[path],"Exact frozen input",path): return
+  if not within_wall_deadline("initial_source_hash"): return
  telemetry.end("initial_source_hash",hash_began)
  if not check(FileAccess.get_sha256(SCENE)==SCENE_SHA,"Exact saved Game61"): return
  root.size=Vector2i(1180,664);release_all()
@@ -444,10 +514,12 @@ func run() -> void:
  if not check(packed!=null,"Saved scene loaded"): return
  game=packed.instantiate();packed=null;root.add_child(game)
  telemetry.end("scene_load_instantiate",load_began)
+ if not within_wall_deadline("after_scene_load_instantiate"): return
  witness=Witness.new();witness.harness=self;witness.process_priority=100000;witness.process_physics_priority=100000;root.add_child(witness)
  RenderingServer.frame_post_draw.connect(after_draw)
  for i in range(3): await process_frame
  await RenderingServer.frame_post_draw
+ if not within_wall_deadline("after_initial_process_and_draw"): return
  game.observe_reference("1131")
  # ONLY explicit fixture writes to ship/camera. No direct orbit write anywhere.
  game.airship.position=START
@@ -457,6 +529,7 @@ func run() -> void:
  game.camera.position=native_desired(0)
  game.camera.look_at(native_target())
  game.world.update_focus(START,true)
+ if not within_wall_deadline("after_fixture_and_focus_update"): return
  fixture={"classification":"one initial fixture, excluded from all motion; no flight in this first item","state":current_state()}
  fixture_pause_state={"ship":game.airship.global_transform,"camera":game.camera.global_transform,"travelled":game.travelled}
  visual=VISUAL_AUDIT.new()
@@ -466,15 +539,18 @@ func run() -> void:
  var lifecycle=FIXTURE_LIFECYCLE.new()
  var sync_began:=Time.get_ticks_msec()
  var drained: Dictionary=await lifecycle.drain(game,paused_fixture_unchanged)
+ if not within_wall_deadline("after_fixture_deletion_drain"): return
  fixture.deletion_settle=drained
  if not check(drained.get("ok",false),"Fixture queued deletions completed in unchanged native reference pause",drained): return
  fixture.process_sync=[fixture_sync_snapshot("drain_return_at_process_frame_signal_start",lifecycle)]
  # process_frame is emitted before node _process. Let native game/weather run
  # through the late witness and then post_draw; do not freeze or move weather.
  await witness.processed
+ if not within_wall_deadline("fixture_after_late_process"): return
  fixture.process_sync.append(fixture_sync_snapshot("after_late_witness_processed",lifecycle))
  if not check(paused_fixture_unchanged() and Time.get_ticks_msec()-sync_began<FIXTURE_LIFECYCLE.MAX_WALL_MSEC,"Native paused fixture unchanged after full process witness",fixture.process_sync[-1]): return
  await RenderingServer.frame_post_draw
+ if not within_wall_deadline("fixture_after_post_draw"): return
  fixture.process_sync.append(fixture_sync_snapshot("after_frame_post_draw_before_inventory",lifecycle))
  if not check(paused_fixture_unchanged() and Time.get_ticks_msec()-sync_began<FIXTURE_LIFECYCLE.MAX_WALL_MSEC,"Native paused fixture unchanged after post_draw",fixture.process_sync[-1]): return
  var final_queue: Dictionary=fixture.process_sync[-1].queued_deletions
@@ -494,6 +570,7 @@ func run() -> void:
  stage="preparing_visible_inventory";progress(true)
  var inventory_began:=telemetry.begin("inventory_prepare")
  if not check(visual.prepare(game,domain),"Complete classified visible candidate inventory",visual.failures): return
+ if not within_wall_deadline("after_inventory_prepare"): return
  telemetry.end("inventory_prepare",inventory_began)
  inventory_ready=true
  node_added.connect(func(node: Node):
@@ -502,6 +579,7 @@ func run() -> void:
  # native reference pause. No live scene or material is changed for auditing.
  await witness.physics_checked
  await witness.physics_checked
+ if not within_wall_deadline("after_inventory_server_registration"): return
  var visual_space: PhysicsDirectSpaceState3D=PhysicsServer3D.space_get_direct_state(visual.space)
  if not check(visual_space!=null,"Isolated visual query space active"): return
  stage="preflight_desired_arc";progress(true)
@@ -518,6 +596,7 @@ func run() -> void:
   sphere.radius=base_radius+orbit_radius*(1-cos((next-angle)*.5))
   var row:=sweep(visual_space,previous,destination,1,true)
   var physical:=sweep(game.get_world_3d().direct_space_state,previous,destination,0xffffffff,false)
+  if not within_wall_deadline("preflight_after_segment_queries"): return
   row.physical=physical;row.from_angle=angle;row.to_angle=next
   preflight.append(row);telemetry.count("preflight_segments");progress()
   if not check(row.clear and physical.clear,"Proposed desired orbit arc clears full visible/physical volumes",row): return
@@ -531,6 +610,7 @@ func run() -> void:
   if not check(visual.accept_distant_new_node(node),"New pre-input geometry remains outside query domain",visual.failures): return
  new_geometry.clear()
  mark("initial_orbit_preflight_complete")
+ if failed or not within_wall_deadline("before_native_f2"): return
  last_camera=game.camera.global_position;last_ship=game.airship.global_position;last_frame=-1
  active=true
  if not check(key(KEY_F2,true) and key(KEY_F2,false),"Native F2 exits observation"): return
