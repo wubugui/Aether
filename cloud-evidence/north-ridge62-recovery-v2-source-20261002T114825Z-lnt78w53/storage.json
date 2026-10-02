@@ -1,0 +1,22 @@
+{
+  "lossless_gzip": [
+    {
+      "raw": "protected-before.json",
+      "bytes": 1445782,
+      "sha256": "98e4ea3ad262e0a643968200ea150af9da3340fcdcaa40f89d0ea52383d352a0",
+      "stored": "protected-before.json.gz",
+      "stored_bytes": 342024,
+      "stored_sha256": "54da4e900fbaa00068dd3a8558ad01adaa4da433a5affaa2de8d796cea03c980"
+    },
+    {
+      "raw": "protected-after.json",
+      "bytes": 1445782,
+      "sha256": "98e4ea3ad262e0a643968200ea150af9da3340fcdcaa40f89d0ea52383d352a0",
+      "stored": "protected-after.json.gz",
+      "stored_bytes": 342024,
+      "stored_sha256": "54da4e900fbaa00068dd3a8558ad01adaa4da433a5affaa2de8d796cea03c980"
+    }
+  ],
+  "restore": "Restore missing raw only, then verify original size and SHA; never overwrite a different raw. Native results continue to bind original raw bytes.",
+  "native_and_large_reports": "native-storage.json"
+}

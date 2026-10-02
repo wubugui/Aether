@@ -1,6 +1,15 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 11:43 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 11:55 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 11:55 北实际可编辑源与独立fresh-open通过
+
+- K路径失败/北恢复准备已完整发布 **7360c8a45b1ca5a8a4add21802f77ae5f7eba12a**，tree **b3968a5952ababb9f2282392b84630276eb00381**、parentc654b1b6；46路径/45唯一blob新bare公共Git逐字节/SHA核回，本地78169e2同树对齐
+- [北recovery-v2实际源](cloud-evidence/north-ridge62-recovery-v2-source-20261002T114825Z-lnt78w53/RESULT.md)真实10,004,835B `.blend`保存，SHA **dd1d3c12b8c3f98fdcd42a21057d519f1cac48eeab468cbc7721d1c1673ab502**；build PID5/0/3.329秒，独立fresh PID24/0/2.623秒，wrapper0/总15.645秒。原全部native门重算通过，两14.8MB raw除PID/affinity外精确同，115输入/7364原文件在run前后未变，aggregate582260KiB无触界
+- 27control/15handle、4326点/8192面master与四原slot派生均真存；1246原候选Y/2479面未改。实际内嵌文本load、批写、真实group/attributes/normals/camera/material与保存/重开phase已落盘，旧60秒无phase失败不追改或声称根因已证明。**0图/世界，167支撑仍待验收**
+- [必要原生源恢复说明](cloud-evidence/north-ridge62-recovery-v2-source-20261002T114825Z-lnt78w53/STORAGE.md)：原10MB源与14.8MB raw以唯一无损XZ≤500KB普通Git分块存储，所有路径filter unspecified、无新LFS。**Git并非直接存原路径.blend blob，重拉必须运行restore_native.py恢复原字节/SHA**；本地原生文件不变、不增另一个母版。远端分块核回后还需新干净目录实际恢复和native fresh-open，未完成前不称完整外存验证
+- K原parse副本4889文件仍在exec/tmp逐SHA全同，GUI不可见仅执行环境路径差；独立跨设备逐文件迁移准备中，需每个目标hash/fsync后才移走源并完整journal，不形成第二完整工作项目、不给不一致fallback。无新K图
+- 当前Aether无engine，MAZ接图形窗；北四原视图待实际运行，全参考/支撑/全GOAL仍未验收。私密交付23原受阻件不重试
 
 ## 11:43 K图形副本路径保护失败；北等价批处理恢复准备完成
 
