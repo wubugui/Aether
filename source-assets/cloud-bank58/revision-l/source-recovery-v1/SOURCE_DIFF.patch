@@ -1,0 +1,246 @@
+--- source-assets/cloud-bank58/revision-l/source-v1/native58l.py
++++ source-assets/cloud-bank58/revision-l/source-recovery-v1/native58l.py
+@@ -82,6 +82,20 @@
+     if actual!=data:(directory/(name+'.unexpected-readback')).write_bytes(actual)
+     s.require(t.name==name and t.is_in_memory and not t.filepath and actual==data,'Exact internal reconstruction Text '+name)
+ 
++def create_shared_groups(master,export,c):
++    """The two objects share ONE mesh/group table; allocate seven groups once."""
++    s.require(master.data is export.data,'One actual shared mesh before groups')
++    s.require(not list(master.vertex_groups) and not list(export.vertex_groups),'No pre-existing shared groups')
++    groups=s.groups(c)
++    s.require(len(groups)==7,'Exactly seven shared control groups')
++    for name,weights in groups:
++        group=master.vertex_groups.new(name=name);buckets={}
++        for i,w in enumerate(weights):
++            if w:buckets.setdefault(s.f32(w),[]).append(i)
++        for w,indices in buckets.items():group.add(indices,w,'REPLACE')
++    names=[name for name,_ in groups]
++    s.require([x.name for x in master.vertex_groups]==[x.name for x in export.vertex_groups]==names,'Actual shared seven-group identities after one allocation')
++
+ def create_source(c,b,g,out):
+     import bpy
+     from mathutils import Matrix
+@@ -106,11 +120,7 @@
+     m=bpy.data.materials.new(s.MATERIAL);m.use_nodes=True;spec=b['material'];m.diffuse_color=spec['linear_rgba'];m.use_backface_culling=spec['backface_culling']
+     p=m.node_tree.nodes.get('Principled BSDF');p.inputs['Base Color'].default_value=spec['linear_rgba'];p.inputs['Roughness'].default_value=spec['roughness'];p.inputs['Metallic'].default_value=spec['metallic'];p.inputs['Emission Color'].default_value=(0.,0.,0.,1.);p.inputs['Emission Strength'].default_value=0.;mesh.materials.append(m)
+     for f in mesh.polygons:f.use_smooth=False;f.material_index=0
+-    for name,weights in s.groups(c):
+-        group=master.vertex_groups.new(name=name);export.vertex_groups.new(name=name);buckets={}
+-        for i,w in enumerate(weights):
+-            if w:buckets.setdefault(s.f32(w),[]).append(i)
+-        for w,indices in buckets.items():group.add(indices,w,'REPLACE')
++    create_shared_groups(master,export,c)
+     # Allocate every RNA layer before resolving handles (allocation invalidates handles).
+     for name,kind,domain in s.schemas(c):mesh.attributes.new(name=name,type=kind,domain=domain)
+     for name in (s.BASE,s.LAST):write_collection(mesh.attributes[name].data,'vector',points,'f',3)
+@@ -135,7 +145,7 @@
+     lit=b['source_inspection_lighting'];w=bpy.data.worlds.new('L58_K_SOURCE_INSPECTION');w.use_nodes=True;bg=w.node_tree.nodes['Background'];bg.inputs['Color'].default_value=lit['world_linear_rgba'];bg.inputs['Strength'].default_value=lit['world_strength'];scene.world=w
+     light=bpy.data.lights.new('L58_K_FIXED_SUN','SUN');light.energy=lit['sun_energy'];light.angle=lit['sun_angle_radians'];ob=bpy.data.objects.new(light.name,light);cols['L58_FIXED_INSPECTION'].objects.link(ob);ob.rotation_euler=lit['sun_source_rotation_xyz_radians']
+     scene.render.engine='CYCLES';scene.cycles.device='CPU';scene.cycles.samples=8;scene.cycles.use_denoising=False;scene.render.threads_mode='FIXED';scene.render.threads=2
+-    scene.render.resolution_x=1179;scene.render.resolution_y=664;scene.render.resolution_percentage=100;scene.render.pixel_aspect_x=scene.render.pixel_aspect_y=1.;scene.render.image_settings.file_format='PNG';scene.render.image_settings.color_mode='RGBA';scene.render.image_settings.color_depth='8';scene.render.film_transparent=False;scene.render.filepath=''
++    scene.render.resolution_x=1179;scene.render.resolution_y=664;scene.render.resolution_percentage=100;scene.render.pixel_aspect_x,scene.render.pixel_aspect_y=s.calibrated_pixel_aspect(b);scene.render.image_settings.file_format='PNG';scene.render.image_settings.color_mode='RGBA';scene.render.image_settings.color_depth='8';scene.render.film_transparent=False;scene.render.filepath=''
+     scene.view_settings.view_transform='AgX';scene.view_settings.look='None';scene.view_settings.exposure=0.;scene.view_settings.gamma=1.;scene.use_nodes=False;scene.render.use_compositing=False;scene.render.use_sequencer=False;scene.camera=bpy.data.objects[s.CAMERA_PREFIX+b['world_cameras'][0]['name']]
+     bpy.context.view_layer.objects.active=master;master.select_set(True);bpy.context.view_layer.update();emit('create.complete',vertices=len(points),triangles=len(c['faces']))
+ 
+@@ -157,9 +167,9 @@
+         h=bpy.data.objects[s.CONTROL_PREFIX+r['id']];controls.append(dict(secondary_parameters=[dict(id=p['id'],default=h[p['id']+'_default'],min=h[p['id']+'_min'],max=h[p['id']+'_max'],semantic=h[p['id']+'_semantic'],value=float(h[p['id']]),last_applied_value=float(h['last_applied_'+p['id']])) for p in r.get('secondary_parameters',[])],name=h.name,location=list(h.location),lock_location=list(h.lock_location),lock_rotation=list(h.lock_rotation),lock_scale=list(h.lock_scale),**{k:h[k] for k in ('id','value','default','min','max','semantic','units','last_applied_value')}))
+     mat=bpy.data.materials[s.MATERIAL];p=mat.node_tree.nodes.get('Principled BSDF')
+     material=dict(name=mat.name,use_nodes=mat.use_nodes,base_color_linear_rgba=list(p.inputs['Base Color'].default_value),roughness=float(p.inputs['Roughness'].default_value),metallic=float(p.inputs['Metallic'].default_value),backface_culling=mat.use_backface_culling,node_types=sorted(x.bl_idname for x in mat.node_tree.nodes),links=sorted([x.from_node.bl_idname,x.from_socket.name,x.to_node.bl_idname,x.to_socket.name] for x in mat.node_tree.links),emission_color=list(p.inputs['Emission Color'].default_value),emission_strength=float(p.inputs['Emission Strength'].default_value))
+-    cameras=[];graph=bpy.context.evaluated_depsgraph_get()
++    cameras=[];graph=bpy.context.evaluated_depsgraph_get();sampling=s.render_projection_args(scene.render)
+     for ob in sorted((x for x in bpy.data.objects if x.type=='CAMERA'),key=lambda o:o.name):
+-        d=ob.data;cameras.append(dict(name=ob.name.removeprefix(s.CAMERA_PREFIX),matrix_world=[list(r) for r in ob.matrix_world],projection_matrix=[list(r) for r in ob.calc_matrix_camera(graph,x=1179,y=664,scale_x=1.,scale_y=1.)],declared_transform_hex=ob['declared_transform_hex'],declared_projection_hex=ob['declared_projection_hex'],type=d.type,sensor_fit=d.sensor_fit,sensor_height=d.sensor_height,lens=d.lens,clip_start=d.clip_start,clip_end=d.clip_end))
++        d=ob.data;cameras.append(dict(name=ob.name.removeprefix(s.CAMERA_PREFIX),matrix_world=[list(r) for r in ob.matrix_world],projection_matrix=[list(r) for r in ob.calc_matrix_camera(graph,**sampling)],projection_sampling=sampling,declared_transform_hex=ob['declared_transform_hex'],declared_projection_hex=ob['declared_projection_hex'],type=d.type,sensor_fit=d.sensor_fit,sensor_height=d.sensor_height,lens=d.lens,clip_start=d.clip_start,clip_end=d.clip_end))
+     texts=[]
+     for t in sorted(bpy.data.texts,key=lambda t:t.name):
+         data=t.as_string().encode();texts.append(dict(name=t.name,sha256=s.digest(data),bytes=len(data),is_in_memory=t.is_in_memory,filepath=t.filepath,use_module=t.use_module))
+@@ -198,6 +208,7 @@
+     g=geometry();ad=json.loads(a.admission.read_text());label=a.mode+('-'+a.view if a.view else '')
+     s.require(ad['state']=='admitted_one_shot_not_complete' and ad['wrapper_pid']==os.getppid() and ad['native_sha256']==sha(Path(__file__)),'Actual owning wrapper/native admission')
+     s.require(ad['stage']==('views' if a.mode=='render' else 'source') and Path(ad['source']).resolve()==g.SOURCE.resolve() and Path(ad['output']).resolve()==a.out.resolve(),'One fixed admitted stage/source/output')
++    s.require(ad['runner_version']=='cloudbank58l-source-recovery-v1' and ad['recovery_of_failure_sha256']==s.RECOVERY_FAILURE_SHA256,'Explicit unique failed-source recovery admission')
+     s.require(ad['candidate_sha256']==sha(g.CANDIDATE_PATH) and ad['binding_sha256']==sha(g.BINDING_PATH),'Admitted source input identities')
+     global _TELEMETRY
+     _TELEMETRY=(a.out,label);emit('native_entry',mode=a.mode)
+--- source-assets/cloud-bank58/revision-l/source-v1/native_support58l.py
++++ source-assets/cloud-bank58/revision-l/source-recovery-v1/native_support58l.py
+@@ -1,6 +1,7 @@
+ """Pure source58L edit/capture checks. No engine import, launch or old L helper use."""
+ from __future__ import annotations
+ import hashlib, json, math, struct
++from fractions import Fraction
+ from pathlib import Path
+ 
+ MASTER='L58_EDITABLE_MASTER'
+@@ -13,11 +14,12 @@
+ LAST='l58_last_evaluated'
+ INDEX='l58_vertex_index'
+ FACE='l58_face_index'
++RECOVERY_FAILURE_SHA256='3fc9d27fe46f83fc279b0902a852ac895c8c59a2d77e93f66a1fa651c5fee597'
+ FLAGS=('world_loaded','world_integration_allowed','contact_acceptance','world_acceptance',
+        'global_GOAL','visual_acceptance','weather_acceptance','auto_rebuild')
+ IDENTITY=[[1.,0.,0.,0.],[0.,1.,0.,0.],[0.,0.,1.,0.],[0.,0.,0.,1.]]
+ EDIT_TEXT='''# Explicit editing only. This Text is not an auto-run module.\nimport bpy\nns = {"__name__": "l58_embedded_support"}\nexec(compile(bpy.data.texts["NATIVE_SUPPORT58L.py"].as_string(), "NATIVE_SUPPORT58L.py", "exec"), ns)\nps = {"__name__": "l58_embedded_topology"}\nexec(compile(bpy.data.texts["POLY58K.py"].as_string(), "POLY58K.py", "exec"), ps)\ngs = {"__name__": "l58_embedded_geometry", "__file__": "/isolated/source-assets/cloud-bank58/revision-l/source-v1/geometry58l.py", "_EMBEDDED_TOPOLOGY": ps}\nexec(compile(bpy.data.texts["GEOMETRY58L.py"].as_string(), "GEOMETRY58L.py", "exec"), gs)\nns2 = {"__name__": "l58_explicit_edit", "_EMBEDDED_SUPPORT": ns, "_EMBEDDED_GEOMETRY": gs}\nexec(compile(bpy.data.texts["NATIVE58L.py"].as_string(), "NATIVE58L.py", "exec"), ns2)\nns2["rebuild_from_controls"]()\n'''
+-README_TEXT='''Isolated cloud58L editable source. Not contact, world, weather or GOAL acceptance.\nL58_EDITABLE_MASTER is the sole author mesh. L58_DERIVED_EXPORT shares its one mesh and is hidden and selection-locked.\nEdit master vertex heights without changing topology, or change the seven CONTROL custom value properties.\nThen explicitly Run EDIT58L.py. Invalid control/geometry edits are rejected, not clamped.\nDirect point offsets are reconciled into authored-base attributes. Repeated rebuilds do not accumulate controls.\nThe complete candidate, bindings, native edit source, support and geometry validator are embedded as non-auto-run Texts.\nNo handlers, drivers, save, render or export are invoked by EDIT58L.py. Saving edits is a separate user action.\nThe four source cameras retain the original absolute Godot camera transforms under the fixed author frame.\nTwo original front records are intentionally identical; neither is reframed to center this isolated source.\nK linear material is retained. Blender inspection lighting is a source diagnostic, not equivalent world/weather evidence.\n'''
++README_TEXT='''Isolated cloud58L editable source. Not contact, world, weather or GOAL acceptance.\nL58_EDITABLE_MASTER is the sole author mesh. L58_DERIVED_EXPORT shares its one mesh and is hidden and selection-locked.\nEdit master vertex heights without changing topology, or change the seven CONTROL custom value properties.\nThen explicitly Run EDIT58L.py. Invalid control/geometry edits are rejected, not clamped.\nDirect point offsets are reconciled into authored-base attributes. Repeated rebuilds do not accumulate controls.\nThe complete candidate, bindings, native edit source, support and geometry validator are embedded as non-auto-run Texts.\nNo handlers, drivers, save, render or export are invoked by EDIT58L.py. Saving edits is a separate user action.\nThe four source cameras retain the original absolute Godot camera transforms under the fixed author frame.\nTwo original front records are intentionally identical; neither is reframed to center this isolated source.\n1179x664 sampling uses a disclosed non-square pixel aspect derived from all four identical original projection ratios; no camera pose or frustum is refitted.\nK linear material is retained. Blender inspection lighting is a source diagnostic, not equivalent world/weather evidence.\n'''
+ 
+ def require(ok, message):
+     if not ok: raise ValueError(message)
+@@ -77,11 +79,39 @@
+     a=struct.unpack('<16f',b[4:])
+     return [[a[j*4+i] for j in range(4)] for i in range(4)]
+ 
++def calibrated_pixel_aspect(binding):
++    """All four ORIGINAL frusta must independently demand the same exact ratio.
++
++    P11/P00 = width*pixel_aspect_x/(height*pixel_aspect_y). Never infer a
++    reference image size, average distinct frusta, or refit a camera matrix.
++    Blender stores pixel aspects as float32; compare that actual representation.
++    """
++    cameras=binding['world_cameras'];require(len(cameras)==4,'Exactly four fixed calibration records')
++    ratios=[]
++    for record in cameras:
++        p=projection(record)
++        require(math.isfinite(p[0][0]) and math.isfinite(p[1][1]) and p[0][0]>0 and p[1][1]>0,'Finite positive original projection scales')
++        ratios.append(Fraction(p[1][1])/Fraction(p[0][0]))
++    require(all(r==ratios[0] for r in ratios),'Four frozen projections must share one exact sampling ratio; no averaging')
++    ratio=ratios[0]*Fraction(664,1179)
++    require(1<=ratio<=200,'Original common aspect within Blender pixel-aspect range')
++    return [f32(float(ratio)),1.]
++
++def capture_projection_args(settings):
++    width,height=settings['resolution'];percentage=settings['percentage'];x,y=settings['pixel_aspect']
++    require(type(width) is int and type(height) is int and type(percentage) is int and width>0 and height>0 and 0<percentage<=100,'Actual positive render sampling dimensions')
++    require(all(type(v) in (int,float) and math.isfinite(v) and v>0 for v in (x,y)),'Actual positive pixel aspect')
++    return dict(x=width*percentage//100,y=height*percentage//100,scale_x=x,scale_y=y)
++
++def render_projection_args(render):
++    """Read actual RNA used by render, including actual stored float32 aspects."""
++    return capture_projection_args(dict(resolution=[render.resolution_x,render.resolution_y],percentage=render.resolution_percentage,pixel_aspect=[render.pixel_aspect_x,render.pixel_aspect_y]))
++
+ def expected_texts(here,candidate,binding):
+     here=Path(here)
+     return {'CANDIDATE58L.json':json_bytes(candidate),'BINDINGS58L.json':json_bytes(binding),
+       'NATIVE58L.py':(here/'native58l.py').read_bytes(),'NATIVE_SUPPORT58L.py':(here/'native_support58l.py').read_bytes(),
+-      'GEOMETRY58L.py':(here/'geometry58l.py').read_bytes(),'POLY58K.py':(here.parents[3]/'source-assets/cloud-bank58/revision-k/poly58k.py').read_bytes(),'EDIT58L.py':EDIT_TEXT.encode(),'README58L.txt':README_TEXT.encode()}
++      'GEOMETRY58L.py':(here.parent/'source-v1/geometry58l.py').read_bytes(),'POLY58K.py':(here.parents[3]/'source-assets/cloud-bank58/revision-k/poly58k.py').read_bytes(),'EDIT58L.py':EDIT_TEXT.encode(),'README58L.txt':README_TEXT.encode()}
+ 
+ def nested_max(a,b):
+     require(len(a)==len(b),'Matrix dimensions');return max(abs(x-y) for ra,rb in zip(a,b) for x,y in zip(ra,rb))
+@@ -133,6 +163,7 @@
+     require([r['name'] for r in raw['cameras']]==[r['name'] for r in expected_cameras],'Original four cameras')
+     for got,want in zip(raw['cameras'],expected_cameras):
+         require(got['declared_transform_hex']==want['camera_transform'] and got['declared_projection_hex']==want['camera_projection'],'Exact embedded original camera bytes')
++        require(got['projection_sampling']==capture_projection_args(raw['settings']),'Projection evaluated with actual captured render sampling')
+         t=nested_max(got['matrix_world'],camera_matrix(want));p=nested_max(got['projection_matrix'],projection(want))
+         # Matrix decomposition/projection are actual float32 RNA operations; the
+         # original bytes remain exact. These bounds are diagnostics, not refits.
+@@ -146,7 +177,7 @@
+         if ob['type']=='MESH':
+             require(ob['name'] in (MASTER,EXPORT) and ob['matrix_world']==IDENTITY and ob['mesh_name']==MESH and ob['vertex_group_names']==[g[0] for g in gs],'Mesh identity and canonical sharing')
+             require(ob['hide_render']==(ob['name']==EXPORT) and ob['hide_viewport']==(ob['name']==EXPORT) and ob['hide_select']==(ob['name']==EXPORT),'Sole visible editable master')
+-    s=raw['settings']; require(s==dict(render_filepath='',engine='CYCLES',device='CPU',samples=8,denoising=False,threads_mode='FIXED',threads=2,resolution=[1179,664],percentage=100,pixel_aspect=[1.,1.],view_transform='AgX',look='None',exposure=0.,gamma=1.,use_nodes=False,use_compositing=False,use_sequencer=False,transparent=False,active_camera=CAMERA_PREFIX+expected_cameras[0]['name']),'Bound source diagnostic render setup')
++    s=raw['settings']; require(s==dict(render_filepath='',engine='CYCLES',device='CPU',samples=8,denoising=False,threads_mode='FIXED',threads=2,resolution=[1179,664],percentage=100,pixel_aspect=calibrated_pixel_aspect(binding),view_transform='AgX',look='None',exposure=0.,gamma=1.,use_nodes=False,use_compositing=False,use_sequencer=False,transparent=False,active_camera=CAMERA_PREFIX+expected_cameras[0]['name']),'Bound source diagnostic render setup')
+     lit=binding['source_inspection_lighting']; actual=raw['lighting']
+     require(actual==dict(world_color=list(map(f32,lit['world_linear_rgba'])),world_strength=f32(lit['world_strength']),sun_type='SUN',sun_energy=f32(lit['sun_energy']),sun_angle=f32(lit['sun_angle_radians']),sun_rotation=list(map(f32,lit['sun_source_rotation_xyz_radians']))),'Fixed source inspection lighting')
+     require(not raw['external_libraries'] and not raw['images'] and not raw['autoexec_enabled'],'No external native dependencies/autoexecution')
+--- source-assets/cloud-bank58/revision-l/source-runner-v3/run58l_v3.py
++++ source-assets/cloud-bank58/revision-l/source-recovery-v1/run58l_recovery.py
+@@ -8,11 +8,13 @@
+ HERE=Path(__file__).resolve().parent
+ ROOT=HERE.parents[3]
+ ORIGINAL=HERE.parent/'source-v1'
+-VERSION='cloudbank58l-source-runner-v3'
+-sys.path.insert(0,str(ORIGINAL));sys.path.insert(0,str(ROOT/'source-assets/cloud-bank58/revision-k/import-v1'))
++VERSION='cloudbank58l-source-recovery-v1'
++SUPERVISION=HERE.parent/'source-runner-v3'
++sys.path.insert(0,str(ORIGINAL));sys.path.insert(0,str(ROOT/'source-assets/cloud-bank58/revision-k/import-v1'));sys.path.insert(0,str(SUPERVISION));sys.path.insert(0,str(HERE))
+ import bounded_support58k as support
+ import native_support58l as native_support
+ import deadline58l_v3
++import recovery58l
+ TOTAL={'source':120,'views':120}
+ CAPS={'build':80,'verify':30,'render':27}
+ def output_exclusions(stage, source):
+@@ -43,7 +45,7 @@
+         original=ROOT/rel;p=original.resolve();native_support.require(p.is_relative_to(ROOT.resolve()) and p.is_file() and not original.is_symlink(),'Frozen path boundary '+rel)
+         native_support.require(p.stat().st_size==row['bytes'],'Frozen input size '+rel);paths[str(p)]=row['sha256']
+     paths[str(freeze)]=support.sha(freeze)
+-    required={str(p) for p in [HERE/'run58l_v3.py',HERE/'deadline58l_v3.py',HERE/'SOURCE_BINDING.json',ORIGINAL/'FINAL_SHA256.json',ORIGINAL/'native58l.py',ORIGINAL/'native_support58l.py',ORIGINAL/'geometry58l.py',g.CANDIDATE_PATH,g.BINDING_PATH,ROOT/'source-assets/cloud-bank58/revision-k/import-v1/bounded_support58k.py',ROOT/'source-assets/cloud-bank58/revision-k/poly58k.py']}
++    required={str(p) for p in [HERE/'run58l_recovery.py',SUPERVISION/'deadline58l_v3.py',HERE/'SOURCE_BINDING.json',ORIGINAL/'FINAL_SHA256.json',HERE/'native58l.py',ORIGINAL/'native_support58l.py',ORIGINAL/'geometry58l.py',HERE/'geometry58l.py',HERE/'native_support58l.py',HERE/'recovery58l.py',HERE/'DEPENDENCY_SHA256.json',g.CANDIDATE_PATH,g.BINDING_PATH,ROOT/'source-assets/cloud-bank58/revision-k/import-v1/bounded_support58k.py',ROOT/'source-assets/cloud-bank58/revision-k/poly58k.py']}
+     native_support.require(required<=set(paths),'All executed preparation/dependency inputs pinned')
+     _,changed,errors=support.inspect_inputs(paths);native_support.require(not changed and not errors,'Frozen input identity '+repr(changed+errors));return paths
+ 
+@@ -75,7 +77,7 @@
+ def validate_exercise(out,label,c,b,g,baseline):
+     """Independent wrapper reads all native trial evidence, not just seven bools."""
+     rows=support.strict_json(out/(label+'-result.json'));probes=json.loads((out/(label+'-exercise.json')).read_text());specs=[(r,'value',r) for r in c['controls']]+[(r,p['id'],p) for r in c['controls'] for p in r.get('secondary_parameters',[])];native_support.require(len(probes)==len(specs)+1 and rows['exercise_sha256']==support.sha(out/(label+'-exercise.json')),'Full exercise evidence identity')
+-    expected=native_support.expected_texts(ORIGINAL,c,b)
++    expected=native_support.expected_texts(HERE,c,b)
+     require_state(baseline,expected_state(c))
+     for p,(row,field,spec) in zip(probes[:-1],specs):
+         native_support.require(p['id']==row['id'] and p['field']==field and p['value']==spec['exercise_value'] and p['exact_identity_restored'],'Seven actual prescribed exercise states')
+@@ -103,9 +105,9 @@
+ def phase(stage,run,started,limit):
+     import geometry58l as g
+     out=run/'outputs';out.mkdir()
+-    admission=dict(state='admitted_one_shot_not_complete',wrapper_pid=os.getpid(),stage=stage,run=str(run),source=str(g.SOURCE),output=str(out),native_sha256=support.sha(ORIGINAL/'native58l.py'),runner_version=VERSION,runner_sha256=support.sha(HERE/'run58l_v3.py'),supervisor_pid=os.getppid(),candidate_sha256=support.sha(g.CANDIDATE_PATH),binding_sha256=support.sha(g.BINDING_PATH),utc=time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()))
++    admission=dict(recovery_of_failure_sha256=recovery58l.original_failure(),state='admitted_one_shot_not_complete',wrapper_pid=os.getpid(),stage=stage,run=str(run),source=str(g.SOURCE),output=str(out),native_sha256=support.sha(HERE/'native58l.py'),runner_version=VERSION,runner_sha256=support.sha(HERE/'run58l_recovery.py'),supervisor_pid=os.getppid(),candidate_sha256=support.sha(g.CANDIDATE_PATH),binding_sha256=support.sha(g.BINDING_PATH),utc=time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()))
+     with (HERE/(stage+'-attempt.json')).open('x') as f:json.dump(admission,f);f.flush();os.fsync(f.fileno())
+-    print(run,flush=True);report=dict(version=g.VERSION,runner_version=VERSION,stage=stage,state='preparing',passed=False,run=str(run),source=str(g.SOURCE),runner_sha256=support.sha(HERE/'run58l_v3.py'),supervisor_pid=os.getppid(),limits=dict(total_wall_seconds=limit,cpu_threads=2,native_caps=CAPS,max_wrapper_plus_child_rss_kib=support.MAX_RSS_KIB),stages=[],images=[],world_loaded=False,world_modified=False,world_integration_allowed=False,contact_acceptance=False,world_acceptance=False,global_GOAL=False,visual_acceptance=False,weather_acceptance=False,source_diagnostic_only=True)
++    print(run,flush=True);report=dict(recovery_of_failure_sha256=native_support.RECOVERY_FAILURE_SHA256,version=g.VERSION,runner_version=VERSION,stage=stage,state='preparing',passed=False,run=str(run),source=str(g.SOURCE),runner_sha256=support.sha(HERE/'run58l_recovery.py'),supervisor_pid=os.getppid(),limits=dict(total_wall_seconds=limit,cpu_threads=2,native_caps=CAPS,max_wrapper_plus_child_rss_kib=support.MAX_RSS_KIB),stages=[],images=[],world_loaded=False,world_modified=False,world_integration_allowed=False,contact_acceptance=False,world_acceptance=False,global_GOAL=False,visual_acceptance=False,weather_acceptance=False,source_diagnostic_only=True)
+     admission_path=HERE/(stage+'-attempt.json');admission_sha=support.sha(admission_path)
+     excluded=output_exclusions(stage,g.SOURCE)
+     pins={};before={};outputs={};handlers={};source_sha=support.sha(g.SOURCE) if stage=='views' else None
+@@ -190,7 +192,7 @@
+ 
+ 
+ def native_command(g,mode,out,admission_path,view=None):
+-    command=[str(g.BLENDER),'--factory-startup','--disable-autoexec','-b','-t','2','--python-exit-code','1','--python',str(ORIGINAL/'native58l.py'),'--','--mode',mode,'--out',str(out),'--admission',str(admission_path)]
++    command=[str(g.BLENDER),'--factory-startup','--disable-autoexec','-b','-t','2','--python-exit-code','1','--python',str(HERE/'native58l.py'),'--','--mode',mode,'--out',str(out),'--admission',str(admission_path)]
+     if view:command+=['--view',view]
+     return command
+ 
+@@ -209,12 +211,13 @@
+     native_support.require(all(p.is_file() and not p.is_symlink() for p in paths) and out.is_dir() and not out.is_symlink(),'Original source-chain files, no symlinks')
+     wrapper=support.strict_json(wrapper_path);receipt=support.strict_json(receipt_path)
+     native_support.require(terminal_path.read_bytes()==wrapper_path.read_bytes() and prior==wrapper,'Source terminal and wrapper report must be identical original bytes and content')
++    native_support.require(all(row['recovery_of_failure_sha256']==native_support.RECOVERY_FAILURE_SHA256 for row in (admission,prior,wrapper,receipt)),'One exact original failed attempt in all recovery source records')
+     native_support.require(all(row['stage']=='source' for row in (admission,prior,wrapper,receipt)),'Every source-chain record must have source stage')
+     native_support.require(all(row['runner_version']==VERSION and row['run']==str(run) and row['source']==str(g.SOURCE) for row in (admission,prior,wrapper,receipt)),'One source runner version, actual run and original source path')
+-    native_support.require(g.SOURCE.resolve()==(ORIGINAL/'cloud_bank58l.blend').resolve(),'Only the original future native source path')
+-    native_support.require(all(row['runner_sha256']==support.sha(HERE/'run58l_v3.py') for row in (admission,prior,wrapper,receipt)),'Actual corrected runner bytes')
++    native_support.require(g.SOURCE.resolve()==(HERE/'cloud_bank58l_recovery_v1.blend').resolve(),'Only the original future native source path')
++    native_support.require(all(row['runner_sha256']==support.sha(HERE/'run58l_recovery.py') for row in (admission,prior,wrapper,receipt)),'Actual corrected runner bytes')
+     native_support.require(admission['state']=='admitted_one_shot_not_complete' and admission['output']==str(out),'Actual one-shot source admission and output')
+-    native_support.require(admission['native_sha256']==support.sha(ORIGINAL/'native58l.py') and admission['candidate_sha256']==support.sha(g.CANDIDATE_PATH) and admission['binding_sha256']==support.sha(g.BINDING_PATH),'Original admitted native/candidate/binding bytes')
++    native_support.require(admission['native_sha256']==support.sha(HERE/'native58l.py') and admission['candidate_sha256']==support.sha(g.CANDIDATE_PATH) and admission['binding_sha256']==support.sha(g.BINDING_PATH),'Original admitted native/candidate/binding bytes')
+     native_support.require(receipt['limit_seconds']==TOTAL['source'] and deadline58l_v3.accepted(receipt),'Prior complete externally observed source process within the unchanged limit')
+     observed=support.strict_json(HERE/'source-launch-observation.json')
+     for pid in (admission['wrapper_pid'],admission['supervisor_pid'],prior['worker_pid'],prior['supervisor_pid'],receipt['worker_pid'],receipt['supervisor_pid'],observed['supervisor_pid']):require_positive_pid(pid)
+@@ -258,21 +261,16 @@
+     parser=argparse.ArgumentParser();parser.add_argument('--run-approved',choices=['source','views']);a=parser.parse_args(arguments)
+     if not a.run_approved:print('No-op: prepared source only. No engine, source, image, project mutation or stage admission.');return 0
+     started=time.monotonic();stage=a.run_approved;limit=TOTAL[stage]
+-    # Never reset a one-shot by choosing a different (including future) runner.
+-    directories={HERE,ORIGINAL,*HERE.parent.glob('source-runner-v*')}
+-    for directory in directories:
+-        for name in (stage+'-terminal.json',stage+'-attempt.json'):
+-            path=directory/name
+-            native_support.require(not path.exists() and not path.is_symlink(),'One-shot stage already attempted; preserve evidence and stop')
+     import geometry58l as g
++    recovery58l.require_new_admission(stage,g.SOURCE)
+     for path in output_exclusions(stage,g.SOURCE):native_support.require(not path.exists() and not path.is_symlink(),'Only absent exact stage outputs may be excluded')
+     if stage=='source':native_support.require(not g.SOURCE.exists(),'Never overwrite native source')
+     else:prior_source(g)
+     cpus=sorted(os.sched_getaffinity(0))[:2];native_support.require(len(cpus)==2,'CPU2 available');os.sched_setaffinity(0,cpus)
+-    run=Path(tempfile.mkdtemp(prefix='cloudbank58l-source-runner-v3-'+stage+'-'+time.strftime('%Y%m%dT%H%M%SZ',time.gmtime())+'-',dir=ROOT/'cloud-evidence'))
++    run=Path(tempfile.mkdtemp(prefix=VERSION+'-'+stage+'-'+time.strftime('%Y%m%dT%H%M%SZ',time.gmtime())+'-',dir=ROOT/'cloud-evidence'))
+     print(run,flush=True)
+     def finish(record):
+-        record.update(runner_version=VERSION,runner_sha256=support.sha(HERE/'run58l_v3.py'),stage=stage,run=str(run),source=str(g.SOURCE),cpu_affinity=cpus,
++        record.update(recovery_of_failure_sha256=native_support.RECOVERY_FAILURE_SHA256,runner_version=VERSION,runner_sha256=support.sha(HERE/'run58l_recovery.py'),stage=stage,run=str(run),source=str(g.SOURCE),cpu_affinity=cpus,
+                       admission_sha256=support.sha(HERE/(stage+'-attempt.json')) if (HERE/(stage+'-attempt.json')).is_file() else None,source_sha256=None,source_bytes=None,
+                       terminal_sha256=support.sha(HERE/(stage+'-terminal.json')) if (HERE/(stage+'-terminal.json')).is_file() else None,
+                       wrapper_report_sha256=support.sha(run/'wrapper-report.json') if (run/'wrapper-report.json').is_file() else None)
