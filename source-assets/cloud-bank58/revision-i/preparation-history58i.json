@@ -1,0 +1,35 @@
+{
+  "native_executed": false,
+  "events": [
+    {
+      "stage": "first mathematical clipping prototype",
+      "outcome": "exposed polygon count exceeded 500 due to redundant partitioning by disjoint cages",
+      "correction": "Add exact separating-plane early return; no geometry or tolerance change; no jitter or decimation"
+    },
+    {
+      "stage": "first static camera projection",
+      "design_sha256": "a9e8251a0dc9a3a960bcb9e599f96eaf2c8d6721fc99b649a2eb629b59274348",
+      "outcome": "shared-side-back minimum margin 0.06293424580442653 fails original 0.07",
+      "geometry_change": {
+        "control": "Right_Short_Accent",
+        "original_center": [
+          222,
+          31,
+          698
+        ],
+        "new_center": [
+          212,
+          31,
+          698
+        ]
+      },
+      "camera_changed": false,
+      "other_control_geometry_changed": false
+    },
+    {
+      "stage": "float32 intersection check implementation",
+      "outcome": "line-point reconstruction unstable for almost coplanar fan triangles 1,3",
+      "correction": "Compare plane-line intersection intervals directly to the shared indexed locus; use arithmetic classification tolerance 1e-8 on both float64 and exactly represented float32 coordinates; no mesh repair"
+    }
+  ]
+}
