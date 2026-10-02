@@ -1,0 +1,621 @@
+{
+  "status": "offline existing-geometry survey, not a new model or native result",
+  "selected": "CloudSea_1_1",
+  "bounded_scope": [
+    "CloudSea_0_0",
+    "CloudSea_0_1",
+    "CloudSea_0_2",
+    "CloudSea_1_0",
+    "CloudSea_1_1",
+    "CloudSea_1_2",
+    "CloudSea_2_0",
+    "CloudSea_2_1",
+    "CloudSea_2_2"
+  ],
+  "world_frame": "Godot X east on plots, +Z upward on plan; Y is up, meters. Cardinal world meanings not asserted.",
+  "grid": {
+    "cell_m": 5.0,
+    "extent_xmin_xmax_zmin_zmax": [
+      3500.0,
+      5200.0,
+      3300.0,
+      5100.0
+    ],
+    "method": "Vertical barycentric intersections of all actual saved indexed triangles, projected union at cell centers; no AABB fill and no convex hull",
+    "source_arithmetic": "saved packed positions decoded float32 using existing reviewed decoder; transforms calculated float64 offline",
+    "projection_degenerate_triangles_selected": 0
+  },
+  "source_scene": "candidates/round40-exclusive-20260930/project/scenes/candidate53d-west/Game53dWest.tscn",
+  "source_scene_sha256": "6ec57b72a831d6fa906a8d866c339909de55c9c42297a038dcd429b18d0c2b18",
+  "decoder_sha256": "65ae9acd7a0823a5c63aa88cd160b39706ab1c7a1c7404066a6dce715dccedaa",
+  "selected_projected_union_m2": 1402825,
+  "selected_projected_union_10m_m2": 1402200,
+  "selected_xz_aabb_area_m2": 2150652.115880565,
+  "selected_exclusive_coverage_m2": 1084000,
+  "projected_neighbor_union_overlap_m2": 318825,
+  "selected_footprint_connected_components_at_5m": 1,
+  "selected_footprint_internal_empty_cells_at_5m": 20,
+  "selected_top_y_percentiles": {
+    "min": 645.8701832385188,
+    "p10": 704.3652926108202,
+    "p25": 738.2654967503336,
+    "p50": 803.0640475329842,
+    "p75": 918.9186860325326,
+    "p90": 975.6610557465194,
+    "max": 1055.8150248776806
+  },
+  "selected_thickness_y_percentiles": {
+    "min": 0.14224844584964558,
+    "p10": 75.62011354362983,
+    "p25": 121.1711198332008,
+    "p50": 200.6322907901166,
+    "p75": 309.8468266565686,
+    "p90": 365.8778789203484,
+    "max": 501.37093701634706
+  },
+  "clouds": [
+    {
+      "path": "SkyRegion39/CloudSea_0_0/cloud_sea_46_2_continuous_crown",
+      "root_transform": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        3200.0,
+        700.0,
+        3000.0
+      ],
+      "mesh_id": "ArrayMesh_ae4aq",
+      "vertex_count": 15470,
+      "index_count": 16800,
+      "format": 34896613391,
+      "vertex_data_sha256": "a0800888200d00c975f9070eac0d043abe33af704413e37a9bebc6727dd567c1",
+      "index_data_sha256": "506647c7ee2284bb40069052813f376596bd2ac7f63cbb0bc7c539e19821e962",
+      "material_block": "[sub_resource type=\"StandardMaterial3D\" id=\"StandardMaterial3D_8ghfl\"]\nresource_name = \"Cloud41 diffuse density\"\ncull_mode = 2\ndiffuse_mode = 2\nvertex_color_use_as_albedo = true",
+      "node_block": "[node name=\"cloud_sea_46_2_continuous_crown\" type=\"MeshInstance3D\" parent=\"SkyRegion39/CloudSea_0_0\"]\nmaterial_override = SubResource(\"StandardMaterial3D_8ghfl\")\nmesh = SubResource(\"ArrayMesh_ae4aq\")\nskeleton = NodePath(\"\")",
+      "world_bounds": [
+        [
+          2418.26708984375,
+          531.2657165527344,
+          2333.308837890625
+        ],
+        [
+          3963.039306640625,
+          1077.0101013183594,
+          3677.98291015625
+        ]
+      ],
+      "root_anchor_distance_xz_m": 1009.6796264648438,
+      "projected_overlap_with_selected_m2": 0.0,
+      "overlap_y_interval_m2": 0.0,
+      "overlap_cells": 0,
+      "vertical_envelope_gap_range_m": null
+    },
+    {
+      "path": "SkyRegion39/CloudSea_0_1/cloud_sea_46_0_continuous_crown",
+      "root_transform": [
+        0.4535960853099823,
+        0.0,
+        0.8912073969841003,
+        0.0,
+        1.0,
+        0.0,
+        -0.8912073969841003,
+        0.0,
+        0.4535960853099823,
+        3200.0,
+        700.0,
+        4150.0
+      ],
+      "mesh_id": "ArrayMesh_d78o4",
+      "vertex_count": 14374,
+      "index_count": 15492,
+      "format": 34896613391,
+      "vertex_data_sha256": "40dd9efa2312e77abe6328ba2d1adaa589e74fdd0a22d04ab6778d811daef5a3",
+      "index_data_sha256": "7cd38c957ce17a126d16fa0d311e63ab745dd8410198e7cf8bfcbbe7301fc1de",
+      "material_block": "[sub_resource type=\"StandardMaterial3D\" id=\"StandardMaterial3D_wyq7j\"]\nresource_name = \"Cloud41 diffuse density\"\ncull_mode = 2\ndiffuse_mode = 2\nvertex_color_use_as_albedo = true",
+      "node_block": "[node name=\"cloud_sea_46_0_continuous_crown\" type=\"MeshInstance3D\" parent=\"SkyRegion39/CloudSea_0_1\"]\nmaterial_override = SubResource(\"StandardMaterial3D_wyq7j\")\nmesh = SubResource(\"ArrayMesh_d78o4\")\nskeleton = NodePath(\"\")",
+      "world_bounds": [
+        [
+          2441.6174949880187,
+          533.4189910888672,
+          3374.064530023794
+        ],
+        [
+          3949.174706259455,
+          1057.0673217773438,
+          4836.573645817609
+        ]
+      ],
+      "root_anchor_distance_xz_m": 898.8064575195312,
+      "projected_overlap_with_selected_m2": 64375.0,
+      "overlap_y_interval_m2": 64250.0,
+      "overlap_cells": 2575,
+      "vertical_envelope_gap_range_m": [
+        0.0,
+        17.615462241159776
+      ]
+    },
+    {
+      "path": "SkyRegion39/CloudSea_0_2/cloud_sea_46_1_continuous_crown",
+      "root_transform": [
+        -0.5885011553764343,
+        0.0,
+        0.808496356010437,
+        0.0,
+        1.0,
+        0.0,
+        -0.808496356010437,
+        0.0,
+        -0.5885011553764343,
+        3200.0,
+        700.0,
+        5300.0
+      ],
+      "mesh_id": "ArrayMesh_unjyj",
+      "vertex_count": 14282,
+      "index_count": 15570,
+      "format": 34896613391,
+      "vertex_data_sha256": "a164f8fe66fbdba66b94792bedfcbe19465151adff5fae4c82ecc3dc58463511",
+      "index_data_sha256": "5af2b81dceaab016a5a883fd6d8dd6d06d96e061b6649374c2f7a77996855e49",
+      "material_block": "[sub_resource type=\"StandardMaterial3D\" id=\"StandardMaterial3D_4b2px\"]\nresource_name = \"Cloud41 diffuse density\"\ncull_mode = 2\ndiffuse_mode = 2\nvertex_color_use_as_albedo = true",
+      "node_block": "[node name=\"cloud_sea_46_1_continuous_crown\" type=\"MeshInstance3D\" parent=\"SkyRegion39/CloudSea_0_2\"]\nmaterial_override = SubResource(\"StandardMaterial3D_4b2px\")\nmesh = SubResource(\"ArrayMesh_unjyj\")\nskeleton = NodePath(\"\")",
+      "world_bounds": [
+        [
+          2404.321762218944,
+          541.2937927246094,
+          4513.50035169279
+        ],
+        [
+          3925.166959863687,
+          1037.6087646484375,
+          6116.6505986943885
+        ]
+      ],
+      "root_anchor_distance_xz_m": 1800.3480224609375,
+      "projected_overlap_with_selected_m2": 0.0,
+      "overlap_y_interval_m2": 0.0,
+      "overlap_cells": 0,
+      "vertical_envelope_gap_range_m": null
+    },
+    {
+      "path": "SkyRegion39/CloudSea_1_0/cloud_sea_46_2_continuous_crown",
+      "root_transform": [
+        -0.9874798059463501,
+        0.0,
+        -0.15774564445018768,
+        0.0,
+        1.0,
+        0.0,
+        0.15774564445018768,
+        0.0,
+        -0.9874798059463501,
+        4350.0,
+        700.0,
+        3000.0
+      ],
+      "mesh_id": "ArrayMesh_ae4aq",
+      "vertex_count": 15470,
+      "index_count": 16800,
+      "format": 34896613391,
+      "vertex_data_sha256": "a0800888200d00c975f9070eac0d043abe33af704413e37a9bebc6727dd567c1",
+      "index_data_sha256": "506647c7ee2284bb40069052813f376596bd2ac7f63cbb0bc7c539e19821e962",
+      "material_block": "[sub_resource type=\"StandardMaterial3D\" id=\"StandardMaterial3D_8ghfl\"]\nresource_name = \"Cloud41 diffuse density\"\ncull_mode = 2\ndiffuse_mode = 2\nvertex_color_use_as_albedo = true",
+      "node_block": "[node name=\"cloud_sea_46_2_continuous_crown\" type=\"MeshInstance3D\" parent=\"SkyRegion39/CloudSea_1_0\"]\nmaterial_override = SubResource(\"StandardMaterial3D_8ghfl\")\nmesh = SubResource(\"ArrayMesh_ae4aq\")\nskeleton = NodePath(\"\")",
+      "world_bounds": [
+        [
+          3582.50750357263,
+          531.2657165527344,
+          2319.018678355069
+        ],
+        [
+          5140.005517166448,
+          1077.0101013183594,
+          3660.639356687434
+        ]
+      ],
+      "root_anchor_distance_xz_m": 773.6620483398438,
+      "projected_overlap_with_selected_m2": 78425.0,
+      "overlap_y_interval_m2": 78425.0,
+      "overlap_cells": 3137,
+      "vertical_envelope_gap_range_m": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "SkyRegion39/CloudSea_1_1/cloud_sea_46_0_continuous_crown",
+      "root_transform": [
+        -0.3073327839374542,
+        0.0,
+        -0.9516021013259888,
+        0.0,
+        1.0,
+        0.0,
+        0.9516021013259888,
+        0.0,
+        -0.3073327839374542,
+        4350.0,
+        700.0,
+        4150.0
+      ],
+      "mesh_id": "ArrayMesh_d78o4",
+      "vertex_count": 14374,
+      "index_count": 15492,
+      "format": 34896613391,
+      "vertex_data_sha256": "40dd9efa2312e77abe6328ba2d1adaa589e74fdd0a22d04ab6778d811daef5a3",
+      "index_data_sha256": "7cd38c957ce17a126d16fa0d311e63ab745dd8410198e7cf8bfcbbe7301fc1de",
+      "material_block": "[sub_resource type=\"StandardMaterial3D\" id=\"StandardMaterial3D_wyq7j\"]\nresource_name = \"Cloud41 diffuse density\"\ncull_mode = 2\ndiffuse_mode = 2\nvertex_color_use_as_albedo = true",
+      "node_block": "[node name=\"cloud_sea_46_0_continuous_crown\" type=\"MeshInstance3D\" parent=\"SkyRegion39/CloudSea_1_1\"]\nmaterial_override = SubResource(\"StandardMaterial3D_wyq7j\")\nmesh = SubResource(\"ArrayMesh_d78o4\")\nskeleton = NodePath(\"\")",
+      "world_bounds": [
+        [
+          3634.7505534880656,
+          533.4189910888672,
+          3436.617347573965
+        ],
+        [
+          5078.773200066709,
+          1057.0673217773438,
+          4925.965261179167
+        ]
+      ],
+      "root_anchor_distance_xz_m": 622.0554809570312,
+      "projected_overlap_with_selected_m2": 1402825.0,
+      "overlap_y_interval_m2": 1402825.0,
+      "overlap_cells": 56113,
+      "vertical_envelope_gap_range_m": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "path": "SkyRegion39/CloudSea_1_2/cloud_sea_46_1_continuous_crown",
+      "root_transform": [
+        0.7086697816848755,
+        0.0,
+        -0.7055402994155884,
+        0.0,
+        1.0,
+        0.0,
+        0.7055402994155884,
+        0.0,
+        0.7086697816848755,
+        4350.0,
+        700.0,
+        5300.0
+      ],
+      "mesh_id": "ArrayMesh_unjyj",
+      "vertex_count": 14282,
+      "index_count": 15570,
+      "format": 34896613391,
+      "vertex_data_sha256": "a164f8fe66fbdba66b94792bedfcbe19465151adff5fae4c82ecc3dc58463511",
+      "index_data_sha256": "5af2b81dceaab016a5a883fd6d8dd6d06d96e061b6649374c2f7a77996855e49",
+      "material_block": "[sub_resource type=\"StandardMaterial3D\" id=\"StandardMaterial3D_4b2px\"]\nresource_name = \"Cloud41 diffuse density\"\ncull_mode = 2\ndiffuse_mode = 2\nvertex_color_use_as_albedo = true",
+      "node_block": "[node name=\"cloud_sea_46_1_continuous_crown\" type=\"MeshInstance3D\" parent=\"SkyRegion39/CloudSea_1_2\"]\nmaterial_override = SubResource(\"StandardMaterial3D_4b2px\")\nmesh = SubResource(\"ArrayMesh_unjyj\")\nskeleton = NodePath(\"\")",
+      "world_bounds": [
+        [
+          3612.430693008624,
+          541.2937927246094,
+          4497.788404450144
+        ],
+        [
+          5164.7588338589485,
+          1037.6087646484375,
+          6064.75481733511
+        ]
+      ],
+      "root_anchor_distance_xz_m": 1679.390625,
+      "projected_overlap_with_selected_m2": 120075.0,
+      "overlap_y_interval_m2": 117350.0,
+      "overlap_cells": 4803,
+      "vertical_envelope_gap_range_m": [
+        0.0,
+        47.057868432605346
+      ]
+    },
+    {
+      "path": "SkyRegion39/CloudSea_2_0/cloud_sea_46_2_continuous_crown",
+      "root_transform": [
+        0.9502326250076294,
+        0.0,
+        0.31154125928878784,
+        0.0,
+        1.0,
+        0.0,
+        -0.31154125928878784,
+        0.0,
+        0.9502326250076294,
+        5500.0,
+        700.0,
+        3000.0
+      ],
+      "mesh_id": "ArrayMesh_ae4aq",
+      "vertex_count": 15470,
+      "index_count": 16800,
+      "format": 34896613391,
+      "vertex_data_sha256": "a0800888200d00c975f9070eac0d043abe33af704413e37a9bebc6727dd567c1",
+      "index_data_sha256": "506647c7ee2284bb40069052813f376596bd2ac7f63cbb0bc7c539e19821e962",
+      "material_block": "[sub_resource type=\"StandardMaterial3D\" id=\"StandardMaterial3D_8ghfl\"]\nresource_name = \"Cloud41 diffuse density\"\ncull_mode = 2\ndiffuse_mode = 2\nvertex_color_use_as_albedo = true",
+      "node_block": "[node name=\"cloud_sea_46_2_continuous_crown\" type=\"MeshInstance3D\" parent=\"SkyRegion39/CloudSea_2_0\"]\nmaterial_override = SubResource(\"StandardMaterial3D_8ghfl\")\nmesh = SubResource(\"ArrayMesh_ae4aq\")\nskeleton = NodePath(\"\")",
+      "world_bounds": [
+        [
+          4700.624789944817,
+          531.2657165527344,
+          2278.0751682982154
+        ],
+        [
+          6286.78951912039,
+          1077.0101013183594,
+          3679.227955166989
+        ]
+      ],
+      "root_anchor_distance_xz_m": 1680.0753173828125,
+      "projected_overlap_with_selected_m2": 0.0,
+      "overlap_y_interval_m2": 0.0,
+      "overlap_cells": 0,
+      "vertical_envelope_gap_range_m": null
+    },
+    {
+      "path": "SkyRegion39/CloudSea_2_1/cloud_sea_46_0_continuous_crown",
+      "root_transform": [
+        0.15337404608726501,
+        0.0,
+        0.9881681799888611,
+        0.0,
+        1.0,
+        0.0,
+        -0.9881681799888611,
+        0.0,
+        0.15337404608726501,
+        5500.0,
+        700.0,
+        4150.0
+      ],
+      "mesh_id": "ArrayMesh_d78o4",
+      "vertex_count": 14374,
+      "index_count": 15492,
+      "format": 34896613391,
+      "vertex_data_sha256": "40dd9efa2312e77abe6328ba2d1adaa589e74fdd0a22d04ab6778d811daef5a3",
+      "index_data_sha256": "7cd38c957ce17a126d16fa0d311e63ab745dd8410198e7cf8bfcbbe7301fc1de",
+      "material_block": "[sub_resource type=\"StandardMaterial3D\" id=\"StandardMaterial3D_wyq7j\"]\nresource_name = \"Cloud41 diffuse density\"\ncull_mode = 2\ndiffuse_mode = 2\nvertex_color_use_as_albedo = true",
+      "node_block": "[node name=\"cloud_sea_46_0_continuous_crown\" type=\"MeshInstance3D\" parent=\"SkyRegion39/CloudSea_2_1\"]\nmaterial_override = SubResource(\"StandardMaterial3D_wyq7j\")\nmesh = SubResource(\"ArrayMesh_d78o4\")\nskeleton = NodePath(\"\")",
+      "world_bounds": [
+        [
+          4819.084819685882,
+          533.4189910888672,
+          3392.3553899361386
+        ],
+        [
+          6173.208950551987,
+          1057.0673217773438,
+          4884.842607663088
+        ]
+      ],
+      "root_anchor_distance_xz_m": 1615.875244140625,
+      "projected_overlap_with_selected_m2": 55950.0,
+      "overlap_y_interval_m2": 55850.0,
+      "overlap_cells": 2238,
+      "vertical_envelope_gap_range_m": [
+        0.0,
+        9.337633019268537
+      ]
+    },
+    {
+      "path": "SkyRegion39/CloudSea_2_2/cloud_sea_46_1_continuous_crown",
+      "root_transform": [
+        -0.8110931515693665,
+        0.0,
+        0.5849170088768005,
+        0.0,
+        1.0,
+        0.0,
+        -0.5849170088768005,
+        0.0,
+        -0.8110931515693665,
+        5500.0,
+        700.0,
+        5300.0
+      ],
+      "mesh_id": "ArrayMesh_unjyj",
+      "vertex_count": 14282,
+      "index_count": 15570,
+      "format": 34896613391,
+      "vertex_data_sha256": "a164f8fe66fbdba66b94792bedfcbe19465151adff5fae4c82ecc3dc58463511",
+      "index_data_sha256": "5af2b81dceaab016a5a883fd6d8dd6d06d96e061b6649374c2f7a77996855e49",
+      "material_block": "[sub_resource type=\"StandardMaterial3D\" id=\"StandardMaterial3D_4b2px\"]\nresource_name = \"Cloud41 diffuse density\"\ncull_mode = 2\ndiffuse_mode = 2\nvertex_color_use_as_albedo = true",
+      "node_block": "[node name=\"cloud_sea_46_1_continuous_crown\" type=\"MeshInstance3D\" parent=\"SkyRegion39/CloudSea_2_2\"]\nmaterial_override = SubResource(\"StandardMaterial3D_4b2px\")\nmesh = SubResource(\"ArrayMesh_unjyj\")\nskeleton = NodePath(\"\")",
+      "world_bounds": [
+        [
+          4682.6247217845485,
+          541.2937927246094,
+          4566.474209538563
+        ],
+        [
+          6247.053764520328,
+          1037.6087646484375,
+          6071.4530944594135
+        ]
+      ],
+      "root_anchor_distance_xz_m": 2245.986083984375,
+      "projected_overlap_with_selected_m2": 0.0,
+      "overlap_y_interval_m2": 0.0,
+      "overlap_cells": 0,
+      "vertical_envelope_gap_range_m": null
+    }
+  ],
+  "sections": [
+    {
+      "fixed_axis": "z",
+      "requested_coordinate": 3550,
+      "sampled_coordinate": 3547.5,
+      "footprint_intervals_m": [
+        [
+          4040.0,
+          4305.0
+        ],
+        [
+          4400.0,
+          4640.0
+        ]
+      ]
+    },
+    {
+      "fixed_axis": "z",
+      "requested_coordinate": 3650,
+      "sampled_coordinate": 3647.5,
+      "footprint_intervals_m": [
+        [
+          3735.0,
+          4685.0
+        ]
+      ]
+    },
+    {
+      "fixed_axis": "z",
+      "requested_coordinate": 3850,
+      "sampled_coordinate": 3847.5,
+      "footprint_intervals_m": [
+        [
+          3640.0,
+          4910.0
+        ]
+      ]
+    },
+    {
+      "fixed_axis": "z",
+      "requested_coordinate": 4150,
+      "sampled_coordinate": 4147.5,
+      "footprint_intervals_m": [
+        [
+          3960.0,
+          4920.0
+        ]
+      ]
+    },
+    {
+      "fixed_axis": "z",
+      "requested_coordinate": 4450,
+      "sampled_coordinate": 4447.5,
+      "footprint_intervals_m": [
+        [
+          3755.0,
+          5065.0
+        ]
+      ]
+    },
+    {
+      "fixed_axis": "z",
+      "requested_coordinate": 4700,
+      "sampled_coordinate": 4697.5,
+      "footprint_intervals_m": [
+        [
+          4110.0,
+          4870.0
+        ]
+      ]
+    },
+    {
+      "fixed_axis": "z",
+      "requested_coordinate": 4875,
+      "sampled_coordinate": 4872.5,
+      "footprint_intervals_m": [
+        [
+          4215.0,
+          4390.0
+        ]
+      ]
+    },
+    {
+      "fixed_axis": "x",
+      "requested_coordinate": 3750,
+      "sampled_coordinate": 3747.5,
+      "footprint_intervals_m": [
+        [
+          3610.0,
+          4135.0
+        ]
+      ]
+    },
+    {
+      "fixed_axis": "x",
+      "requested_coordinate": 3900,
+      "sampled_coordinate": 3897.5,
+      "footprint_intervals_m": [
+        [
+          3610.0,
+          4040.0
+        ],
+        [
+          4235.0,
+          4625.0
+        ]
+      ]
+    },
+    {
+      "fixed_axis": "x",
+      "requested_coordinate": 4100,
+      "sampled_coordinate": 4097.5,
+      "footprint_intervals_m": [
+        [
+          3455.0,
+          4680.0
+        ]
+      ]
+    },
+    {
+      "fixed_axis": "x",
+      "requested_coordinate": 4350,
+      "sampled_coordinate": 4347.5,
+      "footprint_intervals_m": [
+        [
+          3625.0,
+          4910.0
+        ]
+      ]
+    },
+    {
+      "fixed_axis": "x",
+      "requested_coordinate": 4600,
+      "sampled_coordinate": 4597.5,
+      "footprint_intervals_m": [
+        [
+          3500.0,
+          4780.0
+        ]
+      ]
+    },
+    {
+      "fixed_axis": "x",
+      "requested_coordinate": 4850,
+      "sampled_coordinate": 4847.5,
+      "footprint_intervals_m": [
+        [
+          3785.0,
+          4725.0
+        ]
+      ]
+    },
+    {
+      "fixed_axis": "x",
+      "requested_coordinate": 5000,
+      "sampled_coordinate": 4997.5,
+      "footprint_intervals_m": [
+        [
+          4265.0,
+          4545.0
+        ]
+      ]
+    }
+  ],
+  "limitations": [
+    "5m samples are not exact analytic union/intersection/contact",
+    "Y envelopes can bridge disconnected intervals; overlap is not proof of solid contact",
+    "9 spatially adjacent cloud meshes only; not global geometry, ship occlusion, pixel visibility or flight",
+    "No changes to any original source or scene; no engine launched"
+  ]
+}

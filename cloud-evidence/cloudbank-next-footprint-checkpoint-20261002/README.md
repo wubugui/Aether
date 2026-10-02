@@ -1,0 +1,11 @@
+# Stopped next-bank survey checkpoint
+
+This preserves four exact existing intermediate files created before the user reiterated the mandatory GitHub-first gate. The design worker was put on HOLD; no new design, computation, model, native image or engine run was performed while archiving this checkpoint. A complete next-bank design has not yet been made or accepted.
+
+The PNG is an explicitly labelled mathematical diagram, not a Blender/Godot screenshot. The parent opened it and confirmed that distinction. The original source script is preserved byte-for-byte: its `ROOT=OUT.parent/'Aether'` assumes the recorded sibling working-directory layout. Do not run this archived script in place as if it were a portable completed authoring pipeline. No code was silently adapted or new result regenerated to make this checkpoint look finished.
+
+Existing saved indexed-triangle vertical barycentric sampling covers only9 nearby cloud units,5m grid with a10m comparison. Selected1_1 sampled XZ union is1402825m² at5m and1402200m² at10m, compared to its2150652m² AABB. Sampled exclusive region1084000m² and projected neighboring overlap318825m²; overlap occurs for0_1/1_0/1_2/2_1. These are finite projected samples, not exact analytic contact/seams, connected solid occupancy, native measurements or pixel visibility. Vertical envelopes may bridge disconnected intervals. No replacement geometry or whole-world claim exists.
+
+All4 original identities are in CHECKPOINT.json. The1864861-byte NPZ is stored once as ordinary Git chunks of at most500000 bytes, with filter unspecified and no LFS. The raw native NPZ is not a Git blob at that path. `python restore_grid.py` verifies every chunk and whole original; `--restore-missing` reconstructs only an absent NPZ and refuses a differing existing file. The613878-byte diagram is an unchanged normal PNG blob. Generated matplotlib caches are not project deliverables.
+
+The GitHub plugin publication and complete remote byte readback of this checkpoint, as well as all prior completed outputs, must finish before resuming this design or the next native/render task. Subsequent plans need their own recorded boundary/volume/crown/deep-valley design and fixed-world visual validation; this checkpoint supplies no acceptance.
