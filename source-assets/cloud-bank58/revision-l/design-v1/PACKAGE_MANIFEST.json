@@ -1,0 +1,128 @@
+{
+  "version": "cloudbank-next-design-v1-package",
+  "status": "complete offline design; stop pending parent publication/readback; no construction permission implied",
+  "content_files": [
+    {
+      "path": "DESIGN.md",
+      "bytes": 17999,
+      "sha256": "dc7bf5e9a7a8127248642e3541f7fccf206e4176c49e72b519c08948841edfa5"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5254,
+      "sha256": "0caaede810de0135601945e56b1f62db04ee133fb52af961a7de337593135326"
+    },
+    {
+      "path": "design_plan.json",
+      "bytes": 11137,
+      "sha256": "afd626dc8f78ae7c244c8ed39374d7e3f372e562123b96015f1d626f97ed4df7"
+    },
+    {
+      "path": "02-proposed-bank-plan.png",
+      "bytes": 449191,
+      "sha256": "23beef59bdaf2e45e598d2b3d31d9c392726ad635063abac8e5a8eba250d8e1f",
+      "image_size": [
+        2208,
+        1792
+      ],
+      "role": "offline mathematical design diagram; not a native render"
+    },
+    {
+      "path": "03-proposed-volume-sections.png",
+      "bytes": 324761,
+      "sha256": "34896dc08435b6b2470e2d1e5b04518a311dab597ba55619dbf26036f28eed66",
+      "image_size": [
+        2080,
+        1440
+      ],
+      "role": "offline mathematical design diagram; not a native render"
+    },
+    {
+      "path": "04-proposed-near-shoulder-section.png",
+      "bytes": 207430,
+      "sha256": "1ca354ff177f76faf96def8f3b44c65c393524c64712bd8af05b872abbc6dd29",
+      "image_size": [
+        1920,
+        992
+      ],
+      "role": "offline mathematical design diagram; not a native render"
+    },
+    {
+      "path": "05-original-front-landmark-domains.png",
+      "bytes": 172287,
+      "sha256": "c0bee55c82b28a3dc0a7e336202729f94b5188ebc5db6b519e66065d2f81e004",
+      "image_size": [
+        1920,
+        1152
+      ],
+      "role": "offline mathematical design diagram; not a native render"
+    },
+    {
+      "path": "draw_design_schematics.py",
+      "bytes": 9485,
+      "sha256": "ee8ea22d2298101fdd6ee552d95306891a5600ba29dd084e6d70fb4f852cc95a"
+    },
+    {
+      "path": "analyze_design_landmarks.py",
+      "bytes": 5836,
+      "sha256": "ebbad8c4727c360aab948923b0610c8061072c800aba7a669f7be051e8ebaf3e"
+    },
+    {
+      "path": "design-landmarks.json",
+      "bytes": 34468,
+      "sha256": "271688a22abfc53ba905972a77df3fef5a6b711a0a1136461316925eb1ec2767"
+    },
+    {
+      "path": "evidence-bindings.json",
+      "bytes": 14202,
+      "sha256": "57d823ce213fd642a433a9a5596f56c0734ddf187a95ca03c7a35e19b7d2d921"
+    }
+  ],
+  "manifest_and_checksum_files": [
+    "PACKAGE_MANIFEST.json",
+    "SHA256SUMS.txt"
+  ],
+  "preserved_dependencies": [
+    {
+      "path": "survey.py",
+      "bytes": 7950,
+      "sha256": "c38e72f9d985d4422c8a6f71e3a6937c418443d0041ad74f074393acf1e98a2d",
+      "unchanged_from_archive": true
+    },
+    {
+      "path": "survey.json",
+      "bytes": 19983,
+      "sha256": "b5046921b94d0a20fad4ef3ba7e68573995e537ef3c6a21cdb004e27c208acee",
+      "unchanged_from_archive": true
+    },
+    {
+      "path": "survey-grids.npz",
+      "bytes": 1864861,
+      "sha256": "33dd320034359f224d9fff0a5a9d43f1a51a5a770beaefefe6954c6c6b7c1615",
+      "unchanged_from_archive": true
+    },
+    {
+      "path": "01-existing-footprint-survey.png",
+      "bytes": 613878,
+      "sha256": "08398447b57707c40ebf723460bd72eb4b92e145e38731058f80619a130c43b5",
+      "unchanged_from_archive": true
+    }
+  ],
+  "validation": {
+    "new_json_parse": true,
+    "new_python_ast_parse": true,
+    "new_png_full_decode": true,
+    "four_original_inputs_byte_identical": true,
+    "personally_opened_all_four_proposal_diagrams": true,
+    "engine_started": false,
+    "blend_created": false,
+    "existing_assets_modified": false,
+    "world_visual_acceptance": false,
+    "exact_contact_acceptance": false
+  },
+  "excluded_runtime_caches": [
+    "mpl-cache/",
+    "diagram-cache/"
+  ],
+  "external_dependency_bindings": "evidence-bindings.json"
+}

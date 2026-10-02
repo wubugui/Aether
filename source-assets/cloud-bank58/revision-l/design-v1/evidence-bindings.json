@@ -1,0 +1,406 @@
+{
+  "version": "cloudbank-next-design-v1-bindings",
+  "status": "Read-only evidence identities and offline proposed point projections; not native candidate measurements",
+  "checkpoint_commit": "6d2ae7909b8578ebdd7eaf407b707e1d3f74ebec",
+  "parent_release_after_verified_commit": "258e337886e72dd524749cfc3e683495853d9e81",
+  "preserved_inputs": [
+    {
+      "name": "survey.py",
+      "bytes": 7950,
+      "sha256": "c38e72f9d985d4422c8a6f71e3a6937c418443d0041ad74f074393acf1e98a2d",
+      "unchanged_from_archived_checkpoint": true,
+      "repository_path": "cloud-evidence/cloudbank-next-footprint-checkpoint-20261002/survey.py"
+    },
+    {
+      "name": "survey.json",
+      "bytes": 19983,
+      "sha256": "b5046921b94d0a20fad4ef3ba7e68573995e537ef3c6a21cdb004e27c208acee",
+      "unchanged_from_archived_checkpoint": true,
+      "repository_path": "cloud-evidence/cloudbank-next-footprint-checkpoint-20261002/survey.json"
+    },
+    {
+      "name": "survey-grids.npz",
+      "bytes": 1864861,
+      "sha256": "33dd320034359f224d9fff0a5a9d43f1a51a5a770beaefefe6954c6c6b7c1615",
+      "unchanged_from_archived_checkpoint": true,
+      "repository_path": "cloud-evidence/cloudbank-next-footprint-checkpoint-20261002/survey-grids.npz"
+    },
+    {
+      "name": "01-existing-footprint-survey.png",
+      "bytes": 613878,
+      "sha256": "08398447b57707c40ebf723460bd72eb4b92e145e38731058f80619a130c43b5",
+      "unchanged_from_archived_checkpoint": true,
+      "repository_path": "cloud-evidence/cloudbank-next-footprint-checkpoint-20261002/01-existing-footprint-survey.png"
+    }
+  ],
+  "read_inputs": [
+    {
+      "repository_path": "GOAL.md",
+      "bytes": 4889,
+      "sha256": "de30dd53eafba53e4b6a69602949969a093df5d7d4aa34cc74c385bdd7970013"
+    },
+    {
+      "repository_path": "CLOUD_RESUME.md",
+      "bytes": 225649,
+      "sha256": "f0c7490fe31e15296ac96d50449cedd9b73c23ade02a88949fbd130a90f6c090"
+    },
+    {
+      "repository_path": "ref/1216.png",
+      "bytes": 1721327,
+      "sha256": "f705cb5de0664e9189bdc66b8ed116fc6db5f6ec1f541606df2b399dbde3aa4f"
+    },
+    {
+      "repository_path": "source-assets/cloud-bank58/revision-k/world-trial-v1/README.md",
+      "bytes": 8771,
+      "sha256": "2c324965de9496d2f5bac155ed8f5991c4b43d45256125eadca34613c5430ae2"
+    },
+    {
+      "repository_path": "source-assets/cloud-bank58/revision-k/world-trial-v1/placement-provenance.json",
+      "bytes": 80611,
+      "sha256": "242d871ff36b4de075d2248d2381a74c70cf57f2b10f894b77a891c58fa3a545"
+    },
+    {
+      "repository_path": "cloud-evidence/cloudbank58k-world-trial-v2-renderer-20261002T121854Z-931jfijg/INDEPENDENT_VISUAL_REVIEW.md",
+      "bytes": 12616,
+      "sha256": "6859365d4d4175931fd8a4a995c9f88b652af5266e068dab0bc4604e197e320d"
+    },
+    {
+      "repository_path": "cloud-evidence/cloudbank58k-world-trial-v2-renderer-20261002T121854Z-931jfijg/images/report.json",
+      "bytes": 359381,
+      "sha256": "5d410f92fb116a027257e679b75d45463d8e7080423a69b9359d0291c059934d"
+    },
+    {
+      "repository_path": "cloud-evidence/cloudbank58k-world-trial-v2-renderer-20261002T121854Z-931jfijg/images/01-original61-front.png",
+      "bytes": 420967,
+      "sha256": "c96edfa27bad139649d7184785ce0e7ede7d4a7a25540e1e246c308b85ee9c95"
+    },
+    {
+      "repository_path": "cloud-evidence/cloudbank58k-world-trial-v2-renderer-20261002T121854Z-931jfijg/images/02-k-trial-front.png",
+      "bytes": 414964,
+      "sha256": "e1537b4ed21d62defdc67c7896f7e84704ecc168a8277beb579d09f89527a0db"
+    },
+    {
+      "repository_path": "cloud-evidence/cloudbank58k-world-trial-v2-renderer-20261002T121854Z-931jfijg/images/03-k-fixed-side-back.png",
+      "bytes": 267170,
+      "sha256": "8f8779678765a52e373efec6b8e874e34dd13d29488a696c40fcb75005013018"
+    },
+    {
+      "repository_path": "cloud-evidence/cloudbank58k-world-trial-v2-renderer-20261002T121854Z-931jfijg/images/04-k-fixed-near.png",
+      "bytes": 299361,
+      "sha256": "2ec646e4c111fae2668805372912ef2225c10c8b5d359695ef16c44815c4af1a"
+    }
+  ],
+  "fixed_actual_camera_records": [
+    {
+      "name": "01-original61-front",
+      "camera_transform": "1200000010742f3f8ebcf53d00df37bf0000000035807c3f91ba283e506b3a3f1048e7bd1f0e2d3f00803b4500c08f4400608645",
+      "camera_projection": "130000009dc86f3f000000000000000000000000000000001c07d53f00000000000000000000000000000000460180bf000080bf0000000000000000173433bf00000000",
+      "camera_transform_text": "[X: (0.685365, 0.0, 0.7282), Y: (0.119989, 0.986331, -0.11293), Z: (-0.718246, 0.164774, 0.675997), O: (3000.0, 1150.0, 4300.0)]",
+      "reference": "1216",
+      "weather_time": 0.35,
+      "resolution": [
+        1179,
+        664
+      ],
+      "near": 0.3499999940395355,
+      "far": 18000.0,
+      "fov": 62.0,
+      "design_control_point_projection": [
+        {
+          "id": "C01_Crown_A",
+          "assumed_world_xyz_m": [
+            4140,
+            1005,
+            3910
+          ],
+          "ndc_xy": [
+            0.4210446812580491,
+            0.056881094279754046
+          ],
+          "depth_m": 1106.3318554796078,
+          "inside_projection_frustum_as_point": true,
+          "actual_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "id": "C02_Crown_B",
+          "assumed_world_xyz_m": [
+            4330,
+            1040,
+            4480
+          ],
+          "ndc_xy": [
+            1.1465907021611306,
+            0.060107857984036034
+          ],
+          "depth_m": 851.7134741986393,
+          "inside_projection_frustum_as_point": false,
+          "actual_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "id": "C03_Return_C",
+          "assumed_world_xyz_m": [
+            4750,
+            925,
+            4300
+          ],
+          "ndc_xy": [
+            0.8681670692014112,
+            -0.015362458032060782
+          ],
+          "depth_m": 1294.0053941475935,
+          "inside_projection_frustum_as_point": true,
+          "actual_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "id": "C04_Shoulder_D",
+          "assumed_world_xyz_m": [
+            4470,
+            845,
+            3690
+          ],
+          "ndc_xy": [
+            0.3474645994943504,
+            -0.06089679126609387
+          ],
+          "depth_m": 1518.436304028201,
+          "inside_projection_frustum_as_point": true,
+          "actual_surface_or_pixel_visibility_proven": false
+        }
+      ]
+    },
+    {
+      "name": "02-k-trial-front",
+      "camera_transform": "1200000010742f3f8ebcf53d00df37bf0000000035807c3f91ba283e506b3a3f1048e7bd1f0e2d3f00803b4500c08f4400608645",
+      "camera_projection": "130000009dc86f3f000000000000000000000000000000001c07d53f00000000000000000000000000000000460180bf000080bf0000000000000000173433bf00000000",
+      "camera_transform_text": "[X: (0.685365, 0.0, 0.7282), Y: (0.119989, 0.986331, -0.11293), Z: (-0.718246, 0.164774, 0.675997), O: (3000.0, 1150.0, 4300.0)]",
+      "reference": "1216",
+      "weather_time": 0.35,
+      "resolution": [
+        1179,
+        664
+      ],
+      "near": 0.3499999940395355,
+      "far": 18000.0,
+      "fov": 62.0,
+      "design_control_point_projection": [
+        {
+          "id": "C01_Crown_A",
+          "assumed_world_xyz_m": [
+            4140,
+            1005,
+            3910
+          ],
+          "ndc_xy": [
+            0.4210446812580491,
+            0.056881094279754046
+          ],
+          "depth_m": 1106.3318554796078,
+          "inside_projection_frustum_as_point": true,
+          "actual_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "id": "C02_Crown_B",
+          "assumed_world_xyz_m": [
+            4330,
+            1040,
+            4480
+          ],
+          "ndc_xy": [
+            1.1465907021611306,
+            0.060107857984036034
+          ],
+          "depth_m": 851.7134741986393,
+          "inside_projection_frustum_as_point": false,
+          "actual_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "id": "C03_Return_C",
+          "assumed_world_xyz_m": [
+            4750,
+            925,
+            4300
+          ],
+          "ndc_xy": [
+            0.8681670692014112,
+            -0.015362458032060782
+          ],
+          "depth_m": 1294.0053941475935,
+          "inside_projection_frustum_as_point": true,
+          "actual_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "id": "C04_Shoulder_D",
+          "assumed_world_xyz_m": [
+            4470,
+            845,
+            3690
+          ],
+          "ndc_xy": [
+            0.3474645994943504,
+            -0.06089679126609387
+          ],
+          "depth_m": 1518.436304028201,
+          "inside_projection_frustum_as_point": true,
+          "actual_surface_or_pixel_visibility_proven": false
+        }
+      ]
+    },
+    {
+      "name": "03-k-fixed-side-back",
+      "camera_transform": "12000000322b1dbf0a935dbe6555423f000000009631763f1c5a8c3e00134abfe5552c3ef32517bf9eef904596f77344086b4345",
+      "camera_projection": "130000009dc86f3f000000000000000000000000000000001c07d53f00000000000000000000000000000000460180bf000080bf0000000000000000173433bf00000000",
+      "camera_transform_text": "[X: (-0.61394, 0.0, -0.789352), Y: (-0.216381, 0.961694, 0.168296), Z: (0.759116, 0.274125, -0.590423), O: (4637.952, 975.8685, 3126.689)]",
+      "reference": "1216",
+      "weather_time": 0.35,
+      "resolution": [
+        1179,
+        664
+      ],
+      "near": 0.3499999940395355,
+      "far": 18000.0,
+      "fov": 62.0,
+      "design_control_point_projection": [
+        {
+          "id": "C01_Crown_A",
+          "assumed_world_xyz_m": [
+            4140,
+            1005,
+            3910
+          ],
+          "ndc_xy": [
+            -0.35170337295764326,
+            0.5349498870461056
+          ],
+          "depth_m": 832.5019741192045,
+          "inside_projection_frustum_as_point": true,
+          "actual_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "id": "C02_Crown_B",
+          "assumed_world_xyz_m": [
+            4330,
+            1040,
+            4480
+          ],
+          "ndc_xy": [
+            -0.8111403974526284,
+            0.583713135694951
+          ],
+          "depth_m": 1015.2166479984836,
+          "inside_projection_frustum_as_point": true,
+          "actual_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "id": "C03_Return_C",
+          "assumed_world_xyz_m": [
+            4750,
+            925,
+            4300
+          ],
+          "ndc_xy": [
+            -1.4991419810051692,
+            0.3327799467566196
+          ],
+          "depth_m": 621.6363828646612,
+          "inside_projection_frustum_as_point": false,
+          "actual_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "id": "C04_Shoulder_D",
+          "assumed_world_xyz_m": [
+            4470,
+            845,
+            3690
+          ],
+          "ndc_xy": [
+            -0.6450170054807661,
+            0.017749239049456206
+          ],
+          "depth_m": 495.9608208648119,
+          "inside_projection_frustum_as_point": true,
+          "actual_surface_or_pixel_visibility_proven": false
+        }
+      ]
+    },
+    {
+      "name": "04-k-fixed-near",
+      "camera_transform": "120000000c742f3f92bcf53d04df37bf0000000036807c3f8fba283e546b3a3f0848e7bd1b0e2d3fcd3c5c4550014f44b0fa7d45",
+      "camera_projection": "130000009dc86f3f000000000000000000000000000000001c07d53f00000000000000000000000000000000460180bf000080bf0000000000000000173433bf00000000",
+      "camera_transform_text": "[X: (0.685364, 0.0, 0.7282), Y: (0.119989, 0.986331, -0.11293), Z: (-0.718247, 0.164774, 0.675996), O: (3523.8, 828.0205, 4063.668)]",
+      "reference": "1216",
+      "weather_time": 0.35,
+      "resolution": [
+        1179,
+        664
+      ],
+      "near": 0.3499999940395355,
+      "far": 18000.0,
+      "fov": 62.0,
+      "design_control_point_projection": [
+        {
+          "id": "C01_Crown_A",
+          "assumed_world_xyz_m": [
+            4140,
+            1005,
+            3910
+          ],
+          "ndc_xy": [
+            0.5620653055647151,
+            0.8553060771992193
+          ],
+          "depth_m": 517.3008907561543,
+          "inside_projection_frustum_as_point": true,
+          "actual_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "id": "C02_Crown_B",
+          "assumed_world_xyz_m": [
+            4330,
+            1040,
+            4480
+          ],
+          "ndc_xy": [
+            3.051242394895923,
+            1.6396815593887235
+          ],
+          "depth_m": 262.68269185007387,
+          "inside_projection_frustum_as_point": false,
+          "actual_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "id": "C03_Return_C",
+          "assumed_world_xyz_m": [
+            4750,
+            925,
+            4300
+          ],
+          "ndc_xy": [
+            1.345232106378303,
+            0.510149095354926
+          ],
+          "depth_m": 704.9746604045022,
+          "inside_projection_frustum_as_point": false,
+          "actual_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "id": "C04_Shoulder_D",
+          "assumed_world_xyz_m": [
+            4470,
+            845,
+            3690
+          ],
+          "ndc_xy": [
+            0.3793226221876317,
+            0.308856971625711
+          ],
+          "depth_m": 929.4053564247675,
+          "inside_projection_frustum_as_point": true,
+          "actual_surface_or_pixel_visibility_proven": false
+        }
+      ]
+    }
+  ],
+  "point_projection_method": "Godot variant bytes contain 12 little-endian float32 Transform3D elements and 16 Projection elements after 4-byte tag; use inverse of row-major 3x3 basis and original native projection diagonal. NDC -1..1, no viewport-to-PNG mapping or occlusion claim.",
+  "source_frame_status": "Existing camera matrices are actual native records. Crown centers/heights are NEW DESIGN ASSUMPTIONS.",
+  "visual_inspection": "Reference and four K originals personally opened; old survey and all four new proposal diagrams personally inspected before completion."
+}

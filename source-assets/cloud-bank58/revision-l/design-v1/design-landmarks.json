@@ -1,0 +1,1049 @@
+{
+  "version": "new-design-landmark-rays-v1",
+  "status": "New assumed landmarks only. Existing saved indexed neighbor triangles, no new mesh/native rendering.",
+  "source_scene": "candidates/round40-exclusive-20260930/project/scenes/candidate53d-west/Game53dWest.tscn",
+  "source_scene_sha256": "6ec57b72a831d6fa906a8d866c339909de55c9c42297a038dcd429b18d0c2b18",
+  "decoder_sha256": "65ae9acd7a0823a5c63aa88cd160b39706ab1c7a1c7404066a6dce715dccedaa",
+  "scope": [
+    "CloudSea_0_0",
+    "CloudSea_0_1",
+    "CloudSea_0_2",
+    "CloudSea_1_0",
+    "CloudSea_1_2",
+    "CloudSea_2_0",
+    "CloudSea_2_1",
+    "CloudSea_2_2"
+  ],
+  "not_recomputed": "Archived footprint survey and its four files were not rerun or changed. This is a distinct bounded query from the old front camera to new proposed landmark positions.",
+  "limitations": [
+    "No candidate surface exists, so no self-occlusion test",
+    "Ship and other noncloud geometry not tested",
+    "Sparse control/shoulder landmarks are not a silhouette or pixel-coverage mask",
+    "A frustum-excluded center does not prove the entire cloud crown is outside the frame",
+    "Saved-cloud ray queries are offline float64 diagnostics, not native measurements"
+  ],
+  "groups": [
+    {
+      "id": "C01_Crown_A",
+      "landmark_count": 13,
+      "screen_domain_method": "Bounding rectangle of proposed sparse crest/shoulder landmarks in original front projection; not a silhouette, occupied area, native pixels, or visible area",
+      "unclipped_frame_fraction_bounds_xy": [
+        [
+          0.61551072978199,
+          0.471559452860123
+        ],
+        [
+          0.8115760142859684,
+          0.5706802545035858
+        ]
+      ],
+      "in_frame_landmarks": 13,
+      "in_frame_and_clear_of_tested_neighbors": 13,
+      "all_clear_of_tested_neighbors": 13,
+      "rows": [
+        {
+          "label": "crest",
+          "world_xyz_m": [
+            4140,
+            1005,
+            3910
+          ],
+          "status": "new crest assumption",
+          "ndc_xy": [
+            0.4210446812580491,
+            0.056881094279754046
+          ],
+          "depth_m": 1106.3318554796078,
+          "in_frame_as_point": true,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder00",
+          "world_xyz_m": [
+            4365.0,
+            885.0,
+            3910.0
+          ],
+          "status": "new upper/lower shoulder assumption",
+          "ndc_xy": [
+            0.47390627299083626,
+            -0.06921051982183685
+          ],
+          "depth_m": 1287.7101974163795,
+          "in_frame_as_point": true,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder01",
+          "world_xyz_m": [
+            4334.855715851499,
+            888.349364905389,
+            4015.75
+          ],
+          "status": "new upper/lower shoulder assumption",
+          "ndc_xy": [
+            0.555293525915623,
+            -0.09172381762547933
+          ],
+          "depth_m": 1194.0206371552663,
+          "in_frame_as_point": true,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder02",
+          "world_xyz_m": [
+            4252.5,
+            897.5,
+            4093.1643729004086
+          ],
+          "status": "new upper/lower shoulder assumption",
+          "ndc_xy": [
+            0.6132727797685047,
+            -0.11608836457847299
+          ],
+          "depth_m": 1081.0292939260669,
+          "in_frame_as_point": true,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder03",
+          "world_xyz_m": [
+            4140.0,
+            910.0,
+            4121.5
+          ],
+          "status": "new upper/lower shoulder assumption",
+          "ndc_xy": [
+            0.6231520285719367,
+            -0.13561327135841628
+          ],
+          "depth_m": 979.0121068987526,
+          "in_frame_as_point": true,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder04",
+          "world_xyz_m": [
+            4027.5,
+            922.5,
+            4093.1643729004086
+          ],
+          "status": "new upper/lower shoulder assumption",
+          "ndc_xy": [
+            0.5665076955422406,
+            -0.14136050900717181
+          ],
+          "depth_m": 915.3044989513876,
+          "in_frame_as_point": true,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder05",
+          "world_xyz_m": [
+            3945.1442841485014,
+            931.650635094611,
+            4015.75
+          ],
+          "status": "new upper/lower shoulder assumption",
+          "ndc_xy": [
+            0.45520079521635604,
+            -0.12818737294869004
+          ],
+          "depth_m": 906.9768721851865,
+          "in_frame_as_point": true,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder06",
+          "world_xyz_m": [
+            3915.0,
+            935.0,
+            3910.0
+          ],
+          "status": "new upper/lower shoulder assumption",
+          "ndc_xy": [
+            0.33607610988756476,
+            -0.10134169026350691
+          ],
+          "depth_m": 956.260607467021,
+          "in_frame_as_point": true,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder07",
+          "world_xyz_m": [
+            3945.1442841485014,
+            931.650635094611,
+            3804.25
+          ],
+          "status": "new upper/lower shoulder assumption",
+          "ndc_xy": [
+            0.25582009887702456,
+            -0.07287205585980414
+          ],
+          "depth_m": 1049.9501677281341,
+          "in_frame_as_point": true,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder08",
+          "world_xyz_m": [
+            4027.5,
+            922.5,
+            3726.8356270995914
+          ],
+          "status": "new upper/lower shoulder assumption",
+          "ndc_xy": [
+            0.23102145956397985,
+            -0.052055271114237606
+          ],
+          "depth_m": 1162.9415109573335,
+          "in_frame_as_point": true,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder09",
+          "world_xyz_m": [
+            4140.0,
+            910.0,
+            3698.5
+          ],
+          "status": "new upper/lower shoulder assumption",
+          "ndc_xy": [
+            0.25420348146385513,
+            -0.04210819215284347
+          ],
+          "depth_m": 1264.9586979846479,
+          "in_frame_as_point": true,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder10",
+          "world_xyz_m": [
+            4252.5,
+            897.5,
+            3726.835627099591
+          ],
+          "status": "new upper/lower shoulder assumption",
+          "ndc_xy": [
+            0.31091572133753526,
+            -0.04263241140003702
+          ],
+          "depth_m": 1328.666305932013,
+          "in_frame_as_point": true,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder11",
+          "world_xyz_m": [
+            4334.855715851499,
+            888.349364905389,
+            3804.25
+          ],
+          "status": "new upper/lower shoulder assumption",
+          "ndc_xy": [
+            0.3880149933348153,
+            -0.052183614419806804
+          ],
+          "depth_m": 1336.993932698214,
+          "in_frame_as_point": true,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        }
+      ]
+    },
+    {
+      "id": "C02_Crown_B",
+      "landmark_count": 13,
+      "screen_domain_method": "Bounding rectangle of proposed sparse crest/shoulder landmarks in original front projection; not a silhouette, occupied area, native pixels, or visible area",
+      "unclipped_frame_fraction_bounds_xy": [
+        [
+          0.9220825640402968,
+          0.469946071007982
+        ],
+        [
+          1.2522954293522437,
+          0.6772032338077253
+        ]
+      ],
+      "in_frame_landmarks": 5,
+      "in_frame_and_clear_of_tested_neighbors": 5,
+      "all_clear_of_tested_neighbors": 13,
+      "rows": [
+        {
+          "label": "crest",
+          "world_xyz_m": [
+            4330,
+            1040,
+            4480
+          ],
+          "status": "new crest assumption",
+          "ndc_xy": [
+            1.1465907021611306,
+            0.060107857984036034
+          ],
+          "depth_m": 851.7134741986393,
+          "in_frame_as_point": false,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder00",
+          "world_xyz_m": [
+            4582.0,
+            924.3666096272581,
+            4480.0
+          ],
+          "status": "new upper/lower shoulder assumption",
+          "ndc_xy": [
+            1.082312343098017,
+            -0.08395232069162391
+          ],
+          "depth_m": 1051.7649644823546,
+          "in_frame_as_point": false,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder01",
+          "world_xyz_m": [
+            4548.238401753679,
+            876.2082792051146,
+            4576.75
+          ],
+          "status": "proposed collar follows old grid top; actual collar remains to be conformed",
+          "ndc_xy": [
+            1.2191715595448978,
+            -0.19821429264432613
+          ],
+          "depth_m": 970.0483895942148,
+          "in_frame_as_point": false,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder02",
+          "world_xyz_m": [
+            4456.0,
+            890.0754898570935,
+            4647.575915632289
+          ],
+          "status": "proposed collar follows old grid top; actual collar remains to be conformed",
+          "ndc_xy": [
+            1.3726601048289484,
+            -0.23575060586499394
+          ],
+          "depth_m": 853.6354480766114,
+          "in_frame_as_point": false,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder03",
+          "world_xyz_m": [
+            4330.0,
+            908.7664639510368,
+            4673.5
+          ],
+          "status": "proposed collar follows old grid top; actual collar remains to be conformed",
+          "ndc_xy": [
+            1.4929291467086128,
+            -0.2701528512500892
+          ],
+          "depth_m": 742.5320168023619,
+          "in_frame_as_point": false,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder04",
+          "world_xyz_m": [
+            4204.0,
+            898.4014175305064,
+            4647.575915632289
+          ],
+          "status": "proposed collar follows old grid top; actual collar remains to be conformed",
+          "ndc_xy": [
+            1.5045908587044872,
+            -0.3544064676154505
+          ],
+          "depth_m": 671.2654568112848,
+          "in_frame_as_point": false,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder05",
+          "world_xyz_m": [
+            4111.761598246321,
+            969.9270711464337,
+            4576.75
+          ],
+          "status": "new upper/lower shoulder assumption",
+          "ndc_xy": [
+            1.4076551049387462,
+            -0.19590639553334993
+          ],
+          "depth_m": 641.1080588436434,
+          "in_frame_as_point": false,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder06",
+          "world_xyz_m": [
+            4078.0,
+            965.6333903727419,
+            4480.0
+          ],
+          "status": "new upper/lower shoulder assumption",
+          "ndc_xy": [
+            1.193019307342235,
+            -0.17746548245090152
+          ],
+          "depth_m": 682.9690778391085,
+          "in_frame_as_point": false,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder07",
+          "world_xyz_m": [
+            4111.761598246321,
+            955.8110093115579,
+            4383.25
+          ],
+          "status": "new upper/lower shoulder assumption",
+          "ndc_xy": [
+            0.9951419598092136,
+            -0.14517632435648034
+          ],
+          "depth_m": 774.239376833562,
+          "in_frame_as_point": true,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder08",
+          "world_xyz_m": [
+            4204.0,
+            943.0918270359765,
+            4312.424084367711
+          ],
+          "status": "new upper/lower shoulder assumption",
+          "ndc_xy": [
+            0.8775008517816187,
+            -0.114040747999369
+          ],
+          "depth_m": 890.463152918494,
+          "in_frame_as_point": true,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder09",
+          "world_xyz_m": [
+            4330.0,
+            930.8839381651242,
+            4286.5
+          ],
+          "status": "new upper/lower shoulder assumption",
+          "ndc_xy": [
+            0.8441651280805935,
+            -0.09150922855817195
+          ],
+          "depth_m": 1000.4983391506502,
+          "in_frame_as_point": true,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder10",
+          "world_xyz_m": [
+            4456.0,
+            922.4584366632346,
+            4312.424084367711
+          ],
+          "status": "new upper/lower shoulder assumption",
+          "ndc_xy": [
+            0.8774655924603219,
+            -0.07916969054764979
+          ],
+          "depth_m": 1074.8610962401171,
+          "in_frame_as_point": true,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder11",
+          "world_xyz_m": [
+            4548.238401753679,
+            920.0729288535663,
+            4383.25
+          ],
+          "status": "new upper/lower shoulder assumption",
+          "ndc_xy": [
+            0.9607255892798221,
+            -0.07672127290350043
+          ],
+          "depth_m": 1093.6259834778195,
+          "in_frame_as_point": true,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        }
+      ]
+    },
+    {
+      "id": "C03_Return_C",
+      "landmark_count": 13,
+      "screen_domain_method": "Bounding rectangle of proposed sparse crest/shoulder landmarks in original front projection; not a silhouette, occupied area, native pixels, or visible area",
+      "unclipped_frame_fraction_bounds_xy": [
+        [
+          0.8206291181380072,
+          0.5076812290160304
+        ],
+        [
+          1.0703791700176661,
+          0.6220119542304346
+        ]
+      ],
+      "in_frame_landmarks": 10,
+      "in_frame_and_clear_of_tested_neighbors": 10,
+      "all_clear_of_tested_neighbors": 13,
+      "rows": [
+        {
+          "label": "crest",
+          "world_xyz_m": [
+            4750,
+            925,
+            4300
+          ],
+          "status": "new crest assumption",
+          "ndc_xy": [
+            0.8681670692014112,
+            -0.015362458032060782
+          ],
+          "depth_m": 1294.0053941475935,
+          "in_frame_as_point": true,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder00",
+          "world_xyz_m": [
+            4889.5,
+            707.5568107791825,
+            4300.0
+          ],
+          "status": "proposed collar follows old grid top; actual collar remains to be conformed",
+          "ndc_xy": [
+            0.8482095490728494,
+            -0.24402390846086935
+          ],
+          "depth_m": 1430.0297901491867,
+          "in_frame_as_point": true,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder01",
+          "world_xyz_m": [
+            4870.810543827929,
+            833.8052130587132,
+            4426.0
+          ],
+          "status": "new upper/lower shoulder assumption",
+          "ndc_xy": [
+            0.9819019625151278,
+            -0.12904834978168375
+          ],
+          "depth_m": 1310.6280983910874,
+          "in_frame_as_point": true,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder02",
+          "world_xyz_m": [
+            4819.75,
+            845.6497662132327,
+            4518.238401753679
+          ],
+          "status": "new upper/lower shoulder assumption",
+          "ndc_xy": [
+            1.0887808338623621,
+            -0.1465083083133452
+          ],
+          "depth_m": 1209.6495176114342,
+          "in_frame_as_point": false,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder03",
+          "world_xyz_m": [
+            4750.0,
+            853.3009771491807,
+            4552.0
+          ],
+          "status": "new upper/lower shoulder assumption",
+          "ndc_xy": [
+            1.1407583400353323,
+            -0.16287385564761267
+          ],
+          "depth_m": 1135.4683810936397,
+          "in_frame_as_point": false,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder04",
+          "world_xyz_m": [
+            4680.25,
+            854.7087100751496,
+            4518.238401753679
+          ],
+          "status": "new upper/lower shoulder assumption",
+          "ndc_xy": [
+            1.107882534931224,
+            -0.171676142124281
+          ],
+          "depth_m": 1107.9614644612695,
+          "in_frame_as_point": false,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder05",
+          "world_xyz_m": [
+            4629.189456172071,
+            849.4957640904674,
+            4426.0
+          ],
+          "status": "new upper/lower shoulder assumption",
+          "ndc_xy": [
+            0.9976204211256314,
+            -0.16891000474292794
+          ],
+          "depth_m": 1134.499223812238,
+          "in_frame_as_point": true,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder06",
+          "world_xyz_m": [
+            4610.5,
+            839.0589438619169,
+            4300.0
+          ],
+          "status": "new upper/lower shoulder assumption",
+          "ndc_xy": [
+            0.8558656714969477,
+            -0.1563045902851895
+          ],
+          "depth_m": 1207.970887959521,
+          "in_frame_as_point": true,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder07",
+          "world_xyz_m": [
+            4629.189456172071,
+            826.1947869412868,
+            4174.0
+          ],
+          "status": "new upper/lower shoulder assumption",
+          "ndc_xy": [
+            0.733495018830369,
+            -0.13946368932564593
+          ],
+          "depth_m": 1308.6897838282841,
+          "in_frame_as_point": true,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder08",
+          "world_xyz_m": [
+            4680.25,
+            814.3502337867673,
+            4081.7615982463217
+          ],
+          "status": "new upper/lower shoulder assumption",
+          "ndc_xy": [
+            0.6595753671200045,
+            -0.12373505613964547
+          ],
+          "depth_m": 1409.6683646079373,
+          "in_frame_as_point": true,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder09",
+          "world_xyz_m": [
+            4750.0,
+            806.6990228508193,
+            4048.0
+          ],
+          "status": "new upper/lower shoulder assumption",
+          "ndc_xy": [
+            0.6412582362760143,
+            -0.112350332961126
+          ],
+          "depth_m": 1483.8495011257319,
+          "in_frame_as_point": true,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder10",
+          "world_xyz_m": [
+            4819.75,
+            805.2912899248504,
+            4081.7615982463212
+          ],
+          "status": "new upper/lower shoulder assumption",
+          "ndc_xy": [
+            0.6744501639318827,
+            -0.10681699364385795
+          ],
+          "depth_m": 1511.3564177581022,
+          "in_frame_as_point": true,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder11",
+          "world_xyz_m": [
+            4870.810543827929,
+            810.5042359095326,
+            4174.0
+          ],
+          "status": "new upper/lower shoulder assumption",
+          "ndc_xy": [
+            0.7509510604748295,
+            -0.10777129485094335
+          ],
+          "depth_m": 1484.8186584071339,
+          "in_frame_as_point": true,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        }
+      ]
+    },
+    {
+      "id": "C04_Shoulder_D",
+      "landmark_count": 13,
+      "screen_domain_method": "Bounding rectangle of proposed sparse crest/shoulder landmarks in original front projection; not a silhouette, occupied area, native pixels, or visible area",
+      "unclipped_frame_fraction_bounds_xy": [
+        [
+          0.6300908106484867,
+          0.5304483956330469
+        ],
+        [
+          0.7136589866976385,
+          0.6278895227117108
+        ]
+      ],
+      "in_frame_landmarks": 13,
+      "in_frame_and_clear_of_tested_neighbors": 10,
+      "all_clear_of_tested_neighbors": 10,
+      "rows": [
+        {
+          "label": "crest",
+          "world_xyz_m": [
+            4470,
+            845,
+            3690
+          ],
+          "status": "new crest assumption",
+          "ndc_xy": [
+            0.3474645994943504,
+            -0.06089679126609387
+          ],
+          "depth_m": 1518.436304028201,
+          "in_frame_as_point": true,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder00",
+          "world_xyz_m": [
+            4659.0,
+            755.6800523673272,
+            3690.0
+          ],
+          "status": "new upper/lower shoulder assumption",
+          "ndc_xy": [
+            0.38883724701981265,
+            -0.1206464144186393
+          ],
+          "depth_m": 1668.9024950565708,
+          "in_frame_as_point": true,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder01",
+          "world_xyz_m": [
+            4633.678801315259,
+            767.0921650309087,
+            3746.25
+          ],
+          "status": "new upper/lower shoulder assumption",
+          "ndc_xy": [
+            0.4165872377516581,
+            -0.12306993533764578
+          ],
+          "depth_m": 1610.8104010660234,
+          "in_frame_as_point": true,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder02",
+          "world_xyz_m": [
+            4564.5,
+            773.9244458775588,
+            3787.4278579257493
+          ],
+          "status": "new upper/lower shoulder assumption",
+          "ndc_xy": [
+            0.427317973395277,
+            -0.13613506071636683
+          ],
+          "depth_m": 1532.161097639812,
+          "in_frame_as_point": true,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder03",
+          "world_xyz_m": [
+            4470.0,
+            774.3461907719549,
+            3802.5
+          ],
+          "status": "new upper/lower shoulder assumption",
+          "ndc_xy": [
+            0.41562866504441665,
+            -0.15790091211979232
+          ],
+          "depth_m": 1454.0286021162613,
+          "in_frame_as_point": true,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder04",
+          "world_xyz_m": [
+            4375.5,
+            768.2443935102316,
+            3787.4278579257493
+          ],
+          "status": "new upper/lower shoulder assumption",
+          "ndc_xy": [
+            0.38171680336856706,
+            -0.182951565022567
+          ],
+          "depth_m": 1397.3484535735345,
+          "in_frame_as_point": true,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder05",
+          "world_xyz_m": [
+            4306.321198684741,
+            757.2540257410462,
+            3746.25
+          ],
+          "status": "new upper/lower shoulder assumption",
+          "ndc_xy": [
+            0.33463521256793494,
+            -0.203123371462999
+          ],
+          "depth_m": 1377.308052040531,
+          "in_frame_as_point": true,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder06",
+          "world_xyz_m": [
+            4281.0,
+            744.3199476326729,
+            3690.0
+          ],
+          "status": "new upper/lower shoulder assumption",
+          "ndc_xy": [
+            0.2903458079464737,
+            -0.21116586863429346
+          ],
+          "depth_m": 1399.2772069240157,
+          "in_frame_as_point": true,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder07",
+          "world_xyz_m": [
+            4306.321198684741,
+            686.5274067917371,
+            3633.75
+          ],
+          "status": "proposed collar follows old grid top; actual collar remains to be conformed",
+          "ndc_xy": [
+            0.2622250005138159,
+            -0.25577904542342167
+          ],
+          "depth_m": 1465.0115978682072,
+          "in_frame_as_point": true,
+          "earlier_actual_neighbor_triangle_hits_m": {
+            "CloudSea_1_0": 1484.449366886454
+          },
+          "clear_in_this_bounded_neighbor_test": false,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder08",
+          "world_xyz_m": [
+            4375.5,
+            706.4368103069068,
+            3592.5721420742507
+          ],
+          "status": "proposed collar follows old grid top; actual collar remains to be conformed",
+          "ndc_xy": [
+            0.2601816212969734,
+            -0.20820692018922535
+          ],
+          "depth_m": 1539.2545622207003,
+          "in_frame_as_point": true,
+          "earlier_actual_neighbor_triangle_hits_m": {
+            "CloudSea_1_0": 1494.3743839097133
+          },
+          "clear_in_this_bounded_neighbor_test": false,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder09",
+          "world_xyz_m": [
+            4470.0,
+            740.1786493058523,
+            3577.5
+          ],
+          "status": "proposed collar follows old grid top; actual collar remains to be conformed",
+          "ndc_xy": [
+            0.27973791188254565,
+            -0.1510098315203803
+          ],
+          "depth_m": 1611.7577812719587,
+          "in_frame_as_point": true,
+          "earlier_actual_neighbor_triangle_hits_m": {
+            "CloudSea_1_0": 1650.8080665427178
+          },
+          "clear_in_this_bounded_neighbor_test": false,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder10",
+          "world_xyz_m": [
+            4564.5,
+            751.7374491639355,
+            3592.5721420742507
+          ],
+          "status": "proposed collar follows old grid top; actual collar remains to be conformed",
+          "ndc_xy": [
+            0.31292486371751943,
+            -0.12496188604290512
+          ],
+          "depth_m": 1667.538756694534,
+          "in_frame_as_point": true,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        },
+        {
+          "label": "shoulder11",
+          "world_xyz_m": [
+            4633.678801315259,
+            749.2855426393279,
+            3633.75
+          ],
+          "status": "proposed collar follows old grid top; actual collar remains to be conformed",
+          "ndc_xy": [
+            0.35170554265919357,
+            -0.12210264540773137
+          ],
+          "depth_m": 1689.7940979321181,
+          "in_frame_as_point": true,
+          "earlier_actual_neighbor_triangle_hits_m": {},
+          "clear_in_this_bounded_neighbor_test": true,
+          "actual_new_surface_or_pixel_visibility_proven": false
+        }
+      ]
+    }
+  ]
+}
