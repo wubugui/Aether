@@ -1,0 +1,295 @@
+{
+  "status": "exact_offline_reproduction_of_first_native_mesh_failure",
+  "native_report_sha256": "12a9077d9cdbba6c402ad70d03d43b5d757e557c42fd179e1410a13e0857dad0",
+  "engines_started": 0,
+  "source_or_failed_evidence_modified": false,
+  "runtime_collision_observed": false,
+  "all_occupancy_complete": false,
+  "first_mesh_pair": {
+    "resource": "candidates/round40-exclusive-20260930/project/assets/coast61/oak_-5_-5_CoastalPines36b.res",
+    "source_sha256": "0a780a53e0a90777105703b23a899dfe1cc62d9b2774272087d9869958d64253",
+    "primary_id": "local://ArrayMesh_8qhtw",
+    "shadow_id": "local://ArrayMesh_bpun8",
+    "primary_vertices": 120,
+    "shadow_vertices": 36,
+    "primary_vertex_sha256": "76ae8f87cee80408e43fc1cb7f7dd629a3db981332c72a7d8dde731e676df22a",
+    "shadow_vertex_sha256": "b192ee4890229a35f679f3ebc8e8dd58fb1e0c1aab27c599fc55ed4e1091cf04",
+    "base_face_vertex_count": 168,
+    "oriented_triangles": 56,
+    "base_indexed_faces_sha256": "df0d504ce26b0bdc6126f0f37ca0683632901135f54024afb94514d8088f6768",
+    "shadow_base_indexed_faces_sha256": "ba2bc3891cd4f8c0fb1fdc58fa6a5e01b2f97679f9156a6af32144a51ac47919",
+    "all_level_thresholds": [
+      0.0
+    ],
+    "all_levels_exact_oriented_multiset_equal": true,
+    "primary_vertex_bounds": {
+      "min": [
+        -3.8022189140319824,
+        0.0,
+        -3.9000000953674316
+      ],
+      "max": [
+        3.8022189140319824,
+        13.199999809265137,
+        3.5137786865234375
+      ]
+    },
+    "shadow_vertex_bounds": {
+      "min": [
+        -3.8022189140319824,
+        0.0,
+        -3.9000000953674316
+      ],
+      "max": [
+        3.8022189140319824,
+        13.199999809265137,
+        3.5137786865234375
+      ]
+    }
+  },
+  "native_primary_vertex_hash_exact": true,
+  "native_get_faces_full_byte_hash_exact": true,
+  "native_get_faces_sha256": "509df225d3b50e9b177da02ce9146e73f4382368c7baf77e43a965ab5480afbd",
+  "native_get_faces_bounds": {
+    "min": [
+      -3.8021998405456543,
+      0.0,
+      -3.8999998569488525
+    ],
+    "max": [
+      3.8021998405456543,
+      13.199999809265137,
+      3.5137999057769775
+    ]
+  },
+  "step_float32": 9.999999747378752e-05,
+  "step_float32_hex": "17b7d138",
+  "snapping_formula": "f32(floor(f32(f32(x/f32(0.0001))+f32(0.5)))*f32(0.0001))",
+  "bound_delta_get_faces_minus_native_vertices": {
+    "min": [
+      1.9073486328125e-05,
+      0.0,
+      2.384185791015625e-07
+    ],
+    "max": [
+      -1.9073486328125e-05,
+      0.0,
+      2.1219253540039062e-05
+    ]
+  },
+  "interpretation": "The actual API primary vertices exactly match the narrow compressed decoder. Their get_faces differences are exactly reproduced by the established 0.1mm float32 snapping path; no epsilon is needed. This is an exact replay for these fixed inputs, not a general new engine implementation proof.",
+  "shadow_api_issue": "Position-only compressed shadow format 34896613377 omits the normal flag; the existing strict native audit permits only the known null ARRAY_VERTEX branch and decodes actual packed payload, requiring exact main/shadow oriented coverage at base and every LOD.",
+  "canonical_class_shadow_replay": [
+    {
+      "resource": "candidates/round40-exclusive-20260930/project/assets/meshes/pine.res",
+      "source_sha256": "cd93b88033141213b8bb9ca49dfb3b6e204b71c7e18b4a9a2b13d25a23415d91",
+      "primary_id": "local://ArrayMesh_8qhtw",
+      "shadow_id": "local://ArrayMesh_bpun8",
+      "primary_vertices": 120,
+      "shadow_vertices": 36,
+      "primary_vertex_sha256": "76ae8f87cee80408e43fc1cb7f7dd629a3db981332c72a7d8dde731e676df22a",
+      "shadow_vertex_sha256": "b192ee4890229a35f679f3ebc8e8dd58fb1e0c1aab27c599fc55ed4e1091cf04",
+      "base_face_vertex_count": 168,
+      "oriented_triangles": 56,
+      "base_indexed_faces_sha256": "df0d504ce26b0bdc6126f0f37ca0683632901135f54024afb94514d8088f6768",
+      "shadow_base_indexed_faces_sha256": "ba2bc3891cd4f8c0fb1fdc58fa6a5e01b2f97679f9156a6af32144a51ac47919",
+      "all_level_thresholds": [
+        0.0
+      ],
+      "all_levels_exact_oriented_multiset_equal": true,
+      "primary_vertex_bounds": {
+        "min": [
+          -3.8022189140319824,
+          0.0,
+          -3.9000000953674316
+        ],
+        "max": [
+          3.8022189140319824,
+          13.199999809265137,
+          3.5137786865234375
+        ]
+      },
+      "shadow_vertex_bounds": {
+        "min": [
+          -3.8022189140319824,
+          0.0,
+          -3.9000000953674316
+        ],
+        "max": [
+          3.8022189140319824,
+          13.199999809265137,
+          3.5137786865234375
+        ]
+      }
+    },
+    {
+      "resource": "candidates/round40-exclusive-20260930/project/assets/meshes/oak.res",
+      "source_sha256": "f264a2b7ddd949e6907df239d3b1aba235a750566cd842b162c434e3eccd3e59",
+      "primary_id": "local://ArrayMesh_f226y",
+      "shadow_id": "local://ArrayMesh_flpox",
+      "primary_vertices": 870,
+      "shadow_vertices": 176,
+      "primary_vertex_sha256": "1a8d790011035c9c063214a09a62fd02433ae364689fc22f792a1076ce36bf92",
+      "shadow_vertex_sha256": "48672afa7d6d96b536051bff80ec06adcf0d7d1d0c299e2a1114e606ac3ce201",
+      "base_face_vertex_count": 972,
+      "oriented_triangles": 324,
+      "base_indexed_faces_sha256": "51fcd9d33dcda1872365e7a8c5c65abfec0bdbaee7b996c22c3fe5308f0db231",
+      "shadow_base_indexed_faces_sha256": "82f693f0807e99c1dcbc31adeaf25a65027ac08b034d4ce63a373d09640ce6b7",
+      "all_level_thresholds": [
+        0.0
+      ],
+      "all_levels_exact_oriented_multiset_equal": true,
+      "primary_vertex_bounds": {
+        "min": [
+          -4.643385410308838,
+          0.0,
+          -3.499999761581421
+        ],
+        "max": [
+          4.353173732757568,
+          12.199999809265137,
+          4.09999942779541
+        ]
+      },
+      "shadow_vertex_bounds": {
+        "min": [
+          -4.643385410308838,
+          0.0,
+          -3.499999761581421
+        ],
+        "max": [
+          4.353173732757568,
+          12.199999809265137,
+          4.09999942779541
+        ]
+      }
+    },
+    {
+      "resource": "candidates/round40-exclusive-20260930/project/assets/meshes/poplar.res",
+      "source_sha256": "bf9b420db71e994a9069df30345c56b8a85ae83a9346d72e5d076792a7c77a6f",
+      "primary_id": "local://ArrayMesh_ikaq8",
+      "shadow_id": "local://ArrayMesh_w8vcp",
+      "primary_vertices": 342,
+      "shadow_vertices": 68,
+      "primary_vertex_sha256": "f070a35b821e834e34a3f257415663fdbe5f2025df4021cf98b71af81288471c",
+      "shadow_vertex_sha256": "df938d94d8a99bdbb30e32ca33e3b73a7cdbe90c3ed799762627cef97eb0b5e8",
+      "base_face_vertex_count": 372,
+      "oriented_triangles": 124,
+      "base_indexed_faces_sha256": "880633cc13b2581f4a24c0e0697e4fffb1ab59c30053d6876c0d3becac541d54",
+      "shadow_base_indexed_faces_sha256": "380935f5d124dbf88ca5a738bec13c41732b877764bcc2f9c96008d30e0a6fab",
+      "all_level_thresholds": [
+        0.0
+      ],
+      "all_levels_exact_oriented_multiset_equal": true,
+      "primary_vertex_bounds": {
+        "min": [
+          -2.282538890838623,
+          0.0,
+          -2.1999998092651367
+        ],
+        "max": [
+          2.309964656829834,
+          14.0,
+          2.1999998092651367
+        ]
+      },
+      "shadow_vertex_bounds": {
+        "min": [
+          -2.282538890838623,
+          0.0,
+          -2.1999998092651367
+        ],
+        "max": [
+          2.309964656829834,
+          14.0,
+          2.1999998092651367
+        ]
+      }
+    },
+    {
+      "resource": "candidates/round40-exclusive-20260930/project/assets/meshes/rock.res",
+      "source_sha256": "bb83241d0e8699c5779171bfe59fae2806b217dcbebc5536a343576b256d7f30",
+      "primary_id": "local://ArrayMesh_y2h1h",
+      "shadow_id": "local://ArrayMesh_yjhaa",
+      "primary_vertices": 120,
+      "shadow_vertices": 24,
+      "primary_vertex_sha256": "3ee92cf47209c310699bf4237dcb620c11c72b4f212c723f5f909d06ff03a8da",
+      "shadow_vertex_sha256": "5e96da7e69926d58466d5027b04bdebdfa512d872ec948c8bd8f63d0c9893f2e",
+      "base_face_vertex_count": 120,
+      "oriented_triangles": 40,
+      "base_indexed_faces_sha256": "3ee92cf47209c310699bf4237dcb620c11c72b4f212c723f5f909d06ff03a8da",
+      "shadow_base_indexed_faces_sha256": "39cdbf8887ba377d193cc2622a598c06f6898fb16e6d7d4fc8a42046dd07aab2",
+      "all_level_thresholds": [
+        0.0
+      ],
+      "all_levels_exact_oriented_multiset_equal": true,
+      "primary_vertex_bounds": {
+        "min": [
+          -2.9516024589538574,
+          -1.100000023841858,
+          -2.1266000270843506
+        ],
+        "max": [
+          3.6994075775146484,
+          4.300000190734863,
+          2.316215753555298
+        ]
+      },
+      "shadow_vertex_bounds": {
+        "min": [
+          -2.9516024589538574,
+          -1.100000023841858,
+          -2.1266000270843506
+        ],
+        "max": [
+          3.6994075775146484,
+          4.300000190734863,
+          2.316215753555298
+        ]
+      }
+    },
+    {
+      "resource": "candidates/round40-exclusive-20260930/project/assets/meshes/bush.res",
+      "source_sha256": "a243a9b858e0b939ea08febdb93963f687fa18cc61c2ed6587ef1795703b5a4e",
+      "primary_id": "local://ArrayMesh_gb7dy",
+      "shadow_id": "local://ArrayMesh_moh7i",
+      "primary_vertices": 120,
+      "shadow_vertices": 24,
+      "primary_vertex_sha256": "60a84596547f24ab796d9e05b7c62a2655dbee008bf811cd190a6d42843c1d4f",
+      "shadow_vertex_sha256": "0182eb7b52742b9fc3f89de121cbfea2f4c64bf6790945d13b5002c3ba0d9b25",
+      "base_face_vertex_count": 120,
+      "oriented_triangles": 40,
+      "base_indexed_faces_sha256": "60a84596547f24ab796d9e05b7c62a2655dbee008bf811cd190a6d42843c1d4f",
+      "shadow_base_indexed_faces_sha256": "4e157e2ab31b4923b5afd8d3fa92816672d1a708772fcc969f56490cc1914577",
+      "all_level_thresholds": [
+        0.0
+      ],
+      "all_levels_exact_oriented_multiset_equal": true,
+      "primary_vertex_bounds": {
+        "min": [
+          -1.6099649667739868,
+          -0.5,
+          -1.4460880756378174
+        ],
+        "max": [
+          2.3521952629089355,
+          2.700000047683716,
+          1.4460880756378174
+        ]
+      },
+      "shadow_vertex_bounds": {
+        "min": [
+          -1.6099649667739868,
+          -0.5,
+          -1.4460880756378174
+        ],
+        "max": [
+          2.3521952629089355,
+          2.700000047683716,
+          1.4460880756378174
+        ]
+      }
+    }
+  ],
+  "reused_native_helper_sha256": "966c863a02d136aefacb78e76d7301649b96c628408c589d3a4345fac30086f7"
+}

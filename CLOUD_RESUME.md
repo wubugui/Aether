@@ -1,6 +1,14 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 08:56 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 09:02 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 09:02 完整观察与两失败已外存；shadow差值精确重放
+
+- 世界四图/独立审查/完整900终态、北shadow失败与K导出失败已完整发布 **95ffd10c6bc6930de76e9a03472142b3fb8e5345**，tree **1444a490b5a05c620a3eb9f443b1a45a73048c03**、parentf720461；144路径/135唯一blob新bare公共Git全部字节/SHA回读一致，本地90978fa同树对齐
+- [shadow独立诊断](source-assets/north-ridge62-intake/proxy-bounds-v1/shadow-diagnostic-01/README.md)用既有固定RSRC decoder及coast61压缩positions算法，120主顶点SHA与真实native逐字节同；36影顶点的56个有向三角含重复计数精确等于主面，全部五canonical身份的所有保存base/LOD也一致。未新引擎/下载/改几何，normal/-O输出一致，freeze SHAd7b99107c7707605bbd931ee434107b94dad7dcf6559a5ea5e91b3ec8a75f847
+- 另精确重放实际get_faces的0.1mm float32 snapping：168全部face vertices SHA509df225d3b50e9b177da02ce9146e73f4382368c7baf77e43a965ab5480afbd与native同，六极值精确同，最大Z比未snap顶点极值大.000021219m。不能笼统叫压缩误差，也不能要求snapped面落在raw顶点极值内；未来分别记录indexed视觉与get_faces实际碰撞包围并取并集，不加/松epsilon
+- 正准备独立shadow-arrays-v3直接复用既有严格窄shadow解码/全部LOD有向三角等价门；不删shadow或metadata冒充实际顶点。原v1/v2/失败和coast helper不改，native还未跑。K导出四位normal round的全数值重放已定位，仍需fresh实际normal只读以验证，不先放宽3e-5；只读脚本尚在准备
+- 已完成固定4rad观察，不重复相同场景长跑；下一K忠实导入及北地形最小修正。当前无Aether engine，MAZ只读已终态。Slack集中双私密频道确认仍待答，原八件继续停；全部GOAL/硬件GPU未验收
 
 ## 08:56 首次完整4rad停船观察通过；北shadow和K导入失败保全
 
