@@ -1,6 +1,6 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 19:05 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 19:28 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
 
 ## 云端硬性前置闸门：先插件上传完整核回，再继续工作
 
@@ -11,6 +11,16 @@
 - 上传失败优先查明原因并在授权内反复进行合规恢复，保持原payload、完整base tree/parent和非force ref；真实安全拒绝必须停止该动作，按批准规则取得明确证据/一次原call重试，仍拒则报告并保持闸门关闭，绝不绕审批/换route
 - 本项全部完成成果和本入口更新都核回后，才允许下一项。纯读取以查错/确认上传状态可以继续；与修复当前上传无关的新开发/渲染必须等待
 - 私密Slack交付定位符/收据仍仅本地，不因“全部项目”混入公开仓库；原受阻发送保持独立停止
+
+## 19:28 API一致性隔离诊断源准备窄审接受，待发布后一次真实保存
+
+- 第二次真实失败已完整发布 **4cbe1f7cbf1ff690a2d2bd4693e42da5034309e2**，tree **abd71a2ebf4106f3f6c2b274c853cf08fee3672b**、parentc9c4a2dd；49路径/47唯一blob新bare公共Git逐字节/SHA核回，本地3aedab8同树对齐。再从该远端对象向新空目录导出存储包，四原JSON大小/SHA及完整解析均过、实际七组保持；此闭环后才开发本项
+- [新source-api-diagnostic-v1](source-assets/cloud-bank58/revision-l/source-api-diagnostic-v1/README.md)原20文件355082B；PACKAGE_MANIFEST SHA4cbbdcb8ed520a53bdb148f53aaba9b6be21986b041c8171689b7be29efd90e4，FINAL5c1cc7c84e97641ee71309226a639071b2831fd157878c36c697a41cb005a8d0；278旧依赖135876018B不变，295运行冻结含自身。只新目录，原candidate1567V/3130tri/几何/机位/材料未改
+- 明确新诊断口径：polygon→数学几何仍3e-5、实际flat/同面三corner相等/向外和单位长度各自核，corner→逐float32 Newell/API一致性另用3e-5。**不是旧corner几何门通过**；每实际控制/manual/恢复态继续记旧门结果及误差，历史默认22面/max0.0001594134493/角0.00915847°失败永久保留。stdlib逐运算f32只计算预期，不向mesh/raw写normal
+- 实际scene/内嵌README/raw、admission/child/worker/receipt均标API隔离诊断及full_native_acceptance=false；已有world/GOAL等false不变。两次失败的四准入/终态按精确SHA保留并保护，拒旧成功/陌生/重复准入；唯一新未来源cloud_bank58l_api_diagnostic_v1.blend，无旧源覆盖。直接复用v3监督与build80/verify30/总120秒/CPU2/1.5GiB门
+- [窄独立复核](source-assets/cloud-bank58/revision-l/source-api-diagnostic-v1/NARROW_REVIEW.md)亲读完整normal/失败绑定/runner/native差异，normal/-O各51过（1.852/1.895秒）、18manifest条目全同，实际原raw旧门仍false/22面、新API差5.96046e-8；有限接受准备，不当真实保存。作者最初纯测组装/过时断言失败日志如实保留
+- 本包与本入口完整插件发布、远端逐字核回后一次实际source保存+独立fresh-open。成功仅称隔离API诊断源可编辑保存恢复；全部真实产物再外存后才四原机位图。不扩大全接触证明以无期限阻断真实可看形体，原完整native/视觉/接触/世界/全部GOAL仍未过
+- 当前本模式0native/.blend/PNG/准入。正常交付与既有受阻批次状态不变，私密记录仅本地
 
 ## 19:05 恢复源两修复真实成立，旧corner几何门拒绝；先完整保存失败
 
