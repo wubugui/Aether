@@ -1,0 +1,42 @@
+{
+  "version": "cloudbank58l-source-runner-v3",
+  "stage": "prepared_not_native",
+  "native_run": false,
+  "original_dependency_files": 123,
+  "original_dependency_bytes": 113312816,
+  "all_original_dependencies_unchanged": true,
+  "preexisting_local_cache_files_unchanged": 4,
+  "tests": {
+    "normal": {
+      "process_and_original_count": 78,
+      "stage_chain_count": 76,
+      "exit_code": 0,
+      "process_actual_seconds": 8.412255867006024,
+      "stage_actual_seconds": 0.212
+    },
+    "optimized": {
+      "process_and_original_count": 78,
+      "stage_chain_count": 76,
+      "exit_code": 0,
+      "process_actual_seconds": 8.683518740013824,
+      "stage_actual_seconds": 0.218
+    }
+  },
+  "limits": {
+    "source": 120,
+    "views": 120,
+    "build": 80,
+    "verify": 30,
+    "render": 27,
+    "cpu_threads": 2,
+    "max_aggregate_rss_kib": 1572864,
+    "existing_tail_reserve_seconds": 20,
+    "failure_only_cleanup_seconds": 1
+  },
+  "source_attempt_exists": false,
+  "native_source_exists": false,
+  "contact_acceptance": false,
+  "world_acceptance": false,
+  "global_GOAL": false,
+  "R1_R2_six_helper_ASTs_unchanged": true
+}

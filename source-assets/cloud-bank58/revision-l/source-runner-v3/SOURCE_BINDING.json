@@ -1,0 +1,520 @@
+{
+  "version": "cloudbank58l-source-runner-v3",
+  "published_v2_commit": "3549fb37b4a584c277a4c5358d048b2cc2b98b79",
+  "files": {
+    "GOAL.md": {
+      "bytes": 4889,
+      "sha256": "de30dd53eafba53e4b6a69602949969a093df5d7d4aa34cc74c385bdd7970013"
+    },
+    "candidates/round40-exclusive-20260930/project/scenes/candidate53d-west/Game53dWest.tscn": {
+      "bytes": 103070885,
+      "sha256": "6ec57b72a831d6fa906a8d866c339909de55c9c42297a038dcd429b18d0c2b18"
+    },
+    "cloud-evidence/cloudbank-next-footprint-checkpoint-20261002/survey-grids.npz": {
+      "bytes": 1864861,
+      "sha256": "33dd320034359f224d9fff0a5a9d43f1a51a5a770beaefefe6954c6c6b7c1615"
+    },
+    "cloud-evidence/cloudbank-next-footprint-checkpoint-20261002/survey.json": {
+      "bytes": 19983,
+      "sha256": "b5046921b94d0a20fad4ef3ba7e68573995e537ef3c6a21cdb004e27c208acee"
+    },
+    "cloud-evidence/cloudbank58k-cache-readback-v3-20261002T103637Z-zfmq_a2d/native-reload.json": {
+      "bytes": 303811,
+      "sha256": "2d11cede5ad6051bc2f58cfb2b2875b99fc1f12582a618471612302fbc63aefe"
+    },
+    "cloud-evidence/cloudbank58k-recovery01-20261002T075038Z-4xi10wm2/outputs/build-result58k.json": {
+      "bytes": 62887,
+      "sha256": "0efd34f4506b5f3dfeb918917447777cbdf47d3fe9b67f124338e1f031d7ee25"
+    },
+    "cloud-evidence/cloudbank58k-world-trial-v2-renderer-20261002T121854Z-931jfijg/INDEPENDENT_VISUAL_REVIEW.md": {
+      "bytes": 12616,
+      "sha256": "6859365d4d4175931fd8a4a995c9f88b652af5266e068dab0bc4604e197e320d"
+    },
+    "cloud-evidence/cloudbank58k-world-trial-v2-renderer-20261002T121854Z-931jfijg/images/01-original61-front.png": {
+      "bytes": 420967,
+      "sha256": "c96edfa27bad139649d7184785ce0e7ede7d4a7a25540e1e246c308b85ee9c95"
+    },
+    "cloud-evidence/cloudbank58k-world-trial-v2-renderer-20261002T121854Z-931jfijg/images/02-k-trial-front.png": {
+      "bytes": 414964,
+      "sha256": "e1537b4ed21d62defdc67c7896f7e84704ecc168a8277beb579d09f89527a0db"
+    },
+    "cloud-evidence/cloudbank58k-world-trial-v2-renderer-20261002T121854Z-931jfijg/images/03-k-fixed-side-back.png": {
+      "bytes": 267170,
+      "sha256": "8f8779678765a52e373efec6b8e874e34dd13d29488a696c40fcb75005013018"
+    },
+    "cloud-evidence/cloudbank58k-world-trial-v2-renderer-20261002T121854Z-931jfijg/images/04-k-fixed-near.png": {
+      "bytes": 299361,
+      "sha256": "2ec646e4c111fae2668805372912ef2225c10c8b5d359695ef16c44815c4af1a"
+    },
+    "cloud-evidence/cloudbank58k-world-trial-v2-renderer-20261002T121854Z-931jfijg/images/report.json": {
+      "bytes": 359381,
+      "sha256": "5d410f92fb116a027257e679b75d45463d8e7080423a69b9359d0291c059934d"
+    },
+    "ref/1216.png": {
+      "bytes": 1721327,
+      "sha256": "f705cb5de0664e9189bdc66b8ed116fc6db5f6ec1f541606df2b399dbde3aa4f"
+    },
+    "source-assets/cloud-bank58/revision-d/native-01/preview-settings58d.json": {
+      "bytes": 1417,
+      "sha256": "48614c8e3bcebe6abd9af39e8300808467a6802ee59ea0bec584c8178d461045"
+    },
+    "source-assets/cloud-bank58/revision-k/check_coplanar_contacts58k.py": {
+      "bytes": 5163,
+      "sha256": "e5e6fce641fcb34f76af444e2300eb1be5f54a5e47be67f2b0cbb53b2e9c2d5a"
+    },
+    "source-assets/cloud-bank58/revision-k/import-v1/bounded_support58k.py": {
+      "bytes": 9739,
+      "sha256": "3f62bddbbb80dc7b1778b43c2804c02154564dd0111f8b30a400473a2fe0ebea"
+    },
+    "source-assets/cloud-bank58/revision-k/import-v1/run_import58k.py": {
+      "bytes": 12835,
+      "sha256": "171bd662aefafb8c99f35626e896d41da74252e934c3f695bc0ac1cb90ef34a1"
+    },
+    "source-assets/cloud-bank58/revision-k/poly58k.py": {
+      "bytes": 11506,
+      "sha256": "43e9fd8b2a0bed72c01c6dc0a30d3e48338747151903b1273e22ca0eb296a633"
+    },
+    "source-assets/cloud-bank58/revision-k/recovery-01/authored_envelope58k.blend": {
+      "bytes": 136389,
+      "sha256": "16eeb67dce6e89f05562b67f869c77dd7882942585241a2648ae46ff48012bee"
+    },
+    "source-assets/cloud-bank58/revision-k/recovery-01/rebuild58k.py": {
+      "bytes": 9488,
+      "sha256": "0683db85daa45bf964262edb84abf1c44aebdcf3ccd16de7868eedfed5c7828e"
+    },
+    "source-assets/cloud-bank58/revision-k/recovery-01/source_contact58k.py": {
+      "bytes": 3534,
+      "sha256": "9aef20a6328b381533a3d0f1f2d56a5953dbddb81af87dc042488915606a5b0e"
+    },
+    "source-assets/cloud-bank58/revision-k/world-trial-v1/provenance58k.py": {
+      "bytes": 10124,
+      "sha256": "65ae9acd7a0823a5c63aa88cd160b39706ab1c7a1c7404066a6dce715dccedaa"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v1/02-proposed-bank-plan.png": {
+      "bytes": 449191,
+      "sha256": "23beef59bdaf2e45e598d2b3d31d9c392726ad635063abac8e5a8eba250d8e1f"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v1/03-proposed-volume-sections.png": {
+      "bytes": 324761,
+      "sha256": "34896dc08435b6b2470e2d1e5b04518a311dab597ba55619dbf26036f28eed66"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v1/04-proposed-near-shoulder-section.png": {
+      "bytes": 207430,
+      "sha256": "1ca354ff177f76faf96def8f3b44c65c393524c64712bd8af05b872abbc6dd29"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v1/05-original-front-landmark-domains.png": {
+      "bytes": 172287,
+      "sha256": "c0bee55c82b28a3dc0a7e336202729f94b5188ebc5db6b519e66065d2f81e004"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v1/DESIGN.md": {
+      "bytes": 17999,
+      "sha256": "dc7bf5e9a7a8127248642e3541f7fccf206e4176c49e72b519c08948841edfa5"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v1/INDEPENDENT_REVIEW.md": {
+      "bytes": 13890,
+      "sha256": "74a30a629ae351b32234afc98eaa1ee292f8bacafdeb6078dd201055d84a3b05"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v1/PACKAGE_MANIFEST.json": {
+      "bytes": 3900,
+      "sha256": "2cab9cd3e86437c2e1c11ff0b409566d3b89609b51a2452c0a0ca2e0bd2822ed"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v1/PUBLICATION_STATUS.md": {
+      "bytes": 2259,
+      "sha256": "47650e89b21e1cdfa7d9ffc45b0391c91ae5f0abe62d8fdba30b71d310fc55f8"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v1/README.md": {
+      "bytes": 5254,
+      "sha256": "0caaede810de0135601945e56b1f62db04ee133fb52af961a7de337593135326"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v1/SHA256SUMS.txt": {
+      "bytes": 1085,
+      "sha256": "0885d012713560d89b3fae5e5e51f3b57073578f815a29798c9e87bb9b310a25"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v1/analyze_design_landmarks.py": {
+      "bytes": 5836,
+      "sha256": "ebbad8c4727c360aab948923b0610c8061072c800aba7a669f7be051e8ebaf3e"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v1/design-landmarks.json": {
+      "bytes": 34468,
+      "sha256": "271688a22abfc53ba905972a77df3fef5a6b711a0a1136461316925eb1ec2767"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v1/design_plan.json": {
+      "bytes": 11137,
+      "sha256": "afd626dc8f78ae7c244c8ed39374d7e3f372e562123b96015f1d626f97ed4df7"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v1/draw_design_schematics.py": {
+      "bytes": 9485,
+      "sha256": "ee8ea22d2298101fdd6ee552d95306891a5600ba29dd084e6d70fb4f852cc95a"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v1/evidence-bindings.json": {
+      "bytes": 14202,
+      "sha256": "57d823ce213fd642a433a9a5596f56c0734ddf187a95ca03c7a35e19b7d2d921"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v2/INDEPENDENT_REVIEW.md": {
+      "bytes": 11536,
+      "sha256": "e1aa7eaa147fcd6a22bfd0d3ef901fe4343e54a1d705837b7ae12fbbe62b879e"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v2/PACKAGE_MANIFEST.json": {
+      "bytes": 3625,
+      "sha256": "0972784a7cc61c90a53b21d7145ce00272d227e06d4803430034da283029cef9"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v2/README.md": {
+      "bytes": 4696,
+      "sha256": "edf50deace58dd61a215230353e57f61077ad74077ffa0c4f80c49fc18fda491"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v2/REVISION_NOTES.md": {
+      "bytes": 6713,
+      "sha256": "9ecd19afe7c22aefb1bb876a1da61e2f9c7f6d5f9fbc2c2639a5819f30ecfc2f"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v2/SHA256SUMS.txt": {
+      "bytes": 1458,
+      "sha256": "7641f06a9a471948abe6fb01e3a2a9333619216a15f6d95514b7edeb4241e7ac"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v2/dependencies.json": {
+      "bytes": 5844,
+      "sha256": "0841b43349db600fe3fd5c91ab5b906896efa71dc21ee223fc9b5e27bd6cc587"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v2/final-validation-summary.json": {
+      "bytes": 1707,
+      "sha256": "83469322dcdeb318daaaebea6537deb7a9f73a8a5929544e35d52aee1b905ca6"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v2/profile-definition.json": {
+      "bytes": 6324,
+      "sha256": "4d6e3c1126569e5cb9a9a28204ee04ad467edef7c9e10482e617ca126b4dfc30"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v2/rendered/03-central-volume-section-v2.png": {
+      "bytes": 154088,
+      "sha256": "a55477700b4b42124694b47ca3a1e82f21f8baac3b2d68a64f3deecf7a1ddd37"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v2/rendered/04-near-shoulder-section-v2.png": {
+      "bytes": 157747,
+      "sha256": "987d8818fc613a7e68d2a8ddf51d36e207c78a3fc482b0260125dbd7beab766a"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v2/rendered/RESOLVED_PROFILE.md": {
+      "bytes": 2104,
+      "sha256": "88fe87fa44caf439831d8b9a76969cdfd0f736f92ec014a7a57ea7c5364a59b8"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v2/rendered/interval-audit.json.gz": {
+      "bytes": 100461,
+      "sha256": "6effebfa8fa630b12bb80406628ae13542cfdcd21236eaeea1ddff2507af6a6d"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v2/rendered/plot-trace.json": {
+      "bytes": 80878,
+      "sha256": "e5517864594907ca55ca79a07b9f645bef8758694e78b39a3b4c76e1a4834be0"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v2/rendered/validation-report.json": {
+      "bytes": 6138,
+      "sha256": "6c615f50cf3ac8d458a96f71e54ccad2674305b70ead92d61aedcb8f5a9c9a28"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v2/revise_design_v2.py": {
+      "bytes": 19441,
+      "sha256": "05ca2b689bc6ad411925736d6d8e85633ed7d2aaee8fc73a8a514c15bb520503"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v2/test_revision_v2.py": {
+      "bytes": 6594,
+      "sha256": "55a4985e72bd56856b4ffd76ade6392cd36abcb37f2e76e6a3fdc826ad86f3bc"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v2/tests-normal.json": {
+      "bytes": 3523,
+      "sha256": "2e65c7d75b8bdf5d740719afc0eb24804eba53fa622ad840d206f181e274c671"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v2/tests-optimized.json": {
+      "bytes": 3522,
+      "sha256": "9a07b3e31fcab6b7646b51bac61c6ef42c94bef9cb3a45a68d0b63f5fd397382"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v3/CONTRACT.md": {
+      "bytes": 10943,
+      "sha256": "f9718fa63dbcc73e7dd4c919a5eb8efe77218b079b0a7c7e252fe7bcc211454a"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v3/INDEPENDENT_REVIEW.md": {
+      "bytes": 15855,
+      "sha256": "0ae2a0e935b5cd2cec775bd5a1d34c798c6b434123a0d57f0870a3b7676a5447"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v3/PACKAGE_MANIFEST.json": {
+      "bytes": 2487,
+      "sha256": "92c95ce7f011a6692fd3cb487863ca774948f4dfa51c9af962f313143f2c67f3"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v3/README.md": {
+      "bytes": 3503,
+      "sha256": "678ded596c31e6cb92eaceaf6adea2bc1ef843969c6bd75985b0e8a571e7d3b5"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v3/SHA256SUMS.txt": {
+      "bytes": 1092,
+      "sha256": "16cc1f14b33b13c8273a18de498a2b35747ac6fc891551d68cbe135b6e773f3c"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v3/check_contract.py": {
+      "bytes": 4636,
+      "sha256": "382a4fee62cadf40f6938747e32dcddeb31b300f9520188b684ca51aee9424d9"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v3/contact-contract.json": {
+      "bytes": 11148,
+      "sha256": "2c93501f7fa9aebc9b1df0432af1a71fc1bcb1bc7536d2c444eafc69c32c59f8"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v3/contact-evidence.json": {
+      "bytes": 34600,
+      "sha256": "02b910c45a28e48439db64ebd54bb6b30866a92f2e66a368d1b1d3c7aca50b45"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v3/dependencies.json": {
+      "bytes": 12710,
+      "sha256": "d8bd9589ddb7bfe60ce056602a762c19a11cbf2b986fe74fc4cdd92e0de1f137"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v3/external-rim.json": {
+      "bytes": 139991,
+      "sha256": "7d20bf2db403152759fa9c4063da957939141416de7fd306865bf7d7ed08af77"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v3/replay-result.json": {
+      "bytes": 654,
+      "sha256": "047c1034a7491ad3edc62683540186213c2afe1e3d9691580ffccce0874f01af"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v3/replay_contract.py": {
+      "bytes": 11651,
+      "sha256": "49892874014fb04a0c5967e6f7de8426434f699c66e9345ba9881a2e7a69eaba"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v3/test_contract.py": {
+      "bytes": 4239,
+      "sha256": "c517aadb4d0fa90b399c0a4f1a26639ed7bd7e05a2a32d420eb701eca51b597e"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v3/tests-normal.log": {
+      "bytes": 2147,
+      "sha256": "26fc7d916c8576df2f9ee7dc4a697af8c0ee0721f21ef131bf20422900466c1a"
+    },
+    "source-assets/cloud-bank58/revision-l/design-v3/tests-optimized.log": {
+      "bytes": 2147,
+      "sha256": "9ac19c6bcc42c0bb307c1a2706c19892d311557fc38d698d59b08ca2d60a8ec5"
+    },
+    "source-assets/cloud-bank58/revision-l/source-runner-v2/PREPARATION_CHECK.json": {
+      "bytes": 624,
+      "sha256": "d5c59e534c1d5e27830a316cafc8c855f8a492e2e118f88e4d6017136a386662"
+    },
+    "source-assets/cloud-bank58/revision-l/source-runner-v2/README.md": {
+      "bytes": 8975,
+      "sha256": "7e7ec5722cb9c13ad399504aa7d31ea3c0491f7d8b937203a7fa1f8325a508ef"
+    },
+    "source-assets/cloud-bank58/revision-l/source-runner-v2/SOURCE_BINDING.json": {
+      "bytes": 22151,
+      "sha256": "cd1e8ec00534b1c32e3a0c08e12c0a9ec77704c22382930f5d7dfdd43c133b75"
+    },
+    "source-assets/cloud-bank58/revision-l/source-runner-v2/deadline58l.py": {
+      "bytes": 7433,
+      "sha256": "4a058c58dbe9168fe5f4e8ed4183fb3c8bee38a6bc5baeadcfb9b03058582f15"
+    },
+    "source-assets/cloud-bank58/revision-l/source-runner-v2/run58l_v2.py": {
+      "bytes": 24493,
+      "sha256": "841575657eab81c72b80de5b2a9339342961cdcbb182d986745a1742a3640507"
+    },
+    "source-assets/cloud-bank58/revision-l/source-runner-v2/test_runner58l_v2.py": {
+      "bytes": 17342,
+      "sha256": "efac4bb8e68e69630fe28074517d3eda3a4c1e330a0a67ef7c28349a8e0f51e7"
+    },
+    "source-assets/cloud-bank58/revision-l/source-runner-v2/tests-normal-attempt01.log": {
+      "bytes": 1995,
+      "sha256": "eeabb5fe5f282cdd8e20f76a97031f1dd1473ec568c7c8c1b597591f511fce7f"
+    },
+    "source-assets/cloud-bank58/revision-l/source-runner-v2/tests-normal-attempt02.log": {
+      "bytes": 4523,
+      "sha256": "f06604c2c7527c7a14a8b613a2d34593680a3a24e22f9d160373682277732bb2"
+    },
+    "source-assets/cloud-bank58/revision-l/source-runner-v2/tests-normal.log": {
+      "bytes": 4767,
+      "sha256": "79384eea224856e4c2773f845caac62b4787696882293204cf80a91d1a1d7861"
+    },
+    "source-assets/cloud-bank58/revision-l/source-runner-v2/tests-optimized.log": {
+      "bytes": 4767,
+      "sha256": "cb4e5de862175bc58088cc06a150f0dd6be29e9f54514be3c2d90095b8eafc87"
+    },
+    "source-assets/cloud-bank58/revision-l/source-v1/.gitignore": {
+      "bytes": 19,
+      "sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793"
+    },
+    "source-assets/cloud-bank58/revision-l/source-v1/FINAL_SHA256.json": {
+      "bytes": 20778,
+      "sha256": "e6af7411124e43a08afa636248b2635be09a03fe3516d4a81749a339d94554c8"
+    },
+    "source-assets/cloud-bank58/revision-l/source-v1/INDEPENDENT_REVIEW.md": {
+      "bytes": 14293,
+      "sha256": "99e34ba588f682b07ee9ff56b3c973bbf2b3ef128fa2e93bc0a53327100b1884"
+    },
+    "source-assets/cloud-bank58/revision-l/source-v1/PACKAGE_MANIFEST.json": {
+      "bytes": 5138,
+      "sha256": "edc3d1c18f98be1457c1c4a895241b3491f3765cdc05b6bdf0b05964ecc78b56"
+    },
+    "source-assets/cloud-bank58/revision-l/source-v1/PREPARATION_CHECK.json": {
+      "bytes": 2475,
+      "sha256": "1bd72cec0c97df6e20bd61f1d4a21ba4948c1b9067146f02fc5d542fe9333082"
+    },
+    "source-assets/cloud-bank58/revision-l/source-v1/README.md": {
+      "bytes": 9346,
+      "sha256": "6b1688dcd8b86c500c63e2911476e70335a1564303e6378d3e5e51694c16b5ed"
+    },
+    "source-assets/cloud-bank58/revision-l/source-v1/SHA256SUMS.txt": {
+      "bytes": 3054,
+      "sha256": "03ccaba2925d414edb5e1437745bc2fe74ae093388f8422a936d18150063c285"
+    },
+    "source-assets/cloud-bank58/revision-l/source-v1/audit_profiles58l.py": {
+      "bytes": 4122,
+      "sha256": "6f07c849583d066ed5ed7c853a6d6b15c7eb7f19cb39cfe2207b4cd48fc98a5c"
+    },
+    "source-assets/cloud-bank58/revision-l/source-v1/bindings.json": {
+      "bytes": 35186,
+      "sha256": "2dae0bd8bc39a2a0101f32cba53c475e5442a406ae6ae83cb689e104596f0a54"
+    },
+    "source-assets/cloud-bank58/revision-l/source-v1/candidate-attempt01.json": {
+      "bytes": 403033,
+      "sha256": "3f73c018ddfc3d4439c35d76cdeb45a733161ca2de7217caa702463fc67b5963"
+    },
+    "source-assets/cloud-bank58/revision-l/source-v1/candidate-attempt02.json": {
+      "bytes": 403046,
+      "sha256": "acd73eec3813f0ce3e72ed7fd57408a66623cf76b4d6483c06cc303985d24025"
+    },
+    "source-assets/cloud-bank58/revision-l/source-v1/candidate-attempt03.json": {
+      "bytes": 402954,
+      "sha256": "ea7d2ce655646ebe5935b9aee34af578af0ff22c261b93232d9a3ec3e359a37c"
+    },
+    "source-assets/cloud-bank58/revision-l/source-v1/candidate-preparation.json": {
+      "bytes": 1847,
+      "sha256": "41743fd1531c490d8e0b9b9559ce091a1bd6c93d9928efde55f1bdb5943c3aef"
+    },
+    "source-assets/cloud-bank58/revision-l/source-v1/candidate.json": {
+      "bytes": 438411,
+      "sha256": "3a0c9b31f9bcc715db982c1536596dbaba7e9a8377c409e49885804ee1a13b5d"
+    },
+    "source-assets/cloud-bank58/revision-l/source-v1/check_preparation58l.py": {
+      "bytes": 3189,
+      "sha256": "a2b6213b6cdee64deb1543dd2595c1e6de7fc5b8e0c9880224fc27151c007daf"
+    },
+    "source-assets/cloud-bank58/revision-l/source-v1/failure-replay.json": {
+      "bytes": 4645,
+      "sha256": "38c8de64609919441ba51b55c97db7b176e3b95cf3123776e87507706332a1c8"
+    },
+    "source-assets/cloud-bank58/revision-l/source-v1/geometry58l.py": {
+      "bytes": 12391,
+      "sha256": "5342902d33ceead7213b558a265d36da92686649a0487035409abdcb383d4b7d"
+    },
+    "source-assets/cloud-bank58/revision-l/source-v1/native58l.py": {
+      "bytes": 25743,
+      "sha256": "a0d9059d2d94f14bd7890b6835674f45a2d8b6fc9a0d8d69ee3440376b1007ad"
+    },
+    "source-assets/cloud-bank58/revision-l/source-v1/native_support58l.py": {
+      "bytes": 15961,
+      "sha256": "e8cd215f0170453d9fd7c38b68641c0dfb8fa09f59b3eb4e91b1b1f627932ff1"
+    },
+    "source-assets/cloud-bank58/revision-l/source-v1/preparation-attempt.log": {
+      "bytes": 1776,
+      "sha256": "d46dbcec65ce07a578bb70fc818e239783342936dc699f89e7c0afa344e5ab07"
+    },
+    "source-assets/cloud-bank58/revision-l/source-v1/preparation-attempt02.log": {
+      "bytes": 1755,
+      "sha256": "3377d97afc6d4adcdba6ec88494828b63cf92052a337c7d5b13bdc95abdf604a"
+    },
+    "source-assets/cloud-bank58/revision-l/source-v1/preparation-attempt03.log": {
+      "bytes": 1641,
+      "sha256": "b60cdfe27ad622d39745ee26914a135395781c1dcebd97178984204d4364fc48"
+    },
+    "source-assets/cloud-bank58/revision-l/source-v1/preparation-attempt04.log": {
+      "bytes": 2236,
+      "sha256": "852be7b07c5dec641ec819b63264bc3608781c24e92d75040462dc409cf332bc"
+    },
+    "source-assets/cloud-bank58/revision-l/source-v1/preparation-check.log": {
+      "bytes": 2853,
+      "sha256": "96f62e8d1048a97d4fa0a0347f83839986e52e202bf37a7336a8aedf4c5a1f39"
+    },
+    "source-assets/cloud-bank58/revision-l/source-v1/preparation-final.log": {
+      "bytes": 2356,
+      "sha256": "d819e2c2b14b5ed3c3f06b420022dcc84a2a40eecec50ee2c1a9f5bcb98412ba"
+    },
+    "source-assets/cloud-bank58/revision-l/source-v1/prepare_candidate58l.py": {
+      "bytes": 16654,
+      "sha256": "52cba2c7e352c5805e1a42768293d31b4d12faa16a2a8ba90254f4b3da138cc1"
+    },
+    "source-assets/cloud-bank58/revision-l/source-v1/profile-approximation.json": {
+      "bytes": 81283,
+      "sha256": "8503079ad1ec603b7fe1a99549e27e1fbd19621dd4faa99257ba328b633357ed"
+    },
+    "source-assets/cloud-bank58/revision-l/source-v1/profile-audit.log": {
+      "bytes": 5687,
+      "sha256": "81d23a7f0e76ce1376fb888282e428a54617421a89890534e0a14643a81abb3a"
+    },
+    "source-assets/cloud-bank58/revision-l/source-v1/replay_failures58l.py": {
+      "bytes": 3242,
+      "sha256": "248ebffb2767798027b3d54a6f194c88f3902032e2ba343084021a60a4ce0990"
+    },
+    "source-assets/cloud-bank58/revision-l/source-v1/rim-source-binding.json": {
+      "bytes": 59764,
+      "sha256": "e5f9eafbdc6a9c14469bedfbff22ab9ce3bc04e49fae87af66876b319fa161eb"
+    },
+    "source-assets/cloud-bank58/revision-l/source-v1/run58l.py": {
+      "bytes": 17932,
+      "sha256": "9bede5e0f3aa471ce1932510867a42bb7ac2074bdc99ee78584fb2224256b9d3"
+    },
+    "source-assets/cloud-bank58/revision-l/source-v1/test_geometry58l.py": {
+      "bytes": 4386,
+      "sha256": "85f5b735f19baf2bf4704aeca0bde0f0bac3cdb97b3cac993b884a88e25a171a"
+    },
+    "source-assets/cloud-bank58/revision-l/source-v1/test_native58l.py": {
+      "bytes": 15951,
+      "sha256": "a8a4d3815985189c848f740248be5441e9f133faa872d3fa84467d8367290022"
+    },
+    "source-assets/cloud-bank58/revision-l/source-v1/tests-geometry-normal.log": {
+      "bytes": 2035,
+      "sha256": "8f0b7451bf8632a8b2b98f343d068a002d95e1993ccea88a4cc22457f7cdb3b1"
+    },
+    "source-assets/cloud-bank58/revision-l/source-v1/tests-geometry-optimized.log": {
+      "bytes": 2035,
+      "sha256": "c085e3d6a5f7ea9b284e29127b25131af4b2b1b33f625da803f1e592d2991738"
+    },
+    "source-assets/cloud-bank58/revision-l/source-v1/tests-native-normal.log": {
+      "bytes": 3231,
+      "sha256": "ecbfd7880e43afa809027348e68d50b7a1b3825b688bf537babcc0f07d13e4ff"
+    },
+    "source-assets/cloud-bank58/revision-l/source-v1/tests-native-optimized.log": {
+      "bytes": 3231,
+      "sha256": "d528d3fa6477573aa898c6c34a68492c8362e1f64bf41e16b8ee4e6c8ccbfc01"
+    },
+    "source-assets/north-ridge62-authoring/recovery-v2/run_source62.py": {
+      "bytes": 10566,
+      "sha256": "4ef00afa92d4175bcfcced0a16d4a44d7d2288bb3c2b525a8bc83a663a1255ce"
+    },
+    "source-assets/north-ridge62-authoring/recovery-v2/telemetry62.py": {
+      "bytes": 1058,
+      "sha256": "3333d5915f1746a2326580fab665b1112db08eda5cc101721ad18c65221ac691"
+    },
+    "source-assets/cloud-bank58/revision-l/source-runner-v2/FINAL_SHA256.json": {
+      "bytes": 23003,
+      "sha256": "538c6786899d6357d5d8bcfd52fec79cd43af81cb110d90d5e0c527599952a25"
+    },
+    "source-assets/cloud-bank58/revision-l/source-runner-v2/INDEPENDENT_REVIEW.md": {
+      "bytes": 13991,
+      "sha256": "f275080d7d90a0d8029b4936fb40bf1c9136410b820d114d52f1c7af70001907"
+    },
+    "source-assets/cloud-bank58/revision-l/source-runner-v2/PACKAGE_MANIFEST.json": {
+      "bytes": 1741,
+      "sha256": "37ef33c2b8a2b187ec9e5e19761a544216c3b0932204c8902ae557156c838828"
+    },
+    "source-assets/cloud-bank58/revision-l/source-runner-v2/SHA256SUMS.txt": {
+      "bytes": 1025,
+      "sha256": "95984f2931c125bfc26cacf597c9ae94e8a27611da149b1bc1437f1814a62076"
+    }
+  },
+  "old_dependencies_unchanged": true,
+  "old_v2_original_file_count": 14,
+  "source": "all prior v2 FINAL files plus all original v2 package files including independent review; no old file copied",
+  "preexisting_local_cache_observations": {
+    "source-assets/cloud-bank58/revision-l/source-v1/__pycache__/native58l.cpython-312.opt-1.pyc": {
+      "bytes": 60334,
+      "sha256": "15829257bc56154dca88996451bad0c30ff040927bda06bf196ecccd9dbb1410"
+    },
+    "source-assets/cloud-bank58/revision-l/source-v1/__pycache__/native58l.cpython-312.pyc": {
+      "bytes": 60334,
+      "sha256": "15829257bc56154dca88996451bad0c30ff040927bda06bf196ecccd9dbb1410"
+    },
+    "source-assets/cloud-bank58/revision-l/source-v1/__pycache__/native_support58l.cpython-312.opt-1.pyc": {
+      "bytes": 30952,
+      "sha256": "aebc3398f801f747fe7d9a50c17eec12dfaf04461fe76d5224c5d676af2ac78b"
+    },
+    "source-assets/cloud-bank58/revision-l/source-v1/__pycache__/native_support58l.cpython-312.pyc": {
+      "bytes": 30952,
+      "sha256": "aebc3398f801f747fe7d9a50c17eec12dfaf04461fe76d5224c5d676af2ac78b"
+    }
+  },
+  "cache_note": "Preexisting local bytecode is observed before/after, not a required distributable dependency. Source files and original freeze are the portable authority."
+}

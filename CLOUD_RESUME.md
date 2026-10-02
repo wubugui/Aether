@@ -1,6 +1,6 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 17:01 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 17:41 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
 
 ## 云端硬性前置闸门：先插件上传完整核回，再继续工作
 
@@ -11,6 +11,17 @@
 - 上传失败优先查明原因并在授权内反复进行合规恢复，保持原payload、完整base tree/parent和非force ref；真实安全拒绝必须停止该动作，按批准规则取得明确证据/一次原call重试，仍拒则报告并保持闸门关闭，绝不绕审批/换route
 - 本项全部完成成果和本入口更新都核回后，才允许下一项。纯读取以查错/确认上传状态可以继续；与修复当前上传无关的新开发/渲染必须等待
 - 私密Slack交付定位符/收据仍仅本地，不因“全部项目”混入公开仓库；原受阻发送保持独立停止
+
+## 17:41 runner-v3环境适配有限独审接受，发布后可一次真实source
+
+- 前v2修复/漏后代实证已完整发布 **3549fb37b4a584c277a4c5358d048b2cc2b98b79**，tree **f63ff1610f2afb27d525d78b0a011bfb04e8e7a4**、parentd9356dc5；15路径/15唯一blob新bare公共Git逐字节/SHA核回，本地7e0bb08同树对齐。create_tree首拒后原用户指定仓库/全部工程成果证据同参数一次重试成功，4blob不重传
+- [新source-runner-v3](source-assets/cloud-bank58/revision-l/source-runner-v3/README.md)原31文件/1294707B，manifest SHAbfd311ce6d7f64d8dee82f5f6e3fc67826fe225a840ea1ffece55da7e0912e4b；FINAL SHAefb4ae1bf136e14a089bd1864ec3dcc5f431871d41d5b3acbd75b1f952c251f5。原123依赖113312816B/4既有cache未变，151条FINAL逐字节同、实际frozen_inputs返回152含自身；不复制原候选/模型/准备包
+- 自有worker/native先登记、核PID/PPid/PGID/SID/starttime并开pidfd才放行；用必要最少进程关系元数据发现自有后代与收养，丢弃无关行，不再依赖缺失children接口，不读环境/命令行/私人内容。pidfd只杀已绑定身份，反复scan/kill/WNOHANG-reap，失败清理与失败收据最多1秒且不能变成功；保120秒/CPU2/1.5GiB/build80/verify30/render27/20秒收尾
+- [独立复审](source-assets/cloud-bank58/revision-l/source-runner-v3/INDEPENDENT_REVIEW.md)15901B/SHA62953fcba7c060be91d0efe80f277dc7bb265f5ba7870f3c047168e3d8169e34有限接受：normal/-O各78+76=154实际过，主外墙钟9.094/9.699秒、stage .416/.617秒。另路五层/分支真实自有5长睡后代全部SIGKILL，6孩子实际wait4回收、早退父自然0，收养PPid/7进程77952KiB总RSS实证，无关兄弟保持存活再自然0；外部exit1/.314661秒，未等3秒自然睡完
+- 旧v2原反例继续真实失败，未重写历史；正确重新封SHA的错stage记录/receipt仍拒。原R1全actual控制/manual combined、R2精确阶段保护及完整尾操作截止未退化。运行期RSS是5ms目标采样，不冒称内核瞬时硬上限；PID复用及不可杀负控的模拟与真实kill证据严格区分。独立探针两次自身日志/过强样本断言错误及修正如实披露，不当生产缺陷或最初全过
+- **本包完整插件发布/原字节核回之后，才允许一次真正source保存+独立fresh-open。** 唯一runner为source-runner-v3/run58l_v3.py，复用原source-v1/native及候选，唯一未来.blend仍source-v1/cloud_bank58l.blend；任何版本已有该阶段attempt/terminal都拒重试。调用方必须真实Popen/wait测完整launcher exit0且总wall<120，核全部source stage/PID/完整SHA后才写外观察，不能只凭prepared或收据自报成功
+- source全部产物/真实失败或成功再次插件外存核回之后，views才可独立一次准入。当前**0真实native/.blend/PNG/阶段准入**，几何有限结论不升级为源、视觉、完整接触、世界或全部GOAL验收；本项不改原1567V/3130tri造型、材料、相机与任何几何门
+- v2两原报告22966B已正常交付并全文SHA核回，各仅一次；本轮累计51成功/旧23仍停，私密交付收据仅本地，不包含在公开成果中
 
 ## 17:01 runner-v2修复部分成立；当前环境漏后代监督使source/views仍HOLD
 
