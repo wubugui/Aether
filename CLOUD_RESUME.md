@@ -1,6 +1,15 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 09:31 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 09:38 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 09:38 K忠实NORMAL转换与北单点Script路径修正准备完成
+
+- 北v3原生parse失败已完整发布 **03309992676aacf316657c84fee413da7ae61e72**，tree **cbb0c1a2f209b2e7f78160b0e451da216df38712**、parentc9451fc4；25路径/25blob新bare公共Git逐字节/SHA核回一致，本地b3760de同树对齐
+- [K transfer-v2准备](source-assets/cloud-bank58/revision-k/transfer-v2/README.md)：只从既有actual corner/raw GLB派生新NORMAL payload，全部1152render顶点由原face/loop精确映射，384有向三角双射。内存候选只变13824准许normal槽中的6297字节，其余header/JSON/material/position/index/padding全字节同；候选SHA4aa51a731723cb6cadf7808da210c232ddae97a9026ab59fe08b9c3846817441，原3e-5下最大8.509929e-6、位置0，无新源/GLB文件
+- 普通/-O各12methods及独立1152normal直接映射/384翻向负控通过，父check1078身份全过；freeze SHAd21d627194704f78066ed04a78417a39da296dd8780d467a0ffc5d9de0786d6f。**未执行转换或Godot**。原两次失败不改、actual capture验证失败明确保留；材料color/roughness有原native helper证据，metallic/culling保原作者/v1期望，未冒称新raw实测
+- 发布后单次派生明确标注非未改官方export的cloud58k-restored-corners.glb，再独立/tmp Godot import30/read20/fresh reload20，outer120/CPU2/1.5GiB，主工程及所有原source/GLB前后核。无重复Blender读取/导出，无世界/图片；原probe字节不变且实际parse尚未验证，原Godot2e-4 packed-normal门不变
+- [北shadow-script-v4](source-assets/north-ridge62-intake/proxy-bounds-v1/shadow-script-v4/README.md)只对v3一处换成auditor.get_script()→is Script→typed Script.resource_path并继续核原helper SHA；逆补丁可逐字节还原整个v3，其余geometry/engine/schema/launcher全门保持。72普通/-O+独立审查及父default静态exit0，freeze SHAd96b50f98289f36cb0749b18496bd59f49e2698903c4707d9975957fb033ec21
+- v4 **尚未native**；发布后仅原CPU2/60秒六mesh/rock读取，再逐实例约束输出，转山体制作。两项均已准备完等待错峰单次执行，当前无Aether engine。固定4rad成功不重复；Slack集中双频道/补发仍待答，原八件继续停；全GOAL/硬件GPU未验收
 
 ## 09:31 北shadow-v3首次native解析失败保全
 
