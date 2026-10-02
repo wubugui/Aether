@@ -1,0 +1,60 @@
+{
+  "version": "cloud58k-world-trial-v1",
+  "stage": "parse",
+  "passed": true,
+  "state": "completed",
+  "limits": {
+    "parse_child_seconds": 30,
+    "renderer_child_seconds": 240,
+    "wrapper_seconds": 300,
+    "cpus": 2,
+    "maximum_aggregate_rss_kib": 3145728,
+    "images": 4,
+    "requested_window_width": 1180,
+    "requested_window_height": 664
+  },
+  "native_scene_source_sha256": "91ab3412c67b5f82449396677a30a9bbe1542a338c00150dc1822910cdf7f789",
+  "freeze_sha256": "4c99da76ec61bae16a3ec445f187286ef68471d1261bef989eb1c2bb352ae148",
+  "images": 0,
+  "world_geometry_saved": false,
+  "blender_started": false,
+  "glb_derived": false,
+  "visual_acceptance": false,
+  "hardware_gpu_acceptance": false,
+  "temporary_project": "/tmp/cloud58k-world-trial-v1-d92irkqc",
+  "process": {
+    "status": "finished",
+    "command": [
+      "/workspace/scratch/a29d03198654/tools-feiting/Godot_v4.5.1-stable_linux.x86_64",
+      "--path",
+      "/tmp/cloud58k-world-trial-v1-d92irkqc",
+      "--audio-driver",
+      "Dummy",
+      "--headless",
+      "--check-only",
+      "--script",
+      "res://cloud_k_trial/parse58k.gd"
+    ],
+    "cpu_affinity": [
+      0,
+      1
+    ],
+    "wall_timeout_seconds": 30,
+    "wall_timeout_limit_seconds": 720,
+    "timeout_triggered": false,
+    "wrapper_received_signal": null,
+    "returncode": 0,
+    "native_exit_observed": true,
+    "max_rss_kib": 423576,
+    "rss_limit_triggered": false,
+    "max_aggregate_observed_rss_kib": 456916,
+    "pid": 5,
+    "signal": null,
+    "wall_seconds": 5.8968723049911205
+  },
+  "main_project_unchanged": true,
+  "temporary_project_manifest_sha256": "0cc6c72f733f51320a460a1e31be153b1516aafba3576abe792a3569685201ea",
+  "frozen_inputs_unchanged": true,
+  "elapsed_seconds": 14.962934733994189,
+  "logged_errors": []
+}
