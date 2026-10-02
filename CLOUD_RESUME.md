@@ -1,6 +1,13 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-02 09:26 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-02 09:31 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+
+## 09:31 北shadow-v3首次native解析失败保全
+
+- actual corner诊断与shadow-v3准备已完整发布 **c9451fc418f1b5e2c1d45b71ae342e61fb0a55cb**，tree **c6442f9906abe0ecbcb19ae0010c936d7f6a9846**、parentb86a8383；18路径/18blob新bare公共Git逐字节/SHA核回一致，本地93f4993同树对齐。中间读取tree JSON输出截断仅本地解析失败，重读完整后才第一次create_tree，已存3blob无重复
+- [v3一次native结果](cloud-evidence/north-ridge62-shadow-arrays-v3-20261002T092937Z-rurh4rw7/RESULT.md)child1/wrapper1、.506秒/117600KiB/CPU2，60秒界未触发。line69 `ShadowAudit.resource_path`对preload class取Script资源属性引起解析拒绝，**未初始化/0mesh读取/无native report**；原两条engineerror及后续FileNotFoundError完整保留，未改源/资源/世界，全部输入/全1483闭包及启动控制未变
+- 原v3/freeze/失败保持；正在独立v4仅把该类型访问改为真实helper实例get_script后的Script资源路径并继续核同SHA，其余v3完整schema/六mesh/rock/影覆盖/snapping/无epsilon门不动，不追加审计范围。发布失败后只一次修正采集；当前MAZ已接走窗口，无Aether engine
+- K实际corner忠实transfer-v2仍准备中，原3e-5保持，未来仅改新GLB的NORMAL字节、保raw/其余字节/源，隔离Godot保存fresh reload；不重读已完整actual数据。固定4rad观察95ffd10已接受窄运行范围，视觉和全GOAL/硬件GPU仍未验收。Slack集中双频道/补发仍待答，原八件继续停
 
 ## 09:26 实际corner法线原门通过；北shadow-v3准备完成
 
