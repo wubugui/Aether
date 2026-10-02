@@ -1,0 +1,115 @@
+{
+  "candidate": "58J2",
+  "passed": true,
+  "one_fixed_candidate_only": true,
+  "changed_control_fields": [
+    "Back_Diagonal_Ledge.center",
+    "Left_Short_Accent.center"
+  ],
+  "local_planes_metric_normals_scales_yaws_unchanged": true,
+  "topology_union_intersection_code_byte_identical": true,
+  "tolerances_and_budgets_unchanged": true,
+  "certificates": [
+    {
+      "moving_region": "Back_Diagonal_Ledge",
+      "passed": true,
+      "minimum_norm_m": 15.840991672559714,
+      "minimum_primal_slack_m": -1.5987211554602254e-14,
+      "maximum_stationarity_residual": 2.4868995751603507e-14,
+      "maximum_complementarity_residual": 4.996587339441489e-13,
+      "primal_objective": 125.46850858505309,
+      "dual_lower_bound": 125.46850858505334,
+      "duality_gap": -2.5579538487363607e-13,
+      "directed_LP_minimum_m": 15.840991672559715
+    },
+    {
+      "moving_region": "Left_Short_Accent",
+      "passed": true,
+      "minimum_norm_m": 8.028394041335725,
+      "minimum_primal_slack_m": -3.9968028886505635e-15,
+      "maximum_stationarity_residual": 8.659739592076221e-15,
+      "maximum_complementarity_residual": 2.977217462058396e-14,
+      "primal_objective": 32.227555441477485,
+      "dual_lower_bound": 32.227555441477456,
+      "duality_gap": 2.842170943040401e-14,
+      "directed_LP_minimum_m": 8.028394041335723
+    }
+  ],
+  "all_pair_triple_LPs_evaluated": true,
+  "higher_intersections_pruned_only_by_impossible_subsets": true,
+  "positive_nerve_simplex_counts_before": {
+    "2": 12,
+    "3": 3
+  },
+  "positive_nerve_simplex_counts_after": {
+    "2": 12,
+    "3": 5
+  },
+  "new_positive_overlaps": [
+    {
+      "regions": [
+        "Main_Crown",
+        "Rear_Crown",
+        "Back_Diagonal_Ledge"
+      ],
+      "maximum_common_inscribed_radius_m": 0.5000000000000573,
+      "center_UVY": [
+        6.852899553566611,
+        15.208152863308863,
+        757.8546914022326
+      ],
+      "positive_volume_overlap": true
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Front_Short_Fold",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": 0.49999999999996403,
+      "center_UVY": [
+        -151.53229523789767,
+        -42.891068864075926,
+        729.4825053561451
+      ],
+      "positive_volume_overlap": true
+    }
+  ],
+  "lost_positive_overlaps": [],
+  "empty_triples_with_all_pairwise_overlaps_before": [
+    {
+      "regions": [
+        "Main_Crown",
+        "Rear_Crown",
+        "Back_Diagonal_Ledge"
+      ],
+      "maximum_common_inscribed_radius_m": -4.246704140351342,
+      "center_UVY": [
+        1.4475940840260229,
+        37.45072258894171,
+        755.6430837461119
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Front_Short_Fold",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -2.0295176837841926,
+      "center_UVY": [
+        -157.28437286504052,
+        -41.659593076830774,
+        729.4098206479623
+      ],
+      "positive_volume_overlap": false
+    }
+  ],
+  "empty_triples_with_all_pairwise_overlaps_after": [],
+  "protected_file_count": 692,
+  "protected_unchanged": true,
+  "native_started": false,
+  "visual_acceptance": false,
+  "elapsed_seconds": 0.49899256900243927
+}

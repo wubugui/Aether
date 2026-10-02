@@ -1,0 +1,86 @@
+{
+  "passed": true,
+  "test_count": 16,
+  "tests": [
+    {
+      "name": "Back_Diagonal_Ledge valid certificate",
+      "passed": true
+    },
+    {
+      "name": "0 changed source normal",
+      "passed": true,
+      "actual_error": "Certificate source linear constraints differ"
+    },
+    {
+      "name": "0 changed source support",
+      "passed": true,
+      "actual_error": "Certificate source linear constraints differ"
+    },
+    {
+      "name": "0 changed stored translation",
+      "passed": true,
+      "actual_error": "Stored translation differs from certificate"
+    },
+    {
+      "name": "0 infeasible witness",
+      "passed": true,
+      "actual_error": "KKT primal feasibility"
+    },
+    {
+      "name": "0 negative multiplier",
+      "passed": true,
+      "actual_error": "KKT dual feasibility"
+    },
+    {
+      "name": "0 zero dual cannot certify nonzero motion",
+      "passed": true,
+      "actual_error": "KKT stationarity"
+    },
+    {
+      "name": "0 perturbed multiplier",
+      "passed": true,
+      "actual_error": "KKT stationarity"
+    },
+    {
+      "name": "Left_Short_Accent valid certificate",
+      "passed": true
+    },
+    {
+      "name": "1 changed source normal",
+      "passed": true,
+      "actual_error": "Certificate source linear constraints differ"
+    },
+    {
+      "name": "1 changed source support",
+      "passed": true,
+      "actual_error": "Certificate source linear constraints differ"
+    },
+    {
+      "name": "1 changed stored translation",
+      "passed": true,
+      "actual_error": "Stored translation differs from certificate"
+    },
+    {
+      "name": "1 infeasible witness",
+      "passed": true,
+      "actual_error": "KKT primal feasibility"
+    },
+    {
+      "name": "1 negative multiplier",
+      "passed": true,
+      "actual_error": "KKT dual feasibility"
+    },
+    {
+      "name": "1 zero dual cannot certify nonzero motion",
+      "passed": true,
+      "actual_error": "KKT stationarity"
+    },
+    {
+      "name": "1 perturbed multiplier",
+      "passed": true,
+      "actual_error": "KKT stationarity"
+    }
+  ],
+  "optimized_python": false,
+  "native_started": false
+}

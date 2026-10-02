@@ -1,0 +1,704 @@
+{
+  "candidate": "58J2",
+  "passed": true,
+  "state": "completed",
+  "native_started": false,
+  "images": [],
+  "visual_acceptance": false,
+  "geometry_modified_by_probe": false,
+  "cpu_affinity": [
+    0,
+    1
+  ],
+  "design_sha256": "1722e0443be6499d85d68ef3407c5878b8ae7b55e4b8a0db703da7c0b9985876",
+  "stage": "complete",
+  "topology": {
+    "vertices": 665,
+    "triangles": 1326,
+    "edges": 1989,
+    "components": 1,
+    "euler": 2,
+    "positive_volume_m3": 9584992.767259402,
+    "minimum_triangle_area_m2": 0.000544603532760569,
+    "minimum_edge_m": 0.023627529797977612,
+    "maximum_edge_m": 148.21675388995132,
+    "directed_edge_incidence_two": true,
+    "all_vertex_links_one_cycle": true
+  },
+  "arithmetic_audit": {
+    "consecutive_equal_arithmetic_stations": 0,
+    "zero_dimensional_clip_outputs": 0,
+    "zero_area_clip_outputs": 0,
+    "nonunique_parallel_plane_triples": 0,
+    "maximum_weld_displacement_m": 9.498975809417745e-13,
+    "shared_edge_stations_inserted": 220
+  },
+  "exposed_clipped_polygon_count": 268,
+  "fingerprint": {
+    "vertices_sha256": "363c5e780066555fc2777d10dfaf62156df7238577bbc6706c53dc55feb7ffcb",
+    "faces_sha256": "5b6fd99706153f3f57838f9f9d24f6ce78f7d5260a05a7e607a1427a591ca511"
+  },
+  "metric_union_slopes": {
+    "measurement": "Actual exposed union triangle area in physical source-local UVY, grouped by source plane; not input inclination labels",
+    "total_area_m2": 371494.8968457517,
+    "fractions": {
+      "within_15deg_horizontal": 0.0,
+      "within_15deg_vertical": 0.0,
+      "inclined_15_to_60deg": 0.9673840640445717
+    },
+    "authored_planes": {
+      "Main_Crown:10": {
+        "area_m2": 17676.545171632148,
+        "inclination_from_horizontal_degrees": 52.99999999998855
+      },
+      "Main_Crown:2": {
+        "area_m2": 17349.518015962913,
+        "inclination_from_horizontal_degrees": 31.999999999999662
+      },
+      "Rear_Crown:1": {
+        "area_m2": 16045.279232981939,
+        "inclination_from_horizontal_degrees": 26.999999999999996
+      },
+      "Main_Crown:0": {
+        "area_m2": 15383.763818155227,
+        "inclination_from_horizontal_degrees": 28.999999999999996
+      },
+      "Main_Crown:1": {
+        "area_m2": 14889.402414914344,
+        "inclination_from_horizontal_degrees": 36.99999999999999
+      },
+      "Main_Crown:3": {
+        "area_m2": 13736.66939590612,
+        "inclination_from_horizontal_degrees": 43.00000000000081
+      },
+      "Main_Crown:11": {
+        "area_m2": 12145.95501549492,
+        "inclination_from_horizontal_degrees": 38.999999999998394
+      },
+      "Rear_Crown:3": {
+        "area_m2": 11226.302950155936,
+        "inclination_from_horizontal_degrees": 34.000000000000995
+      },
+      "Front_Lower_Buttress:10": {
+        "area_m2": 10005.960153439479,
+        "inclination_from_horizontal_degrees": 49.000000000000036
+      },
+      "Rear_Crown:12": {
+        "area_m2": 9884.223033878492,
+        "inclination_from_horizontal_degrees": 44.99999999999932
+      },
+      "Rear_Crown:0": {
+        "area_m2": 8780.800665039731,
+        "inclination_from_horizontal_degrees": 37.99999999999989
+      },
+      "Rear_Crown:9": {
+        "area_m2": 8131.817813795055,
+        "inclination_from_horizontal_degrees": 50.999999999999666
+      },
+      "Main_Crown:9": {
+        "area_m2": 8056.831995787931,
+        "inclination_from_horizontal_degrees": 45.00000000000016
+      },
+      "Front_Lower_Buttress:11": {
+        "area_m2": 8003.9288460735315,
+        "inclination_from_horizontal_degrees": 55.99999999999991
+      },
+      "Rear_Lower_Buttress:10": {
+        "area_m2": 7836.322876116676,
+        "inclination_from_horizontal_degrees": 42.00000000000005
+      },
+      "Front_Short_Fold:12": {
+        "area_m2": 7661.386840882091,
+        "inclination_from_horizontal_degrees": 51.999999999999886
+      },
+      "Rear_Lower_Buttress:12": {
+        "area_m2": 7597.806089765133,
+        "inclination_from_horizontal_degrees": 37.000000000000064
+      },
+      "Back_Diagonal_Ledge:10": {
+        "area_m2": 7503.59438561269,
+        "inclination_from_horizontal_degrees": 38.00000000000645
+      },
+      "Rear_Crown:10": {
+        "area_m2": 7302.489783525881,
+        "inclination_from_horizontal_degrees": 40.99999999999997
+      },
+      "Rear_Lower_Buttress:9": {
+        "area_m2": 7107.348572631834,
+        "inclination_from_horizontal_degrees": 53.999999999999794
+      },
+      "Front_Lower_Buttress:9": {
+        "area_m2": 6899.6290917172855,
+        "inclination_from_horizontal_degrees": 39.00000000000015
+      },
+      "Front_Short_Fold:9": {
+        "area_m2": 6731.398113986808,
+        "inclination_from_horizontal_degrees": 44.00000000000001
+      },
+      "Front_Lower_Buttress:12": {
+        "area_m2": 6533.879107878496,
+        "inclination_from_horizontal_degrees": 43.999999999999964
+      },
+      "Rear_Crown:2": {
+        "area_m2": 6375.056770814647,
+        "inclination_from_horizontal_degrees": 42.00000000000364
+      },
+      "Back_Diagonal_Ledge:1": {
+        "area_m2": 6078.483790720231,
+        "inclination_from_horizontal_degrees": 40.99999999998929
+      },
+      "Front_Short_Fold:11": {
+        "area_m2": 6059.808877131766,
+        "inclination_from_horizontal_degrees": 40.0000000000001
+      },
+      "Back_Diagonal_Ledge:11": {
+        "area_m2": 5929.571954100875,
+        "inclination_from_horizontal_degrees": 54.99999999999957
+      },
+      "Front_Lower_Buttress:3": {
+        "area_m2": 5492.3474105570485,
+        "inclination_from_horizontal_degrees": 38.0000000000003
+      },
+      "Front_Short_Fold:0": {
+        "area_m2": 5224.226792265997,
+        "inclination_from_horizontal_degrees": 35.00000000000053
+      },
+      "Rear_Lower_Buttress:11": {
+        "area_m2": 4974.826045211087,
+        "inclination_from_horizontal_degrees": 48.000000000000036
+      },
+      "Front_Lower_Buttress:2": {
+        "area_m2": 4676.080879373791,
+        "inclination_from_horizontal_degrees": 29.000000000000156
+      },
+      "Back_Diagonal_Ledge:13": {
+        "area_m2": 3800.880964858087,
+        "inclination_from_horizontal_degrees": 21.999999999999996
+      },
+      "Rear_Crown:11": {
+        "area_m2": 3468.1946053803003,
+        "inclination_from_horizontal_degrees": 55.99999999999951
+      },
+      "Main_Crown:12": {
+        "area_m2": 3356.9337970041643,
+        "inclination_from_horizontal_degrees": 49.0000000000007
+      },
+      "Left_Short_Accent:8": {
+        "area_m2": 3184.577925838188,
+        "inclination_from_horizontal_degrees": 37.99999999999999
+      },
+      "Front_Short_Fold:3": {
+        "area_m2": 3135.2085199905823,
+        "inclination_from_horizontal_degrees": 38.99999999999991
+      },
+      "Left_Short_Accent:9": {
+        "area_m2": 2971.2525084695103,
+        "inclination_from_horizontal_degrees": 55.00000000000019
+      },
+      "Rear_Lower_Buttress:13": {
+        "area_m2": 2929.506853581117,
+        "inclination_from_horizontal_degrees": 25.000000000000036
+      },
+      "Front_Lower_Buttress:13": {
+        "area_m2": 2750.190966683955,
+        "inclination_from_horizontal_degrees": 26.00000000000004
+      },
+      "Front_Short_Fold:2": {
+        "area_m2": 2703.8895590110988,
+        "inclination_from_horizontal_degrees": 27.999999999999588
+      },
+      "Main_Crown:5": {
+        "area_m2": 2701.261394851047,
+        "inclination_from_horizontal_degrees": 64.00000000002619
+      },
+      "Rear_Lower_Buttress:1": {
+        "area_m2": 2689.939321402469,
+        "inclination_from_horizontal_degrees": 38.99999999999976
+      },
+      "Back_Diagonal_Ledge:9": {
+        "area_m2": 2660.95139740454,
+        "inclination_from_horizontal_degrees": 50.000000000001066
+      },
+      "Front_Lower_Buttress:1": {
+        "area_m2": 2637.544847465663,
+        "inclination_from_horizontal_degrees": 33.000000000000036
+      },
+      "Front_Lower_Buttress:0": {
+        "area_m2": 2579.568083988517,
+        "inclination_from_horizontal_degrees": 42.00000000000001
+      },
+      "Front_Short_Fold:10": {
+        "area_m2": 2579.004676306423,
+        "inclination_from_horizontal_degrees": 55.00000000000034
+      },
+      "Right_Short_Accent:7": {
+        "area_m2": 2478.466841946121,
+        "inclination_from_horizontal_degrees": 52.000000000001094
+      },
+      "Back_Diagonal_Ledge:5": {
+        "area_m2": 2362.4694174636365,
+        "inclination_from_horizontal_degrees": 57.000000000000114
+      },
+      "Right_Short_Accent:8": {
+        "area_m2": 2315.5462517582587,
+        "inclination_from_horizontal_degrees": 43.99999999999974
+      },
+      "Right_Short_Accent:9": {
+        "area_m2": 2248.9733195786953,
+        "inclination_from_horizontal_degrees": 36.99999999999973
+      },
+      "Left_Short_Accent:7": {
+        "area_m2": 2047.48516605698,
+        "inclination_from_horizontal_degrees": 45.9999999999998
+      },
+      "Rear_Crown:5": {
+        "area_m2": 2021.095589983184,
+        "inclination_from_horizontal_degrees": 55.00000000000024
+      },
+      "Right_Short_Accent:1": {
+        "area_m2": 1795.0801106493495,
+        "inclination_from_horizontal_degrees": 28.99999999999989
+      },
+      "Front_Short_Fold:7": {
+        "area_m2": 1644.3219847830512,
+        "inclination_from_horizontal_degrees": 62.00000000000034
+      },
+      "Back_Diagonal_Ledge:3": {
+        "area_m2": 1536.9590732362058,
+        "inclination_from_horizontal_degrees": 27.00000000000015
+      },
+      "Rear_Lower_Buttress:8": {
+        "area_m2": 1508.581851454404,
+        "inclination_from_horizontal_degrees": 68.00000000000017
+      },
+      "Rear_Lower_Buttress:5": {
+        "area_m2": 1388.2769177576706,
+        "inclination_from_horizontal_degrees": 52.99999999999998
+      },
+      "Right_Short_Accent:0": {
+        "area_m2": 1364.3322014917312,
+        "inclination_from_horizontal_degrees": 41.00000000000023
+      },
+      "Left_Short_Accent:2": {
+        "area_m2": 1275.983728018362,
+        "inclination_from_horizontal_degrees": 27.000000000000277
+      },
+      "Front_Short_Fold:13": {
+        "area_m2": 1247.7226447984506,
+        "inclination_from_horizontal_degrees": 24.000000000000316
+      },
+      "Right_Short_Accent:3": {
+        "area_m2": 1216.800017706419,
+        "inclination_from_horizontal_degrees": 62.999999999999936
+      },
+      "Front_Lower_Buttress:5": {
+        "area_m2": 1171.0388075740725,
+        "inclination_from_horizontal_degrees": 64.0000000000002
+      },
+      "Left_Short_Accent:1": {
+        "area_m2": 1160.779745227502,
+        "inclination_from_horizontal_degrees": 42.999999999999964
+      },
+      "Front_Lower_Buttress:6": {
+        "area_m2": 1129.0668398186097,
+        "inclination_from_horizontal_degrees": 53.00000000000029
+      },
+      "Back_Diagonal_Ledge:0": {
+        "area_m2": 1124.3862522899747,
+        "inclination_from_horizontal_degrees": 31.000000000000068
+      },
+      "Back_Diagonal_Ledge:12": {
+        "area_m2": 1101.0517814366804,
+        "inclination_from_horizontal_degrees": 43.00000000000015
+      },
+      "Left_Short_Accent:5": {
+        "area_m2": 1039.3076635409907,
+        "inclination_from_horizontal_degrees": 57.99999999999998
+      },
+      "Front_Lower_Buttress:4": {
+        "area_m2": 1014.5538274790827,
+        "inclination_from_horizontal_degrees": 58.00000000000025
+      },
+      "Rear_Lower_Buttress:2": {
+        "area_m2": 980.1953325423721,
+        "inclination_from_horizontal_degrees": 43.00000000000024
+      },
+      "Main_Crown:6": {
+        "area_m2": 946.641081058026,
+        "inclination_from_horizontal_degrees": 58.999999999999865
+      },
+      "Rear_Lower_Buttress:3": {
+        "area_m2": 945.1983644985361,
+        "inclination_from_horizontal_degrees": 33.99999999999997
+      },
+      "Rear_Crown:8": {
+        "area_m2": 914.3293824874529,
+        "inclination_from_horizontal_degrees": 64.99999999999997
+      },
+      "Main_Crown:4": {
+        "area_m2": 876.9347082408563,
+        "inclination_from_horizontal_degrees": 56.00000000000003
+      },
+      "Right_Short_Accent:2": {
+        "area_m2": 794.5761551850305,
+        "inclination_from_horizontal_degrees": 35.999999999999716
+      },
+      "Left_Short_Accent:6": {
+        "area_m2": 788.4795760344847,
+        "inclination_from_horizontal_degrees": 68.99999999999983
+      },
+      "Right_Short_Accent:6": {
+        "area_m2": 784.044842295264,
+        "inclination_from_horizontal_degrees": 57.00000000000033
+      },
+      "Rear_Crown:4": {
+        "area_m2": 719.5833325888398,
+        "inclination_from_horizontal_degrees": 60.999999999999694
+      },
+      "Rear_Lower_Buttress:0": {
+        "area_m2": 658.1397847412167,
+        "inclination_from_horizontal_degrees": 27.99999999999746
+      },
+      "Rear_Crown:7": {
+        "area_m2": 633.2816182783513,
+        "inclination_from_horizontal_degrees": 57.00000000000027
+      },
+      "Front_Short_Fold:1": {
+        "area_m2": 621.8280980905173,
+        "inclination_from_horizontal_degrees": 43.00000000000056
+      },
+      "Front_Lower_Buttress:7": {
+        "area_m2": 472.0961207016565,
+        "inclination_from_horizontal_degrees": 69.00000000000001
+      },
+      "Back_Diagonal_Ledge:8": {
+        "area_m2": 452.2073835207673,
+        "inclination_from_horizontal_degrees": 65.99999999999991
+      },
+      "Left_Short_Accent:4": {
+        "area_m2": 371.89032512557776,
+        "inclination_from_horizontal_degrees": 63.999999999999986
+      },
+      "Back_Diagonal_Ledge:2": {
+        "area_m2": 252.49823440549608,
+        "inclination_from_horizontal_degrees": 36.00000000000042
+      },
+      "Main_Crown:13": {
+        "area_m2": 197.07305005978245,
+        "inclination_from_horizontal_degrees": 22.999999999999716
+      },
+      "Rear_Crown:6": {
+        "area_m2": 139.50524373334238,
+        "inclination_from_horizontal_degrees": 69.00000000000018
+      },
+      "Left_Short_Accent:3": {
+        "area_m2": 125.70506745973715,
+        "inclination_from_horizontal_degrees": 54.999999999999694
+      },
+      "Right_Short_Accent:4": {
+        "area_m2": 109.14656569287658,
+        "inclination_from_horizontal_degrees": 53.9999999999995
+      },
+      "Front_Short_Fold:4": {
+        "area_m2": 52.54287448787991,
+        "inclination_from_horizontal_degrees": 53.99999999999955
+      },
+      "Right_Short_Accent:5": {
+        "area_m2": 16.55834272844009,
+        "inclination_from_horizontal_degrees": 68.00000000000139
+      }
+    },
+    "design_targets_only": {
+      "near_horizontal_lt_15pct": true,
+      "near_vertical_lt_30pct": true,
+      "inclined_gt_35pct": true
+    },
+    "visual_acceptance": false
+  },
+  "double_precision_intersections": {
+    "passed": true,
+    "aabb_pairs_tested": 11045,
+    "coplanar_pairs_tested": 5132,
+    "all_pairs_including_shared_vertex_checked": true,
+    "tolerance_m": 1e-08
+  },
+  "float32_topology": {
+    "vertices": 665,
+    "triangles": 1326,
+    "edges": 1989,
+    "components": 1,
+    "euler": 2,
+    "positive_volume_m3": 9584992.906057747,
+    "minimum_triangle_area_m2": 0.0005440439635545423,
+    "minimum_edge_m": 0.0236134561419025,
+    "maximum_edge_m": 148.2167577692912,
+    "directed_edge_incidence_two": true,
+    "all_vertex_links_one_cycle": true
+  },
+  "float32_intersections": {
+    "passed": true,
+    "aabb_pairs_tested": 10995,
+    "coplanar_pairs_tested": 4,
+    "all_pairs_including_shared_vertex_checked": true,
+    "tolerance_m": 1e-08
+  },
+  "float32_max_displacement_m": 3.050521450324737e-05,
+  "exposed_regions": [
+    "Back_Diagonal_Ledge",
+    "Front_Lower_Buttress",
+    "Front_Short_Fold",
+    "Left_Short_Accent",
+    "Main_Crown",
+    "Rear_Crown",
+    "Rear_Lower_Buttress",
+    "Right_Short_Accent"
+  ],
+  "cameras_static_only": [
+    {
+      "name": "1216-source-front",
+      "normalized_bounds": [
+        [
+          0.47428417536988166,
+          0.24344945022576864
+        ],
+        [
+          0.6682454873319501,
+          0.42472463204669453
+        ]
+      ],
+      "minimum_margin": 0.24344945022576864,
+      "camera_matrix": [
+        [
+          0.6853646636009216,
+          0.11998851597309113,
+          -0.7182464599609375,
+          -958.0
+        ],
+        [
+          -0.7282000184059143,
+          0.11293032020330429,
+          -0.6759966611862183,
+          -633.0
+        ],
+        [
+          -2.939170329341323e-08,
+          0.9863313436508179,
+          0.164774090051651,
+          1150.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "projection": [
+        [
+          0.9366548657417297,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.6642794609069824,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0000388622283936,
+          -0.7000135779380798
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "static_prediction_only": true,
+      "no_autofit": true,
+      "geometric_visibility": {
+        "method": "One exact triangle-centroid visibility ray per front-facing triangle, projected-area sum; not pixel/render acceptance",
+        "visible_centroid_triangle_count": 501,
+        "centroid_visible_area_pixels2_by_region": {
+          "Main_Crown": 2931.8444388004937,
+          "Rear_Crown": 2164.380980468757,
+          "Front_Short_Fold": 1375.466263343476,
+          "Back_Diagonal_Ledge": 70.40936172444856,
+          "Front_Lower_Buttress": 983.9425107138169,
+          "Rear_Lower_Buttress": 434.8525444669628,
+          "Left_Short_Accent": 409.07929383902393,
+          "Right_Short_Accent": 171.63534815393115
+        },
+        "centroid_visible_area_pixels2_by_authored_plane": {
+          "Main_Crown:3": 1448.2233507780563,
+          "Main_Crown:2": 1094.0369435059051,
+          "Rear_Crown:3": 1054.668526241564,
+          "Front_Lower_Buttress:3": 540.1611709460151,
+          "Rear_Crown:12": 459.080677016726,
+          "Front_Short_Fold:3": 382.8573633582998,
+          "Rear_Crown:0": 381.69761997267995,
+          "Front_Short_Fold:12": 366.58520259599004,
+          "Front_Lower_Buttress:12": 256.42178144696743,
+          "Front_Short_Fold:7": 235.09721739746007,
+          "Front_Short_Fold:0": 212.4907278328124,
+          "Left_Short_Accent:9": 190.21940355694093,
+          "Rear_Lower_Buttress:8": 163.67612606860794,
+          "Front_Short_Fold:2": 149.0862900827396,
+          "Main_Crown:0": 147.12331478136645,
+          "Rear_Crown:2": 136.7073863013469,
+          "Rear_Lower_Buttress:12": 128.00118801305015,
+          "Left_Short_Accent:2": 114.60834008890753,
+          "Main_Crown:12": 107.41700688070047,
+          "Main_Crown:11": 103.4548312915747,
+          "Left_Short_Accent:6": 94.5200271839006,
+          "Right_Short_Accent:6": 74.219147032496,
+          "Rear_Crown:7": 73.85703574344736,
+          "Front_Lower_Buttress:2": 71.05076765806736,
+          "Front_Lower_Buttress:0": 67.25895535331466,
+          "Rear_Lower_Buttress:2": 66.08889661051407,
+          "Back_Diagonal_Ledge:3": 58.41535390877411,
+          "Rear_Crown:8": 58.36973519299244,
+          "Rear_Lower_Buttress:3": 56.73343291627621,
+          "Right_Short_Accent:9": 55.40058742392477,
+          "Front_Lower_Buttress:7": 49.049835309452156,
+          "Right_Short_Accent:0": 42.01561369751032,
+          "Main_Crown:4": 31.588991562890353,
+          "Front_Short_Fold:11": 29.3494620761737,
+          "Rear_Lower_Buttress:11": 20.352900858514477,
+          "Back_Diagonal_Ledge:2": 11.994007815674454,
+          "Left_Short_Accent:3": 5.651695528694867,
+          "Left_Short_Accent:5": 4.079827480580067
+        },
+        "partial_triangle_occlusion_not_integrated": true
+      }
+    },
+    {
+      "name": "shared-side-back",
+      "normalized_bounds": [
+        [
+          0.12406887170750713,
+          0.2117062568264062
+        ],
+        [
+          0.8783218015368115,
+          0.7463550164383556
+        ]
+      ],
+      "minimum_margin": 0.1216781984631885,
+      "camera_matrix": [
+        [
+          -0.6139405369758606,
+          -0.2163812667131424,
+          0.7591153979301453,
+          1790.6153564453125
+        ],
+        [
+          0.7893522381782532,
+          -0.16829639673233032,
+          0.5904229879379272,
+          1408.5880126953125
+        ],
+        [
+          -9.883301288482471e-08,
+          0.961694061756134,
+          0.27412503957748413,
+          1391.8411865234375
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "projection": [
+        [
+          0.003043601755052805,
+          0.0,
+          0.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.004342066589742899,
+          0.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -0.00011111326602986082,
+          -1.0000388622283936
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "static_prediction_only": true,
+      "no_autofit": true,
+      "geometric_visibility": {
+        "method": "One exact triangle-centroid visibility ray per front-facing triangle, projected-area sum; not pixel/render acceptance",
+        "visible_centroid_triangle_count": 393,
+        "centroid_visible_area_pixels2_by_region": {
+          "Main_Crown": 45194.47467134868,
+          "Rear_Crown": 28274.227873209427,
+          "Back_Diagonal_Ledge": 13828.385758508643,
+          "Front_Lower_Buttress": 16016.220373079314,
+          "Rear_Lower_Buttress": 10138.150093924081,
+          "Left_Short_Accent": 1041.6243111043336,
+          "Right_Short_Accent": 3666.8683020846106
+        },
+        "centroid_visible_area_pixels2_by_authored_plane": {
+          "Main_Crown:1": 17770.33786637899,
+          "Rear_Crown:1": 16884.72876133062,
+          "Main_Crown:10": 12262.768318024837,
+          "Main_Crown:0": 9416.970015844285,
+          "Front_Lower_Buttress:10": 8785.592427898642,
+          "Back_Diagonal_Ledge:1": 6316.933246343641,
+          "Rear_Lower_Buttress:10": 5066.658236127928,
+          "Rear_Crown:10": 4932.1822305982205,
+          "Main_Crown:5": 3933.232206343827,
+          "Back_Diagonal_Ledge:5": 3568.340357128984,
+          "Rear_Lower_Buttress:1": 3101.9644835703425,
+          "Rear_Crown:5": 3089.121213889789,
+          "Rear_Crown:2": 2741.0009029902826,
+          "Front_Lower_Buttress:1": 2656.1362588917777,
+          "Front_Lower_Buttress:5": 1843.0873656385238,
+          "Rear_Lower_Buttress:5": 1719.2389804450615,
+          "Front_Lower_Buttress:2": 1652.0863721470546,
+          "Right_Short_Accent:1": 1499.7881037588766,
+          "Back_Diagonal_Ledge:9": 1338.936454929592,
+          "Right_Short_Accent:8": 1225.2184940864272,
+          "Back_Diagonal_Ledge:10": 1145.5280950292326,
+          "Front_Lower_Buttress:6": 1016.1801760016986,
+          "Main_Crown:6": 1004.4903431687083,
+          "Back_Diagonal_Ledge:0": 897.1173387805591,
+          "Right_Short_Accent:3": 860.5673016798182,
+          "Main_Crown:9": 806.6759215880613,
+          "Back_Diagonal_Ledge:13": 555.1411924435404,
+          "Rear_Crown:4": 543.6790231658301,
+          "Left_Short_Accent:4": 412.3462108493082,
+          "Left_Short_Accent:1": 253.890391016637,
+          "Rear_Lower_Buttress:0": 250.28839378074932,
+          "Left_Short_Accent:7": 250.09017740769218,
+          "Left_Short_Accent:5": 125.29753183069633,
+          "Rear_Crown:6": 83.51574123469138,
+          "Right_Short_Accent:4": 81.29440255949042,
+          "Front_Lower_Buttress:4": 63.137772501614954,
+          "Back_Diagonal_Ledge:3": 6.3890738530894
+        },
+        "partial_triangle_occlusion_not_integrated": true
+      }
+    }
+  ],
+  "elapsed_seconds": 1.9762167250009952,
+  "actual_peak_rss_kib": 28160
+}

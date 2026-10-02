@@ -1,0 +1,2641 @@
+{
+  "candidate": "58J2",
+  "passed": true,
+  "one_fixed_candidate_only": true,
+  "changed_control_fields": [
+    "Back_Diagonal_Ledge.center",
+    "Left_Short_Accent.center"
+  ],
+  "local_planes_metric_normals_scales_yaws_unchanged": true,
+  "topology_union_intersection_code_byte_identical": true,
+  "tolerances_and_budgets_unchanged": true,
+  "certificates": [
+    {
+      "moving_region": "Back_Diagonal_Ledge",
+      "passed": true,
+      "minimum_norm_m": 15.840991672559714,
+      "minimum_primal_slack_m": -1.5987211554602254e-14,
+      "maximum_stationarity_residual": 2.4868995751603507e-14,
+      "maximum_complementarity_residual": 4.996587339441489e-13,
+      "primal_objective": 125.46850858505309,
+      "dual_lower_bound": 125.46850858505334,
+      "duality_gap": -2.5579538487363607e-13,
+      "directed_LP_minimum_m": 15.840991672559715
+    },
+    {
+      "moving_region": "Left_Short_Accent",
+      "passed": true,
+      "minimum_norm_m": 8.028394041335725,
+      "minimum_primal_slack_m": -3.9968028886505635e-15,
+      "maximum_stationarity_residual": 8.659739592076221e-15,
+      "maximum_complementarity_residual": 2.977217462058396e-14,
+      "primal_objective": 32.227555441477485,
+      "dual_lower_bound": 32.227555441477456,
+      "duality_gap": 2.842170943040401e-14,
+      "directed_LP_minimum_m": 8.028394041335723
+    }
+  ],
+  "all_pair_triple_LPs_evaluated": true,
+  "higher_intersections_pruned_only_by_impossible_subsets": true,
+  "positive_nerve_simplex_counts_before": {
+    "2": 12,
+    "3": 3
+  },
+  "positive_nerve_simplex_counts_after": {
+    "2": 12,
+    "3": 5
+  },
+  "new_positive_overlaps": [
+    {
+      "regions": [
+        "Main_Crown",
+        "Rear_Crown",
+        "Back_Diagonal_Ledge"
+      ],
+      "maximum_common_inscribed_radius_m": 0.5000000000000573,
+      "center_UVY": [
+        6.852899553566611,
+        15.208152863308863,
+        757.8546914022326
+      ],
+      "positive_volume_overlap": true
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Front_Short_Fold",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": 0.49999999999996403,
+      "center_UVY": [
+        -151.53229523789767,
+        -42.891068864075926,
+        729.4825053561451
+      ],
+      "positive_volume_overlap": true
+    }
+  ],
+  "lost_positive_overlaps": [],
+  "empty_triples_with_all_pairwise_overlaps_before": [
+    {
+      "regions": [
+        "Main_Crown",
+        "Rear_Crown",
+        "Back_Diagonal_Ledge"
+      ],
+      "maximum_common_inscribed_radius_m": -4.246704140351342,
+      "center_UVY": [
+        1.4475940840260229,
+        37.45072258894171,
+        755.6430837461119
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Front_Short_Fold",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -2.0295176837841926,
+      "center_UVY": [
+        -157.28437286504052,
+        -41.659593076830774,
+        729.4098206479623
+      ],
+      "positive_volume_overlap": false
+    }
+  ],
+  "empty_triples_with_all_pairwise_overlaps_after": [],
+  "pairwise_radius_changes": [
+    {
+      "regions": [
+        "Main_Crown",
+        "Rear_Crown"
+      ],
+      "before_m": 8.388792666055434,
+      "after_m": 8.388792666055434
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Front_Short_Fold"
+      ],
+      "before_m": 26.35366689248616,
+      "after_m": 26.35366689248616
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Back_Diagonal_Ledge"
+      ],
+      "before_m": 9.578335010357199,
+      "after_m": 14.616740305528596
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Front_Lower_Buttress"
+      ],
+      "before_m": 15.289538390914569,
+      "after_m": 15.289538390914569
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Rear_Lower_Buttress"
+      ],
+      "before_m": -34.147962850176434,
+      "after_m": -34.147962850176434
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Left_Short_Accent"
+      ],
+      "before_m": 6.017914563492857,
+      "after_m": 8.59184189167373
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Right_Short_Accent"
+      ],
+      "before_m": -59.0758070719518,
+      "after_m": -59.0758070719518
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Front_Short_Fold"
+      ],
+      "before_m": -0.9274590891055671,
+      "after_m": -0.9274590891055671
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Back_Diagonal_Ledge"
+      ],
+      "before_m": 28.012991952163446,
+      "after_m": 32.68315832722446
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Front_Lower_Buttress"
+      ],
+      "before_m": -37.201298568898096,
+      "after_m": -37.201298568898096
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Rear_Lower_Buttress"
+      ],
+      "before_m": 34.16828928256432,
+      "after_m": 34.16828928256432
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Left_Short_Accent"
+      ],
+      "before_m": -67.28396873218297,
+      "after_m": -63.919127963499
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Right_Short_Accent"
+      ],
+      "before_m": 8.741439589327493,
+      "after_m": 8.741439589327493
+    },
+    {
+      "regions": [
+        "Front_Short_Fold",
+        "Back_Diagonal_Ledge"
+      ],
+      "before_m": -7.885002749050988,
+      "after_m": -6.002338310738722
+    },
+    {
+      "regions": [
+        "Front_Short_Fold",
+        "Front_Lower_Buttress"
+      ],
+      "before_m": 9.280735301990518,
+      "after_m": 9.280735301990518
+    },
+    {
+      "regions": [
+        "Front_Short_Fold",
+        "Rear_Lower_Buttress"
+      ],
+      "before_m": -25.21886154317089,
+      "after_m": -25.21886154317089
+    },
+    {
+      "regions": [
+        "Front_Short_Fold",
+        "Left_Short_Accent"
+      ],
+      "before_m": 1.796442627766113e-05,
+      "after_m": 1.3227229710857722
+    },
+    {
+      "regions": [
+        "Front_Short_Fold",
+        "Right_Short_Accent"
+      ],
+      "before_m": -64.28611602191087,
+      "after_m": -64.28611602191087
+    },
+    {
+      "regions": [
+        "Back_Diagonal_Ledge",
+        "Front_Lower_Buttress"
+      ],
+      "before_m": -18.76105661834208,
+      "after_m": -17.705731982955847
+    },
+    {
+      "regions": [
+        "Back_Diagonal_Ledge",
+        "Rear_Lower_Buttress"
+      ],
+      "before_m": 14.470775910599482,
+      "after_m": 12.642192281575445
+    },
+    {
+      "regions": [
+        "Back_Diagonal_Ledge",
+        "Left_Short_Accent"
+      ],
+      "before_m": -41.75037041881815,
+      "after_m": -35.33050296536663
+    },
+    {
+      "regions": [
+        "Back_Diagonal_Ledge",
+        "Right_Short_Accent"
+      ],
+      "before_m": -17.603830975487547,
+      "after_m": -19.28290844912782
+    },
+    {
+      "regions": [
+        "Front_Lower_Buttress",
+        "Rear_Lower_Buttress"
+      ],
+      "before_m": -30.002314179051677,
+      "after_m": -30.002314179051677
+    },
+    {
+      "regions": [
+        "Front_Lower_Buttress",
+        "Left_Short_Accent"
+      ],
+      "before_m": -6.852184617352948,
+      "after_m": -6.090796005990733
+    },
+    {
+      "regions": [
+        "Front_Lower_Buttress",
+        "Right_Short_Accent"
+      ],
+      "before_m": -63.961424422129475,
+      "after_m": -63.961424422129475
+    },
+    {
+      "regions": [
+        "Rear_Lower_Buttress",
+        "Left_Short_Accent"
+      ],
+      "before_m": -80.50200916648853,
+      "after_m": -78.32666506788954
+    },
+    {
+      "regions": [
+        "Rear_Lower_Buttress",
+        "Right_Short_Accent"
+      ],
+      "before_m": 8.004861506290268,
+      "after_m": 8.004861506290268
+    },
+    {
+      "regions": [
+        "Left_Short_Accent",
+        "Right_Short_Accent"
+      ],
+      "before_m": -130.9078930726325,
+      "after_m": -128.35088698992973
+    }
+  ],
+  "overlap_LP_results_before": [
+    {
+      "regions": [
+        "Main_Crown",
+        "Rear_Crown"
+      ],
+      "maximum_common_inscribed_radius_m": 8.388792666055434,
+      "center_UVY": [
+        15.836255769811396,
+        -21.757922067328987,
+        761.530276343262
+      ],
+      "positive_volume_overlap": true
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Front_Short_Fold"
+      ],
+      "maximum_common_inscribed_radius_m": 26.35366689248616,
+      "center_UVY": [
+        -86.06739419948518,
+        -50.293088550983406,
+        734.1232229543004
+      ],
+      "positive_volume_overlap": true
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Back_Diagonal_Ledge"
+      ],
+      "maximum_common_inscribed_radius_m": 9.578335010357199,
+      "center_UVY": [
+        -72.81982771373798,
+        83.79321051144144,
+        727.4706806054804
+      ],
+      "positive_volume_overlap": true
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Front_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": 15.289538390914569,
+      "center_UVY": [
+        -82.2882462287676,
+        -20.47344890559546,
+        692.478978835572
+      ],
+      "positive_volume_overlap": true
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Rear_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": -34.147962850176434,
+      "center_UVY": [
+        -37.96481746778846,
+        98.7670775533572,
+        703.5499540026851
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": 6.017914563492857,
+      "center_UVY": [
+        -183.84382671635157,
+        -3.1745864079717823,
+        738.8467413911502
+      ],
+      "positive_volume_overlap": true
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -59.0758070719518,
+      "center_UVY": [
+        123.97592244242522,
+        41.25109201032486,
+        790.7575064101308
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Front_Short_Fold"
+      ],
+      "maximum_common_inscribed_radius_m": -0.9274590891055671,
+      "center_UVY": [
+        23.06658005037802,
+        -29.328126419612982,
+        734.75277670085
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Back_Diagonal_Ledge"
+      ],
+      "maximum_common_inscribed_radius_m": 28.012991952163446,
+      "center_UVY": [
+        58.76300069863049,
+        77.66641633576126,
+        725.3553117168008
+      ],
+      "positive_volume_overlap": true
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Front_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": -37.201298568898096,
+      "center_UVY": [
+        -14.948930055899819,
+        -6.919662099777088,
+        724.4289434133208
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Rear_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": 34.16828928256432,
+      "center_UVY": [
+        101.17324253033394,
+        44.458761348887094,
+        702.7542958231699
+      ],
+      "positive_volume_overlap": true
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -67.28396873218297,
+      "center_UVY": [
+        -71.53883777046293,
+        35.754401115846804,
+        751.1042309278344
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": 8.741439589327493,
+      "center_UVY": [
+        168.24883871966205,
+        48.06731926148184,
+        719.1510629468689
+      ],
+      "positive_volume_overlap": true
+    },
+    {
+      "regions": [
+        "Front_Short_Fold",
+        "Back_Diagonal_Ledge"
+      ],
+      "maximum_common_inscribed_radius_m": -7.885002749050988,
+      "center_UVY": [
+        10.772070246408447,
+        6.394422978135884,
+        721.9061987187879
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Front_Short_Fold",
+        "Front_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": 9.280735301990518,
+      "center_UVY": [
+        -99.41714289764913,
+        -68.35408256825235,
+        686.17607657229
+      ],
+      "positive_volume_overlap": true
+    },
+    {
+      "regions": [
+        "Front_Short_Fold",
+        "Rear_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": -25.21886154317089,
+      "center_UVY": [
+        20.834901585251952,
+        38.7989377810969,
+        714.8085929831484
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Front_Short_Fold",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": 1.796442627766113e-05,
+      "center_UVY": [
+        -158.74287540102338,
+        -47.365808595254386,
+        725.9210189563138
+      ],
+      "positive_volume_overlap": true
+    },
+    {
+      "regions": [
+        "Front_Short_Fold",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -64.28611602191087,
+      "center_UVY": [
+        126.37457663296206,
+        -53.53007597912671,
+        737.8197628506063
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Back_Diagonal_Ledge",
+        "Front_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": -18.76105661834208,
+      "center_UVY": [
+        -5.042240349649514,
+        44.09468376886268,
+        670.937177858317
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Back_Diagonal_Ledge",
+        "Rear_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": 14.470775910599482,
+      "center_UVY": [
+        43.06153286285369,
+        76.36724581773704,
+        694.9121145932108
+      ],
+      "positive_volume_overlap": true
+    },
+    {
+      "regions": [
+        "Back_Diagonal_Ledge",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -41.75037041881815,
+      "center_UVY": [
+        -136.1166014918712,
+        42.252093198801276,
+        737.7154639218704
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Back_Diagonal_Ledge",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -17.603830975487547,
+      "center_UVY": [
+        142.31360053193123,
+        60.558543081782446,
+        737.9825453700028
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Front_Lower_Buttress",
+        "Rear_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": -30.002314179051677,
+      "center_UVY": [
+        4.085030767813154,
+        51.464783083854634,
+        677.1409136362446
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Front_Lower_Buttress",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -6.852184617352948,
+      "center_UVY": [
+        -200.85299288636725,
+        -36.247572286271065,
+        685.9393632926271
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Front_Lower_Buttress",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -63.961424422129475,
+      "center_UVY": [
+        63.57512043084396,
+        23.010056241551126,
+        647.6676408475109
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Rear_Lower_Buttress",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -80.50200916648853,
+      "center_UVY": [
+        -37.89414813386168,
+        -88.63509551339278,
+        684.5502580482506
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Rear_Lower_Buttress",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": 8.004861506290268,
+      "center_UVY": [
+        176.79198302952173,
+        30.459613172766314,
+        699.2765711503191
+      ],
+      "positive_volume_overlap": true
+    },
+    {
+      "regions": [
+        "Left_Short_Accent",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -130.9078930726325,
+      "center_UVY": [
+        36.545615853516274,
+        -107.9146724541213,
+        662.6160262283602
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Rear_Crown",
+        "Front_Short_Fold"
+      ],
+      "maximum_common_inscribed_radius_m": -2.7935357621551575,
+      "center_UVY": [
+        14.669052606656514,
+        -24.551032484686516,
+        743.4778110359221
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Rear_Crown",
+        "Back_Diagonal_Ledge"
+      ],
+      "maximum_common_inscribed_radius_m": -4.246704140351342,
+      "center_UVY": [
+        1.4475940840260229,
+        37.45072258894171,
+        755.6430837461119
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Rear_Crown",
+        "Front_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": -37.201298568898096,
+      "center_UVY": [
+        -14.948930055899819,
+        -6.919662099777088,
+        724.4289434133208
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Rear_Crown",
+        "Rear_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": -34.75776015518363,
+      "center_UVY": [
+        -15.509644025311571,
+        95.547669327521,
+        721.6782882255844
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Rear_Crown",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -67.28396873218297,
+      "center_UVY": [
+        -71.53883777046293,
+        35.754401115846804,
+        751.1042309278344
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Rear_Crown",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -59.07580707195164,
+      "center_UVY": [
+        123.97592244242558,
+        41.25109201032419,
+        790.7575064101306
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Front_Short_Fold",
+        "Back_Diagonal_Ledge"
+      ],
+      "maximum_common_inscribed_radius_m": -10.868756526874181,
+      "center_UVY": [
+        -0.7490915766604633,
+        3.1222129315380287,
+        729.7793590508338
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Front_Short_Fold",
+        "Front_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": 4.619847474969849,
+      "center_UVY": [
+        -102.66341281553441,
+        -49.00985247191021,
+        705.6807474409013
+      ],
+      "positive_volume_overlap": true
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Front_Short_Fold",
+        "Rear_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": -34.86460848695096,
+      "center_UVY": [
+        -12.257628260613817,
+        24.907954062204855,
+        694.6208754015075
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Front_Short_Fold",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -2.0295176837841926,
+      "center_UVY": [
+        -157.28437286504052,
+        -41.659593076830774,
+        729.4098206479623
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Front_Short_Fold",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -66.52169257167765,
+      "center_UVY": [
+        124.87572690371499,
+        -51.40477061541228,
+        741.8848743396443
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Back_Diagonal_Ledge",
+        "Front_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": -23.773024496745446,
+      "center_UVY": [
+        -51.11140453259669,
+        53.921892178469136,
+        687.3550840105269
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Back_Diagonal_Ledge",
+        "Rear_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": -34.14796285017641,
+      "center_UVY": [
+        -37.96481746778822,
+        98.76707755335667,
+        703.5499540026852
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Back_Diagonal_Ledge",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -41.75037041881808,
+      "center_UVY": [
+        -136.11660149187057,
+        42.25209319880094,
+        737.7154639218703
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Back_Diagonal_Ledge",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -59.589648303287035,
+      "center_UVY": [
+        120.2662021104322,
+        50.81196210095902,
+        790.7092750456889
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Front_Lower_Buttress",
+        "Rear_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": -34.71706549647829,
+      "center_UVY": [
+        -17.550223900138505,
+        40.114069043429254,
+        696.459193939124
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Front_Lower_Buttress",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -10.384231901209697,
+      "center_UVY": [
+        -152.7987361591559,
+        -43.593879120391435,
+        716.6413210725702
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Front_Lower_Buttress",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -82.68789973356138,
+      "center_UVY": [
+        46.81578375749192,
+        85.88781732889042,
+        706.2984254570183
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Rear_Lower_Buttress",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -80.50200916648875,
+      "center_UVY": [
+        -37.89414813386086,
+        -88.63509551339375,
+        684.55025804825
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Rear_Lower_Buttress",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -59.075807071951715,
+      "center_UVY": [
+        123.97592244242563,
+        41.25109201032429,
+        790.7575064101308
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Left_Short_Accent",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -130.90789307263273,
+      "center_UVY": [
+        36.54561585351614,
+        -107.91467245412194,
+        662.6160262283602
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Front_Short_Fold",
+        "Back_Diagonal_Ledge"
+      ],
+      "maximum_common_inscribed_radius_m": -10.250265019069523,
+      "center_UVY": [
+        16.889242243658206,
+        6.731628045359309,
+        724.4286882407014
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Front_Short_Fold",
+        "Front_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": -37.20129856889801,
+      "center_UVY": [
+        -14.948930055899572,
+        -6.919662099777555,
+        724.4289434133207
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Front_Short_Fold",
+        "Rear_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": -25.218861543170902,
+      "center_UVY": [
+        20.834901585252044,
+        38.79893778109694,
+        714.8085929831485
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Front_Short_Fold",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -67.28396873218291,
+      "center_UVY": [
+        -71.53883777046278,
+        35.75440111584672,
+        751.1042309278341
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Front_Short_Fold",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -64.2861160219107,
+      "center_UVY": [
+        126.37457663296202,
+        -53.530075979127325,
+        737.8197628506065
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Back_Diagonal_Ledge",
+        "Front_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": -37.201298568898046,
+      "center_UVY": [
+        -14.948930055899554,
+        -6.919662099777322,
+        724.4289434133206
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Back_Diagonal_Ledge",
+        "Rear_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": 13.054163303609846,
+      "center_UVY": [
+        54.940949732982865,
+        71.66533142528499,
+        704.7288529514
+      ],
+      "positive_volume_overlap": true
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Back_Diagonal_Ledge",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -67.28396873218286,
+      "center_UVY": [
+        -71.53883777046276,
+        35.75440111584744,
+        751.1042309278342
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Back_Diagonal_Ledge",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -17.603830975487437,
+      "center_UVY": [
+        142.31360053193117,
+        60.55854308178234,
+        737.9825453700029
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Front_Lower_Buttress",
+        "Rear_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": -37.40531395631412,
+      "center_UVY": [
+        -3.273061822384245,
+        22.409023019830613,
+        704.501991670788
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Front_Lower_Buttress",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -67.28396873218294,
+      "center_UVY": [
+        -71.53883777046302,
+        35.75440111584696,
+        751.1042309278346
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Front_Lower_Buttress",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -63.96142442212948,
+      "center_UVY": [
+        63.57512043084377,
+        23.010056241551247,
+        647.6676408475109
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Rear_Lower_Buttress",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -80.60787354707728,
+      "center_UVY": [
+        -38.422973597903905,
+        -82.88668858771659,
+        687.4537102714582
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Rear_Lower_Buttress",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": 6.358285391154413,
+      "center_UVY": [
+        164.65725343156743,
+        40.877244583959985,
+        711.559126923352
+      ],
+      "positive_volume_overlap": true
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Left_Short_Accent",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -130.90789307263262,
+      "center_UVY": [
+        36.54561585351656,
+        -107.91467245412188,
+        662.6160262283603
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Front_Short_Fold",
+        "Back_Diagonal_Ledge",
+        "Front_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": -25.994156901528925,
+      "center_UVY": [
+        -12.226668021129269,
+        15.717920813223634,
+        697.6619667277291
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Front_Short_Fold",
+        "Back_Diagonal_Ledge",
+        "Rear_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": -25.21886154317101,
+      "center_UVY": [
+        20.83490158525202,
+        38.79893778109715,
+        714.8085929831485
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Front_Short_Fold",
+        "Back_Diagonal_Ledge",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -43.1251309725899,
+      "center_UVY": [
+        -123.32713034999087,
+        30.344574161932478,
+        739.2032034409024
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Front_Short_Fold",
+        "Back_Diagonal_Ledge",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -64.78882819575355,
+      "center_UVY": [
+        113.34548681052236,
+        -22.61900249410766,
+        732.1340893377609
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Front_Short_Fold",
+        "Front_Lower_Buttress",
+        "Rear_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": -30.571990266602445,
+      "center_UVY": [
+        -4.519699427365194,
+        21.319690542156486,
+        693.6616258324813
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Front_Short_Fold",
+        "Front_Lower_Buttress",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -9.047646285918368,
+      "center_UVY": [
+        -159.7846665047811,
+        -47.6547228381101,
+        710.2411557989816
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Front_Short_Fold",
+        "Front_Lower_Buttress",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -73.82065842976878,
+      "center_UVY": [
+        50.78168358847226,
+        75.2373247511701,
+        683.8171716056804
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Front_Short_Fold",
+        "Rear_Lower_Buttress",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -80.50200916648853,
+      "center_UVY": [
+        -37.89414813385902,
+        -88.63509551339885,
+        684.550258048249
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Front_Short_Fold",
+        "Rear_Lower_Buttress",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -64.28611602191086,
+      "center_UVY": [
+        126.37457663296212,
+        -53.53007597912721,
+        737.8197628506064
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Front_Short_Fold",
+        "Left_Short_Accent",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -130.9078930726325,
+      "center_UVY": [
+        36.54561585351648,
+        -107.91467245412151,
+        662.6160262283603
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Back_Diagonal_Ledge",
+        "Front_Lower_Buttress",
+        "Rear_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": -30.00231417905162,
+      "center_UVY": [
+        4.085030767813296,
+        51.46478308385471,
+        677.1409136362445
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Back_Diagonal_Ledge",
+        "Front_Lower_Buttress",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -41.75037041881798,
+      "center_UVY": [
+        -136.1166014918706,
+        42.25209319880082,
+        737.7154639218705
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Back_Diagonal_Ledge",
+        "Front_Lower_Buttress",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -63.96142442212954,
+      "center_UVY": [
+        63.57512043084386,
+        23.01005624155088,
+        647.6676408475109
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Back_Diagonal_Ledge",
+        "Rear_Lower_Buttress",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -81.81288274175401,
+      "center_UVY": [
+        -40.359840047793554,
+        -51.947857238565106,
+        702.9279203865183
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Back_Diagonal_Ledge",
+        "Rear_Lower_Buttress",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -17.60383097548765,
+      "center_UVY": [
+        142.313600531931,
+        60.55854308178263,
+        737.9825453700026
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Back_Diagonal_Ledge",
+        "Left_Short_Accent",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -130.90789307263248,
+      "center_UVY": [
+        36.54561585351639,
+        -107.9146724541215,
+        662.6160262283602
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Front_Lower_Buttress",
+        "Rear_Lower_Buttress",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -80.50200916648865,
+      "center_UVY": [
+        -37.89414813386128,
+        -88.63509551339324,
+        684.5502580482502
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Front_Lower_Buttress",
+        "Rear_Lower_Buttress",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -63.961424422129475,
+      "center_UVY": [
+        63.57512043084396,
+        23.010056241551126,
+        647.6676408475109
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Front_Lower_Buttress",
+        "Left_Short_Accent",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -130.90789307263248,
+      "center_UVY": [
+        36.54561585351617,
+        -107.91467245412124,
+        662.61602622836
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Rear_Lower_Buttress",
+        "Left_Short_Accent",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -130.90789307263248,
+      "center_UVY": [
+        36.5456158535163,
+        -107.91467245412133,
+        662.6160262283602
+      ],
+      "positive_volume_overlap": false
+    }
+  ],
+  "overlap_LP_results_after": [
+    {
+      "regions": [
+        "Main_Crown",
+        "Rear_Crown"
+      ],
+      "maximum_common_inscribed_radius_m": 8.388792666055434,
+      "center_UVY": [
+        15.836255769811396,
+        -21.757922067328987,
+        761.530276343262
+      ],
+      "positive_volume_overlap": true
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Front_Short_Fold"
+      ],
+      "maximum_common_inscribed_radius_m": 26.35366689248616,
+      "center_UVY": [
+        -86.06739419948518,
+        -50.293088550983406,
+        734.1232229543004
+      ],
+      "positive_volume_overlap": true
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Back_Diagonal_Ledge"
+      ],
+      "maximum_common_inscribed_radius_m": 14.616740305528596,
+      "center_UVY": [
+        -65.00119773824228,
+        76.78457140694975,
+        738.7201680618863
+      ],
+      "positive_volume_overlap": true
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Front_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": 15.289538390914569,
+      "center_UVY": [
+        -82.2882462287676,
+        -20.47344890559546,
+        692.478978835572
+      ],
+      "positive_volume_overlap": true
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Rear_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": -34.147962850176434,
+      "center_UVY": [
+        -37.96481746778846,
+        98.7670775533572,
+        703.5499540026851
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": 8.59184189167373,
+      "center_UVY": [
+        -179.6756989516102,
+        -5.294913463075041,
+        740.4373368315735
+      ],
+      "positive_volume_overlap": true
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -59.0758070719518,
+      "center_UVY": [
+        123.97592244242522,
+        41.25109201032486,
+        790.7575064101308
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Front_Short_Fold"
+      ],
+      "maximum_common_inscribed_radius_m": -0.9274590891055671,
+      "center_UVY": [
+        23.06658005037802,
+        -29.328126419612982,
+        734.75277670085
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Back_Diagonal_Ledge"
+      ],
+      "maximum_common_inscribed_radius_m": 32.68315832722446,
+      "center_UVY": [
+        57.475871753896676,
+        80.10197243634491,
+        735.4235853653391
+      ],
+      "positive_volume_overlap": true
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Front_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": -37.201298568898096,
+      "center_UVY": [
+        -14.948930055899819,
+        -6.919662099777088,
+        724.4289434133208
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Rear_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": 34.16828928256432,
+      "center_UVY": [
+        101.17324253033394,
+        44.458761348887094,
+        702.7542958231699
+      ],
+      "positive_volume_overlap": true
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -63.919127963499,
+      "center_UVY": [
+        -68.25687226870073,
+        32.66654448920237,
+        752.5020925599592
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": 8.741439589327493,
+      "center_UVY": [
+        168.24883871966205,
+        48.06731926148184,
+        719.1510629468689
+      ],
+      "positive_volume_overlap": true
+    },
+    {
+      "regions": [
+        "Front_Short_Fold",
+        "Back_Diagonal_Ledge"
+      ],
+      "maximum_common_inscribed_radius_m": -6.002338310738722,
+      "center_UVY": [
+        16.717705227681755,
+        -3.1851001798929865,
+        727.8565119380439
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Front_Short_Fold",
+        "Front_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": 9.280735301990518,
+      "center_UVY": [
+        -99.41714289764913,
+        -68.35408256825235,
+        686.17607657229
+      ],
+      "positive_volume_overlap": true
+    },
+    {
+      "regions": [
+        "Front_Short_Fold",
+        "Rear_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": -25.21886154317089,
+      "center_UVY": [
+        20.834901585251952,
+        38.7989377810969,
+        714.8085929831484
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Front_Short_Fold",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": 1.3227229710857722,
+      "center_UVY": [
+        -153.08058137306668,
+        -45.94768358150077,
+        727.5092988965033
+      ],
+      "positive_volume_overlap": true
+    },
+    {
+      "regions": [
+        "Front_Short_Fold",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -64.28611602191087,
+      "center_UVY": [
+        126.37457663296206,
+        -53.53007597912671,
+        737.8197628506063
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Back_Diagonal_Ledge",
+        "Front_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": -17.705731982955847,
+      "center_UVY": [
+        -5.8991048073925665,
+        43.402781877072684,
+        670.3547736955694
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Back_Diagonal_Ledge",
+        "Rear_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": 12.642192281575445,
+      "center_UVY": [
+        39.926476947010535,
+        77.45130308953085,
+        695.2664801567939
+      ],
+      "positive_volume_overlap": true
+    },
+    {
+      "regions": [
+        "Back_Diagonal_Ledge",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -35.33050296536663,
+      "center_UVY": [
+        -120.5051761888732,
+        29.307662254962107,
+        747.8409618023538
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Back_Diagonal_Ledge",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -19.28290844912782,
+      "center_UVY": [
+        142.5270398966973,
+        59.571732772809,
+        742.2124567586342
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Front_Lower_Buttress",
+        "Rear_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": -30.002314179051677,
+      "center_UVY": [
+        4.085030767813154,
+        51.464783083854634,
+        677.1409136362446
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Front_Lower_Buttress",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -6.090796005990733,
+      "center_UVY": [
+        -193.2148662923479,
+        -36.24836142717923,
+        689.1178365872404
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Front_Lower_Buttress",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -63.961424422129475,
+      "center_UVY": [
+        63.57512043084396,
+        23.010056241551126,
+        647.6676408475109
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Rear_Lower_Buttress",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -78.32666506788954,
+      "center_UVY": [
+        -33.06848329057603,
+        -90.37866235126808,
+        686.347252156398
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Rear_Lower_Buttress",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": 8.004861506290268,
+      "center_UVY": [
+        176.79198302952173,
+        30.459613172766314,
+        699.2765711503191
+      ],
+      "positive_volume_overlap": true
+    },
+    {
+      "regions": [
+        "Left_Short_Accent",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -128.35088698992973,
+      "center_UVY": [
+        40.69702096996991,
+        -108.57765404776802,
+        665.0552946419875
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Rear_Crown",
+        "Front_Short_Fold"
+      ],
+      "maximum_common_inscribed_radius_m": -2.7935357621551575,
+      "center_UVY": [
+        14.669052606656514,
+        -24.551032484686516,
+        743.4778110359221
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Rear_Crown",
+        "Back_Diagonal_Ledge"
+      ],
+      "maximum_common_inscribed_radius_m": 0.5000000000000573,
+      "center_UVY": [
+        6.852899553566611,
+        15.208152863308863,
+        757.8546914022326
+      ],
+      "positive_volume_overlap": true
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Rear_Crown",
+        "Front_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": -37.201298568898096,
+      "center_UVY": [
+        -14.948930055899819,
+        -6.919662099777088,
+        724.4289434133208
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Rear_Crown",
+        "Rear_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": -34.75776015518363,
+      "center_UVY": [
+        -15.509644025311571,
+        95.547669327521,
+        721.6782882255844
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Rear_Crown",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -63.919127963499,
+      "center_UVY": [
+        -68.25687226870073,
+        32.66654448920237,
+        752.5020925599592
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Rear_Crown",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -59.07580707195164,
+      "center_UVY": [
+        123.97592244242558,
+        41.25109201032419,
+        790.7575064101306
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Front_Short_Fold",
+        "Back_Diagonal_Ledge"
+      ],
+      "maximum_common_inscribed_radius_m": -8.743108469041212,
+      "center_UVY": [
+        6.1347755139983935,
+        -6.190836013080767,
+        735.0885171557617
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Front_Short_Fold",
+        "Front_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": 4.619847474969849,
+      "center_UVY": [
+        -102.66341281553441,
+        -49.00985247191021,
+        705.6807474409013
+      ],
+      "positive_volume_overlap": true
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Front_Short_Fold",
+        "Rear_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": -34.86460848695096,
+      "center_UVY": [
+        -12.257628260613817,
+        24.907954062204855,
+        694.6208754015075
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Front_Short_Fold",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": 0.49999999999996403,
+      "center_UVY": [
+        -151.53229523789767,
+        -42.891068864075926,
+        729.4825053561451
+      ],
+      "positive_volume_overlap": true
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Front_Short_Fold",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -66.52169257167765,
+      "center_UVY": [
+        124.87572690371499,
+        -51.40477061541228,
+        741.8848743396443
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Back_Diagonal_Ledge",
+        "Front_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": -22.800202377879067,
+      "center_UVY": [
+        -52.72661821987864,
+        53.39175697070997,
+        687.0429366823015
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Back_Diagonal_Ledge",
+        "Rear_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": -34.14796285017641,
+      "center_UVY": [
+        -37.964817467788244,
+        98.76707755335666,
+        703.5499540026852
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Back_Diagonal_Ledge",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -35.33050296536648,
+      "center_UVY": [
+        -120.5051761888725,
+        29.30766225496188,
+        747.8409618023538
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Back_Diagonal_Ledge",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -59.07580707195174,
+      "center_UVY": [
+        123.9759224424256,
+        41.251092010324,
+        790.7575064101306
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Front_Lower_Buttress",
+        "Rear_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": -34.71706549647829,
+      "center_UVY": [
+        -17.550223900138505,
+        40.114069043429254,
+        696.459193939124
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Front_Lower_Buttress",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -9.223251486498695,
+      "center_UVY": [
+        -150.64309325239142,
+        -42.74521327268323,
+        716.3190522321535
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Front_Lower_Buttress",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -82.68789973356138,
+      "center_UVY": [
+        46.81578375749192,
+        85.88781732889042,
+        706.2984254570183
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Rear_Lower_Buttress",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -78.32666506788942,
+      "center_UVY": [
+        -33.06848329057646,
+        -90.37866235126747,
+        686.347252156398
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Rear_Lower_Buttress",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -59.075807071951715,
+      "center_UVY": [
+        123.97592244242563,
+        41.25109201032429,
+        790.7575064101308
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Main_Crown",
+        "Left_Short_Accent",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -128.35088698992996,
+      "center_UVY": [
+        40.6970209699699,
+        -108.57765404776835,
+        665.0552946419874
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Front_Short_Fold",
+        "Back_Diagonal_Ledge"
+      ],
+      "maximum_common_inscribed_radius_m": -6.777878079630028,
+      "center_UVY": [
+        18.723449037639202,
+        -3.074534876746971,
+        728.6836045466115
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Front_Short_Fold",
+        "Front_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": -37.20129856889801,
+      "center_UVY": [
+        -14.948930055899572,
+        -6.919662099777555,
+        724.4289434133207
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Front_Short_Fold",
+        "Rear_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": -25.218861543170902,
+      "center_UVY": [
+        20.834901585252044,
+        38.79893778109694,
+        714.8085929831485
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Front_Short_Fold",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -63.91912796349895,
+      "center_UVY": [
+        -68.25687226870046,
+        32.666544489202366,
+        752.5020925599589
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Front_Short_Fold",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -64.2861160219107,
+      "center_UVY": [
+        126.37457663296202,
+        -53.530075979127325,
+        737.8197628506065
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Back_Diagonal_Ledge",
+        "Front_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": -37.201298568898046,
+      "center_UVY": [
+        -14.948930055899554,
+        -6.919662099777484,
+        724.4289434133206
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Back_Diagonal_Ledge",
+        "Rear_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": 11.180885918923629,
+      "center_UVY": [
+        52.18068629913742,
+        72.60104453300518,
+        705.3929340317123
+      ],
+      "positive_volume_overlap": true
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Back_Diagonal_Ledge",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -63.919127963498916,
+      "center_UVY": [
+        -68.2568722687003,
+        32.66654448920334,
+        752.5020925599587
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Back_Diagonal_Ledge",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -19.282908449127934,
+      "center_UVY": [
+        142.5270398966972,
+        59.571732772808716,
+        742.2124567586344
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Front_Lower_Buttress",
+        "Rear_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": -37.40531395631412,
+      "center_UVY": [
+        -3.273061822384245,
+        22.409023019830613,
+        704.501991670788
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Front_Lower_Buttress",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -63.919127963499015,
+      "center_UVY": [
+        -68.25687226870103,
+        32.666544489202856,
+        752.5020925599596
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Front_Lower_Buttress",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -63.96142442212948,
+      "center_UVY": [
+        63.57512043084377,
+        23.010056241551247,
+        647.6676408475109
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Rear_Lower_Buttress",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -78.32666506788954,
+      "center_UVY": [
+        -33.068483290576395,
+        -90.37866235126809,
+        686.3472521563981
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Rear_Lower_Buttress",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": 6.358285391154413,
+      "center_UVY": [
+        164.65725343156743,
+        40.877244583959985,
+        711.559126923352
+      ],
+      "positive_volume_overlap": true
+    },
+    {
+      "regions": [
+        "Rear_Crown",
+        "Left_Short_Accent",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -128.35088698992988,
+      "center_UVY": [
+        40.697020969969614,
+        -108.57765404776814,
+        665.0552946419876
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Front_Short_Fold",
+        "Back_Diagonal_Ledge",
+        "Front_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": -25.122441759150455,
+      "center_UVY": [
+        -13.265906436188653,
+        14.305685612686933,
+        697.7579611413787
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Front_Short_Fold",
+        "Back_Diagonal_Ledge",
+        "Rear_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": -25.21886154317101,
+      "center_UVY": [
+        20.83490158525202,
+        38.79893778109715,
+        714.8085929831485
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Front_Short_Fold",
+        "Back_Diagonal_Ledge",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -35.81294718432936,
+      "center_UVY": [
+        -116.01697175278753,
+        25.12896094892983,
+        748.363053688327
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Front_Short_Fold",
+        "Back_Diagonal_Ledge",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -64.57355513990653,
+      "center_UVY": [
+        118.92484638628673,
+        -35.85584376208116,
+        734.5688270969503
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Front_Short_Fold",
+        "Front_Lower_Buttress",
+        "Rear_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": -30.571990266602445,
+      "center_UVY": [
+        -4.519699427365194,
+        21.319690542156486,
+        693.6616258324813
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Front_Short_Fold",
+        "Front_Lower_Buttress",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -8.295546451630862,
+      "center_UVY": [
+        -155.74493715957377,
+        -46.68657483520723,
+        710.9814206931346
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Front_Short_Fold",
+        "Front_Lower_Buttress",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -73.82065842976878,
+      "center_UVY": [
+        50.78168358847226,
+        75.2373247511701,
+        683.8171716056804
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Front_Short_Fold",
+        "Rear_Lower_Buttress",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -78.3266650678894,
+      "center_UVY": [
+        -33.06848329057589,
+        -90.378662351268,
+        686.3472521563986
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Front_Short_Fold",
+        "Rear_Lower_Buttress",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -64.28611602191086,
+      "center_UVY": [
+        126.37457663296212,
+        -53.53007597912721,
+        737.8197628506064
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Front_Short_Fold",
+        "Left_Short_Accent",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -128.3508869899297,
+      "center_UVY": [
+        40.69702096997019,
+        -108.57765404776836,
+        665.0552946419878
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Back_Diagonal_Ledge",
+        "Front_Lower_Buttress",
+        "Rear_Lower_Buttress"
+      ],
+      "maximum_common_inscribed_radius_m": -30.00231417905162,
+      "center_UVY": [
+        4.085030767813296,
+        51.46478308385471,
+        677.1409136362445
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Back_Diagonal_Ledge",
+        "Front_Lower_Buttress",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -38.164335521249775,
+      "center_UVY": [
+        -130.64712261692102,
+        38.08503266721796,
+        740.6074833167817
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Back_Diagonal_Ledge",
+        "Front_Lower_Buttress",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -63.96142442212954,
+      "center_UVY": [
+        63.57512043084386,
+        23.01005624155088,
+        647.6676408475109
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Back_Diagonal_Ledge",
+        "Rear_Lower_Buttress",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -79.98269496741783,
+      "center_UVY": [
+        -34.69712271907806,
+        -56.58895960717573,
+        703.165651550388
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Back_Diagonal_Ledge",
+        "Rear_Lower_Buttress",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -19.282908449128037,
+      "center_UVY": [
+        142.52703989669752,
+        59.5717327728089,
+        742.2124567586343
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Back_Diagonal_Ledge",
+        "Left_Short_Accent",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -128.35088698992982,
+      "center_UVY": [
+        40.697020969969415,
+        -108.57765404776791,
+        665.0552946419875
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Front_Lower_Buttress",
+        "Rear_Lower_Buttress",
+        "Left_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -78.32666506788944,
+      "center_UVY": [
+        -33.06848329057624,
+        -90.3786623512678,
+        686.3472521563979
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Front_Lower_Buttress",
+        "Rear_Lower_Buttress",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -63.961424422129475,
+      "center_UVY": [
+        63.57512043084396,
+        23.010056241551126,
+        647.6676408475109
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Front_Lower_Buttress",
+        "Left_Short_Accent",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -128.35088698992968,
+      "center_UVY": [
+        40.69702096996984,
+        -108.57765404776787,
+        665.0552946419875
+      ],
+      "positive_volume_overlap": false
+    },
+    {
+      "regions": [
+        "Rear_Lower_Buttress",
+        "Left_Short_Accent",
+        "Right_Short_Accent"
+      ],
+      "maximum_common_inscribed_radius_m": -128.35088698992982,
+      "center_UVY": [
+        40.69702096997016,
+        -108.57765404776808,
+        665.0552946419876
+      ],
+      "positive_volume_overlap": false
+    }
+  ],
+  "protected_file_count": 692,
+  "protected_unchanged": true,
+  "native_started": false,
+  "visual_acceptance": false,
+  "elapsed_seconds": 0.49899256900243927
+}

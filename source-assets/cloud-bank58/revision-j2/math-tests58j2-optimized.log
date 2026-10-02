@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "test_count": 12,
+  "tests": [
+    {
+      "name": "open shell",
+      "passed": true,
+      "actual_error": "Nonmanifold edge incidence"
+    },
+    {
+      "name": "duplicate triangle",
+      "passed": true,
+      "actual_error": "Nonmanifold edge incidence"
+    },
+    {
+      "name": "reversed face",
+      "passed": true,
+      "actual_error": "Directed edge winding"
+    },
+    {
+      "name": "zero cage scale",
+      "passed": true,
+      "actual_error": "Nonpositive cage scale"
+    },
+    {
+      "name": "coincident cages",
+      "passed": true,
+      "actual_error": "Coplanar source/cutter faces require explicit redesign"
+    },
+    {
+      "name": "disconnected accent",
+      "passed": true,
+      "actual_error": "More than one surface component"
+    },
+    {
+      "name": "positive-area clipping sliver",
+      "passed": true,
+      "actual_error": "Positive-area clipping sliver 5e-09; no silent repair"
+    },
+    {
+      "name": "crossing pair shares one indexed vertex",
+      "passed": true,
+      "actual_error": "Unexpected triangle contact/intersection 0,1, shared=[0]"
+    },
+    {
+      "name": "nonadjacent crossing pair",
+      "passed": true,
+      "actual_error": "Unexpected disjoint triangle contact/intersection 0,1"
+    },
+    {
+      "name": "coplanar positive overlap",
+      "passed": true,
+      "actual_error": "Coplanar overlap triangles 0,1, area 0.31999999999999995"
+    },
+    {
+      "name": "whole geometry moved outside fixed frame",
+      "passed": true,
+      "actual_error": "Fixed seven percent margin"
+    },
+    {
+      "name": "legal shared coplanar edge accepted",
+      "passed": true
+    }
+  ],
+  "optimized_python": true,
+  "native_started": false
+}
