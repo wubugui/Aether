@@ -1,0 +1,173 @@
+{
+  "published_commit": "7c52378d53bc6c1e79339b4ec869061d398d3e53",
+  "original_source_stage": "failed",
+  "original_source_stage_refers_to": "form-v2",
+  "completed_source": {
+    "source_chain_verified": true,
+    "source_runner_version": "cloudbank58l-form-v3",
+    "source_run": "/workspace/scratch/a29d03198654/Aether/cloud-evidence/cloudbank58l-form-v3-source-20261002T225658Z-jcrc3gec",
+    "original_source_stage": "failed",
+    "original_source_stage_refers_to": "form-v2",
+    "source_sha256": "c36c7517ed10540cda20bbd849f35f0e449595a96e960cc60c52ba00f4747e4c",
+    "source_bytes": 324179,
+    "source_admission_sha256": "25a19acd7bd25de723096af4e91d3b29f5e362a45840499fd85b231365776389",
+    "source_terminal_sha256": "3db4b539b17aeb0fa9c764adfb3188ef8a9bc6effdfa9009919f9667d587db78",
+    "source_supervisor_sha256": "be9cc9beff4bf8c4430881cbf53e551abff9fb06842ca1fe81fae89b1092ddbc",
+    "source_observation_sha256": "e52766c71a5fb49332f37f84e03a55442c304ec901414be8970f440218e92313",
+    "source_validation_sha256": "f99145d8c97f8dcd3031733fba9578f9f659604003d9e4eb42b6dd14e55cd5cf",
+    "source_external_result_sha256": "4efa34a9894df3a31b559d525ddd0b29c552c8cbab52073ff718b3b53decf14e",
+    "launcher_pid": 5,
+    "launcher_exit_code": 0,
+    "launcher_wall_seconds": 73.12697763800679,
+    "worker_pid": 6,
+    "native_pids": [
+      7,
+      29
+    ],
+    "source_build_raw_sha256": "3c9a563225a3e0205dec2caee37521169756489b2e7183dbf4654b298e01113b",
+    "full_native_acceptance": false,
+    "visual_acceptance": false,
+    "world_acceptance": false,
+    "global_GOAL": false
+  },
+  "completed_views": {
+    "source_chain_verified": true,
+    "views_chain_verified": true,
+    "original_source_stage": "failed",
+    "source_sha256": "c36c7517ed10540cda20bbd849f35f0e449595a96e960cc60c52ba00f4747e4c",
+    "source_bytes": 324179,
+    "images": [
+      {
+        "view": "01-original61-front",
+        "bytes": 770235,
+        "sha256": "468787b4082704e73cf4b2a82e98237657d43a0fa1d376637ccc5fb4f83b3472",
+        "width": 1179,
+        "height": 664,
+        "crc_and_scanlines_validated": true
+      },
+      {
+        "view": "02-k-trial-front",
+        "bytes": 770232,
+        "sha256": "77b59231317fd0ed4800dd990bde4e0eace5bbcd4e99aadf45e391d8226bd4cd",
+        "width": 1179,
+        "height": 664,
+        "crc_and_scanlines_validated": true
+      },
+      {
+        "view": "03-k-fixed-side-back",
+        "bytes": 878842,
+        "sha256": "d2257ccbbe242517e615c0cfd1e6e0fb7524559cc17cdd659198932a9818d6f5",
+        "width": 1179,
+        "height": 664,
+        "crc_and_scanlines_validated": true
+      },
+      {
+        "view": "04-k-fixed-near",
+        "bytes": 845172,
+        "sha256": "701b827de28fdd5ddbf5252cd2573c7b58890f1302d91e7fbe2bb05321a0edff",
+        "width": 1179,
+        "height": 664,
+        "crc_and_scanlines_validated": true
+      }
+    ],
+    "four_outputs_three_directions": true,
+    "acceptance_mode": "api_consistency_isolated_diagnostic_v1",
+    "full_native_acceptance": false,
+    "visual_acceptance": false,
+    "world_acceptance": false,
+    "global_GOAL": false
+  },
+  "failure_admissions": [
+    "3fc9d27fe46f83fc279b0902a852ac895c8c59a2d77e93f66a1fa651c5fee597",
+    "b8cc9985e206be4fc8f69b80c6e51ebebccaac4e8b1eb177ad6ced4784efe814",
+    "8216396cd70064b29057ed32fcd8c8f61eecaf1ccab4a949bc065c7ccb3d2e87"
+  ],
+  "environment_recovery": {
+    "published_commit": "31d3e0d0e5f71ad00cdbaa4a045c412d4d6f2d7b",
+    "source_freeze": {
+      "freeze": "source-assets/cloud-bank58/revision-l/form-v3/FINAL_SHA256.json",
+      "freeze_sha256": "41c01a1a680e8b364b08bdb5b7d331c1c7834fa82ff20c43def02f6aa3201bde",
+      "original_entries": 832,
+      "verified_entries": 828,
+      "missing_derived_cache_entries": [
+        "source-assets/cloud-bank58/revision-l/source-v1/__pycache__/native58l.cpython-312.opt-1.pyc",
+        "source-assets/cloud-bank58/revision-l/source-v1/__pycache__/native58l.cpython-312.pyc",
+        "source-assets/cloud-bank58/revision-l/source-v1/__pycache__/native_support58l.cpython-312.opt-1.pyc",
+        "source-assets/cloud-bank58/revision-l/source-v1/__pycache__/native_support58l.cpython-312.pyc"
+      ],
+      "allowed_cache_exemptions": {
+        "source-assets/cloud-bank58/revision-l/source-v1/__pycache__/native58l.cpython-312.pyc": {
+          "bytes": 60334,
+          "sha256": "15829257bc56154dca88996451bad0c30ff040927bda06bf196ecccd9dbb1410"
+        },
+        "source-assets/cloud-bank58/revision-l/source-v1/__pycache__/native58l.cpython-312.opt-1.pyc": {
+          "bytes": 60334,
+          "sha256": "15829257bc56154dca88996451bad0c30ff040927bda06bf196ecccd9dbb1410"
+        },
+        "source-assets/cloud-bank58/revision-l/source-v1/__pycache__/native_support58l.cpython-312.pyc": {
+          "bytes": 30952,
+          "sha256": "aebc3398f801f747fe7d9a50c17eec12dfaf04461fe76d5224c5d676af2ac78b"
+        },
+        "source-assets/cloud-bank58/revision-l/source-v1/__pycache__/native_support58l.cpython-312.opt-1.pyc": {
+          "bytes": 30952,
+          "sha256": "aebc3398f801f747fe7d9a50c17eec12dfaf04461fe76d5224c5d676af2ac78b"
+        }
+      },
+      "authority_sources": {
+        "source-assets/cloud-bank58/revision-l/source-v1/native58l.py": {
+          "bytes": 25743,
+          "sha256": "a0d9059d2d94f14bd7890b6835674f45a2d8b6fc9a0d8d69ee3440376b1007ad"
+        },
+        "source-assets/cloud-bank58/revision-l/source-v1/native_support58l.py": {
+          "bytes": 15961,
+          "sha256": "e8cd215f0170453d9fd7c38b68641c0dfb8fa09f59b3eb4e91b1b1f627932ff1"
+        }
+      },
+      "original_freeze_fully_restored": false,
+      "bytecode_writes_disabled": true
+    },
+    "views_freeze": {
+      "freeze": "source-assets/cloud-bank58/revision-l/form-v3-views-v1/FINAL_SHA256.json",
+      "freeze_sha256": "2ccfe241332fd50958c074298431a72614cd1a99ad333fd9a8799177cb29c703",
+      "original_entries": 958,
+      "verified_entries": 954,
+      "missing_derived_cache_entries": [
+        "source-assets/cloud-bank58/revision-l/source-v1/__pycache__/native58l.cpython-312.opt-1.pyc",
+        "source-assets/cloud-bank58/revision-l/source-v1/__pycache__/native58l.cpython-312.pyc",
+        "source-assets/cloud-bank58/revision-l/source-v1/__pycache__/native_support58l.cpython-312.opt-1.pyc",
+        "source-assets/cloud-bank58/revision-l/source-v1/__pycache__/native_support58l.cpython-312.pyc"
+      ],
+      "allowed_cache_exemptions": {
+        "source-assets/cloud-bank58/revision-l/source-v1/__pycache__/native58l.cpython-312.pyc": {
+          "bytes": 60334,
+          "sha256": "15829257bc56154dca88996451bad0c30ff040927bda06bf196ecccd9dbb1410"
+        },
+        "source-assets/cloud-bank58/revision-l/source-v1/__pycache__/native58l.cpython-312.opt-1.pyc": {
+          "bytes": 60334,
+          "sha256": "15829257bc56154dca88996451bad0c30ff040927bda06bf196ecccd9dbb1410"
+        },
+        "source-assets/cloud-bank58/revision-l/source-v1/__pycache__/native_support58l.cpython-312.pyc": {
+          "bytes": 30952,
+          "sha256": "aebc3398f801f747fe7d9a50c17eec12dfaf04461fe76d5224c5d676af2ac78b"
+        },
+        "source-assets/cloud-bank58/revision-l/source-v1/__pycache__/native_support58l.cpython-312.opt-1.pyc": {
+          "bytes": 30952,
+          "sha256": "aebc3398f801f747fe7d9a50c17eec12dfaf04461fe76d5224c5d676af2ac78b"
+        }
+      },
+      "authority_sources": {
+        "source-assets/cloud-bank58/revision-l/source-v1/native58l.py": {
+          "bytes": 25743,
+          "sha256": "a0d9059d2d94f14bd7890b6835674f45a2d8b6fc9a0d8d69ee3440376b1007ad"
+        },
+        "source-assets/cloud-bank58/revision-l/source-v1/native_support58l.py": {
+          "bytes": 15961,
+          "sha256": "e8cd215f0170453d9fd7c38b68641c0dfb8fa09f59b3eb4e91b1b1f627932ff1"
+        }
+      },
+      "original_freeze_fully_restored": false,
+      "bytecode_writes_disabled": true
+    },
+    "historical_protected_directory_recreated": false
+  }
+}

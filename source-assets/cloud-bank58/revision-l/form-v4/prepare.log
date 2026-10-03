@@ -1,0 +1,186 @@
+{
+  "candidate_version": "cloudbank58l-form-v4",
+  "crowns": [
+    [
+      "A",
+      4140.0,
+      3910.0,
+      230.0,
+      220.0,
+      945.0
+    ],
+    [
+      "B",
+      4330.0,
+      4480.0,
+      240.0,
+      230.0,
+      975.0
+    ]
+  ],
+  "waist_shoulders": [
+    [
+      "A_side_lower",
+      4230.0,
+      3730.0,
+      135.0,
+      115.0,
+      850.0
+    ],
+    [
+      "A_near_oblique",
+      4000.0,
+      3865.0,
+      140.0,
+      125.0,
+      850.0
+    ],
+    [
+      "B_valley_lower",
+      4230.0,
+      4320.0,
+      140.0,
+      125.0,
+      855.0
+    ],
+    [
+      "B_side_lower",
+      4490.0,
+      4425.0,
+      145.0,
+      135.0,
+      865.0
+    ]
+  ],
+  "near_shoulders": [
+    [
+      "large_lower_wider",
+      3818.0,
+      3896.0,
+      150.0,
+      140.0,
+      860.0
+    ],
+    [
+      "medium_lower_wider",
+      3730.0,
+      4000.0,
+      110.0,
+      105.0,
+      820.0
+    ],
+    [
+      "small_return",
+      3903.0,
+      4000.0,
+      90.0,
+      75.0,
+      798.0
+    ]
+  ],
+  "control_changes": [
+    {
+      "id": "C01_Crown_A",
+      "old": {
+        "default": 1005,
+        "min": 975,
+        "max": 1030,
+        "exercise_value": 1010,
+        "position_world": [
+          4140.0,
+          1005.0,
+          3910.0
+        ],
+        "semantic": "Broad near-facing crown with an off-center low plateau, unequal shoulder radii, and a broken descending flank"
+      },
+      "new": {
+        "default": 945.0,
+        "min": 915.0,
+        "max": 970.0,
+        "exercise_value": 950.0,
+        "position_world": [
+          4140.0,
+          945.0,
+          3910.0
+        ],
+        "semantic": "Absolute A crown height; continuous lowered/widened crown and offset half-height waist; genuine fixed-XZ top-height edit"
+      },
+      "absolute_parameter_shift_m": -60.0,
+      "relative_range_preserved": [
+        -30,
+        25
+      ],
+      "old_support_sha256": "99847993b582ac4c7015d698f8ab5a94614cf609b8b9ae306f4e27cd4ab4029d",
+      "new_support_sha256": "2b2b21444802ecd3efe3bf071619e66948eaf0d412241c3472a45f3b79906853",
+      "old_supported_vertices": 122,
+      "new_supported_vertices": 171
+    },
+    {
+      "id": "C02_Crown_B",
+      "old": {
+        "default": 1040,
+        "min": 1010,
+        "max": 1050,
+        "exercise_value": 1045,
+        "position_world": [
+          4330.0,
+          1040.0,
+          4480.0
+        ],
+        "semantic": "Highest crown, offset in both X and Z; crest tilts toward +X, rear neck falls to the existing 1_2 contact collar"
+      },
+      "new": {
+        "default": 975.0,
+        "min": 945.0,
+        "max": 985.0,
+        "exercise_value": 980.0,
+        "position_world": [
+          4330.0,
+          975.0,
+          4480.0
+        ],
+        "semantic": "Absolute B crown height; continuous lowered/widened crown and offset half-height waist; genuine fixed-XZ top-height edit"
+      },
+      "absolute_parameter_shift_m": -65.0,
+      "relative_range_preserved": [
+        -30,
+        10
+      ],
+      "old_support_sha256": "33da10a98d3b544a34730ebad6d397aad5af10242935d3b03206649249f44a33",
+      "new_support_sha256": "cb685a60b37afba4cde3bd1058f96fdeeeefb71df69ff4da1fc153ae0f453a1d",
+      "old_supported_vertices": 99,
+      "new_supported_vertices": 189
+    }
+  ],
+  "changed_vertices": 431,
+  "changed_plan_points": 56,
+  "changed_top_y": 375,
+  "changed_belly_y": 14,
+  "changed_rim_y": 0,
+  "max_XZ_m": 9.986071237497615,
+  "top_Y_delta_range": [
+    -72.37841796875,
+    112.51043701171875
+  ],
+  "belly_Y_delta_range": [
+    -5.9935302734375,
+    0.0
+  ],
+  "changed_world_bounds": [
+    [
+      3665.8665161132812,
+      574.1345825195312,
+      3594.421043395996
+    ],
+    [
+      4708.852355957031,
+      975.0,
+      4802.3466796875
+    ]
+  ],
+  "native_executed": false,
+  "visual_acceptance": false,
+  "full_native_acceptance": false,
+  "geometry_passed": true,
+  "error": null
+}

@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/form-v4/inspect_predecessor58l.py", line 161, in <module>
+    value = runtime58l.inspect_historical()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/form-v4/runtime58l.py", line 77, in inspect_historical
+    return inspect_completed()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/form-v4/inspect_predecessor58l.py", line 147, in inspect_completed
+    completed = restored_views(views)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/a29d03198654/Aether/source-assets/cloud-bank58/revision-l/form-v4/inspect_predecessor58l.py", line 98, in restored_views
+    and a['native_sha256'] == sha(HERE / 'render_saved58l.py') and a['source_native_sha256'] == sha(FORM / 'native58l.py')
+                                                                                                    ^^^^
+NameError: name 'FORM' is not defined

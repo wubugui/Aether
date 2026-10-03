@@ -1,0 +1,23 @@
+{
+  "scope": "New recovered full-checkout source only; not an upgrade of old 120-second performance",
+  "old_total_seconds": 120,
+  "old_tail_seconds": 20,
+  "new_total_seconds": 180,
+  "new_tail_seconds": 60,
+  "unchanged_native_caps": {
+    "build": 80,
+    "verify": 30
+  },
+  "cpu_threads": 2,
+  "unchanged_max_rss_kib": 1572864,
+  "new_checkout_files": 57004,
+  "new_checkout_bytes": 18823860039,
+  "one_protection_snapshot_core_seconds": 25.91787707100002,
+  "reported_parent_observation_approximately_seconds": 25.964,
+  "old_form_v3_launcher_seconds": 73.12697763800679,
+  "old_build_seconds": 13.947567101000459,
+  "old_verify_seconds": 13.357884974000626,
+  "reason": "Measured one tail protection scan alone exceeds the old20s reserve; remaining exact raw comparison and durable terminal work still required",
+  "native_run": false,
+  "old_120_second_acceptance": false
+}

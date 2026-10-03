@@ -1,6 +1,6 @@
 # Aether 云端开发权威进度与恢复入口
 
-更新时间：2026-10-03 00:06 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
+更新时间：2026-10-03 01:12 UTC。**每次开工先读本页与 [GOAL.md](GOAL.md)，完成一项后更新本页，与成果一起提交，并立即推送、核验远端。** 本页是唯一当前进度入口；下方折叠区保留旧记录，里面的“当前”“下一步”、旧机器窗口号及旧传输流程都只属于当时，不能覆盖本页当前区。
 
 ## 云端硬性前置闸门：先插件上传完整核回，再继续工作
 
@@ -10,7 +10,20 @@
 - 上传只用GitHub插件，禁止CLI push、其它上传方式、本机或中转代传；只读公共Git读回用于独立验证，不是上传路线
 - 上传失败优先查明原因并在授权内反复进行合规恢复，保持原payload、完整base tree/parent和非force ref；真实安全拒绝必须停止该动作，按批准规则取得明确证据/一次原call重试，仍拒则报告并保持闸门关闭，绝不绕审批/换route
 - 本项全部完成成果和本入口更新都核回后，才允许下一项。纯读取以查错/确认上传状态可以继续；与修复当前上传无关的新开发/渲染必须等待
-- 私密Slack交付定位符/收据仍仅本地，不因“全部项目”混入公开仓库；原受阻发送保持独立停止
+- 私密Slack交付定位符/收据仍仅本地，不因“全部项目”混入公开仓库；原受阻发送保持独立停止；本公开正文的历史段落也已移除具体沟通定位符，工程事实、成功/失败及计数保留
+
+## 00:59 form-v4完整冠腰纯准备窄审接受，先外存再一次原生
+
+- 环境恢复报告已 **31d3e0d0e5f71ad00cdbaa4a045c412d4d6f2d7b** 完整插件发布，tree22bc0aef83afb43dce2c9984e2250ddc954d906d、parent7c52378d；63路径/45blob新bare逐字核回，本地abdc0f54同树clean后才恢复本准备。00:30短暂starting后核仍同主机4fea90ecd624、repo/工具未再次丢失，未重clone或重装
+- [form-v4唯一纯准备](source-assets/cloud-bank58/revision-l/form-v4/README.md)现56本地文件16041762B，包含1个原10,500,764B保护JSON，Git用1gzip流/6part2617327B唯一无损表示；FINAL1663cfb713ef20ee9aebd97b8666bff0889f76dc0fcea77aa23e5cdf1051ed6d，manifest a50928f9698438b80a0e8bc22f008632422d7407bf0bf81b75dcfc1edc3bf396，candidate a9b0870be2c4953cbbe42567e21896504aaf1b0a63d6c5579b3a2db19d1dd0e7
+- 03真实长壁由冠腰处Z3790截断/统一754低面所致，04前表面受原90m禁XZ带锁住；本轮不用更多小柱补丁。A1005→945、半径230×220，B1040→975、240×230，整冠腰椭圆渐退到1.6倍半径；近肩860/820/798降宽，并允许原外缘内部采样成对重排。非零范围及逐点变化明确，真岸XYZ、C/D/其它命名节点与55m谷底保持
+- 最终431点变、56平面点成对XZ最大9.986071m、375顶Y−72.378418/+112.510437m、14底Y−5.993530/0m；1567V/3130tri拓扑同，原35/120位移界与真正80m核心/腹560–630/厚>=120/闭壳非自交门不松。A/B默认、把手、命名点、范围/exercise同步真实绝对高：A945/915–970/950，B975/945–985/980；支持171/189点，其余5控制字段同，不假称旧A/B身份保持
+- 首遍腹场误动1谷点0.299316m触scope，候选/代码/日志原留；腹场乘既有谷权重后仅两个点按连续权重调整，其中点885 +0.003235、977 +0.299316。首次纯测误以为只变977，已按真实2点修正并留失败日志；前件检查首次FORM局部别名缺失日志也留。没有旧native重跑或新准入
+- 当前官方3.11最终84 normal8.974秒/84-O8.596秒均过，46原核心/API/编辑/保护函数逐字复用；1085旧依赖/1138当前冻结含自身实核同。完整57004旧文件18823860039B终核31.931秒全同，当前原旧文件未改。新候选是否变好仍无真实图，不做离线视觉通过声明
+- 新环境前件仅4个明确缺失pyc例外，逐路径/长度/原SHA及原.py强绑定，禁bytecode写；若cache存在不同或任何其它文件缺失仍拒。原source结果validator直接复用，旧views本地验证体只替换一处freeze检查，其余AST同；旧清单/833/959不伪称全恢复，24/23/22面历史数学corner失败与旧form-v2 failed保持
+- 新独立source预算**180秒总/60秒尾**已在runtime/observer/runner/native真绑定；build80/verify30/CPU2/1.5GiB及全部实质门不变。新完整checkout一次保护25.918秒、终验31.931秒已超过旧20尾，预算原因明示；旧120记录不改，不称旧120性能通过
+- [窄独立复核](source-assets/cloud-bank58/revision-l/form-v4/NARROW_REVIEW.md)已有限接受：亲读4pyc恢复例外、两.py强绑定、逐AST旧views复用及真实180/60预算，官方3.11 normal84(8.466秒)/-O84(8.462秒)全过，manifest54条size/SHA同。父未编辑或启动引擎，未认视觉改善。当前**0新native/模型/PNG/准入**；本包/本结论/本入口先完整插件外存与恢复表示核回，然后才一次官方3.11 `form-v4/observe_form58l.py --run-approved source`。实际新源与全部结果先外存，再原机位views；世界默认/full_native/visual/contact/weather/world/GOAL未过保持
+- 常规云运维不另行通知用户；阶段图报照既有授权。91已送/旧28受阻加1新增POST取消未确认保持，私密收据只本地；不重发不确定项
 
 ## 00:06 云环境替换后工程/Blender恢复，四派生缓存缺口明确保留
 
@@ -379,7 +392,7 @@
 - 1152 tangent全部finite、w+1，每三角逐值平坦，单位误差≤1.19e-7，|T·N|最大.000168383；packed tangentSHA9abbd7ac9e2aa0960922abde0d5d32757d718348e386d642b895a088a0310aba。实际sidecar ensure_tangents=false仍真，允许官方来源只证存储及有关路径，**内部具体插入call未证**；三被二拒源码无新请求/替代route
 - 诊断7文件+freeze SHAba1d57c3522910b08f66850f19116bca25366d5c40e2d21ae459237040509be7，原失败/sidecar/source/保护身份已核。下一最小cache-only新probe只接受此固定V/N/T/I，显式TANGENT语义/存储误差界，原geometry/material/no texture/normal map保持，再native保存fresh reload所有数组含T精确相等；**不重import/派生/Blender**，源码准备未完成，不称native通过
 - 北1131/1347原图已实看，连续山脊方案拟收缩北4tile，南两target及两旧coast整tile保留；当前约182root受影响为设计计算，尚无native山体。主峰参考构图与既有云AABB视线风险分开记录，不能把AABB命中当真实云面遮挡或先改天气
-- **09:56用户针对两私密频道与积压图报给出新的明确“发”批准。** 已启动既有#feiting-progress原thread去重/文件状态核对，原E/F2八件优先同payload交付，随后未交付阶段图报；原已发送D/F不重复。当前仅交付进行中，成功数量/链接等真实回执后记录，不能先称已发完。signed upload URL/凭据不进Git
+- **09:56用户针对两私密频道与积压图报给出新的明确“发”批准。** 已启动既有（私密项目频道）原thread去重/文件状态核对，原E/F2八件优先同payload交付，随后未交付阶段图报；原已发送D/F不重复。当前仅交付进行中，成功数量/链接等真实回执后记录，不能先称已发完。signed upload URL/凭据不进Git
 - 当前无Aether engine；固定4rad窄观察已过，新的云世界整合/北山体仍待实际制作及实图验收；完整GOAL/硬件GPU未验收
 
 ## 09:50 北六mesh/rock真实读取通过；K忠实GLB及editor导入完成
@@ -771,7 +784,7 @@
 
 - F失败小样完整发布 **c5027d1666b8a5547577cba650b7af03cb37388c**，tree **cbcfe0b22a7a6a062cb959fd5055931df1c64877**、parent1962f6f。本地86d49df与远端同树并已soft对齐；22路径/21唯一blob在新bare先证明缺失，再公共Git实际取回核字节与SHA，见[回读收据](source-assets/cloud-bank58/revision-f/PUBLICATION58F.json)。首次验证脚本把重复exit-code相同blob误当异常，未产生交付结论；修正为按唯一blob核验后完成，不是重复上传
 - F的侧后留边门失败，child/wrapper均exit1、0图。原生失败源101969字节、所有代码与证据保留；九个局部下返/腰部控制高度的F2仅准备阶段，不动原相机、拓扑、X/Z与7%门。完整视觉仍未通过
-- 本次F报告已成功发送[原Slack线程](https://tupworld.slack.com/archives/C0C5WDC9649/p1790883314021699?thread_ts=1790835576.223599&cid=C0C5WDC9649)。E五个明确拒绝的payload完全未重试
+- 本次F报告已成功发送原Slack线程（私密链接已移出公开记录）。E五个明确拒绝的payload完全未重试
 - **Godot实际导入恢复已正常退出，但日志门仍失败**：[v2运行](cloud-evidence/nearbay61-import-v2-20261001T193439Z-3c7iugl3/wrapper-report.json)child exit0、32.785秒、峰2543044KiB，未触发600秒上限；原933缓存发展到938文件/53.95MB。仍记录VK_KHR_surface与initialize错误，wrapper exit1/false，没有掩盖或判为无害
 - v2封装在finally中可靠记录终态，保留project.godot自动CRLF→LF的观察字节，仅对该已证明的换行变更恢复原始字节；1485输入逐项精确恢复，不保存场景。原180秒超时失败完全不变。绑定引用Git中的1477旧输入清单加8个新身份，不生成重复大清单
 - 本修订立即发布v2源码、原样日志、结束证据与进度。下一步用原生停船orbit独立运行检查资源与运行图，不把编辑器正常退出或软件渲染当硬件GPU/视觉通过。MAZ与Aether重图形作业错峰。旧终端/脚本正在运行与否以本次终态和实时桌面状态为准，不能只依赖隔离shell进程列表
@@ -792,7 +805,7 @@
 2. 给本项划定实际改动范围、预期结果与验收方式。记录源码/原生资产路径、版本、输入SHA、运行目录、真实退出码、图片和明确未通过项。图片必须实际看过，研究源图不能冒充已集成世界。
 3. 完成一项可验证改动或有结论的失败试验，就更新本页的当前状态、已完成/未通过项、下一动作；把该项源码、可编辑原生资源、必要证据与文档放入同一提交。**立即push并独立核对远端commit/tree，不攒到整个阶段结束。** 新路径须逐项git check-attr确认是否LFS，不能只看根目录。插件create_blob支持base64普通二进制，但没有LFS batch/upload/verify；新LFS实体不能据此称完整发布。工具体积上限未公布，已验证202101字节文本及114775字节blend的完整发布/独立回读。533569字节PNG已完成create_blob与独立公共Git实际回读；不能外推任意大文件。插件fetch仅支持UTF8，二进制用新临时bare公共partial Git证明原对象缺失后实际取得核SHA；现有工作树cat-file不能冒称独立远端回读。大产物先确认合法发布能力再生成。
 4. 只有远端核验成功才能记“已推送”。失败则记“本地已提交/待推”、准确原因及下一步，先解决发布，不继续堆大量未推改动。不要把Git输出不确定、上传开始或单一API返回当完整交付。
-5. 阶段结束把报告和当前真实图片发到既有 [#feiting-progress线程](https://tupworld.slack.com/archives/C0C5WDC9649/p1790835576223599)。检查已有内容避免重复，不改收件频道/身份绕过拒绝。最近发送收据见下方。
+5. 阶段结束把报告和当前真实图片发到既有 （私密项目频道）线程（私密链接已移出公开记录）。检查已有内容避免重复，不改收件频道/身份绕过拒绝。最近发送收据见下方。
 6. 以GitHub完整版本历史为恢复依据，不再同步本机，不额外堆原项目ZIP/bundle/分卷备份。清理仅限已证明可恢复的重复材料，保留未推、唯一资料和失败证据，不删除或压缩Git历史。
 
 ## 当前有效原生候选
@@ -920,21 +933,21 @@ GIT_TERMINAL_PROMPT=0 git -c credential.helper= ls-remote https://github.com/wub
 
 E完整Git提交558d187已验证，[发布/未发送记录](source-assets/cloud-bank58/revision-e/PUBLICATION58E.json)。五个Slack文件均已取得旧ID，但原POST及一次证据重试各自明确在CreateProcess前被拒，未上传、未finalize、0/5交付：
 
-- A前图 F0C63TSN69X，325955B
-- A侧后 F0C65L67UH2，494552B
-- B前图 F0C5WLPJJ9K，325806B
-- B侧后 F0C61R60S2W，494639B
-- 原报告 F0C6WB47X1N
+- A前图 （私密标识已移出公开记录），325955B
+- A侧后 （私密标识已移出公开记录），494552B
+- B前图 （私密标识已移出公开记录），325806B
+- B侧后 （私密标识已移出公开记录），494639B
+- 原报告 （私密标识已移出公开记录）
 
 所有这些旧payload保持停止，不能重新包装、嵌入别的文件、换渠道或重新申请ID绕行，不能finalize。自动审核理由误将任务归为仅GitHub或UU memory alerts；主任务保留用户持续项目截图报告授权，若需新的用户决定由主任务集中处理，不逐图打扰。其他独立工程工作继续。
 
 ## 已交付收据与本项待推状态
 
-- 61当前近湾/全貌/阶段报告已经Slack确认成功：[报告](https://tupworld.slack.com/files/UKQMWM9MZ/F0C5J32C2GP/game61-stage-report.md)。三文件IDs为F0C5J2YEHDM、F0C5T7CNE83、F0C5J32C2GP；[本地收据](cloud-delivery/coast61-stage-20261001/DELIVERY_RECEIPT.json)。
-- 60三PNG和51图报告包已确认：F0C5TNLR86R、F0C5X3G11AA、F0C5TNP45QD、F0C5X7APTHU；[收据](cloud-delivery/observation60-and-research-20261001/DELIVERY_RECEIPT.json)。不得重复POST或finalize。部分旧ZIP在连接器读取中不可见，不能无证据说丢失或重发。
-- 13:42恢复进展已发送：[原消息](https://tupworld.slack.com/archives/C0C5WDC9649/p1790862140398009?thread_ts=1790835576.223599&cid=C0C5WDC9649)。没有把未提交草稿说成已恢复验收。
+- 61当前近湾/全貌/阶段报告已经Slack确认成功：报告（私密链接已移出公开记录）。三文件IDs为F0C5J2YEHDM、（私密标识已移出公开记录）、（私密标识已移出公开记录）；[本地收据](cloud-delivery/coast61-stage-20261001/DELIVERY_RECEIPT.json)。
+- 60三PNG和51图报告包已确认：（私密标识已移出公开记录）、（私密标识已移出公开记录）、（私密标识已移出公开记录）、（私密标识已移出公开记录）；[收据](cloud-delivery/observation60-and-research-20261001/DELIVERY_RECEIPT.json)。不得重复POST或finalize。部分旧ZIP在连接器读取中不可见，不能无证据说丢失或重发。
+- 13:42恢复进展已发送：原消息（私密链接已移出公开记录）。没有把未提交草稿说成已恢复验收。
 - **进度文档项已发布**：远端df47dbebec35c85b980d9d0ab542ecd4eb178840，tree89e672ff5410ff07be2fa88b74237b38c7166e94，父4bff917与五个blob精确核对；终端认证没有恢复。
-- **58D静态小项已发布e9b7fd2**，完整tree/parent/ref和14个blob精确核验；[Slack原报告](https://tupworld.slack.com/archives/C0C5WDC9649/p1790871012890899?thread_ts=1790835576.223599&cid=C0C5WDC9649)。原生源项已完整发布4508884，[二进制独立读回收据](source-assets/cloud-bank58/revision-d/native-01/PUBLICATION_NATIVE58D.json)。D五图/报告已Git3113f77及Slack全部交付：[收据](source-assets/cloud-bank58/revision-d/preview-01/PUBLICATION_PREVIEW58D.json)、[完整逐图报告](https://tupworld.slack.com/files/UKQMWM9MZ/F0C63NWC7AM/visual_review58d.md)。E双布局已558d187完整Git发布、Slack0/5停止；当前停船orbit源码准备随本修订保存，尚未引擎解析/运行。
+- **58D静态小项已发布e9b7fd2**，完整tree/parent/ref和14个blob精确核验；Slack原报告（私密链接已移出公开记录）。原生源项已完整发布4508884，[二进制独立读回收据](source-assets/cloud-bank58/revision-d/native-01/PUBLICATION_NATIVE58D.json)。D五图/报告已Git3113f77及Slack全部交付：[收据](source-assets/cloud-bank58/revision-d/preview-01/PUBLICATION_PREVIEW58D.json)、完整逐图报告（私密链接已移出公开记录）。E双布局已558d187完整Git发布、Slack0/5停止；当前停船orbit源码准备随本修订保存，尚未引擎解析/运行。
 
 ## 历史记录（仅追溯，不作为当前操作指令）
 
@@ -949,7 +962,7 @@ Read unchanged GOAL.md first: all 20 reference images plus the original opening 
 
 ## Current state — 2026-10-01 12:05 UTC
 
-- Current committed development stage HEAD8e58d802a1079f82a1a33e0644e4a514e8955019/tree37cb94fb48700691aa670b80d4c2e38908b61464. Normal non-force push exited0, independent ls-remote matches. Official commit/tree verification is recorded separately. User workflow: cloud development → normal stage GitHub push → existing #feiting-progress report/images; no local sync needed. Never change default/migration branch. Historical Library backups remain valid.
+- Current committed development stage HEAD8e58d802a1079f82a1a33e0644e4a514e8955019/tree37cb94fb48700691aa670b80d4c2e38908b61464. Normal non-force push exited0, independent ls-remote matches. Official commit/tree verification is recorded separately. User workflow: cloud development → normal stage GitHub push → existing （私密项目频道） report/images; no local sync needed. Never change default/migration branch. Historical Library backups remain valid.
 - Latest native candidate Game60Observation inherits56→55→53west→51b. Only switchable1216 ship navigation position/yaw changes, original camera/FOV/ship scale/geometry preserved; original25cloud meshes remain, failed52f/58 cloud research NOT merged. SceneSHA8fcb0d24d503133a7e6ba29645291a73314c88b40ab447e0802937f1c802ac45. project default42c unchanged.
 -60 real renderer checks ALL terminal0: scope114951Z-0edetyeh (24.29s,11294nodes/exactstoredproperties/MMbuffers/owner/groups/connections except root script+optin); capture115015Z-95ypprk7 (127.78s,10PNG1216 enabled/disabled/repeat plus1128/1129, exactposebytes, repeatRGBA, staticfullbody/25cloud-bounds and lakes/mirror); flight115223Z-l9b5o74g (51.52s,12.2297825m normalF2/W/Space,stablebrake,zero damage/collisions,allkeysreleased,3actualPNG). Tested pixels were inspected. verified60.json records exact proof/inputSHA. Allsoftwarellvmpipe, nofullGOAL/hardware/keyboard-focus/fullroute claim.
 -59A and59B actual same-world temporarypose studies each6PNG/exit0, strictA/A2main+rawrestore.59A boxoverestimatedsilhouette;59B static118meshes/25669verticesboundtoactualarraybytes, boundedgridyaw158°/27m improveslargeleftsideboat butwidth−11%/height+11%,dark/verticalmodelandcloudvisualgapsremain. Parent independentlyviewed59B andallowedonlyswitchablecandidate60validation,notreferenceacceptance. Exactprojectsourceandfailedmath/parseproofs preserved under source-assets/observation59-1216-plan. No59worldjob active.
@@ -958,7 +971,7 @@ Read unchanged GOAL.md first: all 20 reference images plus the original opening 
 -58A rectangularcloudplate rejected;itsfullsource/5views pushed85eb72b.58B11loftsource first300s timeout124preserved;recoveryjoin/voxel fastbutpreserve_volumeTruehas262realselfcrossings. False removes crossingsbutcreates8vertex/12triangle negativeinnercavity. Three-ray/allvertices proveninternal, explicitfilledcandidate removesonlyinnerfaces, outervertex/polygonorder/attributes/bounds exact;fills200.024m³. Boolreportserialization failure preserved;independentfreshreadbackpassed. Decimate9000lower+912uppertri passedlimitedgeometry (volume−.032%, sampled bidirectionaloffset4.654/4.267m,NOTcontinuousHausdorff). FiveBsourceviews115851Z-hw20ss6g completed0/allseen;VISUALREJECTED:thickoval/ringpipes,largebasintroughs/throughslots,too-littlemedium/smallhierarchy. No58worldrunor56merge. Bfrozen;worker __external_design_continuous_cloudbank startsindependentrevision-c reference-scale breakdown/controlplan,notblindlofttweaks.
 -58boundarynote:13.30…433.08m is sample-point nearest exterior surface distance, NOTprovedopen-gapwidth;194BVHpairs arecandidates,notexactintersectionclaim. Preserve distinctions.
 -54v2 world o54.sh actiondeniedtwicebeforeexecution, exhaustedpayloadSTOP, do notretry/routearound.54v4cleanupalreadyclean0.52g old3pixelrebindresidual separatelyretained;offlinecountercorrectionnotvisualacceptance.
-- LatestSlackdelivered inC0C5WDC9649/thread1790835576.223599:56native2PNG F0C6SMD15UG/F0C5WCAR54N +45imageZIP F0C609GPY0H (24742458B,SHAf7a826cfd371f6b9228eda4ba53e1f54ed7b23643f46b7105c2405ca970c1f24), and56flightPNG F0C5Y999Z7U/3frameZIP F0C6SQGTW4Q (1641233B,SHA457e47450ed65dce5f910bd5dd745e0f20cdbcdc2c75f7348750aa9ba5d377ea). AllPOST/finalized.60stage delivery now being prepared,notyetposted. OldGit-success text exhaustedtwice,neverretry. Badsize reservationF0C5T1NHSP7neveruploaded/neverfinalize.
+- LatestSlackdelivered inC0C5WDC9649/thread1790835576.223599:56native2PNG （私密标识已移出公开记录）/（私密标识已移出公开记录） +45imageZIP （私密标识已移出公开记录） (24742458B,SHAf7a826cfd371f6b9228eda4ba53e1f54ed7b23643f46b7105c2405ca970c1f24), and56flightPNG （私密标识已移出公开记录）/3frameZIP （私密标识已移出公开记录） (1641233B,SHA457e47450ed65dce5f910bd5dd745e0f20cdbcdc2c75f7348750aa9ba5d377ea). AllPOST/finalized.60stage delivery now being prepared,notyetposted. OldGit-success text exhaustedtwice,neverretry. Badsize reservationF0C5T1NHSP7neveruploaded/neverfinalize.
 - Current no own Godot/Blender process. Keep editor39845891 open; our terminal27267931 is idle after v60.sh. MAZGLBexport ended0 withloggedtangentissue, no heavyoverlap. Cloudtoolpaths../tools-feiting official4.5.1Godot/4.5.14Blender;absoluteXDGpathsmandatory. Disk2.8GBfree/32GB;preserveallmaterial/failureevidence,avoidlargecopies.
 - Uncommitted source57B/58B and61preparation must remain isolated;workers askedtofreezeBbeforecheckpoint. Native60and59studiesarecommitted8e58d80. No completeGOAL visual or independentfullacceptanceexists. All20refs+originalopening remainopen.
 
@@ -980,7 +993,7 @@ Actual player-input harness is now ready (source-assets/free-flight51b/run_playe
 
 Supplementary complete-ship run reflection51b-full-ship-20261001T043524Z-6Yfgcy exit0/3PNG/146checks, independent review also completed. New temporary side camera fits complete padded ship and Y0 mirror with>=12%margin. Actual8m/.75m movement changes20851mainpixels; A/A2main/raw restore exact. Complete flag/envelope/gondola/propeller and reflected silhouette are visible. Original1129 ship/reference-camera transforms/FOV restored; scene unchanged. This closes the cropped dynamic evidence gap in a documented supplementary view only; original fixed framing and fullflight are not passed.
 
-Current successful Slack delivery is https://tupworld.slack.com/archives/C0C5WDC9649/p1790828742749449. Two51b actual images F0C5VGESF50/F0C5ZBG9Q0L and69-frame report F0C5EA283HD are finalized; supplemental fullship image F0C5EC5883Z and3frame report F0C5QEBCXQV also finalized after one authorized retry. All uploadsPOST200. Old51 exhausted disclosure was never retried.69-frame Library libfile_e7c5f8712c108191ace5ce8bf4c024b3/file_0000000070cc8246b00430607f2590bd;3-frame Library libfile_8654e52c6c548191aec5305ea327934c/file_00000000cbe88246b6dca39f8fdbfb93. Both metadata helpers succeeded. Do not resend completed files.
+Current successful Slack delivery is （私密链接已移出公开记录） Two51b actual images （私密标识已移出公开记录）/（私密标识已移出公开记录） and69-frame report （私密标识已移出公开记录） are finalized; supplemental fullship image （私密标识已移出公开记录） and3frame report （私密标识已移出公开记录） also finalized after one authorized retry. All uploadsPOST200. Old51 exhausted disclosure was never retried.69-frame Library libfile_e7c5f8712c108191ace5ce8bf4c024b3/file_0000000070cc8246b00430607f2590bd;3-frame Library libfile_8654e52c6c548191aec5305ea327934c/file_00000000cbe88246b6dca39f8fdbfb93. Both metadata helpers succeeded. Do not resend completed files.
 
 53 independent four-mountain source task lives under source-assets/lake-rim53. Actual renderer intake rim53-intake-20261001T043516Z-qyqRp1 exit0 exported17meshes,26groups/1261scatter transforms and18buildingbounds. Firstwest source five views04:48 and revision-b five views04:54 both exit0 but visually rejected: vertical wall, white cap/snow belts, regular strips and inadequate shoulders. Worker also found skirt exposure up to3.01m despite coarse support probes. Correction now targets slope-following gullies, buried root skirt and appropriate ridge orientation/height; other three first drafts frozen. A2view temporary same-world diagnostic is prepared atsource-assets/lake-rim53/revision-b/launch_world53b.sh, not yet run.53c topology/root correction is also independently prepared butnotvisuallyaccepted; do not replace the planned53b composition test with it. Existingwater, buildings, islands/defaultscene protected. Geometry proof does not negate visual rejection.
 
@@ -1049,7 +1062,7 @@ A complete-reference survey tool is prepared at project/tools/survey_reference_v
 
 Game47 material merge finished: SHA256 ba236fdb78f662351ad8e89d82df4642b27721638412c833f86f6e8f682caa32, 104193781 bytes; 1333 surfaces/9 materials. material47-20260930T211818Z-pG3XFd completed13 matched46/47 pairs; build/baseline/candidate exit0. Independent review game47-independent-review.md rejects visual completion. Full survey now completed in full-reference-survey-20260930T225223Z-Tc88Sk:61PNG,169 limitedchecks,exit0. Developer all-view review full-survey47-review.md records every front/side/back gap; all21 scenes still visuallyfailed, hardwareGPU and fullflight unmet. No Godot47 jobs pending.
 
-45–47 screenshots/reports successfully shared to authorized Slack thread as104PNG package, files F0C5CG1MZC7/F0C5MLXH0E7/F0C5TP2A7SN. Do not duplicate. Original e6d6cb3 ZIP split losslessly into Library20MiB+13.97MB parts, IDs libfile_00099c21482c8191922a93ae0a771006 and libfile_c42968c270648191830c8bd725179e41; manifest libfile_0d54bb1f243c8191aad1e545e7c279ad. Parent handles manual desktop download/push; later commits remain local.
+45–47 screenshots/reports successfully shared to authorized Slack thread as104PNG package, files （私密标识已移出公开记录）/（私密标识已移出公开记录）/（私密标识已移出公开记录）. Do not duplicate. Original e6d6cb3 ZIP split losslessly into Library20MiB+13.97MB parts, IDs libfile_00099c21482c8191922a93ae0a771006 and libfile_c42968c270648191830c8bd725179e41; manifest libfile_0d54bb1f243c8191aad1e545e7c279ad. Parent handles manual desktop download/push; later commits remain local.
 
 Lake48 in progress in source-assets/lake48 and project/assets/lake48. Do not launch duplicate builds. Actual renderer export lake48-export-20260930T231109Z-JakGxl exit0 provides500 real nonzero scatter transforms in base47.json; independent headless support-only export must not overwrite these. Worker sculpt_shared_lake_basin48 owns source/builder preparation; parent task owns GUI. Preserve complete failed inputs and quantify every affected instance.
 
@@ -1061,13 +1074,13 @@ Lake48 first build lake48-20260930T231655Z-ieSp4X failed on PackedScene raw bund
 
 Actual lake source4meshes prepared, 500scatter retained:206unchanged/104verticalsupport/190relocated. Real renderer base export remains lake48-export-20260930T231109Z-JakGxl. Upper mountain sources unchanged and11mountains included in support queries. These values are source checks pending actual saved48 GUI verification. Original20+opening still notaccepted.
 
-Game47 and full survey committed8ace18527c3c1264f33906b3dfd9b27c6f86d595, timing clarification574dd42. Full61images+report sent Slack F0C5S25PKM4. Separate Slack clarification explains survey0.35s is between lightning flashes, so absence in stills is not a failed functional lightning test. Development remains local awaiting existing manual bundle bridge. Both original e6ZIP lossless parts persist in feiting-parts-library-20260930T2039 and Library despite loss of shared original transfer folder.
+Game47 and full survey committed8ace18527c3c1264f33906b3dfd9b27c6f86d595, timing clarification574dd42. Full61images+report sent Slack （私密标识已移出公开记录）. Separate Slack clarification explains survey0.35s is between lightning flashes, so absence in stills is not a failed functional lightning test. Development remains local awaiting existing manual bundle bridge. Both original e6ZIP lossless parts persist in feiting-parts-library-20260930T2039 and Library despite loss of shared original transfer folder.
 
 ## Latest checkpoint 2026-10-01 00:30 UTC
 
 49 completed, not accepted: SHA52d13fcb7ea412d3a0fae2eedb1d0f9c369dbe06c0da320d786c26c97c475ec8. Source native commitd66f8bf, runtime/evidence265c2dc. Four islands/rock,199meshes,8086tris,7pines added with closed roots andactual support. Runlake49-20260930T234925Z-pYs5Nx build0/verifier0,894boundedchecks,42PNG(13baseline48+29candidate49). All29candidate images reviewed, clear cyan projected root artifacts rejected. Required350m paths inheritedblocked; no new protected150/200m obstruction. Firstlaunch234519failed beforeGodot;firstactual234621group-scope failure retained348nativefiles. ./path normalization fixed new496keys only;0oldgroup changes plusintentionaloldgroup mutation negativecontrol. Source-manifest-diagnostic-correction.json preserves old manifest and identifies onlyupdatedCPU render script/front image provenance.
 
-49 Slack fulfilled successfully WITHOUT repeatedPOST despite lost curlpoll handles: F0C5U3RPT2N game49-lake-islands-water-failure.png and F0C5W6JM80Z game49-islands-and-water-diagnostics.zip(117PNG,39MB). Both complete callsserverconfirmedbytes. Do not resend. cloud-delivery/lake49-20261001/upload-state.json recordsfinalstatus.
+49 Slack fulfilled successfully WITHOUT repeatedPOST despite lost curlpoll handles: （私密标识已移出公开记录） game49-lake-islands-water-failure.png and （私密标识已移出公开记录） game49-islands-and-water-diagnostics.zip(117PNG,39MB). Both complete callsserverconfirmedbytes. Do not resend. cloud-delivery/lake49-20261001/upload-state.json recordsfinalstatus.
 
 Actual root cyan issue established: Ocean screen-ray hitY misused asverticaldepthatwaterXZ. Real forestonepoint23.24m depthwascoloredas2.317m fromroot15m awayXZ;leftisland23.68vs3.296m with41mshift. Native rootsmustremainclosed/bed-supported,notraisedtohide.
 
@@ -1083,7 +1096,7 @@ Nextworker sculpt_shared_lake_basin48 owns ongoinglake50plan/bindings/depthpatch
 
 ## Latest routing/user delivery 2026-10-01 00:51 UTC
 
-User explicitly requested separate newSlack channels with progress/currentappearance. ParentcreatedandIverifiedprivate #feiting-progress C0C5WDC9649,owneruserUKQMWM9MZjoined. All future FeiTing progress goes to this new channel, NOT the old self-DM thread. Current channel summary https://tupworld.slack.com/archives/C0C5WDC9649/p1790815652390219 . Five Game49 realPNG sharedsuccessfullyinthatsummarythread: openingF0C5SHD38F8,lakeF0C5WEB3FC1,islandbackF0C6NSUJK40,nightcloudsF0C5UBSE4D8,cabinF0C5UBTD5H8. No researchframe substitutedforcurrentversion. Allcaptionedcloudcandidate/softwarerender/notaccepted;summaryhasprogress/failures/Gitwriteblock. Do notduplicate delivery. Latest freshGame49overviewrun current49-overview-20261001T004646Z-qrMDCR completedexit0,boot+1216+1278 actualsavedworld,source/defaultunchanged;committedb6168a1. NoGodotgameprocessleftfromthisrun.
+User explicitly requested separate newSlack channels with progress/currentappearance. ParentcreatedandIverifiedprivate （私密项目频道） （私密标识已移出公开记录）,owneruserUKQMWM9MZjoined. All future FeiTing progress goes to this new channel, NOT the old self-DM thread. Current channel summary （私密链接已移出公开记录） . Five Game49 realPNG sharedsuccessfullyinthatsummarythread: openingF0C5SHD38F8,lakeF0C5WEB3FC1,islandbackF0C6NSUJK40,nightcloudsF0C5UBSE4D8,cabinF0C5UBTD5H8. No researchframe substitutedforcurrentversion. Allcaptionedcloudcandidate/softwarerender/notaccepted;summaryhasprogress/failures/Gitwriteblock. Do notduplicate delivery. Latest freshGame49overviewrun current49-overview-20261001T004646Z-qrMDCR completedexit0,boot+1216+1278 actualsavedworld,source/defaultunchanged;committedb6168a1. NoGodotgameprocessleftfromthisrun.
 
 Workplan split: Game50 is now water-depth-only persistentfix using1m+four0.25m patches, Oceancopy+externaltextures/controlleronly. SameWorlddynamicreflection/114materialclip planretainedforindependent51. At00:44:53UTCworkerhadwrittenproject/scripts/lake_depth50.gd andproject/assets/lake_depth50/lake_water_depth50.gdshader, matching4.5.1parsepass;source-assets/lake_depth50/shader-change-ledger.jsonverifiesremovingtwoinsertsrestores49shaderexactincludingCRLF. Builder/verifierstillbeingcompleted;do notclaimGame50built. ParentaskedactualmodelID;visibletool/runtimeprovidesnone,soAstraisnotverified. Do notguessmodelname. Explicitusercontinuationstillactive.
 
@@ -1093,7 +1106,7 @@ Game50 depth-only build/reload and corrected independent verifier completed succ
 
 First50 verifier preserved in depth50-20261001T005643Z-gxCMO5 with27frames: process_mode disabling removed collision objects and global-uniform getter produced errors; manually interrupted, no fabricated exit code. Correctedv2 stops callbacks only. Do not reuse invalid first motion outcomes.
 
-NewSlack channel delivery succeeded: https://tupworld.slack.com/archives/C0C5WDC9649/p1790817346914309 . Two current50images F0C5NE8J7JP/F0C5SN635P0 plus31.32MB87frame(success+failed)report ZIP F0C5PC0AQSZ, allHTTP200 andcompleteconfirmed. Trackingcloud-delivery/depth50-20261001/delivery-manifest.json. No duplicate sharing. CloudGitwriteblock/manualtransfer remains; later commits stilllocal.
+NewSlack channel delivery succeeded: （私密链接已移出公开记录） . Two current50images （私密标识已移出公开记录）/（私密标识已移出公开记录） plus31.32MB87frame(success+failed)report ZIP （私密标识已移出公开记录）, allHTTP200 andcompleteconfirmed. Trackingcloud-delivery/depth50-20261001/delivery-manifest.json. No duplicate sharing. CloudGitwriteblock/manualtransfer remains; later commits stilllocal.
 
 51 prepared actualcontroller/watershader/materialfactory;114scopedmaterials(73Shader/41Standard),4officialnative templates,12custom/generatedshader bodies. Exact reversiblecodeinjection, olduniforms/flags retained, next_pass114allnull and nonnullrejected. Primitive true-render compile/control finishedexit0 inreflection51-source-compile-20261001T011358Z-XFxZBJ;original/injectedmainpassallRGBA0difference, markerclips4894pixels, diagnosticboxesonly. Committed1563764. Purecameraopticsunit1715points/120cases passedmaxNDC3.42e-5 after correctingtester'schildviewportaspect, retainedfailedtests, commitf391d84. Neitherisfullsceneacceptance.
 
@@ -1122,14 +1135,14 @@ West mountain53d is still an unintegrated source candidate. Actual2world diagnos
 
 52f prototype source-assets/cloud-sea52f contains one new closed curved forked connector(31controls/3600tris), retains original52e9meshes/66controls. First tiny disconnected voxel island failure preserved; reopened corrected topology singlecomponent,boundary/nonmanifold/selfintersection/zeroarea0. Actual combined5view preview cloudsea52f-source-v0-20261001T061523Z-6lh8fn8v exit0, all viewed: curved connection improves segmentation, still sphere/flatstone upper lobes and broad undersides; source-only limited continuation. Repeatedprototype coverage58.08%, front/side/back lower projections79.22/88.94/74.58%, not actual world screenshots. Worker preparing secondconnector; no52fworldsaved. Protected source/default/cliff unchanged.
 
-Retained Godot converter editor39845891 must remain untouched. Test terminal27267931 idle after y53.sh. Official tools in ../tools-feiting; no shared tool dependency. Current graphics all cloud software/CPU; all20references+opening GOAL remains unaccepted. Latest Slack main51b https://tupworld.slack.com/archives/C0C5WDC9649/p1790828742749449 with69frame report and separate3full-ship report; newer52e/53d/flight report not yet sent at this checkpoint. No repeats of exhausted old51smoke disclosure. Parent handles external sync, no overlapping local tasks.
+Retained Godot converter editor39845891 must remain untouched. Test terminal27267931 idle after y53.sh. Official tools in ../tools-feiting; no shared tool dependency. Current graphics all cloud software/CPU; all20references+opening GOAL remains unaccepted. Latest Slack main51b （私密链接已移出公开记录） with69frame report and separate3full-ship report; newer52e/53d/flight report not yet sent at this checkpoint. No repeats of exhausted old51smoke disclosure. Parent handles external sync, no overlapping local tasks.
 
 
 ## Checkpoint 2026-10-01 06:34 UTC
 
 HEADf105c5a217ab2d9884e5bcaf4a54fd461bbecd14 externally saved and remote-byte verified through Library, file libfile_7d95a8c3d5f48191a71f60fca40454a0/file_0000000075888246b85254c441d84a9b/version0, Aether-increment-cd2c11b-to-f105c5a.zip,13066154bytes,SHA68651063f618c9afc746e03632bc2699f701eb03f22e273a5e6b05554070224c. Bundle within is13019932bytes,SHA b17c77f773980ff9d083cbbe3b6a875d9fb7be4e688e17fc0caabef516a41fa3. Restore requires priorcd2c11b;154newobjects independently imported/readable. Local non-C transfer/push not confirmed. Parent coordinates only. Later world53/52fvariants not included.
 
-New Slack stage fully delivered https://tupworld.slack.com/archives/C0C5WDC9649/p1790835576223599 . ActualflightF0C5F03R9U7,UNINTEGRATED53dF0C5W6K84QJ,74imagefailure/source/flightreportF0C5W6LMVLJ allPOST200+finalizationconfirmed. Summary andZIP each initially rejected then exact evidence retry succeeded. Do not repeat.
+New Slack stage fully delivered （私密链接已移出公开记录） . ActualflightF0C5F03R9U7,UNINTEGRATED53dF0C5W6K84QJ,74imagefailure/source/flightreportF0C5W6LMVLJ allPOST200+finalizationconfirmed. Summary andZIP each initially rejected then exact evidence retry succeeded. Do not repeat.
 
 53west firstbuilder rim53d-west-build-20261001T062916Z-7xMkB6 exit1 before writingassets: exact120index Array equality failed because JSON numbersFLOAT and dictionarykeysINT. Independent read-only index-type-diagnosis.log proves all4groups exactsameindices; corrected conversion first requires finite/nonnegative/exactinteger, retaining strictsetgate. Failure preserved. Correctedbuilder nowrunningrim53d-west-build-20261001T063353Z-eEO0XE through terminal27267931 z53.sh. On success automaticallyrunsfreshverifier10images(1128/29frontsideback200m and1275/76); checkpointersbeforeanyrepeat. Retainededitoruntouched. Sourceworker freedPackedScene holders/cacheafterstrictgate toavoidextra live-memory. No saved53successyet atcheckpoint.
 
@@ -1143,7 +1156,7 @@ New Slack stage fully delivered https://tupworld.slack.com/archives/C0C5WDC9649/
 
 53west v2 finished0/202limitedchecks/10realPNG in rim53d-west-verify-v2-20261001T064631Z-OrTCQY; all viewed. Full51b independent171building-rays0inrim53d-full-baseline-probes-20261001T064320Z-3Zwd4U proved four oldexpectedmisses were omitted unchangedGround_1_-4. Maxactualbaseline/candidate support.488mm;scatter.610mm;1261cacheexact. Original350mcamera collisions remainfalse(.993164/.558594). Native53west is committedc8e2865 butv2proofnotyetcommitted. Savedworldstillvisuallyfails:greenbanks/coarsecentralcones/hugeoldskyballs/smallfront-facingairship;1275giantinclinedfaces and1276coarsecones. Workerpreparesindependentnewcirqueplan,notfailedfirstdraft.
 
-New53savedimageand20frame(10world+10sourcevariants)report successfully finalized Slack F0C5WDS0PNE/F0C5QBQMZD1 inthread1790835576.223599 #feiting-progress C0C5WDC9649. BothPOST200+complete. imageURLfirstdeniedthenoneevidenceretrysuccess. cloud-delivery/west53-native-20261001 tracksreceipt. No duplicate posts.
+New53savedimageand20frame(10world+10sourcevariants)report successfully finalized Slack （私密标识已移出公开记录）/（私密标识已移出公开记录） inthread1790835576.223599 （私密项目频道） （私密标识已移出公开记录）. BothPOST200+complete. imageURLfirstdeniedthenoneevidenceretrysuccess. cloud-delivery/west53-native-20261001 tracksreceipt. No duplicate posts.
 
 52factualbuildcloudsea52f-build-20261001T064441Z-0lgzjt_v passed0/0,48.36sec,RSS1061432KiB;Game52f104041733bytes SHA201f667747406b1414a298a6b5433ac1550d8b447dff8f6cb6823d94d2acbd7c. Only50lowmesh additions at25unchangedroots,75crowns unchanged. Originalaudit065040Z-f42smxx0 failed50newcomponentstate comparisons becauseJSON losesnativeAABB/NodePath/ResourceNULLtypes;originalretained. V2audit065851Z-trtu_352 process0 BUTwrapper1 due SCRIPT ERROR NodePath==String duringattemptedoldfailurecomparison. AlthoughlaterrawGLBgatespassedandreportwritestrue,DO NOTUSEv2verified-saved-52f.json aspassed. 1216neverstarted. Workerpreparingv3type-safecomponentdiagnosis+mandatory50completecases/flagcounts/raw6GLBproof;noassetrebuild. NativeGUIterminal27267931idleafterh52.sh. MAZusing~3minCycleswindowfrom07:00;waitterminalbeforeournewgraphics. Keepeditor39845891untouched.
 
@@ -1164,7 +1177,7 @@ Nearboatposefirstactualrunnear-ship53west-renderer-20261001T071537Z-npkdb41t exi
 
 ## Checkpoint 2026-10-01 08:34 UTC
 
-HEAD62fc31e contains52f saved audit/world images and near-ship V1/V2 strict failure/restoration. Next external increment must base be097f7; no local/push success confirmed. C runtime cloud-evidence/camera-ship53west-c-renderer-20261001T080154Z-9nu39dr3 actually finished0,12PNG,strict A/C/A2 full-state/main/reflection restoration and physical checks; both full ship and mirror now visible, still width residual−20.04%/−27.72%,height+25.01%/+6.58%. World geometry remains visually failed. C files not yet committed. Latest Slack43frame ZIP and2PNG finalized F0C5RKZ6A0M/F0C5WQE6GDQ/F0C5FJ1PCP9 in1790835576.223599; no pending upload; C not yet delivered.
+HEAD62fc31e contains52f saved audit/world images and near-ship V1/V2 strict failure/restoration. Next external increment must base be097f7; no local/push success confirmed. C runtime cloud-evidence/camera-ship53west-c-renderer-20261001T080154Z-9nu39dr3 actually finished0,12PNG,strict A/C/A2 full-state/main/reflection restoration and physical checks; both full ship and mirror now visible, still width residual−20.04%/−27.72%,height+25.01%/+6.58%. World geometry remains visually failed. C files not yet committed. Latest Slack43frame ZIP and2PNG finalized （私密标识已移出公开记录）/（私密标识已移出公开记录）/（私密标识已移出公开记录） in1790835576.223599; no pending upload; C not yet delivered.
 
 55 tiny native inherited scene + own root subclass/poseJSON prepared, pure exact pose math0 and scripts parse0. Actual saved scope/boot/F2flight not yet run. Candidate preserves camera scale(.99999994 YZ), syncs actual heading for ordinary flight, changes only1128/1129 cameraheight/pitch and shipposition/yaw. Independent new55 only, no defaultswitch. Source-assets/observation55 contains preparation and retained XDG startup failures; absolute writable XDG is mandatory.
 
@@ -1182,7 +1195,7 @@ CurrentHEADaff7ef166824eb97197b394c5b4cb6686ed7d001 saves independentGame55Obser
 
 55 complete increment base4583c18 externally saved and exactremoteZIP+innerbundleSHA verified:libfile_e9ff44664700819195a618c2fa6006c1/file_00000000456c82468612657f3a24a6d9,version0,Aether-increment-4583c18-to-aff7ef1.zip3070081bytes SHA6a459a9261716f9db65d46e08bbebb06e8f2ed9badda6b1be469869665c282db.61newobjectsindependentlyrestored. Nextbaseaff7ef1. ParentcoordinatesactualGitlogin/localnonC/push;notconfirmedhere.
 
-Slack55 actual3PNG+43framefullZIP allPOST200/complete: F0C5S8QCR5K(1128),F0C5ZG6TLRX(1129),F0C5XDG8Q10(moving),F0C5VKMLCT0(report). SameC0C5WDC9649/thread1790835576.223599. ReportZIP25488364bytes SHA7a464ba27d5f57b35194e5b62dbe51ca9ca348df8c26f93b207df203557444bf. cloud-delivery/observation55-20261001/delivery-manifest.json. FirstgetURLdenied(noID)andhadwronglength423686;parentevidenceauthorizedcorrect466513retrythenallsuccess. Nothingpending/norepost.
+Slack55 actual3PNG+43framefullZIP allPOST200/complete: （私密标识已移出公开记录）(1128),（私密标识已移出公开记录）(1129),（私密标识已移出公开记录）(moving),（私密标识已移出公开记录）(report). SameC0C5WDC9649/thread1790835576.223599. ReportZIP25488364bytes SHA7a464ba27d5f57b35194e5b62dbe51ca9ca348df8c26f93b207df203557444bf. cloud-delivery/observation55-20261001/delivery-manifest.json. FirstgetURLdenied(noID)andhadwronglength423686;parentevidenceauthorizedcorrect466513retrythenallsuccess. Nothingpending/norepost.
 
 54v2 source5actualframes cirque54v2-source-preview084921Z-8w68fr6m clean0/allviewed. Lowerwide shoulderbetterbutlonghardwhitebands/greyblocksremain;onlylimitedworlddiagnosisallowed,notintegration.54cleanupv3084931Z-kpkogfdr still4nullerrorsatwholegamefree aftertemporarymeshesgone. v4090140Z-vtews80k clean0/74.69s: onlyextraoldrootmeshstrongref clearedbeforegamefree,allotherbindings/sourceunchanged. Thiscontrolledchangeeliminatedtheseerrors,notuniversalenginefix.54v2two-worldimageentry source-assets/lake-cirque54/v2/world-diagnostic/run_world_diagnostic.py ready;workercheckingreferencelifetimes;notrunyet.
 
@@ -1208,14 +1221,14 @@ SlackGitpushsummarysend_message09:26 rejectedoncewithincorrectunverifiedchannel/
 
 09:40 user workflow update (Sentinel_8741e9d9d9f881918d000e5a87748bbb): after successful GitHub push, no synchronization to the user's computer is needed. Continue development on this cloud computer, normal non-force stage pushes to the same independent GitHub branch, then reports/screenshots to the existing project Slack channel. Parent stopped the old local-sync task. Preserve historical Library backups; do not create duplicate big bundles for local transport. Needed small fallback backups are allowed while a stage has not been pushed. Current committed8422638 is already remotely verified. Do not restore the obsolete cloud→local→push workflow from earlier checkpoints.
 
-09:27 Git-success Slack same-message authorized retry was rejected again despite a fresh user-connector member lookup showing the channel's sole member UKQMWM9MZ. That payload is exhausted and stopped. New meaningful stages follow the latest authorization; do not resend that old message. Earlier55threePNG/43frameZIP remain delivered.
+09:27 Git-success Slack same-message authorized retry was rejected again despite a fresh user-connector member lookup showing the channel's sole member （私密标识已移出公开记录）. That payload is exhausted and stopped. New meaningful stages follow the latest authorization; do not resend that old message. Earlier55threePNG/43frameZIP remain delivered.
 
 09:34 B source five views cloudsea52h-b-source-v0-20261001T093321Z-on7dy1tm clean0,all viewed,REJECTED: no oldlongtrench/sharedbase,butthreechamferedstones/hugeplanes/uniformbevelbands. NewCindependent source inprogresswith8offsetmediumshortshoulders,oldBpreserved. NoownGUI/renderactiveafterthispreview. Source56coast worker completed exactzero-changeBlenderreadback for currentGround_-4_-4 GPUfields; originalterrainopen138boundaryedges. FirsthorizontaldeformfoldedoneXZtriangle andwasrejected; Y-onlyheightfieldrevisionunderwaywithoriginalXZ/topology/tileboundariesfixed.44scatterrootexactsupporthandledlater. No56worldsave/GUIyet.
 
 
 ## Checkpoint 2026-10-01 12:36 UTC
 
-Latest committed and independently verified GitHub HEAD1d8a56db7a68e619f46feb082a72719dca3c54a1, tree84e8a45a192ecf2876eeaf9297858b87a918aec7. Includes Game60 actual native scope/capture/ordinary-flight (all passed), 57B complete source and rejected58B source/five actual views. Game60 inherits56 and changes only opt-in1216 ship pose; full GOAL and hardware GPU false. Current60 main/cmp/flight3PNG plus51-frame report ZIP now Slack complete confirmed, IDs F0C5TNLR86R/F0C5X3G11AA/F0C5TNP45QD/F0C5X7APTHU. Receipt cloud-delivery/observation60-and-research-20261001/DELIVERY_RECEIPT.json. Main POST poll session99839 expired; no duplicate POST; firstfinalize success confirms receipt. ZIP earlier rejected twice, new explicit user approval12:31 permitted original getURL; POST session76007 exit0, complete success. Do not resend.
+Latest committed and independently verified GitHub HEAD1d8a56db7a68e619f46feb082a72719dca3c54a1, tree84e8a45a192ecf2876eeaf9297858b87a918aec7. Includes Game60 actual native scope/capture/ordinary-flight (all passed), 57B complete source and rejected58B source/five actual views. Game60 inherits56 and changes only opt-in1216 ship pose; full GOAL and hardware GPU false. Current60 main/cmp/flight3PNG plus51-frame report ZIP now Slack complete confirmed, IDs （私密标识已移出公开记录）/（私密标识已移出公开记录）/（私密标识已移出公开记录）/（私密标识已移出公开记录）. Receipt cloud-delivery/observation60-and-research-20261001/DELIVERY_RECEIPT.json. Main POST poll session99839 expired; no duplicate POST; firstfinalize success confirms receipt. ZIP earlier rejected twice, new explicit user approval12:31 permitted original getURL; POST session76007 exit0, complete success. Do not resend.
 
 User latest prefers complete recoverable GitHub history, no redundant project backups, and authorized duplicate cleanup only after corresponding full materials verified in GitHub. MAZ removed its own approved copies, no Aether cleanup yet. Keep unique/unpushed work.
 
@@ -1229,7 +1242,7 @@ Game61 first real build→fresh verify launched via w61.sh at12:36:05 in existin
 
 12:59 stage61 verification-v2 fully ended0:Godot251.0737sec/1691040KiB,offlineactualcontinuousfoot446checks0/2.8058sec/170700KiB. All10images directlyviewed andfullreferencevisuallyrejected;1128/1216exact/toggleandtwo120rootpassesallpass. verified61.json bindsactualresultsandexplicit40adjustedvs20unchangedlimitations;independent195filefreeze13.67MBreadyfornormalGit. No61ordinaryflight/hardware/fullGOAL claim. Westmountainrangeactualentitymissingnowidentified;nextboundednativeassetplanindependent.58Crecovery02trueunion0genus0/330rayspassed,isolatedsourcepreviewsarepreparing,nativeworldnotintegrated. Sixobsoletebundlebackups453760873B additionallyremovedaftergitbundleverify0andallheadsancestorofverifiedremote;metadata/receipts/canonicalGitkept. Totalduplicatebackupcleanup1062323738B.
 
-13:08 checkpoint:61native stage pushed a41b5fed8c359d02b79eb3e13329a8fd1d730a4e,remoteexactSHA/tree5c4104284c0c13dee3b1388d28ce2bf7a4d5f79c confirmed via independentls-remote+officialAPI. Slack61nearbay/overview/report2397B allPOST0/finalize IDsF0C5J2YEHDM/F0C5T7CNE83/F0C5J32C2GP;receiptcloud-delivery/coast61-stage-20261001/DELIVERY_RECEIPT.json. No newZIPbackup.58Ccomplete293filefreeze88.44MB structurallypassedrecovery02genus0/330valleyrays, but5realnativepreviews13:03:31→13:04:24 allvisuallyREJECTED largeboulder-crowns/disc-carrier/emptyplateaus;no worldintegration. Preview01first1672x941hit1.5GiBRSSlimit15.325sec/noPNGpreserved;preview02front836x471exactpixelaspect,5images52.825sec/923940KiB. Worker beginsindependentrevisionDcontrol-ridge/foldplanonly. Nearbay61realflight216mroute+actualinputstate machineinpreparation,separatefixtureexcludedfromdistance,notrun. No ownworldcurrentlyrunning.
+13:08 checkpoint:61native stage pushed a41b5fed8c359d02b79eb3e13329a8fd1d730a4e,remoteexactSHA/tree5c4104284c0c13dee3b1388d28ce2bf7a4d5f79c confirmed via independentls-remote+officialAPI. Slack61nearbay/overview/report2397B allPOST0/finalize IDsF0C5J2YEHDM/（私密标识已移出公开记录）/（私密标识已移出公开记录）;receiptcloud-delivery/coast61-stage-20261001/DELIVERY_RECEIPT.json. No newZIPbackup.58Ccomplete293filefreeze88.44MB structurallypassedrecovery02genus0/330valleyrays, but5realnativepreviews13:03:31→13:04:24 allvisuallyREJECTED largeboulder-crowns/disc-carrier/emptyplateaus;no worldintegration. Preview01first1672x941hit1.5GiBRSSlimit15.325sec/noPNGpreserved;preview02front836x471exactpixelaspect,5images52.825sec/923940KiB. Worker beginsindependentrevisionDcontrol-ridge/foldplanonly. Nearbay61realflight216mroute+actualinputstate machineinpreparation,separatefixtureexcludedfromdistance,notrun. No ownworldcurrentlyrunning.
 
 13:14 latestremote16823e02042c39da82a6516171a5159b7fb1fc8e/tree859e8955e9bbb6991d6fa3a51f875b8c1beb0887 independentlyverified afternormalpush,includescompletefrozen58Cfailure/source/previews+61reportreceipts. Nativecurrent61 unchanged. Nearbayflight216m inputscriptparse0,awaitingfinalwordingclassificationclarification(noGUIfocusclaim,fixturelook_atmustnotbeconfusedwithnativecontrollerdrift). y61.sh prepared/notyetlaunched. MAZfinalsmallimage13:14terminal0/windowfree.58Dstaticthree-ridge/foldsmallpatchplanactive. Bothold15partssets598977970Bremovedafterstreamreconstructionexactd3c29c5e bundleSHAandcheckpointremoteancestorproof;allmetadataremains;totalbackupcleanup1661301708B. No more newbackupZIPs.
 
