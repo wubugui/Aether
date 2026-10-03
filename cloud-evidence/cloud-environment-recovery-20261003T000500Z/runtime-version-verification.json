@@ -1,0 +1,28 @@
+{
+  "model_opened": false,
+  "engine_scene_launched": false,
+  "checks": [
+    {
+      "name": "blender-version",
+      "command": [
+        "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/blender",
+        "--version"
+      ],
+      "exit_code": 0,
+      "output": "blender-version.txt",
+      "sha256": "b4f7ac67baffbaff642eb51f58668d7981454ebadf1333946686e6ce34748fb9"
+    },
+    {
+      "name": "python-runtime",
+      "command": [
+        "/workspace/scratch/a29d03198654/tools-feiting/blender-4.5.14-linux-x64/4.5/python/bin/python3.11",
+        "-B",
+        "-c",
+        "import sys,numpy; print(sys.version); print(numpy.__version__); print(numpy.__file__)"
+      ],
+      "exit_code": 0,
+      "output": "python-runtime.txt",
+      "sha256": "aa85b7e696df9adb2299d2f286f053892e91290c6dd0fbb23b985840b7b9e7c6"
+    }
+  ]
+}

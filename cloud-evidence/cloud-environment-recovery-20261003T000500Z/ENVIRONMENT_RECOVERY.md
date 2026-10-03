@@ -1,0 +1,19 @@
+# 云环境替换后的工程与工具恢复
+
+2026-10-02约23:49 UTC，执行连接变化后原工作区为空；新主机标识4fea90ecd624。触发原因未知，不推断为内存、渲染或权限问题。form-v4尚未写入任何新文件；最后完整工程提交已是7c52378d53bc6c1e79339b4ec869061d398d3e53。
+
+先经GitHub插件只读核分支仍指向该SHA，再在原Aether路径公开只读浅clone：56693 tracked文件，实际exit0/HEAD相符/status干净；已重读CLOUD_RESUME与GOAL。没有CLI上传、登录或凭据提取。249个必要被忽略原文件从仓库唯一保真表示恢复，517716062B均精确，详细范围与真实不足在RECOVERY_REPORT.md。
+
+Blender官方目录的web读取未得到内容，最初归档HEAD的会话终态丢失，因此不声称原HEAD的HTTP结果。随后通过正式sandbox网络批准机制，仅对同官方归档执行一次下载，无代理/镜像/网络设置更改：
+
+https://download.blender.org/release/Blender4.5/blender-4.5.14-linux-x64.tar.xz
+
+HTTP200，378045212B，14.577638秒；归档SHA256为9ba871ff2ecd36526b77432745980b7e6664ecd0c7ca11c48849073dcfe06da3。6512成员的目录/符号链接/特殊节点范围审查后，用data过滤器解压到原tools-feiting目录，没有覆盖旧工具树。
+
+实际Blender二进制163613240B/SHA050c02562f81fe80ba616a80198fa02d381e60f8b61b8d39add881f4bca0d7d8，bundled Python二进制28653440B/SHA60b08089c60cbe81827b135c8fd9e206ba2ee6bf54aa1dbd0d6f56ac2d5914f6，均与原批准运行的固定SHA完全同。实际--version为Blender4.5.14 LTS/build62c1db4208e8，Python3.11.15/GCC11.2.1，NumPy1.26.4。没有在恢复中打开模型或渲染。本项仅恢复当前Blender源制作工具；不宣称Godot/GPU或原世界性能环境已恢复验证。
+
+四个历史被忽略.pyc未存于当前Git终态树，不能假称旧833/959冻结已完全重建，更不能重编译或修改旧清单冒充原字节。新环境准入只允许明确排除这四个非权威派生缓存，绑定对应两份原.py精确SHA并禁bytecode写；所有真正工程源码、原生源、已保存raw/图像及旧准入仍须精确。旧历史冻结保持原证据，不重跑/升级旧实验。
+
+历史全仓保护的1322附属缺项也已分类。绝大多数为缓存，另有1份旧Godot userdata日志无精确别名，但其stdout/stderr/实际失败报告仍在。不能把恢复核心工程成果说成整个历史工作区逐字节复刻。
+
+本恢复报告及入口须先GitHub插件完整发布、远端核回，之后才允许新的form-v4制作准备及其明确新环境准入。原所有视觉/完整native/world/GOAL未通过状态不变。下一造型方向是整体降宽A/B并重排完整冠肩腹，而非继续给长壁叠加小肩柱；尚无form-v4候选或新原生运行。
